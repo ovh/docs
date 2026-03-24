@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration und Nutzung von Git mit OVHcloud Webhosting"
 excerpt: "Erfahren Sie hier, wie Sie Git mit Ihrem Webhosting In Ihrem OVHcloud Kundencenter konfigurieren und verwenden"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel
@@ -24,7 +24,7 @@ In der heutigen digitalen Landschaft sind Unternehmen dynamischer und innovative
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -47,7 +47,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -206,7 +206,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -239,7 +239,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -292,7 +292,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -339,7 +339,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -373,7 +373,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -398,7 +398,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -447,7 +447,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

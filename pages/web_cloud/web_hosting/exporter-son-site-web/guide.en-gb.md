@@ -1,7 +1,7 @@
 ---
 title: "Exporting a website"
 excerpt: "Find out how to export an OVHcloud website"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ This guideline will outline the steps to follow in order to export all elements 
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -45,7 +45,7 @@ If you don’t have this information, click on the tabs below to view each of th
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -80,7 +80,7 @@ If needed, identify in advance in your web hosting the name of the root folder i
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

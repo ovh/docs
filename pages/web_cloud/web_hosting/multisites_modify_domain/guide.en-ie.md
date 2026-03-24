@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to modify a domain name already associated to a hosting plan"
 excerpt: "Find out how to change the association settings for a domainname or subdomain already declared on your web hosting plan"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ When you use your web hosting plan or update your website, you may need to modif
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -45,7 +45,7 @@ To modify the association settings of a domain name or subdomain already declare
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

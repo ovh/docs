@@ -1,7 +1,7 @@
 ---
 title: Co zrobić w przypadku strony "Index of"?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę "Index of"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie 
@@ -31,7 +31,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---

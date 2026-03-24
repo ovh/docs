@@ -1,7 +1,7 @@
 ---
 title: "Comment bien débuter avec votre hébergement web"
 excerpt: "Découvrez comment mettre en ligne un nouveau site Internet via nos options de « Modules en 1 clic », comment créer une nouvelle adresse e-mail personnalisée avec votre nom de domaine, le tout grâce à notre solution d'hébergement web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -38,7 +38,7 @@ Vous souhaitez créer un site Internet pour votre entreprise ou un blog personne
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---

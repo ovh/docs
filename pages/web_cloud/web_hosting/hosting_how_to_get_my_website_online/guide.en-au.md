@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ There are many different types of website you can put online. Whether you are cr
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -78,7 +78,7 @@ These elements were sent to you in the email informing you that your Web Hosting
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

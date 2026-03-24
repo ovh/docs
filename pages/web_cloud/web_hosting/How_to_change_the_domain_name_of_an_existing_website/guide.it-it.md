@@ -1,7 +1,7 @@
 ---
 title: "Casi d’uso - Come cambiare il dominio di un sito esistente"
 excerpt: "Questa guida ti mostra come modificare il dominio di un sito esistente"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -28,7 +28,7 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---

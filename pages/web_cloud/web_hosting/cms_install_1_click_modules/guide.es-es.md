@@ -1,7 +1,7 @@
 ---
 title: "Instalar su sitio web con un 'módulo en 1 clic' (CMS)"
 excerpt: Descubra cómo instalar su sitio web a través de nuestros "módulos en 1 clic"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -25,7 +25,7 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---

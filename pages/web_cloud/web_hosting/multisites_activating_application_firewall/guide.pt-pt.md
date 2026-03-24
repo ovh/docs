@@ -1,7 +1,7 @@
 ---
 title: "Partilhado: ativação da firewall"
 excerpt: "Partilhado: ativação da firewall"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -47,7 +47,7 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -64,7 +64,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -93,7 +93,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

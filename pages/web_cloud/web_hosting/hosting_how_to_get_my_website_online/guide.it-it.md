@@ -1,7 +1,7 @@
 ---
 title: "Mettere online un sito Internet su un hosting Web"
 excerpt: "Questa guide ti mostra come pubblicare un sito su un hosting Web OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -22,7 +22,7 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -78,7 +78,7 @@ Se hai necessità di recuperarli, clicca sulle schede qui sotto per visualizzare
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

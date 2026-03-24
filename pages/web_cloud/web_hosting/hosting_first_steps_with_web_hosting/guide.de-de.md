@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Schnellstart-Anleitung"
 excerpt: "Erfahren Sie hier, wie Sie auf einem Webhosting eine neue Website mithilfe eines 1-Klick-Moduls online stellen und personalisierte E-Mail-Adressen mit Ihrem Domainnamen verwenden"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -39,7 +39,7 @@ Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog ers
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---

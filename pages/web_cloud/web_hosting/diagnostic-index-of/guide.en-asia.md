@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting an "Index of" page
 excerpt: Find out how to get your website back online if it displays an "Index of" page
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ An "**Index of**" page appears in at least one of the following cases:
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---

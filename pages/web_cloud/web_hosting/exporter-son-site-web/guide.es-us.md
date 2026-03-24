@@ -1,7 +1,7 @@
 ---
 title: "Exportar un sitio web"
 excerpt: "Cómo exportar un sitio web de OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -19,7 +19,7 @@ Esta guía explica los pasos que debe seguir para exportar todos los elementos d
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -45,7 +45,7 @@ Si no dispone de ellos, haga clic en las fichas siguientes para ver cada una de 
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -80,7 +80,7 @@ Si es necesario, identifique previamente en su alojamiento web el nombre del dir
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

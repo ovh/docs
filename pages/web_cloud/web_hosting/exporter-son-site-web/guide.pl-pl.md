@@ -1,7 +1,7 @@
 ---
 title: "Eksportowanie witryny internetowej"
 excerpt: "Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie 
@@ -19,7 +19,7 @@ Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów 
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -45,7 +45,7 @@ Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, 
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -80,7 +80,7 @@ W razie potrzeby wcześniej zidentyfikuj w swoim hostingu nazwę katalogu głów
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

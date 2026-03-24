@@ -1,7 +1,7 @@
 ---
 title: "Cas d'usage - Comment changer le domaine d'un site existant"
 excerpt: "Découvrez comment changer le nom de domaine d'un site existant"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -28,7 +28,7 @@ Ce tutoriel a pour objectif de vous expliquer les principales étapes à suivre 
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---

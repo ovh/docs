@@ -1,7 +1,7 @@
 ---
 title: 'Hébergement web - Modifier un nom de domaine déjà associé à un hébergement'
 excerpt: "Découvrez comment modifier les paramètres d'association d'un nom de domaine/sous-domaine déjà déclaré sur votre offre d'hébergement web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -28,7 +28,7 @@ Lors de l'utilisation de votre hébergement web ou de la mise à jour de votre s
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---
@@ -45,7 +45,7 @@ Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-dom
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

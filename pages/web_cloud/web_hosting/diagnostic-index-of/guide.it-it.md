@@ -1,7 +1,7 @@
 ---
 title: Cosa fare in caso di pagina "Index of"?
 excerpt: Come caricare il tuo sito online, quando visualizza una pagina "Index of"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -31,7 +31,7 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---

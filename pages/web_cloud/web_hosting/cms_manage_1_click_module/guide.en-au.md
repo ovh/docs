@@ -1,7 +1,7 @@
 ---
 title: "How to manage your 1-click module"
 excerpt: "Find out how to manage your 1-click module in the OVHcloud Control Panel"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ The 1-click modules are a quick and easy way to install an online website creati
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---

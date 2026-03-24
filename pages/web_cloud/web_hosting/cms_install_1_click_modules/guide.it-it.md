@@ -1,7 +1,7 @@
 ---
 title: "Installare il tuo sito Web con un 'CMS in 1 click'"
 excerpt: "Questa guida ti mostra come creare il tuo sito Web con i nostri 'moduli in 1 click'"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -25,7 +25,7 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---

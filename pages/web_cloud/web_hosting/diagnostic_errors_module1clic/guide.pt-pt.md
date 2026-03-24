@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros mais frequentes associados aos módulos 1 clique"
 excerpt: "Saiba como diagnosticar os casos mais comuns de erros associados à criação de módulos 1 clique"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -28,7 +28,7 @@ No entanto, se a configuração destes últimos não for realizada corretamente,
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -50,7 +50,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -163,7 +163,7 @@ Para ligar o seu nome de domínio a outro site (pasta raiz), clique nos separado
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

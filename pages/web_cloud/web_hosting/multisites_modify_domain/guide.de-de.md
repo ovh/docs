@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Ändern von mit einem Webhosting verbundenen Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie die Zuordnungseinstellungen von Domainnamen oder Subdomains ändern, die bereits auf Ihrem Webhosting deklariert sind"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel
@@ -28,7 +28,7 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -45,7 +45,7 @@ Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf 
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

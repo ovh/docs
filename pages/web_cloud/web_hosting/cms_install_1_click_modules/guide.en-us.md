@@ -1,7 +1,7 @@
 ---
 title: "Setting up your website with a 1-click module (CMS)"
 excerpt: "Find out how to set up your website using our 1-click modules"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -25,7 +25,7 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---

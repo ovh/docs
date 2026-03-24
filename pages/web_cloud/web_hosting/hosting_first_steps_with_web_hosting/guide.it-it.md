@@ -1,7 +1,7 @@
 ---
 title: "Come eseguire le prime operazioni sul tuo hosting Web"
 excerpt: 'Questa guida ti mostra come pubblicare un nuovo sito Internet con le nostre opzioni di "CMS in 1 click" e come creare un nuovo indirizzo email personalizzato con il tuo dominio, il tutto grazie alla nostra soluzione di hosting Web'
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -39,7 +39,7 @@ Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---

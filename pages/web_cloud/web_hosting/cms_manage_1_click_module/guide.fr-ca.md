@@ -1,7 +1,7 @@
 ---
 title: "Comment gérer votre module en 1 clic ?"
 excerpt: "Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -27,7 +27,7 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---

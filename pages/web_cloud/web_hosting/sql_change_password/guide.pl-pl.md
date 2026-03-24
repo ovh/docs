@@ -1,7 +1,7 @@
 ---
 title: Zmiana hasła do bazy danych na hostingu
 excerpt: Dowiedz się, jak zmienić hasło do bazy danych utworzonej w ramach pakietu hostingowego
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie 
@@ -46,7 +46,7 @@ Zmiana hasła do bazy danych składa się z czterech częściach:
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -61,7 +61,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -227,7 +227,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

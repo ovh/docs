@@ -1,7 +1,7 @@
 ---
 title: "Ver y gestionar todos sus sitios web desde el área de cliente de OVHcloud"
 excerpt: "Cómo consultar y gestionar todos sus sitios web desde el área de cliente de OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -19,7 +19,7 @@ La vista `Sitios web` permite centralizar la visualización de todos sus sitios 
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem"
 excerpt: "Dowiedz się, jak zmienić parametry powiązania domeny/subdomeny zadeklarowanej wcześniej w Twojej usłudze hostingu"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie
@@ -28,7 +28,7 @@ W przypadku korzystania z hostingu lub aktualizacji strony WWW może być koniec
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -45,7 +45,7 @@ Aby zmienić ustawienia przypisania już zadeklarowanej domeny lub poddomeny na 
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

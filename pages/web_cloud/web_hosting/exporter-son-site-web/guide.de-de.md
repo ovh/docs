@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseite exportieren"
 excerpt: "Eine OVHcloud Webseite exportieren"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel 
@@ -19,7 +19,7 @@ In dieser Anleitung werden die Schritte zum Exportieren aller Elemente einer Web
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -45,7 +45,7 @@ Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um di
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -80,7 +80,7 @@ Falls erforderlich, identifizieren Sie vorab im Webhosting den Namen des Stammor
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

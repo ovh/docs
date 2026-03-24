@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Como alterar o domínio de um site existente"
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -28,7 +28,7 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---

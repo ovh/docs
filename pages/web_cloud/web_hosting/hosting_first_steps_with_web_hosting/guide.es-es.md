@@ -1,7 +1,7 @@
 ---
 title: "Cómo empezar correctamente con su alojamiento web"
 excerpt: 'Descubra cómo publicar un nuevo sitio web a través de nuestras opciones de "Módulos en un clic" y cómo crear una nueva dirección de correo personalizada con su nombre de dominio gracias a nuestra solución de alojamiento web'
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -39,7 +39,7 @@ details[open]>summary::before {
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---

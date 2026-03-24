@@ -1,7 +1,7 @@
 ---
 title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie
@@ -28,7 +28,7 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---

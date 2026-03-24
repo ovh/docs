@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Reescrever o URL de acesso ao meu site graças ao mod_rewrite através do ficheiro .htaccess"
 excerpt: "Saiba como reescrever o URL de acesso ao seu site graças ao mod_rewrite através do ficheiro .htaccess"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -35,7 +35,7 @@ O "**mod_rewrite**" oferece uma infinidade de possibilidades. Apresentamos a seg
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---

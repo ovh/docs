@@ -1,7 +1,7 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel 
@@ -25,7 +25,7 @@ updated: 2026-03-03
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---

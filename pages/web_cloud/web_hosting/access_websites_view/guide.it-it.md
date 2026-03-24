@@ -1,7 +1,7 @@
 ---
 title: "Visualizzare e gestire tutti i siti Web dallo Spazio Cliente OVHcloud"
 excerpt: "Scopri come consultare e gestire tutti i siti Web dallo Spazio Cliente OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -19,7 +19,7 @@ La visualizzazione `Siti Internet` permette di visualizzare in modo centralizzat
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---

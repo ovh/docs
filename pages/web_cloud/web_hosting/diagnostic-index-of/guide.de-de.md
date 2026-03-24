@@ -1,7 +1,7 @@
 ---
 title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel 
@@ -31,7 +31,7 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---

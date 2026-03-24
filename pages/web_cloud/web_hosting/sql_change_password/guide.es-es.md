@@ -1,7 +1,7 @@
 ---
 title: Cambiar la contraseña de la base de datos de un alojamiento web
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -46,7 +46,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -61,7 +61,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -228,7 +228,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

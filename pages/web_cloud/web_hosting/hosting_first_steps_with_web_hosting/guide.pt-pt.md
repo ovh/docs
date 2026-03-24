@@ -1,7 +1,7 @@
 ---
 title: "Como começar bem com o seu alojamento web"
 excerpt: 'Saiba como publicar um novo site através das nossas opções de "Módulos 1 clique", como criar um novo endereço de e-mail personalizado com o seu nome de domínio, tudo graças à nossa solução de alojamento web'
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -39,7 +39,7 @@ Pretende criar um site para a sua empresa ou um blogue pessoal? Precisa de uma l
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---

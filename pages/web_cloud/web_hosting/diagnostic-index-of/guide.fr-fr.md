@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas de page « Index of » ?"
 excerpt: "Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -32,7 +32,7 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---

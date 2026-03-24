@@ -1,7 +1,7 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia"
 excerpt: "Dowiedz się, jak za pomocą 1 kliknięcia zdiagnozować najczęstsze przypadki błędów związane z tworzeniem modułów"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie
@@ -27,7 +27,7 @@ Jeśli konfiguracja modułu nie zostanie przeprowadzona prawidłowo, instalacja 
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -48,7 +48,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -161,7 +161,7 @@ Aby połączyć swoją nazwę domeny ze stroną internetową (katalog główny),
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

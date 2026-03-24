@@ -1,7 +1,7 @@
 ---
 title: "Comment modifier le dossier racine d'un site web existant ?"
 excerpt: "Découvrez comment modifier le dossier racine déclaré pour un site web déjà existant sur votre hébergement web depuis votre espace client OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -31,7 +31,7 @@ Au cours de l'utilisation de vos services, vous pouvez être amené à :
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---
@@ -58,7 +58,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

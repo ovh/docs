@@ -1,7 +1,7 @@
 ---
 title: "Jak zarządzać modułem za 1 kliknięciem?"
 excerpt: "Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panelu klienta OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie 
@@ -27,7 +27,7 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---

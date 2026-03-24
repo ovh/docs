@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Alterar um nome de domínio já associado a um alojamento"
 excerpt: "Saiba como alterar as configurações de associação de um domínio/subdomínio já declarado na sua oferta de alojamento web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -28,7 +28,7 @@ Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de a
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -45,7 +45,7 @@ Para modificar os parâmetros de associação de um nome de domínio ou subdomí
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

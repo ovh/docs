@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Sumário
@@ -23,7 +23,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -80,7 +80,7 @@ Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojam
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

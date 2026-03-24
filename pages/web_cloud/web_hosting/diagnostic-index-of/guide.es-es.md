@@ -1,7 +1,7 @@
 ---
 title: ¿Qué hacer en caso de página del "Index of"?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página "Index of"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -32,7 +32,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---

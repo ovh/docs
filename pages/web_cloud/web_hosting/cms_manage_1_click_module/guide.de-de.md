@@ -1,7 +1,7 @@
 ---
 title: "1-Klick-Module verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel 
@@ -26,7 +26,7 @@ updated: 2026-03-03
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---

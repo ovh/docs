@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -51,7 +51,7 @@ Em resumo, alterar a configuração do seu alojamento web a partir da [Área de 
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -205,7 +205,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -254,7 +254,7 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etap
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

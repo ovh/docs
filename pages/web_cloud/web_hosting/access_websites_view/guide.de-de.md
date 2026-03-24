@@ -1,7 +1,7 @@
 ---
 title: "Alle Ihre Websites im OVHcloud Kundencenter anzeigen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie alle Ihre Websites über das OVHcloud Kundencenter anzeigen und verwalten"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel
@@ -19,7 +19,7 @@ Die Ansicht `Websites` ermöglicht es Ihnen, alle Ihre Websites zentral anzuzeig
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---

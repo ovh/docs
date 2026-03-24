@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich einen Domainnamen von einer bestehenden Website trennen?"
 excerpt: "Erfahren Sie, wie Sie einen Domainnamen oder eine Subdomain von einer bereits existierenden Website auf Ihrem Webhosting trennen können"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel
@@ -24,7 +24,7 @@ Möchten Sie Ihren Domainnamen oder Ihre Subdomain einer anderen Website auf ein
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -41,7 +41,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

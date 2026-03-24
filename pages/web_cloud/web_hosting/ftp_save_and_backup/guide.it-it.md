@@ -1,7 +1,7 @@
 ---
 title: "Ripristinare i dati dello spazio di storage di un hosting Web"
 excerpt: "Questa guida ti mostra come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -26,7 +26,7 @@ Le soluzioni di hosting Web OVHcloud includono uno spazio di storage in cui è p
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -63,7 +63,7 @@ Per verificare la quota utilizzata sull'hosting, clicca sulle schede qui sotto p
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -107,7 +107,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

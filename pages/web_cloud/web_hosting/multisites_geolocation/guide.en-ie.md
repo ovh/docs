@@ -1,7 +1,7 @@
 ---
 title: "How do I geolocate a website in a specific country?"
 excerpt: "Find out how to locate your website using the geolocated IP addresses available on OVHcloud shared hosting plans"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ The geolocation option on your hosting can be useful for SEO if your website is 
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -41,7 +41,7 @@ To use the IP geolocation option, click on the tabs below to view each of the **
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

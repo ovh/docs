@@ -1,7 +1,7 @@
 ---
 title: "Wyświetl wszystkie strony WWW w Panelu klienta OVHcloud i zarządzaj nimi"
 excerpt: "Dowiedz się, jak wyświetlać wszystkie Twoje strony WWW i zarządzać nimi w Panelu klienta"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,7 @@ Widok `Strony WWW` pozwala na scentralizowane wyświetlanie wszystkich stron nie
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---

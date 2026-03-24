@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo gestionar su módulo en 1 clic?"
 excerpt: "Descubra cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -27,7 +27,7 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---

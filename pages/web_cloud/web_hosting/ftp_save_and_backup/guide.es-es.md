@@ -1,7 +1,7 @@
 ---
 title: "Restaurar el espacio de almacenamiento de un alojamiento web"
 excerpt: "Descubra cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -26,7 +26,7 @@ Los planes de hosting de OVHcloud incluyen un espacio de almacenamiento en el qu
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -63,7 +63,7 @@ Para comprobar la cuota utilizada en su alojamiento web, haga clic en las fichas
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -107,7 +107,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Come gestire il tuo modulo in 1 click?"
 excerpt: "Questa guida ti mostra come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -27,7 +27,7 @@ I moduli in 1 click permettono di installare facilmente e rapidamente un softwar
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---

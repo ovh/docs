@@ -1,7 +1,7 @@
 ---
 title: "Comment associer un nom de domaine à un site web existant ?"
 excerpt: "Découvrez comment associer un nom de domaine ou un sous-domaine à un site web déjà existant sur votre hébergement web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -38,7 +38,7 @@ Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---
@@ -61,7 +61,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -150,7 +150,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -219,7 +219,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

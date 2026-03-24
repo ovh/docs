@@ -1,7 +1,7 @@
 ---
 title: "Come associare un nome di dominio a un sito web esistente"
 excerpt: "Questa guida ti mostra come associare un nome di dominio o un sottodominio a un sito web già esistente sul tuo hosting web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -38,7 +38,7 @@ Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i d
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -61,7 +61,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -150,7 +150,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -219,7 +219,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

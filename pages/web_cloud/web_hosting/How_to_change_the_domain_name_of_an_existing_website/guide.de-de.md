@@ -1,7 +1,7 @@
 ---
 title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Ziel
@@ -27,7 +27,7 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---

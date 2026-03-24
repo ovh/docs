@@ -1,7 +1,7 @@
 ---
 title: "Como verificar a associação 'nome de domínio / site web'?"
 excerpt: "Utilize a nossa ferramenta de diagnóstico para verificar que o seu nome de domínio ou subdomínio está bem declarado com o seu site web no seu alojamento web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -35,7 +35,7 @@ Pode alojar vários sites web na mesma oferta de alojamento web, mesmo que os no
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -50,7 +50,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Use cases - How to change the domain of an existing website"
 excerpt: "Find out how to change the domain name of an existing website"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -29,7 +29,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---

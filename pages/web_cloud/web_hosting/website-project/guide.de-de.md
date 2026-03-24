@@ -1,7 +1,7 @@
 ---
 title: "Erstellen Ihrer Website - So setzen Sie Ihr Projekt in 5 Schritten um"
 excerpt: "Erfahren Sie hier, wie Sie Ihr Projekt definieren, Ihre Website veröffentlichen und E-Mail-Adressen mit Ihrer Webhosting-Lösung erstellen"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -49,7 +49,7 @@ So sparen Sie Zeit bei der Administration und können sich etwa auf Folgendes ko
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---

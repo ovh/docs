@@ -1,7 +1,7 @@
 ---
 title: "How to get started with your web hosting plan"
 excerpt: "Find out how to put a new website online with our 1-click modules, how to create a new custom email address with your domain name, all using our web hosting solution"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -38,7 +38,7 @@ Want to create a website for your business or a personal blog? Need an e-commerc
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---

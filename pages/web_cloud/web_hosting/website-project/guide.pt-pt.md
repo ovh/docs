@@ -1,7 +1,7 @@
 ---
 title: "Como criar um website - Realizar o seu projeto em 5 etapas"
 excerpt: "Saiba como definir o seu projeto, publicar o seu website e criar endereços de e-mail com a sua solução de alojamento web"
-updated: 2026-03-03
+updated: 2026-03-24
 ---
 
 <style>
@@ -49,7 +49,7 @@ Isto permite-lhe poupar tempo "administração de servidores" e concentrar-se ap
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
