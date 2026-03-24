@@ -76,11 +76,20 @@ Pulumi offers an intuitive command line interface (CLI), to provision, update or
 > [!success]
 > Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 /// details | Via OVHcloud Control Panel
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu and click on `Create a cluster`{.action}.
 
@@ -534,7 +543,7 @@ Outputs:
 kubeconfig = <sensitive>
 ```
 
-Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
+Now, click on `Managed Kubernetes Service`{.action} in the left-hand menu.
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -1002,7 +1011,7 @@ ovhcloud
   nodePoolID = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
 ```
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
+Click on `Managed Kubernetes Service`{.action} in the left-hand menu.
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -1290,7 +1299,7 @@ Resources:
 Duration: 6m37s
 ```
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
+Click on `Managed Kubernetes Service`{.action} in the left-hand menu.
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}

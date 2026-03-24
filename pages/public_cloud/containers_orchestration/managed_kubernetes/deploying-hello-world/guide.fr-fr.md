@@ -15,6 +15,17 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 - You should have already created a cluster on the OVHcloud Managed Kubernetes service.
 - You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/) for this tool on the Kubernetes official site.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 > [!warning]
 >
 > For API users, this guide assumes you are familiar with the [OVHcloud API](/links/api). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
@@ -26,8 +37,6 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
->>
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 >>
 >> ![Select your cluster](images/select-cluster.png){.thumbnail}
