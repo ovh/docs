@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud VPS - często zadawane pytania"
 excerpt: "Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące ofert VPS"
-updated: 2025-10-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -226,6 +226,20 @@ Oferujemy na przykład gamę wstępnie skonfigurowanych szablonów i obrazów dl
 Ponadto, nasza dokumentacja i baza wiedzy zawierają wiele informacji dotyczących konfiguracji i zarządzania serwerem VPS.
 
 Jednak w przypadku specyficznej pomocy w konfiguracji oprogramowania, zalecamy skontaktowanie się z naszą [społecznością](/links/community) lub uzyskanie pomocy wykwalifikowanego administratora systemu lub programisty poprzez nasz [portal partnera](/links/partner).
+
+///
+
+/// details | Jakie są najlepsze praktyki wysyłania e-maili z serwera VPS?
+
+Aby zapobiec oznaczaniu Twoich e-maili jako spam, musisz prawidłowo skonfigurować swój serwer.
+
+Obejmuje to:
+
+- uwierzytelnianie e-maili (SPF, DKIM, DMARC),
+- konfigurację reverse DNS (PTR),
+- przestrzeganie najlepszych praktyk dostawców poczty elektronicznej.
+
+Więcej informacji znajdziesz w naszym przewodniku: [Jak zapobiec oznaczaniu e-maili jako spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 ///
 
