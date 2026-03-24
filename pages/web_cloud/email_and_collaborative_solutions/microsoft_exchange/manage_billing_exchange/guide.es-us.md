@@ -43,7 +43,7 @@ En la ventana de gestión de su plataforma Exchange, haga clic en el botón `Acc
 
 Acceda a la sección «Mis servicios» del área de cliente. Comprobará que se ha aplicado un filtro que solo muestra la plataforma Exchange que se va a modificar.
 
-Haga clic en `...`{.action} en la parte superior derecha de la plataforma Exchange y luego en `«Modificar la facturación`{.action}.
+Haga clic en `...`{.action} en la parte superior derecha de la plataforma Exchange y luego en `Modificar la facturación`{.action}.
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
