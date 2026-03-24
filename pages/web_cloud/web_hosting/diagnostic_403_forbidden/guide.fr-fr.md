@@ -49,7 +49,7 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---

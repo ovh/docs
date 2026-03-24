@@ -28,7 +28,7 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -53,7 +53,7 @@ Per modificare l’abbonamento, clicca sulle schede qui sotto per visualizzare i
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -86,7 +86,7 @@ In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizza
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno d
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -151,7 +151,7 @@ Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, clicca su
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -228,7 +228,7 @@ Per **attivare l’opzione Boost**, clicca sulle schede qui sotto per visualizza
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -243,7 +243,7 @@ Per **disattivare l’opzione Boost**, clicca sulle schede qui sotto per visuali
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

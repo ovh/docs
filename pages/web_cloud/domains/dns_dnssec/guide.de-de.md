@@ -55,7 +55,7 @@ Um zu überprüfen, ob Ihre Domain die OVHcloud DNS-Konfiguration verwendet, kli
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -83,7 +83,7 @@ Um **DNSSEC** für Ihren Domainnnamen zu aktivieren oder deaktivieren, klicken S
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -110,7 +110,7 @@ Wenn Sie diese 4 Werte bereit haben, klicken Sie auf die Tabs, um die **4** Schr
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

@@ -62,7 +62,7 @@ Może zaistnieć konieczność utworzenia strefy DNS dla Twojej domeny w OVHclou
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
 
 ---
@@ -91,7 +91,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-dns-zone), a następnie w przycisk `Zamów`{.action}.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), a następnie w przycisk `Zamów`{.action}.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -138,7 +138,7 @@ Aby je odnaleźć, kliknij poniższe zakładki, aby wyświetlić kolejne **2** k
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-dns-zone), a następnie wybierz odpowiednią domenę.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

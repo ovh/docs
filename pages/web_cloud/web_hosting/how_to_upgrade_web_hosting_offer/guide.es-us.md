@@ -28,7 +28,7 @@ Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad 
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -57,7 +57,7 @@ Para modificar su suscripción, haga clic en las fichas siguientes para ver cada
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -87,7 +87,7 @@ Para **activar la opción Boost**, haga clic en las fichas siguientes para ver c
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -102,7 +102,7 @@ Para **desactivar la opción Boost**, haga clic en las fichas siguientes para ve
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

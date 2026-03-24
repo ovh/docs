@@ -41,7 +41,7 @@ Permette di mettere online file o siti Internet [accedendo allo spazio di storag
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---

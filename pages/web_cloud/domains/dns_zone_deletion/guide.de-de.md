@@ -63,7 +63,7 @@ Klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/billing-services) und dann auf den Button `...`{.action} rechts neben der DNS-Zone, die Sie kündigen möchten, und dann auf `Meinen Dienst kündigen`{.action}.
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) und dann auf den Button `...`{.action} rechts neben der DNS-Zone, die Sie kündigen möchten, und dann auf `Meinen Dienst kündigen`{.action}.
 >>
 >> ![Kündigung](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>

@@ -37,7 +37,7 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
 
 ---
@@ -50,7 +50,7 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-domains) e escolha o domínio em causa.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -84,7 +84,7 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **5** etap
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-dns-zone) e escolha o domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -135,7 +135,7 @@ Quando estiver pronto para criar o registo DynHost, clique nos separadores abaix
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-dns-zone) e escolha o domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -192,7 +192,7 @@ Existem várias possibilidades relativamente ao software/cliente:
 
 Depois de escolher e instalar o cliente, deverá configurá-lo através das informações do utilizador DynHost criado anteriormente na Área de Cliente OVHcloud.
 
-Consoante o cliente utilizado, pode ser necessário um endereço URL de atualização para além dos elementos do utilizador DynHost e do subdomínio em causa. Se for este o caso, utilize o seguinte endereço URL para substituir as informações genéricas:
+Consoante o cliente utilizado, pode ser necessário um endereço URL de atualização para além dos elementos do utilizador DynHost e do subdomínio correspondente. Se for este o caso, utilize o seguinte endereço URL para substituir as informações genéricas:
 
 ```bash
 https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
@@ -208,7 +208,7 @@ Pode verificar se o endereço IP de destino foi atualizado. Para isso, clique no
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-dns-zone) e escolha o domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

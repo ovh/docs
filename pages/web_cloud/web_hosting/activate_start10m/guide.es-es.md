@@ -45,7 +45,7 @@ Para activar su alojamiento gratuito 100M, haga clic en las fichas siguientes pa
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

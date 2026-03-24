@@ -21,7 +21,7 @@ Databases are used by most websites and **C**ontent **M**anagement **S**ystems (
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -62,7 +62,7 @@ To access the OVHcloud backup tool, click on the tabs below to view each of the 
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

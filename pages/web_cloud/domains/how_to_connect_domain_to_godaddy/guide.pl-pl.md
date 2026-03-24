@@ -61,7 +61,7 @@ Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-dns-zone), a następnie wybierz odpowiednią nazwę domeny.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
 >>
 >> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

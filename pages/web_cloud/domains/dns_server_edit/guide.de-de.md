@@ -61,7 +61,7 @@ Um auf die Verwaltung der OVHcloud DNS-Server zugreifen, klicken Sie auf die Tab
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

@@ -20,7 +20,7 @@ Vous avez perdu l’accès à votre interface d’administration de WordPress, P
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---

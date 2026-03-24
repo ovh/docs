@@ -43,7 +43,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---

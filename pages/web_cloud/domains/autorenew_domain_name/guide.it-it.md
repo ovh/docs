@@ -98,7 +98,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/billing-services). Nella tabella che appare, identifica il dominio o i domini di cui vuoi cambiare la modalità di rinnovo.
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Nella tabella che appare, identifica il dominio o i domini di cui vuoi cambiare la modalità di rinnovo.
 >>
 >> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** passaggi.
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/billing-services). Nella tabella, identifica il dominio che vuoi rinnovare.
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Nella tabella, identifica il dominio che vuoi rinnovare.
 >>
 >> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -153,7 +153,7 @@ Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto p
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-domains), poi seleziona il dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
 >>
 >> ![Domini](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -170,7 +170,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/billing-services). Nella tabella, identifica il dominio che vuoi disattivare.
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Nella tabella, identifica il dominio che vuoi disattivare.
 >>
 >> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -193,7 +193,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/billing-services). Nella tabella, identifica il dominio per il quale devi saldare una fattura di rinnovo.
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Nella tabella, identifica il dominio per il quale devi saldare una fattura di rinnovo.
 >>
 >> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto p
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-domains), poi seleziona il dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
 >>
 >> ![Domini](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

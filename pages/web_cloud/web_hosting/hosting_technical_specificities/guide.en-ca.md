@@ -19,7 +19,7 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---

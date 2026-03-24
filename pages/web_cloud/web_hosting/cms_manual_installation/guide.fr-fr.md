@@ -43,7 +43,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---

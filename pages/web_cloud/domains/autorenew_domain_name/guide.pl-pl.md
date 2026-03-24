@@ -98,7 +98,7 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/billing-services). W tabeli, która się wyświetli, określ domenę lub domeny, dla których chcesz zmienić tryb odnowienia.
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services). W tabeli, która się wyświetli, określ domenę lub domeny, dla których chcesz zmienić tryb odnowienia.
 >>
 >> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **3** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, którą chcesz odnowić.
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, którą chcesz odnowić.
 >>
 >> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -153,7 +153,7 @@ Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświe
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-domains), a następnie wybierz odpowiednią domenę.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
 >> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -170,7 +170,7 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, z której chcesz zrezygnować.
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, z której chcesz zrezygnować.
 >>
 >> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -193,7 +193,7 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, dla której musisz opłacić fakturę za odnowienie.
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, dla której musisz opłacić fakturę za odnowienie.
 >>
 >> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświe
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-domains), a następnie wybierz odpowiednią domenę.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
 >> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

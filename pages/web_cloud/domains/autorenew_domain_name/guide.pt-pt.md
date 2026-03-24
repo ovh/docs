@@ -98,7 +98,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/billing-services). Na tabela que se abrir, identifique o(s) domínio(s) para o(s) qual(is) pretende alterar o modo de renovação.
+>> Aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services). Na tabela que se abrir, identifique o(s) domínio(s) para o(s) qual(is) pretende alterar o modo de renovação.
 >>
 >> ![As minhas ofertas e serviços](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/billing-services). Na tabela, identifique o domínio que pretende renovar.
+>> Aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services). Na tabela, identifique o domínio que pretende renovar.
 >>
 >> ![As minhas ofertas e serviços](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -153,7 +153,7 @@ Para verificar o estado da renovação do seu domínio, clique nos separadores a
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/web-domains) e selecione o domínio em questão.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Nomes de domínio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -170,7 +170,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/billing-services). Na tabela, identifique o domínio que pretende rescindir.
+>> Aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services). Na tabela, identifique o domínio que pretende rescindir.
 >>
 >> ![As minhas ofertas e serviços](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -193,7 +193,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/billing-services). Na tabela, identifique o domínio para o qual precisa de pagar uma fatura de renovação.
+>> Aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services). Na tabela, identifique o domínio para o qual precisa de pagar uma fatura de renovação.
 >>
 >> ![As minhas ofertas e serviços](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Para verificar o estado da renovação do seu domínio, clique nos separadores a
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/web-domains) e selecione o domínio em questão.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Nomes de domínio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

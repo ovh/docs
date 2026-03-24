@@ -30,7 +30,7 @@ Dzięki historii stref DNS zarządzanie serwerami DNS stało się łatwiejsze.
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
 
 ---
@@ -43,7 +43,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

@@ -71,7 +71,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
 >>
 >> ![Spazio Cliente OVHcloud - lista dei nomi di dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

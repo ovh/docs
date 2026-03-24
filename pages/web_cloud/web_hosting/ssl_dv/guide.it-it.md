@@ -39,7 +39,7 @@ Per gli hosting condivisi OVHcloud, l'autorità di certificazione che rilascia i
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -88,7 +88,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -127,7 +127,7 @@ Per verificare che l'installazione sia stata completata, clicca sulle schede qui
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

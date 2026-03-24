@@ -37,7 +37,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
 - **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---
@@ -50,7 +50,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -84,7 +84,7 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-dns-zone) und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den Domainnamen aus.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -135,7 +135,7 @@ Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie auf die Tabs
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-dns-zone) und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den Domainnamen aus.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -208,7 +208,7 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie auf die
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-dns-zone) und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den Domainnamen aus.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

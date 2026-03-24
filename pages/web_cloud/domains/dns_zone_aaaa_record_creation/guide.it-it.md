@@ -38,7 +38,7 @@ Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il d
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
 
 ---

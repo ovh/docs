@@ -18,7 +18,7 @@ L’accesso ai log e alle statistiche del sito Web è incluso nella soluzione di
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -31,7 +31,7 @@ Per accedere ai diversi dati statistici e ai log dell’hosting Web, clicca sull
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

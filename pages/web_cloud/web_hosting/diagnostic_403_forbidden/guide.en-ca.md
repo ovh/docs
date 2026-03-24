@@ -49,7 +49,7 @@ This device also legally protects you from actions resulting from a possible hac
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---

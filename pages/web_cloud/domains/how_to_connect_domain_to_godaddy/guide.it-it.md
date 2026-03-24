@@ -61,7 +61,7 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone), quindi scegli il nome di dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il nome di dominio interessato.
 >>
 >> ![Zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

@@ -45,7 +45,7 @@ Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

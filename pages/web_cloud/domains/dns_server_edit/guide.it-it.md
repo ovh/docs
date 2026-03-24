@@ -61,7 +61,7 @@ Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare
 > [!tabs]
 > **Passaggio1**
 >>
->> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il nome di dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

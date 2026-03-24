@@ -98,7 +98,7 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 > [!tabs]
 > **Paso 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/billing-services). En la tabla que se abre, identifique el dominio o dominios cuyo modo de renovación desea cambiar.
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services). En la tabla que se abre, identifique el dominio o dominios cuyo modo de renovación desea cambiar.
 >>
 >> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **3** pasos.
 > [!tabs]
 > **Paso 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/billing-services). En la tabla, identifique el dominio que quiere renovar.
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services). En la tabla, identifique el dominio que quiere renovar.
 >>
 >> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -153,7 +153,7 @@ Para comprobar el estado de la renovación del dominio, haga clic en las pestañ
 > [!tabs]
 > **Paso 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio en cuestión.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio en cuestión.
 >>
 >> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -170,7 +170,7 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 > [!tabs]
 > **Paso 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/billing-services). En la tabla, identifique el dominio que quiere dar de baja.
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services). En la tabla, identifique el dominio que quiere dar de baja.
 >>
 >> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -193,7 +193,7 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 > [!tabs]
 > **Paso 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/billing-services). En la tabla, identifique el dominio para el que debe abonar una factura de renovación.
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services). En la tabla, identifique el dominio para el que debe abonar una factura de renovación.
 >>
 >> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Para comprobar el estado de la renovación del dominio, haga clic en las pestañ
 > [!tabs]
 > **Paso 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio en cuestión.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio en cuestión.
 >>
 >> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

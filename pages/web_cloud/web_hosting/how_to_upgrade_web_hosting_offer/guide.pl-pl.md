@@ -28,7 +28,7 @@ updated: 2025-10-21
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -53,7 +53,7 @@ Aby zmienić abonament, kliknij poniższe zakładki, aby wyświetlić kolejne **
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -86,7 +86,7 @@ Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. Kliknij p
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -151,7 +151,7 @@ Aby sprawdzić rozmiar przestrzeni dyskowej FTP użytej na Twoim hostingu, klikn
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -228,7 +228,7 @@ Aby **aktywować opcję Boost**, kliknij poniższe zakładki, aby wyświetlić k
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -244,7 +244,7 @@ Aby **wyłączyć opcję Boost**, kliknij poniższe zakładki, aby wyświetlić 
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

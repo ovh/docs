@@ -71,7 +71,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
 >> ![Panel de control de OVHcloud - lista de nombres de dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
