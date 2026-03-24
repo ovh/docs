@@ -14,7 +14,16 @@ Przyłącz się do społeczności [user community](/links/community). Konsola IP
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
@@ -41,7 +50,7 @@ Logowanie do IPMI można wykonać kilkoma dostępnymi metodami. Klucze SSH przec
 ⁵ Jeśli system operacyjny, który chcesz zainstalować, nie jest dostępny w [katalogu systemów operacyjnych dostępnych na serwerach dedykowanych OVHcloud](/links/bare-metal/os), możesz również użyć spersonalizowanego obrazu: zobacz [Porównanie Bring Your Own Image (BYOI) i Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux), aby uzyskać więcej informacji.<br />
 ⁶ SoL = Serial over Lan
 
-Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud](/links/manager). W sekcji `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} i wybierz swój serwer, a następnie kliknij zakładkę `IPMI/KVM`{.action}.
+Aby aktywować jedną z tych metod, kliknij zakładkę `IPMI/KVM`{.action}.
 
 ### Otwórz KVM za pomocą apletu Java <a name="applet-java"></a>
 

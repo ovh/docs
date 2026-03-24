@@ -13,7 +13,17 @@ Cloud Web ofrece la posibilidad de utilizar distintos lenguajes de programación
 ## Requisitos
 
 - Tener contratado un plan de alojamiento [Cloud Web](/links/web/hosting-cloud-web-offer).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) y accedido a la sección `«Web»`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

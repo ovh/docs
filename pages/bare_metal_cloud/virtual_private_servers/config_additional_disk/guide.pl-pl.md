@@ -13,16 +13,24 @@ Wraz z ofertą VPS OVHcloud możesz dodać bezpieczną przestrzeń dyskową jako
 ## Wymagania początkowe
 
 - Posiadanie [serwera VPS](/links/bare-metal/vps) na koncie OVHcloud
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny przez SSH lub RDP do serwera VPS
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
 >
 
 ## W praktyce
-
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 ### Zamów dodatkowy dysk
 

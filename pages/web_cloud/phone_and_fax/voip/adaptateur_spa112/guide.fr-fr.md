@@ -1,5 +1,6 @@
 ---
-title: Adaptateur SPA112
+title: "Adaptateur SPA112"
+excerpt: "Découvrez les caractéristiques techniques, la configuration requise et les points forts de l'adaptateur Cisco SPA112 pour la téléphonie sur IP"
 flag: hidden
 updated: 2018-03-26
 ---
@@ -10,7 +11,7 @@ updated: 2018-03-26
 
 **Description :**
 
-L'adaptateur Cisco SPA 112 permet l'accès à un service de téléphonie sur IP (voice over IP) offrant de nombreuses fonctions de haute qualité via votre connexion Internet haut débit. Branchez-le simplement à votre routeur et utilisez l'un des deux ou les deux ports téléphoniques standards pour la connexion de vos téléphones analogiques ou utilisez un des ports pour votre fax (connectique RJ11). Chaque port téléphonique fonctionne indépendamment, avec des services et des numéros de téléphone séparés, comme si vous aviez deux lignes téléphoniques. Vous avez une réception téléphonique claire et des connexions fax fiables, même lorsque vous utilisez Internet en même temps. ****
+L'adaptateur Cisco SPA 112 permet l'accès à un service de téléphonie sur IP (voice over IP) offrant de nombreuses fonctions de haute qualité via votre connexion Internet haut débit. Branchez-le simplement à votre routeur et utilisez l'un des deux ou les deux ports téléphoniques standards pour la connexion de vos téléphones analogiques ou utilisez un des ports pour votre fax (connectique RJ11). Chaque port téléphonique fonctionne indépendamment, avec des services et des numéros de téléphone séparés, comme si vous aviez deux lignes téléphoniques. Vous avez une réception téléphonique claire et des connexions fax fiables, même lorsque vous utilisez Internet en même temps.
 
 **Caractéristiques techniques :**
 
@@ -43,3 +44,7 @@ L'adaptateur Cisco SPA 112 permet l'accès à un service de téléphonie sur IP 
 
 - [Branchements du Cisco SPA112](/pages/web_cloud/phone_and_fax/voip/branchements_spa112)
 - [Dépannage du Cisco SPA112](/pages/web_cloud/phone_and_fax/voip/depannage_spa112)
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

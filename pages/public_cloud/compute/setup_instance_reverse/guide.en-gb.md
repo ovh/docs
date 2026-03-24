@@ -16,7 +16,17 @@ Configuring the reverse DNS resolution for an instance is especially useful when
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - A domain name with its `A` record mapped to the instance
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

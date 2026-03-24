@@ -6,18 +6,28 @@ updated: 2025-04-28
 
 ## Ziel
 
-Wenn Sie eine Bestellung aufgeben, können Sie diese über Ihr [OVHcloud Kundencenter](/links/manager) verfolgen und sie bearbeiten.
+Wenn Sie eine Bestellung aufgeben, können Sie diese über Ihr [OVHcloud Kundencenter](/links/control-panel/billing-orders) verfolgen und sie bearbeiten.
 
 **Diese Anleitung erklärt, wie Sie Ihre Bestellungen über Ihr OVHcloud Kundencenter verwalten.**
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifelsfall beachten Sie bitte die in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbaren OVHcloud Verträge (klicken Sie rechts oben auf Ihren Namen und dann im Kontextmenü auf `Meine Angebote und Dienste`{.action}. Klicken Sie abschließend auf den Tab `Verträge`{.action}).
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifelsfall beachten Sie bitte die auf der Seite [Meine Verträge](/links/control-panel/billing-contracts) verfügbaren OVHcloud Verträge.
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben mindestens eine Bestellung bei OVHcloud aufgegeben.
+
+<!-- CP-NAV-START:billing-orders -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Meine Bestellungen](/links/control-panel/billing-orders)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Bestellungen`{.action}
+
+---
+<!-- CP-NAV-END:billing-orders -->
 
 ## In der praktischen Anwendung
 
@@ -34,15 +44,15 @@ Der Bestellschein wird erstellt, sobald Sie Ihre Bestellung aufgeben. Darin werd
 |3|In Ihrem Kundenkonto gespeicherte Zahlungsmethoden. Weitere Informationen finden Sie in der Anleitung [Meine Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Verfügbare Zahlungsmethoden. Ihnen werden nur die im Heimatland des Accounts autorisierten Zahlungsmethoden oder die mit der Art des registrierten Accounts verbundenen Zahlungsmethoden angeboten.|
 
-Sie können Ihren Bestellschein jederzeit wie unten erläutert in Ihrem [OVHcloud Kundencenter](/links/manager) einsehen.
+Sie können Ihren Bestellschein jederzeit auf der Seite [Meine Bestellungen](/links/control-panel/billing-orders) einsehen, wie unten erläutert.
 
 ### Auf die Bestellscheine im OVHcloud Kundencenter zugreifen
 
-Um den Verwaltungsbereich Ihrer Bestellungen aufzurufen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie auf der angezeigten Seite auf `Meine Bestellungen anzeigen`{.action}.
+Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders).
 
 ![Kundencenter](images/huborders.png){.thumbnail}
 
-So gelangen Sie zu einer Übersicht aller nicht abgelaufenen Bestellungen, die über Ihren OVHcloud Kunden-Account getätigt wurden.
+Sie gelangen zu einer Übersicht aller nicht abgelaufenen Bestellungen, die über Ihren OVHcloud Kunden-Account getätigt wurden.
 
 ![Bestellübersicht](/pages/assets/screens/control_panel/product-selection/right-column/initials/order-tab.png){.thumbnail}
 
@@ -68,9 +78,9 @@ Sie können das Bestellformular auch im HTML-Format anzeigen, indem Sie rechts n
 
 ### Bestellung verfolgen
 
-Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über Ihr [OVHcloud Kundencenter](/links/manager) verfolgen:
+Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über die Seite [Meine Bestellungen](/links/control-panel/billing-orders) verfolgen:
 
-- Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie auf der angezeigten Seite auf `Meine Bestellungen anzeigen`{.action} und dann auf den Button `...`{.action} vor Ihrer Bestellung.
+- Klicken Sie auf den Button `...`{.action} vor Ihrer Bestellung.
 - Wählen Sie `Bestellungnachverfolgung`{.action}. Die Nachverfolgung der Bestellung kann auch angezeigt werden, indem in der Spalte Status einer Bestellung auf den `Status` geklickt wird.
 
 ![Bestellverfolgung](images/order05b.png){.thumbnail}
@@ -97,9 +107,9 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 > Weiterhin gilt es nicht für besondere Dienstleistungen, etwa [Domainnamen](/links/web/domains) und [Sectigo SSL-Zertifikate](/links/web/hosting-options-ssl).
 >
 
-Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt über das [OVHcloud Kundencenter](/links/manager) ausgeübt werden:
+Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt über die Seite [Meine Bestellungen](/links/control-panel/billing-orders) ausgeübt werden:
 
-- Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie auf der angezeigten Seite auf `Meine Bestellungen anzeigen`{.action} und dann auf den Button `...`{.action} vor Ihrer Bestellung.
+- Klicken Sie auf den Button `...`{.action} vor Ihrer Bestellung.
 - Wählen Sie `Die Bestellung stornieren`{.action}.
 
 ![Stornierung einer Bestellung](images/cancelorder1.png){.thumbnail}

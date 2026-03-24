@@ -31,6 +31,17 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - Instalacja aplikacji Outlook na urządzeniu przenośnym [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=pl).
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## W praktyce
 
 ### Dodaj konto <a name="add-account"></a>
@@ -39,18 +50,18 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 >
 > W naszych przykładach używamy określenia serwer: pro?.mail.ovh.net. Należy zastąpić "?" cyfrą wskazującą serwer Twojej usługi E-mail Pro.
 >
-> Znajdziesz tę cyfrę w [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, a następnie `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** w zakładce `Informacje ogólne`{.action}.
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** w zakładce `Informacje ogólne`{.action}.
 
 - **Podczas pierwszego uruchomienia aplikacji** : wyświetli się asystent konfiguracji, po czym kliknij `Dodaj konto`{.action}.
 
-![Outlook Android Email Pro](images/outlook-app-android-add01.png){.thumbnail .w-400 .h-600}
+![Outlook Android E-mail Pro](images/outlook-app-android-add01.png){.thumbnail .w-400 .h-600}
 
 - **Jeśli konto zostało już skonfigurowane**:
     - Naciśnij karnację " &#9993;" w lewym górnym rogu ekranu.
     - Następnie naciśnij przycisk `+`{.action} w lewym pionowym pasku.
     - Kliknij `Dodaj konto`{.action}.
 
-![Outlook Android Email Pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
+![Outlook Android E-mail Pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
 
 Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
 
@@ -59,18 +70,18 @@ Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
 >>
 >> Wpisz swój adres e-mail i naciśnij przycisk `Kontynuuj`{.action}.
 >>
->> ![Outlook Android Email Pro](images/outlook-app-android-add-step01.png){.thumbnail .w-400 .h-600}
+>> ![Outlook Android E-mail Pro](images/outlook-app-android-add-step01.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 2**
 >>
 >> Wybierz protokół odbierania, **IMAP**(zalecane) lub **POP3**.
 >>
->> ![Outlook Android Email Pro](images/outlook-app-android-add-step02.png){.thumbnail .w-400 .h-600}
+>> ![Outlook Android E-mail Pro](images/outlook-app-android-add-step02.png){.thumbnail .w-400 .h-600}
 >>
 >> > [!warning]
 >> >
 >> > Jeśli okno wyboru protokołu nie wyświetla się, kliknij przycisk `?` w prawym górnym rogu ekranu, następnie wybierz `Zmień dostawcę konta`{.action}. Następnie wybierz `IMAP`(zalecane) lub `POP3`.<br>
->> > ![Outlook Android Email Pro](images/outlook-app-android-add-step021.png){.thumbnail .w-400 .h-600}
+>> > ![Outlook Android E-mail Pro](images/outlook-app-android-add-step021.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 3 - IMAP**
 >>
@@ -84,7 +95,7 @@ Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
 >>
 >> Aby dokończyć konfigurację, kliknij przycisk " &#10003;".
 >>
->> ![Outlook Android Email Pro](images/outlook-app-android-add-step03-imap-emailpro.png){.thumbnail .w-400 .h-600}
+>> ![Outlook Android E-mail Pro](images/outlook-app-android-add-step03-imap-emailpro.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 3 - POP3**
 >>
@@ -98,7 +109,7 @@ Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
 >>
 >> Aby dokończyć konfigurację, kliknij przycisk " &#10003;".
 >>
->> ![Outlook Android Email Pro](images/outlook-app-android-add-step03-pop-emailpro.png){.thumbnail .w-400 .h-600}
+>> ![Outlook Android E-mail Pro](images/outlook-app-android-add-step03-pop-emailpro.png){.thumbnail .w-400 .h-600}
 >>
 
 > [!warning]
@@ -121,13 +132,13 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i chcesz je ponownie skon
 2. Stuknij ikonę dopasowania "&#9965;" w dolnej części lewej kolumny.
 3. W sekcji "Ogólne" kliknij `Konta`, aby wyświetlić wszystkie adresy e-mail skonfigurowane w aplikacji.
 
-![Outlook Android Email Pro](images/outlook-app-android-delete-account-01.png){.thumbnail .w-400 .h-600}
+![Outlook Android E-mail Pro](images/outlook-app-android-delete-account-01.png){.thumbnail .w-400 .h-600}
 
 - Wybierz odpowiednie konto e-mail.
 - Kliknij `Usuń konto`{.action}.
 - Naciśnij przycisk `Usuń`{.action} na pytanie "Czy chcesz usunąć konto?".
 
-![Outlook Android Email Pro](images/outlook-app-android-delete-account-02.png){.thumbnail .w-400 .h-600}
+![Outlook Android E-mail Pro](images/outlook-app-android-delete-account-02.png){.thumbnail .w-400 .h-600}
 
 > [!success]
 >

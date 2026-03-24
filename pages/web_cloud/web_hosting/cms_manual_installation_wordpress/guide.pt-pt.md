@@ -28,7 +28,6 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente o CMS (Content 
 
 - Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](/links/web/domains)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 

@@ -18,9 +18,18 @@ This guide explains how to use an OVHcloud-registered domain name with the Apple
 ## Requirements
 
 - A [domain name](/links/web/domains) registered with OVHcloud.
-- You have access to the [OVHcloud Control Panel](/links/manager).
-- You have the rights to manage the DNS zone for the domain name concerned via the [OVHcloud Control Panel](/links/manager).
 - An Apple ID with an **iCloud+** subscription.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 

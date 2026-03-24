@@ -61,9 +61,18 @@ Po otrzymaniu wiadomości e-mail od serwera poczty przychodzącej (Inbound Mail 
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania nazwą domeny w Panelu [klienta OVHcloud](/links/manager).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Nazwa domeny musi używać konfiguracji OVHcloud (czyli serwerów DNS OVHcloud).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >

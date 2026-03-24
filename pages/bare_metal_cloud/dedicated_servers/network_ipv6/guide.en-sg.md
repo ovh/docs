@@ -44,6 +44,17 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 - All your IPv6 information (prefix, gateway etc.)
 - Basic knowledge of [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) and networking
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 > [!warning]
 > Please note that Kimsufi servers are only provided with a single IPv6 block (/128). IPv6 will be configured automatically when installing the OS.
 >
@@ -72,8 +83,6 @@ The first step is to identify the IPv6 block and gateway assigned to your server
 
 > [!tabs]
 > **Via the OVHcloud Control Panel**
->>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated servers`{.action}.
 >>
 >> The IPv6 block and gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied them, continue with applying the IPv6 configuration.
 >>

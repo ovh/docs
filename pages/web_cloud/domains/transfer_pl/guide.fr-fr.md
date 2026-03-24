@@ -41,6 +41,17 @@ En transférant votre nom de domaine, vous changerez de registre pour celui-ci. 
 - Être habilité à demander le transfert du nom de domaine.
 - Avoir prévenu le titulaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## En pratique
 
 La procédure de transfert comporte plusieurs étapes, impliquant la prise de contact avec plusieurs entités, dont votre registre actuel, OVHcloud et d'autres parties. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.
@@ -52,7 +63,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 |3|Demande de transfert de nom de domaine|Toute personne possédant le code de transfert, également avec la permission du titulaire|Avec le nouveau bureau d'enregistrement (par exemple OVHcloud)|Dépend de vos actions|
 |4|Validation du transfert|Le titulaire du nom de domaine doit valider le transfert à la demande du registre |Par e-mail|Cinq jours maximum|
 
-### Étape 1 : vérifier les informations associées au nom de domaine
+### 1 - Vérifier les informations associées au nom de domaine
 
 **Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovh.com/fr/support/outils/check_whois.pl) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
@@ -65,7 +76,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 > Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovh.com/fr/cgi-bin/whois.pl), peuvent vous fournir des informations sur son identité.
 >
 
-### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert
+### 2 - Déverrouiller son nom de domaine et récupérer le code de transfert
 
 Après avoir vérifié ces informations, vous devrez déverrouiller votre nom de domaine. Vous ne pouvez effectuer cette opération que via le bureau d'enregistrement du nom de domaine actuel. Contactez-le pour en savoir plus à propos de leur procédure.
 
@@ -78,7 +89,7 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 > Une fois votre nom de domaine déverrouillé, vous aurez sept (7) jours pour effectuer le transfert vers OVHcloud. Après cette période, votre nom de domaine sera verrouillé automatiquement si vous ne soumettez pas de demande de modification de bureau d'enregistrement de nom de domaine.
 >
 
-### Étape 3 : demander un transfert de nom de domaine vers OVHcloud <a name="step3"></a>
+### 3 - Demander un transfert de nom de domaine vers OVHcloud <a name="step3"></a>
 
 Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](/links/web/domains). Entrez votre nom de domaine, puis suivez la procédure de commande.
 
@@ -105,9 +116,9 @@ Vous pouvez également terminer votre commande avec un [hébergement web](/links
 
 ![domaine](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
-Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via l'[espace client OVHcloud](/links/manager). Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Opérations en cours`{.action}.
+Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via la page [Opérations en cours](/links/control-panel/web-ongoing-operations).
 
-### Étape 4 : Validation du transfert
+### 4 - Validation du transfert
 
 La procédure de transfert de nom de domaine implique une validation par e-mail. Cette étape peut être effectuée dès le début du transfert, mais peut prendre jusqu'à cinq jours.
 
@@ -129,9 +140,9 @@ Vérifiez également et en priorité les dossiers « SPAM » / « courrier indé
 Si l'e-mail de validation reste introuvable, contactez le support OVHcloud via la création d'un ticket d'assistance. Nos services pourront alors annuler le transfert. Une fois l'annulation effectuée, modifiez l'adresse e-mail du titulaire du nom de domaine, en privilégiant un autre fournisseur e-mail (tel que, par exemple, Gmail, Yahoo, Onet, wp.pl, etc.).<br>
 Une fois l'adresse e-mail modifiée, effectuez une [nouvelle demande de transfert](#step3).
 
-### Étape 5 : gérer son nom de domaine avec OVHcloud
+### 5 - Gérer son nom de domaine avec OVHcloud
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](/links/manager). Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine depuis la page [Noms de domaine](/links/control-panel/web-domains).
 
 ## Aller plus loin
 

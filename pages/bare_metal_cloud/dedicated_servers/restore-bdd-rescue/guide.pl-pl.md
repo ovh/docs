@@ -17,7 +17,17 @@ Tryb Rescue pozwala na stały dostęp do Twoich danych, nawet jeśli system oper
 ## Wymagania początkowe
 
 - Serwer [dedykowany](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps) lub instancja [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

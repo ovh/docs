@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Choisir une classe de stockage adaptée à vos besoins
-excerpt: Découvrez les différentes classes de stockage Object Storage OVHcloud et choisissez celle qui convient le mieux à vos besoins
+excerpt: Découvrez les différentes classes de stockage Object Storage OVHcloud et choisissez celle qui convient le mieux à vos besoins.
 updated: 2026-02-03
 ---
 
@@ -14,7 +14,7 @@ Nous proposons deux solutions de stockage d'objets : notre **dernière générat
 
 ### Object Storage - Standard
 
-La classe de stockage Standard offre un service de stockage objet scalable, compatible avec la grande majorité des cas d'usages, adapté à tous types de volumétrie. L’offre s’appuie sur un stockage sur disques HDD au sein d'une architecture résiliente dans un datacentre. L’offre est accessible depuis une API S3.
+La classe de stockage Standard offre un service de stockage objet scalable, compatible avec la grande majorité des cas d'usages, adapté à tous types de volumétrie. L’offre s’appuie sur un stockage sur disques HDD au sein d'une architecture résiliente dans un datacentre. L’offre est accessible depuis une API compatible S3.
 
 Cette offre est adaptée aux cas d'usages suivants : media / content storage & delivery, datalake, website, backup, logs et métriques d'applications.
 
@@ -22,7 +22,7 @@ Cette offre est adaptée aux cas d'usages suivants : media / content storage & d
 
 La classe de stockage High Performance est un espace de stockage objet hautement performant, pour les applicatifs ayant de gros besoins en bande passante et nécessitant des accès à la donnée en lecture et en écriture extrêmement rapides et intensifs. L’offre s’appuie sur un stockage sur des disques performants de type SSD NVMe au sein d'une architecture résiliente dans un datacentre.
 
-Cette offre est adaptée aux cas d'usages suivants : AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
+Cette offre est adaptée aux cas d'usages suivants : AI & Analytics, datalake, High Performance Computing, plateformes multimédia/contenu.
 
 ### Object Storage - Infrequent Access ou *accès peu fréquent*
 
@@ -44,17 +44,17 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
 
 <table>
     <tr>
-        <td><strong>Classe de stockage<strong></td>
-        <td><strong>Cas d'usages<strong></td>
-        <td><strong>Performance (TTFB)<strong></td>
-        <td><strong>Régions prises en charge<strong></td>
-        <td><strong>SLA de disponibilité<strong></td>
-        <td><strong>Durée de stockage minimale<strong></td>
-        <td><strong>Frais de récupération<strong></td>
-        <td><strong>Granularité<strong></td>
+        <td><strong>Classe de stockage</strong></td>
+        <td><strong>Cas d'usages</strong></td>
+        <td><strong>Performance (TTFB)</strong></td>
+        <td><strong>Régions prises en charge</strong></td>
+        <td><strong>SLA de disponibilité</strong></td>
+        <td><strong>Durée de stockage minimale</strong></td>
+        <td><strong>Frais de récupération</strong></td>
+        <td><strong>Granularité</strong></td>
     </tr>
     <tr>
-        <td><strong>High Performance<strong></td>
+        <td><strong>High Performance</strong></td>
         <td>AI &amp; Analytics, Datalake, High power Computing Multimedia / Content Platform</td>
         <td>millisecondes</td>
         <td>1-AZ</td>
@@ -64,7 +64,7 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
         <td>À l'objet, prise en charge de la gestion du cycle de vie</td>
     </tr>
     <tr>
-        <td><strong>Standard<strong></td>
+        <td><strong>Standard</strong></td>
         <td>Media / content storage & delivery, datalake, website, backup, logs et métriques d'application</td>
         <td>millisecondes</td>
         <td>1-AZ et 3-AZ</td>
@@ -74,7 +74,7 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
         <td>À l'objet, prise en charge de la gestion du cycle de vie</td>
     </tr>
     <tr>
-        <td><strong>Infrequent Access<strong></td>
+        <td><strong>Infrequent Access</strong></td>
         <td>Stockage de longue durée, sauvegardes, reprise après sinistre</td>
         <td>millisecondes</td>
         <td>1-AZ et 3-AZ</td>
@@ -84,7 +84,7 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
         <td>À l'objet, prise en charge de la gestion du cycle de vie</td>
     </tr>
     <tr>
-        <td><strong>Active Archive<strong></td>
+        <td><strong>Active Archive</strong></td>
         <td>Stockage à long terme de données réglementaires, plans de reprise après sinistre</td>
         <td>millisecondes</td>
         <td>3-AZ</td>
@@ -94,7 +94,7 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
         <td>À l'objet, prise en charge de la gestion du cycle de vie</td>
     </tr>
     <tr>
-        <td><strong>Cold Archive*<strong></td>
+        <td><strong>Cold Archive</strong></td>
         <td>Stockage à très long terme, sauvegardes, reprise après sinistre</td>
         <td>heures</td>
         <td>Paris, région 3-AZ</td>
@@ -139,15 +139,15 @@ Lorsque vous utilisez la classe Cold Archive dans un bucket Object Storage dit �
 
 Pour les tarifs officiels, consultez notre page « [Tarifs - Object Storage](https://www.ovhcloud.com/fr/public-cloud/prices/#storage) ».
 
-## Object Storage - SWIFT API
+## Object Storage - Swift API
 
-### Standard object storage - SWIFT API
+### Standard object storage - Swift API
 
-La classe de stockage Swift Standard Object Storage  offre un service de stockage de données sans besoin particulier en matière de performance, au sein d’une architecture résiliente par triple réplication de la donnée au sein d’un même datacentre. L’offre est accessible depuis une API SWIFT et une API compatible Amazon S3 (compatibilité inférieure aux nouvelles offres Object Storage S3).
+La classe de stockage Swift Standard Object Storage offre un service de stockage de données sans besoin particulier en matière de performance, au sein d’une architecture résiliente par triple réplication de la donnée au sein d’un même datacentre. L’offre est accessible depuis une API Swift et une API compatible Amazon S3 (compatibilité inférieure aux nouvelles offres Object Storage S3).
 
-### Cloud Archive - SWIFT API
+### Cloud Archive - Swift API
 
-La classe de stockage Cloud Archive (SWIFT) offre un service de stockage pour de la conservation long terme de données pour des besoins métier ou d'autres obligations. Adapté à ce cas d’usage, ce service propose un coût du stockage faible et une latence à la récupération des données de plusieurs minutes. L’offre est accessible depuis une API SWIFT.
+La classe de stockage Cloud Archive (Swift) offre un service de stockage pour de la conservation long terme de données pour des besoins métier ou d’autres obligations. Adapté à ce cas d’usage, ce service propose un coût du stockage faible et une latence à la récupération des données de plusieurs minutes. L’offre est accessible depuis une API Swift.
 
 ## Toutes les classes de stockage sont accessibles grâce à des API standard
 
@@ -158,8 +158,8 @@ La classe de stockage Cloud Archive (SWIFT) offre un service de stockage pour de
 | Object Storage - Infrequent Access | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
 | Object Storage - Active Archive | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
 | Object Storage - Cold Archive | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
-| SWIFT Standard Object Storage | OpenStack SWIFT | Pris en charge | Solution établie, *legacy* |
-| Cloud Archive - API SWIFT | OpenStack SWIFT | Pris en charge | Solution établie, *legacy* |
+| SWIFT Standard Object Storage | OpenStack Swift | Pris en charge | Solution établie, *legacy* |
+| Cloud Archive - API Swift | OpenStack Swift | Pris en charge | Solution établie, *legacy* |
 
 La liste de tous les points de terminaison API est disponible [ici](/pages/storage_and_backup/object_storage/s3_location).
 

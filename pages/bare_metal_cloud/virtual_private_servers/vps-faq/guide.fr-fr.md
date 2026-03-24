@@ -1,7 +1,7 @@
 ---
 title: "FAQ sur les VPS OVHcloud"
 excerpt: "Trouvez les réponses aux questions les plus fréquemment posées sur nos offres VPS"
-updated: 2025-10-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -76,7 +76,7 @@ Si vous avez besoin de ressources allouées, mais que vous préférez ne pas vou
 
 Oui, vous pouvez mettre à niveau votre configuration depuis votre espace client, sans migration manuelle de vos données. Les options de mise à niveau disponibles dépendent de la gamme et du modèle du VPS.
 
-Cependant, pour downgrader votre configuration, vous devrez souscrire une nouvelle offre, transférer vos données, puis résilier votre ancien service. Notre support est à votre disposition si nécessaire.
+Cependant, pour passer à une configuration inférieure, vous devrez souscrire une nouvelle offre, transférer vos données, puis résilier votre ancien service. Notre support est à votre disposition si nécessaire.
 
 ///
 
@@ -179,7 +179,7 @@ Un VPS OVHcloud inclut un SLA de 99,9 %.
 
 /// details | Quelles sont les spécificités d’un VPS Local Zone ?
 
-Grâce au VPS Local Zone, vous réduisez significativement les temps d’accès à vos sites et applications, car vos données sont hébergées au plus près de vos utilisateurs. L’utilisateur bénéficie ainsi d’une meilleure expérience, car la latence est réduite pour chaque application nécessitent un temps de réponse minimal. Il vous suffit de sélectionner l'une de nos implantations mondiales lors de votre commande. 
+Grâce au VPS Local Zone, vous réduisez significativement les temps d’accès à vos sites et applications, car vos données sont hébergées au plus près de vos utilisateurs. L’utilisateur bénéficie ainsi d’une meilleure expérience, car la latence est réduite pour chaque application nécessitant un temps de réponse minimal. Il vous suffit de sélectionner l'une de nos implantations mondiales lors de votre commande. 
 
 Gardez à l'esprit qu’un VPS Local Zone, contrairement à un VPS ordinaire, n’inclut pas de fonctionnalités de sécurité, comme l’anti-DDoS, ni d’options avancées, comme l’Additional IP et le Load Balancer.
 
@@ -201,7 +201,7 @@ Les serveurs privés virtuels sans protection anti-DDoS sont automatiquement exp
 - Pas de mitigation automatique : Pour protéger votre serveur, vous devrez repousser les attaques à l'aide de logiciels de sécurité tiers ou de configurations spécifiques.
 - Charge de gestion supplémentaire : L’absence d’une sécurité intégrée robuste présente un risque majeur, soulignant la nécessité d’un suivi vigilant et de stratégies proactives, en particulier pour les projets à fort trafic.
 
-Si la résilience face aux attaques DDoS est un facteur critique pour votre projet, nous vous recommandons d'opter pour un VPS OVHcloud hébergé dans l'un de nos datacentres, afin qu'il bénéficie d'une protection intégrée.
+Si la résilience face aux attaques DDoS est un facteur critique pour votre projet, nous vous recommandons d'opter pour un VPS OVHcloud hébergé dans l'un de nos datacentres, qui bénéficie d'une protection intégrée.
 
 ///
 
@@ -227,6 +227,20 @@ Par exemple, nous proposons une gamme de modèles et d'images préconfigurés po
 De plus, notre documentation et notre base de connaissances contiennent de nombreuses informations sur la configuration et la gestion de votre VPS.
 
 Toutefois, pour obtenir une assistance spécifique en matière de configuration logicielle, nous vous recommandons de contacter notre [communauté d'utilisateurs](/links/community) ou de demander l'aide d'un administrateur système ou d'un développeur qualifié via notre [Portail Partenaires](/links/partner).
+
+///
+
+/// details | Quelles sont les bonnes pratiques pour l’envoi d’e-mails depuis un VPS ?
+
+Pour éviter que vos e-mails soient considérés comme du spam, vous devez configurer correctement votre serveur.
+
+Cela inclut notamment :
+
+- l’authentification des e-mails (SPF, DKIM, DMARC),
+- la configuration du reverse DNS (PTR),
+- le respect des bonnes pratiques des fournisseurs de messagerie.
+
+Pour plus de détails, consultez notre guide dédié : [Comment éviter que vos e-mails ne soient marqués comme spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 ///
 
@@ -381,7 +395,7 @@ Plusieurs possibilités s'offrent à vous, par exemple :
 
 Il n'est pas possible de télécharger un fichier VM d'un VPS OVHcloud. Vous pouvez cependant utiliser l’option **Snapshot** de votre VPS depuis votre espace client OVHcloud pour récupérer un fichier image.
 
-Suivez notre guide « [Utiliser les snapshots sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-VPS) » pour créer et télécharger un snapshot du VPS.
+Suivez notre guide « [Utiliser les snapshots sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps) » pour créer et télécharger un snapshot du VPS.
 
 Vous pouvez ensuite convertir localement le fichier de snapshot téléchargé dans un format correspondant à vos besoins.
 
@@ -393,7 +407,7 @@ Envisagez de contacter l'un de nos [partenaires](/links/partner) pour obtenir de
 
 L'accès au Backup Storage de votre VPS (stockage FTP) peut être limité aux adresses IP liées à un service au sein de votre compte client OVHcloud.
 
-Afin d’autoriser l’accès depuis d’autres adresses IP, vous pouvez utiliser l'API OVHcloud.
+Pour autoriser l’accès depuis d’autres adresses IP, vous pouvez utiliser l'API OVHcloud.
 Cela vous permettra de récupérer vos données de sauvegarde depuis un service différent via différents protocoles (FTP, NFS, CIFS).
 
 > [!warning]

@@ -14,19 +14,19 @@ Il pagamento dell'ordine può essere effettuato solo dopo l'identificazione tram
 
 #### Consigli e suggerimenti
 
-Sei uscito dalla pagina dell'ordine? Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I tuoi ordini`{.action}. A questo punto è possibile visualizzare l’ordine e saldarlo.
+Sei uscito dalla pagina dell’ordine? Apri la pagina [I miei ordini](/links/control-panel/billing-orders). A questo punto è possibile visualizzare l’ordine e saldarlo.
 
 ### Come verificare lo stato di un pagamento?
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie fatture`{.action}. Se una fattura è in attesa di pagamento, direttamente sul pannello di controllo, ti verrà proposto di saldare il saldo.
+Apri la pagina [Le mie fatture](/links/control-panel/billing-invoices). Se una fattura è in attesa di pagamento, ti verrà proposto di saldare il saldo.
 
 #### Consigli e suggerimenti
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei metodi di pagamento`{.action}. Potrete allora registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
 
 ### Come verificare lo stato di un ordine?
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Visualizza i tuoi ordini`{.action}.
+Apri la pagina [I miei ordini](/links/control-panel/billing-orders).
 
 #### Consigli e suggerimenti
 
@@ -60,7 +60,7 @@ Un’altra possibile causa potrebbe essere il mancato pagamento di una fattura. 
 
 #### Consigli e suggerimenti
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei metodi di pagamento`{.action}. Potrete allora registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
 
 ## Per saperne di più
 

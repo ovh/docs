@@ -21,7 +21,17 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 - Tener acceso a la zona DNS (Domain Name System) activa del dominio.
 - Tener acceso a los archivos y a la base de datos de su sitio web en su actual proveedor de hosting.
 - Disponer de las claves (usuario, contraseña, servidor) de las direcciones de correo actuales.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

@@ -1,6 +1,6 @@
 ---
 title: 'Usuarios de la API'
-excerpt: 'Descubra las funcionalidades de los usuarios de la API de SMS'
+excerpt: 'Descubra cómo crear, configurar y gestionar usuarios de la API para el envío de SMS, incluyendo permisos y restricciones'
 updated: 2022-08-05
 ---
 
@@ -51,9 +51,7 @@ Para gestionar mejor el saldo de su cuenta de SMS, es posible aplicar un límite
 
 ### 1. Crear un usuario de la API
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} y seleccione su cuenta de SMS.
-
-Por último, abra la pestaña `Usuarios API`{.action}. Para añadir un usuario, haga clic en el botón `Acciones`{.action} y seleccione `Añadir`{.action}.
+Abra la pestaña `Usuarios API`{.action}. Para añadir un usuario, haga clic en el botón `Acciones`{.action} y seleccione `Añadir`{.action}.
 
 ![Usuarios API](images/smsusers01e-2021.png){.thumbnail}
 

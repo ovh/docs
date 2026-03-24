@@ -21,13 +21,22 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 ## Prérequis
 
 - Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) avec un RAID matériel.
-- Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
+- Avoir accès à votre serveur via SSH en tant qu’administrateur (sudo).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
 ### Utiliser votre espace client OVHcloud
-
-Dans votre [espace client OVHcloud](/links/manager), sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
 Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
@@ -56,8 +65,6 @@ df -h
 ```
 
 ### Utiliser le mode rescue
-
-Dans votre [espace client OVHcloud](/links/manager), sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}.
 
 Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action} pour changer le système de démarrage.
 

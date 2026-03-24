@@ -1,7 +1,7 @@
 ---
 title: 'Phishing - Comment reconnaître des e-mails frauduleux ?'
-excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
-updated: 2026-01-06
+excerpt: 'Comment reconnaître un e-mail ou SMS de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
+updated: 2026-03-03
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-L'hameçonnage (ou *phishing* en anglais) est une technique frauduleuse destinée à leurrer l'internaute pour l'inciter à communiquer des données personnelles (comptes d'accès, mots de passe, etc...) et/ou bancaires en se faisant passer pour un tiers ou un site de confiance.<br>
+L'hameçonnage (ou *phishing* en anglais) est une technique frauduleuse destinée à leurrer l'internaute pour l'inciter à communiquer des données personnelles (comptes d'accès, mots de passe, etc.) et/ou bancaires en se faisant passer pour un tiers ou un site de confiance.<br>
 Dans la pratique, il s'agit souvent de l’envoi d’un e-mail ou d'un SMS vous invitant à cliquer sur un lien. Ce lien vous redirige vers un formulaire qui reprend frauduleusement les couleurs d’une marque et vous invite à entrer vos identifiants personnels.
 
 **Ce guide vous explique comment reconnaître un e-mail ou un SMS de phishing et quelles mesures prendre si vous avez cliqué sur un lien frauduleux.**
@@ -33,7 +33,7 @@ Dans la pratique, il s'agit souvent de l’envoi d’un e-mail ou d'un SMS vous 
 
 #### Identifier un e-mail de phishing
 
-En priorité, vérifiez si l'e-mail que vous avez reçu est aussi visible dans votre [espace client OVHcloud](/links/manager). Connectez-vous, cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action} (ou `Mes communications`{.action}). Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
+En priorité, vérifiez si l'e-mail que vous avez reçu est aussi visible sur la page [Mes communications](/links/control-panel/account-messages). Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
 
 Par ailleurs, voici quelques éléments pour vous aider à distinguer visuellement un authentique e-mail OVHcloud d'une tentative de phishing.
 
@@ -49,7 +49,7 @@ Cliquez sur l'image pour l'agrandir. Retrouvez les détails et explications dans
 |---|---|---|
 |1 - Expéditeur|Vérifiez que l’adresse utilisée pour l’envoi de l’e-mail se termine par un nom de domaine (ou un sous-domaine, par exemple `events.ovhcloud.com` ) appartenant à OVHcloud (voir la liste ci-dessous) |L'expéditeur de l'e-mail sera très probablement une adresse qui ne vient pas d'OVHcloud.|
 |2 - Objet|Vérifiez que votre identifiant **(qui commence généralement par les initiales de la personne ayant créé le compte OVHcloud)** et/ou l’adresse e-mail de votre compte figurent dans l’objet du message.|Très souvent, l'e-mail sera marqué comme \[SPAM] et **votre identifiant n'apparaîtra pas ou sera incorrect**.|
-|3 - Lien|**Sans cliquer dessus, passez votre pointeur de souris sur le lien ou le bouton** et vous en verrez directement la cible (juste en dessous ou tout en bas de votre navigateur). Dans notre exemple, le lien renvoie bien vers une adresse https://www.ovh.com/. Lorsque vous cliquez sur un lien, vérifiez toujours l'adresse dans le navigateur. OVHcloud utilise un ensemble de noms de domaines reconnaissables, généralement ovhcloud.com ou ovh.com (voir la liste ci-dessous). |Dans un e-mail de phishing, le lien ne sera pas celui d'une page officielle OVHcloud. **Ne cliquez pas dessus.**|
+|3 - Lien|**Sans cliquer dessus, passez votre pointeur de souris sur le lien ou le bouton** et vous en verrez directement la cible (juste en dessous ou tout en bas de votre navigateur). Dans notre exemple, le lien renvoie bien vers une adresse https://www.ovh.com/. Lorsque vous cliquez sur un lien, vérifiez toujours l'adresse dans le navigateur. OVHcloud utilise un ensemble de noms de domaines reconnaissables, généralement ovhcloud.com ou ovh.com (voir ci-dessous la liste des domaines légitimes et les astuces pour vérifier un lien suspect).|Dans un e-mail de phishing, le lien ne sera pas celui d'une page officielle OVHcloud. **Ne cliquez pas dessus.**|
 |4 - En-tête et pied de page de l'e-mail|OVHcloud envoie des e-mails dans les formats TXT et HTML. L'en-tête contiendra le logo OVHcloud, le pied de l'e-mail contiendra des informations légales liées à OVHcloud|Il se peut que l'en-tête ou le pied de page contiennent des liens qui n'ont rien à voir avec OVHcloud. **Ne cliquez pas sur ces liens.**|
 
 /// details | **Liste des noms de domaines OVHcloud légitimes** (cliquez pour l'afficher)
@@ -79,11 +79,46 @@ Cliquez sur l'image pour l'agrandir. Retrouvez les détails et explications dans
 - ovh.us
 - robot.ovh.net
 
-Des e-mails peuvent également vous être envoyés de notre part depuis des sous-domaines authentiques tels que :
+Des e-mails peuvent aussi provenir de sous-domaines authentiques :
 
 - events.ovhcloud.com
 - news.soyoustart.com
 - services.kimsufi.com
+
+///
+
+/// details | **Astuces pour vérifier un lien suspect** (cliquez pour afficher)
+
+**Lire l'URL de droite à gauche**
+
+Le vrai nom de domaine se trouve juste avant le premier `/` dans l'adresse. Les URL de phishing ajoutent souvent des mots avant le domaine pour le rendre crédible :
+
+- `https://www.ovhcloud.com/account/login` — le vrai domaine est **ovhcloud.com** ✓
+- `https://ovhcloud.com.login-secure.xyz/account` — le vrai domaine est **login-secure.xyz** ✗
+
+Pour trouver le vrai domaine, regardez la barre d'adresse et lisez **depuis le premier `/` vers la gauche** — les deux dernières parties avant cette barre oblique sont le domaine réel.
+
+**Attention aux caractères ressemblants**
+
+Les fraudeurs remplacent parfois des lettres par des caractères visuellement similaires pour créer des adresses trompeuses :
+
+- `ovhcIoud.com` (I majuscule à la place du L minuscule)
+- `0vhcloud.com` (zéro à la place de la lettre O)
+- `ovhclould.com` (lettre supplémentaire)
+
+Si quelque chose vous semble inhabituel, ne cliquez pas. Tapez `ovhcloud.com` manuellement dans votre navigateur.
+
+**Les raccourcisseurs d'URL sont un signal d'alerte**
+
+Les liens courts tels que `bit.ly/xxx`, `tinyurl.com/xxx` ou `t.co/xxx` masquent la destination réelle. OVHcloud n'utilise **jamais** de raccourcisseurs d'URL dans ses e-mails officiels.
+
+**Sur mobile : appui long au lieu du survol**
+
+Sur un téléphone ou une tablette, vous ne pouvez pas survoler un lien. À la place, effectuez un **appui long** (maintenez le doigt sur le lien sans le relâcher). Un aperçu de l'URL complète apparaîtra. Si le domaine vous est inconnu, n'ouvrez pas le lien.
+
+**En cas de doute, accédez directement au site**
+
+Le réflexe le plus sûr : **ne cliquez jamais sur un lien dans un e-mail pour accéder à votre compte**. Ouvrez plutôt votre navigateur et tapez `www.ovhcloud.com` vous-même, puis connectez-vous depuis le site. Si OVHcloud nécessite une action de votre part, vous verrez la notification dans votre espace client.
 
 ///
 
@@ -97,12 +132,103 @@ Vous trouverez ci-dessous 2 exemples de SMS, le premier est légitime et corresp
 
 #### Comment signaler un e-mail de phishing ?
 
-Après avoir effectué les vérifications expliquées au-dessus, si vous êtes certain que vous avez effectivement reçu un e-mail de phishing usurpant l'identité d'OVHcloud, vous pouvez nous faire parvenir un maximum d’informations (le contenu de l'e-mail au minimum) à l’adresse e-mail suivante : **<fraude@ovh.com>**.
+Après avoir effectué les vérifications expliquées au-dessus, si vous êtes certain d'avoir reçu un e-mail de phishing usurpant l’identité d’OVHcloud, vous pouvez nous le signaler en enregistrant l’e-mail sous forme de fichier (`.eml` ou `.msg`) et en l’envoyant en **pièce jointe** d’un nouveau message à l’adresse **<fraude@ovh.com>**.
+
+Ces formats de fichiers conservent les informations techniques cachées (appelées « en-têtes ») dont nos équipes ont besoin pour remonter à la source de la fraude et agir.
+
+> [!warning]
+>
+> **Ne transférez pas directement l’e-mail de phishing.** En le transférant, c’est votre propre boîte mail qui envoie le contenu frauduleux, ce qui peut entraîner le blocage de votre adresse e-mail considérée comme émettrice de spam. Enregistrez plutôt l’e-mail sous forme de fichier et joignez-le à un **nouveau** message.
+
+**Comment enregistrer un e-mail sous forme de fichier :**
+
+Cliquez sur le titre correspondant à l’application de messagerie que vous utilisez.
+
+**Logiciels de messagerie (bureau)**
+
+/// details | **Outlook pour Windows**
+
+Il existe deux versions d’Outlook pour Windows : **Outlook classique** et le **nouvel Outlook**. Pour les distinguer, tapez « Outlook » dans la barre de recherche Windows. La version classique affiche la mention *« (classique) »*, tandis que le nouvel Outlook n’a pas de mention spéciale.
+
+![Outlook Windows - identifier la version](images/outlook-windows-identify01.png){.thumbnail .h-500}
+
+**Outlook classique :**
+
+1. Sélectionnez l’e-mail de phishing dans votre boîte de réception (ne l’ouvrez pas).
+2. Cliquez sur `Fichier`{.action} dans la barre de menu, puis sur `Enregistrer sous`{.action}.
+3. Dans le menu déroulant « Type de fichier », sélectionnez **Format de message Outlook - Unicode (.msg)**.
+4. Choisissez un emplacement sur votre ordinateur (par exemple le Bureau) et cliquez sur `Enregistrer`{.action}.
+
+Vous pouvez également **glisser-déposer** l’e-mail depuis votre boîte de réception directement sur votre Bureau. Cela créera un fichier `.msg` que vous pourrez joindre à votre signalement.
+
+**Nouvel Outlook :**
+
+1. Dans la liste des messages, faites un **clic droit** sur l’e-mail de phishing.
+2. Sélectionnez `Enregistrer sous`{.action}, puis choisissez `Enregistrer en tant que fichier EML`{.action}.
+3. Choisissez un emplacement sur votre ordinateur et cliquez sur `Enregistrer`{.action}.
+
+///
+
+/// details | **Thunderbird**
+
+1. Faites un clic droit sur l’e-mail de phishing dans votre boîte de réception.
+2. Sélectionnez `Enregistrer sous`{.action}.
+3. L’e-mail sera enregistré sous forme de fichier `.eml`. Choisissez un emplacement sur votre ordinateur et cliquez sur `Enregistrer`{.action}.
+
+///
+
+/// details | **Apple Mail (macOS)**
+
+1. Sélectionnez l’e-mail de phishing dans votre boîte de réception.
+2. Dans la barre de menu, cliquez sur `Fichier`{.action} > `Enregistrer sous`{.action}.
+3. Choisissez le format **Source brute du message**, sélectionnez un emplacement sur votre ordinateur et cliquez sur `Enregistrer`{.action}.
+
+///
+
+**Webmail (navigateur)**
+
+/// details | **OWA - Outlook Web Application**
+
+1. Ouvrez l’e-mail de phishing.
+2. Cliquez sur les **trois points horizontaux** (⋯) en haut à droite de l’e-mail.
+3. Sélectionnez `Afficher`{.action} > `Afficher la source du message`{.action}.
+4. Sélectionnez tout le texte (`Ctrl+A` ou `Cmd+A`), copiez-le (`Ctrl+C` ou `Cmd+C`), collez-le dans un éditeur de texte brut (par exemple le Bloc-notes ou TextEdit), et enregistrez le fichier avec l’extension `.eml`.
+
+///
+
+/// details | **Roundcube (Webmail OVHcloud)**
+
+1. Sélectionnez l’e-mail de phishing dans votre boîte de réception.
+2. Cliquez sur `Plus`{.action} (ou l’icône **⋮**) dans la barre d’outils.
+3. Sélectionnez `Télécharger (.eml)`{.action}.
+4. Le fichier sera enregistré dans votre dossier Téléchargements.
+
+///
+
+/// details | **Zimbra (Webmail OVHcloud)**
+
+1. Sélectionnez l’e-mail de phishing dans votre boîte de réception.
+2. Cliquez sur `Plus`{.action} dans la barre d’outils.
+3. Sélectionnez `Afficher l’original`{.action}. Le contenu brut de l’e-mail s’ouvrira dans un nouvel onglet du navigateur.
+4. Dans ce nouvel onglet, utilisez `Ctrl+S` (ou `Cmd+S` sur macOS) pour enregistrer la page. Enregistrez le fichier avec l’extension `.eml` (si votre navigateur propose `.txt`, renommez le fichier après l’enregistrement).
+
+///
+
+/// details | **Gmail**
+
+1. Ouvrez l’e-mail de phishing.
+2. Cliquez sur les **trois points verticaux** (⋮) en haut à droite de l’e-mail.
+3. Sélectionnez `Télécharger le message`{.action}.
+4. Un fichier `.eml` sera enregistré dans votre dossier Téléchargements.
+
+///
+
+Une fois le fichier enregistré, créez un **nouvel e-mail** à destination de **<fraude@ovh.com>** et joignez-y le fichier.
 
 > [!primary]
-> 
+>
 > Veuillez noter que les informations que vous nous communiquerez pourront être partagées à des tiers afin de nous permettre de lutter contre ces menaces.
-> 
+>
 
 ### J'ai saisi mes informations personnelles : que faire ?
 
@@ -110,7 +236,7 @@ Cliquez sur les titres ci-dessous pour afficher les instructions.
 
 /// details | **Si vous avez entré votre numéro de carte bancaire sur un site frauduleux**
 
-Contactez rapidement votre banque afin de faire opposition sur votre moyen de paiement. Indiquez-leur la date et si possible l’heure à laquelle vous avez entré votre numéro de carte bancaire.
+Contactez rapidement votre banque pour faire opposition sur votre moyen de paiement. Indiquez-leur la date et si possible l’heure à laquelle vous avez entré votre numéro de carte bancaire.
 
 **Votre banque est la seule à pouvoir annuler les transactions frauduleuses qui pourraient avoir été effectuées à votre insu.**
 
@@ -118,7 +244,7 @@ Contactez rapidement votre banque afin de faire opposition sur votre moyen de pa
 
 /// details | **Si vous avez entré votre mot de passe OVHcloud sur un site frauduleux**
 
-Connectez-vous sur votre [espace client OVHcloud](/links/manager) et modifiez immédiatement votre mot de passe.<br>
+Ouvrez la page [Sécurité du compte](/links/control-panel/account-security) et modifiez immédiatement votre mot de passe.<br>
 
 Vous trouverez, sur notre guide « [Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password) », la méthode pour modifier votre mot de passe depuis votre espace client, ainsi que nos recommandations pour générer un mot de passe efficace et le sauvegarder dans un gestionnaire de mots de passe. 
 

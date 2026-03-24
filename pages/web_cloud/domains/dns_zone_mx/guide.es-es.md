@@ -21,10 +21,19 @@ El registro MX permite asociar un nombre de dominio al servidor de su plataforma
 
 ## Requisitos
 
-- Tener acceso a la gestión de la zona DNS del nombre de dominio desde el [área de cliente de OVHcloud](/links/manager).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - El nombre de dominio debe utilizar la configuración de OVHcloud (es decir, los servidores DNS de OVHcloud).
 - Tener una solución MX Plan (incluida en el plan de [alojamiento web](/links/web/hosting), el [alojamiento gratuito 100M](/links/web/domains-free-hosting) o la solución MX Plan contratada por separado), una de nuestras [soluciones de correo de OVHcloud](/links/web/emails) o un servicio de correo externo.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!primary]
 >

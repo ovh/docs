@@ -37,38 +37,18 @@ Tous vos services actifs peuvent être récupérés en utilisant la route suivan
 
 Utilisez la route suivante pour créer une nouvelle partition :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS
->> >
->> > **partitionDescription**
->> >
->> >> Description facultative
->> >
->> > **partitionName** *
->> >
->> >> Un nom pour la partition
->> >
->> > **protocol** *
->> >
->> >> *NFS*, *CIFS* ou *NFS_CIFS* pour les deux  
->> >
->> > **size** *
->> >
->> >> La taille de la partition
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS |
+| `partitionDescription` |  | Description facultative |
+| `partitionName` | Yes | Un nom pour la partition |
+| `protocol` | Yes | *NFS*, *CIFS* ou *NFS_CIFS* pour les deux |
+| `size` | Yes | La taille de la partition |
 
 Choisissez `NFS` comme protocole et une taille de `10` Gigaoctets par exemple.
 
@@ -81,59 +61,29 @@ Choisissez `NFS` comme protocole et une taille de `10` Gigaoctets par exemple.
 
 Vous pouvez vérifier les adresses IP éligibles à un accès via les appels API suivants :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableBlocks
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableIps
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableBlocks
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS |
+| `partitionName` | Yes | Nom de la partition |
 
 Pour créer une nouvelle entrée ACL vous permettant de vous connecter à votre partition, utilisez la route suivante :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/access
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/access
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->> >
->> > **ip** *
->> >
->> >> L'adresse IP ou la plage à laquelle l'accès doit être accordé
->> >
->> > **type** *
->> >
->> >> Type d'accès ACL pour cette entrée : *readonly* ou *readwrite*
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
+| `ip` | Yes | L'adresse IP ou la plage à laquelle l'accès doit être accordé |
+| `type` | Yes | Type d'accès ACL pour cette entrée : *readonly* ou *readwrite* |
 
 > [!primary]
 >
@@ -144,59 +94,31 @@ Pour créer une nouvelle entrée ACL vous permettant de vous connecter à votre 
 
 Pour ajouter un snapshot manuel, utilisez la route suivante :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->> >
->> > **expiration**
->> >
->> >> Une date d'expiration facultative, par exemple : 2022-06-24 (ISO 8601)
->> >
->> > **name** *
->> >
->> >> Nom du snapshot.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
+| `expiration` |  | Une date d'expiration facultative, par exemple : 2022-06-24 (ISO 8601) |
+| `name` | Yes | Nom du snapshot. |
 
 ### Suppression d'une partition
 
 Utilisez la route suivante pour supprimer une partition :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
 
 ## Aller plus loin
 

@@ -19,7 +19,6 @@ Wenn Sie Ihr Administrator-Passwort nicht mehr haben, können Sie es über den O
 ## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) oder eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem OVHcloud Account
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
 
 ## In der praktischen Anwendung
 
@@ -99,7 +98,7 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Geben Sie "1" ein, und drücken Sie die Eingabetaste. (Verwenden Sie zuerst die Option 2, wenn neben "Deaktiviert" ein "X" steht.)
+Geben Sie "1" ein, und drücken Sie die Eingabetaste. (Verwenden Sie zuerst die Option 2, wenn neben "Disabled" ein "X" steht.)
 
 ```text
 Select: [q] > 1
@@ -120,7 +119,7 @@ Write hive files? (y/n) [n] : y
 
 ### Schritt 4: Server neu starten
 
-Sie können nun den Rescue-Modus beenden und den Server neu starten. Wenn nmötig, folgen Sie der zugehörigen Anleitung:
+Sie können nun den Rescue-Modus beenden und den Server neu starten. Wenn nötig, folgen Sie der zugehörigen Anleitung:
 
 - [VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 - [Instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
@@ -146,4 +145,4 @@ Sie können sich nun als "Administrator" mit diesem neuen Passwort anmelden.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf unsere [Community-Seite](/links/community).

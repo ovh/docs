@@ -14,7 +14,17 @@ Sie können die Authentifizierungsmethode **Single Sign-On** (SSO) verwenden, um
 
 - AD FS (Active Directory Federation Services) wird auf Ihrem Server ausgeführt.
 - Sie verfügen über einen [OVHcloud Kunden-Account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Navigationspfad:** `Identität, Sicherheit und Operationen`{.action} > `Benutzer`{.action} > `SSO-Verbindung`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## In der praktischen Anwendung
 
@@ -121,15 +131,9 @@ Wenn die Entsprechungstabelle vollständig ist, vertraut Ihr AD FS nun OVHcloud 
 
 Das Hinzufügen Ihrer AD FS als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](/links/manager), in dem Sie die Metadaten des Identity Providers hinterlegen können.
 
-Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und anschließend `Identitäten`{.action}.
+Öffnen Sie die Seite [SAML SSO](/links/control-panel/iam-saml-sso).
 
-![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Klicken Sie dann auf den Tab `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
-
-![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Geben Sie die XML-Metadaten Ihres AD FS ein. In diesem Fall ist das `Name des Gruppenattributs` optional. Klicken Sie auf `Bestätigen`{.action}.
+Im Bereich `SSO-Verbindung`{.action} geben Sie die XML-Metadaten Ihres AD FS ein. In diesem Fall ist das `Name des Gruppenattributs` optional. Klicken Sie auf `Bestätigen`{.action}.
 
 Sie können die lokalen Benutzer beibehalten, indem Sie das Kontrollkästchen `Aktive OVHcloud User beibehalten` aktivieren.
 

@@ -28,13 +28,23 @@ details[open]>summary::before {
 
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) zainstalowany na lokalnym sprzęcie
 - Podstawowa znajomość [protokołu SSH i jego zastosowania](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!warning]
 > OVHcloud zapewnia usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tutorial ten wyjaśnia, jak korzystać z rozwiązań OVHcloud przy użyciu narzędzi zewnętrznych. Może być konieczne dostosowanie niektórych instrukcji specyficznych dla systemu operacyjnego lokalnego komputera lub serwera.
 >
 > W przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) lub [naszą społecznością](/links/community).
 >
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

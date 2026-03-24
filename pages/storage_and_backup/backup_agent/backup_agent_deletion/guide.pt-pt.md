@@ -10,8 +10,18 @@ Este guia explica-lhe como eliminar diferentes elementos do seu serviço Backup 
 
 ## Requisitos
 
-- Estar ligado ao [área de cliente OVHcloud](/links/manager) na secção `Backup Agent`{.action}.
 - Ter um serviço Backup Agent ativo.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## Instruções
 

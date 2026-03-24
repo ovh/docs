@@ -1,120 +1,140 @@
 ---
 title: 'What to do if your account is blocked for spam'
-excerpt: 'Find out what to do if your email account has been blocked for spam'
-updated: 2025-04-28
+excerpt: 'Find out what to do if your email address has been blocked for spam'
+updated: 2026-03-05
 ---
 
 ## Objective
 
-When your email account is blocked for SPAM, it means that suspicious sending activity has been detected on it. In this situation, you can no longer send emails from this account. It is important to understand why a suspicious activity was detected and how to take action to prevent it from happening again.
+When your email address is blocked for spam, it means that suspicious activity has been detected when sending emails from this address. In this situation, you can no longer send emails from this email address. You must then understand why suspicious activity was detected and take action to prevent this situation from recurring.
 
-**This guide explains the procedure to follow if an email account has been blocked for spam.**
+**Find out what to do when your address is blocked for spam.**
 
 ## Requirements
 
-- An [OVHcloud email solution](/links/web/emails).
-- Access to the [OVHcloud Control Panel](/links/manager).
+- An [OVHcloud email solution](/links/web/emails)
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions <a name="instructions"></a>
 
-If the block is occuring on an MX Plan email account, identify the version you are using in order to follow the correct unblock process. Use the table below to check how to distinguish between the two versions.
+Before continuing, if the block concerns an MX Plan email address, identify the email technology used by your solution in order to follow the correct unblocking process.
 
-|MX Plan legacy version|MX Plan new version|
-|------|------|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Locate the solution in the `Subscription` box on the right.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the `Summary` box on the left.|
+> [!primary]
+>
+> **Identify the email technology of your MX Plan solution.**
+>
+> Depending on the activation date of your MX Plan solution or if it has been recently migrated, the associated email technology may differ. This version is characterised by its webmail interface. To identify it:
+>
+> - From the `General information`{.action} tab, check the technology used under the **Webmail** label in the `Subscription`{.action} section.
+>
+> ![Identify the email technology in the MX Plan Control Panel](images/technology-email.png){.thumbnail .w-500}
+>
+> - If the technology displayed is **RoundCube**, follow the instructions in the **MX Plan - RoundCube** tab.
+> - If the technology displayed is **OWA** or **Zimbra**, follow the instructions in the **MX Plan - OWA / Zimbra** tab.
 
-### Step 1: Investigating why your email account is blocked for SPAM <a name="step1"></a>
+### Step 1: Why is your email address blocked for spam? <a name="step1"></a>
 
-When suspicious activity is detected at the email sending level, the account concerned is automatically blocked. In this situation, you can no longer send emails from this email account.
+When suspicious activity is detected at the email sending level, the address concerned is automatically blocked. In this situation, you can no longer send emails from this email address.
 
 > [!warning]
 >
-> “Suspicious activity” can mean:
+> "Suspicious activity" means that:
 >
-> - The anti-spam server, which scans emails when they are sent, has found one or more elements of the email that are suspicious and indicate SPAM.
-> - The sending frequency and the number of recipients are unusually high, which can be considered SPAM mass mailing. To send bulk emails, you will need to use a mailing list instead of single email addresses.
+> - The anti-spam server, which scans emails when they are sent, has found that one or more elements of the email are considered suspicious and may constitute spam.
+> - The sending frequency and the number of recipients are too high and contribute to considering the sending as spamming. Indeed, to carry out mass mailings, you need to use a mailing list service rather than a standard email address.
 >
-> The precise reasons for a blocked account cannot be disclosed in order to prevent attempts to bypass the SPAM detection system. To test the content of an email, you can use a tool external to OVHcloud such as [Mailtester](https://www.mail-tester.com/).
+> The precise reasons for a block cannot be disclosed in order to prevent any attempt to bypass the spam detection system. To test the content of an email, you can use a tool external to OVHcloud such as [Mailtester](https://www.mail-tester.com/).
 >
 
-First of all, make sure that any user of the blocked email account has caused the block directly, following an uncommon use of the email account (for example a mass email sending operation). If this is the case, you must resolve the root cause before unblocking the account.
+First of all, check with the user(s) of the blocked email address that they are not directly responsible for the block, following an unusual use of the email address (for example, mass email sending). If this is the case, you must rectify the situation before unblocking the address.
 
-If the suspicious activity detected by the antispam system was not initiated by a legitimate user of the email account, take the necessary measures and detailed below:
+If the suspicious activity detected by the anti-spam system was not initiated by the legitimate user(s) of the email address, take the following measures:
 
-- Perform an antivirus check for each of the emails sent from the blocked account, and apply a patch if these emails contain malware.
+- Run an antivirus scan on each device that uses the email address blocked for spam, and apply a fix if they are infected.
 
-- Check all software applications using the credentials for the blocked account (e.g. fax, business software, email software).
+- Check all software using the credentials of the email address blocked for spam (e.g. fax machine, business software, email client).
 
-### Step 2: Checking the status of the email account <a name="step2"></a>
+- Check the redirections applied to the email address blocked for spam.
+
+- Check the filters applied to the email address blocked for spam, via an email client or webmail.
+
+- Check the auto-replies configured on the email address blocked for spam, via an email client or webmail.
+
+### Step 2: Check the status of the email address and access the associated support ticket
+
+Select the relevant email solution in the following tabs:
 
 > [!tabs]
 > **Exchange**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
->> 1. Select the service concerned.
+>> Go to the `Email accounts`{.action} tab of your platform. If the "Status" column for the email address concerned shows "Blocked", click `...`{.action} to the right of the account, then `Unblock`{.action}. The email address is not unblocked automatically. Contact the support team via the support ticket by answering the 3 questions asked.<br>
+>> Proceed to [step 3](#step3) of the guide.
 >>
->> Go to the `Email accounts`{.action} section of your platform. If the "Status" column for your email account displays "Blocked", click `...`{.action} to the right of the account concerned, then `Unblock`{.action}. Email accounts are not unblocked automatically. You will need to contact the support team by answering the 3 questions in the support ticket.<br>
->>
->> Go to [step 3](#step3) of the guide.
->>
->> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
+>> ![Status column Blocked in the Email accounts tab Exchange](images/blocked-for-SPAM-01-01.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `Email Pro`{.action}.
->> 1. Select the service concerned.
->> 
->> Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email account concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Email accounts are not unblocked automatically. You will need to contact the support team by answering the 3 questions in the support ticket.<br>
+>> Go to the `Email accounts`{.action} tab of your platform. If the "Status" column to the right of the email address concerned shows "Spam", click on it, then `Reply to the ticket`{.action}. The email address is not unblocked automatically. Contact the support team via the support ticket by answering the 3 questions asked.<br>
+>> Proceed to [step 3](#step3) of the guide.
 >>
->> Go to [step 3](#step3) of the guide.
+>> ![Status column Spam in the Email accounts tab Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
->> ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
+> **MX Plan - OWA / Zimbra**
 >>
-> **MX plan - New version**
+>> Go to the `Email accounts`{.action} tab of your platform. If the "Status" column to the right of the email address concerned shows "Spam", click on it, then `Reply to the ticket`{.action}. The email address is not unblocked automatically. Contact the support team via the support ticket by answering the 3 questions asked.<br>
+>> Proceed to [step 3](#step3) of the guide.
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `MX Plan`{.action}.
->> 1. Select the domain concerned.
+>> ![Status column Spam in the Email accounts tab MX Plan](images/blocked-for-SPAM-01-03.png){.thumbnail}
 >>
->> Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email account concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Email accounts are not unblocked automatically. You will need to contact the support team by answering the 3 questions in the support ticket.<br>
+> **MX Plan - RoundCube**
 >>
->> Go to [step 3](#step3) of the guide.
+>> If the block concerns an MX Plan email address with **RoundCube** webmail, there is no support ticket. Please ensure you read [step 1](#step1) of this guide before following the instructions below.
 >>
->> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
+>> Go to the `Emails`{.action} tab of your platform. If the "Blocked for SPAM" column shows "Yes", click on it, then `Change password`{.action}. Your email address is now unblocked, you do not need to follow [step 3](#step3).
 >>
-> **MX Plan - Legacy**
->>
->> If the block is for an email account of [MX Plan Legacy](#instructions), there is no support ticket. Be sure to read [step 1](#step1) of this guide before following the instructions below.
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `MX Plan`{.action}.
->> 1. Select the domain concerned.
->>
->> Go to the `Emails`{.action} tab on your platform. If the “Blocked for SPAM” column shows “Yes”, click on it and then on `Change password`{.action}. Your email account is now unblocked, you do not need to follow [step 3](#step3).
->>
->> ![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
+>> ![Blocked for SPAM column in the Emails tab MX Plan Roundcube](images/blocked-for-SPAM-01-04.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
->> > In rare cases, the “Blocked for SPAM” column may indicate “No” despite the fact that the email account is blocked. If you have taken the necessary measures to secure your email account, the solution remains the same as above.
+>> > In rare cases, the "Blocked for SPAM" column may show "No" despite the fact that the email address is blocked. If you have taken the necessary measures to secure the email address, the solution remains the same as above.
 
-### Step 3: Accessing the support ticket <a name="step3"></a>
+### Step 3: Access the support ticket <a name="step3"></a>
 
-Following step 2, you will be redirected to the Control Panel section “My support tickets”. Click `...`{.action} to the right of the ticket with the subject “Account locked for spam”, then click `See more information`{.action}.
+Following step 2, you will be redirected to the "My support requests" window. Click the `...`{.action} button to the right of the ticket with the subject "Account locked for spam.", then click `See more information`{.action}.
 
-![spam](images/blocked-for-SPAM-02.png){.thumbnail}
+![My support requests window with the spam block ticket](images/blocked-for-SPAM-02.png){.thumbnail}
 
-Here you will see the email sent to you, which has subsequently generated the support ticket.
+Here you will find the email that was sent to you, which generated a support ticket.
 
-The support ticket will look like this:
+The support ticket reads as follows:
 
-> 
+>
 > Dear Customer,
 >
 > Our system has detected that the address **address@example.com** hosted on our systems under the **service name** service is a source of spam.
@@ -136,11 +156,15 @@ The support ticket will look like this:
 > <br>
 > 
 
-After this message, you will find a sample of email headers.
+Following this message, a sample of headers from the sent emails has been provided to you.
 
-These headers will help determine the path and origin of the emails sent.
+These headers help determine the routing and origin of the sent emails.
 
-## Go further <a name="go-further"></a>
+> [!primary]
+>
+> Once your ticket has been processed by customer support and your email address has been unblocked, change the password of the email address, ensuring that it is sufficiently strong. You can use [CNIL's strong password generator](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide). You can also refer to [CNIL's tips for a good password](https://www.cnil.fr/fr/les-conseils-de-la-cnil-pour-un-bon-mot-de-passe).
+
+## Go further
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

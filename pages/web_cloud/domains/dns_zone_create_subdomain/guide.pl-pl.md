@@ -76,26 +76,31 @@ Wówczas będzie ona mieć własną strefę do konfigurowania rekordów DNS.
 - Poddomena nie może już mieć aktywnej lub nieaktywnej strefy DNS w OVHcloud lub być obecnie przedmiotem operacji lub zamówienia w OVHcloud.
 - Zalogowanie się do swojego [Panelu klienta OVHcloud](/links/manager).
 
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 ## W praktyce
 
 ### 1 - Utwórz strefę DNS za pomocą Panelu klienta OVHcloud
 
-W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), a następnie w przycisk `Zamów`{.action}.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Krok 2**
->>
->> Kliknij w menu `Strefy DNS`{.action}, a następnie w przycisk `Zamów`{.action}.
->>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
->>
-> **Krok 3**
 >>
 >> Na stronie, która się pojawi, wprowadź poddomenę (np. *sub.domain.tld*), dla której chcesz utworzyć strefę DNS OVHcloud. Poczekaj kilka chwil, dopóki narzędzie nie przeprowadzi weryfikacji poddomeny.
 >>
@@ -103,7 +108,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 >>
 >> Jeśli pojawi się komunikat informujący, że strefa DNS nie może zostać utworzona, upewnij się, że subdomena spełnia wymagania wstępne lub skontaktuj się z osobą, która ją zarządza. Gdy wszystko będzie poprawne, spróbuj ponownie.
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Po zakończeniu weryfikacji, wybierz opcję aktywacji lub nie dodawania wpisów minimalnych w strefie DNS, którą utworzysz. Wybór ten nie jest ostateczny, ponieważ w przyszłości będziesz mógł [edytować rekordy strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
 >>
@@ -124,7 +129,7 @@ Aby edytować tę strefę DNS, zapoznaj się z naszym przewodnikiem "[Edycja str
 
 > [!primary]
 >
-> Jeśli właśnie utworzyłeś strefę DNS i nazwa subdomena nie wyświetla się jeszcze na liście Twoich usług (w części `Web Cloud`{.action} w Panelu klienta OVHcloud, a następnie w sekcji `Strefy DNS`{.action}), odczekaj 15-20 minut, a następnie przeładuj stronę.
+> Jeśli właśnie utworzyłeś strefę DNS i nazwa subdomena nie wyświetla się jeszcze na liście Twoich usług, odczekaj 15-20 minut, a następnie przeładuj stronę.
 
 ### 3 - Zadeklarowanie serwerów DNS w aktywnej strefie DNS nazwy domeny, od której zależy wybrana subdomena
 
@@ -132,22 +137,16 @@ Aktywacja strefy DNS dla poddomeny różni się od aktywacji nazwy domeny, ponie
 
 Najpierw musisz uzyskać nazwy **serwerów DNS** OVHcloud skojarzonych ze strefą DNS utworzoną dla Twojej poddomeny.
 
-Aby je odnaleźć, w tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** etapy.
+Aby je odnaleźć, w tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij w menu `Strefy DNS`{.action}, a następnie wybierz odpowiednią poddomenę.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią poddomenę.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> W tabeli na stronie, która się pojawi, zwróć uwagę na dwie kolumny **Typ** i **Adres docelowy**.
 >>
@@ -166,34 +165,28 @@ Po odzyskaniu dwóch nazw serwerów DNS, mogą zajść dwie sytuacje:
 
 /// details | Nazwa domeny, od której zależy Twoja subdomena, ma aktywną strefę DNS w OVHcloud
 
-W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij w menu `Strefy DNS`{.action}, a następnie wybierz odpowiednią poddomenę.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią poddomenę.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na prawym lub poniżej tabeli kliknij `Dodaj rekord`{.action}.
 >>
 >> ![dns zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W oknie, które się otworzy, wybierz rekord DNS typu `NS`{.action}, a następnie kliknij `Dalej`{.action}
 >>
 >> ![dns zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Następnie wprowadź w polu `Subdomena *` odpowiednią poddomenę (np. `sub` dla poddomeny `sub.domain.tld`), a w polu `Adres docelowy *` jeden z dwóch wcześniej odzyskanych serwerów DNS (np. `nsXX.ovh.net`).
 >>
@@ -259,4 +252,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community). 
+Dołącz do [grona naszych użytkowników](/links/community). 

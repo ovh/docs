@@ -24,20 +24,19 @@ Ajouter un nom de domaine sur un service Exchange est indispensable pour utilise
 - Disposer d'une solution [Exchange](/links/web/emails-exchange).
 - Disposer d'un ou plusieurs noms de domaine.
 - Être en mesure de modifier la configuration de votre nom de domaine ([zone DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
-
-### Accéder à la gestion de votre service
-
-**Exchange**
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
-
-
 
 ### Ajouter un nom de domaine
 

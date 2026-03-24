@@ -35,7 +35,17 @@ O remetente (sender) transmite o e-mail à mailing list. O moderador (moderator)
 ## Requisitos
 
 - Ter uma oferta de e-mail MX Plan 100 no mínimo ou um [Alojamento web](/links/web/hosting) elegível para as listas de difusão.
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instruções
 
@@ -47,11 +57,7 @@ O remetente (sender) transmite o e-mail à mailing list. O moderador (moderator)
 
 Para criar a sua mailing list:
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Clique em `MX Plan`{.action}.
-1. Selecione o domínio em questão.
-1. Vá ao separador `mailing lists`{.action} do seu serviço de e-mail.
+Vá ao separador `mailing lists`{.action} do seu serviço de e-mail.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 
@@ -86,7 +92,7 @@ Preencha o formulário em função das informações descritas no seguinte quadr
 
 ### Gerir as opções da mailing list
 
-Para alterar as opções da mailing list, clique em `...`{.action} do lado direito. Pode então atualizar as opções, eliminar a mailing list ou partilhar a lista dos subscritores por e-mail. 
+Para alterar as opções da mailing list, clique em `...`{.action} do lado direito. Pode então atualizar as opções, eliminar a mailing list ou partilhar a lista dos subscritores por e-mail.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
@@ -251,6 +257,6 @@ Pode encontrar, em seguida, uma lista dos ficheiros com os textos de resposta e 
 > Por exemplo: Se pretender alterar o rodapé predefinido dos e-mails enviados para a sua mailing list, terá de enviar uma mensagem para o endereço `nome_da_sua_ML-edit.bottom@mydomain.ovh`. Receberá então um novo e-mail a explicar como personalizar o rodapé.
 >
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 Fale com nossa [comunidade de utilizadores](/links/community).

@@ -14,6 +14,17 @@ No âmbito das suas atividades profissionais ou por interesse no assumpto, poder
 
 - Ser contacto "Faturação" serviços para os quais deseja obter a pegada de carbono. Para obter mais informações, consulte [o nosso manual sobre gestão de contactos](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [A minha conta](/links/control-panel/account-dashboard)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Aceder à minha conta`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
+
 **O cálculo da pegada de carbono está disponível para os seguintes serviços:**
 
 - [Servidor Dedicado](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
@@ -55,8 +66,7 @@ Há vários pontos a ter em conta:
 
 ### Recuperar o balanço mensal do mês anterior através da Área de Cliente OVHcloud
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Na página que é apresentada, na coluna da esquerda, aceda à secção contendo os **Links úteis** e clique no separador `A minha pegada ecológica`{.action}.
+1. No [Painel de controlo da conta](/links/control-panel/account-dashboard), na coluna da esquerda, aceda à secção contendo os **Links úteis** e clique no separador `A minha pegada ecológica`{.action}.
 1. Na nova página que aparece, clique em `Fazer download da minha pegada de [Mês] de [Ano]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
@@ -83,7 +93,7 @@ Por predefinição, as API da OVHcloud são disponibilizadas para permitir que o
 
 - Na parte direita da página será então apresentada a API com o seu quadro a completar.
 - Clique no botão situado no canto superior direito intitulado `Authenticate`{.action} e, a seguir, no botão `Login with OVHcloud SSO`{.action}.
-- Abre-se a interface de ligação ao seu [Área de Cliente OVHcloud](/links/manager).
+- Abre-se a interface de ligação ao seu [Área de Cliente OVHcloud](/links/control-panel/account-dashboard).
 - Ligue-se com o seu identificador de cliente e clique em `Authorize`{.action} para utilizar as API da OVHcloud com os seus serviços.
 - Será de seguida automaticamente reencaminhado para a página anterior da API **POST /me/carbonCalculator/task**.
 

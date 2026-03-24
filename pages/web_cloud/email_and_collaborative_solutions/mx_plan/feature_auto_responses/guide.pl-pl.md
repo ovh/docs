@@ -13,21 +13,27 @@ Jeśli jesteś nieobecny i nie możesz sprawdzić Twojego adresu e-mail, możesz
 ## Wymagania początkowe
 
 - Wykupienie usługi MX Plan. Jest ona dostępna w ramach: oferty [hosting www](/links/web/hosting), [bezpłatny hosting 100M](/links/web/domains-free-hosting) zawartej w ofercie domeny (aktywowanej wcześniej) lub oferty MX Plan zamówionej oddzielnie.
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce
 
 > [!warning]
 >
-> Jeśli Twój adres e-mail jest zawarty w ofercie [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MX Planie, utwórz automatyczną odpowiedź z poziomu interfejsu webmail, korzystając z dokumentacji ["Uruchom automatyczną odpowiedź z interfejsu OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
+> Jeśli Twój adres e-mail jest zawarty w ofercie [**Exchange**](/links/web/emails-hosted-exchange), [**E-mail Pro**](/links/web/email-pro) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MX Planie, utwórz automatyczną odpowiedź z poziomu interfejsu webmail, korzystając z dokumentacji ["Uruchom automatyczną odpowiedź z interfejsu OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
 ### Utworzenie automatycznej odpowiedzi
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
-1. Kliknij na zakładkę `Emaile`{.action} u góry, następnie `Zarządzanie autoresponderami`{.action}.
+Kliknij na zakładkę `Emaile`{.action} u góry, następnie `Zarządzanie autoresponderami`{.action}.
 
 Zostaniesz przekierowany do okna `Zarządzanie autoresponderami`, w którym wyświetlony zostanie zestaw automatycznych odpowiedzi e-mail wprowadzonych w Twojej ofercie e-mail.
 
@@ -39,13 +45,13 @@ Pojawi się okno dodawania. Możesz ją uzupełnić zgodnie z poniższymi inform
 
 - `Rodzaj autorespondera`:
 
-**Przypisane do skrzynki e-mail** : do użycia, jeśli dotyczy to adresu e-mail istniejącego w Twojej usłudze e-mail.
-**Wolny**: do użycia w przypadku aliasu. Nie jest on zatem powiązany z istniejącym adresem.
+    - **Przypisane do skrzynki e-mail** : do użycia, jeśli dotyczy to adresu e-mail istniejącego w Twojej usłudze e-mail.
+    - **Wolny**: do użycia w przypadku aliasu. Nie jest on zatem powiązany z istniejącym adresem.
 
 - `Skrzynka e-mail` lub `Nazwa autorespondera`: adres e-mail lub alias, którego dotyczy automatyczna odpowiedź.
 - `Czas trwania autorespondera`:
     - **Tymczasowe** : określ datę rozpoczęcia i zakończenia automatycznej odpowiedzi (użyteczne, jeśli na przykład wyjeżdżasz na urlop).
-    - **Permanent**: automatyczna odpowiedź będzie działać, dopóki jej nie wyłączysz.
+    - **Permanentna**: automatyczna odpowiedź będzie działać, dopóki jej nie wyłączysz.
 - `Wyślij kopię` lub `Zachowaj wiadomości na serwerze`: umożliwiają ponowne wysłanie wiadomości odebranych podczas Twojej nieobecności na wybrany adres lub ich zachowanie na wybranym adresie e-mail.
 
 > [!warning]
@@ -53,7 +59,7 @@ Pojawi się okno dodawania. Możesz ją uzupełnić zgodnie z poniższymi inform
 > Jeśli usuniesz zaznaczenie tego pola, wiadomości odebrane podczas Twojej nieobecności zostaną automatycznie usunięte.
 
 - `Adres w kopii` (tylko w trybie swobodnym) : w przypadku aliasu zaznacz adres e-mail, na który będą wysyłane wiadomości wysłane na ten alias.
-- `Message`: jest to wiadomość, którą twoi rozmówcy otrzymają, gdy wyślą ci e-mail.
+- `Wiadomość`: jest to wiadomość, którą twoi rozmówcy otrzymają, gdy wyślą ci e-mail.
 
 Następnie kliknij przycisk `Zatwierdź`{.action}, aby zakończyć konfigurowanie automatycznej odpowiedzi.
 
@@ -63,11 +69,11 @@ Następnie kliknij przycisk `Zatwierdź`{.action}, aby zakończyć konfigurowani
 
 ### Zmiana lub usunięcie automatycznej odpowiedzi
 
-Po utworzeniu odpowiedzi automatycznej zostanie ona wyświetlona na liście widocznej w sekcji `Zarządzanie autoresponderami`{.action} w Twojej ofercie e-mail. Możesz ją usunąć lub zmienić, klikając '...`{.action} po prawej stronie.
+Po utworzeniu odpowiedzi automatycznej zostanie ona wyświetlona na liście widocznej w sekcji `Zarządzanie autoresponderami`{.action} w Twojej ofercie e-mail. Możesz ją usunąć lub zmienić, klikając `...`{.action} po prawej stronie.
 
 ![autoreply](images/email_responder02.png){.thumbnail}
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

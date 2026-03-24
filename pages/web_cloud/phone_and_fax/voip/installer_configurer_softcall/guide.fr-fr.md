@@ -1,6 +1,6 @@
 ---
-title: 'Installer et configurer Softcall'
-excerpt: 'Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone'
+title: "Installer et configurer Softcall"
+excerpt: "Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone"
 updated: 2025-04-28
 ---
 
@@ -83,7 +83,7 @@ Dans la fenêtre qui s'ouvre, cliquez sur le bouton `Générer un code de config
 
 Dans la nouvelle fenêtre, retrouvez le code de configuration et le QR code.
 
-#### Configurer l'application mobile (Android et IOS)
+#### Configurer l'application mobile (Android et iOS)
 
 Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous êtes dirigé vers l'écran `Assistant`{.action}.
 
@@ -103,7 +103,7 @@ Dans l'écran `Assistant`{.action} de l'application Softcall, utilisez le code d
 
 Votre compte Softcall est désormais configuré. Dans le menu principal de Softcall, retrouvez votre numéro de téléphone (au format international) tout en haut du menu.
 
-#### Configurer l'application de bureau (Windows et MacOS)
+#### Configurer l'application de bureau (Windows et macOS)
 
 Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous êtes dirigé vers l'écran `Assistant`{.action}.
 
@@ -131,7 +131,7 @@ Votre compte Softcall est désormais configuré. Dans le menu principal de Softc
 
 #### Passer un appel téléphonique
 
-##### Application mobile (Android et IOS)
+##### Application mobile (Android et iOS)
 
 Dans le menu principal en bas de l'écran, cliquez sur l'icône représentant un clavier numérique.
 
@@ -270,7 +270,7 @@ Si vous rencontrez un problème avec l'application Softcall (bug, erreur, etc.),
 
 ///
 
-#### Application mobile (Android et IOS)
+#### Application mobile (Android et iOS)
 
 /// details | Appeler la messagerie vocale
 

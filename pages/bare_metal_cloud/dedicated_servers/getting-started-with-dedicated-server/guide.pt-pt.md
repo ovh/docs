@@ -14,7 +14,17 @@ Um servidor dedicado é um servidor físico ("bare metal") situado num dos nosso
 
 - Ter um [servidor dedicado](/links/bare-metal/bare-metal).
 - Estar conectado em SSH em Linux ou enquanto administrador em Windows.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!primary]
 >

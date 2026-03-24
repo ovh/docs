@@ -17,7 +17,6 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 - A [vRack](/links/network/vrack) service activated in your account
 - Two or more [dedicated servers](/links/bare-metal/bare-metal) (compatible with vRack)
 - Administrative access (sudo) to the server via SSH or RDP
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A private IP address range of your choice
 
 > [!warning]
@@ -29,7 +28,7 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 
 ### Step 1: Ordering the vRack
 
-Log in to your OVHcloud Control Panel and click the button `Add a service`{.action} (shopping cart icon) in the left-hand menu. Use the filter at the top of the page or scroll down to find the service `vRack`{.action}. 
+Click the button `Add a service`{.action} (shopping cart icon) in the left-hand menu. Use the filter at the top of the page or scroll down to find the service `vRack`{.action}. 
 
 ![Order vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 

@@ -69,21 +69,20 @@ Une fois votre bon de commande validé et si vous n'avez pas coché la case `Je 
 > Sans modification de votre zone DNS dans un délai de 3 jours, votre commande sera annulée.
 > 
 
-> [!faq]
+> [!primary]
 >
-> Cas 1 : votre zone DNS est gérée par les serveurs DNS mutualisés OVHcloud.
->> 
->> - Si votre identifiant est contact *administrateur* ou *technique* de cette zone DNS, vous devrez la modifier dans votre [espace client OVHcloud](/links/manager).
->> - Si vous n'êtes pas contact *administrateur* ou *technique* de cette zone DNS, contactez la personne en charge de celle-ci pour la modifier.
->> 
->> Reportez-vous aux instructions du guide « [Créer une zone DNS OVHcloud pour un nom de domaine](/pages/web_cloud/domains/dns_zone_create) » si nécessaire.
->> 
+> **Cas 1 : votre zone DNS est gérée par les serveurs DNS mutualisés OVHcloud.**
 >
-> Cas 2 : votre zone DNS n'est pas gérée par les serveurs DNS mutualisés OVHcloud.
->> 
->> - Dans ce cas il vous suffit de modifier l'IP dans votre zone DNS en vous rendant sur l'interface de votre prestataire ou de votre serveur dédié.
->>
+> - Si votre identifiant est contact *administrateur* ou *technique* de cette zone DNS, vous devrez la modifier dans votre [espace client OVHcloud](/links/manager).
+> - Si vous n'êtes pas contact *administrateur* ou *technique* de cette zone DNS, contactez la personne en charge de celle-ci pour la modifier.
 >
+> Reportez-vous aux instructions du guide « [Créer une zone DNS OVHcloud pour un nom de domaine](/pages/web_cloud/domains/dns_zone_create) » si nécessaire.
+
+> [!primary]
+>
+> **Cas 2 : votre zone DNS n'est pas gérée par les serveurs DNS mutualisés OVHcloud.**
+>
+> - Dans ce cas il vous suffit de modifier l'IP dans votre zone DNS en vous rendant sur l'interface de votre prestataire ou de votre serveur dédié.
 
 Une fois votre modification prise en compte par notre infrastructure, vous recevrez un e-mail de confirmation.
 

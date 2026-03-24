@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages via the OVHcloud Control Panel
-excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
+excerpt: Find out how to send your first SMS messages step by step, configure senders and manage recipients from the OVHcloud Control Panel
 updated: 2026-01-07
 ---
 
@@ -17,7 +17,7 @@ You can send SMS messages directly via the OVHcloud Control Panel. This guide gi
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [SMS management](/links/control-panel/telecom-sms)
+- **Direct link:** [SMS](/links/control-panel/telecom-sms)
 - **Navigation path:** `Telecom`{.action} > `SMS`{.action} > Select your SMS account
 
 ---
@@ -42,7 +42,6 @@ Once you have landed on the sending page for SMS messages, you will have differe
 
 For the SMS sender (1), you can either select a short number that allows recipients to send back replies (available for OVHcloud accounts in France only), or you can set an alpha-numeric sender name.
 Next, enter the recipient phone number (2) in international format (+44xxxxxxxxxx).
-For further information on how to create a sender, please refer to [Step 3: Choose an SMS sender](#step-3-choose-an-sms-sender).
 
 You can also send SMS messages to multiple recipients. There are two methods for doing this:
 
@@ -72,7 +71,7 @@ The two tables below list the characters that are authorised in 7bit encoding. T
 
 The maximum size of an SMS message is 160 characters in 7bit encoding (GSM 03.38 standard).
 
-If you use characters that do not appear in these tables, the encoding with switch to Unicode, reducing the maximum size of an SMS message to 70 characters.
+If you use characters that do not appear in these tables, the encoding will switch to Unicode, reducing the maximum size of an SMS message to 70 characters.
 
 ![List of authorised SMS characters](images/smsauthorizedcharacters.png){.thumbnail}
 

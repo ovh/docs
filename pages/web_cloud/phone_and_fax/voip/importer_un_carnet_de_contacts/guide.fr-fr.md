@@ -1,12 +1,12 @@
 ---
-title: 'Gérer un carnet de contacts sur une ligne SIP'
-excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud'
+title: "Gérer un carnet de contacts sur une ligne SIP"
+excerpt: "Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud"
 updated: 2025-12-30
 ---
 
 ## Objectif
 
-Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afin de rendre les interactions avec vos correspondants plus faciles, vous avez la possibilité de créer un carnet de contacts permettant de retrouver ou d'identifier ceux-ci directement depuis vos téléphones, dans le répertoire ou lors d'un appel entrant.
+Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Pour faciliter les interactions avec vos correspondants, vous pouvez créer un carnet de contacts permettant de retrouver ou d'identifier ceux-ci directement depuis vos téléphones, dans le répertoire ou lors d'un appel entrant.
 
 **Apprenez à gérer le carnet de contacts et les numéros abrégés de vos lignes SIP OVHcloud.**
 
@@ -31,7 +31,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 
 ### Étape 1 : accéder à la gestion du carnet de contacts
 
-Vous avez la possibilité de gérer le carnet de contacts d'une seule ligne ou d'un groupe de lignes, permettant ainsi à toutes les lignes rattachées à ce groupe d'en bénéficier.
+Vous pouvez gérer le carnet de contacts d'une seule ligne ou d'un groupe de lignes, permettant ainsi à toutes les lignes rattachées à ce groupe d'en bénéficier.
 
 > [!success]
 > L'avantage de l'ajout d'un carnet de contacts sur un **groupe de lignes** est qu'il permet d'avoir un carnet **commun** pour toutes les lignes du groupe.
@@ -60,7 +60,7 @@ Pour créer un carnet de contacts, renseignez le nom du carnet dans la zone de t
 
 ![carnet de contacts](images/creercarnet.png){.thumbnail}
 
-#### Ajouter ou modifier un contacts
+#### Ajouter ou modifier un contact
 
 Pour ajouter un nouveau contact, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter`{.action}. Pour modifier un contact existant, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Éditer`{.action}.
 

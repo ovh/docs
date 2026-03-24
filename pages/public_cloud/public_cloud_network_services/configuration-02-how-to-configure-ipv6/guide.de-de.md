@@ -39,10 +39,20 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine Public Cloud Instanz, wobei das Modell keine Rolle spielt.
 - Sie haben Kenntnisse zu SSH.
 - Sie haben Grundkenntnisse zu Netzwerken.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -65,7 +75,7 @@ Hier ein kurzes Glossar der in dieser Anleitung verwendeten Begriffe:
 
 ### Netzwerk-Informationen abrufen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Wählen Sie das Menü `Instanzen`{.action} und klicken Sie dann auf `...`{.action} und `Instanz-Details`{.action} neben der gewünschten Instanz.
+Klicken Sie in Ihrem Public Cloud Projekt auf `Instanzen`{.action} im linken Menü. Klicken Sie dann auf `...`{.action} und `Instanz-Details`{.action} neben der gewünschten Instanz.
 
 ![Public-Cloud-IPv6](images/pci2022.png){.thumbnail}
 

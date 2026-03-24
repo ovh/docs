@@ -22,28 +22,31 @@ Agora, a gestão dos DNS é facilitada graças ao histórico das suas zonas DNS.
 
 ## Requisitos
 
-- Dispor de uma zona DNS para o seu domínio na [Área de Cliente OVHcloud](/links/manager)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ter acesso à gestão do nome de domínio em questão
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instruções
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> A tabela que aparece representa a zona DNS do seu domínio. Poderá consultar a lista dos registos DNS que contém. À direita da tabela, vários botões permitem-lhe efetuar ações na sua zona DNS. 
 >>
@@ -51,7 +54,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 >>
 >> Clique em `Ver o histórico da minha zona DNS`{.action}. 
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na nova página que vai aparecer, aparecerá uma tabela com o histórico dos backups da sua zona DNS, classificada da data mais recente à mais antiga. No topo desta tabela encontra-se a versão atual da sua zona DNS. Nessa página, você pode executar as seguintes ações:
 >>
@@ -139,4 +142,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com nossa [comunidade de utilizadores](/links/community).

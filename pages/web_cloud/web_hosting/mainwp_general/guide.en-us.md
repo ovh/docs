@@ -22,7 +22,6 @@ Managing multiple websites can be complex and time-consuming. If you manage mult
 ## Requirements
 
 - A [Web Cloud hosting plan](/links/web/hosting).
-- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
 - Access to the WordPress administration interface.
 
 > [!warning]
@@ -31,6 +30,17 @@ Managing multiple websites can be complex and time-consuming. If you manage mult
 > 
 > This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or [the publisher of the MainWP plugin](https://mainwp.com/support/) if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

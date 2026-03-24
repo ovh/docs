@@ -4,6 +4,50 @@ excerpt: Saiba como gerir os seus serviços e à sua renovação na sua Área de
 updated: 2025-01-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objetivo
 
 O menu **As minhas ofertas e serviços** da sua Área de Cliente OVHcloud permite-lhe verificar o estado dos seus serviços, renová-los, alterar o tipo de renovação, regularizar faturas ou antecipar o pagamento.
@@ -19,19 +63,27 @@ Este manual permitir-lhe-á:
 
 > [!primary]
 >
-> Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Para mais informações, consulte os contratos da OVHcloud a partir da sua [Área de Cliente](/links/manager): clique no seu nome no canto superior direito do seu ecrã, na `As minhas ofertas e serviços`{.action} e, a seguir, no separador `Contratos`{.action}.
+> Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Para mais informações, consulte os contratos da OVHcloud na página [Lista de contratos](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-Antes de continuar a ler este guia, deve preencher as seguintes condições:
-
-- Ter acesso à Área de [Cliente OVHcloud](/links/manager);
-- Dispor de serviços ativos da OVHcloud;
-- Ter [contacto de faturação](/pages/account_and_service_management/account_information/managing_contacts#definicao) dos seus serviços OVHcloud.
+- Dispor de serviços ativos da OVHcloud
+- Ter [contacto de faturação](/pages/account_and_service_management/account_information/managing_contacts#definicao) dos seus serviços OVHcloud
 - Dispor de um método de pagamento válido na sua conta OVHcloud. Consulte o guia "[Gerir os métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [As minhas ofertas e serviços](/links/control-panel/billing-services)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas ofertas e serviços`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -70,8 +122,7 @@ Antes de continuar a ler este guia, deve preencher as seguintes condições:
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager).<br>
-Clique no seu nome no canto superior direito e escolha `As minhas ofertas e serviços`{.action}.
+Abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -195,31 +246,68 @@ O seguinte quadro especifica as ações agrupadas possíveis.
 
 ## FAQ
 
-> [!faq]
->
-> Onde posso encontrar o meu identificador de cliente (NIC) OVHcloud?
->> É apresentado na Área de Cliente, clicando no seu nome no canto superior direito. Encontra-se também no canto superior direito de todas as suas faturas. Também pode ser encontrada no e-mail de confirmação de criação de conta, nas mensagens de confirmação de subscrição ou de renovação, bem como nas notificações de acesso à sua conta.
-> Não consigo ligar-me à minha conta OVHcloud para renovar os meus serviços. O que fazer?
->> Consulte a parte "[O que fazer se não conseguir ligar-me?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" do nosso guia "[Aceder à Área de Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
-> Quero ativar a renovação automática mas recebo uma mensagem de erro. O que devo fazer?
->> Para que a renovação automática possa ser ativada nos seus serviços, deve ter adicionado um método de pagamento válido à sua conta OVHcloud. Se este não for o caso ou se o método de pagamento estiver expirado, aparecerá uma mensagem de erro na Área de Cliente quando tentar ativar a renovação automática. Consulte o nosso guia "[Gerir os seus métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)" para verificar ou adicionar um método de pagamento.
-> O meu método de pagamento já não é válido. Como adicionar um novo método de pagamento?
->> Consulte o guia "[Gerir os meus métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)". Antes de poder eliminar um método de pagamento obsoleto, deve adicionar um novo método de pagamento válido à sua conta OVHcloud.
-> Tenho uma questão relativa à renovação do meu nome de domínio
->> Consulte o nosso guia "[Renovar os meus nomes de domínio OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)".
-> Não quero mais débito direto, mas não quero cancelar o meu serviço. O que devo fazer?
->> Se o seu serviço o permitir, pode utilizar a ação [Configurar a renovação](#actions) e assim escolher uma renovação manual.
-> Renovei o meu serviço por 12 meses. Posso voltar atrás na minha escolha?
->> Depois de renovar um serviço, não é possível cancelá-lo. No entanto, pode optar por outro tipo de renovação ou rescindir o serviço. No entanto, estas 2 opções não serão aplicáveis até ao final da subscrição atual, ou seja, 12 meses depois.
-> O meu website está suspenso porque não renovei os meus serviços a tempo. Acabei de renovar os meus serviços. Quanto tempo tenho de esperar até que o meu website esteja novamente acessível?
->> O tempo de recuperação varia em função dos serviços em causa.
->> Se apenas o seu Alojamento Web tiver sido suspenso e tiver sido renovado, é necessário aguardar em média 2 horas até que o seu site esteja novamente acessível.
->> Se o domínio for também suspenso e tiver sido renovado, o período de tempo poderá ser superior - 48 horas, consoante o tempo de propagação do DNS.
->> Para o proteger de uma indisponibilidade de acesso para todos os seus serviços críticos, recomendamos que privilegie a renovação automática e [verifique regularmente se os seus métodos de pagamento estão atualizados](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
-> A subscrição do meu serviço expira em julho de 2024. Estamos em janeiro de 2024 e quero renová-lo por um ano. A assinatura expirará em julho de 2025 ou em janeiro de 2025?
->> Quando prorroga um serviço (por um ano ou por um período mais curto), este período será adicionado à próxima data de efeito visível na tabela "Gestão das minhas ofertas e serviços". No seu caso, o seu serviço será renovado até julho de 2025.
-> A subscrição do meu serviço expirou em 1 de janeiro de 2024 e esqueci-me de o renovar. Acabei de o renovar em 16 de janeiro de 2024 por 6 meses, mas verifico que expira em 1 de julho de 2024 e não em 16 de julho de 2024. Isso é normal?
->> Sim, trata-se da renovação normal a partir da data de expiração da subscrição.
+/// details | Onde posso encontrar o meu identificador de cliente (NIC) OVHcloud?
+
+É apresentado na Área de Cliente, clicando no seu nome no canto superior direito. Encontra-se também no canto superior direito de todas as suas faturas. Também pode ser encontrada no e-mail de confirmação de criação de conta, nas mensagens de confirmação de subscrição ou de renovação, bem como nas notificações de acesso à sua conta.
+
+///
+
+/// details | Não consigo ligar-me à minha conta OVHcloud para renovar os meus serviços. O que fazer?
+
+Consulte a parte "[O que fazer se não conseguir ligar-me?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" do nosso guia "[Aceder à Área de Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
+
+///
+
+/// details | Quero ativar a renovação automática mas recebo uma mensagem de erro. O que devo fazer?
+
+Para que a renovação automática possa ser ativada nos seus serviços, deve ter adicionado um método de pagamento válido à sua conta OVHcloud. Se este não for o caso ou se o método de pagamento estiver expirado, aparecerá uma mensagem de erro na Área de Cliente quando tentar ativar a renovação automática. Consulte o nosso guia "[Gerir os seus métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)" para verificar ou adicionar um método de pagamento.
+
+///
+
+/// details | O meu método de pagamento já não é válido. Como adicionar um novo método de pagamento?
+
+Consulte o guia "[Gerir os meus métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)". Antes de poder eliminar um método de pagamento obsoleto, deve adicionar um novo método de pagamento válido à sua conta OVHcloud.
+
+///
+
+/// details | Tenho uma questão relativa à renovação do meu nome de domínio
+
+Consulte o nosso guia "[Renovar os meus nomes de domínio OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)".
+
+///
+
+/// details | Não quero mais débito direto, mas não quero cancelar o meu serviço. O que devo fazer?
+
+Se o seu serviço o permitir, pode utilizar a ação [Configurar a renovação](#actions) e assim escolher uma renovação manual.
+
+///
+
+/// details | Renovei o meu serviço por 12 meses. Posso voltar atrás na minha escolha?
+
+Depois de renovar um serviço, não é possível cancelá-lo. No entanto, pode optar por outro tipo de renovação ou rescindir o serviço. No entanto, estas 2 opções não serão aplicáveis até ao final da subscrição atual, ou seja, 12 meses depois.
+
+///
+
+/// details | O meu website está suspenso porque não renovei os meus serviços a tempo. Acabei de renovar os meus serviços. Quanto tempo tenho de esperar até que o meu website esteja novamente acessível?
+
+O tempo de recuperação varia em função dos serviços em causa.
+Se apenas o seu Alojamento Web tiver sido suspenso e tiver sido renovado, é necessário aguardar em média 2 horas até que o seu site esteja novamente acessível.
+Se o domínio for também suspenso e tiver sido renovado, o período de tempo poderá ser superior - 48 horas, consoante o tempo de propagação do DNS.
+Para o proteger de uma indisponibilidade de acesso para todos os seus serviços críticos, recomendamos que privilegie a renovação automática e [verifique regularmente se os seus métodos de pagamento estão atualizados](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+
+///
+
+/// details | A subscrição do meu serviço expira em julho de 2024. Estamos em janeiro de 2024 e quero renová-lo por um ano. A assinatura expirará em julho de 2025 ou em janeiro de 2025?
+
+Quando prorroga um serviço (por um ano ou por um período mais curto), este período será adicionado à próxima data de efeito visível na tabela "Gestão das minhas ofertas e serviços". No seu caso, o seu serviço será renovado até julho de 2025.
+
+///
+
+/// details | A subscrição do meu serviço expirou em 1 de janeiro de 2024 e esqueci-me de o renovar. Acabei de o renovar em 16 de janeiro de 2024 por 6 meses, mas verifico que expira em 1 de julho de 2024 e não em 16 de julho de 2024. Isso é normal?
+
+Sim, trata-se da renovação normal a partir da data de expiração da subscrição.
+
+///
 
 ## Quer saber mais?
 

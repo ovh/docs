@@ -62,9 +62,18 @@ Quando il server di ricezione (Inbound Mail Server) riceve l'email, questo leggi
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del nome di dominio dallo [Spazio Cliente OVHcloud](/links/manager)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Il nome di dominio deve utilizzare la configurazione OVHcloud (cioè i server DNS di OVHcloud).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >

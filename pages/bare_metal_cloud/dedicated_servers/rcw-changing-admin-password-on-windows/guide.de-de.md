@@ -12,7 +12,17 @@ Diese Anleitung erklärt, wie Sie das Passwort für den Administrator-Account mi
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), auf dem Microsoft Windows Server 2016 oder höher installiert ist.
 - Der Server verfügt über mindestens 16 GB RAM.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugang zum OVHcloud Kundencenter
+
+- **Direktlink:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

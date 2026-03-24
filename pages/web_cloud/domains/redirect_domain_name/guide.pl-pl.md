@@ -13,8 +13,18 @@ Przekierowanie nazwy domeny polega na przekierowaniu jej na nową docelową stro
 ## Wymagania początkowe
 
 - Posiadanie [nazwy domeny](/links/web/domains)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Połączenie z hostingiem (przekierowanie za pomocą pliku [.htaccess](#htaccess_rewrite))
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 

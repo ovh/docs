@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages with the OVHcloud API in PHP
-excerpt: Find out how to send SMS messages with the OVHcloud RESTful API in PHP
+excerpt: Find out how to set up a PHP development environment and send your first SMS message step by step using the OVHcloud RESTful API
 updated: 2020-06-25
 ---
 
@@ -26,7 +26,7 @@ You will be able to integrate the PHP wrapper quickly using Composer: [https://g
 Follow the instructions on GitHub, and create the composer.json file as instructed in the project:
 GitHub> Readme > Quickstart
 
-In your project, you will retrieve the directory <b>./vendor/ovh/ovh/</b>, as well as the file <b>autoload.php</b>, which is used to managed all dependencies and imports.
+In your project, you will retrieve the directory <b>./vendor/ovh/ovh/</b>, as well as the file <b>autoload.php</b>, which is used to manage all dependencies and imports.
 
 ![your project with Composer](images/img_2450.jpg){.thumbnail}
 
@@ -59,7 +59,7 @@ The environment is ready, the credentials have been created, and you are now rea
 
 ### Step 3: Set up a PHP SDK (software development kit).
 
-To simplify things, we have set up a PHP SDK, which you can access [here](https://github.com/ovh/php-ovh-sms).
+To simplify things, we have set up a PHP SDK, which you can access on the [php-ovh-sms GitHub repository](https://github.com/ovh/php-ovh-sms).
 
 ### Step 4: Basic connection to the API.
 

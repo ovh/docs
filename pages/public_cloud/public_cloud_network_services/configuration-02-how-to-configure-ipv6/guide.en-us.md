@@ -36,7 +36,16 @@ Each Public Cloud instance is delivered with an IPv4 address and an IPv6 address
 - A Public Cloud instance (any model)
 - Administrative access (sudo) via SSH or remote desktop (Windows) to your server
 - A basic understanding of networking
-- Access to the [OVHcloud Control Panel](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -59,7 +68,7 @@ Here is a short glossary of the terms used in this tutorial:
 
 ### Retrieve your network information
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu. 
+In your Public Cloud project, click on `Instances`{.action} in the left-hand menu.
 
 Click on `...`{.action} next to the corresponding instance and click on `Instance details`{.action}.
 

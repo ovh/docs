@@ -44,6 +44,17 @@ Internet Protocol w wersji 6 (IPv6) jest następcą Internet Protocol w wersji 4
 - Wszystkie informacje o protokole IPv6 (prefiks, brama itd.).
 - Podstawowa wiedza z zakresu [protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) i sieci.
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 > [!warning]
 > Serwery Kimsufi są dostarczane z jednym blokiem IPv6 (/128). IPv6 zostanie automatycznie skonfigurowane podczas instalacji systemu operacyjnego.
 >
@@ -72,8 +83,6 @@ Pierwszy etap polega na pobraniu bramy (gateway) IPv6 przypisanej do Twojego ser
 
 > [!tabs]
 > **W Panelu klienta**
->>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Serwery dedykowane`{.action}.
 >>
 >> Brama IPv6 przypisana do Twojego serwera jest wyświetlana w sekcji `Sieć` w zakładce `Informacje ogólne`{.action}. Po skopiowaniu przejdź do aplikacji konfiguracyjnej IPv6.
 >>

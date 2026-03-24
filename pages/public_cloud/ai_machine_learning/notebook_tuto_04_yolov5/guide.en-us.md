@@ -14,10 +14,20 @@ It is based on the YOLOv5 open source repository by [Ultralytics](https://github
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager);
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A user for AI Notebooks;
 - Your own dataset.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

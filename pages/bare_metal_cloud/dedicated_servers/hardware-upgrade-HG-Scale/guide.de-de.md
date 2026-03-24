@@ -20,13 +20,19 @@ Dedicated Server der Reihen High Grade und SCALE bieten Ihnen eine Skalierungsop
 ## Voraussetzungen
 
 - Sie haben einen [High Grade Dedicated Server](https://www.ovhcloud.com/de/bare-metal/high-grade/) oder [SCALE Dedicated Server](https://www.ovhcloud.com/de/bare-metal/scale/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
-
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
-
-Wählen Sie im Abschnitt `Bare Metal Cloud`{.action} Ihren Server links unter **Dedicated Server**.
 
 ### RAM hinzufügen
 

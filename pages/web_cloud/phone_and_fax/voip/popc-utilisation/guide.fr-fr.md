@@ -1,5 +1,5 @@
 ---
-title: 'Prise en main du logiciel POPC'
+title: "Prise en main du logiciel POPC"
 excerpt: "Découvrez l'interface et les fonctionnalités basiques du logiciel POPC"
 updated: 2021-06-25
 ---
@@ -23,7 +23,7 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 
 ## En pratique
 
-L'interface du logiciel est composée de plusieurs zones pouvant être agencées et redimensionnées selon vos besoins. À des fins de compréhénsion, ce guide se base sur la version « par défaut » de l'interface, telle qu'elle est une fois le logiciel installé pour la première fois.
+L'interface du logiciel est composée de plusieurs zones pouvant être agencées et redimensionnées selon vos besoins. À des fins de compréhension, ce guide se base sur la version « par défaut » de l'interface, telle qu'elle est une fois le logiciel installé pour la première fois.
 
 ![interface](images/00-interface.png){.thumbnail}
 
@@ -128,7 +128,7 @@ Les boutons situés en haut du journal vous permettent d'afficher le journal des
 
 ![journal](images/07-journal.png){.thumbnail}
 
-En bas de cette zone, un bouton vous permet de filtrer les entrées du journal par types d'appels (entrants, sortants, etc...). Vous y trouverez également un bouton permettant d'afficher une légende des pictogrammes affichés à gauche de chaque appel
+En bas de cette zone, un bouton vous permet de filtrer les entrées du journal par types d'appels (entrants, sortants, etc.). Vous y trouverez également un bouton permettant d'afficher une légende des pictogrammes affichés à gauche de chaque appel
 
 ![journal - filtres et légence](images/07-journal-filtres-legende.png){.thumbnail}
 

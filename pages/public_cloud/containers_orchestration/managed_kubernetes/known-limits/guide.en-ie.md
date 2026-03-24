@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2026-02-03
+updated: 2026-03-17
 ---
 
 <style>
@@ -16,7 +16,7 @@ updated: 2026-02-03
    margin-bottom: 5px;
  }
  pre.console code {
-   b   font-family: monospace !important;
+   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -24,7 +24,6 @@ updated: 2026-02-03
      font-size: 0.75em;
  }
 </style>
-
 ## Nodes, pods and etcd limits
 
 |Plan | Max nodes per cluster | Max Pods per node | Max nodes per anti-affinity group | etcd max size |
@@ -34,7 +33,7 @@ updated: 2026-02-03
 
 We have tested our OVHcloud Managed Kubernetes Service plans with a max number of nodes, while higher configurations might work and that there is no hard limits, we recommend staying under these limits for optimal stability.
 
-Keep in mind that impact on the control plane isn't solely determined by the number of nodes. What truly defines a 'large cluster' depends on the combination of resources deployed pods, custom resources, and other objects which all contribute to control plane load. A cluster with fewer nodes but intensive resource utilization can stress the control plane more than a cluster with many nodes running minimal workloads. In such configuration it is recommended to switch to the Standard plan in order to benefit from higher and dedicated control plane resources.
+Keep in mind that impact on the control plane isn't solely determined by the number of nodes. What truly defines a 'large cluster' depends on the combination of resources deployed pods, custom resources, and other objects which all contribute to control plane load. A cluster with fewer nodes but intensive resource utilisation can stress the control plane more than a cluster with many nodes running minimal workloads. In such configuration it is recommended to switch to the Standard plan in order to benefit from higher and dedicated control plane resources.
 
 While 110 pods per node is the default value defined by Kubernetes, please note that the OVHcloud teams deploy some management components on nodes (CNI, agents, Konnectivity, etc.), these are considered 'cluster mandatory' and will impact the pods per node capacity for user workloads. For the same reason, as those management components are mandatory and require a small amount of node resources, in case of node overloading you might face some of your pods being in state `Terminated` with `Reason: OOMKilled` and `Exit Code: 137`. That's why it is important to have a clean resources management for your workload in order to avoid nodes overloading and instabilities.
 
@@ -160,7 +159,7 @@ To ensure proper operation of your OVHcloud Managed Kubernetes cluster, certain 
 | 80 (169.254.169.254/32) | TCP      | Init service (OpenStack metadata)                    |
 | 25000–31999             | TCP      | TLS tunnel between pods and kubernetes API server    |
 | 8090                    | TCP      | Internal (OVHcloud) node management service          |
-| 123                     | UDP      | NTP servers synchronization (systemd-timesync)       |
+| 123                     | UDP      | NTP servers synchronisation (systemd-timesync)       |
 | 53                      | TCP/UDP  | Allow domain name resolution (systemd-resolve)       |
 | 111                     | TCP      | rpcbind (only if using NFS client)                   |
 | 4443                    | TCP      | Metrics server communication                         |
@@ -266,16 +265,18 @@ To prevent network conflicts, it is recommended to **keep the DHCP service runni
 
 #### Reserved IP ranges
 
-The following ranges are used by the cluster, and should not be used elsewhere on the private network attached to the cluster:
+By default, the following ranges are used by the cluster, and should not be used elsewhere on the private network attached to the cluster:
 
 ```bash
 10.240.0.0/13 # Subnet used by pods
 10.3.0.0/16 # Subnet used by services
 ```
 
+However, these ranges can be customised either when creating a cluster or when resetting an existing one by following this guide: [Customising IP allocation on an OVHcloud Managed Kubernetes cluster (Standard plan only)](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation).
+
 > [!warning]
 >
-> These ranges are fixed for now but will be configurable in a future release. Do not use them elsewhere in your private network.
+> The subnet ranges cannot be modified on a running cluster without resetting it and losing all data.
 >
 
 ## Cluster health

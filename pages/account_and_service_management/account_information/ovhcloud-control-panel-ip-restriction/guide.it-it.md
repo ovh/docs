@@ -20,8 +20,18 @@ L'attivazione di questa opzione, associata alla protezione del tuo account con u
 
 ## Prerequisiti
   
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Sicurezza](/links/control-panel/account-security)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action} > `Sicurezza`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## Procedura
 
@@ -51,9 +61,7 @@ Se utilizzi una rete 4G/5G in aggiunta, ricordati di recuperare anche l'indirizz
 
 ### Step 2 - Attiva una restrizione di accesso per IP
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Accedere al mio account`{.action}.
-
-Clicca sulla scheda `Sicurezza`{.action} per accedere alla pagina seguente:
+Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), individua la sezione **Restrizione dell'accesso per IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 

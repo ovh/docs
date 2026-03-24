@@ -17,7 +17,17 @@ Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
 ## Voraussetzungen
 
 - Sie verfügen über ein Backup einer [Public Cloud Instanz](/links/public-cloud/instance-backup).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -36,7 +46,6 @@ Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
 
 > [!tabs]
 > Über das OVHcloud Kundencenter
->> Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an, wechseln Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.<br>
 >> Klicken Sie anschließend auf `Instance Backup`{.action} in der linken Navigationsleiste unter **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
@@ -136,7 +145,6 @@ Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
 
 > [!tabs]
 > Über das OVHcloud Kundencenter
->> Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an, wechseln Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.<br>
 >> Klicken Sie anschließend auf `Instanzen`{.action} in der linken Navigationsleiste unter **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}

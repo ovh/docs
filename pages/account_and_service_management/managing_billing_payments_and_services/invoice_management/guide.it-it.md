@@ -12,20 +12,31 @@ OVHcloud mette a tua disposizione uno spazio per consultare, gestire e saldare l
 
 > [!primary]
 >
-> In base al tuo luogo di residenza e alla legislazione in vigore, e al prodotto o ai prodotti in questione, è possibile che alcune sezioni di questa guida possano variare e/o non essere applicate in base alla tua situazione. In caso di dubbi, consulta i contratti OVHcloud disponibili nello [Spazio Cliente OVHcloud](/links/manager) (clicca in alto a destra sullo schermo, sul tuo nome e poi su `Le mie offerte e servizi`{.action}. Infine clicca sulla scheda `Contratti`{.action}).
+> In base al tuo luogo di residenza e alla legislazione in vigore, e al prodotto o ai prodotti in questione, è possibile che alcune sezioni di questa guida possano variare e/o non essere applicate in base alla tua situazione. In caso di dubbi, consulta i contratti OVHcloud disponibili nella pagina [Lista dei contratti](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) come [contatto di fatturazione](/pages/account_and_service_management/account_information/managing_contacts) del servizio
+- Essere [contatto di fatturazione](/pages/account_and_service_management/account_information/managing_contacts) del servizio
+
+<!-- CP-NAV-START:billing-invoices -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Le mie fatture](/links/control-panel/billing-invoices)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie fatture`{.action}
+
+---
+<!-- CP-NAV-END:billing-invoices -->
 
 ## Procedura
 
 > [!primary]
 >
-> Ogni fattura viene inviata via email e accessibile tramite un link cliccabile. Accedendo allo [Spazio Cliente OVHcloud](/links/manager). Tutte le fatture restano disponibili anche nella home page dello Spazio Cliente.
+> Ogni fattura viene inviata via email e accessibile tramite un link cliccabile nella pagina [Le mie fatture](/links/control-panel/billing-invoices). Tutte le fatture restano disponibili anche nella home page dello Spazio Cliente.
 >
 
 ### Elementi della fattura
@@ -48,7 +59,7 @@ La fattura del tuo servizio OVHcloud ti viene inviata in seguito al pagamento di
 
 #### Consulta e gestisci le tue fatture
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) Clicca sul tuo nome in alto a destra e poi sul nuovo menu che appare su `Le mie fatture`{.action}.
+Apri la pagina [Le mie fatture](/links/control-panel/billing-invoices).
 
 ![Fatturazione](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 
@@ -118,7 +129,7 @@ Verrà creato un [buono d'ordine](/pages/account_and_service_management/managing
 > Per richiedere la disattivazione del tuo servizio alla data di scadenza, segui le indicazioni di questa [guida](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Se hai ricevuto una fattura che non consideri legittima e vuoi richiederne il rimborso o far valere il tuo [diritto di recesso](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#esercita-il-diritto-di-recesso), puoi inviare un reclamo tramite il tuo [Spazio Cliente OVHcloud](/links/manager), con riserva dell'applicazione delle nostre [Condizioni Generali di Servizio](https://www.ovh.it/supporto//documenti_legali/condizioni_generali_servizio.pdf).
+Se hai ricevuto una fattura che non consideri legittima e vuoi richiederne il rimborso o far valere il tuo [diritto di recesso](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#esercita-il-diritto-di-recesso), puoi inviare un reclamo tramite il tuo Spazio Cliente OVHcloud, con riserva dell'applicazione delle nostre [Condizioni Generali di Servizio](https://www.ovh.it/supporto//documenti_legali/condizioni_generali_servizio.pdf).
 <br> Clicca sul tuo nome in alto a destra e seleziona `Crea un ticket`{.action}.
 
 ### Controlla i tuoi pagamenti

@@ -1,86 +1,88 @@
 ---
-title: Ridimensiona un'istanza dallo Spazio Cliente OVHcloud
-excerpt: Ridimensiona un'istanza dallo Spazio Cliente OVHcloud
-updated: 2025-04-28
+title: Ridimensionare un'istanza dallo Spazio Cliente OVHcloud
+excerpt: "Scopri come ridimensionare un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
+updated: 2026-03-04
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
-In seguito allo sviluppo della tua attività o semplicemente all’evoluzione delle tue esigenze, è possibile che le risorse della tua istanza non siano più sufficienti per rispondere alle tue necessità. Con il Public Cloud, puoi aumentare le risorse della tua istanza in modo semplice e veloce.
+Se la tua istanza non dispone di risorse sufficienti a causa di un aumento dell'attività o di nuove esigenze, puoi aumentare le sue risorse in pochi clic grazie al Public Cloud.
 
-**Questa guida ti mostra la procedura da seguire per ridimensionare l'istanza dallo Spazio Cliente OVHcloud.**
+**Questa guida ti mostra come ridimensionare la tua istanza dallo Spazio Cliente OVHcloud.**
 
 > [!warning]
 >
 > Per i modelli classici è possibile solo il ridimensionamento verso un modello superiore.
-> Questa operazione comporta anche l'interruzione dell'istanza durante l'operazione.
-> 
+> Questa operazione comporta l'interruzione dell'istanza durante l'operazione.
+>
 
 > [!success]
 >
-> Le istanze di tipo *flex* permettono il ridimensionamento verso i modelli superiori o inferiori grazie a una dimensione di disco unica.
-> 
+> Le istanze di tipo *flex* permettono il ridimensionamento verso modelli superiori o inferiori grazie a una dimensione di disco unica.
+>
 
 ## Prerequisiti
 
-- Disporre di un'istanza [Public Cloud](/links/public-cloud/public-cloud) sul proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un'[istanza Public Cloud](/links/public-cloud/public-cloud) sul proprio account OVHcloud
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), alla sezione `Public Cloud`{.action}, seleziona il tuo progetto. Nel menu di sinistra, clicca su `Istanze`{.action}.
+Nel menu di sinistra, clicca su `Istanze`{.action}.
 
-Clicca sui tre puntini `...`{.action} a destra dell'istanza e seleziona `Modifica`{.action}.
+Clicca su `...`{.action} a destra dell'istanza e seleziona `Modificare`{.action}. Puoi anche accedere a questa azione dai dettagli dell'istanza, cliccando sul nome e poi su `Modifica il modello`{.action}.
 
-![public-cloud](images/editinstance.png){.thumbnail}
-
-Nella nuova scheda, fai scorrere la pagina fino alla sezione **Modello** per selezionare il modello che preferisci.
-
-![public-cloud](images/template.png){.thumbnail}
+Nella nuova scheda, scorri la pagina fino alla sezione **Modello** per selezionare il modello desiderato.
 
 > [!primary]
 >
-> Per i modelli classici, puoi passare a qualsiasi modello con dischi simili o più grandi. Non puoi passare a un modello con un disco più piccolo.<br/>
+> Per i modelli classici, puoi passare a qualsiasi modello con un disco simile o più grande. Non puoi passare a un modello con un disco più piccolo.<br/>
 >
-> Solo **le istanze flessibili** possono essere aggiornate e retrogradate mantenendo una dimensione di disco fissa di 50 GB.
+> Solo **le istanze flessibili** possono essere aggiornate o retrogradate, mantenendo una dimensione di disco fissa di 50 GB.
 >
 
-Se il tuo disco è uguale o inferiore a 50 GB, puoi passare a un'`Istanza Flexible`{.action} se vuoi.
+Se il tuo disco è uguale o inferiore a 50 GB, puoi passare a un'`Istanza flessibile`{.action} se lo desideri.
 
 > [!warning]
-> Attenzione: nel caso di un'istanza di tipo *flex*, non è possibile passare verso un'istanza classica attraverso lo Spazio Cliente. Per maggiori informazioni, consulta la nostra guida [Passare da un’istanza flex a un’istanza classica](/pages/public_cloud/compute/revert_a_flex_instance).
+> Se modifichi un'istanza di tipo *flex*, non è possibile tornare a un'istanza classica tramite lo Spazio Cliente. Per maggiori informazioni, consulta la nostra guida su [Tornare da un'istanza flex a un'istanza classica](/pages/public_cloud/compute/revert_a_flex_instance).
 >
 
 Una volta effettuata la selezione, clicca su `Modifica il modello`{.action} per confermare la tua scelta.
 
-### Ridimensionamento del disco con Windows
+### Ridimensionamento del disco in Windows
 
-Attenzione: durante un ridimensionamento di un'istanza Windows, la dimensione della partizione non è automaticamente aggiornata, sarà quindi necessario estenderla utilizzando il **disk manager**:
+Durante il ridimensionamento di un'istanza Windows, la dimensione della partizione non viene aggiornata automaticamente. È necessario estenderla utilizzando il **gestore disco**:
 
-- Clicca con il tasto destro sul menu `Start`{.action} e avviare il disk manager cliccando su `Disk Management`{.action}:
+- Clicca con il tasto destro sul menu `Start`{.action} e avvia il gestore disco cliccando su `Disk Management`{.action}:
 
-![public-cloud](images/2980.png){.thumbnail}
+![Menu contestuale del menu Start con l'opzione Gestione disco](images/2980.png){.thumbnail}
 
 - Clicca con il tasto destro sulla partizione principale e poi su `Extend Volume`{.action}.
 
-![public-cloud](images/2981a.png){.thumbnail}
+![Clic destro sulla partizione principale per estendere il volume](images/2981a.png){.thumbnail}
 
-- Clicca su `Next`{.action} per accedere al `Extend Volume Wizard`. Scegli le risorse del disco da estendere e clicca su `Next`{.action}. 
+- Nel menu `Extend Volume Wizard`, clicca su `Next`{.action}. Scegli le risorse del disco da estendere e clicca su `Next`{.action}.
 
-![public-cloud](images/2978a.png){.thumbnail}
+![Procedura guidata per l'estensione del volume con selezione delle risorse](images/2978a.png){.thumbnail}
 
 Clicca su `Finish`{.action} per confermare la tua scelta.
 
-![public-cloud](images/wizard2021.png){.thumbnail}
+![Passaggio finale della procedura guidata per l'estensione del volume](images/wizard2021.png){.thumbnail}
 
-- La nuova dimensione del disco verrà visualizzata dal gestore del disco.
+- La nuova dimensione del disco verrà visualizzata nel gestore disco.
 
-![public-cloud](images/2979.png){.thumbnail}
+![Gestore disco che mostra la nuova dimensione](images/2979.png){.thumbnail}
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

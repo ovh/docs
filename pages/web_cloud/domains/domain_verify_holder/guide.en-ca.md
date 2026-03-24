@@ -1,7 +1,7 @@
 ---
 title: "How to correct the contact details of a domain name owner"
 excerpt: "Find out how to correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud"
-updated: 2025-05-21
+updated: 2026-03-19
 ---
 
 ## Objective
@@ -24,11 +24,20 @@ In this case, OVHcloud will not be able to provide any refund.
 ## Requirements
 
 - You have a [domain name](/links/web/domains) registered with OVHcloud.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - You have received an email from OVHcloud stating that action is required regarding your domain name holder contact details.
 - Check the following points to ensure that this is not a fraudulent email:
     - The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
-    - The URL mentioned in the email starts off with: `https://www.ovh.com/manager/#/web/domain/operation/`.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 
@@ -40,30 +49,20 @@ After the order, the domain name holder will receive an email from OVHcloud to v
 
 When clicking on `Confirm your email address`{.action}, a new page will open with a link directly validating the holder's email address.
 
-If this method does not work, the holder can manually validate their email address using the one-time code provided in the email and by clicking on `Email validation form`{.action}.
-
-![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
-
 ![Validation email CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
 
 ### 2 - Correct or complete the contact details of the domain name holder as an administrator
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Domain names`{.action} menu, then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, check that your domain name is covered by the procedure, as there is a banner (yellow or red) indicating the operation to be carried out.
 >>
@@ -71,13 +70,13 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page, go to the **Holder** box, then click the `Edit`{.action} button.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> > [!warning]
 >> >
@@ -136,33 +135,29 @@ Click on the tabs below to view each of the **4** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click on the `Ongoing operations`{.action} menu, then find the domain name concerned in the list that appears.
+>> Go to the [Ongoing operations](/links/control-panel/web-ongoing-operations) page, then find the domain name concerned in the list.
 >>
 >> ![Ongoing operations](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> Click the `⁝`{.action} button on the right, then `Modify operation`{.action}.
 >>
 >> ![Domain name operation](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the window that opens, tick the option `Relaunch operation`{.action}, then click `Confirm`{.action}.
 >>
 >> ![Operation data on domain](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
-
-It will take a few minutes to complete the operation. Refresh the `Domain name operations` page where the operation to correct the contact for your domain name was located.
-
-If the operation has completed successfully, the row for the processed operation no longer appears.
-
-If this is not the case, a correction is necessary in the domain name holder's contact details. In this case, please follow this guide from the beginning to resolve the issue.
+>>
+> **Step 4**
+>>
+>> It will take a few minutes to complete the operation. Refresh the `Domain name operations` page where the operation to correct the contact for your domain name was located.
+>>
+>> If the operation has completed successfully, the row for the processed operation no longer appears.
+>>
+>> If this is not the case, a correction is necessary in the domain name holder's contact details. In this case, please follow this guide from the beginning to resolve the issue.
 
 ## Go further
 

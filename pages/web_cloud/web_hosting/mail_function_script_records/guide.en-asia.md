@@ -31,7 +31,7 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -46,7 +46,7 @@ Click on the tabs below to view each of the **2** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -208,7 +208,7 @@ If you are the originator of the emails that caused the block, below are some ex
 - The email contains more than 70% "white space" (abuse of the "SPACE" or "ENTER" key on the keyboard).
 - The font size used to write the email is extremely large.
 - The text colour and the background colour are the same.
-- The sender IP address (IP of your internet access point for example) has a negative reputation with spam protection services.
+- The sender IP address (IP of your Internet access point for example) has a negative reputation with spam protection services.
 - The header of the sent email does not respect the RFC email standards.
 - Links in the email are incorrect.
 - A URL in the email is not secure (example: a URL written as `https://`, while the actual URL only exists as `http://`).

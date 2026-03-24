@@ -15,7 +15,18 @@ Aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de conten
 - Disposer d'une offre d’[hébergement web OVHcloud](/links/web/hosting).
 - Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Être en possession de la sauvegarde que vous souhaitez importer dans votre base de données ou être en mesure de pouvoir la récupérer.
-- Selon la méthode d'importation utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](/links/manager) ou des informations permettant de vous connecter à la base de données.
+- Selon la méthode d'importation utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'espace client OVHcloud ou des informations permettant de vous connecter à la base de données.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

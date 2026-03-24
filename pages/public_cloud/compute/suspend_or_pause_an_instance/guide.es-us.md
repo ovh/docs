@@ -17,8 +17,19 @@ Como parte de la configuración de una infraestructura de alta disponibilidad, p
 ## Requisitos
 
 - Tener [una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) sobre la facturación por **horas**
-- Tener acceso al [área de cliente de OVHcloud](/links/manager) o al [interfaz de Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Tener acceso al [interfaz de Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Conocimiento de la [API de OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) y de las [variables OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
@@ -102,7 +113,7 @@ El snapshot estará entonces disponible en la sección `Instance Backup`{.action
 
 Para utilizar este método, conéctese [a Horizon](https://horizon.cloud.ovh.net/auth/login/):
 
-- Para conectarse con el inicio de sesión único de OVHcloud, utilice el enlace `Horizon`{.action} del menú de la izquierda, en «Management Interfaces», tras abrir su proyecto `Public Cloud`{.action} en su [área de cliente de OVHcloud](/links/manager).
+- Para iniciar sesión con el SSO de OVHcloud: utilice el enlace `Horizon`{.action} en el menú izquierdo bajo "Management Interfaces" después de abrir su proyecto `Public Cloud`{.action} en el [área de cliente de OVHcloud](/links/manager).
 
 - Para conectarse con un usuario específico de OpenStack: abra la página de conexión a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduzca las [claves OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) previamente creadas y haga clic en `Connect`{.action}.
 

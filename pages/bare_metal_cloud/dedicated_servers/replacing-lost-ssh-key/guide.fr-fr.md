@@ -22,7 +22,6 @@ Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHclo
 ## Prérequis
 
 - Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 

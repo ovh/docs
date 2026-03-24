@@ -18,7 +18,18 @@ Per maggiori informazioni, consulta le nostre guide "[Scopri tutto sui server DN
 
 - Essere l’intestatario di un [nome di dominio](/links/web/domains) registrato presso OVHcloud.
 - Disporre delle autorizzazioni [appropriate per gestire](/pages/account_and_service_management/account_information/managing_contacts) per il nome di dominio dallo [Spazio Cliente OVHcloud](/links/manager).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >
@@ -45,26 +56,20 @@ Tuttavia, è essenziale tenere conto dei seguenti punti:
 
 ### 1 - Accedi alla gestione dei server DNS OVHcloud <a name="access-dns-servers"></a>
 
-Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** tappe.
+Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Tappa 1**
+> **Passaggio1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Tappa 2**
->>
->> Clicca sul menu `Domini`{.action} e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il nome di dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Tappa 3**
+> **Passaggio2**
 >>
 >> Seleziona la scheda `Server DNS`{.action} una volta posizionato sul dominio interessato.
 >>
-> **Tappa 4**
+> **Passaggio3**
 >>
 >> Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo nome di dominio. A ogni riga corrisponde un server DNS.
 >>
@@ -231,4 +236,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [par
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra [Community di utenti](/links/community).
+Contatta la nostra [Community di utenti](/links/community).

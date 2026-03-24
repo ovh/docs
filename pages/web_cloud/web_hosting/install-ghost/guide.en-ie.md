@@ -17,11 +17,21 @@ In this tutorial, we will set up a blog with Ghost on an OVHcloud Cloud Web plat
 - a [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
 - Node.js enabled as a runtime environment
 - the domain name added as a multisite, and Node.js defined as its runtime environment
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
 - What you need to know:
     - how to use the Node.js runtime environment
     - how to log in via SSH
     - access to edit text files in the command line (e.g. via Vim, Emacs or Nano)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

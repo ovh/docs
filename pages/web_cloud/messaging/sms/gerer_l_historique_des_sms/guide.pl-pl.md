@@ -37,10 +37,10 @@ Historia zawiera informacje o dacie, godzinie, nadawcy, odbiorcy oraz treści wy
 >
 > Panel klienta OVHcloud umożliwia sprawdzanie wiadomości SMS wysłanych w ciągu ostatnich 6 miesięcy (lub ostatnich 5000 SMS-ów, jeśli w ciągu ostatnich 6 miesięcy wysłałeś ponad 5000 SMS-ów).
 >
-> Aby wyświetlić starsze wiadomości SMS (do 12 ostatnich miesięcy), musisz pobrać historię wiadomości SMS w formacie CSV. Sprawdź [krok 2 tego przewodnika] (#csv).
+> Aby wyświetlić starsze wiadomości SMS (do 12 ostatnich miesięcy), musisz pobrać historię wiadomości SMS w formacie CSV. Sprawdź [krok 2 tego przewodnika](#csv).
 >
 
-### Etap 1: sprawdzanie historii w Panelu klienta
+### Etap 1: Sprawdzanie historii w Panelu klienta
 
 Na pasku kart kliknij `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}, aby uzyskać dostęp do historii Twoich pojedynczych wiadomości SMS lub `Zarządzanie kampaniami`{.action}.
 
@@ -64,8 +64,8 @@ Przycisk `Filtruj`{.action} umożliwia filtrowanie wyszukiwania według nadawcy 
 
 ![sms-history](images/smshistory5.png){.thumbnail}
  
-### Etap 2: pobieranie historii wiadomości SMS do pliku CSV <a name="csv"></a>
- 
+### Etap 2: Pobieranie historii wiadomości SMS do pliku CSV <a name="csv"></a> 
+
 Kliknij przycisk `Działania`{.action} po lewej stronie, nad historią, a następnie kliknij polecenie `Pobierz`{.action}, aby pobrać historię wysłanych wiadomości SMS w formacie .csv. 
  
 ![sms-history](images/smshistory6.png){.thumbnail}

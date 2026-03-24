@@ -18,7 +18,18 @@ Więcej informacji znajdziesz w przewodnikach "[Wszystko o serwerach DNS](/pages
 
 - Być abonentem [nazwy domeny](/links/web/domains) zarejestrowanej w OVHcloud.
 - Posiadanie uprawnień [do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) nazwy domeny z poziomu [panelu klienta OVHcloud](/links/manager).
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >
@@ -45,26 +56,20 @@ Należy jednak wziąć pod uwagę następujące kwestie:
 
 ### 1 - Dostęp do zarządzania serwerami DNS OVHcloud <a name="access-dns-servers"></a>
 
-W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią nazwę domeny.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Wybierz zakładkę `Serwery DNS`{.action} po wybraniu nazwy domeny.
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktualnie przez OVHcloud dla Twojej nazwy domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli.
 >>
@@ -231,4 +236,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

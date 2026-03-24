@@ -17,7 +17,17 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 ## Requisitos
 
 - Disponer de un snapshot de una [instancia de Public Cloud](/links/public-cloud/instance-backup). Para ello, consulte [la guía dedicada a la creación de un snapshot](/pages/public_cloud/compute/save_an_instance).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
@@ -36,7 +46,6 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 
 > [!tabs]
 > A través del área de cliente de OVHcloud
->> Inicie sesión en su [área de cliente de OVHcloud](/links/manager), vaya a la sección `Public Cloud`{.action} y seleccione el proyecto Public Cloud correspondiente.<br>
 >> Haga clic en `Instance backup`{.action} en la barra de navegación izquierda bajo **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
@@ -135,7 +144,6 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 
 > [!tabs]
 > A través del área de cliente de OVHcloud
->> Inicie sesión en su [área de cliente de OVHcloud](/links/manager), vaya a la sección `Public Cloud`{.action} y seleccione el proyecto Public Cloud correspondiente.<br>
 >> Haga clic en `Instancias`{.action} en la barra de navegación izquierda bajo **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}

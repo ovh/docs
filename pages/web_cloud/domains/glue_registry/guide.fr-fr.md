@@ -29,7 +29,17 @@ Selon vos besoins, il est possible de personnaliser le nom des serveurs DNS de v
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
@@ -104,22 +114,16 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 > De plus, le *domain1.tld* doit être enregistré chez OVHcloud pour mettre en place les hôtes.
 >
 
-Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Une fois positionné sur le domaine concerné, cliquez sur l'onglet `Hosts`{.action}.
 >>
@@ -127,7 +131,7 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans la fenêtre qui s'ouvre sur votre écran, complétez les informations demandées :
 >>
@@ -288,4 +292,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

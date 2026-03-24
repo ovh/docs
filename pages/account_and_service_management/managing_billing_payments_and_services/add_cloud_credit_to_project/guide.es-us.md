@@ -14,11 +14,21 @@ Esto significa que este crédito cloud se cargará en primer lugar y que, a cont
 ## Requisitos
 
 - Un proyecto de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
-- Accesar a su [área de cliente de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
-Inicie sesión en su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. Abra `Crédito y códigos promocionales`{.action} en el menú de la izquierda en **Ajustes**.
+Abra `Crédito y códigos promocionales`{.action} en el menú de la izquierda en **Ajustes**.
 
 > [!warning]
 >

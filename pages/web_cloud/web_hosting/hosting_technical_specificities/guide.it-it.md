@@ -13,7 +13,17 @@ I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configura
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](/links/web/hosting) attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

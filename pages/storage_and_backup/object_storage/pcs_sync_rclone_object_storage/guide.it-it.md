@@ -1,58 +1,61 @@
 ---
-title: "Object Storage Swift - Utilizzare l'Object Storage con Rclone"
+title: Object Storage Swift - Using Object Storage with Rclone
+excerpt: This guide explains how to sync object storage via your OVHcloud Control Panel
 updated: 2021-10-27
 ---
 
-## Obiettivo
+## Objective
 
-L’Object Storage OVH può essere sincronizzato tramite Rclone.
+OVHcloud Object Storage can be synchronised using Rclone.
 
-**Questa guida ti mostra la procedura da eseguire per configurare il tool dallo Spazio Cliente OVH.**
+**This guide explains how to sync object storage via your OVHcloud Control Panel.**
 
-Rclone è un software di sincronizzazione esterno: per maggiori dettagli sul suo utilizzo, consulta la [documentazione ufficiale](https://Rclone.org/).
+Rclone is an external synchronisation program - you can find further details for its use in its [official documentation](https://Rclone.org/).
 
-## Prerequisiti
+## Requirements
 
-- Aver creato un container *Object Storage* (dallo Spazio Cliente OVH o dall’interfaccia [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container))
-- Aver creato un [utente OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
+- You need to have created an *Object Storage* container (you can create one from the Control Panel or from [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container))
+- You need to have created an OpenStack user account
 
-## Procedura
+## Instructions
 
-​Una volta creato il container e l'utente OpenStack, restano due cose da fare:
+Once you have created your container and OpenStack account, you only need to do two things:
 
-- recuperare il file di configurazione per Rclone
+- Retrieve the Rclone config file:
 
-Dopo aver creato il tuo utente OpenStack, è possibile recuperare nello Spazio Cliente OVH il file di configurazione necessario per Rclone: seleziona il tuo progetto nel menu a sinistra e accedi alla pagina degli utenti OpenStack. Clicca sull’icona con i tre puntini in corrispondenza del nome dell’utente e poi su `Scarica un file di configurazione rClone`.
+Once your OpenStack user account has been created, you can retrieve the config file you need for Rclone from your Control Panel.
 
-![Scarica un file di configurazione rClone](images/download_file.png){.thumbnail}
+To do this, when you are on the OpenStack users page in your Control Panel, click on `...`{.action} to the right of the user and then `Download an Rclone configuration file`{.action}.
 
-- configurare Rclone
+![Télécharger un fichier de configuration Rclone](images/pcs_sync_rclone_pcs-20211008090532581.png)
 
-Una volta scaricato il file, esegui questo comando per aggiungere il nuovo spazio di storage:
+- Configure Rclone:
+
+Once the file has been downloaded, you can launch the following command to add your new storage space:
 
 ```sh
 Rclone config
 ```
 
-Ti verrà chiesto di inserire i dati di configurazione presenti nel tuo file.
+You will be asked to insert the config data that appears in your file.
 
 > [!primary]
 >
-> Puoi anche copiare e incollare il contenuto del tuo file nella cartella dedicata alle configurazioni di Rclone (*.config/Rclone/Rclone.conf*).
+> You can also copy-paste the contents of your file in the Rclone config area *.config/Rclone/Rclone.conf*).
 >
 
-Una volta completata l’operazione, è possibile verificarne la correttezza, ad esempio, eseguendo il comando che restituisce la lista dei tuoi container:
+Once the configuration is complete, you can test it by listing your containers, for example:
 
 ```sh
 Rclone lsd BackupStorage
 ```
 
-*BackupStorage* corrisponde al nome assegnato al tuo spazio di storage.
+(Where *BackupStorage* is the name given to your storage space.)
 
-Per sincronizzare il tuo Object Storage con Rclone, consulta la documentazione dettagliata disponibile sul [sito ufficiale](https://Rclone.org/swift/).
+You can find more detailed instructions on how to synchronise your object storage and Rclone on the official Rclone website: [Official Rclone documentation](https://Rclone.org/swift/).
 
-## Per saperne di più
+## Go further
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

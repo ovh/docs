@@ -13,7 +13,7 @@ Installer l'image OverTheBox sur votre propre matériel est une étape cruciale 
 ## Prérequis
 
 - Une **OverTheBox** fournie par OVHcloud ou un matériel compatible avec la solution OverTheBox (plateforme x86_64 avec un processeur Intel ou AMD)
-- Au moins un accès à Internet, fourni par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
+- Au moins un accès à Internet, fourni par [OVHcloud](/links/telecom/offre-internet) ou un autre fournisseur d'accès
 
 ## En pratique
 
@@ -25,7 +25,7 @@ Pour installer manuellement le logiciel OverTheBox, vous devez télécharger l'i
 - Pour un appareil de type **Raspberry Pi 3**, seule [cette image](http://downloads.overthebox.net/v0.8/targets/brcm2708/bcm2710/latest.img.gz) est compatible.
 - Pour un appareil avec plusieurs ports ethernet RJ45, nous recommandons d'utiliser la dernière version [stable](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz).
 
-Si vous cherchez une version particulière, d'autres options sont disponible sur le site [http://downloads.overthebox.net/](http://downloads.overthebox.net/).
+Si vous cherchez une version particulière, d'autres options sont disponibles sur le site [http://downloads.overthebox.net/](http://downloads.overthebox.net/).
 
 ### Mise à jour depuis l'interface web locale
 
@@ -67,7 +67,7 @@ Si une version du logiciel OverTheBox est déjà installée sur votre appareil, 
 > Cette méthode n'est disponible que pour les appareils vendus par OVHcloud.
 >
 
-Si le système n'est pas installé sur votre appareil, vous pouvez créer une clé USB bootable contenant l'image OverTheBox afin d'installer complétement le système.
+Si le système n'est pas installé sur votre appareil, vous pouvez créer une clé USB bootable contenant l'image OverTheBox afin d'installer complètement le système.
 
 #### Création d'une clé USB bootable sous Windows
 
@@ -145,7 +145,7 @@ Maintenant que vous connaissez l'emplacement de votre clé USB, vous pouvez flas
 - Tapez la commande suivante (**en remplaçant X par la bonne lettre de votre clé**) :
 
 ```bash
-# Positionnez vous dans le dossier où ce trouve l'image
+# Positionnez vous dans le dossier où se trouve l'image
 cd ~/Téléchargements
 gunzip -c latest.img.gz | dd of=/dev/sdX
 ```
@@ -187,7 +187,7 @@ Dans le cas d'une OverTheBox IT v2, la clé USB doit être branchée sur un des 
 
 > [!success]
 >
-> Votre OvertheBox est maintenant opérationelle. Vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
+> Votre OverTheBox est maintenant opérationnelle. Vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
 >
 > [Configurer un ancien appareil OverTheBox v1 (Intel & IT v1)](/pages/web_cloud/internet/overthebox/intel_itv1_installation)
 >
@@ -239,13 +239,13 @@ gunzip latest.img.gz
 sudo dd if=latest.img of=/dev/mmcxxx
 ```
 
-Vous devez remplacer **mmcxxx par votre destination d'installation.
+Vous devez remplacer **mmcxxx** par votre destination d'installation.
 
 Retirez maintenant votre « live usb » et redémarrez votre matériel.
 
 > [!success]
 >
-> Votre matériel est maintenant opérationel. Vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
+> Votre matériel est maintenant opérationnel. Vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
 >
 > - Sur une machine avec 1 seul port ethernet : [Configurer un ancien appareil OverTheBox v1 (Intel & IT v1)](/pages/web_cloud/internet/overthebox/intel_itv1_installation).
 > - Sur une machine avec plus d'un port ethernet : [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation).
@@ -253,5 +253,6 @@ Retirez maintenant votre « live usb » et redémarrez votre matériel.
 
 ## Aller plus loin
 
-- Échangez avec notre [communauté d'utilisateurs](/links/community).
 - Consultez la [FAQ OverTheBox](/pages/web_cloud/internet/overthebox/install_faq)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

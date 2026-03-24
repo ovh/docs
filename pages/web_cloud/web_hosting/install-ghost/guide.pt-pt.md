@@ -19,11 +19,21 @@ Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento 
 - Ter um serviço de [alojamento Cloud Web da OVHcloud](/links/web/hosting-cloud-web-offer).
 - Ter ativado Node.js como motor de execução.
 - Ter adicionado o domínio em questão como multisite e ter definido Node.js como o motor de execução.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 - O que precisa de saber:
     - Conhecer as bases do ecossistema Node.js
     - Aceder através de SSH.
     - Editar um ficheiro em linha de comandos com Vim, Emacs ou Nano, por exemplo.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

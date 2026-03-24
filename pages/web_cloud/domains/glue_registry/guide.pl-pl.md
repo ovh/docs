@@ -27,7 +27,17 @@ W zależności od Twoich potrzeb możesz spersonalizować nazwy serwerów DNS Tw
 ## Wymagania początkowe
 
 - Zarejestrowana [nazwa domeny](/links/web/domains) OVHcloud
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager), część `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 
@@ -101,22 +111,16 @@ W razie potrzeby i aby uzyskać więcej informacji, zapoznaj się z naszym tutor
 > Ponadto, OVHcloud musi zarejestrować *domain1.tld*, aby wdrożyć rekordy Host.
 >
 
-W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią nazwę domeny.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na nowej stronie kliknij zakładkę `Hosty`{.action}.
 >>
@@ -124,7 +128,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W oknie, które się otworzy na ekranie, wprowadź wymagane informacje:
 >>
@@ -285,4 +289,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

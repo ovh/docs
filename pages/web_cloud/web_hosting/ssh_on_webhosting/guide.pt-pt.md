@@ -36,7 +36,7 @@ Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazena
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -53,12 +53,12 @@ Para se ligar e utilizar o acesso SSH do seu alojamento web, precisará dos segu
 
 ### 1 - Assegure-se de que o acesso SSH está ativo para o utilizador SSH escolhido <a name="user-ssh-enablement"></a>
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -86,12 +86,12 @@ Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etap
 
 ### 2 - Obtenha as informações necessárias para se ligar em SSH <a name="sshlogin"></a>
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

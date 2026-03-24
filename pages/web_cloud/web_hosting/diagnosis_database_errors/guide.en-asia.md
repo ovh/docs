@@ -19,8 +19,18 @@ Your database usage may result in anomalies on your website or error messages in
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
-- access to the [OVHcloud Control Panel](/links/manager)
 - an OVHcloud database service: [Start SQL](/links/web/hosting-options-startsql) or [Web Cloud Databases](/links/web/databases)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

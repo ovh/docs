@@ -1,6 +1,6 @@
 ---
-title: 'Connectivity API'
-excerpt: 'Develop using connectivity API'
+title: 'Getting started with the OVHcloud Connectivity API'
+excerpt: 'Use the OVHcloud Connectivity API to check copper and fibre eligibility and manage Internet access'
 updated: 2023-04-03
 ---
 
@@ -10,7 +10,7 @@ This guide is designed to help developers use our APIs to create their own appli
 
 ## Requirements
 
-- An active OVHcloud account, and your login details.
+- An active OVHcloud account and your login details.
 - Access to the [OVHcloud API webpage](/links/api).
 - Read our [Getting started with OVHcloud APIs guide](/pages/manage_and_operate/api/first-steps) to get started using OVHcloud APIv6.
 
@@ -18,15 +18,15 @@ This guide is designed to help developers use our APIs to create their own appli
 
 ### Internet offers
 
-OVHcloud offers various internet access packages that contain at least one internet access but also VoIP lines, emails and domain names.
+OVHcloud offers various Internet access packages that contain at least one Internet access but also VoIP lines, emails and domain names.
 
-You can view offers [here](/links/telecom/offre-internet).
+View the [OVHcloud Internet access offers](/links/telecom/offre-internet).
 
 Services can be managed using these API endpoints:
 
-* `/pack/xdsl`: Manage Internet package offerings.
-* `/xdsl`: Manage Internet access, sub-services and options.
-* `/connectivity`: will replace `/xdsl`. For now it allows to do the eligibility for copper and fiber offers.
+- `/pack/xdsl`: Manage Internet package offerings.
+- `/xdsl`: Manage Internet access, sub-services and options.
+- `/connectivity`: will replace `/xdsl`. For now it allows you to check eligibility for copper and fibre offers.
 
 ### Eligibility
 
@@ -34,7 +34,7 @@ Services can be managed using these API endpoints:
 
 Eligibility methods are available on the endpoint path `/connectivity/eligibility/`.
 
-The objective of eligibility is to resend eligible internet offers for a given *endpoint* (delivery point), in order to order this offer.
+The objective of eligibility is to return eligible Internet offers for a given *endpoint* (delivery point), so you can order this offer.
 An *endpoint* can be an existing address or line, identified by the line number and its status (active or inactive).
 
 Methods return an asynchronous *xdsl.AsyncTask* structure, such as:
@@ -85,9 +85,9 @@ And finally an example of a failed task:
 #### Finding the endpoints
 
 For a copper line, the endpoint is a line identified by its number and status.
-If no line exists, you will need to test by address to see if you are eligible to create a neighbouring line..
+If no line exists, you will need to test by address to see if you are eligible to create a neighbouring line.
 
-For fiber, the endpoint can be identified by a *building* identifier, or an *OTP* (Optical Termination Point) identifier.
+For fibre, the endpoint can be identified by a *building* identifier, or an *OTP* (Optical Termination Point) identifier.
 
 An address is identified by a street number and a street code.
 To find them, use this process:
@@ -279,7 +279,7 @@ The response:
 }
 ```
 
-##### **Getting the building references from a given line number <a name="eligibilitySearchBuildingsByLine"></a>
+##### **Getting the building references from a given line number** <a name="eligibilitySearchBuildingsByLine"></a>
 
 Example: we want the list of buildings for the *inactive* line number *"0123456789"*.
 
@@ -323,14 +323,14 @@ We found a single building that is a house.
 
 Possible cases are:
 
-* [I know the line number, I'll use it for eligibility](#eligibilityTestLine)
-* [I do not know the line number, I'll have to look it up first](#eligibilitySearchLines)
-* [I do not have a line number, I will have to request a line creation from a neighbour line](#eligibilityTestAddress)
+- [I know the line number, I'll use it for eligibility](#eligibilityTestLine)
+- [I do not know the line number, I'll have to look it up first](#eligibilitySearchLines)
+- [I do not have a line number, I will have to request a line creation from a neighbour line](#eligibilityTestAddress)
 
 ##### **Doing an eligibility on a line** <a name="eligibilityTestLine"></a>
 
-If you known the number and status of the line then you can check its eligibility.
-The diffence between an active and an inactive line is that an active line has an active Internet access, whereas the inactive line is just an identifier to use to order an Internet access (usually this is the previous number of the last owner, who moved with his line).
+If you know the number and status of the line then you can check its eligibility.
+The difference between an active and an inactive line is that an active line has an active Internet access, whereas the inactive line is just an identifier to use to order an Internet access (usually this is the previous number of the last owner, who moved with his line).
 
 > [!warning]
 >
@@ -354,7 +354,7 @@ to do with the following POST data:
 
 ```
 
-Here is a partial successfull response example:
+Here is a partial successful response example:
 
 ```json
 {
@@ -531,8 +531,8 @@ Here is a partial successfull response example:
 
 The response is composed of:
 
-* a *result.offers* table that will list all the offers and if the given line is eligible or not;
-* a *result.endpoint* structure that gives line information: address and characteristics.
+- a *result.offers* table that will list all the offers and if the given line is eligible or not;
+- a *result.endpoint* structure that gives line information: address and characteristics.
 
 Here is a description of the offer codes:
 
@@ -607,10 +607,10 @@ You can now use the eligibility by line.
 > Unlisted numbers cannot be retrieved using this method.
 >
 
-##### **Searching for eligibility for an address <a name="eligibilityTestAddress"></a>
+##### **Searching for eligibility for an address** <a name="eligibilityTestAddress"></a>
 
 This will return an eligibility by address, to be used for the creation of a neighbouring line.
-A neigbouring line creation consists in checking the availability of new copper lines by searching for your nearest neighbour line information.
+A neighbouring line creation consists in checking the availability of new copper lines by searching for your nearest neighbour line information.
 
 > [!primary]
 >
@@ -741,12 +741,12 @@ The response:
 }
 ```
 
-#### Searching fiber eligibility (FTTH)
+#### Checking fibre eligibility (FTTH)
 
-For fiber eligibility, we have two scenarios:
+For fibre eligibility, we have two scenarios:
 
-* I have an Optical Termination Point (OTP) fiber ID, which I will use for eligibility;
-* I do not have an OTP  fiber identifier and will use a *building* identifier for the eligibility.
+- I have an Optical Termination Point (OTP) fibre ID, which I will use for eligibility;
+- I do not have an OTP fibre identifier and will use a *building* identifier for the eligibility.
 
 A *building* can be a house or a building with multiple housing. The *building* can be found from an address or from an existing copper line.
 
@@ -763,7 +763,7 @@ From one line, we have to:
 1. [Get the building references from a given line number](#eligibilitySearchBuildingsByLine)
 2. [Search eligibility for the selected building](#eligibilityTestBuilding)
 
-For an OTP, this is the simpliest:
+For an OTP, this is the simplest:
 
 1. [Doing the eligibility test for the OTP](#eligibilityTestOtp)
 
@@ -851,7 +851,7 @@ The response:
 }
 ```
 
-In the result for the "offers" table, the *boolean* attribute *eligibility.eligible* tell us we are eligible for "PRO FIBER with 1G download and 800M upload" offer.
+In the result for the "offers" table, the *boolean* attribute *eligibility.eligible* tells us we are eligible for "PRO FIBER with 1G download and 800M upload" offer.
 
 ##### **Searching eligibility from an OTP identifier** <a name="eligibilityTestOtp"></a>
 

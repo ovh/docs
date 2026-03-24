@@ -21,10 +21,19 @@ O registo MX permite associar um nome de domínio ao servidor da sua plataforma 
 
 ## Requisitos
 
-- Ter acesso à gestão da zona DNS do nome de domínio na [Área de Cliente OVHcloud](/links/manager).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - O nome de domínio em questão deve utilizar a configuração da OVHcloud (ou seja, os servidores DNS da OVHcloud).
 - Dispor de uma oferta MX Plan (incluída na oferta de [alojamento web](/links/web/hosting), no [alojamento gratuito 100M](/links/web/domains-free-hosting) ou na oferta MX Plan encomendada separadamente), uma das nossas [ofertas de e-mail OVHcloud](/links/web/emails), ou um serviço de e-mail externo.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!primary]
 >

@@ -13,7 +13,6 @@ Key pairs are used to authenticate SSH connections between hosts, for example a 
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!primary]
 >
@@ -22,14 +21,23 @@ Key pairs are used to authenticate SSH connections between hosts, for example a 
 > [How to create SSH keys with OpenSSH for Public Cloud instances](/pages/public_cloud/compute/creating-ssh-keys-pci)
 >
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## Instructions
 
 If you have not created a key pair yet, consult our guides first:
 
 - [How to create and use keys for SSH authentication](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 - [How to create and use keys for SSH authentication with PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
-
-Log in to the [OVHcloud Control Panel](/links/manager), click on the account name at the top right and open `My offers and services`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

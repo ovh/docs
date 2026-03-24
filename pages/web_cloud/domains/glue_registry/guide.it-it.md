@@ -27,7 +27,17 @@ In base alle esigenze, è possibile personalizzare il nome dei server DNS del no
 ## Prerequisiti
 
 - Disporre di un [nome di dominio](/links/web/domains) registrato in OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedura
 
@@ -65,7 +75,7 @@ In generale, OVHcloud crea automaticamente gli **host objects** quando riguardan
 
 È possibile recuperare i server DNS attualmente utilizzati dal nome di dominio tramite lo strumento DNS online [Zonemaster](https://zonemaster.net/en).
 
-Accedi al link [https://zonemaster.net](https://zonemaster.net/en), inserisci il tuo nome di dominio senza i *www* (esempio: *domain.tld*) e seleziona il pulsante `Options`{.action} situato immediatamente sotto il modulo di inserimento del nome di dominio.
+Accedi al link [https://zonemaster.net](https://zonemaster.net/en), inserisci il tuo nome di dominio senza i *www* (esempio: *domain.tld*), poi seleziona il pulsante `Options`{.action} situato immediatamente sotto il modulo di inserimento del nome di dominio.
 
 Nelle opzioni disponibili, clicca direttamente sul pulsante `Fetch NS from parent zone`{.action}.
 
@@ -101,22 +111,16 @@ Se necessario e per maggiori informazioni, consulta la nostra guida sullo strume
 > In più, il *domain1.tld* deve essere registrato in OVHcloud per attivare i "Host" record.
 >
 
-Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Tappa 1**
+> **Passaggio1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Tappa 2**
->>
->> Clicca sul menu `Domini`{.action} e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il nome di dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Tappa 3**
+> **Passaggio2**
 >>
 >> Nella nuova pagina, clicca sulla scheda `Host`{.action}.
 >>
@@ -124,7 +128,7 @@ Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
-> **Tappa 4**
+> **Passaggio3**
 >>
 >> Nella nuova finestra, inserisci le informazioni richieste:
 >>
@@ -285,4 +289,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [par
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra [Community di utenti](/links/community).
+Contatta la nostra [Community di utenti](/links/community).

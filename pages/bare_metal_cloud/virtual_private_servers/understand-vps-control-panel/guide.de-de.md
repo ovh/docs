@@ -13,16 +13,24 @@ updated: 2026-01-21
 ## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 > Einige VPS-Funktionen, die auf dieser Seite erwähnt werden, sind in den OVHcloud Local Zones nicht verfügbar.
 >
 > Weitere Informationen finden Sie auf unserer [Local Zones Seite](/links/bare-metal/vps-lz).
 
-## In der praktischen Anwendung
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an, wechseln Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Abschnitt `Virtual Private Server`{.action} aus.
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## In der praktischen Anwendung
 
 Diese Anleitung hilft Ihnen dabei, **das VPS-Verwaltungsfenster im OVHcloud Kundencenter zu verstehen**, wesentliche Informationen zu identifizieren und die wichtigsten verfügbaren Aktionen (Neuinstallation, Neustart, Backup, Konfiguration) zu nutzen.
 

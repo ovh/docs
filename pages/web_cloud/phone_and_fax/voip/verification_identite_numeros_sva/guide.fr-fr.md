@@ -88,7 +88,9 @@ Choisissez si vous êtes un « Professionnel » ou un « Professionnel revendeur
 >     - Les personnes pour lesquelles le service est mis en place (par exemple : service externalisé géré par un prestataire pour le compte d’une autre entreprise).
 
 ![renseigner coordonnées](images/sva-coordonnees01.png){.thumbnail}
+
 ![renseigner coordonnées](images/sva-coordonnees02.png){.thumbnail}
+
 ![renseigner coordonnées](images/sva-coordonnees03.png){.thumbnail}
 
 ### Ajouter des bénéficiaires

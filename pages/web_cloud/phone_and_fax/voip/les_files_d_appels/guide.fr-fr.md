@@ -6,7 +6,7 @@ updated: 2026-01-22
 
 ## Objectif
 
-La configuration en file d'appels permet de rediriger un appel entrant vers plusieurs lignes. Cette solution rend notamment possible la création d'une stratégie permettant d'éviter la perte d'appels.
+La configuration en file d'appels permet de rediriger un appel entrant vers plusieurs lignes. Cette solution permet de créer une stratégie pour éviter la perte d'appels.
 
 Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro principal, de faire sonner plusieurs lignes en même temps ou l'une après l'autre.
 
@@ -80,7 +80,7 @@ Poursuivez la lecture de cette documentation selon le ou les paramètres que vou
 - [Gérer les sons et l'attente (conseillé)](#manage-sounds).
 - [Gérer les plages horaires et les fermetures (facultatif)](#manage-agenda).
 - [Gérer le filtrage des appels (facultatif)](#manage-filters).
-- [Gérer les enregistrement d'appels (facultatif)](#manage-records)
+- [Gérer les enregistrements d'appels (facultatif)](#manage-records)
 
 #### 2.1 Gérer la file d'appels et ses lignes <a name="manage-lines"></a>
 
@@ -117,7 +117,7 @@ Une fois ces informations complétées, cliquez sur le bouton `Valider`{.action}
 
 ##### 2. Configurer une stratégie d’appels
 
-Dès qu'au moins une ligne est présente dans votre file, vous avez la possibilité de configurer une stratégie d'appels pour cette dernière. Pour cela, en dessous du tableau de vos lignes, faites vos choix parmi les options proposées.
+Dès qu'au moins une ligne est présente dans votre file, vous pouvez configurer une stratégie d'appels pour cette dernière. Pour cela, en dessous du tableau de vos lignes, faites vos choix parmi les options proposées.
 
 ![fileappels](images/2022-VoIP-FA-06.png){.thumbnail}
 
@@ -141,7 +141,7 @@ Une fois vos choix effectués, cliquez sur le bouton `Valider`{.action}.
 
 ##### 3. Organiser les lignes de la file d’appels
 
-Vous avez la possibilité d'organiser les lignes dans votre file d'appels depuis le tableau où celles-ci apparaissent.<br>
+Vous pouvez organiser les lignes dans votre file d'appels depuis le tableau où celles-ci apparaissent.<br>
 Pour cela, utilisez les flèches à gauche de chacune des lignes pour les déplacer jusqu'à leurs positions adéquates. 
 
 ![fileappels](images/2022-VoIP-FA-07.png){.thumbnail}
@@ -181,7 +181,7 @@ Dans le menu « Configuration », cliquez sur `Gestion des sons et de l'attente`
 > <br>Sachez qu'il est possible de créer des fichiers-sons via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/).
 > Nous vous rappelons que l'utilisation d'une musique non libre d'utilisation commerciale nécessite de s'acquitter de droits de diffusion auprès des sociétés d'auteurs/compositeurs/producteurs.
 
-Vous avez la possibilité d'ajouter deux sons :
+Vous pouvez ajouter deux sons :
 
 - **l'annonce avant mise en attente** : ce son sera joué intégralement avant que le correspondant ne rentre dans la file d'attente (et donc, avant qu'une ligne sonne). Privilégiez une annonce courte, par exemple un message de bienvenue citant le nom de votre entreprise.
 - **la musique d'attente** : ce son sera joué pendant que le client patiente dans la file d'attente et jusqu'au décrochage de l'appel par une ligne. Cette musique d'attente étant jouée en boucle, privilégiez une annonce plus longue, afin d'éviter une répétition trop fréquente et donc désagréable pour vos appelants.
@@ -194,7 +194,7 @@ Pour ajouter un son, cliquez sur le bouton `Ajouter un son`{.action} puis suivez
 
 Depuis cette partie, définissez le nombre maximum d'appelants pouvant être en attente simultanément dans la file. Si ce nombre venait à être dépassé, vous pouvez définir un comportement à adopter parmi les deux possibilités suivantes de débordement :
 
-- **Renvoyer sur un répondeur** : le ou les appelants concernés par le débordement seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case `Renvoyer sur un répondeur`{.action}. Cliquez ensuite sur `Ajouter un répondeur`{.action} et sélectionnez le répondeur d'une vos ligne SIP.
+- **Renvoyer sur un répondeur** : le ou les appelants concernés par le débordement seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case `Renvoyer sur un répondeur`{.action}. Cliquez ensuite sur `Ajouter un répondeur`{.action} et sélectionnez le répondeur d'une de vos lignes SIP.
 - **Jouer une annonce de débordement** : le ou les appelants concernés par le débordement entendront alors l'annonce que vous avez définie et l'appel sera ensuite raccroché. Pour téléverser un fichier audio, cochez d'abord la case `Jouer une annonce de débordement`{.action}. Cliquez ensuite sur `Ajouter un son`{.action}, puis suivez les étapes qui apparaissent jusqu'à finalisation.
 
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer les changements.
@@ -205,7 +205,7 @@ Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer 
 
 Définissez ici la durée maximale pendant laquelle un appelant attendra dans la file. Si cette durée venait à être dépassée, choisissez le comportement à adopter parmi deux possibilités :
 
-- **Renvoyer sur un répondeur** : le ou les appelants concernés seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case `Renvoyer sur un répondeur`{.action}. Cliquez ensuite sur `Ajouter un répondeur`{.action} et sélectionnez le répondeur d'une vos ligne SIP.
+- **Renvoyer sur un répondeur** : le ou les appelants concernés seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case `Renvoyer sur un répondeur`{.action}. Cliquez ensuite sur `Ajouter un répondeur`{.action} et sélectionnez le répondeur d'une de vos lignes SIP.
 - **Jouer une annonce de fermeture** : le ou les appelants concernés entendront alors l'annonce que vous avez définie. Pour l'envoyer, cochez d'abord la case `Jouer une annonce de fermeture`{.action}. Cliquez ensuite sur `Ajouter un son`{.action}, puis suivez les étapes qui apparaissent jusqu'à finalisation.
 
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer les changements.
@@ -237,7 +237,7 @@ Finalisez votre choix en cliquant sur le bouton `Modifier`{.action}.
 
 ##### 3. Définir les plages horaires
 
-Une fois les créneaux configurés à votre convenance, dans la partie « Gestion des plages horaires et des fermetures » de la page, vous pouvez définir des plages horaires et ler attribuer des créneaux.
+Une fois les créneaux configurés à votre convenance, dans la partie « Gestion des plages horaires et des fermetures » de la page, vous pouvez définir des plages horaires et leur attribuer des créneaux.
 
 Cliquez sur un horaire et modifiez la plage associée, ou cliquez sur l’horaire de début souhaité puis glissez en maintenant le clic jusqu’à l’horaire de fin. 
 Utilisez le bouton `Répéter`{.action} pour, par exemple, appliquer le même créneau sur plusieurs jours de la semaine.<br>
@@ -254,7 +254,7 @@ Dès que toutes vos plages horaires sont configurées, cliquez sur le bouton `Va
 
 ##### 4. Définir des fermetures exceptionnelles
 
-Une fois les plages horaires créées à votre convenance, vous avez la possibilité de définir des fermetures exceptionnelles.
+Une fois les plages horaires créées à votre convenance, vous pouvez définir des fermetures exceptionnelles.
 
 Celles-ci vous permettront de fermer votre file d’appels sur des plages horaires normalement considérées comme étant ouvertes. Pour cela, toujours dans la partie « Gestion des plages horaires et des fermetures », cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
 
@@ -271,7 +271,7 @@ Sur la page qui apparaît, positionnez vos fermetures exceptionnelles sur le cal
 |---|---|
 |Plage horaire/journée entière|Choisissez si la fermeture exceptionnelle concerne uniquement une plage horaire ou une journée entière.|
 |Objet|Définissez un titre vous permettant d'identifier cette fermeture exceptionnelle dans le tableau.|
-|Catégorie|Choisissez un créneau qui permettra de rediriger les appels reçus pendant la fermeture exceptionnelle. Si nécessaire, vous avez la possibilité de configurer les créneaux au-dessus du tableau de planification.|
+|Catégorie|Choisissez un créneau qui permettra de rediriger les appels reçus pendant la fermeture exceptionnelle. Si nécessaire, vous pouvez configurer les créneaux au-dessus du tableau de planification.|
 |Du/au|Définissez la date et l'heure (si nécessaire) de la fermeture exceptionnelle.|
 |Description|Vous pouvez ajouter une description plus détaillée à la fermeture exceptionnelle.|
 
@@ -285,7 +285,7 @@ Depuis le menu « Configuration », cliquez sur `Filtrages des appels`{.action}.
 
 ##### 1. Configurer les filtrages d'appels
 
-Vous avez la possibilité de mettre en place un filtrage s’appliquant aux appels entrants. 
+Vous pouvez mettre en place un filtrage s’appliquant aux appels entrants. 
 
 ![fileappels](images/2022-VoIP-FA-19.png){.thumbnail}
 
@@ -302,7 +302,7 @@ Cliquez sur le bouton `Valider`{.action} pour sauvegarder ces changements.
 
 ##### 2. Configurer et gérer les listes
 
-Dans la partie « Configuration des listes », vous avez la possibilité d'ajouter des numéros ou des types de numéros à la liste blanche ou à la liste noire. 
+Dans la partie « Configuration des listes », vous pouvez ajouter des numéros ou des types de numéros à la liste blanche ou à la liste noire. 
 
 ![fileappels](images/2022-VoIP-FA-20.png){.thumbnail}
 
@@ -316,13 +316,13 @@ Pour cela, complétez les informations demandées :
 
 Une fois les listes complétées, appuyez sur `Appliquer`{.action}.
 
-En dessous de la configuration des listes, dans la partie « Détails de vos listes », un tableau vous permet de visualiser les numéros ainsi que les types de numéros ajoutés à vos listes. Si nécessaire, vous avez la possibilité de filtrer l'affichage de ce tableau grâce la barre de recherche ou le bouton filtre situés au-dessus de celui-ci.
+En dessous de la configuration des listes, dans la partie « Détails de vos listes », un tableau vous permet de visualiser les numéros ainsi que les types de numéros ajoutés à vos listes. Si nécessaire, vous pouvez filtrer l'affichage de ce tableau grâce la barre de recherche ou le bouton filtre situés au-dessus de celui-ci.
 
 Pour **supprimer des éléments de vos listes**, sélectionnez-les dans le tableau en cochant la case située à gauche de ces derniers. Cliquez ensuite sur le bouton `Actions`{.action} puis sur `Supprimer les éléments sélectionnés`{.action}. Confirmez alors la suppression.
 
 ![fileappels](images/2022-VoIP-FA-20bis.png){.thumbnail}
 
-### Gérer les enregistrement d'appels <a name="manage-records"></a>
+### Gérer les enregistrements d'appels <a name="manage-records"></a>
 
 La configuration file d'appels vous permet d'enregistrer les appels entrants. Les enregistrements sont automatiquement supprimés de nos serveurs au bout de 60 jours.
 
@@ -330,9 +330,9 @@ Cliquez sur l'onglet `Enregistrements`{.action}.
 
 ![fileappels](images/2022-VoIP-FA-21.png){.thumbnail}
 
-Cliquez sur le bouton `Activé`{.action} sous « Enregistement des appels » pour activer ceux-ci. Cette activation vaut pour acceptation des [conditions particulières](https://www.ovh.com/fr/support/documents_legaux/conditions_particulieres_du_service_d_enregistrement_des_communications_telephoniques.pdf) d'utilisation du service.
+Cliquez sur le bouton `Activé`{.action} sous « Enregistrement des appels » pour activer ceux-ci. Cette activation vaut pour acceptation des [conditions particulières](https://www.ovh.com/fr/support/documents_legaux/conditions_particulieres_du_service_d_enregistrement_des_communications_telephoniques.pdf) d'utilisation du service.
 
-Vous pouvez laisser le choix à vos appelants de ne pas être enregistrés. Pour cela, cliquez sur le bouton `Activée`{.action} sous « Demande de non enregistement des appels ». Choisissez alors la touche que vos appelants devront composer pour ne pas être enregistrés.
+Vous pouvez laisser le choix à vos appelants de ne pas être enregistrés. Pour cela, cliquez sur le bouton `Activée`{.action} sous « Demande de non enregistrement des appels ». Choisissez alors la touche que vos appelants devront composer pour ne pas être enregistrés.
 
 Validez vos choix en cliquant sur `Appliquer`{.action}.
 

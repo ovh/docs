@@ -22,8 +22,18 @@ Your Cloud Web hosting plan has a storage space you can use to host your website
 ## Requirements
 
 - A [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the contact email address linked to your OVHcloud customer account
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

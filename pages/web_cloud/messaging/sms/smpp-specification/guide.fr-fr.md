@@ -1,6 +1,6 @@
 ---
-title: Spécifications techniques du SMPP
-excerpt: 'Découvrez les spécifications techniques du SMPP'
+title: "Spécifications techniques du SMPP"
+excerpt: "Découvrez les spécifications techniques du SMPP"
 updated: 2025-03-05
 ---
 
@@ -25,11 +25,11 @@ Pour plus d'explications sur les abréviations, consultez la page 10 des [spéci
 
 ## Présentation
 
-### A quoi sert le SMPP ?
+### À quoi sert le SMPP ?
 
 Le SMPP (Short Message Peer-to-Peer) est un protocole permettant d’échanger des SMS vers des opérateurs téléphoniques et par des fournisseurs de contenu. Il utilise en général deux connexions TCP/IP, une pour l'envoi et une pour la réception de données.
 
-### Quels sont les bénéfices du SMPP par rapport à l'offre standard SMS
+### Quels sont les bénéfices du SMPP par rapport à l'offre standard SMS ?
 
 - Le protocole est standardisé et permet de s’intégrer à de nombreux outils du marché
 - Il permet d’obtenir un débit important avec peu de latence
@@ -104,7 +104,7 @@ Non supporté
 
 ##### **submit_sm et submit_sm_resp**
 
-Le `submit_sm` est utilisée par un ESME pour soumettre un SMS au SMSC pour transmission à un numéro de téléphone mobile.
+Le `submit_sm` est utilisé par un ESME pour soumettre un SMS au SMSC pour transmission à un numéro de téléphone mobile.
 
 **Paramètres obligatoires :**
 
@@ -177,7 +177,7 @@ Le `submit_sm` est utilisée par un ESME pour soumettre un SMS au SMSC pour tran
 | ussd_service_op       | 5.3.2.44 | Non |
 
 Le `submit_sm_resp` est la confirmation de la bonne réception du submit_sm par le SMSC.<br>
-Il contient un `message_id` qui est l'identifiant du message du SMSC permettant de faire le lien avec l'accusé de réception (DLR) envoyé plus tard lorsque le mobile a reçu le SMS (sous réserve que la demande d'un DLR est spécifiée dans le `submit_sm`).
+Il contient un `message_id` qui est l'identifiant du message du SMSC permettant de faire le lien avec l'accusé de réception (DLR) envoyé plus tard lorsque le mobile a reçu le SMS (sous réserve que la demande d'un DLR ait été spécifiée dans le `submit_sm`).
 
 ##### **deliver_sm et deliver_sm_resp**
 
@@ -303,13 +303,13 @@ Non supportés.
 
 ##### **data_sm et data_sm_resp**
 
-Non supportés
+Non supportés.
 
 #### Statuts des PDU de réponse
 
 Tout PDU de réponse (ceux terminant par `_resp`) possède un statut. La spécification SMPP fournit une liste de statuts génériques (SMPP 3.4, 5.1.3 command_status) communs à tous les SMSC.
 
-Une plage spécifique de statuts est réservé aux SMSC. Voici ceux utilisés par OVHcloud :
+Une plage spécifique de statuts est réservée aux SMSC. Voici ceux utilisés par OVHcloud :
 
 | Code d'erreur | Valeur | Description |
 |---------------|--------|-------------|
@@ -321,12 +321,12 @@ Une plage spécifique de statuts est réservé aux SMSC. Voici ceux utilisés pa
 
 Le data coding est utilisé par le `submit_sm` et le `deliver_sm` pour encoder le message.
 
-Liste des data coding supportés:
+Liste des data coding supportés :
 
 - GSM 03.38 (GSM 7 bits)*
 - UCS2
 
-GSM 03.38* : cet endodage représente chaque caractère sur un septet mais certains clients SMPP le représentent sur un octet.
+GSM 03.38* : cet encodage représente chaque caractère sur un septet mais certains clients SMPP le représentent sur un octet.
 Le format octet étant le plus utilisé, votre compte SMPP est configuré par défaut sur ce format. Si vous rencontrez des problèmes d'encodage avec votre client SMPP, veuillez contacter le support OVHcloud pour faire modifier le format.
 
 #### TLV
@@ -379,3 +379,5 @@ La version du protocole est le 3.4.
 [Documentation technique SMPP](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)
 
 [Gestion d'un compte SMS SMPP](/pages/web_cloud/messaging/sms/smpp-control-panel)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Cómo añadir un registro DNS de tipo CNAME para un subdominio"
 excerpt: "Descubra cómo añadir un registro DNS de tipo CNAME en una zona DNS gestionada en OVHcloud para el subdominio de un nombre de dominio"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -34,7 +34,18 @@ Los registros CNAME son útiles para evitar tener que modificar las direcciones 
 
 - Tener un [nombre de dominio](/links/web/domains).
 - Tener una zona DNS asociada al nombre de dominio en OVHcloud.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 > 
@@ -45,11 +56,30 @@ Los registros CNAME son útiles para evitar tener que modificar las direcciones 
 
 ### Añadir un registro DNS de tipo CNAME para el subdominio de un nombre de dominio
 
-1. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
-2. En la nueva página, haga clic en el botón `Añadir un registro`{.action}.
-3. En la ventana que se abre, seleccione el tipo de registro `CNAME`{.action}.
-4. Introduzca a continuación en el campo `Subdominio` el subdominio de que se trate (por ejemplo: `www` para el subdominio `www.domain.tld`) y, en el campo `Destino *`, el nombre de dominio o subdominio (por ejemplo: `domain.tld`) que desee identificar mediante el registro de tipo CNAME. Haga clic en `Siguiente`{.action}.
-5. Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
+
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el dominio correspondiente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Haga clic en el botón `Añadir un registro`{.action}.
+>>
+> **Paso 3**
+>>
+>> En la ventana que se abre, seleccione el tipo de registro `CNAME`{.action}.
+>>
+> **Paso 4**
+>>
+>> Introduzca en el campo `Subdominio` el subdominio correspondiente (por ejemplo: `www` para el subdominio `www.domain.tld`) y, en el campo `Destino *`, el nombre de dominio o subdominio (por ejemplo: `domain.tld`) que desee identificar mediante el registro de tipo CNAME. Haga clic en `Siguiente`{.action}.
+>>
+> **Paso 5**
+>>
+>> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
 
 /// details | Consulte nuestras guías detalladas:
 

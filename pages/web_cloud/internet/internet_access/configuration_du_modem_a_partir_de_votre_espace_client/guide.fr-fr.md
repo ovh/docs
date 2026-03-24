@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-Afin de faciliter la gestion de votre accès à Internet, vous avez la possibilité de paramétrer votre box OVHcloud directement depuis votre espace client. Vous pouvez ainsi changer cette configuration à distance, sans devoir vous connecter à l'interface de votre box. Autre avantage, vous disposez toujours d'une sauvegarde de vos paramètres.
+Pour faciliter la gestion de votre accès à Internet, vous pouvez paramétrer votre box OVHcloud directement depuis l'espace client. Vous pouvez ainsi changer cette configuration à distance, sans devoir vous connecter à l'interface de votre box. Autre avantage, vous disposez toujours d'une sauvegarde de vos paramètres.
 
 **Découvrez comment configurer à distance votre box OVHcloud depuis l'espace client.**
 
@@ -41,7 +41,7 @@ Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), c
 > [!primary]
 >
 > La désactivation de la configuration à distance n'écrase pas le paramétrage de votre box. Vous pourrez accéder localement au modem, sans perdre votre configuration actuelle.
-> Un nouveau mot de passe utilisateur vous sera communiqué par email. Il est possible qu'un redémarrage du modem soit nécessaire.
+> Un nouveau mot de passe utilisateur vous sera communiqué par e-mail. Il est possible qu'un redémarrage du modem soit nécessaire.
 >
 
 - Si vous souhaitez configurer votre modem localement sans utiliser l'outil de configuration à distance, vérifiez que la case `Configuration à distance activée` est bien décochée.
@@ -74,7 +74,7 @@ Depuis cette partie, vous obtenez la liste des équipements connectés sur le r�
 - son adresse IP locale ;
 - son nom diffusé sur le réseau. 
 
-Vous avez la possibilité d'actualiser cette liste en cliquant sur le bouton `Rafraîchir`{.action}.
+Vous pouvez actualiser cette liste en cliquant sur le bouton `Rafraîchir`{.action}.
 
 ![configureremotelybox](images/configure-remotely-box-step2.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Personnalisez alors les champs pour modifier la configuration du réseau Wi-Fi. 
 |Champ|Description|
 |---|---|
 |Activer le Wi-Fi|Utilisez les boutons « Oui » ou « Non » pour activer ou désactiver le réseau Wi-Fi.|
-|Identifiant de réseau ou SSID|Il s'agit du nom de votre réseau Wi-Fi. Celui-ci apparaîtra sur vos appareils lorsque vous afficherez la liste des réseaux disponibles. Vous avez la possibilité de personnaliser ce nom si vous le souhaitez.|
+|Identifiant de réseau ou SSID|Il s'agit du nom de votre réseau Wi-Fi. Celui-ci apparaîtra sur vos appareils lorsque vous afficherez la liste des réseaux disponibles. Vous pouvez personnaliser ce nom si vous le souhaitez.|
 |Visibilité du réseau|Permet de rendre visible ou de masquer la diffusion du nom du réseau Wi-Fi. Si vous décidez de le masquer, celui-ci n'apparaîtra plus dans la liste des réseaux disponibles sur vos appareils. Pour vous connecter une première fois à ce réseau, vous devrez le paramétrer manuellement sur vos appareils.|
 |Sécurité|Il s'agit du type de sécurité de votre réseau Wi-Fi. Pour une utilisation optimale, nous vous recommandons le `WPA3` si votre modem le supporte ou le `WPA2`.|
 |Clé Wi-Fi|Permet de changer la clé Wi-Fi par celle de votre choix. Vous devrez également la confirmer.|
@@ -126,7 +126,7 @@ Une fois la configuration de l'IP LAN modifiée, validez le changement avec le b
 
 - **Configurer le DHCP** : permet de personnaliser la configuration du serveur DHCP de votre box. Modifiez-la uniquement dans le cas d'une utilisation avancée de votre service.
 
-Pour cela, cliquez sur l'icône en forme de crayon à droite du tableau. Vous pouvez alors choisir d'activer ou de désactiver le DHCP sur votre box, par le biais d'une case à cocher. Si le DHCP est actif, vous avez la possibilité de paramétrer des éléments supplémentaires :
+Pour cela, cliquez sur l'icône en forme de crayon à droite du tableau. Vous pouvez alors choisir d'activer ou de désactiver le DHCP sur votre box, par le biais d'une case à cocher. Si le DHCP est actif, vous pouvez paramétrer des éléments supplémentaires :
 
 |Configuration|Description|
 |---|---|
@@ -208,7 +208,7 @@ Pour cela, choisissez dans la liste le fichier de configuration que vous souhait
 
 #### 2.5 Services
 
-Vous avez la possibilité dans cette partie d'activer ou de désactiver des services additionnels de votre box. Vous devrez alors utiliser le bouton d'activation à côté du service concerné. **Selon la box dont vous disposez, certains services de la liste ci-dessous peuvent ne pas être disponibles.**
+Vous pouvez dans cette partie d'activer ou de désactiver des services additionnels de votre box. Vous devrez alors utiliser le bouton d'activation à côté du service concerné. **Selon la box dont vous disposez, certains services de la liste ci-dessous peuvent ne pas être disponibles.**
 
 |Services|Description|
 |---|---|

@@ -14,17 +14,25 @@ Cambiar las variables de entorno necesarias para OpenStack en su equipo le permi
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Haber creado un usuario de OpenStack. Consulte [la guía dedicada a este tema](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 - Haber preparado el entorno para utilizar OpenStack. Para ello, consulte la siguiente guía: [«Preparar el entorno para utilizar la API de OpenStack»](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
 ### Paso 1: obtener las variables
 
 Para obtener sus variables de entorno, puede descargar el archivo OpenRC de su usuario OpenStack previamente creado.
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud.
 
 En el menú de la izquierda, haga clic en `Usuarios y roles`{.action} en **Ajustes**. A continuación, haga clic en `«...»`{.action} a la derecha de su usuario y seleccione `«Descargar el archivo RC de OpenStack»`{.action}.
 

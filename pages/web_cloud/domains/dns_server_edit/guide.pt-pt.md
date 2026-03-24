@@ -18,7 +18,18 @@ Consulte os nossos manuais "[Saber tudo sobre os servidores DNS](/pages/web_clou
 
 - Ser o titular de um [nome de domínio](/links/web/domains) registado na OVHcloud.
 - Ter as permissões [adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da [Área de Cliente OVHcloud](/links/manager).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >
@@ -45,26 +56,20 @@ No entanto, é essencial ter em conta os seguintes pontos:
 
 ### 1 - Aceder à gestão dos servidores DNS da OVHcloud <a name="access-dns-servers"></a>
 
-Para isso, clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
+Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> Selecione o separador `Servidores DNS`{.action} quando posicionado no domínio em questão.
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Aparecerá uma tabela com os servidores DNS atualmente definidos pela OVHcloud para o seu domínio. Vários servidores DNS podem estar listados, sendo que cada um deles possui a sua própria linha na tabela.
 >>
@@ -231,4 +236,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa [comunidade de utilizadores](/links/community). 
+Fale com nossa [comunidade de utilizadores](/links/community). 

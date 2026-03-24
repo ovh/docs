@@ -29,7 +29,17 @@ Poderá depois ir mais longe com o seu projeto Public Cloud em função das suas
 ## Requisitos
 
 - Um [projeto Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
-- Acesso à [área de cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Tire partido de preços reduzidos comprometendo-se com um período de 1 a 36 meses nos seus recursos Public Cloud. Mais informações na nossa página [Savings Plans](/links/public-cloud/savings-plan).
@@ -117,10 +127,6 @@ Pode armazenar as suas chaves SSH públicas na secção `Public Cloud`{.action} 
 > As chaves SSH públicas adicionadas à sua área de cliente OVHcloud estarão disponíveis para os serviços Public Cloud de todas as [regiões](/links/public-cloud/regions-pci). Pode armazenar chaves encriptadas com **RSA**, **ECDSA** e **ED25519**.
 >
 
-Aceda à [área de cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
-
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
-
 Abra `Chaves SSH`{.action} no menu à esquerda em **Parâmetros**. Clique no botão `Adicionar chave SSH`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
@@ -168,8 +174,6 @@ Para saber mais, consulte a [página Web das Local Zones](/links/public-cloud/lo
 >
 > Consulte a [etapa 1](#etapa-1-criar-um-conjunto-de-chaves-ssh) e a [etapa 2](#etapa-2-importar-as-chaves-ssh) deste guia se não tiver chaves SSH prontas a utilizar.
 >
-
-Aceda à [área de cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
 
 Na página **Página Inicial**, clique em `Criar uma instância`{.action}.
 
@@ -359,10 +363,6 @@ Tenha em conta que propomos meios de acesso alternativos (principalmente utiliza
 
 #### 5.1: Verificar o estado da instância na área de cliente
 
-Aceda à [área de cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
-
-![área de cliente](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
-
 Selecione `Instâncias`{.action} na barra de navegação à esquerda em **Compute**. A sua instância está pronta quando o estado está definido em `Ativado` na tabela. Se a instância tiver sido criada recentemente e tiver um estado diferente, clique no botão "Atualizar" junto do filtro de pesquisa.
 
 ![page instâncias](images/24-instance-connect01.png){.thumbnail}
@@ -485,10 +485,6 @@ O software livre e open source `Remmina Remote Desktop Client` está disponível
 #### 5.4: Acesso consola VNC
 
 A consola VNC permite-lhe ligar-se às suas instâncias mesmo quando não estão disponíveis outros meios de acesso.
-
-Aceda à [área de cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
-
-![área de cliente](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
 Selecione `Instâncias`{.action} na barra de navegação à esquerda em **Compute**. Clique no nome da instância e abra o separador `Consola VNC`{.action}.
 

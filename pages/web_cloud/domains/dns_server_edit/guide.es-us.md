@@ -18,7 +18,18 @@ Para más información, consulte nuestras guías "[Todo sobre los servidores DNS
 
 - Ser el titular de un [nombre de dominio](/links/web/domains) registrado en OVHcloud.
 - Disponer de los permisos necesarios [para gestionar](/pages/account_and_service_management/account_information/managing_contacts) para el nombre de dominio desde el [área de cliente de OVHcloud](/links/manager).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >
@@ -45,26 +56,20 @@ Sin embargo, es importante tener en cuenta lo siguiente:
 
 ### 1 - Acceder a la gestión de los servidores DNS de OVHcloud <a name="access-dns-servers"></a>
 
-Para ello, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Abra la pestaña `Servidores DNS`{.action} y seleccione el dominio correspondiente.
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Se mostrará una tabla con los servidores DNS actualmente definidos por OVHcloud para su nombre de dominio. Es posible mostrar varios servidores DNS, cada uno con su propia fila en la tabla.
 >>
@@ -231,4 +236,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
  
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra [comunidad de usuarios](/links/community).

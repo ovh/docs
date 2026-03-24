@@ -22,6 +22,17 @@ Większość naszych pakietów hostingowych [hosting](/links/web/hosting) zawier
 - Posiadanie aktywnego [hostingu OVHcloud](/links/web/hosting), który zawiera jedną (lub więcej) współdzieloną(e) bazę(e) danych OVHcloud.
 - Usunięcie bazy danych musi nastąpić przed upływem 30 dni.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
 
 Udostępniamy API OVHcloud, dzięki któremu programiści lub integratorzy mogą łączyć na przykład funkcje dostępne lub niedostępne w Panelu klienta OVHcloud bezpośrednio ze swoimi aplikacjami lub rozwiązaniami.

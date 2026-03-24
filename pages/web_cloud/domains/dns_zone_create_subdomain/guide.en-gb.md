@@ -74,28 +74,32 @@ The subdomain will then have its own zone to configure its DNS records.
 
 - You can administrate the domain name on which the chosen subdomain will depend.
 - The concerned subdomain must not already have an active or inactive DNS zone with OVHcloud or be the subject of an ongoing operation or order with OVHcloud.
-- You have access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instructions
 
 ### 1 - Create the DNS zone via the OVHcloud Control Panel
 
-Click on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Go to the [DNS zones](/links/control-panel/web-dns-zone) page, then on the `Order`{.action} button.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Step 2**
->>
->> Click on the `DNS Zones`{.action} menu, then on the `Order`{.action} button.
->>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
->>
-> **Step 3**
 >>
 >> On the page that appears, enter the subdomain (for example: *sub.domain.tld*) for which you want to create an OVHcloud DNS zone. Wait a few moments while the tool performs checks on the subdomain.
 >>
@@ -103,7 +107,7 @@ Click on the tabs below to view each of the **4** steps.
 >>
 >> If a message indicates that the DNS zone cannot be created, check that the subdomain meets the necessary requirements or contact the person who manages it. Once everything is correct, try the operation again.
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> Once the verification is complete, choose whether to enable the minimum records for the DNS zone you are going to create. This choice is not definitive, as you can always [edit DNS zone records](/pages/web_cloud/domains/dns_zone_edit) later.
 >>
@@ -124,7 +128,7 @@ To edit this DNS zone, please read our guide on [Editing a DNS zone at OVHcloud]
 
 > [!primary]
 >
-> If you have just created the DNS zone and the subdomain does not yet appear in your list of services (under `DNS zones`{.action} in the `Web Cloud`{.action} section of the OVHcloud Control Panel), wait 15 to 20 minutes, then reload the page.
+> If you have just created the DNS zone and the subdomain does not yet appear in your list of services, wait 15 to 20 minutes, then reload the page.
 
 ### 3 - Declare the DNS servers in the active DNS zone of the domain name on which the chosen subdomain depends
 
@@ -132,22 +136,16 @@ The activation of a DNS zone for a subdomain differs from that of a domain name,
 
 You must first retrieve the names of the **DNS servers** associated with the DNS zone created for your subdomain.
 
-To find them, click on the tabs below to view each of the **3** steps.
+To find them, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click on the `DNS Zones`{.action} menu, then select the concerned subdomain.
+>> Go to the [DNS zones](/links/control-panel/web-dns-zone) page, then choose the subdomain concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the table on the page that appears, locate the two **Type** and **Target** columns.
 >>
@@ -166,34 +164,28 @@ Once the two DNS server names are retrieved, two situations are possible:
 
 /// details | The domain name on which your subdomain depends has its active DNS zone with OVHcloud
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click on the `DNS Zones`{.action} menu, then select the concerned subdomain.
+>> Go to the [DNS zones](/links/control-panel/web-dns-zone) page, then choose the subdomain concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the right or below the table, click on `Add an entry`{.action}.
 >>
 >> ![dns zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the window that opens, select the DNS record of type `NS`{.action}, then click on `Next`{.action}
 >>
 >> ![dns zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> Then, in the `Sub-domain *` field, enter the concerned subdomain (for example: `sub` for the subdomain `sub.domain.tld`), and in the `Target *` field, one of the two previously retrieved DNS servers (for example: `nsXX.ovh.net`).
 >>
@@ -259,4 +251,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community). 
+Join our [community of users](/links/community). 

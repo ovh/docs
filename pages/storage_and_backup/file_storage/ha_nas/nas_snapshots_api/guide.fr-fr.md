@@ -43,113 +43,60 @@ Par défaut, un snapshot de vos données a lieu toutes les heures et est sauvega
 
 Pour afficher la planification de snapshot automatique active, utilisez la route suivante :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
 
 ### Ajout d'un intervalle de snapshot automatique
 
 Pour créer des snapshots automatiques supplémentaires à une fréquence sélectionnée, utilisez la route suivante :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->> >
->> > **snapshotType** *
->> >
->> >> Une fréquence pour le snapshot : *day-1*, *day-2*, *day-3*, *day-7*, *hour-1*, ou *hour-6*
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
+| `snapshotType` | Yes | Une fréquence pour le snapshot : *day-1*, *day-2*, *day-3*, *day-7*, *hour-1*, ou *hour-6* |
 
 ### Récupération des informations sur les snapshots automatiques
 
 Pour récupérer les détails d'un snapshot automatique, utilisez la route suivante :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->> >
->> > **snapshotType** *
->> >
->> >> La fréquence de snapshot concernée : *day-1*, *day-2*, *day-3*, *day-7*, *hour-1*, ou *hour-6*
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
+| `snapshotType` | Yes | La fréquence de snapshot concernée : *day-1*, *day-2*, *day-3*, *day-7*, *hour-1*, ou *hour-6* |
 
 ### Suppression d'un intervalle de snapshot automatique
 
 Utilisez la route suivante pour supprimer une fréquence de snapshot automatique :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->> >
->> > **snapshotType** *
->> >
->> >> La fréquence de snapshot concernée : *day-1*, *day-2*, *day-3*, *day-7*, *hour-1*, ou *hour-6*
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
+| `snapshotType` | Yes | La fréquence de snapshot concernée : *day-1*, *day-2*, *day-3*, *day-7*, *hour-1*, ou *hour-6* |
 
 Vous pouvez également utiliser des snapshots instantanés avec votre NAS-HA (snapshots personnalisés) via les endpoints suivants.
 
@@ -157,117 +104,61 @@ Vous pouvez également utiliser des snapshots instantanés avec votre NAS-HA (sn
 
 Utilisez la route suivante pour récupérer des snapshots personnalisés existants :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
 
 ### Création d'un snapshot personnalisé
 
 Pour ajouter un snapshot manuel, utilisez la route suivante :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->> >
->> > **expiration**
->> >
->> >> Une date d'expiration facultative, par exemple : 2022-06-24 (ISO 8601)
->> >
->> > **name** *
->> >
->> >> Nom du snapshot.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
+| `expiration` |  | Une date d'expiration facultative, par exemple : 2022-06-24 (ISO 8601) |
+| `name` | Yes | Nom du snapshot. |
 
 ### Récupération des informations d'un snapshot personnalisé
 
 Pour afficher les détails d'un snapshot personnalisé, utilisez la route suivante :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->> >
->> > **name** *
->> >
->> >> Le nom du snapshot
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
+| `name` | Yes | Le nom du snapshot |
 
 ### Suppression d'un snapshot personnalisé
 
 Utilisez la route suivante pour supprimer un snapshot personnalisé :
 
-> [!faq]
+> [!api]
 >
-> API :
+> @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
->> >
->>
->
-> Paramètres :
->
->> > **serviceName** *
->> >
->> >> Le nom interne de votre service NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nom de la partition
->> >
->> > **name** *
->> >
->> >> Le nom du snapshot
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Le nom interne de votre service NAS-HA |
+| `partitionName` | Yes | Nom de la partition |
+| `name` | Yes | Le nom du snapshot |
 
 ##### **Restauration de snapshots**
 
