@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Find the most frequently asked questions about OVHcloud Public Cloud services
-updated: 2025-06-17
+updated: 2026-03-24
 ---
 
 <style>
@@ -157,12 +157,13 @@ You can also find all the details in the [OpenStack documentation](https://docs.
 
 To prevent your emails from being marked as spam, you need to configure your infrastructure correctly.
 
-This includes, in particular:
+This includes:
+
 - email authentication (SPF, DKIM, DMARC),
 - reverse DNS (PTR) configuration,
 - adherence to email providers’ best practices.
 
-For more details, see our dedicated guide: [How to prevent your emails from being marked as spam](bare_metal_cloud/dedicated_servers/mail_sending_optimization)
+For more details, see our dedicated guide: [How to prevent your emails from being marked as spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 ///
 

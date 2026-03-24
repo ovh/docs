@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Encontre as perguntas mais frequentes sobre os serviços Public Cloud da OVHcloud
-updated: 2025-06-17
+updated: 2026-03-24
 ---
 
 <style>
@@ -148,6 +148,20 @@ Dependendo das suas necessidades, terá de desativar a função de `Port Securit
 Pode consultar o guia de [gestão das regras de firewall e port security nas redes que utilizam OpenStack CLI](/pages/public_cloud/public_cloud_cross_functional/security_group_private_network).
 
 Também pode consultar todos os detalhes sobre [documentação OpenStack](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) ou sobre [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
+
+///
+
+/// details | Quais são as boas práticas para o envio de e-mails a partir de uma instância Public Cloud?
+
+Para evitar que os seus e-mails sejam considerados como spam, deve configurar corretamente a sua infraestrutura.
+
+Isto inclui:
+
+- a autenticação dos e-mails (SPF, DKIM, DMARC),
+- a configuração do reverse DNS (PTR),
+- o cumprimento das boas práticas dos fornecedores de correio eletrónico.
+
+Para mais informações, consulte o nosso guia dedicado: [Como evitar que os seus e-mails sejam marcados como spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud VPS FAQ"
 excerpt: "Find the answers to the most frequently asked questions about our VPS offers"
-updated: 2025-10-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -234,11 +234,12 @@ However, for specific software configuration assistance, we recommend reaching o
 To prevent your emails from being marked as spam, you need to configure your server correctly.
 
 This includes:
+
 - email authentication (SPF, DKIM, DMARC),
 - reverse DNS (PTR) configuration,
 - following email providers’ best practices.
 
-For more details, see our dedicated guide: [How to prevent your emails from being marked as spam](bare_metal_cloud/dedicated_servers/mail_sending_optimization)
+For more details, see our dedicated guide: [How to prevent your emails from being marked as spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 ///
 

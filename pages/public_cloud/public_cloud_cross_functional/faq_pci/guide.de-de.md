@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Hier finden Sie die am häufigsten gestellten Fragen zu den OVHcloud Public Cloud Diensten
-updated: 2025-06-17
+updated: 2026-03-24
 ---
 <style>
 details>summary {
@@ -154,6 +154,19 @@ Weitere Informationen finden Sie in der [OpenStack Dokumentation](https://docs.o
 
 ///
 
+/// details | Was sind die Best Practices für den E-Mail-Versand von einer Public Cloud Instanz?
+
+Um zu verhindern, dass Ihre E-Mails als Spam eingestuft werden, müssen Sie Ihre Infrastruktur korrekt konfigurieren.
+
+Dazu gehören:
+
+- E-Mail-Authentifizierung (SPF, DKIM, DMARC),
+- Konfiguration des Reverse DNS (PTR),
+- Einhaltung der Best Practices der E-Mail-Anbieter.
+
+Weitere Informationen finden Sie in unserer Anleitung: [Wie Sie verhindern, dass Ihre E-Mails als Spam markiert werden](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
+
+///
 
 ### Sicherheit
 
