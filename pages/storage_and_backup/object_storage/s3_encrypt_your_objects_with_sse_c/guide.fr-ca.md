@@ -48,6 +48,17 @@ Notre objectif est vous aider à choisir le meilleur type de chiffrement pour vo
 
 Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## En pratique
 
 L'utilisation du chiffrement côté serveur avec des clés de chiffrement fournies par le client (SSE-C) vous permet de définir vos propres clés de chiffrement.
@@ -252,9 +263,7 @@ Attention de ne pas inclure de headers de chiffrement spécifiques lors du tél�
 >> Cela va configurer le bucket pour utiliser le chiffrement SSE-OMK avec les clés gérées par Object Storage (AES256) pour tous les nouveaux objets.
 >>
 > Avec l'espace client OVHcloud
->> Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Object Storage`{.action} dans le menu de gauche.
->>
->> Sélectionnez ensuite le bucket Object Storage concerné, puis dans le menu d'informations, cliquez sur `Activer le chiffrement`{.action}.
+>> Sélectionnez le bucket Object Storage concerné, puis dans le menu d’informations, cliquez sur `Activer le chiffrement`{.action}.
 >>
 >> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
 >>

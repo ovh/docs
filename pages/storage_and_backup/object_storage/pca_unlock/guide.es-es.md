@@ -16,17 +16,26 @@ Para los datos que no se consulten con frecuencia, es necesaria una solicitud de
 
 ## Requisitos
 
-- Deshielo desde el Panel de configuración de OVHcloud:
-    - Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 - Deshielo en python-swiftclient:
     - [Preparar el entorno para utilizar la API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) instalando python-swiftclient.
     - [Cargar las variables de entorno OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
 ### Descongelar los objetos desde el Panel de configuración
 
-En el [Panel de configuración de OVHcloud](/links/manager), abra la pestaña `Public Cloud`{.action}, seleccione su proyecto de Public Cloud y haga clic en el menú de la izquierda en `Cloud Archive`{.action}.
+Haga clic en el menú de la izquierda en `Cloud Archive`{.action}.
 
 Para descongelar un archivo comprimido, haga clic en el botón `...`{.action} a la derecha de este y luego en `Descongelar`{.action} para iniciar el proceso de recuperación.
 

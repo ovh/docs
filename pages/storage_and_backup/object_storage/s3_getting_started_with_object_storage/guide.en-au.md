@@ -37,8 +37,18 @@ This guide helps you manage your buckets and objects.
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Object Storage user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -159,7 +169,7 @@ For a list of endpoints by region and storage class, refer to [this page](/pages
 
 /// details | Using the OVHcloud Control Panel
 
-To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. 
+To manage an Object Storage bucket, navigate to `Object Storage`{.action} in the left-hand menu.
 
 ///
 

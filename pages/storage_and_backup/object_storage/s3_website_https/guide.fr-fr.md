@@ -23,7 +23,17 @@ Pour activer le HTTPS, vous avez besoin de :
 - Un [nom de domaine](/links/web/domains).
 - Commander un certificat TLS associé à votre nom de domaine chez OVHcloud (facultatif si vous disposez déjà d’un certificat TLS de confiance associé à votre nom de domaine).
 - Vous devez [activer l'hébergement sur votre bucket Object Storage](/pages/storage_and_backup/object_storage/s3_website).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -31,7 +41,7 @@ Pour activer le HTTPS, vous avez besoin de :
 
 #### Étape 1.1 - Ajouter votre certificat
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Load Balancer`{.action}.
+Cliquez sur `Load Balancer`{.action}.
 
 Sélectionnez votre Load Balancer dans la liste, cliquez sur l'onglet `Certificats SSL`{.action} puis sur `Ajouter un certificat SSL`{.action}.
 
