@@ -25,7 +25,7 @@ Stellen Sie eine Remote Desktop (RDP) Verbindung zu Ihrem Server her.
 
 Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie `Ausführen`{.action}.
 
-![Windows-Startmenü mit Option „Ausführen“](images/raid-soft-windows-01.png){.thumbnail}
+![Windows-Startmenü mit Option "Ausführen"](images/raid-soft-windows-01.png){.thumbnail}
 
 Geben Sie "cmd" ein und klicken Sie auf `OK`{.action}.
 

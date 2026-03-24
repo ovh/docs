@@ -49,7 +49,7 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 
 Klicken Sie auf den Tab `Additional IP`{.action}.
 
-![Tab „Additional IP“ im Kundencenter](images/manageIPs2022.png){.thumbnail}
+![Tab "Additional IP" im Kundencenter](images/manageIPs2022.png){.thumbnail}
 
 Suchen Sie nun in der Liste nach Ihrer Additional IP (oder Ihrem Block) und klicken Sie auf den Button `...`{.action}, um die Optionen anzuzeigen.
 
@@ -64,7 +64,7 @@ Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen S
 > **Name der virtuellen Maschine**: Das ist der gewünschte Name für die virtuelle MAC-Adresse, damit das IP/MAC-Paar später einfacher gefunden werden kann.
 >
 
-![Dialog „Virtuelle MAC hinzufügen“ mit Typ und VM-Name](images/addvmac2.png){.thumbnail}
+![Dialog "Virtuelle MAC hinzufügen" mit Typ und VM-Name](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >

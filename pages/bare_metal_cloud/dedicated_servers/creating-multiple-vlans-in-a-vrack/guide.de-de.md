@@ -368,7 +368,7 @@ Klicken Sie dann mit der rechten Maustaste auf das Netzwerkinterface und wählen
 
 Erstellen Sie anschließend ein neues Team, indem Sie ein Netzwerkinterface auswählen und im Feld "**Teamname**" einen Teamnamen eingeben. Wenn Sie damit fertig sind, bestätigen Sie mit `OK`{.action}.
 
-![Dialog „Neues Team“ mit Teamname und OK-Schaltfläche](images/vrack2-windows-02.png){.thumbnail}
+![Dialog "Neues Team" mit Teamname und OK-Schaltfläche](images/vrack2-windows-02.png){.thumbnail}
 
 Geben Sie nun das VLAN-Tag an. Klicken Sie im "**NIC-Teamvorgang**"-Fenster im Panel "**ADAPTER UND SCHNITTSTELLEN**", Gehen Sie zur Registerkarte `Teamschnittstellen`{.action} und mit der rechten Maustaste auf das Interface, das Sie gerade zum neuen Team hinzugefügt haben, und klicken Sie dann auf `Eigenschaften`{.action}. Klicken Sie jetzt auf `Spezifisches VLAN`{.action} und geben Sie den Tag ein:
 
@@ -380,7 +380,7 @@ Konfigurieren Sie nun die IP-Adresse des VLANs. Öffnen Sie hierzu über das Sta
 
 Klicken Sie auf `Netzwerk und Internet`{.action}:
 
-![Systemsteuerung mit Kategorie „Netzwerk und Internet“](images/vrack2-windows-05.png){.thumbnail}
+![Systemsteuerung mit Kategorie "Netzwerk und Internet"](images/vrack2-windows-05.png){.thumbnail}
 
 Klicken Sie dann auf `Netzwerk- und Freigabecenter`{.action}:
 

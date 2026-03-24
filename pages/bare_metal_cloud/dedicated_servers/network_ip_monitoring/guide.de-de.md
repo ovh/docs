@@ -69,7 +69,7 @@ Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](/links/manager) und
 
 Sie können den Monitoring-Status eines Servers vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
-![Monitoring-Status im Tab „Allgemeine Informationen“ des Servers](images/monitoring-server.png){.thumbnail}
+![Monitoring-Status im Tab "Allgemeine Informationen" des Servers](images/monitoring-server.png){.thumbnail}
 
 Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster haben Sie drei Optionen für das Überwachungsverhalten:
 

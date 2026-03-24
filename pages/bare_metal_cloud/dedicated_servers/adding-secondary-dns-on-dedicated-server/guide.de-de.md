@@ -43,7 +43,7 @@ Wenn Sie Ihren dedizierten Server als DNS-Server konfigurieren, können Sie den 
 
 Wechseln Sie zum Tab `Sekundärer DNS`{.action} und klicken Sie auf den Button `Domain hinzufügen`{.action}.
 
-![Tab „Sekundärer DNS“ mit Schaltfläche Domain hinzufügen](images/cp-01.png){.thumbnail}
+![Tab "Sekundärer DNS" mit Schaltfläche Domain hinzufügen](images/cp-01.png){.thumbnail}
 
 Geben Sie Ihre IP-Adresse und den hinzuzufügenden Domainnamen ein und klicken Sie dann auf `Weiter`{.action}.
 

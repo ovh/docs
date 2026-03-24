@@ -142,7 +142,7 @@ Der Neustart von IPMI dauert einige Minuten.
 
 Um zu beginnen, öffnen Sie [IPMI über Java-Applet](#applet-java) in Ihrem [OVHcloud Kundencenter](/links/manager). Klicken Sie anschließend im Menü auf `Device`{.action} und wählen Sie im Drop-down-Menü `Redirect ISO`{.action} aus.
 
-![Option „ISO umleiten“ im Gerätemenü](images/RedirectISO.jpg){.thumbnail}
+![Option "ISO umleiten" im Gerätemenü](images/RedirectISO.jpg){.thumbnail}
 
 Wählen Sie dann die ISO im Dateisystem Ihres lokalen Computers aus. Wenn Sie die ISO-Datei ausgewählt haben, klicken Sie auf `Ctrl Alt Del`{.action} in der oberen rechten Ecke des Bildschirms, um den Server neu zu starten. Tippen Sie auf die Taste `F`, um auf die Startoptionen zuzugreifen.
 
@@ -164,7 +164,7 @@ Folgen Sie den notwendigen Schritten für die Installation des Betriebssystems. 
 
 Um zu beginnen, öffnen Sie [IPMI mit einem Java-Applet](#applet-java) über Ihr [OVHcloud Kundencenter](/links/manager). Klicken Sie dann auf `Virtual Media`{.action} und auf `Virtual Storage`{.action}.
 
-![Option „Virtual Storage“ im Virtual Media Menü](images/virtual_storage.png){.thumbnail}
+![Option "Virtual Storage" im Virtual Media Menü](images/virtual_storage.png){.thumbnail}
 
 Wählen Sie im angezeigten Fenster `ISO File` aus der Drop-down-Liste "Logical Drive Type". Klicken Sie anschließend auf `Open Image`{.action} und navigieren Sie zu Ihrer ISO-Datei. Klicken Sie abschließend auf `Plug-in`{.action} und `OK`{.action}.
 
@@ -172,7 +172,7 @@ Wählen Sie im angezeigten Fenster `ISO File` aus der Drop-down-Liste "Logical D
 
 Um von Ihrer ISO-Datei aus zu starten müssen Sie auf das BIOS zugreifen und die Startoptionen ändern. Klicken Sie hierzu auf `Power Control`{.action} und dann auf `Set Power Reset`{.action}.
 
-![Power Control Menü mit Option „Set Power Reset“](images/power_reset.png){.thumbnail}
+![Power Control Menü mit Option "Set Power Reset"](images/power_reset.png){.thumbnail}
 
 > [!primary]
 > Möglicherweise müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die Option `Virtual Media`{.action}. Wählen Sie dann `Virtual Keyboard`{.action} im Drop-down-Menü aus.
@@ -180,7 +180,7 @@ Um von Ihrer ISO-Datei aus zu starten müssen Sie auf das BIOS zugreifen und die
 
 Klicken Sie auf die `ENTF` Taste während des Startvorgangs, um zum BIOS-Interface zu gelangen. Sie können auch die Taste `F11` drücken und auf das BIOS zugreifen, indem Sie die Option `Enter Setup`{.action} auswählen.
 
-![Server-Boot-Menü mit Option „Enter Setup“](images/boot_menu.png){.thumbnail}
+![Server-Boot-Menü mit Option "Enter Setup"](images/boot_menu.png){.thumbnail}
 
 Gehen Sie im BIOS zum Tab `Boot`{.action} und ändern Sie die `UEFI Boot Order #1` zu `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
 
@@ -205,11 +205,11 @@ Hier haben Sie Zugriff auf die gleichen Informationen und Funktionen wie in den 
 
 Klicken Sie auf den Button `Browse File`{.action} und wählen Sie Ihre Image-Datei aus.
 
-![Schaltfläche „Datei durchsuchen“ in der KVM-Webkonsole](images/kvm_install01.png){.thumbnail}
+![Schaltfläche "Datei durchsuchen" in der KVM-Webkonsole](images/kvm_install01.png){.thumbnail}
 
 Klicken Sie auf `Start Media`{.action}. Dadurch wird die ISO-Datei für den Installationsprozess vorbereitet.
 
-![Schaltfläche „Start Media“ zur Vorbereitung der ISO](images/kvm_install02.png){.thumbnail}
+![Schaltfläche "Start Media" zur Vorbereitung der ISO](images/kvm_install02.png){.thumbnail}
 
 Die nun angezeigte Dateigröße ist nicht die echte Größe. Das ist normal, denn die Datei wird in diesem Schritt nicht vollständig übertragen.
 
@@ -217,7 +217,7 @@ Die nun angezeigte Dateigröße ist nicht die echte Größe. Das ist normal, den
 
 Klicken Sie auf `Power`{.action} und wählen Sie `Reset Server`{.action} im Drop-down-Menü aus.
 
-![Power-Menü mit Option „Reset Server“ in KVM](images/kvm_install04.png){.thumbnail}
+![Power-Menü mit Option "Reset Server" in KVM](images/kvm_install04.png){.thumbnail}
 
 Warten Sie, bis die Anzeige zur Start-Auswahl erscheint, und drücken Sie die entsprechende Taste, um in das Boot-Menü zu gelangen (`F11` in diesem Beispiel).
 

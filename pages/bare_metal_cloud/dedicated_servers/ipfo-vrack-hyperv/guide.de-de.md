@@ -35,7 +35,7 @@ Installieren Sie zunächst die Rolle "Hyper-V".
 
 Klicken Sie im Server Manager auf `Add roles and features`{.action}.
 
-![Server Manager Dashboard mit Link „Rollen und Features hinzufügen“](images/add-roles-features.png){.thumbnail}
+![Server Manager Dashboard mit Link "Rollen und Features hinzufügen"](images/add-roles-features.png){.thumbnail}
 
 Klicken Sie im Assistenten auf `Next`{.action}, um zur nächsten Seite zu gelangen.
 
@@ -87,7 +87,7 @@ Sobald der Server neu gestartet ist, loggen Sie sich ein und öffnen Sie den Hyp
 
 Wählen Sie links Ihren Server aus, klicken Sie auf `New`{.action} und wählen Sie "Virtual Machine" im Kontextmenü aus.
 
-![Hyper-V Manager mit Option „Neuer virtueller Computer“](images/create-vm.png){.thumbnail}
+![Hyper-V Manager mit Option "Neuer virtueller Computer"](images/create-vm.png){.thumbnail}
 
 Konfigurieren Sie die VM in "New Virtual Machine Wizard", wie Sie möchten. Wenn Sie den Schritt "Configure Networking" erreichen, wählen Sie den virtuellen Switch aus. Klicken Sie anschließend auf `Next`{.action}, um fortzufahren.
 

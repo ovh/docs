@@ -271,7 +271,7 @@ System is going down for reboot NOW!
 
 Gehen Sie im [OVHcloud Kundencenter](/links/manager) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
 
-![Öffnen einer KVM-Sitzung über den Tab „IPMI“](images/adminpw_win_03.png){.thumbnail}
+![Öffnen einer KVM-Sitzung über den Tab "IPMI"](images/adminpw_win_03.png){.thumbnail}
 
 #### Schritt 5.1: Neuere Version von Windows
 

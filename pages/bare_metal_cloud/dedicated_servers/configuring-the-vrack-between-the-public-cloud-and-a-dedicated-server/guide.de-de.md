@@ -86,7 +86,7 @@ Gehen Sie zum Tab `Public Cloud`{.action} und klicken Sie dann im linken Menü u
 
 Klicken Sie auf `Privates Netzwerk hinzufügen`{.action}.
 
-![Bereich „Privates Netzwerk“ mit Schaltfläche Privates Netzwerk hinzufügen](images/vrack2022-03.png){.thumbnail}
+![Bereich "Privates Netzwerk" mit Schaltfläche Privates Netzwerk hinzufügen](images/vrack2022-03.png){.thumbnail}
 
 Auf der nächsten Seite können Sie mehrere Einstellungen anpassen.
 

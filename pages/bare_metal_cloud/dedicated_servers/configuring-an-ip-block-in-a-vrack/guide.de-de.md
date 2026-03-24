@@ -346,7 +346,7 @@ Anschließend müssen wir die Eigenschaften prüfen:
 
 Wir müssen die Option ```Use the following IP address``` auswählen:
 
-![Option „Folgende IP-Adresse verwenden“ auswählen](images/win-ip-vrack-4.png){.thumbnail}
+![Option "Folgende IP-Adresse verwenden" auswählen](images/win-ip-vrack-4.png){.thumbnail}
 
 Und wir können schließlich die IP-Informationen festlegen:
 

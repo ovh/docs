@@ -139,11 +139,11 @@ Melden Sie sich zunächst bei Ihrem So you Start Kundencenter an und klicken Sie
 
 Klicken Sie auf das Zahnrad neben der entsprechenden IP und wählen Sie `Failover IP umziehen`{.action}.
 
-![Option „Failover-IP umziehen“ im So you Start Menü](images/move-ip-sys.png){.thumbnail}
+![Option "Failover-IP umziehen" im So you Start Menü](images/move-ip-sys.png){.thumbnail}
 
 Wählen Sie `Auf eine OVH-Dienstleistung umziehen`{.action}, geben Sie Ihre OVHcloud Kundenkennung, auch "NIC-handle" ein und klicken Sie auf `Weiter`{.action}.
 
-![Option „Zu einem OVH-Dienst umziehen“ und NIC-Handle eingeben](images/move-to-ovh.png){.thumbnail}
+![Option "Zu einem OVH-Dienst umziehen" und NIC-Handle eingeben](images/move-to-ovh.png){.thumbnail}
 
 Dadurch wird ein Code (Token) generiert. Speichern Sie diesen.
 
@@ -172,7 +172,7 @@ Im nächsten Fenster wird die Dauer automatisch ausgewählt und die Gebühr ange
 
 Markieren Sie `Ich akzeptiere die Verträge`{.action}, um den Dienstleistungsbedingungen zuzustimmen, sobald Sie sie gelesen haben. Klicken Sie dann auf `Weiter`{.action}.
 
-![Kontrollkästchen „Verträge akzeptieren“ für den IP-Transfer](images/Step-4.png){.thumbnail}
+![Kontrollkästchen "Verträge akzeptieren" für den IP-Transfer](images/Step-4.png){.thumbnail}
 
 Beachten Sie die Bestellübersicht und klicken Sie auf `Bestätigen`{.action}.
 

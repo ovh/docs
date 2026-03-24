@@ -72,7 +72,7 @@ df -h
 
 Klicken Sie im Bereich **Allgemeine Informationen** auf `...`{.action} neben `Boot`. Wählen Sie dann `Bearbeiten`{.action}, um den Startmodus zu ändern.
 
-![Boot-Einstellung im Tab „Allgemeine Informationen“ bearbeiten](images/rescue_mode_raid0_1.png){.thumbnail}
+![Boot-Einstellung im Tab "Allgemeine Informationen" bearbeiten](images/rescue_mode_raid0_1.png){.thumbnail}
 
 Klicken Sie auf `Im Rescue-Modus booten`{.action} und wählen Sie `rescue-customer`{.action} aus.
 
@@ -88,7 +88,7 @@ Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action} rechts nebe
 
 Wählen Sie `Neu starten`{.action} aus, um den Server im Rescue-Modus zu starten. Die Durchführung dieser Operation kann einige Minuten dauern. 
 
-![Server im Bereich „Dienststatus“ neu starten](images/server_installation_raid0_6.png){.thumbnail}
+![Server im Bereich "Dienststatus" neu starten](images/server_installation_raid0_6.png){.thumbnail}
 
 Sobald Ihr Server neu gestartet wurde, loggen Sie sich via SSH unter Verwendung Ihrer Zugangsdaten zum Rescue-Modus ein. Diese wurden Ihnen an die Haupt-E-Mail-Adresse des Kunden-Accounts oder gegebenenfalls an die zuvor angegebene E-Mail-Adresse gesendet.
 

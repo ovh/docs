@@ -42,7 +42,7 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 
 Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup aktivieren`{.action}.
 
-![Schaltfläche Backup Storage aktivieren auf dem Tab „Backup Storage“](images/backup-storage01.png){.thumbnail}
+![Schaltfläche Backup Storage aktivieren auf dem Tab "Backup Storage"](images/backup-storage01.png){.thumbnail}
 
 Klicken Sie im angezeigten Kontextmenü auf `Bestätigen`{.action}.
 
@@ -58,7 +58,7 @@ Der Zugriff auf Ihren Speicherplatz ist per IP-Adresse mithilfe einer Zugriffsko
 
 Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
-![Schaltfläche Zugriff hinzufügen auf dem Tab „Backup Storage“](images/backup-storage03.png){.thumbnail}
+![Schaltfläche Zugriff hinzufügen auf dem Tab "Backup Storage"](images/backup-storage03.png){.thumbnail}
 
 Wählen Sie den IP-Block aus, den Sie autorisieren möchten. Wählen Sie danach die freizugebenden Protokolle aus und klicken Sie auf `Weiter`{.action}.
 

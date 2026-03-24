@@ -52,7 +52,7 @@ Für eine optimale Leistung sollte eine Region so nah wie möglich an den Benutz
 
 Wechseln Sie zum Tab `3-AZ Cluster`{.action}.
 
-![Tab „3-AZ Cluster“ mit verfügbaren Clustern](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+![Tab "3-AZ Cluster" mit verfügbaren Clustern](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Klicken Sie auf den Cluster-Namen in der Tabelle, um die Details anzuzeigen.
 
@@ -60,7 +60,7 @@ Klicken Sie auf den Cluster-Namen in der Tabelle, um die Details anzuzeigen.
 
 Klicken Sie auf den Tab `Nodes`{.action}, um die Serverliste des Clusters zu öffnen.
 
-![Tab „Nodes“ mit der Liste der Server im Cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Tab "Nodes" mit der Liste der Server im Cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Durch Klicken auf einen Server-/Knotennamen in dieser Liste öffnet sich der Tab `Allgemeine Informationen`{.action} des Servers. Einzelheiten zu diesem Bereich finden Sie in unserer Anleitung:
 

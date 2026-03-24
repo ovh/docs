@@ -46,7 +46,7 @@ Klicken Sie im Kundencenter-Bereich `Meine Dienste` auf `SSH-Schlüssel`{.action
 
 Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action} und wählen Sie `Dedicated`{.action} aus dem Menü.
 
-![Menü SSH-Schlüssel hinzufügen mit Option „Dedicated“](images/importkey2.png){.thumbnail}
+![Menü SSH-Schlüssel hinzufügen mit Option "Dedicated"](images/importkey2.png){.thumbnail}
 
 Geben Sie im neuen Fenster im ersten Feld eine Bezeichnung für den Schlüssel ein.  
 Kopieren Sie die gesamte Zeichenfolge des öffentlichen Schlüssels und fügen Sie sie in das zweite Feld ein.

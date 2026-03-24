@@ -119,7 +119,7 @@ Klicken Sie auf `OK`{.action}, um das Fenster zu schließen, und erneut auf `OK`
 
 Gehen Sie im Server Manager zum `Dashboard`{.action} und klicken Sie auf `Add Roles and Features`{.action}.
 
-![Server Manager Dashboard mit „Rollen und Features hinzufügen“](images/install_roles_1.png){.thumbnail}
+![Server Manager Dashboard mit "Rollen und Features hinzufügen"](images/install_roles_1.png){.thumbnail}
 
 Folgen Sie dem Assistenten bis zum Abschnitt "Server Roles". Wählen Sie dann `Hyper-V` und `Remote Access` aus.
 
@@ -149,7 +149,7 @@ New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoT
 
 Öffnen Sie die neue Anwendung "Routing and Remote Access" und rechtsklicken Sie auf Ihren Server. Klicken Sie hier auf `Configure and Enable Routing and Remote Access`{.action}.
 
-![RRAS-Konsole mit Option „Konfigurieren und aktivieren“](images/configure_rras_1.png){.thumbnail}
+![RRAS-Konsole mit Option "Konfigurieren und aktivieren"](images/configure_rras_1.png){.thumbnail}
 
 Wählen Sie `Custom configuration` aus und klicken Sie auf `Next`{.action}.
 

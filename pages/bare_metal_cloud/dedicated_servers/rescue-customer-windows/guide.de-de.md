@@ -68,7 +68,7 @@ Klicken Sie auf den Namen Ihres Servers, um den Tab `Allgemeine Informationen`{.
 
 Klicken Sie im Feld **Allgemeine Informationen** auf den Button `...`{.action} neben `Boot`. Klicken Sie im Kontextmenü auf `Bearbeiten`{.action}.
 
-![Boot-Option im Bereich „Allgemeine Informationen“ bearbeiten](images/rescue-mode-001.png){.thumbnail}
+![Boot-Option im Bereich "Allgemeine Informationen" bearbeiten](images/rescue-mode-001.png){.thumbnail}
 
 Wählen Sie auf der Seite **Netboot-Modus ändern** `Im Rescue-Modus booten`{.action} aus.
 

@@ -39,7 +39,7 @@ Klicken Sie im OVHcloud Kundencenter zunächst auf das Menü `Bare Metal Cloud`{
 
 Klicken Sie im Menü `Dedicated Server`{.action} auf den Server Ihrer Wahl, um auf dessen Interface zuzugreifen.
 
-![Tab „Allgemeine Informationen“ des Servers](images/serverinterface01.png){.thumbnail}
+![Tab "Allgemeine Informationen" des Servers](images/serverinterface01.png){.thumbnail}
 
 ![Serverstatus und Netzwerkdetails](images/serverinterface02.png){.thumbnail}
 
