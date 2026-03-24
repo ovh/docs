@@ -1,7 +1,7 @@
 ---
 title: "Transférer un nom de domaine vers un autre bureau d'enregistrement"
 excerpt: "Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -37,7 +37,6 @@ Afin d'empêcher les transferts de noms de domaine non autorisés, les noms de d
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
 
 > [!primary]
 >

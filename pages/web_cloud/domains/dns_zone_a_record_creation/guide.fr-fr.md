@@ -1,7 +1,7 @@
 ---
 title: "Ajouter un enregistrement DNS de type A pour un nom de domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type A dans une zone DNS gérée chez OVHcloud pour votre nom de domaine"
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 <style>

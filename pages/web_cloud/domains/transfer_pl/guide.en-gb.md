@@ -63,7 +63,7 @@ The transfer procedure has several steps, including contacting multiple entities
 |3|Domain name transfer request|Anyone with the transfer code, also with the holder’s permission|With the new registrar (e.g. OVHcloud)|Depends on your actions|
 |4|Transfer confirmation|The domain name holder must validate the transfer at the registry operator’s request |By email|Five days maximum|
 
-### Step 1: check the information associated with the domain name
+### 1 - Check the information associated with the domain name
 
 **To start with, it is essential to ensure that the information associated with the domain name is up-to-date.** Since the implementation of the GDPR, the data visible in “Whois” has become very limited. We recommend that you check the information associated with your domain name via your current domain name registrar.
 
@@ -76,7 +76,7 @@ The transfer procedure has several steps, including contacting multiple entities
 > If you are not sure which registrar is responsible for your domain name, the `Registrar` lines, which will appear as part of the WHOIS tool search result, can provide you with information on its identity.
 >
 
-### Step 2: unlock your domain name and retrieve the transfer code
+### 2 - Unlock your domain name and retrieve the transfer code
 
 Once you have checked this information, you will need to unlock your domain name. You can only do this via your current domain name registrar. Contact them to find out more about their procedure.
 
@@ -89,7 +89,7 @@ Please note that since OVHcloud is not your domain name’s registrar at the tim
 > Once your domain name has been unlocked, you will have seven (7) days to transfer to OVHcloud. After this period, your domain name will be locked automatically if you do not submit a domain name registrar change request.
 >
 
-### Step 3: Request a domain name transfer to OVHcloud <a name="step3"></a>
+### 3 - Request a domain name transfer to OVHcloud <a name="step3"></a>
 
 Once you have unlocked your domain name and obtained your code, you can order the transfer to OVHcloud from [our website](/links/web/domains). Enter your domain name, then follow the order process.
 
@@ -116,9 +116,9 @@ You can also complete your order with a [web hosting plan](/links/web/hosting)  
 
 ![domain](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
-Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](/links/manager). Once you have logged in, go to the `Web Cloud`{.action} section, then click on `Ongoing operations`{.action}.
+Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [Ongoing operations](/links/control-panel/web-ongoing-operations) page.
 
-### Step 4: Transfer confirmation
+### 4 - Transfer confirmation
 
 The domain name transfer procedure requires email validation. This step can be performed as soon as the transfer begins, but may take up to five days.
 
@@ -140,9 +140,9 @@ Also, check the “SPAM”/“junk email” folders in the email addresses conce
 If the validation email cannot be found, please contact OVHcloud support by creating a support ticket. Our services can then cancel the transfer. Once the cancellation is complete, change the email address of the domain name holder to another email provider (such as, for example, Gmail, Yahoo, Onet, wp.pl, etc.).<br>
 Once you have modified your email address, order a [new transfer request](#step3).
 
-### Step 5: manage a domain name with OVHcloud
+### 5 - Manage a domain name with OVHcloud
 
-Once the transfer procedure is complete, you can manage your domain name from the [OVHcloud Control Panel](/links/manager). To do this, select `Web Cloud`{.action}, click `Domain names`{.action}, then click on the domain name concerned.
+Once the transfer procedure is complete, you can manage your domain name from the [Domain names](/links/control-panel/web-domains) page.
 
 ## Go further
 

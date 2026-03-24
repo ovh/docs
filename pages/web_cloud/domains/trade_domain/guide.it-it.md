@@ -54,7 +54,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 >
 > - Il sito web del registro **TLD** corrispondente;
 > - La [lista dei TLD disponibili su OVHcloud](/links/web/domains-tld);
-> - Gli aggiornamenti di stato del nome di dominio. Per verificarlo, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Operazioni in corso`{.action}.
+> - Gli aggiornamenti di stato del nome di dominio. Per verificarlo, accedi alla pagina [Operazioni in corso](/links/control-panel/web-ongoing-operations).
 >
 
 ### Avvia la procedura di modifica dell'intestatario o modifica le informazioni ad essa associate

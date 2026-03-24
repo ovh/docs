@@ -50,11 +50,11 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 >
 > El procedimiento exacto para el cambio de titular de un nombre de dominio puede variar, en particular para determinados nombres de dominio **ccTLD** (*.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) y para algunos **TLD** especiales (*.am* , *.fm*, etc.). Para algunos de ellos, un cambio de titular es una operación de pago. El cambio de titular también puede ser suspendido por varias razones, por ejemplo por impago, abuso o bloqueo por parte del registro. 
 >
-Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
+> Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
 >
 > - El sitio web del registro **TLD** correspondiente;
 > - La [lista de TLD disponibles en OVHcloud](/links/web/domains-tld);
-> - Actualizaciones de estado del nombre de dominio. Para comprobarlo, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Operaciones en curso`{.action}.
+> - Actualizaciones de estado del nombre de dominio. Para comprobarlo, acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
 >
 
 ### Iniciar el procedimiento de cambio de titular o modificar la información asociada

@@ -1,6 +1,6 @@
 ---
 title: 'Résoudre une erreur sur un nom de domaine'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 <style>
@@ -34,7 +34,7 @@ La création, le transfert ou le changement de titulaire d'un nom de domaine peu
 ### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [Opérations en cours](/links/control-panel/web-ongoing-operations)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Opérations en cours`{.action}
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Opérations en cours`{.action} > Sélectionnez l'onglet `Domaine`{.action} ou `DNS`{.action}.
 
 ---
 <!-- CP-NAV-END:web-ongoing-operations -->

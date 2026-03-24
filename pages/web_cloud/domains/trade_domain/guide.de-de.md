@@ -41,7 +41,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 
 > [!warning]
 >
-> Die folgenden Anweisungen beschreiben die gängigste Methode um den Inhaber eines Domainnamens zu ändern und gelten für die meisten **T**op **L**evel **D**omains (**TLD**). Als **TLD** wird der letzte Teil des Domainamens bzw. dessen Endung bezeichnet, also *.com*, *.net*, *.de* etc.
+> Die folgenden Anweisungen beschreiben die gängigste Methode um den Inhaber eines Domainnamens zu ändern und gelten für die meisten **T**op **L**evel **D**omains (**TLD**). Als **TLD** wird der letzte Teil des Domainnamens bzw. dessen Endung bezeichnet, also *.com*, *.net*, *.de* etc.
 >
 > Die besonderen Verfahrensvorschriften für **TLD**s werden von der zuständigen Vergabestelle, d.h. der **Registry**, festgelegt. Registrare wie OVHcloud müssen diese Regeln einhalten und haben keinen Einfluss auf Registry-Entscheidungen.
 >
@@ -53,7 +53,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 >
 > - Die Webseite der zuständigen **TLD**-Registry.
 > - Die [Beschreibungen der bei OVHcloud verfügbaren **TLD**s](/links/web/domains-tld).
-> - Statusaktualisierungen des Domainnamens. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Laufende Operationen`{.action}.
+> - Statusaktualisierungen des Domainnamens. Öffnen Sie dazu die Seite [Laufende Vorgänge](/links/control-panel/web-ongoing-operations).
 >
 
 ### Initiieren des Inhaberwechsels oder Ändern der Inhaberinformationen
@@ -75,7 +75,7 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >>
 > **Schritt 3**
 >>
->> Auf der neuen Seite klicken Sie auf den Button `Ändern`{.action} im Bereich **Inhaber**. 
+>> Auf der neuen Seite klicken Sie auf den Button `Ändern`{.action} im Bereich **Inhaber**.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
@@ -108,7 +108,7 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >> - Eine E-Mail an den aktuellen Inhaber
 >> - Eine E-Mail an den zukünftigen Inhaber
 >>
->> Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werden beide E-Mails and die Referenz-E-Mail-Adresse gesendet. Beide müssen jeweils bestätigt werden.
+>> Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werden beide E-Mails an die Referenz-E-Mail-Adresse gesendet. Beide müssen jeweils bestätigt werden.
 >>
 >> Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änderung des Inhabers des Domainnamens wirksam.
 >>

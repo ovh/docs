@@ -1,7 +1,7 @@
 ---
 title: "Transfer nazwy domeny do innego operatora"
 excerpt: "Dowiedz się, jak wykonać transfer nazwy domeny z OVHcloud do wybranego operatora"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie
@@ -24,7 +24,7 @@ Aby zapobiec przenoszeniu nazwy domeny bez zezwolenia, nazwy domen są zazwyczaj
 ## Wymagania początkowe
 
 - Posiadanie [nazwy domeny zarejestrowanej](/links/web/domains) w OVHcloud
-- Posiadanie uprawnień do złożenia wniosku o transfer nazwy domeny: abonent i/lub administratorzy nazwy domeny powinni zostać poinformowani o wszczęciu takiej procedury. 
+- Posiadanie uprawnień do złożenia wniosku o transfer nazwy domeny: abonent i/lub administratorzy nazwy domeny powinni zostać poinformowani o wszczęciu takiej procedury.
 - Rejestracja tej nazwy domeny trwa co najmniej 60 dni **i** nie została przeniesiona ani wymieniona (tj. zmiana abonenta) w ciągu ostatnich 60 dni
 
 <!-- CP-NAV-START:web-domains -->
@@ -37,7 +37,6 @@ Aby zapobiec przenoszeniu nazwy domeny bez zezwolenia, nazwy domen są zazwyczaj
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
 
 > [!primary]
 >
@@ -62,58 +61,83 @@ Aby zapobiec przenoszeniu nazwy domeny bez zezwolenia, nazwy domen są zazwyczaj
 > W zależności od tego, który nowy operator wybrałeś, transfer nazwy domeny może być operacją płatną. Przed kolejnymi krokami sprawdź, czy spełnione są te warunki.
 >
 
-### Etap 1: wyłączenie ochrony przed transferem nazwy domeny
+### 1 - Wyłączenie ochrony przed transferem nazwy domeny
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action}, po czym wybierz odpowiednią nazwę domeny.
+Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 
-W zakładce `Informacje ogólne`{.action} znajdziesz suwak `Ochrona przed transferem` pod **Konfiguracja**. Domyślnie ochrona ta jest `Aktywne`{.action}.
-
-> [!warning]
->
-> Jeśli przycisk `Ochrona przed transferem` nie jest widoczny, oznacza to, że rozszerzenie nazwy domeny nie wymaga kodu transferu. Będziesz mógł wówczas rozpocząć transfer nazwy domeny.
-
-![ochrona włączona](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
-
-Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć tę ochronę. Odczekaj kilka minut, aż stan się `Wyłączone`{.action}.
-
-> [!primary]
->
-> Jeśli pojawi się komunikat "**Wystąpił błąd podczas zlecania wyłączenia ochrony nazwy domeny (User not granted for this request)**", oznacza to, że nie masz wystarczających uprawnień do odblokowania nazwy domeny. 
->
-> Ponadto, jeśli pojawi się komunikat: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", co oznacza, że kod transferu Twojej nazwy domeny nie będzie możliwy do pobrania za pośrednictwem [Panelu klienta OVHcloud](/links/manager).  
-> 
-> W obu przypadkach sprawdź, czy jesteś kontaktem **administrator** nazwy domeny korzystając z naszego przewodnika do [zarządzanie kontaktami](/pages/account_and_service_management/account_information/managing_contacts), a następnie sprawdź, czy rozszerzenie Twojej nazwy domeny pozwala na odblokowanie w [Panelu klienta OVHcloud](/links/manager).
-> 
-> Niektóre *kody transferu* są zarządzane bezpośrednio przez *registry* przy rozszerzaniu nazwy domeny. *Rejestr* to organizacja, która zarządza wszystkimi nazwami domen dla wybranego rozszerzenia. Na przykład,**AFNIC** zarządza wszystkimi nazwami domen, których rozszerzenie oznacza "*.fr*". W takim przypadku należy skontaktować się bezpośrednio z repozytorium*, które zarządza rozszerzeniem Twojej nazwy domeny, aby pobrać *kod transferu*.
->
-
-![dezaktywacja](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `Informacje ogólne`{.action} znajdziesz suwak `Ochrona przed transferem` pod **Bezpieczeństwo**. Domyślnie ochrona ta jest `Aktywne`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Jeśli przycisk `Ochrona przed transferem` nie jest widoczny, oznacza to, że rozszerzenie nazwy domeny nie wymaga kodu transferu. Będziesz mógł wówczas rozpocząć transfer nazwy domeny.
+>>
+>> ![ochrona włączona](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć tę ochronę. Odczekaj kilka minut, aż stan się `Wyłączone`{.action}.
+>>
+>> > [!primary]
+>> >
+>> > Jeśli pojawi się komunikat "**Wystąpił błąd podczas zlecania wyłączenia ochrony nazwy domeny (User not granted for this request)**", oznacza to, że nie masz wystarczających uprawnień do odblokowania nazwy domeny.
+>> >
+>> > Ponadto, jeśli pojawi się komunikat: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", co oznacza, że kod transferu Twojej nazwy domeny nie będzie możliwy do pobrania za pośrednictwem [Panelu klienta OVHcloud](/links/manager).
+>> >
+>> > W obu przypadkach sprawdź, czy jesteś kontaktem **administrator** nazwy domeny korzystając z naszego przewodnika do [zarządzanie kontaktami](/pages/account_and_service_management/account_information/managing_contacts), a następnie sprawdź, czy rozszerzenie Twojej nazwy domeny pozwala na odblokowanie w [Panelu klienta OVHcloud](/links/manager).
+>> >
+>> > Niektóre *kody transferu* są zarządzane bezpośrednio przez *registry* przy rozszerzaniu nazwy domeny. *Rejestr* to organizacja, która zarządza wszystkimi nazwami domen dla wybranego rozszerzenia. Na przykład,**AFNIC** zarządza wszystkimi nazwami domen, których rozszerzenie oznacza "*.fr*". W takim przypadku należy skontaktować się bezpośrednio z repozytorium*, które zarządza rozszerzeniem Twojej nazwy domeny, aby pobrać *kod transferu*.
+>>
+>> ![dezaktywacja](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
 > Po odblokowaniu nazwy domeny zostanie ona odblokowana na siedem dni. Po tym czasie ochrona zostanie automatycznie ponownie włączona. Jeśli w tym czasie nie wystąpi o transfer nazwy domeny do nowego operatora, konieczne będzie ponowne usunięcie ochrony nazwy domeny.
 >
 
-### Etap 2: pobrać kod transferu
+### 2 - Pobrać kod transferu
 
 > [!warning]
 >
 > Pamiętaj, że zawsze istnieje możliwość odblokowania i odzyskania kodu transferu nazwy domeny po jej wygaśnięciu. Zgodnie z zasadami rejestru, nazwa domeny w [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) może wymagać przywrócenia w celu przeniesienia. Skontaktuj się z nowym rejestratorem, aby uzyskać szczegóły przeniesienia.
 >
 
-Po odblokowaniu Twojej nazwy domeny do transferu, pobierz jej kod transferu.  W tym celu, w zakładce `Informacje ogólne`{.action}, kliknij przycisk `AUTH/INFO`{.action} znajdujący się obok przycisku `Ochrona przed transferem`{.action}. Jeśli to konieczne, odśwież stronę.
+Po odblokowaniu Twojej nazwy domeny do transferu, pobierz jej kod transferu.
 
-Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem transferu, hasłem nazwy domeny, AUTH-CODE lub EPP-Code).
+Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 
-![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
-
-Kod zostanie poproszony przez nowego operatora o zakończenie procesu transferu. Szczegóły możesz sprawdzić u nowego operatora.
-
-Zamiast ręcznie wpisywać kod, zalecamy jego skopiowanie/wklejenie, ponieważ niektóre znaki mogą być łatwo mylone.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `Informacje ogólne`{.action}, kliknij przycisk `AUTH/INFO`{.action} znajdujący się obok przycisku `Ochrona przed transferem`{.action}. Jeśli to konieczne, odśwież stronę.
+>>
+>> ![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem transferu, hasłem nazwy domeny, AUTH-CODE lub EPP-Code).
+>>
+>> Kod zostanie poproszony przez nowego operatora o zakończenie procesu transferu. Szczegóły możesz sprawdzić u nowego operatora.
+>>
+>> Zamiast ręcznie wpisywać kod, zalecamy jego skopiowanie/wklejenie, ponieważ niektóre znaki mogą być łatwo mylone.
 
 Po pobraniu kodu transferu **nie zablokuj ponownie nazwy domeny, chyba że nie chcesz jej już przenosić**.
 
-### Etap 3: rozpocząć transfer do nowego operatora
+### 3 - Rozpocząć transfer do nowego operatora
 
 Po wykonaniu powyższych czynności, uruchom proces przeniesienia nazwy domeny, zazwyczaj zamawiając ją u nowego rejestratora nazw domen. Transfer może potrwać do 10 dni.
 
@@ -121,7 +145,7 @@ Aby uzyskać więcej informacji, skontaktuj się z wybranym przez Ciebie nowym r
 
 > [!warning]
 >
-> Jeśli Twój nowy operator wymaga nowego kodu transferu, aktywuj ponownie `Ochrona przed transferem` dla swojej nazwy domeny, a następnie ponownie wyłącz ją kilka minut później. W ten sposób uzyskasz nowy kod transferu.
+> Jeśli Twój nowy operator wymaga nowego kodu transferu, aktywuj ponownie **Ochronę przed transferem** dla swojej nazwy domeny, a następnie ponownie wyłącz ją kilka minut później. W ten sposób uzyskasz nowy kod transferu.
 >
 
 ## Sprawdź również

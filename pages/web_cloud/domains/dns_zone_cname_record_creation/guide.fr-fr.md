@@ -1,7 +1,7 @@
 ---
 title: "Comment ajouter un enregistrement DNS de type CNAME pour un sous-domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type CNAME dans une zone DNS gérée chez OVHcloud pour le sous-domaine d'un nom de domaine"
-updated: 2026-03-20
+updated: 2026-03-24
 ---
 
 <style>

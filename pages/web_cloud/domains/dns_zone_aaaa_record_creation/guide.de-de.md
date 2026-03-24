@@ -1,7 +1,7 @@
 ---
 title: "DNS-AAAA-Eintrag für einen Domainnamen hinzufügen"
 excerpt: "Erfahren Sie hier, wie Sie einen DNS-Eintrag vom Typ AAAA zu einer von OVHcloud verwalteten DNS-Zone für Ihre Domain hinzufügen"
-updated: 2025-05-15
+updated: 2026-03-24
 ---
 
 <style>
@@ -52,11 +52,30 @@ Sie möchten Ihre Website über einen bestimmten Domainnamen erreichbar machen? 
 
 ### Einen DNS-Eintrag vom Typ AAAA für eine Domain hinzufügen
 
-1. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
-2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
-3. Wählen Sie im angezeigten Fenster das Feld `AAAA`{.action} aus.
-4. Geben Sie anschließend in das Feld `Ziel *` die IP-Adresse (zum Beispiel `2001:db8:1:1b00:203:0:113:0`) des Dienstes ein, auf dem sich Ihre Website befindet (Webhosting, Dedicated Server, VPS, etc.), und klicken Sie dann auf `Weiter`{.action}.
-5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu  **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
+Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [DNS zones](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf die Schaltfläche `Eintrag hinzufügen`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie im angezeigten Fenster das Feld `AAAA`{.action} aus.
+>>
+> **Schritt 4**
+>>
+>> Geben Sie in das Feld `Ziel *` die IP-Adresse (zum Beispiel `2001:db8:1:1b00:203:0:113:0`) des Dienstes ein, auf dem sich Ihre Website befindet (Webhosting, Dedicated Server, VPS, etc.), und klicken Sie dann auf `Weiter`{.action}.
+>>
+> **Schritt 5**
+>>
+>> Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
 
 /// details | Klicken Sie hier für weitere Informationen.
 
@@ -72,11 +91,30 @@ Lesen Sie unsere detaillierten Anleitungen:
 
 ### Einen DNS-Eintrag vom Typ AAAA für die Subdomain einer Domain hinzufügen
 
-1. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
-2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
-3. Wählen Sie im angezeigten Fenster das Feld `AAAA`{.action} aus.
-4. Geben Sie anschließend in das Feld `Subdomain` die betreffende Subdomain (zum Beispiel `www` für die Subdomain `www.domain.tld`) und im Feld `Ziel *` die IP-Adresse (zum Beispiel `2001:db8:1:1b00:203:0:113:0`) des Dienstes ein, auf dem sich Ihre Website befindet (Webhosting, Dedicated Server, VPS, etc.). Klicken Sie anschließend auf `Weiter`{.action}.
-5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
+Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [DNS zones](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf die Schaltfläche `Eintrag hinzufügen`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie im angezeigten Fenster das Feld `AAAA`{.action} aus.
+>>
+> **Schritt 4**
+>>
+>> Geben Sie in das Feld `Subdomain` die betreffende Subdomain (zum Beispiel `www` für die Subdomain `www.domain.tld`) und im Feld `Ziel *` die IP-Adresse (zum Beispiel `2001:db8:1:1b00:203:0:113:0`) des Dienstes ein, auf dem sich Ihre Website befindet (Webhosting, Dedicated Server, VPS, etc.). Klicken Sie anschließend auf `Weiter`{.action}.
+>>
+> **Schritt 5**
+>>
+>> Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
 
 /// details | Klicken Sie hier für weitere Informationen.
 

@@ -54,7 +54,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >
 > - Strona internetowa rejestru **TLD**;
 > - Lista [TLD dostępnych na OVHcloud](/links/web/domains-tld);
-> - Aktualizacje statusu nazwy domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Operacje w toku`{.action}.
+> - Aktualizacje statusu nazwy domeny. Aby to sprawdzić, przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >
 
 ### Rozpocznij procedurę zmiany abonenta lub zmień powiązane z nim informacje
