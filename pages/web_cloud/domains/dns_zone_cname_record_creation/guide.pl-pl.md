@@ -1,7 +1,7 @@
 ---
 title: "Jak dodać rekord DNS typu CNAME dla subdomeny"
 excerpt: "Dowiedz się, jak dodać rekord DNS typu CNAME w strefie DNS zarządzanej przez OVHcloud dla subdomeny nazwy domeny"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -56,11 +56,30 @@ Rekordy CNAME są użyteczne, jeśli chcesz uniknąć konieczności zmiany adres
 
 ### Dodaj rekord DNS typu CNAME dla subdomeny nazwy domeny
 
-1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią nazwę domeny.
-2. Na stronie, która się wyświetli kliknij przycisk `Dodaj rekord`{.action}.
-3. W wyświetlonym oknie wybierz pole typ rekordu `CNAME`{.action}.
-4. Następnie w polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Adres docelowy *` nazwę domeny lub subdomeny (na przykład: `domain.tld`), do której chcesz przypisać rekord typu CNAME. Następnie kliknij przycisk `Dalej`{.action}.
-5. Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+Kliknij poniższe karty, aby wyświetlić kolejne **5** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `Dodaj wpis`{.action}.
+>>
+> **Krok 3**
+>>
+>> W wyświetlonym oknie wybierz typ rekordu `CNAME`{.action}.
+>>
+> **Krok 4**
+>>
+>> W polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Adres docelowy *` nazwę domeny lub subdomeny (na przykład: `domain.tld`), do której chcesz przypisać rekord typu CNAME. Kliknij `Dalej`{.action}.
+>>
+> **Krok 5**
+>>
+>> Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
 
 /// details | Zapoznaj się ze szczegółowymi przewodnikami:
 

@@ -1,7 +1,7 @@
 ---
 title: "Transferir un nombre de dominio a otro agente registrador"
 excerpt: "Descubra cómo transferir un nombre de dominio de OVHcloud al agente registrador que elija"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 ## Objetivo
@@ -18,7 +18,7 @@ Con el fin de evitar las transferencias de nombre de dominio no autorizadas, los
 >
 > Para transferir la gestión de su nombre de dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un **cambio de contactos**. El procedimiento se describe en [esta guía](/pages/account_and_service_management/account_information/managing_contacts).
 >
-Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **antes** de cambiar los contactos del nombre de dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de titular de los nombres de dominio](/pages/web_cloud/domains/trade_domain).
+> Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **antes** de cambiar los contactos del nombre de dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de titular de los nombres de dominio](/pages/web_cloud/domains/trade_domain).
 >
 
 ## Requisitos
@@ -37,7 +37,6 @@ Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **an
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
 
 > [!primary]
 >
@@ -62,58 +61,83 @@ Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **an
 > Según el nuevo agente registrador que elija, la transferencia de un nombre de dominio puede ser de pago. Antes de continuar, le recomendamos que se informe sobre este punto.
 >
 
-### Etapa 1 : eliminar la protección contra la transferencia del nombre de dominio
+### 1 - Eliminar la protección contra la transferencia del nombre de dominio
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
+Haga clic en las pestañas a continuación para ver cada uno de los **3** pasos.
 
-En la pestaña `Información general`{.action}, encontrará el cursor `Protección contra la transferencia` en **Configuración**. Por defecto, esta protección está `Activada`{.action}.
-
-> [!warning]
->
-> Si el botón `Protección contra la transferencia` no está presente, significa que la extensión del nombre de dominio no requiere un código de transferencia. A continuación, podrá lanzar la transferencia directamente.
-
-![protección activada](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
-
-Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la protección. Espere unos minutos a que el estado pase a `Desactivado`{.action}.
-
-> [!primary]
->
-> Si encuentra el mensaje "**Se ha producido un error al solicitar la desactivación de la protección del nombre de dominio ("User not granted for this request")**", significa que no tiene los permisos suficientes para desbloquear el nombre de dominio. 
->
-> Además, si encuentra el mensaje: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", que significa que el código de transferencia de su nombre de dominio no es recuperable a través de su [área de cliente de OVHcloud](/links/manager).  
-> 
-> En ambos casos, compruebe que es el contacto **administrador** del nombre de dominio con ayuda de nuestra guía sobre la [gestión de contactos](/pages/account_and_service_management/account_information/managing_contacts) y compruebe que la extensión de su nombre de dominio permite un desbloqueo desde el [área de cliente de OVHcloud](/links/manager).
-> 
-> En efecto, algunos *códigos de transferencia* son gestionados directamente por el *registro* de la extensión del nombre de dominio. Un *registro* es una organización que gestiona el conjunto de nombres de dominio para una extensión determinada. Por ejemplo, el **AFNIC** gestiona el conjunto de nombres de dominio con la extensión "*.fr*". En ese caso, deberá contactar directamente con el *registro*, que gestiona la extensión del nombre de dominio, para obtener el *código de transferencia*.
->
-
-![desactivación de la protección](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> En la pestaña `Información general`{.action}, encontrará el cursor `Protección contra la transferencia` en **Seguridad**, con el estado `Activado`{.action} por defecto.
+>>
+>> > [!warning]
+>> >
+>> > Si el botón `Protección contra la transferencia` no está presente, significa que la extensión del nombre de dominio no requiere un código de transferencia. A continuación, podrá lanzar la transferencia directamente.
+>>
+>> ![protección activada](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la protección. Espere unos minutos a que el estado pase a `Desactivado`{.action}.
+>>
+>> > [!primary]
+>> >
+>> > Si encuentra el mensaje "**Se ha producido un error al solicitar la desactivación de la protección del nombre de dominio ("User not granted for this request")**", significa que no tiene los permisos suficientes para desbloquear el nombre de dominio.
+>> >
+>> > Además, si encuentra el mensaje: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", que significa que el código de transferencia de su nombre de dominio no es recuperable a través de su [área de cliente de OVHcloud](/links/manager).
+>> >
+>> > En ambos casos, compruebe que es el contacto **administrador** del nombre de dominio con ayuda de nuestra guía sobre la [gestión de contactos](/pages/account_and_service_management/account_information/managing_contacts) y compruebe que la extensión de su nombre de dominio permite un desbloqueo desde el [área de cliente de OVHcloud](/links/manager).
+>> >
+>> > En efecto, algunos *códigos de transferencia* son gestionados directamente por el *registro* de la extensión del nombre de dominio. Un *registro* es una organización que gestiona el conjunto de nombres de dominio para una extensión determinada. Por ejemplo, el **AFNIC** gestiona el conjunto de nombres de dominio con la extensión "*.fr*". En ese caso, deberá contactar directamente con el *registro*, que gestiona la extensión del nombre de dominio, para obtener el *código de transferencia*.
+>>
+>> ![desactivación de la protección](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
 > Una vez levantada la protección, el nombre de dominio permanece desbloqueado durante siete días. Después de este período, la protección se reactivará automáticamente. Si no solicita la transferencia del nombre de dominio a su nuevo agente registrador durante este período, será necesario volver a eliminar la protección del nombre de dominio.
 >
 
-### Etapa 2 :  obtener el código de transferencia
+### 2 - Obtener el código de transferencia
 
 > [!warning]
 >
 > Tenga en cuenta que siempre es posible desbloquear y recuperar el código de transferencia de su nombre de dominio después de su vencimiento. De acuerdo con las reglas del registro, es posible que sea necesario restaurar un nombre de dominio en [período de redención](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) para transferirlo. Comuníquese con su nuevo registrador para conocer los detalles de la transferencia.
 >
 
-Una vez desbloqueada la protección contra la transferencia, deberá obtener el código de transferencia del nombre de dominio. Para ello, en la pestaña `Información general`{.action}, haga clic en el enlace `AUTH/INFO`{.action}, situado junto a `Protección contra la transferencia`{.action}. Actualice la página si es necesario.
+Una vez desbloqueada la protección contra la transferencia, puede obtener el código de transferencia del nombre de dominio.
 
-Se abrirá una ventana en la que podrá consultar su código AUTH/INFO (también llamado código de transferencia, contraseña de nombre de dominio, AUTH-CODE o EPP-Code).
+Haga clic en las pestañas a continuación para ver cada uno de los **3** pasos.
 
-![Transferencia saliente](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
-
-El nuevo agente registrador solicitará el código para finalizar la transferencia. Puede consultar los detalles en el nuevo agente registrador.
-
-En lugar de escribir manualmente el código, le recomendamos que copie y pegue el código, ya que algunos caracteres pueden confundirse fácilmente.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> En la pestaña `Información general`{.action}, haga clic en el enlace `AUTH/INFO`{.action}, situado junto a `Protección contra la transferencia`{.action}. Actualice la página si es necesario.
+>>
+>> ![Transferencia saliente](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> Se abrirá una ventana en la que podrá consultar su código AUTH/INFO (también llamado código de transferencia, contraseña de nombre de dominio, AUTH-CODE o EPP-Code).
+>>
+>> El nuevo agente registrador solicitará el código para finalizar la transferencia. Puede consultar los detalles en el nuevo agente registrador.
+>>
+>> En lugar de escribir manualmente el código, le recomendamos que copie y pegue el código, ya que algunos caracteres pueden confundirse fácilmente.
 
 Una vez recuperado el código de transferencia, **no vuelva a bloquear su nombre de dominio a menos que ya no quiera transferirlo**.
 
-### Etapa 3 : iniciar la transferencia al nuevo agente registrador
+### 3 - Iniciar la transferencia al nuevo agente registrador
 
 Una vez realizados los pasos anteriores, inicie el proceso de transferencia, normalmente realizando un pedido a su nuevo agente registrador. La transferencia puede tardar hasta 10 días.
 
@@ -121,8 +145,7 @@ Para más información, póngase en contacto con el nuevo agente registrador que
 
 > [!warning]
 >
-> Si su nuevo agente registrador solicita un nuevo código de transferencia, reactive la `Protección contra la transferencia` para su nombre de dominio y desactive este de nuevo unos minutos después. Así podrá obtener un nuevo código de transferencia.
->
+> Si su nuevo agente registrador solicita un nuevo código de transferencia, reactive la **Protección contra la transferencia** para su nombre de dominio y desactive este de nuevo unos minutos después. Así podrá obtener un nuevo código de transferencia.
 
 ## Más información
 

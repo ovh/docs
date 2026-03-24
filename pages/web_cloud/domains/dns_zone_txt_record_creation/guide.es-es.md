@@ -1,7 +1,7 @@
 ---
 title: "Añadir un registro DNS de tipo TXT a un dominio"
 excerpt: "Descubra cómo añadir un registro DNS de tipo TXT a una zona DNS gestionada en OVHcloud para un dominio"
-updated: 2025-06-23
+updated: 2026-03-24
 ---
 
 <style>
@@ -53,11 +53,30 @@ Para ello, deberá crear un registro DNS de tipo TXT en la zona DNS activa del d
 
 ### Añadir un registro DNS de tipo TXT a un dominio
 
-1. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
-2. En la nueva página, haga clic en el botón `Añadir un registro`{.action}.
-3. En la ventana que se abre, seleccione el registro extendido de tipo `TXT`{.action}.
-4. Introduzca la cadena TXT que quiera añadir en el campo `Valor *` (por ejemplo: `AbCdE-Value-of-TXT-fGhIjK`) y haga clic en `Siguiente`{.action}.
-5. Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+Haga clic en las pestañas de abajo para ver sucesivamente cada uno de los **5** pasos.
+
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el dominio correspondiente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Haga clic en el botón `Añadir un registro`{.action}.
+>>
+> **Paso 3**
+>>
+>> En la ventana que se abre, seleccione el registro extendido de tipo `TXT`{.action}.
+>>
+> **Paso 4**
+>>
+>> Introduzca la cadena TXT que quiera añadir en el campo `Valor *` (por ejemplo: `AbCdE-Value-of-TXT-fGhIjK`) y haga clic en `Siguiente`{.action}.
+>>
+> **Paso 5**
+>>
+>> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -71,11 +90,30 @@ Consulte nuestras guías detalladas:
 
 ### Añadir un registro DNS de tipo TXT para el subdominio de un dominio
 
-1. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
-2. En la nueva página, haga clic en el botón `Añadir un registro`{.action}.
-3. En la ventana que se abre, seleccione el registro extendido de tipo `TXT`{.action}.
-4. Introduzca a continuación en el campo `Subdominio` el subdominio correspondiente (por ejemplo: `www` para el subdominio `www.domain.tld`), y en el campo `Valor *`, la cadena TXT que quiera añadir (por ejemplo: `AbCdE-Value-of-TXT-fGhIjK`). Haga clic en `Siguiente`{.action}.
-5. Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+Haga clic en las pestañas de abajo para ver sucesivamente cada uno de los **5** pasos.
+
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el dominio correspondiente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Haga clic en el botón `Añadir un registro`{.action}.
+>>
+> **Paso 3**
+>>
+>> En la ventana que se abre, seleccione el registro extendido de tipo `TXT`{.action}.
+>>
+> **Paso 4**
+>>
+>> Introduzca en el campo `Subdominio` el subdominio correspondiente (por ejemplo: `www` para el subdominio `www.domain.tld`), y en el campo `Valor *`, la cadena TXT que quiera añadir (por ejemplo: `AbCdE-Value-of-TXT-fGhIjK`). Haga clic en `Siguiente`{.action}.
+>>
+> **Paso 5**
+>>
+>> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
 
 /// details | Haga clic aquí para obtener más información.
 
