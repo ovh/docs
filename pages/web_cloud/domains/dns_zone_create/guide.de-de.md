@@ -62,7 +62,7 @@ Es gibt verschiedene Gründe für die Erstellung einer DNS-Zone bei OVHcloud fü
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
 - **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---
@@ -91,7 +91,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-dns-zone), dann auf den Button `Bestellen`{.action}.
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), dann auf den Button `Bestellen`{.action}.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -136,7 +136,7 @@ Um diese zu finden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-dns-zone), dann wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
 >>
 >> ![DNS-Zonen](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

@@ -98,7 +98,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le ou les noms de domaine dont vous souhaitez changer le mode de renouvellement.
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le ou les noms de domaine dont vous souhaitez changer le mode de renouvellement.
 >>
 >> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine que vous souhaitez renouveler.
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine que vous souhaitez renouveler.
 >>
 >> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -153,7 +153,7 @@ Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur 
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -170,7 +170,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine que vous souhaitez résilier.
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine que vous souhaitez résilier.
 >>
 >> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -193,7 +193,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine pour lequel vous devez régler une facture de renouvellement.
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine pour lequel vous devez régler une facture de renouvellement.
 >>
 >> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur 
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

@@ -48,7 +48,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Operacje w toku](/links/control-panel/web-ongoing-operations).
+>> Przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >>
 > **Krok 2**
 >>
@@ -91,7 +91,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Operacje w toku](/links/control-panel/web-ongoing-operations).
+>> Przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >>
 > **Krok 2**
 >>
@@ -120,7 +120,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Operacje w toku](/links/control-panel/web-ongoing-operations).
+>> Przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >>
 > **Krok 2**
 >>
@@ -149,7 +149,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Operacje w toku](/links/control-panel/web-ongoing-operations).
+>> Przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >>
 > **Krok 2**
 >>
@@ -179,7 +179,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Operacje w toku](/links/control-panel/web-ongoing-operations).
+>> Przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >>
 > **Krok 2**
 >>
@@ -210,7 +210,7 @@ Aby sprawdzić, czy Twoja nazwa domeny jest zablokowana, kliknij poniższe karty
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Operacje w toku](/links/control-panel/web-ongoing-operations).
+>> Przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >>
 > **Krok 2**
 >>
@@ -248,7 +248,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Operacje w toku](/links/control-panel/web-ongoing-operations).
+>> Przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >>
 > **Krok 2**
 >>

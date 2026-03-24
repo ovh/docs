@@ -95,7 +95,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-dns-zone), puis sur le bouton `Commander`{.action}.
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis cliquez sur le bouton `Commander`{.action}.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -141,7 +141,7 @@ Pour les retrouver, cliquez sur les onglets ci-dessous pour afficher successivem
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-dns-zone), puis sélectionnez le sous-domaine concerné.
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le sous-domaine concerné.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -169,7 +169,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

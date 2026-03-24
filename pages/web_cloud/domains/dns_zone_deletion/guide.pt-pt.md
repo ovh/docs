@@ -63,7 +63,7 @@ Clique nas guias abaixo para exibir sucessivamente cada uma das **3** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/billing-services) e, em seguida, clique no botão `...`{.action} à direita da zona DNS que deseja cancelar, depois em `Rescindir o meu serviço`{.action}.
+>> Aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services) e, em seguida, clique no botão `...`{.action} à direita da zona DNS que deseja cancelar, depois em `Rescindir o meu serviço`{.action}.
 >>
 >> ![Cancelar](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>

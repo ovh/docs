@@ -32,7 +32,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-domains). Clicca sul pulsante `Esporta in CSV`{.action}.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains). Clicca sul pulsante `Esporta in CSV`{.action}.
 >>
 > **Passaggio 2**
 >>

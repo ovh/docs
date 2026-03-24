@@ -63,7 +63,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **3** etapy.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/billing-services), a następnie kliknij przycisk `...`{.action} po prawej stronie strefy DNS, którą chcesz zakończyć, a następnie kliknij `Rezygnuję z usługi`{.action}.
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services), a następnie kliknij przycisk `...`{.action} po prawej stronie strefy DNS, którą chcesz zakończyć, a następnie kliknij `Rezygnuję z usługi`{.action}.
 >>
 >> ![Zakończ](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>

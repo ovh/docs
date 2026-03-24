@@ -63,7 +63,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/billing-services), puis sur le bouton `...`{.action} à droite de la zone DNS à résilier, puis sur `Résilier mon service`{.action}.
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services), puis sur le bouton `...`{.action} à droite de la zone DNS à résilier, puis sur `Résilier mon service`{.action}.
 >>
 >> ![résilier](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>

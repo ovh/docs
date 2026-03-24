@@ -63,7 +63,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/billing-services), poi clicca sul pulsante `...`{.action} a destra della zona DNS che desideri annullare, quindi su `Disattivare il servizio`{.action}.
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services), poi clicca sul pulsante `...`{.action} a destra della zona DNS che desideri annullare, quindi su `Disattivare il servizio`{.action}.
 >>
 >> ![Annulla](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>
