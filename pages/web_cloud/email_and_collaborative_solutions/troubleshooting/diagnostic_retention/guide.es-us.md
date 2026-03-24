@@ -1,7 +1,7 @@
 ---
 title: Restaurar los elementos eliminados de su cuenta de correo
 excerpt: Cómo restaurar elementos eliminados de su cuenta de correo a través del webmail (OWA)
-updated: 2022-02-08
+updated: 2026-03-24
 ---
 
 

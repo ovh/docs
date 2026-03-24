@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Configurare l'indirizzo e-mail su Outlook classico per Windows"
 excerpt: "Scopri come configurare il tuo indirizzo e-mail MX Plan su Outlook classico per Windows"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>

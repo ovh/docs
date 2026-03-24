@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
-updated: 2024-09-03
+updated: 2026-03-24
 ---
 
 ## Objetivo

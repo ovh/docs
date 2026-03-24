@@ -1,7 +1,7 @@
 ---
 title: FAQ soluciones de correo electrónico de OVHcloud
 excerpt: "Encuentre las preguntas más frecuentes sobre el correo electrónico"
-updated: 2026-03-05
+updated: 2026-03-24
 ---
 
 <style>
