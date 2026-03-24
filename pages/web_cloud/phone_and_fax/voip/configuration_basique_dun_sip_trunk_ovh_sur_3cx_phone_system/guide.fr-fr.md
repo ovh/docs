@@ -28,7 +28,7 @@ Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **
 - Un [softphone](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone) ou un téléphone SIP
 - [3CX](https://www.3cx.fr/) installé, activé et à jour. 
 
-Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx-ip/).
+Obtenez gratuitement 3CX en accédant à la [page de téléchargement 3CX](https://www.3cx.fr/pabx/download-pabx-ip/).
 
 <!-- CP-NAV-START:telecom-voip-fax -->
 ---
@@ -88,7 +88,7 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >> > [!primary]
 >> > Pour retrouver vos informations de connexion depuis votre espace client :
 >> >
->> > Cliquez sur [ce lien](/links/control-panel/telecom-voip-fax) pour accéder à la section `VoIP & Fax`{.action}, puis cliquez sur le groupe de facturation contenant votre ligne SIP Trunk. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP Trunk concernée. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+>> > Accédez à la section [VoIP & Fax](/links/control-panel/telecom-voip-fax) puis cliquez sur le groupe de facturation contenant votre ligne SIP Trunk. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP Trunk concernée. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 >> >
 >> > Vous retrouvez alors, dans la partie « Informations SIP », le **Login**, **Domain** et **Proxy sortant** de votre ligne SIP Trunk.
 >>
@@ -138,14 +138,14 @@ Créez et configurez l'extension 1001 :
 
 - Dans l'interface d'administration de 3CX, rendez-vous sur la catégorie `Utilisateurs`{.action}.
 - Cliquez sur le bouton `Ajouter`{.action}.
-- Dans le champ **Extension**, Saisissez `1001`.
-- Saisissez ensuite les Nom, Prénom, Adresse mail et numéro de mobile sur la fiche de création de l'extension. 
+- Dans le champ **Extension**, saisissez `1001`.
+- Saisissez ensuite les Nom, Prénom, Adresse e-mail et numéro de mobile sur la fiche de création de l'extension.
 - Dans le champ **Identifiant d'appelant transmis**, saisissez le DDI à présenter. Dans l'exemple du guide, il s'agit du 0033XXXXXXX10.
 - Cliquez sur `Appliquer`{.action} pour prendre en compte la modification.
 
 ![3CX Phone System](images/3cx_phone_system-trunk06.png){.thumbnail}
 
-### Création des règles entrantes pour les DDI.
+### Création des règles entrantes pour les DDI
 
 Créez des règles d'appel entrant lorsque les DDI sont appelés. 
 

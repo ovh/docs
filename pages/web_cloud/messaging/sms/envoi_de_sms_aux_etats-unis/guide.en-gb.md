@@ -6,7 +6,7 @@ updated: 2022-08-05
 
 ## Objective
 
-There are specific rules for sending SMS to the United States. The guide will explain the rules and show you how to apply them, so that you can send SMS messages to the US.
+Sending SMS messages to the United States requires compliance with specific rules. This guide explains these rules and shows how to apply them.
 
 ## Requirements
 
@@ -37,7 +37,7 @@ You can request the validation of multiple message templates.
 
 > [!primary]
 >
-Setting message templates is free and is carried out by the OVHcloud teams within two working days.
+> Setting message templates is free and is carried out by the OVHcloud teams within two working days.
 >
 
 ### Step 2: Adding a template
@@ -103,7 +103,7 @@ Once your message template has been created and validated, the outgoing SMS auto
 
 If you send an SMS to the US without creating and validating a template, the SMS will be rejected and the Premium Tracking Transaction Code (PTT code) 1999 will be sent to you, which corresponds to the “No templates available” error message.
 
-You can view the other possible return codes in [this guide](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms).
+You can view the other possible return codes in the [SMS users guide](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms).
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud VPS FAQ"
 excerpt: "Encuentre las respuestas a las preguntas más frecuentes sobre nuestras ofertas de VPS"
-updated: 2025-10-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -226,6 +226,20 @@ Por ejemplo, ofrecemos una gama de plantillas y imágenes preconfiguradas para s
 Además, nuestra documentación y base de conocimientos contienen una gran cantidad de información sobre la configuración y gestión de tu VPS.
 
 Sin embargo, para asistencia específica en la configuración de software, te recomendamos contactar con nuestra [comunidad](/links/community) o buscar la ayuda de un administrador de sistemas o desarrollador cualificado a través de nuestro [portal de socios](/links/partner).
+
+///
+
+/// details | ¿Cuáles son las buenas prácticas para el envío de e-mails desde un VPS?
+
+Para evitar que tus e-mails sean considerados como spam, debes configurar correctamente tu servidor.
+
+Esto incluye:
+
+- la autenticación de e-mails (SPF, DKIM, DMARC),
+- la configuración del reverse DNS (PTR),
+- el cumplimiento de las buenas prácticas de los proveedores de correo electrónico.
+
+Para más información, consulta nuestra guía dedicada: [Cómo evitar que tus e-mails sean marcados como spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 ///
 

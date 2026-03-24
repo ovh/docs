@@ -46,7 +46,7 @@ Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai rif
 >  ![email2sms](images/plaintext01.png){.thumbnail}
 >
 
-### Step 1: Includere nella tua mail i campi obbligatori
+### Passaggio 1: Includere nella tua mail i campi obbligatori
 
 Apri la tua webmail o il tuo client di posta e poi crea una e-mail. 
 
@@ -80,7 +80,7 @@ Il risultato dovrebbe essere simile a quello dell’immagine qui di seguito. Per
 
 Puoi consultare la guida che segue per qualsiasi dettaglio sugli utenti SMS: [Tutte le informazioni sugli utenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
 
-### Step 2: Aggiungere dei campi facoltativi
+### Passaggio 2: Aggiungere dei campi facoltativi
 
 Puoi aggiungere campi supplementari nell’oggetto, quali:
 
@@ -131,7 +131,7 @@ Ecco un esempio di e-mail che comprende del campi facoltativi:
 >Se si modifica la codifica su Unicode, l’SMS sarà al massimo di 70 caratteri rispetto ai 160 della codifica a 7 bit.
 >
 
-### Step 3: Gestire i destinatari dell’SMS
+### Passaggio 3: Gestire i destinatari dell’SMS
 
 Il o i destinatari del messaggio possono essere gestiti in diversi modi.
 
@@ -139,7 +139,7 @@ Il o i destinatari del messaggio possono essere gestiti in diversi modi.
 
 - Sia aggiungendo all’e-mail, come allegato, un file di testo (formato txt) nominato "contact" che contenga il/i numero/i di telefono del o dei destinatari, nel formato internazionale (esempio in Italia: +39xxxxxxxxx), nella misura di un numero per riga nel file.
 
-### Step 4: Analizzare il rapporto di invio
+### Passaggio 4: Analizzare il rapporto di invio
 
 Una volta effettuato l’invio, riceverai via e-mail un rapporto di invio. Il rapporto di seguito indica che l’invio è stato completato:
 
@@ -151,7 +151,7 @@ Se durante l’invio hai riscontrato un errore, ti sarà notificato nel rapporto
 
 ## Allegato
 
-Le 2 tabelle qui sotto indicano i caratteri autorizzato in codifica a 7 bit. I caratteri della tabella “Estensioni” contano il doppio. 
+Le 2 tabelle qui sotto indicano i caratteri autorizzati in codifica a 7 bit. I caratteri della tabella “Estensioni” contano il doppio. 
 
 La lunghezza massima di un SMS è di 160 caratteri con codifica a 7 bit (norma GSM 03.38).
 

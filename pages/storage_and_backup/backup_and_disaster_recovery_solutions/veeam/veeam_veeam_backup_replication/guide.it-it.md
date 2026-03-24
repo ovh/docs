@@ -1,7 +1,7 @@
 ---
 title: 'Installare Veeam Backup & Replication (EN)'
 excerpt: 'Come configurare un server Veeam Backup & Replication con Veeam Enterprise'
-updated: 2026-03-10
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -12,9 +12,7 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 > [!warning]
 >
-> If a virtual machine is protected using multiple backup methods (for example **VMware backup** and **Veeam Agent for Linux**), each method consumes a separate licence.
->
-> As a result, the same virtual machine may be **billed twice during the same month**.
+> If a virtual machine is protected using multiple backup methods (for example [VM backup](https://helpcenter.veeam.com/docs/vbr/qsg/vm_backup.html?ver=13) and [Agent backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html?ver=13)), each method consumes a separate licence and is billed independently.
 >
 > To avoid additional charges, protect each virtual machine using **only one backup method**.
 >

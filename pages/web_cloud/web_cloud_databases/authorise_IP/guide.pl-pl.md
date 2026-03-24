@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Jak autoryzować adres IP?"
 excerpt: "Dowiedz się, jak autoryzować jeden lub więcej adresów IP, aby uzyskać dostęp do rozwiązania Web Cloud Databases"
-updated: 2025-07-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -41,7 +41,7 @@ Chcesz zmienić te uprawnienia/ograniczenia?
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Link bezpośredni:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wybierz usługę bazy danych
 
 ---
@@ -60,7 +60,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Etap 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie Web Cloud Databases.
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -126,7 +126,7 @@ Jeśli chcesz wyłączyć to uprawnienie, ponieważ nie korzystasz z hostingu WW
 > [!tabs]
 > **Etap 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie Web Cloud Databases.
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -147,7 +147,7 @@ Jeśli chcesz wyłączyć to uprawnienie, ponieważ nie korzystasz z hostingu WW
 ## Sprawdź również
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
- 
+
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).

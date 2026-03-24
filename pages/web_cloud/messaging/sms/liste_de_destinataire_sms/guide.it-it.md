@@ -34,7 +34,7 @@ Per inviare una campagna SMS a contatti multipli, è possibile importare una o p
 
 ## Procedura
 
-### Step 1: Crea una lista di destinatari
+### Passaggio 1: Crea una lista di destinatari
 
 #### Crea la tua lista tramite un foglio di calcolo
 
@@ -76,7 +76,7 @@ Il risultato ottenuto dovrebbe essere di questo tipo:
 
 ![recipients](images/sms-recipientlist-1.png){.thumbnail}
 
-### Step 2: Importare la tua lista dallo Spazio Cliente OVHcloud
+### Passaggio 2: Importare la tua lista dallo Spazio Cliente OVHcloud
 
 Clicca sulla scheda `Contatti`{.action} e su `Crea una lista di contatti`{.action}.
 
@@ -92,13 +92,13 @@ Attribuisci un nome alla lista di destinatari e importa il file locale nello Spa
 
 ![recipients](images/sms-recipientlist-6b.png){.thumbnail}
 
-### Step 3: Inviare un SMS alla tua lista di destinatari
+### Passaggio 3: Inviare un SMS alla tua lista di destinatari
 
-Adesso che hai importato la tua lista, segui la guida [Inviara SMS dal tuo Spazio Cliente](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client) per inviare un SMS ai destinatari della lista.
+Adesso che hai importato la tua lista, segui la guida [Inviare SMS dal tuo Spazio Cliente](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client) per inviare un SMS ai destinatari della lista.
 
 ## Per saperne di più
 
-[Inviara SMS dal tuo Spazio Cliente](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client)
+[Inviare SMS dal tuo Spazio Cliente](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client)
 
 [Gestire le rubriche indirizzi SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms)
 

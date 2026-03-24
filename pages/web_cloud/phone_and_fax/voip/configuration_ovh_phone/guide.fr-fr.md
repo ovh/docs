@@ -121,7 +121,7 @@ Pour finir, ajoutez dans le champ concerné le nombre de modules d'extension de 
 
 ### Configurer les étiquettes de touches personnalisées
 
-Vous pouvez également attribuer un nom personnalisé à chacune de vos touches programmables. Depuis l'onglet `Téléphone`{.action}, choisissez à nouveau `Paramètres Plug & Phone personnalisés`{.action}. Cliquez alors sur `Gérer les paramètres`{.action} et renseignez les noms souhaités dans les champs `Etiquette de touche`{.action}. La numérotation de ces touches correspond à l'ordre des touches de votre téléphone, la touche N°1 étant celle la plus en haut à gauche du poste.
+Vous pouvez également attribuer un nom personnalisé à chacune de vos touches programmables. Depuis l'onglet `Téléphone`{.action}, choisissez à nouveau `Paramètres Plug & Phone personnalisés`{.action}. Cliquez alors sur `Gérer les paramètres`{.action} et renseignez les noms souhaités dans les champs `Étiquette de touche`{.action}. La numérotation de ces touches correspond à l'ordre des touches de votre téléphone, la touche N°1 étant celle la plus en haut à gauche du poste.
 Cliquez enfin sur `Modifier les paramètres`{.action} pour valider cette configuration
 
 ![etiquettes-touches](images/etiquettesb.gif){.thumbnail}

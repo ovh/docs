@@ -21,7 +21,7 @@ Vous pouvez configurer votre ligne fax en tant que messagerie vocale directement
 <!-- CP-NAV-START:telecom-voip-fax -->
 ---
 
-### Accès à l’espace client OVHcloud
+### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
 - **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
@@ -53,7 +53,7 @@ Un mot de passe d'accès, composé de 4 chiffres, est nécessaire pour cette man
 
 Le bouton `Configuration du répondeur`{.action} vous permet de configurer l'enregistrement des messages ainsi que le message d'accueil de votre répondeur.
 
-Vous avez aussi la possibilité de renseigner jusqu'à 5 adresses e-mail de notification, sur lesquelles vous pourrez également recevoir les messages. Vous pouvez définir différents formats audio.
+Vous pouvez aussi renseigner jusqu'à 5 adresses e-mail de notification, sur lesquelles vous pourrez également recevoir les messages. Vous pouvez définir différents formats audio.
 
 Personnalisez l'adresse e-mail et le nom de l'expéditeur des notifications que vous recevez, permettant d'éviter les filtres automatiques (type spam webmail).
 

@@ -76,7 +76,7 @@ Sur la page qui s'affiche, vous pouvez mettre en place un renvoi d'appel selon q
 |Renvoi de tous les appels|L'intégralité des appels est renvoyée de façon inconditionnelle.|
 |Renvoi quand il n'y a pas de réponse|Les appels sont renvoyés en cas de non-réponse sur le téléphone contacté. Vous devez définir le temps avant que l'appel ne soit renvoyé.|
 |Renvoi quand la ligne est occupée|Les appels sont renvoyés si la ligne est occupée (c'est-à-dire lorsque tous vos appels simultanés sont en cours).|
-|Renvoi quand la ligne est injoignable ou déconnectée|Les appels sont renvoyés dans le cas où notre serveur de téléphonie ne détecte aucune connexion vers votre ligne (par exemple, lors d'une interruption de votre connexion internet).|
+|Renvoi quand la ligne est injoignable ou déconnectée|Les appels sont renvoyés dans le cas où notre serveur de téléphonie ne détecte aucune connexion vers votre ligne (par exemple, lors d'une interruption de votre connexion Internet).|
 
 Pour activer une configuration, cochez la case à côté de cette dernière puis sélectionnez où renvoyer l'appel ainsi que le numéro correspondant.
 

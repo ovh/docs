@@ -50,7 +50,7 @@ Dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie
 > Pour en savoir plus sur la configuration à distance du modem OVHcloud, veuillez consulter le guide suivant : [Configurer sa box à partir de l'espace client OVHcloud](/pages/web_cloud/internet/internet_access/configuration_du_modem_a_partir_de_votre_espace_client).
 >
 
-Pour activer ou désactiver l'IPv6 sur votre accès Internet, il suffit simplement de cocher ou décocher la case :
+Pour activer ou désactiver l'IPv6 sur votre accès Internet, il suffit de cocher ou décocher la case :
 
 ![IPv6 status](images/IPv6-activate.png){.thumbnail}
 
@@ -64,7 +64,7 @@ Pour activer ou désactiver l'IPv6 sur votre accès Internet, il suffit simpleme
 >
 > Si vous ne possédez pas de modem OVHcloud, reportez-vous à la notice d'utilisation de votre modem afin d'utiliser votre IPv6.
 
-Afin de vérifier si vous avez bien l'IPv6 d'activée, vous pouvez utiliser une commande simple qui permettra d'afficher votre adresse IPv6 utilisée pour la navigation Internet.
+Pour vérifier que l'IPv6 est active, utilisez la commande suivante qui affiche votre adresse IPv6 publique.
 
 Ouvrez un terminal de commande et tapez la commande suivante :
 

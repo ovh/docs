@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Come autorizzare un indirizzo IP?"
 excerpt: "Scopri come autorizzare uno o più indirizzi IP ad accedere alla tua soluzione Web Cloud Databases"
-updated: 2025-07-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -35,12 +35,13 @@ Di default, per motivi di sicurezza, su queste soluzioni:
 
 - Disporre di una soluzione [Web Cloud Databases](/links/web/databases).
 - Conoscere l’indirizzo IP (o la classe di indirizzi IP) da autorizzare sulla soluzione.
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Link diretto:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo database service
 
 ---
@@ -59,7 +60,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-cloud-databases) e seleziona la soluzione Web Cloud Databases interessata.
+>> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -116,7 +117,6 @@ In questo modo, infatti, tutti gli indirizzi IPv4 esistenti potrebbero avere acc
 
 ///
 
-
 /// details | L'autorizzazione di accesso agli hosting Web OVHcloud
 
 Quando attivi la tua soluzione Web Cloud Databases, l’autorizzazione di accesso agli hosting Web OVHcloud è attiva di default.
@@ -126,7 +126,7 @@ Se vuoi disattivare questa autorizzazione perché non utilizzi un hosting Web co
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-cloud-databases) e seleziona la soluzione Web Cloud Databases interessata.
+>> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -147,7 +147,7 @@ Se vuoi disattivare questa autorizzazione perché non utilizzi un hosting Web co
 ## Per saperne di più
  
 Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
- 
+
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
- 
+
 Contatta la nostra [Community di utenti](/links/community).

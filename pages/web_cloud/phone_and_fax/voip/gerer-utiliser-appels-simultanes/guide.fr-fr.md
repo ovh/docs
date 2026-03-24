@@ -36,10 +36,10 @@ Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Appels simultanés`{.a
 
 ![appels-simultanes](images/simultaneous-call-step1.png){.thumbnail}
 
-La page qui s'affiche vous permet de visualiser le nombre d'appels simultanés inclus dans votre offre ou en option sur votre ligne. Selon vos besoins, vous avez la possibilité d'augmenter ou de diminuer ce nombre en utilisant les flèches à droite du nombre actuel d'appels simultanés. Avant d'entamer toute démarche, nous vous recommandons de vous assurer que :
+La page qui s'affiche vous permet de visualiser le nombre d'appels simultanés inclus dans votre offre ou en option sur votre ligne. Selon vos besoins, vous pouvez augmenter ou diminuer ce nombre en utilisant les flèches à droite du nombre actuel d'appels simultanés. Avant d'entamer toute démarche, nous vous recommandons de vous assurer que :
 
 - le téléphone sur lequel est configurée votre ligne est apte à gérer le nombre d'appels simultanés dont vous souhaitez bénéficier. Retrouvez plus d'informations sur les téléphones depuis le lien : <https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml> ;
-- la bande passante de votre connexion internet est suffisamment dimensionnée pour gérer le nombre d'appels simultanés dont vous souhaitez bénéficier. Pour une utilisation optimale, une bande passante comprise entre 70 et 100 Kbit/s est requise par appel simultané.
+- la bande passante de votre connexion Internet est suffisamment dimensionnée pour gérer le nombre d'appels simultanés dont vous souhaitez bénéficier. Pour une utilisation optimale, une bande passante comprise entre 70 et 100 Kbit/s est requise par appel simultané.
 
 Dès que vous êtes prêt, modifiez le nombre d'appels simultanés grâce aux flèches, puis suivez les étapes qui s'affichent. Pour chaque ajout, n'oubliez pas de payer le bon de commande qui s'affichera.
 
@@ -47,7 +47,7 @@ Dès que vous êtes prêt, modifiez le nombre d'appels simultanés grâce aux fl
 
 ### Utiliser les appels simultanés
 
-Vous avez la possibilité d'utiliser les appels simultanés selon le nombre maximum d'appels défini dans votre offre ou votre option. **Chaque appel en cours consomme un appel simultané**. La ligne utilisée doit donc disposer d'un appel simultané disponible si vous souhaitez en utiliser un nouveau. 
+Vous pouvez utiliser les appels simultanés selon le nombre maximum d'appels défini dans votre offre ou votre option. **Chaque appel en cours consomme un appel simultané**. La ligne utilisée doit donc disposer d'un appel simultané disponible si vous souhaitez en utiliser un nouveau. 
 
 Un signal sonore (un bip) vous avertira lorsque vous recevrez un nouvel appel, utilisant donc un appel simultané. Votre téléphone doit être compatible afin de pouvoir entendre ce signal. Reportez-vous aux documentations OVHcloud accessibles depuis le lien <https://www.ovhtelecom.fr/telephonie/telephones/cisco_CP8851/documents.xml> pour le vérifier.
 

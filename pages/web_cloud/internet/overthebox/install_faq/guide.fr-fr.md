@@ -24,7 +24,7 @@ Retrouvez ici les questions les plus fréquemment posées sur le service [OverTh
 
 /// details | Où puis-je trouver des documentations techniques à propos d'OverTheBox ?
 
-Vous pouvez trouver des guides sur [ce lien](/products/web-cloud-internet-overthebox).
+Vous pouvez trouver des guides sur la [page de documentation OverTheBox](/products/web-cloud-internet-overthebox).
 
 ///
 
@@ -42,7 +42,7 @@ L'OverTheBox est un équipement réseau qui se branche sur votre réseau local c
 
 /// details | Dois-je avoir un réseau spécifique pour utiliser OverTheBox ?
 
-Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres réseaux WiFi (suivant votre type d'OverTheBox) ou encore vos boîtiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans le guide d'installation suivant : [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
+Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres réseaux Wi-Fi (suivant votre type d'OverTheBox) ou encore vos boîtiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans le guide d'installation suivant : [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
 
 ///
 
@@ -64,11 +64,11 @@ Votre adresse IP publique va en effet changer pour une IP fournie par OVHcloud q
 
 ///
 
-/// details | Est-ce que le WiFi est intégré dans la box OverTheBox ?
+/// details | Est-ce que le Wi-Fi est intégré dans la box OverTheBox ?
 
-Les boîtiers OverTheBox ne supportent pas le WiFi.
-Pour les OverTheBox Intel et IT v1, vous pouvez sans problème utiliser le WiFi de vos modems ou un point d'accès WiFi dédié.
-Pour l'OverTheBox Plus ou l'OverTheBox IT v2, les modems sont isolés dans leurs propres VLAN, le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet. Consultez à cet effet notre guide « [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb) ». Dans les autres cas de figure, il faudra utiliser un point d'accès WiFi dédié. Le WiFi de vos modems reste fonctionnel mais les équipements connectés ne profiteront pas de l'agrégation, ni du tunnel chiffré.
+Les boîtiers OverTheBox ne supportent pas le Wi-Fi.
+Pour les OverTheBox Intel et IT v1, vous pouvez sans problème utiliser le Wi-Fi de vos modems ou un point d'accès Wi-Fi dédié.
+Pour l'OverTheBox Plus ou l'OverTheBox IT v2, les modems sont isolés dans leurs propres VLAN, le Wi-Fi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le Wi-Fi d'un modem Zyxel fourni avec l'une de nos offres Internet. Consultez à cet effet notre guide « [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb) ». Dans les autres cas de figure, il faudra utiliser un point d'accès Wi-Fi dédié. Le Wi-Fi de vos modems reste fonctionnel mais les équipements connectés ne profiteront pas de l'agrégation, ni du tunnel chiffré.
 
 ///
 
@@ -78,7 +78,7 @@ Actuellement il n'est pas possible de choisir le data-centre pour votre service 
 
 ///
 
-/// details | Est-ce qu'OverTheBox peut-être utilisé à l'étranger ?
+/// details | Est-ce qu'OverTheBox peut être utilisé à l'étranger ?
 
 Actuellement, nous ne fournissons pas d'IP publique ou d'hébergement hors France mais il est tout à fait possible d'utiliser OverTheBox sur un réseau étranger (sous réserve de compatibilité des routeurs sur site).
 
@@ -126,7 +126,7 @@ Suivant l'offre souscrite, l'abonnement sera au prix mensuel de 19,99€ HT pour
 
 /// details | Est-il possible de virtualiser OverTheBox ?
 
-Oui, il est possible de virtualiser OverTheBox. Nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une machine virtuelle compatible Linux : [Installer l’image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)
+Oui, il est possible de virtualiser OverTheBox. Nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un matériel personnel, depuis une machine virtuelle compatible Linux : [Installer l’image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)
 
 ///
 
@@ -138,7 +138,7 @@ Oui, c'est possible via différentes méthodes expliquées dans ce guide : [Réi
 
 /// details | Pourquoi utiliser un lien 4G avec OverTheBox ?
 
-Grâce à un lien 4G, votre **OverTheBox** est capable de tirer parti des réseaux mobiles afin d'améliorer les performances ou la résilience de votre accès internet.
+Grâce à un lien 4G, votre **OverTheBox** est capable de tirer parti des réseaux mobiles afin d'améliorer les performances ou la résilience de votre accès Internet.
 Un lien 4G permet une continuité de service en cas de défaillance sur votre réseau fixe (cuivre ou fibre), en utilisant un autre support technologique pour accéder à Internet.
 <br>De plus, les débits offerts par les connexions 4G sont souvent supérieurs aux connexions cuivre. Cela permet d'améliorer significativement votre débit, en particulier le débit montant, grâce à l'agrégation permise par votre service OverTheBox.
 Toutefois, les liens sur les réseaux mobiles sont sujets à de plus grandes variations de latence, ce qui peut avoir un impact négatif sur certaines applications.
@@ -189,7 +189,7 @@ En fonction de votre modèle, entre 2 et 3 liens 4G sont supportés en plus des 
 
 /// details | Dois-je réinstaller l'OTB V3 LTE si je remplace ma carte SIM par celle d'un autre opérateur ?
 
-Non, il n'est pas nécessaire de réinstaller le système. Cependant, il faudra peut être modifier la configuration de l'interface tel que l'APN ou le PIN de la carte SIM, comme indiqué dans le guide « [Comment configurer un lien 4G sur OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
+Non, il n'est pas nécessaire de réinstaller le système. Cependant, il faudra peut-être modifier la configuration de l'interface telle que l'APN ou le PIN de la carte SIM, comme indiqué dans le guide « [Comment configurer un lien 4G sur OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) »
 
 ///
 

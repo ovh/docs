@@ -15,7 +15,7 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso alle [API OVHcloud](/links/api)(soltanto per trasferire i crediti)
+- Avere accesso alle [API OVHcloud](/links/api) (soltanto per trasferire i crediti)
 
 <!-- CP-NAV-START:telecom-sms -->
 ---
@@ -34,16 +34,16 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 
 ### Pack crediti SMS
 
-0,7 credito SMS corrisponde al costo per l’invio di 1 SMS in Italia, la tariffa è decrescente in base al numero di crediti SMS acquistati in una sola volta . 
+0,7 credito SMS corrisponde al costo per l’invio di 1 SMS in Italia, la tariffa è decrescente in base al numero di crediti SMS acquistati in una sola volta.
 
-Per visualizzare la lista completa dei Pack SMS clicca [qui](/links/telecom/sms).
+Per visualizzare la lista completa dei Pack SMS consulta la [pagina dei Pack SMS](/links/telecom/sms).
 
-**Ad esempio, per l’acquisto di un pack di 100 crediti SMS, il costo di ciascun credito è pari a 0,042 € IVA esclusa :**
+**Ad esempio, per l’acquisto di un pack di 100 crediti SMS, il costo di ciascun credito è pari a 0,042 € IVA esclusa:**
 
 Il costo per l’invio di 1 SMS in Italia è pari a 0,7 credito. Con questo pack, è possibile inviare fino a 142 SMS in Italia.<br>
-Il costo per l’invio di 1 SMS in India è pari a 0,4 crediti. Con questo pack è possibile inviare fino a 250 SMS i, India.
+Il costo per l’invio di 1 SMS in India è pari a 0,4 crediti. Con questo pack è possibile inviare fino a 250 SMS in India.
 
-Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle loro destinazioni, clicca [qui](/links/telecom/sms-prices).
+Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle loro destinazioni, consulta la [pagina dei costi SMS](/links/telecom/sms-prices).
 
 > [!primary]
 >
@@ -54,7 +54,7 @@ Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle lo
 
 ### Ricarica automatica
 
-Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile e attivare la ricarica automatica. Non appena viene raggiunta la soglia minima di crediti rimanenti, un nuovo numero di crediti viene automaticamente aggiunto al tuo account SMS.
+Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile attivare la ricarica automatica. Non appena viene raggiunta la soglia minima di crediti rimanenti, un nuovo numero di crediti viene automaticamente aggiunto al tuo account SMS.
 
 > [!warning]
 >

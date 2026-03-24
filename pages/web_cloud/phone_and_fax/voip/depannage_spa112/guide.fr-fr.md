@@ -19,13 +19,13 @@ L'origine de cette situation se situe :
 
 Soit dans le raccordement de la prise électrique (vérifiez que l'appareil, raccordé sur une autre prise murale, a le même comportement)
 
-Soit dans le chargeur qui permet d'alimenter le SPA112. Si vous avez plusieurs équipement identique, inversez le changeur. Si non, n'hésitez pas à employer une alimentation identique : 5V - 2A
+Soit dans le chargeur qui permet d'alimenter le SPA112. Si vous avez plusieurs équipements identiques, inversez le chargeur. Sinon, n'hésitez pas à employer une alimentation identique : 5V - 2A
 
 S'il s'avère que votre adaptateur est défaillant, nous vous prions de vous rapprocher du support technique par téléphone ou par mail pour procéder à un échange SAV.
 
 ------------------------------------------------------------------------
 
-## Le voyant Line 1 de mon boîtier est complétement éteint {#le-voyant-line-1-de-mon-boîtier-est-complétement-éteint}
+## Le voyant Line 1 de mon boîtier est complètement éteint {#le-voyant-line-1-de-mon-boîtier-est-complètement-éteint}
 
 Le fait que le voyant Phone 1 soit éteint signifie que votre ligne OVHcloud n'est pas enregistrée (authentifiée) dans le SPA112. Autrement dit, le boîtier ne communique pas avec le serveur de téléphonie. Aucune chance que vous puissiez émettre ou recevoir un appel via votre ligne.
 
@@ -39,13 +39,13 @@ Si le phénomène persiste, reconfigurez le à l'aide du guide "[Reconfiguration
 
 Lorsque le voyant Téléphone 1 clignote en vert, de manière régulière, c'est que le combiné raccordé sur Phone 1 est en prise de ligne, décroché. Si toutefois il s'agit d'un fax, alors le télécopieur tente de prendre la ligne.
 
-Pour vérifier cette hypothèse, débranchez toutes les prises raccordées au SPA112 puis rebranchez uniquement l'alimentation.Le boîtier met environ une minute à démarrer.
+Pour vérifier cette hypothèse, débranchez toutes les prises raccordées au SPA112 puis rebranchez uniquement l'alimentation. Le boîtier met environ une minute à démarrer.
 
 Si Téléphone 1 continue de clignoter après cela, nous vous prions de vous rapprocher du support technique par téléphone ou par mail pour procéder à un échange SAV.
 
 ------------------------------------------------------------------------
 
-## Je ne parviens ni à émettre ni à recevoir malgré que le voyant Line 1 soit allumé {#je-ne-parviens-ni-à-émettre-ni-à-recevoir-malgré-que-le-voyant-line-1-soit-allumé}
+## Je ne parviens ni à émettre ni à recevoir bien que le voyant Line 1 soit allumé {#je-ne-parviens-ni-à-émettre-ni-à-recevoir-malgré-que-le-voyant-line-1-soit-allumé}
 
 Le fait que le voyant Phone 1 soit allumé en vert fixe signifie que votre ligne OVHcloud est bien enregistrée (authentifiée) dans le SPA112.
 

@@ -53,7 +53,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 >
 > - The website of the respective **TLD** registry
 > - The [list of **TLD**s available at OVHcloud](/links/web/domains-tld)
-> - The domain name status updates. To check this, log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click on `Ongoing operations`{.action}.
+> - The domain name status updates. To check this, go to the [Ongoing operations](/links/control-panel/web-ongoing-operations) page.
 
 ### Initiating the holder change procedure or editing the holder information
 
@@ -62,7 +62,7 @@ Click on the tabs below to view each of the **6** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

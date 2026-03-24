@@ -1,6 +1,6 @@
 ---
 title: "Ligne SIP - commander, modifier, rattacher ou détacher un téléphone OVHcloud"
-excerpt: 'Découvrez comment effectuer la gestion des téléphones associés à vos lignes SIP depuis votre espace client'
+excerpt: 'Découvrez comment gérer les téléphones associés à vos lignes SIP depuis votre espace client'
 updated: 2025-04-28
 ---
 
@@ -8,7 +8,7 @@ updated: 2025-04-28
 
 Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depuis l'appareil de votre choix. Celui-ci peut notamment être un téléphone OVHcloud que vous pouvez gérer depuis votre espace client.
 
-**Découvrez comment effectuer la gestion des téléphones associés à vos lignes SIP OVHcloud depuis votre espace client.**
+**Découvrez comment gérer les téléphones associés à vos lignes SIP OVHcloud depuis votre espace client.**
 
 ## Prérequis
 
@@ -55,7 +55,7 @@ Si vous souhaitez rattacher votre ligne SIP à un équipement OVHcloud que vous 
 
 ### Changer ou renvoyer le téléphone de votre ligne <a name="changer-telephone"></a>
 
-Lorsque vous possédez une ligne SIP OVHcloud actuellement rattachée à un téléphone OVHcloud, vous avez la possibilité de :
+Lorsque vous possédez une ligne SIP OVHcloud actuellement rattachée à un téléphone OVHcloud, vous pouvez :
 
 - changer votre téléphone actuel pour un autre modèle ;
 - renvoyer le téléphone que vous possédez actuellement.
@@ -90,7 +90,7 @@ Sur la page qui s'affiche, dans la partie « Choix de l'équipement », sélec
 > ![IP publique](images/public-ip.png){.thumbnail}
 >
 
-Certains téléphones OVHcloud peuvent être associés à plusieurs lignes SIP. Vous avez donc la possibilité de rattacher une ligne SIP OVHcloud à un téléphone que vous possédez déjà, seulement si :
+Certains téléphones OVHcloud peuvent être associés à plusieurs lignes SIP. Vous pouvez donc rattacher une ligne SIP OVHcloud à un téléphone que vous possédez déjà, seulement si :
 
 - la ligne SIP sélectionnée n'est actuellement rattachée à aucun téléphone OVHcloud ;
 - le téléphone OVHcloud sélectionné peut accueillir une ligne configurée supplémentaire.

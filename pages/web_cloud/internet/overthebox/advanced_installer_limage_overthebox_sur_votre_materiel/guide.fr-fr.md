@@ -145,7 +145,7 @@ Maintenant que vous connaissez l'emplacement de votre clé USB, vous pouvez flas
 - Tapez la commande suivante (**en remplaçant X par la bonne lettre de votre clé**) :
 
 ```bash
-# Positionnez vous dans le dossier où ce trouve l'image
+# Positionnez vous dans le dossier où se trouve l'image
 cd ~/Téléchargements
 gunzip -c latest.img.gz | dd of=/dev/sdX
 ```

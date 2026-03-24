@@ -17,7 +17,7 @@ Découvrez comment installer et configurer votre ancien appareil OverTheBox v1 (
 ## Prérequis
 
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
-- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)).
+- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)).
 <!-- CP-NAV-START:telecom-otb -->
 ---
 
@@ -100,14 +100,14 @@ Les modems et l'**OverTheBox** ne doivent toujours pas être reliés entre eux.
 
 #### Étape 2 : branchements au modem principal
 
-- Parmi vos modems, choisissez celui qui sera le **"modem principal"**. C'est sur ce dernier que seront branchés tous vos équipements, ainsi que l'**OverTheBox**.
+- Parmi vos modems, choisissez celui qui sera le **« modem principal »**. C'est sur ce dernier que seront branchés tous vos équipements, ainsi que l'**OverTheBox**.
 
 > [!primary]
 >
 > Si vous utilisez la télévision via l'un de vos modems (Box TV), il est préférable de le sélectionner comme modem principal.
 >
 
-- Branchez votre  **OverTheBox** sur le courant électrique et sur le **"modem principal"** via un **câble RJ45** (câble jaune sur l'image ci-dessous).
+- Branchez votre **OverTheBox** sur le courant électrique et sur le **« modem principal »** via un **câble RJ45** (câble jaune sur l'image ci-dessous).
 
 > [!warning]
 >
@@ -197,14 +197,14 @@ Cette opération dure 30 secondes. Le DHCP sera ensuite géré par votre **OverT
 
 ![overthebox](images/installationV1-step4-4.png){.thumbnail}
 
-- Rafraichissez ensuite la configuration réseau de votre ordinateur afin que ce dernier soit désormais pris en charge par l'**OverTheBox**. Pour ce faire :
+- Rafraîchissez ensuite la configuration réseau de votre ordinateur afin que ce dernier soit désormais pris en charge par l'**OverTheBox**. Pour ce faire :
     - En **Ethernet RJ45** : débranchez et rebranchez le câble RJ45.
-    - En **Wifi** : coupez le WiFi et réactivez-le.
-- Assurez vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur notre site [http://proof.ovh.net/](http://proof.ovh.net/). Vous devez obtenir une IP similaire à 109.190.x.y ou 151.127.x.y:
+    - En **Wi-Fi** : coupez le Wi-Fi et réactivez-le.
+- Assurez-vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur notre site [http://proof.ovh.net/](http://proof.ovh.net/). Vous devez obtenir une IP similaire à 109.190.x.y ou 151.127.x.y:
 
 ![overthebox](images/installationV1-step4-5.png){.thumbnail}
 
-- Si vous ne voyez pas le domaine **overthebox.ovh**, veuillez renouveller manuellement la configuration réseau de votre ordinateur. Pour ce faire :
+- Si vous ne voyez pas le domaine **overthebox.ovh**, veuillez renouveler manuellement la configuration réseau de votre ordinateur. Pour ce faire :
     - Sous **Windows**, ouvrez une invite de commande grâce au raccourci clavier **Windows + R** puis en tapant **cmd** dans la zone d'execution.
     - Tapez dans l'invite de commande :
 ```bash
@@ -257,7 +257,7 @@ Cette opération dure 30 secondes.
 
 ![overthebox](images/installationV1-step5-3.png){.thumbnail}
 
-La configuration est terminée. Votre  **OverTheBox**  utilise à présent les deux connexions simultanées, comme indiqué à l'accueil de [http://overthebox.ovh](http://overthebox.ovh) :
+La configuration est terminée. Votre **OverTheBox** utilise à présent les deux connexions simultanées, comme indiqué à l'accueil de [http://overthebox.ovh](http://overthebox.ovh) :
 
 ![overthebox](images/installationV1-step5-4.png){.thumbnail}
 
