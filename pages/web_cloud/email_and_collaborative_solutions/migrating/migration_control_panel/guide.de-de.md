@@ -92,7 +92,7 @@ Bevor Sie mit der Migration beginnen, müssen Sie die Version des MX Plan identi
 >
 > Wenn Sie Ihr neues E-Mail Angebot gerade erst bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrem E-Mail-Dienst hinzu, bevor Sie mit der Migration beginnen. <br> - *Um beispielsweise den Account "myemail@mydomain.ovh" zu migrieren, müssen Sie die Domain "mydomain.ovh" zu Ihrem Dienst hinzufügen.*
 >
-> Wählen Sie den Tab `Zugeordnete Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform aus und klicken Sie auf `Domain hinzufügen`{.action}. Sobald der Domainname hinzugefügt wurde, stellen Sie sicher, dass die Bezeichnung `OK` oder `Aktiv`{.action} in der Spalte `Status` angezeigt wird.
+> Wählen Sie den Tab `Assoziierte Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform aus und klicken Sie auf `Domain hinzufügen`{.action}. Sobald der Domainname hinzugefügt wurde, stellen Sie sicher, dass die Bezeichnung `OK` oder `Aktiv`{.action} in der Spalte `Status` angezeigt wird.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
@@ -187,7 +187,7 @@ Bestätigen Sie anschließend das Passwort des Quell-Accounts (die Adresse, die 
 
 In diesem Schritt müssen Ihre E-Mail-Accounts bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihres Domainnamens in Ihrem Kundencenter zu überprüfen.
 
-Dazu wählen Sie den betreffenden Email Pro-, Exchange- oder Zimbra-Dienst aus und gehen Sie auf den Tab `Zugeordnete Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform. Überprüfen Sie den Abschnitt oder die Spalte `Diagnose`{.action}.
+Dazu wählen Sie den betreffenden Email Pro-, Exchange- oder Zimbra-Dienst aus und gehen Sie auf den Tab `Assoziierte Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform. Überprüfen Sie den Abschnitt oder die Spalte `Diagnose`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 

@@ -60,11 +60,11 @@ Las instrucciones siguientes se dividen en dos partes:
 
 Si tiene una cuenta de correo [Exchange de OVHcloud](/links/web/emails-hosted-exchange), puede exportarla directamente en formato PST desde el área de cliente.
 
-En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta de correo que quiera exportar y luego en `Exportar en formato PST`{.action}.
+En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta de correo que quiera exportar y luego en `Exportar a PST`{.action}.
 
 ![correo electrónico](images/manager-export-pst01.png){.thumbnail .w-640}
 
-A continuación, habrá que esperar el tiempo de la exportación, que puede tardar unos minutos a varias horas, según el tamaño de la exportación. Al final del archivo, solo tendrá que volver al botón `Exportar en formato PST`{.action} para descargar el archivo.
+A continuación, habrá que esperar el tiempo de la exportación, que puede tardar unos minutos a varias horas, según el tamaño de la exportación. Al final del archivo, solo tendrá que volver al botón `Exportar a PST`{.action} para descargar el archivo.
 
 ![correo electrónico](images/manager-export-pst02.png){.thumbnail .w-640}
 

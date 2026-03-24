@@ -37,9 +37,9 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 - **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
 
-**E-Mail Pro:**
+**Email Pro:**
 
-- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
@@ -60,7 +60,7 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 >
 > Vor Beginn der Migration, wenn Sie Ihr neues E-Mail-Angebot bestellt haben, fügen Sie zunächst den Domainnamen zu Ihrer E-Mail-Plattform hinzu. Wenn Sie zu einer MX Plan-Plattform migrieren, ist der angeschlossene Domainname nicht wählbar. Sie können direkt zum [nächsten Schritt](#accountsmigration) übergehen.
 >
-> Wählen Sie den Tab `Zugeordnete Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform aus und klicken Sie auf `Domain hinzufügen`{.action}. Nachdem der Domainname hinzugefügt wurde, stellen Sie sicher, dass die Bezeichnung `OK` oder `Aktiv`{.action} in der Spalte `Status` angezeigt wird.
+> Wählen Sie den Tab `Assoziierte Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform aus und klicken Sie auf `Domain hinzufügen`{.action}. Nachdem der Domainname hinzugefügt wurde, stellen Sie sicher, dass die Bezeichnung `OK` oder `Aktiv`{.action} in der Spalte `Status` angezeigt wird.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
@@ -125,7 +125,7 @@ Um ihn zu löschen, gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Quell-Pla
 
 Ihre E-Mail-Adressen sollten bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihrer Domain in Ihrem Kundencenter zu überprüfen.
 
-Wählen Sie den betreffenden E-Mail Pro-, Exchange- oder Zimbra-Service aus und gehen Sie zum Tab `Zugeordnete Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform. Überprüfen Sie den Abschnitt oder die Spalte `Diagnose`{.action}.
+Wählen Sie den betreffenden E-Mail Pro-, Exchange- oder Zimbra-Service aus und gehen Sie zum Tab `Assoziierte Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform. Überprüfen Sie den Abschnitt oder die Spalte `Diagnose`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 

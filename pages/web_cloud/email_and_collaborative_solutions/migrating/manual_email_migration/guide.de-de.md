@@ -34,9 +34,9 @@ Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister]
 - **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
 
-**E-Mail Pro:**
+**Email Pro:**
 
-- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
@@ -66,11 +66,11 @@ Die folgenden Anweisungen sind in zwei Teile gegliedert:
 
 Wenn Sie einen OVHcloud [Exchange E-Mail-Account](/links/web/emails-hosted-exchange) haben, können Sie diesen direkt im PST-Format über das Kundencenter exportieren.
 
-Klicken Sie rechts neben dem zu exportierenden E-Mail-Account auf `...`{.action} und dann auf `In PST-Format exportieren`{.action}.
+Klicken Sie rechts neben dem zu exportierenden E-Mail-Account auf `...`{.action} und dann auf `Als PST-Datei exportieren`{.action}.
 
 ![E-Mails](images/manager-export-pst01.png){.thumbnail .w-640}
 
-Danach muss die Dauer des Exports abgewartet werden, die je nach Größe des Exports einige Minuten bis mehrere Stunden in Anspruch nehmen kann. Am Ende dieses Vorgangs gehen Sie einfach zurück zum Button `In PST-Format exportieren`{.action}, um einen Download-Link abzurufen.
+Danach muss die Dauer des Exports abgewartet werden, die je nach Größe des Exports einige Minuten bis mehrere Stunden in Anspruch nehmen kann. Am Ende dieses Vorgangs gehen Sie einfach zurück zum Button `Als PST-Datei exportieren`{.action}, um einen Download-Link abzurufen.
 
 ![E-Mails](images/manager-export-pst02.png){.thumbnail .w-640}
 

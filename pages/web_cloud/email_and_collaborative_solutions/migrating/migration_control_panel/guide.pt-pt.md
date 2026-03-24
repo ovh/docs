@@ -93,7 +93,7 @@ Antes de iniciar a migração, terá de identificar a versão do MX Plan a parti
 >
 > Se acabou de encomendar a sua nova oferta de e-mail, adicione o domínio à sua plataforma de e-mail antes de começar a migração. <br> - *Por exemplo, para migrar a conta "myemail@mydomain.ovh", deve adicionar o nome de domínio "mydomain.ovh" à sua plataforma.*
 >
->Selecione o separador `Domínios associados`{.action} na sua plataforma, e clique em `Adicionar um domínio`{.action}. Uma vez adicionado o domínio, certifique-se de que a menção `OK` está na coluna `Estatuto`.
+>Selecione o separador `Domínios associados`{.action} na sua plataforma, e clique em `Adicionar domínio`{.action}. Uma vez adicionado o domínio, certifique-se de que a menção `OK` está na coluna `Estatuto`.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >

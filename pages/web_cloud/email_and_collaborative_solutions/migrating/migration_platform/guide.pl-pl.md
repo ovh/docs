@@ -37,9 +37,9 @@ Chcesz przenieść Twoje konta e-mail obecne na platformę Exchange lub E-mail P
 - **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
 
-**E-mail Pro:**
+**Email Pro:**
 
-- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 **Exchange:**
@@ -60,7 +60,7 @@ Chcesz przenieść Twoje konta e-mail obecne na platformę Exchange lub E-mail P
 >
 > Przed rozpoczęciem migracji, jeśli właśnie zamówiłeś nową ofertę e-mail, najpierw dodaj nazwę domeny do swojej platformy e-mail. Jeśli migrujesz do platformy MX Plan, ponieważ nazwa domeny jest "stała", możesz przejść bezpośrednio do [następnej etapu](#accountsmigration).
 >
-> Wybierz kartę `Domeny przypisane`{.action} lub `Domeny`{.action} na swojej platformie, a następnie kliknij `Dodaj domenę`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Status` widoczna jest marka `OK` lub `Aktywny`{.action}.
+> Wybierz kartę `Przypisane domeny`{.action} lub `Domeny`{.action} na swojej platformie, a następnie kliknij `Dodaj domenę`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Status` widoczna jest marka `OK` lub `Aktywny`{.action}.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
@@ -125,7 +125,7 @@ Jeśli chcesz go usunąć, przejdź do karty `Konta e-mail`{.action} Twojej pier
 
 Na tym etapie Twoje konta e-mail muszą być migrowane i działać. Ze względów bezpieczeństwa sprawdź, czy konfiguracja Twojej domeny jest poprawna, sprawdzając w Panelu klienta.
 
-Aby to zrobić, wybierz odpowiedni serwis E-mail Pro, Exchange lub Zimbra, a następnie przejdź do karty `Powiązane domeny`{.action} lub `Domeny`{.action} na swojej platformie. Sprawdź sekcję lub kolumnę `Diagnostic`{.action}.
+Aby to zrobić, wybierz odpowiedni serwis E-mail Pro, Exchange lub Zimbra, a następnie przejdź do karty `Przypisane domeny`{.action} lub `Domeny`{.action} na swojej platformie. Sprawdź sekcję lub kolumnę `Diagnostyka`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 

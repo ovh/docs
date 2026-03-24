@@ -93,7 +93,7 @@ Przed rozpoczęciem migracji określ wersję programu MX Plan, z której chcesz 
 >
 > Jeśli właśnie zamówiłeś nową ofertę e-mail, przed rozpoczęciem migracji dodaj najpierw nazwę domeny do platformy e-mail. <br> - *Na przykład, aby przenieść konto "myemail@mydomain.ovh", należy dodać do swojej platformy nazwę domeny "mydomain.ovh".*
 >
-> Wybierz kartę `Powiązane domeny`{.action} lub `Domeny`{.action} na swojej platformie, a następnie kliknij `Dodaj domenę`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Statut` znajduje się oznaczenie `OK` lub `Aktywny`{.action}.
+> Wybierz kartę `Przypisane domeny`{.action} lub `Domeny`{.action} na swojej platformie, a następnie kliknij `Dodaj domenę`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Statut` znajduje się oznaczenie `OK` lub `Aktywny`{.action}.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >

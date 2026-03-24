@@ -140,7 +140,7 @@ In the `Email accounts`{.action} tab for your MX Plan platform, click the `...`{
 
 2\. **Create** your email address on the new account on your Exchange platform (using the previous example, you will create *john.smith@mydomain.ovh* on your new platform).
 
-In the `Email accounts`{.action} tab for your Exchange platform, click the `...`{.action} button, then `Modify`{.action}.
+In the `Email accounts`{.action} tab for your Exchange platform, click the `...`{.action} button, then `Edit`{.action}.
 
 ![Exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 

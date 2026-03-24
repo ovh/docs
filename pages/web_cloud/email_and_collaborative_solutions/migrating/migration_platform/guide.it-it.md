@@ -125,7 +125,7 @@ Per eliminarlo, seleziona la scheda `Account email`{.action} della tua piattafor
 
 In questa fase, gli account email devono essere già migrati e funzionali. Per motivi di sicurezza, ti consigliamo di assicurarti che la configurazione del tuo dominio sia corretta consultando il tuo Spazio Cliente OVHcloud.
 
-Per farlo, seleziona il servizio Email Pro, Exchange o Zimbra interessato, quindi vai nell'opzione `Domini associati`{.action} o `Dominio`{.action} sulla tua piattaforma. Verifica la sezione o la colonna `Diagnostico`{.action}.
+Per farlo, seleziona il servizio Email Pro, Exchange o Zimbra interessato, quindi vai nell'opzione `Domini associati`{.action} o `Dominio`{.action} sulla tua piattaforma. Verifica la sezione o la colonna `Diagnostica`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
