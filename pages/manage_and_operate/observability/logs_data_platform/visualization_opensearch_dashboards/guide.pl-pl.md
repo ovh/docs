@@ -24,7 +24,7 @@ After some training you will be able to do this kind of Dashboard:
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [Logs Data Platform](/links/control-panel/logs-data-platform)
-- **Navigation path:** `Identity, Security & Operations`{.action} > `Logs Data Platform`{.action} > Select the platform concerned.
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Logs Data Platform`{.action} > Select the platform concerned
 
 ---
 <!-- CP-NAV-END:logs-data-platform -->

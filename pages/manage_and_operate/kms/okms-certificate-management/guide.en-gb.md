@@ -19,7 +19,7 @@ The purpose of this guide is to show you the steps to follow to configure and ma
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [Key Management Service](/links/control-panel/security-kms)
-- **Navigation path:** `Identity, Security & Operations`{.action} > `Key Management Service`{.action} > Select your OKMS domain.
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Key Management Service`{.action} > Select your OKMS domain
 
 ---
 <!-- CP-NAV-END:security-kms -->

@@ -18,7 +18,7 @@ L'objectif de ce guide est de présenter les différentes étapes pour mettre en
 ### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [Key Management Service](/links/control-panel/security-kms)
-- **Pour accéder à vos services :** `Identité, Sécurité & Opérations`{.action} > `Key Management Service`{.action} > Sélectionnez votre domaine OKMS.
+- **Pour accéder à vos services :** `Identité, Sécurité & Opérations`{.action} > `Key Management Service`{.action} > Sélectionnez votre domaine OKMS
 
 ---
 <!-- CP-NAV-END:security-kms -->
