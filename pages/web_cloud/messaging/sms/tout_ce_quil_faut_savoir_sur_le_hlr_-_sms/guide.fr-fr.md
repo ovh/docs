@@ -1,5 +1,5 @@
 ---
-title: "SMS - Vérifier vos numéros destinataires avec le HLR Lookup"
+title: "SMS - Vérifier la validité des numéros mobiles avec le HLR Lookup"
 excerpt: "Découvrez comment utiliser le HLR Lookup pour vérifier la validité des numéros mobiles de vos destinataires avant l'envoi de SMS depuis votre espace client OVHcloud"
 updated: 2026-03-24
 ---
@@ -43,7 +43,7 @@ Le HLR Lookup permet également de nettoyer vos listes de numéros en identifian
 
 Sélectionnez l'onglet `Message et campagne`{.action} > `Gestion des SMS`{.action}.
 
-![Gestion SMS](images/gestion-sms.png){.thumbnail}
+![Gestion SMS](images/gestion-des-sms.png){.thumbnail}
 
 Cliquez sur `HLR`{.action}.
 
@@ -61,7 +61,7 @@ Chaque requête est facturée 0,1 crédit SMS. Consultez la [grille tarifaire SM
 
 Les résultats de vos requêtes apparaissent dans le tableau en bas de page.
 
-![Tableau des résultats de requêtes HLR](images/tableau-historique-hlr.png){.thumbnail}
+![Tableau des résultats de requêtes HLR](images/tableau-historique.png){.thumbnail}
 
 ### Les différents états
 
@@ -83,7 +83,7 @@ Rendez-vous dans la partie `Contacts`{.action} > `Créer une liste de contacts`{
 
 ![Créer une liste de contacts](images/creer-liste-contacts.png){.thumbnail}
 
-![Ajout fichier contacts](images/ajout-fichier-contacts.png){.thumbnail}
+![Ajout fichier contacts](images/ajouter-fichier-contacts.png){.thumbnail}
 
 Consultez le guide « [Liste de destinataires SMS](/pages/web_cloud/messaging/sms/liste_de_destinataire_sms) » pour plus de détails.
 
@@ -91,14 +91,14 @@ Consultez le guide « [Liste de destinataires SMS](/pages/web_cloud/messaging/sm
 
 Une fois votre carnet chargé sur l'espace client, sélectionnez-le et procédez au nettoyage.
 
-![Sélection du carnet de contacts à nettoyer](images/nettoyage.png){.thumbnail}
+![Sélection du carnet de contacts à nettoyer](images/nettoyer-liste.png){.thumbnail}
 
 2 options sont disponibles :
 
 - Freemium : dédoublonnage et vérifications syntaxiques (gratuit).
 - Premium : dédoublonnage et vérification de la validité des contacts via une requête HLR (cette action sera facturée 0,1 crédit SMS par contact).
 
-![Options de nettoyage Freemium et Premium](images/options-nettoyage.png){.thumbnail}
+![Options de nettoyage Freemium et Premium](images/options-de-nettoyage.png){.thumbnail}
 
 Le nettoyage de la base dédoublonnera vos contacts et éliminera ceux qui sont invalides.
 Le fichier nettoyé remplacera l'ancien qui sera sauvegardé et accessible. Vous recevrez un rapport par e-mail à la fin de l'opération.
