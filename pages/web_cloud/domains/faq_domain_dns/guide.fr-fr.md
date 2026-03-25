@@ -1,7 +1,7 @@
 ---
 title: "FAQ sur les noms de domaine & DNS"
 excerpt: "Retrouvez les principales questions posées sur les noms de domaine, les serveurs DNS et les zones DNS"
-updated: 2026-02-10
+updated: 2026-03-25
 ---
 
 <style>
@@ -91,11 +91,16 @@ Dans le cas contraire, votre nom de domaine est enregistré auprès d'un autre b
 
 La solution la plus rapide est d'effectuer une requête [WHOIS](/links/web/domains-whois) sur le nom de domaine. Une fois la requête effectuée, recherchez dans le résultat la ligne correspondant à la date d'expiration (par exemple : `Expiry Date: 2025-09-22T08:00:00Z`, `Registry Expiry Date: 2025-09-22T08:00:00Z`, etc.).
 
-Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez également suivre ces étapes :
+Si votre nom de domaine est enregistré chez OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Mes offres & services`{.action}.
-3. Dans le tableau qui apparaît, recherchez la ligne correspondant à votre nom de domaine, puis repérez la date présente dans la colonne `Date d'effet`. Cette date correspond à la date d'expiration de votre nom de domaine.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services).
+>>
+> **Étape 2**
+>>
+>> Dans le tableau qui apparaît, recherchez la ligne correspondant à votre nom de domaine, puis repérez la date présente dans la colonne `Date d'effet`. Cette date correspond à la date d'expiration de votre nom de domaine.
 
 ///
 
@@ -139,14 +144,22 @@ Les noms de domaine sont considérés comme des produits personnalisés, car ils
 
 /// details | Comment supprimer un nom de domaine ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Mes offres & services`{.action}.
-3. Dans le tableau qui apparaît, recherchez la ligne correspondant à votre nom de domaine, cliquez sur le bouton `...`{.action} à droite, puis sur `Résilier mon service`{.action}.
-4. Sur la page qui s'affiche, sélectionnez le mode de résiliation (immédiatement ou à la date d'expiration du service) puis cliquez en bas sur le bouton `Oui, résilier`{.action}.
-
-Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre titulaire.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services).
+>>
+> **Étape 2**
+>>
+>> Dans le tableau qui apparaît, recherchez la ligne correspondant à votre nom de domaine, cliquez sur le bouton `...`{.action} à droite, puis sur `Résilier mon service`{.action}.
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, sélectionnez le mode de résiliation (immédiatement ou à la date d'expiration du service) puis cliquez en bas sur le bouton `Oui, résilier`{.action}.
+>>
+>> Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre titulaire.
 
 > [!primary]
 >
@@ -230,11 +243,16 @@ Par conséquent, si vous avez fait une erreur de saisie lors de votre commande, 
 
 Pour cela, vous devez être à minima déclaré en tant que [contact « Facturation »](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine concerné. Vous devrez ensuite modifier le mode de renouvellement du nom de domaine pour le passer en **renouvellement automatique**.
 
-Pour cela, suivez ces étapes :
+Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Mes offres & services`{.action}.
-3. Dans le tableau qui apparaît et à droite du nom de domaine concerné, cliquez sur le bouton `...`{.action} dans la colonne `Actions`, puis sur `Configurer le renouvellement`{.action}. Vous pourrez ensuite configurer le renouvellement de ce nom de domaine en **renouvellement automatique**.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services).
+>>
+> **Étape 2**
+>>
+>> Dans le tableau qui apparaît et à droite du nom de domaine concerné, cliquez sur le bouton `...`{.action} dans la colonne `Actions`, puis sur `Configurer le renouvellement`{.action}. Vous pourrez ensuite configurer le renouvellement de ce nom de domaine en **renouvellement automatique**.
 
 > [!primary]
 >
@@ -383,25 +401,30 @@ De nombreux enregistrements DNS existent. Ils ont tous un but spécifique dans l
 
 /// details | Quels sont les enregistrements DNS disponibles dans une zone DNS OVHcloud ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-3. Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}.
-
-À cet endroit, vous visualiserez l'ensemble des enregistrements DNS que vous pourrez ajouter via l'assistant de configuration OVHcloud.
-
-Grâce à cet assistant de configuration, vous pourrez ajouter les types d'enregistrements DNS suivants :
-
-- **Champs de pointage** : `A`, `AAAA`, `NS`, `CNAME` et `DNAME`.
-- **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` et `HTTPS`.
-- **Champs mail** : `MX`, `SPF`, `DKIM` et `DMARC`.
-
-> [!primary]
->
-> Si vous souhaitez ajouter un enregistrement DNS qui n'est pas présent dans la liste, fermez la fenêtre qui s'est ouverte après avoir cliqué sur le bouton `Ajouter une entrée`{.action} et cliquez sur le bouton `Modifier en mode textuel`{.action} situé sur la droite ou en dessous du tableau.
->
-> Vous pourrez ainsi ajouter manuellement l'enregistrement DNS de votre choix.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}.
+>>
+>> Vous visualiserez l'ensemble des enregistrements DNS que vous pourrez ajouter via l'assistant de configuration OVHcloud :
+>>
+>> - **Champs de pointage** : `A`, `AAAA`, `NS`, `CNAME` et `DNAME`.
+>> - **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` et `HTTPS`.
+>> - **Champs mail** : `MX`, `SPF`, `DKIM` et `DMARC`.
+>>
+>> > [!primary]
+>> >
+>> > Si vous souhaitez ajouter un enregistrement DNS qui n'est pas présent dans la liste, fermez la fenêtre qui s'est ouverte après avoir cliqué sur le bouton `Ajouter une entrée`{.action} et cliquez sur le bouton `Modifier en mode textuel`{.action} situé sur la droite ou en dessous du tableau.
+>> >
+>> > Vous pourrez ainsi ajouter manuellement l'enregistrement DNS de votre choix.
 
 > [!success]
 >
@@ -434,14 +457,24 @@ Si vous souhaitez modifier la configuration des enregistrements DNS de type NS d
 > Pour changer les serveurs DNS de votre nom de domaine chez OVHcloud, une zone DNS doit déjà exister sur les nouveaux serveurs DNS désirés.
 > De plus, vous devrez vérifier dans cette même zone DNS que les enregistrements DNS de type NS correspondent bien aux serveurs DNS correspondants.
 
-Pour cela, suivez ces étapes :
+Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
-3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
-4. Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
-
-Vous pourrez modifier les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
+>>
+> **Étape 3**
+>>
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>>
+>> Vous pourrez modifier les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
 
 > [!primary]
 >
@@ -501,12 +534,22 @@ Pour configurer un enregistrement reverse/PTR pour une adresse IP externe, conta
 
 /// details | Comment changer le TTL par défaut dans ma zone DNS OVHcloud ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-3. Sur la droite ou en dessous du tableau, cliquez sur `Modifier le TTL par défaut`{.action}.
-4. Dans la fenêtre qui s'ouvre, ajustez la valeur sous la mention `TTL par défaut` en fonction de vos besoins, puis cliquez sur `Modifier`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Modifier le TTL par défaut`{.action}.
+>>
+> **Étape 3**
+>>
+>> Dans la fenêtre qui s'ouvre, ajustez la valeur sous la mention `TTL par défaut` en fonction de vos besoins, puis cliquez sur `Modifier`{.action}.
 
 > [!primary]
 >
@@ -550,10 +593,7 @@ Voici différentes solutions pour vérifier la configuration d'une zone DNS :
 
 - **La commande « nslookup »** : La commande `nslookup` est disponible sur la plupart des systèmes d'exploitation et permet également de vérifier la configuration de votre zone DNS.
 
-- **Depuis votre espace client OVHcloud** : Pour cela, suivez ces étapes (si la zone DNS active de votre nom de domaine est gérée chez OVHcloud) :
-    1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-    2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-    3. Dans le tableau de la page qui s'affiche, vous visualiserez l'ensemble des enregistrements DNS déclarés pour votre nom de domaine.
+- **Depuis votre espace client OVHcloud** : Si la zone DNS active de votre nom de domaine est gérée chez OVHcloud, accédez à la page [Zones DNS](/links/control-panel/web-dns-zone) pour visualiser l'ensemble des enregistrements DNS déclarés pour votre nom de domaine.
 
 > [!success]
 >
@@ -599,35 +639,58 @@ Il a la forme suivante `YYYYMMDDRR` où :
 - `YYYYMMDD` : Représente la date (l'année, le mois et le jour) de la dernière mise à jour DNS propagée pour le nom de domaine.
 - `RR` : Représente le nombre de mises à jour qui ont été réalisées à la date indiquée. Par exemple, si une seule mise à jour a été effectuée sur une journée, il aura la valeur `00`. Si 2 mises à jour ont été effectuées sur la même journée, il aura alors la valeur `01` et ainsi de suite.
 
-Une fois le numéro de série récupéré, suivez ces étapes :
+Une fois le numéro de série récupéré, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-3. Sur la droite ou en dessous du tableau, cliquez sur `Modifier en mode textuel`{.action}.
-4. Dans la fenêtre qui s'ouvre, repérez la deuxième ligne qui, pour reprendre notre exemple, serait équivalente à celle-ci : `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
-5. Comparez le numéro de série récupéré via le terminal avec celui qui s'affiche dans votre espace client OVHcloud.
-
-Cas n°1 - Les deux numéros de série correspondent :
-
-Cela signifie que la propagation DNS s'effectue correctement. Vous n'avez rien d'autre à faire.
-
-Cas n°2 - Les deux numéros de série sont différents :
-
-Cela signifie que soit :
-
-- La propagation DNS de vos modifications n'est pas totalement terminée (vous êtes encore dans les délais standards de propagation DNS). Dans ce cas, patientez le temps que la propagation DNS soit totalement terminée (**24** heures pour une modification de zone DNS et **48** heures pour une modification des serveurs DNS), puis réitérez l'opération.
-- La propagation DNS ne s'effectue pas correctement. Dans ce cas, depuis la fenêtre `Modifier en mode textuel`{.action} qui s'est ouverte à l'étape **4**, cliquez directement **sans effectuer de modifications** sur le bouton `Suivant`{.action}, puis sur `Valider`{.action}. Une nouvelle propagation DNS sera alors initiée.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Modifier en mode textuel`{.action}.
+>>
+> **Étape 3**
+>>
+>> Dans la fenêtre qui s'ouvre, repérez la deuxième ligne qui, pour reprendre notre exemple, serait équivalente à celle-ci : `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
+>>
+> **Étape 4**
+>>
+>> Comparez le numéro de série récupéré via le terminal avec celui qui s'affiche dans votre espace client OVHcloud.
+>>
+>> **Cas n°1** - Les deux numéros de série correspondent :
+>>
+>> Cela signifie que la propagation DNS s'effectue correctement. Vous n'avez rien d'autre à faire.
+>>
+>> **Cas n°2** - Les deux numéros de série sont différents :
+>>
+>> Cela signifie que soit :
+>>
+>> - La propagation DNS de vos modifications n'est pas totalement terminée (vous êtes encore dans les délais standards de propagation DNS). Dans ce cas, patientez le temps que la propagation DNS soit totalement terminée (**24** heures pour une modification de zone DNS et **48** heures pour une modification des serveurs DNS), puis réitérez l'opération.
+>> - La propagation DNS ne s'effectue pas correctement. Dans ce cas, depuis la fenêtre `Modifier en mode textuel`{.action} qui s'est ouverte à l'étape **3**, cliquez directement **sans effectuer de modifications** sur le bouton `Suivant`{.action}, puis sur `Valider`{.action}. Une nouvelle propagation DNS sera alors initiée.
 
 ///
 
 /// details | Comment restaurer une zone DNS ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-3. Sur la droite ou en dessous du tableau, cliquez sur `Voir l'historique de ma zone DNS`{.action}.
-4. Dans le tableau de la page qui s'affiche, identifiez la ligne correspondant à la sauvegarde de la zone DNS de votre choix, puis cliquez sur l'icône présente dans la colonne `Restaurer`{.action}. La configuration actuelle de la zone DNS sera remplacée par la sauvegarde choisie.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Voir l'historique de ma zone DNS`{.action}.
+>>
+> **Étape 3**
+>>
+>> Dans le tableau de la page qui s'affiche, identifiez la ligne correspondant à la sauvegarde de la zone DNS de votre choix, puis cliquez sur l'icône présente dans la colonne `Restaurer`{.action}. La configuration actuelle de la zone DNS sera remplacée par la sauvegarde choisie.
 
 > [!primary]
 >
@@ -641,12 +704,22 @@ Suivez ces étapes :
 
 /// details | Comment récupérer une copie de ma zone DNS ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-3. Sur la droite ou en dessous du tableau, cliquez sur `Voir l'historique de ma zone DNS`{.action}.
-4. Dans le tableau de la page qui s'affiche, identifiez la ligne correspondant à la sauvegarde de la zone DNS de votre choix, puis cliquez sur l'icône présente dans la colonne `Télécharger`{.action}. La copie de la zone DNS sera téléchargée au format *.txt*.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Voir l'historique de ma zone DNS`{.action}.
+>>
+> **Étape 3**
+>>
+>> Dans le tableau de la page qui s'affiche, identifiez la ligne correspondant à la sauvegarde de la zone DNS de votre choix, puis cliquez sur l'icône présente dans la colonne `Télécharger`{.action}. La copie de la zone DNS sera téléchargée au format *.txt*.
 
 > [!success]
 >
@@ -658,38 +731,69 @@ Suivez ces étapes :
 
 Vous pouvez créer une zone DNS pour un sous-domaine.
 
-Pour ce faire, suivez ces étapes :
+Pour ce faire, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis cliquez sur le bouton `Commander`{.action} en haut à droite du tableau qui s'affiche.
-3. Sur la page qui apparaît, renseignez le sous-domaine (par exemple : *www.domain.tld*) pour lequel vous souhaitez créer une zone DNS OVHcloud. Patientez quelques instants le temps que l'outil effectue des vérifications concernant le sous-domaine.
-4. Dès que la vérification aboutit, choisissez d'activer ou non les entrées minimales pour la zone DNS que vous allez créer. Ce choix n'est pas définitif puisque vous pourrez toujours [éditer les enregistrements de la zone DNS](/pages/web_cloud/domains/dns_zone_edit) par la suite.
-5. Une fois votre choix effectué, poursuivez les étapes jusqu'à la création de la zone DNS.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis cliquez sur le bouton `Commander`{.action} en haut à droite du tableau qui s'affiche.
+>>
+> **Étape 2**
+>>
+>> Sur la page qui apparaît, renseignez le sous-domaine (par exemple : *www.domain.tld*) pour lequel vous souhaitez créer une zone DNS OVHcloud. Patientez quelques instants le temps que l'outil effectue des vérifications concernant le sous-domaine.
+>>
+> **Étape 3**
+>>
+>> Dès que la vérification aboutit, choisissez d'activer ou non les entrées minimales pour la zone DNS que vous allez créer. Ce choix n'est pas définitif puisque vous pourrez toujours [éditer les enregistrements de la zone DNS](/pages/web_cloud/domains/dns_zone_edit) par la suite.
+>>
+> **Étape 4**
+>>
+>> Une fois votre choix effectué, poursuivez les étapes jusqu'à la création de la zone DNS.
 
 Cette zone DNS va être installée sur 2 serveurs DNS OVHcloud. Vous devrez déclarer les noms de ces deux serveurs dans la zone DNS active du nom de domaine de votre sous-domaine (par exemple, *www.domain.tld* est un sous-domaine du nom de domaine *domain.tld*).
 
-Pour récupérer les noms des 2 serveurs DNS, suivez ces étapes :
+Pour récupérer les noms des 2 serveurs DNS, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le sous-domaine concerné.
-3. En haut à gauche de la page qui s'affiche, récupérez les 2 noms des serveurs DNS présents sous la mention `Name Servers`. Ces derniers ont l'une des 2 formes suivantes :
-
-- `dnsXXX.ovh.net` et `nsXXX.ovh.net` **ou** `dnsXXX.ovh.ca` et `nsXXX.ovh.ca` (où chaque `X` représente un chiffre compris entre `0` et `9`).
-- `dns200.ovh.me` et `ns200.anycast.me`.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le sous-domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> En haut à gauche de la page qui s'affiche, récupérez les 2 noms des serveurs DNS présents sous la mention `Name Servers`. Ces derniers ont l'une des 2 formes suivantes :
+>>
+>> - `dnsXXX.ovh.net` et `nsXXX.ovh.net` **ou** `dnsXXX.ovh.ca` et `nsXXX.ovh.ca` (où chaque `X` représente un chiffre compris entre `0` et `9`).
+>> - `dns200.ovh.me` et `ns200.anycast.me`.
 
 Une fois les 2 serveurs DNS en votre possession, déclarez-les à l'aide de deux enregistrements de type NS dans la zone DNS active du nom de domaine dont provient votre sous-domaine.
 
 Cas n°1 - La zone DNS active du nom de domaine dont provient votre sous-domaine est chez OVHcloud :
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-3. Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}, puis sélectionnez le type d'enregistrement DNS de type `NS`{.action} pour déclarer un serveur DNS.
-4. Dans la fenêtre qui s'ouvre, renseignez le sous-domaine concerné dans le champ `Sous-domaine *`{.action} (par exemple, écrivez **uniquement** *www* si votre nom de domaine est *domain.tld* et que votre sous-domaine complet est *www.domain.tld*). Dans le champ `Cible *`{.action}, renseignez **un seul** des 2 serveurs DNS.
-5. Cliquez sur `Suivant`{.action}, puis sur `Valider`{.action}.
-
-Réitérez l'opération pour le second serveur DNS restant à déclarer.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}, puis sélectionnez le type d'enregistrement DNS de type `NS`{.action} pour déclarer un serveur DNS.
+>>
+> **Étape 3**
+>>
+>> Dans la fenêtre qui s'ouvre, renseignez le sous-domaine concerné dans le champ `Sous-domaine *`{.action} (par exemple, écrivez **uniquement** *www* si votre nom de domaine est *domain.tld* et que votre sous-domaine complet est *www.domain.tld*). Dans le champ `Cible *`{.action}, renseignez **un seul** des 2 serveurs DNS.
+>>
+> **Étape 4**
+>>
+>> Cliquez sur `Suivant`{.action}, puis sur `Valider`{.action}.
+>>
+>> Réitérez l'opération pour le second serveur DNS restant à déclarer.
 
 Cas n°2 - La zone DNS active du nom de domaine dont provient votre sous-domaine n'est pas chez OVHcloud :
 
@@ -710,13 +814,26 @@ Vous devrez alors déclarer les 2 serveurs DNS pour votre sous-domaine directeme
 
 /// details | Comment rediriger tous les sous-domaines d'un même nom de domaine vers la même adresse IP ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-3. Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}, puis sélectionnez le type d'enregistrement DNS de type `A`{.action} pour une IPv4 (par exemple : `203.0.113.0`) ou de type `AAAA`{.action} pour une IPv6 (par exemple : `2001:db8:1:1b00:203:0:113:0`).
-4. Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine *`{.action}, renseignez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemple : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez le champ `Cible *`{.action} par l'adresse IP désirée.
-5. Cliquez sur `Suivant`{.action}, puis sur `Valider`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}, puis sélectionnez le type d'enregistrement DNS de type `A`{.action} pour une IPv4 (par exemple : `203.0.113.0`) ou de type `AAAA`{.action} pour une IPv6 (par exemple : `2001:db8:1:1b00:203:0:113:0`).
+>>
+> **Étape 3**
+>>
+>> Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine *`{.action}, renseignez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemple : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez le champ `Cible *`{.action} par l'adresse IP désirée.
+>>
+> **Étape 4**
+>>
+>> Cliquez sur `Suivant`{.action}, puis sur `Valider`{.action}.
 
 > [!primary]
 >
@@ -732,13 +849,26 @@ Suivez ces étapes :
 
 Il est possible de mettre en place un wildcard dans une zone DNS OVHcloud.
 
-Pour cela, suivez ces étapes :
+Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-3. Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}, puis sélectionnez le type d'enregistrement DNS pour lequel vous souhaitez mettre en place un wildcard.
-4. Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine *`{.action}, renseignez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemple : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez les autres champs par les valeurs désirées.
-5. Cliquez sur `Suivant`{.action}, puis sur `Valider`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}, puis sélectionnez le type d'enregistrement DNS pour lequel vous souhaitez mettre en place un wildcard.
+>>
+> **Étape 3**
+>>
+>> Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine *`{.action}, renseignez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemple : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez les autres champs par les valeurs désirées.
+>>
+> **Étape 4**
+>>
+>> Cliquez sur `Suivant`{.action}, puis sur `Valider`{.action}.
 
 > [!primary]
 >
@@ -759,20 +889,30 @@ Cet e-mail est envoyé à l'adresse e-mail associée à votre compte client OVHc
 
 > [!success]
 >
-> Si vous n'avez pas reçu cet e-mail, vérifiez dans vos courriers indésirables ou suivez ces étapes :
->
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-> 2. Sur la page qui s'affiche, cliquez sur l'onglet `Emails reçus`{.action}.
-> 3. Dans le tableau qui apparaît et parmi la liste des e-mails reçus, cliquez sur l'email concerné pour en afficher le contenu.
+> Si vous n'avez pas reçu cet e-mail, vérifiez dans vos courriers indésirables ou rendez-vous sur la page [Mon compte](/links/control-panel/account-dashboard), puis cliquez sur l'onglet `Emails reçus`{.action}.
 
-Pour restaurer votre zone DNS, suivez ces étapes :
+Pour restaurer votre zone DNS, téléchargez le fichier contenant la zone DNS depuis l'e-mail reçu.
 
-1. Téléchargez le fichier contenant la zone DNS depuis l'e-mail reçu.
-2. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-3. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
-4. Sélectionnez l'onglet `Zone DNS`{.action} une fois positionné sur le nom de domaine concerné. **Si la zone DNS est inactive, activez-la depuis cet onglet.**
-5. Sur la droite ou en dessous du tableau, cliquez sur `Modifier en mode textuel`{.action}.
-6. Dans la fenêtre qui s'ouvre, remplacez tout le contenu qui s'affiche par la copie de la zone DNS supprimée. Cliquez ensuite sur `Suivant`{.action}, puis sur `Valider`{.action}.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `Zone DNS`{.action} une fois positionné sur le nom de domaine concerné. **Si la zone DNS est inactive, activez-la depuis cet onglet.**
+>>
+> **Étape 3**
+>>
+>> Sur la droite ou en dessous du tableau, cliquez sur `Modifier en mode textuel`{.action}.
+>>
+> **Étape 4**
+>>
+>> Dans la fenêtre qui s'ouvre, remplacez tout le contenu qui s'affiche par la copie de la zone DNS supprimée. Cliquez ensuite sur `Suivant`{.action}, puis sur `Valider`{.action}.
 
 > [!primary]
 >
@@ -802,22 +942,28 @@ Dans le cas contraire, la suppression est initiée et ne peut plus être annulé
 
 Cette situation survient lorsqu'une zone DNS existe déjà pour votre nom de domaine chez OVHcloud.
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Zones DNS`{.action}, puis vérifiez si le nom de domaine concerné apparaît.
-
-Cas n°1 - Le nom de domaine concerné apparaît dans la liste :
-
-Cela signifie que la zone DNS du nom de domaine existe déjà dans votre [espace client OVHcloud](/links/manager). Vous pourrez la gérer directement à cet endroit.
-
-Cas n°2 - Le nom de domaine concerné n'apparaît pas dans la liste :
-
-Cela signifie que la zone DNS du nom de domaine est gérée par un autre identifiant client OVHcloud que le vôtre.
-
-Conformément au **R**èglement **G**énéral sur la **P**rotection des **D**onnées (**RGPD**), l'identifiant client sur lequel se trouve la zone DNS restera confidentiel.
-
-Dans cette situation et si vous ne connaissez pas cet autre identifiant client, nous vous invitons à ouvrir un ticket d'assistance depuis le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) pour récupérer la gestion de la zone DNS.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis vérifiez si le nom de domaine concerné apparaît.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> **Cas n°1** - Le nom de domaine concerné apparaît dans la liste :
+>>
+>> Cela signifie que la zone DNS du nom de domaine existe déjà dans votre espace client OVHcloud. Vous pourrez la gérer directement à cet endroit.
+>>
+>> **Cas n°2** - Le nom de domaine concerné n'apparaît pas dans la liste :
+>>
+>> Cela signifie que la zone DNS du nom de domaine est gérée par un autre identifiant client OVHcloud que le vôtre.
+>>
+>> Conformément au **R**èglement **G**énéral sur la **P**rotection des **D**onnées (**RGPD**), l'identifiant client sur lequel se trouve la zone DNS restera confidentiel.
+>>
+>> Dans cette situation et si vous ne connaissez pas cet autre identifiant client, nous vous invitons à ouvrir un ticket d'assistance depuis le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) pour récupérer la gestion de la zone DNS.
 
 ///
 
@@ -840,14 +986,24 @@ Si l'onglet n'apparaît pas dans votre [espace client OVHcloud](/links/manager),
 
 /// details | Comment modifier mes serveurs DNS ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
-3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
-4. Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
-
-Vous pourrez modifier les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
+>>
+> **Étape 3**
+>>
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>>
+>> Vous pourrez modifier les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
 
 > [!primary]
 >
@@ -861,14 +1017,24 @@ Vous pourrez modifier les serveurs DNS pour votre nom de domaine sur la page qui
 
 /// details | Comment personnaliser mes serveurs DNS ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
-3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
-4. Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
-
-Vous pourrez personnaliser les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
+>>
+> **Étape 3**
+>>
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>>
+>> Vous pourrez personnaliser les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
 
 > [!primary]
 >
@@ -882,14 +1048,24 @@ Vous pourrez personnaliser les serveurs DNS pour votre nom de domaine sur la pag
 
 /// details | Comment remplacer mes serveurs DNS par ceux d'OVHcloud ?
 
-Suivez ces étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
-3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
-4. Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
-
-Vous pourrez remplacer les serveurs DNS pour votre nom de domaine par ceux d'OVHcloud sur la page qui apparaît.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
+>>
+> **Étape 3**
+>>
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>>
+>> Vous pourrez remplacer les serveurs DNS pour votre nom de domaine par ceux d'OVHcloud sur la page qui apparaît.
 
 > [!primary]
 >
@@ -924,25 +1100,31 @@ Si vous souhaitez utiliser les serveurs DNS d'OVHcloud pour votre nom de domaine
 
 Cela signifie que vous ne disposez que de la gestion de la zone DNS du nom de domaine mais pas celle du nom de domaine en lui-même.
 
-Pour le vérifier, suivez ces étapes :
+Pour le vérifier, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Noms de domaine`{.action}, puis vérifiez si le nom de domaine concerné apparaît.
-
-Cas n°1 - Le nom de domaine n'apparaît pas dans la liste :
-
-Cela signifie que le nom de domaine n'est pas géré depuis votre [espace client OVHcloud](/links/manager). Effectuez une requête [WHOIS](/links/web/domains-whois) avec ce dernier pour connaître l'endroit où il est enregistré.
-
-Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le WHOIS du nom de domaine):
-
-- Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
-- Le nom de domaine n'est pas enregistré chez OVHcloud : Vous pourrez réaliser une opération de [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) vers OVHcloud pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
-
-Cas n°2 - Le nom de domaine apparaît dans la liste :
-
-Cela signifie que vous ne disposez pas des droits suffisants pour gérer le nom de domaine depuis votre [espace client OVHcloud](/links/manager). Effectuez une requête [WHOIS](/links/web/domains-whois) pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
-
-Vous pourrez ensuite effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager).
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis vérifiez si le nom de domaine concerné apparaît.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> **Cas n°1** - Le nom de domaine n'apparaît pas dans la liste :
+>>
+>> Cela signifie que le nom de domaine n'est pas géré depuis votre espace client OVHcloud. Effectuez une requête [WHOIS](/links/web/domains-whois) avec ce dernier pour connaître l'endroit où il est enregistré.
+>>
+>> Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le WHOIS du nom de domaine) :
+>>
+>> - Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit géré dans votre espace client OVHcloud.
+>> - Le nom de domaine n'est pas enregistré chez OVHcloud : Vous pourrez réaliser une opération de [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) vers OVHcloud pour que votre nom de domaine soit géré dans votre espace client OVHcloud.
+>>
+>> **Cas n°2** - Le nom de domaine apparaît dans la liste :
+>>
+>> Cela signifie que vous ne disposez pas des droits suffisants pour gérer le nom de domaine depuis votre espace client OVHcloud. Effectuez une requête [WHOIS](/links/web/domains-whois) pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
+>>
+>> Vous pourrez ensuite effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit entièrement géré dans votre espace client OVHcloud.
 
 ///
 

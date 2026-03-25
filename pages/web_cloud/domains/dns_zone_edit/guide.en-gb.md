@@ -47,9 +47,9 @@ For further explanation, please refer to our guides “[Everything you need to k
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to edit the configuration using the interface of your service provider that manages your domain name.
 >
-> - If your domain name is registered with OVHcloud, you can check if it uses our configuration. To do this, go to your [OVHcloud Control Panel](/links/manager), in the `DNS servers`{.action} tab for the domain name concerned. If you need further guidance, please refer to our guide on [Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit).
+> - If your domain name is registered with OVHcloud, you can check if it uses our configuration. To do this, please refer to our guide on [Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit).
 >
-> In both of the above cases, be careful when making your DNS server changes. The old configuration that can be applied to your domain name will no longer be active if you have not previously reconfigured and customised the new DNS zone present at OVHcloud.<br>
+> In both of the above cases, be careful when making your DNS server changes. The old configuration that can be applied to your domain name will no longer be active if you have not previously reconfigured and customised the new DNS zone present at OVHcloud.
 > You can only have one active DNS zone per domain name at a time.
 >
 
@@ -89,7 +89,7 @@ By learning more about these records, you can get a better understanding of the 
 > See also our guide to [subdomains](/pages/web_cloud/domains/domain_create_subdomains) for more information on this topic.
 >
 
-You can edit your domain name’s OVHcloud DNS zone by adding, modifying, or deleting a DNS record.<br>
+You can edit your domain name’s OVHcloud DNS zone by adding, modifying, or deleting a DNS record.
 To do this, you can either manually edit the zone in text mode, or use our configuration assistants.
 
 #### Manually edit the zone in text mode <a name="txtmod"></a>
