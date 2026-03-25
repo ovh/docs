@@ -313,7 +313,7 @@ In order to store your Popeye reports on an OVHcloud Object Storage, and general
 
 In order to do that you will create an OpenStack user.
 
-Click on `Users & Roles`{.action} in the left-hand menu and click on `+ Add user`{.action}.
+From your Public Cloud project, click on `Users & Roles`{.action} in the left-hand menu, then click on `+ Add user`{.action}.
 
 ![Create OpenStack user](images/create_openstack_user1.png){.thumbnail}
 
