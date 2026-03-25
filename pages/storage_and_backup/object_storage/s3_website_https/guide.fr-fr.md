@@ -23,15 +23,23 @@ Pour activer le HTTPS, vous avez besoin de :
 - Un [nom de domaine](/links/web/domains).
 - Commander un certificat TLS associé à votre nom de domaine chez OVHcloud (facultatif si vous disposez déjà d’un certificat TLS de confiance associé à votre nom de domaine).
 - Vous devez [activer l'hébergement sur votre bucket Object Storage](/pages/storage_and_backup/object_storage/s3_website).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 
 ## En pratique
 
 ### Étape 1 - Configurer votre Load Balancer
 
 #### Étape 1.1 - Ajouter votre certificat
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Load Balancer`{.action}.
 
 Sélectionnez votre Load Balancer dans la liste, cliquez sur l'onglet `Certificats SSL`{.action} puis sur `Ajouter un certificat SSL`{.action}.
 

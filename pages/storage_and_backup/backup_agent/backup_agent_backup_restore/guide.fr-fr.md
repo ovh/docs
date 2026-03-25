@@ -14,8 +14,18 @@ Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare M
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](/links/manager).
-- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide « [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) » pour plus d'informations.
+- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide « [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) » pour plus d’informations.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## En pratique
 

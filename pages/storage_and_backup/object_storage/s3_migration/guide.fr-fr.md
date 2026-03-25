@@ -29,6 +29,16 @@ Ce guide fournit des étapes détaillées pour vous aider à migrer d'un fournis
     - b3-16 : 4 v-cores et 16 Go de RAM
     - c3-16 : 8 v-cores et 16 Go de RAM
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!primary]
 >
@@ -63,7 +73,7 @@ Comme expliqué précédemment, vous aurez besoin de vos `access key` et `secret
 
 ### Étape 2 - Préparation de votre bucket de destination OVHcloud
 
-De même que pour votre bucket source, vous aurez besoin de vos `access key` et `secret key` mais également du `region ID` de la région dans laquelle se trouve votre bucket de destination. Connectez-vous à l'[espace client OVHcloud](/links/manager) et accédez à la section `Object Storage`{.action} pour récupérer ces informations.
+De même que pour votre bucket source, vous aurez besoin de vos `access key` et `secret key` mais également du `region ID` de la région dans laquelle se trouve votre bucket de destination. Accédez à la section `Object Storage`{.action} pour récupérer ces informations.
 
 ### Étape 3 - Installation, configuration et exécution de Rclone
 

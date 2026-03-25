@@ -48,6 +48,17 @@ Our goal is to help you choose the type of encryption that is best for you. This
 
 See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 Using server-side encryption with client-provided encryption keys (SSE-C) allows you to define your own encryption keys.
@@ -252,9 +263,7 @@ Be careful not to include specific encryption headers when downloading an encryp
 >> This will configure the bucket to use SSE-OMK encryption with keys managed by Object Storage (AES256) for all new objects. 
 >>
 > Via the OVHcloud Control Panel
->> In your OVHcloud Control Panel, click on the `Public Cloud`{.action} tab, select your Public Cloud project, then click on` Object Storage`{.action} in the left-hand menu.
->>
->> Next, select the Object Storage bucket you want to manage, and in the information panel, click on `Enable encryption`{.action}.
+>> Click on `Object Storage`{.action} under `Storage & Backup` in the left-hand menu.  Select the Object Storage bucket you want to manage, and in the information panel, click on `Enable encryption`{.action}.
 >>
 >> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
 >>

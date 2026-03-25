@@ -57,6 +57,17 @@ Here is a list of potential issues you may encounter with the Backup Agent produ
 
 - At least one Bare Metal server with the Backup Agent installed on it. Read our guide "[How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" for more information.
 
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
+
 ## List of possible issues
 
 /// details | My Backup Agent is unable to connect to your server.
@@ -167,7 +178,7 @@ Passwords can be changed via the "Forgot password?" link available on the VSPC c
 
 /// details | I have reinstalled my server. How do I reinstall the Backup Agent?
 
-You must download the agent from your [OVHcloud Control Panel](/links/manager) and install it on your new Operating System.
+You must download the agent from the [Backup Agent](/links/control-panel/baremetal-backup-agent) section of your OVHcloud Control Panel and install it on your new Operating System.
 
 ///
 

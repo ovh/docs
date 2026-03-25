@@ -11,11 +11,21 @@ Ce guide explique comment gérer les identités et les accès à vos ressources 
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans le menu de gauche.
+Cliquez sur `Object Storage`{.action} dans le menu de gauche.
 
 ### Création d'un utilisateur
 
@@ -214,7 +224,6 @@ Actuellement, les autorisations utilisateur sont évaluées comme suit :
 } 
 ```
 
-
 > [!primary]
 >
 > En raison du processus d'autorisation actuel, le refus **implicite** n'est **pas** pris en charge par OVHcloud Object Storage si l'utilisateur est le propriétaire du bucket, c'est-à-dire que puisque les ACLs sont évaluées par défaut et que le propriétaire du bucket dispose d'une ACL FULL_CONTROL, si l'utilisateur est le propriétaire du bucket, l'utilisateur sera autorisé même s'il n'y a pas d'autorisation explicite dans le fichier policy.
@@ -267,7 +276,6 @@ La politique suivante visant à refuser l'accès en lecture à des objets à des
   }]
 }
 ```
-
 
 ### Liste des actions supportées
 

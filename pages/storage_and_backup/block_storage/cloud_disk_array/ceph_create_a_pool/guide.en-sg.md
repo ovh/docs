@@ -11,7 +11,17 @@ This guide shows you how to create a pool, using the OVHcloud Control Panel or t
 ## Requirements
 
 - A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
 
 ## Instructions
 
@@ -22,9 +32,7 @@ This guide shows you how to create a pool, using the OVHcloud Control Panel or t
 
 ### Using the OVHcloud Control Panel
 
-First, log in to your [OVHcloud Control Panel](/links/manager) and click on `Bare Metal Cloud`{.action}. In the section called `STORAGE AND BACKUPS`, click the `Cloud Disk Array`{.action} service.
-
-Here you will find the existing pools in `Pools`{.action}.
+On your Cloud Disk Array service page, you will find the existing pools in `Pools`{.action}.
 
 ![Ceph pools](images/ceph-add-pool-1.png){.thumbnail}
 

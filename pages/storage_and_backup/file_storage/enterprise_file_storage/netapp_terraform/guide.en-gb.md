@@ -23,6 +23,17 @@ In this guide, you will learn how to use OVHcloud Terraform provider to manage y
 - Access to the [OVHcloud API](/links/api)
 - An Enterprise File Storage service. A service can be ordered from the [product page](/links/storage/enterprise-file-storage), from the [OVHcloud Control Panel](/links/manager), or using the `ovh_storage_efs` resource (see [Order a service](#order-a-service)).
 
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
+
 ## Instructions
 
 ### Configure the OVHcloud Terraform provider

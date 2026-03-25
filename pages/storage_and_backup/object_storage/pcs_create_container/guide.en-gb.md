@@ -19,7 +19,16 @@ The first step is to create a container that will hold your files.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 If you use Horizon :
 
@@ -29,8 +38,7 @@ If you use Horizon :
 
 ### Creating an Object Storage container from the OVHcloud Control Panel <a name="controlpanel"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Object Storage`{.action} in the left-hand navigation bar under "Storage".
-Finally, click `Create an object container`{.action}.
+Click on `Object Storage`{.action} in the left-hand navigation bar under "Storage". Then click `Create an object container`{.action}.
 
 If this is your first container:
 

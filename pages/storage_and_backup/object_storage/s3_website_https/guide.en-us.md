@@ -23,15 +23,23 @@ To enable HTTPS, you need:
 - A registered [domain name](/links/web/domains).
 - You need to order a TLS certificate associated with your domain name at OVHcloud (optional if you already have a trusted TLS certificate associated with your domain name).
 - You have to [enable web hosting on your Object Storage bucket](/pages/storage_and_backup/object_storage/s3_website).
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 
 ## Instructions
 
 ### Step 1 - Configuring the Load Balancer
 
 #### Step 1.1 - Add your certificate
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click `Load Balancer`{.action}.
 
 Select your Load Balancer from the list, click the `SSL certificates`{.action} tab then click `Add an SSL certificate`{.action}.
 
