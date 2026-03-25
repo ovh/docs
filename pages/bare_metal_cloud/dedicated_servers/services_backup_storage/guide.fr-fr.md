@@ -317,7 +317,7 @@ Après avoir installé FileZilla sur votre serveur, vous pouvez le configurer po
 
 #### NFS
 
-Le backup storage est compatible uniquement avec NFS3.
+Le backup storage est compatible uniquement avec NFSv3.
 Assurez-vous d'abord d’avoir autorisé vos blocs d’IP à accéder au stockage et à utiliser le protocole NFS. Selon votre système d'exploitation Linux, il est possible que vous deviez installer le client NFS et démarrer le service NFS/portmap.
 
 Une fois le client NFS installé et le service portmap lancé, vous pouvez monter le partage NFS comme une partition normale comme indiqué ci-dessous :

@@ -1,7 +1,7 @@
 ---
 title: Utilizzare il Backup Storage su un server dedicato
 excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
-updated: 2025-10-09
+updated: 2026-03-25
 ---
 
 ## Obiettivo
@@ -318,10 +318,10 @@ Dopo aver installato FileZilla sul server, è possibile configurarlo per acceder
 
 #### NFS
 
-Per prima cosa, accertati di aver autorizzato i blocchi di indirizzi IP ad accedere allo spazio di storage e utilizzare il protocollo NFS. In base al sistema operativo Linux utilizzato, è possibile che sia necessario installare il client NFS e avviare il servizio NFS/portmap prima di eseguire il mount della share NFS come una normale partizione:
+Il backup storage è compatibile unicamente con NFSv3. Per prima cosa, accertati di aver autorizzato i blocchi di indirizzi IP ad accedere allo spazio di storage e utilizzare il protocollo NFS. In base al sistema operativo Linux utilizzato, è possibile che sia necessario installare il client NFS e avviare il servizio NFS/portmap prima di eseguire il mount della share NFS come una normale partizione:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.

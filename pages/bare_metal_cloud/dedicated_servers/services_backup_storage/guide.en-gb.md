@@ -52,7 +52,7 @@ Your backup storage will be configured within a few minutes. A confirmation emai
 
 ### Managing access control
 
-Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorized by default but have to be selected when adding IP addresses.
+Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorised by default but have to be selected when adding IP addresses.
 
 #### Adding a backup access
 
@@ -310,7 +310,7 @@ After installing FileZilla on your server, you can configure it to connect to yo
 
 #### NFS
 
-The backup storage is only compatible with NFS3. First, ensure that you have authorised your IP ranges to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
+The backup storage is only compatible with NFSv3. First, ensure that you have authorised your IP ranges to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
 
 Once you have the NFS client installed and portmap running, you can mount the NFS share like a normal partition as shown below:
 
