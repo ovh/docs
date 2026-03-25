@@ -114,7 +114,7 @@ Legacy users can use [this documentation](/pages/manage_and_operate/observabilit
 
 1\. **Create a local user**
 
-To create a local user, log in to your [OVHcloud Control Panel](/links/manager). In the sidebar, click on `Identity, Security & Operations`{.action}, then on `Identities`{.action}. A window will pop up, and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
+To create a local user, go to the [Identities](/links/control-panel/iam-identities) page. Complete the required fields and click `Confirm`{.action} to create the user.
 
 Navigate to the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management) for more information about users.
 

@@ -92,7 +92,7 @@ Keep the value of the `token` field as it will never be prompted again and will 
 
 #### Secret Manager information
 
-You will also need the `region` and the `okms-id` of the OKMS domain you want to use. This ID and this region can be found in the [OVHcloud Control Panel](/links/manager) or via the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli):
+You will also need the `region` and the `okms-id` of the OKMS domain you want to use. This ID and this region can be found in the [OKMS domain dashboard](/links/control-panel/security-kms) or via the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli):
 
 ```bash
 $ ovhcloud okms list

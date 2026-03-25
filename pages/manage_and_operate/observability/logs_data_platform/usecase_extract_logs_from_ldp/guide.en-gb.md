@@ -43,8 +43,7 @@ The `<suffix>` part (here `logs-export`) is a free‑form string you choose to d
 
 ### Create a stream alias
 
-1. Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Identity, Security & Operations`{.action} section.
-1. Click on `Logs Data Platform`{.action} under **Operations** then click on the desired account.
+1. Go to the [Logs Data Platform](/links/control-panel/logs-data-platform) section in the OVHcloud Control Panel and click on the desired account.
 1. Select the `Alias`{.action} tab and click `Add an alias`{.action}.
 1. Choose a suffix, add a description and save the alias.
 1. Click the `…`{.action} menu on the right of the newly created alias and select `Attach content to the alias`{.action}.

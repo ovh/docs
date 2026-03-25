@@ -13,6 +13,17 @@ L'objectif de ce guide est de présenter les différentes étapes pour créer et
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Avoir [commandé un KMS OVHcloud](/pages/manage_and_operate/kms/quick-start)
 
+<!-- CP-NAV-START:security-kms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Key Management Service](/links/control-panel/security-kms)
+- **Pour accéder à vos services :** `Identité, Sécurité & Opérations`{.action} > `Key Management Service`{.action} > Sélectionnez votre domaine OKMS
+
+---
+<!-- CP-NAV-END:security-kms -->
+
 ## En pratique
 
 ### Description des certificats d'accès OKMS
@@ -33,7 +44,8 @@ Un certificat d'accès n'est valable que pour le domaine pour lequel il a été 
 #### Depuis la console d'administration
 
 Il est possible de créer ce certificat depuis le menu dédié du KMS.
-Pour cela connectez-vous à [l'espace client OVHcloud](/links/manager), rendez-vous dans le menu `Identité, Sécurité & Opérations`{.action} puis `Key Management Service`{.action} et cliquez sur le bouton `Générer un certificat d'accès`{.action}.
+
+Dans l'onglet `Certificats d'accès`{.action}, cliquez sur le bouton `Créer un certificat d'accès`{.action}.
 
 ![Créer un certificat](images/create_certificat_01.png){.thumbnail}
 
