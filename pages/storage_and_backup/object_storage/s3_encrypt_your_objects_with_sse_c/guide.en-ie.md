@@ -263,7 +263,7 @@ Be careful not to include specific encryption headers when downloading an encryp
 >> This will configure the bucket to use SSE-OMK encryption with keys managed by Object Storage (AES256) for all new objects. 
 >>
 > Via the OVHcloud Control Panel
->> Select the Object Storage bucket you want to manage, and in the information panel, click on `Enable encryption`{.action}.
+>> Click on `Object Storage`{.action} under `Storage & Backup` in the left-hand menu.  Select the Object Storage bucket you want to manage, and in the information panel, click on `Enable encryption`{.action}.
 >>
 >> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
 >>

@@ -262,8 +262,8 @@ Attention de ne pas inclure de headers de chiffrement spécifiques lors du tél�
 >>
 >> Cela va configurer le bucket pour utiliser le chiffrement SSE-OMK avec les clés gérées par Object Storage (AES256) pour tous les nouveaux objets.
 >>
-> Avec l'espace client OVHcloud
->> Sélectionnez le bucket Object Storage concerné, puis dans le menu d’informations, cliquez sur `Activer le chiffrement`{.action}.
+> Avec l’espace client OVHcloud
+>> Cliquez sur `Object Storage`{.action} dans `Storage & backup` dans le menu de gauche.  Sélectionnez le bucket Object Storage concerné, puis dans le menu d’informations, cliquez sur `Activer le chiffrement`{.action}.
 >>
 >> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
 >>
