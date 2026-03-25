@@ -44,11 +44,34 @@ To connect to the ClickHouse service, you need server and user certificates.
 - **Server certificate**: The server Certificate Authority (*CA*) certificate can be downloaded from the `Dashboard`{.action} tab.
 - **User certificate and access key**: The user certificate and the user access key can be downloaded from the `Users`{.action} tab.
 
-### Installing the ClickHouse CLI
+### Connection methods
 
-As part of the official ClickHouse installation, you will have access to several tools, including the standard `clickhouse-client` CLI. For details, see the [official ClickHouse Client documentation](https://clickhouse.com/docs/interfaces/cli).
+There are multiple ways to connect to a ClickHouse cluster. Each method uses a different protocol and port:
 
-#### ClickHouse configuration file
+| Protocol | Port | Tool |
+|---|---|---|
+| ClickHouse Native | 20184 | `clickhouse-client` |
+| ClickHouse HTTPS | 20185 | `curl` or any HTTP client |
+| ClickHouse MySQL | 20186 | `mysql` |
+
+> [!primary]
+> The hostname, port and credentials for your cluster are available in the `Dashboard`{.action} tab of the OVHcloud Control Panel.
+
+### Connecting using the ClickHouse Native Protocol (port 20184)
+
+Connect using the official `clickhouse-client` CLI. For installation details, see the [official ClickHouse Client documentation](https://clickhouse.com/docs/interfaces/cli).
+
+```bash
+clickhouse-client --user avnadmin \
+                  --password <password> \
+                  --host clickhouse-01234567-89abcdef.database.cloud.ovh.net \
+                  --port 20184 \
+                  --secure
+```
+
+Replace `<password>` with your actual password and the hostname with the one from your cluster dashboard.
+
+#### ClickHouse Client configuration file
 
 You can configure the ClickHouse Client using an XML or YAML file to simplify connection. The client searches for configuration files in the following order:
 
@@ -64,7 +87,7 @@ Create a file named `clickhouse-client.xml` with the following content:
 
 ```xml
 <config>
-    <user>default</user>
+    <user>avnadmin</user>
     <password>your_password</password>
     <secure>true</secure>
 
@@ -77,8 +100,8 @@ Create a file named `clickhouse-client.xml` with the following content:
     <connections_credentials>
         <connection>
             <name>default</name>
-            <hostname>clickhouse-12345.cluster.database.cloud.ovh.net</hostname>
-            <port>9440</port>
+            <hostname>clickhouse-01234567-89abcdef.database.cloud.ovh.net</hostname>
+            <port>20184</port>
         </connection>
     </connections_credentials>
 </config>
@@ -93,7 +116,7 @@ For more information, see the [sample official configuration file](https://githu
 Create a file named `clickhouse-client.yml` with the following minimal content:
 
 ```yaml
-user: default
+user: avnadmin
 password: 'your_password'
 secure: true
 openSSL:
@@ -105,9 +128,7 @@ openSSL:
 
 Change these values according to your own cluster configuration.
 
-### Using the ClickHouse CLI
-
-#### Inserting data into ClickHouse
+#### Inserting data into ClickHouse using the ClickHouse Native CLI
 
 For this first example, let's insert a test row into the `my_table` table in the `test_db` database.
 
@@ -115,13 +136,39 @@ For this first example, let's insert a test row into the `my_table` table in the
 clickhouse-client --query "INSERT INTO test_db.my_table (id, message) VALUES (1, 'test-message-content')"
 ```
 
-#### Querying data from ClickHouse
+#### Querying data from ClickHouse using the ClickHouse Native CLI
 
 Retrieve all the data from the `my_table` table in the `test_db` database:
 
 ```bash
 clickhouse-client --query "SELECT * FROM test_db.my_table"
 ```
+
+### Connecting using HTTPS (port 20185)
+
+Connect using `curl` or any HTTP client over HTTPS:
+
+```bash
+curl https://clickhouse-01234567-89abcdef.database.cloud.ovh.net:20185 \
+  --user avnadmin:<password> \
+  -d "SELECT 1"
+```
+
+Replace `<password>` with your actual password and the hostname with the one from your cluster dashboard.
+
+### Connecting using the MySQL protocol (port 20186)
+
+Connect using the standard `mysql` client over the MySQL-compatible interface:
+
+```bash
+mysql --host=clickhouse-01234567-89abcdef.database.cloud.ovh.net \
+      --port=20186 \
+      --user=avnadmin \
+      --password=<password> \
+      --ssl-mode=REQUIRED
+```
+
+Replace `<password>` with your actual password and the hostname with the one from your cluster dashboard.
 
 ## Go further
 
