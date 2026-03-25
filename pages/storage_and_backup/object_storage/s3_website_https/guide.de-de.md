@@ -24,24 +24,22 @@ To enable HTTPS, you need:
 - You need to order a TLS certificate associated with your domain name at OVHcloud (optional if you already have a trusted TLS certificate associated with your domain name).
 - You have to [enable web hosting on your Object Storage bucket](/pages/storage_and_backup/object_storage/s3_website).
 
-<!-- CP-NAV-START:publiccloud-projects -->
+<!-- CP-NAV-START:network-load-balancer -->
 ---
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
 
 ---
-<!-- CP-NAV-END:publiccloud-projects -->
+<!-- CP-NAV-END:network-load-balancer -->
 
 ## Instructions
 
 ### Step 1 - Configuring the Load Balancer
 
 #### Step 1.1 - Add your certificate
-
-Click `Load Balancer`{.action}.
 
 Select your Load Balancer from the list, click the `SSL certificates`{.action} tab then click `Add an SSL certificate`{.action}.
 
