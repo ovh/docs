@@ -79,7 +79,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Click on `Managed Kubernetes Service`{.action} in the left-hand menu. In the table, select a cluster by clicking on the cluster name.
+>> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu. In the table, select a cluster by clicking on the cluster name.
 >>
 >> ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 >>
