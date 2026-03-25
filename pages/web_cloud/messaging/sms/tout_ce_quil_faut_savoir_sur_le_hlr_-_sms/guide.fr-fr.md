@@ -1,7 +1,7 @@
 ---
 title: "SMS - Vérifier la validité des numéros mobiles avec le HLR Lookup"
 excerpt: "Découvrez comment utiliser le HLR Lookup pour vérifier la validité des numéros mobiles de vos destinataires avant l'envoi de SMS depuis votre espace client OVHcloud"
-updated: 2026-03-24
+updated: 2026-03-25
 ---
 
 ## Objectif
