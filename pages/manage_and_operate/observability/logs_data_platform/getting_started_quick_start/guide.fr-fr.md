@@ -11,7 +11,7 @@ Welcome to the quick start tutorial of the Logs Data Platform. This Quick start 
 
 ### Welcome to Logs Data Platform
 
-First, you will have to create a new account on [the Logs Data Platform page](/links/public-cloud/data-platform). Creating an account is totally free. With the pay-as-you-go pricing model of Logs Data Platform you pay only for what you use.
+First, you will have to create a new account on [the Logs Data Platform page](links/manage-operate/ldp). Creating an account is totally free. With the pay-as-you-go pricing model of Logs Data Platform you pay only for what you use.
 
 - Open the [Logs Data Platform](/links/control-panel/logs-data-platform) page in the OVHcloud Control Panel and select your platform.
 
