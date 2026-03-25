@@ -644,7 +644,7 @@ Pour plus de détails, consultez le guide « [Gérer les reversements ou les co�
 
 ///
 
-### Lignes Trunk SIP
+### Lignes SIP Trunk
 
 /// details | Qu'est-ce qu'un SIP Trunk OVHcloud et à quoi sert-il ?
 
