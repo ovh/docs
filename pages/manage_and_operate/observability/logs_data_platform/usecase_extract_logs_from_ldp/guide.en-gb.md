@@ -26,17 +26,6 @@ The final part explains how you can export your logs from your [cold-stored arch
 - You have credentials for the alias you want to export (basic authentication or IAM bearer token).
 - You can install either **Logstash ≥ 8.0** or **Elasticdump ≥ 6.0** on the host that will run the export.
 
-<!-- CP-NAV-START:logs-data-platform -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Logs Data Platform](/links/control-panel/logs-data-platform)
-- **Navigation path:** `Identity, Security & Operations`{.action} > `Logs Data Platform`{.action} > Select the platform concerned.
-
----
-<!-- CP-NAV-END:logs-data-platform -->
-
 ## Instructions
 
 ### Alias naming conventions
@@ -54,7 +43,7 @@ The `<suffix>` part (here `logs-export`) is a free‑form string you choose to d
 
 ### Create a stream alias
 
-1. Click on the desired account.
+1. Go to the [Logs Data Platform](/links/control-panel/logs-data-platform) section in the OVHcloud Control Panel and click on the desired account.
 1. Select the `Alias`{.action} tab and click `Add an alias`{.action}.
 1. Choose a suffix, add a description and save the alias.
 1. Click the `…`{.action} menu on the right of the newly created alias and select `Attach content to the alias`{.action}.

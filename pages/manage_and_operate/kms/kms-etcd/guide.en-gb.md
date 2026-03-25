@@ -97,7 +97,7 @@ The encryption provider supports the following options:
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | `--client-cert` | Path to the client certificate file for OVHcloud KMS authentication.                                                                                      | `""` (required)                  |
 | `--client-key`  | Path to the private key file associated with the client certificate.                                                                                      | `""` (required)                  |
-| `--kmip-addr`   | Address of the KMIP server. Available in your [Key Management Service](/links/control-panel/security-kms) domain dashboard. (e.g., `eu-west-rbx.okms.ovh.net:5696`). | `""` (required)                  |
+| `--kmip-addr`   | Address of the KMIP server. Available in your [OKMS domain dashboard](/links/control-panel/security-kms). (e.g., `eu-west-rbx.okms.ovh.net:5696`). | `""` (required)                  |
 | `--kmip-key-id` | Identifier of the encryption key to use on the KMIP server.                                                                                               | `""` (required)                  |
 | `--sock`        | Path to the Unix socket the provider will listen on. Should be mounted inside the Kubernetes apiserver.                                                    | `/var/run/okms_etcd_plugin.sock` |
 | `--timeout`     | Timeout for the gRPC server operations.                                                                                                                   | `10s`                            |

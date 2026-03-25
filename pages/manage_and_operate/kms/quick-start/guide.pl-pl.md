@@ -15,10 +15,10 @@ The purpose of this guide is to show you the steps you need to take to set up yo
 <!-- CP-NAV-START:security-kms -->
 ---
 
-### Dostęp do Panelu klienta OVHcloud
+### OVHcloud Control Panel Access
 
-- **Link bezpośredni:** [Key Management Service](/links/control-panel/security-kms)
-- **Ścieżka nawigacji:** `Tożsamość, bezpieczeństwo i operacje`{.action} > `Key Management Service`{.action} > Wybierz swoją domenę OKMS.
+- **Direct link:** [Key Management Service](/links/control-panel/security-kms)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Key Management Service`{.action} > Select your OKMS domain.
 
 ---
 <!-- CP-NAV-END:security-kms -->

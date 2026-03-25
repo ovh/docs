@@ -14,6 +14,10 @@ This is what you need to know to get you started:
 - You are already sending logs on a stream you own: [see the quick start tutorial](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - There is nothing else
 
+After some training you will be able to do this kind of Dashboard:
+
+![OpenSearch Dashboards](images/osd.png)
+
 <!-- CP-NAV-START:logs-data-platform -->
 ---
 
@@ -24,10 +28,6 @@ This is what you need to know to get you started:
 
 ---
 <!-- CP-NAV-END:logs-data-platform -->
-
-After some training you will be able to do this kind of Dashboard:
-
-![OpenSearch Dashboards](images/osd.png)
 
 ## Instructions
 

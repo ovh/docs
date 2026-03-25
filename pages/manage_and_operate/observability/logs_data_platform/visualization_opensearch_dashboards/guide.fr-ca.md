@@ -14,20 +14,20 @@ This is what you need to know to get you started:
 - You are already sending logs on a stream you own: [see the quick start tutorial](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - There is nothing else
 
-<!-- CP-NAV-START:logs-data-platform -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Logs Data Platform](/links/control-panel/logs-data-platform)
-- **Pour accéder à vos services :** `Identité, Sécurité & Opérations`{.action} > `Logs Data Platform`{.action} > Sélectionnez la plateforme concernée.
-
----
-<!-- CP-NAV-END:logs-data-platform -->
-
 After some training you will be able to do this kind of Dashboard:
 
 ![OpenSearch Dashboards](images/osd.png)
+
+<!-- CP-NAV-START:logs-data-platform -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Logs Data Platform](/links/control-panel/logs-data-platform)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Logs Data Platform`{.action} > Select the platform concerned.
+
+---
+<!-- CP-NAV-END:logs-data-platform -->
 
 ## Instructions
 

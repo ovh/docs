@@ -16,18 +16,8 @@ This guide explains the integration of Logs Data Platform with OVHcloud IAM.
 ## Requirements
 
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Logs Data Platform service](/links/manage-operate/ldp)
-
-<!-- CP-NAV-START:logs-data-platform -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Logs Data Platform](/links/control-panel/logs-data-platform)
-- **Navigation path:** `Identity, Security & Operations`{.action} > `Logs Data Platform`{.action} > Select the platform concerned.
-
----
-<!-- CP-NAV-END:logs-data-platform -->
 
 ## Instructions
 

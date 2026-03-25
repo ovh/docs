@@ -41,7 +41,7 @@ It's possible to communicate with the OKMS domain using:
 
 ### Using the OKMS domain API via the Swagger UI
 
-You can access the OKMS domain Swagger UI by clicking on the link in your [Key Management Service](/links/control-panel/security-kms) domain dashboard.
+You can access the OKMS domain Swagger UI by clicking on the link in your [OKMS domain dashboard](/links/control-panel/security-kms).
 
 ![swagger](images/swagger.png){.thumbnail}
 

@@ -12,18 +12,8 @@ As explained in our [introductory documentation](/pages/manage_and_operate/obser
 
 ## Requirements
 
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Logs Data Platform account](/links/manage-operate/ldp)
-
-<!-- CP-NAV-START:logs-data-platform -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Logs Data Platform](/links/control-panel/logs-data-platform)
-- **Navigation path:** `Identity, Security & Operations`{.action} > `Logs Data Platform`{.action} > Select the platform concerned.
-
----
-<!-- CP-NAV-END:logs-data-platform -->
 
 ## Instructions
 
