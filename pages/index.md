@@ -2190,7 +2190,7 @@
     + [Messaging](products/web-cloud-messaging)
         + [SMS](products/web-cloud-messaging-sms)
             + [Getting started](web-cloud-messaging-sms-getting-started)
-                + [FAQ](web_cloud/messaging/sms/faq-sms)
+                + [FAQ SMS OVHcloud](web_cloud/messaging/sms/faq-sms)
                 + [Launching your first SMS campaign](web_cloud/messaging/sms/ma_premiere_campagne_sms)
                 + [Time2Chat, la messagerie conversationnelle par SMS pour les entreprises](web_cloud/messaging/sms/time_2_chat)
             + [Configuration](web-cloud-messaging-sms-configuration)
