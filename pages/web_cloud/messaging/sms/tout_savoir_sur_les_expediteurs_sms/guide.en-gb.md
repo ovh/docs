@@ -50,19 +50,27 @@ It allows you to receive a reply via the "Received SMS" tab.
 
 #### Alphanumeric sender
 
-You can customise your sender. However, you will no longer be able to receive a reply from the recipient of your SMS. To access the management of SMS senders, select the `Senders`{.action} tab (1) when you are on the relevant SMS account.
+<!-- CP-STEPS-START:alphanumeric-sender-management -->
+
+You can customise your sender. However, you will no longer be able to receive a reply from the recipient of your SMS. To access the management of SMS senders, click the `Senders`{.action} tab when you are on the relevant SMS account.
 
 ![sms send control panel](images/sms-send-control-panel04E.png){.thumbnail}
 
-If you want to add an additional SMS sender, click on the `Actions`{.action} button in the centre, then on `Add`{.action} (2).
+If you want to add an additional SMS sender, click the `Add`{.action} button, then select `Add a sender manually`{.action}.
 
 ![sms send control panel](images/sms-send-control-panel05E.png){.thumbnail}
 
-On the addition page, you have several options to configure a new SMS sender (3):
+In the drawer that opens, fill in the sender name (maximum 11 alphanumeric characters, not only numbers) and an optional description, then click `Next`{.action}.
 
-- **Add senders manually**: You must enter the desired sender, a description, and a justification for using this sender (4). A supporting document is also required.
+On the next step, enter a justification for using this sender — this is required for alphanumeric senders pending validation by the OVHcloud team. Click `Next`{.action} to proceed.
 
-**Example**: if you want to send your SMS with the name of your company as the sender, a company document will be requested.
+Review the summary and click `Confirm`{.action} to submit the sender. It will appear with the status "Validation in progress" until approved.
+
+You can also add senders using the other options available from the `Add`{.action} button:
+
+- **Add a sender from personal data**: You can request a sender based on the contact details of your OVHcloud account. A drop-down list of available senders will then appear.
+
+- **Add senders from your OVH domain names**: You can use a domain name available in your OVHcloud account as a sender. A drop-down list of available senders will then appear.
 
 The validation of an alphanumeric sender is usually processed within 72 hours after its creation.
 
@@ -71,9 +79,7 @@ The validation of an alphanumeric sender is usually processed within 72 hours af
 > We ask for a supporting document as part of our security policy. By default, this is a letterhead from the company or brand, including authorisation from a responsible person with a signature and company stamp, an identity document, or a Kbis extract if it is not a registered brand.
 >
 
-- **Add senders from personal data**: You can request a sender based on the contact details of your OVHcloud account. A drop-down list of available senders will then appear.
-
-- **Add senders from your OVHcloud domain names**: You can use a domain name available in your OVHcloud account as a sender. A drop-down list of available senders will then appear.
+<!-- CP-STEPS-END:alphanumeric-sender-management -->
 
 #### Virtual mobile number
 

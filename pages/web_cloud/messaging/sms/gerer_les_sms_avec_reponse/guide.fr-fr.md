@@ -57,13 +57,15 @@ La réponse (si vous l'activez) peut être ensuite :
 
 ### Gérer les options des réponses
 
+<!-- CP-STEPS-START:gerer-options-reponses -->
+
 Avant d'envoyer votre SMS réponse, nous vous conseillons de configurer les options de réception des réponses.
 
-Dans la barre d'onglets, cliquez sur `Options`{.action} puis sur `Options des réponses`{.action}.
+Dans la barre d'onglets, cliquez sur `Options`{.action} puis sur `Options de réponses`{.action}.
 
 ![options SMS réponse](images/SMSreponse-options.png){.thumbnail}
 
-Vous pouvez configurer une **action à la réception** (pour répondre à votre destinataire ou déclencher un script) et / ou une **notification à la réception** (pour vous tenir vous-même informé des réponses de vos destinataires).
+Vous pouvez configurer une **action à la réception** (pour répondre à votre destinataire ou déclencher un script).
 
 #### Action à la réception
 
@@ -85,44 +87,42 @@ Une fois votre option configurée, cliquez sur le bouton `Valider`{.action}.
 
 > [!warning]
 > **Informations sur la confidentialité des données**
-> 
+>
 > Ce service de notification doit être réservé à votre propre usage.
 >
 > En effet, les notifications contiennent des informations relatives au destinataire de votre SMS ainsi que des données de votre compte OVHcloud (nom du compte SMS contenant votre identifiant OVHcloud).
 
-Cliquez sur `Ajouter une notification`{.action} pour accéder au menu suivant.
+> ⚠️ **To document** : La fonctionnalité « Ajouter une notification » (notifications par e-mail ou par SMS à la réception d'une réponse) n'a pas d'équivalent dans le nouveau Manager. La page « Options de réponses » affiche uniquement un texte informatif indiquant que vous pouvez être notifié, mais ne propose pas d'interface pour configurer des notifications.
 
-Configurez alors une notification par e-mail ou par SMS.
-
-- Notification par e-mail
-    - Expéditeur : renseignez obligatoirement une adresse e-mail valide vous appartenant.
-    - Adresse e-mail : renseignez l'adresse e-mail destinataire de la notification.
-
-- Notification par SMS
-    - Expéditeur : choisissez un expéditeur parmi ceux déjà validés dans votre compte SMS.
-    - Numéro : entrez le numéro du destinataire de la notification au **format international**.
-
-Une fois votre notification configurée, cliquez sur le bouton `Valider`{.action}. Vous pouvez ajouter plusieurs notifications, les éditer ou les supprimer.
+<!-- CP-STEPS-END:gerer-options-reponses -->
 
 ### Envoyer un SMS réponse
 
-Dans l'espace client, sélectionnez l'onglet `Accueil`{.action} de votre compte SMS. Cliquez ensuite sur `Envoyer un SMS`{.action}.
+<!-- CP-STEPS-START:envoyer-sms-reponse -->
+
+Dans l'espace client, sélectionnez l'onglet `Gestion des SMS`{.action} de votre compte SMS. Cliquez ensuite sur `Envoyer un SMS`{.action}.
 
 ![envoi SMS](images/SMSreponse-envoi.png){.thumbnail}
 
-Assurez-vous que votre expéditeur est bien le `Numéro permettant la réponse (France uniquement)`.
+Assurez-vous que votre expéditeur est bien le `Numéro permettant la réponse (France uniquement)`{.action}.
 
 ![envoi SMS](images/SMSreponse-expediteur.png){.thumbnail}
 
 Complétez ensuite les champs dédiés au(x) destinataire(s) et à votre message. Pour plus de détails, consultez [notre guide sur l'envoi de SMS depuis l'espace client](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client).
 
+<!-- CP-STEPS-END:envoyer-sms-reponse -->
+
 ### Consulter les réponses
 
-Dans l'espace client, cliquez sur l'onglet `Message et campagne`{.action} de votre compte SMS. Cliquez ensuite sur `SMS reçus`{.action}.
+<!-- CP-STEPS-START:consulter-reponses -->
+
+Dans l'espace client, cliquez sur l'onglet `Gestion des SMS`{.action} de votre compte SMS. Cliquez ensuite sur `SMS reçus`{.action}.
 
 ![SMS reçus](images/SMSreponse-recus.png){.thumbnail}
 
 Un tableau liste tous les SMS reçus en réponse de vos envois. Vous pouvez trier ces SMS en cliquant sur les en-têtes des colonnes du tableau.
+
+<!-- CP-STEPS-END:consulter-reponses -->
 
 ## Aller plus loin
 

@@ -39,29 +39,35 @@ Le HLR Lookup permet également de nettoyer vos listes de numéros en identifian
 ---
 <!-- CP-NAV-END:telecom-sms -->
 
-![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
+<!-- CP-STEPS-START:hlr-access -->
 
-Sélectionnez l'onglet `Message et campagne`{.action} > `Gestion des SMS`{.action}.
+Cliquez sur l'onglet `Gestion des SMS`{.action} puis sur `HLR`{.action}.
 
-![Gestion SMS](images/gestion-des-sms.png){.thumbnail}
+![Section HLR dans le nouveau Manager](images/img_4792.png){.thumbnail}
 
-Cliquez sur `HLR`{.action}.
-
-![Section HLR dans l'espace client](images/img_4792.png){.thumbnail}
+<!-- CP-STEPS-END:hlr-access -->
 
 ### Nouvelle requête HLR
 
-Renseignez le numéro à tester puis cliquez sur `Envoyer la requête`{.action}.
+<!-- CP-STEPS-START:hlr-new-request -->
+
+Renseignez le numéro à tester au format international, acceptez les conditions particulières d'utilisation du service, puis cliquez sur `Envoyer la requête`{.action}.
 
 ![Formulaire de nouvelle requête HLR](images/img_4793.png){.thumbnail}
 
 Chaque requête est facturée 0,1 crédit SMS. Consultez la [grille tarifaire SMS](/links/telecom/sms-prices) pour plus de détails.
 
+<!-- CP-STEPS-END:hlr-new-request -->
+
 ### Consulter les requêtes passées
 
-Les résultats de vos requêtes apparaissent dans le tableau en bas de page.
+<!-- CP-STEPS-START:hlr-past-requests -->
+
+Les résultats de vos requêtes apparaissent dans le tableau `Consulter les requêtes passées` en bas de page.
 
 ![Tableau des résultats de requêtes HLR](images/tableau-historique.png){.thumbnail}
+
+<!-- CP-STEPS-END:hlr-past-requests -->
 
 ### Les différents états
 
@@ -79,29 +85,27 @@ Les rapports HLR indiquent :
 
 ### Importation du fichier de destinataires
 
-Rendez-vous dans la partie `Contacts`{.action} > `Créer une liste de contacts`{.action} et ajoutez votre fichier au format `.csv` ou `.txt`.
+<!-- CP-STEPS-START:import-contacts -->
+
+Cliquez sur l'onglet `Contacts`{.action} > `Créer une liste de contacts`{.action}, puis cliquez sur `Ajouter une liste de destinataires`{.action}.
 
 ![Créer une liste de contacts](images/creer-liste-contacts.png){.thumbnail}
 
-![Ajout fichier contacts](images/ajouter-fichier-contacts.png){.thumbnail}
+Dans la fenêtre qui s'ouvre, renseignez un nom pour votre liste et ajoutez votre fichier au format `.csv` ou `.txt`, puis cliquez sur `Ajouter`{.action}.
+
+![Ajout d'une liste de destinataires](images/ajouter-fichier-contacts.png){.thumbnail}
 
 Consultez le guide « [Liste de destinataires SMS](/pages/web_cloud/messaging/sms/liste_de_destinataire_sms) » pour plus de détails.
 
+<!-- CP-STEPS-END:import-contacts -->
+
 ### Nettoyer le fichier
 
-Une fois votre carnet chargé sur l'espace client, sélectionnez-le et procédez au nettoyage.
+<!-- CP-STEPS-START:clean-contact-list -->
 
-![Sélection du carnet de contacts à nettoyer](images/nettoyer-liste.png){.thumbnail}
+> ⚠️ **To document**: La fonctionnalité de nettoyage de liste (Freemium / Premium) du gestionnaire de destinataires n'a pas été retrouvée dans l'interface du nouveau Manager. Les options « Nettoyer le fichier » (dédoublonnage Freemium et vérification HLR Premium) ne sont pas disponibles sous forme d'action dédiée dans l'onglet `Contacts`{.action} > `Créer une liste de contacts`{.action}. Vérifier si cette fonctionnalité a été supprimée, renommée ou intégrée à un autre flux, et mettre à jour ce bloc en conséquence.
 
-2 options sont disponibles :
-
-- Freemium : dédoublonnage et vérifications syntaxiques (gratuit).
-- Premium : dédoublonnage et vérification de la validité des contacts via une requête HLR (cette action sera facturée 0,1 crédit SMS par contact).
-
-![Options de nettoyage Freemium et Premium](images/options-de-nettoyage.png){.thumbnail}
-
-Le nettoyage de la base dédoublonnera vos contacts et éliminera ceux qui sont invalides.
-Le fichier nettoyé remplacera l'ancien qui sera sauvegardé et accessible. Vous recevrez un rapport par e-mail à la fin de l'opération.
+<!-- CP-STEPS-END:clean-contact-list -->
 
 ## Aller plus loin
 

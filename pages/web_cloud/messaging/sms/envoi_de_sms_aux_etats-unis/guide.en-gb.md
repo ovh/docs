@@ -44,13 +44,13 @@ You can request the validation of multiple message templates.
 
 #### 2.1 Via the Control Panel
 
-Click on the `Message and campaign`{.action} tab and click `SMS management`{.action}.
+<!-- CP-STEPS-START:add-template-cp -->
 
-Finally, click `Manage templates`{.action}.
+Click the `SMS management`{.action} tab, then click the `Manage templates`{.action} sub-tab.
 
 ![SMS messages to the USA](images/smstousa1.png){.thumbnail}
 
-On the next page, click on `Actions`{.action} then on `Add`{.action}.
+On the templates list page, click `Add a template`{.action}.
 
 ![SMS messages to the USA](images/smstousa2.png){.thumbnail}
 
@@ -64,6 +64,8 @@ A pop-up will appear with fields to complete.
 | Activity    | Select the template type:<br>\- Alert<br>\- Authentication<br>\- Transaction processing system |
 | Description | Template description                                                                                            |
 | Template      | Write the template, including the variable between #                                                                  |
+
+<!-- CP-STEPS-END:add-template-cp -->
 
 #### 2.2 Via APIs
 

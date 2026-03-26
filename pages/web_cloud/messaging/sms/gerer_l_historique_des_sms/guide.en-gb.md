@@ -38,33 +38,33 @@ The log records the date, time, sender, recipient and contents of the sent SMS.
 
 ### Step 1: Viewing the log in your Control Panel
 
-In the tab bar, click `Message and campaign`{.action} then `SMS Management`{.action} to access your unit SMS history or `Campaign Management`{.action} to access your SMS campaign history.
+<!-- CP-STEPS-START:view-sms-log -->
 
-Then click on `Sending log`{.action} or `Statistics and history`{.action}.
+In the `SMS management`{.action} tab, click `Sending history`{.action} to access your unit SMS history. To access your SMS campaign history, click the `Campaign management`{.action} tab instead.
 
 ![sms-history](images/smshistory1.png){.thumbnail}
 
-You can click on the ‘Date’ column on the left to sort your log by send date.
+You can click on the `Date` column header to sort your log by send date.
 
-![sms-history](images/smshistory2.png){.thumbnail}
-
-The Actions `...`{.action} heading at the end of each SMS allows you to view or delete the message.
+Click the `Actions`{.action} button at the end of a row to view or delete that message.
 
 ![sms-history](images/smshistory3.png){.thumbnail}
 
-To delete several SMS messages at once, tick the boxes next to each message. The `Delete the SMS selected`{.action} button will appear above the log.
+To delete several SMS messages at once, tick the boxes next to each message. The `Delete the selected SMS`{.action} button will appear in the toolbar above the log.
 
 ![sms-history](images/smshistory4.png){.thumbnail}
- 
-The `Filter`{.action} button allows you to filter your search by sender (if you have several senders) or by recipient.
 
-![sms-history](images/smshistory5.png){.thumbnail}
- 
-### Step 2: Downloading the sending log as a CSV <a name="csv"></a> 
+> ⚠️ **To document**: The filter functionality (CP "Filter" button) was not found in the NM Sending history tab — no filter panel or button was observed. Verify whether filtering by sender or recipient is available in the NM interface before publishing.
 
-Click on the `Actions`{.action} button above your log then on `Download`{.action} to download your SMS log in a .csv format. 
- 
-![sms-history](images/smshistory6.png){.thumbnail}
+<!-- CP-STEPS-END:view-sms-log -->
+
+### Step 2: Downloading the sending log as a CSV <a name="csv"></a>
+
+<!-- CP-STEPS-START:download-sms-csv -->
+
+In the `Sending history`{.action} tab, click `Download history`{.action} to download your SMS log in CSV format.
+
+<!-- CP-STEPS-END:download-sms-csv -->
  
 You can then view the log using a spreadsheet program. The information will display as in the example below.
 

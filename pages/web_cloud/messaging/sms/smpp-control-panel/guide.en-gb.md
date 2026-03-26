@@ -31,33 +31,41 @@ In the OVHcloud Control Panel, you can retrieve your SMPP credentials, change yo
 
 ## Instructions
 
-Select your SMPP account. Its name is different from other OVHcloud SMS accounts. It starts with `smpp-` instead of `sms-` for standard SMS accounts.
+<!-- CP-STEPS-START:account-selection -->
 
-![SMPP account](images/smpp-account.png){.thumbnail}
+In the left sidebar, navigate to `Telecom`{.action} > `SMS`{.action}. SMPP accounts appear at the top of the account list alongside regular SMS accounts. Their names start with `smpp-` instead of `sms-` for standard SMS accounts. Click your SMPP account to select it.
+
+![SMPP account list in NM sidebar](images/smpp-account.png){.thumbnail}
+
+<!-- CP-STEPS-END:account-selection -->
 
 ### Credentials
 
-In the `General Information` box, you can find the login details required to use your service. Use the button to the right of each field to copy its contents.
+<!-- CP-STEPS-START:credentials -->
 
-![SMPP account](images/smpp-account-ID.png){.thumbnail}
+Once your SMPP account is selected, the Home tab opens by default. Your login credentials are displayed in the **General information** tile: System identifier (SystemId), secured and unsecured SMPP endpoints, windowing, and allowed throughput.
 
-If you have forgotten your SMPP password, use the `Generate a new password`{.action} button. A new password will then be sent to the contact email address for your OVHcloud account, and it will be displayed to you.<br>
+![SMPP account Home tab — General information and Service status tiles](images/smpp-account-ID.png){.thumbnail}
 
-Click `Send`{.action} to confirm this action.
+To reset your SMPP password, click `Generate a new password`{.action} in the **Service status** tile. A confirmation modal will appear. Click `Send`{.action} to confirm. A new password will be sent to the contact email address for your OVHcloud account.
 
-![SMPP account](images/smpp-account-password.png){.thumbnail}
+![Generate a new password confirmation modal](images/smpp-account-password.png){.thumbnail}
+
+<!-- CP-STEPS-END:credentials -->
 
 ### Access management
 
-Click the `Options`{.action} tab and then click `SMPP Settings`{.action}.
+<!-- CP-STEPS-START:access-management -->
 
-![SMPP account](images/smpp-acl0.png){.thumbnail}
+Click the `Options`{.action} tab. For SMPP accounts, the `SMPP settings`{.action} sub-tab is selected by default.
 
-The authorised IP framework lists the IP addresses of your SMPP clients that are authorised to access the SMPP server.
+![Options tab — SMPP settings sub-tab showing General information, Allowed IPs, and Service status tiles](images/smpp-acl0.png){.thumbnail}
 
-Click the `Add IP`{.action} button to add IP addresses to this list.
+The **Allowed IPs** tile lists the IP addresses authorised to connect to the SMPP server. Click `Add an IP`{.action} to add a new IP address to the list.
 
-![SMPP account](images/smpp-acl1.png){.thumbnail}
+![Add an IP address modal](images/smpp-acl1.png){.thumbnail}
+
+<!-- CP-STEPS-END:access-management -->
 
 ### Manage senders and credits
 

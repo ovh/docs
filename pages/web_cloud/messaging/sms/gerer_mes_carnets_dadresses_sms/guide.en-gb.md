@@ -30,13 +30,17 @@ All OVHcloud SMS accounts can use one or more address books. This guide explains
 
 ### Step 1: Create an address book via the OVHcloud Control Panel
 
-Click on the SMS account concerned, and select the `Contacts`{.action} tab, then `Address book`{.action}.
+<!-- CP-STEPS-START:create-address-book -->
+
+In the `Contacts`{.action} tab, click `Address book`{.action}.
 
 ![phonebook](images/smsphonebook01.png){.thumbnail}
 
-Click `Add an address book`{.action}, and give it a name.
+Click `Create an address book`{.action}, and give it a name.
 
 ![phonebook](images/smsphonebook2.png){.thumbnail}
+
+<!-- CP-STEPS-END:create-address-book -->
 
 ### Step 2: Add contacts to your address book
 
@@ -44,15 +48,19 @@ You have now created the address book, but it does not contain any contacts. The
 
 ### Add them individually via the OVHcloud Control Panel
 
-Select the `Actions`{.action} button, and click `Add`{.action}.
+<!-- CP-STEPS-START:add-contact-individually -->
+
+Click `Add`{.action}.
 
 ![phonebook](images/smsphonebook3.png){.thumbnail}
 
-You will access a window that enables you to enter the contact details.
+A side drawer opens where you can enter the contact's details (last name, first name, company, and at least one phone number).
 
 ![phonebook](images/smsphonebook4.png){.thumbnail}
 
-Fill out the fields you need to, and confirm to save your changes. The contact will then be added to your address book. You will need to repeat this process to add more contacts.
+Fill in the required fields and click `Confirm`{.action} to save your changes. The contact will then be added to your address book. Repeat this process to add more contacts.
+
+<!-- CP-STEPS-END:add-contact-individually -->
 
 ### Add multiple contacts by importing a contact file to the OVHcloud Control Panel
 
@@ -88,25 +96,28 @@ At the same time, save or export it in .csv format to prepare the import.
 
 #### Import the file into the OVHcloud Control Panel
 
-Go back to the OVHcloud Control Panel, select the `Actions`{.action} button, and click `Import`{.action}.
+<!-- CP-STEPS-START:import-contact-file -->
 
-![phonebook](images/smsphonebook5.png){.thumbnail}
+> [!warning]
+> **Feature not available in the new Manager**
+>
+> The CSV contact file import is not available in the new OVHcloud Manager. Contacts can only be added individually via the `Add`{.action} button in the `Contacts`{.action} tab.
 
-A pop-up window will appear. Next, click `Contact file`{.action} to select your .csv file, then confirm.
+> ⚠️ **To document**: The CP import-contact-file flow (Actions > Import > Contact file) has no NM equivalent. NM phonebooks only support adding contacts one at a time via a form drawer. Consider removing or replacing this section with a note pointing users to the individual add flow.
 
-![phonebook](images/smsphonebook6.png){.thumbnail}
-
-Wait a few seconds while the file is imported in to the OVHcloud Control Panel.
+<!-- CP-STEPS-END:import-contact-file -->
 
 ### Step 3: Edit or delete an address book
 
-If you would like to edit the name of an address book, select it in the dropdown menu (1) (if you have created several address books), then click on the pencil icon (2) across from the address book name. 
+<!-- CP-STEPS-START:edit-delete-address-book -->
 
-To delete an address book, click `Delete address book`{.action} after you have selected it in the dropdown menu (1).
+To delete an address book, select it from the dropdown menu (if you have created several), then click `Delete the address book`{.action}.
 
-To edit or delete a contact, click `...`{.action} in the Actions column (4) across from the contact concerned. You will then see a menu offering you these choices.
+To edit or delete a contact, click the ellipsis icon (⋮) on the contact row. A menu will appear with `Edit`{.action} and `Delete`{.action} options.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
+
+<!-- CP-STEPS-END:edit-delete-address-book -->
 
 ## Go further
 

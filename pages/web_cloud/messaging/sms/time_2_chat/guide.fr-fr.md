@@ -73,44 +73,49 @@ La phase de lancement de Time2Chat est réservée aux clients déjà détenteurs
 
 Nous proposerons prochainement ce service à tous les clients possédant un [compte SMS OVHcloud](/links/telecom/sms).
 
+<!-- CP-STEPS-START:sms-credits-callout -->
+
 > [!primary]
 >
 > Les crédits SMS existants peuvent être utilisés sur Time2Chat.
 >
-> Vous pouvez également acheter un pack de crédits SMS depuis la [section SMS de votre espace client](/links/control-panel/telecom-sms). Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
+> Vous pouvez également acheter un pack de crédits SMS depuis le New Manager. Depuis l'onglet `Accueil`{.action}, cliquez sur le bouton `Acheter des crédits`{.action} en haut de la page.
+
+![Tableau de bord SMS — onglet Accueil avec le bouton Acheter des crédits](images/time2chat_order_number_button.png){.thumbnail}
+
+<!-- CP-STEPS-END:sms-credits-callout -->
 
 ### Commander un numéro Time2Chat
 
-Dans l'onglet `Accueil`{.action}, cliquez sur le bouton `Commander un numéro Time2Chat`{.action}.
+<!-- CP-STEPS-START:commander-numero-time2chat -->
 
-![time2chat](images/time2chat_order_number_button.png){.thumbnail}
+Depuis l’onglet `Accueil`{.action}, cliquez sur le lien `Commander un numéro Time2Chat`{.action} dans la tuile « Je veux... ».
 
-Dans le formulaire qui s’affiche, remplissez tous les champs puis cliquez sur `Continuer`{.action}.
+![Tableau de bord SMS — tuile Je veux... avec le lien Commander un numéro Time2Chat](images/time2chat_order_number_button.png){.thumbnail}
 
-![time2chat](images/time2chat_order_number_form.png){.thumbnail}
+Un panneau latéral s’ouvre avec le titre « Commander un numéro Time2Chat ». Remplissez tous les champs du formulaire (Nom de la société, Numéro de la société, Site web, Raison sociale, Marque utilisant le service, Cas d’utilisation principal, Nom du contact, Email du contact), puis cliquez sur `Envoyer`{.action}.
+
+![Formulaire Commander un numéro Time2Chat — panneau latéral avec les champs à remplir et le bouton Envoyer](images/time2chat_order_number_form.png){.thumbnail}
 
 > [!primary]
 >
 > Les informations saisies pourront être modifiées ultérieurement depuis l’espace client.
 
-Suivez toutes les étapes avant de procéder au paiement.
+Vous serez redirigé vers la page de commande OVHcloud pour procéder au paiement.
+
+<!-- CP-STEPS-END:commander-numero-time2chat -->
 
 ### Configurer un expéditeur Time2Chat
 
-Une fois votre numéro Time2Chat commandé, cliquez sur l’onglet `Expéditeurs`{.action} de votre compte SMS. Le numéro Time2Chat apparaît automatiquement dans la liste des expéditeurs avec le type « Numéro virtuel ». Pour le configurer, cliquez à droite du numéro sur le bouton `...`{.action} puis sélectionnez `Configurer`{.action}. Vous accédez alors à la page de configuration du SMS conversationnel Time2Chat.
+<!-- CP-STEPS-START:configurer-expediteur-time2chat -->
 
-![time2chat](images/time2chat_configuration_number.png){.thumbnail}
+Une fois votre numéro Time2Chat commandé, cliquez sur l’onglet `Expéditeurs`{.action} de votre compte SMS. Le numéro Time2Chat apparaît automatiquement dans la liste des expéditeurs avec le type « Numéro virtuel ».
 
-Dans cette interface, vous pouvez :
+![Onglet Expéditeurs — liste des expéditeurs avec colonnes Expéditeur, Référent et Statut](images/time2chat_configuration_number.png){.thumbnail}
 
-- définir les informations de réponse automatique :
-    - Si un client final répond par le mot-clé « contact », il recevra automatiquement un message contenant votre nom commercial, votre numéro de téléphone et votre site web.
-    - Si vous ne répondez pas à un message client sous 24 heures, une réponse automatique (par exemple : « Votre message a bien été reçu ») sera envoyée pour indiquer la fin de la conversation.
-- compléter les informations KYC (**K**now **Y**our **C**ustomer) : Renseignez la raison sociale, la marque utilisant le service, le cas d’utilisation principal, ainsi que les coordonnées du contact principal (nom et e-mail).
+> ⚠️ **To document** : L’action « Configurer » disponible dans l’ancien espace client pour paramétrer un expéditeur Time2Chat (réponse automatique, informations KYC) n’est pas présente dans le New Manager. L’onglet Expéditeurs du New Manager permet uniquement d’ajouter ou de supprimer des expéditeurs. La page de configuration du SMS conversationnel Time2Chat doit être documentée dès qu’elle sera disponible dans le New Manager.
 
-Ces éléments permettent de personnaliser votre numéro Time2Chat et de garantir le bon fonctionnement des échanges bidirectionnels entre votre marque et vos clients.
-
-Dès que le client répond, la **session de 24 heures** démarre. Tous les échanges effectués durant cette période sont décomptés de vos **crédits SMS disponibles**, qu’ils proviennent de votre pack initial ou d’achats complémentaires.
+<!-- CP-STEPS-END:configurer-expediteur-time2chat -->
 
 ## Aller plus loin
 
