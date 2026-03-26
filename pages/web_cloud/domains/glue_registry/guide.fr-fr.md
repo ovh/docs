@@ -36,7 +36,7 @@ Pour plus d'informations sur ces sujets, consultez les guides suivants :
 - [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information).
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Selon vos besoins, vous pouvez personnaliser le nom des serveurs DNS de votre nom de domaine OVHcloud à l'aide des « **Hôtes** ».
+Selon vos besoins, vous pouvez personnaliser le nom des serveurs DNS de votre nom de domaine OVHcloud à l'aide des « **Hôtes** ».
 
 **Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud.**
 
@@ -60,7 +60,7 @@ Selon vos besoins, vous pouvez personnaliser le nom des serveurs DNS de votre no
 > [!warning]
 >
 > **Personnaliser les serveurs DNS d'un nom de domaine est une manipulation sensible** : effectuer un changement inopportun peut couper l'accès à votre site web et/ou rendre indisponible la réception de nouveaux messages sur vos adresses e-mail.
-> Suivez minutieusement les parties décrites ci-dessous ou à faire appel à un [prestataire spécialisé](/links/partner) en cas de doute.
+> Suivez minutieusement les parties décrites ci-dessous ou faites appel à un [prestataire spécialisé](/links/partner) en cas de doute.
 >
 
 ### 1 - Règle générale <a name="step1"></a>
@@ -137,7 +137,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -145,7 +145,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Dans le tableau qui s'affiche, vous retrouverez s'ils existent, les enregistrements hôtes actuellement configurés chez OVHcloud pour votre nom de domaine. Pour ajouter un nouvel enregistrement, cliquez sur le bouton `Ajouter`{.action}.
 >>
->> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
+>> ![Glue Registry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
 > **Étape 3**
 >>
@@ -156,7 +156,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> |Nom de l'hôte|Personnalisez le nom d'hôte que vous souhaitez utiliser en tant que serveur DNS personnalisé.|
 >> |IP(s) de destination|Indiquez la ou les adresses IP (IPv4 et/ou IPv6) auxquelles le nom d'hôte doit être relié. Il s'agit de la ou des adresses IP du serveur DNS actuellement utilisé par votre nom de domaine. Si vous devez renseigner plusieurs adresses IP, séparez-les par des *virgules*.|
 >>
->> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add-another-glue-record-step-2.png){.thumbnail}
+>> ![Glue Registry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add-another-glue-record-step-2.png){.thumbnail}
 >>
 >> Dans l'image ci-dessus, tout en reprenant l'exemple de l'[étape 2](#step2), l'hôte que l'on souhaite ajouter ici (à partir du nom de domaine *domain.tld*) est **dns1.domain.tld**.
 >>
@@ -191,7 +191,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine que vous avez utilisé pour créer les hôtes lors de la [Partie 3](#step3).
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -201,11 +201,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Sélectionnez l'entrée de type *A* ou *AAAA* en fonction du type d'IP associée que vous souhaitez ajouter.
 >>
->> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-2.png){.thumbnail}
+>> ![Glue Registry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-2.png){.thumbnail}
 >>
 > **Étape 4**
 >>
->> Renseignez le *sous-domaine* et l'adresse *IPv4* (A) ou *IPv6* (AAAA), puis poursuivez jusqu'à la validation de l'ajout. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+>> Renseignez le *sous-domaine* et l'adresse *IPv4* (A) ou *IPv6* (AAAA), puis poursuivez jusqu'à la validation de l'ajout. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ///
 
@@ -248,15 +248,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine pour lequel vous avez personnalisé les serveurs DNS.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Cliquez sur `Modifier en mode textuel`{.action}.
 >>
->> Une fenêtre comprenant votre zone DNS en mode *textuel* apparaît :
+>> Une fenêtre comprenant votre zone DNS en mode *textuel* apparaît :
 >>
->> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format-step-1.png){.thumbnail}
+>> ![Glue Registry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format-step-1.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
@@ -265,7 +265,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Étape 3**
 >>
->> Dans cette fenêtre, remplacez **uniquement dans les enregistrements de type *NS*** les noms des serveurs DNS par vos propres noms de serveurs DNS personnalisés **sans oublier** d'incrémenter de « 1 » la première valeur numérique de la ligne *SOA*. Une fois vos modifications faites, cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
+>> Dans cette fenêtre, remplacez **uniquement dans les enregistrements de type *NS*** les noms des serveurs DNS par vos propres noms de serveurs DNS personnalisés **sans oublier** d'incrémenter de « 1 » la première valeur numérique de la ligne *SOA*. Une fois vos modifications faites, cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 >>
 >> La modification ne sera pas visible immédiatement. Patientez une vingtaine de minutes pour observer la bonne prise en compte de vos modifications.
 
@@ -331,13 +331,13 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez *le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS*.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Sélectionnez l’onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier les serveurs DNS`{.action}.
 >>
->> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-dns-servers.png){.thumbnail}
+>> ![Glue Registry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-dns-servers.png){.thumbnail}
 >>
 > **Étape 3**
 >>
@@ -351,7 +351,7 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 > **Étape 4**
 >>
->> Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
+>> Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
 >>
 >> > [!primary]
 >> >
@@ -370,7 +370,7 @@ Dans notre exemple de personnalisation des serveurs DNS du nom de domaine *domai
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

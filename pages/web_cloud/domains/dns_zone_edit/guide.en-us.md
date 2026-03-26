@@ -47,9 +47,9 @@ For further explanation, please refer to our guides “[Everything you need to k
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to edit the configuration using the interface of your service provider that manages your domain name.
 >
-> - If your domain name is registered with OVHcloud, you can check if it uses our configuration. To do this, please refer to our guide on [Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit).
+> - If your domain name is registered with OVHcloud, you can check if it uses our configuration. If needed, refer to our guide on [Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit).
 >
-> In both of the above cases, be careful when making your DNS server changes. The old configuration that can be applied to your domain name will no longer be active if you have not previously reconfigured and customised the new DNS zone present at OVHcloud.
+> In both of the above cases, be careful when making your DNS server changes. The old configuration that can be applied to your domain name will no longer be active if you have not previously reconfigured and customized the new DNS zone present at OVHcloud.
 > You can only have one active DNS zone per domain name at a time.
 >
 

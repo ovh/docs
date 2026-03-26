@@ -53,7 +53,7 @@ Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zo
 
 > [!primary]
 >
-> Les sauvegardes de votre zone DNS sont soumises aux limitations suivantes :
+> Les sauvegardes de votre zone DNS sont soumises aux limitations suivantes :
 >
 > - Nous conservons au maximum 200 sauvegardes pour une même zone DNS.
 > - Dès qu'une sauvegarde a plus de 31 jours, celle-ci est automatiquement supprimée, à l'exception des **5 sauvegardes les plus récentes** effectuées.
@@ -70,19 +70,19 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Le tableau qui apparaît représente la zone DNS de votre nom de domaine. Vous y retrouvez la liste des enregistrements DNS qu'elle contient. Sur la droite du tableau, plusieurs boutons vous permettent d'effectuer des actions sur votre zone DNS.
 >>
->> ![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
+>> ![Outil d'historique DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 >>
 >> Cliquez sur `Voir l'historique de ma zone DNS`{.action}.
 >>
 > **Étape 3**
 >>
->> Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique des sauvegardes de votre zone DNS, classé de la date la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS.
+>> Sur la nouvelle page qui s'affiche, un tableau liste l'historique des sauvegardes de votre zone DNS, de la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS.
 >>
 >> Pour visualiser la zone DNS de votre choix, identifiez la ligne correspondante dans le tableau puis cliquez sur l’icône présente dans la colonne `Voir`{.action}.
 >>
@@ -94,7 +94,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> ![Détail d’une zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/details-dns-zone.png){.thumbnail}
 >>
->> Cliquez sur `Fermer`{.action} pour revenir à la page principale « Historique de la zone DNS ».
+>> Cliquez sur `Fermer`{.action} pour revenir à la page principale « Historique de la zone DNS ».
 
 ///
 
@@ -107,19 +107,19 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Le tableau qui apparaît représente la zone DNS de votre nom de domaine. Vous y retrouvez la liste des enregistrements DNS qu'elle contient. Sur la droite du tableau, plusieurs boutons vous permettent d'effectuer des actions sur votre zone DNS.
 >>
->> ![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
+>> ![Outil d'historique DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 >>
 >> Cliquez sur `Voir l'historique de ma zone DNS`{.action}.
 >>
 > **Étape 3**
 >>
->> Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique des sauvegardes de votre zone DNS, classé de la date la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS.
+>> Sur la nouvelle page qui s'affiche, un tableau liste l'historique des sauvegardes de votre zone DNS, de la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS.
 >>
 >> Pour télécharger la zone DNS de votre choix, identifiez la ligne correspondante dans le tableau puis cliquez sur l'icône présente dans la colonne `Télécharger`{.action}.
 >>
@@ -138,19 +138,19 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Le tableau qui apparaît représente la zone DNS de votre nom de domaine. Vous y retrouvez la liste des enregistrements DNS qu'elle contient. Sur la droite du tableau, plusieurs boutons vous permettent d'effectuer des actions sur votre zone DNS.
 >>
->> ![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
+>> ![Outil d'historique DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 >>
 >> Cliquez sur `Voir l'historique de ma zone DNS`{.action}.
 >>
 > **Étape 3**
 >>
->> Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique des sauvegardes de votre zone DNS, classé de la date la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS.
+>> Sur la nouvelle page qui s'affiche, un tableau liste l'historique des sauvegardes de votre zone DNS, de la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS.
 >>
 >> Si vous souhaitez remplacer votre zone DNS actuelle par une autre, il vous suffit de restaurer une zone DNS plus ancienne. Dans le tableau contenant l’historique de vos zones DNS, identifiez la ligne correspondant à la zone DNS que vous voulez restaurer (pensez à bien vérifier la date à gauche de la ligne) puis cliquez sur l’icône présente dans la colonne `Restaurer`{.action}.
 >>
@@ -181,19 +181,19 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Le tableau qui apparaît représente la zone DNS de votre nom de domaine. Vous y retrouvez la liste des enregistrements DNS qu'elle contient. Sur la droite du tableau, plusieurs boutons vous permettent d'effectuer des actions sur votre zone DNS.
 >>
->> ![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
+>> ![Outil d'historique DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 >>
 >> Cliquez sur `Voir l'historique de ma zone DNS`{.action}.
 >>
 > **Étape 3**
 >>
->> Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique des sauvegardes de votre zone DNS, classé de la date la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS.
+>> Sur la nouvelle page qui s'affiche, un tableau liste l'historique des sauvegardes de votre zone DNS, de la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS.
 >>
 >> Vous pouvez comparer le contenu de deux zones DNS. Dans le tableau contenant l’historique de votre zone DNS, identifiez les deux lignes correspondant aux deux zones DNS que vous voulez comparer (vérifiez bien la date à gauche de chaque ligne) puis sélectionnez-les. Pour comparer ces deux versions de zone DNS, cliquez en haut à gauche sur `Comparer les versions`{.action}.
 >>
@@ -229,4 +229,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

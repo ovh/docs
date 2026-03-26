@@ -69,7 +69,7 @@ Toutefois, il est essentiel de prendre en compte les points suivants :
 
 ### 1 - Modifier les serveurs DNS <a name="modify-dns-servers"></a>
 
-Vous pouvez être amené à modifier les serveurs DNS de votre nom de domaine dans les situations suivantes :
+Vous pouvez être amené à modifier les serveurs DNS de votre nom de domaine dans les situations suivantes :
 
 - Vous souhaitez utiliser les serveurs DNS proposés par OVHcloud.
 - Vous souhaitez utiliser vos propres serveurs DNS (ou ceux délivrés par un fournisseur DNS externe).
@@ -87,7 +87,7 @@ Cette option permet d'appliquer automatiquement la configuration de la zone DNS 
 
 > [!primary]
 >
-> Si besoin, consultez les guides « [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » et/ou « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » pour vérifier si une zone DNS OVHcloud existe pour votre nom de domaine.
+> Si besoin, consultez les guides « [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » et/ou « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » pour vérifier si une zone DNS OVHcloud existe pour votre nom de domaine.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -96,7 +96,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -106,19 +106,19 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVHcloud pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
 >>
->> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+>> ![Serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
 >>
->> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 >>
 > **Étape 4**
 >>
->> ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1.png){.thumbnail}
+>> ![Modification des serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1.png){.thumbnail}
 >>
->> Pour utiliser les serveurs DNS par défaut d'OVHcloud, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
+>> Pour utiliser les serveurs DNS par défaut d'OVHcloud, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 >>
->> ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1-apply-configuration.png){.thumbnail}
+>> ![Modification des serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1-apply-configuration.png){.thumbnail}
 >>
->> Elle résume le nom des 2 serveurs DNS qui vont être appliqués à votre nom de domaine. Ils doivent avoir l'une des 3 formes suivantes :
+>> Elle résume le nom des 2 serveurs DNS qui vont être appliqués à votre nom de domaine. Ils doivent avoir l'une des 3 formes suivantes :
 >>
 >> - `nsXX.ovh.net` et `dnsXX.ovh.net` ou, `nsXXX.ovh.net` et `dnsXXX.ovh.net` (où chaque `X` représente un chiffre compris entre **0** et **9**)
 >> - `nsXX.ovh.ca` et `dnsXX.ovh.ca` ou, `nsXXX.ovh.ca` et `dnsXXX.ovh.ca` (où chaque `X` représente un chiffre compris entre **0** et **9**)
@@ -158,7 +158,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -168,18 +168,18 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVHcloud pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
 >>
->> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+>> ![Serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
 >>
->> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 >>
 > **Étape 4**
 >>
->> ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2.png){.thumbnail}
+>> ![Modification des serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2.png){.thumbnail}
 >>
->> Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme indiqué ci-dessous :
+>> Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme indiqué ci-dessous :
 >>
->> - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
->> - `IP associée (facultatif)` : adresse IP (IPv4 ou IPv6) du serveur DNS renseigné. Vous ne pouvez renseigner qu'**une seule adresse IP** dans ce formulaire.
+>> - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
+>> - `IP associée (facultatif)` : adresse IP (IPv4 ou IPv6) du serveur DNS renseigné. Vous ne pouvez renseigner qu'**une seule adresse IP** dans ce formulaire.
 >>
 >> > [!warning]
 >> >
@@ -194,9 +194,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> Réitérez l'opération autant de fois que vous avez de serveurs DNS à ajouter, en respectant les limites indiquées dans la note d'information.
 >> Cliquez sur le bouton `+`{.action} pour chaque serveur DNS afin d'en valider la saisie et l'ajout.
 >>
->> Dès que tous vos propres serveurs DNS sont ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
+>> Dès que tous vos propres serveurs DNS sont ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 >>
->> ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2-apply-configuration.png){.thumbnail}
+>> ![Modification des serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2-apply-configuration.png){.thumbnail}
 >>
 >> Elle résume les noms des serveurs DNS qui vont être appliqués à votre nom de domaine.
 >> S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
@@ -234,7 +234,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -244,18 +244,18 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVHcloud pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
 >>
->> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+>> ![Serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
 >>
->> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 >>
->> ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3.png){.thumbnail}
+>> ![Modification des serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3.png){.thumbnail}
 >>
 > **Étape 4**
 >>
->> Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme ci-dessous :
+>> Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme ci-dessous :
 >>
->> - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
->> - `IP associée (facultatif)` : adresse IP (IPv4 ou IPv6) du serveur DNS renseigné. Vous ne pouvez renseigner qu'**une seule adresse IP** dans ce formulaire.
+>> - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
+>> - `IP associée (facultatif)` : adresse IP (IPv4 ou IPv6) du serveur DNS renseigné. Vous ne pouvez renseigner qu'**une seule adresse IP** dans ce formulaire.
 >>
 >> > [!warning]
 >> >
@@ -270,9 +270,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 5**
 >>
->> Dès que tous vos propres serveurs DNS sont ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
+>> Dès que tous vos propres serveurs DNS sont ajoutés, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 >>
->> ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3-apply-configuration.png){.thumbnail}
+>> ![Modification des serveurs DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3-apply-configuration.png){.thumbnail}
 >>
 >> Elle résume les noms des serveurs DNS qui vont être appliqués à votre nom de domaine.
 >> S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
@@ -302,4 +302,4 @@ Pour des prestations spécialisées (référencement, développement, etc.), con
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

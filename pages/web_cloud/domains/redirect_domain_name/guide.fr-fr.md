@@ -67,7 +67,7 @@ Ces actions peuvent être réalisées de plusieurs manières :
 
 ### Rediriger un nom de domaine depuis l'espace client
 
-Hormis les redirections de « pointage » vers les entrées DNS A, AAAA et CNAME, 3 options de redirections sont disponibles depuis l'[espace client OVHcloud](/links/manager).
+Hormis les redirections de « pointage » vers les entrées DNS A, AAAA et CNAME, 3 options de redirections sont disponibles depuis l'[espace client OVHcloud](/links/manager).
 
 Si besoin, consultez notre documentation sur les [enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
 
@@ -100,11 +100,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Cliquez sur l'onglet `Redirection`{.action}. Le tableau affiche les redirections actives pour votre nom de domaine. Cliquez sur le bouton `Ajouter une redirection`{.action}.
+>> Cliquez sur l'onglet `Redirection`{.action} : le tableau affiche les redirections actives pour votre nom de domaine. Cliquez ensuite sur `Ajouter une redirection`{.action}.
 >>
 >> ![Présentation du menu redirection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
 >>
@@ -181,11 +181,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Cliquez sur l'onglet `Redirection`{.action}. Le tableau affiche les redirections actives pour votre nom de domaine. Cliquez sur le bouton `Ajouter une redirection`{.action}.
+>> Cliquez sur l'onglet `Redirection`{.action} : le tableau affiche les redirections actives pour votre nom de domaine. Cliquez ensuite sur `Ajouter une redirection`{.action}.
 >>
 >> ![Présentation du menu redirection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
 >>
@@ -266,11 +266,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Cliquez sur l'onglet `Redirection`{.action}. Le tableau affiche les redirections actives pour votre nom de domaine. Cliquez sur le bouton `Ajouter une redirection`{.action}.
+>> Cliquez sur l'onglet `Redirection`{.action} : le tableau affiche les redirections actives pour votre nom de domaine. Cliquez ensuite sur `Ajouter une redirection`{.action}.
 >>
 >> ![Présentation du menu redirection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
 >>
@@ -308,8 +308,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Trois paramètres optionnels sont mis à votre disposition à cette étape :
 >>
->> - **Titre** : celui de votre site internet. Il s'affichera en tant que titre de page dans l'onglet des navigateurs internet.
->> - **Mots clés** : ils peuvent être utilisés par les moteurs de recherche pour référencer partiellement la page.
+>> - **Titre** : celui de votre site internet. Il s'affichera en tant que titre de page dans l'onglet des navigateurs internet.
+>> - **Mots clés** : ils peuvent être utilisés par les moteurs de recherche pour référencer partiellement la page.
 >> - **Description** : concerne votre site internet. Elle sera utilisée par les moteurs de recherche dans leurs résultats.
 >>
 >> Cliquez sur `Suivant`{.action}.
@@ -334,16 +334,16 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition cette partie du guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur les étapes documentées ci-dessous. Retrouvez plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition cette partie du guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur les étapes documentées ci-dessous. Retrouvez plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
-Les fichiers « .htaccess » sont des fichiers de configuration dans lesquels des commandes peuvent être spécifiées. Lors de l’exécution du code de votre site internet par le serveur web (Apache), les commandes seront interprétées et ainsi exécutées.
+Les fichiers « .htaccess » sont des fichiers de configuration dans lesquels des commandes peuvent être spécifiées. Lors de l’exécution du code de votre site internet par le serveur web (Apache), les commandes seront interprétées et ainsi exécutées.
 
 Parmi ces commandes, il est possible de créer des redirections.
 
 Manipuler un fichier « .htaccess »  peut rendre votre site inaccessible. En cas de doute, contactez un [prestataire spécialisé](/links/partner) .
 
-Retrouvez l'ensemble de notre documentation sur le « .htaccess »  dans la section [« Aller plus loin »](#go-further) de ce guide.
+Retrouvez l'ensemble de notre documentation sur le « .htaccess »  dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 > [!success]
 >

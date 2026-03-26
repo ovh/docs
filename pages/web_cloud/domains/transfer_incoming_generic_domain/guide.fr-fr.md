@@ -77,7 +77,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 ### Étape 1 : vérifier les informations associées au nom de domaine <a name="step1"></a>
 
-**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](/links/web/domains-whois) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
+**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le « [Whois](/links/web/domains-whois) » sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
 - **Si les informations sont correctes :**
  passez à l'étape suivante de ce guide.
@@ -185,11 +185,11 @@ Pour vérifier cela, cliquez sur les onglets ci-dessous pour afficher successive
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Sur la page qui s'affiche et juste en dessous de votre nom de domaine sur la partie haute de la page, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
+>> Sur la page qui s'affiche, juste en dessous de votre nom de domaine, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
 
 ## Aller plus loin
 

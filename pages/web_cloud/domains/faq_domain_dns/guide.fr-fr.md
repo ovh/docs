@@ -408,17 +408,17 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}.
 >>
->> Vous visualiserez l'ensemble des enregistrements DNS que vous pourrez ajouter via l'assistant de configuration OVHcloud :
+>> Vous visualiserez l'ensemble des enregistrements DNS que vous pourrez ajouter via l'assistant de configuration OVHcloud :
 >>
->> - **Champs de pointage** : `A`, `AAAA`, `NS`, `CNAME` et `DNAME`.
->> - **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` et `HTTPS`.
->> - **Champs mail** : `MX`, `SPF`, `DKIM` et `DMARC`.
+>> - **Champs de pointage** : `A`, `AAAA`, `NS`, `CNAME` et `DNAME`.
+>> - **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` et `HTTPS`.
+>> - **Champs mail** : `MX`, `SPF`, `DKIM` et `DMARC`.
 >>
 >> > [!primary]
 >> >
@@ -464,7 +464,7 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -472,7 +472,7 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 > **Étape 3**
 >>
->> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 >>
 >> Vous pourrez modifier les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
 
@@ -541,7 +541,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -593,7 +593,7 @@ Voici différentes solutions pour vérifier la configuration d'une zone DNS :
 
 - **La commande « nslookup »** : La commande `nslookup` est disponible sur la plupart des systèmes d'exploitation et permet également de vérifier la configuration de votre zone DNS.
 
-- **Depuis votre espace client OVHcloud** : Si la zone DNS active de votre nom de domaine est gérée chez OVHcloud, accédez à la page [Zones DNS](/links/control-panel/web-dns-zone) pour visualiser l'ensemble des enregistrements DNS déclarés pour votre nom de domaine.
+- **Depuis votre espace client OVHcloud** : Si la zone DNS active de votre nom de domaine est gérée chez OVHcloud, accédez à la page [Zones DNS](/links/control-panel/web-dns-zone) pour visualiser l'ensemble des enregistrements DNS déclarés pour votre nom de domaine.
 
 > [!success]
 >
@@ -646,7 +646,7 @@ Une fois le numéro de série récupéré, cliquez sur les onglets ci-dessous po
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -654,19 +654,19 @@ Une fois le numéro de série récupéré, cliquez sur les onglets ci-dessous po
 >>
 > **Étape 3**
 >>
->> Dans la fenêtre qui s'ouvre, repérez la deuxième ligne qui, pour reprendre notre exemple, serait équivalente à celle-ci : `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
+>> Dans la fenêtre qui s'ouvre, repérez la deuxième ligne qui, pour reprendre notre exemple, serait équivalente à celle-ci : `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
 >>
 > **Étape 4**
 >>
 >> Comparez le numéro de série récupéré via le terminal avec celui qui s'affiche dans votre espace client OVHcloud.
 >>
->> **Cas n°1** - Les deux numéros de série correspondent :
+>> **Cas n°1** - Les deux numéros de série correspondent :
 >>
 >> Cela signifie que la propagation DNS s'effectue correctement. Vous n'avez rien d'autre à faire.
 >>
->> **Cas n°2** - Les deux numéros de série sont différents :
+>> **Cas n°2** - Les deux numéros de série sont différents :
 >>
->> Cela signifie que soit :
+>> Cela signifie que soit :
 >>
 >> - La propagation DNS de vos modifications n'est pas totalement terminée (vous êtes encore dans les délais standards de propagation DNS). Dans ce cas, patientez le temps que la propagation DNS soit totalement terminée (**24** heures pour une modification de zone DNS et **48** heures pour une modification des serveurs DNS), puis réitérez l'opération.
 >> - La propagation DNS ne s'effectue pas correctement. Dans ce cas, depuis la fenêtre `Modifier en mode textuel`{.action} qui s'est ouverte à l'étape **3**, cliquez directement **sans effectuer de modifications** sur le bouton `Suivant`{.action}, puis sur `Valider`{.action}. Une nouvelle propagation DNS sera alors initiée.
@@ -682,7 +682,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -711,7 +711,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -740,7 +740,7 @@ Pour ce faire, cliquez sur les onglets ci-dessous pour afficher successivement c
 >>
 > **Étape 2**
 >>
->> Sur la page qui apparaît, renseignez le sous-domaine (par exemple : *www.domain.tld*) pour lequel vous souhaitez créer une zone DNS OVHcloud. Patientez quelques instants le temps que l'outil effectue des vérifications concernant le sous-domaine.
+>> Sur la page qui apparaît, renseignez le sous-domaine (par exemple : *www.domain.tld*) pour lequel vous souhaitez créer une zone DNS OVHcloud. Patientez quelques instants le temps que l'outil effectue des vérifications concernant le sous-domaine.
 >>
 > **Étape 3**
 >>
@@ -759,11 +759,11 @@ Pour récupérer les noms des 2 serveurs DNS, cliquez sur les onglets ci-dessous
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le sous-domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> En haut à gauche de la page qui s'affiche, récupérez les 2 noms des serveurs DNS présents sous la mention `Name Servers`. Ces derniers ont l'une des 2 formes suivantes :
+>> En haut à gauche de la page qui s'affiche, récupérez les 2 noms des serveurs DNS présents sous la mention `Name Servers`. Ces derniers ont l'une des 2 formes suivantes :
 >>
 >> - `dnsXXX.ovh.net` et `nsXXX.ovh.net` **ou** `dnsXXX.ovh.ca` et `nsXXX.ovh.ca` (où chaque `X` représente un chiffre compris entre `0` et `9`).
 >> - `dns200.ovh.me` et `ns200.anycast.me`.
@@ -779,7 +779,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -821,15 +821,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}, puis sélectionnez le type d'enregistrement DNS de type `A`{.action} pour une IPv4 (par exemple : `203.0.113.0`) ou de type `AAAA`{.action} pour une IPv6 (par exemple : `2001:db8:1:1b00:203:0:113:0`).
+>> Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action}, puis sélectionnez le type d'enregistrement DNS de type `A`{.action} pour une IPv4 (par exemple : `203.0.113.0`) ou de type `AAAA`{.action} pour une IPv6 (par exemple : `2001:db8:1:1b00:203:0:113:0`).
 >>
 > **Étape 3**
 >>
->> Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine *`{.action}, renseignez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemple : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez le champ `Cible *`{.action} par l'adresse IP désirée.
+>> Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine *`{.action}, renseignez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemple : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez le champ `Cible *`{.action} par l'adresse IP désirée.
 >>
 > **Étape 4**
 >>
@@ -856,7 +856,7 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -864,7 +864,7 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 > **Étape 3**
 >>
->> Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine *`{.action}, renseignez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemple : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez les autres champs par les valeurs désirées.
+>> Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine *`{.action}, renseignez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemple : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez les autres champs par les valeurs désirées.
 >>
 > **Étape 4**
 >>
@@ -900,7 +900,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -949,15 +949,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis vérifiez si le nom de domaine concerné apparaît.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> **Cas n°1** - Le nom de domaine concerné apparaît dans la liste :
+>> **Cas n°1** - Le nom de domaine concerné apparaît dans la liste :
 >>
 >> Cela signifie que la zone DNS du nom de domaine existe déjà dans votre espace client OVHcloud. Vous pourrez la gérer directement à cet endroit.
 >>
->> **Cas n°2** - Le nom de domaine concerné n'apparaît pas dans la liste :
+>> **Cas n°2** - Le nom de domaine concerné n'apparaît pas dans la liste :
 >>
 >> Cela signifie que la zone DNS du nom de domaine est gérée par un autre identifiant client OVHcloud que le vôtre.
 >>
@@ -993,7 +993,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -1001,7 +1001,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Étape 3**
 >>
->> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 >>
 >> Vous pourrez modifier les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
 
@@ -1024,7 +1024,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -1032,7 +1032,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Étape 3**
 >>
->> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 >>
 >> Vous pourrez personnaliser les serveurs DNS pour votre nom de domaine sur la page qui apparaît.
 
@@ -1055,7 +1055,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -1063,7 +1063,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Étape 3**
 >>
->> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
+>> Cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 >>
 >> Vous pourrez remplacer les serveurs DNS pour votre nom de domaine par ceux d'OVHcloud sur la page qui apparaît.
 
@@ -1107,20 +1107,20 @@ Pour le vérifier, cliquez sur les onglets ci-dessous pour afficher successiveme
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis vérifiez si le nom de domaine concerné apparaît.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> **Cas n°1** - Le nom de domaine n'apparaît pas dans la liste :
+>> **Cas n°1** - Le nom de domaine n'apparaît pas dans la liste :
 >>
 >> Cela signifie que le nom de domaine n'est pas géré depuis votre espace client OVHcloud. Effectuez une requête [WHOIS](/links/web/domains-whois) avec ce dernier pour connaître l'endroit où il est enregistré.
 >>
->> Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le WHOIS du nom de domaine) :
+>> Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le WHOIS du nom de domaine) :
 >>
->> - Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit géré dans votre espace client OVHcloud.
->> - Le nom de domaine n'est pas enregistré chez OVHcloud : Vous pourrez réaliser une opération de [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) vers OVHcloud pour que votre nom de domaine soit géré dans votre espace client OVHcloud.
+>> - Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit géré dans votre espace client OVHcloud.
+>> - Le nom de domaine n'est pas enregistré chez OVHcloud : Vous pourrez réaliser une opération de [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) vers OVHcloud pour que votre nom de domaine soit géré dans votre espace client OVHcloud.
 >>
->> **Cas n°2** - Le nom de domaine apparaît dans la liste :
+>> **Cas n°2** - Le nom de domaine apparaît dans la liste :
 >>
 >> Cela signifie que vous ne disposez pas des droits suffisants pour gérer le nom de domaine depuis votre espace client OVHcloud. Effectuez une requête [WHOIS](/links/web/domains-whois) pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
 >>

@@ -8,7 +8,7 @@ updated: 2026-03-25
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
 >
 
 ## Objectif
@@ -25,8 +25,8 @@ Ce guide vous explique comment utiliser un nom de domaine enregistré chez OVHcl
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->
@@ -48,28 +48,28 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Pour savoir comment ajouter, modifier ou supprimer chaque type d’enregistrement DNS (MX, CNAME, TXT, etc.), consultez notre guide [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
+>> Pour savoir comment ajouter, modifier ou supprimer chaque type d’enregistrement DNS (MX, CNAME, TXT, etc.), consultez notre guide « [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) ».
 >>
->> À l’aide des enregistrements DNS relevés précédemment ([Partie 1](#step1)), créez ou mettez à jour les champs correspondants dans votre zone DNS OVHcloud :
+>> À l’aide des enregistrements DNS relevés précédemment ([Partie 1](#step1)), créez ou mettez à jour les champs correspondants dans votre zone DNS OVHcloud :
 >>
->> - **MX** : pour la réception des e-mails.
->> - **CNAME** : pour les clefs DKIM (`sig1._domainkey...`, `sig2._domainkey...`).
->> - **TXT** : pour le SPF (fusionnez si un enregistrement SPF existe déjà).
->> - **TXT DMARC** : facultatif mais recommandé ([Partie 3](#step3)).
+>> - **MX** : pour la réception des e-mails.
+>> - **CNAME** : pour les clefs DKIM (`sig1._domainkey...`, `sig2._domainkey...`).
+>> - **TXT** : pour le SPF (fusionnez si un enregistrement SPF existe déjà).
+>> - **TXT DMARC** : facultatif mais recommandé ([Partie 3](#step3)).
 >>
 >> > [!warning]
 >> >
->> > Utilisez uniquement des guillemets droits `”` tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ “ affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
+>> > Utilisez uniquement des guillemets droits `”` tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ “ affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
 
 ### 3 - Ajouter un enregistrement DMARC (facultatif) <a name="step3"></a>
 
 Pour améliorer la délivrabilité de vos e-mails et éviter que vos messages arrivent en SPAM, ajoutez un enregistrement **DMARC**.
 
-Pour savoir comment créer un enregistrement DMARC dans votre espace client OVHcloud, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
+Pour savoir comment créer un enregistrement DMARC dans votre espace client OVHcloud, consultez notre guide « [Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc) ».
 
 ### 4 - Vérifier et activer le domaine dans iCloud
 
