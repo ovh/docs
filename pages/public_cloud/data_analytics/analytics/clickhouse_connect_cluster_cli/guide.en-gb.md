@@ -1,7 +1,7 @@
 ---
-title: ClickHouse - How to connect to a ClickHouse cluster with CLI
-excerpt: Learn how to connect to a ClickHouse cluster using the CLI, including certificate setup, client configuration, and basic queries
-updated: 2026-02-25
+title: ClickHouse - How to connect to a ClickHouse cluster
+excerpt: Learn how to connect to a ClickHouse cluster using the native CLI, HTTPS, and MySQL protocols, including certificate setup and basic queries
+updated: 2026-03-26
 ---
 
 <style>
@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 ClickHouse is an open-source, columnar analytical database system designed for real-time processing of massive data volumes, providing high performance, scalability, and low latency.
 
-**This guide explains how to connect to a ClickHouse cluster using the CLI.**
+**This guide explains how to connect to a ClickHouse cluster using the native CLI, HTTPS, and MySQL protocols.**
 
 ## Requirements
 
@@ -46,7 +46,7 @@ To connect to the ClickHouse service, you need server and user certificates.
 
 ### Connection methods
 
-There are multiple ways to connect to a ClickHouse cluster. Each method uses a different protocol and port:
+You can connect to a ClickHouse cluster using different protocols and ports:
 
 | Protocol | Port | Tool |
 |---|---|---|
@@ -55,9 +55,9 @@ There are multiple ways to connect to a ClickHouse cluster. Each method uses a d
 | ClickHouse MySQL | 20186 | `mysql` |
 
 > [!primary]
-> The hostname, port and credentials for your cluster are available in the `Dashboard`{.action} tab of the OVHcloud Control Panel.
+> The hostname, ports and credentials for your cluster are available in the `Dashboard`{.action} tab of the OVHcloud Control Panel.
 
-### Connecting using the ClickHouse Native Protocol (port 20184)
+### Connecting using the ClickHouse native protocol (port 20184)
 
 Connect using the official `clickhouse-client` CLI. For installation details, see the [official ClickHouse Client documentation](https://clickhouse.com/docs/interfaces/cli).
 
@@ -128,7 +128,7 @@ openSSL:
 
 Change these values according to your own cluster configuration.
 
-#### Inserting data into ClickHouse using the ClickHouse Native CLI
+#### Inserting data into ClickHouse using the ClickHouse native CLI
 
 For this first example, let's insert a test row into the `my_table` table in the `test_db` database.
 
@@ -136,7 +136,7 @@ For this first example, let's insert a test row into the `my_table` table in the
 clickhouse-client --query "INSERT INTO test_db.my_table (id, message) VALUES (1, 'test-message-content')"
 ```
 
-#### Querying data from ClickHouse using the ClickHouse Native CLI
+#### Querying data from ClickHouse using the ClickHouse native CLI
 
 Retrieve all the data from the `my_table` table in the `test_db` database:
 
