@@ -103,7 +103,7 @@ At the same time, save or export it in .csv format to prepare the import.
 >
 > The CSV contact file import is not available in the new OVHcloud Manager. Contacts can only be added individually via the `Add`{.action} button in the `Contacts`{.action} tab.
 
-> ⚠️ **To document**: The CP import-contact-file flow (Actions > Import > Contact file) has no NM equivalent. NM phonebooks only support adding contacts one at a time via a form drawer. Consider removing or replacing this section with a note pointing users to the individual add flow.
+<!-- ⚠️ To document: The CP import-contact-file flow (Actions > Import > Contact file) has no NM equivalent. NM phonebooks only support adding contacts one at a time via a form drawer. Consider removing or replacing this section with a note pointing users to the individual add flow. -->
 
 <!-- CP-STEPS-END:import-contact-file -->
 

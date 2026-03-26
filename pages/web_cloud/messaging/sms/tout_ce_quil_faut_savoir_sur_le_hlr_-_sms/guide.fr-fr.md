@@ -103,7 +103,7 @@ Consultez le guide « [Liste de destinataires SMS](/pages/web_cloud/messaging/sm
 
 <!-- CP-STEPS-START:clean-contact-list -->
 
-> ⚠️ **To document**: La fonctionnalité de nettoyage de liste (Freemium / Premium) du gestionnaire de destinataires n'a pas été retrouvée dans l'interface du nouveau Manager. Les options « Nettoyer le fichier » (dédoublonnage Freemium et vérification HLR Premium) ne sont pas disponibles sous forme d'action dédiée dans l'onglet `Contacts`{.action} > `Créer une liste de contacts`{.action}. Vérifier si cette fonctionnalité a été supprimée, renommée ou intégrée à un autre flux, et mettre à jour ce bloc en conséquence.
+<!-- ⚠️ To document: La fonctionnalité de nettoyage de liste (Freemium / Premium) du gestionnaire de destinataires n'a pas été retrouvée dans l'interface du nouveau Manager. Les options « Nettoyer le fichier » (dédoublonnage Freemium et vérification HLR Premium) ne sont pas disponibles sous forme d'action dédiée dans l'onglet `Contacts`{.action} > `Créer une liste de contacts`{.action}. Vérifier si cette fonctionnalité a été supprimée, renommée ou intégrée à un autre flux, et mettre à jour ce bloc en conséquence. -->
 
 <!-- CP-STEPS-END:clean-contact-list -->
 

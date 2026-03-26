@@ -113,7 +113,7 @@ Une fois votre numéro Time2Chat commandé, cliquez sur l’onglet `Expéditeurs
 
 ![Onglet Expéditeurs — liste des expéditeurs avec colonnes Expéditeur, Référent et Statut](images/time2chat_configuration_number.png){.thumbnail}
 
-> ⚠️ **To document** : L’action « Configurer » disponible dans l’ancien espace client pour paramétrer un expéditeur Time2Chat (réponse automatique, informations KYC) n’est pas présente dans le New Manager. L’onglet Expéditeurs du New Manager permet uniquement d’ajouter ou de supprimer des expéditeurs. La page de configuration du SMS conversationnel Time2Chat doit être documentée dès qu’elle sera disponible dans le New Manager.
+<!-- ⚠️ To document : L’action « Configurer » disponible dans l’ancien espace client pour paramétrer un expéditeur Time2Chat (réponse automatique, informations KYC) n’est pas présente dans le New Manager. L’onglet Expéditeurs du New Manager permet uniquement d’ajouter ou de supprimer des expéditeurs. La page de configuration du SMS conversationnel Time2Chat doit être documentée dès qu’elle sera disponible dans le New Manager. -->
 
 <!-- CP-STEPS-END:configurer-expediteur-time2chat -->
 

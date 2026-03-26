@@ -92,7 +92,7 @@ Une fois votre option configurée, cliquez sur le bouton `Valider`{.action}.
 >
 > En effet, les notifications contiennent des informations relatives au destinataire de votre SMS ainsi que des données de votre compte OVHcloud (nom du compte SMS contenant votre identifiant OVHcloud).
 
-> ⚠️ **To document** : La fonctionnalité « Ajouter une notification » (notifications par e-mail ou par SMS à la réception d'une réponse) n'a pas d'équivalent dans le nouveau Manager. La page « Options de réponses » affiche uniquement un texte informatif indiquant que vous pouvez être notifié, mais ne propose pas d'interface pour configurer des notifications.
+<!-- ⚠️ To document : La fonctionnalité « Ajouter une notification » (notifications par e-mail ou par SMS à la réception d'une réponse) n'a pas d'équivalent dans le nouveau Manager. La page « Options de réponses » affiche uniquement un texte informatif indiquant que vous pouvez être notifié, mais ne propose pas d'interface pour configurer des notifications. -->
 
 <!-- CP-STEPS-END:gerer-options-reponses -->
 

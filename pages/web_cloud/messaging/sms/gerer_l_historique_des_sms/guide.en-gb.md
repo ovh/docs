@@ -54,7 +54,7 @@ To delete several SMS messages at once, tick the boxes next to each message. The
 
 ![sms-history](images/smshistory4.png){.thumbnail}
 
-> ⚠️ **To document**: The filter functionality (CP "Filter" button) was not found in the NM Sending history tab — no filter panel or button was observed. Verify whether filtering by sender or recipient is available in the NM interface before publishing.
+<!-- ⚠️ To document: The filter functionality (CP "Filter" button) was not found in the NM Sending history tab — no filter panel or button was observed. Verify whether filtering by sender or recipient is available in the NM interface before publishing. -->
 
 <!-- CP-STEPS-END:view-sms-log -->
 
