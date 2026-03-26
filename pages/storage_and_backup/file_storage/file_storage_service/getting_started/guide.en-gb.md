@@ -1,5 +1,5 @@
 ---
-title: File Storage Service - Getting started (Beta)
+title: File Storage Service - Getting started
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
 updated: 2026-02-24
 ---
@@ -9,13 +9,6 @@ updated: 2026-02-24
 OVHcloud provides a File Storage Service powered by OpenStack Manila. This service offers managed NFS shares on private networks, supporting ReadWriteMany (RWX) access across multiple instances or Kubernetes pods.
 
 It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, and Terraform.
-
-> [!warning]
->
-> This service is currently in Beta, available only in the **SBG5**, **DE1** and **GRA** regions. Features and availability may change.
->
-> During the Beta phase, the allowed share size ranges from 150 GiB to 10 TiB.
->
 
 ## Requirements
 

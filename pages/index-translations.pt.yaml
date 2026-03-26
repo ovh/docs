@@ -334,6 +334,7 @@ public-cloud-storage-block-storage-configuration: Configuração
 public-cloud-storage-block-storage-migration: Migração
 public-cloud-storage-block-storage-additional-resources: Recursos adicionais
 public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-key-concepts: Conceitos-chave
 public-cloud-storage-file-storage-getting-started: Introdução
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
@@ -506,6 +507,7 @@ storage-file-storage-ha-nas-configuration: Configuração
 storage-file-storage-ha-nas-migration: Migração
 storage-file-storage-ha-nas-additional-resources: Recursos adicionais
 storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
+storage-file-storage-public-cloud-file-storage-key-concepts: Conceitos-chave
 storage-file-storage-public-cloud-file-storage-getting-started: Primeiros passos
 storage-block-storage: Block Storage
 storage-block-storage-block-volume: Block volume
