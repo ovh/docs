@@ -24,23 +24,21 @@ Retrouvez ici les questions les plus fréquemment posées sur le service Fax OVH
 
 ## FAQ
 
+/// details | Quelle est la différence entre les offres EcoFax et Plug & Fax ?
+
+OVHcloud propose deux offres de fax :
+
+- **EcoFax Pro :** offre 100 % logicielle. L'envoi de fax se fait exclusivement par e-mail, via l'imprimante virtuelle EcoFax ou via l'espace client. La réception se fait par e-mail (le fax reçu arrive en pièce jointe PDF). Aucun matériel n'est nécessaire. C'est l'offre idéale pour une utilisation dématérialisée du fax.
+- **Plug & Fax :** offre hybride qui inclut un adaptateur téléphonique (ATA) permettant de brancher un télécopieur physique classique sur votre connexion Internet. Vous pouvez ainsi continuer à utiliser votre fax physique existant tout en bénéficiant de l'infrastructure VoIP OVHcloud. L'offre Plug & Fax permet également l'envoi et la réception par e-mail en parallèle.
+
+Les deux offres sont facturées à l'utilisation (par fax envoyé/reçu) en plus de l'abonnement mensuel.
+
+///
+
 /// details | Comment commander des fax ?
 
 Pour envoyer des fax, vous devez d'abord disposer d'une ligne Fax dédiée. Choisissez votre offre depuis la [page dédiée](/links/telecom/fax) et votre ligne fax sera activée dans l'espace client à l'issue de la commande.
 <br>Par la suite, vous n'avez pas à commander de fax. Chaque envoi de fax vous sera facturé à hauteur du nombre de destinataires compris dans votre campagne de fax.
-
-///
-
-/// details | Pourquoi mon Fax est-il en attente ?
-
-Que cela soit [par e-mail](/pages/web_cloud/phone_and_fax/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail) ou via un logiciel de type Ecofax, l'envoi d'un document par fax est automatiquement mis en attente si celui-ci n'est pas encore traité par nos systèmes.
-<br>Si une erreur est rencontrée en cas d'envoi par e-mail, la raison de cette erreur sera envoyée à l'adresse e-mail émettrice. Retrouvez les erreurs les plus courantes dans le guide sur [l'envoi de fax par e-mail](/pages/web_cloud/phone_and_fax/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail).
-
-> [!success]
->
-> **Trucs et astuces**
->
-> En cas d'oubli de votre **mot de passe Fax**, consultez le [guide sur la configuration de votre ligne fax](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client) pour réinitialiser ce mot de passe depuis votre espace client OVHcloud.
 
 ///
 
@@ -51,9 +49,14 @@ Vous pouvez envoyer des fax par plusieurs canaux. Le guide « [Envoyer des fax p
 
 ///
 
-/// details | Puis-je utiliser mon télécopieur/fax physique avec mon offre Plug & Fax ?
+/// details | Comment envoyer une campagne de fax à plusieurs destinataires ?
 
-**Oui**, le guide suivant vous permet de comprendre le fonctionnement de l'offre Plug & Fax et d'ajuster la configuration du télécopieur utilisé pour obtenir le meilleur rendu : « [Utiliser son fax physique avec l'offre Plug & Fax](/pages/web_cloud/phone_and_fax/fax/utiliser_son_fax_physique_avec_l_offre_plug_and_fax) ».
+OVHcloud propose deux méthodes pour envoyer une campagne de fax :
+
+- **Via l'espace client :** [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne Fax, puis cliquez sur `Envoi de campagne`{.action}. Chargez votre document (PDF recommandé) et la liste de destinataires (fichier CSV avec une colonne contenant les numéros de fax au format international). Vous pouvez planifier l'heure d'envoi et suivre le taux de délivrance en temps réel.
+- **Par e-mail :** envoyez votre document en pièce jointe à l'adresse `numéro1,numéro2,numéro3@fax.ovh.net` pour une liste courte.
+
+La méthode via l'espace client est recommandée pour les campagnes volumineuses car elle offre un meilleur suivi et un rapport de délivrance détaillé. Pour plus de détails, consultez le guide « [Envoyer une campagne de fax depuis l'espace client OVHcloud](/pages/web_cloud/phone_and_fax/fax/envoyer_une_campagne_de_fax_via_le_manager) ».
 
 ///
 
@@ -77,22 +80,9 @@ Consultez le guide « [Envoyer des Fax via l'imprimante virtuelle EcoFax - macOS
 
 ///
 
-/// details | Comment activer le répondeur Fax sur mon offre EcoFax Pro ou Plug & Fax ?
+/// details | Puis-je utiliser mon télécopieur/fax physique avec mon offre Plug & Fax ?
 
-Le répondeur Fax permet de recevoir des fax entrants sous forme de pièces jointes e-mail, même lorsque votre ligne Fax n'est pas connectée à un télécopieur physique. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne Fax, puis accédez à `Configuration`{.action} > `Répondeur Fax`{.action}. Activez la fonctionnalité et renseignez l'adresse e-mail sur laquelle vous souhaitez recevoir les fax entrants en pièce jointe (format PDF). Vous pouvez également configurer une notification par e-mail pour chaque fax reçu, incluant les informations de l'expéditeur et la date/heure de réception.
-
-Pour plus de détails, consultez le guide « [Activation du répondeur Fax EcoFax Pro / Plug & Fax](/pages/web_cloud/phone_and_fax/fax/activer_repondeur_fax) ».
-
-///
-
-/// details | Comment envoyer une campagne de fax à plusieurs destinataires ?
-
-OVHcloud propose deux méthodes pour envoyer une campagne de fax :
-
-- **Via l'espace client :** [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne Fax, puis cliquez sur `Envoi de campagne`{.action}. Chargez votre document (PDF recommandé) et la liste de destinataires (fichier CSV avec une colonne contenant les numéros de fax au format international). Vous pouvez planifier l'heure d'envoi et suivre le taux de délivrance en temps réel.
-- **Par e-mail :** envoyez votre document en pièce jointe à l'adresse `numéro1,numéro2,numéro3@fax.ovh.net` pour une liste courte.
-
-La méthode via l'espace client est recommandée pour les campagnes volumineuses car elle offre un meilleur suivi et un rapport de délivrance détaillé. Pour plus de détails, consultez le guide « [Envoyer une campagne de fax depuis l'espace client OVHcloud](/pages/web_cloud/phone_and_fax/fax/envoyer_une_campagne_de_fax_via_le_manager) ».
+**Oui**, le guide suivant vous permet de comprendre le fonctionnement de l'offre Plug & Fax et d'ajuster la configuration du télécopieur utilisé pour obtenir le meilleur rendu : « [Utiliser son fax physique avec l'offre Plug & Fax](/pages/web_cloud/phone_and_fax/fax/utiliser_son_fax_physique_avec_l_offre_plug_and_fax) ».
 
 ///
 
@@ -109,14 +99,24 @@ Ces paramètres s'ajustent dans le menu de configuration de votre télécopieur.
 
 ///
 
-/// details | Quelle est la différence entre les offres EcoFax et Plug & Fax ?
+/// details | Comment activer le répondeur Fax sur mon offre EcoFax Pro ou Plug & Fax ?
 
-OVHcloud propose deux offres de fax :
+Le répondeur Fax permet de recevoir des fax entrants sous forme de pièces jointes e-mail, même lorsque votre ligne Fax n'est pas connectée à un télécopieur physique. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne Fax, puis accédez à `Configuration`{.action} > `Répondeur Fax`{.action}. Activez la fonctionnalité et renseignez l'adresse e-mail sur laquelle vous souhaitez recevoir les fax entrants en pièce jointe (format PDF). Vous pouvez également configurer une notification par e-mail pour chaque fax reçu, incluant les informations de l'expéditeur et la date/heure de réception.
 
-- **EcoFax Pro :** offre 100 % logicielle. L'envoi de fax se fait exclusivement par e-mail, via l'imprimante virtuelle EcoFax ou via l'espace client. La réception se fait par e-mail (le fax reçu arrive en pièce jointe PDF). Aucun matériel n'est nécessaire. C'est l'offre idéale pour une utilisation dématérialisée du fax.
-- **Plug & Fax :** offre hybride qui inclut un adaptateur téléphonique (ATA) permettant de brancher un télécopieur physique classique sur votre connexion Internet. Vous pouvez ainsi continuer à utiliser votre fax physique existant tout en bénéficiant de l'infrastructure VoIP OVHcloud. L'offre Plug & Fax permet également l'envoi et la réception par e-mail en parallèle.
+Pour plus de détails, consultez le guide « [Activation du répondeur Fax EcoFax Pro / Plug & Fax](/pages/web_cloud/phone_and_fax/fax/activer_repondeur_fax) ».
 
-Les deux offres sont facturées à l'utilisation (par fax envoyé/reçu) en plus de l'abonnement mensuel.
+///
+
+/// details | Pourquoi mon Fax est-il en attente ?
+
+Que cela soit [par e-mail](/pages/web_cloud/phone_and_fax/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail) ou via un logiciel de type Ecofax, l'envoi d'un document par fax est automatiquement mis en attente si celui-ci n'est pas encore traité par nos systèmes.
+<br>Si une erreur est rencontrée en cas d'envoi par e-mail, la raison de cette erreur sera envoyée à l'adresse e-mail émettrice. Retrouvez les erreurs les plus courantes dans le guide sur [l'envoi de fax par e-mail](/pages/web_cloud/phone_and_fax/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail).
+
+> [!success]
+>
+> **Trucs et astuces**
+>
+> En cas d'oubli de votre **mot de passe Fax**, consultez le [guide sur la configuration de votre ligne fax](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client) pour réinitialiser ce mot de passe depuis votre espace client OVHcloud.
 
 ///
 
