@@ -50,13 +50,22 @@ The whole cluster configuration is reset but some values can be defined (optiona
 
 - an OVHcloud Managed Kubernetes cluster
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Reset a Kubernetes cluster on the OVHcloud Control Panel
 
 #### Step 1 - Ask for cluster reset on the OVHcloud Control Panel 
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
