@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde de l'espace FTP de son hébergement Cloud Web"
 excerpt: "Découvrez comment récupérer une sauvegarde de l'espace FTP de votre hébergement Cloud Web"
-updated: 2023-11-16
+updated: 2026-03-26
 ---
 
 ## Objectif
@@ -48,37 +48,51 @@ Seules les sauvegardes mentionnées ci-dessus pourront être proposées par OVHc
 
 ### Récupérer une sauvegarde
 
-Contrairement aux hébergements mutualisés OVHcloud, il est impossible d'effectuer une restauration de l'espace FTP en un clic depuis [l'espace client OVHcloud](/links/manager).
+Contrairement aux hébergements mutualisés OVHcloud, il est impossible d'effectuer une restauration de l'espace FTP en un clic depuis l'espace client OVHcloud.
 
 Un lien de téléchargement de la sauvegarde est généré puis envoyé par e-mail à l'adresse e-mail associée à l'identifiant client administrateur de l'hébergement Cloud Web.
 
-#### Etape 1 - Générer le lien de récupération envoyé par e-mail
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
-Pour générer le lien de récupération, connectez-vous sur votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis sur le Cloud Web concerné. 
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez le Cloud Web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Générer une sauvegarde`{.action} à droite.
+>>
+>> ![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Dans la fenêtre qui s'ouvre, sélectionnez l'une des sauvegardes disponibles puis cliquez sur `Suivant`{.action}.
+>>
+>> ![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Une seconde fenêtre apparaît, vous précisant que le lien de récupération du fichier de sauvegarde vous sera envoyé par e-mail et qu'aucune restauration automatique sur votre hébergement Cloud Web ne sera faite par OVHcloud.
+>>
+>> ![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
+>>
+>> Cliquez sur `Confirmer`{.action} pour valider votre demande.
+>>
+> **Étape 5**
+>>
+>> Si la génération de la sauvegarde est bien lancée, le message suivant apparaît dans votre espace client OVHcloud :
+>>
+>> ![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
+>>
+>> La génération de la sauvegarde prend entre 10 et 15 minutes.
 
-Sélectionnez l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Générer une sauvegarde`{.action} à droite.
+### Récupérer la sauvegarde
 
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
+Une fois la génération de la sauvegarde finalisée, vous recevez un e-mail sur l'adresse e-mail associée à l'identifiant administrateur de votre hébergement Cloud Web.
 
-Dans la fenêtre qui s'ouvre, sélectionnez l'une des sauvegardes disponibles puis cliquez sur `Suivant`{.action}.
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
-
-Une seconde fenêtre apparaît, vous précisant que le lien de récupération du fichier de sauvegarde vous sera envoyé par e-mail et qu'aucune restauration automatique sur votre hébergement Cloud Web ne sera faite par OVHcloud.
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
-
-Cliquez sur `Confirmer`{.action} pour valider votre demande.
-
-Si la génération de la sauvegarde est bien lancée, le message suivant apparaît dans votre [espace client OVHcloud](/links/manager) :
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
-
-La génération de la sauvegarde prend entre 10 et 15 minutes pour être réalisée.
-
-#### Etape 2 - Récupérer la sauvegarde
-
-Une fois la génération de la sauvegarde finalisée, vous recevez un e-mail sur l'adresse e-mail associée à l'identifiant administrateur de votre hébergement Cloud Web.<br>
 Cet e-mail contient un lien de téléchargement **valable 9 jours** à compter de la réception de l'e-mail :
 
 ![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
