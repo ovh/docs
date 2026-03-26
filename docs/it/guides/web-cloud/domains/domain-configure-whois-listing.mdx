@@ -1,0 +1,84 @@
+---
+title: Come configurare la visualizzazione del WHOIS di un nome di dominio?
+description: Scopri come visualizzare o nascondere alcune informazioni contenute nel WHOIS di un nome di dominio dal tuo Spazio Cliente OVHcloud
+lastUpdated: 2026-02-10
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Obiettivo
+
+Il WHOIS, abbreviazione dell'inglese "Who is?", è un protocollo che permette di accedere a diverse informazioni associate a un nome di dominio.
+
+Ad esempio, è possibile trovare le seguenti informazioni (elenco non esaustivo):
+
+- Dati di contatto del titolare (sottoscrittore), dell'amministratore e del contatto tecnico del servizio.
+- Indicazione della disponibilità all'acquisto.
+- Date di creazione, scadenza, ultima modifica e rinnovo.
+- Stato (creato, bloccato, scaduto, ecc.).
+- Ecc.
+
+Durante l’utilizzo del nome di dominio potrebbe essere necessario mostrare o nascondere alcune informazioni presenti nel WHOIS.
+
+**Questa guida ti mostra come visualizzare o nascondere alcune informazioni contenute nel WHOIS di un nome di dominio dallo Spazio Cliente OVHcloud.**
+
+## Prerequisiti
+
+- Disporre di un [nome di dominio](https://www.ovhcloud.com/it/domains/).
+
+{/* CP-NAV-START:web-domains */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](https://manager.eu.ovhcloud.com/#/web-domains/domain)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Domini</code> > Seleziona il tuo nome di dominio
+
+---
+{/* CP-NAV-END:web-domains */}
+
+
+:::warning
+Alcuni Registri (enti che gestiscono le estensioni dei nomi di dominio come *.com*, *.net*, ecc.) non autorizzano a forzare la mascheratura o la visualizzazione di alcune informazioni presenti nel WHOIS.
+In effetti, sono i registri che definiscono le regole di visualizzazione e determinano le informazioni che devono o non devono contenere il WHOIS dell'estensione che gestiscono.
+
+Di conseguenza, è possibile che, malgrado i vostri desideri in termini di visualizzazione o di mascheramento nel WHOIS del vostro nome di dominio, la vostra richiesta non venga presa in carico.
+
+:::
+
+
+## Procedura
+
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Domini](https://manager.eu.ovhcloud.com/#/web-domains/domain), poi seleziona il nome di dominio interessato.
+    
+    <img className="thumbnail" alt="Domain Names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Nella nuova pagina, nel riquadro **Configurazione**, clicca sul pulsante <code className="action">Gestire la protezione dei dati</code>.
+    
+    <img className="thumbnail" alt="Configure Data protection" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Visualizzi una nuova pagina in cui puoi scegliere se `Mostra` o `Nascondi` le informazioni relative ai contatti intestatario, amministratore e tecnico del nome di dominio, nel limite delle azioni autorizzate dal Registro responsabile dell’estensione.
+    
+    <img className="thumbnail" alt="Configure listing in WHOIS" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png" loading="lazy" />
+
+Una volta effettuate le scelte, clicca sul pulsante <code className="action">Registrare le modifiche</code>.
+    
+    Per l'applicazione delle modifiche potrebbe essere necessario un massimo di **48** ore. Le modifiche saranno applicate **solo se autorizzate dal Registro che gestisce l’estensione del nome di dominio**.
+  </Tab>
+</Tabs>
+
+
+## Per saperne di più
+ 
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+ 
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+ 
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

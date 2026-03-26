@@ -1,0 +1,152 @@
+---
+title: Tutorial - Installing WordPress manually
+description: Find out how to install WordPress manually
+lastUpdated: 2023-03-24
+---
+
+## Objective
+
+This tutorial will help you install the WordPress CMS (Content Management System) manually in just a few steps.
+
+:::warning
+OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+
+This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or the [WordPress support](https://wordpress.com/support/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+
+:::
+
+
+:::tip[Success]
+To install WordPress **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), please refer to our documentation on [installing a 1-click module](/guides/web-cloud/web-hosting/cms-install-1-click-modules/).
+
+To manually **install another CMS** (Joomla!, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](/guides/web-cloud/web-hosting/cms-manual-installation/).
+
+:::
+
+
+**This tutorial explains how to install your WordPress CMS manually.**
+
+## Requirements
+
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that contains at least one database
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/)
+
+## Instructions
+
+### Step 1: Prepare for the installation <a name="step1"></a>
+
+To install the **WordPress** CMS on your [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), you will need to make some preparations.
+
+Follow **all steps** described in our tutorial on [installing a CMS manually](/guides/web-cloud/web-hosting/cms-manual-installation/) before continuing with step 2 below.
+
+### Step 2: Finalise the installation <a name="step2"></a>
+
+:::tip[Success]
+Before you continue with the installation, clear your web browser cache to avoid any errors.
+
+:::
+
+
+#### 2.1 Access your WordPress website via your browser
+
+Enter your domain name into the address bar of your web browser.
+
+If the WordPress source files have been correctly placed in your root folder, the WordPress page for selecting the language appears:
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/cms/wordpress/installation-select-language.png" loading="lazy" />
+
+Select the site language and click <code className="action">Continue</code>.
+
+#### 2.2 Link your WordPress to your database
+
+WordPress will ask you to retrieve the login details for your database:
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/cms/wordpress/installation-start.png" loading="lazy" />
+
+Have your database login details ready (if necessary, see **Step 1.4** in the [manual installation of a CMS tutorial](/guides/web-cloud/web-hosting/cms-manual-installation/)). Click on <code className="action">Let's go!</code> to continue.
+
+The following page appears:
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/cms/wordpress/installation-config-db.png" loading="lazy" />
+
+Enter the information requested for the database:
+
+- Database name: this name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+- Username: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS](/guides/web-cloud/web-hosting/cms-manual-installation/) tutorial.
+
+- Password: You defined it yourself when you created your database. You may have modified it in the meantime.
+
+- Database Host: The name of your database server, included in the installation email and displayed in your OVHcloud Control Panel. 
+
+:::info
+- The server name of a database included with your web hosting plan usually has this format: `NameOfYourDatabase.mysql.db`. 
+
+- The server name of a Web Cloud Databases database starts with your OVHcloud NIC handle and is in the following format: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where **"XXX"** is to be replaced by the reference of your Web Cloud Databases service.
+
+:::
+
+
+- Table Prefix: if you are installing WordPress with a new database, you can enter a custom prefix. If you are using a database that is already in use by another website, please refer to **Step 1.4** in the [manual installation of a CMS tutorial](/guides/web-cloud/web-hosting/cms-manual-installation/) to avoid associating WordPress with a table prefix used by another software.
+
+Click <code className="action">Submit</code> to validate the database connection information.
+
+If everything went well, the following page appears:
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/cms/wordpress/installation-step-after-db-1.png" loading="lazy" />
+
+Click <code className="action">Launch Installation</code>.
+
+#### 2.3 Configure administrative access to the backend of your WordPress and provide your admin email address
+
+Once you have set it up, WordPress will ask you for information on your future website and to set up your Administrator account.
+
+This will give you access to the administration panel (backend) of your WordPress CMS.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/cms/wordpress/installation-config-admin-user.png" loading="lazy" />
+
+Enter the information requested:
+
+- *Site title*: Enter your website’s title.
+- *Username*: Define the Administrator login for WordPress.
+- *Password*: Set the password for this Administrator account.
+- *Your Email*: Enter a valid email address.
+- *Search engine visibility*: Untick this box to have search engines reference your WordPress.
+
+Click <code className="action">Install WordPress</code> as soon as you have entered all of the information correctly.
+
+#### 2.4 Finalise the manual installation and test Administrator access
+
+Installation is complete when the following page is displayed:
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/cms/wordpress/installation-successfull.png" loading="lazy" />
+
+At this stage, simply click on the <code className="action">Log in</code> button to test access to the admin panel of your new WordPress CMS. Enter the credentials created previously in step 3.3.
+
+:::info
+OVHcloud support does not include third-party solutions such as WordPress. Support teams are therefore unable to assist you with using or configuring a CMS.
+
+For support of this type, please use the forums dedicated to the WordPress software.
+
+:::
+
+
+Once connected, the following page appears:
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/cms/wordpress/admin-interface.png" loading="lazy" />
+
+:::tip[Success]
+You can now start creating the content for your WordPress website!
+
+:::
+
+
+## Go further <a name="go-further"></a>
+
+[Official WordPress website](https://wordpress.org)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

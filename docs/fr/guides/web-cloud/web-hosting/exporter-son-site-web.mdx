@@ -1,0 +1,152 @@
+---
+title: Exporter son site web
+description: Découvrez comment exporter votre site web OVHcloud
+lastUpdated: 2025-10-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+Ce guide vous présente les étapes pour exporter l’ensemble des éléments de votre site web au format standard, depuis un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
+
+**Découvrez comment exporter votre site web OVHcloud.**
+
+## Prérequis
+
+- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Hébergements</code> > Sélectionnez votre hébergement web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## En pratique
+
+### 1 - Récupération des fichiers de votre espace de stockage FTP
+
+#### 1.1 Se connecter à l'espace de stockage.
+
+Pour vous connecter à votre espace de stockage, vous devez être en possession des éléments suivants :
+
+- l'utilisateur FTP ou SSH actif.
+- le mot de passe associé à cet utilisateur FTP ou SSH.
+- l’adresse du serveur.
+- le port de connexion au serveur.
+
+Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. 
+
+Si vous n’êtes pas en possession de ces derniers, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie <code className="action">Web Cloud</code>.
+    
+    <img className="thumbnail" alt="Web Cloud" src="/images/assets/screens/control-panel/product-selection/web-cloud.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Cliquez sur le menu <code className="action">Hébergements</code>, puis choisissez l'hébergement web concerné.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 3">
+    Sur la page qui s'affiche, cliquez sur l'onglet <code className="action">FTP - SSH</code>. 
+    
+    <img className="thumbnail" alt="FTP- SSH" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 4">
+    Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci.
+    
+    <img className="thumbnail" alt="FTP - SSH tab" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png" loading="lazy" />
+
+Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/guides/web-cloud/web-hosting/ftp-connection/).
+    
+    Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/guides/web-cloud/web-hosting/ftp-change-password/).
+  </Tab>
+</Tabs>
+
+
+Une fois tous les éléments en votre possession, la récupération de vos fichiers sur l'espace de stockage peut s'effectuer de deux manières différentes :
+
+- **Utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [FileZilla](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
+
+- **Utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées ainsi qu'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](/guides/web-cloud/web-hosting/ssh-on-webhosting/). 
+
+#### 1.2 Télécharger les fichiers depuis votre espace de stockage.
+
+Une fois connecté à votre espace de stockage, il ne vous reste plus qu’à télécharger les fichiers de votre site. **Nous vous invitons à être particulièrement attentifs quant au répertoire sur lequel vous avez installé votre site**. Dans un cas d'utilisation classique, le site doit être téléchargé dans le dossier « www ». Cependant, si vous utilisez votre hébergement pour héberger plusieurs sites internet, vous avez sûrement déclaré plusieurs sites web.
+
+Pour vérifier le dossier dans lequel votre site web est stocké, positionnez-vous sur l'onglet <code className="action">Multisite</code> depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le domaine souhaité, regardez le <code className="action">Dossier racine</code> qui s'affiche.
+
+<img className="thumbnail" alt="export-website" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png" loading="lazy" />
+
+### 2 - Récupérer la sauvegarde de votre base de données (facultative)
+
+:::info
+Cette étape est facultative si votre site web n’utilise pas de base de données.
+
+:::
+
+
+Pour récupérer une sauvegarde de votre base de données, consultez notre guide :
+[« Récupérer la sauvegarde de la base de données d’un hébergement web »](/guides/web-cloud/web-hosting/sql-database-export/).
+
+Si vous utilisez une base de données **Web Cloud Databases** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
+[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/guides/web-cloud/web-cloud-databases/save-export-on-database-server/).
+
+### 3 - Récupérer les logs de votre hébergement OVHcloud
+
+Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
+
+Cliquez sur <code className="action">Hébergements</code> et sélectionnez l'offre concernée. Cliquez sur l'onglet <code className="action">Statistiques et logs</code>.
+
+<img className="thumbnail" alt="statistics-and-logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png" loading="lazy" />
+
+Cliquez ensuite sur le lien sous la mention <code className="action">Voir les logs</code> :
+
+<img className="thumbnail" alt="export-website" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png" loading="lazy" />
+
+Une fenêtre apparait avec les différents types de logs à disposition. Ils sont classés par mois :
+
+| Type  	| Description                                                                                                                                                                                         	|
+|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Web   	| Trouvez ici les différents logs de consultation de votre site, ainsi que les différentes actions réalisées à partir de votre site. Cela vous permet par exemple de repérer des tentatives de hacks. 	|
+| FTP   	| les différentes connexions FTP seront enregistrées et conservées dans ces logs.                                                                                                                     	|
+| Error 	| les différentes erreurs générées par votre site.                                                                                                                                                    	|
+| CGI   	| les différents appels aux scripts cgi.bin qui ont été réalisés.                                                                                                                                     	|
+| out   	| les statistiques de votre hébergement sur les différents appels externes réalisés.                                                                                                                  	|
+| ssh   	| ces logs indiquent les différentes connexions réalisées avec le protocole SSH.                                                                                                                      	|
+| cron  	| le résultat de l’exécution de vos tâches planifiées.                                                                                                                                                	|
+
+<img className="thumbnail" alt="export-website" src="/images/assets/screens/other/web-tools/logs/raw-logs-general.png" loading="lazy" />
+
+Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse, ces derniers sont archivés par jour :
+
+<img className="thumbnail" alt="export-website" src="/images/assets/screens/other/web-tools/logs/raw-logs.png" loading="lazy" />
+
+## Aller plus loin
+
+[Se connecter à l’espace de stockage de son hébergement web](/guides/web-cloud/web-hosting/ftp-connection/).
+
+[Modifier le mot de passe d’un utilisateur FTP](/guides/web-cloud/web-hosting/ftp-change-password/).
+
+[Utiliser FileZilla avec votre hebergement](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/).
+
+[Utiliser l’accès SSH de son hébergement web](/guides/web-cloud/web-hosting/ssh-on-webhosting/). 
+
+[Récupérer la sauvegarde de la base de données d’un hébergement web](/guides/web-cloud/web-hosting/sql-database-export/).
+
+[Premiers pas avec le service Web Cloud Databases](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/).
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

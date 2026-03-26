@@ -1,0 +1,236 @@
+---
+title: Enterprise File Storage - Zarządzanie w panelu klienta OVHcloud
+description: Dowiedz się, jak zarządzać usługą Enterprise File Storage w Panelu klienta OVHcloud
+lastUpdated: 2024-12-13
+---
+
+## Wprowadzenie
+
+Usługi Enterprise File Storage mogą być zarządzane [za pośrednictwem API OVHcloud](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-quick-start/) lub w Panelu klienta OVHcloud.
+
+**Dowiedz się, jak zarządzać wolumenami oraz migawkami do przechowywania plików firmowych w Panelu klienta.**
+
+## Wymagania początkowe
+
+- Posiadanie usługi Enterprise File Storage na Twoim koncie OVHcloud. Usługę można zamówić z poziomu [strony produktu](https://www.ovhcloud.com/pl/storage-solutions/enterprise-file-storage/) lub z poziomu [panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+{/* CP-NAV-START:storage-enterprise-file-storage */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Enterprise File Storage](https://manager.eu.ovhcloud.com/#/dedicated/netapp)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">Enterprise File Storage</code>
+
+---
+{/* CP-NAV-END:storage-enterprise-file-storage */}
+
+## W praktyce <a name="instructions"></a>
+
+Wybierz Twoją usługę z listy.
+
+<img className="thumbnail" alt="Informacje ogólne" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise01.png" loading="lazy" />
+
+W zakładce <code className="action">Informacje ogólne</code> znajdują się informacje techniczne dotyczące Twojej usługi, ogólne informacje o abonamencie oraz skrót, w celu [utworzenia wolumenu](#create_volume).
+
+:::info
+Zapoznaj się ze stroną [Concepts](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-concepts/), aby uzyskać szczegółowe informacje na temat właściwości technicznych rozwiązania Enterprise File Storage.
+
+:::
+
+
+### Zarządzanie wolumenami <a name="manage_volume"></a>
+
+Kliknij zakładkę <code className="action">Wolumeny</code>. Tabela zawiera listę wszystkich wolumenów utworzonych dla wybranej usługi. Aby otworzyć [stronę zarządzania](#modify_volume), kliknij identyfikator wolumenu. 
+
+<img className="thumbnail" alt="Wolumeny" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise02.png" loading="lazy" />
+
+Możesz wykonać kilka operacji klikając przycisk...<code className="action"> </code> w każdym wierszu tabeli.
+
+- **Zmień wolumen**: otwiera sekcję "[Informacje ogólne](#modify_volume)" wolumenu.
+- **Utwórz snapshot**: otwiera sekcję "[Kopie](#snapshots) zapasowe", aby wykonać ręczny snapshot wolumenu.
+- **Przywróć ostatni snapshot**: Otwiera sekcję "[Snapshots](#snapshots)" oraz okno umożliwiające przywrócenie woluminu.
+- **Zarządzanie snapshotami**: otwiera sekcję "[Kopie zapasowe](#snapshots)" wolumenu.
+- **Zarządzanie IP Access (ACL)**: otwiera sekcję "[ACL](#access_control)", która umożliwia zarządzanie kontrolą dostępu do wolumenu.
+- **Edytuj rozmiar**: Otwiera okno podręczne umożliwiające modyfikację rozmiaru woluminu.
+- **Usuń wolumen**: pozwala usunąć ten wolumen po potwierdzeniu działania w oknie, które się wyświetli.
+
+#### Tworzenie wolumenu <a name="create_volume"></a>
+
+Kliknij przycisk <code className="action">Utwórz wolumen</code>. W nowym oknie, które się pojawi, wprowadź nazwę i opis wolumenu. Wybierz rozmiar w GB i kliknij na <code className="action">Utwórz wolumen</code>, aby zatwierdzić utworzenie.
+
+<img className="thumbnail" alt="Wolumen tworzenia" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise03.png" loading="lazy" />
+
+#### Zmiana wolumenu <a name="modify_volume"></a>
+
+Kliknij ID wolumenu w tabeli, aby otworzyć stronę zarządzania tym wolumenem.
+
+W zakładce <code className="action">Informacje ogólne</code> wyświetlane są informacje o wolumenie oraz szczegółowe instrukcje dotyczące połączenia z wolumenem, w tym poszczególne parametry.
+
+<img className="thumbnail" alt="Zarządzanie wolumenami" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise04.png" loading="lazy" />
+
+W tej zakładce możesz również zmienić nazwę i opis wolumenu.
+
+### Usuwanie woluminu <a name="delete_volume"></a>
+
+Możesz usunąć wolumen, klikając przycisk <code className="action">...</code> w tabeli w zakładce <code className="action">Volumes</code>, a następnie <code className="action">Usuń wolumen</code>.
+
+<img className="thumbnail" alt="Volume delete" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise05.png" loading="lazy" />
+
+Wpisz `DELETE` i kliknij na <code className="action">Potwierdź</code>, aby zatwierdzić usunięcie.
+
+#### Tworzenie i zarządzanie snapshotami wolumenu <a name="snapshots"></a>
+
+:::info
+Snapshoty wykorzystują przestrzeń dyskową rozwiązania Enterprise File Storage. Domyślnie, 5% rozmiaru wolumenu jest zawsze zarezerwowane na snapshoty.
+
+:::
+
+
+W zakładce <code className="action">Snapshoty</code> wyszczególnione są wszystkie snapshoty utworzone dla wybranego wolumenu.
+
+<img className="thumbnail" alt="Snapshots" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise06.png" loading="lazy" />
+
+W tej samej karcie można również wyświetlić wszystkie [reguły snapshotów](#snapshot_policy) utworzone dla usługi i zastosować je do tego wolumenu.
+
+<img className="thumbnail" alt="Volume Snapshot Policy Management" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise07.png" loading="lazy" />
+
+Kliknij linię odpowiedniej reguły, aby wyświetlić szczegóły harmonogramu snapshotów. Wybierz politykę, klikając dedykowany przycisk wyboru, następnie kliknij przycisk <code className="action">Zastosuj politykę</code> znajdujący się pod tabelą.
+
+Aby skonfigurować [zasady wykonywania snapshotów](#snapshot_policy), wróć do sekcji [Zarządzanie wolumenami](#instructions) i otwórz zakładkę <code className="action">Snapshot policies</code>.
+
+### Tworzenie snapshota <a name="create_snapshot"></a>
+
+Aby utworzyć nowy snapshot wolumenu w jego aktualnym stanie, kliknij przycisk <code className="action">Actions</code>, a następnie <code className="action">Utwórz snapshot</code>.
+
+<img className="thumbnail" alt="Snapshot create" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise08.png" loading="lazy" />
+
+Pojawi się nowe okno, w którym możesz wpisać nazwę i opis.
+
+Kliknij przycisk <code className="action">Utwórz snapshot</code>, aby rozpocząć tworzenie.
+
+<img className="thumbnail" alt="Snapshot create window" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise09.png" loading="lazy" />
+
+### Zmiana snapshota <a name="modify_snapshot"></a>
+
+Możesz zmienić nazwę lub opis snapshota klikając na przycisk <code className="action">...</code> w tabeli, następnie kliknij na <code className="action">Edytuj</code>. Otworzy się wówczas okno, w którym możesz wybrać nową nazwę i/lub opis.
+
+<img className="thumbnail" alt="Snapshot edit" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise10.png" loading="lazy" />
+
+Kliknij na <code className="action">Potwierdź</code>, aby zatwierdzić zmiany.
+
+<img className="thumbnail" alt="Snapshot edit window" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise11.png" loading="lazy" />
+
+### Usuwanie snapshota <a name="delete_snapshot"></a>
+
+:::warning
+Nie można usunąć snapshota typu `system`.
+Są one niezbędne do prawidłowego funkcjonowania oferty Enterprise File Storage.
+
+:::
+
+
+Możesz usunąć snapshot, klikając przycisk <code className="action">...</code> w tabeli, a następnie <code className="action">Usuń</code>.
+
+<img className="thumbnail" alt="Snapshot delete" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise12.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">Usuń snapshot</code>, aby potwierdzić usunięcie.
+
+<img className="thumbnail" alt="Snapshot delete confirmation" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise13.png" loading="lazy" />
+
+### Przywracanie woluminu przy użyciu snapshota <a name="restore_volume"></a>
+
+:::warning
+Pamiętaj, że po przywróceniu wolumenu za pomocą snapshota wszystkie pliki lub snapshoty utworzone później zostaną utracone.
+Po przywróceniu wolumenu wszystkie zawarte w nim dane zostaną zastąpione danymi z kopii zapasowej snapshot. Operacja ta jest nieodwracalna.
+
+:::
+
+
+Wolumen można przywrócić przy użyciu ostatniego snapshota `manual`. Kliknij przycisk <code className="action">Actions</code>, a następnie <code className="action">Przywróć ostatni snapshot</code>.
+
+:::info
+Aby przywrócić wolumen za pomocą snapshota sprzed ostatniego snapshota, należy usunąć snapshoty, aż do momentu, gdy snapshot używany do przywrócenia będzie najnowszy.
+
+:::
+
+
+<img className="thumbnail" alt="Volume revert to latest snapshot" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise14.png" loading="lazy" />
+
+### Automatyczna kopia zapasowa snapshotu <a name="hold_snapshot"></a>
+
+Kopie zapasowe `automatycznych` migawek utworzonych przez [Zasady migawek](#snapshot_policy) można wykonać, klikając przycisk <code className="action">...</code> w tabeli, a następnie klikając <code className="action">Zapisz</code>.
+
+<img className="thumbnail" alt="Volume Hold" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise15.png" loading="lazy" />
+
+Po wykonaniu kopii zapasowej snapshot `automatically`, stanie się on `manual`, co uniemożliwi jego obracanie za pomocą polityki snapshotów, a tym samym automatyczne usuwanie.
+
+#### Zarządzanie ACL wolumenów <a name="access_control"></a>
+
+Kontrola dostępu do wolumenów działa poprzez ograniczenia adresów IP. Ponieważ żadne ograniczenie nie jest domyślnie skonfigurowane, pierwszym krokiem podczas tworzenia wolumenów jest zdefiniowanie adresów IP lub zakresów, z których dostęp będzie dozwolony.
+
+W zakładce <code className="action">Kontrola dostępu (ACL)</code> kliknij przycisk <code className="action">+ Dodaj nowy dostęp</code>.
+
+<img className="thumbnail" alt="ACL" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise16.png" loading="lazy" />
+
+Operacja ta tworzy nowy wiersz w tabeli, w której możesz wprowadzić adres IP lub blok adresu (CIDR). Wybierz `Odczyt` lub `Odczyt i zapis` jako typ dostępu w rozwijanym menu, następnie zaznacz ten wpis, aby dodać go do ACL.
+
+Aby usunąć dostęp do wolumenu, kliknij ikonę kosza w tabeli.
+
+### Zarządzanie polityką wykonywania snapshotów <a name="snapshot_policy"></a>
+
+:::info
+Domyślnie każdy wolumin jest chroniony przez politykę wykonywania snapshotów o nazwie `default`, która tworzy snapshoty woluminu w regularnych odstępach czasu.
+
+:::
+
+
+Dodanie reguł pozwala na zaplanowanie tworzenia snapshotów dla wszystkich Twoich wolumenów.
+
+Kliknij zakładkę <code className="action">Snapshot policies</code>. Tabela zawiera listę wszystkich polityk utworzonych dla wybranej usługi.
+
+Polityka domyślna już istnieje i nie można jej zmienić. Aby dodać własną, kliknij przycisk <code className="action">Utwórz politykę wykonywania snapshotów</code>.
+
+<img className="thumbnail" alt="Snapshot policies" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise17.png" loading="lazy" />
+
+Na stronie, która się wtedy wyświetli, wprowadź nazwę i opis polityki. Następnie użyj przycisku '+ Dodaj nową regułę` aby dodać jedną lub więcej reguł do polityki.
+
+<img className="thumbnail" alt="Snapshots" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise18.png" loading="lazy" />
+
+Wypełnij pola, aby określić kryteria okresowości tworzenia snapshota. Musisz również podać prefiks dla snapshotów niezbędny do nadania im nazwy.
+
+Szczegółowe informacje na temat każdej wartości można znaleźć, klikając ikonę znaku zapytania (<code className="action">?</code>). Rozwijając sekcję <code className="action">Przykład</code>, możesz wyświetlić dwa zestawy reguł wraz z wyjaśnieniem ich wyniku.
+
+Zaznacz nową regułę, aby ją dodać. Po dodaniu wszystkich reguł kliknij przycisk <code className="action">Utwórz nową politykę wykonywania snapshotów</code>.
+
+[Wybierz wolumen](#manage_volume) i przejdź do zakładki <code className="action">Snapshots</code>, aby [zastosować reguły](#snapshots).
+
+Aby usunąć politykę, kliknij odpowiednią ikonę kosza w tabeli.
+
+### Pierwsze kroki <a name="firststeps"></a>
+
+Jeśli nie jesteś zaznajomiony z korzystaniem z rozwiązania Enterprise File Storage, możesz postępować zgodnie z poniższymi instrukcjami:
+
+- [Utwórz wolumen](#create_volume)
+- [Konfiguracja kontroli dostępu](#access_control)
+- [Konfiguracja polityki snapshota](#snapshot_policy) (opcjonalnie)
+- [Zastosowanie reguł snapshota dla wolumenu](#snapshots) (opcjonalnie)
+- [Wyświetlanie i pobieranie snafonów](#access_snapshots) (opcjonalnie)
+- [Zaloguj się do wolumenu zgodnie z instrukcjami w sekcji "Informacje ogólne"](#modify_volume)
+- [Dowiedz się, jak korzystać z Enterprise File Storage poprzez API, sprawdź nasze przewodniki](#gofurther) (opcjonalnie)
+
+## Sprawdź również <a name="gofurther"></a>
+
+[Enterprise File Storage - API Quickstart](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-quick-start/)
+
+[Enterprise File Storage - Zarządzanie wolumenami](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volumes/)
+
+[Enterprise File Storage - Zarządzanie ACL wolumenu](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volume-acl/)
+
+[Enterprise File Storage - Zarządzanie snapshotami wolumenów](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volume-snapshots/)
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

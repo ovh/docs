@@ -1,0 +1,88 @@
+---
+title: Managed Rancher Service supported versions and lifecycle policy
+description: A complete guide including lifecycle policy, release calendar, and supported versions for OVHcloud Managed Rancher Service
+lastUpdated: 2026-03-23
+---
+
+## Objective
+
+**This guide details Managed Rancher Service lifecycle policy, supported versions and release calendar.**
+
+### Managed Rancher Service lifecycle policies
+
+OVHcloud's Managed Rancher Service adheres to lifecycle policies to ensure the reliability and security of your managed service. New stable versions are regularly tested and released to provide the latest security patches and feature sets.
+Older versions may reach their End-of-Support (EoS) and then End-of-Life (EoL) status based on our lifecycle policy. Understanding these policies helps customers plan for upgrades and transitions to newer versions.
+
+As a general rule, OVHcloud will support Rancher minor versions for 12 months after their upstream release date.
+
+#### End-of-Support (EoS)
+
+The End-of-Support (EoS) is the point in time at which a specific Rancher version is no longer officially covered by OVHcloud support nor available for new installations.<br/>
+When a Rancher instance is running a version that has reached its End-of-Support date, OVHcloud will not force a version upgrade for the last version that reached End-of-Support. Keep in mind that while we will keep them running, they will no longer be covered by OVHcloud support.
+In the unlikely event that one of these versions exposes a security breach that puts its own infrastructure at risk, OVHcloud may force a minor update of the service or deactivate the service if the forced minor update does not succeed.
+
+As a general rule, OVHcloud will continue offering minor-version upgrades for all unsupported versions to a supported version to ensure that customers can, at their own pace, move to an OVHcloud-supported minor version.<br/>
+The customer is solely responsible for ensuring that their configuration and related software, including Kubernetes versions of downstream clusters, are compliant with the new version they are upgrading to. Please refer to the [Downstream clusters Kubernetes supported version matrix](#supportmatrix) section.
+
+As soon as a minor version reaches its End-of-Support by OVHcloud, it will simultaneously reach its End-of-Sales, meaning that OVHcloud will stop offering the minor version for installation on the Managed Rancher Service.
+
+At any time, customers can find the currently supported versions in the [dedicated section](#versions).
+
+#### End-of-Life (EoL)
+
+The point at which a specific Rancher version will be auto-upgraded by the OVHcloud team to the next minor version (n+1).
+As a general rule, OVHcloud will move Rancher versions to EoL 3 months after they have reached their EoS date.
+
+### Rancher Release Calendar and supported versions <a name="versions"></a>
+
+The following table provides an overview of the estimated release schedule for each supported OVHcloud Managed Rancher Service (MRS) version.
+This schedule is subject to change and is provided for informational purposes only. Exact release dates may vary, depending on development requirements, testing, and other factors.
+
+| Rancher version | Upstream release date | MRS release date | MRS End of support | MRS End of life |
+|-----------------|-----------------------|------------------|--------------------|-----------------|
+| 2.13            | 2025-11-25            | 2026-03-23       | 2026-11            | 2027-02         |
+| 2.12            | 2025-08-29            | 2025-12-18       | 2026-08            | 2026-11         |
+| 2.11            | 2025-03-31            | 2025-08-14       | 2026-04            | 2026-06         |
+
+**MRS release date:** Estimated date when this Rancher version is available for OVHcloud Managed Rancher Service.
+
+- The **Date format** follows the [international standard for numeric dates](https://en.wikipedia.org/wiki/ISO_8601#Week_dates). Dates listed by [quarter year](https://en.wikipedia.org/wiki/Calendar_year#Quarter_year) are estimates and will be updated once specific dates are known.
+- The abbreviation **TBD** is used when a date is to be determined.
+
+### Downstream clusters Kubernetes supported version matrix <a name="supportmatrix"></a>
+
+To get the list of supported Kubernetes versions for each Rancher minor version, please refer to the [SUSE support matrix](https://www.suse.com/suse-rancher/support-matrix/all-supported-versions).
+
+### OVHcloud Managed Kubernetes Service (MKS) drivers supported version matrix
+
+Depending on the version of Rancher, the OVHcloud Managed Kubernetes Service (MKS) drivers will support the following versions:
+
+- **Rancher 2.11.x** -> MKS 1.30 to 1.32
+- **Rancher 2.12.x** -> MKS 1.31 to 1.33
+- **Rancher 2.13.x** -> MKS 1.32 to 1.34
+
+#### Support
+
+In addition to the OVHcloud Affiliated Companies listed in the OVHcloud Specific conditions for Public Cloud, SUSE Software Solutions Ireland Ltd, the publisher of the Rancher software, as well as its subsidiaries listed below, may, in exceptional cases and with the Client’s explicit consent, access certain Client data as part of the support provided to OVHcloud in the context of the Service.
+
+| SUSE Affiliate | Location |
+|-----------------|-----------------------|
+| SUSE Software Solutions Germany GmbH      | Germany            |
+| SUSE Linux s.r.o.	SUSE LINUX | Czech Republic           |
+| SUSE Software Solutions France Sarl          | France           |
+| SUSE Software Solutions Ireland   | Ireland            |
+| SUSE Software Solutions Japan          | Japan           |
+| SUSE (Bulgaria)          | Bulgaria           |
+| SUSE Software Solutions Australia         | Australia           |
+| SUSE Software Solutions Singapore          | Singapore           |
+| SUSE Software Solutions Brasil         | Brasil           |
+| SUSE Software Solutions Spain          | Spain           |
+| SUSE Software Solutions India Private Ltd      | India           |
+| SUSE Software Solutions UK Ltd          | UK           |
+| SUSE Software Solutions New Zealand Branch      | New-Zealand           |
+
+## Go Further
+
+Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

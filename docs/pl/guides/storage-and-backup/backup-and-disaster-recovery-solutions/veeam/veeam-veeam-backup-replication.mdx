@@ -1,0 +1,273 @@
+---
+title: Instalacja Veeam Backup & Replication (EN)
+description: Dowiedz się, jak zainstalować serwer Veeam Backup & Replication z Veeam Enterprise
+lastUpdated: 2026-03-24
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+Veeam Backup & Replication is a data protection software. It offers its users a wide range of options for backing up, replicating and restoring their data.
+
+**This guide explains how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
+
+:::warning
+If a virtual machine is protected using multiple backup methods (for example [VM backup](https://helpcenter.veeam.com/docs/vbr/qsg/vm_backup.html?ver=13) and [Agent backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html?ver=13)), each method consumes a separate licence and is billed independently.
+
+To avoid additional charges, protect each virtual machine using **only one backup method**.
+
+:::
+
+
+## Requirements
+
+- A [Veeam Enterprise solution](https://www.ovhcloud.com/pl/storage-solutions/veeam-enterprise/)
+- Windows Server 2012 or a newer version
+- Veeam Backup & Replication v12.3 or earlier.
+
+## Instructions
+
+### Setting up Veeam Backup & Replication
+
+Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu). If you do not have an account, you will need to set one up (account setup is free).
+
+The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
+
+On the server, you can then launch the installation wizard. Select <code className="action">Veeam Backup & Replication (Install)</code>.
+
+<img className="thumbnail" alt="installation Veeam" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_01.png" loading="lazy" />
+
+After you have read the licence agreement, accept the terms and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="terms conditions" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_02.png" loading="lazy" />
+
+Click <code className="action">Next</code> to skip the step of opening a licence file.
+
+<img className="thumbnail" alt="licence" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_03.png" loading="lazy" />
+
+In the step where you select components to install, leave everything unchanged. However, depending on your requirements, you can change the destination path. Confirm by clicking <code className="action">Next</code>.
+
+<img className="thumbnail" alt="installation path" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_04.png" loading="lazy" />
+
+The installation wizard will then carry out a requirement check. If you are working from a clean Windows installation, some components will be missing, but the installation wizard will download and install them automatically. Confirm by clicking <code className="action">Next</code>.
+
+<img className="thumbnail" alt="validation" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_05.png" loading="lazy" />
+
+Next, wait for the missing components to be installed.
+
+<img className="thumbnail" alt="installation" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_06.png" loading="lazy" />
+
+Once the installations are complete, confirm the **Veeam Backup & Replication** setup by clicking <code className="action">Next</code>.
+
+<img className="thumbnail" alt="system check" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_07.png" loading="lazy" />
+
+During the customisation stage of the setup, confirm the operation by clicking <code className="action">Install</code>.
+
+<img className="thumbnail" alt="customisation" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_08.png" loading="lazy" />
+
+Next, wait for the installation to complete.
+
+<img className="thumbnail" alt="progress bar" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_09.png" loading="lazy" />
+
+Once it is complete, exit the installation wizard by clicking <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="finish install" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_inst_10.png" loading="lazy" />
+
+You will be redirected to the launch wizard, simply close the window.
+
+<a name="create"></a>
+
+### Creating a Veeam Enterprise service account
+
+#### Step 1 - Launch a service account
+
+You will need to generate a **complex** password.
+
+To begin, launch Windows Powershell as an administrator.
+
+Next, create a service account, entering these lines of command:
+
+```powershell
+New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVHcloud Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
+```
+
+Please note that the account name and password shown here are examples, and must be replaced with your own details:
+
+- Account name: OVHVeeamEnterprise
+- Password: P@ssword01
+
+#### Step 2 - Define the service account authorisations
+
+Launch the Veeam console.
+
+<img className="thumbnail" alt="veeam console" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_use_12.png" loading="lazy" />
+
+Check that it is in **Community Edition** mode, in the bottom right-hand corner.
+
+<img className="thumbnail" alt="free edition" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/Veeamcommunity.png" loading="lazy" />
+
+Go to the menu, and click <code className="action">Users and Roles</code>.
+
+<img className="thumbnail" alt="users and roles" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_conf_2.png" loading="lazy" />
+
+In the <code className="action">Security</code> window, select <code className="action">Add...</code>.
+
+<img className="thumbnail" alt="security" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_conf_3.png" loading="lazy" />
+
+Then, in the "Add User" window, enter the service account name you have created. Select the **Veeam Backup Administrator** role and confirm by clicking <code className="action">OK</code>.
+
+<img className="thumbnail" alt="add admin user" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_conf_4.png" loading="lazy" />
+
+If you go back to the **Security** window, you can check that the account has been defined properly.
+
+<img className="thumbnail" alt="user added" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_conf_5.png" loading="lazy" />
+
+#### Step 3 - Launch and Activation Permissions
+
+The OVHVeeamEnterprise user is only accessible locally, so it is necessary to add permissions in the Windows graphical user interface to enable the remote connection.
+
+Via the graphical user interface:
+
+1. In your Windows search bar, type <code className="action">Component Services</code> and launch the service.
+2. On the left menu and following the tree structure, click on <code className="action">Component Services</code>, then on <code className="action">Computers</code>, then on <code className="action">My Computer</code>.
+3. On the right, under the <code className="action">Actions</code> tab, click on <code className="action">More Actions</code>, then on <code className="action">Properties</code>.
+4. Go to <code className="action">COM Security</code>, underneath the second section <code className="action">Launch and Activation Permissions</code>, click on <code className="action">Edit Limits</code>. Next, click on <code className="action">Add...</code>.
+
+<img className="thumbnail" alt="Launch and Activation Permissions" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamuseradd.png" loading="lazy" />
+
+<ol start="5">
+  <li>Click on <code className="action">Advanced</code> to locate the previously added service account and click on <code className="action">Find Now</code>. Select the <code className="action">OVHVeeamEnterprise</code> user from the list of users.</li>
+</ol>
+
+<img className="thumbnail" alt="Launch and Activation Permissions" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamuseradd1.png" loading="lazy" />
+
+<ol start="6">
+  <li>Click on <code className="action">OK</code> to confirm the selection, and on <code className="action">OK</code> to validate. Next, enable all permissions on the <code className="action">OVHVeeamEnterprise</code> user.</li>
+</ol>
+
+<img className="thumbnail" alt="Launch and Activation Permissions" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamuseradd3.png" loading="lazy" />
+
+<ol start="7">
+  <li>Click on <code className="action">OK</code> to confirm and on <code className="action">Apply</code> to validate the changes.</li>
+</ol>
+
+Your OVHVeeamEnterprise user is now accessible locally and remotely.
+
+#### Step 4 - Register the Veeam Backup & Replication server
+
+#### From the OVHcloud Control Panel
+
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), open the <code className="action">Hosted Private Cloud</code> section and select your service labelled **backupserverenterprise** from <code className="action">Platforms and services</code>. On this page, click on <code className="action">Activate license</code> in the `Shortcuts` box.
+
+To set up your environnement, make sure you have opened the ports from OVHcloud to your Veeam Backup and Replication servers:
+
+- `Port 9392/TCP`
+- `Port 9405/TCP`
+
+<img className="thumbnail" alt="Veeam installation" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/architecture.png" loading="lazy" />
+
+<img className="thumbnail" alt="OVHcloud Control Panel" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeam001.png" loading="lazy" />
+
+In the new opened window, enter the following information:
+
+- The public IP address through which your server **Veeam Backup & Replication** can be contacted.
+- The login for the service account you have created.
+- The password for the service account.
+
+Then confirm with <code className="action">OK</code>.
+
+<img className="thumbnail" alt="license activation" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeam03.png" loading="lazy" />
+
+Once you have activated it, you will find the main information on the service page.
+
+<img className="thumbnail" alt="license activated" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeam02.png" loading="lazy" />
+
+**Updating login credentials via the OVHcloud Control Panel**:
+
+To update your login credentials, you can use the <code className="action">Update my information</code> button.
+
+<img className="thumbnail" alt="Update 1" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeam_update_cred.png" loading="lazy" />
+
+In the window that pops up, inform the `IP`, `Username` and `Password`.
+
+Finally, click <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Update 2" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeam_update_cred_2.png" loading="lazy" />
+
+#### Using the OVHcloud API
+
+First, retrieve your serviceName:
+
+<Api version="v1" section="/veeam/veeamEnterprise" method="GET" route={"/veeam/veeamEnterprise"} />
+
+Then register it:
+
+<Api version="v1" section="/veeam/veeamEnterprise" method="POST" route={"/veeam/veeamEnterprise/\{serviceName\}/register"} />
+
+You will need the following information:
+
+- the public IP address that can be used to contact your **Veeam Backup & Replication** server
+- your server’s **Veeam Backup & Replication** port (usually **9392/TCP**)
+- the login for the account you have just created
+- the password for your service account
+
+You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam Backup & Replication** server via:
+
+<Api version="v1" section="/veeam/veeamEnterprise" method="GET" route={"/veeam/veeamEnterprise/\{serviceName\}"} />
+
+
+:::info
+The activation of your Veeam Backup & Replication server can take several hours.
+
+:::
+
+
+**Updating login credentials via the API**:
+
+<Api version="v1" section="/veeam/veeamEnterprise" method="POST" route={"/veeam/veeamEnterprise/\{serviceName\}/update"} />
+
+
+> **Settings**:
+>
+> `serviceName`: Your service name, e.g. `pcc-XXX-XXX-XXX-XXX`
+>
+
+Example of **REQUEST BODY** required:
+
+```json
+{
+  "ip": "192.0.2.0",
+  "password": "XXX",
+  "username": "string"
+}
+```
+
+#### Step 5 - Verify the registration
+
+Launch the Veeam console.
+
+<img className="thumbnail" alt="console veeam" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_use_12.png" loading="lazy" />
+
+Go to the menu, then click <code className="action">License</code>.
+
+<img className="thumbnail" alt="open menu" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_lic_1.png" loading="lazy" />
+
+Check that the information displayed is definitely for your OVHcloud licence.
+
+If the registration was successful, you should see `Edition: Enterprise Plus`.
+
+:::info
+You can now disable the user that you have created to create the registration.
+
+:::
+
+
+<img className="thumbnail" alt="licence OVHcloud" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/veeamBandR_lic_2.png" loading="lazy" />
+
+## Go further
+
+If you require training or technical support to implement our solutions, please contact your Technical Account Manager or visit [this page](https://www.ovhcloud.com/pl/professional-services/) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,114 @@
+---
+title: Creating and configuring a security group in Horizon
+description: Find out how to create a security group and configure it on a Public Cloud instance
+lastUpdated: 2023-07-24
+---
+
+## Objective
+
+For security reasons, you can configure and use filtering rules that will define access to your instances. You can allow or block certain incoming or outgoing connections using security groups. These rules can be applied for traffic from certain IP addresses, or even for instances configured on particular security groups.
+
+**Find out how to create a security group, and configure it on a Public Cloud instance.**
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/).
+- Access to the [Horizon interface](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/)
+
+## Instructions
+
+### Step 1: creating a security group
+
+Access the [Horizon interface](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/). Then choose the region in which you want to create a security group, via the button in the top left-hand corner.
+
+<img className="thumbnail" alt="define region" src="/images/public-cloud/compute/setup-security-group/security-group0.png" loading="lazy" />
+
+:::info
+If a security group is to be used in several regions, you must create it for each region.
+
+:::
+
+
+Now expand the <code className="action">Network</code> menu and click <code className="action">Security Groups</code>. 
+
+A table lists the security groups created. The default group is already listed here. This will allow all incoming and outgoing traffic to pass through.
+
+:::danger
+**Please do not modify or delete the "default" group. You will need to create a new security group and configure your rules in it.**
+
+Automated tasks on the infrastructure can reset the default security group, so it is important not to change it.
+
+OpenStack closes all access to instances by default. If you delete the "default" security group, you will need to create your own group, which will open access to your instances, and apply it every time you create an instance. In addition, the default group will be created again later by the automated tasks on the infrastructure.
+
+:::
+
+
+To add a new security group, click the <code className="action">+ Create Security Group</code> button.
+
+<img className="thumbnail" alt="access security groups" src="/images/public-cloud/compute/setup-security-group/security-group1.png" loading="lazy" />
+
+On the page that appears, give a name and description to the group you are about to create. Once you have done this, click the <code className="action">Create Security Group</code> button.
+
+<img className="thumbnail" alt="create security group" src="/images/public-cloud/compute/setup-security-group/security-group2.png" loading="lazy" />
+
+Returning to the <code className="action">Security Groups</code> tab, the table now displays the newly created group. Rules are configured by default. These allow only outgoing traffic to pass.
+
+If you would like to modify these, go to the next step.
+
+If you are satisfied with these rules, go to Step 3: [Configure a security group on your instance](#instance-security-group).
+
+### Step 2: configuring security group rules
+
+Click the <code className="action">Manage Rules</code> button.
+
+<img className="thumbnail" alt="manage rules" src="/images/public-cloud/compute/setup-security-group/security-group3.png" loading="lazy" />
+
+If you have left the default rules on your security group, they will only let outgoing traffic pass through.
+
+```bash
+root@server:~$ ssh admin@149.xxx.xxx.177
+
+ssh connect to host 149.xxx.xxx.177 port 22: Connection timed out
+```
+
+On the rules management page, you can:
+
+- delete an existing rule: Use the <code className="action">Delete Rule</code> button.
+- add a new rule: use the <code className="action">+ Add Rule</code> button.
+
+When you add a rule, you will need to fill in the information requested, then click <code className="action">Add</code>.
+
+In our example, we will authorise the SSH connection to the instance.
+
+<img className="thumbnail" alt="add a rule" src="/images/public-cloud/compute/setup-security-group/security-group4.png" loading="lazy" />
+
+Once you have added the new rule, wait a few minutes for it to take effect.
+
+```bash
+root@server:~$ ssh admin@149.xxx.xxx.177
+
+Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
+admin@server1:~$
+```
+
+### Configuring a security group on an instance <a name="instance-security-group"></a>
+
+From the Horizon interface, expand the <code className="action">Compute</code> menu and select <code className="action">Instances</code>. From this page, create a new instance via the <code className="action">Launch Instance</code> button.
+
+When you create your instance, you can choose the new security group created in the previous step via the <code className="action">Security Groups</code> menu.
+
+<img className="thumbnail" alt="assign security group" src="/images/public-cloud/compute/setup-security-group/security-group5.png" loading="lazy" />
+
+You can apply a new security group to an instance that has already been created by clicking <code className="action">Edit Security Groups</code> to the right of the instance.
+
+<img className="thumbnail" alt="edit security group" src="/images/public-cloud/compute/setup-security-group/security-group6.png" loading="lazy" />
+
+### Deleting a security group
+
+To delete a security group, select it by ticking the corresponding box on the left, then click <code className="action">Delete Security Groups</code>.
+
+<img className="thumbnail" alt="delete security group" src="/images/public-cloud/compute/setup-security-group/security-group7.png" loading="lazy" />
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

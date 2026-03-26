@@ -1,0 +1,87 @@
+---
+title: Hosted Private Cloud kündigen
+description: Erfahren Sie hier, wie Sie eine Hosted Private Cloud Infrastruktur kündigen können
+lastUpdated: 2020-07-08
+---
+
+import Api from '@components/Api';
+
+
+## Ziel
+
+Unser Hosted Private Cloud Angebot entspricht nicht mehr Ihren Anforderungen? Oder haben Sie eine neue Infrastruktur bestellt, um die alte zu ersetzen? Dann können Sie diese Infrastruktur kündigen, sobald Sie alle Ihre dort gespeicherten Daten gesichert haben.  
+
+**Diese Anleitung erklärt, wie Sie einen Hosted Private Cloud Dienst kündigen können.** 
+
+## Voraussetzungen
+
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+
+{/* CP-NAV-START:privatecloud-vmware-vsphere */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VMware vSphere](https://manager.eu.ovhcloud.com/#/dedicated/dedicated_cloud)
+- **Navigationspfad:** <code className="action">Hosted Private Cloud</code> > <code className="action">Managed VMware vSphere</code> > Wählen Sie Ihren vSphere Dienst aus
+
+---
+{/* CP-NAV-END:privatecloud-vmware-vsphere */}
+
+## In der praktischen Anwendung
+
+Bei Hosted Private Cloud gibt es keine Mindestvertragslaufzeit. Wie jedoch in den [Besonderen Geschäftsbedingungen](https://www.ovh.de/support/agb-vertrage/) beschrieben, ist jeder angebrochene Monat fällig und im Voraus zu bezahlen.
+
+:::warning
+Bevor Sie Ihre Private Cloud kündigen, achten Sie bitte darauf, alle Daten sicherzustellen, die Sie behalten möchten. Mit der Kündigung geht nämlich das komplette Löschen Ihrer Private Cloud und aller darin enthaltener Daten einher.
+
+:::
+
+
+### Schritt 1: Beantragen Sie die Kündigung in Ihrem OVHcloud Kundencenter
+
+Wählen Sie die Private Cloud aus der Liste aus, die Sie kündigen möchten.
+
+Klicken Sie im Reiter „Allgemeine Informationen“ in der Tabelle  „Dienstverwaltung“ auf den Button <code className="action">...</code> (4) rechts neben dem Datum der Verlängerung. Klicken Sie dann auf <code className="action">Dienst löschen</code> (5).
+
+<img className="thumbnail" alt="Kündigung über das Kundencenter" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation1.png" loading="lazy" />
+
+Bitte beachten Sie, dass diese Aktion alle Daten auf dieser Infrastruktur löscht, sobald Sie die Kündigung bestätigen. Bei einer Kündigung vor Monatsende erfolgt keine anteilige Rückzahlung.
+
+Klicken Sie auf <code className="action">Bestätigen</code> um die Kündigung zu beantragen.
+
+<img className="thumbnail" alt="Bestätigung der Kündigung" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation2.png" loading="lazy" />
+
+Sie sehen dann eine Bestätigung Ihres Antrags. Die Bestätigung der Kündigung wird Ihnen per E-Mail an die Adresse zugesandt, die mit dem Account bei OVHcloud verbunden ist.
+
+<img className="thumbnail" alt="Bestätigung der Kündigung" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation3.png" loading="lazy" />
+
+### Schritt 2: Die Kündigung bestätigen
+
+Aufgrund Ihrer Anfrage wird Ihnen eine Bestätigung der Kündigung per E-Mail an die Adresse zugesandt, die mit dem Account bei OVHcloud verbunden ist. 
+
+Diese E-Mail können Sie auch in Ihrem OVHcloud Kundencenter einsehen. Klicken Sie auf Ihren Namen oben rechts, dann auf <code className="action">E-Mails vom Support</code>.
+
+<img className="thumbnail" alt="Bestätigung der Kündigung" src="/images/assets/screens/control-panel/product-selection/right-menu/my-messages.png" loading="lazy" />
+
+Der Betreff der E-Mail ist:
+
+> **Löschen Ihrer Private Cloud pcc-xxx-xxx-xxx-xxx**.
+
+Die E-Mail enthält einen Link, über den Sie die Kündigung Ihrer Private Cloud bestätigen können.
+
+:::info
+Bitte beachten Sie, dass dieser Link nur **72 Stunden** gültig ist. Wir empfehlen Ihnen daher, die Kündigung ab dem 25\. eines Monats zu beantragen.
+
+:::
+
+
+Außerdem können Sie den Antrag auf Kündigung über folgendes API von OVHcloud bestätigen:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/confirmTermination"} />
+
+In diesem Fall müssen Sie das Token zur Bestätigung eingeben. Es befindet sich in der E-Mail zur Bestätigung der Kündigung.
+
+## Weiterführende Informationen
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

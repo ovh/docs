@@ -1,0 +1,105 @@
+---
+title: Configurer une adresse e-mail Zimbra sur un logiciel de messagerie
+description: Découvrez comment configurer votre logiciel de messagerie pour consulter les e-mails de votre compte Zimbra
+lastUpdated: 2025-02-12
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objectif
+
+Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collaborative open source offrant toutes les fonctionnalités nécessaires à une utilisation professionnelle. Retrouvez sur cette page les informations nécessaires à la configuration de vos comptes e-mail Zimbra sur votre logiciel de messagerie préféré.
+
+**Découvrez comment configurer votre logiciel de messagerie pour consulter les e-mails de votre compte Zimbra**
+
+## Prérequis
+
+- Avoir souscrit à un compte e-mail sur notre solution e-mail Zimbra OVHcloud.
+- Avoir installé un logiciel de messagerie sur l'appareil de votre choix.
+
+## En pratique
+
+### Configurer son compte e-mail <a name="mail-config"></a>
+
+La configuration de votre compte e-mail Zimbra utilise les mêmes paramètres que l'offre MX Plan, incluse avec les hébergements Web OVHcloud ou en offre seule. C'est pourquoi les liens de configuration ci-dessous ont une mention « MX Plan » dans leur titre.
+
+Cliquez sur l'onglet correspondant au type d'appareil que vous utilisez :
+
+<Tabs>
+  <Tab label="Ordinateur Windows">
+    - [Outlook pour Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/)
+    - [Thunderbird pour Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/)
+    - [Courrier pour Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/)
+  </Tab>
+  <Tab label="Ordinateur Apple mac">
+    - [Outlook pour macOS](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016-mac/)
+    - [Mail pour macOS](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/)
+    - [Thunderbird pour macOS](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-mac/)
+  </Tab>
+  <Tab label="iPhone ou iPad">
+    - [Mail pour iPhone et iPad](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/)
+  </Tab>
+  <Tab label="Smartphone ou Tablette Android">
+    - [Gmail pour Android](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/)
+  </Tab>
+  <Tab label="Interface Web">
+    - [Interface en ligne de Gmail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-gmail/)
+  </Tab>
+</Tabs>
+
+
+### Rappel des paramètres POP, IMAP et SMTP <a name="popimap-settings"></a>
+
+Pour la réception des e-mails, lors du choix du type de compte, nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP**.
+
+- **Pour une configuration en POP**
+
+|Information|Description|
+|---|---|
+|Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+|Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+|Serveur **EUROPE** (entrant)|pop.mail.ovh.net **ou** ssl0.ovh.net|
+|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|pop.mail.ovh.ca|
+|Port|995|
+|Type de sécurité|SSL/TLS|
+
+- **Pour une configuration en IMAP**
+
+|Information|Description|
+|---|---|
+|Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+|Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+|Serveur **EUROPE** (entrant)|imap.mail.ovh.net **ou** ssl0.ovh.net|
+|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|imap.mail.ovh.ca|
+|Port|993|
+|Type de sécurité|SSL/TLS|
+
+Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres **SMTP** dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser :
+
+- **Configuration SMTP**
+
+|Information|Description|
+|---|---|
+|Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
+|Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
+|Serveur **EUROPE** (entrant)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
+|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|smtp.mail.ovh.ca|
+|Port|465|
+|Type de sécurité|SSL/TLS|
+
+## Aller plus loin <a name="go-further"></a>
+
+[Premiers pas avec l'offre Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+[Utiliser le webmail Zimbra](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)
+
+[FAQ sur la solution Zimbra OVHcloud](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-zimbra/)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

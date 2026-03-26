@@ -1,0 +1,566 @@
+---
+title: E-Mail Alias und Weiterleitung verwenden
+description: Erfahren Sie hier, wie Sie E-Mail Aliase und Weiterleitungen verwalten
+lastUpdated: 2025-06-03
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+In dieser Anleitung finden Sie Informationen und Instruktionen zur Konfiguration von **Weiterleitungen** und **Aliasen** für Ihre E-Mail-Lösung, zum Beispiel um auf einem Account A empfangene E-Mails an eine Adresse B weiterzuleiten.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/schema-redirect00.png" loading="lazy" />
+
+**Diese Anleitung erklärt, wie Sie E-Mail Aliase und Weiterleitungen konfigurieren.**
+
+<details>
+
+<summary>Was ist eine E-Mail-Weiterleitung?</summary>
+
+
+Mit einer Weiterleitung können Sie den ursprünglichen Weg einer E-Mail zu einer oder mehreren anderen E-Mail-Adressen ändern.
+
+Zum Beispiel: Sie möchten, dass eine E-Mail, die Sie auf **kontakt@mydomain.ovh** erhalten, auch an **john.smith@otherdomain.ovh** weitergeleitet wird. Mit einer Weiterleitung können Sie automatisch eine E-Mail an **kontakt@mydomain.ovh** an **john.smith@otherdomain.ovh** senden.
+
+</details>
+
+
+<details>
+
+<summary>Was ist ein E-Mail-Alias?</summary>
+
+
+Im Gegensatz zur Weiterleitung handelt es sich bei der dem Alias zugeordneten E-Mail-Adresse nicht um eine angezeigte Adresse, sondern um eine „Maske“.
+
+Wenn Sie einen Alias für Ihre E-Mail-Adresse erstellen, können Sie Ihren Kontakten eine Maskenadresse übermitteln, ohne dem Absender Ihre persönliche E-Mail-Adresse mitteilen zu müssen. Eine E-Mail-Adresse kann mehrere Aliase haben.
+
+Zum Beispiel: Ihre E-Mail-Adresse ist **john.smith@mydomain.ovh** und Ihr Alias ist **information@mydomain.ovh**. Sie können dann Ihre Kontakte unter der Adresse **information@mydomain.ovh** kontaktieren und Ihre E-Mails auf **john.smith@mydomain.ovh** empfangen, ohne dass der Absender Kenntnis von **john.smith@mydomain.ovh** hat.
+
+</details>
+
+
+<details>
+
+<summary>Weiterleitung und Alias im Bild <a name="diagram"></a></summary>
+
+
+Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitungen anzuzeigen.
+
+- `From` ist die Absenderadresse.
+- `To` ist die Adresse des Empfängers.
+- `Redirect to` ist die Ziel-E-Mail-Adresse der Weiterleitung.
+
+<Tabs>
+  <Tab label="1. Einfache Weiterleitung">
+    Die E-Mail wird direkt an die Weiterleitungsadresse gesendet, der ursprüngliche Empfänger-Account erhält die E-Mail nicht.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/schema-redirect01.png" loading="lazy" />
+  </Tab>
+  <Tab label="2. Weiterleitung mit lokaler Kopie">
+    Sowohl der ursprüngliche Empfänger als auch der Ziel-Account der Weiterleitung erhalten die E-Mail.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/schema-redirect02.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. E-Mail Alias">
+    Die E-Mail wird an die Alias-Adresse gesendet und von dem E-Mail-Account empfangen, für den der Alias konfiguriert wurde. Die Angabe `Received by` ist der Account, der die E-Mail empfängt.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/schema-redirect03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::info
+Es ist möglich, eine Weiterleitung auf mehrere E-Mail-Adressen einzurichten. Dazu müssen die Weiterleitungen zu jedem Empfängern einzeln erstellt werden.
+
+
+:::
+
+
+</details>
+
+
+## Voraussetzungen
+
+- Sie verfügen über eine vorkonfigurierte OVHcloud E-Mail-Lösung, darunter:
+    - **MX Plan** mit unseren [Webhosting Angeboten](https://www.ovhcloud.com/de/web-hosting/) oder in einem [100M Gratis-Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/) inklusive.
+    - [Exchange](https://www.ovhcloud.com/de/emails-exchange/).
+    - [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/).
+    - [Zimbra](https://www.ovhcloud.com/de/emails/zimbra-emails/).
+
+{/* CP-NAV-START:web-mx-plan */}
+{/* CP-NAV-START:web-zimbra */}
+{/* CP-NAV-START:web-email-pro */}
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Wählen Sie Ihren MX Plan Dienst aus
+
+**Zimbra:**
+
+- **Direkter Link:** [Zimbra](https://manager.eu.ovhcloud.com/#/web/zimbra)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > <code className="action">Zimbra Mail</code>
+
+**E-Mail Pro:**
+
+- **Direkter Link:** [E-Mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">E-Mail Pro</code> > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wählen Sie Ihre Plattform aus
+
+---
+{/* CP-NAV-END:web-exchange */}
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-zimbra */}
+{/* CP-NAV-END:web-mx-plan */}
+
+## In der praktischen Anwendung
+
+Diese Anleitung gilt für alle unsere E-Mail-Angebote. Je nach Angebot können Sie die Alias und Weiterleitungen über das OVHcloud Kundencenter oder per Webmail verwalten. Zur besseren Übersicht geben wir in jedem Kapitel dieses Handbuchs an, welche Arten von E-Mail-Angeboten betroffen sind. Die verschiedenen OVHcloud E-Mail-Angebote sind:
+
+- **MX Plan Roundcube**: Entspricht dem MX Plan Angebot, das Roundcube Webmail verwendet.
+- **MX Plan Zimbra**: entspricht dem MX Plan Angebot mit Zimbra Webmail.
+- **MX Plan OWA**: Entspricht dem MX Plan Angebot, das Outlook Web App (OWA) Webmail verwendet.
+- **Exchange**: Gilt für Angebote **Hosted**, **Private** und **Dedicated** Exchange, die Outlook Web App (OWA) Webmail verwenden.
+- **E-Mail Pro**: Exchange-basiertes E-Mail-Angebot mit Outlook Web App (OWA) Webmail.
+- **Zimbra**: Dediziertes Angebot mit Zimbra Webmail.
+- **Redirect**: Dieses kostenlose Angebot ist automatisch verfügbar, wenn Sie einen Domainnamen in Ihrem Kundencenter haben und kein E-Mail-Angebot dazugehört. Sie erlaubt die Erstellung von E-Mail-Weiterleitungen.
+
+:::info
+Die E-Mail-Technologie Ihres MX Plan Angebots kann je nach Aktivierungsdatum Ihres Angebots oder nach einer kürzlich erfolgten Migration variieren. Diese Technologie zeichnet sich insbesondere durch das Interface ihres Webmail aus. Gehen Sie folgendermaßen vor, um die Domain über Ihr Kundencenter zu identifizieren:
+
+In Ihrem MX Plan Dienst finden Sie auf der Registerkarte <code className="action">Allgemeine Informationen</code> die unter **Webmail** verwendete Technologie in der Box `Abonnement`.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/technology-email.png" loading="lazy" />
+
+:::
+
+
+**Inhalt**
+
+- [Weiterleitung erstellen](#redirect)
+    - [Über das Kundencenter](#redirect-manager)
+        - [MX Plan / Redirect](#redirect-manager-mxplan)
+    - [Aus Webmail](#redirect-webmail)
+        - [Outlook Web App (OWA)](#redirect-webmail-owa)
+        - [Zimbra](#redirect-webmail-zimbra)
+- [Weiterleitung löschen](#redirect-delete)
+    - [MX Plan via Kundencenter](#redirect-delete)
+    - [Outlook Web App (OWA)](#redirect-delete-owa)
+    - [Zimbra](#redirect-delete-zimbra)
+- [Alias erstellen](#alias)
+    - [Exchange / E-Mail Pro / MX Plan](#alias-exchange-emp-mxplan)
+    - [MX Plan Roundcube](#alias-mxplan-roundcube)
+    - [Zimbra](#alias-mxplan-roundcube)
+- [Alias löschen](#alias-delete)
+    - [Exchange / E-Mail Pro / MX Plan](#alias-delete-exchange-emp-mxplan)
+    - [MX Plan Roundcube](#alias-delete-mxplan-roundcube)
+    - [Zimbra](#alias-delete-zimbra)
+
+### Weiterleitung erstellen <a name="redirect"></a>
+
+#### Über das Kundencenter <a name="redirect-manager"></a>
+
+Derzeit verfügen nur die Angebote **MX plan** und **Redirect** über ein Interface zur Verwaltung der Weiterleitungen über das OVHcloud Kundencenter.
+
+##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
+
+Wählen Sie in Ihrem MX Plan Dienst die betreffende Domain aus.
+
+In unserem Beispiel ist dies eine **Weiterleitung mit lokaler Kopie** (siehe [Schema 2](#diagram) am Anfang dieser Anleitung). Wenn dies Ihren Bedürfnissen entspricht, folgen Sie den nachstehenden Schritten, indem Sie auf den Tab für die Webmail-Technologie klicken, die von Ihrem MX Plan verwendet wird:
+
+<Tabs>
+  <Tab label="MX Plan Roundcube / MX Plan Outlook Web App / Redirect">
+    Standardmäßig befinden Sie sich im Tab <code className="action">Allgemeine Informationen</code> Ihres MX Plan. Klicken Sie auf den Tab <code className="action">E-Mails</code> und dann rechts auf den Button <code className="action">Verwaltung der Weiterleitungen</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/mxplan-legacy-1.png" loading="lazy" />
+
+Die Tabelle der bereits aktiven Weiterleitungen wird angezeigt. Rechts klicken Sie auf den Button <code className="action">Weiterleitung hinzufügen</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/mxplan-legacy-2.png" loading="lazy" />
+
+Geben Sie im Formular `Weiterleitung erstellen` Folgendes ein:
+    
+    - **Von der Adresse** : Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.
+    - **An die Adresse** : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dabei kann es sich um eine Ihrer OVHcloud E-Mail-Adressen oder um eine externe E-Mail-Adresse handeln.
+    - **Wählen Sie einen Kopiermodus aus**: Wählen Sie aus, ob Sie:
+         - **Eine Kopie der E-Mail bei OVHcloud aufbewahren**: Die E-Mail an Ihre Haupt-E-Mail-Adresse sowie die Weiterleitungsadresse senden (siehe [Schema 2](#diagram) am Anfang dieser Anleitung).
+         - **Keine Kopie der Mail aufbewahren**: direkt an die Weiterleitungsadresse weiterleiten, ohne dass diese von der Hauptadresse empfangen wird (siehe [Schema 1](#diagram) am Anfang dieser Anleitung).
+    
+    Klicken Sie anschließend auf <code className="action">Bestätigen</code>, um das Hinzufügen dieser Weiterleitung zu bestätigen.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/mxplan-legacy-3.png" loading="lazy" />
+    
+    :::info
+    Um die Zieladresse zu ändern oder eine Weiterleitung zu löschen, klicken Sie auf <code className="action">...</code> rechts neben der betreffenden Weiterleitung.
+
+    :::
+
+  </Tab>
+  <Tab label="Zimbra MX Plan">
+    Standardmäßig befinden Sie sich im Tab <code className="action">Allgemeine Informationen</code> Ihres MX Plan. Klicken Sie auf den Tab <code className="action">Weiterleitungen</code>.
+    
+    Die Tabelle der bereits aktiven Weiterleitungen wird angezeigt. Rechts klicken Sie auf den Button <code className="action">Weiterleitung hinzufügen</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/mxplan-zimbra-1.png" loading="lazy" />
+
+Geben Sie im Formular `Weiterleitung erstellen` Folgendes ein:
+    
+    - **Von der Adresse** : Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.
+    - **An die Adresse** : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dabei kann es sich um eine Ihrer OVHcloud E-Mail-Adressen oder um eine externe E-Mail-Adresse handeln.
+    - **Wählen Sie einen Kopiermodus aus**: Wählen Sie aus, ob Sie:
+         - **Eine Kopie der E-Mail bei OVHcloud aufbewahren**: Die E-Mail an Ihre Haupt-E-Mail-Adresse sowie die Weiterleitungsadresse senden (siehe [Schema 2](#diagram) am Anfang dieser Anleitung).
+         - **Keine Kopie der Mail aufbewahren**: direkt an die Weiterleitungsadresse weiterleiten, ohne dass diese von der Hauptadresse empfangen wird (siehe [Schema 1](#diagram) am Anfang dieser Anleitung).
+    
+    Klicken Sie anschließend auf <code className="action">Bestätigen</code>, um das Hinzufügen dieser Weiterleitung zu bestätigen.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/mxplan-legacy-3.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::info
+Wenn Sie den Kopiermodus „**Eine Kopie der Mail bei OVHcloud aufbewahren**“ auswählen, wird in der Liste der Weiterleitungen automatisch eine Weiterleitung von der E-Mail-Adresse zu sich selbst erstellt, die diese lokale Kopie materialisiert.
+
+:::
+
+
+#### Aus dem Webmail <a name="redirect-webmail"></a>
+
+Gehen Sie auf das [webmail](https://www.ovhcloud.com/de/mail/). Geben Sie **E-Mail-Adresse** und **Passwort** ein, um sich anzumelden.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/webmail.png" loading="lazy" />
+
+Die Erstellung einer Weiterleitung erfolgt über Posteingangsregeln, im Webmail auch als „Filter“ bezeichnet. Diese Regeln, die beim Empfang einer E-Mail angewendet werden, erlauben es, eine eingehende E-Mail weiterzuleiten oder umzuleiten.
+
+##### Outlook Web App (OWA) <a name="redirect-webmail-owa"></a>
+
+:::tip[Success]
+Dieses Kapitel betrifft die folgenden Angebote:
+
+- **MX PLAN OWA**.
+- **Exchange**.
+- **E-Mail Pro**.
+
+:::
+
+
+Outlook Web App ist ein Interface, das für unsere Angebote **Exchange**, **E-Mail Pro** und einen Teil der Accounts **MX Plan** verwendet wird.
+
+Durchsuchen Sie die folgenden Registerkarten, um Ihre Weiterleitung über Outlook Web App einzurichten:
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Nachdem Sie sich über das [webmail](https://www.ovhcloud.com/de/mail/) mit Ihrer E-Mail-Adresse verbunden haben, klicken Sie oben rechts auf das Zahnrad-Symbol und dann auf <code className="action">Optionen</code>.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/emails-all-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Gehen Sie im Fenster **Optionen** in der linken Spalte in die Kategorie **Automatische Verarbeitung** im Abschnitt **Post** und klicken Sie dann auf <code className="action">Posteingangs- und Aufbewahrungsregeln</code>.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/emails-all-02.png" loading="lazy" />
+
+In diesem Fenster können Sie Ihre Weiterleitungen verwalten und Filter auf alle eingehenden E-Mails anwenden.
+  </Tab>
+  <Tab label="Schritt 3">
+    Klicken Sie im Verwaltungsfenster für die **Posteingangsregeln** oben links auf das Symbol <code className="action">+</code>.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/emails-all-03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Geben Sie im angezeigten Fenster Folgendes ein:
+    - **Name**: Legen Sie den Namen Ihrer Weiterleitung fest.
+    - **Wenn die Nachricht eintrifft und alle Bedingungen erfüllt**: Wenn Ihre Weiterleitung für alle Nachrichten gilt, wählen Sie <code className="action">[Auf alle Nachrichten anwenden]</code>.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/emails-all-04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 5">
+    Im selben Fenster:
+    
+    **Alle folgenden Aktionen ausführen**: Hier wird die Weiterleitung angewendet. Wählen Sie <code className="action">Weiterleiten, Weiterleiten oder Senden</code> und dann <code className="action">Nachricht weiterleiten an...</code>.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/emails-all-05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 6">
+    Geben Sie dann die Adresse ein, an die Sie die E-Mail weiterleiten möchten, und gehen Sie zu „**Nachricht weiterleiten an...**“. Klicken Sie dann auf <code className="action">Speichern</code>. Klicken Sie anschließend auf <code className="action">OK</code> (Diskettensymbol), um die Weiterleitung abzuschließen.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/emails-all-06.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::info
+Um eine einfache **Weiterleitung** anzuwenden (siehe [Schema 1](#diagram) am Anfang dieser Anleitung), fügen Sie in diesem Fenster eine zusätzliche Regel zu Ihrer **Weiterleitung mit lokaler Kopie** hinzu. Klicken Sie auf <code className="action">Aktion hinzufügen</code> (Box 1), dann auf <code className="action">Verschieben, Kopieren oder Löschen</code> und schließlich auf <code className="action">Nachricht löschen</code>. Mit dieser Regel wird die Nachricht direkt in den Papierkorb verschoben, nachdem sie an die Weiterleitungsadresse weitergeleitet wurde.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/emails-all-07.png" loading="lazy" />
+
+:::
+
+
+##### Zimbra <a name="redirect-webmail-zimbra"></a>
+
+:::tip[Success]
+Dieses Kapitel betrifft die folgenden Angebote:
+
+- **MX Plan** mit Zimbra-Kennzeichnung für Webmail.
+- **Zimbra**.
+
+:::
+
+
+Um die E-Mails Ihres Zimbra-Accounts an eine andere E-Mail-Adresse weiterzuleiten, wenden wir eine Transferregel an.
+
+:::info
+In unserem Beispiel unten haben wir ausgewählt, alle eingehenden E-Mails an eine andere E-Mail-Adresse weiterzuleiten. Um das Beispiel in den Screenshots zu verstehen, sind wir unter **zimbra@mydomain.ovh** angemeldet und möchten die E-Mails dieses Accounts an die Adresse **address@example.com** weiterleiten.
+
+:::
+
+
+Führen Sie die folgenden Schritte aus, indem Sie auf die Registerkarten klicken, um Ihre Weiterleitung einzurichten:
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Klicken Sie auf die Schaltfläche &#9881; oben rechts in Ihrem Webmail-Fenster und dann auf <code className="action">Einstellungen</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_settings01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie im Parameterfenster auf den Abschnitt <code className="action">Filter</code> und dann auf die Schaltfläche <code className="action">Filter hinzufügen</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_redirection02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    - Klicken Sie oben rechts auf <u>Erweiterter Modus</u>, um diese Regel zu implementieren.
+    - Geben Sie einen Namen für Ihren Filter in das Feld `Filtername` ein.
+    - Lassen Sie das Dropdown-Menü auf `Alle` im Satz „Wenn eine eingehende Nachricht ... dieser Bedingungen entspricht“.
+    - Wählen Sie im ersten Pop-up-Menü der Regeln `Bis` (To) aus, lassen Sie `enthält` (contains) und geben Sie die E-Mail-Adresse, mit der Sie verbunden sind, in das Feld rechts ein.
+    - Wählen Sie unter „Dann“ (Then) im Drop-down-Menü `Weiterleiten an` (Forward to) aus und geben Sie die Ziel-E-Mail-Adresse ein.
+    - Klicken Sie unten auf <code className="action">+ Aktion hinzufügen</code> (Add an action) und wählen Sie `In Empfangsordner verschieben` (Keep in Inbox).
+    - Klicken Sie auf <code className="action">Speichern</code> aus dem Fenster Ihres Filters und auch aus dem Fenster der Einstellungen.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_redirection03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Weitere Informationen zur Verwendung von Zimbra Webmail finden Sie in unserer Anleitung „[Zimbra Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)“.
+
+#### Weiterleitung löschen <a name="redirect-delete"></a>
+
+##### MX Plan über das Kundencenter <a name="redirect-delete-mxplan"></a>
+
+Wählen Sie in Ihrem MX Plan Dienst die betreffende Domain aus.
+
+Wählen Sie unten den Tab für die E-Mail-Technologie, die von Ihrem MX Plan Dienst verwendet wird:
+
+<Tabs>
+  <Tab label="MX Plan Roundcube / MX Plan OWA / Redirect">
+    - Standardmäßig befinden Sie sich im Tab <code className="action">Allgemeine Informationen</code> Ihres MX Plan.
+    - Klicken Sie auf den Tab <code className="action">E-Mails</code> und dann rechts auf den Button <code className="action">Verwaltung der Weiterleitungen</code>.
+    
+       <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/mxplan-legacy-1.png" loading="lazy" />
+    
+    - Klicken Sie auf <code className="action">...</code> rechts neben der betreffenden Weiterleitung und dann auf <code className="action">Weiterleitung löschen</code>.
+    
+       <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/mxplan-redirect-delete01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Zimbra MX Plan">
+    - Standardmäßig befinden Sie sich im Tab <code className="action">Allgemeine Informationen</code> Ihres MX Plan.
+    - Klicken Sie auf den Tab <code className="action">Weiterleitungen</code>.
+    - Klicken Sie auf <code className="action">...</code> rechts neben der betreffenden Weiterleitung und dann auf <code className="action">Weiterleitung löschen</code>.
+    
+       <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/mxplan-redirect-delete02.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+##### Outlook Web App (OWA) <a name="redirect-delete-owa"></a>
+
+Gehen Sie auf das [webmail](https://www.ovhcloud.com/de/mail/). Geben Sie **E-Mail-Adresse** und **Passwort** ein, um sich anzumelden. Folgen Sie den Anweisungen im OWA Webmail-Interface, indem Sie auf die folgenden Tabs klicken:
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Nachdem Sie sich im OWA Webmail-Interface eingeloggt haben, klicken Sie oben rechts auf das Zahnrad-Symbol und dann auf <code className="action">Optionen</code>.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/emails-all-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Gehen Sie im Fenster **Optionen** in der linken Spalte in die Kategorie **Automatische Verarbeitung** im Abschnitt **Post** und klicken Sie dann auf <code className="action">Posteingangs- und Aufbewahrungsregeln</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/owa-redirect-del-01.png" loading="lazy" />
+
+Hier finden Sie ein Fenster, in dem Sie Ihre Weiterleitungen und Filter verwalten können.
+  </Tab>
+  <Tab label="Schritt 3">
+    Klicken Sie im Verwaltungsfenster für die **Posteingangsregeln** auf die Weiterleitung, die Sie löschen möchten. Sie sollte hervorgehoben sein. Klicken Sie dann auf das Papierkorbsymbol.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/owa-redirect-del-02.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+##### Zimbra <a name="redirect-delete-zimbra"></a>
+
+Gehen Sie auf das [webmail](https://www.ovhcloud.com/de/mail/). Geben Sie **E-Mail-Adresse** und **Passwort** ein, um sich anzumelden. Folgen Sie den Anweisungen im Zimbra Webmail-Interface und klicken Sie auf die Tab unten:
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Nachdem Sie sich im Zimbra Webmail-Interface eingeloggt haben, klicken Sie auf den Button &#9881; oben rechts in Ihrem Webmail-Fenster und dann auf <code className="action">Einstellungen</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_settings01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie im Parameterfenster auf den Abschnitt <code className="action">Filter</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_redirect-del-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Klicken Sie auf den Button <code className="action">...</code> rechts neben dem betreffenden Filter und dann auf <code className="action">Löschen</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_redirect-del-02.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Alias erstellen <a name="alias"></a>
+
+Wenn Sie einen Alias für Ihre E-Mail-Adresse erstellen, können Sie Ihren Kontakten eine Maskenadresse übermitteln, ohne dem Absender Ihre persönliche E-Mail-Adresse mitteilen zu müssen.
+
+#### Exchange / E-Mail Pro / MX Plan <a name="alias-exchange-emp-mxplan"></a>
+
+Klicken Sie in Ihrem E-Mail-Dienst (Exchange, E-Mail Pro oder MX Plan) auf den Tab <code className="action">E-Mail-Accounts</code>.
+
+Um einen Alias zu Ihrem E-Mail-Account hinzuzufügen, folgen Sie den Anweisungen, indem Sie unten auf jede Registerkarte klicken:
+
+<Tabs>
+  <Tab label="Schritt 1">
+    In der angezeigten Tabelle finden Sie eine Spalte `Alias`.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/email-alias012.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf den Button <code className="action">...</code> und dann auf <code className="action">Alias konfigurieren</code> (oder <code className="action">Alias verwalten</code>).
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/email-alias02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Klicken Sie auf <code className="action">Alias hinzufügen</code> und geben Sie die Adresse ein, die Sie für Ihren Alias ausgewählt haben, und bestätigen Sie Ihre Auswahl.
+    
+    <img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/email-alias03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### MX Plan Roundcube <a name="alias-mxplan-roundcube"></a>
+
+Um einen Alias für einen MX Plan Roundcube E-Mail-Account zu erstellen, müssen Sie dies auf die gleiche Weise tun wie eine Weiterleitung. Legen Sie einfach eine E-Mail-Adresse fest, die nicht in Ihrem Domainnamen existiert, und verweisen Sie auf eine bestehende Adresse. Folgen Sie dem Kapitel [MX Plan / MX Redirect](#redirect-manager-mxplan) im Abschnitt „Weiterleitung erstellen“ dieser Anleitung.
+
+#### Zimbra <a name="alias-mxplan-roundcube"></a>
+
+Klicken Sie in Ihrem Zimbra Dienst auf den Tab <code className="action">E-Mail-Accounts</code>.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    - Klicken Sie auf den Button <code className="action">⁝</code> rechts neben dem betreffenden E-Mail-Account.
+    - Klicken Sie auf <code className="action">Bearbeiten</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_alias01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Das Fenster zur Konfiguration Ihres E-Mail-Accounts wird angezeigt. Klicken Sie oben auf den Tab <code className="action">Alias</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_alias02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Das folgende Fenster enthält eine Liste der Aliase, die Sie dem betreffenden Account zuordnen können. Klicken Sie auf den Button <code className="action">Alias erstellen</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_alias03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Legen Sie die Adresse Ihres Alias fest und wählen Sie einen der mit Ihrem Zimbra Dienst verbundenen Domainnamen aus.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_alias04.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Alias löschen <a name="alias-delete"></a>
+
+#### Exchange / E-Mail Pro / MX Plan <a name="alias-delete-exchange-emp-mxplan"></a>
+
+Klicken Sie in Ihrem E-Mail-Dienst (Exchange, E-Mail Pro oder MX Plan) auf den Tab <code className="action">E-Mail-Accounts</code>.
+
+Klicken Sie im Tab <code className="action">E-Mail-Accounts</code> auf den Button <code className="action">...</code> rechts neben der betreffenden E-Mail-Adresse. Klicken Sie dann auf <code className="action">Alias konfigurieren</code> (oder <code className="action">Alias verwalten</code>).
+
+Klicken Sie auf den Button <code className="action">...</code> rechts neben dem betreffenden Alias im Alias-Verwaltungsmenü. Klicken Sie abschließend auf <code className="action">Alias löschen</code>
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/email-alias04.png" loading="lazy" />
+
+#### MX Plan Roundcube <a name="alias-delete-mxplan-roundcube"></a>
+
+Um einen Alias eines MX Plan Roundcube E-Mail-Accounts zu löschen, müssen Sie dies auf die gleiche Weise tun wie eine Weiterleitung. Begeben Sie sich also in die Verwaltung der Weiterleitungen Ihres MX Plan Dienstes.
+
+Klicken Sie im Tab <code className="action">E-Mails</code> auf <code className="action">Verwaltung der Weiterleitungen</code> rechts im Fenster.
+
+Klicken Sie auf den Button <code className="action">...</code> rechts neben der betreffenden Weiterleitung und dann auf <code className="action">Weiterleitung löschen</code>.
+
+:::warning
+Weiterleitung oder Alias können nicht geändert werden. Sie müssen sie löschen und dann neu erstellen.
+
+:::
+
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/email-del-legacy-redirect01.png" loading="lazy" />
+
+#### Zimbra <a name="alias-delete-zimbra"></a>
+
+Klicken Sie in Ihrem Zimbra Dienst auf den Tab <code className="action">E-Mail-Accounts</code>.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    - Klicken Sie auf den Button <code className="action">⁝</code> rechts neben dem betreffenden E-Mail-Account.
+    - Klicken Sie auf <code className="action">Bearbeiten</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_alias01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Das Fenster zur Konfiguration Ihres E-Mail-Accounts wird angezeigt. Klicken Sie oben auf den Tab <code className="action">Alias</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_alias02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Das folgende Fenster enthält eine Liste der Aliase, die Sie dem betreffenden Account zuordnen können. Klicken Sie auf den Button <code className="action">Alias erstellen</code>.
+    
+    <img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/zimbra_alias03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Weiterführende Informationen
+
+[Erste Schritte mit MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+[Erste Schritte mit Hosted Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/)
+
+[Erste Schritte mit Private Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-private/)
+
+[Erste Schritte mit der E-Mail Pro Lösung](/guides/web-cloud/email-and-collaborative-solutions/email-pro/first-config/)
+
+[Erste Schritte mit Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+Für spezielle Dienstleistungen (Referenzierung, Entwicklung usw.) wenden Sie sich bitte an die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Verwendung und Konfiguration Ihrer OVHcloud Lösungen benötigen, empfehlen wir Ihnen unsere verschiedenen [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer [User Community](https://community.ovhcloud.com/community/en).

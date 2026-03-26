@@ -1,0 +1,202 @@
+---
+title: Backup e exportação de uma base de dados no servidor de bases de dados
+description: Saiba como fazer o backup e a exportação de uma base de dados no servidor Web Cloud Databases a partir da Área de Cliente OVHcloud ou do phpMyAdmin
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+A sua base de dados pode conter um grande volume de informações essenciais para o seu site. Por isso, é fundamental poder salvaguardá-la ou exportá-la.
+
+**Saiba como salvaguardar e exportar uma base de dados a partir do seu servidor de bases de dados.**
+
+## Requisitos
+
+- Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/)).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Selecione o seu serviço de base de dados
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## Instruções
+
+:::info
+As soluções [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) não dão acesso ao sistema de gestão de bases de dados, mas às bases de dados alojadas nesse sistema.
+
+- Não existe acesso de superutilizador "root".
+- Os comandos SQL genéricos funcionam normalmente e softwares como HeidiSQL, SQuirreL SQL ou Adminer são totalmente compatíveis.
+
+:::
+
+
+### Salvaguardar e exportar uma base de dados a partir da Área de Cliente
+
+:::info
+- São realizados backups automáticos uma vez por dia
+em todas as bases de dados.
+- Os backups automáticos e manuais são conservados durante 30 dias.
+Após este prazo, serão automaticamente eliminados.
+
+:::
+
+
+#### Realizar um backup manual
+
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) e escolha a solução correspondente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    Clique no separador <code className="action">Bases de dados</code>.
+    
+    Na coluna **Backups**, o número corresponde ao número de backups disponíveis para a sua base de dados.
+  </Tab>
+  <Tab label="Etapa 3">
+    Clique no botão <code className="action">...</code> à direita da base de dados e, a seguir, em <code className="action">Fazer backup agora</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Exportar um backup
+
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) e escolha a solução correspondente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    Clique no separador <code className="action">Bases de dados</code>.
+    
+    Na coluna **Backups**, o número corresponde ao número de backups disponíveis para a sua base de dados.
+  </Tab>
+  <Tab label="Etapa 3">
+    Clique no botão <code className="action">...</code> à direita da base de dados e, a seguir, em <code className="action">Exibir os backups</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 4">
+    Surge a lista dos backups disponíveis. Clique no botão <code className="action">...</code> à direita do backup pretendido e, a seguir, em <code className="action">Descarregar o backup</code>.
+  </Tab>
+</Tabs>
+
+
+### Salvaguardar e exportar uma base de dados fora da Área de Cliente
+
+Se a RAM disponível no servidor não permitir realizar a exportação desejada, utilize a ferramenta OVHcloud na Área de Cliente, que utiliza recursos externos à sua solução. Consulte a secção "[Salvaguardar e exportar uma base de dados a partir da Área de Cliente](#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente)" deste guia.
+
+**Clique no método de exportação pretendido para visualizar o conteúdo.**
+
+<details>
+
+<summary>Exportar uma base de dados MySQL ou MariaDB a partir do phpMyAdmin OVHcloud</summary>
+
+
+Para exportar a sua base de dados diretamente a partir do phpMyAdmin, é necessário conectar-se primeiro. Para tal, consulte o guia "[Conexão a uma base de dados](/guides/web-cloud/web-cloud-databases/connecting-to-database-on-database-server/)".
+
+Depois de se conectar ao phpMyAdmin, clique no nome da base de dados que deseja exportar e, a seguir, no separador <code className="action">Exportar</code> no topo.
+
+Existem dois modos de exportação. Se não tem necessidades específicas, recomendamos o modo **rápido** no formato **SQL**.
+
+<img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>Exportar uma base de dados MySQL ou MariaDB a partir da linha de comandos</summary>
+
+
+```bash
+mysqldump --host=servidor --user=utilizador --port=port --password=password nome_da_base > nome_da_base.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>Exportar uma base de dados MySQL ou MariaDB a partir de um script PHP</summary>
+
+
+```php
+1. <?php echo "O backup da sua base de dados está em curso.......";
+2. system("mysqldump --host=servidor --user=utilizador --port=port --password=password nome_da_base > nome_da_base.sql");
+3. echo "Concluído. Pode obter a base de dados por FTP.";
+4. ?>
+```
+
+:::warning
+- Para evitar que terceiros acedam a este ficheiro com dados sensíveis, proteja o acesso utilizando o guia: [Proteger o acesso a um diretório com .htaccess](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+- Esta operação só é possível a partir de um alojamento partilhado OVHcloud.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>Exportar uma base de dados PostgreSQL a partir da linha de comandos</summary>
+
+
+```bash
+pg_dump --host=servidor --port=port --user=utilizador --password=password nome_da_base > nome_da_base.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>Exportar uma base de dados PostgreSQL a partir de um script PHP</summary>
+
+
+```php
+1. <?php echo "O backup da sua base de dados está em curso.......";
+2. system("PGPASSWORD=password pg_dump --host=servidor --port=port --user=utilizador --password=password nome_da_base > nome_da_base.sql");
+3. echo "Concluído. Pode obter a base de dados por FTP.";
+4. ?>
+```
+
+:::warning
+- Para evitar que terceiros acedam a este ficheiro com dados sensíveis, proteja o acesso utilizando o guia: [Proteger o acesso a um diretório com .htaccess](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+- Esta operação só é possível a partir de um alojamento partilhado OVHcloud.
+
+:::
+
+
+</details>
+
+
+## Quer saber mais?
+
+[Salvaguardar e exportar uma base de dados a partir da Área de Cliente](#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

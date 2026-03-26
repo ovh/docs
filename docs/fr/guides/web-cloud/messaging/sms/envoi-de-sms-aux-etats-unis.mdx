@@ -1,0 +1,115 @@
+---
+title: Envoi de SMS aux États-Unis
+description: Découvrez comment respecter les règles spécifiques pour envoyer des SMS aux États-Unis et les appliquer depuis votre espace client OVHcloud
+lastUpdated: 2022-08-05
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+L'envoi de SMS aux États-Unis est soumis à des règles spécifiques. Ce guide vous les explique et vous montre comment les appliquer.
+
+## Prérequis
+
+- Disposer d'un compte SMS OVHcloud avec des crédits SMS.
+- Être connecté aux [API OVHcloud](https://eu.api.ovh.com/) (uniquement pour la méthode d'envoi via API).
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">SMS</code> > Sélectionnez votre compte SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="espace client Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png" loading="lazy" />
+
+## En pratique
+
+### Étape 1 : Connaître les restrictions
+
+En accord avec l'autorité de régulation des SMS des États-Unis (Neustar), l'envoi de SMS vers cette destination doit faire l'objet d'une validation préalable par nos services d'un modèle de message.
+Seuls les messages d’alerte et de double authentification sont autorisés et aucun modèle de SMS publicitaire ne sera accepté. Une fois votre modèle validé, l’envoi se fera de la même manière que pour les autres destinations.
+
+Vous pouvez demander la validation de plusieurs modèles de messages.
+
+:::info
+La validation des modèles de messages est gratuite et effectuée par les équipes de OVHcloud sous un à deux jours ouvrés.
+
+:::
+
+
+### Étape 2 : Ajouter un modèle
+
+#### 2.1 Depuis l'espace client
+
+Cliquez sur l'onglet <code className="action">Message et campagne</code> puis sur <code className="action">Gestion des SMS</code>.
+
+Enfin, cliquez sur <code className="action">Gérer les modèles</code>.
+
+<img className="thumbnail" alt="SMS aux États-Unis" src="/images/web-cloud/messaging/sms/envoi-de-sms-aux-etats-unis/smstousa1.png" loading="lazy" />
+
+Sur la page qui s'affiche alors, cliquez sur <code className="action">Action</code> puis sur <code className="action">Ajouter</code>.
+
+<img className="thumbnail" alt="SMS aux États-Unis" src="/images/web-cloud/messaging/sms/envoi-de-sms-aux-etats-unis/smstousa2.png" loading="lazy" />
+
+Une pop-up apparaît avec les champs à remplir.
+
+<img className="thumbnail" alt="SMS aux États-Unis" src="/images/web-cloud/messaging/sms/envoi-de-sms-aux-etats-unis/smstousa3.png" loading="lazy" />
+
+| Champ       | Description                                                                                                      |
+|-------------|------------------------------------------------------------------------------------------------------------------|
+| Nom         | Nom du template                                                                                                  |
+| Activité    | Sélectionnez le type de modèle :<br/>- Alerte<br/>- Authentification<br/>- Système de traitement transactionnel |
+| Description | Description du modèle                                                                                            |
+| Modèle      | Écrire le modèle comprenant la variable entre #                                                                  |
+
+#### 2.2 Via les API
+
+:::tip[Success]
+Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) ».
+
+:::
+
+
+Connectez-vous sur [api.ovh.com](https://eu.api.ovh.com/) puis utilisez l’API suivante :
+
+<Api version="v1" section="/sms" method="POST" route={"/sms/\{serviceName\}/templatesControl"} />
+
+
+<img className="thumbnail" alt="SMS aux États-Unis" src="/images/web-cloud/messaging/sms/envoi-de-sms-aux-etats-unis/smstousa4.png" loading="lazy" />
+
+Remplissez les champs requis et cliquez sur <code className="action">Execute</code>.
+
+#### Exemples de modèles
+
+Vous trouverez ci-dessous 2 exemples de modèles de messages à destination des États-Unis.
+
+- Exemple de template d'authentification :
+
+```bash
+Your security code is #CODE#, have a good day
+```
+
+- Exemple de template d'alerte :
+
+```bash
+Our monitoring system detected your server #SERVER# doesn't respond to ping requests
+```
+
+### Étape 3 : Analyser les retours
+
+Une fois votre modèle de message créé et validé, l'envoi d'un SMS génère une comparaison automatique de son contenu avec vos modèles. Si la comparaison est positive, le SMS est envoyé de manière identique à un envoi vers une autre destination.
+
+Si vous envoyez un SMS aux États-Unis sans avoir au préalable créé et validé un modèle, le SMS sera refusé et un Premium Tracking Transaction Code (PTT code) à 1999 vous sera adressé. Ce code correspond au message d'erreur « No templates available » (pas de modèle de messages créé).
+
+Vous pouvez consulter les autres codes de retour possibles sur le guide « [Tout savoir sur les utilisateurs SMS](/guides/web-cloud/messaging/sms/tout-savoir-sur-les-utilisateurs-sms/) ».
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

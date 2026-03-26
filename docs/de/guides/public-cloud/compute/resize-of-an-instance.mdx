@@ -1,0 +1,104 @@
+---
+title: Änderung der Größe einer Instanz mit Horizon
+description: Erfahren Sie hier, wie Sie die Größe einer Instanz in Horizon ändern
+lastUpdated: 2025-07-17
+---
+
+:::info
+Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+
+:::
+
+
+## Ziel
+
+Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Zeit dazu kommen, dass die Ressourcen Ihrer Instanz nicht mehr ausreichen. Bei der Public Cloud können Sie in diesem Fall einfach mit einigen Klicks die Ressourcen Ihrer Instanz erhöhen.
+
+**Diese Anleitung erklärt die Vorgehensweise zur Änderung der Größe Ihrer Instanz über den OpenStack Horizon Manager.**
+
+:::warning
+Bei klassischen Modellen ist nur die Umstellung auf ein größeres Modell möglich.
+Beachten Sie weiterhin, dass der Betrieb der Instanz während der Operation unterbrochen wird.
+
+:::
+
+
+:::warning
+Metal-Instanzen können in ihrer Größe nur von und zu anderen Metal-Modellen (*Flavor*) verändert werden.
+
+:::
+
+
+:::tip[Success]
+*Flex*-Instanzen erlauben die Anpassung auf höhere oder niedrigere Modelle aufgrund einer festen Größe einer einzelnen Disk.
+
+:::
+
+
+## Voraussetzungen
+
+- Sie haben eine [Public Cloud Instanz](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf das [Horizon Interface](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/).
+
+## In der praktischen Anwendung
+
+Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.<br/>
+Klicken Sie links im Menü auf <code className="action">Compute</code> und wählen Sie dann <code className="action">Instances</code> aus. Wählen Sie <code className="action">Resize Instance</code> im Drop-down-Menü rechts neben der betreffenden Instanz aus.
+
+<img className="thumbnail" alt="Resize instance" src="/images/public-cloud/compute/resize-of-an-instance/resizeinstance2021.png" loading="lazy" />
+
+### Wahl des Templates (*Flavor Choice*)
+
+Dieser Abschnitt zeigt das aktuelle Template (*old flavor*) an und erlaubt es Ihnen, das neue Template (*new flavor*) für die Instanz auszuwählen.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/flavorchoice.png" loading="lazy" />
+
+#### Ressourcen für das Template (*Flavor Details*)
+
+In diesem Abschnitt werden die Ressourcen angezeigt, die dem gewählten Modell zugeordnet sind. 
+
+#### Limitierungen des Projekts (*Project Limits*)
+
+Hier sehen Sie die belegten Ressourcen im Vergleich zur Gesamtverfügbarkeit.
+
+:::warning
+Bitte beachten Sie, dass Sie nicht von einer Linux-Instanz auf ein Windows-Modell oder umgekehrt wechseln können.
+
+:::
+
+
+### Erweiterte Optionen (*Advanced Options*)
+
+In diesem Bereich können Sie die Partitionierung der Festplatte (*Disk Partition*) und die Servergruppe (*Server Group*) einrichten.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/resize_advanced.png" loading="lazy" />
+
+Wenn die Konfiguration abgeschlossen ist, klicken Sie auf <code className="action">Resize</code>.
+
+### Änderung der Größe einer Disk unter Windows
+
+Achtung, bei einer Größenanpassung einer Windows-Instanz wird die Größe der Partition nicht automatisch geupdatet. Die Partition muss also über die Datenträgerverwaltung (**Disk Management**) angepasst werden.
+
+- Klicken Sie mit der rechten Maustaste auf den Windows <code className="action">Start</code> Button und öffnen Sie die Datenträgerverwaltung, indem Sie auf <code className="action">Disk Management</code> klicken.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2980.png" loading="lazy" />
+
+- Klicken Sie rechts auf die Hauptpartition und klicken Sie dann auf <code className="action">Extend Volume</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2981a.png" loading="lazy" />
+
+- Klicken Sie im `Extend Volume Wizard` auf <code className="action">Next</code>. Wählen Sie dann die Ressourcen der zu erweiternden Disk aus und klicken Sie auf <code className="action">Next</code>. 
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2978a.png" loading="lazy" />
+
+Klicken Sie abschließend auf <code className="action">Finish</code>, um die Änderung zu bestätigen.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/wizard2021.png" loading="lazy" />
+
+- Die neue Partitionsgröße wird nun in der Datenträgerverwaltung angezeigt.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2979.png" loading="lazy" />
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

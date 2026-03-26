@@ -1,0 +1,245 @@
+---
+title: Retrieve an email header and .eml file
+description: Find out how to retrieve an email header or extract a .eml file from your email client, webmail or external application
+lastUpdated: 2026-03-06
+---
+
+
+
+## Objective
+
+An email header traces the path taken by an email across the network, from the sender to the recipient.<br/>
+It can be used to identify a malicious email or detect slow reception.
+
+Every email you receive has a header (*header*) that is not displayed by default when you view your email. You can however retrieve it from your email client or webmail.
+
+You can also extract the entire email as a `.eml` file. This file may be requested to analyse a malicious email you received.<br/>
+To retrieve a `.eml` file, go to the [Webmail](#webmail) section.
+
+**Find out how to retrieve an email header and extract a .eml file from your email client.**
+
+## Requirements
+
+- An email address using one of our [OVHcloud email solutions](https://www.ovhcloud.com/en-gb/emails/), or an external solution.
+- Access to your email address via webmail or an email client.
+
+## Instructions
+
+### Understanding the content of a header
+
+The header is composed of several elements indicating the path of the email, arranged in reverse chronological order, along with additional information.<br/>
+Below is a non-exhaustive list of the elements that can make up a header and their meaning.
+
+- The `Received` field is present in the header each time the email passes through a sending server (SMTP). It usually contains the hostname of the server with its IP address and the date. The `Received` fields are sorted from the most recent pass to the oldest pass on a server:
+<pre className="bgwhite"><code>
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
+	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+</code></pre>
+  *Here the email was transmitted from server MX Plan7.mail.ovh.net to server mo3005.mail-out.ovh.net on 30 June 2021 at 13:12:40 (UTC time zone)*
+
+- The `Return-Path` field corresponds to the return address when the message failed to be sent. The return address is usually the sender's address.
+<pre className="bgwhite"><code>
+Return-Path: &lt;john@mydomain.ovh&gt;
+</code></pre>
+
+- The `From` field indicates the sender's email address and display name.
+<pre className="bgwhite"><code>
+From: John &lt;john@mydomain.ovh&gt;
+</code></pre>
+
+- The `To` field indicates the recipient's email address and display name.
+<pre className="bgwhite"><code>
+To: Robert &lt;robert@hisdomain.ovh&gt;
+</code></pre>
+
+- The `Subject` field indicates the subject of the email.
+<pre className="bgwhite"><code>
+Subject: Hello my friend
+</code></pre>
+
+- The `Message-ID` field indicates the unique identifier of the email and ends with the name of the sending server (after the "@").
+<pre className="bgwhite"><code>
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
+</code></pre>
+
+- The `Received-SPF` field displays the result of the [SPF](/guides/web-cloud/domains/dns-zone-spf/) check performed on the sender's domain name. The `client-ip` argument can be used to find the IP address of the server that sent the email.
+<pre className="bgwhite"><code>
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
+</code></pre>
+
+- The `X-` fields are custom fields that complement the standard fields. They are implemented by the servers through which the emails pass.
+<pre className="bgwhite"><code>
+X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
+X-Ovh-Tracer-Id: 1234567891011121314
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 0
+X-VR-SPAMCAUSE:
+</code></pre>
+
+### Retrieving a header from an email client
+
+#### Microsoft Outlook
+
+##### **Retrieving the header**
+
+There are two versions of Outlook for Windows: **Classic Outlook** and the **New Outlook**. To identify your version, type "Outlook" in the Windows search bar. If the label "(classic)" appears, you are using Classic Outlook. Otherwise, it is the New Outlook.
+
+<img className="thumbnail" alt="Outlook Windows - identify version" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/outlook-windows-identify01.png" loading="lazy" />
+
+**Classic Outlook:**
+
+1. Double-click the email to open it in a separate window.
+2. In the new window, click <code className="action">File</code> in the top left-hand corner.
+3. Select <code className="action">Info</code> on the left, then click <code className="action">Properties</code>.
+4. The full email header appears in the lower box. Select the entire text and copy it to a file.
+
+<img className="thumbnail" alt="Full header displayed in Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/classic-outlook-01.png" loading="lazy" />
+
+**New Outlook:**
+
+1. Open the email of your choice.
+2. **Right-click** on the email.
+3. Select <code className="action">View</code> then <code className="action">View Message Details</code>.
+4. The full email header appears in the message details pane. Select the entire text and copy it to a file.
+
+<img className="thumbnail" alt="Full header displayed in Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/new-outlook-01.png" loading="lazy" />
+
+##### **Retrieving the .eml file**
+
+**Classic Outlook:**
+
+1. Select the email in your inbox (do not open it).
+2. Click <code className="action">File</code> in the menu bar.
+3. Click <code className="action">Save As</code>.
+4. In the "Save as type" dropdown, select **Outlook Message Format - Unicode (.msg)**. Choose a location on your computer (e.g. the Desktop) and click <code className="action">Save</code>.
+
+You can also **drag and drop** the email from your inbox directly onto your Desktop. This creates a `.msg` file that you can attach to your report.
+
+<img className="thumbnail" alt="Save msg in Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/classic-outlook-02.png" loading="lazy" />
+
+**New Outlook:**
+
+1. In the message list, **right-click** the email.
+2. Select <code className="action">Save As</code>, then choose <code className="action">Save as EML file</code>.
+3. Choose a location on your computer and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Save an EML file in New Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/new-outlook-02.png" loading="lazy" />
+
+#### Mozilla Thunderbird
+
+##### **Retrieving the header**
+
+1. Select the email of your choice.
+2. Press `Ctrl` \+ `U` (`Cmd` \+ `U` on macOS) simultaneously.
+3. The full email header appears in a separate window. Select the entire text and copy it to a file.
+
+<img className="thumbnail" alt="Full header displayed in Thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/thunderbird-01.png" loading="lazy" />
+
+##### **Retrieving the .eml file**
+
+1. Select the email of your choice.
+2. Press `Ctrl` \+ `S` (`Cmd` \+ `S` on macOS) simultaneously.
+3. The file is saved in `.eml` format by default.
+
+#### macOS Mail
+
+##### **Retrieving the header**
+
+1. Select the email of your choice.
+2. Press `Cmd` \+ `Shift` \+ `H` simultaneously.
+3. The full email header appears. Select the grey text and copy it to a file.
+
+<img className="thumbnail" alt="Full header displayed in macOS Mail" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/mailmacos-01.png" loading="lazy" />
+
+##### **Retrieving the .eml file**
+
+1. Select the email of your choice.
+2. Press `Cmd` \+ `S` simultaneously. The `.eml` file is created automatically. Select the `Raw Message Source` format.
+3. Choose a location on your computer and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Save an eml from macOS Mail" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/mailmacos-02.png" loading="lazy" />
+
+### Retrieving a header on webmail <a name="webmail"></a>
+
+#### Roundcube
+
+##### **Retrieving the header**
+
+1. Select the email of your choice.
+2. Click the button <code className="action">... More</code> then <code className="action">&lt; > Show source</code>.
+3. A new window opens with the full email header. Select the entire text and copy it to a file.
+
+<img className="thumbnail" alt="Show source in Roundcube" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/roundcube01.png" loading="lazy" />
+
+##### **Retrieving the .eml file**
+
+1. Select the email of your choice.
+2. Click the button <code className="action">... More</code> then <code className="action">Download (.eml)</code>.
+
+<img className="thumbnail" alt="Download eml file in Roundcube" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/roundcube02.png" loading="lazy" />
+
+#### Outlook Web App (OWA) <a name="owa"></a>
+
+##### **Retrieving the header**
+
+1. Select the email whose header you want to view.
+2. Click the **arrow** to the right of <code className="action">Reply All</code> then <code className="action">View Message Details</code>.
+3. A new window opens with the full email header, allowing you to download it.
+
+<img className="thumbnail" alt="Message details in OWA" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/owa01.png" loading="lazy" />
+
+Also see our video tutorial:
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No?start=36" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+##### **Retrieving the .eml file**
+
+1. Click <code className="action">(+) New</code> to create a new email.
+2. Select the email you want to extract and drag it into the content of the new message.
+3. Click the down arrow next to the generated attachment, then click <code className="action">Download</code> to save the file to your computer.
+
+<img className="thumbnail" alt="Extract an eml file from OWA" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/owa02.gif" loading="lazy" />
+
+#### Zimbra
+
+##### **Retrieving the header**
+
+1. Select the email of your choice.
+2. Click <code className="action">More</code> in the action bar and select <code className="action">Show original</code>.
+3. A new window opens with the full header and raw content of the email.
+
+<img className="thumbnail" alt="Message details in Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/zimbra-01.png" loading="lazy" />
+
+##### **Retrieving the .eml file**
+
+1. Select the email of your choice.
+2. Click <code className="action">More</code> in the action bar and select <code className="action">Show original</code>.
+3. In the window that opens, use the shortcut `Ctrl` \+ `S` (or `Cmd` \+ `S` on macOS) to save the page as a `.eml` file.
+
+### Retrieving a header from another email client
+
+#### Gmail
+
+##### **Retrieving the header**
+
+1. Select the email concerned.
+2. Click the 3 vertical dots on the right and click <code className="action">Show original</code>.
+3. A new window opens with the full email header.
+
+<img className="thumbnail" alt="Show message source in Gmail" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/gmail01.png" loading="lazy" />
+
+##### **Retrieving the .eml file**
+
+1. Select the email concerned.
+2. Click the 3 vertical dots on the right and select <code className="action">Download message</code>.
+
+#### Outlook.com
+
+To retrieve the header or extract the `.eml` file from the &#60;Outlook.com&#62; webmail interface, see the [Outlook Web App](#owa) section of this guide.
+
+## Go further
+
+[Email FAQ](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

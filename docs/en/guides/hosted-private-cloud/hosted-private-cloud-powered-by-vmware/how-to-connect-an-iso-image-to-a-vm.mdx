@@ -1,0 +1,75 @@
+---
+title: How to connect an ISO image to a VM
+description: How do you connect an ISO image to a virtual machine?
+lastUpdated: 2024-11-05
+---
+
+:::tip[Success]
+You can refer to the guide [Upload an ISO to a datastore](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-datastore-upload/) for more information on uploading elements (ISO, files, etc.) to your VMware on OVHcloud environment.
+
+:::
+
+
+## Objective
+
+You can set up an ISO library in your infrastructure to be used for OS and software deployment.
+
+**This guide will run you through the process of connecting an ISO image to a VM.**
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+
+## Instructions
+
+### Library Creation
+
+In the vSphere interface menu, go to the <code className="action">Storage</code> section.<br/>
+Choose the Datastore you will be building the library in (prefer Shared Storage over Local to avoid file access issues).<br/>
+In the <code className="action">Files</code> tab, Click on <code className="action">New Folder</code>.
+
+<img className="thumbnail" alt="FOLDER" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/en01newfolder.png" loading="lazy" />
+
+After naming your folder (ISOs in our study case), select it and click <code className="action">Upload Files</code>.
+
+<img className="thumbnail" alt="UPLOAD" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/en02upload.png" loading="lazy" />
+
+Browse to the ISO file(s) you wish to upload and click <code className="action">Open</code>.
+
+<img className="thumbnail" alt="BROWSE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/en03browse.png" loading="lazy" />
+
+Your library is set. You can add more ISO images as you need and as storage space allows.
+
+<img className="thumbnail" alt="LIBRARY" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/en04library.png" loading="lazy" />
+
+### Connect Image to VM
+
+In the vSphere interface menu, go to the <code className="action">Hosts & Clusters</code> section.<br/>
+Right click the VM you need the ISO image attached to and click on <code className="action">Edit Settings</code>.<br/>
+
+<img className="thumbnail" alt="EDIT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/en05edit.png" loading="lazy" />
+
+Change the CD/DVD drive setting to Datastore ISO File.
+
+<img className="thumbnail" alt="ISO" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/en06dataiso.png" loading="lazy" />
+
+In the browsing window that pops up, navigate to the library previously created and select the image you wish to use.
+
+Click on <code className="action">OK</code>.
+
+<img className="thumbnail" alt="SELECT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/en07choose.png" loading="lazy" />
+
+Back in the "Edit Settings" menu, make sure the "Connect" box is checked and click <code className="action">OK</code>.
+
+<img className="thumbnail" alt="CONNECT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/en08connect.png" loading="lazy" />
+
+The ISO image is now connected to your VM and can be accessed as if it were an attached physical media.
+
+## Go further
+
+To go further with uploads within your Hosted Private Cloud - VMware on OVHcloud environment, please refer to the guide [Uploading an ISO into a datastore](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-datastore-upload/).
+
+You can use your vCenter on OVHcloud secure HTML web client, as well as `govc` (see the procedure in the guide).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

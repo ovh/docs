@@ -1,0 +1,140 @@
+---
+title: Aumentare le quote Public Cloud
+description: Come aumentare la quota Public Cloud
+lastUpdated: 2026-02-04
+---
+
+## Obiettivo
+
+Per default, il numero di risorse (RAM, CPU, spazio disco, numero di istanze, ecc.) e di progetti che puoi creare è limitato per motivi di sicurezza.
+
+Per creare di più, è necessario aumentare la quota disponibile.
+
+**Questa guida ti mostra come richiedere e aumentare la quota Public Cloud dallo Spazio Cliente OVHcloud.**
+
+## Prerequisiti
+
+- [Disporre di una modalità di pagamento valida](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/) nello Spazio Cliente OVHcloud.
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Percorso di navigazione:** <code className="action">Public Cloud</code> > Seleziona il tuo project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedura
+
+### Aumentare la quota di risorse 
+
+In base a criteri interni (anzianità, esistenza di fatture pagate, ecc.), ora siete autonomi nelle richieste di aumento delle quote relative ai vostri progetti Public Cloud.
+
+È possibile aumentare la quota delle risorse manualmente o automaticamente.
+
+#### Aumentare automaticamente la tua quota di risorse tramite l'opzione "Quota autoscaling"
+
+Questa opzione ti permette di richiedere un aumento automatico e progressivo della tua quota di risorse. La quota verrà regolata in base al tuo utilizzo effettivo **se superi il 60% della tua quota corrente per 30 giorni consecutivi**, nonché in base a un insieme di criteri interni e finanziari.
+
+:::info
+**Nota**: Questo processo non è adatto per aumenti rapidi della quota.
+
+:::
+
+
+Nel menu a sinistra, fai clic su <code className="action">Quota e Region</code> sotto **Impostazioni**.
+
+In alto a destra della pagina visualizzata, troverai l'opzione **Quota autoscaling**:
+
+- Per saperne di più su questa funzionalità, fai clic sul <code className="action">?</code> accanto a questa opzione.
+- Attiva l'opzione cliccando sul pulsante a destra di questa. Il suo stato passerà da *Disattivato* a *Attivato*.
+
+<img className="thumbnail" alt="auto scaling" src="/images/public-cloud/public-cloud-cross-functional/increasing-public-cloud-quota/autoscaling.png" loading="lazy" />
+
+Una volta attivato, l'auto-scaling aumenterà progressivamente la quota del tuo progetto in base ai tuoi reali bisogni.
+
+#### Aumentare la tua quota di risorse manualmente
+
+:::info
+Se hai bisogno di aumentare la tua quota e il pulsante <code className="action">Aumenta la quota disponibili</code> non è disponibile nel tuo Spazio Cliente, clicca sul pulsante <code className="action">Contatta il supporto</code>.
+
+:::
+
+
+<img className="thumbnail" alt="Contact Support" src="/images/public-cloud/public-cloud-cross-functional/increasing-public-cloud-quota/contact_support_quota.png" loading="lazy" />
+
+Questa procedura consente un aumento rapido e significativo delle vostre quote (ad esempio: scalabilità rapida, istanze GPU, ecc.). Questo metodo si basa sull'acquisto immediato di un credito, dal quale tutte le tue spese cloud saranno automaticamente dedotte.
+
+È possibile acquistare diversi crediti.
+
+Nel menu a sinistra, fai clic su <code className="action">Quota e Region</code> sotto **Impostazioni**.
+
+<img className="thumbnail" alt="access quota" src="/images/public-cloud/public-cloud-cross-functional/increasing-public-cloud-quota/raisepciquota1.png" loading="lazy" />
+
+Questa pagina presenta un riepilogo delle quote attuali del tuo progetto per regione. Un avviso appare non appena una risorsa raggiunge l'80% della sua quota.
+
+Per richiedere un aumento della quota, clicca su <code className="action">Aumenta la quota disponibile</code>.
+
+<img className="thumbnail" alt="raise-pci-quota" src="/images/public-cloud/public-cloud-cross-functional/increasing-public-cloud-quota/raisepciquota2.png" loading="lazy" />
+
+In seguito, clicca sulla freccia a discesa accanto a "Seleziona il volume" per visualizzare l'elenco delle quote attualmente disponibili risorse. In questa sezione viene inoltre indicato l'importo da pagare per poter beneficiare di tali risorse.
+
+<img className="thumbnail" alt="select quota" src="/images/public-cloud/public-cloud-cross-functional/increasing-public-cloud-quota/selectquotas.png" loading="lazy" />
+
+La tabella seguente riporta le risorse ottenute per ciascuna quota:
+
+|Quota|Instanze|CPU/Cores|RAM (GB)|Dimensione del volume (TB)|Volumi|Backups|Dimensione di backup (TB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|---|---|---|---|---|---|---|---|---|---|---|
+|20 VMs|20|40|430|20|200|1200|120|30|10|4|
+|50 VMs|50|64|507|20|500|3000|300|75|25|10|
+|100 VMs|100|128|1015|40|1000|6000|600|300|50|10|
+|200 VMs|200|512|4063|80|2000|12000|1200|600|50|50|
+
+Una volta selezionato il tuo volume, fai clic su <code className="action">Conferma</code>. Il pagamento verrà processato nel più breve tempo possibile.
+
+:::warning
+**Qualsiasi aumento manuale della quota verrà fatturato immediatamente.**
+
+Dopo aver cliccato sul pulsante <code className="action">Conferma</code>, l'ordine viene automaticamente creato e l'importo viene addebitato sul tuo metodo di pagamento predefinito.
+
+:::
+
+
+È possibile ottenere una visione più dettagliata delle risorse nell'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/). Una volta effettuato l'accesso, fare clic su <code className="action">Project</code> e poi su <code className="action">Overview</code>.
+
+### Aumentare la quota dei progetti Public Cloud
+
+Esistono due situazioni principali in cui potresti aver bisogno di un aggiustamento della quota:
+
+1. **Numero massimo di progetti raggiunto**: Se hai raggiunto il numero massimo di progetti Public Cloud autorizzati nel tuo spazio client e desideri crearne di nuovi, devi inviare una richiesta al nostro team di supporto.
+
+2. **Altri tipi di richieste di quote**: Per qualsiasi altra limitazione (CPU, RAM, storage, ecc.) o bisogno specifico riguardo ai tuoi progetti Public Cloud, puoi contattare il supporto per richiedere un aumento.
+
+:::info
+**Nota**: Le richieste di quota vengono elaborate manualmente dal nostro team. Il tempo di elaborazione può variare in base alla complessità della richiesta. Ti consigliamo di inviare la tua richiesta il prima possibile per evitare qualsiasi blocco nei tuoi progetti.
+
+:::
+
+
+Per accelerare l'elaborazione, ti preghiamo di specificare nella tua richiesta:
+
+- il tipo di quota da aumentare (numero di progetti, risorse, ecc.);
+- l'uso previsto e la motivazione del bisogno;
+- il periodo o la durata desiderata per l'aumento.
+
+### Quote specifiche e risorse particolari
+
+Per alcune risorse o servizi potrebbero essere applicate quote specifiche. Per ulteriori informazioni:
+
+**Quota S3**<sup>1</sup>: Consulta la documentazione ufficiale "[Object Storage - Limiti tecnici (EN)](/guides/storage-and-backup/object-storage/s3-limitations/)".
+
+**Quota Kubernetes gestito (MKS)**: Consulta la documentazione ufficiale "[ETCD Quotas, usage, troubleshooting and error](/guides/public-cloud/containers-orchestration/managed-kubernetes/etcd-quota-error/)".
+
+## Per saperne di più
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

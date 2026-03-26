@@ -1,0 +1,170 @@
+---
+title: How to connect an OVHcloud domain name to a Google Site
+description: "Prepare and configure your OVHcloud domain name's DNS zone to connect to a Google Site"
+lastUpdated: 2026-03-18
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+You are the holder of a domain name with OVHcloud and want to connect it to a Google Site. This guide explains how to prepare and configure your OVHcloud DNS zone for your Google Site.
+
+**Find out how to connect your OVHcloud domain name to a Google Site.**
+
+:::warning
+- Google Site support does not have access to your OVHcloud domain name settings and therefore cannot advise you on the information you will need to provide.
+- OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore up to you to ensure that they function correctly.<br/><br/> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or the service's publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#go-further) section of this guide.
+
+:::
+
+
+## Requirements
+
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/) registered with OVHcloud.
+- The [necessary permissions to manage](/guides/account-and-service-management/account-information/managing-contacts/) the domain name.
+- A Google Site and be its owner.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">DNS zones</code> > Select your domain name
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## Instructions
+
+Before following the steps in this guide, we recommend reading our guide on [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/).
+
+:::warning
+Your DNS zone is potentially already preconfigured or linked to a hosting plan. We will look at how to identify each DNS record required to connect to your Google Site. Some records will need to be deleted to avoid conflicts with DNS records required in this configuration. Others will simply need to be modified or created. For a better understanding, we will use the domain name "**mydomain.ovh**" as an example. Replace it with your domain name during configuration.
+
+:::
+
+
+### 1. Configure your Google Site
+
+:::warning
+Only the owner of a Google Site can connect it to a domain name. If necessary, find out how to [change the owner of the Google site](https://support.google.com/sites/answer/97934).
+
+:::
+
+
+First, prepare your Google Site by following the instructions in the **Configure a custom domain** section from [**this page of Google support**](https://support.google.com/sites/answer/9068867?hl=en#zippy=).
+
+### 2. Configure your DNS records on your OVHcloud account
+
+Click the tabs below to view each of the **5** steps in sequence.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone) page, then choose the domain name concerned.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+
+The table that appears lists all of the DNS records for the selected domain name.
+  </Tab>
+  <Tab label="Step 2">
+    **Configuring the A records**
+    
+    **1 - Identification:** Filter the DNS records by selecting type `A` in the filter menu at the top right of the table.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png" loading="lazy" />
+
+Identify any existing "A" records for your domain name alone (e.g. `mydomain.ovh.`) and for the "www" subdomain (e.g. `www.mydomain.ovh.`).
+    
+    **2 - Deletion:** Delete all existing "A" records for the "www" subdomain. If more than 4 "A" records exist for the domain name alone, delete the excess records to keep only 4. For each record to delete, click the <code className="action">...</code> button to the right of the corresponding row, then click <code className="action">Delete record</code>.
+    
+    **3 - Modification:** Modify each remaining "A" record for the domain name alone by clicking the <code className="action">...</code> button, then clicking <code className="action">Modify record</code>. Replace the target with one of the 4 Google Site IPv4 addresses (a different address per record):
+    
+    - `216.239.32.21`
+    - `216.239.34.21`
+    - `216.239.36.21`
+    - `216.239.38.21`
+    
+    Click <code className="action">Next</code> and confirm.
+    
+    **4 - Addition:** If fewer than 4 "A" records existed, create the missing records. Click <code className="action">Add an entry</code> at the top right, select the <code className="action">A</code> pointer record, leave the **Subdomain** field blank and enter in the **Target** field each IPv4 address not yet assigned. Click <code className="action">Next</code> and confirm.
+    
+    As the values of these IP addresses may change, check the official documentation for [the value of A records](https://support.google.com/a/answer/2579934?hl=en&ref_topic=2721296&sjid=10373374977980680534-EU).
+    
+    Then proceed to step 3.
+  </Tab>
+  <Tab label="Step 3">
+    **Deleting AAAA records**
+    
+    **1 - Identification:** Filter the DNS records by selecting type `AAAA` in the filter menu at the top right of the table.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png" loading="lazy" />
+
+Identify any existing "AAAA" records for your domain name alone (e.g. `mydomain.ovh.`) and for the "www" subdomain (e.g. `www.mydomain.ovh.`).
+    
+    **2 - Deletion:** Delete all "AAAA" records identified (domain name alone and "www" subdomain) to avoid conflicts with the new DNS records. For each record, click the <code className="action">...</code> button to the right of the corresponding row, then click <code className="action">Delete record</code>.
+    
+    If no "AAAA" records exist, proceed to step 4.
+  </Tab>
+  <Tab label="Step 4">
+    **Configuring the TXT record**
+    
+    **1 - Identification:** Filter the DNS records by selecting type `TXT` in the filter menu at the top right of the table.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png" loading="lazy" />
+
+Identify any existing "TXT" records for your domain name alone (e.g. `mydomain.ovh.`) and for the "www" subdomain (e.g. `www.mydomain.ovh.`).
+    
+    **2 - Deletion:** Delete all "TXT" records identified (domain name alone and "www" subdomain) to avoid conflicts with the new DNS records. For each record, click the <code className="action">...</code> button to the right of the corresponding row, then click <code className="action">Delete record</code>.
+    
+    **3 - Addition:** Create a TXT verification record. Click <code className="action">Add an entry</code> at the top right, select the <code className="action">TXT</code> pointer record. Fill in the **Subdomain** and **Target** fields with the information from the "[TXT record values](https://support.google.com/a/answer/2716802?hl=en&ref_topic=2716886&sjid=3052810298579211755-EU)" page of the official documentation. Typically, the **Subdomain** field is blank and the **Target** field is of type `google-site-verification=XXXXXXXXXXXX`. Click <code className="action">Next</code> and confirm.
+    
+    Then proceed to step 5.
+  </Tab>
+  <Tab label="Step 5">
+    **Configuring the CNAME record**
+    
+    **1 - Identification:** Filter the DNS records by selecting type `CNAME` in the filter menu at the top right of the table.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png" loading="lazy" />
+
+Identify any existing "CNAME" records for the "www" subdomain (e.g. `www.mydomain.ovh.`).
+    
+    **2 - Deletion:** If multiple "CNAME" records exist for the "www" subdomain, delete all but one. For each record to delete, click the <code className="action">...</code> button to the right of the corresponding row, then click <code className="action">Delete record</code>.
+    
+    **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the <code className="action">...</code> button, then click <code className="action">Modify record</code>. Replace only the **Target** with `ghs.googlehosted.com.`. Click <code className="action">Next</code> and confirm.
+    
+    If no "CNAME" record exists for the "www" subdomain, click <code className="action">Add an entry</code> at the top right, select the <code className="action">CNAME</code> pointer record, enter `www` in the **Subdomain** field and `ghs.googlehosted.com.` in the **Target** field. Click <code className="action">Next</code> and confirm.
+    
+    As these values may change, check them on the "[CNAME record values](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=en)" page of the official documentation.
+  </Tab>
+</Tabs>
+
+
+The DNS zone is now configured to point to your Google Site.
+
+:::info
+It may take up to 48 hours to verify your domain name.
+
+:::
+
+
+If you are using an OVHcloud email solution, or planning to subscribe to one of [our email solutions](https://www.ovhcloud.com/en-gb/emails/), you will also need to prepare your DNS zone accordingly. Read our guide on [configuring an MX record](/guides/web-cloud/domains/dns-zone-mx/).
+
+## Go further <a name="go-further"></a>
+
+[Modifying an OVHcloud domain name's DNS servers](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Creating an OVHcloud DNS zone for a domain name](/guides/web-cloud/domains/dns-zone-create/)
+
+[Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)
+
+To delegate the management of your domain name to another OVHcloud customer account, follow the guide on [Managing contacts for OVHcloud services](/guides/account-and-service-management/account-information/managing-contacts/).
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

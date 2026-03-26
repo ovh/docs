@@ -1,0 +1,329 @@
+---
+title: How to get started with a Kimsufi, So You Start or Rise dedicated server
+description: Find out how to manage a Kimsufi, So You Start or Rise in the OVHcloud Control Panel and how to start with configuring and securing a server
+lastUpdated: 2025-04-29
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+A dedicated server is a physical server ("bare metal") located in one of our data centres. Unlike Web Hosting plans (also referred to as "shared hosting"), which are technically managed by OVHcloud, you are fully responsible for the administration of your dedicated server.
+
+**This guide provides all the information required for your first steps with a Kimsufi, So You Start or Rise dedicated server.**
+
+## Requirements
+
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
+- Administrative access via SSH or remote desktop (Windows) to your server
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Navigation path:** <code className="action">Bare Metal Cloud</code> > <code className="action">Dedicated servers</code> > Select your server
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+## Instructions
+
+### Content overview
+
+- [Installing or reinstalling an operating system](#install)
+- [Logging on to your server](#connect)
+- [Restarting your dedicated server](#reboot)
+- [Securing your dedicated server](#secure)
+- [OVHcloud Monitoring](#monitoring-server)
+- [Network configuration](#network)
+- [Rescue mode](#rescue)
+- [Access using IPMI](#console)
+- [Backup storage](#backup)
+
+<a name="install"></a>
+
+### Installing or reinstalling an operating system
+
+:::tip[Success]
+Find more information about server operating systems on [our web page](https://www.ovhcloud.com/en-gb/bare-metal/os/).
+
+:::
+
+
+You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). From the <code className="action">General information</code> tab, click on <code className="action">...</code> next to the operating system and then click <code className="action">Install</code>.
+
+<img className="thumbnail" alt="Reinstall button" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-01.png" loading="lazy" />
+
+:::info
+Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en-gb/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+:::
+
+You can manage all your licences in the <code className="action">Bare Metal Cloud</code> section under <code className="action">Licences</code>. In this section, you can also order licences or add existing ones via the <code className="action">Actions</code> button.
+>
+
+Click <code className="action">Next</code> to continue. Then select the operating system from the drop-down menus.
+
+<img className="thumbnail" alt="Operating selection" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-03.png" loading="lazy" />
+
+If you need to modify the partioning scheme of your operating system, check the box "Customise the partition configuration" before clicking on <code className="action">Next</code>.
+
+<img className="thumbnail" alt="partitioning configuration" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-04.png" loading="lazy" />
+
+In this step you are able to set up RAID and partitioning options within the limits of the server's hardware and operating system.
+
+After you have finished your adjustments, click <code className="action">Next</code> to arrive at the summary page.
+
+You will find additional options that are specific to the chosen operating system.
+
+<img className="thumbnail" alt="server options" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-05.png" loading="lazy" />
+
+If you have selected a compatible operating system, you can provide a **public key** to be installed automatically. You have two options:
+
+- Manually copy the key string and paste it into the field `Your Public SSH key`.
+- [If you have previously stored](/guides/bare-metal-cloud/dedicated-servers/import-keys-control-panel/) a public key in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select the desired key from the drop-down menu `SSH key to pre-install`.
+
+<img className="thumbnail" alt="add key" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/sshkeyds.png" loading="lazy" />
+
+To find out more about this topic, consult our guides:
+
+- [How to create and use keys for SSH authentication](/guides/bare-metal-cloud/dedicated-servers/creating-ssh-keys-dedicated/)
+- [How to create and use keys for SSH authentication with PuTTY](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/)
+
+Finally, click <code className="action">Confirm</code> to trigger the operating system installation on your dedicated server.
+
+<a name="connect"></a>
+
+### Logging on to your server
+
+:::warning
+OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+
+This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+
+:::
+
+
+#### Linux
+
+If you have installed an OVHcloud OS template on your server, a user with elevated permissions is created automatically. This user will be named according to the operating system, for example "ubuntu" or "rocky".
+
+You will then receive an email containing the information needed to establish a first connection with SSH. SSH is a secure communication protocol, used to establish encrypted connections to a remote host. You can find more detailed information in our guide: [Getting started with SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/).
+
+Most current desktop operating systems will have an **OpenSSH** client natively installed. This means that your access credentials allow you to quickly establish a connection to your server in the appropriate command line application (`Terminal`, `Command prompt`, `Powershell`, etc.). Enter the following command:
+
+```bash
+ssh username@IPv4
+```
+
+**Example:**
+
+```bash
+ssh ubuntu@203.0.113.1
+```
+
+You can use any third-party application compatible with **OpenSSH** as well.
+
+Once connected, you can replace the predefined password for the current user with a better passphrase by using this command:
+
+```bash
+passwd
+```
+
+On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs**.
+
+Type your current password and press <code className="action">Enter</code>. Enter the new passphrase and type it again at the next prompt to confirm it.
+
+```console
+Changing password for ubuntu.
+Current password:
+New password: 
+Retype new password: 
+passwd: password updated successfully
+```
+
+:::warning
+**Activating the root user account**
+
+It is not necessary to use the "root" user account to get started with administrating your server. This account has to be enabled first in the server OS in order to use it. Moreover, SSH connections with the user "root" are **disabled** by default as a security measure.
+
+:::
+
+Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure user accounts and root access on a server](/guides/bare-metal-cloud/dedicated-servers/changing-root-password-linux-ds/). 
+>
+
+Depending on your requirements for security, mobility and convenience, SSH keys can serve as an additional connection method or replace logins with username and password. Find out how to use them in our guides: 
+
+- [How to create and use keys for SSH authentication](/guides/bare-metal-cloud/dedicated-servers/creating-ssh-keys-dedicated/)
+- [How to create and use keys for SSH authentication with PuTTY](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/)
+
+#### Windows
+
+Once the installation is completed, you will receive an email with your Windows login credentials. You can then connect to your server via RDP (**R**emote **D**esktop **P**rotocol). On your local Windows device, open the `Remote Desktop Connection` client application.
+
+<img className="thumbnail" alt="Windows remote" src="/images/assets/screens/other/windows/windows-rdp.png" loading="lazy" />
+
+Enter the IPv4 address of your server, then your username and passphrase. Usually a warning message will appear, asking to confirm the connection because of an unknown certificate. Click on <code className="action">Yes</code> to log in.
+
+You can use also use any third-party application compatible with RDP. This is a requirement if your local device does not have Windows installed.
+
+:::info
+:::
+
+If you experience any issues with this procedure, verify that remote (RDP) connections are allowed on your local device by checking your system settings, firewall rules and possible network restrictions. 
+> 
+
+As a fallback option, you can use the [IPMI console in your OVHcloud Control Panel](#console) to connect.
+
+##### Enabling Windows boot logs (optional)
+
+Windows boot logs can be helpful for server error diagnostics.
+
+To activate them, follow the steps below by navigating through the tabs:
+
+<Tabs>
+  <Tab label="1. **Connect to the server**">
+    Connect to your server via RDP or [IPMI](#console).<br/>
+  </Tab>
+  <Tab label="2. **Open the &quot;Run&quot; utility**">
+    Open the Windows start menu and click on <code className="action">Run</code>.<br/><br/>
+    <img className="thumbnail" alt="IPMI" src="/images/assets/screens/other/windows/windows-start-run.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="3. **Open &quot;msconfig&quot;**">
+    Enter "msconfig" and click on <code className="action">OK</code>.<br/><br/>
+    <img className="thumbnail" alt="IPMI" src="/images/assets/screens/other/windows/windows-msconfig.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="4. **Activate logs**">
+    In the new window, activate the logs option next to `Boot log`. Click on <code className="action">OK</code>.<br/><br/>
+    <img className="thumbnail" alt="IPMI" src="/images/assets/screens/other/windows/windows-log.png" loading="lazy" /><br/>
+  </Tab>
+</Tabs>
+
+
+The next time your server boots, logs will be saved into a `.txt` file. The file path is: `C:\Windows\ntbtlog.txt`.
+
+To access the log file in rescue mode, please follow the instructions in the [rescue mode guide](/guides/bare-metal-cloud/dedicated-servers/rescue-mode/).
+
+
+<a name="reboot"></a>
+
+### Restarting your dedicated server
+
+A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
+
+```bash
+reboot
+```
+
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). From the <code className="action">General information</code> tab, click on <code className="action">...</code> next to "Status" in the **Service status** box, then click <code className="action">Restart</code> and <code className="action">Confirm</code> the action in the popup window.
+
+<img className="thumbnail" alt="Rebooting" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png" loading="lazy" />
+
+<a name="secure"></a>
+
+### Securing your dedicated server
+
+As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](/guides/bare-metal-cloud/dedicated-servers/securing-a-dedicated-server/).
+
+If your server runs Windows, use [this guide](/guides/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/) instead.
+
+<a name="monitoring-server"></a>
+
+### OVHcloud Monitoring
+
+You can set the monitoring status for a dedicated server from the <code className="action">General information</code> tab in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (section **Service status**).
+
+<img className="thumbnail" alt="Monitoring" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png" loading="lazy" />
+
+Click on the button <code className="action">Configure</code>. In the popup window, you have three options for the monitoring behaviour:
+
+- **Disabled**: This option stops alert messages and interventions by OVHcloud. Choose this if you are executing pertinent administrative actions on the server which prevent an ICMP response.
+- **Enabled with proactive intervention**: If the server stops responding, an alert email is sent to you and the server will be checked by a technician.
+- **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, you will need to create a support request.
+
+<img className="thumbnail" alt="Monitoring" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png" loading="lazy" />
+
+Click on <code className="action">Confirm</code> to update your monitoring configuration.
+
+You can find more information about OVHcloud Monitoring in [this guide](/guides/bare-metal-cloud/dedicated-servers/network-ip-monitoring/).
+
+<a name="network"></a>
+
+### Network configuration
+
+#### Network bridging
+
+Network bridging is the action taken by network equipment to create an aggregate network from either two or more communication networks, or two or more network segments. Bridging is distinct from routing, which allows the networks to communicate independently while remaining separate.
+
+The Network Bridge configuration is most commonly used in the context of virtualisation, to allow each Virtual Machine to have its own public IP address.
+
+For more information on network bridging, please refer to our guide: [Network Bridging](/guides/bare-metal-cloud/dedicated-servers/network-bridging/).
+
+#### IP aliasing
+
+IP aliasing is the process of associating two or more IP addresses to the same network interface. This allows your server to establish multiple connections to a network, each serving a different purpose.
+
+For detailed instructions on how to configure IP aliasing, please refer to [this guide](/guides/bare-metal-cloud/dedicated-servers/network-ipaliasing/).
+
+#### IPv6 configuration
+
+:::info
+Please note that servers of the **Kimsufi** range only have one IPv4 address and one IPv6 address. Both will be configured automatically when installing the OS.
+
+:::
+
+
+OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](/guides/bare-metal-cloud/dedicated-servers/network-ipv6/).
+
+<a name="rescue"></a>
+
+### Rescue mode
+
+For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
+
+Please refer to the [rescue mode guide](/guides/bare-metal-cloud/dedicated-servers/rescue-mode/).
+
+<a name="console"></a>
+
+### Access using IPMI
+
+:::info
+Please note that this option is not available for the **Kimsufi** range.
+
+:::
+
+
+OVHcloud deploys all dedicated servers with an IPMI (Intelligent Platform Management Interface) console which runs in your browser or from a Java applet, and enables you to connect directly to your server even if it has no network connection. This makes it a useful tool for troubleshooting issues that may have taken your server offline.
+
+For more information, please refer to our guide: [Using the IPMI with dedicated servers](/guides/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/).
+
+<a name="backup"></a>
+
+### Backup storage
+
+:::info
+Please note that this option is not available for the **Kimsufi** range.
+
+:::
+
+
+OVHcloud dedicated servers have an access-controlled storage space as a gratuitous service option. It is best used as a complementary backup option in case the server itself suffers data loss.
+
+To activate and use the backup storage, please refer to [this guide](/guides/bare-metal-cloud/dedicated-servers/services-backup-storage/).
+
+## Go further
+
+[How to configure user accounts and root access on a server](/guides/bare-metal-cloud/dedicated-servers/changing-root-password-linux-ds/)
+
+[Securing a dedicated server](/guides/bare-metal-cloud/dedicated-servers/securing-a-dedicated-server/)
+
+[Activating and using rescue mode](/guides/bare-metal-cloud/dedicated-servers/rescue-mode/)
+
+[OVHcloud API & OS installation](/guides/bare-metal-cloud/dedicated-servers/api-os-installation/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,231 @@
+---
+title: Pierwsze kroki z API OVHcloud
+description: Dowiedz się, jak korzystać z API OVHcloud
+lastUpdated: 2025-05-13
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+import Api from '@components/Api';
+
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+API dostępne na stronie [https://api.ovh.com/](https://eu.api.ovh.com/) pozwalają na zakup, zarządzanie i konfigurowanie produktów OVHcloud bez konieczności korzystania z interfejsu graficznego, takiego jak Panel klienta.
+
+**Dowiedz się, jak korzystać z API OVHcloud oraz jak je łączyć z Twoimi aplikacjami**
+
+## Wymagania początkowe
+
+- Posiadanie aktywnego konta OVHcloud i znanie jego identyfikatorów
+- Bycie na stronie WWW [API OVHcloud](https://eu.api.ovh.com/).
+
+## W praktyce
+
+:::warning
+OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+
+Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „[Sprawdź również](#gofurther)”.
+
+:::
+
+
+### Proste użytkowanie
+
+#### Logowanie do API OVHcloud
+
+Na stronie [API OVHcloud](https://eu.api.ovh.com/) kliknij <code className="action">Explore the OVH API</code>, aby wyświetlić listę API. 
+
+Aby korzystać z API na produktach, należy zalogować się na tej stronie za pomocą identyfikatora OVHcloud.
+
+- W lewym górnym rogu kliknij przycisk <code className="action">Authentication</code>.
+- Następnie kliknij <code className="action">Login with OVHcloud SSO</code>.
+- Wpisz dane dostępowe OVHcloud.
+- Kliknij przycisk <code className="action">Authorize</code>, aby zezwolić na wywołania API z tej strony.
+
+<img className="thumbnail" alt="API" src="/images/manage-and-operate/api/first-steps/login.png" loading="lazy" /> 
+
+:::info
+Jeśli Twoje konto OVHcloud jest chronione [weryfikacją dwuetapową](/guides/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/), wpisz również kod wygenerowany w wiadomości SMS lub aplikacji OTP lub klucz U2F.
+
+:::
+
+
+#### Sprawdź produkty dostępne na API
+
+W menu po lewej stronie znajduje się lista produktów OVHcloud, którymi można zarządzać za pomocą API.
+
+<img className="thumbnail" alt="API" src="/images/manage-and-operate/api/first-steps/api-list.png" loading="lazy" />
+
+Aby wyświetlić na przykład API powiązane z domenami, kliknij na **/domain** na liście.
+
+Po kliknięciu na produkt lista API tego produktu wyświetla się poniżej. 
+
+<img className="thumbnail" alt="API" src="/images/manage-and-operate/api/first-steps/api-displayed.png" loading="lazy" />
+
+Możesz również skorzystać z przycisku znajdującego się po lewej stronie listy produktów, aby wybrać gałąź **/v1** i **/v2** API. Jeśli nie znasz zasad gałęzi API, zapoznaj się z [następującą dokumentacją dotyczącą API v2](/guides/manage-and-operate/api/apiv2/).
+
+#### Uruchom API
+
+Dostępne są 4 rodzaje API, które wykorzystują tak zwane metody HTTP: 
+
+**GET** 
+
+Metoda GET ma na celu odzyskanie danych z zasobu.
+
+Na przykład, aby pobrać listę Twoich domen, użyj następującego API:
+ 
+<Api version="v1" section="/domain" method="GET" route={"/domain"} />
+
+**POST**
+
+Metoda POST jest wykorzystywana do wysyłania dodatkowych danych do zasobu. 
+
+Na przykład, aby dodać rekord do strefy DNS, użyj następującego API:
+
+<Api version="v1" section="/domain" method="POST" route={"/domain/zone/\{zoneName\}/record"} />
+
+**PUT**
+
+Metoda PUT służy do zastąpienia aktualnych danych dotyczących zasobu danymi zapytania.
+
+Na przykład, jeśli popełniłeś błąd podczas zapisywania strefy DNS, użyj następującego API:
+
+<Api version="v1" section="/domain" method="PUT" route={"/domain/zone/\{zoneName\}/record/\{id\}"} />
+
+**DELETE**
+
+Metoda DELETE jest używana do usuwania nazwanego zasobu.
+
+Na przykład, jeśli nie chcesz zachować rekordu DNS, który dodałeś do strefy DNS, użyj następującego API:
+
+<Api version="v1" section="/domain" method="DELETE" route={"/domain/zone/\{zoneName\}/record/\{id\}"} />
+
+
+##### **Parametry API**
+
+Po kliknięciu na API w wybranej przez Ciebie sekcji **Request** możesz przypisać zmienne związane z aplikacją.
+ 
+Na przykład, aby dodać rekord TXT do strefy DNS, zoptymalizujesz następujące parametry:
+
+<img className="thumbnail" alt="API" src="/images/manage-and-operate/api/first-steps/parameters.png" loading="lazy" />
+
+Po zdefiniowaniu ustawień możesz uruchomić API klikając <code className="action">EXECUTE</code>. 
+
+W zakładce `Response` wyświetli się raport z realizacji API.
+
+<img className="thumbnail" alt="API" src="/images/manage-and-operate/api/first-steps/result.png" loading="lazy" />
+
+Zakładki `PHP` i `Python` zawierają elementy, które należy dodać do skryptu w zależności od używanego języka.
+
+### Zaawansowane wykorzystanie: łączenie API OVHcloud z aplikacją
+
+#### Utwórz klucze aplikacji
+
+Każda aplikacja, która chce komunikować się z API OVHcloud, musi zostać zgłoszona z wyprzedzeniem.
+
+W tym celu kliknij link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
+
+Wpisz identyfikator klienta, hasło i nazwę aplikacji. Nazwa będzie pomocna później, jeśli chcesz zezwolić innym na jej używanie.
+
+Możesz również dodać opis aplikacji oraz czas jej trwania. 
+
+Zakres `Rights` pozwala na ograniczenie korzystania z aplikacji do niektórych API.
+<br/> Aby zezwolić wszystkim API OVHcloud dla metody HTTP, wprowadź gwiazdkę `*` w polu, jak w poniższym przykładzie, w którym metoda GET jest dozwolona dla wszystkich API:
+
+<img className="thumbnail" alt="API keys" src="/images/manage-and-operate/api/first-steps/api-keys.png" loading="lazy" />
+
+Po kliknięciu <code className="action">Create keys</code> otrzymasz trzy klucze:
+
+- Klucz aplikacji zwany **AK**. Przykład:
+
+```console
+7kbG7Bk7S9Nt7ZSV
+```
+
+- klucza aplikacji, który nie zostanie ujawniony, o nazwie **AS**. Przykład:
+
+```console
+EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF
+```
+
+- tajnej "**consumer key**", której nie ujawnia się, zwanej **CK**. Przykład:
+
+```console
+MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
+```
+
+W tym przypadku klucz **CK** jest przypisany do Twojego konta.
+
+Token **CK** może być wykorzystywany do przekazywania uprawnień. Więcej informacji znajdziesz w przewodniku: [Jak zarządzać kontem klienta OVHcloud za pomocą API](/guides/manage-and-operate/api/first-steps/) (przewodnik po języku angielskim).
+
+#### Pierwsze wykorzystanie API
+
+Po uzyskaniu trzech kluczy (**AK**, **AS**, **CK**) możesz podpisać zlecenia API. Podpis oblicza się w następujący sposób:
+
+```console
+"$1$" + SHA1_HEX(AS+"+"+CK+"+"+METHOD+"+"+QUERY+"+"+BODY+"+"+TSTAMP)
+```
+
+Aby uprościć programowanie aplikacji, OVHcloud udostępnia wrappery API w kilku językach.
+Dzięki nim nie będziesz martwił się o obliczenia podpisu i będziesz mógł skupić się na rozwoju Twojej aplikacji.
+
+- *Perl* : [https://github.com/ovh/perl-ovh](https://github.com/ovh/perl-ovh)
+- *Python* : [https://github.com/ovh/python-ovh](https://github.com/ovh/python-ovh)
+- *PHP* : [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
+- *Node.js* : [https://github.com/ovh/node-ovh](https://github.com/ovh/node-ovh)
+- *Swift* : [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
+- *C#* : [https://github.com/ovh/csharp-ovh](https://github.com/ovh/csharp-ovh)
+
+Przykład zastosowania sekcji `/me`, która pozwala na zarządzanie kontem OVHcloud:
+
+```python
+import ovh
+
+# Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
+# to get your credentials
+client = ovh.Client(
+    endpoint='ovh-eu',
+    application_key='<application key>',
+    application_secret='<application secret>',
+    consumer_key='<consumer key>',
+)
+
+# Print nice welcome message
+print("Welcome", client.get('/me')['firstname'])
+```
+
+#### Tworzenie listy i usuwanie kluczy
+
+Do wyświetlania i odwoływania kluczy możesz użyć [portalu API](https://eu.api.ovh.com/) lub [panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl):
+
+<Tabs>
+  <Tab label="Poprzez portal API OVHcloud">
+    - Wyświetl identyfikatory kluczy, korzystając z następującego wywołania:
+    
+    <Api version="v1" section="/me" method="GET" route={"/me/api/application"} />    - Uzyskaj szczegóły klucza za pomocą następującego wywołania:
+    
+    <Api version="v1" section="/me" method="GET" route={"/me/api/application/\\{applicationId\\}"} />    - Unieważnij klucz za pomocą następującego wywołania:
+    
+    <Api version="v1" section="/me" method="DELETE" route={"/me/api/application/\\{applicationId\\}"} />
+  </Tab>
+  <Tab label="W Panelu klienta OVHcloud">
+    Przejdź do strony [Klucze API](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/%23/dedicated/account/iam/api-keys).
+    
+    <img className="thumbnail" alt="API keys manager" src="/images/manage-and-operate/api/first-steps/api-keys-manager.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również <a name="gofurther"></a>
+
+[Zarządzanie domeną poprzez API OVHcloud](/guides/web-cloud/domains/api-domain-intro/) (przewodnik po angielsku)
+
+[Jak zarządzać kontem klienta OVHcloud za pomocą API](/guides/manage-and-operate/api/first-steps/) (przewodnik po angielsku)
+
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/)

@@ -1,0 +1,71 @@
+---
+title: Managing vSAN fault domains
+description: Find out how to manage vSAN fault domains
+lastUpdated: 2021-12-23
+---
+
+## Objective
+
+The aim of this guide is to explain how vSAN fault domains work and how they are implemented.
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- A deployed [vSan Datastore](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan/)
+
+## Instructions
+
+### How Fault Domain work
+
+A fault domain refers to a set of servers, storage devices, or network components that are grouped within a physical location in the data centre and can be collectively assigned during a failure.
+
+With vSAN, you can group servers into vSAN fault domains, taking into account their physical location.<br/>
+The advantage is that you have multiple fault domains, so you can benefit from the resilience provided by vSAN. This way, you can replicate the VMs’ objects across these server groups. You can find more details in [this guide](https://core.vmware.com/resource/vmware-vsan-design-guide#sec8-sub3).
+
+The OVHcloud servers provided to you are spread across several racks. This way, you can create vSAN fault domains based on these arrays.
+
+For example, the default vSAN policy (tolerance level FTT=1 with RAID1 (Mirroring)) requires a minimum of 3 failure domains (for 2 replicas + 1 witness object).
+
+### Implementation
+
+It is recommended that you use this procedure when multiple servers are on the same array. Opt for the same number of servers per vSAN fault domain.
+This way, data is better distributed, and it has better protection in the event of a fault domain failing.
+
+Each OVHcloud server has information about the bay in which it is hosted.
+
+Go to the <code className="action">Hosts and Clusters</code> menu, click on the server concerned, then on the <code className="action">Summary</code> tab. You can find the information at the Custom Attributes level: attribute **Rack**.
+
+<img className="thumbnail" alt="attribut Rack" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-fault-domain/01.png" loading="lazy" />
+
+In the <code className="action">Hosts and Clusters</code> menu, select the cluster concerned, then click the <code className="action">Configure</code> tab and choose the <code className="action">vSAN</code> menu, then <code className="action">Fault Domains</code>.
+
+Simply drag the server into the “Fault Domains” box **+**.
+
+<img className="thumbnail" alt="fault domain" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-fault-domain/02.png" loading="lazy" />
+
+Name the fault domain (you can use, for example, the array name) in the “Fault domain name” field, then confirm by clicking <code className="action">CREATE</code>.
+
+<img src="https://raw.githubusercontent.com/ovh/docs/develop/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan_fault_domain/images/03.png" alt="fault domain name" className="thumbnail" width="70%" height="70%"/>
+
+You can then track the progress of the task to create the fault domain in the <code className="action">Recent Tasks</code> window.
+
+<img className="thumbnail" alt="fault domain" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-fault-domain/04.png" loading="lazy" />
+
+Repeat for as many fault domains as there are different arrays.
+
+<img className="thumbnail" alt="adding multiple fault domains" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-fault-domain/05.png" loading="lazy" />
+
+If required, add a server to an existing fault domain by moving it to it, then confirm by clicking <code className="action">MOVE</code>.
+
+<img src="https://raw.githubusercontent.com/ovh/docs/develop/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan_fault_domain/images/06.png" alt="adding servers" className="thumbnail" width="70%" height="70%"/>
+
+Used, available, and total disk space information is displayed by hovering over the fault domain.
+
+<img src="https://raw.githubusercontent.com/ovh/docs/develop/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan_fault_domain/images/07.png" alt="fault domain information" className="thumbnail" width="60%" height="60%"/>
+
+The vSAN cluster now has data resilience through fault domains.
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

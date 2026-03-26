@@ -1,0 +1,169 @@
+---
+title: Zarządzanie sposobami płatności
+description: Dowiedz się, jak dodawać sposoby płatności do Panelu klienta OVHcloud i zarządzać nimi
+lastUpdated: 2025-04-28
+---
+
+import Api from '@components/Api';
+
+
+## Wprowadzenie
+
+W Panelu klienta OVHcloud możesz dodać różne sposoby płatności i zarządzać nimi.
+
+## Wymagania początkowe
+
+- Posiadanie ważnego sposobu płatności
+
+{/* CP-NAV-START:billing-payment-methods */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Sposoby płatności](https://manager.eu.ovhcloud.com/#/billing/payment/method)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > <code className="action">Moje sposoby płatności</code>
+
+---
+{/* CP-NAV-END:billing-payment-methods */}
+
+## W praktyce <a name="payment_methods"></a>
+
+Otwórz stronę [Moje sposoby płatności](https://manager.eu.ovhcloud.com/#/billing/payment/method).
+
+<img className="thumbnail" alt="hubpayment" src="/images/assets/screens/control-panel/product-selection/right-menu/my-payment-methods.png" loading="lazy" />
+
+Wyświetli się strona z tabelą wyszczególniającą sposoby płatności zapisane na Twoim koncie klienta. W Panelu klienta można:
+
+- Dodać sposób płatności
+- Zmienić domyślny sposób płatności
+- Zmień opis Twojego sposobu płatności
+- Usunąć sposób płatności
+
+### Dodanie sposobu płatności
+
+Podczas pierwszego zamówienia zostaniesz poproszony o zarejestrowanie sposobu płatności, aby zapewnić automatyczne pobranie płatności za odnowienie usługi.
+
+Ten sposób płatności jest używany domyślnie dla wszystkich odnowień i jest proponowany do uregulowania nowych zamówień.
+
+Możesz również zarejestrować inne sposoby płatności, które będą proponowane podczas składania nowych zamówień lub będą używane domyślnie dla przyszłych poleceń zapłaty.
+
+Można dodać 2 różne sposoby płatności:
+
+- Karta bankowa
+- Konto PayPal
+
+W tym celu kliknij przycisk <code className="action">Dodaj sposób płatności</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods2.png" loading="lazy" />
+
+Wybierz metodę płatności, której chcesz użyć:
+
+<img className="thumbnail" alt="choose-payment-method-no-sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/choose-payment-method-no-sepa.png" loading="lazy" />
+
+Postępuj zgodnie z poniższą procedurą, aby dodać sposób płatności. Na pierwszym etapie zostaniesz poproszony o zaznaczenie kratki <code className="action">Chcę wybrać ten sposób płatności jako domyślny od chwili jego zatwierdzenia</code>, tak aby był on używany przy kolejnych zakupach lub automatycznych pobraniach.
+
+#### Karta bankowa
+
+<img className="thumbnail" alt="credit-card-no-sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-card-no-sepa.png" loading="lazy" />
+
+Aby zarejestrować nową kartę bankową, zostaniesz przekierowany do bezpiecznego interfejsu naszego dostawcy płatności. W celu potwierdzenia rejestracji i ważności Twojej karty, należy zalogować się do Twojego banku.<br/>
+Kwota nie zostanie pobrana, a Twoja karta bankowa zostanie aktywowana po kilku minutach.
+
+#### Konto PayPal
+
+<img className="thumbnail" alt="paypal_no_sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/paypal_no_sepa.png" loading="lazy" />
+
+Wybierz <code className="action">PayPal</code> jako sposób płatności. Kliknij przycisk <code className="action">PayPal</code>. Otworzy się wówczas okno, w którym zaloguj się do Twojego konta PayPal® i zapisz je jako sposób płatności zatwierdzony przez OVHcloud.
+
+Twoje konto PayPal® zostanie włączone za kilka minut.
+
+### Zmienić domyślny sposób płatności
+
+Faktury za odnowienie usług są zawsze opłacane przy użyciu domyślnego sposobu płatności. Jeśli chcesz go zmienić, musisz najpierw dodać nowy sposób płatności w Panelu klienta.
+
+Kliknij przycisk <code className="action">...</code> znajdujący się po prawej stronie nowego sposobu płatności, a następnie wybierz opcję <code className="action">Ustaw te metode płatności jako domyślna</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods3.png" loading="lazy" />
+
+> **Chcę zastąpić mój domyślny sposób płatności innym sposobem płatności?**
+>
+> - Etap 1: dodaj nowy sposób płatności
+> - Etap 2: definiuj nowy sposób płatności jako domyślny sposób płatności
+> - Etap 3: usuń stary sposób płatności
+>
+
+### Usunąć sposób płatności
+
+Jeśli nie chcesz już korzystać ze swoich sposobów płatności, możesz je usunąć, klikając przycisk <code className="action">...</code> znajdujący się po prawej stronie. Następnie kliknij polecenie <code className="action">Usuń te sposób płatności</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods4.png" loading="lazy" />
+
+Jeśli chcesz usunąć wszystkie Twoje sposoby płatności, wszystkie Twoje usługi muszą być [odnawiane ręcznie](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#odnowienie-reczne/).
+
+#### Usuwanie sposobu płatności przez API OVHcloud
+
+Sposób płatności można usunąć poprzez interfejs API, logując się do [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+
+Zacznij od uzyskania identyfikatora sposobu płatności:
+
+<Api version="v1" section="/me" method="GET" route={"/me/payment/method"} />
+
+Następnie usuń sposób płatności, używając identyfikatora uzyskanego na poprzednim etapie:
+
+<Api version="v1" section="/me" method="DELETE" route={"/me/payment/method/\{paymentMethodId\}"} />
+
+
+:::info
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem Pierwsze kroki z [API OVHcloud](/guides/manage-and-operate/api/first-steps/).
+
+W przypadku trudności w identyfikacji sposobów płatności przy użyciu interfejsu API OVHcloud, skorzystaj z funkcji <code className="action">Zmień opis</code> (przycisk <code className="action">...</code> po prawej stronie ekranu) w części [Sposoby płatności](#payment_methods) na stronie [Moje metody płatności](https://manager.eu.ovhcloud.com/#/billing/payment/method).
+
+:::
+
+
+### Konto prepaid
+
+#### Czym jest konto przedpłacone?
+
+*Konto prepaid* jest widoczne na stronie [Moje metody płatności](https://manager.eu.ovhcloud.com/#/billing/payment/method) od chwili jego utworzenia. Umożliwia zasilenie konta klienta z wyprzedzeniem i wykorzystanie tych środków do opłacania zamówień oraz faktur za odnowienie.
+
+Tworząc regularnie konto, będziesz mógł sprawdzić, czy [automatyczne odnawianie](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#odnowienie-automatyczne/) usług nie zostanie przerwane z powodu braku płatności.
+
+W tym celu przejdź do sekcji `Sposoby płatności` w Panelu klienta:
+
+- kliknij Twoje imię w prawym górnym rogu, a następnie <code className="action">Moje sposoby płatności</code> w menu po prawej stronie.
+- wybierz kartę <code className="action">Moje konto prezdplacone</code>.
+
+<img className="thumbnail" alt="prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/prepaid-account.png" loading="lazy" />
+
+#### Jak działa?
+
+W każdym terminie płatności, jeśli posiadasz usługi z opcją *automatycznego odnawiania*, kwota Twojej faktury jest pobierana z konta prepaid.
+
+W przypadku braku wystarczających środków saldo Twojego konta zostanie ujemne i będzie nadal czeka na płatność.
+
+Jeśli dysponujesz ważnym sposobem płatności zarejestrowanym na Twoim koncie klienta, kwota ta zostanie automatycznie pobrana w ciągu 24 godzin, a saldo zostanie wyrównane. Nie ma to żadnego wpływu na stan Twoich usług.
+
+Natomiast jeśli nie masz ustawionego sposobu płatności, ureguluj saldo w Panelu klienta w ciągu 7 dni, aby uniknąć przerwy w dostępie do usługi.
+
+Jeśli nie masz zarejestrowanego sposobu płatności, zalecamy ustawienie **progu alertu**, aby upewnić się, że dysponujesz funduszami wystarczającymi na kolejne faktury:
+
+<img className="thumbnail" alt="warning_prepaid_account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/warning_prepaid_account.png" loading="lazy" />
+
+Jeśli zasilenie dostępne na koncie przedpłaconym spada poniżej określonego limitu, otrzymasz e-mail z powiadomieniem.
+
+#### Jak zasilić konto Skarbonka?
+
+W zakładce <code className="action">Moje konto prezdplacone</code> kliknij przycisk <code className="action">Zasil</code>.
+
+<img className="thumbnail" alt="prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-prepaid-account.png" loading="lazy" />
+
+W oknie, które się wyświetli wskaż kwotę do zasilenia, kliknij <code className="action">Dalej</code>, a następnie <code className="action">Zamów</code>.
+
+<img className="thumbnail" alt="order-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/order-prepaid-account.png" loading="lazy" />
+
+W formularzu zamówienia, który się wyświetla wybierz sposób płatności i ureguluj Twoje zamówienie.
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

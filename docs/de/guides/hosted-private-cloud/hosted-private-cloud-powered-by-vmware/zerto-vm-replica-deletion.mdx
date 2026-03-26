@@ -1,0 +1,62 @@
+---
+title: Replikationskopie einer VM vom Zerto Standort löschen
+description: Erfahren Sie hier, wie Sie nach Löschung einer VM auch deren Replikat entfernen
+lastUpdated: 2021-12-09
+---
+
+:::info
+Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+
+:::
+
+
+## Ziel
+
+Wenn eine virtuelle Maschine gezielt aus der Quelle gelöscht wird, unterbricht die Zerto VPG die Synchronisierung und geht in den Fehlerstatus.<br/>
+Die Sicherheitskopien der VM befinden sich weiterhin auf dem Ziel-Datastore.<br/>
+Sie können diese Kopien dann löschen, um die VPG wieder in den Normalbetrieb zu versetzen.
+
+**Diese Anleitung erklärt, wie Sie das Zerto Interface verwenden, um eine Kopie einer VM zu löschen.**
+
+## Voraussetzungen
+
+- Sie sind Administrator-Kontakt der [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
+- Sie haben eine aktive Benutzerkennung mit spezifischen Rechten für Zerto (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de)).
+- Sie setzen [Zerto Virtual Replication](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-as-a-service/) ein.
+
+## In der praktischen Anwendung
+
+Überprüfen Sie im Zerto-Interface des Ziels die Dashboards <code className="action">VPGs</code> und <code className="action">VMs</code>.<br/>
+In diesem Beispiel enthält VPG1 zwei VMs, "vm1-zerto" und "vm2-zerto". Der Status der Standort-Synchronisation ist funktional.
+
+<img className="thumbnail" alt="Dash" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en01sync.png" loading="lazy" />
+
+Im vSphere Interface des Quellsstandorts wird "vm2-zerto" absichtlich gelöscht.<br/>
+Dabei werden die VM und deren Disks gelöscht.
+
+<img className="thumbnail" alt="VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en02vmdelete.png" loading="lazy" />
+
+Im Zerto-Interface des Ziels pausiert die VPG die Synchronisierung und geht in den Fehlerstatus. Die VM "vm2-zerto" ist ausgegraut.
+
+<img className="thumbnail" alt="VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en03vpgerror.png" loading="lazy" />
+
+Setzen Sie im Bereich <code className="action">VPGs</code> einen Haken bei VPG1. Öffnen Sie das Menü <code className="action">Actions</code> und wählen Sie <code className="action">Edit VPG</code>.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en04vpgedit.png" loading="lazy" />
+
+Entfernen Sie in <code className="action">VMs</code> die "vm2-zerto" aus dem Bereich `Selected VMS`. (Haken Sie die VM an und klicken Sie auf den nach links gerichteten Pfeil.)<br/>
+CLlquez auf <code className="action">Done</code>.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en05vpgremove.png" loading="lazy" />
+
+Klicken Sie im Warnfenster auf <code className="action">No</code>. Die Recovery-Disk muss normalerweise nicht gespeichert werden.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en06warning.png" loading="lazy" />
+
+Die VPG wird sich neu synchronisieren und mit einer verbleibenden VM wieder funktionsfähig werden.
+
+<img className="thumbnail" alt="DONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en07green.png" loading="lazy" />
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

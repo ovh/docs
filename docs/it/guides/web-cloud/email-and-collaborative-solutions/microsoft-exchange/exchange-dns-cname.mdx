@@ -1,0 +1,145 @@
+---
+title: Aggiungi un record CNAME per convalidare il tuo dominio sul tuo servizio di posta
+description: Questa guida ti mostra come configurare un dominio sulla piattaforma di posta aggiungendo un record CNAME
+lastUpdated: 2023-08-29
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Obiettivo
+
+Quando aggiungi un dominio sulla tua piattaforma di posta, potrebbe esserti richiesta la configurazione di un record CNAME nella zona DNS. con lo scopo di garantire che il dominio in questione sia legittimo per essere utilizzato sulla piattaforma email.
+
+:::info
+Se il dominio aggiunto è gestito nello stesso account cliente della piattaforma email e in particolare nella sua zona DNS, non è necessario configurare alcun record CNAME.
+
+:::
+
+
+**Questa guida ti mostra come configurare un dominio sulla piattaforma di posta aggiungendo un record CNAME.**
+
+## Prerequisiti
+
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/).
+- Aver aggiunto un dominio sulla piattaforma di posta. Per maggiori informazioni, consulta la guida "[Aggiungere un dominio su una piattaforma email](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/)".
+- Essere in grado di [configurare la zona DNS](/guides/web-cloud/domains/dns-zone-edit/) del dominio dallo Spazio Cliente OVHcloud o dall’interfaccia di gestione in cui è registrato.
+
+{/* CP-NAV-START:web-exchange */}
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleziona la tua piattaforma
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Seleziona la tua piattaforma
+
+---
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-exchange */}
+
+## Procedura
+
+### Perché creare un record CNAME?
+
+Il record CNAME viene utilizzato qui in quanto alias, punta verso una destinazione che, a sua volta, restituisce verso un indirizzo IP. Non si tratta quindi, di per sé, di un record associato a un servizio di posta elettronica.
+
+Nell'ambito delle nostre offerte [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) e [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/), il record CNAME viene utilizzato come codice di conferma (token) che sarà visibile nella zona DNS del dominio da convalidare. con lo scopo di verificare che l’utente della piattaforma email sia il gestore del dominio aggiunto.
+
+Nel diagramma che segue, la piattaforma di posta elettronica ([Exchange](https://www.ovhcloud.com/it/emails-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/)) è rappresentata dal frame verde.<br/>
+Per formare gli indirizzi email aggiungi account (rappresentati da "**contact**", "**john.smith**" e "**mary.johnson**").<br/>
+Il dominio **mydomain.ovh** è stato aggiunto alla piattaforma email (consulta la guida "[Aggiungere un dominio su una piattaforma email](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/)").<br/>
+Un codice di conferma viene generato dalla piattaforma (nel nostro esempio, sotto forma di "**abcd1-check**").<br/>
+Se la zona DNS del dominio **mydomain.ovh** non è gestita nello stesso account cliente OVHcloud o da un’interfaccia di gestione esterna, il codice deve essere aggiunto sotto forma di record CNAME. Questo record è rappresentato dal riquadro blu nell'esempio.<br/>
+La piattaforma email è in grado di osservare i record DNS del dominio **mydomain.ovh** per verificare la presenza del codice di conferma.
+
+<img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/email-dns-conf-cname01.png" loading="lazy" />
+
+Una volta che la piattaforma email avrà letto il codice di conferma nella zona DNS del dominio **mydomain.ovh**, sarà possibile formare gli indirizzi **contact@mydomain.ovh**, **john.smith@mydomain.ovh** e **mary.johnson@mydomain.ovh**.
+
+### Step 1 - Comprendere la diagnostica CNAME di OVHcloud <a name="step1"></a>
+
+Dopo aver aggiunto il dominio, la casellina di diagnostica **CNAME** appare nella scheda <code className="action">Domini associati</code> della piattaforma di posta.
+
+<img className="thumbnail" alt="cnamedomainemail" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/cname_exchange_diagnostic.png" loading="lazy" />
+
+Nell'esempio precedente, la casellina è rossa. Ecco le possibili ragioni di questa diagnosi:
+
+- **il dominio dichiarato non è associato allo stesso account cliente OVHcloud della piattaforma di posta**: esegui [lo step 3](#step3) di questa guida dallo Spazio Cliente dell’account OVHcloud che gestisce la zona DNS del dominio.
+- **il dominio dichiarato utilizza server DNS esterni a OVHcloud**: il dominio è registrato in OVHcloud ma utilizza server DNS "personalizzati". Per verificarlo, seleziona il dominio nella sezione <code className="action">Domini</code> della colonna di sinistra. Nella scheda <code className="action">Informazioni generali</code>, verifica la voce "Server DNS". Se il campo <code className="action">Personalizzato</code> viene visualizzato, è necessario accedere all'interfaccia di gestione dei server DNS registrati nella scheda <code className="action">Server DNS</code>
+
+<img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/email-dns-conf-cname02.png" loading="lazy" />
+
+- **il dominio dichiarato non è registrato in OVHcloud e non utilizza server DNS OVHcloud**: il dominio è registrato presso un altro Registrar. È necessario verificare tramite l’interfaccia del Registrar del dominio i server DNS utilizzati per identificare la posizione in cui configurare la zona DNS.
+
+### Step 2 - Recupera il codice di conferma <a name="step2"></a>
+
+Seleziona la scheda <code className="action">Domini associati</code> e clicca sulla casellina rossa `CNAME` nella colonna "Diagnostica" per recuperare le informazioni necessarie.
+
+Il record CNAME è descritto nella finestra di dialogo che appare.
+
+<img className="thumbnail" alt="cnamedomainemail" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/cname_exchange_informations.png" loading="lazy" />
+
+Recupera il codice unico visibile sulla linea centrale (`a1bcd-check.mydomain.ovh to ovh.com.` nell’esempio).
+
+### Step 3 - Crea il record CNAME <a name="step3"></a>
+
+Seleziona la scheda corrispondente alla tua situazione:
+
+<Tabs>
+  <Tab label="Dallo Spazio Cliente">
+    Nella sezione <code className="action">Web Cloud</code>, clicca su <code className="action">Domini</code> e poi sul dominio interessato. e clicca sulla scheda <code className="action">Zona DNS</code>.<br/>
+
+Viene visualizzata la configurazione della zona DNS. Per aggiungere un record CNAME, clicca sul pulsante <code className="action">Aggiungi un record</code> a destra.<br/>
+
+Nella nuova finestra, ti vengono proposti diversi record DNS. Clicca su <code className="action">CNAME</code> e completa i campi con le informazioni recuperate nello [step 2](#step2) di questa guida.<br/>
+
+Ad esempio, se il codice di convalida è **a1bcd-check**, è necessario inserirlo nella casella sottodominio. Infine, inserisci "**ovh.com.**" nella sezione "destinazione", tenendo presente il "**.**" finale.
+    
+    <img className="thumbnail" alt="cnamedomainemail" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/cname_add_entry_dns_zone.png" loading="lazy" />
+
+Una volta inseriti i dati richiesti, clicca su <code className="action">Continua</code>, Verifica la correttezza delle informazioni e clicca su <code className="action">Conferma</code>.<br/>
+    
+    :::warning
+    La modifica richiede un tempo di propagazione generalmente di pochi minuti. Tuttavia, può durare fino a 24 ore.
+
+    :::
+
+  </Tab>
+  <Tab label="Da un'interfaccia esterna a OVHcloud">
+    Accedi all’interfaccia che gestisce la zona DNS del dominio e aggiungi un record di tipo CNAME con queste impostazioni:
+    
+    - **sottodominio**: inserisci il valore in "**xxxxx-check**" sostituendo "**x**" con il codice univoco indicato al passaggio 2 [di questa guida](#step2).
+    - **target** : inserisci il valore "**ovh.com.**" tenendo presente il " **.**" finale se l’interfaccia di inserimento non lo fa automaticamente.
+    
+    Conferma la modifica nella tua zona DNS.
+    
+    :::warning
+    Questa modifica richiede un tempo di propagazione, generalmente applicato in pochi minuti. Tuttavia, può durare fino a 24 ore.
+
+    :::
+
+    
+    Ecco un esempio di risposta DNS dopo l’aggiunta di un record CNAME di convalida:
+    
+    ```bash
+    ab1cd-check.mydomain.ovh. 3600	IN	CNAME	ovh.com.
+    ```
+  </Tab>
+</Tabs>
+
+
+Per verificare che la configurazione del record CNAME sia stata letta correttamente dalla tua piattaforma di posta, torna su questa e clicca sulla scheda <code className="action">Domini associati</code>. Se la casellina `CNAME` non è più presente nella colonna "diagnostica", il dominio è aggiunto correttamente. In caso contrario, è possibile che la propagazione delle modifiche non sia ancora terminata.
+
+<img className="thumbnail" alt="cnamedomainemail" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/cname_exchange_diagnostic_green.png" loading="lazy" />
+
+## Per saperne di più
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,491 @@
+---
+title: Aktywacja i korzystanie z trybu Rescue
+description: Dowiedz się, jak używać trybu customer rescue OVHcloud do rozwiązywania problemów z serwerem dedykowanym
+lastUpdated: 2026-01-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+import Api from '@components/Api';
+
+
+
+
+## Wprowadzenie
+
+Tryb Rescue jest dostarczanym przez OVHcloud narzędziem, które pozwala na uruchomienie tymczasowego systemu operacyjnego w celu zdiagnozowania i rozwiązania problemów z serwerem.
+
+Tryb Rescue jest zazwyczaj dostosowany do następujących zadań:
+
+- [Reset hasła użytkownika](/guides/bare-metal-cloud/dedicated-servers/replacing-user-password/)
+- [Diagnostyka problemów z siecią](/guides/bare-metal-cloud/dedicated-servers/hardware-diagnose/)
+- Naprawa wadliwego systemu operacyjnego
+- Naprawa nieprawidłowej konfiguracji zapory sieciowej
+- [Test wydajności dysków](/guides/bare-metal-cloud/dedicated-servers/hardware-diagnose/)
+- [Test procesora i pamięci RAM](/guides/bare-metal-cloud/dedicated-servers/hardware-diagnose/)
+
+:::warning
+Pamiętaj o sporządzeniu kopii zapasowej swoich danych, jeśli nie posiadasz jeszcze ostatnich kopii zapasowych.
+
+Jeśli posiadasz usługi produkcyjne na swoim serwerze, tryb Rescue przerywa je, dopóki maszyna nie zostanie zrestartowana w trybie normalnym.
+
+:::
+
+
+**Z tego przewodnika dowiesz się, jak uruchomić serwer w trybie rescue i korzystać z niego.**
+
+## Wymagania początkowe
+
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/)
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">Serwery dedykowane</code> > Wybierz serwer
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+## W praktyce
+
+Aby korzystać z trybu ratunkowego, należy zmienić ustawienie `Netboot` serwera. Następnie należy zrestartować serwer.
+
+Kliknij nazwę serwera, aby otworzyć zakładkę <code className="action">Informacje ogólne</code>.
+
+### Aktywacja trybu Rescue
+
+W polu **Informacje ogólne** kliknij przycisk <code className="action">...</code> obok `Boot`. Kliknij na <code className="action">Zmień</code> w menu kontekstowym.
+
+<img className="thumbnail" alt="Zmień tryb uruchamiania" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-001.png" loading="lazy" />
+
+<a name="netboot"></a>
+
+#### 1: Opcje trybu Rescue
+
+Na stronie **Zmień netboot** wybierz <code className="action">Uruchom w trybie diagnostycznym (Rescue)</code>.
+
+<img className="thumbnail" alt="Zmień tryb uruchamiania" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-002.png" loading="lazy" />
+
+Dostępne opcje trybu ratunkowego zależą od typu serwera i zainstalowanego **systemu operacyjnego**.
+
+- Customer rescue system (zawsze dostępny)
+- Windows customer rescue system (dostępny dla serwerów Windows)
+- [iPXE](https://ipxe.org) / ipxe-shell (zewnętrzne narzędzie open source, zawsze dostępne)
+- [Legacy Windows rescue system](#windows_legacy) (przestarzały system WinPE, istotny tylko wtedy, gdy Twój serwer nie spełnia wymagań bieżącego trybu Rescue dla Windows)
+
+:::info
+Poniższe instrukcje dotyczą tylko **customer rescue system**, który jest najczęściej używaną opcją.
+
+Zapoznaj się z [przewodnikiem dotyczącym korzystania z trybu **rescue dla Windows**](/guides/bare-metal-cloud/dedicated-servers/rescue-customer-windows/).
+
+:::
+
+
+Z rozwijanego menu wybierz opcję <code className="action">Customer rescue system</code>.
+
+#### 2: Opcje uwierzytelniania
+
+Poniższa opcja określa metodę uwierzytelniania dla połączenia SSH z systemem w trybie rescue. Jest to przede wszystkim kwestia wygody, ponieważ każda sesja w trybie Rescue ma być przejściowa i zostanie usunięta po zrestartowaniu serwera z dysku.
+
+- **Uwierzytelnianie za pomocą hasła** : dane do logowania otrzymasz w e-mailu.
+- **Uwierzytelnianie za pomocą klucza**: możesz użyć wybranego klucza publicznego uwierzytelniania (w kompatybilnych formatach: `RSA`, `ECDSA`, `ED25519`).
+
+Kliknij zakładkę odnoszącą się do Twojego sposobu połączenia:
+
+<Tabs>
+  <Tab label="Uwierzytelnianie hasła">
+    Kliknij <code className="action">Uwierzytelnianie hasłem</code>.
+    
+    <img className="thumbnail" alt="Auth method" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-003.png" loading="lazy" style={{ maxWidth: '700px' }} />
+
+Powiadomienie e-mail dotyczące trybu Rescue oraz dane identyfikacyjne zostaną wysłane na adres e-mail do kontaktu przypisany do Twojego konta OVHcloud. Aby użyć innego adresu e-mail, wpisz go w polu `Wyślij dane do logowania do trybu Rescue na adres e-mail:`.
+    
+    Kliknij na <code className="action">Dalej</code>.
+  </Tab>
+  <Tab label="Uwierzytelnianie klucza">
+    Kliknij <code className="action">Uwierzytelnianie za pomocą klucza SSH</code>.
+    
+    <img className="thumbnail" alt="Auth method" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-004.png" loading="lazy" style={{ maxWidth: '700px' }} />
+
+Masz dwie możliwości:
+    
+    - Wybierz klucz z wyskakującego menu. Należy posiadać co najmniej jeden [klucz publiczny przechowywany w Panelu klienta OVHcloud](/guides/bare-metal-cloud/dedicated-servers/import-keys-control-panel/).
+    - Ręcznie skopiuj ciąg klucza publicznego i wklej go w polu `Twój publiczny klucz SSH`.
+    
+    Więcej informacji na ten temat znajdziesz w naszych przewodnikach:
+    
+    - [Jak tworzyć i używać kluczy do uwierzytelniania SSH](/guides/bare-metal-cloud/dedicated-servers/creating-ssh-keys-dedicated/)
+    - [Jak tworzyć i używać kluczy do uwierzytelniania SSH za pomocą PuTTY](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/)
+    
+    :::tip[Success]
+    Możesz dodać domyślny klucz publiczny dla trybu ratunkowego serwera za pośrednictwem API OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z [sekcją przewodnika poniżej](#rescuessh) for details.
+
+    :::
+
+    
+    Kliknij na <code className="action">Dalej</code>.
+  </Tab>
+</Tabs>
+
+
+#### 3: Ostatnie kroki aktywacji trybu Rescue
+
+W kroku **Podsumowanie** kliknij <code className="action">Zatwierdź</code>.
+
+<img className="thumbnail" alt="Summary" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-005.png" loading="lazy" />
+
+Powinieneś mieć teraz powiadomienie dotyczące parametru `Netboot` w zakładce <code className="action">Informacje ogólne</code>.
+
+<img className="thumbnail" alt="Netboot" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-006.png" loading="lazy" />
+
+Ostatni etap polega na zrestartowaniu serwera. Kliknij przycisk <code className="action">...</code> obok "Status" w obszarze **Status usług**, a następnie kliknij <code className="action">Restartuj</code>. W wyskakującym okienku kliknij przycisk <code className="action">Zatwierdź</code>.
+
+<img className="thumbnail" alt="Reboot" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png" loading="lazy" />
+
+Reboot sprzętowy zajmie kilka minut. Możesz sprawdzić aktualny status w zakładce <code className="action">Zadania</code>.
+
+:::info
+Po zakończeniu operacji w trybie Rescue pamiętaj, aby przed zrestartowaniem serwera ponownie ustawić parametr `Netboot` na <code className="action">Booter na dysku twardym</code>.
+
+:::
+
+
+### Dostęp do serwera w trybie Rescue przez SSH
+
+Po otrzymaniu wiadomości e-mail z informacją o aktywacji trybu Rescue możesz zalogować się do systemu trybu Rescue i połączyć się z serwerem.  
+E-mail ten będzie również dostępny w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) od chwili wysłania. Kliknij nazwę powiązaną z Twoim identyfikatorem klienta na pasku menu w prawym górnym rogu, następnie wybierz <code className="action">E-maile dotyczące usługi</code>.
+
+:::info
+Klient SSH normalnie zablokuje logowanie na początku z powodu niezgodności odcisku palca ECDSA. Jest to normalne, ponieważ tryb ratunkowy korzysta z własnego tymczasowego serwera SSH. Aby rozwiązać ten problem, edytuj plik `known_hosts` w Twoim lokalnym katalogu `.ssh`.  
+Masz dwie możliwości:
+
+- **Usuń odcisk palca z pliku.** Klient SSH doda nowy wpis odcisku palca dla serwera, gdy nie będziesz już korzystać z trybu Rescue. Więcej informacji na ten temat znajduje się w części "Login i fingerprint" naszego [przewodnika wprowadzającego do SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/).
+
+- **Tymczasowo wyłącz odcisk palca.** Otwórz plik `known_hosts` w edytorze tekstu i zidentyfikuj ciąg odcisku palca Twojego serwera za pomocą adresu IP. Dodaj znak `#` na początku wiersza. Dlatego ten wiersz jest teraz "komentarzem" i zostanie zignorowany przez aplikacje czytające plik. Nie zapomnij anulować tej zmiany przed ponownym uruchomieniem `Netboot` w trybie "normalnym".
+
+:::
+
+
+Kliknij zakładkę wybranej metody połączenia:
+
+<Tabs>
+  <Tab label="Uwierzytelnianie hasła">
+    Otwórz aplikację wiersza polecenia na urządzeniu lokalnym i wprowadź następującą komendę:
+    
+    ```bash
+    ssh root@SERVER_IP
+    ```
+    
+    Przykład:
+    
+    ```bash
+    ssh root@203.0.113.100
+    ```
+    
+    Po wyświetleniu monitu wprowadź hasło do tymczasowego trybu ratunkowego.
+    
+    ```console
+    root@ns9356771.ip-203-0-113.eu's password:
+    root@rescue-customer-eu (ns9356771.ip-203-0-113.eu) ~ #
+    ```
+    
+    Więcej informacji na temat połączeń SSH znajdziesz w naszym [przewodniku wprowadzającym do SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/).  
+    Możesz również użyć dowolnego narzędzia do logowania SSH, takiego jak [PuTTY](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/).
+  </Tab>
+  <Tab label="Uwierzytelnianie klucza">
+    Otwórz aplikację wiersza polecenia na urządzeniu lokalnym i wprowadź następującą komendę:
+    
+    ```bash
+    ssh -i USER_FOLDER/.ssh/KEY_FILE_NAME root@SERVER_IP
+    ```
+    
+    Przykład:
+    
+    ```bash
+    ssh -i ~/.ssh/MyAuthKey root@203.0.113.100
+    ```
+    
+    Jeśli zostanie wyświetlony monit, wprowadź hasło, aby odszyfrować plik klucza prywatnego.
+    
+    Więcej informacji na ten temat znajdziesz w naszych przewodnikach:
+    
+    - [Jak tworzyć i używać kluczy do uwierzytelniania SSH](/guides/bare-metal-cloud/dedicated-servers/creating-ssh-keys-dedicated/)
+    - [Jak tworzyć i używać kluczy do uwierzytelniania SSH za pomocą PuTTY](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/)
+  </Tab>
+</Tabs>
+
+
+
+### Montowanie partycji w celu uzyskania dostępu do plików
+
+Jeśli nie planujesz skonfigurować dysków serwera w sposób wymagający ich odłączenia (*unmounted*), musisz najpierw **zamontować partycję systemową**, aby uzyskać dostęp do danych z poziomu trybu Rescue.
+
+W pierwszym kroku wyświetl listę wszystkich partycji, aby odnaleźć partycję, którą należy zamontować:
+
+```bash
+lsblk
+```
+
+Przykłady wyjść:
+
+```console
+NAME      MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINT
+sda         8:0    0  1.8T  0 disk
+├─sda1      8:1    0  511M  0 part
+├─sda2      8:2    0  1.8T  0 part
+│ └─md127   9:127  0  1.8T  0 raid1
+├─sda3      8:3    0  512M  0 part
+└─sda4      8:4    0    2M  0 part
+sdb         8:16   0  1.8T  0 disk
+├─sdb1      8:17   0  511M  0 part
+├─sdb2      8:18   0  1.8T  0 part
+│ └─md127   9:127  0  1.8T  0 raid1
+└─sdb3      8:19   0  512M  0 part
+```
+
+```console
+NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+nvme1n1     259:0    0 894.3G  0 disk
+├─nvme1n1p1 259:2    0   511M  0 part
+├─nvme1n1p2 259:3    0     1G  0 part
+│ └─md2       9:2    0  1022M  0 raid1
+├─nvme1n1p3 259:4    0 892.3G  0 part
+│ └─md3       9:3    0 892.1G  0 raid1
+└─nvme1n1p4 259:5    0   512M  0 part
+nvme0n1     259:1    0 894.3G  0 disk
+├─nvme0n1p1 259:6    0   511M  0 part
+├─nvme0n1p2 259:7    0     1G  0 part
+│ └─md2       9:2    0  1022M  0 raid1
+├─nvme0n1p3 259:8    0 892.3G  0 part
+│ └─md3       9:3    0 892.1G  0 raid1
+├─nvme0n1p4 259:9    0   512M  0 part
+└─nvme0n1p5 259:10   0     2M  0 part
+```
+
+Następnie zamontuj odpowiednią partycję zgodnie z bieżącymi potrzebami:
+
+```bash
+mount /dev/PARTITION_NAME /MOUNT_POINT/
+```
+
+Partycja do zamontowania musi być łatwa do zidentyfikowania przez **SIZE** podane w tabeli (`sda2` w pierwszym przykładzie, `nvme1n1p3` w drugim). Jednak w [programowej konfiguracji RAID](/guides/bare-metal-cloud/dedicated-servers/raid-soft/) (w przykładach domyślny `raid1`) należy użyć identyfikatora woluminu RAID (`mdX`).  
+Używając nazwy katalogu `mnt` jako punktu montowania, dla pierwszego przykładu komenda `mount` będzie wyglądała następująco:
+
+```bash
+mount /dev/md127 /mnt/
+```
+
+Polecenie, które należy wprowadzić w drugim przykładzie:
+
+```bash
+mount /dev/md3 /mnt/
+```
+
+:::warning
+Powyższe przykłady po prostu ilustrują niezbędne kroki oparte na typowej konfiguracji serwera. Informacje o tablicy wyjściowej zależą od sprzętu serwera i jego schematu partycji. W przypadku wątpliwości zapoznaj się z dokumentacją systemu operacyjnego.
+
+Jeśli potrzebujesz profesjonalnego wsparcia w administrowaniu serwerem, zapoznaj się z sekcją [Sprawdź również](#gofurther) w tym przewodniku.
+
+:::
+
+
+Aby uzyskać bardziej techniczne informacje o dyskach i partycjach serwera, użyj polecenia:
+
+```bash
+fdisk -l
+```
+
+Niektóre zadania mogą wymagać odłączenia dysków lub partycji. W tym celu zastosuj polecenie *unmount*:
+
+```bash
+umount /mnt
+```
+
+### VMware - Zamontowanie datastore
+
+<details>
+
+<summary>Rozwiń tę sekcję</summary>
+
+
+Możesz zamontować datastore VMware w taki sam sposób, jak opisano w poprzednim etapie.
+
+Wyświetl listę partycji, aby pobrać nazwę partycji datastore:
+
+```bash
+lsblk
+```
+
+```bash
+fdisk -l
+```
+
+Zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością wskazaną w poprzednim kroku:
+
+```bash
+vmfs-fuse /dev/sdbX /mnt
+```
+
+Jeśli posiadasz datastores `VMFS 6`, przejdź do folderu `sbin` i utwórz folder montowania:
+
+```bash
+cd /usr/local/sbin/
+mkdir /mnt/datastore
+```
+
+Wyświetl listę partycji, aby pobrać nazwę partycji datastore:
+
+```bash
+lsblk
+```
+
+```bash
+fdisk -l
+```
+
+Zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością wskazaną w poprzednim kroku:
+
+```bash
+vmfs6-fuse /dev/sdbX /mnt/datastore/
+```
+
+</details>
+
+
+Po zakończeniu operacji montowania można uzyskać dostęp do plików i wykonywać zadania rozwiązywania problemów w folderze, który został ustawiony jako punkt montowania. Przykład:
+
+```bash
+cd /mnt
+```
+
+Niektóre operacje w systemie plików (takie jak konfigurowanie kont użytkowników) będą wymagały dodatkowego kroku. Utwórz tymczasowe środowisko `chroot` w punkcie montowania za pomocą tego polecenia:
+
+```bash
+chroot /mnt/
+```
+
+Teraz należy móc zastosować wszystkie niezbędne zmiany w systemie, na przykład aby [odzyskać dostęp do serwera](#gofurther).
+
+### Konfiguracja agregacji łączy w trybu rescue
+
+Agregacja łączy (LACP) jest bardzo korzystna, ponieważ pozwala zwiększyć całkowitą przepustowość serwera, zapewniając jednocześnie redundancję sieci w przypadku awarii interfejsu sieciowego.
+
+Chociaż trybu rescue jest oparty na systemie operacyjnym Debian 12, jego konfiguracja sieciowa opiera się na narzędziu `ifupdown`, a nie `Netplan`.
+
+Jeśli posiadasz serwer obsługujący agregację łączy i chcesz skonfigurować ją w trybu rescue, zapoznaj się z [tym przewodnikiem](/guides/bare-metal-cloud/dedicated-servers/ola-enable-debian9/).
+
+### Wyjście z trybu rescue
+
+W razie potrzeby powróć do powłoki połączenia trybu ratunkowego, wprowadzając:
+
+```bash
+exit
+```
+
+W Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) [zmień tryb uruchamiania](#netboot) ponownie na <code className="action">Uruchom z dysku twardego</code> i zatwierdź.
+
+<img className="thumbnail" alt="Netboot Disk" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-007.png" loading="lazy" />
+
+Możesz teraz zrestartować serwer z powłoki trybu Rescue:
+
+```bash
+reboot
+```
+
+Możesz również użyć funkcji <code className="action">Uruchom ponownie</code> w Panelu klienta.
+
+<a name="rescuessh"></a>
+
+### Jak dodać domyślny klucz uwierzytelniający dla trybu rescue
+
+<details>
+
+<summary>Rozwiń tę sekcję</summary>
+
+
+Aby przyspieszyć proces, możesz dodać do serwera publiczny klucz domyślny umożliwiający dostęp przez SSH w trybie Rescue. Można to zrobić tylko w [API OVHcloud](/guides/manage-and-operate/api/first-steps/).
+
+W tym celu w konsoli internetowej API otwórz następujący punkt końcowy API:
+
+<Api version="v1" section="/dedicated/server" method="PUT" route={"/dedicated/server/\{serviceName\}"} />
+
+Wprowadź wewnętrzną nazwę serwera (`ns111111.ip-203-0-113.eu`) w odpowiednim polu.
+
+Następnie zmodyfikuj poniższe pole tekstowe w następujący sposób:
+
+```bash
+{
+  "rescueSshKey": "string"
+}
+```
+
+Zastąp `string` pełnym ciągiem klucza publicznego.
+
+Wynik powinien wyglądać jak poniżej:
+
+<img className="thumbnail" alt="rescue key example" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-008.png" loading="lazy" />
+
+Po wpisaniu prawidłowych wartości kliknij przycisk <code className="action">EXECUTE</code>.
+
+Pole `Publiczny klucz SSH:` zostanie teraz automatycznie wypełnione tym ciągiem kluczy podczas [zmiany trybu `Netboot`](#netboot).
+
+</details>
+
+
+<a name="windows_legacy"></a>
+
+## Legacy Windows rescue system (tryb rescue WinPE)
+
+<details>
+
+<summary>Rozwiń tę sekcję</summary>
+
+
+Po otrzymaniu wiadomości e-mail z informacją o aktywacji trybu Rescue możesz zalogować się do systemu trybu Rescue i połączyć się z serwerem.  
+E-mail ten będzie również dostępny w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) od chwili wysłania. Kliknij nazwę powiązaną z Twoim identyfikatorem klienta na pasku menu w prawym górnym rogu, następnie wybierz <code className="action">E-maile dotyczące usługi</code>.
+
+Aby korzystać z graficznego interfejsu trybu ratunkowego Windows PE, należy pobrać i zainstalować konsolę VNC lub skorzystać z [modułu IPMI](/guides/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/) (niedostępnego dla wszystkich modeli serwerów).
+
+<img className="thumbnail" alt="Winrescue Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-mode/rescue-mode-009.png" loading="lazy" />
+
+Następujące narzędzia są już zainstalowane w tym trybie:
+
+|Narzędzie|Opis|
+|---|---| 
+|Mozilla ULight|Przeglądarka internetowa.|
+|Memory Diagnostics Tool|Narzędzie systemu Windows do testowania pamięci RAM.|
+|Explorer_Q-Dir|Eksplorator plików.|
+|GSmartControl|Narzędzie do sprawdzania dysków twardych i twardych SSD.|
+|PhotoRec|Narzędzie do odzyskiwania potencjalnie utraconych plików na dysku.|
+|SilverSHielD|Serwer SSH2 i SFTP.|
+|System Recovery|Narzędzie do przywracania systemu Windows i rozwiązywania problemów.|
+|TestDisk|Wydajna aplikacja do odzyskiwania danych. Umożliwia odzyskiwanie i modyfikację uszkodzonych partycji, odnajdowanie zgubionych partycji, naprawę sektora rozruchowego, a nawet odbudowę uszkodzonego MBR.|
+|FileZilla|Open source’owy klient FTP. Obsługuje protokoły SSH i SSL oraz posiada intuicyjny interfejs typu "przeciągnij i upuść". Może być używany do przesyłania danych na serwer FTP, na przykład kopii zapasowej FTP dostarczanej z większością modeli serwerów OVHcloud.|
+|7-ZIP|Narzędzie do kompresji i archiwizacji plików, które czyta następujące formaty: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR i Z. Pozwala również na tworzenie własnych archiwów w następujących formatach: , GZIP, TAR, WIM, XZ, Z i ZIP.|
+
+</details>
+
+
+<a name="gofurther"></a>
+
+## Sprawdź również
+
+[Jak używać trybu ratunkowego dla systemu Windows](/guides/bare-metal-cloud/dedicated-servers/rescue-customer-windows/)
+
+[Jak odzyskać dostęp do serwera w przypadku utraty hasła użytkownika](/guides/bare-metal-cloud/dedicated-servers/replacing-user-password/)
+
+[Jak zastąpić klucze uwierzytelniające w przypadku utraty klucza SSH](/guides/bare-metal-cloud/dedicated-servers/replacing-lost-ssh-key/)
+
+[Konfiguracja i rekonstrukcja programowej macierzy RAID](/guides/bare-metal-cloud/dedicated-servers/raid-soft/)
+
+[Jak diagnozować problemy sprzętowe z serwerami](/guides/bare-metal-cloud/dedicated-servers/hardware-diagnose/)
+
+[Jak korzystać z konsoli IPMI na serwerze dedykowanym](/guides/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

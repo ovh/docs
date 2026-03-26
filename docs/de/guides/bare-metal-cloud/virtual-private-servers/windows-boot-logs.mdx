@@ -1,0 +1,67 @@
+---
+title: VPS - Windows-Startprotokolle aktivieren
+description: Erfahren Sie, wie Sie Windows-Startprotokolle aktivieren, um bei der Diagnose und Fehlerbehebung von Startproblemen Ihres VPS zu helfen
+lastUpdated: 2026-01-21
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Ziel
+
+Windows-Startprotokolle ermöglichen es Ihnen, die während des Systemstarts geladenen Treiber und Dienste zu identifizieren.  
+Sie sind besonders nützlich für die **Diagnose von Startproblemen**, **blaue Bildschirme** oder **Systemabstürze**.
+
+**Dieses Handbuch erklärt, wie Sie Windows-Startprotokolle auf einem Server aktivieren, um die Analyse und Fehlerbehebung Ihres VPS zu unterstützen.**
+
+## Voraussetzungen
+
+- Ein aktives [VPS](https://www.ovhcloud.com/de/vps/)-Angebot in Ihrem OVHcloud Kundencenter.
+
+## In der praktischen Anwendung
+
+### Aktivieren von Windows-Startprotokollen
+
+Windows-Startprotokolle können bei der Diagnose von Serverfehlern hilfreich sein.
+
+Um sie zu aktivieren, gehen Sie wie folgt vor, indem Sie durch die Registerkarten navigieren:
+
+<Tabs>
+  <Tab label="1. **Mit dem Server verbinden**">
+    Verbinden Sie sich mit Ihrem Server über eine Remote-Desktop-Verbindung oder eine [KVM-Sitzung](/guides/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/).
+  </Tab>
+  <Tab label="2. **Das Run-Tool öffnen**">
+    Öffnen Sie das Windows `Start`-Menü und klicken Sie auf <code className="action">Run</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-start-run.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. **`msconfig` öffnen**">
+    Geben Sie `msconfig` ein und klicken Sie auf <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-msconfig.png" loading="lazy" />
+  </Tab>
+  <Tab label="4. **Protokolle aktivieren**">
+    Im neuen Fenster aktivieren Sie die Protokolloption neben `Boot log`. Klicken Sie anschließend auf <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-log.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Beim nächsten Serverstart werden die Protokolle in einer `.txt`-Datei gespeichert. Der Dateipfad lautet: `C:\Windows\ntbtlog.txt`.
+
+Um die Protokolldatei im Rettungsmodus zu öffnen, folgen Sie den Anweisungen im Handbuch "[Rescue-Modus für einen VPS aktivieren und verwenden](/guides/bare-metal-cloud/virtual-private-servers/rescue/)".
+
+## Weiterführende Informationen
+
+[Administrator-Passwort auf einem Windows-Server ändern](/guides/bare-metal-cloud/virtual-private-servers/resetting-a-windows-password/)
+
+[VPS FAQ](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+[SSH-Einführung](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/)
+
+[Einen VPS sichern](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps/)
+
+[So rufen Sie den Server wieder auf, wenn Sie das Benutzerpasswort verloren haben](/guides/bare-metal-cloud/dedicated-servers/replacing-user-password/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

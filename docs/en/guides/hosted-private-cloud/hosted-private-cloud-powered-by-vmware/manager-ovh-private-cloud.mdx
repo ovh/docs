@@ -1,0 +1,206 @@
+---
+title: Introduction to the Hosted Private Cloud Control Panel
+description: Find out how to use the OVHcloud Hosted Private Cloud Control Panel
+lastUpdated: 2021-12-15
+---
+
+## Objective
+
+The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage your Hosted Private Cloud infrastructure.
+
+**This guide explains the management options available.**
+
+## Requirements
+
+- A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+
+## Instructions
+
+### Interface Access
+
+Navigate to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and log on with your administrative credentials.
+
+<img className="thumbnail" alt="LOGIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en01login.png" loading="lazy" />
+
+### Hosted Private Cloud View
+
+Go to the <code className="action">Hosted Private Cloud</code> tab and select your service under <code className="action">Private Cloud</code> in the left-hand navigation bar. You can rename your infrastructure by clicking the <code className="action">Pencil</code> button in the center of the page.
+
+<img className="thumbnail" alt="HOSTED" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en02dashboard.png" loading="lazy" />
+
+#### General Information
+
+The General Information tab gives you an overview of your services:
+
+- The "Description" field is editable through the <code className="action">...</code> button 
+- The "Software solution" shows the vCSA version installed
+- The "Location" of your Hosted Private Cloud
+- The "Access policy" of your infrastructure (`Open` or `Restricted`)
+- The "Number of datacenters" in your infrastructure
+- The "Number of IP blocks" you own and the option to order more through the <code className="action">...</code> button  
+- Links to your management interfaces
+- Your "Options and compliance" tab shows your enabled and disabled options with direct access to modification though the <code className="action">...</code> buttons
+- The "Mailing list" section allows you to sign up to the OVHcloud Hosted Private Cloud mailing list
+- The "Renewal" date section also allows for license ordering or service cancellation through the <code className="action">...</code> button
+
+<img className="thumbnail" alt="GENERAL" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en03general.png" loading="lazy" />
+
+#### Datacenters
+
+The Datacenters tab shows your current virtual datacenters and offers a button to add more as you need.<br/>
+The full Datacenter view (see below) will give you more details and options. 
+
+<img className="thumbnail" alt="DATACENTERS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en04datacenters.png" loading="lazy" />
+
+#### Users
+
+The Users tab lists all the accounts which can log in to vSphere and allows the creation of new ones.
+
+<img className="thumbnail" alt="USERS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en05users.png" loading="lazy" />
+
+You have several options when you click on the <code className="action">...</code> button next to a user
+
+- Edit the entries in the summary table
+- See/Change the user's rights for each Datacenter
+- Change the user's password
+- Delete the user
+
+Clicking <code className="action">See/Change the rights for each DC</code> will take you to the rights management window.
+
+<img className="thumbnail" alt="RIGHTS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en06rights.png" loading="lazy" />
+
+Click <code className="action">...</code> and then <code className="action">Modify rights</code> to edit them.
+
+- **vSphere access**: to set the global rights for a user in vSphere
+
+|Right|Description|
+|---|---|
+|Provider|reserved for OVHcloud administrators|
+|None|no access|
+|Read-only|read-only access|
+|Read/Write|read and write access|
+
+- **Access to the VM Network**: concerns management rights over the public network section (a.k.a "VM Network" in the vSphere interface)
+
+|Right|Description|
+|---|---|
+|Provider|allows VMs to be configured on a public network|
+|None|no access|
+|Read-only|read access only|
+
+- **Access to the V(X)LANs**: concerns management rights over the private network section (VXLAN for Hosted Private Cloud and VLAN for SDDC)
+
+|Right|Description|
+|---|---|
+|Provider|allows VMs to be configured on a private network|
+|Administrator|allows port groups to be managed on the virtual switch (creation, modification, deletion), for SDDCs only|
+|None|no access|
+|Read-only|read access only|
+
+- **Add resources**: gives the right to add additional resources through the OVHcloud plugin in the vSphere client
+
+<img className="thumbnail" alt="RIGHTS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en07editrights.png" loading="lazy" />
+
+#### Security
+
+The Security tab allows for management of vCenter access policy.<br/>
+You can configure options settings with the buttons on the right.
+
+<img className="thumbnail" alt="SECURITY" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en08security.png" loading="lazy" />
+
+:::warning
+ If you set the access policy to "Restricted" and do not enter any IP addresses, no user will be able to connect to the vSphere client. However, virtual machines will remain accessible.
+
+:::
+
+
+At the bottom of the page, you can also add or see your Key Management Servers.<br/>
+Check out [Enabling Virtual Machine Encryption](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vm-encrypt/) for more details.
+
+<img className="thumbnail" alt="KMS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en09kms.png" loading="lazy" />
+
+#### Operations
+
+The Operations tab keeps a log of all tasks executed on your infrastructure.<br/>
+You can sort the list by types and if the tasks are actionable, you will have options available through the <code className="action">...</code> button.
+
+<img className="thumbnail" alt="OPS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en10ops.png" loading="lazy" />
+
+:::info
+If your access to the vSphere client is denied, a scheduled maintenance may be in progress. Check this tab first before taking further measures.
+
+:::
+
+
+#### Windows Licence
+
+The Windows license tab shows your Windows SPLA licence status.<br/>
+More information on the [pricing page](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/images-licenses/).
+
+<img className="thumbnail" alt="SPLA" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en11spla.png" loading="lazy" />
+
+### Datacenter View 
+
+A Hosted Private Cloud may include multiple virtual datacenters.<br/>
+The left-hand navigation bar will list them when you select a Hosted Private Cloud service. Click on one to open its management page.<br/>
+The datacenter name and description can be customized by clicking the <code className="action">Pencil</code> button.
+
+<img className="thumbnail" alt="DATACENTER" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en12datacenter.png" loading="lazy" />
+
+#### General Information
+
+The General Information tab gives you an overview of your services:
+
+- The "Name" and "Description" fields are editable via the <code className="action">...</code> button
+- The "Range" shows the VMware services suscribed
+- The "Hosts" and "Datastores" fields give you the quantity of each in your Hosted Private Cloud
+- The "VMs backed up" shows your backup solution status
+- The "Disaster Recovery Plan" shows your DRA solution status
+- Links to your management interfaces
+
+<img className="thumbnail" alt="GENERAL" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en13general.png" loading="lazy" />
+
+#### Hosts
+
+The Hosts tab gives a summary of your hosts in the selected datacenter.<br/>
+*The billing mode is switchable via the <code className="action">...</code> button if the billing mode is set to hourly*<br/>
+You can also order one host via the <code className="action">Order a host</code> button.
+
+<img className="thumbnail" alt="HOSTS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en14hosts.png" loading="lazy" />
+
+#### Datastores
+
+The Datastores tab gives a summary of your datastores in the selected datacenter.<br/>
+*The datastore mode is switchable to global via the <code className="action">...</code> button*<br/>
+You can also order a datastore via the <code className="action">Order a datastore</code> button.
+
+<img className="thumbnail" alt="DATASTORES" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en15datastores.png" loading="lazy" />
+
+#### Backup
+
+The Backup tab allows you to activate a Veeam Backup solution.<br/>
+Check out the [Activating and using Veeam Managed Backup](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/) guide for more details.
+
+<img className="thumbnail" alt="BACKUP" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en16backup.png" loading="lazy" />
+
+Once the solution is activated, the Backup page also allows you to set up daily backup reports.
+
+<img className="thumbnail" alt="BACKUP" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en17backupreport.png" loading="lazy" />
+
+#### Disaster Recovery Plan (DRP)
+
+The Disaster Recovery Plan tab allows you to build a DRP plan with Zerto.<br/>
+Check out [Setting up Zerto Virtual Replication for your DRP](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-as-a-service/) for more details.
+
+<img className="thumbnail" alt="DRP" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/en18drp.png" loading="lazy" />
+
+:::warning
+ You need to own a secondary Hosted Private Cloud solution to enable any Zerto option.
+
+:::
+
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

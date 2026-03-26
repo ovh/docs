@@ -1,0 +1,8 @@
+# Redirect rules (301 Permanent)
+# Format: source destination
+
+/ /fr/;
+
+
+
+

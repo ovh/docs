@@ -1,0 +1,119 @@
+---
+title: Hosting WWW - Włączanie darmowy hosting 100M
+description: Dowiedz się, jak włączyć darmowy hosting 100M
+lastUpdated: 2024-12-06
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie 
+
+Dzięki [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/), OVHcloud oferuje hosting WWW o rozmiarze 100 MB oraz konto e-mail o pojemności 5 GB.
+Z tego przewodnika dowiesz się, jak włączyć Darmowy hosting 100M w swojej [domenie](https://www.ovhcloud.com/pl/domains/).
+
+:::warning
+Ten darmowy hosting o rozmiarze 100 MB jest odpowiedni do prostej strony WWW w której **można wyświetlić serwer bez bazy danych**.
+Jest to również właściwe, jeśli nie potrzebujesz więcej niż jednego konta e-mail typu "MX plan". 
+Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, takich jak CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), zachęcamy do zamówienia jednej z [naszych ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/) na naszej stronie internetowej lub w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+:::
+
+
+**Dowiedz się, jak włączyć darmowy hosting 100M**
+
+## Wymagania początkowe
+
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), odłączone od hostingu www i bez żadnego [MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/).
+
+:::info
+Darmowe zakwaterowanie 100M jest **tylko** dostępne dla naszych gości w Europie.
+
+:::
+
+
+{/* CP-NAV-START:web-domains */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](https://manager.eu.ovhcloud.com/#/web-domains/domain)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Domeny</code> > Wybierz nazwę domeny
+
+---
+{/* CP-NAV-END:web-domains */}
+
+
+## W praktyce
+
+Aby włączyć darmowy hosting 100M, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Domeny](https://manager.eu.ovhcloud.com/#/web-domains/domain), następnie wybierz odpowiednią domenę.
+    
+    <img className="thumbnail" alt="Domain Names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    W ramce **Informacje ogólne** znajduje się pozycja **Darmowy hosting WWW i e-mail**. Kliknij przycisk <code className="action">...</code> po prawej stronie, a następnie przycisk <code className="action">Włącz</code>.
+    
+    <img className="thumbnail" alt="enable 100m" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 3">
+    Pojawi się okno aktywacyjne. W sekcja **1** wyświetla się przypomnienie oferty i cennika. Kliknij przycisk <code className="action">Dalej</code>.
+    W sekcja **2** wybierz zmiany, jakie mają zostać wprowadzone w strefie DNS:
+    
+    <img className="thumbnail" alt="activate100m" src="/images/assets/screens/control-panel/product-selection/web-cloud/order/order-100m-step-2.png" loading="lazy" />
+    
+    | Wybór                                       	| Opis                                                                                                               								|
+    |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Rekord DNS A                         	| Domena będzie wskazywać na adres IP Darmowy hosting 100M.                                               								|
+    | Rekord DNS MX 	| Do nazwy domeny zostaną zastosowane serwery e-mail (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.). 	|
+    
+    :::warning
+    Jeśli zaznaczysz jedno z dwóch pól `Rekord DNS A` i `Rekord DNS MX` lub oba te pola, zostanie on usunięty z konfiguracji pierwotnie wprowadzonej w strefie DNS Twojej domeny.
+    Zaznacz oba pola, aby automatycznie skonfigurować domenę z darmowym hostingiem 100M i jego usługą e-mail.
+    
+    Jeśli Twoja strefa DNS nie jest zarządzana w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), wprowadź ręcznie zmiany w zewnętrznej strefie DNS.
+    
+    Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [edycji strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+
+    :::
+
+    
+    Sekcja **3** przypomina o cenniku oferty. 
+    
+    Podczas sekcja **4** zapoznaj się z regulaminami i zatwierdź zamówienie.
+  </Tab>
+</Tabs>
+
+
+:::info
+Jeśli Twój projekt wymaga szybszego przejścia na hosting z bazą danych, z większej przestrzeni dyskowej lub z większej liczby adresów e-mail, będziesz mógł przejść bezpośrednio i tylko z Darmowy hosting 100M na ofertę hostingu **Perso** z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+Przejście na ofertę **Pro** lub **Performance** wymaga wcześniejszego przejścia z oferty Darmowy hosting 100M na ofertę **Perso**.
+
+Możesz również usunąć bezpłatną ofertę, dbając o wcześniejsze pobranie danych o hostingu oraz zawartości konta e-mail.
+
+Aby uzyskać więcej informacji, sprawdź [naszą ofertę hostingu](https://www.ovhcloud.com/pl/web-hosting/).
+
+:::
+
+
+Po zatwierdzeniu zamówienia otrzymasz wiadomość e-mail z danymi do [logowania FTP](/guides/web-cloud/web-hosting/ftp-connection/) do **darmowy hosting 100M**.
+
+Zapoznaj się z przewodnikiem [utworzenie konta E-mail MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/), aby korzystać z adresu e-mail zawartego w pakiecie **hostingowym Darmowy hosting 100M**.
+
+## Sprawdź również
+
+[Logowanie do przestrzeni dyskowej hostingu www](/guides/web-cloud/web-hosting/ftp-connection/)
+
+[Tworzenie konta e-mail w ramach usługi MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/)
+
+[Zarządzanie certyfikatem SSL na hostingu](/guides/web-cloud/web-hosting/ssl-on-webhosting/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en)

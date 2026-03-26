@@ -1,0 +1,125 @@
+---
+title: How to use the Public Cloud interface
+description: Guided tour of the Public Cloud interface to explore the different sections
+lastUpdated: 2025-04-28
+---
+
+## Objective
+
+You have just created your Public Cloud project, and you would like to find out more about the user interface in the OVHcloud Control Panel.
+
+**Explore the main sections of the Public Cloud interface in the OVHcloud Control Panel.**
+
+## Requirements
+
+- A [Public Cloud project](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+Once you have created your first Public Cloud project, you will be redirected to the main Public Cloud interface.
+
+<img className="thumbnail" alt="Public Cloud interface" src="/images/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/main-interface-2025.png" loading="lazy" />
+
+### Access to your OVHcloud account information
+
+Your OVHcloud account settings are accessible at any time, as are notifications or a change of language in the OVHcloud Control Panel.
+
+<img className="thumbnail" alt="Public Cloud interface - account menu" src="/images/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/account-2025.png" loading="lazy" />
+
+### Your Public Cloud project
+
+Because you can use multiple projects (depending on your quotas), the project name and ID are always displayed, regardless of which screen you are visiting, so you know what environment you are acting on.
+
+<img className="thumbnail" alt="Project menu" src="/images/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/project-menu-2025.png" loading="lazy" />
+
+The ID may be required when using the CLI, for certain support requests or otherwise. You can copy it by clicking on the icon to the right of it.
+
+You can change the project name via the <code className="action">Settings</code> tab. Enter a new name, then click on <code className="action">Update</code>.
+
+<img className="thumbnail" alt="Rename a Public Cloud project" src="/images/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/rename-project.png" loading="lazy" />
+
+### The Public Cloud main menu
+
+<img className="thumbnail" alt="Public Cloud interface - main menu" src="/images/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/main-menu-2025.png" loading="lazy" />
+
+|Section|Options description|
+|---|---|
+|**Compute**|This section allows you to start instances, these are cloud servers available on demand.|
+|**Storage & backup**|In this section, you will find different storage solutions and databases, each corresponding to a specific need and use.|
+|**Network**|In this section, you will find everything you need to interconnect your Public Cloud resources, and how to connect them to other OVHcloud products.|
+|**Containers & Orchestration**|This section offers you various tools to automate your architectures and gain flexibility.|
+|**Databases & Analytics**|These services will help you solve your Big Data and Data Analytics problems.|
+|**AI & Machine Learning**|In this section, you will find the OVHcloud artificial intelligence tools.|
+
+### Shortcuts
+
+The center of the screen provides shortcuts for quick access to the most useful configuration wizards and guides.
+
+<img className="thumbnail" alt="Public Cloud interface - shortcut menu" src="/images/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/shortcuts-2025.png" loading="lazy" />
+
+#### Assistance for the creation of resources
+
+For each resource you want to create, you will be accompanied by a configuration wizard which, step by step, allows you to set up the resource according to your needs. 
+<br/>Most of the time, you will have to choose the location of the resource, the model, some customisable settings and, in some cases, the billing method.
+
+<img className="thumbnail" alt="Public Cloud interface - configuration assistant" src="/images/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/wizard-2025.png" loading="lazy" />
+
+### Management tools
+
+There are several management tools available in your Public Cloud project, they are located at the bottom of the left-side menu bar.
+
+<img className="thumbnail" alt="Public Cloud interface - management tools" src="/images/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/management-tools-2025.png" loading="lazy" />
+
+|Menu entry|Description|
+|---|---|
+|**Horizon**|This is the [graphical interface](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/) usually available on OpenStack. It is not altered, which allows users who are used to this interface to easily navigate it.|
+|**Users & Roles**|Allows you to [create users](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/) and assign them a role. These users can also access the APIs or the Horizon interface directly. For example, you can create a user for your standard maintenance operations, and a user for your automation tools, such as Terraform.|
+|**Quota & Regions**|This tool allows you to control the locations and resource limits available on your project.<br/><br/>**Quotas**: Based on certain criteria (number of bills already paid, use of other OVHcloud products), our system sets quotas (limits) on the number of resources you can create, in order to avoid any outstanding amounts. By default, the system increases your quotas automatically when certain criteria are met. However, you can [manually increase a quota](/guides/public-cloud/public-cloud-cross-functional/increasing-public-cloud-quota#increasing-your-resources-quota-manually/) from this tool.<br/><br/>**Regions**: Public Cloud is available in several locations around the world. Furthermore, each location can contain several “regions” (a concept unique to OpenStack). For example, for a European customer, the APAC (Asia Pacific) zone is disabled by default. If it suits your needs, you can activate new regions from this menu.|
+|**SSH Keys**|A tool that allows you to [manage your SSH keys](/guides/public-cloud/compute/compute-creating-ssh-keys/) in a centralised way.|
+|**Billing Control**|Since the Public Cloud is based on *pay as you go*, invoices are issued at the end of the month. In [this menu](/guides/public-cloud/public-cloud-cross-functional/analyze-billing/), you can track your current usage, see a forecast for the next invoice, and of course see your previous invoices.|
+|**Credits & Vouchers**|This menu allows you to view the consumption of a voucher, add a voucher, or [add credit](/guides/account-and-service-management/managing-billing-payments-and-services/add-cloud-credit-to-project/) directly to your Public Cloud project.|
+|**Savings Plan**| This is a pricing model that offers discounts on specific resources when you opt for commitment periods of up to 36 months.|
+|**Contacts & Rights**|In addition to changing the technical contact or billing contact for your project, you will have the option of [adding other contacts](/guides/public-cloud/compute/change-project-contacts/) (OVHcloud account) to manage your project technically. You can also add users in read-only mode.|
+|**Project settings**|With this tool, you can configure the project’s general settings, such as its name, its configuration as a "default project for the account", HDS compatibility, or [delete your Public Cloud project](/guides/public-cloud/public-cloud-cross-functional/delete-a-project/).|
+
+### Services management
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2mHcXQC6mTM?si=8_0aQCfBtmumGRbh" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen={true}></iframe>
+
+:::info
+In this section, we present an overview of the different service management options offered by OVHcloud, through three main tools: the OVHcloud Control Panel, Horizon and the OpenStack API. Each of these tools has been designed to meet specific needs according to your level of expertise, management preferences, and performance and customization requirements.
+
+The matrix below compares the key features of each tool to help you choose the solution best suited to your needs. Whether you're a beginner, intermediate user or automation expert, this comparison will help you better understand the benefits, ease of use, skill levels required, and scalability of each tool.
+
+:::
+
+
+| Criteria/Characteristics                   | OVHcloud Control Panel | Horizon | OpenStack API |
+| ------------------------------------------ | ---------------------- | ------- | ------------- |
+| Key benefits | Intuitive interface, ideal for quick start-up. | Increased control for experienced users, with an advanced view of parameters. | Complete automation, with seamless integration with other tools.
+| Skill level required                       | Accessible to all, ideal for beginners or simple needs | Intermediate, requires some expertise (System Administrators, Cloud Engineers, etc.) | Advanced, requires scripting/API skills (Cloud Architects, DevOps Engineers, Automation Experts) |
+| Ease of use                                | Intuitive and accessible | Advanced but visual | Technical |
+| Customisation                            | Low - Ideal for fast, standard configurations, with limited advanced control. |  Medium - Graphical interface offering advanced settings (network, storage, etc.), albeit restricted by the user interface. | Very high - Virtually complete customization via API, with the ability to create scripts, automated workflows and customized architectures. |
+| Performance and scalability                | Limited performance and basic scalability. Suitable for small or non-critical deployments. Scalability is generally manual and slower. Ideal for static environments or small projects. | Average performance with improved scalability management via GUI. Faster scalability than in the OVHcloud Control Panel, but limited by the interface. Suitable for medium-sized projects or those requiring scalability. |  Optimal performance and complete scalability. Enables rapid, automated mass deployments via scripts or third-party tools. Ideal for dynamic infrastructures, heavy loads and environments requiring high elasticity. Recommended for mission-critical architectures. |
+| Perimeters of use (Compute)                | - Simplified creation and management of virtual machines (VMs).<br/> - Resize VMs after creation (hot or cold modification of the flavor model, depending on available resources).<br/> - Select standard VM configurations (RAM, CPU, storage).<br/> - Management of essential actions: start, stop and delete VMs.<br/> - Access to snapshots for fast backups and simplified restores.<br/> - Assign and manage Floating IP addresses.<br/> - Creation and basic administration of additional disks.<br/> - Essential resource monitoring (CPU, memory, storage). | - Advanced access management: support for role-based access control (RBAC) for secure multi-user management.<br/> - Advanced network administration: creation and management of complex private networks associated with VMs (internal networks, subnets).<br/> - Deploy VMs with specific network configurations, including management of multiple network interfaces.<br/> - Use of customised images for VM creation, as an alternative to the standard images offered by OVHcloud.<br/> - Integration of pre-configured workflows via Horizon to automate deployment and configuration. | - Complete automation: all actions available in the OVHcloud Control Panel and Horizon can be carried out via the API, with the option of automating and scripting them.<br/> - Infrastructure deployment in Infrastructure as Code (IaC) mode, using tools such as Terraform, Ansible or customized scripts.<br/> - Integration with CI/CD pipelines for automated deployments (e.g. integration with GitLab CI).<br/> - Advanced resource quota management (number of CPUs, total RAM, etc.).<br/> - Dynamic scalability: automatic adjustment of instances according to load via API or scripts.<br/> - Monitoring and collection of customised metrics via API, offering greater granularity than Horizon or OVHcloud Control Panel interfaces. |
+| Perimeters of use (Network)                | - Create and manage private networks.<br/> - Association of Floating IP addresses and additional IP addresses.<br/> - Basic Routing configuration. | - Advanced management of security rules via Security Groups.<br/> - Visualization of network topologies for simplified management.<br/> - Full IPv6 subnet support for modern connectivity.<br/> - Configuration of QoS (Quality of Service) policies to prioritize network resources. | - Access to all Horizon and OVHcloud Control Panel functionalities.<br/> - Create customized routes for more flexible network management.<br/> - Precise configuration of QoS (Quality of Service) policies.<br/> - Advanced VRRP (Virtual Router Redundancy Protocol) management to ensure router redundancy.<br/> - Automation of network actions through scripting (Infrastructure as Code).<br/> - Integration with SDN (Software-Defined Networking) solutions for agile network management. |
+| Perimeters of use (Storage & backup)       | - Create and manage storage volumes: Object Storage, Block Storage and File Storage.<br/> - Basic automatic backup (snapshots) of volumes, with the option of restoring them.<br/> - Association of storage volumes with instances for simplified access.<br/> - Object Storage (Swift) containers to organize data.<br/> - Visualize volume status and used storage space.<br/> - Add and manage files in Object Storage. | - Advanced snapshot management: retention, duplication and other options for precise backup control.<br/> - Detailed multi-attach management for greater flexibility.<br/> - Creation and management of scheduled backups with customisable backup policies.<br/> - Monitoring of storage quota usage for optimal monitoring of available space. | - Features accessible via Horizon and the OVHcloud Control Panel.<br/> - Integration and automation via scripts (Infrastructure as Code) for seamless management.<br/> - Advanced configuration of network shares (NFS, CIFS) for greater flexibility in file organisation.<br/> - Precise management of object metadata in Object Storage for optimal data control.<br/> - Advanced configuration of object replication and versioning for high availability and complete version management.<br/> - Direct access to Swift API for seamless integration with third-party tools.<br/> - Customised workflows to automate and efficiently manage backup processes. |
+
+## Go further
+
+[Creating and connecting to your first Public Cloud instance](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

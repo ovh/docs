@@ -1,0 +1,115 @@
+---
+title: Configuration de votre ligne Fax
+description: Découvrez comment configurer votre ligne Fax depuis votre espace client OVHcloud
+lastUpdated: 2025-04-28
+---
+
+## Objectif
+
+Vous pouvez configurer votre ligne Fax directement via votre espace client OVHcloud, pour optimiser la réception et l'envoi de vos fax sur votre télécopieur, préciser des adresses e-mail de notification ou d'envoi, ou encore appliquer des filtrages.
+
+**Découvrez les différentes options de configuration disponibles dans l'espace client OVHcloud.**
+
+## Prérequis
+
+- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+## En pratique
+
+Sélectionnez l’onglet <code className="action">Services</code> puis la ligne Fax concernée.
+
+### Mot de passe fax
+
+L'envoi de télécopies par e-mail ou via le logiciel EcoFax nécessite de définir un mot de passe fax.
+
+Pour le définir, sélectionnez votre ligne FAX, cliquez sur l'onglet <code className="action">Fax</code> puis sur <code className="action">Mot de passe fax</code>.
+
+<img className="thumbnail" alt="mot de passe fax" src="/images/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/motdepassefax.png" loading="lazy" />
+
+Le mot de passe doit contenir au moins 6 caractères.
+
+:::info
+Dans le cas d'une ancienne offre de type « EcoFax Perso », la modification du mot de passe s'effectue depuis l'onglet <code className="action">Configuration du fax</code> puis en cliquant sur <code className="action">Générer</code>.
+
+:::
+
+
+### Options de configuration
+
+Sélectionnez votre ligne FAX, cliquez sur l'onglet <code className="action">Fax</code> puis sur <code className="action">Configuration du Fax</code>.
+
+<img className="thumbnail" alt="menu fax" src="/images/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/configuration-fax.png" loading="lazy" />
+
+:::info
+Dans le cas d'une ancienne offre de type « EcoFax Perso », l'envoi des fax est possible si le nombre de fax restant est positif. Dans le cas contraire, vous pouvez commander des fax via l'onglet situé juste en dessous.
+
+:::
+
+
+#### Options générales
+
+La qualité d'envoi de vos télécopies peut avoir un impact sur vos émissions de télécopies à destination de certains numéros spéciaux.
+
+Passez-la en « Meilleure » pour faciliter des envois vers les numéros spéciaux ou étrangers.
+
+Vous pouvez aussi paramétrer le nombre de tentatives d'envoi maximum, dans le cas d'un échec de transmission lors de la première tentative.
+
+<img className="thumbnail" alt="options envoi" src="/images/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/options_generales.jpg" loading="lazy" />
+
+#### En-tête des fax émis
+
+Vous pouvez personnaliser l'en-tête de vos télécopies selon la méthode ci-dessous.
+
+<img className="thumbnail" alt="entete fax" src="/images/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/entete_des_fax_emis.jpg" loading="lazy" />
+
+Une personnalisation défectueuse de l'en-tête peut être à l'origine de difficultés d'envoi de télécopies.
+<br/>Dans ce cas, vous pouvez rétablir l'en-tête par défaut en copiant la valeur ci-dessous :
+
+```console
+De %%l|%c|Page %%P sur %%T
+```
+
+#### Options de notifications
+
+Personnalisez l'adresse e-mail et le nom de l'expéditeur des notifications que vous recevez. Cela permet d'éviter les filtres automatiques (type spam webmail).
+
+Vous pouvez également définir le format Texte ou HTML de l'e-mail reçu.
+
+<img className="thumbnail" alt="notifications" src="/images/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/options_de_notifications.jpg" loading="lazy" />
+
+#### Adresses à notifier
+
+Configurez les adresses e-mail sur lesquelles vous recevrez les télécopies.
+
+Vous pouvez renseigner jusqu'à 5 adresses différentes.
+
+<img className="thumbnail" alt="adresses de notification" src="/images/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/adresses_notifications.png" loading="lazy" />
+
+### Options de filtrage
+
+Vous pouvez appliquer des règles de filtrage sur votre ligne Fax afin de ne pas recevoir de télécopies indésirables.
+
+Pour configurer ces filtrages, sélectionnez votre ligne FAX, cliquez sur l'onglet <code className="action">Fax</code> puis sur <code className="action">Filtrage de fax</code>.
+
+<img className="thumbnail" alt="filtrage fax" src="/images/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/filtrage_menu.png" loading="lazy" />
+
+Vous pouvez configurer et activer soit une liste blanche, soit une liste noire de numéros à filtrer. Vous pouvez également rejeter les télécopies anonymes.
+
+<img className="thumbnail" alt="filtrage fax" src="/images/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/regles_filtrage.png" loading="lazy" />
+
+Commencez par ajouter les numéros à filtrer dans le menu de droite puis activez la liste blanche ou noire dans le menu de gauche.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

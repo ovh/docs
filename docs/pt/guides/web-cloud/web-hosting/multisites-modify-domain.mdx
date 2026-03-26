@@ -1,0 +1,159 @@
+---
+title: Alojamento web - Alterar um nome de domínio já associado a um alojamento
+description: Saiba como alterar as configurações de associação de um domínio/subdomínio já declarado na sua oferta de alojamento web
+lastUpdated: 2025-11-05
+---
+
+## Objetivo
+
+Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de alterar as definições do seu domínio ou subdomínio já associado ao seu alojamento web.
+
+:::info
+Este guia explica unicamente como alterar um domínio ou um subdomínio já declarado num alojamento web da OVHcloud. Se pretender associar um novo domínio/subdomínio ao seu alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/guides/web-cloud/web-hosting/multisites-configure-multisite/)".
+
+:::
+
+
+**Saiba como alterar as definições de associação de um domínio/subdomínio já registado na sua oferta de alojamento web.**
+
+## Requisitos
+
+- Ter um plano [de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de um ou vários [nomes de domínio](https://www.ovhcloud.com/pt/domains/).
+- Dispor de direitos suficientes sobre o conjunto dos serviços em causa. Encontre mais informações no nosso guia "[Como gerir os contactos (gestores) dos serviços OVHcloud](/guides/account-and-service-management/account-information/managing-contacts/)".
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Alojamentos</code> > Selecione o seu alojamento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instruções
+
+:::warning
+A modificação das configurações de associação de um domínio ou de um subdomínio pode, em caso de má manipulação, levar a uma interrupção do acesso aos seus serviços (o seu website). Se não tiver a certeza quanto às alterações a realizar, não hesite em contactar um fornecedor especializado
+
+:::
+
+
+Para alterar as configurações de associação de um domínio ou subdomínio já declarado na sua oferta de alojamento web, execute as seguintes ações:
+
+1. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+2. Clique no separador <code className="action">Web Cloud</code>.
+3. Na coluna da esquerda, clique no menu <code className="action">Alojamentos</code>.
+4. Selecione o alojamento web em causa.
+5. Na página que se abrir, clique no separador <code className="action">Multisite</code>.
+6. Na tabela que se abrir abaixo do separador e à direita do domínio/subdomínio em questão, clique no botão <code className="action">...</code> e, a seguir em <code className="action">Modificar o domínio</code>.
+
+<img className="thumbnail" alt="Modify domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png" loading="lazy" />
+
+Aparecerá a seguinte janela:
+
+<img className="thumbnail" alt="Modify domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png" loading="lazy" />
+
+No resto deste guia, encontrará uma descrição de cada um dos parâmetros disponíveis na janela acima. Depois de ler as diferentes descrições abaixo e depois de fazer as suas modificações, clique no botão <code className="action">Seguinte</code> situado no canto inferior direito da janela e, em seguida, passe para a [etapa 2](#step2).
+
+### Etapa 1 - Descrição dos parâmetros alteráveis <a name="step1"></a>
+
+:::info
+O formulário <code className="action">Domínio</code> não pode ser alterado, pois trata-se de uma alteração dos parâmetros do nome de domínio associado ao alojamento web. Se a ação desejada consiste em associar um novo domínio/subdomínio ao seu alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/guides/web-cloud/web-hosting/multisites-configure-multisite/)".
+
+:::
+
+
+#### Modificar a "pasta raiz"
+
+:::warning
+**Caso particular: configuração com Git**
+
+Para modificar o <code className="action">Pasta raiz</code> declarado para o seu domínio e se existir uma configuração com Git para o mesmo domínio, deverá eliminar primeiro esta configuração.
+
+Se houver uma configuração com o Git, uma mensagem aparecerá logo abaixo do formulário:
+
+<img className="thumbnail" alt="Modify domain associed with git" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png" loading="lazy" />
+
+Para eliminar a configuração Git de um domínio/subdomínio associado ao seu alojamento, consulte o guia "[Configurar e utilizar o Git com o seu alojamento web OVHcloud](/guides/web-cloud/web-hosting/git-integration-webhosting/)".
+
+:::
+
+
+O formulário <code className="action">Pasta raiz</code> indica o nome da pasta que contém os elementos apresentados com o domínio. Por exemplo, pode ser uma pasta que contém os ficheiros do seu website.
+
+Durante a utilização dos seus serviços, poderá ser necessário alterar a <code className="action">Pasta raiz</code> declarada para o seu domínio. Isto pode ocorrer quando, por exemplo:
+
+- Desenvolveu um novo website numa nova pasta presente no espaço de armazenamento FTP do seu alojamento web.
+- Deseja reencaminhar o seu domínio para uma pasta vazia para depois colocar um novo website.
+- etc.
+
+É neste formulário que deverá substituir o nome da pasta pré-preenchida pelo nome da nova pasta pretendida.
+
+:::tip[Success]
+Se indicar um nome de pasta inexistente no espaço de armazenamento FTP do seu alojamento web, este será automaticamente criado pelos nossos robôs no seu espaço de armazenamento FTP.
+
+:::
+
+
+#### Outras opções disponíveis
+
+##### A opção "Ativar o CDN"
+
+Para poder utilizar esta opção, deve ter previamente subscrito uma oferta CDN da OVHcloud ou dispor de um serviço de alojamento web Performance.
+
+Selecione/desmarque esta caixa de verificação para ativar/desativar a opção CDN para o seu nome de domínio ou subdomínio.
+
+Encontre mais informações sobre as opções/ofertas CDN disponíveis na nossa documentação dedicada "[Guia de utilização do acelerador CDN num alojamento web](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/)".
+
+##### A opção "IP do país"
+
+Esta opção é utilizada principalmente para os websites cujo público-alvo esteja situado no estrangeiro. Isto permite um melhor referenciamento SEO do website no país escolhido.
+
+Encontre mais informações sobre esta opção na nossa documentação dedicada "[Geolocalizar o seu website num país específico](/guides/web-cloud/web-hosting/multisites-geolocation/)".
+
+##### A opção "Ativar a firewall"
+
+Esta opção permite filtrar os pedidos recebidos para proteger o seu alojamento web contra os ataques mais comuns.
+
+Encontre mais informações sobre esta opção na nossa documentação dedicada "[Partilhado: ativação da firewall](/guides/web-cloud/web-hosting/multisites-activating-application-firewall/)".
+
+##### A opção "Logs separados"
+
+Selecione/desmarque esta opção unicamente se deseja separar os logs do seu nome de domínio dos outros nomes de domínios declarados em paralelo no seu alojamento web.
+
+Para saber mais sobre esta opção, consulte a nossa [página sobre estatísticas detalhadas](https://www.ovhcloud.com/pt/web-hosting/uc-website-traffic-analysis/).
+
+Depois de efetuar as alterações, clique no botão <code className="action">Seguinte</code> no canto inferior direito da janela para passar à [etapa 2](#step2).
+
+### Etapa 2 - Resumo das alterações <a name="step2"></a>
+
+Após ter clicado no botão <code className="action">Seguinte</code>, encontrará um resumo dos parâmetros que está prestes a aplicar ao seu domínio:
+
+<img className="thumbnail" alt="Modify domain resume" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png" loading="lazy" />
+
+Se o conjunto dos parâmetros estiver configurado de acordo com os seus desejos, clique no botão <code className="action">Validar</code>.
+
+Dependendo das opções selecionadas, as alterações podem levar de alguns minutos ou algumas horas para serem aplicadas.
+
+Se, para as opções **CDN**, **IP do país** e **logs separados**, as modificações não forem aplicadas após 24 horas, consulte os respetivos manuais (e páginas) indicados para o conjunto das opções descritas no [etapa 1](#step1), a fim de verificar que todas as condições exigidas foram corretamente respeitadas e realizadas.
+
+## Quer saber mais?
+
+[Partilhar o alojamento entre vários sites](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+
+[Gerir um certificado SSL num alojamento web](/guides/web-cloud/web-hosting/ssl-on-webhosting/).
+
+[Guia de utilização do acelerador CDN num alojamento web](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/).
+
+[Geolocalizar o seu website num país específico](/guides/web-cloud/web-hosting/multisites-geolocation/).
+
+[Partilhado: ativação da firewall](/guides/web-cloud/web-hosting/multisites-activating-application-firewall/).
+ 
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+ 
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

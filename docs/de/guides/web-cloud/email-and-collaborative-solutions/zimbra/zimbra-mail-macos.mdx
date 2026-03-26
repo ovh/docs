@@ -1,0 +1,133 @@
+---
+title: Zimbra Pro - Konfiguration Ihres E-Mail-Accounts via EWS in Mail auf Mac
+description: Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das EWS-Protokoll in der Mail App auf dem Mac einrichten
+lastUpdated: 2025-07-03
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+:::info
+Diese Anleitung richtet sich an Kunden, die über das E-Mail-Angebot [Zimbra Pro](https://www.ovhcloud.com/de/emails/zimbra-emails/) verfügen. Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
+
+:::
+
+
+Zimbra Pro Accounts können auf einem macOS mit dem EWS Protokoll konfiguriert werden (**E**xchange **W**eb **S**ervices). So können Sie alle kollaborativen Funktionen Ihrer E-Mail-Adresse in einem Schritt konfigurieren. Die Mail App ist nativ auf macOS verfügbar.
+
+**Diese Anleitung erklärt, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das EWS-Protokoll auf der Mail App auf dem Mac einrichten.**
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung genereller Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Partner](https://partner.ovhcloud.com/de/directory/) oder den Herausgeber des Dienstes zu kontaktieren, wenn Sie bei der Administration Ihrer Dienste Hilfe benötigen. Weitere Informationen finden Sie am „[Ende dieser Anleitung](#go-further)“.
+
+:::
+
+
+## Voraussetzungen
+
+- Sie haben einen E-Mail-Account auf der OVHcloud [Zimbra Pro E-Mail-Lösung](https://www.ovhcloud.com/de/emails/zimbra-emails/) abonniert.
+- Sie haben die Mail App auf Ihrem Mac.
+- Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
+
+## In der praktischen Anwendung
+
+### Konto <a name="add-account"></a> hinzufügen
+
+- **Beim ersten Start der Mail App** erscheint ein Konfigurationsassistent direkt und Sie werden aufgefordert, Ihren Account-Typ auszuwählen.
+
+- **Wenn bereits ein Account für die Mail App eingerichtet ist**:
+    - Klicken Sie auf <code className="action">Mail</code> in der Menüleiste oben auf Ihrem Bildschirm.
+    - Klicken Sie auf <code className="action">Konten</code>.
+    - Klicken Sie im angezeigten Fenster „Internetkonten“ auf <code className="action">Einen Account hinzufügen</code>
+
+<img className="thumbnail" alt="mail macOS" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-mail-macos/mail-macos-add-step00.png" loading="lazy" />
+
+Folgen Sie den Installationsschritten, indem Sie nacheinander auf die unten stehenden **3** Registerkarten klicken:
+
+<Tabs>
+  <Tab label="Schritt 1">
+    - Wählen Sie <code className="action">Microsoft Exchange</code> aus.
+    - Legen Sie einen **Namen** fest und geben Sie Ihre **E-Mail-Adresse** ein.
+    - Klicken Sie dann auf <code className="action">Verbinden</code>.
+    
+    <img className="thumbnail" alt="mail macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-mail-macos/mail-macos-add-step01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    - Wählen Sie <code className="action">Manuell konfigurieren</code> aus dem angezeigten Fenster.
+    - Geben Sie anschließend zusätzlich zu den bereits eingegebenen Informationen das **Passwort** Ihrer E-Mail-Adresse ein.
+    
+    <img className="thumbnail" alt="mail macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-mail-macos/mail-macos-add-step02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Überprüfen und vervollständigen Sie die folgenden Informationen:
+    
+    - **E-Mail-Adresse**: Geben Sie Ihre vollständige E-Mail-Adresse ein.
+    - **Benutzername**: Geben Sie Ihre vollständige E-Mail-Adresse ein.
+    - **Passwort**: Geben Sie das Passwort Ihrer E-Mail-Adresse ein.
+    - **Interne URL**: Geben Sie „zimbra1.mail.ovh.net“ ein.
+    - **Externe URL**: Geben Sie „zimbra1.mail.ovh.net“ ein.
+    
+    Um die Konfiguration abzuschließen, tippen Sie auf <code className="action">Verbinden</code> und wählen Sie die Funktionen aus, die Sie auf Ihrem Mac verwenden möchten.
+    
+    <img className="thumbnail" alt="mail macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-mail-macos/mail-macos-add-step04.png" loading="lazy" />
+    
+    :::warning
+    Es ist normal, wenn die rote Meldung „**Kontoname oder Kennwort nicht überprüfen**“ angezeigt wird, wenn das Fenster zum ersten Mal angezeigt wird. Wenn diese Meldung jedoch nach der Validierung weiterhin angezeigt wird, sind die eingegebenen Informationen fehlerhaft.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+:::warning
+Wenn Sie nach dem Befolgen der oben genannten Konfigurationsschritte einen Fehler beim Senden oder Empfangen feststellen, lesen Sie den Abschnitt „[Vorhandene Einstellungen ändern](#modify-settings)“ in dieser Anleitung.
+
+:::
+
+
+### E-Mail-Adresse verwenden
+
+Sobald die E-Mail-Adresse eingerichtet ist, können Sie sie verwenden! Sie können ab sofort Nachrichten senden und empfangen sowie Ihre Kalender und Aufgaben verwalten.
+
+OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über[Webmail](https://www.ovhcloud.com/de/mail/) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)“.
+
+### Wie kann ich vorhandene Einstellungen ändern? <a name="modify-settings"></a>
+
+Die Mail App auf dem Mac erlaubt es nicht, die Servereinstellungen eines Exchange E-Mail-Accounts zu ändern.
+
+Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie seine Einstellungen ändern möchten, müssen Sie ihn löschen und neu erstellen.
+
+So löschen Sie einen Exchange E-Mail-Account:
+
+1. Klicken Sie in der Menüleiste oben auf <code className="action">Mail</code>.
+1. Klicken Sie auf <code className="action">Accounts</code>, und wählen Sie den betreffenden E-Mail-Account aus.
+1. Drücken Sie <code className="action">Account löschen</code>.
+
+<img className="thumbnail" alt="mail macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-mail-macos/mail-macos-modify-delete-01.png" loading="lazy" />
+
+:::tip[Success]
+Nachdem Sie Ihren E-Mail-Account gelöscht haben, folgen Sie den Installationsschritten im Abschnitt „[Account hinzufügen](#add-account)“ in dieser Anleitung.
+
+:::
+
+
+## Weitere Informationen <a name="go-further"></a>
+
+:::info
+Weitere Informationen zum Einrichten einer E-Mail-Adresse in der Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/102619).
+
+:::
+
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

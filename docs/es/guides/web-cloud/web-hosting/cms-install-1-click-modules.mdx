@@ -1,0 +1,237 @@
+---
+title: "Instalar su sitio web con un 'módulo en 1 clic' (CMS)"
+description: "Descubra cómo instalar su sitio web a través de nuestros \"módulos en 1 clic\""
+lastUpdated: 2024-10-07
+---
+
+## Objetivo
+
+Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin necesidad de conocimientos técnicos). Los "módulos en 1 clic" son en realidad **C**ontent **M**anagement **S**ystem **(CMS)**. OVHcloud ofrece la instalación de los CMS más conocidos: *WordPress*, *Joomla!*, *Drupal* y *PrestaShop*.
+
+**Descubra cómo instalar su sitio web a través de nuestros "módulos en 1 clic".**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen={true}></iframe>
+
+## Requisitos
+
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) que incluya al menos una base de datos. 
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Utilizar una versión reciente de PHP y un entorno de ejecución compatible en su alojamiento web de OVHcloud. Descubra el estado de las distintas versiones disponibles en esta [página](https://webhosting-infos.hosting.ovh.net/). Si lo necesita, consulte nuestra [documentación](/guides/web-cloud/web-hosting/configure-your-web-hosting/) para cambiar rápidamente esta configuración.
+- Debe haber un archivo configurado "[.ovhconfig](/guides/web-cloud/web-hosting/configure-your-web-hosting/)" en la raíz FTP de su alojamiento web.
+- El directorio (directorio raíz) en el que se instalará el módulo en 1 clic debe estar vacío o no existe actualmente.
+- El dominio (y el subdominio si así lo desea) que vaya a utilizar para su sitio web debe estar declarado como [Multisitio](/guides/web-cloud/web-hosting/multisites-configure-multisite/) en su alojamiento web de OVHcloud.
+
+## Procedimiento
+
+:::info
+Si experimenta alguna dificultad al seguir uno de los pasos que se describen a continuación, consulte nuestra documentación específica sobre los [errores más frecuentes relacionados con los módulos en un clic](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/). 
+
+:::
+
+
+### Etapa 1 - elegir correctamente su CMS
+
+Un CMS permite diseñar un sitio web a través de una interfaz fácil de usar. Existen varios CMS, algunos prediseñados, por ejemplo, para crear un sitio de e-commerce, otros para crear un sitio web corporativo, un blog, etc. Así podrá disfrutar de una estructura de sitio web lista para usar y personalizable (temas, extensiones, textos, etc.) a su gusto.
+
+De todos los CMS, OVHcloud ofrece 4 CMS de instalación automática con sus "módulos en 1 clic". 
+
+Si utiliza esta solución, deberá elegir entre los 4 CMS anteriores. Si ya ha elegido la opción, siga leyendo esta guía. En caso contrario, consulte nuestra [comparativa de los CMS](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/) para elegir.
+
+Si quiere instalar un CMS no disponible a través de nuestros "módulos en 1 clic", puede instalarlo manualmente en su alojamiento. Dicho CMS es compatible con nuestros planes de hosting de OVHcloud (https://www.ovhcloud.com/es-es/web-hosting/).
+
+<img className="thumbnail" alt="Logotipos de los CMS" src="/images/assets/screens/other/cms/cms-logos.png" loading="lazy" />
+
+### Etapa 2 - acceder a la gestión de "módulos en 1 clic"
+
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione <code className="action">Web Cloud</code>. Haga clic en <code className="action">Alojamientos</code>, seleccione el alojamiento en el que desea instalar un "módulo en 1 clic" y, seguidamente, haga clic en la pestaña <code className="action">Módulos en 1 clic</code>.
+
+Aquí encontrará los módulos en 1 clic que haya instalado. Desde ahí podrá gestionar sus módulos en 1 clic e instalar nuevos módulos.
+
+<img className="thumbnail" alt="Acceso a la sección Módulos en un clic" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/1-click-modules/tab.png" loading="lazy" />
+
+### Etapa 3 - añadir un "módulo en 1 clic"
+
+En la pestaña <code className="action">Módulos en 1 clic</code>, del alojamiento, haga clic en el botón <code className="action">Añadir un módulo</code> para añadir un nuevo "módulo en 1 clic".
+
+Se abrirá una ventana en la que deberá seleccionar el CMS correspondiente y el dominio con el que quiere instalar el sitio web:
+
+<img className="thumbnail" alt="Elección del módulo" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png" loading="lazy" />
+
+Si su dominio no está en la lista, acceda a la pestaña <code className="action">Multisitio</code> para añadirlo. Consulte nuestra guía [Cómo compartir un alojamiento web con varios sitios web](/guides/web-cloud/web-hosting/multisites-configure-multisite/) si es necesario.
+
+:::info
+Compruebe, justo debajo del formulario que permite seleccionar un nombre de dominio (o un subdominio), que `El directorio de instalación por defecto` es el en el que desea instalar su "módulo en un clic".
+
+Le recordamos que este directorio debe estar completamente vacío.
+
+Si lo necesita, consulte nuestra guía "[Cómo compartir un alojamiento web con varios sitios web](/guides/web-cloud/web-hosting/multisites-configure-multisite/)" para modificar el directorio de destino de su dominio.
+
+:::
+
+
+Una vez que haya añadido correctamente el dominio, vuelva a intentar añadir un módulo en 1 clic.
+
+Una vez seleccionado el CMS, elija entre una instalación **rápida** o **avanzada**:
+
+- Instalación **rápida** (seleccionada por defecto): OVHcloud se encarga de la instalación del CMS y le envía las claves para administrarlo por correo electrónico en su dirección de correo electrónico de contacto de OVHcloud. Es la forma más fácil y rápida de instalar un "módulo en 1 clic".
+- Instalación **avanzada**: le permite personalizar la configuración de la instalación del CMS. Introduzca toda la información necesaria para el buen funcionamiento del CMS: 
+    - información de conexión a la base de datos (servidor, nombre de usuario, puerto, contraseña, etc.)
+    - ruta de instalación en el espacio de almacenamiento FTP del alojamiento
+    - idioma del CMS
+    - identificadores de administrador (nombre de administrador, contraseña, dirección de correo electrónico, etc.)
+
+#### Instalación rápida de un "módulo en 1 clic"
+
+Elija el dominio de su CMS, controle el directorio de destino que aparece automáticamente después de elegir el dominio y compruebe que la casilla <code className="action">Instalación en modo avanzado</code> no está marcada. Por último, haga clic directamente en el botón <code className="action">Instalar</code>.
+
+:::warning
+El directorio de instalación de su "módulo en 1 clic" debe estar vacío y debe disponer de al menos una base de datos disponible en su alojamiento web de OVHcloud para que se realice la instalación.
+
+Para una instalación rápida, no cree previamente la base de datos, el robot de instalación lo hará.
+
+:::
+
+
+<img className="thumbnail" alt="Instalación rápida de un módulo" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-quick-mod-step-1-b.png" loading="lazy" />
+
+Una vez finalizada la instalación, recibirá por correo electrónico los datos de conexión a la interfaz de administrador (*back office*) de su CMS. Conéctese a ella para personalizar su sitio web.
+
+:::info
+La instalación y recepción del mensaje de correo electrónico puede tardar hasta 15 minutos a partir del momento en que haga clic en el botón <code className="action">Instalar</code> en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+:::
+
+
+#### Instalación avanzada de un "módulo en 1 clic"
+
+Para realizar este método de instalación, asegúrese de que la casilla <code className="action">Instalación en modo avanzado</code> esté marcada y haga clic en el botón <code className="action">Siguiente</code> :
+
+<img className="thumbnail" alt="Instalación avanzada de un módulo" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-1.png" loading="lazy" />
+
+##### Seleccione la base de datos
+
+Introduzca los datos de conexión a la base de datos. 
+
+:::warning
+Si los datos introducidos son incorrectos, la instalación no llegará a su fin. Para evitar que esto suceda, le recomendamos que pruebe primero la conexión a su base de datos.
+
+Para obtener las claves de conexión a su base de datos incluida con su alojamiento web, consulte [esta guía](/guides/web-cloud/web-hosting/sql-create-database/).
+
+Para obtener las claves de conexión a la base de datos creada en una instancia de Web Cloud Databases, consulte [esta guía](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/).
+
+:::
+
+
+<img className="thumbnail" alt="Base de datos para instalación avanzada" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png" loading="lazy" />
+
+Existen diversas posibilidades:
+
+- La base de datos ya está creada en su alojamiento web: seleccione la opción del menú desplegable. <code className="action">Seleccione la base de datos</code> y complete la información solicitada.
+- La base de datos todavía no está creada en su alojamiento web: [cree su base de datos incluida con su alojamiento](/guides/web-cloud/web-hosting/sql-create-database/), vuelva al menú desplegable : <code className="action">Seleccione la base de datos</code> y complete la información solicitada.
+- La base de datos está [creada en su instancia Web Cloud Databases](/guides/web-cloud/web-cloud-databases/create-db-and-user-on-db-server/): en el menú desplegable. <code className="action">Seleccione la base de datos</code> y elija la opción <code className="action">Base de datos externa al alojamiento web</code> e introduzca la información solicitada. El datacenter en el que se alojan el servicio y el alojamiento web es el mismo.
+- La base de datos está creada en otro plan de hosting de OVHcloud: en el menú desplegable. <code className="action">Seleccione la base de datos</code> y elija la opción <code className="action">Base de datos externa al alojamiento web</code> e introduzca la información solicitada. La base de datos y el alojamiento web deben estar alojados en el mismo datacenter.
+
+El resto de los datos solicitados para la base de datos son los siguientes:
+
+- *Dirección del servidor* : introduzca el nombre del servidor de la base de datos, en el mensaje de correo electrónico de instalación o en el área de cliente de OVHcloud. 
+
+:::info
+- El nombre del servidor de una base de datos incluida con su plan de hosting suele tener la siguiente forma: `NameOfYourDatabase.mysql.db`. 
+
+El nombre del servidor de una base de datos Web Cloud Databases comienza por su identificador de cliente de OVHcloud y tiene el siguiente formato: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` donde los **"X"** deben sustituirse por la referencia de su servicio Web Cloud Databases.
+
+:::
+
+
+- *Nombre de la BD* : este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+- *Puerto* : sitúe sistemáticamente el número **3306** (puerto por defecto) para una base de datos incluida con su alojamiento web. Para una base de datos de una instancia de Web Cloud Databases, consulte [esta guía](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/).
+
+- *Nombre de usuario* : es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web.
+Para las bases de datos creadas en un plan de hosting Cloud Databases, consulte la información que se indica en [esta guía](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/).
+
+- *Contraseña* : le hemos enviado un mensaje de correo electrónico al crear la base de datos. Es posible que lo haya cambiado.
+
+Una vez introducidos los datos, haga clic en el botón <code className="action">Siguiente</code>.
+
+##### Configurar el módulo
+
+Introduzca la siguiente información para la configuración del módulo:
+
+- *nombre o correo electrónico del administrador :* Identificador que utilizará para conectarse al panel de administración de su CMS (Back Office).
+- *contraseña :* contraseña que utilizará para conectarse al panel de administración de su CMS.
+- *dominio :* nombre de dominio con el que quiere instalar su CMS. Si lo necesita, consulte nuestra guía [Cómo alojar varios sitios web en un mismo hosting](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+- *idioma :* Idioma en el que se instalará el CMS.
+- *Ruta de instalación :* Este se indica automáticamente al seleccionar el dominio. Puede completarlo introduciendo subdirectorios (para usuarios expertos).
+
+:::info
+Compruebe, para el formulario `Ruta de instalación`, que el directorio pre-completado es el que desea instalar el módulo en un clic con su nombre de dominio.
+
+Le recordamos que este directorio debe estar completamente vacío.
+
+Además, si introduce un subdirectorio en la `Ruta de instalación`, aparecerá en la URL de acceso a su módulo en un clic.
+Por ejemplo, si introduzco un subdirectorio *test* en el formulario, la URL de acceso a mi "módulo en un clic" tendrá el siguiente formato: **http://domain.tld/test/**.
+
+Si lo necesita, consulte nuestra guía "[Cómo compartir un alojamiento web con varios sitios web](/guides/web-cloud/web-hosting/multisites-configure-multisite/)" para modificar el directorio de destino de su dominio.
+
+:::
+
+
+Una vez introducidos los datos, haga clic en el botón <code className="action">Siguiente</code> :
+
+:::warning
+La carpeta final indicada en la ruta de instalación debe estar obligatoriamente vacía y totalmente vacía para que la instalación tenga éxito.
+
+:::
+
+
+<img className="thumbnail" alt="Configuración del módulo para instalación avanzada" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-2.png" loading="lazy" />
+
+##### Confirmar la instalación
+
+Compruebe que la información mostrada es correcta y haga clic en <code className="action">Aceptar</code> si todo está en orden:
+
+<img className="thumbnail" alt="Validación de la instalación en modo avanzado" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-4.png" loading="lazy" />
+
+### Etapa 4: personalizar mi sitio web
+
+La instalación puede tardar unos diez minutos.
+
+Una vez finalizado, recibirá un mensaje de correo electrónico confirmando la instalación del CMS. Este mensaje le invitará a conectarse al panel de administración de su CMS. Así podrá cambiar el tema de su sitio web y publicar en él sus primeros contenidos.
+
+:::warning
+El soporte de OVHcloud no ayuda a los CMS. Los ofrecemos únicamente en instalación **en 1 clic**.
+
+:::
+
+
+Si desea obtener ayuda sobre las funcionalidades de su CMS, consulte con el editor del CMS que haya instalado. En el área de cliente encontrará la guía correspondiente para ayudarle en su proyecto.
+
+|CMS|Sitio web oficial|
+|---|---|
+|WordPress|[https://es.wordpress.com/](https://es.wordpress.com/)|
+|PrestaShop|[https://www.prestashop.com/es/](https://www.prestashop.com/es/)|
+|Joomla|[https://www.joomla.com/](https://www.joomla.com/)|
+|Drupal|[https://www.drupal.org/](https://www.drupal.org/)|
+
+## Más información
+
+[Seleccione un CMS para crear un sitio web](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/).
+
+[Cómo compartir un alojamiento web entre varios sitios web](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+
+[Gestión de una base de datos desde un alojamiento compartido](/guides/web-cloud/web-hosting/sql-create-database/).
+
+Descubra nuestras [ofertas Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+
+[Gestionar su CMS](/guides/web-cloud/web-hosting/cms-manage-1-click-module/).
+
+[Desinstalar su CMS](/guides/web-cloud/web-hosting/cms-manage-1-click-module#etapa-3-eliminar-el-modulo/).
+
+Si quiere conservar un control total sobre la instalación de su CMS, puede [instalar manualmente un CMS en su alojamiento web de OVHcloud](/guides/web-cloud/web-hosting/cms-manual-installation/).
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

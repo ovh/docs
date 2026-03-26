@@ -1,0 +1,90 @@
+---
+title: Tworzenie automatycznych podpisów
+description: Dowiedz się, jak dodać automatyczne podpisy do swoich kont e-mail
+lastUpdated: 2025-04-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+W Panelu klienta OVHcloud można utworzyć uniwersalne podpisy (stopki) dla adresów e-mail używanych w tej samej domenie (podpisy „firmowe”). Będą one dołączane automatycznie do e-maili wysyłanych z konta użytkownika.
+
+**Dowiedz się, jak utworzyć automatyczny podpis przy użyciu Panelu klienta OVHcloud.**
+
+## Wymagania początkowe
+
+- skonfigurowane rozwiązanie [OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
+
+{/* CP-NAV-START:web-exchange */}
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wybierz platformę
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">E-mail Pro</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-exchange */}
+
+## W praktyce
+
+<Tabs>
+  <Tab label="Exchange">
+  </Tab>
+  <Tab label="E-mail Pro">
+    1. Kliknij zakładkę <code className="action">Web Cloud</code>.
+    1. Kliknij <code className="action">E-mail Pro</code>.
+    1. Wybierz odpowiednią platformę.
+  </Tab>
+</Tabs>
+
+
+Kliknij kartę <code className="action">Więcej+</code> w menu poziomym i wybierz pozycję <code className="action">Stopki</code>.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step1.png" loading="lazy" />
+
+W tej sekcji zobaczysz przyłączone domeny, dla których możesz utworzyć schemat stopki. Kliknij ikonę <code className="action">...</code>, a następnie pozycję <code className="action">Konfiguracja</code>, aby otworzyć edytor HTML.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step2.png" loading="lazy" />
+
+Edytor umożliwia wybór zmiennych odpowiadających danym użytkownika w ustawieniach konta. Przy użyciu tych zmiennych możesz na przykład utworzyć ogólne zakończenie wiadomości i dodać odpowiedni podpis lub informacje kontaktowe poniżej wiadomości. Kliknij strzałkę w dół, aby wybrać zmienną. Następnie kliknij przycisk <code className="action">Wstaw zmienną</code>, aby dodać ją do okienka edycji.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step3aag.gif" loading="lazy" />
+
+Stopkę tworzy się przy użyciu tagów HTML, które umożliwiają formatowanie. Dostosuj podpis przy użyciu paska narzędzi u góry. Możesz też zweryfikować kod HTML, klikając przycisk <code className="action">Źródło</code>.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step4.png" loading="lazy" />
+
+Zaznacz pole wyboru „Włącz ten podpis tylko dla poczty wychodzącej”, aby zapobiec dodawaniu stopki do e-maili przesyłanych między użytkownikami w tej samej domenie. Gdy podpis będzie gotowy, kliknij przycisk <code className="action">Potwierdź</code>. Podpis będzie dołączany do e-mali wysyłanych z kont użytkowników tej domeny. Po utworzeniu podpisów można je edytować lub usunąć z poziomu Panelu klienta OVHcloud.
+
+Przed zastosowaniem podpisów u użytkowników weź pod uwagę następujące aspekty:
+
+- Szczegółów konta innych niż „Imię”, „Nazwisko” i „Nazwa wyświetlana” nie można edytować z poziomu Panelu klienta OVHcloud, lecz należy je określić w interfejsie OWA („Opcje”, „Ogólne”, „Moje konto”).
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step5.png" loading="lazy" />
+
+- Podpis zostanie dodany do treści e-maila bez odstępu, co oznacza, że dobrze byłoby zacząć podpis od co najmniej jednego pustego wiersza.
+- W interfejsie OWA nie jest wskazane, czy stopka jest aktywna w danej domenie i **nie ma synchronizacji**. Jeśli użytkownicy dodadzą [własne podpisy](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa#dodawanie-podpisu/), e-maile będą zawierać zarówno ich indywidualną stopkę, jak i ogólną stopkę domeny.
+- Edytor obsługuje formatowanie HTML, hiperlinki, obrazy itd. Nie należy jednak zbytnio polegać na tych opcjach. Odbiorcy mogą korzystać z klientów poczty, które blokują kod HTML, i osadzone obrazy lub podpisy mogą wyglądać inaczej niż zamierzono. Tagi HTML zostaną całkowicie usunięte, jeśli według ustawień w interfejsie OWA wiadomość jest wysyłana jako „zwykły tekst”.
+- „Inicjały” nie są aktywne w usłudze. Dodanie tej zmiennej nie przyniesie żadnego efektu.
+
+## Sprawdź również <a name="go-further"></a>
+
+[Korzystanie z interfejsu Outlook Web App wraz z kontem e-mail](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Delegowanie uprawnień do konta e-mail](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[współdzielenie kalendarza w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

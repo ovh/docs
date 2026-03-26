@@ -1,0 +1,153 @@
+---
+title: Backup Agent - Restaurer un serveur Bare Metal avec Veeam Backup Agent
+description: "Découvrez comment restaurer l'intégralité de votre système - en ligne ou sur site - grâce à une image ISO de récupération et des sauvegardes Veeam hébergées chez OVHcloud"
+lastUpdated: 2026-02-09
+---
+
+## Objectif
+
+Découvrez comment restaurer l’intégralité de votre système à l’aide de la fonctionnalité Bare Metal Recovery de Veeam, en utilisant les sauvegardes stockées sur votre Vault.
+
+Ce guide détaille comment :
+
+- Créer une **image ISO de récupération** : ce fichier permet de démarrer votre machine en cas de dysfonctionnement au lancement du système.
+- Utiliser votre image ISO pour accéder à votre dernière sauvegarde et la restaurer depuis l’infrastructure OVHcloud.
+
+:::warning
+
+Ce guide est basé sur le Veeam Agent pour Windows. Si vous utilisez le Veeam Agent pour Linux, la procédure est similaire, bien que l’interface soit en mode texte.
+
+:::
+
+
+## Prérequis
+
+Avant de commencer, assurez-vous de disposer des éléments suivants :
+
+- Un [Serveur Bare Metal](https://www.ovhcloud.com/fr/bare-metal/) sous Windows ou Linux et sur lequel [Backup Agent](https://www.ovhcloud.com/fr/storage-solutions/backup-agent/) est installé.
+- Au moins une sauvegarde a été effectuée.
+- Un moyen de démarrer à partir de l’ISO de récupération :
+    - Utilisez l'IPMI de votre serveur Bare Metal pour charger l'ISO.
+
+## En pratique
+
+### Étape 1 : Créer l’ISO de récupération
+
+Si votre ordinateur ne démarre plus, vous aurez besoin d’une image ISO de récupération pour le relancer.
+
+:::warning
+
+Cette image est à créer avant tout incident. Si votre serveur n'est plus disponible, vous ne pourrez plus la créer.
+
+:::
+
+
+Voici comment la créer :
+
+1\. Ouvrez l’outil **Create Recovery Media**, inclus avec le Veeam Agent, sur votre machine.
+
+<img className="thumbnail" alt="Lancer l'outil Create Recovery Media" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/bare_metal_recovery_01.png" loading="lazy" />
+
+2\. Veeam vous demandera si vous souhaitez inclure des pilotes supplémentaires.
+
+:::info
+
+Si vous utilisez du matériel spécifique (comme un contrôleur RAID), sélectionnez les pilotes nécessaires. Sinon, les options par défaut conviennent généralement.
+
+:::
+
+
+<img className="thumbnail" alt="Sélectionner les pilotes pour l'image de démarrage" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/bare_metal_recovery_02.png" loading="lazy" />
+
+3\. Choisissez l’emplacement d’enregistrement de l’ISO et donnez-lui un nom.
+
+<img className="thumbnail" alt="Définir l'emplacement et le nom de l'ISO" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/bare_metal_recovery_03.png" loading="lazy" />
+
+4\. Patientez jusqu'à la fin de l'opération, le fichier ISO sera généré.
+
+<img className="thumbnail" alt="ISO de récupération créé" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/bare_metal_recovery_04.png" loading="lazy" />
+
+<img className="thumbnail" alt="ISO de récupération" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/bare_metal_recovery_05.png" loading="lazy" />
+
+Vous pouvez maintenant utiliser cet ISO pour créer une clé USB bootable à l’aide d’un outil comme Rufus.
+
+### Étape 2 : Démarrer la machine à partir de l’ISO de récupération
+
+Si votre système ne démarre plus et que vous devez le restaurer :
+
+1\. Montez l’ISO dans la console de votre serveur, puis démarrez la machine à partir de celui-ci.
+
+:::tip[Success]
+
+**Vous ne savez pas comment démarrer depuis un ISO ?**
+
+Redémarrez votre machine physique et appuyez sur la touche indiquée (généralement F2, F12, ESC ou DEL) pour accéder au menu de démarrage.
+
+:::
+
+
+2\. Une fois le système lancé, l’assistant de restauration Veeam s’ouvrira. Cliquez sur <code className="action">Bare Metal Recovery</code>.
+
+<img className="thumbnail" alt="Lancer Bare Metal Recovery" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_01.png" loading="lazy" />
+
+3\. Sélectionnez <code className="action">Network Storage</code> pour accéder à vos sauvegardes en ligne.
+
+:::warning
+
+Si le réseau n’est pas détecté, vous devrez peut-être le configurer manuellement. Cliquez sur <code className="action">Configure network settings</code> et chargez les pilotes manquants.
+
+:::
+
+
+<img className="thumbnail" alt="Sélectionner Network Storage" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_02.png" loading="lazy" />
+
+4\. Sélectionnez <code className="action">Veeam Cloud Connect repository</code>.
+
+<img className="thumbnail" alt="Choisir le dépôt Veeam Cloud Connect" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_03.png" loading="lazy" />
+
+5\. Saisissez l’adresse suivante lorsqu’il vous est demandé de renseigner le fournisseur de service :
+
+
+<img className="thumbnail" alt="Renseigner les DNS" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_04.png" loading="lazy" />
+
+6\. Saisissez votre nom d’utilisateur et votre mot de passe pour vous connecter.
+
+<img className="thumbnail" alt="Renseigner les informations d'identification" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_05.png" loading="lazy" />
+
+:::warning
+
+À l'heure actuelle, nous n'avons pas encore finalisé la procédure automatique de récupération de vos identifiants pour accéder à vos points de restauration. En cas de besoin, vous pouvez [contacter le support](https://help.ovhcloud.com/csm?id=csm_get_help) qui vous les fournira.
+
+:::
+
+
+7\. Sélectionnez le <code className="action">serveur</code> que vous souhaitez restaurer.
+
+<img className="thumbnail" alt="Sélectionner le serveur" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_06.png" loading="lazy" />
+
+8\. Choisissez le <code className="action">point de restauration (date/heure)</code> auquel vous souhaitez revenir.
+
+Nous vous recommandons d’utiliser la dernière sauvegarde réussie, sauf si vous avez une raison particulière de revenir à une version antérieure.
+
+<img className="thumbnail" alt="Choisir un point de restauration" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_07.png" loading="lazy" />
+
+9\. Choisissez le <code className="action">mode de restauration</code> adapté à votre situation (choisissez **Entire computer** pour une restauration complète).
+
+<img className="thumbnail" alt="Mode de restauration" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_08.png" loading="lazy" />
+
+10\. Vérifiez le résumé, puis lancez la <code className="action">restauration</code>.
+
+<img className="thumbnail" alt="Lancer la restauration - confirmation" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_09.png" loading="lazy" />
+
+<img className="thumbnail" alt="Lancer la restauration - progression" src="/images/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-agent-bare-metal-recovery/step2_10.png" loading="lazy" />
+
+:::warning
+
+La durée du processus de restauration dépend de la taille de votre sauvegarde et de la vitesse de votre connexion Internet. Une fois terminé, votre système redémarrera avec l’état correspondant au point de restauration sélectionné.
+
+:::
+
+
+## Aller plus loin
+
+Échangez avec notre [communauté d’utilisateurs](https://community.ovhcloud.com/community/fr).

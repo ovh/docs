@@ -1,0 +1,261 @@
+---
+title: Zwiększ rozmiar dodatkowego dysku
+description: Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną
+lastUpdated: 2026-02-26
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Jeśli osiągniesz maksymalną pojemność dodatkowego dysku, możesz dodać przestrzeń dyskową, zwiększając jej rozmiar. 
+
+**Niniejszy przewodnik wyjaśnia, jak zwiększyć rozmiar dodatkowego dysku i jak odpowiednio rozszerzyć partycję główną.**
+
+## Wymagania początkowe
+
+- Instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/compute/) w Twoim projekcie Public Cloud
+- [Dodatkowy dysk](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) utworzony w Twoim projekcie
+- Dostęp administracyjny (sudo) do Twojej instancji przez SSH (Linux) lub RDP (Windows)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## W praktyce
+
+Kolejne etapy zakładają, że skonfigurowałeś już dodatkowy dysk zgodnie z instrukcjami zawartymi w [naszym przewodniku](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/).
+
+## Monitorowanie wykorzystania dysku przed zmianą rozmiaru
+
+:::warning
+Zalecamy utrzymanie 20% darmowej przestrzeni dyskowej. Dzięki temu zyskujesz optymalną wydajność i unikasz ryzyka uszkodzenia systemu, gdy wolumen osiągnie swoją maksymalną pojemność.
+
+:::
+
+
+Aby mieć pewność, że rozmiar dysku zostanie zwiększony we właściwym momencie, należy regularnie monitorować wykorzystanie zasobów. Poniżej znajdują się krótkie tutoriale dla systemu Windows i Linux, które pomogą Ci śledzić przestrzeń dyskową i przewidzieć, kiedy aktualizacja będzie konieczna.
+
+<Tabs>
+  <Tab label="W systemie Windows">
+    <details>
+    <summary>Za Pomocą Wiersza Polecenia</summary>
+
+    
+    Otwórz wiersz polecenia (Win + R → cmd → Enter).
+    
+    Uruchom następujące polecenie:
+    
+    ```bash
+    WMIC Logical Disk Get Name, Size, FreeSpace
+    ```
+    
+    Zostanie wyświetlona wolna przestrzeń i całkowity rozmiar każdego dysku.
+    
+
+    </details>
+    
+    <details>
+    <summary>Używanie programu PowerShell</summary>
+
+    
+    Otwórz program PowerShell jako administrator.
+    
+    Uruchom następujące polecenie:
+    
+    ```bash
+    Get-PSDrive | Where-Object {$_.Free -ne $null} | Select-Object Name, Used, Free
+    ```
+    
+    Zostanie wyświetlona wykorzystana i dostępna przestrzeń dyskowa.
+    
+
+    </details>
+  </Tab>
+  <Tab label="W Systemie Linux">
+    <details>
+    <summary>Używanie polecenia 'df'</summary>
+
+    
+    Aby sprawdzić wykorzystanie dysku, uruchom:
+    
+    ```bash
+    df -h
+    ```
+    
+    Zostanie wyświetlone użycie dysku w formacie czytelnym dla człowieka.
+    
+
+    </details>
+    
+    <details>
+    <summary>Używanie polecenia 'lsblk'</summary>
+
+    
+    Aby sprawdzić partycje dysków i ich rozmiar:
+    
+    ```bash
+    lsblk
+    ```
+    
+
+    </details>
+  </Tab>
+</Tabs>
+
+
+### Zmień rozmiar dysku
+
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz swój projekt <code className="action">Public Cloud</code>. Następnie w menu po lewej stronie kliknij <code className="action">Block Storage</code> pod **Storage i Backup**
+
+Jeśli wolumen jest przypisany do **instancji Windows**, kliknij przycisk <code className="action">...</code> z prawej strony odpowiedniego wolumenu i wybierz opcję <code className="action">Odłącz instancję</code>.
+
+Kliknij przycisk <code className="action">...</code> po prawej stronie odpowiedniego wolumenu i wybierz <code className="action">Edytuj</code>.
+
+<img className="thumbnail" alt="dashboard" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/increase-disk-02.png" loading="lazy" />
+
+W oknie, które się wyświetli wskaż nowy rozmiar wolumenu i kliknij <code className="action">Zmień wolumen</code>.
+
+<img className="thumbnail" alt="dashboard" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/increase-disk-03.png" loading="lazy" />
+
+### Rozszerzenie partycji (instancja Linux)
+
+Otwórz połączenie SSH z Twoją instancją, aby dostosować partycję do zmienionego dysku.
+
+Rozmontuj najpierw dysk, używając polecenia:
+
+```bash
+admin@server:~$ sudo umount /mnt/disk
+```
+
+Odtwórz partycję:
+
+```bash
+admin@server:~$ sudo fdisk /dev/vdb
+```
+```console
+Welcome to fdisk (util-linux 2.25.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command
+```
+```console
+Command (m for help): d
+
+Selected partition 1
+Partition 1 has been deleted.
+```
+```console
+Command (m for help): n
+
+Partition type
+p primary (0 primary, 0 extended, 4 free)
+e extended (container for logical partitions)
+Select (default p):
+Using default response p.
+Partition number (1-4, default 1):
+First sector (2048-146800639, default 2048):
+Last sector, +sectors or +size{K,M,G,T,P} (2048-146800639, default 146800639):
+
+Created a new partition 1 of type 'Linux' and of size 70 GiB.
+```
+```console
+Command (m for help): w
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+```
+
+Sprawdź partycję:
+
+```bash
+admin@server:~$ sudo e2fsck -f /dev/vdb1
+
+e2fsck 1.42.12 (29-Aug-2014)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/vdb: 12/3276800 files (0.0% non-contiguous), 251700/13107200 blocks
+```
+
+```bash
+admin@server:~$ sudo resize2fs /dev/vdb1
+
+resize2fs 1.42.12 (29-Aug-2014)
+Resizing the filesystem on /dev/vdb to 18350080 (4k) blocks.
+The filesystem on /dev/vdb is now 18350080 (4k) blocks long.
+```
+
+Podnieś i sprawdź dysk:
+
+```bash
+admin@server:~$ sudo mount /dev/vdb1 /mnt/disk/
+```
+
+```bash
+admin@server:~$ df -h
+Filesystem Size Used Avail Use% Mounted on
+/dev/vda1 9.8G 840M 8.6G 9% /
+udev 10M 0 10M 0% /dev
+tmpfs 393M 5.2M 388M 2% /run
+tmpfs 982M 0 982M 0% /dev/shm
+tmpfs 5.0M 0 5.0M 0% /run/lock
+tmpfs 982M 0 982M 0% /sys/fs/group
+/dev/vdb1 69G 52M 66G 1% /mnt/disk
+```
+
+Po wykonaniu tych czynności odłącz wolumin od instancji i ponownie dołącz go, aby upewnić się, że zaktualizowane ustawienia QoS (IOPS i przepustowość) zostały poprawnie zastosowane.
+
+### Rozszerzenie partycji (instancja Windows)
+
+Przed kontynuowaniem dołącz wolumin do instancji. Kliknij <code className="action">...</code> w wierszu woluminu i wybierz <code className="action">Połącz do instancji</code>.
+
+Utwórz połączenie RDP (Remote Desktop) dla Twojej instancji Windows.
+
+Po zalogowaniu kliknij prawym przyciskiem myszy przycisk <code className="action">Start</code> i otwórz <code className="action">Zarządzanie dyskami</code>.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-01.png" loading="lazy" />
+
+Rozszerzony dysk posiada większą pojemność w postaci nieprzydzielonej przestrzeni.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-02.png" loading="lazy" />
+
+Kliknij prawym przyciskiem myszy wolumen i wybierz <code className="action">Rozszerz wolumen</code> z menu kontekstowego.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-03.png" loading="lazy" />
+
+W asystencie rozszerzenia wolumenu kliknij Dalej, <code className="action">aby kontynuować</code>.
+
+Możesz zmienić przestrzeń dyskową na tym etapie, jeśli chcesz dodać pojemność mniejszą niż cała partycja.
+
+Kliknij <code className="action">Dalej</code>.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-04.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">Zakończ</code>, aby zakończyć proces.
+
+Zmieniony rozmiar przestrzeni dyskowej zawiera teraz dodatkową przestrzeń dyskową.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-05.png" loading="lazy" />
+
+Po wykonaniu tych czynności odłącz wolumin od instancji i ponownie dołącz go, aby upewnić się, że zaktualizowane ustawienia QoS (IOPS i przepustowość) zostały poprawnie zastosowane.
+
+## Sprawdź również
+
+[Zarządzanie wolumenem instancji Public Cloud](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)
+
+[Zmień typ wolumenu Block Storage](/guides/public-cloud/compute/switch-volume-type/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

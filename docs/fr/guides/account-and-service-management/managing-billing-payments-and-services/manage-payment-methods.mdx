@@ -1,0 +1,183 @@
+---
+title: Gérer mes moyens de paiement
+description: Apprenez à ajouter et gérer vos moyens de paiement au sein de l’espace client OVHcloud
+lastUpdated: 2025-04-28
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens de paiement.
+
+<div style={{padding:"56.25% 0 0 0", position:"relative"}}><iframe src="https://player.vimeo.com/video/696215450?h=0b07baf719&title=0&byline=0&portrait=0" style={{position:"absolute", top:"0", left:"0", width:"100%", height:"100%"}} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen={true}></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+## Prérequis
+
+- Disposer d'un moyen de paiement valide.
+
+{/* CP-NAV-START:billing-payment-methods */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Moyens de paiement](https://manager.eu.ovhcloud.com/#/billing/payment/method)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > <code className="action">Mes moyens de paiement</code>
+
+---
+{/* CP-NAV-END:billing-payment-methods */}
+
+## En pratique <a name="payment_methods"></a>
+
+Ouvrez la page [Moyens de paiement](https://manager.eu.ovhcloud.com/#/billing/payment/method).
+
+<img className="thumbnail" alt="hubpayment" src="/images/assets/screens/control-panel/product-selection/right-menu/my-payment-methods.png" loading="lazy" />
+
+La page qui s’affiche contient un tableau répertoriant les moyens de paiement enregistrés sur votre compte client. Vous pourrez y :
+
+- Ajouter un moyen de paiement
+- Modifier votre moyen de paiement par défaut
+- Modifier la description de votre moyen de paiement
+- Supprimer un moyen de paiement
+
+### Ajouter un moyen de paiement
+
+Lors de votre première commande, il vous est demandé d'enregistrer un moyen de paiement, afin d'assurer le renouvellement de votre service par prélèvement automatique.
+
+Ce moyen de paiement est alors utilisé par défaut pour tous vos renouvellements et vous est proposé pour régler de nouvelles commandes.
+
+Vous avez la possibilité d'enregistrer d'autres moyens de paiement, afin qu'ils vous soient proposés lors de vos nouvelles commandes ou utilisés par défaut pour vos futurs prélèvements.
+
+Il est possible d'enregistrer 3 types de moyens de paiement :
+
+- Carte bancaire
+- Prélèvement bancaire
+- Compte PayPal
+
+Pour cela, cliquez simplement sur le bouton <code className="action">Ajouter un moyen de paiement</code> et choisissez ensuite la méthode de paiement que vous souhaitez utiliser.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods2.png" loading="lazy" />
+
+Suivez les étapes successives d'enregistrement du moyen de paiement. A la première étape, il vous est proposé de cocher la case <code className="action">Je veux sélectionner ce moyen de paiement par défaut dès sa validation</code>, afin qu'il soit utilisé pour vos futurs achats ou prélèvements automatiques.
+
+#### Prélèvement bancaire
+
+:::warning
+- L'utilisation du prélèvement bancaire n'est possible que pour les comptes clients français, belges, allemands, espagnols, irlandais, italiens et néerlandais.
+
+- Le propriétaire du compte bancaire doit être identique au propriétaire du compte OVHcloud.
+
+:::
+
+
+Pour enregistrer un prélèvement sur votre compte bancaire, vous serez redirigé vers un espace permettant l'enregistrement de ce compte et la signature électronique de votre mandat de prélèvement.
+
+<img className="thumbnail" alt="moyen de paiement SEPA" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/sepa.png" loading="lazy" />
+
+Si votre établissement bancaire est répertorié par notre partenaire, l'enregistrement du compte bancaire sera immédiat. Dans le cas contraire, un délai de 48 heures environ peut être nécessaire.
+
+#### Carte bancaire
+
+<img className="thumbnail" alt="credit-card" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-card.png" loading="lazy" />
+
+Pour enregistrer une nouvelle carte bancaire, vous serez redirigé vers l'interface sécurisée de notre prestataire de paiement. Une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte.<br/>
+Aucun montant ne sera prélevé et votre carte bancaire sera activée au bout de quelques minutes.
+
+#### Compte paypal
+
+<img className="thumbnail" alt="paypal" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/paypal.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">PayPal</code>. Une fenêtre contextuelle s'ouvrira alors pour vous connecter à votre compte PayPal&#174; et enregistrer celui-ci comme moyen de paiement autorisé auprès de OVHcloud.
+
+Votre compte PayPal&#174; sera activé sous quelques minutes.
+
+### Modifier votre moyen de paiement par défaut
+
+Les factures de renouvellement de vos services sont toujours prélevées sur votre moyen de paiement par défaut. Si vous souhaitez modifier celui-ci, il vous faut d'abord ajouter un nouveau moyen de paiement dans votre espace client.
+
+Cliquez alors sur le bouton <code className="action">...</code> à droite du nouveau moyen de paiement, puis sur <code className="action">Définir ce moyen de paiement par défaut</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods3.png" loading="lazy" />
+
+> **Je souhaite remplacer mon moyen de paiement par défaut par un autre, comment faire ?**
+>
+> - Étape 1 : ajoutez le nouveau moyen de paiement
+> - Étape 2 : définissez le nouveau moyen de paiement comme moyen de paiement par défaut
+> - Étape 3 : supprimez l'ancien moyen de paiement
+>
+
+### Supprimer un moyen de paiement
+
+Si vous ne souhaitez plus utiliser l'un de vos moyens de paiement, vous pouvez le supprimer en cliquant sur le bouton <code className="action">...</code> à droite de celui-ci. Cliquez alors sur <code className="action">Supprimer ce moyen de paiement</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods4.png" loading="lazy" />
+
+Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensemble de vos services doit être en [renouvellement manuel](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#le-renouvellement-manuel/).
+
+#### Supprimer un moyen de paiement via les API OVHcloud
+
+La suppression d'un moyen de paiement peut être effectuée via les API en vous connectant sur [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+
+Commencez par obtenir l'ID du moyen de paiement :
+
+<Api version="v1" section="/me" method="GET" route={"/me/payment/method"} />
+
+Supprimez ensuite le moyen de paiement en utilisant l’ID que vous avez obtenu à l’étape précédente :
+
+<Api version="v1" section="/me" method="DELETE" route={"/me/payment/method/\{paymentMethodId\}"} />
+
+
+:::info
+Pour plus d'informations, consultez le guide [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/).
+
+En cas de difficultés pour identifier vos moyens de paiement via les API OVHcloud, utilisez la fonction <code className="action">Modifier la description</code> (bouton <code className="action">...</code> à droite de votre écran) dans la partie [Moyens de paiement](#payment_methods) de la page [Mes moyens de paiement](https://manager.eu.ovhcloud.com/#/billing/payment/method).
+
+:::
+
+
+### Le compte prépayé
+
+#### Qu'est-ce que le compte prépayé ?
+
+Le *compte prépayé* est présent sur la page [Mes moyens de paiement](https://manager.eu.ovhcloud.com/#/billing/payment/method) dès sa création. Il vous permet de créditer à l'avance votre compte client et d'utiliser ces fonds pour le règlement de vos commandes et de vos factures de renouvellement.
+
+En créditant régulièrement votre compte, vous vous assurerez ainsi que le [renouvellement automatique](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal/) de vos services ne sera jamais interrompu pour défaut de paiement.
+
+Pour cela, rendez-vous sur la page [Moyens de paiement](https://manager.eu.ovhcloud.com/#/billing/payment/method) :
+
+- sélectionnez l'onglet <code className="action">Mon compte prépayé</code>.
+
+<img className="thumbnail" alt="prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/prepaid-account.png" loading="lazy" />
+
+#### Comment fonctionne t-il ?
+
+A chaque échéance, lorsque vous possédez des services paramétrés en *renouvellement automatique*, le montant de votre facture est prioritairement prélevé sur votre compte prépayé.
+
+En l'absence de fonds suffisants, le solde de votre compte passera en négatif et restera en attente de paiement.
+
+Si vous disposez d'un moyen de paiement valide enregistré sur votre compte client, ce montant sera automatiquement prélevé dans les 24 heures et votre solde remis à zéro. Ceci sans aucun impact sur l'état de vos services.
+
+En revanche, si vous n'avez pas enregistré de moyen de paiement, vous devrez régler ce solde depuis votre espace client sous 7 jours pour éviter toute coupure de service.
+
+Si vous n'avez pas de moyen de paiement enregistré, nous vous recommandons donc de paramétrer un **seuil d'alerte**, afin de vous assurer que vous disposerez des fonds suffisants pour vos prochaines factures :
+
+<img className="thumbnail" alt="warning_prepaid_account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/warning_prepaid_account.png" loading="lazy" />
+
+Si le crédit disponible sur votre compte prépayé descend sous la limite définie, un e-mail de notification vous sera immédiatement envoyé.
+
+#### Comment créditer votre compte prépayé ?
+
+Dans l'onglet <code className="action">Mon compte prépayé</code>, cliquez sur le bouton <code className="action">Créditer</code>.
+
+<img className="thumbnail" alt="credit-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-prepaid-account.png" loading="lazy" />
+
+Dans la fenêtre qui s'affiche, indiquez le montant à créditer, cliquez sur <code className="action">Suivant</code> puis sur <code className="action">Commander</code>.
+
+<img className="thumbnail" alt="order-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/order-prepaid-account.png" loading="lazy" />
+
+Sur le bon de commande qui s'affiche, sélectionnez le moyen de paiement de votre choix et réglez votre commande.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

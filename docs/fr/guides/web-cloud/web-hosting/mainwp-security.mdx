@@ -1,0 +1,100 @@
+---
+title: Améliorer la sécurité de son site web avec le plugin MainWP pour WordPress
+description: Découvrez comment contrôler la sécurité de vos sites web depuis une seule interface grâce à MainWP
+lastUpdated: 2024-01-25
+---
+
+## Objectif
+
+Maintenir la sécurité de vos sites web est crucial pour le développement de votre marque. Une sécurité optimale sur vos sites web permet de protéger les données de votre entreprise, mais aussi celles de vos clients, préservant ainsi la confiance et l'image de votre société. Grâce aux extensions du plugin WordPress MainWP, vous pouvez contrôler la sécurité de vos sites web depuis une seule et même interface.
+
+**Ce guide vous explique comment améliorer la sécurité de vos sites web depuis le dashboard MainWP**
+
+## Prérequis
+
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
+- Être connecté à votre dashboard MainWP.
+
+:::warning
+OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+
+Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou à [l'éditeur du plugin MainWP](https://mainwp.com/support/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+
+:::
+
+
+## En pratique
+
+### Installer l'extension Sucuri
+
+:::info
+Si vous n'avez jamais installé d'extension MainWP, découvrez dans [ce guide](/guides/web-cloud/web-hosting/mainwp-general/) comment installer une extension.
+
+:::
+
+
+Pour retrouver toutes les extensions liées à la sécurité, rendez-vous dans la rubrique [sécurité](https://mainwp.com/mainwp-extensions/extension-category/security/) de MainWP. Vous pouvez également chercher une extension en cliquant sur <code className="action">Extensions</code> depuis le menu principal de MainWP puis sur <code className="action">Install Extensions</code>.
+
+Cliquez sur l'onglet <code className="action">Security</code> pour afficher la liste des extensions liées à la sécurité. Dans cet exemple, nous choisissons l'extension gratuite Sucuri mais vous êtes libre de choisir l'extension de votre choix. Une fois l'extension sélectionnée, cliquez sur <code className="action">Install Selected Extensions</code>.
+
+Dans le menu principal de MainWP, cliquez sur <code className="action">Extensions</code> puis sur <code className="action">Manage Extensions</code>. L'extension Sucuri précédemment installée apparaît.
+
+<img className="thumbnail" alt="mainWP security" src="/images/assets/screens/other/cms/wordpress/mainwp/sucuri-extension.png" loading="lazy" />
+
+Si ce n'est pas déjà fait, cliquez sur <code className="action">Enable</code> puis sur <code className="action">License</code> pour pouvoir utiliser l'extension.
+
+### Effectuer un scan de sécurité
+
+Dans le menu principal de MainWP, cliquez sur <code className="action">Sites</code> puis sélectionnez le site enfant de votre choix. En haut de l'écran, cliquez sur l'onglet <code className="action">Security</code>.
+
+<img className="thumbnail" alt="mainWP security" src="/images/assets/screens/other/cms/wordpress/mainwp/security-tab.png" loading="lazy" />
+
+Pour effectuer un scan de sécurité sur votre site web, cliquez sur <code className="action">Scan Website</code>.
+
+<img className="thumbnail" alt="mainWP" src="/images/assets/screens/other/cms/wordpress/mainwp/sucuri-scanner.png" loading="lazy" />
+
+Une fois le scan de sécurité effectué, une nouvelle ligne s'affiche, correspondant au rapport du scan de sécurité.
+
+<img className="thumbnail" alt="mainWP security" src="/images/assets/screens/other/cms/wordpress/mainwp/report-security-line.png" loading="lazy" />
+
+Cliquez sur <code className="action">Show Report</code> pour visualiser le rapport de sécurité.
+
+<img className="thumbnail" alt="mainWP security" src="/images/assets/screens/other/cms/wordpress/mainwp/security-report-details.png" loading="lazy" />
+
+Le rapport du scan de sécurité fournit de nombreuses informations importantes concernant la sécurité de votre site web :
+
+- présence de virus et de logiciels malveillants ;
+- détection d'anomalies ;
+- liens dangereux ;
+- tentatives de SPAM ;
+- etc.
+
+Pensez à effectuer régulièrement des scans de sécurité. Avec Sucuri, il est possible d'activer un rappel. En bas de la liste de vos rapports de sécurité, cliquez sur la liste déroulante à droite de <code className="action">Remind me if I don't scan my child site for</code>. Par exemple, si vous choisissez <code className="action">1 week</code>, Sucuri vous rappellera chaque semaine d'effectuer un scan de sécurité.
+
+### Identifier et résoudre les problèmes de sécurité
+
+Dans le menu principal de MainWP, cliquez sur <code className="action">Sites</code> puis sélectionnez le site enfant de votre choix. En haut de l'écran, cliquez sur l'onglet <code className="action">Security</code>. Sur le dashboard qui s'affiche, vous pouvez voir si des problèmes de sécurité ont été identifiés par Sucuri.
+
+<img className="thumbnail" alt="mainWP security" src="/images/assets/screens/other/cms/wordpress/mainwp/security-overview.png" loading="lazy" />
+
+Dans notre exemple, Sucuri nous indique que trois problèmes de sécurité ont été identifiés. Cliquez sur <code className="action">Fix all issues</code> pour résoudre tous les problèmes de sécurité. Si vous voulez en savoir plus sur les problèmes identifiés, cliquez sur l'onglet <code className="action">Security</code> en haut de l'interface. La liste des problèmes de sécurité s'affiche.
+
+<img className="thumbnail" alt="mainWP security" src="/images/assets/screens/other/cms/wordpress/mainwp/security-list.png" loading="lazy" />
+
+Pour résoudre un problème, identifiez la ligne correspondante et cliquez sur le bouton <code className="action">Fix</code> à droite de la ligne.
+
+<img className="thumbnail" alt="mainWP security" src="/images/assets/screens/other/cms/wordpress/mainwp/security-unfix.png" loading="lazy" />
+
+Une fois le problème résolu, vous pouvez annuler les modifications apportées en cliquant sur le bouton <code className="action">Unfix</code>.
+
+## Aller plus loin <a name="go-further"></a>
+
+[Administrer plusieurs sites web WordPress avec le plugin MainWP](/guides/web-cloud/web-hosting/mainwp-general/)
+
+[Gérer les clients de ses sites web avec MainWP](/guides/web-cloud/web-hosting/mainwp-client-management/)
+
+[Sauvegarder ses sites web avec MainWP](/guides/web-cloud/web-hosting/mainwp-backup/)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

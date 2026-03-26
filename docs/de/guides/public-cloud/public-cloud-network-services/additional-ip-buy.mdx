@@ -1,0 +1,108 @@
+---
+title: Eine Additional IP erwerben
+description: Erfahren Sie hier, wie Sie für Ihre Instanzen Additional IP-Adressen bestellen können
+lastUpdated: 2025-04-28
+---
+
+:::info
+Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+
+:::
+
+
+:::info
+Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
+
+:::
+
+
+## Ziel
+
+Aus verschiedenen Gründen kann es sein, dass Sie eine Additional IP-Adresse auf Ihren Instanzen konfigurieren müssen:
+
+- Sie haben auf Ihrer Instanz mehrere Websites.
+- Sie hosten internationale Projekte.
+
+Um diesen Anforderungen zu entsprechen, können Sie eine Additional IP-Adresse für Ihre Public Cloud Instanzen erwerben.
+
+Diese Additional IPs können nur für Instanzen desselben Projekts migriert werden.
+
+**Diese Anleitung erklärt, wie Sie eine Additional IP-Adresse für Ihr OVHcloud Public Cloud Projekt erwerben können.**
+
+## Voraussetzungen
+
+- Sie haben mindestens eine [Public Cloud Instanz](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) in Ihrem Kunden-Account.
+
+:::warning
+Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
+
+:::
+
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigationspfad:** <code className="action">Public Cloud</code> > Wählen Sie Ihr Projekt aus
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## In der praktischen Anwendung
+
+Öffnen Sie im linken Menü <code className="action">Öffentliche IPs</code> unter **Network**.
+
+Öffnen Sie den Tab <code className="action">Additional IP</code> und klicken Sie auf den Button <code className="action">Aktionen</code>. Wählen Sie <code className="action">Eine neue IP hinzufügen</code>.
+
+<img className="thumbnail" alt="IP hinzufügen" src="/images/public-cloud/public-cloud-network-services/additional-ip-buy/buyaddIP_01.png" loading="lazy" />
+
+Klicken Sie in Schritt 1 der Bestellung auf <code className="action">Weiter</code>.
+
+<img className="thumbnail" alt="IP hinzufügen" src="/images/public-cloud/public-cloud-network-services/additional-ip-buy/buyaddIP_02.png" loading="lazy" />
+
+In Schritt 2 können Sie ein Land für die neue IP-Adresse auswählen.
+
+<img className="thumbnail" alt="IP hinzufügen" src="/images/public-cloud/public-cloud-network-services/additional-ip-buy/buyaddIP_03.png" loading="lazy" />
+
+Folgende Länder sind für die Geolokalisierung von IPs verfügbar:
+
+|          |          |          |           |                |
+|:--------:|:--------:|:--------:|:---------:|:--------------:|
+| Belgien  | Finnland  | Frankreich   | Deutschland   | Tschechische Republik |
+| Irland  |  Italien   | Litauen | Niederlande | Vereinigtes Königreich    |
+| Portugal |  Spanien   |  Polen |  Schweiz |                 |
+
+> [!primary] **Verfügbarkeit**
+> 
+> Es ist möglich, dass einige dieser Länder nicht aufgelistet werden, abhängig von der aktuellen Verfügbarkeit der IPv4-Adressen.
+> 
+
+> [!primary] **Lokalisierung**
+>
+> Die Geolokalisierung referenziert ausschließlich die jeweils authoritative Organisation.
+> 
+> Zum Beispiel bedient [RIPE NCC](https://www.ripe.net/) Europa als die *Regional Internet Registry*.
+>
+> Wenn Sie die Geolokalisierung anderweitig überprüfen möchten, wenden Sie sich direkt an die betreffenden Organisationen. OVHcloud kann Ihnen diesbezüglich keine Unterstützung gewähren.
+
+Klicken Sie nach der Auswahl auf <code className="action">Weiter</code>.
+
+Wählen Sie im letzten Schritt Ihre Instanz im Drop-down-Menü aus. Klicken Sie anschließend auf <code className="action">Bestellschein erstellen</code>.
+
+<img className="thumbnail" alt="IP hinzufügen" src="/images/public-cloud/public-cloud-network-services/additional-ip-buy/buyaddIP_04.png" loading="lazy" />
+
+Der Bestellschein wird automatisch geöffnet, damit Sie Ihre Bestellung abschließen können.
+
+Weitere Informationen finden Sie in unserer [Anleitung zur Verwaltung von Bestellungen](/guides/account-and-service-management/managing-billing-payments-and-services/managing-ovh-orders/).
+
+Sie finden den Bestellschein auch in Ihrem Kundencenter, wenn Sie im Bereich <code className="action">Dashboard</code> auf <code className="action">Meine Bestellungen</code> klicken.
+
+Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert werden. Lesen Sie dazu unsere [Anleitung zur IP-Konfiguration](/guides/public-cloud/public-cloud-network-services/getting-started-04-configure-additional-ip-to-instance/).
+
+## Weiterführende Informationen
+
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

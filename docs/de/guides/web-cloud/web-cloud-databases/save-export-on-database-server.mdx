@@ -1,0 +1,201 @@
+---
+title: Eine Datenbank Ihres Datenbankservers sichern und exportieren
+description: Erfahren Sie, wie Sie eine Datenbank auf Ihrem Web Cloud Databases Server über das OVHcloud Kundencenter oder phpMyAdmin sichern und exportieren
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+Ihre Datenbank kann eine Vielzahl von Informationen enthalten, die für Ihre Website unverzichtbar sind. Es ist daher wichtig, sie sichern oder exportieren zu können.
+
+**Diese Anleitung erklärt, wie Sie Ihre Datenbank auf Ihrem Datenbankserver sichern und exportieren.**
+
+## Voraussetzungen
+
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovhcloud.com/de/web-cloud/databases/) (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Wählen Sie Ihren Datenbankdienst aus
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## In der praktischen Anwendung
+
+:::info
+Die [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Dienste gewähren keinen Zugriff auf das Datenbankmanagementsystem, sondern auf die darauf gehosteten Datenbanken.
+
+- Es gibt keinen Superuser-Zugang ("root").
+- Generische SQL-Befehle funktionieren normal und Software wie HeidiSQL, SQuirreL SQL oder Adminer ist vollständig kompatibel.
+
+:::
+
+
+### Datenbank über das Kundencenter sichern und exportieren
+
+:::info
+- Backups werden automatisch einmal täglich für alle Ihre Datenbanken durchgeführt.
+- Automatische und manuelle Backups werden 30 Tage lang aufbewahrt.
+Nach Ablauf dieser Frist werden sie automatisch gelöscht.
+
+:::
+
+
+#### Manuelles Backup erstellen
+
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), und wählen Sie die betreffende Lösung aus.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf den Tab <code className="action">Datenbanken</code>.
+    
+    In der Spalte **Sicherungen** zeigt die Zahl die Anzahl der für Ihre Datenbank verfügbaren Sicherungen an.
+  </Tab>
+  <Tab label="Schritt 3">
+    Klicken Sie auf den Button <code className="action">...</code> rechts neben der Datenbank und dann auf <code className="action">Jetzt sichern</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Backup exportieren
+
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), und wählen Sie die betreffende Lösung aus.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf den Tab <code className="action">Datenbanken</code>.
+    
+    In der Spalte **Sicherungen** zeigt die Zahl die Anzahl der für Ihre Datenbank verfügbaren Sicherungen an.
+  </Tab>
+  <Tab label="Schritt 3">
+    Klicken Sie auf den Button <code className="action">...</code> rechts neben der Datenbank und dann auf <code className="action">Die Sicherungen anzeigen</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Die Liste der verfügbaren Backups wird angezeigt. Klicken Sie auf den Button <code className="action">...</code> rechts neben dem ausgewählten Backup und dann auf <code className="action">Sicherung herunterladen</code>.
+  </Tab>
+</Tabs>
+
+
+### Datenbank außerhalb des Kundencenters sichern und exportieren
+
+Wenn der verfügbare RAM auf Ihrem Server den gewünschten Export nicht ermöglicht, verwenden Sie das OVHcloud-Tool im Kundencenter, das Ressourcen außerhalb Ihres Angebots nutzt. Weitere Informationen finden Sie im Abschnitt "[Datenbank über das Kundencenter sichern und exportieren](#datenbank-uber-das-kundencenter-sichern-und-exportieren)" dieser Anleitung.
+
+**Klicken Sie auf die Exportmethode Ihrer Wahl, um den Inhalt anzuzeigen.**
+
+<details>
+
+<summary>MySQL- oder MariaDB-Datenbank über OVHcloud phpMyAdmin exportieren</summary>
+
+
+Um Ihre Datenbank direkt über phpMyAdmin zu exportieren, müssen Sie sich zuerst einloggen. Folgen Sie dazu der Anleitung "[Mit einer Datenbank verbinden](/guides/web-cloud/web-cloud-databases/connecting-to-database-on-database-server/)".
+
+Wenn Sie in phpMyAdmin eingeloggt sind, klicken Sie auf den Namen der Datenbank, die Sie exportieren möchten, und anschließend auf den Tab <code className="action">Exportieren</code> oben.
+
+Es gibt zwei Exportmodi. Wenn Sie keine besonderen Anforderungen haben, empfehlen wir den Modus **Schnell** im Format **SQL**.
+
+<img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>MySQL- oder MariaDB-Datenbank über die Kommandozeile exportieren</summary>
+
+
+```bash
+mysqldump --host=server --user=benutzername --port=port --password=passwort datenbankname > datenbankname.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>MySQL- oder MariaDB-Datenbank über ein PHP-Skript exportieren</summary>
+
+
+```php
+1. <?php echo "Ihre Datenbank wird gesichert.......";
+2. system("mysqldump --host=server --user=benutzername --port=port --password=passwort datenbankname > datenbankname.sql");
+3. echo "Abgeschlossen. Sie können die Datenbank per FTP abrufen.";
+4. ?>
+```
+
+:::warning
+- Um zu verhindern, dass Dritte auf diese Datei mit sensiblen Daten zugreifen, sichern Sie den Zugang mithilfe der Anleitung: [Verzeichnis mit .htaccess schützen](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+- Diese Aktion ist nur über ein OVHcloud Shared Hosting möglich.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>PostgreSQL-Datenbank über die Kommandozeile exportieren</summary>
+
+
+```bash
+pg_dump --host=server --port=port --user=benutzername --password=passwort datenbankname > datenbankname.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>PostgreSQL-Datenbank über ein PHP-Skript exportieren</summary>
+
+
+```php
+1. <?php echo "Ihre Datenbank wird gesichert.......";
+2. system("PGPASSWORD=passwort pg_dump --host=server --port=port --user=benutzername --password=passwort datenbankname > datenbankname.sql");
+3. echo "Abgeschlossen. Sie können die Datenbank per FTP abrufen.";
+4. ?>
+```
+
+:::warning
+- Um zu verhindern, dass Dritte auf diese Datei mit sensiblen Daten zugreifen, sichern Sie den Zugang mithilfe der Anleitung: [Verzeichnis mit .htaccess schützen](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+- Diese Aktion ist nur über ein OVHcloud Shared Hosting möglich.
+
+:::
+
+
+</details>
+
+
+## Weiterführende Informationen
+
+[Datenbank über das Kundencenter sichern und exportieren](#datenbank-uber-das-kundencenter-sichern-und-exportieren)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

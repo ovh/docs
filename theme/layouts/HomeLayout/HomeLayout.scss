@@ -1,0 +1,16 @@
+.rp-home-layout__content {
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 80rem;
+  margin: auto;
+  padding-bottom: 80px;
+  min-height: calc(100vh - var(--rp-nav-height));
+}
+
+/* Ensure the sidebar menu mask is displayed on mobile for home layout */
+@media (max-width: 767px) {
+  .rp-sidebar-menu__mask {
+    display: block;
+  }
+}

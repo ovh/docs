@@ -1,0 +1,92 @@
+---
+title: MX Plan - Configura il tuo account di posta elettronica su Mail per iPhone e iPad
+description: Come configurare un account email MX Plan su un iPhone o un iPad
+lastUpdated: 2024-10-01
+---
+
+## Obiettivo
+
+Gli account email del servizio MX Plan possono essere configurati su client o applicazioni di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
+
+**Questa guida ti mostra come configurare un indirizzo email MX Plan su un iPhone o un iPad tramite l'applicazione Mail.**
+
+:::warning
+OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+
+Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo sito. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+
+:::
+
+
+## Prerequisiti
+
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
+- Essere aggiornato nei [pagamenti](/guides/account-and-service-management/managing-billing-payments-and-services/invoice-management#pay-bills/) e [rinnovi](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#renewal-management/) dei servizi associati (dominio e hosting web).
+- Aver installato l'applicazione Mail sul proprio dispositivo iOS
+- Disporre delle credenziali associate all’account email da configurare
+
+## Procedura
+
+### Aggiungi l'account
+
+Sulla schermata Home del tuo dispositivo clicca su <code className="action">Impostazioni</code> (icona a ruota dentata). L'aggiunta di un account si effettua in diversi modi, a seconda della tua versione iOS:
+
+- **Per iOS 7, 8, 9 e 10**: clicca su <code className="action">Mail, Contatti, Calendario</code>, poi su <code className="action">Aggiungi account</code>. Infine seleziona Altro, poi Aggiungi account Mail. A questo punto, passa allo Step 5 della tabella seguente.
+
+- **Per iOS 11, 12 e 13**: clicca su <code className="action">Account e password</code> e poi su <code className="action">Aggiungi account</code>. Infine seleziona Altro, poi Aggiungi account Mail. A questo punto, passa allo Step 5 della tabella seguente.
+
+- **Per le versioni iOS 14 e successive**: seguire le istruzioni riportate nella tabella seguente.
+
+| | |
+|---|---|
+|<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/configuration-mail-ios-step01.gif" loading="lazy" />|1. Nelle `Impostazioni`, vai su `Mail`. <br/><br/> 2. Premi su `Account`.<br/><br/> 3. Clicca su `Aggiungi account`.<br/><br/> 4. Scegliete `Altro` in basso.|
+|5. Clicca su `Aggiungi un account Mail`.<br/><br/>6. Inserisci il tuo **nome**, il tuo indirizzo **email**, la tua **password** e una **descrizione** del tuo account.<br/><br/>7. Clicca su `Avanti`.|<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/configuration-mail-ios-step02.png" loading="lazy" />|
+|<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/configuration-mail-ios-step03.png" loading="lazy" />|8. Seleziona il tipo di server di ricezione `IMAP` (consigliato) o `POP`.<br/><br/>Nelle sezioni `SERVER DI RICEZIONE` e `SERVER DI INVIO`, nonostante la dicitura "facoltativo", inserisci: <br/>- host **ssl0.ovh.net** <br/>- il tuo **indirizzo email completo** nel nome utente <br/>- la password del tuo indirizzo email|
+
+Assicurati che, al termine della configurazione, la voce <code className="action">Mail</code> sia selezionata in modo che l'applicazione possa utilizzare questo account e poi clicca su <code className="action">Salva</code>.
+
+Per verificare la corretta configurazione dell’account esegui un test di invio dall’applicazione Mail del tuo dispositivo.
+
+Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco i parametri da utilizzare con il nostro servizio MX Plan: 
+
+- **Per una configurazione in IMAP**
+
+|Tipo di server|Nome del server|SSL|Porta|
+|---|---|---|---|
+|In entrata|ssl0.ovh.net|Sì|993|
+|In uscita|ssl0.ovh.net|Sì|465|
+
+- **Per una configurazione in POP**
+
+|Tipo di server|Nome del server|SSL|Porta|
+|---|---|---|---|
+|In entrata|ssl0.ovh.net|Sì|995|
+|In uscita|ssl0.ovh.net|Sì|465|
+
+### Utilizza l'indirizzo email
+
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
+
+OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email dal browser all'indirizzo [Webmail](https://www.ovhcloud.com/it/mail/)corrispondente. e accessibile con le credenziali del tuo account.
+
+:::info
+In caso di difficoltà a ricevere o inviare email, consulta le nostre [FAQ sui servizi di posta OVHcloud](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/).
+
+:::
+
+
+## Per saperne di più
+
+:::info
+Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su iOS, consulta [il centro assistenza Apple](https://support.apple.com/it-it/102619).
+
+:::
+
+
+[Configurare un account Exchange su un iPhone o un iPad](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-ios/)
+
+[Configurare un account Email Pro su un iPhone o un iPad](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/)
+
+[FAQ e-mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

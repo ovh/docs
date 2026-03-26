@@ -1,0 +1,114 @@
+---
+title: Configuration du redirecteur DNS dans NSX
+description: Découvrez comment ajouter un redirecteur DNS à NSX
+lastUpdated: 2023-02-27
+---
+
+## Objectif
+
+Il est possible d'utiliser un redirecteur DNS dans NSX. Son rôle est de centraliser toutes les requêtes DNS et de les rediriger vers des serveurs DNS externes, ce qui permet de réduire le flux réseau. Vous pouvez attacher le redirecteur DNS sur la passerelle nord-sud (ovh-T0-gw) ou la passerelle est-ouest (ovh-T1-gw), en fonction de vos besoins.
+
+**Découvrez comment configurer un redirecteur DNS dans NSX.**
+
+:::warning
+OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+
+Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+
+:::
+
+
+## Prérequis
+
+- Être contact administrateur de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
+- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/).
+
+## En pratique
+
+Nous allons créer un redirecteur DNS et l'attacher à la passerelle nord-sud (ovh-T0-gw), il sera utilisable sur l'ensemble des segments de NSX.
+
+### Configuration du redirecteur DNS
+
+Dans l'interface NSX, allez dans l'onglet <code className="action">Networking</code> et cliquez sur <code className="action">DNS</code> à gauche dans la rubrique **IP Management**. Cliquez ensuite sur <code className="action">ADD DNS SERVICE</code>.
+
+<img className="thumbnail" alt="Configure DNS forwarder 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/01-configure-dns-forwarder01.png" loading="lazy" />
+
+Renseignez ces informations :
+
+- **Name** : nom de votre service, par exemple `dns-forwarder`.
+- **Tier-0/Tier-1 Gateway** : votre passerelle Nord-Sud `ovh-T0-gw`.
+- **DNS Service IP** : adresse IP privée non utilisé dans vos segments comme `192.168.200.1`.
+
+Cliquez ensuite sur les <code className="action">trois points verticaux</code> en dessous de **Default DNS Zone**.
+
+<img className="thumbnail" alt="Configure DNS forwarder 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/01-configure-dns-forwarder02.png" loading="lazy" />
+
+Cliquez sur <code className="action">Add New Default Zone</code>.
+
+<img className="thumbnail" alt="Configure DNS forwarder 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/01-configure-dns-forwarder03.png" loading="lazy" />
+
+Renseignez ces valeurs :
+
+- **Name** : nom de la zone, par exemple `cdns.ovh.net`.
+- **DNS Servers** : serveur DNS OVHcloud `213.186.33.99`.
+
+Cliquez ensuite sur <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="Configure DNS forwarder 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/01-configure-dns-forwarder04.png" loading="lazy" />
+
+Cliquez à nouveau sur <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="Configure DNS forwarder 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/01-configure-dns-forwarder05.png" loading="lazy" />
+
+Votre redirecteur DNS est actif et utilisable sur tous vos segments en Overlay ou VLAN connectés à votre passerelle nord-sud (ovh-t0-gw).
+
+<img className="thumbnail" alt="Configure DNS forwarder 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/01-configure-dns-forwarder06.png" loading="lazy" />
+
+### Modification du serveur DHCP pour utiliser un redirecteur DNS
+
+Si vous avez configuré des serveurs DHCP dans NSX comme indiqué dans notre guide de [configuration du DHCP](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-03-configure-dhcp-onsegment/), vous pouvez modifier la configuration pour utiliser le redirecteur DNS dans vos configurations DHCP.
+
+Nous allons voir comment modifier le serveur DNS sur la configuration DHCP d'un de vos segments.
+
+Restez sur l'onglet <code className="action">Networking</code> et cliquez sur <code className="action">Segments</code> à gauche dans la rubrique **Connectivity**. 
+
+Cliquez ensuite sur les <code className="action">trois points verticaux</code> à coté de votre segment et cliquez sur <code className="action">Edit</code> dans le menu.
+
+<img className="thumbnail" alt="Modify DHCP overlay segment 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/02-modify-dhcp-overlay-segment01.png" loading="lazy" />
+
+Cliquez sur <code className="action">EDIT DHCP CONFIG</code>.
+
+<img className="thumbnail" alt="Modify DHCP overlay segment 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/02-modify-dhcp-overlay-segment02.png" loading="lazy" />
+
+Cliquez sur la <code className="action">croix</code> à droite du DNS existant dans l'option **DNS Servers**, afin de l'enlever de la configuration.
+
+<img className="thumbnail" alt="Modify DHCP overlay segment 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/02-modify-dhcp-overlay-segment03.png" loading="lazy" />
+
+Ajoutez, dans **DNS Servers**, l'adresse IP de votre redirecteur DNS, par exemple <code className="action">192.168.200.1</code> et cliquez sur <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="Modify DHCP overlay segment 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/02-modify-dhcp-overlay-segment04.png" loading="lazy" />
+
+Cliquez sur <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="Modify DHCP overlay segment 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/02-modify-dhcp-overlay-segment05.png" loading="lazy" />
+
+Cliquez sur <code className="action">CLOSE EDITING</code>.
+
+<img className="thumbnail" alt="Modify DHCP overlay segment 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-04-configure-dns-forwarder/02-modify-dhcp-overlay-segment06.png" loading="lazy" />
+
+Le paramétrage DHCP de votre segment utilise maintenant le redirecteur DNS créé précédemment.
+
+## Aller plus loin
+
+[Premiers pas avec NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-01-first-steps/)
+
+[Gestion des segments dans NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/)
+
+[Configuration du DHCP](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-03-configure-dhcp-onsegment/)
+
+[Documentation VMware sur le service DNS dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

@@ -1,0 +1,157 @@
+---
+title: "Installer un environnement de développement web sur un VPS ou un serveur dédié"
+excerpt: "Découvrez comment installer un environnement de développement web sur un VPS ou un serveur dédié OVHcloud"
+updated: 2025-10-15
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur votre VPS (comme WordPress par exemple), vous devez au préalable installer un environnement de développement web sur votre VPS ou votre serveur dédié. Les principaux services à installer sont :
+
+- **PHP** : PHP est l'un des langages les plus utilisés pour créer des sites web. Il est nécessaire d'installer PHP pour que votre site web puisse exécuter des scripts et des fonctionnalités dynamiques. Installez de préférence la version de PHP la plus récente.
+- **Serveur web** : Le serveur web est essentiel pour servir les pages de votre site web. Les serveurs web les plus populaires incluent Apache et Nginx, chacun ayant leurs propres avantages en termes de flexibilité, de performance et de facilité de configuration.
+- **SGBD** : Pour stocker, gérer, et récupérer vos données efficacement, vous aurez besoin d'un SGBD (**S**ystème de **G**estion de **B**ase de **D**onnées). MySQL, PostgreSQL ou encore MariaDB sont les SGBD les plus utilisés dans le développement web.
+
+**Découvrez comment installer manuellement un environnement de développement web sur un VPS ou un serveur dédié OVHcloud.**
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce tutoriel.
+>
+
+## Prérequis
+
+- Disposer d'une offre [VPS](/links/bare-metal/vps) ou d'un [serveur dédié](/links/bare-metal/bare-metal) dans votre [espace client OVHcloud](/links/manager)
+- Disposer d'un accès administrateur (sudo) via SSH à votre serveur
+
+## En pratique
+
+Connectez-vous en SSH à votre VPS à l'aide de votre nom d'utilisateur et de votre mot de passe.
+
+### Mettre à jour l'index des paquets
+
+Avant d'installer les composants, mettez à jour la liste des paquets :
+
+```sh
+sudo apt update
+```
+
+Appliquez les mises à jour disponibles :
+
+```sh
+sudo apt -y upgrade
+```
+
+### Installer PHP
+
+Installez PHP :
+
+```sh
+sudo apt install -y php php-cli php-fpm php-xml php-gd php-curl
+```
+
+Pour vérifier que PHP est bien installé, entrez la commande suivante :
+
+```sh
+sudo php -v
+```
+
+Si PHP est bien installé, un message de ce type doit apparaître :
+
+![env dev web](/images/guides/bare-metal-cloud/virtual-private-servers/install-env-web-dev-on-vps/result_php_v.png)
+
+### Installer un serveur web
+
+> [!info]
+>
+> Pour ce guide, nous choisissons Nginx mais vous êtes libre d'installer le serveur web de votre choix.
+>
+
+Installez Nginx :
+
+```sh
+sudo apt install nginx -y
+```
+
+Pour vérifier que Nginx est bien installé, entrez la commande suivante :
+
+```sh
+sudo nginx -v
+```
+
+Si Nginx est bien installé, un message de ce type doit apparaître :
+
+![env dev web](/images/guides/bare-metal-cloud/virtual-private-servers/install-env-web-dev-on-vps/result_nginx_v.png)
+
+En cas de besoin, n'hésitez pas à consulter le [site officiel de Nginx](https://www.nginx.com/).
+
+### Installer un SGBD (**S**ystème de **G**estion de **B**ase de **D**onnées)
+
+:::info
+
+Choisissez l'onglet correspondant au SGBD que vous souhaitez utiliser. L'extension PHP adéquate est installée dans chaque cas.
+
+:::
+
+<Tabs>
+  <Tab label="MySQL / MariaDB">
+Installez MariaDB (ou MySQL) et l'extension PHP associée :
+
+```sh
+sudo apt install -y mariadb-server php-mysql
+```
+
+Sécurisez l'installation :
+
+```sh
+sudo mysql_secure_installation
+```
+
+Définissez un mot de passe pour votre SGBD et suivez les instructions à l'écran. Une fois l'installation de MariaDB (ou MySQL) terminée, le message suivant doit s'afficher :
+
+![env dev web](/images/guides/bare-metal-cloud/virtual-private-servers/install-env-web-dev-on-vps/success_msg_mariadb.png)
+  </Tab>
+  <Tab label="PostgreSQL">
+Installez PostgreSQL et l'extension PHP correspondante :
+
+```sh
+sudo apt install -y postgresql postgresql-contrib php-pgsql
+```
+
+Créez une base et un utilisateur (exemple) :
+
+```sh
+sudo -u postgres psql -c "CREATE DATABASE db_name;"
+sudo -u postgres psql -c "CREATE USER db_user WITH ENCRYPTED PASSWORD 'mot_de_passe_fort';"
+sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE db_name TO db_user;"
+```
+  </Tab>
+</Tabs>
+
+### Conclusion
+
+Vous venez d'installer PHP, un serveur Nginx et un SGBD (MariaDB/MySQL ou PostgreSQL). Vous possédez désormais un environnement de développement web fonctionnel sur votre VPS ou votre serveur dédié OVHcloud. Si vous le souhaitez, vous pouvez maintenant installer le CMS (**C**ontent **M**anagement **S**ystem) de votre choix, comme WordPress par exemple. Pour en savoir plus, consultez les guides « [Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/guides/bare-metal-cloud/virtual-private-servers/install-wordpress-site-on-vps) » et « [Installer WordPress avec Docker sur un VPS ou un serveur dédié](/guides/bare-metal-cloud/virtual-private-servers/install-wordpress-docker-on-vps) ».
+
+Pour obtenir quelques conseils généraux pour sécuriser un serveur basé sur GNU/Linux, consultez nos guides :
+
+- [Sécuriser un VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps)
+- [Sécuriser un serveur dédié](/guides/bare-metal-cloud/dedicated-servers/securing-a-dedicated-server)
+
+## Aller plus loin <a id="go-further"></a>
+
+[Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/guides/bare-metal-cloud/virtual-private-servers/install-wordpress-site-on-vps)
+
+[Installer WordPress avec Docker sur un VPS ou un serveur dédié](/guides/bare-metal-cloud/virtual-private-servers/install-wordpress-docker-on-vps)
+
+[Sécuriser un VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps)
+
+[Sécuriser un serveur dédié](/guides/bare-metal-cloud/dedicated-servers/securing-a-dedicated-server)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

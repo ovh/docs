@@ -1,0 +1,76 @@
+---
+title: Object Storage - Use Object Storage with WinSCP
+description: Learn how to configure WinSCP to manage your buckets and objects.
+lastUpdated: 2025-08-25
+---
+
+## Objective
+
+[WinSCP](https://winscp.net/) is a free, open-source SFTP, FTP, WebDAV, S3<sup>1</sup>, and SCP client and file manager for Windows.
+
+**This guide explains how to configure WinSCP to manage your buckets and objects.**
+
+## Requirements
+
+- A bucket
+- A user with the required access rights on the bucket
+- Your Object Storage credentials (`access_key` and `secret_access_key`)
+
+See our [Getting started with Object Storage](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/) guide.
+
+## Instructions
+
+Start WinSCP. The login dialog will appear. Fill in the fields as follows:
+
+1\. Make sure the `New Site` node is selected.
+
+<img className="thumbnail" alt="Login dialog" src="/images/storage-and-backup/object-storage/s3-winscp/login_dialog.png" loading="lazy" />
+
+2\. On the `New Site` node, select <code className="action">Amazon S3</code> protocol.
+
+<img className="thumbnail" alt="Amazon S3 file protocol" src="/images/storage-and-backup/object-storage/s3-winscp/S3_file_protocol.png" loading="lazy" />
+
+3\. Enter your endpoint (without `https://`) corresponding to your storage class, and set the `Port number` field to `443`.
+
+:::info
+To identify the endpoint corresponding to your storage class, see: [Object Storage - Endpoints and Object Storage geoavailability](/guides/storage-and-backup/object-storage/s3-location/).
+
+:::
+
+
+<img className="thumbnail" alt="Host name" src="/images/storage-and-backup/object-storage/s3-winscp/hostname.png" loading="lazy" />
+
+4\. Enter your user's `access_key`.
+
+In order to respect best practices, please fill in only the `Access key ID` field at this stage.
+
+<img className="thumbnail" alt="Access key" src="/images/storage-and-backup/object-storage/s3-winscp/access_key.png" loading="lazy" />
+
+5\. Save your site settings using the <code className="action">Save</code> button.
+
+<img className="thumbnail" alt="Save config" src="/images/storage-and-backup/object-storage/s3-winscp/save_config.png" loading="lazy" />
+
+6\. Log in using the <code className="action">Login</code> button.
+
+<img className="thumbnail" alt="Login" src="/images/storage-and-backup/object-storage/s3-winscp/login.png" loading="lazy" />
+
+Then enter your `secret_access_key`.
+
+<img className="thumbnail" alt="Secret key" src="/images/storage-and-backup/object-storage/s3-winscp/secret_key.png" loading="lazy" />
+
+7\. Once you are connected, you will see a list of your S3 buckets as *folders* in the root folder.
+
+:::warning
+The `Create directory` command in the root folder creates a new bucket.
+
+:::
+
+
+<img className="thumbnail" alt="Connected" src="/images/storage-and-backup/object-storage/s3-winscp/connected.png" loading="lazy" />
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+

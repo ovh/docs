@@ -1,0 +1,100 @@
+---
+title: Cloud Disk Array - Comment créer une ACL IP
+description: "Ce guide vous montre comment créer une ACL IP pour autoriser l'accès à votre cluster Ceph"
+lastUpdated: 2025-04-28
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+Ce guide vous montre comment créer une ACL IP pour autoriser l'accès à votre cluster Ceph, en utilisant l'espace client OVHcloud ou l'API OVHcloud.
+
+## Prérequis
+
+- Une solution [Cloud Disk Array](https://www.ovhcloud.com/fr/storage-solutions/cloud-disk-array/)
+
+{/* CP-NAV-START:storage-cloud-disk-array */}
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Cloud Disk Array](https://manager.eu.ovhcloud.com/#/dedicated/cda)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">Cloud Disk Array</code> > Sélectionnez votre service
+
+---
+{/* CP-NAV-END:storage-cloud-disk-array */}
+
+## En pratique
+
+:::info
+L'utilisation de l'espace client OVHcloud est le moyen le plus simple de créer une ACL IP.
+
+:::
+
+
+### Depuis l'espace client OVHcloud
+
+Sur la page de votre service Cloud Disk Array, accédez à l'onglet <code className="action">Contrôle d'accès IP</code>. Par défaut, il n'y a pas d'ACL.
+
+<img className="thumbnail" alt="Ceph pools" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-create-an-ip-acl/ceph-add-ip-1.png" loading="lazy" />
+
+Obtenez votre adresse IP :
+
+```bash
+admin@server:~$ ip -4 a
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    inet 123.123.123.123/32 brd 234.234.234.234 scope global eth0
+      valid_lft forever preferred_lft forever
+```
+
+Ajoutez ensuite votre IP.
+
+<img className="thumbnail" alt="Ceph pools" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-create-an-ip-acl/ceph-add-ip-2.png" loading="lazy" />
+
+Enfin, créez l'ACL IP.
+
+Après la création du pool d'adresses IP, vous pouvez voir que le statut du pool a changé car l'ACL est en cours de création.
+
+### Depuis l'API OVHcloud
+
+:::tip[Success]
+Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) ».
+
+:::
+
+
+Utilisez l'appel API suivant :
+
+<Api version="v1" section="/dedicated/ceph" method="POST" route={"/dedicated/ceph/\{serviceName\}/acl"} />
+
+
+`serviceName` est le fsid de votre cluster.
+
+Vous pouvez vérifier la création d'une ACL en consultant la liste des ACL.
+
+<Api version="v1" section="/dedicated/ceph" method="GET" route={"/dedicated/ceph/\{serviceName\}/acl"} />
+
+Example:
+
+```bash
+GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/acl
+[
+  {
+    network: "123.123.123.123"
+    id: 57054
+    netmask: "255.255.255.255"
+    family: "IPV4"
+  }
+]
+```
+
+## Aller plus loin
+
+Rendez-vous sur notre chaîne Discord dédiée : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).
+

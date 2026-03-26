@@ -1,0 +1,230 @@
+---
+title: Logs Data Platform - Getting started with Node.js
+description: How to send logs from a Node.js application to Logs Data Platform
+lastUpdated: 2026-02-09
+---
+
+## Objective
+
+This guide allows you to send logs from a **Node.js** application to **Logs Data Platform** (LDP).
+We will use the **Pino** logger, a fast and low-overhead logger for Node.js, combined with a **GELF** (Graylog Extended Log Format) transport.
+It's also possible to use **Winston** logger with a GELF transport, instructions are provided at the end of this guide.
+
+## Requirements
+
+- A [Logs Data Platform account](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start).
+- A **Stream** created and its **Token** (X-OVH-TOKEN).
+- The address of your LDP cluster (e.g., `gra1.logs.ovh.com`) and the GELF port (usually `12202` for TLS).
+- Node.js installed on your environment (version >= 20 recommended).
+
+## Instructions for logging with Pino
+
+### Install Dependencies
+
+We need two packages:
+
+- `pino`: Encodes logs to JSON.
+- `@alex-michaud/pino-graylog-transport`: Sends the logs to the LDP endpoint using GELF.
+
+Install them via npm:
+
+```bash
+npm install pino @alex-michaud/pino-graylog-transport
+```
+
+### Configure the Logger
+
+Create a file named `logger.js` (or `index.js`) and configure the logger.
+
+You need to:
+
+1.  Configure the transport to point to your LDP cluster.
+2.  Add your `X-OVH-TOKEN` to every log message so LDP accepts and routes them. In GELF, custom fields generally start with an underscore `_`.
+
+```javascript
+import { pino } from 'pino'
+import { PinoGraylogTransport } from '@alex-michaud/pino-graylog-transport'
+
+// Replace these values with your specific configuration
+const LDP_CLUSTER = 'gra1.logs.ovh.com'; // Your cluster address
+const LDP_PORT = 12202;                  // GELF TLS port
+const LDP_TOKEN = 'your-data-stream-write-token';   // X-OVH-TOKEN
+
+// Create a promise to wait for the transport to be ready
+let resolveReady, rejectReady;
+const isReady = new Promise((resolve, reject) => {
+    resolveReady = resolve;
+    rejectReady = reject;
+});
+
+const pinoGraylogTransportOptions = {
+    host: LDP_CLUSTER,
+    port: LDP_PORT,
+    protocol: 'tls',
+    staticMeta: { 'X-OVH-TOKEN': LDP_TOKEN, }, // Note: no underscore - GELF formatter adds it
+    onReady: (success, err) => {
+        if (success) {
+            console.log('Graylog transport connected successfully');
+            resolveReady();
+            return;
+        }
+        console.error('Graylog transport failed to connect:', err);
+        rejectReady(err);
+    },
+}
+
+const pinoGraylogTransport = new PinoGraylogTransport(pinoGraylogTransportOptions);
+
+const logger = pino({ level: 'info' }, pinoGraylogTransport);
+
+(async () => {
+    try {
+        // Wait until the logger is ready
+        await isReady;
+        console.log('Logger is ready to send logs');
+
+        // Usage examples
+        logger.info('Hello! This is a test log from Node.js');
+        logger.warn({ user_id: 42 }, 'User performed a restricted action');
+        logger.error(new Error('Something went wrong'), 'An error occurred');
+
+        await pinoGraylogTransport.flush();
+
+        console.log('Logger has terminated');
+    } catch (err) {
+        console.error('Logger error:', err);
+        process.exit(1);
+    }
+})();
+```
+
+:::info
+
+- **Note**: For security reasons, we recommend using environment variables to store your Token and Cluster address instead of hardcoding them.
+
+- **Note**: In your `package.json`, make sure to set `"type": "module"` to use ES modules syntax.
+
+:::
+
+
+### Run and Verify
+
+Run your application:
+
+```bash
+node logger.js
+```
+
+Then, go to your **Graylog** interface (access via the OVHcloud Control Panel]) and define a relative search time (e.g., "Last 5 minutes"). You should see your messages appearing in the stream.
+
+## Go further
+
+- [Pino Documentation](https://getpino.io/)
+- [@alex-michaud/pino-graylog-transport Documentation](https://www.npmjs.com/package/@alex-michaud/pino-graylog-transport)
+- [Graylog Extended Log Format (GELF)](https://go2docs.graylog.org/5-0/getting_in_log_data/gelf.html)
+
+
+## Instructions for logging with Winston
+
+### Install Dependencies
+
+We need two packages:
+
+- `winston`: A versatile logging library for Node.js.
+- `winston-log2gelf`: A transport for Winston to send logs in GELF format.
+
+Install them via npm:
+
+```bash
+npm install winston winston-log2gelf
+```
+
+### Configure the Logger
+
+Create a file named `logger.js` (or `index.js`) and configure the logger.
+
+You need to:
+
+1.  Configure the transport to point to your LDP cluster.
+2.  Add your `X-OVH-TOKEN` to every log message so LDP accepts and routes them. In GELF, custom fields generally start with an underscore `_`.
+3.  Set the log level as needed.
+
+```javascript
+import { createLogger } from 'winston';
+import Log2gelf from 'winston-log2gelf';
+
+// Replace these values with your specific configuration
+const LDP_CLUSTER = 'gra1.logs.ovh.com'; // Your cluster address
+const LDP_PORT = 12202;                  // GELF TLS port
+const LDP_TOKEN = 'your-data-stream-write-token';   // X-OVH-TOKEN
+
+const gelfTransport = new Log2gelf({
+    level: "info",
+    host: LDP_CLUSTER,
+    port: LDP_PORT,
+    protocol: "tls",
+});
+
+const logger = createLogger({
+    exitOnError: false,
+    level: 'info',
+    transports: [
+        gelfTransport
+    ],
+    defaultMeta: { 'X-OVH-TOKEN': LDP_TOKEN },
+});
+
+// Listen for errors
+logger.on('error', (error) => {
+    console.error('Logger error event:', error);
+});
+
+(async () => {
+    try {
+        console.log('Sending logs...');
+
+        // Usage examples
+        logger.info('Hello! This is a test log from Node.js with Winston');
+        logger.warn('User performed a restricted action', { user_id: 42 });
+        logger.error('An error occurred', new Error('Something went wrong'));
+
+        // Wait for logs to be sent - Log2gelf needs time to process
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        console.log('All logs sent successfully');
+        process.exit(0);
+    } catch (err) {
+        console.error('Logger error:', err);
+        process.exit(1);
+    }
+})();
+```
+
+:::info
+
+**Note**: For security reasons, we recommend using environment variables to store your Token and Cluster address instead of hardcoding them. 
+
+:::
+
+
+### Run and Verify
+
+Run your application:
+
+```bash
+node logger.js
+```
+
+Then, go to your **Graylog** interface (access via the OVHcloud Control Panel) and define a relative search time (e.g., "Last 5 minutes"). You should see your messages appearing in the stream.
+
+- [Winston Documentation](https://www.npmjs.com/package/winston)
+- [Winston-log2gelf Documentation](https://www.npmjs.com/package/winston-log2gelf)
+- [Graylog Extended Log Format (GELF)](https://go2docs.graylog.org/5-0/getting_in_log_data/gelf.html)
+
+## Go further
+
+- Getting Started: [Quick Start](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start)
+- Documentation: [Guides](/guides/manage-and-operate/observability/logs-data-platform/overview)
+- Create an account: [Try it!](https://www.ovhcloud.com/en-gb/identity-security-operations/logs-data-platform/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

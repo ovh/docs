@@ -1,0 +1,403 @@
+---
+title: Configurar Veeam Backup para Nutanix (EN)
+description: Installing Veeam Backup on a Nutanix cluster
+lastUpdated: 2025-06-06
+---
+
+## Objective
+
+Veeam Backup is a backup software available for Nutanix. 
+
+**Find out how to install, configure and use Veeam on a Nutanix cluster**
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+
+This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+
+:::
+
+
+## Requirements
+
+- A Nutanix cluster in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- You must be connected to the cluster via **Prism Central**. 
+- **Veeam Backup & Replication** installed on a virtual machine in your Nutanix cluster via this procedure: [Setting up Veeam Backup & Replication](/guides/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/).
+- Knowing the public IP address used by **Veeam Backup** to access the internet.
+- You must have 4 GB of RAM, 60 GB of storage and 4 vCPUs to add an additional virtual machine when configuring extensions for **Veeam Backup & Replication**.
+- You must have remote storage outside of the cluster, such as [OVHcloud Object Storage via S3<sup>1</sup>](https://www.ovhcloud.com/pt/public-cloud/object-storage/).
+
+## Instructions
+
+We will customise **Veeam Backup & Replication** for use on a Nutanix cluster, with a remote repository for this cluster at OVHcloud, using the [OVHcloud Object Storage via S3 solution](https://www.ovhcloud.com/pt/public-cloud/object-storage/).
+
+### Add a user in Prism Element for Veeam Backup
+
+First, you need to create a specific user in Prism Element to use Veeam Backup.
+
+Through **Prism Central**, connect to **Prism Element** by clicking on the cluster under `Cluster Quick Access`.
+
+<img className="thumbnail" alt="Create User VEEAM PE 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/01-create-pe-veeamuser01.png" loading="lazy" />
+
+Once in the **Prism Element**, go to the settings by clicking on the <code className="action">gear</code> icon in the top right.
+
+<img className="thumbnail" alt="Create User VEEAM PE 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/01-create-pe-veeamuser02.png" loading="lazy" />
+
+Scroll down the menu on the left using the scroll bar.
+
+<img className="thumbnail" alt="Create User VEEAM PE 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/01-create-pe-veeamuser03.png" loading="lazy" />
+
+Click <code className="action">Local User Management</code>.
+
+<img className="thumbnail" alt="Create User VEEAM PE 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/01-create-pe-veeamuser04.png" loading="lazy" />
+
+Click the <code className="action">New User</code> button.
+
+<img className="thumbnail" alt="Create User VEEAM PE 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/01-create-pe-veeamuser05.png" loading="lazy" />
+
+Enter the information:
+
+- **Username**: `svc_veeam`
+- **First Name**: `Veeam`
+- **Last Name**: `Backup`
+- **Email**: `veeam@example.com`
+- **Password**: `password`
+
+:::info
+This data is provided as an example. The email address is mandatory but is not used.
+
+:::
+
+
+Select the <code className="action">Cluster Admin</code> checkbox and click <code className="action">Save</code>
+
+<img className="thumbnail" alt="Create User VEEAM PE 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/01-create-pe-veeamuser06.png" loading="lazy" />
+
+This user account is created and added to the **Prism Element** user list.
+
+<img className="thumbnail" alt="Create User VEEAM PE 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/01-create-pe-veeamuser07.png" loading="lazy" />
+
+### Download and install the extension for a Nutanix cluster under AHV
+
+Log in to the virtual machine where Veeam Backup is located.
+
+From a web browser, download the latest version of the [AHV extension for Veeam](https://www.veeam.com/availability-nutanix-ahv-download.html). You must have a user account on the **Veeam** website, you can create it freely and free of charge.
+
+Start the installation of the extension.
+
+:::warning
+Before starting the installation, make sure that the **Veeam Backup & replication** console is closed.
+
+:::
+
+
+Open the "NutanixAHPlugin" installer.
+
+<img className="thumbnail" alt="Addon Installation 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/02-install-addon-nutanix-veeam01.png" loading="lazy" />
+
+Accept the General Terms and Conditions of Use and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Installation 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/02-install-addon-nutanix-veeam02.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Installation 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/02-install-addon-nutanix-veeam03.png" loading="lazy" />
+
+Click <code className="action">Install</code>.
+
+<img className="thumbnail" alt="Addon Installation 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/02-install-addon-nutanix-veeam04.png" loading="lazy" />
+
+Once the installation is complete, click <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="Addon Installation 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/02-install-addon-nutanix-veeam06.png" loading="lazy" />
+
+### Integrate Nutanix cluster in **Veeam Backup configuration**
+
+When Configuring Veeam Backup for Nutanix, a new virtual machine is added to the cluster, which serves as the interface between the **Veeam Backup** software and the cluster.
+
+Launch the **Veeam Backup** console and click <code className="action">Connect</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam01.png" loading="lazy" />
+
+Go to <code className="action">Backup Infrastructure</code> in the menu at the bottom right, choose <code className="action">Managed Servers</code> and click <code className="action">Add Server</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam02.png" loading="lazy" />
+
+Click <code className="action">Nutanix AHV</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam03.png" loading="lazy" />
+
+Enter the <code className="action">private IP address</code> of **Prism Element** in `DNS name or IP address` and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam04.png" loading="lazy" />
+
+Click <code className="action">Add</code> to add the **Prism Element** user account
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam05.png" loading="lazy" />
+
+Enter the information for the account created earlier in **Prism Element**:
+
+- **Username**: `svc_veeam`
+- **Password**: `Password`
+
+Click <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam06.png" loading="lazy" />
+
+Check that the account you have created has been selected in the "Credentials" field, then click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam07.png" loading="lazy" />
+
+Click <code className="action">Continue</code> to validate the certificate warning message.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam08.png" loading="lazy" />
+
+Check <code className="action">Use the following IP address</code> and choose an unused private IP address (this address is used when backing up and restoring files), then click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam09.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam10.png" loading="lazy" />
+
+Click <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam11.png" loading="lazy" />
+
+Click <code className="action">Yes</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam12.png" loading="lazy" />
+
+Select <code className="action">Deploy a new proxy</code> and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam13.png" loading="lazy" />
+
+Name the VM in the “Name” field, then click <code className="action">Next</code>. 
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam14.png" loading="lazy" />
+
+Click <code className="action">Configure</code>. 
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 15" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam15.png" loading="lazy" />
+
+Choose an unused <code className="action">IP address</code> on the LAN for the virtual machine and click <code className="action">OK</code>. 
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 16" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam16.png" loading="lazy" />
+
+Click <code className="action">Next</code>. 
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 17" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam17.png" loading="lazy" />
+
+Click on <code className="action">Add</code> to add and create the **NUTANIX-PROXY** VM login account. This VM is added when a Nutanix cluster is added to the **Veeam Backup and replication** console.
+
+:::warning
+Take note of the user account and password created. These credentials allow you to connect to the new virtual machine via the web browser, without going through the **Veeam backup** software. The URL will be similar to `https://privateipaddress:8100`.
+
+:::
+
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 18" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam18.png" loading="lazy" />
+
+Enter the information for the account you created earlier in Prism Element:
+
+- **Username**: `proxy_user`
+- **Password**: `password`
+
+Click <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 19" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam19.png" loading="lazy" />
+
+Check the user account in the "Credentials" field and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 20" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam20.png" loading="lazy" />
+
+Check the box <code className="action">Allow access to all backup repositories</code> and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 21" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam21.png" loading="lazy" />
+
+Wait a few minutes.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 22" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam22.png" loading="lazy" />
+
+The installation ends with a warning message. Please ignore this, as it is the public DNS server that cannot resolve the Veeam server name.<br/>
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Addon Cluster Nutanix to Veeam 23" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-addclusternutanix-to-veeam23.png" loading="lazy" />
+
+#### Modifying the interface virtual machine host file
+
+:::info
+This operation is required if you do not use an internal DNS server to resolve VM names.
+Notably the VM that is used for the Veeam Backup software.
+
+:::
+
+
+Via **Prism Central**, connect to the NUTANIX-PROXY virtual machine. 
+
+Open the main menu at the top left and choose <code className="action">VMs</code>.
+
+<img className="thumbnail" alt="Configure Nutanix PROXY HOST 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-modify-etchostproxy01.png" loading="lazy" />
+
+Click on the NUTANIX-PROXY virtual machine. 
+
+<img className="thumbnail" alt="Configure Nutanix PROXY HOST 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-modify-etchostproxy02.png" loading="lazy" />
+
+Click <code className="action">Launch console</code>.
+
+<img className="thumbnail" alt="Configure Nutanix PROXY HOST 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-modify-etchostproxy03.png" loading="lazy" />
+
+Log in with the user account you created earlier and the password associated with that account.
+
+<img className="thumbnail" alt="Configure Nutanix PROXY HOST 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/03-modify-etchostproxy04.png" loading="lazy" />
+
+From the console, edit the `/etc/hosts` file:
+
+```bash
+proxy_user@NUTANIX-PROXY~$sudo nano /etc/hosts
+[sudo] password for proxy_user:
+```
+
+Add this information, which corresponds to the IP address and name of the virtual machine where Veeam Backup is installed:
+
+```bash
+192.168.0.245 VEEAM-BACKUP 
+```
+
+Save the file and run this command:
+
+```bash
+proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
+[sudo] password for proxy_user:
+```
+### Add S3 Object Storage repository in Veeam Backup
+
+You can store your backups in [OVHcloud Object Storage via S3](https://www.ovhcloud.com/pt/public-cloud/object-storage/) directly from Veeam Backup & Replication.
+
+:::info
+To configure the repository in Veeam, please follow this step-by-step guide:
+[Using S3 Object Storage with Veeam Backup](/guides/storage-and-backup/object-storage/s3-veeam/)
+
+:::
+
+
+### Setting up an automated backup
+
+In **Veeam backup**, open the <code className="action">Home</code> menu (bottom left), then the <code className="action">Backup Job</code> menu and choose <code className="action">Nutanix AHV</code>.
+
+<img className="thumbnail" alt="Create Backup JOB 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob01.png" loading="lazy" />
+
+The **AHV Proxy** web interface opens.
+
+Name the task you want to create, tick the <code className="action">Backup job</code> option, and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create Backup JOB 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob02.png" loading="lazy" />
+
+Click <code className="action">Add</code>.
+
+<img className="thumbnail" alt="Create Backup JOB 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob03.png" loading="lazy" />
+
+Select the virtual machines you want to back up and click <code className="action">Add</code>.
+
+<img className="thumbnail" alt="Create Backup JOB 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob04.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create Backup JOB 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob05.png" loading="lazy" />
+
+Select the repository in <code className="action">Backup repository</code> and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create Backup JOB 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob06.png" loading="lazy" />
+
+Select the <code className="action">Run the job automatically</code> check box, set the frequency, and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create Backup JOB 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob07.png" loading="lazy" />
+
+Click <code className="action">Finish</code> to save the backup job.
+
+<img className="thumbnail" alt="Create Backup JOB 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob07.png" loading="lazy" />
+
+The backup is visible through the **AHV Proxy** web interface.
+
+<img className="thumbnail" alt="Create Backup JOB 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob09.png" loading="lazy" />
+
+Return to the **Veeam Backup** console via the <code className="action">Home</code> menu (at the bottom left). Click <code className="action">Jobs</code> to view the backup job you created.
+
+<img className="thumbnail" alt="Create Backup JOB 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/06-createbackupjob10.png" loading="lazy" />
+
+### Restoring a Virtual Machine
+
+To test that backups are working properly, we will run a recovery task.
+
+Click on <code className="action">Home</code> in the bottom left. In the <code className="action">Restore</code> option, select <code className="action">Nutanix AHV</code>.
+
+<img className="thumbnail" alt="Restore VM 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm01.png" loading="lazy" />
+
+Click <code className="action">Restore from AHV backup</code>.
+
+<img className="thumbnail" alt="Restore VM 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm02.png" loading="lazy" />
+
+Click <code className="action">Entire VM restore</code>.
+
+<img className="thumbnail" alt="Restore VM 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm03.png" loading="lazy" />
+
+Click <code className="action">Add</code>.
+
+<img className="thumbnail" alt="Restore VM 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm04.png" loading="lazy" />
+
+Select a virtual machine and click <code className="action">Add</code>.
+
+<img className="thumbnail" alt="Restore VM 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm05.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore VM 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm06.png" loading="lazy" />
+
+Choose <code className="action">Restore to a new location, or with different settings</code> and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore VM 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm07.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore VM 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm08.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore VM 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm09.png" loading="lazy" />
+
+Rename the VM in <code className="action">New name</code> and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore VM 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm10.png" loading="lazy" />
+
+Click <code className="action">Disconnect</code> to isolate the restored VM from the network.
+
+<img className="thumbnail" alt="Restore VM 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm11.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore VM 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm12.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore VM 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm13.png" loading="lazy" />
+
+Click <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="Restore VM 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm14.png" loading="lazy" />
+
+A preview of the status of the restoration is launched, it takes some time depending on the size of the virtual machine.
+
+<img className="thumbnail" alt="Restore VM 15" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/41-nutanix-veeam-backup/07-restorevm15.png" loading="lazy" />
+
+## Go further <a name="gofurther"></a>
+
+[VEEAM documentation on installing VEEAM Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
+
+OVHcloud storage solutions
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).
+
+_<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc._

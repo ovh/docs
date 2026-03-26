@@ -1,0 +1,88 @@
+---
+title: Activación del firewall de aplicación
+description: Cómo activar el firewall de aplicación en un plan de hosting.
+lastUpdated: 2025-08-22
+---
+
+## Objetivo
+
+*ModSecurity* es un módulo Apache complementario que filtra todas las peticiones entrantes en su servidor web. Refuerza la seguridad contra las vulnerabilidades conocidas interceptando y filtrando las solicitudes antes de que sean tratadas por scripts.
+
+El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuestra *ModSecurity* protege sus sitios web contra los ataques más habituales, por ejemplo:
+
+- Trojans,
+- inyección de correo,
+- Fallo de los archivos PDF,
+- inyección de archivos en su alojamiento,
+- inyección de tipo SQL o XSS,
+- la compra de una caja registradora, entre otros.
+
+**Esta guía explica cómo activar el firewall de aplicación desde el área de cliente de OVHcloud para mejorar la protección.**
+
+:::info
+Debido a que su alojamiento web está presente en una infraestructura compartida, no es posible modificar los parámetros de configuración del firewall.
+
+:::
+
+
+## Requisitos
+
+- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
+- Tener al menos un [dominio](https://www.ovhcloud.com/es-es/domains/) asociado al alojamiento.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Alojamientos</code> > Seleccione su alojamiento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedimiento
+
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione <code className="action">Web Cloud</code>. Haga clic en <code className="action">Alojamientos</code> y seleccione el alojamiento correspondiente.
+
+### Activar el firewall de aplicación en la configuración de PHP
+
+Por defecto, se abrirá la pestaña <code className="action">Información general</code>. La `versión global` de PHP se muestra en el área de **Configuración**. Haga clic en el botón <code className="action">...</code> y seleccione <code className="action">Editar configuración</code>. En la nueva ventana, seleccione el elemento <code className="action">Modificar la configuración actual</code> y haga clic en el botón <code className="action">Siguiente</code>.
+
+<img className="thumbnail" alt="managephpconfig" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png" loading="lazy" />
+
+En la nueva ventana, asegúrese de que la **aplicación firewall** esté activada en <code className="action">Activado</code>. Para confirmar la configuración, haga clic en el botón <code className="action">Confirmar</code>.
+
+### Activar el firewall de aplicación para los dominios individuales en un multisitio
+
+Abra la pestaña <code className="action">Multisitio</code> de su plan de hosting. Haga clic en el botón <code className="action">...</code> a la derecha del dominio correspondiente y seleccione la opción <code className="action">Cambiar el dominio</code>.
+
+<img className="thumbnail" alt="managemultisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png" loading="lazy" />
+
+En la ventana de configuración, marque la casilla <code className="action">Activar firewall</code>. También puede incluir el subdominio `www` en esta configuración marcando la casilla situada en la parte superior.
+
+Haga clic en <code className="action">Siguiente</code> y, a continuación, en <code className="action">Confirmar</code> para cambiar la configuración multisitio.
+
+<img className="thumbnail" alt="modifydomain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png" loading="lazy" />
+
+### Comprobar el estado de la tarea de activación
+
+<img className="thumbnail" alt="gestión en curso" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png" loading="lazy" />
+
+Las tareas de actualización de su configuración multisitio se mostrarán en la pestaña <code className="action">Operaciones en curso</code> (el estado inicial es "Planificado"). El cortafuegos estará activo desde que su tarea de actualización deje de aparecer en la lista.
+
+### Verificación de los dominios para los que está activado el firewall
+
+En la pestaña <code className="action">Multisitio</code> de su plan de hosting podrá consultar los dominios en los que esté activada la opción de firewall.
+
+<img className="thumbnail" alt="gerageenabled" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png" loading="lazy" />
+
+La tabla mostrada contiene todos los dominios añadidos al plan de hosting. En la columna "Cortafuegos", se muestra el estado de activación de cada dominio.
+
+## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

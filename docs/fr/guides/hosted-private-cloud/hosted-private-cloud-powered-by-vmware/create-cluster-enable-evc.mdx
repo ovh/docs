@@ -1,0 +1,102 @@
+---
+title: Création de cluster et activation EVC
+description: "Création d'un cluster et activation du mode EVC"
+lastUpdated: 2022-02-08
+---
+
+## Objectif
+
+Vous pouvez créer plusieurs clusters dans votre infrastructure afin de segmenter vos activités.<br/>
+Découvrez comment créer et configurer les fonctionnalités des clusters (DRS, HA & EVC).
+
+**Ce guide est un cas d'étude comprenant les étapes d'installation et de configuration.**
+
+## Prérequis
+
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
+## En pratique
+
+### Création du cluster
+
+Dans l'interface vSphere, rezndez-vous dans le tableau de bord <code className="action">Hôtes et clusters</code>.
+
+<img className="thumbnail" alt="MENU" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en01dash.png" loading="lazy" />
+
+Faites un clic-droit sur votre Datacenter.<br/>
+Sélectionnez <code className="action">Nouveau cluster</code>.
+
+<img className="thumbnail" alt="New Cluster" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en02newcluster.png" loading="lazy" />
+
+Dans la fenêtre qui apparait, nommez le cluster et sélectionnez les options nécessaires.<br/>
+Cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Cluster" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en03cluster.png" loading="lazy" />
+
+:::warning
+L'option vSAN nécessite des hôtes compatibles. Consultez [ce guide](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/) pour apprendre comment en commander si cela s'avère nécessaire.
+
+:::
+
+
+### DRS
+
+DRS répartit la charge de calcul sur vos différents hôtes.<br/>
+Si vous avez activé l'option, elle est en mode « Entièrement automatisé » par défaut.
+
+Sélectionnez le cluster. Dans l'onglet <code className="action">Configurer</code>, sélectionnez <code className="action">vSphere DRS</code> et cliquez sur <code className="action">Modifier</code>.
+
+<img className="thumbnail" alt="DRS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en04drsedit.png" loading="lazy" />
+
+Trois options sont disponibles:
+
+- Manuelle. DRS génère des recommandations de placement pour la mise sous tension et des recommandations de migration pour les machines virtuelles. Les recommandations doivent être appliquées manuellement ou seront ignorées.
+- Partiellement automatisé. DRS place automatiquement les machines virtuelles sur les hôtes lors de la mise sous tension de ces dernières. Les recommandations de migration doivent être appliquées manuellement ou seront ignorées.
+- Entièrement automatisé. DRS place automatiquement les machines virtuelles sur les hôtes lors de la mise sous tension de ces dernières. Elles sont automatiquement migrées d'un hôte à l'autre pour optimiser l'utilisation des ressources.
+
+Les modes automatisés vous permettent de régler la sensibilité du service, de modéré à élevé.<br/>
+Cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="DRS" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en05drs.png" loading="lazy" />
+
+### HA
+
+La disponibilité offre de la redondance pour qu'une panne d'un hôte n'impacte pas les services qui tournent sur vos VMs.<br/>
+
+Pour modifier les paramètres par défaut, sélectionnez le cluster. Dans l'onglet <code className="action">Configurer</code>, sélectionnez <code className="action">Disponibilité vSphere</code> et cliquez sur <code className="action">Modifier</code>.
+
+<img className="thumbnail" alt="HA" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en06haedit.png" loading="lazy" />
+
+Vous pouvez alors personnaliser les différentes réponses aux possibles pannes d'hôte.<br/>
+Cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="HA" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en07ha.png" loading="lazy" />
+
+### EVC
+
+EVC (Enhanced vMotion Compatibility) permet la migration à chaud de vos VMs entre différents hôtes.
+
+Avant d'activer la fonctionnalité, vérifiez la page de résumé de vos hôtes pour déterminer leurs types de CPU.
+
+<img className="thumbnail" alt="EVC" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en10host.png" loading="lazy" />
+
+Sélectionnez le cluster. Dans l'onglet <code className="action">Configurer</code>, sélectionnez <code className="action">VMware EVC</code> et cliquez sur <code className="action">Modifier</code>.
+
+<img className="thumbnail" alt="EVC" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en08EVCedit.png" loading="lazy" />
+
+Activez EVC pour le type de CPU de vos hôtes.<br/>
+La compatibilité descendante est assurée. Pour vous aider à vérifier que les paramètres sont corrects, vous verrez une validation de la compatibilité en bas de la fenêtre.<br/>
+Cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="EVC" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-cluster-enable-evc/en09EVC.png" loading="lazy" />
+
+:::warning
+L'activation de l'EVC ne peut se faire que si le cluster n'a pas de VM active. Assurez-vous donc au préalable que toutes vos VMs sont éteintes ou évacuées. 
+
+:::
+
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

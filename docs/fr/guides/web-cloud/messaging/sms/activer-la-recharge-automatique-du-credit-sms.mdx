@@ -1,0 +1,105 @@
+---
+title: Gérer les crédits SMS et activer la recharge automatique
+description: Découvrez comment gérer vos crédits SMS, activer la recharge automatique et transférer des crédits entre vos comptes SMS OVHcloud
+lastUpdated: 2023-02-09
+---
+
+## Objectif
+
+Ce guide vous explique ce que sont les crédits SMS, comment les recharger automatiquement et comment les transférer entre vos comptes SMS.
+
+## Prérequis
+
+- Disposer d'un compte SMS OVHcloud.
+- Être connecté aux [API OVHcloud](https://eu.api.ovh.com/) (uniquement pour les transferts de crédits).
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">SMS</code> > Sélectionnez votre compte SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="espace client Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png" loading="lazy" />
+
+## En pratique
+
+### Les crédits SMS
+
+1 crédit SMS correspond au coût pour l'envoi de 1 SMS en France métropolitaine, le tarif étant dégressif en fonction du nombre de crédits SMS que vous achetez en une fois. 
+
+Vous trouverez la liste des packs SMS sur la [page des packs SMS](https://www.ovhcloud.com/fr/sms/).
+
+**Exemple pour l'achat d'un pack de 100 crédits SMS, chaque crédit coûtant donc 0,06 € HT :**
+
+L'envoi de 1 SMS en France métropolitaine coûte 1 crédit. Avec ce pack, vous pourrez envoyer 100 SMS en France métropolitaine.
+L'envoi de 1 SMS en Inde coûte 0,4 crédit. Avec ce pack, vous pourrez envoyer 250 SMS en Inde.
+
+Consultez la [grille tarifaire SMS](https://www.ovhcloud.com/fr/sms/prices/) pour connaître le coût d'envoi, en crédits, de vos SMS en fonction de leur destination.
+
+:::info
+Un SMS ne peut contenir qu'une quantité limitée de caractères en fonction de son encodage. Le détail des encodages et caractères admis est disponible sur ce guide :
+
+[Envoyer des SMS depuis mon espace client OVHcloud](/guides/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client#etape-2-composer-votre-sms/)
+
+:::
+
+
+### La recharge automatique
+
+Pour ne jamais être à court de crédit sur votre compte, vous pouvez activer la recharge automatique. Dès qu'un seuil minimum de crédits restants est atteint, une nouvelle quantité de crédits est automatiquement ajoutée sur votre compte SMS.
+
+:::warning
+L'option de recharge automatique ne peut être activée que si les conditions suivantes sont remplies :
+
+- un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud ;
+- votre service SMS doit avoir au moins 2 mois d'ancienneté.
+
+:::
+
+
+Rendez-vous dans le menu <code className="action">Options</code> (1) puis <code className="action">Recharge automatique</code> (2).
+
+<img className="thumbnail" alt="credit sms" src="/images/web-cloud/messaging/sms/activer-la-recharge-automatique-du-credit-sms/smscredit01.png" loading="lazy" />
+
+Cliquez alors sur <code className="action">Modifier</code> dans la rubrique « Gérer les options ».
+
+<img className="thumbnail" alt="credit sms" src="/images/web-cloud/messaging/sms/activer-la-recharge-automatique-du-credit-sms/smscredit02.png" loading="lazy" />
+
+Enfin, remplissez les champs requis :
+
+- Seuil minimum (1) : lorsque ce seuil est atteint, la recharge automatique se déclenche.
+- Quantité à recharger (2) : définit la quantité de crédits à recharger sur votre compte SMS. Les choix possibles sont : 100, 200, 250, 500, 1000, 5000 et 10000.
+- Cliquez sur le bouton <code className="action">Valider</code> pour appliquer le paramétrage.
+
+<img className="thumbnail" alt="credit sms" src="/images/web-cloud/messaging/sms/activer-la-recharge-automatique-du-credit-sms/smscredit03.png" loading="lazy" />
+
+### Transférer des crédits SMS
+
+:::info
+Le transfert de crédits n'est possible qu'entre les comptes SMS d'un seul et même compte client OVHcloud. Le transfert de crédits entre deux comptes clients OVHcloud est impossible.
+
+:::
+
+
+Cliquez sur <code className="action">Transférer des crédits</code> depuis l'onglet <code className="action">Accueil</code>.
+
+<img className="thumbnail" alt="transfert de crédits SMS" src="/images/web-cloud/messaging/sms/activer-la-recharge-automatique-du-credit-sms/credit-transfer01.png" loading="lazy" />
+
+Choisissez alors :
+
+- le compte SMS qui va transférer les crédits ;
+- le compte SMS qui va recevoir les crédits ;
+- le nombre de crédits à transférer.
+
+Cliquez sur <code className="action">Envoyer</code> pour valider le transfert. Celui-ci est immédiat.
+
+<img className="thumbnail" alt="transfert de crédits SMS" src="/images/web-cloud/messaging/sms/activer-la-recharge-automatique-du-credit-sms/credit-transfer02.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

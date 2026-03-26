@@ -1,0 +1,61 @@
+---
+title: VMware Storage vMotion
+description: Verlagern Sie Ihre virtuelle Maschine bei laufendem Betrieb auf einen anderen Host (Hot-Swap)
+lastUpdated: 2020-11-18
+---
+
+## Einleitung
+
+Mit **Storage vMotion** können Sie den Speicherort der Dateien auf der virtuellen Maschine ändern, ohne sie abzuschalten. Die virtuelle Maschine kann auf einmal oder Festplatte um Festplatte verlagert werden.
+
+**Vorliegende Anleitung führt Sie durch diese Operation.**
+
+## Praktische Anwendung
+
+### Die Festplatte einer virtuellen Maschine verlagern 
+
+Um Dateien von einer virtuellen Maschine auf einen anderen Speicher zu verlagern müssen Sie nur mit der rechten Maustaste auf die laufende virtuelle Maschine klicken. Wählen Sie dann das Menü `Migrate...`.
+
+<img className="thumbnail" alt="Festplatte verlagern" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage1.png" loading="lazy" />
+
+### Wahl des vMotion-Typs
+
+Das Menu bietet mehrere Optionen für  **vMotion**. In unserem Beispiel möchten wir nur die virtuelle Maschine in eine andere Datenbank verlagern. Daher wählen wir “Change storage only”.
+
+Mit der Option “Change compute resource only” wird die virtuelle Maschine auf einen anderen Host verlagert.  
+
+Diese Aktion wird **vMotion** genannt und in [dieser Anleitung beschrieben](/guides/bare-metal-cloud/managed-bare-metal/vmware-vmotion-new/).
+
+<img className="thumbnail" alt="Auswahl bei vMotion" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage2.png" loading="lazy" />
+
+### Wahl des Datastores
+
+Wählen Sie aus, auf welchen Datenspeicher Sie die Daten verschieben möchten.
+
+Bei dieser Aktion können Sie auch die Art der Speicherung verändern.
+
+Sie können die bereits definierten Richtlinien zur Speicherung anwenden, wenn Sie die Option [VMencryption](/guides/bare-metal-cloud/managed-bare-metal/vm-encrypt/) nutzen.
+
+<img className="thumbnail" alt="Wahl des Datastores" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage3.png" loading="lazy" />
+
+Wenn mehrere virtuelle Festplatten auf einer Maschine sind, können Sie auch nur eine Festplatte davon verlagern. Nutzen Sie dazu den Button <code className="action">Configure per disk</code>.
+
+Sie gelangen dann zu dieser Ansicht:
+
+<img className="thumbnail" alt="vMotion Datastore" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage6.png" loading="lazy" />
+
+### vMotion abschließen
+
+Klicken Sie auf <code className="action">Finish</code>, um den Migrationsprozess zu starten.
+
+<img className="thumbnail" alt="vMotion abschließen" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage4.png" loading="lazy" />
+
+### vMotion nachverfolgen
+
+Aus den letzten Schritten können Sie den Stand der Migration ersehen. Je nach Größe der virtuellen Maschine, IO-Zugang und verwendeter Bandbreite nimmt diese mehr oder weniger Zeit in Anspruch.
+
+<img className="thumbnail" alt="Nachverfolgung von vMotion" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage5.png" loading="lazy" />
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

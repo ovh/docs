@@ -1,0 +1,72 @@
+---
+title: Restaurer un serveur Bare Metal avec Veeam Enterprise
+description: "Découvrez comment restaurer un serveur Bare Metal grâce à l'application Veeam Backup & Replication"
+lastUpdated: 2024-04-05
+---
+
+## Objectif
+
+Si vous ne pouvez pas restaurer les données d’une sauvegarde, celle-ci ne sert à rien. Ce guide vous décrit un processus clair pour restaurer un serveur Bare Metal ou un fichier individuel à l'aide de Veeam Backup & Replication.
+
+**Découvrez comment restaurer un serveur Bare Metal à l’aide de l’application Veeam Backup & Replication.**
+
+## Prérequis
+
+- Un [serveur Bare Metal OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+- [Veeam Backup & Replication installé et enregistré](/guides/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/)
+
+:::warning
+Ce guide n'est à suivre que si vous avez préalablement suivi les étapes détaillées dans [nos guides pour sauvegarder un serveur bare metal](/guides/bare-metal-cloud/dedicated-servers/overview/).
+
+:::
+
+
+## En pratique
+
+Plusieurs options sont disponibles pour restaurer des données sur un serveur. Dans ce guide, nous allons vous montrer l'option « Guest files restore ».
+
+Dans l'application Veeam Backup & Replication, depuis l'onglet <code className="action">Home</code>, cliquez sur <code className="action">Restore</code> et sélectionnez l'option <code className="action">Agent...</code>.
+
+<img className="thumbnail" alt="Home - restore job" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam01.png" loading="lazy" />
+
+Dans la fenêtre qui apparaît, sélectionnez <code className="action">Guest files restore</code>.
+
+<img className="thumbnail" alt="Restauration des fichiers invités" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam02.png" loading="lazy" />
+
+Choisissez le système d'exploitation de la machine à partir de laquelle vous effectuez la restauration.
+
+<img className="thumbnail" alt="Choix du système d'exploitation" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam03.png" loading="lazy" />
+
+Sélectionnez la **Machine** sur laquelle se trouvent les fichiers à restaurer.
+
+Cliquez sur le bouton <code className="action">Next</code>.
+
+<img className="thumbnail" alt="choix de la machine" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam04.png" loading="lazy" />
+
+Choisissez le **Point de restauration** à partir duquel restaurer les fichiers.
+
+Cliquez sur le bouton <code className="action">Next</code>.
+
+<img className="thumbnail" alt="choix du point de restauration" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam05.png" loading="lazy" />
+
+Indiquez le **motif de restauration**.
+
+Cliquez sur le bouton <code className="action">Next</code>.
+
+<img className="thumbnail" alt="motif de restauration" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam06.png" loading="lazy" />
+
+Dans le résumé qui apparaît, cliquez sur le bouton <code className="action">Browse</code>.
+
+<img className="thumbnail" alt="summary" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam07.png" loading="lazy" />
+
+Utilisez le navigateur pour choisir le(s) fichier(s) que vous souhaitez restaurer. Une fois le(s) fichier(s) sélectionné(s), faites un clic droit sur l'un d'eux, pointez votre souris sur `Restore`.action&#125;, puis sélectionnez `Keep`.action&#125;.
+
+<img className="thumbnail" alt="select files" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam08.png" loading="lazy" />
+
+Une fenêtre contextuelle s’affiche, indiquant la progression de la restauration. A la fin du processus, le fichier a été restauré et vous pouvez fermer la fenêtre « Backup Browser ».
+
+<img className="thumbnail" alt="progression de la restauration" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam09.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

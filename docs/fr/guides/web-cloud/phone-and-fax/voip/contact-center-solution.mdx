@@ -1,0 +1,463 @@
+---
+title: Configurer un Contact Center Solution
+description: Découvrez comment configurer un Contact Center Solution sur votre numéro alias
+lastUpdated: 2026-01-22
+---
+
+## Objectif
+
+Le Contact Center Solution (CCS) est la configuration la plus complète pour un numéro alias. Elle combine la [file d'appels](/guides/web-cloud/phone-and-fax/voip/les-files-d-appels/) et le [serveur vocal interactif (SVI)](/guides/web-cloud/phone-and-fax/voip/svi-serveur-vocal-interactif/).
+
+Vous pouvez par exemple proposer à vos appelants, via la seule composition de votre numéro principal, un choix de touches pour joindre chaque service de votre entreprise, chaque touche composée faisant sonner un ensemble de lignes selon une stratégie que vous définissez depuis l'espace client OVHcloud.
+
+**Apprenez à configurer un CCS sur votre numéro alias depuis votre espace client OVHcloud.**
+
+## Prérequis
+
+- Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/).
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+<img className="thumbnail" alt="espace client Telecom VoIP" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png" loading="lazy" />
+
+## Lexique
+
+|Nom|Définition|
+|---|---|
+|Agent|Un agent est une ligne téléphonique, interne au compte OVHcloud ou externe à celui-ci, en capacité de sonner lorsque le numéro alias sera appelé.|
+|File|Une file est un groupe d'agents, sur le principe de la [file d'appels](/guides/web-cloud/phone-and-fax/voip/les-files-d-appels/). La file permet de faire sonner ces agents selon une stratégie à définir.|
+|Menu interactif|Un menu interactif propose à l'appelant des choix de touches pour faire sonner un agent/une file ou jouer un son, sur le principe du [serveur vocal interactif (SVI)](/guides/web-cloud/phone-and-fax/voip/svi-serveur-vocal-interactif/).|
+|TTS|Un Text-To-Speech (TTS) est un son créé à partir d'un texte que vous définissez dans l'espace client OVHcloud.|
+
+## En pratique
+
+### Étape 1 : Appliquer la configuration « Contact Center Solution » <a name="appliquer-CCS"></a>
+
+- Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet <code className="action">Configuration</code>, sélectionnez <code className="action">Contact Center Solution</code> puis cliquez sur <code className="action">Paramétrer</code>.
+
+- Si votre numéro a déjà une configuration en place, cliquez sur l'onglet <code className="action">Configuration</code> puis sur <code className="action">Changer de configuration</code>. Sélectionnez ensuite <code className="action">Contact Center Solution</code> et cliquez sur <code className="action">Paramétrer</code>. Vous devrez alors confirmer la perte de la configuration actuellement en place.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/ccs-config-2026.png" loading="lazy" />
+
+:::info
+Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur <code className="action">Appliquer à plusieurs numéros</code>, sélectionnez les numéros concernés puis cliquez sur <code className="action">Valider</code>.
+
+<img className="thumbnail" alt="configurationnumeroalias" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/selection-alias-conf.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Paramétrer</code> et patientez quelques instants pendant l’application du paramétrage.
+
+Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+
+:::
+
+
+### Étape 2 : Accéder à la configuration du Contact Center Solution
+
+Une fois la configuration de Contact Center Solution appliquée, la page de configuration du CCS s'affiche.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/2026-VoIP-CCS-01.png" loading="lazy" />
+
+Pour revenir à cette page à tout moment, cliquez sur l'onglet <code className="action">Mon numéro</code> puis, dans le cadre « Configuration », cliquez sur <code className="action">Paramétrer la configuration</code>.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/ccs-step1-1b.png" loading="lazy" />
+
+#### Présentation de la configuration
+
+La configuration se présente sous la forme d'une arborescence étape par étape. À des fins de lisibilité, ce plan de configuration peut à tout moment être affiché verticalement ou horizontalement, via le bouton <code className="action">Options d'affichage</code> situé en haut à gauche du plan.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/options-affichage.png" loading="lazy" />
+
+Le plan de configuration contient différents menus.
+
+|Menu du numéro|Menu de la configuration|Menu d'étape|
+|---|---|---|
+|<img className="thumbnail" alt="menu numéro" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/menu-numero2021.png" loading="lazy" />|<img className="thumbnail" alt="menu configuration" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/menu-configuration2021.png" loading="lazy" />|<img className="thumbnail" alt="menu étape" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/menu-etape2021.png" loading="lazy" />|
+|Permet de gérer les options principales de la configuration.|Permet de gérer les étapes du plan ainsi que les [options des appels](#options).|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
+
+Les étapes décrites dans ce guide permettent d'aboutir à la création d'une configuration complète.
+
+### Étape 3 : Gérer les sons / gérer les TTS <a name="gerer-sons-tts"></a>
+
+L'accueil téléphonique de vos appelants peut être amélioré grâce à l'ajout d'un ou plusieurs fichiers-sons, préalablement créés par vos soins ou définis via des Text-To-Speech (TTS) depuis l'espace client.
+
+Il peut être intéressant de créer ou téléverser ces fichiers-sons dès le début de votre configuration.
+
+#### Gérer les sons <a name="gerer-sons"></a>
+
+Si vous disposez déjà de vos fichiers-sons, enregistrez-les dans votre configuration. Vous pouvez ainsi ajouter un son d'accueil d'un menu interactif ou encore une musique d'attente pour faire patienter vos appelants lorsque vos lignes sont occupées.
+
+Ouvrez le <code className="action">Menu Numéro</code> puis cliquez sur <code className="action">Gérer les sons</code>.
+
+<img className="thumbnail" alt="gérer les sons" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-sons2021.png" loading="lazy" />
+
+Cliquez sur <code className="action">Ajouter un son</code> pour téléverser un son depuis votre poste.
+
+#### Gérer les TTS <a name="gerer-tts"></a>
+
+Si vous ne disposez pas de fichiers-sons, la fonctionnalité Text-To-Speech permet d'en créer directement depuis l'espace client OVHcloud. Il vous suffit de renseigner le texte qui sera automatiquement énoncé par la voix de votre choix.
+
+Ouvrez le <code className="action">Menu Numéro</code> puis cliquez sur <code className="action">Gérer les TTS</code>.
+
+<img className="thumbnail" alt="gérer les TTS" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-tts2021.png" loading="lazy" />
+
+Cliquez alors sur <code className="action">+ Ajouter un TTS</code>, choisissez une voix parmi celles proposées puis renseignez le texte qui sera récité. Cliquez enfin sur <code className="action">Créer</code>.
+
+<img className="thumbnail" alt="gérer les TTS" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-tts2021b.png" loading="lazy" />
+
+### Étape 4 : Créer les files <a name="creer-files"></a>
+
+Les files d'appels regroupent plusieurs agents (des lignes téléphoniques internes ou externes) qui vont sonner selon une stratégie que vous définissez dans l'espace client.
+
+Leur fonctionnement est identique à la configuration [File d'appels](/guides/web-cloud/phone-and-fax/voip/les-files-d-appels/) applicable directement sur un numéro alias.
+
+#### 4.1 Ajouter les agents <a name="ajouter-agents"></a>
+
+Pour créer vos files d'appels, vous devez d'abord ajouter toutes les lignes qui pourront être contactées lorsque votre numéro alias sera appelé. Ces lignes sont ici désignées comme des **agents**.
+
+Ouvrez le <code className="action">Menu Numéro</code> puis cliquez sur <code className="action">Gérer les agents</code>.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-agents2021.png" loading="lazy" />
+
+Vous pouvez ajouter deux types d'agents, des lignes SIP internes (appartenant à votre compte OVHcloud) et des lignes externes (fixes ou mobiles).
+
+|Type de ligne|Méthode d'ajout|
+|-----|---|
+|**Ligne SIP interne**<br/><br/><img className="thumbnail" alt="ligne SIP interne" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/agent-interne2021.png" loading="lazy" />|Pour ajouter une ligne SIP interne, cliquez sur la loupe à droite du champ « Numéro ».<br/><br/>Dans le menu qui s'affiche, sélectionnez une ligne puis cliquez sur <code className="action">Valider</code>.<br/><br/>Confirmez en cliquant sur <code className="action">Ajouter un agent</code><br/><br/>Les lignes doivent être ajoutées l'une après l'autre.|
+|**Ligne externe**<br/><br/><img className="thumbnail" alt="ligne SIP externe" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/agent-externe2021.png" loading="lazy" />|Pour ajouter une ligne téléphonique externe, renseignez son numéro au format international (0033xxxxxxxxx pour la France) directement dans le champ « Numéro ».<br/><br/>Validez l'ajout de chaque ligne en cliquant sur <code className="action">Ajouter un agent</code>.|
+
+:::warning
+L'ajout d'une ligne externe peut occasionner des frais car un appel reçu par celle-ci sera comptabilisé en hors-forfait. Vous pouvez consulter nos tarifs hors-forfait en vigueur sur [cette page](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml). Nous vous conseillons donc de privilégier les lignes internes ou de n'utiliser une ligne externe qu'en solution de repli.
+
+:::
+
+
+Les agents et leurs attributs sont visibles dans la « Liste des agents ». Vous pouvez modifier ces attributs en cliquant sur le stylo à droite de chaque agent.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/ccs-step3-1-3.png" loading="lazy" />
+
+Les attributs que vous pouvez modifier sont les suivants :
+
+|Nom|Définition|
+|---|---|
+|Description|Permet de renommer l'agent|
+|Délai|Permet de définir la durée pendant laquelle la ligne sonnera. Une fois ce temps écoulé, et selon la stratégie d'appels de la file, l'appel sera alors transmis vers un autre agent de cette file.|
+|Repos|Permet de définir la durée pendant laquelle l'agent ne prendra pas d'appel après avoir raccroché.|
+|Appels simultanés|Permet de définir le nombre d'appels que la ligne pourra recevoir.|
+|État|Permet de rendre disponible ou déconnecter un agent au sein des files.|
+
+#### 4.2 Créer les files d'appels <a name="creer-files"></a>
+
+Vos agents sélectionnés, vous devez les organiser dans une ou plusieurs files d'appels.
+
+Ouvrez le <code className="action">Menu Numéro</code> puis cliquez sur <code className="action">Gérer les files</code>. Vous pouvez ici créer une ou plusieurs files d'appels. La première file est déjà créée.
+
+<img className="thumbnail" alt="gerer files appels" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-files2021.png" loading="lazy" />
+
+Cliquez sur <code className="action">Ajouter un membre à la file</code> puis sur le menu déroulant pour afficher la liste des agents que vous avez préalablement créée. Cliquez sur un agent puis sur <code className="action">Ajouter cet agent à la file</code> et réitérez cette action pour chaque agent à ajouter.
+
+Vous pouvez également modifier les options de cette file en cliquant sur <code className="action">Gérer les options</code>.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-files2021b.png" loading="lazy" />
+
+Les options sont les suivantes :
+
+|Option|Définition|
+|---|---|
+|Nom de la file|Cela vous permet de personnaliser le nom de votre file. C'est recommandé si vous comptez créer plusieurs files, afin de bien les différencier dans la construction de votre CCS.|
+|Stratégie|Choisissez une stratégie de sonnerie pour vos agents qui pourront, par exemple, sonner tous en même temps ou l'un après l'autre.|
+|Suivre les renvois d'appels|Définissez si les renvois d’appels configurés sur les lignes de la file doivent être appliqués ou non.<br/><br/>**Attention**, cette option, même si elle n'est activée que sur une file, s'appliquera à l'ensemble des files d'appels configurées.|
+|Nombre maximum d'appelants en attente|Définissez le nombre maximum d’appelants pouvant être en attente dans la file. Si ce nombre venait à être dépassé, les appelants suivants entendraient l'annonce sur débordement.|
+|Temps d'attente maximum dans la file (en secondes)|Définissez la durée maximale d'attente dans cette file avant que l'appel ne passe à l'étape suivante de votre CCS.|
+|Musique d'attente|Ce son sera joué à l’entrée dans la file d’attente jusqu’au décrochage de l’appel par une ligne.|
+|Annonce sur débordement|Si le nombre maximum d'appelants en attente est atteint, les appelants suivants entendront cette annonce. Ainsi, vous pouvez diffuser un son invitant vos appelants à rappeler ultérieurement.|
+
+**Détails des stratégies proposées :**
+
+|Stratégie|Détails|
+|---|---|
+|Tous en même temps|Tous les téléphones sonnent en même temps. Le premier qui décroche prend l’appel sur son poste.|
+|Selon l'ordre défini dans la liste|Le premier téléphone de la file sonne, puis le second, etc.|
+|Selon l'ordre défini dans la liste, cumulé|Le premier téléphone de la file d’attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
+|Le plus ancien à avoir raccroché|Les téléphones sonnent les uns après les autres en suivant toujours le même ordre.|
+|Du plus disponible au moins disponible|Les téléphones sonneront suivant leur disponibilité depuis l’activation.|
+|Selon une répartition de charge| Les téléphones sonneront suivant leur disponibilité depuis le dernier appel : le plus disponible en premier.|
+|Aléatoire|Les téléphones sonnent les uns après les autres de manière aléatoire.|
+
+Validez vos modifications en cliquant sur <code className="action">Appliquer les modifications</code>.
+
+Vous pouvez modifier l'ordre des agents membres d'une file en effectuant un glisser-déposer via le pictogramme (1) à gauche de chaque agent. Dans le cas d'une stratégie d'appel « Selon l'ordre défini des membres », l'agent le plus haut dans la file sonnera le premier. Puis le deuxième agent sonnera et ainsi de suite.
+
+Vous pouvez également modifier (2) ici les attributs d'un agent ou supprimer celui-ci (3).
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-agents-ordre-2021.png" loading="lazy" />
+
+Vous pouvez créer autant de files que nécessaire pour répondre à votre besoin.
+
+:::warning
+Pour supprimer une file, celle-ci ne doit plus faire partie d'aucun menu interactif ou d'aucune étape du plan de configuration.
+
+:::
+
+
+### Étape 5 : Créer les menus interactifs (facultatif) <a name="creer-svi"></a>
+
+À la différence de la configuration d'un numéro alias en [Serveur Vocal Interactif (SVI)](/guides/web-cloud/phone-and-fax/voip/svi-serveur-vocal-interactif/), le CCS permet d'associer une file d'appels entière (et non plus une simple ligne) à une touche de téléphone composée par un appelant.
+
+Pour plus d'informations sur le fonctionnement d'un SVI, consultez notre guide [Configurer un serveur vocal interactif](/guides/web-cloud/phone-and-fax/voip/svi-serveur-vocal-interactif/).
+
+#### 5.1 Créer le premier menu <a name="creer-menu-svi"></a>
+
+Ouvrez le <code className="action">Menu Numéro</code> puis cliquez sur <code className="action">Gérer les menus interactifs</code>.
+
+<img className="thumbnail" alt="gerer menus interactifs" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-svi2021.png" loading="lazy" />
+
+Cliquez sur  <code className="action">+ Ajouter un menu interactif</code>. Nommez ce nouveau menu (1) puis choisissez entre un son ou un TTS (2) pour l'accueil de votre menu interactif. Choisissez ensuite le son ou le TTS (3) parmi ceux déjà ajoutés ou créez-en un nouveau. **Ce son devra énoncer les différents choix de touches proposés à vos appelants (exemple : « Tapez 1 pour joindre l'accueil, tapez 2 pour joindre l'atelier...»)**.
+
+Les mêmes choix vous sont proposés pour définir un son ou un TTS en cas d'action invalide (4). Celui-ci sera joué si l'appelant appuie sur une touche non reconnue par le serveur vocal interactif.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-svi2021b.png" loading="lazy" />
+
+Une fois ces informations définies, cliquez sur <code className="action">Créer</code>. Vous pouvez maintenant créer les entrées du menu interactif, c'est-à-dire les choix de touches proposés à vos appelants et les actions qui y sont liées.
+
+Cliquez sur le bouton <code className="action">+</code> en bas du menu pour ajouter votre première entrée.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/ccs-step4-1-3.png" loading="lazy" />
+
+Dans le menu supplémentaire qui s'affiche, complétez les informations demandées.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-svi2021c.png" loading="lazy" />
+
+|Information|Description|
+|---|---|
+|Touche|Choisissez une touche parmi celles proposées.|
+|Action à exécuter|Définissez l'action à déclencher lorsque l'appelant appuiera sur la touche correspondante. Aidez-vous des informations qui s'affichent pour choisir celle la plus adaptée à votre besoin.|
+|Paramètre d'action supplémentaire|Selon l'action que vous avez définie, une case supplémentaire peut apparaître et vous inviter à renseigner un élément complémentaire. Suivez alors les indications qui s'affichent.|
+
+Une fois les informations complétées, cliquez sur <code className="action">Créer</code>. Répétez l'opération pour les entrées de menu supplémentaires.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-svi2021d.png" loading="lazy" />
+
+Selon vos besoins, répétez ces manipulations si vous voulez créer plusieurs menus interactifs. Vous pouvez également les imbriquer en tant que sous-menus d'un menu interactif principal, si vous souhaitez par exemple proposer plusieurs choix successifs à vos appelants.
+
+### Étape 6 : Configurer votre CCS <a name="configurer-CCS"></a>
+
+Une fois vos files et menus interactifs créés, il faut maintenant les articuler dans le CCS.
+<br/>Chaque appel entrant va suivre une ou plusieurs étapes successives que vous allez définir. Au sein de chaque étape, une ou plusieurs actions devront également être créées.
+
+Voici un exemple de configuration d'un CCS :
+
+- Une étape 1, conditionnée à des créneaux horaires de fermeture, dans laquelle une seule action consistera à jouer un son invitant l'appelant à rappeler votre numéro pendant les horaires d'ouverture.
+- Une étape 2 dans laquelle une seule action fera sonner une première file d'appels.
+- Une étape 3 dans laquelle une première action fera sonner une deuxième file d'appels, différente de la première. Puis, une seconde action qui renverra l'appel vers un répondeur au bout de la durée maximum d'attente de cette deuxième file d'appels.
+
+#### Ajouter des étapes et actions
+
+Pour ajouter une étape, cliquez sur le bouton <code className="action">+ Ajouter une étape</code> (1) à droite des étapes déjà créées.
+<br/>Pour ajouter une action au sein d'une étape (2), cliquez sur le bouton <code className="action">+</code> sous l'étape concernée ou sur <code className="action">+ Ajouter une action</code> dans le menu de votre étape.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-etapes-actions2021.png" loading="lazy" />
+
+#### Afficher ou masquer les actions
+
+À des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masquer toutes les actions définies. Cliquez sur <code className="action">Options d'affichage</code> puis sur <code className="action">Afficher toutes les actions</code> ou <code className="action">Masquer toutes les actions</code>.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-etapes-actions2021c.png" loading="lazy" />
+
+#### Réordonner les étapes et actions
+
+Pour réordonner les étapes et actions de votre plan de configuration, cliquez sur le bouton <code className="action">Réordonner les étapes et actions</code> situé en haut à gauche. Utilisez le bouton dédié pour modifier l'ordre de vos étapes et actions puis validez ce nouvel ordre en cliquant sur <code className="action">Valider les modifications</code>.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-etapes-actions2021b.gif" loading="lazy" />
+
+#### Ajouter une condition à une étape <a name="ajouter-condition"></a>
+
+Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être remplies pour que l'étape se déclenche. Si les conditions d'une étape ne sont pas remplies, l'appel entrant passera à l'étape suivante du CCS.
+
+Pour ajouter une condition à une étape, ouvrez le menu de l'étape via le bouton <code className="action">...</code>, puis choisissez <code className="action">Configuration avancée</code>. Le menu qui apparaît vous permet de définir jusqu'à trois types de conditions. Poursuivez selon la condition que vous désirez paramétrer :
+
+- [Condition de « Jours exceptionnels »](#condition-de-jours-exceptionnels)
+- [Condition de « Plages horaires génériques »](#condition-de-plages-horaires-generiques)
+- [Condition de « Filtrages d'appels »](#condition-de-filtrages-dappels)
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-conditions2021.png" loading="lazy" />
+
+Une fois vos conditions créées, vous pouvez définir une ou plusieurs action(s) correspondant aux conditions non-vérifiées. Ces actions seront alors prises en compte pour les appels ne remplissant pas les conditions.
+
+Ainsi, dans l'exemple ci-dessous, un appel pendant les plages horaires définies à l'étape 1 fera sonner les membres de la file d'appels nommée « Service commercial » (1).
+<br/>Un appel en dehors de ces plages horaires sera réceptionné sur le répondeur d'une ligne SIP OVHcloud (2).
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/exemples-plages2021.png" loading="lazy" />
+
+##### **Condition de « Jours exceptionnels »** <a name="jours-exceptionnels"></a>
+
+Après avoir cliqué sur <code className="action">Jours exceptionnels</code> depuis le menu de configuration avancée, choisissez le créneau que vous souhaitez appliquer. Vous revenez ensuite automatiquement dans la fenêtre de configuration avancée. Cliquez alors sur <code className="action">Modifier</code>.
+
+<img className="thumbnail" alt="CCS configuration" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/creneaux-activation2021.png" loading="lazy" />
+
+Configurez le créneau que vous venez de sélectionner (ou vous assurer que celui-ci l'est correctement). Pour cela, ouvrez le **Menu du Numéro** via le bouton <code className="action">...</code> puis cliquez sur <code className="action">Gérer les créneaux exceptionnels</code>.
+
+<img className="thumbnail" alt="gérer créneaux exceptionnels" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/gerer-creneaux2021.png" loading="lazy" />
+
+La page de gestion des fermetures exceptionnelles apparaît alors. Dans la partie `Planification des jours de fermeture`, positionnez vos fermetures exceptionnelles sur le calendrier en cliquant sur les jours concernés. Complétez les informations demandées :
+
+|Information|Description|
+|---|---|
+|Plage horaire/journée entière|Choisissez si la fermeture exceptionnelle concerne uniquement une plage horaire ou une journée entière.|
+|Objet|Définissez un titre vous permettant d'identifier cette fermeture exceptionnelle dans le calendrier.|
+|Catégorie|Choisissez le créneau dans lequel vous souhaitez ajouter la fermeture exceptionnelle.|
+|Du/au|Définissez la date et l'heure (le cas échéant) de la fermeture exceptionnelle.|
+|Description|Vous pouvez ajouter une description plus détaillée sur cette fermeture exceptionnelle.|
+
+Une fois les informations renseignées, cliquez sur <code className="action">Créer l'événement</code>. Répétez cette manipulation afin d'ajouter toutes les fermetures exceptionnelles nécessaires. Cliquez enfin sur le bouton <code className="action">Valider</code> pour sauvegarder ces changements.
+
+<img className="thumbnail" alt="CCS configuration" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/creneaux2021.png" loading="lazy" />
+
+##### **Condition de « Plages horaires génériques »** <a name="plages-horaires"></a>
+
+Après avoir cliqué sur <code className="action">Plages horaires génériques</code> depuis le menu de configuration avancée, cliquez sur <code className="action">Ajouter des plages horaires</code>.
+
+Configurez maintenant les plages horaires qui correspondent à vos besoins. Pour cela, sélectionnez les jours concernés puis renseignez les horaires dans les cases prévues à cet effet. Cliquez sur le bouton <code className="action">V</code> à droite pour enregistrer la plage.
+
+Une fois toutes vos plages horaires définies, cliquez sur le bouton <code className="action">Modifier</code> pour les valider.
+
+<img className="thumbnail" alt="contact-center-solution" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/plageshoraires2021.gif" loading="lazy" />
+
+:::info
+Pour modifier une plage horaire déjà créée, il est nécessaire de la supprimer puis de créer une nouvelle plage horaire.
+
+:::
+
+
+##### **Double condition : « Jours exceptionnels » et « Plages horaires génériques »**
+
+Pour obtenir une configuration contenant à la fois des jours exceptionnels et des plages horaires génériques, il convient de placer les jours exceptionnels sur l'étape 1 et les plages horaires génériques sur l'étape 2.
+
+En effet, le système lit les étapes dans l'ordre : si les conditions de l'étape 1 sont remplies, les actions associées à cette étape sont exécutées. Dans le cas contraire, le système passe automatiquement à l’étape 2.
+
+<img className="thumbnail" alt="CCS - double condition" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/ccs-double-condition.png" loading="lazy" />
+
+##### **Condition de « Filtrages d'appels »** <a name="filtrages-appels"></a>
+
+Après avoir cliqué sur <code className="action">Filtrages d'appels</code> depuis le menu de configuration avancée, choisissez si vous souhaitez filtrer vos appels entrants selon une « liste noire » ou une « liste blanche ».
+
+|Liste|Description|
+|---|---|
+|Liste noire|Les numéros ou les tranches de numéros inscrits dans la liste ne peuvent plus vous contacter.|
+|Liste blanche|**Seuls** les numéros ou les tranches de numéros inscrits dans la liste sont autorisés à vous contacter.|
+
+Une fois que vous avez sélectionné la liste que vous souhaitez utiliser, complétez-la en ajoutant les numéros ou les tranches de numéros adéquats. Pour cela, utilisez le champ `Ajouter un numéro à la liste`, puis cliquez sur le bouton <code className="action">Ajouter</code>. Vous pouvez supprimer une entrée dans la liste grâce à l'icône représentant une corbeille.
+
+Pour enregistrer vos modifications, cliquez sur <code className="action">Modifier</code>.
+
+<img className="thumbnail" alt="CCS configuration" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/filtrages2021.png" loading="lazy" />
+
+### Gérer les options du CCS <a name="options"></a>
+
+Des options supplémentaires sont disponibles en cliquant sur le bouton <code className="action">...</code> du menu de la configuration :
+
+<img className="thumbnail" alt="Optionsccs" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/modifieroption.png" loading="lazy" />
+
+Les options disponibles dans ce menu vous permettent de :
+
+- modifier le nom du CCS.
+- gérer le timeout de transfert d'appel vers une ligne externe (ici exprimé en secondes). Lorsque votre configuration comporte un transfert vers une ligne externe, si cette ligne ne décroche pas avant la durée définie dans ce champ, l'appel passera à l'étape suivante de la configuration.
+- gérer la présentation du numéro de vos appelants.
+- accepter ou refuser les appels masqués (anonymes).
+
+<img className="thumbnail" alt="Optionsccs" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/optionsccs.png" loading="lazy" />
+
+Trois options de présentation du numéro, sur le téléphone qui reçoit l'appel, sont possibles :
+
+- présenter le numéro de l'appelant ;
+- présenter le numéro du CCS, c'est-à-dire le numéro alias qui a été composé par l'appelant, ce qui peut être utile si vous possédez plusieurs numéros alias configurés ;
+- présenter les deux numéros, celui de l'appelant et celui du CCS.
+
+<img className="thumbnail" alt="Optionsccs" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/numeropres2.png" loading="lazy" />
+
+### Tableau de bord <a name="tableau-de-bord"></a>
+
+Le tableau de bord vous permet d'obtenir des statistiques détaillées sur les appels reçus par votre numéro configuré en CCS et par les différentes files le composant.
+Vous pourrez également obtenir des informations en temps réel sur les appels en cours sur votre numéro ainsi que sur la disponibilité de chaque ligne.
+
+Pour consulter le tableau de bord, cliquez sur l'onglet <code className="action">Consultation</code> puis sur <code className="action">Tableau de bord</code>.
+
+<img className="thumbnail" alt="Tableau de bord" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/tableau2021.png" loading="lazy" />
+
+Le tableau de bord vous permet également d'interagir sur les appels en cours reçus par les membres de vos files d'appels.
+
+#### Écouter ou chuchoter <a name="ecouter-chuchoter"></a>
+
+Cette fonction vous permet d'écouter une communication en cours ou de chuchoter à l'un et/ou l'autre des interlocuteurs.
+
+Cliquez sur le bouton <code className="action">...</code> à droite d'un appel en cours puis sur <code className="action">Écouter ou chuchoter</code>.
+
+<img className="thumbnail" alt="écouter ou chuchoter" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/tableau01.png" loading="lazy" />
+
+Choisissez alors l'option souhaitée parmi :
+
+- Écouter
+- Écouter et chuchoter à l'agent
+- Écouter et chuchoter à tous
+
+<img className="thumbnail" alt="écouter ou chuchoter" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/tableau02.png" loading="lazy" />
+
+Saisissez un numéro de téléphone dans le champ prévu à cet effet et cliquez sur <code className="action">Confirmer</code>. Ce numéro sera alors mis en relation avec la communication en cours.
+
+#### Transférer l'appel
+
+Vous pouvez transférer un appel en cours en cliquant sur le bouton <code className="action">...</code> à droite d'un appel en cours puis sur <code className="action">Transférer l'appel</code>.
+
+Saisissez le numéro destinataire du transfert et cliquez sur <code className="action">Transférer</code>.
+
+<img className="thumbnail" alt="transférer l'appel" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/tableau03.png" loading="lazy" />
+
+#### Mettre fin à l'appel
+
+Vous pouvez raccrocher un appel en cours en cliquant sur le bouton <code className="action">...</code> à droite d'un appel en cours puis sur <code className="action">Mettre fin à l'appel</code>.
+
+Cliquez alors sur <code className="action">Raccrocher</code>.
+
+<img className="thumbnail" alt="raccrocher l'appel" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/tableau04.png" loading="lazy" />
+
+### Consulter les enregistrements <a name="enregistrements"></a>
+
+Le CCS vous permet d'enregistrer les appels entrants sur les files d'appels actives dans votre configuration.
+
+:::info
+L'activation de l'enregistrement des appels entraînera le déclenchement automatique d'un message d'avertissement, pré-configuré par OVHcloud, lorsque votre numéro sera appelé. Ce message ne peut être supprimé ou modifié tant que l'enregistrement des appels est activé.
+
+:::
+
+
+Pour activer l'enregistrement des appels, cliquez sur l'onglet <code className="action">Consultation</code> puis sur <code className="action">Enregistrements</code>.
+
+<img className="thumbnail" alt="consulter enregistrements" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/records2021.png" loading="lazy" />
+
+Sélectionnez, dans le menu déroulant de gauche, la file d'appels sur laquelle les appels seront enregistrés puis cochez la case <code className="action">Enregistrement des appels</code>.
+
+Vous pouvez laisser à vos appelants la possibilité de ne pas être enregistrés. Pour cela, cochez la case <code className="action">Activer la demande de non enregistrement d'appel</code>. Sélectionnez la langue (Français ou Anglais) dans laquelle le message sera diffusé puis choisissez une touche pour que les appelants puissent activer cette option de non-enregistrement d'appel.
+
+<img className="thumbnail" alt="consulter enregistrements" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/records2021b.png" loading="lazy" />
+
+Vous trouverez plus bas la liste des enregistrements que vous pourrez télécharger.
+
+:::info
+Ces enregistrements sont conservés sur nos serveurs pendant une durée de 60 jours. Ils sont ensuite automatiquement supprimés.
+
+:::
+
+
+<img className="thumbnail" alt="CCS configuration" src="/images/web-cloud/phone-and-fax/voip/contact-center-solution/ccs-records3.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

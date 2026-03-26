@@ -1,0 +1,98 @@
+.rp-migration-layout__content {
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.rp-migration-layout__main {
+  min-height: calc(100vh - var(--rp-nav-height));
+  padding: var(--rp-content-padding-y, 48px) var(--rp-content-padding-x, 80px);
+  padding-bottom: 80px;
+  max-width: 80rem;
+}
+
+.rp-migration-layout__header {
+  max-width: 72rem;
+  margin: 0 0 2.5rem 0;
+}
+
+.rp-migration-layout__title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--rp-c-text-1);
+  margin: 0 0 0.75rem;
+}
+
+.rp-migration-layout__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--rp-c-text-2);
+  margin: 0;
+  max-width: 48rem;
+}
+
+.rp-migration-layout__footer {
+  max-width: 72rem;
+  margin: 0 0 auto 0;
+}
+
+// Button overrides scoped to migration pages
+.rp-migration-layout__main {
+  .rp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 1.75rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition:
+      opacity 0.2s,
+      box-shadow 0.2s;
+
+    &--brand {
+      background: var(--rp-c-brand);
+      color: #fff;
+
+      &:hover {
+        opacity: 0.9;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    &--alt {
+      background: var(--rp-c-bg);
+      color: var(--rp-c-text-1);
+      border: 1px solid var(--rp-c-divider-light);
+
+      &:hover {
+        opacity: 0.9;
+        background: var(--rp-c-bg-soft);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rp-migration-layout__main {
+    padding: 24px;
+
+    .rp-button {
+      height: 40px;
+      padding: 0 1.25rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  .rp-migration-layout__title {
+    font-size: 1.5rem;
+  }
+}

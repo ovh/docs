@@ -1,0 +1,147 @@
+---
+title: Usuń konto e-mail
+description: Dowiedz się, jak usunąć lub zresetować konto e-mail w Twojej usłudze e-mail
+lastUpdated: 2026-02-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Chcesz:
+
+- Usuń konto e-mail, którego nie używasz. 
+- Zresetuj konto e-mail, aby z niego korzystać na nowym adresie e-mail. 
+- Zresetuj konto e-mail, aby je rozwiązać.
+
+**Dowiedz się, jak usunąć lub zresetować konto e-mail w Twojej usłudze e-mail**
+
+## Wymagania początkowe
+
+- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud:
+    - **MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne.
+    - [**Exchange**](https://www.ovhcloud.com/pl/emails-exchange/).
+    - [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/).
+    - [**Zimbra**](https://www.ovhcloud.com/pl/emails/zimbra-emails/).
+- Posiadanie statusu kontaktu administracyjnego danej usługi e-mail.
+- Dostęp do danych adresów e-mail.
+
+{/* CP-NAV-START:web-mx-plan */}
+{/* CP-NAV-START:web-zimbra */}
+{/* CP-NAV-START:web-email-pro */}
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Link bezpośredni:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Wybierz usługę MX Plan
+
+**Zimbra:**
+
+- **Link bezpośredni:** [Zimbra](https://manager.eu.ovhcloud.com/#/web/zimbra)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Zimbra Mail</code>
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">E-mail Pro</code> > Wybierz platformę
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-exchange */}
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-zimbra */}
+{/* CP-NAV-END:web-mx-plan */}
+
+<a name="whichmxplan"></a>
+
+:::info
+**Identyfikacja technologii e-mail Twojej oferty MX Plan.**
+
+W zależności od daty aktywacji Twojej oferty MX Plan lub niedawnej migracji, powiązana technologia e-mail może się różnić. Technologia ta charakteryzuje się interfejsem webmail. Aby ją zidentyfikować:
+
+- W zakładce <code className="action">Informacje ogólne</code> zanotuj używaną technologię pod wzmianką **Webmail** w ramce <code className="action">Abonament</code>.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/technology-email.png" loading="lazy" />
+
+:::
+
+
+## W praktyce <a name="instructions"></a>
+
+OVHcloud oferuje 4 rozwiązania poczty elektronicznej. Pojęcie usunięcia konta różni się w zależności od wybranej oferty.
+
+- **E-mail MX Plan**: oferta ta jest sprzedawana w formie pakietu kilku kont e-mail. Po usunięciu konta uruchomisz lokalizację dla pakietu.
+- **E-mail Pro**, **Hosted Exchange** i **Zimbra**: te oferty są na zamówienie. Możesz zamówić indywidualny abonament na konto e-mail. Jeśli chcesz usunąć konto e-mail, musisz wykonać **reset**. Po zresetowaniu konta e-mail możesz ponownie użyć tego konta do utworzenia nowego konta e-mail. Możesz również [zrezygnować z subskrypcji](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange#usuwanie-kont/) tego konta, jeśli chcesz go definitywnie usunąć.
+
+### Usuń lub zresetuj konto e-mail
+
+Wybierz kartę odpowiadającą Twojej usłudze e-mail:
+
+<Tabs>
+  <Tab label="MX Plan Roundcube">
+    Aby zidentyfikować technologię e-mail związaną z Twoją usługą MX Plan, zapoznaj się z częścią "[Identyfikacja technologii e-mail Twojej oferty MX Plan](#whichmxplan)" tego przewodnika.
+    
+    1. Przejdź do zakładki <code className="action">Konta e-mail</code>. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
+    1. Kliknij przycisk `...` po prawej stronie konta, które ma zostać zmienione, a następnie kliknij polecenie <code className="action">Usuń konto</code>.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-mxplan-legacy-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="MX Plan Zimbra/OWA">
+    Aby zidentyfikować technologię e-mail związaną z Twoją usługą MX Plan, zapoznaj się z częścią "[Identyfikacja technologii e-mail Twojej oferty MX Plan](#whichmxplan)" tego przewodnika.
+    
+    1. Przejdź do zakładki <code className="action">Konta e-mail</code>. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
+    1. Kliknij na przycisk `...` po prawej stronie konta, które chcesz zmienić, po czym kliknij przycisk <code className="action">Zresetuj to konto</code>.
+    
+    <img className="thumbnail" alt="e-mail" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-mxplan-new-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="E-mail Pro">
+    1. Przejdź do zakładki <code className="action">Konta e-mail</code>. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
+    1. Kliknij na przycisk `...` po prawej stronie konta, które chcesz zmienić, po czym kliknij przycisk <code className="action">Zresetuj to konto</code>.
+    
+    Po zresetowaniu konta, jeśli chcesz go definitywnie usunąć, należy go rozwiązać. W tym celu zapoznaj się z naszym przewodnikiem [Zarządzanie płatnościami za Twoje konta Email-Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro/)
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/emailpro-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="Exchange">
+    1. Przejdź do zakładki <code className="action">Konta e-mail</code>.
+    1. Kliknij na przycisk `...` po prawej stronie konta, które ma zostać zmienione, a następnie kliknij na <code className="action">Zresetuj</code>.
+    
+    Po zresetowaniu konta, jeśli chcesz go definitywnie usunąć, należy go rozwiązać. W tym celu zapoznaj się z naszym przewodnikiem [Zarządzanie płatnościami za Twoje konta Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/).
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/exchange-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="Zimbra STARTER/PRO">
+    1. Przejdź do zakładki <code className="action">Konto email</code>. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
+    1. Kliknij przycisk <code className="action">⋮</code> po prawej stronie konta, które ma zostać zmienione, a następnie kliknij <code className="action">Usuń</code>.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-zimbra-reset.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również
+
+[Pierwsze kroki z usługą MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+[Pierwsze kroki z usługą E-mail Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/first-config/)
+
+[Pierwsze kroki z usługą Hosted Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/)
+
+[Pierwsze kroki z Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+[Zarządzanie płatnościami za Twoje konta E-mail Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro/)
+
+[Zarządzanie płatnościami za konta Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/)
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

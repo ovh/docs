@@ -1,0 +1,122 @@
+---
+title: Enterprise File Storage - Clonar um volume
+description: Descubra como clonar um volume da sua solução Enterprise File Storage através da API OVHcloud
+lastUpdated: 2024-12-09
+---
+
+import Api from '@components/Api';
+
+
+## Objetivo
+
+Um volume clonado contém todos os dados do volume pai num determinado instante. Tem todas as funcionalidades de um volume e pode ser utilizado como um volume clássico.<br/>
+
+É criado um volume clonado a partir de uma snapshot (instantânea) de um volume ativo. Uma vez criado, as alterações ao volume pai não serão refletidas no clone.
+
+:::info
+Neste guia, um volume é também chamado « *share* » como na API OVHcloud.
+
+:::
+
+
+**Descubra a funcionalidade de clonagem de volumes e aprenda a clonar um volume da sua solução Enterprise File Storage através da API OVHcloud.**
+
+## Casos de utilização
+
+Os cenários de utilização de um volume clonado são múltiplos. Encontrará abaixo alguns exemplos.
+
+### Permitir o acesso aos dados para fins de qualidade, teste ou formação
+
+Os sistemas de formação, de qualidade e de teste podem necessitar de ser atualizados regularmente com dados vindos do ambiente de produção.<br/>
+
+Graças à clonagem de volumes, podem ser implementadas operações de automatização para criar conjuntos de dados baseados em dados atualizados rapidamente e sem dar acesso aos dados de produção.
+
+<img className="thumbnail" alt="CloneVolumeUseCaseEnvironmentSync" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-clone-volume/clone_volume_use_case_1.png" loading="lazy" />
+
+### Lutar contra a corrupção de dados
+
+A corrupção lógica dos dados pode ser causada por um erro de software, por um erro humano ou por um ato malicioso.<br/>
+
+Ao criar pontos de backup regulares com a ajuda de uma [Política de Snapshots](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/) e ao utilizar a funcionalidade de clonagem de volumes, tem a possibilidade de analisar facilmente as causas das corrupções dos dados, criando um novo volume a partir dos dados existentes.
+
+<img className="thumbnail" alt="CloneVolumeUseCaseDataCorruption" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-clone-volume/clone_volume_use_case_2.png" loading="lazy" />
+
+## Requisitos
+
+- Ter uma oferta OVHcloud [Enterprise File Storage](https://www.ovhcloud.com/pt/storage-solutions/enterprise-file-storage/)
+- Estar ligado à [API OVHcloud](https://eu.api.ovh.com/)
+- Dispor de um volume Enterprise File Storage com uma snapshot `manual`
+
+{/* CP-NAV-START:storage-enterprise-file-storage */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Enterprise File Storage](https://manager.eu.ovhcloud.com/#/dedicated/netapp)
+- **Caminho de navegação:** <code className="action">Bare Metal Cloud</code> > <code className="action">Enterprise File Storage</code>
+
+---
+{/* CP-NAV-END:storage-enterprise-file-storage */}
+
+:::info
+Pode criar um volume e uma snapshot de tipo "manual" graças à [API OVHcloud](https://eu.api.ovh.com/) ou a partir do seu [espaço cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+:::
+
+
+:::tip[Success]
+Se não está familiarizado com a utilização da API OVHcloud, consulte o nosso guia « [Primeiros passos com as API OVHcloud](/guides/manage-and-operate/api/first-steps/) ».
+
+:::
+
+
+## Limites da funcionalidade
+
+- Apenas as snapshots de tipo `manual` podem ser utilizadas para clonar um volume.
+No entanto, se pretender clonar um volume utilizando uma snapshot do tipo `automatic`, pode conservar esta snapshot para a transformar numa snapshot do tipo `manual`.
+Consulte [guia de conservação de snapshots automáticas](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-hold-automatic-snapshot/) para obter mais informações.
+
+- A criação de um volume clonado a partir de uma snapshot do tipo `system` não é suportada.
+
+- O tamanho do volume clonado deve ser **superior ou igual** ao tamanho do snapshot utilizado para a operação de clonagem.
+
+## Instruções
+
+1\. Identifique o ID` da snapshot a utilizar através da seguinte chamada API:
+
+<Api version="v1" section="/storage/netapp" method="GET" route={"/storage/netapp/\{serviceName\}/share/\{shareId\}/snapshot"} />
+
+**Parâmetros:**
+
+- `serviceName`: é o identificador único do serviço
+- `shareId`: é o identificador do volume ao qual pertence a snapshot
+
+<img className="thumbnail" alt="CloneVolume" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-clone-volume/clone_volume_step_1.png" loading="lazy" />
+
+2\. Crie o volume a partir da snapshot com a seguinte chamada de API:
+
+<Api version="v1" section="/storage/netapp" method="POST" route={"/storage/netapp/\{serviceName\}/share"} />
+
+**Parâmetros:**
+
+- `serviceName`: é o identificador único do serviço
+- `size`: é o tamanho do volume. Deve ser superior ou igual ao tamanho da snapshot.
+- "protocol`: é o protocolo do volume. Apenas o protocolo NFS é suportado.
+- `snapshotID`: é o identificador da snapshot a utilizar para criar o volume
+- `name`: (Opcional) é o nome do volume
+- `description`: (Opcional) é a descrição do volume
+
+<img className="thumbnail" alt="CloneVolume" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-clone-volume/clone_volume_step_2.png" loading="lazy" />
+
+A API OVHcloud retornará um código HTTP 201, bem como a informação correspondente ao volume criado.<br/>
+
+O estado do volume será alterado para `creating_from_snapshot` e, em seguida, para ser `available` uma vez que a criação do volume esteja terminada.<br/>
+A criação do volume pode levar algum tempo, dependendo do tamanho da snapshot utilizada.
+
+**É criado um novo volume a partir da snapshot do seu volume principal.**
+
+## Quer saber mais? <a name="go-further"></a>
+
+Se necessitar de formação ou de assistência técnica para a implementação das nossas soluções, contacte o seu representante de vendas ou clique [neste link](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projeto aos nossos peritos da equipa Professional Services.
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,133 @@
+---
+title: Pierwsze kroki z usługą NAS HA
+description: Dowiedz się, jak zarządzać usługą NAS-HA w Panelu klienta OVHcloud
+lastUpdated: 2021-09-16
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+NAS (Network Attached Storage) jest serwerem plików podłączonym do sieci, którego główną funkcją jest przechowywanie danych w scentralizowanym woluminie dla niejednorodnych klientów sieciowych.
+
+## Wymagania początkowe
+
+- Posiadanie adresu IP powiązanego z usługą OVHcloud (Hosted Private Cloud, Serwer dedykowany, VPS, Instancja Public Cloud, itp.)
+- Posiadanie usługi [NAS-HA](https://www.ovhcloud.com/pl/storage-solutions/nas-ha/)
+{/* CP-NAV-START:storage-nas-ha */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [NAS-HA](https://manager.eu.ovhcloud.com/#/dedicated/nasha)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">NAS-HA</code> > Wybierz NAS-HA
+
+---
+{/* CP-NAV-END:storage-nas-ha */}
+
+## W praktyce
+
+Kliknij Twoją usługę, aby uzyskać dostęp do menu administracyjnego.
+
+<img className="thumbnail" alt="dostęp do usługi NAS" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-01.png" loading="lazy" />
+
+### Utwórz partycję <a name="partition"></a>
+
+Aby dodać nową partycję, kliknij <code className="action">Utwórz partycję</code>.
+
+<img className="thumbnail" alt="utworzyć partycję" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-02.png" loading="lazy" />
+
+Wystarczy podać **nazwę partycji**, jej **rozmiar** oraz zatwierdzony **protokół** (NFS lub CIFS).
+
+<img className="thumbnail" alt="atrybuty partycji" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-03.png" loading="lazy" />
+
+### Zmień rozmiar partycji
+
+Aby zmienić rozmiar partycji, kliknij przycisk <code className="action">(...)</code> znajdujący się po prawej stronie odpowiedniej partycji, a następnie <code className="action">Zmień rozmiar</code>.
+
+<img className="thumbnail" alt="zmień rozmiar partycji" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-04.png" loading="lazy" />
+
+Wskaż nowy rozmiar i zatwierdź.
+
+### Zmień częstotliwość kopii zapasowych snapshot
+
+Snapshot zawartości serwera NAS wykonywany jest automatycznie co godzinę i zapisywany jest na serwerze NAS.
+
+Możesz utworzyć do 3 dodatkowych snapshotów z różnymi częstotliwościami, które będą również zapisane na serwerze NAS.
+
+W tym celu kliknij przycisk <code className="action">(...)</code> znajdujący się po prawej stronie odpowiedniej partycji, a następnie <code className="action">Częstotliwość snapshotów</code>.
+
+<img className="thumbnail" alt="zmień częstotliwość kopii zapasowych snapshot" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-05.png" loading="lazy" />
+
+Wybierz nową częstotliwość, a następnie zatwierdź.
+
+### Utwórz zrzut migawki
+
+Poza snapshotami wykonanymi automatycznie, w każdej chwili możesz utworzyć zrzut partycji. W tym celu kliknij przycisk <code className="action">(...)</code> znajdujący się po prawej stronie partycji, a następnie <code className="action">Snapshot</code>.
+
+<img className="thumbnail" alt="snapshot" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-10.png" loading="lazy" />
+
+Nazwij snapshot i kliknij na <code className="action">Dodaj</code>
+
+### Dodawanie dostępu <a name="addaccess"></a>
+
+Aby uzyskać dostęp do utworzonej wcześniej partycji, należy skonfigurować dostęp.
+
+:::info
+Do serwera NAS mają dostęp wyłącznie adresy IP usług OVHcloud (np.: serwera dedykowanego, VPS, instancję Public Cloud, itp..)
+
+:::
+
+
+Aby zezwolić IP na dostęp do usługi NAS, kliknij przycisk <code className="action">(...)</code> znajdujący się po prawej stronie istniejącej partycji, a następnie <code className="action">Zarządzaj dostępami</code>.
+
+<img className="thumbnail" alt="zarządzanie dostępami" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-06.png" loading="lazy" />
+
+Następnie kliknij <code className="action">Dodaj dostęp</code> i wybierz adres IP Twojego produktu OVHcloud.
+<br/>Należy również określić, czy dostęp do tego adresu IP jest dozwolony tylko do odczytu (*Read-only*) lub odczytu/zapisu (*Read/Write*)
+
+<img className="thumbnail" alt="dodaj dostęp" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-07.png" loading="lazy" />
+
+#### Usuwanie dostępu
+
+Aby usunąć dostęp do partycji, kliknij przycisk <code className="action">(...)</code> znajdujący się po prawej stronie odpowiedniego adresu IP, a następnie <code className="action">Usuń</code>.
+
+<img className="thumbnail" alt="createaccess" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-09.png" loading="lazy" />
+
+### Ustawienia Z File System (ZFS)
+
+:::warning
+Wszystkie ustawienia ZFS są zoptymalizowane. Chociaż nie zalecamy modyfikacji tych parametrów, menu to pozwala na dostosowanie ZFS używanego przez NAS-HA.
+
+:::
+
+
+Aby zmienić ustawienia ZFS dla partycji, kliknij przycisk <code className="action">(...)</code> po prawej stronie odpowiedniej partycji, a następnie <code className="action">Ustawienia Z File System (ZFS)</code>.
+
+<img className="thumbnail" alt="zfs" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-13.png" loading="lazy" />
+
+- **Wyłącz aktualizację czasu dostępu (*atime*)**: Wyłączenie *atime* oznacza, że jądro nie będzie aktualizować znacznika czasu systemu plików przy każdym dostępie do pliku. Może to być przydatne w przyspieszaniu częstych operacji odczytu, np. na statycznych stronach WWW. Nie zaleca się jednak dezaktywacji tej opcji dla aplikacji krytycznych pod względem spójności, takich jak bazy danych.
+- **ZFS recordsize**: Ta właściwość zmienia maksymalny rozmiar bloku w systemie plików ZFS. Pamiętaj, że ZFS będzie nadal używać mniejszy rozmiar bloku, jeśli plik jest mniejszy niż maksymalny rozmiar. Na przykład plik o rozmiarze 16 KB użyje bloku o rozmiarze 16 KB (plus metadane), aby nie zmarnować przestrzeni dyskowej. W związku z tym nie zalecamy modyfikacji ZFS *recordsize*.
+- **Sync**: Ten parametr zmienia zachowanie transakcji w systemie plików ZFS w odniesieniu do zapisu danych RAM i zapisu danych na dysku. Nie zalecamy modyfikacji tej właściwości, chyba że jest to powód szczególny.
+
+### Usuwanie partycji
+
+:::danger
+Usunięcie partycji spowoduje całkowite i definitywne usunięcie wszystkich zawartych w niej danych.
+
+:::
+
+
+Aby usunąć partycję, kliknij przycisk <code className="action">(...)</code> znajdujący się po prawej stronie istniejącej partycji, a następnie <code className="action">Usuń</code>.
+
+<img className="thumbnail" alt="usuń partycję" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-08.png" loading="lazy" />
+
+## Sprawdź również
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

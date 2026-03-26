@@ -1,0 +1,169 @@
+---
+title: Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise
+description: "Découvrez comment préparer la sauvegarde de votre serveur Bare Metal à l'aide de Veeam Backup and Replication (Enterprise)"
+lastUpdated: 2024-04-05
+---
+
+## Objectif
+
+La sauvegarde d’un serveur Bare Metal avec Veeam Enterprise implique plusieurs applications et services à utiliser ensemble. Le processus peut également changer en fonction de votre configuration et de vos préférences.
+
+**Découvrez comment préparer la sauvegarde de votre serveur Bare Metal avec Veeam Backup and Replication (Enterprise).**
+
+## Prérequis
+
+- Un [serveur Bare Metal OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+- Une solution de sauvegarde [Veeam Enterprise](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/)
+- Un service [OVHcloud Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/) (facultatif)
+
+## En pratique
+
+### Installation de votre serveur dédié
+
+Votre serveur Bare Metal OVHcloud doit être installé et configuré.
+
+Consultez nos [guides de premiers pas pour les serveurs dédiés](/guides/bare-metal-cloud/dedicated-servers/getting-started-with-dedicated-server/).
+
+Vous pouvez également configurer votre serveur dédié pour utiliser un réseau privé en suivant les étapes de [ce guide](/guides/bare-metal-cloud/dedicated-servers/vrack-configuring-on-dedicated-server/).
+
+### Mise en place de votre serveur de backup Veeam Enterprise
+
+Téléchargez, installez et créez une licence pour votre serveur de sauvegarde Veeam Enterprise à l'aide de notre guide « [Installer Veeam Backup & Replication](/guides/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/) ».
+
+À partir de cette étape, vous pouvez continuer la lecture de ce guide pour apprendre à configurer Object Storage en tant que dépôt de sauvegarde ou vous pouvez passer directement à l'étape [Aller plus loin](#gofurther).
+
+### Configuration de l’Object Storage
+
+La création et la configuration de l’Object Storage peuvent être effectuées dans la section <code className="action">Public Cloud</code> de l’[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+Si vous n'avez pas encore de projet Public Cloud dans votre compte OVHcloud, consultez notre guide [Créer votre premier projet Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/).
+
+[Créez un conteneur Object Storage](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/) grâce à l’une des solutions **Object Storage (Standard ou High Performance)**. La solution Standard est recommandée car notre cas d'usage (effectuer une sauvegarde) ne nécessite généralement pas de stockage High Performance.
+
+:::info
+Lors de la commande d’un conteneur Object Storage auprès d’OVHcloud, sélectionnez uniquement l'**Object Storage Standard** ou l’**Object Storage High Performance**. Ces conteneurs prennent entièrement en charge le protocole Amazon S3 et sont conçus pour être utilisés comme dépôts de sauvegarde.
+
+:::
+
+
+Donnez à l'utilisateur Object Storage des droits sur le conteneur en copiant-collant le code ci-dessous dans un fichier JSON.
+
+```json
+{
+  "Statement":[
+    {
+      "Action":
+         [
+             "s3:GetObject",
+             "s3:PutObject",
+             "s3:DeleteObject",
+             "s3:ListBucket",
+             "s3:ListMultipartUploadParts",
+             "s3:ListBucketMultipartUploads",
+             "s3:AbortMultipartUpload",
+             "s3:GetBucketLocation"
+          ],
+      "Effect":"Allow",
+      "Resource":
+          [
+              "arn:aws:s3:::<container name>",
+              "arn:aws:s3::: :::<container name>/*"
+          ],
+      "Sid":"RWContainer"
+     }
+  ]
+}
+```
+
+Veillez à remplacer `container name` par le nom réel de votre conteneur Object Storage.
+
+Dans l’[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez <code className="action">Public Cloud</code> puis <code className="action">Object Storage</code> dans la section `Storage` . Cliquez sur le bouton Plus d'options <code className="action">...</code> à droite de l'utilisateur Object Storage et choisissez <code className="action">Importer S3 Policy (JSON)</code>.
+
+Sélectionnez le fichier JSON que vous venez de modifier et cliquez sur <code className="action">Importer</code>.
+
+<img className="thumbnail" alt="Object Storage - Utilisateur Object Storage - Import JSON" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-01.png" loading="lazy" />
+
+### Configuration du repository Object Storage dans Veeam Enterprise
+
+Depuis l'application Veeam, sélectionnez <code className="action">Backup Infrastructure</code>, <code className="action">Backup Repositories</code> et <code className="action">Add Repository</code>.
+
+<img className="thumbnail" alt="Veeam - ajouter un référentiel" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-02.png" loading="lazy" />
+
+Sélectionnez <code className="action">Object storage</code> comme type de dépôt.
+
+<img className="thumbnail" alt="Veeam - Object Storage" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-03.png" loading="lazy" />
+
+Sélectionnez <code className="action">S3 Compatible</code>.
+
+<img className="thumbnail" alt="Veeam - compatible S3" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-04.png" loading="lazy" />
+
+Attribuez un **Nom** au nouveau référentiel et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Veeam - nom du dépôt" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-05.png" loading="lazy" />
+
+Renseignez les informations **Service point** (Endpoint) et **Region** de votre service de stockage Object Storage.
+
+> Vous pouvez retrouver ces informations dans la section <code className="action">Public Cloud</code> de votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Cliquez sur <code className="action">Object Storage</code> puis cliquez sur le bouton <code className="action">...</code> à droite de votre conteneur et cliquez sur <code className="action">Voir les objets</code>.
+>
+> <img className="thumbnail" alt="Object storage - display objects" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-06.png" loading="lazy" />
+>
+> <img className="thumbnail" alt="Object storage - endpoint" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-07.png" loading="lazy" />
+
+<img className="thumbnail" alt="Veeam - service endpoint and region" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-08.png" loading="lazy" />
+
+Cliquez sur <code className="action">Add</code> pour entrer vos informations d'identification. Entrez votre **Access key** et votre **Secret key**, puis cliquez sur <code className="action">OK</code>.
+
+> Ces informations sont disponibles dans votre espace client OVHcloud sous l'onglet <code className="action">Utilisateurs Object Storage</code> . La **clé d'accès** (Access key) est visible sur la page principale. 
+> La **Clé secrète** (Secret key) se trouve en cliquant sur le bouton <code className="action">...</code> et en sélectionnant <code className="action">Voir la clé secrète</code>. 
+>
+> <img className="thumbnail" alt="Object storage - keys" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-09.png" loading="lazy" />
+
+<img className="thumbnail" alt="Veeam - keys" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-10.png" loading="lazy" />
+
+Cliquez sur <code className="action">Browse...</code> pour sélectionner le **Bucket**.
+
+<img className="thumbnail" alt="Veeam - bucket" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-11.png" loading="lazy" />
+
+Sélectionnez le bucket et cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Veeam - bucket" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-12.png" loading="lazy" />
+
+Cliquez sur <code className="action">Browse...</code> pour sélectionner le **Dossier** (Folder).
+
+<img className="thumbnail" alt="Veeam - folder" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-13.png" loading="lazy" />
+
+Cliquez sur <code className="action">New Folder</code>, entrez un nom pour le dossier, sélectionnez-le, puis cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Veeam - folder" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-14.png" loading="lazy" />
+
+A l'étape de montage du serveur, cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Veeam - Mount Server" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-15.png" loading="lazy" />
+
+Sur l'écran de récapitulatif, cliquez sur <code className="action">Apply</code>.
+
+<img className="thumbnail" alt="Veeam - review" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-16.png" loading="lazy" />
+
+Une fois les processus exécutés avec succès, cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Veeam - process end" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-17.png" loading="lazy" />
+
+Passez en revue la page de résumé et cliquez sur <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="Veeam - summary" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-18.png" loading="lazy" />
+
+Les dépôts de sauvegarde doivent maintenant ressembler à ceci :
+
+<img className="thumbnail" alt="Veeam - dépôts" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/backup-preparation-19.png" loading="lazy" />
+
+Vous pouvez à présent effectuer une sauvegarde avec Veeam Enterprise.
+
+## Aller plus loin <a name="gofurther"></a>
+
+Effectuez une sauvegarde de votre environnement à l'aide du guide Linux ou Windows ci-dessous :
+
+- Pour Linux : [Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/)
+- Pour Windows : [Sauvegarder un serveur Bare Metal Windows en utilisant Veeam Agent pour Windows](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

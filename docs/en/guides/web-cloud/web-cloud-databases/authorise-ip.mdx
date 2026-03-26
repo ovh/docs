@@ -1,0 +1,157 @@
+---
+title: Web Cloud Databases - How to authorize an IP address?
+description: Find out how to authorize one or more IP addresses to access your Web Cloud Databases solution
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+[Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) solutions can be used with OVHcloud services, or external to OVHcloud.
+
+By default, and for security reasons, on these solutions:
+
+- Only IP addresses linked to our shared hosting infrastructure are authorized to access the contents of the databases.
+- Access to the solution logs is not restricted depending on the IP addresses. You can access them via a computer, for example.
+
+Need to change these permissions/restrictions?
+
+**Find out how to authorize one or more IP addresses to access your Web Cloud Databases solution.**
+
+## Requirements
+
+- A [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) solution
+- The IP address (or IP address range) to authorize on your solution
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Select your database service
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## Instructions
+
+### Authorize an IP address or IP address range
+
+:::info
+As a reminder, if you have just activated your [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) solution, and you only want to use its databases for an [OVHcloud web hosting](https://www.ovhcloud.com/en-gb/web-hosting/) solution, the IP addresses of these solutions are already authorized by default.
+
+:::
+
+
+Click on the tabs below to view each of the **4** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) page, then select the solution concerned.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    On the page that opens, click on the <code className="action">Authorised IPs</code> tab.
+    
+    <img className="thumbnail" alt="Authorised IPs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    On the page that appears, click the <code className="action">Add an IP address/mask</code> button above the table.
+    
+    <img className="thumbnail" alt="Authorised IPs interface" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png" loading="lazy" />
+    
+    :::tip[Success]
+    If you want to modify an IP address or an IP address range that is already authorized, click the <code className="action">...</code> button in the line corresponding to the IP address or IP address range you want to modify, then click <code className="action">Edit the whitelist</code>.
+
+    :::
+
+  </Tab>
+  <Tab label="Step 4">
+    In the window that opens, you will need to enter the following information:
+    
+    <img className="thumbnail" alt="Add an IP address or mask" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png" loading="lazy" />
+    
+    - <code className="action">IP/mask *</code>: Enter here the IP address (e.g.: `203.0.113.44`) or IP address range (e.g.: `203.0.113.0/24` representing all IP addresses from `203.0.113.0` to `203.0.113.255`) that you would like to authorize on your Web Cloud Databases solution.
+    - <code className="action">Description</code> (optional): For example, you can add information about the role of the IP address or IP address range concerned.
+    - <code className="action">Databases</code>: Tick this box if you want the IP address or IP address range to be authorized to access the databases on your Web Cloud Databases solution.
+    - <code className="action">SFTP</code>: Tick this box to authorize the IP address or IP address range to access the logs of your Web Cloud Databases solution.
+    
+    :::warning
+    It is strongly recommended not to tick the <code className="action">Databases</code> box to authorize the IP address range `0.0.0.0/0` to access your databases.
+    
+    This would grant access to your databases to all IPv4 addresses.
+
+    :::
+
+    
+    Once you have entered the information, click <code className="action">Confirm</code>.
+  </Tab>
+</Tabs>
+
+
+### Special cases
+
+**Click on the cases below to view the information.**
+
+<details>
+
+<summary>IP address range 0.0.0.0/0</summary>
+
+
+When you activate your Web Cloud Databases solution, a line for the IP address range `0.0.0.0/0` is already present by default, to authorize **SFTP** access to the solution.
+
+This authorization is voluntarily set up to allow you to access the log files of your Web Cloud Databases solution without having to declare the IP address of your Internet access point.
+
+This IP address can change regularly, depending on the ISP.
+
+In addition, we recommend that you **do not** modify this authorization, and do not authorize blanket access to the databases on your Web Cloud Databases solution.
+
+Effectively, this would allow all existing IPv4 addresses to have access to your databases, which represents a risk for your data security.
+
+</details>
+
+
+<details>
+
+<summary>Authorizing access to OVHcloud web hosting plans</summary>
+
+
+When you activate your Web Cloud Databases solution, authorization to access OVHcloud web hosting plans is activated by default.
+
+If you would like to disable this authorization because you are not using a web hosting plan with your Web Cloud Databases solution, click on the tabs below to view each of the **3** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) page, then select the solution concerned.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    On the page that pops up, click on the <code className="action">Authorised IPs</code> tab.
+    
+    <img className="thumbnail" alt="Authorised IPs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    On the page that appears, untick the box <code className="action">Authorise OVHcloud web hosting plans to access the database</code>.
+    
+    <img className="thumbnail" alt="Authorised IPs interface" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

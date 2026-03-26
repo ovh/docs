@@ -1,0 +1,152 @@
+---
+title: Backup Agent - Jak skonfigurować pierwszą kopię zapasową
+description: Dowiedz się, jak skonfigurować pierwszą kopię zapasową na serwerze Bare Metal przy użyciu produktu Backup Agent z poziomu Panelu klienta OVHcloud
+lastUpdated: 2026-03-05
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Zamówiłeś właśnie ofertę Backup Agent dla swojego serwera Bare Metal. Odkryj, jak skonfigurować pierwsze kopie zapasowe.
+
+**Ten przewodnik wyjaśnia, jak skonfigurować pierwszą kopię zapasową przy użyciu Backup Agent na serwerze Bare Metal.**
+
+:::info
+Aby uzyskać więcej informacji na temat produktu Backup Agent, odwiedź [tę stronę](/guides/storage-and-backup/backup-agent/backup-agent-product-presentation/).
+
+:::
+
+
+## Wymagania początkowe
+
+- Zamówiony Backup Agent jednocześnie z Twoim serwerem Bare Metal, lub później za pomocą menu <code className="action">Backup Agent</code> w Panelu klienta OVHcloud.
+- Musisz mieć uruchomiony i skonfigurowany system operacyjny na swoim serwerze Bare Metal.
+
+{/* CP-NAV-START:baremetal-backup-agent */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Backup Agent](https://manager.eu.ovhcloud.com/#/bmc-backup-agent-baremetal/service)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">Backup Agent</code>
+
+---
+{/* CP-NAV-END:baremetal-backup-agent */}
+
+:::warning
+Musisz upewnić się, że Twój serwer może być osiągnięty przez naszą infrastrukturę Veeam.
+Dokładne informacje otrzymasz w e-mailu z dostawą.
+
+Oto informacje, które należy zezwolić na Twoim serwerze Bare Metal:
+
+- IP/DNS serwera: `vspc-cgw1.prod01.eu-west-rbx.backup.ovh.net` lub `vspc-cgw21.prod01.eu-west-rbx.backup.ovh.net`
+- Port: 6180
+
+Zdecydowanie zalecamy również, aby Twój serwer mógł osiągać inne zewnętrzne adresy, aby mógł wysyłać dane do Vault. W tym kontekście nie ma potrzeby zezwalania na ruch przychodzący.
+
+:::
+
+
+## W praktyce
+
+Kroki tworzenia kopii zapasowej dla Twojego serwera to:
+
+- Dodanie serwera do swojego Backup Agent.
+- Pobranie agenta.
+- Zainstalowanie agenta na Twoim serwerze.
+
+Po zainstalowaniu agenta otrzyma on politykę kopii zapasowych i będzie mógł wykonywać kopie zapasowe.
+
+Po zakończeniu tych kroków pierwsza kopia zapasowa zostanie wykonana automatycznie.
+
+### Dodanie serwera do swojego Backup Agent
+
+Kliknij [ten link](https://manager.eu.ovhcloud.com/#/bmc-backup-agent-baremetal/service), aby uzyskać dostęp do sekcji <code className="action">Backup Agent</code>, a następnie kliknij swój vspc-tenant w sekcji <code className="action">Services</code>.
+
+<img className="thumbnail" alt="Backup Agent Services" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-services-en.png" loading="lazy" />
+
+Przejdź do sekcji <code className="action">Agenci</code>.
+
+<img className="thumbnail" alt="Backup Agent Tenant Infos" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-tenant-infos-en.png" loading="lazy" />
+
+:::info
+W tabeli powinieneś zobaczyć serwer Bare Metal, który wybrałeś w swoim zamówieniu, z statusem `not_installed`. Jest to normalne na tym etapie; teraz musisz zainstalować agenta na swoim serwerze.
+
+:::
+
+
+Kliknij przycisk <code className="action">Pobierz</code> w górnym pasku tabeli wyświetlającej listę agentów.
+
+<img className="thumbnail" alt="Backup Agent Agents" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-agents-en.png" loading="lazy" />
+
+Wybierz swój system operacyjny i wybierz opcję pobrania pliku instalacyjnego lub użycia jednego z dostarczonych poleceń, aby go pobrać.
+
+<img className="thumbnail" alt="Backup Agent Step 13" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-download-windows-en.png" loading="lazy" />
+
+Aby zainstalować agenta na swoim serwerze Bare Metal, kliknij na kartę odpowiadającą Twojemu systemowi operacyjnemu:
+
+<Tabs>
+  <Tab label="Windows">
+    Po tym, jak plik instalacyjny znajdzie się na Twoim serwerze Bare Metal, możesz go uruchomić i postępować zgodnie z procedurą oprogramowania:
+    
+    <img className="thumbnail" alt="Backup Agent Step 01" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step01.png" loading="lazy" />
+    
+    <img className="thumbnail" alt="Backup Agent Step 02" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step02.png" loading="lazy" />
+    
+    <img className="thumbnail" alt="Backup Agent Step 03" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step03.png" loading="lazy" />
+    
+    <img className="thumbnail" alt="Backup Agent Step 04" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step04.png" loading="lazy" />
+    
+    <img className="thumbnail" alt="Backup Agent Step 05" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step05.png" loading="lazy" />
+
+Po zainstalowaniu agent łączy się z naszą infrastrukturą, aby pobrać politykę kopii zapasowych:
+    
+    <img className="thumbnail" alt="Backup Agent Step 06" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step06.png" loading="lazy" />
+    
+    <img className="thumbnail" alt="Backup Agent Step 07" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step07.png" loading="lazy" />
+
+Na koniec, po zastosowaniu polityki kopii zapasowych, zobaczysz, że Twój agent kopii zapasowych został skonfigurowany i działa na Twoim serwerze Bare Metal:
+    
+    <img className="thumbnail" alt="Backup Agent Step 08" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step08.png" loading="lazy" />
+    
+    <img className="thumbnail" alt="Backup Agent Step 09" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-step09.png" loading="lazy" />
+  </Tab>
+  <Tab label="Linux">
+    Wybierz swój system operacyjny i wybierz opcję pobrania pliku instalacyjnego lub użycia jednego z dostarczonych poleceń, aby go pobrać.
+    
+    <img className="thumbnail" alt="Backup Agent Step 14" src="/images/storage-and-backup/backup-agent/backup-agent-first-configuration/01-backup-agent-download-linux-en.png" loading="lazy" />
+
+Po tym, jak plik instalacyjny znajdzie się na Twoim serwerze, przejdź do folderu, w którym się znajduje, i uruchom go w następujący sposób:
+    
+    ```bash
+    sudo ./LinuxAgentPackages.<YOURCOMPANYNAME>.sh
+    ```
+    
+    Po zakończeniu instalacji możesz sprawdzić jej stan za pomocą poniższego polecenia:
+    
+    ```bash
+    sudo veeamconsoleconfig -s
+    
+    Management agent
+        Connection state       : Connected
+        Cloud gateway          : <OVHDOMAIN>:6180
+        Connection account     : <USER>
+    ```
+    
+    Następnie zobaczysz, że jeden element nie został jeszcze zainstalowany:
+    
+    ```bash
+    Backup agent
+       Status                 : Not installed
+    ```
+    
+    Jest to normalne na tym etapie, zastosujemy konfigurację, która pozwoli na wdrożenie Backup Agenta zgodnie z polityką kopii zapasowych.
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

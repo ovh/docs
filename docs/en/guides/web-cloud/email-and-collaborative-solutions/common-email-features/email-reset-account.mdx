@@ -1,0 +1,147 @@
+---
+title: Deleting an email account
+description: Find out how to delete or reset an email account of your email solution
+lastUpdated: 2026-02-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+You want to:
+
+- Delete an email account you no longer use.
+- Reset an email account to use it with a new email address.
+- Reset an email account in order to cancel it.
+
+**This guide explains how to delete or reset an email account of your email solution.**
+
+## Requirements
+
+- A preconfigured OVHcloud email solution:
+    - **MX Plan**, available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately.
+    - [**Exchange**](https://www.ovhcloud.com/en-gb/emails-exchange/).
+    - [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/).
+    - [**Zimbra**](https://www.ovhcloud.com/en-gb/emails/zimbra-emails/).
+- Be the Admin contact of the email service concerned
+- Access details for the email accounts concerned
+
+{/* CP-NAV-START:web-mx-plan */}
+{/* CP-NAV-START:web-zimbra */}
+{/* CP-NAV-START:web-email-pro */}
+{/* CP-NAV-START:web-exchange */}
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Select your MX Plan service
+
+**Zimbra:**
+
+- **Direct link:** [Zimbra](https://manager.eu.ovhcloud.com/#/web/zimbra)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Zimbra Mail</code>
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-exchange */}
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-zimbra */}
+{/* CP-NAV-END:web-mx-plan */}
+
+<a name="whichmxplan"></a>
+
+:::info
+**Identifying the email technology of your MX Plan solution.**
+
+Depending on when your MX Plan solution was activated or on a recent migration, the associated email technology may differ. This technology is characterised by the interface of its webmail. To identify it:
+
+- From the <code className="action">General information</code> tab, note the technology used under the **Webmail** heading in the <code className="action">Subscription</code> box.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/technology-email.png" loading="lazy" />
+
+:::
+
+
+## Instructions <a name="instructions"></a>
+
+OVHcloud offers 4 email solutions, and the concept of account deletion differs depending on which email solution you choose.
+
+- **MX Plan email**: This offer contains a certain number of email accounts as a bundle. When you delete an account, you free up an account "slot" of the email service.
+- **Email Pro**, **Hosted Exchange** and **Zimbra**: These offers are on-demand. You order an individual subscription per email account. If you want to delete an email account, you will need to **reset** it. Once you have reset your email account, you can use this account again to create a new email address. You can also [cancel the subscription](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange#deleting-accounts/) for this account if you wish to permanently delete it.
+
+### Delete or reset an email account
+
+Select the tab corresponding to your email solution:
+
+<Tabs>
+  <Tab label="MX Plan Roundcube">
+    To identify the email technology associated with your MX Plan service, please refer to the "[Identifying the email technology of your MX Plan solution](#whichmxplan)" section of this guide.
+    
+    1. Go to the <code className="action">Email accounts</code> tab. The window that appears will display the existing email accounts.
+    1. Click the <code className="action">...</code> button to the right of the account you want to modify, then click <code className="action">Disable account</code>.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-mxplan-legacy-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="MX Plan Zimbra/OWA">
+    To identify the email technology associated with your MX Plan service, please refer to the "[Identifying the email technology of your MX Plan solution](#whichmxplan)" section of this guide.
+    
+    1. Go to the <code className="action">Email accounts</code> tab. The window that appears will display the existing email accounts.
+    1. Click the <code className="action">...</code> button to the right of the account you want to modify, then click <code className="action">Reset this account</code>.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-mxplan-new-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="Email Pro">
+    1. Go to the <code className="action">Email accounts</code> tab. The window that appears will display the existing email accounts.
+    1. Click the <code className="action">...</code> button to the right of the account you want to modify, then click <code className="action">Reset this account</code>.
+    
+    After resetting your account, if you want to permanently delete it, you must cancel it. To do this, please refer to our guide "[Managing the billing for your Email Pro accounts](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro/)".
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/emailpro-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="Exchange">
+    1. Go to the <code className="action">Email accounts</code> tab.
+    1. Click the <code className="action">...</code> button to the right of the account you want to modify, then click <code className="action">Reset</code>.
+    
+    After resetting your account, if you want to permanently delete it, you must cancel it. To do this, please refer to our guide "[Managing the billing for your Exchange accounts](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/)".
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/exchange-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="Zimbra STARTER/PRO">
+    1. Go to the <code className="action">Email account</code> tab. The window that appears will display the existing email accounts.
+    1. Click the <code className="action">⋮</code> button to the right of the account you want to modify, then click <code className="action">Delete</code>.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-zimbra-reset.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Go further
+
+[Getting started with MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+[Getting started with Email Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/first-config/)
+
+[Getting started with Hosted Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/)
+
+[Getting started with Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+[Managing the billing of your Email Pro accounts](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro/)
+
+[Managing the billing of your Exchange accounts](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/)
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

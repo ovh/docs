@@ -1,0 +1,81 @@
+---
+title: Zusätzliche Festplatten aus einem Backup erstellen
+description: Erfahren Sie hier, wie Sie zusätzliche Festplatten aus einem Volume Snapshot erzeugen
+lastUpdated: 2025-04-28
+---
+
+:::info
+Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+
+:::
+
+
+## Ziel
+
+Sie können basierend auf dem Backup einer zusätzlichen Festplatte weitere Festplatten für Ihre Public Cloud Instanzen erstellen.
+
+Dies kann in folgenden Fällen nützlich sein:
+
+- Wenn Sie die zusätzlichen Festplattendaten wiederherstellen möchten.
+- Wenn Sie einen hochverfügbaren und leistungsfähigen Speicherplatz für Ihre Daten benötigen.
+- Wenn Sie Ihre Daten auf eine andere Instanz übertragen möchten.
+
+**Diese Anleitung erklärt, wie Sie ein Festplatten-Backup verwenden, um einer Ihrer Instanzen eine zusätzliche Festplatte hinzuzufügen.**
+
+## Voraussetzungen
+
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie verfügen über einen Volume Snapshot in der gleichen OpenStack-Region.
+- Sie haben administrativen Zugriff (sudo) über SSH oder RDP auf Ihre Instanzen.
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+### Zugriff auf das OVHcloud Kundencenter
+- **Direkter Link:** [Public Cloud Projekte](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigationspfad:** <code className="action">Public Cloud</code> > Wählen Sie Ihr Projekt aus
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## In der praktischen Anwendung
+
+### Festplatte aus einem Backup erstellen
+
+Klicken Sie im linken Menü auf <code className="action">Volume Snapshot</code> unter **Storage und Backups**.
+
+Klicken Sie rechts neben dem Backup Ihrer Wahl auf den Button <code className="action">...</code> und dann auf <code className="action">Volume erstellen</code>.
+
+<img className="thumbnail" alt="volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume01.png" loading="lazy" />
+
+Legen Sie dann den Namen und die Kapazität dieser neuen Festplatte fest und klicken Sie auf <code className="action">Volume erstellen</code>.
+
+<img className="thumbnail" alt="volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume02.png" loading="lazy" />
+
+Die Erstellung der Festplatte kann abhängig von deren Größe einige Minuten in Anspruch nehmen.
+
+### Festplatte mit einer Instanz verbinden
+
+Sobald die Festplatte erstellt ist, können Sie sie mit einer Instanz verbinden. Klicken Sie hierzu auf <code className="action">Block Storage</code> in der linken Navigationsleiste unter **Storage und Backups**.
+
+Klicken Sie rechts neben dem Volume Ihrer Wahl auf den Button <code className="action">...</code> und dann auf <code className="action">Mit der Instanz verbinden</code>.
+
+<img className="thumbnail" alt="volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume03.png" loading="lazy" />
+
+Wählen Sie nun die Instanz aus und klicken Sie auf <code className="action">Bestätigen</code>, um die Festplatte anzuhängen.
+
+<img className="thumbnail" alt="volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume04.png" loading="lazy" />
+
+Der Vorgang zur Anbindung der Festplatte an Ihre Instanz beginnt und kann einige Minuten dauern.
+
+<img className="thumbnail" alt="volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume05.png" loading="lazy" />
+
+:::warning
+:::
+
+Achten Sie darauf, den aktuell angezeigten Bereich des Kundencenters während der Festplattenbindung nicht zu verlassen. Der laufende Prozess könnte unterbrochen werden.
+>
+
+Sobald der Vorgang abgeschlossen ist, können Sie für die nächsten Schritte unsere Konfigurationsanleitung verwenden, für [Linux](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#unter-linux/)- oder [Windows](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#unter-windows/)-Instanzen.
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

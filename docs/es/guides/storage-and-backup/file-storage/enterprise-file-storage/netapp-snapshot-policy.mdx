@@ -1,0 +1,111 @@
+---
+title: Enterprise File Storage - Gestione sus políticas de snapshots
+description: Cómo crear una política de snapshots, aplicarla en el volumen, modificarla y eliminarla desde el área de cliente
+lastUpdated: 2023-08-30
+---
+
+:::info
+Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+
+:::
+
+
+## Objetivo
+
+Esta guía explica cómo gestionar las políticas de snapshots para los volúmenes Enterprise File Storage de OVHcloud.
+
+**Descubra cómo crear una política de snapshots, aplicarla en su volumen, modificarla y eliminarla desde su área de cliente.**
+
+## Requisitos
+
+- Un servicio Enterprise File Storage de OVHcloud con un volumen disponible
+
+{/* CP-NAV-START:storage-enterprise-file-storage */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Enterprise File Storage](https://manager.eu.ovhcloud.com/#/dedicated/netapp)
+- **Ruta de navegación:** <code className="action">Bare Metal Cloud</code> > <code className="action">Enterprise File Storage</code>
+
+---
+{/* CP-NAV-END:storage-enterprise-file-storage */}
+
+## Principios básicos
+
+Un snapshot de volumen es una copia puntual de sólo lectura de un volumen.<br/>
+Los snapshots se crean a partir de un volumen operativo existente. No pueden existir sin eso.<br/>
+Una política de snapshots permite automatizar la creación de snapshots utilizando diferentes parámetros. La política puede modificarse y eliminarse si ya no la necesita.
+
+## Procedimiento
+
+Seleccione su servicio de la lista.
+
+### Crear una política de snapshots
+
+Una política de snapshots permite automatizar los snapshots definiendo la frecuencia de creación en minutos, horas, días, semanas o meses. 
+También es necesario especificar el número de copias que desea conservar.
+
+1\. Haga clic en la pestaña <code className="action">Políticas de snapshots</code>.
+
+<img className="thumbnail" alt="SnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_1.png" loading="lazy" />
+
+2\. Introduzca el nombre de su política de snapshots, una descripción de la misma y utilice el botón <code className="action">+ Añadir una nueva regla</code> para añadir una o varias reglas a la política.
+
+<img className="thumbnail" alt="SnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_2.png" loading="lazy" />
+
+3\. Rellene los campos para especificar la hora, los días del mes, los días de la semana y los meses para la creación del snapshot. También deberá introducir un prefijo para los snapshots, necesario para poder realizar el snapshot.
+
+Puede encontrar información más detallada para cada valor haciendo clic en el signo de interrogación. Expandiendo la sección <code className="action">Ejemplo</code>, puede ver dos conjuntos de reglas con una explicación de su resultado.
+
+Haga clic en la marca de verificación para agregar la nueva regla. Una vez que haya añadido todas las reglas, haga clic en <code className="action">Crear una nueva política de snapshots</code>.
+
+:::info
+Debe especificar un prefijo y una duración en minutos. De forma opcional, puede introducir las horas, días y meses de ejecución para afinar la programación.
+
+:::
+
+
+Una vez creada, no es posible modificar una política de snapshots. Si necesita aplicar una nueva configuración de frecuencia, deberá eliminar la política de snapshots actual y crear una nueva. 
+
+### Aplicar una política de snapshots 
+
+Una vez creada la política de snapshots, puede aplicarla a un volumen.
+
+1\. Abra la pestaña <code className="action">Volúmenes</code> de su pool de capacidad.
+
+<img className="thumbnail" alt="ApplySnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_3.png" loading="lazy" />
+
+2\. Seleccione de la lista el volumen al que debe aplicarse la política de snapshots.
+
+3\. Acceda a la sección <code className="action">Snapshots</code> y en la sección <code className="action">Gestionar la política de snapshots</code>, seleccione la política que desea aplicar. 
+
+4\. Pulse el botón <code className="action">Aplicar la política</code>.
+
+<img className="thumbnail" alt="ApplySnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_4.png" loading="lazy" />
+
+### Eliminar una política de snapshots
+
+:::warning
+No es posible eliminar una política de snapshots asociada a un volumen. Si quiere eliminar una política de snapshots asociada a uno o varios volúmenes, deberá disociar esta política asociando otra política de snapshots a dichos volúmenes.
+
+:::
+
+
+Para eliminar una política de snapshots:
+
+1\. Acceda a la pestaña <code className="action">Políticas de snapshots</code> de su pool de capacidad.
+
+<img className="thumbnail" alt="DeleteSnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_5.png" loading="lazy" />
+
+2\. Seleccione la política que desea eliminar.
+
+3\. Haga clic en el botón Eliminar representado por una <code className="action">papelera</code>.
+
+<img className="thumbnail" alt="DeleteSnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_6.png" loading="lazy" />
+
+## Más información <a name="go-further"></a>
+
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

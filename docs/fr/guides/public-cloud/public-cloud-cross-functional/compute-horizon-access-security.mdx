@@ -1,0 +1,54 @@
+---
+title: "Paramètres d'accès et de sécurité dans Horizon"
+excerpt: "Découvrez comment gérer et sécuriser l'accès à vos instances"
+updated: 2021-05-26
+---
+
+## Objectif
+
+L'interface OpenStack Horizon fournit des options pour configurer l'accès à vos instances et à d'autres services.<br />
+Vous pouvez par exemple configurer des groupes de sécurité pour filtrer les connexions entrantes et sortantes, ou bien encore télécharger le fichier OpenRC contenantvos identifiants afin d'utiliser les API OpenStack.
+
+**Découvrez comment gérer et sécuriser l'accès à vos instances**
+
+## Prérequis
+
+- [Accéder à l'interface Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon)
+
+## En pratique
+
+Connectez-vous à [l'interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+
+Les paramètres d'accès et de sécurité se composent des sections suivantes, accessibles via le menu de gauche :
+
+- **API Access** (sous `Project`)
+
+Le tableau d'accès à l'API répertorie les endpoints des API OpenStack.
+
+![horizon - accès API](/images/guides/public-cloud/public-cloud-cross-functional/access-and-security-in-horizon/api_access.png)
+
+Pour vérifier les valeurs d'accès à utiliser avec les API, cliquez sur `View Credentials`.
+
+Cliquez sur le bouton `Download OpenStack RC File` pour ouvrir un menu déroulant dans lequel vous pouvez choisir le fichier RC approprié à télécharger.
+
+- **Key Pairs** (sous `Project` puis `Compute`)
+
+Cette section vous permet de stocker et de gérer les paires de clés SSH. Vous pouvez simplement créer et ajouter une clé publique et une clé privée en cliquant sur le bouton `Create Key Pair`.
+
+![horizon - clés SSH](/images/guides/public-cloud/public-cloud-cross-functional/access-and-security-in-horizon/key_pairs.png)
+
+Si vous souhaitez ajouter une clé pré-existante, cliquez sur `Import Public Key`. Dans la fenêtre qui s'affiche, vous pouvez entrer une clé ou sélectionner un fichier de clé.
+
+Cette section d'interface contient des instructions de base. Pour plus d'informations sur les clés SSH, consultez [ce guide](/guides/public-cloud/compute/compute-creating-ssh-keys).
+
+- **Security Groups** (sous `Project` puis `Network`)
+
+Les groupes de sécurité sont des ensembles de règles de filtrage qui sont appliquées aux interfaces réseau. Vous pouvez les utiliser pour restreindre l'accès aux instances à des adresses IP et des ports.
+
+![horizon - groupes de sécurité](/images/guides/public-cloud/public-cloud-cross-functional/access-and-security-in-horizon/security_groups.png)
+
+Ajoutez un groupe de sécurité en cliquant sur `Create Security Group`, puis appliquez-lui des règles personnalisées ou prédéfinies via le bouton `Manage Rules` dans le tableau.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

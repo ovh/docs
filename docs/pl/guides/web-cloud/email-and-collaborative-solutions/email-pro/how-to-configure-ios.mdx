@@ -1,0 +1,102 @@
+---
+title: E-mail Pro - Skonfiguruj swoje konto e-mail w programie Mail dla systemu iPhone i iPad
+description: Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail
+lastUpdated: 2025-04-28
+---
+ 
+
+## Wprowadzenie
+
+Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji.
+
+**Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail.**
+
+:::warning
+OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+
+Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+
+:::
+
+
+## Wymagania początkowe
+
+- Posiadanie [konta E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
+- Instalacja aplikacji Mail na Twoim urządzeniu iOS
+- Posiadanie danych do logowania do konta e-mail, które chcesz skonfigurować.
+
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">E-mail Pro</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-email-pro */}
+
+## W praktyce
+
+### Etap 1: dodanie konta
+
+:::info
+W przewodniku używamy oznaczenia serwera: pro?.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+
+Kliknij [ten link](https://manager.eu.ovhcloud.com/#/web/email_pro), aby uzyskać dostęp do sekcji <code className="action">E-mail Pro</code>. Nazwa serwera wyświetla się w strefie **Połączenie** w zakładce <code className="action">Informacje ogólne</code>.
+
+:::
+
+
+Na ekranie Twojego urządzenia wybierz <code className="action">Ustawienia</code> (ikona koła zębatego). Konto można dodawać na różne sposoby, w zależności od wersji iOS:
+
+- **Dla systemu iOS 7, 8, 9 i 10**: kliknij <code className="action">Mail, Kontakty, Kalendarz</code>, a następnie <code className="action">Dodaj konto</code>. Wybierz<code className="action">Inne</code>, następnie <code className="action">Dodaj konto Mail</code>. Następnie przejdź do etapu 5 poniższej tabeli.
+
+- **Dla iOS 11, 12 i 13**: kliknij <code className="action">Konta i hasła</code>, a następnie <code className="action">Dodaj konto</code>. Wybierz<code className="action">Inne</code>, następnie <code className="action">Dodaj konto Mail</code>. Następnie przejdź do etapu 5 poniższej tabeli.
+
+- **Dla wersji iOS 14 i nowszych** wersji: postępuj zgodnie z instrukcjami z poniższej tabeli.
+
+| | |
+|---|---|
+|<img className="thumbnail" alt="Exchange" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/configuration-mail-ios-step01.gif" loading="lazy" />|1. W `Ustawieniach` przejdź do `Mail`. <br/><br/> 2. Kliknij `Konta`.<br/><br/> 3. Kliknij `Dodaj konto`.<br/><br/> 4. Wybierz `Inne` na dole.|
+|5. Kliknij `Dodaj konto Mail`.<br/><br/>6. Wpisz swoje **nazwisko**, adres **e-mail**, **hasło** i **opis** konta.<br/><br/>7. Kliknij `Dalej`.|<img className="thumbnail" alt="Exchange" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/configuration-mailpro-ios-step02.png" loading="lazy" />|
+|<img className="thumbnail" alt="Exchange" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/configuration-mailpro-ios-step03.png" loading="lazy" />|8. Wybierz typ serwera odbierającego `IMAP` (zalecane) lub `POP`.<br/><br/>W sekcjach `SERWER ODBIORU` I `SERWER WYSYŁKI`, pomimo adnotacji "opcjonalnie", wprowadź: <br/>- nazwa hosta **pro?.mail.ovh.net** ( zastąp **?** przez numer serwera E-mail Pro) <br/>- pełny **adres e-mail** w nazwie użytkownika <br/>- hasło do Twojego konta e-mail|
+
+Przed zakończeniem konfiguracji upewnij się, że zaznaczyłeś aplikację <code className="action">Mail</code>, aby mogła ona używać tego konta, następnie kliknij <code className="action">Zapisz</code>.
+
+Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skonfigurowane.
+
+Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajdziesz parametry, których należy użyć w przypadku oferty E-mail Pro:
+
+|Typ serwera|Nazwa serwera|SSL|Port|
+|---|---|---|---|
+|Serwer poczty przychodzącej|pro?.mail.ovh.net|Tak|993|
+|Serwer poczty wychodzącej|pro?.mail.ovh.net|Tak|587|
+
+### Użyj konta e-mail
+
+Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
+
+OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovhcloud.com/pl/emails/) dostępną pod adresem [Webmail](https://www.ovhcloud.com/pl/mail/). Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
+
+:::info
+W przypadku problemów z odbieraniem lub wysyłką e-maili, sprawdź nasz [FAQ dotyczący usług e-mail OVHcloud](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/).
+
+:::
+
+
+## Sprawdź również
+
+:::info
+Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail w systemie iOS, zobacz [Centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
+
+:::
+
+
+[Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu na urządzeniu iPhone lub iPad](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/)
+
+[Konfiguracja konta Exchange na urządzeniu iPhone lub iPad](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-ios/)
+
+[Najczęściej zadawane pytania dotyczące kont e-mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,68 @@
+---
+title: Bonnes pratiques de sécurité sur le client vSphere Web
+description: "Découvrez comment sécuriser l'accès à votre client vSphere Web"
+lastUpdated: 2020-11-18
+---
+
+## Objectif
+
+Pour assurer l'intégrité de votre infrastructure, il convient d'en restreindre l'accès. Pour cela, nous vous proposons différentes méthodes.
+
+**Apprenez à sécuriser rapidement et facilement l'accès à votre client vSphere Web grâce à quelques conseils.**
+
+## Prérequis
+
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+## En pratique
+
+### Contrôler les accès par IP
+
+Le premier conseil est lié à la restriction de l'accès par IP. Nous vous conseillons de toujours fonctionner avec un système d'inscription sur une liste blanche. Cette technique fonctionne sur l'interdiction de principe de toutes les adresses IP et d'ajout des adresses pouvant avoir accès à votre infrastructure.
+
+Cette action est accessible directement dans votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois sur votre espace Managed Bare Metal, allez dans <code className="action">Sécurité</code>. Un tableau s'affichera, sur lequel vous pourrez voir les adresses IP autorisées ou refusées. Pour en ajouter de nouvelles, cliquez à droite sur <code className="action">Ajout des IP</code> :
+
+<img className="thumbnail" alt="Ajout d'IP" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/adding_ip.png" loading="lazy" />
+
+### Créer des utilisateurs spécifiques
+
+Nous vous conseillons fortement de créer un accès personnel pour chaque personne devant avoir accès à votre infrastructure. Cette opération s'effectue également dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), mais cette fois dans l'onglet <code className="action">Utilisateurs</code>. Pour en ajouter de nouveaux, cliquez sur le bouton situé à droite : <code className="action">Créer un utilisateur</code>.
+
+<img className="thumbnail" alt="Utilisateurs" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/users.png" loading="lazy" />
+
+Lors de la création d'un utilisateur, un mot de passe est demandé.
+
+:::info
+Pour sécuriser parfaitement vos données, votre mot de passe doit suivre ces quelques recommandations :
+
+- comporter au minimum huit caractères ;
+- comporter au minimum trois types de caractères ;
+- ne pas être tiré du dictionnaire ;
+- ne pas comporter d’informations personnelles (votre prénom, nom ou date de naissance) ;
+- ne pas être utilisé pour plusieurs accès utilisateur ;
+- être stocké dans un coffre-fort de mots de passe ;
+- être changé tous les trois mois ;
+- être différent des mots de passe précédents.
+
+:::
+
+
+Vous pourrez ensuite gérer les droits de chaque utilisateur en cliquant sur le bouton <code className="action">...</code> à droite de chaque identifiant :
+
+<img className="thumbnail" alt="Édition des paramètres des utilisateurs" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/users_edit.png" loading="lazy" />
+
+### Limiter les temps de session
+
+En fin d'utilisation, il est conseillé de fermer la session de votre utilisateur. Pour limiter le temps de connexion, il est possible d'ajouter une durée d'expiration de session.
+
+Celle-ci est paramétrable dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois sur votre espace Managed Bare Metal, choisissez <code className="action">Sécurité</code>. Cliquez ensuite sur le bouton <code className="action">Changer le délai d'expiration</code> situé sur la droite.
+
+<img className="thumbnail" alt="Expiration de la session" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/security-expiration.png" loading="lazy" />
+
+Renseignez ensuite le nombre de minutes avant qu'une session expire.
+
+<img className="thumbnail" alt="Expiration de la session" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/expiration.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

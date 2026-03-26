@@ -1,0 +1,101 @@
+---
+title: E-Mail Pro - Konfiguration Ihrer E-Mail-Adresse in Mail für iPhone und iPad
+description: Erfahren Sie hier, wie Sie einen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten
+lastUpdated: 2025-04-28
+---
+
+## Ziel
+
+E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
+
+**Diese Anleitung erklärt, wie Sie einen E-Mail Pro Account via Mail App auf einem iPhone oder iPad einrichten.**
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Diese Anleitung soll Sie bei allgemeinen Aufgaben so weit wie möglich unterstützen. Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovhcloud.com/community/en).
+
+:::
+
+
+## Voraussetzungen
+
+- Sie verfügen über einen [E-Mail Pro Account](https://www.ovhcloud.com/de/emails/email-pro/).
+- Die Mail App ist auf Ihrem iOS Gerät installiert.
+- Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
+
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">E-Mail Pro</code> > Wählen Sie Ihre Plattform aus
+
+---
+{/* CP-NAV-END:web-email-pro */}
+
+## In der praktischen Anwendung
+
+### Schritt 1: Account hinzufügen
+
+:::info
+In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?” muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
+
+Klicken Sie auf [diesen Link](https://manager.eu.ovhcloud.com/#/web/email_pro), um auf den Bereich <code className="action">E-Mail Pro</code> zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs <code className="action">Allgemeine Informationen</code> angezeigt.
+
+:::
+
+
+Klicken Sie vom Homescreen des Geräts aus auf <code className="action">Einstellungen</code> (Zahnradsymbol). Je nach Ihrer iOS-Version erfolgt das Hinzufügen eines Accounts auf verschiedene Weise:
+
+- **Für iOS 7, 8, 9 und 10**: Tippen Sie auf <code className="action">Mail, Kontakte, Kalender</code> und dann auf <code className="action">Account hinzufügen</code>. Als Accounttyp wählen Sie <code className="action">Andere</code>, und klicken anschließend auf <code className="action">Mail-Account hinzufügen</code>. Gehen Sie dann zu Schritt 5 der nachfolgenden Tabelle.
+
+- **Für iOS 11, 12 und 13**: Tippen Sie auf <code className="action">Accounts und Passwörter</code> und dann auf <code className="action">Account hinzufügen</code>. Als Accounttyp wählen Sie <code className="action">Andere</code>, und klicken anschließend auf <code className="action">Mail-Account hinzufügen</code>. Gehen Sie dann zu Schritt 5 der nachfolgenden Tabelle.
+
+- **Für die Versionen iOS 14 und höher**: Folgen Sie den Anweisungen in der nachfolgenden Tabelle.
+
+| | |
+|---|---|
+|<img className="thumbnail" alt="iPhone" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/configuration-mail-ios-step01.gif" loading="lazy" />|1. In `Einstellungen` gehen Sie auf `Mail`. <br/><br/> 2. Tippen Sie auf `Accounts`.<br/><br/> 3. Tippen Sie auf `Account hinzufügen`.<br/><br/> 4. Wählen Sie unten `Andere`.|
+|5. Tippen Sie auf `Mail-Account hinzufügen`.<br/><br/>6. Geben Sie **Name**, **E-Mail-Adresse**, **Passwort** und eine **Beschreibung** Ihres Accounts ein.<br/><br/>7. Drücken Sie auf `Weiter`.|<img className="thumbnail" alt="iPhone" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/configuration-mailpro-ios-step02.png" loading="lazy" />|
+|<img className="thumbnail" alt="iPhone" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/configuration-mailpro-ios-step03.png" loading="lazy" />|8. Wählen Sie `IMAP` (empfohlen) oder `POP` aus.<br/><br/>Geben Sie als `INCOMING` und `OUTGOING` (trotz der Angabe "optional") folgende Werte ein: <br/>- Hostname pro?.mail.ovh.net (ersetzen Sie **?** durch die Servernummer von E-Mail Pro) <br/>- Ihre vollständige **E-Mail-Adresse** als Benutzername <br/>- das Passwort Ihres E-Mail-Accounts|
+
+Stellen Sie am Ende der Konfiguration sicher, dass Sie <code className="action">Mail</code> aktiviert lassen, damit die Anwendung diesen Account verwenden kann, und klicken Sie dann auf <code className="action">Speichern</code>.
+
+Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korrekt eingerichtet ist.
+
+Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwenden Sie die folgenden technischen Einstellungen für E-Mail Pro Accounts:
+
+|Servertyp|Servername|SSL|Port|
+|---|---|---|---|
+|Eingangsserver|pro?.mail.ovh.net|Ja|993|
+|Ausgangsserver|pro?.mail.ovh.net|Ja|587|
+
+### E-Mail-Adresse verwenden
+
+Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
+
+OVHcloud bietet auch eine Webanwendung mit [kollaborativen Funktionen](https://www.ovhcloud.com/de/emails/) an, unter[Webmail](https://www.ovhcloud.com/de/mail/). Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+
+:::info
+Bei Schwierigkeiten beim Empfang oder beim Versand von E-Mails konsultieren Sie bitte unsere [FAQ zu den OVHcloud E-Mail-Diensten](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/).
+
+:::
+
+
+## Weiterführende Informationen
+
+:::info
+Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf iOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/102619).
+
+:::
+
+
+[Konfiguration Ihrer MX Plan E-Mail-Adresse auf iPhone oder iPad](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/)
+
+[Konfiguration von Exchange auf iPhone oder iPad](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-ios/)
+
+[E-Mails FAQ](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

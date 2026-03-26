@@ -1,0 +1,98 @@
+---
+title: Backing up a Bare Metal Linux Server with Veeam Enterprise (EN)
+description: Learn how to back up your Bare Metal Linux Server using Veeam Backup and Replication (Enterprise)
+lastUpdated: 2024-04-05
+---
+
+## Objective
+
+Whether it is a hardware failure or accidentally deleting an important file, maintaining frequent backups is extremely important and can save you countless hours of unnecessary work.
+
+**Learn how to back up your Bare Metal Linux Server using Veeam Backup and Replication (Enterprise)**
+
+:::info
+To back up a Bare Metal Windows server using the Veeam Agent for Microsoft Windows, see [this guide](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/).
+
+:::
+
+
+## Requirements
+
+- An [OVHcloud Bare Metal Linux server](https://www.ovhcloud.com/pl/bare-metal/)
+- [Veeam Backup & Replication installed and registered](/guides/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/)
+
+:::warning
+This guide presupposes that you have followed the steps detailed in our first guide [Preparing a Bare Metal Server backup with Veeam Enterprise](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/).
+
+:::
+
+
+## Instructions
+
+To begin, from the <code className="action">Home</code> tab of Veeam, click the <code className="action">Backup Job</code> button and select one of the `Linux computer...` option to backup.
+
+<img className="thumbnail" alt="Home - backup job" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup01.png" loading="lazy" />
+
+In the **Job Mode** section, select the server **Type** and the **Mode** for backup.
+
+Then, click the <code className="action">Next</code> button.
+
+<img className="thumbnail" alt="Job mode - type and mode" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup02.png" loading="lazy" />
+
+In the **Name** section, give your backup job a **Name** and **Description**.
+
+Then, click the <code className="action">Next</code> button.
+
+<img className="thumbnail" alt="Name - name and description" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup03.png" loading="lazy" />
+
+In the **Computers** section, click the <code className="action">Add...</code> button.
+
+<img className="thumbnail" alt="Computers - add" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup04.png" loading="lazy" />
+
+In the **Add Computer** pop-up, enter the **Host name or IP address** of the server.
+
+Then, click the <code className="action">Add...</code> button, select <code className="action">Stored</code> and then <code className="action">Linux account...</code>.
+
+<img className="thumbnail" alt="Add computer - host name or IP address" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup05.png" loading="lazy" />
+
+Enter the **Username** and **Password**. Select the **Elevate account privileges automatically** box and then click <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Add computer - username and password" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup06.png" loading="lazy" />
+
+In the **Backup Mode** section, select the backup mode for this job.
+
+Then, click the <code className="action">Next</code> button.
+
+<img className="thumbnail" alt="Backup Mode - select mode" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup07.png" loading="lazy" />
+
+In the **Storage** section, choose the **Backup repository** and settings.
+
+Then, click the <code className="action">Next</code> button.
+
+<img className="thumbnail" alt="Storage - backup repostory" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup08.png" loading="lazy" />
+
+Click the <code className="action">Next</code> button again to skip the **Guest Processing** section, as no configurations are needed.
+
+In the **Schedule** section, you can click <code className="action">Run the job automatically</code> if you would like to configure the backup job to be reoccurring.
+
+For this article, we will be executing the backup manually so we will click the <code className="action">Apply</code> button to proceed.
+
+<img className="thumbnail" alt="Schedule" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup09.png" loading="lazy" />
+
+Review the **Summary** section to ensure that everything is correct.
+
+If you want to run the job as soon as you finish setup, select the <code className="action">Run the job when I click Finish</code> checkbox.
+
+<img className="thumbnail" alt="Summary" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup10.png" loading="lazy" />
+
+Click the <code className="action">Finish</code> button to conclude setting up the backup job. This will open a new window where you can view the details of the backup being performed.
+
+<img className="thumbnail" alt="backup details" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup11.png" loading="lazy" />
+
+Once the job is complete, you will have created your backup.
+
+For information about restoring a Bare Metal Server, please check out our [Restoring a Bare Metal Server with Veeam Enterprise](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/) guide.
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

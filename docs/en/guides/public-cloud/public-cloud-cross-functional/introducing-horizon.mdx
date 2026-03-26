@@ -1,0 +1,122 @@
+---
+title: Introducing Horizon
+description: Discover the main sections of the Horizon interface
+lastUpdated: 2024-02-09
+---
+
+## Objective
+
+The Horizon interface, natively offered with OpenStack, has been adapted by OVHcloud to offer additional features than those available in the OVHcloud Control Panel.
+
+**Discover the main sections of the Horizon interface.**
+
+## Requirements
+
+- A [Public Cloud project](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) in your OVHcloud account
+- **[Optional since September 2023]** An [OpenStack user](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/) created in your project. This step is optional because we have deployed Single Sign-On (SSO) authentication between the OVHcloud Control Panel and Horizon.
+
+## Instructions
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+### Logging in to OpenStack Horizon
+
+- To log in with a specific OpenStack user: open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/) previously created, then click on <code className="action">Connect</code>.
+
+### Data centre region selection
+
+Unlike the OVHcloud Control Panel, Horizon separates your services according to their region. You can choose the region from the menu in the top left-hand corner:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/region2021.png" loading="lazy" />
+
+### Left side menu
+
+This menu allows you to quickly navigate through the project and its various features.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/leftmenu2021.png" loading="lazy" />
+
+#### Compute
+
+##### **Overview**
+
+- **Quota Summary**
+
+Horizon provides a summary of quotas, which allows you to see the used and available resources for your projects:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/quotas2021.png" loading="lazy" />
+
+- **Usage Summary**
+
+Next is a summary of the use of your project instances. The search period can be customized to restrict this summary to a desired period.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/usagesummary2021.png" loading="lazy" />
+
+- **Usage**
+
+A summary of your usage is also available. This is a summary of the various services associated with the project, such as the list of instances.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/usage2021.png" loading="lazy" />
+
+The summary is downloadable in CSV format, which allows you to extract the information so that you can analyse it via other tools. Simply click on <code className="action">Download CSV Summary</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/csv2021.png" loading="lazy" />
+
+- **Instances**
+
+Use this page to list and manage instances. Here, for example, you can create new instances, pause them, access the instance console, and much more.
+
+- **Images**
+
+Use this menu to list and manage images, i.e. templates and snapshots associated with your project.
+
+- **Key Pairs**
+
+Here you can list and create your SSH keys for connecting to your instances.
+
+##### **Volumes**
+
+Use this menu to list and manage volumes, as well as volume backups and snapshots.
+
+<img className="thumbnail" alt="volume" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/volumes2021.png" loading="lazy" />
+
+##### **Network**
+
+List and manage your networks and security groups here. 
+
+<img className="thumbnail" alt="network" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/network2021.png" loading="lazy" />
+
+##### **Orchestration**
+
+This menu allows you to orchestrate multiple composite cloud applications.<br/>
+For more information, please refer to the [OpenStack documentation](https://docs.openstack.org/horizon/pike/user/stacks.html).
+
+<img className="thumbnail" alt="orchestration" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/orchestration2021.png" loading="lazy" />
+
+#### Identity
+
+Use this menu to list information about your projects.
+
+### User menu
+
+In the top right-hand corner of the Horizon interface, a user menu allows you to: 
+
+- Change interface display settings.
+- Download an OpenRC file containing your user IDs.
+- Log out of the Horizon interface.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/username2021.png" loading="lazy" />
+
+## Go further
+
+[How to use the Public Cloud interface](/guides/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/)
+ 
+Join our [community of users](https://community.ovhcloud.com/community/en).

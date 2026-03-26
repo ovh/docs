@@ -1,0 +1,170 @@
+---
+title: Jak powiązać nazwę domeny OVHcloud z Google Site
+description: Przygotuj i skonfiguruj strefę DNS Twojej nazwy domeny OVHcloud, aby połączyć ją z Google Site
+lastUpdated: 2026-03-18
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Jesteś posiadaczem nazwy domeny w OVHcloud i chcesz połączyć ją z Google Site. W tym przewodniku znajdziesz informacje o tym, jak przygotować i skonfigurować strefę DNS OVHcloud dla Twojej witryny Google Site.
+
+**Dowiedz się, jak powiązać nazwę domeny OVHcloud z Google Site.**
+
+:::warning
+- Pomoc techniczna Google Site nie ma dostępu do ustawień Twojej nazwy domeny OVHcloud i nie może udzielić Ci porad dotyczących informacji, które należy jej dostarczyć.
+- OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.<br/><br/> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z wyspecjalizowanym [usługodawcą](https://partner.ovhcloud.com/pl/directory/) i/lub wydawcą usługi. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) niniejszego przewodnika.
+
+:::
+
+
+## Wymagania początkowe
+
+- Posiadanie [nazwy domeny](https://www.ovhcloud.com/pl/domains/) zarejestrowanej w OVHcloud.
+- Posiadanie odpowiednich [uprawnień do zarządzania](/guides/account-and-service-management/account-information/managing-contacts/) nazwą domeny.
+- Posiadanie witryny Google Site i bycie jej właścicielem.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Strefy DNS</code> > Wybierz nazwę domeny
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## W praktyce
+
+Przed przystąpieniem do wykonywania kolejnych kroków tego przewodnika zalecamy zapoznanie się z przewodnikiem dotyczącym [edycji strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+
+:::warning
+Twoja strefa DNS jest potencjalnie już wstępnie skonfigurowana lub powiązana z hostingiem. Zobaczymy, jak zidentyfikować każdy rekord DNS niezbędny do połączenia z Google Site. Niektóre z nich będą musiały zostać usunięte, aby uniknąć konfliktu z wymaganymi rekordami DNS w tej konfiguracji. Pozostałe zostaną po prostu zmodyfikowane lub utworzone. Aby lepiej zrozumieć, jako przykład posłużymy się nazwą domeny "**mydomain.ovh**". Zastąp ją nazwą Twojej domeny podczas konfiguracji.
+
+:::
+
+
+### 1. Skonfiguruj Google Site
+
+:::warning
+Tylko właściciel witryny Google Site może ją połączyć z nazwą domeny. W razie potrzeby sprawdź, jak [zmienić właściciela witryny Google Site](https://support.google.com/sites/answer/97934?hl=pl).
+
+:::
+
+
+Najpierw przygotuj witrynę Google Site, postępując zgodnie z instrukcjami zawartymi w sekcji **Configure a custom domain** z [**tej strony pomocy Google**](https://support.google.com/sites/answer/9068867?hl=pl#zippy=).
+
+### 2. Konfiguracja rekordów DNS na koncie OVHcloud
+
+Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="Strefy DNS" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+
+Wyświetlona tabela zawiera listę wszystkich rekordów DNS dla wybranej nazwy domeny.
+  </Tab>
+  <Tab label="Krok 2">
+    **Konfiguracja rekordów A**
+    
+    **1 - Identyfikacja:** Przefiltruj rekordy DNS, wybierając typ `A` w menu filtrów w prawym górnym rogu tabeli.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png" loading="lazy" />
+
+Zidentyfikuj istniejące rekordy "A" dla samej nazwy domeny (np. `mydomain.ovh.`) oraz dla subdomeny "www" (np. `www.mydomain.ovh.`).
+    
+    **2 - Usuwanie:** Usuń wszystkie istniejące rekordy "A" dla subdomeny "www". Jeśli dla samej nazwy domeny istnieje więcej niż 4 rekordy "A", usuń nadmiarowe rekordy, aby pozostały tylko 4. Aby usunąć rekord, kliknij przycisk <code className="action">...</code> po prawej stronie odpowiedniego wiersza, a następnie kliknij <code className="action">Usuń wpis</code>.
+    
+    **3 - Modyfikacja:** Zmodyfikuj każdy pozostały rekord "A" dla samej nazwy domeny, klikając przycisk <code className="action">...</code>, a następnie klikając <code className="action">Zmień wpis</code>. Zastąp cel jednym z 4 adresów IPv4 Google Site (inny adres dla każdego rekordu):
+    
+    - `216.239.32.21`
+    - `216.239.34.21`
+    - `216.239.36.21`
+    - `216.239.38.21`
+    
+    Kliknij <code className="action">Dalej</code> i zatwierdź.
+    
+    **4 - Dodawanie:** Jeśli istniało mniej niż 4 rekordy "A", utwórz brakujące rekordy. Kliknij <code className="action">Dodaj wpis</code> w prawym górnym rogu, wybierz typ rekordu <code className="action">A</code>, pozostaw pole **Subdomena** puste i wprowadź w polu **Cel** każdy adres IPv4, który nie został jeszcze przypisany. Kliknij <code className="action">Dalej</code> i zatwierdź.
+    
+    Ponieważ wartości tych adresów IP mogą ulec zmianie, sprawdź w oficjalnej dokumentacji [wartości rekordów A](https://support.google.com/a/answer/2579934?hl=pl&ref_topic=2721296&sjid=10373374977980680534-EU).
+    
+    Następnie przejdź do kroku 3.
+  </Tab>
+  <Tab label="Krok 3">
+    **Usuwanie rekordów AAAA**
+    
+    **1 - Identyfikacja:** Przefiltruj rekordy DNS, wybierając typ `AAAA` w menu filtrów w prawym górnym rogu tabeli.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png" loading="lazy" />
+
+Zidentyfikuj istniejące rekordy "AAAA" dla samej nazwy domeny (np. `mydomain.ovh.`) oraz dla subdomeny "www" (np. `www.mydomain.ovh.`).
+    
+    **2 - Usuwanie:** Usuń wszystkie zidentyfikowane rekordy "AAAA" (sama nazwa domeny i subdomena "www"), aby uniknąć konfliktów z nowymi rekordami DNS. Dla każdego rekordu kliknij przycisk <code className="action">...</code> po prawej stronie odpowiedniego wiersza, a następnie kliknij <code className="action">Usuń wpis</code>.
+    
+    Jeśli nie istnieją żadne rekordy "AAAA", przejdź do kroku 4.
+  </Tab>
+  <Tab label="Krok 4">
+    **Konfiguracja rekordu TXT**
+    
+    **1 - Identyfikacja:** Przefiltruj rekordy DNS, wybierając typ `TXT` w menu filtrów w prawym górnym rogu tabeli.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png" loading="lazy" />
+
+Zidentyfikuj istniejące rekordy "TXT" dla samej nazwy domeny (np. `mydomain.ovh.`) oraz dla subdomeny "www" (np. `www.mydomain.ovh.`).
+    
+    **2 - Usuwanie:** Usuń wszystkie zidentyfikowane rekordy "TXT" (sama nazwa domeny i subdomena "www"), aby uniknąć konfliktów z nowymi rekordami DNS. Dla każdego rekordu kliknij przycisk <code className="action">...</code> po prawej stronie odpowiedniego wiersza, a następnie kliknij <code className="action">Usuń wpis</code>.
+    
+    **3 - Dodawanie:** Utwórz rekord weryfikacyjny TXT. Kliknij <code className="action">Dodaj wpis</code> w prawym górnym rogu, wybierz typ rekordu <code className="action">TXT</code>. Uzupełnij pola **Subdomena** i **Cel** informacjami ze strony "[Wartości rekordów TXT](https://support.google.com/a/answer/2716802?hl=pl&ref_topic=2716886&sjid=3052810298579211755-EU)" w oficjalnej dokumentacji. Zazwyczaj pole **Subdomena** pozostaje puste, a pole **Cel** jest typu `google-site-verification=XXXXXXXXXXXX`. Kliknij <code className="action">Dalej</code> i zatwierdź.
+    
+    Następnie przejdź do kroku 5.
+  </Tab>
+  <Tab label="Krok 5">
+    **Konfiguracja rekordu CNAME**
+    
+    **1 - Identyfikacja:** Przefiltruj rekordy DNS, wybierając typ `CNAME` w menu filtrów w prawym górnym rogu tabeli.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png" loading="lazy" />
+
+Zidentyfikuj istniejące rekordy "CNAME" dla subdomeny "www" (np. `www.mydomain.ovh.`).
+    
+    **2 - Usuwanie:** Jeśli istnieje więcej niż jeden rekord "CNAME" dla subdomeny "www", usuń wszystkie z wyjątkiem jednego. Aby usunąć rekord, kliknij przycisk <code className="action">...</code> po prawej stronie odpowiedniego wiersza, a następnie kliknij <code className="action">Usuń wpis</code>.
+    
+    **3 - Modyfikacja:** Jeśli istnieje rekord "CNAME" dla subdomeny "www", kliknij przycisk <code className="action">...</code>, a następnie kliknij <code className="action">Zmień wpis</code>. Zastąp jedynie **Cel** wartością `ghs.googlehosted.com.`. Kliknij <code className="action">Dalej</code> i zatwierdź.
+    
+    Jeśli nie istnieje żaden rekord "CNAME" dla subdomeny "www", kliknij <code className="action">Dodaj wpis</code> w prawym górnym rogu, wybierz typ rekordu <code className="action">CNAME</code>, wprowadź `www` w polu **Subdomena** i `ghs.googlehosted.com.` w polu **Cel**. Kliknij <code className="action">Dalej</code> i zatwierdź.
+    
+    Ponieważ te wartości mogą ulec zmianie, sprawdź je na stronie "[Wartości rekordów CNAME](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=pl)" w oficjalnej dokumentacji.
+  </Tab>
+</Tabs>
+
+
+Strefa DNS jest teraz skonfigurowana tak, aby wskazywała na Twoją witrynę Google Site.
+
+:::info
+Weryfikacja nazwy domeny może potrwać do 48 godzin.
+
+:::
+
+
+Jeśli korzystasz z rozwiązania e-mail OVHcloud lub zamierzasz zamówić jedną z [naszych usług e-mail](https://www.ovhcloud.com/pl/emails/), musisz również odpowiednio przygotować Twoją strefę DNS. Zapoznaj się z przewodnikiem dotyczącym [konfiguracji rekordu MX](/guides/web-cloud/domains/dns-zone-mx/).
+
+## Sprawdź również <a name="go-further"></a>
+
+[Zmiana serwerów DNS nazwy domeny OVHcloud](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Utworzenie strefy DNS OVHcloud dla nazwy domeny](/guides/web-cloud/domains/dns-zone-create/)
+
+[Edycja strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+Aby przekazać zarządzanie nazwą domeny na inne konto klienta OVHcloud, zapoznaj się z przewodnikiem "[Zarządzanie kontaktami dla usług OVHcloud](/guides/account-and-service-management/account-information/managing-contacts/)".
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

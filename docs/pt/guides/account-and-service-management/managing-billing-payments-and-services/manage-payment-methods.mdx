@@ -1,0 +1,166 @@
+---
+title: Gerir os meus métodos de pagamento
+description: Aprenda a adicionar e gerir os seus métodos de pagamento dentro da Área de Cliente OVHcloud
+lastUpdated: 2025-04-28
+---
+
+import Api from '@components/Api';
+
+
+## Objetivo
+
+A Área de Cliente OVHcloud permite-lhe guardar e gerir vários métodos de pagamento.
+
+## Requisitos
+
+- Dispor de um método de pagamento válido
+
+{/* CP-NAV-START:billing-payment-methods */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Métodos de pagamento](https://manager.eu.ovhcloud.com/#/billing/payment/method)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > <code className="action">Os meus métodos de pagamento</code>
+
+---
+{/* CP-NAV-END:billing-payment-methods */}
+
+## Instruções <a name="payment_methods"></a>
+
+Na página [Os meus métodos de pagamento](https://manager.eu.ovhcloud.com/#/billing/payment/method), encontrará um quadro que indica os métodos de pagamento registados na sua conta de cliente.
+
+<img className="thumbnail" alt="hubpayment" src="/images/assets/screens/control-panel/product-selection/right-menu/my-payment-methods.png" loading="lazy" />
+
+Nela pode:
+
+- Adicionar um método de pagamento
+- Alterar o seu método de pagamento padrão
+- Modificar a descrição do seu método de pagamento
+- Eliminar um método de pagamento
+
+### Adicionar um método de pagamento
+
+Aquando da sua primeira encomenda, é-lhe pedido que registe um método de pagamento para assegurar a renovação do seu serviço por débito automático.
+
+Este método de pagamento é então utilizado por defeito para todas as suas renovações e é-lhe proposto para pagar novas encomendas.
+
+Tem a possibilidade de registar outros métodos de pagamento, para que eles lhe sejam propostos durante as suas novas encomendas ou utilizados por defeito para os seus futuros débitos.
+
+É possível registar 2 tipos de métodos de pagamento:
+
+- Cartão bancário
+- Conta PayPal
+
+Para isso, basta clicar no botão <code className="action">Adicionar um método de pagamento</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods2.png" loading="lazy" />
+
+Escolha o método de pagamento que deseja utilizar: 
+
+<img className="thumbnail" alt="choose-payment-method-no-sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/choose-payment-method-no-sepa.png" loading="lazy" />
+
+Siga as etapas sucessivas de registo do método de pagamento. Na primeira etapa, é-lhe proposto que selecione a opção <code className="action">Pretendo selecionar este método de pagamento predefinido após à sua validação.</code>, de forma a que ele seja utilizado para as suas futuras compras ou débitos automáticos.
+
+#### Cartão bancário
+
+<img className="thumbnail" alt="credit-card-no-sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-card-no-sepa.png" loading="lazy" />
+
+Para registar um novo cartão de crédito, será redirecionado para a interface segura do nosso prestador de pagamentos. É efetuada uma tentativa de débito junto do seu organismo bancário para validar o número e a validade do seu cartão.<br/>
+Nenhum montante será debitado e o seu cartão de crédito será ativado ao fim de alguns minutos.
+
+#### Conta PayPal
+
+<img className="thumbnail" alt="paypal_no_sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/paypal_no_sepa.png" loading="lazy" />
+
+Clique no botão <code className="action">PayPal</code>. Será então aberta uma janela de contexto para se ligar à sua conta PayPal® e registar esta como método de pagamento autorizado junto da OVHcloud.
+
+A sua conta PayPal® será ativada dentro de alguns minutos.
+
+### Alterar o seu método de pagamento padrão
+
+As faturas de renovação dos seus serviços são sempre debitadas no seu método de pagamento padrão. Se pretender alterar este método, terá primeiro de adicionar um novo método de pagamento na sua Área de Cliente.
+
+Clique, então, no botão <code className="action">...</code> à direita do novo método de pagamento, e em <code className="action">Definir este método de pagamento por predefiniçao</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods3.png" loading="lazy" />
+
+> **Pretendo substituir o meu método de pagamento predefinido por outro, como fazer?**
+>
+> - Etapa 1: adicione o novo método de pagamento
+> - Etapa 2: defina o novo método de pagamento como método de pagamento padrão
+> - Etapa 3: elimine o método de pagamento antigo
+>
+
+### Eliminar um método de pagamento
+
+Se já não quiser usar um dos métodos de pagamento, poderá eliminá-lo clicando no botão <code className="action">...</code> à direita do método de pagamento. Clique, então, em <code className="action">Eliminar este método de pagamento</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods4.png" loading="lazy" />
+
+Se deseja eliminar a integralidade dos seus métodos de pagamento, o conjunto dos seus serviços deve ser [renovado manualmente](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#a-renovacao-manual/).
+
+#### Eliminar um método de pagamento através das API OVHcloud
+
+A eliminação de um método de pagamento pode ser realizada através das API, ligando-se a [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+
+Comece por obter a ID do método de pagamento:
+
+<Api version="v1" section="/me" method="GET" route={"/me/payment/method"} />
+
+De seguida, elimine o método de pagamento utilizando o ID que obteve na etapa anterior:
+
+<Api version="v1" section="/me" method="DELETE" route={"/me/payment/method/\{paymentMethodId\}"} />
+
+
+:::info
+Para mais informações, consulte o guia [Primeiros passos com as API OVHcloud](/guides/manage-and-operate/api/first-steps/).
+
+Em caso de dificuldades para identificar os seus métodos de pagamento através das API OVHcloud, utilize a função <code className="action">Alterar a descrição</code> (botão <code className="action">...</code> à direita do ecrã) na parte relativa aos [Métodos de pagamento](#payment_methods) da página [Os meus métodos de pagamento](https://manager.eu.ovhcloud.com/#/billing/payment/method).
+
+:::
+
+
+### Conta pré-paga
+
+#### O que é a conta pré-paga?
+
+A *conta pré-paga* está presente na página [Os meus métodos de pagamento](https://manager.eu.ovhcloud.com/#/billing/payment/method) assim que for criada. Permite-lhe creditar antecipadamente à sua conta de cliente e utilizar estes fundos para o pagamento das suas encomendas e das suas faturas de renovação.
+
+Ao creditar regularmente à sua conta, certificar-se-á de que a [renovação automática](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#a-renovacao-automatica/) dos seus serviços nunca será interrompida por falta de pagamento.
+
+Para isso, aceda à página [Os meus métodos de pagamento](https://manager.eu.ovhcloud.com/#/billing/payment/method) e selecione o separador <code className="action">Conta pré-paga</code>.
+
+<img className="thumbnail" alt="prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/prepaid-account.png" loading="lazy" />
+
+#### Como funciona?
+
+A cada prazo, quando possui serviços parametrizados para a *renovação automática*, o montante da sua fatura é debitado prioritariamente na sua conta pré-paga.
+
+Na ausência de fundos suficientes, o saldo da sua conta passará em negativo e ficará a aguardar pagamento.
+
+Se dispõe de um método de pagamento válido registado na sua conta de cliente, este montante será automaticamente debitado nas 24 horas e o seu saldo reposto a zero. Isto sem qualquer impacto no estado dos seus serviços.
+
+No entanto, se não registou nenhum método de pagamento, deverá pagar este saldo a partir da Área de Cliente dentro de 7 dias, para evitar qualquer interrupção do serviço.
+
+Se não possui nenhum método de pagamento registado, recomendamos que parametrize um **limite de alerta** para garantir que dispõe dos fundos suficientes para as suas próximas faturas:
+
+<img className="thumbnail" alt="warning_prepaid_account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/warning_prepaid_account.png" loading="lazy" />
+
+Se o crédito disponível na sua conta pré-paga desce abaixo do limite definido, ser-lhe-á imediatamente enviado um e-mail de notificação.
+
+#### Como creditar à sua conta pré-paga?
+
+No separador <code className="action">A minha conta pré-paga</code>, clique no botão <code className="action">Creditar</code>.
+
+<img className="thumbnail" alt="credit-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-prepaid-account.png" loading="lazy" />
+
+Na nova janela, indique o montante a creditar, clique em <code className="action">Seguinte</code> e depois em <code className="action">Encomendar</code>.
+
+<img className="thumbnail" alt="order-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/order-prepaid-account.png" loading="lazy" />
+
+Na nota de encomenda que aparece, selecione o método de pagamento à sua escolha e efetue o pagamento da sua encomenda.
+
+## Quer saber mais?
+
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

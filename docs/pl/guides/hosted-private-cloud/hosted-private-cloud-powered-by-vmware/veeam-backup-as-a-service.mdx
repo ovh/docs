@@ -1,0 +1,161 @@
+---
+title: Activating and using Veeam Managed Backup (EN)
+description: Find out how to enable and use the Veeam Managed Backup option to secure your VMs within a Hosted Private Cloud VMware on OVHcloud solution
+lastUpdated: 2024-10-18
+---
+
+## Objective
+
+**The purpose of this guide is to explain how to deploy and use the Veeam Managed Backup option within just a few minutes.**
+
+## Requirements
+
+- A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pl/hosted-private-cloud/).
+- A user account with access to vSphere and the permission ["Add resources"](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/) for the pertinent data centre granted from the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- You must be logged in to the managed vSphere web client.
+- [vSphere High Availability (HA)](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-ha-high-availability/) enabled.
+- [Distributed Resource Scheduler (DRS)](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-drs-distributed-ressource-scheduler-new/) enabled.
+-[Windows SPLA Licensing](/guides/account-and-service-management/managing-billing-payments-and-services/facturation-private-cloud#licences-windows/) enabled on the VMware on OVHcloud environment.
+
+## Instructions
+
+Protecting and backing up your VMs is an essential part of ensuring long-term stability for your infrastructure. This is why we offer a managed backup solution based on Veeam Backup & Replication technology. You can use it to restore your data simply, by enabling automatic backup for your VMs.
+
+Backups are performed using a virtual machine (VM) within your [Hosted Private Cloud](https://www.ovhcloud.com/pl/hosted-private-cloud/vmware/veeam-managed-backup/) infrastructure. The backup data is outsourced to an independent storage space at OVHcloud. Backups are performed during night-time, with a retention time depending on the solution level you choose.
+
+### Activating the backup option
+
+The first step is to order the service from the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl). To do this, go to the <code className="action">Hosted Private Cloud</code> section of the <code className="action">Hosted Private Cloud</code> tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the <code className="action">Backup</code> tab.
+
+<img className="thumbnail" alt="Enable backup" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/veeam-managed-controlp_new.png" loading="lazy" />
+
+Choose the appropriate plan and continue by clicking <code className="action">Choose solution</code>.
+
+Validate the contracts by clicking <code className="action">Enable backup</code>.
+
+Once the service is ready, a confirmation email will be sent and the active backup solution will be indicated in the Control Panel.
+
+<img className="thumbnail" alt="Enable backup" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/backuppcc_03_en.png" loading="lazy" />
+
+The service can be used directly from vSphere.
+
+On your vSphere infrastructure, you will see a virtual machine corresponding to the backup server as shown in the screenshot below.
+
+<img className="thumbnail" alt="Backup Server" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/backupserver.png" loading="lazy" />
+
+### Enabling backups for virtual machines
+
+After the service is activated, you will need to complete the backup requests for each virtual machine identified as critical from the vSphere client.
+
+Select the VMware data centre, then the <code className="action">Configure</code> tab and click <code className="action">Backup Management</code> from the OVHcloud section of the menu.
+
+<img className="thumbnail" alt="Backup Management" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/backupvm_01.png" loading="lazy" />
+
+Select the VM for which you want to enable backups from the list. On the right panel, click <code className="action">Enable backup on this VM</code> to start the activation request.
+
+<img className="thumbnail" alt="Enabling Backup" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/backupvm_02.png" loading="lazy" />
+
+In the confirmation window, click <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Backup Confirmation" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/backupvm_03.png" loading="lazy" />
+
+Veeam is informed of this new request and creates the virtual machine backup job. Every night, starting at 10 p.m. (default), a backup task will be scheduled according to the backup scheme defined by the chosen solution.
+
+Every day, an email containing the status of all the performed actions is sent to the OVHcloud account's email address.
+
+:::warning
+Removing a VM from your inventory or disk **does not disable** the backup job for that machine, regardless of the information in the report.
+
+**Warning**: The limit on VMs must be 2 TB in order to enable backup.
+
+For the **Advanced** and **Premium** offerings, *Veeam Managed Backup* region-to-region replication follows the diagrams below.
+
+:::
+
+
+Here is a diagram of the regions from which the regions of `zone 1` are or are not replicated to `zone 2`:
+
+<img className="thumbnail" alt="Veeam Replication Schema" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/veeam_replicated_zones_schema.png" loading="lazy" />
+
+The following table details a mapping of the replicated zones, with additional information:
+
+|  SecNumCloud   | Zone 1 |       Zone 2        |                        Cross-site<br/>replication                         | Offers               | Comments                                                                                                                                                                  |
+|:--------------:|:------:|:-------------------:|:-------------------------------------------------------------------------:|----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|        ❌        | `BHS`  |        `TOR`        |                                    ✅️                                     | Advanced<br/>Premium | - The Canadian regions of Montreal Beauharnois (BHS) and Toronto Cambridge (TOR) are replicated with the Veeam Managed Backup Advanced and Premium offers.                |
+|        ❌        | `ERI`  |        `RBX`        |                                     ❌                                     | Advanced<br/>Premium | - The Great Britain regions of London Erith (ERI) and FR region France Roubaix (RBX) are not replicated with the Veeam Managed Backup Advanced and Premium offers.        |
+|        ❌        | `LIM`  |        `SBG`        |                                     ❌                                     | Advanced<br/>Premium | - The French regions of Germany Limburg (LIM) and FR region of France Strasbourg (SBG) are not replicated with the Veeam Managed Backup Advanced and Premium offers.      |
+|        ❌        | `RBX`  |        `SBG`        |                                    ✅️                                     | Advanced<br/>Premium | - The French regions of Roubaix (RBX) and Strasbourg (SBG) are replicated with the Veeam Managed Backup Advanced and Premium offers.                                      |
+|                |        |                     |                                                                           |                      |                                                                                                                                                                           |
+|       ✅️       | `RBX`  |        `SBG`        |                                    ✅️                                     | Advanced<br/>Premium | - The French regions of Roubaix (RBX) and Strasbourg (SBG) are replicated with the Veeam Managed Backup Advanced and Premium offers.                                      |
+|       ✅️       | `GRA`  |        `RBX`        |                                     ❌                                     | Advanced<br/>Premium | - The French regions of Gravelines (RBX) and Roubaix (RBX) are not replicated with each other with the Veeam Managed Backup Advanced and Premium offers.                  |
+|                |        |                     |                                                                           |                      |                                                                                                                                                                           |
+|        ❌        | `VIN`  |        `HIL`        |                                    ✅️                                     | Advanced<br/>Premium | - The United States regions of Washington DC Vint Hill (VIN) and Seattle Hillsboro Oregon (HIL) are replicated with the Veeam Managed Backup Advanced and Premium offers. |
+
+### Restoring a backup
+
+Select the VMware data centre, then the <code className="action">Configure</code> tab and choose <code className="action">Backup Management</code> from the OVHcloud section of the menu.
+
+From the list, select the VM for which you want to restore a backup (its `Backup state` must be **Enabled**).
+
+<img className="thumbnail" alt="Restoring backup" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/restorebackup_01.png" loading="lazy" />
+
+On the right-hand panel, click <code className="action">Restore Backup</code> to open the restore request.
+
+<img className="thumbnail" alt="Restoring backup" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/restorebackup_02.png" loading="lazy" />
+
+A new window opens to create the restore job. Check the VM name, select the backup date to restore, and choose the datastore (storage space used as the restore target). Click <code className="action">Restore Backup</code> to start the process.
+
+<img className="thumbnail" alt="Initialising Restore" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/restorebackup_03.png" loading="lazy" />
+
+A window then confirms that the Veeam server is notified of this new request and that the virtual machine restore job has been created.
+
+<img className="thumbnail" alt="Validating Restore" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/restorebackup_04.png" loading="lazy" />
+
+The VM is restored next to the source machine.
+
+<img className="thumbnail" alt="Source machine is restored" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/restorebackup_05.png" loading="lazy" />
+
+:::warning
+Note that the restored machine is connected to the network. If you start the VM without turning off the source VM, there may be an IP address conflict.
+
+:::
+
+
+<img className="thumbnail" alt="IP Conflict" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/restorebackup_06.png" loading="lazy" />
+
+To edit these settings, select the data centre in your inventory, click the tab <code className="action">Configure</code>, then choose <code className="action">OVH Backup Management</code>. On this page, you have access to the list of your backup jobs, with the number of backups and the last status of the job.
+
+### Disabling backups for a VM
+
+Select the VMware data centre, then the <code className="action">Configure</code> tab and choose <code className="action">Backup Management</code> from the OVHcloud section of the menu.
+
+Select the VM for which you want to disable backups from the list.
+
+<img className="thumbnail" alt="Machine Disable" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/restorebackup_01.png" loading="lazy" />
+
+On the right-hand panel, click <code className="action">Disable Backup on this VM</code>.
+
+<img className="thumbnail" alt="Disabling Backup" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/restorebackup_02.png" loading="lazy" />
+
+Then confirm the deactivation by clicking <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Deactivation Confirmation" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/disablebackup_03.png" loading="lazy" />
+
+:::warning
+Backups can be reactivated at any time from the moment the VM is present in the infrastructure.
+
+Please note that the backups remain available for recovery only until the retention period expires.
+
+:::
+
+
+:::info
+Follow the same instructions to disable the backup of a deleted VM.
+It is also possible to disable the backup temporarily and reactivate it afterwards.
+
+:::
+
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

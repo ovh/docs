@@ -1,0 +1,433 @@
+---
+title: Migración a Nutanix a través de la herramienta Nutanix Move (EN)
+description: Install, configure and use the Move migration tool
+lastUpdated: 2025-02-10
+---
+
+## Objective
+
+Nutanix provides a tool called **Nutanix Move** that allows migrations from other environments to **AHV**.
+
+**This guide explains how to perform a migration with the Move software.**
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+
+This guide is designed to assist you as much as possible with common tasks. However, we recommend reaching out to the [OVHcloud Professional Services](https://www.ovhcloud.com/es-es/professional-services/) team or a [specialized provider](https://partner.ovhcloud.com/es-es/directory/) if you encounter difficulties or have any doubts about managing, using, or setting up a service on a server.
+
+Some options, such as the use of compression or deduplication, require specific licences provided by Nutanix through OVHcloud. Please contact OVHcloud Sales for more information.
+
+Finally, if the procedure involves a VMware on OVHcloud service, the intervention of [OVHcloud Professional Services](https://www.ovhcloud.com/es-es/professional-services/) is mandatory.
+
+:::
+
+
+## Requirements
+
+- A Nutanix cluster in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es)
+- You must be connected to the cluster via Prism Central
+- A connection to an environment other than Nutanix 
+
+## Nutanix Move Overview
+
+**Nutanix Move** is a tool that allows virtual machine migrations from **VMware ESXI**, **Hyper-V**, **Azure** and **AWS** to **AHV**.
+
+It can also be used to migrate from Nutanix **AHV** to **AWS**.
+
+This software works on a virtual machine whose sources are available on the Nutanix website with a customer account.
+
+For optimal use, we recommend installing **Nutanix Move** as close as possible to the destination.
+
+The **Nutanix Move** software is the only software that communicates between the source and the destination.
+
+:::warning
+It is strongly discouraged to use **Nutanix Move** with virtual machines on a Windows Server running **Active Directory** or **Microsoft Exchange**. It is best to migrate as recommended by Microsoft.
+
+For VMs that use databases in **Microsoft SQL**, it is best to stop the database service when completing a migration.
+
+Ensure that the original virtual machine is compatible with the destination Nutanix environment.
+
+:::
+
+
+## Instructions
+
+We will look at how to migrate between a remote environment on Hyper-V to an OVHcloud Nutanix environment.
+
+The source and the destination are on two interconnected private networks through an **IPSEC VPN**.
+
+### Preparing the original virtual machines before migration
+
+The virtual machine must be in the list of supported virtual machines in the compatibility matrix for the migration to work.
+
+Log in to the site below to verify the compatibility of the source machines with the destination environment on Nutanix:
+
+[Nutanix Accounting Matrix](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/guestos)
+
+#### Specificity of virtual machines on LINUX
+
+Some virtual machines will not start correctly after migration via **Nutanix Move**.<br/>
+Check the compatibility list as it is likely that the SCSI driver is not supported and needs to be changed with the PCI driver.
+<br/>
+In this case, you will need to follow this procedure to [change the disk controller of a Virtual Machine](#changediskcontroller) after the virtual machine is migrated.
+
+#### Specificity of the Microsoft environment
+
+Microsoft does not provide the SCSI adapter and network card **Virtio** drivers. These drivers must be installed prior to a migration. These drivers are available on the Nutanix website with a customer account.
+
+:::info
+Microsoft Windows 2008 is no longer supported by Microsoft or Nutanix. However, you can install older **Virtio** drivers and attempt a migration.
+
+:::
+
+
+Login to the Nutanix website with a customer account to download the VIRTIO drivers.
+
+[VIRTIO driver download link](https://portal.nutanix.com/page/downloads?product=ahv&bit=VirtIO).
+
+Enter your user name in <code className="action">Emails</code>, your password in <code className="action">Password</code> and click <code className="action">Log In</code>.
+
+<img className="thumbnail" alt="Download Virtio01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/DownloadVirtio01.PNG" loading="lazy" />
+
+Click the <code className="action">Download</code> link that suits you.
+
+For our example, we will download the driver for **amd64**.
+
+<img className="thumbnail" alt="Download Virtio02 " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/DownloadVirtio02.PNG" loading="lazy" />
+
+From a Windows virtual machine in the Hyper-V environment, double-click <code className="action">Nutanix-VirtIO-1.1.7-amd64</code>.
+
+<img className="thumbnail" alt="Installing guest driver 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/VirtioGuestInstall01.PNG" loading="lazy" />
+
+Read the licence terms and conditions, accept them by ticking the box and then click <code className="action">Install</code>.
+
+<img className="thumbnail" alt="Installing guest driver 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/VirtioGuestInstall02.PNG" loading="lazy" />
+
+Click <code className="action">Finish</code> to complete the installation without having to restart the virtual machine.
+
+<img className="thumbnail" alt="Installing guest driver 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/VirtioGuestInstall03.PNG" loading="lazy" />
+
+### Installing Move on the Nutanix Cluster.
+
+#### Downloading and importing sources. 
+
+Retrieve the file in **qcow2** format from this site: [Download link for Nutanix Move](https://portal.nutanix.com/page/downloads?product=move).
+
+Sign in with an account registered with Nutanix.
+
+<img className="thumbnail" alt="Portal login" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/PortalLogin.PNG" loading="lazy" />
+
+Click <code className="action">Download</code> to the right of `Move QCOW2 file for AHV`.
+
+<img className="thumbnail" alt="Download Move" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/DownloadMove.PNG" loading="lazy" />
+
+Import the downloaded image from **Nutanix Move** into the cluster. For more information on importing images, see our guide on [importing images](/guides/hosted-private-cloud/nutanix-on-ovhcloud/05-image-import/).
+
+#### Installing the **Move** virtual machine
+
+Create a virtual machine from the Move image.
+
+From **Prism Central**, open the main menu by clicking on the button in the top left-hand corner.
+
+<img className="thumbnail" alt="Move Install 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall01.PNG" loading="lazy" />
+
+Click <code className="action">VMs</code> in the menu.
+
+<img className="thumbnail" alt="Move Install 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall02.PNG" loading="lazy" />
+
+Click <code className="action">Create VM</code>.
+
+<img className="thumbnail" alt="Move Install 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall03.PNG" loading="lazy" />
+
+Type **Nutanix Move** in the `Name` field.
+
+Choose the **2 vCPU**, **2 Cores** and **8 GB** options in the `VM Properties` fields and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Move Install 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall04.PNG" loading="lazy" />
+
+Click <code className="action">Attach Disk</code>.
+
+<img className="thumbnail" alt="Move Install 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall05.PNG" loading="lazy" />
+
+Choose the **Disk**, **Clone from Image** and **move-4.3.0.qcow2** options and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Move Install 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall06.PNG" loading="lazy" />
+
+Click on <code className="action">Attach to Subnet</code>.
+
+<img className="thumbnail" alt="Move Install 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall07.PNG" loading="lazy" />
+
+Choose the network in `Subnet`, make sure it is connected in `Network Connection State`, and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Move Install 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall08.PNG" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Move Install 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall09.PNG" loading="lazy" />
+
+Leave the default time zone options and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Move Install 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall10.PNG" loading="lazy" />
+
+Click <code className="action">Create VM</code> to complete the installation of the **Nutanix Move** virtual machine.
+
+<img className="thumbnail" alt="Move Install 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall11.PNG" loading="lazy" />
+
+Select the **Nutanix Move** virtual machine and click the <code className="action">Actions</code> menu.
+
+<img className="thumbnail" alt="Move Install 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall12.PNG" loading="lazy" />
+
+Click <code className="action">Power On</code> in the <code className="action">Actions</code> menu to start the virtual machine.
+
+<img className="thumbnail" alt="Move Install 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall13.PNG" loading="lazy" />
+
+The virtual machine is started and an IP address is obtained if a **DHCP** server is operational on that network.
+
+<img className="thumbnail" alt="Move Install 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveInstall14.PNG" loading="lazy" />
+
+This installation of **Nutanix Move** is done on a network that has a DHCP server, but it is possible to configure the virtual machine on a network without a **DHCP server**. 
+
+For more information about **Nutanix Move**, see the [Go further](#gofurther) section of this guide.
+
+### Configuring **Nutanix Move** 
+
+#### Logging in to the web interface and creating environments for migration
+
+Connect to the IP address of the **Nutanix Move** virtual machine through a web browser in HTTPS, as follows: `https://IPaddressNutanixMove/`.
+
+Read the licence conditions, accept them and click <code className="action">Continue</code>.
+
+<img className="thumbnail" alt="MoveConfigure 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure01.PNG" loading="lazy" />
+
+Click <code className="action">OK</code> to continue.
+
+<img className="thumbnail" alt="MoveConfigure 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure02.PNG" loading="lazy" />
+
+Select and confirm a password in the fields provided, then click <code className="action">Set Password</code> to validate the creation of the Nutanix Move password.
+
+<img className="thumbnail" alt="MoveConfigure 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure03.PNG" loading="lazy" />
+
+Type the password in <code className="action">Password</code> and click <code className="action">Log In</code> to log into the **Nutanix Move** web interface.
+
+<img className="thumbnail" alt="MoveConfigure 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure04.PNG" loading="lazy" />
+
+Click <code className="action">+ Add Environment</code>.
+
+<img className="thumbnail" alt="MoveConfigure 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure05.PNG" loading="lazy" />
+
+Choose <code className="action">Nutanix AOS</code>.
+
+<img className="thumbnail" alt="MoveConfigure 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure06.PNG" loading="lazy" />
+
+Enter the following information:
+
+- **PRISM-CENTRAL-DESTINATION** in the `Environment Name` field 
+- the private IP address of **Prism Central** in the `Nutanix Environment` field 
+- a **Prism Central** administration account in the `Username` field
+- the account password in the <code className="action">Password</code> field 
+
+Click <code className="action">ADD</code> to add the **Prism Central** environment. 
+
+<img className="thumbnail" alt="MoveConfigure 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure07.PNG" loading="lazy" />
+
+Click <code className="action">Add Environment</code>.
+
+<img className="thumbnail" alt="MoveConfigure 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure08.PNG" loading="lazy" />
+
+Choose <code className="action">Microsoft Hyper-V</code>.
+
+<img className="thumbnail" alt="MoveConfigure 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure09.PNG" loading="lazy" />
+
+Enter the following information:
+
+- **HyperV-SOURCE** in the `Environment Name` field
+- the private IP address of the **Hyper-V** server in the `Hyper-V Server/Cluster` field
+- a **Hyper-V** administration account in the `Username` field
+- the password for this account in the `Password` field
+
+Click <code className="action">ADD</code> to add the **Hyper-V** environment. 
+
+<img className="thumbnail" alt="MoveConfigure 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure10.PNG" loading="lazy" />
+
+Both migration environments appear in the top left-hand corner.
+
+<img className="thumbnail" alt="MoveConfigure 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/MoveConfigure11.PNG" loading="lazy" />
+
+#### Creating a migration plan
+
+We will create a migration plan from the two environments created previously.
+
+The source will be the **Hyper-V** server, and the destination will be the **Nutanix** cluster.
+
+Click <code className="action">Create a Migration Plan</code>.
+
+<img className="thumbnail" alt="CreateMigrationPLan 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan01.PNG" loading="lazy" />
+
+Choose a name in the `Plan Name` field and click <code className="action">Proceed</code>.
+
+<img className="thumbnail" alt="CreateMigrationPLan 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan02.PNG" loading="lazy" />
+
+Enter the following information:
+
+- **HyperV-SOURCE** in the `Select a Source` field
+- **PRISM-CENTRAL-DESTINATION** in the `Hyper-V Server/Cluster` field
+- the CLUSTER name in the `Target Cluster` field
+- the name of the destination container in the `Target Container` field
+
+Then click <code className="action">Next</code> to continue to the next step.
+
+<img className="thumbnail" alt="CreateMigrationPLan 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan03.PNG" loading="lazy" />
+
+Select the virtual machines you want to migrate from the **Hyper-V** environment to **AOS** by clicking on the <code className="action">+</code> icon to the left of the VM.<br/>
+Click <code className="action">Next</code> to continue creating the migration plan.
+
+<img className="thumbnail" alt="CreateMigrationPLan 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan04.PNG" loading="lazy" />
+
+Choose the network in `Target Network` and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="CreateMigrationPLan 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan05.PNG" loading="lazy" />
+
+Click <code className="action">Next</code> to confirm the migration.
+
+<img className="thumbnail" alt="CreateMigrationPLan 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan06.PNG" loading="lazy" />
+
+Click <code className="action">Save</code> to save the migration plan without running it.
+
+<img className="thumbnail" alt="CreateMigrationPLan 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan07.PNG" loading="lazy" />
+
+#### Launching the migration
+
+After the migration plan is created, you can manually launch it.
+
+Check the box next to the desired migration plan.
+
+<img className="thumbnail" alt="CreateMigrationPLan 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan08.PNG" loading="lazy" />
+
+On the `Actions` menu, click <code className="action">Start</code>.
+
+<img className="thumbnail" alt="CreateMigrationPLan 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan09.PNG" loading="lazy" />
+
+The migration is in progress. The `Status` column gives you information on the status of the migration.
+
+<img className="thumbnail" alt="CreateMigrationPLan 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CreateMigrationPlan10.PNG" loading="lazy" />
+
+#### Finalising the migration
+
+Check the status of the migration by hovering over the `In Progress` status.<br/>
+A window with the information **Ready to Cutover N** should appear, listing the number of VMs that can be migrated.
+
+Click <code className="action">In Progress</code> to start the completion process.
+
+<img className="thumbnail" alt="Cut Over 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CutOver01.PNG" loading="lazy" />
+
+Select all the VMs by ticking the <code className="action">VM Name</code> box and click <code className="action">Cutover</code>.
+
+<img className="thumbnail" alt="Cut Over 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CutOver02.PNG" loading="lazy" />
+
+Click <code className="action">Continue</code>. 
+
+<img className="thumbnail" alt="Cut Over 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CutOver03.PNG" loading="lazy" />
+
+Wait a few moments while it completes.
+
+<img className="thumbnail" alt="Cut Over 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CutOver04.PNG" loading="lazy" />
+
+The migration is complete when **Completed** appears in the `Migration Status` column.
+
+<img className="thumbnail" alt="Cut Over 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CutOver05.PNG" loading="lazy" />
+
+Log into **Prism Central** to view the 3 migrated VMs that are present and running.
+
+<img className="thumbnail" alt="Cut Over 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/CutOver06.PNG" loading="lazy" />
+
+#### Changing the Disk Controller on a Linux Virtual Machine <a name="changediskcontroller"></a>
+
+If the virtual machine does not start properly after the migration, it may be due to a bad disk controller in the virtual machine configuration. In this case, it should be changed by following this procedure: 
+
+Go to the main menu of **Prism Central** and click on <code className="action">VMs</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController01.PNG" loading="lazy" />
+
+Make sure the virtual machine is turned off.
+
+<img className="thumbnail" alt="Change Disk Controller 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController02.PNG" loading="lazy" />
+
+Return to the main menu and click <code className="action">Images</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController03.PNG" loading="lazy" />
+
+Click <code className="action">Add Image</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController04.PNG" loading="lazy" />
+
+Select **VM Disk** as the `Image Source`. Type a name in <code className="action">Search by VM Name</code> and click <code className="action">+</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController05.PNG" loading="lazy" />
+
+Type a name in the `Image Name` field and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController06.PNG" loading="lazy" />
+
+Select <code className="action">Place image on source VM's cluster</code> and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController07.PNG" loading="lazy" />
+
+The image created from the virtual machine appears after a few moments.
+
+<img className="thumbnail" alt="Change Disk Controller 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController08.PNG" loading="lazy" />
+
+Open the main menu and click <code className="action">VMs</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController09.PNG" loading="lazy" />
+
+Check the box to the left of the virtual machine.
+
+<img className="thumbnail" alt="Change Disk Controller 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController10.PNG" loading="lazy" />
+
+Open the <code className="action">Actions</code> menu and choose <code className="action">Update</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController11.PNG" loading="lazy" />
+
+Click on the <code className="action">trash can</code> icon next to the CDROM drive.
+
+<img className="thumbnail" alt="Change Disk Controller 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController12.PNG" loading="lazy" />
+
+Click on the <code className="action">trash can</code> icon next to the disk drive.
+
+<img className="thumbnail" alt="Change Disk Controller 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController13.PNG" loading="lazy" />
+
+Click <code className="action">Attach Disk</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController14.PNG" loading="lazy" />
+
+Select:
+
+- **Disk** In `Type`;
+- Select **Clone from image**;
+- Enter the **name of the image created** in `Image`; 
+- Select PCI as the <code className="action">Bus type</code> and click <code className="action">Save</code>
+
+<img className="thumbnail" alt="Change Disk Controller 15" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController15.PNG" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 16" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController16.PNG" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 17" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController17.PNG" loading="lazy" />
+
+Click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Change Disk Controller 18" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/32-move-to-nutanix/ChangeVMDiskController18.PNG" loading="lazy" />
+
+The disk controller has been modified and the virtual machine boots properly.
+
+## Go further <a name="gofurther"></a>
+
+[Installation and configuration of Move](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Move-v4_3:Nutanix-Move-v4_3)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

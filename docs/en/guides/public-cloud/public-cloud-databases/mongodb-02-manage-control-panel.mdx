@@ -1,0 +1,121 @@
+---
+title: Configure incoming connections of a Public Cloud Databases for MongoDB service
+description: Find out how to configure your MongoDB instance to accept incoming connections
+lastUpdated: 2025-10-08
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
+
+**This guide explains how to configure your MongoDB instance to accept incoming connections.**
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/guides/public-cloud/public-cloud-databases/databases-01-order-control-panel/) can help you to meet this requirement)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Configure your MongoDB instance to accept incoming connections
+
+Before making a connection, we need to verify that our MongoDB instance is correctly configured.
+
+Click on <code className="action">Databases</code> in the left-hand navigation bar and select your MongoDB instance.
+
+#### Step 1: Verify your user roles and password
+
+Select the <code className="action">Users</code> tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
+
+We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/) to select the right roles for your use case.
+
+In our example, we will create a new user called `foo` with the role `userAdmin` on the `bar` database and the role `readWriteAnyDatabase` on any database as its name implies:
+
+<img className="thumbnail" alt="User Creation" src="/images/public-cloud/public-cloud-databases/mongodb-02-manage-control-panel/mongodb_02_manage_control_panel-add_user.png" loading="lazy" />
+
+After a few seconds the user is ready with the "Enabled" status, you can then reset and note its password.
+
+<img className="thumbnail" alt="User ready" src="/images/public-cloud/public-cloud-databases/mongodb-02-manage-control-panel/mongodb_02_manage_control_panel-reset_password.png" loading="lazy" />
+
+#### Step 2: Authorise incoming connections from the MongoDB client
+
+In this step, select the <code className="action">Authorised IP's</code> tab (Access Control List).
+By default, a Public Cloud Database does not accept any form of connection from the outside world.
+This way we can help prevent intrusive connection attempts.
+
+Click to authorise a new IP. In our case we will enter 109.190.200.59:
+
+<img className="thumbnail" alt="Add an IP" src="/images/public-cloud/public-cloud-databases/mongodb-02-manage-control-panel/mongodb_02_manage_control_panel-add_ip.png" loading="lazy" />
+
+:::info
+If you want to allow any connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully. Every IP will be authorised.
+
+:::
+
+
+### Get your connection information (URI)
+
+Select the <code className="action">Dashboard</code> tab. In the **Connection Information** section, copy the Service URI.
+
+You can specify the MongoDB connection string using either:
+
+- *Service -> mongoDB* for the Standard Connection String format **(soon deprecated)**.
+- *Service -> mongodbSrv* for the DNS Seed List Connection String format.
+
+<img className="thumbnail" alt="MongoDB General Information" src="/images/public-cloud/public-cloud-databases/mongodb-02-manage-control-panel/mongodb_02_manage_control_panel-copy_uri.png" loading="lazy" />
+
+:::info
+MongoDB 3.6 introduced the concept of a seed list that is specified using DNS records, specifically SRV and TXT records. This allows a client to connect to a replica set even if one of the nodes that the client specifies is unavailable.
+
+The use of SRV records eliminates the requirement for every client to pass in a complete set of state information for the cluster. Instead, a single SRV record identifies all the nodes associated with the cluster (and their port numbers) and an associated TXT record defines the options for the URI.
+
+*Learn more [here](https://www.mongodb.com/docs/manual/reference/connection-string/)*.
+
+:::
+
+
+<Tabs>
+  <Tab label="mongodb">
+    It should be similar to this when you have a single node:
+    ```
+    mongodb://<username>:<password>@<hostname>/admin?tls=true
+    ```
+    And like this when you have a MongoDB cluster with multiple nodes, called a replica set:
+    ```
+    mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
+    ```
+  </Tab>
+  <Tab label="mongodbSrv">
+    It should be similar to this:
+    ```
+    mongodb+srv://<username>:<password>@<hostname>/admin?replicaSet=replicaset&tls=true
+    ```
+  </Tab>
+</Tabs>
+
+
+## Go further
+
+[MongoDB capabilities](/guides/public-cloud/public-cloud-databases/mongodb-01-concept-capabilities/)
+
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
+
+Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

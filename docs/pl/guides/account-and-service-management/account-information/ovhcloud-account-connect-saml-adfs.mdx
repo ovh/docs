@@ -1,0 +1,237 @@
+---
+title: Włącz połączenia Active Directory Federation Services (AD FS) SSO z Twoim kontem OVHcloud
+description: Dowiedz się, jak powiązać usługę Active Directory Federation Services (AD FS) z Twoim kontem OVHcloud przez SAML 2.0
+lastUpdated: 2025-05-15
+---
+
+## Wprowadzenie
+
+Do zalogowania się do konta OVHcloud możesz użyć **unikalnego** uwierzytelnienia SSO (*Single Sign-On*). Aby włączyć te połączenia, Twoje konto oraz usługi AD FS (*Active Directory Federation Services*) muszą być skonfigurowane za pomocą uwierzytelniania SAML (*Security Assertion Markup Language*).
+
+**Niniejszy przewodnik wyjaśnia, jak powiązać Twoje konto OVHcloud z zewnętrzną Active Directory.**
+
+## Wymagania początkowe
+
+- Usługi AD FS (Active Directory Federation Services) muszą być wykonywane na serwerze
+- Posiadanie [konta OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+
+{/* CP-NAV-START:iam-saml-sso */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SAML SSO](https://manager.eu.ovhcloud.com/#/iam/identities/sso)
+- **Ścieżka nawigacji:** <code className="action">Tożsamość, bezpieczeństwo i operacje</code> > <code className="action">Users</code> > <code className="action">SSO connection</code>
+
+---
+{/* CP-NAV-END:iam-saml-sso */}
+
+## W praktyce
+
+:::info
+Aby usługodawca (tzn. Twoje konto OVHcloud) mógł nawiązać połączenie SSO z dostawcą tożsamości (tzn. usługą AD FS), należy przede wszystkim nawiązać relację zaufania.
+
+:::
+
+
+### Budowa zaufania AD FS
+
+Twój AD FS działa jako dostawca tożsamości. Zlecenia uwierzytelnienia Twojego konta OVHcloud zostaną przyjęte tylko wtedy, gdy zostanie ono uznane za zaufaną organizację trzecią.
+
+W kontekście Active Directory oznacza to, że należy go dodać jako `Relying Party Trust`.
+
+W menedżerze serwerów otwórz menu <code className="action">Tools</code> i wybierz <code className="action">AD FS Management</code>.
+
+<img className="thumbnail" alt="Menu Narzędzia Windows Server" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/windows_server_tools_menu.png" loading="lazy" />
+
+Kliknij <code className="action">Relying Party Trusts</code>.
+
+<img className="thumbnail" alt="AD FS Menu" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_menu.png" loading="lazy" />
+
+Następnie kliknij <code className="action">Add Relying Party Trust...</code>.
+
+<img className="thumbnail" alt="Menu zatwierdzeń AD FS" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts_menu.png" loading="lazy" />
+
+Wybierz <code className="action">Claims aware</code> i zatwierdź przyciskiem <code className="action">Start</code>.
+
+<img className="thumbnail" alt="AD FS dodanie zatwierdzenia - etap 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_add_relying_party_trust_1.png" loading="lazy" />
+
+Możesz wprowadzić ręcznie informacje dotyczące zaufanego podmiotu trzeciego lub zaimportować je z pliku metadanych.
+
+#### Importuj metadane OVHcloud SP
+
+Możesz uzyskać odpowiedni plik metadanych za pomocą następujących linków:
+
+- [Metadane regionu UE](https://www.ovh.com/auth/sso/saml/sp/metadata.xml)
+- [Metadane regionu CA](https://ca.ovh.com/auth/sso/saml/sp/metadata.xml)
+
+Wybierz <code className="action">Import data about the relying party from a file</code> i wybierz Twój plik metadanych.
+
+Następnie kliknij przycisk <code className="action">Next</code>.
+
+<img className="thumbnail" alt="AD FS - dodanie zatwierdzenia - etap 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_add_relying_party_trust_2.png" loading="lazy" />
+
+Wprowadź nazwę wyświetlacza dla zaufanej strony trzeciej i kliknij przycisk <code className="action">Next</code>.
+
+<img className="thumbnail" alt="AD FS - dodanie zatwierdzenia - etap 3" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_add_relying_party_trust_3.png" loading="lazy" />
+
+Kliknij <code className="action">Next</code> w oknie kontroli dostępu.
+
+<img className="thumbnail" alt="AD FS - dodanie zatwierdzenia - etap 4" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_add_relying_party_trust_4.png" loading="lazy" />
+
+Kliknij <code className="action">Next</code>, aby kontynuować.
+
+<img className="thumbnail" alt="AD FS - dodanie zatwierdzenia - etap 5" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_add_relying_party_trust_5.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">Close</code> w ostatnim oknie. Zatwierdzenie przez OVHcloud jako zaufaną organizację trzecią zostało dodane do Twojego AD FS.
+
+<img className="thumbnail" alt="Zatwierdzenia AD FS" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts.png" loading="lazy" />
+
+:::info
+Z OVHcloud dodanym jako zaufany podmiot zewnętrzny, powinieneś już mieć możliwość logowania się przez SSO. Jednak wszystkie informacje dotyczące tożsamości użytkownika (w zakresie "twierdzenia" SAML) pozostaną niedostępne do czasu skonfigurowania strategii dopasowania pól LDAP Active Directory do atrybutów SAML.
+
+:::
+
+
+#### Korespondencja atrybutów LDAP z atrybutami SAML
+
+Kliknij pozycję OVHcloud w części "Relying Party Trusts".
+
+<img className="thumbnail" alt="Mapa zatwierdzenia AD FS etap 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts_mapping_1.png" loading="lazy" />
+
+Następnie kliknij <code className="action">Edit Claim Issuance Policy...</code>.
+
+<img className="thumbnail" alt="Mapa zatwierdzenia AD FS etap 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts_mapping_2.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">Add Rule...</code>.
+
+<img className="thumbnail" alt="Mapa zatwierdzenia AD FS etap 3" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts_mapping_3.png" loading="lazy" />
+
+Kliknij <code className="action">Next</code>.
+
+Wpisz nazwę reguły i zdefiniuj tabelę korelacji.
+
+Wybierz `Active Directory` jako `Attribute store`.
+
+:::info
+Poniższe parametry mogą być dowolnie skonfigurowane tak, aby dostawca usług mógł poprawnie odczytać dane LDAP Active Directory. Jako przykład możesz wykorzystać poniższy obraz.
+
+:::
+
+
+Po zakończeniu kliknij przycisk <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="Mapa zatwierdzenia AD FS etap 4" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts_mapping_4.png" loading="lazy" />
+
+<img className="thumbnail" alt="Mapa zatwierdzenia AD FS etap 5" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts_mapping_5.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">Apply</code> i zatwierdź <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Mapa zatwierdzenia etapu 6" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts_mapping_6.png" loading="lazy" />
+
+Po utworzeniu tabeli korelacji Twoja usługa AD FS stała się zaufana OVHcloud jako dostawca usług. Kolejnym krokiem jest sprawdzenie, czy konto OVHcloud zaufa użytkownikowi AD FS.
+
+### Budowa zaufania do konta OVHcloud i konfiguracja połączenia
+
+Opcja dodawania AD FS jako zaufanego dostawcy danych jest dostępna w [panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), w którym możesz dostarczyć metadane dostawcy tożsamości.
+
+Otwórz stronę [SAML SSO](https://manager.eu.ovhcloud.com/#/iam/identities/sso).
+
+W sekcji <code className="action">SSO connection</code> wpisz metadane XML Twojej usługi AD FS. W tym przypadku pole `Nazwa atrybutu grupy` jest opcjonalne. Kliknij na <code className="action">Zatwierdź</code>.
+
+Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status „aktywny” dla użytkowników OVHcloud`.
+
+<img className="thumbnail" alt="Etap 2 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_management_connect_sso_2.png" loading="lazy" />
+
+Odszukaj AD FS jako dostawcę danych, a także grupy domyślne.
+
+<img className="thumbnail" alt="Etap 3 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_management_connect_sso_3.png" loading="lazy" />
+
+Aby uzyskać więcej informacji, kliknij link pod `URL usługi SSO`.
+
+<img className="thumbnail" alt="Etap 4 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_management_connect_sso_4.png" loading="lazy" />
+
+<img className="thumbnail" alt="Etap 5 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_management_connect_sso_5.png" loading="lazy" />
+
+Przycisk <code className="action">...</code> pozwala na aktualizację lub usunięcie certyfikatu SSO i na zapoznanie się z jego szczegółami.
+
+<img className="thumbnail" alt="Etap 6 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_management_connect_sso_6.png" loading="lazy" />
+
+Usługa AD FS jest obecnie uważana za zaufanego dostawcę tożsamości. Jednocześnie należy dodać grupy do konta OVHcloud.
+
+:::warning
+Jeśli spróbujesz zalogować się przez SSO, prawdopodobnie wyświetli się komunikat błędu `Not in valid groups`.
+
+Twoje konto OVHcloud sprawdza, czy użytkownik loguje się do grupy istniejącej na koncie.
+
+:::
+
+
+Aby to zrobić, sprawdź informacje zebrane w atrybucie "Group" zwróconym przez usługę AD FS.
+
+Weźmy na przykład użytkownika "John Doe" z Active Directory, jak pokazano na poniższym obrazku.
+
+<img className="thumbnail" alt="Użytkownik AD FS" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_user.png" loading="lazy" />
+
+Sprawdź tabelę korelacji w AD FS:
+
+<img className="thumbnail" alt="Mapowanie zatwierdzenia części zaufania AD FS" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/adfs_relying_party_trusts_mapping_4.png" loading="lazy" />
+
+W tym przykładzie atrybut "Group" zwrócony przez Active Directory dla użytkownika "John Doe" jest "title". Odpowiada to "job title", który jest `manager@<my-domain>.com`.
+
+Możesz również sprawdzić w twierdzeniu SAML:
+
+```xml
+<AttributeStatement>
+    <Attribute Name="http://schemas.xmlsoap.org/claims/Group">
+        <AttributeValue>manager@<my-domain>.com</AttributeValue>
+    </Attribute>
+    ...
+</AttributeStatement>
+```
+
+Oznacza to, że należy dodać grupę `manager@<my-domain>.com` do Twojego konta OVHcloud i przypisać do niego określoną rolę. W przeciwnym razie Twoje konto OVHcloud nie wie, co może robić użytkownik.
+
+Aby dodać tę grupę, przejdź do sekcji <code className="action">Tożsamości</code> a następnie do zakładki <code className="action">Grupy użytkowników</code>. Następnie kliknij przycisk <code className="action">Zadeklaruj grupę</code>, wpisz nazwę grupy i wybierz przypisaną rola:
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami AD FS" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_management_groups_1.png" loading="lazy" />
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami AD FS" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_management_groups_2.png" loading="lazy" />
+
+Następnie możesz sprawdzić, czy grupa została dodana do Twojego konta OVHcloud w sekcji `Grupy`:
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami AD FS" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_management_groups_3.png" loading="lazy" />
+
+Po zalogowaniu się z użytkownikiem Active Directory "John Doe" Twoje konto OVHcloud potwierdzi rolę "REGULAR" określoną przez jego grupę.
+
+Uwaga: jeśli nadasz tej grupie rola `Brak`, konieczne będzie przypisanie uprawnień za pośrednictwem [zasad IAM](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+Następnie będziesz mógł wylogować się ze swojego konta i ponownie zalogować się z AD FS jako dostawcą danych.
+
+### Logowanie przez SSO
+
+Na [stronie logowania OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) wpisz [identyfikator](/guides/account-and-service-management/account-information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta/), po którym następuje **/idp** bez hasła i kliknij przycisk <code className="action">Login</code>.
+
+<img className="thumbnail" alt="Połączenie z federacją OVHcloud" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_federation_login_1.png" loading="lazy" />
+
+Zostaniesz przekierowany na stronę logowania AD FS. Wprowadź login/hasło użytkownika Active Directory LDAP, następnie kliknij przycisk <code className="action">Sign in</code>.
+
+<img className="thumbnail" alt="OVHcloud Federacja Logiczna Przekierowania AD FS" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_federation_login_2.png" loading="lazy" />
+
+Teraz jesteś zalogowany tym samym identyfikatorem klienta, ale za pomocą użytkownika Active Directory oraz SSO AD FS.
+
+<img className="thumbnail" alt="Federacja Informacji o Użytkownikach OVHcloud" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/ovhcloud_user_infos_federation.png" loading="lazy" />
+
+## Sprawdź również
+
+[Załóż konto OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+
+[Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/guides/account-and-service-management/account-information/all-about-username/)
+
+[Definicja i zarządzanie hasłem do konta](/guides/account-and-service-management/account-information/manage-ovh-password/)
+
+[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/guides/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/)
+
+[Jak korzystać z polityki IAM w Panelu klienta](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

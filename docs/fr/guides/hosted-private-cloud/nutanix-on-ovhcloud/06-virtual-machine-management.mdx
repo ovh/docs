@@ -1,0 +1,290 @@
+---
+title: Gestion des machines virtuelles
+description: Découvrez la gestion des machines virtuelles dans Prism Central
+lastUpdated: 2022-05-10
+---
+
+## Objectif
+
+Découvrez comment gérer des machines virtuelles dans un cluster Nutanix et comment créer et migrer une machine virtuelle.
+
+:::warning
+OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+
+Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+
+Certains logiciels nécessitent une licence comme les produits Microsoft il faudra alors s'assurer que tous les systèmes et logiciels installés possèdent ces licences.
+
+:::
+
+
+## Prérequis
+
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à Prism Central sur le cluster
+
+## Présentation de la gestion des machines virtuelles dans Prism Central
+
+Le système Nutanix utilise les mêmes interfaces pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (**Hyper-V, VMware ESXi , AHV**). **AHV** est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
+
+L'offre d'OVHcloud est fournie avec l'hyperviseur **AHV**.
+
+**AHV** permet entre autres :
+
+- L'utilisation de machines virtuelles sous Windows et Linux.
+- La migration de machines virtuelles d'un nœud à l'autre d'un cluster.
+- La micro-segmentation et la sécurisation du réseau entre machines virtuelles en utilisant le logiciel **Flow**. 
+
+L'outil **Move** permet de migrer facilement des machines virtuelles existantes sur d'autres environnements (**ESXi, Hyper-V & AWS**) vers Nutanix et son hyperviseur **AHV**.
+
+Pour plus de détails sur **AHV**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+
+## En pratique
+
+Les cas pratiques ci-dessous montrent la création d'une machine virtuelle sous Windows Server 2022 et de la migration d'un machine virtuelle.
+
+### Création d'une Ordinateur virtuel pour un système d'exploitation Windows 2022
+
+L'installation d'une machine virtuelle sous Windows Server 2022 nécessite un paramétrage particulier car Microsoft ne fournit pas le pilote pour le contrôleur de disques de l'hyperviseur **AHV**.
+
+#### Création d'une machine virtuelle Windows Server 2022
+ 
+Dans le menu de gauche de **Prism Central**, dépliez <code className="action">Compute & Storage</code> et cliquez sur <code className="action">VMs</code>
+
+<img className="thumbnail" alt="Tableau de Bord Prism Central - Menu VMs" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/PrismCentralDashBooardWithVMMenu.PNG" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Create VM</code>.
+
+<img className="thumbnail" alt="Tableau de Bord Prism Central - Gestion des VMs " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/PrismCentralDashVmDashBoard.PNG" loading="lazy" />
+
+Saisissez un nom dans <code className="action">Name</code>, choisissez les options dans <code className="action">VM Properties</code> et cliquez sur <code className="action">Next</code>
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 1" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM01.PNG" loading="lazy" />
+
+##### **Ajout d'un disque système**
+
+Cliquez sur le bouton<code className="action">Attach Disk</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 2" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM02.PNG" loading="lazy" />
+
+Saisissez **60** dans le champ `capacity` et cliquez sur <code className="action">Save</code> pour créer un disque de 60 Go.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 3" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM03.PNG" loading="lazy" />
+
+##### **Ajout de l'image ISO de l'installation de Windows Server 2022**
+
+L'image doit être importée avant d'être utilisable dans une nouvelle machine virtuelle.
+
+Pour plus de détails sur l'importation d'images, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+
+Cliquez sur <code className="action">Attach Disk</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 4" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM04.PNG" loading="lazy" />
+
+Modifiez les paramètres <code className="action">Type</code> en **CD-ROM**, <code className="action">Operation</code> en **Clone from Image** , <code className="action">Image</code> en **WS2022EN.ISO**.
+
+Cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 5" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM05.PNG" loading="lazy" />
+
+##### **Ajout de l'image ISO contenant les pilotes spécifiques à AHV** 
+
+Cette image contient notamment le pilote du contrôleur de disques et doit aussi être importée. Elle est disponible sur le site Internet de Nutanix si vous disposez d'un compte client Nutanix.
+
+Cliquez sur <code className="action">Attach Disk</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 6" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM06.PNG" loading="lazy" />
+
+Modifiez les paramètres <code className="action">Type</code> en **CD-ROM**, <code className="action">Operation</code> en **Clone from Image**, <code className="action">Image</code> en **Nutanix-VirtIO-1.1.7.iso**.
+
+Cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 7" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM07.PNG" loading="lazy" />
+
+##### **Configuration du réseau**
+
+Cliquez sur <code className="action">Attach Subnet</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 8" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM08.PNG" loading="lazy" />
+
+Laissez les champs par défaut et cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 9" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM09.PNG" loading="lazy" />
+
+Cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM10.PNG" loading="lazy" />
+
+Choisissez le fuseau horaire de votre pays dans le champ <code className="action">Timezone</code> et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM11.PNG" loading="lazy" />
+
+Cliquez sur <code className="action">Create VM</code>.
+
+<img className="thumbnail" alt="Création d'une machine virtuelle - Etape 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM12.PNG" loading="lazy" />
+
+La machine virtuelle nouvellement créée apparaît alors dans le tableau de bord.
+
+<img className="thumbnail" alt="Tableau de bord VMs - VM Créé" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/CreateVM13.PNG" loading="lazy" />.
+ 
+#### Installation de Windows Server 2022
+
+Sélectionnez la machine virtuelle sur laquelle vous souhaitez installer Windows Server 2022, en cochant la case située à gauche de la VM
+
+<img className="thumbnail" alt="Installation - WS2022 - Lancement" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-01.PNG" loading="lazy" />
+
+##### **Démarrer la machine virtuelle**
+
+Cliquez sur le menu <code className="action">Actions</code> puis sur <code className="action">Power ON</code>.
+
+<img className="thumbnail" alt="Installation - WS2022 - Démarrage " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-02.PNG" loading="lazy" />
+
+##### **Lancer la console**
+
+Cliquez sur le menu <code className="action">Actions</code> puis sur <code className="action">Launch Console</code>.
+
+<img className="thumbnail" alt="Installation - WS2022 - Connexion à l'interface " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-03.PNG" loading="lazy" />
+
+##### **Commencer l'installation**
+
+Choisissez vos paramètres régionaux et cliquez sur <code className="action">Next</code>
+
+<img className="thumbnail" alt="Installation - WS2022 - Etape1" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-04.PNG" loading="lazy" />
+
+Cliquez sur <code className="action">Install now</code>.
+
+<img className="thumbnail" alt="Installation - WS2022 - Etape2" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-05.PNG" loading="lazy" />
+
+Sélectionnez **Windows Server 2022 Standard (Desktop Experience)** et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installation - WS2022- Etape3" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-06.PNG" loading="lazy" />
+
+Prenez connaissance des termes et conditions liés à la licence logicielle Microsoft, validez leur acceptation et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installation - WS2022" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-07.PNG" loading="lazy" />
+
+Cliquez sur <code className="action">Custom: Install Microsoft Server Operating System only (advanced)</code>.
+
+<img className="thumbnail" alt="Installation - WS2022" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-08.PNG" loading="lazy" />
+
+Cliquez sur <code className="action">Load driver</code>.
+
+<img className="thumbnail" alt="Installation - WS2022- Etape4" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-09.PNG" loading="lazy" />
+
+Cliquez sur <code className="action">Browse</code>.
+
+<img className="thumbnail" alt="Installation - WS2022- Etape5" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-10.PNG" loading="lazy" />
+
+Sélectionnez le bon dossier `e:\Windows Server 2022\amd64` et cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Installation - WS2022- Etape5" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-11.PNG" loading="lazy" />
+
+Sélectionnez ces pilotes : 
+
+* <code className="action">Nutanix VirtIO Balloon Driver</code>
+* <code className="action">Nutanix VirtIO Ethernet Adapter</code>
+* <code className="action">Nutanix VirtIO SCSI pass-through controller</code>
+* <code className="action">QEMU FWCfg Device</code>
+
+Cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installation - WS2022- Etape6" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-12.PNG" loading="lazy" />
+
+Le disque de 60 GB apparaît, cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installation - WS2022- Etape6" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-13.PNG" loading="lazy" />
+
+Saisissez et confirmez le mot de passe dans les deux champs prévus à cet effet et cliquez sur <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="Installation - WS2022- Etape9" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-14.PNG" loading="lazy" />
+
+L'installation de Windows Server 2022 et des pilotes spécifiques à WS2022 pour l'hyperviseur **AHV** est terminée.
+
+<img className="thumbnail" alt="Installation - WS2022- Etape9" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/InstallWS2022-15.PNG" loading="lazy" />
+
+#### Installation des NGT (Nutanix Guest Tools)
+
+Les NGT sont des outils qui permettent une meilleure interaction avec Nutanix, notamment au niveau des sauvegardes et des snapshots.
+
+Lancez la console de la machine virtuelle, faites un clic-droit sur un lecteur de CDROM et cliquez sur <code className="action">Eject</code>.
+
+<img className="thumbnail" alt="NGT Installation 1" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation01.png" loading="lazy" />
+
+Revenez dans Prism Central et sélectionnez la machine virtuelle.
+
+<img className="thumbnail" alt="NGT Installation 2" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation02.png" loading="lazy" />
+
+Dans le menu <code className="action">Actions</code>, cliquez sur <code className="action">Install NGT</code>.
+
+<img className="thumbnail" alt="NGT Installation 3" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation03.png" loading="lazy" />
+
+Cliquez sur <code className="action">Confirm & Enter Password</code>. 
+
+<img className="thumbnail" alt="NGT Installation 4" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation04.png" loading="lazy" />
+
+Cliquez sur <code className="action">Skip and Mount</code>.
+
+<img className="thumbnail" alt="NGT Installation 5" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation05.png" loading="lazy" />
+
+Revenez dans la console de la machine virtuelle et faites un clic-droit sur le lecteur de CDROM contenant les NGT.
+
+Choisissez <code className="action">Install Nutanix Guest Tools</code>.
+
+<img className="thumbnail" alt="NGT Installation 6" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation06.png" loading="lazy" />
+
+Prenez connaissance des termes et conditions, acceptez-les puis cliquez sur <code className="action">Install</code>.
+
+<img className="thumbnail" alt="NGT Installation 7" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation07.png" loading="lazy" />
+
+L'installation se lance alors.
+
+<img className="thumbnail" alt="NGT Installation 8" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation08.png" loading="lazy" />
+
+Une fois l'installation terminée, fermez l'assistant d'installation via le bouton <code className="action">Close</code>.
+
+<img className="thumbnail" alt="NGT Installation 9" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/Ngt-Installation09.png" loading="lazy" />
+
+L'installation d'une machine virtuelle sous Windows est alors entierement terminée.
+
+### Migration d'une machine virtuelle
+
+La migration d'une machine virtuelle consiste à déplacer une VM à chaud d'un nœud à l'autre d'un cluster. 
+
+Si vous disposez de plusieurs clusters et des licences appropriées, vous pouvez également procéder à une migration d'une VM d'un cluster à l'autre. 
+
+Cette documentation n'illustre que la migration d'une VM à l'intérieur d'un seul et même cluster.
+
+Dans la gestion des machines virtuelles de Prism Central, cliquez sur <code className="action">WS2022N</code>.
+
+<img className="thumbnail" alt="Migrate - VM01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/MigrateVM01.PNG" loading="lazy" />
+
+Vérifiez sur quel nœud la VM fonctionne actuellement. Il est affiché à coté de **Host**.
+
+<img className="thumbnail" alt="Migrate - VM02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/MigrateVM02.PNG" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">More</code> puis sur <code className="action">Migrate</code>.
+
+<img className="thumbnail" alt="Migrate - VM03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/MigrateVM03.PNG" loading="lazy" />
+
+Choisissez un nœud de destination.
+
+<img className="thumbnail" alt="Migrate - VM04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/MigrateVM04.PNG" loading="lazy" />
+
+Le nom du nouveau nœud apparaîtra en face de **Host** si la  migration s'est bien terminée.
+
+<img className="thumbnail" alt="Migrate - VM05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/06-virtual-machine-management/MigrateVM05.PNG" loading="lazy" />
+
+## Aller plus loin <a name="gofurther"></a>
+
+[Présentation d'un cluster Nutanix](/guides/hosted-private-cloud/nutanix-on-ovhcloud/03-nutanix-hci/)
+
+[Importation d'images dans Nutanix](/guides/hosted-private-cloud/nutanix-on-ovhcloud/05-image-import/)
+
+[Documentation Nutanix sur AHV](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20)
+
+[Les licences Nutanix](https://www.nutanix.com/products/software-options)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

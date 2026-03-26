@@ -1,0 +1,327 @@
+---
+title: Comment utiliser les sauvegardes automatisées sur un VPS
+description: "Découvrez comment utiliser l'option Backup automatisé depuis l'espace client OVHcloud pour sécuriser vos données"
+lastUpdated: 2025-10-17
+---
+
+
+
+## Objectif
+
+L'option Backup Automatisé pour les VPS offre un moyen pratique de disposer de sauvegardes complètes du système depuis votre espace client OVHcloud sans avoir à vous connecter au serveur pour créer et restaurer manuellement vos sauvegardes. Un autre avantage est que vous pouvez également choisir de monter une sauvegarde et accéder ensuite à ses fichiers à distance.
+
+**Ce guide vous présente en détail l'option Backup automatisé pour votre VPS OVHcloud.**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pazh9ozbkEk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+:::info
+Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS disponibles](https://www.ovhcloud.com/fr/vps/options/) afin de comparer les détails et tarifs de chaque option.
+
+:::
+
+
+## Prérequis
+
+- Posséder un [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/) déjà configuré.
+- Disposer d'un accès administrateur (sudo) en SSH à votre VPS (facultatif).
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">Serveurs Privés Virtuels</code> > Sélectionnez votre VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+:::warning
+Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](https://www.ovhcloud.com/fr/lp/vps-localzone/).
+
+:::
+
+
+## En pratique
+
+### Présentation du contenu
+
+- [Comment passer au Backup automatisé Premium](#premium)
+- [Configurer l’heure du backup](#time)
+- [Comment restaurer une sauvegarde depuis l’espace client OVHcloud](#restore)
+- [Monter et accéder à une image de sauvegarde](#mount)
+    - [Sous Linux](#shell)
+    - [Sous Windows](#windows)
+- [Bonnes pratiques pour l'utilisation du Backup automatisé](#bestpractice)
+    - [Configuration de l'agent QEMU sur un VPS](#qemu)
+        - [Distributions Debian](#deb)
+        - [Distributions Redhat](#red)
+        - [Windows](#win)
+
+
+Lorsque vous commandez un VPS, une seule sauvegarde automatique quotidienne est incluse en option de service gratuite. Cette option de sauvegarde standard vous permet de :
+
+- Monter et restaurer la sauvegarde quotidienne.
+- Définir l'heure de création de cette sauvegarde.
+
+Pour plus de flexibilité avec vos sauvegardes, vous pouvez activer l'option Backup automatisé Premium.
+
+<a name="premium"></a>
+
+### Comment souscrire au Backup automatisé Premium
+
+Avec l'option Backup automatisé Premium, une sauvegarde de votre VPS est créée toutes les 24 heures à l'heure spécifiée.  
+Vous aurez accès à toutes les sauvegardes quotidiennes des 7 derniers jours. Une fois les 7 premières sauvegardes créées, chaque nouvelle sauvegarde remplacera la plus ancienne.
+
+Cliquez sur l'onglet <code className="action">Backup automatisé</code> dans le menu horizontal.
+
+Cliquez sur le lien <code className="action">Commander un backup premium</code> (services commandés à partir du 7 août 2025) ou le bouton <code className="action">Activer le Backup Automatisé</code>.
+
+<div className="grid-gallery">
+  <img src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/backup_vps2025.png" alt="autobackup vps2025"/>
+  <img src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/backup_vps_leg.png" alt="autobackup vps"/>
+</div>
+
+Lors de l'étape suivante, prenez note des informations de tarification, puis cliquez sur <code className="action">Commander</code>. Vous serez guidé tout au long du processus de commande et recevrez un e-mail de confirmation.
+
+<a name="time"></a>
+
+### Configurer l’heure du backup
+
+Vous pouvez modifier l'heure à laquelle la sauvegarde aura lieu.
+
+Après avoir sélectionné votre VPS, cliquez sur l'onglet <code className="action">Backup automatisé</code> dans le menu horizontal.
+
+Cliquez sur <code className="action">...</code> au-dessus du tableau puis sur <code className="action">Éditer</code>.
+
+<img className="thumbnail" alt="autobackupvps" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/backup_vps_time01.png" loading="lazy" />
+
+Dans la fenêtre qui s'affiche, modifiez l'heure de la journée (norme de temps UTC 24 heures). Cliquez sur <code className="action">Confirmer</code>.
+
+<img className="thumbnail" alt="autobackupvps" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/backup_vps_time02.png" loading="lazy" />
+
+:::info
+Une fois la validation effectuée dans l’espace client, le changement sera effectif dans un délai de 24 à 48 heures.
+
+:::
+
+
+<a name="restore"></a>
+
+### Comment restaurer une sauvegarde depuis l’espace client OVHcloud
+
+Sélectionnez votre VPS puis cliquez sur l'onglet <code className="action">Backup automatisé</code> dans le menu horizontal.  
+Cliquez sur <code className="action">...</code> à droite de la sauvegarde à restaurer et sélectionnez <code className="action">Restauration</code>.
+
+<img className="thumbnail" alt="autobackupvps" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/backup_vps_step1.png" loading="lazy" />
+
+Si vous avez récemment modifié votre mot de passe root, assurez-vous de cocher l'option « Modifier le mot de passe root lors de la restauration » dans la fenêtre contextuelle pour conserver votre mot de passe root actuel et cliquez sur <code className="action">Confirmer</code>. Vous recevrez un e-mail dès que la restauration sera terminée. Celle-ci peut prendre un certain temps, selon l'espace disque utilisé.
+
+:::danger
+Notez que les Backups automatisés n'incluent pas vos éventuels disques additionnels.
+
+:::
+
+
+<a name="mount"></a>
+
+### Monter et accéder à une image de sauvegarde
+
+Cette option permet d'accéder aux données de sauvegarde au cas où vous ne souhaitez pas remplacer complètement votre service existant par la restauration.
+
+:::warning
+OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+
+Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+
+:::
+
+
+Sélectionnez votre VPS puis cliquez sur l'onglet <code className="action">Backup automatisé</code> dans le menu horizontal.  
+Cliquez sur <code className="action">...</code> à droite de la sauvegarde souhaitée et sélectionnez <code className="action">Montage</code>.
+
+<img className="thumbnail" alt="autobackupvps" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/backup_vps_step2.png" loading="lazy" />
+
+Lorsque vous utilisez cette option, une copie de la sauvegarde accessible en lecture et écriture est créée et montée. La sauvegarde d'origine reste disponible telle quelle pour les restaurations futures.
+
+Une fois le processus terminé, vous recevrez un e-mail. Vous pourrez alors vous connecter à votre VPS et ajouter la partition où se trouve votre sauvegarde.
+
+<a name="shell"></a>
+
+#### Sous Linux
+
+Connectez-vous à votre VPS en SSH.
+
+Vous pouvez utiliser la commande suivante pour vérifier le nom du nouveau périphérique connecté :
+
+```bash
+lsblk
+```
+
+Voici un exemple de résultat de cette commande :
+
+```console
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0   25G  0 disk 
+├─sda1    8:1    0 24.9G  0 part /
+├─sda14   8:14   0    4M  0 part 
+└─sda15   8:15   0  106M  0 part 
+sdb       8:16   0   25G  0 disk 
+├─sdb1    8:17   0 24.9G  0 part 
+├─sdb14   8:30   0    4M  0 part 
+└─sdb15   8:31   0  106M  0 part /boot/efi
+```
+
+Dans cet exemple, la partition contenant votre sauvegarde de système de fichiers est nommée « sdb1 ».
+Créez à présent un répertoire pour cette partition et définissez-le comme point de montage :
+
+```bash
+sudo mkdir -p /mnt/restore
+sudo mount /dev/sdb1 /mnt/restore
+```
+
+Vous pouvez maintenant basculer vers ce dossier et accéder à votre sauvegarde de données.
+
+Pensez à bien démonter le Backup automatisé une fois son utilisation terminée. Cliquez sur le bouton <code className="action">Démonter le backup</code> dans l'onglet <code className="action">Backup automatisé</code>, puis validez dans la fenêtre qui s'affiche.
+
+<img className="thumbnail" alt="unmount" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/backup_vps_unmount.png" loading="lazy" />
+
+<a name="windows"></a>
+
+#### Sous Windows
+
+Établissez une connexion RDP (Remote Desktop) avec votre VPS.
+
+Une fois connecté, faites un clic droit sur le bouton <code className="action">Démarrer</code> et ouvrez la <code className="action">Gestion des disques</code>.
+
+<img className="thumbnail" alt="disk management" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/windowsbackup1.png" loading="lazy" />
+
+Votre sauvegarde montée apparaîtra comme un disque de base avec le même espace de stockage que votre disque principal.
+
+<img className="thumbnail" alt="mounted backup" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/windowsbackup2.png" loading="lazy" />
+
+Le disque apparaîtra dans l'état `hors ligne`, faites un clic droit sur le disque et sélectionnez <code className="action">En ligne</code>.
+
+<img className="thumbnail" alt="online backup" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/windowsbackup3.png" loading="lazy" />
+
+Par la suite, votre sauvegarde montée sera accessible dans l'`Explorateur de fichiers`.
+
+<img className="thumbnail" alt="file explorer" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/windowsbackup4.png" loading="lazy" />
+
+Pensez à bien démonter le Backup automatisé une fois son utilisation terminée. Cliquez sur le bouton <code className="action">Démonter le backup</code> dans l'onglet <code className="action">Backup automatisé</code>, puis validez dans la fenêtre qui s'affiche.
+
+<img className="thumbnail" alt="unmount" src="/images/bare-metal-cloud/virtual-private-servers/using-automated-backups-on-a-vps/backup_vps_unmount.png" loading="lazy" />
+
+:::warning
+Un redémarrage du serveur se produira lors du démontage de la sauvegarde.
+
+:::
+
+
+<a name="bestpractice"></a>
+
+### Bonnes pratiques pour l'utilisation du Backup automatisé
+
+La fonctionnalité de Backup automatisé est basée sur les snapshots VPS. Nous vous recommandons de suivre les étapes ci-dessous pour éviter toute anomalie avant d'utiliser cette option.
+
+<a name="qemu"></a>
+
+#### Configuration de l'agent QEMU sur un VPS
+
+Les snapshots sont des images instantanées de votre système en cours d'exécution (« live snapshots »). Pour garantir la disponibilité de votre système lors de la création du snapshot, l'agent QEMU est utilisé pour préparer le système de fichiers au processus.
+
+L'agent « **qemu-guest-agent** » n'est pas installé par défaut sur la plupart des distributions. En outre, les restrictions de licence peuvent empêcher OVHcloud de l'inclure dans les images d'OS disponibles. Par conséquent, il est recommandé de vérifier et d'installer cet agent s'il n'est pas activé sur votre VPS. Connectez-vous à votre VPS en SSH et suivez les instructions ci-dessous, selon votre système d'exploitation.
+
+<a name="deb"></a>
+
+##### **Distributions Debian (Debian, Ubuntu)**
+
+Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
+
+```bash
+file /dev/virtio-ports/org.qemu.guest_agent.0
+```
+
+Le résultat attendu est le suivant :
+
+```console
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Si le résultat est différent, comme par exemple « No such file or directory », installez la dernière version du paquet :
+
+```bash
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
+```
+
+Redémarrez le VPS :
+
+```bash
+sudo reboot
+```
+
+Démarrez le service pour vous assurer qu'il est en cours d'exécution :
+
+```bash
+sudo service qemu-guest-agent start
+```
+
+<a name="red"></a>
+
+##### **Distributions Redhat (CentOS, Fedora)**
+
+Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
+
+```bash
+file /dev/virtio-ports/org.qemu.guest_agent.0
+```
+
+Le résultat attendu est le suivant :
+
+```console
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Si le résultat est différent, comme par exemple « No such file or directory », installez et activez l'agent :
+
+```bash
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
+```
+
+Redémarrez le VPS:
+
+```bash
+sudo reboot
+```
+
+Démarrez l'agent et vérifiez qu'il est en cours d'exécution :
+
+```bash
+sudo service qemu-guest-agent start
+sudo service qemu-guest-agent status
+```
+
+<a name="win"></a>
+
+##### **Windows**
+
+Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora : [https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/).
+
+Vérifiez que le service est en cours d'exécution à l'aide de la commande PowerShell suivante :
+
+```console
+PS C:\Users\Administrator> Get-Service QEMU-GA
+Status   Name               DisplayName
+------   ----               -----------
+Running  QEMU-GA            QEMU Guest Agent
+```
+
+<a name="go-further"></a>
+
+## Aller plus loin
+
+[Utiliser les snapshots sur un VPS](/guides/bare-metal-cloud/virtual-private-servers/using-snapshots-on-a-vps/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

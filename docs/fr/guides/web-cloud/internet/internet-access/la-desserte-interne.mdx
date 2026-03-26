@@ -1,0 +1,103 @@
+---
+title: La desserte interne
+description: Découvrez les éléments composant la desserte interne de votre ligne téléphonique
+lastUpdated: 2018-03-26
+---
+
+### Préambule &#123;#préambule&#125;
+
+La desserte interne correspond à la prolongation de la ligne téléphonique depuis la tête France Télécom jusqu'aux parties privatives de l'abonné. Cette partie de ligne est sous la responsabilité de l'abonné ou du propriétaire des lieux.
+
+**Sommaire :**
+
+Niveau : Débutant
+
+------------------------------------------------------------------------
+
+<img className="thumbnail" alt="Schéma de la desserte interne" src="/images/web-cloud/internet/internet-access/la-desserte-interne/desserte.png" loading="lazy" />
+
+Nous allons détailler ici la partie concernant le point de concentration et la desserte interne.
+
+1. Point de concentration
+1. Point de terminaison
+1. DTI Test
+1. Prise gigogne et RJ11/45
+1. Module RC
+
+------------------------------------------------------------------------
+
+### Point de concentration &#123;#point-de-concentration&#125;
+
+Le point de concentration, aussi dit "**PC**", est représenté par un boîtier situé soit en façade, soit sur un poteau téléphonique ou électrique. D'un côté, le boîtier est raccordé jusqu'au sous-répartiteur par des **câbles dits de distribution** et de l'autre, il raccorde les abonnés.
+
+Le PC peut également être éloigné de l'habitation. Dans ce cas, un câble appelé **entrée de poste** ("EP") est utilisé pour le raccordement jusqu'à l'habitation.
+
+Il peut être directement raccordé à la première prise téléphonique de l'habitation, la prise DTI ou un boîtier de dérivation.
+
+Certaines habitations ne possèdent pas de point de concentration, car la distribution s'effectue de manière souterraine.
+
+Voici un exemple de PC :
+
+<img className="thumbnail" alt="Exemple de point de concentration" src="/images/web-cloud/internet/internet-access/la-desserte-interne/IMG_20150518_200808.jpg" loading="lazy" />
+
+------------------------------------------------------------------------
+
+### Point de terminaison &#123;#point-de-terminaison&#125;
+
+Le point de terminaison de ligne correspond au **premier point d'accès physique** du réseau installé par Orange. Il est généralement situé chez l'abonné. Le point de terminaison permet de séparer la ligne de la boucle locale (cf. schéma) de l'habitation ou des locaux de l'abonné.
+
+Ce point est matérialisé des façons suivantes :
+
+- Par un dispositif appelé **Dispositif de Terminaison Intérieur** (DTI) (cf. paragraphe 3) ;
+- Par la première prise téléphonique sur l'installation téléphonique ;
+- Par un **boîtier de dérivation**.
+
+<img className="thumbnail" alt="Boîtier de dérivation" src="/images/web-cloud/internet/internet-access/la-desserte-interne/derivation.jpeg" loading="lazy" />
+
+**La responsabilité en amont du point de terminaison revient à Orange.**
+
+------------------------------------------------------------------------
+
+### DTI **: Dispositif de Terminaison Intérieur** &#123;#dti-dispositif-de-terminaison-intérieur&#125;
+
+Cet appareil est installé en amont de votre réseau interne. Il a l'avantage de pouvoir tester la ligne en entrée tout en isolant votre réseau.
+
+Voici plusieurs type de prises DTI :
+
+<img className="thumbnail" alt="Types de prises DTI" src="/images/web-cloud/internet/internet-access/la-desserte-interne/dti1.png" loading="lazy" />
+
+Exemple de branchement d'un DTI :
+
+<img className="thumbnail" alt="Exemple de branchement DTI" src="/images/web-cloud/internet/internet-access/la-desserte-interne/branchement.jpeg" loading="lazy" />
+
+En aucun cas, le DTI n'est prévu pour que l'on y branche un téléphone.
+
+------------------------------------------------------------------------
+
+### Prise gigogne et RJ45/11 &#123;#prise-gigogne-et-rj4511&#125;
+
+La prise gigogne est une prise utilisant un type de connecteur téléphonique formant un "T". Elle permet de brancher des équipements tels que : téléphone, filtre ADSL, fax, etc.
+
+Présentation d'une prise gigogne :
+
+<img className="thumbnail" alt="Prise gigogne" src="/images/web-cloud/internet/internet-access/la-desserte-interne/priset.jpg" loading="lazy" />
+
+Prise RJ45/11 :
+
+Les prises avec connecteurs RJ45/11 remplacent la prise gigogne dans les nouvelles installations téléphoniques. Elles sont généralement raccordées sur les DTI.
+
+Présentation et explication branchement :
+
+<img className="thumbnail" alt="Prise RJ45" src="/images/web-cloud/internet/internet-access/la-desserte-interne/rj45.jpeg" loading="lazy" />
+
+<img className="thumbnail" alt="Prise RJ11" src="/images/web-cloud/internet/internet-access/la-desserte-interne/RJ11.png" loading="lazy" />
+
+------------------------------------------------------------------------
+
+### Module RC &#123;#module-rc&#125;
+
+Le **module RC**, également appelé "**condensateur**", est un petit boîtier de la taille d'un sucre qui était installé dans les prises téléphoniques. Ce boîtier permettait à Orange de vérifier si une ligne était opérationnelle.
+
+Il existe deux versions de modules : **deux ou trois pattes**. La version trois pattes peut perturber le signal XDSL. Il est alors recommandé de le retirer. La version deux pattes n'occasionne pas de perturbation du signal DSL sauf si celui-ci a été endommagé.
+
+Le module RC peut être présent dans un boîtier de dérivation, une prise gigogne et/ou le DTI.

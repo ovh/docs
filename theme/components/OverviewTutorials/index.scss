@@ -1,0 +1,40 @@
+.rp-overview-tutorials {
+  margin: 2rem 0;
+  max-width: 72rem;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--rp-c-text-1);
+    margin-bottom: 1.5rem;
+  }
+
+  // Override carousel card styles for overview context
+  .carousel__item {
+    background: var(--rp-c-bg);
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 240px;
+    padding: 1.5rem;
+  }
+
+  .carousel__item a {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .carousel__title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .carousel__text {
+    font-size: 0.875rem;
+    text-align: left;
+  }
+
+  .carousel__icon {
+    display: none;
+  }
+}

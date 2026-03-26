@@ -1,0 +1,52 @@
+---
+title: SPN Connector Concept
+description: SecNumCloud Connectivity - SPN Connector Concept
+lastUpdated: 2021-11-18
+---
+
+## Objective
+
+SPN Connector is the mecanism to assemble and inter-connect SPN of differents SecNumCloud zones and/or with VPN-SPN. This guide explains the concepts to understand its behavior.
+
+## Instructions
+
+### Basic rules
+
+SPN can route trafic through SPN Connector:
+
+* With another SPN in another Zone.
+* With a VPN-SPN.
+* NOT between two SPN of the same Zone.
+* An SPN can not be connected to two SPN Connector.
+
+<img className="thumbnail" alt="SPN connector rules" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/snc-connectivity-concepts-spn-connector/spn-connector-rules1.svg" loading="lazy" />
+
+All routes are forwarded through SPN Connector, no ACL/filtering is possible.
+
+### InterDC option
+
+By default, SPN Connector can only inter-connect "local" SPN and VPN-SPN.
+
+InterDC option: upgrade SPN Connector to "global" mode to allow connection between different zones.
+
+<img className="thumbnail" alt="InterDC rules" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/snc-connectivity-concepts-spn-connector/spn-connector-rules-interDC.svg" loading="lazy" />
+
+Inter-connection of two SPN connector (global or local) is not supported.
+
+InterDC uses dedicated and secured optical lines using MACsec protocol.
+
+<img className="thumbnail" alt="SPN InterDC HLD" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/snc-connectivity-concepts-spn-connector/SNC-SPN-InterDC-HLD.svg" loading="lazy" />
+
+InterDC does not allow extension:
+
+* of an SPN;
+* of a VPN-SPN;
+* of a Subnet.
+
+Only forwarding of IP traffic (i.e routing) is supported through InterDC/SPN Connector.
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,116 @@
+---
+title: Gérer mes carnets d’adresses SMS
+description: Découvrez comment créer, importer et gérer des carnets d’adresses SMS dans votre espace client OVHcloud à l’aide de fichiers tableur
+lastUpdated: 2022-08-05
+---
+
+## Objectif
+
+Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresses. Ce guide décrit comment les créer dans votre espace client OVHcloud.
+
+## Prérequis
+
+- Disposer d'un compte SMS OVHcloud.
+- Disposer d'un outil de type tableur ou éditeur de texte.
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">SMS</code> > Sélectionnez votre compte SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="espace client Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png" loading="lazy" />
+
+## En pratique
+
+### Étape 1 : Créer un carnet d'adresses dans votre espace client
+
+Choisissez l'onglet <code className="action">Contacts</code> puis <code className="action">Carnet d'adresses</code>.
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Ajouter un carnet d'adresses</code> et nommez alors votre nouveau carnet.
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook2.png" loading="lazy" />
+
+### Étape 2 : Ajouter des contacts dans votre carnet
+
+Le carnet d'adresses est maintenant créé mais ne contient aucun contact. Plusieurs méthodes existent pour ajouter vos contacts.
+
+### Ajout unitaire de contacts depuis l'espace client
+
+Sélectionnez le bouton <code className="action">Actions</code> et cliquez sur <code className="action">Ajouter</code>.
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook3.png" loading="lazy" />
+
+Vous accéderez à une fenêtre vous permettant de renseigner les informations du contact.
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook4.png" loading="lazy" />
+
+Remplissez les champs souhaités et validez pour enregistrer vos modifications. Le contact sera alors intégré à votre carnet. Il vous faudra refaire la même manipulation pour ajouter d'autres contacts.
+
+### Ajout de contacts multiples via un import de fichier de contacts depuis l'espace client
+
+#### Préparation du fichier dans votre tableur
+
+Si vous souhaitez utiliser ou créer un document au format tableur, il vous faudra le présenter comme ci-dessous et l'exporter au format «.csv ».
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook-spreadsheet1.png" loading="lazy" />
+
+Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms/images/phonebook.csv" download>ce lien</a> un modèle de carnet d'adresses au format «.csv » à compléter par vos soins.
+
+La grande majorité des tableurs ne prendra pas en compte le format international attendu pour les numéros de téléphone / fax (+33xxxxxxxxx). Il vous faudra donc modifier le format des cellules comportant ces numéros (workPhone, workMobile, ...). Pour ce faire, sélectionnez les colonnes concernées et appliquez un format “Texte” sur celles-ci.
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook-spreadsheet2.png" loading="lazy" />
+
+Une fois le document prêt, sauvegardez le au format tableur pour le modifier ultérieurement.
+
+En parallèle, enregistrez-le ou exportez-le au format «.csv » afin d'en préparer l'import.
+
+:::info
+**Recommandations**
+
+:::
+
+>Enregistrez votre fichier tableur au format «.csv » (séparateur : point-virgule).
+>
+>Les caractères spéciaux comme les accents ne sont pas acceptés dans l’import du fichier «.csv », les contacts comprenant ce type de caractères ne seront pas importés.
+>
+> Respectez la forme internationale +33xxxxxxxxx pour vos numéros.
+>
+>Nous conseillons des carnets d’adresses ne dépassant pas 2000 contacts.
+>
+> Tous vos contacts devront être sur la même feuille de votre tableur.
+>
+>
+
+#### Import du fichier dans votre espace client
+
+De retour sur votre espace client OVHcloud, sélectionnez le bouton <code className="action">Actions</code> et cliquez sur <code className="action">Importer</code>.
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook5.png" loading="lazy" />
+
+Une pop-up s'affichera, cliquez alors sur <code className="action">Fichier de contact</code> pour sélectionner votre fichier «.csv » puis validez.
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook6.png" loading="lazy" />
+
+Patientez quelques secondes pendant le chargement du fichier dans votre espace client.
+
+### Étape 3 : Éditer ou supprimer un carnet d'adresses
+
+Si vous souhaitez modifier le nom d'un carnet d'adresses, sélectionnez votre carnet dans le menu déroulant (1) (si vous avez créé plusieurs carnets) puis cliquez sur le crayon (2) en face du nom du carnet. 
+
+Pour supprimer un carnet, sélectionnez-le dans le menu déroulant (1) puis cliquez sur <code className="action">Supprimer le carnet d'adresses</code>.
+
+Pour éditer ou supprimer un contact, cliquez, dans la colonne « Actions », sur <code className="action">...</code> (4) en face du contact choisi. Vous aurez ainsi accès au menu vous proposant ces choix.
+
+<img className="thumbnail" alt="phonebook" src="/images/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/smsphonebook7.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

@@ -1,0 +1,59 @@
+---
+title: Web hosting - How to know your cluster and filer
+description: Find out how to find the cluster number and/or filer number where your web hosting plan is located
+lastUpdated: 2025-08-12
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+Web Hosting plans run on a shared infrastructure called a *cluster*. OVHcloud has several clusters that host several web hosting plans.  
+Each cluster, for efficiency and security reasons, is also divided virtually into several segments called *filers*. The filers themselves contain several web hosting plans.
+When using your web hosting plan, you may need to know the cluster and filer your web hosting plan is located on.
+
+**Find out how to find the cluster and filer numbers of your web hosting.**
+
+## Requirements
+
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Hosting plans</code> > Select your web hosting plan
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instructions
+
+Click on the tabs below to view each of the **2** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) page, then select the web hosting plan concerned.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    In the **General information** box on the page that appears, retrieve the cluster number under the mention **Cluster** (3 digits between `0` and `9`) and the filer number under the mention **Filer**.
+    
+    <img className="thumbnail" alt="Cluster and Filer number" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Go further
+
+[Web Hosting - List of IP addresses by cluster](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)
+ 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+ 
+Join our [community of users](https://community.ovhcloud.com/community/en).

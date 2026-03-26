@@ -1,0 +1,133 @@
+---
+title: "Hébergement web - Comment activer l'accès SFTP"
+description: "Découvrez comment activer l'accès SFTP sur votre hébergement web OVHcloud"
+lastUpdated: 2026-02-04
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objectif
+
+Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage permettant de mettre en ligne les fichiers de vos sites web ou de vos applications. L'accès à cet espace est possible via un utilisateur FTP ou SSH avec les mots de passe qui leur sont associés.
+
+Tout comme le **F**ile **T**ransfer **P**rotocol (**FTP**), le **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**) permet de transférer des données de votre appareil vers l'espace de stockage de votre hébergement web.
+
+La seule différence est que le SFTP utilise un canal sécurisé pour échanger des données. Les données qui transitent via ce protocole sont automatiquement chiffrées.
+
+**Découvrez comment activer l'accès SFTP sur votre hébergement web OVHcloud.**
+
+## Prérequis
+
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Hébergements</code> > Sélectionnez votre hébergement web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## En pratique
+
+### Activer l'accès SFTP pour un utilisateur FTP de votre hébergement web
+
+**Cliquez sur l'une des deux lignes ci-dessous en fonction de votre offre d'hébergement web pour afficher les explications.**
+
+<details>
+
+<summary>Activer le SFTP sur une offre d'hébergement web **gratuite 100M**, **Starter** ou **Perso**</summary>
+
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Hébergements](https://manager.eu.ovhcloud.com/#/web/hosting), puis choisissez l'hébergement web concerné.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Sur la page qui s'affiche, cliquez sur l'onglet <code className="action">FTP - SSH</code>.
+    
+    <img className="thumbnail" alt="FTP - SSH" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 3">
+    Dans le tableau en bas de page, cochez la case présente dans la colonne **SFTP** de l'utilisateur FTP concerné. La page se réactualisera automatiquement.
+    
+    <img className="thumbnail" alt="FTP - SSH Perso" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png" loading="lazy" />
+
+Une fois l'option **SFTP** activée, vous pourrez utiliser le protocole SFTP de votre hébergement web avec l'utilisateur FTP concerné.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Activer le SFTP sur une offre d'hébergement web **Pro** ou **Performance**</summary>
+
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Hébergements](https://manager.eu.ovhcloud.com/#/web/hosting), puis choisissez l'hébergement web concerné.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Sur la page qui s'affiche, cliquez sur l'onglet <code className="action">FTP - SSH</code>.
+    
+    <img className="thumbnail" alt="FTP - SSH" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 3">
+    Dans le tableau en bas de page, vérifiez le statut présent dans la colonne **SFTP** de l'utilisateur FTP concerné :
+    
+    - **Activé** : le protocole SFTP est déjà actif pour cet utilisateur.
+    - **Désactivé** : cliquez sur le bouton <code className="action">...</code> situé à droite de la ligne concernée, puis sur <code className="action">Modifier</code>.
+    
+    <img className="thumbnail" alt="FTP - SSH Pro" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 4">
+    Dans la fenêtre qui s'ouvre, dans la section **Protocoles de connexion**, sélectionnez <code className="action">FTP et SFTP</code> ou <code className="action">FTP, SFTP et SSH</code> si vous avez également besoin d'activer le protocole SSH.
+    
+    <img className="thumbnail" alt="FTP - SSH Pro" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png" loading="lazy" />
+
+Cliquez ensuite sur <code className="action">Suivant</code>, puis sur <code className="action">Valider</code> afin de terminer l'activation du SFTP pour l'utilisateur concerné.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+### Se connecter en SFTP à votre hébergement web
+
+Pour cela, consultez notre guide « [Se connecter à l’espace de stockage FTP de son hébergement web](/guides/web-cloud/web-hosting/ftp-connection/) ».
+
+## Aller plus loin
+
+[Modifier le mot de passe d’un utilisateur FTP](/guides/web-cloud/web-hosting/ftp-change-password/)
+
+[Utiliser une connexion SSH sur un hébergement web](/guides/web-cloud/web-hosting/ssh-on-webhosting/)
+
+[Utiliser PuTTY pour vous connecter en SSH](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/)
+
+[Utiliser FileZilla avec votre hébergement web](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)
+
+[Utiliser Cyberduck avec votre hébergement web](/guides/web-cloud/web-hosting/ftp-cyberduck-user-guide-on-mac/)
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

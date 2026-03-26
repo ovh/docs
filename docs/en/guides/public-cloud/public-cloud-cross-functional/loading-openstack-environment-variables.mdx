@@ -1,0 +1,86 @@
+---
+title: Setting OpenStack environment variables
+description: Find out how to set your environment variables to use the OpenStack API
+lastUpdated: 2024-07-15
+---
+
+## Objective
+
+By setting OpenStack environment variables on your desktop, you can use the OpenStack API to manage your infrastructure.
+
+## Requirements
+
+- An [OpenStack user account](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/)
+- OpenStack [installed on your system](/guides/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Step 1: Retrieve the variables
+
+To retrieve your environment variables, you can download the OpenRC file from the OpenStack user account you have created.
+
+In the left-hand menu, click on <code className="action">Users & Roles</code> under **Settings**. Next, click on the <code className="action">...</code> to the right of your user, then select <code className="action">Download OpenStack's RC file</code>.
+
+<img className="thumbnail" alt="openstack-variables" src="/images/public-cloud/public-cloud-cross-functional/loading-openstack-environment-variables/download_rc_file.png" loading="lazy" />
+
+An OpenRC file corresponds to a specific user and zone. You cannot manage multiple zones in the same file.
+
+### Step 2: Set the variables
+
+#### **On Linux**
+
+* Open a terminal, or connect via the user who will be making the OpenStack API calls.
+* Load the file’s contents in the current environment. You will then be prompted to enter the Horizon user password.
+
+```bash
+admin@remote_host:~$ source openrc.sh
+Please enter your OpenStack Password:
+```
+
+As outlined in [this guide](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/), the password is only visible once — when it is created.
+
+If you forget your password, you will need to reset it.
+
+If the CLIs are already installed, check if they are working properly:
+
+```bash
+(env)$ openstack server list
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+```
+
+#### **On Windows**
+
+The OpenRC file is not designed to be launched on Windows.
+
+There are two ways of setting environment variables:
+
+- You will need to adapt the file by changing certain commands. The **export** part can be replaced with **set**:
+
+```bash
+set OS_PASSWORD="Your Horizon user password"
+```
+
+- You can set the variables directly via the system settings: Control Panel > System > Advanced System Properties > Environment Variables:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/loading-openstack-environment-variables/pciopenstackvariables2.png" loading="lazy" />
+
+## Go further
+
+To learn how to use OpenStack: [OpenStack documentation](https://docs.openstack.org/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,110 @@
+---
+title: Zarządzanie użytkownikami OpenStack
+description: Dowiedz się, jak zarządzać użytkownikami OpenStack w Panelu klienta OVHcloud i interfejsie Horizon
+lastUpdated: 2025-04-28
+---
+
+## Wprowadzenie
+
+Dostęp do interfejsu Horizon i API OpenStack odbywa się za pośrednictwem kombinacji identyfikatora i hasła zwanych "*OpenStack users*". Możesz utworzyć tylu użytkowników OpenStack, ilu potrzebujesz i przyznać im różne prawa dostępu.
+
+W interfejsie Horizon możesz zdefiniować hasło dla każdego użytkownika. Uwaga, zmiana hasła do konta użytkownika skutkuje natychmiastowym odwołaniem poprzedniego hasła.
+
+**Niniejszy przewodnik wyjaśnia, jak zarządzać użytkownikami OpenStack w Panelu klienta OVHcloud i w interfejsie Horizon.**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+## Wymagania początkowe
+
+- Projekt [Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) na Twoim koncie OVHcloud
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## W praktyce
+
+### Tworzenie użytkownika OpenStack
+
+W menu po lewej stronie kliknij <code className="action">Użytkownicy i role</code> w rubryce **Ustawienia**.
+
+Kliknij przycisk <code className="action">Utwórz użytkownika</code>.
+
+<img className="thumbnail" alt="User roles" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/users_roles.png" loading="lazy" />
+
+Opis użytkownika to nie nazwa użytkownika OpenStack, ale opis, który należy wpisać, aby pomóc Ci w organizacji użytkowników i ich praw. Wprowadź opis i kliknij <code className="action">Dalej</code>.
+
+<img className="thumbnail" alt="Add user" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/adduser.png" loading="lazy" />
+
+Możesz teraz wybrać role, które reprezentują uprawnienia, które uzyska użytkownik. W przypadku każdego zaznaczonego kratka użytkownik uzyska uprawnienia dostępu zgodnie z poniższą tabelą.
+
+<img className="thumbnail" alt="Uprawnienia" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/permissions.png" loading="lazy" />
+
+Kliknij na <code className="action">Zatwierdź</code>, aby utworzyć użytkownika OpenStack. Identyfikator klienta i hasło są automatycznie generowane i wyświetlane w Panelu klienta.
+
+<img className="thumbnail" alt="User_pw" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/user_pw.png" loading="lazy" />
+
+Upewnij się, czy hasło jest zapisywane tylko w tym momencie w zielonej ramce w menedżerze haseł. Hasło nie może zostać później pobrane. Możesz jednak utworzyć nowe hasło, klikając <code className="action">...</code> i wybierając <code className="action">Odnów hasło</code>.
+
+<img className="thumbnail" alt="Generate" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/generatepw.png" loading="lazy" />
+
+Po utworzeniu użytkownika OpenStack będziesz mógł użyć jego danych identyfikacyjnych, aby zalogować się [do interfejsu Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/) klikając link <code className="action">Horizon</code> w menu po lewej stronie.
+
+### Zmiana hasła użytkownika OpenStack
+
+Utworzenie hasła OpenStack możliwe jest po zalogowaniu do interfejsu [OpenStack Horizon](https://horizon.cloud.ovh.net):
+
+<img className="thumbnail" alt="Logowanie do interfejsu Horizon" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/1_H_login_window.png" loading="lazy" />
+
+Identyfikator użytkownika Horizon wyświetla się w prawym górnym rogu w interfejsie Horizon. Kliknij Twój identyfikator, aby wyświetlić menu z dostępnymi opcjami.
+Wybierz <code className="action">Settings</code>, a następnie po lewej stronie <code className="action">Change password</code>:
+
+<img className="thumbnail" alt="Zmiana hasła" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/2_H_pass_change_option.png" loading="lazy" />
+
+W pierwszym polu wpisz aktualne hasło, a w dwóch kolejnych polach wpisz nowe hasło.
+
+:::info
+Zmieniając hasło, upewnij się, że zostały spełnione następujące kryteria:
+
+- hasło musi zawierać minimum 8 znaków;
+- hasło może zawierać maksymalnie 30 znaków;
+- hasło musi zawierać co najmniej jedną wielką literę;
+- hasło musi zawierać co najmniej jedną małą literę;
+- hasło musi zawierać co najmniej jedną cyfrę;
+- hasło powinno zawierać tylko cyfry i litery.
+
+:::
+
+
+Na koniec zatwierdź nowe hasło, klikając <code className="action">Change</code>.
+
+<img className="thumbnail" alt="Parametryzacja hasła" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/3_H_set_new_passord.png" loading="lazy" />
+
+Pamiętaj, że zmiana hasła do konta użytkownika skutkuje natychmiastowym odwołaniem poprzedniego hasła.
+
+### Usuwanie użytkownika OpenStack
+
+W menu po lewej stronie kliknij <code className="action">Użytkownicy i role</code> w rubryce **Ustawienia**.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/delete.png" loading="lazy" />
+
+Kliknij <code className="action">...</code> i wybierz <code className="action">Usuń</code>.
+
+:::warning
+Usunięcie użytkownika jest definitywne i spowoduje unieważnienie wszystkich przypisanych tokenów, w tym tych, których data wygaśnięcia nie została jeszcze przekroczona.
+
+:::
+
+
+## Sprawdź również
+
+[Prezentacja Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

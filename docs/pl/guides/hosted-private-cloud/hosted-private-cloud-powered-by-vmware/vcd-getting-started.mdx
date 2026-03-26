@@ -1,0 +1,210 @@
+---
+title: Public VCF as-a-Service - Find out how to use the Public VCF as-a-Service user interface (EN)
+description: Discover the Public VCF as-a-Service user interface
+lastUpdated: 2024-05-23
+---
+
+## Objective
+
+**This guide will walk you through the different sections of the Public VCF as-a-Service interface.**
+
+The version used for all our Public VCF as-a-Service products is `version 10.5`.
+
+## Requirements
+
+- A working knowledge of Linux, vSphere, Windows and IP networks is required to configure and manage Public VCF as-a-Service
+- a Public VCF as-a-Service administrator account
+
+:::info
+If you are unsure how to log in to your organization’s web portal, read [this guide](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-logging/) first.
+
+:::
+
+
+## Instructions
+
+:::info
+Once you have logged in to your web interface, you will be greeted by a dashboard displaying your **vDC**, as well as a detailed summary of your resource usage (10). At the top of the screen, you will also find a navigation bar with the different settings options available for vCloud Director (VCD).
+
+:::
+
+
+VMware vCloud Director (VCD) is a cloud computing management platform. Public VCF as-a-Service enables the creation, management and deployment of virtualized computing resources on a large scale, and offers an agile and scalable infrastructure. With an easy-to-use user interface and advanced features such as resource management, automated billing, and enhanced security, vCloud Director simplifies the management of complex cloud environments.
+
+This solution enables you to provision and efficiently manage virtual machines, virtual networks, and other resources, providing increased operational agility and flexibility to meet changing business needs.
+
+<img className="thumbnail" alt="Dashboard Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd-dashboard-overview.png" loading="lazy" />
+
+The different sections available are the following:
+
+1. **Data Centers**
+2. **Applications**
+3. **Networking**
+4. **Content Hub**
+5. **Admin**
+6. **Monitor**
+7. **More**
+8. **Magnifier**
+9. **Completed tasks**
+10. **Resources used**
+
+### Data Centers
+
+In this section, you will find all of your virtual data centres (vDC) ordered in different data centre locations, a brief overview of your resource usage, and the number of vApps/VMs currently running.
+
+In this section, you will see a banner on your left, the same as when you click on one of your: <code className="action">Virtual applications | Virtual machines | Container applications </code> from the **"Application"** section:
+
+Compute:
+
+- <code className="action">vApps</code>
+- <code className="action">Virtual Machines</code>
+- <code className="action">Affinity Rules</code>
+
+Networking:
+
+- <code className="action">Networks</code>
+- <code className="action">Edges</code>
+
+Storage:
+
+- <code className="action">Named Dlisks</code>
+- <code className="action">Storage Policies</code>
+
+Settings:
+
+- <code className="action">General</code>
+- <code className="action">Metadata</code>
+- <code className="action">Sharing</code>
+- <code className="action">Kubernetes Policies</code>
+
+<img className="thumbnail" alt="Datacenters Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd_overview_datacenter.gif" loading="lazy" />
+
+### Applications
+
+This section gives you a comprehensive overview of all your vApps and virtual machines in your virtual datacentres (vcd): create, access and delete vApps or virtual machines with ease.
+
+Using vApps is a unique feature of Vcloud Director (VCD). This allows you to create and group a set of virtual machines, containers within the same Virtual Application (vApp), but also to go granularly to create affinity/anti-affinity rules within these vApps (network, firewall, templating etc.).
+As settings for these vApps, we find the same vSphere/NSX features for the network and storage that can be applied to this centralized web console (an orchestrator).
+
+For example, you can copy a vApp from one Data Center to another, and also migrate an application from one site to another.
+
+Here is the global view of the "Application" section in this screenshot:
+
+<img className="thumbnail" alt="vApp Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd-Vapp-view.png" loading="lazy" />
+
+Here are the 3 main elements of the Application section, you can also see that when you click on one of your vApps, you will be redirected to the Data Center section:
+
+- <code className="action">Virtual Applications</code>
+- <code className="action">Virtual Machines</code>
+- <code className="action">Container Applications</code>
+
+<img className="thumbnail" alt="Applications Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd_overview_application.gif" loading="lazy" />
+
+### Networking
+
+Public VCF as-a-Service networking allows the organization’s provider and customer to create and consume networking resources from a vSphere or NSX environment.
+As a result, clients can create network segments and configure services finely with or without DHCP, perform NAT firewall but also use load balancing integrations for example.
+
+You can see in the screenshot below that the most advanced features offered by VMware in all these years are present in Vcloud Director (VCD) within a single central administration console.
+
+<img className="thumbnail" alt="Network Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd_overview_networking.gif" loading="lazy" />
+
+In this section, you can find all the network components of your Public VCF as-a-Service environments:
+
+Networking:
+
+- <code className="action">Networks</code>
+- <code className="action">Edge Gateways</code>
+- <code className="action">Provider Gateways</code>
+- <code className="action">IP Spaces</code>
+- <code className="action">Data Center Groups</code>
+- <code className="action">Security Tags</code>
+
+**Public VCF as-a-Service supports three types of networks:**
+
+- External networks
+- Organization of Virtual Datacentre Networks
+- vApp networks
+
+### Content Hub
+
+In this section, you can manage your catalogs: create, delete or download ISO files, OVA templates, or simply use the preconfigured templates available in the OVHcloud catalog.
+
+<img className="thumbnail" alt="Content Hub Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd_overview_content-hub.gif" loading="lazy" />
+
+Content Hub:
+
+- <code className="action">Welcome to the Content Hub</code>
+- <code className="action">Content</code>
+- <code className="action">Catalogs</code>
+- <code className="action">Manage resources: VMware Marketplace / Helm Chart repository / Kubernetes Operator</code>
+
+### Libraries
+
+<img className="thumbnail" alt="Libraries Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd-libraries-overview.png" loading="lazy" />
+
+Libraries:
+
+- <code className="action">Content Libraries</code>.
+- <code className="action">Services</code>.
+
+### Administration
+
+In this section, you can manage users in your organization, create roles and groups, and configure an identification provider (OIDC/SAML). You can also set up email alerts and expiration policies for your applications.
+
+Access Control:
+
+- <code className="action">Users</code>
+- <code className="action">Groups</code>
+- <code className="action">Roles</code>
+
+Identity Providers:
+
+- <code className="action">SAML</code>
+- <code className="action">OIDC</code>
+
+Certificate Management:
+
+- <code className="action">Certificate Management</code>
+
+Settings:
+
+- <code className="action">General</code>
+- <code className="action">Email</code>
+- <code className="action">Guest Personalization</code>
+- <code className="action">Metadata</code>
+- <code className="action">Multisite</code>
+- <code className="action">Policies</code>
+- <code className="action">Quotas</code>
+
+<img className="thumbnail" alt="Administration Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd_overview_administration.gif" loading="lazy" />
+
+### Monitoring
+
+In this section, you can access the complete history of all tasks and events that have occurred in your organization. You can filter to find the tasks/events you want more easily.
+
+<img className="thumbnail" alt="Monitoring Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd_overview_monitor.gif" loading="lazy" />
+
+### More
+
+In this section, access the essential plugins: Veeam for data protection to back up your infrastructure, and the Operations Manager for an exhaustive breakdown of your usage.
+
+<img className="thumbnail" alt="More options Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd_overview_more.gif" loading="lazy" />
+
+### Magnifier
+
+Use this feature to search for components within your organization. The vertical dots give you the ability to log out, change your password, and manage your user preferences.
+
+<img className="thumbnail" alt="Overview Magnifier" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd_overview_loupe.gif" loading="lazy" />
+
+### Tasks Completed
+
+See here for all recent actions in your organization.
+
+<img className="thumbnail" alt="Tasks Overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-getting-started/vcd-recent-tasks-overview.png" loading="lazy" />
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,191 @@
+---
+title: Pierwsze kroki z usługą Hosted Exchange
+description: Rozpocznij pracę z usługą Hosted Exchange
+lastUpdated: 2025-04-28
+---
+
+
+
+## Wprowadzenie
+
+Usługa Hosted Exchange pozwala na korzystanie z profesjonalnej poczty elektronicznej ułatwiającej pracę zespołową dzięki funkcjom, takim jak synchronizacja kalendarza i kontaktów.
+
+**Dowiedz się, jak rozpocząć korzystanie z usługi  Hosted Exchange.**
+
+## Wymagania początkowe
+
+- Wykupienie usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
+- Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Hosted Exchange została zainstalowana.
+- Zarejestrowana domena.
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## W praktyce
+
+### Dostęp do zarządzania usługą
+
+Po utworzeniu i udostępnieniu usługi Hosted Exchange :
+
+:::info
+Nazwa usługi Hosted Exchange w Panelu klienta OVHcloud zaczyna się od **hosted-**, następnie zawiera część Twojego identyfikatora klienta i kończy się cyfrą (1 dla pierwszej zainstalowanej usługi Hosted Exchange, 2 dla drugiej, etc.).
+
+:::
+
+
+### Wykonaj pierwszą konfigurację usługi
+
+Ponieważ nigdy wcześniej nie korzystałeś z usługi, będziesz musiał przeprowadzić jej pierwszą konfigurację. Po zakończeniu konfiguracji będziesz mógł korzystać z nowych kont e-mail Exchange.
+
+Kiedy po raz pierwszy zalogujesz się do interfejsu zarządzania usługą Hosted Exchange, wyświetli się asystent konfiguracji. Kliknij <code className="action">Rozpocznij</code>.
+
+Asystent konfiguracji umożliwia przeprowadzenie kilku działań. W zależności od sytuacji:
+
+#### Wybór domeny
+
+Wybierz jedną z Twoich domen z listy lub zaznacz kratkę `Moja domena nie figuruje na poniższej` liście, aby wprowadzić nazwę domeny, która nie jest zarządzana w Twoim Panelu klienta, **ale którą możesz skonfigurować**.
+
+<img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/exchange-wizard01.png" loading="lazy" />
+
+#### Czy zamierzasz korzystać wyłącznie z oferty Exchange OVHcloud z tą domeną?
+
+Pytanie "Czy **zamierzasz korzystać z domeny wyłącznie w ramach usługi Exchange OVHcloud?** "określi typ konfiguracji Twojej domeny. 
+
+- Jeśli korzystasz z oferty Exchange samodzielnie lub z innych ofert **e-mail OVHcloud**, konfiguracja może zostać przeprowadzona automatycznie lub ręcznie, wyłącznie za pomocą serwerów e-mail OVHcloud.
+- Jeśli korzystasz z Twojej usługi Exchange jako uzupełnienie **zewnętrznej usługi e-mail o ofertę e-mail OVHcloud**, zostaniesz poproszony o podanie, pod pozycją `Serwer przekazujący (SMTP)`, adresu URL serwera, na który ma zostać wysłana Twoja zewnętrzna usługa e-mail.
+
+<img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/exchange-wizard02.png" loading="lazy" />
+
+#### Jak chcesz skonfigurować strefę DNS?
+
+- **Automatyczna** konfiguracja: Wpisana nazwa domeny zostanie automatycznie skonfigurowana na poziomie strefy DNS, jeśli jest ona zarządzana przez OVHcloud na tym samym koncie klienta, co Twoja usługa Exchange.
+- **Ręczna** konfiguracja: Nazwa domeny nie jest zarządzana w tym samym panelu klienta, co Twoja platforma. Jest ona zarządzana przez innego operatora domeny lub chcesz samodzielnie przeprowadzić konfigurację.<br/> Będziesz mógł odnaleźć wartości, które należy wpisać na końcu procesu konfiguracji lub w sekcji <code className="action">Powiązane domeny</code> Twojej platformy.
+
+<img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/exchange-wizard03.png" loading="lazy" />
+
+#### **Konfiguracja kont Exchange**
+
+Nadaj nazwy Twoich adresom e-mail Exchange i dodaj informacje uzupełniające.
+
+<img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/exchange-wizard04.png" loading="lazy" />
+
+#### **Szczególny przypadek**
+
+- Jeśli skonfigurujesz Twoją platformę Exchange z nazwą domeny, która nie jest zarządzana w tym samym panelu klienta co platforma, lub u innego operatora domeny, otrzymasz następujące okno:<br/>
+
+<img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/exchange-wizard05.png" loading="lazy" /><br/>
+
+W tym oknie zostaniesz poproszony o dodanie **pola CNAME** w strefie DNS domeny. Celem tego wpisu jest sprawdzenie, czy zarządzasz tą domeną.<br/>
+
+:::warning
+Bez zatwierdzenia za pomocą pola CNAME nie można korzystać z platformy za pomocą tej nazwy domeny.
+
+:::
+
+
+- Jeśli skonfigurujesz Twoją platformę Exchange z nazwą domeny, która nie jest zarządzana w tym samym panelu klienta co platforma, niezależnie od tego, czy jest ona zarządzana przez innego operatora domeny, czy też wybrałeś ręczną konfigurację Twojej domeny, wyświetli się następujące okno:<br/>
+
+<img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/exchange-wizard06.png" loading="lazy" /><br/>
+
+W tej sekcji znajdziesz wartości, które należy wprowadzić w strefie DNS. **Pola MX** odpowiadają odbieraniu e-maili. **Pole SRV** odpowiada automatycznej konfiguracji Twoich kont e-mail.
+
+Szczegóły konfiguracji Twojej strefy DNS dotyczące usługi e-mail znajdują się na stronie "[Dodaj pole MX do konfiguracji domeny](/guides/web-cloud/domains/dns-zone-mx/)".
+
+### Dodaj dodatkowe domeny (opcjonalnie)
+
+Po zakończeniu pierwszej konfiguracji Twojej domeny możesz również, za pomocą asystenta, skonfigurować dodatkowe domeny, jeśli tego jeszcze nie zrobiłeś.
+
+:::warning
+Wszystkie konta e-mail utworzone w ramach Twojej usługi Exchange będą widoczne w książce adresowej tych usług, również te, które mają inną nazwę domeny. Aby wyłączyć ten sposób wyświetlania kont w domenach, musisz zamówić nową usługę Hosted Exchange dla wybranych domen.
+
+:::
+
+
+Aby dodać nową domenę, wybierz odpowiednią usługę Hosted Exchange w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) i kliknij zakładkę <code className="action">Powiązane domeny</code>. W tabeli wyświetlone są nazwy domen aktualnie skonfigurowanych w Twojej usłudze lub których konfiguracja trwa. Aby dodać nowe domeny, kliknij przycisk <code className="action">Dodaj domenę</code>, następnie postępuj zgodnie z kolejnymi poleceniami.
+
+Więcej informacji znajdziesz w dokumentacji [Dodawanie domeny do usługi Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/).
+
+:::info
+Jeśli któraś z domen wymaga wykonania jakiegoś szczególnego działania związanego z jej konfiguracją, w kolumnie <code className="action">Diagnostyka</code> w tabeli zobaczysz czerwony przycisk. Po kliknięciu w czerwony przycisk wyświetlą się modyfikacje, jakie należy przeprowadzić. Jeśli domena nie używa konfiguracji OVHcloud (serwery DNS OVHcloud), wprowadź zmiany w interfejsie do zarządzania konfiguracją Twojej domeny. 
+
+:::
+
+
+<img className="thumbnail" alt="Dodanie domeny" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/first-steps-hosted-exchange-add-domain.png" loading="lazy" />
+
+### Konfiguracja dodatkowych kont Exchange (opcjonalnie)
+
+Możesz skonfigurować dodatkowe konta, jeśli chcesz i nie zrobiłeś tego jeszcze za pomocą asystenta.
+
+W tym celu kliknij wybraną usługę Hosted Exchange w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie zakładkę <code className="action">Konta e-mail</code>. W tabeli wyświetlone są nazwy kont aktualnie skonfigurowanych w Twojej usłudze lub które oczekują na konfigurację.
+
+Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@configureme.me*”. Aby przeprowadzić konfigurację kont, kliknij w ikonę ołówka, następnie postępuj zgodnie z poleceniami.
+
+:::info
+Powtórz ten etap tyle razy, ile będzie to konieczne, w zależności od liczby posiadanych kont. Możesz zamówić nowe konta, klikając przycisk <code className="action">Operacje</code>, a następnie <code className="action">Zamów konta</code>.
+
+:::
+
+
+<img className="thumbnail" alt="Dodanie konta" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/first-steps-hosted-exchange-add-account.png" loading="lazy" />
+
+### Korzystanie z kont e-mail
+
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia webmail **Outlook Web App** (OWA). Znajdziesz go pod linkiem [Webmail](https://www.ovhcloud.com/pl/mail/). Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z [naszej dokumentacji](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/overview/).
+
+Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu tego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Następnie kliknij przycisk <code className="action">Zapisz</code>, aby kontynuować.
+
+:::info
+Strefy czasowe są wymienione zgodnie z [uniwersalnym standardem czasowym (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), a nie alfabetycznie według miast.
+
+**Przykład** : Dla Europy Zachodniej jest to UTC +1 (Bruksela, Kopenhaga, Madryt, Paryż).
+
+:::
+
+
+Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z [naszej dokumentacji](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/overview/). Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
+
+OVHcloud oferuje w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) licencje Outlook w opcji z kontem e-mail Exchange.
+
+Aby zamówić licencję, wejdź na stronę "[Uzyskaj licencję Outlook dla usługi Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/office-outlook-license/)".
+
+Licencje Office 365 można również uzyskać na stronie [Microsoft 365](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/). Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
+
+:::info
+Exchange pozwala na pełną synchronizację ustawień (filtrów, podpisów, katalogów, etc.) niezależnie od tego, czy używasz aplikacji webowej czy kompatybilnego programu pocztowego.
+Jeśli korzystasz z usługi Exchange na trzech urządzeniach i używasz różnych interfejsów logowania (webmail, program pocztowy lub klient), wszystkie Twoje wiadomości będą dostępne w tym samym czasie.
+
+:::
+
+
+### Konfiguracja funkcji do pracy zespołowej (opcjonalnie)
+
+Po skonfigurowaniu i uruchomieniu usługi Hosted Exchange możesz wprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) funkcje pracy zespołowej. Funkcje te umożliwiają między innymi tworzenie zasobów (sale spotkań, sprzęt, etc.) czy grup.
+
+Aby aktywować te różne funkcje, wybierz odpowiednią usługę Hosted Exchange w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie wybierz jedną z zakładek, które pozwolą Ci przeprowadzić tę operację.
+
+Jeśli potrzebujesz pomocy odnośnie którejś z funkcji, skorzystaj z [naszej dokumentacji](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/overview/).
+
+## Sprawdź również <a name="go-further"></a>
+
+[Utwórz grupę kontaktów](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/)
+
+[Tworzenie i korzystanie z konta współdzielonego](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/)
+
+[Tworzenie i korzystanie z kont zasobów](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/)
+
+[Delegowanie uprawnień do konta e-mail](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[Współdzielenie katalogu w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-directory-sharing/)
+
+[Zarządzanie płatnościami za Twoje konta Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

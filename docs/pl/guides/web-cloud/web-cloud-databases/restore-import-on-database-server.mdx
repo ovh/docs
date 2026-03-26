@@ -1,0 +1,241 @@
+---
+title: Przywracanie i importowanie bazy danych na serwer baz danych
+description: Dowiedz się, jak przywrócić i importować bazę danych na serwerze Web Cloud Databases z poziomu Panelu klienta OVHcloud lub przez phpMyAdmin
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+W wyniku błędu bazy danych musisz mieć możliwość przywrócenia kopii zapasowej lub importu lokalnej bazy danych.
+
+**Dowiedz się, jak przywrócić i zaimportować bazę danych na serwer baz danych.**
+
+## Wymagania początkowe
+
+- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartej w ofercie [hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/))
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Wybierz usługę bazy danych
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## W praktyce
+
+:::info
+Rozwiązania [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+
+- Nie ma dostępu superużytkownika „root".
+- Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL SQL lub Adminer jest w pełni kompatybilne.
+
+:::
+
+
+### Przywracanie i importowanie bazy danych w Panelu klienta
+
+#### Przywrócenie istniejącej kopii zapasowej
+
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij kartę <code className="action">Bazy danych</code>.
+    
+    W kolumnie **„Kopie zapasowe"** liczba odpowiada liczbie kopii zapasowych dostępnych dla Twojej bazy danych.
+  </Tab>
+  <Tab label="Krok 3">
+    Kliknij przycisk <code className="action">...</code> po prawej stronie bazy danych, a następnie <code className="action">Wyświetl kopie zapasowe</code>.
+  </Tab>
+  <Tab label="Krok 4">
+    Wyświetli się lista dostępnych kopii zapasowych. Kliknij przycisk <code className="action">...</code> po prawej stronie wybranej kopii zapasowej, a następnie <code className="action">Przywróć kopię zapasową</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/restore-the-backup.png" loading="lazy" />
+    
+    :::warning
+    Przywrócenie bazy danych wiąże się z nadpisaniem jej zawartości, a tym samym z potencjalną utratą danych. Jeśli nie masz pewności, co robisz, zalecamy uprzednie wykonanie kopii zapasowej.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+#### Import lokalnej kopii zapasowej
+
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij kartę <code className="action">Bazy danych</code>.
+  </Tab>
+  <Tab label="Krok 3">
+    Kliknij przycisk <code className="action">...</code> po prawej stronie bazy danych, a następnie <code className="action">Importuj plik</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 4">
+    ***Masz dwie możliwości:***
+    
+    **1 - Import nowego pliku**
+    
+    Kliknij **„Importuj nowy plik"**, a następnie <code className="action">Dalej</code>.
+    
+    Wpisz nazwę importowanego pliku, kliknij <code className="action">Przeglądaj</code>, aby go wybrać, następnie <code className="action">Wyślij</code>, a na koniec <code className="action">Dalej</code>.
+    
+    :::warning
+    Plik musi być w formacie „.sql", „.txt" lub „.gz".
+
+    :::
+
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png" loading="lazy" />
+
+Zaznacz, jeśli chcesz, **„Wyczyść aktualną bazę danych"** przed importem i **„Wyślij e-mail po zakończeniu importu"**, aby otrzymać informację o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij <code className="action">Zatwierdź</code>.
+    
+    **2 - Użycie istniejącego pliku**
+    
+    Jeśli wcześniej importowałeś plik, możesz wybrać opcję **„Importuj istniejący plik"**.
+    
+    Wybierz plik z menu rozwijanego i kliknij <code className="action">Dalej</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png" loading="lazy" />
+
+Zaznacz, jeśli chcesz, **„Wyczyść aktualną bazę danych"** przed importem i **„Wyślij e-mail po zakończeniu importu"**, aby otrzymać informację o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij <code className="action">Zatwierdź</code>.
+  </Tab>
+</Tabs>
+
+
+### Import bazy danych poza Panelem klienta
+
+W niektórych przypadkach pamięć RAM dostępna na serwerze baz danych nie pozwala na zrealizowanie żądanego importu poza Panelem klienta. W takim przypadku zalecamy użycie narzędzia OVHcloud w Panelu klienta. Przejdź do sekcji [„Przywracanie i importowanie bazy danych w Panelu klienta"](#przywracanie-i-importowanie-bazy-danych-w-panelu-klienta) niniejszego przewodnika.
+
+**Kliknij wybraną metodę importu, aby wyświetlić jej zawartość.**
+
+<details>
+
+<summary>Import bazy MySQL lub MariaDB z poziomu phpMyAdmin</summary>
+
+
+Aby zaimportować bazę danych bezpośrednio z phpMyAdmin, należy się najpierw zalogować. W tym celu zapoznaj się z sekcją [„Logowanie do bazy danych MySQL lub MariaDB"](/guides/web-cloud/web-cloud-databases/connecting-to-database-on-database-server#logowanie-do-bazy-danych-mysql-lub-mariadb/).
+
+Po zalogowaniu się do phpMyAdmin wybierz bazę danych, klikając na jej nazwę.
+
+Następnie kliknij kartę <code className="action">Importuj</code>.
+
+Wybierz plik kopii zapasowej, klikając <code className="action">Przeglądaj</code> (plik nie może przekroczyć 100 MB).
+
+:::info
+Zalecamy podzielenie bazy danych na kilka plików, jeśli przekracza ona 100 MB, i wykonanie kilku importów z poziomu phpMyAdmin.
+Import plików o rozmiarze większym niż 100 MB można wykonać z poziomu Panelu klienta, postępując zgodnie z instrukcjami w sekcji [„Przywracanie i importowanie bazy danych w Panelu klienta"](#przywracanie-i-importowanie-bazy-danych-w-panelu-klienta).
+
+:::
+
+
+Pozostaw domyślne opcje i kliknij <code className="action">Uruchom</code>, aby rozpocząć import.
+
+<img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-upload-backup-web-cloud-db.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>Import bazy MySQL lub MariaDB za pomocą wiersza poleceń</summary>
+
+
+Operacja ta jest możliwa tylko przez [SSH](/guides/web-cloud/web-hosting/ssh-on-webhosting/) z poziomu hostingu współdzielonego OVHcloud.
+
+```bash
+cat nazwa_bazy.sql | mysql --host=serwer --user=uzytkownik --port=port --password=haslo nazwa_bazy
+```
+
+</details>
+
+
+<details>
+
+<summary>Import bazy MySQL lub MariaDB z pliku PHP</summary>
+
+
+```php
+1. <?php
+2. echo "Twoja baza danych jest w trakcie przywracania.......<br/>";
+3. system("cat nazwa_bazy.sql | mysql --host=serwer --user=uzytkownik --port=port --password=haslo nazwa_bazy");
+4. echo "Zakończono. Twoja baza danych jest zainstalowana na tym hostingu.";
+5. ?>
+```
+
+:::warning
+- Aby uniknąć dostępu osób trzecich do tego pliku zawierającego wrażliwe dane, zabezpiecz dostęp do niego, korzystając z przewodnika: [Jak chronić dostęp do katalogu hasłem?](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/)
+- Operacja ta jest możliwa tylko z poziomu hostingu współdzielonego OVHcloud.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>Import bazy PostgreSQL za pomocą wiersza poleceń</summary>
+
+
+Operacja ta jest możliwa wyłącznie przez [SSH](/guides/web-cloud/web-hosting/ssh-on-webhosting/) z poziomu hostingu współdzielonego OVHcloud w wersji stabilnej lub wyższej.
+
+```bash
+psql --host=serwer --port=port --user=uzytkownik --password=haslo nazwa_bazy < nazwa_bazy.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>Import bazy PostgreSQL z pliku PHP</summary>
+
+
+```php
+1. <?php
+2. echo "Twoja baza danych jest w trakcie przywracania.......<br/>";
+3. system("PGPASSWORD=haslo psql --host=serwer --port=port --user=uzytkownik --password=haslo nazwa_bazy < nazwa_bazy.sql");
+4. echo "Zakończono. Twoja baza danych jest zainstalowana na tym hostingu.";
+5. ?>
+```
+
+:::warning
+- Aby uniknąć dostępu osób trzecich do tego pliku zawierającego wrażliwe dane, zabezpiecz dostęp do niego, korzystając z przewodnika: [Jak chronić dostęp do katalogu hasłem?](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/)
+- Operacja ta jest możliwa tylko z poziomu hostingu współdzielonego OVHcloud.
+
+:::
+
+
+</details>
+
+
+## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

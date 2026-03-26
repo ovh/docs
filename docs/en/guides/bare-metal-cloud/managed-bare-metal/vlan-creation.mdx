@@ -1,0 +1,98 @@
+---
+title: VLAN creation
+description: Find out how to create VLANs (vRack)
+lastUpdated: 2020-11-18
+---
+
+## Objective
+
+In a Managed Bare Metal infrastructure, you have a base of 11 VLANs provided with the vRack.
+
+**This guide shows how to create additional VLANs**
+
+## Requirements
+
+- access to the vSphere Web client (HTML5)
+
+## Instructions
+
+### Create VLANs
+
+In the Managed Bare Metal solutions, you get two virtual distributed switches (vDS). 
+
+These *vDS* have several different *portGroups*, each with their own purpose.
+
+The first vDS has a single *portGroup* type, the VMnetwork being used to communicate to the internet.
+
+The second vDS also has a single *portGroup* type, with VLANs that can be used to isolate private communications within the Managed Bare Metal interface, and between different OVHcloud services that are vRack-compatible(Dedicated Server, Public Cloud...). 
+
+On this switch, 11 VLANs are created as standard (VLAN10 to VLAN20). By giving the `administrator` right on `Access to the V(x)LAN` in [the users management tab of your Control Panel](/guides/bare-metal-cloud/managed-bare-metal/manager-ovhcloud#users-tab/), you can create additional VLANs.
+
+First, go to your vSphere client's `networking` view. Deploy the **vrack** folder then right-click on the **dVS** ending in *-vrack* and finally click on <code className="action">New Distributed Port Group</code>.
+
+<img className="thumbnail" alt="vRack" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/07network.png" loading="lazy" />
+
+<img className="thumbnail" alt="New Distributed Port Group" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/08network1.png" loading="lazy" />
+
+The next step is to name your **PortGroup**:
+
+<img className="thumbnail" alt="nominate portgroup" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/09network2.png" loading="lazy" />
+
+Then configure the settings recommended by OVHcloud:
+
+- **Port binding**: Static (reserving and assigning the port to a virtual machine)
+- **Port allocation**: Elastic (Allows the number of ports to be hot-wired)
+- **Number of ports**: 24
+- **VLAN type**: VLAN (The others are [PVLAN](https://kb.vmware.com/s/article/1010691) and Trunk)
+- **VLAN ID**: 21 (Knowing that the ID can be configured from 1 to 4096)
+- Check the option *Customize default policies configuration*.
+
+<img className="thumbnail" alt="portgroup configuration" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/10network3.png" loading="lazy" />
+
+You have 3 security settings that can be activated according to your need: 
+
+- *Promiscuous mode*: Eliminates any filtering that the VM adapter can perform so that the guest operating system receives all observed traffic on the network.
+- *MAC address changes*: When set to **Accept**, ESXi will accept requests to change the effective MAC address to an address other than the initial MAC address.
+- *Forged transmits*: Affects traffic transmitted from a virtual machine. When set to **Accept**, ESXi does not compare the source and effective MAC addresses.
+
+:::info
+The most frequent use of these 3 parameters is the CARP, especially used on **pfSense**.
+
+:::
+
+
+<img className="thumbnail" alt="security settings" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/11network4.png" loading="lazy" />
+
+We leave [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html) disabled.
+
+<img className="thumbnail" alt="traffic shaping" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/12network5.png" loading="lazy" />
+
+In terms of load balancing, select *Route Based on IP hash*, which is the best method for redundancy and load balancing.
+
+:::warning
+Be careful when configuring the failover order: It is necessary to set the `lag1` uplink to *Active* (connection between the virtual network and the physical network), otherwise no communication between the hosts will be possible.
+
+:::
+
+
+<img className="thumbnail" alt="load balancing" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/13network6.png" loading="lazy" />
+
+The `NetFlow` is disabled (traffic flow activity report).
+
+<img className="thumbnail" alt="netflow" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/14network7.png" loading="lazy" />
+
+Leave the `Block All Ports` value at "No".
+
+<img className="thumbnail" alt="portgroup finalisation" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/15network9.png" loading="lazy" />
+
+You will then be presented with a summary of the changes. Click `Finish` to confirm the creation.
+
+<img className="thumbnail" alt="portgroup finalisation" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/16network10.png" loading="lazy" />
+
+Here we can see that **VLAN21** is available and functional.
+
+<img className="thumbnail" alt="vlan created" src="/images/bare-metal-cloud/managed-bare-metal/vlan-creation/17network11.png" loading="lazy" />
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

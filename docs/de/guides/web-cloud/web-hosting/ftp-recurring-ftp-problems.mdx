@@ -1,0 +1,119 @@
+---
+title: Häufige FTP-Probleme beheben
+description: Diese Anleitung erklärt, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben
+lastUpdated: 2025-10-20
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Ziel 
+
+Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](https://www.ovhcloud.com/de/web-hosting/) kann zu verschiedenen Anomalien führen. In dieser Anleitung können Sie die gängigsten Lösungen auswählen.
+
+**Diese Anleitung erklärt, wie Sie gängige Fehler im Zusammenhang mit FTP-Programmen beheben.**
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+
+:::
+
+
+## Voraussetzungen
+
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Hosting-Pakete</code> > Wählen Sie Ihr Webhosting aus
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## In der praktischen Anwendung
+
+### “Dieser Server unterstützt FTP auf TLS nicht“ (FileZilla)
+
+<img className="thumbnail" alt="doesnt-support-ftp-on-tls" src="/images/assets/screens/other/web-tools/filezilla/doesnt-support-ftp-on-tls.png" loading="lazy" />
+
+Diese Nachricht im [FileZilla-Programm](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/) zeigt an, dass Sie die SFTP- oder SSH-Option in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) nicht aktiviert haben. Daher werden die zwischen Ihrem OVHcloud Hosting-Server und Ihrem Computer ausgetauschten Informationen nicht verschlüsselt.
+
+Wenn die Daten, die Sie über diese Verbindung austauschen möchten, nicht vertraulich sind, klicken Sie auf <code className="action">OK</code>.
+
+Ist das nicht der Fall, gehen Sie in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de), dann auf <code className="action">Web Cloud</code> und <code className="action">Hosting-Pakete</code>. Wählen Sie das betreffende Hosting aus und öffnen Sie den Tab <code className="action">FTP-SSH</code>.
+
+Wenn Sie über ein Webhosting [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) verfügen, setzen Sie in der Spalte <code className="action">SFTP</code> den Haken bei der Feld <code className="action">Deaktiviert</code> und warten Sie einige Minuten.
+
+Wenn Sie über ein Webhosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, klicken Sie auf die Schaltfläche <code className="action">...</code> rechts neben dem betreffenden FTP-Benutzer und dann auf <code className="action">Ändern</code>.
+
+Wählen Sie <code className="action">SFTP</code> oder <code className="action">Aktiviert</code> aus (um das SSH-Protokoll auf Ihrem Hosting zu aktivieren), klicken Sie auf <code className="action">Weiter</code>, dann auf <code className="action">Bestätigen</code>. Die Umstellung dauert einige Minuten.
+
+:::info
+Für sonstige Fehlermeldungen beachten Sie den Bereich `Diagnose` unserer [Webhosting-Anleitungen](/guides/web-cloud/web-hosting/overview/).
+
+:::
+
+
+### Ich habe meine Dateien mit einem FTP-Programm übertragen, aber meine Seite wird nicht angezeigt
+
+Überprüfen Sie zunächst, dass die Dateien und Ordner Ihrer Website im [Wurzelverzeichnis](/guides/web-cloud/web-hosting/hosting-how-to-get-my-website-online#3-dateien-auf-ihren-speicherplatz-hochladen/) Ihres Hostings enthalten sind.
+
+Wenn Sie vor weniger als 48 Stunden eine Änderung an Ihren [DNS-Servern](/guides/web-cloud/domains/dns-server-edit/) oder Ihrer [DNS-Zone](/guides/web-cloud/domains/dns-zone-edit/) vorgenommen haben, warten Sie ab und starten Sie Ihre Geräte regelmäßig neu, um ihren Cache zu leeren.
+
+### Meine FTP-Zugangsdaten funktionieren nicht.
+
+Wenn Sie sich nicht authentifizieren können, ändern Sie Ihr FTP-Passwort entsprechend den Anweisungen in [dieser Anleitung](/guides/web-cloud/web-hosting/ftp-change-password/).
+
+### Auf meiner Website sind zufällige Fehler aufgetreten
+
+Wenn Sie den Speicherplatz Ihres Webhostings überschreiten, kann es zu Fehlfunktionen auf Ihrer Seite kommen.
+
+Um den verbleibenden Speicherplatz auf Ihrem Webhosting zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Hosting-Pakete](https://manager.eu.ovhcloud.com/#/web/hosting), und wählen Sie das betreffende Webhosting aus.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Die Speicherplatzauslastung Ihres Webhostings finden Sie im Feld **Allgemeine Informationen** unter **Speicherplatz**.
+    
+    <img className="thumbnail" alt="disk_space" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Ich kann meine Dateien nicht auf den FTP Server übertragen
+
+Überprüfen Sie, dass Ihr FTP-Programm im “Passivmodus“ (Konfigurationsmodus eines FTP-Servers, in dem der Server den Verbindungsport bestimmt) verbunden ist.
+
+Klicken Sie zum Beispiel für [Filezilla](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/) auf <code className="action">Bearbeiten</code>, dann auf <code className="action">Einstellungen</code>. Öffnen Sie <code className="action">Verbindung</code>, dann klicken Sie auf <code className="action">FTP</code> und wählen Sie dann <code className="action">Passiv (empfohlen)</code> aus.
+
+Begrenzen Sie auch die Größe Ihrer Datentransfers (Sie können nicht mehr als **5000 Dateien und Ordner** auf den Shared Hosting Servern von OVHcloud in einem einzigen Transfer versenden). Führen Sie mehrere Importe durch, wenn nötig unter Verwendung komprimierter Ordner.
+
+Wenn Sie über eine [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) Lösung verfügen, verwenden Sie vorzugsweise das [SSH-Protokoll](/guides/web-cloud/web-hosting/ssh-on-webhosting/), um Ihre Dateien dem Speicherplatz Ihres Hostings hinzuzufügen.
+
+### Der symbolische Link “index.html“ kann nicht in meinem FTP-Bereich gelöscht werden
+
+Dieser Link ist standardmäßig auf den Shared Hosting Paketen von OVHcloud installiert. Er zeigt die unten abgebildete Seite an:
+
+<img className="thumbnail" alt="site-under-construction" src="/images/assets/screens/other/browsers/errors/site-under-construction.png" loading="lazy" />
+
+Wenn Sie die Funktion “[1-Klick-Modul](/guides/web-cloud/web-hosting/cms-install-1-click-modules/)“ nicht für Ihre Website verwendet haben, müssen Sie sich [mit dem FTP-Speicherplatz verbinden](/guides/web-cloud/web-hosting/ftp-connection/) Ihres Webhostings einloggen, um die Seite „Site under construction“ manuell zu löschen.
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Verwendung des FileZilla Programms mit Ihrem Hosting](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)
+
+Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, lesen Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

@@ -1,0 +1,204 @@
+---
+title: Object Storage - Activer HTTPS sur un site web statique en utilisant un domaine personnalisé
+description: Découvrez comment configurer votre site web et le Load Balancer OVHcloud pour activer le HTTPS
+lastUpdated: 2026-03-06
+---
+
+## Objectif
+
+L’Object Storage OVHcloud vous permet d’héberger un site web statique à l’intérieur d’un bucket Object Storage.
+
+:::info
+Un site web statique ne contient que du contenu statique (pages HTML, images, vidéos, scripts côté client), tandis qu'un site web dynamique repose sur un traitement côté serveur pour traiter les données et faciliter le rendu du contenu.
+
+:::
+
+
+Par défaut, le protocole HTTPS n'est pas pris en charge sur un site web statique hébergé sur l'Object Storage OVHcloud. Si vous souhaitez utiliser le HTTPS, vous pouvez utiliser le Load Balancer OVHcloud en parallèle d'un site web statique hébergé sur l'Object Storage d'OVHcloud. Le Load Balancer agira en tant que passerelle SSL.
+
+**Découvrez comment configurer votre site web et le Load Balancer OVHcloud pour activer le HTTPS.**
+
+## Prérequis
+
+Pour activer le HTTPS, vous avez besoin de :
+
+- Un [Load Balancer OVHcloud](https://www.ovhcloud.com/fr/network/load-balancer/), qui jouera le rôle de passerelle SSL et pourra offrir une protection contre les attaques DDoS.
+- Un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Commander un certificat TLS associé à votre nom de domaine chez OVHcloud (facultatif si vous disposez déjà d’un certificat TLS de confiance associé à votre nom de domaine).
+- Vous devez [activer l'hébergement sur votre bucket Object Storage](/guides/storage-and-backup/object-storage/s3-website/).
+
+{/* CP-NAV-START:network-load-balancer */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](https://manager.eu.ovhcloud.com/#/dedicated/iplb)
+- **Pour accéder à vos services :** <code className="action">Network</code> > <code className="action">Load Balancer</code> > Sélectionnez votre service
+
+---
+{/* CP-NAV-END:network-load-balancer */}
+
+## En pratique
+
+### Étape 1 - Configurer votre Load Balancer
+
+#### Étape 1.1 - Ajouter votre certificat
+
+Sélectionnez votre Load Balancer dans la liste, cliquez sur l'onglet <code className="action">Certificats SSL</code> puis sur <code className="action">Ajouter un certificat SSL</code>.
+
+<img className="thumbnail" alt="Télécharger le certificat" src="/images/storage-and-backup/object-storage/s3-website-https/cert-creation01.png" loading="lazy" />
+
+<img className="thumbnail" alt="Télécharger le certificat" src="/images/storage-and-backup/object-storage/s3-website-https/cert-creation02.png" loading="lazy" />
+
+:::info
+Vous pouvez également commander un certificat Let's Encrypt gratuit via le bouton <code className="action">Commander un certificat SSL</code>.
+
+:::
+
+
+#### Étape 1.2 - Configurer une ferme de serveurs
+
+Vous devez maintenant configurer une ferme de serveurs et l'ajouter à votre Load Balancer. Une ferme de serveurs est un pool de machines backend permettant de gérer la charge de travail.
+
+Toujours depuis la section Load Balancer de votre espace client, cliquez sur l'onglet <code className="action">Ferme de serveurs</code> puis sur <code className="action">Ajouter une ferme de serveurs</code> .
+
+<img className="thumbnail" alt="configuration cluster du serveur" src="/images/storage-and-backup/object-storage/s3-website-https/serv-cluster-01.png" loading="lazy" />
+
+Entrez la configuration de la nouvelle ferme de serveurs :
+
+- Nom (facultatif)
+- Protocole : HTTP
+- Port : 80
+- Datacenter : choisissez la région dans laquelle vous avez hébergé votre site web
+
+<img className="thumbnail" alt="configuration cluster du serveur" src="/images/storage-and-backup/object-storage/s3-website-https/serv-cluster-02.png" loading="lazy" />
+
+Vous devez à présent ajouter des serveurs à votre ferme de serveurs. Cliquez sur le bouton <code className="action">Ajouter un serveur</code> .
+
+<img className="thumbnail" alt="configuration cluster du serveur" src="/images/storage-and-backup/object-storage/s3-website-https/serv-cluster-03.png" loading="lazy" />
+
+Renseignez les informations de configuration de votre serveur :
+
+- Nom (facultatif)
+- Adresse IPv4 : Entrez l'adresse IP publique associée à l'URL par défaut de votre site web statique sous la forme `<bucket_name>.s3-website.<region>.io.cloud.ovh.net`
+
+*Vous pouvez récupérer cette adresse IP en effectuant une commande dig sur l'URL.*
+
+**Exemple** : via une commande `dig`
+
+```sh
+dig <bucket_name>.s3-website.<region>.io.cloud.ovh.net
+```
+
+```text
+
+; <<>> DiG 9.16.1-Ubuntu <<>> my-site.s3-website.gra.io.cloud.ovh.net
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22041
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;my-site.s3-website.gra.io.cloud.ovh.net. IN A
+;; ANSWER SECTION:
+my-site.s3-website.gra.io.cloud.ovh.net. 3600 IN A 141.95.161.77
+;; Query time: 12 msec
+;; SERVER: 10.15.25.129#53(10.15.25.129)
+;; WHEN: Mon Jun 05 16:09:56 CEST 2023
+;; MSG SIZE  rcvd: 84
+```
+
+**Exemple** : via une commande `host`
+
+```sh
+host <bucket_name>.s3-website.<region>.io.cloud.ovh.net
+```
+
+```text
+my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
+```
+
+<img className="thumbnail" alt="configuration cluster du serveur" src="/images/storage-and-backup/object-storage/s3-website-https/serv-cluster-04.png" loading="lazy" />
+
+#### Étape 1.3 - Configurer vos frontends
+
+L'étape suivante est d'ajouter des frontends à votre Load Balancer. Un frontend sera l'élément Internet de votre Load Balancer et sera responsable du traitement et de l'acheminement des requêtes entrantes.
+
+Dans la section Load Balancer de votre espace client, cliquez sur l'onglet <code className="action">Frontends</code> puis sur <code className="action">Ajouter un frontend</code>.
+
+<img className="thumbnail" alt="configuration du frontend" src="/images/storage-and-backup/object-storage/s3-website-https/front-01.png" loading="lazy" />
+
+Ajouter 2 frontends :
+
+- Un frontend dont le seul but est de traiter toutes les requêtes HTTP entrantes et les rediriger vers votre nom de domaine en HTTPS
+    - nom (facultatif)
+    - protocole : HTTP
+    - port : 80
+    - datacenter : all
+    - ferme par défaut : none
+    - paramètres avancés > HTTP Redirection : `https://<domain_name>`
+- Un frontend qui va gérer toutes les requêtes HTTPS entrantes et jouer le rôle de passerelle SSL
+    - nom (facultatif)
+    - protocole : HTTPS
+    - port : 443
+    - datacenter : la région où se trouve votre bucket
+    - ferme de serveurs par défaut : la ferme de serveurs créée au préalable
+    - certificate: le certificat que vous avez créé
+    - paramètres avancés > HTTP Header : Host `<website_endpoint>` sous la forme `<bucket_name>.s3-website.<region>.io.cloud.ovh.net`
+
+<img className="thumbnail" alt="configuration du frontend" src="/images/storage-and-backup/object-storage/s3-website-https/front-2.PNG" loading="lazy" />
+
+#### Étape 1.4 - Appliquer les modifications
+
+Une fois que vous avez créé et configuré toutes les ressources, n'oubliez pas de cliquer sur le bouton <code className="action">Appliquer la configuration</code> pour appliquer toutes les modifications au Load Balancer.
+
+<img className="thumbnail" alt="appliquer la configuration LB" src="/images/storage-and-backup/object-storage/s3-website-https/LB-apply-conf.PNG" loading="lazy" />
+
+### Étape 2 - Configurez vos DNS
+
+:::warning
+Cette section n'est pertinente que si votre nom de domaine est enregistré chez OVHcloud. Si vous disposez d'un nom de domaine externe, merci de vérifier auprès de votre prestataire.
+
+:::
+
+
+Cliquez sur l'onglet <code className="action">Web Cloud</code> de votre espace client OVHcloud et sélectionnez votre nom de domaine dans la section <code className="action">Noms de domaine</code>.
+
+Ouvrez l'onglet <code className="action">Zone DNS</code>.
+
+<img className="thumbnail" alt="Configuration DNS" src="/images/storage-and-backup/object-storage/s3-website-https/DNS-01.png" loading="lazy" />
+
+Modifiez les deux enregistrements A pour ajouter l'adresse IP publique de votre Load Balancer.
+
+<img className="thumbnail" alt="Configuration DNS" src="/images/storage-and-backup/object-storage/s3-website-https/DNS-02.png" loading="lazy" />
+
+<img className="thumbnail" alt="Configuration DNS" src="/images/storage-and-backup/object-storage/s3-website-https/DNS-03.png" loading="lazy" />
+
+<img className="thumbnail" alt="Configuration DNS" src="/images/storage-and-backup/object-storage/s3-website-https/DNS-04.png" loading="lazy" />
+
+:::info
+Vous pouvez retrouver l'adresse IP publique de votre Load Balancer sur la page d'accueil de votre <code className="action">Load Balancer</code> depuis votre espace client.
+
+<img className="thumbnail" alt="Configuration DNS" src="/images/storage-and-backup/object-storage/s3-website-https/DNS-05.png" loading="lazy" />
+
+:::
+
+
+### Étape 3 - Testez votre site web
+
+Vérifiez que le site web et la redirection fonctionnent correctement. Ouvrez votre navigateur internet en navigation privée pour vous assurer que le cache est vide et saisissez votre nom de domaine.
+
+**Exemple** : 
+
+<img className="thumbnail" alt="Test du site web" src="/images/storage-and-backup/object-storage/s3-website-https/test.PNG" loading="lazy" />
+
+## Aller plus loin
+
+[Configuration de votre service Load Balancer OVHcloud](/guides/network/load-balancer/use-presentation/)
+
+[Configuration de votre zone DNS](/guides/web-cloud/domains/dns-zone-edit/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

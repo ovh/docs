@@ -1,0 +1,109 @@
+---
+title: Lista de destinatarios de SMS
+description: Descubra cómo crear una lista de destinatarios SMS con una hoja de cálculo o un editor de texto e importarla en el área de cliente de OVHcloud
+lastUpdated: 2022-08-05
+---
+
+:::info
+Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+
+:::
+
+
+## Objetivo
+
+Para enviar una campaña de SMS a múltiples contactos, puede importar una o más listas de destinatarios en su área de cliente de OVHcloud.
+
+**Esta guía explica cómo crear una lista de destinatarios de SMS a través de una hoja de cálculo o un editor de texto e importarla en el área de cliente de OVHcloud.**
+
+## Requisitos
+
+- Disponer de una cuenta de SMS en OVHcloud.
+- Tener un programa de hojas de cálculo o un editor de texto.
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Ruta de navegación:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Seleccione su cuenta SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png" loading="lazy" />
+
+## Procedimiento
+
+### 1. Crear una lista de destinatarios
+
+#### En una hoja de cálculo
+
+Es posible crear una lista de destinatarios en una hoja de cálculo desde cero o reutilizando una lista existente. Para ello, la lista debe estar en formato .CSV y tener el siguiente apariencia en la hoja de cálculo:
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/img_4831.png" loading="lazy" />
+
+:::warning
+Para que la hoja de cálculo no realice ningún cálculo automático en sus números, debe personalizar el formato de su columna `number`.
+
+En Microsoft Excel, seleccione su columna `number` completo, haga clic derecho y haga clic en <code className="action">Formato de celda</code>. Haga clic en <code className="action">Personalizado</code> e introduzca el siguiente valor en el campo `Tipo`: ```[>0]+0;Standard```.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-2.png" loading="lazy" />
+
+En LibreOffice, seleccione su columna `number` completo, haga clic derecho y haga clic en <code className="action">Formatear celdas</code>. Introduzca el siguiente valor en el campo `Descripción del formato`: ```[>0]+0;Standard```
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-2b.png" loading="lazy" />
+
+:::
+
+
+Una vez que el archivo se haya guardado en formato .CSV, si lo abre con un bloc de notas, debería ser similar a:
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-1.png" loading="lazy" />
+
+Para que el área de cliente de OVHcloud reconozca la lista de destinatarios, esta debe cumplir los siguientes requisitos:
+
+- Todos los contactos deben estar en la misma hoja, en una columna llamada «**number**».
+- La lista no debe contener caracteres especiales (como acentos). De lo contrario, no será posible importar el archivo .CSV al área de cliente.
+- Los números deben tener formato internacional. Por ejemplo, un número español tendrá el siguiente formato: +34123456789.
+- El archivo debe guardarse en formato .CSV (utilizando el punto y coma como separador).
+
+#### Con un editor de texto
+
+También es posible crear una lista de destinatarios mediante un archivo .TXT desde un editor de texto o bloc de notas.
+
+- Escriba «**number**» en la primera línea.
+- A continuación, introduzca un número de teléfono en cada línea en formato internacional (+34123456789).
+
+El resultado debería ser como el siguiente:
+
+<img className="thumbnail" alt="lista de destinatarios en editor de texto" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-1.png" loading="lazy" />
+
+### 2. Importar la lista en el área de cliente de OVHcloud
+
+Haga clic en la pestaña <code className="action">Contactos</code> y en <code className="action">Crear una lista de contactos</code>.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-3b.png" loading="lazy" />
+
+Puede crear hasta 9 listas de contactos.
+
+Para ello, haga clic en <code className="action">Acciones</code> y seleccione <code className="action">Añadir</code>.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-5b.png" loading="lazy" />
+
+Asigne un nombre al archivo de destinatarios e importe el archivo local desde el área de cliente.
+
+<img className="thumbnail" alt="importar lista de destinatarios" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-6b.png" loading="lazy" />
+
+### 3. Enviar un SMS a su lista de destinatarios
+
+Una vez importada la lista, puede seguir las instrucciones de nuestra guía [Enviar SMS desde el área de cliente](/guides/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/) para enviar un SMS a los destinatarios de esta lista.
+
+## Más información
+
+[Enviar SMS desde el área de cliente](/guides/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/)
+
+[Agenda de contactos de SMS](/guides/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/)
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

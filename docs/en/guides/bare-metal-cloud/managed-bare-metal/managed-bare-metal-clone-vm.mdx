@@ -1,0 +1,72 @@
+---
+title: Cloning a VM
+excerpt: Learn how to clone an existing virtual machine in vSphere
+updated: 2020-11-18
+---
+
+## Objective
+
+Cloning a VM creates a copy of the source VM.
+
+**This guide explains how to clone a VM.**
+
+## Requirements
+
+- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/)
+- a user account with access to [vSphere](/guides/bare-metal-cloud/managed-bare-metal/vsphere-interface) (created in the [OVHcloud Control Panel](/links/manager))
+- a VM in your cluster
+
+## Instructions
+
+In your [vSphere interface](/guides/bare-metal-cloud/managed-bare-metal/vsphere-interface), navigate to the `Hosts and Clusters` tab of your Managed Bare Metal.
+
+Right-click on the VM to be cloned and click on `Clone`, then `Clone to virtual machine...`.
+
+![clone a VM](/images/guides/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm01.png)
+
+## Select a name and folder
+
+Name this new VM and set its location in your tree.
+
+![clone a VM](/images/guides/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm02.png)
+
+### Select a compute resource
+
+Specify the cluster, host, vApp, or resource pool for this VM.
+
+![clone a VM](/images/guides/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm03.png)
+
+### Select storage
+
+Set the storage location (disk space) for this VM. 
+
+The virtual disk type is on "Thin Provision", which means that a virtual disk will be created but will only use the actual disk space used on the storage, regardless of the disk space previously used on the source VM.
+
+More information about disk types can be found in [this guide](/guides/bare-metal-cloud/managed-bare-metal/choosing-disk-type).
+
+You will be able to choose, via the `VM Storage Policy` row, the default storage policy if you have datastores, or the [VM encryption](/guides/bare-metal-cloud/managed-bare-metal/managed-bare-metal-vm-encrypt) option.
+
+![clone a VM](/images/guides/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm04.png)
+
+### Select clone options
+
+This step allows you to set the network configuration to apply to this VM.
+
+- If you do not check anything, this will not change the network configuration of the new VM compared to the source.
+
+- `Customize the virtual machine's hardware`: This option allows you to specify the new configurations you want to implement on this new VM.
+
+![clone a VM](/images/guides/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm05.png)
+
+> [!warning]
+>
+> If you did not customise the virtual machine, it is necessary to change the clone configuration before starting it, in order to avoid an IP/MAC conflict. 
+>
+> In this case, you simply need to uncheck the network adapter in the virtual machine settings once it has been cloned, just before starting it.
+>
+
+![clone a VM](/images/guides/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm06.png)
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,190 @@
+---
+title: Configurer et utiliser le Click2Call sur une ligne SIP
+description: Découvrez comment configurer et utiliser la fonctionnalité Click2Call avec une ligne SIP OVHcloud
+lastUpdated: 2026-01-26
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+import Api from '@components/Api';
+
+
+## Objectif
+
+La fonctionnalité Click2Call (ou « appel en un clic ») permet de mettre en relation automatiquement deux interlocuteurs. Vous pouvez ainsi bénéficier, par exemple, d'un service de rappel automatique sur votre site Internet (sous réserve d'intégration à ce dernier).
+
+**Découvrez comment configurer et utiliser la fonctionnalité Click2Call avec une ligne SIP OVHcloud.**
+
+## Prérequis
+
+- Disposer d'une ligne SIP possédant un [forfait compatible](https://www.ovhtelecom.fr/telephonie/services_inclus/) avec la fonctionnalité Click2Call.
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+<img className="thumbnail" alt="espace client Telecom VoIP" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png" loading="lazy" />
+
+## En pratique
+
+Ce guide explique comment créer et gérer un identifiant Click2Call et présente les fonctions API permettant l'intégration de cette fonctionnalité dans vos programmes.
+
+:::info
+Les communications lancées depuis la fonctionnalité Click2Call vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](https://www.ovhtelecom.fr/telephonie/voip/) (voir la note en bas de page) et [les tarifs en vigueur](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml).
+
+Le Click2Call peut être utilisé conjointement avec d'[autres fonctionnalités disponibles](https://www.ovhtelecom.fr/telephonie/services_inclus/) sur votre ligne SIP, telles que le [filtrage d'appel](/guides/web-cloud/phone-and-fax/voip/comment-configurer-les-renvois-d-appels/) (permettant par exemple d'empêcher tout appel vers des numéros commençant par « 08 »).
+
+:::
+
+
+### Créer et gérer un identifiant Click2Call
+
+Vous pouvez créer et gérer vos identifiants Click2Call depuis votre espace client OVHcloud ou depuis les [API OVHcloud](https://eu.api.ovh.com/console/).
+
+<Tabs>
+  <Tab label="Depuis l'espace client OVHcloud">
+    Dans l'onglet <code className="action">Gestion des appels</code>, cliquez sur <code className="action">Appel en 1 clic (Click2Call)</code>.
+    
+    <img className="thumbnail" alt="modeintercom" src="/images/web-cloud/phone-and-fax/voip/configurer-utiliser-click2call/click2call-step1.png" loading="lazy" />
+
+Pour que la fonctionnalité Click2Call puisse fonctionner, vous devez disposer d'au moins un identifiant Click2Call. 
+    
+    **Si vous disposez déjà d'un identifiant Click2Call** : vous avez la possibilité de modifier son mot de passe en cliquant sur le pictogramme en forme de crayon ou de le supprimer en cliquant sur le pictogramme en forme de poubelle. Suivez alors les étapes qui apparaissent.
+    
+    **Si vous ne disposez pas d'un identifiant Click2Call** : commencez par en créer un nouveau en cliquant sur <code className="action">Ajouter un identifiant</code>. Renseignez alors l'identifiant que vous souhaitez ajouter puis définissez-lui un mot de passe en respectant les conditions qui apparaissent. Cliquez enfin sur <code className="action">Valider</code>.
+    
+    <img className="thumbnail" alt="modeintercom" src="/images/web-cloud/phone-and-fax/voip/configurer-utiliser-click2call/click2call-step2.png" loading="lazy" />
+
+Une fois que vous disposez d'au moins un identifiant Click2Call et de son mot de passe, vous pouvez poursuivre vers la section suivante « [Utiliser la fonctionnalité Click2Call depuis les API OVHcloud](#utiliser-la-fonctionnalite-click2call) » de cette documentation.
+    
+    Si cela est nécessaire, l'interface de gestion de la fonctionnalité Click2Call vous permet de réaliser un appel de test vers le numéro de votre choix. Pour cela, dans la partie `Appel Click2Call`, renseignez le numéro dans la zone en dessous de « Numéro à appeler » puis cliquez sur <code className="action">Appeler</code>.
+    
+    <img className="thumbnail" alt="modeintercom" src="/images/web-cloud/phone-and-fax/voip/configurer-utiliser-click2call/click2call-step4.png" loading="lazy" />
+  </Tab>
+  <Tab label="Depuis les API OVHcloud">
+    :::info
+    Pour plus d'informations sur le fonctionnement des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) ».
+
+    :::
+
+    
+    Connectez-vous aux [API OVHcloud](https://eu.api.ovh.com/console/) :
+    
+    1. Cliquez sur <code className="action">Authentication</code> en haut à gauche.
+    1. Cliquez ensuite sur <code className="action">Login with OVHcloud SSO</code>.
+    1. Saisissez vos identifiants OVHcloud.
+    1. Cliquez sur le bouton <code className="action">Authorize</code> pour autoriser les appels aux API depuis ce site.
+    
+    Une fois connecté, utilisez les appels ci-dessous pour créer et gérer un identifiant Click2Call.
+    
+    **Créez un nouvel identifiant Click2Call et définissez son mot de passe :**
+    
+    <Api version="v1" section="/telephony" method="POST" route={"/telephony/\\{billingAccount\\}/line/\\{serviceName\\}/click2CallUser"} />    - Renseignez les éléments suivants :
+        - **billingAccount** : groupe de facturation contenant la ligne SIP (sous la forme xxyyyy-ovh-x).
+        - **serviceName** : ligne SIP concernée au format international.
+        - **login** : nom de l'utilisateur Click2Call.
+        - **password** : mot de passe de l'utilisateur Click2Call.
+    - Cliquez sur <code className="action">EXECUTE</code>.
+    
+    **Récupérez l'*id* des identifiants Click2Call créés sur une ligne SIP :**
+    
+    <Api version="v1" section="/telephony" method="GET" route={"/telephony/\\{billingAccount\\}/line/\\{serviceName\\}/click2CallUser"} />    - Renseignez les éléments suivants :
+        - **billingAccount** : groupe de facturation (sous la forme xxyyyy-ovh-x).
+        - **serviceName** : ligne SIP concernée au format international.
+    - Cliquez sur <code className="action">EXECUTE</code>.
+    
+    **Récupérez les informations relatives à un identifiant Click2Call, excepté son mot de passe :**
+    
+    <Api version="v1" section="/telephony" method="GET" route={"/telephony/\\{billingAccount\\}/line/\\{serviceName\\}/click2CallUser/\\{id\\}"} />    - Renseignez les éléments suivants :
+        - **billingAccount** : groupe de facturation (sous la forme xxyyyy-ovh-x).
+        - **id** : *id* récupéré précédemment.
+        - **serviceName** : ligne SIP concernée au format international.
+    - Cliquez sur <code className="action">EXECUTE</code>.
+    
+    **Modifiez le mot de passe d'un identifiant Click2Call :**
+    
+    <Api version="v1" section="/telephony" method="POST" route={"/telephony/\\{billingAccount\\}/line/\\{serviceName\\}/click2CallUser/\\{id\\}/changePassword"} />    - Renseignez les éléments suivants :
+        - **billingAccount** : groupe de facturation (sous la forme xxyyyy-ovh-x).
+        - **id** : *id* récupéré précédemment.
+        - **serviceName** : ligne SIP concernée au format international.
+        - **password** : nouveau mot de passe de l'utilisateur.
+    - Cliquez sur <code className="action">EXECUTE</code>.
+    
+    **Supprimez un identifiant Click2Call :**
+    
+    <Api version="v1" section="/telephony" method="DELETE" route={"/telephony/\\{billingAccount\\}/line/\\{serviceName\\}/click2CallUser/\\{id\\}"} />    - Renseignez les éléments suivants :
+        - **billingAccount** : groupe de facturation (sous la forme xxyyyy-ovh-x).
+        - **id** : *id* récupéré précédemment.
+        - **serviceName** : ligne SIP concernée au format international.
+    - Cliquez sur <code className="action">EXECUTE</code>.
+  </Tab>
+</Tabs>
+
+
+### Utilisez la fonctionnalité Click2Call depuis les API OVHcloud <a name="utiliser-la-fonctionnalite-click2call"></a>
+
+Muni d'un identifiant Click2Call et de son mot de passe, vous pouvez à présent utiliser la fonctionnalité Click2Call.
+
+Connectez-vous aux [API OVHcloud](https://eu.api.ovh.com/console/) :
+
+1. Cliquez sur <code className="action">Authentication</code> en haut à gauche.
+1. Cliquez ensuite sur <code className="action">Login with OVHcloud SSO</code>.
+1. Saisissez vos identifiants OVHcloud.
+1. Cliquez sur le bouton <code className="action">Authorize</code> pour autoriser les appels aux API depuis ce site.
+
+:::info
+Pour plus d'informations sur le fonctionnement des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) ».
+
+:::
+
+
+Les appels API renseignés ci-dessous vous permettront d'utiliser la fonctionnalité Click2Call. Vous pourrez par exemple intégrer ces derniers au code de votre site Internet afin de générer un rappel automatique depuis un formulaire.
+
+#### Exécuter des appels depuis la ligne SIP où a été activé le Click2Call
+
+<Api version="v1" section="/telephony" method="POST" route={"/telephony/\{billingAccount\}/line/\{serviceName\}/click2CallUser/\{id\}/click2Call"} />
+
+Les éléments à renseigner sont les suivants :
+
+- **billingAccount** : groupe de facturation (sous la forme xxyyyy-ovh-x).
+- **id** : *id* de l'identifiant Click2Call.
+- **serviceName** : ligne SIP concernée au format international.
+- **calledNumber** : numéro à appeler au format international.
+- **callingNumber** : ligne SIP concernée au format international.
+
+:::info
+Personnalisez si besoin [le numéro présenté depuis votre ligne SIP](/guides/web-cloud/phone-and-fax/voip/gerer-la-presentation-du-numero-sur-votre-ligne-sip/).
+
+:::
+
+
+#### Exécuter les appels depuis la ligne SIP en activant le mode intercom de votre téléphone
+
+Le mode intercom sera opérationnel sous réserve de disposer d'un téléphone ou d'un équipement compatible.
+
+<Api version="v1" section="/telephony" method="POST" route={"/telephony/\{billingAccount\}/line/\{serviceName\}/click2Call"} />
+
+Les éléments à renseigner sont les suivants :
+
+- **billingAccount** : groupe de facturation (sous la forme xxyyyy-ovh-x).
+- **id** : *id* de l'identifiant Click2Call.
+- **serviceName** : ligne SIP concernée au format international.
+- **calledNumber** : numéro à appeler au format international.
+- **callingNumber** : ligne SIP concernée au format international.
+- **intercom** : par défaut sur `false`, passez ce paramètre à `true` pour activer le mode intercom.
+
+:::info
+Personnalisez si besoin [le numéro présenté depuis votre ligne SIP](/guides/web-cloud/phone-and-fax/voip/gerer-la-presentation-du-numero-sur-votre-ligne-sip/).
+
+:::
+
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

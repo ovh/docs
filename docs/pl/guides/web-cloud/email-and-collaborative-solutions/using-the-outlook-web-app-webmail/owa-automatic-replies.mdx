@@ -1,0 +1,74 @@
+---
+title: Tworzenie odpowiedzi automatycznych w interfejsie OWA
+description: Dowiedz się, jak skonfigurować odpowiedzi automatyczne w interfejsie OWA
+lastUpdated: 2024-10-22
+---
+
+## Wprowadzenie
+
+Ta funkcja programu Exchange umożliwia skonfigurowanie automatycznych odpowiedzi na e-maile przysłane na Twoje konto w różnych sytuacjach, na przykład podczas nieobecności.
+
+**Dowiedz się, jak włączyć odpowiedzi automatyczne przy użyciu interfejsu Outlook Web App (OWA).**
+
+## Wymagania początkowe
+
+ - Instalacja rozwiązania poczty elektronicznej OVHcloud [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
+- dostęp do konta e-mail (adres e-mail i hasło)
+
+## W praktyce
+
+:::warning
+Jeśli Twój adres e-mail jest związany z ofertą **MX Plan** (zawarty w ofercie [hosting www](https://www.ovhcloud.com/pl/web-hosting/) i [hosting 100M za darmo](https://www.ovhcloud.com/pl/domains/free-web-hosting/)), w Panelu klienta znajduje się sekcja zatytułowana <code className="action">Zarządzanie autoresponderami</code>. Utwórz automatyczną odpowiedź w Panelu klienta OVHcloud, korzystając z dokumentacji ["MX Plan - Tworzenie automatycznej odpowiedzi na adres e-mail"](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/feature-auto-responses/).
+
+:::
+
+
+### Włączanie funkcji
+
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovhcloud.com/pl/mail/). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję <code className="action">Odpowiedzi automatyczne</code>.
+
+<img className="thumbnail" alt="owaoptions" src="/images/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-automatic-replies/exchange-autorep-step1.png" loading="lazy" />
+
+W interfejsie po prostu włącz funkcję, zaznaczając opcję <code className="action">Wysyłaj odpowiedzi automatyczne</code>. W poniższych polach możesz ustawić dokładny okres wysyłania odpowiedzi lub włączyć funkcję na czas nieokreślony.
+
+:::info
+Jeśli nie określisz czasu rozpoczęcia i zakończenia, automatyczne odpowiedzi zostaną wyłączone przez Ciebie.
+
+:::
+
+
+Ułóż wiadomość w polu edytora i potwierdź, klikając przycisk <code className="action">Zapisz</code> w lewym górnym rogu.
+
+<img className="thumbnail" alt="owaautoreply" src="/images/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-automatic-replies/exchange-autorep-step2.png" loading="lazy" />
+
+### Typy odpowiedzi
+
+Powyższe instrukcje dotyczą odpowiedzi na e-maile wysłane przez użytkowników w usłudze Exchange. Jeśli zaznaczysz pole wyboru „Wysyłaj odpowiedzi automatyczne do nadawców spoza mojej organizacji”, możesz przygotować osobną wiadomość dla innych nadawców. W takim przypadku będą dostępne dwie dodatkowe opcje odpowiedzi automatycznych:
+
+- **„Wysyłaj odpowiedzi tylko do nadawców z mojej listy kontaktów”**: wiadomość otrzymają tylko Twoje kontakty.
+
+- **„Wysyłaj odpowiedzi automatyczne do wszystkich zewnętrznych nadawców”**: wiadomość otrzyma każdy, kto przyśle e-maila podczas Twojej nieobecności.
+
+Alternatywną wiadomość dla nadawców zewnętrznych można wprowadzić w drugim polu edytora. Zwykle pierwsza wiadomość jest przeznaczona dla współpracowników, a druga dla znajomych, klientów lub innych osób, które mogą się z Tobą skontaktować.
+
+<img className="thumbnail" alt="owaaddreply" src="/images/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-automatic-replies/exchange-autorep-step3.png" loading="lazy" />
+
+### Informacje dodatkowe
+
+- Po włączeniu funkcji odpowiedzi automatycznych e-maile będą przychodzić jak zwykle do Twojej skrzynki odbiorczej.
+
+- Aby uniknąć spamu i pętli e-maili, każdy nadawca otrzyma tylko jedną odpowiedź automatyczną.
+
+## Sprawdź również
+
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Delegowanie uprawnień do konta Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[Exchange: współdzielenie kalendarza w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

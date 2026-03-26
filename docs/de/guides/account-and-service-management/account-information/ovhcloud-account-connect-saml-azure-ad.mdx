@@ -1,0 +1,294 @@
+---
+title: SSO-Verbindungen zu Ihrem OVHcloud Account über Entra ID aktivieren
+description: Erfahren Sie hier, wie Sie Entra ID (vormals Azure Active Directory) über SAML 2.0 mit Ihrem OVHcloud Account verbinden
+lastUpdated: 2025-05-15
+---
+
+## Ziel
+
+Sie können die Authentifizierungsmethode **Single Sign-On** (SSO) verwenden, um sich in Ihren OVHcloud Kunden-Account einzuloggen. Um diese Verbindungen zu aktivieren, müssen Ihr Account und Ihr Entra ID (vormals Azure Active Directory) mithilfe von SAML-Authentifizierungen (*Security Serving Markup Language*) konfiguriert werden.
+
+**Diese Anleitung erklärt, wie Sie Ihren OVHcloud Kunden-Account mit einem externen Entra ID verbinden.**
+
+## Voraussetzungen
+
+- Sie haben Zugriff auf die Rollen **Application Administrator** und **User Administrator** eines Entra ID Dienstes.
+- Sie verfügen über einen [OVHcloud Kunden-Account](/guides/account-and-service-management/account-information/ovhcloud-account-creation/).
+
+{/* CP-NAV-START:iam-saml-sso */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [SAML SSO](https://manager.eu.ovhcloud.com/#/iam/identities/sso)
+- **Navigationspfad:** <code className="action">Identität, Sicherheit und Operationen</code> > <code className="action">Benutzer</code> > <code className="action">SSO-Verbindung</code>
+
+---
+{/* CP-NAV-END:iam-saml-sso */}
+
+## In der praktischen Anwendung
+
+:::info
+Damit ein Service Provider (Ihr OVHcloud Account) eine SSO-Verbindung zu einem Identity Provider (Ihr Entra ID) herstellen kann, ist es notwendig, das gegenseitige Vertrauensverhältnis zu konfigurieren (*Party Trust*).
+
+:::
+
+
+### Entra ID Benutzer und Gruppen
+
+Ihr Entra ID fungiert als Identity Provider. Authentifizierungsanfragen für Ihren OVHcloud Account werden nur dann akzeptiert, wenn Sie diesen zuerst als vertrauenswürdig deklariert haben.
+
+Konfigurieren Sie zunächst Identitäten auf der Seite des Identity Providers.
+
+#### Entra ID Benutzer
+
+Gehen Sie auf Ihr Entra ID Dashboard.
+
+<img className="thumbnail" alt="Entra ID Dashboard" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_dashboard.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Users</code> im linken Menü.
+
+<img className="thumbnail" alt="Benutzer des Menüs Entra ID" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_menu_user.png" loading="lazy" />
+
+Erstellen Sie neue Benutzer oder überprüfen Sie Ihre vorhandenen Benutzer, indem Sie darauf klicken.
+
+Für dieses Beispiel wird der Benutzer **John Smith** verwendet.
+
+<img className="thumbnail" alt="User Entra ID" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_user.png" loading="lazy" />
+
+Bei Ausführung einer SSO-Authentifizierung wird die Identität von **John Smith** von Entra ID für den OVHcloud Account bereitgestellt. Diese Identität muss jedoch mindestens eine Gruppe enthalten. Wenn noch keine Gruppe existiert, fügen Sie den Benutzer **John Smith** wie folgt hinzu.
+
+#### Entra ID Gruppen
+
+Klicken Sie auf <code className="action">Groups</code> im linken Menü.
+
+<img className="thumbnail" alt="Gruppen von Entra ID" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_menu_groups.png" loading="lazy" />
+
+Klicken Sie oben auf <code className="action">New group</code> und geben Sie alle notwendigen Daten ein.
+
+Für dieses Beispiel wird die Gruppe **manager@ovhcloudsaml** verwendet.
+
+<img className="thumbnail" alt="Entra ID Group Schritt 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_group_1.png" loading="lazy" />
+
+Klicken Sie auf den Button <code className="action">Create</code>, um alle Informationen zu dieser Gruppe anzuzeigen.
+
+<img className="thumbnail" alt="Entra ID Group Schritt 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_group_2.png" loading="lazy" />
+
+Alle Benutzer, die für die SSO-Authentifizierung verwendet werden sollen, müssen zu einer Gruppe hinzugefügt werden.
+
+In diesem Beispiel gehört der Benutzer **John Smith** zur Gruppe **manager@ovhcloudsaml**.
+
+Klicken Sie im Interface der ausgewählten Gruppe links auf <code className="action">Members</code> und klicken Sie im oberen Menü auf <code className="action">Add Members</code>.
+
+<img className="thumbnail" alt="Entra ID Group User Assignment Schritt 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_group_user_assignment_1.png" loading="lazy" />
+
+Wählen Sie den Benutzer aus, der zu dieser Gruppe hinzugefügt werden soll, und klicken Sie dann auf den Button <code className="action">Select</code>.
+
+<img className="thumbnail" alt="Entra ID Group User Assignment Schritt 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_group_user_assignment_2.png" loading="lazy" />
+
+Damit ist der Benutzer der Gruppe zugewiesen.
+
+Um SSO-Authentifizierungen durchzuführen, muss eine Entra ID Anwendung erstellt werden.
+
+SSO muss für diese Anwendung konfiguriert werden.
+
+### Entra ID Anwendungen
+
+Erstellen Sie zunächst eine Anwendung, wenn diese noch nicht existiert.
+
+#### Eine Entra ID Anwendung erstellen
+
+Klicken Sie auf <code className="action">Enterprise applications</code> im linken Menü.
+
+<img className="thumbnail" alt="Entra ID Menüanwendungen" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_menu_applications.png" loading="lazy" />
+
+Klicken Sie oben auf <code className="action">New application</code>.
+
+<img className="thumbnail" alt="Entra ID Schritt 1 Anwendungen" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_applications_1.png" loading="lazy" />
+
+Klicken Sie oben auf <code className="action">Create your own application</code>.
+
+<img className="thumbnail" alt="Entra ID Schritt 2 Anwendungen" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_applications_2.png" loading="lazy" />
+
+Wählen Sie links <code className="action">Non-gallery</code> aus und klicken Sie auf den Button <code className="action">Create</code>.
+
+<img className="thumbnail" alt="Entra ID Schritt 3 Anwendungen" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_applications_3.png" loading="lazy" />
+
+Die Anwendungsdetails werden angezeigt.
+
+<img className="thumbnail" alt="Entra ID Schritt 4 Anwendungen" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_applications_4.png" loading="lazy" />
+
+Die Entra ID Anwendung wird nun erstellt. Benutzer, die SSO-Authentifizierungen über diese Anwendung durchführen sollen, müssen zur *Application* hinzugefügt werden.
+
+#### Entra ID Anwendung - Zuweisung von Benutzern
+
+:::info
+Damit ein Benutzer eine SSO-Authentifizierung von einer Entra ID Anwendung aus durchführen kann, muss er zu dieser Anwendung hinzugefügt werden. Nachfolgend wird beschrieben, wie Sie einen Benutzer zu einer Entra ID Anwendung hinzufügen.
+
+Wenn Sie über **Entra ID Premium** verfügen, ist es jedoch besser, eine Benutzergruppe statt Benutzern hinzuzufügen.
+
+:::
+
+
+Öffnen Sie <code className="action">Users and groups</code> im linken Menü und klicken Sie oben auf <code className="action">Add user/group</code>.
+
+Klicken Sie dann auf den Bereich <code className="action">Users</code>, wählen Sie den Benutzer aus, der zur Anwendung hinzugefügt werden soll, und klicken Sie auf den Button <code className="action">Select</code>.
+
+<img className="thumbnail" alt="Entra ID Application User Assignment Schritt 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_application_user_assignment_1.png" loading="lazy" />
+
+<img className="thumbnail" alt="Entra ID Application User Assignment Schritt 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_application_user_assignment_2.png" loading="lazy" />
+
+Wenn die Anwendung erstellt und einem Benutzer zugewiesen wurde, kann SSO via SAML eingerichtet werden.
+
+#### Entra ID Application SSO
+
+Klicken Sie links auf den Button <code className="action">Overview</code> und öffnen Sie den Bereich <code className="action">Set up single sign on</code>.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_1.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">SAML</code>.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_2.png" loading="lazy" />
+
+Klicken Sie oben auf <code className="action">Upload metadata file</code>.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 3" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_3.png" loading="lazy" />
+
+Klicken Sie auf das Icon <code className="action">Select a file</code> und wählen Sie die Metadaten-Datei für den OVHcloud Service Provider aus. Klicken Sie auf den Button <code className="action">Add</code>.
+
+Sie erhalten die passende Metadatendatei über folgende Links:
+
+- [Metadaten der EU-Region](https://www.ovh.com/auth/sso/saml/sp/metadata.xml)
+- [Metadaten der CA-Region](https://ca.ovh.com/auth/sso/saml/sp/metadata.xml)
+
+Laden Sie die Metadatendatei herunter.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 5" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_5.png" loading="lazy" />
+
+Die SAML-Konfiguration wird angezeigt.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 6" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_6.png" loading="lazy" />
+
+Klicken Sie im Bereich <code className="action">Attributes & Claims</code> auf den Button <code className="action">Edit</code>.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 9" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_9.png" loading="lazy" />
+
+Fügen Sie das UPN-Attribut (User Principal Name) zu den SAML-Informationen hinzu, um OVHcloud über die E-Mail des Benutzers zu informieren. Dies ist ein notwendiger Schritt.
+
+Klicken Sie im oberen Menü auf <code className="action">Add a new claim</code>.
+
+Geben Sie im Feld <code className="action">Name</code> den Wert `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` ein.
+
+Geben Sie im Feld <code className="action">Source attribute</code> <code className="action">user.mail</code> ein.
+
+Ihr Interface sollte dann dem folgenden Screenshot sehr ähnlich sein:
+
+<img className="thumbnail" alt="Entra ID SSO UPN-Eintrag" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_9bis.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Save</code>
+
+Deklarieren Sie jetzt das Attribut, das für die Gruppe des Benutzers verwendet wird.
+
+Klicken Sie oben auf <code className="action">Add a group claim</code>.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 10" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_10.png" loading="lazy" />
+
+Wählen Sie <code className="action">Security Groups</code> und **Group ID** aus <code className="action">Source attribute</code> und klicken Sie dann auf <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 11" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_11.png" loading="lazy" />
+
+Der *Claim* **groups** sollte nun in der Liste erscheinen.
+
+Kopieren und speichern Sie den Wert des **Claim name** (etwa in einem Texteditor), da er später benötigt wird.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 12" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_12.png" loading="lazy" />
+
+Kopieren Sie aus <code className="action">SAML certificates</code> den Wert im Feld <code className="action">App Federation Metadata Url</code>.
+
+Verwenden Sie diesen Link zum Herunterladen der Metadaten-Datei der Entra ID Anwendung, um sie später im OVHcloud Kunden-Account zu verwenden.
+
+<img className="thumbnail" alt="Entra ID SSO Schritt 8" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_sso_8.png" loading="lazy" />
+
+### Das Vertrauen zum OVHcloud Account und die Verbindung konfigurieren
+
+Das Hinzufügen Ihrer Entra ID Anwendung als vertrauenswürdiger Identity Provider erfolgt auf der Seite [SAML SSO](https://manager.eu.ovhcloud.com/#/iam/identities/sso) Ihres OVHcloud Kundencenters, in dem Sie die Metadaten des Identity Providers hinterlegen können.
+
+#### OVHcloud Vertrauen aufbauen
+
+Geben Sie im Feld **Nutzerattributname** den **UPN** der Entra ID Anwendung ein und im Feld **Name des Gruppenattributs** den zuvor gespeicherten Wert des *Claim name* für **groups**.
+
+Geben Sie die XML-Metadaten der Entra ID Anwendung aus der zuvor gespeicherten Datei ein.
+
+Sie können die lokalen Benutzer beibehalten, indem Sie die Option `Aktive OVHcloud User beibehalten` aktivieren.
+
+Klicken Sie auf den Button <code className="action">Bestätigen</code>.
+
+<img className="thumbnail" alt="SSO Step 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/ovhcloud_sso_1.png" loading="lazy" />
+
+Ihre Entra ID Anwendung gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im OVHcloud Account Gruppen hinzugefügt werden.
+
+:::warning
+Wenn Sie sich in diesem Schritt über SSO verbinden, wird wahrscheinlich eine Fehlermeldung `Not in valid groups` angezeigt.
+
+Ihr OVHcloud Account überprüft, ob der authentifizierende Benutzer zu einer bestehenden Gruppe auf dem Account gehört.
+
+:::
+
+
+Um dies zu erreichen, überprüfen Sie das Attribut "Group", das von Ihrer Entra ID Anwendung zurückgegeben wird: das Feld **Object Id**.
+
+#### Deklaration von Gruppen für OVHcloud
+
+<img className="thumbnail" alt="Entra ID Group Schritt 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_group_2.png" loading="lazy" />
+
+Um eine Gruppe hinzuzufügen, gehen Sie zum Abschnitt <code className="action">Identitäten</code> und dann zum Tab <code className="action">Nutzergruppen</code>. Klicken Sie dann auf die Schaltfläche <code className="action">Eine Gruppe anmelden</code>:
+
+<img className="thumbnail" alt="OVHcloud User Management Gruppen Schritt 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/ovhcloud_sso_menu_1.png" loading="lazy" />
+
+Geben Sie den Gruppennamen ein und wählen Sie die zugehörige Rolle aus. Klicken Sie anschließend auf <code className="action">Bestätigen</code>.
+
+<img className="thumbnail" alt="OVHcloud User Management Gruppen Schritt 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/ovhcloud_sso_menu_2.png" loading="lazy" />
+
+Die erstellte Gruppe sollte in der Liste erscheinen.
+
+<img className="thumbnail" alt="OVHcloud User Management Gruppen Schritt 3" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/ovhcloud_sso_menu_3.png" loading="lazy" />
+
+Achtung, wenn Sie die Berechtigung `Keine` erteilen, müssen Sie dieser Gruppe Rechte über die [IAM-Richtlinien](/guides/account-and-service-management/account-information/iam-policy-ui/) zuweisen.
+
+### Verbindung via SSO
+
+Geben Sie auf der [OVHcloud Login-Seite](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) Ihre [Kundenkennung](/guides/account-and-service-management/account-information/ovhcloud-account-creation#was-ist-meine-kundenkennung/) ein, gefolgt von **/idp***. Klicken Sie ohne ein Passwort einzugeben auf <code className="action">Login</code>.
+
+<img className="thumbnail" alt="SSO Login step 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/ovhcloud_sso_login_1.png" loading="lazy" />
+
+Sie werden dann auf die Loginseite Ihrer Entra ID Anwendung weitergeleitet. Wählen Sie <code className="action">Use another account</code>.
+
+<img className="thumbnail" alt="Entra ID Login Schritt 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_login_1.png" loading="lazy" />
+
+Geben Sie die E-Mail-Adresse des Benutzers der Entra ID Anwendung ein und klicken Sie dann auf den Button <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Entra ID Login Schritt 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_login_2.png" loading="lazy" />
+
+Geben Sie das Passwort des Benutzers der Entra ID Anwendung ein und klicken Sie dann auf den Button <code className="action">Sign In</code>.
+
+<img className="thumbnail" alt="Entra ID Login Schritt 3" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/azure_ad_login_3.png" loading="lazy" />
+
+Sie sind nun mit derselben Kundenkennung eingeloggt, jedoch über Entra ID SSO und mit Ihrem Azure *Application* Benutzer.
+
+<img className="thumbnail" alt="SSO Login step 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-azure-ad/ovhcloud_sso_login_2.png" loading="lazy" />
+
+Wenn Ihre E-Mail nicht unterhalb von `Connected via SSO` angezeigt wird, haben Sie das **UPN**-Attribut nicht korrekt konfiguriert, sodass einige Funktionen möglicherweise nicht funktionieren.
+
+## Weiterführende Informationen
+
+[OVHcloud Kunden-Account erstellen](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+
+[OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](/guides/account-and-service-management/account-information/all-about-username/)
+
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/guides/account-and-service-management/account-information/manage-ovh-password/)
+
+[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/guides/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/)
+
+[Verwendung von IAM-Richtlinie über Ihr Kundencenter](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

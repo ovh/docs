@@ -1,0 +1,131 @@
+.rp-nav-menu {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+
+  @media (min-width: 1280px) {
+    gap: 32px;
+  }
+
+  @media (max-width: 1279px) {
+    gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__container {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 6px;
+
+      // text - using !important to override Rspress defaults
+      text-align: center;
+      font-size: 16px !important;
+      font-style: normal;
+      font-weight: 600 !important;
+      line-height: 22px !important;
+      color: #bef1ff !important;
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15px;
+      height: 15px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      .rp-nav-menu__item__container {
+        text-align: center;
+        font-style: normal;
+        text-decoration: underline;
+        color: #bef1ff !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+      }
+      .rp-nav-menu__item__icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--active {
+      .rp-nav-menu__item__container {
+        color: var(--rp-c-brand) !important;
+        text-align: center;
+        font-size: 14px !important;
+        font-style: normal;
+      }
+    }
+  }
+
+  &__divider {
+    width: 1px;
+    height: 15px;
+    background: #fff; /*var(--rp-c-divider)*/
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+  a[target='_blank'] {
+    &::after {
+      content: '';
+      font-weight: 700;
+      display: inline-block;
+      font-size: 0.7em;
+      margin-left: 0.5em;
+      margin-right: 0.1em;
+
+      color: #fff;  /*var(--rp-c-text-3)*/
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+// Language dropdown styles
+.rp-nav-langs-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  min-width: 160px;
+  padding: 8px 0;
+  background: var(--rp-c-bg);
+  border: 1px solid var(--rp-c-divider);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  &__item {
+    display: block;
+    padding: 8px 16px;
+    color: var(--rp-c-text-1);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background: var(--rp-c-bg-soft);
+    }
+
+    &--active {
+      color: var(--rp-c-brand);
+      background: var(--rp-c-bg-soft);
+    }
+  }
+}

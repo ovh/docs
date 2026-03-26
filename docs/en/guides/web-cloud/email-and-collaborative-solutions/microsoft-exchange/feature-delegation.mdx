@@ -1,0 +1,186 @@
+---
+title: Delegating permissions on an email account
+description: Find out how to delegate permissions on your email account to another user
+lastUpdated: 2025-04-28
+---
+
+## Objective
+
+With the OVHcloud Exchange or Email Pro services, you can set up professional email addresses, and use them with a range of features for collaborative work. One of these features is the ability to delegate specific permissions (for example sending or access permissions) between different email accounts.
+
+**This guide explains how to delegate permissions on your email account to another user.**
+
+## Requirements
+
+- An [OVHcloud Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) solution already set up
+
+:::warning
+**For the [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) offer**, the delegation features described in this guide can only be used via [Webmail](https://www.ovhcloud.com/en-gb/mail/). The protocols that allow them to be used via an email client require an [Exchange account](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/).
+
+:::
+
+
+- At least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
+- Credentials for the email account that will be delegated new permissions
+
+{/* CP-NAV-START:web-exchange */}
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### OVHcloud Control Panel Access
+
+**Exchange:**
+
+- **Direct link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Select your platform
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-exchange */}
+
+## Instructions
+
+Before you get started, define the permissions you want to delegate. As a reminder, when you set up a delegation, you are granting one or more email accounts additional permissions for the email account concerned.
+
+|Permissions|Description|
+|---|---|
+|**Send As** permission|Allows the user to send emails as another account. The user sending the email will not appear as the sender. Instead, the account for which the user holds the **Send As** permission will appear as the sender. There is no way for the recipient to tell whether an email has been sent by the original account, or by another user with the **Send As** permission.|
+|**Send on Behalf** permission|Allows the user to send on behalf of another account. The user sending the email will not appear as the sender. Instead, the account for which the user holds the **Send on Behalf** permission will appear as the sender. However, in this case there will be a comment showing that the message was sent by another user on behalf of the original account.|
+|**Access** permission|Gives the user read-only access to the account they have been delegated this permission for. This access type does not allow the user to send any emails. It only allows them to view content.|
+
+:::warning
+The "Send As" and "Send on Behalf" permissions cannot be used together at the same time. However, you can combine other permissions.
+
+:::
+
+
+When you have identified the account that you want to delegate permissions for, determined the kinds of permissions you want to delegate, and listed the users that will be delegated these permissions, go to the next step.
+
+### Step 1: Setting up the delegation
+
+Go to the <code className="action">Email accounts</code> tab.
+
+The table that appears will list all of the accounts linked to your service. Click on the three dots to the right of the account you want to delegate permissions for, then on <code className="action">Manage delegations</code>.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step1.png" loading="lazy" />
+
+In the configuration window, select the permissions you want to delegate. You will need to link them to one or more accounts that you wish to grant the permissions to. Then press <code className="action">Next</code>.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step2.png" loading="lazy" />
+
+Take a few moments to check the change summary. If the information in the summary is correct, click <code className="action">Confirm</code>. Within a few minutes, the delegation will be created on our servers.
+
+Once the delegation has been configured, `test@mypersonaldomainname.ovh` can carry out the selected actions on the `test2@mypersonaldomainname.ovh` account.
+
+### Step 2: Using the delegated permissions
+
+Now that the delegation has been set up, it is ready to use. Before you go any further, please ensure that you have the credentials for the email account that has been granted the newly delegated permissions.
+
+This will work differently depending on the permissions you have delegated, and also the software or web interface you are using to access your email account. From this point onwards in the guide, you should follow the instructions that are relevant to the permissions you have delegated.
+
+:::warning
+This solution requires knowledge of the software or interface you would like to use. We have provided general information below on how to proceed, but we recommend contacting a specialist provider and/or getting in touch with the publisher of the interface or software if you encounter any difficulties. We will not be able to assist you ourselves.
+
+:::
+
+
+#### 2.1 Using your access permissions
+
+- **From the Outlook Web App (OWA)**
+
+Log in via the [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail/) using the credentials for the email account that has been delegated permissions. Once you are logged in, right-click on the name of the account in the menu on the left-hand side, then select <code className="action">Add shared folder</code>.
+
+In the window that pops up, enter the name for the account that holds the delegated permissions, then click <code className="action">Add</code>. The account will then appear in the left-hand menu, and you can view its content.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step3.png" loading="lazy" />
+
+- **From the Outlook application for Windows**
+
+:::warning
+Use of this feature **via Outlook** is only available for an email account [Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/).
+
+:::
+
+
+In the Outlook application, click <code className="action">File</code> in the menu bar at the top of your screen, then <code className="action">Account Settings</code>. In the drop-down menu, click again on <code className="action">Account Settings</code>. In the window that pops up, select the account with the delegated permission, then click <code className="action">Change</code>.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step4.png" loading="lazy" />
+
+Next, click on <code className="action">More Settings</code>. In the new window, go to the <code className="action">Advanced</code> tab, then click <code className="action">Add</code>. Enter the name of the account that will use the delegated permission, then confirm the addition. The account will then appear in the left-hand menu on your application, and you can view its content.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step5.png" loading="lazy" />
+
+#### 2.2 Using the "Send As" permission
+
+- **From the Outlook Web App (OWA)**
+
+Log in via the [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail/) using the credentials for the email account that has been delegated permissions. Once you have logged in, start editing a new email by clicking <code className="action">+ New</code>.
+
+In the zone that appears, click on the three dots, then <code className="action">Show From</code>. Then click on the <code className="action">From</code> button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear.
+
+At this stage, you are now ready to write and send your email.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step6.png" loading="lazy" />
+
+- **From the Outlook application for Windows**
+
+:::warning
+Use of this feature **via Outlook** is only available for an [Exchange email account](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/).
+
+:::
+
+
+In your Outlook application, start editing a new email. Ensure that the <code className="action">From</code> button is visible in the editing window. If it is not visible, go to the <code className="action">Options</code> tab, then click <code className="action">From</code>.
+
+Then click on the <code className="action">From</code> button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it is not displayed, click <code className="action">Other Email Address</code>, enter the email address you would like to appear as the sender, then confirm.
+
+At this stage, you are now ready to write and send your email.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step7.png" loading="lazy" />
+
+#### 2.3 Use the "Send on Behalf" permission.
+
+- **From the Outlook Web App (OWA)**
+
+Log in via the [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail/) using the credentials for the email account that has been delegated permissions. Once you have logged in, start editing a new email by clicking <code className="action">+ New</code>.
+
+In the zone that appears, click on the three dots, then <code className="action">Show From</code>. Then click on the <code className="action">From</code> button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear.
+
+At this stage, you are now ready to write and send your email.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step6.png" loading="lazy" />
+
+- **From the Outlook application for Windows**
+
+:::warning
+Use of this feature **via Outlook** is only available for an email account [Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/).
+
+:::
+
+
+In your Outlook application, start editing a new email. Ensure that the <code className="action">From</code> button is visible in the editing window. If it is not visible, go to the <code className="action">Options</code> tab, then click <code className="action">From</code>.
+
+Then click on the <code className="action">From</code> button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it is not displayed, click <code className="action">Other Email Address</code>, enter the email address you would like to appear as the sender, then confirm.
+
+At this stage, you are now ready to write and send your email.
+
+<img className="thumbnail" alt="delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step7.png" loading="lazy" />
+
+## Go further <a name="go-further"></a>
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+[Using the Outlook Web App with an email account](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Sharing folders in OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-directory-sharing/)
+
+[Creating contact groups](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

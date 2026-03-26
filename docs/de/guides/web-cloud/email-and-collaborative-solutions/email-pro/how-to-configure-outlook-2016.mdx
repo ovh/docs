@@ -1,0 +1,304 @@
+---
+title: E-Mail Pro - Einrichten eines E-Mail-Accounts auf klassischem Outlook für Windows
+description: So konfigurieren Sie Ihren E-Mail Pro Account mit dem klassischen Outlook für Windows
+lastUpdated: 2026-01-30
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
+
+**Diese Anleitung erklärt, wie Sie Ihre E-Mail Pro Adresse in Windows Outlook oder neuer einrichten.**
+
+## Voraussetzungen
+
+- Sie verfügen über einen [E-Mail Pro Account](https://www.ovhcloud.com/de/emails/email-pro/).
+- Sie haben [Outlook "Classic"](https://support.microsoft.com/de-de/office/outlook-classic-installieren-oder-neu-installieren-5c94902b-31a5-4274-abb0-b07f4661edf5) installiert.
+- Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
+
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">E-Mail Pro</code> > Wählen Sie Ihre Plattform aus
+
+---
+{/* CP-NAV-END:web-email-pro */}
+
+<details>
+
+<summary>Informationen zur Verwaltung und Konfiguration der OVHcloud Dienste</summary>
+
+
+In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
+
+Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+
+</details>
+
+
+## In der praktischen Anwendung
+
+:::warning
+Diese Dokumentation gilt ausschließlich für **Klassisches Outlook**, der in der Microsoft 365-Suite erhältlich ist. Wenn Sie die neue Outlook-Version verwenden, konsultieren Sie unsere Anleitung "[E-Mail Pro - Konfigurieren Ihres E-Mail Pro Accounts im neuen Outlook für Windows](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-windows-10/)".
+
+Um Klassisches Outlook auf Ihrem Windows-Computer zu installieren, laden Sie es von der Microsoft-Seite "[Installieren oder Erneutes Installieren des klassischen Outlook auf einem Windows-PC](https://support.microsoft.com/de-de/office/outlook-classic-installieren-oder-neu-installieren-5c94902b-31a5-4274-abb0-b07f4661edf5)" herunter und installieren Sie es.
+
+Nach Abschluss der Installation können Sie die beiden Versionen unterscheiden, wenn sie installiert sind, indem Sie "Outlook" in der Windows-Suchleiste eingeben. Sie können dann den Unterschied wie unten sehen.
+
+<img className="thumbnail" alt="Outlook Windows" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/outlook-windows-identify01.png" loading="lazy" />
+
+:::
+
+
+### Account hinzufügen <a name="add-account"></a>
+
+:::info
+In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
+
+Klicken Sie auf [diesen Link](https://manager.eu.ovhcloud.com/#/web/email_pro), um auf den Bereich <code className="action">E-Mail Pro</code> zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs <code className="action">Allgemeine Informationen</code> angezeigt.
+
+:::
+
+
+- **Wenn Sie die Anwendung zum ersten Mal starten**: Es öffnet sich ein Konfigurationsassistent und Sie werden dazu aufgefordert, Ihre E-Mail-Adresse einzugeben.
+
+- **Falls Sie bereits einen Account eingerichtet haben**: Klicken Sie am oberen Rand Ihres Bildschirms auf <code className="action">Datei</code> und anschließend auf <code className="action">Account hinzufügen</code>.
+
+<img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-emailpro01.png" loading="lazy" />
+
+**Bei Windows 11 kann die Oberfläche von Outlook Classic variieren, wenn Sie ein Account hinzufügen.**
+
+Je nach Nutzungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Oberfläche angezeigt wird. In einigen Fällen kann die sogenannte "moderne" Oberfläche (**Oberfläche 1**) deaktiviert werden zugunsten der klassischen Oberfläche (**Oberfläche 2**).
+
+Folgen Sie daher dem Abschnitt, der der Oberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
+
+#### Konfiguration mit der Oberfläche 1 <a name="add-account-int1"></a>
+
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Tabs klicken.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf <code className="action">Erweiterte Optionen</code>.
+    
+    Aktivieren Sie anschließend das Feld <code className="action">Meinen Account manuell konfigurieren</code> und klicken Sie auf <code className="action">Verbindung</code>.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-legacy-emailpro02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Wählen Sie unter den angebotenen Account-Typen IMAP oder POP aus.
+    
+    Wir empfehlen, das IMAP-Protokoll zu verwenden.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-legacy-emailpro03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Geben Sie das Passwort des E-Mail-Accounts ein und klicken Sie auf <code className="action">Verbinden</code>.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-legacy-emailpro04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Falls Outlook den Account nicht automatisch konfigurieren kann, wird folgendes Fenster angezeigt.
+    
+    Klicken Sie auf <code className="action">Accounteinstellungen ändern</code>.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-legacy-emailpro05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 5">
+    Im Abschnitt **Posteingang**, tragen Sie ein:
+    
+    - Server: **pro**?**.mail.ovh.net** (ersetzen Sie das "**?**" durch die Nummer Ihres Servers)
+    - Port: **993**
+    - Verschlüsselungsmethode: **SSL/TLS**
+    
+    Im Abschnitt **Postausgang**, tragen Sie ein:
+    
+    - Server: **pro**?**.mail.ovh.net** (ersetzen Sie das "**?**" durch die Nummer Ihres Servers)
+    - Port: **587**
+    - Verschlüsselungsmethode: **STARTTLS**
+    
+    Klicken Sie auf <code className="action">Weiter</code>, um fortzufahren.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-legacy-emailpro06.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Konfiguration mit der Oberfläche 2 <a name="add-account-int2"></a>
+
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Tabs klicken.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    - Wählen Sie in dem Fenster **Account hinzufügen** die Option <code className="action">Manuelle Konfiguration oder zusätzliche Servertypen</code> aus.
+    - Klicken Sie auf <code className="action">Weiter</code>, um fortzufahren.
+    - Wählen Sie <code className="action">POP oder IMAP</code> aus.
+    - Klicken Sie auf <code className="action">Weiter</code>, um fortzufahren.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-emailpro02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Geben Sie die Anmeldeinformationen für Ihren Account ein **(1)**:
+    
+    Benutzerinformationen <br/>
+
+**Ihr Name**: Legen Sie einen Anzeigenamen fest.<br/>
+
+**E-Mail-Adresse**: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br/>
+
+Serverinformationen <br/>
+
+**Accounttyp**: Wählen Sie IMAP aus.<br/>
+
+**Eingehender E-Mail-Server**: pro?.mail.ovh.net (ersetzen Sie das **"?"** durch die Nummer Ihres Servers).<br/>
+
+**Ausgehender E-Mail-Server (SMTP)**: pro?.mail.ovh.net (ersetzen Sie das **"?"** durch die Nummer Ihres Servers).<br/>
+
+Anmeldeinformationen <br/>
+
+**Benutzername**: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br/>
+
+**Passwort**: Geben Sie das Passwort ein, das mit Ihrer E-Mail-Adresse verknüpft ist.<br/>
+
+Klicken Sie auf <code className="action">Weitere Einstellungen...</code> **(2)** und wechseln Sie zum nächsten Schritt.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-emailpro03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Wählen Sie im Tab `Ausgehender Server` die Option <code className="action">Mein ausgehender Server (SMTP) erfordert eine Authentifizierung</code> aus und lassen Sie <code className="action">Die gleichen Einstellungen wie bei meinem eingehenden E-Mail-Server verwenden</code> ausgewählt.
+    
+    Im Tab `Erweiterte Optionen`:
+    
+    - **Eingehender Server (IMAP)**: 993
+    - **Verwenden Sie den folgenden verschlüsselten Verbindungstyp**: SSL/TLS
+    - **Ausgehender E-Mail-Server (SMTP)**: 587
+    - **Verwenden Sie den folgenden verschlüsselten Verbindungstyp**: STARTTLS
+    
+    Klicken Sie auf <code className="action">OK</code>, um die Informationen zu bestätigen. Klicken Sie auf <code className="action">Weiter</code>, um die Einrichtung des Accounts zu starten.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-emailpro04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Klicken Sie auf <code className="action">Weiter</code>, um die Einrichtung des Accounts zu starten. Wenn die Einstellungen bestätigt werden, erhalten Sie das untenstehende Fenster.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-emailpro05.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### E-Mail-Adresse verwenden
+
+Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
+
+OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können: [Webmail](https://www.ovhcloud.com/de/mail/). Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/) heranziehen.
+
+### Backup Ihres E-Mail-Accounts
+
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Über Windows exportieren** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration#uber-windows-exportieren/)".
+
+### Bestehende Einstellungen ändern
+
+**Bei Windows 11 kann die Oberfläche von Outlook Classic variieren, wenn Sie ein Account bearbeiten.**
+
+Je nach Nutzungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Oberfläche angezeigt wird. In einigen Fällen kann die sogenannte "moderne" Oberfläche (**Oberfläche 1**) deaktiviert werden zugunsten der klassischen Oberfläche (**Oberfläche 2**).
+
+Folgen Sie daher dem Abschnitt, der der Oberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
+
+<Tabs>
+  <Tab label="Oberfläche 1">
+    Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern:
+    
+    - Klicken Sie auf <code className="action">Datei</code> in der Menüleiste oben auf dem Bildschirm und wählen Sie das zu bearbeitende Account im Dropdown-Menü **(1)** aus.
+    - Klicken Sie auf `Accounteinstellungen`&#123;.action &#125; **(2)** darunter.
+    - Wählen Sie <code className="action">Servereinstellungen</code> **(3)** aus, um das Konfigurationsfenster anzuzeigen.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-legacy-emailpro07.png" loading="lazy" />
+
+Das Fenster ist in zwei Teile unterteilt, **Posteingang** und **Postausgang**. Klicken Sie auf den Teil, den Sie ändern möchten.
+    
+    :::info
+    In unserem Beispiel wird der Servername "pro**?**.mail.ovh.net" verwendet. Sie müssen das Zeichen "?" durch die Zahl ersetzen, die dem Server Ihres E-Mail Pro-Dienstes entspricht.
+    
+    Klicken Sie auf [diesen Link](https://manager.eu.ovhcloud.com/#/web/email_pro), um auf den Bereich <code className="action">E-Mail Pro</code> zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs <code className="action">Allgemeine Informationen</code> angezeigt.
+
+    :::
+
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-legacy-emailpro08.png" loading="lazy" />
+  </Tab>
+  <Tab label="Oberfläche 2">
+    Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern:
+    
+    - Klicken Sie auf <code className="action">Datei</code> in der Menüleiste oben auf dem Bildschirm und wählen Sie das zu bearbeitende Account im Dropdown-Menü **(1)** aus.
+    - Klicken Sie auf <code className="action">Accounteinstellungen</code> **(2)**.
+    - Klicken Sie auf <code className="action">Accounteinstellungen...</code> **(3)**, um zum Konfigurationsfenster zu gelangen.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-emailpro06.png" loading="lazy" />
+    
+    - Das Accounteinstellungenfenster wird angezeigt: Wählen Sie den betreffenden E-Mail-Account aus und klicken Sie auf <code className="action">Ändern...</code>.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/config-outlook-emailpro07.png" loading="lazy" />
+
+Um Ihren Account zu konfigurieren, folgen Sie den Anweisungen ab **Schritt 2** im Abschnitt "[Account hinzufügen - Konfiguration mit der Oberfläche 2](#add-account-int2)" dieser Anleitung.
+  </Tab>
+</Tabs>
+
+
+### Allgemeine Einstellungen zum Senden und Empfangen <a name="settings-account"></a>
+
+#### Einstellungen zum Empfangen von IMAP und POP <a name="imap-pop"></a>
+
+Beim Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Accounttyps die Verwendung von **IMAP**. Sie können jedoch auch **POP** auswählen.
+
+Wählen Sie den Tab entsprechend Ihrer Konfiguration aus:
+
+<Tabs>
+  <Tab label="IMAP-Konfiguration">
+    - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+    - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+    - **Eingehender Server**: pro?.mail.ovh.net (ersetzen Sie das "?" durch die Nummer Ihres Servers).
+    - **Port**: 993.
+    - **Sicherheitstyp**: SSL/TLS.
+  </Tab>
+  <Tab label="POP-Konfiguration">
+    - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+    - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+    - **Eingehender Server**: pro?.mail.ovh.net (ersetzen Sie das "?" durch die Nummer Ihres Servers).
+    - **Port**: 995.
+    - **Sicherheitstyp**: SSL/TLS.
+  </Tab>
+</Tabs>
+
+
+#### Einstellungen zum Senden von SMTP <a name="smtp"></a>
+
+Für das Senden von E-Mails finden Sie unten die zu verwendenden **SMTP**-Einstellungen:
+
+**SMTP-Konfiguration**
+
+- **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+- **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+- **Ausgehender Server**: pro?.mail.ovh.net (ersetzen Sie das "?" durch die Nummer Ihres Servers).
+- **Port**: 587.
+- **Sicherheitstyp**: STARTTLS.ama
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+:::info
+Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Outlook-App auf macOS finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/add-mail-account-in-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
+
+:::
+
+
+[Konfiguration Ihrer MX Plan Adresse mit Outlook für Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/)
+
+[Konfiguration von Exchange auf Outlook für Windows](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

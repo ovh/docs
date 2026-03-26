@@ -1,0 +1,112 @@
+---
+title: Utiliser son fax physique avec l’offre Plug & Fax
+description: Découvrez comment configurer l’offre Plug & Fax pour utiliser un fax physique
+lastUpdated: 2025-04-28
+---
+
+## Objectif
+
+Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud afin d'ajuster la configuration du télécopieur utilisé pour obtenir le meilleur rendu.
+
+**Ce guide vous permet de comprendre le fonctionnement de l'offre Plug & Fax.**
+
+## Prérequis
+
+- Disposer d’une ligne [Plug & Fax OVHcloud](https://www.ovhtelecom.fr/fax/plug-and-fax.xml).
+- Disposer d’un télécopieur.
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+## En pratique
+
+Sélectionnez l'onglet <code className="action">Services</code> puis la ligne Plug & Fax concernée.
+
+### Branchement du fax sur le Cisco ATA 191
+
+Le télécopieur utilisé se branche sur la prise RJ11 « **Phone 1** » de votre adaptateur. Bien évidemment, l'adaptateur doit être raccordé au secteur et également être branché en **Ethernet** sur votre routeur.
+
+<img className="thumbnail" alt="branchement Cisco ATA-191" src="/images/web-cloud/phone-and-fax/fax/utiliser-son-fax-physique-avec-l-offre-plug-and-fax/cisco-ATA-191.png" loading="lazy" />
+
+### Configurer votre télécopieur
+
+Pour utiliser l'offre Plug & Fax, nous vous conseillons d'adapter la configuration de votre télécopieur. Vérifiez les paramètres suivants :
+
+- **La vitesse de transmission** : 9600 bauds/sec maximum.
+- **Décroché automatique** : à activer au bout de 2 ou 3 sonneries maximum.
+- **La correction d'erreur** : à désactiver.
+
+Sur certains télécopieurs, la correction d'erreur peut être appelée **ECM** ou **EMC**.
+
+### Configurer le mode de réception des fax
+
+L'offre Plug & Fax permet d'utiliser deux modes de réception, au choix :
+
+- uniquement sur le télécopieur ;
+- uniquement par e-mail ou via le logiciel EcoFax.
+
+La sélection d'un de ces deux modes s'effectue via les renvois d'appels sur votre ligne Plug & Fax.
+
+Pour y accéder, cliquez sur <code className="action">Gestion des appels</code> puis sur <code className="action">Renvoi d'appel</code>.
+
+<img className="thumbnail" alt="Gestion des appels" src="/images/web-cloud/phone-and-fax/fax/utiliser-son-fax-physique-avec-l-offre-plug-and-fax/gestion_des_appels.png" loading="lazy" />
+
+#### Réception via le télécopieur
+
+Il s'agit du mode normal de réception des fax, lorsqu'un télécopieur fonctionnel est raccordé à l'adaptateur Plug & Fax. Si votre télécopieur est débranché, éteint ou en panne, les renvois d'appels décrits ci-dessous permettent d'assurer une continuité de la réception des fax. Vous recevrez ainsi toujours vos fax par e-mail ou via le logiciel EcoFax.
+
+Depuis le menu de <code className="action">Renvoi d'appel</code>, cochez la case devant <code className="action">Renvoi quand il n'y a pas de réponse</code> et définissez le nombre de secondes à 45.
+<br/>Ce renvoi laisse donc 45 secondes à votre télécopieur pour décrocher lors d'une réception de fax. Au-delà de ce délai, le fax est renvoyé vers votre adresse e-mail ou vers le logiciel EcoFax. 
+<br/>Choisissez de <code className="action">Renvoyer vers un</code> **Fax** et renseignez le numéro de votre ligne Plug & Fax.
+
+De même, cochez la case devant <code className="action">Renvoi quand la ligne est injoignable ou déconnectée</code>.
+<br/>Choisissez de <code className="action">Renvoyer vers un</code> **Fax** et renseignez le numéro de votre ligne Plug & Fax.
+
+Enfin, cliquez sur <code className="action">Valider</code>.
+
+<img className="thumbnail" alt="renvoi d'appels" src="/images/web-cloud/phone-and-fax/fax/utiliser-son-fax-physique-avec-l-offre-plug-and-fax/renvoi_dappel.png" loading="lazy" />
+
+Pour configurer les notifications par e-mail de votre ligne, reportez-vous au guide « [Configurer ma ligne EcoFax Pro](/guides/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/) ».
+
+#### Réception uniquement par e-mail ou EcoFax
+
+Vous pouvez choisir de ne recevoir les fax que par e-mail, par exemple lors d'un déplacement ou en cas de panne prolongée de votre télécopieur.
+
+Dans ce cas de figure, un renvoi d'appel inconditionnel est préconisé afin de rediriger tous les fax entrants vers votre adresse e-mail ou le logiciel EcoFax.
+
+Depuis le menu de <code className="action">Renvoi d'appel</code>, cochez la case devant <code className="action">Renvoi de tous les appels</code>.
+<br/>Choisissez de <code className="action">Renvoyer vers un</code> **Fax** et renseignez le numéro de votre ligne Plug & Fax.
+
+Enfin, cliquez sur <code className="action">Valider</code>.
+
+<img className="thumbnail" alt="renvoi d'appels inconditionnel" src="/images/web-cloud/phone-and-fax/fax/utiliser-son-fax-physique-avec-l-offre-plug-and-fax/renvoi_dappel2.png" loading="lazy" />
+
+Pour configurer les notifications par e-mail de votre ligne, reportez-vous au guide « [Configurer ma ligne EcoFax Pro](/guides/web-cloud/phone-and-fax/fax/configuration-fax-espace-client/) ».
+
+### Configurer la présentation du numéro en appel sortant
+
+Avec l'offre Plug & Fax, vous pouvez modifier la présentation du numéro lors des appels sortants.
+
+Cliquez sur <code className="action">Gestion des appels</code> puis sur <code className="action">Présentation du numéro</code>.
+
+<img className="thumbnail" alt="présentation numéro" src="/images/web-cloud/phone-and-fax/fax/utiliser-son-fax-physique-avec-l-offre-plug-and-fax/pres-numero1.png" loading="lazy" />
+
+Le bouton <code className="action">Choisir un autre numéro</code> vous permet d'accéder à la liste des numéros qu'il est possible de présenter depuis votre ligne Plug & Fax.
+
+Si vous ne souhaitez pas présenter de numéro, cochez la case <code className="action">Rester anonyme</code>.
+
+<img className="thumbnail" alt="présentation numéro" src="/images/web-cloud/phone-and-fax/fax/utiliser-son-fax-physique-avec-l-offre-plug-and-fax/pres-numero2.png" loading="lazy" />
+
+Validez votre choix en cliquant sur <code className="action">Appliquer les modifications</code>.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

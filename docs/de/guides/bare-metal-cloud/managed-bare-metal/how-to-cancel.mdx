@@ -1,0 +1,75 @@
+---
+title: Managed Bare Metal kündigen
+description: Erfahren Sie hier, wie Sie eine Managed Bare Metal Infrastruktur kündigen können
+lastUpdated: 2020-11-18
+---
+
+import Api from '@components/Api';
+
+
+## Ziel
+
+Unser Managed Bare Metal Angebot entspricht nicht mehr Ihren Anforderungen? Oder haben Sie eine neue Infrastruktur bestellt, um die alte zu ersetzen? Dann können Sie diese Infrastruktur kündigen, sobald Sie alle Ihre dort gespeicherten Daten gesichert haben.  
+
+**Diese Anleitung erklärt, wie Sie eine Managed Bare Metal kündigen können.** 
+
+## Voraussetzungen
+
+- Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Infrastruktur.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+## In der praktischen Anwendung
+
+:::warning
+Bevor Sie Ihre Managed Bare Metal kündigen, achten Sie bitte darauf, alle Daten sicherzustellen, die Sie behalten möchten. Mit der Kündigung geht nämlich das komplette Löschen Ihrer Managed Bare Metal und aller darin enthaltener Daten einher.
+
+:::
+
+
+### Schritt 1: Beantragen Sie die Kündigung in Ihrem OVHcloud Kundencenter
+
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) an, gehen Sie in den Bereich <code className="action">Bare Metal Cloud</code> (1), klicken Sie auf <code className="action">Managed Bare Metal</code> (2) und wählen Sie die Managed Bare Metal aus der Liste aus (3), die Sie kündigen möchten.
+
+Klicken Sie im Reiter “Allgemeine Informationen” in der Tabelle “Dienstverwaltung” auf den Button <code className="action">...</code> (4) rechts neben dem Datum der Verlängerung. Klicken Sie dann auf <code className="action">Dienst löschen</code> (5).
+
+<img className="thumbnail" alt="Kündigung über das Kundencenter" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation1.png" loading="lazy" />
+
+Bitte beachten Sie, dass diese Aktion alle Daten auf dieser Infrastruktur löscht, sobald Sie die Kündigung bestätigen. Bei einer Kündigung vor Monatsende erfolgt keine anteilige Rückzahlung.
+
+Klicken Sie auf <code className="action">Bestätigen</code> um die Kündigung zu beantragen.
+
+<img className="thumbnail" alt="Bestätigung der Kündigung" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation2.png" loading="lazy" />
+
+Sie sehen dann eine Bestätigung Ihres Antrags. Die Bestätigung der Kündigung wird Ihnen per E-Mail an die Adresse zugesandt, die mit dem Account bei OVHcloud verbunden ist.
+
+<img className="thumbnail" alt="Bestätigung der Kündigung" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation3.png" loading="lazy" />
+
+### Schritt 2: Die Kündigung bestätigen
+
+Aufgrund Ihrer Anfrage wird Ihnen eine Bestätigung der Kündigung per E-Mail an die Adresse zugesandt, die mit dem Account bei OVHcloud verbunden ist. 
+
+Diese E-Mail können Sie auch in Ihrem OVHcloud Kundencenter einsehen. Klicken Sie auf Ihren Namen oben rechts, dann auf <code className="action">E-Mails vom Support</code>.
+
+<img className="thumbnail" alt="Bestätigung der Kündigung" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation4.png" loading="lazy" />
+
+Der Betreff der E-Mail ist:
+
+> **Löschen Ihrer Managed Bare Metal pcc-xxx-xxx-xxx-xxx**.
+
+Die E-Mail enthält einen Link, über den Sie die Kündigung Ihrer Managed Bare Metal bestätigen können.
+
+:::info
+Bitte beachten Sie, dass dieser Link nur **72 Stunden** gültig ist. Wir empfehlen Ihnen daher, die Kündigung ab dem 25\. eines Monats zu beantragen.
+
+:::
+
+
+Außerdem können Sie den Antrag auf Kündigung über folgendes API von OVHcloud bestätigen:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/confirmTermination"} />
+
+In diesem Fall müssen Sie das Token zur Bestätigung eingeben. Es befindet sich in der E-Mail zur Bestätigung der Kündigung.
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

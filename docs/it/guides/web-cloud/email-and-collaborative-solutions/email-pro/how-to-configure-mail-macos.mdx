@@ -1,0 +1,110 @@
+---
+title: Email Pro - Configura il tuo account di posta elettronica su Mail per macOS
+lastUpdated: 2025-04-28
+---
+
+## Obiettivo
+
+Gli account Email Pro possono essere configurati su client di posta compatibili per permetterti di utilizzare il tuo account email dal dispositivo che preferisci. L'applicazione Mail su macOS è disponibile gratuitamente su tutti i Mac.
+
+**Questa guida ti mostra come configurare il tuo indirizzo Email Pro su Mail di macOS.**
+
+:::warning
+OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+
+Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
+
+:::
+
+
+## Prerequisiti
+
+- Disporre di un indirizzo [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/)
+- Disporre del software Mail installato sul tuo Mac
+- Disporre delle credenziali associate all’indirizzo email da configurare
+
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Seleziona la tua piattaforma
+
+---
+{/* CP-NAV-END:web-email-pro */}
+
+## Procedura
+
+:::info
+Nel nostro esempio abbiamo utilizzato come nome del server "pro?.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+
+Clicca su [questo link](https://manager.eu.ovhcloud.com/#/web/email_pro) per accedere alla sezione <code className="action">Email Pro</code>. Il nome del server viene visualizzato nella zona **Connessione** della scheda <code className="action">Informazioni generali</code>.
+
+:::
+
+
+### Aggiungi l’account
+
+- **Al primo avvio dell'applicazione**: un assistente di configurazione apparirà direttamente e ti inviterà a scegliere il tipo di account.
+
+- **Se è già stato impostato** un account: clicca su <code className="action">Mail</code> in alto nello schermo e poi su <code className="action">Account</code>.
+
+| | |
+|---|---|
+|<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-mail-macos/mail-mac-emailpro01.png" loading="lazy" />|Seleziona <code className="action">Altro account Mail</code> e clicca su <code className="action">Account Mail</code>.|
+|Nella finestra "**Aggiungi account Mail**" inserisci le seguenti informazioni: <br/>- il **Nome** del tuo account email <br/>- Il tuo **indirizzo email** <br/>- La **password** del tuo indirizzo email |<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-mail-macos/mail-mac-emailpro02.png" loading="lazy" />|
+|<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-mail-macos/mail-mac-emailpro03.png" loading="lazy" />|Nella nuova finestra, inserisci le informazioni: <br/>- Lascia il tuo **indirizzo email** già inserito <br/>- Inserisci il tuo indirizzo email completo nel **nome utente** <br/>- Lascia la tua **password** già inserita <br/>- Seleziona `POP` o `IMAP`(consigliato) in **Tipo di account**<br/>- Inserisci `pro?.mail.ovh.net` nel **server di ricezione** (sostituisci "?" con il numero del tuo server)<br/>- Inserisci anche `pro?.mail.ovh.net` nel **Server di invio** (sostituisci "?" con il numero del tuo server)<br/><br/>Per completare la configurazione, clicca su <code className="action">Accedi</code>|
+
+### Utilizza l'indirizzo email
+
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
+
+OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. disponibile alla pagina [Webmail](https://www.ovhcloud.com/it/mail/) accessibile utilizzando le credenziali del tuo account. Se hai bisogno di aiuto per effettuare questa operazione, consulta [il tuo account dall'interfaccia OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/).
+
+### Recuperare un backup del tuo indirizzo email
+
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Mail su Mac OS**" della nostra guida [Migrare manualmente il tuo indirizzo email](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration#esportare/).
+
+### Modifica i parametri esistenti
+
+Se il tuo account email è già configurato e devi accedere alle impostazioni dell'account per modificarle:
+
+- Clicca su <code className="action">Mail</code> nella barra dei menu in alto nello schermo e poi su <code className="action">Preferenze</code>.
+- Seleziona l'account interessato nella colonna di sinistra e clicca su <code className="action">Regolamenti del server</code>.
+
+<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-mail-macos/mail-mac-emailpro04.png" loading="lazy" />
+
+### Informazioni aggiuntive
+
+Nell'ambito di una configurazione **IMAP**, i valori sono i seguenti:
+
+|Tipo di server|Nome del server|Metodo di cifratura|Porta|
+|---|---|---|---|
+|In entrata (IMAP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|993|
+|Uscita (SMTP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|STARTTLS|587|
+
+Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
+
+|Tipo di server|Nome del server|Metodo di cifratura|Porta|
+|---|---|---|---|
+|In entrata (POP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|995|
+|Uscita (SMTP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|STARTTLS|587|
+
+:::info
+**Modifica la configurazione**
+
+Quando configuri il tuo indirizzo email in **IMAP** e vuoi modificare la configurazione in **POP**, è necessario eliminare l'account di Mail da Mac e crearlo in **POP** per modificare la configurazione.
+
+:::
+
+
+## Per saperne di più
+
+:::info
+Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su macOS, consulta [il centro assistenza Apple](https://support.apple.com/it-it/guide/mail/mail35803/mac).
+
+:::
+
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,120 @@
+---
+title: Alojamento Web - Consultar as estatísticas e logs CDN
+description: Saiba como consultar as estatísticas e os logs CDN do seu website graças à sua oferta de alojamento web
+lastUpdated: 2025-10-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Este manual explica-lhe como consultar as estatísticas e os logs gerados pela [opção CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/) disponível com a sua oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
+
+**Saiba como consultar as estatísticas e os logs CDN do seu website graças à sua oferta de alojamento web.**
+
+## Requisitos
+
+- Ter um [plano de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) com a opção CDN ativada em pelo menos um domínio.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Alojamentos</code> > Selecione o seu alojamento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instruções
+
+## Visualizar as estatísticas do CDN
+
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) e escolha o alojamento web correspondente.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    Na página que se abrir, clique no separador <code className="action">Estatísticas e logs</code>.
+    
+    <img className="thumbnail" alt="statistics-and-logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png" loading="lazy" />
+
+Na parte `Estatísticas das visitas`, clique no botão <code className="action">Ver estatísticas</code>.
+    
+    <img className="thumbnail" alt="Estatísticas e logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 3">
+    Será redirecionado para a ferramenta **OVHcloud Web Statistics**. Nesta ferramenta, clique no formulário intitulado <code className="action">Seleção do domínio</code>, situado no topo da página, e escolha um domínio para o qual a CDN está ativa.
+  </Tab>
+  <Tab label="Etapa 4">
+    Na coluna da esquerda, clique no separador <code className="action">Cache</code>.
+    
+    Visualize agora as estatísticas da CDN para o seu domínio.
+    
+    Se necessário, consulte o guia "[Alojamento web - Consultar as estatísticas e logs de um website](/guides/web-cloud/web-hosting/logs-and-statistics/)" para mais informações.
+  </Tab>
+</Tabs>
+
+
+### Visualizar os logs da CDN
+
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) e escolha o alojamento web correspondente.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    Na página que se abrir, clique no separador <code className="action">Estatísticas e logs</code>.
+    
+    <img className="thumbnail" alt="statistics-and-logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png" loading="lazy" />
+
+Na parte `Logs do website`, clique no botão <code className="action">Consultar o logs</code>.
+    
+    <img className="thumbnail" alt="Consultar o logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 3">
+    Na nova página que se abrir, clique no botão <code className="action">CDN</code> presente na faixa no topo da página.
+    
+    <img className="thumbnail" alt="OSL CDN" src="/images/assets/screens/other/web-tools/logs/osl-cdn.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 4">
+    Na nova página que aparece:
+    
+    - Selecione o domínio ou subdomínio em causa através do menu pendente <code className="action">Subdomain</code>.
+    - Indique no campo <code className="action">Data</code> a data para a qual deseja consultar os logs CDN.
+    - A seguir, clique no botão <code className="action">Generate</code>.
+    
+    b> [!primary]
+     >
+    > Os logs CDN estão indisponíveis no mesmo dia em que são gerados, pelo que deverá aguardar o dia seguinte para os consultar.
+     >
+    
+    <img className="thumbnail" alt="OSL CDN - Logs générés" src="/images/assets/screens/other/web-tools/logs/osl-cdn-subdomain-date-selection.png" loading="lazy" />
+
+Na tabela que vai aparecer, clique no botão <code className="action">Download</code> à direita do domínio ou subdomínio em causa para recuperar os logs CDN.
+    
+    Se necessário, consulte o guia "[Alojamento web - Consultar as estatísticas e logs de um website](/guides/web-cloud/web-hosting/logs-and-statistics/)" para mais informações.
+  </Tab>
+</Tabs>
+
+
+## Quer saber mais?
+
+[Guia de utilização do acelerador CDN num alojamento web](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/)
+
+[Alojamento web - Consultar as estatísticas e logs de um website](/guides/web-cloud/web-hosting/logs-and-statistics/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

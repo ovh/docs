@@ -1,0 +1,67 @@
+---
+title: VPS - Włączanie logów uruchamiania Windows
+description: Dowiedz się, jak włączyć logi uruchamiania Windows, aby pomóc w diagnozowaniu i rozwiązywaniu problemów z uruchamianiem VPS
+lastUpdated: 2026-01-21
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Logi uruchamiania Windows pozwalają zidentyfikować sterowniki i usługi wczytywane podczas uruchamiania systemu.  
+Są szczególnie przydatne do **diagnozowania problemów z uruchamianiem**, **niebieskich ekranów** lub **zamrażania systemu**.
+
+**Ta instrukcja wyjaśnia, jak włączyć logi uruchamiania Windows na serwerze, aby pomóc w analizie i rozwiązywaniu problemów z VPS.**
+
+## Wymagania początkowe
+
+- Posiadaj aktywne [VPS](https://www.ovhcloud.com/pl/vps/) w Panelu klienta OVHcloud.
+
+## W praktyce
+
+### Włączanie logów uruchamiania Windows
+
+Logi uruchamiania Windows mogą być przydatne do diagnozowania błędów serwera.
+
+Aby je włączyć, wykonaj poniższe kroki, przechodząc przez zakładki:
+
+<Tabs>
+  <Tab label="1. **Połącz się z serwerem**">
+    Połącz się z serwerem za pomocą pulpitu zdalnego lub [sesji KVM](/guides/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/).
+  </Tab>
+  <Tab label="2. **Otwórz uchwyt uruchamiania**">
+    Otwórz menu `Start` systemu Windows i kliknij <code className="action">Uruchom</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-start-run.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. **Otwórz `msconfig`**">
+    Wpisz `msconfig` i kliknij <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-msconfig.png" loading="lazy" />
+  </Tab>
+  <Tab label="4. **Włącz logi**">
+    W nowym oknie włącz opcję logowania obok `Boot log`. Następnie kliknij <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-log.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Podczas następnego uruchamiania serwera logi zostaną zapisane w pliku `.txt`. Ścieżka do pliku to: `C:\Windows\ntbtlog.txt`.
+
+Aby uzyskać dostęp do pliku logu w trybie ratunkowym, postępuj zgodnie z instrukcjami w przewodniku "[Uruchamianie i korzystanie z trybu Rescue na serwerze VPS](/guides/bare-metal-cloud/virtual-private-servers/rescue/)".
+
+## Sprawdź również
+
+[Zmiana hasła administratora na serwerze Windows](/guides/bare-metal-cloud/virtual-private-servers/resetting-a-windows-password/)
+
+[VPS FAQ](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+[Wprowadzenie do SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/)
+
+[Zabezpieczenie VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps/)
+
+[Jak odzyskać dostęp do serwera, jeśli straciłeś hasło użytkownika](/guides/bare-metal-cloud/dedicated-servers/replacing-user-password/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

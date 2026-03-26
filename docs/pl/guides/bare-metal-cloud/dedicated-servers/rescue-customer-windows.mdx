@@ -1,0 +1,268 @@
+---
+title: Jak aktywować i używać trybu Rescue Windows
+description: Dowiedz się, jak używać systemu rescue OVHcloud dla Windows do rozwiązywania problemów z serwerem dedykowanym
+lastUpdated: 2025-01-28
+---
+
+
+
+## Wprowadzenie
+
+Tryb Rescue jest dostarczanym przez OVHcloud narzędziem pozwalającym na uruchomienie się na tymczasowym systemie operacyjnym. Jego zadaniem jest diagnozowanie i rozwiązywanie problemów z serwerem.
+
+Ogólne działanie trybu ratunkowego zostało opisane w naszym przewodniku "[Jak aktywować i używać trybu ratunkowego](/guides/bare-metal-cloud/dedicated-servers/rescue-mode/)".
+
+Opcja **Windows customer rescue system** jest dostępna tylko dla serwerów dedykowanych, na których został zainstalowany system operacyjny **Windows Server**. Obowiązują następujące warunki:
+
+- System rescue dla Windows (`rescue-customer-windows`) działa na maszynie wirtualnej (VM) uruchomionej z systemu rescue client (`rescue-customer`, opartego na Debianie GNU/Linux).
+- Dyski serwera są przypisane do maszyny wirtualnej za pomocą *passthrough*, dzięki czemu jest możliwy dostęp do niej.
+- Inne komponenty serwera będą niedostępne (procesor, pamięć RAM, karta sieciowa, karta RAID).
+- Sieć jest zamontowana z *passthrough*, ale bez bezpośredniego dostępu do karty sieciowej. VM posiada adres IP i adres MAC serwera *bare metal*.
+
+:::warning
+Pamiętaj o sporządzeniu kopii zapasowej swoich danych, jeśli jeszcze nie posiadasz kopii zapasowej.
+
+Jeśli posiadasz usługi produkcyjne na swoim serwerze, tryb Rescue przerywa je, dopóki maszyna nie zostanie zrestartowana w trybie normalnym.
+
+:::
+
+
+**Dowiedz się, jak uruchomić serwer w systemie kopii zapasowej klienta Windows.**
+
+## Wymagania początkowe
+
+- Microsoft Windows zainstalowany na Twoim [serwerze dedykowanym](https://www.ovhcloud.com/pl/bare-metal/)
+- Co najmniej 16 GB RAM zainstalowanych na serwerze
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">Serwery dedykowane</code> > Wybierz serwer
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+## W praktyce
+
+### Aktywacja trybu Rescue dla Windows
+
+Kliknij nazwę serwera, aby otworzyć zakładkę <code className="action">Informacje ogólne</code>.
+
+<a name="netboot"></a>
+
+W polu **Informacje ogólne** kliknij przycisk <code className="action">...</code> obok `Boot`. Kliknij na <code className="action">Zmień</code> w menu kontekstowym.
+
+<img className="thumbnail" alt="Zmień tryb uruchamiania" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-mode-001.png" loading="lazy" />
+
+Na stronie **Zmień netboot** wybierz <code className="action">Uruchom w trybie diagnostycznym (Rescue)</code>.
+
+Z rozwijanego menu wybierz opcję <code className="action">Windows customer rescue system</code>.
+
+<img className="thumbnail" alt="Zmień tryb uruchamiania" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/manager-rescue-windows-menu.png" loading="lazy" style={{ maxWidth: '800px' }} />
+
+Powiadomienie e-mail dotyczące trybu Rescue oraz dane identyfikacyjne zostaną wysłane na adres e-mail do kontaktu przypisany do Twojego konta OVHcloud. Aby użyć innego adresu e-mail, wpisz go w polu `Wyślij dane do logowania do trybu Rescue na adres e-mail:`.
+
+Kliknij przycisk <code className="action">Dalej</code>.
+
+W kroku **Podsumowanie** kliknij <code className="action">Zatwierdź</code>.
+
+<img className="thumbnail" alt="Summary" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/winresc_summ.png" loading="lazy" />
+
+Powinieneś mieć teraz powiadomienie dotyczące parametru `Netboot` w zakładce <code className="action">Informacje ogólne</code>.
+
+<img className="thumbnail" alt="Netboot" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-mode-006.png" loading="lazy" />
+
+Ostatni etap polega na zrestartowaniu serwera. Kliknij przycisk<code className="action">...</code> obok "Status" w obszarze **Status usług**, a następnie kliknij <code className="action">Restartuj</code>. W wyskakującym okienku kliknij przycisk <code className="action">Zatwierdź</code>.
+
+<img className="thumbnail" alt="Reboot" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png" loading="lazy" />
+
+Reboot sprzętowy zajmie kilka minut. Możesz sprawdzić aktualny status w zakładce <code className="action">Zadania</code>.
+
+:::info
+Po zakończeniu operacji w trybie Rescue pamiętaj, aby przed zrestartowaniem serwera ponownie ustawić parametr `Netboot` na <code className="action">Booter na dysku twardym</code>.
+
+:::
+
+
+### Dostęp do serwera w trybie Rescue
+
+Po otrzymaniu wiadomości e-mail z informacją, że tryb Rescue jest włączony, możesz zalogować się do systemu poprzez tryb Rescue Windows i uzyskać dostęp do serwera.  
+E-mail ten będzie również dostępny w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) od chwili wysłania. Kliknij nazwę powiązaną z Twoim identyfikatorem klienta na pasku menu w prawym górnym rogu, następnie wybierz <code className="action">E-maile dotyczące usługi</code>.
+
+Aby nawiązać sesję zdalną z systemem Windows w trybie Rescue, potrzebne będą następujące poświadczenia:
+
+- Adres IP serwera
+- Nazwa użytkownika tymczasowego konta administratora (`Administrator`)
+- Hasło tymczasowego administratora
+
+Aby uzyskać dostęp do serwera za pośrednictwem systemu Windows w trybie Rescue, można użyć następujących metod połączenia:
+
+- Remote Desktop Protocol (RDP)
+- KVM over IP (jeśli Twój serwer na to pozwala)
+- OpenSSH (oficjalny składnik Windows Server)
+
+#### RDP
+
+<details>
+
+<summary>Rozwiń tę sekcję</summary>
+
+
+Aby się zalogować, użyj klienta Windows `Remote Desktop Connection` lub dowolnej zgodnej aplikacji.
+
+<img className="thumbnail" alt="rdp connection" src="/images/assets/screens/other/windows/windows-rdp.png" loading="lazy" />
+
+</details>
+
+
+#### KVM
+
+<details>
+
+<summary>Rozwiń tę sekcję</summary>
+
+
+Na ekranie logowania KVM można wybrać inny język klawiatury.
+
+<img className="thumbnail" alt="KVM Login Screen" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-kvm-login-screen.png" loading="lazy" style={{ maxWidth: '800px' }} />
+
+<img className="thumbnail" alt="KVM Language Screen" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-kvm-login-language.png" loading="lazy" style={{ maxWidth: '800px' }} />
+
+Możesz zmienić opcje dostępności i włączyć klawiaturę wirtualną:
+
+<img className="thumbnail" alt="KVM accessibility Screen" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-kvm-login-accessibility.png" loading="lazy" style={{ maxWidth: '800px' }} />
+
+<img className="thumbnail" alt="KVM keyboard screen" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-kvm-login-keyboard.png" loading="lazy" style={{ maxWidth: '800px' }} />
+
+Więcej informacji znajdziesz w naszym przewodniku: [Jak używać konsoli IPMI z serwerem dedykowanym](/guides/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/)
+
+</details>
+
+
+#### SSH
+
+<details>
+
+<summary>Rozwiń tę sekcję</summary>
+
+
+Otwórz aplikację wiersza polecenia na urządzeniu lokalnym i wprowadź następującą komendę:
+
+```bash
+ssh Administrator@SERVER_IP
+```
+
+Przykład:
+
+```bash
+ssh Administrator@203.0.113.100
+```
+
+Po wyświetleniu monitu wprowadź hasło do tymczasowego trybu ratunkowego. Przykład:
+
+```console
+Administrator@ns9356771.ip-203-0-113.eu's password:
+administrator@WINRESCUEOVH C:\Users\Administrator>
+```
+
+Więcej informacji na temat połączeń SSH znajdziesz w naszym [przewodniku wprowadzającym do SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/).  
+Możesz również użyć dowolnego narzędzia do logowania SSH, takiego jak [PuTTY](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/).
+
+</details>
+
+
+### Importowanie dysków w celu uzyskania dostępu do plików
+
+Po połączeniu się z klienckim systemem zapasowym Windows należy zaimportować (*mount*) dyski serwera Windows przed uzyskaniem dostępu do systemu plików.
+
+<details>
+
+<summary>Rozwiń tę sekcję</summary>
+
+
+:::warning
+Poniższe przykłady instrukcji i zrzutów ekranu ilustrują proces montażu na serwerze z dwoma dużymi dyskami (RAID1). Szczegóły wyświetlane przez narzędzie Zarządzanie dyskami zależą od konfiguracji dysku serwera.  
+Aby uzyskać więcej informacji, zobacz [Oficjalna dokumentacja Microsoft](https://learn.microsoft.com/en-us/windows-server/storage/disk-management/overview-of-disk-management).
+
+Jeśli potrzebujesz profesjonalnego wsparcia w administrowaniu serwerem, zapoznaj się z sekcją [Sprawdź również](#gofurther) w tym przewodniku.
+
+:::
+
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt1.png" loading="lazy" /> |
+|---|
+| Kliknij prawym przyciskiem myszy przycisk <code className="action">Start Menu</code> i otwórz <code className="action">Disk Management</code>. |
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt2.png" loading="lazy" style={{ maxWidth: '700px' }} /> |
+|---|
+| `Disk 0` zawiera system rescue (volume `C:`). Dyski serwera Windows będą wyświetlane jako `Offline`. |
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt3.png" loading="lazy" /> |
+|---|
+| Kliknij prawym przyciskiem myszy na każdy dysk i wybierz <code className="action">Online</code> z menu kontekstowego. |
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt4.png" loading="lazy" /> |
+|---|
+| Dyski serwera są teraz [rozpoznawane przez system rescue jako `Foreign`](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management#a-dynamic-disks-status-is-foreign), co wskazuje, że podłączone dyski należą do innego systemu operacyjnego. |
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt5.png" loading="lazy" /> |
+|---|
+| Kliknij prawym przyciskiem myszy dysk i wybierz z menu kontekstowego pozycję <code className="action">Import Foreign Disks...</code>. |
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt6.png" loading="lazy" /> |
+|---|
+| Jeśli są dostępne, wybierz dyski do zaimportowania. Kliknij przycisk <code className="action">OK</code>. |
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt7.png" loading="lazy" /> |
+|---|
+| Kliknij na <code className="action">OK</code>. |
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt8.png" loading="lazy" /> |
+|---|
+| W tym przykładzie oba dyski serwera są dublowane, więc zostanie wyświetlony stan `Resynching`. Jest to normalny proces; ponowna synchronizacja będzie kontynuowana po ponownym uruchomieniu serwera w zainstalowanym systemie operacyjnym. |
+
+| <img className="thumbnail" alt="Zarządzanie dyskami w systemie Windows" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-disk-mgmt9.png" loading="lazy" /> |
+|---|
+| Aby uzyskać dostęp do plików, kliknij prawym przyciskiem myszy partycję Windows Twojego `Disk 1` i wybierz <code className="action">Open</code> z menu kontekstowego. |
+
+</details>
+
+
+### Zalecane narzędzia
+
+:::info
+W systemie nie ma wstępnie zainstalowanego żadnego dodatkowego oprogramowania w trybie rescue. Poniżej znajduje się lista zalecanych narzędzi dostępnych na stronie deweloperów danego narzędzia.
+
+:::
+
+
+| Oprogramowanie | Opis |
+| --- | --- |
+| CrystalDiskInfo | Narzędzie diagnostyczne dla dysków |
+| 7-Zip | Narzędzie do zarządzania archiwami |
+| FileZilla | Klient FTP |
+
+### Wyjście z trybu rescue
+
+W Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) [zmień tryb uruchamiania](#netboot) ponownie na <code className="action">Uruchom z dysku twardego</code> i zatwierdź.
+
+<img className="thumbnail" alt="Netboot Disk" src="/images/bare-metal-cloud/dedicated-servers/rescue-customer-windows/rescue-mode-007.png" loading="lazy" style={{ maxWidth: '800px' }} />
+
+Następnie użyj funkcji <code className="action">Uruchom ponownie</code> w Panelu klienta OVHcloud.
+
+<a name="gofurther"></a>
+
+## Sprawdź również
+
+[Jak aktywować i korzystać z trybu ratunkowego](/guides/bare-metal-cloud/dedicated-servers/rescue-mode/)
+
+[Jak zmienić hasło administratora na serwerze dedykowanym z systemem Windows](/guides/bare-metal-cloud/dedicated-servers/rcw-changing-admin-password-on-windows/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

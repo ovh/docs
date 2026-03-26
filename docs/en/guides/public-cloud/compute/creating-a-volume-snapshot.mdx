@@ -1,0 +1,77 @@
+---
+title: Creating a volume snapshot
+description: Find out how to create a snapshot of a Public Cloud additional disk
+lastUpdated: 2025-04-28
+---
+
+## Objective
+
+A **volume snapshot** is a recovery point stored within the same storage cluster as the original volume. Operations will be fast, but in case of an incident on the cluster, both volume and volume snapshot might be unavailable. Volume snapshot creation does not require the volume to be detached from the instance.
+
+This is not to be confused with a **volume backup** which is an image created out of your volume, which is stored in the Object Storage cluster where the original volume is located. The level of resiliency is ideal and will allow you to quickly react to any incident on your volume, creating another volume from the backup. Volume backup creation requires the volume to be detached from the instance. For more information on this option, please consult this [guide](/guides/public-cloud/compute/volume-backup/).
+
+A snapshot of an additional volume serves two general purposes:
+
+- You can create backups with a few clicks and keep them as long as needed.
+- You can use the snapshot as a template for identical volumes.
+
+**This guide explains how to create a volume snapshot in the OVHcloud Control Panel.**
+
+## Requirements
+
+- A [Block storage volume](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) created in your [Public Cloud project](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+Open <code className="action">Block Storage</code> in the left-hand navigation bar under **Storage & backup**.
+
+<img className="thumbnail" alt="Volume Snapshot" src="/images/public-cloud/compute/creating-a-volume-snapshot/volume_snapshot01.png" loading="lazy" />
+
+In the row of the volume concerned, click the <code className="action">...</code> button and select <code className="action">Create a backup</code> (It is not required to detach the volume from its instance first). However, if you wish to detach your volume, please consult the "Detach a volume" instructions from [this guide](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/).
+
+Then select <code className="action">Volume Snapshot</code>, name it and click <code className="action">Create backup</code>.
+
+<img className="thumbnail" alt="Volume Snapshot" src="/images/public-cloud/compute/creating-a-volume-snapshot/volume_snapshot02.png" loading="lazy" />
+
+In the popup window, you can enter a different name for the snapshot. Take note of the pricing information, then click on <code className="action">Take a snapshot</code>.
+
+The snapshot creation time may take several hours, depending on the amount of data present on the volume, the instance resource utilization at the time of the snapshot and other host-specific factors.
+
+We therefore recommend that you perform your snapshots outside of your production hours. 
+
+Other best practices include:
+
+- Avoid creating snapshots during peak hours (04:00 AM - 10:00 PM Paris time).
+- Install the qemu-guest agent if it is not installed or try to disable it if necessary.
+- Try not to "solicit" the server too much during the snapshot creation phase (I/O limitation, RAM consumption, etc.).
+
+Since a volume snapshot is a clone of the entire disk, it will have the maximum size of the original volume, regardless of the actual disk space allocation.
+
+<img className="thumbnail" alt="Volume Snapshot" src="/images/public-cloud/compute/creating-a-volume-snapshot/volume_snapshot03.png" loading="lazy" />
+
+Open the section <code className="action">Volume Snapshot</code> in the left-hand navigation bar. After the snapshot is created, it will be added to this table.
+
+Click on the button <code className="action">...</code> to <code className="action">Delete</code> a snapshot or to <code className="action">Create a volume</code> based on the respective snapshot. You can find further information in [this guide](/guides/public-cloud/compute/storage-create-volume-from-backup/).
+
+## Go further
+
+[Creating a volume backup](/guides/public-cloud/compute/volume-backup/)
+
+[Creating a volume from a backup](/guides/public-cloud/compute/storage-create-volume-from-backup/)
+
+[Creating and configuring an additional disk on an instance](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)
+
+[Increasing the size of an additional disk](/guides/public-cloud/compute/increase-the-size-of-an-additional-disk/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,209 @@
+---
+title: Verwenden von Backups zum Erzeugen oder Wiederherstellen von Instanzen
+description: Erfahren Sie hier, wie Sie Instanzen aus Backups oder wiederherstellen
+lastUpdated: 2025-11-04
+---
+
+import Api from '@components/Api';
+
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Ziel
+
+Das OVHcloud Kundencenter erlaubt es Ihnen, mit wenigen Klicks [Backups Ihrer Instanzen zu erstellen](/guides/public-cloud/compute/save-an-instance/) und diesen Prozess auch zu automatisieren.  
+Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
+
+- Instanz auf der Grundlage des Backups erstellen, um die originale Instanz zu duplizieren; zum Beispiel, wenn Sie eine Infrastruktur zur Lastverteilung (Loadbalancing) konfigurieren.
+- Instanz mithilfe eines Backups wiederherstellen; zum Beispiel, wenn aufgrund kürzlicher Änderungen kritische Konfigurationsdaten der Instanz beschädigt wurden.
+
+**Diese Anleitung erklärt, wie Sie Backups verwenden, um Ihre Instanzen zu duplizieren oder wiederherzustellen.**
+
+## Voraussetzungen
+
+- Sie verfügen über ein Backup einer [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/instance-backup/).
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigationspfad:** <code className="action">Public Cloud</code> > Wählen Sie Ihr Projekt aus
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## In der praktischen Anwendung
+
+:::info
+Es stehen Ihnen zwei Arten von Backups zur Verfügung:
+
+- Lokal: In derselben Region wie Ihre Instanz gespeichert.
+- Fern: Automatisch in eine andere von Ihnen gewählte Region repliziert.
+
+Die Operationen des **Erstellens** und **Wiederherstellens** einer Instanz aus einem entfernten Backup werden vollständig über die OVHcloud API unterstützt, was eine größere Flexibilität und mühelose Integration in Ihre Automatisierungsprozesse bietet.
+
+**Hinweis:** Diese Vorgänge stehen noch nicht über das OVHcloud Kundencenter zur Verfügung.
+
+:::
+
+
+### Eine Instanz aus einem Backup erstellen
+
+<Tabs>
+  <Tab label="Über das OVHcloud Kundencenter">
+    Klicken Sie anschließend auf <code className="action">Instance Backup</code> in der linken Navigationsleiste unter **Compute**.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup01.png" loading="lazy" />
+
+Klicken Sie dann auf <code className="action">...</code> rechts neben der ausgewählten Sicherung und schließlich auf <code className="action">Instanz erstellen</code>.
+    
+    Eine vereinfachte Version der Instanz-Erstellungsseite wird angezeigt, die es Ihnen ermöglicht, einige Optionen anzupassen.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup02.png" loading="lazy" />
+
+Einige Elemente sind vordefiniert:
+    
+    - **Standort**: Ihre Instanz wird im gleichen Rechenzentrum wie Ihre Sicherung erstellt.
+    - **Image**: Das Bild entspricht Ihrer Sicherung.
+    - **Modell**: Abhängig von Ihrer Quota sind nur diejenigen Modelle verfügbar, die mit dem Image kompatibel sind.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup03.png" loading="lazy" />
+
+Geben Sie den Namen der neuen Instanz, den SSH-Schlüssel, das vRack und den Abrechnungszeitraum an, und klicken Sie dann auf den Button <code className="action">Instance erstellen</code>.
+    
+    Weitere Informationen zur Erstellung einer Instanz finden Sie in [dieser Anleitung](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/).
+    
+    :::info
+    Um eine Instanz in einem anderen Rechenzentrum als dem der Sicherung zu erstellen, müssen Sie diese zuerst in die entsprechende Zone übertragen. Beachten Sie hierzu die [Anleitung zur Sicherung einer Instanz zwischen Rechenzentren](/guides/public-cloud/compute/transfer-instance-backup-from-one-datacentre-to-another/).
+
+    :::
+
+  </Tab>
+  <Tab label="Über die OpenStack CLI">
+    Um eine Instanz aus Ihrer Sicherung zu erstellen, verwenden Sie die Sicherung-ID als Image mit diesem Befehl:
+    
+    ```bash
+    $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+    ```
+  </Tab>
+  <Tab label="Über Horizon">
+    In der Horizon-Oberfläche klicken Sie auf <code className="action">Compute</code> im linken Menü und dann auf <code className="action">Images</code>. Suchen Sie das gewünschte Image und klicken Sie auf den Button <code className="action">Launch</code> rechts neben der Zeile Ihres Image.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon1.png" loading="lazy" />
+
+Geben Sie den Namen Ihrer Instanz im entsprechenden Feld an und bestimmen Sie die Anzahl der zu erstellenden Instanzen. Klicken Sie anschließend auf <code className="action">Flavor</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-2" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon2.png" loading="lazy" />
+
+Wählen Sie das gewünschte Instanzmodell aus und klicken Sie auf den Tab <code className="action">Networks</code>.
+    
+    :::warning
+    Wenn Ihre Instanz ein Windows-Server ist, müssen Sie einen Flavor des Typs win-xx-xx (z. B. win-b2-15) auswählen und über eine öffentliche Schnittstelle im Netzwerk Ext-Net verfügen. Ohne diese Voraussetzungen ist eine Authentifizierung beim OVHcloud KMS nicht möglich, und Ihr Server bleibt mit einer [nicht aktivierten Lizenz](/guides/public-cloud/compute/activate-windows-license-private-mode/) bestehen. Dies könnte zu Einschränkungen führen, insbesondere zu fehlenden Updates. Zu beachten ist, dass eine Linux-Instanz (z. B. b2-15) nicht in eine Windows-Instanz (z. B. win-b2-15) skaliert werden kann. Um dies zu erreichen, ist es notwendig, eine neue Instanz zu erstellen.
+
+    :::
+
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-3" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon3.png" loading="lazy" />
+
+Wählen Sie das Netzwerk aus, das Sie zuweisen möchten, und klicken Sie auf den Button <code className="action">Instance starten</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-4" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon4.png" loading="lazy" />
+
+Den Status Ihrer neuen Instanz können Sie unter <code className="action">Compute</code> im linken Menü und dann auf <code className="action">Instances</code> einsehen.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-5" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon5.png" loading="lazy" />
+  </Tab>
+  <Tab label="Über die OVHcloud API">
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance"} />
+
+Tragen Sie die Werte für folgende Parameter ein:
+    
+    - **serviceName**: Die ID des OVHcloud Projekts.
+    - **regionName**: Der Name der Region, in der die Instanz erstellt wird.
+    
+    Beispiel für eine Anfrage:
+    
+    ```json
+    {
+      "billingPeriod": "hourly",
+      "bootFrom": {
+        "imageId": "5cb8ea68-****-****-****-820be8346***"
+      },
+      "flavor": {
+        "id": "e81b46f8-****-****-****-cad655e65***"
+      },
+      "name": "newInstance",
+      "network": {
+        "public": true
+      },
+      "sshKey": {
+        "name": "MySSHKey"
+      }
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+### Eine Instanz mithilfe eines Backups wiederherstellen
+
+<Tabs>
+  <Tab label="Über das OVHcloud Kundencenter">
+    Klicken Sie anschließend auf <code className="action">Instanzen</code> in der linken Navigationsleiste unter **Compute**.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup04.png" loading="lazy" />
+
+Klicken Sie auf den Button <code className="action">...</code> rechts neben der Instanz, die Sie wiederherstellen möchten, und klicken Sie auf <code className="action">Bearbeiten</code>.
+    
+    Die Instanz-Bearbeitungsseite wird angezeigt. Dort können Sie folgende Einstellungen ändern:
+    
+    - Name der Instanz
+    - Image der Instanz
+    - Modell der Instanz
+    - Abrechnung der Instanz (nur von stündlich zu monatlich)
+    
+    Führen Sie die erforderlichen Änderungen durch und wählen Sie anschließend den Tab <code className="action">Backups</code> im Abschnitt "Bild" aus.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup05.png" loading="lazy" />
+
+Wählen Sie eine Sicherung aus der Liste der verfügbaren Sicherungen aus. Klicken Sie auf <code className="action">Image ändern</code>, wenn Sie sicher sind, dass Sie das aktuelle Image durch die Sicherung ersetzen möchten.
+    
+    Die Instanz hat den Status `Neuinstallation`, bis der Vorgang abgeschlossen ist. Es kann erforderlich sein, die Seite im Browser zu aktualisieren, um den aktuellen Status anzuzeigen.
+    
+    :::warning
+    Wie im gelben Hinweisfeld angegeben, können keine Daten, die nach der Erstellung dieser Sicherung hinzugefügt wurden, wiederhergestellt werden.
+
+    :::
+
+  </Tab>
+  <Tab label="Über die OVHcloud API">
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance/\\{instanceId\\}/reinstall"} />
+
+Tragen Sie die Werte für folgende Parameter ein:
+    
+    - **serviceName**: Die ID des OVHcloud Projekts.
+    - **regionName**: Der Name der Region, in der sich die Quellinstanz befindet.
+    - **instanceId**: Die ID der Instanz.
+    
+    Beispiel für den Anfragetext:
+    
+    ```json
+    {
+      "imageId": "5cb8ea68-****-****-****-820be8346***",
+      "imageRegionName": "GRA11"
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+## Weiterführende Informationen
+
+[Erste Schritte](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+[Backup einer Instanz erstellen](/guides/public-cloud/compute/save-an-instance/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

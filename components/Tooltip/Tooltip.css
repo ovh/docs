@@ -1,0 +1,111 @@
+.tooltip-trigger {
+  position: relative;
+  display: inline;
+  border-bottom: 1px dashed var(--rp-c-brand-lighter);
+  cursor: help;
+  transition: border-color 0.15s ease;
+}
+
+.tooltip-trigger:hover,
+.tooltip-trigger:focus-visible {
+  border-bottom-color: var(--rp-c-brand);
+}
+
+.tooltip-trigger:focus-visible {
+  outline: 2px solid var(--rp-c-brand-lighter);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.tooltip-popup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  z-index: 100;
+  max-width: 320px;
+  min-width: 120px;
+  padding: 0.5rem 0.75rem;
+  background: var(--rp-c-bg);
+  color: var(--rp-c-text-1);
+  border: 1px solid var(--rp-c-divider);
+  border-radius: var(--rp-radius-small);
+  box-shadow: var(--rp-shadow-3);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+
+/* Placement: top (default) */
+.tooltip-popup[data-placement="top"] {
+  bottom: calc(100% + 8px);
+  top: auto;
+  transform: translateX(-50%) translateY(4px);
+}
+
+.tooltip-popup[data-placement="top"].tooltip-popup--visible {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Placement: bottom */
+.tooltip-popup[data-placement="bottom"] {
+  top: calc(100% + 8px);
+  bottom: auto;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.tooltip-popup[data-placement="bottom"].tooltip-popup--visible {
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltip-popup--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Arrow */
+.tooltip-popup::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+}
+
+.tooltip-popup[data-placement="top"]::after {
+  top: 100%;
+  border-top-color: var(--rp-c-divider);
+}
+
+.tooltip-popup[data-placement="bottom"]::after {
+  bottom: 100%;
+  border-bottom-color: var(--rp-c-divider);
+}
+
+/* Inline styles for markdown content inside tooltip */
+.tooltip-popup strong {
+  font-weight: 600;
+  color: var(--rp-c-text-0, var(--rp-c-text-1));
+}
+
+.tooltip-popup code {
+  padding: 0.15em 0.35em;
+  background: var(--rp-c-text-code-bg);
+  color: var(--rp-c-text-code);
+  border: 1px solid var(--rp-c-text-code-border);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.tooltip-popup a {
+  color: var(--rp-c-link);
+  text-decoration: underline;
+}
+
+.tooltip-popup a:hover {
+  text-decoration: none;
+}

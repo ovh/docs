@@ -1,0 +1,195 @@
+---
+title: "Comment obtenir l'empreinte carbone de vos services OVHcloud"
+description: "Découvrez comment récupérer l'empreinte carbone mensuelle des services OVHcloud grâce à notre calculatrice carbone"
+lastUpdated: 2026-02-11
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+Dans le cadre de vos activités profesionnelles ou par intérêt sur le sujet, vous pouvez être amené à devoir calculer l'empreinte carbone de vos services.
+
+**Découvrez comment récupérer mensuellement l'empreinte carbone de vos services OVHcloud.**
+
+## Prérequis
+
+- Être contact « Facturation » des services pour lesquels vous souhaitez obtenir l'empreinte carbone. Pour plus d'informations, consultez [notre guide sur la gestion des contacts](/guides/account-and-service-management/account-information/managing-contacts/).
+
+{/* CP-NAV-START:account-dashboard */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mon compte](https://manager.eu.ovhcloud.com/#/account/useraccount/dashboard)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > <code className="action">Mon compte</code>
+
+---
+{/* CP-NAV-END:account-dashboard */}
+
+**Le calcul de l'empreinte carbone est disponible pour les services suivants :**
+
+- [Serveur Dédié](https://www.ovhcloud.com/fr/bare-metal/) (Advance, Game, Scale, High Grade, Storage)
+- [Serveur Dédié Eco](https://eco.ovhcloud.com/fr/) (Rise, Kimsufi, So You Start)
+- [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/)
+- [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/)
+
+## En pratique
+
+:::info
+Les données d’empreinte carbone ne sont pas encore disponibles pour les architectures 3AZ et les Local Zones.
+
+:::
+
+
+Plusieurs points sont à prendre en compte :
+
+- Vous ne pouvez pas générer de bilan pour le mois en cours.
+- Que vous saisissiez, via l'API OVHcloud, une date en début, milieu ou fin de mois pour le mois choisi, le bilan prendra en compte le mois complet.
+- Aucun bilan ne peut être généré au delà des 24 derniers mois.
+- Aucun bilan ne peut être généré pour la période précédant la date de mise en place de la fonctionnalité pour chaque service OVHcloud (voir le tableau ci-dessous).
+
+**Disponibilité des données d'empreinte carbone :**
+
+| Services OVHcloud    | Produits                           | Statut      | Date de mise en service de la calculatrice d'empreinte carbone |
+| -------------------- | ---------------------------------- | ----------  | -------------------------------------------------------------- |
+| Serveurs Dédiés      | Serveur Dédié                      | Disponible  | 2023/05/01 |
+|                      | Serveur Dédié Eco                  | Disponible  | 2023/05/01 |
+| Hosted Private Cloud | VMware on OVHcloud                 | Disponible  | 2023/08/01 |
+| Public Cloud         | Instances Public Cloud             | Disponible  | 2025/01/01 |
+|                      | Block Storage                      | Disponible  | 2025/12/01 |
+|                      | Object Storage S3                  | À venir     |            |
+|                      | File Storage                       | À venir     |            |
+|                      | Network                            | À venir     |            |
+|                      | Managed Kubernetes Service         | À venir     |            |
+|                      | Public Cloud Databases/Analytics   | À venir     |            |
+|                      | Data Platform                      | À venir     |            |
+|                      | AI                                 | À venir     |            |
+|                      | Quantum                            | À venir     |            |
+
+### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
+
+1. Sur le [Mon compte](https://manager.eu.ovhcloud.com/#/account/useraccount/dashboard), dans la colonne de gauche, descendez jusqu'à la section contenant les **Liens utiles**, puis cliquez sur l'onglet <code className="action">Mon bilan carbone</code>.
+1. Sur la nouvelle page qui apparaît, cliquez sur <code className="action">Télécharger mon empreinte de [Mois] [Année]</code>.
+
+<img className="thumbnail" alt="Carbon footprint" src="/images/assets/screens/control-panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png" loading="lazy" />
+
+Vous pourrez récupérer chaque mois l'empreinte carbone du mois précédent pour vos services éligibles.
+
+Si vous avez besoin de l'empreinte carbone pour un mois antérieur au mois précédent le mois en cours, vous devrez obligatoirement passer par nos API pour le récupérer.
+
+### Récupérer un bilan mensuel antérieur au mois précédent via nos API
+
+Par défaut, les API OVHcloud sont mises à disposition pour permettre aux développeurs ou aux intégrateurs d'associer, par exemple, des fonctionnalités présentes ou non dans l'espace client OVHcloud directement dans leurs applications ou solutions.
+
+#### Étape 1 - Se connecter à l'API OVHcloud
+
+- Rendez-vous sur notre site [API OVHcloud](https://eu.api.ovh.com/) (vérifiez bien que vous êtes sur `https://eu.api.ovh.com` si vos services sont hébergés en Europe et sur `https://ca.api.ovh.com` s'ils sont hébergés en dehors de l'Europe).
+- Sur la page qui s'affiche, cliquez sur <code className="action">Explore the OVHcloud API</code>.
+- Sur la nouvelle page qui apparaît et dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du champ <code className="action">v1</code>, puis sélectionnez/saisissez le choix `/me`.
+- Parmi la liste d'appels API qui apparaît en dessous, recherchez et cliquez sur l'appel API suivant : **POST /me/carbonCalculator/task**. Vous pouvez aussi cliquer directement sur l'appel API ci-dessous pour y accéder :
+
+<Api version="v1" section="/me" method="POST" route={"/me/carbonCalculator/task"} />
+
+
+- Sur la partie droite de la page s'affiche alors l'API avec son encadré à compléter.
+- Cliquez sur le bouton situé en haut à droite intitulé <code className="action">Authenticate</code>, puis sur le bouton <code className="action">Login with OVHcloud SSO</code>.
+- La page de connexion de l'[espace client OVHcloud](https://manager.eu.ovhcloud.com/#/account/useraccount/dashboard) s'ouvre.
+- Connectez-vous avec votre identifiant client, puis cliquez sur <code className="action">Authorize</code> pour utiliser les API OVHcloud avec vos services.
+- Vous êtes ensuite automatiquement redirigé vers la page précédente de l'API **POST /me/carbonCalculator/task**.
+
+#### Étape 2 - Demander la génération du bilan et récupérer l'ID de la tâche demandée
+
+Remplacez la date du jour qui apparaît dans l'encadré de l'API par la date à laquelle vous souhaitez arrêter le calcul du bilan. Veuillez respecter le format de date suivant :
+
+```bash
+{
+  "date": "YYYY-MM-DD"
+}
+```
+
+<img className="thumbnail" alt="API" src="/images/assets/screens/api/post-me-carboncalculator-task.png" loading="lazy" />
+
+Une fois la date choisie et correctement saisie, cliquez sur le bouton bleu <code className="action">EXECUTE</code> situé en bas à droite de la section préalablement remplie.
+
+Si tout a été effectué correctement, un `taskID` apparaît dans la fenêtre <code className="action">RESPONSE</code> lorsque vous descendez sur la page, en dessous du bouton <code className="action">EXECUTE</code>.
+
+<img className="thumbnail" alt="API" src="/images/assets/screens/api/post-me-carboncalculator-task-response.png" loading="lazy" />
+
+Par exemple, si votre identifiant client OVHcloud est le `aa00000-ovh` et que la date choisie précédemment était le `31-01-2025`, alors vous obtiendrez le résultat suivant :
+
+```bash
+{
+  "taskID": "aa00000-ovh_202501"
+}
+```
+
+Copiez uniquement la valeur obtenue de votre côté et équivalente à la valeur de notre exemple `aa00000-ovh_202501` (sans copier les deux `"` situés aux extrémités).
+
+#### Étape 3 - Récupérer le fichier contenant le bilan carbone de vos services au format PDF
+
+Grâce à la valeur du `taskID` précédemment récupérée, vous pourrez récupérer le bilan carbone de vos services au format PDF.
+
+Restez sur notre site [API OVHcloud](https://eu.api.ovh.com/) et effectuez les actions suivantes :
+
+- Dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire <code className="action">v1</code>, puis sélectionnez/saisissez le choix <code className="action">/me</code>.
+- Parmi la liste d'appels API qui apparaît en dessous, recherchez et cliquez sur l'appel API suivant : **GET /me/carbonCalculator/task/&#123;taskID&#125;**. Vous pouvez aussi cliquer directement sur l'appel API ci-dessous pour y accéder :
+
+<Api version="v1" section="/me" method="GET" route={"/me/carbonCalculator/task/\{taskID\}"} />
+
+
+- Sur la partie droite de la page s'affiche alors l'appel API avec un formulaire à remplir.
+
+Remplissez le formulaire de la partie `PATH PARAMETERS` ainsi :
+
+- `taskID` : copiez ici la valeur du taskID récupérée lors de l'étape 2.
+
+<img className="thumbnail" alt="API" src="/images/assets/screens/api/get-me-carboncalculator-task-taskid.png" loading="lazy" />
+
+Une fois la valeur de votre `taskID` correctement saisie, cliquez sur le bouton bleu <code className="action">EXECUTE</code>.
+
+Le résultat suivant apparaît dans la fenêtre <code className="action">RESPONSE</code> lorsque vous descendez sur la page, en dessous du bouton <code className="action">EXECUTE</code> :
+
+<img className="thumbnail" alt="API" src="/images/assets/screens/api/get-me-carboncalculator-task-taskid-response.png" loading="lazy" />
+
+```bash
+{
+  "link": "Find here the complete URL to download the carbon footprint in PDF format",
+  "status": "SUCCESS",
+  "taskID": "aa00000-ovh_202501"
+}
+```
+
+Dans ce résultat, copiez l'intégralité de l'URL en « HTTPS » (**sans les guillements**) présente à droite de la mention `"link":`, puis collez-la dans la barre de recherche de votre navigateur internet pour initier le téléchargement du bilan carbone au format PDF.
+
+Votre navigateur Internet va automatiquement télécharger le fichier, puis l'afficher.
+
+:::info
+En fonction de la configuration de votre navigateur, le téléchargement et l'affichage du fichier peut se retrouver bloqué. Si tel est le cas, vérifiez la configuration de votre navigateur, puis rechargez la page.
+
+:::
+
+
+Une fois le fichier ouvert, vous y trouverez notamment les éléments suivants :
+
+- Un tableau récapitulatif des émissions de C02 par catégorie pour le mois demandé.
+- Un tableau récapitulatif des émissions de C02 par catégorie entre le début de l'année civile et le mois demandé.
+- Un tableau détaillant les valeurs par type de produit souscrit.
+- Un graphique présentant les émissions de C02 par catégorie.
+
+:::warning
+Le lien généré n'est valide que pendant 24 heures. Veillez donc à télécharger le bilan carbone depuis votre navigateur une fois le lien ouvert.
+
+:::
+
+
+## Aller plus loin <a name="go-further"></a>
+
+[Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/)
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+ 
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+ 
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

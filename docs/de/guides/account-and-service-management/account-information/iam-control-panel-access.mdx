@@ -1,0 +1,97 @@
+---
+title: IAM-Richtlinien erstellen, um Benutzern das Anmelden im OVHcloud Kundencenter zu ermöglichen (EN)
+description: Find out how to grant the minimum rights required to log in to the OVHcloud Control Panel
+lastUpdated: 2024-10-02
+---
+
+## Objective
+
+This guide explains how to provide a user with the minimum rights to allow them to log in to the OVHcloud Control Panel.
+
+## Requirements
+
+- You have an [OVHcloud account](/guides/account-and-service-management/account-information/ovhcloud-account-creation/).
+- You know [how to manage account users](/guides/account-and-service-management/account-information/ovhcloud-users-management/).
+- You know [how to configure policies for IAM](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+{/* CP-NAV-START:iam-policies */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [IAM Richtlinien](https://manager.eu.ovhcloud.com/#/iam/policies/myPolicies)
+- **Navigationspfad:** <code className="action">Identität, Sicherheit und Operationen</code> > <code className="action">Richtlinien</code>
+
+---
+{/* CP-NAV-END:iam-policies */}
+
+## Instructions
+
+To be able to log in to the OVHcloud Control Panel, a user should have at least this set of rights on the account resource:
+
+- account:apiovh:me/get
+- account:apiovh:me/supportLevel/get
+- account:apiovh:me/certificates/get
+- account:apiovh:me/tag/get
+
+With these rights, a user will be able to log in to the OVHcloud Control Panel. To be able to perform any actions inside the Control Panel however, additional rights have to be assigned through IAM.
+
+### Using UI
+
+Using the UI, you can set up a policy with the following configuration:
+
+Add the identites you want to give access to.
+
+<img className="thumbnail" alt="Add identities" src="/images/account-and-service-management/account-information/iam-control-panel-access/add_identities.png" loading="lazy" />
+
+Add a `resourceType` "OVHcloud customer account" and add your account as a resource.
+
+<img className="thumbnail" alt="Account ressourceType" src="/images/account-and-service-management/account-information/iam-control-panel-access/account_ressourceType.png" loading="lazy" />
+
+Then you can either use the managed permissions group `controlPanelAccess`
+
+<img className="thumbnail" alt="Control Panel Access" src="/images/account-and-service-management/account-information/iam-control-panel-access/controlPanelAccess.png" loading="lazy" />
+
+Or add the 4 rights listed above as an action.
+
+<img className="thumbnail" alt="Add actions" src="/images/account-and-service-management/account-information/iam-control-panel-access/add_actions.png" loading="lazy" />
+
+You can now link your users to this policy to give them the right to log in to the OVHcloud Control Panel.
+
+### Using API
+
+Using the API, you can set up a policy according to the following example:
+
+```json
+{
+  "name": "manager_ro",
+  "description": "manager_ro",
+  "identities": [
+    .... 
+  ],
+  "resources": [ 
+     {
+         "urn": "urn:v1:eu:resource:account:xx1111-ovh" 
+     }],
+  "permissions": {
+    "allow": [
+      {
+        "action": "account:apiovh:me/get"
+      },
+      {
+        "action": "account:apiovh:me/supportLevel/get"
+      },
+      {
+        "action": "account:apiovh:me/certificates/get"
+      },
+      {
+        "action": "account:apiovh:me/tag/get"
+      }
+    ]
+  }
+}
+```
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

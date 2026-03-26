@@ -1,0 +1,75 @@
+---
+title: Delegowanie projektów
+description: Dowiedz się, jak delegować uprawnienia dostępu do projektu Public Cloud innym kontom OVHcloud
+lastUpdated: 2025-04-28
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+W zależności od Twojego przypadku może zaistnieć konieczność udzielenia dostępu do Twojego projektu innym użytkownikom, bez zapewnienia im pełnego dostępu do Twoich usług.<br/>
+W tym celu możesz przekazać innym kontom klienta OVHcloud uprawnienia do odczytu lub odczytu / zapisu swoich projektów.
+
+**Niniejszy przewodnik wyjaśnia, jak delegować uprawnienia dostępu do projektu Public Cloud w Panelu klienta.**
+
+## Wymagania początkowe
+
+- Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
+
+## W praktyce
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+Kliknij <code className="action">Kontakty i uprawnienia</code> w sekcji **Ustawienia**.
+
+Na tej stronie możesz sprawdzić kontakty przypisane do Twojego projektu.
+
+<img className="thumbnail" alt="public-cloud-delegate-projects" src="/images/public-cloud/public-cloud-cross-functional/delegate-projects/delegatingproject01.png" loading="lazy" />
+
+Możesz kliknąć przycisk <code className="action">Zmień</code>, aby zmienić aktualne kontakty. Postępuj zgodnie z instrukcjami zawartymi w przewodniku Zarządzanie [Zmiana kontaktów projektu](/guides/public-cloud/compute/change-project-contacts/), aby zakończyć operację.
+
+### Dodaj kontakty i uprawnienia
+
+Kliknij przycisk <code className="action">Dodaj</code>, aby dodać użytkownika i przypisać mu uprawnienia. W oknie, które się wyświetla wprowadź identyfikator użytkownika (w formacie xx00000-ovh), a następnie wybierz `Odczyt` lub `Odczyt/Zapis` w rozwijanym menu.
+
+<img className="thumbnail" alt="public-cloud-delegate-projects" src="/images/public-cloud/public-cloud-cross-functional/delegate-projects/delegatingproject02.png" loading="lazy" />
+
+:::info
+Należy zauważyć, że prawa do `odczytu/zapisu` zezwalają na modyfikacje projektu, które mogą mieć wpływ na przyszłe faktury.
+
+:::
+
+ 
+Kliknij <code className="action">Dodaj</code>, aby zatwierdzić delegowanie dostępu. Otrzymasz wówczas e-mail z potwierdzeniem oraz nowy użytkownik, który będzie mógł otworzyć projekt w sekcji Public Cloud w Panelu klienta.
+
+Po odświeżeniu strony w tabeli wyszczególnione są konta klienta OVHcloud oraz ich uprawnienia.
+
+<img className="thumbnail" alt="public-cloud-delegate-projects" src="/images/public-cloud/public-cloud-cross-functional/delegate-projects/delegatingproject03.png" loading="lazy" />
+
+Aby cofnąć dostęp, kliknij przycisk <code className="action">...</code> i wybierz <code className="action">Usuń</code>.
+
+## Sprawdź również
+
+[Uruchom instancję Public Cloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+[Informacje o sposobie rozliczania usługi Public Cloud](/guides/public-cloud/public-cloud-cross-functional/analyze-billing/)
+
+[Parametry dostępu i bezpieczeństwa w Horizon](/guides/public-cloud/public-cloud-cross-functional/access-and-security-in-horizon/)
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

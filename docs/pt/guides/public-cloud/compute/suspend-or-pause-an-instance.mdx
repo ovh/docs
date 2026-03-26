@@ -1,0 +1,316 @@
+---
+title: Suspender ou colocar em pausa uma instância
+description: Saiba como suspender ou colocar em pausa uma instância Public Cloud para libertar temporariamente recursos mantendo o seu endereço IP, bem como o impacto na faturação de cada opção
+lastUpdated: 2026-02-27
+---
+
+## Objetivo
+
+No âmbito da configuração de uma infraestrutura de alta disponibilidade, é possível que tenha de reduzir o acesso às suas instâncias para efetuar alguns testes. OpenStack que suspenda, parar ou coloque em pausa as suas instâncias. Em cada caso, o seu endereço IP é mantido.
+
+:::warning
+O nome destas opções na Área de Cliente OVHcloud é diferente do nome no Openstack/Horizon. Se efetuar esta operação através da Área de Cliente OVHcloud, certifique-se de que selecionou a opção adequada.
+
+:::
+
+
+**Este guia explica como suspender, parar ou colocar em pausa sua instância.**
+
+## Requisitos
+
+- uma [instância Public Cloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) sobre faturação à **hora**
+- acesso à [interface Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+- Conhecimento da [API OpenStack](/guides/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/) e das [variáveis OpenStack](/guides/public-cloud/public-cloud-cross-functional/loading-openstack-environment-variables/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Caminho de navegação:** <code className="action">Public Cloud</code> > Selecione o seu projeto
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instruções
+
+:::warning
+**Âmbito:** Este guia aplica-se a todas as instâncias de Public Cloud, independentemente do modelo de faturação (à hora ou mensal).
+
+**Faturação mensal:** Uma instância que permaneça suspensa durante todo o mês não será faturada. Assim que a instância for reativada, mesmo que brevemente, aplica-se a faturação completa do mês.
+
+**Nota:** Enquanto a instância não for eliminada, qualquer operação continuará a gerar encargos de instância.
+
+:::
+
+
+A tabela abaixo permite-lhe diferenciar as opções disponíveis nas suas instâncias. Consulte este manual clicando na opção que preferir. Colocámos entre parênteses a terminologia utilizada na interface Horizon.
+
+|Termo|Descrição|Faturação|
+|---|---|---|
+|[Suspender (*shelve*)](#shelve-instance)|Conserve o seu IP, bem como os recursos e os dados no seu disco, criando uma imagem instantânea; todos os outros recursos são libertados.|Só é faturado por snapshot.|
+|[Desativar (*suspend*)](#stop-suspend-instance)|Armazena o estado da máquina virtual no disco, os recursos dedicados à instância estão sempre reservados.|Será sempre faturado ao mesmo preço para a sua instância.|
+|[Pausa](#pause-instance)|Armazena o estado da máquina virtual na memória RAM, uma instância suspensa torna se « gelada ».|Será sempre faturado ao mesmo preço para a sua instância.|
+
+### Índice
+
+- [Suspender (shelve) uma instância](#shelve-instance)
+    - [Da Área de Cliente OVHcloud](#control-panel)
+    - [Da interface Horizon](#horizon)
+    - [Utilização das API OpenStack/Nova](#openstack-nova)
+- [Reativar (unshelve) uma instância](#unshelve-instance)
+    - [Da Área de Cliente OVHcloud](#control-panel-unshelve)
+    - [Da interface Horizon](#horizon-unshelve)
+    - [Utilização das API OpenStack/Nova](#openstack-nova-unshelve)
+- [Desativar (suspend) uma instância](#stop-suspend-instance)
+    - [Da Área de Cliente OVHcloud](#stop-control-panel)
+    - [Da interface Horizon](#stop-horizon)
+    - [Utilização das API OpenStack/Nova](#stop-openstack-nova)
+- [Colocar em pausa uma instância (*pause*)](#pause-instance)
+    - [Da interface Horizon](#pause-horizon)
+    - [Utilização das API OpenStack/Nova](#pause-openstack-nova)
+
+<a name="shelve-instance"></a>
+
+### Suspender (shelve) uma instância
+
+:::danger
+Tenha em atenção que a suspensão de uma instância IOPS ou T1/T2-180 resultará na perda de dados nas discos NVMe em passthrough.
+
+Suspender este tipo de instância leva à sua desativação do anfitrião e, por conseguinte, dos discos em passthrough.
+
+:::
+
+
+Esta opção permite libertar os recursos dedicados à sua instância de Public Cloud, mas o endereço IP fica. Os dados do seu disco local serão armazenados numa imagem instantânea criada automaticamente após a instância estar reservada. Os dados armazenados na memória e noutros locais não serão conservados.
+
+<a name="control-panel"></a>
+
+#### Da Área de Cliente OVHcloud
+
+Na Área de Cliente OVHcloud, clique no menu da secção <code className="action">Public Cloud</code>, selecione o seu projeto Public Cloud e clique em <code className="action">Instâncias</code> no menu à esquerda.
+
+Clique então nas <code className="action">⋮</code> à direita da instância a suspender, e clique em <code className="action">Suspender</code>.
+
+<img className="thumbnail" alt="suspend instance" src="/images/public-cloud/compute/suspend-or-pause-an-instance/suspend_instance_2025.png" loading="lazy" />
+
+Na janela contextual, tome nota da mensagem e clique em <code className="action">Confirmar</code>.
+
+<img className="thumbnail" alt="confirm suspension" src="/images/public-cloud/compute/suspend-or-pause-an-instance/confirm_suspension_2025.png" loading="lazy" />
+
+Uma mensagem é exibida durante a operação:
+
+<img className="thumbnail" alt="Operation in progress" src="/images/public-cloud/compute/suspend-or-pause-an-instance/suspension_message_2025.png" loading="lazy" />
+
+Uma vez terminado o processo, a instância parece *Suspensa*.
+
+<img className="thumbnail" alt="suspended status" src="/images/public-cloud/compute/suspend-or-pause-an-instance/instance_suspended_2025.png" loading="lazy" />
+
+O snapshot estará então disponível na secção <code className="action">Instance Backup</code> do menu **Compute** à esquerda do espaço Public Cloud. Um snapshot chamado *xxxxx-shelved* estará então visível:
+
+<img className="thumbnail" alt="snapshot tab" src="/images/public-cloud/compute/suspend-or-pause-an-instance/shelved_backup_2025.png" loading="lazy" />
+
+<a name="horizon"></a>
+
+#### Da interface Horizon
+
+Para utilizar este método, é necessário [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/):
+
+- Para iniciar sessão com o SSO da OVHcloud: utilize o link <code className="action">Horizon</code> no menu à esquerda em "Management Interfaces" após abrir o seu projeto <code className="action">Public Cloud</code> na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+- Para se ligar a um utilizador OpenStack específico: abra a página de ligação ao [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduza os [identificadores OpenStack](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/) previamente criados, depois clique em <code className="action">Connect</code>.
+
+Se criou instâncias em regiões diferentes, certifique-se de que se encontra na região apropriada. Pode verificá-lo no canto superior esquerdo da interface Horizon.
+
+<img className="thumbnail" alt="horizon interface" src="/images/public-cloud/compute/suspend-or-pause-an-instance/firstaccesshorizon.png" loading="lazy" />
+
+Clique no menu <code className="action">Compute</code> no lado esquerdo e selecione <code className="action">Instances</code>. Selecione <code className="action">Shelve Instance</code> na lista pendente para a instância correspondente.
+
+<img className="thumbnail" alt="shelve instance" src="/images/public-cloud/compute/suspend-or-pause-an-instance/shelveinstancehorizon.png" loading="lazy" />
+
+Uma vez terminado o processo, a sua instância aparece como *Shelved Offloaded* reservada.
+
+<img className="thumbnail" alt="shelved instance" src="/images/public-cloud/compute/suspend-or-pause-an-instance/newinstancestatushorizon.png" loading="lazy" />
+
+Para ver o snapshot, no menu <code className="action">Compute</code>, clique em <code className="action">Images</code>.
+
+<img className="thumbnail" alt="snapshot" src="/images/public-cloud/compute/suspend-or-pause-an-instance/snapshothorizon.png" loading="lazy" />
+
+<a name="openstack-nova"></a>
+
+#### Utilização das API OpenStack/Nova
+
+Antes de continuar, recomendamos que consulte os seguintes guias:
+
+- [Preparar o ambiente para utilizar a API OpenStack](/guides/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/)
+- [Carregar as variáveis de ambiente OpenStack](/guides/public-cloud/public-cloud-cross-functional/loading-openstack-environment-variables/)
+
+Quando o ambiente estiver pronto, utilize o seguinte comando:
+
+```bash
+~$ openstack server shelve <UUID server>
+
+=====================================
+
+~$ nova shelve <UUID server> 
+```
+
+<a name="unshelve-instance"></a>
+
+### Reativar (unshelve) uma instância
+
+Esta opção permite-lhe reativar a sua instância para que a possa continuar a utilizar. Tenha em conta que, uma vez efetuada esta operação, a faturação será retomada normalmente.
+
+> [!alert] **Ações no snapshot**
+>
+> Qualquer ação no snapshot que não a reativação *unshelve* pode ser muito perigosa para a sua infraestrutura em em caso de mau uso. Uma vez « reactivada » (*unshelved*) uma instância, a snapshot é automaticamente eliminada. Não é recomendado criar uma nova instância a partir de uma snapshot criada após a suspensão (*shelve*) de uma instância.
+>
+> A utilização e a gestão dos serviços OVHcloud são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um [serviço especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”. 
+>
+
+<a name="control-panel-unshelve"></a>
+
+#### Da Área de Cliente OVHcloud
+
+Na Área de Cliente OVHcloud, clique no menu da secção <code className="action">Public Cloud</code>, selecione o seu projeto Public Cloud e clique em <code className="action">Instâncias</code> no menu à esquerda.
+
+Clique então nas <code className="action">⋮</code> à direita da instância, clique em <code className="action">Reativar</code>.
+
+<img className="thumbnail" alt="reactivate instance" src="/images/public-cloud/compute/suspend-or-pause-an-instance/reactivate_instance_2025.png" loading="lazy" />
+
+Na janela contextual, tome nota da mensagem e clique em <code className="action">Confirmar</code>.
+
+Uma vez terminado o processo, a sua instância aparece como *Ativada*.
+
+<a name="horizon-unshelve"></a>
+
+#### Da interface Horizon
+
+Na interface Horizon, clique no menu <code className="action">Compute</code> no lado esquerdo e selecione <code className="action">Instances</code>. Selecione <code className="action">Unshelve Instance</code> na lista pendente para a instância correspondente.
+
+<img className="thumbnail" alt="unshelve instance" src="/images/public-cloud/compute/suspend-or-pause-an-instance/unshelveinstancehorizon.png" loading="lazy" />
+
+Uma vez terminado o processo, a sua instância aparecerá como *Active*.
+
+<a name="openstack-nova-unshelve"></a>
+
+#### Utilização das API OpenStack/Nova
+
+Quando o ambiente estiver pronto, utilize o seguinte comando:
+
+```bash
+~$ openstack server unshelve <UUID server>
+
+=========================================
+
+~$ nova unshelve <UUID server>
+```
+
+<a name="stop-suspend-instance"></a>
+
+### Desativar (suspend) uma instância
+
+Esta opção permite desligar a sua instância. O estado da VM é armazenado no disco, enquanto a memória é gravada no disco.
+
+<a name="stop-control-panel"></a>
+
+#### Da Área de Cliente OVHcloud
+
+Na Área de Cliente OVHcloud, clique no menu da secção <code className="action">Public Cloud</code>, selecione o seu projeto Public Cloud e clique em <code className="action">Instâncias</code> no menu à esquerda.
+
+Clique então nas <code className="action">⋮</code> à direita da instância a parar, e clique em <code className="action">Desativar</code>.
+
+<img className="thumbnail" alt="stop instance" src="/images/public-cloud/compute/suspend-or-pause-an-instance/turn_off_instance_2025.png" loading="lazy" />
+
+Na janela contextual, tome nota da mensagem e clique em <code className="action">Confirmar</code>.
+
+<img className="thumbnail" alt="stop instance" src="/images/public-cloud/compute/suspend-or-pause-an-instance/confirm_turn_off.png" loading="lazy" />
+
+Uma vez terminado o processo, a instância aparece como *Apagada*.
+
+Para **reativar** a instância, efetue as mesmas etapas que as acima mencionadas. Clique então nas <code className="action">⋮</code> à direita da instânciae selecione o <code className="action">Iniciar</code>. Em alguns casos, poderá ter de efetuar uma Reboot a frio.
+
+<a name="stop-horizon"></a>
+
+#### Da interface Horizon 
+
+Na interface Horizon, clique no menu <code className="action">Compute</code> no lado esquerdo e selecione <code className="action">Instances</code>. Selecione <code className="action">Suspend Instance</code> na lista pendente para a instância correspondente.
+
+<img className="thumbnail" alt="instance suspension horizon" src="/images/public-cloud/compute/suspend-or-pause-an-instance/suspendinstancehorizon.png" loading="lazy" />
+
+Aparecerá a mensagem de confirmação indicando que a instância foi suspensa.
+
+Para **reactivar** a instância, efetue as mesmas operações que as acima mencionadas. Na lista pendente da instância correspondente, selecione <code className="action">Resume Instance</code>.
+
+<a name="stop-openstack-nova"></a>
+
+#### Utilização da API OpenStack/Nova
+
+Quando o ambiente estiver pronto, utilize o seguinte comando
+
+```bash
+~$ openstack server suspend <UUID server>
+
+=========================================
+
+~$ nova suspend <UUID server>
+```
+
+Para **reactivar** a instância, utilize o seguinte comando
+
+```bash
+~$ openstack server unsuspend <UUID server>
+
+=========================================
+
+~$ nova unsuspend <UUID server>
+```
+
+<a name="pause-instance"></a>
+
+### Colocar em pausa uma instância (*pause*) 
+
+Esta ação só é possível através da interface Horizon ou da API Openstack/Nova. A instância tem um estado de « gelado » ou de « espera »
+
+<a name="pause-horizon"></a>
+
+#### Da interface Horizon 
+
+Na interface Horizon, clique no menu <code className="action">Compute</code> no lado esquerdo e selecione <code className="action">Instances</code>. Selecione <code className="action">Pause Instance</code> na lista pendente para a instância correspondente.
+
+<img className="thumbnail" alt="Pause instance" src="/images/public-cloud/compute/suspend-or-pause-an-instance/pauseinstancehorizon.png" loading="lazy" />
+
+Aparecerá a mensagem de confirmação indicando que a instância foi pausada.
+
+Para **reactivar** a instância, efetue as mesmas etapas que as mencionadas acima. Na lista pendente da instância correspondente, selecione <code className="action">Resume Instance</code>.
+
+<a name="pause-openstack-nova"></a>
+
+#### Utilização das API OpenStack/Nova
+
+Quando o ambiente estiver pronto, utilize o seguinte comando:
+
+```bash
+~$ openstack server pause <UUID server>
+
+=========================================
+
+~$ nova pause <UUID server>
+```
+
+Para **reactivar** a instância, utilize o seguinte comando:
+
+```bash
+~$ openstack server unpause <UUID server>
+
+=========================================
+
+~$ nova unpause <UUID server>
+```
+
+## Quer saber mais?
+
+[Documentação OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

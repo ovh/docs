@@ -1,0 +1,40 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build:fr": {
+      "env": ["LOCALE", "NODE_OPTIONS"],
+      "outputs": ["dist/fr/**"]
+    },
+    "build:en": {
+      "env": ["LOCALE", "NODE_OPTIONS"],
+      "outputs": ["dist/en/**"]
+    },
+    "build:de": {
+      "env": ["LOCALE", "NODE_OPTIONS"],
+      "outputs": ["dist/de/**"]
+    },
+    "build:es": {
+      "env": ["LOCALE", "NODE_OPTIONS"],
+      "outputs": ["dist/es/**"]
+    },
+    "build:it": {
+      "env": ["LOCALE", "NODE_OPTIONS"],
+      "outputs": ["dist/it/**"]
+    },
+    "build:pl": {
+      "env": ["LOCALE", "NODE_OPTIONS"],
+      "outputs": ["dist/pl/**"]
+    },
+    "build:pt": {
+      "env": ["LOCALE", "NODE_OPTIONS"],
+      "outputs": ["dist/pt/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "outputs": []
+    }
+  }
+}

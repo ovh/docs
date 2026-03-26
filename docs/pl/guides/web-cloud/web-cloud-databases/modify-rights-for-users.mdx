@@ -1,0 +1,130 @@
+---
+title: Web Cloud Databases - Zmiana uprawnień użytkownika
+description: Dowiedz się, jak zmienić uprawnienia użytkownika w rozwiązaniu Web Cloud Databases
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Rozwiązanie [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) może zawierać kilka baz danych. Pozwala na zdefiniowanie jednego lub kilku użytkowników do zarządzania bazami danych i korzystania z nich. Ci użytkownicy mogą mieć wyższe lub niższe uprawnienia w zależności od ich ról na poziomie baz danych.
+Podczas korzystania z produktu może być konieczna zmiana uprawnień użytkownika w rozwiązaniu [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
+
+**Dowiedz się, jak zmienić uprawnienia użytkownika w rozwiązaniu Web Cloud Databases.**
+
+## Wymagania początkowe
+
+- Posiadanie rozwiązania [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) oraz jednego lub kilku użytkowników.
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Wybierz usługę bazy danych
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## W praktyce
+
+:::info
+Aby utworzyć nowego użytkownika w rozwiązaniu Web Cloud Databases, zapoznaj się z sekcją **Tworzenie użytkownika** w naszym przewodniku "[Tworzenie baz danych i użytkowników na serwerze bazy danych](/guides/web-cloud/web-cloud-databases/create-db-and-user-on-db-server/)".
+
+:::
+
+
+Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
+
+<Tabs>
+  <Tab label="Etap 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 2">
+    Na wyświetlonej stronie kliknij zakładkę <code className="action">Użytkownicy i uprawnienia</code>.
+    
+    <img className="thumbnail" alt="Users and rights" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 3">
+    Kliknij przycisk <code className="action">...</code> po prawej stronie wybranego użytkownika, a następnie <code className="action">Zarządzanie uprawnieniami</code>.
+    
+    <img className="thumbnail" alt="Manage rights" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-user-alone.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 4">
+    Na nowej stronie znajdziesz tabelę z wszystkimi bazami danych dostępnymi w rozwiązaniu Web Cloud Databases. Tabela ta zawiera listę wszystkich uprawnień, którymi dysponuje użytkownik dla każdej bazy danych w rozwiązaniu Web Cloud Databases.
+    
+    <img className="thumbnail" alt="Changing user rights" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png" loading="lazy" />
+
+Tutaj możesz zmienić uprawnienia użytkownika dla każdej bazy danych. W tym celu, dla każdej bazy danych, której dotyczy operacja, kliknij puste kółka odpowiadające uprawnieniom, które chcesz przedefiniować dla użytkownika. Zmiana zostanie zastosowana w ciągu kilku chwil.
+  </Tab>
+</Tabs>
+
+
+Poniżej znajduje się tabela podsumowująca możliwe typy zapytań do bazy danych w zależności od uprawnień przyznanych użytkownikowi:
+
+<table align="center">
+<thead>
+<tr>
+<th><center>Uprawnienia</center></th>
+<th><center>Administrator</center></th>
+<th><center>Odczyt / Zapis</center></th>
+<th><center>Odczyt</center></th>
+<th><center>Żaden</center></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><center>Select</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td></td>
+</tr>
+<tr>
+<td><center>Insert</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td></td><td></td>
+</tr>
+<tr>
+<td><center>Update</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td></td><td></td>
+</tr>
+<tr>
+<td><center>Delete</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td></td><td></td>
+</tr>
+<tr>
+<td><center>Create</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td><center>Alter</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td><center>Drop</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>&#10004;</span></center></td>
+<td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+
+## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

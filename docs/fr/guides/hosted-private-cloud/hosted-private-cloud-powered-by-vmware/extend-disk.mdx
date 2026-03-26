@@ -1,0 +1,160 @@
+---
+title: Etendre un volume dans vSphere et dans un OS
+description: "Découvrez comment augmenter la taille d'un disque virtuel et l'intégrer à votre VM"
+lastUpdated: 2022-01-13
+---
+
+## Objectif
+
+Nous allons vous montrer comment utiliser vSphere et les outils de gestion d'OS pour augmenter la taille d'un disque virtuel sous Windows et sous Linux.
+
+**Ce guide est un cas d'étude avec toutes les étapes pour atteindre l'objectif**
+
+## Prérequis
+
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Disposer d'un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
+## En pratique
+
+:::warning
+Avant de procéder à ce type de changement, nous recommandons une sauvegarde complète ou un clonage de la machine virtuelle.
+
+:::
+
+
+### VM Windows
+
+Dans l'interface vSphere, rendez-vous dans le tableau de bord <code className="action">Hôtes et clusters</code>.
+
+<img className="thumbnail" alt="MENU" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en01dash.png" loading="lazy" />
+
+Sur la gauche de votre écran, naviguez vers la VM à modifier, faites un clic-droit et sélectionnez <code className="action">Modifier les paramètres</code>.
+
+<img className="thumbnail" alt="EDIT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en02vm.png" loading="lazy" />
+
+Trouvez le disque à étendre et modifiez la valeur de sa taille (dans notre exemple, changement de 80 à 100 GB).<br/>
+Cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="EDIT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en03hdd.png" loading="lazy" />
+
+Vous pouvez vérifier que le changement a été appliqué dans la vue des tâches récentes.
+
+<img className="thumbnail" alt="EDIT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en04task.png" loading="lazy" />
+
+Connectez-vous à la VM et rendez-vous dans la console de gestion des disques.<br/>
+Un moyen simple est de faire un clic-droit sur « Démarrer » puis de cliquer sur <code className="action">Gestion des disques</code>.
+
+<img className="thumbnail" alt="WIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en05start.png" loading="lazy" />
+
+Dans la console, vous constatez qu'il y a 20 GB d'espace disponible, soit l'espace précédement ajouté au disque virtuel.
+
+<img className="thumbnail" alt="WIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en06unallocated.png" loading="lazy" />
+
+Faites un clic-droit sur le volume existant et selectionnez <code className="action">Étendre le volume</code>.
+
+<img className="thumbnail" alt="WIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en07extend.png" loading="lazy" />
+
+Cliquez sur <code className="action">Suivant</code> dans la première fenêtre de du didacticiel.<br/>
+Dans la deuxième, tout l'espace est selectionné et appliqué par défaut. Cliquez sur <code className="action">Suivant</code>.<br/>
+Cliquez sur <code className="action">Terminer</code> dans la dernière fenêtre.
+
+<img className="thumbnail" alt="WIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en08wiz.png" loading="lazy" />
+
+Le disque est maintenant étendu et prêt à l'usage.
+
+<img className="thumbnail" alt="WIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en09done.png" loading="lazy" />
+
+### VM Linux
+
+:::info
+Pour les VM sous Linux, nous utilisons un utilitaire de partition. Il existe de multiples produits et nous n'en avons aucun à recommander en particulier. L'utilisation de [GParted LiveCD](http://gparted.sourceforge.net/livecd.php) ne signifie pas que nous recommandons son utilisation.
+
+Pour créer une librairie d'ISOs et monter un ISO sur une VM, consultez notre guide pour [Connecter une image ISO à une VM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/).
+
+:::
+
+
+Dans l'interface vSphere, rendez-vous dans le tableau de bord <code className="action">Hôtes et clusters</code>.
+
+<img className="thumbnail" alt="MENU" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en01dash.png" loading="lazy" />
+
+Sur la gauche de votre écran, naviguez vers la VM à modifier, faites un clic-droit et sélectionnez <code className="action">Modifier les paramètres</code>.
+
+<img className="thumbnail" alt="EDIT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en10vm.png" loading="lazy" />
+
+Connectez l'image ISO de l'utilitaire à la VM ([Connecter une image ISO à une VM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-connect-an-iso-image-to-a-vm/)).<br/>
+
+Trouvez le disque à étendre et modifiez la valeur de sa taille (dans notre exemple, changement de 20 à 70 GB).<br/>
+
+<img className="thumbnail" alt="EDIT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en11hdd.png" loading="lazy" />
+
+Dans l'onglet <code className="action">Options VM</code>, cochez la case « Lors du démarrage suivant, forcez l'entrée dans l'écran de configuration BIOS » pour pouvoir booter depuis l'utilitaire de partition.<br/>
+Cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="EDIT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en12bios.png" loading="lazy" />
+
+Vous pouvez vérifier que le changement a été appliqué dans la vue des tâches récentes.
+
+<img className="thumbnail" alt="EDIT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en13task.png" loading="lazy" />
+
+Démarrez (ou redémarrez) la VM et lancer l'utilitaire de partition.<br/>
+*Veuillez vous référer à la documentation du développeur pour le boot et l'accès à la console de management.*<br/>
+Dans la console de management, vous constatez la présence de 50GB d'espace non alloué, soit l'espace précédemment ajouté au disque virtuel.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en14unallocated.png" loading="lazy" />
+
+Faites un clic-droit sur le volume existant et sélectionnez <code className="action">Redimensionner/Déplacer</code>.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en15extend.png" loading="lazy" />
+
+Déplacez la flèche droite pour selectionner tout l'espace disponible ou tapez 0 dans le champ « Espace libre suivant ».<br/>
+Cliquez sur <code className="action">Redimensionner/Déplacer</code>.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en16wiz.png" loading="lazy" />
+
+Cliquez sur la coche verte pour appliquer toutes les opérations.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en17apply.png" loading="lazy" />
+
+Cliquez sur <code className="action">Appliquer</code> pour confirmer.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en18confirm.png" loading="lazy" />
+
+Enfin, cliquez sur <code className="action">Fermer</code>.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en19close.png" loading="lazy" />
+
+Vous constatez que le volume contient maintenant l'espace libre.<br/>
+Cependant, il nous faut encore allouer l'espace au disque.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en20disk.png" loading="lazy" />
+
+Faites un clic-droit sur le disque existant et sélectionnez <code className="action">Redimensionner/Déplacer</code>.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en21extend.png" loading="lazy" />
+
+Déplacez la flèche droite pour selectionner tout l'espace disponible ou tapez 0 dans le champ « Espace libre suivant ».<br/>
+Cliquez sur <code className="action">Redimensionner</code>.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en22wiz.png" loading="lazy" />
+
+Cliquez sur la coche verte pour appliquer toutes les opérations.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en23apply.png" loading="lazy" />
+
+Cliquez sur <code className="action">Appliquer</code> pour confirmer.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en18confirm.png" loading="lazy" />
+
+Enfin, cliquez  sur <code className="action">Fermer</code>.
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en19close.png" loading="lazy" />
+
+Le disque est maintenant étendu et prêt à l'usage.<br/>
+
+<img className="thumbnail" alt="LIN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/extend-disk/en24done.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

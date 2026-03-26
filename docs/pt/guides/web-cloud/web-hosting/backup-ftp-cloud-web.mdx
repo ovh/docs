@@ -1,0 +1,109 @@
+---
+title: Recuperar o backup do espaço FTP do seu alojamento Cloud Web
+description: Saiba como recuperar um backup do espaço FTP do seu alojamento Cloud Web
+lastUpdated: 2023-11-16
+---
+
+## Objetivo
+
+O seu alojamento Cloud Web dispõe de um espaço de armazenamento no qual pode alojar os seus sites ou aplicações.
+
+**Saiba como recuperar um backup do espaço FTP do seu alojamento Cloud Web**. 
+
+:::info
+Os backups propostos pela OVHcloud para os alojamentos Cloud Web são não contratuais. Estes são disponibilizados para completar os seus próprios meios de backup em situações urgentes. Assim, recomendamos que realize regularmente as suas próprias salvaguardas de segurança para evitar possíveis perdas de dados.
+
+Quando efetuar uma salvaguarda de segurança para o seu site e utilizar uma base de dados, faça também um backup desta. Não hesite em consultar o nosso guia para [recuperar um backup da sua base de dados](/guides/web-cloud/web-hosting/sql-database-export/).
+
+:::
+
+
+**Saiba como recuperar e restaurar um backup FTP do seu alojamento Cloud Web.**
+
+## Requisitos
+
+- Ter um [alojamento Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/)
+- Ter acesso ao endereço de e-mail associado ao seu ID de cliente.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Alojamentos</code> > Selecione o seu alojamento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instruções
+
+Um alojamento Cloud Web dispõe de backups automáticos ativados nas seguintes frequências:
+
+- no mesmo dia, efetuada depois das 00h00.
+- no dia anterior, efetuada depois das 00h00.
+- antes, após as 00h00.
+- no domingo anterior, efetuada depois das 01h00.
+
+Só os backups mencionados acima podem ser propostos pela OVHcloud, desde que o seu alojamento Cloud Web já existisse nas datas indicadas e sob reserva das disponibilidades da infraestrutura no momento do pedido do backup.
+
+### Recuperar um backup
+
+Contrariamente aos alojamentos partilhados OVHcloud, é impossível efetuar um restauro do espaço FTP com um clique a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+É gerado um link de download do backup que é enviado por e-mail para o endereço de e-mail associado ao identificador de cliente administrador do alojamento Cloud Web.
+
+#### Etapa 1 - Gerar o link de recuperação enviado por e-mail
+
+Para gerar o link de recuperação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção <code className="action">Web Cloud</code>, clique em <code className="action">Alojamentos</code> e, a seguir, no Cloud Web em causa. 
+
+Selecione o separador <code className="action">FTP - SSH</code> e clique no botão <code className="action">Gerar um backup</code> à direita.
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png" loading="lazy" />
+
+Na nova janela, selecione um dos backups disponíveis e clique em <code className="action">Seguinte</code>.
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png" loading="lazy" />
+
+Aparecerá uma segunda janela que lhe indicará que o link de recuperação do ficheiro de backup lhe será enviado por e-mail e que nenhum restauro automático no seu alojamento Cloud Web será feito pela OVHcloud.
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png" loading="lazy" />
+
+Clique em <code className="action">Confirmar</code> para validar o seu pedido.
+
+Se a geração do backup está bem lançada, na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt), aparecerá a seguinte mensagem:
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png" loading="lazy" />
+
+A geração do backup demora entre 10 e 15 minutos para ser realizado.
+
+#### Etapa 2 - Recuperar o backup
+
+Uma vez finalizada a geração do backup, receberá um e-mail no endereço de e-mail associado ao identificador administrador do seu alojamento Cloud Web.<br/>
+Este e-mail contém um link de download **válido para 9 dias** a contar a partir da receção do e-mail:
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/email-sending-to-customer/cloud-web/backup-information.png" loading="lazy" />
+
+O ficheiro assim descarregado está no formato *.tar.gz*.
+
+### Restaurar o seu backup
+
+Depois de fazer o download dos seus ficheiros, poderá [ligar-se ao seu espaço FTP](/guides/web-cloud/web-hosting/ftp-connection/) através de um software FTP como o [Filezilla](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/) e, em seguida, substituir os ficheiros que pretende pelos que recuperou.
+
+:::info
+Utilize as portas indicadas na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt) para as ligações SFTP e SSH, pois a porta 22 não estará funcional para o seu alojamento Cloud Web.
+
+:::
+
+
+## Quer saber mais? 
+
+[Aceder ao espaço de armazenamento do alojamento Web](/guides/web-cloud/web-hosting/ftp-connection/)
+
+[Ligar-se através do software Filezilla](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,111 @@
+---
+title: Creating a Kubernetes cluster with existing nodes (Generic) in MRS
+description: Find out how to create a RKE2/K3s Kubernetes cluster with existing nodes on a Managed Rancher Service
+lastUpdated: 2024-09-11
+---
+
+## Objective
+
+Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. You can use Rancher to deploy a Kubernetes cluster on any platform and location including:
+
+- Hosted Kubernetes provider (e.g. OVHcloud Managed Kubernetes Service, AWS EKS, GCP GKE, etc).
+- Infrastructure Provider - Public Cloud or Private Cloud (vSphere, Nutanix, etc).
+- Bare-metal servers, cloud hosted or on premise.
+- Virtual machines, cloud hosted or on premise
+
+<img className="thumbnail" alt="Rancher Cluster Creation" src="/images/public-cloud/containers-orchestration/managed-rancher-service/creating-kubernetes-custom-nodes/rancher-cluster-creation.jpg" loading="lazy" />
+
+In this guide we will explore how to create a RKE2 or K3s Kubernetes cluster using existing nodes through the **Custom** driver.
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/guides/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/) guide for more information)
+- An access to the Rancher UI to operate it (see the [connecting to the Rancher UI](/guides/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/) guide for more information)
+- Existing machines accessible through SSH
+
+## Instructions
+
+You should have existing machines (virtual or physical) accessible through SSH.
+
+Follow this guide if you want to [create OVHcloud Compute Instances](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/).
+
+### Creating a Kubernetes cluster with existing nodes 
+
+Log in to your Managed Rancher Service UI.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Service UI" src="/images/public-cloud/containers-orchestration/managed-rancher-service/creating-kubernetes-custom-nodes/rancher-ui.png" loading="lazy" />
+
+Click the <code className="action">Create</code> button.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Service Create Kubernetes PCI" src="/images/public-cloud/containers-orchestration/managed-rancher-service/creating-kubernetes-custom-nodes/rancher-create-custom.png" loading="lazy" />
+
+Click on the **Custom** driver.
+
+Fill in a cluster name (`custom-kube-cluster` for example).
+
+In the Kubernetes version list, choose the latest version of the wanted OS. You can choose between K3s and RKE2. For production needs we recommend RKE2.
+
+Choose the container network (`calico` by default).
+
+<img className="thumbnail" alt="Rancher Custom Cluster Creation" src="/images/public-cloud/containers-orchestration/managed-rancher-service/creating-kubernetes-custom-nodes/rancher-cluster-creation.png" loading="lazy" />
+
+Click on the different tabs to configure your cluster depending on your needs.
+
+Click the <code className="action">Create</code> button.
+
+### Configuring a Kubernetes cluster with existing nodes 
+
+:::info
+When you configure a node in Rancher, there are three roles that can be assigned to nodes: `etcd`, `Control Plane` and `Worker`.
+
+:::
+
+
+There are some good practices:
+
+- At least 3 nodes with the role `etcd` are needed to survive a loss of 1 node and have a minimum high availability configuration for `etcd`. 3 `etcd` nodes are generally sufficient for smaller and medium clusters, and 5 `etcd` nodes for large clusters.
+- At least 2 nodes with the role `Control Plane` for master component high availability.
+- You can set both the `etcd` and `Control Plane` roles for one instance.
+- The `Worker` role should not be used or added to nodes with the `etcd` or `controlplane` role.
+- At least 2 nodes with the role `Worker` for workload rescheduling upon node failure.
+
+For the configuration of our `etcd` + `Control Plane` nodes, check only the `etcd` and `Control Plane` Nodes Roles:
+
+<img className="thumbnail" alt="Rancher cluster roles" src="/images/public-cloud/containers-orchestration/managed-rancher-service/creating-kubernetes-custom-nodes/rancher-cluster-roles.png" loading="lazy" />
+
+<img className="thumbnail" alt="Rancher command roles for etcd and control plane" src="/images/public-cloud/containers-orchestration/managed-rancher-service/creating-kubernetes-custom-nodes/rancher-cluster-roles-command.png" loading="lazy" />
+
+SSH to your machines/nodes you created for `etcd` and `Control Plane` and copy/paste the registration command.
+
+```bash
+ssh xxxxx@xxx.xxx.xxx.xxx
+
+curl -fL https://xxxxxx.xxxx.rancher.ovh.net/system-agent-install.sh | sudo  sh -s - --server https://xxxxxx.xxxx.rancher.ovh.net --label 'cattle.io/os=linux' --token z2r458coqudhfilgdsifgdsqilgfqsdigfidsufgoisdnvzj --etcd --controlplane
+```
+
+For the configuration of our `Worker` nodes, uncheck the checkboxes and check only the Worker checkbox:
+
+<img className="thumbnail" alt="Rancher cluster roles" src="/images/public-cloud/containers-orchestration/managed-rancher-service/creating-kubernetes-custom-nodes/rancher-cluster-roles-worker.png" loading="lazy" />
+
+<img className="thumbnail" alt="Rancher command for workers" src="/images/public-cloud/containers-orchestration/managed-rancher-service/creating-kubernetes-custom-nodes/rancher-command-worker.png" loading="lazy" />
+
+SSH to your machines/nodes you created for `etcd` and `controlpane` and copy/paste the registration command.
+
+```bash
+ssh xxxxx@xxx.xxx.xxx.xxx
+
+curl -fL https://xxxxxx.xxxx.rancher.ovh.net/system-agent-install.sh | sudo  sh -s - --server https://xxxxxx.xxxx.rancher.ovh.net --label 'cattle.io/os=linux' --token z2r458coqudhfilgdsifgdsqilgfqsdigfidsufgoisdnvzj --worker
+```
+
+After executing these commands to the machines/nodes, wait until the cluster is in `Active` state in the Rancher UI.
+
+## Go further
+
+- To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/en-gb/public-cloud/managed-rancher-service/).
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+
+- Join our [community of users](https://community.ovhcloud.com/community/en).

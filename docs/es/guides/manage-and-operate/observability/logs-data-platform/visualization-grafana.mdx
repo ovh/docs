@@ -1,0 +1,85 @@
+---
+title: Using Grafana with Logs Data Platform
+lastUpdated: 2025-10-16
+---
+
+## Objective
+
+[Grafana](http://grafana.org/) provides a powerful and elegant way to create, explore, and share dashboards and data with your team and the world. Since release 7, Grafana is able to communicate with OpenSearch and so allow you to mix data from Logs Data Platform and other data sources like IoT in the same place. This guide will show you how to achieve this.
+
+## Requirements
+
+This is what you need to know to get you started:
+
+- you are already sending logs on a stream you own [see the quick start tutorial](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start/)
+- you have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster)
+
+After some training you will be able to create this kind of dashboard:
+
+![Grafana Dashboard](/images/manage-and-operate/observability/logs-data-platform/visualization-grafana/grafana.png)
+
+{/* CP-NAV-START:logs-data-platform */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Logs Data Platform](https://manager.eu.ovhcloud.com/#/dedicated/dbaas/logs)
+- **Navigation path:** <code className="action">Identity, Security & Operations</code> > <code className="action">Logs Data Platform</code> > Select the platform concerned
+
+---
+{/* CP-NAV-END:logs-data-platform */}
+
+## Instructions
+
+### Select your Stream Alias
+
+To access your logs from Grafana, you will need to setup an OpenSearch Alias and link them to your Graylog streams, so here we go again :
+
+1. In the <code className="action">Alias</code> tab, click on the <code className="action">Add an alias</code> button
+2. Choose a name and define a description for your alias
+3. Save the entry by clicking the <code className="action">Save</code> button
+4. Once the alias has been created. Use the **...** menu at the right and select <code className="action">Attach content to the alias</code> option.
+5. Define there the graylog streams you want to associate to your alias
+6. That's it.
+
+<img className="thumbnail" alt="Alias creation" src="/images/manage-and-operate/observability/logs-data-platform/visualization-grafana/alias.png" loading="lazy" />
+
+So here you go, now Logs Data Platform knows what stream you want to browse. Now let’s configure Grafana and see if it works!
+
+### Setup your own grafana
+
+Get the latest Grafana release here: [http://grafana.org/download/](http://grafana.org/download/) (v9.0.0 at the time of writing).
+Then follow the Grafana installation guide according to your platform: [http://docs.grafana.org/installation/](http://docs.grafana.org/installation/)
+
+### Launch it!
+
+If everything is setup properly, launch your favorite browser, and point it to [http://localhost:3000](http://localhost:3000) Once logged in with your grafana credentials, reach data sources panel to setup your Logs Data Platform datasource:
+
+<img className="thumbnail" alt="Data source_1" src="/images/manage-and-operate/observability/logs-data-platform/visualization-grafana/datasource_1.png" loading="lazy" />
+
+:::warning
+To make the magic happen, please ensure to:
+
+- Set `https://<your_cluster>.logs.ovh.com:9200` as **URL** value
+- Set your [Logs Data Platform credentials](/guides/manage-and-operate/observability/logs-data-platform/security-tokens/) for **Basic auth values**
+- Set the **Index name** as the Logs Data Platform alias linked to Grafana
+- Change default **Time field name** to timestamp
+- Set the **Version** by clicking <code className="action">Get Version and Save</code>.
+- Register your data source and test it.
+
+:::
+
+
+If your configuration is correct, it should display: " _Index Ok. Timefield Ok._"
+
+<img className="thumbnail" alt="Data source 2" src="/images/manage-and-operate/observability/logs-data-platform/visualization-grafana/datasource_2.png" loading="lazy" />
+
+To explore further, you can create a new dashboard and add different styles of visualizations.
+If you want to know what you can do with Grafana and OpenSearch, read the [official documentation](https://grafana.com/grafana/plugins/grafana-opensearch-datasource/).
+
+## Go further
+
+- Getting Started: [Quick Start](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start/)
+- Documentation: [Guides](/guides/manage-and-operate/observability/logs-data-platform/overview/)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](https://www.ovhcloud.com/es-es/identity-security-operations/logs-data-platform/)

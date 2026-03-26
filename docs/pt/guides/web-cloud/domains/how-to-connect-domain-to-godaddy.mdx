@@ -1,0 +1,163 @@
+---
+title: Ligar um nome de domínio OVHcloud ao GoDaddy
+description: Prepare e configure a zona DNS do seu nome de domínio OVHcloud para a ligar a um alojamento GoDaddy
+lastUpdated: 2026-03-18
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+É titular de um nome de domínio na OVHcloud e pretende ligá-lo a um alojamento GoDaddy. Este guia explica como preparar e configurar a sua zona DNS OVHcloud para o seu alojamento GoDaddy.
+
+**Saiba como ligar o seu nome de domínio OVHcloud a um alojamento GoDaddy**
+
+:::warning
+- O suporte GoDaddy não tem acesso aos parâmetros do seu nome de domínio OVHcloud e não pode, por isso, aconselhá-lo sobre as informações que deverá fornecer.
+- A OVHcloud disponibiliza-lhe serviços cuja configuração, gestão e responsabilidade é da sua competência. Assim, deverá certificar-se de que estes funcionam corretamente.<br/><br/> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção [Quer saber mais?](#go-further) deste guia.
+
+:::
+
+
+## Requisitos
+
+- Ter um [nome de domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud.
+- Dispor das [autorizações adequadas para gerir](/guides/account-and-service-management/account-information/managing-contacts/) o nome de domínio.
+- Ter um alojamento na GoDaddy.
+- Ter acesso à gestão deste alojamento na GoDaddy.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Para aceder aos seus serviços:** <code className="action">Web Cloud</code> > <code className="action">Zonas DNS</code> > Selecione o seu nome de domínio
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## Instruções
+
+Antes de seguir as etapas deste guia, aconselhamos que consulte o nosso guia "[Editar uma zona DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)".
+
+:::warning
+A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu alojamento GoDaddy. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o nome de domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu nome de domínio durante a configuração.
+
+:::
+
+
+### 1. Configurar o seu alojamento GoDaddy
+
+Prepare primeiro o seu alojamento GoDaddy seguindo as instruções de [**esta página da documentação GoDaddy**](https://www.godaddy.com/pt-pt/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
+
+### 2. Configurar os registos DNS na sua conta OVHcloud
+
+:::warning
+Antes de avançar:
+
+- Abra um separador em paralelo no seu browser.
+- Abra [**esta página da documentação GoDaddy**](https://www.godaddy.com/pt-pt/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
+- Siga as instruções até à etapa 10 e recupere as informações específicas do seu website para poder modificar os seus registos DNS OVHcloud.<br/>
+As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS OVHcloud.
+
+:::
+
+
+Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone) e escolha o nome de domínio correspondente.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+
+A tabela apresentada lista o conjunto dos registos DNS do nome de domínio selecionado.
+  </Tab>
+  <Tab label="Etapa 2">
+    **Configuração do registo A**
+    
+    **1 - Identificação:** filtre os registos DNS selecionando o tipo `A` no menu de filtros situado no canto superior direito da tabela.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png" loading="lazy" />
+
+Identifique os registos "A" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+    
+    **2 - Eliminação:** elimine todos os registos "A" existentes para o subdomínio "www". Se existirem vários registos "A" para o nome de domínio apenas, elimine-os todos exceto um, que irá modificar na sub-etapa seguinte. Para cada registo a eliminar, clique no botão <code className="action">...</code> à direita da linha correspondente e depois em <code className="action">Eliminar a entrada</code>.
+    
+    **3 - Modificação:** se existir um registo "A" para o nome de domínio apenas, clique no botão <code className="action">...</code> e depois em <code className="action">Alterar a entrada</code>. Deixe o campo **Subdomínio** vazio e substitua o destino pelo endereço IPv4 obtido na sua interface GoDaddy. Clique em <code className="action">Seguinte</code> e valide.
+    
+    Se não existir nenhum registo "A", clique em <code className="action">Adicionar uma entrada</code> no canto superior direito, selecione o campo de apontamento <code className="action">A</code>, deixe o campo **Subdomínio** vazio e introduza o endereço IPv4 obtido na sua interface GoDaddy no campo **Destino**. Clique em <code className="action">Seguinte</code> e valide.
+    
+    Passe de seguida à etapa 3.
+  </Tab>
+  <Tab label="Etapa 3">
+    **Eliminação dos registos AAAA**
+    
+    **1 - Identificação:** filtre os registos DNS selecionando o tipo `AAAA` no menu de filtros situado no canto superior direito da tabela.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png" loading="lazy" />
+
+Identifique os registos "AAAA" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+    
+    **2 - Eliminação:** elimine todos os registos "AAAA" identificados (nome de domínio apenas e subdomínio "www") para evitar um conflito com os novos registos DNS. Para cada registo, clique no botão <code className="action">...</code> à direita da linha correspondente e depois em <code className="action">Eliminar a entrada</code>.
+    
+    Se não existir nenhum registo "AAAA", passe à etapa 4.
+  </Tab>
+  <Tab label="Etapa 4">
+    **Eliminação dos registos TXT**
+    
+    **1 - Identificação:** filtre os registos DNS selecionando o tipo `TXT` no menu de filtros situado no canto superior direito da tabela.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png" loading="lazy" />
+
+Identifique os registos "TXT" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+    
+    **2 - Eliminação:** elimine todos os registos "TXT" identificados (nome de domínio apenas e subdomínio "www") para evitar um conflito com os novos registos DNS. Para cada registo, clique no botão <code className="action">...</code> à direita da linha correspondente e depois em <code className="action">Eliminar a entrada</code>.
+    
+    Se não existir nenhum registo "TXT", passe à etapa 5.
+  </Tab>
+  <Tab label="Etapa 5">
+    **Configuração do registo CNAME**
+    
+    **1 - Identificação:** filtre os registos DNS selecionando o tipo `CNAME` no menu de filtros situado no canto superior direito da tabela.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png" loading="lazy" />
+
+Identifique os registos "CNAME" existentes para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+    
+    **2 - Eliminação:** se existirem vários registos "CNAME" para o subdomínio "www", elimine-os todos exceto um. Para cada registo a eliminar, clique no botão <code className="action">...</code> à direita da linha correspondente e depois em <code className="action">Eliminar a entrada</code>.
+    
+    **3 - Modificação:** se existir um registo "CNAME" para o subdomínio "www", clique no botão <code className="action">...</code> e depois em <code className="action">Alterar a entrada</code>. Substitua apenas o **Destino** pelo valor obtido na sua interface GoDaddy. Clique em <code className="action">Seguinte</code> e valide.
+    
+    Se não existir nenhum registo "CNAME" para o subdomínio "www", clique em <code className="action">Adicionar uma entrada</code> no canto superior direito, selecione o campo de apontamento <code className="action">CNAME</code>, introduza `www` no campo **Subdomínio** e o valor obtido na sua interface GoDaddy no campo **Destino**. Clique em <code className="action">Seguinte</code> e valide.
+  </Tab>
+</Tabs>
+
+
+A zona DNS está agora configurada para apontar para o seu alojamento GoDaddy.
+
+:::info
+A verificação do seu nome de domínio pode levar até 48 horas.
+
+:::
+
+
+Se utiliza uma oferta de e-mail OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](https://www.ovhcloud.com/pt/emails/), deverá também preparar a sua zona DNS em conformidade. Consulte o nosso guia sobre a [configuração de um registo MX](/guides/web-cloud/domains/dns-zone-mx/).
+
+## Quer saber mais? <a name="go-further"></a>
+
+[Modificar os servidores DNS de um nome de domínio OVHcloud](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Criar uma zona DNS OVHcloud para um nome de domínio](/guides/web-cloud/domains/dns-zone-create/)
+
+[Editar uma zona DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+Para alterar a gestão do seu nome de domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/guides/account-and-service-management/account-information/managing-contacts/)".
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,147 @@
+---
+title: Eliminar una cuenta de correo
+description: Cómo eliminar o restaurar una dirección de correo electrónico en un servicio de correo
+lastUpdated: 2026-02-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Quiere:
+
+- Eliminar una dirección de correo electrónico que ya no esté utilizando. 
+- Restaurar una cuenta de correo para utilizarla en una nueva dirección de correo. 
+- Restaurar una cuenta de correo para darlo de baja.
+
+**Cómo eliminar o restaurar una dirección de correo en un servicio de correo**
+
+## Requisitos
+
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada:
+    - **MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma.
+    - [**Exchange**](https://www.ovhcloud.com/es-es/emails-exchange/).
+    - [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/).
+    - [**Zimbra**](https://www.ovhcloud.com/es-es/emails/zimbra-emails/).
+- Ser el contacto administrador del servicio de correo electrónico en cuestión.
+- Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
+
+{/* CP-NAV-START:web-mx-plan */}
+{/* CP-NAV-START:web-zimbra */}
+{/* CP-NAV-START:web-email-pro */}
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Seleccione su servicio MX Plan
+
+**Zimbra:**
+
+- **Enlace directo:** [Zimbra](https://manager.eu.ovhcloud.com/#/web/zimbra)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Zimbra Mail</code>
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Seleccione su plataforma
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleccione su plataforma
+
+---
+{/* CP-NAV-END:web-exchange */}
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-zimbra */}
+{/* CP-NAV-END:web-mx-plan */}
+
+<a name="whichmxplan"></a>
+
+:::info
+**Identificar la tecnología de correo de su solución MX Plan.**
+
+En función de la fecha de activación de su solución MX Plan o de una migración reciente, la tecnología de correo electrónico asociada puede diferir. Esta tecnología se caracteriza por la interfaz de su webmail. Para identificarla:
+
+- Desde la pestaña <code className="action">Información general</code>, indique la tecnología utilizada en la mención **Webmail** presente en el recuadro <code className="action">Suscripción</code>.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/technology-email.png" loading="lazy" />
+
+:::
+
+
+## Procedimiento <a name="instructions"></a>
+
+OVHcloud ofrece 4 soluciones de correo electrónico. El concepto de eliminación de cuenta es diferente según su solución.
+
+- **Correo electrónico MX Plan**: esta solución se vende en forma de pack de varias cuentas de correo. Cuando elimina una cuenta, libera una ubicación en su pack.
+- **Email Pro**, **Hosted Exchange** y **Zimbra**: estas soluciones son a la carta, usted contrata una suscripción individual por cuenta de correo electrónico. Si quiere eliminar una dirección de correo, deberá **restaurar** la cuenta de correo. Una vez que haya restaurado la cuenta de correo, puede reutilizar la cuenta para crear una nueva dirección de correo. También puede [dar de baja la suscripción](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange#eliminar-cuentas/) de esta cuenta si desea eliminarla definitivamente.
+
+### Eliminar o restaurar una cuenta de correo
+
+Seleccione la pestaña correspondiente a su servicio de correo:
+
+<Tabs>
+  <Tab label="MX Plan Roundcube">
+    Para identificar la tecnología de correo electrónico asociada a su servicio MX Plan, consulte la sección "[Identificar la tecnología de correo de su solución MX Plan](#whichmxplan)" de esta guía.
+    
+    1. Abra la pestaña <code className="action">Cuentas de correo</code>. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.
+    1. Haga clic en el botón <code className="action">...</code> situado a la derecha de la cuenta que desea modificar y, seguidamente, en <code className="action">Eliminar la cuenta</code>.
+    
+    <img className="thumbnail" alt="Correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-mxplan-legacy-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="MX Plan Zimbra/OWA">
+    Para identificar la tecnología de correo electrónico asociada a su servicio MX Plan, consulte la sección "[Identificar la tecnología de correo de su solución MX Plan](#whichmxplan)" de esta guía.
+    
+    1. Abra la pestaña <code className="action">Cuentas de correo</code>. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.
+    1. Haga clic en el botón <code className="action">...</code> situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione <code className="action">Restaurar la cuenta</code>.
+    
+    <img className="thumbnail" alt="Correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-mxplan-new-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="Email Pro">
+    1. Abra la pestaña <code className="action">Cuentas de correo</code>. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.
+    1. Haga clic en el botón <code className="action">...</code> situado al final de la línea correspondiente a la cuenta que desea modificar y, seguidamente, en <code className="action">Restaurar la cuenta</code>.
+    
+    Después de restaurar su cuenta, si desea eliminarla definitivamente, deberá darlo de baja. Para ello, consulte nuestra guía [Gestionar la facturación de sus cuentas Email-Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro/).
+    
+    <img className="thumbnail" alt="Correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/emailpro-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="Exchange">
+    1. Abra la pestaña <code className="action">Cuentas de correo</code>.
+    1. Haga clic en el botón <code className="action">...</code> situado al final de la línea correspondiente a la cuenta que desea modificar y, seguidamente, en <code className="action">Reiniciar</code>.
+    
+    Después de restaurar su cuenta, si desea eliminarla definitivamente, deberá darlo de baja. Para ello, consulte nuestra guía [Gestionar la facturación de sus cuentas Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/).
+    
+    <img className="thumbnail" alt="Correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/exchange-reset.png" loading="lazy" />
+  </Tab>
+  <Tab label="Zimbra STARTER/PRO">
+    1. Abra la pestaña <code className="action">Cuenta email</code>. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.
+    1. Haga clic en el botón <code className="action">⋮</code> situado a la derecha de la cuenta que desea modificar y, seguidamente, haga clic en <code className="action">Eliminar</code>.
+    
+    <img className="thumbnail" alt="Correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-zimbra-reset.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Más información
+
+[Primeros pasos con la solución MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+[Primeros pasos con la solución Email Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/first-config/)
+
+[Primeros pasos con la solución Hosted Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/)
+
+[Primeros pasos con Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+[Gestionar la facturación de las cuentas Email Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro/)
+
+[Gestionar la facturación de las cuentas Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/)
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

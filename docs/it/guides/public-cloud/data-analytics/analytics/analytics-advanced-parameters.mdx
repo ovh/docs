@@ -1,0 +1,194 @@
+---
+title: Configure the advanced parameters for Analytics
+description: Advanced configuration for Analytics engines
+lastUpdated: 2025-02-03
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+import Api from '@components/Api';
+
+
+## Objective
+
+Analytics engines are managed services, which means that they are not fully configurable. For example, it is not possible to modify *pg_hba.conf*.
+
+:::info
+Advanced configuration is available for the following Analytics engines :
+
+- Managed Dashboards (Grafana)
+- Kafka
+- Kafka Connect
+- OpenSearch
+
+:::
+
+
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
+- An analytics service running on your OVHcloud Analytics ([this guide](/guides/public-cloud/data-analytics/analytics/analytics-getting-started/) can help you to meet this requirement)
+- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) or to the [OVHcloud API](https://eu.api.ovh.com/)
+
+## Instructions
+
+:::warning
+Please note that changes to the advanced settings apply at the cluster level and therefore to all the analytics services in the cluster.
+
+:::
+
+
+:::info
+Depending on the engine, some settings may already be defined.
+
+:::
+
+
+:::info
+Once the advanced configuration has been submitted, it is not possible to reset it to initial values. It is only possible to update the values, so we recommend that you take note of the initial values before changing them.
+
+See the [Checking](#checking) section below.
+
+:::
+
+
+### Using the OVHcloud Control Panel
+
+To change the advanced configuration, you first need to log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) and open your <code className="action">Public Cloud</code> project. Click on <code className="action">Data Streaming</code> or <code className="action">Data Analysis</code> in the left-hand navigation bar, select your engine instance then the <code className="action">Advanced configuration</code> tab.
+
+Select the key of the advanced setting you want to define, then set its value.
+
+When ready, click on <code className="action">Update advanced configuration</code>.
+
+:::info
+On the top-right of the advanced configuration tab, you can see the settings which are already defined.
+
+:::
+
+
+### Using API
+
+:::info
+If you are not familiar with using the OVHcloud API, please refer to our guide on [First Steps with the OVHcloud APIs](/guides/manage-and-operate/api/first-steps/).
+
+:::
+
+
+#### Get your service and cluster IDs
+
+You first need to identify the service and the cluster you want to apply the changes to.
+
+##### Get the desired service ID
+
+Execute the following API call:
+
+<Api version="v1" section="/cloud" method="GET" route={"/cloud/project"} />
+
+
+<img className="thumbnail" alt="serviceName" src="/images/public-cloud/data-analytics/analytics/analytics-advanced-parameters/api_ui_00.png" loading="lazy" />
+
+From the resulting list, select and copy the service identifier corresponding to the desired service, also known as serviceName.
+
+##### Get the desired cluster ID
+
+Open the following API call, paste your service ID into the `serviceName` input field and click <code className="action">Execute</code>:
+
+<Tabs>
+  <Tab label="Kafka">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/kafka"} />
+  </Tab>
+  <Tab label="Kafka Connect">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/kafkaConnect"} />
+  </Tab>
+  <Tab label="OpenSearch">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/opensearch"} />
+  </Tab>
+  <Tab label="Dashboards">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/grafana"} />
+  </Tab>
+</Tabs>
+
+
+<img className="thumbnail" alt="Cluster ID" src="/images/public-cloud/data-analytics/analytics/analytics-advanced-parameters/api_ui_01.png" loading="lazy" />
+
+From the resulting list, select and copy the cluster ID, also known as clusterId.
+
+#### Get the existing advanced configuration
+
+Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click <code className="action">Execute</code>:
+
+<Tabs>
+  <Tab label="Kafka">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/kafka/\\{clusterId\\}/advancedConfiguration"} />
+  </Tab>
+  <Tab label="Kafka Connect">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/kafkaConnect/\\{clusterId\\}/advancedConfiguration"} />
+  </Tab>
+  <Tab label="OpenSearch">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/opensearch/\\{clusterId\\}/advancedConfiguration"} />
+  </Tab>
+  <Tab label="Dashboards">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/grafana/\\{clusterId\\}/advancedConfiguration"} />
+  </Tab>
+</Tabs>
+
+
+<img className="thumbnail" alt="Get OpenSearch advanced configuration" src="/images/public-cloud/data-analytics/analytics/analytics-advanced-parameters/api_ui_02.png" loading="lazy" />
+
+#### Advanced configuration settings list
+
+Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click <code className="action">Execute</code>:
+
+<Tabs>
+  <Tab label="Kafka">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/kafka/\\{clusterId\\}/capabilities/advancedConfiguration"} />
+  </Tab>
+  <Tab label="Kafka Connect">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/kafkaConnect/\\{clusterId\\}/capabilities/advancedConfiguration"} />
+  </Tab>
+  <Tab label="OpenSearch">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/opensearch/\\{clusterId\\}/capabilities/advancedConfiguration"} />
+  </Tab>
+  <Tab label="Dashboards">
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/database/grafana/\\{clusterId\\}/capabilities/advancedConfiguration"} />
+  </Tab>
+</Tabs>
+
+
+<img className="thumbnail" alt="Get OpenSearch Advanced Parameters" src="/images/public-cloud/data-analytics/analytics/analytics-advanced-parameters/api_ui_03.png" loading="lazy" />
+
+#### Change advanced configuration
+
+Open the following API call and paste the corresponding inputs (serviceName, clusterId)
+
+<Tabs>
+  <Tab label="Kafka">
+    <Api version="v1" section="/cloud" method="PUT" route={"/cloud/project/\\{serviceName\\}/database/kafka/\\{clusterId\\}/advancedConfiguration"} />
+  </Tab>
+  <Tab label="Kafka Connect">
+    <Api version="v1" section="/cloud" method="PUT" route={"/cloud/project/\\{serviceName\\}/database/kafkaConnect/\\{clusterId\\}/advancedConfiguration"} />
+  </Tab>
+  <Tab label="OpenSearch">
+    <Api version="v1" section="/cloud" method="PUT" route={"/cloud/project/\\{serviceName\\}/database/opensearch/\\{clusterId\\}/advancedConfiguration"} />
+  </Tab>
+  <Tab label="Dashboards">
+    <Api version="v1" section="/cloud" method="PUT" route={"/cloud/project/\\{serviceName\\}/database/grafana/\\{clusterId\\}/advancedConfiguration"} />
+  </Tab>
+</Tabs>
+
+
+Now, according to the settings you chose, set the different values into the string arrays, such as in the example below:
+
+<img className="thumbnail" alt="Put OpensSearch Advanced Parameters" src="/images/public-cloud/data-analytics/analytics/analytics-advanced-parameters/api_ui_04.png" loading="lazy" />
+
+When ready, click on <code className="action">Execute</code> to update the advanced configuration.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) and interact directly with the team that builds our Analytics service!
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

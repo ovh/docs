@@ -1,0 +1,189 @@
+---
+title: Web Hosting - How to configure an SSL certificate
+description: Find out how to install and manage your SSL certificate on an OVHcloud web hosting plan
+lastUpdated: 2025-12-16
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+With Secure Socket Layer (SSL) certificates, you can encrypt the exchanges made from or to your website. This prevents unauthorized persons and malicious bots from viewing requests to or from your website.
+
+OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](https://www.ovhcloud.com/en-gb/web-hosting/). They are presented below in this guide. SSL certificates are essential for the security of your website.
+
+There are three types of SSL certificates:
+
+- Domain Validation (DV)
+- Organization validation (OV)
+- Extended Validation (EV)
+
+The SSL encryption levels are identical between these three certificate types.
+
+The main difference lies in the level of checks that will be carried out by the Certification Authority (CA) that issues the SSL certificate and attests to its authenticity.
+
+You must have an SSL certificate in order to use HTTPS for your website.
+
+**This guide explains how to manage an SSL certificate on an OVHcloud web hosting plan.**
+
+## Requirements
+
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- At least one [domain name](https://www.ovhcloud.com/en-gb/domains/)
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Hosting plans</code> > Select your web hosting plan
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instructions
+
+:::warning
+**Before you continue**, please ensure that **each domain name and/or subdomain** covered by a future SSL certificate:
+
+- Points to the IP address of your web hosting plan.
+- Is declared on one of the websites on your web hosting.
+- Does not already have an active SSL certificate.
+
+To check this, please refer to our guides below:
+
+- [Hosting multiple websites on your Web Hosting plan](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+- [Web Hosting - List of IP addresses by cluster](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)
+- [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)
+- [Web Hosting - How to configure an SSL certificate](/guides/web-cloud/web-hosting/ssl-on-webhosting/), part **Disable an SSL certificate on a web hosting plan**
+
+:::
+
+
+### Activate an SSL certificate on your web hosting plan <a name="ssl-enable"></a>
+
+OVHcloud offers 4 solutions for activating/installing an SSL certificate on a web hosting plan. Each of these solutions is documented in detail.
+
+Below are the 4 links to our guides dedicated to these 4 solutions:
+
+- [Web Hosting - How to activate a free Let's Encrypt SSL certificate](/guides/web-cloud/web-hosting/ssl-letsencrypt/): Free certificate available with our web hosting plans.
+- [WWeb Hosting - Activate a Sectigo DV SSL certificate](/guides/web-cloud/web-hosting/ssl-dv/): Certificate valid for a single domain name + its www subdomain (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
+- [Web Hosting - Activate a Sectigo EV SSL certificate](/guides/web-cloud/web-hosting/ssl-ev/): Certificate valid for a single domain name + its www subdomain (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
+- [Web Hosting - How to install a custom SSL certificate](/guides/web-cloud/web-hosting/ssl-custom/): If you have your own SSL certificate, or none of the 3 solutions listed above meet your needs.
+
+### Delete an SSL certificate on a web hosting plan <a name="delete-ssl"></a>
+
+:::warning
+The deletion of a paid **Sectigo** SSL certificate (DV or EV) is permanent, even if the certificate has not yet expired. No refund may be made on a pro rata basis for the remaining time. If you would like to reinstall such an SSL certificate, you will need to place a new order and pay for the new SSL certificate.
+
+Furthermore, if you would like to permanently deactivate an SSL certificate on your Web Hosting plan, please ensure that you do not make your websites inaccessible by permanently deactivating the SSL certificate **before you proceed**. If this is the case, your users will encounter a security error when they try to access your website in HTTPS.
+
+Since this verification is linked to your website settings, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you encounter any difficulties. We will not be able to assist you with this.
+
+:::
+
+
+Click on the tabs below to view each of the **4** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) page, then select the web hosting plan concerned.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    On the page that pops up, click on the <code className="action">SSL certificates</code> tab.
+    
+    <img className="thumbnail" alt="SSL certificates" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    In the table at the bottom of the new page that pops up, click the <code className="action">⁝</code> button, located to the right of the line corresponding to the domain name concerned, then click <code className="action">Disable SSL</code>.
+    
+    <img className="thumbnail" alt="Disable SSL" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/disable-ssl.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    In the window that opens, confirm the deactivation by clicking <code className="action">Confirm</code>.
+    
+    <img className="thumbnail" alt="Delete SSL" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/ssl-deletion.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+The SSL certificate will be deactivated within a few hours.
+
+### Correct frequently encountered errors with SSL certificates offered on web hosting plans
+
+#### "You already have an SSL certificate on your account. It will be migrated on new SSL offers in the next week."
+
+This message indicates that you already own an SSL certificate. You do not need to activate a new SSL certificate on your web hosting plan.
+
+If the SSL certificate installed on your Web Hosting plan is not the one you want to use, you can [disable your current SSL certificate](#delete-ssl), then [enable a new SSL certificate](#ssl-enable) on your Web Hosting plan.
+
+#### "No attached domain with SSL enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone."
+
+There are three possible reasons for this notification.
+
+- **1**: The domain name associated with your website points to the IP address of your web hosting plan’s CDN, with no CDN option enabled on your web hosting plan.
+
+To resolve this situation, assign the web hosting plan’s own IP address to your domain name in your domain name’s DNS zone.  
+To retrieve the IP addresses of your web hosting plan, please refer to our guide on "[IP address list for Web Hosting clusters](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)".  
+To edit your domain name’s active DNS zone, please read our guide on "[Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)".
+
+- **2**: The domain name associated with your website does not point to the IP address of your web hosting plan. 
+
+To resolve this situation, assign the web hosting plan’s IP address to your domain name in your domain name’s DNS zone.  
+If you have enabled a CDN option on your web hosting plan, you can also use the web hosting plan’s IP address for CDN.  
+To retrieve the IP address of your web hosting plan, please refer to our guide on "[IP address list for Web Hosting clusters](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)".  
+To edit your domain name’s active DNS zone, please read our guide on "[Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)".
+
+#### You have ordered a Sectigo EV SSL along with your web hosting plan, but the certificate is not yet active and the web hosting plan is not working properly
+
+This situation is linked to the steps you need to take to activate SSL EV on your web hosting plan.
+
+If you need assistance with this, please refer to our guide on [Web Hosting - Activating a Sectigo EV SSL certificate](/guides/web-cloud/web-hosting/ssl-ev/) to resolve this situation.
+
+:::info
+If the EV SSL certificate is not fully active, the order will not be closed and will never generate an invoice. As a result, the web hosting service will not work properly.
+
+:::
+
+
+#### After the Sectigo SSL certificate (DV or EV) expires, you receive the error "No attached domain with SSL enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone"
+
+This error occurs whenever the Sectigo SSL certificate (activated directly from the web hosting plan) expires and the IP address of the web hosting plan changes. For this reason, you will need to point your domain name to the correct IP address (type A record) in your domain name’s active DNS zone.
+
+To retrieve the IP address of your web hosting plan, please refer to our guide on "[IP address list for Web Hosting clusters](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)".  
+To edit your domain name’s active DNS zone, please read our guide on "[Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)".
+
+#### The SSL certificate is active on your web hosting plan, but you see the message "Your connection is not private" on your website
+
+This message appears in the following cases:
+
+- **1**: The redirection rule to your URL in HTTPS is misconfigured or does not exist in the .htaccess file.
+
+To correct this, please read our tutorial “[Rewrite the URL for accessing your website using mod_rewrite via the .htaccess file](/guides/web-cloud/web-hosting/htaccess-url-rewriting-using-mod-rewrite/)” or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties.
+
+- **2**: Some elements of the web page are not redirected correctly to elements encrypted in "HTTPS".
+
+To correct this, you need to ensure that your entire website is encrypted via the HTTPS protocol.  
+If you need help with this, please refer to our tutorial on "[Web Hosting - Switching your website to HTTPS](/guides/web-cloud/web-hosting/ssl-activate-https-website/)", or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you encounter any difficulties.
+
+:::tip[Success]
+The elements concerned on the web page can be seen directly from the SSL information of the web browser, by consulting the *certificate details*.
+
+:::
+
+
+## Go further
+
+[Web Hosting - Switching your website to HTTPS](/guides/web-cloud/web-hosting/ssl-activate-https-website/).
+
+[Common errors related to securing your website with SSL](/guides/web-cloud/web-hosting/ssl-avoid-common-pitfalls-of-making-website-secure/).
+
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+ 
+Join our [community of users](https://community.ovhcloud.com/community/en).

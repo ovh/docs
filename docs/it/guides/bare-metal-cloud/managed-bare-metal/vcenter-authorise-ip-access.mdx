@@ -1,0 +1,33 @@
+---
+title: Autorizzare IP ad accedere al vCenter
+lastUpdated: 2020-11-18
+---
+
+## Obiettivo
+
+Impostare restrizioni di accesso al vCenter consente di limitare la connessione esclusivamente ad alcuni indirizzi IP autorizzati. 
+
+**Questa guida ti mostra come gestire le restrizioni di accesso al vCenter per gli indirizzi IP.**
+
+## Prerequisiti
+
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Disporre di un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) sul proprio account OVHcloud
+
+## Procedura
+
+Se la [politica di accesso al vCenter è configurata come limitata](/guides/bare-metal-cloud/managed-bare-metal/vcenter-modify-access-policy/), è necessario aggiungere gli IP che saranno autorizzati a connettersi al servizio.
+
+Questa operazione può essere effettuata dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it): nella sezione `Bare Metal Cloud`, clicca su `Managed Bare Metal` nella colonna a sinistra. Seleziona l’infrastruttura, clicca sulla scheda `Sicurezza` e poi su <code className="action">Aggiungi una nuova classe di indirizzi IP</code>.
+
+<img className="thumbnail" alt="vCenter" src="/images/bare-metal-cloud/managed-bare-metal/vcenter-authorise-ip-access/restrictIP.png" loading="lazy" />
+
+Nella nuova finestra, indica l’IP in questione ed eventualmente una descrizione per poterlo trovare più facilmente nella lista in un secondo momento.
+
+Clicca su <code className="action">Continua</code> per confermare l’operazione: una volta che l’IP risulterà **Autorizzato e installato**, potrà essere utilizzato per l’accesso a vSphere.
+
+<img className="thumbnail" alt="vCenter" src="/images/bare-metal-cloud/managed-bare-metal/vcenter-authorise-ip-access/restrictIP2.JPG" loading="lazy" />
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

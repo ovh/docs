@@ -1,0 +1,121 @@
+---
+title: Configura il firewall su Windows
+description: Scopri come configurare un firewall Windows
+lastUpdated: 2022-01-31
+---
+
+:::info
+Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+
+:::
+
+
+## Obiettivo
+
+Per proteggere in modo ottimale il tuo sistema, il server Windows Server dispone di un proprio firewall integrato. La sua configurazione permette di aumentare i livelli di sicurezza e garantire così la disponibilità e l'integrità di tutti gli elementi ospitati sul server, come ruoli, servizi, cartelle condivise.
+
+**Questa guida ti mostra come applicare le regole del firewall su Windows.**
+
+:::warning
+OVHcloud mette a tua disposizione servizi di cui sei responsabile. ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
+
+Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla sicurezza di un server, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+
+:::
+
+
+## Prerequisiti
+
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) Windows sul tuo account OVHcloud
+- Avere accesso amministratore al server tramite un desktop remoto Windows 
+
+## Procedura
+
+### Step 1: accedere al firewall Windows
+
+Per accedere al firewall Windows, segui questo ordine:
+
+- Clicca su <code className="action">Inizia</code>.
+- Clicca su <code className="action">Ricerca</code>.
+- Cerca "Firewall Windows" tramite la barra di ricerca.
+- Clicca su <code className="action">Firewall Windows</code>.
+
+Clicca sulla linea <code className="action">Configurazione avanzata</code>.
+
+<img className="thumbnail" alt="Step1" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step1.PNG" loading="lazy" />
+
+### Step 2: attiva una regola di traffico in entrata
+
+Nella finestra che appare troverai parametri come:
+
+- Regole di entrata e di uscita
+- Norme di sicurezza della connessione
+- Opzioni di controllo del firewall del server
+
+Selezionando le <code className="action">Regole di traffico in entrata</code>, visualizzi tutte le regole preconfigurate di Windows Server associate alle connessioni di rete e ai pacchetti in entrata. Alcune di queste regole non sono attive di default. Per attivarli, clicca con il tasto destro sulla regola e seleziona l'opzione <code className="action">Attiva la regola</code>.
+
+<img className="thumbnail" alt="Step1" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step2.PNG" loading="lazy" />
+
+### Step 3: crea una nuova regola 
+
+Per creare una nuova regola, accedi al menu <code className="action">Action</code> e seleziona <code className="action">Nuova regola</code>.
+Clicca sull'opzione <code className="action">Nuova regola</code> situata nel pannello di destra.
+
+<img className="thumbnail" alt="Step3" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step3.PNG" loading="lazy" />
+
+### Step 4: definire il tipo di regola da attivare
+
+L'assistente mostrerà il tipo di regola da creare. Seleziona la casella <code className="action">Porta</code>.
+
+<img className="thumbnail" alt="Step4" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step4.PNG" loading="lazy" />
+
+### Step 5: definire il tipo di porta da attivare
+
+Allo step successivo, definisci il tipo di porta da attivare:
+
+<img className="thumbnail" alt="Step5" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step5.PNG" loading="lazy" />
+
+:::info
+:::
+
+>- TCP (protocollo di controllo della trasmissione)
+>È un protocollo orientato alla connessione, cioè con il TCP sarà possibile creare connessioni tra loro per inviare flussi di dati. Il protocollo garantisce che i dati siano consegnati al destinatario senza errori e nello stesso ordine in cui sono stati inviati.
+>
+> - UDP (User Datagram Protocol - Protocollo di datagramma utente)
+> È un protocollo non orientato verso la connessione. Il suo sviluppo si basa sullo scambio di datagrammi e facilita l'invio di datagrammi attraverso la rete. È necessario stabilire in anticipo una connessione con la destinazione.
+>
+>Seleziona la casella <code className="action">Tutte le porte locali</code> per attivare tutte le porte TCP o UDP su un server non sicuro. Seleziona anche la casella <code className="action">Porte locali specifiche</code> per determinare quale porto deve essere autorizzato. 
+>
+
+### Step 6: autorizzare o bloccare la connessione
+
+Per definire l'azione che questa regola darà inizio, sono disponibili le seguenti opzioni: Seleziona quella che preferisci.
+
+- **Autorizza la connessione**. Questa opzione permette una comunicazione completa tramite questa porta.
+- **Autorizza la connessione se è sicura**. Questa opzione permette ai dati di essere trasmessi solo se la connessione è autenticata tramite IPsec.
+- **Bloccare la connessione**. Questa opzione impedisce ai dati di essere inoltrati attraverso questa porta.
+
+Seleziona l'opzione <code className="action">Autorizza la connessione</code> e clicca su <code className="action">Seguente</code>. 
+
+<img className="thumbnail" alt="Step6" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step6.PNG" loading="lazy" />
+
+### Step 7: definire il profilo e il nome del firewall da applicare
+
+Infine, dovete scegliere su quali profili la regola deve essere applicata, tra i profili pubblici, di dominio o privato.
+È possibile attivarli tutti se necessario.
+
+<img className="thumbnail" alt="Step7" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step7.PNG" loading="lazy" />
+
+Assegna un nome e una descrizione alla nuova regola (opzionale) per facilitarne l'utilizzo:
+
+<img className="thumbnail" alt="Step7_01" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step7-01.PNG" loading="lazy" />
+
+Clicca sul pulsante <code className="action">Terminare</code> per completare il processo e creare la nuova regola.
+
+<img className="thumbnail" alt="Step7_02" src="/images/bare-metal-cloud/dedicated-servers/activate-port-firewall-soft-win/step7_02.PNG" loading="lazy" />
+
+Successivamente, è possibile apportare modifiche al livello di sicurezza della nuova regola creata.
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

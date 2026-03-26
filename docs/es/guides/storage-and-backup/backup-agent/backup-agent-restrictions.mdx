@@ -1,0 +1,47 @@
+---
+title: Backup Agent - Restricciones conocidas
+description: Descubra las restricciones y limitaciones del producto Backup Agent
+lastUpdated: 2026-02-03
+---
+
+## Objetivo
+
+Este guía detalla las restricciones y limitaciones conocidas del producto Backup Agent que debe conocer antes de utilizar el servicio.
+
+## Restricciones conocidas
+
+### Política de copias de seguridad
+
+- La política de copia de seguridad es restringida, no puede modificarla.
+- No puede configurar una copia de seguridad solo en una lista de archivos o carpetas.
+- No puede modificar la fecha y hora de activación de las copias de seguridad (esto será objeto de una mejora futura).
+
+### Acceso VSPC
+
+- El usuario que recibe es de solo lectura, no puede realizar modificaciones directamente en la VSPC.
+
+### Vault
+
+- No puede crear vaults adicionales, se crearán automáticamente para garantizar que sus datos no estén alojados en el mismo centro de datos donde se encuentra su servidor Bare Metal.
+- No puede cambiar de vault en un agente.
+
+### Limitaciones de los sistemas operativos
+
+- Puede encontrar la lista de sistemas operativos compatibles para el Veeam Agent en [esta dirección](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
+- El producto no es compatible con el backup de hipervisores (Proxmox, ESXi, etc.)
+
+### Compatibilidad con otros productos de OVHcloud
+
+- En la actualidad, el producto Backup Agent es compatible únicamente con los servidores dedicados, no puede utilizar su agente en otros productos.
+
+### Restricciones de red
+
+- El producto solo es compatible con los servidores que comunican con la IP pública asignada por OVHcloud a los servidores. A fecha de hoy, es incompatible con las direcciones Additional IP o el vRack.
+
+### Máquinas virtuales (Proxmox, ESXi, etc.)
+
+- El producto solo autoriza a la IP pública del servidor a comunicarse con la infraestructura Veeam. Por este motivo, si tiene una máquina virtual (MV) Proxmox que opera en su servidor y que utiliza la IP pública del servidor, el agente puede funcionar. Sin embargo, este caso de uso no puede considerarse compatible. Pueden surgir demasiados casos específicos relacionados con esta configuración y no está cubierto por el producto actualmente.
+
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

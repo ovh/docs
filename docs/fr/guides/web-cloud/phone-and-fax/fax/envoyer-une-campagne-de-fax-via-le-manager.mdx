@@ -1,0 +1,84 @@
+---
+title: "Envoyer une campagne de fax depuis l'espace client OVHcloud"
+description: Découvrez comment préparer et envoyer une campagne de fax depuis votre espace client OVHcloud
+lastUpdated: 2025-04-28
+---
+
+## Objectif
+
+Vous pouvez envoyer une campagne de fax depuis votre espace client OVHcloud. Cela vous permet d'obtenir un suivi détaillé du déroulement de la campagne.
+
+**Découvrez comment préparer et envoyer une campagne de fax depuis votre espace client OVHcloud.**
+
+## Prérequis
+
+- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+## En pratique
+
+### Configurer et déclencher une campagne de fax
+
+Sélectionnez l’onglet <code className="action">Services</code> puis la ligne Fax concernée.
+
+Cliquez sur l'onglet <code className="action">Fax</code> puis sur <code className="action">Campagnes de fax</code>.
+
+<img className="thumbnail" alt="campagne fax" src="/images/web-cloud/phone-and-fax/fax/envoyer-une-campagne-de-fax-via-le-manager/01campagne-fax2022.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">+ Nouvelle campagne</code> pour configurer votre campagne de fax.
+
+<img className="thumbnail" alt="campagne fax" src="/images/web-cloud/phone-and-fax/fax/envoyer-une-campagne-de-fax-via-le-manager/02campagne-fax.png" loading="lazy" />
+
+Complétez alors les champs requis :
+
+- Nom de la campagne : définissez un nom qui vous permettra de retrouver facilement cette campagne dans votre historique.
+- Document à faxer (format pdf) : cliquez sur le bouton <code className="action">Fichier</code> pour sélectionner le document à envoyer, celui-ci doit être au format **PDF**.
+- Qualité d'envoi : définissez une qualité d'envoi, entre `Normale`, `Haute` ou `Meilleure`, cette dernière étant préconisée pour faciliter les envois vers les numéros spéciaux ou étrangers.
+- Type d'envoi : choisissez entre `Programmé` (vous pourrez alors programmer la date et l'heure d'envoi) et `Manuel` (vous devrez déclencher ultérieurement l'envoi de la campagne).
+- Date d'envoi : la date de déclenchement de la campagne.
+- Heure d'envoi : l'heure de déclenchement de la campagne.
+- Destinataires : vous pouvez choisir de soit <code className="action">Entrer les destinataires manuellement</code>, soit téléverser dans l'espace client un <code className="action">Fichier de destinataires</code> au format **txt**. Dans ce dernier cas, cliquez sur le nouveau bouton <code className="action">Fichier</code> pour ajouter votre liste de destinataires.
+
+:::info
+**Ajout d'un fichier de destinataires au format txt**
+
+Les numéros de destinataires doivent être séparés par une virgule, un point-virgule ou un retour à la ligne. Les numéros doivent contenir entre 6 et 17 chiffres, avec ou sans espaces et peuvent commencer par un +.
+
+:::
+
+
+Une fois tous les champs complétés, cliquez sur <code className="action">Valider</code>.
+
+### Suivre une campagne de fax
+
+Lorsqu'une campagne est créée, elle se retrouve dans le tableau afin de pouvoir la lancer (dans le cadre d'une campagne avec lancement **Manuel**) ou de suivre une campagne lancée.
+
+Cliquez sur le bouton <code className="action">...</code> à droite de la campagne pour avoir accès aux options de suivi :
+
+- <code className="action">Détails</code> : permet d'afficher les détails d'une campagne (nom, référence, statut, état, planification, statut des envois).
+- <code className="action">Lancer la campagne</code> : permet de lancer une campagne manuelle.
+- <code className="action">Stopper la campagne</code> : permet de stopper une campagne en cours ou planifiée pour la lancer manuellement.
+- <code className="action">Supprimer</code> : permet de supprimer une campagne de l'historique.
+
+<img className="thumbnail" alt="campagne fax" src="/images/web-cloud/phone-and-fax/fax/envoyer-une-campagne-de-fax-via-le-manager/03campagne-fax.png" loading="lazy" />
+
+Une campagne peut avoir plusieurs statuts :
+
+- **N/A** : pas de statut encore disponible. Cela s'applique généralement à une campagne en cours ou non envoyée.
+- **Succès** : la campagne s'est déroulée sans difficultés.
+- **Succès partiel** : la campagne s'est déroulée mais certains numéros sont probablement invalides. Vous pouvez avoir le détail de la campagne en cliquant sur le bouton <code className="action">...</code> puis sur <code className="action">Détails</code>.
+- **En erreur** : la campagne n'a pas pu être réalisée. Cliquez sur <code className="action">...</code> puis sur <code className="action">Détails</code> pour obtenir des informations complémentaires.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

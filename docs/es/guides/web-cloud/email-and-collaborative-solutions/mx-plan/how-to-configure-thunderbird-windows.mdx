@@ -1,0 +1,194 @@
+---
+title: MX Plan - Configurar su dirección de correo electrónico en Thunderbird para Windows
+description: Descubra cómo configurar su dirección de correo electrónico MX Plan en Thunderbird para Windows
+lastUpdated: 2025-09-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+Las cuentas de correo electrónico MX Plan pueden configurarse en diferentes clientes de correo compatibles. Esto le permite utilizar su dirección de correo electrónico desde el dispositivo de su elección. Thunderbird es un cliente de correo electrónico libre y gratuito.
+
+**Descubra cómo configurar su dirección de correo electrónico MX Plan en Thunderbird para Windows.**
+
+## Requisitos
+
+- Tener una oferta MX Plan. Esta está disponible a través de:
+    - Una oferta de [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/).
+    - Un [alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) incluido con un nombre de dominio (previamente activado).
+    - Una oferta MX Plan pedida por separado.
+    - Tener una dirección de correo electrónico [Zimbra Starter](https://www.ovhcloud.com/es-es/emails/zimbra-emails/).
+- Tener instalado el software Thunderbird en su dispositivo bajo Windows.
+- Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
+
+<details>
+
+<summary>Información relacionada con la gestión y configuración de los servicios OVHcloud</summary>
+
+
+Este guía le muestra cómo utilizar soluciones OVHcloud con herramientas externas y las modificaciones necesarias en contextos específicos. Es posible que deba adaptar las instrucciones según su situación.
+
+Si tiene dificultades para realizar estas operaciones, le recomendamos contactar a un [proveedor de servicios especializado](https://partner.ovhcloud.com/es-es/directory/) y/o discutirlo con nuestra comunidad. OVHcloud no puede proporcionar soporte técnico sobre el uso de herramientas externas. Más información en la sección [Más información](#gofurther) de esta guía.
+
+</details>
+
+
+## Procedimiento
+
+### Añadir la cuenta
+
+- **Al iniciar la aplicación por primera vez**: aparece un asistente de configuración que le pide que introduzca su dirección de correo electrónico.
+
+- **Si ya hay una cuenta configurada en la aplicación**:
+
+    1. Haga clic en el menú <code className="action">☰</code> en la barra horizontal superior.
+    2. Haga clic en <code className="action">Nueva Cuenta</code>.
+    3. Haga clic en <code className="action">Dirección de correo electrónico</code>.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-win-01.png" loading="lazy" />
+
+:::warning
+Es necesario anotar el valor correspondiente a su ubicación (**EUROPA** o **AMÉRICA / ASIA-PACÍFICO**).
+
+:::
+
+
+Siga los pasos de configuración haciendo clic sucesivamente en los **5** pestañas siguientes:
+
+<Tabs>
+  <Tab label="Paso 1">
+    En la ventana que aparece, introduzca las 2 siguientes informaciones:
+    
+     - Su nombre completo (nombre de visualización).
+     - La dirección de correo electrónico a configurar.
+    
+    Haga clic en <code className="action">Continuar</code> para completar los ajustes.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-mxplan-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Cuando Thunderbird detecte un nombre de dominio OVHcloud, se propone una configuración automática relacionada con la oferta MX Plan:
+    
+     - Si la información es correcta, haga clic en <code className="action">Continuar</code> y pase al paso 5.
+     - De lo contrario, haga clic en <code className="action">MODIFICAR LA CONFIGURACIÓN</code> para realizar una configuración manual.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-ssl0-03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 3">
+    Configuración del servidor de recepción:
+    
+     - **Protocolo**: IMAP
+     - **Nombre de host EUROPA (entrante)**: imap.mail.ovh.net **o** ssl0.ovh.net
+     - **Nombre de host AMÉRICA/ASIA-PACÍFICO (entrante)**: imap.mail.ovh.ca
+     - **Puerto**: 993
+     - **Seguridad de la conexión**: SSL/TLS
+     - **Método de autenticación**: Contraseña normal
+     - **Nombre de usuario**: Su dirección de correo electrónico completa
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-mxplan-04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 4">
+    Configuración del servidor de envío:
+    
+     - **Protocolo**: SMTP
+     - **Servidor EUROPA (saliente)**: smtp.mail.ovh.net **o** ssl0.ovh.net
+     - **Servidor AMÉRICA/ASIA-PACÍFICO (saliente)**: smtp.mail.ovh.ca
+     - **Puerto**: 587
+     - **Seguridad de la conexión**: STARTTLS
+     - **Método de autenticación**: Contraseña normal
+     - **Nombre de usuario**: Su dirección de correo electrónico completa
+    
+    1. Haga clic en <code className="action">Probar</code> para verificar los parámetros introducidos.
+    2. Haga clic en <code className="action">Continuar</code> para validar estos parámetros.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-mxplan-05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 5">
+    Introduzca la contraseña asociada a la dirección de correo electrónico, luego haga clic en <code className="action">Continuar</code> para finalizar la configuración.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-password-06.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::info
+**Configuración POP**
+
+Si desea una configuración POP para su dirección de correo electrónico, reemplace los parámetros del **paso 3** por los siguientes:
+
+Configuración del servidor de recepción:
+
+- **Protocolo**: POP3
+- **Nombre de host EUROPA (entrante)**: pop.mail.ovh.net **o** ssl0.ovh.net
+- **Nombre de host AMÉRICA/ASIA-PACÍFICO (entrante)**: pop.mail.ovh.ca
+- **Puerto**: 995
+- **Seguridad de la conexión**: SSL/TLS
+- **Método de autenticación**: Contraseña normal
+- **Nombre de usuario**: Su dirección de correo electrónico completa
+
+:::
+
+**Configuración POP**
+
+Si desea una configuración POP para su dirección de correo electrónico, reemplace los parámetros del paso 3 por los siguientes:
+
+Configuración del servidor de recepción:
+
+- Protocolo: POP3
+- Nombre de host EUROPA (entrante): pop.mail.ovh.net o ssl0.ovh.net
+- Nombre de host AMÉRICA/ASIA-PACÍFICO (entrante): pop.mail.ovh.ca
+- Puerto: 995
+- Seguridad de la conexión: SSL/TLS
+- Método de autenticación: Contraseña normal
+
+Nombre de usuario: Su dirección de correo electrónico completa
+
+
+
+### Utilizar la dirección de correo electrónico
+
+Una vez que su dirección de correo electrónico esté configurada, puede comenzar a utilizarla. Ahora puede enviar y recibir correos electrónicos.
+
+OVHcloud también ofrece una aplicación web para acceder a su dirección de correo electrónico desde un navegador. Para acceder al Webmail de OVHcloud, haga clic en [este enlace](https://www.ovhcloud.com/es-es/mail/). Puede conectarse utilizando las credenciales de su dirección de correo electrónico.
+
+### Recuperar una copia de seguridad de su dirección de correo electrónico
+
+Si debe realizar una operación que podría provocar la pérdida de datos de su cuenta de correo, le recomendamos hacer una copia de seguridad previa de la cuenta de correo afectada. Para ello, consulte el apartado "**Exportar**" en la sección "**Thunderbird**" de nuestra guía "[Migrar manualmente una dirección de correo electrónico](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/)".
+
+### Modificar los ajustes existentes
+
+Si su cuenta de correo ya está configurada y debe acceder a los ajustes de la cuenta para modificarlos:
+
+1. Haga clic en el menú <code className="action">☰</code> en la barra horizontal superior.
+2. Haga clic en <code className="action">Ajustes de cuentas</code>.
+
+<img className="thumbnail" alt="Thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-win-07.png" loading="lazy" />
+
+- Para modificar los ajustes relacionados con la **recepción** de sus correos, haga clic en <code className="action">Ajustes del servidor</code> en la columna izquierda bajo su dirección de correo.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-mxplan-win-08.png" loading="lazy" />
+
+- Para modificar los ajustes relacionados con el **envío** de sus correos, haga clic en <code className="action">Servidor saliente (SMTP)</code> al final de la columna izquierda.
+- Haga clic en la dirección de correo afectada en la lista, luego haga clic en <code className="action">Modificar</code>.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/configuration-thunderbird-mxplan-win-09.png" loading="lazy" />
+
+## Más información <a name="go-further"></a>
+
+:::info
+Para más información sobre la configuración de una dirección de correo electrónico desde el cliente de correo Thunderbird, consulte [el centro de ayuda de Mozilla](https://support.mozilla.org/products/thunderbird).
+
+:::
+
+
+[Primeros pasos con la solución MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

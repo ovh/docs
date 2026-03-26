@@ -1,0 +1,182 @@
+---
+title: Email Pro - Configurar su dirección de correo electrónico en Thunderbird para macOS
+description: Descubra cómo configurar su dirección de correo electrónico Email Pro en Thunderbird para macOS
+lastUpdated: 2025-09-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+Las cuentas de Email Pro se pueden configurar en diferentes clientes de correo electrónico compatibles. Esto le permite utilizar su dirección de correo electrónico desde el dispositivo de su elección. Thunderbird es un cliente de correo electrónico libre y gratuito.
+
+**Aprenda a configurar su dirección de correo electrónico Email Pro en Thunderbird para macOS.**
+
+## Requisitos
+
+- Debe tener una dirección de correo electrónico [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
+- Debe tener el software Thunderbird instalado en su Mac.
+- Debe tener las credenciales para la dirección de correo electrónico que desea configurar.
+
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Seleccione su plataforma
+
+---
+{/* CP-NAV-END:web-email-pro */}
+
+<details>
+
+<summary>Información sobre la gestión y configuración de los servicios de OVHcloud</summary>
+
+
+Esta guía le muestra cómo utilizar soluciones de OVHcloud con herramientas externas y los cambios que debe realizar en contextos específicos. Es posible que deba adaptar las instrucciones según su situación.
+
+Si tiene dificultades para realizar estas operaciones, le recomendamos que contacte a un [proveedor de servicios especializado](https://partner.ovhcloud.com/es-es/directory/) y/o que discuta con nuestra comunidad. OVHcloud no puede proporcionarle asistencia técnica sobre el uso de herramientas externas. Más información en la sección [Más información](#go-further) de esta guía.
+
+</details>
+
+
+## Procedimiento
+
+:::warning
+En nuestro ejemplo, utilizamos la mención del servidor: pro?.mail.ovh.net. Debe reemplazar el "?" con el número que designa el servidor de su servicio de Email Pro.
+
+Haga clic en [este enlace](https://manager.eu.ovhcloud.com/#/web/email_pro) para acceder a la sección <code className="action">Email Pro</code>.
+
+:::
+
+
+### Agregar la cuenta
+
+- **Al iniciar la aplicación por primera vez**: Asistente de configuración se muestra y le pide que ingrese su dirección de correo electrónico.
+
+- **Si una cuenta ya está configurada en la aplicación**:
+
+    1. Haga clic en el menú <code className="action">☰</code> en la barra horizontal superior.
+    2. Haga clic en <code className="action">Nueva cuenta</code>.
+    3. Haga clic en <code className="action">Dirección de correo electrónico</code>.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-mac-01.png" loading="lazy" />
+
+Siga los pasos de configuración haciendo clic sucesivamente en las **5** pestañas a continuación:
+
+<Tabs>
+  <Tab label="Paso 1">
+    En la ventana que aparece, ingrese las siguientes dos piezas de información:
+    
+     - Su nombre completo (nombre de visualización).
+     - La dirección de correo electrónico que desea configurar.
+    
+    Haga clic en <code className="action">Continuar</code> para completar la configuración.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-emp-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Cuando Thunderbird detecta un nombre de dominio de OVHcloud, se propone una configuración automática relacionada con la oferta de MX Plan. Haga clic en <code className="action">MODIFICAR LA CONFIGURACIÓN</code>.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-ssl0-03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 3">
+    Configuración del servidor de recepción:
+    
+     - **Protocolo**: IMAP
+     - **Nombre de host**: pro?.mail.ovh.net (reemplace el "?" con el número de su servidor)
+     - **Puerto**: 993
+     - **Seguridad de la conexión**: SSL/TLS
+     - **Método de autenticación**: Contraseña normal
+     - **Nombre de usuario**: Su dirección de correo electrónico completa
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-emp-04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 4">
+    Configuración del servidor de envío:
+    
+     - **Protocolo**: SMTP
+     - **Nombre de host**: pro?.mail.ovh.net (reemplace el "?" con el número de su servidor)
+     - **Puerto**: 587
+     - **Seguridad de la conexión**: STARTTLS
+     - **Método de autenticación**: Contraseña normal
+     - **Nombre de usuario**: Su dirección de correo electrónico completa
+    
+    1. Haga clic en <code className="action">Probar</code> para verificar la configuración ingresada.
+    2. Haga clic en <code className="action">Continuar</code> para validar esta configuración.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-emp-05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 5">
+    Ingrese la contraseña asociada con la dirección de correo electrónico, luego haga clic en <code className="action">Continuar</code> para finalizar la configuración.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-password-06.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::info
+**Configuración POP**
+
+Si desea una configuración POP para su dirección de correo electrónico, reemplace los parámetros de **paso 3** con los siguientes:
+
+Configuración del servidor de recepción:
+
+- **Protocolo**: POP3
+- **Nombre de host**: pro?.mail.ovh.net (reemplace el "?" con el número de su servidor)
+- **Puerto**: 995
+- **Seguridad de la conexión**: SSL/TLS
+- **Método de autenticación**: Contraseña normal
+- **Nombre de usuario**: Su dirección de correo electrónico completa
+
+:::
+
+
+### Utilizar la dirección de correo electrónico
+
+Una vez que su dirección de correo electrónico esté configurada, puede comenzar a utilizarla. Ahora puede enviar y recibir correos electrónicos.
+
+OVHcloud también ofrece una aplicación web que le permite acceder a su dirección de correo electrónico desde un navegador de Internet. Para acceder al Webmail de OVHcloud, haga clic en [este enlace](https://www.ovhcloud.com/es-es/mail/). Puede iniciar sesión utilizando las credenciales de su dirección de correo electrónico.
+
+### Recuperar una copia de seguridad de su dirección de correo electrónico
+
+Si debe realizar una operación que pueda resultar en la pérdida de datos de su cuenta de correo electrónico, le recomendamos que cree una copia de seguridad de la cuenta de correo electrónico correspondiente antes de realizar la operación. Para hacer esto, consulte el párrafo "**Exportar**" en la parte "**Thunderbird**" de nuestra guía "[Migrar manualmente una dirección de correo electrónico](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/)".
+
+### Modificar los parámetros existentes
+
+Si su cuenta de correo electrónico ya está configurada y necesita acceder a los parámetros de la cuenta para modificarlos:
+
+1. Haga clic en el menú <code className="action">☰</code> en la barra horizontal superior.
+2. Haga clic en <code className="action">Configuración de cuentas</code>.
+
+<img className="thumbnail" alt="Thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-mac-07.png" loading="lazy" />
+
+- Para modificar los parámetros relacionados con la **recepción** de sus correos electrónicos, haga clic en <code className="action">Configuración del servidor</code> en la columna izquierda debajo de su dirección de correo electrónico.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-emp-mac-08.png" loading="lazy" />
+
+- Para modificar los parámetros relacionados con el **envío** de sus correos electrónicos, haga clic en <code className="action">Servidor de envío (SMTP)</code> en la parte inferior de la columna izquierda.
+- Haga clic en la dirección de correo electrónico correspondiente en la lista, luego haga clic en <code className="action">Modificar</code>.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-thunderbird-mac/configuration-thunderbird-emp-mac-09.png" loading="lazy" />
+
+
+## Más información <a name="go-further"></a>
+
+:::info
+Para obtener más información sobre la configuración de una dirección de correo electrónico en el cliente de correo electrónico Thunderbird, visite el [centro de ayuda de Mozilla](https://support.mozilla.org/products/thunderbird).
+
+:::
+
+
+[Primeros pasos con la solución Email Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/first-config/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

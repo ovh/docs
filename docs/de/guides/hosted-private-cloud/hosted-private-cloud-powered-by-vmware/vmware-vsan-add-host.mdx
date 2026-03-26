@@ -1,0 +1,64 @@
+---
+title: Einen ESXi-Server in einem vSAN-Cluster hinzufügen (EN)
+description: Find out how to add an ESXi server to an existing vSAN cluster
+lastUpdated: 2021-12-22
+---
+
+## Objective
+
+This guide explains how to add a new ESXi server storage to an existing vSAN cluster.
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de))
+- A deployed [vSan Datastore](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan/)
+
+## Instructions
+
+### Order a new vSan host
+
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) with your administrative credentials.
+
+In the <code className="action">Hosted Private Cloud</code> section, select your datacenter and go to the <code className="action">Hosts</code> tab.<br/>
+Click on the <code className="action">Order a Host</code> button.
+
+<img className="thumbnail" alt="ORDER" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-add-host/en02order.png" loading="lazy" />
+
+Select the fitting vSAN host for your need and click <code className="action">Confirm Order</code>
+
+<img className="thumbnail" alt="ORDER" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-add-host/en03hosttype.png" loading="lazy" />
+
+Verify the recap of your order and click <code className="action">Next</code>
+
+Check the boxes to accept the terms and conditions and go on to the payment. You will get an order confirmation.
+
+The new host will be automatically integrated to your infrastructure and you will receive a confirmation email when it is ready for use in vSphere.
+
+### Add new vSan host storage to your datastore
+
+In the vSphere interface menu, go to the <code className="action">Hosts and Clusters</code> dashboard.
+
+<img className="thumbnail" alt="Menu" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-add-host/en07hosts.png" loading="lazy" />
+
+You should see your new host in the cluster.<br/>
+On the left side, select your cluster, go in the <code className="action">Configure</code> tab then <code className="action">vSAN</code> / <code className="action">Disk Management</code>.<br/>
+Click on <code className="action">Claim Unused Disks</code>.
+
+<img className="thumbnail" alt="vSAN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-add-host/en08cluster.png" loading="lazy" />
+
+Available disks are assigned to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html) for explanation) depending on types and sizes. You can customize it to your need.
+
+Click on <code className="action">Create</code> when ready.
+
+<img className="thumbnail" alt="vSAN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-add-host/en09claim.png" loading="lazy" />
+
+The new disk group will take some time to be created and added to the vSAN datastore.
+
+<img className="thumbnail" alt="vSAN" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan-add-host/en10progress.png" loading="lazy" />
+
+Once done, the datastore is ready for use with the added storage.
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

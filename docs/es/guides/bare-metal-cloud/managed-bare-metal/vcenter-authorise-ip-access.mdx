@@ -1,0 +1,33 @@
+---
+title: Autorizar direcciones IP a conectarse al vCenter
+lastUpdated: 2020-11-18
+---
+
+## Objetivo
+
+Es posible limitar el acceso al vCenter autorizando solo la conexión de determinadas direcciones IP. 
+
+**Esta guía explica cómo autorizar direcciones IP a conectarse al vCenter.**
+
+## Requisitos
+
+* Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+* Disponer de una [infraestructura Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/) en su cuenta de OVHcloud.
+
+## Procedimiento
+
+Cuando [la política de acceso al vCenter está restringida](/guides/bare-metal-cloud/managed-bare-metal/vcenter-modify-access-policy/), es necesario añadir las direcciones IP autorizadas a conectarse al servicio.
+
+Esta operación se realiza desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es). En el menú `Servidores`, acceda a la sección `Managed Bare Metal`. Seleccione la infraestructura y, a continuación, abra la pestaña `Seguridad`. Por último, haga clic en <code className="action">Añadir un nuevo rango de direcciones IP</code>.
+
+<img className="thumbnail" alt="vCenter" src="/images/bare-metal-cloud/managed-bare-metal/vcenter-authorise-ip-access/restrictIP.png" loading="lazy" />
+
+Añada la dirección IP y, si lo desea, una descripción para poder identificarla fácilmente.
+
+Por último, haga clic en <code className="action">Siguiente</code> y, una vez que la IP esté marcada como autorizada e instalada, podrá conectarse al vSphere desde esa dirección IP.
+
+<img className="thumbnail" alt="vCenter" src="/images/bare-metal-cloud/managed-bare-metal/vcenter-authorise-ip-access/restrictIP2.JPG" loading="lazy" />
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

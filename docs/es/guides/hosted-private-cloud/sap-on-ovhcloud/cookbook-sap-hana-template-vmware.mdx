@@ -1,0 +1,287 @@
+---
+title: Deploy a virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed
+description: This guide provides instructions for deploying a SLES for SAP virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed
+lastUpdated: 2026-01-13
+---
+
+## Objective
+
+This guide provides instructions for deploying a SLES for SAP virtual machine with SAP HANA, the OVHcloud Backint Agent for SAP HANA, and SAP logs on OVHcloud Logs Data Platform, pre-installed on a VMware on OVHcloud solution using OVF template provided by OVHcloud.
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es)
+- A [SAP HANA on Private Cloud solution](https://www.ovhcloud.com/es-es/hosted-private-cloud/sap-hana/) deployed
+- A [Public Cloud project](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) in your OVHcloud account with:
+    - [An Object Storage bucket](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/) and [an Object Storage user](/guides/storage-and-backup/object-storage/s3-identity-and-access-management#creation-dun-utilsateur/) with read right
+    - [A second Object Storage bucket](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/) and [an Object Storage user](/guides/storage-and-backup/object-storage/s3-identity-and-access-management#creation-dun-utilsateur/) with read/write rights
+
+## Instructions
+
+:::info
+[**Quick access to the OVF template URL**](#ovf_link)
+
+:::
+
+
+### Deployment
+
+The number of vCPUs depends on the number of vCPUs for a half socket or an entire socket. It is important to note that VMware and SAP do not support configurations with an odd multiple of 0.5 socket, such as 1.5 socket, 2.5 socket, etc.
+
+Below, you will find tables showing the sizes of SAP HANA virtual machines that meet this recommendation and use all of the memory for each number of vCPUs.
+
+**First generation**
+
+| Host          | Socket | vCPUs | Memory | SAPS    |
+|---------------|:------:|:-----:--------:|:-------:|
+| SAP HANA 1536 | 0.5    | 24    | 384    | 41,664  |
+| SAP HANA 1536 | 1      | 48    | 768    | 83,329  |
+| SAP HANA 1536 | 2      | 96    | 1536*  | 166,658 |
+
+**Second generation**
+
+| Host          | Socket | vCPUs | Memory (GiB) | SAPS    |
+|---------------|:------:|:-----:|:------------:|:-------:|
+| H1-I1-32-1024 | 0.5    | 16    | 256          | 36,189  |
+| H1-I2-72-1024 | 0.5    | 36    | 256          | 70,564  |
+| H1-I1-32-2048 | 0.5    | 16    | 512          | 36,189  |
+| H1-I2-72-2048 | 0.5    | 36    | 512          | 70,564  |
+| H1-I1-32-1024 | 1      | 32    | 512          | 72,379  |
+| H1-I2-72-1024 | 1      | 72    | 512          | 141,129 |
+| H1-I1-32-4096 | 0.5    | 16    | 1024         | 36,189  |
+| H1-I2-72-4096 | 0.5    | 36    | 1024         | 70,564  |
+| H1-I1-32-2048 | 1      | 32    | 1024         | 72,379  |
+| H1-I2-72-2048 | 1      | 72    | 1024         | 141,129 |
+| H1-I1-32-1024 | 2      | 64    | 1024*        | 144,759 |
+| H1-I2-72-1024 | 2      | 144   | 1024*        | 282,259 |
+| H1-I1-32-4096 | 1      | 32    | 2048         | 72,379  |
+| H1-I2-72-4096 | 1      | 72    | 2048         | 141,129 |
+| H1-I1-32-2048 | 2      | 64    | 2048*        | 144,759 |
+| H1-I2-72-2048 | 2      | 144   | 2048*        | 282,259 |
+| H1-I1-32-4096 | 2      | 64    | 4096*        | 144,759 |
+| H1-I2-72-4096 | 2      | 144   | 4096*        | 282,259 |
+
+**We recommend reserving 100GB of memory for the ESXi host.*
+
+OVHcloud provides an OVF template that includes the SUSE Linux Enterprise Server for SAP Applications operating system, which is pre-configured to receive a SAP HANA installation.
+
+This OVF template offers the possibility to automatically install SAP HANA, the OVHcloud Backint Agent for SAP HANA, and SAP logs on OVHcloud Logs Data Platform, reducing the time required to deliver a SAP HANA database.
+
+First, you must upload SAP HANA sources to your first Object Storage bucket, as described in the 'Requirements' section. The sources must be uploaded in the same format as the original download, for example, « 51056821.ZIP ».
+
+:::warning
+SAP HANA Components (such as AFL, EML, LCAPPS, EPMMDS, etc.) are not managed by this automation. They should be installed and managed in the post-installation step.
+
+:::
+
+
+We recommend following our [Object Storage guide](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/) if it's your first time with Object Storage.
+
+Once the SAP HANA sources have been uploaded to your Object Storage bucket, you can now connect to the vSphere interface of your VMware on OVHcloud solution.
+
+:::warning
+A current issue with the Content Library and the dynamic disk feature (as documented [KB85842](https://kb.vmware.com/s/article/85842)) requires us to use the direct link of the OVF template instead.
+
+:::
+
+
+1\. To begin the deployment process, go to the vSphere interface and select your datacenter. Then, click on <code className="action">Action</code> menu and select <code className="action">Deploy OVF template</code>.
+
+<img className="thumbnail" alt="new-virtual-machine" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-1.png" loading="lazy" />
+
+2\. Enter the following URL in the 'URL' field to access the OVF template for SAP HANA, then click <code className="action">Next</code>.
+<a name="ovf_link"></a>
+
+The below URL is an example, you must replace the value `pcc-xxx-xxx-xxx-xxx.ovh.xxx` with the URL of your VMware on OVHcloud service.
+
+| Version            | URL                                                                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| SLES4SAP-SLE15-SP5 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP6 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP6-Full-x86_64/sles4sap-sap-hana-SLE15-SP6-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP7 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP7-Full-x86_64/sles4sap-sap-hana-SLE15-SP7-Full-x86_64.ovf |
+
+<img className="thumbnail" alt="deploy-from-template" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-2.png" loading="lazy" />
+
+3\. Give a name to your virtual machine and select your datacenter. Then, click <code className="action">Next</code> to continue.
+
+<img className="thumbnail" alt="virtual-machine" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-3.png" loading="lazy" />
+
+4\. Select 'Cluster1'. Then, click <code className="action">Next</code> to continue.
+
+<img className="thumbnail" alt="cluster1" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-4.png" loading="lazy" />
+
+5\. The product name must be 'SLES for SAP SLE-15-SP5-Full-x86_64 for SAP HANA (BYOL)'. Then, click <code className="action">Next</code> to continue.
+
+Note that the advanced configurations in the OVF template may trigger a warning block to appear.
+
+<img className="thumbnail" alt="review" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-5.png" loading="lazy" />
+
+6\. Select 'vsanDatastore' as the datastore for your SAP HANA virtual machine to comply with SAP and VMware recommendations. Then, click <code className="action">Next</code> to continue.
+
+<img className="thumbnail" alt="storage" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-6.png" loading="lazy" />
+
+7\. From the list of available networks, select the one where you want to deploy your SAP HANA database. Then, click '<code className="action">Next</code> to continue.
+
+Note that you will have the opportunity to add another network card to your virtual machine after the deployment is complete, if necessary.
+
+<img className="thumbnail" alt="network" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-7.png" loading="lazy" />
+
+8\. The 'SLES for SAP SLE-15-SP5-Full-x86_64 for SAP HANA (BYOL)' model offers a wide range of customization options for your virtual machine. You can adjust settings such as the size of virtual disks, enable the SAP HANA installation, the OVHcloud Backint Agent installation or else SAP logs on OVHcloud Logs Data Platform.
+
+In this guide, we focus on these four categories:
+
+- SAP HANA disks ;
+- SAP HANA installation ;
+- OVHcloud Backint Agent installation ;
+- SAP logs on OVHcloud Logs Data Platform.
+
+In the <code className="action">SAP HANA disks</code> category, you can set the size of the virtual disks that will be created. Our OVF template is pre-filled with default values for a virtual machine with 8 vCPUs and 128 GB of memory. These values are based on SAP's storage recommendations for this model.
+
+<img className="thumbnail" alt="disks" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-8.png" loading="lazy" />
+
+Find below the table of SAP recommendations for sizing SAP HANA disks:
+
+| Disk       | Size                                                  |
+|------------|-------------------------------------------------------|
+| usrsap     | MIN(32 GB)                                            |
+| hanadata   | 1 x RAM                                               |
+| hanalog    | [RAM ≤ 512 GB] = 1/2 x RAM<br/>[RAM > 512 GB] = 512 GB |
+| hanashared | MIN(1 x RAM; 1 TB)                                    |
+| hanabackup | hanadata + hanalog                                    |
+
+If you want to use our automated installation process for SAP HANA, check the box to enable installation and fill in the required information in the <code className="action">SAP HANA installation</code> category.
+
+:::info
+Take note of the [SAP Note 1979280](https://me.sap.com/notes/1979280/E) which lists all SAP HANA SIDs that are not supported by SAP.
+
+:::
+
+
+<img className="thumbnail" alt="sap-hana-installation" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-9.png" loading="lazy" />
+
+10\. To use our automated installation process for the OVHcloud Backint Agent for SAP HANA, check the box to enable installation and fill in the required information in the <code className="action">OVHcloud Backint Agent installation</code> category.
+
+:::warning
+Note that this option is only available if you have enabled the SAP HANA installation as described in the previous category.
+
+:::
+
+
+<img className="thumbnail" alt="ovhcloud-backint-agent-installation" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-10.png" loading="lazy" />
+
+11\. To use our automated installation process for forwarding SAP logs to the OVHcloud Logs Data Platform, check the box to enable installation and fill in the required information in the <code className="action">SAP logs on OVHcloud Logs Data Platform</code> category.
+
+<img className="thumbnail" alt="sap-ldp-installation" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/step-11.png" loading="lazy" />
+
+Once you have completed these steps, the deployment of your virtual machine from the OVF template created by OVHcloud will begin.
+
+Before starting your virtual machine, we recommend reviewing the [Advanced settings](#advanced-settings) section and performing any necessary actions.
+
+<a name="advanced-settings"></a>
+
+### Advanced settings
+
+Although the OVF template created by OVHcloud supports a wide range of parameters out of the box, there may be additional configurations required for specific use cases. Once your virtual machine is deployed, you can adjust these parameters to suit your needs.
+
+1\. To make these additional adjustments, first select your virtual machine. Then, click on the <code className="action">Action</code>, menu and select <code className="action">Edit Settings</code>.
+
+<img className="thumbnail" alt="edit-vm" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/vm-step-1.png" loading="lazy" />
+
+2\. From the <code className="action">Edit Configuration</code> interface, click on the <code className="action">Options VM</code> tab to access additional configuration options for your virtual machine. Then, expand the <code className="action">Advanced</code> menu and select <code className="action">Edit Configuration</code> to adjust the advanced settings as needed.
+
+<img className="thumbnail" alt="vm-options" src="/images/hosted-private-cloud/sap-on-ovhcloud/cookbook-sap-hana-template-vmware/vm-step-2.png" loading="lazy" />
+
+3\. These following parameters are included in the OVF template:
+
+| Parameter                     | Value  |
+|-------------------------------|--------|
+| tools.guestlib.enableHostInfo | TRUE   |
+| numa.memory.gransize          | 32768  |
+
+For more details about these parameters, we invite you to take note of the [SAP Note 1606643](https://me.sap.com/notes/1606643/E) as well as the [VMware documentation](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide).
+
+4\. If your SAP HANA virtual machine uses a half-socket or only one socket, it's recommended applying this parameter:
+
+| Parameter          | Value  |
+|--------------------|--------|
+| numa.vcpu.preferHT | TRUE   |
+
+5\. We recommend applying a VM Storage Policy with thick provisioning. To create a new VM Storage Policy, click on the <code className="action">vSphere Client</code> and select the <code className="action">VM Storage Policies</code> icon. This will open the VM Storage Policy wizard, where you can configure the storage settings for your SAP HANA virtual machine.
+
+Find below the parameters for the rule that we advise creating for SAP HANA:
+
+| Parameter                         | Value                          |
+|-----------------------------------|--------------------------------|
+| Storage Type                      | VSAN                           |
+| Site disaster tolerance           | None - standard cluster        |
+| Failures to tolerate              | 1 failure - RAID-1 (Mirroring)<sup>1</sup> |
+| Number of disk stripes per object | 2                              |
+| IOPS limit for object             | 0                              |
+| Object space reservation          | Thick provisioning             |
+| Flash read cache reservation      | 0%                             |
+| Disable object checksum           | No                             |
+| Force provisioning                | No                             |
+| Encryption services               | No preference                  |
+| Space efficiency                  | No preference                  |
+| Storage tier                      | All flash                      |
+
+<sup>1</sup> *If your cluster has more than 3 hosts, it is more advantageous to switch to RAID-5.*
+
+This VM storage strategy should be applied to the disks hosting your virtual machine’s /hana/shared (Hard disk 3), /hana/data (Hard disk 4) and /hana/log (Hard disk 5) volumes.
+
+6\. You can now start your virtual machine.
+
+If you have enabled the installation of SAP HANA when deploying your virtual machine, the installation process will begin automatically during the first boot. This process can take a bit more than 15 minutes to complete, so we recommend not performing any actions on your virtual machine during this time.
+
+To monitor the progress of the installation, you can establish an SSH connection to your virtual machine and check the status messages. These messages will appear periodically throughout the installation process, and will provide updates on the current status.
+
+### Post-configuration
+
+We strongly recommend performing the following actions before putting your SAP HANA database in production.
+
+1\. Register your SUSE Linux Enterprise Server for SAP Applications operating system and get the latest updates with the command:
+
+```bash
+zypper update -y
+```
+
+2\. Install your SAP HANA licence.
+
+3\. Create the scheduling backups for your SAP HANA database. We present an example of the scheduling backups with OVHcloud Backint Agent for SAP HANA in [our guide](/guides/hosted-private-cloud/sap-on-ovhcloud/cookbook-install-ovhcloud-backint-agent/).
+
+4\. We recommend setting the same time servers (NTP) at the OS level as the ones used by your ESXi hosts of your VMware on OVHcloud solution.
+
+This information is available in your vSphere interface by selecting an ESXi host, going to the <code className="action">Configure</code> tab, and then selecting <code className="action">Time Configuration</code> in the menu.
+
+On SLES, edit the /etc/chrony.conf file and add the IP address of NTP servers:
+
+```console
+# Allow NTP client access from local network.
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (https://www.pool.ntp.org/join.html).
+server {ip-ntp-server1}
+server {ip-ntp-server2}
+server {ip-ntp-server3}
+server {ip-ntp-server4}
+```
+
+Start and enable this service for next startup:
+
+```bash
+systemctl start chronyd.service
+systemctl enable chronyd.service
+```
+
+## Go further
+
+- [Install and use OVHcloud Backint Agent for SAP HANA](/guides/hosted-private-cloud/sap-on-ovhcloud/cookbook-install-ovhcloud-backint-agent/)
+- [Use OVHcloud Backint Agent with several Object Storage buckets](/guides/hosted-private-cloud/sap-on-ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets/)
+- [SAP HANA on VMware vSphere Best Practices and Reference Architecture Guide](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide)
+- [SAP Note 1606643 - Linux: VMware vSphere host monitoring interface](https://me.sap.com/notes/1606643/E)
+- [SAP Note 2470289 - FAQ: SAP HANA Non-Uniform Memory Access (NUMA)](https://me.sap.com/notes/2470289)
+- [SAP Note 2779240 - Workload-based sizing for virtualized environments](https://me.sap.com/notes/2779240)
+- [SAP HANA on VMware vSphere](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

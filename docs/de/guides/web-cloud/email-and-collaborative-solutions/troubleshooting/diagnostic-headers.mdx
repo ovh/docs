@@ -1,0 +1,245 @@
+---
+title: E-Mail-Header und .eml-Datei abrufen
+description: Erfahren Sie, wie Sie einen E-Mail-Header oder eine .eml-Datei aus Ihrem E-Mail-Client, Webmail oder einer externen Anwendung abrufen
+lastUpdated: 2026-03-06
+---
+
+
+
+## Ziel
+
+Ein E-Mail-Header zeichnet den Weg nach, den eine E-Mail im Netzwerk vom Absender zum Empfänger zurücklegt.<br/>
+Er ermöglicht es, eine schädliche E-Mail zu identifizieren oder Empfangsverzögerungen zu erkennen.
+
+Jede empfangene E-Mail hat einen Header (*header*), der beim Lesen der E-Mail nicht standardmäßig angezeigt wird. Sie können ihn jedoch über Ihren E-Mail-Client oder Ihr Webmail abrufen.
+
+Sie können die gesamte E-Mail auch als `.eml`-Datei exportieren. Diese Datei kann angefordert werden, um eine schädliche E-Mail zu analysieren, die Sie erhalten haben.<br/>
+Um eine `.eml`-Datei abzurufen, lesen Sie den Abschnitt [Webmail](#webmail).
+
+**Erfahren Sie, wie Sie einen E-Mail-Header abrufen und eine .eml-Datei aus Ihrem E-Mail-Client exportieren.**
+
+## Voraussetzungen
+
+- Sie verfügen über eine E-Mail-Adresse mit einer unserer [OVHcloud E-Mail-Lösungen](https://www.ovhcloud.com/de/emails/) oder einer externen Lösung.
+- Sie haben über Webmail oder eine E-Mail-Software Zugriff auf die E-Mail-Adresse.
+
+## In der praktischen Anwendung
+
+### Inhalt eines Headers verstehen
+
+Der Header setzt sich aus mehreren Elementen zusammen, die den Weg der E-Mail anzeigen. Diese sind in umgekehrter chronologischer Reihenfolge angeordnet, zusammen mit zusätzlichen Informationen.<br/>
+Im Folgenden finden Sie eine nicht erschöpfende Liste der Elemente, aus denen ein Header bestehen kann, sowie deren Bedeutung.
+
+- Das Feld `Received` ist im Header bei jedem Durchgang der E-Mail über einen Sendeserver (SMTP) vorhanden. Es enthält in der Regel den Hostnamen des Servers mit seiner IP-Adresse und dem Datum. Die `Received`-Felder sind vom neuesten zum ältesten Durchgang sortiert:
+<pre className="bgwhite"><code>
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
+	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+</code></pre>
+  *Hier wurde die E-Mail vom Server MX Plan7.mail.ovh.net an den Server mo3005.mail-out.ovh.net am 30. Juni 2021 um 13:12:40 Uhr (Zeitzone UTC) übertragen.*
+
+- Das Feld `Return-Path` entspricht der Rücksendeadresse, wenn der Versand der Nachricht fehlgeschlagen ist. Die Rücksendeadresse ist in der Regel die des Absenders.
+<pre className="bgwhite"><code>
+Return-Path: &lt;john@mydomain.ovh&gt;
+</code></pre>
+
+- Das Feld `From` gibt die Adresse des Absenders der E-Mail und den Anzeigenamen an.
+<pre className="bgwhite"><code>
+From: John &lt;john@mydomain.ovh&gt;
+</code></pre>
+
+- Das Feld `To` gibt die Adresse des Empfängers der E-Mail und den Anzeigenamen an.
+<pre className="bgwhite"><code>
+To: Robert &lt;robert@hisdomain.ovh&gt;
+</code></pre>
+
+- Das Feld `Subject` gibt den Betreff der E-Mail an.
+<pre className="bgwhite"><code>
+Subject: Hello my friend
+</code></pre>
+
+- Das Feld `Message-ID` gibt die eindeutige Kennung der E-Mail an und endet mit dem Namen des Sendeservers (nach dem "@").
+<pre className="bgwhite"><code>
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
+</code></pre>
+
+- Das Feld `Received-SPF` zeigt das Ergebnis der [SPF](/guides/web-cloud/domains/dns-zone-spf/)-Prüfung an, die auf den Domainnamen des Absenders durchgeführt wurde. Mit dem Argument `client-ip` lässt sich die IP-Adresse des Servers ermitteln, der die E-Mail gesendet hat.
+<pre className="bgwhite"><code>
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
+</code></pre>
+
+- Die `X-`-Felder sind benutzerdefinierte Felder, die die Standardfelder ergänzen. Sie werden von den Servern implementiert, über die die E-Mails übertragen werden.
+<pre className="bgwhite"><code>
+X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
+X-Ovh-Tracer-Id: 1234567891011121314
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 0
+X-VR-SPAMCAUSE:
+</code></pre>
+
+### Header über einen E-Mail-Client abrufen
+
+#### Microsoft Outlook
+
+##### **Header abrufen**
+
+Es gibt zwei Versionen von Outlook für Windows: **Klassisches Outlook** und das **Neue Outlook**. Um Ihre Version zu identifizieren, geben Sie "Outlook" in die Windows-Suchleiste ein. Wenn die Bezeichnung "(klassisch)" angezeigt wird, verwenden Sie Klassisches Outlook. Andernfalls handelt es sich um das Neue Outlook.
+
+<img className="thumbnail" alt="Outlook Windows - Version identifizieren" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/outlook-windows-identify01.png" loading="lazy" />
+
+**Klassisches Outlook:**
+
+1. Doppelklicken Sie auf die E-Mail, um sie in einem separaten Fenster zu öffnen.
+2. Klicken Sie im neuen Fenster oben links auf <code className="action">Datei</code>.
+3. Wählen Sie links <code className="action">Info</code> aus und klicken Sie auf <code className="action">Eigenschaften</code>.
+4. Der vollständige E-Mail-Header wird im unteren Bereich angezeigt. Markieren Sie den gesamten Text und kopieren Sie ihn in eine Datei.
+
+<img className="thumbnail" alt="Vollständiger Header in Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/classic-outlook-01.png" loading="lazy" />
+
+**Neues Outlook:**
+
+1. Öffnen Sie die E-Mail Ihrer Wahl.
+2. Klicken Sie mit der **rechten Maustaste** auf die E-Mail.
+3. Wählen Sie <code className="action">Ansicht</code> und dann <code className="action">Nachrichtendetails anzeigen</code>.
+4. Der vollständige E-Mail-Header wird im Detailbereich der Nachricht angezeigt. Markieren Sie den gesamten Text und kopieren Sie ihn in eine Datei.
+
+<img className="thumbnail" alt="Vollständiger Header in Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/new-outlook-01.png" loading="lazy" />
+
+##### **.eml-Datei abrufen**
+
+**Klassisches Outlook:**
+
+1. Wählen Sie die E-Mail in Ihrem Posteingang aus (öffnen Sie sie nicht).
+2. Klicken Sie in der Menüleiste auf <code className="action">Datei</code>.
+3. Klicken Sie auf <code className="action">Speichern unter</code>.
+4. Wählen Sie im Dropdown-Menü "Dateityp" die Option **Outlook-Nachrichtenformat - Unicode (.msg)** aus. Wählen Sie einen Speicherort auf Ihrem Computer (z. B. den Desktop) und klicken Sie auf <code className="action">Speichern</code>.
+
+Sie können die E-Mail auch per **Drag & Drop** aus Ihrem Posteingang direkt auf Ihren Desktop ziehen. Dadurch wird eine `.msg`-Datei erstellt, die Sie Ihrer Meldung beifügen können.
+
+<img className="thumbnail" alt="MSG-Datei in Outlook speichern" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/classic-outlook-02.png" loading="lazy" />
+
+**Neues Outlook:**
+
+1. Klicken Sie in der Nachrichtenliste mit der **rechten Maustaste** auf die E-Mail.
+2. Wählen Sie <code className="action">Speichern unter</code> und dann <code className="action">Als EML-Datei speichern</code>.
+3. Wählen Sie einen Speicherort auf Ihrem Computer und klicken Sie auf <code className="action">Speichern</code>.
+
+<img className="thumbnail" alt="EML-Datei im Neuen Outlook speichern" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/new-outlook-02.png" loading="lazy" />
+
+#### Mozilla Thunderbird
+
+##### **Header abrufen**
+
+1. Wählen Sie die E-Mail Ihrer Wahl aus.
+2. Drücken Sie gleichzeitig `Ctrl` \+ `U` (`Cmd` \+ `U` unter macOS).
+3. Der vollständige E-Mail-Header wird in einem separaten Fenster angezeigt. Markieren Sie den gesamten Text und kopieren Sie ihn in eine Datei.
+
+<img className="thumbnail" alt="Vollständiger Header in Thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/thunderbird-01.png" loading="lazy" />
+
+##### **.eml-Datei abrufen**
+
+1. Wählen Sie die E-Mail Ihrer Wahl aus.
+2. Drücken Sie gleichzeitig `Ctrl` \+ `S` (`Cmd` \+ `S` unter macOS).
+3. Die Datei wird standardmäßig im `.eml`-Format gespeichert.
+
+#### macOS Mail
+
+##### **Header abrufen**
+
+1. Wählen Sie die E-Mail Ihrer Wahl aus.
+2. Drücken Sie gleichzeitig `Cmd` \+ `Shift` \+ `H`.
+3. Der vollständige E-Mail-Header wird angezeigt. Markieren Sie den grauen Text und kopieren Sie ihn in eine Datei.
+
+<img className="thumbnail" alt="Vollständiger Header in macOS Mail" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/mailmacos-01.png" loading="lazy" />
+
+##### **.eml-Datei abrufen**
+
+1. Wählen Sie die E-Mail Ihrer Wahl aus.
+2. Drücken Sie gleichzeitig `Cmd` \+ `S`. Die `.eml`-Datei wird automatisch erstellt. Wählen Sie das Format `Reine Quelldatei`.
+3. Wählen Sie einen Speicherort auf Ihrem Computer und klicken Sie auf <code className="action">Speichern</code>.
+
+<img className="thumbnail" alt="EML-Datei aus macOS Mail speichern" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/mailmacos-02.png" loading="lazy" />
+
+### Header über Webmail abrufen <a name="webmail"></a>
+
+#### Roundcube
+
+##### **Header abrufen**
+
+1. Wählen Sie die E-Mail Ihrer Wahl aus.
+2. Klicken Sie auf den Button <code className="action">... Mehr</code> und dann auf <code className="action">&lt; > Quelle anzeigen</code>.
+3. Ein neues Fenster öffnet sich mit dem vollständigen E-Mail-Header. Markieren Sie den gesamten Text und kopieren Sie ihn in eine Datei.
+
+<img className="thumbnail" alt="Quelle anzeigen in Roundcube" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/roundcube01.png" loading="lazy" />
+
+##### **.eml-Datei abrufen**
+
+1. Wählen Sie die E-Mail Ihrer Wahl aus.
+2. Klicken Sie auf den Button <code className="action">... Mehr</code> und dann auf <code className="action">Download (.eml)</code>.
+
+<img className="thumbnail" alt="EML-Datei in Roundcube herunterladen" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/roundcube02.png" loading="lazy" />
+
+#### Outlook Web App (OWA) <a name="owa"></a>
+
+##### **Header abrufen**
+
+1. Wählen Sie die E-Mail aus, deren Header Sie anzeigen möchten.
+2. Klicken Sie auf den **Pfeil** rechts neben <code className="action">Allen antworten</code> und dann auf <code className="action">Nachrichtendetails anzeigen</code>.
+3. Ein neues Fenster öffnet sich mit dem vollständigen E-Mail-Header, den Sie herunterladen können.
+
+<img className="thumbnail" alt="Nachrichtendetails in OWA" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/owa01.png" loading="lazy" />
+
+Sehen Sie auch unser Video-Tutorial:
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No?start=36" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+##### **.eml-Datei abrufen**
+
+1. Klicken Sie auf <code className="action">(+) Neu</code>, um eine neue E-Mail zu erstellen.
+2. Wählen Sie die E-Mail aus, die Sie exportieren möchten, und ziehen Sie sie in den Inhalt der neuen Nachricht.
+3. Klicken Sie auf den Pfeil neben dem erstellten Anhang und dann auf <code className="action">Download</code>, um die Datei auf Ihrem Computer zu speichern.
+
+<img className="thumbnail" alt="EML-Datei aus OWA exportieren" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/owa02.gif" loading="lazy" />
+
+#### Zimbra
+
+##### **Header abrufen**
+
+1. Wählen Sie die E-Mail Ihrer Wahl aus.
+2. Klicken Sie auf <code className="action">Mehr</code> in der Aktionsleiste und wählen Sie <code className="action">Original anzeigen</code>.
+3. Ein neues Fenster öffnet sich mit dem vollständigen Header und dem Rohinhalt der E-Mail.
+
+<img className="thumbnail" alt="Nachrichtendetails in Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/zimbra-01.png" loading="lazy" />
+
+##### **.eml-Datei abrufen**
+
+1. Wählen Sie die E-Mail Ihrer Wahl aus.
+2. Klicken Sie auf <code className="action">Mehr</code> in der Aktionsleiste und wählen Sie <code className="action">Original anzeigen</code>.
+3. Verwenden Sie im geöffneten Fenster die Tastenkombination `Ctrl` \+ `S` (oder `Cmd` \+ `S` unter macOS), um die Seite als `.eml`-Datei zu speichern.
+
+### Header über einen anderen E-Mail-Client abrufen
+
+#### Gmail
+
+##### **Header abrufen**
+
+1. Wählen Sie die betreffende E-Mail aus.
+2. Klicken Sie auf die 3 vertikalen Punkte rechts und auf <code className="action">Original anzeigen</code>.
+3. Ein neues Fenster öffnet sich mit dem vollständigen E-Mail-Header.
+
+<img className="thumbnail" alt="Nachrichtenquelle in Gmail anzeigen" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/gmail01.png" loading="lazy" />
+
+##### **.eml-Datei abrufen**
+
+1. Wählen Sie die betreffende E-Mail aus.
+2. Klicken Sie auf die 3 vertikalen Punkte rechts und wählen Sie <code className="action">Nachricht herunterladen</code>.
+
+#### Outlook.com
+
+Um den Header abzurufen oder die `.eml`-Datei über die Webmail-Oberfläche von &#60;Outlook.com&#62; zu exportieren, lesen Sie den Abschnitt [Outlook Web App](#owa) dieser Anleitung.
+
+## Weiterführende Informationen
+
+[E-Mail FAQ](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

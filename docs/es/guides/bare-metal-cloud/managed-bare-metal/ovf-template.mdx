@@ -1,0 +1,113 @@
+---
+title: Desplegar una plantilla OVF Windows y SQL Server
+description: Cómo desplegar una plantilla OVF Windows y SQL Server
+lastUpdated: 2020-11-18
+---
+
+:::info
+Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+
+:::
+
+
+OVHcloud ofrece plantillas Linux, Windows Server y Windows SQL Server (en formato OVF) que puede desplegar directamente desde su cliente Web (HTML 5).
+
+Las MV Windows desplegadas a partir de una plantilla utilizan automáticamente las licencias SPLA que ofrece OVHcloud. El despliegue de una MV Windows provocará automáticamente una facturación adicional.
+
+**Esta guía explica dónde encontrar las plantillas y cómo desplegarlas.**
+
+:::info
+En [esta página](https://www.ovhcloud.com/es-es/managed-bare-metal/options/) puede consultar el precio del licenciamiento de las imágenes que OVHcloud pone a su disposición.
+
+:::
+
+
+## Requisitos
+
+- Tener acceso al cliente web (HTML5).
+- Haber activado las [licencias de Windows](/guides/bare-metal-cloud/managed-bare-metal/manager-ovhcloud#licencia-windows/) desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) (en la pestaña <code className="action">Licencia Widows</code> de la plataforma). 
+
+Desde un navegador de internet, vaya a la página de inicio de su Managed Bare Metal y haga clic en <code className="action">OVH Templates</code>.
+
+<img className="thumbnail" alt="Registro CNAME" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/gatewayssl.png" loading="lazy" />
+
+En la nueva pantalla de `OVH Templates`, acceda al detalle de las plantillas Linux, Windows y SQL propuestas. 
+
+Al seleccionar la plantilla, se abrirá una ventana en la que podrá consultar los enlaces necesarios para desplegarla, en función de su versión de vSphere.
+
+<img className="thumbnail" alt="Registro CNAME" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/copylink.png" loading="lazy" />
+
+### Desplegar la plantilla OVF
+
+Una vez conectado al cliente web vSphere, haga clic en <code className="action">Hosts and Clusters</code>. A continuación, haga clic derecho en el datacenter y seleccione <code className="action">Deploy OVF Template...</code>.
+
+<img className="thumbnail" alt="Desplegar la plantilla" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/01selectdeploy.png" loading="lazy" />
+
+Se abrirá un cuadro de diálogo donde podrá configurar el despliegue. En primer lugar, introduzca la URL obtenida como se explica más arriba.
+
+<img className="thumbnail" alt="Seleccionar la plantilla" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/02puturl.png" loading="lazy" />
+
+En la siguiente etapa, elija el datacenter.
+
+<img className="thumbnail" alt="Elección del datacenter" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/03selectdatacenter.png" loading="lazy" />
+
+Seleccione a continuación el cluster en el que quiera desplegar la máquina virtual.
+
+<img className="thumbnail" alt="Elección del cluster" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/04selectcluster.png" loading="lazy" />
+
+A continuación se mostrarán todos los detalles de la plantilla, incluyendo la contraseña predeterminada. Por seguridad, es importante que la cambie la primera vez que se conecte.
+
+<img className="thumbnail" alt="Detalles de la plantilla" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/05detailstemplate.png" loading="lazy" />
+
+Elija el datastore en el que quiera que se almacene la máquina virtual, así como el formato del disco.
+
+<img className="thumbnail" alt="Elección del datastore" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/06selectdatastore.png" loading="lazy" />
+
+Ahora elija la red que quiera utilizar.
+
+<img className="thumbnail" alt="Elección de la red" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/07selectnetwork.png" loading="lazy" />
+
+Se mostrará un resumen de la configuración elegida. Compruebe que sea correcta.
+
+<img className="thumbnail" alt="Resumen de la configuración" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/08resume.png" loading="lazy" />
+
+Cuando haga clic en <code className="action">Finish</code>, se creará una tarea en la que podrá consultar el progreso del despliegue.
+
+<img className="thumbnail" alt="Consultar el progreso del despliegue" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/09startdeploy.png" loading="lazy" />
+
+Una vez finalizado el despliegue, ya puede cerrar esta ventana.
+
+La máquina virtual desplegada aparecerá en el inventario.
+
+<img className="thumbnail" alt="Registro CNAME" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/10inventory.png" loading="lazy" />
+
+### Finalización de la instalación para SQL Server
+
+Inicie su máquina virtual recién desplegada y abra la consola.
+
+Abra la sesión Windows e introduzca el nombre de su instancia SQL, la contraseña y el juego de caracteres que desee en la ventana prevista a tal efecto.
+
+<img className="thumbnail" alt="Registro CNAME" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/sqlinformations.png" loading="lazy" />
+
+:::info
+Le recomendamos que establezca una contraseña que cumpla estos criterios:
+
+* Tener al menos ocho caracteres.
+* Tener al menos tres tipos de caracteres (letras mayúsculas, minúsculas, cifras, caracteres especiales).
+* la contraseña no debe ser una palabra que esté en el diccionario;
+* No incluir información personal (nombre, apellidos o fecha de nacimiento).
+
+:::
+
+
+Una vez introducidos los datos, haga clic en <code className="action">Aceptar</code>.
+
+Se abrirá una ventana que muestra el despliegue. Al finalizar el despliegue, se abrirá una última ventana en la que se le informará de la marcha.
+
+Haga clic de nuevo en <code className="action">Aceptar</code> para que la instalación finalice y reinicie la máquina virtual.
+
+Una vez reiniciada, podrá empezar a utilizar su máquina virtual.
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,124 @@
+---
+title: Assegnare un MAC virtuale a un Additional IP
+description: Scopri come aggiungere un indirizzo MAC virtuale e come associarlo a un Additional IP
+lastUpdated: 2025-05-16
+---
+
+import Api from '@components/Api';
+
+
+## Obiettivo
+
+OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al fine di poter creare VM con una configurazione <i>bridge</i> sul tuo server.
+
+**Questa guida ti mostra come creare un indirizzo MAC virtuale e come associarlo a un Additional IP.**
+
+## Prerequisiti
+
+- Disporre di [un server dedicato](https://www.ovhcloud.com/it/bare-metal/) che supporta i MAC virtuali. Per determinarlo, consulta [questa guida](/guides/bare-metal-cloud/dedicated-servers/network-support-virtual-mac/).
+- Disporre di un [indirizzo Additional IP](https://www.ovhcloud.com/it/network/additional-ip/) o di un blocco Additional IP (RIPE)
+
+{/* CP-NAV-START:network-public-ip */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public IP](https://manager.eu.ovhcloud.com/#/network/ip)
+- **Percorso di navigazione:** <code className="action">Network</code> > <code className="action">Indirizzi IP pubblici</code>
+
+---
+{/* CP-NAV-END:network-public-ip */}
+
+:::warning
+- Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/). Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+
+- I server Advance di terza generazione (dotati di processori EPYC 4004 Series) supportano 32 vMAC differenti.
+
+- Da maggio 2025, questa funzionalità è disponibile sulle gamme Scale e High Grade.
+
+:::
+
+
+:::info
+Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](/guides/manage-and-operate/api/first-steps/).
+
+:::
+
+
+## Procedura
+
+### Assegna un indirizzo MAC
+
+:::warning
+Se un blocco IP è stato spostato nella vRack, non è più assegnato a un server fisico a questo titolo, non è più possibile assegnare un MAC virtuale a un IP.
+
+:::
+
+
+#### Tramite lo Spazio Cliente OVHcloud
+
+Clicca sulla scheda <code className="action">Additional IP</code>.
+
+<img className="thumbnail" alt="manage IPs" src="/images/bare-metal-cloud/dedicated-servers/network-virtual-mac/manageIPs2022.png" loading="lazy" />
+
+Successivamente, individua il tuo indirizzo Additional IP (o il tuo blocco) nella lista, clicca sul pulsante <code className="action">...</code> per visualizzare la lista delle opzioni e seleziona Aggiungi un MAC virtuale.
+
+<img className="thumbnail" alt="IP" src="/images/bare-metal-cloud/dedicated-servers/network-virtual-mac/addvmac.png" loading="lazy" />
+
+Nella finestra di dialogo, seleziona il tipo di indirizzo dal menu a tendina, inserisci il nome della macchina virtuale e infine clicca su <code className="action">Conferma</code>.
+
+:::info
+**Tipo**: si tratta del tipo di indirizzo MAC virtuale (“VMware” per il sistema VMware ESXi e “ovh” per tutti gli altri sistemi di virtualizzazione).
+
+**Nome della macchina virtuale**: si tratta del nome che intendi assegnare all’indirizzo MAC virtuale per poi ritrovare più facilmente la coppia IP/MAC.
+
+:::
+
+
+<img className="thumbnail" alt="IP" src="/images/bare-metal-cloud/dedicated-servers/network-virtual-mac/addvmac2.png" loading="lazy" />
+
+:::info
+Ricordati di assegnare l’indirizzo MAC virtuale creato durante la configurazione della tua macchina virtuale.
+
+:::
+
+
+#### Via API OVHcloud
+
+Utilizza questa chiamata API:
+
+<Api version="v1" section="/dedicated/server" method="POST" route={"/dedicated/server/\{serviceName\}/virtualMac/\{macAddress\}/virtualAddress/\{ipAddress\}"} />
+
+
+### Elimina un indirizzo MAC
+
+:::warning
+La rimozione di un indirizzo MAC è definitiva e non sarà quindi più possibile recuperarlo in seguito.
+
+:::
+
+
+#### Tramite lo Spazio Cliente OVHcloud
+
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su <code className="action">Network</code> nel menu a sinistra dello schermo e poi su <code className="action">Indirizzi IP Pubblici</code>. Seleziona il server per visualizzare gli Additional IP o i blocchi IP associati.
+
+Infine clicca sul pulsante <code className="action">...</code> sulla destra e seleziona la voce <code className="action">Elimina il MAC virtuale</code>.
+
+#### Via API OVHcloud
+
+Utilizza questa chiamata API:
+
+<Api version="v1" section="/dedicated/server" method="DELETE" route={"/dedicated/server/\{serviceName\}/virtualMac/\{macAddress\}/virtualAddress/\{ipAddress\}"} />
+
+
+## FAQ
+
+- **Cosa succede se trasferisco un blocco con vMAC su un server Advance di terza generazione (dotato di un processore EPYC 4004 Series) che possiede già 32 vMACs?**
+
+Il blocco non verrà spostato.
+
+Esempio: se tentate di spostare un blocco di 4 IP con vMAC diversi collegati su un server che ha già 30 vMAC, il blocco non verrà spostato perché il totale di vMAC sarebbe superiore ai 32 vMAC autorizzati.
+
+## Per saperne di più
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

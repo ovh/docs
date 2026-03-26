@@ -1,0 +1,73 @@
+---
+title: Modifier la taille de votre Load Balancer via l’interface Horizon
+description: "Découvrez comment ajuster la taille de votre Load Balancer OVHcloud en utilisant l'interface Horizon"
+lastUpdated: 2024-12-10
+---
+
+## Objectif
+
+**Découvrez comment modifier la taille de votre Load Balancer via l’interface Horizon.**
+
+:::tip[Success]
+Retrouvez plus d’informations sur les différentes tailles de Load Balancer et leurs capacités sur notre [page Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/).
+
+:::
+
+
+## Prérequis
+
+- Accès à l'interface [OVHcloud Horizon](https://horizon.cloud.ovh.net/project/load_balancer)
+- Un Load Balancer [déjà créé et disponible](/guides/public-cloud/public-cloud-network-services/getting-started-01-create-lb-service/)
+- Les privilèges nécessaires pour modifier les paramètres du Load Balancer
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Pour accéder à vos services :** <code className="action">Public Cloud</code> > Sélectionnez votre projet
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## En pratique
+
+### Étape 1 - Se connecter à Horizon
+
+Accédez à [l'interface OVHcloud Horizon](https://horizon.cloud.ovh.net/project/load_balancer) et connectez-vous avec vos identifiants. Pour plus d'informations sur la façon de se connecter à Horizon, consultez le guide « [Présentation de Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/) ».
+
+### Étape 2 - Localiser le Load Balancer
+
+Une fois connecté, allez dans la section <code className="action">Load Balancer</code>. Recherchez le Load Balancer existant dans la liste.
+
+### Étape 3 - Modifier le Load Balancer
+
+A droite de votre Load Balancer, cliquez sur la flèche pointant vers le bas. Sélectionnez <code className="action">Modifier le Load Balancer</code> dans le menu déroulant.
+
+<img className="thumbnail" alt="Bouton Modifier le Load Balancer" src="/images/public-cloud/public-cloud-network-services/update-load-balancer-size/editButtonLoadBalancer.png" loading="lazy" />
+
+### Étape 4 - Redimensionner le Load Balancer
+
+Dans le menu d'options, choisissez <code className="action">Redimensionner le Load Balancer</code>.
+
+<img className="thumbnail" alt="Choisir l'option Redimensionner" src="/images/public-cloud/public-cloud-network-services/update-load-balancer-size/ChoiceOptionLoadBalancer.png" loading="lazy" />
+
+Une fenêtre s’ouvrira alors pour vous permettre de sélectionner une nouvelle taille pour votre Load Balancer.
+
+Dans la liste déroulante, sélectionnez la taille souhaitée pour votre Load Balancer :
+
+- **small**
+- **medium**
+- **large**
+- **xl**
+
+<img className="thumbnail" alt="Sélectionner la taille du Load Balancer" src="/images/public-cloud/public-cloud-network-services/update-load-balancer-size/loadbalancersize.png" loading="lazy" />
+
+Confirmez votre sélection et appliquez les modifications.
+
+Après avoir choisi la nouvelle *flavor*, cliquez sur <code className="action">Appliquer</code> ou <code className="action">Sauvegarder</code> pour mettre à jour la taille de votre Load Balancer.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

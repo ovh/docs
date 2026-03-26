@@ -1,0 +1,110 @@
+---
+title: Implementação de uma máquina virtual
+description: Saiba como implementar uma máquina virtual através da interface vSphere
+lastUpdated: 2020-11-18
+---
+
+## Objetivo
+
+A partir da interface vSphere, pode implementar máquinas virtuais de várias formas. 
+
+**Saiba como implementar uma máquina virtual a partir de um ficheiro ISO.**
+
+## Requisitos
+
+- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
+- Estar ligado à [interface vSphere](/guides/bare-metal-cloud/managed-bare-metal/vsphere-interface/).
+
+## Instruções
+
+### Implementar a máquina virtual
+
+A implementação da nova máquina virtual é realizada através do cliente vSphere, na secção `ClusterCDI`.
+
+Clique com o botão direito do rato no cluster à sua escolha e clique em <code className="action">New Virtual Machine</code>.
+
+<img className="thumbnail" alt="deploy a vm" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm01.png" loading="lazy" />
+
+Tem várias possibilidades no momento de criação de uma máquina virtual:
+
+- A criação a partir de um ISO, que estará no seu datastore.
+- Também é possível implementar uma máquina virtual a partir de um template seu ou de um [template OVHcloud](/guides/bare-metal-cloud/managed-bare-metal/ovf-template/).
+- Pode clonar uma máquina virtual já existente (tenha em conta o risco de conflito de endereços IP).
+- É possível clonar uma máquina virtual em template, para uma implementação mais rápida das suas próximas máquinas virtuais.
+- É possível clonar um template noutro template para, por exemplo, ter o template em diferentes datastores e não sofrer diminuições de desempenhos aquando de uma implementação massiva.
+- É possível converter um template em máquina virtual, o que provocará a perda do template mas que poderá ser útil se pretender alterá-lo.
+
+<img className="thumbnail" alt="escolha de criações" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm02.png" loading="lazy" />
+
+Aqui, iremos abordar como implementar uma máquina virtual a partir de um ficheiro ISO.
+
+A etapa seguinte permite-lhe definir o nome da sua máquina e escolher a sua localização. Se não escolher qualquer pasta, esta será criada na raiz do datacenter.
+
+<img className="thumbnail" alt="localização da máquina virtual" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm03.png" loading="lazy" />
+
+De seguida, pode escolher o cluster, o host, [o pool de recursos](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html), ou [a vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html) onde a quer colocar.
+
+Neste caso, a máquina virtual será implementada segundo as regras DRS configuradas, e será colocada na raiz do cluster.
+
+<img className="thumbnail" alt="escolha de recursos" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm04.png" loading="lazy" />
+
+De seguida, deverá escolher o banco de dados no qual armazenar os ficheiros de configuração e de disco.
+
+Desaconselhamos que coloque a sua máquina virtual num “storageLocal”, que corresponde ao armazenamento local do seu host. Em caso de falha do host, a sua máquina virtual não poderá reiniciar e não será acessível.
+
+<img className="thumbnail" alt="escolha de armazenamento" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm05.png" loading="lazy" />
+
+De seguida, escolha a compatibilidade entre a sua máquina virtual e o host. Salvo em caso particular, recomenda-se ter em conta o mais recente.
+
+<img className="thumbnail" alt="escolha da compatibilidade" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm06.png" loading="lazy" />
+
+Escolha um sistema operativo convidado. O “Guest OS” não instala o sistema operativo, mas o vSphere configura a máquina virtual de forma automática (número de CPU/RAM, tipo de placa de rede, instalação das ferramentas VMware).
+
+<img className="thumbnail" alt="escolha de guest OS" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm07.png" loading="lazy" />
+
+### Configurar a máquina virtual
+
+As seguintes etapas permitem-lhe configurar os recursos da sua máquina virtual.
+
+A linha `New Network` permite adicionar uma placa de rede:
+
+- O “VM Network” servirá para a rede pública e o acesso direto à Internet.
+- As VLAN permitirão utilizar a rede privada entre as suas máquinas virtuais (e com outros serviços OVHcloud através do vRack).
+
+<img className="thumbnail" alt="escolha da rede" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm08.png" loading="lazy" />
+
+Na linha `New CD/DVD Drive`, poderá escolher “Datastore ISO File”.
+
+Uma nova janela aparecerá onde poderá escolher o seu ficheiro ISO. Este poderá também ser adicionado após a criação da máquina virtual.
+
+<img className="thumbnail" alt="escolha do ficheiro ISO" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm09.png" loading="lazy" />
+
+Uma vez o ficheiro selecionado, este aparecerá tal como está abaixo. Não se esqueça de o ligar selecionando a opção <code className="action">Datastore ISO File</code>.
+
+<img className="thumbnail" alt="Ligar ISO" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm10.png" loading="lazy" />
+
+Ser-lhe-á apresentado um resumo da criação da máquina virtual. Se pretender modificar a sua configuração, clique diretamente numa das etapas da esquerda.
+
+Clique em <code className="action">FINISH</code> para terminar a implementação.
+
+<img className="thumbnail" alt="Resumo VM" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm11.png" loading="lazy" />
+
+Uma vez a máquina presente no seu inventário, poderá iniciá-la clicando com o botão direito do rato na mesma e em clicando sucessivamente em <code className="action">Power</code> > <code className="action">Power on</code>. 
+
+Finalmente, clique em <code className="action">Open Remote Console</code> para ter acesso ao “ecrã” da VM e começar a instalação do sistema operativo.
+
+<img className="thumbnail" alt="Arranque VM" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm12.png" loading="lazy" />
+
+A consola abrir-se-á num novo separador e, uma vez completada a instalação, poderá utilizar a sua máquina virtual.
+
+<img className="thumbnail" alt="Consola VM" src="/images/bare-metal-cloud/managed-bare-metal/deploy-a-vm/vm13.png" loading="lazy" />
+
+:::info
+Uma vez a sua máquina virtual instalada, recomenda-se que desligue o ISO nos parâmetros. Caso contrário, não poderá mover a máquina virtual.
+
+:::
+
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

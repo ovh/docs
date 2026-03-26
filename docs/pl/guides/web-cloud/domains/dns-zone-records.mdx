@@ -1,0 +1,294 @@
+---
+title: Wszystko o rekordach DNS
+description: Poznaj różne typy rekordów DNS dostępnych w strefie DNS OVHcloud
+lastUpdated: 2026-02-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Skrót **DNS** oznaczający **D**omain **N**ame **S**ystem to zbiór elementów (serwery DNS, strefy DNS, etc.) pozwalających na dopasowanie nazwy nazwy domeny do adresu IP.
+
+Zalecamy, abyś przed podjęciem jakichkolwiek działań zapoznał się z naszymi przewodnikami "[Wszystko o serwerach DNS](/guides/web-cloud/domains/dns-server-general-information/)" i "[Wszystko o strefie DNS](/guides/web-cloud/domains/dns-zone-general-information/)" w tej kolejności.
+
+Strefa DNS nazwy domeny to plik konfiguracyjny nazwy domeny. Zawiera on informacje techniczne nazywane *rekordami DNS*. Strefa DNS jest, w pewnym sensie, centrum koordynacji dla nazwy domeny.
+
+Celem niniejszego przewodnika jest przedstawienie różnych typów rekordów DNS dostępnych w strefie DNS zarządzanej w OVHcloud. Uzupełnia on następujące przewodniki:
+
+- [Utwórz strefę DNS OVHcloud](/guides/web-cloud/domains/dns-zone-create/)
+- [Edycja strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+- [Zarządzanie historią strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-history/)
+- [Usuń strefę DNS OVHcloud](/guides/web-cloud/domains/dns-zone-deletion/)
+
+**Poznaj różne typy rekordów DNS dostępnych w strefie DNS OVHcloud.**
+
+## W praktyce
+
+### Rekordy DNS
+
+**[Edycja strefy DNS](/guides/web-cloud/domains/dns-zone-edit/) jest operacją wymagającą odpowiedniej wiedzy**: omyłkowe działanie mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
+
+Poniższa lista przedstawia cele i specyfikacje każdego rekordu. Pozwoli Ci to lepiej monitorować operacje wykonywane na usługach DNS.
+
+#### Zapisy wskazania <a name="pointer-records"></a>
+
+Wybierz odpowiedni rekord, klikając każdą z następujących zakładek.
+
+<Tabs>
+  <Tab label="A">
+    **A**ddress <br/><br/>
+
+Powiąż nazwę domeny z adresem IPv4 `X.X.X.X` (gdzie `X` to cyfry od `0` do `255`). Na przykład adres IPv4 serwera, na którym hostowana jest Twoja strona WWW.
+  </Tab>
+  <Tab label="**AAAA**">
+    Four **A** characters because this record is encoded on four times more bits than the historical **A** field.
+    Powiąż nazwę domeny z adresem IPv6. Na przykład adres IPv6 serwera, na którym hostowana jest Twoja strona WWW.
+    
+    :::info
+    Adresy IPv6 są wdrażane stopniowo, aby zmniejszyć brak adresów IPv4 ze względu na stałe zwiększanie się zastosowań cyfrowych. 128-bitowe kodowanie adresów IPv6 pozwala na zapewnienie większej liczby adresów IP.
+    
+    Jeśli jednak Twój serwer dysponuje już adresem IPv4, zalecamy korzystanie z adresu IPv6.<br/>
+
+W rzeczywistości adresy IPv6 nie są jeszcze prawidłowo interpretowane w całej sieci internetowej, co może powodować zaburzenia wyświetlania lub dostępu.
+
+    :::
+
+  </Tab>
+  <Tab label="CNAME">
+    **C**anonical **NAME** <br/><br/>
+
+Użyj adresu IP innej nazwy domeny tworząc link o nazwie alias. Na przykład, jeśli *www.domain.tld* to *domain.tld*, oznacza to, że *www.domain.tld* będzie używał adresu IP *domain.tld*.
+    
+    :::danger
+    Rekord TXT wykorzystujący tę samą nazwę domeny lub subdomenę co rekord CNAME zakłóca jego działanie. Wpis CNAME będzie działać tylko częściowo lub w ogóle.
+
+    :::
+
+    
+    :::warning
+    Pola CNAME nie mogą być używane bezpośrednio przez nazwę domeny w jej własnej strefie DNS. Tylko nazwa domeny musi bowiem wskazywać bezpośrednio na adres IP z polem typu A (lub AAAA, jeśli jest to IPv6).
+    
+    Aby skorzystać z powyższego przykładu, nie będziesz mógł utworzyć pola CNAME dla nazwy domeny *domain.tld* w strefie DNS, którą utworzyłeś dla nazwy domeny.
+    Możesz utworzyć pole CNAME dla wszystkich subdomen (przykłady: *subdomain.domain.tld* lub *www.domain.tld*) nazwy domeny *domain.tld* w strefie DNS utworzonej dla *domain.tld*.
+    
+    Jeśli chcesz dowiedzieć się więcej na ten temat z technicznego punktu widzenia, na dole strony znajdziesz [specjalny przypadek zastosowania dla CNAME i stref DNS utworzonych dla subdomen](#cnameusecase).
+
+    :::
+
+  </Tab>
+  <Tab label="DNAME">
+    **D**elegation **NAME** <br/><br/>
+
+Umożliwia wygenerowanie "aliasu" dla wszystkich subdomen nazwy domeny. Rekord ten pozwala uniknąć tworzenia wielu rekordów CNAME. Pole CNAME przekierowuje niezależnie tylko jedną subdomenę na jeden cel.
+    
+    Przykład: rejestrację DNAME nazwy domeny *domain.tld* na *ovh.com*, wszystkie subdomeny *domain.tld* (takie jak *dname.domain.tld* i *xxx.domain.tld*) zostaną przekierowane na subdomeny z krajów niebędących domenami z kategorii *dname.ovh.com* Kapitan i *xxx.ovh.com*.
+    
+    Innymi słowy, rekord DNAME wskazuje, że *dname.domain.tld* i *xxx.domain.tld* muszą wyświetlać wyniki *dname.ovh.com* i *xxx.ovh.com*.
+    
+    :::warning
+    Natomiast *domain.tld* jako nazwa domeny nie będzie wyświetlała docelowej nazwy domeny *ovh.com*, ponieważ rekord DNAME jest ważny tylko dla subdomen zdefiniowanych w rekordzie DNAME.
+    
+    Ponadto, jeśli subdomena *xxx.ovh.com* nie wskaże nigdzie indziej, rekord DNAME nie wyświetli się również w przypadku *xxx.domain.tld*.
+
+    :::
+
+    
+    :::tip[Success]
+    Rejestracja DNAME jest zazwyczaj stosowana w przypadku zmiany nazwy firmy. Można go również uruchomić, jeśli użytkownik dysponuje kilkoma rozszerzeniami nazw domen (.pl, .net, .com, .info, itp.).
+
+    :::
+
+  </Tab>
+  <Tab label="NS">
+    **N**ame **S**erver<br/><br/>
+
+Definiuje serwery DNS przypisane do strefy DNS. Na przykład, jeśli wpisy NS Twojej strefy DNS wyświetlają serwery *dnsXX.ovh.net* i *nsXX.ovh.net*, użyj ich w zakładce <code className="action">Serwery DNS</code> w Panelu klienta OVHcloud. Więcej informacji znajdziesz w przewodniku "[Zmiana serwerów DNS nazwy domeny OVHcloud](/guides/web-cloud/domains/dns-server-edit/)".
+    
+    :::warning
+    Jeśli [edytujesz strefę DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/), nie zmieniaj, za pomocą przycisku <code className="action">Modyfikacja w trybie tekstowym</code>, wpisów DNS strefy DNS na rzecz serwerów DNS spoza OVHcloud. Ta strefa DNS działa **tylko** z serwerami DNS OVHcloud.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+#### Zapisy e-mail <a name="mail-records"></a>
+
+Wybierz odpowiedni rekord, klikając każdą z następujących zakładek.
+
+<Tabs>
+  <Tab label="MX">
+    **M**ail e**X**changer <br/><br/>
+
+Powiąż nazwę domeny z serwerem e-mail. Na przykład adres *10 mx1.mail.ovh.net* odpowiada jednemu z serwerów e-mail OVHcloud, gdy korzystasz z usługi e-mail OVHcloud. Istnieje prawdopodobieństwo, że Twój dostawca poczty e-mail dysponuje kilkoma serwerami e-mail: należy utworzyć kilka pól MX. Zapoznaj się z naszą dokumentacją "[Dodaj pole MX do konfiguracji nazwy domeny](/guides/web-cloud/domains/dns-zone-mx/)".
+    
+    :::warning
+    Zalecamy używanie w strefie DNS wyłącznie jednego lub kilku serwerów tego samego dostawcy e-mail.
+    Jeśli dysponujesz już usługami e-mail u innego dostawcy i dodajesz jednocześnie (nie zastępując) serwery e-mail nowego dostawcy, istnieje ryzyko, że obie strony będą losowo otrzymywać e-maile od jednego lub kilku dostawców.
+
+    :::
+
+  </Tab>
+  <Tab label="SPF">
+    **S**ender **P**olicy **F**ramework <br/><br/>
+
+Pozwala zapobiegać przypadkom podszywania się pod adresy e-mail używające Twojej nazwy domeny (*spoofing*). Na przykład rejestracja `v=spf1 include:mx.ovh.com ~all` wskazuje, że jedynie serwery poczty elektronicznej powiązane z Twoją ofertą mail OVHcloud mogą być uznane za zgodne z prawem przez serwer poczty przychodzącej. Możesz wprowadzić ten wpis w formie pola TXT lub w systemie automatycznej konfiguracji. 
+    
+    Aby dowiedzieć się więcej, zapoznaj się z naszą dokumentacją "[Dodaj pole SPF do konfiguracji nazwy domeny](/guides/web-cloud/domains/dns-zone-spf/)".
+  </Tab>
+  <Tab label="DKIM">
+    **D**omain**K**eys **I**dentified **M**ail <br/><br/>
+
+Pozwala sprawdzić autentyczność nazwy domeny nadawcy i zapewnić integralność wysłanego e-maila. Wpis DKIM ma postać klucza składającego się z kilku znaków. Klucz DKIM jest dostarczany przez dostawcę poczty elektronicznej (jeśli jest on proponowany przez dostawcę). Możesz go podać w postaci pola TXT.
+    
+    Zapoznaj się z naszą dokumentacją "[Konfiguruj rekord DKIM](/guides/web-cloud/domains/dns-zone-dkim/)", aby dowiedzieć się więcej.
+  </Tab>
+  <Tab label="DMARC">
+    **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br/><br/>
+
+Przyczynia się do uwierzytelniania e-maili przy użyciu SPF i/lub DKIM. Wartość ta zostanie Ci przyznana przez dostawcę poczty e-mail (jeśli taka funkcja jest oferowana przez dostawcę). Będzie ona przynajmniej powiązana z rekordem SPF lub DKIM.
+    
+    Zapoznaj się z naszą dokumentacją "[Konfiguracja rekordu DMARC w Twojej nazwie domeny](/guides/web-cloud/domains/dns-zone-dmarc/)", aby dowiedzieć się więcej.
+  </Tab>
+</Tabs>
+
+
+#### Rozszerzone wpisy <a name="extended-records"></a>
+
+Select the record you want by clicking each of the following tabs.
+
+<Tabs>
+  <Tab label="TXT">
+    **T**e**XT** <br/><br/>
+
+Pozwala dodać wybraną wartość w formacie tekstowym w strefie DNS Twojej nazwy domeny. Rekord ten jest często używany podczas weryfikacji/walidacji lub procesu bezpieczeństwa.
+    
+    :::warning
+    Wpis TXT jest ograniczony do 255 znaków. W niektórych przypadkach możesz jednak podzielić Twoją wartość na kilka rekordów. Skontaktuj się ze swoim dostawcą, jeśli żąda on od niego podania wartości przekraczającej rozmiar 255 znaków.
+    
+    Limit ten nie istnieje jednak, jeśli przechodzisz przez funkcję <code className="action">Modyfikacja w trybie tekstowym</code> opisaną w naszym przewodniku "[Edycja strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)" (dla zaawansowanych użytkowników).
+
+    :::
+
+  </Tab>
+  <Tab label="SRV">
+    **S**e**RV**ice resource <br/><br/>
+
+Umożliwia wskazanie adresu serwera zarządzającego usługą. Może na przykład wskazać adres serwera SIP lub adres serwera pozwalającego na automatyczną konfigurację programu pocztowego.
+  </Tab>
+  <Tab label="CAA">
+    **C**ertification **A**uthority **A**uthorization <br/><br/>
+
+Umożliwia wyświetlenie listy organizacji upoważnionych do wydawania certyfikatów SSL dla nazwy domeny. 
+    
+    :::warning
+    Jeśli konfigurujesz wpis CAA dla nazwy domeny, ta konfiguracja będzie dotyczyć również **wszystkich subdomen** dla tej samej nazwy domeny.
+    
+    Jeśli używasz certyfikatu SSL Let's Encrypt dla swojej nazwy domeny na hostingu www OVHcloud i używasz rekordu CAA, ten ostatni uniemożliwi odnowienie certyfikatu SSL Let's Encrypt.
+
+    :::
+
+  </Tab>
+  <Tab label="NAPTR">
+    **N**ame **A**uthority **P**oin**T**e**R** <br/><br/>
+
+Używane w telekomunikacji do kierowania zapytań wysyłanych przez mobilny terminal na serwer. Rekord SRV może być powiązany z dynamicznym generowaniem docelowych adresów URI (Uniform Resource Identifier).
+  </Tab>
+  <Tab label="LOC">
+    **LOC**ation <br/><br/>
+
+Używane, gdy podajemy informacje o położeniu geograficznym (np. szerokość geograficzna, długość geograficzna i wysokość).
+  </Tab>
+  <Tab label="SSHFP">
+    **S**ecure **SH**ell **F**inger**P**rint <br/><br/>
+
+Używane, gdy wpisujemy odcisk klucza publicznego SSH.
+  </Tab>
+  <Tab label="TLSA">
+    **T**ransport **L**ayer **S**ecurity **A**uthentification <br/><br/>
+
+Używane, gdy wpisujemy odcisk palca certyfikatu SSL/TLS. Umożliwi to zachowanie *hash* certyfikatu bezpośrednio w strefie DNS Twojej nazwy domeny poprzez rekord DNS.
+    
+    Rekord ten jest objęty protokołem **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
+    
+    Protokół DANYCH pozwala klientowi (przeglądarce internetowej, klientowi poczty elektronicznej, klientowi FTP, klientowi SSH, etc.) sprawdzić rekord TLSA. W ten sposób zyskuje pewność, że certyfikat SSL/TLS używany dla danej nazwy domeny jest certyfikatem potwierdzającym tą samą nazwę domeny.
+    
+    W razie potrzeby sprawdź więcej szczegółów na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
+  </Tab>
+  <Tab label="RP">
+    **R**esponsible **P**erson<br/><br/>
+
+Ten rekord pozwala określić adres e-mail osoby odpowiedzialnej za nazwę domeny. Ten rekord może również zostać połączony z rekordem DNS typu TXT, aby dostarczyć dodatkowych informacji.
+    
+    W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN).
+  </Tab>
+  <Tab label="SVCB">
+    **S**er**V**i**C**e **B**inding<br/><br/>
+
+Ten rekord DNS może łączyć wiele informacji, aby umożliwić szybsze i bardziej efektywne połączenie z Twoją stroną internetową. Pozwala również, na przykład, bezpośrednio poinformować przeglądarkę internetową, że strona internetowa jest kompatybilna z HTTP 2 lub HTTP 3, że powinna priorytetowo używać adresu IP (IPv4 i/lub IPv6) podanego jako parametr lub też, że powinna korzystać z konkretnego portu dostępu. Dzięki temu przeglądarka internetowa może pobrać wiele informacji w jednym zapytaniu.
+    
+    Ten rekord ma **2** tryby:
+    
+    - **Tryb Aliasu**: ten tryb aktywuje się, gdy określisz priorytet równy 0. W przeciwieństwie do rekordów DNS typu CNAME, umożliwia on przekierowanie nazwy domeny z jej własnej strefy DNS (apex) na inną nazwę domeny lub poddomenę.
+    - **Tryb Usługi**: ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
+    
+    W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+  </Tab>
+  <Tab label="HTTPS">
+    **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br/><br/>
+
+Ten rekord działa podobnie jak rekord DNS typu SVCB, ale w przeciwieństwie do niego, jest bardziej specyficzny dla protokołu HTTP. Może łączyć wiele informacji, aby umożliwić szybsze i bardziej efektywne połączenie z Twoją stroną internetową. Pozwala również, na przykład, bezpośrednio poinformować przeglądarkę internetową, że strona internetowa jest kompatybilna z HTTP 2 lub HTTP 3, że powinna priorytetowo używać adresu IP (IPv4 i/lub IPv6) podanego jako parametr lub też, że powinna korzystać z konkretnego portu dostępu. Dzięki temu przeglądarka internetowa może pobrać wiele informacji w jednym zapytaniu.
+    
+    Ten rekord ma **2** tryby:
+    
+    - **Tryb Aliasu**: ten tryb aktywuje się, gdy określisz priorytet równy 0. W przeciwieństwie do rekordów DNS typu CNAME, umożliwia on przekierowanie nazwy domeny z jej własnej strefy DNS (apex) na inną nazwę domeny lub poddomenę.
+    - **Tryb Usługi**: ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
+    
+    W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+    
+    :::tip[Success]
+    Poniżej znajdziesz przykład użycia aliasu (apex) za pomocą rekordu DNS typu HTTPS:
+    
+    Strona internetowa **domain.tld** jest hostowana za infrastrukturą CDN (np. **cdn.provider.tld**).
+    Dzięki rekordowi DNS typu HTTPS, nazwa domeny **domain.tld** może bezpośrednio poinformować kompatybilne z Internetem przeglądarki, że usługa HTTPS powinna być rozwiązana przez dostawcę CDN **cdn.provider.tld**. To wszystko bez przekierowań i bez ręcznego zarządzania adresami IP.
+    
+    Aby to osiągnąć, rekord DNS typu HTTPS musi wskazywać:
+    
+    - W priorytet: *0*.
+    - W adres docelowy: *cdn.provider.tld*.
+    - W ustawienia: **Pozostaw to pole puste**.
+    
+    W ten sposób to **cdn.provider.tld** wskaże parametry do użycia dla **domain.tld**.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+#### Specjalne zastosowania: użycie rekordów CNAME <a name="cannamesecase"></a>
+
+Niektórzy użytkownicy tworzą strefy DNS bezpośrednio dla subdomeny nazwy domeny (na przykład *subdomain-with-its-own-DNS-zone.domain.tld*). Reguła określona powyżej w zakładce "CNAME" w sekcji "[Rekordy wskazywania](#pointer-records)" stosuje się również w tym przypadku.
+
+Strefa DNS jest utworzona dla subdomeny (w naszym przykładzie *subdomain-with-its-own-DNS-zone.domain.tld*), ta ostatnia jest wówczas traktowana jako pełna nazwa domeny w jej strefie DNS.
+
+W tym przypadku nie będziesz mógł utworzyć pola CNAME dla *subdomain-with-its-own-DNS-zone.domain.tld* w strefie DNS utworzonej dla tej nazwy domeny. Będziesz mógł jednak tworzyć pola CNAME, takie jak *subdomain.subdomain-with-its-own-DNS-zone.domain.tld* lub *xxx.subdomain-with-its-own-DNS-zone.domain.tld*.
+
+## Sprawdź również
+
+[Wszystko o serwerach DNS](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Wszystko o strefie DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+
+[Dodawanie rekordu SPF podczas konfiguracji nazwy domeny](/guides/web-cloud/domains/dns-zone-spf/)
+
+[Zabezpieczenie nazwy domeny przed Cache Poisoning za pomocą DNSSEC](/guides/web-cloud/domains/dns-dnssec/)
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

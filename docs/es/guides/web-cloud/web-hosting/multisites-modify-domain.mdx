@@ -1,0 +1,159 @@
+---
+title: Web hosting - Modificar un dominio ya asociado a un alojamiento
+description: Descubra cómo modificar la configuración de asociación de un dominio o subdominio ya declarado en su plan de hosting
+lastUpdated: 2025-11-05
+---
+
+## Objetivo
+
+Al utilizar el alojamiento web o actualizar el sitio web, es posible que deba modificar la configuración del dominio o subdominio que ya esté asociado al alojamiento web.
+
+:::info
+Esta guía solo explica cómo modificar un dominio o subdominio ya declarado en un alojamiento web de OVHcloud. Si quiere asociar un nuevo dominio o subdominio a su alojamiento web, consulte nuestra guía "[Alojar varios sitios web en un mismo hosting](/guides/web-cloud/web-hosting/multisites-configure-multisite/)".
+
+:::
+
+
+**Descubra cómo modificar la configuración de asociación de un dominio o subdominio ya declarado en un plan de hosting.**
+
+## Requisitos
+
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
+- Tener uno o varios [dominios](https://www.ovhcloud.com/es-es/domains/).
+- Disponer de los derechos necesarios sobre todos los servicios afectados. Para más información, consulte nuestra guía "[Gestionar los contactos de los servicios](/guides/account-and-service-management/account-information/managing-contacts/)".
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Alojamientos</code> > Seleccione su alojamiento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedimiento
+
+:::warning
+La modificación de la configuración de asociación de un dominio o subdominio puede, en caso de mala manipulación, provocar la interrupción del acceso a sus servicios (su sitio web). Si no está seguro de los cambios que debe realizar, puede ponerse en contacto con un proveedor especializado
+
+:::
+
+
+Para cambiar la configuración de asociación de un dominio o subdominio que ya esté declarado en su plan de hosting, lleve a cabo los siguientes pasos:
+
+1. Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+2. Haga clic en la pestaña <code className="action">Web Cloud</code>.
+3. En la columna izquierda, haga clic en el menú <code className="action">Alojamientos</code>.
+4. Seleccione el alojamiento web correspondiente.
+5. En la nueva página, haga clic en la pestaña <code className="action">Multisitio</code>.
+6. En la tabla que aparece debajo de la pestaña y a la derecha del dominio o subdominio correspondiente, haga clic en el botón <code className="action">...</code> y, seguidamente, en <code className="action">Modificar el dominio</code>.
+
+<img className="thumbnail" alt="Modify domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png" loading="lazy" />
+
+Se abrirá la siguiente ventana:
+
+<img className="thumbnail" alt="Modify domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png" loading="lazy" />
+
+A continuación, encontrará una descripción de cada uno de los parámetros disponibles en la ventana de arriba. Una vez que haya leído las descripciones y haya realizado los cambios, haga clic en el botón <code className="action">Siguiente</code> situado en la parte inferior derecha de la ventana y continúe con el [etapa 2](#step2).
+
+### Etapa 1 - Descripción de los parámetros editables <a name="step1"></a>
+
+:::info
+El formulario <code className="action">Dominio</code> no se puede modificar porque se trata de un cambio de la configuración del nombre de dominio asociado al alojamiento web. Si quiere asociar un nuevo dominio o subdominio a su alojamiento web, consulte nuestra guía "[Alojar varios sitios web en un mismo hosting](/guides/web-cloud/web-hosting/multisites-configure-multisite/)".
+
+:::
+
+
+#### Editar la "carpeta raíz"
+
+:::warning
+**Caso especial: configuración con Git**
+
+Para modificar la <code className="action">carpeta raíz</code> declarada para el dominio y si existe una configuración con Git para el mismo dominio, deberá eliminar primero dicha configuración.
+
+Si existe una configuración con Git, aparecerá un mensaje justo debajo del formulario:
+
+<img className="thumbnail" alt="Modify domain associed with git" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png" loading="lazy" />
+
+Para eliminar la configuración Git de un dominio o subdominio asociado a su alojamiento, consulte nuestra guía "[Configurar y utilizar Git con un alojamiento web de OVHcloud](/guides/web-cloud/web-hosting/git-integration-webhosting/)".
+
+:::
+
+
+El formulario <code className="action">Carpeta raíz</code> indica el nombre de la carpeta que contiene los elementos que se muestran con el nombre de dominio. Por ejemplo, puede ser una carpeta que contenga los archivos del sitio web.
+
+Durante el uso de sus servicios, es posible que deba cambiar el <code className="action">Carpeta raíz</code> declarado para su dominio. Esto puede ocurrir cuando, por ejemplo:
+
+- Ha desarrollado un nuevo sitio web en una nueva carpeta que se encuentra en el espacio de almacenamiento FTP de su alojamiento web.
+- Quiere redirigir su dominio hacia una carpeta vacía para después colocar un nuevo sitio web.
+- Etc.
+
+Este formulario le pedirá que sustituya el nombre de la carpeta cumplimentada por el nombre de la nueva carpeta deseada.
+
+:::tip[Success]
+Si introduce un nombre de carpeta que no existe en el espacio de almacenamiento FTP de su alojamiento web, este será automáticamente creado por nuestros robots en su espacio de almacenamiento FTP.
+
+:::
+
+
+#### Otras opciones disponibles
+
+##### La opción "Activar la CDN"
+
+Para poder utilizar esta opción, es necesario haber contratado previamente un plan CDN de OVHcloud o disponer de un plan de hosting Performance.
+
+Marque o desmarque esta casilla para activar o desactivar la opción CDN para su dominio o subdominio.
+
+Para más información sobre las opciones/ofertas CDN, consulte nuestra documentación dedicada "[Acelerar un sitio web utilizando la CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/)".
+
+##### La opción "IP del país"
+
+Esta opción se utiliza principalmente para los sitios web cuyo público objetivo se encuentra en el extranjero. Esto permite mejorar el posicionamiento SEO del sitio web en el país elegido.
+
+Para más información sobre esta opción, consulte nuestra documentación dedicada "[Geolocalizar su sitio web en un país específico](/guides/web-cloud/web-hosting/multisites-geolocation/)".
+
+##### La opción "Activar el firewall"
+
+Esta opción permite filtrar las peticiones entrantes para proteger su alojamiento web de los ataques más habituales.
+
+Para más información sobre esta opción, consulte nuestra documentación dedicada "[Activación del firewall de aplicación](/guides/web-cloud/web-hosting/multisites-activating-application-firewall/)".
+
+##### La opción "Logs separados"
+
+Marque o desmarque esta opción solo si quiere separar los logs de su dominio de los otros nombres de dominio declarados en paralelo en su alojamiento web.
+
+Para más información sobre esta opción, consulte nuestra [página de estadísticas detalladas](https://www.ovhcloud.com/es-es/web-hosting/uc-website-traffic-analysis/).
+
+Una vez realizados los cambios, haga clic en el botón <code className="action">Siguiente</code> situado en la parte inferior derecha de la ventana para pasar al [etapa 2](#step2).
+
+### Etapa 2 - Resumen de cambios <a name="step2"></a>
+
+Una vez que haya hecho clic en el botón <code className="action">Siguiente</code>, verá un resumen de los parámetros que va a aplicar a su dominio:
+
+<img className="thumbnail" alt="Modify domain resume" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png" loading="lazy" />
+
+Si todos los parámetros están configurados como desee, haga clic en el botón <code className="action">Aceptar</code>.
+
+Según las opciones seleccionadas, los cambios pueden tardar desde unos minutos hasta unas horas en aplicarse.
+
+Si las opciones **CDN**, **IP del país** y **logs separados** no se aplican después de 24 horas, consulte las guías (y páginas) correspondientes para todas las opciones descritas en el [etapa 1](#step1), con el fin de comprobar que se han cumplido, cumplido y cumplido todos los requisitos.
+
+## Más información
+
+[Alojar varios sitios web en un mismo hosting](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+
+[Gestionar un certificado SSL en un alojamiento web](/guides/web-cloud/web-hosting/ssl-on-webhosting/).
+
+[Acelerar un sitio web utilizando la CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/).
+
+[Geolocalizar su sitio web en un país específico](/guides/web-cloud/web-hosting/multisites-geolocation/).
+
+[Activación del firewall de aplicación](/guides/web-cloud/web-hosting/multisites-activating-application-firewall/).
+ 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+ 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+ 
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

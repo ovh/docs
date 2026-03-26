@@ -1,0 +1,90 @@
+---
+title: Dashboards - Configure your Dashboards instance to accept incoming connections
+description: Find out how to configure your Dashboards instance to accept incoming connections
+lastUpdated: 2024-12-11
+---
+
+## Objective
+
+Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
+
+**This guide explains how to configure your Dashboards instance to accept incoming connections.**
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
+- A Dashboards service running on your OVHcloud Public Cloud Databases ([this guide](/guides/public-cloud/public-cloud-databases/databases-01-order-control-panel/) can help you to meet this requirement)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Configure your Dashboards instance to accept incoming connections
+
+Before making a connection, we need to verify that our Dashboards instance is correctly configured.
+Click on <code className="action">Data Analysis</code> in the left-hand navigation bar and select your Dashboards instance.
+
+#### Step 1: Verify your user roles and password
+
+Select the <code className="action">General information</code> tab and <code className="action">Reset the password</code> of **avnadmin** user, which comes with the **Admin** role, in the `Login information` section.
+
+:::info
+Other users can be created in your Dashboards instance web UI, from the `Users` tab of the <code className="action">Server Admin</code> panel.
+
+:::
+
+
+#### Step 2: Authorise incoming connections to your Dashboards instance
+
+:::warning
+For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your service.
+
+:::
+
+
+In this step, select the <code className="action">Authorised IPs</code> tab. IP addresses must be authorised here before they can connect to your serbice.
+
+Clicking on <code className="action">Add an IP address or IP address block (CIDR)</code> opens a new window in which you can add single IP addresses or blocks to allow access to the service.
+
+<img className="thumbnail" alt="Add an IP" src="/images/public-cloud/public-cloud-databases/grafana-02-prepare-for-incoming-connections/ip_authorize.png" loading="lazy" />
+
+You can edit and retract database access via the <code className="action">...</code> button in the IP table.
+
+:::info
+If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
+
+:::
+
+
+### Connect to your Dashboards Instance
+
+In your Dashboards instance, collect the URI in the `Login informations` section of the <code className="action">General information</code> tab.
+
+<img className="thumbnail" alt="Login information tab" src="/images/public-cloud/public-cloud-databases/grafana-02-prepare-for-incoming-connections/grafana_02_prepare_for_incoming_connections-20220530065929522.png" loading="lazy" />
+
+Then connect to your Dashboards instance:
+
+![Welcome to Grafana](/images/public-cloud/public-cloud-databases/grafana-02-prepare-for-incoming-connections/grafana_02_prepare_for_incoming_connections-20220530071539383.png)
+
+Congratulations! You are now connected to your Dashboards instance.
+
+![Grafana first connection](/images/public-cloud/public-cloud-databases/grafana-02-prepare-for-incoming-connections/grafana_02_prepare_for_incoming_connections-20220530071725524.png)
+
+Learn more about Grafana® in the following tutorial: [Grafana fundamentals](https://grafana.com/tutorials/grafana-fundamentals/?utm_source=grafana_gettingstarted)
+
+## Go further
+
+Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

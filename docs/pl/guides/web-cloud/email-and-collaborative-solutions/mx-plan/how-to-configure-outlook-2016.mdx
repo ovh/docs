@@ -1,0 +1,364 @@
+---
+title: MX Plan / Zimbra Starter - Konfigurowanie adresu e-mail w klasycznym Outlooku dla Windows
+description: Dowiedz się, jak skonfigurować adres e-mail MX Plan w klasycznym Outlooku dla Windows
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji.
+
+**Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programie Outlook lub później na urządzeniu z systemem Windows.**
+
+## Wymagania początkowe
+
+- Posiadanie wcześniej skonfigurowanego rozwiązania e-mail OVHcloud, takiego jak:
+    - **MX Plan** oferowany wraz z naszymi [ofertami hostingowymi](https://www.ovhcloud.com/pl/web-hosting/) lub włączonym w [bezpłatnym hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/).
+    - [Zimbra](https://www.ovhcloud.com/pl/emails/zimbra-emails/) Starter (tylko).
+- Posiadanie aplikacji [klasycznego Outlooka](https://support.microsoft.com/pl-pl/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) na Windows.
+- Dane do logowania do konta e-mail, które chcesz skonfigurować.
+
+{/* CP-NAV-START:web-mx-plan */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Wybierz usługę MX Plan
+
+---
+{/* CP-NAV-END:web-mx-plan */}
+
+<details>
+
+<summary>Informacje dotyczące zarządzania i konfiguracji usług OVHcloud</summary>
+
+
+OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+
+Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się [z wyspecjalizowanym usługodawcą](https://partner.ovhcloud.com/pl/directory/) lub skontaktuj się z dostawcą usługi. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)".
+
+</details>
+
+
+:::info
+Używasz programu Outlook na urządzeniu Mac ? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook na urządzeniu Mac](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016-mac/).
+
+:::
+
+
+## W praktyce
+
+:::warning
+Ta dokumentacja dotyczy wyłącznie **klasycznego Outlooka** dostępnego w pakiecie Microsoft 365. Jeśli korzystasz z nowego Outlooka, zapoznaj się z naszym przewodnikiem "[MX Plan / Zimbra Starter - Dodawanie konta e-mail w nowym Outlooku dla Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/)".
+
+Aby zainstalować klasyczny Outlook na swoim komputerze z Windows, pobierz go ze strony Microsofta "[Instalowanie lub ponowne instalowanie klasycznego Outlooka na komputerze z Windows](https://support.microsoft.com/pl-pl/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" i zainstaluj.
+
+Po zakończeniu instalacji, aby odróżnić obie wersje, gdy są zainstalowane, wpisz "Outlook" w pasku wyszukiwania Windows. Możesz wtedy zauważyć różnicę, jak poniżej.
+
+<img className="thumbnail" alt="outlook Windows" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/outlook-windows-identify01.png" loading="lazy" />
+
+:::
+
+
+### Dodaj konto <a name="add-account"></a>
+
+:::info
+Nie wiesz, czy chcesz skonfigurować Twoje konto e-mail w trybie **POP** czy **IMAP**?
+
+Zanim przejdziesz dalej, zapoznaj się z sekcją "[POP lub IMAP, jaka jest różnica?](#popimap)" w tym przewodniku.
+
+W poniższych ustawieniach zobaczysz możliwość podania 2 różnych nazw hostów dla tego samego serwera (przychodzącego lub wychodzącego). Wartości te odnoszą się dokładnie do tego samego serwera. Zostały wprowadzone w celu ułatwienia wprowadzania danych i uniknięcia pomyłek między protokołami POP, IMAP i SMTP, które używają różnych portów.
+
+:::
+
+
+- **Podczas pierwszego uruchomienia aplikacji**: wyświetli się asystent konfiguracji i poprosi o wpisanie adresu e-mail.
+
+- **Jeżeli inne konto zostało wcześniej skonfigurowane**: kliknij <code className="action">Plik</code> na pasku menu na górze Twojego ekranu, a następnie kliknij <code className="action">Dodaj konto</code>.
+
+<img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-mxplan01.png" loading="lazy" />
+
+**Na Windows 11 klasyczny interfejs Outlook może się różnić podczas dodawania konta.**
+
+W zależności od historii użycia Outlooka na danym komputerze, konkretna konfiguracja może spowodować wyświetlenie innego interfejsu. W niektórych przypadkach nowoczesny interfejs (**interfejs 1**) może zostać wyłączony na rzecz klasycznego interfejsu (**interfejs 2**).
+
+Dlatego zachęcamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym interfejsu wyświetlonego na Twoim ekranie.
+
+#### Konfiguracja z interfejsem 1 <a name="add-account-int1"></a>
+
+Aby skonfigurować swój adres e-mail, wykonaj poniższe kroki, klikając na odpowiednie karty.
+
+:::warning
+Należy dokładnie wpisać wartość odpowiadającą Twojej lokalizacji (**EUROPA** lub **AMERYKA/STOPIEŃ PACYFIKU**).
+
+:::
+
+
+<Tabs>
+  <Tab label="Krok 1">
+    Wpisz swój adres e-mail, a następnie kliknij <code className="action">Zaawansowane opcje</code>.
+    
+    Zaznacz pole <code className="action">Skonfiguruj moje konto ręcznie</code> i kliknij <code className="action">Połącz</code>.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-legacy-mxplan02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Spośród dostępnych typów kont wybierz IMAP lub POP.
+    
+    Zalecamy użycie protokołu IMAP.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-legacy-mxplan03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 3">
+    Wpisz hasło do swojego adresu e-mail, a następnie kliknij <code className="action">Zaloguj się</code>.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-legacy-mxplan04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 4">
+    Jeśli Outlook nie potrafi automatycznie skonfigurować konta, zostanie wyświetlone poniższe okno.
+    
+    Kliknij <code className="action">Zmień ustawienia konta</code>.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-legacy-mxplan05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 5">
+    W sekcji **Poczta przychodząca**, wprowadź:
+    
+    - Serwer:
+        - **EUROPA**: imap.mail.ovh.net **lub** ssl0.ovh.net
+        - **AMERYKA/STOPIEŃ PACYFIKU**: imap.mail.ovh.ca
+    - Port: **993**
+    - Metoda szyfrowania: **SSL/TLS**
+    
+    W sekcji **Poczta wychodząca**, wprowadź:
+    
+    - Serwer:
+        - **EUROPA**: smtp.mail.ovh.net **lub** ssl0.ovh.net
+        - **AMERYKA/STOPIEŃ PACYFIKU**: smtp.mail.ovh.ca
+    - Port: **465**
+    - Metoda szyfrowania: **SSL/TLS**
+    
+    Kliknij <code className="action">Dalej</code>, aby potwierdzić.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-legacy-mxplan06.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Konfiguracja z interfejsem 2 <a name="add-account-int2"></a>
+
+Aby skonfigurować swój adres e-mail, wykonaj poniższe kroki, klikając na odpowiednie karty.
+
+:::warning
+Należy dokładnie wpisać wartość odpowiadającą Twojej lokalizacji (**EUROPE** lub **AMERIQUE / ASIE-PACIFIQUE**).
+
+:::
+
+
+<Tabs>
+  <Tab label="Krok 1">
+    - Z okna **Dodaj konto**, wybierz <code className="action">Ręczna konfiguracja lub dodatkowe typy serwerów</code>.
+    - Kliknij <code className="action">Dalej</code>, aby kontynuować.
+    - Wybierz <code className="action">POP lub IMAP</code>.
+    - Kliknij <code className="action">Dalej</code>, aby kontynuować.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-mxplan02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Wprowadź dane logowania do swojego konta **(1)**:
+    
+    Dane użytkownika <br/>
+
+**Twoje imię**: ustaw nazwę wyświetlaną.<br/>
+
+**Adres poczty**: wpisz pełny adres e-mail.<br/>
+
+Dane serwera <br/>
+    - **Typ konta**: wybierz IMAP<br/>
+    - **Serwer poczty przychodzącej**: <br/>
+         - **EUROPE**: imap.mail.ovh.net **lub** ssl0.ovh.net <br/>
+         - **AMERIQUE/ASIE-PACIFIQUE**: imap.mail.ovh.ca <br/>
+    - **Serwer poczty wychodzącej (SMTP)**: <br/>
+         - **EUROPE**: smtp.mail.ovh.net **lub** ssl0.ovh.net <br/>
+         - **AMERIQUE/ASIE-PACIFIQUE**: smtp.mail.ovh.ca <br/>
+
+Dane logowania <br/>
+
+**Nazwa użytkownika**: wpisz pełny adres e-mail.<br/>
+
+**Hasło**: wpisz hasło przypisane do adresu e-mail.<br/>
+
+Kliknij <code className="action">Dodatkowe ustawienia...</code> **(2)** i przejdź do następnego kroku
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-mxplan03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 3">
+    Z zakładki `Serwer wychodzący`, zaznacz <code className="action">Mój serwer wychodzący (SMTP) wymaga uwierzytelnienia</code> i pozostaw zaznaczone <code className="action">Użyj tych samych ustawień co mój serwer poczty przychodzącej</code>.
+    
+    Z zakładki `Zaawansowane opcje`:
+    
+    - **Serwer przychodzący (IMAP)**: 993
+    - **Użyj poniższego typu szyfrowania połączenia**: SSL/TLS
+    - **Serwer poczty wychodzącej (SMTP)**: 465
+    - **Użyj poniższego typu szyfrowania połączenia**: SSL/TLS
+    
+    Kliknij <code className="action">OK</code>, aby potwierdzić dane. Kliknij <code className="action">Dalej</code>, aby rozpocząć konfigurację konta.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-mxplan04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 4">
+    Kliknij <code className="action">Dalej</code>, aby rozpocząć konfigurację konta. Jeśli ustawienia zostaną potwierdzone, otrzymasz poniższe okno.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-mxplan05.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Używanie adresu e-mail
+
+Po skonfigurowaniu adresu e-mail, możesz go używać! Możesz teraz wysyłać i odbierać wiadomości.
+
+OVHcloud oferuje również aplikację internetową, umożliwiającą dostęp do adresu e-mail z przeglądarki internetowej. Webmail OVHcloud jest dostępny [tutaj](https://www.ovhcloud.com/pl/mail/). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku jakichkolwiek pytań dotyczących jej użycia, nie wahaj się zapoznać z naszym przewodnikiem [Korzystanie z konta Exchange za pomocą interfejsu OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/).
+
+### Pobierz kopię zapasową Twojego konta e-mail
+
+Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport z systemu Windows**" w przewodniku "[Ręczna migracja Twojego konta e-mail](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration#eksport-z-systemu-windows/)".
+
+### Zmień istniejące parametry
+
+**Na Windows 11 klasyczny interfejs Outlook może się różnić podczas modyfikowania konta.**
+
+W zależności od historii użycia Outlooka na danym komputerze, konkretna konfiguracja może spowodować wyświetlenie innego interfejsu. W niektórych przypadkach nowoczesny interfejs (**interfejs 1**) może zostać wyłączony na rzecz klasycznego interfejsu (**interfejs 2**).
+
+Dlatego zachęcamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym interfejsu wyświetlonego na Twoim ekranie.
+
+<Tabs>
+  <Tab label="Interfejs 1">
+    Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić:
+    
+    - Kliknij <code className="action">Plik</code> w górnym pasku menu, a następnie wybierz konto do zmiany w rozwijanej liście **(1)**.
+    - Kliknij `Ustawienia konta`&#123;.action &#125; **(2)** poniżej.
+    - Wybierz <code className="action">Ustawienia serwera</code> **(3)**, aby otworzyć okno konfiguracji.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-legacy-mxplan07.png" loading="lazy" />
+
+Okno jest podzielone na dwie części, **Poczta przychodząca** i **Poczta wychodząca**. Kliknij część, którą chcesz zmienić.
+    
+    :::info
+    W naszym przykładzie użyto nazwy serwera "pro**?**.mail.ovh.net". Musisz zastąpić znak "?" cyfrą odpowiadającą serwerowi Twojej usługi E-mail Pro.
+    
+    Znajdź tę cyfrę w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji <code className="action">Web Cloud</code>, a następnie <code className="action">E-mail Pro</code>. Nazwa serwera jest widoczna w ramce **Logowanie** zakładki <code className="action">Informacje ogólne</code>.
+
+    :::
+
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-legacy-mxplan08.png" loading="lazy" />
+  </Tab>
+  <Tab label="Interfejs 2">
+    Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić:
+    
+    - Kliknij <code className="action">Plik</code> w górnym pasku menu, a następnie wybierz konto do zmiany w rozwijanej liście **(1)**.
+    - Kliknij <code className="action">Ustawienia konta</code> **(2)** poniżej.
+    - Kliknij <code className="action">Ustawienia konta...</code> **(3)**, aby przejść do okna konfiguracji.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-mxplan06.png" loading="lazy" />
+    
+    - Wyświetlane są ustawienia konta: wybierz odpowiednie konto e-mail, a następnie kliknij <code className="action">Zmień...</code>.
+    
+    <img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/config-outlook-mxplan07.png" loading="lazy" />
+
+Aby skonfigurować swoje konto, wykonaj instrukcje od **kroku 2** w sekcji "[Dodaj konto - Konfiguracja z interfejsem 2](#add-account-int2)" tego przewodnika.
+  </Tab>
+</Tabs>
+
+
+### Ogólne ustawienia wysyłania i odbierania <a name="settings-account"></a>
+
+#### Ustawienia odbioru IMAP i POP <a name="imap-pop"></a>
+
+Dla odbioru wiadomości e-mail, przy wyborze typu konta, zalecamy użycie **IMAP**. Możesz jednak wybrać **POP**.
+
+:::warning
+Należy dokładnie zanotować wartość odpowiadającą Twojej lokalizacji (**EUROPE** lub **AMERIQUE / ASIE-PACIFIQUE**).
+
+:::
+
+
+Wybierz odpowiednią kartę dla swojej konfiguracji:
+
+<Tabs>
+  <Tab label="Konfiguracja IMAP">
+    - **Nazwa użytkownika**: wpisz pełny adres e-mail.
+    - **Hasło**: wpisz hasło do adresu e-mail.
+    - **Serwer EUROPE (przychodzący)**: imap.mail.ovh.net **lub** ssl0.ovh.net.
+    - **Serwer AMERIQUE/ASIE-PACIFIQUE (przychodzący)**: imap.mail.ovh.ca.
+    - **Port**: 993.
+    - **Typ zabezpieczeń**: SSL/TLS.
+  </Tab>
+  <Tab label="Konfiguracja POP">
+    - **Nazwa użytkownika**: wpisz pełny adres e-mail.
+    - **Hasło**: wpisz hasło do adresu e-mail.
+    - **Serwer EUROPE (przychodzący)**: pop.mail.ovh.net **lub** ssl0.ovh.net.
+    - **Serwer AMERIQUE/ASIE-PACIFIQUE (przychodzący)**: pop.mail.ovh.ca.
+    - **Port**: 995.
+    - **Typ zabezpieczeń**: SSL/TLS.
+  </Tab>
+</Tabs>
+
+
+#### Ustawienia wysyłania SMTP <a name="smtp"></a>
+
+Dla wysyłania wiadomości e-mail, poniżej znajdziesz ustawienia **SMTP**, które należy użyć:
+
+**Konfiguracja SMTP**
+
+- **Nazwa użytkownika**: wpisz pełny adres e-mail.
+- **Hasło**: wpisz hasło do adresu e-mail.
+- **Serwer EUROPE (wychodzący)**: smtp.mail.ovh.net **lub** ssl0.ovh.net.
+- **Serwer AMERIQUE/ASIE-PACIFIQUE (wychodzący)**: smtp.mail.ovh.ca.
+- **Port**: 465.
+- **Typ zabezpieczeń**: SSL/TLS.
+
+### POP lub IMAP, jaka jest różnica? <a name="popimap"></a>
+
+Podczas ręcznej konfiguracji adresu e-mail klient poczty pyta, czy chcesz używać protokołu **POP** (**P**ost **O**ffice **P**rotocol) czy **IMAP**(**I**nternet **M**essage **A**ccess **P**rotocol). W celu lepszego zrozumienia, rola protokołów POP i IMAP musi być określona w konfiguracji konta e-mail.
+
+Podczas konfigurowania klienta poczty, wprowadź dane **serwera poczty przychodzącej**, aby odbierać e-maile, oraz nazwę **serwera poczty wychodzącej**, aby wysyłać e-maile. Do wysyłania e-maili nie ma wyboru, jest używany protokół **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol). W przypadku odbioru wiadomości masz wybór między **POP** a **IMAP**.
+
+<img className="thumbnail" alt="mxplan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/mxplan-popimap-01.png" loading="lazy" />
+
+Aby zrozumieć różnicę między używaniem protokołu POP i IMAP, wyjaśnimy szczegółowo elementy składające się na przetwarzanie e-maili otrzymywanych:
+
+1. **Twoje urządzenie**: komputer, smartfon lub tablet. To Twoje narzędzie do konsultacji.
+2. **Program pocztowy**: aplikacja do zarządzania e-mailami. Wybór tego wariantu zadecyduje o stopniu ergonomii i funkcjonalności, jakich potrzebujesz, aby sprawdzać wiadomości e-mail.
+3. **Protokół odbioru**: wybór określający sposób odbierania wiadomości e-mail na Twoim urządzeniu. Jego wybór ma wpływ na inne urządzenia, które korzystają z tego samego konta e-mail.
+    - **IMAP**: Twój klient poczty odpytuje serwer e-mail i pobiera wiadomości e-mail na Twoje urządzenie. Gdy wyświetlasz nieprzeczytaną wiadomość e-mail, serwer domyślnie oznacza ją jako "przeczytaną". Inne urządzenia skonfigurowane w protokole IMAP będą mogły zobaczyć ten stan i wyświetlić ten e-mail do momentu usunięcia go z jednego z urządzeń.
+    - **POP**: Twój klient poczty odpytuje serwer e-mail i pobiera wiadomości e-mail na Twoje urządzenie. Domyślnie wiadomość zostaje usunięta z serwera po zapisaniu jej na urządzeniu. Z tego powodu inne urządzenia połączone z tym adresem e-mail nie będą mogły wyświetlać tej wiadomości e-mail.
+
+<img className="thumbnail" alt="mxplan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/mxplan-popimap-02.png" loading="lazy" />
+
+:::info
+Ten opis jest syntezą, reprezentuje standardowe działanie obu protokołów. Możesz również ustawić POP, aby wiadomości e-mail nie były usuwane po odczytaniu wiadomości. Naszym celem jest opisanie sposobu działania tych dwóch protokołów.
+
+:::
+
+
+## Sprawdź również <a name="go-further"></a>
+
+:::info
+Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem macOS, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/dodawanie-konta-e-mail-do-programu-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
+
+:::
+
+
+[Konfiguracja konta E-mail Pro w programie Outlook na urządzeniu z systemem Windows](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/)
+
+[Konfiguracja konta Exchange w programie Outlook na urządzeniu z systemem Windows](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

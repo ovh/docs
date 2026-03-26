@@ -1,0 +1,392 @@
+---
+title: "Gestion des contacts d'un nom de domaine"
+description: "Utilisez l'API publique OVHcloud pour gérer les contacts de vos noms de domaine"
+lastUpdated: 2026-02-10
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+import Api from '@components/Api';
+
+
+{/* Rappel à mettre au début de chaque page */}
+
+:::info
+Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/guides/web-cloud/domains/api-domain-intro/).
+
+:::
+
+
+{/* Begin TOC */}
+
+## Sommaire
+
+- [Introduction](/guides/web-cloud/domains/api-domain-intro/)
+- [Commander un nom de domaine](/guides/web-cloud/domains/api-domain-order/)
+- [Gestion des tâches](/guides/web-cloud/domains/api-domain-tasks/)
+- **Gestion des contacts d'un nom de domaine**
+- [Gestion des règles d'éligibilité](/guides/web-cloud/domains/api-domain-rules/)
+- [Configurer l'affichage de ses données dans le Whois](/guides/web-cloud/domains/api-domain-whois/)
+- [Configurer les DNS de son nom de domaine](/guides/web-cloud/domains/api-domain-dns/)
+- [Transférer un nom de domaine](/guides/web-cloud/domains/api-domain-transfer/)
+{/* End TOC */}
+
+## Types de contact
+
+La gestion des contacts est un point central de la gestion des noms de domaine.
+Il est important de comprendre les différences entre les _nichandles_ (Nic ou comptes OVHcloud) et les _contacts_ registre/Whois (stockés chez le registre, publiés dans le Whois).
+
+### Contact registre/Whois
+
+Pour la majorité des extensions, il y a 3 contacts différents configurables chez le registre :
+
+- **Administrateur** : contact qui gère le nom de domaine dans sa globalité (gestion du contact titulaire, contact technique). Il est le principal interlocuteur du registrar.
+- **Technique** : contact qui gère la partie technique du nom de domaine (gestion de la zone notamment).
+- **Titulaire** : personne physique ou morale titulaire du nom de domaine. Ce contact est contraint par des [règles d'éligibilité](/guides/web-cloud/domains/api-domain-rules/). Il est celui qui est légalement responsable du nom de domaine.
+
+Par exemple, John contacte une agence web afin de créer son site web vitrine pour sa petite entreprise. Dans ce cas-là, l'agence web organisera les contacts de cette manière :
+
+- Administrateur : l'agence web
+- Technique : l'agence web
+- Titulaire : John
+
+Il est très fréquent que le contact technique soit le même que le contact administrateur.
+Concernant le titulaire, il est nécessaire que ce soit John. En cas de litige avec l'agence web, seul le fait d'être titulaire du nom de domaine aura une portée juridique et lui permettra la récupération du nom de domaine.
+
+### Nichandle OVHcloud
+
+Le nichandle OVHcloud représente le compte OVHcloud grâce auquel il est possible de se connecter au site OVHcloud et à l'API.
+Sur un service OVHcloud (nom de domaine, DNS, serveur, autre...), il est possible d'affecter un nichandle en tant que :
+
+- **Nic admin** : administrateur du nom de domaine, il peut exécuter toutes les actions possibles sur un service
+- **Nic tech** : désigné par le Nic admin pour un service, il peut modifier certaines données techniques du service
+- **Nic facturation** : responsable du paiement (facturation) du service.
+
+Par défaut, un Nic admin est également Nic tech et Nic facturation d'un service.
+
+### Relation entre nichandles OVHcloud et contacts registre/Whois
+
+#### Nichandles administrateur et technique
+
+Les nichandles administrateur et technique OVHcloud et les contacts administrateur et technique registre/Whois sont liés.
+La modification des nichandles entraîne une modification automatique des contacts Whois.
+
+L'inverse n'est cependant pas vrai. Une modification du contact administrateur ou technique (via une interface du registre par exemple) n'entraînera pas de modification du nichandle OVHcloud.
+
+#### Nichandle facturation
+
+Le nichandle facturation n'est pas utilisé côté registre/Whois. Il n'est utile qu'à la facturation du service OVHcloud représentant le nom de domaine.
+
+#### Contact titulaire
+
+Aucun nichandle ne représente le contact titulaire registre/Whois.
+Il n'est pas possible de l'utiliser pour se connecter à l'API ou au site OVHcloud.
+
+Celui-ci est représenté dans l'API par une autre entité, l'objet `domain.Contact`.
+
+## Gestion des nichandles administrateur et technique
+
+### Création d'un nouveau nichandle
+
+L'API suivante permet de créer un nichandle OVHcloud.
+
+<Api version="v1" section="/newAccount" method="POST" route={"/newAccount"} />
+
+Il est également possible de récupérer les règles de création via l'API.
+
+<Api version="v1" section="/newAccount" method="GET" route={"/newAccount/creationRules"} />
+
+Une fois créé, toutes les actions liées à ce nichandle se feront via les APIs commençant par `/me/*`.
+
+### Récupération et modification d'un nichandle
+
+Vous pouvez récupérer et modifier les informations d'un Nic via ces APIs.
+
+<Api version="v1" section="/me" method="GET" route={"/me"} />
+<Api version="v1" section="/me" method="PUT" route={"/me"} />
+
+
+### Changement de nichandle sur le service domaine
+
+Dans cette section, nous allons voir comment changer le Nic (admin, tech et facturation) sur un nom de domaine.
+Cela fonctionne de la même manière pour tous les services OVHcloud. Plus de détails concernant le workflow, ainsi que la façon de le faire via l'espace client OVHcloud peuvent être trouvés [sur cette page](/guides/account-and-service-management/account-information/managing-contacts/).
+
+Avec l'API suivante, nous allons initier une "tâche" qui permettra à l'ancien et au nouveau Nic d'accepter ou de refuser le changement.
+
+<Api version="v1" section="/domain" method="POST" route={"/domain/\{serviceName\}/changeContact"} />
+
+
+| Corps de requête | Description                    |
+| ---------------- | ------------------------------ |
+| `contactAdmin`   | Nichandle Administrateur voulu |
+| `contactTech`    | Nichandle Technique voulu      |
+| `contactBilling` | Nichandle Facturation voulu    |
+
+Cette API retourne une liste d'identifiants de tâches (une par nichandle).
+
+Une tâche de changement de nichandle a pour but d'envoyer un e-mail à l'ancien et au nouveau Nic.
+Ces e-mails contiennent des tokens de validation qui permettent de finaliser la procédure.
+
+Les APIs suivantes permettent de suivre le traitement de cette tâche, ou de lui permettre d'avancer :
+
+<Api version="v1" section="/me" method="GET" route={"/me/task/contactChange"} />
+<Api version="v1" section="/me" method="GET" route={"/me/task/contactChange/\{id\}"} />
+<Api version="v1" section="/me" method="POST" route={"/me/task/contactChange/\{id\}/accept"} />
+<Api version="v1" section="/me" method="POST" route={"/me/task/contactChange/\{id\}/refuse"} />
+<Api version="v1" section="/me" method="POST" route={"/me/task/contactChange/\{id\}/resendEmail"} />
+
+
+## Gestion du contact titulaire
+
+Le contact titulaire est représenté et géré à la fois par les routes `/me/contact` et `/domain/contacts`.
+Pour une utilisation des contacts dans un contexte de noms de domaine, nous vous recommandons fortement l'utilisation exclusive des APIs `/domain/contacts`.
+
+:::info
+Ces deux routes partagent les mêmes identifiants.
+Historiquement, toutes les actions étaient faisables via `/me/contact`. Cependant, certaines règles métiers liées uniquement aux noms de domaine nous ont contraints à déployer de nouvelles APIs spécifiques sous `/domain/contact`.
+Celles-ci représentent une surcouche aux APIs `/me/contact` et nous permettent d'ajouter des champs supplémentaires nécessaires à certaines extensions.
+
+:::
+
+
+Lors de la commande d'un nom de domaine, un **nouveau contact titulaire** est créé à partir des informations fournies, afin de toujours avoir un **identifiant unique** par domaine.
+Cela facilite les mises à jour ultérieures et évite d'impacter un nom de domaine sans le vouloir.
+
+### Gestion d'un contact
+
+Les APIs suivantes vous permettent de gérer vos contacts.
+
+<Api version="v1" section="/domain" method="POST" route={"/domain/contact"} />
+<Api version="v1" section="/domain" method="GET" route={"/domain/contact"} />
+<Api version="v1" section="/domain" method="GET" route={"/domain/contact/\{contactId\}"} />
+<Api version="v1" section="/domain" method="PUT" route={"/domain/contact/\{contactId\}"} />
+
+
+:::info
+Le payload de modification d'un contact (PUT) doit toujours respecter les [règles d'éligibilité](/guides/web-cloud/domains/api-domain-rules/).
+
+:::
+
+
+:::info
+Certains champs étant en lecture seule, une procédure de changement de contact titulaire sera parfois requise pour les changer.
+
+:::
+
+
+### Changement de contact titulaire
+
+La décision d'un changement de titulaire dépend de deux critères.
+
+- L'extension est régie par les règles de l'ICANN (gTLDs et NewgTLDs) ou par l'administration d'un pays comme pour les ccTLDs.
+- Le statut légal du titulaire (individu, entreprise, …).
+
+La situation la plus simple est celle des extensions régies par l'ICANN. Cette dernière considère l'une des modifications suivantes comme étant un changement de titulaire :
+
+- le nom/prénom pour une personne physique ou le nom de l'entreprise/association pour une personne morale ;
+- l'adresse e-mail.
+
+Ces champs sont en conséquence en lecture seule si le contact est attaché à au moins un nom de domaine. Le changement de titulaire est gratuit sur ce type d'extensions.
+
+Pour le reste des extensions, l'API des [règles d'éligibilité](/guides/web-cloud/domains/api-domain-rules/) vous permet de connaître le statut de chaque champ. Pour des raisons d'homogénéité, nous considérons un changement d'adresse e-mail comme un changement de titulaire.
+
+:::info
+Selon l'extension (et les règles registre), un changement de titulaire peut avoir plusieurs conséquences sur un nom de domaine.
+Par exemple dans certains cas, le changement de titulaire entraîne automatiquement un renouvellement d'1 an, rendant ce changement payant.
+D'autres vont nécessiter une procédure de vérification manuelle.
+
+:::
+
+
+Pour garder un comportement le plus homogène possible sur l'API OVHcloud, nous avons choisi de représenter le changement de titulaire sous la forme d'une commande.
+Dans la très grande majorité des cas, celle-ci sera gratuite.  Elle nous permet d'avoir un processus d'initialisation identique à toutes les extensions.
+
+Ce processus se matérialise par deux étapes principales.
+
+1. Commande du changement de titulaire
+    1. Identification du prix
+    2. Création du panier
+    3. Ajout de l'action de changement de titulaire dans le panier
+    4. Création et ajout du contact titulaire
+    5. Validation et paiement de la commande
+2. Exécution du changement de titulaire
+    1. Création de la tâche de `DomainTrade`
+    2. Envoi d'e-mails à l'ancien et au nouveau titulaire
+    3. Réception des tokens de validation
+    4. Changement auprès du registre et du Whois
+
+#### Commande du changement de titulaire
+
+Les étapes suivantes sont décrites plus en détails dans la documentation portant sur la [commande de nom de domaine](/guides/web-cloud/domains/api-domain-order/).
+
+##### Étape 1 : Récupération des informations du changement de titulaire
+
+<Api version="v1" section="/order" method="GET" route={"/order/cartServiceOption/domain/\{serviceName\}"} />
+
+
+{/* prettier-ignore */}
+<Tabs>
+  <Tab label="Réponse">
+    ```javascript
+    [
+        {
+          "exclusive": true,
+          "mandatory": false,
+          "family": "trade",
+          "productName": ".com",
+          "productType": "delivery",
+          "planCode": "com-trade",
+          "prices": [
+            {
+              "interval": 0,
+              "minimumQuantity": 1,
+              "description": "Creation of a .com domain name - 1 year",
+              "minimumRepeat": 1,
+              "priceInUcents": 0,
+              "pricingMode": "create-default",
+              "capacities": [
+                "installation"
+              ],
+              "duration": "P0D",
+              "maximumRepeat": 1,
+              "pricingType": "purchase",
+              "price": {
+                "text": "0.00 €",
+                "value": 0,
+                "currencyCode": "EUR"
+              },
+              "maximumQuantity": 1
+            }
+          ]
+        },
+        {
+          // ...
+        }
+      ]
+    ```
+  </Tab>
+</Tabs>
+
+
+Les éléments à retenir du retour de cette API sont :
+
+- `prices` : prix du changement de titulaire
+- `family` : la valeur `"trade"` indique qu'il s'agit d'un changement de titulaire
+- `planCode` : plan commercial du changement de titulaire, égal à `"$extension-trade"`
+- `pricingMode` : sous-plan commercial du changement de titulaire
+
+##### Étape 2 : Création du panier et ajout du produit dans le panier
+
+Création du panier :
+
+<Api version="v1" section="/order" method="POST" route={"/order/cart"} />
+
+Ajout du changement de titulaire dans le panier :
+
+<Api version="v1" section="/order" method="POST" route={"/order/cartServiceOption/domain/\{serviceName\}"} />
+
+
+| Corps de requête | Description                                                 |
+| ---------------- | ----------------------------------------------------------- |
+| `serviceName`    | Nom de domaine                                              |
+| `cartId`         | Identifiant du panier                                       |
+| `duration`       | Durée, toujours **P0Y** pour un changement de titulaire  |
+| `planCode`       | Code récupéré via le GET à l'étape 1 (`"$extension-trade"`) |
+| `pricingMode`    | Pricing mode récupéré via le GET                            |
+| `quantity`       | Quantité, toujours **1** pour un changement de titulaire |
+
+##### Étape 3 : Ajout des configurations requises
+
+Pour connaître les configurations requises, il suffit d'appeler l'API suivante :
+
+<Api version="v1" section="/order" method="GET" route={"/order/cart/\{cartId\}/item/\{itemId\}/requiredConfiguration"} />
+
+
+| Paramètre | Obligatoire | Défaut | Description                                   |
+| --------- | ----------- | ------ | --------------------------------------------- |
+| cartId    | oui         | ""     | L'identifiant du panier                       |
+| itemId    | oui         | ""     | L'identifiant de l'item inséré dans le panier |
+
+{/* prettier-ignore */}
+<Tabs>
+  <Tab label="Réponse">
+    ```json
+    [
+      {
+        "label": "OWNER_CONTACT",
+        "type": "/me/contact"
+      }
+    ]
+    ```
+  </Tab>
+</Tabs>
+
+
+:::info
+Ici, le `OWNER_CONTACT` représente une API de "ressource", à savoir `/me/contact`.
+Pour rappel, si vous aviez utilisé l'API `/domain/contact` précédemment, vous pouvez reporter le même identifiant sur l'API `/me/contact`.
+
+:::
+
+
+On ajoute ensuite le contact voulu via l'API suivante.
+
+<Api version="v1" section="/order" method="POST" route={"/order/cart/\{cartId\}/item/\{itemId\}/configuration"} />
+
+
+| Paramètre | Obligatoire | Défaut | Description                                   |
+| --------- | ----------- | ------ | --------------------------------------------- |
+| `cartId`  | oui         | ""     | L'identifiant du panier                       |
+| `itemId`  | oui         | ""     | L'identifiant de l'item inséré dans le panier |
+
+| Corps de requête | Description                                                       |
+| ---------------- | ----------------------------------------------------------------- |
+| `label`          | Configuration `"OWNER_CONTACT" `                                  |
+| `value`          | Identifiant du contact `/me/contact/$id` (ex : `/me/contact/123`) |
+
+{/* prettier-ignore */}
+<Tabs>
+  <Tab label="Réponse">
+    ```json
+    {
+      "id": 123456,
+      "label": "OWNER_CONTACT",
+      "value": "/me/contact/123"
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+##### Étape 4 : Visualisation et vérification du bon de commande
+
+Cette étape est sans doute la plus importante du processus de commande et se fait via l'appel suivant :
+
+<Api version="v1" section="/order" method="GET" route={"/order/cart/\{cartId\}/checkout"} />
+
+Elle permet de récupérer le bon de commande dans sa forme finale sans le générer (c'est un "dry-run").
+
+Cet appel permet également de vérifier que les règles d'éligibilité du titulaire sont respectées.
+
+##### Étape 5 : Validation de la commande
+
+<Api version="v1" section="/order" method="POST" route={"/order/cart/\{cartId\}/checkout"} />
+
+
+| Paramètre                           | Obligatoire | Défaut | Description                                                                                    |
+| ----------------------------------- | ----------- | ------ | ---------------------------------------------------------------------------------------------- |
+| `autoPayWithPreferredPaymentMethod` | oui         | ""     | Permet de payer automatiquement le bon de commande avec le moyen de paiement par défaut du Nic |
+| `waiveRetractationPeriod`           | oui         | ""     | Obligatoire pour un nom de domaine. Il représente la renonciation au droit de rétractation     |
+
+#### Exécution du changement de titulaire
+
+Une fois le bon de commande validé et payé, un traitement interne est effectué jusqu'à l'apparition d'une tâche de changement de titulaire nommée `DomainTrade`.
+Celle-ci peut alors être retrouvée via l'API suivante :
+
+<Api version="v1" section="/domain" method="POST" route={"/domain/\{serviceName\}/task"} />
+
+Plus de détails sur la gestion des tâches peuvent être trouvés [sur cette page](/guides/web-cloud/domains/api-domain-tasks/).
+
+La tâche de `DomainTrade` se charge d'envoyer un e-mail à l'ancien et au nouveau titulaire pour valider la suite de la procédure.
+Ces e-mails contiennent un lien de validation (sécurisé via un token privé).
+
+Une fois ces tokens validés, la tâche peut alors exécuter le changement de titulaire et mettre à jour le registre et/ou le Whois avec les informations du nouveau titulaire.

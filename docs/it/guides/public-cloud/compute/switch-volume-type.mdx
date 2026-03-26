@@ -1,0 +1,125 @@
+---
+title: Modificare un Volume Block Storage
+description: Scopri come modificare il tipo di un volume block storage utilizzando Openstack
+lastUpdated: 2026-01-13
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Obiettivo
+
+L’obiettivo di questa guida è mostrarti come modificare un tipo di volume Block Storage da Classic o High Speed a High Speed gen2.
+
+## Prerequisiti
+
+- Avere accesso all'[interfaccia Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/).
+- Un volume [Block Storage](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) creato nel tuo progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/).
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Percorso di navigazione:** <code className="action">Public Cloud</code> > Seleziona il tuo project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedura
+
+Quando si modifica un tipo di volume Block Storage in un volume "High speed gen2", la politica di migrazione deve essere modificata da `Never` a `On Demand`.
+
+Per impostazione predefinita, la politica di migrazione è impostata su `Never` perché il volume rimane sullo stesso cluster CEPH. Per "High speed gen2", invece, il volume dovrà essere migrato verso un nuovo cluster.
+
+La modifica può essere effettuata via Horizon o tramite l’interfaccia da riga di comando OpenStack.
+
+:::warning
+Se il volume Block Storage è collegato a un'istanza, devi prima scollegarlo prima di procedere. Per ulteriori informazioni, consulta la sezione **Scollega un volume** della guida "[Crea e configura un disco aggiuntivo sulla tua istanza](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#detach-a-volume/)".
+
+Il cambio di tipo di volume (retyping) tramite l'Spazio Cliente OVHcloud o l'API OVHcloud è disponibile solo per i volumi non crittografati. Non è possibile modificare il tipo dei volumi crittografati di tipo **-LUKS** tramite queste interfacce.
+
+Il retyping è possibile tramite OpenStack / Horizon solo per volumi **-LUKS** verso **-LUKS**. In questo caso, la ripristinazione del volume dopo il retyping non è possibile.
+
+Le conversioni **-LUKS** verso **non -LUKS** non sono supportate, nemmeno tramite OpenStack / Horizon.
+
+:::
+
+
+<Tabs>
+  <Tab label="Dallo Spazio Cliente OVHcloud">
+    Clicca su <code className="action">Block Storage</code> nel menu a sinistra sotto **Storage e Backup**.
+    
+    Trova il volume desiderato nell'elenco, quindi clicca sul pulsante <code className="action">...</code> a destra di esso. Scegli quindi <code className="action">Modificare il tipo del volume</code>.
+    
+    Si aprirà una finestra che ti permette di visualizzare i diversi tipi di volumi disponibili. Seleziona il tipo desiderato, quindi conferma la tua scelta cliccando su <code className="action">Modifica</code>.
+    
+    :::info
+    L'aggiornamento del tipo di volume (retyping) può richiedere diversi minuti.
+
+    :::
+
+  </Tab>
+  <Tab label="Dall'interfaccia Horizon">
+    Accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/) e assicurati di essere nella regione corretta. Puoi verificarlo in alto a sinistra. 
+    
+    <img className="thumbnail" alt="Selezione della regione" src="/images/public-cloud/compute/switch-volume-type/region2021.png" loading="lazy" />
+
+Clicca sul menu <code className="action">Volumes</code> a sinistra e poi su <code className="action">Volumes</code>.
+    
+    Clicca sulla freccia a lato di <code className="action">Edit Volume</code> e seleziona <code className="action">Change Volume Type</code>.
+    
+    <img className="thumbnail" alt="Scelta dell'opzione" src="/images/public-cloud/compute/switch-volume-type/selectoption.png" loading="lazy" />
+
+Nella finestra che appare, clicca sul menu a discesa sotto `Type` e seleziona <code className="action">high-speed-gen-2</code>. Clicca quindi sulla freccia a lato di `Migration Policy` e seleziona <code className="action">On Demand</code>.
+    
+    Una volta completate queste azioni, clicca su <code className="action">Change Volume Type</code> per confermare il cambiamento.
+    
+    <img className="thumbnail" alt="Scelta dell'opzione" src="/images/public-cloud/compute/switch-volume-type/changevolume.png" loading="lazy" />
+  </Tab>
+  <Tab label="Dalla CLI OpenStack">
+    Prima di iniziare, consulta la seguente guida :
+    
+    - [Preparare l'ambiente per utilizzare l'API OpenStack](/guides/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/).
+    
+    In primo luogo, elenca i tipi di volumi disponibili nella tua regione con il comando seguente :
+    
+    ```bash
+    #~$ openstack volume type list
+    +--------------------------------------+----------------------------------------------------+-----------+
+    | ID                                   | Name                                               | Is Public |
+    +--------------------------------------+----------------------------------------------------+-----------+
+    | 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True      |
+    | 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True      |
+    | 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True      |
+    | 9c5b1e42-3d8f-4a67-a9d2-84f3b2e7c1aa | high-speed-gen2-luks                               | True      |
+    | f41d7c8e-6a2b-4b91-9e73-2d6c0a58e94f | classic-luks                                       | True      |
+    | c8e92a5d-0f6e-4e3b-b1a4-7a9d6f3c2e8b | high-speed-luks                                    | True      |
+    ---------------------------------------------------------------------------------------------------------
+    ```
+    
+    :::warning
+    Nota che se i tipi di volumi "high-speed-gen2" o **-LUKS** non appaiono nell'elenco, significa che non sono disponibili in questa regione.
+    
+    I tipi di volumi **-LUKS** vengono visualizzati solo quando sono supportati nella regione e compatibili con il tipo di crittografia del volume.
+
+    :::
+
+    
+    Modifica quindi il tipo di volume con il comando seguente :
+    
+    ```bash
+    $ openstack volume set --type <VOLUME_TYPE> --retype-policy on-demand <VOLUME_NAME_OR_ID>
+    ```
+  </Tab>
+</Tabs>
+
+
+## Per saperne di più
+
+Per scoprire come migrare un volume Block Storage verso un volume crittografato LUKS, consulta la nostra guida dedicata [Migrating a Block Storage volume to an encrypted LUKS volume](/guides/public-cloud/compute/migrating-non-encrypted-to-encrypted-volume/) (EN).
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

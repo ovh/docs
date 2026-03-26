@@ -1,0 +1,80 @@
+---
+title: AI Endpoints - Dépannage (EN)
+excerpt: "Résoudre les problèmes rencontrés lors de l'utilisation d'AI Endpoints"
+updated: 2025-05-05
+---
+
+> [!info]
+>
+> AI Endpoints is covered by the **[OVHcloud AI Endpoints Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf)** and the **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
+>
+
+## Objective
+
+This tutorial provides guidance on how to resolve common issues that may arise when using [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+
+## Common questions
+
+### What is AI Endpoints and how to use it?
+
+All steps for starting with AI Endpoints are described in the [AI Endpoints - Getting Started](/guides/public-cloud/ai-machine-learning/ai-endpoints-getting-started) guide.
+
+### How can I stay up-to-date on changes to the AI Endpoints platform?
+
+To stay informed about changes to the AI Endpoints platform, you can consult the [AI Endpoints Changelog](https://endpoints.ai.cloud.ovh.net/changelog). This page is accessible from the AI Endpoints website and provides a comprehensive overview of all modifications to the platform, including new features, models, quantization, documentation improvements, decommissioned models, and bug fixes.
+
+### What parameters can I customize for the Large Language Model (LLM) endpoints in AI Endpoints?
+
+When making a request to the LLMs endpoints in AI Endpoints, you can customize several parameters to tailor the response to your specific needs. Here are the parameters you can customize:
+
+- `max_tokens`: This parameter specifies the maximum number of tokens that will be generated in the response.
+- `temperature`: This parameter controls the randomness of the response. A value of 0 will always return the same response, while a higher value will increase the randomness of the response.
+- `seed`: This parameter specifies the seed for the random number generator. If you specify the same seed and parameters for multiple requests, you will receive the same response.
+- `top_p`: This parameter specifies the probability mass of the smallest set of words that will be sampled. The value must be between 0 and 1.
+
+### I am interested in creating a code assistant with Continue and AI Endpoints. Do you have any documentation on how to set this up?
+
+Yes, we have [a guide that explains how to configure Continue to work with AI Endpoints](/guides/public-cloud/ai-machine-learning/ai-endpoints-code-assistant). Continue is an IDE plugin that allows you to build your own code assistant by using a custom LLM endpoint. This guide will walk you through the steps to configure Continue to work with AI Endpoints, including how to specify the endpoint URL and how to authenticate your requests.
+
+## Error codes and unexpected behaviours
+
+### I'm trying to use the AI Endpoints models, but I keep getting a 401 error code. Why?
+
+A 401 error code typically indicates that the authorization token specified in the call is either expired or invalid. To resolve this issue, you will need to generate a new authorization token and include it in your request headers. Fore more information on the token creation process, follow the [AI Endpoints - Getting Started](/guides/public-cloud/ai-machine-learning/ai-endpoints-getting-started) guide.
+
+### I am trying to use the AI Endpoints models, but I keep getting a 404 error code. What is going on?
+
+A **404** error typically indicates that the model you're trying to access cannot be found. In the case of AI Endpoints, this could mean that the **query path** or the **model name** specified in the request is incorrect.
+
+### I am trying to use the AI Endpoints models, but I keep getting a 429 error code. What does it mean?
+
+A 429 error code typically indicates that you have exceeded the rate limit for the AI Endpoints models. When using AI Endpoints, the **following rate limits apply**: 
+
+- **Anonymous**: 2 requests per minute, per IP and per model.
+- **Authenticated with an API access key**: 400 requests per minute, per Public Cloud project and per model.
+
+If you exceed these rate limits, you will receive a 429 error code. In this case, you may consider optimizing your application's usage of the AI Endpoints or spreading out your requests over a longer period. 
+
+Alternatively, please **[reach out to us to discuss increasing your limits](https://help.ovhcloud.com/csm?id=csm_get_help )** if you require higher usage.
+
+### When using AI Endpoints, I am facing "Resource tag 'discovery' is forbidden"
+
+This error occurs when you try to use AI Endpoints with an access key from a Public Cloud project that is in **Discovery mode**, which means this project doesn't have a payment method associated with it.
+
+To resolve this error, add a payment method to your Public Cloud project and try again.
+
+### I am experiencing slow response times when using some of the AI Endpoints models. What is causing this delay?
+
+The delay you are experiencing could be due to the fact that the model you are using has been decommissioned. In most cases, we redirect decommissioned models to updated versions (for example, from llama 3.0 to llama 3.1) to ensure that they still answer requests. However, we add a 10-second delay before the model responds to signal to users that the model is no longer in active use.
+
+To confirm whether the delay is due to the decommissioned model, you can check the verbose output of your request. This can be done by adding the `-v` flag if you are using cURL commands. The verbose output will show you a message such as `x-warning: This model is deprecated and will be redirected to LLaMA 3.1 8B Instruct instead`. 
+
+This indicates that the model is decommissioned and you should switch to an updated version of the model to avoid any unnecessary delays.
+
+## Feedback
+
+Please feel free to send us your questions, feedback, and suggestions regarding AI Endpoints:
+
+- In the `#ai-endpoints` channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud), where you can engage with the community and OVHcloud team members.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

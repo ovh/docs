@@ -1,0 +1,121 @@
+---
+title: Hosting Web - Consulta le statistiche e i log della CDN
+description: Questa guida ti mostra come consultare le statistiche e i log CDN del tuo sito Web grazie alla tua offerta di hosting Web
+lastUpdated: 2025-10-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Obiettivo
+
+Questa guida ti mostra come consultare le statistiche e i log generati dall’[opzione CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/) disponibile con il tuo piano di [hosting web](https://www.ovhcloud.com/it/web-hosting/).
+
+**Questa guida ti mostra come visualizzare le statistiche e i log della CDN del tuo sito Web grazie al piano di hosting Web attivo.**
+
+## Prerequisiti
+
+- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/) con l’opzione CDN attiva su almeno un dominio.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Seleziona il tuo hosting web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedura
+
+### Visualizza le statistiche della CDN
+
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting), poi seleziona l'hosting Web interessato.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Nella nuova pagina clicca sulla scheda <code className="action">Statistiche e log</code>.
+    
+    <img className="thumbnail" alt="statistics-and-logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png" loading="lazy" />
+
+Nella sezione `Statistiche delle visite`, clicca sul pulsante <code className="action">Visualizza le statistiche</code>.
+    
+    <img className="thumbnail" alt="Statistiche e log" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Sei reindirizzato allo strumento **OVHcloud Web Statistics**. Con questo strumento, clicca sul form intitolato <code className="action">Selezione del dominio</code> situato nella parte superiore della pagina e seleziona un dominio con la CDN attiva.
+  </Tab>
+  <Tab label="Passaggio 4">
+    Nella colonna a sinistra, clicca sulla scheda <code className="action">Cache</code>.
+    
+    Visualizzi le statistiche della CDN per il tuo dominio.
+    
+    In caso di necessità, consulta la nostra guida "[Hosting Web - Consultare le statistiche e i log di un sito Web](/guides/web-cloud/web-hosting/logs-and-statistics/)" per maggiori informazioni.
+  </Tab>
+</Tabs>
+
+
+### Visualizzare i log della CDN
+
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting), poi seleziona l'hosting Web interessato.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Nella nuova pagina clicca sulla scheda <code className="action">Statistiche e log</code>.
+    
+    <img className="thumbnail" alt="statistics-and-logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png" loading="lazy" />
+
+Nella sezione `Log del sito Web`, clicca sul pulsante <code className="action">Visualizza i log</code>.
+    
+    <img className="thumbnail" alt="Visualizza i log" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Nella nuova pagina clicca sul pulsante <code className="action">CDN</code> presente nella barra in alto a sinistra.
+    
+    <img className="thumbnail" alt="OSL CDN" src="/images/assets/screens/other/web-tools/logs/osl-cdn.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 4">
+    Visualizzi la nuova pagina:
+    
+    - Seleziona il dominio o sottodominio dal menu a tendina <code className="action">Subdomain</code>.
+    - Inserisci nel campo <code className="action">Date</code> la data per cui vuoi consultare i log CDN.
+    - Clicca sul pulsante <code className="action">Generate</code>.
+    
+    :::info
+    I log CDN non sono disponibili il giorno stesso in cui sono generati, dovrai quindi attendere il giorno successivo per consultarli.
+
+    :::
+
+    
+    <img className="thumbnail" alt="OSL CDN - Log generati" src="/images/assets/screens/other/web-tools/logs/osl-cdn-subdomain-date-selection.png" loading="lazy" />
+
+Nella tabella che appare, clicca sul pulsante <code className="action">Download</code> a destra del dominio o sottodominio interessato per recuperare i log CDN.
+    
+    In caso di necessità, consulta la nostra guida "[Hosting Web - Consultare le statistiche e i log di un sito Web](/guides/web-cloud/web-hosting/logs-and-statistics/)" per maggiori informazioni.
+  </Tab>
+</Tabs>
+
+
+## Per saperne di più
+
+[Aumentare la velocità di un sito Web con la CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/)
+
+[Hosting Web - Consultare le statistiche e i log di un sito Web](/guides/web-cloud/web-hosting/logs-and-statistics/)
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

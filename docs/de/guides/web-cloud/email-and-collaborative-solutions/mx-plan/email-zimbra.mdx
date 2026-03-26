@@ -1,0 +1,750 @@
+---
+title: Zimbra Webmail verwenden
+description: Erfahren Sie hier, wie Sie das Zimbra Webmail-Interface mit OVHcloud MX Plan E-Mail-Accounts verwenden
+lastUpdated: 2026-02-26
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+Mit dem MX Plan Angebot von OVHcloud können Sie E-Mails über einen E-Mail-Client (Thunderbird, Outlook, Mac Mail) oder per Webmail im Webbrowser Ihres Geräts versenden und empfangen.<br/>
+OVHcloud bietet den Webmail-Dienst Zimbra an, um auf MX Plan E-Mail-Accounts zuzugreifen. Auf dieser Seite werden die für die Verwendung dieses Webmailers erforderlichen Funktionen erläutert.
+
+**Diese Anleitung erklärt, wie Sie Zimbra Webmail für Ihre OVHcloud MX Plan E-Mail-Accounts verwenden.**
+
+## Voraussetzungen
+
+- Sie verfügen über ein **MX Plan** Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+- Sie verfügen über die Logindaten des MX Plan E-Mail-Accounts, den Sie verwenden möchten. Weitere Informationen finden Sie in unserer Anleitung "[Erste Schritte mit MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)".
+
+## In der praktischen Anwendung
+
+**Inhaltsübersicht**
+
+- [In Zimbra Webmail einloggen](#login)
+- [Allgemeines zum Webmail-Interface von Zimbra](#general-interface)
+- [Verwaltung der Ordner Ihres E-Mail-Accounts](#folders-management)
+    - [Spezialordner](#folders-specials)
+    - [Ordner erstellen](#folders-creation)
+ - [E-Mail-Verarbeitung](#email-management)
+    - [Aktion für eine ausgewählte E-Mail](#email-action)
+    - [E-Mail suchen](#email-search)
+    - [Gelöschte E-Mails wiederherstellen](#restore)
+- [E-Mail schreiben](#email-writing)
+- [Einstellungen für das Zimbra-Interface konfigurieren](#settings)
+- [Kontakte](#contacts)
+    - [Ordnerverwaltung](#contacts-folders)
+    - [Verwaltung von Listen](#contacts-lists)
+    - [Kontakte importieren und exportieren](#import-export)
+- [Kalender](#calendar)
+    - [Kalenderverwaltung](#calendar-management)
+    - [Aufgaben](#tasks)
+- [Speicherplatz](#storage)
+    - [Datei hinzufügen](#storage-add)
+    - [Datei oder Ordner freigeben](#storage-share)
+    - [Dokument bearbeiten](#storage-onlyoffice)
+- [Filter](#filters)
+    - [Grundlegendes zum Einrichten von Filtern](#filters-howto)
+    - [Filter erstellen](#filters-creation)
+    - [Eine Umleitung erstellen](#filters-redirection)
+- [Delegationen](#delegations)
+- [Signaturen](#signatures)
+- [Automatische Antworten](#auto-reply)
+
+### In Zimbra Webmail einloggen <a name="login"></a>
+
+Gehen Sie auf die Seite [Webmail](https://www.ovhcloud.com/de/mail/). Geben Sie Ihre E-Mail-Adresse und das Passwort ein und klicken Sie dann auf <code className="action">Anmelden</code>.
+
+<img className="thumbnail" alt="Zimbra - Anmeldung" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/ovhcloud-login-webmail.png" loading="lazy" />
+
+Sie werden nun zum Zimbra-Interface weitergeleitet.
+
+<img className="thumbnail" alt="Zimbra - Interface" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-01.png" loading="lazy" />
+
+### Allgemeines zum Webmail-Interface von Zimbra <a name="general-interface"></a>
+
+Wenn Sie in Ihrem E-Mail-Account eingeloggt sind, erscheint das Hauptfenster von Zimbra, das aus 3 Zonen besteht:
+
+<Tabs>
+  <Tab label="Menü oben">
+    - **(1)** In diesem Bereich können Sie zwischen den beiden Funktionen `mail` und `kontakte` wechseln, die Standardansicht ist `mail`.
+    - **(2)** In der Suchleiste können Sie nach Nachrichten oder Kontakten suchen.
+    - **(3)** Das Menü zur Verwaltung des Profils Ihres E-Mail-Accounts und die Schaltfläche für den Zugriff auf die Einstellungen **(4)**.
+    
+    <img className="thumbnail" alt="Zimbra - Menü oben" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Linke Spalte">
+    Die Struktur von E-Mail-Accounts oder Kontakten, bestehend aus Ordnern und Unterordnern. Der E-Mail-Hauptordner ist `Posteingang`.
+    
+    <img className="thumbnail" alt="Zimbra - Struktur" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Mittleres Fenster">
+    Ihre E-Mails oder Kontakte werden in diesem zweiteiligen Bereich angezeigt:
+    
+    - **(1)** Die Liste der Elemente
+    - **(2)** Der Inhalt des ausgewählten Elements
+    
+    <img className="thumbnail" alt="Zimbra - E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-04.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Verwaltung der Ordner Ihres E-Mail-Accounts (linke Spalte) <a name="folders-management"></a>
+
+In diesem Bereich werden die Ordner Ihres E-Mail-Account angezeigt. Sie finden die immer vorhandenen **Spezialordner** (orange) und die Ordner, die Sie selbst **erstellt** haben (grün).
+
+<img className="thumbnail" alt="Zimbra - Dossiers" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-05.png" loading="lazy" />
+
+#### Spezialordner <a name="folders-specials"></a>
+
+Spezialordner werden automatisch vom E-Mail-Server erstellt und bilden den Kern eines E-Mail-Accounts.
+
+- **Empfang**: E-Mails werden standardmäßig in diesem Ordner abgelegt (mit Ausnahme der angewendeten Filter).
+- **Entwürfe**: Verfasste, aber nicht gesendete E-Mails werden in diesem Ordner gespeichert.
+- **Gesendet**: Gesendete E-Mails werden automatisch in diesem Ordner gespeichert.
+- **Archive**: Standardordner zum Sortieren von verarbeiteten E-Mails.
+- **Spam**: Ordner, in dem als Unerwünscht eingestufte E-Mails gespeichert werden.
+- **Papierkorb**: Gelöschte E-Mails werden in diesem Ordner gespeichert, bevor sie endgültig gelöscht werden.
+
+:::info
+Ordner mit Sonderfunktion können nicht gelöscht werden.
+
+:::
+
+
+#### Ordner erstellen <a name="folders-creation"></a>
+
+Um Ihre E-Mails nach Ihren Bedürfnissen zu sortieren, können Sie Ihre eigenen Ordner erstellen.
+
+Um einen neuen Ordner zu erstellen, klicken Sie unten in der Spalte auf die Schaltfläche <code className="action">+ Einen Ordner hinzufügen</code>.
+
+Sie können auch einen Unterordner erstellen, indem Sie mit der rechten Maustaste auf den gewünschten Ordner klicken und dann auf <code className="action">Unterordner erstellen</code> klicken.
+
+:::info
+Die Ordner "Entwürfe", "Spam" und "Papierkorb" dürfen keine Unterordner enthalten.
+
+:::
+
+
+### E-Mail-Verarbeitung <a name="email-management"></a>
+
+Wenn Sie einen Ordner oder Unterordner in der linken Spalte auswählen, wird die Liste der darin enthaltenen E-Mails in der mittleren Spalte angezeigt. Klicken Sie dann auf die E-Mail Ihrer Wahl, um deren Inhalt im rechten Fenster anzuzeigen.
+
+<img className="thumbnail" alt="Zimbra - Ordner" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-06.png" loading="lazy" />
+
+:::info
+**Darstellungstyp**
+
+Die Darstellung von E-Mails kann geändert werden. Klicken Sie hierzu rechts oben auf den Button <code className="action">Anzeigen</code>.
+
+:::
+
+
+Es ist möglich, E-Mails basierend auf bestimmten Kriterien zu sortieren und anzuzeigen, indem Sie auf den vorhandenen Filter (standardmäßig <code className="action">Datum</code>) oben in der E-Mail-Liste klicken.
+
+<img className="thumbnail" alt="Zimbra - Ordner" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-06-date.png" loading="lazy" />
+
+#### Aktion für eine ausgewählte E-Mail <a name="email-action"></a>
+
+Wenn Sie eine E-Mail auswählen, stehen Ihnen zahlreiche Aktionen zur Verfügung:
+
+- 1.**Antworten**: Antwort an den Absender verfassen.
+- 2.**Allen antworten**: Antwort an alle Empfänger in den Feldern "An" und "CC" verfassen.
+- 3.**Weiterleiten**: Die ausgewählte E-Mail an einen oder mehrere Empfänger weiterleiten.
+- 4.**Archivieren**: Die E-Mail in den Ordner "Archiv" Ihres E-Mail-Accounts verschieben.
+- 5.**Verschieben**: Verschieben Sie die E-Mail in einen der Ordner des E-Mail-Accounts.
+- 6.**Löschen**: Die ausgewählte E-Mail in den "Papierkorb" verschieben.
+- 7.**SPAM**: Die ausgewählte E-Mail in den "Spam" verschieben.
+- 8.**Mehr**
+    - **Als gelesen markieren**
+    - **Als ungelesen markieren**
+    - **Markierung**: Weisen Sie Ihrer E-Mail einen "Stern" zu, um sie zu markieren und leichter zu identifizieren.
+    - **Markierung löschen**: Entfernt den dieser E-Mail zugewiesenen "Stern".
+    - **Original anzeigen**: Zeigt die E-Mail im Rohformat inklusive Header an.
+    - **Neuer Filter**: Erstellt einen Filter basierend auf Absender und Betreff der ausgewählten Nachricht.
+    - **Drucken**: Auswahl ausdrucken.
+- 9.**Anzeigen**: Wählen Sie eines der 3 Layouts aus, um Ihre Ordner und E-Mails anzuzeigen.
+
+<img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-07.png" loading="lazy" />
+
+Sie können auf diese Optionen zugreifen, indem Sie auf eine E-Mail in der mittleren Spalte rechtsklicken.
+
+:::info
+Wenn eine E-Mail mit Lesebestätigung empfangen wurde, erhalten Sie die folgende Standardnachricht: `John hat eine Lesebestätigung für diese E-Mail angefordert. Lesebestätigung senden`.
+
+:::
+
+
+#### E-Mail suchen <a name="email-search"></a>
+
+Wenn Sie eine E-Mail suchen möchten, verwenden Sie die Suchleiste oben in Ihrem Interface. Sie können dann eine **einfache Suche** oder eine **erweiterte Suche** durchführen, wie in den folgenden Tabs beschrieben:
+
+<Tabs>
+  <Tab label="Einfache Suche">
+    Geben Sie die Suchbegriffe in die Leiste ein, die Sie finden möchten, und drücken Sie `Enter`, um die Suche zu bestätigen. Die Wörter werden in den Suchergebnissen hervorgehoben.
+    
+    > Wenn Sie wissen, wo das gesuchte Element enthalten ist, können Sie Schlüsselwörter ( **from**, **to**, **cc**, **subject**, etc.) gefolgt von einem Doppelpunkt (`:`) eingeben. Wenn Sie beispielsweise schnell nach einem Absender suchen möchten, können Sie "from" gefolgt von der gesuchten E-Mail-Adresse eingeben. Beispiel: "from:address@example.com.
+    
+    <img className="thumbnail" alt="Zimbra - Einfache Suche" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-08.png" loading="lazy" />
+  </Tab>
+  <Tab label="Expertensuche">
+    Für eine genauere Suche klicken Sie auf das Pfeilsymbol rechts in der Suchleiste. So können Sie Ihre Suche auf einen Ordner, eine Zeitspanne, den Betreff, den Nachrichtentext, etc. beschränken.
+    
+    <img className="thumbnail" alt="Zimbra - Erweiterte Suche" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-09.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Gelöschte E-Mails wiederherstellen <a name="restore"></a>
+
+Wenn Sie E-Mails löschen, werden diese standardmäßig in den Papierkorb verschoben.<br/>
+Wenn Sie E-Mails aus Ihrem Papierkorb löschen oder diesen leeren, werden sie in die Retention gelegt. Sie können sie innerhalb von 30 Tagen noch wiederherstellen.
+
+Wir zeigen Ihnen, wie Sie eine E-Mail aus der Retention wiederherstellen, indem wir die Schritte ihrer Löschung und Wiederherstellung durchgehen:
+
+1. **Löschen einer E-Mail**: Wenn Sie eine E-Mail in der Posteingang oder einem der Ordner öffnen und auf <code className="action">löschen</code> klicken, wird diese standardmäßig in den Papierkorb verschoben.
+2. **Papierkorb leeren**: Wenn Sie <code className="action">Papierkorb leeren</code> klicken oder eine E-Mail aus dem Papierkorb löschen, wird die E-Mail nicht mehr im Papierkorb angezeigt und tritt in die 30-tägige Retention-Phase ein.
+3. **Zugriff auf die Wiederherstellung**: Um eine E-Mail zu wiederherzustellen, die innerhalb von 30 Tagen aus dem Papierkorb gelöscht wurde, klicken Sie mit der rechten Maustaste auf <code className="action">Papierkorb</code>, dann auf <code className="action">Gelöschte E-Mails wiederherstellen</code>.
+4. **E-Mails zur Wiederherstellung auswählen**: In diesem Fenster können Sie die E-Mails ansehen, die aus dem Papierkorb gelöscht wurden. Wählen Sie die E-Mail(s), die Sie wiederherstellen möchten. Klicken Sie auf <code className="action">Weiter</code>, wählen Sie den Ordner aus, in den Sie die E-Mails wiederherstellen möchten, und klicken Sie dann auf <code className="action">Speichern</code>.
+
+<img className="thumbnail" alt="Zimbra - einfache Suche" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-restore.png" loading="lazy" /> 
+
+### Eine E-Mail schreiben <a name="email-writing"></a>
+
+Um eine neue E-Mail zu verfassen, klicken Sie oben links im Zimbra-Fenster auf die Schaltfläche <code className="action">Neue Mail</code> (1).
+
+<img className="thumbnail" alt="Zimbra - E-Mail schreiben" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-10.png" loading="lazy" />
+
+<Tabs>
+  <Tab label="Header">
+    In der Kopfzeile können Sie folgende Felder ausfüllen:
+    
+    - **Von**: Adresse, von der aus Sie Ihre E-Mail senden. Standardmäßig ist dies Ihre primäre Account-Adresse. Sie können Ihre Absenderadresse ändern, indem Sie auf das Pfeilsymbol rechts neben Ihrer E-Mail-Adresse klicken. Dies ist jedoch nur möglich, wenn eine [Delegation](#delegations) eingerichtet wurde.<br/>
+    - **An**: Empfänger Ihrer E-Mail. Klicken Sie auf <code className="action">An</code>, um auf Ihre [Kontakte](#contacts) zuzugreifen und Ihre Empfänger auszuwählen.<br/>
+    - **CC**: Klicken Sie auf <code className="action">CC/BCC</code> rechts neben dem Feld <code className="action">An</code>, um dieses Feld anzuzeigen. Über das Feld **CC** können Sie eine E-Mail-Kopie an weitere Empfänger senden, ohne dass diese als direkte Empfänger der E-Mail betrachtet werden (im Gegensatz zu den Empfängern im Feld "**An**").<br/>
+    - **CC**: Klicken Sie auf <code className="action">CC/BCC</code> rechts neben dem Feld <code className="action">An</code>, um dieses Feld anzuzeigen. Über das Feld **BCC** können Sie eine E-Mail-Kopie an weitere Empfänger senden, ohne dass andere Empfänger die Adressen in **BCC** sehen.<br/>
+    - **Betreff**: Der Titel der E-Mail, der beim Empfang angezeigt wird, bevor die E-Mail geöffnet wird.<br/>
+    - <code className="action">...</code>: Rechts neben dem Feld <code className="action">Von</code> befinden sich 3 Optionen:<br/>
+       - Sie können Ihre E-Mail als prioritär einstufen, indem Sie `Hohe Priorität` auswählen.<br/>
+       - Klicken Sie auf `Lesebestätigung anfordern`, um eine Lesebestätigung vom Empfänger anzufordern.<br/>
+       - Mit der Funktion `Nur Text` werden die HTML-Layoutfunktionen Ihrer E-Mail deaktiviert.<br/>
+    
+    <img className="thumbnail" alt="Zimbra-Kopfzeile" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-11.png" loading="lazy" />
+  </Tab>
+  <Tab label="E-Mail-Text">
+    Um den Text Ihrer E-Mail zu schreiben, können Sie die HTML-Symbolleiste am unteren Rand verwenden. So können Sie Ihre E-Mails direkt im Browser mit einem Seitenlayout verfassen. Außerdem öffnet sich mit der Schaltfläche <code className="action">&lt; ></code> (ganz rechts in der Symbolleiste) ein Fenster, in das Sie eine vordefinierte E-Mail aus einem externen Tool einfügen können.
+    
+    <img className="thumbnail" alt="Zimbra - Körper" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-12.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Nachdem Sie Ihre E-Mail verfasst haben, können Sie, bevor Sie auf <code className="action">Senden</code> klicken, eine Datei anhängen, indem Sie auf das Klammersymbol neben der Schaltfläche <code className="action">Senden</code> klicken.
+
+<img className="thumbnail" alt="Zimbra - Anhang" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-13.png" loading="lazy" />
+
+:::tip[Success]
+**Mail zurückrufen**
+
+Wenn Sie die Option `Mail zurückrufen` in den Zimbra-Einstellungen im Bereich "**Mail schreiben**" aktiviert haben, können Sie auf <code className="action">RÛCKGÄNGIG</code> klicken, um den Versand abzubrechen.
+Diese Funktion bleibt ungefähr 5 Sekunden lang verfügbar.
+
+<img className="thumbnail" alt="Zimbra - Versand stornieren" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-cancel-email.png" loading="lazy" />
+
+:::
+
+
+### Einstellungen für das Zimbra-Interface konfigurieren <a name="settings"></a>
+
+Ihr Zimbra Interface verfügt über 2 Konfigurationsmenüs:
+
+<img className="thumbnail" alt="Zimbra - Einstellungen" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-14.png" loading="lazy" />
+
+- **(1) Profil**: Klicken Sie oben rechts auf den Namen Ihres E-Mail-Accounts. In diesem Menü finden Sie die Optionen "**Passwort ändern**", "**Profilbild ändern**" und können sich ausloggen, indem Sie auf "**Abmelden**" klicken.
+
+- **(2) Einstellungen**: Über das Zahnrad oben rechts können die **Sprache** der Webmail-Oberfläche ändern und mit Klick auf "**Hilfe**" auf die offizielle Zimbra-Dokumentation (extern) zugreifen. Unter "**Einstellungen**" finden Sie die folgenden Konfigurationselemente:
+
+<Tabs>
+  <Tab label="Allgemeines">
+    In diesem Tab finden Sie:
+    
+    - Eine Anzeige der Speicherplatzbelegung Ihres E-Mail-Accounts.
+    - Die Möglichkeit, das Anzeigeformat für Datum und Uhrzeit Ihrer E-Mails festzulegen.
+  </Tab>
+  <Tab label="Mail anzeigen">
+    Hier finden Sie Anzeigeoptionen für folgende Elemente in Ihrem E-Mail-Account.
+    
+    - **Beim Anzeigen von Maillisten**: Mit diesen Optionen können Sie die Liste Ihrer E-Mails nach Konversationsgruppen organisieren und weitere Details in der Vorschau anzeigen.
+    - **Vorschaufenster**: Wählen Sie zwischen drei Layouts zur Anzeige von Ordner und E-Mails. Diese Option übernimmt die Einstellungen, die Sie beim Anzeigen von E-Mails auf der Schaltfläche <code className="action">Anzeigen</code> treffen.
+    - **Engere Abstände verwenden**
+    - **Als gelesen markieren**: Sie können die Statusänderung beim Öffnen einer E-Mail zu "Gelesen" verzögern, oder geöffnete E-Mails als "Ungelesen" belassen.
+    - **Auf neue E-Mails überprüfen**: Legen Sie fest, wie oft empfangene E-Mails im Zimbra-Interface synchronisiert werden sollen.
+    - **Lesebestätigungen**: Legen Sie das Verhalten von Zimbra beim Öffnen einer E-Mail mit Lesebestätigung fest.
+    - **Neue Mail-Benachrichtigungen**: Aktivieren Sie Benachrichtigungen, wenn eine Mail empfangen wird.
+    - **Bilder in Mails anzeigen**: Beim Öffnen einer E-Mail Bilder automatisch anzeigen oder nicht.
+    - **Mails als Nur-Text anzeigen**: Mit dieser Option wird die E-Mail im Nur-Text-Format ohne Seitenlayout angezeigt.
+    - **Bilder standardmäßig in Mails von diesen vertrauenswürdigen Adressen oder Domains anzeigen**: Legen Sie vertrauenswürdigen E-Mail-Adressen fest, für die Bilder beim Öffnen angezeigt werden.
+  </Tab>
+  <Tab label="Mail schreiben">
+    - **Mail zurückrufen**: Zeigt ca. 5 Sekunden lang ein Banner an, mit dem der Versand einer E-Mail abgebrochen werden kann.
+    - **Lesebestätigungen anfordern**: Diese Option sendet eine Lesebestätigungsanforderung an Ihre Empfänger, wenn Sie E-Mails senden.
+    - **Eine Kopie im Ordner "Gesendet" speichern**: Diese Option ist aktiviert, um gesendete E-Mails im Ordner "Gesendet" Ihres E-Mail-Accounts zu speichern.
+    - **Stellvertreter**: Erfahren Sie mehr zur Verwendung dieser Funktion im Abschnitt [Delegationen](#delegations) in dieser Anleitung.
+    - **Sendeeinstellungen übertragen**: Informationen zur Verwendung von Delegierung finden Sie unter [Delegationen](#delegations) in dieser Anleitung.
+    - **Verfasser**: Sie können Ihre Standardformatierung für neue Mails festlegen.
+  </Tab>
+  <Tab label="Signaturen">
+    In diesem Bereich können Sie Ihre Signaturen erstellen.<br/>
+    
+    - **Standard-Signatur**: Geben Sie die Signatur ein, die beim Verfassen einer neuen E-Mail eingefügt wird.
+    - **Signatur beantworten oder weiterleiten**: Ermöglicht das Hinzufügen einer abweichenden Signatur, wenn Sie eine E-Mail beantworten oder weiterleiten.
+  </Tab>
+  <Tab label="Außer Haus">
+    Dieser Bereich verwaltet die Funktion "Auto-Antwort". Informationen zur Konfiguration Ihrer automatischen Antworten finden Sie im Abschnitt "[Automatische Antworten](#auto-reply)" in dieser Anleitung.
+  </Tab>
+  <Tab label="Filter">
+    Informationen zum Konfigurieren der Filter finden Sie im Abschnitt "[Filter](#filters)" in dieser Anleitung.
+  </Tab>
+  <Tab label="Kalender und Erinnerungen">
+    Hier finden Sie die Einstellungen für Ihre [Kalender](#calendar).
+    
+    **Allgemeine Kalendereinstellungen**
+    
+    - **Standardkalender**: Legen Sie den Standardkalender fest, der beim Erstellen eines neuen Ereignisses in Ihren Kalendern verwendet wird.
+    - **Wochenanfang**: Der Tag, der im Kalenderraster zuerst angezeigt wird.
+    - **Arbeitsbeginn**: Die Uhrzeit, die am oberen Rand der angezeigten Amplitude angezeigt wird.
+    - **Arbeitsende**: Die Stunde, die am unteren Rand der angezeigten Amplitude angezeigt wird.
+    - **Zeitzone Arbeitstag** die für Kalender verwendet wird.
+    - **Beim Erstellen oder Bearbeiten von Ereignissen**: Zeitzonen für Start- und Endzeit anzeigen.
+    - **Freigaben**: `Delegierung für CALDav Clients aktivieren`. Mit dieser Option können Sie Ihre Kalender mit Software verwalten, die das CALdav-Protokoll unterstützt.
+    - **Abgelehnte Ereignisse**: Ein Ereignis im Kalender anzeigen, auch wenn es abgelehnt wurde.
+    
+    **Ereigniserinnerungen**
+    
+    - **E-Mail-Erinnerungen senden an**: Erinnerungen an Ereignisse an eine E-Mail-Adresse senden.
+    - **Browser-Benachrichtigungen anzeigen**: Von Ihrem Webbrowser über Ihre Ereignisse benachrichtigt werden.
+    - **Standarderinnerung**: Die standardmäßige Erinnerungszeit, die bei Aktivierung für ein Ereignis verwendet wird.
+    - **Erinnerungen für überfällige Ereignisse anzeigen**: Senden von Erinnerungen nach Ereignissen fortsetzen.
+    
+    **Berechtigung für Frei-/Gebucht-Ansicht**
+    
+    - **Berechtigung für**: Diese Einstellung gilt nur für den Verfügbarkeitsstatus, der mit den Kalendern Ihrer E-Mail-Adresse verknüpft ist. Das bedeutet, dass Sie Ihren Status "Beschäftigt" oder "Verfügbar" mit anderen E-Mail-Adressen teilen können.
+  </Tab>
+</Tabs>
+
+
+### Kontakte <a name="contacts"></a>
+
+Klicken Sie in der oberen Leiste auf `Kontakte`, um das Kontaktverzeichnis aufzurufen. Die Anzeige ist in **drei Teile** unterteilt:
+
+- **(1) Ordner** (links): Im Kontaktverzeichnis können Sie Ordner zum Sortieren und Gruppieren von Kontakten erstellen.
+- **(2) Kontaktliste** (Mitte): Zeigen Sie die Kontakte im Kontaktverzeichnis oder im ausgewählten Ordner an.
+- **(3) Kontakteigenschaften** oder **Neuer Kontakt** (rechts): Dieses Fenster wird angezeigt, wenn ein Kontakt ausgewählt oder erstellt wird. Hier können Sie die Informationen eines Kontakts einsehen oder bearbeiten.
+
+<img className="thumbnail" alt="Zimbra - Kontakte" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-15.png" loading="lazy" />
+
+Um einen neuen Kontakt zu erstellen, klicken Sie oben in der linken Spalte auf die Schaltfläche <code className="action">Neuer Kontakt</code>.
+
+Tragen Sie die Kontakt-Daten in die Felder ein. Sie können ein Bild hinzufügen, indem Sie auf das Profilsymbol oben rechts im Formular klicken.
+
+Klicken Sie dann auf <code className="action">Speichern</code>.
+
+<img className="thumbnail" alt="Zimbra - Neuer Kontakt" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-16.png" loading="lazy" />
+
+#### Verwaltung der Kontaktordner <a name="contacts-folders"></a>
+
+Wie bei E-Mails werden vom E-Mail-Server automatisch spezielle Kontaktordner angelegt.
+
+- **Kontakte**: Die Kontakte werden standardmäßig in diesem Ordner gespeichert.
+- **Papierkorb**: Gelöschte Kontakte werden in diesen Ordner verschoben, bevor sie endgültig gelöscht werden.
+- **Mail-Kontakte**: Adressen, mit denen Sie Kontakt hatten, werden in diesem Ordner abgelegt.
+
+Sie können Ordner und Unterordner erstellen und Kontakte damit unterteilen. So können Sie einen Kontakt leichter in einem selbst erstellten Ordner finden als im gesamten Kontaktverzeichnis.
+
+Um einen neuen Ordner zu erstellen, klicken Sie unten in der linken Spalte auf die Schaltfläche <code className="action">+ Einen Ordner hinzufûgen</code>.
+
+Sie können auch einen Unterordner erstellen, indem Sie mit der rechten Maustaste auf den gewünschten Ordner klicken und dann <code className="action">Unterordner erstellen</code> wählen. Die Ordner "Mail-Kontakte" und "Papierkorb" erlauben nicht die Erstellung von Unterordnern.
+
+Um einen Kontakt in einen der Ordner zu verschieben, wählen Sie ihn in der mittleren Spalte aus und klicken dann im Kontaktfenster auf die Schaltfläche <code className="action">Verschieben</code>. Wählen Sie nun den Ordner aus, den Sie dem Kontakt zuweisen möchten.
+
+<img className="thumbnail" alt="Zimbra - Kontakteakten" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-17.png" loading="lazy" />
+
+:::info
+Wenn Sie einen Kontakt aus einem ausgewählten Ordner erstellen, wird der Kontakt automatisch diesem Ordner hinzugefügt.
+
+:::
+
+
+#### Verwaltung von Listen <a name="contacts-lists"></a>
+
+Sie können einen Kontakt einer oder mehreren Listen zuordnen. Mithilfe von Listen können Sie Kontakte gruppieren, um das Senden von E-Mails an alle diese Kontakte zugleich zu erleichtern. Wenn Sie beispielsweise eine E-Mail an eine große Anzahl regelmäßiger Empfänger senden möchten, müssen Sie nur den Namen Ihrer Liste als Empfänger hinzufügen, anstatt die Kontakte einzeln hinzuzufügen.
+
+Um eine Liste zu erstellen, klicken Sie in das Feld `Neue Liste` unten in der linken Spalte und geben einen Namen für die Liste ein.
+
+Um einen Kontakt einer Ihrer Listen zuzuweisen, wählen Sie ihn in der mittleren Spalte aus und klicken dann auf <code className="action">Zu Listen zuweisen</code>. Markieren Sie die Listen, die Sie dem Kontakt zuweisen möchten. Sie können auch einen Namen für eine neue Liste eingeben und auf <code className="action">Hinzufügen</code> klicken.
+
+<img className="thumbnail" alt="Zimbra - Listen" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-list.png" loading="lazy" />
+
+#### Kontakte importieren und exportieren <a name="import-export"></a>
+
+Wählen Sie unter den folgenden Tabs aus:
+
+<Tabs>
+  <Tab label="Kontakte importieren">
+    Klicken Sie im Fenster `Kontakte` mit der rechten Maustaste auf den gewünschten Kontakteordner, mit Ausnahme der Ordner "E-Mail-Kontakte" und "Papierkorb", die das Importieren und Exportieren von Kontakten nicht zulassen.<br/>
+
+Klicken Sie anschließend auf <code className="action">Importieren</code>, um das Importfenster zu öffnen. Mit dem Button `Browse...` können Sie eine Datei mit Ihren Kontakten im Format *.csv* oder *.vcf* öffnen. <br/><br/>
+    <img className="thumbnail" alt="Zimbra - Importieren" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-19.png" loading="lazy" />
+  </Tab>
+  <Tab label="Kontakte exportieren">
+    Klicken Sie im Fenster `Kontakte` mit der rechten Maustaste auf den gewünschten Kontakteordner, mit Ausnahme der Ordner "E-Mail-Kontakte" und "Papierkorb", die das Importieren und Exportieren von Kontakten nicht zulassen.
+    
+    Klicken Sie dann auf <code className="action">Exportieren</code>, um das Exportfenster zu öffnen. Wählen Sie den Dateityp aus, den Sie exportieren möchten, und klicken Sie dann auf <code className="action">Exportieren</code>.<br/><br/>
+    <img className="thumbnail" alt="Zimbra - Exportieren" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-20.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Kalender <a name="calendar"></a>
+
+Klicken Sie auf das Symbol `Kalender`, in der oberen Leiste, um das Kontaktbuch aufzurufen. Es ist in **3 Teile** unterteilt:
+
+- **(1) Kalenderliste** (links): Verwalten der verschiedenen Kalender und Unterkalender.
+- **(2) Kalenderinhalt** (Mitte): Zeigt den Inhalt der ausgewählten Kalender und Unterkalender an.
+- **(3) Aufgabenliste** (rechts): Verwalten der Aufgaben und Aufgabenlisten.
+
+<img className="thumbnail" alt="Zimbra - Calendar" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-calendar-view.png" loading="lazy" />
+
+#### Kalenderverwaltung <a name="calendar-management"></a>
+
+In der Liste `Meine Kalender` wird standardmäßig ein `Kalender` erstellt. Dieser Standardkalender kann nicht gelöscht werden, aber Sie werden im nächsten Absatz erfahren wie Sie eigene Kalender erstellen können.
+
+##### 1 - Kalender erstellen <a name="calendar-add-calendar"></a>
+
+- **(1)**: Um einen Kalender zu erstellen, bewegen Sie Ihren Mauszeiger in der linken Spalte auf `Meine Kalender` und klicken Sie auf die Schaltfläche `+`. Wählen Sie einen Namen und eine Farbe aus und klicken Sie auf <code className="action">Speichern</code>.
+
+Sie können auch Unterkalender erstellen.
+
+- **(2)**: Um einen Unterkalender zu erstellen, bewegen Sie den Mauszeiger über den Kalender, für den Sie einen Unterkalender erstellen möchten. Klicken Sie dann mit der rechten Maustaste, um das Dropdownmenü anzuzeigen. Klicken Sie auf `Unterkalender hinzufügen`. Wählen Sie einen Namen und eine Farbe aus und klicken Sie auf <code className="action">Speichern</code>.
+
+<img className="thumbnail" alt="Zimbra - Calendar" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-calendar-add.png" loading="lazy" />
+
+#### 2 - Ereignis hinzufügen <a name="calendar-add-event"></a>
+
+- **(1)**: Klicken Sie in der oberen linken Ecke auf <code className="action">Neues Ereignis</code>.
+- **(2)**: Klicken Sie auf den Zeitraum in Ihrem Kalender, in dem Sie ein Ereignis hinzufügen möchten. Um das Hinzufügen zu vereinfachen, geben Sie einfach einen Titel für die Veranstaltung und einen Ort an und klicken Sie dann auf <code className="action">Speichern</code>. Um weitere Details zu Ihrem Event hinzuzufügen, klicken Sie auf <code className="action">Weitere Details hinzufügen</code>.
+
+<img className="thumbnail" alt="Zimbra - Calendar" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-calendar-event-add-01.png" loading="lazy" />
+
+- **Beginn**: Datum und Uhrzeit des Starts Ihres Events. Wenn Sie `Ganztägig` ankreuzen, müssen Sie keine Start- und Endzeit eingeben, da der gesamte Tag berücksichtigt wird.
+- **Ende**: Datum und Uhrzeit des Endes Ihres Events.
+- **Wiederholung**: Wenn es sich um ein wiederkehrendes Ereignis handelt, legen Sie die Häufigkeit fest.
+- **Veranstaltungsort**: Der Veranstaltungsort, z.B. der Name eines Konferenzraums.
+- **Equipment**: Wenn Sie auf <code className="action">Ausrüstung zeigen</code> klicken, wird diese Zeile angezeigt, um ein gemeinsam genutztes Equipment zu definieren, das Sie für Ihr Event verwenden werden.
+- **Gäste**: Die E-Mail-Adressen der Veranstaltungsteilnehmer.
+- **Anmerkungen**: Die Nachricht wird an die Teilnehmer der Veranstaltung weitergeleitet.
+- **Erinnerung**: Vor Beginn des Events benachrichtigt werden.
+- **Anzeigen als**: Legen Sie fest, ob das Ereignis seine Gäste während der Veranstaltung verfügbar oder nicht verfügbar macht.
+- **Kalender**: Legen Sie fest, welchem Kalender das Ereignis zugeordnet ist.
+
+Wenn Sie Ihr Event definiert haben, klicken Sie auf <code className="action">Speichern</code>.
+
+<img className="thumbnail" alt="Zimbra - Calendar" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-calendar-event-add-02.png" loading="lazy" />
+
+##### 3 - Ereignis bearbeiten <a name="calendar-modify-event"></a>
+
+### Aufgaben <a name="tasks"></a>
+
+Aufgaben sind Elemente, die nicht mit Kalendern verknüpft sind. Ziel ist es, Aufgaben aufzulisten, ohne ein Ausführungs- oder Zeitintervall für diese Aufgaben festzulegen. Diese Aufgaben ergänzen Kalender.
+
+Die Aufgabenliste ist standardmäßig vorhanden und kann nicht gelöscht werden. Sie können jedoch eigene Aufgabenlisten erstellen.
+
+- **(1)**: Um eine neue Aufgabe zu erstellen, klicken Sie auf den Button <code className="action">...</code> und dann auf <code className="action">Neue Aufgabe</code> oder einfach auf den Button <code className="action">+</code> neben Ihrer Aufgabenliste.
+
+- **(2)**: Um eine neue Aufgabenliste zu erstellen, klicken Sie auf den Button <code className="action">...</code> und dann auf <code className="action">Liste erstellen</code>.
+
+<img className="thumbnail" alt="Zimbra - Calendar" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-calendar-task-01.png" loading="lazy" />
+
+Wenn Sie eine Aufgabe erstellen, können Sie ein Fälligkeitsdatum und eine Priorität festlegen, um die Aufgaben nach Wichtigkeit zu ordnen, und im Dropdown-Menü die entsprechende Aufgabenliste auswählen.
+
+Klicken Sie dann auf <code className="action">Speichern</code>, um die Erstellung Ihrer Aufgabe abzuschließen.
+
+<img className="thumbnail" alt="Zimbra - Calendar" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-calendar-task-02.png" loading="lazy" />
+
+### Storage / Speicherplatz <a name="storage"></a>
+
+:::tip[Success]
+Die Speicherplatzfunktion "Aktentasche" ist nur mit der Zimbra Pro Lösung verfügbar.
+
+:::
+
+
+Klicken Sie auf das <code className="action">Aktentasche</code> Symbol in der oberen Leiste, um auf Ihren Speicherplatz zuzugreifen. Sie können Ihre Dateien hochladen und dort freigeben.
+
+1. In der linken Spalte sehen Sie die Ordner für Ihren Speicherplatz.
+
+    - Um einen neuen Ordner zu erstellen, klicken Sie auf <code className="action">+ Einen Ordner hinzufügen</code> am Ende der Spalte. Geben Sie den gewünschten Namen ein und bestätigen Sie ihn mit der <code className="action">Enter</code> Taste.
+    - Um einen Unterordner zu erstellen, klicken Sie mit der rechten Maustaste auf einen der Ordner und danach auf <code className="action">Unterordner erstellen</code>. Geben Sie den gewünschten Namen ein und bestätigen Sie ihn mit <code className="action">Enter</code>.
+
+2. In der mittleren Spalte wird eine Liste der Dateien im ausgewählten Ordner angezeigt.
+
+3. Im rechten Fenster wird abhängig vom in der mittleren Spalte ausgewählten Dateityp eine Vorschau des Inhalts angezeigt. In der oberen Leiste der Vorschau werden die möglichen Aktionen für die ausgewählten Dateien angezeigt.
+
+<img className="thumbnail" alt="Zimbra - storage" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-storage-01.png" loading="lazy" />
+
+#### Hinzufügen einer Datei <a name="storage-add"></a>
+
+So fügen Sie eine Datei zu Ihrem Speicherplatz hinzu:
+
+1. Klicken Sie in der linken Spalte auf <code className="action">Hochladen</code>.
+2. Wählen Sie im Fenster "Dateisuche" die Dateien, die in Ihren Speicherplatz hochgeladen werden sollen.
+3. Klicken Sie auf <code className="action">Öffnen</code>, um Dateien in Ihren Speicherplatz hochzuladen.
+
+<img className="thumbnail" alt="Zimbra - storage" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-storage-add-01.png" loading="lazy" />
+
+#### Freigeben von Dateien und Ordnern <a name="storage-share"></a>
+
+Die Freigabe ermöglicht es Ihnen, Dritten außerhalb Ihres Zimbra Accounts Zugriff auf einen Ordner oder eine Datei in Ihrem Speicher zu gewähren.
+
+:::warning
+Freigabe für Ordner- und Dateiverwaltung ist nur mit einem Zimbra Pro Account möglich.
+
+:::
+
+
+<Tabs>
+  <Tab label="Datei freigeben">
+    1. Wählen Sie die freizugebende Datei aus und klicken Sie auf <code className="action">...Mehr</code>.
+    2. Klicken Sie auf <code className="action">Freigeben</code>.
+    3. Geben Sie die E-Mail-Adresse des Gastes ein und klicken Sie dann auf <code className="action">Hinzufügen</code>. Sie können mehrere E-Mail-Adressen hinzufügen.
+    4. Wählen Sie die Berechtigungen aus, die Sie dem Gast zuweisen möchten.
+    5. Klicken Sie auf <code className="action">Speichern</code>, um die Freigabe abzuschließen.
+    
+    <img className="thumbnail" alt="Zimbra - storage" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-storage-share-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Ordner freigeben">
+    1. Klicken Sie mit der rechten Maustaste auf den Ordner, den Sie freigeben möchten, und klicken Sie dann auf <code className="action">Freigeben</code>.
+    2. Geben Sie die E-Mail-Adresse des Gastes ein und klicken Sie dann auf <code className="action">Hinzufügen</code>. Sie können mehrere E-Mail-Adressen hinzufügen.
+    3. Wählen Sie die Berechtigungen aus, die Sie dem Gast zuweisen möchten.
+    4. Klicken Sie auf <code className="action">Speichern</code>, um die Freigabe abzuschließen.
+    
+    <img className="thumbnail" alt="Zimbra - storage" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-storage-share-02.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Der Gast erhält eine E-Mail, in der er aufgefordert wird, einen Zimbra Account mit Benutzername und Passwort zu erstellen. Dieses Konto ermöglicht den Zugriff auf eine Zimbra Oberfläche, die auf den gemeinsam genutzten Inhalt beschränkt ist.
+
+<img className="thumbnail" alt="Zimbra - storage" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-storage-share-invite-01.png" loading="lazy" />
+
+#### Dokument bearbeiten <a name="storage-onlyoffice"></a>
+
+:::tip[Success]
+Die Funktion zur Dokumentenbearbeitung im Bereich „Aktentasche" ist nur mit der Zimbra Pro Lösung verfügbar.
+
+:::
+
+
+Über die Aktentasche Ihres Zimbra Accounts können Sie Textdateien, Tabellen oder Präsentationen mit der integrierten ONLYOFFICE Suite bearbeiten. So bearbeiten Sie ein Dokument:
+
+- Klicken Sie auf das <code className="action">Aktentasche</code> Symbol in der oberen Leiste, um auf Ihren Speicherplatz zuzugreifen.
+- Wählen Sie die Datei aus, die Sie bearbeiten möchten.
+- Klicken Sie in der oberen Leiste auf <code className="action">Bearbeiten</code>.
+
+<img className="thumbnail" alt="Zimbra - storage" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-storage-onlyoffice-01.png" loading="lazy" />
+
+- Der ONLYOFFICE Editor wird in einem neuen Tab geöffnet.
+
+<img className="thumbnail" alt="Zimbra - storage" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-storage-onlyoffice-02.png" loading="lazy" />
+
+Die Änderungen, die Sie im Editor vornehmen, werden während der Bearbeitung oder beim Schließen des Tabs automatisch gespeichert.
+
+:::tip[Success]
+Wenn Sie weitere Informationen zur Bearbeitung von Dokumenten in ONLYOFFICE benötigen, [lesen Sie die offizielle Dokumentation](https://helpcenter.onlyoffice.com/docs).
+
+:::
+
+
+### Filter <a name="filters"></a>
+
+#### Grundlegendes zum Einrichten von Filtern <a name="filters-howto"></a>
+
+Das Einrichten von Filtern in Ihrem E-Mail-Account ist eine wichtige Einstellung, die es Ihnen erlaubt, eine automatische Sortierung beim Empfang Ihrer E-Mails einzurichten.
+
+Eine Filterregel in Zimbra besteht aus 4 Elementen:
+
+1 – [Vergleichsfeld](#filters-comp-field): Auf welchen Teil der E-Mail der Filter angewendet wird.<br/>
+2 – [Vergleichsoperator](#filters-comp-operator): Mit welcher Präzision soll der Filter angewendet werden.<br/>
+3 – [Wert](#filters-value): Welche Wörter/Elemente in der E-Mail werden vom Filter angesprochen.<br/>
+4 – [Filteraktionen](#filters-action): Wie der Filter mit der E-Mail umgehen soll.<br/>
+
+<img className="thumbnail" alt="Zimbra - Filter" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-filters.png" loading="lazy" />
+
+> Beispiel: Wenn das Feld **Betreff (1)** in der E-Mail das Wort `invoice` **(3)** **enthält (2)**, dann **weiterleiten an (4)** die Adresse `billing@example.com`.
+
+In den folgenden Abschnitten finden Sie Details zu den Elementen einer Filterregel.
+
+##### 1 - Vergleichsfeld <a name="filters-comp-field"></a>
+
+Das Vergleichsfeld gibt den Abschnitt der E-Mail an, der auf den Vergleichsoperator überprüft werden soll. Die Vergleichsfelder können die folgenden Felder enthalten:
+
+- **Von**: Einen Absender im Feld "Von" der E-Mail.
+- **An**: Nach Empfängernamen im Feld "An" suchen.
+- **CC**: Im Feld "CC" nach Empfängernamen suchen.
+- **Betreff**: Elemente im Betreff der E-Mail.
+- **Header-Name**: Wenn diese Option ausgewählt ist, wird vor dem Vergleichsoperator ein zusätzliches Eingabefeld angezeigt. In dieses Feld können Sie einen beliebigen Eintrag im E-Mail-Header eingeben. Sie können die Standardfelder "Von", "An", "Betreff" oder andere Felder angeben, die im E-Mail-Header vorhanden sein können. Beispielsweise können E-Mail-Server Felder in der Kopfzeile hinzufügen, die Sie mithilfe dieses Vergleichsfelds in Ihre Filterregel integrieren können.
+- **Inhalt**: Bezeichnet Wörter, die im Textkörper der E-Mail enthalten oder nicht enthalten sind.
+
+##### 2 - Vergleichsoperator <a name="filters-comp-operator"></a>
+
+Anhand des zuvor festgelegten Vergleichsfelds bestimmt der Vergleichsoperator die für den Wert anzuwendende Übereinstimmungsebene.
+
+:::info
+Welche Vergleichsoperatoren verfügbar sind, hängt vom ausgewählten Vergleichsfeld ab.
+
+:::
+
+
+- **Entspricht genau / Entspricht nicht genau**: Was Sie eingeben, muss genau übereinstimmen.<br/>
+    *Wenn Sie beispielsweise angeben*, dass der Betreff der E-Mail "house" ist, wird nur "house" und nicht "houses" oder "a blue house" zugeordnet.
+
+- **Enthält / Enthält nicht**: Was Sie eingeben, muss in den Feldern vorhanden sein.<br/>
+    *Wenn Sie beispielsweise angeben*, dass der Betreff der E-Mail "house" enthalten soll, wird die Übereinstimmung mit "house", "houses" und auch "a blue house" erfolgen.
+
+- **Entspricht der Platzhalter-Bedingung / Entspricht nicht der Platzhalter-Bedingung**: Gibt an, dass das Thema mit der angegebenen Zeichenfolge übereinstimmen muss, die Platzhalterzeichen enthält.
+
+- **Vorhanden / ist nicht vorhanden**: Gibt an, dass das angegebene Vergleichsfeld in der Nachricht vorhanden oder nicht vorhanden sein muss. Dieser Vergleichsoperator wird mit den Vergleichsfeldern "Header-Name" verwendet.
+
+> **Platzhalter in Filtern verwenden**
+>
+> Platzhalterzeichen (*Wildcards*) können im Eingabefeld eingegebn werden, wobei der Vergleichsoperator "**Entspricht der Platzhalter-Bedingung / Entspricht nicht der Platzhalter-Bedingung**" verwendet wird. Die verfügbaren Wildcards sind `*` und `?`.
+>
+> - Ein `*` steht für eine beliebige Anzahl von Zeichen eines beliebigen Typs, einschließlich Leerzeichen.<br/><br/> Die Suchzeichenfolge "blue\*house" entspräche also unter anderem "blue house", "houses" oder "blue wooden house", aber nicht "lightning blue house". <br/><br/> Die Suchzeichenfolge "w\*house" ergäbe die Übereinstimmungen "white house", "watch TV in your house", etc., aber nicht "watch TV in your house with a friend".
+>
+> - Ein `?` steht für genau ein Zeichen.<br/><br/>Die Suchzeichenfolge "blue?house" ergäbe z.B. die Übereinstimmungen "blue house", "blue-house" und "blue_house".
+>
+
+##### 3 - Wert <a name="filters-value"></a>
+
+Nachdem Sie das Feld und den Vergleichsoperator ausgewählt haben, geben Sie den Wert zur Übereinstimmung in das Feld ein.
+
+##### 4 - Filteraktionen <a name="filters-action"></a>
+
+Das Feld `Dann` legt fest, welche Aktion für die E-Mail ausgeführt werden soll, die die Filterbedingungen erfüllt. Filteraktionen können Löschen, Sortieren oder Markieren eingehender E-Mails sein.
+
+- **Im Posteingang aufbewahren**: Speichert E-Mails in Ihrem Posteingang. Wenn keine der Filterregeln mit einer E-Mail-Nachricht übereinstimmt, wird diese Aktion standardmäßig ausgeführt.
+- **In Ordner verschieben**: Verschiebt die E-Mail in den angegebenen Ordner.
+- **Endgültig löschen**: Löscht die E-Mail, ohne sie in den Papierkorb zu verschieben.
+- **Weiterleiten an**: Leitet die E-Mail an die angegebene Adresse weiter.
+- **Als gelesen markieren**
+- **Markierung**: Markiert die E-Mail mit einem Stern.
+
+#### Filter erstellen <a name="filters-creation"></a>
+
+Um auf die Erstellung von Filtern zuzugreifen, klicken Sie auf das Zahnrad oben rechts in Zimbra, dann auf <code className="action">Einstellungen</code> und schließlich auf <code className="action">Filter</code> in der linken Spalte.
+
+<img className="thumbnail" alt="Zimbra - Filter erstellen" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-21.png" loading="lazy" />
+
+Wenn Filter vorhanden sind, entspricht deren Anwendungsreihenfolge der Listenanordnung:
+
+- **(1)** Sie können eine Vorschau der einzelnen Filter anzeigen, indem Sie rechts neben dem Filter auf den Button <code className="action">...</code> und dann auf <code className="action">Details</code> klicken. Mit dem Button <code className="action">Anwenden</code> wird der Filter aktiv.
+
+- **(2)** Mit dieser Funktion kann ein Filter in der Liste verschoben werden, um seine Anwendungsreihenfolge zu ändern. Filter werden in der Reihenfolge angewendet, die anhand der Liste definiert ist.
+
+Klicken Sie auf den Button <code className="action">+ Filter hinzufügen</code>, um die Erstellung zu starten. Das Fenster für den einfachen Modus wird standardmäßig angezeigt. Sie können auf <code className="action">Wechseln zu "Erweitert"</code> klicken, um alle Vergleichsoperatoren anzuzeigen. Weitere Informationen finden Sie im Abschnitt "[Grundlegendes zum Einrichten von Filtern](#filters-howto)".
+
+<Tabs>
+  <Tab label="Einfacher Modus">
+    <img className="thumbnail" alt="Zimbra - Filter - Einfacher Modus" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-22.png" loading="lazy" />
+  </Tab>
+  <Tab label="Fortgeschrittener Modus">
+    <img className="thumbnail" alt="Zimbra - Filter - Erweiterter Modus" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-23.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Erstellen einer Weiterleitung <a name="filters-redirection"></a>
+
+Es ist möglich, einen Filter zu verwenden, um eingehende E-Mails an eine andere Adresse weiterzuleiten, über eine Weiterleitungsregel.
+
+:::info
+In unserem folgenden Beispiel haben wir entschieden, alle eingehenden E-Mails an eine andere E-Mail-Adresse weiterzuleiten. Um das Beispiel in den Screenshots zu verstehen, sind wir mit der Adresse **zimbra@mydomain.ovh** angemeldet und möchten die E-Mails dieses Kontos an die Adresse **address@example.com** weiterleiten.
+
+:::
+
+
+Um auf die Filter zuzugreifen und Ihre Weiterleitung zu erstellen, folgen Sie den folgenden Anweisungen:
+
+- Klicken Sie auf die Schaltfläche <code className="action">⚙</code> in der oberen rechten Ecke Ihres Webmail-Fensters.
+- Klicken Sie auf <code className="action">Einstellungen</code>.
+- Klicken Sie im Einstellungsfenster auf den Abschnitt <code className="action">Filter</code>.
+- Klicken Sie auf die Schaltfläche <code className="action">Filter hinzufügen</code>.
+    - Klicken Sie zunächst auf <u>Erweiterter Modus</u> in der oberen rechten Ecke, um diese Regel einzurichten.
+    - Geben Sie Ihrem Filter einen Namen im Feld `Filtername`.
+    - Belassen Sie das Dropdown-Menü auf `alle` in „Wenn eine eingehende Nachricht ... dieser Bedingungen erfüllt“.
+    - In der nächsten Zeile wählen Sie <code className="action">An</code> (To), lassen Sie <code className="action">enthält</code> (contains), und geben Sie die E-Mail-Adresse ein, mit der Sie angemeldet sind, in das Feld rechts daneben.
+    - Unter der Bezeichnung „Dann“ (Then) wählen Sie `weiterleiten an` (Forward to) im Dropdown-Menü und geben Sie die Ziel-E-Mail-Adresse ein.
+    - Klicken Sie auf <code className="action">+ Aktion hinzufügen</code> (Add an action) weiter unten, dann wählen Sie `Im Posteingang behalten` (Keep in Inbox).
+    - Klicken Sie auf <code className="action">Speichern</code> im Filterfenster und im Einstellungsfenster.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra_redirection03.png" loading="lazy" />
+
+### Delegationen <a name="delegations"></a>
+
+Um auf die Delegationseinstellungen zuzugreifen, klicken Sie auf das Zahnrad oben rechts in Zimbra, dann auf <code className="action">Einstellungen</code> und schließlich auf <code className="action">Mail schreiben</code> in der linken Spalte.
+
+Sie können den Zugang zu Ihrem E-Mail-Accounts einem anderen E-Mail-Account übertragen, aber nur wenn dieser zum selben E-Mail-Dienst gehört.
+
+:::info
+Ein E-Mail-Account eines anderen E-Mail-Diensts, der den selben Domainnamen verwendet, kann nicht delegiert werden.
+
+:::
+
+
+<img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/zimbra-delegation.png" loading="lazy" />
+
+**(1) Delegation**. Um Ihren E-Mail-Account an einen anderen Account zu delegieren, klicken Sie auf <code className="action">Stellvertreter hinzufügen</code>.
+
+- **Senden als**: Der delegierte Account kann eine E-Mail mit Ihrer E-Mail-Adresse verschicken, als hätten Sie selbst gesendet. Der Empfänger kann die E-Mail-Adresse des Delegationsaccounts nicht sehen.
+- **Senden im Auftrag von**: Der delegierte Account kann eine E-Mail mit ihrer E-Mail-Adresse und dem Vermerk "im Auftrag von" senden. Der Empfänger sieht beide am Mailverkehr beteiligten E-Mail-Adressen.
+
+**(2) Sendeeinstellungen übertragen**: Sie haben die folgenden Optionen zur Delegation Ihres E-Mail-Accounts.
+
+- **Gesendete Mails im meinem Ordner "Gesendet" speichern**: Wenn der delegierte Account eine E-Mail von Ihrer E-Mail-Adresse aus versendet, wird diese E-Mail in Ihrem "Gesendet"-Ordner abgelegt.
+- **Gesendete Mails im Ordner "Gesendet" des Stellvetreters speichern**: Wenn der delegierte Account eine E-Mail von Ihrer E-Mail-Adresse aus versendet, wird diese E-Mail im Ordner "Gesendet" des Delegationsaccounts abgelegt.
+- **Gesendete Mails in meinem Ordner "Gesendet" und im Ordner "Gesendet" des Stellvertreters speichern**: Wenn der delegierte Account eine E-Mail über Ihre E-Mail-Adresse sendet, wird diese E-Mail in Ihrem "Gesendet"-Ordner sowie im Ordner "Gesendet" des Delegationsaccounts abgelegt.
+- **Gesendete Nachrichten nicht speichern**: Wenn der delegierte Account eine E-Mail von Ihrer E-Mail-Adresse aus versendet, wird keine Kopie erstellt.
+
+### Signatur <a name="signatures"></a>
+
+Klicken Sie auf das Zahnrad oben rechts in Ihrem Zimbra-Interface, dann auf <code className="action">Einstellungen</code> und schließlich auf <code className="action">Signaturen</code> in der linken Spalte.
+
+Die Konfigurationsdetails finden Sie im Abschnitt "[Einstellungen für das Zimbra-Interface konfigurieren](#settings)" in dieser Anleitung (klicken Sie auf den Eintrag **Signaturen**).
+
+### Automatische Antworten <a name="auto-reply"></a>
+
+Wenn Sie abwesend ohne Zugriff auf Ihren E-Mail-Account sind, können Sie eine Abwesenheitsnachricht einrichten, die automatisch beim Eingang von Mails versendet wird. Im Zimbra Webmail heißt diese Funktion "Außer Haus".
+
+Um auf die Konfiguration des Auto-Responders zuzugreifen, klicken Sie auf das Zahnrad oben rechts in Ihrem Interface, dann auf <code className="action">Einstellungen</code> und schließlich auf <code className="action">Außer Haus</code>.
+
+`Automatische Antworten aktivieren während dieser Zeiten (bis einschließlich)`. Wenn diese Option angehakt ist, sind die automatischen Antworten aktiviert. Geben Sie den Inhalt Ihrer Abwesenheitsnotiz in das Feld ein.
+
+- Wenn Sie nicht sicher sind, wann Sie die automatischen Antworten aufheben möchten, aktivieren Sie die Option `Kein Enddatum`.
+- Der Button <code className="action">Beispieltext an mich senden</code> sendet eine Vorschau dieser automatischen Antwort an Ihren Posteingang.
+- `Externe Absender`: Sie können eine alternative Nachricht für Senderadressen außerhalb Ihres Domainnamens und/oder Kontaktverzeichnisses festlegen. Standardmäßig wird auf alle Mails mit derselben Nachricht geantwortet.
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Erste Schritte mit MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+[Passwort einer MX Plan E-Mail-Adresse ändern](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-change-password/)
+
+[Filter für Ihre E-Mail-Adressen erstellen](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/feature-filters/)
+
+[E-Mail-Weiterleitungen verwenden](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

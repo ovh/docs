@@ -1,0 +1,209 @@
+---
+title: Crea/ripristina il tuo server virtuale da un backup
+description: Scopri come creare o ripristinare il backup di un’istanza
+lastUpdated: 2025-11-04
+---
+
+import Api from '@components/Api';
+
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Obiettivo
+
+Lo Spazio Cliente OVHcloud ti permette di creare i [backup delle tue istanze](/guides/public-cloud/compute/save-an-instance/) in pochi click e automatizzare questo processo.
+Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se hai effettuato un’operazione scorretta sulla sua configurazione o semplicemente per crearne una nuova. Puoi utilizzare questi backup di istanze per due ragioni principali:
+
+- Creare un'istanza basata sul backup per duplicare l'istanza di origine ad esempio, se configuri un'infrastruttura di load balancing.
+- Ripristinare un'istanza a partire da un backup Ad esempio, se le modifiche recenti hanno interrotto le configurazioni critiche sull'istanza.
+
+**Questa guida ti mostra come duplicare o ripristinare le istanze utilizzando i backup.**
+
+## Prerequisiti
+
+- Disporre del backup di [un’istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/instance-backup/). A questo proposito, consulta [la guida dedicata alla creazione di un backup](/guides/public-cloud/compute/save-an-instance/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Percorso di navigazione:** <code className="action">Public Cloud</code> > Seleziona il tuo project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedura
+
+:::info
+Sono disponibili due tipi di backup:
+
+- Locale: memorizzato nella stessa regione della tua istanza.
+- Remoto: automaticamente replicato in un'altra regione a tua scelta.
+
+Le operazioni di **creazione** e **ripristino** di un’istanza da un backup remoto sono totalmente supportate tramite l’API OVHcloud, offrendo una maggiore flessibilità e una integrazione semplificata nei Suoi processi di automazione.
+
+**Nota:** Queste operazioni non sono ancora disponibili dallo Spazio Cliente OVHcloud.
+
+:::
+
+
+### Crea un’istanza a partire da un backup
+
+<Tabs>
+  <Tab label="Via lo Spazio Cliente OVHcloud">
+    Clicca quindi su <code className="action">Instance backup</code> nella barra di navigazione a sinistra sotto **Compute**.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup01.png" loading="lazy" />
+
+Clicca quindi sui <code className="action">...</code> a destra della copia di backup selezionata e infine su <code className="action">Crea un'istanza</code>.
+    
+    Verrà visualizzata una versione semplificata della pagina di creazione dell'istanza, che ti permetterà di personalizzare alcune opzioni.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup02.png" loading="lazy" />
+
+Alcuni elementi sono predefiniti:
+    
+    - **Localizzazione**: La tua istanza verrà creata nello stesso data center della tua copia di backup.
+    - **Immagine**: L'immagine corrisponderà alla tua copia di backup.
+    - **Modello**: Solo i modelli che possono ospitare la tua immagine saranno disponibili, in base al tuo limite.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup03.png" loading="lazy" />
+
+Definisci il nome della nuova istanza, la chiave SSH, il vRack e il periodo di fatturazione, quindi clicca sul pulsante <code className="action">Crea l'istanza</code>.
+    
+    Per ulteriori informazioni sulla creazione di un'istanza, consulta [questa guida](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/).
+    
+    :::info
+    Per creare un'istanza in un data center diverso da quello della copia di backup, sarà necessario trasferirla nella zona corrispondente. Riferisciti quindi alla [guida sulla copia di un'istanza da un data center a un altro](/guides/public-cloud/compute/transfer-instance-backup-from-one-datacentre-to-another/).
+
+    :::
+
+  </Tab>
+  <Tab label="Via la CLI OpenStack">
+    Per creare un'istanza a partire dalla tua copia di backup, utilizza l'ID della copia di backup come immagine con questo comando:
+    
+    ```bash
+    $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+    ```
+  </Tab>
+  <Tab label="Via Horizon">
+    Nell'interfaccia Horizon, clicca su <code className="action">Compute</code> nel menu a sinistra, quindi su <code className="action">Images</code>. Cerca l'immagine desiderata e clicca sul pulsante <code className="action">Launch</code> a destra della riga della tua immagine.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon1.png" loading="lazy" />
+
+Assegna un nome alla tua istanza nel campo dedicato e determina il numero di istanze da creare. Poi clicca sulla scheda <code className="action">Flavor</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-2" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon2.png" loading="lazy" />
+
+Seleziona il modello di istanza desiderato, quindi clicca sulla scheda <code className="action">Networks</code>.
+    
+    :::warning
+    Se la tua istanza è un server Windows, devi selezionare un flavor del tipo win-xx-xx (ad esempio, win-b2-15) e disporre di un'interfaccia pubblica sulla rete Ext-Net. Senza queste condizioni, l'autenticazione presso il KMS OVHcloud non sarà possibile, e il tuo server rimarrà con una [licenza non attivata](/guides/public-cloud/compute/activate-windows-license-private-mode/). Questo potrebbe comportare limitazioni, in particolare l'assenza di aggiornamenti. Nota che non è possibile ridimensionare un'istanza Linux (ad esempio b2-15) in un'istanza Windows (come win-b2-15). Per effettuare questa transizione, è necessario creare una nuova istanza.
+
+    :::
+
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-3" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon3.png" loading="lazy" />
+
+Seleziona la rete che desideri assegnare, quindi clicca sul pulsante <code className="action">Launch Instance</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-4" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon4.png" loading="lazy" />
+
+Puoi trovare lo stato della tua nuova istanza in <code className="action">Compute</code> nel menu a sinistra, quindi su <code className="action">Instances</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-5" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon5.png" loading="lazy" />
+  </Tab>
+  <Tab label="Via l'API OVHcloud">
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance"} />
+
+Compila le variabili:
+    
+    - **serviceName** : L'ID del progetto OVHcloud.
+    - **regionName** : Il nome della regione dove verrà creata l'istanza.
+    
+    Esempio del corpo della richiesta:
+    
+    ```json
+    {
+      "billingPeriod": "hourly",
+      "bootFrom": {
+        "imageId": "5cb8ea68-****-****-****-820be8346***"
+      },
+      "flavor": {
+        "id": "e81b46f8-****-****-****-cad655e65***"
+      },
+      "name": "newInstance",
+      "network": {
+        "public": true
+      },
+      "sshKey": {
+        "name": "MySSHKey"
+      }
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+### Ripristinare un’istanza a partire da un backup
+
+<Tabs>
+  <Tab label="Via lo Spazio Cliente OVHcloud">
+    Clicca quindi su <code className="action">Instanze</code> nella barra di navigazione a sinistra sotto **Compute**.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup04.png" loading="lazy" />
+
+Clicca sul pulsante <code className="action">...</code> a destra dell'istanza che desideri ripristinare e clicca su <code className="action">Modificare</code>.
+    
+    Verrà visualizzata la pagina di modifica dell'istanza. Potrai modificare:
+    
+    - il nome dell'istanza;
+    - l'immagine dell'istanza;
+    - il modello dell'istanza;
+    - la fatturazione dell'istanza (solo dal modello "Ora" al modello "Mensile").
+    
+    Esegui le modifiche necessarie e seleziona la scheda <code className="action">Backups</code> nella sezione "Immagine".
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup05.png" loading="lazy" />
+
+Seleziona un backup nell'elenco dei backup disponibili. Clicca su <code className="action">Modifica l'immagine</code> se sei certo di voler sostituire l'immagine corrente con il backup.
+    
+    L'istanza avrà lo stato `Riinstallazione` fino al completamento del processo. Potrebbe essere necessario aggiornare la pagina nel browser per visualizzare lo stato corrente.
+    
+    :::warning
+    Come indicato nel riquadro giallo, non sarà possibile recuperare alcun dato aggiunto dopo la creazione di questo backup.
+
+    :::
+
+  </Tab>
+  <Tab label="Via l'API OVHcloud">
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance/\\{instanceId\\}/reinstall"} />
+
+Compila le variabili:
+    
+    - **serviceName** : L'ID del progetto OVHcloud.
+    - **regionName** : Il nome della regione dove si trova l'istanza di origine.
+    - **instanceId** : L'ID unico dell'istanza.
+    
+    Esempio del corpo della richiesta:
+    
+    ```json
+    {
+      "imageId": "5cb8ea68-****-****-****-820be8346***",
+      "imageRegionName": "GRA11"
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+## Per saperne di più
+
+[Creazione e connessione a una prima istanza Public Cloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+[Effettuare lo Snapshot di un'istanza](/guides/public-cloud/compute/save-an-instance/)
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

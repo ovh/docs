@@ -1,0 +1,157 @@
+---
+title: Web Cloud Databases - Come autorizzare un indirizzo IP?
+description: Scopri come autorizzare uno o più indirizzi IP ad accedere alla tua soluzione Web Cloud Databases
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Obiettivo
+
+Le soluzioni [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) possono essere utilizzate con servizi OVHcloud o esterni a OVHcloud.
+
+Di default, per motivi di sicurezza, su queste soluzioni:
+
+- Solo gli indirizzi IP associati alla nostra infrastruttura di hosting condiviso sono autorizzati ad accedere al contenuto dei database.
+- L'accesso ai log della soluzione non è limitato in funzione degli indirizzi IP. In questo modo è possibile accedervi, ad esempio, da un computer.
+
+È necessario modificare queste autorizzazioni/restrizioni?
+
+**Questa guida ti mostra come autorizzare uno o più indirizzi IP ad accedere alla tua soluzione Web Cloud Databases.**
+
+## Prerequisiti
+
+- Disporre di una soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
+- Conoscere l’indirizzo IP (o la classe di indirizzi IP) da autorizzare sulla soluzione.
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Seleziona il tuo database service
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## Procedura
+
+### Autorizza un indirizzo IP o una classe di indirizzi IP
+
+:::info
+Ti ricordiamo che, se hai appena attivato la tua soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) e vuoi utilizzarla con un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/), gli indirizzi IP di queste soluzioni sono già autorizzati di default.
+
+:::
+
+
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), poi seleziona la soluzione interessata.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Nella nuova pagina clicca sulla scheda <code className="action">IP autorizzati</code>.
+    
+    <img className="thumbnail" alt="Authorised IPs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Nella nuova pagina, clicca sul pulsante <code className="action">Aggiungi un indirizzo IP/mask</code> situato sopra la tabella.
+    
+    <img className="thumbnail" alt="Authorised IPs interface" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png" loading="lazy" />
+    
+    :::tip[Success]
+    Per modificare un indirizzo IP o una classe di indirizzi IP già autorizzata, clicca direttamente nella tabella sul pulsante <code className="action">...</code> a destra della riga corrispondente all’indirizzo IP o alla classe di indirizzi IP da modificare e poi su <code className="action">Modifica la whitelist</code>.
+
+    :::
+
+  </Tab>
+  <Tab label="Passaggio 4">
+    Nella finestra che si apre, è necessario completare diversi campi:
+    
+    <img className="thumbnail" alt="Add an IP address or mask" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png" loading="lazy" />
+    
+    - <code className="action">IP/mask *</code>: Inserisci qui l’indirizzo IP (ad esempio: `203.0.113.44`) o la classe di indirizzi IP (ad esempio: `203.0.113.0/24` che rappresenta tutti gli indirizzi IP da `203.0.113.0` a `203.0.113.255`) che vuoi autorizzare sulla tua soluzione Web Cloud Databases.
+    - <code className="action">Descrizione</code> (facoltativo): Ad esempio, è possibile aggiungere informazioni sul ruolo dell’indirizzo IP o della classe di indirizzi IP in questione.
+    - <code className="action">Database</code>: Seleziona questa casella per consentire all’indirizzo IP o alla classe di indirizzi IP di accedere ai database presenti sulla soluzione Web Cloud Databases.
+    - <code className="action">SFTP</code>: spunta questa casella per autorizzare l’indirizzo IP o la classe di indirizzi IP ad accedere ai log della soluzione Web Cloud Databases.
+    
+    :::warning
+    È fortemente sconsigliato spuntare la casella <code className="action">Database</code> per autorizzare la classe di indirizzi IP `0.0.0.0/0` ad accedere ai tuoi database.
+    
+    In questo modo, tutti gli indirizzi IPv4 esistenti potranno accedere ai database.
+
+    :::
+
+    
+    Una volta inserite le informazioni, clicca sul pulsante <code className="action">Conferma</code>.
+  </Tab>
+</Tabs>
+
+
+## Casi particolari
+
+**Fare clic sui casi riportati di seguito per visualizzare le informazioni corrispondenti.**
+
+<details>
+
+<summary>Intervallo di indirizzi IP 0.0.0.0/0</summary>
+
+
+Quando attivi la tua soluzione Web Cloud Databases, di default è già presente una linea per la classe di indirizzi IP `0.0.0.0/0`, che autorizza l’accesso in **SFTP** alla soluzione.
+
+Questa autorizzazione è volontariamente impostata per permetterti di accedere ai file di log della tua soluzione Web Cloud Databases senza dover dichiarare l'indirizzo IP del tuo punto di accesso a Internet.
+
+Questo indirizzo IP può variare regolarmente in base ai provider di servizi Internet.
+
+Inoltre, ti consigliamo di **non** modificare questa autorizzazione e non autorizzare l'accesso ai database presenti sulla tua soluzione Web Cloud Databases.
+
+In questo modo, infatti, tutti gli indirizzi IPv4 esistenti potrebbero avere accesso ai database, con conseguente rischio per la sicurezza dei dati.
+
+</details>
+
+
+<details>
+
+<summary>L'autorizzazione di accesso agli hosting Web OVHcloud</summary>
+
+
+Quando attivi la tua soluzione Web Cloud Databases, l’autorizzazione di accesso agli hosting Web OVHcloud è attiva di default.
+
+Se vuoi disattivare questa autorizzazione perché non utilizzi un hosting Web con la tua soluzione Web Cloud Databases, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), poi seleziona la soluzione interessata.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Nella nuova pagina clicca sulla scheda <code className="action">IP autorizzati</code>.
+    
+    <img className="thumbnail" alt="Authorised IPs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Nella nuova pagina, deseleziona la casella di controllo che precede la voce <code className="action">Autorizza gli hosting Web OVHcloud ad accedere al database</code>.
+    
+    <img className="thumbnail" alt="Authorised IPs interface" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+## Per saperne di più
+ 
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

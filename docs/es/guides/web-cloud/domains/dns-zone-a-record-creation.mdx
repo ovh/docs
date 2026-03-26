@@ -1,0 +1,141 @@
+---
+title: Añadir un registro DNS de tipo A a un dominio
+description: Descubra cómo añadir un registro DNS de tipo A a una zona DNS gestionada en OVHcloud para un dominio
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+¿Desea que su sitio web sea accesible a través de su nombre de dominio? Para ello, el dominio debe apuntar a la dirección IP del servicio en el que esté alojado el sitio web (alojamiento web, servidor dedicado, VPS, etc.). A continuación, deberá configurar la zona DNS activa del dominio con un registro DNS de tipo A.
+
+**Descubra cómo añadir un registro DNS de tipo A a una zona DNS gestionada en OVHcloud para un dominio.**
+
+:::info
+Para modificar o eliminar un registro DNS de tipo A de una zona DNS de OVHcloud, siga [esta guía](/guides/web-cloud/domains/dns-zone-edit/).
+
+:::
+
+
+## Requisitos
+
+- Tener un [dominio](https://www.ovhcloud.com/es-es/domains/).
+- Tener una zona DNS asociada al dominio en OVHcloud.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Zonas DNS</code> > Seleccione su nombre de dominio
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## Procedimiento
+
+:::warning
+Añadir, modificar o eliminar registros DNS en una zona DNS activa es una operación delicada. En caso de duda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
+
+:::
+
+
+### Añadir un registro DNS de tipo A a un dominio
+
+Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone) y seleccione el dominio correspondiente.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en el botón <code className="action">Añadir un registro</code>.
+  </Tab>
+  <Tab label="Paso 3">
+    En la ventana que se abre, seleccione el tipo de registro <code className="action">A</code>.
+  </Tab>
+  <Tab label="Paso 4">
+    Introduzca la dirección IP (por ejemplo, `203.0.113.0`) del servicio en el que esté situado su sitio web (alojamiento web, servidor dedicado, VPS, etc.) en el campo `Destino *` y haga clic en <code className="action">Siguiente</code>.
+  </Tab>
+  <Tab label="Paso 5">
+    Revise el resumen y haga clic en <code className="action">Aceptar</code>. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Haga clic aquí para obtener más información.</summary>
+
+
+Consulte nuestras guías detalladas:
+
+- [Todo sobre la zona DNS](/guides/web-cloud/domains/dns-zone-general-information/).
+- [Todo sobre los registros DNS](/guides/web-cloud/domains/dns-zone-records/).
+- [Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+- [Alojar varios sitios web en un mismo hosting](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+- [Web hosting - Modificar un dominio ya asociado a un alojamiento](/guides/web-cloud/web-hosting/multisites-modify-domain/).
+
+</details>
+
+
+### Añadir un registro DNS de tipo A para el subdominio de un dominio
+
+Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone) y seleccione el dominio correspondiente.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en el botón <code className="action">Añadir un registro</code>.
+  </Tab>
+  <Tab label="Paso 3">
+    En la ventana que se abre, seleccione el tipo de registro <code className="action">A</code>.
+  </Tab>
+  <Tab label="Paso 4">
+    Introduzca el subdominio correspondiente (por ejemplo, `www` para el subdominio `www.domain.tld`) en el campo `Subdominio` y la dirección IP (por ejemplo, `203.0.113.0`) del servicio en el que esté situado el sitio web (alojamiento web, servidor dedicado, VPS, etc.) en el campo `Destino *`. Haga clic en <code className="action">Siguiente</code>.
+  </Tab>
+  <Tab label="Paso 5">
+    Revise el resumen y haga clic en <code className="action">Aceptar</code>. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Haga clic aquí para obtener más información.</summary>
+
+
+Consulte nuestras guías detalladas:
+
+- [Todo sobre la zona DNS](/guides/web-cloud/domains/dns-zone-general-information/).
+- [Todo sobre los registros DNS](/guides/web-cloud/domains/dns-zone-records/).
+- [¿Cómo crear un subdominio?](/guides/web-cloud/domains/domain-create-subdomains/).
+- [Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+- [Alojar varios sitios web en un mismo hosting](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+- [Web hosting - Modificar un dominio ya asociado a un alojamiento](/guides/web-cloud/web-hosting/multisites-modify-domain/).
+
+</details>
+
+
+## Más información
+
+[Todo sobre la zona DNS](/guides/web-cloud/domains/dns-zone-general-information/).
+
+[Todo sobre los registros DNS](/guides/web-cloud/domains/dns-zone-records/).
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+ 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+ 
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,281 @@
+---
+title: FAQ Public Cloud OVHcloud
+description: Znajdź najczęściej zadawane pytania dotyczące usług Public Cloud OVHcloud
+lastUpdated: 2026-03-24
+---
+
+
+
+## FAQ Public Cloud
+
+### Opcje i płatności
+
+<details>
+
+<summary>Jakie są metody fakturowania za usługę Public Cloud?</summary>
+
+
+Opłata za wykorzystane zasoby jest pobierana między pierwszym a piątym dniem każdego miesiąca i dotyczy zasobów wykorzystanych w poprzednim miesiącu. Jeśli wybrałeś opłatę miesięczną, abonament za przyszły miesiąc jest fakturowany w tym samym czasie co zużycie zasobów godzinowych za poprzedni miesiąc (instancje, Object Storage). W przypadku przejścia na abonament miesięczny, naliczana jest natychmiast proporcjonalna opłata za korzystanie z danego zasobu przez dni pozostałe do końca bieżącego miesiąca.
+Każda instancja jest płatna, jeśli nie została usunięta z Panelu klienta OVHcloud.
+Możesz monitorować zużycie zasobów dzięki prognozom uzyskiwanym na podstawie historii wcześniejszego zużycia. Możesz również wybrać opcję fakturowania każdego projektu Public Cloud oddzielnie, co pozwoli na ewentualne refakturowanie usługi w ramach Twojej firmy.
+
+Aby zmienić model rozliczenia na inny, zapoznaj się z naszym przewodnikiem [Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud](/guides/account-and-service-management/managing-billing-payments-and-services/changing-hourly-monthly-billing/).
+
+:::tip[Success]
+Skorzystaj z niższych cen wybierając zasoby Public Cloud na okres od 1 do 36 miesięcy. Więcej informacji znajdziesz na naszej stronie [Savings Plans](https://www.ovhcloud.com/pl/public-cloud/savings-plan/).
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>Jak przypisać instancję Public Cloud do Savings Plan, który właśnie zamówiłem?</summary>
+
+
+Nie musisz wykonywać żadnych czynności. Każda instancja, która została już utworzona (lub zostanie wkrótce utworzona) i odpowiada szablonowi wybranemu dla [Savings Plan](https://www.ovhcloud.com/pl/public-cloud/savings-plan/), zostanie automatycznie zintegrowana, pod warunkiem, że ilość zasobów Savings Plan nie zostanie wyczerpana.
+
+</details>
+
+
+<details>
+
+<summary>Jak zmieniać parametry instancji w sytuacji, gdy potrzebuję więcej lub mniej zasobów?</summary>
+
+
+Każda instancja może zostać zmieniona na wyższy model z tej samej gamy w Panelu klienta, klikając <code className="action">edytuj</code> na stronie instancji. Możesz również zmienić jej rozmiar na niższy model, jeśli została ona uruchomiona z opcją "flex". Opcja ta wymaga rozmiaru dysku 50 GB w przypadku wszystkich modeli i umożliwia zmianę rozmiaru dysku na obie strony.
+W każdym przypadku zmiana rozmiaru instancji wiąże się z jej ponownym uruchomieniem.
+
+</details>
+
+
+<details>
+
+<summary>Czy instancje Public Cloud są kompatybilne z cloud-init?</summary>
+
+
+Tak, obrazy cloud dostarczane przez OVHcloud zawierają skrypty cloud-init, które umożliwiają personalizację instancji w momencie ich uruchomienia. Infrastruktura dostarcza informacje o personalizacji instancji za pośrednictwem serwera metadanych, z którym bezpośrednio komunikuje się cloud-init.
+
+</details>
+
+
+<details>
+
+<summary>Czy wirtualizacja instancji jest możliwa?</summary>
+
+
+Tak i nie.
+
+Tak, ponieważ opcja jest aktywna (*flag CPU VMX* jest widoczny na Twojej instancji). Możesz więc korzystać z każdego rozwiązania wirtualizacji w swojej instancji (KVM, QEMU, VirtualBox, Xen, HyperV, itp.).
+
+Nie, ponieważ po przeprowadzeniu migracji instancji na żywo (może to nastąpić w każdej chwili, w oparciu o cykl życia hypervisora), Twoje jądro Linux może nie działać (kernel panic).
+
+Więcej informacji można znaleźć [na stronie internetowej](https://www.linux-kvm.org/page/Nested_Guests#Limitations).
+
+</details>
+
+
+### Logowanie do instancji
+
+<details>
+
+<summary>Jak połączyć się z instancją Public Cloud?</summary>
+
+
+Połączenie realizowane jest za pomocą kilku kluczy SSH, które chcesz skonfigurować podczas tworzenia instancji Public Cloud.
+
+Zapraszamy do zapoznania się z przewodnikiem [Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/).
+
+</details>
+
+
+<details>
+
+<summary>Zgubiłem lub chcę zmienić klucz SSH, jak to zrobić?</summary>
+
+
+Jeśli nie możesz się zalogować po utracie klucza prywatnego, zmień klucz publiczny Twojej instancji zmieniając go w tryb "Rescue".
+
+Zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](/guides/public-cloud/compute/replacing-lost-ssh-key/).
+
+</details>
+
+
+<details>
+
+<summary>Jak tworzyć użytkowników OpenStack i zarządzać nimi?</summary>
+
+
+**[Opcjonalnie od września 2023]** Użytkownik [OpenStack](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/) może zostać utworzony do korzystania z interfejsów API Horizon lub OpenStack. Jest to opcjonalne, ponieważ wdrożyliśmy logowanie jednokrotne (SSO: *Single Sign-On*) między Panelem klienta OVHcloud a Horizon.
+
+</details>
+
+
+### Kopii zapasowych
+
+<details>
+
+<summary>Czy można wykonać kopię zapasową serwerów Public Cloud?</summary>
+
+
+Możesz w dowolnym momencie utworzyć w Panelu klienta OVHcloud kopię zapasową instancji. Dzięki kopii zapasowej możesz przywrócić Twoją instancję z pierwotną konfiguracją lub odtworzyć instancję. Kopie te są przechowywane i fakturowane tak samo, jak obrazy w "Private Image". Dzięki API OpenStack będziesz mógł je pobrać i umieścić poza infrastrukturą OVHcloud lub w innych projektach.
+
+Zapoznaj się z przewodnikiem dotyczącym [Tworzenia kopii zapasowej instancji](/guides/public-cloud/compute/save-an-instance/).
+
+</details>
+
+
+<details>
+
+<summary>Czy można dynamicznie zwiększać rozmiar wolumenu jednocześnie zapisując dane na dysku?</summary>
+
+
+Nie, przed zwiększeniem rozmiaru wolumenu, należy odłączyć dysk.
+
+</details>
+
+
+<details>
+
+<summary>Ile dodatkowych wolumenów mogę przypisać do każdej instancji?</summary>
+
+
+Możesz przypisać do 25 dodatkowych wolumenów do każdej instancji.
+
+</details>
+
+
+### Sieć
+
+<details>
+
+<summary>Ile adresów IPv6 jest dostarczanych z moją instancją?</summary>
+
+
+Każda instancja jest dostarczana z jednym adresem IPv6.
+
+</details>
+
+
+<details>
+
+<summary>Czy mogę zmienić publiczny adres IP mojej instancji?</summary>
+
+
+Publiczne adresy IP są automatycznie przypisane do instancji i dlatego nie można ich zmienić. Zalecamy użycie adresu Additional IP, aby zarządzać publicznym adresem IP instancji. W ten sposób, bez względu na publiczny adres przypisany automatycznie do instancji, możesz dodać jeden lub kilka adresów Additional IP do Twojej instancji.
+
+Zapraszamy do zapoznania się z przewodnikiem [Wykupienie adresu Additional IP](/guides/public-cloud/public-cloud-network-services/additional-ip-buy/).
+
+</details>
+
+
+<details>
+
+<summary>Ile dodatkowych Additional IP mogę dołączyć do każdej instancji?</summary>
+
+
+Do każdej instancji można dołączyć maksymalnie 256 dodatkowych Additional IP.
+
+</details>
+
+
+<details>
+
+<summary>Jak mogę utworzyć prywatną sieć łączącą moje serwery?</summary>
+
+
+Public Cloud jest zintegrowany z rozwiązaniem SDN (software-defined network). Umożliwia ona dynamiczne tworzenie prywatnych sieci, a następnie podłączenie ich do instancji za pośrednictwem Panelu klienta lub API.
+Prywatne sieci opierają się na technologii vRack używanej również przez inne usługi firmy, takie jak Private Cloud lub serwery dedykowane. Dzięki temu możesz w sposób odizolowany i bezpieczny połączyć wszystkie elementy infrastruktury z OVHcloud.
+
+Zapraszamy do zapoznania się z przewodnikiem [Konfiguracja usługi vRack Public Cloud](/guides/public-cloud/public-cloud-network-services/getting-started-09-creating-vrack-with-openstack/).
+
+Prywatna sieć domyślnie dysponuje natywnymi zabezpieczeniami sieciowymi Openstack. Zawierają one różne mechanizmy, takie jak ochrona przed spoofingiem IP.<br/>
+Po stronie instancji może to prowadzić do blokowania pakietów sieciowych w zależności od ich zastosowania (pfSense, router, protokół CARP, itp...).
+
+W zależności od Twoich potrzeb będziesz musiał wyłączyć funkcję `Port Security` w porcie lub sieci prywatnej.
+Zapraszamy do zapoznania się z przewodnikiem [zarządzanie regułami firewalla i portu security w sieciach wykorzystujących OpenStack CLI](/guides/public-cloud/public-cloud-cross-functional/security-group-private-network/).
+
+Szczegóły znajdziesz również na stronie [dokumentacja OpenStack](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) lub na stronie [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
+
+</details>
+
+
+<details>
+
+<summary>Jakie są najlepsze praktyki wysyłania e-maili z instancji Public Cloud?</summary>
+
+
+Aby zapobiec oznaczaniu Twoich e-maili jako spam, musisz prawidłowo skonfigurować swoją infrastrukturę.
+
+Obejmuje to:
+
+- uwierzytelnianie e-maili (SPF, DKIM, DMARC),
+- konfigurację reverse DNS (PTR),
+- przestrzeganie najlepszych praktyk dostawców poczty elektronicznej.
+
+Więcej informacji znajdziesz w naszym przewodniku: [Jak zapobiec oznaczaniu e-maili jako spam](/guides/bare-metal-cloud/dedicated-servers/mail-sending-optimization/).
+
+</details>
+
+
+### Bezpieczeństwo
+
+<details>
+
+<summary>W jaki sposób moje serwery są zabezpieczone?</summary>
+
+
+OVHcloud chroni całą swoją infrastrukturę dzięki swojemu unikalnemu rozwiązaniu anty-DDoS. Ponadto możesz stworzyć grupy bezpieczeństwa OpenStack. Jest to odpowiednik zapory zarządzany bezpośrednio na poziomie infrastruktury OpenStack, przed Twoimi instancjami.
+
+Zapraszamy do zapoznania się z przewodnikiem [Konfiguracja grupy zabezpieczeń](/guides/public-cloud/compute/setup-security-group/).
+
+Zabezpieczenia te, w połączeniu z zabezpieczeniami, które możesz zainstalować na Twoich serwerach, zwiększą niezawodność wdrożenia.
+
+</details>
+
+
+<details>
+
+<summary>Jak sprawdzić, czy moja instancja jest podatna na atak MDS?</summary>
+
+
+Wrażliwość na [lukę MDS](https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html) można sprawdzić za pomocą polecenia:
+
+```bash
+cat /sys/devices/system/cpu/vulnerabilities/mds
+```
+
+Jeśli wynik jest `Vulnerable`, nie bój się, bazowy hypervisor chroni Ciebie.
+
+Możesz jednak filtrować lukę bezpośrednio do Twojej instancji, wykonując reboot hard Twojej instancji albo [w Panelu klienta OVHcloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) albo za pomocą polecenia takiego jak to:
+
+```bash
+openstack server reboot --hard $serverID
+```
+
+</details>
+
+
+<details>
+
+<summary>Czy moja instancja jest nadal podatna na uszkodzenia w trybie SSBD?</summary>
+
+
+Wrażliwość na [lukę SSBD](https://www.kernel.org/doc/html/latest/userspace-api/spec_ctrl.html) można sprawdzić za pomocą polecenia:
+
+```bash
+cat /sys/devices/system/cpu/vulnerabilities/ssbd
+```
+
+Nawet jeśli wynik jest `Vulnerable`, Twoja instancja jest jednocześnie chroniona przed tym problemem.
+
+*flag CPU SSBD* nie jest dostępny dla Twojej instancji, ponieważ może spowodować niestabilność niektórych systemów operacyjnych.
+
+</details>
+
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,325 @@
+---
+title: Deploying a Hello World application
+description: Find out how to deploy a Hello World application with the OVHcloud Control Panel and the OVHcloud API
+lastUpdated: 2026-02-25
+---
+
+import Api from '@components/Api';
+
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVHcloud Control Panel and the OVHcloud API.
+
+In this guide, we’ll walk you through deploying a Hello World application on your OVHcloud Managed Kubernetes Service. You can manage your cluster either via the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) or the [OVHcloud API](https://eu.api.ovh.com/).
+
+## Requirements
+
+- You should have already created a cluster on the OVHcloud Managed Kubernetes service.
+- You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/) for this tool on the Kubernetes official site.
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+:::warning
+For API users, this guide assumes you are familiar with the [OVHcloud API](https://eu.api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/guides/manage-and-operate/api/first-steps/).
+
+:::
+
+
+## Instructions
+
+### Getting your cluster information
+
+<Tabs>
+  <Tab label="Via the OVHcloud Control Panel">
+    Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on <code className="action">Managed Kubernetes Service</code> in the left-hand menu.
+    
+    <img className="thumbnail" alt="Select your cluster" src="/images/public-cloud/containers-orchestration/managed-kubernetes/deploying-hello-world/select-cluster.png" loading="lazy" />
+
+Click on your cluster to access its information.
+    
+    <img className="thumbnail" alt="OVHcloud Managed Kubernetes cluster view" src="/images/public-cloud/containers-orchestration/managed-kubernetes/deploying-hello-world/cluster-infos.png" loading="lazy" />
+
+In this administration UI, you have several tabs included:
+    
+    - **Service:** A global view of your cluster, with important information like the status, API URL, and `kubectl` configuration file.
+    
+    - **Node pools:** The node pools of your cluster, with options for adding, configuring or removing them.
+    
+    - **APIServer access:** The possibility to configure the access to the API-server.
+    
+    - **Audit Logs:** Logs of your Kubernetes cluster’s control plane.
+  </Tab>
+  <Tab label="Via the OVHcloud API">
+    #### List your OVHcloud Managed Kubernetes clusters
+    
+    The `GET /cloud/project/{serviceName}/kube` API endpoint lists all the available Kubernetes clusters:
+    
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/kube"} />
+
+**Result:**
+    
+    ```json
+    [
+      "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    ]
+    ```
+    
+    By calling it, you can view a list of values. Note down the ID of the cluster you want to use. In this example, we will refer to it as `kubeId`.
+    
+    #### Getting informations
+    
+    The `GET /cloud/project/{serviceName}/kube/{kubeId}` API endpoint provides important information about your Managed Kubernetes cluster, including its region, status and URL.
+    
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/kube/\\{kubeId\\}"} />
+
+**Result:**
+    
+    ```json
+    {
+      "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "region": "GRA5",
+      "name": "my-tiny-cluster",
+      "url": "xxxxxx.c2.gra.k8s.ovh.net",
+      "nodesUrl": "xxxxxx.nodes.c2.gra.k8s.ovh.net",
+      "version": "1.34.1",
+      "nextUpgradeVersions": [],
+      "customization": {
+        "apiServer": {
+          "admissionPlugins": {
+            "enabled": [
+              "AlwaysPullImages",
+              "NodeRestriction"
+            ],
+            "disabled": []
+          }
+        }
+      },
+      "status": "READY",
+      "updatePolicy": "ALWAYS_UPDATE",
+      "isUpToDate": true,
+      "controlPlaneIsUpToDate": true,
+      "privateNetworkId": null,
+      "createdAt": "2022-09-22T06:57:58Z",
+      "updatedAt": "2022-12-15T15:14:44Z"
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+### Configuring the default settings for the kubectl CLI
+
+Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](/guides/public-cloud/containers-orchestration/managed-kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster/) documentation for this part of the process.
+
+### Add a node pool
+
+<Tabs>
+  <Tab label="Via the OVHcloud Control Panel">
+    In the <code className="action">Node pools</code> tab of the administration UI, click the <code className="action">Add a node pool</code> button.
+    
+    Enter a node pool name:
+    
+    <img className="thumbnail" alt="Add a node pool - Set a name" src="/images/public-cloud/containers-orchestration/managed-kubernetes/deploying-hello-world/add-node-pool1.png" loading="lazy" />
+    
+    :::info
+    Only alphanumerical characters and "-" are allowed for the node pool name. You can’t use characters like “_”, “.” or "/" as a separator in a node pool name.
+
+    :::
+
+    
+    Choose a flavor (machine type) for your node pool, B2-7 for example:
+    
+    <img className="thumbnail" alt="Add a node pool - Choose a flavor" src="/images/public-cloud/containers-orchestration/managed-kubernetes/deploying-hello-world/add-node-pool2.png" loading="lazy" />
+
+Configure the number of nodes you want to add to your node pool, 3 for example with Autoscaling disabled.
+    
+    <img className="thumbnail" alt="Add a node pool - Set the number of nodes" src="/images/public-cloud/containers-orchestration/managed-kubernetes/deploying-hello-world/add-node-pool3.png" loading="lazy" />
+
+Define the billing method: monthly or hourly.
+    
+    <img className="thumbnail" alt="Add a node pool - Choose a flavor" src="/images/public-cloud/containers-orchestration/managed-kubernetes/deploying-hello-world/add-node-pool4.png" loading="lazy" />
+  </Tab>
+  <Tab label="Via the OVHcloud API">
+    The first element needed to deploy the *Hello World* application is a `node pool`, a pool of machines, in your cluster. To create this node pool, you can use the `POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool` endpoint, which will deploy a node pool for your cluster on the Public Cloud.
+    
+    You will need to give it several information but only the `flavorName` parameter (the flavor of the instance you want to create) is a required parameter. If you don't fill a value for `desiredNodes` parameter, the default value will be 1, so you will create a new node pool with one node.
+    For this tutorial, we choose a general purpose node, such as the `b2-7` flavor.
+    
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/kube/\\{kubeId\\}/nodepool"} />
+
+**Result:**
+    
+    ```json
+    {
+      "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "projectId": "",
+      "name": "nodepool-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "flavor": "b2-7",
+      "status": "INSTALLING",
+      "sizeStatus": "CAPACITY_OK",
+      "autoscale": false,
+      "monthlyBilled": false,
+      "antiAffinity": false,
+      "desiredNodes": 0,
+      "minNodes": 0,
+      "maxNodes": 100,
+      "currentNodes": 0,
+      "availableNodes": 0,
+      "upToDateNodes": 0,
+      "createdAt": "2023-01-13T08:52:27Z",
+      "updatedAt": "2023-01-13T08:52:27Z",
+      "autoscaling": {
+        "scaleDownUtilizationThreshold": 0.5,
+        "scaleDownUnneededTimeSeconds": 600,
+        "scaleDownUnreadyTimeSeconds": 1200
+      },
+      "template": {
+        "metadata": {
+          "labels": {},
+          "annotations": {},
+          "finalizers": []
+        },
+        "spec": {
+          "unschedulable": false,
+          "taints": []
+        }
+      }
+    }
+    ```
+    
+    The API will return you the new node pool information.
+  </Tab>
+</Tabs>
+
+
+### Verify that your node pool is ready
+
+<Tabs>
+  <Tab label="Via the OVHcloud Control Panel">
+    In the *Computer Nodes* tab, you can inspect the state of your Node pools. The node pool you have just created should now be in an *Installing* state. The node pool installation can take a minute, so feel free to take a short break, then try again until it's ready.
+    
+    <img className="thumbnail" alt="Verify your node is ready" src="/images/public-cloud/containers-orchestration/managed-kubernetes/deploying-hello-world/node-pool-status.png" loading="lazy" />
+
+After its creation, click on the node pool in order to list its nodes details.
+    
+    <img className="thumbnail" alt="Node pool details" src="/images/public-cloud/containers-orchestration/managed-kubernetes/deploying-hello-world/node-pool.png" loading="lazy" />
+  </Tab>
+  <Tab label="Via the OVHcloud API">
+    You can use the `GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool` entrypoint to list all your node pools. Look for the node pool you've just created, and verify the status is `READY`. 
+    
+    :::info
+    The node pool installation can take a few minutes.
+
+    :::
+
+    
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/kube/\\{kubeId\\}/nodepool"} />
+
+**Result:**
+    
+    ```json
+    [
+      {
+        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "projectId": "a123b4c56d789e0ab12c345d678efa12",
+        "name": "nodepool-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "flavor": "b2-7",
+        "status": "READY",
+        "sizeStatus": "CAPACITY_OK",
+        "autoscale": false,
+        "monthlyBilled": false,
+        "antiAffinity": false,
+        "desiredNodes": 1,
+        "minNodes": 0,
+        "maxNodes": 100,
+        "currentNodes": 1,
+        "availableNodes": 1,
+        "upToDateNodes": 1,
+        "createdAt": "2022-09-22T06:58:09Z",
+        "updatedAt": "2022-12-15T15:14:33Z",
+        "autoscaling": {
+          "scaleDownUtilizationThreshold": 0.5,
+          "scaleDownUnneededTimeSeconds": 600,
+          "scaleDownUnreadyTimeSeconds": 1200
+        },
+        "template": {
+          "metadata": {
+            "labels": {},
+            "annotations": {},
+            "finalizers": []
+          },
+          "spec": {
+            "unschedulable": false,
+            "taints": []
+          }
+        }
+      },
+      {
+        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "projectId": "a123b4c56d789e0ab12c345d678efa12",
+        "name": "nodepool-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "flavor": "b2-7",
+        "status": "READY",
+        "sizeStatus": "CAPACITY_OK",
+        "autoscale": false,
+        "monthlyBilled": false,
+        "antiAffinity": false,
+        "desiredNodes": 0,
+        "minNodes": 0,
+        "maxNodes": 100,
+        "currentNodes": 0,
+        "availableNodes": 0,
+        "upToDateNodes": 0,
+        "createdAt": "2023-01-13T08:52:27Z",
+        "updatedAt": "2023-01-13T08:52:39Z",
+        "autoscaling": {
+          "scaleDownUtilizationThreshold": 0.5,
+          "scaleDownUnneededTimeSeconds": 600,
+          "scaleDownUnreadyTimeSeconds": 1200
+        },
+        "template": {
+          "metadata": {
+            "labels": {},
+            "annotations": {},
+            "finalizers": []
+          },
+          "spec": {
+            "unschedulable": false,
+            "taints": []
+          }
+        }
+      }
+    ]
+    ```
+  </Tab>
+</Tabs>
+
+
+### Deploy your first application
+
+You're now ready to deploy your first application in your OVHcloud Managed Kubernetes cluster.
+
+For more details about this process, you can refer to the [deploying an application](/guides/public-cloud/containers-orchestration/managed-kubernetes/deploying-an-application/) documentation.
+
+## Go further
+
+As you can see in the Kubernetes section of the [API Explorer](https://eu.api.ovh.com/console/), a lot of useful API endpoints exist to manage your Kubernetes clusters. Feel free to use the API endpoints depending on your use cases.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

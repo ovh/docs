@@ -1,0 +1,108 @@
+---
+title: Introduction to the OVHcloud Load Balancer
+description: Discover the OVHcloud Load Balancer solution for distributing and securing your traffic
+lastUpdated: 2025-10-29
+---
+
+## Objective
+
+The **OVHcloud Load Balancer** is a fully managed service designed to ensure high availability, performance, and scalability for your applications.
+Its main role is to distribute workloads across several servers or applications.
+Simply configure your services behind the Load Balancer — OVHcloud handles redundancy, security, and global traffic distribution.
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es)
+- At least one service to balance (Dedicated Server, VPS, Public Cloud instance, etc.)
+
+## Instructions
+
+The Load Balancer leverages **industry-standard open-source technologies** to handle different traffic types:
+
+| Type | Description | Advantages | Technology |
+|---|---|---|---|
+| HTTP/HTTPS | All web services and APIs | Optimized for L7 (application layer) processing, URL redirection, headers, ACLs | HAProxy |
+| TCP | Non-HTTP network services | Supports all TCP applications | HAProxy |
+| UDP | All UDP traffic | Supports all UDP applications | Nginx |
+
+### Key Features
+
+- **Built-in DDoS protection** across all traffic types
+- **Global Anycast network** for optimal latency and failover
+- **Advanced HTTP/HTTPS support**: redirections, headers, ACLs, etc.
+- **Additional IP and vRack compatibility**: improve availability and performance with advanced networking
+- **High availability**: isolated redundant instances ensure resilience
+- **Scalability**: add or remove servers and farms without downtime
+
+### Architecture Overview
+
+The Load Balancer consists of three main components:
+
+| Component | Function |
+|---|---|
+| **Front-end** | Defines the entry protocol (HTTP/TCP/UDP) and listening port |
+| **Farm** | Distributes traffic from the front-end across servers |
+| **Server** | Handles inbound and outbound application traffic |
+
+<img className="thumbnail" alt="General diagram" src="/images/network/load-balancer/use-presentation/diag_gen2025.png" loading="lazy" />
+
+## Benefits
+
+### Balance and Scale Seamlessly
+
+Distribute workloads across multiple servers and scale horizontally without service interruption.
+
+<img className="thumbnail" alt="Balance the load" src="/images/network/load-balancer/use-presentation/distribute_load2025.png" loading="lazy" />
+
+### High Availability and Uptime
+
+Automatic health checks detect unresponsive servers and reroute traffic instantly, minimizing downtime.
+
+<img className="thumbnail" alt="Eliminate downtime" src="/images/network/load-balancer/use-presentation/eliminate_downtimes2025.png" loading="lazy" />
+
+### Simplified Maintenance
+
+Place a farm or server in downtime mode for maintenance without impacting users, then reintegrate it seamlessly.
+
+<img className="thumbnail" alt="Make maintenance easier" src="/images/network/load-balancer/use-presentation/facilitate_maintenance2025.png" loading="lazy" />
+
+### Service Integration
+
+Easily combine with other OVHcloud services:
+
+- Public Cloud instances
+- VPS
+- Dedicated Servers
+- vRack private networking
+
+<img className="thumbnail" alt="Combine your services" src="/images/network/load-balancer/use-presentation/mix_and_match2025.png" loading="lazy" />
+
+### Geographic Distribution (Anycast)
+
+Serve users worldwide with low latency and resilient routing.
+
+<img className="thumbnail" alt="Anycast" src="/images/network/load-balancer/use-presentation/anycast2025.png" loading="lazy" />
+
+### Versatile Use Cases
+
+Support multiple services over HTTP(S), TCP, and UDP traffic.
+
+#### Email server
+
+Balance the load between your email servers.
+
+<img className="thumbnail" alt="Mail" src="/images/network/load-balancer/use-presentation/mail2025.png" loading="lazy" />
+
+#### Databases
+
+Balance your databases, and make them redundant.
+
+<img className="thumbnail" alt="Databases" src="/images/network/load-balancer/use-presentation/database2025.png" loading="lazy" />
+
+## Go Further
+
+- [Find out more about load balancing (Wikipedia)](https://en.wikipedia.org/wiki/Load_balancing)
+- [HAProxy official site](http://www.haproxy.org/#desc)
+- [Nginx documentation](https://nginx.org/en/docs/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

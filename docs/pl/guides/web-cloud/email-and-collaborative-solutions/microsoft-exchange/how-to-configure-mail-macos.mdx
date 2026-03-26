@@ -1,0 +1,122 @@
+---
+title: Exchange - Konfiguracja konta e-mail w aplikacji Mail na macOS
+description: Dowiedz się, jak skonfigurować konto Exchange w aplikacji Mail na macOS
+lastUpdated: 2025-04-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych.  Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji. Aplikacja Mail na macOS jest dostępna bezpłatnie dla wszystkich komputerów Mac.
+
+**Dowiedz się, jak skonfigurować Twoje konto e-mail Exchange w aplikacji Mail na urządzeniach z systemem macOS.**
+
+:::warning
+OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+
+Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego webmastera](https://partner.ovhcloud.com/pl/directory/) lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "Sprawdź również".
+
+:::
+
+
+## Wymagania początkowe
+
+- Posiadanie konta e-mail [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
+- Instalacja programu Mail na Twoim urządzeniu Mac
+- Dane do logowania do konta e-mail, które chcesz skonfigurować
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## W praktyce
+
+### Dodaj konto <a name="addaccount"></a>
+
+:::warning
+Poniżej stosujemy przykładową nazwę serwera: ex?.mail.ovh.net. Chcesz zastąpić "?" cyfrą wskazującą serwer Twojej usługi Exchange.
+
+Kliknij [ten link](https://manager.eu.ovhcloud.com/#/web/exchange), aby uzyskać dostęp do sekcji <code className="action">Exchange</code>. Nazwa serwera wyświetla się w strefie **Połączenie** w zakładce <code className="action">Informacje ogólne</code>.
+
+:::
+
+
+- **Podczas pierwszego uruchomienia aplikacji** : bezpośrednio wyświetli się asystent konfiguracji i poprosi o wybranie typu konta.
+
+- **Jeśli inne konto zostało wcześniej skonfigurowane** : kliknij <code className="action">Mail</code> na pasku menu na górze Twojego ekranu, a następnie kliknij <code className="action">Konta</code>.
+
+<Tabs>
+  <Tab label="Etap 1">
+    Wybierz <code className="action">Exchange</code><br/><br/>
+    <img className="thumbnail" alt="MailMac" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-mail-macos/mail-mac-exchange01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 2">
+    Wpisz **Nazwa** Twojego konta e-mail i **Adres e-mail**, a następnie kliknij <code className="action">Zaloguj się</code> <br/><br/>
+    <img className="thumbnail" alt="MailMac" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-mail-macos/mail-mac-exchange02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 3">
+    W kolejnym oknie kliknij <code className="action">Konfiguracja ręczna</code> : <br/><br/>- Ustaw **Nazwa**, która będzie się wyświetlała w interfejsie nawigacji <br/>- Pozostaw swój **adres e-mail**<br/>- Pozostaw swoje **Hasło** wprowadzone <br/><br/>Aby dokończyć konfigurację, kliknij <code className="action">Zaloguj się</code> <br/><br/>
+    <img className="thumbnail" alt="MailMac" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-mail-macos/mail-mac-exchange03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 4">
+    Wpisz: <br/><br/>- Adres e-mail: pozostaw pełny adres e-mail<br/>- Nazwa użytkownika: pozostaw pełny adres e-mail <br/>- Hasło: zostaw swoje **hasło**<br/> - Wewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?** na [numer serwera Exchange](#addaccount))<br/>- Zewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?** na [numer serwera Exchange](#addaccount))<br/><br/>
+    
+    :::warning
+    Wiadomość jest wyświetlana na czerwono "**Nie można sprawdzić nazwy lub hasła konta**", gdy po raz pierwszy zostanie wyświetlone okno. Jeśli jednak ten komunikat będzie się powtarzać po zatwierdzeniu, wprowadzone informacje będą błędne.<br/><br/>
+
+    :::
+
+    
+    <img className="thumbnail" alt="MailMac" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-mail-macos/mail-mac-exchange04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 5">
+    Oprócz e-maili możesz wybrać inne funkcje Exchange, którymi chcesz zarządzać z poziomu komputera Mac. <br/><br/><img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-mail-macos/mail-mac-exchange05.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Użyj konta e-mail
+
+Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
+
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem [Webmail](https://www.ovhcloud.com/pl/mail/). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/).
+
+### Pobierz kopię zapasową Twojego konta e-mail
+
+Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu sprawdź sekcję "**Eksport**" w części "**Mail na Mac OS**" w naszym przewodniku [Ręczna migracja Twojego konta e-mail](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration#eksport/).
+
+### Zmień istniejące parametry
+
+Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do parametrów konta, aby je zmienić:
+
+- Kliknij <code className="action">Mail</code> na pasku menu na górze Twojego ekranu, następnie <code className="action">Preferencje...</code> **ou** <code className="action">Ustawienia...</code> w zależności od Twojej wersji macOS.
+- W zakładce <code className="action">Konta</code> wybierz dane konto w kolumnie po lewej stronie, następnie kliknij <code className="action">Ustawienia serwera</code>.
+
+<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-mail-macos/mail-mac-exchange05.png" loading="lazy" />
+
+## Sprawdź również
+
+:::info
+Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na urządzeniach z systemem macOS, skorzystaj z [Centrum pomocy Apple](https://support.apple.com/pl-pl/guide/mail/mail35803/mac).
+
+:::
+
+
+[FAQ e-maile](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+[Konfiguracja konta E-mail Pro w aplikacji Mail na urządzeniach z systemem macOS](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-mail-macos/)
+
+[Konfiguracja konta e-mail MX Plan w aplikacji Mail na urządzeniach z systemem macOS](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

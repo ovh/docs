@@ -1,0 +1,98 @@
+---
+title: Zarządzanie historią wiadomości SMS
+description: Dowiedz się, jak sprawdzić historię wiadomości SMS wysłanych z Twojego konta OVHcloud
+lastUpdated: 2025-12-30
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Historię wysłanych wiadomości SMS możesz sprawdzić i pobrać z poziomu Panelu klienta OVHcloud. Z tego przewodnika dowiesz się, jak to zrobić.
+
+## Wymagania początkowe
+
+- Posiadanie konta SMS OVHcloud, z którego wysłano co najmniej jedną wiadomość SMS
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Ścieżka nawigacji:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Wybierz konto SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="Panel klienta Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png" loading="lazy" />
+
+## W praktyce
+
+Historia zawiera informacje o dacie, godzinie, nadawcy, odbiorcy oraz treści wysłanej wiadomości SMS.
+
+:::info
+Panel klienta OVHcloud umożliwia sprawdzanie wiadomości SMS wysłanych w ciągu ostatnich 6 miesięcy (lub ostatnich 5000 SMS-ów, jeśli w ciągu ostatnich 6 miesięcy wysłałeś ponad 5000 SMS-ów).
+
+Aby wyświetlić starsze wiadomości SMS (do 12 ostatnich miesięcy), musisz pobrać historię wiadomości SMS w formacie CSV. Sprawdź [krok 2 tego przewodnika](#csv).
+
+:::
+
+
+### Etap 1: Sprawdzanie historii w Panelu klienta
+
+Na pasku kart kliknij <code className="action">Wiadomość SMS i kampania</code>, a następnie <code className="action">Zarządzanie SMS-ami</code>, aby uzyskać dostęp do historii Twoich pojedynczych wiadomości SMS lub <code className="action">Zarządzanie kampaniami</code>.
+
+Następnie kliknij <code className="action">Historia wysyłki</code> lub <code className="action">Statystyki i Historia</code>.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory1.png" loading="lazy" />
+
+Aby posortować historię według daty wysłania, kliknij datę po lewej stronie.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory2.png" loading="lazy" />
+
+Rubryka Działania <code className="action">...</code> znajdująca się przy każdej wiadomości SMS umożliwia przeczytanie lub skasowanie wiadomości.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory3.png" loading="lazy" />
+
+Aby usunąć kilka wiadomości SMS jednocześnie, zaznacz pola znajdujące obok każdej z nich. Nad historią pojawi się przycisk <code className="action">Usuń zaznaczone elementy</code>.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory4.png" loading="lazy" />
+
+Przycisk <code className="action">Filtruj</code> umożliwia filtrowanie wyszukiwania według nadawcy (jeśli masz wielu nadawców) lub odbiorcy.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory5.png" loading="lazy" />
+ 
+### Etap 2: Pobieranie historii wiadomości SMS do pliku CSV <a name="csv"></a> 
+
+Kliknij przycisk <code className="action">Działania</code> po lewej stronie, nad historią, a następnie kliknij polecenie <code className="action">Pobierz</code>, aby pobrać historię wysłanych wiadomości SMS w formacie .csv. 
+ 
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory6.png" loading="lazy" />
+
+Teraz możesz otworzyć historię w arkuszu kalkulacyjnym. Wyświetlane informacje mogą wyglądać jak na poniższym przykładzie.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory7.png" loading="lazy" />
+
+Oto szczegóły informacji zawartych w tej historii:
+
+|  Tytuł  |  Opis  |
+|  :-----          |  :-----          |
+|  id |  unikalny identyfikator wysłanej wiadomości SMS na naszych serwerach |
+|  date | data i godzina wysłania wiadomości SMS  |
+|  sender |  nadawca, który wysłał wiadomość SMS |
+|  receiver |  numer komórkowy odbiorcy wiadomości SMS |
+|  ptt |  kod zwrotny dotyczący statusu wiadomości SMS |
+|  operatorCode |  identyfikator sieci operatora komórkowego, do którego została przekazana wiadomość SMS |
+|  descriptionDlr |  opis otrzymanego kodu ptt, czyli status wiadomości SMS |
+|  tag |  znacznik przydzielony ręcznie przez API (jednej lub kilku wiadomościom SMS) lub automatycznie przez nasze serwery każdej wysłanej wiadomości SMS (lub każdej kampanii SMS) |
+|  message |  treść wiadomości SMS |
+
+Więcej szczegółów na temat kodów ptt i różnych identyfikatorów DLR znajdziesz w ostatniej sekcji przewodnika [Informacje o użytkownikach wiadomości SMS](/guides/web-cloud/messaging/sms/tout-savoir-sur-les-utilisateurs-sms#etap-5-okreslanie-adresu-url-wywolania-zwrotnego/).
+ 
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

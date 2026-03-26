@@ -1,0 +1,91 @@
+---
+title: Updating hosts using vSphere Lifecycle Management (vLCM)
+description: Learn how to update your ESXi hosts via vSphere Lifecycle Management quickly and securely.
+lastUpdated: 2025-08-08
+---
+
+## Objective
+
+This guide explains how to update your ESXi hosts using vSphere Lifecycle Management (vLCM), directly from the vSphere interface.
+
+vLCM helps you detect required updates and keep your hosts up to date quickly and securely by applying a complete image.
+
+Unlike VMware Update Manager, vLCM provides a full lifecycle approach by including software updates, drivers, firmware, and hardware components.
+
+This gives you a centralised view of your hosts’ status and helps you make informed decisions to maintain performance and security.
+
+## Requirements
+
+- Your vCenter must be running **vSphere 8** to access the vLCM feature.
+- Make sure the **DRS (Distributed Resource Scheduler)** feature is enabled in automatic mode.
+- Check that your `.iso` or `.vmdk` files are not stored locally on the hosts.
+
+## Instructions
+
+### Step 1: Log in to vSphere
+
+Log in to your vSphere interface, then select the **host cluster** you want to update.
+
+### Step 2 : Enable Maintenance Mode (Zerto)
+
+If you are using the Zerto option (Disaster Recovery Plan):
+
+You must first switch the hosts in your cluster to Maintenance Mode before starting the update with vLCM:
+
+<img className="thumbnail" alt="Maintenance Mode" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-esxi-vlcm/vlcm_step2.png" loading="lazy" />
+
+### Step 3: Select a new image
+
+Go to <code className="action">Updates</code> > <code className="action">Hosts</code> > <code className="action">Image</code> to view the current image.
+
+<img className="thumbnail" alt="Viewing the current image in vLCM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-esxi-vlcm/vlcm_00.png" loading="lazy" />
+
+Click <code className="action">Edit</code> to modify the image.
+
+<img className="thumbnail" alt="Edit button to modify the image" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-esxi-vlcm/vlcm_01.png" loading="lazy" />
+
+From the dropdown list, select the desired ESXi version. The first option usually corresponds to the latest version published by Broadcom. 
+
+Click <code className="action">Save</code> to confirm and save the selected image.
+
+<img className="thumbnail" alt="Selecting a new ESXi version" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-esxi-vlcm/vlcm_02.png" loading="lazy" />
+
+:::info
+OVHcloud recommends always using the suggested version. Avoid downgrading to a previous version.
+
+:::
+
+
+Your image is now loaded.
+
+### Step 4: Launch the update
+
+Click <code className="action">Remediate All</code> to apply the image to all hosts in the cluster.
+
+<img className="thumbnail" alt="Launching with Remediate All" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-esxi-vlcm/vlcm_03.png" loading="lazy" />
+
+This action triggers the maintenance mode for the affected hosts. Virtual machines will be automatically moved using **vMotion**.
+
+Before launching the update, make sure that:
+
+- The **DRS** feature is enabled in automatic mode.
+- No anti-affinity rules are preventing virtual machine relocation.
+- No `.iso` or `.vmdk` files are stored locally on the hosts.
+
+Click <code className="action">Start Remediation</code> to begin the process.
+
+<img className="thumbnail" alt="Start Remediation" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-esxi-vlcm/vlcm_04.png" loading="lazy" />
+
+The update process is now running. It may take several minutes per host.
+
+<img className="thumbnail" alt="Final validation" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-esxi-vlcm/vlcm_05.png" loading="lazy" />
+
+**Zerto option**: When the update is complete, you can exit Maintenance Mode on the hosts in your cluster.
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, please contact your Technical Account Manager or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

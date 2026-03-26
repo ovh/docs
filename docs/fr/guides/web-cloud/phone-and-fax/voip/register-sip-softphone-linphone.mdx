@@ -1,0 +1,187 @@
+---
+title: Tutoriel - Utiliser une ligne SIP OVHcloud sur Linphone
+description: Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone Linphone
+lastUpdated: 2026-01-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objectif
+
+Le logiciel [Linphone](https://www.linphone.org/) est un softphone (logiciel de téléphonie) open-source et gratuit permettant d'enregistrer une ligne SIP fixe OVHcloud, afin d'émettre et recevoir des appels via cette ligne, depuis un ordinateur ou un smartphone.
+
+**Découvrez comment enregistrer votre ligne SIP OVHcloud sur Linphone**
+
+:::warning
+OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+
+Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+
+:::
+
+
+## Prérequis
+
+- Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/)
+- [Disposer des identifiants de votre ligne SIP OVHcloud](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone/)
+- Avoir installé le logiciel [Linphone](https://www.linphone.org/) sur un smartphone ou un ordinateur
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+## En pratique
+
+Ce tutoriel décrit la méthode pour enregistrer votre ligne sur les versions mobiles (Android et iOS) et Desktop (Windows et macOS) de Linphone.
+
+### Enregistrer votre ligne SIP
+
+Cliquez sur l'onglet correspondant au système sur lequel vous utilisez Linphone.
+
+<Tabs>
+  <Tab label="Android">
+    Une fois Linphone ouvert, un assistant vous permet de configurer votre compte SIP. Sélectionnez <code className="action">Utiliser un compte SIP</code>.
+    
+    <img className="thumbnail" alt="assistant linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone01.png" loading="lazy" />
+
+Renseignez alors vos identifiants SIP OVHcloud dans les champs correspondants. Vous pouvez également définir un nom d'affichage qui sera présenté lors de vos émissions d'appels.<br/>
+
+Cochez <code className="action">UDP</code> pour le transport et appuyez sur <code className="action">Connexion</code>.
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone02.png" loading="lazy" />
+    
+    <details>
+    <summary>Si votre **Proxy** est différent de votre **Domain**.</summary>
+
+    
+    Dans ce cas, l'enregistrement de votre ligne SIP n'aboutit pas directement et un message d'erreur apparaît.  
+    Pour y remédier, il convient de renseigner le `Proxy SIP` pour finaliser la configuration de votre ligne SIP dans Linphone.  
+    Cliquez sur <code className="action">Continuer</code>.
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone03-proxy.png" loading="lazy" />
+
+Ouvrez le menu déroulant situé en haut à gauche et appuyez sur <code className="action">Options</code>. Appuyez sur votre compte récemment créé et faites défiler les paramètres jusqu'à atteindre l'option `Proxy SIP`. Remplissez le formulaire avec votre **Proxy sortant**, dans notre exemple **outbound-ovh-1.sip-proxy.io**.  
+    **Activez ensuite l'option `Outbound proxy`.**
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone04-proxy.png" loading="lazy" />
+    
+
+    </details>
+    
+    Si la connexion aboutit, la mention `Connecté` apparaît en haut de l'application.
+    
+    <img className="thumbnail" alt="connexion réussie linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone03.png" loading="lazy" />
+
+Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP OVHcloud.
+  </Tab>
+  <Tab label="iOS">
+    Une fois Linphone ouvert, un assistant vous permet de configurer votre compte SIP. Sélectionnez <code className="action">J'ai un compte SIP tiers</code>.
+    
+    <img className="thumbnail" alt="assistant linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone01ios.png" loading="lazy" />
+
+Renseignez alors vos identifiants SIP OVHcloud dans les champs correspondants. Vous pouvez également définir un nom d'affichage qui sera présenté lors de vos émissions d'appels.<br/>
+
+Choisissez <code className="action">UDP</code> pour le transport et appuyez sur <code className="action">Connexion</code>.
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone02ios.png" loading="lazy" />
+    
+    <details>
+    <summary>Si votre **Proxy** est différent de votre **Domain**.</summary>
+
+    
+    Dans ce cas, l'enregistrement de votre ligne SIP ne pourra pas aboutir directement.  
+    Pour y remédier, il convient de renseigner le `Proxy SIP` pour finaliser la configuration de votre ligne SIP dans Linphone.  
+    Lors de la configuration du compte SIP, ouvrez les paramètres avancés et renseignez votre **Proxy sortant** dans le champ `URL du serveur mandataire`. Dans notre exemple, nous renseignons **outbound-ovh-1.sip-proxy.io**.
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone03ios.png" loading="lazy" />
+
+Appuyez ensuite sur <code className="action">Connexion</code>.
+    
+
+    </details>
+    
+    Si la connexion aboutit, la mention `Connecté` apparaît en dessous de votre ligne SIP, en haut à gauche de la fenêtre.
+    
+    <img className="thumbnail" alt="connexion réussie linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone04ios.png" loading="lazy" />
+
+Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP OVHcloud.
+  </Tab>
+  <Tab label="Windows et macOS">
+    La version Desktop de Linphone est identique sous Windows et macOS.
+    
+    Une fois Linphone ouvert, un assistant vous permet de configurer votre compte SIP. Sélectionnez <code className="action">Utiliser un compte SIP</code>.
+    
+    <img className="thumbnail" alt="assistant linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone01windows.png" loading="lazy" />
+
+Renseignez alors vos identifiants SIP OVHcloud dans les champs correspondants. Vous pouvez également définir un nom d'affichage qui sera présenté lors de vos émissions d'appels.<br/>
+
+Choisissez <code className="action">UDP</code> pour le transport et cliquez sur <code className="action">Utiliser</code>.
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone02windows.png" loading="lazy" />
+    
+    <details>
+    <summary>Si votre **Proxy** est différent de votre **Domain**.</summary>
+
+    
+    Dans ce cas, l'enregistrement de votre ligne SIP n'aboutit pas directement et un message d'erreur apparaît.  
+    Pour y remédier, il convient de renseigner le `Proxy SIP` pour finaliser la configuration de votre ligne SIP dans Linphone.  
+    Cliquez sur <code className="action">⛭</code> en bas à gauche, puis sur <code className="action">Préférences</code>.
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone03windows.png" loading="lazy" />
+
+Dans la partie `Comptes SIP`, cliquez sur l'icône <code className="action">crayon</code> pour accéder à la modification des paramètres.
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone04windows.png" loading="lazy" />
+
+Depuis la fenêtre **Paramètres principaux du compte SIP**, renseignez dans les champs :
+    
+    - Adresse SIP : `"0033972XXXXXX" <sip:0033972XXXXXX@sip-domain.io>`
+    - Adresse du serveur SIP : `<sip:outbound-ovh-1.sip-proxy.io;transport=udp>`
+    
+    :::info
+    Remplacez les valeurs `0033972XXXXXX` par votre ligne SIP et `outbound-ovh-1` par votre proxy.
+
+    :::
+
+    
+    Cliquez enfin sur <code className="action">Confirmer</code>.
+    
+    <img className="thumbnail" alt="connexion linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone05windows.png" loading="lazy" />
+    
+
+    </details>
+    
+    Si la connexion aboutit, une pastille de couleur verte apparaît à côté de votre ligne SIP, en haut à gauche de la fenêtre.
+    
+    <img className="thumbnail" alt="connexion réussie linphone" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/linphone06windows.png" loading="lazy" />
+
+Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP OVHcloud.
+  </Tab>
+</Tabs>
+
+
+### Dépannage
+
+Si l'enregistrement a échoué, vérifiez que vous avez bien saisi les identifiants SIP OVHcloud, notamment le mot de passe SIP. En cas d'échecs répétés, [modifiez votre mot de passe SIP depuis l'espace client OVHcloud](/guides/web-cloud/phone-and-fax/voip/modifier-mot-de-passe-ligne-sip/) et refaites un essai d'enregistrement avec un nouveau mot de passe SIP.
+
+Vérifiez également que l'adresse IP depuis laquelle vous utilisez Linphone fait partie des adresses IP autorisées à utiliser votre ligne SIP. Pour plus de détails, consultez le guide [Restreindre sa ligne SIP OVHcloud par IP](/guides/web-cloud/phone-and-fax/voip/secure-sip-line-ovh/).
+
+Vous pouvez aussi tester l'enregistrement de votre ligne [sur un autre softphone](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/).
+
+## Aller plus loin
+
+[Utiliser une ligne SIP OVHcloud sur un softphone](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone/)
+
+[Enregistrer une ligne SIP OVHcloud sur Zoiper](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

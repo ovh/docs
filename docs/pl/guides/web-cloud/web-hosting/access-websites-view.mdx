@@ -1,0 +1,145 @@
+---
+title: Wyświetl wszystkie strony WWW w Panelu klienta OVHcloud i zarządzaj nimi
+description: Dowiedz się, jak wyświetlać wszystkie Twoje strony WWW i zarządzać nimi w Panelu klienta
+lastUpdated: 2025-05-27
+---
+
+## Wprowadzenie
+
+Widok `Strony WWW` pozwala na scentralizowane wyświetlanie wszystkich stron niezależnie od przypisanego hostingu. Ułatwia śledzenie, które funkcje są aktywowane dla każdej witryny, i daje szybki dostęp do podstawowych działań. Interfejs ten jest szczególnie przydatny dla agencji oraz specjalistów z dziedziny WWW, którzy zarządzają dużą liczbą domen rozdzielonych na kilka hostingów.
+
+**Dowiedz się, jak wyświetlać wszystkie strony WWW i zarządzać nimi w Panelu klienta.**
+
+## Wymagania początkowe
+
+- Usługa [Hosting WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Wybierz hosting WWW
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## W praktyce
+
+### Przejdź do widoku `Strony WWW`
+
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie przejdź do sekcji <code className="action">Web Cloud</code>. W lewym menu kliknij <code className="action">Strony WWW</code>. Pojawi się tabela z listą wszystkich Twoich stron WWW i ich głównymi informacjami.
+
+<img className="thumbnail" alt="widok_strony" src="/images/web-cloud/web-hosting/access-websites-view/website_view_tab.png" loading="lazy" />
+
+#### Domena
+
+Wyświetla główną nazwę domeny hostingu skonfigurowaną w zakładce MultiSite Twojego hostingu.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">MultiSite</code> danego hostingu.
+
+#### Diagnostyka
+
+Informuje, czy domena prawidłowo wskazuje na przypisany hosting. Dla każdej nazwy domeny mogą pojawić się trzy scenariusze:
+
+- `A/AAAA` na zielono: Pola A i/lub AAAA domeny poprawnie wskazują na adres IP hostingu.
+- `A/AAAA` yellow: Wpisy A i/lub AAAA dla Twojej domeny wskazują na adres IP inny niż adres IP Twojego hostingu.
+- `A/AAAA`szary: Nie skonfigurowałeś żadnego rekordu A lub AAAA. Twoja domena nie wskazuje na żaden adres IP.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">MultiSite</code> danego hostingu.
+
+Aby uzyskać więcej informacji, zapoznaj się z częścią "Diagnostyka domen" naszego przewodnika "[Instalacja kilku stron WWW na jednym hostingu](/guides/web-cloud/web-hosting/multisites-configure-multisite/)".
+
+#### Katalog główny
+
+Określa katalog na hostingu (na przykład: www, app, public_html, etc.), na który wskazuje domena.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">MultiSite</code> danego hostingu.
+
+#### Nazwa usługi
+
+Nazwa techniczna usługi hostingu, na którym skonfigurowana jest strona internetowa w postaci `abcdv.clusterXX.hosting.ovh.net`.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">Informacje ogólne</code> danego hostingu.
+
+#### Nazwa wyświetlana
+
+Spersonalizowany alias zdefiniowany przez klienta, w celu lepszej identyfikacji usługi w Panelu klienta.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">Informacje ogólne</code> danego hostingu.
+
+#### Pakiet
+
+Pokazuje typ rozwiązania powiązanego z hostingiem: Starter, Perso, Pro lub Performance.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">Informacje ogólne</code> danego hostingu.
+
+#### Git
+
+Pokazuje stan integracji Git na stronie WWW:
+
+- Aktywny: Repozytorium Git jest połączone.
+- Nieaktywny: Repozytorium Git nie jest włączone.
+- W trakcie: Trwa konfiguracja repozytorium Git.
+- Błąd: Wykryto błąd w konfiguracji repozytorium Git.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">MultiSite</code> danego hostingu.
+
+#### Rozdzielone logi
+
+Wskazuje, czy w wybranej domenie jest włączona przestrzeń logów.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">MultiSite</code> danego hostingu.
+
+Przejdź na stronę "[Monitorowanie i analiza ruchu na stronie internetowej](https://www.ovhcloud.com/pl/web-hosting/uc-website-traffic-analysis/)", aby uzyskać więcej informacji.
+
+:::warning
+Nie można włączyć oddzielnych logów dla zewnętrznej nazwy domeny. Ta opcja jest dostępna tylko dla domen zarejestrowanych w OVHcloud.
+
+:::
+
+
+#### CDN
+
+Wyświetla status usługi CDN (**C**content **D**delivery **N**network) dla domeny:
+
+- Aktywny: CDN działa.
+- Nieaktywny: CDN jest wyłączony.
+- ND: Nie dotyczy (oferta nie jest kompatybilna).
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">MultiSite</code> danego hostingu.
+
+CDN pozwala na umieszczanie w pamięci cache statycznych elementów Twojej strony WWW, takich jak obrazy. Aby uzyskać więcej informacji, przejdź na stronę "[Shared CDN](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)".
+     
+#### SSL
+
+Wskazuje, czy certyfikat SSL jest aktywny dla danej domeny.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">MultiSite</code> danego hostingu.
+
+Certyfikat SSL zapewnia bezpieczne połączenie (**https://**) z wybraną nazwą domeny. Przejdź na stronę "[Zabezpiecz Twoją stronę OVHcloud dzięki certyfikatowi SSL premium](https://www.ovhcloud.com/pl/web-hosting/options/ssl/)", aby uzyskać więcej informacji.
+
+#### Firewall
+
+Wskazuje, czy zapora aplikacyjna jest włączona w domenie.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">MultiSite</code> danego hostingu.
+
+Więcej informacji znajdziesz na stronie "[Opcje niezbędne dla Twojego hostingu](https://www.ovhcloud.com/pl/web-hosting/options/)".
+
+#### Boost
+
+Wskazuje, czy opcja boost jest włączona na Twoim hostingu. Opcja Boost pozwala tymczasowo zwiększyć zasoby CPU i RAM Twojego hostingu.
+
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki <code className="action">Skorzystaj z opcji Boost</code> dla danego hostingu.
+
+Aby uzyskać więcej informacji na temat opcji Boost, zapoznaj się z częścią "Zwiększ tymczasowo swój hosting Performance" przewodnika "[Hosting WWW - Jak zmienić ofertę](/guides/web-cloud/web-hosting/how-to-upgrade-web-hosting-offer/)".
+
+## Sprawdź również <a name="go-further"></a>
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

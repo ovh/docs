@@ -1,0 +1,107 @@
+---
+title: Lista odbiorców wiadomości SMS
+description: Dowiedz się, jak utworzyć listę odbiorców wiadomości SMS i importować ją do Panelu klienta OVHcloud
+lastUpdated: 2022-08-05
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Wszystkie konta SMS OVHcloud mogą używać jednej lub kilku list odbiorców. Z tego przewodnika dowiesz się, jak utworzyć listę odbiorców.
+
+## Wymagania początkowe
+
+- Posiadanie aktywnego konta SMS OVHcloud
+- Posiadanie narzędzia typu arkusz kalkulacyjny lub edytor tekstu
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Ścieżka nawigacji:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Wybierz konto SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="Panel klienta Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png" loading="lazy" />
+
+## W praktyce
+
+### Etap 1: Utworzenie listy odbiorców
+
+#### Stwórz listę w arkuszu kalkulacyjnym
+
+Listę odbiorców możesz utworzyć przy użyciu arkusza kalkulacyjnego lub możesz wykorzystać już istniejącą listę. Musi być ona w formacie .csv i w arkuszu kalkulacyjnym musi mieć formę jak na poniższym przykładzie:
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/img_4831.png" loading="lazy" />
+
+:::warning
+Aby arkusz kalkulacyjny nie wykonywał żadnych automatycznych obliczeń Twoich numerów, zmień format kolumny `number`.
+
+W programie Microsoft Excel wybierz kolumnę `number`, kliknij prawym przyciskiem myszy i kliknij <code className="action">Format komórki</code>. Kliknij <code className="action">Personalizowany</code> i wprowadź następującą wartość w polu `Typ`: ```[>0]+0;Standard```.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-2.png" loading="lazy" />
+
+W LibreOffice wybierz kolumnę `number`, kliknij prawym przyciskiem myszy i kliknij <code className="action">Formater komórki</code>. Wpisz następującą wartość w polu `Opis formatu`: ```[>0]+0;Standard```
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-2b.png" loading="lazy" />
+
+:::
+
+
+Jeśli otworzysz plik .csv przy użyciu Notatnika, powinien wyglądać jak poniżej:
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-1.png" loading="lazy" />
+
+Aby lista odbiorców została uwzględniona w Panelu klienta OVHcloud, należy wykonać następujące czynności:
+
+- Wszystkie kontakty umieść w jednym arkuszu skoroszytu i w jednej kolumnie zatytułowanej „number”.
+- Usuń znaki specjalne, takie jak akcenty, ponieważ nie zostaną one zaakceptowane podczas importu pliku .csv do Panelu klienta.
+- Numery zapisz w formacie międzynarodowym (np. w przypadku numeru francuskiego: +33612345678).
+- Zapisz plik w formacie .csv (separator: średnik).
+
+#### Utwórz listę za pomocą edytora tekstu
+
+Alternatywna metoda polega na utworzeniu zwykłego pliku .txt w edytorze tekstu lub Notatniku.
+
+- W pierwszym wierszu wpisz „number”.
+- Wpisz numery w formacie międzynarodowym (+33612345678), po jednym numerze w wierszu.
+
+Otrzymany rezultat powinien wyglądać następująco:
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-1.png" loading="lazy" />
+
+### Etap 2: Zaimportować listę do Panelu klienta OVHcloud
+
+Kliknij zakładkę <code className="action">Kontakty</code> i <code className="action">Utwórz listę kontaktów</code>.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-3b.png" loading="lazy" />
+
+Możesz utworzyć do 9 list kontaktów.
+
+W tym celu kliknij pozycję <code className="action">Działania</code>, a następnie wybierz polecenie <code className="action">Dodaj</code>.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-5b.png" loading="lazy" />
+
+Nazwij plik z listą odbiorców i zaimportuj plik lokalny do Panelu klienta.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-6b.png" loading="lazy" />
+
+### Etap 3: Wysyłka wiadomości SMS do listy odbiorców
+
+Po zaimportowaniu Twojej listy możesz postępować zgodnie z instrukcjami zawartymi w przewodniku [Wysyłanie wiadomości SMS z Panelu klienta](/guides/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/), aby wysłać wiadomość SMS do odbiorców tej listy.
+
+## Sprawdź również
+
+[Wysyłanie wiadomości SMS z Panelu klienta](/guides/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/)
+
+[Zarządzanie książkami adresowymi SMS](/guides/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

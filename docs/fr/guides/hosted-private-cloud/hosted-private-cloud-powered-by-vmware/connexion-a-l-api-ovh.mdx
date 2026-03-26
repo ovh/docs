@@ -1,0 +1,89 @@
+---
+title: Connexion à l’API OVH
+description: L’API OVH permet de réaliser certaines actions parfois non disponibles dans l’espace client OVH
+lastUpdated: 2019-02-14
+---
+
+## Objectif
+
+L’API OVH permet de réaliser certaines actions parfois non disponibles dans l’espace client OVH.
+
+Elle permet également d’automatiser certaines actions.
+
+**Ce guide montre plusieurs exemples.**
+
+## Connexion à L’API
+
+Rendez-vous sur l’API [ovh.com](http://ovh.com) : [http://api.ovh.com](http://api.ovh.com/)
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/connection_api_1.jpg" loading="lazy" />
+
+Cliquez sur “Explore the OVH API”.
+
+Une fois sur l’interface, cliquez sur le lien login.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/connection_api_login.jpg" loading="lazy" />
+
+Entrez votre nic-handle et votre mot de passe. Les logins sont les mêmes que pour l’espace client OVH.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/connection_api_log.jpg" loading="lazy" />
+
+## Utilisation de l’API
+
+Rendez vous dans la partie dedicatedCloud.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/connection_api_example.jpg" loading="lazy" />
+
+Cliquez sur la partie /dedicatedCloud/ Vous trouverez différents appels possibles (GET, PUT, POST, DELETE).
+
+### GET
+
+L'appel GET permet de sortir des informations sur votre infrastructure, cela n'effectura aucune modification.
+
+Exemple : cliquez sur la partie /dedicatedCloud/&#123;serviceName&#125; et renseignez votre Private Cloud dans le champ. Après avoir cliqué sur “Execute”, le résultat sera similaire à :
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/api.jpg" loading="lazy" />
+
+### PUT
+
+L'appel PUT, permet de modifier un existant.
+
+Exemple : Après avoir récupéré les informations sur mon datacentre avec l'appel suivant : /dedicatedCloud/&#123;serviceName&#125;/datacenter/&#123;datacenterId&#125;
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/retrieve_infos.PNG" loading="lazy" />
+
+Je modifie la description avec l'appel PUT : /dedicatedCloud/&#123;serviceName&#125;/datacenter/&#123;datacenterId&#125;
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/command_put.PNG" loading="lazy" />
+
+Et voici les informations mise à jour :
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/dc_after_put.PNG" loading="lazy" />
+
+### POST
+
+L'appel POST, permet de créer une nouvelle entrée.
+
+Exemple : Je souhaite autoriser une IP pouvant se connecter au client vSphere avec l'appel suivant : /dedicatedCloud/&#123;serviceName&#125;/allowedNetwork
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/access_ip.PNG" loading="lazy" />
+
+L'IP est ajouté est vérifiable avec l'appel suivant : /dedicatedCloud/&#123;serviceName&#125;/allowedNetwork/&#123;networkAccessId&#125; (le networkAccessId est visible dans l'appel précedent).
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/access_ip_show.PNG" loading="lazy" />
+
+### DELETE
+
+L'appel DELETE permet de supprimer une entrée.
+
+Exemple : Je souhaite supprimer un datacentre virtuel, ce dernier étant vide, l'appel suivant permet de le supprimer : /dedicatedCloud/&#123;serviceName&#125;/datacenter/&#123;datacenterId&#125;
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/connexion-a-l-api-ovh/delete_datacenter.PNG" loading="lazy" />
+
+## Utilisation annexe
+
+L'API OVH peut être utilisé en complément du [SDK vSphere](https://pccdocs.ovh.net/display/VS/Installation+VMware+API+Perl) afin d'automatiser toute votre infrastructure.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

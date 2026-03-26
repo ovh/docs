@@ -1,0 +1,206 @@
+---
+title: Primeros pasos con la solución Email Pro
+description: Descubra cómo configurar por primera vez la solución Email Pro
+lastUpdated: 2025-04-28
+---
+
+## Objetivo
+
+La solución Email Pro le permite disfrutar de direcciones de correo electrónico profesionales al precio más razonable con vistas a impulsar o comenzar su negocio.
+
+**Esta guía explica cómo configurar por primera vez la solución Email Pro.**
+
+## Requisitos
+
+- Tener una cuenta [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
+- Haber recibido el mensaje de correo electrónico de confirmación de la instalación de la solución Email Pro.
+- Tener un nombre de dominio.
+
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Seleccione su plataforma
+
+---
+{/* CP-NAV-END:web-email-pro */}
+
+## Procedimiento
+
+### 1. Añadir su nombre de dominio
+
+:::info
+El nombre de un servicio Email Pro en el área de cliente de OVHcloud comienza por "*emailpro-*", además, contiene una parte de su referencia de cliente y termina por una cifra (1 para el primer servicio Email Pro instalado, 2 para el segundo y así sucesivamente).
+
+:::
+
+
+Después de contratar el servicio Email Pro, se abrirá automáticamente una ventana en la que se le invita a <code className="action">añadir un dominio</code>. Si la ventana no aparece, acceda a la pestaña <code className="action">Dominios asociados</code> y haga clic en el botón <code className="action">Añadir un dominio</code>.
+
+uede elegir entre dos opciones:
+
+- **Seleccionar un dominio de la lista** : En el área de cliente de OVHcloud solo se muestran los dominios que gestiona. Si el dominio está registrado con OVHcloud, pero no aparece en el área de cliente, deberá añadirlo con la opción "Introducir un dominio no gestionado por su cuenta de OVHcloud"
+- **Introducir un dominio no gestionado por su cuenta de OVHcloud** : Seleccione esta opción si el dominio está registrado en OVHcloud, pero puede configurarse desde otro área de cliente de OVHcloud, **o** si el dominio está registrado en otro agente registrador. Para que el servicio Email Pro funcione correctamente, deberá poder modificar la configuración del dominio (su zona DNS).
+
+A continuación, haga clic en <code className="action">"Siguiente"</code>.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-01.png" loading="lazy" />
+
+Se mostrará un mensaje informativo relativo al modo de configuración del dominio.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-02.png" loading="lazy" />
+
+- **Si ha introducido un dominio no gestionado por OVHcloud** : este se configurará por defecto en modo no autoritario.
+
+- **Si ha seleccionado en la lista un dominio gestionado por OVHcloud**, deberá elegir entre dos modos.
+    - **Autoritario** : Es adecuado si su solución Email Pro es la única solución de correo que utiliza con su dominio. No permite utilizar otra solución de correo con su servicio.
+    - **No autoritario** : Es adecuado si utiliza con su nombre de dominio la solución Email Pro **así como otra solución de correo**.
+
+> **Descripción de los modos Autoritario y No Autoritario**
+>
+> - Cuando un mensaje de correo electrónico se transmite a su plataforma Email Pro (*Inbound mail server Email Pro*) en modo **autoritario**, significa que todas las direcciones de correo electrónico de su dominio solo están alojadas en dicha plataforma. <br/> <br/> Por ejemplo, si se envía un mensaje de correo electrónico a la dirección "*mary.johnson@mydomain.ovh*", el servidor Email Pro "*Inbound mail server Email Pro*" devuelve un mensaje de fallo al remitente, ya que esta dirección no existe en el servidor Email Pro "*Inbound mail server Email Pro*".
+> - Cuando un mensaje de correo electrónico se transmite a su plataforma Email Pro (*Inbound mail server Email Pro*) en modo **no autoritario**, las direcciones de correo de su dominio se reparten entre su plataforma de correo principal (*Inbound mail server Email Pro*) y otro servicio de correo (*Inbound mail server MX Plan*). <br/> <br/> Por ejemplo, si se envía un mensaje de correo electrónico a la dirección "*mary.johnson@mydomain.ovh*", el servidor Email Pro *Inbound mail Server Email Pro* enviará el mensaje de correo electrónico al servidor MX Plan "*Inbound mail server MX Plan*" para que este último pueda entregarlo.
+>
+> <img className="thumbnail" alt="Add Domain" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/authoritative-mode.png" loading="lazy" />
+>
+
+:::warning
+Si recibe el mensaje "**Authoritative Domain Detected**" al añadir su dominio a su plataforma de correo, significa que dicho dominio está declarado en modo **autoritario** en otra plataforma de correo. Por lo tanto, deberá cambiarlo a modo **no autoritario** para que ambas plataformas puedan coexistir.
+
+:::
+
+
+Si elige el modo **no autoritario** y utiliza un servicio:
+
+- **Por correo electrónico de OVHcloud (Exchange o MX Plan)**, introduzca directamente como servidor de correo de destino "*mx1.mail.ovh.net*" ( funciona del mismo modo con *mx0.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net*).
+- **Correo electrónico externo a OVHcloud (oferta de correo de la competencia, servidor de correo privado)**, introduzca en la casilla Servidor de correo de destino el nombre del servidor de entrada de este servicio externo, asegurándose de que este último autorice las peticiones de correo procedentes de su servicio Email Pro.
+
+La elección del modo no es definitiva y puede modificarse más adelante desde el área de cliente de OVHcloud.
+
+Haga clic en el botón <code className="action">"Siguiente"</code> para continuar con la adición del dominio.
+
+**Si ha seleccionado un nombre de dominio gestionado por OVHcloud**, su configuración se puede llevar a cabo de forma automática. Para ello, marque las casillas deseadas y haga clic en el botón <code className="action">Siguiente</code> para continuar con la adición del dominio.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-03.png" loading="lazy" />
+
+- **SRV**: registro DNS que permite la configuración automática de su cliente de correo al añadir su dirección de correo electrónico.
+- **MX**: registro DNS de los servidores de correo electrónico necesarios para recibir mensajes de correo electrónico con el nombre de dominio correspondiente.
+- **DKIM**: Implementación de una firma digital cifrada para proteger los intercambios de correo. Para más información, consulte nuestra guía [Mejorar la seguridad del correo electrónico mediante el registro DKIM](/guides/web-cloud/domains/dns-zone-dkim/).
+
+**Para un dominio no gestionado por OVHcloud**, realice el paso 3.
+
+Una vez realizada la configuración, compruebe que la información mostrada sea la correcta y haga clic en <code className="action">Confirmar</code> para añadir el dominio.
+
+### 2. Configurar el nombre de dominio
+
+Una vez añadido el nombre de dominio como dominio asociado, compruebe su configuración usando la tabla que aparece.
+
+En la columna "<code className="action">Diagnóstico</code>", podrá ver si la configuración DNS del nombre de dominio es correcta. Si debe modificarla, se mostrará una señal roja. Existen dos posibilidades:
+
+- **Configuración automática al añadir un nombre de dominio de OVHcloud** : si acaba de realizar el cambio, pueden pasar algunas horas antes de que se muestre en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+- **Configuración manual de un nombre dominio no gestionado por OVHcloud** : haga clic en la señal roja para ver los cambios que debe realizar.
+    - *Para un registro CNAME*, consulte nuestra guía "[Crear un registro CNAME para añadir un dominio asociado](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/)".
+    - *Para un registro MX*, consulte nuestra guía "[Añadir un registro MX a la configuración del dominio](/guides/web-cloud/domains/dns-zone-mx/)".
+    - *Para un registro SRV*, complete la zona DNS con la información proporcionada al hacer clic en la etiqueta roja. Para añadir este registro, puede consultar la guía "[Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)".
+    - *Para un registro SPF*, complete la zona DNS con la información proporcionada al hacer clic en la etiqueta. Para añadir este registro, puede consultar la guía "[Mejorar la seguridad del correo electrónico mediante el registro SPF](/guides/web-cloud/domains/dns-zone-spf/)".
+    *Para un registro DKIM*, complete la zona DNS con la información proporcionada al hacer clic en la etiqueta. Para añadir este registro, puede consultar la guía "[Mejorar la seguridad del correo electrónico mediante el registro DKIM](/guides/web-cloud/domains/dns-zone-dkim/)".
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-04.png" loading="lazy" />
+
+### 3. Configurar las cuentas Email Pro
+
+Para configurar las direcciones de correo, abra la pestaña <code className="action">Cuentas de correo</code>. La tabla muestra las cuentas que haya contratado con el formato "*@configureme.me*".
+
+Para configurarlos, haga clic en el botón <code className="action">...</code> y, seguidamente, en <code className="action">Modificar</code>.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-05.png" loading="lazy" />
+
+Complete la información solicitada.
+
+- **Cuenta de correo electrónico** : Introduzca el nombre que quiera asignarle a su dirección de correo electrónico (por ejemplo, su nombre.apellido) y seleccione el dominio correspondiente de la lista.
+
+:::warning
+La elección del nombre de su dirección de correo electrónico debe respetar las siguientes condiciones:
+
+- Mínimo 2 caracteres
+- Máximo 32 caracteres
+- Sin caracteres acentuados
+- Sin caracteres especiales, excepto los siguientes: `.`, `,`, `-` y `_`
+
+:::
+
+
+- **Nombre**: introduzca un nombre.
+- **Nombre**: introduzca un nombre.
+- **Nombre mostrado** : Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes desde esta dirección.
+- **Contraseña y confirmación**: Establezca una contraseña segura de 8 caracteres como mínimo, que incluya al menos una mayúscula, una minúscula y un número. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
+
+:::warning
+La elección de la contraseña debe respetar las siguientes condiciones:
+
+- Mínimo 9 caracteres
+- Máximo 30 caracteres
+- Sin caracteres acentuados
+
+:::
+
+
+Una vez introducida toda la información, haga clic en el botón <code className="action">Siguiente</code>. Compruebe que la información mostrada es correcta y haga clic en <code className="action">Confirmar</code> para iniciar la configuración de la cuenta.
+
+:::info
+Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas a su disposición. Si necesita más cuentas, puede realizar el pedido utilizando el botón <code className="action">Contratar cuentas</code>.
+
+:::
+
+
+### 4. Utilizar las direcciones de correo electrónico
+
+Una vez configuradas las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición una aplicación en internet (*webmail*). Puede acceder a ella en la dirección [webmail](https://www.ovhcloud.com/es-es/mail/), donde deberá introducir las credenciales de su dirección de correo electrónico.
+
+Si es la primera vez que inicia sesión en OWA con esta dirección de correo electrónico, se le pedirá que especifique el idioma de la interfaz y la zona horaria. Haga clic en <code className="action">Guardar</code> para continuar.
+
+:::info
+Las zonas horarias se enumeran según [el estándar UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), no por orden alfabético de ciudades.
+
+**Ejemplo** : Para Europa Occidental, se trata de UTC +1 (Bruselas, Copenhague, Madrid, París).
+
+:::
+
+
+Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](/guides/web-cloud/email-and-collaborative-solutions/email-pro/overview/). A continuación, se indican los parámetros necesarios para configurar una cuenta Email Pro:
+
+|Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
+|---|---|---|---|
+|Entrante|pro?.mail.ovh.net|SSL/TLS|993|
+|Saliente|pro?.mail.ovh.net|STARTTLS|587|
+
+:::info
+En nuestro ejemplo, utilizamos el nombre de servidor pro?.mail.ovh.net. Deberá sustituir la "?" por el número que designa el servidor del servicio Email Pro.
+
+El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña <code className="action">Información General</code> de su servicio Email Pro.
+
+:::
+
+
+## Más información
+
+[Usar Outlook Web App con una cuenta de correo](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Crear reglas de la bandeja de entrada en OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/creating-inbox-rules-in-owa-mx-plan/)
+
+[Añadir un alias a una cuenta de correo](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/)
+
+[Crear firmas automáticas](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/)
+
+[Gestionar la facturación de sus cuentas Email Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro/)
+
+[Configurar la política de seguridad de un servicio de correo](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/security-policy/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

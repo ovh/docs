@@ -1,0 +1,125 @@
+---
+title: Używanie weryfikacji dwuetapowej (2FA) w infrastrukturze Private Cloud
+description: Dowiedz się, jak wdrożyć weryfikację dwuetapową, aby chronić Twoją infrastrukturę
+lastUpdated: 2022-06-10
+---
+
+import Api from '@components/Api';
+
+
+## Wprowadzenie
+
+Wdrożenie weryfikacji dwuetapowej zapewnia ochronę dostępu do Twojej usługi Private Cloud, ograniczając ryzyko dotyczące na przykład kradzieży hasła.
+
+**Dowiedz się, jak wdrożyć weryfikację dwuetapową, aby chronić Twoją infrastrukturę Private Cloud.**
+ 
+## Wymagania początkowe
+
+- Posiadanie infrastruktury [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) z opcją [zaawansowanego bezpieczeństwa](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (dostępną w ofertach PCI-DSS i HDS).
+- Posiadanie smartfona i aplikacji weryfikacji dwuetapowej (np.: Google Authenticator, Authy, OTP Auth).
+
+## W praktyce
+
+### Aktywacja weryfikacji dwuetapowej
+
+Aby wdrożyć weryfikację dwuetapową w infrastrukturze, zaloguj się do certyfikowanego interfejsu Twojej usługi Private Cloud.
+
+Możesz to zrobić na dwa sposoby:
+	
+- Przez bramę usługi Private Cloud (https://pcc-xxx-xxx-xxx-xxx.ovh.com): 
+
+<img className="thumbnail" alt="Gateway Private Cloud" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/utilisation-2FA/gatewayPCC.jpg" loading="lazy" />
+
+- Bezpośrednio przez adres https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (uwaga: pamiętaj o umieszczeniu ukośnika „/” na końcu adresu).
+
+Po zalogowaniu do interfejsu zarządzania kliknij <code className="action">Change Password</code>
+
+<img className="thumbnail" alt="Change Password" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/utilisation-2FA/selectChangePassword.png" loading="lazy" />
+
+W interfejsie wykonaj następujące czynności:
+	
+* Wybierz <code className="action">Password and 2FA Shared Secret</code>;
+* Podaj nowe hasło; 
+* Zeskanuj kod QR przy użyciu dowolnej aplikacji na smartfona służącej do weryfikacji dwuetapowej;
+* Potwierdź otrzymany kod.
+
+<img className="thumbnail" alt="Scan QRcode" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/utilisation-2FA/scanQRcode.png" loading="lazy" />
+
+Po utworzeniu zadania zostanie wysłany do Ciebie token.
+
+Przejdź do sekcji <code className="action">Operation validation</code>, załaduj operację otrzymaną w wiadomości SMS i potwierdź tokenem otrzymanym w tej samej wiadomości.
+
+:::info
+Jeśli zapomnisz hasła, najpierw uruchom procedurę „Password lost”, w której zostanie zaproponowane wdrożenie weryfikacji dwuetapowej.
+
+:::
+
+
+### Logowanie
+
+Korzystając z tego samego linku co zwykle, zaloguj się do klienta *Web*. Przejdziesz na następującą stronę:
+
+<img className="thumbnail" alt="Connexion 2FA" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/utilisation-2FA/2FAtoken.png" loading="lazy" />
+
+Zanim podasz hasło, wprowadź token wygenerowany przez zainstalowaną na Twoim smartfonie aplikację do weryfikacji dwuetapowej.
+
+:::warning
+Weryfikacja dwuetapowa zostanie aktywowana, gdy któryś z użytkowników zmieni hasło. Oznacza to, że kiedy jeden użytkownik zmieni hasło, wszyscy zaczną korzystać z aktywnej weryfikacji dwuetapowej. 
+
+Użytkownicy musieli odnowić swoje hasła, a następnie ustawić weryfikację dwuetapową dla swoich kont. W przeciwnym razie stracą możliwość zalogowania się.
+
+W przypadku klientów posiadających infrastrukturę w wersji 6.0 dostęp do klienta vSphere (dostępnego wyłącznie w systemie Windows) nie będzie już możliwy. Dostęp będzie można uzyskać wyłącznie przez klienta przeglądarkowego vSphere.
+
+:::
+
+
+### Tworzenie nowego użytkownika
+
+Podczas tworzenia nowego użytkownika podejmujesz decyzję o przyznaniu (lub nieprzyznawaniu) mu uprawnienia *token validator*.
+
+W obu przypadkach konieczna jest zmiana hasła przez certyfikowany interfejs, zgodnie z powyższą procedurą wdrażania weryfikacji dwuetapowej.
+
+Jedyna różnica będzie polegała na tym, czy użytkownik będzie mógł samodzielnie zatwierdzić token.
+
+### Autoryzacja aplikacji
+
+Możliwe jest korzystanie z kilku aplikacji innych firm, które wymagają zalogowania do vCenter.
+
+Aplikacje te muszą wcześniej uzyskać autoryzację poprzez politykę dostępu do vCenter, którą możesz skonfigurować w [Panelu klienta](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud#bezpieczenstwo/).
+
+Aplikacje te będą mogły uzyskać dostęp do infrastruktur OVH, ale nie będą zarządzać bezpośrednio weryfikacją dwuetapową.
+
+W tym przypadku konieczne jest utworzenie *białej listy* umożliwiającej *obejście* weryfikacji dwuetapowej.
+
+Ta *biała lista* będzie uzupełnieniem listy głównej zarządzającej dostępem do vCenter.
+
+Aby dodać publiczne adresy IP aplikacji do tej drugiej *białej listy*, musisz użyć następujących wywołań API: 
+
+- Sprawdzenie adresów IP upoważnionych do niestosowania weryfikacji dwuetapowej.
+
+<Api version="v1" section="/dedicatedCloud" method="GET" route={"/dedicatedCloud/\{serviceName\}/twoFAWhitelist"} />
+
+
+- Dodanie adresu IP do *listy z obejściem* weryfikacji dwuetapowej.
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/twoFAWhitelist"} />
+
+
+- Wyświetlenie informacji o upoważnionym adresie IP (wymagany identyfikator pobrany przy pierwszym wywołaniu).
+
+<Api version="v1" section="/dedicatedCloud" method="GET" route={"/dedicatedCloud/\{serviceName\}/twoFAWhitelist/\{id\}"} />
+
+
+- Usunięcie adresu IP z listy adresów upoważnionych.
+
+<Api version="v1" section="/dedicatedCloud" method="DELETE" route={"/dedicatedCloud/\{serviceName\}/twoFAWhitelist/\{id\}"} />
+
+
+- Zmiana informacji o upoważnionym adresie IP.
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/twoFAWhitelist/\{id\}/changeProperties"} />
+
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

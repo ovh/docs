@@ -1,0 +1,586 @@
+---
+title: Configurar direcciones Additional IP en modo bridge en sus máquinas virtuales
+description: Cómo utilizar el modo bridge para configurar el acceso a Internet de las máquinas virtuales
+lastUpdated: 2026-01-06
+---
+
+import Api from '@components/Api';
+
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+:::info
+Este artículo explica cómo configurar direcciones Additional IPv4 en una interfaz pública. También puede configurar direcciones IPv6 en sus servidores virtuales utilizando [esta guía](/guides/bare-metal-cloud/dedicated-servers/configure-an-ipv6-on-a-vm/).
+
+Tenga en cuenta que las direcciones Additional IP también pueden configurarse en un vRack (red privada), lo que permite interconectar una amplia gama de servicios de OVHcloud, ofreciendo mayor flexibilidad.
+
+Cómo configurar direcciones Additional IP en un vRack con nuestras guías para [IPv4](/guides/bare-metal-cloud/dedicated-servers/configuring-an-ip-block-in-a-vrack/) y [IPv6](/guides/bare-metal-cloud/dedicated-servers/configure-an-ipv6-in-a-vrack/).
+
+:::
+
+
+## Objetivo
+
+La puesta en red en modo bridge puede utilizarse para configurar sus máquinas virtuales. Para que la configuración funcione en nuestra red, es necesario realizar algunos cambios.
+
+**Esta guía explica cómo utilizar el modo bridge para configurar el acceso a internet para sus máquinas virtuales.**
+
+## Requisitos
+
+- Tener un servidor dedicado con un hipervisor instalado (por ejemplo, Citrix Xen Server y Proxmox).
+- Tener al menos una dirección [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/) conectada al servidor.
+
+{/* CP-NAV-START:network-public-ip */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public IP](https://manager.eu.ovhcloud.com/#/network/ip)
+- **Ruta de navegación:** <code className="action">Network</code> > <code className="action">IP pública</code>
+
+---
+{/* CP-NAV-END:network-public-ip */}
+
+:::warning
+Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+
+Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+
+Desde mayo de 2025, esta guía puede utilizarse para los servidores de las gamas [Scale](https://www.ovhcloud.com/es-es/bare-metal/scale/) y [High Grade](https://www.ovhcloud.com/es-es/bare-metal/high-grade/).
+
+También es posible configurar las direcciones Additional IP en modo ruteado o a través del vRack. Para ello, puede consultar: [Configurar la red en Proxmox VE en las gamas High Grade & SCALE](/guides/bare-metal-cloud/dedicated-servers/proxmox-network-hg-scale/) y [Configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE](/guides/bare-metal-cloud/dedicated-servers/hyperv-network-hg-scale/).
+
+:::
+
+
+## Procedimiento
+
+Los pasos básicos son siempre los mismos, independientemente de los sistemas utilizados:
+
+- creación de una dirección MAC virtual para una [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/);
+- Abonar la dirección MAC de la máquina virtual (VM) a esta nueva dirección.
+- configurar **la dirección IP**, **la máscara de red**, **la pasarela** y **la ruta hacia la pasarela** dentro de la máquina virtual.
+
+Para este ejemplo, utilizaremos los siguientes valores en nuestros ejemplos de código. Estas direcciones deberán sustituirse por sus propios valores:
+
+- "SERVER_IP": la dirección IP principal del servidor;
+- "ADDITIONAL_IP": su dirección Additional IP;
+- "GATEWAY_IP": la dirección de su pasarela por defecto.
+
+### Asignar una dirección MAC virtual
+
+:::warning
+En el caso de un bloque de IP, las direcciones MAC virtuales se crean en cada IP individual del bloque.
+
+:::
+
+
+Puede utilizar el menú desplegable en **Mis direcciones IP públicas y servicios asociados** y seleccionar **Todas las Additional IP** para filtrar sus servicios, o escribir directamente la dirección IP deseada en la barra de búsqueda.
+
+<img className="thumbnail" alt="área de cliente" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/network/manage-additional-ips-new.png" loading="lazy" />
+
+Haga clic en los <code className="action">⁝</code> y, seguidamente, en <code className="action">Añadir una dirección MAC virtual</code>.
+
+<img className="thumbnail" alt="Añadir una MAC virtual (1)" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/addvmac_new.png" loading="lazy" />
+
+Seleccione "ovh" en la lista desplegable "Tipo", escriba un nombre en el campo "Nombre de la máquina virtual" y haga clic en <code className="action">Aceptar</code>.
+
+<img className="thumbnail" alt="Añadir una MAC virtual (2)" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/addvmac2_new.png" loading="lazy" />
+
+Tras unos segundos, aparecerá una dirección MAC virtual en la columna "MAC virtual" de la fila de dirección Additional IP. 
+Esta dirección MAC virtual será necesaria cuando configure su máquina virtual en el host.
+
+### Establecer la dirección de la puerta de enlace (gateway) <a name="determinegateway"></a>
+
+Para configurar las máquinas virtuales para el acceso a Internet, es necesario conocer la puerta de enlace de su máquina host, es decir, su servidor dedicado.
+
+También puede recuperar la dirección de la pasarela a través de [su área de cliente](#viacontrolpanel) o la [API de OVHcloud](#viaapi).
+
+<Tabs>
+  <Tab label="Desde el área de cliente">
+    Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección <code className="action">Bare Metal Cloud</code> y seleccione el servidor en la sección <code className="action">Servidores dedicados</code>.
+    
+    La dirección de la pasarela IPv4 asignada a su servidor se muestra en la sección `Red` de la pestaña <code className="action">Información general</code>. Una vez copiada, continúe aplicando la configuración.
+    
+    <img className="thumbnail" alt="gateway" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/ipv4_information.png" loading="lazy" />
+  </Tab>
+  <Tab label="A través de la API de OVHcloud">
+    En la [página API de OVHcloud](https://eu.api.ovh.com/console/), haga clic en <code className="action">Login</code>, situado en la esquina superior derecha. En la siguiente página, introduzca su ID de cliente de OVHcloud.
+    
+    Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
+    
+    <Api version="v1" section="/dedicated/server" method="GET" route={"/dedicated/server/\\{serviceName\\}/specifications/network"} />
+  </Tab>
+</Tabs>
+
+
+### Preparar el host
+
+:::info
+Para todos los sistemas operativos y distribuciones, debe configurar su máquina virtual con la dirección MAC virtual creada en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+:::
+
+
+<Tabs>
+  <Tab label="Proxmox">
+    :::warning
+    Las siguientes instrucciones se aplican a una máquina virtual creada anteriormente con un sistema operativo instalado. Si no ha creado ninguna MV, consulte las opciones en la página [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines) (EN) de Proxmox.
+
+    :::
+
+    
+    Después de haber creado la máquina virtual y cuando esta esté aún apagada:
+    
+    1. Seleccione la máquina virtual.
+    2. Abra la sección "Hardware".
+    3. Seleccione <code className="action">Dispositivo de red</code>.
+    4. Haga clic en el botón <code className="action">Editar</code>.
+    
+    <img className="thumbnail" alt="navegar hasta el periférico de red" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/proxmox_01.png" loading="lazy" />
+
+A continuación, añada la dirección MAC que ha creado anteriormente.
+    
+    <img className="thumbnail" alt="abrir un dispositivo de red" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/proxmox_02.png" loading="lazy" />
+
+Una vez iniciado el VPS, podrá pasar a las siguientes etapas, en función del sistema operativo elegido.
+  </Tab>
+  <Tab label="VMware ESXi">
+    :::warning
+    Las siguientes instrucciones se aplican a una máquina virtual creada anteriormente con un sistema operativo instalado. Si no ha creado ninguna MV, consulte la guía [Crear una máquina virtual en el cliente host de VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html) (EN) en la página VMware.
+
+    :::
+
+    
+    Una vez que haya creado la máquina virtual y esté libre de tensión, haga clic derecho sobre ella y seleccione <code className="action">Cambiar configuración</code>.
+    
+    <img className="thumbnail" alt="Menú contextual de MV" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/vmware_01.png" loading="lazy" />
+
+Explique <code className="action">Network Adapter 1</code> y cambie el valor en el menú desplegable <code className="action">Dirección MAC</code> en modo "Manual" e introduzca la dirección MAC VMware creada anteriormente.
+    
+    <img className="thumbnail" alt="Modificar los parámetros" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/vmware_02.png" loading="lazy" />
+
+Ya puede iniciar su máquina virtual y pasar a las siguientes etapas, en función del sistema operativo.
+  </Tab>
+</Tabs>
+
+
+### Configurar las máquinas virtuales <a name="configurationsteps"></a>
+
+:::warning
+Tenga en cuenta que los siguientes ejemplos suponen que ha iniciado sesión como usuario con privilegios limitados, de ahí el uso de *sudo* delante de cada pedido. Si está conectado como *root*, no necesita hacerlo.
+
+:::
+
+
+:::tip[Success]
+Seleccione la pestaña correspondiente a su sistema operativo.
+
+:::
+
+
+<Tabs>
+  <Tab label="Debian">
+    De forma predeterminada, el archivo de configuración de red de la máquina virtual se encuentra en `/etc/network/interfaces`.
+    
+    Una vez conectado al shell de su máquina virtual, ejecute el siguiente comando para identificar el nombre de su interfaz:
+    
+    ```bash
+    ip a
+    ```
+    
+    A continuación, realice una copia del archivo de configuración para poder volver atrás en cualquier momento:
+    
+    ```bash
+    sudo cp /etc/network/interfaces /etc/network/interfaces.bak
+    ```
+    
+    Si comete algún error, puede volver atrás con los siguientes comandos:
+    
+    ```bash
+    sudo rm -f /etc/network/interfaces
+    sudo cp /etc/network/interfaces.bak /etc/network/interfaces
+    ```
+    
+    Modifique el fichero para que refleje la siguiente configuración, sustituyendo `INTERFACE_NAME`, `ADDITIONAL_IP` y `GATEWAY_IP` por sus propios valores.
+    
+    ```bash
+    sudo nano /etc/network/interfaces
+    ```
+    
+    ```console
+    auto lo
+    iface lo inet loopback
+    
+    # The primary network interface
+    auto INTERFACE_NAME
+    iface INTERFACE_NAME inet static
+    address ADDITIONAL_IP
+    netmask 255.255.255.255
+    gateway GATEWAY_IP
+    ```
+    
+    <details>
+    <summary>Ejemplo</summary>
+
+    
+    ```console
+    auto lo
+    iface lo inet loopback
+    
+    # The primary network interface
+    auto ens192
+    iface ens192 inet static
+    address 192.0.2.1
+    netmask 255.255.255.255
+    gateway 203.0.113.254
+    ```
+
+    </details>
+    
+    Guarde y cierre el archivo.<br/>
+
+A continuación, edite o cree el archivo `/etc/resolv.conf`:
+    
+    ```bash
+    sudo nano /etc/resolv.conf
+    ```
+    
+    Añada la siguiente línea:
+    
+    ```console
+    nameserver 213.186.33.99
+    ```
+    
+    Guarde y cierre el archivo.<br/>
+
+A continuación, deberá conectar su interfaz de red. Para ello, introduzca el siguiente comando (sustituya `ens192` por sus propios valores):
+    
+    ```bash
+    sudo ip link set ens192 up
+    ```
+    
+    Por último, reinicie el servicio de red con el siguiente comando:
+    
+    ```bash
+    sudo systemctl restart networking
+    ```
+  </Tab>
+  <Tab label="Sistemas operativos Red Hat basados en Red Hat">
+    CentOS, Rocky Linux 8/9, Alma Linux 8/9, etc.
+    
+    De forma predeterminada, el archivo de configuración de red de la máquina virtual se encuentra en `/etc/sysconfig/network-scripts/`.
+    
+    Una vez conectado al shell de su máquina virtual, ejecute el siguiente comando para identificar el nombre de su interfaz:
+    
+    ```bash
+    ip a
+    ```
+    
+    A continuación, realice una copia del archivo de configuración para poder volver atrás en cualquier momento:
+    
+    ```bash
+    sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+    ```
+    
+    Si comete algún error, puede volver atrás con los siguientes comandos:
+    
+    ```bash
+    sudo rm -f etc/sysconfig/network-scripts/ifcfg-eth0
+    sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0.bak etc/sysconfig/network-scripts/ifcfg-eth0
+    ```
+    
+    A continuación, edite el fichero con el controlador `nmcli`, sustituya `ADDITIONAL_IP` y `GATEWAY_IP`por sus propios valores.
+    
+    - Añada la dirección IP:
+    
+    ```bash
+    sudo nmcli connection modify interface_name IPv4.address ADDITIONAL_IP/32
+    ```
+    
+    - Añada el servicio Gateway:
+    
+    ```bash
+    sudo nmcli connection modify interface_name IPv4.gateway GATEWAY_IP
+    ```
+    
+    - Añada un servidor DNS:
+    
+    ```bash
+    sudo nmcli connection modify interface_name IPv4.dns 213.186.33.99
+    ```
+    
+    - Cambie la configuración manualmente:
+    
+    ```bash
+    sudo nmcli connection modify interface_name IPv4.method manual
+    ```
+    
+    - Conserve la configuración:
+    
+    ```bash
+    sudo nmcli con mod interface_name connection.autoconnect true
+    ```
+    
+    - Reinicie la red con el siguiente comando:
+    
+    ```bash
+    sudo nmcli device down interface_name;nmcli device up interface_name
+    ```
+  </Tab>
+  <Tab label="FreeBSD">
+    Por defecto, el archivo de configuración de red de la máquina virtual se encuentra en `/etc/rc.conf`.
+    
+    Una vez conectado al shell de su máquina virtual, ejecute el siguiente comando para identificar el nombre de su interfaz:
+    
+    ```bash
+    ifconfig
+    ```
+    
+    A continuación, realice una copia del archivo de configuración para poder volver atrás en cualquier momento:
+    
+    ```bash
+    sudo cp /etc/rc.conf /etc/rc.conf.bak
+    ```
+    
+    Si comete algún error, puede volver atrás con los siguientes comandos:
+    
+    ```bash
+    sudo rm -f /etc/rc.conf
+    sudo cp /etc/rc.conf.bak /etc/rc.conf
+    ```
+    
+    Modifique el fichero para que refleje la siguiente configuración, sustituyendo `ADDITIONAL_IP` y `GATEWAY_IP` por sus propios valores. En este ejemplo, el nombre de la interfaz es `em0`. Reemplace este valor si no es aplicable.
+    
+    ```console
+    ifconfig_em0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"
+    static_routes="net1 net2"
+    route_net1="-net GATEWAY_IP/32 -interface em0"
+    route_net2="default GATEWAY_IP"
+    ```
+    
+    Guarde y cierre el archivo. A continuación, edite el archivo `/etc/resolv.conf`. Créelo si es necesario.
+    
+    ```console
+    nameserver 213.186.33.99
+    ```
+    
+    Guarde y cierre el archivo y reinicie la máquina virtual.
+  </Tab>
+  <Tab label="Ubuntu">
+    En primer lugar, desactive cloud-init:
+    
+    ```bash
+    touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+    ```
+    
+    :::warning
+    Si quiere configurar su MV con cloud-init, visite [esta página](https://cloud-init.io/)
+
+    :::
+
+    
+    Añada esta línea al archivo `99-disable-network-config.cfg`:
+    
+    ```bash
+    network: {config: disabled}
+    ```
+    
+    A continuación, cree el archivo de configuración de red en `/etc/netplan/` con el siguiente comando:
+    
+    ```bash
+    touch /etc/netplan/00-installer-config.yaml
+    ```
+    
+    A continuación, aplique estos permisos en `/etc/netplan`:
+    
+    ```bash
+    cd /etc/netplan
+    sudo chmod 600 *.yaml
+    ```
+    
+    Ejecute el siguiente comando para identificar el nombre de la interfaz:
+    
+    ```bash
+    ip addr
+    ```
+    
+    A continuación, haga una copia del archivo de configuración para poder volver atrás en cualquier momento. A modo de demostración, nuestro archivo se llama `00-installer-config.yaml`:
+    
+    ```bash
+    sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
+    ```
+    
+    Si comete algún error, puede volver atrás con los siguientes comandos:
+    
+    ```bash
+    sudo rm -f /etc/netplan/00-installer-config.yaml
+    sudo cp /etc/netplan/00-installer-config.yaml.bak /etc/netplan/00-installer-config.yaml
+    ```
+    
+    A continuación, abra el archivo de configuración de red:
+    
+    ```bash
+    sudo nano /etc/netplan/00-installer-config.yaml
+    ```
+    
+    Modifique el fichero para que refleje la siguiente configuración, sustituyendo `INTERFACE-NAME`, `ADDITIONAL_IP` y `GATEWAY_IP` por sus propios valores.
+    
+    ```yaml
+    network:
+      ethernets:
+        INTERFACE-NAME:
+          dhcp4: true
+          addresses:
+              - ADDITIONAL_IP/32
+          nameservers:
+              addresses:
+                  - 213.186.33.99   
+          routes:
+               - to: 0.0.0.0/0
+                 via: GATEWAY_IP
+                 on-link: true
+      version: 2
+    ```
+    
+    
+    <details>
+    <summary>Ejemplo</summary>
+
+    
+    ```yaml
+    network:
+      ethernets:
+        ens18:
+          dhcp4: true
+          addresses:
+              - 192.0.2.1/32
+          nameservers:
+              addresses:
+                  - 213.186.33.99
+          routes:
+               - to: 0.0.0.0/0
+                 via: 203.0.113.254
+                 on-link: true
+      version: 2
+    ```
+
+    </details>
+    
+    Guarde y cierre el archivo. Puede probar la configuración con el siguiente comando:
+    
+    ```bash
+    sudo netplan try
+    ```
+    
+    Si es correcta, aplíquela con el siguiente comando:
+    
+    ```bash
+    sudo netplan apply
+    ```
+  </Tab>
+  <Tab label="Windows Server/Hyper-V">
+    Antes de configurar la máquina virtual, deberá crear un conmutador virtual.
+    
+    Desde la línea de comandos de su servidor dedicado, ejecute el siguiente comando y anote el nombre de la tarjeta de red que contiene la dirección IP principal del servidor:
+    
+    ```powershell
+    ipconfig /all
+    ```
+    
+    En el panel de configuración Hyper-V, cree un nuevo conmutador virtual y establezca el tipo de conexión en <code className="action">External</code>.
+    
+    Seleccione el adaptador con la dirección IP del servidor y marque <code className="action">Autorizar al sistema operativo a compartir esta tarjeta de red</code>.
+    
+    <img className="thumbnail" alt="networkbridging" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/network-bridging-windows-2012-1.jpg" loading="lazy" />
+    
+    :::info
+    Este paso solo es necesario una vez para un servidor Hyper-V. Para todas las máquinas virtuales, es necesario un conmutador virtual para conectar las tarjetas de red virtual de la máquina virtual a la tarjeta física del servidor.
+
+    :::
+
+    
+    A continuación, seleccione la máquina virtual a la que quiere añadir la Additional IP. Utilice el panel de configuración Hyper-V para modificar los parámetros de la máquina virtual y cierre el panel.
+    
+    Despliegue la tarjeta de red y haga clic en <code className="action">Advanced Feature</code>, establezca la dirección MAC en <code className="action">Static</code> e introduzca la dirección MAC virtual para la dirección Additional IP. Una vez que haya introducido estos parámetros, pulse <code className="action">OK</code> para aplicar los cambios.
+    
+    <img className="thumbnail" alt="networkbridging" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/network-bridging-windows-2012-2.jpg" loading="lazy" />
+
+A continuación, inicie la máquina virtual y conéctese como administrador y acceda a <code className="action">Control Panel</code> de control y a <code className="action">Network and Sharing Center</code>. Haga clic en el enlace <code className="action">Connections: Ethernet</code> y haga clic en el botón <code className="action">Properties</code> para ver las propiedades Ethernet.
+    
+    Seleccione el protocolo de <code className="action">Internet Protocol Version 4 (TCP/IPv4)</code> y haga clic en el botón <code className="action">Properties</code> para ver las propiedades IPv4.
+    
+    <img className="thumbnail" alt="networkbridging" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/network-bridging-windows-2012-3.jpg" loading="lazy" />
+
+En la ventana Propiedades de la IPv4, seleccione <code className="action">Use the following IP address</code>. Introduzca la dirección Additional IP en el campo de direcciones IP e introduzca "255.255.255.255" en la máscara de subred.
+    
+    A continuación, introduzca la dirección IP de la pasarela del servidor en la pasarela por defecto (por ejemplo, la IP del servidor termina en 254) e introduzca "213.186.33.99" en el campo <code className="action">Preferred DNS Server</code>.
+    
+    Haga clic en <code className="action">OK</code> e ignore el mensaje de aviso relativo a la dirección IP de la pasarela y a la dirección IP asignada que no estén en la misma subred.
+    
+    Por último, reinicie el servidor. La máquina virtual debe conectarse a internet con la dirección Additional IP.
+    
+    <img className="thumbnail" alt="networkbridging" src="/images/bare-metal-cloud/dedicated-servers/network-bridging/network-bridging-windows-2012-4.jpg" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Para comprobar que la máquina virtual está totalmente conectada a Internet, utilice el siguiente comando:
+
+**Para Linux**
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
+```
+
+**Para Windows**
+
+```powershell
+ping example.com
+
+Pinging example.com [93.184.215.14] with 32 bytes of data:
+Reply from 93.184.215.14: bytes=32 time=74ms TTL=50
+Reply from 93.184.215.14: bytes=32 time=73ms TTL=50
+Reply from 93.184.215.14: bytes=32 time=73ms TTL=50
+Reply from 93.184.215.14: bytes=32 time=73ms TTL=50
+
+Ping statistics for 93.184.215.14:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 73ms, Maximum = 74ms, Average = 73ms
+```
+
+Si recibe una respuesta, significa que la Additional IP se ha configurado correctamente. En caso contrario, reinicie la máquina virtual e intente ping de nuevo.
+
+#### Resolución de fallos
+
+Si no consigue establecer una conexión entre su máquina virtual y la red pública y si tiene dudas sobre la red, reinicie el servidor en modo de rescate y configure la interfaz de red pasarela directamente en el host.
+
+Para ello, una vez que haya reiniciado el servidor en modo de rescate, introduzca los siguientes comandos:
+
+```bash
+ip link add name test-bridge link eth0 type macvlan
+ip link set dev test-bridge address MAC_ADDRESS
+ip link set test-bridge up
+ip addr add ADDITIONAL_IP/32 dev test-bridge
+```
+
+Sustituya "MAC_ADDRESS" por la dirección MAC virtual generada en el panel de configuración y "ADDITIONAL_IP" por la Additional IP real.
+
+A continuación, solo tiene que hacer ping a su Additional IP desde el exterior. Si funciona, probablemente significa que hay un error de configuración en la máquina virtual o en el host que impide que la Additional IP funcione en modo normal. Si, por el contrario, la IP sigue sin funcionar, abra un tíquet de asistencia a través del [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

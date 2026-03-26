@@ -1,0 +1,128 @@
+---
+title: "Gestion du service OVHcloud Load Balancer via l'espace client"
+description: "Résumé des principales fonctionnalités et prise en main du service Load Balancer via l'espace client OVHcloud"
+lastUpdated: 2025-07-30
+---
+
+## Objectif
+
+Ce guide a pour but de vous aider lors de la première prise en main de votre Load Balancer en vous présentant les fonctionnalités principales de l'offre.
+
+## Prérequis
+
+- Posséder une offre [OVHcloud Load balancer](https://www.ovhcloud.com/fr/network/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+
+## En pratique
+
+### Gérer son Load Balancer via l'espace client
+
+Pour gérer votre Load Balancer via l'espace client, rendez-vous dans la partie <code className="action">Bare metal Cloud</code> puis cliquez sur <code className="action">Network</code> et <code className="action">Load Balancer</code>. Sélectionnez votre service.
+
+<img className="thumbnail" alt="Load Balancer" src="/images/network/load-balancer/use-lb/lbip-main.png" loading="lazy" />
+
+Sur la page de résumé de votre service Load Balancer, vous trouverez les menus suivants :
+
+|Menu|Détails|
+|---|---|
+|Statut|Résumé de votre Load Balancer avec le nom du service, les frontends, les fermes fonctionnelles et les serveurs ajoutés|
+|Utilisation|Un récapitulatif de l'utilisation de votre LoadBalancer|
+|Graphiques|Des graphiques présentant le nombre de connexions simultanées ou le nombre de requêtes par minute|
+|Informations|Vos adresses IPv4 et IPv6 et les Additional IP liées, ainsi que le nombre d'IPv4 de sortie (obtenez des détails en cliquant sur le bouton <code className="action">...</code>)|
+|Configuration|Personnalisez ici le nom de votre offre. Retrouvez aussi le(s) cipher(s), qui sont personnalisables, ainsi que la zone de disponibilité où se situe votre Load Balancer|
+|Abonnement|Vous trouverez ici les détails administratifs de votre offre|
+
+Pour ajouter des <code className="action">Frontends</code> ou des <code className="action">Fermes de serveurs</code>, cliquez simplement sur les onglets respectifs. Un formulaire vous aidera ensuite à configurer chaque partie de votre service.
+
+### Gérer ses frontends
+
+Afin d'ajouter des frontends, il vous suffit de vous rendre dans l'onglet <code className="action">Frontends</code> et de cliquer sur <code className="action">Ajouter un frontend</code>. Vous aurez alors accès au menu suivant :
+
+<img className="thumbnail" alt="Ajout frontend" src="/images/network/load-balancer/use-lb/add_frontend.png" loading="lazy" />
+
+Détails des éléments d'un frontend :
+
+|Élément|Fonction|
+|---|---|
+|Nom|Vous pouvez nommer ici votre frontend, afin notamment de l'identifier rapidement si vous en avez plusieurs |
+|Protocole|Vous avez le choix entre le HTTP, HTTPS, TCP, SSL TCP (ou TLS) et l'UDP|
+|Port|Choisissez ici le port d'écoute à utiliser|
+|Datacenter|Vous pouvez choisir entre une zone de disponibilité en particulier ou toutes les zones de disponibilité pour la création du frontend|
+|Ferme par défaut|Si vous avez plusieurs fermes paramétrées, vous pourrez en choisir une par défaut pour chaque frontend|
+
+Vous avez également accès à des paramètres avancés :
+
+<img className="thumbnail" alt="Parametres avances" src="/images/network/load-balancer/use-lb/advanced_frontend.png" loading="lazy" />
+
+|Élément|Fonction|
+|---|---|
+|Dedicated Additional IP|La liste des Additional IP des serveurs distants|
+|Restreindre l'accès à des IPs|Liste permettant de restreindre l'accès distant au Load Balancer, uniquement en IPv4|
+|Redirection HTTP|Ajout d'une URL de redirection HTTP|
+|Entête HTTP|Ajout d'un en-tête HTTP|
+
+### Gérer ses fermes
+
+Afin d'ajouter une ferme de serveurs, il vous suffit de vous rendre dans l'onglet <code className="action">Fermes de serveurs</code> et de cliquer sur <code className="action">Ajouter une ferme de serveurs</code>. Vous accéderez aux mêmes options principales que pour le frontend. Les options avancées seront par contre différentes :
+
+<img className="thumbnail" alt="Ajout d'une ferme" src="/images/network/load-balancer/use-lb/advanced_cluster.png" loading="lazy" />
+
+|Élément|Fonction|
+|---|---|
+|Mode de répartition|Choix entre Round-robin, First, Last, Source ou URI pour votre balancement d'IP|
+|Suivi de session|Le suivi de session peut se faire par cookie ou IP Source, à définir ici|
+|Sonde|Choix et activation de la sonde|
+
+### Gérer ses serveurs
+
+Une fois votre ferme de serveurs créée, il vous reste à y ajouter des serveurs. Retrouvez ci-dessous le détail des options ainsi que des options avancées :
+
+<img className="thumbnail" alt="Ajout serveur" src="/images/network/load-balancer/use-lb/add_server.png" loading="lazy" />
+<img className="thumbnail" alt="Ajout serveur" src="/images/network/load-balancer/use-lb/add_server_advanced.png" loading="lazy" />
+
+|Élément|Fonction|
+|---|---|
+|Nom|Si vous le souhaitez, vous pouvez nommer votre serveur, afin de l'identifier rapidement quand vous en avez plusieurs|
+|Adresse IPv4|Ajout de l'IP du service qui agira comme serveur|
+|Port|Port du serveur|
+|Serveur de secours|Préciser que ce serveur est un serveur de secours|
+|Utiliser la sonde de disponibilité de la ferme|Choisir d'utiliser la sonde validée lors de la création de la ferme|
+|Chiffrer les requêtes avec SSL|Chiffrer les requêtes avec un certificat SSL|
+|Cookie|Ajout d'un cookie de session personnalisé|
+|Chaîne de certification|Ajout d'une chaîne de certification|
+|Poids de balancement|Choix du poids de balancement pour la répartition de charge|
+|Version du protocole de PROXY|**Uniquement si vous l'avez déjà configuré**, choisissez la version du protocole de PROXY que vous souhaitez utiliser sur ce serveur. <br/> Vous pouvez trouver plus d'informations sur le protocole PROXY et sur son utilisation avec le service OVHcloud Load Balancer dans [ce guide](/guides/network/load-balancer/create-proxyprotocol/).|
+
+### Gérer ses certificats SSL
+
+Il est possible d'ajouter un SSL au Load Balancer depuis l'onglet <code className="action">Certificats SSL</code>. Vous aurez alors deux possibilités : commander un certificat SSL via OVHcloud ou ajouter un certificat externe.
+
+#### Certificat SSL OVHcloud
+
+Pour commander un certificat SSL, sélectionnez l'onglet <code className="action">Certificat SSL</code> puis cliquez sur <code className="action">Commander un certificat SSL</code>.
+
+<img className="thumbnail" alt="Commande d'un certificat SSL" src="/images/network/load-balancer/use-lb/ordering_ssl.png" loading="lazy" />
+
+|Élément|Fonction|
+|---|---|
+|Nom|Si vous le souhaitez, vous pouvez nommer votre certificat, afin de l'identifier rapidement quand vous en avez plusieurs|
+|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV (Pour plus de détails, [consultez cette page](https://www.ovhcloud.com/fr/web-hosting/options/ssl/))|
+|Fully Qualified Domain Name (FQDN)|Le(s) domaine(s) concerné(s)|
+
+#### Ajout d'un certificat SSL externe
+
+Si vous possédez déjà votre propre certificat SSL, il vous est possible de l'ajouter directement :
+
+<img className="thumbnail" alt="Ajout d'un certificat SSL" src="/images/network/load-balancer/use-lb/external_ssl-00.png" loading="lazy" />
+<img className="thumbnail" alt="Ajout d'un certificat SSL" src="/images/network/load-balancer/use-lb/external_ssl.png" loading="lazy" />
+
+|Élément|Fonction|
+|---|---|
+|Nom|Choisissez si vous le souhaitez un nom à votre certificat, afin de l'identifier rapidement quand vous en avez plusieurs|
+|Clef privée|Champ d'ajout de la clef privée à ajouter au service|
+|Certificat|Champ d'ajout du certificat|
+|Chaîne|Champ d'ajout du certificat racine si nécessaire|
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

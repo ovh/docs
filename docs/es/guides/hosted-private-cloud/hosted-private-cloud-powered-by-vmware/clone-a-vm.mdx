@@ -1,0 +1,104 @@
+---
+title: Clonar una MV (EN)
+description: Learn two ways to clone an existing virtual machine in vSphere
+lastUpdated: 2022-01-12
+---
+
+## Objective
+
+VMware offers the ability to clone a VM to create another one or a template.
+
+**This guide explains how to execute those tasks.**
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es))
+
+## Instructions
+
+### Clone a VM
+
+Cloning allows for quick and efficient deployment of similar VMs.<br/>
+You can clone a VM into another one or clone it into a template.<br/>
+Cloning to a VM is a quick way to copy a full VM and its settings.<br/>
+Cloning to a template is a preferred way to create a master copy that will be used to deploy many VMs.
+
+#### Clone to VM
+
+In the vSphere interface menu, go to the <code className="action">Hosts and Clusters</code> dashboard.<br/>
+Navigate to your VM, right click on it and in the <code className="action">Clone</code> menu, select <code className="action">Clone to Virtual Machine</code>.
+
+<img className="thumbnail" alt="CLONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en08clonevm.png" loading="lazy" />
+
+Name the clone VM and select its datacenter location.<br/>
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="CLONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en09clonename.png" loading="lazy" />
+
+Select the clone VM compute location.<br/>
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="CLONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en10clonecomp.png" loading="lazy" />
+
+Select the clone VM storage location.<br/>
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="CLONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en11clonestor.png" loading="lazy" />
+
+Select the options for your clone VM.
+
+- Customize the operating system will trigger sysprep on first use of the VM
+- Customize this virtual machine's hardware allows for modification of VM capabilities (HDD size, network elements...)
+- Power on virtual machine after creation is not recommended as you may have to apply changes before startup to prevent issues (network conflicts most notably if you use fixed IPs)
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="CLONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en12clonecustom.png" loading="lazy" />
+
+Review and click <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="CLONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en13clonefinish.png" loading="lazy" />
+
+The cloning process will go through and the new VM is ready for you.
+
+:::info
+If you cloned without any customization, make sure it is safe to boot the new VM. If it is cloned from a fixed IP VM, you should disable the Network Card to avoid IP conflicts for example.
+
+:::
+
+
+#### Clone to Template
+
+In the vSphere interface menu, go to the <code className="action">Hosts and Clusters</code> dashboard.<br/>
+Navigate to your VM, right click it and, in the <code className="action">Clone</code> menu, select <code className="action">Clone to Template</code>.
+
+<img className="thumbnail" alt="TEMPLATE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en14clonetemp.png" loading="lazy" />
+
+Name the template VM and select its datacenter location.<br/>
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="TEMPLATE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en15clonename.png" loading="lazy" />
+
+Select the template VM compute location.<br/>
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="TEMPLATE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en16clonecomp.png" loading="lazy" />
+
+Select the template VM storage location.<br/>
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="TEMPLATE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en17clonestor.png" loading="lazy" />
+
+Review and click <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="TEMPLATE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en18clonefinish.png" loading="lazy" />
+
+The cloning to template process will go through.<br/>
+No VM is directly visible but when deploying new VM, the clone will show in the "Deploy from Template" option.
+
+<img className="thumbnail" alt="TEMPLATE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/clone-a-vm/en19deploy.png" loading="lazy" />
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

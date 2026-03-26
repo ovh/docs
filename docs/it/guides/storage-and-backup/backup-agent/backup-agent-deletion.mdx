@@ -1,0 +1,81 @@
+---
+title: Backup Agent - Procedura di eliminazione
+description: Scopri come eliminare un agente, un vault o un tenant Backup Agent
+lastUpdated: 2026-02-03
+---
+
+## Obiettivo
+
+Questo manuale ti spiega come eliminare diversi elementi del tuo servizio Backup Agent: gli agenti, i vault e i tenant.
+
+## Prerequisiti
+
+- Avere un servizio Backup Agent attivo.
+
+{/* CP-NAV-START:baremetal-backup-agent */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Backup Agent](https://manager.eu.ovhcloud.com/#/bmc-backup-agent-baremetal/service)
+- **Percorso di navigazione:** <code className="action">Bare Metal Cloud</code> > <code className="action">Backup Agent</code>
+
+---
+{/* CP-NAV-END:baremetal-backup-agent */}
+
+## Procedura
+
+### Eliminare un agente
+
+:::info
+**Comportamento in base all'utilizzo dell'agente :**
+
+- **Se l'agente non è stato utilizzato per trasferire dati** : Può essere eliminato immediatamente. Verrà disattivato inizialmente, quindi eliminato.
+- **Se sono stati trasferiti dati** : Applichiamo una sospensione dell'agente in stato "Disattivato" per 14 giorni, il tempo necessario per eliminare i dati immutabili.
+
+:::
+
+
+:::warning
+Una volta che il tuo agente è sospeso, non puoi più creare un nuovo agente sullo stesso server, devi attendere che il primo agente venga eliminato.
+
+:::
+
+
+Vai alla sezione <code className="action">Agenti</code> e clicca sul pulsante di eliminazione per l'agente desiderato.
+
+Conferma l'eliminazione dell'agente nella finestra che appare.
+
+<img className="thumbnail" alt="Backup Agent Delete Agent" src="/images/storage-and-backup/backup-agent/backup-agent-deletion/01-backup-agent-delete-agent.png" loading="lazy" />
+
+### Eliminare un vault
+
+:::warning
+Un vault non può essere eliminato se contiene dati. Se desideri eliminare un vault, devi [contattare l'assistenza](https://help.ovhcloud.com/csm?id=csm_get_help), che effettuerà controlli con te prima di avviare l'eliminazione.
+
+:::
+
+
+Vai alla sezione <code className="action">Vaults</code> e clicca sul pulsante di eliminazione per il vault desiderato.
+
+Conferma l'eliminazione nella finestra che appare.
+
+<img className="thumbnail" alt="Backup Agent Delete Vault" src="/images/storage-and-backup/backup-agent/backup-agent-deletion/01-backup-agent-delete-vault.png" loading="lazy" />
+
+### Eliminare un tenant
+
+:::warning
+Al momento, un tenant non può essere eliminato in modo autonomo. Se desideri eliminare un tenant, devi [contattare l'assistenza](https://help.ovhcloud.com/csm?id=csm_get_help). Prenderemo in considerazione la tua richiesta.
+
+:::
+
+
+Seleziona il tuo tenant e clicca sul pulsante di eliminazione.
+
+Conferma l'eliminazione nella finestra che appare.
+
+<img className="thumbnail" alt="Backup Agent Delete Tenant" src="/images/storage-and-backup/backup-agent/backup-agent-deletion/01-backup-agent-delete-tenant.png" loading="lazy" />
+
+## Per saperne di più
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

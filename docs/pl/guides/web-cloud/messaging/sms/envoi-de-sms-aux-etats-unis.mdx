@@ -1,0 +1,121 @@
+---
+title: Wysyłanie SMS-ów do Stanów Zjednoczonych
+description: Dowiedz się, jak przestrzegać szczególnych zasad wysyłania wiadomości SMS do Stanów Zjednoczonych i stosować je z poziomu Panelu klienta OVHcloud
+lastUpdated: 2022-08-05
+---
+
+import Api from '@components/Api';
+
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Wysyłanie SMS-ów do Stanów Zjednoczonych podlega szczególnym zasadom. Celem niniejszego przewodnika jest wytłumaczenie Ci ich i pokazanie w jaki sposób je stosować, aby móc wysyłać SMS-y do tego regionu świata.
+
+## Wymagania początkowe
+
+- Posiadanie konta SMS OVHcloud z kredytami SMS.
+- Zalogowanie do [API OVHcloud](https://eu.api.ovh.com/) (tylko dla metody wysyłki przez API)
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Ścieżka nawigacji:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Wybierz konto SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="Panel klienta Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png" loading="lazy" />
+
+## W praktyce
+
+### Etap 1: Zapoznanie się z ograniczeniami
+
+W porozumieniu z organem regulacyjnym działającym w Stanach Zjednoczonych (Neustar), wysyłanie SMS-ów do tego kraju wymaga uprzedniego zatwierdzenia modelu wiadomości przez nasz zespół.
+Autoryzowane są wyłącznie wiadomości z ostrzeżeniami oraz wiadomości związane z weryfikacją dwuetapową, OVHcloud nie zaakceptuje żadnych modeli SMS-ów reklamowych. Po zatwierdzeniu Twojego modelu, wysyłka wiadomości odbywa się w taki sam sposób, jak w przypadku innych krajów.
+
+Możesz poprosić o zatwierdzenie kilku modeli wiadomości.
+
+:::info
+Zatwierdzenie modeli wiadomości jest wykonywane nieodpłatnie przez zespoły OVHcloud w ciągu jednego do dwóch dni roboczych.
+
+:::
+
+
+### Etap 2: Dodawanie modelu
+
+#### 2.1 Za pośrednictwem Panelu klienta
+
+Kliknij kartę <code className="action">Wiadomość SMS i kampania</code>, a następnie <code className="action">Zarządzanie SMS-ami</code>.
+
+Następnie kliknij polecenie <code className="action">Zarządzanie modelami</code>.
+
+<img className="thumbnail" alt="Wiadomości SMS do Stanów Zjednoczonych" src="/images/web-cloud/messaging/sms/envoi-de-sms-aux-etats-unis/smstousa1.png" loading="lazy" />
+
+Na stronie, która się wtedy wyświetli kliknij <code className="action">Operacja</code>, a następnie <code className="action">Dodaj</code>.
+
+<img className="thumbnail" alt="Wiadomości SMS do Stanów Zjednoczonych" src="/images/web-cloud/messaging/sms/envoi-de-sms-aux-etats-unis/smstousa2.png" loading="lazy" />
+
+Pojawi się okienko pop-up zawierające pola do wypełnienia.
+
+<img className="thumbnail" alt="Wiadomości SMS do Stanów Zjednoczonych" src="/images/web-cloud/messaging/sms/envoi-de-sms-aux-etats-unis/smstousa3.png" loading="lazy" />
+
+| Pole       | Opis                                                                                                      |
+|-------------|------------------------------------------------------------------------------------------------------------------|
+| Nazwa         | Nazwa szablonu                                                                                                  |
+| Aktywność    | Wybierz typ modelu:<br/>\- Ostrzeżenie<br/>\- Uwierzytelnianie<br/>\- System przetwarzania transakcji |
+| Opis | Opis modelu                                                                                            |
+| Model      | Napisz model zawierający zmienną między #                                                                  |
+
+#### 2.2 Za pośrednictwem API
+
+:::tip[Success]
+Jeśli nie wiesz, jak korzystać z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/guides/manage-and-operate/api/first-steps/)".
+
+:::
+
+
+Zaloguj się na [api.ovh.com/](https://eu.api.ovh.com/) i użyj następującego interfejsu API:
+
+<Api version="v1" section="/sms" method="POST" route={"/sms/\{serviceName\}/templatesControl"} />
+
+
+<img className="thumbnail" alt="Wiadomości SMS do Stanów Zjednoczonych" src="/images/web-cloud/messaging/sms/envoi-de-sms-aux-etats-unis/smstousa4.png" loading="lazy" />
+
+Wypełnij wymagane pola i kliknij <code className="action">Execute</code>.
+
+#### Przykłady modeli
+
+Poniżej znajdziesz 2 przykłady modeli wiadomości zaadresowanych do Stanów Zjednoczonych.
+
+- Przykład szablonu uwierzytelniającego:
+
+```bash
+Your security code is #CODE#, have a good day
+```
+
+- Przykład szablonu ostrzeżenia:
+
+```bash
+Our monitoring system detected your server #SERVER# doesn't respond to ping requests
+```
+
+### Etap 3: Analiza rezultatu
+
+Po utworzeniu i zatwierdzeniu Twojego modelu wiadomości, operacja wysyłania SMS-a generuje automatyczne porównanie jego treści z Twoimi modelami. Jeśli wynik tego porównania będzie pozytywny, SMS zostaje wysłany w taki sam sposób, jak ma to miejsce w przypadku wiadomości wysyłanej do innego kraju.
+
+Jeżeli wysyłasz wiadomość SMS do Stanów Zjednoczonych bez uprzedniego stworzenia i zatwierdzenia modelu, SMS zostanie odrzucony, a Ty otrzymasz Premium Tracking Transaction Code (PTT code) 1999. Kod ten odpowiada komunikatowi błędu „No templates available” (brak utworzonego modelu wiadomości).
+
+Pozostałe możliwe kody rezultatów możesz znaleźć w [tym przewodniku](/guides/web-cloud/messaging/sms/tout-savoir-sur-les-utilisateurs-sms/).
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

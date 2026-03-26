@@ -1,0 +1,81 @@
+---
+title: Tworzenie wolumenu z kopii zapasowej
+description: Dowiedz się, jak utworzyć dodatkowe dyski na podstawie kopii zapasowej dodatkowego dysku
+lastUpdated: 2025-04-28
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Możesz utworzyć dodatkowe dyski dla instancji Public Cloud, wykonując kopię zapasową dodatkowego dysku.
+
+Może to być przydatne w następujących przypadkach:
+
+- Jeśli chcesz przywrócić dane z dodatkowego dysku.
+- Jeśli chcesz dysponować wydajną przestrzenią dyskową o wysokiej dostępności.
+- Jeśli chcesz przenieść dane do innej instancji.
+
+**Dowiedz się, jak utworzyć i skonfigurować dodatkowy dysk na jednej z Twoich instancji przy użyciu kopii zapasowej dysku.**
+
+## Wymagania początkowe
+
+- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
+- Posiadanie kopii zapasowej dysku w tym samym regionie OpenStack
+- Dostęp do instancji przez SSH jako administrator (sudo)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+### Dostęp do Panelu klienta OVHcloud
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## W praktyce
+
+### Utwórz dysk z kopii zapasowej
+
+Kliknij <code className="action">Snapshoty wolumenów</code> na pasku nawigacji po lewej stronie w **Storage i Backup**.
+
+Po prawej stronie wybranej kopii zapasowej kliknij przycisk <code className="action">...</code> a następnie <code className="action">Utwórz wolumen</code>.
+
+<img className="thumbnail" alt="tworzyć" src="/images/public-cloud/compute/create-volume-from-snapshot/volume01.png" loading="lazy" />
+
+Wpisz nazwę nowego dysku i jego pojemność, po czym kliknij <code className="action">Utwórz wolumen</code>.
+
+<img className="thumbnail" alt="tworzyć" src="/images/public-cloud/compute/create-volume-from-snapshot/volume02.png" loading="lazy" />
+
+Utworzenie dysku może zająć kilka minut, w zależności od jego rozmiaru.
+
+### Przypisz dysk do instancji
+
+Po utworzeniu dysku możesz zadecydować o przypisaniu go do instancji. W tym celu kliknij <code className="action">Block Storage</code> na pasku nawigacji po lewej stronie **Storage i Backup**.
+
+Po prawej stronie wybranego wolumenu kliknij przycisk <code className="action">...</code>, a następnie <code className="action">Przypisz do instancji</code>.
+
+<img className="thumbnail" alt="przywiąż wolumen" src="/images/public-cloud/compute/create-volume-from-snapshot/volume03.png" loading="lazy" />
+
+Wybierz instancję i kliknij <code className="action">Potwierdź</code>, aby podłączyć dysk.
+
+<img className="thumbnail" alt="przywiąż wolumen" src="/images/public-cloud/compute/create-volume-from-snapshot/volume04.png" loading="lazy" />
+
+Proces łączenia dysku z Twoją instancją rozpocznie się i może zająć kilka minut.
+
+<img className="thumbnail" alt="przywiąż wolumen" src="/images/public-cloud/compute/create-volume-from-snapshot/volume05.png" loading="lazy" />
+
+:::warning
+:::
+
+Podczas łączenia dysku unikaj przeglądania strony poza zakładką w trakcie. Może to zakłócić proces.
+>
+
+Po podłączeniu możesz przejść do kolejnych etapów [w systemie Linux](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#w-systemie-linux/) lub [Windows](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#w-systemie-windows/).
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,147 @@
+---
+title: Web hosting - Activar las direcciones de correo incluidas
+description: Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web
+lastUpdated: 2026-01-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un dominio, deberá activar manualmente la solución de correo incluida en el servicio para asociarla al dominio que usted elija.
+
+**Esta guía explica cómo activar las direcciones de correo incluidas en su plan de alojamiento web.**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Rw3_KAF0Agc?si=phwVNNdXhRPuOPNA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen={true}></iframe>
+
+## Requisitos
+
+- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/) en su área de cliente de OVHcloud.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) (excepto los planes "Alojamiento gratuito de 100M" y "Start10m").
+:::warning
+Si quiere activar la opción "dirección(s) de correo incluida(s) con su alojamiento web" para un dominio externo (no registrado en OVHcloud) **del que deba ser obligatoriamente administrador**, deberá crear (al menos) una zona DNS en OVHcloud para su dominio externo. Si lo necesita, consulte nuestra guía "[Crear una zona DNS en OVHcloud](/guides/web-cloud/domains/dns-zone-create/)". Al activar esta opción, su dominio aparecerá en la lista de dominios disponibles.
+
+Por otro lado, si su dominio ya está registrado en OVHcloud o si existe una zona DNS para él en otra [cuenta de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) que el suyo, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/guides/account-and-service-management/account-information/managing-contacts/)" para consultar su gestión.
+
+Por último, si su dominio ya está asociado a la opción "dirección(s) de correo incluida(s) con su alojamiento web" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Para más información, consulte esta guía.
+
+:::
+
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Alojamientos</code> > Seleccione su alojamiento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedimiento
+
+### Activación de las direcciones de correo electrónico incluidas con el plan de hosting
+
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Acceda a la página [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) y seleccione el alojamiento web correspondiente.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.
+    Haga clic en el botón <code className="action">...</code> a la derecha y seleccione <code className="action">Activar mi solución de correo</code>.
+    
+    <img className="thumbnail" alt="Activar el correo" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 3">
+    Se mostrará la ventana de activación. Seleccione el dominio que quiere utilizar con sus direcciones de correo y confirme la activación.
+    
+    <img className="thumbnail" alt="Activar el correo" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::info
+Si desea disfrutar de más cuentas de correo incluidas, puede contratar un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) superior desde nuestra página comercial.
+
+Atención: La activación de la opción de correo puede tardar unos minutos. Recibirá un mensaje de correo electrónico para confirmar la instalación y activación de la solución MXPLAN. Incluye, entre otras cosas, la gestión y la configuración de sus direcciones de correo.
+
+:::
+
+
+### Conservación de sus direcciones de correo tras la expiración de su alojamiento web
+
+Si su alojamiento web está a punto de expirar, es posible solicitar la conservación de sus direcciones de correo **antes** de su fecha de expiración.
+
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Acceda a la página [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) y seleccione el alojamiento web correspondiente.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.
+    Haga clic en el botón <code className="action">...</code> a la derecha y seleccione <code className="action">Desvincular mi opción de correo</code>.
+    
+    <img className="thumbnail" alt="Desvincular el correo" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Tendrá la opción de contratar una solución MX personalizada. Una vez abonado el pedido, sus direcciones de correo seguirán funcionando tras la supresión del alojamiento web.
+ 
+### Eliminar la solución de correo asociada al alojamiento web
+
+Es posible eliminar definitivamente la solución de correo asociada a su alojamiento web.
+
+:::warning
+Tenga en cuenta que esta acción es irreversible. Tras la baja del servicio, no será posible reactivar la solución de correo.
+
+:::
+
+
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Acceda a la página [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) y seleccione el alojamiento web correspondiente.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.
+    Haga clic en el botón <code className="action">...</code> a la derecha y seleccione <code className="action">Dar de baja la opción de correo</code>.
+    
+    <img className="thumbnail" alt="Dar de baja el correo" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png" loading="lazy" />
+    
+    :::warning
+    Para confirmar la eliminación del servicio de correo asociado a su alojamiento web, recibirá un enlace de validación por correo electrónico. Es necesario hacer clic en este vínculo para iniciar la operación de eliminación.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+#### Caso particular - Eliminación del servicio de correo asociado a su alojamiento web (para asociarlo a otro dominio)
+
+Por motivos de seguridad, la eliminación definitiva de un servicio de correo puede tardar varios días tras hacer clic en el enlace de validación de eliminación.
+
+Si quiere eliminar el servicio de correo asociado a su alojamiento web para asociarlo a otro dominio, y **solo** en este caso, deberá confirmar por escrito su solicitud de aceleración de la eliminación del servicio. Para ello, puede ponerse en contacto con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). El tíquet de asistencia deberá crearse **obligatoriamente** desde la cuenta de cliente (y el ID de cliente correspondiente) que administre el servicio que vaya a suprimirse.
+
+Una vez procesada la solicitud, podrá asociar la solución de correo asociada a su alojamiento web a otro dominio.
+
+## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

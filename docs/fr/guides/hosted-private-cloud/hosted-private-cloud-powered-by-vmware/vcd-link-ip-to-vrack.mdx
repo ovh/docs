@@ -1,0 +1,54 @@
+---
+title: "Public VCF as-a-Service - Liaison d'un bloc IP public avec vRack"
+description: "Découvrez comment lier le bloc d'adresses IP publiques livré avec votre organisation Public VCF as-a-Service et son vRack"
+lastUpdated: 2025-09-08
+---
+
+
+
+## Objectif
+
+Lors de la commande d'une nouvelle organisation Public VCF as-a-Service, un vRack ainsi qu'un bloc d'adresses IP publiques vous sont livrés.
+
+Ce bloc IP n'est pas directement lié à votre vRack, vous devez effectuer cette liaison manuellement.
+
+**Découvrez comment lier le bloc d'adresses IP publiques livré avec votre organisation Public VCF as-a-Service et son vRack.**
+
+## Prérequis
+
+- Posséder une offre [Public VCF as-a-Service](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/).
+- Être administrateur technique de votre solution [VMware vSphere on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/).
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+## En pratique
+
+1. Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+2. Cliquez sur <code className="action">Hosted Private Cloud</code> puis sur <code className="action">Public VCF as-a-Service</code> et sélectionnez votre organisation.
+
+    <img className="thumbnail" alt="Managed Public VCF as-a-Service organization" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-link-ip-to-vrack/vcd-link-ip-vrack-01.png" loading="lazy" />
+
+3. Depuis l'onglet <code className="action">Information générale</code>, le vRack attaché à votre organisation apparaîtra avec un ID sous la forme `pn-xxxxxxx`.
+
+    <img className="thumbnail" alt="Public VCF as-a-Service vRack attached" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-link-ip-to-vrack/vcd-link-ip-vrack-02.png" loading="lazy" />
+
+4. Dépliez le menu <code className="action">Network</code> dans la colonne de gauche et sélectionnez votre vRack `pn-xxxxxxx`.
+
+    <img className="thumbnail" alt="Network vRack" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-link-ip-to-vrack/vcd-link-ip-vrack-03.png" loading="lazy" />
+
+5. Sélectionnez le bloc IP à lier à votre vRack/organisation et cliquez sur <code className="action">Ajouter</code>.
+
+    <img className="thumbnail" alt="add IP to vRack" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-link-ip-to-vrack/vcd-link-ip-vrack-04.png" loading="lazy" />
+
+6. Le bloc d’adresses IP publiques est désormais lié à votre vRack.
+
+    Pour rendre ces adresses utilisables dans votre environnement Public VCF as-a-Service, vous devez également déclarer la passerelle IP publique dans VMware Cloud Director (VCD).
+
+    Suivez le guide [Public VCF as-a-Service - Déclarer la passerelle IP publique dans VCD](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/) pour finaliser cette étape.
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/).
+
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

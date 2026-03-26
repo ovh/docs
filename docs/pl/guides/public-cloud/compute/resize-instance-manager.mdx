@@ -1,0 +1,93 @@
+---
+title: Zmiana rozmiaru instancji w Panelu klienta OVHcloud
+description: Dowiedz się, jak zmienić rozmiar instancji Public Cloud z poziomu Panelu klienta OVHcloud
+lastUpdated: 2026-03-04
+---
+
+## Wprowadzenie
+
+Jeśli Twoja instancja nie dysponuje wystarczającymi zasobami z powodu zwiększonej aktywności lub nowych potrzeb, możesz zwiększyć jej zasoby za pomocą kilku kliknięć dzięki Public Cloud.
+
+**Z tego przewodnika dowiesz się, jak zmienić rozmiar instancji w Panelu klienta OVHcloud.**
+
+:::warning
+W przypadku modeli klasycznych możliwe jest tylko skalowanie w górę.
+Ponadto operacja ta powoduje wyłączenie instancji na czas jej trwania.
+
+:::
+
+
+:::tip[Success]
+Instancje typu *flex* umożliwiają zmianę rozmiaru na wyższe lub niższe modele dzięki stałemu rozmiarowi dysku.
+
+:::
+
+
+## Wymagania początkowe
+
+- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## W praktyce
+
+Kliknij <code className="action">Instancje</code> w menu po lewej stronie.
+
+Kliknij <code className="action">...</code> po prawej stronie instancji i wybierz <code className="action">Edytuj</code>. Możesz również uzyskać dostęp do tej akcji z poziomu szczegółów instancji, klikając jej nazwę, a następnie <code className="action">Zmień szablon</code>.
+
+W nowej zakładce przewiń stronę do sekcji **Model**, aby wybrać odpowiedni model.
+
+:::info
+W przypadku modeli klasycznych możesz przełączyć na dowolny model o podobnym lub większym dysku. Nie możesz przejść na model z mniejszym dyskiem.<br/>
+
+Tylko **elastyczne instancje** mogą być skalowane w górę lub w dół, zachowując stały rozmiar dysku 50 GB.
+
+:::
+
+
+Jeśli Twój dysk ma 50 GB lub mniej, możesz przełączyć się na <code className="action">Elastyczna instancja</code>, jeśli chcesz.
+
+:::warning
+Jeśli edytujesz instancję typu *flex*, nie jest możliwe przejście na instancję klasyczną za pośrednictwem Panelu klienta. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem [Zmiana instancji flex na instancję klasyczną](/guides/public-cloud/compute/revert-a-flex-instance/).
+
+:::
+
+
+Po dokonaniu wyboru kliknij <code className="action">Zmień szablon</code>, aby potwierdzić wybór.
+
+### Zmiana rozmiaru dysku w systemie Windows
+
+Podczas zmiany rozmiaru instancji Windows rozmiar partycji nie jest automatycznie aktualizowany. Należy go rozszerzyć, korzystając z **menedżera dysków**:
+
+- Kliknij prawym przyciskiem myszy menu <code className="action">Start</code> i uruchom menedżer dysków, klikając <code className="action">Disk Management</code>:
+
+<img className="thumbnail" alt="Menu kontekstowe menu Start z opcją Zarządzanie dyskami" src="/images/public-cloud/compute/resize-instance-manager/2980.png" loading="lazy" />
+
+- Kliknij prawym przyciskiem myszy na partycję główną, a następnie kliknij <code className="action">Extend Volume</code>.
+
+<img className="thumbnail" alt="Kliknięcie prawym przyciskiem na partycji głównej w celu rozszerzenia woluminu" src="/images/public-cloud/compute/resize-instance-manager/2981a.png" loading="lazy" />
+
+- W menu `Extend Volume Wizard` kliknij <code className="action">Next</code>. Wybierz zasoby dysku do rozszerzenia i kliknij <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Kreator rozszerzenia woluminu z wyborem zasobów dysku" src="/images/public-cloud/compute/resize-instance-manager/2978a.png" loading="lazy" />
+
+Kliknij <code className="action">Finish</code>, aby potwierdzić wybór.
+
+<img className="thumbnail" alt="Krok finalizacji kreatora rozszerzenia woluminu" src="/images/public-cloud/compute/resize-instance-manager/wizard2021.png" loading="lazy" />
+
+- Nowy rozmiar dysku zostanie wyświetlony w menedżerze dysków.
+
+<img className="thumbnail" alt="Menedżer dysków wyświetlający nowy rozmiar" src="/images/public-cloud/compute/resize-instance-manager/2979.png" loading="lazy" />
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

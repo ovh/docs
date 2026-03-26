@@ -1,0 +1,80 @@
+---
+title: Como identificar o servidor da sua base de dados
+description: Saiba como encontrar o nome do servidor que aloja a sua base de dados partilhada, acessível com o seu alojamento web
+lastUpdated: 2026-02-12
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Ao longo da utilização dos seus serviços, pode vir a ter necessidade de conhecer o nome do servidor SQL onde se encontra a sua base de dados (incluída ou adquirida como complemento através do seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/)).
+
+:::warning
+Este guia não se aplica às bases de dados presentes numa solução [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/).
+
+:::
+
+
+**Saiba como encontrar o nome do servidor que aloja a sua base de dados partilhada, acessível com o seu alojamento web.**
+
+## Requisitos
+
+- Dispor de uma [oferta de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Utilizar uma base de dados incluída ou [adquirida como complemento](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) através do seu alojamento web.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Alojamentos</code> > Selecione o seu alojamento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instruções
+
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) e escolha o alojamento web correspondente.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    Na página que se abrir, clique no separador <code className="action">Bases de dados</code>.
+    
+    <img className="thumbnail" alt="Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 3">
+    No quadro, localize a coluna **Servidor**.
+    
+    <img className="thumbnail" alt="database-server" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/databases/tab.png" loading="lazy" />
+
+Para a base de dados em questão, encontrará, nesta coluna, o nome do servidor SQL (por exemplo: **mysqlXXX.euXXX**) onde a sua base de dados partilhada está alojada.
+    
+    :::warning
+    Não confunda o **Servidor** com a **Endereço do servidor** :
+    
+    - A **Endereço do servidor** faz parte dos identificadores de ligação específicos à sua base de dados e permite ligar o seu site web a esta.
+    - O **Servidor** representa a infraestrutura que aloja a sua base de dados, bem como outras bases. O nome do servidor permite verificar se está afetado por uma operação de manutenção ou um incidente declarado na nossa página [Web Cloud Status](https://web-cloud.status-ovhcloud.com/).
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+## Quer saber mais? <a name="go-further"></a>
+
+[Resolver os erros mais frequentes associados às bases de dados](/guides/web-cloud/web-hosting/diagnosis-database-errors/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

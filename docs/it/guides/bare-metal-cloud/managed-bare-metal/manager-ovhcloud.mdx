@@ -1,0 +1,229 @@
+---
+title: Introduzione allo Spazio Cliente Managed Bare Metal OVHcloud
+description: Tutte le funzionalità disponibili nello Spazio Cliente Managed Bare Metal
+lastUpdated: 2020-11-18
+---
+
+## Obiettivo
+
+Lo Spazio Cliente OVHcloud propone numerose opzioni di configurazione della tua infrastruttura Managed Bare Metal.
+
+**Questa guida ti mostra le funzionalità disponibili in questa interfaccia per gestire i tuoi servizi.**
+
+## Prerequisiti
+
+- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it), sezione <code className="action">Bare Metal Cloud</code> > <code className="action">Managed Bare Metal</code>.
+- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) attivo
+
+## Procedura
+
+### Informazioni generali
+
+Accedendo alla sezione <code className="action">Bare Metal Cloud</code> > <code className="action">Managed Bare Metal</code> del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it), visualizzi le informazioni relative alla tua piattaforma:
+
+<img className="thumbnail" alt="Informazioni generali" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel1-e.png" loading="lazy" />
+
+In alto a sinistra viene mostrato il nome e la descrizione dell’istanza (`1 nell’immagine`). Personalizzare queste informazioni è molto utile, soprattutto se hai creato più infrastrutture. 
+
+A sinistra, `2 sull’immagine`, visualizzi il tuo o i tuoi Managed Bare Metal, nonché i datacenter virtuali che lo compongono.
+
+#### Informazioni generali
+
+Nella prima sezione sono disponibili le informazioni generali del tuo Managed Bare Metal:
+
+<img className="thumbnail" alt="Informazioni generali" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel2-e.png" loading="lazy" />
+
+- La descrizione del tuo Managed Bare Metal (con la possibilità di cambiare il proprio nome).
+- versione del tuo servizio
+- datacenter, e più precisamente la localizzazione in cui la tua infrastruttura è installata
+- modalità di accesso alla tua infrastruttura (`Libero` o `Limitato`), con le restrizioni per IP sorgente
+- numero di datacenter virtuali presenti nella tua infrastruttura
+- numero di blocchi IP (con la possibilità di ordinare blocchi aggiuntivi)
+
+#### opzioni e conformità
+
+Nella tabella centrale, visualizzi lo stato di attivazione delle opzioni del tuo Managed Bare Metal.
+
+<img className="thumbnail" alt="Opzioni" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel3-e.png" loading="lazy" />
+
+#### Gestione del servizio
+
+Nella tabella a destra, potrai gestire il tuo abbonamento alla mailing list Managed Bare Metal OVHcloud.
+
+Visualizzi anche la data del prossimo rinnovo del tuo servizio Managed Bare Metal. A destra della data, il pulsante con tre puntini <code className="action">...</code> consente di ordinare una licenza o eliminare il tuo servizio Managed Bare Metal.
+
+<img className="thumbnail" alt="Opzioni" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel4-e.png" loading="lazy" />
+
+Per maggiori dettagli sulla rescissione di un servizio Managed Bare Metal, consulta la nostra guida [Disattivare una soluzione Managed Bare Metal](/guides/bare-metal-cloud/managed-bare-metal/how-to-cancel/).
+
+#### Datacenter
+
+In questa scheda viene mostrato un breve riassunto dei datacenter virtuali presenti nella tua soluzione Managed Bare Metal:
+
+<img className="thumbnail" alt="Datacenter" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel5-e.png" loading="lazy" />
+
+Descriveremo in seguito tutte le informazioni relative ai datacenter virtuali.
+
+:::info
+Da questa sezione è possibile aggiungere altri datacenter, senza spese aggiuntive.
+
+:::
+
+
+#### Utenti
+
+In questa scheda sono presenti tutti gli utenti autorizzati a connettersi a vSphere:
+
+<img className="thumbnail" alt="Utenti" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel6-e.png" loading="lazy" />
+
+Per creare un nuovo utente, clicca sul pulsante <code className="action">Crea un utente</code> a sinistra.
+
+Per ogni utente troverai informazioni relative all’utente e ai permessi applicati su tutta la tua infrastruttura Managed Bare Metal:
+
+- identificativo
+- nome (facoltativo)
+- cognome (facoltativo)
+- indirizzo email (facoltativo)
+- numero di telefono (facoltativo)
+- il permesso *token validator*, che consente di confermare le operazioni sensibili.
+- il permesso *Ip*, che consente di accedere al plugin OVH network
+- il permesso *Additional IP*, che consente di gestire gli Additional IP associati al tuo Managed Bare Metal.
+- lo stato (Diagnostica), che consente di vedere se l’utente è stato creato.
+
+cliccando sui tre puntini <code className="action">...</code> in corrispondenza dell’utente, vengono mostrate diverse opzioni che permettono di:
+
+- modificare le voci della tabella (Modifica dei permessi visti precedentemente, l’aggiunta di un indirizzo email e di un numero di telefono).
+- visualizzare e modificare i permessi dell’utente per datacenter
+- modificare la password dell’utente
+- eliminare l’utente
+
+Vediamo in dettaglio la modifica dei permessi per datacenter:
+
+<img className="thumbnail" alt="Permessi utente per datacenter" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel7-e.png" loading="lazy" />
+
+- <code className="action">Accesso vSphere</code> \- permessi globali dell’utente su vSphere:
+
+|Permesso|Descrizione|
+|---|---|
+|Nessuno|Nessun accesso|
+|Sola lettura|Accesso in sola lettura|
+|Lettura/Scrittura|Accesso in lettura/scrittura|
+|Operatore|Accesso riservato agli amministratori OVHcloud|
+
+- <code className="action">Accesso al VM Network</code> \- Gestione dei permessi nella sezione rete pubblica (`VM Network` nell'interfaccia vSphere):
+
+|Permesso|Descrizione|
+|---|---|
+|Nessuno|Nessun accesso|
+|Sola lettura|Accesso in sola lettura|
+|Operatore|Permette di configurare macchine virtuali sulla rete pubblica|
+
+- <code className="action">Aggiungi risorse</code> \- Permesso di aggiungere risorse supplementari tramite il plugin OVH nel client vSphere
+
+#### Sicurezza
+
+In questa scheda è possibile configurare la politica di accesso al tuo vCenter:
+
+<img className="thumbnail" alt="Parametri di sicurezza" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel8-e.png" loading="lazy" />
+
+Utilizza i pulsanti sulla destra per definire i parametri degli elementi presenti nella parte superiore e nella tabella: È possibile configurare:
+
+- modifica la durata di una sessione
+
+- numero di connessioni simultanee autorizzate
+
+- politica di accesso, libera o limitata, con un’autorizzazione per IP sorgente (gli IP saranno indicati nella tabella)
+È possibile modificare o eliminare l’IP o l’intervallo di indirizzi IP, cliccando sui tre puntini <code className="action">...</code> in corrispondenza della tabella.
+
+:::warning
+Se la politica di accesso selezionata è “Limitata” e non sono stati inseriti IP, nessun utente sarà in grado di accedere al client vSphere. Le macchine virtuali saranno comunque accessibili
+
+:::
+
+
+- La politica di disconnessione indica per quale utente verrà chiusa la sessione: il primo o l’ultimo ad aver effettuato l’accesso.
+Nel nostro esempio le connessioni simultanee consentite sono 50. Quando il 51°utente effettua il login, il primo ad aver effettuato l’accesso verrà disconnesso.
+
+Una seconda tabella è disponibile per quanto riguarda l’opzione *VM encrypton*.
+
+Per maggiori dettagli su questa opzione consulta [questa guida](/guides/bare-metal-cloud/managed-bare-metal/vm-encrypt/).
+
+#### Operazioni
+
+In questa scheda vengono mostrate le operazioni in corso sulla tua infrastruttura:
+
+<img className="thumbnail" alt="Operazioni" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel9-e.png" loading="lazy" />
+
+È possibile verificare lo stato delle operazioni, eventuali interventi pianificati...
+
+Per modificare la data di un intervento di manutenzione clicca sui tre puntini <code className="action">...</code> in corrispondenza della tabella.
+
+:::info
+Se, ad esempio, non riesci ad accedere al client vSphere perché è in corso un intervento di manutenzione, potrai verificarlo da questa scheda.
+
+:::
+
+
+#### Licenze Windows
+
+Dalla scheda <code className="action">Licenza Windows</code> è possibile attivare sul tuo datacenter le licenze SPLA Windows cliccando sul pulsante a destra:
+
+<img className="thumbnail" alt="Licenza SPLA Windows" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel10-e.png" loading="lazy" />
+
+Per consultare le tariffe, [clicca qui](https://www.ovhcloud.com/it/managed-bare-metal/options/).
+
+### Panoramica dei datacenter
+
+Sulla tua infrastruttura Managed Bare Metal possono essere presenti diversi datacenter. Per visualizzarli, seleziona il tuo servizio nel menu a sinistra:
+
+<img className="thumbnail" alt="Informazioni datacenter" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel11-e.png" loading="lazy" />
+
+Per personalizzare il nome del tuo datacenter e aggiungere una descrizione, clicca sull’icona a forma di matita.
+
+In questa interfaccia vengono mostrate le informazioni relative al datacenter selezionato: numero di host e datastore.
+
+#### Host
+
+In questa scheda vengono mostrate le informazioni relative agli host del tuo datacenter.
+
+<img className="thumbnail" alt="Host" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel12-e.png" loading="lazy" />
+
+Per ogni datastore potrai visualizzare:
+
+- nomi degli host
+- profili (M, L,L+...).
+- modalità di fatturazione (se hai scelto la fatturazione oraria, è possibile passare al forfait mensile). Per farlo, clicca sul pulsante in corrispondenza della tabella.
+- stato
+- numero di ore utilizzate (informazione disponibile solo per le risorse orarie)
+
+Per ordinare un nuovo host con forfait mensile, clicca sul pulsante in alto a sinistra.
+
+#### Datastore
+
+Le informazioni presenti in questa scheda sono simili a quelle della tab precedente:
+
+<img className="thumbnail" alt="Datastore" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel13-e.png" loading="lazy" />
+
+Per ogni datastore potrai visualizzare:
+
+- nome
+- profili
+- tipo (Hybrid o full SSD)
+- dimensioni
+- modalità di fatturazione
+- stato del datastore (che consente di sapere se è installato correttamente)
+- numero di ore utilizzate (informazione disponibile solo per le risorse orarie)
+
+Per ordinare un nuovo datastore con forfait mensile, clicca sul pulsante in alto a sinistra in corrispondenza della tabella.
+
+#### Backup
+
+La scheda di backup consente di attivare la soluzione `Veeam backup`.
+
+<img className="thumbnail" alt="Backup" src="/images/bare-metal-cloud/managed-bare-metal/manager-ovhcloud/controlpanel14-e.png" loading="lazy" />
+
+Per maggiori informazioni su questa opzione, consulta [questa guida](/guides/bare-metal-cloud/managed-bare-metal/veeam-backup-as-a-service/).
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

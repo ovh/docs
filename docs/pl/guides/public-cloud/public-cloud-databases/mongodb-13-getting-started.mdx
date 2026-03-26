@@ -1,0 +1,79 @@
+---
+title: Getting started with Public Cloud Databases for MongoDB
+description: Get started with MongoDB Free Tier through the OVHcloud Control Panel
+lastUpdated: 2024-02-05
+---
+
+## Objective
+
+**This guide will take you through the first steps of creating and connecting to a forever-free MongoDB Discovery managed cloud database service.**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/yVUqdhe71Ps?si=ADCQJyVFBhed3_Ms" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+Click on <code className="action">Databases</code> in the left-hand navigation bar under **Databases & Analytics**.
+
+Click the <code className="action">Create a database instance</code> button (click <code className="action">Create a service</code> if your project already contains databases).
+
+### Select the database type
+
+Between all database engines, select **MongoDB**. You can choose to change the version to install from the drop-down menu.
+
+### Review the order
+
+The **Discovery** plan is selected by default along with the following options:
+
+- The region is set to `Gravelines (GRA)`.
+- The node type is set to `db2-free` (with a 512 MB storage).
+- The number of nodes is set to `3`.
+- The network type is `Public (internet)`.
+
+:::info
+The **Discovery** plan will let you start with MongoDB for **free** with limited settings options and storage.
+
+:::
+
+
+Review the service settings and click on the <code className="action">Order</code> button.
+
+Within a few minutes, your **Discovery** MongoDB service will be deployed.
+
+### Connectivity settings
+
+Once the service is up and running you will be able to configure it to accept incoming connections. A [dedicated guide](/guides/public-cloud/public-cloud-databases/mongodb-02-manage-control-panel/) is available to help you configure your service after installation.
+
+### Testing the service
+
+When the service is running and accepting incoming connections, the next step is to access the service. The common way to do so is to use **MongoDB Compass** to connect to the service, following [this guide](/guides/public-cloud/public-cloud-databases/mongodb-07-connect-compass/).
+
+If **MongoDB Compass** is not your preferred method, read these other guides to connect to the service:
+
+- [Connect with CLI](/guides/public-cloud/public-cloud-databases/mongodb-03-connect-cli/)
+- [Connect with Python](/guides/public-cloud/public-cloud-databases/mongodb-05-connect-python/)
+- [Connect with PHP](/guides/public-cloud/public-cloud-databases/mongodb-04-connect-php/)
+
+Other integration examples can be found on the following repository: [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb).
+
+## We want your feedback!
+
+Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

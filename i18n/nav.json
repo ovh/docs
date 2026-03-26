@@ -1,0 +1,29 @@
+{
+  "nav.webmail": {
+    "en": "Webmail",
+    "fr": "Webmail",
+    "de": "Webmail",
+    "es": "Webmail",
+    "it": "Webmail",
+    "pl": "Webmail",
+    "pt": "Webmail"
+  },
+  "nav.customerAccount": {
+    "en": "My account",
+    "fr": "Mon compte client",
+    "de": "Mein Konto",
+    "es": "Mi cuenta",
+    "it": "Il mio account",
+    "pl": "Moje konto",
+    "pt": "Minha conta"
+  },
+  "nav.support": {
+    "en": "Support",
+    "fr": "Support",
+    "de": "Support",
+    "es": "Soporte",
+    "it": "Supporto",
+    "pl": "Wsparcie",
+    "pt": "Suporte"
+  }
+}

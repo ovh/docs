@@ -1,0 +1,106 @@
+---
+title: Empezar con PostgreSQL
+description: Como utilizar las bases de datos
+lastUpdated: 2023-02-15
+---
+
+¿Quiere utilizar PostgreSQL en Web Cloud Databases? Descubra cómo crear y administrar fácilmente sus bases de datos alojadas en esta solución.
+
+## Introduccion
+
+### Requisitos
+Para seguir los pasos de esta guía, es necesario:
+
+- tener una instancia Web Cloud Databases;
+- haber consultado [esta guía](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/).
+
+### Que es una base de datos PostgreSQL
+PostgreSQL es un sistema de gestión de bases de datos relacional y orientado a objetos.
+
+Es un sistema robusto y extensible, capaz de manipular con total fiabilidad grandes volúmenes de datos.
+
+Además, tiene una comunidad *open source* muy activa.
+
+## Conexion a la base de datos
+
+:::info
+Tenga en cuenta que la solución Web Cloud Databases no da acceso al servidor host, sino a las bases de datos alojadas en él. Los comandos SQL genéricos funcionan sin ningún problema, y los programas de tipo HeidiSQL o SQuirreL SQL son totalmente compatibles.
+
+:::
+
+
+Para conectarse a ella, es necesario disponer de la siguiente información relativa a la base de datos:
+
+- la dirección de la instancia Web Cloud Databases en la que está alojada;
+- el puerto;
+- el nombre de usuario;
+- la contraseña;
+- el nombre;
+
+Puede encontrar todos estos datos en el [área de cliente de OVHcloud](https://manager.eu.ovhcloud.com/#/web/web/private_database).
+
+Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/)
+
+### Conexion en linea de comandos
+
+```bash
+psql --host=servidor --port=puerto --user=usuario --contraseña=contraseña nombre_de_la_BD
+```
+
+### Conexion mediante un script PHP
+
+```php
+1. <?php
+2. $myPDO = new PDO('pgsql:host=host;port=port;dbname=dbname', 'username', 'password');
+3. ?>
+```
+
+### Conexion a traves de la aplicacion SQuirreL SQL
+Ejecute SQuirreL SQL, abra el menú <code className="action">Aliases</code> y haga clic en <code className="action">+</code>.
+
+<img className="thumbnail" alt="ejecutar SQuirreL SQL" src="/images/assets/screens/other/web-tools/squirrel/aliases.png" loading="lazy" />
+
+Cumplimente los campos como se indica a continuación y acepte con el botón <code className="action">OK</code>:
+
+- **Name**: Indique un nombre.
+- **Driver**: Seleccione <code className="action">PostgreSQL</code>.
+- **URL**: Indique la dirección del servidor y el puerto en formato jdbc:postgresql://server:port/database.
+- **User Name**: Indique el nombre de usuario.
+- **Password**: Indique la contraseña.
+
+<img className="thumbnail" alt="configuración de la conexión" src="/images/assets/screens/other/web-tools/squirrel/add-alias-pgsql.png" loading="lazy" />
+
+Confirme con el botón <code className="action">Connect</code>.
+
+<img className="thumbnail" alt="confirmación de la conexión" src="/images/assets/screens/other/web-tools/squirrel/connect-to-pgsql.png" loading="lazy" />
+
+Se establecerá la conexión a la base de datos:
+
+<img className="thumbnail" alt="conexión a la base de datos" src="/images/assets/screens/other/web-tools/squirrel/general-dashboard-pgsql.png" loading="lazy" />
+
+### Conexion mediante phppgAdmin
+*Próximamente disponible en otra guía.*
+
+## Exportar una base de datos PostgreSQL
+
+### Exportar la base de datos en linea de comandos
+
+```bash
+pg_dump --host=servidor --port=puerto --user=usuario --contraseña=contraseña nombre_de_la_BD > nombre_de_la_BD.sql
+```
+
+## Importar una base de datos PostgreSQL
+
+### Importar la base de datos en linea de comandos
+
+```bash
+psql --host=servidor --port=puerto --user=usuario --contraseña=contraseña nombre_de_la_BD < nombre_de_la_BD.sql
+```
+
+## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

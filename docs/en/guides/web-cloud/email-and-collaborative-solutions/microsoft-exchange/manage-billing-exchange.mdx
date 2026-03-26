@@ -1,0 +1,116 @@
+---
+title: Managing the billing for Exchange accounts
+description: Find out how to manage the billing for your Exchange service
+lastUpdated: 2026-03-24
+---
+
+## Objective
+
+The Hosted Exchange and Private Exchange services offer flexible management for account billing. This guide details how to configure it.
+
+**This guide explains how to manage subscriptions for your Exchange accounts.**
+
+## Requirements
+
+- a subscription to an [Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) solution.
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Instructions
+
+### Hosted Exchange
+
+#### Ordering additional accounts
+
+Go to the <code className="action">Email accounts</code> tab, then click on the <code className="action">Actions</code> button in the top left-hand corner. Next, click <code className="action">Order accounts</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-00.png" loading="lazy" />
+
+#### Changing the renewal frequency for your accounts <a name="periodicity"></a>
+
+In the window for managing your Exchange platform, click on the <code className="action">Actions</code> button in the top right-hand corner, then click <code className="action">Renewal configuration</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-01.png" loading="lazy" />
+
+You will be redirected to the “My services” section of the OVHcloud Control Panel. You will notice that a filter has been applied, to only display the Exchange platform you are modifying.
+
+Click <code className="action">...</code> to the right of the Exchange platform, then <code className="action">Modify billing</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-02.png" loading="lazy" />
+
+In this new window, you can view and modify the billing for each of your accounts. You can make changes via the **Renewal** column for one or more accounts at once. Each modification on an account will be applied on the date listed in the **Expiry** column.
+
+In the example below, you will see the actions you need to take in order to set an account to monthly renewal:
+
+> In the first step, click **Monthly** to the right of the account, then click <code className="action">Next</code>.
+>
+> In the second step, you will see a summary listing the change that has been applied. Click <code className="action">Send</code> on the bottom left.
+>
+> <img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-03.png" loading="lazy" />
+
+#### Deleting accounts
+
+To delete an account on your Hosted Exchange platform, you will need to cancel it by setting its renewal configuration to **Cancel on expiry**. To do this, refer to the step on [changing the renewal frequency for your accounts](#periodicity).
+
+Once you have cancelled it, the account will be suspended on its expiry date. If you would like to delete the email address hosted by the account before its expiry date, you can reset it.
+
+Go to the <code className="action">Email accounts</code> tab for your platform, then click <code className="action">...</code> next to the account concerned. Finally, click <code className="action">Reset</code>. Once you have reset the account, it will remain empty until its expiry date.
+
+### Private Exchange
+
+:::info
+On a Private Exchange platform, only monthly renewal is available for accounts. You cannot configure any other renewal frequencies.
+
+:::
+
+
+#### Ordering additional accounts
+
+Go to the <code className="action">Email accounts</code> tab, then click on the <code className="action">Actions</code> button in the top left-hand corner. Next, click <code className="action">Add an account</code>. The account will be billed for the current month.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-06.png" loading="lazy" />
+
+#### Deleting accounts
+
+:::warning
+To delete an email account on a Private Exchange platform, **it is necessary that it has been created** (attached to a domain name on your Exchange platform). An unconfigured account cannot be deleted.
+
+:::
+
+
+In the <code className="action">Email accounts</code> tab, click <code className="action">...</code> to the right of the account concerned, then click <code className="action">Delete</code>. The account will be immediately removed from the platform, and you will not need to cancel it.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-07.png" loading="lazy" />
+
+### Cancel the platform
+
+Once you have deleted the email accounts, you will need to delete the domain name(s) associated with your Exchange platform before cancelling it. To do this, go to the <code className="action">Associated domains</code> tab. Click the <code className="action">...</code> button on the line for the domain name you want to delete, then click <code className="action">Delete this domain</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-del-dom.png" loading="lazy" />
+
+In the window for managing your Exchange platform, click on the <code className="action">Actions</code> button in the top right-hand corner, then <code className="action">Cancel</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-08.png" loading="lazy" />
+
+:::info
+This action suspends and then deletes all of the accounts on the Exchange platform on their expiry date.
+
+:::
+
+
+## Go further <a name="go-further"></a>
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

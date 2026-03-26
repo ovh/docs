@@ -1,0 +1,39 @@
+---
+title: Changer les droits d’un utilisateur
+lastUpdated: 2020-11-18
+---
+
+## Objectif
+
+Ce guide a pour objectif d'expliquer les détails de la gestion de droits utilisateurs sur l'offre Managed Bare Metal d'OVHcloud.
+
+**Découvrez comment gérer la gestion des droits utilisateurs sur votre infrastructure.**
+
+## Prérequis
+
+* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
+* Etre connecter à l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+## En pratique
+
+Il faut pour cela cliquer sur **Server** puis **Managed Bare Metal** et enfin choisir l'infrastructure sur laquelle vous souhaitez modifier les utilisateurs.
+
+Rendez-vous dans l'onglet **Utilisateurs** et cliquez sur les trois points à droite de la ligne de l'utilisateur concerné pour afficher le menu.
+
+<img className="thumbnail" alt="Voir / Modifier les droits par DC" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_1.png" loading="lazy" />
+
+A partir de ce menu, vous avez la possibilité de modifier les droits de vos utilisateurs vSphere par Datacenter :
+
+<img className="thumbnail" alt="Modifier les droits" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_2.png" loading="lazy" />
+
+| Accès  | Droit possible | Description |
+|---|---|---|
+| Accès vSphere | Aucun / Lecture seule / Lecture et Ecriture | Droits globaux de l'utilisateur sur vSphere |
+| Accès au vmNetwork | Aucun / Lecture seule / Opérateur | Droits de management sur la partie réseau public (appelé VM Network dans l'interface vSphere) |
+| Ajout de ressource | Oui / Non | Droit d'ajouter des ressources supplémentaires via le plugin OVHcloud dans vSphere Client (Host, Datastore, Sauvegarde Veeam) |
+
+<img className="thumbnail" alt="Modifier les droits" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_3.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

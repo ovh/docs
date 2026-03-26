@@ -1,0 +1,131 @@
+---
+title: Como adicionar um registo DNS de tipo CNAME para um subdomínio
+description: Saiba como adicionar um registo DNS do tipo CNAME numa zona DNS gerida na OVHcloud para o subdomínio de um nome de domínio
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+Um registo CNAME permite associar um subdomínio a um nome de domínio ou subdomínio, sem ter de especificar um endereço IP. Isto significa que o subdomínio será reencaminhado para o endereço IP do nome de domínio ou subdomínio de destino, sem necessidade de configuração adicional.
+
+Por exemplo, se criar um registo CNAME para *www.domain.tld* que aponta para *domain.tld*, então *www.domain.tld* utilizará o mesmo endereço IP que *domain.tld*.
+
+Os registos CNAME são úteis para evitar a necessidade de alterar os endereços IP dos subdomínios. Também podem ser utilizados para configurar serviços como os servidores de correio eletrónico.
+
+**Saiba como adicionar um registo CNAME na zona DNS da OVHcloud.**
+
+> **Já tem um registo do tipo CNAME na sua zona DNS?** Siga o nosso guia "[Editar uma zona DNS da OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)".
+
+## Requisitos
+
+- Ter um [nome de domínio](https://www.ovhcloud.com/pt/domains/).
+- Ter uma zona DNS associada a este nome de domínio na OVHcloud.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Zonas DNS</code> > Selecione o seu nome de domínio
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+
+:::warning
+**A adição, modificação ou eliminação de registos DNS numa zona DNS ativa é uma operação sensível.**
+Em caso de dúvida, contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
+
+:::
+
+
+## Instruções
+
+### Adicionar um registo DNS do tipo CNAME para o subdomínio de um nome de domínio
+
+Clique nos separadores abaixo para ver cada um dos **5** passos.
+
+<Tabs>
+  <Tab label="Passo 1">
+    Aceda à página [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone) e escolha o domínio correspondente.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passo 2">
+    Clique no botão <code className="action">Adicionar uma entrada</code>.
+  </Tab>
+  <Tab label="Passo 3">
+    Na janela que aparecer, selecione o campo de apontamento do tipo <code className="action">CNAME</code>.
+  </Tab>
+  <Tab label="Passo 4">
+    Introduza no campo `Subdomínio` o subdomínio correspondente (por exemplo: `www` para o subdomínio `www.domain.tld`) e, no campo `Alvo *`, o nome de domínio ou subdomínio (por exemplo: `domain.tld`) que pretende visar através do registo do tipo CNAME. Clique em <code className="action">Seguinte</code>.
+  </Tab>
+  <Tab label="Passo 5">
+    Verifique o resumo e clique em <code className="action">Validar</code>. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Consulte os nossos guias detalhados:</summary>
+
+
+- [Saber tudo sobre a zona DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Saber tudo sobre os registos DNS](/guides/web-cloud/domains/dns-zone-records/)
+- [Como criar um subdomínio?](/guides/web-cloud/domains/domain-create-subdomains/)
+- [Editar uma zona DNS da OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+- [Partilhar o alojamento entre vários sites](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+- [Alojamento web - Alterar um nome de domínio já associado a um alojamento](/guides/web-cloud/web-hosting/multisites-modify-domain/)
+
+</details>
+
+
+
+### Casos especiais
+
+Clique nos links a seguir para obter mais informações:
+
+<details>
+
+<summary>Registos CNAME e TXT para o mesmo subdomínio</summary>
+
+
+Não configure um registo CNAME e um registo TXT para o mesmo subdomínio. Isto pode levar a resultados aleatórios durante a resolução DNS, uma vez que apenas uma resposta pode ser devolvida através de consulta DNS.
+
+Por exemplo, se tiver os seguintes registos para *www.domain.tld*:
+
+- Um registo CNAME que aponta para *domain.tld*.
+- Um registo TXT com um valor específico.
+
+Um pedido DNS para *www.domain.tld* retornará o destino do registo CNAME ou o valor do registo TXT, de forma aleatória.
+
+</details>
+
+
+<details>
+
+<summary>CNAME num nome de domínio na sua própria zona DNS</summary>
+
+
+Por convenção, **os registos do tipo CNAME não podem ser utilizados num nome de domínio na sua própria zona DNS**. De facto, o nome de domínio deve obrigatoriamente apontar diretamente para um endereço IP com um registo do tipo [A](/guides/web-cloud/domains/dns-zone-a-record-creation/) para um IPv4, ou [AAAA](/guides/web-cloud/domains/dns-zone-aaaa-record-creation/) para um IPv6.
+
+Como tal, e tomando como exemplo o exemplo acima, não poderá criar um registo do tipo CNAME para o nome de domínio *domain.tld* na zona DNS que criou para esse nome.
+No entanto, pode criar registos do tipo CNAME para todos os subdomínios (por exemplo: *subdomain.domain.tld* ou *www.domain.tld*) do nome de domínio *domain.tld* na zona DNS criada para *domain.tld*.
+
+</details>
+
+
+## Quer saber mais?
+ 
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+ 
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en). 

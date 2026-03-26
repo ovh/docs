@@ -1,0 +1,167 @@
+---
+title: Configurer un routeur manuellement
+description: Découvrez comment configurer votre accès Internet OVHcloud sur votre propre routeur
+lastUpdated: 2026-02-16
+---
+
+## Objectif
+
+Si vous souhaitez utiliser votre équipement personnel pour gérer la connexion PPPoE sur votre offre xDSL/FTTH OVHcloud, vous devez récupérer les identifiants PPPoE associés à cet accès.<br/>
+Si vous ne les connaissez pas, vous pouvez les récupérer en suivant les étapes de notre guide « [Obtenir les identifiants PPPoE](/guides/web-cloud/internet/internet-access/obtenir-id-ppp/) ».
+
+**Découvrez comment configurer votre accès Internet OVHcloud sur votre propre routeur**.
+
+## Prérequis
+
+- Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](https://www.ovhcloud.com/fr/internet/) actif.
+- Disposer d'un équipement (routeur, firewall) compatible PPPoE.
+- Disposer des identifiants PPPoE de votre accès Internet OVHcloud.
+
+{/* CP-NAV-START:telecom-xdsl-fttx */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](https://manager.eu.ovhcloud.com/#/telecom/pack)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">Offres Internet</code> > Sélectionnez votre accès
+
+---
+{/* CP-NAV-END:telecom-xdsl-fttx */}
+
+## En pratique
+
+Les identifiants PPPoE vous sont envoyés par e-mail (à l'adresse e-mail de contact de votre compte OVHcloud) lors de la livraison de votre accès.<br/>
+Ces identifiants vous permettent de configurer votre modem OVHcloud (dans le cas d’une configuration manuelle en local du modem fourni par OVHcloud) ou de votre équipement personnel pour l’usage de votre accès à Internet.
+
+Si votre offre a été fournie avec un modem OVHcloud, les identifiants PPPoE vous sont envoyés par e-mail systématiquement après chaque réinitialisation du modem.
+
+Le *login* reste identique après chaque réinitialisation.<br/>
+Pour des raisons de sécurité, le *mot de passe* est systématiquement modifié après chaque réinitialisation de votre routeur OVHcloud.
+
+**Lors de la première connexion du modem OVHcloud, celui-ci est automatiquement réinitialisé. Un nouveau mot de passe PPPoE vous est alors communiqué suite à cette réinitialisation.**
+
+Si vous utilisez votre propre modem/routeur, vous pouvez utiliser les API OVHcloud afin de [générer l'envoi de nouveaux identifiants PPPoE par e-mail](/guides/web-cloud/internet/internet-access/obtenir-id-ppp/).
+
+:::warning
+Chaque routeur a une méthode de configuration différente.
+Ce guide liste les paramètres indispensables pour faire fonctionner votre connexion mais nous vous invitons à lire le manuel utilisateur de votre modem/routeur pour vérifier comment les appliquer.
+
+:::
+
+
+### Connaître le profil de son modem
+
+Le profil de votre accès est disponible dans votre [espace client OVHcloud](https://manager.eu.ovhcloud.com/#/telecom/pack). Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
+
+<img className="thumbnail" alt="serviceName dans espace client" src="/images/web-cloud/internet/internet-access/advanced-config-router-manually/servicename-2022.png" loading="lazy" />
+
+Par défaut, l'onglet affiché est `Mon accès`.
+
+Le type de l'accès est disponible dans le cadre `Informations générales`.
+Le profil du modem est disponible dans la section `Connexion` du cadre `Caractéristiques`.
+
+<img className="thumbnail" alt="profil du modem dans l'espace client" src="/images/web-cloud/internet/internet-access/advanced-config-router-manually/profil-2025.png" loading="lazy" />
+
+### Profil A
+
+Ce profil s'applique aux typologies d'accès suivantes :
+
+- Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) Covage
+- Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) en collecte SFR
+- Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) en collecte AXIONE
+- Accès ADSL (Cuivre) en collecte ORANGE
+- Accès FTTO/FTTE (Fibre dédiée) Bouygues
+
+Les paramètres à configurer sont :
+
+- **Mode de connexion** : PPPoE
+- **Nom d'utilisateur PPPoE** : le login reçu par e-mail (exemple : `0320xxyyzz_1@ovh.kosc`)
+- **Mot de passe PPPoE** : le mot de passe reçu par e-mail
+- **MTU** : 1432 ou 1456 ou **1492** (recommandé)
+- **VLAN** : aucun VLAN
+- **IPv6** : IPv4/IPv6 DualStack, IPCPv6 activé
+- **Pour l'ADSL** :
+    - **Type** : ADSL over ATM
+    - **VPI** : 8
+    - **VCI** : 35
+    - **Encapsulation** : LLC/SNAP-BRIDGING
+    - **Service Category** : UBR without PCR
+- **Pour le VDSL** :
+    - **Type** : VDSL over PTM
+- **Pour le FTTH, FTTE et FTTO** :
+    - **Type** : Ethernet
+
+### Profil B
+
+:::info
+La différence avec le « profil A » est l'activation du VLAN 835.
+
+:::
+
+
+Ce profil s'applique aux typologies d'accès suivantes :
+
+- Accès VDSL (Cuivre) et FTTH (Fibre) en collecte Orange
+
+Les paramètres à configurer sont :
+
+- **Mode de connexion** : PPPoE
+- **Nom d'utilisateur PPPoE** : le login reçu par e-mail (exemple : `0320xxyyzz_1@adsl.ovh`)
+- **Mot de passe PPPoE** : le mot de passe reçu par e-mail
+- **MTU** : 1432 ou 1456 ou **1492** (recommandé)
+- **VLAN** : 835 (802.1p : 0, 802.1q : 835)
+- **IPv6** : IPv4/IPv6 DualStack, IPCPv6 activé
+- **Pour le VDSL** :
+    - **Type** : VDSL over PTM
+- **Pour le FTTH** :
+    - **Type** : Ethernet
+
+### Profil C
+
+:::info
+La différence avec le « profil A » est l'activation du VLAN 4001.
+
+:::
+
+
+Ce profil s'applique aux typologies d'accès suivantes :
+
+- Accès FTTH (Fibre) Bouygues
+
+Les paramètres à configurer sont :
+
+- **Mode de connexion** : PPPoE
+- **Nom d'utilisateur PPPoE** : le login reçu par e-mail (exemple : `FP_1111xxyy_1@byt.ovhcloud`)
+- **Mot de passe PPPoE** : le mot de passe reçu par e-mail
+- **MTU** : 1432 ou 1456 ou **1492** (recommandé)
+- **VLAN** : 4001 (802.1p : 0, 802.1q : 4001)
+- **IPv6** : IPv4/IPv6 DualStack, IPCPv6 activé
+- **Pour le FTTH** :
+    - **Type** : Ethernet
+
+### Profil D
+
+:::info
+La différence avec le « profil A » est l'activation du VLAN 4070.
+
+:::
+
+
+Ce profil s'applique aux typologies d'accès suivantes :
+
+- Accès FTTE (Fibre dédiée) en collecte Celan
+
+Les paramètres à configurer sont :
+
+- **Mode de connexion** : PPPoE
+- **Nom d'utilisateur PPPoE** : le login reçu par e-mail (exemple : `FP_1111xxyy_1@byt.ovhcloud`)
+- **Mot de passe PPPoE** : le mot de passe reçu par e-mail
+- **MTU** : 1432 ou 1456 ou **1492** (recommandé)
+- **VLAN** : 4070 (802.1p : 0, 802.1q : 4070)
+- **IPv6** : IPv4/IPv6 DualStack, IPCPv6 activé
+- **Pour le FTTE** :
+    - **Type** : Ethernet
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

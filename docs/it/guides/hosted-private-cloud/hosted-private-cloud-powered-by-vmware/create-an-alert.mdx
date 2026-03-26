@@ -1,0 +1,66 @@
+---
+title: Creare un alert
+description: Come impostare un allarme sul tuo client vSphere
+lastUpdated: 2020-07-08
+---
+
+## Obiettivo
+
+Tutti gli elementi di un Private Cloud consentono la creazione di alert: datacenter, cluster, VM, datastore, rete...
+
+**Questa guida ti mostra come attivare l’invio di alert sul tuo servizio.**
+
+## Prerequisiti
+
+- Disporre di un servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) attivo
+- Avere accesso all’[interfaccia vSphere](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-interface-connexion/)
+
+## Procedura
+
+### Creare un alert
+
+Per creare un alert, clicca con il tasto destro sul datacenter o qualsiasi altro elemento da monitorare e seleziona <code className="action">Alarms</code> > <code className="action">New Alarm Definition</code>.
+
+<img className="thumbnail" alt="Creazione di un alert" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-an-alert/alarms01.png" loading="lazy" />
+
+### Definisci un nome e il target
+
+Il primo step consiste nell’assegnare un nome all’alert e definirne il target. È inoltre possibile aggiungere una descrizione.
+
+<img className="thumbnail" alt="Nome e destinazione dell'alert" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-an-alert/alarms02.png" loading="lazy" />
+
+### Configura le regole dell’alert
+
+A questo punto è necessario definire le regole dell’alert e le conseguenti azioni.
+
+Il campo `IF` permette di indicare, tra una serie di variabili disponibili, l’elemento che determinerà l’attivazione dell’alert. In base alla variabile selezionata verrà proposta la lista degli argomenti associati.
+
+Il campo `THEN` permette di indicare le azioni che verranno effettuate al raggiungimento di un certo livello di criticità, come l’invio di un’email, l’esecuzione di uno script o l’arresto di una VM.
+
+<img className="thumbnail" alt="Regole dell'alert" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-an-alert/alarms03.png" loading="lazy" />
+
+In questo modo è possibile, ad esempio, monitorare la RAM di un host indicando la soglia massima da raggiungere prima dell’attivazione dell’allarme e dell’invio di un’email di notifica.
+
+:::info
+Cliccando su <code className="action">ADD ANOTHER RULE</code> è possibile aggiungere più regole all’alert.
+
+:::
+
+
+### Sospendi l’alert
+
+Lo step successivo permette di stabilire i criteri che determinano la fine dell’alert e l’esecuzione di nuove azioni.
+
+<img className="thumbnail" alt="Sospensione dell'alert" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-an-alert/alarms04.png" loading="lazy" />
+
+### Riepilogo dell’alert
+
+Lo step finale presenta un riepilogo delle regole definite. È possibile attivare l’allarme abilitando l’apposito cursore oppure cliccando con il tasto destro sull’elemento scelto e selezionando <code className="action">Alarms</code> > <code className="action">Enable Alarm Actions</code>.
+
+<img className="thumbnail" alt="Ripeilogo dell'alert" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/create-an-alert/alarms05.png" loading="lazy" />
+
+In questo step è possibile anche configurare la frequenza di ripetizione dell’alert.
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

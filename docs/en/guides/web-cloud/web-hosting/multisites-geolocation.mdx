@@ -1,0 +1,95 @@
+---
+title: How do I geolocate a website in a specific country?
+description: Find out how to locate your website using the geolocated IP addresses available on OVHcloud shared hosting plans
+lastUpdated: 2025-08-22
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+Search engines (Google, Bing, Yahoo, etc.) use robots in order to index and rank websites. They prioritise geolocated sites in the country you are searching from.
+
+**Example**: If you search through a search engine and are located in England, geolocated websites in England will show up higher in search results than other websites.
+
+This geolocation is based on the IP address of the hosting plan where your website is located.
+
+The geolocation option on your hosting can be useful for SEO if your website is mainly visited in a country different from where your shared hosting is located.
+
+**This guide explains how to geolocate your website using our geolocated IP addresses.**
+
+## Requirements
+
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- One or more [domain names](https://www.ovhcloud.com/en-gb/domains/)
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Hosting plans</code> > Select your web hosting plan
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instructions
+
+For websites hosted on the OVHcloud shared hosting infrastructure which are mainly accessed by international visitors, we offer a geolocation by IP address option. It allows for a better search ranking in the country where the IP address you have selected is located.
+
+To use the IP geolocation option, click on the tabs below to view each of the **5** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the <code className="action">Web Cloud</code> section.
+    
+    <img className="thumbnail" alt="Web Cloud" src="/images/assets/screens/control-panel/product-selection/web-cloud.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Click the <code className="action">Hosting plans</code> menu, then select the web hosting plan concerned.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    On the page that pops up, click on the <code className="action">Multisite</code> tab.
+    
+    <img className="thumbnail" alt="Multisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/multisite.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    On the new page, a table will appear containing your associated domain names.
+    
+    <img className="thumbnail" alt="hosting multisites" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png" loading="lazy" />
+
+Click the <code className="action">...</code> button to the right of your domain name in the table. Finally, click <code className="action">Modify domain</code>.
+  </Tab>
+  <Tab label="Step 5">
+    In the window that pops up, tick the <code className="action">Country IP</code> box to open the drop-down menu.
+    
+    <img className="thumbnail" alt="geolocation option" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/country-ip-selection.png" loading="lazy" />
+
+Choose the IP address of the country for which you want to geolocate your site, from the 12 countries offered: *Czech Republic, Finland, France, Germany, Ireland, Italy, Lithuania, Netherlands, Poland, Portugal, Spain, United Kingdom*.
+    
+    Click <code className="action">Next</code> and then click <code className="action">Confirm</code> from the summary window.
+  </Tab>
+</Tabs>
+
+
+:::info
+Once you have carried out the steps above, and if your domain name’s active DNS zone is fully managed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), the A record in your domain name’s DNS zone will be automatically changed. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/).
+
+Otherwise, you will need to make the change manually with the provider that manages your domain name’s active DNS zone. Find [here](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/) the documentation that lists all the IP addresses in our OVHcloud shared hosting infrastructure.
+
+In both cases, you will need to wait between **4 and 24 hours** for the changes to propagate fully, and be visible on the internet.
+
+:::
+
+
+## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

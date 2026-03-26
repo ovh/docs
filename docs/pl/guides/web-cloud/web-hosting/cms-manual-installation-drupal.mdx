@@ -1,0 +1,158 @@
+---
+title: Tutorial - Ręczna instalacja modułu Drupal
+description: Dowiedz się, jak ręcznie zainstalować CMS Drupal
+lastUpdated: 2024-05-16
+---
+  
+## Wprowadzenie
+
+Tutaj znajdziesz wszystkie elementy, które pozwolą Ci ręcznie zainstalować CMS (Content Management System) Drupal.
+
+:::warning
+OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+
+Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub [producenta CMS Drupal](https://www.drupal.org/support). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+
+Jeśli chcesz zaktualizować istniejący CMS Drupal lub masz pytania dotyczące korzystania z tego CMS, skontaktuj się bezpośrednio z [wydawcą CMS Drupal](https://www.drupal.org/support).
+
+:::
+
+
+:::tip[Success]
+Aby zainstalować Drupal **automatycznie** z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu za pomocą jednego kliknięcia](/guides/web-cloud/web-hosting/cms-install-1-click-modules/).
+
+Aby zainstalować **ręcznie inny CMS** (WordPress, Joomla!, PrestaShop), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](/guides/web-cloud/web-hosting/cms-manual-installation/).
+
+:::
+
+
+**Dowiedz się, jak ręcznie zainstalować CMS Drupal**
+  
+## Wymagania początkowe
+
+- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+  
+## W praktyce
+
+### Etap 1 - przygotowanie instalacji <a name="step1"></a>
+
+Aby zainstalować CMS **Drupal** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), potrzebne są jakieś przygotowania.
+
+Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](/guides/web-cloud/web-hosting/cms-manual-installation/) i przejdź do etapu 2 poniżej.
+
+### Etap 2 - zakończenie ręcznej instalacji <a name="step2"></a>
+
+:::tip[Success]
+Przed kontynuowaniem instalacji, usuń cache przeglądarki internetowej, aby uniknąć błędów.
+
+:::
+
+
+#### 2.1 - Przejście na stronę Drupal przy użyciu przeglądarki
+
+Wpisz nazwę domeny na pasku wyszukiwania przeglądarki internetowej.
+
+Jeśli pliki źródłowe Drupal zostały poprawnie umieszczone w katalogu głównym, wyświetli się strona z listą wyboru języka dla Drupal:
+
+<img className="thumbnail" alt="Drupal instalacja step 1" src="/images/assets/screens/other/cms/drupal/install-language-1.png" loading="lazy" />
+
+Wybierz język strony i kliknij na <code className="action">Save and Continue</code>.
+
+#### 2.2 - Wybierz typ instalacji
+
+Drupal oferuje kilka poziomów instalacji:
+
+- wersja standardowa (zalecana), 
+- wersja minimalna
+- wersja prezentacji 
+
+<img className="thumbnail" alt="Drupal instalacja step 2" src="/images/assets/screens/other/cms/drupal/install-profil-2.png" loading="lazy" />
+
+Zalecamy przeprowadzenie instalacji **Standard**. Następnie kliknij polecenie <code className="action">Save and Continue</code>.
+
+#### 2.3 - Powiązanie systemu Drupal z bazą danych
+
+Wpisz wymagane informacje dotyczące bazy danych:
+
+<img className="thumbnail" alt="Drupal instalacja step 3" src="/images/assets/screens/other/cms/drupal/install-db-config-3.png" loading="lazy" />
+
+Przygotuj dane dostępowe do bazy danych (w razie potrzeby sprawdź **etap 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](/guides/web-cloud/web-hosting/cms-manual-installation/).
+
+- *Database type*: wybierz rodzaj bazy danych spośród zaproponowanych rozwiązań.
+
+- *Database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+- *Database username*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu. W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku **etap 1.4** w sprawie [ręczna instalacja CMS](/guides/web-cloud/web-hosting/cms-manual-installation/).
+
+- *Database password*: zdefiniowałeś ją podczas tworzenia bazy danych. Możliwe, że zmieniłeś ją w międzyczasie.
+
+Kliknij <code className="action">Advanced Options</code>, aby wyświetlić resztę menu.
+
+- *Host*: wprowadź nazwę serwera Twojej bazy danych, zawartą w e-mailu instalacyjnym lub w Panelu klienta. 
+
+:::info
+- Nazwa serwera bazy danych zawartej w ofercie hostingu WWW ma zazwyczaj taką formę: `NameOfYourDatabase.mysql.db`. 
+
+- Nazwa serwera bazy danych Cloud Databases zaczyna się od Twojego identyfikatora klienta OVHcloud i ma następującą formę: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** odnosi się do twojego identyfikatora OVHcloud bez **"-ovh"**, a **"X"** należy zastąpić pozostałą częścią odniesienia do usługi Web Cloud Databases.
+
+:::
+
+
+- *Port number*: jeśli korzystasz z bazy danych zawartej w Twoim hostingu OVHcloud, pozostaw domyślną bazę danych **3306**. Jeśli korzystasz z usługi Web Cloud Databases, sprawdź **etap 1.4** tutoriala w panelu [ręczna instalacja CMS](/guides/web-cloud/web-hosting/cms-manual-installation/), aby uzyskać poprawny numer portu.
+
+- *Table name prefix*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli korzystasz z bazy danych wykorzystywanej już przez inną stronę WWW, sprawdź **etap 1.4** tutoriala w panelu [ręczna instalacja CMS](/guides/web-cloud/web-hosting/cms-manual-installation/), aby nie wpisywać prefiksu tabeli używanego już w bazie danych.
+
+Kliknij polecenie <code className="action">Save and Continue</code>.
+
+Jeśli wszystko zostało poprawnie zrealizowane, Drupal zostanie uruchomiony:
+
+<img className="thumbnail" alt="Drupal instalacja step 4" src="/images/assets/screens/other/cms/drupal/install-4.png" loading="lazy" />
+
+#### 2.4 - Skonfiguruj informacje o stronie WWW i dostęp "Administrator"
+
+Po zakończeniu poprzedniego etapu wyświetli się następująca strona:
+
+<img className="thumbnail" alt="Drupal instalacja step 5-1" src="/images/assets/screens/other/cms/drupal/install-configure-site-5-1.png" loading="lazy" />
+
+Wpisz wymagane elementy:
+
+- *Site name*: wprowadź nazwę Twojej przyszłej strony Drupal.
+
+- *Site email address*: wprowadź poprawny adres e-mail, który będzie używany przez Twoją stronę WWW Drupal.
+
+- *Username*: zdefiniuj nazwę użytkownika, aby zalogować się do Twojej przestrzeni administracyjnej Drupal (Back Office).
+
+- *Password* i *Confirm password*: zdefiniuj hasło, które będzie przypisane do Twojej nazwy użytkownika i uzyskaj dostęp do Twojej usługi *Back Office* Drupal.
+
+Następnie przejdź do dołu strony:
+
+<img className="thumbnail" alt="Drupal instalacja step 5-1" src="/images/assets/screens/other/cms/drupal/install-configure-site-5-2.png" loading="lazy" />
+
+- *Email address*: wprowadź Twój adres e-mail. W idealnym przypadku wprowadź ten sam adres, który został wskazany powyżej w formularzu *Adres e-mail strony*.
+
+- *Default country*: wybierz kraj, w którym najczęściej odwiedzana będzie Twoja strona.
+
+- *Default time zone*: wybierz domyślną strefę czasową dla swojej strony www.
+
+Kliknij polecenie <code className="action">Save and Continue</code>.
+
+Jeśli wszystko przebiegło pomyślnie, wyświetli się następna strona:
+
+<img className="thumbnail" alt="Drupal instalacja step 6" src="/images/assets/screens/other/cms/drupal/install-ending-6.png" loading="lazy" />
+
+:::tip[Success]
+Instalacja Drupal'a została zakończona. Możesz teraz rozpocząć tworzenie zawartości Twojej strony Drupal!
+
+:::
+
+  
+## Sprawdź również <a name="go-further"></a>
+
+[Oficjalna strona Drupal](https://www.drupal.org/)
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

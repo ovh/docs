@@ -1,0 +1,84 @@
+---
+title: Jak skonfigurować wyświetlanie danych w bazie WHOIS?
+description: Dowiedz się, jak wyświetlić lub ukryć niektóre informacje zawarte w bazie WHOIS nazwy domeny w Panelu klienta OVHcloud
+lastUpdated: 2026-02-10
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+WHOIS, skrót od angielskiego "Who is?", to protokół umożliwiający dostęp do różnych informacji związanych z nazwą domeny.
+
+Na przykład można tam znaleźć następujące informacje (lista nie jest wyczerpująca):
+
+- Dane abonenta (subskrybenta), administratora i kontaktu technicznego usługi.
+- Informacja o gotowości do zakupu.
+- Daty utworzenia, wygaśnięcia, ostatniej modyfikacji i odnowienia.
+- Status (utworzony, zablokowany, wygasł, itp.).
+- Itp.
+
+Podczas używania nazwy domeny może być konieczne wyświetlenie lub ukrycie niektórych informacji w bazie WHOIS.
+
+**Dowiedz się, jak wyświetlić lub ukryć niektóre informacje zawarte w bazie WHOIS nazwy domeny w Panelu klienta OVHcloud.**
+
+## Wymagania początkowe
+
+- Posiadanie [nazwy domeny](https://www.ovhcloud.com/pl/domains/).
+
+{/* CP-NAV-START:web-domains */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](https://manager.eu.ovhcloud.com/#/web-domains/domain)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Domeny</code> > Wybierz nazwę domeny
+
+---
+{/* CP-NAV-END:web-domains */}
+
+
+:::warning
+Niektóre rejestry (organizacje zarządzające rozszerzeniami domen, takie jak *.com*, *.net*, itp.) nie pozwalają na wymuszenie ukrycia lub wyświetlenia niektórych informacji w bazie WHOIS.
+Rejestry określają reguły wyświetlania i określają informacje, które powinny lub nie powinny zawierać bazy WHOIS danego rozszerzenia.
+
+W związku z tym możliwe, że pomimo Twoich życzeń dotyczących wyświetlania lub ukrywania w bazie WHOIS Twojej nazwy domeny, Twoje zlecenie nie zostanie zarejestrowane.
+
+:::
+
+
+## W praktyce
+
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Domeny](https://manager.eu.ovhcloud.com/#/web-domains/domain), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="Domain Names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Na stronie, która się wyświetli, w ramce **Konfiguracja** kliknij przycisk <code className="action">Zarządzaj ochroną danych</code>.
+    
+    <img className="thumbnail" alt="Configure Data protection" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 3">
+    Na nowej stronie, która się wyświetli, będziesz mógł wybrać opcję `Wyświetl` lub `Ukryj` informacje kontaktowe abonenta, administratora i kontaktu technicznego nazwy domeny, w granicach operacji dozwolonych przez registry menedżera rozszerzenia.
+    
+    <img className="thumbnail" alt="Configure listing in WHOIS" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png" loading="lazy" />
+
+Po dokonaniu wyboru, kliknij przycisk <code className="action">Zatwierdź</code>.
+    
+    Wprowadzenie zmian może potrwać do **48** godz. Zmiany te zostaną zastosowane **tylko wtedy, gdy zezwoli na nie operator zarządzający rozszerzeniem Twojej nazwy domeny**.
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

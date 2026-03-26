@@ -1,0 +1,65 @@
+---
+title: VPS - Enable Windows boot logs
+description: Find out how to enable Windows boot logs to help with diagnosing and troubleshooting your VPS boot issues
+lastUpdated: 2026-01-21
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+Windows boot logs allow you to identify the drivers and services loaded during system startup.  
+They are particularly useful for **diagnosing boot issues**, **blue screens**, or **system freezes**.
+
+**This guide explains how to enable Windows boot logs on a server to help diagnose and troubleshoot VPS issues.**
+
+## Requirements
+
+- An active [VPS](https://www.ovhcloud.com/en-gb/vps/) offer in your OVHcloud Control Panel.
+
+## Instructions
+
+### Enabling Windows boot logs
+
+To enable boot logs, follow the steps below:
+
+<Tabs>
+  <Tab label="1. **Connect to the server**">
+    Connect to your server via a remote desktop or a [KVM session](/guides/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/).
+  </Tab>
+  <Tab label="2. **Open the Run utility**">
+    Open the Windows `Start` menu and click <code className="action">Run</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-start-run.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. **Open `msconfig`**">
+    Type `msconfig` and click <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-msconfig.png" loading="lazy" />
+  </Tab>
+  <Tab label="4. **Enable logs**">
+    In the new window, enable the log option next to `Boot log`. Then click <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-log.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+At the next server startup, the logs will be saved in a `.txt` file. The file path is: `C:\Windows\ntbtlog.txt`.
+
+To access the log file in rescue mode, follow the instructions in the guide "[Enable and use rescue mode on a VPS](/guides/bare-metal-cloud/virtual-private-servers/rescue/)".
+
+## Go further
+
+[Change the administrator password on a Windows server](/guides/bare-metal-cloud/virtual-private-servers/resetting-a-windows-password/)
+
+[VPS FAQ](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+[SSH introduction](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/)
+
+[Secure a VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps/)
+
+[How to recover access to the server if you lose the user password](/guides/bare-metal-cloud/dedicated-servers/replacing-user-password/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

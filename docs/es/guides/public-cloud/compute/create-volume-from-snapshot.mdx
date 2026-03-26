@@ -1,0 +1,81 @@
+---
+title: Crear un volumen a partir de un snapshot
+description: Cómo crear discos adicionales a partir de una copia de seguridad de un disco adicional
+lastUpdated: 2025-04-28
+---
+
+:::info
+Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+
+:::
+
+
+## Objetivo
+
+Puede crear discos adicionales para sus instancias de Public Cloud guardando un disco adicional.
+
+Esto puede ser útil en los siguientes casos:
+
+- Si desea restaurar los datos del disco adicional.
+- Si desea disponer de un espacio de almacenamiento de alta disponibilidad y buen rendimiento con sus datos.
+- Si desea transferir sus datos a otra instancia.
+
+**Cómo crear y configurar un disco adicional en una de sus instancias desde la copia de seguridad de un disco.**
+
+## Requisitos
+
+- Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
+- Tener una copia de seguridad del disco en la misma región de OpenStack.
+- Tener acceso a su instancia por SSH como administrador (sudo).
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+### Acceso al área de cliente de OVHcloud
+- **Enlace directo:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ruta de navegación:** <code className="action">Public Cloud</code> > Seleccione su proyecto
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedimiento
+
+### Crear el disco a partir de un snapshot
+
+En la barra de navegación izquierda, haga clic en <code className="action">Volume Snapshot</code> y seleccione **Backup Storage**.
+
+A la derecha de la copia de seguridad que desee, haga clic en el botón <code className="action">...</code> y, seguidamente, en <code className="action">Crear un volumen</code>.
+
+<img className="thumbnail" alt="crear volumen" src="/images/public-cloud/compute/create-volume-from-snapshot/volume01.png" loading="lazy" />
+
+Asigne un nombre al nuevo disco y su capacidad y haga clic en <code className="action">Crear volumen</code>.
+
+<img className="thumbnail" alt="crear volumen" src="/images/public-cloud/compute/create-volume-from-snapshot/volume02.png" loading="lazy" />
+
+La creación del disco puede tardar unos minutos, en función del tamaño del mismo.
+
+### Asociar el disco a una instancia
+
+Una vez creado el disco, puede asociarlo a una instancia. Para ello, haga clic en <code className="action">Block Storage</code> en la barra de navegación de la izquierda en **Backup Storage**.
+
+A la derecha del volumen que desee, haga clic en el botón <code className="action">...</code> y, seguidamente, en <code className="action">Asociar a la instancia</code>.
+
+<img className="thumbnail" alt="adjunto" src="/images/public-cloud/compute/create-volume-from-snapshot/volume03.png" loading="lazy" />
+
+A continuación, seleccione la instancia y haga clic en <code className="action">Confirmar</code> para asociar el disco.
+
+<img className="thumbnail" alt="adjunto" src="/images/public-cloud/compute/create-volume-from-snapshot/volume04.png" loading="lazy" />
+
+El proceso de vinculación del disco a la instancia comenzará en ese momento y puede tardar unos minutos.
+
+<img className="thumbnail" alt="adjunto" src="/images/public-cloud/compute/create-volume-from-snapshot/volume05.png" loading="lazy" />
+
+:::warning
+:::
+
+Debe evitar la navegación fuera de la pestaña en curso al asociar el disco. Esto puede interrumpir el proceso.
+>
+
+Una vez realizado el apego, puede seguir los siguientes pasos [en Linux](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#con-linux/) o [Windows](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#con-windows/).
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

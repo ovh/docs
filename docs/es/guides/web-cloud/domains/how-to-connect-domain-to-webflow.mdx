@@ -1,0 +1,170 @@
+---
+title: Conectar un nombre de dominio de OVHcloud a Webflow
+description: Prepare y configure la zona DNS de su nombre de dominio OVHcloud para conectarla a un alojamiento Webflow
+lastUpdated: 2026-03-18
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Si es titular de un nombre de dominio en OVHcloud y quiere conectarlo a un alojamiento Webflow, esta guía explica cómo preparar y configurar su zona DNS de OVHcloud para su alojamiento Webflow.
+
+**Cómo conectar un nombre de dominio de OVHcloud a un alojamiento Webflow**
+
+:::warning
+- El servicio de asistencia de Webflow no tiene acceso a los parámetros de su nombre de dominio de OVHcloud y, por lo tanto, no puede aconsejarle sobre la información que deba proporcionarle.
+- La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br/><br/> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más información](#go-further) de esta guía.
+
+:::
+
+
+## Requisitos
+
+- Disponer de un [nombre de dominio](https://www.ovhcloud.com/es-es/domains/) registrado en OVHcloud.
+- Disponer de los [permisos necesarios para gestionar](/guides/account-and-service-management/account-information/managing-contacts/) el nombre de dominio.
+- Disponer de un alojamiento en Webflow.
+- Tener acceso a la gestión de este alojamiento en Webflow.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Zonas DNS</code> > Seleccione su nombre de dominio
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## Procedimiento
+
+Antes de seguir los pasos de esta guía, le recomendamos que consulte nuestra guía "[Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)".
+
+:::warning
+Su zona DNS podría estar ya preconfigurada o asociada a un alojamiento. A continuación explicamos cómo identificar cada registro DNS necesario para la conexión con su alojamiento Webflow. Será necesario eliminar algunos registros para evitar conflictos con los registros DNS requeridos en esta configuración. Otros simplemente deberán modificarse o crearse. Para una mejor comprensión, utilizaremos el nombre de dominio "**mydomain.ovh**" como ejemplo. Sustitúyalo por su nombre de dominio durante la configuración.
+
+:::
+
+
+### 1. Configurar su alojamiento Webflow
+
+Prepare primero su alojamiento Webflow siguiendo las instrucciones de la sección **How to connect your custom domain** desde [**esta página de la documentación de Webflow**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export#how-to-connect-your-custom-domain).
+
+### 2. Configurar sus registros DNS en su cuenta de OVHcloud
+
+:::warning
+Antes de continuar:
+
+- Abra una pestaña en paralelo en su navegador de internet.
+- Abra [**esta página de la documentación de Webflow**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export).
+- Acceda a la sección "**How to set your DNS records**" de la documentación de Webflow.<br/>
+Las siguientes instrucciones le ayudarán a configurar más fácilmente su zona DNS de OVHcloud.
+
+:::
+
+
+Haga clic en las pestañas siguientes para visualizar sucesivamente cada uno de los **5** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone) y seleccione el nombre de dominio correspondiente.
+    
+    <img className="thumbnail" alt="Zonas DNS" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+
+La tabla lista los registros DNS del nombre de dominio seleccionado.
+  </Tab>
+  <Tab label="Paso 2">
+    **Configuración de los registros A**
+    
+    **1 - Identificación:** filtre los registros DNS seleccionando el tipo `A` en el menú de filtros situado en la parte superior derecha de la tabla.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png" loading="lazy" />
+
+Localice los registros "A" existentes para su nombre de dominio solo (ejemplo: `mydomain.ovh.`) y para el subdominio "www" (ejemplo: `www.mydomain.ovh.`).
+    
+    **2 - Eliminación:** elimine todos los registros "A" existentes para el subdominio "www". Si existen más de 2 registros "A" para el nombre de dominio solo, elimine los registros excedentes para conservar solo 2. Para cada registro que deba eliminar, haga clic en el botón <code className="action">...</code> a la derecha de la línea correspondiente y luego en <code className="action">Eliminar el registro</code>.
+    
+    **3 - Modificación:** modifique cada registro "A" conservado para el nombre de dominio solo haciendo clic en el botón <code className="action">...</code> y luego en <code className="action">Editar el registro</code>. Sustituya el destino por una de las 2 direcciones IPv4 de Webflow (una dirección diferente por registro):
+    
+    - `75.2.70.75`
+    - `99.83.190.102`
+    
+    Haga clic en <code className="action">Siguiente</code> y confirme.
+    
+    **4 - Adición:** si existían menos de 2 registros "A", cree los registros que faltan. Haga clic en <code className="action">Añadir un registro</code> en la parte superior derecha, seleccione el campo de apuntado <code className="action">A</code>, deje el campo **Subdominio** vacío e introduzca en el campo **Destino** cada dirección IPv4 aún no asignada. Haga clic en <code className="action">Siguiente</code> y confirme.
+    
+    A continuación, pase al paso 3.
+  </Tab>
+  <Tab label="Paso 3">
+    **Eliminación de los registros AAAA**
+    
+    **1 - Identificación:** filtre los registros DNS seleccionando el tipo `AAAA` en el menú de filtros situado en la parte superior derecha de la tabla.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png" loading="lazy" />
+
+Localice los registros "AAAA" existentes para su nombre de dominio solo (ejemplo: `mydomain.ovh.`) y para el subdominio "www" (ejemplo: `www.mydomain.ovh.`).
+    
+    **2 - Eliminación:** elimine todos los registros "AAAA" identificados (nombre de dominio solo y subdominio "www") para evitar un conflicto con los nuevos registros DNS. Para cada registro, haga clic en el botón <code className="action">...</code> a la derecha de la línea correspondiente y luego en <code className="action">Eliminar el registro</code>.
+    
+    Si no existe ningún registro "AAAA", pase al paso 4.
+  </Tab>
+  <Tab label="Paso 4">
+    **Configuración del registro TXT**
+    
+    **1 - Identificación:** filtre los registros DNS seleccionando el tipo `TXT` en el menú de filtros situado en la parte superior derecha de la tabla.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png" loading="lazy" />
+
+Localice los registros "TXT" existentes para su nombre de dominio solo (ejemplo: `mydomain.ovh.`) y para el subdominio "www" (ejemplo: `www.mydomain.ovh.`).
+    
+    **2 - Eliminación:** elimine todos los registros "TXT" identificados (nombre de dominio solo y subdominio "www") para evitar un conflicto con los nuevos registros DNS. Para cada registro, haga clic en el botón <code className="action">...</code> a la derecha de la línea correspondiente y luego en <code className="action">Eliminar el registro</code>.
+    
+    **3 - Adición:** cree un registro TXT de verificación. Haga clic en <code className="action">Añadir un registro</code> en la parte superior derecha, seleccione el campo de apuntado <code className="action">TXT</code>, introduzca `_webflow` en el campo **Subdominio** y en el campo **Destino** el valor de tipo `one-time-verification=XXXXXXXX` presente en la sección <code className="action">Site settings > Publishing tab > Production</code> de su cuenta Webflow. Haga clic en <code className="action">Siguiente</code> y confirme.
+    
+    A continuación, pase al paso 5.
+  </Tab>
+  <Tab label="Paso 5">
+    **Configuración del registro CNAME**
+    
+    **1 - Identificación:** filtre los registros DNS seleccionando el tipo `CNAME` en el menú de filtros situado en la parte superior derecha de la tabla.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png" loading="lazy" />
+
+Localice los registros "CNAME" existentes para el subdominio "www" (ejemplo: `www.mydomain.ovh.`).
+    
+    **2 - Eliminación:** si existen varios registros "CNAME" para el subdominio "www", elimínelos todos excepto uno. Para cada registro que deba eliminar, haga clic en el botón <code className="action">...</code> a la derecha de la línea correspondiente y luego en <code className="action">Eliminar el registro</code>.
+    
+    **3 - Modificación:** si existe un registro "CNAME" para el subdominio "www", haga clic en el botón <code className="action">...</code> y luego en <code className="action">Editar el registro</code>. Sustituya únicamente el **Destino** por `proxy-ssl.webflow.com.`. Haga clic en <code className="action">Siguiente</code> y confirme.
+    
+    Si no existe ningún registro "CNAME" para el subdominio "www", haga clic en <code className="action">Añadir un registro</code> en la parte superior derecha, seleccione el campo de apuntado <code className="action">CNAME</code>, introduzca `www` en el campo **Subdominio** y `proxy-ssl.webflow.com.` en el campo **Destino**. Haga clic en <code className="action">Siguiente</code> y confirme.
+  </Tab>
+</Tabs>
+
+
+La zona DNS ya está configurada para apuntar a su alojamiento Webflow.
+
+:::info
+La verificación de su nombre de dominio puede tardar hasta 48 horas.
+
+:::
+
+
+Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](https://www.ovhcloud.com/es-es/emails/), deberá preparar su zona DNS en consecuencia. Consulte nuestra guía sobre la [configuración de un registro MX](/guides/web-cloud/domains/dns-zone-mx/).
+
+## Más información <a name="go-further"></a>
+
+[Cambiar los servidores DNS de un nombre de dominio en OVHcloud](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Crear una zona DNS de OVHcloud para un nombre de dominio](/guides/web-cloud/domains/dns-zone-create/)
+
+[Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+Para cambiar la gestión de un nombre de dominio a otra cuenta de cliente de OVHcloud, consulte la guía "[Gestionar los contactos de los servicios](/guides/account-and-service-management/account-information/managing-contacts/)".
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

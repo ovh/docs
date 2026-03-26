@@ -1,0 +1,70 @@
+---
+title: Host-Server löschen
+description: So löschen Sie einen Host-Server aus Ihrer Managed Bare Metal Infrastruktur
+lastUpdated: 2021-03-19
+---
+
+## Einleitung
+
+In einigen Fällen kann es nützlich sein, einen Host-Server aus Ihrem Cluster zu löschen, zum Beispiel, um einen ungenutzten “_Spare_-Host” zu entfernen oder wenn Sie auf eine höhere Serverreihe umsteigen möchten.
+
+**In dieser Anleitung erfahren Sie, wie Sie einen Host-Server sicher aus Ihrer Managed Bare Metal Infrastruktur entfernen.**
+
+## Voraussetzungen
+
+* Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Angebot.
+* Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
+
+## Beschreibung
+
+:::warning
+Achten Sie darauf, den Host-Server, den Sie entfernen möchten, nicht auszuschalten, da dies nicht die gewünschte Wirkung hätte. Es würde stattdessen die Lieferung eines Spare-Host-Servers zur Folge haben, und der ausgeschaltete Host-Server würde nicht automatisch entfernt.
+
+:::
+
+
+Das Löschen eines Host-Servers erfolgt in zwei Schritten: Zuerst wird die Ressource in den Wartungsmodus versetzt und anschließend gelöscht.
+
+### Wartungsmodus aktivieren
+
+Nachdem Sie sich im vSphere-Interface eingeloggt haben, gehen Sie zum Inventar Ihrer Host-Server und Cluster. Klicken Sie mit der rechten Maustaste auf den betreffenden Host-Server und wählen Sie <code className="action">Maintenance Mode</code> und <code className="action">Enter Maintenance Mode</code> aus. Wenn betriebsbereite virtuelle Maschinen (VMs) auf diesem Server eingerichtet sind, werden Sie automatisch auf einem anderen Host-Server aus Ihrem Cluster gespeichert (sofern die Modi HA und DRS aktiviert sind).
+
+<img className="thumbnail" alt="Aktivierung des Wartungsmodus" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost01.png" loading="lazy" />
+
+Um die Aktivierung des Wartungsmodus zu bestätigen, klicken Sie im angezeigten Fenster auf <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Bestätigung des Wartungsmodus" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost02.png" loading="lazy" />
+
+Sie können den Fortschritt der Aktivierung des Wartungsmodus im Bereich `Recent Tasks` verfolgen.
+
+<img className="thumbnail" alt="Nachverfolgung des Wartungsmodus" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost03.png" loading="lazy" />
+
+### Host-Server löschen
+
+Der Host-Server befindet sich jetzt im Wartungsmodus. Klicken Sie nun mit der rechten Maustaste auf den Server und wählen Sie <code className="action">OVHcloud</code> und dann <code className="action">Remove this host</code> aus.
+
+<img className="thumbnail" alt="Host-Server entfernen" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost04.png" loading="lazy" />
+
+Um den Löschvorgang zu bestätigen, klicken Sie im angezeigten Fenster auf den Button <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Löschvorgang bestätigen" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost05.png" loading="lazy" />
+
+Ihre Löschungsanfrage wurde registriert und wird nun ausgeführt.
+
+<img className="thumbnail" alt="Löschvorgang überprüfen" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost06.png" loading="lazy" />
+
+Sie können den Fortschritt des Löschvorgangs des Host-Servers im Bereich `Recent Tasks` verfolgen.
+
+<img className="thumbnail" alt="Nachverfolgung des Löschvorgangs" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost07.png" loading="lazy" />
+
+Der Host-Server wird innerhalb einiger Minuten gelöscht und erscheint nicht mehr in Ihrem Inventar.
+
+:::info
+Wird während des Vorgangs ein Verzeichnis oder eine Datei im lokalen Speicher des Host-Servers hinzugefügt, wird der Löschvorgang aufgrund eines Fehlers unterbrochen. Nur Basisverzeichnisse und vSwap-Dateien blockieren den Vorgang nicht.
+
+:::
+
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

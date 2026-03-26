@@ -1,0 +1,14 @@
+.rp-home-quickstart {
+  margin: 3rem 0;
+  padding: 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--rp-c-text-1);
+    margin-bottom: 1.5rem;
+    padding-left: 0.25rem;
+  }
+}

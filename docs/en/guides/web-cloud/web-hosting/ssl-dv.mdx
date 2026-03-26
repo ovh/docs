@@ -1,0 +1,169 @@
+---
+title: Web Hosting - Activate a Sectigo DV SSL certificate
+description: Find out how to activate a Sectigo DV SSL certificate on your OVHcloud web hosting plan
+lastUpdated: 2025-12-16
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+With Secure Socket Layer (SSL) certificates, you can encrypt the exchanges made from or to your website. This prevents unauthorized persons and malicious bots from viewing requests to or from your website.
+
+OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](https://www.ovhcloud.com/en-gb/web-hosting/). They are set out in our guide on "[Web Hosting - Managing an SSL certificate](/guides/web-cloud/web-hosting/ssl-on-webhosting/)". SSL certificates are essential for the security of your website.
+
+There are three types of SSL certificates:
+
+- Domain Validation (DV)
+- Organization validation (OV)
+- Extended Validation (EV)
+
+The SSL encryption levels are identical between these three certificate types.
+
+The main difference lies in the level of checks that will be carried out by the Certification Authority (CA) that issues the SSL certificate and attests to its authenticity.
+
+For OVHcloud web hosting plans, the certification authority delivering DV SSL certificates is [Sectigo](https://sectigostore.com).
+
+:::warning
+Once the order of the certificate is completed and sent to our certificate provider/certification authority Sectigo, **no order refund is possible**.
+
+:::
+
+
+**Find out how to activate a Sectigo DV SSL certificate on an OVHcloud web hosting plan.**
+
+## Requirements
+
+- You plan to order or have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- You manage a [domain name](https://www.ovhcloud.com/en-gb/domains/) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Hosting plans</code> > Select your web hosting plan
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instructions
+
+:::warning
+Sectigo DV SSL certificates offered at OVHcloud are only valid for one of the following two cases on your web hosting plan:
+
+- A single domain name including the www subdomain (e.g. `domain.tld` and `www.domain.tld`).
+- One subdomain (e.g. `sub.domain.tld`).
+
+If other domain names or subdomains are declared on your web hosting plan, and you also want to assign them an SSL certificate, you can:
+
+- [Activate a free Let's Encrypt SSL certificate](/guides/web-cloud/web-hosting/ssl-letsencrypt/) (if not already the default).
+- Activate one or more other paid SSL certificate(s) ([Sectigo DV](/guides/web-cloud/web-hosting/ssl-dv/) or [Sectigo EV](/guides/web-cloud/web-hosting/ssl-ev/)).
+- [Install your own SSL certificate](/guides/web-cloud/web-hosting/ssl-custom/).
+
+:::
+
+
+**Before ordering the Sectigo DV SSL certificate on your web hosting plan**, check that **the domain/subdomain name** covered by your SSL certificate:
+
+- Points to the IP address of your web hosting plan.
+- Is declared on one of the websites on your web hosting.
+- Does not already have an active SSL certificate.
+
+:::info
+If you wish to order a Sectigo DV SSL certificate for a domain name (e.g. `domain.tld`), make sure that its "www" subdomain (e.g. `www.domain.tld`) also points to the IP address of your web hosting and is correctly declared on one of the websites on your web hosting.
+
+If you order a Sectigo DV SSL certificate without checking that it has been sent, you will need to make a correction at a later date. You will then need to delete the Sectigo DV SSL certificate you have previously subscribed to **without being refunded**, then order a new one. The goal is for the new Sectigo DV SSL certificate to include both your domain name `domain.tld` and its its www subdomain `www.domain.tld`.
+
+As a reminder, if you subscribe to a Sectigo DV SSL certificate directly for a subdomain (example: `sub.domain.tld`), you are not affected by this situation.
+
+:::
+
+
+To check if this is the case, please refer to our guides below:
+
+- [Hosting multiple websites on your Web Hosting plan](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+- [Web Hosting - List of IP addresses by cluster](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)
+- [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)
+- [Web Hosting - How to configure an SSL certificate](/guides/web-cloud/web-hosting/ssl-on-webhosting/), part **Disable an SSL certificate on a web hosting plan**
+
+### Order the Sectigo DV SSL certificate
+
+Click on the tabs below to view each of the **4** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) page, then select the web hosting plan concerned.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    On the page that pops up, click on the <code className="action">SSL certificates</code> tab.
+    
+    <img className="thumbnail" alt="SSL certificates" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    When the content of the tab appears, click <code className="action">Order a Sectigo SSL certificate</code>.
+    
+    <img className="thumbnail" alt="Sectigo SSL" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    In the new window that opens, select the domain or subdomain concerned using the dropdown menu, then click <code className="action">Confirm</code> to be redirected to the purchase order for your Sectigo DV SSL certificate.
+    
+    <img className="thumbnail" alt="SSL Sectigo domain selection" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png" loading="lazy" />
+
+Proceed with the order until you pay in order to validate the request to create the Sectigo DV SSL certificate for your domain name and/or subdomain on your Web Hosting plan.
+  </Tab>
+</Tabs>
+
+
+:::danger
+Once the order has been confirmed, the Sectigo DV SSL certificate request is sent to the Sectigo certification authority.
+
+Therefore, no refund of Sectigo DV SSL is possible.
+
+:::
+
+
+It may take up to **24** hours to install the Sectigo DV SSL certificate.
+
+### Check the activation of the Sectigo DV SSL certificate
+
+To verify that the installation is complete, click on the tabs below to view each of the **3** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) page, then select the web hosting plan concerned.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    On the page that pops up, click on the <code className="action">SSL certificates</code> tab.
+    
+    <img className="thumbnail" alt="SSL certificates" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    When the content of the tab appears, check that each domain name and/or subdomain concerned is listed in the table with the certificate type SSL `Sectigo`.
+    
+    <img className="thumbnail" alt="SSL certificate management panel" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Your Sectigo DV SSL certificate is now installed and active. You can now use it with your web hosting and, for example, [enable HTTPS for your website](/guides/web-cloud/web-hosting/ssl-activate-https-website/).
+
+## Go further <a name="go-further"></a>
+
+[Web Hosting - Managing an SSL certificate](/guides/web-cloud/web-hosting/ssl-on-webhosting/)
+
+[Web Hosting - Switch your website to HTTPS](/guides/web-cloud/web-hosting/ssl-activate-https-website/)
+
+[Common errors related to securing your website with SSL](/guides/web-cloud/web-hosting/ssl-avoid-common-pitfalls-of-making-website-secure/)
+ 
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+ 
+Join our [community of users](https://community.ovhcloud.com/community/en).

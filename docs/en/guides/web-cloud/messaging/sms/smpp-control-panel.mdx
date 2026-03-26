@@ -1,0 +1,74 @@
+---
+title: Managing an SMS SMPP account
+description: Find out how to manage an SMPP account settings from the OVHcloud Control Panel
+lastUpdated: 2023-02-09
+---
+
+## Objective
+
+In the OVHcloud Control Panel, you can retrieve your SMPP credentials, change your password, manage access to the service, and transfer SMS credits.
+
+**Find out how to manage an SMS SMPP account settings from the OVHcloud Control Panel.**
+
+:::info
+We recommend that you read the [technical specifications of the OVHcloud SMPP solution](/guides/web-cloud/messaging/sms/smpp-specification/).
+
+:::
+
+
+## Requirements
+
+- an [OVHcloud SMS SMPP account](https://www.ovhcloud.com/en-gb/sms/api-sms/)
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Navigation path:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Select your SMS account
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+## Instructions
+
+Select your SMPP account. Its name is different from other OVHcloud SMS accounts. It starts with `smpp-` instead of `sms-` for standard SMS accounts.
+
+<img className="thumbnail" alt="SMPP account" src="/images/web-cloud/messaging/sms/smpp-control-panel/smpp-account.png" loading="lazy" />
+
+### Credentials
+
+In the `General Information` box, you can find the login details required to use your service. Use the button to the right of each field to copy its contents.
+
+<img className="thumbnail" alt="SMPP account" src="/images/web-cloud/messaging/sms/smpp-control-panel/smpp-account-ID.png" loading="lazy" />
+
+If you have forgotten your SMPP password, use the <code className="action">Generate a new password</code> button. A new password will then be sent to the contact email address for your OVHcloud account, and it will be displayed to you.<br/>
+
+Click <code className="action">Send</code> to confirm this action.
+
+<img className="thumbnail" alt="SMPP account" src="/images/web-cloud/messaging/sms/smpp-control-panel/smpp-account-password.png" loading="lazy" />
+
+### Access management
+
+Click the <code className="action">Options</code> tab and then click <code className="action">SMPP Settings</code>.
+
+<img className="thumbnail" alt="SMPP account" src="/images/web-cloud/messaging/sms/smpp-control-panel/smpp-acl0.png" loading="lazy" />
+
+The authorised IP framework lists the IP addresses of your SMPP clients that are authorised to access the SMPP server.
+
+Click the <code className="action">Add IP</code> button to add IP addresses to this list.
+
+<img className="thumbnail" alt="SMPP account" src="/images/web-cloud/messaging/sms/smpp-control-panel/smpp-acl1.png" loading="lazy" />
+
+### Manage senders and credits
+
+See our guides on [sender management](/guides/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client#step-3-choose-an-sms-sender/) and [managing SMS credits and enabling automatic re-crediting](/guides/web-cloud/messaging/sms/activer-la-recharge-automatique-du-credit-sms/).
+
+## Go further
+
+See [our guide on managing SMS history](/guides/web-cloud/messaging/sms/gerer-l-historique-des-sms/).
+
+[The technical specifications of the OVHcloud SMPP solution](/guides/web-cloud/messaging/sms/smpp-specification/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

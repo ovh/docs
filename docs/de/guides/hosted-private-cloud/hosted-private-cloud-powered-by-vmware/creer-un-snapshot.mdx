@@ -1,0 +1,118 @@
+---
+title: Snapshots erstellen (EN)
+description: Return to a previous VM state using snapshots
+lastUpdated: 2022-01-19
+---
+
+## Objective
+
+VMware offers the ability to take snapshots so you can save and possibly go back to a VM's previous state.
+
+**This guide explains how to execute these tasks**
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de))
+
+## Instructions
+
+### Take a Snapshot
+
+A snapshot allows you to capture a VM state.<br/>
+It offers a layer of protection for your VM prior to executing changes as it offers the ability to come back to that state if needed.
+
+In the vSphere interface menu, go to the <code className="action">Hosts and Clusters</code> dashboard.<br/>
+Navigate to your VM, right-click it and, in the <code className="action">Snapshot</code> menu, select <code className="action">Take Snapshot</code>.
+
+<img className="thumbnail" alt="TAKE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en01take.png" loading="lazy" />
+
+By default, the snapshot will be named after the current date and time. You may edit it to your preference.<br/>
+A description may also be added for reference.<br/>
+If your VM is running, the snapshot process offers two options:
+
+- Snapshot the virtual machine's memory. This will save the VM Ram state, helping with certain applications that may not have commited changes to disk. It should also make your snapshot crash-resistant, meaning it can be reverted to without powering off the VM.
+- Quiesce guest file system (Needs VMware Tools installed). This will bring your VM to a state that is backup suitable: clearing buffers, committing changes to disks...<br/>
+
+If your VM is not running, those options are greyed out.<br/>
+*We recommend taking snapshots of a turned off VM and if it is not possible, preferably use the Quiesce option over the memory snapshot for added security.*
+
+Click <code className="action">OK</code> when ready.
+
+<img className="thumbnail" alt="SNAP" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en02snap.png" loading="lazy" />
+
+Your snapshot is done.
+
+### Manage Snapshots
+
+You can take multiple snapshots of a single VM repeating the process explained above.<br/>
+With time, snapshots will consume resources, especially storage, to be maintained and possibly will affect VM performance.<br/>
+Below is how to revert, clear or consolidate snapshots.
+
+#### Revert to Snapshot
+
+In the vSphere interface menu, go to the <code className="action">Hosts and Clusters</code> dashboard.<br/>
+Navigate to your VM, right click on it and in the <code className="action">Snapshots</code> menu, select <code className="action">Manage Snapshots</code>.
+
+<img className="thumbnail" alt="MANAGE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en03manage.png" loading="lazy" />
+
+Check the snapshot tree and select the one you wish to go back to.<br/>
+Click on <code className="action">Revert To</code>.
+
+<img className="thumbnail" alt="REVERT" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en04revert.png" loading="lazy" />
+
+Confirm by clicking <code className="action">OK</code>.
+
+<img className="thumbnail" alt="CONFIRM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en05confirm.png" loading="lazy" />
+
+You can click <code className="action">Done</code> as your VM has been reverted to the point chosen.
+
+:::info
+If you only have a single snapshot or wish to revert to the last taken snapshot, you can speed up the process by choosing <code className="action">Revert to Latest Snapshot</code> in the <code className="action">Snapshots</code> menu.
+
+:::
+
+
+#### Clear Snapshot
+
+In the vSphere interface menu, go to the <code className="action">Hosts and Clusters</code> dashboard.<br/>
+Navigate to your VM, right click on it and in the <code className="action">Snapshots</code> menu, select <code className="action">Manage Snapshots</code>.
+
+<img className="thumbnail" alt="MANAGE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en03manage.png" loading="lazy" />
+
+Check the snapshot tree and select the one you wish to delete.<br/>
+Click on <code className="action">Delete</code>.<br/>
+*You can also clear all snapshots by clicking <code className="action">Delete All</code>.*
+
+<img className="thumbnail" alt="DELETE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en06delete.png" loading="lazy" />
+
+Confirm by clicking <code className="action">OK</code>.
+
+<img className="thumbnail" alt="CONFIRM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en07confirm.png" loading="lazy" />
+
+You can click <code className="action">Done</code> as your snapshot was cleared.
+
+:::info
+If you wish to clear all snapshots, you can speed up the process by choosing <code className="action">Delete All Snapshots</code> in the <code className="action">Snapshots</code> menu.
+
+:::
+
+
+#### Consolidate snapshots
+
+Snapshot consolidation is useful when snapshot disks fail to compress after a delete operation. After consolidation, redundant disks are removed, improving virtual machine performance and saving storage space.
+
+In the vSphere interface menu, go to the <code className="action">Hosts and Clusters</code> dashboard.<br/>
+Navigate to your VM, right click on it and in the <code className="action">Snapshots</code> menu, select <code className="action">Consolidate</code>.
+
+<img className="thumbnail" alt="CONSOLIDATE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en08consolidate.png" loading="lazy" />
+
+Confirm by clicking <code className="action">YES</code>.
+
+<img className="thumbnail" alt="CONFIRM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/creer-un-snapshot/en09confirm.png" loading="lazy" />
+
+You can find more information about consolidation on the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html).
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,118 @@
+---
+title: Alojamento web - Ativar o alojamento gratuito 100M
+description: Saiba como ativar o alojamento gratuito 100M
+lastUpdated: 2024-12-06
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Com o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/), a OVHcloud oferece-lhe um alojamento Web de 100MB e uma conta de e-mail com 5 GB de armazenamento.
+Este guia explica como pode ativar o alojamento gratuito 100M no seu [domínio](https://www.ovhcloud.com/pt/domains/).
+
+:::warning
+Este alojamento gratuito de 100MB é adequado para uma simples página Web de apresentação, e **não inclui uma base de dados**.
+Também é necessário que não precise de vários endereços de e-mail do tipo "MX plan". 
+Se pretender implementar um website com várias páginas e que requer uma base de dados, como um CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), sugerimos que encomende diretamente uma das [nossas ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/) a partir do nosso website ou do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+:::
+
+
+**Saiba como ativar o Alojamento gratuito 100M**
+
+## Requisitos
+
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/) no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt), desassociado de qualquer alojamento Web e sem nenhum [MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/) associado.
+
+:::info
+O alojamento gratuito 100M é **unicamente** disponível para os nossos clientes na Europa.
+
+:::
+
+
+{/* CP-NAV-START:web-domains */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](https://manager.eu.ovhcloud.com/#/web-domains/domain)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Nomes de domínio</code> > Selecione o seu nome de domínio
+
+---
+{/* CP-NAV-END:web-domains */}
+
+
+## Instruções
+
+Para ativar o alojamento gratuito 100M, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Nomes de domínio](https://manager.eu.ovhcloud.com/#/web-domains/domain) e escolha o domínio em causa.
+    
+    <img className="thumbnail" alt="Domain Names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    No menu **Informações gerais**, encontrará **Alojamento web e e-mail gratuito**. À direita, clique no botão <code className="action">...</code> e, a seguir, em <code className="action">Ativar</code>.
+    
+    <img className="thumbnail" alt="enable 100m" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 3">
+    Aparecerá a janela de ativação. A secção **1** faz menção ao serviço e ao seu custo. Clique em <code className="action">Seguinte</code>. Na secção **2**, escolha as alterações a fazer à sua zona DNS:
+    
+    <img className="thumbnail" alt="activate100m" src="/images/assets/screens/control-panel/product-selection/web-cloud/order/order-100m-step-2.png" loading="lazy" />
+    
+    | Escolha                                       	| Descrição                                                                                                               								|
+    |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Entrada DNS A                         	| O domínio ficará associado ao endereço IP do alojamento gratuito 100M.                                               								|
+    | Entrada DNS MX 	| Os servidores de e-mail (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) da OVHcloud serão aplicados no domínio. 	|
+    
+    :::warning
+    Se assinalar uma ou ambas as casas `Entrada DNS A` e `Entrada DNS MX`, ou ambas, isto irá eliminar a configuração inicialmente configurada na zona DNS do seu domínio.
+    Escolha as duas caixas para configurar automaticamente o seu nome de domínio com o alojamento gratuito 100M e o serviço de e-mail incluído.
+    
+    Se a zona DNS não for gerida na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt), deverá efetuar as modificações manualmente na sua zona DNS externa.
+    
+    Para mais informações, consulte o nosso guia sobre [a edição de uma zona DNS da OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+
+    :::
+
+    
+    A secção **3** recorda-lhe o preço da oferta. 
+    
+    Na secção **4**, deverá ler os contratos e validar a encomenda.
+  </Tab>
+</Tabs>
+
+
+:::info
+Se o seu projeto for migrado rapidamente para um alojamento que disponha de uma base de dados, de um espaço de armazenamento maior ou de mais endereços de e-mail, poderá migrar diretamente e unicamente do Alojamento gratuito 100M para uma oferta de alojamento **Perso** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+Migração para a oferta **Pro** ou **Performance** necessita de passar previamente da oferta alojamento gratuito 100M à oferta **Perso**.
+
+Também pode optar por eliminar a oferta gratuita tendo o cuidado de recuperar previamente os seus dados de alojamento e o conteúdo do seu endereço de e-mail.
+
+Para mais informações, consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/).
+
+:::
+
+
+Depois de validar a encomenda, receberá um e-mail com as informações de [ligação FTP](/guides/web-cloud/web-hosting/ftp-connection/) ao seu **alojamento gratuito 100M**.
+
+Consulte o guia de [criação de uma conta E-mail MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/) para beneficiar do endereço de e-mail incluído com o seu **alojamento gratuito 100M**.
+
+## Quer saber mais?
+
+[Aceder ao espaço de armazenamento do alojamento web](/guides/web-cloud/web-hosting/ftp-connection/)
+
+[Criar um endereço de e-mail com a oferta MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/)
+
+[Gerir um certificado SSL num alojamento web](/guides/web-cloud/web-hosting/ssl-on-webhosting/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,67 @@
+---
+title: VPS - Ativar os registos de arranque do Windows
+description: Descubra como ativar os registos de arranque do Windows para facilitar o diagnóstico e a resolução de problemas de arranque do seu VPS
+lastUpdated: 2026-01-21
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Os registos de arranque do Windows permitem identificar os controladores e serviços carregados durante o arranque do sistema.  
+São particularmente úteis para o **diagnóstico de problemas de arranque**, **ecrãs azuis** ou **bloqueios do sistema**.
+
+**Este guia explica como ativar os registos de arranque num servidor Windows para facilitar a análise e a resolução de problemas do seu VPS.**
+
+## Requisitos
+
+- Ter uma oferta [VPS](https://www.ovhcloud.com/pt/vps/) ativa na sua área de cliente OVHcloud.
+
+## Instruções
+
+### Ativação dos registos de arranque do Windows
+
+Os registos de arranque do Windows podem ser úteis para diagnósticos de erros do servidor.
+
+Para os ativar, siga os passos abaixo, navegando pelos separadores:
+
+<Tabs>
+  <Tab label="1. **Ligar-se ao servidor**">
+    Ligue-se ao seu servidor através de um ambiente de trabalho remoto ou uma [sessão KVM](/guides/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/).
+  </Tab>
+  <Tab label="2. **Abrir o utilitário &quot;Executar&quot;**">
+    Abra o menu `Iniciar` do Windows e clique em <code className="action">Executar</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-start-run.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. **Abrir `msconfig`**">
+    Introduza `msconfig` e clique em <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-msconfig.png" loading="lazy" />
+  </Tab>
+  <Tab label="4. **Ativar os registos**">
+    Na nova janela, ative a opção de registos ao lado de `Boot log`. Clique depois em <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-log.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+No próximo arranque do seu servidor, os registos serão guardados num ficheiro `.txt`. O caminho de acesso ao ficheiro é: `C:\Windows\ntbtlog.txt`.
+
+Para aceder ao ficheiro de registo em modo rescue, siga as instruções do guia "[Ativar e utilizar o modo rescue num VPS](/guides/bare-metal-cloud/virtual-private-servers/rescue/)".
+
+## Quer saber mais?
+
+[Alterar a palavra-passe do administrador num servidor Windows](/guides/bare-metal-cloud/virtual-private-servers/resetting-a-windows-password/)
+
+[VPS FAQ](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+[O que é o SSH?](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/)
+
+[Segurança de um VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps/)
+
+[Como recuperar o acesso ao servidor em caso de perda da palavra-passe do utilizador](/guides/bare-metal-cloud/dedicated-servers/replacing-user-password/)
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

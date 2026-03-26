@@ -1,0 +1,129 @@
+---
+title: Object Storage Swift - Creating an Object Storage container
+description: Find out how to create your Object Storage containers in the OVHcloud Control Panel
+lastUpdated: 2021-10-27
+---
+
+## Objective
+
+The Object Storage solution for Public Cloud offers an unlimited storage solution with simple billing tailored to your needs. There are many types of object containers:
+
+- For static hosting (static website).
+- For private hosting (e.g. storage of personal data).
+- For public hosting (to store everything that is accessible to the public).
+- For cold storage (archiving).
+
+The first step is to create a container that will hold your files.
+
+**This guide explains how to create it from the OVHcloud Control Panel and from the Openstack Horizon interface.**
+
+## Requirements
+
+If you use Horizon :
+
+- An [OpenStack user](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Creating an Object Storage container from the OVHcloud Control Panel <a name="controlpanel"></a>
+
+Click on <code className="action">Object Storage</code> in the left-hand navigation bar under "Storage". Then click <code className="action">Create an object container</code>.
+
+If this is your first container:
+
+![pcs dashboard](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005102334181.png)
+
+If this is not your first container:
+
+![pcs dashboard](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005115040834.png)
+
+Select your solution and click on <code className="action">Next</code>.
+
+![select your solution](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005110710249.png)
+
+Select the region of your container, then click <code className="action">Next</code>:
+
+![select a region](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005110859551.png)
+
+Select the container type, then click <code className="action">Next</code>:
+
+![select a type of container](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005111542718.png)
+
+Name your container, then click <code className="action">Create the container</code>:
+
+:::warning
+If you want to link your container to a domain name, your container name must not contain the following characters:
+
+- [ . ]  
+- [ _ ]  
+- And you must not use capital letters.  
+ 
+See: [Linking a container to a domain name](/guides/storage-and-backup/object-storage/pcs-link-domain/)
+
+:::
+
+
+![container name](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005111805966.png)
+
+Your container is now created:
+
+![container created](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005112013807.png)
+
+### Creating an Object Storage container from Horizon <a name="horizon"></a>
+
+:::info
+It is not possible to create a Public Cloud Archive container from Horizon.
+
+:::
+
+
+Log in to [Horizon](https://horizon.cloud.ovh.net) :
+
+![horizon login](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005155245752.png)
+
+1. Expand the <code className="action">Object Store</code> menu, click <code className="action">Containers</code> then click <code className="action">+ Container</code>.
+
+![Horizon containers](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005155704887.png)
+
+Name your container.
+
+:::warning
+If you want to link your container to a domain name, your container name must not contain the following characters:
+
+- [ . ]  
+- [ _ ]  
+- And you must not use capital letters.  
+ 
+See: [Linking a container to a domain name](/guides/storage-and-backup/object-storage/pcs-link-domain/)
+
+:::
+
+
+Select the access policy for your container then click <code className="action">Next</code>.
+
+![horizon create container](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005155824902.png)
+
+Your container is now created:
+
+![horizon container created](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005155936971.png)
+
+You can also see it in your OVHcloud Control Panel.
+
+![pcs dashboard](/images/storage-and-backup/object-storage/pcs-create-container/create-container-20211005160503200.png)
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

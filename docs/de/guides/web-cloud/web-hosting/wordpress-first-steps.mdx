@@ -1,0 +1,194 @@
+---
+title: Tutorial - Erste Schritte mit WordPress
+description: Erfahren Sie hier, wie Sie eine Website mit dem CMS WordPress erstellen
+lastUpdated: 2024-07-15
+---
+
+## Ziel
+
+Mithilfe dieser Anleitung können Sie Ihre ersten Inhalte erstellen, organisieren, online stellen und das Thema Ihrer Website mit dem Content Management System (CMS) **WordPress** ändern. Sie können Ihre Website ohne besondere Kenntnisse in Programmierung erstellen, mit einer breiten Palette an Themes wie Unternehmens-Website, Blog oder Website, um Ihre Aktivitäten oder Leidenschaften bekannt zu machen.
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+
+:::
+
+
+**Dieses Tutorial erklärt, wie Sie eine Website mit dem CMS WordPress erstellen.**
+
+## Voraussetzungen
+
+- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie haben [WordPress installiert](/guides/web-cloud/web-hosting/cms-install-1-click-modules/).
+
+## In der praktischen Anwendung
+
+Falls nicht bereits vorhanden, installieren Sie ein [SSL-Zertifikat](/guides/web-cloud/web-hosting/ssl-activate-https-website#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren/) für den zu Ihrer Website gehörenden Domainnamen.
+
+Bei der Installation Ihres CMS als 1-Klick Modul erhalten Sie eine E-Mail mit den notwendigen Informationen zur Weiterführung dieses Tutorials:
+ 
+- Link zur Administrationsoberfläche
+- Administrator-Benutzername
+- Link zum Abrufen des Administratorpassworts
+
+### Mit der Verwaltungsoberfläche verbinden
+
+Klicken Sie auf den Zugangslink zur Verwaltungsoberfläche, der bei der Installation des CMS per E-Mail übermittelt wurde. Diese URL endet mit auf `wp-admin`. Wenn Sie nicht eingeloggt sind, wird **WordPress** Sie automatisch auf eine URL umleiten, die mit einem `wp-login` endet:
+
+<img className="thumbnail" alt="WordPress - Admin Login" src="/images/assets/screens/other/cms/wordpress/admin-login.png" loading="lazy" />
+
+:::info
+Auf dieser Startseite haben Sie die Möglichkeit, die Standardsprache des Interface von **WordPress** zu ändern. Öffnen Sie das Drop-down-Menü am Seitenende, wählen Sie Ihre Sprach aus und bestätigen Sie mit dem Button <code className="action">Change</code>. Die Sprache kann jederzeit geändert werden.
+
+:::
+
+
+Geben Sie den Login (Username) ein, der Ihnen per E-Mail gesendet wurde, sowie das in derselben E-Mail angegebene WordPress-Passwort. So gelangen Sie auf Ihr Dashboard:
+
+<img className="thumbnail" alt="WordPress - Dashboard" src="/images/assets/screens/other/cms/wordpress/dashboard.png" loading="lazy" />
+
+### Das Layout Ihrer Website ändern
+
+**WordPress Themes** sind Konfigurationsdateien, mit denen das Aussehen Ihrer Website ohne Änderung des Inhalts angepasst werden kann. Es gibt viele Themes, die im Web verfügbar sind, kostenfrei und für unterschiedlichen Zwecke (Websites, Blogs, E-Commerce, Online-Presse, etc.).
+
+Um Ihr *Theme* zu ändern, klicken Sie im linken Menü Ihres Dashboards auf <code className="action">Design</code> und dann auf <code className="action">Themes</code>:
+
+<img className="thumbnail" alt="WordPress - Appearance/Themes" src="/images/assets/screens/other/cms/wordpress/dashboard-themes.png" loading="lazy" />
+
+Wählen Sie aus den angebotenen *Themes* eines aus und klicken Sie auf <code className="action">Aktivieren</code>:
+
+<img className="thumbnail" alt="WordPress - Appearance/Themes" src="/images/assets/screens/other/cms/wordpress/themes.png" loading="lazy" />
+
+Sie können sich das Ergebnis anzeigen lassen, indem Sie den Domainnamen Ihrer Website im Browser aufrufen.
+
+### Artikel verfassen
+
+Mit WordPress können Sie Inhalte erstellen, ohne über Kenntnisse in der Webentwicklung zu verfügen.
+
+Um einen Artikel zu erstellen, gehen Sie in den Bereich <code className="action">Beiträge</code> im Menü links und klicken Sie dann auf <code className="action">Erstellen</code>:
+
+<img className="thumbnail" alt="WordPress - Posts/Add New" src="/images/assets/screens/other/cms/wordpress/dashboard-add-new-post.png" loading="lazy" />
+
+Seit Version 5 bietet **WordPress** ein Interface an, um die Erstellung und Bearbeitung von Artikeln zu vereinfachen: **Gutenberg**. Es handelt sich um einen WYSIWYG-Editor ("*what you see is what you get*"). Sie können damit Ihre Seite konstruieren, indem Sie Elemente wie Titel, Absätze, Listen, Bilder usw. hinzufügen.
+
+<img className="thumbnail" alt="WordPress - Gutenberg" src="/images/assets/screens/other/cms/wordpress/post-editor.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Titel hier eingeben</code> ein, um einen Titel zu Ihrer Seite hinzuzufügen:
+
+<img className="thumbnail" alt="WordPress - Gutenberg, add title" src="/images/assets/screens/other/cms/wordpress/post-editor-2.png" loading="lazy" />
+
+Um Inhalte hinzuzufügen, klicken Sie auf <code className="action">+</code> und wählen Sie aus, was Sie einfügen möchten:
+
+<img className="thumbnail" alt="WordPress - Gutenberg, add block" src="/images/assets/screens/other/cms/wordpress/post-editor-3.png" loading="lazy" />
+
+Rechts auf der Seite können Sie über drei Links folgende Aktionen ausführen:
+
+- <code className="action">Entwurf speichern</code>, eine Aktion, die auch mit der Tastkombination `Strg` + `S` funktioniert (oder `cmd` + `S` mit macOS)
+- <code className="action">Vorschau</code> anzeigen
+- <code className="action">Veröffentlichen</code> auf Ihrer Website
+
+Klicken Sie auf <code className="action">Vorschau</code> und dann auf <code className="action">Vorshau in neuem Tab</code>. Wählen Sie den Gerätetyp aus, für den die Vorschau durchgeführt werden soll (PC, Tablet oder Smartphone):
+
+<img className="thumbnail" alt="WordPress - Preview" src="/images/assets/screens/other/cms/wordpress/post-view.png" loading="lazy" />
+
+Um zum Verwaltungsinterface von **WordPress** zurückzukehren klicken Sie oben links auf das Icon.
+
+### Die Kategorien verwalten
+
+**WordPress** erlaubt es, Kategorien zu definieren und Ihre Artikel mit einer oder mehreren Kategorien zu verbinden. Um die Kategorien Ihrer Website zu verwalten, gehen Sie in den Bereich <code className="action">Beiträge</code> und dann in den Bereich <code className="action">Kategorien</code>:
+
+<img className="thumbnail" alt="WordPress - Kategorien" src="/images/assets/screens/other/cms/wordpress/categories.png" loading="lazy" />
+
+Geben Sie nun das Formular ein, um eine neue Kategorie hinzuzufügen:
+
+- **Name**: Name Ihrer Kategorie, die auf Ihrer Website angezeigt wird.
+- **Slug**: Element, das am Ende Ihrer URL erscheint (nützlich, um SEO zu verbessern).
+- **Parent category**: Erlaubt die Hierarchisierung Ihrer Kategorien (Kategorien können Unterkategorien einer bestehenden Kategorie sein).
+- **Description**: Die Beschreibung Ihrer Kategorie ist standardmäßig nicht sichtbar, kann aber in anderen *Themes* sichtbar sein.
+
+<img className="thumbnail" alt="WordPress - Categories filled" src="/images/assets/screens/other/cms/wordpress/categories-2.png" loading="lazy" />
+
+Wenn Sie diese Informationen eingegeben haben, klicken Sie auf den Button <code className="action">Neue Kategorie erstellen</code>:
+
+<img className="thumbnail" alt="WordPress - Added Categories" src="/images/assets/screens/other/cms/wordpress/categories-3.png" loading="lazy" />
+
+Sie können die Hierarchie Ihrer Kategorien verwalten. Eine neue Kategorie kann mit einer bestehenden Kategorie verknüpft werden:
+
+<img className="thumbnail" alt="WordPress - Sub-Categorie added" src="/images/assets/screens/other/cms/wordpress/categories-4.png" loading="lazy" />
+
+### Eine Kategorie einem Artikel zuweisen
+
+Um einen Artikel einer oder mehreren Kategorien zuzuweisen klicken Sie auf <code className="action">Beiträge</code>. Sie erhalten die Liste mit allen Artikeln und deren Status. Navigieren Sie über den Titel des Artikels, den Sie klassifizieren möchten, und klicken Sie auf <code className="action">QuickEdit</code>:
+
+<img className="thumbnail" alt="WordPress - Categorize a post" src="/images/assets/screens/other/cms/wordpress/posts-lists.png" loading="lazy" />
+
+Ändern Sie die Kategorien, indem Sie die in <code className="action">Kategorien</code> aufgeführten Elemente ankreuzen oder entfernen:
+
+<img className="thumbnail" alt="WordPress - Set new categories to an existing post" src="/images/assets/screens/other/cms/wordpress/posts.png" loading="lazy" />
+
+:::warning
+Die Auswahl einer Unterkategorie führt nicht zur automatischen Auswahl der Elternkategorie.
+
+:::
+
+
+### Seiten erstellen
+
+Seiten sind von Artikeln zu unterscheiden. Sie dienen hauptsächlich dazu, statische Inhalte zu veröffentlichen, die sich im Laufe der Zeit nicht oder nur wenig verändern werden, wie z.B. AGBs oder Seiteninformationen.
+
+Gehen Sie auf <code className="action">Seiten</code>:
+
+<img className="thumbnail" alt="WordPress - GB to Pages" src="/images/assets/screens/other/cms/wordpress/pages.png" loading="lazy" />
+
+:::info
+Die Standardseite, die bei der Installation von **WordPress** erstellt wird, ist aus Gründen der Lesbarkeit aus dem Beispiel entfernt.
+
+:::
+
+
+Klicken Sie auf <code className="action">Erstellen</code>; dies öffnet den Gutenberg-Editor:
+
+<img className="thumbnail" alt="WordPress - Pages, Gutenberg page builder" src="/images/assets/screens/other/cms/wordpress/pages-editor.png" loading="lazy" />
+
+Erstellen Sie den Inhalt Ihrer Seite und veröffentlichen Sie ihn:
+
+<img className="thumbnail" alt="WordPress - Seiten, content" src="/images/assets/screens/other/cms/wordpress/post-editor-4.png" loading="lazy" />
+
+Wenn Sie zur Startseite Ihrer Website zurückkehren, sehen Sie den Link zu Ihrer neuen Seite:
+
+<img className="thumbnail" alt="WordPress - Home page with new page link" src="/images/assets/screens/other/cms/wordpress/main-page-view.png" loading="lazy" />
+
+### Permalinks verbessern
+
+Die Links zu Ihren in **WordPress** veröffentlichten Webseiten werden mit einer Syntax vom Typ `parameter=wert` erzeugt, wobei der `Wert` aus Zahlen ohne explizite Bedeutung besteht. Die Änderung der Permalink-Schreibweise ermöglicht es, URLs in einem lesbaren Format zu erstellen. Ihre URLs werden damit bezüglich der Seiteninhalte einfacher zu deuten, was gleichzeitig zur SEO Ihrer Website beiträgt.
+
+Gehen Sie auf der Startseite des Dashboards auf den Bereich <code className="action">Einstellungen</code> und dann auf <code className="action">Permalinks</code>:
+
+<img className="thumbnail" alt="WordPress - Settings/Permalinks" src="/images/assets/screens/other/cms/wordpress/dashboard-users-permalinks.png" loading="lazy" />
+
+Sie haben dann die Wahl zwischen verschiedenen Permalink-Typen. Wählen Sie den "Publication title" und bestätigen Sie am Ende der Seite:
+
+<img className="thumbnail" alt="WordPress - Settings/Permalinks, select post name pattern" src="/images/assets/screens/other/cms/wordpress/permalink-settings.png" loading="lazy" />
+
+Ihre Links werden auf dem *Slug* basierend erstellt, der zuvor beim Editieren Ihrer Artikel und Seiten angegeben wurde.
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+- Speichern Sie Ihre Zugangsdaten in einem Passwortmanager wie [KeePass](https://keepass.info/).
+- Testen Sie den Standardeditor [Gutenberg](https://wordpress.org/gutenberg/) online.
+- Einige Ressourcen, um **WordPress** *Themes* zu finden:
+    - [WordPress Themes](https://wordpress.com/themes)
+    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php)
+    - [Elegant Themes](https://www.elegantthemes.com/)
+    - [Elementor](https://elementor.com/)
+- Finden Sie mehr Informationen auf der offiziellen Website von [WordPress](https://wordpress.org/).
+- [Verwenden Sie SFTP, um Dateien oder Seiten auf Ihr WordPress zu übertragen](https://wordpress.com/de/support/sftp/).
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

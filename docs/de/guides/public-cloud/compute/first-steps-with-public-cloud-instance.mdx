@@ -1,0 +1,188 @@
+---
+title: Public Cloud Instanzen verwalten
+description: Erfahren Sie, wie Sie Ihre Public Cloud Instanzen im OVHcloud Kundencenter verwalten
+lastUpdated: 2026-02-24
+---
+
+## Ziel
+
+Sie können Ihre Public Cloud Instanzen in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten.
+
+**Diese Anleitung beschreibt die im OVHcloud Kundencenter verfügbaren Aktionen für eine Public Cloud Instanz.**
+
+## Voraussetzungen
+
+- Sie verfügen über ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) in Ihrem Projekt erstellt.
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigationspfad:** <code className="action">Public Cloud</code> > Wählen Sie Ihr Projekt aus
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## In der praktischen Anwendung
+
+### Das Verwaltungsinterface für Instanzen verwenden
+
+Klicken Sie im linken Menü auf <code className="action">Instanzen</code>.
+
+Diese Seite zeigt alle Ihre Public Cloud Instanzen und einige ihrer Eigenschaften an:
+
+- Die ID der Instanz (erforderlich für bestimmte API-Aufrufe)
+- Der Standort des Rechenzentrums, d.h. die Region der Instanz
+- Das Modell der Instanz
+- Das Image, d.h. das auf der Instanz installierte Betriebssystem
+- Die IPv4-Adresse der Instanz
+- Die private Adresse, die derzeit an die Instanz angehängt ist
+- Zusätzliche Volumes (Disks), die derzeit mit der Instanz verbunden sind
+- Der Status der Instanz, der anzeigt, ob sich die Instanz im Zustand `Aktiviert` befindet
+
+### Verwaltungsoptionen im Instanz-Dashboard
+
+Klicken Sie auf der Instanzverwaltungsseite auf den Namen der betreffenden Instanz.
+
+Sie gelangen auf die Seite `Allgemeine Informationen`, die die wichtigsten Details und den Betriebsstatus Ihrer Instanz zusammenfasst (Status, Ressourcen, Netzwerk, Zugang und Metadaten).
+
+Einige dieser Aktionen sind auch auf der Instanzverwaltungsseite verfügbar, wenn Sie auf den Button <code className="action">...</code> in der Tabelle klicken.
+
+#### Konfiguration einer Instanz bearbeiten
+
+Klicken Sie auf <code className="action">Image ändern</code> oder öffnen Sie <code className="action">Zusätzliche Aktionen</code> und wählen Sie dann <code className="action">Bearbeiten</code>.
+
+Die neue Seite zeigt eine modifizierte Ansicht der Optionen zur [Erstellung von Instanzen](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/), in der Sie die folgenden Elemente bearbeiten können:
+
+- **Instanz umbenennen**: Sie können der Instanz einen Namen geben, um die Identifikation zu vereinfachen.
+- **Image ändern**: Sie können ein anderes Betriebssystem für die Instanz auswählen. (Beachten Sie, dass bei der Reinstallation einer Instanz alle darauf gespeicherten Daten gelöscht werden.)
+- **Modell ändern**: Sie können auf ein anderes Instanz-Modell wechseln. Weitere Informationen zu den Optionen finden Sie in [dieser Anleitung](/guides/public-cloud/compute/public-cloud-first-steps#model/).
+- **Abrechnungszeitraum ändern**: Sie können den Abrechnungszeitraum der Instanz von stündlicher auf monatliche Abrechnung ändern. Weitere Informationen finden Sie in [dieser Anleitung](/guides/account-and-service-management/managing-billing-payments-and-services/changing-hourly-monthly-billing/).
+
+#### Backup einer Instanz erstellen
+
+Klicken Sie auf <code className="action">Backup erstellen</code>.
+
+Weitere Informationen finden Sie in unserer Anleitung "[Backup einer Instanz erstellen](/guides/public-cloud/compute/save-an-instance/)".
+
+#### Instanz löschen
+
+Klicken Sie auf <code className="action">Löschen</code>.
+
+Diese Aktion löscht die Instanz und alle zugehörigen Daten endgültig.
+
+Bestätigen Sie die Löschungsanfrage im angezeigten Fenster.
+
+:::warning
+Das Löschen einer Instanz löscht nicht automatisch alle damit verbundenen Optionen (Storage, Snapshot, Backup, etc...). Stellen Sie sicher, dass alle anderen mit der Instanz verbundenen Optionen ebenfalls gelöscht werden, um deren Abrechnung zu stoppen.
+
+:::
+
+
+#### Volume hinzufügen
+
+Klicken Sie auf <code className="action">Volume hinzufügen</code>.
+
+Wählen Sie das Volume aus, das Sie der Instanz zuordnen möchten, und klicken Sie auf <code className="action">Bestätigen</code>. Nach dem Anhängen ist das Volume sofort verfügbar und kann über das Betriebssystem der Instanz eingebunden werden.
+
+#### DNS Reverse ändern
+
+Klicken Sie auf <code className="action">⋮</code> und dann auf <code className="action">DNS Reverse ändern</code>.
+
+Weitere Informationen finden Sie in der Anleitung "[Reverse DNS einer Instanz konfigurieren](/guides/public-cloud/compute/setup-instance-reverse/)".
+
+#### Firewall konfigurieren
+
+Klicken Sie auf <code className="action">⋮</code> und dann auf <code className="action">Firewall konfigurieren</code>.
+
+Weitere Informationen finden Sie in der Anleitung "[Edge Network Firewall aktivieren und konfigurieren](/guides/bare-metal-cloud/dedicated-servers/firewall-network/)".
+
+#### Private Netzwerke verwalten
+
+Klicken Sie auf <code className="action">⋮</code> und dann auf <code className="action">Private Netzwerke verwalten</code>.
+
+Weitere Informationen finden Sie in der Anleitung "[Ein privates Netzwerk mit Gateway erstellen](/guides/public-cloud/public-cloud-network-services/getting-started-02-create-private-network-gateway/)".
+
+#### Netzwerk hinzufügen
+
+Klicken Sie auf <code className="action">⋮</code> und dann auf <code className="action">Netzwerk hinzufügen</code>.
+
+Wählen Sie das gewünschte Netzwerk aus der Dropdown-Liste aus und klicken Sie auf <code className="action">Bestätigen</code>.
+
+#### Zusätzliche Aktionen
+
+Klicken Sie auf <code className="action">Zusätzliche Aktionen</code>
+
+##### Automatisches Backup einer Instanz erstellen
+
+Klicken Sie auf <code className="action">Automatisches Backup erstellen</code>.
+
+Weitere Informationen finden Sie in unserer Anleitung "[Backup einer Instanz erstellen](/guides/public-cloud/compute/save-an-instance#automatisches-backup-einer-instanz-erstellen/)".
+
+##### Instanz anhalten
+
+Klicken Sie auf <code className="action">Anhalten</code>.
+
+Dadurch wird die Instanz in den Zustand `Ausgeschaltet` versetzt, aber Ihnen wird weiterhin der gleiche Preis für die Instanz berechnet. Weitere Informationen finden Sie in unserer Anleitung "[Aussetzen oder Pausieren einer Instanz](/guides/public-cloud/compute/suspend-or-pause-an-instance#anhalten-einer-instanz-suspend/)".
+
+Klicken Sie auf <code className="action">Starten</code>, um die Instanz zu reaktivieren.
+
+##### Rescue-Modus verwenden
+
+Klicken Sie auf <code className="action">Neustart im Rescue-Modus</code>.
+
+Dies aktiviert den Rescue-Modus der Instanz. Weitere Informationen finden Sie in unserer Anleitung "[Rescue-Modus auf einer Public Cloud Instanz aktivieren](/guides/public-cloud/compute/put-an-instance-in-rescue-mode/)".
+
+##### Instanz neu starten
+
+:::warning
+Die Hot-Reboot-Option ist derzeit für Metal Instanzen nicht verfügbar.
+
+:::
+
+
+- Klicken Sie auf <code className="action">Soft Reboot durchführen</code>, um einen Neustart auf Software-Ebene durchzuführen.
+- Klicken Sie auf <code className="action">Hard Reboot durchführen</code>, um einen Neustart auf Hardware-Ebene durchzuführen.
+
+Bestätigen Sie die Neustart-Anfrage im angezeigten Fenster.
+
+##### Instanz aussetzen (*shelve*)
+
+Klicken Sie auf <code className="action">Aussetzen</code>.
+
+Dadurch wird die Instanz in den Zustand "*shelved*" versetzt, hier als `Ausgesetzt` angezeigt. Weitere Informationen zu den verschiedenen Aussetzungszuständen einer Instanz finden Sie in unserer Anleitung "[Aussetzen oder Pausieren einer Instanz](/guides/public-cloud/compute/suspend-or-pause-an-instance#aussetzen-einer-instanz-shelve/)".
+
+Klicken Sie auf <code className="action">Reaktivieren</code>, um den Status `Aktiviert` der Instanz wiederherzustellen.
+
+##### Instanz neu installieren
+
+Klicken Sie auf <code className="action">Neu installieren</code>.
+
+Diese Aktion installiert die Instanz mit demselben Betriebssystem neu, sofern das Image weiterhin unterstützt wird.
+
+Beachten Sie, dass bei einer Reinstallation **alle Daten**, die derzeit auf Ihrer Instanz gespeichert sind, gelöscht werden.
+
+### Auf die VNC-Konsole zugreifen <a name="accessvnc"></a>
+
+Klicken Sie im linken Menü auf <code className="action">Instanzen</code>. Klicken Sie auf der Instanzverwaltungsseite auf den Namen der Instanz in der Tabelle.
+
+Wechseln Sie vom Dashboard zum Tab <code className="action">VNC-Konsole</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/first-steps-with-public-cloud-instance/vnc1.png" loading="lazy" />
+
+Die VNC-Konsole bietet direkten Zugriff auf Ihre Instanz. Damit dieser Zugang funktioniert, müssen Sie zuerst einen Benutzernamen und ein Passwort auf der Instanz konfigurieren.
+
+Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung "[Erstellung einer Public Cloud Instanz](/guides/public-cloud/compute/public-cloud-first-steps#vnc-console/)".
+
+## Weiterführende Informationen
+
+[Erste Public Cloud Instanz erstellen und auf dieser einloggen](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+[Einführung in Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

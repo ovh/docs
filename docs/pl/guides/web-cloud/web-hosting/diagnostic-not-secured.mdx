@@ -1,0 +1,139 @@
+---
+title: "Co zrobić w przypadku błędu 'Połączenie nie jest prywatne'?"
+description: Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeństwem strony
+lastUpdated: 2025-10-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie  <a name="objective"></a>
+
+W przypadku niedostępności Twojej strony może wystąpić kilka komunikatów o błędzie. Poniższe przykłady wskazują, że Twój hosting WWW nie zawiera [certyfikatu SSL](/guides/web-cloud/web-hosting/ssl-on-webhosting/) (jeśli Twoja strona nie wyświetla żadnego z anomalii opisanych w tym przewodniku, sprawdź sekcję "[Sprawdź również](#go-further)"):
+
+|Przeglądarka|Komunikat błędu|
+|-|---|
+|Chrome:<br/>"Połączenie nie jest prywatne"|<img className="thumbnail" alt="notsecured_chrome" src="/images/assets/screens/other/browsers/errors/notsecured-chrome.png" loading="lazy" />|
+|Firefox:<br/>"Ostrzeżenie: potencjalne zagrożenie bezpieczeństwa"|<img className="thumbnail" alt="notsecured_firefox" src="/images/assets/screens/other/browsers/errors/notsecured-firefox.png" loading="lazy" />|
+|Edge:<br/>"Twoje połączenie nie jest prywatne"|<img className="thumbnail" alt="notsecured_edge" src="/images/assets/screens/other/browsers/errors/notsecured-edge.png" loading="lazy" />|
+|Safari:<br/>"To połączenie nie jest prywatne"|<img className="thumbnail" alt="notsecured_safari" src="/images/assets/screens/other/browsers/errors/notsecured-safari.png" loading="lazy" />|
+
+**Dowiedz się, jak usunąć błędy związane z plikiem "Połączenie nie jest prywatne".**
+
+:::warning
+OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+
+Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" niniejszego przewodnika.
+
+:::
+
+
+## Wymagania początkowe
+
+- Zarządzanie [serwerami DNS](/guides/web-cloud/domains/dns-server-general-information/) i [strefą DNS](/guides/web-cloud/domains/dns-zone-general-information/) Twojej domeny
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Wybierz hosting WWW
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## W praktyce
+
+Aby usunąć tę anomalię, należy:
+
+1. określenie hostingu, do którego jest podłączona Twoja domena, w celu przeprowadzenia interwencji na właściwym serwerze;
+2. tworzenie, aktywacja lub odnawianie [certyfikatu SSL](/guides/web-cloud/web-hosting/ssl-on-webhosting/) dla Twojej domeny na wybranym hostingu.
+
+### 1: Sprawdź hosting przypisany do Twojej domeny
+
+#### Sprawdź adres IP hostingu
+
+[Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](https://www.ovhcloud.com/pl/web-hosting/). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](https://www.ovhcloud.com/pl/domains/).
+
+Aby odnaleźć adres IP Twojego [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/), kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting), następnie wybierz odpowiedni hosting.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    W ramce **Informacje ogólne** znajdziesz oznaczenia **IPv4** i **IPv6**.
+    
+    <img className="thumbnail" alt="IPv4-IPv6" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png" loading="lazy" />
+
+Zapisz adres IPv4 i/lub IPv6, a następnie kontynuuj czytanie przewodnika.
+  </Tab>
+</Tabs>
+
+
+#### Sprawdź adres IP w strefie DNS
+
+Teraz sprawdź, czy adres IP podany w [Strefa DNS](/guides/web-cloud/domains/dns-zone-edit/) odpowiada adresowi Twojej [hostingu Web Cloud](https://www.ovhcloud.com/pl/web-hosting/).
+
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji <code className="action">Web Cloud</code>. Kliknij menu <code className="action">Strefy DNS</code>, następnie wybierz odpowiednią domenę.
+
+Zapisz docelowy wpis `A` dla Twojej domeny:
+
+<img className="thumbnail" alt="zone-dns-ip" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png" loading="lazy" />
+
+#### Wykonaj niezbędne operacje
+
+|Scenariusz|Działania do podjęcia|
+|---|---|
+|Adres IP podany w [Strefa DNS](/guides/web-cloud/domains/dns-zone-edit/) odpowiada adresowi IP Twojego hostingu.|Skorzystaj z [etapu 2](#step2).|
+|Adres IP wskazany w strefie nie dotyczy hostingu [konta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), ale pojawia się w [liście serwerów Web Cloud](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/).|Sprawdź, czy nie posiadasz hostingu posiadającego ten adres IP w jednym z pozostałych [kont OVHcloud cloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), jeśli utworzyłeś kilka z nich. W razie potrzeby skontaktuj się z webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/) w tej sprawie.|
+|Adres IP wskazany w strefie nie jest adresem Twojego hostingu i nie pojawia się również w [liście serwerów Web Cloud](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/).|Skontaktuj się ze swoim webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/) w tym zakresie.|
+|W zakładce <code className="action">Strefa DNS</code> komunikat wskazuje, że Twoja domena używa innych serwerów [DNS](/guides/web-cloud/domains/dns-zone-edit/) i wyświetla się je w formie "ns **?** .ovh.net" lub "dns **?** net" (zastąp "**?**" odpowiednim numerem serwera DNS):<br/><br/><img className="thumbnail" alt="warning_other_ovh_dns_srv" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png" loading="lazy" />|Zmień serwery DNS domeny, aby odpowiadały one tym, które są zapisane w rekordach typu `NS` strefy. Aby wykonać tę operację, postępuj zgodnie z instrukcjami z [tego przewodnika](/guides/web-cloud/domains/dns-server-edit/).|
+|W zakładce `Strefa DNS komunikat wskazuje, że Twoja domena używa innych serwerów [DNS](/guides/web-cloud/domains/dns-zone-edit/), a te nie wyświetlają się w formie "ns **?** .ovh.net" lub "dns **?** ovh.net":<br/><br/><img className="thumbnail" alt="warning_external_dns_srv" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png" loading="lazy" />|Skontaktuj się z webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/) w tym zakresie.|
+|Twoja domena nie wyświetla się w części <code className="action">Domeny</code> [Panel klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br/><br/>Lub zakładka <code className="action">Strefa DNS</code> Twojej domeny wyświetla się w następujący sposób:<br/><br/><img className="thumbnail" alt="zonedns_ndd_pas_sur_lec_lec_lec_lec2" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png" loading="lazy" />|Oznacza to, że Twoja domena nie jest zarządzana z poziomu [panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br/><br/>Sprawdź, czy domena nie jest zarządzana z poziomu jednego z Twoich pozostałych [kont OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), jeśli utworzyłeś kilka domen.<br/><br/>Możesz również wskazać jej operatora oraz serwery DNS, z którymi jest powiązana. za pomocą naszego narzędzia [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br/><br/>W razie potrzeby skontaktuj się z webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/) w tym zakresie.|
+
+### 2: Sprawdź certyfikat SSL na Twoim hostingu <a name="step2"></a>
+
+W zakładce <code className="action">Informacje ogólne</code> Twojego hostingu OVHcloud sprawdź sekcję `Certyfikat SSL`:
+
+<img className="thumbnail" alt="ssl-certificate-in-general-tab" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png" loading="lazy" />
+
+#### Scenariusz 1: Twój hosting nie zawiera certyfikatu SSL
+
+Włącz [certyfikat SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/) na Twoim hostingu postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/guides/web-cloud/web-hosting/ssl-on-webhosting/).
+
+#### Scenariusz 2: certyfikat SSL nie działa
+
+Jeśli wygenerowałeś **certyfikat SSL "Let's Encrypt"**, aktywuj opcję SSL dla swojego hostingu, postępując zgodnie z instrukcjami w [tym przewodniku](/guides/web-cloud/web-hosting/ssl-on-webhosting/).
+
+Jeśli posiadasz importowany **certyfikat SSL** i certyfikat ten nie działa, skontaktuj się z dostawcą.
+
+Jeśli zamówiłeś jeden z płatnych **certyfikatów SSL** od naszego partnera [SECTIGO](https://sectigo.com/), sprawdź, czy otrzymałeś wiadomość e-mail z propozycją odnowienia certyfikatu.
+<br/>W razie potrzeby skontaktuj się z [pomocą SECTIGO](https://sectigo.com/support) w tej sprawie.
+
+:::info
+Aby odnaleźć wszystkie e-maile wysłane przez nasze usługi, kliknij w prawym górnym rogu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie kliknij <code className="action">Połączenia</code>.
+
+:::
+
+
+## Sprawdź również <a name="go-further"></a>
+
+[Zarządzanie certyfikatem SSL na hostingu](/guides/web-cloud/web-hosting/ssl-on-webhosting/)
+
+[Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](/guides/web-cloud/web-hosting/ssl-activate-https-website/)
+
+[Usunięcie błędu “Strona nie została zainstalowana”](/guides/web-cloud/web-hosting/multisites-website-not-installed/)
+
+[Co zrobić w przypadku błędu 500 Internal Server Error?](/guides/web-cloud/web-hosting/diagnostic-fix-500-internal-server-error/)
+
+[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/)
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,72 @@
+---
+title: How to revert a flex instance
+description: Find out how to revert a flex instance from the OpenStack Horizon interface
+lastUpdated: 2024-07-17
+---
+
+## Objective
+
+A flex instance is a single size disk (50GB) instance which offers a faster process for snapshots. It allows resizing to higher or lower models with a fix storage space, whereas classic models can only be resized to higher models.<br/> As your infrastructure is constantly evolving, you may need to increase the storage space of your instance. In this case, you will need to « revert » your flex instance to a classic model. This action can only be done from the Horizon interface.
+
+<br/>**This guide shows you how to revert and resize your flex instance from the OpenStack Horizon interface.**
+
+## Requirements
+
+- An [OVHcloud Public Cloud instance](/guides/public-cloud/compute/public-cloud-first-steps#configuration/) with the flex option
+- [Access to the Horizon interface](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+## Instructions
+
+:::warning
+- If you switch from a flex instance to a classic instance with more resources, this is considered an upgrade. In this case, you will be billed for the difference. At the end of your billing period, you will receive two invoices.
+
+- If you switch from a flex instance to a classic instance with fewer resources, this is a downgrade. In this case, you will not be billed.
+
+- If you switch from a flex instance to a classic instance with the same resources, you will not be billed.
+
+:::
+
+
+Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this on the top left corner. 
+
+<img className="thumbnail" alt="Region selection" src="/images/public-cloud/compute/revert-a-flex-instance/region2021.png" loading="lazy" />
+
+Next, click on the <code className="action">Compute</code> menu on the left side and click on <code className="action">Instances</code>. Select <code className="action">Resize Instance</code> in the drop list for the corresponding instance.
+
+<img className="thumbnail" alt="Resize instance" src="/images/public-cloud/compute/revert-a-flex-instance/resizeinstance2021.png" loading="lazy" />
+
+**Flavor Choice** <a name="flavorchoice"></a>
+
+This section allows you to select the new instance template (flavor). You can either revert your instance to a classic model and maintain the same template or resize your instance by selecting a different template.
+
+In our example, our flavor is « b2-15-flex » , we can either revert to a « b2-15 » flavor or upgrade it to a « b2-30 » flavor. In our case, we want to upgrade our instance to a « b2-30 » classic model.
+
+<img className="thumbnail" alt="Choose new flavor" src="/images/public-cloud/compute/revert-a-flex-instance/confirmflavor.png" loading="lazy" />
+
+:::warning
+- You can only switch from a Linux model to another Linux model and from a Windows model to another Windows model.
+
+- The flex option is not available for all models.
+
+:::
+
+
+**Advanced Options**
+
+Use this section to manage the **Disk Partition** and **Server Group**.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/revert-a-flex-instance/resize_advanced.png" loading="lazy" />
+
+To proceed, click on the <code className="action">Resize</code> button.
+
+Once the process is complete, your instance will be reverted to the selected model. In our case, our instance was reverted to a classic model with more storage space.
+
+<img className="thumbnail" alt="New flavor applied" src="/images/public-cloud/compute/revert-a-flex-instance/newflavor.png" loading="lazy" />
+
+In case you wish to switch back to a flex model, you can do this by performing the same steps mentioned [above](#flavorchoice) and select a flex « flavor » instead of a classic one. 
+
+Alternatively, you can [edit the configuration of the instance](/guides/public-cloud/compute/first-steps-with-public-cloud-instance#edit-the-configuration-of-an-instance/) in the OVHcloud Control Panel.
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

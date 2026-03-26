@@ -1,0 +1,334 @@
+---
+title: Come rinnovare i servizi OVHcloud
+description: Scopri come gestire i tuoi servizi e i loro rinnovi nella tua area clienti OVHcloud.
+lastUpdated: 2025-01-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Obiettivo
+
+Il menu **Le mie offerte e servizi** dello Spazio Cliente OVHcloud ti permette di verificare lo stato dei tuoi servizi, rinnovarli, modificare il tipo di rinnovo, saldare fatture o anticipare il pagamento.
+
+Questa guida ti mostra come:
+
+- [Comprendere le differenze tra rinnovo automatico e rinnovo manuale](#auto-vs-manual)
+- [Determina il tipo di rinnovo applicato ai tuoi servizi](#renewal-type)
+- [Conoscere le diverse azioni possibili per ciascuno dei tuoi servizi](#actions)
+- [Scopri quali azioni possono essere raggruppate su più servizi](#group-actions)
+
+**Scopri come gestire i tuoi servizi e i loro rinnovi nella tua area clienti OVHcloud.**
+
+:::info
+Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. Per maggiori informazioni, consulta i contratti OVHcloud nella pagina [Lista dei contratti](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/%23/dedicated/billing/autoRenew/agreements).
+
+:::
+
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+## Prerequisiti
+
+- Disporre di servizi OVHcloud attivi
+- Essere [contatto fatturazione](/guides/account-and-service-management/account-information/managing-contacts#definizione/) dei servizi OVHcloud
+- Disporre di un metodo di pagamento valido sul tuo account OVHcloud. Consulta la nostra guida "[Gestire i metodi di pagamento](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/)".
+
+{/* CP-NAV-START:billing-services */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Le mie offerte e servizi](https://manager.eu.ovhcloud.com/#/billing/autorenew/services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > <code className="action">Le mie offerte e servizi</code>
+
+---
+{/* CP-NAV-END:billing-services */}
+
+<a name="auto-vs-manual"></a>
+
+## I diversi tipi di rinnovo
+
+**Fare clic su una delle schede seguenti.**
+
+<Tabs>
+  <Tab label="Rinnovo automatico">
+    Al momento della sottoscrizione, il servizio è impostato di default sul **rinnovo automatico**. per garantire la continuità dei servizi anche dopo la scadenza dell’abbonamento.
+    Esempio: hai sottoscritto un hosting Web il 15 gennaio 2024. Si rinnoverà automaticamente il 15 gennaio 2025 e l'importo corrispondente al suo abbonamento annuale sarà prelevato dal metodo di pagamento predefinito.
+    
+    Se un metodo di pagamento è stato salvato nello Spazio Cliente, l’importo delle fatture verrà addebitato automaticamente.
+    Se non hai salvato nessun [metodo di pagamento](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/), riceverai una fattura via email. Ti basterà poi saldarla online.
+    
+    Per i servizi con una frequenza di rinnovo automatico superiore a 1 mese (3 mesi, 6 mesi, 12 mesi), riceverai un promemoria via email il mese precedente la data di rinnovo automatico, che riepiloga i servizi che saranno rinnovati prossimamente.
+    Se non si desidera estendere uno di questi servizi, sarà sufficiente [disattivarlo dallo Spazio Cliente](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services/).
+    
+    **Attenzione**, la mancanza di un metodo di pagamento nel tuo account non comporta la disattivazione automatica dei tuoi servizi. Per disattivare i servizi, consulta la nostra guida "[Come disattivare i servizi OVHcloud](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services/)".
+  </Tab>
+  <Tab label="Rinnovo manuale">
+    Se non vuoi il rinnovo automatico e quindi il prelievo automatico, puoi modificare il tipo di rinnovo per alcuni prodotti (Domini, Hosting, VPS, Server dedicati) e cambiarli in rinnovo **manuale**.
+    
+    Questa modalità di rinnovo può essere utile:
+    
+    - se non sei sicuro di voler mantenere il servizio alla data di scadenza;
+    - se non vuoi che l’importo delle tue fatture venga automaticamente addebitato sul metodo di pagamento scelto.
+    
+    Se scegli il rinnovo manuale, riceverai diverse email di promemoria prima della scadenza, ciascuna contenente un link che permette di rinnovare online i servizi in scadenza.
+    Potrai anche effettuare semplicemente il pagamento dal tuo Spazio Cliente.
+    
+    **Attenzione**, se non effettui il pagamento di un servizio con rinnovo manuale, questo verrà **sospeso** alla data di scadenza e poi **eliminato** dopo alcuni giorni.
+    Se non vuoi mantenere il servizio attivo, non è necessario richiederne la disattivazione.
+  </Tab>
+</Tabs>
+
+
+## Procedura
+
+Apri la pagina [Le mie offerte e servizi](https://manager.eu.ovhcloud.com/#/billing/autorenew/services).
+
+<img className="thumbnail" alt="prodotti e servizi" src="/images/assets/screens/control-panel/product-selection/right-menu/my-solutions-and-services.png" loading="lazy" />
+
+### Visualizza il tipo di rinnovo <a name="renewal-type"></a>
+
+La pagina **Gestione delle mie offerte e servizi** contiene una tabella di gestione dei tuoi servizi OVHcloud. Nella tabella sono riportati nome, tipo di servizio, disponibilità del servizio (`Attivo` di default), stato (tipo di rinnovo, azione da eseguire, ecc.), la data di validità successiva del rinnovo o della disattivazione del servizio, nonché un pulsante <code className="action">...</code> dedicato alle azioni possibili per ogni servizio.
+
+<img className="thumbnail" alt="i miei servizi" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/my-services-en.png" loading="lazy" />
+
+:::tip[Success]
+Gli strumenti per l'ordinamento, il filtraggio e la ricerca sono disponibili sopra la tabella.
+È possibile ordinare le colonne in ordine crescente o decrescente, cercare il nome di uno dei servizi o applicare un filtro per visualizzare solo alcuni servizi in base ai criteri selezionati.
+
+I criteri di filtraggio verranno visualizzati sopra la tabella. Ecco un esempio di filtro che permette di visualizzare i domini con rinnovo manuale.
+
+<img className="thumbnail" alt="manageautomaticrenewal" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/filters-en.png" loading="lazy" />
+
+:::
+
+
+<a name="actions"></a>
+
+### Le azioni per ogni servizio
+
+:::info
+In base al servizio, se è disponibile il rinnovo manuale o meno, alcune azioni non saranno disponibili.
+
+:::
+
+
+A destra di un servizio, clicca sul pulsante <code className="action">...</code> nella colonna `Azioni` e seleziona l’azione che preferisci.
+
+<img className="thumbnail" alt="menu azioni" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/actions-en.png" loading="lazy" />
+
+**Ciascuna azione è descritta in una delle schede qui sotto.**
+
+<Tabs>
+  <Tab label="Configura il rinnovo">
+    <img className="thumbnail" alt="configura il rinnovo" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/configure-renewal-en.png" loading="lazy" />
+
+Clicca sull’azione <code className="action">Configura il rinnovo</code>. In base al servizio scelto, è possibile impostare la funzionalità di rinnovo manuale oppure scegliere la frequenza di rinnovo automatico. Se l’operazione è consentita, è possibile scegliere il tipo di rinnovo e la frequenza.
+    
+    <img className="thumbnail" alt="configura il rinnovo" src="/images/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal/configure-renew-en.png" loading="lazy" />
+
+In base alla scelta effettuata, visualizzerai tutte le date di prelevamento, il metodo di pagamento utilizzato e la data di scadenza del servizio.
+  </Tab>
+  <Tab label="Anticipa il pagamento">
+    <img className="thumbnail" alt="anticipare il pagamento" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png" loading="lazy" />
+
+Questa azione è consentita per i servizi con **rinnovo automatico**.
+    
+    Verrai reindirizzato a un'interfaccia di pagamento online.
+    
+    È possibile rinnovare i servizi in qualsiasi momento prima della loro scadenza e scegliere la durata del rinnovo.
+    In questo caso, il periodo di validità sottoscritto sarà aggiunto a quello in corso. Il periodo di validità rimanente non andrà perso.
+    
+    :::tip[Success]
+    Dall’interfaccia di pagamento online, se il servizio che vuoi rinnovare dispone di opzioni associate e vuoi anche rinnovarle, **non spuntare** il(i) pulsante(i) bianco(i) seguito(i) dalla dicitura `Non rinnovarlo` associato(i) a ciascuna delle opzioni visualizzate.
+    Se selezioni questo o questi pulsanti bianchi, richiedi il rinnovo del tuo servizio principale **SENZA** le eventuali opzioni associate.
+    
+    Una volta effettuate le scelte, prosegui cliccando su <code className="action">Conferma</code>.
+    
+    Per informazione, il prezzo di alcune opzioni viene visualizzato solo quando viene generato il buono d'ordine di rinnovo.
+
+    :::
+
+  </Tab>
+  <Tab label="Disattivare il servizio">
+    <img className="thumbnail" alt="disattiva" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/cancel-en.png" loading="lazy" />
+
+Questa azione è consentita per i servizi impostati con il **rinnovo automatico**.
+    
+    Selezionando questa azione, il rinnovo e l'addebito preautorizzato vengono disattivati per il servizio selezionato.
+    
+    Per maggiori informazioni sulla disattivazione dei servizi OVHcloud, segui le istruzioni contenute nella guida **"[Come disattivare i servizi OVHcloud](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services/)"**.
+  </Tab>
+  <Tab label="Rinnova il servizio">
+    <img className="thumbnail" alt="Rinnova il servizio" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png" loading="lazy" />
+
+Questa azione è consentita solo per i servizi con **rinnovo manuale**.
+    
+    Sarai reindirizzato verso un’interfaccia di pagamento online.
+    È possibile rinnovare i servizi in qualsiasi momento prima della loro scadenza e scegliere la durata del rinnovo.
+    
+    :::tip[Success]
+    Dall’interfaccia di pagamento online, se il servizio che vuoi rinnovare dispone di opzioni associate e vuoi anche rinnovarle, **non spuntare** il(i) pulsante(i) bianco(i) seguito(i) dalla dicitura `Non rinnovarlo` associato(i) a ciascuna delle opzioni visualizzate.
+    Se selezioni questo o questi pulsanti bianchi, richiedi il rinnovo del tuo servizio principale **SENZA** le eventuali opzioni associate.
+    
+    Una volta effettuate le scelte, prosegui cliccando su <code className="action">Conferma</code>.
+    
+    Per informazione, il prezzo di alcune opzioni viene visualizzato solo quando viene generato il buono d'ordine di rinnovo.
+
+    :::
+
+  </Tab>
+  <Tab label="Paga la tua fattura">
+    <img className="thumbnail" alt="Paga una fattura" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png" loading="lazy" />
+
+Se una fattura è in attesa di pagamento e quando:
+    
+    - se disponi di servizi con rinnovo automatico;
+    - non sono stati salvati metodi di pagamento che permettono di effettuare un addebito diretto per il pagamento delle fatture.
+    
+    Ti basta scegliere l’azione <code className="action">Salda la tua fattura</code> che ti reindirizzerà verso una piattaforma di pagamento online.
+  </Tab>
+</Tabs>
+
+
+<a name="group-actions"></a>
+
+### Azioni in blocco
+
+Per effettuare azioni in blocco è possibile selezionare diversi servizi nella tabella e cliccare sul pulsante <code className="action">Azioni</code>.
+
+<img className="thumbnail" alt="azioni in blocco" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png" loading="lazy" />
+
+Nella tabella seguente vengono descritte le azioni in blocco disponibili.
+
+|Azioni possibili|Descrizione|
+|---|---|
+|Rinnova|Rinnova più servizi in una sola volta.  Verrai reindirizzato a una pagina che ti permetterà di scegliere la durata del rinnovo e potrai effettuare il pagamento online.|
+|Disattiva il pagamento automatico|Disattiva il rinnovo automatico su diversi servizi in una sola volta Se su uno o più servizi non è consentita la funzionalità di rinnovo manuale, ti verrà indicato al momento della conferma dell’operazione.|
+|Attiva il pagamento automatico|Riattiva il rinnovo automatico su più servizi in una sola volta. Verranno rinnovati solo i servizi per cui è applicabile l’operazione.|
+|Esporta in CSV|Esporta in un file csv tutti i tuoi servizi e le date di scadenza.|
+|Allinea le date di rinnovo|Consente di allineare la data di scadenza dei tuoi servizi in modo che abbiano tutti un’unica data di rinnovo.  Verranno aggiornati solo i servizi per cui è applicabile l’operazione.|
+
+## FAQ
+
+<details>
+
+<summary>Dove trovare il mio identificativo cliente (NIC) OVHcloud?</summary>
+
+
+È visualizzato nello Spazio Cliente, cliccando sul tuo nome in alto a destra. È inoltre disponibile in alto a destra per tutte le fatture. e inserito nell’email di conferma della creazione dell’account, nei messaggi di conferma dell’ordine o di rinnovo, nonché nelle notifiche di connessione al tuo account.
+
+</details>
+
+
+<details>
+
+<summary>Non riesci ad accedere al tuo account OVHcloud per rinnovare i tuoi servizi, cosa fai?</summary>
+
+
+Consulta la sezione "[Cosa fare se non si riesco a connettermi?](/guides/account-and-service-management/account-information/ovhcloud-account-login#login-failure/)" della nostra guida "[Accedere allo Spazio Cliente OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-login/)".
+
+</details>
+
+
+<details>
+
+<summary>Voglio attivare il rinnovo automatico ma ricevo un messaggio di errore. Cosa devo fare?</summary>
+
+
+Per attivare il rinnovo automatico sui servizi, è necessario aver aggiunto un metodo di pagamento valido al tuo account OVHcloud. In caso contrario o se il metodo di pagamento è scaduto, comparirà un messaggio di errore nello Spazio Cliente durante i tentativi di attivazione del rinnovo automatico. Consulta la nostra guida "[Gestire i metodi di pagamento](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/)" per verificare o aggiungere un metodo di pagamento.
+
+</details>
+
+
+<details>
+
+<summary>Il metodo di pagamento non è più valido. Come aggiungere un nuovo metodo di pagamento?</summary>
+
+
+Consulta la nostra guida "[Gestire i metodi di pagamento](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/)". Per eliminare un metodo di pagamento obsoleto, è necessario aggiungere un nuovo metodo di pagamento valido al tuo account OVHcloud.
+
+</details>
+
+
+<details>
+
+<summary>Hai una domanda sul rinnovo del tuo dominio</summary>
+
+
+Consulta la nostra guida "[Rinnovare i miei domini OVHcloud](/guides/web-cloud/domains/autorenew-domain-name/)".
+
+</details>
+
+
+<details>
+
+<summary>Non voglio più addebiti automatici ma non voglio disattivare il servizio. Cosa devo fare?</summary>
+
+
+Se il servizio lo consente, è possibile utilizzare l’azione [Configura il rinnovo](#actions) per scegliere un rinnovo manuale.
+
+</details>
+
+
+<details>
+
+<summary>Ho rinnovato il mio servizio per 12 mesi. Posso annullare la mia scelta?</summary>
+
+
+Una volta effettuato il rinnovo del servizio, non è possibile annullarlo. È comunque possibile scegliere un altro tipo di rinnovo o disattivare il servizio, ma queste 2 opzioni potranno essere prese in considerazione solo al termine dell'abbonamento in corso, cioè al termine dei 12 mesi.
+
+</details>
+
+
+<details>
+
+<summary>Il mio sito è sospeso perché non ho rinnovato i miei servizi in tempo. Ho appena rinnovato i miei servizi. Quanto tempo è necessario attendere prima che il sito Web sia nuovamente accessibile?</summary>
+
+
+Il tempo di ripristino varia in base ai servizi interessati.
+Se solo l’hosting Web è stato sospeso ed è stato rinnovato, ci vorranno in media 2 ore perché il sito sia nuovamente accessibile.
+Se anche il dominio è stato sospeso ed è stato rinnovato, il tempo di attesa può essere più lungo e arrivare fino a 48 ore, corrispondente al tempo di propagazione DNS.
+Per proteggerti dall'indisponibilità di accesso per tutti i tuoi servizi critici, ti consigliamo di optare per il rinnovo automatico e di [verificare regolarmente che i tuoi metodi di pagamento siano aggiornati](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/).
+
+</details>
+
+
+<details>
+
+<summary>L'abbonamento del mio servizio scade a luglio 2024. È gennaio 2024 e voglio rinnovarlo per un anno. L'abbonamento scadrà a luglio 2025 o gennaio 2025?</summary>
+
+
+Quando estendi il rinnovo di un servizio (per un anno o un periodo più breve), questo periodo si aggiunge alla successiva data di validità visibile nella tabella "Gestione delle mie offerte e servizi". In questo caso, il tuo servizio sarà rinnovato fino a luglio 2025.
+
+</details>
+
+
+<details>
+
+<summary>L'abbonamento del mio servizio è scaduto il 1 gennaio 2024 e ho dimenticato di rinnovarlo. L'ho appena rinnovato il 16 gennaio 2024 per 6 mesi, ma constato che scadrà il 1° luglio 2024 e non il 16 luglio 2024. È normale?</summary>
+
+
+Sì, è normale, il rinnovo inizia alla data di scadenza dell'abbonamento.
+
+</details>
+
+
+## Per saperne di più
+
+Questa guida non ha risposto alla tua domanda? Consulta la nostra [FAQ su fatturazione e pagamento](/guides/account-and-service-management/managing-billing-payments-and-services/faq-billing/)
+
+[Rinnovare i miei domini OVHcloud](/guides/web-cloud/domains/autorenew-domain-name/)
+
+[Gestire i metodi di pagamento](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/)
+
+[Modalità di disattivazione dei servizi OVHcloud](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services/)
+
+[Sistema di fatturazione dei servizi Cloud](/guides/public-cloud/public-cloud-cross-functional/analyze-billing/)
+
+[Gestire la fatturazione di un account Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/)
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

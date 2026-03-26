@@ -1,0 +1,33 @@
+---
+title: Autorizar IP a ligar-se ao vCenter
+lastUpdated: 2020-11-18
+---
+
+## Objetivo
+
+É possível limitar o acesso ao vCenter autorizando que apenas alguns endereços IP se liguem. 
+
+**Saiba como autorizar endereços IP a ligarem-se ao vCenter.**
+
+## Requisitos
+
+* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+* Dispor de uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/) na sua conta OVHcloud.
+
+## Instruções
+
+Quando [a política de acesso ao vCenter é limitada](/guides/bare-metal-cloud/managed-bare-metal/vcenter-modify-access-policy/), é necessário adicionar os IP que serão autorizados a ligar-se ao serviço.
+
+A operação pode ser realizada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na secção `Bare Metal Cloud`, clique na opção `Managed Bare Metal`. Selecione a infraestrutura e aceda ao separador `Segurança` e clique em <code className="action">Adicionar um novo intervalo de endereços IP</code>.
+
+<img className="thumbnail" alt="vCenter" src="/images/bare-metal-cloud/managed-bare-metal/vcenter-authorise-ip-access/restrictIP.png" loading="lazy" />
+
+Aqui, deve adicionar o IP em questão e eventualmente uma descrição para o encontrar facilmente na lista mais tarde.
+
+Só precisa de validar clicando em <code className="action">Seguinte</code> e, uma vez que o IP está corretamente marcado como **Autorizado e implementado**, a ligação ao vSphere será possível a partir do IP em questão.
+
+<img className="thumbnail" alt="vCenter" src="/images/bare-metal-cloud/managed-bare-metal/vcenter-authorise-ip-access/restrictIP2.JPG" loading="lazy" />
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

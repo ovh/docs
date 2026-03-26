@@ -1,0 +1,121 @@
+---
+title: Konfiguracja firewalla w systemie Windows
+description: Dowiedz się, jak skonfigurować firewall w systemie Windows
+lastUpdated: 2023-02-17
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Aby optymalnie chronić system, serwer z systemem Windows Server dysponuje własną zintegrowaną zaporą ogniową. Jego konfiguracja pozwala na zwiększenie poziomu bezpieczeństwa i gwarantuje dostępność i integralność wszystkich elementów hostowanych na serwerze, takich jak role, usługi, foldery współdzielone.
+
+**Niniejszy przewodnik wyjaśnia, jak stosować reguły firewalla w systemie Windows.**
+
+:::warning
+OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
+
+Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub zabezpieczeniem serwera rekomendujemy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
+
+:::
+
+
+## Wymagania początkowe
+
+- Serwer [VPS](https://www.ovhcloud.com/pl/vps/) z systemem Windows na koncie OVHcloud
+- Dostęp administratora do serwera przez zdalny pulpit w systemie Windows 
+
+## W praktyce
+
+### Etap 1: dostęp do firewalla Windows
+
+Aby uzyskać dostęp do firewalla Windows, możesz postępować zgodnie z tą kolejnością:
+
+- kliknij przycisk <code className="action">Start</code>;
+- kliknij <code className="action">Szukaj</code>;
+- wyszukaj "Firewall Windows" na pasku wyszukiwania;
+- kliknij <code className="action">Firewall Windows</code>.
+
+Następnie kliknij pozycję Konfiguracja <code className="action">zaawansowana</code>.
+
+<img className="thumbnail" alt="Step1" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step1.PNG" loading="lazy" />
+
+### Etap 2: aktywuj regułę ruchu przychodzącego
+
+W wyświetlonym oknie znajdziesz parametry takie jak:
+
+- Zasady wjazdu i wyjazdu
+- Reguły bezpieczeństwa logowania
+- Opcje monitorowania zapory sieciowej serwera
+
+Wybierając <code className="action">Reguły ruchu przychodzącego</code>, wyświetlają się wszystkie wstępnie skonfigurowane reguły Windows Server związane z połączeniami sieciowymi i przychodzącymi pakietami. Niektóre z tych reguł nie są domyślnie aktywowane. Jeśli chcesz je włączyć, kliknij prawym przyciskiem myszy regułę i wybierz opcję <code className="action">Włącz regułę</code>.
+
+<img className="thumbnail" alt="Step1" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step2.PNG" loading="lazy" />
+
+### Etap 3: utworzyć nową regułę 
+
+Aby utworzyć nową regułę, przejdź do menu <code className="action">Action</code> i wybierz <code className="action">Nową regułę</code>.
+Kliknij opcję <code className="action">Nowa reguła</code> w panelu po prawej stronie.
+
+<img className="thumbnail" alt="Step3" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step3.PNG" loading="lazy" />
+
+### Etap 4: zdefiniować rodzaj reguły, którą chcesz włączyć
+
+Asystent wyświetla się, aby zdefiniować rodzaj reguły, którą chcesz utworzyć. Wybierz kratkę <code className="action">Port</code>.
+
+<img className="thumbnail" alt="Step4" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step4.PNG" loading="lazy" />
+
+### Etap 5: zdefiniować typ portu, który ma zostać aktywowany
+
+Na następnym etapie zdefiniuj rodzaj portu, który ma zostać aktywowany:
+
+<img className="thumbnail" alt="Step5" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step5.PNG" loading="lazy" />
+
+:::info
+:::
+
+>- TCP (protokół kontroli transmisji)
+>Jest to protokół przeznaczony do logowania, co oznacza, że dzięki TCP można utworzyć połączenia między sobą, aby wysyłać strumienie danych. Protokół ten gwarantuje, że dane są dostarczane odbiorcy bez błędów i w tej samej kolejności, w jakiej zostały wysłane.
+>
+> - UDP (User Datagram Protocol - Protokół datagramu użytkownika)
+> To protokół nieprzeznaczony do logowania. Jego rozwój opiera się na wymianie datagramów i ułatwia wysyłkę datagramów z sieci. Konieczne jest wcześniejsze nawiązanie połączenia z miejscem przeznaczenia.
+>
+>Możesz również wybrać kratkę <code className="action">Wszystkie porty lokalne</code>, aby aktywować wszystkie porty TCP lub UDP na niezabezpieczonym serwerze. Możesz również zaznaczyć kratkę <code className="action">Porty lokalne</code>, aby określić, który port ma być dozwolony. 
+>
+
+### Etap 6: autoryzuj lub blokuj połączenie
+
+Aby określić działanie, które ta reguła wywoła, dostępne są następujące opcje. Wybierz ten, który Ci odpowiada.
+
+- **Zezwalaj na połączenie**. Opcja ta pozwala na pełną komunikację za pośrednictwem tego portu.
+- **Zezwalaj na połączenie, jeśli jest ono zabezpieczone**. Ta opcja pozwala na przesyłanie danych tylko wtedy, gdy połączenie jest uwierzytelnione przez IPsec.
+- **Zablokuj połączenie**. Opcja ta uniemożliwia przesyłanie danych za pośrednictwem tego portu.
+
+Wybierz opcję <code className="action">Zezwalaj na połączenie</code> i kliknij <code className="action">Dalej </code>. 
+
+<img className="thumbnail" alt="Step6" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step6.PNG" loading="lazy" />
+
+### Etap 7: określić profil i nazwę zapory, którą należy zastosować
+
+Na koniec wybierz profil, na którym ma być stosowana reguła, wybierając spośród profili publicznych, domen lub prywatnych.
+Możesz je włączyć w dowolnym momencie.
+
+<img className="thumbnail" alt="Step7" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step7.PNG" loading="lazy" />
+
+Nadaj nazwę i opis nowej reguły (opcjonalnie), aby ułatwić jej korzystanie z:
+
+<img className="thumbnail" alt="Step7_01" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step7-01.PNG" loading="lazy" />
+
+Kliknij przycisk <code className="action">Zakończ</code>, aby zakończyć proces i utworzyć nową regułę.
+
+<img className="thumbnail" alt="Step7_02" src="/images/bare-metal-cloud/virtual-private-servers/activate-port-firewall-soft-win/step7_02.PNG" loading="lazy" />
+
+Następnie możesz wprowadzić zmiany w zakresie bezpieczeństwa nowej reguły utworzonej.
+
+## Sprawdź również <a name="go-further"></a>
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

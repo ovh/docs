@@ -1,0 +1,169 @@
+---
+title: Managing payment methods
+description: Find out how to add and manage payment methods within the OVHcloud Control Panel
+lastUpdated: 2025-04-28
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+In the OVHcloud Control Panel, you can save and manage different payment methods.
+
+## Requirements
+
+- A valid payment method
+
+{/* CP-NAV-START:billing-payment-methods */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Payment method](https://manager.eu.ovhcloud.com/#/billing/payment/method)
+- **Navigation path:** Click your name in the top right > <code className="action">My payment methods</code>
+
+---
+{/* CP-NAV-END:billing-payment-methods */}
+
+## Instructions <a name="payment_methods"></a>
+
+Open the [My payment methods](https://manager.eu.ovhcloud.com/#/billing/payment/method) page.
+
+<img className="thumbnail" alt="hubpayment" src="/images/assets/screens/control-panel/product-selection/right-menu/my-payment-methods.png" loading="lazy" />
+
+The page that opens contains a table listing the payment methods saved to your customer account. You can:
+
+- Add a payment method.
+- Change your default payment method.
+- Modify your payment method description.
+- Delete a payment method.
+
+### Register a payment method
+
+When you place your first order, you are asked to save a payment method to ensure that your service can be renewed via automatic payments.
+
+This payment method is then used by default for all of your renewals and is offered to pay for new orders.
+
+You can save other payment methods so that they are suggested when you place new orders and used by default for future payments.
+
+You can save two different payment method types:
+
+- Credit card
+- PayPal® account
+
+To do this, simply click <code className="action">Add a payment method</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods2.png" loading="lazy" />
+
+Choose the payment method you want to use:
+
+<img className="thumbnail" alt="choose-payment-method-no-sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/choose-payment-method-no-sepa.png" loading="lazy" />
+
+Follow the steps for saving a payment method. In the first step, you are asked to check the option <code className="action">I want to choose this as my default payment method as soon as it is validated</code>, so that it is used for future orders and automatic payments.
+
+#### Credit card
+
+<img className="thumbnail" alt="credit-card-no-sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-card-no-sepa.png" loading="lazy" />
+
+To register a new bank card, you will be redirected to our payment provider's secure interface. A small amount of money is deducted from your bank account to check your card details and their validity.<br/>
+No amount will be charged and your credit card will be activated in a few minutes.
+
+#### PayPal account
+
+<img className="thumbnail" alt="paypal_no_sepa" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/paypal_no_sepa.png" loading="lazy" />
+
+Select <code className="action">PayPal</code> as your payment method, then click on the button <code className="action">PayPal</code>. A popup window will then open to log in to your PayPal® account and register it as an authorized payment method with OVHcloud.
+
+Your PayPal® account will be activated within a few minutes.
+
+### Change your default payment method
+
+Payments for your services’ renewal bills are always taken via your default payment method. If you would like to change it, you will need to add a new payment method in the OVHcloud Control Panel.
+
+To do this, click on the <code className="action">...</code> to the right of the new payment method, then <code className="action">Make this the default payment method</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods3.png" loading="lazy" />
+
+> **How do I replace my default payment method with another one?**
+>
+> - Step 1: add the new payment method
+> - Step 2: set the new payment method as the default payment method
+> - Step 3: delete the old payment method
+>
+
+### Delete a payment method
+
+If you no longer want to use one of your payment methods, you can delete it by clicking on the <code className="action">...</code> button to the right of it. Then click <code className="action">Delete this payment method</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods4.png" loading="lazy" />
+
+If you would like to delete all of your payment methods, all of your services must be set to [manual renewal](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#manual-renewal/).
+
+#### Delete a payment method via the OVHcloud API
+
+You can delete a payment method via the API by connecting to [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+
+Start by getting the payment method’s ID:
+
+<Api version="v1" section="/me" method="GET" route={"/me/payment/method"} />
+
+Then delete the payment method using the ID you obtained in the previous step:
+
+<Api version="v1" section="/me" method="DELETE" route={"/me/payment/method/\{paymentMethodId\}"} />
+
+
+:::info
+For more information, please refer to our guide [Getting started with the OVHcloud API](/guides/manage-and-operate/api/first-steps/).
+
+If you experience any difficulties finding your payment methods via the OVHcloud API, use the <code className="action">Edit description</code> function by clicking on the button <code className="action">...</code> next to your payment method in the [Payment method](#payment_methods) section of the [My payment methods](https://manager.eu.ovhcloud.com/#/billing/payment/method) page.
+
+:::
+
+
+### Prepaid account
+
+#### What is the prepaid account?
+
+The *prepaid account* is added to the [My payment methods](https://manager.eu.ovhcloud.com/#/billing/payment/method) page as soon as it is created. It allows you to credit your customer account in advance and use these funds to pay for your orders and renewal invoices.
+
+By crediting your account regularly, you will ensure that your services will never be interrupted for default on their [automatic renewal](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#automatic-renewal/).
+
+To do this, simply go to the `Payment methods` section in your Control Panel:
+
+- Go to the [My payment methods](https://manager.eu.ovhcloud.com/#/billing/payment/method) page.
+- Select the <code className="action">My Prepaid Account</code> tab.
+
+<img className="thumbnail" alt="prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/prepaid-account.png" loading="lazy" />
+
+#### How does it work?
+
+When you have services set to *automatic renewal*, your bill will be deducted from your prepaid account as soon as possible.
+
+If you do not have enough funds, your account balance will be negative and will remain pending payment.
+
+If you have a valid payment method saved in your customer account, this amount will be automatically deducted within 24 hours and your balance reset. This will not affect the status of your services.
+
+However, if you have not saved a payment method, you will need to pay the balance within 7 days from your Control Panel to avoid any service interruptions.
+
+If you do not have a registered payment method, we recommend setting an **alert threshold**, to ensure that you have sufficient funds for your next bills:
+
+<img className="thumbnail" alt="warning_prepaid_account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/warning_prepaid_account.png" loading="lazy" />
+
+If the credit available on your prepaid account falls below the defined limit, you will be sent a notification email immediately.
+
+#### How do I credit my prepaid account?
+
+In the <code className="action">My prepaid account</code> tab, click on the <code className="action">Credit</code> button.
+
+<img className="thumbnail" alt="credit-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-prepaid-account.png" loading="lazy" />
+
+In the window that pops up, enter the amount you want to credit, click on <code className="action">Next</code>, then <code className="action">Order</code>.
+
+<img className="thumbnail" alt="order-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/order-prepaid-account.png" loading="lazy" />
+
+On the purchase order that appears, select the payment method of your choice and pay for your order.
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

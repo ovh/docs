@@ -1,0 +1,3 @@
+# robots.txt — Beta: block all indexing
+User-agent: *
+Disallow: /

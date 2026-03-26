@@ -1,0 +1,202 @@
+---
+title: Tworzenie i eksportowanie kopii zapasowej bazy danych na serwerze baz danych
+description: Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych na serwerze Web Cloud Databases z poziomu Panelu klienta OVHcloud lub przez phpMyAdmin
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Baza danych może zawierać dużą liczbę informacji niezbędnych dla Twojej strony WWW. Dlatego ważne jest, aby móc ją zapisać lub wyeksportować.
+
+**Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych z serwera baz danych.**
+
+## Wymagania początkowe
+
+- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartej w ofercie [hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Wybierz usługę bazy danych
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## W praktyce
+
+:::info
+Rozwiązania [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+
+- Brak dostępu superużytkownika "root".
+- Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL SQL lub Adminer jest w pełni kompatybilne.
+
+:::
+
+
+### Tworzenie kopii zapasowych i eksportowanie bazy danych w Panelu klienta
+
+:::info
+- Kopie zapasowe są wykonywane automatycznie raz dziennie
+na wszystkich Twoich bazach danych.
+- Automatyczne i ręczne kopie zapasowe są przechowywane przez 30 dni.
+Po tym czasie zostaną automatycznie usunięte.
+
+:::
+
+
+#### Wykonanie ręcznej kopii zapasowej
+
+Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **3** kroków.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij zakładkę <code className="action">Bazy danych</code>.
+    
+    W kolumnie **Kopie zapasowe** liczba odpowiada liczbie kopii zapasowych dostępnych dla Twojej bazy danych.
+  </Tab>
+  <Tab label="Krok 3">
+    Kliknij przycisk <code className="action">...</code> po prawej stronie bazy danych, a następnie <code className="action">Zapisz teraz</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Eksport kopii zapasowej
+
+Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij zakładkę <code className="action">Bazy danych</code>.
+    
+    W kolumnie **Kopie zapasowe** liczba odpowiada liczbie kopii zapasowych dostępnych dla Twojej bazy danych.
+  </Tab>
+  <Tab label="Krok 3">
+    Kliknij przycisk <code className="action">...</code> po prawej stronie bazy danych, a następnie <code className="action">Wyświetl kopie zapasowe</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 4">
+    Pojawi się lista dostępnych kopii zapasowych. Kliknij przycisk <code className="action">...</code> po prawej stronie wybranej kopii zapasowej, a następnie <code className="action">Pobierz kopię zapasową</code>.
+  </Tab>
+</Tabs>
+
+
+### Tworzenie kopii zapasowych i eksportowanie bazy danych poza Panelem klienta
+
+Jeśli dostępna pamięć RAM na serwerze nie pozwala na przeprowadzenie pożądanego eksportu, skorzystaj z narzędzia OVHcloud dostępnego w Panelu klienta, które wykorzystuje zasoby zewnętrzne. Zapoznaj się z sekcją "[Tworzenie kopii zapasowych i eksportowanie bazy danych w Panelu klienta](#tworzenie-kopii-zapasowych-i-eksportowanie-bazy-danych-w-panelu-klienta)" niniejszego przewodnika.
+
+**Kliknij wybraną metodę eksportu, aby wyświetlić jej zawartość.**
+
+<details>
+
+<summary>Eksport bazy MySQL lub MariaDB z poziomu phpMyAdmin OVHcloud</summary>
+
+
+Aby wyeksportować bazę danych bezpośrednio z phpMyAdmin, należy najpierw się zalogować. W tym celu zapoznaj się z przewodnikiem "[Łączenie się z bazą danych](/guides/web-cloud/web-cloud-databases/connecting-to-database-on-database-server/)".
+
+Po zalogowaniu się do phpMyAdmin kliknij nazwę bazy danych, którą chcesz wyeksportować, a następnie zakładkę <code className="action">Eksportuj</code> u góry.
+
+Dostępne są dwa tryby eksportu. Jeśli nie masz szczególnych wymagań, zalecamy użycie trybu **szybkiego** w formacie **SQL**.
+
+<img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>Eksport bazy MySQL lub MariaDB z wiersza poleceń</summary>
+
+
+```bash
+mysqldump --host=serwer --user=użytkownik --port=port --password=hasło nazwa_bazy > nazwa_bazy.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>Eksport bazy MySQL lub MariaDB ze skryptu PHP</summary>
+
+
+```php
+1. <?php echo "Trwa tworzenie kopii zapasowej bazy danych.......";
+2. system("mysqldump --host=serwer --user=użytkownik --port=port --password=hasło nazwa_bazy > nazwa_bazy.sql");
+3. echo "Zakończono. Możesz pobrać bazę danych przez FTP.";
+4. ?>
+```
+
+:::warning
+- Aby uniemożliwić osobom trzecim dostęp do pliku zawierającego wrażliwe dane, zabezpiecz go za pomocą przewodnika: [Ochrona katalogu hasłem za pomocą .htaccess](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+- Operacja ta jest możliwa tylko z poziomu hostingu współdzielonego OVHcloud.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>Eksport bazy PostgreSQL z wiersza poleceń</summary>
+
+
+```bash
+pg_dump --host=serwer --port=port --user=użytkownik --password=hasło nazwa_bazy > nazwa_bazy.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>Eksport bazy PostgreSQL ze skryptu PHP</summary>
+
+
+```php
+1. <?php echo "Trwa tworzenie kopii zapasowej bazy danych.......";
+2. system("PGPASSWORD=hasło pg_dump --host=serwer --port=port --user=użytkownik --password=hasło nazwa_bazy > nazwa_bazy.sql");
+3. echo "Zakończono. Możesz pobrać bazę danych przez FTP.";
+4. ?>
+```
+
+:::warning
+- Aby uniemożliwić osobom trzecim dostęp do pliku zawierającego wrażliwe dane, zabezpiecz go za pomocą przewodnika: [Ochrona katalogu hasłem za pomocą .htaccess](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+- Operacja ta jest możliwa tylko z poziomu hostingu współdzielonego OVHcloud.
+
+:::
+
+
+</details>
+
+
+## Sprawdź również
+
+[Tworzenie kopii zapasowych i eksportowanie bazy danych w Panelu klienta](#tworzenie-kopii-zapasowych-i-eksportowanie-bazy-danych-w-panelu-klienta)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

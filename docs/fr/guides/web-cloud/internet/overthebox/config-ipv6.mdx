@@ -1,0 +1,168 @@
+---
+title: Comment configurer IPv6 sur OverTheBox ?
+description: Découvrez comment configurer IPv6 sur OverTheBox
+lastUpdated: 2025-06-05
+---
+
+## Objectif
+
+Découvrez comment activer et configurer IPv6 sur un service OverTheBox.
+
+## Prérequis
+
+- Disposer d'un service **OverTheBox Starter** ou **OverTheBox Business** fourni par OVHcloud.
+- Posséder un boîtier **OverTheBox** en version **v1.1.2 ou supérieure** fourni par OVHcloud, ou avoir installé l’image OverTheBox issue du projet Open Source sur un équipement personnel ([installer l'image OverTheBox sur votre matériel](/guides/web-cloud/internet/overthebox/advanced-installer-limage-overthebox-sur-votre-materiel/)).
+{/* CP-NAV-START:telecom-otb */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OverTheBox](https://manager.eu.ovhcloud.com/#/telecom/overTheBox)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">OverTheBox</code> > Sélectionnez votre service
+
+---
+{/* CP-NAV-END:telecom-otb */}
+
+:::warning
+L'IPv6 n'est pas disponible sur les anciennes offres OverTheBox, vous pouvez changer votre offre en consultant le guide « [Comment changer mon offre OverTheBox](/guides/web-cloud/internet/overthebox/offer-migration/) ».
+
+:::
+
+
+:::warning
+L'IPv6 est actuellement en phase bêta, le boîtier **OverTheBox** doit être en version **v1.1.2 ou supérieure**. Pour mettre à jour votre équipement, consultez le guide « [Comment mettre à jour un appareil OverTheBox](/guides/web-cloud/internet/overthebox/config-upgrade/) ».
+
+:::
+
+
+## En pratique
+
+### Fonctionnement de l'IPv6 avec OverTheBox
+
+Chaque service dispose d'une plage /56 mais certaines restrictions s'appliquent :
+
+- Un sous-réseau /64 est réservé pour le fonctionnement du service.
+- Seul le premier sous-réseau /60 est assigné à l'équipement, ce qui permet d'exploiter 16 sous-réseaux /64. Les autres sous-réseaux sont réservés pour des applications futures.
+
+### Étape 1 : activer ou désactiver IPv6
+
+Depuis votre [espace client OVHcloud](https://manager.eu.ovhcloud.com/#/telecom/overTheBox), sélectionnez le service OverTheBox sur lequel vous souhaitez configurer l'IPv6.
+- Pour **activer** IPv6, cochez la case <code className="action">IPv6 activée</code>.
+- Pour **désactiver** IPv6, décochez la case <code className="action">IPv6 activée</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step1-ipv6-1-enableIpv6-2025.png" loading="lazy" />
+
+### Étape 2 : configuration du pare-feu
+
+Par défaut le pare-feu du boîtier **OverTheBox** est configuré pour permettre uniquement les communications sortantes en IPv6, du réseau local vers Internet.
+
+- Connectez-vous à l'interface web de l'**OverTheBox** depuis [overthebox.ovh](http://overthebox.ovh) ou [192.168.100.1](https://192.168.100.1).
+
+#### Autoriser le ping depuis l'extérieur
+
+Par défaut, le ping depuis l'extérieur n'est pas autorisé. Vous pouvez ajouter une règle de pare-feu pour l'autoriser.
+
+- Rendez-vous dans l'onglet <code className="action">Network > Firewall</code>.
+- Rendez-vous dans la section <code className="action">Traffic Rules</code>.
+- Ajoutez une règle à l'aide du bouton <code className="action">Add</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowPing-1-2025.png" loading="lazy" />
+
+- Modifiez le paramètre <code className="action">Name</code> pour donner un nom à la règle. Pour notre exemple, la règle se nomme `Allow-Ping-tunv6`.
+- Modifiez le paramètre <code className="action">Protocol</code> pour restreindre la règle sur une famille de protocole. Pour notre exemple, le ping utilise le protocole **ICMP**, nous renseignons donc `ICMP`.
+- Modifiez le paramètre <code className="action">Source zone</code> pour sélectionner la zone du pare-feu d'où proviennent les paquets. La zone est `tunv6`.
+- Modifiez le paramètre <code className="action">Destination zone</code> pour sélectionner la zone de destination du pare-feu. La zone est `lan`.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowPing-2-2025.png" loading="lazy" />
+
+- Rendez-vous dans la sous-section <code className="action">Advanced Settings</code>.
+- Dans le paramètre <code className="action">Restrict to address family</code>, sélectionnez `IPv6 only`, pour limiter la règle uniquement au trafic **IPv6**.
+- Confirmez vos changements avec le bouton <code className="action">Save</code>.
+- Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowPing-3-2025.png" loading="lazy" />
+
+#### Ouverture de port
+
+Il est possible de créer une règle de pare-feu pour autoriser uniquement l'accès à un port spécifique depuis l'extérieur. Dans cet exemple, nous allons autoriser l'accès à un serveur **web** en **HTTP** sur le port **80**.
+
+- Rendez-vous dans l'onglet <code className="action">Network > Firewall</code>.
+- Rendez-vous dans la section <code className="action">Traffic Rules</code>.
+- Ajoutez une règle à l'aide du bouton <code className="action">Add</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowPing-1-2025.png" loading="lazy" />
+
+- Modifiez le paramètre <code className="action">Name</code> pour donner un nom à la règle. Pour notre exemple, la règle se nomme `web`.
+- Modifiez le paramètre <code className="action">Protocol</code> pour restreindre la redirection sur un protocole. Pour notre exemple, nous n'avons besoin que du protocole **HTTP** qui se base sur **TCP**, nous renseignons donc `TCP`.
+- Modifiez le paramètre <code className="action">Source zone</code> pour sélectionner la zone du pare-feu d'où proviennent les paquets. La zone est `tunv6`.
+- Modifiez le paramètre <code className="action">Destination zone</code> pour sélectionner la zone de destination du pare-feu. La zone est `lan`.
+- Modifiez le paramètre <code className="action">Destination address</code> pour sélectionner l'équipement de destination. Dans notre exemple, notre équipement est `webServer.lan`.
+- Modifiez le paramètre <code className="action">Destination port</code> pour sélectionner le port de destination sur l'équipement. Dans notre exemple, le protocole **HTTP** écoute sur le port **80**, nous renseignons donc `80`.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowHTTP-2-2025.png" loading="lazy" />
+
+- Rendez-vous dans la sous-section <code className="action">Advanced Settings</code>.
+- Dans le paramètre <code className="action">Restrict to address family</code>, sélectionnez `IPv6 only` pour limiter la règle uniquement au trafic **IPv6**.
+- Confirmez vos changements avec le bouton <code className="action">Save</code>.
+- Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowPing-3-2025.png" loading="lazy" />
+
+#### Désactiver le filtrage IPv6 sur un équipement en particulier
+
+:::warning
+Cette configuration désactive le filtrage IPv6 par l'OverTheBox sur l'équipement client concerné. Il sera totalement exposé en IPv6, il devra donc assurer sa propre sécurité.
+
+:::
+
+
+Il est possible de créer une règle de pare-feu pour autoriser l'accès sans restriction à un équipement client depuis l'extérieur. Dans cet exemple, nous allons autoriser l'accès à tous les ports du serveur **webServer.lan**.
+
+- Rendez-vous dans l'onglet <code className="action">Network > Firewall</code>.
+- Rendez-vous dans la section <code className="action">Traffic Rules</code>.
+- Ajoutez une règle à l'aide du bouton <code className="action">Add</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowPing-1-2025.png" loading="lazy" />
+
+- Modifiez le paramètre <code className="action">Name</code> pour donner un nom à la règle. Pour notre exemple, la règle se nomme `server`.
+- Modifiez le paramètre <code className="action">Protocol</code> pour restreindre la redirection sur un protocole. Pour notre exemple, nous ne souhaitons pas de restrictions, nous renseignons donc `TCP`, `UDP` et `ICMP`.
+- Modifiez le paramètre <code className="action">Source zone</code> pour sélectionner la zone du pare-feu d'où proviennent les paquets. La zone est `tunv6`.
+- Modifiez le paramètre <code className="action">Destination zone</code> pour sélectionner la zone de destination du pare-feu. La zone est `lan`.
+- Modifiez le paramètre <code className="action">Destination address</code> pour sélectionner l'équipement de destination. Dans notre exemple, notre équipement est `webServer.lan`.
+- Le paramètre <code className="action">Destination port</code> n'est pas renseigné pour autoriser la connexion sur tous les ports de l'équipement.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowHost-2-2025.png" loading="lazy" />
+
+- Rendez-vous dans la sous-section <code className="action">Advanced Settings</code>.
+- Dans le paramètre <code className="action">Restrict to address family</code>, sélectionnez `IPv6 only`, pour limiter la règle uniquement au trafic **IPv6**.
+- Confirmez vos changements avec le bouton <code className="action">Save</code>.
+- Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-AllowPing-3-2025.png" loading="lazy" />
+
+#### Désactiver complètement le filtrage IPv6 par l'OverTheBox
+
+:::warning
+Cette configuration désactive le filtrage IPv6 par l'OverTheBox, les équipements clients seront totalement exposés en IPv6, ils devront donc assurer leur propre sécurité.
+
+:::
+
+
+- Rendez-vous dans l'onglet <code className="action">Network > Firewall</code>.
+- Éditez la zone <code className="action">tunv6</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-disableFW-1-2025.png" loading="lazy" />
+
+- Dans le paramètre <code className="action">Allow forward to destination zones</code>, renseignez la zone `lan`.
+- Confirmez vos changements avec le bouton <code className="action">Save</code>.
+- Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/config-ipv6/step2-ipv6-disableFW-2-2025.png" loading="lazy" />
+
+## Aller plus loin <a name="go-further"></a>
+ 
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+ 
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+ 
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

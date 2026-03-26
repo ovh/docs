@@ -1,0 +1,88 @@
+---
+title: Konfiguracja weryfikacji dwuetapowej na koncie Exchange
+description: Dowiedz się, jak skonfigurować weryfikację dwuetapową na koncie Exchange
+lastUpdated: 2025-04-28
+---
+
+## Wprowadzenie
+
+Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji dwuetapowej (2FA). Pozwala ona wygenerować kod, który należy wprowadzić przy każdym logowaniu, jako uzupełnienie zabezpieczenia hasłem. Kod jest generowany przez aplikację *one-time password* (OTP), którą należy zainstalować na smartfonie lub tablecie.
+
+**Odkryj, jak aktywować weryfikację dwuetapową na Twoim koncie Exchange.**
+
+## Wymagania początkowe
+
+- Wykupienie usługi [Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
+- Zainstalowanie aplikacji OTP na smartfonie lub tablecie z systemem Android lub iOS.
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+:::info
+**Aplikacje mobilne OTP**
+
+Istnieje wiele aplikacji OTP. Oto przykładowe dwie z nich, dostępne za darmo:
+
+- dla systemu Android: Free OTP;
+- dla systemu iOS: OTP Auth.
+
+:::
+
+
+## W praktyce
+
+### Pierwsza konfiguracja
+
+#### Etap 1: włączenie weryfikacji dwuetapowej w platformie 
+
+Przy pierwszej konfiguracji należy aktywować weryfikację dwuetapową w platformie, aby móc ją włączyć w koncie.
+
+1. Wybierz kartę <code className="action">Bezpieczeństwo</code> w platformie.
+1. Naciśnij przycisk <code className="action">Aktywuj</code> który znajduje się pod opcją „Weryfikacja dwuetapowa”.
+1. Na koniec przejdź na dół strony i kliknij <code className="action">Zapisz zmiany</code>.
+
+<img className="thumbnail" alt="2fa-exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-2fa-exchange/2fa-exchange.gif" loading="lazy" />
+
+#### Etap 2: włączenie weryfikacji dwuetapowej na koncie
+
+Po aktywowaniu weryfikacji dwuetapowej w platformie, możesz ją włączyć dla jednego z Twoich kont.
+
+Pozostając w platformie Exchange, przejdź do karty <code className="action">Konta e-mail</code>. Kliknij <code className="action">...</code> po prawej stronie konta, dla którego chcesz aktywować weryfikację dwuetapową, a następnie  <code className="action">Aktywuj weryfikację dwuetapową</code>.
+
+<img className="thumbnail" alt="2fa-exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-2fa-exchange/2fa-exchange-01.png" loading="lazy" />
+
+Aby powiązać konto z Twoją aplikacją OTP, zaloguj się do [poczty webmail](https://www.ovhcloud.com/pl/mail/).
+
+Przy pierwszym logowaniu wyświetlony zostanie kod QR. Zeskanuj go za pomocą aplikacji OTP, a następnie wprowadź wygenerowany w aplikacji kod, aby się zalogować.
+
+<img className="thumbnail" alt="2fa-exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-2fa-exchange/2fa-exchange-02.png" loading="lazy" />
+
+Podczas następnych logowań wymagany będzie jedynie kod wygenerowany przez aplikację.
+
+### Wyłączenie weryfikacji dwuetapowej
+
+Weryfikację dwuetapową Twojego konta można wyłączyć na trzy sposoby.
+
+Z poziomu karty <code className="action">Konta e-mail</code> Twojej platformy Exchange kliknij <code className="action">...</code> po prawej stronie konta z aktywną weryfikacją dwuetapową.
+
+<img className="thumbnail" alt="2fa-exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-2fa-exchange/2fa-exchange-04.png" loading="lazy" />
+
+Wybierz pożądaną opcję na podstawie poniższej tabeli:
+
+| Nr                 	| Stanowisko    | Opis                                                                                                        	
+|----------------------------------	|------------------|------------------|
+| 1. | „Wyłącz weryfikację dwuetapową” | Umożliwia dezaktywację weryfikacji dwuetapowej na określoną liczbę godzin. Po upływie określonego terminu weryfikacja dwuetapowa zostanie ponownie włączona. <br/> *Przykład: użytkownik zapomniał smartfona i nie może zalogować się z wykorzystaniem aplikacji OTP.*   |
+| 2. | „Zresetuj weryfikację dwuetapową” | Umożliwia ponowne wygenerowanie kodu QR wymaganego przy pierwszym logowaniu do poczty webmail.<br/> *Przykład: użytkownik zmienił smartfona i musi ponownie skonfigurować aplikację OTP.* |
+| 3. | „Usuń weryfikację dwuetapową” | Ta opcja powoduje całkowite wyłączenie weryfikacji dwuetapowej w koncie. | 
+
+## Sprawdź również <a name="go-further"></a>
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

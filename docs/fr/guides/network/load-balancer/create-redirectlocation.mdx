@@ -1,0 +1,112 @@
+---
+title: "Configuration d'un service OVHcloud Load Balancer avec les redirections"
+description: Intégrez vos services web derrière un Load Balancer avec les redirections
+lastUpdated: 2025-11-27
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+Le **Load Balancer OVHcloud** fonctionne par défaut comme un proxy, un intermédiaire entre le trafic client et vos serveurs backend. Il peut également être configuré pour rediriger le trafic client vers un site web tiers. Cette fonctionnalité est essentielle pour des scénarios tels que la **migration de nom de domaine** ou l'application de la **version HTTPS** d'un site web. On parle alors de **redirection HTTP**.
+
+**Ce guide décrit le processus d'intégration de vos services web derrière un Load Balancer OVHcloud utilisant des redirections HTTP.**
+
+## Prérequis
+
+- Posséder une offre [OVHcloud Load balancer](https://www.ovhcloud.com/fr/network/load-balancer/) dans votre compte OVHcloud.
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Avoir accès à l'[API OVHcloud](https://eu.api.ovh.com/).
+
+## En pratique
+
+### Présentation
+
+Une redirection HTTP se présente ainsi :
+
+```bash
+HTTP/1.1 301 Moved Permanently
+Location: http://www.example.org/
+Content-Type: text/html
+Content-Length: 174
+```
+
+Les redirections personnalisées doivent utiliser le format `<scheme>://<net_loc>/<path>;<params>?<query>#<fragment>`. Il n'est possible de spécifier qu'une seule redirection par frontend.
+
+Les redirections personnalisées peuvent être spécifiées via l'espace client ou via l'API, tant sur un nouveau frontend qu'un existant.
+
+### Ajouter une redirection personnalisée depuis l'espace client OVHcloud
+
+Il est possible de définir une redirection personnalisée depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la partie <code className="action">Bare Metal Cloud</code> puis <code className="action">Load Balancer</code>.
+Cela peut-être effectué tant sur un nouveau frontend pendant sa création, que sur un frontend existant.
+
+#### Ajout d'un nouveau frontend
+
+Dans la section <code className="action">Frontends</code>, cliquez sur le bouton <code className="action">Ajouter un frontend</code> pour en créer un nouveau.
+
+Dans la page d'édition d'un frontend, sélectionnez le protocole <code className="action">HTTP</code> ou <code className="action">HTTPS</code>.<br/>
+Configurez les informations normalement. Il est cependant inutile de préciser la <code className="action">Ferme par défaut</code>, celle-ci ne sera pas utilisée.
+
+Dans les paramètres avancés, renseignez la <code className="action">Redirection HTTP</code>.
+
+#### Édition d'un frontend existant
+
+Dans la section <code className="action">Frontends</code>, cliquez que le bouton <code className="action">...</code> à droite du frontend concerné et sélectionnez <code className="action">Modifier</code>.<br/>
+Assurez vous que le frontend choisi utilise bien le protocole `HTTP` ou `HTTPS`. Complétez la configuration si besoin.
+Il est cependant inutile de préciser la <code className="action">Ferme par défaut</code>, celle-ci ne sera pas utilisée.
+
+Dans les paramètres avancés, renseignez la <code className="action">Redirection HTTP</code>.
+
+<img className="thumbnail" alt="Configuration d'une Redirection d'un Frontend" src="/images/network/load-balancer/create-redirectlocation/add_redirectlocation.png" loading="lazy" />
+
+Une fois le frontend configuré, cliquez sur <code className="action">Ajouter</code> ou <code className="action">Modifier</code> selon que vous configurez un nouveau frontend, ou un frontend existant.
+N'oubliez pas de déployer la configuration.
+Pour ce faire, vous pouvez au choix :
+
+- Dans la section `Statut` de l'onglet <code className="action">Accueil</code>, cliquez sur le bouton <code className="action">...</code> de votre Load Balancer puis cliquez sur <code className="action">Appliquer la configuration</code>.
+
+- Dans le bandeau de rappel vous précisant que la configuration n'est pas appliquée, cliquez sur <code className="action">Appliquer la configuration</code>.
+
+<img className="thumbnail" alt="Application d'une Configuration d'un Load Balancer" src="/images/network/load-balancer/create-redirectlocation/apply_configuration.png" loading="lazy" />
+
+### Ajouter une redirection personnalisée depuis l'API OVHcloud
+
+Dans l'[API OVHcloud](https://eu.api.ovh.com/), les redirections sont spécifiées dans la chaîne de caractère redirectLocation :
+
+**Création d'un nouveau frontend**
+
+<Api version="v1" section="/ipLoadbalancing" method="POST" route={"/ipLoadbalancing/\{serviceName\}/http/frontend"} />
+
+
+|Paramètre|Signification|
+|---|---|
+|serviceName|Identifiant de votre service Load Balancer|
+|port|Port(s) d'écoute du frontend|
+|zone|Zone de déploiement du frontend|
+|redirectLocation|URL de redirection HTTP|
+
+**Mise à jour d'un frontend existant**
+
+<Api version="v1" section="/ipLoadbalancing" method="PUT" route={"/ipLoadbalancing/\{serviceName\}/http/frontend/\{frontendId\}"} />
+
+
+|Paramètre|Signification|
+|---|---|
+|serviceName|Identifiant de votre service Load Balancer|
+|frontendId|Identifiant du frontend à mettre à jour|
+|redirectLocation|URL de redirection HTTP|
+
+**Appliquer les modifications**
+
+<Api version="v1" section="/ipLoadbalancing" method="POST" route={"/ipLoadbalancing/\{serviceName\}/refresh"} />
+
+
+|Paramètre|Signification|
+|---|---|
+|serviceName|Identifiant de votre service Load Balancer|
+|zone|Zone de déploiement du frontend|
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

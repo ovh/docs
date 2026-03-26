@@ -1,0 +1,163 @@
+---
+title: Hosting - sprawdzanie statystyk i logów strony www
+description: Dowiedz się, jak sprawdzić statystyki i logi Twojej strony WWW dzięki rozwiązaniu hostingowemu
+lastUpdated: 2025-10-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie 
+
+Dostęp do logów i statystyk Twojej strony WWW jest zawarty w wybranej przez Ciebie ofercie hostingu WWW, dostępnej w Panelu klienta.
+
+**Dowiedz się, jak sprawdzić statystyki i logi Twojej strony WWW dzięki rozwiązaniu hostingowemu.**
+
+## Wymagania początkowe
+
+- Posiadanie kompatybilnego [hostingu](https://www.ovhcloud.com/pl/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Wybierz hosting WWW
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## W praktyce
+
+Aby uzyskać dostęp do różnych danych statystycznych i logów Twojego hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting), następnie wybierz odpowiedni hosting.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Na stronie, która się wyświetli kliknij zakładkę <code className="action">Statystyki i logi</code>.
+    
+    <img className="thumbnail" alt="statistics-and-logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 3">
+    Ekran, który się wyświetla składa się z 4 sekcji:
+    
+    - [Statystyki odwiedzin na stronie](#website-stats): Przedstawia liczne statystyki dotyczące Twojego hostingu.
+    - [Logi strony WWW](#website-logs): Wyświetla logi hostingu WWW.
+    - [Statystyki dotyczące infrastruktury](#infra-stats): Przedstawia statystyki graficzne (zapytania HTTP i SQL, polecenia FTP, wykorzystanie CPU, połączenia wychodzące, itp.).
+    - [Zarządzanie użytkownikami](#admin-user): Wyświetla użytkowników z uprawnieniami dostępu do statystyk.
+    
+    <img className="thumbnail" alt="statistics and logs interface" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Statystyki odwiedzin na stronie <a name="website-stats"></a>
+
+Do lepszego monitorowania i zarządzania ruchem na Twoich stronach WWW służy **OVHcloud Web Statistics**, narzędzie do statystyki odwiedzin i pomiaru odwiedzin na stronach WWW zainstalowanych w ramach Twojego hostingu.
+
+<img className="thumbnail" alt="ows dashboard" src="/images/assets/screens/other/web-tools/logs/ows-presentation.gif" loading="lazy" />
+
+Dashboard'**OVHcloud Web Statistics** przedstawia 7 sekcji:
+
+- **Dashboard**: Wizualizacja ruchu na stronach WWW.
+- **Browsers**: Klasyfikacja najpopularniejszych przeglądarek internetowych służących do przeglądania Twoich stron WWW.
+- **Geolocalization** : odsetek odwiedzających w zależności od ich lokalizacji.
+- **Requests**: Klasyfikacja najczęściej odwiedzanych stron.
+- **Robots** : wyświetlanie botów odwiedzających Twoje strony.
+- **Status**: statystyki dotyczące nieudanych i udanych wejść na stronę na podstawie zwracanych kodów HTTP.
+- **FAQ** : sekcja dotycząca najczęściej zadawanych pytań. Wyjaśnia również terminy techniczne, które można spotkać w narzędziu.
+
+Pole `Period selection` w prawym górnym rogu umożliwia wybranie konkretnego okresu.
+
+### Logi strony WWW <a name="website-logs"></a>
+
+:::info
+Nie będziemy w stanie udzielić Ci wsparcia w interpretacji logów Twojego hostingu, ponieważ jest to wyłącznie kwestia rozwoju www, a nie hostingu.
+
+W przypadku trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+
+:::
+
+
+Możesz wyświetlać logi Twojej strony z około 5-minutowym opóźnieniem.
+
+<img className="thumbnail" alt="osl statistiques dashboard" src="/images/assets/screens/other/web-tools/logs/osl-statistics-board.png" loading="lazy" />
+
+Dostępne są różne rodzaje logów:
+
+- **Logi WWW** : zawierają logi różnych użytkowników odwiedzających Twoją stronę WWW, a także różne operacje wykonywane na Twojej stronie WWW. Dzięki temu możesz wykryć np. próby złośliwych działań.
+- **Logi FTP** : różne połączenia / polecenia FTP będą zachowywane w tych logach.
+- **Logi błąd** : znajdziesz tutaj błędy generowane przez Twoją stronę WWW.
+- **Logs CGI** : w tych logach są przechowywane wywołania skryptów cgi.bin, które zostały wykonane.
+- **Logs out** : zawierają historię różnych zapytań zewnętrznych (połączenia wychodzące TCP) zrealizowanych z poziomu hostingu www do infrastruktur zdalnych.
+- **Logs SSH** : te logi przedstawiają różne połączenia / polecenia zrealizowane za pomocą protokołu SSH.
+- **Logs CRON** : znajdziesz tutaj wyniki wykonywania zaplanowanych zadań [(CRON)](/guides/web-cloud/web-hosting/cron-tasks/) na Twoim hostingu.
+
+:::tip[Success]
+Aby wyświetlić statystyki i/lub logi usługi CDN, zapoznaj się z naszym przewodnikiem: „[Hosting WWW - Sprawdzanie statystyk i logów CDN](/guides/web-cloud/web-hosting/cdn-statistics-and-logs/)”.
+
+:::
+
+
+### Statystyki dotyczące infrastruktury <a name="infra-stats"></a>
+
+W tej sekcji dowiesz się, jak działa infrastruktura Twojego hostingu, aby sprawdzić zużycie udostępnionych Ci zasobów.
+
+<img className="thumbnail" alt="infrastructure statistics" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png" loading="lazy" />
+
+W lewym górnym rogu rozwijanego menu można wyświetlać różne typy wykresów:
+
+- **Polecenia FTP**: wskazuje główne polecenia (upload, download, login, delete) utworzone za pomocą protokołu FTP na Twoim hostingu.
+- **Zapytania HTTP**: wskazuje liczbę i kod zwrotny żądań HTTP wykonanych na Twoim hostingu. Rozróżnimy różne kody HTTP (2xx/3xx, 4xx i 5xx). W razie potrzeby możesz znaleźć listę kodów HTTP i ich znaczenie, wyszukując je bezpośrednio w wyszukiwarce (Google, Yahoo!, bing, itp.).
+- **Połączenia wychodzące**: zapytania ze strony www do zewnętrznej witryny sieci Web.
+- **Wykorzystanie zasobów procesora**: poziom zużycia procesora w instancji hostingu WWW.
+- **Przekroczenie zasobów** : wskazuje, kiedy Twój hosting przekroczy limit zasobów.
+- **Zapytania SQL**: liczba zapytań do baz danych Twojego hostingu.
+- **Czas odpowiedzi SQL**: czas odpowiedzi zapytań wysłanych do baz danych Twojego hostingu.
+
+### Zarządzanie użytkownikami <a name="admin-user"></a>
+
+Utworzenie użytkownika umożliwi komuś dostęp do statystyk Twojego hostingu, bez konieczności posiadania dostępu do Panelu klienta OVHcloud.
+
+W sekcji <code className="action">Zarządzanie użytkownikami</code> kliknij <code className="action">Utwórz nowego użytkownika</code>, następnie postępuj zgodnie z instrukcjami, aby dokończyć tworzenie nowego użytkownika.
+
+<img className="thumbnail" alt="create a new user" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png" loading="lazy" />
+
+Aby uzyskać dostęp do statystyk Twojej strony WWW dla użytkownika, którego utworzyłeś, wpisz następujący adres zastępując `000` numerem klastra Twojego hostingu, `domain.tld` nazwą domeny Twojej strony WWW (bez `www`):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/domain.tld/
+```
+
+Link dostępowy do statystyk / logów możesz również sprawdzić bezpośrednio w Panelu klienta:
+
+1. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+2. Kliknij zakładkę <code className="action">Web Cloud</code>.
+3. W lewej kolumnie kliknij menu <code className="action">Hosting</code>.
+4. Wybierz odpowiedni hosting.
+5. Na stronie, która się wyświetli kliknij zakładkę <code className="action">Statystyki i logi</code>.
+6. Przejdź do sekcji <code className="action">Statystyki odwiedzin na stronie</code>.
+7. Kliknij przycisk <code className="action">Wyświetl statystyki</code>.
+
+<img className="thumbnail" alt="website visit statistics" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png" loading="lazy" />
+
+Na stronie, która się otworzy, pobierz adres URL z paska adresu przeglądarki internetowej.
+
+:::warning
+Jeśli aktywowałeś oddzielne logi na [wpis MultiSite](/guides/web-cloud/web-hosting/multisites-configure-multisite/), utworzeni tutaj użytkownicy nie mają dostępu do statystyk dla tego wpisu MultiSite.
+
+:::
+
+
+## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

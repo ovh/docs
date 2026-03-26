@@ -1,0 +1,94 @@
+---
+title: Adding an IP block
+excerpt: Find out how to order an IP block for a Managed Bare Metal project
+updated: 2020-11-18
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+IP blocks can be used to make your services accessible online. 
+
+**This guide will explain how to order, add and migrate an IP block linked to your Managed Bare Metal.**
+
+## Requirements
+
+* access to the [OVHcloud Control Panel](/links/manager)
+* a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/) on your OVHcloud account
+
+## Instructions
+
+### Order an IP block.
+
+To order an IP block for your **Managed Bare Metal**, go to the OVHcloud Control Panel. In the `Bare Metal Cloud` section, click on the `IP` section in the left-hand column, then click `Order additional IP addresses`. Then select your **Managed Bare Metal** in the dropdown menu before moving on to the next step.
+
+You will need to fill in several fields in order to create your IP block.
+
+- Size of IP block (from /28 to /24)
+
+> [!info]
+>
+> As a reminder, here is a table listing the number of IPs present in a block, and the number of usable IPs.
+> 
+
+|Block size|IPs in the block|IPs usable with OVHcloud|
+|:---:|:---:|:---:|
+|28|16|11|
+|27|32|27|
+|26|64|59|
+|25|128|123|
+|24|256|251|
+
+> [!info]
+>
+> Please feel free to refer to our guide on the [OVHcloud Network plugin](/guides/bare-metal-cloud/managed-bare-metal/plugin-ovh-network) to find out which IPs are reserved for your block, as well as how they are used.
+>
+
+- The country an IP block is hosted in is important in some cases, for your services' SEO ranking (a website based in France will have a higher SEO ranking in France if the IP address is French, too).
+- Network name (information visible in the WHOIS profile for the IP block).
+- Estimated number of customers (how many end-users or customers will be hosted on these IPs).
+- Network description (information visible in the WHOIS profile for the IP block).
+- Usage (information on the usage (web, SSL, cloud, etc.)).
+
+Once you have confirmed the final step, you will receive the purchase order for your IP block. If everything looks correct in the purchase order, you will simply need to pay the total using one of the payment methods listed at the bottom of the page, and your order will then be delivered.
+
+### Migrate an IP block between two Managed Bare Metal solutions.
+
+To migrate an IP block, you will need to move the blocks manually via the OVHcloud APIv6.
+
+Use the following API call:
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\\{ip\\}/move"} />
+
+You will need to fill in the fields as follows:
+
+- ip: IP block with the /mask
+- nexthop "newPrimaryIp" (case-sensitive)
+- to: Target Managed Bare Metal in the following form: pcc-XXX-XXX-XXX-XXX
+
+![nexthop field](/images/guides/bare-metal-cloud/managed-bare-metal/ip-block-addition/images/move-api.png)
+
+The result should look like this:
+
+![nexthop field](/images/guides/bare-metal-cloud/managed-bare-metal/ip-block-addition/api-result.png)
+
+Next, use this API call to move the IP into the IP parking space:
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\\{ip\\}/park"} />
+
+> [!warning]
+>
+> This call cuts the network on the VMs that use the IPs concerned.
+>
+
+You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager) in the `Bare Metal Cloud` section, then `Managed Bare Metal`. Click on your Managed Bare Metal service, then on the `Operations` tab.
+
+The operation reference is "removeIpRipeBlock".
+
+![operations manager](/images/guides/bare-metal-cloud/managed-bare-metal/ip-block-addition/images/operations.png)
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,138 @@
+---
+title: How to add a DNS TXT record for a domain name
+description: Find out how to add a TXT record to an OVHcloud DNS zone for your domain name
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+Do you need to validate a verification or security process for your domain name (service association via a validation token, verification key, etc.) using your DNS zone? Want to add a custom text value to your domain name’s DNS zone?  
+To do this, you will need to create a TXT record in your domain name’s active DNS zone.
+
+**Find out how to add a DNS TXT record to an OVHcloud DNS zone for your domain name.**
+
+:::info
+To modify or delete a TXT record of an OVHcloud DNS zone, follow [this guide](/guides/web-cloud/domains/dns-zone-edit/).
+
+:::
+
+
+## Requirements
+
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/)
+- A DNS zone associated with this domain name at OVHcloud
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">DNS zones</code> > Select your domain name
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## Instructions
+
+:::warning
+Adding, modifying or deleting DNS records in an active DNS zone can cause service interruptions. If in doubt, contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/).
+
+:::
+
+
+### Add a DNS TXT record for a domain name
+
+Click on the tabs below to view each of the **5** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone) page, then choose the domain name concerned.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Click the <code className="action">Add an entry</code> button.
+  </Tab>
+  <Tab label="Step 3">
+    In the window that opens, select the <code className="action">TXT</code> extended record type.
+  </Tab>
+  <Tab label="Step 4">
+    Enter the TXT string you want to add in the `Value *` field (e.g.: `AbCdE-Value-of-TXT-fGhIjK`), then click <code className="action">Next</code>.
+  </Tab>
+  <Tab label="Step 5">
+    Check the summary, then click <code className="action">Confirm</code>. It takes up to **24** hours for the change to propagate fully over the DNS network.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Click here for more information.</summary>
+
+
+See our detailed guides:
+
+- [Everything you need to know about DNS zone](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Everything you need to know about DNS records](/guides/web-cloud/domains/dns-zone-records/)
+- [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)
+
+</details>
+
+
+### Add a DNS TXT record for a domain name subdomain
+
+Click on the tabs below to view each of the **5** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone) page, then choose the domain name concerned.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Click the <code className="action">Add an entry</code> button.
+  </Tab>
+  <Tab label="Step 3">
+    In the window that opens, select the <code className="action">TXT</code> extended record type.
+  </Tab>
+  <Tab label="Step 4">
+    Enter the subdomain in the `Sub-domain` field (e.g.: `www` for the subdomain `www.domain.tld`), and the TXT string you want to add in the `Value *` field (e.g.: `AbCdE-Value-of-TXT-fGhIjK`). Click <code className="action">Next</code>.
+  </Tab>
+  <Tab label="Step 5">
+    Check the summary, then click <code className="action">Confirm</code>. It takes up to **24** hours for the change to propagate fully over the DNS network.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Click here for more information.</summary>
+
+
+See our detailed guides:
+
+- [Everything you need to know about DNS zones](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Everything you need to know about DNS records](/guides/web-cloud/domains/dns-zone-records/)
+- [How to create a subdomain](/guides/web-cloud/domains/domain-create-subdomains/)
+- [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)
+
+</details>
+
+
+## Go further
+
+[Everything you need to know about DNS zones](/guides/web-cloud/domains/dns-zone-general-information/).
+
+[Everything you need to know about DNS records](/guides/web-cloud/domains/dns-zone-records/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+ 
+Join our [community of users](https://community.ovhcloud.com/community/en).

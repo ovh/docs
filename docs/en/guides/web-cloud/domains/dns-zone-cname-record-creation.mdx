@@ -1,0 +1,131 @@
+---
+title: How to add a CNAME record for a subdomain
+description: Find out how to add a CNAME DNS record to an OVHcloud DNS zone for a domain name subdomain
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+A CNAME record is used to associate a subdomain with a domain name or subdomain, without having to specify an IP address. This means that the subdomain will be redirected to the target domain name or subdomain’s IP address, without requiring any additional configuration.
+
+For example, if you create a CNAME record for *www.domain.tld* that points to *domain.tld*, then *www.domain.tld* will use the same IP address as *domain.tld*.
+
+CNAME records are useful for avoiding changing IP addresses for your subdomains. They can also be used to configure services such as email servers.
+
+**Find out how to add a CNAME record to your OVHcloud DNS zone.**
+
+> **Do you already have a CNAME record in your DNS zone?** Follow our guide on [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/).
+
+## Requirements
+
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/)
+- A DNS zone associated with this domain name at OVHcloud
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">DNS zones</code> > Select your domain name
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+
+:::warning
+**Adding, modifying or deleting DNS records in an active DNS zone is a tricky task.**
+If in doubt, contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/).
+
+:::
+
+
+## Instructions
+
+### Add a DNS record of type CNAME for a domain name subdomain
+
+Click on the tabs below to view each of the **5** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone) page, then choose the domain name concerned.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Click the <code className="action">Add an entry</code> button.
+  </Tab>
+  <Tab label="Step 3">
+    In the window that opens, select the <code className="action">CNAME</code> record type.
+  </Tab>
+  <Tab label="Step 4">
+    Enter the subdomain in the `Sub-domain` field (e.g.: `www` for the subdomain `www.domain.tld`), and the domain name or subdomain (e.g.: `domain.tld`) you want to target in the `Target *` field. Click <code className="action">Next</code>.
+  </Tab>
+  <Tab label="Step 5">
+    Check the summary, then click <code className="action">Confirm</code>. It takes up to **24** hours for the change to propagate fully over the DNS network.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>See our detailed guides:</summary>
+
+
+- [Everything you need to know about DNS zones](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Everything you need to know about DNS records](/guides/web-cloud/domains/dns-zone-records/)
+- [How to create a subdomain](/guides/web-cloud/domains/domain-create-subdomains/)
+- [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)
+- [Hosting multiple websites on your web hosting plan](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+- [Web Hosting - How to modify a domain name already associated to a web hosting plan](/guides/web-cloud/web-hosting/multisites-modify-domain/)
+
+</details>
+
+
+
+### Special cases
+
+Click on the links below for more information:
+
+<details>
+
+<summary>CNAME and TXT records for the same subdomain</summary>
+
+
+Do not configure both a CNAME record and a TXT record for the same subdomain. This can cause random results during DNS resolution, as only one response can be returned per DNS query.
+
+For example, if you have the following records for *www.domain.tld*:
+
+- A CNAME record pointing to *domain.tld*
+- A TXT record with a specific value
+
+A DNS query for *www.domain.tld* will return either the target of the CNAME record or the value of the TXT record, at random.
+
+</details>
+
+
+<details>
+
+<summary>CNAME on a domain name in its own DNS zone</summary>
+
+
+By convention, **CNAME records cannot be used on a domain name in its own DNS zone**. The domain name must point directly to an IP address with a record of type [A](/guides/web-cloud/domains/dns-zone-a-record-creation/) for an IPv4, or [AAAA](/guides/web-cloud/domains/dns-zone-aaaa-record-creation/) for an IPv6.
+
+As an example, you will not be able to create a CNAME record for the domain name *domain.tld* in the DNS zone you have created for it.  
+However, you can create CNAME records for all subdomains (e.g. *subdomain.domain.tld* or *www.domain.tld*) of the *domain.tld* domain name in the DNS zone created for *domain.tld*.
+
+</details>
+
+
+## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+ 
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,133 @@
+---
+title: Korzystanie z kont zasobów
+description: Przewodnik opisuje, w jaki sposób korzystać z kont zasobów.
+lastUpdated: 2025-04-28
+---
+ 
+## Wprowadzenie
+
+Funkcja Exchange pozwala na tworzenie kont e-mail dedykowanych do zasobów Twojej firmy, takich jak sale konferencyjne i wspólne urządzenia. Korzystanie z tych kont zasobów pozwala na zoptymalizowanie organizacji wydarzeń w środowisku pracy zespołowej, poprzez dostarczanie kontroli dostępności i przejrzyste integrowanie zasobów z kalendarzami Exchange.
+
+**Niniejszy przewodnik wyjaśnia, jak zarządzać zasobami przy użyciu Panelu klienta OVHcloud oraz aplikacji Outlook Web App (OWA).**
+
+## Wymagania początkowe
+
+- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
+- Posiadanie danych do logowania dla konta lub kont poczty elektronicznej mających dostęp do zasobu
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## W praktyce
+
+Kliknij kartę <code className="action">Więcej +</code>, a następnie <code className="action">Zasoby</code>.
+
+### Etap 1: tworzenie zasobów
+
+<img className="thumbnail" alt="zasoby" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-resources-step1.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">Dodaj konto zasobów</code>, aby utworzyć pierwszy zasób. W nowym oknie wprowadź następujące pola:
+
+<img className="thumbnail" alt="zasoby" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-resources-step2.png" loading="lazy" />
+
+|Nazwa|Opis|
+|---|---|
+|E-mail dotyczący zasobu|Wprowadź adres zasobu. Pamiętaj, że nie możesz wybrać istniejącego konta e-mail.|
+|Nazwa zasobu|Pełna nazwa wyświetlana jest w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) i [w interfejsie Webmail OVHcloud](https://www.ovhcloud.com/pl/mail/) (OWA).|
+|Rozmiar|Można określić maksymalny rozmiar zasobu (np. liczba miejsc siedzących w pomieszczeniu lub siedzeń wspólnego pojazdu).|
+|Pozwól na konflikty|Jeśli to pole jest zaznaczone, możesz utworzyć zdarzenia kalendarza pokrywające się i obejmujące ten sam zasób.|
+|Rodzaj zasobów|Wybierz rodzaj zasobów: "Sprzęt" lub "Sala".|
+
+Kliknij <code className="action">Dalej</code>, aby przejść do podsumowania, a następnie zatwierdź zadanie, klikając <code className="action">Utwórz</code>.
+
+### Etap 2: korzystanie z zasobów
+
+Możesz zarządzać zasobami, korzystając z tabeli w zakładce "Zasoby". Kliknij <code className="action">...</code>, aby zmienić lub usunąć zasób. Pojawi się również opcja <code className="action">Konfiguracja uprawnień</code>. Dzięki tej opcji będziesz mógł delegować dostęp w taki sam sposób, jak w przypadku konta Exchange. Szczegóły znajdziesz w [tym przewodniku](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/).
+
+<img className="thumbnail" alt="zasoby" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-resources-step3.png" loading="lazy" />
+
+### Dodaj kalendarz zasobów w OWA
+
+:::info
+:::
+
+Zapoznaj się również z naszym przewodnikiem dotyczącym [Współdzielenia kalendarzy w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/).
+>
+
+Zaloguj się do konta Exchange przez [webmail OVHcloud](https://www.ovhcloud.com/pl/mail/). Przejdź do interfejsu "Harmonogram", klikając "przycisk aplikacji" w lewym górnym rogu, a następnie wybierając ikonę <code className="action">Kalendarz</code>.
+
+<img className="thumbnail" alt="dodaj" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-calendars-step1.png" loading="lazy" />
+
+Na górnym pasku nawigacji kliknij <code className="action">Dodaj kalendarz</code>, a następnie <code className="action">Od książki adresowej</code>.
+
+<img className="thumbnail" alt="wybrać" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-resources-step4.png" loading="lazy" />
+
+Wpisz tekst, aby wyświetlić sugestie swoich kontaktów, wpisz pełny adres e-mail lub skorzystaj z opcji wyszukiwania <code className="action">Od książki adresowej</code>. Na tym etapie należy jednak zaproponować adres e-mail zasobu, ponieważ został on automatycznie dodany do ogólnej listy adresów (LGD) podczas jego tworzenia. Kliknij <code className="action">Otwórz</code>, aby dodać kalendarz tego zasobu do ogólnego widoku kalendarza.
+
+### Utwórz wydarzenie w OWA
+
+Aby zaplanować wydarzenie, kliknij najpierw <code className="action">Nowy</code> na górnym pasku menu i wybierz <code className="action">Wydarzenie kalendarza</code>. W nowym oknie możesz określić szczegóły zdarzenia i dodać wymagane wyposażenie i lokalizację dodając odpowiednie zasoby.
+
+<img className="thumbnail" alt="planowanie" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-resources-step5_1.png" loading="lazy" />
+
+Zarządca zdarzeń składa się z trzech części:
+
+#### Szczegóły
+
+- (1) Dodanie tytułu dla wydarzenia: zostanie to wyświetlone w kalendarzach.
+- (2) Dodaj lokalizację lub pokój: możesz wybrać spośród swoich kont zasobów.
+- (3) Początek/Zakończenie: zdefiniuj czas trwania wydarzenia.
+- (4) Powtarzać: w razie potrzeby wybierz cykl powtarzania (codziennie, w tym samym dniu każdego miesiąca itp.).
+- (5) Przypomnienie: OWA wyświetla okno przypomnienia o określonej godzinie.
+- (6) Wyświetl jako: wybierz stan Twojego kalendarza.
+- (7) Dodaj przypomnienie pocztą: opcja umożliwiająca wysyłanie przypomnień e-mailem do siebie lub wszystkich uczestników.
+
+Wpisz swój komunikat zaproszenia w edytorze (8) i nadal dodawaj uczestników do swojego wydarzenia.
+
+Jeśli chcesz dodać zasób już zarezerwowany ("zajęty"), wyświetli się komunikat i sugeruje użycie [Kreatora Planowania](#planowanie) (9), który przedstawia szerszy przegląd harmonogramu wybranego okresu.
+
+#### Kontakt
+
+Ponieważ konto zasobów jest również kontaktem, można dodać sale i sprzęt w tej części, tak jak w przypadku innych uczestników (10). Zacznij pisać, aby wyświetlić sugestie swoich kontaktów, wpisać kompletny e-mail lub skorzystać z opcji wyszukiwania (kliknij <code className="action">+</code> otworzy kontakty).
+
+Po zakończeniu planowania klikając na <code className="action">Wyślij</code> na górnym pasku menu, konto zasobów wysyła komunikat, w którym potwierdzisz, że jest zarezerwowane dla wydarzenia. Zaznacz kratkę "Prosimy o odpowiedzi", jeśli potrzebujesz aktywnego potwierdzenia ze strony gości, aby automatycznie zaktualizować kalendarz.
+
+#### Planowanie
+
+Fragment kalendarza swoich własnych wydarzeń, zatytułowany **Planowanie**, pojawia się po prawej stronie, gdy dodajesz zasób lub osobę do wydarzenia. Zapewnia graficzny przegląd dostępności zasobów w wybranym dniu; można określić godzinę i czas trwania zdarzenia bezpośrednio klikając myszką i wybierając menu w prawym górnym rogu.
+
+W razie potrzeby kliknij <code className="action">Kreator Planowania</code> w sekcji **Kontakty**, aby otworzyć jeszcze bardziej szczegółowy przegląd. Ten asystent jest przydatny w najważniejszych wydarzeń lub jeśli musisz zarządzać konfliktami, ponieważ wizualizuje cały proces planowania. Możesz sprawdzić dostępność i zmienić planowanie wybierając lokalizacje i kontakty bez wychodzenia z tego interfejsu.
+
+<img className="thumbnail" alt="assistant" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-resources-step6.png" loading="lazy" />
+
+### Wiadomości odpowiedzi zasobów
+
+Po utworzeniu wydarzenia (kliknij <code className="action">Wyślij</code> na górnym pasku menu), Exchange automatycznie wyśle wiadomości:
+
+- Uczestnicy otrzymają zaproszenia (w celu aktualizacji kalendarzy lub tylko ich kalendarzy, w zależności od wyboru "Prośba o odpowiedzi" wcześniej).
+
+- Otrzymasz e-mail z potwierdzeniem wysłany z każdego wybranego konta zasobów (jeśli zasób jest dostępny lub jest zarezerwowany, ale **zaznaczyłeś** "Zezwalaj na konflikty" podczas tworzenia).
+
+<img className="thumbnail" alt="komunikat akceptujący" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-resources-step7.png" loading="lazy" />
+
+- Otrzymasz e-mail z odmową wychodzącą z każdego wybranego konta zasobów (jeśli zasób nie jest dostępny i **nie zaznaczyłeś** "Pozwalaj na konflikty" podczas tworzenia).
+
+<img className="thumbnail" alt="komunikat odmowny" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-resources/exchange-resources-step8.png" loading="lazy" />
+
+## Sprawdź również <a name="go-further"></a>
+
+[Sprawdź konto Exchange w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Współdzielenie kalendarza w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+[Współdzielenie katalogu w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-directory-sharing/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

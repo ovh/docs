@@ -1,0 +1,60 @@
+---
+title: Parametri di accesso e sicurezza in Horizon
+description: "Come gestire e rendere sicuro l'accesso alle tue istanze"
+lastUpdated: 2021-05-26
+---
+
+:::info
+Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+
+:::
+
+
+## Obiettivo
+
+OpenStack Horizon offre opzioni per configurare l'accesso alle tue istanze e ad altri servizi.<br/>
+Ad esempio, è possibile configurare gruppi di sicurezza per filtrare le connessioni in entrata e in uscita o scaricare il file OpenRC contenente le credenziali per utilizzare le API OpenStack.
+
+**Come gestire e rendere sicuro l'accesso alle tue istanze**
+
+## Prerequisiti
+
+- [Accedere all’interfaccia Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+## Procedura
+
+Accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
+
+I parametri di accesso e di sicurezza sono composti dalle sezioni seguenti, accessibili tramite il menu di sinistra:
+
+- **API Access** (sotto <code className="action">Project</code>)
+
+La tabella di accesso all'API contiene gli endpoint delle API OpenStack.
+
+<img className="thumbnail" alt="orizzonte - accesso API" src="/images/public-cloud/public-cloud-cross-functional/access-and-security-in-horizon/api_access.png" loading="lazy" />
+
+Per verificare i valori di accesso da utilizzare con le API, clicca su <code className="action">View Credentials</code>.
+
+Clicca sul pulsante <code className="action">Download OpenStack RC File</code> per aprire un menu a tendina in cui puoi scegliere il file RC appropriato da scaricare.
+
+- **Key Pairs** (sotto <code className="action">Project</code> e poi <code className="action">Compute</code>)
+
+Questa sezione ti permette di archiviare e gestire le coppie di chiavi SSH. Per creare e aggiungere una chiave pubblica e una chiave privata, clicca sul pulsante <code className="action">Create Key Pair</code>.
+
+<img className="thumbnail" alt="orizzonte - chiavi SSH" src="/images/public-cloud/public-cloud-cross-functional/access-and-security-in-horizon/key_pairs.png" loading="lazy" />
+
+Per aggiungere una chiave preesistente, clicca su <code className="action">Import Public Key</code>. Nella nuova finestra, inserisci una chiave o seleziona un file di chiave.
+
+Questa sezione di interfaccia contiene le istruzioni di base. Per maggiori informazioni sulle chiavi SSH, consulta [questa guida](/guides/public-cloud/compute/compute-creating-ssh-keys/).
+
+- **Security Groups** (sotto <code className="action">Project</code> e poi <code className="action">Network</code>)
+
+I gruppi di sicurezza sono insiemi di regole di filtraggio applicati alle interfacce di rete. Puoi utilizzarli per limitare l'accesso alle istanze ad indirizzi IP e porte.
+
+<img className="thumbnail" alt="orizzonte - gruppi di sicurezza" src="/images/public-cloud/public-cloud-cross-functional/access-and-security-in-horizon/security_groups.png" loading="lazy" />
+
+Per aggiungere un gruppo di sicurezza, clicca su <code className="action">Create Security Group</code> e poi applicagli regole personalizzate o predefinite tramite il pulsante <code className="action">Manage Rules</code> nella tabella.
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

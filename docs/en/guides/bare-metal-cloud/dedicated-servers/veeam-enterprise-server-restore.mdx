@@ -1,0 +1,72 @@
+---
+title: Restoring a Bare Metal Server with Veeam Enterprise
+description: Learn how to restore a Bare Metal Server using the Veeam Backup & Replication application
+lastUpdated: 2024-04-05
+---
+
+## Objective
+
+If you are unable to restore data from a backup, it serves no purpose. After reading this article, you should have a clear process for restoring a Bare Metal Server or an individual file using Veeam Backup & Replication.
+
+**Learn how to restore a Bare Metal Server using the Veeam Backup & Replication application.**
+
+## Requirements
+
+- An [OVHcloud Bare Metal server](https://www.ovhcloud.com/en-gb/bare-metal/)
+- [Veeam Backup & Replication installed and registered](/guides/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/)
+
+:::info
+This guide presupposes that you have followed the steps detailed in our [Backing up a Bare Metal Server guides](/guides/bare-metal-cloud/dedicated-servers/overview/).
+
+:::
+
+
+## Instructions
+
+There are several options for restoring data on a server. In this guide, we will be showing you the "Guest files restore" option.
+
+In the Veeam Backup & Replication application, from the <code className="action">Home</code> tab, click <code className="action">Restore</code> and select the <code className="action">Agent...</code> option.
+
+<img className="thumbnail" alt="Home - restore job" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam01.png" loading="lazy" />
+
+In the pop-up window, select <code className="action">Guest files restore</code>.
+
+<img className="thumbnail" alt="Guest files restore" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam02.png" loading="lazy" />
+
+Choose the operating system of the machine from which you are restoring.
+
+<img className="thumbnail" alt="OS choice" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam03.png" loading="lazy" />
+
+Select the **Machine** that has the files you wish to restore.
+
+Click the <code className="action">Next</code> button.
+
+<img className="thumbnail" alt="machine choice" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam04.png" loading="lazy" />
+
+Choose the **Restore Point** from which to restore the files.
+
+Click the <code className="action">Next</code> button.
+
+<img className="thumbnail" alt="restore point choice" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam05.png" loading="lazy" />
+
+Enter the **Restore reason**.
+
+Click the <code className="action">Next</code> button.
+
+<img className="thumbnail" alt="restore reason" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam06.png" loading="lazy" />
+
+At the Summary section, click the <code className="action">Browse</code> button.
+
+<img className="thumbnail" alt="summary" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam07.png" loading="lazy" />
+
+Navigate through the browser and choose the file or files that you wish to restore. Once you have selected the file(s), right-click on one of them, hover your mouse over `Restore`.action&#125;, and select `Keep`.action&#125;.
+
+<img className="thumbnail" alt="select files" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam08.png" loading="lazy" />
+
+A pop-up window will appear that displays the progress of the restore. Once the progress is complete, the file has been restored and you can close the "Backup Browser" window.
+
+<img className="thumbnail" alt="restore progress" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/DS_restore_Veeam09.png" loading="lazy" />
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

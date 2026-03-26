@@ -1,0 +1,239 @@
+---
+title: VMware on OVHcloud - Les opérations de maintenance
+description: Apprenez-en plus sur les opérations effectuées pour assurer la fiabilité et la performance de vos équipements Hosted Private Cloud VMware on OVHcloud
+lastUpdated: 2025-06-02
+---
+
+import Api from '@components/Api';
+
+
+:::tip[Success]
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+:::
+
+
+## Objectif
+
+**Ce guide vous offre des éclaircissements sur les opérations de maintenance effectuées par les équipes de OVHcloud.**
+
+## Prérequis
+
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à la [console API console pour vos services](https://eu.api.ovh.com/).
+- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/).
+
+## En pratique
+
+Les opérations de maintenance au sein de OVHcloud témoignent d'un savoir-faire de la part des équipes internes. Celui-ci a été perfectionné au fil des années afin de garantir la fiabilité et la performance des équipements.
+
+### Accéder aux opérations Hosted Private Cloud
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) avec un compte administrateur et cliquez sur l'onglet <code className="action">Hosted Private Cloud</code>.
+
+Sélectionnez votre infrastructure sous <code className="action">VMware</code> puis cliquez sur l'onglet <code className="action">Operations</code>. 
+
+<img className="thumbnail" alt="Maintenance Operation" src="/images/assets/screens/control-panel/product-selection/hosted-private-cloud/vmware/operations/maintenance.png" loading="lazy" />
+
+Pour connaitre les opérations en cours ou rafraichir les anciennes opérations, utilisez le bouton <code className="action">Rafraîchir</code> situé en haut à droite du tableau des opérations.
+
+Vous pouvez modifier la date de traitement d'une opération en cours en cliquant sur le bouton <code className="action">...</code> à droite d'une opération, puis sur <code className="action">Modifier la date de traitement</code>.
+
+Pour plus d'informations sur la replanification d'une opération de maintenance, consultez le guide « [Comment replanifier une opération d'une maintenance sur votre Hosted Private Cloud](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/maintenance-rescheduling/) ».
+
+Vous pouvez aussi filtrer les opérations par statut via le menu déroulant situé à gauche au dessus du tableau.
+
+<img className="thumbnail" alt="Maintenance Operation Filtre" src="/images/assets/screens/control-panel/product-selection/hosted-private-cloud/vmware/operations/maintenance-filter.png" loading="lazy" />
+
+### Accéder aux details des opérations de maintenance
+
+#### Depuis l'espace client OVHcloud
+
+Voici un exemple d'une opération visible dans la section <code className="action">Operations</code> de l'espace client OVHcloud :
+
+| Référence | Nom | Type | Progression | Commentaire | Services affectés | Créé de | Créé par | Traitement | Fin | Mis à jour |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 44XXXXXX  | provisionVcsaSolo | Générique | Terminé | Provisions infrastructure management for customer | Tâche : 44XXXXXX | Information indisponible  | Information indisponible | XX mai 2023 18:37:51 | XX mai 2023 18:37:XX | XX mai 2023 18:37:58 |
+
+
+Un ID de référencement d'opération est toujours ajouté sur chaque opération, ainsi qu'un nom, un type, une progression, un commentaire, un service affectés, et des dates de traitement.
+
+Ces noms et références sont bien évidemment différents pour chaque service OVHcloud (Bare Metal Cloud, Public Cloud, etc..) 
+
+#### Depuis l'API OVHcloud
+
+:::tip[Success]
+Consultez le guide [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+
+:::
+
+
+Exécutez l'appel API suivant pour obtenir la liste des opérations :
+
+<Api version="v1" section="/dedicatedCloud" method="GET" route={"/dedicatedCloud/\{serviceName\}/robot"} />
+
+
+> **Paramètres:**
+>
+> - `serviceName` : La référence de votre PCC sous la forme `pcc-XXX-XXX-XXX-XXX`.
+>
+
+Exemple de retour (le schéma de retour peut varier et être assez long en fonction de la taille de votre infrastructure) :
+
+```shell
+...
+  "updateUser",
+  maintenanceLinkAlreadyOrderedCertsToObjects,
+  maintenanceFixTransportMode,
+  maintenanceUpdateAntivirusConfiguration,
+...
+```
+
+Pour avoir le détail de chaque robot, exécutez l'appel API suivant :
+
+<Api version="v1" section="/dedicatedCloud" method="GET" route={"/dedicatedCloud/\{serviceName\}/robot/\{name\}"} />
+
+
+> **Paramètres:**
+>
+> - `serviceName` : La référence de votre PCC sous la forme `pcc-XXX-XXX-XXX-XXX`.
+> - `name` : Le nom du robot, par exemple `maintenanceUpdateAntivirusConfiguration`.
+>
+
+**Retour :**
+
+```shell
+{
+  "type": "task",
+  "enabled": true,
+  "name": "maintenanceUpdateAntivirusConfiguration",
+  "criticity": "normal",
+  "description": ""
+}
+```
+
+### Détails des opérations de maintenance Hosted Private Cloud
+
+:::info
+Toutes les opérations de maintenance listées ci-dessous peuvent être reprogrammées.
+
+:::
+
+
+#### **windowsUpdateOnPcc**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à jour (update) Windows sur les machines virtuelles du control plane gérées par OVHcloud | Mise à jour de sécurité | Aucune | - Maintenance effectuée seulement si Veeam et/ou les options Zerto sont souscrites. <br/> - Control Plane indisponible<sup>1</sup> durant la fenêtre de maintenance. | 00h30 pour Veeam<br/> 00h30 pour Zerto | Mensuelle |
+
+#### **upgradeSwitch**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à niveau logicielle (upgrade) des switchs à la dernière version validée par le département réseau OVHcloud | - Cycle de vie OVHcloud Arista<br/><br/> - Patchs de sécurité | Vérification du host en double attachement (dual-attached) | Basculement de ToR (on Top of Rack) A (switch A) vers ToR (on Top of Rack) B (switch B) | 01h30 | Basée sur le cycle de vie de l'éditeur |
+
+#### **maintenanceGenericUpgradePackages**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à niveau (upgrade) du système d'exploitation sur les machines virtuelles du control plane gérées par OVHcloud | - Cycle de vie OVHcloud<br/><br/> - Patchs de sécurité | Aucune | Control plane indisponible (management) durant la fenêtre de maintenance | 02H00 | Mensuelle (standard) |
+
+#### **maintenanceRenewAndDeploySslCertificate**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Vérification, commande et renouvellement des certificats SSL sur les machines virtuelles du control plane gérées par OVHcloud | Renouvellement des certificats SSL avant la date d'expiration | Aucune | Control plane indisponible<sup>1</sup> (management) durant la fenêtre de maintenance | 01h00  | Trimestriellement (standard) |
+
+#### **redeployVmToLatestVersion**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à niveau majeure du système d’exploitation sur les machines virtuelles du control plane gérées par OVHcloud | Cycle de vie des correctifs de sécurité OVHcloud | Aucune | Control plane indisponible<sup>1</sup> (management) durant la fenêtre de maintenance | 02h00 | Basée sur le cycle de vie de l’éditeur |
+
+:::info
+L’estimation de durée concerne la majorité des clients. Pour les grandes infrastructures, la durée peut être significativement plus longue. Cela dépend des cas et doit être évalué individuellement.
+
+:::
+
+
+#### **redeployPrivateGw**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|-------|----------------------------|--------|----------------|-----------|
+| Redéploiement de la passerelle privée (Private Gateway) sur les machines virtuelles du plan de contrôle gérées par OVHcloud. | - Tâche liée à une mise à jour du système d'exploitation.<br/><br/>- Redéploiement nécessaire dans le cadre d'une gestion d'incident. | Aucune | Plan de contrôle indisponible<sup>1</sup> (management) pendant la fenêtre de maintenance. | 02H00 | Selon le cycle de vie de l’éditeur ou en fonction du contexte d’incident |
+
+#### **maintenanceUpgradeHosts**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à niveau logicielle (upgrade) d'ESXi à la dernière version proposée par OVHcloud. Cette maintenance peut installer des versions mineures ou majeures | - Cycle de vie OVHcloud<br/><br/> - Patchs de sécurité | Pendant cette maintenance, tous les hosts peuvent être mis en mode maintenance et toutes les machines virtuelles peuvent être évacuées automatiquement.<br/> Le client doit s'assurer qu'aucune des configurations suivantes n'empêche cette action :<br/><br/> - Aucun media ISO ou périphérique monté.<br/> - Règles d'anti-affinité.<br/> - Tout autre élément susceptible d’empêcher le déplacement d’une machine virtuelle.<br/> - Les produits tiers sont conformes et compatibles avec la nouvelle version ESXi. | - Une fois que les hosts sont en mode maintenance : toutes les machines virtuelles sont automatiquement évacuées avec vMotion.<br/><br/> - Les hosts sont redémarrés.<br/><br/>- Avant de passer en mode maintenance et de redémarrer chaque host, le Control Plane n'est pas disponible<sup>1</sup>. Il devient disponible après le redémarrage du host.| 00H45 par host | Basée sur le cycle de vie de l'éditeur |
+
+#### **maintenanceUpgradeVcenter**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à niveau (upgrade) logicielle de vCenter Server Appliance à la dernière version proposée par OVHcloud.<br/><br/> Cette maintenance peut installer des versions mineures ou majeures.<br/><br/> Les mises à niveau (upgrade) des options peuvent également être déclenchées (Veeam Managed, Zerto) pour s'assurer que la matrice de compatibilité est cohérente. | - Cycle de vie OVHcloud<br/><br/> - Patchs de sécurité | Les logiciels tiers sont conformes à la nouvelle version de VCSA | - Control Plane indisponible<sup>1</sup> (management) durant la fenêtre de maintenance | 02h00 (peut varier en fonction du nombre d'utilisateurs et du temps nécessaire à appliquer les autorisations) | Basée sur le cycle de vie de l'éditeur |
+
+#### **maintenanceUpgradeVrops**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à niveau (upgrade) des machines virtuelles Aria Operations (appelée vROps auparavant) vers la dernière version proposée par OVHcloud | - Cycle de vie OVHcloud Arista<br/><br/> - Patchs de sécurité | Aucune | vROps est indisponible pendant la fenêtre de maintenance | 01h30 | Basée sur le cycle de vie de l'éditeur |
+
+#### **maintenanceUpgradeNsxt**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à niveau (upgrade) de la version de NSX-T vers la dernière version proposée par OVHcloud | - Cycle de vie OVHcloud de VMware<br/><br/> - Mise à niveau de sécurité | Ressources suffisantes (calcul et stockage) disponibles sur l'infrastructure du client pour héberger un Edge NSX<br/> (voir prérequis : [documentation officielle VMware NSX](https://docs.vmware.com/en/VMware-NSX/4.1/installation/GUID-22F87CA8-01A9-4F2E-B7DB-9350CA60EA4E.html))<br/><br/> La résilience est assurée sur l'infrastructure du client pour héberger les passerelles Edges NSX-T. |  Le control plane NSX-T n'est pas disponible pendant l'opération de mise à niveau.<br/><br/>Le vMotion des Edges peut subir une légère perturbation des flux (reconnexion nécessaire pour les applications "statefull") | 02h30 | Basée sur le cycle de vie de l'éditeur |
+
+#### **maintenanceUpgradeVeeamManaged**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------------|-----------|
+| Mise à niveau (upgrade) des machines virtuelles du control plane Veeam gérées par OVHcloud (serveurs virtuels de sauvegarde et de réplication, backup proxy) vers la dernière version proposée par OVHcloud | Cycle de vie OVHcloud de Veeam | Aucune | Les opérations de restauration et de sauvegarde ne peuvent pas être effectuées pendant la maintenance | 01h00 | Basée sur le cycle de vie de l'éditeur |
+
+#### **maintenanceUpgradeZvm**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|--------|--------------------------|--------|---------------|-----------|
+| Mettre à jour ou migrer les machines virtuelles Zerto (Zerto Virtual Manager, VRA) vers la dernière version proposée par OVHcloud. | Gestion du cycle de vie de Zerto par OVHcloud. | Un **rapport de contrôle d’intégrité** peut être envoyé si des problèmes sont détectés avant la maintenance. Ces problèmes devront être résolus avant de procéder. | - **Mises à jour (Upgrades)** : Impact minimal, indisponibilité temporaire de la réplication et du failover.<br/>- **Migrations** : Arrêt complet du service, nécessitant une réinstallation sur une nouvelle plateforme. | **Upgrades** : ~1h par instance.<br/>**Migrations** : Jusqu’à 12h par instance. | Basé sur le cycle de vie de l’éditeur |
+
+:::info
+**Différence entre les mises à jour et les migrations :**
+
+- Les **mises à jour (Upgrades)** consistent à mettre à jour les composants existants de Zerto (par exemple, de Zerto 9.5 à 9.7) avec une interruption minimale du service (~1 heure).  
+- Les **migrations** impliquent une transition vers une nouvelle plateforme (par exemple, de Zerto basé sur Windows à Zerto appliance en version 10u6), entraînant jusqu’à 12 heures d’arrêt complet.
+
+:::
+
+
+### Glossaire
+
+<sup>1</sup>**Control Plane indisponible** : signifie que le VCSA (vCenter Server Appliance) ne peut pas être contacté. Par conséquent, tous les produits qui doivent atteindre VCSA ne fonctionneront pas.
+
+Cela représente les produits/options suivants dans Hosted Private Cloud VMware on OVHcloud :
+
+- **NSX-T** interface.
+- **vROps** interface.
+- **Veeam** Managé (pas d'opération de sauvegarde/restauration).
+- **Zerto** interface (replication en continu).
+- **Tanzu** Kubernetes Grid.
+
+Tout autre produit de niveau que vous pouvez utiliser et qui nécessite **VCSA** sera également affecté.
+
+### Explications sur le control plane
+
+Le control plane (plan de contrôle) désigne la partie du système responsable de la gestion et du contrôle des ressources dans un environnement virtualisé. Plus précisément, le plan de contrôle est la couche logicielle qui gère les opérations et les décisions liées à la configuration, à la gestion des ressources, au suivi et à l'orchestration des machines virtuelles et de l'infrastructure associée.
+
+- **Gestion des ressources** : il prend en charge la configuration et la gestion des ressources physiques (serveurs, stockage, mise en réseau) et virtuelles (machines virtuelles).
+- **Orchestration** : il coordonne les opérations entre les différents composants de l'infrastructure, facilitant le déploiement, la migration et la gestion des machines virtuelles.
+- **Monitoring** : il collecte des données sur les performances, l’état de santé et l’utilisation des ressources à des fins de monitoring et de reporting en temps réel.
+- **Sécurité** : il gère les politiques de sécurité, y compris l'authentification, l'autorisation et le contrôle d'accès, assurant ainsi la sécurité des ressources virtualisées.
+- **Automatisation** : il prend en charge l'automatisation des tâches répétitives, permettant aux administrateurs de définir des workflows et des stratégies automatisées.
+
+En résumé, le plan de contrôle est la couche logicielle qui assure la gestion, la coordination et le contrôle centralisés.
+
+## Aller plus loin
+
+Pour plus d'informations sur la replanification d'une opération de maintenance, consultez le guide « [Replanification d'une opération de maintenance sur votre Hosted Private Cloud VMware on OVHcloud](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/maintenance-rescheduling/) ».
+
+Échangez sur le channel dédié Discord : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) ou rejoignez notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

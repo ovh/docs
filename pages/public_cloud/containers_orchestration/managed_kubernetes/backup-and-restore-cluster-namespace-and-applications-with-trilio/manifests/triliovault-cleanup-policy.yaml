@@ -1,9 +1,0 @@
-apiVersion: triliovault.trilio.io/v1
-kind: Policy
-metadata:
-  name: garbage-collect-policy
-  namespace: tvk
-spec:
-  type: Cleanup
-  cleanupConfig:
-    backupDays: 5

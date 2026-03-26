@@ -1,0 +1,254 @@
+---
+title: Object Storage - Premiers pas avec la gestion de versions
+description: "Découvrez comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API"
+lastUpdated: 2026-03-06
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+**Ce guide explique comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API.**
+
+## Prérequis
+
+- [Un projet Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) dans votre compte OVHcloud
+- [Un utilisateur Object Storage](/guides/storage-and-backup/object-storage/s3-identity-and-access-management/) déjà créé
+- [AWS CLI installé et configuré](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Pour accéder à vos services :** <code className="action">Public Cloud</code> > Sélectionnez votre projet
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## En pratique
+
+### Concept
+
+La gestion de versions vous permet de conserver plusieurs variantes d'un objet dans le même bucket. Cette fonctionnalité aide à préserver, récupérer et restaurer chaque version de chaque objet stocké dans vos buckets, facilitant ainsi la récupération en cas d'actions involontaires des utilisateurs ou de défaillances des applications. Par défaut, la gestion de versions est désactivée sur les buckets, et vous devez l'activer explicitement.
+
+### Informations générales
+
+Un bucket de stockage d'objets peut être dans l'un des trois états suivants :
+
+1. **Non versionné** (état par défaut) : aucune version n'est conservée pour les objets.
+2. **Versioning activé** : plusieurs versions de chaque objet sont conservées.
+3. **Versioning suspendu** : les versions ne sont pas créées pour les nouveaux objets, mais les versions existantes sont conservées.
+
+:::warning
+Une fois que le versioning est activé, il ne peut plus être désactivé ; il peut seulement être suspendu.
+
+:::
+
+
+<img className="thumbnail" alt="Archive" src="/images/storage-and-backup/object-storage/s3-versioning/versionning.png" loading="lazy" />
+
+L'activation et la suspension du versioning se font au niveau du bucket. Une fois activé, tous les objets dans le bucket recevront un identifiant de version unique. Les objets existants auront un identifiant de version nul jusqu'à ce qu'ils soient modifiés.
+
+### Fonctionnement de la gestion de versions
+
+La gestion de versions ajoute une couche de protection à vos données en conservant plusieurs versions d'un objet dans le même bucket. Lorsque vous activez la gestion de versions pour un bucket, chaque objet dans le bucket obtient un identifiant de version unique. Cela signifie qu'à chaque fois qu'un objet est modifié ou supprimé, une nouvelle version est créée et l'ancienne version est conservée. Cela vous permet de récupérer les versions précédentes d'un objet si nécessaire.
+
+- **Téléchargement de nouveaux objets :** un identifiant de version unique est attribué à chaque objet.
+- **Modification des objets :** un nouvel identifiant de version est généré et la version précédente est conservée.
+- **Suppression des objets :** l'opération de suppression crée un marqueur de suppression mais ne supprime pas les versions précédentes. L'objet peut être restauré en supprimant le marqueur de suppression.
+
+### Identifiants de versions
+
+Chaque objet a un identifiant de version unique, que le versioning soit activé ou non. Dans un bucket avec versioning activé, cet identifiant de version distingue une version des autres versions du même objet.
+
+- **Version actuelle :** la version la plus récemment créée d'un objet (avec la valeur de métadonnée `LastModifiedDate` la plus récente).
+- **Versions non actuelles :** versions créées précédemment (avec leurs propres identifiants de version uniques).
+
+Lorsque le versioning n'est pas activé :
+
+- Il n'y a pas de versions non actuelles car le stockage d'objets OVHcloud écrasera toujours la version actuelle avec la dernière version créée lorsque vous téléchargez le même objet (c'est-à-dire avec la même clé).
+
+<img className="thumbnail" alt="Cold Archive concept" src="/images/storage-and-backup/object-storage/s3-versioning/Withversioningdisabled.png" loading="lazy" />
+
+- Si vous supprimez un objet, il sera supprimé de manière permanente car une seule version de votre objet existe à tout moment.
+
+<img className="thumbnail" alt="Cold Archive concept" src="/images/storage-and-backup/object-storage/s3-versioning/Withversioningdisabled2.png" loading="lazy" />
+
+### Avec le versioning activé
+
+Lorsque le versioning est activé :
+
+- Chaque fois que vous téléchargez le même objet, une version non actuelle de l'objet est créée et la dernière version créée devient la version actuelle. Les anciennes versions sont conservées et les données sont protégées contre les suppressions accidentelles ou les défaillances des applications. Vous pouvez les récupérer à tout moment.
+
+<img className="thumbnail" alt="Cold Archive concept" src="/images/storage-and-backup/object-storage/s3-versioning/Withversioningenabled.png" loading="lazy" />
+
+- Si vous supprimez un objet, par défaut, OVHcloud créera un marqueur de suppression (DM) comme nouvelle version actuelle et toutes les versions précédentes resteront. L'objet est ainsi considéré comme « supprimé » et une opération GET object sur cet objet renverra une erreur 404.
+
+<img className="thumbnail" alt="Cold Archive concept" src="/images/storage-and-backup/object-storage/s3-versioning/Withversioningenabled2.png" loading="lazy" />
+
+- Vous pouvez toujours télécharger ou supprimer une version spécifique d'un objet en spécifiant un identifiant de version. Veuillez noter que la suppression d'un objet en spécifiant un numéro de version est irréversible.
+
+<img className="thumbnail" alt="Cold Archive concept" src="/images/storage-and-backup/object-storage/s3-versioning/Withversioningenabled3.png" loading="lazy" />
+
+### Comment activer le versioning
+
+<Tabs>
+  <Tab label="Via l'AWS CLI">
+    Pour activer le versioning sur un bucket Object Storage, utilisez la commande suivante :
+    
+    ```sh
+    aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
+    ```
+    
+    **Explications :**
+    
+    - `put-bucket-versioning` : commande AWS CLI pour configurer la gestion des versions.
+    - `--bucket my-bucket` : remplacez `my-bucket` par le nom de votre bucket.
+    - `--versioning-configuration Status=Enabled` : active la gestion des versions pour le bucket spécifié.
+    
+    Après avoir activé la gestion des versions, tous les objets ajoutés au bucket auront un identifiant de version unique. Cela signifie que chaque fois qu'un objet est modifié ou supprimé, une nouvelle version est créée, pouvant être restaurée si nécessaire.
+  </Tab>
+  <Tab label="Via l'espace client OVHcloud">
+    Pour activer le versioning sur un bucket Object Storage, deux possibilités s’offrent à vous :
+    
+    - Lors de la création du bucket, activez simplement l’option de versioning dans l'étape associée :
+    
+    <img className="thumbnail" alt="OVHcloud control panel - versioning in bucket creation" src="/images/storage-and-backup/object-storage/s3-versioning/bucket_creation_versioning.png" loading="lazy" />
+    
+    - Sur un bucket existant, en modifiant ses paramètres via le tableau de bord OVHcloud :
+    
+    <img className="thumbnail" alt="OVHcloud control panel - versioning in bucket modification" src="/images/storage-and-backup/object-storage/s3-versioning/bucket_modification_versioning.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Comment suspendre la gestion des versions
+
+<Tabs>
+  <Tab label="Via l'AWS CLI">
+    Pour suspendre la gestion des versions, définissez l'état de la configuration de la gestion des versions sur `Suspended` :
+    
+    ```sh
+    aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
+    ```
+    
+    **Explications :**
+    
+    - `put-bucket-versioning` : commande AWS CLI pour configurer le versioning.
+    - `--bucket my-bucket` : remplacez `my-bucket` par le nom de votre bucket.
+    - `--versioning-configuration Status=Suspended` :  suspend le versioning pour le bucket spécifié.
+    
+    La suspension du versioning empêche les nouveaux objets de recevoir un identifiant de version. Les objets existants et leurs versions restent inchangés, mais les nouveaux objets n'auront pas d'identifiants de version jusqu'à ce que le versioning soit réactivé.
+  </Tab>
+</Tabs>
+
+
+### Gérer et accéder aux versions d’objets
+
+#### Afficher les versions d'objets
+
+<Tabs>
+  <Tab label="Via l'espace client OVHcloud">
+    Vous pouvez afficher ou masquer les versions des objets dans un bucket Object Storage en cliquant sur le bouton suivant :
+    
+    <img className="thumbnail" alt="enable version objects" src="/images/storage-and-backup/object-storage/s3-versioning/bucket_enable_versions.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Afficher les différentes versions d'un objet
+
+<Tabs>
+  <Tab label="Via l'espace client OVHcloud">
+    Pour consulter les différentes versions d’un objet, cliquez directement sur l’objet concerné. Vous serez redirigé vers une page détaillant les informations et versions disponibles pour cet objet :
+    
+    <img className="thumbnail" alt="informations versions object" src="/images/storage-and-backup/object-storage/s3-versioning/bucket_versions_object_details.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Télécharger une version actuelle ou antérieure d’un objet
+
+<Tabs>
+  <Tab label="Via l'espace client OVHcloud">
+    Depuis la page principale de votre bucket Object Storage (si l’affichage des versions est activé) ou depuis la page de détails d’un objet (voir étape précédente), vous pouvez télécharger la version souhaitée en cliquant sur le bouton <code className="action">...</code>, puis sur <code className="action">Télécharger</code>.
+    
+    <img className="thumbnail" alt="download current or versioned objects" src="/images/storage-and-backup/object-storage/s3-versioning/bucket_download_versions.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Suppression d’objets : suppression simple, définitive et gestion des Delete Markers
+
+:::info
+Si le versioning est activé sur votre bucket Object Storage, la suppression d’un objet ajoute un Delete Marker : l’objet disparaît de la vue par défaut, mais reste visible via l’option <code className="action">Voir les versions</code>.
+
+Cette protection permet de restaurer un objet supprimé par erreur.
+
+:::
+
+
+<Tabs>
+  <Tab label="Via l'espace client OVHcloud">
+    Depuis la page principale de votre bucket Object Storage ou depuis la page de détails d’un objet, vous pouvez supprimer votre objet en cliquant sur <code className="action">Supprimer</code>.
+    
+    ![delete current or versioned objects](/images/storage-and-backup/object-storage/s3-versioning/bucket_delete_object_versions.png)
+    
+    
+    Pour supprimer définitivement une version, cliquez sur le bouton <code className="action">...</code> puis sur <code className="action">Supprimer</code>, et confirmez l’action de suppression définitive.
+  </Tab>
+  <Tab label="Via l'AWS CLI">
+    Pour supprimer un objet, utilisez la commande suivante :
+    
+    ```bash
+    aws s3api delete-object --bucket <bucket_name> --key <object_key>
+    ```
+    
+    Si vous souhaitez voir les différentes versions d'un objet, utilisez la commande suivante :
+    
+    ```bash
+    aws s3api list-object-versions --bucket <bucket_name> --prefix <object_key>
+    ```
+    
+    Pour supprimer une version spécifique d'un objet :
+    
+    ```bash
+    aws s3api delete-object --bucket <bucket_name> --key <object_key> --version-id <version_id>
+    ```
+    
+    Si vous souhaitez supprimer un delete marker pour récupérer votre version d'objet, procédez comme suit :
+    
+    - Listez les delete markers et identifiez l'identifiant de version du delete marker :
+    
+    ```bash
+    aws s3api list-object-versions --bucket <bucket_name> --prefix <object_key> \
+      --query "DeleteMarkers" --output json
+    ```
+    
+    - Supprimez ce delete marker :
+    
+    ```bash
+    aws s3api delete-object \
+      --bucket <bucket_name> \
+      --key <object_key> \
+      --version-id <delete_marker_version_id>
+    ```
+    
+    l’objet sera de nouveau accessible comme s’il n’avait jamais été supprimé.
+  </Tab>
+</Tabs>
+
+
+### Considérations importantes
+
+- **Coûts de stockage :** chaque version d'un objet est stockée comme un objet complet, ce qui entraîne des coûts de stockage Object Storage - Standard.
+- **Application :** lorsque le versioning est activé, il s'applique à tous les objets dans le bucket, y compris ceux ajoutés avant l'activation du versioning.
+- **Suspension :** la suspension du versioning ne supprime pas les versions existantes. Elle empêche seulement la création de nouvelles versions.
+- **Permissions :** seul le propriétaire du bucket peut activer ou suspendre le versioning.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

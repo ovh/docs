@@ -1,0 +1,189 @@
+---
+title: Gerir as suas instâncias Public Cloud através do Horizon
+description: Saiba como gerir as suas instâncias através da interface Horizon
+lastUpdated: 2022-01-25
+---
+
+:::info
+Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+
+:::
+
+
+## Objetivo
+
+Além da Área de Cliente OVHcloud, também pode gerir os seus projetos Public Cloud da OVHcloud a partir da [interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Nesta interface, poderá consultar todos os seus projetos de infraestrutura (instâncias, backups, discos, chaves SSH, etc.) e de armazenamento (incluindo a lista dos seus containers).
+
+**Este guia explica pormenorizadamente como gerir as suas instâncias Public Cloud através da interface Horizon.**
+
+## Requisitos
+
+- Ter criado uma instância Public Cloud a partir da [Área de Cliente OVHcloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) ou através da [interface Horizon](/guides/public-cloud/compute/create-instance-in-horizon/).
+- [Ter criado uma chave SSH](/guides/public-cloud/compute/compute-creating-ssh-keys/).
+
+## Prática
+
+### Aceder à interface de gestão da instância
+
+Em primeiro lugar, aceda à [interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+
+Ao contrário da Área de Cliente OVHcloud, o Horizon separa os seus serviços em função da sua região. Pode escolher a região a partir do menu no canto superior esquerdo:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/region2021.png" loading="lazy" />
+
+Clique no menu <code className="action">Compute</code> à esquerda e selecione <code className="action">Instances</code>. Na nova página, poderá consultar um resumo de todas as suas instâncias. Várias informações aparecerão aqui:
+
+  * o modelo da sua instância (*Flavor*)
+  * o seu nome, estado de alimentação (Power State) e tempo decorrido desde a sua criação (*Time since created*)
+  * o endereço IPv4 e IPV6 da sua instância
+  * a sua rede privada associada e o seu endereço IPv4 privado
+  * estado (*Status*)
+  * a imagem utilizada para a instalação da instância (se aplicável)
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/options2022.png" loading="lazy" />
+
+**Launch Instance** 
+
+Esta opção permite-lhe criar uma instância. Para mais informações, consulte [este guia](/guides/public-cloud/compute/create-instance-in-horizon/).
+
+**Delete Instance**
+
+Esta opção permite eliminar várias instâncias ao mesmo tempo, basta assinalar a casa à esquerda do nome da instância.
+
+**More Actions**
+
+Este menu permite-lhe executar as seguintes ações numa ou várias instâncias. Em primeiro lugar, certifique-se de que a opção à esquerda é a seguinte:
+
+- Start Instances: esta opção permite reiniciar uma ou várias instâncias em estado *shutoff* ou *off*.
+- Shut Off Instances: esta opção permite suspender uma ou várias instâncias.
+- Soft Reboot Instances: esta opção permite-lhe efetuar um reboot de software numa ou várias instâncias.
+
+**Create Snapshot**: Esta opção permite criar uma snapshot (instantânea) da sua instância. Para mais informações, consulte [este guia](/guides/public-cloud/compute/managing-snapshots-in-horizon/).
+
+### Modificar uma instância
+
+Na interface de gestão da instância, selecione a opção desejada na lista pendente.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/list2022.png" loading="lazy" />
+
+- Attach Interface: esta opção permite adicionar uma ou várias interfaces privadas à sua instância através da VLAN. Para mais informações, consulte [esta parte](/guides/public-cloud/public-cloud-network-services/getting-started-07-creating-vrack#adicao-de-uma-interface-privada/) do guia correspondente.
+- Detach Interface: esta opção é utilizada para separar uma interface associada a uma instância. Para mais informações, consulte [esta parte](/guides/public-cloud/public-cloud-network-services/getting-started-07-creating-vrack#eliminacao-de-uma-interface-privada/) do guia correspondente.
+- Edit Instance: esta opção permite alterar o nome da instância e os [grupos de segurança](/guides/public-cloud/compute/setup-security-group/).
+
+:::warning
+As opções a vermelho indicam a possibilidade de perda de dados durante o processo. Certifique-se de que possui sempre um backup dos seus dados antes de efetuar alterações na sua instância.
+
+:::
+
+
+### Redimensionar uma instância
+
+Graças ao Public Cloud, pode aumentar os recursos de que a sua instância dispõe, e isto em apenas alguns cliques.
+
+:::warning
+Apenas o redimensionamento para um modelo superior é possível para os modelos clássicos.
+Além disso, esta operação provoca um corte da instância durante o tempo da operação.
+
+:::
+
+
+:::tip[Success]
+As instâncias do tipo *flex* permitem o redimensionamento para modelos superiores ou inferiores graças a um tamanho de disco único.
+
+:::
+
+
+Para obter instruções detalhadas, consulte o seguinte guia: [Redimensionar uma instância através do Horizon](/guides/public-cloud/compute/resize-of-an-instance/).
+
+### Reconstruir uma instância
+
+Esta opção permite-lhe reconfigurar a sua instância numa nova base, ou simplesmente mudar de sistema operativo.
+
+:::danger
+Esta operação leva à eliminação dos dados da instância.
+
+:::
+
+
+Selecione <code className="action">Rebuild Instance</code> na lista pendente correspondente à instância.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/rebuildinstance.png" loading="lazy" />
+
+Selecione a imagem para a reconstrução.<br/>
+Selecione o tipo de particionamento ("Automático" ou "Manual"). Isto é facultativo.<br/>
+Finalmente, clique em <code className="action">Rebuild Instance</code>. Esta operação pode demorar alguns minutos.
+
+### Suspender ou colocar em pausa uma instância (Shelve or pause an instance)
+
+Para saber como suspender ou colocar em pausa uma instância, clique [aqui](/guides/public-cloud/compute/suspend-or-pause-an-instance/) para consultar o guia específico deste método.
+
+### Aceder à consola da instância <a name="console"></a>
+
+Em caso de perda de acesso à sua instância, devido a uma configuração incorreta ou a um corte no serviço SSH, é sempre possível reconfigurar a instância com a ajuda da consola VNC.
+
+:::info
+Pode aceder diretamente à sua instância através da consola VNC. No entanto, deverá configurar previamente uma palavra-passe para o utilizador root.
+Para mais informações, consulte [este guia](/guides/public-cloud/compute/public-cloud-first-steps#user-mgmt/).
+A consola VNC pode também servir de primeira aproximação em caso de avaria, de forma a estabelecer um diagnóstico graças à análise da fase de arranque da sua instância.
+
+:::
+
+
+Na lista pendente correspondente à instância, selecione a opção <code className="action">Console</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/accessconsole.png" loading="lazy" />
+
+A consola da instância aparece.
+
+:::tip[Success]
+Se a consola deixar de responder às entradas de teclado, clique na barra de estado.
+Para sair do modo pleno de ecrã, clique no botão de retorno do browser.
+
+:::
+
+
+**Consola da instância**
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/console.png" loading="lazy" />
+
+### Reiniciar uma instância
+
+Existem dois métodos para reiniciar uma instância:
+
+- Reinício a quente  (software) (Soft Reboot Instance)
+- Reinício a frio (hardware) (Hard Reboot Instance)
+
+Na lista pendente correspondente à instância, selecione a <code className="action">Soft Reboot Instance</code> ou a <code className="action">Hard Reboot Instance</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/rebootinstance.png" loading="lazy" />
+
+De seguida, confirme o seu pedido na janela que aparece.
+
+### Eliminar uma instância
+
+Se já não precisa de uma das suas instâncias, pode eliminá-la a qualquer momento.
+
+:::danger
+Os dados presentes na instância serão eliminados.
+Também pode criar um backup desta instância se deseja conservar os dados e relançar uma instância idêntica mais tarde.
+
+A eliminação de uma instância não elimina automaticamente todas as opções que lhe estão associadas (armazenamento, snapshot, backup, etc...), certifique-se de que todas as outras opções associadas à instância são igualmente eliminadas para deixar de ser faturado.
+
+:::
+
+
+Na lista pendente correspondente à instância, selecione a <code className="action">Delete Instance</code>. 
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/deleteinstance.png" loading="lazy" />
+
+A seguir, clique em <code className="action">Confirm</code> para lançar o processo.
+
+:::tip[Success]
+Uma vez eliminada, a sua instância não lhe será faturada e não poderá recuperá-la.
+
+:::
+
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores [https://community.ovh.com/en/](https://community.ovh.com/en/).

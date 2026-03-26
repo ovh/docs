@@ -1,0 +1,158 @@
+---
+title: Encrypting backup jobs with Veeam and OKMS
+description: Learn how to configure encrypted backup jobs using Veeam and the OVHcloud Key Management Service (OKMS) to enhance data protection
+lastUpdated: 2025-04-22
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+This guide explains how to configure encrypted backup jobs using the Veeam backup solution and the OVHcloud Key Management Service (OKMS).
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A [VMware on OVHcloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) offer.
+- Read the following guides: 
+    - [Integrating a KMS with VMware on OVHcloud](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-overall-vm-encrypt/).
+    - [Getting started with OKMS](/guides/manage-and-operate/kms/quick-start/).
+
+## Instructions
+
+### Step 1: Create a certificate in OKMS
+
+You can create your access certificate in OKMS using either the [OVHcloud  API](https://eu.api.ovh.com/) or the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+#### Option 1: Using the API
+
+1. Generate the private key using the API (no CSR):
+
+    <Api version="v1" section="/okms" method="POST" route={"/"} />2. Retrieve the certificate using a GET request:
+
+    <Api version="v1" section="/okms" method="GET" route={"/okms/resource/\\{okmsId\\}/credential"} />    :::info
+    This method is equivalent to selecting <code className="action">I don't have a private key</code> in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) interface.
+    You may also submit a CSR if you already have your own private key.
+
+    :::
+
+
+3. Download the private key.
+
+4. Download the certificate.
+
+    :::info
+    The downloaded private key is used to generate the `.pfx` file in the next step.
+    You don't need to import it manually into Veeam, but it is required to convert the certificate into a compatible format.
+    Make sure to store it securely.
+
+    :::
+
+
+#### Option 2: Using the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+
+1. In the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click <code className="action">Hosted Private Cloud</code> then <code className="action">Identity, Security & Operations</code> and finally <code className="action">Key Management Service</code>. Select your KMS.
+
+    <img className="thumbnail" alt="Console Dashboard" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/console_1.png" loading="lazy" />
+
+2. Select your KMS.
+
+    <img className="thumbnail" alt="KMS List" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/console_2.png" loading="lazy" />
+
+3. Open the <code className="action">Access certificates</code> tab.
+
+    <img className="thumbnail" alt="Access certificates tab" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_1.png" loading="lazy" />
+
+4. Click <code className="action">Generate an access certificate</code>.
+
+5. Fill in the required fields, then select <code className="action">I don’t have a private key</code>.
+
+    <img className="thumbnail" alt="Generate Access Certificate - No Private Key" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_2.png" loading="lazy" />
+
+    :::info
+    This is the same as generating a certificate without a CSR, like with the API.
+    You can also choose `I already have a private key` to generate a certificate using your own CSR.
+
+    :::
+
+
+6. Add user IDs to the certificate:
+    - Click <code className="action">Add user IDs</code>
+    - Select the authorized users
+    - Confirm to associate the certificate
+
+    :::info
+    This step is required for the certificate to work with Veeam.
+
+    :::
+
+
+7. Download the private key and the certificate.
+
+    <img className="thumbnail" alt="Download Certificate" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_3.png" loading="lazy" />
+
+### Step 2: Convert the PEM certificate to PFX format
+
+To import the certificate into Veeam, convert it to `.pfx` format using the command below:
+
+```bash
+openssl pkcs12 -export -out cert.pfx -inkey privatekey.pem -in certificate.pem
+```
+
+### Step 3: Import the certificate into the Veeam Windows Certificate Store
+
+- Open the Windows Certificate Store on your Veeam server.
+- Import the `.pfx` file generated in the previous step.
+- Check the option to make the certificate exportable.
+
+<img className="thumbnail" alt="Import Certificate - Exportable" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_4.png" loading="lazy" />
+
+### Step 4: Register the KMS in Veeam
+
+- Open Veeam Backup & Replication and go to <code className="action">Credentials & Passwords</code>, then click <code className="action">Key Management Servers</code>.
+
+<img className="thumbnail" alt="Veeam Key Management Servers" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_5.png" loading="lazy" />
+
+- Click <code className="action">Add</code> to add a new KMS server.
+
+<img className="thumbnail" alt="Add KMS Server" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_6.png" loading="lazy" />
+
+- Enter the following details:
+    - Server address: `eu-west-rbx.okms.ovh.net`
+    - Port: `5696`
+    - Server certificate: `*.okms.ovh.net`
+    - Client certificate: the `.pfx` file you just imported
+
+<img className="thumbnail" alt="Add KMS Server Details" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_7.png" loading="lazy" />
+
+### Step 5: Retrieve the server certificate
+
+To retrieve the server certificate from OKMS, run the following command:
+
+```bash
+openssl s_client -connect eu-west-rbx.okms.ovh.net:443 2>/dev/null </dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p'
+```
+
+### Step 6: Configure backup job encryption
+
+- Register the KMS server in your Veeam Backup & Replication console.
+- Select the desired backup job and enable encryption using the registered KMS.
+
+<img className="thumbnail" alt="Configure Backup Encryption" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_8.png" loading="lazy" />
+
+- Once the backup has run, a padlock icon appears next to its name.
+
+<img className="thumbnail" alt="Encrypted Backup" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_9.png" loading="lazy" />
+
+- If you encounter the error `Unsupported attribute: OPERATION_POLICY_NAME`, check the documentation or contact support.
+
+<img className="thumbnail" alt="Operation Policy Name Error" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-encrypt-backup-job-with-okms/veeam_okms_10.png" loading="lazy" />
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your Technical Account Manager or click [this link](https://www.ovhcloud.com/en-gb/professional-services/) to request a quote and get personalized support from our Professional Services team.
+
+Ask questions, share feedback, and interact directly with the Hosted Private Cloud team on our [Discord](https://discord.gg/ovhcloud) channel.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

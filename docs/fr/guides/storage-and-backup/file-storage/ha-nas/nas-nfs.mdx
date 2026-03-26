@@ -1,0 +1,342 @@
+---
+title: "Montage d'un NAS-HA via partage NFS"
+description: Découvrez comment vous connecter à votre NAS-HA en utilisant un partage NFS
+lastUpdated: 2025-10-09
+---
+
+## Objectif
+
+Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessible depuis un réseau.
+
+**Découvrez comment accéder à votre NAS-HA via NFS sur les systèmes d'exploitation les plus courants.**
+
+:::warning
+OVHcloud vous offre un certain nombre de services dont la configuration et la gestion vous incombent. Il est donc de votre responsabilité de vous assurer qu’ils fonctionnent correctement.
+
+Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de vous rapprocher de [notre communauté](https://community.ovhcloud.com/community/fr) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place de services sur un serveur.
+
+:::
+
+
+## Prérequis
+
+- Posséder une offre [NAS-HA OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/nas-ha/)
+- Posséder un service OVHcloud auquel est associée une adresse IP publique (Hosted Private Cloud, serveur dédié, VPS, instance Public Cloud, etc.).
+- Avoir un système d'exploitation compatible avec NFS installé sur votre serveur
+- Avoir [créé une partition sur votre service avec le protocole NFS activé](/guides/storage-and-backup/file-storage/ha-nas/nas-get-started#partition/)
+- Avoir [une entrée ACL pour l'adresse IP du serveur](/guides/storage-and-backup/file-storage/ha-nas/nas-get-started#addaccess/)
+- Disposer d’un accès administratif (sudo) à votre serveur via SSH ou GUI
+
+{/* CP-NAV-START:storage-nas-ha */}
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [NAS-HA](https://manager.eu.ovhcloud.com/#/dedicated/nasha)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">NAS-HA</code> > Sélectionnez votre NAS-HA
+
+---
+{/* CP-NAV-END:storage-nas-ha */}
+
+## En pratique
+
+Les sections suivantes contiennent des exemples de configuration pour les distributions/systèmes d'exploitation les plus utilisés. La première étape consiste toujours à vous connecter à votre serveur en SSH ou en vous connectant à l’interface graphique de votre système d’exploitation installé. Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées.
+
+Vous aurez également besoin du **nom interne** et de **l'adresse IP** de votre service NAS-HA que vous pourrez retrouver dans l'e-mail reçu après l'installation ou dans votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+Les notations suivantes sont utilisées comme arguments dans les sections de ligne de commande ci-dessous. Remplacez-les par les valeurs appropriées lors de la saisie des commandes.
+
+|Argument|Description|
+|---|---|
+|IP_HA-NAS|L'adresse IP du NAS-HA (Exemple : `10.1.1.1`)|
+|NFS_PATH|le chemin d'accès à la partition NAS-HA à monter, composé du nom du service et du nom de vos partitions (Exemple : `zpool-123456/partition01`)|
+|MOUNTING_FOLDER|Le dossier local pour votre partition montée|
+
+:::warning
+L'utilisateur NFS est `root`, les modifications de droits avec cet utilisateur peuvent générer des conflits avec des droits CIFS/SMB existants.
+
+:::
+
+
+### Distributions basées sur Debian
+
+Installez le package `nfs-common` :
+
+```bash
+ubuntu@server:~$ sudo apt install nfs-common
+```
+
+Utilisez ensuite la commande de montage suivante :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+**Exemple :**
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Vous pouvez maintenant accéder à votre partition montée dans le dossier spécifié.
+
+:::info
+Afin d'automatiser le processus de montage à chaque démarrage du serveur, ajoutez la ligne suivante au fichier `/etc/fstab` :
+
+`IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+
+:::
+
+
+### Distributions basées sur RedHat (CentOS / AlmaLinux / Rocky Linux / Fedora / ...)
+
+:::warning
+**Attention !**
+
+DNF est le successeur du gestionnaire de paquets YUM et est couramment utilisé dans diverses distributions Linux basées sur Red Hat.
+
+:::
+
+
+Vérifiez que les dernières versions des packages `nfs-utils` et `rpcbind` sont installées :
+
+```bash
+root@server:~$ sudo yum install nfs-utils rpcbind
+```
+
+Si nécessaire, redémarrez le service `rpcbind` avec la commande suivante :
+
+```bash
+root@server:~$ sudo systemctl restart rpcbind
+```
+
+Pour monter votre partition, utilisez la commande suivante :
+
+```bash
+root@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+**Exemple n°1 :**
+
+```bash
+root@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Vous pouvez maintenant accéder à votre partition montée dans le dossier spécifié.
+
+:::info
+Afin d'automatiser le processus de montage à chaque démarrage du serveur, ajoutez la ligne suivante au fichier `/etc/fstab` :
+
+`IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+
+:::
+
+
+**Exemple n°2 :**
+
+Installez le package `nfs-utils` :
+
+```bash
+root@server:~$ sudo dnf -y install nfs-utils
+```
+
+Utilisez ensuite la commande de montage suivante :
+
+```bash
+root@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+```bash
+root@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Vous pouvez maintenant accéder à votre partition montée dans le dossier spécifié.
+
+### Microsoft Windows - Particularités
+
+Assurez-vous que l'utilisateur Windows qui doit accéder à votre NAS-HA dispose de droits nécessaires.
+
+Le couple UID/GID doit être configuré sur « 0 » (droit root UNIX).
+
+Si ce n'est pas le cas, des erreurs d’accès au NAS-HA peuvent survenir. En effet, lorsque le protocole NFS est activé sur une machine Windows, un utilisateur UNIX est automatiquement créé avec un UID et un GID par défaut définis sur « -2 » (ou 4294967294), ce qui restreint les accès.
+
+Comme solution de contournement, l'UID et le GID peuvent être forcés à « 0 » sur la machine Windows qui accède à votre NAS-HA :
+
+1. Ouvrez l'éditeur de registre (regedit) sur la machine cliente.
+1. Accédez à la clé suivante : `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Créez les deux entrées de type DWORD suivantes : **AnonymousUid** et **AnonymousGid**.
+1. Attibuez la valeur « 0 » à chacune de ces entrées.
+1. Redémarrez le service NFS sur la machine cliente pour appliquer les modifications.
+
+Toutes les options de montage sont disponibles sur le [site de Microsoft](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/mount).
+
+### Proxmox
+
+Dans l’interface d’administration Proxmox, cliquez sur <code className="action">Storage</code> dans le menu vertical.
+
+<img className="thumbnail" alt="proxmox" src="/images/storage-and-backup/file-storage/ha-nas/nas-nfs/proxmox1.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Add</code> et sélectionnez <code className="action">NFS</code>.
+
+Dans la fenêtre qui apparaît, renseignez les informations suivantes.
+
+|Détail|Description|
+|---|---|
+|ID|Identificateur du partage|
+|Server|Adresse IP du NAS-HA (Exemple : `10.1.1.1`)|
+|Export|Chemin vers la partition NAS-HA (Il doit être détecté par le scan automatique : sélectionnez-le dans la liste.)|
+|Content|Types de contenus pour ce partage NFS (Disk image, ISO image, Container template, VZDump backup file, Container, Snippets)|
+
+<img className="thumbnail" alt="proxmox" src="/images/storage-and-backup/file-storage/ha-nas/nas-nfs/proxmox2.png" loading="lazy" />
+
+Cliquez sur <code className="action">Add</code> pour monter votre partition.
+
+### VMware ESXI
+
+Depuis l'interface d'administration VMware ESXI, cliquez sur <code className="action">Storage</code> dans le menu de gauche.
+
+Cliquez ensuite sur le bouton <code className="action">New datastore</code> pour ouvrir l'assistant.
+
+<img className="thumbnail" alt="ESXI" src="/images/storage-and-backup/file-storage/ha-nas/nas-nfs/esxi1.png" loading="lazy" />
+
+Dans la nouvelle fenêtre, sélectionnez <code className="action">Mount NFS datastore</code> et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="ESXI" src="/images/storage-and-backup/file-storage/ha-nas/nas-nfs/esxi2.png" loading="lazy" />
+
+Remplissez le formulaire avec les détails suivants.
+
+|Détail|Description|
+|---|---|
+|Name|Identificateur du partage|
+|NFS server|Adresse IP du NAS-HA (Exemple : `10.1.1.1`)|
+|NFS share|Chemin vers la partition NAS-HA à monter (Exemple : `zpool-123456/partition01`)|
+|NFS version|Version du protocole à utiliser, sélectionnez obligatoirement la version NFS 3|
+
+<img className="thumbnail" alt="ESXI" src="/images/storage-and-backup/file-storage/ha-nas/nas-nfs/esxi3.png" loading="lazy" />
+
+Une fois fait, cliquez sur <code className="action">Next</code>. Cliquez sur <code className="action">Finish</code> à la dernière étape.
+
+Votre partition NAS-HA est maintenant montée en datastore.
+
+<img className="thumbnail" alt="ESXI" src="/images/storage-and-backup/file-storage/ha-nas/nas-nfs/esxi4.png" loading="lazy" />
+
+### NFSv3/NFSv4
+
+L'offre NAS-HA supporte les protocoles NFSv3 et NFSv4. Nous allons détailler leur utilisation.
+
+**Que se passe-t'il si on ne précise pas la version lors de la commande NFS ?**
+
+Dans ce cas, votre client NFS va essayer de se connecter directement sur la plus haute version supportée par celui-ci.
+
+Mais vous pouvez également choisir d'utiliser NFSv3, NFSv4, NFSv4.1 ou NFSv4.2 :
+
+Pour forcer l'utilisation de NFSv3, vous devez utiliser la commande suivante :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Exemple :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Pour forcer l'utilisation de NFSv4, vous devez utiliser la commande suivante :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Exemple :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Vous pouvez également utiliser la commande suivante pour déterminer quelle est la version utilisée par le montage actuel :
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+Dans le retour, le paramètre `vers=3` ou `vers=4` vous indique quel est le protocole utilisé.
+
+L'utilisation des commandes sera semblable pour CentOS et Fedora.
+
+
+Pour forcer l'utilisation de NFSv4.1, vous devez utiliser la commande suivante :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Exemple :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Pour forcer l'utilisation de NFSv4.2, vous devez utiliser la commande suivante :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Exemple :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Vous pouvez utiliser cette commande pour vérifier la version de votre montage actuel:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+## Conseils pour optimiser la performance et/ou la stabilité de votre connexion NFS
+
+La plupart du temps, les options de montage par défaut configurées dans les clients Linux sont suffisantes afin d'obtenir des performances acceptables. Néanmoins, dans certaines situations, il peut s'avérer utile d'activer ou de désactiver certaines options afin d'avoir de meilleures performances globales.
+
+De plus, afin d'obtenir des performances optimales et d'éviter divers bugs identifiés dans le client NFS, nous vous recommandons d'utiliser un noyau Linux le plus récent possible.
+
+Retrouvez ci-dessous quelques éléments qui pourraient vous aider à affiner la configuration de votre client NFS.
+
+### Quelques options de montage à considérer
+
+Vous pouvez connaître les options de montage appliquées par votre client Linux avec la commande `mount -l`.
+
+Exemple de retour de cette commande : 
+
+```bash
+XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,timeo=600,retrans=2,...)
+```
+  
+- `rsize=1048576` : définit le nombre maximal d'octets de données que le client NFS peut recevoir pour chaque requête de LECTURE réseau. Cette valeur s'applique lors de la lecture de données à partir d'un fichier sur un système de fichiers NFS. La plus grande taille possible (jusqu'à 1048576) garantit de meilleures performances. 
+- `wsize=1048576` : définit le nombre maximal d'octets de données que le client NFS peut envoyer pour chaque requête d'ÉCRITURE sur le réseau. Cette valeur s'applique lors de l'écriture de données dans un fichier dans un système de fichiers NFS. La plus grande taille possible (jusqu'à 1048576) garantit de meilleures performances. 
+- `hard` : définit le comportement de récupération du client NFS après l'expiration d'une requête, de sorte que les requêtes sont relancées indéfiniment jusqu'à ce que le serveur NAS-HA réponde. cette option vous garantit l'intégrité des données.
+- `timeo=150` : définit la valeur de délai d'attente que le client NFS utilise pour attendre une réponse avant de relancer une requête NFS. Utilisez une valeur d'au moins 150, ce qui équivaut à 15 secondes, pour éviter les baisses de performance.
+- `retrans=2` : définit à 2 le nombre de fois que le client NFS lance une requête avant de tenter une action de récupération.
+- `tcp` : pour accélérer le montage du système de fichiers en NFS v3 (pas nécessaire pour NFSv4.x qui utilise uniquement TCP).
+- `_netdev` : lorsque cette option est présente dans le fichier /etc/fstab, elle empêche l'OS du client d'essayer de monter le système de fichiers NFS tant que le réseau n'a pas été activé.
+- `nofail` : si l'OS de votre client doit pouvoir démarrer quel que soit l'état de votre système de fichiers NFS, ajoutez l'option `nofail`.
+- `actimeo=30` : la spécification `actimeo` définit tous les paramètres `acregmin`, `acregmax`, `acdirmin` et `acdirmax` à la même valeur. L'utilisation d'une valeur inférieure à 30 secondes peut entraîner une dégradation du niveau de performance, car les caches d'attributs des fichiers et des répertoires expirent trop rapidement.
+- `nfsvers` : évitez si possible d'utiliser la version 4.0 de NFS. Utilisez plutôt les versions 3, 4.1 ou 4.2 (autant que possible, utilisez la même version de NFS pour tous les clients connectés à un même partage NFS).
+- `nordirplus` : dans certains environnements avec de nombreux répertoires, où seules les informations d'un petit sous-ensemble d'entrées de répertoire sont utilisées par un client NFSv3, READDIRPLUS peut entrainer un ralentissement des performances. L'option nordirplus permet de désactiver cette fonctionnalité
+
+### Forcer l'utilisation de NFSv3 dans certains cas
+
+- Étant donné que NFSv3 est sans état, les performances avec NFSv3 peuvent être nettement meilleures pour certaines charges de travail, en particulier pour les charges de travail qui font énormément d'appels de type OPEN, CLOSE, SETATTR et GETATTR.
+- Si vous hébergez une base de données sur votre partage NFS, sachez qu'en cas de déconnexions réseau le mécanisme de verrous spécifique au protocole NFSv4.x peut provoquer un arrêt de votre application (consultez cette rfc pour plus de détails : [https://datatracker.ietf.org/doc/rfc3530/](https://datatracker.ietf.org/doc/rfc3530/)).
+- Si vous hébergez des machines virtuelles VMware sur votre partage NFS, sachez que le mécanisme de verrous intégré à la version NFSv4.x n’est pas compatible avec le mode de clustering implémenté sur votre NAS-HA (cluster en mode actif/passif expliqué sur [cette page](https://www.ovhcloud.com/fr/storage-solutions/nas-ha/)). Vous devez donc impérativement utiliser le protocole NFSv3 sous peine d’avoir une perte d’accès à votre datastore lors d’un incident impactant le serveur principal ou lors d’une opération de maintenance programmée.
+
+### Améliorer les performances de lecture en modifiant l'attribut read_ahead_kb
+
+Certains noyaux Linux utilisent une valeur `read_ahead_kb` par défaut de 128 Ko. Nous vous recommandons d'augmenter cette valeur jusqu'à 15 Mo si vous avez des problèmes de performance en lecture. Pour plus d'informations, consultez cette page : [https://docs.kernel.org/admin-guide/abi-stable.html?highlight=read_ahead_kb#abi-sys-block-disk-queue-read-ahead-kb](https://docs.kernel.org/admin-guide/abi-stable.html?highlight=read_ahead_kb#abi-sys-block-disk-queue-read-ahead-kb). 
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

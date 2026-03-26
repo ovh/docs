@@ -1,0 +1,66 @@
+---
+title: Enterprise File Storage - Conservare uno Snapshot automatico
+description: Scopri come conservare gli Snapshot automatici della tua soluzione Enterprise File Storage utilizzando l’API OVHcloud
+lastUpdated: 2024-11-28
+---
+
+import Api from '@components/Api';
+
+
+## Obiettivo
+
+Gli Snapshot **automatici** sono creati da una [Politica di Snapshot](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/) seguendo le regole associate.
+
+Conservare uno Snapshot **automatico** ne impedisce la rotazione tramite la politica di Snapshot e quindi la sua eliminazione. Lo Snapshot diventa di tipo `manual`.
+
+**Questa guida ti mostra come conservare uno Snapshot automatico della soluzione Enterprise File Storage tramite l’API OVHcloud.**
+
+## Prerequisiti
+
+- Disporre di una soluzione OVHcloud [Enterprise File Storage](https://www.ovhcloud.com/it/storage-solutions/enterprise-file-storage/)
+- Avere accesso all’[API OVHcloud](https://eu.api.ovh.com/)
+- Disporre di un volume Enterprise File Storage con uno Snapshot `automatico`
+
+:::tip[Success]
+Se non hai familiarità con l'API OVHcloud, consulta la nostra guida "[Iniziare a utilizzare le API OVHcloud](/guides/manage-and-operate/api/first-steps/)".
+
+:::
+
+
+## Procedura
+
+1\. Identifica l`id` dello Snapshot utilizzando questa chiamata API:
+
+<Api version="v1" section="/storage" method="GET" route={"/storage/netapp/\{serviceName\}/share/\{shareId\}/snapshot"} />
+
+
+- `{serviceName}` è l’identificativo unico del servizio
+- `{shareId}` è l’identificativo del volume a cui appartiene lo Snapshot
+
+<img className="thumbnail" alt="HoldSnapshot" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-hold-automatic-snapshot/hold_snapshot_step_1.png" loading="lazy" />
+
+2\. Conserva lo Snapshot utilizzando questa chiamata API:
+
+<Api version="v1" section="/storage" method="POST" route={"/storage/netapp/\{serviceName\}/share/\{shareId\}/snapshot/\{snapshotId\}/hold"} />
+
+
+- `{serviceName}` è l’identificativo unico del servizio
+- `{shareId}` è l’identificativo del volume a cui appartiene lo Snapshot
+- `{snapshotID}` è l’identificativo dello Snapshot recuperato precedentemente
+
+:::warning
+Una volta effettuata l’operazione di conservazione (`hold`), l’`id` e il `type` dello Snapshot saranno modificati. Tuttavia, le proprietà `name`, `createdAt` e `path` verranno mantenute.
+Prendi nota del nuovo `id` se vuoi continuare a eseguire operazioni sullo Snapshot.
+
+:::
+
+
+<img className="thumbnail" alt="RevertSnapshot" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-hold-automatic-snapshot/hold_snapshot_step_2.png" loading="lazy" />
+
+**Lo Snapshot *automatico* viene ora conservato e diventa uno Snapshot *manuale*.**
+
+## Per saperne di più
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,108 @@
+---
+title: "¿Qué hacer en caso de página del \"Index of\" ?"
+description: "Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página \"Index of\""
+lastUpdated: 2025-10-28
+---
+
+## Objetivo
+
+En al menos uno de los siguientes casos aparece una página **"Index of"**:
+
+- La [configuración de su nombre de dominio con su sitio web](/guides/web-cloud/web-hosting/multisites-configure-multisite/) no está correctamente configurada hacia su directorio objetivo.
+- La carpeta de destino a la que apunta su dominio no contiene archivos **"index.html"** o **"index.php"**
+
+<img className="thumbnail" alt="index_of" src="/images/assets/screens/other/browsers/errors/index-of.png" loading="lazy" />
+
+**Esta guía explica cómo corregir la visualización de una página "Index of".**
+
+:::warning
+:::
+
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+>
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
+>
+
+## Requisitos
+
+- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/)
+- Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Alojamientos</code> > Seleccione su alojamiento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedimiento
+
+### Comprender el origen de la página "Index of"
+
+Su nombre de dominio se declara para acceder a un directorio de destino (un "`Carpeta raíz`") en el servidor [FTP](/guides/web-cloud/web-hosting/ftp-connection/) de su alojamiento web compartido. Para ello, abra la pestaña [Multisite](/guides/web-cloud/web-hosting/multisites-configure-multisite/) de su alojamiento web alojado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+La página **Index of** indica que el directorio de destino no contiene un archivo **index.php** o **index.html**. Dicho archivo constituye el "*punto de entrada*" del sitio web. El nombre de este archivo está normalizado.
+
+Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz`, que contiene el archivo **index.php** o **index.html**, desde el apartado <code className="action">Multisitio</code> del alojamiento.
+
+:::info
+Para asociar temporalmente su dominio a un `Carpeta raíz` que no contiene un archivo **index.php** o **index.html**, puede prohibir que se muestre la lista de carpetas de su sitio web siguiendo este [tutorial](/guides/web-cloud/web-hosting/htaccess-what-else-can-you-do#prevent-the-content-of-a-directory-from-being-listed/). También puede proteger el acceso a sus carpetas con una [contraseña](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+
+Le recomendamos que acuda a un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene dificultades para configurar esta opción. De hecho, nuestros equipos de soporte no podrán ayudarle en cuanto a cualquier modificación del código interno de su sitio web.
+
+:::
+
+
+### Solucionar el caso más común de una página "Index of"
+
+Ha importado los archivos de su sitio **mydomain.ovh** en la carpeta `www` de su alojamiento mediante [FTP](/guides/web-cloud/web-hosting/ftp-connection/). Sin embargo, su nombre de dominio no está vinculado a esta carpeta en la columna `Carpeta raíz` de su sitio web.
+
+<img className="thumbnail" alt="index_of_multisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png" loading="lazy" />
+
+Modifique la `Carpeta raíz` haciendo clic en el botón <code className="action">...</code> a la derecha de la tabla y luego en <code className="action">Modificar el dominio</code> :
+
+<img className="thumbnail" alt="modify_domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png" loading="lazy" />
+
+En la nueva ventana:
+
+* Marque la casilla <code className="action">Editar también el subdominio www.mydomain.ovh</code> (1);
+* Indique el directorio que contiene el archivo **index.php** o **index.html** del sitio web como `Carpeta raíz` (2);
+* Haga clic en `Siguiente` (3).
+
+<img className="thumbnail" alt="change_root_folder" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png" loading="lazy" />
+
+:::info
+Usar el directorio `www` como `Carpeta raíz` no es obligatorio. Puede instalar su sitio web en otra carpeta de su [servidor FTP](/guides/web-cloud/web-hosting/ftp-connection/).
+
+:::
+
+
+En la siguiente ventana, haga clic en <code className="action">Aceptar</code>.
+
+<img className="thumbnail" alt="modify_root_folder_confirm" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png" loading="lazy" />
+
+En unos minutos (refrescando el navegador), obtendrá el siguiente resultado:
+
+<img className="thumbnail" alt="multisite_modified" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png" loading="lazy" />
+
+Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacie la caché del navegador si fuera necesario.
+
+Asegúrese también de que el directorio de destino contiene un archivo **index.php** o **index.html**.
+
+## Más información <a name="go-further"></a>
+
+[Resolver los errores más frecuentes asociados a los módulos en 1 clic](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/)
+
+[Resolver el error "Sitio no instalado"](/guides/web-cloud/web-hosting/multisites-website-not-installed/)
+
+[Alojar varios sitios web en un mismo hosting](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

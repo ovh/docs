@@ -1,0 +1,171 @@
+---
+title: Włącz połączenia Okta SSO z Twoim kontem OVHcloud
+description: Dowiedz się, jak powiązać usługę Okta z kontem OVHcloud przy użyciu SAML 2.0
+lastUpdated: 2025-05-15
+---
+
+## Wprowadzenie
+
+Możesz użyć uwierzytelnienia SSO (*Single Sign-On*), aby zalogować się do Twojego konta OVHcloud. Aby aktywować te połączenia, Twoje konto oraz konta Okta muszą być skonfigurowane przez SAML (*Security Assertion Markup Language*).
+
+**Niniejszy przewodnik wyjaśnia, jak powiązać Twoje konto OVHcloud z zewnętrzną usługą Okta.**
+
+## Wymagania początkowe
+
+- Posiadanie statusu administratora usługi Okta
+- Posiadanie [konta OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+
+{/* CP-NAV-START:iam-saml-sso */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SAML SSO](https://manager.eu.ovhcloud.com/#/iam/identities/sso)
+- **Ścieżka nawigacji:** <code className="action">Tożsamość, bezpieczeństwo i operacje</code> > <code className="action">Users</code> > <code className="action">SSO connection</code>
+
+---
+{/* CP-NAV-END:iam-saml-sso */}
+
+## W praktyce
+
+:::info
+Aby usługodawca (na przykład Twoje konto OVHcloud) nawiązał połączenie SSO z dostawcą tożsamości (na przykład z usługą Okta), należy przede wszystkim nawiązać relację zaufania, rejestrując połączenie SSO w obu usługach.
+
+:::
+
+
+### Zarejestruj OVHcloud w Okta
+
+Twoja usługa Okta działa jako dostawca tożsamości. Zlecenia uwierzytelnienia Twojego konta OVHcloud zostaną przyjęte tylko wtedy, gdy wcześniej zadeklarowałeś je jako zaufaną organizację trzecią.
+
+Oznacza to, że musi zostać dodany jako `Applications`.
+
+Zaloguj się do interfejsu administracyjnego Okta za pomocą konta administratora.
+
+Przejdź do <code className="action">Applications</code>, a następnie ponownie do <code className="action">Applications</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/OKTA_add_application_step1.png" loading="lazy" />
+
+Kliknij <code className="action">Create App Integration</code> i wybierz <code className="action">SAML 2.0</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/OKTA_add_application_step2.png" loading="lazy" />
+
+W etapie "General Settings" dodasz nazwę dla tej aplikacji, na przykład **OVHcloud** i logo, jeśli chcesz. Kliknij <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 3" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/OKTA_add_application_step3.png" loading="lazy" />
+
+Na etapie "Configure SAML" uzupełnij pola `Single sign-on URL` i `Audience URI` wartościami Twojego regionu:
+
+- Region UE: **Single sign-on URL**: `https://www.ovhcloud.com/eu/auth/saml/acs` i **URI**: `https://www.ovhcloud.com/eu/auth/`
+- Region CA: **Single sign-on URL**: `https://www.ovhcloud.com/ca/auth/saml/acs` i **URI**: `https://www.ovhcloud.com/ca/auth/`
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 4" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/OKTA_add_application_step4.png" loading="lazy" />
+
+Następnie zdefiniuj `Attribute Statements`:
+
+- **Name**: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` i **Value**: `user.login`
+- **Name**: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` i **Value**: `user.email`
+- **Name**: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name` i **Value**: `user.displayName`
+
+Zdefiniuj `Group Attribute Statements`:
+
+- **Name**: `groups` i **Filter**: `Matches regex:.*` (Dostosuj filtr, jeśli chcesz być bardziej precyzyjny)
+
+Kliknij <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 5" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/OKTA_add_application_step5.png" loading="lazy" />
+
+Na etapie "Feedback" wybierz opcję z funkcji i kliknij <code className="action">Finish</code>.
+
+Następnie otwórz aplikację, przejdź do zakładki <code className="action">Assignments</code> i przypisz do aplikacji użytkowników lub grupy.
+
+<img className="thumbnail" alt="Przypisywanie użytkowników" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/OKTA_add_user.png" loading="lazy" />
+
+Przed przejściem do następnej sekcji przejdź do zakładki <code className="action">Sign On</code>, przejdź do **Metadata URL** i zapisz dostarczony plik XML.
+
+<img className="thumbnail" alt="Pobierz metadane" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/OKTA_retrieve_metadata.png" loading="lazy" />
+
+Twoja usługa Okta jest od tej pory zaufana w OVHcloud jako dostawca usług. Następnym krokiem jest upewnienie się, że konto OVHcloud zaufa Twojej Okta jako dostawcy tożsamości.
+
+### Zapisz Okta na koncie OVHcloud i skonfiguruj połączenie
+
+Aby dodać Okta jako zaufanego dostawcę tożsamości, należy dostarczyć metadane dostawcy tożsamości. Otwórz stronę [SAML SSO](https://manager.eu.ovhcloud.com/#/iam/identities/sso) i kliknij przycisk <code className="action">Logowanie SSO</code>.
+
+<img className="thumbnail" alt="Dostęp do menu IAM" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/access_to_the_IAM_menu_03.png" loading="lazy" />
+
+Wpisz metadane XML usługi Okta. Uzupełnij pole "Nazwa atrybutu użytkownika" wartością `Name` i pole "Nazwa atrybutu grupy" wartością `Group`. Kliknij na <code className="action">Zatwierdź</code>.
+
+Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status „aktywny” dla użytkowników OVHcloud`.
+
+<img className="thumbnail" alt="Połączenie SSO OVHcloud etap 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_add_federation.png" loading="lazy" />
+
+Teraz możesz odnaleźć Okta jako dostawcę tożsamości, a także grupy domyślne.
+
+<img className="thumbnail" alt="Połączenie SSO OVHcloud etap 3" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_add_federation_success.png" loading="lazy" />
+
+Aby uzyskać więcej informacji, kliknij link pod "URL usługi SSO".
+
+<img className="thumbnail" alt="Połączenie SSO OVHcloud etap 4" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_idp_details.png" loading="lazy" />
+
+Przycisk <code className="action">...</code> pozwala na aktualizację lub usunięcie certyfikatu SSO i na zapoznanie się z jego szczegółami.
+
+<img className="thumbnail" alt="Połączenie SSO OVHcloud etap 5" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_user_management_connect_sso_5.png" loading="lazy" />
+
+Twoja usługa Okta jest teraz uważana za zaufanego dostawcę tożsamości. Jednocześnie należy dodać grupy do konta OVHcloud.
+
+:::warning
+Jeśli spróbujesz zalogować się przez SSO, prawdopodobnie wyświetli się komunikat błędu `Not in valid groups`.
+
+Twoje konto OVHcloud sprawdza, czy użytkownik loguje się do grupy istniejącej na koncie.
+
+:::
+
+
+Należy teraz przypisać **roles** grupom użytkowników Okta w OVHcloud. W przeciwnym razie Twoje konto OVHcloud nie wie, co użytkownik może zrobić i domyślnie nie przyznaje mu żadnych uprawnień.
+
+W sekcji <code className="action">Tożsamości</code> otwórz zakładkę <code className="action">Grupy użytkowników</code>. Następnie kliknij przycisk <code className="action">Zadeklaruj grupę</code> i wypełnij pola:
+
+- **Group name**: Nazwa grupy w Okta
+- **Role**: Poziom praw przyznanych tej grupie
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami Okta" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_user_management_groups_1.png" loading="lazy" />
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami Okta" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_user_management_groups_2.png" loading="lazy" />
+
+Następnie możesz sprawdzić, czy grupa została dodana do Twojego konta OVHcloud w sekcji "Grupy":
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami Okta" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_user_management_groups_3.png" loading="lazy" />
+
+Po zalogowaniu się później z użytkownikiem grupy **Intern** Twoje konto OVHcloud potwierdzi, że użytkownik ma rolę "UNPRIVILEGED" określoną przez jego grupę.
+
+Uwaga: jeśli nadasz tej grupie uprawnienia `Brak`, konieczne będzie przypisanie uprawnień za pośrednictwem [zasad IAM](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+Następnie będziesz mógł wylogować się z konta i ponownie zalogować się do Okta jako dostawcy danych.
+
+### Logowanie przez SSO
+
+Na [stronie logowania OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) wpisz swój [identyfikator](/guides/account-and-service-management/account-information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta/), po którym następuje **/idp** bez hasła i kliknij przycisk <code className="action">Logowanie</code>.
+
+<img className="thumbnail" alt="Połączenie z federacją OVHcloud" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_federation_login_1.png" loading="lazy" />
+
+Zostaniesz przekierowany na stronę logowania do Okta. Wprowadź identyfikator i hasło użytkownika Okta, następnie kliknij przycisk <code className="action">Sign in</code>.
+
+<img className="thumbnail" alt="OVHcloud Federacja Login Przekierowanie Okta" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/OKTA_login.png" loading="lazy" />
+
+Teraz jesteś zalogowany tym samym identyfikatorem klienta, ale za pomocą użytkownika Okta.
+
+<img className="thumbnail" alt="OVHcloud User Info Federation" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-okta/ovhcloud_user_infos_federation.png" loading="lazy" />
+
+## Sprawdź również
+
+[Utworzenie konta OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+
+[Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/guides/account-and-service-management/account-information/all-about-username/)
+
+[Konfiguracja i zarządzanie hasłem do konta](/guides/account-and-service-management/account-information/manage-ovh-password/)
+
+[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/guides/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/)
+
+[Jak korzystać z polityki IAM w Panelu klienta](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

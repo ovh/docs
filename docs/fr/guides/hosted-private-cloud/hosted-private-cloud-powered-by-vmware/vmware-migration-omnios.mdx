@@ -1,0 +1,172 @@
+---
+title: Migrer les datastores OmniOS
+description: "Identifiez vos datastores OmniOS et migrez vos machines virtuelles vers un stockage supporté à l'aide de VMware Storage vMotion"
+lastUpdated: 2025-09-17
+---
+
+## Objectif
+
+Ce guide explique comment identifier les datastores OmniOS de votre Hosted Private Cloud et migrer les machines virtuelles qu'ils contiennent vers des datastores supportés à l'aide de **VMware Storage vMotion**.
+
+## Prérequis
+
+- Accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Accès administrateur à votre environnement vSphere (via vScope)
+- Connaissances de base de VMware vSphere et de Storage vMotion
+- Datastores supportés disponibles comme cibles de migration
+
+:::info
+OVHcloud mettra à disposition l’espace de stockage libre nécessaire (*freespare*) dans le cadre du processus de migration mené par nos équipes.
+
+:::
+
+
+## En pratique
+
+### Étape 1 - Identifier les datastores OmniOS
+
+1. Connectez-vous à [votre espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+2. Cliquez sur <code className="action">Hosted Private Cloud</code> et sélectionnez votre service PCC.
+
+    <img className="thumbnail" alt="Accéder au Hosted Private Cloud" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-01.png" loading="lazy" />
+
+3. Rendez-vous dans l'onglet <code className="action">Datacenters</code>.
+
+    <img className="thumbnail" alt="Page Datacenters" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-02.png" loading="lazy" />
+
+4. Sur la page du datacenter, ouvrez l'onglet <code className="action">Datastores</code>.
+
+    <img className="thumbnail" alt="Onglet Datastores" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-03.png" loading="lazy" />
+
+    - Les datastores avec le préfixe **tete-xxxx** sont des datastores **OmniOS**.
+    - Les datastores avec le préfixe **cluster-xxxx** sont des datastores **FreeBSD**.
+
+    <img className="thumbnail" alt="Liste des datastores avec préfixes" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-04.png" loading="lazy" />
+
+    :::info
+    Les datastores OmniOS doivent être migrés vers un stockage supporté pour assurer la continuité du service.
+
+    :::
+
+
+5. Avant de lancer un vMotion, assurez-vous de disposer d’un datastore supporté dans votre parc.
+
+    - Si vous devez ajouter un datastore, consultez le guide [Ajouter un datastore](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-add-storage/).
+    - Si vous souhaitez supprimer un datastore devenu inutile, consultez le guide [Supprimer un datastore](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-datastore/).
+
+    Dans certains cas, OVHcloud peut déjà avoir mis un datastore supporté à votre disposition. Vérifiez votre configuration avant de passer à l’étape suivante.
+
+### Étape 2 - Accéder à vSphere via vScope
+
+1. Depuis l'onglet <code className="action">Informations générales</code> du PCC, faites défiler vers le bas jusqu'à **Interfaces de gestion**.
+
+2. Cliquez sur <code className="action">vScope</code>.
+
+    <img className="thumbnail" alt="Onglet Informations générales avec vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-05.png" loading="lazy" />
+
+Vous êtes maintenant connecté à l'interface vSphere et pouvez effectuer un Storage vMotion.
+
+### Étape 3 - Migrer une machine virtuelle avec Storage vMotion
+
+:::warning
+L’exécution d’un Storage vMotion peut provoquer des perturbations temporaires de performance.
+
+Pour de meilleurs résultats :
+
+- Réduisez l’activité d’E/S pendant la migration (arrêtez les charges intensives si possible).
+- Planifiez la migration en heures non ouvrées (HNO).
+- Maintenez toujours au moins deux datastores supportés dans votre infrastructure pour garantir la résilience.
+
+:::
+
+
+1. Dans vSphere, faites un clic droit sur la machine virtuelle à migrer et sélectionnez <code className="action">Migrer...</code>.
+
+    <img className="thumbnail" alt="Démarrer la migration" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-06.png" loading="lazy" />
+
+2. Choisissez **Modifier le stockage uniquement**.
+
+    <img className="thumbnail" alt="Sélectionner le stockage uniquement" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-07.png" loading="lazy" />
+
+3. Sélectionnez un datastore supporté comme destination.
+
+    <img className="thumbnail" alt="Sélectionner le datastore" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-08.png" loading="lazy" />
+
+Vous pouvez également utiliser l'option <code className="action">Avancé</code> pour migrer un seul disque si la machine virtuelle en possède plusieurs.
+
+    <img className="thumbnail" alt="Sélection avancée du datastore" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-09.png" loading="lazy" />
+
+4. Cliquez sur <code className="action">Terminer</code> pour commencer la migration.
+
+    <img className="thumbnail" alt="Finaliser la migration" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-10.png" loading="lazy" />
+
+5. Surveillez la progression de la migration dans le volet **Tâches récentes**. La durée dépend de la taille de la machine virtuelle, de l'activité d'E/S et de la bande passante disponible.
+
+    <img className="thumbnail" alt="Progression de la migration" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/omnios-11.png" loading="lazy" />
+
+:::info
+Après la migration, consolidez vos charges de travail sur des datastores supportés.
+Maintenez toujours au moins deux datastores actifs dans votre infrastructure afin de garantir la disponibilité et la redondance du service.
+
+:::
+
+
+### Étape 4 - Migrer les modèles de VM
+
+1. Dans vSphere, allez dans <code className="action">Modèle de VM dans les dossiers</code> pour afficher les modèles stockés sur votre datastore.
+
+    <img className="thumbnail" alt="VM template in folders" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-01.png" loading="lazy" />
+
+2. Faites un clic droit sur chaque modèle et sélectionnez <code className="action">Supprimer de l’inventaire</code>.
+
+    <img className="thumbnail" alt="Remove from Inventory" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-02.png" loading="lazy" />
+
+    :::warning
+    Le modèle est supprimé de l’inventaire mais reste stocké dans le datastore.
+    Vous pouvez le récupérer et le déplacer vers un autre datastore, ou le supprimer s’il n’est plus nécessaire.
+
+    :::
+
+
+3. Allez dans l’onglet <code className="action">Fichiers</code>, sélectionnez le dossier du modèle, puis cliquez sur <code className="action">Déplacer vers</code>.
+
+    <img className="thumbnail" alt="Move template files" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-03.png" loading="lazy" />
+
+4. Choisissez le datastore de destination et confirmez avec <code className="action">OK</code>.
+
+    <img className="thumbnail" alt="Confirm datastore" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-04.png" loading="lazy" />
+
+5. Une fois les fichiers déplacés, allez dans le nouveau datastore, sélectionnez le fichier du modèle, puis cliquez sur <code className="action">Enregistrer la VM</code>.
+
+    <img className="thumbnail" alt="Save VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-05.png" loading="lazy" />
+
+6. Suivez l’assistant : cliquez sur <code className="action">Suivant</code> → <code className="action">Suivant</code> → <code className="action">Terminer</code>.
+
+    <img className="thumbnail" alt="Wizard step - Next" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-06.png" loading="lazy" />
+
+    <img className="thumbnail" alt="Wizard step - Next" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-07.png" loading="lazy" />
+
+    <img className="thumbnail" alt="Wizard step - Finish" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-08.png" loading="lazy" />
+
+7. Le modèle apparaît alors dans la vue <code className="action">VM et modèles</code>.
+
+    <img className="thumbnail" alt="VM & templates view" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-migration-omnios/template-09.png" loading="lazy" />
+
+## Calendrier de migration
+
+Le calendrier de la migration est le suivant :
+
+- **Septembre 2025** : Envoi de la communication officielle à tous les clients.
+- **Octobre à novembre 2025** : Période pendant laquelle le client peut effectuer la migration de manière autonome.
+- **Novembre à décembre 2025** : Fenêtre de 40 jours de migration pilotée par OVHcloud. Un e-mail de notification est envoyé 3 à 4 jours avant l’opération de maintenance.
+- **Janvier 2026** : Début de la facturation du nouveau datastore.
+- **Février 2026** : Clôture du processus de migration.
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/).
+
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

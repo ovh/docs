@@ -1,0 +1,202 @@
+---
+title: MX Plan - Konfiguration Ihres E-Mail-Accounts in Mail für macOS
+description: Erfahren Sie hier, wie Sie Ihre MX Plan E-Mail-Adresse in macOS Mail einrichten
+lastUpdated: 2024-10-22
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden. Die Mail App für macOS ist auf allen Mac kostenlos verfügbar.
+
+**Diese Anleitung erklärt, wie Sie Ihren MX Plan E-Mail-Account in macOS Mail konfigurieren.**
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen Ihnen jedoch, bei Schwierigkeiten einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder den Herausgeber des Dienstes zu kontaktieren. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+
+:::
+
+
+## Voraussetzungen
+
+- Sie verfügen über einen MX Plan E-Mail-Account (im MX Plan Angebot oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Sie haben die Anwendung Mail auf Ihrem Mac installiert.
+- Sie verfügen über die Login-Daten für den E-Mail-Account, den Sie konfigurieren möchten.
+
+## In der praktischen Anwendung
+
+### Account hinzufügen
+
+- **Beim ersten Start der Anwendung**: Es wird direkt ein Konfigurationsassistent angezeigt und Sie werden gebeten, Ihren Kontotyp zu wählen.
+
+- **Wenn ein Account bereits eingerichtet wurde**: Klicken Sie auf <code className="action">Mail</code> im Menü oben auf Ihrem Bildschirm und dann auf <code className="action">Accounts</code>.
+
+Folgen Sie den Installationsschritten, indem Sie auf die Tabs klicken:
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Wählen Sie <code className="action">Anderer Mail-Account</code> und klicken Sie dann auf <code className="action">Mail-Account</code>.<br/><br/>
+    <img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-email01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Geben Sie im Fenster "**E-Mail-Account hinzufügen**" folgende Informationen ein: <br/><br/>
+    - Ein **Name** für Ihren E-Mail-Account<br/>
+    - Ihre **E-Mail-Adresse**<br/>
+    - Das **Passwort** Ihrer E-Mail-Adresse<br/><br/>
+    <img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-email02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Geben Sie im folgenden Fenster die folgenden Informationen ein:
+    
+    - **E-Mail-Adresse**
+    - **Benutzername**: Geben Sie Ihre vollständige E-Mail-Adresse ein.
+    - **Passwort**
+    - **Account-Typ**: Wählen Sie `IMAP` (empfohlen) oder `POP`.
+    - **Empfangsserver**:<br/>- **EUROPA**: Geben Sie `imap.mail.ovh.net` oder `ssl0.ovh.net` ein.<br/>- **AMERIKA/ASIEN**: Geben Sie `imap.mail.ovh.ca` ein.
+    - **Sendender Server**:<br/>- **EUROPA**: Geben Sie `smtp.mail.ovh.net` oder `ssl0.ovh.net` ein.<br/>- **AMERIKA/ASIEN**: Geben Sie `smtp.mail.ovh.ca` ein.
+    
+    Klicken Sie auf <code className="action">Verbinden</code>, um die Konfiguration abzuschließen.
+    
+    :::warning
+    Die rote Meldung "**Kontoname oder Kennwort kann nicht überprüft werden**" erscheint, wenn das Fenster das erste Mal angezeigt wird. Wenn diese Meldung jedoch nach der Validierung weiterhin angezeigt wird, sind die eingegebenen Informationen fehlerhaft.<br/><br/>
+
+    :::
+
+    
+    <img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-email03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::warning
+Wenn Sie nach dem Befolgen der unten aufgeführten Konfigurationsschritte einen Fehler beim Senden oder Empfangen feststellen, lesen Sie den Abschnitt [Vorhandene Einstellungen ändern](#modify-settings)
+
+:::
+
+
+### E-Mail-Account verwenden
+
+Wenn Ihr E-Mail-Account eingerichtet ist, können Sie ihn verwenden. Sie können ab sofort E-Mails versenden und empfangen.
+
+OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über [Webmail](https://www.ovhcloud.com/de/mail/) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.  
+Bei Fragen zur Verwendung nutzen Sie unsere Anleitungen zu [OWA Webmail](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/) und [RoundCube Webmail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-roundcube/).
+
+### Backup Ihres E-Mail-Account erstellen
+
+Wenn Sie eine Änderung vornehmen müssen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt "**Exportieren**" im Abschnitt "**Mail auf Mac OS**" unserer Anleitung [E-Mail-Adresse manuell migrieren](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration#exportieren/).
+
+### Bestehende Einstellungen ändern <a name="modify-settings"></a>
+
+Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstellungen zugreifen müssen, um diese zu ändern:
+
+- Klicken Sie auf <code className="action">Mail</code> im Menü oben und dann auf <code className="action">Einstellungen</code>.
+- Wählen Sie den betreffenden Account in der linken Spalte aus und klicken Sie auf <code className="action">Servereinstellungen</code>.
+- Geben Sie im Bereich `Empfangsserver (POP)` oder `Empfangsserver (IMAP)` Ihre vollständige E-Mail-Adresse in das Feld <code className="action">Benutzername</code> sowie das zugehörige <code className="action">Passwort</code> in das dafür vorgesehene Feld ein.
+- Geben Sie im Bereich `Versand-Server (SMTP)` Ihre vollständige E-Mail-Adresse in das Feld <code className="action">Benutzername</code> sowie das zugeordnete <code className="action">Passwort</code> in das dafür vorgesehene Feld ein.
+- Deaktivieren Sie die Option <code className="action">Verbindungseinstellungen automatisch verwalten</code>, um die Einstellungen für <code className="action">Port</code> und <code className="action">Authentifizierung</code> anzuzeigen.
+- Stellen Sie sicher, dass die Optionen <code className="action">TLS/SSL verwenden</code> aktiviert sind.
+- Stellen Sie in den Dropdown-Menüs <code className="action">Authentifizierung</code> sicher, dass `Passwort` ausgewählt ist.
+- Nutzen Sie für die Felder <code className="action">Hostname</code> und <code className="action">Port</code> die Werte unter [POP-, IMAP- und SMTP-Einstellungen](#popimap-settings). **Stellen Sie sicher, dass der Servertyp (IMAP, POP und SMTP) Ihrer Region (Europa oder Asien-Pazifik) entspricht**.
+
+Um die Konfiguration abzuschließen, klicken Sie auf <code className="action">Speichern</code>.
+
+<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-email04.png" loading="lazy" />
+
+:::info
+**Konfiguration ändern**
+
+Wenn Ihr E-Mail-Account mit **IMAP** konfiguriert ist und Sie diese Konfiguration zu **POP** ändern möchten, müssen Sie Account aus MacOS Mail löschen und dann als **POP** neu erstellen.
+
+:::
+
+
+### POP-, IMAP- und SMTP-Einstellungen <a name="popimap-settings"></a>
+
+Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können aber auch **POP** auswählen
+
+:::warning
+Verwenden Sie nur die Ihrem Standort entsprechenden Werte (**EUROPA** oder **AMERIKA/ASIEN-PAZIFIK**).
+
+:::
+
+
+- **POP-Konfiguration**
+
+|Information|Beschreibung|
+|---|---|
+|Benutzername|Geben Sie die **vollständige** E-Mail-Adresse ein. |
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein.|
+|Server **EUROPA** (eingehend)|pop.mail.ovh.net **oder** ssl0.ovh.net|
+|Server **AMERIKA/ASIEN-PAZIFIK** (eingehend)|pop.mail.ovh.ca|
+|Port|995|
+|Sicherheitstyp|SSL/TLS|
+
+- **IMAP-Konfiguration**
+
+|Information|Beschreibung|
+|---|---|
+|Benutzername|Geben Sie die **vollständige** E-Mail-Adresse ein. |
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein.|
+|Server **EUROPA** (eingehend)|imap.mail.ovh.net **oder** ssl0.ovh.net|
+|Server **AMERIKA/ASIEN-PAZIFIK** (eingehend)|imap.mail.ovh.ca|
+|Port|993|
+|Sicherheitstyp|SSL/TLS|
+
+Wenn Sie zum Senden von E-Mails die **SMTP**-Einstellungen in den Kontoeinstellungen manuell eingeben müssen, verwenden Sie die folgenden Einstellungen:
+
+- **SMTP-Konfiguration**
+
+|Information|Beschreibung|
+|---|---|
+|Benutzername|Geben Sie die **vollständige** E-Mail-Adresse ein. |
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein.|
+|Server **EUROPA** (eingehend)|smtp.mail.ovh.net **oder** ssl0.ovh.net|
+|Server **AMERIKA/ASIEN-PAZIFIK** (eingehend)|smtp.mail.ovh.ca|
+|Port|465|
+|Sicherheitstyp|SSL/TLS|
+
+:::info
+**Konfiguration ändern**
+
+Wenn Ihr E-Mail-Account mit **IMAP** konfiguriert ist und Sie diese Konfiguration zu **POP** ändern möchten, müssen Sie Account aus MacOS Mail löschen und dann als **POP** neu erstellen.
+
+:::
+
+
+### Was kann ich tun, wenn ich meine E-Mails nicht empfangen/senden kann?
+
+- Wenn das Symbol wie in der Abbildung unten angezeigt wird, handelt es sich um einen Netzwerkfehler. Stellen Sie sicher, dass die Internetverbindung ordnungsgemäß funktioniert.
+
+<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-disconnect.png" loading="lazy" />
+
+- Wenn das Symbol wie in der Abbildung unten angezeigt wird, handelt es sich um einen Synchronisierungsfehler. Überprüfen Sie die Konfigurationseinstellungen Ihres E-Mail-Accounts unter [Vorhandene Einstellungen ändern](#modify-settings).
+
+<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-fail.png" loading="lazy" />
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+:::info
+Weitere Informationen zum Einrichten eines E-Mail-Accounts über die Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/guide/mail/mail35803/mac).
+
+:::
+
+
+[MX Plan - E-Mail-Account in Mail für iPhone und iPad einrichten](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/)
+
+[E-Mail Pro - Konfiguration Ihres E-Mail-Accounts auf Mail für macOS](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-mail-macos/)<br/>
+[E-Mail Pro - Konfiguration Ihres E-Mail-Accounts auf Mail für iPhone und iPad](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/)
+
+[Exchange - E-Mail-Account in macOS Mail einrichten](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-ios/)<br/>
+[Exchange - E-Mail-Account in Mail für iPhone und iPad einrichten](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-mail-macos/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

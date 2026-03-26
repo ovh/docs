@@ -1,0 +1,245 @@
+---
+title: Obtener la cabecera y el archivo .eml de un e-mail
+description: Descubra cómo obtener la cabecera de un e-mail o extraer un archivo .eml desde su cliente de correo, webmail o aplicación externa
+lastUpdated: 2026-03-06
+---
+
+
+
+## Objetivo
+
+La cabecera de un correo electrónico permite trazar el camino seguido por dicho mensaje en la red, desde el remitente hasta el destinatario.<br/>
+Permite identificar un e-mail malicioso o detectar una lentitud en la recepción.
+
+Cada correo electrónico recibido tiene una cabecera (*header*) que no se muestra por defecto cuando consulta su correo. No obstante, puede recuperarla desde su cliente de correo o su webmail.
+
+También puede extraer el correo electrónico completo como archivo `.eml`. Este archivo puede serle solicitado para analizar un e-mail malicioso que haya recibido.<br/>
+Para recuperar un archivo `.eml`, consulte la sección [webmail](#webmail).
+
+**Descubra cómo obtener la cabecera de un e-mail y extraer un archivo .eml desde su cliente de correo.**
+
+## Requisitos
+
+- Disponer de una dirección de correo electrónico en una de nuestras [soluciones de correo electrónico de OVHcloud](https://www.ovhcloud.com/es-es/emails/) o en una solución externa.
+- Tener acceso a la dirección de correo electrónico a través de su webmail o un cliente de correo.
+
+## Procedimiento
+
+### Comprender el contenido de una cabecera
+
+La cabecera está compuesta por varios elementos que indican el camino del correo electrónico, ordenados de forma anticronológica, junto con información adicional.<br/>
+A continuación se muestra una lista no exhaustiva de los elementos que pueden componer una cabecera y su significado.
+
+- El campo `Received` está presente en la cabecera en cada paso del correo electrónico por un servidor de envío (SMTP). Generalmente contiene el nombre de host del servidor con su dirección IP y la fecha. Los campos `Received` se ordenan del paso más reciente al más antiguo en un servidor:
+<pre className="bgwhite"><code>
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
+	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+</code></pre>
+  *Aquí el correo electrónico fue transmitido del servidor MX Plan7.mail.ovh.net al servidor mo3005.mail-out.ovh.net el 30 de junio de 2021 a las 13:12:40 (zona horaria UTC)*
+
+- El campo `Return-Path` corresponde a la dirección de retorno cuando el envío del mensaje ha fallado. La dirección de retorno es generalmente la del remitente.
+<pre className="bgwhite"><code>
+Return-Path: &lt;john@mydomain.ovh&gt;
+</code></pre>
+
+- El campo `From` indica la dirección del remitente del correo electrónico y su nombre para mostrar.
+<pre className="bgwhite"><code>
+From: John &lt;john@mydomain.ovh&gt;
+</code></pre>
+
+- El campo `To` indica la dirección del destinatario del correo electrónico y su nombre para mostrar.
+<pre className="bgwhite"><code>
+To: Robert &lt;robert@hisdomain.ovh&gt;
+</code></pre>
+
+- El campo `Subject` indica el asunto del correo electrónico.
+<pre className="bgwhite"><code>
+Subject: Hello my friend
+</code></pre>
+
+- El campo `Message-ID` indica el identificador único del correo electrónico y termina con el nombre del servidor de envío (después de la "@").
+<pre className="bgwhite"><code>
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
+</code></pre>
+
+- El campo `Received-SPF` muestra el resultado del control [SPF](/guides/web-cloud/domains/dns-zone-spf/) efectuado sobre el dominio del remitente. El argumento `client-ip` permite obtener la dirección IP del servidor que envió el correo electrónico.
+<pre className="bgwhite"><code>
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
+</code></pre>
+
+- Los campos `X-` son campos personalizados que complementan los campos estándar. Son implementados por los servidores a través de los cuales transitan los correos electrónicos.
+<pre className="bgwhite"><code>
+X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
+X-Ovh-Tracer-Id: 1234567891011121314
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 0
+X-VR-SPAMCAUSE:
+</code></pre>
+
+### Obtener una cabecera en un cliente de correo
+
+#### Microsoft Outlook
+
+##### **Obtener la cabecera**
+
+Existen dos versiones de Outlook para Windows: **Outlook clásico** y el **Nuevo Outlook**. Para identificar su versión, escriba "Outlook" en la barra de búsqueda de Windows. Si aparece la mención "(clásico)", está usando Outlook clásico. En caso contrario, se trata del Nuevo Outlook.
+
+<img className="thumbnail" alt="Outlook Windows - identificar la versión" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/outlook-windows-identify01.png" loading="lazy" />
+
+**Outlook clásico:**
+
+1. Haga doble clic en el correo electrónico para abrirlo en una ventana separada.
+2. En la nueva ventana, haga clic en <code className="action">Archivo</code> en la parte superior izquierda.
+3. Seleccione <code className="action">Información</code> a la izquierda y haga clic en <code className="action">Propiedades</code>.
+4. La cabecera completa del correo electrónico aparece en el recuadro inferior. Seleccione todo el texto y cópielo en un archivo.
+
+<img className="thumbnail" alt="Cabecera completa en Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/classic-outlook-01.png" loading="lazy" />
+
+**Nuevo Outlook:**
+
+1. Abra el correo electrónico de su elección.
+2. Haga **clic derecho** en el correo electrónico.
+3. Seleccione <code className="action">Ver</code> y luego <code className="action">Ver detalles del mensaje</code>.
+4. La cabecera completa del correo electrónico aparece en el panel de detalles del mensaje. Seleccione todo el texto y cópielo en un archivo.
+
+<img className="thumbnail" alt="Cabecera completa en Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/new-outlook-01.png" loading="lazy" />
+
+##### **Obtener el archivo .eml**
+
+**Outlook clásico:**
+
+1. Seleccione el correo electrónico en su bandeja de entrada (no lo abra).
+2. Haga clic en <code className="action">Archivo</code> en la barra de menú.
+3. Haga clic en <code className="action">Guardar como</code>.
+4. En el menú desplegable "Tipo de archivo", seleccione **Formato de mensaje de Outlook - Unicode (.msg)**. Elija una ubicación en su equipo (por ejemplo, el Escritorio) y haga clic en <code className="action">Guardar</code>.
+
+También puede **arrastrar y soltar** el correo electrónico desde su bandeja de entrada directamente al Escritorio. Esto crea un archivo `.msg` que puede adjuntar a su informe.
+
+<img className="thumbnail" alt="Guardar msg en Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/classic-outlook-02.png" loading="lazy" />
+
+**Nuevo Outlook:**
+
+1. En la lista de mensajes, haga **clic derecho** en el correo electrónico.
+2. Seleccione <code className="action">Guardar como</code> y luego <code className="action">Guardar como archivo EML</code>.
+3. Elija una ubicación en su equipo y haga clic en <code className="action">Guardar</code>.
+
+<img className="thumbnail" alt="Guardar un archivo EML en el Nuevo Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/new-outlook-02.png" loading="lazy" />
+
+#### Mozilla Thunderbird
+
+##### **Obtener la cabecera**
+
+1. Seleccione el correo electrónico de su elección.
+2. Pulse simultáneamente las teclas `Ctrl` \+ `U` (`Cmd` \+ `U` en macOS).
+3. La cabecera completa del correo electrónico aparece en una ventana separada. Seleccione todo el texto y cópielo en un archivo.
+
+<img className="thumbnail" alt="Cabecera completa en Thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/thunderbird-01.png" loading="lazy" />
+
+##### **Obtener el archivo .eml**
+
+1. Seleccione el correo electrónico de su elección.
+2. Pulse simultáneamente las teclas `Ctrl` \+ `S` (`Cmd` \+ `S` en macOS).
+3. El archivo se guarda por defecto en formato `.eml`.
+
+#### Mail de macOS
+
+##### **Obtener la cabecera**
+
+1. Seleccione el correo electrónico de su elección.
+2. Pulse simultáneamente las teclas `Cmd` \+ `Shift` \+ `H`.
+3. La cabecera completa del correo electrónico aparece. Seleccione el texto en gris y cópielo en un archivo.
+
+<img className="thumbnail" alt="Cabecera completa en Mail de macOS" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/mailmacos-01.png" loading="lazy" />
+
+##### **Obtener el archivo .eml**
+
+1. Seleccione el correo electrónico de su elección.
+2. Pulse simultáneamente las teclas `Cmd` \+ `S`. El archivo `.eml` se crea automáticamente. Seleccione el formato `Código fuente del mensaje`.
+3. Elija una ubicación en su equipo y haga clic en <code className="action">Guardar</code>.
+
+<img className="thumbnail" alt="Guardar un eml desde Mail de macOS" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/mailmacos-02.png" loading="lazy" />
+
+### Obtener una cabecera en un webmail <a name="webmail"></a>
+
+#### Roundcube
+
+##### **Obtener la cabecera**
+
+1. Seleccione el correo electrónico de su elección.
+2. Haga clic en el botón <code className="action">... Más</code> y luego en <code className="action">&lt; > Ver código fuente</code>.
+3. Se abrirá una nueva ventana con la cabecera completa del correo electrónico. Seleccione todo el texto y cópielo en un archivo.
+
+<img className="thumbnail" alt="Ver código fuente en Roundcube" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/roundcube01.png" loading="lazy" />
+
+##### **Obtener el archivo .eml**
+
+1. Seleccione el correo electrónico de su elección.
+2. Haga clic en el botón <code className="action">... Más</code> y luego en <code className="action">Descargar (.eml)</code>.
+
+<img className="thumbnail" alt="Descargar archivo eml en Roundcube" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/roundcube02.png" loading="lazy" />
+
+#### Outlook Web App (OWA) <a name="owa"></a>
+
+##### **Obtener la cabecera**
+
+1. Seleccione el correo electrónico cuya cabecera desee ver.
+2. Haga clic **en la flecha** a la derecha de <code className="action">Responder a todos</code> y luego en <code className="action">Ver detalles del mensaje</code>.
+3. Se abrirá una nueva ventana con la cabecera completa del correo electrónico, lo que le permitirá descargarlo.
+
+<img className="thumbnail" alt="Detalles del mensaje en OWA" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/owa01.png" loading="lazy" />
+
+Consulte también nuestro tutorial en vídeo:
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No?start=36" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+##### **Obtener el archivo .eml**
+
+1. Haga clic en <code className="action">(+) Nuevo</code> para crear un nuevo correo electrónico.
+2. Seleccione el correo electrónico que desee extraer y arrástrelo al contenido del nuevo mensaje.
+3. Haga clic en la flecha hacia abajo junto al archivo adjunto generado y luego en <code className="action">Descargar</code> para guardar el archivo en su equipo.
+
+<img className="thumbnail" alt="Extraer un archivo eml desde OWA" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/owa02.gif" loading="lazy" />
+
+#### Zimbra
+
+##### **Obtener la cabecera**
+
+1. Seleccione el correo electrónico de su elección.
+2. Haga clic en <code className="action">Más</code> en la barra de acciones y seleccione <code className="action">Mostrar original</code>.
+3. Se abrirá una nueva ventana con la cabecera completa y el contenido bruto del correo electrónico.
+
+<img className="thumbnail" alt="Detalles del mensaje en Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/zimbra-01.png" loading="lazy" />
+
+##### **Obtener el archivo .eml**
+
+1. Seleccione el correo electrónico de su elección.
+2. Haga clic en <code className="action">Más</code> en la barra de acciones y seleccione <code className="action">Mostrar original</code>.
+3. En la ventana que se abre, utilice el atajo `Ctrl` \+ `S` (o `Cmd` \+ `S` en macOS) para guardar la página como archivo `.eml`.
+
+### Obtener una cabecera en otro cliente de correo
+
+#### Gmail
+
+##### **Obtener la cabecera**
+
+1. Seleccione el correo electrónico en cuestión.
+2. Haga clic en los 3 puntos verticales a la derecha y en <code className="action">Mostrar mensaje original</code>.
+3. Se abrirá una nueva ventana con la cabecera completa del correo electrónico.
+
+<img className="thumbnail" alt="Ver el origen del mensaje en Gmail" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/gmail01.png" loading="lazy" />
+
+##### **Obtener el archivo .eml**
+
+1. Seleccione el correo electrónico en cuestión.
+2. Haga clic en los 3 puntos verticales a la derecha y seleccione <code className="action">Descargar mensaje</code>.
+
+#### Outlook.com
+
+Para obtener la cabecera o extraer el archivo `.eml` desde la interfaz webmail &#60;Outlook.com&#62;, consulte la sección [Outlook Web App](#owa) de esta guía.
+
+## Más información
+
+[FAQ en e-mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

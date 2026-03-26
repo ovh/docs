@@ -1,0 +1,94 @@
+---
+title: Public Cloud Compute - Cambiar de facturación por horas a mensual
+description: Cómo cambiar la modalidad de facturación de una instancia de Public Cloud
+lastUpdated: 2025-09-05
+---
+
+import Api from '@components/Api';
+
+
+## Objetivo
+
+Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas o mensual (excepto para las instancias de Public Cloud de tercera generación, que se facturan por horas por defecto y no ofrecen la opción mensual al crear la instancia). Las instancias con tarifa por horas se facturan según el consumo, esto es, los usuarios reciben una factura por los recursos específicos que han utilizado al final de cada mes. Las instancias con tarifas mensuales se pueden pagar por adelantado y se facturan a un precio inferior (hasta un 50 % menos que aquellas según el consumo). Si inicialmente seleccionó la facturación por horas, puede cambiar a la facturación mensual en cualquier momento.
+
+**Esta guía explica cómo cambiar de facturación por horas a facturación mensual.**
+
+:::warning
+No puede cambiar de facturación mensual a facturación por horas. Si desea que se le facture con la tarifa por horas, tendrá que eliminar su instancia de facturación con tarifa mensual, crear una nueva y seleccionar facturación por horas. En este caso, le sugerimos que siga el siguiente procedimiento:
+
+:::
+
+>- Cree una instantánea de su instancia actual
+>
+> - Cree una nueva instancia basada en la instantánea anterior
+>
+> - Elimine la instancia mensual
+>
+
+## Requisitos
+
+- Debe haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ruta de navegación:** <code className="action">Public Cloud</code> > Seleccione su proyecto
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedimiento
+
+### Desde el área de cliente de OVHcloud
+
+:::warning
+El procedimiento siguiente no funciona para las instancias de tercera generación (por ejemplo, B3-32). Para facturar mensualmente este tipo de instancia, debe crear un [Savings Plan](/guides/public-cloud/public-cloud-cross-functional/savings-plans/) para este modelo de instancia.
+
+:::
+
+
+Seleccione la instancia cuya tarifa de facturación desea cambiar y abra su menú de opciones haciendo clic en los tres puntos a la derecha de dicha instancia. A continuación, podrá ver el botón <code className="action">«Cambiar a suscripción mensual»</code>:
+
+<img className="thumbnail" alt="Change billing calculation" src="/images/account-and-service-management/managing-billing-payments-and-services/changing-hourly-monthly-billing/switch_to_monthly_updated.png" loading="lazy" />
+
+A continuación, debe confirmar que desea cambiar su tarifa de facturación:
+
+<img className="thumbnail" alt="Confirm billing calculation change" src="/images/account-and-service-management/managing-billing-payments-and-services/changing-hourly-monthly-billing/confirm_to_monthly_updated.png" loading="lazy" />
+
+Una vez confirmada su elección, recibirá de inmediato una factura mensual proporcional a la parte restante. El próximo proyecto de ley incluirá la parte de la tarifa horaria del mes (el 1er del mes hasta el cambio) y la nueva tarifa mensual.
+
+### Desde la API OpenStack
+
+Al crear una instancia utilizando la API OpenStack, a menos que se especifique en el script de creación, la instancia se crea automáticamente con una suscripción por horas. Para cambiar a una suscripción mensual, ejecute el siguiente comando:
+
+```bash
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
+```
+
+Sustituya "InstanceID" por el ID de la instancia correspondiente. Puede obtener este identificador desde el área de cliente o la API de OVHcloud.
+
+### Desde la API OVHcloud
+
+Conéctese a la [interfaz API OVHcloud](https://eu.api.ovh.com/) según la [guía adecuada](/guides/manage-and-operate/api/first-steps/) y siga los pasos que se indican a continuación.
+
+Utilice la siguiente llamada:
+
+<Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\{serviceName\}/instance/\{instanceId\}/activeMonthlyBilling"} />
+
+
+### Desde un script Terraform
+
+Esto es posible gracias a los `metadata` [atributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) del recurso [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
+
+```terraform
+metadata = {
+"ovh-monthly-instance" = 1
+}
+```
+
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

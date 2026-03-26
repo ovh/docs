@@ -1,0 +1,123 @@
+---
+title: Creating, updating and accessing a Managed Rancher Service (EN)
+description: Find out how to create, update and use a Managed Rancher Service on OVHcloud
+lastUpdated: 2024-09-23
+---
+
+## Objective
+
+Container orchestration has become a cornerstone of modern application deployment, offering scalability, flexibility, and resource efficiency. Rancher is an open-source container management platform that simplifies the deployment and management of Kubernetes clusters.
+Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. This guide will cover the creation of a Managed Rancher Service.
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Creating a Managed Rancher Service
+
+In the left-hand menu under **Containers & Orchestration**, click on <code className="action">Managed Rancher Service</code>. You can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
+
+<img className="thumbnail" alt="Create an OVHcloud Managed Rancher Service" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/create-rancher.png" loading="lazy" />
+
+Click on the <code className="action">Create a Managed Rancher Service</code> button.
+
+Fill in the name:
+
+<img className="thumbnail" alt="Create an OVHcloud Managed Rancher Service" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-name.png" loading="lazy" />
+
+Choose your plan between **OVHcloud Edition** and **Standard**.
+
+<img className="thumbnail" alt="Create an OVHcloud Managed Rancher Service" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-plan.png" loading="lazy" />
+
+Choose the Rancher version and then click on <code className="action">Create a Managed Rancher Service</code> button.
+
+<img className="thumbnail" alt="Create an OVHcloud Managed Rancher Service" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-version.png" loading="lazy" />
+
+The Rancher creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
+
+### Updating a Managed Rancher Service
+
+Access the administration UI for your OVHcloud Managed Rancher instances by clicking on <code className="action">Managed Rancher Service</code> in the left-hand menu.
+
+<img className="thumbnail" alt="List of OVHcloud Managed Rancher Services" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-list.png" loading="lazy" />
+
+Click on the <code className="action">...</code> button to the right of your Rancher instance and choose <code className="action">Manage</code> or click on the name of your Rancher instance.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Services to update" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-to-update.png" loading="lazy" />
+
+If the Rancher instance needs to be updated, the information message `A new Managed Rancher Service update is now available.` is displayed.
+
+Click on the <code className="action">Update</code> button.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Services update" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-update.png" loading="lazy" />
+
+Choose the version and click the <code className="action">Update</code> button.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Services update" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-update-popup.png" loading="lazy" />
+
+:::warning
+ You can read the changelog before updating a cluster by clicking on the <code className="action">View the changelog</code> button.
+
+:::
+
+
+A popup will appear, click on the <code className="action">Confirm</code> button to update your Rancher.
+
+The Rancher instance is now updating. It should be updated within a few minutes.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Services update" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-update-in-progress.png" loading="lazy" />
+
+### Accessing a Managed Rancher Service
+
+Access the administration UI for your OVHcloud Managed Rancher instances by clicking on <code className="action">Managed Rancher Service</code> in the left-hand menu.
+
+Click on the <code className="action">...</code> button to the right of your Rancher instance and choose <code className="action">Manage</code> or click on the name of your Rancher instance.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Service access" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-access.png" loading="lazy" />
+
+In the "Access and security" section, Click on <code className="action">Generate access codes</code> button.
+
+A popup will appear, then click on <code className="action">Confirm</code> button.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Service popup" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/popup.png" loading="lazy" />
+
+Copy/paste the generated username and password and click on <code className="action">Go to Rancher</code> button to access the Rancher login page.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Service login" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-login-page.png" loading="lazy" />
+
+Finally, fill the Username and the Password fields and then click on <code className="action">Log in with Local User</code> button.
+
+:::warning
+At your first login, you will be asked to change your password with a randomly generated one or you can define it yourself.
+In case of lost password, you have the possibility to generate a new one by using the Generate access details action button.
+
+:::
+
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Service homepage" src="/images/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/rancher-home.png" loading="lazy" />
+
+You now have access to the Rancher dashboard. It is designed to offer an intuitive and comprehensive view of your containerized environment.
+This web-based interface serves as your command center for orchestrating containers & clusters, visualizing cluster health, and managing various aspects of your Kubernetes infrastructure. Explore the navigation menu, which includes sections for clusters, projects, applications, and Rancher settings.
+
+## Go further
+
+- To have an overview of OVHcloud Managed Rancher service, you can go to the [OVHcloud Managed Rancher page](https://www.ovhcloud.com/fr/public-cloud/managed-rancher-service/).
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assistance with your specific use case.
+
+- Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback, and interact directly with the team that builds our Container and Orchestration services.
+
+- Join our [community of users](https://community.ovhcloud.com/community/fr).

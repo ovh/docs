@@ -1,0 +1,256 @@
+---
+title: Web Cloud Databases - ¿Cómo gestionar los logs?
+description: Descubra cómo gestionar los logs de las bases de datos alojadas en un servidor Web Cloud Databases
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+Un log corresponde a un evento ocurrido en un sistema informático (servidor, ordenador, aplicación, sitio web, base de datos, red informática, etc.).
+Por ejemplo, un log puede registrar y contener uno o varios de los siguientes elementos:
+
+- La marca de tiempo (fecha, hora, minuto, segundo, etc.) del evento.
+- La naturaleza del evento (conexión, desconexión, error, descarga, carga, alerta, etc.).
+- Información adicional sobre el evento (página o archivo consultado, aplicación iniciada, servidor remoto contactado, nombre del archivo cargado o descargado, etc.)
+- El origen del evento (identificador de usuario, dirección IP de origen, programa de origen, etc.).
+- El estado del sistema donde se produce el evento (recursos disponibles, memoria restante, uso de la CPU, etc.).
+
+La mayoría de las veces, los logs se generan directamente en los sistemas informáticos donde se producen los eventos.
+Se almacenan en archivos de texto, también denominados archivos de logs.
+
+Los archivos de logs permiten realizar las siguientes acciones:
+
+- Analizar el comportamiento del sistema informático que genera los logs.
+- Identificar los errores ocurridos en el sistema informático.
+- Resolver los errores encontrados en el sistema informático.
+- Optimizar y mejorar el rendimiento del sistema informático.
+
+Su solución [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/) genera sus propios logs.
+
+En determinadas situaciones, puede necesitar consultar o recuperar los logs:
+
+- De su servidor Web Cloud Databases.
+- De una de las bases de datos alojadas en su servidor Web Cloud Databases.
+
+**Descubra cómo visualizar y gestionar los logs de su solución Web Cloud Databases.**
+
+## Requisitos
+
+- Disponer de una [instancia Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Seleccione su servicio de base de datos
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## Procedimiento
+
+:::warning
+Le ofrecemos este tutorial para ayudarle en las tareas más habituales. No obstante, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene dificultades. No podremos asistirle en la interpretación de los logs disponibles con su solución Web Cloud Databases. Más información en la sección [Más información](#go-further) de esta guía.
+
+:::
+
+
+### Visualizar los logs en tiempo real de su Web Cloud Databases
+
+Haga clic en las pestañas siguientes para ver cada uno de los **2** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">Logs</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/logs/tab.png" loading="lazy" />
+
+En esta consola integrada encontrará, en tiempo real, los logs de su solución Web Cloud Databases.
+    
+    :::info
+    Los logs solo están disponibles aquí en tiempo real. Solo aparecerán si se generan mientras se encuentra en la pestaña <code className="action">Logs</code>.
+    
+    Si abandona la pestaña <code className="action">Logs</code> y vuelve a ella más tarde, el historial que se mostraba anteriormente habrá desaparecido.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+### Recuperar el historial de logs de su solución Web Cloud Databases
+
+Para recuperar el historial de logs de su solución Web Cloud Databases, debe conectarse por SFTP.
+
+:::warning
+Antes de conectarse, compruebe que la dirección IP pública del equipo que utiliza está autorizada en su servidor Web Cloud Databases con la opción `SFTP` activada.
+
+Para comprobarlo, obtenga la dirección IP pública de su punto de acceso a internet y consulte el apartado **Autorizar una dirección IP** de [esta guía](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/).
+
+:::
+
+
+Para obtener la información de conexión SFTP de su solución Web Cloud Databases, haga clic en las pestañas siguientes para ver cada uno de los **2** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    En la pestaña <code className="action">Información general</code>, localice el recuadro **Información de conexión**. Debajo de la mención <code className="action">SFTP</code>, encontrará los datos necesarios para conectarse por SFTP.
+    
+    :::info
+    Si no conoce la `Contraseña del servidor`, haga clic en el botón <code className="action">...</code> situado a la derecha para modificarla.
+
+    :::
+
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Una vez obtenidas las credenciales de conexión SFTP, conéctese a través de un cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
+
+En FileZilla, acceda al menú <code className="action">Archivo</code> en la parte superior izquierda y haga clic en <code className="action">Gestor de sitios</code>.
+
+Haga clic en <code className="action">Nuevo sitio</code> e introduzca los parámetros obtenidos anteriormente.
+
+<img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/other/web-tools/filezilla/site-manager.png" loading="lazy" />
+
+El archivo de logs, denominado `stdout.log`, se encuentra en la raíz.
+
+Descárguelo en su equipo para consultarlo.
+
+:::info
+Un archivo de logs adicional denominado `slow-query.log` puede aparecer en la raíz SFTP de su servidor Web Cloud Databases.
+Este archivo contiene el historial de las consultas lentas ejecutadas en su servidor Web Cloud Databases.
+
+Por defecto, el valor se establece en 1 segundo en las soluciones Web Cloud Databases en la variable **long_query_time**.
+
+Gracias a este archivo, podrá optimizar sus scripts y el contenido de su(s) base(s) de datos para mejorar el rendimiento de sus diferentes servicios asociados.
+
+:::
+
+
+### Suscribir los logs de su solución Web Cloud Databases a Logs Data Platform <a name="wcdb-ldp"></a>
+
+[Logs Data Platform](https://www.ovhcloud.com/es-es/identity-security-operations/logs-data-platform/) es una plataforma de gestión de logs. Facilita la agregación y gestión de logs, especialmente para infraestructuras que generan un gran volumen de logs.
+
+Funciona recuperando los logs generados por su infraestructura, sitios web o aplicaciones, por ejemplo:
+
+- para almacenarlos;
+- para mostrarlos en paneles de control en tiempo real;
+- para permitir a los usuarios realizar consultas complejas;
+- para filtrarlos por fecha, aplicación, tipo o contenido.
+
+Para más información sobre Logs Data Platform, consulte nuestra guía de [Introducción a Logs Data Platform](/guides/manage-and-operate/observability/logs-data-platform/getting-started-introduction-to-ldp/) (EN).
+
+Dado que las soluciones [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/) pueden utilizarse con numerosos servicios (alojamientos compartidos, VPS, servidores dedicados, etc.), estas pueden, además de los logs en tiempo real ya disponibles, suscribirse por flujo de datos a Logs Data Platform.
+
+Para suscribir su solución Web Cloud Databases a un flujo de datos en Logs Data Platform, pueden darse dos situaciones.
+
+**Haga clic en cada caso para ver el contenido.**
+
+<a name="wcdb-ldp-case1"></a>
+
+<details>
+
+<summary>Caso 1 - Suscribirse a un flujo de datos existente en su solución Logs Data Platform</summary>
+
+
+Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">Logs</code> y, a continuación, en el botón <code className="action">Suscribirse</code> situado a la derecha del recuadro de logs en tiempo real.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/logs/tab-subscribe.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 3">
+    Si dispone de varias soluciones Logs Data Platform, seleccione la referencia deseada en la lista desplegable situada debajo del botón <code className="action">Añadir un flujo de datos</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/logs/data-stream.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 4">
+    El flujo existente aparece en la tabla de la parte inferior de la página. Haga clic en el botón <code className="action">Suscribirse</code> situado a la derecha de la fila correspondiente.
+    
+    Al cabo de unos segundos, un mensaje confirma que la suscripción se ha creado correctamente.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Caso 2 - Suscribirse a un nuevo flujo de datos en su solución Logs Data Platform</summary>
+
+
+Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">Logs</code> y, a continuación, en el botón <code className="action">Suscribirse</code> situado a la derecha del recuadro de logs en tiempo real.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/logs/tab-subscribe.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 3">
+    Si dispone de varias soluciones Logs Data Platform, seleccione la referencia deseada en la lista desplegable situada debajo del botón <code className="action">Añadir un flujo de datos</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/logs/data-stream.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 4">
+    Dado que el flujo de datos aún no existe, haga clic en el botón <code className="action">Añadir un flujo de datos</code>. Será redirigido a una página que le permitirá crear un nuevo flujo de datos en su solución Logs Data Platform.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/logs-data-platform/data-stream/add-data-stream.png" loading="lazy" />
+
+Si lo necesita, consulte nuestras guías "[Introducción a Logs Data Platform](/guides/manage-and-operate/observability/logs-data-platform/getting-started-introduction-to-ldp/)" (EN) e "[Inicio rápido con Logs Data Platform](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start/)" (EN).
+  </Tab>
+  <Tab label="Paso 5">
+    Una vez completados los formularios, haga clic en <code className="action">Guardar</code>. Será redirigido a la pestaña `Flujo de datos` de su solución Logs Data Platform.
+    
+    Para suscribir su solución Web Cloud Databases a este nuevo flujo, vuelva a la pestaña <code className="action">Logs</code> de su solución Web Cloud Databases y siga el [Caso 1](#wcdb-ldp-case1) descrito anteriormente.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+## Más información <a name="go-further"></a>
+
+[Primeros pasos con su Web Cloud Databases](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/)
+
+[Introducción a Logs Data Platform](/guides/manage-and-operate/observability/logs-data-platform/getting-started-introduction-to-ldp/) (EN)
+
+[Inicio rápido con Logs Data Platform](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start/) (EN)
+
+Para servicios especializados (posicionamiento en buscadores, desarrollo web, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

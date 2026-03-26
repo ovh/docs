@@ -1,0 +1,216 @@
+---
+title: Découvrir le Managed Hosting for WordPress (version Bêta)
+description: Découvrez la solution OVHcloud qui gère pour vous l’hébergement, la sécurité et la maintenance de vos sites web WordPress.
+lastUpdated: 2026-01-13
+---
+
+## Objectif
+
+Le **Managed Hosting for WordPress** est une nouvelle offre OVHcloud permettant d’héberger et d’administrer vos sites web WordPress en toute simplicité. Pensé pour les professionnels, les agences et les indépendants, ce service vous libère des tâches techniques liées à la gestion de l’infrastructure et des mises à jour, afin que vous puissiez vous concentrer sur votre contenu et votre activité. Ce guide présente le concept du produit, ses principaux avantages et les fonctionnalités disponibles dans le cadre de la **phase Bêta**.
+
+## Prérequis
+
+- Avoir accès au programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/) pour la phase Bêta.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+## En pratique
+
+### Présentation du produit
+
+#### Une gestion WordPress 100 % OVHcloud
+
+Avec Managed Hosting for WordPress, **OVHcloud s’occupe de tout** :
+
+- Hébergement, infrastructure, cache et sécurité.
+- Installation et maintenance de WordPress.
+- Sauvegardes et mises à jour automatiques.
+- Supervision des performances et de la disponibilité.
+- Gestion simplifiée des domaines, des plugins et des environnements de staging (phases Bêta et GA (*General Availability*)).
+
+Aucune connaissance serveur n’est nécessaire : tout est **accessible depuis l’espace client OVHcloud**. Vous pouvez ainsi **créer, importer et administrer vos sites WordPress en quelques clics**, sans jamais avoir à manipuler de FTP, de base de données ni de ligne de commande.
+
+#### Une solution clé en main
+
+Chaque site web bénéficie d’un environnement optimisé, prêt à l’emploi :
+
+- **Installation WordPress automatique** dès la commande.
+- **Infrastructure managée** : maintenance, patchs, mises à jour logicielles et sécurité gérés par OVHcloud.
+- **Performances garanties** : cache WordPress intégré, hébergement sur infrastructure optimisée et monitoring continu.
+- **Évolutivité intégrée** : surveillez l'utilisation en temps réel à l'aide d'indicateurs clés (stockage, trafic, nombre de sites) et adaptez-vous facilement à l'évolution de vos besoins.
+- **Compatibilité totale** : accès via l’espace client OVHcloud, permettant l’intégration dans vos workflows existants.
+
+#### Une approche progressive
+
+Le produit est actuellement disponible en **version Bêta** dans le cadre du programme [OVHcloud Labs](https://labs.ovhcloud.com/en/managed-wp/). Cette première phase permet de tester les fonctionnalités essentielles :
+
+- Création et gestion de sites WordPress managés.
+- Import de sites externes.
+- Mise à jour automatique de WordPress et des plugins.
+- Affichage du statut de vos sites web dans un tableau de bord de votre espace client.
+
+:::info
+D’autres fonctionnalités, comme la gestion avancée des domaines, le clonage, et le staging seront progressivement ajoutées lors des phases **Bêta** et **GA (*General Availability*)**.
+
+:::
+
+
+### Fonctionnalités
+
+Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie <code className="action">Web Cloud</code> puis cliquez sur <code className="action">Managed hosting for WordPress</code>.
+
+#### Créer un site web
+
+Pour créer un site web, cliquez sur le bouton <code className="action">Créer</code>. La page ci-dessous s’affiche :
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_create_site.png" loading="lazy" />
+
+Remplissez les champs du formulaire afin de définir les identifiants de votre site web WordPress :
+
+- <code className="action">Langue de l’admin WordPress</code> : sélectionnez la langue par défaut de l’interface d’administration.
+- <code className="action">Version PHP</code> : choisissez la version PHP souhaitée pour votre environnement WordPress. Consultez les versions disponibles de PHP sur [cette page](/guides/web-cloud/web-hosting/web-hosting-main-info/).
+- <code className="action">E-mail de l’admin</code> : saisissez l’adresse e-mail de l’administrateur du site WordPress.
+- <code className="action">Mot de passe admin</code> : définissez le mot de passe associé à ce compte administrateur.
+
+Cliquez sur <code className="action">Continuer</code> pour valider les informations.
+
+Vous êtes redirigé vers l’onglet <code className="action">Mes sites</code>. En haut de l’écran, un message de confirmation s’affiche vous indiquant que la requête de votre création de site web a été prise en compte.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_banner_creation_site.png" loading="lazy" />
+
+Dans le tableau, une nouvelle ligne concernant votre nouveau site web apparaît :
+
+- Colonne <code className="action">Nom de domaine</code> : correspond au nom de domaine technique de votre site web. Il sert d’URL de staging (pré-production), permettant d’accéder à votre site web avant de l’associer à votre propre nom de domaine.
+- Colonne <code className="action">Statut</code> : indique l’état d’avancement de la création du site web. Le statut apparaît d’abord comme <code className="action">En cours</code>, le temps que l’infrastructure soit déployée et que WordPress soit installé. Une fois votre site web opérationnel, le statut passe à <code className="action">Activé</code>, indiquant que votre WordPress est désormais disponible en ligne via son nom de domaine technique.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_tab_new_line.png" loading="lazy" />
+
+Vous pouvez également suivre la progression de la création de votre site web en cliquant sur l’onglet <code className="action">Tâches</code>.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_task_new_line.png" loading="lazy" />
+
+#### Importer un site web
+
+Vous pouvez importer un site web WordPress existant vers le Managed Hosting for WordPress. L’import vous permet de transférer automatiquement :
+
+- Le contenu WordPress (plugins, themes, médias, articles, pages, utilisateurs).
+- Les fichiers.
+- La base de données.
+
+:::info
+L’import automatique d’un site web WordPress hébergé sur un Hébergement Web OVHcloud (mutualisé) sera disponible lors de la phase Bêta.
+
+:::
+
+
+Pour importer un site web WordPress, cliquez sur le bouton <code className="action">Importer</code>. L’écran ci-dessous s’affiche :
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_import_site.png" loading="lazy" />
+
+:::info
+Un message d’information vous indique que votre site web sera installé sur un environnement utilisant une version de PHP stable (PHP 8.4 dans notre exemple) et la dernière version de WordPress.
+
+:::
+
+
+Renseignez les champs du formulaire :
+
+- <code className="action">URL d’administration du site</code> : indiquez l’adresse utilisée pour vous connecter à l’interface d’administration de votre site web WordPress actuel, par exemple <code className="action">https://www.monsite.com/wp-admin</code>.
+- <code className="action">Compte admin</code> : saisissez le nom d’utilisateur administrateur WordPress.
+- <code className="action">Mot de passe admin</code> : indiquez le mot de passe de l’utilisateur administrateur WordPress.
+
+Ces informations permettent au système d’accéder à votre site web existant afin d’en extraire automatiquement les fichiers, la base de données et la configuration nécessaire.
+
+Une fois les champs obligatoires remplis, cliquez sur <code className="action">Continuer</code> pour lancer le processus d’import.
+
+Vous pourrez alors sélectionner les éléments à importer, y compris les plugins, thèmes, médias et bases de données.
+
+:::warning
+Pour garantir une parfaite cohérence des données, veillez à ne plus effectuer de modifications sur votre site jusqu'à la fin de l'import.
+
+Nous vous conseillons d'activer le mode maintenance sur votre site à importer ou de prendre les mesures nécessaires pour éviter toute divergence de données pendant l'import.
+
+:::
+
+
+Une fois tous les éléments sélectionnés, cliquez sur <code className="action">Lancer l'import</code>.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_import_site_selection.png" loading="lazy" />
+
+#### Supprimer un site web
+
+:::danger
+La suppression d'un site web est définitive et entraîne la suppression de l'intégralité du contenu du site.
+Prenez soin d'effectuer une sauvegarde de vos données avant toute action de suppression.
+
+:::
+
+
+##### Supprimer un seul site web
+
+Pour supprimer un site web, dirigez-vous dans l’onglet <code className="action">Mes sites</code> et identifiez la ligne du tableau correspondant à votre site web. Cliquez sur le bouton <code className="action">⋮</code> puis sur <code className="action">Supprimer</code>.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_delete_site_button.png" loading="lazy" />
+
+Un message de confirmation s’affiche. Cliquez sur <code className="action">Supprimer</code> pour confirmer la suppression de votre site web.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_delete_site_confirmation.png" loading="lazy" />
+
+Vous êtes redirigé vers l’onglet <code className="action">Mes sites</code>. En haut de l’écran, un message de confirmation s’affiche vous indiquant que le processus de suppression de votre site web est en cours.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_delete_site_banner_validation.png" loading="lazy" />
+
+Lorsque votre site web est définitivement supprimé, sa ligne correspondante dans le tableau disparaît.
+
+##### Supprimer plusieurs sites web à la fois
+
+Pour supprimer plusieurs sites web en même temps, dirigez-vous dans l’onglet <code className="action">Mes sites</code>. Identifiez les lignes du tableau correspondant aux sites web que vous souhaitez supprimer et cochez les cases situées à gauche. Une fois les sites web sélectionnés, cliquez sur le bouton <code className="action">Supprimer mes X sites</code>.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_delete_several_sites.png" loading="lazy" />
+
+Un message de confirmation s’affiche. Cliquez sur <code className="action">Supprimer</code> pour confirmer la suppression de vos sites web.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_delete_several_sites_confirmation.png" loading="lazy" />
+
+Vous êtes redirigé vers l’onglet <code className="action">Mes sites</code>. En haut de l’écran, un message de confirmation s’affiche vous indiquant que le processus de suppression de vos sites web est en cours.
+
+<img className="thumbnail" alt="managed_wordpress" src="/images/web-cloud/managed-hosting/01-managed-wordpress-getting-started/managed_wordpress_delete_several_site_banner_validation.png" loading="lazy" />
+
+Lorsque vos sites web sont définitivement supprimés, leurs lignes correspondantes dans le tableau disparaissent.
+
+#### Gérer ses sites web
+
+Pour gérer tous vos sites web, dirigez-vous dans l’onglet <code className="action">Mes sites</code> puis cliquez sur <code className="action">Gérer mes sites</code>. Ce bouton ouvre automatiquement le gestionnaire de flotte, intégré au Managed Hosting for WordPress. Cet espace vous permet de gérer plusieurs sites web WordPress simultanément, depuis une interface unifiée.
+
+##### Tableau de bord
+
+Le gestionnaire de flotte est un outil de supervision et de gestion centralisée fourni automatiquement avec votre offre. Il vous permet d’administrer vos sites web WordPress managés sans avoir à vous connecter à chaque site web individuellement.
+
+Depuis ce tableau de bord, vous pouvez notamment :
+
+- Consulter l’état global de tous vos sites web : mises à jour disponibles, alertes, performances, sécurité.
+- Gérer les mises à jour WordPress (plugins, thèmes, etc.) de manière centralisée.
+- Accéder rapidement à chaque site web pour vérifier son état ou intervenir.
+- Superviser les activités récentes (changements, mises à jour, synchronisations).
+- Utiliser les fonctionnalités intégrées de sécurité, monitoring, sauvegardes, et analyses (dans les phases futures).
+
+#### Mises à jour automatiques intelligentes
+
+Les mises à jour automatiques peuvent entraîner des problèmes de compatibilité qui affectent la stabilité, les performances et l'expérience utilisateur du site. Lorsque vous gérez plusieurs sites WordPress, la gestion manuelle des mises à jour augmente les frais généraux opérationnels et le risque d'interruption de service pour les utilisateurs finaux.
+
+La solution Managed Hosting for WordPress atténue ces risques grâce à un processus de mise à jour contrôlé :
+
+- **Tests avant déploiement**
+    Toutes les mises à jour, y compris celles du cœur de WordPress, des plugins et des thèmes, sont d'abord appliquées à un environnement cloné de votre site.
+- **Contrôles de validation**
+    Le site cloné est évalué en termes de performances, de fonctionnalités et d'expérience utilisateur afin de détecter les régressions ou les erreurs avant le déploiement.
+- **Processus de décision automatisé**
+    - Si aucun problème n'est détecté, la mise à jour est automatiquement déployée sur le site en ligne.
+    - Si des problèmes sont identifiés, le site en ligne reste inchangé. Vous êtes averti via le tableau de bord et recevez un e-mail décrivant les problèmes détectés ainsi que les mesures correctives recommandées.
+
+Cette approche garantit que les mises à jour sont appliquées en toute sécurité tout en préservant la fiabilité du site et en minimisant l'impact sur les utilisateurs finaux.
+
+## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Échangez avec notre [communauté d’utilisateurs](https://community.ovhcloud.com/community/fr).

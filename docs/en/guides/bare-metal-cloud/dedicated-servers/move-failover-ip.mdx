@@ -1,0 +1,222 @@
+---
+title: Moving an Additional IP
+description: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
+lastUpdated: 2026-01-21
+---
+
+import Api from '@components/Api';
+
+
+:::info
+This article is about moving Additional IPv4, which follows [specific regional limitations](#limitations).
+
+Configuring Additional IP addresses in a vRack (private network) circumvents those regional restrictions by not being dependent on a single region, while facilitating interconnection over a wide range of OVHcloud services.
+
+Learn how to configure Additional IP addresses in a vRack with our guides for [IPv4](/guides/bare-metal-cloud/dedicated-servers/configuring-an-ip-block-in-a-vrack/) and [IPv6](/guides/bare-metal-cloud/dedicated-servers/configure-an-ipv6-in-a-vrack/).
+
+:::
+
+
+## Objective
+
+Additional IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation and SEO, and improve the continuity of service for your applications and systems.
+
+With this technology, you can switch IP addresses from one solution to another in less than a minute, with virtually no interruption to services for your users. It is useful for service migrations (e.g. moving projects from development to production), or when switching to a backup server during a technical issue.
+
+:::info
+You can assign your IP address blocks to any compatible service within a region. IP address blocks in a region can be moved from one datacenter to another within that region but cannot be moved outside of that region. Consult our [Limitations](#limitations) section below.
+
+Except for the 3 regions eu-west-gra, eu-west-rbx, and eu-west-sbg, where IP address blocks can be moved between these three regions.
+
+A region is a geographical area composed of one or more datacenters.
+
+Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
+
+:::
+
+
+**This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API. It also explains how to move an Additional IP from a So you Start account to an OVHcloud account.**
+
+## Requirements
+
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- An [Additional IP address](https://www.ovhcloud.com/en-gb/network/additional-ip/)
+
+{/* CP-NAV-START:network-public-ip */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](https://manager.eu.ovhcloud.com/#/network/ip)
+- **Navigation path:** <code className="action">Network</code> > <code className="action">Public IP Addresses</code>
+
+---
+{/* CP-NAV-END:network-public-ip */}
+
+:::warning
+This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+
+Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+
+:::
+
+
+:::warning
+If the Additional IP address or one of the block IP addresses has a virtual MAC attached, the target server must support the vMAC functionality.
+See [this guide](/guides/bare-metal-cloud/dedicated-servers/network-support-virtual-mac/) for details.
+
+Otherwise, the virtual MACs must be removed from the Additional IPs before the transfer.
+
+:::
+
+
+## Instructions
+
+:::info
+When an IP block containing unique virtual MAC addresses is moved between two servers, those addresses are temporarily suspended. They will appear on the new server once the move is complete.
+
+On the other hand, blocks containing duplicate virtual MAC addresses cannot be moved. You must first delete the duplicate virtual MAC address on the block to be moved.
+
+If an IP block is moved/added to the vRack, it is no longer linked to a physical server. In this case, any virtual MAC address will be lost during the transfer.
+
+:::
+
+
+### Geolocalised IP blocks
+
+The geolocation of an IP address is independent of its region of attachment.
+
+If you order an additional IP block on a server but choose a different location (geolocation) for the IP block, this IP block cannot be moved to another server located in the same country as this block. For example, an additional IP block geolocated in Poland (eu-central-war) and ordered on a server located in a French datacentre (eu-west-gra) cannot be moved to a server located in a Polish datacentre (eu-central-war). The IP block can only be moved to an eligible server located in a French datacentre.
+
+### Moving an Additional IP from the OVHcloud Control Panel
+
+:::warning
+Only a single size block (/32) can be moved from a dedicated server to a VPS.
+
+:::
+
+
+You can use the drop-down menu underneath **My public IP addresses and associated services** and select <code className="action">All Additional IPs</code> to filter your services accordingly, or directly type the desired IP address in the search bar.
+
+<img className="thumbnail" alt="manage IPs" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/network/manage-additional-ips-new.png" loading="lazy" />
+
+Next, click the <code className="action">⁝</code> button to the right of the Additional IP or block of IP addresses you want to move and select <code className="action">Move Additional IP</code>.
+
+<img className="thumbnail" alt="move Additional" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/move_ip_1_new.png" loading="lazy" />
+
+In the pop-up window, select the service to move the IP address to from the menu.
+
+<img className="thumbnail" alt="move Additional" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/move_ip_2_new.png" loading="lazy" />
+
+Click <code className="action">Next</code>, then <code className="action">Confirm</code>.
+
+:::warning
+Please note that for some products, IP addresses (or blocks) have to be moved to an IP Parking first (a temporary storage location), before they can be moved to the desired product.
+
+To move IP blocks to a specific vRack network, please use **the vRack management interface**, which you can access by opening the <code className="action">Network</code> menu in the left-hand sidebar, then selecting <code className="action">vRack private network</code>.
+
+:::
+
+
+### Moving an Additional IP via the API
+
+Log in to the OVHcloud [API webpage](https://eu.api.ovh.com/).
+
+First, check if the IP address can be moved.
+<br/>To check if the IP can be moved to one of your dedicated servers, use the following call:
+
+<Api version="v1" section="/dedicated/server" method="GET" route={"/dedicated/server/\{serviceName\}/ipCanBeMovedTo"} />
+
+
+- `serviceName`: the destination dedicated server reference
+- `ip`: the Additional IP address to move
+
+To move the IP address, use the following call:
+
+<Api version="v1" section="/dedicated/server" method="POST" route={"/dedicated/server/\{serviceName\}/ipMove"} />
+
+
+- `serviceName`: the destination dedicated server reference
+- `ip`: the Additional IP address to move
+
+### Moving an Additional IP from a So you Start account to an OVHcloud account
+
+To move an Additional IP from a SYS account to an OVHcloud account, there are a few things you need to consider:
+
+- Moving an Additional IP incurs an installation fee. The IP address will not be moved if the invoice remains unpaid.
+- It is not possible to move an Additional IP from an OVHcloud account to a So you Start account.
+- Ensure that the server to which you are moving the Additional IP is in the same compatible region as the IP. See the ‘Limitations’ section below.
+
+To begin, log into your So you Start account and click on <code className="action">IP</code> in the main dashboard.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/sys-ip-section.png" loading="lazy" />
+
+Click on the cogwheel next to the corresponding IP and select <code className="action">Move the failover IP</code>.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/move-ip-sys.png" loading="lazy" />
+
+Select <code className="action">Move to an OVH service</code>, enter your OVHcloud NIC handle and click on <code className="action">Next</code>.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/move-to-ovh.png" loading="lazy" />
+
+This will generate a code (token). Save it.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/token-id.png" loading="lazy" />
+
+Next, [log into your OVHcloud account](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), open the <code className="action">Network</code> menu in the left-hand sidebar and click <code className="action">Public IP Addresses</code>.
+
+Click on the cogwheel on the right side and select <code className="action">Import IP addresses from SyS to OVHcloud</code>.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/import-ip-to-ovh.png" loading="lazy" />
+
+In the pop-up window, enter the Additional IP (or block) and the token retrieved from the So you Start account, then click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/Step-1.png" loading="lazy" />
+
+Select the destination server and click on <code className="action">Next</code>. If the dedicated server is compatible with the IP, a green message will appear. If it is not, you will receive an error message.
+
+Click on <code className="action">Next</code>.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/Step-2.png" loading="lazy" /><br/>
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/Step-2.1.png" loading="lazy" />
+
+In the next window, the duration is automatically selected and the fee is displayed. Click <code className="action">Next</code> to proceed.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/Step-3.png" loading="lazy" />
+
+Check the box <code className="action">Accept the contracts</code> to agree to the terms of the service once you have read them. Then, click on <code className="action">Next</code>.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/Step-4.png" loading="lazy" />
+
+Take note of the order summary and click on <code className="action">Confirm</code> to confirm it.
+
+<img className="thumbnail" alt="soyoustart to ovh" src="/images/bare-metal-cloud/dedicated-servers/move-failover-ip/Step-5.png" loading="lazy" />
+
+You will be redirected to a new page to make the payment.
+
+Once the payment is done, your Additional IP will be transferred to your OVHcloud account and linked to the selected server. This process can take some time.
+
+### Limitations <a name="limitations"></a>
+
+Please note that there are certain limitations when moving an additional IP block. The table below shows the compatibility between regions.
+
+For more information, consult our list of [available regions](https://www.ovhcloud.com/en-gb/network/additional-ip/).
+
+| Zones  | eu-west-par | eu-west-gra | eu-west-rbx | eu-west-sbg | eu-west-lim | eu-central-war | eu-west-eri | ca-east-bhs | ca-east-tor | ap-southeast-sgp | ap-southeast-syd |
+|----------------|-------------|-------------|-------------|-------------|-------------|----------------|-------------|-------------|-------------|-------------|-------------|
+| eu-west-par    |      ✅        |      ❌       |     ❌        |     ❌        |      ❌       |      ❌          |       ❌       |       ❌      |     ❌      | ❌      |     ❌      |
+| eu-west-gra    |       ❌      |       ✅       |      ✅       |      ✅      |       ❌       |       ❌         |       ❌        |     ❌        |    ❌        | ❌      |     ❌      |
+| eu-west-sbg    |       ❌        |      ✅       |      ✅       |      ✅       |      ❌       |      ❌           |      ❌       |      ❌        |    ❌        | ❌      |     ❌      |
+| eu-west-rbx |       ❌        |      ✅       |      ✅       |      ✅       |      ❌       |      ❌           |      ❌       |      ❌        |    ❌        | ❌      |     ❌      |
+| eu-west-lim    |        ❌       |      ❌       |      ❌       |     ❌        |     ✅       |      ❌         |      ❌        |     ❌        |     ❌       | ❌      |     ❌      |
+| eu-central-war |      ❌       |      ❌       |     ❌       |      ❌       |      ❌        |       ✅         |       ❌       |       ❌       |       ❌        | ❌      |     ❌      |
+| eu-west-eri    |         ❌      |       ❌      |        ❌     |       ❌     |      ❌       |       ❌         |     ✅        |      ❌         |      ❌       | ❌      |     ❌      |
+| ca-east-bhs    |     ❌        |      ❌       |    ❌         |        ❌    |        ❌       |      ❌          |       ❌      |     ✅        |      ❌       | ❌      |     ❌      |
+| ca-east-tor    |    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ✅     | ❌      |     ❌      |
+| ap-southeast-sgp|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ✅       |     ❌      |
+| ap-southeast-syd|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ❌      |     ✅       |
+
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

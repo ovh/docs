@@ -1,0 +1,90 @@
+---
+title: MX Plan - Konfiguration Ihrer E-Mail-Adresse auf Outlook für macOS
+description: So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook für macOS
+lastUpdated: 2024-10-01
+---
+
+## Einleitung
+
+E-Mail-Adressen aus dem MX Plan Angebot können auf einem kompatiblen E-Mail-Client eingerichtet werden. So können Sie Ihre bevorzugte App für den Versand und den Empfang Ihrer E-Mails verwenden.
+
+**In dieser Anleitung erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf Outlook für Mac einrichten.**
+
+## Voraussetzungen
+
+- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Die Microsoft Outlook-Anwendung ist auf Ihrem Mac installiert.
+- Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+
+:::info
+Sie verwenden Outlook für Windows? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook für Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/).
+
+:::
+
+
+## Beschreibung
+
+### Schritt 1: Account hinzufügen
+
+Nachdem Sie die Outlook-Anwendung auf Ihrem Gerät gestartet haben, können Sie einen Account auf zwei Arten hinzufügen:
+
+- **Wenn Sie die Anwendung zum ersten Mal starten**, öffnet sich ein Konfigurationsassistent und Sie werden dazu aufgefordert, Ihre E-Mail-Adresse einzugeben.
+
+- **Wenn Sie bereits einen Account eingerichtet haben**, klicken Sie am oberen Rand Ihres Bildschirms auf <code className="action">Tools</code> und anschließend auf <code className="action">Konten</code>. Klicken Sie im angezeigten Fenster auf <code className="action">+</code> und dann auf <code className="action">Neues Konto</code>.
+
+<img className="thumbnail" alt="mx plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016-mac/configuration-outlook-2016-mac-step1.png" loading="lazy" />
+
+Geben Sie nun Ihre E-Mail-Adresse ein und klicken Sie anschließend auf <code className="action">Weiter</code>. Wählen Sie aus den angezeigten Anbietern <code className="action">IMAP/POP</code> aus und geben Sie die angeforderten Informationen ein.
+
+|Information|Beschreibung|
+|---|---|
+|Kontotyp|Wir empfehlen, die Standardauswahl **IMAP** zu verwenden. Sie können auch **POP** im Drop-down-Menü auswählen (dann werden Ihre E-Mails lokal in Ihrer Outlook-Anwendung gespeichert).|
+|E-Mail-Adresse|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in Ihrer Outlook-App unterscheiden können.|
+|Benutzername|Geben Sie die vollständige E-Mail-Adresse ein.|
+|Kennwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
+|Eingangsserver|Tragen Sie den Server „ssl0.ovh.net“ ein. Lassen Sie den Haken bei **Für Verbindung SSL verwenden** gesetzt.|
+|Eingangsport|Tragen Sie den Port „993“ ein.|
+|Ausgangsserver|Tragen Sie den Server „ssl0.ovh.net“ ein. Lassen Sie den Haken bei **Für Verbindung SSL verwenden** gesetzt.|
+|Ausgangsport|Tragen Sie den Port „465“ ein.|
+
+Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf <code className="action">Konto hinzufügen</code>. Sind die Angaben korrekt, wird die Verbindung zu Ihrem Account hergestellt.
+
+Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korrekt eingerichtet ist.
+
+<img className="thumbnail" alt="mx plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016-mac/configuration-outlook-2016-mac-step2.png" loading="lazy" />
+
+Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwenden Sie die folgenden technischen Einstellungen für unser MX Plan Angebot:
+
+- **IMAP-Konfiguration**
+
+|Servertyp|Servername|SSL|Port|
+|---|---|---|---|
+|Eingangsserver|ssl0.ovh.net|Ja|993|
+|Ausgangsserver|ssl0.ovh.net|Ja|465|
+
+- **POP-Konfiguration**
+
+|Servertyp|Servername|SSL|Port|
+|---|---|---|---|
+|Eingangsserver|ssl0.ovh.net|Ja|995|
+|Ausgangsserver|ssl0.ovh.net|Ja|465|
+
+### Schritt 2: E-Mail-Adresse verwenden
+
+Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
+
+Eine OVHcloud Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter[Webmail](https://www.ovhcloud.com/de/mail/). Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+
+## Weiterführende Informationen
+
+:::info
+Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Outlook-App auf macOS finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
+
+:::
+
+
+[Konfiguration von E-Mail Pro auf Outlook für Mac](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016-mac/)
+
+[Konfiguration von Exchange auf Outlook für Mac](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016-mac/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

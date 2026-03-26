@@ -1,0 +1,163 @@
+---
+title: Zarządzanie kontaktami swoich usług
+description: Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud
+lastUpdated: 2026-02-11
+---
+
+## Wprowadzenie
+
+Większość usług tworzonych w OVHcloud jest zarządzana przez wiele kontaktów. Każdy z tych kontaktów jest przypisany do identyfikatora klienta. 
+
+**Dowiedz się, jak zarządzać kontaktami Twoich usług OVHcloud.**
+
+:::info
+OVHcloud oferuje system [IAM policy](/guides/account-and-service-management/account-information/iam-policy-ui/) umożliwiający delegowanie dostępu do innych kont klientów.  
+Reguły IAM umożliwiają zdefiniowanie precyzyjnego dostępu z zachowaniem identyfikowalności operacji.
+
+:::
+
+
+## Definicja
+
+Istnieją trzy rodzaje kontaktów:
+
+- **Kontakt administracyjny** zarządza kwestiami administracyjnymi i technicznymi usługi. Ma uprawnienia do modyfikowania wszystkich kontaktów i może wprowadzać zmiany w informacjach abonenta usługi, takich jak nazwy nazwy domeny.
+- **Kontakt techniczny** zarządza wyłącznie kwestiami technicznymi usługi.
+- **Kontakt księgowy** zarządza wyłącznie płatnościami usługi, w tym przelewami. Kontakt ten otrzymuje zwłaszcza powiadomienia o odnowieniu. 
+
+Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas tworzenia konta klienta w OVHcloud. Najczęściej składa się on z dwóch liter i następujących po nich cyfr. Na przykład: **aa00000-ovh**. Podczas zamawiania usług identyfikator ten jest do nich przypisany jako kontakt.
+
+<img className="thumbnail" alt="Contact management" src="/images/account-and-service-management/account-information/managing-contacts/managing_contacts_scheme.png" loading="lazy" />
+
+## Wymagania początkowe
+
+- Dostęp do adresu e-mail podanego w profilu.
+- Wystarczające uprawnienia dotyczące danej usługi.
+- Posiadanie identyfikatora klienta nowego kontaktu (dla którego wprowadzasz zmianę).
+- Nowy kontakt musi mieć dostęp do adresu e-mail podanego w jego profilu.
+- Stary i nowy kontakt księgowy muszą mieć uregulowane płatności.
+- Nowy kontakt księgowy musi dysponować ważnym sposobem płatności na swoim koncie OVHcloud.
+
+{/* CP-NAV-START:account-contacts */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Zarządzanie kontaktami](https://manager.eu.ovhcloud.com/#/account/contacts/services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > <code className="action">Moje kontakty</code>
+
+---
+{/* CP-NAV-END:account-contacts */}
+
+## W praktyce
+
+:::info
+Zarządzanie kontaktami jest możliwe tylko między dwoma kontami OVHcloud znajdującymi się w tej samej strefie geograficznej.
+Na przykład nie można zarządzać kontaktami między kontem w Europie i kontem w Kanadzie.
+
+:::
+
+
+### Dostęp do zarządzania kontaktami <a name="gestion_des_contacts"></a>
+
+Otwórz stronę [Zarządzanie kontaktami](https://manager.eu.ovhcloud.com/#/account/contacts/services).
+
+<img className="thumbnail" alt="Contact management" src="/images/assets/screens/control-panel/product-selection/right-menu/my-contacts.png" loading="lazy" />
+
+Pojawi się tabela, która umożliwia wyświetlenie różnych usług, dla których Twój identyfikator klienta jest podany jako kontakt.
+
+<img className="thumbnail" alt="Contact management" src="/images/account-and-service-management/account-information/managing-contacts/managing_contacts_02.png" loading="lazy" />
+
+### Zmiana kontaktów usługi
+
+Na stronie zarządzania kontaktami kliknij przycisk <code className="action">...</code> po prawej stronie usługi, którą chcesz zmienić, a następnie kliknij <code className="action">Zmień kontakty</code>. Podaj nowy kontakt lub nowe kontakty, a następnie kliknij przycisk <code className="action">Zatwierdź</code>.
+
+<img className="thumbnail" alt="Contact management" src="/images/account-and-service-management/account-information/managing-contacts/managing_contacts_03.png" loading="lazy" />
+
+<img className="thumbnail" alt="Contact management" src="/images/account-and-service-management/account-information/managing-contacts/managing_contacts_04.png" loading="lazy" />
+
+Do kontaktów, których dotyczy ten proces modyfikacji, zostanie wysłany e-mail.
+
+:::warning
+Zmiana kontaktu nie zostanie dozwolona, jeśli stare lub nowe konto klienta posiada jedną lub więcej niezapłaconych faktur.
+
+:::
+
+
+#### Jestem kontaktem administracyjnym <a name="administrateur"></a>
+
+Jako administrator możesz przeprowadzać różne działania wobec kontaktów dla usługi, na przykład:
+
+- Wyznaczać nowy kontakt do zarządzania technicznego i/lub księgowego. Konieczne jest potwierdzenie z Twojej strony oraz ze strony nowego kontaktu. Stary kontakt otrzyma e-mail informujący o zmianie, gdy ta zostanie zakończona.
+- Przywracać zarządzanie techniczne i/lub księgowe. Ten wniosek wymaga zatwierdzenia. Stary kontakt otrzyma e-mail informujący o zmianie. 
+- Wyznaczać nowy kontakt administracyjny na swoje miejsce. Konieczne jest potwierdzenie z Twojej strony oraz ze strony nowego kontaktu. 
+
+#### Jestem kontaktem technicznym
+
+Możesz wyznaczyć wyłącznie inny kontakt techniczny na Twoje miejsce. Konieczne jest potwierdzenie z Twojej strony oraz ze strony nowego kontaktu technicznego.
+
+#### Jestem kontaktem księgowym <a name="technique"></a>
+
+Możesz wyznaczyć wyłącznie inny kontakt księgowy na swoje miejsce. Konieczne jest potwierdzenie z Twojej strony oraz ze strony nowego kontaktu księgowego.
+
+### Zatwierdzenie, odrzucenie lub śledzenie zmiany kontaktu
+
+Aby śledzić bieżące wnioski i zarządzać nimi, kliknij kartę <code className="action">Moje wnioski</code>. Tutaj możesz zaakceptować lub odrzucić wniosek.
+
+<img className="thumbnail" alt="Contact management" src="/images/account-and-service-management/account-information/managing-contacts/managing_contacts_05.png" loading="lazy" />
+
+W tym celu musisz mieć kod potwierdzający (zwany również tokenem) zawarty w e-mailu z prośbą o zatwierdzenie lub odrzucenia wniosku.
+
+:::info
+Ten jednorazowy kod jest przypisany do konkretnej osoby i różni się dla obu kontaktów.
+
+:::
+
+
+Otrzymany e-mail zawiera również link prowadzący bezpośrednio do strony umożliwiającej zatwierdzenie lub odrzucenie wniosku. Gdy klikniesz ten link, kod potwierdzający (token) zostanie automatycznie wstępnie uzupełniony.
+
+Jeśli jeden z kontaktów nie otrzymał e-maila, może to na przykład oznaczać, że adres kontaktowy podany w profilu jest nieaktualny. Można to sprawdzić w swoim profilu, w razie potrzeby zmienić adres, a następnie ponownie poprosić o przesłanie e-maila, klikając przycisk <code className="action">Prześlij ponownie wniosek</code>.
+
+<img className="thumbnail" alt="Contact management" src="/images/account-and-service-management/account-information/managing-contacts/managing_contacts_06.png" loading="lazy" />
+
+Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) zaktualizują się w ciągu kilku minut.
+
+<img className="thumbnail" alt="Contact management" src="/images/account-and-service-management/account-information/managing-contacts/managing_contacts_007.png" loading="lazy" />
+
+Zmiana kontaktu zostanie wykonana w ciągu kilku minut od zatwierdzenia przez oba kontakty wniosku. Następnie otrzymają e-mail informujący ich o pomyślnym rozpatrzeniu wniosku.
+
+### Przykład: zarządzanie stroną www na webmasterze
+
+Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](https://www.ovhcloud.com/pl/web-hosting/ecommerce-website/). Skontaktowałeś się z jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
+
+:::warning
+Odradzamy udzielenie jakiejkolwiek osobie trzeciej danych dostępowych do Twojego [Panelu klienta](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+:::
+
+
+W takiej sytuacji daj swojemu dostawcy prawo do [kontaktu technicznego](#gestion_des_contacts) na Twoim hostingu OVHcloud. Dostęp do strony pozwoli mu na wykonanie operacji niezbędnych do uruchomienia strony (dodanie nazwy domeny lub subdomeny do strony podpiętej w opcji MultiSite, zainstalowanie modułu za 1 kliknięciem, zmiana hasła FTP lub bazy danych, utworzenie certyfikatu SSL, itp.).
+
+Jeśli Twoja nazwa domeny nie jest powiązana z Twoim hostingiem i chcesz powierzyć niezbędne operacje webmasterowi, daj mu również prawo do "[kontaktu technicznego](#gestion_des_contacts)" w [strefie DNS](/guides/web-cloud/domains/dns-zone-edit/) nazwy domeny.
+
+Prawo "[kontakt techniczny](#gestion_des_contacts)" nie pozwala na zmianę kontaktów administratora lub fakturowanie usługi. Dzięki niemu webmaster nie będzie miał dostępu do faktur lub zamówień, do odnowienia usług ani do sposobów płatności. Nie pozwoli mu również na [przeniesienie nazwy domeny](/guides/web-cloud/domains/transfer-outgoing-domain/) z innego dostawcy lub na [zmianę abonenta](/guides/web-cloud/domains/trade-domain/).
+
+Jako [kontakt administracyjny](#administrateur) będziesz mógł w każdym momencie pobrać "[kontakt techniczny](#technique)" Twojej usługi.
+
+### Przypadek abonenta nazwy domeny
+
+Podczas zamawiania usługi OVHcloud zdefiniowałeś dla niej abonenta. Abonent może, jeśli nie ma dostępu do kont OVHcloud powiązanych z usługą, którą chce odzyskać, przekazać abonenta nazwy domeny innej osobie lub odzyskać administrację nazwy domeny, stosując następujące procedury:
+
+[Zmiana abonenta usługi](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeOwner.cgi)
+
+[Zmianę kontaktów: administracyjnego, technicznego oraz księgowego dla Państwa nazwy domeny](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeContacts.cgi)
+
+Każda procedura jest monitorowana za pomocą wiadomości e-mail i konieczna będzie weryfikacja tożsamości. Szczegółowe instrukcje będą udzielane przez cały czas trwania procedury.
+
+## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

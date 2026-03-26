@@ -1,0 +1,179 @@
+---
+title: Backing up and restoring a Kubernetes cluster in Managed Rancher Service
+description: Find out how to backup and restore a Kubernetes cluster and configure recurring etcd backups to an OVHcloud Object Storage S3 on a Managed Rancher Service
+lastUpdated: 2024-09-11
+---
+
+## Objective
+
+Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. 
+
+In this guide, you will use Rancher to backup and restore a Kubernetes cluster, take a snapshot and save the etcd recurring snapshots on an OVHcloud Object Storage bucket.
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
+- An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/guides/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/) guide for more information)
+- An access to the Rancher UI to operate it (see the [connecting to the Rancher UI](/guides/public-cloud/containers-orchestration/managed-rancher-service/create-update-rancher/) guide for more information)
+- A Kubernetes cluster created or imported in Rancher
+
+## Instructions
+
+In the Rancher UI, Kubernetes cluster's `etcd` backup and recovery can be easily performed.
+
+It is recommended to configure recurrent `etcd` snapshots for all production clusters. Additionally, one-time snapshots can be taken as well.
+
+Snapshots of the etcd database are taken and saved either [locally onto the etcd nodes](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/backup-restore-and-disaster-recovery/back-up-rancher-launched-kubernetes-clusters#local-backup-target) or to a S3 **\*** compatible target like our OVHcloud Object Storage. 
+
+The advantages of configuring Object Storage is that if all `etcd` nodes are lost, your snapshot is saved remotely and can be used to restore the cluster.
+
+### Create an OVHcloud Object Storage backup
+
+First, you need to have an Object Storage container. If you don't already have one, you can follow the [Creating an Object Storage container](/guides/storage-and-backup/object-storage/pcs-create-container/) guide.
+
+Note that you need to create a `Object Storage API` object:
+
+<img className="thumbnail" alt="Create Object Storage Object Storage" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/s3-object.png" loading="lazy" />
+
+In this guide, our Object Storage container is named `etcd-rancher` and its region is `GRA`.
+
+<img className="thumbnail" alt="OVHcloud Object Storage Rancher" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/s3.png" loading="lazy" />
+
+:::info
+Save the Object Storage credentials, you will use the `Object Storage access key` and the `Object Storage secret key` in the configuration of the upcoming etcd backup.
+
+:::
+
+
+Click the name of your object storage bucket to see its information:
+
+<img className="thumbnail" alt="OVHcloud Object Storage Rancher bucket information" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/s3-details.png" loading="lazy" />
+
+:::info
+Copy the ID/name of your bucket and the endpoint, this information will be needed in the next step on the Rancher user interface.
+
+:::
+
+
+### Enable etcd recurring backup snapshots to Object Storage on an existing Kubernetes cluster
+
+Log into your Managed Rancher Service UI.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Service UI" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/rancher-ui.png" loading="lazy" />
+
+Click on <code className="action">Cluster Management</code> in the menu.
+
+For the chosen cluster, click on the three-dot button and then on the <code className="action">Edit Config</code> button.
+
+<img className="thumbnail" alt="OVHcloud Managed Rancher Service UI" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/rancher-edit-config.png" loading="lazy" />
+
+In the **Cluster Configuration** section, click on the **etcd** tab.<br/>
+In **Automatic Snapshots**, change the radio button from `Disable` to `Enable` and change the `Cron Schedule` according to your needs.
+
+<img className="thumbnail" alt="Rancher automatic snapshots" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/automatic-snapshots.png" loading="lazy" />
+
+In this configuration of automatic etcd snapshots, you will have a snapshot every hour at hh:35 minutes and you will keep the last 5 snapshots per nodes.
+
+In **Backup Snapshots to Object Storage**, change the radio button from `Disable` to `Enable`.
+
+In the Authentication list, select the `Create a S3-Compatible Auth Secret`.
+Fill in the Object Storage Access Key, the Object Storage Secret Key and the bucket name.
+Also fill in the `Region` (in lowercase).
+
+:::warning
+The region must be typed in lowercase. If your bucket is in the `GRA` region, you must enter `gra`.
+
+:::
+
+
+Fill in the endpoint `s3.gra.io.cloud.ovh.net`: 
+
+:::warning
+It is a copy of the endpoint of your Object Storage bucket without `https://`.
+
+:::
+
+
+<img className="thumbnail" alt="OVHcloud Object Storage Rancher" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/rancher-etcd-config.png" loading="lazy" />
+
+Finally, click to activate the checkbox `Accept any certificate (insecure)` and click the <code className="action">Save</code> button. 
+
+### Check the etcd snapshots
+
+In **Cluster Management**, click on your cluster.
+
+<img className="thumbnail" alt="OVHcloud Object Storage Rancher" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/rancher-cluster.png" loading="lazy" />
+
+To check and retrieve the backup snapshots, click on the **Snapshots** tab.
+
+<img className="thumbnail" alt="OVHcloud Object Storage Rancher snapshots local" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/rancher-backup-local.png" loading="lazy" />
+
+<img className="thumbnail" alt="OVHcloud Object Storage Rancher snapshots " src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/rancher-backup-s3.png" loading="lazy" />
+
+The name of the snapshot is automatically generated, it is based on the type (whether the snapshot is manual: `on-demand` or recurring: `etcd-snapshot`). The naming convention is as follows:
+
+`<name>-<node>-<timestamp>`
+
+You can also verify in your bucket in the OVHcloud Control Panel that the snapshots have been successfully saved.
+
+<img className="thumbnail" alt="OVHcloud object storage bucket etcd snapshots" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/s3-etcd.png" loading="lazy" />
+
+### Create a one-time snapshot
+
+In addition to recurring snapshots, you may want to take a "one-time" snapshot.
+
+It can be useful, for example, before upgrading the Kubernetes version of a cluster and ugrading the Service Mesh version of a cluster. In general, it is recommended to backup the state of the cluster to protect against upgrade failure.
+
+On the **Cluster Management** view on Rancher UI, click on the checkbox near your Kubernetes cluster and click the <code className="action">Take Snapshot</code> button.
+
+<img className="thumbnail" alt="Rancher Take Snapshot" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/take-snapshot.png" loading="lazy" />
+
+<img className="thumbnail" alt="Rancher Snapshot in progress" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/snapshot-in-progress.png" loading="lazy" />
+
+### Restore from a snapshot
+
+On the **Snapshots** tab of your Kubernetes cluster in the Rancher UI, click the <code className="action">Restore</code> button.
+
+<img className="thumbnail" alt="Rancher etcd snapshots" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/snapshots.png" loading="lazy" />
+
+On Rancher, you can choose different restore types:
+
+- Only etcd
+- Kubernetes version and etcd
+- Cluster config, Kubernetes version and etcd
+
+In the **Restore Snapshot** popup, click on the restore type you want to do and click the <code className="action">Restore</code> button.
+
+<img className="thumbnail" alt="Rancher Restore Snapshot" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/restore-snapshot.png" loading="lazy" />
+
+After clicking the button, the restore from the snapshot is in progress.
+
+<img className="thumbnail" alt="Rancher restore progressing" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/restore-in-progress.png" loading="lazy" />
+
+<img className="thumbnail" alt="Rancher restore in progress" src="/images/public-cloud/containers-orchestration/managed-rancher-service/backup-restore-etcd-s3/restore-in-progress-2.png" loading="lazy" />
+
+The restoration of a cluster can take a few minutes.
+
+### Known issues
+
+#### Failed to test for existence of bucket xxx: Access Denied
+
+If you have this following error message: `failed to test for existence of bucket etcd-rancher: Access Denied.`, you may have an error in the Object Storage endpoint.
+
+Remove the `https://` scheme in the endpoint URL and check the endpoint URL of your OVHcloud Object Storage bucket.
+
+A correct Object Storage endpoint should be `s3.gra.io.cloud.ovh.net`.
+
+## Go further
+
+- Follow the Rancher official documentation to know more about [backup and restore](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/backup-restore-and-disaster-recovery/back-up-rancher-launched-kubernetes-clusters).
+
+- To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/de/public-cloud/managed-rancher-service/).
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+
+- Join our [community of users](https://community.ovhcloud.com/community/en).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -1,0 +1,147 @@
+---
+title: Jak zmienić zasoby serwera VPS?
+description: Dowiedz się, jak zmienić parametry pamięci RAM, vCPU i przestrzeni dyskowej w Panelu klienta
+lastUpdated: 2025-09-08
+---
+
+
+
+## Wprowadzenie
+
+Usługi VPS od OVHcloud gwarantują elastyczność, niezawodność i wydajność w przypadku różnorodnych potrzeb hostingowych. Możesz przeprowadzić aktualizację pamięci RAM, vCPU lub przestrzeni dyskowej w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+**Dowiedz się, jak dodać vCores, pamięć i przestrzeń dyskową do usługi VPS.**
+
+## Wymagania początkowe
+
+- Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) w Panelu klienta OVHcloud
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">Prywatne serwery wirtualne</code> > Wybierz VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+## W praktyce
+
+:::info
+Opcje aktualizacji dostępne w Panelu klienta zależą od gamy i modelu wybranego serwera VPS. Poniższe zrzuty ekranu mają charakter ilustracyjny i nie odnoszą się do konkretnego scenariusza modernizacji VPS.
+
+:::
+
+
+Następnie możesz uaktualnić swoje vCores (`1`), pamięć (`2`) lub przestrzeń dyskową (`3`).
+
+<img className="thumbnail" alt="Uaktualnij zasoby" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade01.png" loading="lazy" />
+
+### 1. Aby dodać **vCores**
+
+Na karcie **Strona główna** w panelu **Twoja konfiguracja** kliknij opcję <code className="action">Dodaj vCores i zmień gamę na wyższą</code>.
+
+Wybierz nowy model i kliknij na <code className="action">Dalej</code>.
+
+<img className="thumbnail" alt="Uaktualnij zasoby" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade02.png" loading="lazy" />
+
+Wybierz opcje pamięci i przestrzeni dyskowej i kliknij na <code className="action">Dalej</code>.
+
+<img className="thumbnail" alt="Uaktualnij zasoby" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade03.png" loading="lazy" />
+
+Zaakceptuj (<code className="action">☑</code>) warunki **Regulaminy** i kliknij na <code className="action">Dalej</code>.
+
+<img className="thumbnail" alt="Uaktualnij zasoby" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade04.png" loading="lazy" />
+
+Przejrzyj zmiany i kliknij na <code className="action">Zamów</code>.
+
+<img className="thumbnail" alt="Uaktualnij zasoby" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade05.png" loading="lazy" />
+
+### 2. Aby uaktualnić **Pamięć**
+
+Na karcie **Strona główna** w panelu **Konfiguracja** kliknij odpowiednią ilość pamięci. Dostępne opcje zależą od aktualnej gamy serwerów VPS.
+
+W wyskakującym okienku kliknij przycisk <code className="action">Zatwierdź i zapłać</code>, aby sfinalizować zamówienie.
+
+<img className="thumbnail" alt="Uaktualnij zasoby" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade06.png" loading="lazy" />
+
+### 3. Aby uaktualnić z **Storage**
+
+Na karcie **Strona główna** w panelu **Twoja konfiguracja** kliknij wybraną ilość przestrzeni dyskowej. Dostępne opcje zależą od aktualnej gamy serwerów VPS.
+
+W wyskakującym okienku kliknij przycisk <code className="action">Zatwierdź i zapłać</code>, aby sfinalizować zamówienie.
+
+<img className="thumbnail" alt="Uaktualnij zasoby" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade07.png" loading="lazy" />
+
+Zapoznaj się z przewodnikiem dotyczącym następujących kroków: [Jak rozdzielić serwer VPS po aktualizacji pamięci masowej](/guides/bare-metal-cloud/virtual-private-servers/upsize-vps-partition/)
+
+## FAQ
+
+<details>
+
+<summary>Czy zachowam ten sam adres IP?</summary>
+
+
+Tak, po aktualizacji VPS zachowasz ten sam adres IP.
+
+</details>
+
+
+<details>
+
+<summary>Czy moje dane będą przechowywane na serwerze?</summary>
+
+
+Tak, po uaktualnieniu zachowasz dane. Podczas uaktualniania dysku może być konieczne rozszerzenie partycji.
+
+</details>
+
+
+<details>
+
+<summary>Co się stanie z kopią zapasową/snapshotem? Czy mogę korzystać z tej usługi na nowym serwerze VPS?</summary>
+
+
+Tak. Po uaktualnieniach nadal będziesz mieć dostęp do kopii zapasowych i snapshotów.
+
+</details>
+
+
+<details>
+
+<summary>Co się stanie z licencją na oprogramowanie na starym serwerze VPS? Czy mogę automatycznie przenieść ją na nowy VPS?</summary>
+
+
+Jeśli posiadasz aktywną licencję, pozostanie ona przypisana do serwera VPS. Cena może ulec zmianie w zależności od umowy licencyjnej lub wymagań dostawcy.  
+Jeśli w licencji zostaną wprowadzone zmiany, zostaną one wyjaśnione przed przeprowadzeniem aktualizacji serwera VPS.
+
+</details>
+
+
+<details>
+
+<summary>Czy prędkość zmienia się?</summary>
+
+
+W niektórych przypadkach prędkość może ulec zmianie, na przykład podczas przechodzenia VPS na niższy poziom.
+
+</details>
+
+
+<details>
+
+<summary>Czy aktualizacja byłaby natychmiastowa, czy też miałbym czas na wykorzystanie obu jednocześnie (konfigurowanie, przesyłanie danych, itp.)?</summary>
+
+
+Aktualizacja zostanie wykonana natychmiast, z zachowaniem wszystkich danych. Aktualizacja spowoduje zwiększenie zasobów istniejącego serwera VPS.
+
+</details>
+
+
+## Sprawdź również
+
+[VPS FAQ](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

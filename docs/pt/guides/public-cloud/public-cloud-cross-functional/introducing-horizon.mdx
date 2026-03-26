@@ -1,0 +1,134 @@
+---
+title: Apresentação do Horizon
+description: Descubra as principais secções da interface Horizon
+lastUpdated: 2024-02-09
+---
+
+:::info
+Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+
+:::
+
+
+## Objetivo
+
+A interface Horizon, que foi originalmente proposta com OpenStack, foi adaptada pela OVHcloud de forma a oferecer funcionalidades complementares às disponíveis na Área de Cliente OVHcloud.
+
+**Descubra as principais secções da interface Horizon.**
+
+## Requisitos
+
+- Um [projeto Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) na sua conta OVHcloud.
+- **[Opcional desde setembro de 2023]** Um utilizador [OpenStack](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/) criado no seu projeto. Esta etapa é facultativa, pois implementámos uma autenticação única (SSO: *Single Sign-On*) entre a Área de Cliente OVHcloud e Horizon.
+
+## Instruções
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Caminho de navegação:** <code className="action">Public Cloud</code> > Selecione o seu projeto
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+### Conectar-se ao OpenStack Horizon
+
+* Para se ligar a um utilizador OpenStack específico: abra a página de ligação ao [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduza os [identificadores OpenStack](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/) previamente criados, depois clique em <code className="action">Connect</code>.
+
+### Seleção da região do centro de dados
+
+Ao contrário da Área de Cliente OVHcloud, o Horizon separa os seus serviços em função da sua região. Pode escolher a região a partir do menu no canto superior esquerdo:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/region2021.png" loading="lazy" />
+
+### Menu do lado esquerdo
+
+Este menu permite que você navegue rapidamente pelo projeto e seus vários recursos.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/leftmenu2021.png" loading="lazy" />
+
+### Menu lateral esquerdo
+
+Este menu permite-lhe navegar rapidamente no projeto e nas diferentes funcionalidades associadas.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/leftmenu2021.png" loading="lazy" />
+
+#### Compute
+
+##### **Vista geral (*Overview*)**
+
+- **Resumo das quotas (*Limit Summary*)**
+
+O Horizon oferece uma síntese das quotas, o que lhe permite ver os recursos ocupados e disponíveis para os seus projetos:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/quotas2021.png" loading="lazy" />
+
+- **Resumo da utilização (*Usage Summary*)**
+
+De seguida, surge um resumo da utilização das instâncias do seu projeto. O período de pesquisa é personalizável de modo a limitar este resumo a um período de tempo desejado.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/usagesummary2021.png" loading="lazy" />
+
+- **Modo de utilização (*Usage*)**
+
+Está igualmente disponível um resumo das suas "utilizações". Trata-se de um resumo dos diferentes serviços associados ao projeto, como por exemplo a lista das instâncias.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/usage2021.png" loading="lazy" />
+
+O resumo pode ser descarregado em formato CSV, o que permite extrair as informações para que as possa analisar por outras ferramentas. Para isso, basta clicar em <code className="action">Download CSV Summary</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/csv2021.png" loading="lazy" />
+
+- **Instances**
+
+Esta página permite listar e administrar as instâncias. É aqui, por exemplo, que é possível criar novas instâncias, pausá-las, aceder à consola da instância e muito mais.
+
+- **Images**
+
+Liste e administre, através deste menu, as imagens, ou seja, os templates e snapshots associados ao seu projeto.
+
+- **Key Pairs**
+
+Pode aqui listar e criar as suas chaves SSH para a ligação às suas instâncias.
+
+##### **Volumes**
+
+Este menu permite-lhe listar e administrar os volumes, assim como os backups e snapshots de volume.
+
+<img className="thumbnail" alt="volume" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/volumes2021.png" loading="lazy" />
+
+##### **Network**
+
+Liste e administre aqui as suas redes assim como os diferentes grupos de segurança. 
+
+<img className="thumbnail" alt="network" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/network2021.png" loading="lazy" />
+
+##### **Orchestration**
+
+Este menu permite-lhe orquestrar várias aplicações cloud compostas.<br/>
+Para mais informações queira consultar a [documentação OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html).
+
+<img className="thumbnail" alt="orquestração" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/orchestration2021.png" loading="lazy" />
+
+#### Identity
+
+Este menu permite listar as informações sobre os seus projetos.
+
+### Menu utilizador
+
+No canto superior direito da interface Horizon, um menu de utilizador permite-lhe nomeadamente: 
+
+- Alterar os parâmetros de visualização da interface.
+- Descarregar um ficheiro « OpenRC » com os seus dados de utilizador.
+- Desligar-se da interface Horizon.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/introducing-horizon/username2021.png" loading="lazy" />
+
+## Quer saber mais?
+
+[Familiarizar-se com a interface Public Cloud](/guides/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me/)
+ 
+Fale com a nossa comunidade de utilizadores [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,246 @@
+---
+title: Impostare un DNS dinamico (DynHost/DynDNS) per il tuo dominio
+description: Questa guida ti mostra come configurare un record DNS dinamico per il tuo dominio OVHcloud
+lastUpdated: 2025-04-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Obiettivo
+
+La zona **D**omain **N**ame **S**ystem (**DNS**) di un dominio costituisce il file di configurazione di quest'ultimo. È composta da informazioni tecniche chiamate *record DNS*. La zona DNS è, in un certo senso, come un centro di deviazioni. 
+
+Per maggiori informazioni, consulta le nostre guide:
+
+- [Scopri tutto sui server DNS](/guides/web-cloud/domains/dns-server-general-information/)
+- [Sapere tutto sulla zona DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Scopri tutto sui record DNS](/guides/web-cloud/domains/dns-zone-records/)
+
+L'aggiornamento "dinamico" di un record DNS può evitare un'interruzione prolungata di uno dei tuoi servizi se non disponi di un indirizzo IP detto "fisso" (che non cambia).
+
+Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali della tua azienda o a casa, passando per la *box* del tuo **F**ourneur d'**A**ccesso a **I**nternet (**FAI**)) un server di videogiochi senza beneficiare di un indirizzo IP "fisso".
+
+:::info
+Qualsiasi record "A" o "AAAA" con un TTL (**T**ime **T**o **L**ive) di 60 secondi è considerato DynHost. Il TTL è un valore che indica il periodo di tempo durante il quale un record DNS viene memorizzato nella cache dai server DNS prima di essere aggiornato.
+
+:::
+
+
+**Questa guida ti mostra come configurare un record DNS dinamico (DynHost) per il tuo dominio OVHcloud.**
+
+## Prerequisiti
+
+- Disporre di un dominio.
+- Disporre di una zona DNS OVHcloud per il dominio in questione.
+- Utilizzare i server DNS di OVHcloud per la configurazione del dominio in questione
+- Il DynHost da creare non deve essere già presente nella zona DNS OVHcloud del dominio come record di tipo A o AAAA
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zone DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Zone DNS</code> > Seleziona il tuo nome di dominio
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+**Se il dominio non utilizza i server DNS forniti da OVHcloud**, contatta il provider che ne gestisce la configurazione DNS per conoscere la procedura da seguire.
+
+**Se il dominio è registrato in OVHcloud**, verifica che utilizzi la nostra configurazione. Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Domini](https://manager.eu.ovhcloud.com/#/web-domains/domain), poi seleziona il dominio interessato.
+    
+    <img className="thumbnail" alt="Domain Names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Seleziona la scheda <code className="action">Server DNS</code> una volta posizionato sul dominio interessato.
+    
+    <img className="thumbnail" alt="DNS servers" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-servers.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo dominio. A ogni riga corrisponde un server DNS.
+    
+    <img className="thumbnail" alt="DNS servers" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::tip[Success]
+Per sapere se utilizzi o meno i server DNS di OVHcloud, questi ultimi hanno una delle 2 forme seguenti:
+
+- `nsXX.ovh.net` e `dnsXX.ovh.net` **o** `nsXXX.ovh.net` e `dnsXXX.ovh.net` (dove ogni `X` rappresenta una cifra compresa tra **0** e **9**)
+- `ns200.anycast.me` e `dns200.anycast.me` (se avete attivato l’opzione [DNS anycast](https://www.ovhcloud.com/it/domains/options/))
+
+Se necessario, consulta la guida relativa ai [server DNS](/guides/web-cloud/domains/dns-server-general-information/) per maggiori informazioni.
+
+:::
+
+
+## Procedura
+
+### 1 - Crea un utente DynHost <a name="step1"></a>
+
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Zone DNS](https://manager.eu.ovhcloud.com/#/web/zone), poi seleziona il dominio interessato.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Seleziona la scheda <code className="action">DynHost</code> una volta posizionato sul dominio interessato.
+    
+    <img className="thumbnail" alt="DynHost" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Clicca sul pulsante <code className="action">Gestisci gli accessi</code> e poi su <code className="action">Crea un identificativo</code>.
+    
+    <img className="thumbnail" alt="DynHost tab empty" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost/tab-empty.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 4">
+    Nella nuova finestra, inserisci le informazioni richieste:
+    
+    |Campo|Descrizione|
+    |---|---|
+    |Suffisso dell’identificativo|Inserisci un suffisso all’identificativo DynHost che stai creando.|
+    |Sottodominio|Specifica il sottodominio per cui vuoi creare il record DNS dinamico. Per gestire tutti i sottodomini con un solo identificativo, indica just `*` nel modulo di registrazione|
+    |Password|Associa una password all’identificativo DynHost e confermala.|
+    
+    :::tip[Success]
+    Per installare un DynHost direttamente per il tuo dominio, inserisci solo `*` nel modulo di inserimento intitolato <code className="action">Sottodominio</code>.
+
+    :::
+
+    
+    <img className="thumbnail" alt="Create a DynHost username" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 5">
+    Dopo aver completato tutti i campi, clicca su <code className="action">Conferma</code>. L’identificativo compare nella tabella della pagina corrente.
+    
+    <img className="thumbnail" alt="DynHost tab" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost/tab.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Ripeti questa operazione per ogni identificativo DynHost da aggiungere.
+
+### 2 - Crea il record DNS dinamico (DynHost) <a name="step2"></a>
+
+A questo punto è necessario creare il record DNS che dovrà essere aggiornato dinamicamente. Ti ricordiamo che per eseguire questa operazione il record non deve essere già presente nella zona DNS OVHcloud del dominio come record A o AAAA. Per verificarlo ed eventualmente rimuoverlo, consulta la guida [Modificare una zona DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+
+Una volta che tutto è pronto per creare il record, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Zone DNS](https://manager.eu.ovhcloud.com/#/web/zone), poi seleziona il dominio interessato.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Seleziona la scheda <code className="action">DynHost</code> una volta posizionato sul dominio interessato.
+    
+    <img className="thumbnail" alt="DynHost" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Clicca sul pulsante <code className="action">Aggiungi un DynHost</code>.
+    
+    <img className="thumbnail" alt="DynHost tab empty" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost/tab-empty.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 4">
+    Nella nuova finestra, inserisci le informazioni richieste:
+    
+    |Campo|Descrizione|
+    |---|---|
+    |Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost.<br/><br/>**Se vuoi installare un DynHost direttamente per il tuo dominio, lascia vuoto questo modulo di inserimento**|
+    |IP di destinazione|Inserisci l'indirizzo IP (IPv4 o IPv6) che deve essere utilizzato dal record DNS. È generalmente l'indirizzo IP pubblico del tuo *box* Internet o del tuo server auto-ospitato.<br/><br/>In base al principio del DynHost, verrà aggiornato automaticamente in seguito.<br/><br/>In questo modulo deve essere inserito un solo indirizzo IP.|
+    
+    :::warning
+    Per creare un record DNS dinamico (DynHost), l’utilizzo di una *wildcard* (inserendo solo il carattere `*`) nel modulo <code className="action">Sottodominio</code> non è disponibile.
+
+    :::
+
+    
+    <img className="thumbnail" alt="Create a DynHost" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png" loading="lazy" />
+
+Dopo aver completato tutti i campi, clicca su <code className="action">Conferma</code>. Il record DynHost dovrebbe comparire nella tabella della pagina corrente.
+  </Tab>
+</Tabs>
+
+
+Ripeti questa operazione per ogni record DynHost che da aggiungere.
+
+:::info
+Se il dominio o sottodominio deve essere configurato in modo dinamico, ad esempio con un IPv4 e un IPv6, è possibile creare due record DNS dinamici per lo stesso dominio o sottodominio. Il primo record DNS dinamico sarà il record IPv4 e il secondo il record IPv6.
+
+:::
+
+
+### 3 - Automatizza la modifica del DynHost
+
+Una volta creato l'[utente](#step1) e l'[record DynHost](#step2), è necessario automatizzare l'aggiornamento del record DNS affinché sia realizzato in modo dinamico. Per effettuare questa operazione è necessario utilizzare un client/software che verificherà regolarmente se l'indirizzo IP di destinazione è cambiato per poterlo aggiornare automaticamente.
+
+:::warning
+L'installazione e la configurazione del software/client devono essere realizzati con le proprie conoscenze. Di seguito ti forniamo alcune informazioni su come procedere. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVH non sarà infatti in grado di fornirti assistenza. 
+Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+
+:::
+
+
+Il software/cliente può essere utilizzato in diversi modi: 
+
+- può essere installato sul tuo server o sul tuo computer
+- potrebbe essere già disponibile nell'interfaccia del tuo router/*box* Internet, se compatibile. In caso di difficoltà o dubbi, contatta il supporto del tuo **FAI** per effettuare la configurazione.
+
+Una volta scelto e installato il client, è necessario configurarlo utilizzando le informazioni dell'utente DynHost creato precedentemente nello Spazio Cliente OVHcloud.
+
+In base al client utilizzato, oltre agli elementi dell'utente DynHost e del sottodominio in questione può essere necessario un URL di aggiornamento. In questo caso, utilizza l'indirizzo URL qui sotto sostituendo le informazioni generiche:
+
+```bash
+https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+```
+
+|Campo|Sostituire con...|
+|---|---|
+|$HOSTNAME|Il sottodominio interessato dalla modifica|
+|$IP|Il nuovo indirizzo IPv4 o IPv6 di destinazione|
+
+Verifica che l'indirizzo IP di destinazione sia stato aggiornato correttamente. Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Zone DNS](https://manager.eu.ovhcloud.com/#/web/zone), poi seleziona il dominio interessato.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Seleziona la scheda <code className="action">DynHost</code> una volta posizionato sul dominio interessato.
+    
+    <img className="thumbnail" alt="DynHost" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 3">
+    Nella colonna <code className="action">Destinazione</code>, verifica l'indirizzo IP indicato.
+    
+    <img className="thumbnail" alt="DynHost target" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dynhost/target.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::warning
+Le modifiche apportate nella zona DNS attiva di un dominio tramite DynDNS possono provocare un ritardo di alcuni minuti nella propagazione dell'aggiornamento.
+
+:::
+
+
+## Per saperne di più <a name="go-further"></a>
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

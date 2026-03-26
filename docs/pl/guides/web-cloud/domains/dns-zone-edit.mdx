@@ -1,0 +1,310 @@
+---
+title: Modyfikacja strefy DNS
+description: Dowiedz się, jak edytować strefę DNS w Panelu klienta
+lastUpdated: 2026-02-10
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+Skrót **DNS** oznaczający **D**omain **N**ame **S**ystem to zbiór elementów (serwery DNS, strefy DNS, etc.) pozwalających na dopasowanie nazwy domeny do adresu IP.
+
+Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami "[Wszystko o serwerach DNS](/guides/web-cloud/domains/dns-server-general-information/)" i "[Wszystko o strefie DNS](/guides/web-cloud/domains/dns-zone-general-information/)".
+
+**Dowiedz się, jak edytować strefę DNS w Panelu klienta.**
+
+## Wymagania początkowe
+
+- Używanie konfiguracji OVHcloud (serwerów DNS OVHcloud) dla danej nazwy domeny.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Strefy DNS</code> > Wybierz nazwę domeny
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+:::warning
+- Jeśli Twoja nazwa domeny nie używa serwerów DNS OVHcloud, przeprowadź zmianę w interfejsie dostawcy zarządzającego konfiguracją Twojej nazwy domeny.
+
+- Jeśli nazwa domeny jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud. W tym celu i w razie potrzeby sprawdź przewodnik "[Modyfikacja serwerów DNS nazwy domeny OVHcloud](/guides/web-cloud/domains/dns-server-edit/)".
+
+W obu przypadkach należy zachować ostrożność wykonując zmiany na serwerach DNS. Poprzednia konfiguracja, która może zostać zastosowana do Twojej nazwy domeny, nie będzie już aktywna, jeśli nie skonfigurowałeś i spersonalizowałeś wcześniej nowej strefy DNS w OVHcloud.
+Możesz mieć tylko jedną strefę DNS aktywowaną dla każdej nazwy domeny.
+
+:::
+
+
+## W praktyce
+
+### Dostęp do interfejsu zarządzania strefą DNS
+
+:::info
+W przeciwieństwie do nazwy domeny, nie ma tu pojęcia abonenta strefy DNS, lecz zarządzanie kontaktami w przypadku strefy DNS OVHcloud. Jeśli chcesz przełączyć zarządzanie swoją strefą DNS na inne konto OVHcloud, postępuj zgodnie z naszym przewodnikiem [Zarządzanie kontaktami swoich usług](/guides/account-and-service-management/account-information/managing-contacts/).
+
+:::
+
+
+Aby uzyskać dostęp do interfejsu zarządzania strefą DNS OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    W tabeli, która się wyświetla dla każdego wiersza wyświetlony zostanie rekord DNS powiązany z Twoją nazwą domeny w OVHcloud. Możesz sortować ich zawartość według typu rekordu lub nazwy domeny.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Edycja strefy DNS OVHcloud dla Twojej nazwy domeny
+
+**Edycja strefy DNS jest operacją wymagającą odpowiedniej wiedzy** : wprowadzenie omyłkowej zmiany mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
+
+Poznanie poszczególnych rekordów będzie pomocne w lepszym zrozumieniu zmian, które wprowadzisz w strefie DNS Twojej nazwy domeny.
+
+:::tip[Success]
+Zapoznaj się z przewodnikiem dotyczącym [rekordów DNS](/guides/web-cloud/domains/dns-zone-records/), aby dowiedzieć się więcej na temat operacji DNS.
+
+Więcej informacji na ten temat znajdziesz w przewodniku dotyczącym [subdomen](/guides/web-cloud/domains/domain-create-subdomains/).
+
+:::
+
+
+Możesz zmodyfikować strefę DNS OVHcloud Twojej nazwy domeny, dodając, zmieniając lub usuwając rekord DNS.
+W tym celu możesz ręcznie zmienić strefę w trybie tekstowym lub skorzystać z asystenta konfiguracji.
+
+#### Ręczna zmiana strefy w trybie tekstowym <a name="txtmod"></a>
+
+:::warning
+Tylko dla zaawansowanych użytkowników. Zachowaj szczególną ostrożność podczas wprowadzania zmian.
+
+:::
+
+
+Aby zmienić strefę DNS OVHcloud w trybie tekstowym, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij <code className="action">Zmień w trybie tekstowym</code> po prawej stronie lub poniżej tabeli, po czym postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
+    
+    :::warning
+    Nie zmieniaj wpisów DNS strefy DNS za pomocą przycisku <code className="action">Zmień w trybie tekstowym</code> na rzecz serwerów DNS zewnętrznych wobec OVHcloud. Ta strefa DNS działa **tylko** z serwerami DNS OVHcloud.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+#### Skorzystaj z naszych asystentów konfiguracji
+
+Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu asystenta.
+
+:::info
+Przygotuj informacje, które chcesz zmienić w strefie DNS OVHcloud. Jeśli przeprowadzasz tę zmianę na wniosek dostawcy usług, dostawca usług musi przekazać Ci listę elementów do zmiany.
+
+:::
+
+
+**Kliknij cztery nagłówki poniżej, aby wyświetlić wyjaśnienia.**
+
+<details>
+
+<summary>Dodanie nowego rekordu DNS</summary>
+
+
+Aby dodać nowy rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Po prawej stronie lub poniżej tabeli kliknij <code className="action">Dodaj rekord</code>, po czym postępuj zgodnie z kolejnymi instrukcjami, które będą się wyświetlały.
+    
+    Sprawdź wcześniej, czy ten rekord już nie istnieje i nie wskazuje na inny cel. W tym celu włącz sortowanie zawartości tabeli według typu rekordu i nazwy domeny. Jeśli rekord już istnieje, rekomendujemy jego modyfikację zgodnie z procedurą opisaną poniżej.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png" loading="lazy" />
+    
+    > Gdy celem rekordu jest adres URL, pamiętaj, aby go wpisać. W przeciwnym razie nazwa domeny zostanie automatycznie dodana na końcu grupy docelowej.
+    >
+    > **Przykład** : chcesz utworzyć rekord CNAME `test.mydomain.ovh` na `mydomain.ovh`.
+    >
+    > Wówczas należy mieć jako cel `mydomain.ovh.` a nie `mydomain.ovh` bez **.** na końcu.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Modyfikacja istniejącego rekordu DNS</summary>
+
+
+Aby zmodyfikować rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    W tabeli, która się wyświetli kliknij piktogram <code className="action">...</code> po prawej stronie odpowiedniego wpisu.
+    
+    Następnie kliknij <code className="action">Zmień rekord</code> i postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Usunięcie rekordu DNS</summary>
+
+
+Aby usunąć rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    W tabeli, która się wyświetli kliknij piktogram <code className="action">...</code> po prawej stronie odpowiedniego wpisu.
+    
+    Następnie kliknij <code className="action">Usuń rekord</code> i postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
+    
+    Możesz usunąć kilka rekordów za jednym razem, zaznaczając je wcześniej w lewej części tabeli i klikając przycisk <code className="action">Usuń</code>.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Zresetuj strefę DNS</summary>
+
+
+Zresetowanie strefy DNS pozwala na przywrócenie minimalnej konfiguracji z domyślnymi wpisami OVHcloud lub wpisami usług. Możesz również wskazać swoją nazwę domeny na niestandardowy hosting WWW oraz usługi e-mail.
+
+:::danger
+Przed zresetowaniem strefy DNS upewnij się, że Twoja nazwa domeny nie jest powiązana z usługami, które są obecnie używane, takimi jak strona WWW lub konta e-mail.
+
+:::
+
+
+Aby zresetować strefę DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Po prawej stronie lub poniżej tabeli kliknij <code className="action">Zresetuj strefę DNS</code>, następnie postępuj zgodnie z 2 kolejnymi instrukcjami, które się wyświetlą.
+    
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 3">
+    Odpowiedz na pytanie `Czy chcesz włączyć wpisy minimalne podczas resetowania strefy DNS?`. Ustanowienie minimalnych wpisów w strefie DNS zapobiega sytuacji, w której zapytanie do nazwy domeny nie doprowadzi do błędu.
+    
+    - `Tak, chcę zresetować strefę DNS z minimalnymi wpisami`
+    - `Nie, ale chcę zresetować strefę DNS`
+  </Tab>
+  <Tab label="Krok 4">
+    Bez względu na wybór dokonany na poprzednim etapie, konieczne jest zdefiniowanie odpowiedzi podczas odpytywania nazwy domeny, aby uniknąć odpowiedzi DNS z błędem.
+    
+    Wybierz obie opcje, klikając poniższe zakładki.
+    
+    **Adres IP hostingu**
+    
+    - `Przekierowanie`: Twoja nazwa domeny będzie wskazywać na serwer przekierowania OVHcloud. Pomaga to w wyświetleniu strony głównej OVHcloud, co pozwala uniknąć błędu DNS.
+    - `Hosting WWW OVHcloud`: Twoja nazwa domeny będzie wskazywać na adres IP hostingu powiązanego z nazwą domeny <br/>
+    - `Niestandardowy`: ustaw wartość IPv4 ([rekord A](/guides/web-cloud/domains/dns-zone-records#pointer-records/)) hostingu, który chcesz wskazywać. <br/><br/>
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png" loading="lazy" />
+
+**Adres email**
+    
+    - `Przekierowanie`: Twoja nazwa domeny będzie wskazywać na serwery przekierowań email. Ten wybór. Jest to szczególnie przydatne, jeśli nie masz żadnej oferty e-mail, ale chcesz, aby e-maile były wysyłane na jeden lub więcej adresów e-mail poza Twoją nazwą domeny.<br/>
+    - `Serwer E-mail OVHcloud`: do ustawienia, gdy posiadasz ofertę e-mail na hostingu.<br/>
+    - `Niestandardowy`: ustaw adres URL i priorytet serwera e-mail ([rekord MX](/guides/web-cloud/domains/dns-zone-records#mail-records/)), który chcesz wskazać.<br/><br/>
+    <img className="thumbnail" alt="dnszone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+### Czas propagacji
+
+Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
+
+Jeśli chcesz skrócić czas propagacji w przypadku kolejnych modyfikacji strefy DNS OVHcloud, możesz to uczynić, do pewnego stopnia, przez dostosowanie TTL (*Time To Live*), który zostanie zastosowany do wszystkich rekordów strefy DNS. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij przycisk <code className="action">Zmień domyślny TTL</code> po prawej stronie lub poniżej tabeli i postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
+    
+    Możesz również zmienić TTL rekordu DNS. Operacja ta może być jednak przeprowadzona tylko na jednym rekordzie, po zmianie lub po dodaniu rekordu.
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również
+
+[Wszystko o serwerach DNS](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Wszystko o strefie DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+
+[Wszystko o rekordach DNS](/guides/web-cloud/domains/dns-zone-records/)
+
+[Dodawanie rekordu SPF podczas konfiguracji domeny](/guides/web-cloud/domains/dns-zone-spf/).
+
+[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](/guides/web-cloud/domains/dns-dnssec/).
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

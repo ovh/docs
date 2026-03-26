@@ -1,0 +1,617 @@
+---
+title: "How to deploy the 3CX IPBX automatically on OVHcloud Public Cloud"
+excerpt: "Find out how you can automatically deploy your 3CX IPBX on a Public Cloud instance via an XML template"
+updated: 2023-07-28
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+This guide details how to automatically deploy your 3CX instance on a Public Cloud instance.
+
+At the end of this guide, you will have the basics to manage the deployment of your instance and its configuration automatically.
+
+## Requirements
+
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account. You can find more information in our guide [Creating your first Public Cloud project](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project).
+- The 3CX IPBX requires a valid license to be used. Ensure that you have a valid license during deployment. You can find all the information on [https://www.3cx.com/](https://www.3cx.com/).
+
+## Instructions
+
+> [!warning]
+>
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) and/or the service's publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+>
+
+We will use a template in XML format so that we can automatically configure the 3CX instance.
+
+This XML file can be very simple, to simply install 3CX and your license.<br />
+It can also be very complete, allowing you not only to install the license but also to create your users, trunks and other 3CX features.
+
+In this tutorial, we will use a very simple XML template. For a more complete template, please refer to the [3CX documentation](https://www.3cx.com/docs/configure-pbx-automatically/).
+
+### Step 1: Complete the template
+
+We will attach a *user-data* to the instance. When the instance is booted, this file will allow the cloud-init tool to:
+
+- Create the 3CX configuration XML file.
+- Launch the installation of 3CX packages.
+
+The XML file is included in the template that we will attach to the instance when we create it.
+
+<details>
+
+<summary>Here is the file to use to follow this tutorial:</summary>
+
+
+```xml
+#!/bin/bash -e
+mkdir -p /etc/3cxpbx
+cat > /etc/3cxpbx/setupconfig.xml << "<EOF>"
+<?xml version="1.0" encoding="UTF-8"?>
+<SetupConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <tcxinit>
+    <option>
+      <code>InstallationType</code>
+      <answer>new</answer>
+    </option>
+    <option>
+      <code>LicenseKey</code>
+      <answer>YourLicenseKey</answer>
+    </option>
+    <option>
+      <code>BackupFile</code>
+      <answer/>
+    </option>
+    <option>
+      <code>BackupPassword</code>
+      <answer/>
+    </option>
+    <option>
+      <code>AdminUsername</code>
+      <answer>admin</answer>
+    </option>
+    <option>
+      <code>AdminPassword</code>
+      <answer>YourStrongAdminPassword</answer> 
+    </option>
+    <option>
+      <code>PublicIP</code>
+      <answer>auto</answer>
+    </option>
+    <option>
+      <code>ManualPublicIP</code>
+      <answer/>
+    </option>
+    <option>
+      <code>StaticOrDynamicIP</code>
+      <answer>static</answer>
+    </option>
+    <option>
+      <code>LocalIP</code> 
+      <answer>auto</answer>
+    </option>
+    <option>
+      <code>ManualLocalIP</code>
+	  <answer/>
+    </option>
+    <option>
+      <code>NeedFqdn</code>
+      <answer>yes</answer>
+    </option>
+    <option>
+      <code>Hostname</code>
+      <answer>contoso</answer>
+    </option>
+	<option>
+	
+	  <code>DomainGroup</code>
+	  <answer>Europe</answer>
+	</option>
+    <option>
+      <code>DnsSuffix</code> 
+      <answer>eu</answer>
+    </option>
+    <option>
+      <code>FullExternalFqdn</code>
+      <answer/>
+    </option>
+    <option>
+      <code>CertificatePath</code>
+      <answer/>
+    </option>
+    <option>
+      <code>CertificatePassword</code>
+      <answer/>
+    </option>
+    <option>
+      <code>CertificateKey</code>
+      <answer/> 
+    </option>
+    <option>
+      <code>CertificateKeyPasswordRequest</code>
+      <answer/>
+    </option>
+    <option>
+      <code>HasLocalDns</code> 
+      <answer>yes</answer>
+    </option>
+    <option>
+      <code>InternalFqdn</code>
+      <answer>pbx.contoso.local</answer>
+    </option>
+    <option>
+      <code>HttpsPort</code>
+      <answer>5001</answer>
+    </option>
+    <option>
+      <code>HttpPort</code>
+      <answer>5000</answer>
+    </option>
+	<option>
+      <code>SipPort</code>
+      <answer>5060</answer>
+    </option>
+	<option>
+      <code>TunnelPort</code>
+      <answer>5090</answer>
+    </option>
+    <option>
+      <code>NumberOfExtensions</code> 
+      <answer>3</answer>
+    </option>
+	<option>
+	
+      <code>MailServerType</code>
+      <answer>3CX</answer>
+    </option>
+    <option>
+      <code>MailServerAddress</code> 
+      <answer/>
+    </option>
+    <option>
+      <code>MailServerReplyTo</code>
+      <answer/>
+    </option>
+    <option>
+      <code>MailServerUserName</code> 
+      <answer/>
+    </option>
+    <option>
+      <code>MailServerPassword</code> 
+      <answer/>
+    </option>
+    <option>
+      <code>MailServerEnableSslTls</code>
+      <answer/>
+    </option>
+	<option>
+	  
+	  <code>Continent</code> 
+	  <answer>North America</answer>
+	</option>
+    <option>
+      <code>Country</code> 
+      <answer>United States</answer>
+    </option>
+    <option>
+      <code>Timezone</code> 
+      <answer>9</answer>
+    </option>
+    <option>
+      <code>OperatorVoicemail</code>
+      <answer>999</answer>
+    </option>
+    
+    <option>
+      <code>Language</code>
+      <answer>UK</answer>
+    </option>
+    <option>
+      <code>Promptset</code>
+      <answer>English</answer> 
+    </option>
+    <option>
+      <code>LicenseContactName</code>
+      <answer>FirstName LastName</answer>
+    </option>
+    <option>
+      <code>LicenseCompanyName</code>
+      <answer>MyCompany Ltd.</answer>
+    </option>
+    <option>
+      <code>LicenseEmail</code>
+      <answer>admin@maycompany.com</answer>
+    </option>
+    <option>
+      <code>LicensePhone</code>
+      <answer>+357</answer>
+    </option>
+    <option>
+      <code>ResellerId</code> 
+      <answer/>
+    </option>
+  </tcxinit>
+  <HostingConfiguration>
+    <HostingAdminLogin/> 
+    <HostingAdminPassword/> 
+    <HostingAdminEmail/> 
+  </HostingConfiguration>
+  <extensions>
+    <extension>
+      <Number>100</Number> 
+      <FirstName>OVH</FirstName>
+      <LastName>Test</LastName>
+      <EmailAddress>john.smith@example.com</EmailAddress>
+      <MobileNumber>801123456</MobileNumber>
+      <OutboundCallerId>801123456</OutboundCallerId>
+      <AuthPassword>jsz5aOuM3Y</AuthPassword> 
+      <AuthID>3pY48gwjR5</AuthID> 
+      <AllowLanOnly>false</AllowLanOnly> 
+      <RecordCalls>false</RecordCalls>
+      <TemplateFilename>snom.ph.xml</TemplateFilename> 
+	  
+	  <ProvisioningFilename2>Snom D785</ProvisioningFilename2>
+	  
+      <MAC>121212ABABAB</MAC>
+      <Codecs> 
+        <codec>G711u</codec>
+        <codec>G711a</codec>
+        <codec>G722</codec>
+        <codec>G729</codec>
+      </Codecs>
+      <Language>English</Language> 
+      <ProvisionType>LocalLan</ProvisionType> 
+	  								
+    </extension>
+    <extension>
+      <Number>101</Number>
+      <FirstName>Joanne</FirstName>
+      <LastName>Davis</LastName>
+      <EmailAddress>joanne.davis@example.com</EmailAddress>
+      <MobileNumber>801123453</MobileNumber>
+      <OutboundCallerId>801123454</OutboundCallerId>
+      <AuthPassword>C77j3ZbJwS</AuthPassword> 
+      <AuthID>YclK0y1kQ1</AuthID> 
+      <AllowLanOnly>false</AllowLanOnly>
+      <RecordCalls>false</RecordCalls>
+      <TemplateFilename>fanvil.ph.xml</TemplateFilename>
+	  <ProvisioningFilename2>Fanvil X6U</ProvisioningFilename2>
+      <MAC>1234567890AB</MAC>
+      <Codecs> 
+        <codec>G711U</codec>
+        <codec>G711A</codec>
+        <codec>G729</codec>
+        <codec>G722</codec>
+      </Codecs>
+      <Language>English</Language>
+      <ProvisionType>LocalLan</ProvisionType>
+    </extension>
+  </extensions>
+  <siptrunk>
+    <Name>OVH Trunk Keke</Name>
+    <TemplateFilename>GenericSIPTrunk.pv.xml</TemplateFilename> 
+    <Host>trunk.link.at</Host> 
+    <Port>5050</Port>
+    <ProxyHost>proxy.trunk.link.at</ProxyHost> 
+    <ProxyPort>5160</ProxyPort> 
+    <SimultaneousCalls>10</SimultaneousCalls> 
+    <RequireRegistrationFor>InOutCalls</RequireRegistrationFor> 
+	
+    <AuthID>456456456</AuthID> 
+    <AuthPassword>Authentication_Password</AuthPassword> 
+    <Use3WayAuth>true</Use3WayAuth> 
+    <SeparateAuthPassword>3WayPass</SeparateAuthPassword> 
+    <ExternalNumber>0044870478511004</ExternalNumber> 
+    <OfficeHoursDestinationType>Extension</OfficeHoursDestinationType> 
+																			
+    <OfficeHoursDestination>100</OfficeHoursDestination>  
+    <OutOfOfficeHoursDestinationType>Extension</OutOfOfficeHoursDestinationType>
+		
+    <OutOfOfficeHoursDestination>101</OutOfOfficeHoursDestination> 
+    <DIDNumbers>0044870478511000,0044870478511001,0044870478511002,0044870478511003</DIDNumbers> 
+    <OutboundCallerID>0044870478511004</OutboundCallerID>
+    <Direction>Both</Direction> 
+		
+
+	
+	<DeliverAudio>true</DeliverAudio> 
+
+	 
+	<DisableVideoCalls>true</DisableVideoCalls>
+
+	
+	<SupportReinvite>false</SupportReinvite>
+
+	
+	<SupportReplaces>false</SupportReplaces>
+
+	
+	<PublicIpInSipViaHeader>1.2.3.4</PublicIpInSipViaHeader> 
+
+	
+	<EnableSRTP>false</EnableSRTP> 
+
+    <TimeBetweenReg>120</TimeBetweenReg> 
+	
+	 
+    <IPInRegistrationContact>Default</IPInRegistrationContact>
+    <SpecifiedIPForRegistrationContact/>
+
+    <Codecs> 
+      <codec>Speex</codec>
+      <codec>PCMU</codec>
+      <codec>GSM</codec>
+      <codec>iLBC</codec>
+      <codec>G722</codec>
+      <codec>opus</codec>
+      <codec>G729</codec>
+      <codec>PCMA</codec>
+    </Codecs>
+		<InboundRules> 
+		<InboundRule>
+			<Name>Inbound Rule 1</Name>
+			<DID>0044870478511001</DID> 
+			<OfficeHoursDestinationType>Extension</OfficeHoursDestinationType>
+			<OfficeHoursDestination>100</OfficeHoursDestination> 
+			<OutOfOfficeHoursDestinationType>VoiceMail</OutOfOfficeHoursDestinationType>
+			<OutOfOfficeHoursDestination>100</OutOfOfficeHoursDestination>
+			<SpecificHours> 
+				<HoursRange>
+					<StartTime>08:00</StartTime>
+					<EndTime>16:00</EndTime> 
+					<DayOfWeek>Monday</DayOfWeek> 
+				</HoursRange>
+				<HoursRange>
+					<StartTime>17:00</StartTime> 
+					<EndTime>22:00</EndTime> 
+					<DayOfWeek>Monday</DayOfWeek>
+				</HoursRange>
+			</SpecificHours>
+		</InboundRule>
+	</InboundRules>
+  </siptrunk>
+  <siptrunk>
+    <Name>Voip Trunk 2</Name>
+    <TemplateFilename>GenericSIPTrunk.pv.xml</TemplateFilename> 
+    <Host>trunk.link.at</Host> 
+    <Port>5050</Port>
+    <ProxyHost>proxy.trunk.link.at</ProxyHost> 
+    <ProxyPort>5160</ProxyPort> 
+    <SimultaneousCalls>10</SimultaneousCalls> 
+    <RequireRegistrationFor>InOutCalls</RequireRegistrationFor> 
+	
+    <AuthID>456456457</AuthID> 
+    <AuthPassword>Authentication_Password</AuthPassword> 
+    <Use3WayAuth>true</Use3WayAuth> 
+    <SeparateAuthPassword>3WayPass</SeparateAuthPassword> 
+    <ExternalNumber>0044870478512004</ExternalNumber> 
+    <OfficeHoursDestinationType>Extension</OfficeHoursDestinationType> 
+																			
+    <OfficeHoursDestination>100</OfficeHoursDestination>  
+    <OutOfOfficeHoursDestinationType>Extension</OutOfOfficeHoursDestinationType>
+		
+    <OutOfOfficeHoursDestination>101</OutOfOfficeHoursDestination> 
+    <DIDNumbers>0044870478512000,0044870478512001,0044870478512002,0044870478512003</DIDNumbers> 
+    <OutboundCallerID>0044870478512004</OutboundCallerID>
+    <Direction>Both</Direction> 
+		
+
+	
+	<DeliverAudio>true</DeliverAudio> 
+
+	 
+	<DisableVideoCalls>true</DisableVideoCalls>
+
+	
+	<SupportReinvite>false</SupportReinvite>
+
+	
+	<SupportReplaces>false</SupportReplaces>
+
+	
+	<PublicIpInSipViaHeader>1.2.3.4</PublicIpInSipViaHeader> 
+
+	
+	<EnableSRTP>false</EnableSRTP> 
+
+    <TimeBetweenReg>120</TimeBetweenReg> 
+	
+	 
+    <IPInRegistrationContact>Default</IPInRegistrationContact>
+    <SpecifiedIPForRegistrationContact/>
+
+    <Codecs> 
+      <codec>Speex</codec>
+      <codec>PCMU</codec>
+      <codec>GSM</codec>
+      <codec>iLBC</codec>
+      <codec>G722</codec>
+      <codec>opus</codec>
+      <codec>G729</codec>
+      <codec>PCMA</codec>      
+    </Codecs>
+		<InboundRules> 
+		<InboundRule>
+			<Name>Inbound Rule 2</Name>
+			<DID>0044870478512002</DID> 
+			<OfficeHoursDestinationType>Extension</OfficeHoursDestinationType>
+			<OfficeHoursDestination>101</OfficeHoursDestination> 
+			<OutOfOfficeHoursDestinationType>VoiceMail</OutOfOfficeHoursDestinationType>
+			<OutOfOfficeHoursDestination>101</OutOfOfficeHoursDestination>
+			<SpecificHours> 
+				<HoursRange>
+					<StartTime>08:00</StartTime>
+					<EndTime>16:00</EndTime> 
+					<DayOfWeek>Monday</DayOfWeek> 
+				</HoursRange>
+				<HoursRange>
+					<StartTime>17:00</StartTime> 
+					<EndTime>22:00</EndTime> 
+					<DayOfWeek>Monday</DayOfWeek>
+				</HoursRange>
+			</SpecificHours>
+		</InboundRule>
+	</InboundRules>
+  </siptrunk>
+   
+  <OutboundRules>
+    <OutboundRule>
+      <Name>Outbound Rule 1</Name>
+	  <Prefix>111</Prefix>
+	  <DNRanges> 
+        <DNRange>
+          <To>100</To>
+          <From>100</From>
+        </DNRange>
+        <DNRange>
+          <To>205</To>
+          <From>200</From>
+        </DNRange>
+      </DNRanges>
+	  <NumberLengthRanges>9,10,11</NumberLengthRanges> 
+      <DNGroups> 
+        <Group>Sales</Group>
+        <Group>Ceo</Group>
+      </DNGroups>
+      <OutboundRoutes>
+        <OutboundRoute>
+          <Gateway>Voip Trunk 1</Gateway>
+		      <StripDigits>0</StripDigits>
+		      <Prepend>807</Prepend>
+        </OutboundRoute>
+        <OutboundRoute>
+          <Gateway>Voip Trunk 2</Gateway>
+          <StripDigits>1</StripDigits>
+		      <Prepend>801</Prepend>
+        </OutboundRoute>
+      </OutboundRoutes>
+    </OutboundRule>
+  </OutboundRules>
+  
+  <IpBlackList>
+    <IpBlackListEntry>
+      <Address>1.2.3.4</Address>
+      <Mask>255.255.255.255</Mask>
+      <Allowed>true</Allowed>
+      <Description>Sample Description</Description>
+    </IpBlackListEntry>
+  </IpBlackList>
+</SetupConfig>
+<EOF>
+apt-get update
+dpkg-query -W -f='${Status}' sudo 2>/dev/null | grep -qF "ok installed" || apt-get -y install sudo
+dpkg-query -W -f='${Status}' wget 2>/dev/null | grep -qF "ok installed" || apt-get -y install wget
+dpkg-query -W -f='${Status}' gnupg2 2>/dev/null | grep -qF "ok installed" || apt-get -y install gnupg2
+wget -O- https://repo.3cx.com/key.pub | gpg --dearmor | sudo tee /usr/share/keyrings/3cx-archive-keyring.gpg > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) by-hash=yes signed-by=/usr/share/keyrings/3cx-archive-keyring.gpg] http://repo.3cx.com/3cx buster main" | sudo tee /etc/apt/sources.list.d/3cxpbx.list
+apt-get update
+apt-get -y install nginx
+rm -f /etc/nginx/sites-enabled/default
+systemctl reload nginx
+apt-get -y install 3cxpbx
+
+```
+
+</details>
+
+In this template, there are two elements to modify for a first deployment test:
+
+- Replace `YourLicenseKey` with your 3CX license key.
+
+```xml
+    <option>
+      <code>LicenseKey</code>
+      <answer>YourLicenseKey</answer>
+    </option>
+```
+
+- Replace `YourStrongAdminPassword` with your admin account password. This password must be at least 10 characters long, contain numbers and lower-case and upper-case letters:
+
+```xml
+    <option>
+      <code>AdminPassword</code>
+      <answer>YourStrongAdminPassword</answer> 
+    </option>
+
+```
+
+Once your template is complete, you can deploy it using the instructions in step 2.
+
+### Step 2: Deploy the instance with the template
+
+Depending on the version and sizing of your 3CX instance, the instance flavor to use will be different. Please refer to the following link to choose the right instance: [https://www.3cx.com/docs/recommended-hardware-specifications-for-3cx/](https://www.3cx.com/docs/recommended-hardware-specifications-for-3cx/)
+
+For our guide, we will use a **Discovery D2-4** instance.
+
+#### Deployment via the OVHcloud Control Panel
+
+Log in to your [OVHcloud Control Panel](/links/manager) and click on the `Public Cloud` menu.
+
+Select your Public Cloud project.
+
+On the homepage, click `Create an instance`. Select your instance flavor and the region you want.
+
+![choosing a flavor](/images/guides/web-cloud/phone-and-fax/voip/deployer-3cx-sur-public-cloud/flavor.png)
+
+Then select the operating system. To date, 3CX uses Debian 10.
+
+![OS selection](/images/guides/web-cloud/phone-and-fax/voip/deployer-3cx-sur-public-cloud/os.png)
+
+In the next step, called "Configure your instance", you will be able to attach your template.
+
+Name your instance, then click `Add` in the `Post-installation script` box.
+
+In the text box that appears, paste the installation script that was generated earlier.
+
+![adding script](/images/guides/web-cloud/phone-and-fax/voip/deployer-3cx-sur-public-cloud/scriptPostInstall.png)
+
+Click `Next` to confirm this step. Finally, choose your network configuration and billing method.
+
+Once the instance has booted, the installation will be launched directly, this will take a few minutes.
+
+You can log in to the machine to check that the logs are correct:
+
+```sh
+tail -F /var/lib/3cxpbx/Data/Logs/PbxConfigTool.log
+```
+
+Once the deployment is complete, the administration interface will be accessible via the FQDN given when you subscribe to your 3CX license, or via the IP address of your instance: `https://instance_public_ip:5001/`
+
+#### Deployment via API
+
+You can also deploy your instance via API, using the following call:
+
+<Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/instance"} />
+
+- Example with a D2-4 flavor, Debian 10 and hourly billing:
+
+```sh
+curl -X POST "https://eu.api.ovh.com/v1/cloud/project/your_project_id/instance" \
+ -H "accept: application/json"\
+ -H "authorization: Bearer [Your_Token]"\
+ -H "content-type: application/json" \
+ -d '{"flavorId":"199060ac-6dde-435a-acab-78456ac337a7","imageId":"60704751-09c2-4ad4-a30f-b3e786348fa0","monthlyBilling":false,"name":"Name-Of-The-Instance","region":"GRA7","sshKeyId":"Your-Ssh-Key-Id","userData":TheTemplateContent"}'
+```
+
+In this JSON, insert the template into `userData`. Warning: line breaks must be escaped by `\n`.
+
+## Go further <a id="gofurther"></a>
+
+[All you need to know to get started with Public Cloud](/guides/public-cloud/public-cloud-cross-functional/compute-essential-information)
+
+[How to use the Public Cloud interface](/guides/public-cloud/public-cloud-cross-functional/03-public-cloud-interface-walk-me)
+
+[Create your first OVHcloud Public Cloud project](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project)
+
+[Creating and connecting to your first Public Cloud instance](/guides/public-cloud/compute/compute-getting-started)
+
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](/links/support).
+
+Join our [community of users](/links/community).

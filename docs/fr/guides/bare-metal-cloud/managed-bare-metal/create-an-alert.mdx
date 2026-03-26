@@ -1,0 +1,66 @@
+---
+title: Créer une alerte
+description: Paramétrez des alertes sur votre client vSphere
+lastUpdated: 2020-11-18
+---
+
+## Objectif
+
+Il est possible de créer une alerte sur tous les éléments de votre Managed Bare Metal : le datacentre lui-même, les clusters, les VM, les datastores, le réseau...
+
+**Ce guide explique comment créer des alertes.**
+
+## Prérequis
+
+- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
+- Être connecté à votre [interface vSphere](/guides/bare-metal-cloud/managed-bare-metal/vsphere-interface/).
+
+## En pratique
+
+### Créer une alerte
+
+Pour créer une alerte, faites un clic droit sur le datacenter ou tout autre élément à surveiller, puis cliquez sur <code className="action">Alarms</code> et <code className="action">New Alarm Definition</code>.
+
+<img className="thumbnail" alt="creation alerte" src="/images/bare-metal-cloud/managed-bare-metal/create-an-alert/alarms01.png" loading="lazy" />
+
+### Définir un nom et une cible
+
+La première étape consiste à donner un nom à l'alerte et à définir sa cible. Vous pouvez également ajouter une description.
+
+<img className="thumbnail" alt="nom et cible de l'alerte" src="/images/bare-metal-cloud/managed-bare-metal/create-an-alert/alarms02.png" loading="lazy" />
+
+### Définir les règles de l'alerte
+
+La seconde étape consiste à définir les règles de l'alerte et les actions qu'elle déclenche.
+
+Le champ `IF` vous permet de définir un déclencheur de l'alerte parmi une sélection de variables. Selon la variable choisie, une liste d'arguments vous sera proposée.
+
+Le champ `THEN` permet d'indiquer que l'alerte se déclenche avec un certain degré de criticité et va entraîner des actions telles que l'envoi d'un e-mail, l'exécution d'un script ou l'arrêt d'une VM.
+
+<img className="thumbnail" alt="règles de l'alerte" src="/images/bare-metal-cloud/managed-bare-metal/create-an-alert/alarms03.png" loading="lazy" />
+
+Vous pouvez ainsi surveiller la RAM d’un host par exemple, en indiquant un seuil à ne pas dépasser avant que son statut ne passe en alerte et que vous ne receviez un e-mail d'avertissement.
+
+:::info
+Vous pouvez ajouter plusieurs règles à votre alerte en cliquant sur <code className="action">ADD ANOTHER RULE</code>.
+
+:::
+
+
+### Interruption de l'alerte
+
+La troisième étape vous permet de définir les critères de fin d'alerte et de déclencher de nouvelles actions.
+
+<img className="thumbnail" alt="interruption de l'alerte" src="/images/bare-metal-cloud/managed-bare-metal/create-an-alert/alarms04.png" loading="lazy" />
+
+### Résumé de l'alerte
+
+La dernirère étape vous présente un récapitulatif des règles définies. Vous pouvez activer l'alarme en cochant le curseur ou choisir de l'activer ultérieurement en faisant un clic droit sur l'élément choisi puis en cliquant sur <code className="action">Alarms</code> et <code className="action">Enable Alarm Actions</code>.
+
+<img className="thumbnail" alt="résumé de l'alerte" src="/images/bare-metal-cloud/managed-bare-metal/create-an-alert/alarms05.png" loading="lazy" />
+
+Vous pourrez également configurer à cette étape la fréquence de répétition des alertes.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

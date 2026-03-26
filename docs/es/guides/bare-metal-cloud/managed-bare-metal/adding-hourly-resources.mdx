@@ -1,0 +1,47 @@
+---
+title: Añadir recursos por horas
+description: Cómo añadir recursos con facturación por horas
+lastUpdated: 2020-12-15
+---
+
+## Objetivo
+
+La solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/) permite disfrutar de recursos con facturación por horas.
+
+**Esta guía explica cómo añadir recursos por horas desde el panel de administración vSphere de Managed Bare Metal.**
+
+## Requisitos
+
+* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/).
+* [Conceder al usuario el permiso "Adición de recursos"](/guides/bare-metal-cloud/managed-bare-metal/change-user-rights/) para el datacenter correspondiente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+* Estar conectado al cliente vSphere.
+
+## Procedimiento
+
+### Seleccionar el recurso
+
+En la pestaña <code className="action">Hosts and Clusters</code> de la columna izquierda, seleccione un datacenter de la infraestructura. A continuación, abra la pestaña <code className="action">Configure</code>.
+
+<img className="thumbnail" alt="Añadir un host" src="/images/bare-metal-cloud/managed-bare-metal/adding-hourly-resources/addhost_ess_01.png" loading="lazy" />
+
+Para añadir un host con facturación por horas, haga clic en <code className="action">Add host</code>. Seleccione el modelo y haga clic en el botón <code className="action">Next</code>. Si, en lugar de un host, quiere añadir un datastore, puede hacerlo desde el menú <code className="action">Add storage...</code>.
+
+<img className="thumbnail" alt="Añadir un host" src="/images/bare-metal-cloud/managed-bare-metal/adding-hourly-resources/addhost_ess_02.png" loading="lazy" />
+
+### Confirmar la orden de pedido
+
+Compruebe que la información relativa al pedido es correcta y haga clic en el botón <code className="action">Next</code> para aceptar la orden de pedido.
+
+<img className="thumbnail" alt="confirmar orden de pedido" src="/images/bare-metal-cloud/managed-bare-metal/adding-hourly-resources/addhost_ess_03.png" loading="lazy" />
+
+### Seguir el progreso de la instalación
+
+Una vez que haya aceptado la orden de pedido, puede consultar el progreso de la instalación del recurso.
+
+<img className="thumbnail" alt="progreso instalacion" src="/images/bare-metal-cloud/managed-bare-metal/adding-hourly-resources/addhost_ess_04.png" loading="lazy" />
+
+También puede seguir el progreso de la operación desde la zona de tareas recientes de vSphere, en la parte inferior de la pantalla.
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

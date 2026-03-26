@@ -1,0 +1,206 @@
+---
+title: Konfiguracja konta E-mail Pro
+description: Dowiedz się, jak skonfigurować konto E-mail Pro
+lastUpdated: 2025-04-28
+---
+
+## Wprowadzenie
+
+Właśnie zakupiłeś usługę E-mail Pro. Umożliwia ona korzystanie z profesjonalnych kont e-mail w najlepszej cenie pozwalającej na prowadzenie bieżącej działalności lub rozpoczęcie nowej.
+
+**Dowiedz się, jak przeprowadzić konfigurację usługi E-mail Pro.**
+
+## Wymagania początkowe
+
+- Wykupienie usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
+- Otrzymanie wiadomości e-mail z potwierdzeniem, że usługa E-mail Pro została zainstalowana
+- Zarejestrowana domena.
+
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">E-mail Pro</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-email-pro */}
+
+## W praktyce
+
+### Etap 1: dodanie domeny
+
+:::info
+Nazwa usługi E-mail Pro w Panelu klienta OVHcloud zaczyna się od *emailpro-*, następnie zawiera część Twojego identyfikatora klienta i kończy się cyfrą (1 dla pierwszej zainstalowanej usługi E-mail Pro, 2 dla drugiej etc.).
+
+:::
+
+
+Po zamówieniu usługi E-mail Pro automatycznie wyświetli się okno, w którym zostaniesz poproszony o <code className="action">Dodanie domeny</code>. Jeśli okno się nie wyświetla, przejdź do karty <code className="action">Powiązane domeny</code>, następnie kliknij przycisk <code className="action">Dodaj domenę</code>.
+
+Masz do wyboru dwie opcje:
+
+- **Wybierz domenę z listy** : wyświetlają się tylko nazwy domen, którymi zarządzasz w Panelu klienta OVHcloud. Jeśli domena jest zarejestrowana w OVHcloud, ale nie wyświetla się w Panelu klienta, dodaj ją z opcją "Wpisz domenę, która nie jest zarządzana na Twoim koncie OVHcloud"
+- **Wpisz domenę, która nie jest zarządzana na Twoim koncie OVHcloud** : wybierz tę opcję, jeśli domena jest zarejestrowana w OVHcloud, ale można ją skonfigurować w innym Panelu klienta OVHcloud **lub** jeśli domena jest zarejestrowana u innego operatora. Aby usługa E-mail Pro działała poprawnie, musisz mieć możliwość modyfikacji konfiguracji domeny (jej strefy DNS).
+
+Po wybraniu opcji kliknij <code className="action">Dalej</code>.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-01.png" loading="lazy" />
+
+Okno wyświetla teraz informacje dotyczące konfiguracji trybów. 
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-02.png" loading="lazy" />
+
+- **Jeśli podałeś nazwę domeny nieobsługiwanej przez OVHcloud** : zostanie domyślnie skonfigurowany tryb nieautorytatywny.
+
+- **Jeśli wybrałeś z listy nazwę domeny obsługiwaną przez OVHcloud**, musisz wybrać jeden z trybów.
+    - **Autorytatywny**: Odpowiedni, jeśli usługa E-mail Pro jest jedynym rozwiązaniem poczty elektronicznej, którego używasz z nazwą domeny. Nie pozwala na korzystanie z innego rozwiązania poczty elektronicznej w połączeniu z Twoją usługą.
+    - **Nieautorytatywny**: Odpowiedni, jeśli do obsługi Twojej domeny używasz usługi E-mail Pro **oraz innego rozwiązania poczty elektronicznej**.
+
+> **Rozumienie trybów autorytatywnych i nieautorytatywnych**
+>
+> - Gdy wiadomość e-mail jest przesyłana do platformy E-mail Pro (*Inbound mail server E-mail Pro*) w trybie **autorytatywnym**, wszystkie adresy e-mail przypisane do Twojej domeny są hostowane tylko na tej platformie. <br/> <br/> Na przykład, jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro "*Inbound mail server E-mail Pro*" zwróci nadawcy wiadomość o niepowodzeniu, ponieważ ten adres nie istnieje na serwerze E-mail Pro "*Inbound mail server E-mail Pro*".
+> - Gdy wiadomość e-mail jest wysyłana do platformy e-mail E-mail Pro (*Inbound mail server E-mail Pro*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej domeny są rozdzielone między Twoją główną platformę e-mail (*Inbound mail server E-mail Pro*) i inną usługę e-mail (*Inbound mail server MX Plan*). <br/> <br/> Na przykład jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro *Inbound mail server E-mail Pro* prześle wiadomość e-mail do serwera MX Plan "*Inbound mail server MX Plan*", aby serwer mógł ją dostarczyć.
+>
+> <img className="thumbnail" alt="Dodaj Domenę" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/authoritative-mode.png" loading="lazy" />
+>
+
+:::warning
+Jeśli podczas dodawania domeny do platformy e-mail otrzymasz komunikat "**authoritative domain detected**", oznacza to, że domena ta jest zadeklarowana w trybie **autorytatywnym** na innej platformie e-mail. Aby obydwie platformy mogły działać jednocześnie, należy dla nich ustawić tryb **nieautorytatywny**.
+
+:::
+
+
+Jeśli wybierzesz tryb **nieautorytatywny** i będziesz korzystać z usługi:
+
+- **E-mail OVHcloud (Exchange lub MX Plan)**, wpisz bezpośrednio jako docelowy serwer e-mail "*mx1.mail.ovh.net*" (działa w ten sam sposób z *mx0.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net* ).
+- **E-mail zewnętrzny względem OVHcloud (konkurencyjna oferta e-mail, prywatny serwer e-mail)** wprowadź w polu Serwer docelowy nazwę hosta serwera poczty przychodzącej dla tej usługi zewnętrznej, upewniając się, że zezwala ona na zapytania e-mail pochodzące z Twojej usługi E-mail Pro
+
+Wybór trybu nie jest ostateczny i możesz zmienić go po zalogowaniu się do Panelu klienta OVHcloud.
+
+Kliknij przycisk <code className="action">Dalej</code>, aby kontynuować proces dodawania domeny.
+
+**Jeśli wybrałeś z listy nazwę domeny obsługiwaną przez OVHcloud**, jej konfiguracja może zostać przeprowadzona automatycznie. W celu przeprowadzenia automatycznej konfiguracji, zaznacz odpowiednie pola i kliknij <code className="action">Dalej</code>, aby kontynuować proces dodawania domeny.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-03.png" loading="lazy" />
+
+- **SRV**: rekord DNS umożliwiający automatyczną konfigurację Twojego programu pocztowego podczas dodawania adresu e-mail.
+- **MX**: rekord DNS definiujący serwery e-mail, niezbędny do odbierania e-maili w danej domenie.
+- **DKIM**: Wdrożenie zaszyfrowanego podpisu cyfrowego w celu zabezpieczenia wymiany e-maili. Więcej informacji zawiera przewodnik "[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/guides/web-cloud/domains/dns-zone-dkim/)".
+
+**W przypadku domeny, która nie jest zarządzana w OVHcloud**, przejdź do etapu 3.
+
+Przed zakończeniem konfiguracji zweryfikuj wyświetlane informacje, a następnie kliknij przycisk <code className="action">Zatwierdź</code>, aby dodać domenę.
+
+### Etap 2: konfiguracja nazwy domeny
+
+Po dodaniu nazwy domeny jako domeny powiązanej sprawdź jej ustawienia, korzystając z wyświetlającej się tabeli.
+
+W kolumnie <code className="action">Diagnostyka</code> możesz sprawdzić konfigurację DNS domeny. Jeśli parametry powinny zostać zmodyfikowane, wyświetli się czerwony przycisk. Istnieją dwie możliwości:
+
+- **Automatyczna konfiguracja podczas dodawania domeny OVHcloud**: wprowadzona zmiana może pojawić się w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) dopiero za kilka godzin.
+
+- **Ręczna konfiguracja domeny nieobsługiwanej przez OVHcloud**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania.
+    - *W przypadku rekordu CNAME*, skorzystaj z naszego przewodnika "[Tworzenie pola CNAME po dodaniu przypisanej domeny](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/)".
+    - *W przypadku rekordu MX* zapoznaj się z naszym przewodnikiem "[Dodawanie rekordu MX do konfiguracji domeny](/guides/web-cloud/domains/dns-zone-mx/)".
+    - *W przypadku rekordu SRV* po kliknięciu czerwonego przycisku uzupełnij strefę DNS o informacje. Możesz zapoznać się z przewodnikiem "[Edycja strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)", aby dodać ten rekord.
+    - *W przypadku rekordu SPF* uzupełnij strefę DNS o informacje, które są wyświetlane po kliknięciu przycisku. Możesz zapoznać się z przewodnikiem "[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/guides/web-cloud/domains/dns-zone-spf/)", aby dodać ten rekord.
+    *W przypadku rekordu DKIM* uzupełnij strefę DNS, używając informacji, które wyświetlają się po kliknięciu przycisku. Możesz zapoznać się z przewodnikiem "[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/guides/web-cloud/domains/dns-zone-dkim/)", aby dodać ten rekord.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-04.png" loading="lazy" />
+
+### Etap 3: konfiguracja i korzystanie z kont E-mail Pro
+
+Skonfiguruj konta e-mail w karcie <code className="action">Konta e-mail</code>. Konta, które zamówiłeś wyświetlają się w tabeli w postaci “*@configureme.me*”.
+
+Aby je skonfigurować, kliknij przycisk <code className="action">...</code>, a następnie <code className="action">Zmień</code>.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/first-config/emailpro-05.png" loading="lazy" />
+
+Teraz uzupełnij kolejne informacje, o które zostaniesz poproszony.
+
+- **Konto e-mail** : wprowadź nazwę, którą wybrałeś dla Twojego konta e-mail (np. imie.nazwisko) i wybierz z listy odpowiednią domenę.
+
+:::warning
+Wybór nazwy konta e-mail musi spełniać następujące warunki:
+
+- Minimum 2 znaki
+- Maksymalnie 32 znaki
+- Brak znaków akcentowanych
+- Brak znaków specjalnych, z wyjątkiem następujących znaków:`.`,`,`,`-` et`_`
+
+:::
+
+
+- **Imię** : wpisz imię.
+- **Nazwa** : wprowadź nazwę.
+- **Nazwa do wyświetlenia** : wprowadź nazwę nadawcy, która ma się wyświetlać podczas wysyłki e-maili z tego adresu.
+- **Hasło i potwierdzenie** : Ustaw hasło składające się z minimum 8 znaków i zawierające co najmniej jedną dużą literę, jedną małą literę i jedną cyfrę. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
+
+:::warning
+Wybór hasła musi spełniać następujące warunki:
+
+- Minimum 9 znaków
+- Maksymalnie 30 znaków
+- Brak znaków akcentowanych
+
+:::
+
+
+Po wprowadzeniu informacji, kliknij przycisk <code className="action">Dalej</code>, sprawdź dane, które się wyświetlają, a następnie kliknij <code className="action">Potwierdź</code>, aby rozpocząć konfigurację konta.
+
+:::info
+Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz. Możesz zamówić nowe konta, klikając przycisk <code className="action">Zamówienie kont</code>.
+
+:::
+
+
+### Etap 4: korzystanie z kont e-mail
+
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVHcloud aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem [webmail](https://www.ovhcloud.com/pl/mail/). Zaloguj się, wprowadzając dane identyfikacyjne dla Twojego adresu e-mail.
+
+Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu tego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Następnie kliknij przycisk <code className="action">Zapisz</code>, aby kontynuować.
+
+:::info
+Strefy czasowe są wymienione zgodnie z [uniwersalnym standardem czasowym (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), a nie alfabetycznie według miast.
+
+**Przykład** : Dla Europy Zachodniej jest to UTC +1 (Bruksela, Kopenhaga, Madryt, Paryż).
+
+:::
+
+
+Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu _smartfon_ lub tablet, [skorzystaj z przewodników dotyczących konfiguracji](/guides/web-cloud/email-and-collaborative-solutions/email-pro/overview/). Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
+
+|Typ serwera|Nazwa serwera|Typ zabezpieczenia|Port|
+|---|---|---|---|
+|Serwer poczty przychodzącej|pro?.mail.ovh.net|SSL/TLS|993|
+|Serwer poczty wychodzącej|pro?.mail.ovh.net|STARTTLS|587|
+
+:::info
+Poniżej stosujemy przykładową nazwę serwera, czyli pro?.mail.ovh.net. Należy zastąpić „X” cyfrą wskazującą serwer Twojej usługi E-mail Pro.
+
+Nazwa serwera jest widoczna w ramce **Połączenie** w karcie <code className="action">Informacje ogólne</code> usługi E-mail Pro.
+
+:::
+
+
+## Sprawdź również
+
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/creating-inbox-rules-in-owa-mx-plan/)
+
+[Dodaj alias do konta e-mail](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/)
+
+[Tworzenie automatycznych podpisów](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/)
+
+[Zarządzanie płatnościami za Twoje konta E-mail Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro/)
+
+[Zarządzanie polityką bezpieczeństwa usługi e-mail](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/security-policy/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

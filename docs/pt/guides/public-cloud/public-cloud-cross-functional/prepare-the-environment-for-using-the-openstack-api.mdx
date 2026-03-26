@@ -1,0 +1,176 @@
+---
+title: Preparar o ambiente para utilizar a API OpenStack
+description: Instale o ambiente OpenStack para controlar os seus serviços através da API
+lastUpdated: 2024-12-05
+---
+
+:::info
+Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+
+:::
+
+
+## Sumário
+
+É possível administrar os serviços Public Cloud através de comandos provenientes da consola do sistema, após o descarregamento e a instalação das ferramentas OpenStack.
+
+Graças à API OpenStack, pode automatizar esta gestão gerando scripts.
+
+:::info
+OpenStack requer Python >=3.8.
+Este guia descreve a instalação do pacote `python-openstackclient` que agrupa a linha de comando para a maioria dos projetos OpenStack.
+O projeto Octavia (que alimenta o `Public Cloud Load Balancer`) não está incluído. Portanto, é necessário executar `pip3 install python-octaviaclient` além das instruções de instalação encontradas abaixo.
+Da mesma forma, se utilizar o projeto Barbican para gerir segredos, o comando `pip3 install python-barbicanclient` também deve ser adicionado ao procedimento abaixo.
+
+:::
+
+
+**Saiba como instalar estas ferramentas OpenStack.**
+
+## Requisitos
+
+- Dispor de um acesso **root** ao ambiente que pretende configurar.
+
+## Instruções
+
+### Em Debian
+
+Abra o terminal ou estabeleça uma ligação em SSH ao ambiente que pretende preparar.
+
+Atualize a cache dos pacotes através do comando `apt update`:
+
+```sh
+apt update
+```
+
+Utilize o comando abaixo para instalar os clientes OpenStack:
+
+```sh
+$ apt install python3-pip python3-venv -y
+$ python3 -m venv env
+$ source env/bin/activate
+(env)$ pip3 install --upgrade pip
+(env)$ pip3 install python-openstackclient
+```
+
+Nesta etapa, recomendamos que crie um utilizador especial para não usar o utilizador root.
+
+Para aceder às ferramentas de ajuda, execute o seguinte comando:
+
+```sh
+openstack --help
+```
+
+:::info
+A documentação relativa à API OpenStack está disponível [nesta página](https://docs.openstack.org/python-openstackclient/latest/).
+
+:::
+
+
+### Em CentOS
+
+Abra o terminal ou estabeleça uma ligação em SSH ao ambiente que pretende preparar.
+
+Atualize a cache dos pacotes através do seguinte comando:
+
+```sh
+yum update -y
+```
+
+Utilize o comando abaixo para instalar os clientes OpenStack:
+
+```sh
+yum install python3-pip -y
+$ python3 -m venv env
+$ source env/bin/activate
+(env)$ pip3 install --upgrade pip
+(env)$ pip3 install python-openstackclient
+```
+
+Nesta etapa, recomendamos que crie um utilizador especial para não usar o utilizador root.
+
+Para aceder às ferramentas de ajuda, execute o seguinte comando:
+
+```sh
+openstack --help
+```
+
+:::info
+A documentação relativa à API OpenStack está disponível [nesta página](https://docs.openstack.org/python-openstackclient/latest/).
+
+:::
+
+
+### Em Windows
+
+Descarregue e instale a versão 3.12.0 de Python. Pode optar por adicionar automaticamente a linguagem de programação Python ao Path, selecionando esta opção na configuração da instalação:
+
+<img className="thumbnail" alt="Instalação automática" src="/images/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/1_preparation_openstack_environment_windows.png" loading="lazy" />
+
+Também pode realizar a instalação. Para isso, siga as instruções descritas abaixo:
+
+#### 1 - Editar as variáveis do ambiente do sistema
+
+Comece por escrever “Editar as variáveis do ambiente do sistema” no campo de busca e selecione o menu que aparece.
+
+<img className="thumbnail" alt="Parâmetros das variáveis do ambiente" src="/images/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/2_preparation_openstack_environment_windows.png" loading="lazy" />
+
+#### 2 - Editar os parâmetros do sistema
+
+Passe para a janela <code className="action">Opções avançadas</code> e clique em <code className="action">Variáveis do ambiente</code> para editar os parâmetros.
+
+<img className="thumbnail" alt="Parâmetros de desempenho" src="/images/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/3_preparation_openstack_environment_windows.png" loading="lazy" />
+
+#### 3 - Configurar as variáveis do ambiente 
+
+Na secção “Variáveis do sistema”, selecione “Novo”, atribua o nome “PYTHON_HOME” e adicione o caminho até Python.
+
+<img className="thumbnail" alt="Adicionar o caminho de acesso" src="/images/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/4_edit_system_variables.png" loading="lazy" />
+
+#### 4 - Adicionar o caminho para as variáveis
+
+Depois de adicionar o Python, edite o “Path” (caminho) nas variáveis do sistema e adicione o seguinte no final do caminho:
+
+`...;%PYTHON_HOME%\;%PYTHON_HOME%\Script`
+
+#### 5 - Reiniciar o Windows
+
+É necessário reiniciar o sistema para que as alterações sejam aplicadas.
+
+#### 6 - Instalar o cliente OpenStack
+
+Estando conectado como administrador, escreva “cmd” no campo de busca e selecione o símbolo do sistema quando aparecer. Instale o cliente OpenStack utilizando o seguinte comando:
+
+```sh
+pip install python-openstackclient
+```
+
+Se a operação se realizar corretamente, aparecerá um resumo:
+
+<img className="thumbnail" alt="Instalação automática" src="/images/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/5_preparation_openstack_environment_windows.png" loading="lazy" />
+
+No símbolo do sistema, pode verificar a versão instalada introduzindo “python-V” (não é relevante em que diretório se encontra).
+
+<img className="thumbnail" alt="Verificação" src="/images/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/6_preparation_openstack_environment_windows.png" loading="lazy" />
+
+### Em MacOS
+
+Pode utilizar [HomeBrew](https://brew.sh), um gestor de pacotes para MacOS.
+
+Abra o terminal e execute o seguinte comando:
+
+```bash
+brew install openstackclient
+```
+
+Para aceder às ferramentas de ajuda, execute o seguinte comando:
+
+```sh
+openstack --help
+```
+
+## Quer saber mais?
+
+[Carregar as variáveis de ambiente OpenStack](/guides/public-cloud/public-cloud-cross-functional/loading-openstack-environment-variables/).
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

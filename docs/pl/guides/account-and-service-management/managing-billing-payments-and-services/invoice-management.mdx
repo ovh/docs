@@ -1,0 +1,160 @@
+---
+title: Zarządzanie fakturami OVHcloud
+description: Dowiedz się, jak zarządzać fakturami i związanymi z nimi płatnościami
+lastUpdated: 2025-04-28
+---
+
+## Wprowadzenie
+
+OVHcloud oddaje do Twojej dyspozycji Panel klienta, na którym możesz przeglądać, zarządzać i regulować faktury.
+
+**Dowiedz się, jak zarządzać fakturami w Panelu klienta OVHcloud**
+
+:::info
+Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. W razie wątpliwości sprawdź zapisy w umowach OVHcloud dostępnych na stronie [Lista umów](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/%23/dedicated/billing/autoRenew/agreements).
+
+:::
+
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+## Wymagania początkowe
+
+- Posiadanie statusu [kontaktu księgowego](/guides/account-and-service-management/account-information/managing-contacts/) dla Twojej usługi
+
+{/* CP-NAV-START:billing-invoices */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Faktury](https://manager.eu.ovhcloud.com/#/billing/history)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > <code className="action">Faktury</code>
+
+---
+{/* CP-NAV-END:billing-invoices */}
+
+## W praktyce
+
+:::info
+Każda faktura jest wysyłana e-mailem. Jest ona dostępna pod linkiem na stronie [Moje faktury](https://manager.eu.ovhcloud.com/#/billing/history). Wszystkie faktury są również dostępne na stronie głównej Panelu klienta.
+
+:::
+
+
+### Informacje na Twojej fakturze
+
+Faktura za usługę OVHcloud jest wysyłana po opłaceniu zamówienia lub odnowieniu. Zawiera on informacje o kwotach zakupu lub odnowienia Twoich produktów oraz ich okresach ważności.
+
+<img className="thumbnail" alt="Szczegółowy opis faktury" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/invoice_ovh.png" loading="lazy" />
+
+|Numer|Opis|
+|---|---|
+|1|Informacje na fakturze: numer referencyjny, data wystawienia, zamówienie, do którego się odnosi, rodzaj płatności i odpowiedni identyfikator klienta.|
+|2|Dane kontaktu księgowego.|
+|3|Abonament: opis usługi i fakturowanego okresu|
+|4|Nr referencyjny: numer fakturowanej usługi|
+|5|Ilość: liczba fakturowanych jednostek usługowych|
+|6|Cena jednostkowa produktu (bez podatku)|
+|7|Łączna kwota (brutto) faktury|
+
+### Sekcja płatności w Panelu klienta
+
+#### Wyświetlanie i zarządzanie fakturami
+
+Aby sprawdzić faktury, otwórz stronę [Faktury](https://manager.eu.ovhcloud.com/#/billing/history).
+
+<img className="thumbnail" alt="Płatności" src="/images/assets/screens/control-panel/product-selection/right-menu/my-bills.png" loading="lazy" />
+
+Zostaniesz wówczas przekierowany do strony z listą Twoich faktur:
+
+<img className="thumbnail" alt="Lista faktur" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/billing_section.png" loading="lazy" />
+
+:::info
+Jeżeli faktura oczekuje na uregulowanie (status `Nieopłacone`), należna kwota zostanie wskazana w kolumnie `Saldo` na czerwono.
+
+:::
+
+
+W każdym wierszu tabeli znajdziesz następujące informacje:
+
+- <code className="action">Opis</code>;
+- <code className="action">Numer zamówienia</code>;
+- <code className="action">Data wystawienia</code> faktury;
+- <code className="action">Kwota netto</code>;
+- <code className="action">Kwota brutto</code>;
+- <code className="action">Saldo</code> do uregulowania;
+- <code className="action">status</code> faktury (`Nieopłacona` lub `Opłacona`).
+
+Po kliknięciu jednego z przycisków <code className="action">...</code> po prawej stronie tabeli możesz również:
+
+- <code className="action">Wyświetl wersję HTML</code>: faktura zostanie wyświetlona w przeglądarce w nowej zakładce;
+- <code className="action">Wyświetl wersję PDF</code>: pobierana wersja PDF faktury zostanie automatycznie wygenerowana.
+
+<img className="thumbnail" alt="Operacje dotyczące faktur" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/actions_choices.png" loading="lazy" />
+
+:::info
+Jeśli któraś z Twoich faktur oczekuje na płatność, pojawi się przycisk <code className="action">Ureguluj saldo teraz</code> klikając na <code className="action">...</code>.
+
+:::
+
+
+##### **Filtry**
+
+Dostępne są różne filtry:
+
+<img className="thumbnail" alt="Filtry sortowania" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/sort_filters.png" loading="lazy" />
+
+Aby odnaleźć konkretną fakturę, wpisz jej numer, numer zamówienia lub datę wystawienia.
+
+##### **Masowe operacje**
+
+W menu <code className="action">Masowe operacje</code> możesz wyeksportować w formacie *.csv* lub *.pdf* podsumowanie faktur. Utworzone w ten sposób pliki będą zawierać kwotę, numer referencyjny i datę emisji.
+
+Jeśli chcesz wyeksportować wszystkie faktury, użyj przycisków <code className="action">Eksportuj wszystko w formacie CSV</code> lub <code className="action">Eksportuj wszystko w formacie PDF</code>.
+
+<img className="thumbnail" alt="export_all" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/export_all.png" loading="lazy" />
+
+Jeśli chcesz wyeksportować tylko część, zaznacz odpowiednie pola w pierwszej kolumnie tabeli, aby wybrać interesujące Cię faktury. Dwa nowe działania, <code className="action">Eksportuj zaznaczone elementy w formacie CSV</code> lub <code className="action">Eksportuj zaznaczone elementy w formacie PDF</code>, będą dostępne w menu <code className="action">Masowe operacje</code>.
+
+<img className="thumbnail" alt="export_selection" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/export_selection.png" loading="lazy" />
+
+#### Zapłać faktury <a name="pay-bills"></a>
+
+Aby uregulować zaległe płatności, kliknij menu <code className="action">Masowe operacje</code>, a następnie przycisk <code className="action">Ureguluj saldo teraz</code>.
+
+<img className="thumbnail" alt="Spłata zaległej należności" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/pay_debt.png" loading="lazy" />
+
+Zostanie wówczas [utworzone zamówienie](/guides/account-and-service-management/managing-billing-payments-and-services/managing-ovh-orders#zamowienie/) do opłacania faktur. Po dokonaniu płatności saldo zostanie uregulowane.
+
+#### Zlecenie anulowania faktury
+
+:::info
+Aby zlecić rezygnację z usługi w dniu jej wygaśnięcia, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services/).
+
+:::
+
+
+Jeśli otrzymałeś fakturę, której nie uważasz za uzasadnioną i chcesz zażądać jej zwrotu lub dochodzić [prawa do odstąpienia od umowy](/guides/account-and-service-management/managing-billing-payments-and-services/managing-ovh-orders#korzystanie-z-prawa-do-odstapienia-od-umowy/), możesz złożyć skargę w Panelu klienta OVHcloud, z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
+<br/> Kliknij w prawym górnym rogu ekranu Twojej nazwy użytkownika, a następnie kliknij przycisk <code className="action">Utwórz zgłoszenie</code>.
+
+### Monitoruj płatności
+
+Zapoznaj się z historią płatności dokonanych w <code className="action">Faktury</code>, a następnie <code className="action">Informacje o płatnościach</code>. W ten sposób możesz powiązać fakturę z przypisaną do niej płatnością.
+
+<img className="thumbnail" alt="Informacje o płatnościach" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/payment_tracking.png" loading="lazy" />
+
+W tej sekcji możesz również wyeksportować dokumenty potwierdzające płatność w formacie *.csv* za pomocą przycisku <code className="action">Eksportuj w formacie CSV</code>(1). Za pomocą przycisku <code className="action">Filtruj</code>(2) możesz również uzyskać kilka filtrów.
+
+:::info
+Jeśli zauważysz różnicę między płatnością a kwotą na fakturze, oznacza to, że otrzymałeś zwrot płatności lub rekompensatę, która automatycznie pomniejszyła kwotę do zapłaty.
+
+:::
+
+
+## Sprawdź również
+
+[Zarządzanie odnawianiem usług](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal/)
+
+[Zarządzanie sposobami płatności](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

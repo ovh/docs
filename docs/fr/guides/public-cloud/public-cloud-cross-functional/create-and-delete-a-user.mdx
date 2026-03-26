@@ -1,0 +1,110 @@
+---
+title: Gestion des utilisateurs OpenStack
+description: "Découvrez comment gérer les utilisateurs OpenStack dans votre espace client OVHcloud et dans l'interface Horizon"
+lastUpdated: 2025-04-28
+---
+
+## Objectif
+
+L’accès à Horizon et aux API OpenStack s’effectue via des combinaisons identifiant/mot de passe appelées « *OpenStack users* ». Vous pouvez créer autant d'utilisateurs OpenStack que nécessaire et leur attribuer différents droits d'accès.
+
+Depuis l'interface Horizon, vous pouvez définir un mot de passe pour chaque utilisateur. Attention, le changement de mot de passe d’un compte utilisateur entraîne la révocation immédiate du précédent mot de passe.
+
+**Ce guide vous explique comment gérer des utilisateurs OpenStack depuis votre espace client OVHcloud et via l'interface Horizon.**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+## Prérequis
+
+- Un projet [Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) dans votre compte OVHcloud
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Pour accéder à vos services :** <code className="action">Public Cloud</code> > Sélectionnez votre projet
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## En pratique
+
+### Création d'un utilisateur OpenStack
+
+Cliquez sur <code className="action">Utilisateurs & Rôles</code> dans le menu de gauche sous **Paramètres**.
+
+Cliquez sur le bouton <code className="action">Créer un utilisateur</code>.
+
+<img className="thumbnail" alt="User roles" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/users_roles.png" loading="lazy" />
+
+La description de l'utilisateur n'est pas le nom d'utilisateur OpenStack mais bien une description à renseigner afin de vous aider à organiser les utilisateurs et leurs droits. Entrez une description et cliquez sur <code className="action">Suivant</code>.
+
+<img className="thumbnail" alt="Add user" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/adduser.png" loading="lazy" />
+
+Vous pouvez maintenant sélectionner des rôles représentant les autorisations que l'utilisateur obtiendra. Pour chaque case cochée, l’utilisateur obtiendra des privilèges d’accès selon le tableau ci-dessous.
+
+<img className="thumbnail" alt="Permissions" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/permissions.png" loading="lazy" />
+
+Cliquez sur <code className="action">Confirmer</code> pour créer l'utilisateur OpenStack. L’identifiant et le mot de passe sont automatiquement générés et affichés dans votre espace client.
+
+<img className="thumbnail" alt="User_pw" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/user_pw.png" loading="lazy" />
+
+Veillez à enregistrer le mot de passe, uniquement affiché à ce moment précis dans le cadre vert, dans un gestionnaire de mots de passe. Le mot de passe ne pourra pas être récupéré par la suite. Cependant, il est toujours possible de créer un nouveau mot de passe en cliquant sur <code className="action">...</code> et en sélectionnant <code className="action">Regénérer un mot de passe</code>.
+
+<img className="thumbnail" alt="Generate" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/generatepw.png" loading="lazy" />
+
+Une fois l'utilisateur OpenStack créé, vous pourrez utiliser ses identifiants pour vous connecter à [l'interface Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/) en cliquant sur le lien <code className="action">Horizon</code> dans le menu de gauche.
+
+### Changer le mot de passe d'un utilisateur OpenStack
+
+La création d’un mot de passe OpenStack est possible après vous être connecté à l'interface [OpenStack Horizon](https://horizon.cloud.ovh.net) :
+
+<img className="thumbnail" alt="Connexion à Horizon" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/1_H_login_window.png" loading="lazy" />
+
+L’identifiant de l’utilisateur Horizon se trouve dans le coin supérieur droit de l'interface Horizon. Cliquez sur votre identifiant pour faire apparaître un menu avec les options disponibles.
+Sélectionnez <code className="action">Paramètres</code> puis, sur la gauche, <code className="action">Changer le mot de passe</code> :
+
+<img className="thumbnail" alt="Changement de mot de passe" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/2_H_pass_change_option.png" loading="lazy" />
+
+Entrez votre mot de passe actuel dans le premier champ et votre nouveau mot de passe dans les deux champs suivants.
+
+:::info
+Lors du changement de mot de passe, vérifiez que les critères suivants sont pris en compte :
+
+- le mot de passe doit comporter au minimum 8 caractères ;
+- le mot de passe doit comporter au maximum 30 caractères ;
+- le mot de passe doit comporter au moins une lettre majuscule ;
+- le mot de passe doit comporter au moins une lettre minuscule ;
+- le mot de passe doit comporter au moins un chiffre ;
+- le mot de passe doit comporter uniquement des chiffres et des lettres.
+
+:::
+
+
+Confirmez ensuite la création du nouveau mot de passe en cliquant sur <code className="action">Changer</code>.
+
+<img className="thumbnail" alt="Paramétrage du mot de passe" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/3_H_set_new_passord.png" loading="lazy" />
+
+Veuillez noter que le changement de mot de passe du compte d’utilisateur entraîne la révocation immédiate du précédent mot de passe.
+
+### Suppression de l'utilisateur OpenStack
+
+Cliquez sur <code className="action">Utilisateurs & Rôles</code> dans le menu de gauche sous **Paramètres**.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/delete.png" loading="lazy" />
+
+Cliquez sur <code className="action">...</code> et sélectionnez <code className="action">Supprimer</code>.
+
+:::warning
+La suppression d'un utilisateur est définitive et invalidera tous les tokens associés, y compris ceux dont la date d'expiration n'est pas encore dépassée.
+
+:::
+
+
+## Aller plus loin
+
+[Présentation de Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

@@ -1,0 +1,56 @@
+---
+title: "Supprimer la copie d'une VM du site de récupération Zerto"
+description: Découvrez comment supprimer une VM du site de récupération quand elle est effacée du site source
+lastUpdated: 2021-12-09
+---
+
+## Objectif
+
+Quand une VM est volontairement supprimée du site source, la VPG Zerto fait une pause dans la synchronisation et se met en erreur.<br/>
+Les fichiers de la copie de la VM sont toujours sur le site cible.<br/>
+Ce document montre comment effacer ces fichiers et remettre la VPG en fonction.
+
+**Utilisez l'interface Zerto pour supprimer une copie de VM du site cible.**
+
+## Prérequis
+
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour Zerto (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployé [Zerto Virtual Replication](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-as-a-service/)
+
+## En pratique
+
+Dans l'interface Zerto du site cible, vérifiez les tableaux de bord <code className="action">VPGs</code> et <code className="action">VMs</code>.<br/>
+Dans notre exemple, VPG1 contient deux VMs, vm1-zerto et vm2-zerto. Le statut de la synchronisation du site est fonctionnel.
+
+<img className="thumbnail" alt="Dash" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en01sync.png" loading="lazy" />
+
+Dans l'interface vSphere du site source, vm2-zerto est volontairement supprimée.<br/>
+La VM et ses disques sont effacés.
+
+<img className="thumbnail" alt="VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en02vmdelete.png" loading="lazy" />
+
+De retour dans l'interface Zerto du site cible, la VPG fait une pause dans la synchronisation et se met en erreur. La VM vm2-zerto est grisée.
+
+<img className="thumbnail" alt="VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en03vpgerror.png" loading="lazy" />
+
+Dans l'onglet <code className="action">VPGs</code>, cochez VPG1 et dans le menu <code className="action">Actions</code>, cliquez sur <code className="action">Edit VPG</code>.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en04vpgedit.png" loading="lazy" />
+
+Dans <code className="action">VMs</code>, retirez vm2-zerto de la section `selected VMS` (cochez la VM puis cliquez sur la flèche pointant vers la gauche).<br/>
+CLiquez sur <code className="action">Done</code>.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en05vpgremove.png" loading="lazy" />
+
+Cliquez sur <code className="action">No</code> dans la fenètre d'avertissement. Il n'y a généralement pas besoin sauvegarder le disque de récupération.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en06warning.png" loading="lazy" />
+
+La VPG va se synchroniser de nouveau et redevenir fonctionnelle avec une seule VM à l'intérieur.
+
+<img className="thumbnail" alt="DONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en07green.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

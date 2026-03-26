@@ -1,0 +1,86 @@
+---
+title: "Configurer une redirection d'appels"
+description: "Découvrez comment configurer une redirection d'appels sur votre numéro alias OVHcloud"
+lastUpdated: 2026-01-22
+---
+
+## Objectif
+
+La redirection permet de rediriger vers une ligne SIP OVHcloud les appels reçus sur un numéro alias OVHcloud. 
+Cette configuration permet notamment la réception d'appels sur votre numéro principal.
+
+**Découvrez comment configurer une redirection d'appels sur votre numéro OVHcloud.**
+
+:::info
+Pour obtenir plus de détails sur la différence entre un **numéro alias** et une **ligne SIP**, consultez notre [FAQ](/guides/web-cloud/phone-and-fax/voip/faq-voip#ligne-ou-numero/).
+
+:::
+
+
+## Prérequis
+
+- Disposer d'un [numéro alias fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/) ou d'un [numéro porté](/guides/web-cloud/phone-and-fax/voip/demander-la-portabilite-de-mon-numero/) depuis un autre opérateur.
+- Disposer d'[une ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/).
+
+## En pratique
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+<img className="thumbnail" alt="espace client Telecom VoIP" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png" loading="lazy" />
+
+### Étape 1 : Appliquer la configuration « Redirection d'appels »
+
+- Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet <code className="action">Configuration</code>, sélectionnez <code className="action">Redirection d'appels</code> puis cliquez sur <code className="action">Paramétrer</code>.
+
+- Si votre numéro a déjà une configuration en place, cliquez sur l'onglet <code className="action">Configuration</code> puis sur <code className="action">Changer de configuration</code>. Sélectionnez ensuite <code className="action">Redirection d'appels</code> et cliquez sur <code className="action">Paramétrer</code>. Vous devrez alors confirmer la perte de la configuration actuellement en place.
+
+<img className="thumbnail" alt="redirection d'appels" src="/images/web-cloud/phone-and-fax/voip/redirection-avec-presentation/redirection1-2026.png" loading="lazy" />
+
+:::info
+Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur <code className="action">Appliquer à plusieurs numéros</code>, sélectionnez les numéros concernés puis cliquez sur <code className="action">Valider</code>.
+
+<img className="thumbnail" alt="configurationnumeroalias" src="/images/web-cloud/phone-and-fax/voip/redirection-avec-presentation/selection-alias-conf.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Paramétrer</code> et patientez quelques instants pendant l’application du paramétrage.
+
+:::
+
+
+### Étape 2 : Paramétrer la redirection d'appels
+
+Dans la partie « **Vos appels entrants** », cliquez d'abord sur le bouton <code className="action">+ Sélectionner une ligne</code>.<br/>
+Choisissez alors, parmi les lignes affichées, celle vers laquelle vous souhaitez rediriger les appels reçus sur votre numéro. Cliquez ensuite sur le bouton <code className="action">Valider</code> pour confirmer votre sélection.
+
+<img className="thumbnail" alt="redirection d'appels" src="/images/web-cloud/phone-and-fax/voip/redirection-avec-presentation/redirection2-2022.png" loading="lazy" />
+
+La ligne sélectionnée apparaît alors sous la mention « Ligne vers laquelle vos appels seront redirigés ».
+
+Choisissez ensuite, dans la partie « **Vos appels sortants** », si vous souhaitez activer ou non la présentation de votre numéro lors d'un appel sortant.
+
+Vous pouvez ainsi, lorsque vous émettez un appel depuis votre ligne SIP OVHcloud, présenter votre numéro alias (et non plus la ligne OVHcloud) sur les téléphones de vos destinataires.
+
+Si vous souhaitez activer cette fonctionnalité, cochez la case située à côté de « Activer la présentation de votre numéro lors des appels sortants ».
+
+<img className="thumbnail" alt="redirection d'appels - présentation" src="/images/web-cloud/phone-and-fax/voip/redirection-avec-presentation/redirection3-2022.png" loading="lazy" />
+
+Une fois vos choix effectués, cliquez sur <code className="action">Valider</code> afin d'appliquer la configuration.<br/>
+Patientez quelques instants afin que celle-ci soit prise en compte.
+
+:::info
+Si vous avez appliqué le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+
+:::
+
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

@@ -1,17 +1,22 @@
-themes
-plugins
-accounts
-config
-data
-.revs
-.vscode
-.idea
-
+# Local
 .DS_Store
-pages/platform/kubernetes-k8s/monitoring-gpu-application/images/gpu-app-demo-video.mov
-llm-config/
-.claude/
-cp-extraction
-CLAUDE.md
-CLAUDE.local.md
-.mcp.json
+*.local
+*.log*
+base
+
+# Dist
+node_modules
+dist/
+doc_build/
+doc_build_final/
+
+# Build cache
+.last-updated-cache.json
+
+# Turborepo
+.turbo/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea

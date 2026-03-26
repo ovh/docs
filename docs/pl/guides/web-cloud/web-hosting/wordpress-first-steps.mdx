@@ -1,0 +1,196 @@
+---
+title: Tutorial - Pierwsze kroki w WordPress
+description: Dowiedz się, jak utworzyć stronę WWW przy użyciu CMS WordPress
+lastUpdated: 2024-07-15
+---
+
+## Wprowadzenie
+
+Tutorial ten pozwoli Ci na tworzenie pierwszych treści, ich organizację, umieszczenie w Internecie i zmianę motywu Twojej strony WWW za pomocą Content Management System (CMS) **WordPress**. Możesz uruchomić Twoją stronę WWW bez konieczności posiadania wiedzy z zakresu programowania, z szerokim wachlarzem tematów, takich jak firmowa strona WWW, blog czy strona internetowa, która pozwoli Ci poznać Twoją działalność i pasję.
+
+:::warning
+OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+
+Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub [edytora CMS WordPress](https://wordpress.com/support/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+
+:::
+
+
+**Dowiedz się, jak utworzyć stronę WWW przy użyciu CMS WordPress.**
+
+## Wymagania początkowe
+
+- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera przynajmniej jedną bazę danych.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- [Instalacja Wordpress](/guides/web-cloud/web-hosting/cms-install-1-click-modules/) na Twoim hostingu
+
+## W praktyce
+
+Jeśli tak się nie stało i zanim przejdziesz dalej, [dodaj certyfikat SSL](/guides/web-cloud/web-hosting/ssl-activate-https-website#etap-1-aktywacja-certyfikatu-ssl-na-hostingu/) w nazwie domeny przypisanej do Twojej strony WWW.
+
+Podczas instalacji systemu CMS za 1 kliknięciem otrzymałeś e-mail z elementami niezbędnymi do kontynuowania tego tutoriala:
+
+- link dostępowy do interfejsu administracyjnego
+- nazwa administratora
+- link do uzyskania hasła administratora.
+
+Pobierz te elementy, zanim przejdziesz dalej.
+
+## Zaloguj się do interfejsu administracyjnego
+
+Przejdź do linku dostępowego do interfejsu administracyjnego przesłanego e-mailem podczas instalacji CMS. Domyślnie adres URL kończy się na `wp-admin`. Jeśli nie jesteś autoryzowany w interfejsie administracyjnym, **WordPress** przekieruje automatycznie na adres URL kończący się na `wp-login`:
+
+<img className="thumbnail" alt="WordPress - Admin login" src="/images/assets/screens/other/cms/wordpress/admin-login.png" loading="lazy" />
+
+:::info
+Na tej stronie możesz zmienić domyślny język interfejsu **WordPress**. Przejdź do rozwijanego menu na dole strony, wybierz język, w którym zamierzasz się wybrać i zatwierdź przyciskiem <code className="action">Change</code>. Język może zostać zmieniony w późniejszym terminie.
+
+:::
+
+
+Wpisz login (lub "Nazwę administratora") dostarczony przez e-mail oraz "Hasło WordPress" wskazane w tym samym e-mailu. Pojawi się wówczas na dashboardzie:
+
+<img className="thumbnail" alt="WordPress - Dashboard" src="/images/assets/screens/other/cms/wordpress/dashboard.png" loading="lazy" />
+
+### Zmień temat strony WordPress
+
+**szablony WordPress** to zbiory plików, które umożliwiają zmianę prezentacji strony www bez modyfikowania jej treści. W Internecie dostępne są liczne tematy, bezpłatne i płatne, z różnymi tematami (strony WWW, blogi, sklepy internetowe, prasa online,...).
+
+Aby zmienić hasło, w menu po lewej stronie dashboardu kliknij <code className="action">Wygląd</code> a następnie <code className="action">Motywy</code>:
+
+<img className="thumbnail" alt="WordPress - Appearance/Themes" src="/images/assets/screens/other/cms/wordpress/dashboard-themes.png" loading="lazy" />
+
+Wybierz temat spośród zaproponowanych i kliknij na <code className="action">Włącz</code>:
+
+<img className="thumbnail" alt="WordPress - Appearance/Themes" src="/images/assets/screens/other/cms/wordpress/themes.png" loading="lazy" />
+
+Możesz wyświetlić wynik na stronie WWW z nazwą domeny.
+
+### Napisz artykuł
+
+WordPress pozwala na łatwe tworzenie treści bez posiadania wiedzy z zakresu programowania.
+
+Aby utworzyć artykuł, przejdź do sekcji <code className="action">Wpisy</code> w menu po lewej stronie, następnie kliknij <code className="action">Dodaj nowy</code>:
+
+<img className="thumbnail" alt="WordPress - Posts/Add New" src="/images/assets/screens/other/cms/wordpress/dashboard-add-new-post.png" loading="lazy" />
+
+Od wersji 5 **WordPress** oferuje interfejs umożliwiający prostsze redagowanie i publikację artykułów: **Gutenberg**. Jest to edytor WYSIWYG ("*what you see is what you get*"). Umożliwia tworzenie strony bezpośrednio poprzez dodawanie elementów takich jak tytuły, akapity, listy, obrazy, etc. :
+
+<img className="thumbnail" alt="WordPress - Gutenberg" src="/images/assets/screens/other/cms/wordpress/post-editor.png" loading="lazy" />
+
+Kliknij polecenie <code className="action">Dodaj tytuł</code>, aby dodać tytuł na swojej stronie:
+
+<img className="thumbnail" alt="WordPress - Gutenberg, add title" src="/images/assets/screens/other/cms/wordpress/post-editor-2.png" loading="lazy" />
+
+Aby dodać zawartość, kliknij na znak <code className="action">+</code> i wybierz, co chcesz wstawić:
+
+<img className="thumbnail" alt="WordPress - Gutenberg, add block" src="/images/assets/screens/other/cms/wordpress/post-editor-3.png" loading="lazy" />
+
+Z prawej strony Twojej strony możesz wykonać następujące operacje:
+
+- <code className="action">Zapisz szkic</code>, działanie, które możesz również wykonać z kombinezonem klawisza `Ctrl` + `S` (lub `cmd` + `S` z macOS);
+- <code className="action">Podgląd</code>;
+- <code className="action">Opublikuj</code> na Twojej stronie WWW.
+
+W naszym **przykład** kliknij <code className="action">Podgląd</code>, następnie <code className="action">Podejrzyj w nowej zakladce</code>. Wybierz typ urządzenia, na którym wykonasz renderowanie (komputer, tablet lub smartfon):
+
+<img className="thumbnail" alt="WordPress - Preview" src="/images/assets/screens/other/cms/wordpress/post-view.png" loading="lazy" />
+
+Aby powrócić do interfejsu administracyjnego **WordPress**, w lewym górnym rogu kliknij ikonę.
+
+### Zarządzaj kategoriami
+
+**WordPress** pozwala na zdefiniowanie kategorii i powiązanie artykułów z jedną lub kilkoma z nich. Aby zarządzać kategoriami Twojej strony WWW, przejdź do sekcji <code className="action">Wpisy</code>, a następnie do sekcji <code className="action">Kategorie</code>:
+
+<img className="thumbnail" alt="WordPress - Categories" src="/images/assets/screens/other/cms/wordpress/categories.png" loading="lazy" />
+
+Wpisz teraz formularz, aby dodać nową kategorię:
+
+- **Nazwa**: nazwa kategorii wyświetlana na Twojej stronie WWW.
+- **Slug**: element, który pojawi się na końcu adresu URL (przydatny do ulepszenia pozycjonowania).
+- **Kategoria rodzicielska**: pozwala na hierarchizację kategorii (kategoria, którą tworzysz może być podkategorią istniejącej kategorii).
+- **Opis**: opis kategorii może być jednak widoczny w niektórych tematach.
+
+<img className="thumbnail" alt="WordPress - Categories filled" src="/images/assets/screens/other/cms/wordpress/categories-2.png" loading="lazy" />
+
+Po podaniu tych informacji kliknij przycisk <code className="action">Utwórz kategorię</code>:
+
+<img className="thumbnail" alt="WordPress - Categories added" src="/images/assets/screens/other/cms/wordpress/categories-3.png" loading="lazy" />
+
+Masz możliwość zarządzania hierarchią swoich kategorii. Nowa kategoria może być powiązana z istniejącą kategorią:
+
+<img className="thumbnail" alt="WordPress - SubcaKategoria added" src="/images/assets/screens/other/cms/wordpress/categories-4.png" loading="lazy" />
+
+### przypisanie kategorii do artykułu
+
+Aby przypisać artykuł do jednej lub kilku kategorii, kliknij na `Wpisy` (Posty). Będziesz mieć listę zawierającą wszystkie artykuły i ich statusy. Przejdź do tematu artykułu, który chcesz sklasyfikować i kliknij na <code className="action">Szybka edycja</code>:
+
+<img className="thumbnail" alt="WordPress - Categorize a post" src="/images/assets/screens/other/cms/wordpress/posts-lists.png" loading="lazy" />
+
+Możesz zmienić kategorie zaznaczając lub usuwając elementy wymienione w kolumnie <code className="action">Kategorie</code>:
+
+<img className="thumbnail" alt="WordPress - Set new categories to an existing post" src="/images/assets/screens/other/cms/wordpress/posts.png" loading="lazy" />
+
+:::warning
+Wybranie podkategorii nie wiąże się z automatycznym wybraniem kategorii macierzystej.
+
+:::
+
+
+### Tworzenie stron
+
+Strony należy odróżnić od artykułów. Zasadniczo są one wykorzystywane do zapisywania treści, które nie będą się zmieniać lub w krótkim czasie, jako informacji prawnych, ogólnych warunków użytkowania, itp.
+
+Przejdź do strony <code className="action">Strony</code>:
+
+<img className="thumbnail" alt="WordPress - Go to page" src="/images/assets/screens/other/cms/wordpress/pages.png" loading="lazy" />
+
+:::info
+Domyślnie istnieje strona, która jest generowana podczas instalacji **WordPress**. Ze względu na czytelność tej strony usunięto ją z przykładu.
+
+:::
+
+
+Kliknij na <code className="action">Dodaj nowy</code>. Wówczas pojawił się redaktor Gutenberg:
+
+<img className="thumbnail" alt="WordPress - Parges, Gutenberg page builder" src="/images/assets/screens/other/cms/wordpress/pages-editor.png" loading="lazy" />
+
+Stwórz zawartość swojej strony i publikuj:
+
+<img className="thumbnail" alt="WordPress - Strony, content" src="/images/assets/screens/other/cms/wordpress/post-editor-4.png" loading="lazy" />
+
+Możesz powrócić na stronę główną Twojej strony WWW, otrzymasz link do nowej strony:
+
+<img className="thumbnail" alt="WordPress - Home page with new page link" src="/images/assets/screens/other/cms/wordpress/main-page-view.png" loading="lazy" />
+
+### Popraw permalię
+
+Domyślnie linki na Twoich stronach **WordPress** są napisane z składnią typu `parametr=wartość`, `która` jest liczbą całkowitą, która nie jest wyraźna. Modyfikacja zapisu permalinki pozwala na posiadanie adresów URL o bardziej wyraźnym formacie. Adresy URL będą łatwiejsze do odczytania, co poprawi pozycjonowanie Twojej strony www.
+
+Na stronie głównej dashboardu przejdź do <code className="action">Ustawienia</code>, a następnie kliknij <code className="action">Bezpośrednie odnośniki</code>:
+
+<img className="thumbnail" alt="WordPress - Settings/Permalinks" src="/images/assets/screens/other/cms/wordpress/dashboard-users-permalinks.png" loading="lazy" />
+
+Masz wybór między kilkoma rodzajami permalinków. Wybierz "Tytuł publikacji" i zatwierdź na dole strony:
+
+<img className="thumbnail" alt="WordPress - Settings/Permalinks, select post name pattern" src="/images/assets/screens/other/cms/wordpress/permalink-settings.png" loading="lazy" />
+
+Twoje linki zostaną zbudowane na podstawie wcześniej podanego sluga podczas edycji artykułów i stron.
+
+## Sprawdź również <a name="go-further"></a>
+
+- Przechowuj dostęp w menedżerze haseł, takich jak [KeePass](https://keepass.info/).
+- Przetestuj domyślny edytor [Gutenberg](https://wordpress.org/gutenberg/).
+- Niektóre zasoby, w których można znaleźć szablony WordPress:
+    - [WordPress Themes](https://wordpress.com/themes)
+    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php).
+    - [Elegant Themes](https://www.elegantthemes.com/), producent szablonu Divi.
+    - [Elementor](https://elementor.com/), inny edytor tematów.
+- Oficjalna strona [WordPress](https://wordpress.org/).
+- [Użyj SFTP do przesyłania plików lub stron do WordPress](https://developer.wordpress.com/docs/developer-tools/sftp/).
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,243 @@
+---
+title: Comment configurer le reverse DNS de ma connexion Internet OVHcloud
+excerpt: "Découvrez comment configurer et vérifier le reverse DNS d'un domaine redirigeant vers l'adresse IP de votre acccès FTTH ou xDSL OVHcloud"
+updated: 2025-04-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+Le Reverse DNS, aussi appelé PTR Record (ou pointer record) sert à associer une adresse IP à un enregistrement de nom de domaine.
+
+Il est important de l'utiliser, car l'absence de Reverse DNS peut être considérée comme une erreur et peut entraîner le refus d'accès à certains services.
+Par exemple, dans le cadre de l'utilisation d'un serveur e-mail, si l'e-mail est envoyé depuis un serveur ayant une adresse IP sans résolution DNS appropriée, il y a de grandes chances qu'il soit refusé par le serveur de réception.
+
+## Prérequis
+
+- Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
+- Disposer d'un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP (IPv4 et/ou IPv6) de votre accès xDSL ou fibre.
+- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`.
+
+Il est également possible de configurer les Reverse DNS des blocs IPv4 fournis en option sur nos accès.
+
+Retrouvez plus d'informations dans notre guide « [Commander et gérer un bloc IP /29](/guides/web-cloud/internet/internet-access/comment-commander-et-gerer-un-bloc-ip-29) ».
+
+## En pratique
+
+### Vérifier que le nom de domaine est bien configuré
+
+Nous allons faire le test avec le domaine `ovhtelecom.fr`.
+
+#### Sous Windows
+
+Cliquez sur les onglets ci-dessous pour afficher les détails selon le type d'IP souhaité.
+
+<Tabs>
+<Tab label="IPv4">
+
+Ouvrez l'invite de commande et saisissez :
+
+```sh
+nslookup ovhtelecom.fr
+```
+
+Vous obtiendrez une réponse du type :
+
+```sh
+Name : www.ovhtelecom.fr Address : 198.27.92.21
+```
+
+</Tab>
+<Tab label="IPv6">
+
+Ouvrez l'invite de commande et saisissez :
+
+```sh
+nslookup -type=AAAA ovhtelecom.fr
+```
+
+Vous obtiendrez une réponse du type :
+
+```sh
+Nom : ovhtelecom.fr
+Address:  2001:41d0:ab1e:ef00:a2e5:9aad:8a1:598f
+```
+
+</Tab>
+</Tabs>
+
+
+#### Sous macOS et Linux
+
+Cliquez sur les onglets ci-dessous pour afficher les détails selon le type d'IP souhaité.
+
+<Tabs>
+<Tab label="IPv4">
+
+Ouvrez le terminal et saisissez :
+
+```sh
+host ovhtelecom.fr
+```
+
+Vous obtiendrez une réponse du type :
+
+```sh
+ovhtelecom.fr has address 198.27.92.21
+```
+
+</Tab>
+<Tab label="IPv6">
+
+Ouvrez l'invite de commande et saisissez :
+
+```sh
+host ovhtelecom.fr
+```
+
+Vous obtiendrez une réponse du type :
+
+```sh
+ovhtelecom.fr has IPv6 address 2001:41d0:ab1e:ef00:a2e5:9aad:8a1:598f
+```
+
+</Tab>
+</Tabs>
+
+
+Si ce n'est pas le cas, nous vous invitons à vous rapprocher de votre bureau d'enregistrement afin de configurer votre nom de domaine. Si OVHcloud est votre bureau d'enregistrement, consultez le guide « [Éditer une zone DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit) ».
+
+Nous pouvons maintenant passer à l'étape suivante qui est la configuration de notre Reverse DNS.
+
+### Configurer le Reverse DNS de votre connexion
+
+La configuration du Reverse DNS s'effectue dans l'espace client OVHcloud :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`.
+1. Cliquez sur `Offres Internet` puis sur le *Pack* contenant l'accès à Internet concerné.
+1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
+
+Dans les caractéristiques sur la droite, vous verrez apparaître votre IPv4 publique sous cette forme : `109.190.xxx.xxx` ou `151.127.xxx.xxx` et votre préfixe IPv6 public sous cette forme : `2001:41d0:xxxx:xxxx::`.
+
+- Cliquez sur l'icône engrenage (⚙) à côté de votre IP.
+- Cliquez sur le `+` afin d'ajouter le reverse DNS.
+
+<Tabs>
+<Tab label="IPv4">
+
+![reverse DNS](/images/guides/web-cloud/internet/internet-access/comment-configurer-le-reverse-dns-de-ma-connexion/XDSL-ReverseDNS.png)
+
+- Saisissez votre IPv4 publique et le sous-domaine souhaité puis validez.
+- Saisissez le nom de domaine ou sous-domaine et cliquez sur `Suivant`. Validez à la page suivante.
+
+![reverse DNS](/images/guides/web-cloud/internet/internet-access/comment-configurer-le-reverse-dns-de-ma-connexion/telecom-reversedns-add-reverse.png)
+
+</Tab>
+<Tab label="IPv6">
+
+![reverse DNS](/images/guides/web-cloud/internet/internet-access/comment-configurer-le-reverse-dns-de-ma-connexion/XDSL-ReverseDNS-IPv6.png)
+
+> [!warning]
+>
+> **Vérifiez vos paramètres de sécurité IPv6**
+>
+> En IPv6, c'est votre machine qui est exposée directement sur Internet. De ce fait, il est indispensable de vous assurer que tous les moyens de sécurité disponibles (pare-feu routeur et machine, iptable, ouverture de port, etc...) sont activés et parfaitement configurés.
+
+- En IPv6 vous devez saisir l'adresse IPv6 de la machine qui va exploiter votre nom de domaine. Votre IPv6 doit contenir le même préfixe que votre connexion Internet.
+- Saisissez le nom de domaine ou sous-domaine et cliquez sur `Suivant`. Validez à la page suivante.
+
+![reverse DNS](/images/guides/web-cloud/internet/internet-access/comment-configurer-le-reverse-dns-de-ma-connexion/telecom-reversedns-add-reverse-ipv6.png)
+
+</Tab>
+</Tabs>
+
+
+
+Quelques minutes seront nécessaires pour que la nouvelle valeur de votre DNS soit visible dans votre espace client.
+
+### Vérifier la configuration du Reverse DNS
+
+Nous allons utiliser les mêmes commandes que pour la vérification de la configuration du nom de domaine mais cette fois-ci avec l'adresse IP.
+
+#### Sous Windows
+
+Cliquez sur les onglets ci-dessous pour afficher les détails selon le type d'IP souhaité.
+
+<Tabs>
+<Tab label="IPv4">
+
+Ouvrez l'invite de commande et saisissez :
+
+```sh
+nslookup 198.27.92.21
+```
+
+Vous obtiendrez une réponse du type :
+
+```sh
+Name : www.ovhtelecom.fr Address : 198.27.92.21
+```
+
+</Tab>
+<Tab label="IPv6">
+
+Ouvrez l'invite de commande et saisissez :
+
+```sh
+nslookup 2001:41d0:ab1e:ef00:a2e5:9aad:8a1:598f
+```
+
+Vous obtiendrez une réponse du type :
+
+```sh
+Nom :    ovhtelecom.fr
+Address:  2001:41d0:ab1e:ef00:a2e5:9aad:8a1:598f
+```
+
+</Tab>
+</Tabs>
+
+
+Cliquez sur les onglets ci-dessous pour afficher les détails selon le type d'IP souhaité.
+
+<Tabs>
+<Tab label="IPv4">
+
+Ouvrez le terminal et saisissez :
+
+```sh
+host 198.27.92.21
+```
+
+Vous obtiendrez une réponse du type :
+
+```sh
+21.92.27.198.in-addr.arpa domain name pointer www.ovhtelecom.fr.
+```
+
+</Tab>
+<Tab label="IPv6">
+
+Ouvrez le terminal et saisissez :
+
+```sh
+host 2001:41d0:ab1e:ef00:a2e5:9aad:8a1:598f
+```
+
+Vous obtiendrez une réponse du type :
+
+```sh
+f.8.9.5.1.a.8.d.a.a.9.5.e.2.a.0.0.f.e.e.1.b.a.0.d.4.1.1.0.0.2.ip6.arpa = domain name pointer ovhtelecom.fr.
+```
+
+</Tab>
+</Tabs>
+
+
+Votre Reverse DNS est à présent configuré.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

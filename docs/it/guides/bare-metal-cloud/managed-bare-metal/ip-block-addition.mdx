@@ -1,0 +1,98 @@
+---
+title: Aggiungere un blocco IP
+description: Ordinare un blocco IP su un Managed Bare Metal
+lastUpdated: 2020-11-18
+---
+
+import Api from '@components/Api';
+
+
+## Obiettivo
+
+Un blocco IP Un blocco IP può essere utilizzato per rendere i tuoi servizi accessibili su Internet. 
+
+**Questa guida ti mostra come ordinare, aggiungere e migrare un blocco IP associato al tuo Managed Bare Metal.**
+
+## Prerequisiti
+
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Disporre di un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) sul proprio account OVHcloud
+
+## Procedura
+
+### Ordinare un blocco IP
+
+Per ordinare un blocco IP aggiuntivo per il tuo **Managed Bare Metal**, accedi allo Spazio Cliente OVHcloud. Nella sezione `Bare Metal Cloud`, clicca su `IP` nella colonna di sinistra e poi clicca su <code className="action">Ordina IP aggiuntivi</code>. Quindi seleziona il tuo **Managed Bare Metal** nel menu a tendina prima di passare allo step successivo.
+
+Per la creazione del tuo blocco IP è necessario compilare diversi campi.
+
+- Dimensione del blocco IP (da /28 a /24)
+
+:::info
+Ecco una tabella con il riepilogo dei numeri di IP presenti in un blocco e il numero di IP utilizzabili.
+
+:::
+
+
+|Dimensione del blocco|IP nel blocco|IP utilizzabili in OVHcloud|
+|:---:|:---:|:---:|
+|28|16|11|
+|27|32|27|
+|26|64|59|
+|25|128|123|
+|24|256|251|
+
+:::info
+Per conoscere gli indirizzi IP riservati al tuo blocco e il relativo utilizzo, consulta la nostra guida sul [plugin OVHcloud Network](/guides/bare-metal-cloud/managed-bare-metal/plugin-ovh-network/).
+
+:::
+
+
+- Paese del blocco IP:  importante in alcuni casi per il posizionamento dei tuoi servizi (un sito italiano avrà un SEO migliore in Italia se anche l’IP è italiano)
+- Nome della rete (Informazione visibile nel whois del blocco IP)
+- Numero dei clienti stimati (Quanti clienti finali saranno ospitati su questi IP).
+- Descrizione della rete (Informazione visibile nel whois del blocco IP).
+- Utilizzo (Informazione sull’utilizzo (Web, SSL, Cloud, ecc.)).
+
+Dopo aver confermato l’ultimo step, ottieni il buono d’ordine del tuo blocco IP. Se il buono d’ordine è corretto, non ti resta che procedere al pagamento con uno dei metodi proposti in fondo alla pagina.
+
+### Migrare un blocco IP tra due Managed Bare Metal
+
+Per migrare un blocco IP è necessario spostare manualmente i blocchi tramite l’APIv6 OVHcloud.
+
+Utilizza la seguente chiamata API:
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\{ip\}/move"} />
+
+Completa i campi nel modo seguente:
+
+- ip:blocco IP con /Mask
+- nexthop « newPrimaryIp » (sensibile alle maiuscole)
+- to: Managed Bare Metal di destinazione in formato pcc-XXX-XXX-XXX-XXX
+
+<img className="thumbnail" alt="champ nexthop" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/move-api.png" loading="lazy" />
+
+Il risultato sarà di questo tipo:
+
+<img className="thumbnail" alt="champ nexthop" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/api-result.png" loading="lazy" />
+
+Dopodiché utilizza questa chiamata API per spostare l’IP nel Parking degli IP. 
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\{ip\}/park"} />
+
+
+:::warning
+Questa chiamata interrompe la rete sulle VM che utilizzano gli IP in questione.
+
+:::
+
+
+È possibile seguire la migrazione del blocco IP dal tuo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione<code className="action">Bare Metal Cloud</code> > <code className="action">Managed Bare Metal</code>. Clicca sul tuo servizio Managed Bare Metal, quindi sulla scheda <code className="action">Operazioni</code>.
+
+Il riferimento dell’operazione è « removeIpRipeBlock ».
+
+<img className="thumbnail" alt="operations manager" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/operations.png" loading="lazy" />
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

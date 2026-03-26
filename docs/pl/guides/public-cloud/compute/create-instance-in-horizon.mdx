@@ -1,0 +1,205 @@
+---
+title: Tworzenie instancji w interfejsie Horizon
+description: Dowiedz się, jak utworzyć instancję w interfejsie Horizon
+lastUpdated: 2024-09-05
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Istnieje możliwość tworzenia instancji bezpośrednio w interfejsie Horizon. Możesz utworzyć wiele instancji lub skonfigurować grupę zabezpieczeń i użyć jej w instancjach.
+
+**Dowiedz się, jak utworzyć instancję w interfejsie Horizon.**
+
+## Wymagania początkowe
+
+- Utworzenie [projektu Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) na Twoim koncie OVHcloud
+- [Dostęp do interfejsu Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+## W praktyce
+
+### Utwórz prywatną sieć
+
+Zalecamy utworzenie prywatnej sieci przed utworzeniem instancji. Będziesz mógł później przypisać tę sieć do Twojej instancji.
+
+Zaloguj się do interfejsu Horizon, aby rozpocząć. Jeśli potrzebujesz pomocy w przeprowadzeniu tej operacji, zapoznaj się z [naszą dokumentacją](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/).
+
+Następnie kliknij <code className="action">Network</code> w menu po lewej stronie, po czym kliknij <code className="action">Networks</code>.
+
+<img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/create-network.png" loading="lazy" />
+
+Kliknij <code className="action">Create Network</code>
+
+<img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/create-network-1.png" loading="lazy" />
+
+
+<Tabs>
+  <Tab label="1. **Network (Sieć)**">
+    **Network Name:** Wprowadź nazwę sieci.<br/>
+
+**Enable Admin State:** Pozostaw zaznaczoną opcję, aby włączyć sieć.<br/>
+
+**Create Subnet:** Pozostaw zaznaczoną opcję, aby utworzyć podsieć.<br/>
+
+**Availability Zone Hints:** Pozostaw opcję domyślną.<br/><br/>
+    <img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/network_information.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="2. **Subnet (Podsieć)**">
+    **Subnet Name:** Wprowadź nazwę podsieci.<br/>
+
+**Network Address:** Wybierz zakres sieci prywatnej. Na przykład: `192.168.0.0/24`.<br/>
+
+**IP Version:** Pozostaw tę wartość dla adresu IPv4.<br/>
+
+**Gateway IP:** Opcjonalnie. Jeśli adres Gateway IP nie jest zdefiniowany, jest on automatycznie wybierany.<br/>
+
+**Disable Gateway:** Pozostaw tę opcję wyłączoną.<br/><br/>
+    <img className="thumbnail" alt="subnet" src="/images/public-cloud/compute/create-instance-in-horizon/subnet_information.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="3. **Subnet Szczegóły (Szczegóły podsieci)**">
+    **Enable DHCP:** Pozostaw tę opcję włączoną.<br/>
+
+**Allocation Pools:** Opcjonalnie. Możesz określić zakres, w którym wybrane są adresy IP.<br/>
+
+**DNS Name Server:** Opcjonalnie. Możesz określić dowolny serwer nazw DNS.<br/>
+
+**Host Routes:** Opcjonalnie. Możesz wybrać dowolną trasę hosta.<br/><br/>
+    <img className="thumbnail" alt="KVM" src="/images/public-cloud/compute/create-instance-in-horizon/subnetdetails_information.png" loading="lazy" /><br/>
+  </Tab>
+</Tabs>
+
+
+### Tworzenie instancji
+
+W interfejsie Horizon kliknij <code className="action">Compute</code> w menu po lewej stronie, następnie <code className="action">Instances</code>.
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step1.png" loading="lazy" />
+
+Otworzy się strona, na której zobaczysz tworzone aktualnie instancje. Aby utworzyć nową, kliknij przycisk <code className="action">Launch Instance</code>.
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step2.png" loading="lazy" />
+
+Wprowadź następnie odpowiednie dane. W razie potrzeby skorzystaj z poniższej tabeli, aby uzupełnić pola. Lista danych w tabeli nie jest wyczerpująca.
+
+**Details**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step3.png" loading="lazy" />
+
+|Informacja|Szczegóły|
+|---|---|
+|Instance name|Określ nazwę wystąpienia, które zostanie uruchomione.|
+|Description|Opcjonalnie. W razie potrzeby dodaj opis.|
+|Availability zone*|Pozostaw "nova" (wybór domyślny).|
+|Count|Określ liczbę wystąpień do utworzenia.|
+
+**Source**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step4.png" loading="lazy" />
+
+|Informacje|Szczegóły|
+|---|---|
+|Select Boot Source|Kliknij strzałkę rozwijaną, aby wybrać źródło uruchomienia wystąpienia (na przykład "Image" lub "Instance snapshot").|
+|Create New Volume|Możesz zaznaczyć tę opcję, jeśli chcesz utworzyć wolumin, do którego skopiowany jest określony obraz systemu operacyjnego.|
+|Volume size (GB)|Jeśli wybrano opcję utworzenia wolumenu, system określa rozmiar.|
+|Delete Volume on Instance Delete|Możesz zachować opcję domyślną **No**. Jeśli wybrano opcję **Yes**, po usunięciu instancji również jest usuwany wolumin.|
+|Image name|Wybierz obraz wystąpienia (wyłącznie w przypadku uruchamiania instancji z obrazu), klikając strzałkę w górę obok wybranego obrazu. W naszym przykładzie używamy wyboru CentOS 7.|
+|Instance snapshot|Wybierz zrzut instancji (wyłącznie w przypadku uruchamiania instancji ze snapshota), klikając strzałkę w górę obok wybranego obrazu zrzutu instancji.|
+
+**Flavor**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step5.png" loading="lazy" />
+
+Wstępnie zbudowane *flavor* są dostępne dla Ciebie. Wybierz *flavor* w zakładce `Available`.
+
+**Networks**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step6.png" loading="lazy" />
+
+|Informacje|Szczegóły|
+|---|---|
+|Network|Z listy dostępnych sieci wybierz sieć (sieci)(y) dla wystąpienia, które chcesz utworzyć |
+|Ext-Net|Reprezentuje sieć publiczną.|
+|Mynewnetwork|Reprezentuje prywatną sieć utworzoną na początku tego przewodnika.|
+
+**Security Groups (Grupy zabezpieczeń)**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step7.png" loading="lazy" />
+
+Aby uzyskać więcej informacji, zapoznaj się z [tym przewodnikiem](/guides/public-cloud/compute/setup-security-group/).
+
+
+**Key Pair (Para kluczy)**
+
+:::warning
+Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku (aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](/guides/public-cloud/compute/replacing-lost-ssh-key#w-praktyce/)).
+
+:::
+
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step8.png" loading="lazy" />
+
+W tej sekcji można utworzyć parę kluczy, zaimportować parę kluczy lub użyć istniejącej pary kluczy.
+
+Aby uzyskać więcej informacji na temat tworzenia klucza SSH, zapoznaj się z [tym przewodnikiem](/guides/public-cloud/compute/public-cloud-first-steps#create-ssh/).
+
+<Tabs>
+  <Tab label="+ Create Key Pair">
+    Aby utworzyć parę kluczy, kliknij przycisk <code className="action">+ Create Key Pair</code>. Pamiętaj, że z tą opcją przed zalogowaniem się do instancji muszą zostać wykonane dodatkowe czynności, zwłaszcza jeśli logujesz się do instancji za pomocą oprogramowania PuTTY. Sprawdź [tę sekcję](/guides/public-cloud/compute/public-cloud-first-steps#connect-instance/) w odpowiednim przewodniku.
+    
+    **Key Pair Name:** Wprowadź nazwę dla klucza.<br/>
+
+**Key Type:** Kliknij <code className="action">strzałkę rozwijaną</code> i wybierz <code className="action">SSH Key</code>.<br/>
+
+Następnie kliknij <code className="action">Create Keypair</code>, aby rozpocząć tworzenie klucza.<br/>
+
+Po utworzeniu pary kluczy kliknij <code className="action">Copy Private Key to Clipboard</code>, a następnie <code className="action">Done</code>.<br/><br/>
+    <img className="thumbnail" alt="create ssh key" src="/images/public-cloud/compute/create-instance-in-horizon/create-ssh-key-1.png" loading="lazy" /><br/>
+
+Po wykonaniu tej czynności nowo utworzony klucz zostanie automatycznie wybrany. Kliknij <code className="action">Launch Instance</code>, aby rozpocząć tworzenie instancji.<br/><br/>
+    
+    <img className="thumbnail" alt="create instance" src="/images/public-cloud/compute/create-instance-in-horizon/launch-instance.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="Import Key Pair (Importuj parę kluczy)">
+    Jeśli wolisz zaimportować klucz SSH utworzony wcześniej, kliknij przycisk <code className="action">Import Key Pair</code>.
+    
+    **Key Pair Name:** Wprowadź nazwę dla klucza.<br/>
+
+**Key Type (Typ klucza):** Kliknij <code className="action">strzałkę w dół</code> i wybierz <code className="action">SSH Key</code>.<br/>
+
+**Load Public Key from a file (Załaduj klucz publiczny z pliku):** Kliknij <code className="action">Browse</code>, aby określić lokalizację klucza publicznego na komputerze.<br/>
+
+**Public Key:** Skopiuj i wklej tutaj klucz publiczny.<br/>
+
+Kliknij przycisk <code className="action">Import Key Pair</code>, aby zaimportować klucz.<br/><br/>
+    <img className="thumbnail" alt="Import klucza równorzędnego" src="/images/public-cloud/compute/create-instance-in-horizon/import-ssh-key.png" loading="lazy" /><br/>
+
+Po zakończeniu zaimportowany klucz zostanie automatycznie wybrany. Kliknij <code className="action">Launch Instance</code>, aby rozpocząć tworzenie instancji.<br/><br/>
+    
+    <img className="thumbnail" alt="create instance" src="/images/public-cloud/compute/create-instance-in-horizon/launch-instance.png" loading="lazy" /><br/>
+  </Tab>
+</Tabs>
+
+
+**Inne opcje**
+
+Uwaga: te opcje nie są wymagane do utworzenia podstawowej instancji. Jeśli chcesz zgłębić więcej opcji, zapoznaj się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
+
+|Informacje|Szczegóły|
+|---|---|
+|Custom script source|Określ źródło między "direct entry" lub "file".|
+|Script data|Wprowadź kod skryptu w polu wejściowym (maksymalnie 16 KB).|
+|Script file|Kliknij <code className="action">Browse</code>, aby wybrać skrypt po-instalacyjny.|
+|Disk partitioning|Wybierz między "automatic" i "manual".|
+|Configuration disk|Skonfiguruj OpenStack, aby zapisać metadane na dysku konfiguracyjnym, który zostanie dołączony do wystąpienia podczas uruchamiania.|
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

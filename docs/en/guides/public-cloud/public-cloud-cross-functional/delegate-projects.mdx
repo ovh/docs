@@ -1,0 +1,70 @@
+---
+title: Delegating projects
+description: Find out how to delegate access rights for a Public Cloud project to other OVHcloud accounts
+lastUpdated: 2025-04-28
+---
+
+ 
+## Objective
+
+Depending on your use case, you may need to grant other users access to your project, without giving them full access to your services. 
+To this end, you can delegate read-only or read/write permissions for your projects to other OVHcloud customer accounts.
+
+**This guide explains how to delegate access rights for a Public Cloud project in the OVHcloud Control Panel.**
+
+### Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+
+## Instructions
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+Click on <code className="action">Contacts & Rights</code> in the left-hand menu under **Settings**.
+
+On this page you can see the contacts associated with your project.
+
+<img className="thumbnail" alt="public-cloud-delegate-projects" src="/images/public-cloud/public-cloud-cross-functional/delegate-projects/delegatingproject01.png" loading="lazy" />
+
+You can click on the <code className="action">Edit</code> buttons to change the current contacts. Follow the instructions in our guide [Changing project contacts](/guides/public-cloud/compute/change-project-contacts/) to complete this process.
+
+### Adding contacts and permissions
+
+Click on the <code className="action">Add</code> button in order to add a user and assign permissions. In the popup window, enter the NIC handle of the user (in the form xx00000-ovh), then select `Read-only` or `Read/Write` from the menu.
+
+<img className="thumbnail" alt="public-cloud-delegate-projects" src="/images/public-cloud/public-cloud-cross-functional/delegate-projects/delegatingproject02.png" loading="lazy" />
+
+:::info
+:::
+
+Note that `Read/Write` permissions will allow changes to the project that might affect future billing.
+>
+ 
+Click on <code className="action">Add</code> to confirm the access delegation. A confirmation email will be sent to you and the new user who will now be able to open the project in the Public Cloud section of their OVHcloud Control Panel.
+
+Once the page has reloaded, the added OVHcloud customer accounts and their respective permissions are listed in the table.
+
+<img className="thumbnail" alt="public-cloud-delegate-projects" src="/images/public-cloud/public-cloud-cross-functional/delegate-projects/delegatingproject03.png" loading="lazy" />
+
+To revoke an access, click on the <code className="action">...</code> button and then select <code className="action">Delete</code>.
+
+## Go further
+
+[Getting started with a Public Cloud Instance](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+[Information regarding Public Cloud billing options](/guides/public-cloud/public-cloud-cross-functional/analyze-billing/)
+
+[Access and Security in Horizon](/guides/public-cloud/public-cloud-cross-functional/access-and-security-in-horizon/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

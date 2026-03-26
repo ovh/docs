@@ -1,0 +1,78 @@
+---
+title: Cambiar de una instancia flex a una instancia clásica
+description: Cómo cambiar una instancia flex desde el panel de control de OpenStack Horizon
+lastUpdated: 2024-07-17
+---
+
+:::info
+Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+
+:::
+
+
+## Objetivo
+
+Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proceso más rápido para los snapshots. Permite redimensionar a los modelos superior o inferior con un espacio de almacenamiento fijo, mientras que los modelos clásicos solo pueden redimensionarse hacia los modelos superiores.<br/> Con una infraestructura en constante evolución, puede necesitar aumentar el espacio de almacenamiento de su instancia. En ese caso, deberá cambiar su instancia *flex* a un modelo clásico. Esta acción solo es posible desde Horizon.
+
+<br/>**Esta guía explica cómo cambiar de un modelo *flex* a un modelo clásico y redimensionar su instancia *flex* desde la interfaz OpenStack Horizon.**
+
+## Requisitos
+
+- Tener una [instancia de Public Cloud de OVHcloud](/guides/public-cloud/compute/public-cloud-first-steps#configuration/) de tipo *flex*.
+- [Crear un acceso a Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/).
+
+## Procedimiento
+
+:::warning
+- Si actualiza de una instancia flex a una instancia clásica con más recursos, esto se considera una actualización. En este caso, se le facturará la diferencia. Al final del periodo de facturación, recibirá dos facturas.
+
+- Si pasa de una instancia flexible a una instancia clásica con menos recursos, se considera un downgrade. En este caso, no se le facturará.
+
+- Si cambia de una instancia flexible a una instancia clásica con los mismos recursos, no se le facturará.
+
+:::
+
+
+Conéctese a la [interfaz Horizon](https://horizon.cloud.ovh.net/auth/login/) y asegúrese de estar en la zona adecuada. Puede comprobarlo en la parte superior izquierda. 
+
+<img className="thumbnail" alt="Selección de región" src="/images/public-cloud/compute/revert-a-flex-instance/region2021.png" loading="lazy" />
+
+En el menú <code className="action">Compute</code>, haga clic en el botón <code className="action">Instances</code>. Seleccione <code className="action">Resize Instance</code> en el menú desplegable situado a la derecha de la instancia correspondiente.
+
+<img className="thumbnail" alt="Redimensionar instancia" src="/images/public-cloud/compute/revert-a-flex-instance/resizeinstance2021.png" loading="lazy" />
+
+**Elección del plantilla (*Flavor Choice*)** <a name="flavorchoice"></a>
+
+Esta sección explica la plantilla actual (*old flavor*) y le permite seleccionar una nueva plantilla (*new flavor*) para el recurso de la instancia.
+
+En nuestro ejemplo, la plantilla es « b2-15-flex ». Podemos volver a una plantilla clásica « b2-15 » o actualizar la instancia hacia la plantilla « b2-30 » para tener más espacio de almacenamiento. En nuestro caso, queremos actualizar nuestra instancia hacia el modelo clásico « b2-30 » para aumentar nuestro espacio de almacenamiento.
+
+<img className="thumbnail" alt="Elegir un nuevo flavor" src="/images/public-cloud/compute/revert-a-flex-instance/confirmflavor.png" loading="lazy" />
+
+:::warning
+- Sólo puede pasar de un modelo Linux a otro Linux y de un modelo Windows a otro Windows.
+
+- La opción *flex* no está disponible para todos los modelos.
+
+:::
+
+
+**Opciones avanzadas (*Advanced Options*)**
+
+Esta sección permite gestionar la partición del disco (*Disk Partition*) y el grupo de servidores (*Server Group*).
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/revert-a-flex-instance/resize_advanced.png" loading="lazy" />
+
+Para continuar, haga clic en el botón <code className="action">Resize</code>.
+
+Una vez completado el proceso, su instancia se cambiará al modelo seleccionado. En nuestro caso, nuestra instancia se cambió a un modelo clásico con más espacio de almacenamiento.
+
+<img className="thumbnail" alt="Nuevo flavor aplicado" src="/images/public-cloud/compute/revert-a-flex-instance/newflavor.png" loading="lazy" />
+
+Si quiere cambiar a un modelo *flex*, puede hacerlo realizando los mismos pasos [anteriores](#flavorchoice) seleccionando una plantilla *flex* en lugar de la clásica. 
+
+También puede [editar la configuración de una instancia](/guides/public-cloud/compute/first-steps-with-public-cloud-instance#editar-la-configuracion-de-una-instancia/) desde el área de cliente.
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

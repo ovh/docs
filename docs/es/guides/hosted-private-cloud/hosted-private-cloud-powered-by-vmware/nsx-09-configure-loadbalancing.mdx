@@ -1,0 +1,217 @@
+---
+title: Configuración de Equilibrio de carga en NSX (EN)
+description: Learn how to configure Load Balancing
+lastUpdated: 2023-02-27
+---
+
+## Objective
+
+NSX allows load balancing on a level 4 (TCP or UDP) layer or level 7 (HTTP or HTTPS) layer.
+
+**Learn how to set up load balancing in NSX**
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+
+This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/es-es/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+
+:::
+
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use this guide [Segment management in NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/).
+- Two virtual machines with NGINX enabled on one segment.
+
+## Instructions
+
+We will :
+
+- Enable Load Balancing on the gateway **ovh-T1-gw**.
+- Create a server pool from two virtual machines that use a web server running on port 80.
+- Add a virtual server in the Load Balancer configuration which contains our server pool.
+- Set a NAT rule to redirect to the virtual server.
+
+### Creating the tag on both virtual machines.
+
+To simplify the administration of the Load Balancer, we will use a tag on the two virtual machines in the future server pool.
+
+In the NSX interface go to the <code className="action">Inventory</code> tab and click on <code className="action">Virtual Machines</code> on the left.
+
+Then click on the <code className="action">three vertical dots</code> to the left of the first virtual machine and choose <code className="action">Edit</code> from the menu.
+
+<img className="thumbnail" alt="01 Add tag to VMs 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm01.png" loading="lazy" />
+
+Replace **Tag** with `loadbl`, then click <code className="action">Add Item(s) loadbl</code> below.
+
+<img className="thumbnail" alt="01 Add tag to VMs 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm02.png" loading="lazy" />
+
+Change **Scope** to <code className="action">nginx</code>, then click <code className="action">Add Item(s) nginx</code> below.
+
+<img className="thumbnail" alt="01 Add tag to VMs 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm03.png" loading="lazy" />
+
+Click the <code className="action">+</code> sign next to your tag to add it to your virtual machine.
+
+<img className="thumbnail" alt="01 Add tag to VMs 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm04.png" loading="lazy" />
+
+The tag appears, click <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="01 Add tag to VMs 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm05.png" loading="lazy" />
+
+Click the <code className="action">three vertical dots</code> to the left of the second virtual machine and choose <code className="action">Edit</code> from the menu.
+
+<img className="thumbnail" alt="01 Add tag to VMs 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm06.png" loading="lazy" />
+
+Replace **Tag** with <code className="action">load</code> and select the <code className="action">Tag: loadbl Scope: nginx</code> that just appeared below.
+
+<img className="thumbnail" alt="01 Add tag to VMs 07" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm07.png" loading="lazy" />
+
+Click the <code className="action">+</code> sign next to your tag to add it to your second virtual machine.
+
+<img className="thumbnail" alt="01 Add tag to VM 08" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm08.png" loading="lazy" />
+
+Click <code className="action">SAVE</code> to add the tag to your virtual machine.
+
+<img className="thumbnail" alt="01 Add tag to VM 09" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/01-add-tag-to-two-vm09.png" loading="lazy" />
+
+Stay on **Inventory**, click <code className="action">Tags</code> and click on the <code className="action">number</code> to the right of the marker you created.
+
+<img className="thumbnail" alt="02 Show member tag 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/02-show-members-tag01.png" loading="lazy" />
+
+You can see your two virtual machines using the same tag.
+
+<img className="thumbnail" alt="02 Show member tag 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/02-show-members-tag02.png" loading="lazy" />
+
+### Add group with created tag
+
+Select <code className="action">Groups</code> on the left and click <code className="action">ADD GROUP</code>.
+
+<img className="thumbnail" alt="03 ADD GROUP 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/03-add-group01.png" loading="lazy" />
+
+Enter `nginx-server` below **Name** and click <code className="action">SET</code> under **Compute Members**.
+
+<img className="thumbnail" alt="03 ADD GROUP 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/03-add-group02.png" loading="lazy" />
+
+Click <code className="action">+ ADD CRITERION</code>.
+
+<img className="thumbnail" alt="03 ADD GROUP 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/03-add-group03.png" loading="lazy" />
+
+Keep **Virtual Machine Tag Equals** and select your <code className="action">loadbl</code> tag with its <code className="action">nginx</code> scope and click <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="03 ADD GROUP 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/03-add-group04.png" loading="lazy" />
+
+Click <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="03 ADD GROUP 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/03-add-group05.png" loading="lazy" />
+
+Click <code className="action">View Members</code> to the right of the group.
+
+<img className="thumbnail" alt="03 ADD GROUP 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/03-add-group06.png" loading="lazy" />
+
+The list of virtual machines is automatically added to the group based on the criteria in your tag.
+
+<img className="thumbnail" alt="03 ADD GROUP 07" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/03-add-group07.png" loading="lazy" />
+
+### Activating the Load Balancer
+
+Go to the <code className="action">Networking</code> tab and click on <code className="action">Load Balancing</code> in the **Network Services** section on the left.
+
+Then go to the <code className="action">Load Balancers</code> tab and click <code className="action">ADD LOAD BALANCER</code>.
+
+<img className="thumbnail" alt="04 Activate Load Balancer 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/04-activate-loadbalancing01.png" loading="lazy" />
+
+Enter `loadbalancer-on-t1` below **Name**, select <code className="action">ovh-T1-gw</code> under **Attachment** and click <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="04 Activate Load Balancer 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/04-activate-loadbalancing02.png" loading="lazy" />
+
+Click <code className="action">NO</code>.
+
+<img className="thumbnail" alt="04 Activate Load Balancer 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/04-activate-loadbalancing03.png" loading="lazy" />
+
+The Load Balancer is created and activated on the **ovh-T1-gw** gateway.
+
+<img className="thumbnail" alt="04 Activate Load Balancer 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/04-activate-loadbalancing04.png" loading="lazy" />
+
+### Server pool creation
+
+Go to the <code className="action">Server Pools</code> tab and click <code className="action">ADD SERVER POOL</code>.
+
+<img className="thumbnail" alt="05 Add server pool 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/05-add-server-pool01.png" loading="lazy" />
+
+Enter `sp-nginx` below **Name** and click <code className="action">Select Members</code> under **Members/Group**.
+
+<img className="thumbnail" alt="05 Add server pool 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/05-add-server-pool02.png" loading="lazy" />
+
+Click <code className="action">Select a group</code> and choose the <code className="action">nginx-servers</code> group you created then click <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="05 Add server pool 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/05-add-server-pool03.png" loading="lazy" />
+
+Click <code className="action">SAVE</code> to apply your changes.
+
+<img className="thumbnail" alt="05 Add server pool 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/05-add-server-pool04.png" loading="lazy" />
+
+Your server pool is created with your two virtual machines that are members of the group.
+
+<img className="thumbnail" alt="05 Add server pool 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/05-add-server-pool05.png" loading="lazy" />
+
+### Virtual server creation
+
+Your server pool is created with your two virtual machines which are members of the group. Go to the <code className="action">Virtual Servers</code> tab and click on <code className="action">ADD VIRTUAL SERVER</code>.
+
+<img className="thumbnail" alt="06 Add virtual Server 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/06-add-virtual-server01.png" loading="lazy" />
+
+Select <code className="action">L4 TCP</code>.
+
+<img className="thumbnail" alt="06 Add virtual Server 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/06-add-virtual-server02.png" loading="lazy" />
+
+Fill in this information :
+
+- **Name** : Name of your virtual server `vs-nginx`.
+- **IP Address**: Front-end IP address of your virtual server on the same network as your NGINX virtual machines `192.168.102.3`.
+- **Port** : Port <code className="action">80</code>.
+- **Load Balancer**: Your load balancer <code className="action">loadbalancer-on-t1</code>.
+- **Server Pool**: Your server pool <code className="action">sp-nginx</code>.
+
+Then click <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="06 Add virtual Server 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/06-add-virtual-server03.png" loading="lazy" />
+
+Your virtual server is active. If you connect from a machine that uses a segment on a gateway of type **Tier-1 Gateways** with this URL `http://192.168.102.3`, the Load Balancer will connect to one of the two virtual machines configured in your group.
+
+### Adding a NAT rule
+
+Go to <code className="action">NAT</code> in the **Network Services** section on the left and click <code className="action">ADD NAT RULE</code>.
+
+<img className="thumbnail" alt="07 ADD DNAT TO VIRTUAL SERVER 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/07-add-dnat-to-virtual-server01.png" loading="lazy" />
+
+Enter <code className="action">to-lb-virtual-server</code> in your rule **Name** with these options :
+
+- **Action** : <code className="action">DNAT</code>.
+- **Destination IP** : A virtual IP address of your T0 such as `198.51.100.1`.
+- **Translated IP** : IP address of your virtual server `192.168.102.3`.
+- **Service PORT** : Choose the predefined port <code className="action">HTTP| 80</code>.
+
+Then click <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="07 ADD DNAT TO VIRTUAL SERVER 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/07-add-dnat-to-virtual-server02.png" loading="lazy" />
+
+Your rule is active. If you click on `http://virtual-ip-address-on-T0` you will be connected to your virtual server which will redirect the flow to one of the servers in your group.
+
+<img className="thumbnail" alt="07 ADD DNAT TO VIRTUAL SERVER 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-09-configure-loadbalancing/07-add-dnat-to-virtual-server03.png" loading="lazy" />
+
+## Go further <a name="gofurther"></a>
+
+[Getting started with NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-01-first-steps/)
+
+[Segment management in NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/)
+
+[Implementing NAT for port redirections in NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/)
+
+[VMware NSX Load Balancer documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+

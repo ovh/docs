@@ -1,0 +1,62 @@
+@reference "tailwindcss";
+
+.ovh-api-main {
+  border-radius: 5px;
+  margin: 10px 0;
+  @apply py-1;
+  @apply font-mono;
+  @apply text-gray-600;
+  @apply font-bold;
+  @apply w-full;
+  @apply flex;
+  @apply items-center;
+}
+
+.ovh-api-main:hover {
+  @apply bg-gray-100;
+}
+
+.ovh-api-region-select {
+  @apply mr-2;
+  @apply border;
+  @apply border-gray-300;
+  @apply rounded;
+  @apply px-1;
+  @apply py-0.5;
+  @apply text-sm;
+  @apply font-sans;
+  @apply cursor-pointer;
+  @apply bg-white;
+}
+
+.ovh-api-flag {
+  @apply mr-2;
+}
+
+.ovh-api-verb {
+  @apply rounded-2xl;
+  @apply px-2;
+  @apply py-1;
+  @apply mr-2;
+  @apply font-bold;
+}
+
+.ovh-api-verb.ovh-api-verb-GET {
+  background-color: rgb(190, 241, 255);
+  color: rgb(77, 85, 146);
+}
+
+.ovh-api-verb.ovh-api-verb-POST {
+  background-color: rgb(219, 242, 187);
+  color: rgb(38, 132, 3);
+}
+
+.ovh-api-verb.ovh-api-verb-PUT {
+  background-color: rgb(254, 234, 134);
+  color: rgb(139, 97, 17);
+}
+
+.ovh-api-verb.ovh-api-verb-DELETE {
+  background-color: rgb(255, 210, 221);
+  color: rgb(193, 27, 27);
+}

@@ -1,0 +1,201 @@
+---
+title: MX Plan - Configure your email account on Mail for macOS
+description: Find out how to configure your MX Plan email address on macOS Mail
+lastUpdated: 2024-10-22
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+You can configure MX Plan accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application. The Mail app on macOS is available for free on all Macs.
+
+**Find out how to configure your MX Plan email address on the macOS Mail app.**
+
+:::warning
+OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+
+We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "Go further" section of this guide.
+
+:::
+
+
+## Requirements
+
+- an MX Plan email address (included in the MX Plan solution and in [OVHcloud web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- **Mail** installed on your Mac.
+- the required credentials for the email address you would like to configure.
+
+## Instructions
+
+### Add account
+
+- **When the application is first started**: a setup wizard will appear, prompting you to choose your account type.
+
+- **If an account has already been set up**: click <code className="action">Mail</code> in the menu bar at the top of your screen, then <code className="action">Accounts</code>.
+
+Follow the installation steps by clicking on the tabs below:
+
+<Tabs>
+  <Tab label="Step 1">
+    Select <code className="action">Other Mail Account</code> then click <code className="action">Mail Account</code>.<br/><br/>
+    <img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-email01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Enter the following information in the "**Add a Mail account**" window: <br/><br/>
+    - A **Name** for your email account<br/>
+    - Your **Email address**<br/>
+    - The **Password** of your email address<br/><br/>
+    <img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-email02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    In the next window, enter the information:
+    
+    - **Email address**
+    - **Username** : Enter your full email address
+    - **Password**
+    - **Account type**: Select `IMAP` (recommended) or `POP`
+    - **Incoming Mail Server**:<br/>- **EUROPE**: Type `imap.mail.ovh.net` or `ssl0.ovh.net`<br/>- **AMERICA/ASIA**: Type `imap.mail.ovh.ca`
+    - **Outgoing Mail Server**:<br/>- **EUROPE**: Type `smtp.mail.ovh.net` or `ssl0.ovh.net`<br/>- **AMERICA/ASIA**: Type `smtp.mail.ovh.ca`
+    
+    To finalize the configuration, click <code className="action">Log in</code>
+    
+    :::warning
+    It is normal to see the red message "**unable to verify account name or password**" when the window appears for the first time. However, if this message persists after validation, the information entered is incorrect.<br/><br/>
+
+    :::
+
+    
+    <img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-email03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::warning
+If, after following the configuration steps below, you encounter a sending or receiving error, go to the section [Modify existing settings](#modify-settings).
+
+:::
+
+
+### Use email address
+
+Once you have configured your email address, you can start using it! You can now send and receive emails.
+
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at [Webmail](https://www.ovhcloud.com/en-gb/mail/). You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/) interface or use your email address via the RoundCube webmail.
+
+### Retrieve a backup of your email address
+
+If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" chapter of our guide on [Manually migrate your email address](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration#exporting/).
+
+### Modify existing settings <a name="modify-settings"></a>
+
+If your email account has already been set up and you need to access the account settings to change them:
+
+- Click <code className="action">Mail</code> in the menu bar at the top of your screen, then click <code className="action">Preferences</code>.
+- Select the account concerned in the left-hand column, then click <code className="action">Server settings</code>.
+- In the `Incoming Mail Server (POP)` or `Incoming Mail Server (IMAP)` section, enter your full email address in the <code className="action">User name</code> box, and the <code className="action">Password</code> associated with it in the box provided.
+- In the `Outgoing Mail Server (SMTP)` section, enter your full email address in the <code className="action">Username</code> box, and the <code className="action">Password</code> associated in the box provided.
+- Untick the <code className="action">Automatically manage connection settings</code> boxes to display the <code className="action">Port</code> and <code className="action">Authentication</code> settings.
+- Make sure that the <code className="action">Use TLS/SSL</code> boxes are ticked.
+- In the <code className="action">Authentication</code> dropdown menus, check that `Password` is selected.
+- For the <code className="action">Host name</code> and <code className="action">Port</code> boxes, refer to the values in the "[POP, IMAP and SMTP settings reminder](#popimap-settings)" section. **Make sure that the server type (IMAP, POP and SMTP) matches your region (Europe or Asia-Pacific)**.
+
+To finalize the configuration, click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-email04.png" loading="lazy" />
+
+:::info
+**Change your configuration**
+
+If your email address is configured in **IMAP** and you want to change this configuration to **POP**, you will need to delete the account on Mail from MacOS and then recreate it in **POP**.
+
+:::
+
+
+### Reminder of POP, IMAP and SMTP settings <a name="popimap-settings"></a>
+
+When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP**.
+
+:::warning
+Please note down the value that corresponds to your location (**EUROPE** or **AMERICA/ASIA-PACIFIC**)
+
+:::
+
+
+- **POP configuration**
+
+|Information|Description|
+|---|---|
+|Username|Enter the full email address **full**|
+|Password|Enter the password for the email address|
+|Server **EUROPE** (incoming)|pop.mail.ovh.net **or** ssl0.ovh.net|
+|Server **AMERICA/ASIA-PACIFIC** (incoming)|pop.mail.ovh.ca|
+|Port|995|
+|Security type|SSL/TLS|
+
+- **IMAP configuration**
+
+|Information|Description|
+|---|---|
+|Username|Enter the full email address **full**|
+|Password|Enter the password for the email address|
+|Server **EUROPE** (incoming)|imap.mail.ovh.net **or** ssl0.ovh.net|
+|Server **AMERICA / ASIA-PACIFIC** (incoming)|imap.mail.ovh.ca|
+|Port|993|
+|Security type|SSL/TLS|
+
+For sending emails, if you have to enter the **SMTP** settings manually in your account preferences, you will find the settings below:
+
+- **SMTP configuration**
+
+|Information|Description|
+|---|---|
+|Username|Enter the full email address **full**|
+|Password|Enter the password for the email address|
+|Server **EUROPE** (outgoing)|smtp.mail.ovh.net **or** ssl0.ovh.net|
+|Server **AMERICA / ASIA-PACIFIC** (outgoing)|smtp.mail.ovh.ca|
+|Port|465|
+|Security type|SSL/TLS|
+
+:::info
+**Change configuration**
+
+When you configure your email address in **IMAP** and you want to change the configuration to **POP**, it is necessary to delete the account from Mac Mail and then recreate it in **POP** to change the configuration.
+
+:::
+
+
+### What do I do if I cannot receive/send my emails?
+
+- If you see the icon visible in the screenshot below, it is a network disconnection. Check that your internet connection is working properly.
+
+<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-disconnect.png" loading="lazy" />
+
+- If you see the icon visible in the screenshot below, it is a synchronization fault. Check the configuration settings for your email account in the [Modify existing settings](#modify-settings) section.
+
+<img className="thumbnail" alt="mailmac" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/mail-mac-fail.png" loading="lazy" />
+
+## Go further <a name="go-further"></a>
+
+:::info
+For more information on configuring an email address from the Mail app on macOS, see [the Apple Help Center](https://support.apple.com/en-gb/guide/mail/mail35803/mac).
+
+:::
+
+
+[MX Plan - Configuring your email account on Mail for iPhone and iPad](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/)
+
+[Email Pro - Configuring your email account on Mail for macOS](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-mail-macos/)<br/>
+[Email Pro - Configuring your email account on Mail for iPhone and iPad](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-ios/)
+
+[Exchange - Configuring your email account on macOS Mail](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-ios/)<br/>
+[Exchange - Configuring your email account on Mail for iPhone and iPad](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-mail-macos/)
+
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

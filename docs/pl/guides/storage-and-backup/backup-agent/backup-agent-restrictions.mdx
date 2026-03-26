@@ -1,0 +1,48 @@
+---
+title: Backup Agent - znane ograniczenia
+description: Odkryj ograniczenia i wady aplikacji Backup
+lastUpdated: 2026-02-03
+---
+
+## Wprowadzenie
+
+Przewodnik ten zawiera informacje o znanych ograniczeniach i wadach produktu Backup Agent, które należy znać przed użyciem usługi.
+
+## Znane ograniczenia
+
+### Polityka kopii zapasowych
+
+- Polityka kopii zapasowych jest ograniczona, nie można jej modyfikować.
+- Nie można skonfigurować kopii zapasowej tylko dla listy plików lub folderów.
+- Nie można zmienić daty i godziny wyzwalania kopii zapasowych (to będzie przedmiotem przyszłej poprawki).
+
+### Dostęp do VSPC
+
+- Użytkownik, którego otrzymujesz, ma uprawnienia tylko do odczytu, nie możesz wprowadzać zmian bezpośrednio w VSPC.
+
+### Vault
+
+- Nie można tworzyć dodatkowych Vault, będą one tworzone automatycznie, aby zapewnić, że dane nie będą hostowane w tym samym centrum danych, w którym znajduje się Twój serwer Bare Metal.
+- Nie można zmienić Vault na agencie.
+
+### Ograniczenia systemu operacyjnego
+
+- Listę kompatybilnych systemów operacyjnych dla Veeam Agent można znaleźć [tutaj](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
+- Produkt nie jest kompatybilny z hypervisorami do tworzenia kopii zapasowych (Proxmox, ESXi, itp.)
+
+### Kompatybilność z innymi produktami OVHcloud
+
+- Obecnie produkt Backup Agent jest kompatybilny tylko z Serwerami dedykowanymi, nie można używać swojego agenta na innych produktach.
+
+### Ograniczenia dostępu do sieci
+
+- Produkt jest kompatybilny wyłącznie z serwerami, które komunikują się z publicznym adresem IP przypisanym do serwerów przez OVHcloud. W chwili obecnej nie jest kompatybilna z usługą Additional IP oraz z usługą vRack.
+
+### wirtualnych maszyn (Proxmox, ESXi, itp.)
+
+- Produkt zezwala wyłącznie na komunikację publicznego adresu IP serwera z infrastrukturą Veeam. Jeśli na przykład wirtualna maszyna (VM) Proxmox działa na Twoim serwerze i używa publicznego adresu IP serwera, agent może działać.
+Tego przypadku zastosowania nie można jednak uznać za wspierany. Może pojawić się zbyt wiele specyficznych przypadków związanych z tą konfiguracją i nie jest to obecnie obsługiwane przez produkt.
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

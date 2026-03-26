@@ -1,0 +1,356 @@
+---
+title: "Configurer une file d'appels"
+description: "Découvrez comment configurer une file d'appels sur un numéro alias"
+lastUpdated: 2026-01-22
+---
+
+## Objectif
+
+La configuration en file d'appels permet de rediriger un appel entrant vers plusieurs lignes. Cette solution permet de créer une stratégie pour éviter la perte d'appels.
+
+Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro principal, de faire sonner plusieurs lignes en même temps ou l'une après l'autre.
+
+**Découvrez comment configurer intégralement une file d'appels.**
+ 
+## Prérequis
+
+- Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/) dans votre compte OVHcloud.
+
+:::info
+Une file d'appels ne peut être configurée **que sur un numéro alias**.
+Consultez notre [FAQ](/guides/web-cloud/phone-and-fax/voip/faq-voip/) pour plus d'informations sur les différences entre un numéro alias et une ligne SIP.
+
+:::
+
+
+## En pratique
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+<img className="thumbnail" alt="espace client Telecom VoIP" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png" loading="lazy" />
+
+### Étape 1 : Appliquer la configuration « File d'appels »
+
+- Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet <code className="action">Configuration</code>, sélectionnez <code className="action">File d'appels</code> puis cliquez sur <code className="action">Paramétrer</code>.
+
+- Si votre numéro a déjà une configuration en place, cliquez sur l'onglet <code className="action">Configuration</code> puis sur <code className="action">Changer de configuration</code>. Sélectionnez ensuite <code className="action">File d'appels</code> et cliquez sur <code className="action">Paramétrer</code>. Vous devrez alors confirmer la perte de la configuration actuellement en place.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2026-VoIP-FA-01.png" loading="lazy" />
+
+:::info
+Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur <code className="action">Appliquer à plusieurs numéros</code>, sélectionnez les numéros concernés puis cliquez sur <code className="action">Valider</code>.
+
+<img className="thumbnail" alt="configurationnumeroalias" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/selection-alias-conf.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Paramétrer</code> et patientez quelques instants pendant l’application du paramétrage.
+
+Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+
+:::
+
+
+### Étape 2 : Paramétrer la file d'appels
+
+Une fois la configuration de file d'appels appliquée, les menus de configuration vous sont présentés.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-02.png" loading="lazy" />
+
+Pour revenir à cette page à tout moment, cliquez sur l'onglet <code className="action">Mon numéro</code> puis, dans le cadre « Configuration », cliquez sur <code className="action">Paramétrer la configuration</code>.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-03.png" loading="lazy" />
+
+Quatre menus principaux vous sont proposés :
+
+|Menu|Détails|
+|---|---|
+|Gestion des lignes dans la file |Ce menu permet de gérer les membres de la file d'appels ainsi que divers paramètres de cette dernière. Ce paramétrage est obligatoire pour que la file d'appels puisse fonctionner.|
+|Gestion des sons et de l'attente |Ce menu permet de personnaliser et améliorer l'expérience des personnes qui vous contactent. Ce paramétrage est facultatif mais néanmoins fortement conseillé.|
+|Plages horaires et fermetures|Ce menu permet de définir les horaires d'ouverture (habituels ou exceptionnels) de votre file d'appels. Nous vous recommandons d'effectuer ce paramétrage.|
+|Filtrage des appels|Ce menu permet de définir des listes blanches ou noires, afin d'autoriser uniquement certains correspondants à vous joindre ou, au contraire, de rejeter automatiquement les appels en provenance de certains numéros.|
+
+Poursuivez la lecture de cette documentation selon le ou les paramètres que vous souhaitez réaliser.
+
+- [Gérer la file d'appels et ses lignes (obligatoire)](#manage-lines).
+- [Gérer les sons et l'attente (conseillé)](#manage-sounds).
+- [Gérer les plages horaires et les fermetures (facultatif)](#manage-agenda).
+- [Gérer le filtrage des appels (facultatif)](#manage-filters).
+- [Gérer les enregistrements d'appels (facultatif)](#manage-records)
+
+#### 2.1 Gérer la file d'appels et ses lignes <a name="manage-lines"></a>
+
+Depuis le menu « Configuration », cliquez sur <code className="action">Gestion des lignes dans la file</code>.
+
+##### 1. Ajouter une ligne à la file
+
+Sur la page qui s'affiche, dans la partie « Organisation de vos lignes », cliquez sur le bouton <code className="action">+ Ajouter une ligne</code> pour ajouter une nouvelle ligne à votre file d'appels.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-04.png" loading="lazy" />
+
+Complétez ensuite les informations demandées.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-05.png" loading="lazy" />
+
+|Option|Détails|
+|---|---|
+|Numéro|Il s'agit du ou des numéros de lignes que vous souhaitez ajouter en tant que membres à la file d'appels.<br/><br/> Cliquez sur le bouton <code className="action">Rechercher</code> pour afficher la liste des lignes et numéros rattachés à votre compte. Sélectionnez celui que vous souhaitez ajouter, puis cliquez sur <code className="action">Valider</code>.<br/> S'il n'apparaît pas dans la liste, entrez manuellement le numéro au format international (par exemple, 0033 pour une ligne en France) dans la zone de texte.<br/><br/> Pour ajouter un ou plusieurs membres supplémentaires, cliquez sur <code className="action">Ajouter une ligne supplémentaire</code>.|
+|Durée de la sonnerie avant de passer à la ligne suivante|Permet de définir la durée pendant laquelle la ligne sonnera. Une fois ce temps écoulé et selon la stratégie d'appels de la file, l'appel sera alors transmis vers un autre membre de la file.|
+|Temps de repos|Permet de définir la durée pendant laquelle le membre ne prendra pas d'appel après avoir raccroché.|
+|Appels simultanés|Permet de définir le nombre d'appels simultanés que la ligne pourra recevoir.|
+
+Une fois ces informations complétées, cliquez sur le bouton <code className="action">Valider</code> pour réaliser l'ajout. 
+
+:::warning
+Comme précisé dans le menu de configuration, les conditions particulières suivantes s'appliquent :
+
+- La législation interdit la redirection sur des numéros surtaxés.
+- Un appel redirigé vers une destination non-comprise dans votre forfait vous sera facturé.
+- Les redirections vers un numéro mobile ou une ligne externe à OVHcloud ne sont pas comprises dans les [forfaits VoIP](https://www.ovhtelecom.fr/telephonie/voip/#offers). Elles sont donc facturées à la seconde, sauf dans le cadre des forfaits mobile à l’heure.
+
+Consultez les [tarifs de la téléphonie OVHcloud](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml) pour plus de détails.
+
+:::
+
+
+##### 2. Configurer une stratégie d’appels
+
+Dès qu'au moins une ligne est présente dans votre file, vous pouvez configurer une stratégie d'appels pour cette dernière. Pour cela, en dessous du tableau de vos lignes, faites vos choix parmi les options proposées.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-06.png" loading="lazy" />
+
+- **« Numéro à afficher »** : définissez le numéro qui sera visible sur le téléphone de la personne qui reçoit l’appel.
+- **« Stratégie de sonnerie »** : définissez la manière dont les lignes de votre file d'appels sonneront. Selon celle choisie, vous serez peut-être amené à [modifier l'ordre des lignes de la file](/guides/web-cloud/phone-and-fax/voip/les-files-d-appels#3-organiser-les-lignes-de-la-file-dappels/).
+- **« Appliquer les renvois définis sur les lignes »** : définissez si les renvois d'appels configurés sur les lignes de la file doivent être appliqués ou non. Sauf besoin spécifique, nous vous conseillons de laisser cette option décochée. 
+
+Une fois vos choix effectués, cliquez sur le bouton <code className="action">Valider</code>.
+
+**Détails des stratégies proposées :**
+
+|Stratégie|Détails|
+|---|---|
+|Tous en même temps|Tous les téléphones sonnent en même temps. Le premier qui décroche prend l’appel sur son poste.|
+|Selon l'ordre défini dans la liste|Le premier téléphone de la file sonne, puis le second, etc.|
+|Selon l'ordre défini dans la liste, cumulé|Le premier téléphone de la file d’attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
+|Le plus ancien à avoir raccroché|Les téléphones sonnent les uns après les autres en suivant toujours le même ordre.|
+|Du plus disponible au moins disponible|Les téléphones sonneront suivant leur disponibilité depuis l’activation.|
+|Selon une répartition de charge| Les téléphones sonneront suivant leur disponibilité depuis le dernier appel : le plus disponible en premier.|
+|Aléatoire|Les téléphones sonnent les uns après les autres de manière aléatoire.|
+
+##### 3. Organiser les lignes de la file d’appels
+
+Vous pouvez organiser les lignes dans votre file d'appels depuis le tableau où celles-ci apparaissent.<br/>
+Pour cela, utilisez les flèches à gauche de chacune des lignes pour les déplacer jusqu'à leurs positions adéquates. 
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-07.png" loading="lazy" />
+
+Une fois vos modifications effectuées, cliquez sur le bouton <code className="action">Valider</code>.
+
+##### 4. Modifier ou supprimer une ligne 
+
+Depuis le tableau des lignes de votre file d'appels, cliquez sur le bouton <code className="action">...</code> à droite de la ligne concernée et sélectionnez <code className="action">Modifier</code> ou <code className="action">Supprimer</code>.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-08.png" loading="lazy" />
+
+La modification vous permet d'affiner les réglages de sonnerie de chaque ligne mais aussi d'activer/désactiver une ligne au sein de la file d'appels, en passant son <code className="action">Statut</code> à `Activé` ou `Désactivé`.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-09.png" loading="lazy" />
+
+:::tip[Success]
+**Connexion/déconnexion dans la file d'appels depuis un téléphone**
+
+Lorsque vous appelez le numéro de la file d'appels depuis une ligne qui en est membre, un menu vocal vous propose de :
+
+- taper `1` pour vous connecter à la file d'appels (ne fonctionne que si votre ligne était préalablement déconnectée de la file) ;
+- taper `2` pour vous déconnecter de la file d'appels (ne fonctionne que si votre ligne était préalablement connectée à la file) ;
+- taper `3` pour rejoindre la file d'appels et ainsi faire sonner ses membres.
+
+Vous pouvez ainsi gérer à la volée, directement depuis votre téléphone, l'activation de votre ligne au sein de la file d'appels.
+
+:::
+
+
+#### 2.2 Gérer les sons et l'attente <a name="manage-sounds"></a>
+
+Dans le menu « Configuration », cliquez sur <code className="action">Gestion des sons et de l'attente</code>. Plusieurs actions sont alors possibles depuis cette page. 
+
+##### Configuration de l'attente
+
+:::warning
+La création des annonces sonores est de votre responsabilité. En cas de difficultés, nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) car OVHcloud ne sera pas en mesure de créer ces fichiers pour vous.
+<br/>Sachez qu'il est possible de créer des fichiers-sons via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/).
+Nous vous rappelons que l'utilisation d'une musique non libre d'utilisation commerciale nécessite de s'acquitter de droits de diffusion auprès des sociétés d'auteurs/compositeurs/producteurs.
+
+:::
+
+
+Vous pouvez ajouter deux sons :
+
+- **l'annonce avant mise en attente** : ce son sera joué intégralement avant que le correspondant ne rentre dans la file d'attente (et donc, avant qu'une ligne sonne). Privilégiez une annonce courte, par exemple un message de bienvenue citant le nom de votre entreprise.
+- **la musique d'attente** : ce son sera joué pendant que le client patiente dans la file d'attente et jusqu'au décrochage de l'appel par une ligne. Cette musique d'attente étant jouée en boucle, privilégiez une annonce plus longue, afin d'éviter une répétition trop fréquente et donc désagréable pour vos appelants.
+
+Pour ajouter un son, cliquez sur le bouton <code className="action">Ajouter un son</code> puis suivez les étapes de téléversement. Cliquez enfin sur le bouton <code className="action">Valider</code> en bas de la page pour confirmer les changements.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-10.png" loading="lazy" />
+
+##### Configuration du débordement
+
+Depuis cette partie, définissez le nombre maximum d'appelants pouvant être en attente simultanément dans la file. Si ce nombre venait à être dépassé, vous pouvez définir un comportement à adopter parmi les deux possibilités suivantes de débordement :
+
+- **Renvoyer sur un répondeur** : le ou les appelants concernés par le débordement seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case <code className="action">Renvoyer sur un répondeur</code>. Cliquez ensuite sur <code className="action">Ajouter un répondeur</code> et sélectionnez le répondeur d'une de vos lignes SIP.
+- **Jouer une annonce de débordement** : le ou les appelants concernés par le débordement entendront alors l'annonce que vous avez définie et l'appel sera ensuite raccroché. Pour téléverser un fichier audio, cochez d'abord la case <code className="action">Jouer une annonce de débordement</code>. Cliquez ensuite sur <code className="action">Ajouter un son</code>, puis suivez les étapes qui apparaissent jusqu'à finalisation.
+
+Cliquez enfin sur le bouton <code className="action">Valider</code> en bas de la page pour confirmer les changements.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-11.png" loading="lazy" />
+
+##### Configuration de fermeture
+
+Définissez ici la durée maximale pendant laquelle un appelant attendra dans la file. Si cette durée venait à être dépassée, choisissez le comportement à adopter parmi deux possibilités :
+
+- **Renvoyer sur un répondeur** : le ou les appelants concernés seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case <code className="action">Renvoyer sur un répondeur</code>. Cliquez ensuite sur <code className="action">Ajouter un répondeur</code> et sélectionnez le répondeur d'une de vos lignes SIP.
+- **Jouer une annonce de fermeture** : le ou les appelants concernés entendront alors l'annonce que vous avez définie. Pour l'envoyer, cochez d'abord la case <code className="action">Jouer une annonce de fermeture</code>. Cliquez ensuite sur <code className="action">Ajouter un son</code>, puis suivez les étapes qui apparaissent jusqu'à finalisation.
+
+Cliquez enfin sur le bouton <code className="action">Valider</code> en bas de la page pour confirmer les changements.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-12.png" loading="lazy" />
+
+#### 2.3 Gérer les plages horaires et les fermetures <a name="manage-agenda"></a>
+
+Depuis le menu « Configuration », cliquez sur <code className="action">Plages horaires et fermetures</code>. Plusieurs actions sont alors possibles depuis cette page. 
+
+##### 1. Activer ou désactiver les plages horaires
+
+Utilisez les boutons <code className="action">Activées</code> ou <code className="action">Désactivées</code> afin de définir si vous souhaitez utiliser ou non les plages horaires mises en place.
+Si votre numéro est déjà en production, nous vous conseillons de définir vos plages horaires et leur configuration **avant** de les activer.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-13.png" loading="lazy" />
+
+##### 2. Configuration des créneaux horaires
+
+Définissez ici des scénarios de redirection que vous pourrez utiliser ensuite pour vos plages horaires. 
+
+Pour cela, dans la partie « Configuration des créneaux horaires », cliquez sur le pictogramme en forme d'engrenage à droite de chaque créneau<br/>
+Vous devrez y sélectionner ou renseigner un numéro ou un répondeur vers lequel les appels seront redirigés.<br/>
+Par défaut, la sélection est positionnée sur « Un numéro externe ». Vous pouvez bien entendu modifier ce choix en cliquant dessus.
+
+Finalisez votre choix en cliquant sur le bouton <code className="action">Modifier</code>.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-14.png" loading="lazy" />
+
+##### 3. Définir les plages horaires
+
+Une fois les créneaux configurés à votre convenance, dans la partie « Gestion des plages horaires et des fermetures » de la page, vous pouvez définir des plages horaires et leur attribuer des créneaux.
+
+Cliquez sur un horaire et modifiez la plage associée, ou cliquez sur l’horaire de début souhaité puis glissez en maintenant le clic jusqu’à l’horaire de fin. 
+Utilisez le bouton <code className="action">Répéter</code> pour, par exemple, appliquer le même créneau sur plusieurs jours de la semaine.<br/>
+Définissez ensuite le créneau à appliquer grâce au bouton <code className="action">Rediriger les appels vers</code>, puis validez l’ajout de la plage horaire en cliquant sur <code className="action">Ajouter</code>.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-15.png" loading="lazy" />
+
+Vous pouvez également **déplacer des plages existantes**. Pour ce faire, cliquez sur ces dernières, et en maintenant le clic, glissez-les dans le tableau des horaires.<br/>
+Pour **supprimer une plage**, cliquez sur celle-ci, puis sur <code className="action">Supprimer</code>.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-16.png" loading="lazy" />
+
+Dès que toutes vos plages horaires sont configurées, cliquez sur le bouton <code className="action">Valider</code> pour sauvegarder ces changements. 
+
+##### 4. Définir des fermetures exceptionnelles
+
+Une fois les plages horaires créées à votre convenance, vous pouvez définir des fermetures exceptionnelles.
+
+Celles-ci vous permettront de fermer votre file d’appels sur des plages horaires normalement considérées comme étant ouvertes. Pour cela, toujours dans la partie « Gestion des plages horaires et des fermetures », cliquez sur <code className="action">Gérer les fermetures exceptionnelles</code>.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-17.png" loading="lazy" />
+
+:::info
+Les fermetures exceptionnelles complètent vos plages horaires paramétrées. Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles soient prises en compte.
+
+:::
+
+
+Sur la page qui apparaît, positionnez vos fermetures exceptionnelles sur le calendrier en cliquant sur les jours concernés. Complétez les informations demandées :
+ 
+|Information|Description|
+|---|---|
+|Plage horaire/journée entière|Choisissez si la fermeture exceptionnelle concerne uniquement une plage horaire ou une journée entière.|
+|Objet|Définissez un titre vous permettant d'identifier cette fermeture exceptionnelle dans le tableau.|
+|Catégorie|Choisissez un créneau qui permettra de rediriger les appels reçus pendant la fermeture exceptionnelle. Si nécessaire, vous pouvez configurer les créneaux au-dessus du tableau de planification.|
+|Du/au|Définissez la date et l'heure (si nécessaire) de la fermeture exceptionnelle.|
+|Description|Vous pouvez ajouter une description plus détaillée à la fermeture exceptionnelle.|
+
+Une fois les informations complétées, cliquez sur <code className="action">Créer l'événement</code>. Répétez cette manipulation afin d'ajouter toutes les fermetures exceptionnelles que vous souhaitez créer. Cliquez finalement sur le bouton <code className="action">Valider</code> pour sauvegarder ces changements.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-18.png" loading="lazy" />
+
+#### 2.4 Gérer le filtrage des appels <a name="manage-filters"></a>
+
+Depuis le menu « Configuration », cliquez sur <code className="action">Filtrages des appels</code>. Plusieurs actions sont alors possibles depuis cette page. 
+
+##### 1. Configurer les filtrages d'appels
+
+Vous pouvez mettre en place un filtrage s’appliquant aux appels entrants. 
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-19.png" loading="lazy" />
+
+Quatre configurations sont proposées :
+
+|Configuration|Description|
+|---|---|
+|Rejeter automatiquement les appels anonymes|Permet de rejeter automatiquement les appels entrants provenant d'un correspondant anonyme. Pour gérer son activation, utilisez les boutons <code className="action">Activé</code> ou <code className="action">Désactivé</code>.|
+|Aucun filtrage|Permet de ne pas appliquer le filtrage des appels entrants selon une liste noire ou blanche. Ce choix n'annule pas le rejet des appels anonymes s'il est activé.|
+|Appels entrants refusés (liste noire)|Les numéros ou les tranches de numéros inscrits dans la liste ne peuvent plus vous contacter.|
+|Appels entrants autorisés (liste blanche)|Seuls les numéros ou les tranches de numéros inscrits dans la liste sont autorisés à vous contacter.|
+
+Cliquez sur le bouton <code className="action">Valider</code> pour sauvegarder ces changements.
+
+##### 2. Configurer et gérer les listes
+
+Dans la partie « Configuration des listes », vous pouvez ajouter des numéros ou des types de numéros à la liste blanche ou à la liste noire. 
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-20.png" loading="lazy" />
+
+Pour cela, complétez les informations demandées :
+
+|Informations|Description|
+|---|---|
+|Type de liste|Choisissez parmi la liste noire ou la liste blanche.|
+|Ajout automatique de certains types de numéros dans la liste|Permet d'ajouter de manière automatique des types de numéros. Faites votre choix dans la liste proposée ou laissez la sélection sur « Aucun ».|
+|Ajouter un numéro|Spécifiez le numéro que vous souhaitez ajouter à la liste. Celui-ci doit être au format international (par exemple, 0033 pour un numéro en France).|
+
+Une fois les listes complétées, appuyez sur <code className="action">Appliquer</code>.
+
+En dessous de la configuration des listes, dans la partie « Détails de vos listes », un tableau vous permet de visualiser les numéros ainsi que les types de numéros ajoutés à vos listes. Si nécessaire, vous pouvez filtrer l'affichage de ce tableau grâce la barre de recherche ou le bouton filtre situés au-dessus de celui-ci.
+
+Pour **supprimer des éléments de vos listes**, sélectionnez-les dans le tableau en cochant la case située à gauche de ces derniers. Cliquez ensuite sur le bouton <code className="action">Actions</code> puis sur <code className="action">Supprimer les éléments sélectionnés</code>. Confirmez alors la suppression.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-20bis.png" loading="lazy" />
+
+### Gérer les enregistrements d'appels <a name="manage-records"></a>
+
+La configuration file d'appels vous permet d'enregistrer les appels entrants. Les enregistrements sont automatiquement supprimés de nos serveurs au bout de 60 jours.
+
+Cliquez sur l'onglet <code className="action">Enregistrements</code>. 
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-21.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Activé</code> sous « Enregistrement des appels » pour activer ceux-ci. Cette activation vaut pour acceptation des [conditions particulières](https://www.ovh.com/fr/support/documents_legaux/conditions_particulieres_du_service_d_enregistrement_des_communications_telephoniques.pdf) d'utilisation du service.
+
+Vous pouvez laisser le choix à vos appelants de ne pas être enregistrés. Pour cela, cliquez sur le bouton <code className="action">Activée</code> sous « Demande de non enregistrement des appels ». Choisissez alors la touche que vos appelants devront composer pour ne pas être enregistrés.
+
+Validez vos choix en cliquant sur <code className="action">Appliquer</code>.
+
+Un tableau vous donnera accès aux enregistrements d'appels, vous permettant de les télécharger ou de les supprimer.
+
+<img className="thumbnail" alt="fileappels" src="/images/web-cloud/phone-and-fax/voip/les-files-d-appels/2022-VoIP-FA-22.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

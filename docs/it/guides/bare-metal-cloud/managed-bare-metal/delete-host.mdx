@@ -1,0 +1,70 @@
+---
+title: Rimuovere un server host
+description: Scopri come rimuovere un server host da un’infrastruttura Managed Bare Metal
+lastUpdated: 2021-03-19
+---
+
+## Obiettivo
+
+In alcuni casi eliminare un server host può risultare utile, ad esempio per restituire un host di <i>spare</i> inutilizzato o per passare a una gamma superiore.
+
+**Questa guida ti mostra come rimuovere in modo sicuro un server host da un’infrastruttura Managed Bare Metal.**
+
+## Prerequisiti
+
+* Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/)
+* Avere accesso all’interfaccia di gestione vSphere
+
+## Procedura
+
+:::warning
+Attenzione a non spegnere il server host che desideri rimuovere perché ciò non avrebbe l'effetto desiderato. Ciò comporterebbe infatti la consegna di un server host di spare e il server host spento non verrebbe automaticamente rimosso.
+
+:::
+
+
+La rimozione di un server host si svolge in due step: l’attivazione della modalità manutenzione di questa risorsa e successivamente la rimozione della stessa.
+
+### Attiva la modalità manutenzione
+
+Una volta effettuata la connessione a vSphere, accedi all’inventario dei tuoi server host e cluster. Seleziona il server host interessato con un semplice click con il tasto destro del mouse e poi scegli <code className="action">Maintenance Mode</code> e <code className="action">Enter Maintenance Mode</code>. Nel caso in cui siano presenti macchine virtuali (VM) in funzione su questo server host, saranno automaticamente salvate su un altro server all’interno del tuo cluster (modalità HA e DRS attivate).
+
+<img className="thumbnail" alt="Attivazione della modalità manutenzione" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost01.png" loading="lazy" />
+
+Nella finestra di dialogo, conferma il passaggio in modalità manutenzione cliccando su <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Conferma della modalità manutenzione" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost02.png" loading="lazy" />
+
+Puoi seguire lo stato di avanzamento dell’operazione nell’area **Recent Tasks**.
+
+<img className="thumbnail" alt="Controllo della modalità Maintenance" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost03.png" loading="lazy" />
+
+### Rimuovi il server host
+
+Una volta che il server è in modalità manutenzione, fai un click con il tasto destro del mouse e seleziona <code className="action">OVHcloud</code>, poi clicca su <code className="action">Remove this host</code>.
+
+<img className="thumbnail" alt="Rimuovere l’host" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost04.png" loading="lazy" />
+
+Nella nuova finestra, conferma la rimozione cliccando su <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Conferma della rimozione" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost05.png" loading="lazy" />
+
+La richiesta di rimozione è adesso in fase di elaborazione.
+
+<img className="thumbnail" alt="Convalida della rimozione" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost06.png" loading="lazy" />
+
+Puoi seguire lo stato di avanzamento della rimozione del server host nell’area **Recent Tasks**.
+
+<img className="thumbnail" alt="Controllo dell’attività di rimozione" src="/images/bare-metal-cloud/managed-bare-metal/delete-host/removehost07.png" loading="lazy" />
+
+Il server host verrà rimosso entro pochi minuti e non sarà più visibile.
+
+:::info
+Se si aggiungono directory o file che non erano inizialmente presenti nello storage locale del server, la rimozione non sarà possibile a causa di un errore. Soltanto le directory di base e i file vSwap consentono di eseguire questa operazione.
+
+:::
+
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

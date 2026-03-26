@@ -1,0 +1,59 @@
+---
+title: Public Cloud Databases - How to update your service plan
+excerpt: Find out how to upgrade the service plan of your cluster
+updated: 2025-07-31
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+Learn how to upgrade the service plan of your cluster according to your needs.
+
+> [!warning]
+>
+> Once you have upgraded your solution, you will not be able to downgrade to a lower solution.
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+
+## Instructions
+
+### Using the OVHcloud Control Panel
+
+To upgrade the service plan of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases` in the left navigation bar, select your engine instance then click the `Configuration` tab.
+
+![Cluster overview](/images/guides/public-cloud/public-cloud-databases/databases-13-update-your-cluster-flavor/cluster_overview.png)
+
+Click `Edit` on the "Plan" line and adjust the Plan of your cluster.
+
+![Change solution](/images/guides/public-cloud/public-cloud-databases/databases-14-upgrade-your-cluster-plan/plan_change_view.png)
+
+### Using the OVHcloud API
+
+> [!tip]
+>
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/guides/manage-and-operate/api/first-steps).
+
+To upgrade or downgrade the service plan of your cluster, use the following API call:
+
+<Api version="v1" section="/cloud" method="PUT" route={"/cloud/project/\\{serviceName\\}/database/\\{engine\\}/\\{clusterId\\}"} />
+
+```bash
+body : {
+    plan: <essential|business|production|enterprise|advanced>
+}
+```
+
+If you downgrade to an Essential plan, your current flavor and/or number of nodes will be downgraded automatically if they exceed the limits of the Essential plan.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) and interact directly with the team that builds our databases service!

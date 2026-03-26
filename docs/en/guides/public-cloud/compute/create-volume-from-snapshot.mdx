@@ -1,0 +1,78 @@
+---
+title: Creating a volume from a backup
+description: Find out how to create additional disks from a snapshot of an additional disk
+lastUpdated: 2025-04-28
+---
+
+## Objective
+
+You can attach additional disks to your Public Cloud instances based on previously created volume snapshots.
+
+This may be useful in the following cases:
+
+- If you want to restore additional disk data.
+- If you want to have a highly available, high-performance storage space with your data.
+- If you want to move your data to another instance.
+
+**This guide explains how to create and configure an additional disk on one of your instances from an additional disk backup.**
+
+## Requirements
+
+- A [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A volume snapshot in the same OpenStack region
+- Administrative access (sudo) to your instance via SSH or RDP
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Creating the disk from a backup
+
+Click <code className="action">Volume Snapshot</code> in the left-hand navigation bar under **Storage & backup**.
+
+To the right of the backup you want to create a volume from, click the <code className="action">...</code> button, then <code className="action">Create a volume</code>.
+
+<img className="thumbnail" alt="create volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume01.png" loading="lazy" />
+
+Then enter the name and capacity of the new disk, and click <code className="action">Create the volume</code>.
+
+<img className="thumbnail" alt="create volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume02.png" loading="lazy" />
+
+It may take a few minutes to create the disk, depending on its size.
+
+### Attaching the disk to an instance
+
+Once the disk has been created, you can choose to attach it to an instance. To do this, click <code className="action">Block Storage</code> in the left-hand navigation bar under **Storage & backup**.
+
+To the right of the volume of your choice, click on the <code className="action">...</code> button, then <code className="action">Attach to instance</code>.
+
+<img className="thumbnail" alt="attaching volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume03.png" loading="lazy" />
+
+Now select the instance and click <code className="action">Confirm</code> to attach the disk.
+
+<img className="thumbnail" alt="attaching volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume04.png" loading="lazy" />
+
+The process of attaching the disk to your instance will then begin, and this may take a few minutes.
+
+<img className="thumbnail" alt="attaching volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume05.png" loading="lazy" />
+
+:::warning
+:::
+
+Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This may interrupt the process.
+>
+
+Once the attachment is complete, you can follow these steps on how to configure the additional disk [using Linux](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#using-linux/) or [using Windows](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#using-windows/).
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

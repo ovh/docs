@@ -1,0 +1,61 @@
+---
+title: VMware Storage VMotion
+description: Cómo migrar en caliente una máquina virtual a un host diferente
+lastUpdated: 2020-07-10
+---
+
+## Objetivo
+
+El **Storage vMotion** permite modificar la ubicación del almacenamiento de los archivos de la máquina virtual manteniendo la máquina virtual encendida. Es posible mover la máquina virtual por completo o disco por disco.
+
+**Esta guía explica cómo realizar esta operación.**
+
+## Procedimiento
+
+### Migrar el disco de una máquina virtual
+
+Para migrar los archivos de una máquina virtual hacia otro datastore, solo tendrá que hacer clic derecho en la máquina virtual encendida y seleccionar la opción <code className="action">Migrate...</code>.
+
+<img className="thumbnail" alt="Migrar disco" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-storage-vmotion/VmotionStorage1.png" loading="lazy" />
+
+### Seleccionar el tipo de vMotion
+
+Puede elegir entre diversas opciones de **vMotion**. En nuestro ejemplo, solo queremos migrar la máquina virtual hacia otro banco de datos. Para ello, deberá seleccionar la opción <code className="action">Change storage only</code>.
+
+La opción <code className="action">Change compute resource only</code> permite migrar la máquina virtual hacia otro host.  
+
+Para más información sobre la operación **vMotion**, consulte nuestra [guía](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vmotion-new/).
+
+<img className="thumbnail" alt="Selección de vMotion" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-storage-vmotion/VmotionStorage2.png" loading="lazy" />
+
+### Seleccionar el datastore
+
+También puede elegir hacia qué almacenamiento desea migrar los datos.
+
+Asimismo, es posible modificar la política de almacenamiento durante esta operación.
+
+De este modo, si dispone de un [almacenamiento vSAN](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-vsan/) o de la opción [VM encryption](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vm-encrypt/), podrá aplicar las políticas de almacenamiento creadas.
+
+<img className="thumbnail" alt="Selección del datastore" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-storage-vmotion/VmotionStorage3.png" loading="lazy" />
+
+En caso de que disponga de varios discos virtuales en la misma máquina, podrá migrar un único disco utilizando el botón <code className="action">Advanced</code>.
+
+Aparecerá la siguiente interfaz:
+
+<img className="thumbnail" alt="Datastore vMotion" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-storage-vmotion/VmotionStorage6.png" loading="lazy" />
+
+### Completar la operación vMotion
+
+Haga clic en <code className="action">Finish</code> para lanzar la migración.
+
+<img className="thumbnail" alt="Completar la operación vMotion" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-storage-vmotion/VmotionStorage4.png" loading="lazy" />
+
+### Monitorizar la operación vMotion
+
+Puede consultar el estado de la migración en su lista de tareas recientes. La duración de esta operación dependerá del tamaño de la MV, los accesos IO y el ancho de banda utilizado.
+
+<img className="thumbnail" alt="Monitorizar la operación vMotion" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-storage-vmotion/VmotionStorage5.png" loading="lazy" />
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

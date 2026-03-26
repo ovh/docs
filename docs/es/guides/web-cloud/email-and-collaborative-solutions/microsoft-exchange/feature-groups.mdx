@@ -1,0 +1,111 @@
+---
+title: Exchange - Crear grupos de contactos
+description: Aprenda a gestionar listas de correo en Exchange
+lastUpdated: 2025-04-28
+---
+
+
+
+## Objetivo
+
+Los grupos de Exchange permiten que varios participantes puedan comunicarse a través del envío de emails a una única dirección del grupo. Con esta función colaborativa puede crear y gestionar listas de correo que incluyan tanto a usuarios Exchange como a contactos externos.
+
+**Esta guía explica cómo usar los grupos de Exchange a través del área de cliente de OVHcloud y Outlook Web App (OWA).**
+
+## Requisitos
+
+- Tener una [solución Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) activa.
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleccione su plataforma
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Procedimiento
+
+### Crear un grupo nuevo
+
+Haga clic en la pestaña <code className="action">Grupos</code> en el menú horizontal.
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-create01.png" loading="lazy" />
+
+Al hacer clic en <code className="action">Crear un grupo de contactos</code> se abrirá una nueva ventana donde podrá configurar las opciones del grupo:
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-create02.png" loading="lazy" />
+
+- **Dirección de correo electrónico**: configure una nueva dirección para enviar mensajes a la lista de correo. Tenga cuidado de no utilizar una dirección que ya esté operativa.
+- **Nombre del grupo**: Utilice el nombre que aparece en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) y en su [correo web de OVHcloud](https://www.ovhcloud.com/es-es/mail/) (OWA).
+- **Tamaño máximo de entrada o salida**: Puede especificar el tamaño máximo de los mensajes de correo electrónico entrantes y salientes.
+- **Ocultar en Outlook**: si está marcado, la dirección del grupo no aparecerá en la lista de direcciones del servicio Exchange.
+- **Requiere autenticación**: Si se marca esta casilla, solo los usuarios de la misma plataforma podrán enviar mensajes con la dirección del grupo.
+
+Haga clic en <code className="action">Siguiente</code> para continuar.
+
+En la segunda página, seleccione los **Contactos** del grupo y designe los **Administradores**. Estas opciones solo se tomarán de las direcciones de correo electrónico y los contactos externos que ya figuren en el servicio.
+
+- **Administradores**: Cuentas de correo electrónico autorizadas a enviar correo electrónico a todos los contactos del grupo.
+- **Contactos**: Cuentas de correo electrónico que recibirán los mensajes de correo electrónico enviados al grupo por los administradores.
+
+:::info
+Tenga en cuenta que los administradores deben configurarse como **Contactos** para recibir los mensajes de correo electrónico del grupo.
+
+:::
+
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-create03.png" loading="lazy" />
+
+Haga clic en <code className="action">Siguiente</code> para continuar y haga clic en <code className="action">Confirmar</code> para finalizar las opciones.
+
+### Administrar grupos
+
+Después de crear el grupo, puede cambiar la configuración que haya establecido. Para ello, haga clic en <code className="action">...</code> a la derecha del grupo en la tabla.
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-options01.png" loading="lazy" />
+
+#### Administrar los usuarios de un grupo
+
+Para añadir `Contacts` a su grupo o definir los `Administradores`, haga clic en el botón <code className="action">...</code> y luego en <code className="action">Configurar los usuarios</code>. Marque los atributos que quiera asociar a las direcciones de correo electrónico en la columna `Cuenta de correo`.
+
+:::info
+Un grupo puede contener un máximo de 10.000 contactos.
+
+:::
+
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-group-options-users01.png" loading="lazy" />
+
+#### Administrar las delegaciones de un grupo
+
+Aparecerá la opción <code className="action">Configurar delegaciones</code> del menú. Esta opción le permite delegar el acceso del mismo modo que se hace para una cuenta Exchange. Encontrará todos los detalles en [esta guía](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/).
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-options-delegation01.png" loading="lazy" />
+
+:::info
+Tenga en cuenta que cada cambio en este servicio puede tardar unos minutos en aplicarse. Puede comprobar el estado de la mayoría de las operaciones seleccionando las opciones <code className="action">Plus</code> y <code className="action">Tareas recientes</code> en el menú horizontal.
+
+:::
+
+
+### Enviar mensajes a un grupo en OWA
+
+Ahora puede probar su lista de correo a través del [webmail de OVHcloud](https://www.ovhcloud.com/es-es/mail/) (OWA) simplemente mandando un correo a la dirección del grupo.
+
+## Más información <a name="go-further"></a>
+
+[Delegar permisos en una cuenta Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[Usar Outlook Web App con una cuenta Exchange](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Compartir calendarios en OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

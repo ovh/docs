@@ -1,0 +1,86 @@
+---
+title: Aplikacja Backup - Połączenie z VSPC
+description: Dowiedz się, jak połączyć się z Veeam Service Provider Console, aby wyświetlić swoje kopie zapasowe i agenty
+lastUpdated: 2026-01-28
+---
+
+## Wprowadzenie
+
+Ten przewodnik wyjaśnia, jak połączyć się z Veeam Service Provider Console (VSPC), aby wyświetlić swoje kopie zapasowe, agenty i sprawdzić raporty zadań Backup.
+
+## Wymagania początkowe
+
+- Musisz otrzymać poświadczenia do połączenia z VSPC e-mailem po zamówieniu usługi Backup Agent.
+- Kompatybilny z przeglądarka internetowa.
+
+## W praktyce
+
+### Dostęp do VSPC
+
+Przejdź do adresu URL VSPC: `https://vspc.prod01.eu-west-rbx.backup.ovhcloud.com`
+
+<img className="thumbnail" alt="Backup Agent Login VSPC" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-login-vspc.png" loading="lazy" />
+
+### Logowanie
+
+Zaloguj się przy użyciu poświadczeń dostarczonych Ci e-mailem. Format logowania jest zazwyczaj `vspc-tenant-XXXXXX\user-XXXXXX`.
+
+:::info
+Jeśli nie masz już swoich poświadczeń, możesz je ponownie wygenerować, [skontaktowując się z obsługą](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+:::
+
+
+<img className="thumbnail" alt="Backup Agent Login VSPC" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-login-vspc.png" loading="lazy" />
+
+:::info
+To konto jest tylko do odczytu i umożliwia dostęp do wizualizacji Twoich kopii zapasowych i agentów.
+
+:::
+
+
+### Wyświetlanie zadań kopii zapasowych
+
+Po zalogowaniu kliknij <code className="action">Backup Jobs</code> w lewym menu.
+
+<img className="thumbnail" alt="Backup Agent Backup Jobs" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-backup-jobs.png" loading="lazy" />
+
+### Wyświetlanie udanych zadań
+
+Kliknij <code className="action">Successful Jobs</code> dla swojego tenant.
+
+<img className="thumbnail" alt="Backup Agent Successful Jobs" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-successful-jobs.png" loading="lazy" />
+
+### Wyświetlanie punktów przywracania
+
+Możesz wyświetlić dostępne punkty przywracania dla swoich kopii zapasowych.
+
+<img className="thumbnail" alt="Backup Agent Restore Points" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-restore-points.png" loading="lazy" />
+
+### Dostęp do zarządzanych agentów
+
+Aby zobaczyć listę zainstalowanych agentów, przejdź do <code className="action">Managed Computers</code>.
+
+<img className="thumbnail" alt="Backup Agent Managed Computers" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-managed-computers.png" loading="lazy" />
+
+### Wyświetlanie raportów
+
+Przejdź do sekcji <code className="action">Reports</code>, aby wyświetlić swoje raporty Backup.
+
+<img className="thumbnail" alt="Backup Agent Reports" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-reports.png" loading="lazy" />
+
+### Otwarcie ostatniego raportu
+
+Otwórz ostatni dostępny raport, aby wyświetlić szczegóły Twoich najnowszych kopii zapasowych.
+
+<img className="thumbnail" alt="Backup Agent Last Report" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-last-report.png" loading="lazy" />
+
+### Wyświetlanie najnowszych alarmów
+
+Możesz wyświetlić najnowsze alerty dotyczące swoich agentów i kopii zapasowych w sekcji <code className="action">Alarm Management</code>.
+
+<img className="thumbnail" alt="Backup Agent Alarm Management" src="/images/storage-and-backup/backup-agent/backup-agent-vspc-presentation/01-backup-agent-alarm.png" loading="lazy" />
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

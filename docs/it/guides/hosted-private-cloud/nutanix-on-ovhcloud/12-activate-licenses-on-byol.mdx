@@ -1,0 +1,222 @@
+---
+title: "Gestione delle licenze nel cluster dell'offerta Nutanix on OVHcloud BYOL (EN)"
+description: How to add and remove licences in a Nutanix cluster with the BYOL offer
+lastUpdated: 2022-11-16
+---
+
+## Objective
+
+**Find out how to activate or deactivate your licences in the BYOL offer**
+
+:::warning
+OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+
+This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](https://www.ovhcloud.com/it/professional-services/) or a [specialist service provider](https://partner.ovhcloud.com/it/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+
+:::
+
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Access to your clusters via **Prism Central**
+- You must have your Nutanix login details on [Nutanix Official Site](https://www.nutanix.com).
+- You must have valid licences with your Nutanix NIC handle.
+
+## Instructions
+
+### Introduction
+
+:::warning
+Within the Nutanix on OVHcloud portfolio, OVHcloud offers the BYOL (Bring Your Own Licence) solution, which means that you, as an OVHcloud customer, must provide the Nutanix Cloud Platform licences on your cluster.
+
+When the Nutanix cluster is ordered within the BYOL offer, the cluster is delivered with a 90-day trial licence. As a customer, you must register your Nutanix Cloud Platform licences on your cluster during this period.
+
+If you want to redeploy a cluster with the BYOL offer, you must first uninstall the licences on the cluster before launching a redeployment. This guide explains how to add or remove licences.
+
+:::
+
+
+There are three types of licences for:
+
+- **Prism Element**. 
+- **Prism Central**. 
+- **Add-ons**.
+
+You can install all licences from **Prism Central**.
+
+### Installation of licences
+
+#### Retrieving your configuration summary
+
+We will retrieve the **Cluster Summary File (CSF)**, which contains the cluster configuration summary.
+
+In **Prism Central**, click the <code className="action">gear</code> icon to go to the settings.
+
+<img className="thumbnail" alt="01 generate-report report 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/01-generate-report-pc01.png" loading="lazy" />
+
+Click <code className="action">Licencing</code> on the left.
+
+<img className="thumbnail" alt="01 generate-report report 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/01-generate-report-pc02.png" loading="lazy" />
+
+Click <code className="action">Update Licences</code> on the left.
+
+<img className="thumbnail" alt="01 generate-report report 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/01-generate-report-pc03.png" loading="lazy" />
+
+Click <code className="action">Download</code> to retrieve the file containing your cluster’s information.
+
+<img className="thumbnail" alt="01 generate-report report 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/01-generate-report-pc04.png" loading="lazy" />
+
+Click on <code className="action">Show all downloads</code> in the top right.
+
+<img className="thumbnail" alt="01 generate-report report 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/01-generate-report-pc05.png" loading="lazy" />
+
+The **CSF** file is on your desktop.
+
+<img className="thumbnail" alt="01 generate-report report 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/01-generate-report-pc06.png" loading="lazy" />
+
+#### Logging in to the Nutanix portal 
+
+In **Prism Central**, go to the licences page and click the <code className="action">Licences page</code> link.
+
+<img className="thumbnail" alt="02 portal connection 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/02-portal-connection01.png" loading="lazy" />
+
+The web browser launches and offers you to connect to the Nutanix portal.
+
+Enter your credentials to sign in.
+
+<img className="thumbnail" alt="02 portal connection 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/02-portal-connection02.png" loading="lazy" />
+
+#### Create the licence for your cluster
+
+In the **Nutanix** Control Panel, click <code className="action">Manage Licences</code>.
+
+<img className="thumbnail" alt="03 create NSF for PC 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/03-create-nsf-for-pc01.png" loading="lazy" />
+
+Open the **CSF** file generated by **Prism Central** that starts with `ntnx_csf...`.
+
+<img className="thumbnail" alt="03 create NSF for PC 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/03-create-nsf-for-pc02.png" loading="lazy" />
+
+Scroll through the window to add your cluster licences.
+
+<img className="thumbnail" alt="03 create NSF for PC 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/03-create-nsf-for-pc03.png" loading="lazy" />
+
+In the **NCM Ultimate** section, click <code className="action">Select Licences</code>.
+
+<img className="thumbnail" alt="03 create NSF for PC 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/03-create-nsf-for-pc04.png" loading="lazy" />
+
+Now save on your computer the **Licence Summary File (LSF)**, which contains the licence.
+
+Select your <code className="action">cluster</code> and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="03 create NSF for PC 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/03-create-nsf-for-pc05.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="03 create NSF for PC 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/03-create-nsf-for-pc06.png" loading="lazy" />
+
+Click <code className="action">Confirm</code>.
+
+<img className="thumbnail" alt="03 create NSF for PC 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/03-create-nsf-for-pc07.png" loading="lazy" />
+
+Click <code className="action">Save</code> to save the licence file to your computer.
+
+<img className="thumbnail" alt="03 create NSF for PC 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/03-create-nsf-for-pc08.png" loading="lazy" />
+
+Back into the licence management section of **Prism Central**, click <code className="action">Upload</code> to install the licence file.
+
+<img className="thumbnail" alt="04 Add license to PC 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/04-add-license-to-pc01.png" loading="lazy" />
+
+Select the generated file and click <code className="action">Open</code>.
+
+<img className="thumbnail" alt="04 Add license to PC 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/04-add-license-to-pc02.png" loading="lazy" />
+
+Click <code className="action">Apply Licence</code>.
+
+<img className="thumbnail" alt="04 Add license to PC 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/04-add-license-to-pc03.png" loading="lazy" />
+
+The licence is installed on your cluster.
+
+### Uninstalling licences
+
+It is sometimes necessary to uninstall licences to reinstall them on another cluster. If the cluster that contains the licences is still available you must release your licences from **Prism Central**.
+
+In **Prism Central** click on the <code className="action">gear</code> in the top right corner to access the parameters.
+
+<img className="thumbnail" alt="05 generate report with licences 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/05-generate-report-with-licenses01.png" loading="lazy" />
+
+Select <code className="action">Licencing</code> to the left and click <code className="action">Update Licences</code>.
+
+<img className="thumbnail" alt="05 generate report with licences 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/05-generate-report-with-licenses02.png" loading="lazy" />
+
+Click <code className="action">Download</code>.
+
+<img className="thumbnail" alt="05 generate report with licenses 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/05-generate-report-with-licenses03.png" loading="lazy" />
+
+Click <code className="action">Save</code> to save the **CSF** file containing the summary of your cluster configuration with the installed licences.
+
+<img className="thumbnail" alt="05 generate report with licenses 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/05-generate-report-with-licenses04.png" loading="lazy" />
+
+Click <code className="action">Licences page</code> to connect to your **Nutanix** licence portal.
+
+<img className="thumbnail" alt="05 generate report with licenses 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/05-generate-report-with-licenses05.png" loading="lazy" />
+
+In the **Nutanix** licence portal, click <code className="action">Manage Licences</code>.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed01.png" loading="lazy" />
+
+Click <code className="action">Upload File</code>.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed02.png" loading="lazy" />
+
+Click <code className="action">Open</code>.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed03.png" loading="lazy" />
+
+Use the scroll bar to reach the bottom of the window.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed04.png" loading="lazy" />
+
+Click <code className="action">Unselect Licence</code> in the **NCM section**.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed05.png" loading="lazy" />
+
+Click <code className="action">Unlicence</code>.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed06.png" loading="lazy" />
+
+The request to remove the licence is supported, click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed07.png" loading="lazy" />
+
+Click <code className="action">Confirm</code>.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed08.png" loading="lazy" />
+
+Click <code className="action">Save</code> to save the **LSF** file containing the updated licence to your computer.
+
+<img className="thumbnail" alt="06 generate nsf with licenses removed 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/06-generate-nsf-with-license-removed09.png" loading="lazy" />
+
+Return to **Prism Central** licence management.
+
+Click <code className="action">Upload</code>.
+
+<img className="thumbnail" alt="07 update license 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/07-update-license01.png" loading="lazy" />
+
+Click <code className="action">Open</code> after selecting the generated file from the **Nutanix** portal.
+
+<img className="thumbnail" alt="07 update license 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/07-update-license02.png" loading="lazy" />
+
+Click <code className="action">Apply Licence</code>.
+
+<img className="thumbnail" alt="07 update license 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/12-activate-licenses-on-byol/07-update-license02.png" loading="lazy" />
+
+The licence has been deleted.
+
+## Go further
+
+[Nutanix Licence Management Guide](https://portal.nutanix.com/page/documents/details?targetId=Licensing-Guide:lic-lic-manage-manual-c.html)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

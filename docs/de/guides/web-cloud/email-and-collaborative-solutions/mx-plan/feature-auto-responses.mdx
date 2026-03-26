@@ -1,0 +1,86 @@
+---
+title: MX Plan - Einrichten von Auto-Antworten für E-Mails
+description: Erfahren Sie hier, wie Sie E-Mail-Responder für E-Mail-Adressen einrichten
+lastUpdated: 2025-04-28
+---
+
+## Ziel
+
+Mit diesem OVHcloud Feature können Sie einen E-Mail-Responder einrichten, der automatisch Nachrichten an alle sendet, die in Ihrer Abwesenheit versuchen, Sie per E-Mail zu kontaktieren.
+
+**Diese Anleitung erklärt, wie Sie E-Mail-Responder für Ihre Adressen einrichten.**
+
+## Voraussetzungen
+
+- Sie verfügen über einen MX Plan, als E-Mail-Dienst enthalten in einem [OVHcloud Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/), oder als eigenständige Lösung bestellbar.
+
+{/* CP-NAV-START:web-mx-plan */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+{/* CP-NAV-END:web-mx-plan */}
+
+## In der praktischen Anwendung
+
+:::warning
+Wenn Ihre E-Mail-Adresse in [**Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/) eingerichtet ist oder der Bereich für Auto-Antworten <code className="action">Verwaltung der Auto-Antworten</code> in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung zum [Einrichten einer automatischen Antwort in OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-automatic-replies/) befolgen.
+
+:::
+
+
+### Automatische Antwort erstellen
+
+Klicken Sie dann im Tab <code className="action">E-Mails</code> auf den Button <code className="action">Verwaltung der Auto-Antworten</code>.
+
+Sie werden zum Fenster `Verwaltung der Auto-Antworten` weitergeleitet, in dem alle für Ihr E-Mail-Angebot verfügbaren automatischen Antworten angezeigt werden.
+
+Klicken Sie auf <code className="action">Eine Auto-Antwort hinzufügen</code>.
+
+<img className="thumbnail" alt="Hosting" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/feature-auto-responses/email_responder01.png" loading="lazy" />
+
+Das Fenster "Eine Auto-Antwort hinzufügen" wird angezeigt. Füllen Sie das Formular gemäß den folgenden Angaben aus:
+
+- `Art der Auto-Antwort`:
+
+    - **An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.
+    - **Frei**: Für eine Alias-Adresse zu verwenden. Ein Alias ist nicht mit einem bestehenden Account verknüpft.
+
+- `Mailbox` oder `Name der Auto-Antwort`: Wählen Sie den vom Responder betroffenen E-Mail-Account oder geben Sie die Alias-Adresse ein.
+- `Dauer der automatischen Antwort`:
+    - **Temporär**: Legen Sie ein Start- und Enddatum für den Responder fest, z.B. wenn Sie eine Abwesenheit planen.
+    - **Permanent**: Die automatischen Antworten bleiben aktiv, bis Sie den Responder löschen oder ändern.
+- `Eine Kopie versenden` oder `Die Nachrichten auf dem Server belassen`: Wählen Sie hier, ob während Ihrer Abwesenheit empfangene E-Mails gelöscht oder aufbewahrt werden sollen.
+
+:::warning
+Wenn Sie diese Option deaktivieren, werden während Ihrer Abwesenheit empfangene Nachrichten automatisch gelöscht.
+
+:::
+
+
+- `Adresse in Kopie` (nur "Frei"-Modus): Wenn die Empfangsadresse ein Alias ist, müssen Sie den E-Mail-Account auswählen, in dem eingehende Nachrichten gespeichert werden.
+- `Nachricht`: Dies ist der Antwort-Text für eingehende Mails, solange der Responder aktiv ist.
+
+Wenn alle Pflichtfelder ausgefüllt sind, klicken Sie auf <code className="action">Bestätigen</code>, um den Responder zu erstellen.
+
+:::tip[Success]
+Wenn Sie die Verwaltung einer automatischen Antwort für einen E-Mail-Account delegieren möchten, lesen Sie unsere Anleitung ["Die Verwaltung Ihrer E-Mail-Accounts einer anderen Person übertragen"](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/feature-delegation/)
+
+:::
+
+
+### Automatische Antwort bearbeiten oder löschen
+
+Nachdem Ihre automatische Antwort erstellt wurde, wird sie in der Tabelle im Bereich <code className="action">Verwaltung der Auto-Antworten</code> Ihres E-Mail-Dienstes angezeigt. Sie können einen Responder löschen oder ändern, indem Sie auf <code className="action">...</code> rechts davon klicken.
+
+<img className="thumbnail" alt="Hosting" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/feature-auto-responses/email_responder02.png" loading="lazy" />
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[E-Mail FAQ](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

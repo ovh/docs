@@ -1,0 +1,62 @@
+---
+title: Eliminare la copia di una VM dal sito di recupero Zerto
+description: Come eliminare una VM dal sito di recupero quando viene eliminata dal sito di origine
+lastUpdated: 2021-12-09
+---
+
+:::info
+Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+
+:::
+
+
+## Obiettivo
+
+Quando una VM viene volontariamente eliminata dal sito sorgente, la VPG Zerto si ferma nella sincronizzazione e si mette in errore.<br/>
+I file della copia della VM sono sempre sul sito di destinazione.<br/>
+Questo documento ti mostra come cancellare i file e riavviare la VPG.
+
+**Utilizza l'interfaccia Zerto per eliminare una copia delle VM dal sito di destinazione.**
+
+## Prerequisiti
+
+- Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
+- Avere un utente attivo con diritti specifici per Zerto (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it))
+- Aver implementato [Zerto Virtual Replication](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-as-a-service/)
+
+## Procedura
+
+Nell'interfaccia Zerto del sito di destinazione, verifica le dashboard <code className="action">VPGs</code> e <code className="action">VMs</code>.<br/>
+Nel nostro esempio, VPG1 contiene due VM, vm1-zerto e vm2-zerto. Lo stato della sincronizzazione del sito è operativo.
+
+<img className="thumbnail" alt="Dash" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en01sync.png" loading="lazy" />
+
+Nell'interfaccia vSphere del sito sorgente, vm2-zerto è volontariamente eliminato.<br/>
+La VM e i dischi sono eliminati.
+
+<img className="thumbnail" alt="VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en02vmdelete.png" loading="lazy" />
+
+Di ritorno all'interfaccia Zerto del sito di destinazione, la VPG si ferma nella sincronizzazione e si mette in errore. La VM vm2-zerto è grigia.
+
+<img className="thumbnail" alt="VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en03vpgerror.png" loading="lazy" />
+
+Nella scheda <code className="action">VPGs</code>, seleziona VPG1 e nel menu <code className="action">Actions</code>, clicca su <code className="action">Edit VPG</code>.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en04vpgedit.png" loading="lazy" />
+
+Nella <code className="action">VMs</code>, rimuovi vm2-zerto dalla sezione `selected VMS` (spunta la VM e clicca sulla freccia che punta a sinistra).<br/>
+CLclicca su <code className="action">Done</code>.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en05vpgremove.png" loading="lazy" />
+
+Clicca su <code className="action">No</code> nel finestrino di avvertimento. In genere non è necessario salvare il disco di recupero.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en06warning.png" loading="lazy" />
+
+La VPG si sincronizzerà di nuovo e ridiventerà operativa con una sola VM all'interno.
+
+<img className="thumbnail" alt="DONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en07green.png" loading="lazy" />
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

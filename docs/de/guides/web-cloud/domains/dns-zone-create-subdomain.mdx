@@ -1,0 +1,239 @@
+---
+title: OVHcloud DNS-Zone für Subdomain erstellen
+description: Erfahren Sie, wie Sie eine DNS-Zone bei OVHcloud für eine Subdomain eines Domainnamens über Ihr OVHcloud Kundencenter erstellen
+lastUpdated: 2026-02-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+Möchten Sie eine DNS-Zone für eine Subdomain erstellen?
+
+Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei eines Domainnamens. Sie besteht aus technischen Informationen, sogenannten *DNS-Einträgen*. Die DNS-Zone fungiert wie ein Weichensteller.
+
+Weitere Informationen finden Sie in folgenden Anleitungen:
+
+- [Alle Informationen zu DNS-Servern](/guides/web-cloud/domains/dns-server-general-information/)
+- [Alle Informationen zu DNS-Zonen](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Alle Informationen zu DNS-Einträgen](/guides/web-cloud/domains/dns-zone-records/)
+
+In den meisten Fällen werden die DNS-Einträge einer Subdomain direkt über die aktive DNS-Zone des Domainnamens konfiguriert, von dem sie abhängt.
+Es ist jedoch auch möglich, eine spezifische DNS-Zone für eine Subdomain zu erstellen.
+
+Aus verschiedenen Gründen können Sie gezwungen sein, eine DNS-Zone für eine Subdomain bei OVHcloud zu erstellen.
+Diese wird dann über eine eigene Zone verfügen, um ihre DNS-Einträge zu konfigurieren.
+
+:::tip[Success]
+Zur Erinnerung:
+
+- Ein Domainnamen hat in der Regel folgende Form: **domain.tld**. Beispiel: ovhcloud.com.
+- Eine Subdomain hat in der Regel folgende Form: **sub.domain.tld**. Beispiel: help.ovhcloud.com.
+
+Standardmäßig hängt eine Subdomain von einem Domainnamen ab, um zu funktionieren.
+Konkret können Sie die Subdomain **sub.domain.tld** nicht nutzen, wenn Sie nicht auf die Verwaltung des Domainnamens **domain.tld** zugreifen können.
+
+Wenn Sie eine DNS-Zone für einen Domainnamen erstellen möchten, konsultieren Sie direkt [diesen Guide](/guides/web-cloud/domains/dns-zone-create/).
+
+:::
+
+
+**Diese Anleitung erklärt, wie Sie eine DNS-Zone bei OVHcloud für eine Subdomain eines Domainnamens über Ihr OVHcloud Kundencenter erstellen.**
+
+## Voraussetzungen
+
+- Sie verfügen über einen Domainnamen, von dem die gewählte Subdomain abhängen wird.
+- Die betreffende Subdomain darf nicht bereits über eine DNS-Zone (aktiv oder nicht) bei OVHcloud verfügen oder Gegenstand eines laufenden Vorgangs oder einer Bestellung bei OVHcloud sein.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">DNS-Zone</code> > Wählen Sie Ihren Domainnamen aus
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## In der praktischen Anwendung
+
+### 1 - Erstellen der DNS-Zone über das OVHcloud Kundencenter
+
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone), dann auf den Button <code className="action">Bestellen</code>.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Auf der angezeigten Seite geben Sie die Subdomain ein (z. B. *sub.domain.tld*), für die Sie eine OVHcloud DNS-Zone erstellen möchten. Warten Sie einige Sekunden, während das Tool Prüfungen bezüglich der Subdomain durchführt.
+    
+    <img className="thumbnail" alt="dnszonecreate" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png" loading="lazy" />
+
+Falls eine Nachricht anzeigt, dass die DNS-Zone nicht erstellt werden kann, prüfen Sie, ob die Subdomain die erforderlichen Voraussetzungen erfüllt, oder kontaktieren Sie die Person, die sie verwaltet. Sobald alles korrekt ist, wiederholen Sie den Vorgang.
+  </Tab>
+  <Tab label="Schritt 3">
+    Nach Abschluss der Prüfung entscheiden Sie, ob Sie die minimalen Einträge für die zu erstellende DNS-Zone aktivieren möchten. Diese Entscheidung ist nicht endgültig, da Sie die [Einträge der DNS-Zone auch später noch bearbeiten können](/guides/web-cloud/domains/dns-zone-edit/).
+    
+    <img className="thumbnail" alt="dnszonecreate" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png" loading="lazy" />
+    
+    |Die minimalen Einträge aktivieren?|Details|
+    |---|---|
+    |Ja|Wählen Sie diese Option, wenn Sie Ihre DNS-Zone später selbst anpassen möchten.<br/><img className="thumbnail" alt="Minimum-DNS-entries" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png" loading="lazy" />|
+    |Nein|Wählen Sie diese Option, wenn Sie OVHcloud Dienste wie zum Beispiel ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) nutzen möchten. Die DNS-Zone ist hierfür bereits vorkonfiguriert.<br/><img className="thumbnail" alt="Minimum-dns-zentries" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png" loading="lazy" />|
+    
+    Nachdem Sie Ihre Auswahl getroffen haben, folgen Sie den angezeigten Schritten in Ihrem OVHcloud Kundencenter, bis die DNS-Zone erstellt ist.
+  </Tab>
+</Tabs>
+
+
+### 2 - DNS-Zone bearbeiten (optional)
+
+Die DNS-Zone für Ihre Subdomain ist jetzt erstellt. Sie können sie bereits bearbeiten. Dieser Schritt ist optional, kann aber notwendig sein, wenn Sie die Kontinuität der Verfügbarkeit der Dienste, die mit dieser Subdomain verbunden sind (z. B. eine Website und/oder E-Mails), gewährleisten möchten.
+
+Um die DNS-Zone zu bearbeiten, lesen Sie unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/guides/web-cloud/domains/dns-zone-edit/)".
+
+:::info
+Wenn Sie gerade die DNS-Zone erstellt haben und die Subdomain noch nicht in der Liste Ihrer Dienstleistungen erscheint, warten Sie ca. 20 Minuten und laden Sie die Seite neu.
+
+:::
+
+
+### 3 - Deklarieren der DNS-Server in der aktiven DNS-Zone des Domainnamens, von dem die gewählte Subdomain abhängt
+
+Die Aktivierung einer DNS-Zone für eine Subdomain unterscheidet sich von der Aktivierung eines Domainnamens, da eine Subdomain zwingend von einem Domainnamen abhängt, um zu funktionieren.
+
+Zunächst müssen Sie den Namen der **DNS-Server** von OVHcloud abrufen, die mit der für Ihre Subdomain erstellten DNS-Zone verknüpft sind.
+
+Um diese zu finden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone), dann wählen Sie die Subdomain aus.
+    
+    <img className="thumbnail" alt="DNS-Zonen" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    In der Tabelle identifizieren Sie die beiden Spalten **Typ** und **Ziel**.
+    
+    <img className="thumbnail" alt="DNS-Zonen" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png" loading="lazy" />
+
+Suchen Sie die beiden Zeilen vom Typ **NS** und notieren Sie die beiden Werte in der Spalte **Ziel**.
+    Die Namen der DNS-Server sollten eine der folgenden drei Formen haben :
+    
+    - `nsXX.ovh.net` und `dnsXX.ovh.net` oder, `nsXXX.ovh.net` und `dnsXXX.ovh.net` (wobei jeder `X` eine Zahl zwischen **0** und **9** darstellt).
+    - `nsXX.ovh.ca` und `dnsXX.ovh.ca` oder, `nsXXX.ovh.ca` und `dnsXXX.ovh.ca` (wobei jeder `X` eine Zahl zwischen **0** und **9** darstellt).
+    - `ns200.anycast.me` und `dns200.anycast.me` (wenn Sie die Option [DNS anycast](https://www.ovhcloud.com/de/domains/options/) abonniert haben).
+  </Tab>
+</Tabs>
+
+
+Nachdem Sie die beiden DNS-Server-Namen abgerufen haben, gibt es zwei mögliche Szenarien:
+
+**Klicken Sie auf eine der beiden Szenarien, um den Inhalt anzuzeigen.**
+
+<details>
+
+<summary>Der Domainname, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei OVHcloud</summary>
+
+
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone), dann wählen Sie die Subdomain aus.
+    
+    <img className="thumbnail" alt="DNS-Zonen" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Rechts oder unterhalb der Tabelle klicken Sie auf <code className="action">Eintrag hinzufügen</code>.
+    
+    <img className="thumbnail" alt="dns zone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    In dem sich öffnenden Fenster wählen Sie den DNS-Eintrag vom Typ <code className="action">NS</code> aus, dann klicken Sie auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="dns zone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Geben Sie anschließend im Feld `Subdomain *` die betreffende Subdomain ein (z. B. `sub` für die Subdomain `sub.domain.tld`), und im Feld `Ziel *`, einen der beiden zuvor abgerufenen DNS-Server (z. B. `nsXX.ovh.net`).
+    
+    <img className="thumbnail" alt="dns zone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/add-a-ns-entry-to-the-dns-zone.png" loading="lazy" />
+
+Klicken Sie schließlich auf <code className="action">Weiter</code>.
+    
+    Überprüfen Sie die Zusammenfassung, dann klicken Sie auf <code className="action">Bestätigen</code>.
+    
+    **Wiederholen Sie den gesamten Vorgang für den zweiten DNS-Server.**
+    
+    Falls nötig, konsultieren Sie zusätzlich unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/guides/web-cloud/domains/dns-zone-edit/)".
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Der Domainname, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei einem anderen Anbieter</summary>
+
+
+In diesem speziellen Fall kontaktieren Sie Ihren DNS-Anbieter und teilen Sie ihm mit, dass Sie 2 DNS-Einträge vom Typ NS für Ihre Subdomain hinzufügen möchten. 
+
+Hier ist ein Beispiel für eine Anfrage, die Sie an Ihren DNS-Anbieter richten können:
+
+<pre className="bgwhite"><code>
+Hallo,
+
+Ich möchte in der aktiven DNS-Zone des Domainnamens <b>domain.tld</b> folgende NS-Einträge für meine Subdomain <b>sub.domain.tld</b> hinzufügen:
+
+ - sub IN NS nsXX.ovh.net.
+ - sub IN NS dnsXX.ovh.net.
+
+Damit möchte ich eine spezifische DNS-Zone für meine Subdomain <b>sub.domain.tld</b> aktivieren.
+
+Mit freundlichen Grüßen,
+</code></pre>
+
+Im obigen Beispiel ersetzen Sie die Werte **domain.tld**, **sub.domain.tld**, **nsXX.ovh.net** und **dnsXX.ovh.net** durch Ihre eigenen Werte.
+
+</details>
+
+
+:::warning
+**Der folgende Hinweis betrifft nicht die beiden DNS-Einträge vom Typ NS, die Sie gerade hinzugefügt haben.** 
+
+Falls andere DNS-Einträge in der aktiven DNS-Zone des Domainnamens, von dem Ihre Subdomain abhängt, vorhanden waren:
+
+1. Vergessen Sie nicht, sie in der für Ihre Subdomain erstellten DNS-Zone zu duplizieren.
+2. Nach der Duplizierung entfernen Sie sie aus der aktiven DNS-Zone Ihres Domainnamens.
+
+Es könnte sonst zu einem Konflikt bei der DNS-Auflösung kommen.
+
+:::
+
+
+Nachdem Sie die DNS-Zone des Domainnamens, von dem Ihre Subdomain abhängt, geändert haben, kann die Propagation der Änderungen bis zu **48 Stunden** dauern.
+
+## Weiterführende Informationen
+
+[Alle Informationen zu DNS-Servern](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Alle Informationen zu DNS-Zonen](/guides/web-cloud/domains/dns-zone-general-information/)
+
+[Alle Informationen zu DNS-Einträgen](/guides/web-cloud/domains/dns-zone-records/)
+
+[Bearbeiten der OVHcloud DNS-Zone](/guides/web-cloud/domains/dns-zone-edit/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

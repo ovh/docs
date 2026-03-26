@@ -1,0 +1,299 @@
+---
+title: Web Cloud Databases - Connecting to a database
+description: Find out how to connect to a database on your Web Cloud Databases solution
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+You can view the content of your database via an interface. There are several ways to connect to it.
+
+**Find out how to connect to your database on your database server.**
+
+## Requirements
+
+- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-gb/web-cloud/databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Select your database service
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## Instructions
+
+:::info
+[Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) solutions do not provide access to the database management system itself, but to the databases hosted on it.
+
+- There is no super user "root" access.
+- Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL SQL or Adminer is fully compatible.
+
+:::
+
+
+### Connect to a MySQL or MariaDB database
+
+:::info
+Since MariaDB is a fork of MySQL, the commands are exactly the same for both types of databases.
+
+:::
+
+
+#### Connection via OVHcloud phpMyAdmin
+
+Click on the tabs below to view each of the **4** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) page, then select the solution concerned.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Retrieve the following connection information:
+    
+    - **Server (hostname) and port:** visible in the <code className="action">General information</code> tab, `Login information` section.
+    - **Username:** visible in the <code className="action">Users and rights</code> tab.
+    - **Password:** the password associated with the user. If you have forgotten it, go to the <code className="action">Users and rights</code> tab, click <code className="action">...</code> to the right of the user concerned, then <code className="action">Change password</code>.
+    
+    :::warning
+    If you change the password for a database user, all applications/websites that access this database must be updated accordingly.
+
+    :::
+
+  </Tab>
+  <Tab label="Step 3">
+    In the <code className="action">General information</code> tab, locate the **Database administration** section and click the phpMyAdmin link under **User interface**.
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    On the phpMyAdmin login page, enter the information retrieved in step 2:
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-login-web-cloud-db.png" loading="lazy" />
+    
+    - **Server:** enter the *hostname* followed by the *port number*, separated by "**:**" or a "**space**". For example: **aaXXXXX-XXX.eu.clouddb.ovh.net:12345**.
+    - **Username:** enter the *username*.
+    - **Password:** enter the *password*.
+  </Tab>
+</Tabs>
+
+
+If the connection is successful, the following page will appear.
+
+<img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-main-page-web-cloud-db.png" loading="lazy" />
+
+:::warning
+**In case of error:**
+
+- Error #1045 means the credentials are incorrect. Check your username and/or password.
+- Error #2005 means the server name should be checked, and whether it is functioning correctly.
+
+:::
+
+
+#### Connection to the database outside the Control Panel
+
+:::warning
+If you are using a "Web Cloud Databases"/"Private SQL" solution, remember to authorise your IP using the guide on [configuring your database server](/guides/web-cloud/web-cloud-databases/configure-database-server#gerer-vos-acces/).
+
+:::
+
+
+Click on the tabs below to view each of the **2** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) page, then select the solution concerned.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Retrieve the following connection information:
+    
+    - **Server (hostname):** visible in the <code className="action">General information</code> tab, **"Database administration"** section, "Hostname" in the **SQL** part.
+    - **Port:** visible in the same location, "Port" in the **SQL** part.
+    - **Username:** visible in the <code className="action">Users and rights</code> tab.
+    - **Password:** the password associated with the user concerned.
+    - **Database name:** visible in the <code className="action">Databases</code> tab.
+  </Tab>
+</Tabs>
+
+
+**Click on the connection method of your choice to view the content.**
+
+<details>
+
+<summary>Command line connection</summary>
+
+
+```bash
+mysql --host=server --user=user --port=port --password=password database_name
+```
+
+</details>
+
+
+<details>
+
+<summary>PHP script connection</summary>
+
+
+```php
+1. <?php
+2. $db = new PDO('mysql:host=host;port=port;dbname=dbname', 'username', 'password');
+3. ?>
+```
+
+</details>
+
+
+<details>
+
+<summary>Software connection (SQuirreL SQL)</summary>
+
+
+:::info
+In our example, we use the open-source software SQuirreL, but other interfaces such as HeidiSQL or Adminer are fully compatible.
+
+:::
+
+
+- Launch SQuirreL SQL and click on <code className="action">Aliases</code>, then on <code className="action">+</code>
+
+<img className="thumbnail" alt="launch SQuirreL SQL" src="/images/assets/screens/other/web-tools/squirrel/aliases.png" loading="lazy" />
+
+- Fill in the fields below and confirm with the <code className="action">OK</code> button:
+    - **Name**: Choose a name
+    - **Driver**: Choose "MySQL Driver"
+    - **URL**: Enter the server address and port in the form jdbc:mysql://server:port
+    - **User Name**: Enter the username
+    - **Password**: Enter the password
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/add-alias.png" loading="lazy" />
+
+- Confirm again with the <code className="action">Connect</code> button
+
+<img className="thumbnail" alt="valid connection" src="/images/assets/screens/other/web-tools/squirrel/connect-to-mysql.png" loading="lazy" />
+
+You are now connected to your database:
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/general-dashboard.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>phpMyAdmin connection</summary>
+
+
+You can use your own phpMyAdmin interface to explore the content of your database. To do this, install phpMyAdmin on your own server or web hosting plan. During installation, make sure you correctly configure the information for your database server and desired database so that phpMyAdmin can connect to it.
+
+</details>
+
+
+### Connect to a PostgreSQL database
+
+Click on the tabs below to view each of the **2** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) page, then select the solution concerned.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Retrieve the following connection information:
+    
+    - **Server (hostname):** visible in the <code className="action">General information</code> tab, **"Database administration"** section, "Hostname" in the **SQL** part.
+    - **Port:** visible in the same location, "Port" in the **SQL** part.
+    - **Username:** visible in the <code className="action">Users and rights</code> tab.
+    - **Password:** the password associated with the user concerned.
+    - **Database name:** visible in the <code className="action">Databases</code> tab.
+  </Tab>
+</Tabs>
+
+
+**Click on the connection method of your choice to view the content.**
+
+<details>
+
+<summary>Command line connection</summary>
+
+
+```bash
+psql --host=server --port=port --user=user --password=password database_name
+```
+
+</details>
+
+
+<details>
+
+<summary>PHP script connection</summary>
+
+
+```php
+1. <?php
+2. $myPDO = new PDO('pgsql:host=host;port=port;dbname=dbname', 'username', 'password');
+3. ?>
+```
+
+</details>
+
+
+<details>
+
+<summary>Software connection (SQuirreL SQL)</summary>
+
+
+:::info
+In our example, we use the open-source software SQuirreL, but other interfaces such as HeidiSQL or Adminer are fully compatible.
+
+:::
+
+
+- Launch SQuirreL SQL and click on <code className="action">Aliases</code>, then on <code className="action">+</code>
+
+<img className="thumbnail" alt="launch SQuirreL SQL" src="/images/assets/screens/other/web-tools/squirrel/aliases.png" loading="lazy" />
+
+- Fill in the fields below and confirm with the <code className="action">OK</code> button:
+    - **Name**: Choose a name
+    - **Driver**: Choose "PostgreSQL"
+    - **URL**: Enter the server address and port in the form jdbc:postgresql://server:port/database
+    - **User Name**: Enter the username
+    - **Password**: Enter the password
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/add-alias.png" loading="lazy" />
+
+- Confirm again with the <code className="action">Connect</code> button
+
+<img className="thumbnail" alt="valid connection" src="/images/assets/screens/other/web-tools/squirrel/connect-to-mysql.png" loading="lazy" />
+
+You are now connected to your database:
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/general-dashboard.png" loading="lazy" />
+
+</details>
+
+
+## Go further
+
+[Web Hosting - My database is full, what should I do?](/guides/web-cloud/web-hosting/sql-overquota-database/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

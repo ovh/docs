@@ -1,0 +1,99 @@
+---
+title: Compreender a interface vScope (EN)
+description: The vScope interface allows you to monitor your infrastructure
+lastUpdated: 2025-10-01
+---
+
+## Objective
+
+OVHcloud provides you with a **supervision** and **monitoring** tool for your virtual machines and infrastructure: **vScope**.
+
+This web interface gathers all the essential information about your resources.
+
+**This guide explains how to read and use the vScope interface.**
+
+## Requirements
+
+- You must be an administrator contact of the [Hosted Private Cloud](https://www.ovhcloud.com/pt/hosted-private-cloud/vmware/) infrastructure, in order to receive login credentials.
+- An active user ID (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
+
+## Instructions
+
+### Accessing vScope
+
+1. In the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt), click <code className="action">Hosted Private Cloud</code>.
+
+2. In the left-hand menu, click <code className="action">Managed VMware vSphere</code>.
+
+3. Select your PCC service.
+
+4. In the `General information` tab, scroll down and click the <code className="action">vScope</code> link.
+
+<img className="thumbnail" alt="vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-vscope/gatewayPCC.png" loading="lazy" />
+
+The interface opens in a new tab in your browser.
+
+<img className="thumbnail" alt="vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-vscope/vScope12.png" loading="lazy" />
+
+Log in with your **user** and **password** - the same credentials you use to connect to the vSphere client.
+
+<img className="thumbnail" alt="vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-vscope/vScope11.png" loading="lazy" />
+
+You are now connected to **vScope**. This page centralises the key information about your resources.
+
+For example, for each host, you can immediately view:
+
+- The number of cores and VMs
+- CPU and RAM usage
+- Network traffic
+
+<img className="thumbnail" alt="vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-vscope/vScope.png" loading="lazy" />
+
+### Browsing vScope
+
+#### Selecting the datacenter
+
+If your Hosted Private Cloud contains several datacenters, select the one you want to display from the drop-down menu.
+
+The **Last refresh** field corresponds to the last refresh of the web page, not of vScope data. vScope data is automatically updated every 2 to 5 minutes.
+
+<img className="thumbnail" alt="vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-vscope/vScope1.png" loading="lazy" />
+
+#### Filer menu
+
+The **Filer** menu shows the usage of your datastores: number of virtual machines and consumed storage space.
+
+Use this view to anticipate extension needs or monitor load balancing.
+
+<img className="thumbnail" alt="vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-vscope/vScope2.png" loading="lazy" />
+
+### Hosts menu
+
+The **Hosts** menu details the characteristics of each host in your datacenter:
+
+- Number of cores, vCPUs and VMs
+- CPU and RAM usage percentages
+- Network connectivity
+- Number of physical network cards (VMNic)
+
+<img className="thumbnail" alt="vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-vscope/vScope4.png" loading="lazy" />
+
+### Virtual machines menu
+
+This section provides a detailed view of each virtual machine:
+
+- Status of VMware Tools
+- Network traffic
+- VM size
+- FT (Fault Tolerance) activation
+- CPU Ready Time
+- Disk IO
+- Disk latency
+
+<img className="thumbnail" alt="vScope" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-vscope/vScope6.png" loading="lazy" />
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

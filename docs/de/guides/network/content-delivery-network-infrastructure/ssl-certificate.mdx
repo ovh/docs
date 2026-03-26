@@ -1,0 +1,65 @@
+---
+title: Funktionsweise des SSL-Zertifikats auf dem CDN
+description: So fügen Sie ein SSL-Zertifikat auf dem CDN hinzu
+lastUpdated: 2018-02-22
+---
+
+## Einleitung
+
+Sie können Ihrem Content Delivery Network (CDN) ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl/) hinzufügen, damit Ihre Nutzer auch über das CDN eine gesicherte Verbindung herstellen können.
+
+**In dieser Anleitung erfahren Sie, wie die SSL-Zertifikate von Let's Encrypt bei OVH funktionieren.**
+
+## Voraussetzungen
+
+- Sie verfügen über ein [CDN von OVH](https://www.ovhcloud.com/de/network/cdn/).
+- Sie haben Zugriff auf die Verwaltung der DNS-Zone Ihrer Domain.
+
+## Beschreibung
+
+### Wie bekomme ich ein von OVH bereitgestelltes SSL-Zertifikat von Let's Encrypt für meine CDN-Subdomains?
+
+- Wenn Sie bisher kein Zertifikat konfiguriert haben und Ihre erste Subdomain dem CDN hinzufügen, wird für diese Domain automatisch ein Let's Encrypt-Zertifikat erstellt.
+- Wenn Sie dem CDN eine weitere Subdomain hinzufügen, wird das Zertifikat automatisch erneuert, damit es auch für die neu eingerichtete Subdomain gilt.
+
+Damit die Zertifikatserstellung erfolgreich ist, muss die neu hinzugefügte Subdomain korrekt auf das CDN zeigen. Hierfür empfehlen wir Ihnen die Anleitung zum Thema „[Erste Konfiguration einer Domain](/guides/network/content-delivery-network-infrastructure/first-domain-name-configuration/)“.
+
+Die Erneuerung des Zertifikats erfolgt automatisch innerhalb von 20 Tagen vor dessen Ablauf.
+
+:::warning
+Das von OVH bereitgestellte SSL-Zertifikat von Let's Encrypt gilt für die ersten 100 auf dem CDN konfigurierten Domains oder Subdomains. Sollten Sie mehr als 100 Domains einrichten wollen, konfigurieren Sie bitte Ihr eigenes Wildcard-/Multi-Domain-Zertifikat.
+
+:::
+
+
+### Wie lange dauert die Erstellung meines Zertifikats?
+
+Die Erstellung (oder Erneuerung) des Zertifikats einschließlich Deployment in all unseren Präsenzpunkten dauert im Durchschnitt zwei Stunden.
+
+<img className="thumbnail" alt="SSL-Zertifikat wird erstellt" src="/images/network/content-delivery-network-infrastructure/ssl-certificate/ssl_in_progress.png" loading="lazy" />
+
+Sollte die Erstellung ungewöhnlich lange dauern, überprüfen Sie, ob alle auf Ihrem Angebot konfigurierten Domains auf das CDN verweisen. Ist dies nicht der Fall, kann der Robot das Zertifikat nicht korrekt generieren.
+
+Während der Erstellung des Zertifikats können Sie 48 Stunden lang eine entsprechende Korrektur vornehmen; innerhalb dieses Zeitraums versucht der Robot den Vorgang regelmäßig neu zu starten. Nach Ablauf dieser Frist wird der Task abgebrochen.
+
+Ein neuer Erstellungsversuch erfolgt, sobald Sie eine neue Domain hinzufügen oder wenn Sie ein Zertifikat manuell anfordern.
+
+Wenn das Zertifikat aktiviert ist, erkennen Sie dies am neuen Status:
+
+<img className="thumbnail" alt="SSL aktiviert" src="/images/network/content-delivery-network-infrastructure/ssl-certificate/ssl_validated.png" loading="lazy" />
+
+### Wie kann ich ein eigenes Zertifikat hinzufügen?
+
+- Wenn Sie bisher keine Domain hinzugefügt haben oder über kein Zertifikat verfügen, können Sie die Option <code className="action">Mein Zertifikat hinzufügen</code> im Tab „SSL“ Ihres CDN nutzen:
+
+<img className="thumbnail" alt="Ein SSL-Zertifikat hinzufügen" src="/images/network/content-delivery-network-infrastructure/ssl-certificate/add_ssl.png" loading="lazy" />
+
+- Wenn Sie bereits über ein Let's Encrypt-Zertifikat verfügen, können Sie einfach die Option <code className="action">Mit meinem Zertifikat ersetzen</code> nutzen:
+
+<img className="thumbnail" alt="Ein SSL-Zertifikat ersetzen" src="/images/network/content-delivery-network-infrastructure/ssl-certificate/change_ssl.png" loading="lazy" />
+
+## Weiterführende Informationen
+
+[Erste Konfiguration einer Domain](/guides/network/content-delivery-network-infrastructure/first-domain-name-configuration/)
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

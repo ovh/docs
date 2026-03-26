@@ -1,0 +1,90 @@
+---
+title: Transferir un nombre de dominio Wix a OVHcloud
+description: Descubra diferentes datos relativos a la transferencia de un nombre de dominio Wix a OVHcloud
+lastUpdated: 2026-02-10
+---
+
+## Objetivo
+
+Para transferir un nombre de dominio Wix es necesario seguir un procedimiento específico.
+
+**Descubra cómo transferir un nombre de dominio Wix a OVHcloud**
+
+:::warning
+El [agente registrador](https://www.ovhcloud.com/es-es/learn/what-is-domain-name-registrar/) de un nombre de dominio representa la organización/proveedor autorizado con el que el nombre de dominio está registrado o suscrito por un particular, una asociación o una organización. Renueve la suscripción de su nombre de dominio (generalmente una vez al año) con este mismo agente registrador.
+
+Si OVHcloud ya es el agente registrador del nombre de dominio **antes** de iniciar el procedimiento que se indica a continuación, la transferencia entrante del nombre de dominio no es el procedimiento adecuado. El procedimiento de transferencia entrante del nombre de dominio se aplica **únicamente** a los nombres de dominio registrados en un agente registrador que no sea OVHcloud.
+
+Para transferir la gestión de su nombre de dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un **cambio de contactos**. El procedimiento se describe en [esta guía](/guides/account-and-service-management/account-information/managing-contacts/).
+Si también debe cambiar el **titular** del nombre de dominio, deberá hacerlo **antes** de cambiar los contactos del nombre de dominio. Para ello, siga las instrucciones de la guía relativa al [cambio de titular de los nombres de dominio](/guides/web-cloud/domains/trade-domain/).
+
+:::
+
+
+## Requisitos
+
+- El nombre de dominio está registrado en el agente registrador Wix.
+- El nombre de dominio existe desde hace más de 60 días.
+- El nombre de dominio no ha sido transferido o no ha cambiado de titular en los últimos 60 días.
+- El estado del nombre de dominio es "OK" o "Transferible".
+- El nombre de dominio no ha expirado y tiene una fecha de expiración que permite finalizar el proceso de transferencia en el plazo indicado (recomendado: más de 60 días).
+
+También debe:
+
+- Estar en condiciones de desbloquear el nombre de dominio.
+- Tener el código de transferencia o estar en condiciones de recuperarlo.
+- Estar facultado para solicitar la transferencia del nombre de dominio.
+- Haber informado al titular del nombre de dominio y/o a sus administradores de la solicitud de transferencia.
+
+:::warning
+OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+
+Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con su actual agente registrador. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
+
+:::
+
+
+## Procedimiento
+
+:::info
+La zona DNS activa de un nombre de dominio contiene la configuración DNS aplicada al nombre de dominio. Es la que asocia el nombre de dominio a servicios como las direcciones de correo o el sitio web.
+
+Si, además del nombre de dominio, dispone de una zona DNS activa para el mismo en su actual agente registrador, compruebe con sus servicios que la zona DNS aplicada al nombre de dominio no se eliminará una vez realizada la transferencia.
+
+Algunos agentes registradores eliminan la zona DNS que se encuentra en ellos una vez finalizada la transferencia del nombre de dominio. En ese caso, vuelva a crear su zona DNS en OVHcloud antes de iniciar las acciones asociadas a la transferencia del nombre de dominio.
+
+Para ello, consulte las siguientes guías:
+
+- [Crear una zona DNS en OVHcloud](/guides/web-cloud/domains/dns-zone-create/)
+- [Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+Asimismo, asegúrese de que su actual agente registrador no vaya a cerrar otros servicios, como las direcciones de correo asociadas al nombre de dominio.
+
+Si, además de la transferencia del nombre de dominio, quiere migrar los servicios asociados al mismo (sitio web, correo electrónico...), consulte en primer lugar nuestra guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/guides/web-cloud/web-hosting/hosting-migrating-to-ovh/)" antes de continuar.
+Esta guía explica en detalle cómo migrar todos sus servicios sin cortes del servicio.
+
+Si solo va a transferir su nombre de dominio sin trasladar los demás servicios, deberá obtener los servidores DNS activos para su nombre de dominio de su actual **registrar** para informarlos directamente en el paso 3 de la guía "[Transferir su nombre de dominio a OVHcloud](/guides/web-cloud/domains/transfer-incoming-generic-domain/)".
+De este modo, no tendrá que interrumpir la asociación entre su nombre de dominio y los servicios externos asociados.
+
+:::
+
+
+### Desbloquear el nombre de dominio y obtener el código de transferencia
+
+Para desbloquear el nombre de dominio y obtener el código de transferencia, siga los pasos descritos en la [documentación dedicada de Wix](https://support.wix.com/es/article/transferir-tu-dominio-wix-fuera-de-wix).
+
+### Iniciar la transferencia del nombre de dominio a OVHcloud
+
+Una vez obtenido el código de autorización, puede proceder a la transferencia del nombre de dominio siguiendo las etapas de la guía "[Transferir un nombre de dominio a OVHcloud](/guides/web-cloud/domains/transfer-incoming-generic-domain/)".
+
+## Más información <a name="go-further"></a>
+
+[Transferir un nombre de dominio a OVHcloud](/guides/web-cloud/domains/transfer-incoming-generic-domain/)
+
+[Migrar un sitio web y el correo a OVHcloud](/guides/web-cloud/web-hosting/hosting-migrating-to-ovh/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

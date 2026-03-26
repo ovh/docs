@@ -1,0 +1,98 @@
+---
+title: Buying an Additional IP
+description: Find out how to order Additional IP addresses for your instances
+lastUpdated: 2025-04-28
+---
+
+:::info
+Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This renaming has no effect on its technical features.
+
+:::
+
+
+## Objective
+
+You may need to configure an Additional IP address on your instances for different reasons. For example, you may be:
+
+- Hosting several websites on your instance.
+- Hosting international projects.
+
+To meet these needs, you can order an Additional IP address for your Public Cloud instances.
+
+These Additional IP addresses can only be migrated to instances in the same project.
+
+**This guide explains how to obtain an Additional IP for an OVHcloud Public Cloud project.**
+
+## Requirements
+
+- A [Public Cloud instance](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) in your Public Cloud project
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+In the left-hand menu, open <code className="action">Public IPs</code> under **Network**.
+
+Open the <code className="action">Additional IP</code> tab and click on the <code className="action">Actions</code> button. Select <code className="action">Add a new IP</code>.
+
+<img className="thumbnail" alt="Adding IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-buy/buyaddIP_01.png" loading="lazy" />
+
+In step 1 of the order process, click on <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Adding IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-buy/buyaddIP_02.png" loading="lazy" />
+
+Step 2 allows you to select a country for the new IP address.
+
+<img className="thumbnail" alt="Adding IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-buy/buyaddIP_03.png" loading="lazy" />
+
+The following countries are available for IP geolocation:
+
+|          |          |          |           |                |
+|:--------:|:--------:|:--------:|:---------:|:--------------:|
+| Belgium  | Finland  | France   | Germany   | Czech Republic |
+| Ireland  |  Italy   | Lithuania | Netherlands | United Kingdom    |
+| Portugal |  Spain   |  Poland |  Switzerland |                 |
+
+> [!primary] **Availability**
+> 
+> Some of these countries may not be listed, depending on the current availability of IPv4 addresses.
+> 
+
+> [!primary] **Location**
+>
+> IP geolocation is solely based on benchmark organisations.
+> 
+> For example, [RIPE NCC](https://www.ripe.net/) is serving Europe as the Regional Internet Registry.
+>
+> If you need to verify geolocation otherwise, contact the concerned organisations directly. OVHcloud cannot be involved in this regard.
+
+Once you have selected a country, click on <code className="action">Next</code>.
+
+In the final step, select your instance from the drop-down menu. Then click on <code className="action">Generate purchase order</code>.
+
+<img className="thumbnail" alt="Adding IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-buy/buyaddIP_04.png" loading="lazy" />
+
+The purchase order will open automatically for you to complete your purchase.
+
+See our guide on [managing OVHcloud orders](/guides/account-and-service-management/managing-billing-payments-and-services/managing-ovh-orders/) for more details.
+
+You can also find the purchase order in your Control Panel, by going to the <code className="action">Dashboard</code> section and clicking on <code className="action">View my orders</code>.
+
+The next step will be the IP configuration in your OS; please refer to our [guide](/guides/public-cloud/public-cloud-network-services/getting-started-04-configure-additional-ip-to-instance/).
+
+## Go further
+
+[Configuring an Additional IP](/guides/public-cloud/public-cloud-network-services/getting-started-04-configure-additional-ip-to-instance/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

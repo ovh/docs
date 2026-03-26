@@ -1,0 +1,87 @@
+---
+title: Configurazione di NAT per i reindirizzamenti delle porte con NSX (EN)
+description: Learn how to configure NAT to create port redirections
+lastUpdated: 2023-02-27
+---
+
+## Objectif
+
+**Learn how to configure NAT to create port redirections with NSX.**
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+
+This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/it/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+
+:::
+
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use our guide on [segment management in NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/) for more information.
+
+## Instructions
+
+When you deploy your NSX solution, a SNAT rule is automatically created by OVHcloud, so you can go online from your segments.
+
+We will add a redirection rule (DNAT) from the public virtual IP address on port 2222 in TCP to a virtual machine on LINUX on port 22 in TCP. In our example, we will use fictitious IP addresses.
+
+In the NSX interface, go to the <code className="action">Networking</code> tab, select <code className="action">NAT</code> in the **Network Services** section, then select <code className="action">ovh-T0-gw | Tier-0</code> to the right of **Gateway** and click <code className="action">ADD NAT RULE</code>.
+
+<img className="thumbnail" alt="01 Create DNAT rule 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/01-create-dnat-rules01.png" loading="lazy" />
+
+Fill in this information :
+
+- **Action** : Select <code className="action">DNAT</code>.
+- **Source IP** : Enter the IP address or range of addresses that can use this redirection.
+- **Destination IP** : Public virtual IP address of NSX.
+- **Destination PORT** : Listening port on public address such as `2222`.
+- **Translated IP** : IP address of the virtual machine being redirected to.
+
+Then click on the <code className="action">three vertical dots</code> to the right of **Select Services**.
+
+<img className="thumbnail" alt="01 Create DNAT rule 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/01-create-dnat-rules02.png" loading="lazy" />
+
+Enter <code className="action">SSH22</code> under the **Name** column and click <code className="action">Set</code> under the **Service Entry** column.
+
+<img className="thumbnail" alt="01 Create DNAT rule 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/01-create-dnat-rules03.png" loading="lazy" />
+
+Click <code className="action">ADD SERVICE ENTRY</code>.
+
+<img className="thumbnail" alt="01 Create DNAT rule 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/01-create-dnat-rules04.png" loading="lazy" />
+
+Fill in these values :
+
+- **Name** : Enter `SSH22`.
+- **Service Type** : Select <code className="action">TCP</code>.
+- **Source Ports** : Write the number `22`.
+
+Then click <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="01 Create DNAT rule 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/01-create-dnat-rules05.png" loading="lazy" />
+
+Click <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="01 Create DNAT rule 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/01-create-dnat-rules06.png" loading="lazy" />
+
+Click <code className="action">SAVE</code> to confirm the creation of the redirection rule.
+
+<img className="thumbnail" alt="01 Create DNAT rule 07" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/01-create-dnat-rules07.png" loading="lazy" />
+
+The rule is created and active.
+
+<img className="thumbnail" alt="01 Create DNAT rule 08" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-07-configure-nat-redirection/01-create-dnat-rules08.png" loading="lazy" />
+
+## Go further <a name="gofurther"></a>
+
+[Getting started with NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-01-first-steps/)
+
+[Segment management in NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/)
+
+[VMware NAT in NSX documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

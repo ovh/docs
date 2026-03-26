@@ -1,0 +1,191 @@
+---
+title: Gestisci le tue istanze Public Cloud tramite Horizon
+description: "Come gestire le tue istanze attraverso l'interfaccia Horizon"
+lastUpdated: 2022-01-25
+---
+
+:::info
+Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+
+:::
+
+
+## Obiettivo
+
+Oltre allo Spazio Cliente OVHcloud, è possibile gestire anche i progetti Public Cloud OVHcloud dall'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/). Da questa interfaccia è possibile visualizzare tutti i progetti di infrastruttura (istanze, backup, dischi, chiavi SSH, ecc…) e storage (inclusa la lista dei container).
+
+**Questa guida ti mostra come gestire le tue istanze Public Cloud tramite l'interfaccia Horizon.**
+
+## Prerequisiti
+
+- Aver creato un'istanza Public Cloud dallo [Spazio Cliente OVHcloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) o tramite l'[interfaccia Horizon](/guides/public-cloud/compute/create-instance-in-horizon/).
+- [Aver creato una chiave SSH](/guides/public-cloud/compute/compute-creating-ssh-keys/).
+
+## Procedura
+
+### Accedi all'interfaccia di gestione dell'istanza
+
+Per prima cosa accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
+
+Diversamente dallo Spazio Cliente OVHcloud, Horizon separa i tuoi servizi in base alla localizzazione. Puoi scegliere la regione dal menu in alto a sinistra:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/region2021.png" loading="lazy" />
+
+Clicca sul menu <code className="action">Compute</code> a sinistra e seleziona <code className="action">Instances</code>. 
+
+L’interfaccia mostra la tua infrastruttura e diverse informazioni relative all’istanza:
+
+  * modello dell'istanza (*Flavor*)
+  * nome, stato di alimentazione (Power State) e tempo trascorso dalla sua creazione (*Time since created*)
+  * l'indirizzo IPv4 e IPV6 della tua istanza
+  * la sua rete privata associata e il suo indirizzo IPv4 privato
+  * stato (*Status*)
+  * l'immagine utilizzata per l'installazione dell'istanza (se applicabile)
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/options2022.png" loading="lazy" />
+
+**Launch Instance** 
+
+Questa opzione permette di creare un'istanza. Per maggiori informazioni, consulta [questa guida](/guides/public-cloud/compute/create-instance-in-horizon/).
+
+**Delete Instances**
+
+Questa opzione ti permette di eliminare diverse istanze allo stesso tempo, basta selezionare la casella a sinistra del nome dell'istanza.
+
+**More Actions**
+
+Questo menu ti permette di eseguire queste operazioni su una o più istanze. Per prima cosa, seleziona la casella a sinistra del nome dell'istanza:
+
+- Start Instances: questa opzione permette di riavviare una o più istanze in stato *shutoff* o *off*.
+- Shut Off Instances: questa opzione permette di sospendere una o più istanze.
+- Soft Reboot Instance: questa opzione ti permette di eseguire un reavvio software su una o più istanze.
+
+**Create Snapshot**: Questa opzione permette di creare uno Snapshot (istantaneo) dell'istanza. Per maggiori informazioni, consulta [questa guida](/guides/public-cloud/compute/managing-snapshots-in-horizon/).
+
+### Modifica un'istanza
+
+Nell'interfaccia di gestione dell'istanza, seleziona l'opzione che preferisci nel menu a tendina.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/list2022.png" loading="lazy" />
+
+- Attach Interface: questa opzione permette di aggiungere una o più interfacce private alla tua istanza tramite la VLAN. Per maggiori informazioni, consulta [questa sezione](/guides/public-cloud/public-cloud-network-services/getting-started-07-creating-vrack#aggiunta-di-uninterfaccia-privata/) della guida.
+- Detach Interface: questa opzione si usa per staccare un'interfaccia associata a un'istanza. Per maggiori informazioni, consulta [questa sezione](/guides/public-cloud/public-cloud-network-services/getting-started-07-creating-vrack#elimina-uninterfaccia-privata/) della guida.
+- Edit Instance: questa opzione permette di modificare il nome dell'istanza e i [gruppi di sicurezza](/guides/public-cloud/compute/setup-security-group/).
+
+:::warning
+Le opzioni in rosso indicano la possibilità di perdita di dati durante il processo. Prima di apportare modifiche all'istanza, assicurati di disporre sempre di un backup dei dati.
+
+:::
+
+
+### Ridimensionare un'istanza
+
+Con il Public Cloud, puoi aumentare le risorse della tua istanza in modo semplice e veloce.
+
+:::warning
+Per i modelli classici è possibile solo il ridimensionamento verso un modello superiore.
+Questa operazione comporta anche l'interruzione dell'istanza durante l'operazione.
+
+:::
+
+
+:::tip[Success]
+Le istanze di tipo *flex* permettono il ridimensionamento verso i modelli superiori o inferiori grazie a una dimensione di disco unica.
+
+:::
+
+
+Per istruzioni dettagliate, consultare la seguente guida: [Ridimensionare un’istanza via Horizon](/guides/public-cloud/compute/resize-of-an-instance/).
+
+### Reinstalla un’istanza
+
+Questa opzione permette di riconfigurare l'istanza su un nuovo database o semplicemente di cambiare il sistema operativo.
+
+:::danger
+Questa operazione comporta l'eliminazione dei dati dell'istanza.
+
+:::
+
+
+Seleziona <code className="action">Rebuild Instance</code> nel menu a tendina dell'istanza.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/rebuildinstance.png" loading="lazy" />
+
+Seleziona l'immagine per la ricostruzione.<br/>
+Seleziona il tipo di partizione ("Automatica" o "Manuale"). Questo è facoltativo.<br/>
+Infine clicca su <code className="action">Rebuild Instance</code>. Questa operazione potrebbe richiedere qualche minuto.
+
+### Sospendi o metti in pausa un'istanza (Shelve or pause an instance)
+
+Per sapere come sospendere o mettere in pausa un'istanza, clicca [qui](/guides/public-cloud/compute/suspend-or-pause-an-instance/) per consultare la guida specifica a questo metodo.
+
+### Accedi alla console dell'istanza <a name="console"></a>
+
+In caso di perdita dell'accesso all'istanza a causa di una configurazione scorretta o di un blocco del servizio SSH, è possibile riconfigurare l'istanza utilizzando la console VNC.
+
+:::info
+Puoi accedere direttamente alla tua istanza tramite la console VNC. Per contro, è necessario configurare una password per l'utente root.
+Per maggiori informazioni, consulta [questa guida](/guides/public-cloud/compute/public-cloud-first-steps#user-mgmt/).
+La console VNC può essere utilizzata anche come primo approccio in caso di malfunzionamento, per diagnosticare grazie all'analisi della fase di avvio dell'istanza.
+
+:::
+
+
+Nel menu a tendina corrispondente all'istanza, seleziona <code className="action">Console</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/accessconsole.png" loading="lazy" />
+
+A questo punto visualizzi la console dell'istanza.
+
+:::tip[Success]
+Se la console non risponde ai record di tastiera, clicca sulla barra dello stato.
+Per uscire dalla modalità a schermo pieno, clicca sul pulsante in ritorno dal browser.
+
+:::
+
+
+**Console dell'istanza**
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/console.png" loading="lazy" />
+
+### Riavvia un'istanza
+
+Per riavviare un'istanza esistono due metodi:
+
+- Riavvio a caldo (software) (Soft Reboot Instance)
+- Riavvio a freddo (hardware) (Hard Reboot Instance)
+
+Nel menu a tendina corrispondente all'istanza, seleziona <code className="action">Soft Reboot Instance</code> o <code className="action">Hard Reboot Instance</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/rebootinstance.png" loading="lazy" />
+
+Nella nuova finestra, conferma la tua richiesta.
+
+### Elimina un'istanza
+
+Se non hai più bisogno di una delle tue istanze, puoi eliminarla in qualsiasi momento.
+
+:::danger
+I dati presenti sull'istanza verranno eliminati.
+Se vuoi conservare i dati e riavviare un'istanza identica in seguito, crea un backup di questa istanza.
+
+L'eliminazione di un'istanza non comporta l'eliminazione automatica di tutte le opzioni associate (storage, snapshot, backup, ecc...). Assicurati che tutte le altre opzioni associate all'istanza siano eliminate per interrompere la fatturazione.
+
+:::
+
+
+Nel menu a tendina corrispondente all'istanza, seleziona <code className="action">Delete Instance</code>. 
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/deleteinstance.png" loading="lazy" />
+
+Clicca su <code className="action">Confirm</code> per avviare il processo.
+
+:::tip[Success]
+Una volta eliminata, l'istanza non sarà più fatturata e non sarà più in grado di recuperarla.
+
+:::
+
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

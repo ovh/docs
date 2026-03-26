@@ -1,0 +1,120 @@
+---
+title: Cómo utilizar el SFTP para transferir archivos
+description: Cómo conectarse a su servidor con FileZilla para subir y descargar archivos
+lastUpdated: 2025-02-21
+---
+
+
+
+## Objetivo
+
+Existen diversas opciones para transferir archivos entre un dispositivo local y un host remoto. Para garantizar la seguridad de la transferencia, se recomienda que utilice software cliente compatible con el Protocolo seguro de transferencia de archivos (SFTP) en la mayoría de los casos de uso.
+
+**Este tutorial explica cómo utilizar FileZilla para transferir archivos mediante SFTP.**
+
+:::warning
+OVHcloud ofrece servicios cuya configuración y gestión son responsabilidad suya. Este tutorial explica cómo utilizar las soluciones de OVHcloud con herramientas externas. Es posible que tenga que adaptar algunas instrucciones específicas para el sistema operativo de su dispositivo local o servidor.
+
+Le recomendamos que, si necesita ayuda, contacte con un [proveedor de servicios especializado](https://partner.ovhcloud.com/es-es/directory/) o con [nuestra comunidad](https://community.ovhcloud.com/community/en).
+
+:::
+
+
+## Requisitos
+
+- Un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud, con una distribución GNU/Linux instalada
+- Cliente FTP que soporta las conexiones SFTP (por ejemplo, [FileZilla](https://filezilla-project.org/)) instaladas en su estación de trabajo local
+- Acceso de administrador por SSH al servidor
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores Dedicados](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Ruta de navegación:** <code className="action">Bare Metal Cloud</code> > <code className="action">Servidores Dedicados</code> > Seleccione su servidor
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+## Procedimiento
+
+Necesitará la dirección IP de su servidor que puede encontrar en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es), así como el nombre de la cuenta de usuario que debe utilizar para la conexión SSH. Si desea más información sobre este tema, consulte nuestras guías Primeros pasos:
+
+- [Servidor dedicado](/guides/bare-metal-cloud/dedicated-servers/getting-started-with-dedicated-server/)
+- [Servidor dedicado de la gama **Eco**](/guides/bare-metal-cloud/dedicated-servers/getting-started-with-dedicated-server-eco/)
+- [VPS](/guides/bare-metal-cloud/virtual-private-servers/starting-with-a-vps/)
+
+Los siguientes ejemplos se basan en [FileZilla](https://filezilla-project.org/). Si utiliza un cliente FTP diferente, consulte la guía de uso de su aplicación.
+
+El proceso puede requerir pasos adicionales si el servidor se ha iniciado en **modo de rescate**. Abra la sección correspondiente a continuación en función del estado del servidor.
+
+### Cómo conectarse a un servidor mediante un cliente SFTP
+
+<details>
+
+<summary>Despliegue esta sección</summary>
+
+
+En la interfaz del cliente FileZilla, introduzca la dirección IP de su servidor en el campo `Host` y su nombre de usuario y contraseña en sus respectivos campos. Introduzca "22" en el campo `Port`, a menos que haya cambiado el puerto de conexión en el que el servicio SSH de su servidor escucha.
+
+Haga clic en el botón <code className="action">Quickconnect</code>.
+
+:::warning
+Para acceder a las carpetas que pertenecen a la cuenta de usuario `root` de su SO, debe utilizar las claves de usuario `root` para establecer la conexión SFTP. Esta cuenta no tiene una contraseña predeterminada.  
+Si está seguro de tener que acceder a los archivos del usuario `root` a través de SFTP, descubra cómo activar esta conexión en nuestra [guía de la cuenta de usuario](/guides/bare-metal-cloud/dedicated-servers/changing-root-password-linux-ds/).
+
+:::
+
+
+</details>
+
+
+### Cómo conectarse a un servidor en modo de rescate mediante un cliente SFTP
+
+<details>
+
+<summary>Despliegue esta sección</summary>
+
+
+Si aún no ha realizado las acciones necesarias para acceder a sus archivos en modo de rescate, consulte la guía correspondiente para conectarse a su servidor y montar sus particiones:
+
+- [Modo de rescate para servidor dedicado](/guides/bare-metal-cloud/dedicated-servers/rescue-mode/)
+- [Modo de rescate para VPS](/guides/bare-metal-cloud/virtual-private-servers/rescue/)
+
+En la interfaz del cliente FileZilla, introduzca la dirección IP de su servidor en el campo `Host` y el campo "22" en el campo `Port`. Introduzca "root" en el campo `Username` y la contraseña que le hemos enviado por correo electrónico para acceder en modo de rescate en el campo `Password`.
+
+Haga clic en el botón <code className="action">Quickconnect</code>.
+
+El sistema de archivos del servidor se ubicará en el directorio que haya establecido como punto de montaje en modo de rescate ("/mnt" en este ejemplo).
+
+<img className="thumbnail" alt="modo de rescate sftp del sitio remoto" src="/images/bare-metal-cloud/dedicated-servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp/sftp_sd_03.png" loading="lazy" />
+
+</details>
+
+
+### Uso de la interfaz FileZilla para descargar sus archivos
+
+Una vez establecida la conexión remota, aparecerá un árbol de archivos del servidor en la sección `Remote Site`.
+
+<img className="thumbnail" alt="Sitio remoto sftp" src="/images/bare-metal-cloud/dedicated-servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp/sftp_sd_01.png" loading="lazy" />
+
+La parte central de la interfaz FileZilla actúa como un explorador de archivos. Puede seleccionar varios archivos o carpetas, eliminarlos, arrastrarlos de un lado a otro, etc. Como los detalles de uso pueden variar en función de la versión del software y de su sistema operativo local, consulte la guía del usuario [FileZilla](https://filezilla-project.org/) para obtener más información.
+
+Por ejemplo, para recuperar archivos de la carpeta "/home/data" del servidor, abra la carpeta en el panel derecho (`Remote Site`). Seleccione los archivos o carpetas que desea descargar y arrástrelos al panel izquierdo (`Local Site`) en una carpeta del dispositivo local.
+
+El progreso de la transferencia de datos se mostrará en la cola de abajo.
+
+<img className="thumbnail" alt="progreso de la transferencia sftp" src="/images/bare-metal-cloud/dedicated-servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp/sftp_sd_02.png" loading="lazy" />
+
+## Más información
+
+[Introducción al SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/)
+
+[Configuración de cuentas de usuario y acceso root en un servidor](/guides/bare-metal-cloud/dedicated-servers/changing-root-password-linux-ds/)
+
+Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,176 @@
+---
+title: How to manage Windows licences for virtual machines on your Hosted Private Cloud infrastructure
+description: Learn how to track and activate Windows licences for your virtual machines using the OVHcloud Control Panel or API
+lastUpdated: 2026-01-03
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+This guide explains how to manage Windows licences for your virtual machines hosted on your Hosted Private Cloud infrastructure.
+
+The [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) now includes a new feature, which allows you to:
+
+- View the number of Windows virtual machines requiring a licence.
+- Instantly activate a licence on eligible VMs from the interface.
+
+This gives you better visibility, reduces the need for API calls and helps ensure compliance with Microsoft licensing requirements.
+
+:::warning
+OVHcloud simplifies the management and billing of your Windows licences by allowing you to tell us which virtual machines require the use of a licence.
+
+However, you remain responsible for the accuracy of the data you provide to us, and OVHcloud cannot be held liable for any unauthorized use of a Windows system on your part.
+
+:::
+
+
+## Requirements
+
+- A Hosted Private Cloud service powered by VMware.
+- At least one virtual machine running a Windows operating system.
+- You must have activated the **Windows licences** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). See the "Windows Licence" section of our guide "[Introduction to the Hosted Private Cloud Control Panel](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/)" for more information.
+- Allow outgoing TCP connections on port 1688 from licensed VMs to kms.ovh.net in your firewall settings.
+
+## Instructions
+
+### Activate and monitor Windows licences directly from the OVHcloud Control Panel
+
+:::info
+This feature only applies if you want OVHcloud to licence your Windows VMs via SPLA.
+If you bring your own licence (BYOL), you do not need to activate anything in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+:::
+
+
+#### Check your Windows licence usage in the Control Panel
+
+1. Go to the <code className="action">Hosted Private Cloud</code> section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and click <code className="action">Managed VMware vSphere</code>.
+
+2. Select your service, then open the <code className="action">Datacenter</code> tab.
+
+Here, you will find:
+
+- The **total number of VMs** running in your datacenter.
+- The **number of Windows VMs** (requiring a licence).
+- The **number of declared Windows VMs** (licenced by OVHcloud).
+
+<img className="thumbnail" alt="Licence overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/spla-license-management/licence-visibility-EN-b.png" loading="lazy" />
+
+:::info
+Activating the licence in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) is only required if you want OVHcloud to provide a Windows SPLA licence for the VM.
+
+:::
+
+
+#### Understand the two Windows licence management modes
+
+There are two scenarios:
+
+- **Case 1: You bring your own Microsoft licence (BYOL):**
+    - No action required in the interface.
+
+- **Case 2: You want OVHcloud to licence the VM:**
+    - The VM licence must be activated in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) for it to be billed properly.
+
+#### Activate a Windows licence from the OVHcloud Control Panel
+
+1. In your `Datacenter`, go to the <code className="action">Virtual Machines</code> tab.
+2. Locate the VM that needs to be licenced.
+3. Click <code className="action">...</code> on the right, then click <code className="action">Activate licence</code>.
+
+    <img className="thumbnail" alt="Activate licence" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/spla-license-management/activate-licence-EN.png" loading="lazy" />
+
+4. Choose the appropriate licence from the dropdown menu.
+5. Click <code className="action">Activate</code> to confirm the action.
+
+    <img className="thumbnail" alt="Activate licence" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/spla-license-management/select-licence-EN-b.png" loading="lazy" />
+
+:::tip[Success]
+The VM is now declared and licenced by OVHcloud. It will appear in your billing and compliance tracking.
+
+:::
+
+
+When you install a Windows Server operating system, the product key – also known as a KMS (Key Management Service) key – may not be installed correctly. In such cases, the operating system has been installed with a 120-day trial key. Once this time period elapses, the operating system can no longer be used. 
+
+[This guide](/guides/bare-metal-cloud/dedicated-servers/windows-key/) will show you how to change the product key for your Windows Server environment.
+
+### Manage licences using the OVHcloud API
+
+If you prefer to automate or integrate Windows licence management into your workflows, you can use the [OVHcloud API](https://eu.api.ovh.com/) to list, assign, update or remove licences on your virtual machines.
+
+#### List virtual machines with a licence
+
+You can quickly check which virtual machines in your infrastructure are licenced via the OVHcloud API:
+
+<Api version="v1" section="/dedicatedCloud" method="GET" route={"/dedicatedCloud/\{serviceName\}/datacenter/\{datacenterId\}/vmLicensed"} />
+
+
+*Return example:*
+
+```json
+[
+    {
+        "vmId": 1074,
+        "name": "my-win2019-vm",
+        "guestOsFamily": "windows2019srv_64Guest",
+        "license": "windows 2019 Standard Core"
+    }
+]
+```
+
+#### Verify the licence of a virtual machine
+
+You can check the licence currently associated with one of your virtual machines via the OVHcloud API:
+
+<Api version="v1" section="/dedicatedCloud" method="GET" route={"/dedicatedCloud/\{serviceName\}/datacenter/\{datacenterId\}/vm/\{vmId\}"} />
+
+If no licence is attached to it, the `license` field value will be `null`.
+
+*Return example:*
+
+```json
+{
+    // ...
+    "guestOsFamily": "windows2019srv_64Guest",
+    "license": "windows 2019 Standard"
+}
+```
+
+#### Update the licence of a virtual machine
+
+You can update the licence associated with one of your virtual machines via the OVHcloud API:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/datacenter/\{datacenterId\}/vm/\{vmId\}/setLicense"} />
+
+
+:::info
+Virtual machines deployed from [VMware content libraries](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/) are automatically attached to a corresponding Windows licence.
+
+:::
+
+
+:::warning
+In order to avoid the incorrect allocation of a Windows licence on a virtual machine, the API call above will return an error in the case where the virtual machine has been configured for a different operating system from your vSphere interface. 
+
+You can resolve this by changing the VM settings or you can choose to ignore this error by passing the option `bypassGuestOsFamilyCheck`.
+
+:::
+
+
+#### Unlicence a virtual machine
+
+You can delete the licence associated with one of your virtual machines via the OVHcloud API:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/datacenter/\{datacenterId\}/vm/\{vmId\}/removeLicense"} />
+
+
+## Go further <a name="go-further"></a>
+ 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+ 
+Join our [community of users](https://community.ovhcloud.com/community/en).

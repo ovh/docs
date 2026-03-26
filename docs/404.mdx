@@ -1,0 +1,91 @@
+---
+title: Page Not Found
+pageType: custom
+---
+
+import { useLocation } from '@rspress/core/runtime';
+
+export const NotFound = () => {
+  const { pathname } = useLocation();
+  const currentLocale = pathname.split('/')[1] || 'fr';
+  
+  const messages = {
+    fr: {
+      title: '404 - Page non trouvée',
+      description: 'La page que vous recherchez n\'existe pas ou a été déplacée.',
+      helpfulLinks: 'Liens utiles',
+      searchHint: 'Utilisez la barre de recherche ci-dessus pour trouver ce que vous cherchez.',
+    },
+    en: {
+      title: '404 - Page Not Found',
+      description: 'The page you\'re looking for doesn\'t exist or has been moved.',
+      helpfulLinks: 'Helpful Links',
+      searchHint: 'Use the search bar above to find what you\'re looking for.',
+    },
+    de: {
+      title: '404 - Seite nicht gefunden',
+      description: 'Die gesuchte Seite existiert nicht oder wurde verschoben.',
+      helpfulLinks: 'Hilfreiche Links',
+      searchHint: 'Verwenden Sie die Suchleiste oben, um zu finden, was Sie suchen.',
+    },
+    es: {
+      title: '404 - Página no encontrada',
+      description: 'La página que buscas no existe o ha sido movida.',
+      helpfulLinks: 'Enlaces útiles',
+      searchHint: 'Use la barra de búsqueda de arriba para encontrar lo que busca.',
+    },
+    it: {
+      title: '404 - Pagina non trovata',
+      description: 'La pagina che stai cercando non esiste o è stata spostata.',
+      helpfulLinks: 'Link utili',
+      searchHint: 'Usa la barra di ricerca sopra per trovare quello che cerchi.',
+    },
+    pl: {
+      title: '404 - Strona nie znaleziona',
+      description: 'Strona, której szukasz, nie istnieje lub została przeniesiona.',
+      helpfulLinks: 'Przydatne linki',
+      searchHint: 'Użyj paska wyszukiwania powyżej, aby znaleźć to, czego szukasz.',
+    },
+    pt: {
+      title: '404 - Página não encontrada',
+      description: 'A página que procura não existe ou foi movida.',
+      helpfulLinks: 'Links úteis',
+      searchHint: 'Use a barra de pesquisa acima para encontrar o que procura.',
+    },
+    'fr-ca': {
+      title: '404 - Page non trouvée',
+      description: 'La page que vous recherchez n\'existe pas ou a été déplacée.',
+      helpfulLinks: 'Liens utiles',
+      searchHint: 'Utilisez la barre de recherche ci-dessus pour trouver ce que vous cherchez.',
+    },
+  };
+
+  const msg = messages[currentLocale] || messages.en;
+
+  return (
+    <div style={{ textAlign: 'center', padding: '4rem 2rem', maxWidth: '600px', margin: '0 auto' }}>
+      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{msg.title}</h1>
+      <p style={{ fontSize: '1.1rem', color: 'var(--rp-c-text-2)', marginBottom: '2rem' }}>
+        {msg.description}
+      </p>
+      
+      <h2 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>{msg.helpfulLinks}</h2>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
+        <a href="/fr/">Français</a>
+        <a href="/en/">English</a>
+        <a href="/de/">Deutsch</a>
+        <a href="/es/">Español</a>
+        <a href="/it/">Italiano</a>
+        <a href="/pl/">Polski</a>
+        <a href="/pt/">Português</a>
+        <a href="/fr-ca/">Français (Canada)</a>
+      </div>
+
+      <p style={{ marginTop: '2rem', color: 'var(--rp-c-text-3)' }}>
+        {msg.searchHint}
+      </p>
+    </div>
+  );
+};
+
+<NotFound />

@@ -1,0 +1,138 @@
+---
+title: Añadir un registro DNS de tipo TXT a un dominio
+description: Descubra cómo añadir un registro DNS de tipo TXT a una zona DNS gestionada en OVHcloud para un dominio
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+¿Necesita validar un proceso de verificación o seguridad para su dominio (asociación de servicios mediante un token de validación, clave de verificación, etc.) utilizando su zona DNS? ¿Quiere añadir un valor personalizado en formato de texto a la zona DNS de su dominio?
+Para ello, deberá crear un registro DNS de tipo TXT en la zona DNS activa del dominio.
+
+**Descubra cómo añadir un registro DNS de tipo TXT a una zona DNS gestionada en OVHcloud para un dominio.**
+
+:::info
+Para modificar o eliminar un registro DNS de tipo TXT de una zona DNS de OVHcloud, siga nuestra guía "[Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)".
+
+:::
+
+
+## Requisitos
+
+- Tener un [dominio](https://www.ovhcloud.com/es-es/domains/).
+- Tener una zona DNS asociada al dominio en OVHcloud.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Zonas DNS</code> > Seleccione su nombre de dominio
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## Procedimiento
+
+:::warning
+Añadir, modificar o eliminar registros DNS en una zona DNS activa es una operación delicada. En caso de duda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
+
+:::
+
+
+### Añadir un registro DNS de tipo TXT a un dominio
+
+Haga clic en las pestañas de abajo para ver sucesivamente cada uno de los **5** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone) y seleccione el dominio correspondiente.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en el botón <code className="action">Añadir un registro</code>.
+  </Tab>
+  <Tab label="Paso 3">
+    En la ventana que se abre, seleccione el registro extendido de tipo <code className="action">TXT</code>.
+  </Tab>
+  <Tab label="Paso 4">
+    Introduzca la cadena TXT que quiera añadir en el campo `Valor *` (por ejemplo: `AbCdE-Value-of-TXT-fGhIjK`) y haga clic en <code className="action">Siguiente</code>.
+  </Tab>
+  <Tab label="Paso 5">
+    Revise el resumen y haga clic en <code className="action">Aceptar</code>. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Haga clic aquí para obtener más información.</summary>
+
+
+Consulte nuestras guías detalladas:
+
+- [Todo sobre la zona DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Todo sobre los registros DNS](/guides/web-cloud/domains/dns-zone-records/)
+- [Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+</details>
+
+
+### Añadir un registro DNS de tipo TXT para el subdominio de un dominio
+
+Haga clic en las pestañas de abajo para ver sucesivamente cada uno de los **5** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Zonas DNS](https://manager.eu.ovhcloud.com/#/web/zone) y seleccione el dominio correspondiente.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en el botón <code className="action">Añadir un registro</code>.
+  </Tab>
+  <Tab label="Paso 3">
+    En la ventana que se abre, seleccione el registro extendido de tipo <code className="action">TXT</code>.
+  </Tab>
+  <Tab label="Paso 4">
+    Introduzca en el campo `Subdominio` el subdominio correspondiente (por ejemplo: `www` para el subdominio `www.domain.tld`), y en el campo `Valor *`, la cadena TXT que quiera añadir (por ejemplo: `AbCdE-Value-of-TXT-fGhIjK`). Haga clic en <code className="action">Siguiente</code>.
+  </Tab>
+  <Tab label="Paso 5">
+    Revise el resumen y haga clic en <code className="action">Aceptar</code>. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Haga clic aquí para obtener más información.</summary>
+
+
+Consulte nuestras guías detalladas:
+
+- [Todo sobre la zona DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Todo sobre los registros DNS](/guides/web-cloud/domains/dns-zone-records/)
+- [¿Cómo crear un subdominio?](/guides/web-cloud/domains/domain-create-subdomains/)
+- [Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+</details>
+
+
+## Más información
+
+[Todo sobre la zona DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+
+[Todo sobre los registros DNS](/guides/web-cloud/domains/dns-zone-records/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+ 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+ 
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

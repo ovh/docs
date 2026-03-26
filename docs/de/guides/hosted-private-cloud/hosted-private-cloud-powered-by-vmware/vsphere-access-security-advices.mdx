@@ -1,0 +1,68 @@
+---
+title: vSphere Web Client sichern
+description: Hier erfahren Sie, wie Sie den Zugang zu Ihrem vSphere Web Client sichern.
+lastUpdated: 2020-06-30
+---
+
+## Ziel
+
+Um die Integrität Ihrer Infrastruktur zu gewährleisten, empfehlen wir, den Zugriff darauf einzuschränken. Hierzu stehen verschiedene Methoden zur Verfügung.
+
+**In dieser Anleitung erhalten Sie einige Tipps, wie Sie den Zugang zu Ihrem vSphere Web Client schnell und einfach sichern können.**
+
+## Voraussetzungen
+
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
+
+## In der praktischen Anwendung
+
+### Zugriff auf bestimmte IP-Adressen einschränken
+
+Unser erster Tipp ist die IP-basierte Zugangsbeschränkung. Wir empfehlen Ihnen, immer mit einem Whitelisting-System zu arbeiten. Hierbei wird grundsätzlich allen IP-Adressen der Zugriff verwehrt und Sie können manuell die Adressen hinzufügen, denen Sie Zugriff auf Ihre Infrastruktur gewähren möchten.
+
+Sie können die Einstellungen direkt in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) vornehmen. Gehen Sie dazu in Ihrem Private Cloud Bereich auf <code className="action">Sicherheit</code>. Es wird eine Tabelle angezeigt, die alle gesperrten und freigegebenen IP-Adressen auflistet. Um eine weitere IP hinzuzufügen, klicken Sie rechts auf <code className="action">IP-Adressen hinzufügen</code>.
+
+<img className="thumbnail" alt="IPs hinzufügen" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/adding_ip.png" loading="lazy" />
+
+### Spezifische Nutzer anlegen
+
+Wir empfehlen, personalisierte Zugänge für diejenigen Nutzer einzurichten, die Zugriff auf Ihre Infrastruktur erhalten sollen. Diese Einstellungen können Sie ebenfalls über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) vornehmen. Klicken Sie dazu bitte auf den Tab <code className="action">Benutzer</code>. Um einen neuen Nutzer hinzuzufügen, klicken Sie rechts auf den Button: <code className="action">Benutzer erstellen</code>.
+
+<img className="thumbnail" alt="Nutzer" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/users.png" loading="lazy" />
+
+Bei der Erstellung eines neuen Nutzers muss ein Passwort angelegt werden.
+
+:::info
+Damit Ihre Daten optimal geschützt sind, sollte Ihr Passwort folgende Anforderungen erfüllen:
+
+- Das Passwort muss mindestens 8 Zeichen umfassen.
+- Es muss mindestens 3 verschiedene Zeichentypen enthalten.
+- Es darf kein Wort aus dem Wörterbuch sein.
+- Es darf keine personenbezogenen Daten (Vorname, Nachname oder Geburtsdatum) enthalten.
+- Es darf nicht für mehrere Nutzerzugänge verwendet werden.
+- Es muss in einem Passwort-Manager gespeichert sein.
+- Es muss alle drei Monate geändert werden.
+- Es muss sich von den vorherigen Passwörtern unterscheiden.
+
+:::
+
+
+Anschließend können Sie die Rechte für jeden Nutzer verwalten, indem Sie in der jeweiligen Nutzerzeile rechts auf <code className="action">...</code> klicken:
+
+<img className="thumbnail" alt="Nutzereinstellungen" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/users_edit.png" loading="lazy" />
+
+### Sitzungstimeout einrichten
+
+Wenn der Nutzer den Client nicht mehr verwendet, sollte die Sitzung entsprechend geschlossen werden. Es ist möglich, eine maximale Sitzungsdauer festzulegen, um die Verbindungszeit der Nutzer einzuschränken.
+
+Diese Einstellungen können Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) vornehmen. Gehen Sie hierzu in Ihrem Private Cloud Bereich auf <code className="action">Sicherheit</code>. Klicken Sie dann rechts auf den Button <code className="action">Sitzungstimeout ändern</code>.
+
+<img className="thumbnail" alt="Sitzungstimeout" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/security-expiration.png" loading="lazy" />
+
+Geben Sie ein, nach wie vielen Minuten eine Sitzung beendet werden soll.
+
+<img className="thumbnail" alt="Sitzungstimeout" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/expiration.png" loading="lazy" />
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

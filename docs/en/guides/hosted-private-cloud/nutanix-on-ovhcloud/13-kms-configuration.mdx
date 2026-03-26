@@ -1,0 +1,101 @@
+---
+title: KMS configuration with Nutanix on OVHcloud
+description: Learn how to configure OVHcloud Key Management System (KMS) with Nutanix to secure your data at rest
+lastUpdated: 2025-02-14
+---
+
+## Objective
+
+This guide explains how to configure the **OVHcloud Key Management System (KMS)** with **Nutanix on OVHcloud**.
+
+Nutanix provides two options for securing data at rest:
+
+- **Self-Encrypted Drives (SEDs)**
+- **Software-only encryption** which offers key-based access management through either the cluster's native key manager or an **external key management system (KMS)**.
+
+By following this guide, you will learn how to leverage **Nutanix's data-at-rest encryption** capabilities using the **OVHcloud KMS**.
+
+## Requirements
+
+- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A **valid OVHcloud KMS key** in your OVHcloud account.
+    - Find more information in our guide [Getting started with OVHcloud Key Management Service (KMS)](/guides/manage-and-operate/kms/quick-start/)
+- A [Nutanix on OVHcloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/nutanix/) cluster in your OVHcloud account.
+    - The cluster must be **compatible with Data-At-Rest Encryption**. Please confirm this with your OVHcloud sales representative or with [the support teams](https://help.ovhcloud.com/csm?id=csm_get_help).
+    - A **Nutanix license** that supports the **Data-At-Rest Encryption** feature.
+- Access to the Nutanix cluster via **Prism Central/Prism Element**.
+- Compliance with Nutanix’s feature guidelines:
+    - [Nutanix Security Guide](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v7_0:wc-security-data-encryption-wc-c.html)
+    - [Nutanix KMS Compatibility Matrix](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/software?partnerName=OVHCloud&solutionType=KMS%20%28Key%20Management%20Solutions%29&componentVersion=External%20Key%20Managers&hypervisor=all&validationType=all)
+
+## Instructions
+
+### Step 1 - Access Prism Central and Prism Element
+
+1\. Log in to Prism Central.
+
+2\. Navigate to <code className="action">Prism Element</code>.
+
+<img className="thumbnail" alt="Prism element" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/01-kms-configuration.png" loading="lazy" />
+
+3\. Go to <code className="action">Settings</code>.
+
+<img className="thumbnail" alt="Prism element settings" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/02-kms-configuration.png" loading="lazy" />
+
+### Step 2 - Configure Data-at-Rest Encryption
+
+1\. Scroll to <code className="action">Data-at-Rest Encryption</code> in the settings menu.
+
+2\. Click on <code className="action">Edit Configuration</code>.
+
+<img className="thumbnail" alt="Data at rest encryption" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/03-kms-configuration.png" loading="lazy" />
+
+3\. Select the <code className="action">Encryption Type</code> and <code className="action">KMS Type</code>.
+
+<img className="thumbnail" alt="Encryption type " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/04-kms-configuration.png" loading="lazy" />
+
+<img className="thumbnail" alt="KMS type" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/05-kms-configuration.png" loading="lazy" />
+
+4\. Enter your configuration details to generate the **Certificate Signing Request (CSR)**.
+
+<img className="thumbnail" alt="configuration details" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/06-kms-configuration.png" loading="lazy" />
+
+### Step 3 - Add and manage Certificates
+
+1\. Add your **Key Management Server (KMS)**.
+
+<img className="thumbnail" alt="KMS" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/07-kms-configuration.png" loading="lazy" />
+
+2\. Click on <code className="action">Manage Certificates</code>.
+
+<img className="thumbnail" alt="KMS" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/08-kms-configuration.png" loading="lazy" />
+
+3\. Upload your `Certificate Authority (CA)`.
+
+4\. Once the CA is uploaded, go back to <code className="action">Key Management Server</code> and click <code className="action">Manage Certificates</code>.
+
+<img className="thumbnail" alt="KMS" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/09-kms-configuration.png" loading="lazy" />
+
+### Step 4 - Test and Enable Encryption
+
+1\. **Test all nodes** in the cluster.
+
+<img className="thumbnail" alt="nodes" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/10-kms-configuration.png" loading="lazy" />
+
+2\. If the test is successful, you can now enable encryption for your Nutanix cluster.
+
+<img className="thumbnail" alt="testing successful" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/11-kms-configuration.png" loading="lazy" />
+
+3\. You can enable both **software encryption** and **Self-Encrypting Drives (SEDs)**.
+
+<img className="thumbnail" alt="SED" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/13-kms-configuration/12-kms-configuration.png" loading="lazy" />
+
+## Go Further
+
+- [Nutanix Security Guide for Data-at-Rest Encryption](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v7_0:wc-security-data-encryption-wc-c.html)
+- [Getting started with OVHcloud Key Management Service (KMS)](/guides/manage-and-operate/kms/quick-start/)
+- [Nutanix Compatibility Matrix](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/software?partnerName=OVHCloud&solutionType=KMS%20%28Key%20Management%20Solutions%29&componentVersion=External%20Key%20Managers&hypervisor=all&validationType=all)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

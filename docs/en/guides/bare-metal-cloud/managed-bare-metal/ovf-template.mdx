@@ -1,0 +1,113 @@
+---
+title: Deploy an OVF Linux, Windows Server and Windows SQL Server template
+description: Find out how to deploy a Linux, Windows Server or Windows SQL Server template
+lastUpdated: 2020-11-18
+---
+
+## Objective
+
+OVHcloud offers Linux, Windows Server and Windows SQL server templates (in OVF format) that you can deploy directly from your web client (HTML 5).
+
+Windows VMs deployed from a template automatically use the SPLA licences provided by OVHcloud. Deploying a Windows VM will therefore automatically trigger additional billing.
+
+**This guide will show you where you can find the source files, and how to deploy them.**
+
+:::info
+You can find the prices of the images offered by OVHcloud on this [page](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/).
+
+:::
+
+
+## Requirements
+
+- Web client access (HTML5)
+- [active Windows licences](/guides/bare-metal-cloud/managed-bare-metal/manager-ovhcloud#windows-licence-tab/) (activate via the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the <code className="action">Windows licence</code> tab for the datacentre)
+
+## Instructions
+
+### Find the URL of the OVF template
+
+In your web browser, go to your Managed Bare Metal homepage, and click on <code className="action">OVH Templates</code>.
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/gatewayssl.png" loading="lazy" />
+
+In the `OVH Templates` screen that opens, you will see the details of the Linux, Windows and SQL templates available. 
+
+Select the template you want. A window will open and offer you the links that you will use to deploy the template, depending on your vSphere version.
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/copylink.png" loading="lazy" />
+
+### Deploy the OVF template
+
+Once you have logged into your vSphere Web Client, go to the <code className="action">Hosts and clusters</code> page, right-click on your datacentre and click <code className="action">Deploy OVF template...</code>:
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/01selectdeploy.png" loading="lazy" />
+
+The context menu will open, and you can start configuring how the template is deployed. The first step is to add the OVH template URL:
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/02puturl.png" loading="lazy" />
+
+In the next step, you can choose the datacentre:
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/03selectdatacenter.png" loading="lazy" />
+
+Now you can choose the cluster in which the virtual machine will be deployed:
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/04selectcluster.png" loading="lazy" />
+
+This page lists all of the template’s details, including its default password. For security reasons, it is important that you change your password as soon as you log in for the first time:
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/05detailstemplate.png" loading="lazy" />
+
+Select the datastore in which the virtual machine will be located, and the format of the disk:
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/06selectdatastore.png" loading="lazy" />
+
+You now need to select the network that will be used. 
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/07selectnetwork.png" loading="lazy" />
+
+The configuration process is nearly complete, and you will see a summary of the configuration requested:
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/08resume.png" loading="lazy" />
+
+When you click on <code className="action">Finish</code>, a task is created, and you can use it to track the progress of the deployment.
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/09startdeploy.png" loading="lazy" />
+
+Once the deployment is complete, you can close this window.
+
+You will now find the new virtual machine in your inventory.
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/10inventory.png" loading="lazy" />
+
+### Finalising Setup for SQL Server
+
+Start your newly deployed virtual machine and open the console.
+
+Log in to Windows and enter your SQL instance name, password and character set in the window provided.
+
+<img className="thumbnail" alt="Name of photo" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/sqlinformations.png" loading="lazy" />
+
+:::info
+We recommend setting a password that meets these criteria:
+
+* Must contain at least eight characters.
+* Must contain at least three types of characters (uppercase, lowercase, numbers, special characters).
+* Not to be taken from the dictionary.
+* Do not include personal information (e.g. your first name, surname or date of birth).
+
+:::
+
+
+Once you have entered this information, click <code className="action">Ok</code>.
+
+A window will open showing the deployment. At the end of the installation, a final window will open, informing you that the deployment has been successful.
+
+Click <code className="action">OK</code> again to complete the installation and restart your virtual machine.
+
+Following this reboot, you can start using your virtual machine.
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

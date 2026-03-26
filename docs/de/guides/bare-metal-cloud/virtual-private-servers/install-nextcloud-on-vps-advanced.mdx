@@ -1,0 +1,232 @@
+---
+title: How to install Nextcloud on an OVHcloud VPS with Docker and Traefik
+description: Find out how to deploy Nextcloud on an OVHcloud VPS with automatic HTTPS via Traefik, MariaDB and Redis
+lastUpdated: 2026-02-04
+---
+
+## Objective
+
+This guide is aimed at **intermediate to advanced users** wishing to deploy Nextcloud in a more robust architecture, closer to a production environment.
+
+At the end of this guide, you will have:
+
+- A Nextcloud instance accessible via **HTTPS**
+- Automatic **Let’s Encrypt** certificates
+- A persistent Docker stack (Nextcloud + MariaDB + Redis)
+- A **Traefik v2** reverse-proxy
+
+### Target architecture (simplified)
+
+- OVHcloud VPS (Ubuntu)
+- Docker and Docker Compose
+- Traefik v2 (HTTPS reverse-proxy)
+- Nextcloud (Apache)
+- MariaDB (database)
+- Redis (cache and locks)
+
+## Requirements
+
+- An [OVHcloud VPS](https://www.ovhcloud.com/en-gb/vps/) offer under **Ubuntu 22.04 LTS**
+- Access via SSH with sudo rights
+- A domain name (e.g., `cloud.example.com`) pointing to the VPS IP
+- Ports **80** and **443** must be open
+- A valid email address for Let’s Encrypt
+
+## Instructions
+
+**Table of contents:**
+
+- [Step 1: Prepare the VPS](#step1)
+- [Step 2: Install Docker](#step2)
+- [Step 3: Deploy Traefik](#step3)
+- [Step 4: Deploy Nextcloud](#step4)
+- [Step 5: Checks and post-installation](#step5)
+
+### Step 1: Preparing the VPS <a name="step1"></a>
+
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y ca-certificates curl ufw
+```
+
+Allow the required ports:
+
+```bash
+sudo ufw allow OpenSSH
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw enable
+```
+
+### Step 2: Installing Docker <a name="step2"></a>
+
+```bash
+curl -fsSL https://get.docker.com | sudo sh
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+### Step 3: Deploying Traefik <a name="step3"></a>
+
+Create the directory structure:
+
+```bash
+sudo mkdir -p /opt/stack/traefik
+cd /opt/stack/traefik
+```
+
+Create the `traefik.yml` file:
+
+```yaml
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: admin@example.com
+      Storage: /letsencrypt/acme.json
+      httpChallenge:
+        entryPoint: web
+
+providers:
+  docker:
+    exposedByDefault: false
+```
+
+Create the Traefik `docker-compose.yml`:
+
+```yaml
+services:
+  traefik:
+    image: traefik:v2.11
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./letsencrypt:/letsencrypt
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+```
+
+```bash
+docker network create proxy
+docker compose up -d
+```
+
+### Step 4: Deploying Nextcloud <a name="step4"></a>
+
+```bash
+sudo mkdir -p /opt/stack/nextcloud
+cd /opt/stack/nextcloud
+```
+
+Create a `.env` file:
+
+```console
+NC_DOMAIN=cloud.example.com
+NC_ADMIN_USER=admin
+NC_ADMIN_PASSWORD=change-admin-password
+DB_NAME=nextcloud
+DB_USER=nextcloud
+DB_PASSWORD=change-db-password
+DB_ROOT_PASSWORD=change-root-password
+```
+
+Create the Nextcloud `docker-compose.yml`:
+
+```yaml
+services:
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - db_data:/var/lib/MySQL
+
+  Redis:
+    image: Redis:7-alpine
+    restart: unless-stopped
+
+  app:
+    image: nextcloud:apache
+    restart: unless-stopped
+    depends_on:
+      - db
+      - Redis
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      REDIS_HOST: Redis
+      NEXTCLOUD_ADMIN_USER: ${NC_ADMIN_USER}
+      NEXTCLOUD_ADMIN_PASSWORD: ${NC_ADMIN_PASSWORD}
+      NEXTCLOUD_TRUSTED_DOMAINS: ${NC_DOMAIN}
+    volumes:
+      - nextcloud_html:/var/www/html
+      - nextcloud_data:/var/www/html/data
+    networks:
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.nextcloud.rule=Host(`${NC_DOMAIN}`)
+      - traefik.http.routers.nextcloud.entrypoints=websecure
+      - traefik.http.routers.nextcloud.tls.certresolver=letsencrypt
+
+volumes:
+  db_data:
+  nextcloud_html:
+  nextcloud_data:
+
+networks:
+  proxy:
+    external: true
+```
+
+```bash
+docker compose up -d
+```
+
+### Step 5: Post-installation checks <a name="step5"></a>
+
+- Access [https://cloud.example.com](https://cloud.example.com)
+- Check the HTTPS certificate
+- Enable **Cron** mode in the Nextcloud settings
+- Check Redis in the administration interface
+
+### Conclusion
+
+Traefik is **not mandatory**, but it is an **excellent practice** for:
+
+- Managing multiple HTTPS services on the same VPS
+- Automating Let’s Encrypt certificates
+- Centralising routing and security
+
+For a first deployment or personal use, the **[guide for beginner users](/guides/bare-metal-cloud/virtual-private-servers/install-nextcloud-on-vps-beginner)** is sufficient.
+
+For advanced or multi-service use, this guide is recommended.
+
+## Go further
+
+[Traefik documentation](https://doc.traefik.io/traefik/)
+
+[Nextcloud documentation](https://docs.nextcloud.com)
+
+[Secure an OVHcloud VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

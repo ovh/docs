@@ -1,0 +1,159 @@
+---
+title: Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem
+description: Dowiedz się, jak zmienić parametry powiązania domeny/subdomeny zadeklarowanej wcześniej w Twojej usłudze hostingu
+lastUpdated: 2025-11-05
+---
+
+## Wprowadzenie
+
+W przypadku korzystania z hostingu lub aktualizacji strony WWW może być konieczna zmiana ustawień domeny lub subdomeny, która jest już powiązana z Twoim hostingiem.
+
+:::info
+Ten przewodnik wyjaśnia tylko, jak zmienić nazwę domeny lub subdomenę, która została już zadeklarowana na hostingu OVHcloud. Jeśli chcesz powiązać nową domenę/subdomenę z Twoim hostingiem, zapoznaj się z naszym przewodnikiem "[Instalacja kilku stron WWW na jednym hostingu](/guides/web-cloud/web-hosting/multisites-configure-multisite/)".
+
+:::
+
+
+**Dowiedz się, jak zmienić parametry powiązania domeny/subdomeny zadeklarowanej wcześniej w Twojej usłudze hostingu.**
+
+## Wymagania początkowe
+
+- Posiadanie oferty [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie jednej lub kilku [domen](https://www.ovhcloud.com/pl/domains/).
+- Wystarczające uprawnienia dotyczące wszystkich usług. Więcej informacji znajdziesz w przewodniku "[Zarządzanie kontaktami swoich usług](/guides/account-and-service-management/account-information/managing-contacts/)".
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Wybierz hosting WWW
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## W praktyce
+
+:::warning
+Zmiana parametrów przypisania domeny lub subdomeny może, w przypadku błędnej operacji, spowodować przerwę w dostępie do Twoich usług (Twojej strony WWW). W razie wątpliwości co do konieczności modyfikacji skontaktuj się z wyspecjalizowanym dostawcą
+
+:::
+
+
+Aby zmienić parametry powiązania domeny lub subdomeny, która została już zadeklarowana w Twoim hostingu, należy wykonać następujące czynności:
+
+1. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+2. Kliknij zakładkę <code className="action">Web Cloud</code>.
+3. W lewej kolumnie kliknij menu <code className="action">Hosting</code>.
+4. Wybierz odpowiedni hosting.
+5. Na stronie, która się wyświetli kliknij zakładkę <code className="action">MultiSite</code>.
+6. W tabeli, która wyświetla się pod zakładką i po prawej stronie nazwy odpowiedniej domeny/subdomeny, kliknij przycisk <code className="action">...</code>, a następnie <code className="action">Zmień domenę</code>.
+
+<img className="thumbnail" alt="Modify domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png" loading="lazy" />
+
+Pojawi się następujące okno:
+
+<img className="thumbnail" alt="Modify domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png" loading="lazy" />
+
+W dalszej części tego przewodnika znajdziesz opis każdego z parametrów dostępnych w powyższym oknie. Po zapoznaniu się z poniższymi opisami i wprowadzeniu zmian kliknij przycisk <code className="action">Dalej</code> na dole po prawej stronie okna, a następnie przejdź do [etap 2](#step2).
+
+### Etap 1 - Opis parametrów możliwych do edycji <a name="step1"></a>
+
+:::info
+Formularz <code className="action">Nazwa domeny</code> nie może zostać zmodyfikowany, ponieważ jest to zmiana w ustawieniach domeny powiązanej z hostingiem. Jeśli chcesz powiązać nową domenę/subdomenę z Twoim hostingiem, zapoznaj się z naszym przewodnikiem "[Instalacja kilku stron WWW na jednym hostingu](/guides/web-cloud/web-hosting/multisites-configure-multisite/)".
+
+:::
+
+
+#### Zmień "katalog główny"
+
+:::warning
+**Przykład specjalny: konfiguracja za pomocą Git**
+
+Aby zmodyfikować <code className="action">Katalog główny</code> zadeklarowany dla Twojej domeny i jeśli istnieje konfiguracja z Git dla tej samej domeny, najpierw usuń tę konfigurację.
+
+Jeśli istnieje konfiguracja z Git, pod formularzem pojawi się komunikat:
+
+<img className="thumbnail" alt="Modify domain associed with git" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png" loading="lazy" />
+
+Aby usunąć konfigurację Git domeny/subdomeny powiązanej z Twoim hostingiem, zapoznaj się z naszym przewodnikiem "[Konfiguracja i korzystanie z Git na hostingu OVHcloud](/guides/web-cloud/web-hosting/git-integration-webhosting/)".
+
+:::
+
+
+Formularz <code className="action">Katalog główny</code> wskazuje nazwę katalogu zawierającego elementy, które wyświetlają się wraz z nazwą domeny. Może to być na przykład folder zawierający pliki Twojej strony WWW.
+
+W trakcie korzystania z usług może być konieczna zmiana <code className="action">Katalog główny</code> zadeklarowanego dla Twojej domeny. Może się to zdarzyć, gdy na przykład:
+
+- Stworzyłeś nową stronę WWW w nowym katalogu dostępnym w przestrzeni dyskowej FTP Twojego hostingu.
+- Chcesz przekierować domenę do pustego katalogu, a następnie umieścić na niej nową stronę WWW.
+- Itp.
+
+W związku z tym w formularzu należy zastąpić wstępnie wypełnioną nazwę folderu nazwą wybranego nowego folderu.
+
+:::tip[Success]
+Jeśli wpiszesz nieistniejącą nazwę katalogu z przestrzeni dyskowej FTP Twojego hostingu, zostanie ona automatycznie utworzona przez nasze roboty w Twojej przestrzeni dyskowej FTP.
+
+:::
+
+
+#### Więcej dostępnych opcji
+
+##### Opcja "Włącz CDN"
+
+Aby skorzystać z tej opcji, należy najpierw wykupić ofertę CDN OVHcloud lub wykupić hosting Performance.
+
+Zaznacz/usuń zaznaczenie tego pola, aby włączyć/wyłączyć opcję GeoCache dla Twojej domeny lub subdomeny.
+
+Więcej informacji na temat opcji/ofert CDN znajdziesz w naszej dokumentacji "[Przewodnik dotyczący usługi CDN na hostingu www](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/)".
+
+##### Opcja "Geolokalizacja IP"
+
+Ta opcja jest używana głównie w przypadku stron WWW, których docelowi odbiorcy znajdują się za granicą. Pomaga to ulepszyć pozycjonowanie SEO strony internetowej w wybranym kraju.
+
+Więcej informacji na temat tej opcji znajdziesz w naszej dokumentacji "[Geolokalizacja strony WWW w danym kraju](/guides/web-cloud/web-hosting/multisites-geolocation/)".
+
+##### Opcja "Włącz firewall"
+
+Ta opcja pozwala na filtrowanie zapytań przychodzących w celu ochrony hostingu przed najczęstszymi atakami.
+
+Więcej informacji na temat tej opcji znajdziesz w naszej dokumentacji "[Aktywacja zapory systemowej](/guides/web-cloud/web-hosting/multisites-activating-application-firewall/)".
+
+##### Opcja "Rozdzielone logi"
+
+Zaznacz/usuń zaznaczenie tej opcji tylko wtedy, gdy chcesz oddzielić logi Twojej domeny od innych domen zadeklarowanych równolegle na Twoim hostingu.
+
+Dowiedz się więcej o tej opcji na naszej [stronie poświęconej szczegółowym statystykom](https://www.ovhcloud.com/pl/web-hosting/uc-website-traffic-analysis/).
+
+Po wprowadzeniu zmian kliknij przycisk <code className="action">Dalej</code> na dole po prawej stronie okna, aby przejść do [etap 2](#step2).
+
+### Etap 2 - Podsumowanie zmian <a name="step2"></a>
+
+Po kliknięciu przycisku <code className="action">Dalej</code> znajdziesz podsumowanie ustawień, które zamierzasz zastosować do Twojej domeny:
+
+<img className="thumbnail" alt="Modify domain resume" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png" loading="lazy" />
+
+Jeśli wszystkie parametry są skonfigurowane zgodnie z Twoimi potrzebami, kliknij przycisk <code className="action">Zatwierdź</code>.
+
+W zależności od wybranych opcji wprowadzenie zmian może potrwać od kilku minut do kilku godzin.
+
+Jeśli w przypadku opcji **CDN**, **Geolokalizacja IP** i **Rozdzielone logi** nie zostaną wprowadzone zmiany po 24 godzinach, zapoznaj się z przewodnikami (i stronami) dla wszystkich opcji opisanych w [etap 1](#step1), aby upewnić się, że wszystkie wymagane warunki zostały spełnione.
+
+## Sprawdź również
+
+[Instalacja kilku stron WWW na jednym hostingu](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+
+[Zarządzanie certyfikatem SSL na hostingu](/guides/web-cloud/web-hosting/ssl-on-webhosting/).
+
+[Przewodnik dotyczący usługi CDN na hostingu www](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/).
+
+[Geolokalizacja strony WWW w danym kraju](/guides/web-cloud/web-hosting/multisites-geolocation/).
+
+[Aktywacja zapory systemowej](/guides/web-cloud/web-hosting/multisites-activating-application-firewall/).
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

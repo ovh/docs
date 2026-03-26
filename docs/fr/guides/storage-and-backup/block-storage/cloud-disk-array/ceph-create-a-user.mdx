@@ -1,0 +1,96 @@
+---
+title: Cloud Disk Array - Comment créer des utilisateurs
+description: Découvrez comment créer un nouvel utilisateur Cloud Disk Array
+lastUpdated: 2025-04-18
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+Ce guide vous montre comment créer un nouvel utilisateur Cloud Disk Array, en utilisant l'espace client OVHcloud ou l'API OVHcloud.
+
+## Prérequis
+
+- Une solution [Cloud Disk Array](https://www.ovhcloud.com/fr/storage-solutions/cloud-disk-array/)
+
+{/* CP-NAV-START:storage-cloud-disk-array */}
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Cloud Disk Array](https://manager.eu.ovhcloud.com/#/dedicated/cda)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">Cloud Disk Array</code> > Sélectionnez votre service
+
+---
+{/* CP-NAV-END:storage-cloud-disk-array */}
+
+## En pratique
+
+### Depuis l'espace client OVHcloud
+
+:::info
+L'utilisation de l'espace client OVHcloud est le moyen le plus simple de créer un utilisateur.
+
+:::
+
+
+Sur la page de votre service Cloud Disk Array, accédez à l'onglet <code className="action">Users</code>.
+
+<img className="thumbnail" alt="Ceph users" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-create-a-user/create_a_user_1.png" loading="lazy" />
+
+Entrez un nom d'utilisateur.
+
+:::warning
+Votre nom d'utilisateur doit contenir au moins trois caractères.
+
+:::
+
+
+<img className="thumbnail" alt="Ceph user creation" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-create-a-user/create_a_user_2.png" loading="lazy" />
+
+L'utilisateur est alors créé.
+
+<img className="thumbnail" alt="Ceph user creation" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-create-a-user/create_a_user_3.png" loading="lazy" />
+
+### Depuis l'API OVHcloud
+
+:::tip[Success]
+Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) ».
+
+:::
+
+
+Vous pouvez créer un utilisateur en utilisant cette route API :
+
+<Api version="v1" section="/dedicated/ceph" method="POST" route={"/dedicated/ceph/\{serviceName\}/user"} />
+
+
+`serviceName` est le fsid de votre cluster.
+
+Vous pouvez également vérifier la création des utilisateurs en dressant une liste des utilisateurs :
+
+<Api version="v1" section="/dedicated/ceph" method="GET" route={"/dedicated/ceph/\{serviceName\}/user"} />
+
+```bash
+GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/user
+[
+  {
+    mdsCaps: ""
+    monCaps: "allow r"
+    serviceName: "98d166d8-7c88-47b7-9cb6-63acd5a59c15"
+    name: "myuser"
+    osdCaps: "allow class-read object_prefix rbd_children"
+    key: "AQA9KpdXoBrDNhAAFCM7m/XOtmWh3LMSNlHVqw=="
+  }
+]
+```
+
+## Aller plus loin
+
+Rendez-vous sur notre chaîne Discord dédiée : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

@@ -1,0 +1,59 @@
+---
+title: Déterminer si la fonctionnalité des MAC virtuelles est supportée sur un serveur dédié
+description: "Découvrez comment déterminer si la fonctionalité des MAC virtuelles est supportée sur un serveur dédié via l'API OVHcloud"
+lastUpdated: 2025-04-28
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+Afin d'utiliser la fonctionnalité des MAC virtuelles (VMAC) sur un serveur dédié, vous devez tout d'abord déterminer si ce serveur supporte cette fonctionnalité.
+
+Le support de cette fonctionalité est un pré-requis de toutes les actions concernant les MAC virtuelles.
+
+**Découvrez comment vérifier si votre serveur dédié supporte la fonctionnalité des MAC virtuelles.**
+
+## Prérequis
+
+* Posséder [un serveur dédié](https://www.ovhcloud.com/fr/bare-metal/).
+* Être connecté à l'[API OVHcloud](https://eu.api.ovh.com/).
+
+:::info
+Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/)».
+
+:::
+
+
+## En pratique
+
+### Obtenir l'information
+
+Utilisez l'appel API suivant :
+
+<Api version="v1" section="/dedicated/server" method="GET" route={"/dedicated/server/\{serviceName\}/specifications/network"} />
+
+Saisissez le nom de votre serveur dans le champ `serviceName`, puis cliquez sur <code className="action">Execute</code>.
+
+<img className="thumbnail" alt="SVMAC" src="/images/bare-metal-cloud/dedicated-servers/network-support-virtual-mac/support_virtual_mac_02.png" loading="lazy" />
+
+Vous obtenez alors une liste avec une entrée « vmac / supported » qui sera à « true » ou « false » (valeur booléenne).
+
+<img className="thumbnail" alt="SVMAC" src="/images/bare-metal-cloud/dedicated-servers/network-support-virtual-mac/support_virtual_mac_04.png" loading="lazy" />
+
+:::info
+**Interprétation du résultat**
+
+- **false** : vous ne pouvez pas utiliser les fonctionnalités liées aux MAC virtuelles sur ce serveur.
+
+- **true** : vous pouvez utiliser les fonctionnalités liées aux MAC virtuelles sur ce serveur.
+
+:::
+
+
+## Aller plus loin
+
+[Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

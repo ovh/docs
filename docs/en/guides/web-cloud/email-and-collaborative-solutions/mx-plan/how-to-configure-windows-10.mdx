@@ -1,0 +1,199 @@
+---
+title: MX Plan / Zimbra Starter - How to add an email account to the New Outlook for Windows
+description: Find out how to configure your email address from the MX Plan or Zimbra Starter on the New Outlook for Windows
+lastUpdated: 2026-01-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+The email addresses from the **MX Plan** and [Zimbra Starter](https://www.ovhcloud.com/en-gb/emails/zimbra-emails/) offers can be configured on a compatible email client. This allows you to send and receive messages from your preferred application.
+
+The **New Outlook** replaces the **Mail** application on Windows starting from January 1, 2025. For more information, visit Microsoft's official page: [Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-gb/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199).
+
+**Learn how to configure your MX Plan email account on the New Outlook for Windows.**
+
+## Requirements
+
+- You have an OVHcloud email solution such as:
+    - **MX Plan** offered with our [web hosting services](https://www.ovhcloud.com/en-gb/web-hosting/) or included in a [free 100M hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/).
+    - [Zimbra](https://www.ovhcloud.com/en-gb/emails/zimbra-emails/) Starter.
+- You have the [new version of Outlook](https://support.microsoft.com/en-gb/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installed on your Windows system.
+- You have the credentials for the email account you wish to configure.
+
+<details>
+
+<summary>Information related to the management and configuration of OVHcloud services</summary>
+
+
+This guide will show you how to use OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
+
+If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or discuss the issue with our [community](https://community.ovhcloud.com/community/en). OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+
+</details>
+
+
+## Instructions
+
+:::warning
+This documentation applies only to the **new Outlook** and not to the "[classic Outlook](https://support.microsoft.com/en-gb/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" available in the Microsoft 365 suite or previously installed on your computer.
+
+To distinguish between the two Outlook versions when both are installed, type "Outlook" in the Windows search bar. You will then be able to see the difference as shown below. The new Outlook has no special mention.
+
+<img className="thumbnail" alt="outlook Windows" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/outlook-windows-identify01.png" loading="lazy" />
+
+To configure your MX Plan or Zimbra Starter email address on classic Outlook, refer to our guide "[MX Plan / Zimbra Starter - Configure your email address on classic Outlook for Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/)".
+
+:::
+
+
+### Add the account <a name="add-account"></a>
+
+:::warning
+It is necessary to select the tab in step 3 corresponding to your location (**EUROPE** or **AMERICA/ASIA-PACIFIC**) to obtain the correct values.
+
+:::
+
+
+To configure your email address, follow the steps by clicking on the tabs below.
+
+<Tabs>
+  <Tab label="Step 1">
+    - Open Outlook. In the left column, click <code className="action">Add an account</code> to start the configuration.
+    
+    <img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    - Enter your email address and click <code className="action">Continue</code>.
+    - Enter your password and click the <code className="action">Show more</code> button.
+    
+    <img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3 - EUROPE">
+    - Enter the following parameters:
+       - **IMAP Incoming Server**: imap.mail.ovh.net **or** ssl0.ovh.net.
+       - **Port**: 993
+       - **Secure Connection Type**: SSL/TLS
+       - **SMTP Username**: The email address you are adding.
+       - **SMTP Outgoing Server**: smtp.mail.ovh.net **or** ssl0.ovh.net.
+       - **Port**: 465
+       - **Secure Connection Type**: SSL/TLS
+       - **Password**: Do not enter anything, the password entered earlier will be used.
+    - Click <code className="action">Continue</code> to complete the configuration.
+    
+    <img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3 - AMERICA/ASIA-PACIFIC">
+    - Enter the following parameters:
+       - **IMAP Incoming Server**: imap.mail.ovh.ca
+       - **Port**: 993
+       - **Secure Connection Type**: SSL/TLS
+       - **SMTP Username**: The email address you are adding.
+       - **SMTP Outgoing Server**: smtp.mail.ovh.ca
+       - **Port**: 465
+       - **Secure Connection Type**: SSL/TLS
+       - **Password**: Do not enter anything, the password entered earlier will be used.
+    - Click <code className="action">Continue</code> to complete the configuration.
+    
+    <img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-03ca.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Using the email address <a name="use-account"></a>
+
+Once the email address is configured, you can start using it! You can now send and receive messages.
+
+OVHcloud also offers a web application to access your email address from your browser, available at [Webmail](https://www.ovhcloud.com/en-gb/mail/). You can log in using the credentials for your email address.
+
+### Modify Existing Settings <a name="modify-settings"></a>
+
+The Outlook application does not allow you to modify the server settings for your email account.
+
+If your email account is already configured and you want to configure it again, you must delete it and recreate it:
+
+- Click the settings icon <code className="action">⛭</code> at the bottom of the left column.
+- In the "Your Accounts" section, click <code className="action">Manage</code> to the right of the relevant email address.
+
+<img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-04.png" loading="lazy" />
+
+- Scroll to the bottom of the page.
+- Click <code className="action">Delete</code> to start the deletion process.
+- Determine if you want to delete the account only from this device or also from other devices using Outlook.
+
+<img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-05.png" loading="lazy" />
+
+:::tip[Success]
+Once your email account has been deleted, follow the instructions in the "[Add the Account](#add-account)" section of this documentation.
+
+:::
+
+
+### General sending and receiving settings <a name="settings-account"></a>
+
+#### IMAP and POP receiving settings <a name="imap-pop"></a>
+
+For receiving emails, we recommend using **IMAP**. However, you can also select **POP**.
+
+:::warning
+It is necessary to select the correct value corresponding to your location (**EUROPE** or **AMERICA/ASIA-PACIFIC**).
+
+:::
+
+
+Select the tab corresponding to your configuration type:
+
+<Tabs>
+  <Tab label="IMAP Configuration">
+    - **Username**: Enter the **complete** email address.
+    - **Password**: Enter the email account password.
+    - **EUROPE Incoming Server**: imap.mail.ovh.net **or** ssl0.ovh.net.
+    - **AMERICA/ASIA-PACIFIC Incoming Server**: imap.mail.ovh.ca.
+    - **Port**: 993.
+    - **Secure Connection Type**: SSL/TLS.
+  </Tab>
+  <Tab label="POP Configuration">
+    - **Username**: Enter the **complete** email address.
+    - **Password**: Enter the email account password.
+    - **EUROPE Incoming Server**: pop.mail.ovh.net **or** ssl0.ovh.net.
+    - **AMERICA/ASIA-PACIFIC Incoming Server**: pop.mail.ovh.ca.
+    - **Port**: 995.
+    - **Secure Connection Type**: SSL/TLS.
+  </Tab>
+</Tabs>
+
+
+#### SMTP sending settings <a name="smtp"></a>
+
+For sending emails, use the following **SMTP** parameters:
+
+**SMTP Configuration**
+
+- **Username**: Enter the **complete** email address.
+- **Password**: Enter the email account password.
+- **EUROPE Outgoing Server**: smtp.mail.ovh.net **or** ssl0.ovh.net.
+- **AMERICA/ASIA-PACIFIC Outgoing Server**: smtp.mail.ovh.ca.
+- **Port**: 465.
+- **Secure Connection Type**: SSL/TLS.
+
+## Go further <a name="go-further"></a>
+
+:::info
+For more information on configuring an email address from the New Outlook messaging client on Windows, please refer to [the Microsoft Help Center](https://support.microsoft.com/en-gb/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+
+:::
+
+
+[Getting Started with MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+[Getting Started with Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+For specialized services (SEO, development, etc.), contact [OVHcloud Partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [User Community](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,80 @@
+---
+title: Snapshot wolumenu instancji Public Cloud
+description: Dowiedz się, jak utworzyć snapshot dodatkowego dysku Public Cloud
+lastUpdated: 2025-04-28
+---
+
+## Wprowadzenie
+
+Snapshot **wolumenu** to punkt odzysku przechowywany w tym samym klastrze przestrzeni dyskowej, co oryginalny wolumen. Operacje tworzenia i przywracania są szybkie, ale w przypadku awarii na klastrze, wolumen i wolumen Snapshot mogą być niedostępne.<br/>
+Tworzenie wolumenu Snapshot nie wymaga odłączenia wolumenu od instancji.
+
+Nie należy tego mylić z Backup **wolumenu** to obraz utworzony na podstawie wolumenu. Wolumen jest przechowywany w klastrze Object Storage w lokalizacji oryginalnego wolumenu.
+Ten poziom odporności jest idealny i pozwala na szybką reakcję na każdy problem z wolumenem tworząc kolejny wolumen z kopii zapasowej.<br/>
+Tworzenie kopii zapasowej wolumenu wymaga odłączenia wolumenu od instancji. Więcej informacji na temat tej opcji można znaleźć w tym [przewodniku](/guides/public-cloud/compute/volume-backup/).
+
+Tworzenie snapshota dodatkowego wolumenu zwykle odpowiada dwóm celom:
+
+- wykonywanie kopii zapasowych za pomocą kilku kliknięć i zachowanie czasu potrzebnego do wykonania;
+- użyć snapshota jako szablonu dla tych samych wolumenów.
+
+**Niniejszy przewodnik wyjaśnia, jak utworzyć w Panelu klienta snapshot wolumenu.**
+
+## Wymagania początkowe
+
+- Wolumen [Block storage](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) utworzony w Twoim projekcie [Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## W praktyce
+
+Kliknij <code className="action">Block Storage</code> na pasku nawigacji po lewej stronie w **Storage i Backup**.
+
+<img className="thumbnail" alt="Snapshoty wolumenów" src="/images/public-cloud/compute/creating-a-volume-snapshot/volume_snapshot01.png" loading="lazy" />
+
+Po prawej stronie wybranego wolumenu kliknij przycisk <code className="action">...</code>, a następnie <code className="action">Utwórz kopię zapasową</code> (nie ma potrzeby odłączania najpierw wolumenu od instancji). Jeśli jednak chcesz odłączyć wolumen, zapoznaj się z sekcją "Odłącz wolumen" w [tym przewodniku](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/).
+
+Następnie wybierz opcję <code className="action">Volume Snapshot</code>, nadaj jej nazwę i kliknij przycisk <code className="action">Utwórz kopię zapasową</code>.
+
+<img className="thumbnail" alt="Snapshoty wolumenów" src="/images/public-cloud/compute/creating-a-volume-snapshot/volume_snapshot02.png" loading="lazy" />
+
+W oknie, które się pojawi możesz nadać inną nazwę snapshotowi. Zapoznaj się z informacjami dotyczącymi cennika, następnie kliknij <code className="action">Utwórz snapshot</code>.
+
+Czas tworzenia snapshota zależy od ilości danych zawartych w woluminie, wykorzystania zasobów instancji w momencie wykonania snapshota oraz innych czynników specyficznych dla hosta.
+
+Zalecamy zatem wykonywanie kopii zapasowych snapshot poza godzinami produkcji.
+
+Oto kilka innych dobrych praktyk:
+
+- unikaj tworzenia snapshotów w godzinach szczytu (od 04:00 do 22:00 czasu paryskiego);
+- zainstaluj agenta qemu-guest, jeśli nie jest to zrobione lub spróbuj go wyłączyć, jeśli to konieczne;
+- staraj się nie przesadzać z serwerem podczas fazy tworzenia snapshota (ograniczenie I/O, zużycie pamięci RAM, itp.).
+
+Ponieważ snapshot wolumenu jest klonem całego dysku, będzie miał maksymalny rozmiar oryginalnego wolumenu, niezależnie od rzeczywistego przydziału przestrzeni dyskowej.
+
+<img className="thumbnail" alt="Snapshoty wolumenów" src="/images/public-cloud/compute/creating-a-volume-snapshot/volume_snapshot03.png" loading="lazy" />
+
+Otwórz sekcję <code className="action">Snapshoty wolumenów</code> na pasku nawigacyjnym po lewej stronie. Po utworzeniu snapshota zostanie on dodany do tej tabeli.
+
+Kliknij przycisk <code className="action">...</code>, aby usunąć snapshot lub Utwórz wolumen z odpowiedniego snapshota. Więcej informacji znajdziesz w [tym przewodniku](/guides/public-cloud/compute/storage-create-volume-from-backup/).
+
+## Sprawdź również
+
+[Tworzenie kopii zapasowej wolumenu](/guides/public-cloud/compute/volume-backup/)
+
+[Tworzenie wolumenu z kopii zapasowej](/guides/public-cloud/compute/storage-create-volume-from-backup/)
+
+[Zarządzanie wolumenem instancji Public Cloud](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)
+
+[Zwiększenie rozmiaru dodatkowego dysku](/guides/public-cloud/compute/increase-the-size-of-an-additional-disk/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

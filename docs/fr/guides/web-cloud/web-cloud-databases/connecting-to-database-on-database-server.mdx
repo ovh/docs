@@ -1,0 +1,299 @@
+---
+title: Web Cloud Databases - Se connecter à une base de données
+description: Découvrez comment se connecter à une base de données présente sur votre solution Web Cloud Databases
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objectif
+
+Il est possible de consulter le contenu de votre base de données via une interface. Pour cela, il existe plusieurs moyens de s'y connecter.
+
+**Découvrez comment vous connecter à votre base de données sur votre serveur de bases de données.**
+
+## Prérequis
+
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Sélectionnez votre service de base de données
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## En pratique
+
+:::info
+Les offres [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci.
+
+- Il n'y a pas d'accès super utilisateur « root ».
+- Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
+
+:::
+
+
+### Se connecter à une base de données MySQL ou MariaDB
+
+:::info
+MariaDB étant un dérivé de MySQL, les différentes commandes sont exactement les mêmes pour ces deux types de bases de données.
+
+:::
+
+
+#### Connexion via phpMyAdmin OVHcloud
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), puis choisissez la solution concernée.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Récupérez les informations de connexion suivantes :
+    
+    - **Serveur (nom d'hôte) et port :** visibles dans l'onglet <code className="action">Informations générales</code>, encadré `Informations de connexion`.
+    - **Utilisateur :** visible dans l'onglet <code className="action">Utilisateurs et droits</code>.
+    - **Mot de passe :** le mot de passe associé à l'utilisateur. Si vous l'avez oublié, rendez-vous dans l'onglet <code className="action">Utilisateurs et droits</code>, cliquez sur <code className="action">...</code> à droite de l'utilisateur concerné, puis sur <code className="action">Changer le mot de passe</code>.
+    
+    :::warning
+    Si vous changez le mot de passe de l'utilisateur d'une base de données, toutes les applications/sites web qui accèdent à cette base doivent être mises à jour en conséquence.
+
+    :::
+
+  </Tab>
+  <Tab label="Étape 3">
+    Dans l'onglet <code className="action">Informations générales</code>, repérez le cadre **Administration de la base de données** et cliquez sur le lien phpMyAdmin sous la mention **Interface utilisateur**.
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 4">
+    Sur la page de connexion de phpMyAdmin, renseignez les informations récupérées à l'étape 2 :
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-login-web-cloud-db.png" loading="lazy" />
+    
+    - **Serveur :** saisissez le *nom d'hôte* suivi du *numéro de port*, séparés par « **:** » ou par un « **espace** ». Par exemple : **aaXXXXX-XXX.eu.clouddb.ovh.net:12345**.
+    - **Utilisateur :** saisissez le *nom d'utilisateur*.
+    - **Mot de passe :** saisissez le *mot de passe*.
+  </Tab>
+</Tabs>
+
+
+Si la connexion aboutit, la page suivante apparaît.
+
+<img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-main-page-web-cloud-db.png" loading="lazy" />
+
+:::warning
+**En cas d'erreur :**
+
+- Erreur #1045, cela signifie que l'identification est incorrecte. Il faut donc vérifier votre nom d'utilisateur et/ou votre mot de passe.
+- Erreur #2005, il est conseillé de vérifier le nom du serveur et si celui-ci est bien fonctionnel.
+
+:::
+
+
+#### Connexion à la base de données hors espace client
+
+:::warning
+Si vous utilisez une offre « Web Cloud Databases »/« SQL Privé », n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](/guides/web-cloud/web-cloud-databases/configure-database-server#gerer-vos-acces/).
+
+:::
+
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), puis choisissez la solution concernée.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Récupérez les informations de connexion suivantes :
+    
+    - **Serveur (nom d'hôte) :** visible dans l'onglet <code className="action">Informations générales</code>, cadre **« Administration de la base de données »**, mention « Nom d'hôte » de la partie **SQL**.
+    - **Port :** visible au même endroit, mention « Port » de la partie **SQL**.
+    - **Utilisateur :** visible dans l'onglet <code className="action">Utilisateurs et droits</code>.
+    - **Mot de passe :** le mot de passe associé à l'utilisateur concerné.
+    - **Nom de la base de données :** visible dans l'onglet <code className="action">Bases de données</code>.
+  </Tab>
+</Tabs>
+
+
+**Cliquez sur la méthode de connexion de votre choix pour afficher le contenu.**
+
+<details>
+
+<summary>Connexion en ligne de commande</summary>
+
+
+```bash
+mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base
+```
+
+</details>
+
+
+<details>
+
+<summary>Connexion par script PHP</summary>
+
+
+```php
+1. <?php
+2. $db = new PDO('mysql:host=host;port=port;dbname=dbname', 'username', 'password');
+3. ?>
+```
+
+</details>
+
+
+<details>
+
+<summary>Connexion par logiciel (SQuirreL SQL)</summary>
+
+
+:::info
+Dans notre exemple nous utilisons le logiciel open source SQuirreL, mais d'autres interfaces comme HeidiSQL ou Adminer sont pleinement compatibles.
+
+:::
+
+
+- Lancez SQuirreL SQL et cliquez sur <code className="action">Aliases</code>, puis sur <code className="action">+</code>
+
+<img className="thumbnail" alt="launch SQuirreL SQL" src="/images/assets/screens/other/web-tools/squirrel/aliases.png" loading="lazy" />
+
+- Remplissez les champs ci-dessous puis validez avec le bouton <code className="action">OK</code> :
+    - **Name** : Choisissez un nom
+    - **Driver** : Choisissez « MySQL Driver »
+    - **URL** : Indiquez l'adresse du serveur et le port sous la forme jdbc:mysql://server:port
+    - **User Name** : Indiquez le nom d'utilisateur
+    - **Password** : Indiquez le mot de passe
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/add-alias.png" loading="lazy" />
+
+- Validez à nouveau avec le bouton <code className="action">Connect</code>
+
+<img className="thumbnail" alt="valid connection" src="/images/assets/screens/other/web-tools/squirrel/connect-to-mysql.png" loading="lazy" />
+
+Vous êtes maintenant bien connecté à votre base de données :
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/general-dashboard.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>Connexion par phpMyAdmin</summary>
+
+
+Vous pouvez utiliser votre propre interface phpMyAdmin pour explorer le contenu de votre base de données. Pour cela, installez phpMyAdmin sur votre propre serveur ou hébergement web. Durant cette installation, veillez à bien paramétrer les informations de votre serveur de bases de données et de votre base de données souhaitée afin que phpMyAdmin puisse s'y connecter.
+
+</details>
+
+
+### Se connecter à une base de données PostgreSQL
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), puis choisissez la solution concernée.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Récupérez les informations de connexion suivantes :
+    
+    - **Serveur (nom d'hôte) :** visible dans l'onglet <code className="action">Informations générales</code>, cadre **« Administration de la base de données »**, mention « Nom d'hôte » de la partie **SQL**.
+    - **Port :** visible au même endroit, mention « Port » de la partie **SQL**.
+    - **Utilisateur :** visible dans l'onglet <code className="action">Utilisateurs et droits</code>.
+    - **Mot de passe :** le mot de passe associé à l'utilisateur concerné.
+    - **Nom de la base de données :** visible dans l'onglet <code className="action">Bases de données</code>.
+  </Tab>
+</Tabs>
+
+
+**Cliquez sur la méthode de connexion de votre choix pour afficher le contenu.**
+
+<details>
+
+<summary>Connexion en ligne de commande</summary>
+
+
+```bash
+psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base
+```
+
+</details>
+
+
+<details>
+
+<summary>Connexion par script PHP</summary>
+
+
+```php
+1. <?php
+2. $myPDO = new PDO('pgsql:host=host;port=port;dbname=dbname', 'username', 'password');
+3. ?>
+```
+
+</details>
+
+
+<details>
+
+<summary>Connexion par logiciel (SQuirreL SQL)</summary>
+
+
+:::info
+Dans notre exemple nous utilisons le logiciel open source SQuirreL, mais d'autres interfaces comme HeidiSQL ou Adminer sont pleinement compatibles.
+
+:::
+
+
+- Lancez SQuirreL SQL et cliquez sur <code className="action">Aliases</code>, puis sur <code className="action">+</code>
+
+<img className="thumbnail" alt="launch SQuirreL SQL" src="/images/assets/screens/other/web-tools/squirrel/aliases.png" loading="lazy" />
+
+- Remplissez les champs ci-dessous puis validez avec le bouton <code className="action">OK</code> :
+    - **Name** : Choisissez un nom
+    - **Driver** : Choisissez « PostgreSQL »
+    - **URL** : Indiquez l'adresse du serveur et le port sous la forme jdbc:postgresql://server:port/database
+    - **User Name** : Indiquez le nom d'utilisateur
+    - **Password** : Indiquez le mot de passe
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/add-alias.png" loading="lazy" />
+
+- Validez à nouveau avec le bouton <code className="action">Connect</code>
+
+<img className="thumbnail" alt="valid connection" src="/images/assets/screens/other/web-tools/squirrel/connect-to-mysql.png" loading="lazy" />
+
+Vous êtes maintenant bien connecté à votre base de données :
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/general-dashboard.png" loading="lazy" />
+
+</details>
+
+
+## Aller plus loin
+
+[Hébergement web - Ma base de données est saturée, que faire ?](/guides/web-cloud/web-hosting/sql-overquota-database/).
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

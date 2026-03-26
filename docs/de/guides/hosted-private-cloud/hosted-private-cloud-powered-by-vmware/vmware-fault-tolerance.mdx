@@ -1,0 +1,59 @@
+---
+title: VMware Fault Tolerance
+description: Gewährleisten Sie das kontinuierliche Funktionieren Ihrer virtuellen Maschine mit Fault Tolerance
+lastUpdated: 2020-07-07
+---
+
+## Einleitung
+
+Die Funktion **Fault Tolerance** (FT) von VMware vSphere ermöglicht den Schutz einer virtuellen Maschine vor Hardwarefehlern. Dazu wird die Maschine auf zwei verschiedenen Hosts geklont. 
+
+<img className="thumbnail" alt="Fault Tolerance" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-fault-tolerance/FT10v2.gif" loading="lazy" />
+
+**Sehen Sie hier, wie Sie die Funktion Fault Tolerance auf Ihrer virtuellen Maschine nutzen können**
+
+## Voraussetzungen
+
+- vSphere HA aktivieren.
+- Reservierung von Ressourcen entspricht 100% des Arbeitsspeichers.
+- Die VMware Tools sind installiert.
+- Die Prozessoren gehören derselben Generation an.
+- Höchstens 4 vCPUs.
+
+## Praktische Anwendung 
+
+Um die Option **Fault Tolerance** zu aktivieren, klicken Sie mit der rechten Maustaste auf eine virtuelle Maschine. Klicken Sie danach erst auf `Fault Tolerance`, dann auf `Fault Tolerance` aktivieren.
+
+<img className="thumbnail" alt="Fault Tolerance" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-fault-tolerance/FT.png" loading="lazy" />
+
+Daraufhin öffnet sich ein Fenster für die Konfigurierung. Hier werden Sie gebeten, Ihre Auswahl für die virtuelle Sekundärmaschine zu treffen. 
+
+Die Datenbank:
+
+<img className="thumbnail" alt="Fault Tolerance" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-fault-tolerance/FT1.png" loading="lazy" />
+
+Der Host: 
+
+<img className="thumbnail" alt="Fault Tolerance" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-fault-tolerance/FT2.png" loading="lazy" />
+
+Abschließend: Eine Zusammenfassung Ihrer Auswahl. Bestätigen Sie, um FT auf Ihrer virtuellen Maschine zu aktivieren:
+
+<img className="thumbnail" alt="Fault Tolerance" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-fault-tolerance/FT3.png" loading="lazy" />
+
+Nun ist Ihre virtuelle Maschine durch **Fault Tolerance** geschützt. Sie können eine Veränderung des Symbols feststellen, außerdem zeigt der Name nun den Status „Primär“ an.
+
+<img className="thumbnail" alt="Fault Tolerance" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-fault-tolerance/FT4.png" loading="lazy" />
+
+Nun haben Sie je nach Bedarf die Auswahl zwischen verschiedenen Aktionen.
+
+<img className="thumbnail" alt="Fault Tolerance" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-fault-tolerance/FT5.png" loading="lazy" />
+
+## Unmögliche Aktionen und Fälle von Inkompatibilität
+
+Ist **Fault Tolerance** bei einer virtuellen Maschine aktiviert, so sind einige Aktionen und der Gebrauch bestimmter Peripheriegeräte nicht mehr möglich.
+
+Die Liste der nun nicht mehr unterstützten Aktionen finden Sie auf [dieser Seite](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html), eine Auflistung von Fällen von Inkompatibilität auf [dieser Seite](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html).
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

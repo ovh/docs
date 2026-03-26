@@ -1,14 +1,12 @@
-# https://editorconfig.org/
-# EditorConfig rules are respected by Prettier
-
 root = true
 
-[*.md]
-charset = utf-8
-end_of_line = lf
-insert_final_newline = true
-# We need to indent with 4 spaces, because the engine doesn't recognize 2 spaces for nested lists
-indent_size = 4
+[*]
 indent_style = space
-# Trailing whitespaces are significant in Markdown (trailing space = soft line break)
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = lf
+
+[*.md]
 trim_trailing_whitespace = false

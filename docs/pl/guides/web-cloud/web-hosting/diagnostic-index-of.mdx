@@ -1,0 +1,108 @@
+---
+title: "Co zrobić w przypadku strony \"Index of\"?"
+description: "Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę \"Index of\""
+lastUpdated: 2025-10-28
+---
+
+## Wprowadzenie 
+
+Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypadków:
+
+- Konfiguracja [Twojego nazwy domeny z Twoją stroną internetową](/guides/web-cloud/web-hosting/multisites-configure-multisite/) nie jest poprawnie skonfigurowana do katalogu docelowego.
+- Folder docelowy, do którego Twoja nazwa domeny nie zawiera plików **"index.html"** lub **"index.php"**
+
+<img className="thumbnail" alt="indeks" src="/images/assets/screens/other/browsers/errors/index-of.png" loading="lazy" />
+
+**Dowiedz się, jak naprawić wyświetlanie strony "Index of".**
+
+:::warning
+OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+
+Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
+
+:::
+
+
+## Wymagania początkowe
+
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Wybierz hosting WWW
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## W praktyce
+
+### Zrozumieć pochodzenie strony "Index of"
+
+Twoja domena jest zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/guides/web-cloud/web-hosting/ftp-connection/) na hostingu. Jest to w zakładce [MultiSite](/guides/web-cloud/web-hosting/multisites-configure-multisite/) Twojego hostingu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+Strona **Index of** wskazuje, że dany katalog docelowy nie zawiera pliku **index.php** lub **index.html**. Plik ten stanowi "*punkt wejścia*" Twojej strony WWW. Nazwa tego pliku jest znormalizowana.
+
+Aby wyświetlić Twoją stronę WWW, w części hostingu <code className="action">Multisite</code> należy powiązać domenę z katalogiem głównym, który zawiera ten plik **index.php** lub **index.html*.
+
+:::info
+Aby tymczasowo powiązać domenę z `Katalogiem głównym` niezawierającym pliku **index.php** lub **index.html**, możesz zablokować wyświetlanie listy katalogów na swojej stronie internetowej zgodnie z tym [tutorial](/guides/web-cloud/web-hosting/htaccess-what-else-can-you-do#blokada-listowania-zawartosci-katalogu/). Możesz również chronić dostęp do Twoich katalogów za pomocą [hasła](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+
+Zalecamy, aby w przypadku trudności z ustawieniem tej konfiguracji skonsultować się z [specjalistycznym dostawcą usług](https://partner.ovhcloud.com/pl/directory/). Nasz zespół wsparcia nie będzie mógł udzielić pomocy w przypadku każdej modyfikacji wewnętrznej programistycznej Twojej strony internetowej.
+
+:::
+
+
+### Rozwiąż najczęstszy przypadek na stronie "Index of"
+
+Zaimportowałeś pliki swojej strony **mydomain.ovh** do katalogu `www` swojego hostingu za pomocą [FTP](/guides/web-cloud/web-hosting/ftp-connection/). Jednak nazwa domeny nie jest podłączona do tego katalogu w kolumnie `Katalog główny` Twojej strony internetowej.
+
+<img className="thumbnail" alt="index_of_multisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png" loading="lazy" />
+
+Zmień `Katalog główny` klikając przycisk <code className="action">...</code> po prawej stronie tabeli, a następnie <code className="action">Zmień domenę</code>:
+
+<img className="thumbnail" alt="modify_domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png" loading="lazy" />
+
+W oknie, które się wyświetla:
+
+* Zaznacz kratkę <code className="action">Zmień również ustawienia subdomeny www.mydomain.ovh.</code> (1);
+* Wskaż katalog zawierający plik **index.php** lub **index.html** Twojej strony jako `Katalog główny` (2);
+* Kliknij `Dalej` (3).
+
+<img className="thumbnail" alt="change_root_folder" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png" loading="lazy" />
+
+:::info
+Używanie katalogu `www` jako `Katalogu główny` nie jest w żadnym wypadku obowiązkowe. Możesz zainstalować Twoją stronę WWW w innym katalogu Twojego [serwera FTP](/guides/web-cloud/web-hosting/ftp-connection/).
+
+:::
+
+
+W następnym oknie kliknij <code className="action">Zatwierdź</code>.
+
+<img className="thumbnail" alt="modify_root_folder_confirm" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png" loading="lazy" />
+
+W ciągu kilku minut (odświeżając przeglądarkę) otrzymasz następujący wynik:
+
+<img className="thumbnail" alt="multisite_modified" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png" loading="lazy" />
+
+Sprawdź, czy Twoja strona wyświetla się poprawnie. W przeciwnym razie zrestartuj urządzenie i w razie potrzeby wyczyść cache przeglądarki.
+
+Upewnij się również, czy w Twoim katalogu docelowym znajduje się plik **index.php** lub **index.html**.
+
+## Sprawdź również <a name="go-further"></a>
+
+[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/)
+
+[Usunięcie błędu "Strona nie została zainstalowana"](/guides/web-cloud/web-hosting/multisites-website-not-installed/)
+
+[Instalacja kilku stron WWW na jednym hostingu](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en). 

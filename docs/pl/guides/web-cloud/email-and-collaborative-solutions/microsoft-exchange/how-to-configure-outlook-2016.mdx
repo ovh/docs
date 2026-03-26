@@ -1,0 +1,176 @@
+---
+title: Exchange - Konfiguracja konta e-mail w programie Outlook dla systemu Windows
+description: Dowiedz się, jak skonfigurować konto Exchange w programie Outlook dla systemu Windows
+lastUpdated: 2026-01-30
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych.  Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji. Microsoft Outlook jest aplikacją zalecaną do korzystania z konta e-mail Exchange ze swoimi funkcjami współpracy.
+
+**Dowiedz się, jak skonfigurować konto Exchange w programie Microsoft Outlook na urządzeniu z systemem Windows.**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2YeGXo10CX8?si=mINBBXq6qb4MiFEt" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen={true}></iframe>
+
+## Wymagania początkowe
+
+- Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails-exchange/).
+- Posiadanie aplikacji [klasyczny program Outlook](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) w systemie Windows.
+- Dane do logowania do konta e-mail, które chcesz skonfigurować
+- Pole SRV OVHcloud musi być poprawnie skonfigurowane w strefie DNS domeny. Sprawdź nasz przewodnik [Dodaj domenę do usługi Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/).
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+<details>
+
+<summary>Informacje dotyczące zarządzania i konfiguracji usług OVHcloud</summary>
+
+
+OVHcloud oferuje usługi, których konfiguracja, zarządzanie i odpowiedzialność należy do Ciebie. Musisz więc zadbać o ich poprawne działanie.
+
+Dostarczamy ten przewodnik, aby pomóc Ci w wykonywaniu codziennych zadań. Niemniej, w przypadku trudności, zalecamy kontakt z [specjalistycznym partnerem](https://partner.ovhcloud.com/pl/directory/) i/lub z twórcą usługi. Nie będziemy bowiem mogli udzielić wsparcia. Więcej informacji w sekcji "[Sprawdź również](#go-further)".
+
+</details>
+
+
+:::info
+Używasz programu Outlook i później na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook na urządzeniu Mac](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016-mac/).
+
+:::
+
+
+## W praktyce
+
+:::warning
+Przed rozpoczęciem konfigurowania swojego konta ważne jest, aby zauważyć, że aplikacja Outlook, która jest dostarczana za darmo z Windows 11, jest [niekompatybilna](https://learn.microsoft.com/pl-pl/microsoft-365-apps/outlook/get-started/supported-account-types) z rozwiązaniami OVHcloud Exchange, znanymi jako lokalne. Będziesz musiał użyć **klasycznej wersjiOutlook**.
+
+Aby zainstalować klasyczną wersję Outlook na swoim komputerze z Windows, pobierz ją ze strony Microsofta "[Instalowanie lub ponowne instalowanie klasycznego programu Outlook na komputerze z systemem Windows](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", a następnie zainstaluj.
+
+Po zakończeniu instalacji, aby odróżnić dwie wersje, gdy są zainstalowane, wpisz "Outlook" w pasku wyszukiwania systemu Windows. Możesz następnie zobaczyć różnicę, jak poniżej.
+
+<img className="thumbnail" alt="outlook Windows" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/outlook-windows-identify01.png" loading="lazy" />
+
+:::
+
+
+### Dodaj konto
+
+- **Podczas pierwszego uruchomienia aplikacji**: wyświetli się asystent konfiguracji i poprosi o wpisanie adresu e-mail.
+
+- **Jeżeli inne konto zostało wcześniej skonfigurowane**: kliknij <code className="action">Plik</code> na pasku menu na górze Twojego ekranu, a następnie kliknij <code className="action">Dodaj konto</code>.
+
+<img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange01.png" loading="lazy" />
+
+**Na Windowsie 11 interfejs klasycznego Outlooka może się różnić, gdy dodajesz konto.**
+
+W zależności od historii korzystania z Outlooka na danym komputerze, konkretna konfiguracja może spowodować wyświetlenie innego interfejsu. W niektórych przypadkach może być wyłączony tzw. „nowoczesny” interfejs (**interfejs 1**) na korzyść klasycznego interfejsu (**interfejs 2**).
+
+Dlatego zachęcamy, aby sprawdzić rozdział odpowiadający interfejsowi, który widzisz na ekranie.
+
+<Tabs>
+  <Tab label="Interfejs 1">
+    - Podaj swój adres e-mail, a następnie kliknij <code className="action">Zaawansowane opcje</code>.
+    - Zaznacz pole <code className="action">Skonfiguruj moje konto ręcznie</code> i kliknij <code className="action">Połączenie</code>.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-legacy-exchange02.png" loading="lazy" />
+    
+    - Spośród dostępnych typów kont wybierz **Exchange**.
+    - W następnym oknie wprowadź hasło do swojego adresu e-mail, zaznacz pole pozwalające zapamiętać dane logowania i kliknij <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-legacy-exchange03.png" loading="lazy" />
+    
+    :::info
+    Jeśli pojawi się komunikat informujący, że Outlook nie mógł skonfigurować Twojego konta, może to oznaczać, że wpis SRV OVHcloud nie został poprawnie skonfigurowany w strefie DNS Twojej nazwy domeny.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-legacy-exchange04.png" loading="lazy" />
+
+Zalecamy sprawdzenie konfiguracji nazwy domeny skonfigurowanej w Twojej usłudze Exchange w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), zakładka <code className="action">Przypisane domeny</code>, następnie kolumna <code className="action">Diagnostyka</code> w tabeli.
+
+    :::
+
+    
+    - Jeśli konfiguracja Twojej nazwy domeny jest poprawna, może pojawić się komunikat o autoryzacji połączenia z serwerami OVHcloud. Zaakceptuj go, aby umożliwić automatyczną konfigurację Twojego konta Exchange.
+    - Ustaw następnie okres przechowywania elementów Twojego konta Exchange, **lokalnie na Twoim komputerze**. Kliknij <code className="action">Dalej</code>, a następnie <code className="action">Zakończ</code>.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-legacy-exchange05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Interfejs 2">
+    - Zaznacz `Konto poczty` i uzupełnij poniższe informacje:
+        - **Imię i nazwisko**: ustaw nazwę do wyświetlenia.
+        - **Adres poczty**: wpisz pełny adres e-mail.
+        - **Hasło**: wpisz hasło przypisane do adresu e-mail.
+        - **Potwierdź hasło**: ponownie wpisz hasło przypisane do adresu e-mail.
+    - Kliknij <code className="action">Dalej</code>, aby kontynuować.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange02.png" loading="lazy" />
+    
+    - Jeśli konfiguracja Twojej nazwy domeny jest poprawna, może pojawić się komunikat o autoryzacji połączenia z serwerem Exchange OVHcloud. Kliknij <code className="action">Autoryzuj</code> **(1)**, aby umożliwić automatyczną konfigurację konta Exchange.
+    - Pojawia się drugie okno uwierzytelniania, wpisz hasło do swojego adresu e-mail **(2)**.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange03.png" loading="lazy" />
+
+Po autoryzacji i uwierzytelnieniu na serwerze Exchange OVHcloud konfiguracja zostanie zakończona, a konto będzie gotowe do użytku.
+  </Tab>
+</Tabs>
+
+
+### Użyj konta e-mail
+
+Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
+
+Twój adres e-mail Exchange oraz wszystkie jego funkcje do pracy zespołowej są również dostępne w interfejsie [OWA](https://www.ovhcloud.com/pl/mail/). W przypadku pytań dotyczących korzystania z tego konta, zapoznaj się z naszym przewodnikiem [Sprawdź konto Exchange w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/).
+
+### Modyfikowanie istniejących ustawień
+
+:::warning
+Nie można zmodyfikować ustawień serwera dla konta Exchange. Jeśli napotkasz problem z synchronizacją z serwerem, konieczne będzie usunięcie konta z Outlooka i jego ponowne skonfigurowanie. Aby to zrobić, wykonaj poniższe instrukcje.
+
+:::
+
+
+Jeśli konto e-mail zostało już skonfigurowane i musisz uzyskać dostęp do ustawień konta, aby je usunąć:
+
+- Przejdź do <code className="action">Plik</code> w górnym pasku menu.
+- Wybierz konto do modyfikacji w rozwijanej liście **(1)**.
+- Kliknij <code className="action">Ustawienia konta</code> **(2)** poniżej.
+- Kliknij <code className="action">Ustawienia konta...</code> **(3)**, aby otworzyć okno ustawień.
+
+<img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange04.png" loading="lazy" />
+
+- Pojawia się okno ustawień konta, wybierz odpowiednie konto e-mail i kliknij <code className="action">Usuń</code>.
+
+<img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange05.png" loading="lazy" />
+
+Po usunięciu konta Exchange, przejdź do sekcji "[Dodawanie konta](#add-account)" tego przewodnika, aby ponownie skonfigurować swoje konto e-mail.
+
+### Pobierz kopię zapasową Twojego konta e-mail
+
+Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport z systemu Windows**" w przewodniku [Ręczna migracja Twojego konta e-mail](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration#eksport-z-systemu-windows/).
+
+## Sprawdź również <a name="go-further"></a>
+
+:::info
+Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem Windows, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/dodawanie-konta-e-mail-do-programu-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
+
+:::
+
+
+[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook na urządzeniu z systemem Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/).
+
+[Konfiguracja konta E-mail Pro w programie Outlook na urządzeniu z systemem Windows](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

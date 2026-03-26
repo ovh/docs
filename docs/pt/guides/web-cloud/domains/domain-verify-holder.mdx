@@ -1,0 +1,179 @@
+---
+title: Nome de domínio - Gestão do contacto titular
+description: Descubra como verificar, corrigir ou completar as informações de contacto do titular de um nome de domínio após a receção de um e-mail de alerta da OVHcloud
+lastUpdated: 2026-03-19
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Acabou de receber um e-mail da parte da OVHcloud informando que uma ação é necessária para o seu nome de domínio? Este mesmo e-mail indica que as coordenadas (informações de contacto) relativas ao titular do seu nome de domínio devem ser corrigidas ou completadas?
+
+**Descubra como corrigir ou completar as informações de contacto do titular de um nome de domínio após a receção de um e-mail de alerta da OVHcloud.**
+
+### Por que recebi um e-mail de verificação de contacto da parte da OVHcloud?
+
+A ICANN, a organização responsável pela governação dos nomes de domínio a nível mundial, ou os registos, organizações responsáveis pela exploração das extensões, impõem a validação das informações do titular durante a criação de um nome de domínio, do seu transferimento ou de qualquer atualização dos contactos associados.
+
+As verificações das coordenadas do contacto titular podem intervir a qualquer momento na vida de um nome de domínio, incluindo para domínios adquiridos há vários anos. Assim, cada domínio afetado deve ser objeto de uma verificação das coordenadas do contacto titular num prazo de 15 dias após a receção do e-mail de verificação, quer se trate de uma aquisição, um transferimento, uma modificação das coordenadas ou uma verificação periódica solicitada pela ICANN ou pelo registo.
+
+### O que acontece se o e-mail do titular ou as informações de contacto não forem verificadas no prazo?
+
+Na falta de validação no prazo, o nome de domínio é automaticamente suspenso e torna-se temporariamente indisponível até à finalização da verificação, podendo chegar até à eliminação do nome de domínio.
+Neste caso, não será possível efectuar qualquer reembolso por parte da OVHcloud.
+
+## Requisitos
+
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud.
+- Ter recebido um e-mail da parte da OVHcloud informando que uma ação é necessária relativamente às coordenadas do titular do seu nome de domínio.
+- Verificar os seguintes pontos para se assegurar de que não se trata de um e-mail fraudulento:
+    - O assunto do e-mail contém o seu identificador de cliente (por exemplo: `aa00000-ovh`) bem como o seu nome de domínio (por exemplo: `domain.tld`).
+
+{/* CP-NAV-START:web-domains */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](https://manager.eu.ovhcloud.com/#/web-domains/domain)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Nomes de domínio</code> > Selecione o seu nome de domínio
+
+---
+{/* CP-NAV-END:web-domains */}
+
+## Instruções
+
+### 1 - Verificação do e-mail do titular após a encomenda ou modificação do e-mail de contacto do titular de um nome de domínio
+
+Após a encomenda, o titular do nome de domínio receberá um e-mail da OVHcloud para validar o seu endereço de e-mail e confirmar a sua boa acessibilidade.
+
+<img className="thumbnail" alt="Verificação do endereço de e-mail" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/email-address-verification-for-one-of-your-domain-names.png" loading="lazy" />
+
+Ao clicar em <code className="action">Confirmer votre adresse e-mail</code>, uma nova página será aberta num link que validará diretamente o endereço de e-mail do titular.
+
+<img className="thumbnail" alt="Validação do e-mail CGI" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png" loading="lazy" />
+
+### 2 - Corrigir ou completar as coordenadas/informações de contacto do titular do nome de domínio como administrador
+
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Nomes de domínio](https://manager.eu.ovhcloud.com/#/web-domains/domain) e escolha o domínio correspondente.
+    
+    <img className="thumbnail" alt="Domain Names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    Na página que se abrir, verifique primeiro se o seu nome de domínio está afetado pelo procedimento graças a uma faixa (amarela ou vermelha) que indique a operação a realizar.
+    
+    Há **Contactos** na **Subscrição**. Clique no botão <code className="action">...</code> à direita e, a seguir, em <code className="action">Gerir os contactos</code>.
+    
+    <img className="thumbnail" alt="Change owner" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 3">
+    Na nova página, aceda ao quadro **Titular** e clique no botão <code className="action">Alterar</code>.
+    
+    <img className="thumbnail" alt="Manage contacts and owners" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 4">
+    :::warning
+    Qualquer modificação ao primeiro nome, ao nome, à organização, ao estatuto legal ou ao endereço de e-mail do titular é considerada como uma **mudança de titular**.
+    
+    Se as suas modificações dizem respeito **apenas** a informações diferentes das mencionadas acima, realize-as diretamente, depois clique em <code className="action">Validar</code>. Neste caso específico, não será necessário iniciar uma solicitação de mudança de titular. Para esta operação, não precisa de confirmar as modificações por e-mail.
+    
+    Caso contrário e para iniciar a solicitação de mudança de titular, clique no link <code className="action">Clique aqui para continuar</code> localizado no fundo da página.
+
+    :::
+
+    
+    <img className="thumbnail" alt="Informações do proprietário" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/owner.png" loading="lazy" />
+
+Encontre mais detalhes sobre a mudança de titular no nosso guia: « [Nome de domínio - Como mudar o titular?](/guides/web-cloud/domains/trade-domain/) ».
+  </Tab>
+</Tabs>
+
+
+### 3 - O que fazer se o endereço de e-mail do contacto titular não estiver mais acessível?
+
+#### Caso geral
+
+Se o endereço de e-mail associado ao seu nome de domínio estiver incorreto ou inacessível (por exemplo, devido a um erro de digitação), convidamo-lo a [contactar o suporte OVHcloud](https://www.ovhcloud.com/pt/support-levels/).
+
+Note que o titular do domínio deverá justificar novamente a sua identidade fornecendo os documentos exigidos de acordo com o seu tipo (particular, empresa, associação, etc.).
+
+:::info
+A lista de documentos abaixo não é exaustiva. Outros documentos podem ser solicitados de acordo com a sua situação ou as exigências do registo afetado.
+
+:::
+
+
+**Documentos a fornecer de acordo com o tipo de titular:**
+
+- **Pessoa singular**:
+    - Documento de identidade válido (frente e verso): bilhete de identidade, passaporte (páginas com fotografia e informações pessoais, bem como a página com a assinatura), autorização de residência ou carta de condução
+- **Empresa**
+    - Comprovativo da existência da entidade: extrato do registo comercial (com menos de 3 meses), extrato do registo comercial, licença comercial ou qualquer documento equivalente.
+    - Documento de identidade válido (frente e verso) do representante legal (proprietário da empresa, presidente ou diretor-geral): bilhete de identidade nacional, passaporte, autorização de residência ou carta de condução.
+- **Organização sem fins lucrativos**
+    - Documento de identidade válido (frente e verso) do representante legal (presidente, gerente ou diretor da associação): bilhete de identidade nacional, passaporte, autorização de residência ou carta de condução
+    - Prova legal da existência da organização.
+    - Ata da última assembleia geral.
+- **Administração pública**
+    - Certificado administrativo (ou documento oficial equivalente).
+    - Documento de identidade válido (frente e verso) do representante da administração pública: bilhete de identidade, passaporte, autorização de residência ou carta de condução.
+
+As nossas equipas irão ajudá-lo nas próximas etapas para verificar o seu domínio.
+
+#### Caso particular - Modificação do contacto titular pelo administrador sem assistência (exemplo do .fr)
+
+Para certas extensões (por exemplo: .fr, .it, .es), o administrador do domínio pode aceder diretamente ao seu [área de cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt) e modificar o endereço do contacto titular seguindo as etapas descritas no passo 2 desta página.
+
+### 4 - Relançar a operação de verificação das coordenadas/informações de contacto do titular do nome de domínio
+
+:::warning
+Se as correções efetuadas seguindo a primeira parte deste guia exigiram a inicialização de uma mudança de titular para o nome de domínio, conclua primeiro a mudança de titular **antes** de continuar as ações descritas abaixo.
+
+:::
+
+
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à página [Operações em curso](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/%23/web/ongoing-operations) e localize o nome de domínio na lista apresentada.
+    
+    <img className="thumbnail" alt="Operações em curso" src="/images/assets/screens/control-panel/product-selection/web-cloud/ongoing-operations.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    Clique no botão <code className="action">⁝</code> à direita, depois em <code className="action">Modificar a operação</code>.
+    
+    <img className="thumbnail" alt="Operação do nome de domínio" src="/images/assets/screens/control-panel/product-selection/web-cloud/ongoing-operations/contact-correction.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 3">
+    Na janela que se abre, selecione a opção <code className="action">Relançar a operação</code>, depois clique em <code className="action">Confirmar</code>.
+    
+    <img className="thumbnail" alt="Dados da operação no domínio" src="/images/assets/screens/control-panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 4">
+    Alguns minutos são necessários para concluir a operação. Atualize a página `Operações sobre os meus Nomes de domínio` onde se encontrava a operação de correção do contacto para o seu nome de domínio.
+    
+    Se a operação terminou com sucesso, a linha relativa à operação tratada não aparece mais.
+    
+    Caso contrário, isso significa que uma correção ainda é necessária ao nível das coordenadas do titular do nome de domínio. Neste caso, retome este guia desde o início para corrigir a situação.
+  </Tab>
+</Tabs>
+
+
+
+## Quer saber mais?
+
+[Nome de domínio - Como alterar o titular?](/guides/web-cloud/domains/trade-domain/)
+
+[Como gerir os contactos (gestores) dos serviços OVHcloud](/guides/account-and-service-management/account-information/managing-contacts/).
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,156 @@
+---
+title: Tutorial - Guardar una copia de seguridad de su sitio web WordPress
+description: Descubra cómo realizar el backup del contenido de su sitio web WordPress y de su base de datos
+lastUpdated: 2023-02-22
+---
+
+## Objetivo
+
+Aun tomando todas las precauciones de uso, su sitio web seguirá expuesto a posibles fallos de funcionamiento (error de manipulación, sobrescritura accidental de archivos, fallo de configuración, fallos de seguridad o piratería) que pueden provocar la pérdida parcial o total de sus datos.<br/>
+Una buena práctica consiste en guardar regularmente la información de su sitio web. que le permitirá volver a un estado anterior del sitio web cuando experimente un fallo de funcionamiento.
+
+En un alojamiento web compartido, usted es responsable de las copias de seguridad de su sitio web. Aunque OVHcloud ofrece copias de seguridad (no contractuales), también le recomendamos que realice usted mismo las copias de seguridad regulares y gestione sus propios soportes de backup (disco duro, memoria USB, etc.) para mayor precaución.
+
+:::warning
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+
+Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con [el editor del CMS WordPress](https://wordpress.com/support/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+
+:::
+
+
+**Descubra cómo guardar copia de seguridad del contenido de su sitio web WordPress y su base de datos.**
+
+## Requisitos
+
+- Disponer de un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/) y haber instalado WordPress.
+
+## Procedimiento
+
+Puede realizar una copia de seguridad de dos formas: **manualmente** o a través de **mediante una extensión**.
+
+OVHcloud ofrece un [servicio (no contractual) de backup automático de los datos](/guides/web-cloud/web-hosting/ftp-save-and-backup/), así como la puesta a disposición de estas copias de seguridad. Sin embargo, es su responsabilidad establecer su propia política de restauración y determinar los puntos de restauración en los momentos que considere oportuno.
+
+### Método n°1 - Realizar una copia de seguridad manual
+
+El backup manual debe realizarse en dos pasos. En primer lugar, debe guardar copia de los archivos PHP de su sitio web y exportar la base de datos.
+
+#### 1.1 - Guarde los archivos de su sitio web
+
+La recuperación se realiza a través de un cliente FTP como FileZilla. Para más información, consulte nuestra guía "[Utilizar FileZilla con su alojamiento de OVHcloud](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)".
+
+Al conectarse al servidor por FTP, deberá cargar (arrastrar/soltar) el contenido del directorio `www` en el panel de la derecha. Este directorio contiene todos los archivos y directorios de su sitio web WordPress (configuración, temas, multimedia, etc.).
+
+<img className="thumbnail" alt="Vista raíz de los archivos y directorios WordPress" src="/images/assets/screens/other/web-tools/filezilla/wordpress-into-www.png" loading="lazy" />
+
+Haga clic en el directorio `www` y arrástrelo al directorio que desee en la ventana de la izquierda. La transferencia de archivos comenzará automáticamente.
+
+En caso de fallo de funcionamiento en su sitio web, deberá realizar la operación opuesta sobrescribiendo los archivos de destino.
+
+#### 1.2 - Exporte su base de datos
+
+Para exportar su base de datos, acceda a la interfaz _PHPMyAdmin_ a través de la URL que le ha sido comunicada al contratar su plan de hosting.
+
+:::tip[Success]
+No dude en consultar nuestra guía sobre [la exportación de una base de datos](/guides/web-cloud/web-hosting/sql-database-export/).
+
+:::
+
+
+<img className="thumbnail" alt="Acceso PHPMyAdmin - Inicio" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png" loading="lazy" />
+
+Haga clic en <code className="action">Exportar</code> en la parte superior de la página:
+
+<img className="thumbnail" alt="Acceso PHPMyAdmin - Exportar" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-export.png" loading="lazy" />
+
+Deje las opciones ofrecidas por defecto: método de exportación rápido y formato SQL.
+
+Haga clic en <code className="action">Ejecutar</code> y descargue la base de datos completa en formato SQL (Structured Query Language).
+
+<img className="thumbnail" alt="Acceso PHPMyAdmin - Exportar - Descarga" src="/images/assets/screens/other/browsers/web-pages/dowload-successfull.png" loading="lazy" />
+
+### Método n°2 - Realizar una copia de seguridad con una extensión
+
+Las extensiones de WordPress permiten gestionar las copias de seguridad. La más popular es [UdraftPlus](https://wordpress.org/plugins/updraftplus/), que cuenta con varios millones de instalaciones activas. La versión gratuita es suficiente para guardar copia de su sitio web. La versión premium ofrece más opciones, como copias de seguridad incrementales, herramienta de migración, backup multisitio, más opciones en los clouds destinados a almacenar los datos, etc.
+
+Descargue la extensión en formato directo `.zip` en su equipo. En aras de la claridad, el archivo descargado de la extensión se renombrará **updraftplus.zip** en el resto de este tutorial.
+
+#### 2.1 - Conéctese al panel de administración para instalar la extensión
+
+Por defecto, se trata de su nombre de dominio seguido de `wp-admin` :
+
+<img className="thumbnail" alt="Acceso de administrador a wp-admin" src="/images/assets/screens/other/cms/wordpress/login-interface.png" loading="lazy" />
+
+En la página de inicio, acceda a la sección <code className="action">Plugins</code> y haga clic en <code className="action">Añadir nuevo</code>.
+
+<img className="thumbnail" alt="Añadir una extensión" src="/images/assets/screens/other/cms/wordpress/plugins-add-new.png" loading="lazy" />
+
+Descargue la extensión haciendo clic en el botón <code className="action">Recorrer</code> :
+
+<img className="thumbnail" alt="Subir la extensión" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-add-new-updraftplus.png" loading="lazy" />
+
+Haga clic en <code className="action">Instalar ahora</code> :
+
+<img className="thumbnail" alt="Instalar la extensión" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-browse-updraftplus.png" loading="lazy" />
+
+Una vez instalada, deberá activar la extensión:
+
+<img className="thumbnail" alt="Confirmación de la instalación" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-activate-updraftplus.png" loading="lazy" />
+
+Una vez activada, aparecerá en la lista de extensiones:
+
+<img className="thumbnail" alt="Lista de extensiones instaladas" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-list-updraftplus.png" loading="lazy" />
+
+#### 2.2 - Configure sus copias de seguridad
+
+En la página de configuración, haga clic en el botón <code className="action">Ajustes</code> > `UpdraftPlus Backup/Restore` y seleccione la pestaña <code className="action">Ajustes</code>.
+
+<img className="thumbnail" alt="Página UpdraftPlus Backup/Restore" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings.png" loading="lazy" />
+
+Establezca la copia de seguridad diaria de sus archivos y su base de datos:
+
+<img className="thumbnail" alt="Página UpdraftPlus Ajustes" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings-2.png" loading="lazy" />
+
+Seleccione la copia de seguridad por correo electrónico.
+
+Las copias de seguridad se enviarán a la dirección de correo electrónico de la cuenta de administrador (la cuenta que utilice):
+
+<img className="thumbnail" alt="Backup por correo electrónico" src="/images/assets/screens/other/cms/wordpress/email-setting.png" loading="lazy" />
+
+Al final de la página, haga clic en <code className="action">Guardar cambios</code> para aceptar.
+
+#### 2.3 - Realice su primera copia de seguridad
+
+Vuelva a la pestaña <code className="action">Copia de seguridad/Restaurar</code> y haga clic en el botón <code className="action">Hacer ahora una copia de seguridad</code>.
+
+<img className="thumbnail" alt="Página Updraft Plus Guardar/Restaurar" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-backup-now.png" loading="lazy" />
+
+En la nueva ventana, vuelva a hacer clic en el botón <code className="action">Hacer ahora una copia de seguridad</code>.
+
+<img className="thumbnail" alt="Página UpdraftPlus modal Guardar/Restaurar" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-perform-backup.png" loading="lazy" />
+
+Una vez completadas las copias de seguridad, recibirá dos mensajes de correo electrónico: uno con el contenido de su WordPress y el otro con la base de datos de su sitio web.
+Si no recibe los mensajes de correo, compruebe la dirección de correo electrónico de la cuenta que utiliza (en la sección <code className="action">Usuarios</code>). Compruebe también sus carpetas "SPAM / Correo no deseado".
+
+### ¿Con qué frecuencia se realizan copias de seguridad?
+
+La frecuencia de las copias de seguridad depende de la frecuencia con la que modifique el contenido. Una copia de seguridad diaria es útil si publicas a diario contenido en su sitio web. Adapte la frecuencia a la de sus publicaciones. Es posible actualizar la versión manualmente (esta es la opción predeterminada). También es recomendable realizar una copia de seguridad cuando instale o modifique un tema o una extensión.
+
+### Lo que hay que recordar
+
+- La integración de copias de seguridad regulares es una buena forma de proteger el contenido de su sitio web.
+- Asegúrese de que sus propias copias de seguridad estén a salvo.
+- Realice una copia de seguridad antes de realizar una actualización, comprobando que todo funciona correctamente en su sitio web. 
+
+Aplicando estas buenas prácticas, podrá volver a una versión anterior sana.
+
+## Más información <a name="go-further"></a>
+
+- [Sitio oficial de WordPress](https://wordpress.org)
+- [Más información sobre las copias de seguridad de su alojamiento web](/guides/web-cloud/web-hosting/hosting-technical-specificities#informacion-tecnica-de-su-alojamiento-web/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

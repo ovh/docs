@@ -1,0 +1,269 @@
+---
+title: AI Endpoints - Integration with Hugging Face Inference Providers
+description: Find out how to use OVHcloud AI Endpoints through Hugging Face Inference Providers
+lastUpdated: 2026-02-16
+---
+
+:::info
+
+AI Endpoints is covered by the [OVHcloud AI Endpoints conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud special conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
+
+:::
+
+
+**New integration available:** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en-gb/public-cloud/ai-endpoints/) with [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/index/). This integration offers streamlined, unified access to world-class inference partners, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
+
+## Objective
+
+OVHcloud [AI Endpoints](https://www.ovhcloud.com/en-gb/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day-to-day developments.
+
+In this guide, we will show how to use [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/index/) to access OVHcloud [AI Endpoints](https://www.ovhcloud.com/en-gb/public-cloud/ai-endpoints/) models through Hugging Face's unified interface.
+
+With Hugging Face's Inference Providers and OVHcloud's scalable AI infrastructure, you can access a wide range of AI models using familiar APIs, whether you're working in Python or JavaScript/TypeScript.
+
+<img className="thumbnail" alt="Hugging Face" src="/images/public-cloud/ai-machine-learning/endpoints-tuto-18-huggingface-integration/header-huggingface.png" loading="lazy" />
+
+## Definition
+
+- [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/index/): A platform that offers streamlined, unified access to hundreds of machine learning models powered by world-class inference partners. It provides a single interface to access models from multiple providers, including OVHcloud AI Endpoints, with flexible provider selection strategies.
+- [AI Endpoints](https://www.ovhcloud.com/en-gb/public-cloud/ai-endpoints/): A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
+
+### Why is this integration important?
+
+This new integration offers you several advantages:
+
+- **Unified access**: Access hundreds of models through a single, familiar interface.
+- **Flexibility**: Choose between automatic, performance-based, or provider-specific selection.
+- **Multi-language support**: Use Python or JavaScript/TypeScript with the same models.
+- **OpenAI compatibility**: Use the OpenAI SDK for familiar syntax.
+- **Cost control**: Choose between Hugging Face billing or Bring Your Own Key (BYOK) with OVHcloud AI Endpoints.
+
+## Requirements
+
+Before getting started, make sure you have:
+
+1. An OVHcloud account with access to AI Endpoints.
+2. A Hugging Face account (sign up at [huggingface.co](https://huggingface.co/join)).
+3. A Hugging Face access token with "Make calls to Inference Providers" permissions (create at [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)).
+4. Python 3.8 or higher (for Python usage) or Node.js (for JavaScript/TypeScript usage).
+5. Optionally, an OVHcloud AI Endpoints API key for Bring Your Own Key (BYOK) billing.
+
+<img className="thumbnail" alt="Generate an API key" src="/images/public-cloud/ai-machine-learning/endpoints-tuto-18-huggingface-integration/generate_an_api_key.png" loading="lazy" />
+
+## Instructions
+
+### Installation
+
+#### Python
+
+Install the required packages via pip:
+
+```bash
+pip install huggingface_hub
+```
+
+Then, you can authenticate yourself with:
+
+```bash
+hf auth login # get a read token from hf.co/settings/tokens
+```
+
+or add your key to the environment variable `export HF_TOKEN=...`.
+
+You are now ready to get started.
+
+#### JavaScript / TypeScript
+
+Install the required packages via npm:
+
+```bash
+npm install @huggingface/inference
+```
+
+And add your key to the environment variable `export HF_TOKEN=...`.
+
+You can now get started.
+
+### Basic configuration
+
+#### Bring Your Own Key (BYOK)
+
+You can also use your OVHcloud AI Endpoints API key directly for billing through OVHcloud instead of Hugging Face. To enable this:
+
+1. Go to [Hugging Face Inference Providers settings](https://huggingface.co/settings/inference-providers/settings).
+2. Add your OVHcloud AI Endpoints API key.
+3. Usage will be billed directly to your OVHcloud PCI project.
+
+### Basic usage
+
+#### Python - using OpenAI SDK
+
+Here's a simple usage example using the Hugging Face Hub SDK:
+
+```python
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://router.huggingface.co/v1",
+    api_key=os.environ["HF_TOKEN"],
+)
+
+completion = client.chat.completions.create(
+    model="openai/gpt-oss-120b:ovhcloud",
+    messages=[
+        {
+            "role": "system",
+            "content": "You are a helpful AI assistant."
+        },
+        {
+            "role": "user",
+            "content": "What is the capital of France?"
+        }
+    ],
+    temperature=0.7,
+    max_tokens=100,
+)
+
+print(completion.choices[0].message.content)
+```
+
+#### Python - using Hugging Face Hub client
+
+Alternatively, use the native Hugging Face Hub client:
+
+```python
+import os
+from huggingface_hub import InferenceClient
+
+client = InferenceClient()
+
+completion = client.chat.completions.create(
+    model="openai/gpt-oss-120b:ovhcloud",
+    messages=[
+        {
+            "role": "user",
+            "content": "How many 'G's in 'huggingface'?"
+        }
+    ],
+)
+
+print(completion.choices[0].message)
+```
+
+#### JavaScript - using Hugging Face Inference client
+
+Here's a simple usage example in JavaScript:
+
+```javascript
+import { InferenceClient } from "@huggingface/inference";
+
+const client = new InferenceClient(process.env.HF_TOKEN);
+
+const chatCompletion = await client.chatCompletion({
+  model: "openai/gpt-oss-120b:ovhcloud",
+  messages: [
+    {
+      role: "user",
+      content: "How many 'G's in 'huggingface'?",
+    },
+  ],
+});
+
+console.log(chatCompletion.choices[0].message);
+```
+
+#### JavaScript - using OpenAI SDK
+
+You can also use the OpenAI SDK in JavaScript:
+
+```javascript
+import OpenAI from "openai";
+
+const client = new OpenAI({
+  baseURL: "https://router.huggingface.co/v1",
+  apiKey: process.env.HF_TOKEN,
+});
+
+const completion = await client.chat.completions.create({
+  model: "openai/gpt-oss-120b:ovhcloud",
+  messages: [
+    {
+      role: "user",
+      content: "How many 'G's in 'huggingface'?",
+    },
+  ],
+});
+
+console.log(completion.choices[0].message.content);
+```
+
+### Advanced features
+
+#### Provider selection strategies
+
+Hugging Face offers flexible provider selection strategies to optimize for your needs:
+
+**Automatic selection (default)**
+
+Uses the first available provider based on your preference order:
+
+`openai/gpt-oss-120b`
+
+**Specific provider**
+
+Force the OVHcloud provider:
+
+`openai/gpt-oss-120b:ovhcloud`
+
+**Performance-based selection**
+
+Select the fastest provider (highest throughput):
+
+`openai/gpt-oss-120b:fastest`
+
+Select the cheapest provider (lowest cost per token):
+
+`openai/gpt-oss-120b:cheapest`
+
+**Setting provider preferences**
+
+Configure your preferred provider order at [huggingface.co/settings/inference-providers](https://huggingface.co/settings/inference-providers).
+
+### Available models
+
+OVHcloud AI Endpoints offers a wide range of models accessible via Hugging Face Inference Providers. For the complete and up-to-date list, visit our [model catalog](https://www.ovhcloud.com/en-gb/public-cloud/ai-endpoints/catalog/) or browse [OVHcloud models on Hugging Face](https://huggingface.co/models?inference_provider=ovhcloud&sort=trending).
+
+### Pricing and billing
+
+Hugging Face Inference Providers uses a pay-as-you-go model with flexible billing options:
+
+- **Hugging Face billing**: Usage is billed directly to your Hugging Face account.
+- **No setup costs**: No infrastructure or commitment required.
+- **Cost control**: Monitor usage in your [Hugging Face settings](https://huggingface.co/settings/billing).
+- **Bring Your Own Key (BYOK)**: Use your OVHcloud AI Endpoints API key to be billed directly by OVHcloud instead of Hugging Face. Configure this in [Hugging Face Inference Providers settings](https://huggingface.co/settings/inference-providers/settings).
+
+### Conclusion
+
+In this article, we explored how to integrate OVHcloud AI Endpoints with Hugging Face Inference Providers to seamlessly access a wide range of AI models through a unified interface. Thanks to Hugging Face's Inference Providers, you can use familiar APIs in Python or JavaScript/TypeScript, with flexible provider selection and billing options, while OVHcloud AI Endpoints ensures secure, scalable, and production-ready AI infrastructure.
+
+## Go further
+
+You can find more information about Hugging Face Inference Providers on their [official documentation](https://huggingface.co/docs/inference-providers/). You can also browse the [AI Endpoints catalog](https://www.ovhcloud.com/en-gb/public-cloud/ai-endpoints/catalog/) to explore the models that are available.
+
+For detailed information about OVHcloud on Hugging Face Inference Providers, visit the [OVHcloud provider documentation](https://huggingface.co/docs/inference-providers/providers/ovhcloud/).
+
+Browse [OVHcloud models on Hugging Face](https://huggingface.co/models?inference_provider=ovhcloud&sort=trending) to discover all available models.
+
+For more information about the Hugging Face Hub Python library, visit the [official documentation](https://huggingface.co/docs/huggingface_hub/).
+
+Browse the full AI Endpoints documentation to further understand the main concepts and get started.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+## Feedback
+
+Please feel free to send us your questions, feedback, and suggestions regarding AI Endpoints and its features:
+
+- In the #ai-endpoints channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud), where you can engage with the community and OVHcloud team members.
+- Join the Hugging Face community on [Discord](https://discord.com/invite/hugging-face-879548962464493619) for questions about Hugging Face Inference Providers.

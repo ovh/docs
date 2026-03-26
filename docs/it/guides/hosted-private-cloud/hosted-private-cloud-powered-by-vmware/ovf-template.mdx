@@ -1,0 +1,119 @@
+---
+title: Installare un template OVF Windows e SQL Server
+description: Scopri come installare un template OVF Windows e SQL Server
+lastUpdated: 2020-10-12
+---
+
+:::info
+Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+
+:::
+
+
+## Obiettivo
+
+OVHcloud propone templates Linux, Windows Server e Windows SQL server (in formato OVF) che puoi distribuire direttamente dal tuo client Web (HTML 5).
+
+Le VM Windows implementate a partire da un template utilizzano automaticamente le licenze SPLA fornite da OVHcloud. Il deploy di una VM Windows attiverà automaticamente una fatturazione aggiuntiva.
+
+**Questa guida ti spiega dove trovare i file immagine e come procedere all’installazione.**
+
+:::info
+Per trovare le tariffe delle immagini proposte da OVHcloud, visita la pagina [Immagini e Licenze](https://www.ovhcloud.com/it/hosted-private-cloud/vmware/images-licenses/).
+
+:::
+
+
+## Prerequisiti
+
+- Avere accesso al client Web (HTML5)
+- [Avere attivato le licenze di Windows](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud#licenze-windows/) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) (scheda <code className="action">Licenza Windows</code> del datacenter) 
+
+## Procedura
+
+### Recupera l’URL del template OVF
+
+Da un browser, vai alla home del tuo Private Cloud e clicca su <code className="action">OVH Template</code>.
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/gatewayssl.png" loading="lazy" />
+
+Nella schermata `OVH Templates` che appare, potete accedere ai dettagli dei templates Linux, Windows e SQL proposti. 
+
+Seleziona il template, si aprirà una finestra che ti proporrà i link che ti serviranno per il deploy in funzione della tua versione di vSphere.
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/copylink.png" loading="lazy" />
+
+### Installa il template OVF
+
+Una volta connesso al client Web vSphere, vai alla pagina <code className="action">Host and Clusters</code>, clicca con il tasto destro sul tuo datacenter e successivamente su <code className="action">Deploy OVH Template..</code>.
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/01selectdeploy.png" loading="lazy" />
+
+Non appena visualizzi il menu contestuale, puoi iniziare a personalizzare l’installazione. Nel primo step, è necessario aggiungere il link che hai recuperato in precedenza:
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/02puturl.png" loading="lazy" />
+
+Lo step successivo ti permette di scegliere il datacenter:
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/03selectdatacenter.png" loading="lazy" />
+
+In seguito scegli il cluster nel quale verrà installata la macchina virtuale:
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/04selectcluster.png" loading="lazy" />
+
+Trovi tutti i dettagli del template e, in particolare, la password predefinita. Per motivi di sicurezza, è importante cambiarla al momento dalla prima connessione:
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/05detailstemplate.png" loading="lazy" />
+
+Scegli il datastore nel quale verrà archiviata la macchina virtuale, così come il formato del disco: 
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/06selectdatastore.png" loading="lazy" />
+
+Scegli la rete da utilizzare.
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/07selectnetwork.png" loading="lazy" />
+
+Ora che l’operazione è quasi terminata, puoi visualizzare un riepilogo della configurazione:
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/08resume.png" loading="lazy" />
+
+Dopo aver cliccato su <code className="action">Finish</code>, viene creato un task per poter seguire l’installazione:
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/09startdeploy.png" loading="lazy" />
+
+Una volta terminata l’installazione, puoi chiudere la finestra.
+
+Puoi ritrovare nel tuo inventario la macchina virtuale appena installata. 
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/10inventory.png" loading="lazy" />
+
+### Completamento dell'installazione per SQL Server
+
+Avvia la tua macchina virtuale con la massima semplicità e apri la console.
+
+Apri la sessione Windows e inserisci il nome della tua istanza SQL, la password e i giochi di carattere desiderati nella finestra prevista a tal fine.
+
+<img className="thumbnail" alt="Nome della foto" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-template/sqlinformations.png" loading="lazy" />
+
+:::info
+Ti consigliamo di impostare una password conforme a questi criteri:
+
+* Contenere almeno otto caratteri.
+* Contenere almeno tre tipi di caratteri (maiuscole, minuscole, cifre, caratteri speciali).
+* non essere tratta dal dizionario
+* Non includere informazioni personali (nome, cognome o data di nascita)
+
+:::
+
+
+Una volta inserite le informazioni, clicca su <code className="action">OK</code>.
+
+Si aprirà una finestra con l'immagine del deploy. Alla fine del processo si aprirà un'ultima finestra che ti informerà del successo del deploy.
+
+Clicca di nuovo su <code className="action">OK</code> per completare l'installazione e riavviare la macchina virtuale.
+
+A seguito di questo riavvio, potrai iniziare ad utilizzare la tua macchina virtuale.
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

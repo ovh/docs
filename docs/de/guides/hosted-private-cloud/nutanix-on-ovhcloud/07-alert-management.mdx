@@ -1,0 +1,143 @@
+---
+title: Verwaltung von Warnungen und Ereignissen (EN)
+description: Analysing and modifying alerts and events in a Nutanix cluster
+lastUpdated: 2022-03-17
+---
+
+## Objective
+
+This guide details how to view alerts and events, and create custom alerts.
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+
+This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+
+:::
+
+
+## Requirements
+
+- A Nutanix cluster in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de)
+- You must be connected to the cluster via Prism Central
+
+## Defining alerts, events, and tasks in Prism Central
+
+Everything that happens in a cluster associated with Prism Central is recorded in the **events**.
+
+When an anomaly occurs, such as excessive CPU usage on a virtual machine, **alerts** are triggered automatically.<br/>
+Prism Central alerts are in addition to Prism Element alerts.
+
+You can add custom alerts to increase sensitivity on an item in the cluster.<br/>
+Alerts can be sent to recipients through e-mail.
+
+Each action that a Prism Central user performs appears as a **task** and is listed with a *complete*, *in progress*, or *in error* status.
+
+## Instructions
+
+### Configuring SMTP Server in Prism Central
+
+In order for **Prism Central** to send alerts, you must configure an SMTP server.
+
+Click the <code className="action">Gear</code> icon in the top right of the **Prism Central** interface to configure it.
+
+<img className="thumbnail" alt="Configure Prism Central SMTP Server 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/ConfigurePrismCentralSmtp01.PNG" loading="lazy" />
+
+In the right-hand menu, click <code className="action">SMTP Server</code>.
+
+Enter the SMTP server sending settings and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Configure Prism Central SMTP Server 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/ConfigurePrismCentralSmtp02.PNG" loading="lazy" />
+
+### Managing alerts 
+
+Open the main menu in the top left-hand corner.
+
+Select <code className="action">Alerts</code> from the Activity menu.
+
+<img className="thumbnail" alt="Display Alert 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/DisplayAlert01.PNG" loading="lazy" />
+
+The list of triggered alerts appears. Configure recipients by clicking <code className="action">Email Configuration</code>.
+
+<img className="thumbnail" alt="Display Alert 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/DisplayAlert02.PNG" loading="lazy" />
+
+Enter recipient names in the "Email Recipients" input box and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Configure Alert Mail 01 " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/ConfigureAlertMail01.PNG" loading="lazy" />
+
+#### Creating a custom alert
+
+To create a custom alert with different trigger thresholds, click <code className="action">Alerts Policies</code> and select <code className="action">User Defined</code>. 
+
+<img className="thumbnail" alt="Create Alert 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/CreateAlert01.PNG" loading="lazy" />
+
+Then click <code className="action">Create Alert Policy</code>.
+
+On the left, select the settings you want to monitor, such as, in the example below, CPU usage on a single virtual machine.
+
+Next, modify the Behavioral Anomaly settings by ticking <code className="action">Every time there is an anomaly, alert</code> and choosing <code className="action">Critical</code>.
+
+Change the "Static Threshold" settings by ticking <code className="action">Alert Critical if</code> and choosing a threshold higher than 60%.
+
+Click <code className="action">Save</code> to save the custom alert.
+
+<img className="thumbnail" alt="Create Alert 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/CreateAlert02.PNG" loading="lazy" />
+
+The alert you have created will then appear in the list.
+
+<img className="thumbnail" alt="Create Alert 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/CreateAlert03.PNG" loading="lazy" />
+
+#### Resolving an alarm
+
+In **Prism Central**, when an alarm is triggered, a red circle appears in the top right next to a bell. This alert will disappear after 180 minutes if the threshold has returned to normal.
+
+The trigger threshold may return to normal within 180 minutes. In this case, you can delete the alert manually.
+
+To delete an alert manually, click the red numbered circle.
+
+<img className="thumbnail" alt="Show triggered alarm 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/ShowTriggeredAlarm01.PNG" loading="lazy" />
+
+The raised alarm appears.
+
+<img className="thumbnail" alt="Show triggered alarm 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/ShowTriggeredAlarm02.PNG" loading="lazy" />
+
+Select the alarm and click <code className="action">Resolve</code>.
+
+<img className="thumbnail" alt="Resolv Alarm 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/ResolvAlarm01.PNG" loading="lazy" />
+
+The alarm is then resolved and no longer appears in the **Prism Central dashboard**.
+
+<img className="thumbnail" alt="Resolv Alarm 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/ResolvAlarm02.PNG" loading="lazy" />
+
+### Viewing Events
+
+Click in the main menu in the top left-hand corner.
+
+Select <code className="action">Events</code> from the Activity menu.
+
+<img className="thumbnail" alt="Display Events 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/DisplayEvents01.PNG" loading="lazy" />
+
+The list of events is displayed.
+
+<img className="thumbnail" alt="Display Events 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/DisplayEvents02.PNG" loading="lazy" />
+
+### Viewing Tasks
+
+Click in the main menu in the top left-hand corner.
+
+Select <code className="action">Tasks</code> from the Activity menu.
+
+<img className="thumbnail" alt="Display Task 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/DisplayTasks01.PNG" loading="lazy" />
+
+The task list appears.
+
+<img className="thumbnail" alt="Display Tasks 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/07-alert-management/DisplayTasks02.PNG" loading="lazy" />
+
+## Go further <a name="gofurther"></a>
+
+[Alert and event management in Prism Central](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-Prism-v5_20:mul-alerts-management-pc-c.html)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

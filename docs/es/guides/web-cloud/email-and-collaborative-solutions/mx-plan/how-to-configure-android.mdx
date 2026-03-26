@@ -1,0 +1,190 @@
+---
+title: MX Plan - Configurar una dirección de correo electrónico en Gmail para Android
+description: Cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail
+lastUpdated: 2024-10-01
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para enviar y recibir mensajes desde su dispositivo sin necesidad de una nueva aplicación. Esta guía explica cómo configurar una cuenta MX Plan desde la aplicación Gmail de los dispositivos Android.
+
+**Esta guía explica cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail.**
+
+:::warning
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+
+Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado «Más información» de esta guía.
+
+:::
+
+
+## Requisitos
+
+- Disponer de una dirección de correo electrónico MX Plan (incluida en la solución MX Plan o en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/)).
+- Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store si aún no está presente.
+- Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
+
+:::info
+Esta documentación se ha realizado desde un dispositivo que utiliza la versión 13 de Android.
+
+:::
+
+
+## Procedimiento
+
+### Cómo añadir una cuenta de correo
+
+Abra la aplicación <code className="action">Gmail</code> desde la pantalla de inicio de su dispositivo.
+
+<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-00.png" loading="lazy" />
+
+La adición de una cuenta se realizará de forma diferente **si no hay ninguna cuenta configurada** o **si ya hay una cuenta configurada**. Seleccione la ficha correspondiente a una de las dos situaciones mencionadas:
+
+<Tabs>
+  <Tab label="Primera configuración:">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-first.png" loading="lazy" />|Seleccione <code className="action">Añadir una dirección de correo</code>|
+  </Tab>
+  <Tab label="Configuración existente">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-existing.png" loading="lazy" />|1. Acceda al menú situado en la parte superior izquierda de la pantalla<br/><br/>2. Seleccione <code className="action">Configuración</code><br/><br/>3. Seleccione <code className="action">Añadir una cuenta</code>|
+  </Tab>
+</Tabs>
+
+
+Siga los siguientes pasos de configuración en las fichas siguientes:
+
+<Tabs>
+  <Tab label="Paso 1">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-01.png" loading="lazy" />|En el menú de tipos de cuenta de correo, seleccione <code className="action">Otra</code>.|
+  </Tab>
+  <Tab label="Paso 2">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-02.png" loading="lazy" />|Introduzca su dirección de correo electrónico.|
+  </Tab>
+  <Tab label="Paso 3">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-03.png" loading="lazy" />|Seleccione el protocolo de recepción de correo. Le recomendamos que seleccione <code className="action">Personal (IMAP)</code><br/><br/>Encontrará [más información sobre los protocolos POP e IMAP](#popimap) al final de esta guía para entender sus diferencias.|
+  </Tab>
+  <Tab label="Paso 4">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-04.png" loading="lazy" />|Introduzca la contraseña de su dirección de correo electrónico. |
+  </Tab>
+  <Tab label="Paso 5">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-05.png" loading="lazy" />|Complete la configuración de "**servidor de entrada**"<br/><br/>- **Nombre de usuario**: Su dirección de correo electrónico completa<br/>- **Contraseña**: La contraseña de su dirección de correo<br/>- **Servidor**: introduzca **ssl0.ovh.net** |
+  </Tab>
+  <Tab label="Paso 6">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-06.png" loading="lazy" />|Complete la **configuración del servidor saliente**<br/><br/>- **Nombre de usuario**: Su dirección de correo electrónico completa<br/>- **Contraseña**: La contraseña de su dirección de correo<br/>- **Servidor SMTP**: introduzca **ssl0.ovh.net** |
+  </Tab>
+  <Tab label="Paso 7">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-07.png" loading="lazy" />|Elija la frecuencia con la que quiere sincronizar el correo.|
+  </Tab>
+  <Tab label="Paso 8">
+    | | |
+    |---|---|
+    |<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-08.png" loading="lazy" />|Averigüe el nombre mostrado de su dirección de correo electrónico en la aplicación Gmail y pulse <code className="action">Siguiente</code>|
+  </Tab>
+</Tabs>
+
+
+Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla Ya puede enviar y recibir mensajes desde su aplicación Gmail.
+
+:::tip[Success]
+OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador, disponible en la dirección [Webmail](https://www.ovhcloud.com/es-es/mail/). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico.
+
+:::
+
+
+### Configuración POP, IMAP y SMTP
+
+Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recomendamos que utilice **IMAP**. También puede seleccionar **POP**. Para entender cómo funcionan, consulte nuestra sección [«POP o IMAP, ¿cuál es la diferencia?».](#popimap)
+
+- **Configuración en POP**
+
+|Elemento|Descripción|
+|---|---|
+|Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
+|Contraseña|Introduzca la contraseña de la dirección de correo|
+|Servidor|ssl0.ovh.net|
+|Puerto|995|
+|Tipo de seguridad|SSL/TLS|
+
+- **Configuración en IMAP**
+
+|Elemento|Descripción|
+|---|---|
+|Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
+|Contraseña|Introduzca la contraseña de la dirección de correo|
+|Servidor|ssl0.ovh.net|
+|Puerto|993|
+|Tipo de seguridad|SSL/TLS|
+
+Para el envío de mensajes de correo electrónico, si tiene que introducir manualmente los parámetros **SMTP** en las preferencias de la cuenta, a continuación encontrará los parámetros que debe utilizar:
+
+- **Configuración SMTP**
+
+|Elemento|Descripción|
+|---|---|
+|Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
+|Contraseña|Introduzca la contraseña de la dirección de correo|
+|Servidor|ssl0.ovh.net|
+|Puerto|465|
+|Tipo de seguridad|SSL/TLS|
+
+### POP o IMAP, ¿cuál es la diferencia? <a name="popimap"></a>
+
+Cuando configure manualmente su dirección de correo electrónico, el cliente de correo le preguntará si desea utilizar el protocolo **POP** (**P**ost **O**ffice **P**rotocol) o **IMAP** (**I**nternet **M**essage **A**ccess Protocol). Para entender mejor los protocolos POP e IMAP, es necesario configurar la dirección de correo electrónico.
+
+Al configurar el cliente de correo, debe introducir la información del **servidor entrante** para recibir los mensajes de correo electrónico y el **servidor saliente** para enviar los mensajes de correo electrónico. Para enviar los emails no hay elección, se utiliza el protocolo **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol). Para la recepción, podrá elegir entre **POP** o **IMAP**.
+
+<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-popimap-01.png" loading="lazy" />
+
+Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a desglosar los elementos que componen el tratamiento de sus mensajes de correo en recepción:
+
+1. **Su dispositivo**: un ordenador, un smartphone o una tablet. Es su soporte de consulta.
+
+2. **Su cliente de correo** : programa o aplicación dedicado() a la gestión de su correo. Su elección determinará el nivel de usabilidad y de funcionalidades que necesitará para consultar su correo.
+
+3. **Protocolo de recepción**: la elección que determina la forma de registrar los mensajes de correo en su dispositivo. Su elección afectará a otros dispositivos que consulten la misma cuenta de correo.
+    - **IMAP**: su cliente de correo consulta el servidor de correo y descarga los mensajes de correo en su dispositivo. Al consultar un mensaje de correo no leído, el servidor lo marca como «leído» por defecto. Otros dispositivos configurados con IMAP verán este estado y verán este correo electrónico hasta que se elimine en uno de los dispositivos.
+    - **POP**: su cliente de correo consulta el servidor de correo y descargará los mensajes de correo en su dispositivo. De forma predeterminada, una vez que el mensaje de correo electrónico se ha descargado en el dispositivo, se elimina del servidor. Como resultado, otros dispositivos conectados a esta dirección de correo electrónico no podrán ver este correo electrónico.
+
+<img className="thumbnail" alt="MX Plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/mxplan-android-popimap-02.png" loading="lazy" />
+
+:::info
+Esta descripción es un resumen y representa el funcionamiento estándar de ambos protocolos. Es posible configurar el PoP para que los mensajes de correo no se eliminen al recibir los mensajes. El objetivo aquí es describir el funcionamiento nativo de estos dos protocolos y evitar manipulaciones adicionales para ajustarse a sus necesidades.
+
+:::
+
+
+## Más información
+
+:::info
+Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación de Gmail en Android, consulte [el Centro de ayuda de Google](https://support.google.com/mail/answer/6078445?hl=es-CA&co=GENIE.Platform%3DAndroid#zippy=%2Añadir-una-cuenta).
+
+:::
+
+
+[Configurar una cuenta Email Pro en Android utilizando la aplicación Gmail](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-android/)
+
+[Configurar una cuenta Exchange en Android utilizando la aplicación Gmail](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-android/)
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

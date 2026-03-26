@@ -1,0 +1,148 @@
+---
+title: How to upgrade the resources of a VPS
+description: Find out how to upgrade your RAM, vCPU, or storage in the OVHcloud Control Panel
+lastUpdated: 2025-09-08
+---
+
+
+
+## Objective
+
+Our VPS services offer flexibility, reliability, and performance for a variety of hosting needs. You can proceed with upgrading your RAM, vCPU, or storage in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+**Learn how to add vCores, memory, and storage to your VPS service.** 
+
+## Requirements
+
+- A [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Navigation path:** <code className="action">Bare Metal Cloud</code> > <code className="action">Virtual private servers</code> > Select your VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+## Instructions
+
+:::info
+The upgrade options available in your Control Panel depend on the range and model of the selected VPS. The screenshots below are for the purpose of illustration and do not refer to a concrete VPS upgrade scenario.
+
+:::
+
+
+From here you can upgrade your vCores (`1`), memory (`2`), or storage (`3`).
+
+<img className="thumbnail" alt="Upgrade resources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade01.png" loading="lazy" />
+
+### 1. To add **vCores**
+
+Under the **Home** tab in the **Your configuration** panel, click <code className="action">Add vCores by upgrading to the higher range</code>.
+
+Choose a new model and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Upgrade resources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade02.png" loading="lazy" />
+
+Choose your memory and storage options and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Upgrade resources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade03.png" loading="lazy" />
+
+Accept (<code className="action">☑</code>) the **Terms & conditions** and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Upgrade resources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade04.png" loading="lazy" />
+
+Review your changes and click <code className="action">Order</code>.
+
+<img className="thumbnail" alt="Upgrade resources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade05.png" loading="lazy" />
+
+### 2. To upgrade **Memory**
+
+Under the **Home** tab in the **Your configuration** panel, click on the amount of memory you want. The options available depend on the VPS range you currently have.
+
+In the pop‑up window, click <code className="action">Confirm and pay</code> to finalize your order.
+
+<img className="thumbnail" alt="Upgrade resources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade06.png" loading="lazy" />
+
+### 3. To upgrade **Storage**
+
+Under the **Home** tab in the **Your configuration** panel, click on the amount of storage you want. The options available depend on the VPS range you currently have.
+
+In the pop‑up window, click <code className="action">Confirm and pay</code> to finalize your order.
+
+<img className="thumbnail" alt="Upgrade resources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade07.png" loading="lazy" />
+
+See our dedicated guide for the next steps: [How to repartition a VPS after a storage upgrade](/guides/bare-metal-cloud/virtual-private-servers/upsize-vps-partition/)
+
+## FAQ
+
+<details>
+
+<summary>Will I have the same IP address?</summary>
+
+
+Yes, you will keep the same IP address after upgrading your VPS.
+
+</details>
+
+
+<details>
+
+<summary>Do I keep my data on the server?</summary>
+
+
+Yes, after an upgrade you will still have your data. When upgrading your drive you may have to expand the partitions.
+
+</details>
+
+
+<details>
+
+<summary>What happens to the backup/snapshot? Can I use it on the new VPS?</summary>
+
+
+Yes. After upgrades you will still have access to your backups and snapshots.
+
+</details>
+
+
+<details>
+
+<summary>What happens to the software license on the old VPS? Can they be automatically moved over to the new VPS?</summary>
+
+
+If you have an active license, it will remain attached to the VPS. The pricing may change based on the license agreement or requirements with the provider.  
+If there are any changes to the license, they will be explained before upgrading the VPS.
+
+</details>
+
+
+<details>
+
+<summary>Would the bandwidth change?</summary>
+
+
+In some cases the bandwidth may change, specifically when moving from a lower‑tier VPS to the next tier.
+
+</details>
+
+
+<details>
+
+<summary>Would this upgrade be immediate, or would I have time to use both at the same time (configure, transfer data, etc.)?</summary>
+
+
+The upgrade will be effective immediately, keeping all of your data. Upgrading will allocate more resources to your existing VPS.
+
+</details>
+
+
+
+## Go further
+
+[VPS FAQ](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

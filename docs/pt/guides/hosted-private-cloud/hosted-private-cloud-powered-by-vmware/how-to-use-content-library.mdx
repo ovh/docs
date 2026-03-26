@@ -1,0 +1,61 @@
+---
+title: Deploy an OVF template through content libraries (EN)
+description: Find out how to deploy an OVF template from your vSphere, via content libraries
+lastUpdated: 2023-06-15
+---
+ 
+## Objective
+
+OVHcloud offers OVF templates that you can deploy directly from your vSphere *(version 7.0 or later)* across [content libraries](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-254B2CE8-20A8-43F0-90E8-3F6776C2C896.html).
+
+**This guide will explain how to deploy these templates.**
+
+## Requirements
+
+- Web client access (HTML5)
+
+## Instructions
+
+### Step 1 - Deploying a template
+
+#### Deploy a template from a content library
+
+You can find the content libraries that your vSphere has signed up to via your vSphere homepage, by clicking the <code className="action">Content libraries</code> icon.
+
+<img className="thumbnail" alt="Content libraries" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/content-library-button.png" loading="lazy" />
+
+Then click on one of the libraries to view their contents and deploy a new virtual machine from the <code className="action">OVF & OVA Templates</code> tab.
+
+<img className="thumbnail" alt="Content library overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/content-library-overview.png" loading="lazy" />
+
+#### Deploy a template directly from the Cluster view
+
+You can also deploy content from libraries directly from the *Cluster* view by right-clicking one of your clusters and selecting <code className="action">New Virtual Machine</code>.
+
+<img className="thumbnail" alt="Cluster overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/hosts-view-deploy.png" loading="lazy" />
+
+Then select the <code className="action">Deploy from template</code> option.
+
+<img className="thumbnail" alt="Deploy from template" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/deploy-from-template.png" loading="lazy" />
+
+Click on one of the templates offered by the content libraries installed on your vSphere.
+
+<img className="thumbnail" alt="Deploy from template overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/deploy-from-template-content-library-overview.png" loading="lazy" />
+
+### Step 2 - Configuring the template
+
+The template deployment process will ask you to confirm the details, as well as a destination for the new virtual machine (datacentre, cluster, datastore, etc.).
+
+<img className="thumbnail" alt="Template overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/template-overview.png" loading="lazy" />
+
+Some templates accept deployment properties that allow you to quickly configure the new virtual machine by creating, for example, a privileged user or configuring the main network interface.
+
+<img className="thumbnail" alt="Template customization" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/template-customization.png" loading="lazy" />
+
+Templates that do not offer customisation will have the default credentials specified in the virtual machine notes.
+
+## Go further
+
+If you need training or technical support to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and request a customised analysis of your project from our Professional Services team experts.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,123 @@
+---
+title: Crear y utilizar una cuenta compartida
+description: Añadir y utilizar una cuenta compartida en su solución Exchange
+lastUpdated: 2025-04-28
+---
+ 
+## Objetivo
+
+Una **cuenta compartida** es una cuenta de correo compartida entre varias cuentas Exchange y accesible a través de ellas. Una cuenta compartida no tiene contraseña, por lo que es necesario delegar el acceso a una o varias cuentas de la plataforma Exchange.
+<br/>Es posible acceder a las cuentas compartidas, gracias a una delegación, desde OWA (webmail Exchange) o a través del cliente de correo Outlook.
+
+**Esta guía explica cómo crear y gestionar una cuenta compartida en su plataforma Exchange.**
+
+## Requisitos
+
+- Haber contratado una solución [Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/hosted-exchange/).
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleccione su plataforma
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Procedimiento
+
+### Añadir una cuenta compartida
+
+Seleccione la pestaña <code className="action">Cuentas compartidas</code> en el menú horizontal y haga clic en <code className="action">Añadir cuenta compartida</code>.
+
+<img className="thumbnail" alt="correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts01.png" loading="lazy" />
+
+Introduzca los campos solicitados:
+
+|Función|Descripción|
+|---|---|
+|Cuenta de correo electrónico|Elija el nombre de su cuenta compartida. **No debe tratarse de una dirección de correo electrónico existente.**|
+|Cuota|Indique la cuota de almacenamiento deseada para su cuenta compartida, [en función del espacio disponible](#size).|
+|Nombre mostrado|El nombre mostrado que quiere que aparezca en un envío desde su cuenta compartida.|
+|Ocultar la dirección en el directorio|Ocultar la dirección en el directorio permite evitar que la dirección de la cuenta compartida sea visible en la lista de direcciones de su plataforma Exchange.|
+
+<a name="size"></a>
+
+:::info
+El espacio disponible para crear una cuenta compartida depende del número de cuentas contratadas en su plataforma. Cada cuenta Exchange suscrita en su plataforma desbloquea 5 GB para las cuentas compartidas.
+
+**Ejemplo:**
+
+Ha contratado 4 cuentas Exchange en su plataforma, por lo que tiene **4 x 5 GB**, es decir **20 GB** de espacio asignado para las cuentas compartidas de su plataforma Exchange.
+
+:::
+
+
+Haga clic en <code className="action">Siguiente</code> para acceder al resumen. Haga clic en <code className="action">Aceptar</code> para finalizar la operación.
+
+<img className="thumbnail" alt="correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts02.png" loading="lazy" />
+
+### Gestionar la delegación de una cuenta compartida
+
+Una vez que haya creado la cuenta compartida, deberá delegar el acceso a una o varias cuentas de su plataforma.
+
+No es posible acceder directamente a una cuenta compartida, ya que esta no tiene contraseña. Por lo tanto, no es posible configurarlo directamente en un cliente de tipo Outlook o acceder a él desde el webmail.
+
+Es necesario establecer una delegación entre una cuenta Exchange y la cuenta compartida.
+
+En la pestaña <code className="action">Cuentas compartidas</code> de su plataforma Exchange, haga clic en el botón <code className="action">...</code> delante de la cuenta compartida y seleccione <code className="action">Configurar delegaciones</code>. A continuación, podrá elegir en su lista de cuentas quiénes tendrán la posibilidad de acceder a la cuenta compartida.
+
+<img className="thumbnail" alt="correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts03.png" loading="lazy" />
+
+Elija las acciones posibles en la cuenta seleccionada:
+
+|Función|Descripción|
+|---|---|
+|Permiso de envío|Permite que la cuenta de correo electrónico seleccionada envíe "como" la dirección de correo electrónico compartida.|
+|Permiso de «envío como»|Permite que la cuenta de correo seleccionada envíe "en nombre de" la dirección de correo electrónico compartida.|
+|Derecho de acceso|Autoriza a la cuenta de correo seleccionada a mostrar y gestionar la cuenta compartida desde OWA (webmail) o Outlook.|
+
+Haga clic en <code className="action">Siguiente</code> y <code className="action">Acepte</code> para guardar los cambios.
+
+<img className="thumbnail" alt="correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts04.png" loading="lazy" />
+
+En nuestro ejemplo, permitimos que las cuentas **guia-exchange@** y **test@** tengan acceso a la cuenta compartida **shared_test@**.
+<br/>La cuenta e-mail **guide-exchange@** también tendrá derecho a enviar mensajes "como" **shared_test@**.
+<br/>La cuenta e-mail **test@** también puede enviar emails "por parte de" **shared_test@**.
+
+### Uso de la cuenta compartida desde OWA (webmail)
+
+Conéctese al webmail Exchange (OWA) en la dirección [Webmail](https://www.ovhcloud.com/es-es/mail/) con una cuenta de correo con derecho de acceso a la cuenta compartida.
+<br/>En nuestro ejemplo, nos conectamos con la cuenta **guia-exchange@**.
+
+Una vez que se haya conectado, haga clic derecho en el árbol principal de su dirección de correo electrónico y seleccione <code className="action">Añadir carpeta compartida</code>. 
+
+<img className="thumbnail" alt="correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts05.png" loading="lazy" />
+
+Introduzca el nombre de su cuenta compartida y haga clic en <code className="action">Añadir</code> cuando se encuentre en el directorio Exchange.
+
+<img className="thumbnail" alt="correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts06.png" loading="lazy" />
+
+En nuestro ejemplo, puede acceder a la cuenta compartida desde la cuenta **guia-exchange@**.
+
+<img className="thumbnail" alt="correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts07.png" loading="lazy" />
+
+### Uso de la cuenta compartida desde Outlook
+
+Desde Outlook, encontrará su cuenta compartida en la columna de la izquierda, del mismo modo que en el webmail.
+
+<img className="thumbnail" alt="correo electrónico" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts10.png" loading="lazy" />
+
+## Más información <a name="go-further"></a>
+
+[Consultar una cuenta Exchange desde la interfaz OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Desplegar permisos en una cuenta Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[Compartir un calendario con el webmail OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+[Añadir un pie de página para sus cuentas Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/)
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

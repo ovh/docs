@@ -1,0 +1,97 @@
+---
+title: Configurar um DNS secundário OVHcloud num VPS
+description: Saiba como adicionar um servidor DNS secundário ao seu domínio
+lastUpdated: 2022-01-12
+---
+
+:::info
+Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+
+:::
+
+
+## Objetivo
+
+Se configurar o VPS como servidor DNS, pode utilizar o serviço DNS secundário da OVHcloud para alojar uma zona DNS secundária. Desta forma, os servidores DNS do seu domínio ficarão disponíveis mesmo que o servidor DNS primário não responda.
+
+**Saiba como adicionar um domínio à Área de Cliente para utilizar um servidor DNS secundário da OVHcloud.**
+
+## Requisitos
+
+- Um domínio ao qual terá acesso enquanto administrador.
+- Um servidor [VPS](https://www.ovhcloud.com/pt/vps/) na sua Área de Cliente OVHcloud.
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Caminho de navegação:** <code className="action">Bare Metal Cloud</code> > <code className="action">Servidores Privados Virtuais</code> > Selecione o seu VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+:::warning
+A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+
+Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de um serviço num servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/).
+
+:::
+
+
+## Instruções
+
+### Etapa 1: recuperação do código de validação <a name="retrievecode"></a>
+
+Migre para o separador <code className="action">DNS secundário</code> e clique no botão <code className="action">Adicionar domínio</code>.
+
+<img className="thumbnail" alt="DNS Secundário" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-01.png" loading="lazy" />
+
+Introduza o domínio que pretende adicionar e clique em <code className="action">Validar</code>.
+
+<img className="thumbnail" alt="DNS Secundário" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-02.png" loading="lazy" />
+
+Aparecerá uma mensagem relativa ao processo de verificação na sua Área de Cliente.
+
+<img className="thumbnail" alt="DNS Secundário" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-03.png" loading="lazy" />
+
+É necessário validar a sua autorização de gestão do nome de domínio antes de poder adicioná-la aos DNS Secundários da OVHcloud. Para isso, deverá efetuar-se uma pesquisa DNS automatizada no subdomínio *ownercheck.oseutrenomdedominio*. Para este efeito, é gerada uma cadeia de caracteres individual que é apresentada na zona de notificação vermelha. Copie este código de validação para o utilizar na etapa seguinte.
+
+### Etapa 2: verificação da autorização do nome de domínio <a name="verifyingdomain"></a>
+
+A ação a efetuar é diferente consoante o local onde os DNS do domínio são geridos.
+
+- Se o domínio for gerido por um agente de registo externo **ou** for utilizado servidores DNS externos, aceda à Área de Cliente do seu prestador DNS e adicione, na zona DNS, uma entrada do tipo TXT com o subdomínio "ownercheck", bem como o valor fornecido ao executar a [etapa 1](#retrievecode).
+
+- Se o domínio é gerido pela OVHcloud como registar **e** utiliza os servidores DNS da OVHcloud, adicione o registo TXT à secção <code className="action">Web Cloud</code> da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt). De seguida, siga as instruções descritas no nosso manual "[Editar a zona DNS](/guides/web-cloud/domains/dns-zone-edit/)".
+
+<img className="thumbnail" alt="DNS Secundário" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-04.png" loading="lazy" />
+
+### Etapa 3: adição do domínio
+
+Quando o registo TXT estiver presente na zona DNS do domínio, repita os [passos descritos na primeira parte deste guia](#retrievecode) para adicionar o domínio ao servidor DNS secundário da OVHcloud.
+
+Clique em <code className="action">Confirmar</code> para lançar a verificação automática do proprietário interrogando o campo TXT. Uma mensagem na sua Área de Cliente irá confirmar-lhe a validação DNS correta. Já pode eliminar a entrada TXT.
+
+Os domínios adicionados aparecem neste separador com o **nome correspondente ao servidor DNS secundário**. Atualize a página no seu browser depois de adicionar um domínio.
+
+<img className="thumbnail" alt="DNS Secundário" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-05.png" loading="lazy" />
+
+É possível eliminar um domínio ao clicar no botão <code className="action">...</code> da tabela.
+
+:::info
+Podem ser necessárias outras ações para configurar o seu servidor DNS nos seus nomes de domínio:
+
+- a configuração de um serviço DNS (como *BIND*)
+- a configuração dos registos GLUE
+- autorização das transferências de zona DNS
+
+Recorra à documentação externa caso necessite de informações suplementares para estas tarefas administrativas.
+
+:::
+
+
+## Quer saber mais?
+
+Junte-se à nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

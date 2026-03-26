@@ -1,0 +1,109 @@
+---
+title: End-Of-Life management for LV1 and LV2 storage
+description: Learn how to perform a storage migration
+lastUpdated: 2023-03-02
+---
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+
+This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+
+:::
+
+
+## Objective
+
+Some storages will no longer be available at the end of March 2023 as they will no longer be maintained, as described in this guide: [Life cycle of VMware on OVHcloud](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/lifecycle-policy#datastores-stockage/).
+
+We will go through all the steps to migrate your data to more recent storage and disable your obsolete storage.
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A user account with access to vSphere.
+
+## Instructions
+
+### Adding storage
+
+Using the new storage ranges will provide you with full-SSD (vs SSD-accelerated) disks, 2x2x25Gbps network cards (vs 2x10Gbps), higher availability and resilience. Click this link for more information: [NFS Datastore](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/datastores-nfs/).
+
+Use this guide to add more storage if you have not yet subscribed to a more recent solution: [How do I add storage space?](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-add-storage/)
+
+### Migrating your virtual machines
+
+Go to your vCenter interface and check the virtual machines that are on each of your outdated datastores.
+
+Click on the <code className="action">storage</code> icon, select your Datastore in <code className="action">Shared Storage</code> to the left. Click on the <code className="action">VM</code> tab and stay on <code className="action">Virtual Machines</code> to display the virtual machines on this obsolete storage.
+
+<img className="thumbnail" alt="01 check existing VM on datastore 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/01-check-existing-vm-on-datastore01.png" loading="lazy" />
+
+Right-click each of the virtual machines that are on this datastore, choose <code className="action">Migrate</code> and use the [VMware Storage vMotion](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-storage-vmotion#finalising-the-operation/) guide to migrate to a more recent datastore.
+
+<img className="thumbnail" alt="01 check existing VM on datastore 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/01-check-existing-vm-on-datastore02.png" loading="lazy" />
+
+When the tab no longer contains virtual machines, go to <code className="action">VM template in folders</code> to view the saved templates on your *datastore*.
+
+<img className="thumbnail" alt="02 unregister and move template 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/02-unregister-and-move-template01.png" loading="lazy" />
+
+Right-click each of the templates saved in your *datastore* and click <code className="action">Remove from Inventory</code>.
+
+:::warning
+The template is deleted from the inventory but is still in the *datastore*. You can retrieve it and move it to another *datastore* or delete it if you no longer need it.
+
+:::
+
+
+<img className="thumbnail" alt="02 unregister and move template 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/02-unregister-and-move-template02.png" loading="lazy" />
+
+The templates list is empty, you can keep moving your templates to another datastore.
+
+<img className="thumbnail" alt="02 unregister and move template 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/02-unregister-and-move-template03.png" loading="lazy" />
+
+Go to the <code className="action">Files</code> tab, go to a folder in a template and click <code className="action">Move to</code>.
+
+<img className="thumbnail" alt="02 unregister and move template 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/02-unregister-and-move-template04.png" loading="lazy" />
+
+Choose a Datastore and click <code className="action">OK</code>.
+
+<img className="thumbnail" alt="02 unregister and move template 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/02-unregister-and-move-template05.png" loading="lazy" />
+
+Wait for the task to complete.
+
+<img className="thumbnail" alt="02 unregister and move template 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/02-unregister-and-move-template06.png" loading="lazy" />
+
+Select the destination datastore for the template on the left, go to the Template folder, select the template file and click <code className="action">Save VM</code>.
+
+<img className="thumbnail" alt="03 register template 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/03-register-template01.png" loading="lazy" />
+
+Click <code className="action">NEXT</code>.
+
+<img className="thumbnail" alt="03 register template 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/03-register-template02.png" loading="lazy" />
+
+Click <code className="action">NEXT</code> again.
+
+<img className="thumbnail" alt="03 register template 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/03-register-template03.png" loading="lazy" />
+
+Click <code className="action">FINISH</code>.
+
+<img className="thumbnail" alt="03 register template 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/03-register-template04.png" loading="lazy" />
+
+Go to the <code className="action">VM & templates</code> tab to make your model appear.
+
+<img className="thumbnail" alt="03 register template 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/eol-storage-migration/03-register-template05.png" loading="lazy" />
+
+### Deleting storage for your VMware cluster
+
+Use this guide to delete your obsolete storage: [Delete a datastore](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-datastore/)
+
+:::warning
+After deleting your Datastore, log in to your OVHcloud Control Panel to stop subscribing to this service.
+
+:::
+
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

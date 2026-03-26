@@ -1,0 +1,241 @@
+---
+title: Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren
+description: Erfahren Sie, wie Sie eine Datenbank auf Ihrem Web Cloud Databases Server über das OVHcloud Kundencenter oder phpMyAdmin wiederherstellen und importieren
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup wiederherzustellen oder eine lokale Datenbank zu importieren.
+
+**Diese Anleitung erklärt, wie Sie Ihre Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren.**
+
+## Voraussetzungen
+
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovhcloud.com/de/web-cloud/databases/) (auch in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Wählen Sie Ihren Datenbankdienst aus
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## In der praktischen Anwendung
+
+:::info
+Die [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Dienste gewähren keinen Zugriff auf das Datenbankmanagementsystem, sondern auf die darauf gehosteten Datenbanken.
+
+- Es gibt keinen Superuser-Zugang "root".
+- Generische SQL-Befehle funktionieren normal, und Software wie HeidiSQL, SQuirreL SQL oder Adminer ist vollständig kompatibel.
+
+:::
+
+
+### Datenbank über das Kundencenter wiederherstellen und importieren
+
+#### Ein bestehendes Backup wiederherstellen
+
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), und wählen Sie die betreffende Lösung aus.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf den Tab <code className="action">Datenbanken</code>.
+    
+    In der Spalte **"Sicherungen"** gibt die Zahl die Anzahl der verfügbaren Sicherungen für Ihre Datenbank an.
+  </Tab>
+  <Tab label="Schritt 3">
+    Klicken Sie auf den Button <code className="action">...</code> rechts neben der Datenbank und dann auf <code className="action">Die Sicherungen anzeigen</code>.
+  </Tab>
+  <Tab label="Schritt 4">
+    Die Liste der verfügbaren Backups wird angezeigt. Klicken Sie auf den Button <code className="action">...</code> rechts neben dem ausgewählten Backup und dann auf <code className="action">Sicherung wiederherstellen</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/restore-the-backup.png" loading="lazy" />
+    
+    :::warning
+    Die Wiederherstellung bedeutet, dass der Inhalt der Datenbank überschrieben wird, was zu Datenverlust führen kann. Wenn Sie sich nicht sicher sind, empfehlen wir, zunächst ein Backup zu erstellen.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+#### Eine lokale Sicherung importieren
+
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), und wählen Sie die betreffende Lösung aus.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf den Tab <code className="action">Datenbanken</code>.
+  </Tab>
+  <Tab label="Schritt 3">
+    Klicken Sie auf den Button <code className="action">...</code> rechts neben der Datenbank und dann auf <code className="action">Datei importieren</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    ***Sie haben zwei Möglichkeiten:***
+    
+    **1 - Neue Datei importieren**
+    
+    Klicken Sie auf **"Neue Datei importieren"** und dann auf <code className="action">Weiter</code>.
+    
+    Geben Sie einen Namen für Ihre importierte Datei ein, klicken Sie auf <code className="action">Durchsuchen</code>, um sie auszuwählen, dann auf <code className="action">Absenden</code> und anschließend auf <code className="action">Weiter</code>.
+    
+    :::warning
+    Die Datei muss im Format ".sql", ".txt" oder ".gz" vorliegen.
+
+    :::
+
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png" loading="lazy" />
+
+Aktivieren Sie bei Bedarf **"Aktuelle Datenbank leeren"** vor dem Import und **"E-Mail am Ende des Imports senden"**, um über den Abschluss des Vorgangs an die Referenz-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts informiert zu werden, und klicken Sie dann auf <code className="action">Bestätigen</code>.
+    
+    **2 - Bestehende Datei verwenden**
+    
+    Wenn Sie bereits zuvor eine Datei importiert haben, können Sie die Option **"Bestehende Datei importieren"** wählen.
+    
+    Wählen Sie die Datei im Drop-down-Menü aus und klicken Sie auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png" loading="lazy" />
+
+Aktivieren Sie bei Bedarf **"Aktuelle Datenbank leeren"** vor dem Import und **"E-Mail am Ende des Imports senden"**, um über den Abschluss des Vorgangs an die Referenz-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts informiert zu werden, und klicken Sie dann auf <code className="action">Bestätigen</code>.
+  </Tab>
+</Tabs>
+
+
+### Datenbank außerhalb des Kundencenters importieren
+
+In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglicherweise nicht für den gewünschten Import außerhalb des Kundencenters aus. In diesem Fall empfehlen wir, das OVHcloud Tool im Kundencenter zu verwenden. Lesen Sie dazu den Abschnitt "[Datenbank über das Kundencenter wiederherstellen und importieren](#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren)" dieser Anleitung.
+
+**Klicken Sie auf die Importmethode Ihrer Wahl, um den Inhalt anzuzeigen.**
+
+<details>
+
+<summary>MySQL oder MariaDB Datenbank über phpMyAdmin importieren</summary>
+
+
+Um Ihre Datenbank direkt über phpMyAdmin zu importieren, müssen Sie sich zuerst einloggen. Folgen Sie hierzu dem Abschnitt "[Mit einer MySQL oder MariaDB Datenbank verbinden](/guides/web-cloud/web-cloud-databases/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden/)".
+
+Wenn Sie in phpMyAdmin eingeloggt sind, wählen Sie die Datenbank aus, indem Sie auf ihren Namen klicken.
+
+Klicken Sie anschließend auf den Tab <code className="action">Importieren</code>.
+
+Wählen Sie Ihre Backup-Datei aus, indem Sie auf <code className="action">Durchsuchen</code> klicken (die Datei darf 100 MB nicht überschreiten).
+
+:::info
+Wir empfehlen Ihnen, Ihre Datenbank in mehrere Dateien aufzuteilen, wenn sie mehr als 100 MB groß ist, und mehrere Importe über phpMyAdmin durchzuführen.
+Der Import von Dateien über 100 MB kann über das Kundencenter erfolgen, indem Sie dem Abschnitt "[Datenbank über das Kundencenter wiederherstellen und importieren](#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren)" folgen.
+
+:::
+
+
+Lassen Sie die Standardoptionen aktiviert und klicken Sie auf <code className="action">Ausführen</code>, um den Import zu starten.
+
+<img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-upload-backup-web-cloud-db.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>MySQL oder MariaDB Datenbank über die Kommandozeile importieren</summary>
+
+
+Diese Aktion ist nur über [SSH](/guides/web-cloud/web-hosting/ssh-on-webhosting/) von einem OVHcloud Shared Hosting aus möglich.
+
+```bash
+cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --password=passwort datenbankname
+```
+
+</details>
+
+
+<details>
+
+<summary>MySQL oder MariaDB Datenbank über eine PHP-Datei importieren</summary>
+
+
+```php
+1. <?php
+2. echo "Ihre Datenbank wird wiederhergestellt.......<br/>";
+3. system("cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --password=passwort datenbankname");
+4. echo "Abgeschlossen. Ihre Datenbank ist auf diesem Hosting eingerichtet.";
+5. ?>
+```
+
+:::warning
+- Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, sichern Sie den Zugang mithilfe der Anleitung: [Wie kann ich den Zugang zu einem Verzeichnis mit einem Passwort schützen?](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/)
+- Diese Aktion ist nur von einem OVHcloud Shared Hosting aus möglich.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>PostgreSQL Datenbank über die Kommandozeile importieren</summary>
+
+
+Diese Aktion ist nur über [SSH](/guides/web-cloud/web-hosting/ssh-on-webhosting/) von einem OVHcloud Shared Hosting aus möglich (ab Version "stable").
+
+```bash
+psql --host=server --port=port --user=benutzername --password=passwort datenbankname < datenbankname.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>PostgreSQL Datenbank über eine PHP-Datei importieren</summary>
+
+
+```php
+1. <?php
+2. echo "Ihre Datenbank wird wiederhergestellt.......<br/>";
+3. system("PGPASSWORD=passwort psql --host=server --port=port --user=benutzername --password=passwort datenbankname < datenbankname.sql");
+4. echo "Abgeschlossen. Ihre Datenbank ist auf diesem Hosting eingerichtet.";
+5. ?>
+```
+
+:::warning
+- Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, sichern Sie den Zugang mithilfe der Anleitung: [Wie kann ich den Zugang zu einem Verzeichnis mit einem Passwort schützen?](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/)
+- Diese Aktion ist nur von einem OVHcloud Shared Hosting aus möglich.
+
+:::
+
+
+</details>
+
+
+## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

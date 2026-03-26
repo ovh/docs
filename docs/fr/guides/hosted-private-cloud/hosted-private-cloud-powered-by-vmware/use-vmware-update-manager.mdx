@@ -1,0 +1,116 @@
+---
+title: VMware Update Manager
+excerpt: Utilisez l'outil de VMware pour maintenir à jour vos hôtes
+updated: 2021-12-09
+---
+
+## Objectif
+
+Le gestionnaire de mises à jour de VMware permet de maintenir vos hôtes à jour en installant les *Bug Fixes* et Patchs de sécurité, sans intervention de nos équipes.     
+
+> [!info]
+> Les mises à jour de vCenter ou les mises à jours majeures nécessitent toujours notre participation.
+
+**Ce guide explique le fonctionnement de cet outil**
+
+## Prérequis
+
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](/links/manager))
+
+## En pratique
+
+### Mode de maintenance
+
+Avant de travailler sur un hôte, vous devez le mettre en mode de maintenance.    
+En effet, patcher entraîne la plupart du temps un redémarrage de l'hôte et cela limitera l'impact sur vos VMs de production. 
+
+Dans le menu de l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`.
+
+![Maintenance](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en01menu.png)
+
+Sur la gauche de l'écran, faites un clic-droit sur votre hôte. Dans la section `Mode de maintenance`, selectionnez `Passer en mode de maintenance`.
+
+![Maintenance](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en02maintenance.png)
+
+Assurez-vous que la case est cochée à l'étape suivante puis cliquez sur `OK`.
+
+![Maintenance](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en03enter.png)
+
+En supposant que DRS est actif, vos VMs de production seront migrées vers un autre hôte.
+
+> [!info]
+> Si vous avez personnalisé votre environnement, vous pourriez avoir à effectuer manuellement les migrations des VMs.
+>
+
+L'avertissement suivant peut apparaître :     
+
+![Maintenance](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en04warning.png)
+
+Votre hôte est alors en mode de maintenance.
+
+![Maintenance](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en05maintenanced.png)
+
+### Mises à jour
+
+Selectionnez votre hôte et rendez-vous dans la section `Mises à jour`.
+Vous voyez les différents statuts de base et la conformité de l'hôte.     
+
+Vous allez devoir appliquer une « ligne de base » pour vérifier la conformité.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en06summary.png)
+
+Dans la section `Lignes de base attachées`, cliquez sur `Attacher` puis `Attacher une ligne de base ou un groupe de...`.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en07attach.png)
+
+Il existe des lignes de bases prédéfinies pour les différents niveau de correctifs recommandés.
+
+> [!info]
+> Dans notre exemple, nous utilisons les correctifs critiques mais vous pouvez utiliser les deux lignes existantes ou en créer d'autres à votre convenance pour couvrir les différents besoins de votre environnement.
+>
+
+Sélectionnez la ligne de base requise puis cliquez sur `Attacher`.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en08define.png)
+
+Le résumé de conformité se met alors à jour.     
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en09noncompliant.png)
+
+Retournez dans la section `Lignes de base attachées`, sélectionnez toutes les lignes de bases assignées et cliquez sur `Transfert intermédiaire`.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en10bisstage.png)
+
+Sélectionnez l'hôte et cliquez à nouveau sur `Transfert intermédiaire`.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en10terstagea.png)
+
+Le processus de transfert démarre et durera en fonction du nombre et de la taille des correctifs.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en10terstage.png)
+
+Toujours dans la section `Lignes de base attachées`, sélectionnez toutes les lignes de bases assignées et cliquez sur `Corriger`.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en10remediate.png)
+
+Sélectionnez l'hôte et cliquez à nouveau sur `Corriger`.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en11remediate.png)
+
+Le processus de mise à jour démarre et durera en fonction du nombre et de la taille des correctifs appliqués.<br />
+Si nécessaire, votre hôte sera redémarré automatiquement.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en12remediating.png)
+
+A la fin du processus, la vérification de conformité sera relancée (ou elle peut etre forcée en cliquant sur le lien) et une coche verte devrait apparaître.
+
+![Update](/images/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en13compliant.png)
+
+Votre hôte est maintenant à jour.    
+
+N'oubliez pas de le sortir du mode de maintenance et il sera de retour en production.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

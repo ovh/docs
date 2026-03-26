@@ -1,0 +1,103 @@
+---
+title: How to create an SMS recipient list
+description: Find out how to create a list of SMS recipients and import it into your OVHcloud Control Panel.
+lastUpdated: 2022-08-05
+---
+
+## Objective
+
+To send an SMS campaign to multiple contacts, you can import one or more recipient lists into your OVHcloud Control Panel.
+
+**Find out how to create a list of SMS recipients via a spreadsheet or text editor, and import it into the OVHcloud Control Panel.**
+
+## Requirements
+
+- an active OVHcloud SMS account
+- a spreadsheet or text editor tool
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Navigation path:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Select your SMS account
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="SMS Telecom Control Panel" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png" loading="lazy" />
+
+## Instructions
+
+### Step 1: Creating your recipient list
+
+#### Creating your list via a spreadsheet
+
+You can create a recipient list via a spreadsheet, or use a list that already exists. This list must be in .csv format, and have the layout below in a spreadsheet:
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/img_4831.png" loading="lazy" />
+
+:::warning
+To ensure that the spreadsheet does not perform any automatic calculations on your numbers, you must customise the format of your `number` column.
+
+In Microsoft Excel, select your entire `number` column, right-click, and click <code className="action">Format Cells</code>. Click <code className="action">Custom</code> and enter the following value in the `Type` field: ```[>0]+0;Standard```.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-2.png" loading="lazy" />
+
+Under LibreOffice, select your entire `number` column, right-click, and click <code className="action">Format Cells...</code>. Enter the following value in the Format `Format code`: ```[>0]+0;Standard```
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-2b.png" loading="lazy" />
+
+:::
+
+
+If you open a .csv file with a notepad program, it should look similar to this:
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-1.png" loading="lazy" />
+
+The following points are vital for your recipient list to be processed properly on the OVHcloud Control Panel:
+
+- All of your contacts must be on the same sheet in your spreadsheet file, in a number column.
+- Delete special characters (like accents) — they won't be accepted when importing the .csv file to the OVHcloud Control Panel.
+- Phone numbers must be entered in international format (e.g. for a UK phone number: +44712345678).
+- Save your spreadsheet file in .csv format (separator: semi-colon).
+
+#### Creating your list with a text editor
+
+An alternative method involves creating a .txt file via a text editor or notepad program.
+
+- Enter `number` into the first line.
+- Enter your phone numbers in international format (+44712345678), with one number per line.
+
+You should end up with the result below:
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-1.png" loading="lazy" />
+
+### Step 2: Importing your list into the OVHcloud Control Panel
+
+Click on the <code className="action">Contacts</code> tab and <code className="action">Create a contact</code> list.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-3b.png" loading="lazy" />
+
+You can create up to 9 contact lists.
+
+To do this, click <code className="action">Actions</code>, then <code className="action">Add</code>.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-5b.png" loading="lazy" />
+
+Name your recipient list, and import your local file on to the OVHcloud Control Panel.
+
+<img className="thumbnail" alt="recipients" src="/images/web-cloud/messaging/sms/liste-de-destinataire-sms/sms-recipientlist-6b.png" loading="lazy" />
+
+### Step 3: Sending an SMS to your recipient list
+
+Now that your list has been imported, you can follow the instructions in our guide on [Sending SMS messages via the OVHcloud Control Panel](/guides/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/) to send an SMS to the recipients of this list.
+
+## Go further
+
+[Sending SMS messages via the OVHcloud Control Panel](/guides/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/)
+
+[Managing SMS address books](/guides/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

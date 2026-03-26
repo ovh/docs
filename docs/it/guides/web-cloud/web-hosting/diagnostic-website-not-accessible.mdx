@@ -1,0 +1,168 @@
+---
+title: Cosa fare se il tuo sito è inaccessibile?
+description: "Diagnostica le cause dell'inaccessibilità del tuo sito"
+lastUpdated: 2025-10-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Obiettivo
+
+Se il tuo sito non è raggiungibile, sul tuo browser potrebbero comparire diversi feedback. Gli esempi seguenti indicano una configurazione errata dei tuoi [server DNS](/guides/web-cloud/domains/dns-server-edit/), della tua [zona DNS](/guides/web-cloud/domains/dns-zone-edit/) o di un dominio sospeso (se il tuo sito non visualizza uno dei messaggi di errore descritti qui, consulta la sezione [Per saperne di più](#go-further)):
+
+|Browser|Messaggio di errore|
+|--|--|
+|Chrome:<br/>"Impossibile raggiungere il sito"|<img className="thumbnail" alt="cantbereached_chrome" src="/images/assets/screens/other/browsers/errors/cant-be-reached-chrome.png" loading="lazy" />|
+|Firefox :<br/>"Uhm… non riusciamo a trovare questo sito."|<img className="thumbnail" alt="cantbereached_firefox" src="/images/assets/screens/other/browsers/errors/cant-be-reached-firefox.png" loading="lazy" />|
+|Edge:<br/>"Impossibile raggiungere questa pagina"|<img className="thumbnail" alt="cantbereached_edge" src="/images/assets/screens/other/browsers/errors/cant-be-reached-edge.png" loading="lazy" />|
+|Safari :<br/>"Safari non trova il server"|<img className="thumbnail" alt="cantbereached_safari" src="/images/assets/screens/other/browsers/errors/cant-be-reached-safari.png" loading="lazy" />|
+
+**Scopri come risolvere gli errori del tipo "Impossibile raggiungere il sito"**
+
+:::warning
+OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+
+Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
+
+:::
+
+
+## Prerequisiti
+
+- Avere la gestione dei server e della [zona DNS](/guides/web-cloud/domains/dns-zone-edit/) del dominio
+- Essere aggiornato nei [pagamenti](/guides/account-and-service-management/managing-billing-payments-and-services/invoice-management#pay-bills/) e [rinnovi](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#renewal-management/) dei servizi associati (dominio e hosting web)
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Seleziona il tuo hosting web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedura
+
+### 1: Verifica la validità del tuo dominio
+
+:::warning
+Il rinnovo delle tue offerte è sotto la tua completa responsabilità.<br/>
+OVHcloud, in qualità di hosting provider, ha l'obbligo di eliminare definitivamente i servizi (domini, hosting, email, ecc.) che non sono stati rinnovati in tempo utile e tutti i dati che contengono.
+
+Per questo motivo, ti consigliamo di attivare il [rinnovo automatico](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#procedura/) su tutti gli abbonamenti OVHcloud.
+
+:::
+
+
+Per verificare la validità dell'abbonamento relativo al tuo dominio, clicca sul tuo nome in alto a destra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) e poi su <code className="action">Le mie offerte e servizi</code>.
+
+<img className="thumbnail" alt="control-panel" src="/images/assets/screens/control-panel/product-selection/right-menu/my-solutions-and-services.png" loading="lazy" />|
+
+Rinnova il tuo dominio se necessario cliccando <code className="action">...</code> a destra dello schermo e poi <code className="action">Rinnova il servizio</code>.
+
+<img className="thumbnail" alt="renew-service-button" src="/images/assets/screens/control-panel/product-selection/web-cloud/order/renew-service-button.png" loading="lazy" />
+
+Una volta terminato il rinnovo dell'offerta, il tuo sito Web sarà disponibile entro 48 ore.
+
+### 2: Verifica i server DNS
+
+Per verificare la validità dei tuoi [server DNS](/guides/web-cloud/domains/dns-server-edit/), clicca in tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) sui <code className="action">Domini</code> e poi sul dominio del tuo sito.
+
+#### Scenario 1: Nessuna anomalia sui server DNS
+
+Verifica i server indicati nella scheda <code className="action">Server DNS</code>:
+
+<img className="thumbnail" alt="srv-dns-ok2" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-servers/name-dns-server.png" loading="lazy" />
+
+Se sono identici agli obiettivi degli record di tipo `NS` nella <code className="action">Zona DNS</code>, passa allo [Step 3](#step3):
+
+<img className="thumbnail" alt="srv-dns-ok" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png" loading="lazy" />
+
+#### Scenario 2: Sulla zona DNS compare un avviso
+
+Un avviso nella scheda <code className="action">Zona DNS</code> indica che i server DNS utilizzati dal tuo dominio non sono quelli indicati nella tua zona. Sono possibili due scenari:
+
+- Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati sono del tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net" (sostituisci "**?**" da qualsiasi numero):
+
+<img className="thumbnail" alt="warning_other_ovh_dns_srv" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png" loading="lazy" />
+
+Modificare i server DNS seguendo le istruzioni di [questa guida](/guides/web-cloud/domains/dns-server-edit/) in modo che siano identici agli obiettivi di record di tipo `NS` nella <code className="action">Zona DNS</code>.
+
+Il tuo sito Web sarà disponibile entro 48 ore.
+
+- Sotto la frase "Al momento utilizzi questi server DNS:", i server indicati non sono del tipo "ns **?** .ovh.net" e "DNS **?** .ovh.net".
+
+<img className="thumbnail" alt="warning_external_dns_srv" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png" loading="lazy" />
+
+:::warning
+In questo caso, contatta l'hosting provider della tua Zona DNS, il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) prima di effettuare qualsiasi operazione.
+
+È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](/guides/web-cloud/domains/dns-zone-general-information/). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
+
+:::
+
+
+#### Scenario 3: Nella zona DNS non sono presenti record di tipo NS
+
+La <code className="action">Zona DNS</code> del tuo dominio non contiene alcun accesso di tipo `NS`:
+
+<img className="thumbnail" alt="srv_dns_missing" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns-missing.png" loading="lazy" />
+
+Per eseguire un backup dell'area corrente, clicca sul pulsante <code className="action">Utilizza l'editor di testo</code> a destra dello schermo:
+
+<img className="thumbnail" alt="change_DNS_zone_change_text_format" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format.png" loading="lazy" />
+
+Copia/incolla il contenuto della tua <code className="action">Zona DNS</code> in un documento di testo. Salva questo documento localmente.
+
+Clicca su <code className="action">Reinizializza la zona DNS</code> e seleziona <code className="action">No, ma voglio reinizializzare la mia zona DNS</code>, indica i tuoi server di posta e di hosting e clicca su <code className="action">Conferma</code>.
+
+<img className="thumbnail" alt="change_DNS_zone_reset" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png" loading="lazy" />
+
+Il tuo sito Web sarà disponibile entro 24 ore.
+
+### 3: Verifica la zona DNS <a name="step3"></a>
+
+In questo step, visualizzerai l'indirizzo IP del tuo hosting e lo aggiungerai alla tua <code className="action">Zona DNS</code>.
+
+Se il tuo sito non è ospitato sull'infrastruttura OVHcloud o se è gestito da un altro provider, contatta il supporto interessati.
+
+Se il tuo sito è ospitato su una delle nostre [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
+
+<Tabs>
+  <Tab label="Passaggio 1">
+    Accedi alla pagina [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting), poi seleziona l'hosting Web interessato.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passaggio 2">
+    Nel riquadro **Informazioni generali**, troverete le informazioni **IPv4** e **IPv6**.
+    
+    <img className="thumbnail" alt="IPv4-IPv6" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png" loading="lazy" />
+
+Copia l'indirizzo IPV4 e/o IPV6 del tuo dominio.
+  </Tab>
+</Tabs>
+
+
+E riportala nella [Zona DNS](/guides/web-cloud/domains/dns-zone-edit/) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
+
+<img className="thumbnail" alt="ipv4-DNSzone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png" loading="lazy" />
+
+Il tuo sito Web sarà disponibile entro 24 ore.
+
+## Per saperne di più <a name="go-further"></a>
+
+[Risolvere l'errore "Sito non installato"](/guides/web-cloud/web-hosting/multisites-website-not-installed/)
+
+[Cosa fare in caso di errore 500 Internal Server Error?](/guides/web-cloud/web-hosting/diagnostic-fix-500-internal-server-error/)
+
+[Risolvere gli errori più frequenti associati ai moduli in 1 click](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/)
+
+Per prestazioni specializzate (referenziamento, sviluppo, etc ...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

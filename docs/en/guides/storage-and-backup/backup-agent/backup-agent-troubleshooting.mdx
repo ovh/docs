@@ -1,0 +1,250 @@
+---
+title: Backup Agent - Troubleshooting
+description: Learn how to solve potential issues related to Backup Agent
+lastUpdated: 2026-02-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+
+## Objective
+
+Here is a list of potential issues you may encounter with the Backup Agent product and how to solve them.
+
+## Requirements
+
+- At least one Bare Metal server with the Backup Agent installed on it. Read our guide "[How to configure your first backup](/guides/storage-and-backup/backup-agent/backup-agent-first-configuration/)" for more information.
+
+{/* CP-NAV-START:baremetal-backup-agent */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Backup Agent](https://manager.eu.ovhcloud.com/#/bmc-backup-agent-baremetal/service)
+- **Navigation path:** <code className="action">Bare Metal Cloud</code> > <code className="action">Backup Agent</code>
+
+---
+{/* CP-NAV-END:baremetal-backup-agent */}
+
+## List of possible issues
+
+<details>
+
+<summary>My Backup Agent is unable to connect to your server.</summary>
+
+
+Make sure your firewall allows you to communicate with our server `vspc-cgw1.prod01.eu-west-rbx.backup.ovhcloud.com` (137.74.125.230) in Europe with TCP port and UDP 6180.
+
+Ensure that no other services are using ports that could conflict with your server.
+
+You can find your agent logs in the folder: `C:\ProgramData\Veeam\` or `/var/logs`.
+
+</details>
+
+
+<details>
+
+<summary>Your server cannot install the Backup Agent on my server.</summary>
+
+
+The Backup Agent supports Windows distributions and Linux native kernels. If you have made changes to your kernel, you must ensure that you have the correct packages to install the agent. You can find the list of required parameters here: [https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
+
+</details>
+
+
+<details>
+
+<summary>My agent cannot back up. I have the error: "Failed to perform backup. Neither blksnap nor veeamsnap module was found."</summary>
+
+
+The agent supports Windows distributions and Linux native kernels. If you have made changes to your kernel, you must ensure that you have the correct packages to install the agent. You can find the list of required parameters here: [https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13)
+
+You will need the Linux kernel headers first, and you can then try to install or reconfigure your veeamsnap or veeamblksnap or blksnap package, depending on your Operating System.
+
+</details>
+
+
+<details>
+
+<summary>My agent cannot back up. I get the error: `POSIX: Failed to create or open file [/.veeamsnapstorage/veeamsnapstore`</summary>
+
+
+To back up, Veeam takes snapshots in addition to preserving the data that will be written to the backup. This snapshot is called "veeamsnapstorage".
+
+To resolve the issue, you can increase the size of the snapshot via the `/etc/veeam/veeam.ini` file:
+
+```bash
+[blksnap]
+ 
+# The minimum allowable size of the difference storage in sectors
+diffStorageMinimum = 2097152
+```
+
+Replace the value with the desired number of sectors by first converting the desired size from gigabytes to bytes, then dividing this number of bytes by 512.  
+For example, for a size of 3 GB (3,221,225,472 bytes), the value to specify is 6,291,456 (3,221,225,472 / 512).
+
+Finally, restart the veeamservice service.
+
+</details>
+
+
+<details>
+
+<summary>I cannot start a manual backup.</summary>
+
+
+[Contact OVHcloud support](https://help.ovhcloud.com/csm?id=csm_get_help) to investigate. Make sure to provide logs and screenshots.
+
+</details>
+
+
+<details>
+
+<summary>My backup is in error, how can I see the problem?</summary>
+
+
+If your backup is in error, you can diagnose the problem directly from the agent. Click the tab corresponding to your Operating System:
+
+<Tabs>
+  <Tab label="Windows">
+    To see the details of a backup error on Windows:
+    
+    1. Open the "Veeam Agent" application on your Bare Metal server.
+    2. In the main interface, you will see the status of your backups.
+    3. Click on the backup in error to see the error details.
+    4. Check the **History** or **Last Session** section to see detailed error messages.
+    
+    The interface will display precise information about the cause of the error, which will allow you to quickly identify the issue.
+  </Tab>
+  <Tab label="Linux">
+    To see the details of a backup error on Linux, you can use the user interface:
+    
+    1\. Connect to your Bare Metal server via SSH.
+    2\. Launch the Veeam interface by typing the following command:
+    
+    ```bash
+    sudo veeam
+    ```
+    
+    3\. In the interface, navigate to the backups section to see the status of your jobs.
+    4\. Select the backup in error to view the error details.
+    
+    You can also check the logs directly via the command line:
+    
+    ```bash
+    sudo veeamconfig session list
+    ```
+    
+    This command will display the list of backup sessions with their status and details of any error.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>My storage usage did not refresh after an agent was removed.</summary>
+
+
+We keep your data for 14 days following an agent deletion, storage usage will be updated following the 14 days and data deletion.
+
+</details>
+
+
+<details>
+
+<summary>I want to change the password for accessing the Veeam Service Provider Console (VSPC).</summary>
+
+
+Passwords can be changed via the "Forgot password?" link available on the VSPC console.
+
+<img className="thumbnail" alt="Reset password 1" src="/images/storage-and-backup/backup-agent/backup-agent-troubleshooting/reset_password_1.png" loading="lazy" />
+
+<img className="thumbnail" alt="Reset password 2" src="/images/storage-and-backup/backup-agent/backup-agent-troubleshooting/reset_password_2.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>I have reinstalled my server. How do I reinstall the Backup Agent?</summary>
+
+
+You must download the agent from the [Backup Agent](https://manager.eu.ovhcloud.com/#/bmc-backup-agent-baremetal/service) section of your OVHcloud Control Panel and install it on your new Operating System.
+
+</details>
+
+
+## Finding and exporting logs
+
+To troubleshoot issues with Backup Agent, it is often necessary to view and export the product logs. Click the tab corresponding to your Operating System:
+
+<Tabs>
+  <Tab label="Windows">
+    **Locating logs**
+    
+    Veeam Agent for Windows logs are stored in the following directory:
+    
+    ```
+    C:\ProgramData\Veeam\Endpoint\Logs
+    ```
+    
+    **Exporting logs**
+    
+    To export logs on Windows, you can use the Veeam Agent graphical interface:
+    
+    1. Open the "Veeam Agent" application on your server.
+    2. Go to the <code className="action">Help</code> > <code className="action">Export Logs</code> menu.
+    3. Select the destination directory for the log archive.
+    4. Click <code className="action">Export</code> to generate the archive.
+    
+    The archive will be created in `.zip` format and will contain all the logs and configuration files necessary for diagnosis.
+    
+    For more information, see the [Veeam KB2404](https://www.veeam.com/kb2404) article.
+  </Tab>
+  <Tab label="Linux">
+    **Locating logs**
+    
+    Veeam Agent for Linux logs are stored in the following directory:
+    
+    ```bash
+    /var/log/veeam/
+    ```
+    
+    You can also check the Veeam service logs:
+    
+    ```bash
+    /var/log/veeam/veeamservice.log
+    ```
+    
+    **Exporting logs**
+    
+    To export logs on Linux, you have two options:
+    
+     1\. Via command line
+    
+    Use the following command to export logs. The archive will be saved in the current working directory:
+    
+    ```bash
+    sudo veeamconfig grabLogs
+    ```
+    
+    2\. Via the control panel
+    
+    If you have access to a graphical interface, you can export logs via the Veeam Agent control panel by specifying the destination directory.
+    
+    The archive will be created in `.tar.gz` format and will contain all the logs and configuration files necessary for diagnosis.
+    
+    For more information, see the [Veeam documentation](https://helpcenter.veeam.com/docs/agentforlinux/userguide/logs_export.html?ver=13).
+  </Tab>
+</Tabs>
+
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

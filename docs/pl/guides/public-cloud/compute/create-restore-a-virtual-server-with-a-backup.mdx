@@ -1,0 +1,209 @@
+---
+title: Tworzenie / przywracanie serwera wirtualnego na podstawie kopii zapasowej
+description: Dowiedz się, jak utworzyć lub przywrócić kopię zapasową instancji
+lastUpdated: 2025-11-04
+---
+
+import Api from '@components/Api';
+
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Panel klienta OVHcloud pozwala na tworzenie [kopii zapasowych instancji](/guides/public-cloud/compute/save-an-instance/) za pomocą kilku kliknięć i zautomatyzowanie tego procesu.
+Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w przypadku błędu podczas konfigurowania Twojej instancji. Kopie zapasowe instancji mogą być używane z dwóch powodów:
+
+- Utwórz instancję na podstawie kopii zapasowej, aby duplikować oryginalną instancję. Na przykład, jeśli skonfigurujesz infrastrukturę równoważenia obciążenia (load balancing).
+- Przywracanie instancji z kopii zapasowej. Na przykład, jeśli ostatnie zmiany uszkodziły krytyczne konfiguracje dla instancji.
+
+**Dowiedz się, jak używać kopii zapasowych do duplikowania lub przywracania instancji.**
+
+## Wymagania początkowe
+
+- Posiadanie kopii zapasowej [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/instance-backup/). Należy zapoznać się w tym celu z [instrukcją tworzenia kopii zapasowej](/guides/public-cloud/compute/save-an-instance/).
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## W praktyce
+
+:::info
+Dostępne są dwa typy kopii zapasowych:
+
+- Lokalna: przechowywana w tej samej regionie co Twoja instancja.
+- Dystansowa: automatycznie replikowana w innym regionie, który wybierzesz.
+
+Operacje **tworzenia** i **przywracania** instancji z odległej kopii zapasowej są w pełni obsługiwane przez API OVHcloud, co zapewnia większą elastyczność i łatwą integrację z procesami automatyzacji.
+
+**Uwaga :** Te operacje nie są jeszcze dostępne za pośrednictwem Panelu klienta OVHcloud.
+
+:::
+
+
+### Tworzenie instancji na podstawie kopii zapasowej
+
+<Tabs>
+  <Tab label="Przez Panel klienta OVHcloud">
+    Następnie kliknij <code className="action">Kopia zapasowa instancji</code> w lewym pasku nawigacyjnym pod **Compute**.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup01.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">...</code> w wierszu odpowiedniej kopii zapasowej, a następnie wybierz <code className="action">Utwórz instancję</code>.
+    
+    Zobaczysz skróconą wersję strony tworzenia instancji, gdzie możesz określić niektóre opcje.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup02.png" loading="lazy" />
+
+Niektóre elementy są wstępnie zdefiniowane:
+    
+    - **Lokalizacja**: Twoja instancja zostanie utworzona w tym samym centrum danych, co kopia zapasowa.
+    - **Obraz**: Obraz będzie odpowiadać Twojej kopii zapasowej.
+    - **Model**: Dostępne są tylko modele kompatybilne z Twoim obrazem, w zależności od Twojej kwoty.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup03.png" loading="lazy" />
+
+Wybierz nazwę nowej instancji, klucz SSH, vRack i okres rozliczeniowy, a następnie kliknij przycisk <code className="action">Utwórz instancję</code>.
+    
+    Aby uzyskać więcej informacji na temat tworzenia instancji, skorzystaj z [tego przewodnika](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/).
+    
+    :::info
+    Aby utworzyć instancję w innym centrum danych, musisz najpierw przenieść kopię zapasową do odpowiedniej strefy. Skorzystaj z naszego przewodnika, aby [przenieść kopię zapasową instancji](/guides/public-cloud/compute/transfer-instance-backup-from-one-datacentre-to-another/).
+
+    :::
+
+  </Tab>
+  <Tab label="Przez OpenStack CLI">
+    Aby utworzyć instancję z kopii zapasowej, użyj identyfikatora kopii zapasowej jako obrazu z tym poleceniem:
+    
+    ```bash
+    $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+    ```
+  </Tab>
+  <Tab label="Przez Horizon">
+    W interfejsie Horizon kliknij <code className="action">Compute</code> w lewym menu, a następnie <code className="action">Images</code>. Znajdź odpowiedni obraz i kliknij przycisk <code className="action">Launch</code> po prawej stronie wiersza obrazu.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon1.png" loading="lazy" />
+
+Nadaj instancji nazwę w odpowiednim polu i określ liczbę instancji do utworzenia. Następnie kliknij kartę <code className="action">Flavor</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-2" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon2.png" loading="lazy" />
+
+Wybierz żądany model instancji, a następnie kliknij kartę <code className="action">Networks</code>.
+    
+    :::warning
+    Jeśli Twoja instancja to serwer Windows, musisz wybrać model typu win-xx-xx (np. win-b2-15) i mieć publiczny interfejs na sieci Ext-Net. Bez tych warunków uwierzytelnienie z OVHcloud KMS nie będzie możliwe, a Twój serwer pozostanie z [nieaktywowaną licencją](/guides/public-cloud/compute/activate-windows-license-private-mode/). Może to prowadzić do ograniczeń, w tym braku aktualizacji. Zwróć uwagę, że nie można zmienić rozmiaru instancji Linux (np. b2-15) na instancję Windows (np. win-b2-15). Aby dokonać tej zmiany, musisz utworzyć nową instancję.
+
+    :::
+
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-3" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon3.png" loading="lazy" />
+
+Wybierz sieć, którą chcesz przypisać, a następnie kliknij przycisk <code className="action">Launch Instance</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-4" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon4.png" loading="lazy" />
+
+Status nowej instancji możesz sprawdzić w <code className="action">Compute</code> w lewym menu, a następnie klikając <code className="action">Instances</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-5" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon5.png" loading="lazy" />
+  </Tab>
+  <Tab label="Przez OVHcloud API">
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance"} />
+
+Wypełnij zmienne:
+    
+    - **serviceName** : ID projektu OVHcloud.
+    - **regionName** : Nazwa regionu, w którym zostanie umieszczona instancja.
+    
+    Przykład treści żądania:
+    
+    ```json
+    {
+      "billingPeriod": "hourly",
+      "bootFrom": {
+        "imageId": "5cb8ea68-****-****-****-820be8346***"
+      },
+      "flavor": {
+        "id": "e81b46f8-****-****-****-cad655e65***"
+      },
+      "name": "newInstance",
+      "network": {
+        "public": true
+      },
+      "sshKey": {
+        "name": "MySSHKey"
+      }
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+### Przywracanie instancji z kopii zapasowej
+
+<Tabs>
+  <Tab label="Przez Panel klienta OVHcloud">
+    Następnie kliknij pozycję <code className="action">Instancje</code> na lewym pasku nawigacyjnym w obszarze **Środowisko obliczeniowe**.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup04.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">...</code> w wierszu odpowiedniej instancji, a następnie wybierz <code className="action">Edytuj</code>.
+    
+    Powoduje otwarcie strony do edycji instancji, w której można zmienić:
+    
+    - nazwa instancji;
+    - obraz instancji;
+    - model instancji;
+    - tryb rozliczenia dla instancji (tylko od "Godzinowe" do "Miesięczne").
+    
+    Jeśli potrzebujesz wykonać zmiany, przejdź do zakładki <code className="action">Kopie zapasowe</code> w sekcji "Obraz".
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup05.png" loading="lazy" />
+
+Wybierz z listy dostępnych kopii zapasowych. Kliknij na <code className="action">Zmień obraz</code>, jeśli masz pewność, że chcesz zastąpić bieżący obraz kopią zapasową.
+    
+    Instancja będzie miała status `Reinstalacja` do czasu zakończenia procesu. Może być konieczne odświeżenie strony w przeglądarce, aby zobaczyć bieżący stan.
+    
+    :::warning
+    Zgodnie z informacją zawartą w ostrzeżeniu, dane dodane po utworzeniu kopii zapasowej zostaną utracone.
+
+    :::
+
+  </Tab>
+  <Tab label="Przez OVHcloud API">
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance/\\{instanceId\\}/reinstall"} />
+
+Uzupełnij zmienne:
+    
+    - **serviceName** : ID projektu OVHcloud.
+    - **regionName** : Nazwa regionu, w którym znajduje się instancja źródłowa.
+    - **instanceId** : unikalny identyfikator instancji.
+    
+    Przykład treści zapytania:
+    
+    ```json
+    {
+      "imageId": "5cb8ea68-****-****-****-820be8346***",
+      "imageRegionName": "GRA11"
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również
+
+[Tworzenie i logowanie do pierwszej instancji Public Cloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+[Tworzenie kopii zapasowej instancji](/guides/public-cloud/compute/save-an-instance/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

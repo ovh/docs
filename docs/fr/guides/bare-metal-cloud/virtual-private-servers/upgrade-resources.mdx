@@ -1,0 +1,148 @@
+---
+title: "Comment faire évoluer les ressources d'un VPS"
+description: Découvrez comment faire évoluer votre RAM, votre vCPU ou votre stockage depuis votre espace client
+lastUpdated: 2025-09-08
+---
+
+
+
+## Objectif
+
+Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+**Découvrez comment ajouter des vCores, de la mémoire et du stockage à votre service VPS.**
+
+## Prérequis
+
+- Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">Serveurs Privés Virtuels</code> > Sélectionnez votre VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+## En pratique
+
+:::info
+Les options de mise à niveau disponibles dans votre espace client dépendent de la gamme et du modèle du VPS sélectionné. Les captures d'écran ci-dessous sont fournies à titre d'illustration et ne font pas référence à un scénario concret de mise à niveau du VPS.
+
+:::
+
+
+À partir de là, vous pouvez mettre à niveau vos vCores (`1`), votre mémoire (`2`) ou votre stockage (`3`).
+
+<img className="thumbnail" alt="Mettre à niveau les ressources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade01.png" loading="lazy" />
+
+### 1. Pour ajouter des **vCores**
+
+Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur <code className="action">Ajouter des vCores en passant à la gamme supérieure</code>.
+
+Choisissez un nouveau modèle et cliquez sur <code className="action">Suivant</code>.
+
+<img className="thumbnail" alt="Mettre à niveau les ressources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade02.png" loading="lazy" />
+
+Choisissez vos options de mémoire et de stockage et cliquez sur <code className="action">Suivant</code>.
+
+<img className="thumbnail" alt="Mettre à niveau les ressources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade03.png" loading="lazy" />
+
+Acceptez (<code className="action">☑</code>) les **termes des contrats** et cliquez sur <code className="action">Suivant</code>.
+
+<img className="thumbnail" alt="Mettre à niveau les ressources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade04.png" loading="lazy" />
+
+Vérifiez vos modifications et cliquez sur <code className="action">Commander</code>.
+
+<img className="thumbnail" alt="Mettre à niveau les ressources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade05.png" loading="lazy" />
+
+### 2. Pour mettre à niveau la **Mémoire**
+
+Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur la quantité de mémoire que vous souhaitez. Les options disponibles dépendent de la gamme de VPS que vous avez actuellement.
+
+Dans la fenêtre contextuelle, cliquez sur <code className="action">Valider et payer</code> pour finaliser votre commande.
+
+<img className="thumbnail" alt="Mettre à niveau les ressources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade06.png" loading="lazy" />
+
+### 3. Pour mettre à niveau le **Stockage**
+
+Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur la quantité de stockage que vous souhaitez. Les options disponibles dépendent de la gamme de VPS que vous avez actuellement.
+
+Dans la fenêtre contextuelle, cliquez sur <code className="action">Valider et payer</code> pour finaliser votre commande.
+
+<img className="thumbnail" alt="Mettre à niveau les ressources" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade07.png" loading="lazy" />
+
+Consultez notre guide dédié pour les étapes suivantes : [Comment repartitionner un VPS après une mise à niveau de stockage](/guides/bare-metal-cloud/virtual-private-servers/upsize-vps-partition/)
+
+## FAQ
+
+<details>
+
+<summary>Conserverai-je la même adresse IP ?</summary>
+
+
+Oui, vous conserverez la même adresse IP après la mise à niveau de votre VPS.
+
+</details>
+
+
+<details>
+
+<summary>Conserverai-je mes données sur le serveur ?</summary>
+
+
+Oui, après une mise à niveau, vous conserverez vos données. Lorsque vous mettez à niveau votre disque, vous devrez peut-être étendre les partitions.
+
+</details>
+
+
+<details>
+
+<summary>Que se passe-t-il pour la sauvegarde/snapshot ? Puis-je l'utiliser sur le nouveau VPS ?</summary>
+
+
+Oui. Après les mises à niveau, vous aurez toujours accès à vos sauvegardes et snapshots.
+
+</details>
+
+
+<details>
+
+<summary>Que se passe-t-il pour la licence logicielle sur l'ancien VPS ? Puis-je la déplacer automatiquement vers le nouveau VPS ?</summary>
+
+
+Si vous avez une licence active, elle restera attachée au VPS. Le prix peut changer en fonction de l'accord de licence ou des exigences du fournisseur.  
+Si des modifications sont apportées à la licence, elles seront expliquées avant la mise à niveau du VPS.
+
+</details>
+
+
+<details>
+
+<summary>Le débit change-t-il ?</summary>
+
+
+Dans certains cas, le débit peut changer, notamment lors du passage d'un VPS de niveau inférieur au niveau supérieur.
+
+</details>
+
+
+<details>
+
+<summary>Cette mise à niveau sera-t-elle immédiate, ou aurai-je le temps d'utiliser les deux en même temps (configurer, transférer des données, etc.) ?</summary>
+
+
+La mise à niveau sera effective immédiatement, en conservant toutes vos données. La mise à niveau allouera plus de ressources à votre VPS existant.
+
+</details>
+
+
+
+## Aller plus loin
+
+[FAQ VPS](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

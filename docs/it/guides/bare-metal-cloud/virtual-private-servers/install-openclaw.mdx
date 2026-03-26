@@ -1,0 +1,121 @@
+---
+title: How to install an OpenClaw agent on a VPS
+description: Find out how to deploy a 24/7 OpenClaw (ex Clawdbot / Moltbot) agent on a VPS, using Docker Compose for maximum isolation and stability
+lastUpdated: 2026-02-09
+---
+
+**OpenClaw** (successor to Moltbot and Clawdbot) is the new evolved version of the autonomous AI assistant. This guide uses **Docker** to protect your host system while ensuring your assistant remains online 24/7.
+
+## Objective
+
+The objective is to deploy OpenClaw in a container. This allows the agent to be isolated from the rest of the VPS (which is a good security practice) and simplifies updates (only one command is needed to change versions).
+
+## Requirements
+
+- An active [OVHcloud VPS](https://www.ovhcloud.com/en-gb/vps/).
+- Access via SSH to your server using the default user (`ubuntu`, `debian`, etc.).
+- An API key (Anthropic or OpenAI).
+
+## Instructions
+
+**Table of contents:**
+
+- [Step 1 - Install Docker](#docker-install)
+- [Step 2 - Prepare directories](#prepare)
+- [Step 3 - Deployment configuration (Docker Compose)](#config)
+- [Step 4 - Launch the agent](#launch)
+- [Step 5 - Secure access via an SSH tunnel](#access)
+
+### Step 1 - Install Docker <a name="docker-install"></a>
+
+On your VPS, install Docker and its Compose plugin:
+
+```bash
+curl -fsSL https://get.docker.com | sudo sh
+sudo usermod -aG docker $USER
+```
+
+*Note: Log out and log back in via SSH for the Docker group addition to take effect.*
+
+### Step 2 - Prepare directories <a name="prepare"></a>
+
+Docker needs folders on your VPS to store data permanently (WhatsApp sessions, memory).
+
+```bash
+mkdir -p ~/openclaw/data
+cd ~/openclaw
+```
+
+### Step 3 - Deployment configuration <a name="config"></a>
+
+Create a file named docker-compose.yml in this folder:
+
+```bash
+nano docker-compose.yml
+```
+
+Copy the following configuration into it:
+
+```bash
+services:
+  openclaw:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw-gateway
+    restart: always
+    ports:
+      - "127.0.0.1:18789:18789"
+    volumes:
+      - ~/openclaw/data:/home/node/.openclaw
+    environment:
+      - NODE_ENV=production
+```
+
+:::warning
+
+Security: By using 127.0.0.1:18789:18789, the port is exposed only within the VPS. No one can access it from the outside without the SSH tunnel.
+
+:::
+
+
+### Step 4 - Launch <a name="launch"></a>
+
+Start your agent:
+
+```bash
+docker compose up -d
+```
+
+### Step 5 - Secure access via an SSH tunnel <a name="access"></a>
+
+1\. **On your personal computer**, create the tunnel.
+
+The method remains the same. From your personal computer, open a terminal:
+
+- Windows: PowerShell or Command Prompt (cmd).
+- Linux / macOS: Terminal.
+
+```bash
+ssh -L 18789:127.0.0.1:18789 user@YOUR_VPS_IP
+```
+
+*Keep this terminal window open for the entire duration of your use.*
+
+2\. **On your VPS (another terminal window)**, retrieve your access token:
+
+```bash
+cat ~/openclaw/data/openclaw.json | grep '"token":'
+```
+
+Open your browser and go to: [http://127.0.0.1:18789](http://127.0.0.1:18789).
+
+*Tip: If the interface remains disconnected, you can force the connection by using your token directly in the URL: http://127.0.0.1:18789/?token=VOTRE_GATEWAY_TOKEN*
+
+The rest takes place in the **Overview** menu: enter your **Gateway Token** to log in.
+
+## Go further
+
+[Secure an OVHcloud VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps)
+
+[Official OpenClaw documentation](https://docs.openclaw.ai/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

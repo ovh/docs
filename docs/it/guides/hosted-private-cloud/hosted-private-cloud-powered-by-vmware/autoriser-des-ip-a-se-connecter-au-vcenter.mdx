@@ -1,0 +1,41 @@
+---
+title: Autorizzare IP ad accedere al vCenter
+lastUpdated: 2023-01-25
+---
+
+## Obiettivo
+
+L'accesso al tuo vCenter è limitato agli indirizzi IP autorizzati.
+
+**Questa guida ti mostra come gestire le restrizioni di accesso al vCenter per gli indirizzi IP.**
+
+## Prerequisiti
+
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Disporre di un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) sul proprio account OVHcloud
+
+## Procedura
+
+Di default, l'accesso al tuo vCenter è limitato. È quindi necessario aggiungere gli IP autorizzati a connettersi al servizio.
+
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla scheda <code className="action">Hosted Private Cloud</code>.
+
+Clicca su <code className="action">VMware</code>, seleziona la tua infrastruttura e clicca sulla scheda <code className="action">Sicurezza</code>. Clicca su <code className="action">Aggiungi una nuova classe di indirizzi IP</code>.
+
+<img className="thumbnail" alt="vCenter" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/autoriser-des-ip-a-se-connecter-au-vcenter/restrictIP.JPG" loading="lazy" />
+
+Nella nuova finestra, indica l’IP in questione ed eventualmente una descrizione per poterlo trovare più facilmente nella lista in un secondo momento.
+
+Clicca su <code className="action">Continua</code> per confermare l’operazione: una volta che l’IP risulterà **Autorizzato e installato**, potrà essere utilizzato per l’accesso a vSphere.
+
+<img className="thumbnail" alt="vCenter" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/autoriser-des-ip-a-se-connecter-au-vcenter/restrictIP2.JPG" loading="lazy" />
+
+:::info
+Ti ricordiamo che, per motivi di sicurezza, puoi autorizzare un massimo di 2048 indirizzi IP a connettersi al tuo vCenter.
+
+:::
+
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

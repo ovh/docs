@@ -1,0 +1,231 @@
+---
+title: Setting up Multicloud Snapshot Technology (MST) on a Nutanix on OVHcloud infrastructure
+description: Learn how to activate MST with an OVHcloud Object Storage container
+lastUpdated: 2026-03-31
+---
+
+## Objective
+
+Find out how to deploy and configure **Multicloud Snapshot Technology (MST)** on a Nutanix on OVHcloud infrastructure with OVHcloud object storage.
+
+With MST, you can **replicate snapshots** (UVM/Volume Groups) to **S3-compatible storage** to optimize TCO, improve data mobility, and simplify disaster recovery (DR.) using a **zero-compute** model.
+
+## Overview & advantages
+
+**Main features:**
+
+- Periodic replication of snapshots to S3<sup>1</sup> buckets (typical RPO: 1 hour via the Nutanix DR. infrastructure).
+- Model **Zero-Compute**: No need to maintain compute standby nodes.
+- Store recent snapshots on the main cluster; offload older snapshots to object storage.
+- Restore anywhere **Nutanix Cloud Platform (NCP)**: cloud, edge, on-prem.
+- Native integration with **Prism Central** and existing DR. workflows.
+
+**Benefits:**
+
+- Reduced TCO (reduced/no standby compute, less expensive object storage).
+- Mobility: Retrieve workloads on different NCP environments.
+- Manageability via Prism.
+
+## Requirements
+
+### Nutanix Cluster
+
+- AOS 7.5.1 minimum
+- Prism Central 7.5.1 minimum
+
+### Network
+
+- Create an **MST dedicated subnet** in Prism Element (internal network).
+- **3 static IP addresses** reserved (outside the DHCP range of the subnet MST).
+- **4 IP addresses** from the DHCP range of the MST subnet (consumed by the 4 MST VMs).
+
+### VM resources (typical — Instance *Small*)
+
+- 3 × **MSP Controller VMs**: 10 vCPU / 24 GiB RAM each.
+- 1 × **MSP Load Balancer VM**: 2 vCPU / 4 GiB RAM.
+- **Total**: 32 vCPU and 76 GiB RAM.
+
+### Accounts/Access
+
+- **admin** Prism Central account (only an admin can deploy an MST).
+- API/credentials access for the S3 bucket with write/list/delete permissions.
+
+### Functional limits (Instance Small)
+
+- Up to **2000 protected entities**.
+- **75 Recovery Points** per entity.
+- **300 TB** of supported active data.
+
+## Instructions
+
+### Prepare the environment
+
+#### Create the Object Storage container (Bucket)
+
+To create the container, you first need to create a project: [Create your first Public Cloud project - OVHcloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/).
+
+In the Public Cloud universe:
+
+<img className="thumbnail" alt="01 Object Storage" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst1.png" loading="lazy" />
+
+Create a user, for example *admin-mst-gra*:
+
+<img className="thumbnail" alt="02 Object Storage" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst2.png" loading="lazy" />
+
+Please note the following information:
+
+<img className="thumbnail" alt="03 Object Storage Credentials" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst3.png" loading="lazy" />
+
+Then create a container (bucket): [Object Storage - Getting started with Object Storage - OVHcloud](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/).
+
+In this example, I chose to create a container named *mst-dr-gra* in Gravelines, since my cluster is Roubaix. This improves data resilience.
+
+<img className="thumbnail" alt="04 Object Storage Container" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst4.png" loading="lazy" />
+
+:::info
+Once you have created the container and the user, you will need to have several pieces of information that are important for continuation:
+
+- The name of your container: in our example, *mst-dr-gra*
+- The URL of the container endpoint: [https://s3.gra.io.cloud.ovh.net/](https://s3.gra.io.cloud.ovh.net/)
+- The **access key**
+- The **secret key**
+
+:::
+
+
+#### Activate the Market Place
+
+Log in to Prism Central, go to the admin center, then click <code className="action">Enable Marketplace</code>.
+
+<img className="thumbnail" alt="05 Enable Market Place" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst5.png" loading="lazy" />
+
+#### Enable Network Controller
+
+In <code className="action">Infrastructure</code> go to <code className="action">Prism Central Settings</code>, click <code className="action">Network Controller</code> then <code className="action">Enable</code>.
+
+<img className="thumbnail" alt="06 Enable Network Controller" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst6.png" loading="lazy" />
+
+#### Create a Subnet dedicated to MST
+
+We will create an IPAM subnet with a DHCP for using MST.
+
+<img className="thumbnail" alt="07 IPAM Network" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst7.png" loading="lazy" />
+
+#### Reconfigure the Gateway
+
+You will need to reconfigure the gateway with the new network.
+
+Add a NIC to your VM:
+
+<img className="thumbnail" alt="08 IPAM Network" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst8.png" loading="lazy" />
+
+Then reconfigure your gateway with the IP defined in the IPAM network creation.
+
+For example on an Alpine VM:
+
+<img className="thumbnail" alt="09 gateway setup" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst9.png" loading="lazy" />
+
+We would add:
+
+```bash
+auto eth3
+iface eth3 inet static
+address 10.8.0.254
+netmask 255.255.255.0
+```
+
+Restarting network services:
+
+<img className="thumbnail" alt="10 gateway setup2" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst10.png" loading="lazy" />
+
+### Deploy Multicloud Snapshot Technology
+
+1. Log in to **Prism Central** as an **administrator**.
+1. Go to **Admin Center → Marketplace**.
+1. In **Nutanix Apps**, click <code className="action">Get</code> for **Multicloud Snapshot Technology**.
+
+<img className="thumbnail" alt="11 get mst" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst11.png" loading="lazy" />
+
+On the introduction page, click <code className="action">Deploy</code>.
+
+<img className="thumbnail" alt="12 Deploy mst" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst12.png" loading="lazy" />
+
+Then configure the MST instance:
+
+- **MST Instance Size** : Select <code className="action">Small</code> (or other size if available).
+- **Cluster Details**: Choose the target Prism Element cluster.
+- **Network Configuration**: Select the MST subnet created.
+- **Enter the 3 static IPs reserved** in the expected fields.
+
+<img className="thumbnail" alt="13 Deploy mst parameters" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst13.png" loading="lazy" />
+
+- **Object Store Provider**: Select <code className="action">S3 Compatible (Nutanix certified)</code>.
+- **Object Store Endpoint**: Enter your container's endpoint URL, in our example [https://s3.gra.io.cloud.ovh.net/](https://s3.gra.io.cloud.ovh.net/).
+- **Bucket Name**: Enter the name of your container. In our example, *mst-dr-gra*.
+- **Access Key**: Enter your container’s `Access Key`.
+- **Secret Key**: Enter the `Secret Key` of your container.
+
+<img className="thumbnail" alt="14 Deploy mst bucket parameters" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst14.png" loading="lazy" />
+
+Launch the deployment.
+
+<img className="thumbnail" alt="15 End of mst deployment" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst15.png" loading="lazy" />
+
+## Disaster Recovery: use and configuration
+
+Once you have deployed an MST and connected it to your Object Storage bucket, you can configure how your workloads are protected and restored.
+
+### Entity protection
+
+- **Steps:**
+
+1. From **Prism Central**, go to **Protection Policies**, then create a protection policy.
+
+    <img className="thumbnail" alt="16 Create Protection policies" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst16.png" loading="lazy" />
+
+2. Define the `policy name` and enter your cluster in the `primary location` field.
+
+    In the `Recovery Location` box, keep Local AZ and select the container (Bucket) previously configured.
+
+    <img className="thumbnail" alt="17 Create Protection policies" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst17.png" loading="lazy" />
+
+3. Define an Add Schedule:
+
+    - The frequency of snapshots (every hour by default).
+    - The number of Recovery Points to keep locally.
+    - The number of Recovery Points to keep on the **OVHcloud S3 container**.
+
+    <img className="thumbnail" alt="18 Define Schedule" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst18.png" loading="lazy" />
+
+4. Protect VMs:
+
+    - Select the VMs you want to protect, then in the `action` menu → `data protection` click <code className="action">Protect</code>.
+
+    <img className="thumbnail" alt="19 Protect VMs" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst19.png" loading="lazy" />
+
+    - Then select the Protection Policy you created earlier:
+
+    <img className="thumbnail" alt="20 Protect VMs PP" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst20.png" loading="lazy" />
+
+### Restoration
+
+- From **Prism Central → Data Protection → VM Recovery Points**, choose a **Recovery Point** available in the bucket.
+
+<img className="thumbnail" alt="21 Select Restore Point" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/81-multi-snapshot-technologie/mst21.png" loading="lazy" />
+
+### Typical use cases
+
+- **Disaster Recovery (DR.)**: Total loss of the source cluster → deployment of VMs on another Nutanix cluster linked to the same OVHcloud bucket.
+- **Workloads migration**: Move an application to another site (edge or cloud) by importing snapshots from the bucket.
+
+## Go further <a name="gofurther"></a>
+
+[Nutanix Reimagines Business Continuity for Hybrid Multicloud Users](https://www.nutanix.com/blog/nutanix-reimagines-business-continuity-for-hybrid-multicloud-users)
+
+[Cloud Clusters (NC2) Hosted - Deploying Multicloud Snapshot Technology](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Clusters-AWS:aws-cluster-protect-deploying-mst-t.html)
+
+If you require training or technical support to implement our solutions, please contact your sales representative or click [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

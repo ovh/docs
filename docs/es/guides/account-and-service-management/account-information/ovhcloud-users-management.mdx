@@ -1,0 +1,127 @@
+---
+title: Crear y gestionar usuarios locales en una cuenta de OVHcloud
+description: Cómo añadir usuarios locales desde su cuenta de OVHcloud
+lastUpdated: 2025-05-16
+---
+
+## Objetivo
+
+OVHcloud le ofrece la posibilidad de crear usuarios locales con permisos de lectura o escritura en su área de cliente. De este modo, podrá conceder acceso a sus servicios de OVHcloud a los miembros de su empresa. Y esto, sin tener que recurrir a prácticas poco seguras como compartir la contraseña o el código de doble autenticación.
+
+:::info
+La gestión de usuarios difiere de la gestión de contactos. Un usuario tendrá acceso a todas las secciones del área de cliente en función del nivel de derechos que se le conceda.
+
+La gestión de contactos tiene como fin delegar la administración completa de los aspectos administrativos, técnicos o de facturación de uno o varios servicios en su cuenta de OVHcloud. Para más información sobre la gestión de contactos, consulte [esta guía](/guides/account-and-service-management/account-information/managing-contacts/).
+
+:::
+
+
+**Esta guía explica los diferentes privilegios que puede tener un usuario local, así como el método para añadir y gestionar sus usuarios.**
+
+## Requisitos
+
+- Tener una cuenta de OVHcloud activa.
+
+{/* CP-NAV-START:iam-identities */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [IAM Identities](https://manager.eu.ovhcloud.com/#/iam/identities/users)
+- **Ruta de navegación:** <code className="action">Identidad, seguridad y operaciones</code> > <code className="action">Identidades</code>
+
+---
+{/* CP-NAV-END:iam-identities */}
+
+## Procedimiento
+
+### Presentación de identidades
+
+Los usuarios locales son uno de los tipos de identidad que pueden configurarse en su cuenta de OVHcloud. Los otros tipos de cuentas se describen en la [documentación asociada](/guides/manage-and-operate/iam/identities-management/).
+
+### Gestión de usuarios
+
+#### Añadir un usuario
+
+Desde la página [Identidades IAM](https://manager.eu.ovhcloud.com/#/iam/identities/users), haga clic en <code className="action">Añadir un usuario</code>.
+
+Se abrirá una ventana, donde deberá completar los campos obligatorios. Haga clic en <code className="action">Aceptar</code> para crear el usuario.
+
+<img className="thumbnail" alt="users-management" src="/images/account-and-service-management/account-information/ovhcloud-users-management/usersmanagement2.png" loading="lazy" />
+
+| Campo | Detalles |
+|--|--|
+| Usuario | Introduzca, por ejemplo, el nombre de usuario o su función. |
+| Correo electrónico | Introduzca la dirección de correo electrónico del usuario. |
+| Contraseña | Especifique la contraseña del usuario. El usuario podrá cambiarla una vez creado su acceso. <br/>Para establecer esta contraseña, también le recomendamos consultar [la guía sobre la gestión de contraseñas](/guides/account-and-service-management/account-information/manage-ovh-password/). |
+| Grupo | Seleccione uno de los grupos disponibles (ver la tabla a continuación). |
+| Descripción | Puede añadir una descripción del usuario. Por ejemplo, su función en la empresa. |
+
+**Detalles de grupos predeterminados:**
+
+| Rol | Detalles |
+|--|--|
+| UNPRIVILEGED (Solo Lectura) | Proporciona acceso de lectura al área de cliente de OVHcloud y a todas sus secciones. |
+| DEFAULT (Administrador restringido) | Concede acceso de escritura al área de cliente de OVHcloud y a todas sus secciones, **excepto para la gestión de los** usuarios. |
+| ADMIN (Administrador) | Proporciona acceso de escritura al área de cliente de OVHcloud y a todas sus secciones, **incluyendo** la gestión de usuarios. |
+
+A continuación, el usuario obtendrá su identificador conformado por el id. numérico de su cuenta (que se indica en el menú «Gestión de usuarios») y su nombre de usuario, con los dos valores separados por una barra (/).
+
+Por ejemplo: **1234-567-89/johnsmith**.
+
+<img className="thumbnail" alt="users-management" src="/images/account-and-service-management/account-information/ovhcloud-users-management/usersmanagement3.png" loading="lazy" />
+
+A partir de ese momento, el usuario creado podrá iniciar sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) con este identificador. 
+
+También podrá cambiar su contraseña y proteger el acceso a su cuenta activando la doble autenticación (esta última medida solo se aplicará a su acceso como usuario). A tal fin, puede consultar [la guía sobre la instrumentación de la doble autenticación](/guides/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/).
+
+#### Gestionar los usuarios
+
+Para modificar, desactivar/activar o eliminar un usuario, haga clic en <code className="action">...</code> a la derecha de este.
+
+<img className="thumbnail" alt="users-management" src="/images/account-and-service-management/account-information/ovhcloud-users-management/usersmanagement4.png" loading="lazy" />
+
+La modificación del usuario permite actualizar su dirección de correo electrónico, sus privilegios y su descripción.
+
+<img className="thumbnail" alt="users-management" src="/images/account-and-service-management/account-information/ovhcloud-users-management/usersmanagement6.png" loading="lazy" />
+
+### Gestión de grupos
+
+#### Añadir un grupo
+
+Para añadir un grupo, acceda a la pestaña <code className="action">Grupos de usuarios</code> y haga clic en el botón <code className="action">Declarar un grupo</code>.
+
+<img className="thumbnail" alt="users-management" src="/images/account-and-service-management/account-information/ovhcloud-users-management/usersmanagement7.png" loading="lazy" />
+
+Se abrirá una ventana en la que deberá completar los campos necesarios. Haga clic en <code className="action">Validar</code> para crear el grupo.
+
+<img className="thumbnail" alt="users-management" src="/images/account-and-service-management/account-information/ovhcloud-users-management/usersmanagement8.png" loading="lazy" />
+
+Los grupos asignan un nivel de privilegio por defecto a los usuarios que contienen, en función del rol que elija:
+
+| Rol | Detalles |
+|--|--|
+| Ninguno | No concede acceso al área de cliente de OVHcloud si no se ha establecido ninguna política de IAM. |
+| Solo Lectura | Proporciona acceso de lectura al área de cliente de OVHcloud y a todas sus secciones. |
+| Administrador restringido | Concede acceso de escritura al área de cliente de OVHcloud y a todas sus secciones,**excepto para la gestión de los** usuarios. |
+| Administrador | Proporciona acceso de escritura al área de cliente de OVHcloud y a todas sus secciones, **incluyendo** la gestión de usuarios. |
+
+#### Administrar grupos
+
+Para actualizar o eliminar un grupo, haga clic en el botón <code className="action">...</code> situado a la derecha del nombre del grupo.
+
+<img className="thumbnail" alt="users-management" src="/images/account-and-service-management/account-information/ovhcloud-users-management/usersmanagement9.png" loading="lazy" />
+
+Al editar un grupo, puede editar su descripción y rol.
+
+<img className="thumbnail" alt="users-management" src="/images/account-and-service-management/account-information/ovhcloud-users-management/usersmanagement10.png" loading="lazy" />
+
+### Gestión de los permisos
+
+Además de la función asociada a los grupos de usuarios, puede afinar los privilegios de acceso mediante el IAM de OVHcloud.
+
+Consulte nuestra guía sobre [la gestión de las políticas IAM de OVHcloud](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

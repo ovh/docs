@@ -1,0 +1,85 @@
+---
+title: Dar de baja la solución Hosted Private Cloud
+description: Cómo solicitar la baja de una infraestructura Hosted Private Cloud
+lastUpdated: 2020-07-08
+---
+
+import Api from '@components/Api';
+
+
+## Objetivo
+
+Es posible solicitar la baja de su infraestructura Hosted Private Cloud en cualquier momento, ya sea porque la solución ya no se adapta a sus necesidades o porque ha contratado una nueva infraestructura para sustituir a la antigua. Antes de dar de baja la solución, deberá realizar una copia de seguridad de los datos almacenados.
+
+**Esta guía explica cómo solicitar la baja de una infraestructura Hosted Private Cloud.** 
+
+## Requisitos
+
+- Haber contratado una solución [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
+
+{/* CP-NAV-START:privatecloud-vmware-vsphere */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VMware vSphere](https://manager.eu.ovhcloud.com/#/dedicated/dedicated_cloud)
+- **Ruta de navegación:** <code className="action">Hosted Private Cloud</code> > <code className="action">Managed VMware vSphere</code> > Seleccione su servicio vSphere
+
+---
+{/* CP-NAV-END:privatecloud-vmware-vsphere */}
+
+## Procedimiento
+
+La solución Hosted Private Cloud se contrata sin período de permanencia. Sin embargo, tal como se indica en las [Condiciones Particulares del Servicio](https://www.ovh.es/soporte/documentos_legales/Condiciones_particulares_Dedicated_Cloud_2014.pdf), «todo mes comenzado es debido y pagado por adelantado».
+
+:::warning
+Antes de dar de baja el servicio, deberá realizar una copia de seguridad de todos los datos que desee conservar. La baja del servicio conlleva la eliminación definitiva de su Hosted Private Cloud y de todos los datos alojados esta infraestructura.
+
+:::
+
+
+### 1\. Solicitar la baja del servicio desde el área de cliente de OVHcloud
+
+En la columna «Gestión del servicio» de la pestaña «Información general», haga clic en el botón con forma de tres puntos <code className="action">...</code> (4) que aparece junto a la fecha de renovación. Por último, haga clic en <code className="action">Eliminar el servicio</code> (5).
+
+<img className="thumbnail" alt="Baja desde el área de cliente" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation1.png" loading="lazy" />
+
+Tenga en cuenta que esta acción eliminará todos los datos alojados en la infraestructura. Aunque la baja del servicio se produzca antes de que acabe el mes, el cliente no tendrá derecho a la devolución de la parte proporcional correspondiente al período restante del mes.
+
+Haga clic en <code className="action">«Aceptar»</code> para solicitar la baja del servicio.
+
+<img className="thumbnail" alt="Confirmar la baja del servicio" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation2.png" loading="lazy" />
+
+Aparecerá un mensaje confirmándole que la solicitud de baja se ha enviado correctamente. A continuación, recibirá el procedimiento de confirmación de la baja del servicio por correo electrónico, en la dirección asociada a su cuenta de OVHcloud.
+
+<img className="thumbnail" alt="Confirmar la baja del servicio" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation3.png" loading="lazy" />
+
+### 2\. Confirmar la baja del servicio
+
+Una vez solicitada la baja del servicio, recibirá el procedimiento de confirmación por correo electrónico en la dirección asociada a su cuenta de OVHcloud. 
+
+También puede consultar este mensaje de correo electrónico en su área de cliente de OVHcloud. Para ello, desde la página de inicio del panel de control, haga clic en el botón <code className="action">Mis mensajes</code> que aparece en el menú de la derecha.
+
+<img className="thumbnail" alt="Confirmar la baja del servicio" src="/images/assets/screens/control-panel/product-selection/right-menu/my-messages.png" loading="lazy" />
+
+El objeto del mensaje será el siguiente:
+
+> **Eliminación del Private Cloud pcc-xxx-xxx-xxx-xxx**.
+
+Este mensaje de correo electrónico incluye un enlace desde el que podrá confirmar la baja del servicio.
+
+:::info
+Atención: este enlace solo es válido durante **72 horas**. Le recomendamos que solicite la baja del servicio a partir del día 25 del mes.
+
+:::
+
+
+Asimismo, también es posible confirmar la solicitud de baja a través de la siguiente API:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/confirmTermination"} />
+
+Deberá introducir el token de validación disponible en el correo electrónico de confirmación de la baja del servicio.
+
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

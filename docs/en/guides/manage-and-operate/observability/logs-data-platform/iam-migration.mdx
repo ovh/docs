@@ -1,0 +1,85 @@
+---
+title: IAM for Logs Data Platform - Migration and Breaking Changes
+description: Important changes to be aware of before the IAM migration
+lastUpdated: 2025-10-16
+---
+
+:::info
+
+IAM for Logs Data Platform will be available starting **17th September 2025**.
+The content of this documentation should be read to prepare this migration.
+
+:::
+
+
+## Objective
+
+This guide explains the breaking changes resulting from the IAM migration and provides guidance on how to take advantage of the new IAM integration.
+
+## Requirements
+
+- An [OVHcloud account](/guides/account-and-service-management/account-information/ovhcloud-account-creation)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Logs Data Platform service](https://www.ovhcloud.com/en-gb/identity-security-operations/logs-data-platform/)
+
+## Instructions
+
+### What is IAM?
+
+IAM stands for **Identity and Access Management**. It is a system of policies and processes that enable organizations or users to manage digital identities and control access to sensitive resources, such as applications, data, systems, and in the case of Logs Data Platform: logs.
+
+- **Security**: IAM ensures that only authorized individuals or systems can access your logs. Authentication methods include two-factor authentication or federation systems.
+- **Convenience**: IAM simplifies user management as it is unified across all OVHcloud products, allowing individuals to access all their products with one set of credentials.
+- **Flexibility**: IAM allows you to create sophisticated policies for sharing resources in a robust way.
+
+### IAM Migration for Logs Data Platform
+
+The IAM Migration for Logs Data Platform is scheduled for 17 September 2025. A scheduled maintenance will enable IAM for all Logs Data Platform customers, introducing new features and allowing full migration to IAM.
+
+### Breaking Changes
+
+#### Roles and Permissions
+
+If you use the [role and permission system](/guides/manage-and-operate/observability/logs-data-platform/getting-started-roles-permission), please note that members of your roles will no longer see shared items in their own service when connecting to the Logs Data Platform control panel.
+
+However, they will still be able to access these items when using their credentials on the relevant backends (Graylog, OpenSearch Dashboards, Grafana).
+
+If you use the role and permission system, we strongly recommend [migrating to IAM policies](/guides/manage-and-operate/observability/logs-data-platform/getting-started-roles-permission).
+
+#### Web UIs
+
+The Graylog Web UI will now display an Identity Provider selector. You can find the username/password authenticator by selecting **Legacy username/password**. You can also try the OVHcloud IAM authenticator by selecting the appropriate provider (EU or CA).
+
+<img className="thumbnail" alt="Legacy username - password" src="/images/manage-and-operate/observability/logs-data-platform/iam-migration-to-iam/graylog-legacy01.png" loading="lazy" />
+
+### Deprecated Features
+
+The IAM migration allows us to deprecate some Logs Data Platform features that have IAM replacements:
+
+- [Roles and permissions](/guides/manage-and-operate/observability/logs-data-platform/getting-started-roles-permission)
+- [Legacy tokens](/guides/manage-and-operate/observability/logs-data-platform/tokens)
+
+These features are replaced by [access management policies](/guides/manage-and-operate/observability/logs-data-platform/getting-started-roles-permission) and by either [Local Users Personal Access Tokens](/guides/account-and-service-management/account-information/ovhcloud-users-management) or [Service account tokens](/guides/account-and-service-management/account-information/authenticate-api-with-service-account).
+
+### Useful Documentation
+
+#### IAM Resources
+
+- [OVHcloud identities](/guides/manage-and-operate/iam/identities-management)
+- [Local users management](/guides/account-and-service-management/account-information/ovhcloud-users-management)
+- [Service accounts](/guides/account-and-service-management/account-information/authenticate-api-with-service-account)
+- [Policies UI](/guides/account-and-service-management/account-information/iam-policy-ui)
+- [Policies API](/guides/account-and-service-management/account-information/iam-policies-api)
+
+#### IAM for Logs Data Platform
+
+- [Presentation and FAQ](/guides/manage-and-operate/observability/logs-data-platform/overview)
+- [Access Management](/guides/manage-and-operate/observability/logs-data-platform/getting-started-roles-permission)
+
+## Go further
+
+- [Introduction to Logs Data Platform](/guides/manage-and-operate/observability/logs-data-platform/introduction)
+- [IAM for Logs Data Platform - Presentation and FAQ](/guides/manage-and-operate/observability/logs-data-platform/overview)
+- [Our documentation](/guides/manage-and-operate/observability/logs-data-platform/overview)
+- Join our [community of users](https://community.ovhcloud.com/community/en)
+- Create an account: [Try it!](https://www.ovhcloud.com/en-gb/identity-security-operations/logs-data-platform/)

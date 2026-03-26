@@ -1,0 +1,418 @@
+---
+title: Créer plusieurs VLAN dans le vRack
+description: Découvrez comment créer plusieurs VLAN dans le vRack
+lastUpdated: 2026-02-20
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+La [configuration standard du vRack](/guides/bare-metal-cloud/dedicated-servers/vrack-configuring-on-dedicated-server/) vous permet de créer un seul VLAN. Cela signifie que vous ne pouvez utiliser chaque adresse IP qu'une seule fois. Cependant, avec la version 2.0 de la configuration du vRack, vous pouvez créer jusqu'à 4 000 réseaux locaux virtuels au sein d'un seul vRack. Cela signifie que vous pouvez utiliser chaque adresse IP jusqu'à 4 000 fois.
+
+**Ce guide vous explique comment créer plusieurs VLAN dans le vRack.**
+
+## Prérequis
+
+- Posséder un ou plusieurs [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) compatibles avec le vRack.
+- Avoir activé un service [vRack](https://www.ovhcloud.com/fr/network/vrack/).
+- Avoir accès à votre plage d'adresses IP privées choisie.
+- Être connecté en SSH avec l'identifiant root (Linux).
+- Être connecté avec le compte administrateur (Windows).
+- Avoir finalisé la [configuration du vRack](/guides/bare-metal-cloud/dedicated-servers/vrack-configuring-on-dedicated-server/).
+
+:::warning
+Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+
+Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+
+:::
+
+
+## En pratique
+
+### Sous Linux
+
+:::info
+À titre d'exemple, nous utiliserons **eno2** comme interface réseau, **10** et **11** comme balises VLAN, et **192.168.0.0/16** et **10.0.0.0/16** comme plages d'adresses IP privées. 
+
+Toutes les commandes sont à adapter en fonction de la distribution utilisée. N'hésitez pas à vous reporter à la documentation officielle de votre distribution en cas de doute.
+
+:::
+
+
+<Tabs>
+  <Tab label="Debian 11">
+    Tout d'abord, établissez une connexion SSH vers votre serveur et exécutez les commandes suivantes depuis la ligne de commande pour installer le paquet VLAN sur votre serveur :
+    
+    ```sh
+    sudo apt update
+    sudo apt install vlan
+    ```
+    
+    Ensuite, chargez le module noyau 8021q :
+    
+    ```sh
+    sudo modprobe 8021q
+    ```
+    
+    Pour vérifier que le module est chargé :
+    
+    ```sh
+    user@server:~$ lsmod | grep 8021q
+    8021q                  40960  0
+    garp                   16384  1 8021q
+    mrp                    20480  1 8021q
+    ```
+    
+    Exécutez la commande suivante pour vous assurer que les modules sont chargés de manière permanente au démarrage :
+    
+    ```sh
+    sudo su -c 'echo "8021q" >> /etc/modules'
+    ```
+    
+    Ensuite, récupérez les noms de vos interfaces et identifiez l'interface privée :
+    
+    ```sh
+    ip a
+    ```
+    
+    Ensuite, créez une balise VLAN. La balise sert d'identifiant, vous permettant de distinguer plusieurs VLAN :
+    
+    ```sh
+    sudo ip link add link <parent-interface> name <vlan-identifier> type vlan id <ID>
+    ```
+    
+    **Dans cet exemple :**
+    
+    ```sh
+    sudo ip link add link eno2 name eno2.10 type vlan id 10
+    ```
+    
+    Utilisez la même commande pour chaque balise VLAN que vous souhaitez ajouter.
+    
+    Ensuite, déclarez la plage d'adresses IP privée dans le vRack et étiquetez-la avec l'identifiant en utilisant la commande suivante :
+    
+    ```sh
+    sudo ip addr add 192.168.0.10/16 dev eno2.10
+    ```
+    
+    Modifiez la configuration de votre interface réseau pour y intégrer la balise VLAN. Ouvrez votre fichier de configuration d'interface réseau et ajoutez les entrées suivantes :
+    
+    ```sh
+    sudo nano /etc/network/interfaces.d/50-cloud-init
+    
+    auto eno2.10
+    iface eno2.10 inet static
+    address 192.168.0.10
+    netmask 255.255.0.0
+    broadcast 192.168.255.255
+    vlan-raw-device eno2
+    ```
+    
+    Pour plusieurs VLAN configurés, votre configuration réseau devrait ressembler à ceci :
+    
+    <img className="thumbnail" alt="debian VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/multiple_vlan_debian.png" loading="lazy" />
+  </Tab>
+  <Tab label="Ubuntu et Debian 12+">
+    Ces commandes ont été exécutées sous Ubuntu 24.04 (Noble Numbat).
+    
+    Tout d'abord, établissez une connexion SSH vers votre serveur et exécutez les commandes suivantes depuis la ligne de commande pour installer le paquet VLAN sur votre serveur :
+    
+    ```sh
+    sudo apt update
+    sudo apt install vlan
+    ```
+    
+    Ensuite, chargez le module noyau 8021q :
+    
+    ```sh
+    sudo modprobe 8021q
+    ```
+    
+    Pour vérifier que le module est chargé :
+    
+    ```sh
+    user@server:~$ lsmod | grep 8021q
+    8021q                  40960  0
+    garp                   16384  1 8021q
+    mrp                    20480  1 8021q
+    ```
+    
+    Exécutez la commande suivante pour vous assurer que les modules sont chargés de manière permanente au démarrage :
+    
+    ```sh
+    sudo su -c 'echo "8021q" >> /etc/modules'
+    ```
+    
+    Créez ou modifiez le fichier `cloud.cfg` de configuration pour empêcher les modifications automatiques de votre configuration réseau :
+    
+    ```sh
+    sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+    ```
+    
+    Ajoutez la ligne suivante :
+    
+    ```sh
+    network: {config: disabled}
+    ```
+    
+    Récupérez le nom de l'interface réseau et son adresse MAC :
+    
+    ```sh
+    ip a
+    ```
+    
+    Ici, l'interface que nous souhaitons configurer est `eno2` avec l'adresse MAC : `d0:50:99:d6:6b:14`.
+    
+    <img className="thumbnail" alt="ubuntu VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack3-ubuntu-01.png" loading="lazy" />
+
+Ajoutez la configuration réseau pour cette interface réseau et les informations VLAN dans le fichier suivant, en veillant à les placer directement sous la ligne `version : 2`. Remplacez les valeurs par les vôtres :
+    
+    ```sh
+    sudo nano /etc/netplan/50-cloud-init.yaml
+    ```
+    
+    ```yaml
+    network:
+        version: 2
+        ethernets:
+            eno2:
+                match:
+                    macaddress: d0:50:99:d6:6b:14
+        vlans:
+            vlan10:
+                id: 10                      # VLAN ID    
+                link: eno2                  # Nom de l'interface
+                addresses:
+                - 192.168.0.10/16
+        ethernets:                    
+            eno1:
+                ...
+                ...
+    ```
+    
+    Pour plusieurs VLAN configurés, votre configuration réseau devrait ressembler à ceci :
+    
+    <img className="thumbnail" alt="ubuntu VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/multiple_vlan_ubuntu.png" loading="lazy" />
+
+Enregistrez et fermez le fichier, puis exécutez la commande suivante :
+    
+    ```sh
+    sudo netplan apply
+    ```
+    
+    Utilisez la commande suivante pour vous assurer que la configuration a été correctement appliquée :
+    
+    ```sh
+    ip a
+    ```
+    
+    <img className="thumbnail" alt="ubuntu VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack3-ubuntu-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="AlmaLinux et Rocky Linux (8/9)">
+    Avant de commencer, établissez une connexion SSH vers votre serveur et exécutez la commande suivante pour charger le module noyau 8021q :
+    
+    ```sh
+    sudo modprobe 8021q
+    ```
+    
+    Pour vérifier que le module est chargé :
+    
+    ```sh
+    user@server:~$ lsmod | grep 8021q
+    8021q                  40960  0
+    garp                   16384  1 8021q
+    mrp                    20480  1 8021q
+    ```
+    
+    Ensuite, exécutez la commande suivante pour vous assurer que les modules sont chargés de manière permanente au démarrage :
+    
+    ```sh
+    sudo su -c 'echo "8021q" >> /etc/modules'
+    ```
+    
+    Récupérez les noms des interfaces et identifiez l'interface privée :
+    
+    ```sh
+    ip a
+    ```
+    
+    Ensuite, créez un fichier de configuration d'interface secondaire pour le VLAN dans le fichier de configuration réseau principal.
+    
+    Dans cet exemple, le fichier est nommé `ifcfg-eno2.10`, où eno2 fait référence à l'interface réseau privée et `10` au VLAN ID.
+    
+    ```sh
+    sudo nano /etc/sysconfig/network-scripts/ifcfg-eno2.10
+    ```
+    
+    Ajoutez les entrées suivantes au fichier de configuration, en veillant à remplacer les valeurs par les vôtres :
+    
+    ```console
+    TYPE=Vlan
+    PHYSDEV=eno2
+    VLAN_ID=10
+    BOOTPROTO=none
+    IPADDR=192.168.0.10
+    PREFIX=16
+    NAME=eno2.10
+    DEVICE=eno2.10
+    ONBOOT=yes
+    VLAN=yes
+    ```
+    
+    Enregistrez et fermez le fichier.
+    
+    Pour plusieurs VLAN configurés, vous devriez créer un nouveau fichier pour chaque identifiant VLAN :
+    
+    <img className="thumbnail" alt="alma VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/multiple_vlan_alma.png" loading="lazy" />
+
+Redémarrez l'interface réseau :
+    
+    ```sh
+    sudo systemctl restart NetworkManager
+    ```
+  </Tab>
+  <Tab label="Fedora 42+, AlmaLinux et Rocky Linux (10)">
+    La configuration ci-dessous est basée sur Fedora 43.
+    
+    Avant de commencer, établissez une connexion SSH vers votre serveur et exécutez la commande suivante pour charger le module noyau 8021q :
+    
+    ```sh
+    sudo modprobe 8021q
+    ```
+    
+    - Pour vérifier que le module est chargé :
+    
+    ```sh
+    user@server:~$ lsmod | grep 8021q
+    8021q                  40960  0
+    garp                   16384  1 8021q
+    mrp                    20480  1 8021q
+    ```
+    
+    Exécutez la commande suivante pour vous assurer que les modules sont chargés de manière permanente au démarrage :
+    
+    ```sh
+    sudo su -c 'echo "8021q" >> /etc/modules'
+    ```
+    
+    Pour obtenir le nom de l'interface réseau privée :
+    
+    ```sh
+    ip a
+    ```
+    
+    Dans cet exemple, l'interface s'appelle `eno2`. Nous devons créer une interface secondaire VLAN avant d'attribuer une adresse IP privée à celle-ci.
+    
+    Utilisez la commande suivante pour créer l'interface VLAN :
+    
+    ```sh
+    sudo nmcli con add type vlan con-name <vlan-name> dev <parent-interface> id <vlan-id>.
+    ```
+    
+    Remplacez `vlan-name` par le nom de l'interface secondaire VLAN, `parent-interface` par le nom de l'interface privée et `vlan-id` par l'ID VLAN.
+    
+    **Dans cet exemple :**
+    
+    ```sh
+    sudo nmcli con add type vlan con-name eno2.10 dev eno2 id 10
+    Connection 'eno2.10' successfully added.
+    ```
+    
+    Attribuez une adresse IP privée à l'interface secondaire VLAN :
+    
+    ```sh
+    sudo nmcli con mod <vlan-name> ipv4.addresses <ip/prefix> ipv4.method manual
+    ```
+    
+    **Dans cet exemple :**
+    
+    ```sh
+    sudo nmcli con mod eno2.10 ipv4.addresses 192.168.0.10/16 ipv4.method manual
+    ```
+    
+    Ensuite, activez l'interface secondaire VLAN :
+    
+    ```sh
+    sudo nmcli con up <vlan-name>.
+    ```
+    
+    **Dans cet exemple :**
+    
+    ```sh
+    sudo nmcli con up eno2.10
+    # Connection successfully activated
+    ```
+    
+    Utilisez les mêmes commandes pour chaque interface VLAN que vous souhaitez ajouter.
+    
+    Une fois terminé, un fichier de configuration pour l'interface VLAN est créé. Ce fichier se trouve dans `/etc/NetworkManager/system-connections/` et suit le format de nommage `vlan-name.nmconnection`.
+    
+    Pour plusieurs VLAN, plusieurs fichiers de configuration seront créés :
+    
+    - Aperçu :
+    
+    <img className="thumbnail" alt="config" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/multiple_vlan_fedora.png" loading="lazy" />
+    
+    <img className="thumbnail" alt="config" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/multiple_vlan_fedora_1.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Sous Windows
+
+Connectez-vous à votre serveur via le bureau à distance et ouvrez l'application « Gestionnaire de serveur ». Sélectionnez ensuite <code className="action">Serveur local</code>, puis cliquez sur le lien <code className="action">Désactivé</code> à côté de **Association des cartes réseau** :
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-01.png" loading="lazy" />
+
+Faites ensuite un clic droit sur l'interface réseau et sélectionnez <code className="action">Ajouter à une nouvelle équipe</code>.
+
+<img className="thumbnail" alt="Windows vLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-02.0.png" loading="lazy" />
+
+Dans la fenêtre qui apparaît, créez une nouvelle équipe en entrant un nom d'équipe dans le champ **Nom de l'équipe**. Lorsque vous avez terminé, cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-02.png" loading="lazy" />
+
+Il convient ensuite de préciser le tag du VLAN. Dans le panneau « **CARTES ET INTERFACES** » de l’écran « **Association des cartes réseau** », allez dans l'onglet <code className="action">Interfaces d'équipe</code> et faites un clic droit sur l’interface que vous venez d’ajouter à la nouvelle équipe, puis cliquez sur <code className="action">Propriétés</code>. Cliquez maintenant sur <code className="action">VLAN spécifique</code>, et précisez le tag :
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-03.png" loading="lazy" />
+
+Il faut maintenant configurer l’adresse IP du VLAN. Cliquez sur le bouton <code className="action">Start</code> du menu de démarrage, puis sur <code className="action">Panneau de configuration</code> :
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-04.png" loading="lazy" />
+
+Cliquez sur <code className="action">Réseau et Internet</code> :
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-05.png" loading="lazy" />
+
+Cliquez ensuite sur <code className="action">Centre Réseau et partage</code> :
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-06.png" loading="lazy" />
+
+Cliquez alors sur <code className="action">Modifier les paramètres de la carte</code> :
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-07.png" loading="lazy" />
+
+Ensuite, faites un clic droit sur l’interface VLAN, puis cliquez sur <code className="action">Propriétés</code> :
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-08.png" loading="lazy" />
+
+Dans notre exemple, `Ethernet 2` est l'interface utilisée pour le vRack. Cependant, il est possible que le NIC vRack soit une interface différente dans votre configuration. La bonne interface à sélectionner sera celle qui n'a pas l'adresse IP principale du serveur ou qui a une IP auto-attribuée.
+
+Effectuez un double clic sur <code className="action">Internet Protocol Version 4 (TCP/IPv4)</code> :
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-09.png" loading="lazy" />
+
+Dans l'étape suivante, cliquez sur <code className="action">Utiliser l'adresse IP suivante</code>. Pour « **Address IP** », tapez une adresse IP de votre plage interne. Pour « **Masque de sous-réseau** », tapez « 255.255.0.0 ».
+
+<img className="thumbnail" alt="Windows VLAN" src="/images/bare-metal-cloud/dedicated-servers/creating-multiple-vlans-in-a-vrack/vrack2-windows-10.png" loading="lazy" />
+
+Pour finir, cliquez sur le bouton <code className="action">OK</code> pour sauvegarder les modifications et enfin redémarrez le serveur.
+
+## Aller plus loin
+
+[Configurer plusieurs serveurs dédiés dans le vRack](/guides/bare-metal-cloud/dedicated-servers/vrack-configuring-on-dedicated-server/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

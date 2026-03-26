@@ -1,0 +1,112 @@
+---
+title: Tworzenie kopii zapasowej wolumenu
+description: Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta
+lastUpdated: 2026-02-24
+---
+
+## Wprowadzenie
+
+Jeśli przywiązujesz dużą wagę do danych przechowywanych w wolumenach Block Storage, zorganizuj ich kopię zapasową, aby ograniczyć potencjalny wpływ problemów na dane, czy to z powodu błędu występującego u człowieka, czy z powodu incydentu na poziomie klastra.
+
+Snapshot **wolumenu** to punkt odzysku przechowywany w tym samym klastrze przestrzeni dyskowej, co oryginalny wolumen. Operacje tworzenia i przywracania są szybkie, ale w przypadku awarii na klastrze, wolumen i wolumen Snapshot mogą być niedostępne.<br/>
+Tworzenie wolumenu Snapshot nie wymaga odłączenia wolumenu od instancji.
+
+Backup **wolumenu** to obraz utworzony na podstawie wolumenu. Wolumen jest przechowywany w klastrze Object Storage w lokalizacji oryginalnego wolumenu.
+Ten poziom odporności jest idealny i pozwala na szybką reakcję na każdy problem z wolumenem tworząc kolejny wolumen z kopii zapasowej.<br/>
+Tworzenie kopii zapasowej wolumenu wymaga odłączenia wolumenu od instancji.
+
+Wolumen Snapshot oraz Backup Wolumenu pozwalają na:
+
+- tworzenie kopii zapasowych wolumenu przy pomocy kilku kliknięć i przechowywanie ich tak długo, jak będzie to konieczne;
+- korzystać z kopii zapasowych, aby przywrócić stan wolumenu;
+- Użyj kopii zapasowych jako szablonu do tworzenia identycznych wolumenów.
+
+**Niniejszy przewodnik wyjaśnia, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta OVHcloud.**
+
+## Wymagania początkowe
+
+- Odłączony [wolumin Block storage](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) utworzony w Twoim projekcie [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Ograniczenia
+
+Kopie zapasowe zaszyfrowanych wolumenów LUKS mogą być przywracane wyłącznie na ten sam typ zaszyfrowanego wolumenu LUKS.
+
+## W praktyce
+
+Następnie otwórz menu <code className="action">Block Storage</code> na pasku nawigacji po lewej stronie w **Storage i Backup**.
+
+Po prawej stronie wybranego wolumenu kliknij przycisk <code className="action">...</code> a następnie <code className="action">Utwórz kopię zapasową</code>.
+
+:::info
+**Aby utworzyć kopię zapasową, wolumin musi najpierw zostać odłączony od swojej instancji.**
+
+- Dla środowiska Linux, zapoznaj się z sekcją **Linux** w przewodniku "[Zarządzanie wolumenem instancji Public Cloud](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)".
+- Dla środowiska Windows, zapoznaj się z sekcją **Windows** w przewodniku "[Zarządzanie wolumenem instancji Public Cloud](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)".
+
+:::
+
+
+<img className="thumbnail" alt="Backup - tworzenie" src="/images/public-cloud/compute/volume-backup/volumebackup01.png" loading="lazy" />
+
+Wybierz wolumin, z którego chcesz utworzyć kopię zapasową.
+
+Wybierz rodzaj kopii zapasowej, którą chcesz utworzyć: **Snapshot wolumenu** lub **Backup** wolumenu.
+
+- Wybierając **Volume Snapshot**, będziesz mógł zmienić nazwę wolumenu Snapshot, który chcesz utworzyć przed zatwierdzeniem za pomocą przycisku <code className="action">Utwórz kopię zapasową</code>.
+- Wybierając **Volume Backup** zostaniesz poproszony o odłączenie wolumenu od instancji, aby móc kontynuować. Przed zatwierdzeniem operacji za pomocą przycisku <code className="action">Utwórz kopię zapasową</code>, będziesz mógł zmienić nazwę utworzonego wolumenu.
+
+<img className="thumbnail" alt="Backup lub Snapshot - tworzenie" src="/images/public-cloud/compute/volume-backup/volumebackup02.png" loading="lazy" />
+
+Czas tworzenia kopii zapasowej, niezależnie od tego, czy jest to wolumen Snapshot, czy Backup Wolumenu, może zająć kilka godzin, w zależności od ilości danych zapisanych na woluminie, wykorzystania zasobów instancji do wolumenu Snapshot oraz innych czynników specyficznych dla hosta.
+
+:::info
+**Dobre praktyki:**
+
+- wykonuj kopie zapasowe wolumenu poza godzinami produkcji;
+- unikaj tworzenia snapshotów w godzinach szczytu (od 04:00 do 22:00 czasu paryskiego);
+- zainstaluj agenta qemu-guest, jeśli nie jest to zrobione lub spróbuj go wyłączyć, jeśli to konieczne;
+- spróbuj nie przeciągać serwera zbyt dużo w fazie tworzenia snapshota (ograniczenie I/O, zużycie pamięci RAM, itp.).
+- nawet jeśli opcja ta nie jest obowiązkowa, wolałbyś odłączyć wolumen podczas tworzenia wolumenu Snapshot;
+- regularnie sprawdzaj, czy jesteś w stanie odzyskać dane z wolumenu Snapshot lub z kopii zapasowej wolumenu.
+
+:::
+
+
+Snapshot wolumenu lub Backup wolumen to klon całego dysku. Będzie on miał maksymalny rozmiar oryginalnego wolumenu, bez względu na rzeczywistą alokację przestrzeni dyskowej.
+
+Listę kopii zapasowych wolumenu Snapshot znajdziesz w sekcji <code className="action">Snapshoty wolumenów</code> na pasku po lewej stronie.
+Po utworzeniu wolumenu Snapshot zostanie wyświetlony na tej liście.
+
+<img className="thumbnail" alt="Snapshot - lista" src="/images/public-cloud/compute/volume-backup/volumebackup03.png" loading="lazy" />
+
+Listę kopii zapasowych wolumenu znajdziesz w sekcji <code className="action">Volume Backup</code> na pasku po lewej stronie.
+Po otrzymaniu wniosku o utworzenie wolumenu Backup zostaje on dodany do listy.
+
+<img className="thumbnail" alt="Kopia zapasowa - lista" src="/images/public-cloud/compute/volume-backup/volumebackup04.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">...</code>, aby <code className="action">usun</code> lub <code className="action">Utwórz wolumen</code> na podstawie wolumenu Snapshot lub odpowiedniego wolumenu Backup.
+
+Więcej informacji na ten temat znajdziesz w [naszym przewodniku dotyczącym tworzenia wolumenu z kopii zapasowej](/guides/public-cloud/compute/storage-create-volume-from-backup/).
+
+<img className="thumbnail" alt="Tworzenie wolumenu z kopii zapasowej" src="/images/public-cloud/compute/volume-backup/volumebackup05.png" loading="lazy" />
+
+## Sprawdź również
+
+[Tworzenie wolumenu z kopii zapasowej](/guides/public-cloud/compute/storage-create-volume-from-backup/)
+
+[Tworzenie i konfigurowanie dodatkowego dysku dla instancji](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)
+
+[Zwiększ rozmiar dodatkowego dysku](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,108 @@
+---
+title: Setting up an IPsec Tunnel with NSX (EN)
+description: Learn how to configure an IPsec tunnel
+lastUpdated: 2023-07-05
+---
+
+## Objective
+
+**Learn how to configure an IPsec tunnel with NSX.**
+
+:::warning
+OVHcloud provides you with services for which you are responsible for configuration, management, and liability. It is your responsibility to ensure their proper functioning.
+
+This guide aims to assist you with common tasks. However, we recommend seeking assistance from a [specialized provider](https://partner.ovhcloud.com/pl/directory/) if you encounter difficulties or have doubts regarding the administration, usage, or implementation of a service on a server.
+
+:::
+
+
+## Prerequisites
+
+- Being the administrative contact for the [VMware on OVHcloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/), and having received the connection credentials.
+- An active user account with specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
+- Having **NSX** deployed with two configured segments in your NSX configuration. Refer to our guide on [NSX segment management](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/) for more information.
+
+## Instructions
+
+Here is the tunnel we want to establish between two infrastructures:
+
+<img className="thumbnail" alt="12 Create IPSec 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-12-configure-ipsec/12-create-ipsec-01.png" loading="lazy" />
+
+From the NSX interface, go to the <code className="action">Networking</code> tab, select <code className="action">VPN</code> under the **VPN Services** section and click on <code className="action">ADD SERVICE</code>, then select <code className="action">IPSec</code>.
+
+Provide the following information:
+
+- **Name**: Enter a name.
+- **Tier-0/Tier-1 Gateway**: Enter `ovh-T0-gw | Tier-0`.
+
+<img className="thumbnail" alt="12 Create IPSec 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-12-configure-ipsec/12-create-ipsec-02.png" loading="lazy" />
+
+Next, you need to specify the parameter type for the different IPSec stages. To do this, you will need to provide the IKE, IPSec, and DPD profiles (default profiles may already be provided).
+
+From the NSX interface, go to the <code className="action">Networking</code> tab, select <code className="action">VPN</code> under the **Profiles** section, choose <code className="action">IKE PROFILES</code> then click <code className="action">ADD IKE PROFILE</code>.
+
+Provide the following information with your parameters:
+
+- **Name**: Enter a name.
+- **IKE Version**: Enter the IKE version.
+- **Encryption Algorithm**: Choose the algorithm.
+- **Digest Algorithm**: Choose the algorithm.
+- **Diffie-Hellman**: Choose the group.
+
+<img className="thumbnail" alt="12 Create IPSec 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-12-configure-ipsec/12-create-ipsec-03.png" loading="lazy" />
+
+Next, from the NSX interface, go to the <code className="action">Networking</code> tab, select <code className="action">VPN</code> under the **Profiles** section, choose <code className="action">IPSec PROFILES</code>, then click <code className="action">ADD IPSEC PROFILE</code>. Complete the IPSec information with your parameters.
+
+Finally, from the NSX interface, go to the <code className="action">Networking</code> tab, select <code className="action">VPN</code> under the **Profiles** section. Choose <code className="action">DPD PROFILES</code> and click <code className="action">ADD DPD PROFILE</code>. Complete the DPD information with your parameters.
+
+Next, you need to create a Local Endpoint:
+
+From the NSX interface, go to the <code className="action">Networking</code> tab, select <code className="action">VPN</code> under the **Local Endpoint** section and click <code className="action">ADD LOCAL ENDPOINT</code>.
+
+Complete the following information with your parameters:
+
+- **Name**: Enter a name.
+- **IPSec Service**: Select the previously created VPN service.
+- **IP Address**: Select an available IP from your range of public IPs associated with the PCC.
+- **Local ID**: Enter the local ID of the IPSec tunnel.
+
+<img className="thumbnail" alt="12 Create IPSec 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-12-configure-ipsec/12-create-ipsec-04.png" loading="lazy" />
+
+Finally, you need to complete the IPSec session configuration.
+
+From the NSX interface, go to the <code className="action">Networking</code> tab, select <code className="action">VPN</code> under the **IPSec Sessions** section and click <code className="action">ADD IPSEC SESSION</code>.
+
+Complete the following information with your parameters:
+
+- **Name**: Enter a name.
+- **Type**: Policy Based.
+- **VPN Service**: Select the previously created VPN Service.
+- **Local Endpoint**: Select the previously created Local Endpoint.
+- **Remote IP**: Select the IP of the remote IPSec tunnel.
+- **Authentication Mode**: Choose the authentication mode (e.g. PSK).
+- **Pre-shared Key**: Enter the shared key for the IPSec tunnel.
+- **Local Networks**: Enter the local networks to advertise.
+- **Remote Networks**: Enter the remote networks to know.
+- **Remote ID**: Enter the remote ID of the tunnel.
+
+Under <code className="action">Advanced Properties</code>, complete the following information with your parameters:
+
+- **IKE Profiles**: The previously created IKE profile or default profiles.
+- **IPSec Profiles**: The previously created IPSec profile or default profiles.
+- **DPD Profiles**: The previously created DPD profile or default profiles.
+
+<img className="thumbnail" alt="12 Create IPSec 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-12-configure-ipsec/12-create-ipsec-05.png" loading="lazy" />
+
+If everything is properly configured on the other side, you should see a green "Success" status.
+
+## Go further
+
+[Getting Started with NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-01-first-steps/)
+
+[NSX Segment Management](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/)
+
+[VMware Documentation on NAT in NSX](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html)
+
+If you require training or technical assistance for the implementation of our solutions, contact your account manager or click [this link](https://www.ovhcloud.com/pl/professional-services/) to request a quote and a personalized analysis of your project from our Professional Services team.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

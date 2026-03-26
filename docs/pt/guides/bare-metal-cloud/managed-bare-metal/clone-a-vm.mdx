@@ -1,0 +1,73 @@
+---
+title: Clonar uma VM
+description: Saiba como clonar uma VM existente através de vSphere
+lastUpdated: 2020-11-18
+---
+
+## Objetivo
+
+A clonagem de uma VM permite criar uma cópia da VM de origem.
+
+**Este manual explica como realizar esta operação**
+
+## Requisitos
+
+- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
+- Dispor de, pelo menos, uma VM no seu cluster.
+- Estar ligado à [interface vSphere](/guides/bare-metal-cloud/managed-bare-metal/vsphere-interface/).
+
+## Instruções
+
+### Clonar a VM
+
+Na sua [interface vSphere](/guides/bare-metal-cloud/managed-bare-metal/vsphere-interface/), aceda à vista `Hosts and Clusters`.
+
+Clique com o botão direito do rato na VM que quer clonar e clique em <code className="action">Clone</code> > <code className="action">Clone to virtual machine...</code>. 
+
+<img className="thumbnail" alt="Clonar uma VM" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm01.png" loading="lazy" />
+
+Dê um nome a esta nova VM e defina a sua localização na sua arborescência.
+
+<img className="thumbnail" alt="Dar nome a VM" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm02.png" loading="lazy" />
+
+### Selecionar o recurso
+
+Especifique o cluster, o host, a vApp ou a pool de recursos desta VM.
+
+<img className="thumbnail" alt="Recursos da VM" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm03.png" loading="lazy" />
+
+### Escolha do armazenamento
+
+Defina a localização do armazenamento (espaço em disco) desta VM. 
+
+O formato do disco virtual é de tipo “Thin Provision”, ou seja um disco virtual será criado mas só utilizará o espaço em disco realmente utilizado no armazenamento, independentemente do espaço em disco anteriormente utilizado na VM de origem.
+
+Pode consultar mais informações sobre os formatos de disco [neste manual](/guides/bare-metal-cloud/managed-bare-metal/choosing-disk-type/).
+
+Poderá escolher, através da linha `VM Storage Policy`, a política de armazenamento predefinida se tiver datastores, ou ainda a opção [VM encryption](/guides/bare-metal-cloud/managed-bare-metal/vm-encrypt/).
+
+<img className="thumbnail" alt="armazenamento vm" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm04.png" loading="lazy" />
+
+### Configuração do sistema
+
+Este passo permite definir a configuração de rede que quer aplicar a esta VM. Tem duas possibilidades:
+
+- Se não selecionar nada, não haverá qualquer modificação da configuração de rede da nova VM em comparação à VM de origem;
+
+- <code className="action">Personalizar o hardware desta VM (experimental)</code>: esta opção permitir-lhe-á especificar as novas configurações que pretende implementar nesta nova VM.
+
+<img className="thumbnail" alt="rede vm" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm05.png" loading="lazy" />
+
+:::warning
+Se não efetuou qualquer personalização da VM, é necessário modificar a configuração do clone antes de a iniciar, para evitar um conflito de IP/MAC. 
+
+:::
+
+>Neste caso, só precisa de desselecionar a placa de rede nos parâmetros da VM depois de a clonar, logo antes de a iniciar.
+>
+><img className="thumbnail" alt="desconectar" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm06.png" loading="lazy" />
+>
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

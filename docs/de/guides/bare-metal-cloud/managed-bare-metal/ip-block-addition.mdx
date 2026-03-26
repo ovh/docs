@@ -1,0 +1,98 @@
+---
+title: IP-Block hinzufügen
+description: Erfahren Sie hier, wie Sie einen IP-Block für Ihr Managed Bare Metal Projekt bestellen
+lastUpdated: 2020-11-18
+---
+
+import Api from '@components/Api';
+
+
+## Ziel
+
+IP-Blöcke können verwendet werden, um Ihre Dienste über das Internet zugänglich zu machen. 
+
+**Diese Anleitung erklärt, wie Sie einen IP-Block für Ihre Managed Bare Metal bestellen, hinzufügen und migrieren.**
+
+## Voraussetzungen
+
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Sie verfügen über eine [Managed Bare Metal Infrastruktur](https://www.ovhcloud.com/de/managed-bare-metal/) in Ihrem OVHcloud Account.
+
+## In der praktischen Anwendung
+
+### IP-Block bestellen
+
+Um einen zusätzlichen IP-Block für Ihre **Managed Bare Metal** zu bestellen, gehen Sie in Ihr OVHcloud Kundencenter. Klicken Sie im Bereich `Bare Metal Cloud` in der linken Spalte auf `IP` und dann auf <code className="action">Zusätzliche IP-Adressen bestellen</code>. Wählen Sie anschließend im Drop-down-Menü Ihre **Managed Bare Metal** aus und gehen Sie weiter zum nächsten Schritt.
+
+Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
+
+- Größe des IP-Blocks (/28 bis /24)
+
+:::info
+Zur Erinnerung haben wir in der nachstehenden Tabelle die Anzahl der in einem Block enthaltenen IPs sowie die Anzahl der verwendbaren IPs aufgeführt.
+
+:::
+
+
+|Block-Größe|IPs im Block|Bei OVHcloud verwendbare IPs|
+|:---:|:---:|:---:|
+|28|16|11|
+|27|32|27|
+|26|64|59|
+|25|128|123|
+|24|256|251|
+
+:::info
+Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](/guides/bare-metal-cloud/managed-bare-metal/plugin-ovh-network/) nachlesen.
+
+:::
+
+
+- Land des IP-Blocks. Dieses kann für das SEO-Ranking Ihrer Dienste von Bedeutung sein (zum Beispiel ist die Referenzierung einer deutschen Website in Deutschland besser, wenn auch ihre IP deutsch ist)
+- Netzwerkname (sichtbar im Whois des IP-Blocks)
+- Anzahl der erwarteten Kunden (wie viele Endkunden werden auf diesen IPs gehostet)
+- Netzwerkbeschreibung (sichtbar im Whois des IP-Blocks)
+- Verwendung (Nutzungsinformationen wie Web, SSL, Cloud, ...)
+
+Sobald Sie den letzten Schritt bestätigt haben, erhalten Sie den Bestellschein Ihres IP-Blocks. Wenn dieser Ihren Wünschen entspricht, können Sie ihn einfach mithilfe der unten auf der Seite vorgeschlagenen Zahlungsmittel begleichen, damit er geliefert wird.
+
+### IP-Block zwischen zwei Managed Bare Metal migrieren
+
+Für die Migration eines IP-Blocks müssen die Blöcke manuell über die OVHcloud APIv6 verschoben werden.
+
+Verwenden Sie hierzu folgenden Befehl:
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\{ip\}/move"} />
+
+Die Felder müssen wie folgt ausgefüllt werden:
+
+- ip: IP-Block mit /mask
+- nexthop “newPrimaryIp” (case-sensitive)
+- to: Ziel-Managed-Bare-Metal in der Form pcc-XXX-XXX-XXX-XXX
+
+<img className="thumbnail" alt="Feld nexthop" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/move-api.png" loading="lazy" />
+
+Das Ergebnis wird wie folgt angezeigt:
+
+<img className="thumbnail" alt="Feld nexthop" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/api-result.png" loading="lazy" />
+
+Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu verschieben:
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\{ip\}/park"} />
+
+
+:::warning
+Dieser Aufruf trennt das Netzwerk auf den VMs, die die betreffenden IPs verwenden.
+
+:::
+
+
+Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich <code className="action">Bare Metal Cloud</code> unter <code className="action">Managed Bare Metal</code> nachverfolgen. Klicken Sie auf Ihren Managed Bare Metal Dienst und dann auf den Tab <code className="action">Operationen</code>.
+
+Die Referenz der Operation lautet “removeIpRipeBlock”.
+
+<img className="thumbnail" alt="Operationen Kundencenter" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/operations.png" loading="lazy" />
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

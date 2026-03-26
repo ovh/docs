@@ -1,0 +1,263 @@
+{
+  "gettingStarted": {
+    "en": "Getting Started",
+    "fr": "Démarrez",
+    "de": "Erste Schritte",
+    "es": "Primeros pasos",
+    "it": "Primi passi",
+    "pl": "Pierwsze kroki",
+    "pt": "Primeiros passos"
+  },
+  "features": {
+    "en": "Features",
+    "fr": "Fonctionnalités",
+    "de": "Funktionen",
+    "es": "Funcionalidades",
+    "it": "Funzionalità",
+    "pl": "Funkcje",
+    "pt": "Funcionalidades"
+  },
+  "guides": {
+    "en": "Guides",
+    "fr": "Guides",
+    "de": "Anleitungen",
+    "es": "Guías",
+    "it": "Guide",
+    "pl": "Przewodniki",
+    "pt": "Guias"
+  },
+  "takeMeHomeText": {
+    "en": "Go to home",
+    "fr": "Retour à l'accueil",
+    "de": "Zur Startseite",
+    "es": "Ir al inicio",
+    "it": "Vai alla home",
+    "pl": "Strona główna",
+    "pt": "Ir para o início"
+  },
+  "languagesText": {
+    "en": "Languages",
+    "fr": "Langues",
+    "de": "Sprachen",
+    "es": "Idiomas",
+    "it": "Lingue",
+    "pl": "Języki",
+    "pt": "Idiomas"
+  },
+  "themeText": {
+    "en": "Theme",
+    "fr": "Thème",
+    "de": "Design",
+    "es": "Tema",
+    "it": "Tema",
+    "pl": "Motyw",
+    "pt": "Tema"
+  },
+  "versionsText": {
+    "en": "Versions",
+    "fr": "Versions",
+    "de": "Versionen",
+    "es": "Versiones",
+    "it": "Versioni",
+    "pl": "Wersje",
+    "pt": "Versões"
+  },
+  "menuTitle": {
+    "en": "Menu",
+    "fr": "Menu",
+    "de": "Menü",
+    "es": "Menú",
+    "it": "Menu",
+    "pl": "Menu",
+    "pt": "Menu"
+  },
+  "outlineTitle": {
+    "en": "Outline",
+    "fr": "Sur cette page",
+    "de": "Auf dieser Seite",
+    "es": "En esta página",
+    "it": "In questa pagina",
+    "pl": "Na tej stronie",
+    "pt": "Nesta página"
+  },
+  "scrollToTopText": {
+    "en": "Scroll to top",
+    "fr": "Retour en haut",
+    "de": "Nach oben",
+    "es": "Volver arriba",
+    "it": "Torna su",
+    "pl": "Do góry",
+    "pt": "Voltar ao topo"
+  },
+  "lastUpdatedText": {
+    "en": "Last updated",
+    "fr": "Dernière mise à jour",
+    "de": "Zuletzt aktualisiert",
+    "es": "Última actualización",
+    "it": "Ultimo aggiornamento",
+    "pl": "Ostatnia aktualizacja",
+    "pt": "Última atualização"
+  },
+  "prevPageText": {
+    "en": "Previous page",
+    "fr": "Page précédente",
+    "de": "Vorherige Seite",
+    "es": "Página anterior",
+    "it": "Pagina precedente",
+    "pl": "Poprzednia strona",
+    "pt": "Página anterior"
+  },
+  "nextPageText": {
+    "en": "Next page",
+    "fr": "Page suivante",
+    "de": "Nächste Seite",
+    "es": "Página siguiente",
+    "it": "Pagina successiva",
+    "pl": "Następna strona",
+    "pt": "Próxima página"
+  },
+  "sourceCodeText": {
+    "en": "Source code",
+    "fr": "Code source",
+    "de": "Quellcode",
+    "es": "Código fuente",
+    "it": "Codice sorgente",
+    "pl": "Kod źródłowy",
+    "pt": "Código fonte"
+  },
+  "searchPlaceholderText": {
+    "en": "Search",
+    "fr": "Rechercher",
+    "de": "Suchen",
+    "es": "Buscar",
+    "it": "Cerca",
+    "pl": "Szukaj",
+    "pt": "Pesquisar"
+  },
+  "searchPanelCancelText": {
+    "en": "Cancel",
+    "fr": "Annuler",
+    "de": "Abbrechen",
+    "es": "Cancelar",
+    "it": "Annulla",
+    "pl": "Anuluj",
+    "pt": "Cancelar"
+  },
+  "searchNoResultsText": {
+    "en": "No results found",
+    "fr": "Aucun résultat trouvé",
+    "de": "Keine Ergebnisse gefunden",
+    "es": "No se encontraron resultados",
+    "it": "Nessun risultato trovato",
+    "pl": "Nie znaleziono wyników",
+    "pt": "Nenhum resultado encontrado"
+  },
+  "searchSuggestedQueryText": {
+    "en": "Suggested query",
+    "fr": "Requête suggérée",
+    "de": "Vorgeschlagene Suche",
+    "es": "Consulta sugerida",
+    "it": "Ricerca suggerita",
+    "pl": "Sugerowane zapytanie",
+    "pt": "Pesquisa sugerida"
+  },
+  "overview.filterNameText": {
+    "en": "Filter by name",
+    "fr": "Filtrer par nom",
+    "de": "Nach Name filtern",
+    "es": "Filtrar por nombre",
+    "it": "Filtra per nome",
+    "pl": "Filtruj według nazwy",
+    "pt": "Filtrar por nome"
+  },
+  "overview.filterPlaceholderText": {
+    "en": "Filter by placeholder",
+    "fr": "Filtrer par placeholder",
+    "de": "Nach Platzhalter filtern",
+    "es": "Filtrar por marcador",
+    "it": "Filtra per segnaposto",
+    "pl": "Filtruj według symbolu",
+    "pt": "Filtrar por marcador"
+  },
+  "overview.filterNoResultText": {
+    "en": "No results found",
+    "fr": "Aucun résultat trouvé",
+    "de": "Keine Ergebnisse gefunden",
+    "es": "No se encontraron resultados",
+    "it": "Nessun risultato trovato",
+    "pl": "Nie znaleziono wyników",
+    "pt": "Nenhum resultado encontrado"
+  },
+  "editLinkText": {
+    "en": "Edit this page",
+    "fr": "Modifier cette page",
+    "de": "Diese Seite bearbeiten",
+    "es": "Editar esta página",
+    "it": "Modifica questa pagina",
+    "pl": "Edytuj tę stronę",
+    "pt": "Editar esta página"
+  },
+  "codeButtonGroupCopyButtonText": {
+    "en": "Copy",
+    "fr": "Copier",
+    "de": "Kopieren",
+    "es": "Copiar",
+    "it": "Copia",
+    "pl": "Kopiuj",
+    "pt": "Copiar"
+  },
+  "notFoundText": {
+    "en": "Not found",
+    "fr": "Non trouvé",
+    "de": "Nicht gefunden",
+    "es": "No encontrado",
+    "it": "Non trovato",
+    "pl": "Nie znaleziono",
+    "pt": "Não encontrado"
+  },
+  "customerAccount": {
+    "en": "Customer account",
+    "fr": "Mon compte client",
+    "de": "Kundenkonto",
+    "es": "Cuenta de cliente",
+    "it": "Account cliente",
+    "pl": "Konto klienta",
+    "pt": "Conta de cliente"
+  },
+  "support": {
+    "en": "Support",
+    "fr": "Support",
+    "de": "Support",
+    "es": "Soporte",
+    "it": "Supporto",
+    "pl": "Wsparcie",
+    "pt": "Suporte"
+  },
+  "openInText": {
+    "en": "Open in {{name}}",
+    "fr": "Ouvrir dans {{name}}",
+    "de": "Öffnen in {{name}}",
+    "es": "Abrir en {{name}}",
+    "it": "Apri in {{name}}",
+    "pl": "Otwórz w {{name}}",
+    "pt": "Abrir em {{name}}"
+  },
+  "copyMarkdownText": {
+    "en": "Copy Markdown",
+    "fr": "Copier le Markdown",
+    "de": "Markdown kopieren",
+    "es": "Copiar Markdown",
+    "it": "Copia Markdown",
+    "pl": "Skopiuj Markdown",
+    "pt": "Copiar Markdown"
+  },
+  "copyMarkdownLinkText": {
+    "en": "Copy Markdown link",
+    "fr": "Copier le lien Markdown",
+    "de": "Markdown-Link kopieren",
+    "es": "Copiar enlace Markdown",
+    "it": "Copia link Markdown",
+    "pl": "Skopiuj link Markdown",
+    "pt": "Copiar link Markdown"
+  }
+}

@@ -1,0 +1,74 @@
+---
+title: Comment stocker les clés SSH dans votre espace client
+description: Découvrez comment importer des clés SSH publiques dans votre espace client OVHcloud
+lastUpdated: 2024-12-04
+---
+
+## Objectif
+
+Les paires de clés sont utilisées pour authentifier les connexions SSH entre les hôtes, par exemple entre le client local de votre ordinateur et un serveur distant. Lors de la réinstallation d'un serveur dédié ou d'un VPS depuis votre espace client, vous avez la possibilité d'ajouter une clé publique au système d'exploitation. Le stockage de clés SSH publiques dans votre espace client facilite ce processus.
+
+**Ce guide vous explique comment stocker vos clés SSH publiques dans votre espace client.**
+
+## Prérequis
+
+- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ou un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+
+:::info
+Pour plus d'informations sur l'utilisation des clés SSH avec les services [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), consultez notre guide dédié :
+
+[Comment créer des clés SSH avec OpenSSH pour les instances Public Cloud](/guides/public-cloud/compute/compute-creating-ssh-keys/)
+
+:::
+
+
+{/* CP-NAV-START:billing-services */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes offres & services](https://manager.eu.ovhcloud.com/#/billing/autorenew/services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > <code className="action">Mes offres & services</code>
+
+---
+{/* CP-NAV-END:billing-services */}
+
+## En pratique
+
+Si vous n'avez pas encore créé de paire de clés SSH, consultez d'abord nos guides :
+
+- [Créer et utiliser des clés SSH](/guides/bare-metal-cloud/dedicated-servers/creating-ssh-keys-dedicated/)
+- [Tutoriel - Comment utiliser PuTTY pour les connexions SSH et l'authentification](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/)
+
+<img className="thumbnail" alt="products and services" src="/images/assets/screens/control-panel/product-selection/right-menu/my-solutions-and-services.png" loading="lazy" />
+
+Dans la section `Mes services` de votre espace client, cliquez sur <code className="action">Clés SSH</code>.
+
+<img className="thumbnail" alt="control panel ssh keys" src="/images/bare-metal-cloud/dedicated-servers/import-keys-control-panel/importkey1.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Ajouter une clé SSH</code> et sélectionnez <code className="action">Dédié</code> dans le menu.
+
+<img className="thumbnail" alt="control panel ssh keys" src="/images/bare-metal-cloud/dedicated-servers/import-keys-control-panel/importkey2.png" loading="lazy" />
+
+Dans la fenêtre qui s'affiche, saisissez un « label » pour la clé dans le premier champ.  
+Copiez l'intégralité de la chaîne de clé publique et collez-la dans le deuxième champ.
+
+<img className="thumbnail" alt="control panel ssh keys" src="/images/bare-metal-cloud/dedicated-servers/import-keys-control-panel/importkey3.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Valider</code>.
+
+La clé sera désormais disponible lors de la réinstallation d'un serveur dédié ou d'un VPS dans votre espace client.
+
+Consultez nos guides « Premiers pas » pour plus de détails sur ce sujet :
+
+- [Serveur dédié](/guides/bare-metal-cloud/dedicated-servers/getting-started-with-dedicated-server/)
+- [Serveur dédié de la gamme **Eco**](/guides/bare-metal-cloud/dedicated-servers/getting-started-with-dedicated-server-eco/)
+- [VPS](/guides/bare-metal-cloud/virtual-private-servers/starting-with-a-vps/)
+
+## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

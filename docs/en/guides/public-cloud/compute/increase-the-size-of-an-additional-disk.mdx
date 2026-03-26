@@ -1,0 +1,259 @@
+---
+title: Increasing the size of an additional disk
+description: Find out how to increase the size of an additional volume and enlarge its main partition
+lastUpdated: 2026-02-26
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+If you have reached the maximum capacity on your additional disk, you can add more storage by increasing its size. 
+
+**This guide explains how to increase the size of an additional disk and extend the main partition accordingly.**
+
+## Requirements
+
+- A [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your Public Cloud project
+- An [additional disk](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) created in your project
+- Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+The following steps presume that you have configured an additional disk according to [our guide](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/).
+
+## Monitoring disk usage before resizing
+
+:::warning
+We recommend that you always maintain 20% free space on your storage volumes. This ensures optimum performance and avoids the risk of system degradation or failure when the volume reaches its maximum capacity.
+
+:::
+
+
+To ensure that you resize your disk at the right moment, it is essential to monitor disk usage regularly. Below are quick tutorials for both Windows and Linux to help you track disk space and anticipate when an upgrade is needed.
+
+<Tabs>
+  <Tab label="On Windows">
+    <details>
+    <summary>Using Command Prompt</summary>
+
+    
+    Open Command Prompt (Win + R → cmd → Enter).
+    
+    Run the following command:
+    
+    ```bash
+    wmic logicaldisk get name, size, freespace
+    ```
+    
+    This will display the free space and total size of each disk.
+    
+
+    </details>
+    
+    <details>
+    <summary>Using PowerShell</summary>
+
+    
+    Open PowerShell as Administrator.
+    
+    Run the following command:
+    
+    ```bash
+    Get-PSDrive | Where-Object {$_.Free -ne $null} | Select-Object Name, Used, Free
+    ```
+    
+    This will show the used and available disk space.
+    
+
+    </details>
+  </Tab>
+  <Tab label="On Linux">
+    <details>
+    <summary>Using 'df' command</summary>
+
+    
+    To check overall disk usage, run:
+    
+    ```bash
+    df -h
+    ```
+    
+    This will display disk usage in a human-readable format.
+    
+
+    </details>
+    
+    <details>
+    <summary>Using 'lsblk' command</summary>
+
+    
+    To view disk partitions and their sizes:
+    
+    ```bash
+    lsblk
+    ```
+    
+
+    </details>
+  </Tab>
+</Tabs>
+
+
+### Modifying the size of the disk
+
+Click on <code className="action">Block Storage</code> in the left-hand menu under **Storage & backup**.
+
+If the volume is attached to a **Windows instance**, click on <code className="action">...</code> in the row of the volume and select <code className="action">Detach from instance</code>.
+
+Click on <code className="action">...</code> in the row of the volume and select <code className="action">Edit</code>.
+
+<img className="thumbnail" alt="control panel" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/increase-disk-02.png" loading="lazy" />
+
+In the popup window, enter the new size for the volume and click on <code className="action">Modify the volume</code>.
+
+<img className="thumbnail" alt="control panel" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/increase-disk-03.png" loading="lazy" />
+
+### Extending the partition (Linux instance)
+
+Establish an SSH connection to your instance in order to adjust the partition to the resized disk.
+
+Unmount the disk first by using this command:
+
+```bash
+admin@server:~$ sudo umount /mnt/disk
+```
+
+Recreate the partition:
+
+```bash
+admin@server:~$ sudo fdisk /dev/vdb
+```
+```console
+Welcome to fdisk (util-linux 2.25.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command
+```
+```console
+Command (m for help): d
+
+Selected partition 1
+Partition 1 has been deleted.
+```
+```console
+Command (m for help): n
+
+Partition type
+p primary (0 primary, 0 extended, 4 free)
+e extended (container for logical partitions)
+Select (default p):
+Using default response p.
+Partition number (1-4, default 1):
+First sector (2048-146800639, default 2048):
+Last sector, +sectors or +size{K,M,G,T,P} (2048-146800639, default 146800639):
+
+Created a new partition 1 of type 'Linux' and of size 70 GiB.
+```
+```console
+Command (m for help): w
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+```
+
+Verify and check the partition:
+
+```bash
+admin@server:~$ sudo e2fsck -f /dev/vdb1
+
+e2fsck 1.42.12 (29-Aug-2014)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/vdb: 12/3276800 files (0.0% non-contiguous), 251700/13107200 blocks
+```
+
+```bash
+admin@server:~$ sudo resize2fs /dev/vdb1
+
+resize2fs 1.42.12 (29-Aug-2014)
+Resizing the filesystem on /dev/vdb to 18350080 (4k) blocks.
+The filesystem on /dev/vdb is now 18350080 (4k) blocks long.
+```
+
+Finally, re-mount and check the disk:
+
+```bash
+admin@server:~$ sudo mount /dev/vdb1 /mnt/disk/
+```
+
+```bash
+admin@server:~$ df -h
+Filesystem Size Used Avail Use% Mounted on
+/dev/vda1 9.8G 840M 8.6G 9% /
+udev 10M 0 10M 0% /dev
+tmpfs 393M 5.2M 388M 2% /run
+tmpfs 982M 0 982M 0% /dev/shm
+tmpfs 5.0M 0 5.0M 0% /run/lock
+tmpfs 982M 0 982M 0% /sys/fs/cgroup
+/dev/vdb1 69G 52M 66G 1% /mnt/disk
+```
+
+Once this is completed, detach the volume from the instance and reattach it to ensure the updated QoS settings (IOPS and bandwidth) are properly applied.
+
+### Extending the partition (Windows instance)
+
+Before proceeding, reattach the volume to the instance. Click on <code className="action">...</code> in the row of the volume and select <code className="action">Attach to instance</code>.
+
+Establish a remote desktop (RDP) connection to your Windows instance.
+
+Once logged in, right-click on the <code className="action">Start Menu</code> button and open <code className="action">Disk Management</code>.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-01.png" loading="lazy" />
+
+The extended disk now displays the additional capacity as unallocated space.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-02.png" loading="lazy" />
+
+Right-click on the volume and select <code className="action">Extend Volume</code> from the context menu.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-03.png" loading="lazy" />
+
+In the "Extend Volume Wizard", click on <code className="action">Next</code> to proceed.
+
+You can modify the disk space in this step if you want to add less than the entire amount to the partition. Click on <code className="action">Next</code>.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-04.png" loading="lazy" />
+
+Click on <code className="action">Finish</code> to complete the process.
+
+The resized volume now includes the additional disk space.
+
+<img className="thumbnail" alt="windows" src="/images/public-cloud/compute/increase-the-size-of-an-additional-disk/resize-win-05.png" loading="lazy" />
+
+Once this is completed, detach the volume from the instance and reattach it to ensure the updated QoS settings (IOPS and bandwidth) are properly applied.
+
+## Go further
+
+[Creating and configuring an additional disk on an instance](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)
+
+[Change your Block Storage volume type](/guides/public-cloud/compute/switch-volume-type/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

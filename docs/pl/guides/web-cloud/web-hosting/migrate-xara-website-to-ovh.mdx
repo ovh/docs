@@ -1,0 +1,79 @@
+---
+title: Przeniesienie strony WWW Xara do OVHcloud
+description: Dowiedz się, jak migrować Twoją stronę WWW Xara i powiązane z nią usługi do OVHcloud
+lastUpdated: 2024-07-29
+---
+
+## Wprowadzenie
+
+Tutorial ten krok po kroku wyjaśnia, jak migrować Twoją stronę WWW Xara i wszystkie powiązane z nią usługi do OVHcloud.
+
+:::warning
+OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+
+Oddajemy w Twoje ręce tutorial, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego dostawcy](https://partner.ovhcloud.com/pl/directory/) lub [oficjalna strona Xara Web designer](https://www.xara.com/webdesigner-plus/). Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) tego tutoriala.
+
+:::
+
+
+**Dowiedz się, jak przenieść Twoją stronę WWW Xara i powiązane z nią usługi do OVHcloud.**
+
+## Wymagania początkowe
+
+- Dostęp do interfejsu administracyjnego Xaraa
+
+## W praktyce
+
+### Etap 1: tworzenie kopii zapasowej plików i bazy danych Twojej strony WWW z modułem Xara
+
+Pierwszy etap polega na pobraniu wszystkich plików powiązanych z Twoją stroną WWW Xara. Dotyczy to również plików Xara oraz Twojej bazy danych, jeśli taka istnieje. Więcej informacji można znaleźć na stronie "[Exporting a Website](https://webdesigner.xara.com/bhavtest/test1/xara_desktop/product_support/web_features/exporting_website.html?rhhlterm=website)" lub na etapie 3 niniejszego przewodnika "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/guides/web-cloud/web-hosting/hosting-migrating-to-ovh/)".
+
+### Etap 2: przeniesienie Twojej strony WWW Xara do OVHcloud
+
+Po wykonaniu kopii zapasowej plików oraz bazy danych Twojej strony WWW Xara prześlij je na Twój hosting WWW OVHcloud. Jeśli nie posiadasz jeszcze hostingu OVHcloud, postępuj zgodnie z etapem 1 niniejszego przewodnika "[Migracja strony WWW i powiązanych z nią usług do OVHcloud](/guides/web-cloud/web-hosting/hosting-migrating-to-ovh/)".
+
+#### Etap 2.1: transfer plików z Twojej strony WWW Xara
+
+:::info
+Zalecamy skorzystanie z programu [FileZilla](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/) do przeniesienia plików Xara na Twój hosting.
+
+:::
+
+
+Aby przenieść pliki związane z Twoją stroną WWW Xara, najpierw zaloguj się do [przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud](/guides/web-cloud/web-hosting/ftp-connection/).
+
+Po zalogowaniu się do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud przejdź do katalogu głównego "www" (lub innego wcześniej utworzonego katalogu głównego). Jeśli Twoje pliki kopii zapasowych są skompresowane (przypinające), rozpakuj je do pustego folderu na komputerze, a następnie prześlij je do katalogu głównego Twojego hostingu WWW OVHcloud.
+
+#### Etap 2.2: import bazy danych Twojej strony WWW Xara
+
+Jeśli jeszcze nie masz kopii zapasowej, [utwórz nową bazę danych](/guides/web-cloud/web-hosting/sql-create-database/), a następnie [zaimportuj kopię zapasową do nowej bazy danych](/guides/web-cloud/web-hosting/sql-importing-mysql-database/).
+
+:::info
+OVHcloud oferuje serwery baz danych Web Cloud Databases. Jeśli chcesz skorzystać z tej oferty na swojej stronie WWW, zapoznaj się z pełną dokumentacją dotyczącą tego produktu na [dedykowanej stronie](https://www.ovhcloud.com/pl/web-cloud/databases/).
+
+:::
+
+
+### Etap 3: aktualizacja informacji o bazie danych
+
+Powiąż teraz Twoją stronę WWW z bazą danych. Zmiany te należy wprowadzić w pliku konfiguracyjnym. Wszystkie operacje, które należy wykonać, znajdziesz w przewodniku "[Zmiana hasła do bazy danych na hostingu WWW](/guides/web-cloud/web-hosting/sql-change-password/)".
+
+### Migracja innych usług powiązanych z Twoją stroną WWW Xara
+
+Właśnie przeprowadziłeś migrację plików oraz bazy danych Xara. Jeśli chcesz migrować Twoje konta e-mail, domenę lub strefy DNS, wykonaj kolejne kroki opisane w przewodniku "[Migracja witryny WWW i powiązanych z nią usług do OVHcloud](/guides/web-cloud/web-hosting/hosting-migrating-to-ovh/)", które dotyczą usług, które chcesz migrować. W przewodniku tym wykonanych zostanie już kilka kroków.
+
+## Sprawdź również <a name="go-further"></a>
+
+[Informacje ogólne na temat e-maili na hostingu](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/).
+
+[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/guides/web-cloud/web-hosting/hosting-migrating-to-ovh/).
+
+[Importuj bazę danych MySQL](/guides/web-cloud/web-hosting/sql-importing-mysql-database/).
+
+[Tworzenie bazy danych na hostingu](/guides/web-cloud/web-hosting/sql-create-database/).
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

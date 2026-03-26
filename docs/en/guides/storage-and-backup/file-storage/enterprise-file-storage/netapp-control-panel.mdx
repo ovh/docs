@@ -1,0 +1,240 @@
+---
+title: Managing Enterprise File Storage from the OVHcloud Control Panel
+description: Find out how to manage your Enterprise File Storage service in the OVHcloud Control Panel
+lastUpdated: 2024-12-13
+---
+
+## Objective
+
+Enterprise File Storage services can be managed [via the OVHcloud API](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-quick-start/) or in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+**This guide explains how to manage Enterprise File Storage volumes and snapshots in the OVHcloud Control Panel.**
+
+## Requirements
+
+- An Enterprise File Storage service in your OVHcloud account. The service can be ordered from the [product page](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/) or from the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+{/* CP-NAV-START:storage-enterprise-file-storage */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Enterprise File Storage](https://manager.eu.ovhcloud.com/#/dedicated/netapp)
+- **Navigation path:** <code className="action">Bare Metal Cloud</code> > <code className="action">Enterprise File Storage</code>
+
+---
+{/* CP-NAV-END:storage-enterprise-file-storage */}
+
+## Instructions <a name="instructions"></a>
+
+Select your service from the list.
+
+<img className="thumbnail" alt="General information" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise01.png" loading="lazy" />
+
+The <code className="action">General information</code> tab displays some technical information, general subscription details and a shortcut to [create a volume](#create_volume).
+
+:::info
+Please visit the [concepts page](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-concepts/) for detailed information on the technical properties of Enterprise File Storage.
+
+:::
+
+
+### Managing volumes <a name="manage_volume"></a>
+
+Switch to the <code className="action">Volumes</code> tab. The table lists all volumes you have created for the selected service. Click on a volume ID to open its [management page](#modify_volume).
+
+<img className="thumbnail" alt="Volumes" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise02.png" loading="lazy" />
+
+You can perform actions by clicking on the <code className="action">...</code> button in each row of the table.
+
+- **Modify the volume**: Opens the ["General information" section](#modify_volume) of the volume.
+- **Create a snapshot**: Opens the ["Snapshots" section](#snapshots) and a popup window to take a manual snapshot.
+- **Revert to the last saved snapshot**: Opens the ["Snapshots" section](#snapshots) and a popup window to restore the volume.
+- **Manage snapshots**: Opens the ["Snapshots" section](#snapshots) of the volume.
+- **Manage IP access (ACL)**: Opens the ["Access control list (ACL)" section](#access_control) where you can manage access control for the volume.
+- **Edit size**: Opens a popup window to modify volume size.
+- **Delete the volume**: Delete this volume after confirming the action in the popup window.
+
+#### Creating a volume <a name="create_volume"></a>
+
+Click on the button <code className="action">Create a volume</code>. In the new window, enter a name and description for the volume. Determine the size in GB and click on <code className="action">Create a volume</code> to confirm.
+
+<img className="thumbnail" alt="Volume creation" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise03.png" loading="lazy" />
+
+#### Modifying a volume <a name="modify_volume"></a>
+
+Click on a volume ID in the table to open the management page of this volume.
+
+The <code className="action">General information</code> tab displays your volume’s details and step-by-step instructions for connecting to it, including the individual parameters.
+
+<img className="thumbnail" alt="Volume management" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise04.png" loading="lazy" />
+
+You can also change the volume's name and description on this tab.
+
+#### Deleting a volume <a name="delete_volume"></a>
+
+You can delete a volume by clicking the <code className="action">...</code> button in its row within the <code className="action">Volumes</code> tab, then selecting <code className="action">Delete the volume</code>.
+
+<img className="thumbnail" alt="Volume delete" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise05.png" loading="lazy" />
+
+Confirm deletion operation by typing `DELETE` inside the confirmation field and then clicking the <code className="action">Confirm</code> button.
+
+### Managing volume snapshots <a name="snapshots"></a>
+
+:::info
+Volume snapshots use storage capacity from your Enterprise File Storage offer. By default, 5% of a volume storage capacity is reserved for snapshots.
+
+:::
+
+
+The <code className="action">Snapshots</code> tab lists all the snapshots that have been created for the selected volume.
+
+<img className="thumbnail" alt="Snapshots" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise06.png" loading="lazy" />
+
+:::info
+You can also access snapshot from your mount point using the commands provided in the [NetApp documentation](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html).
+
+:::
+
+
+On this tab you can also view all the [Snapshot Policies](#snapshot_policy) created for the service and apply them to this volume.
+
+<img className="thumbnail" alt="Volume Snapshot Policy Management" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise07.png" loading="lazy" />
+
+Click on the policy row to review the snapshot schedules details. Select a policy using the circular selector button, and then click the <code className="action">Apply the policy</code> button below the table.
+
+In order to configure your [Snapshot Policies](#snapshot_policy), navigate back to the [volume management section](#instructions) of your service and open the tab <code className="action">Snapshot policies</code>.
+
+#### Creating a snapshot <a name="create_snapshot"></a>
+
+To create a new `manual` snapshot of the volume's current state, click the <code className="action">Actions</code> button and select <code className="action">Create a snapshot</code>.
+
+<img className="thumbnail" alt="Snapshot create" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise08.png" loading="lazy" />
+
+Inside the popup window that will open, you can enter a name and a description for the snapshot. Click the <code className="action">Create a snapshot</code> button to start snapshot creation.
+
+<img className="thumbnail" alt="Snapshot create window" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise09.png" loading="lazy" />
+
+#### Modifying a snapshot <a name="modify_snapshot"></a>
+
+To change the name or description of the snapshot, click on the <code className="action">..</code> button in its row, then click on <code className="action">Edit</code>. Inside the popup window that opens you can choose a new name and/or description.
+
+<img className="thumbnail" alt="Snapshot edit" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise10.png" loading="lazy" />
+
+Click the <code className="action">Confirm</code> button to apply your modifications.
+
+<img className="thumbnail" alt="Snapshot edit window" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise11.png" loading="lazy" />
+
+#### Deleting a snapshot <a name="delete_snapshot"></a>
+
+:::warning
+`System` snapshots can not be deleted.
+Snapshots with type `system` are essential for the proper function of your Enterprise File Storage service.
+
+:::
+
+
+A snapshot can be deleted by clicking the <code className="action">...</code> button on its row inside the <code className="action">Snapshot</code> tab, then selecting <code className="action">Delete</code>.
+
+<img className="thumbnail" alt="Snapshot delete" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise12.png" loading="lazy" />
+
+Inside the popup window that will open, click on <code className="action">Delete a snapshot</code> to start the snapshot deletion operation.
+
+<img className="thumbnail" alt="Snapshot delete confirmation" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise13.png" loading="lazy" />
+
+#### Restore a volume using one of its snapshots <a name="restore_volume"></a>
+
+:::warning
+Please note that once a volume is restored using a snapshot copy, any subsequent files or snapshots will be lost.
+When a volume is restored, all data in the volume is replaced with the snapshot’s data. The action is irreversible.
+
+:::
+
+
+You can restore a volume using its latest `manual` snapshot by clicking on the <code className="action">Actions</code> button and then on <code className="action">Revert to the last saved snapshot</code>.
+
+:::info
+To restore a volume using a snapshot from before the latest snapshot, you must delete snapshots until the desired snapshot becomes the latest one.
+
+:::
+
+
+<img className="thumbnail" alt="Volume revert to latest snapshot" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise14.png" loading="lazy" />
+
+#### Holding automatic snapshots <a name="hold_snapshot"></a>
+
+An `Automatic` snapshot, created by a [Snapshot Policy](#snapshot_policy) can be held by clicking the <code className="action">...</code> button on its row in the <code className="action">Snapshots</code> tab and then selecting <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Volume hold" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise15.png" loading="lazy" />
+
+After the holding operation is complete, the snapshot type will change to `manual` and it will no longer be rotated by a Snapshot Policy.
+
+#### Managing volume ACLs <a name="access_control"></a>
+
+Access control to volumes works via IP address restrictions. Since none are configured by default, the first step with new volumes is to define IP addresses or ranges from which access will be authorised.
+
+Click on the button <code className="action">Add a new access</code>.
+
+<img className="thumbnail" alt="ACL" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise16.png" loading="lazy" />
+
+This creates a new row in the table in which you can enter an IP address or an address block (CIDR). Select `Read-only` or `Read and write` as the access type in the drop-down menu and click on the check mark button to add this entry to the ACL.
+
+To remove a volume access, click on the respective trash can icon in the table.
+
+### Managing snapshot policies <a name="snapshot_policy"></a>
+
+:::info
+By default, every volume is protected by the `default` Snapshot Policy which will create Snapshots of the volume at regular intervals.
+
+:::
+
+
+Adding policies allows you to schedule the creation of snapshots for all of your volumes.
+
+Switch to the tab <code className="action">Snapshot policies</code>. The table lists all policies created for the selected service.
+
+A default policy is already in place which cannot be altered. To add your own, click on the button <code className="action">Create a new snapshot policy</code>.
+
+<img className="thumbnail" alt="Snapshot policies" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise17.png" loading="lazy" />
+
+In this view, you can enter a name and a description for the policy. Then use the button <code className="action">Add a new rule</code> to add one or more rules to the policy.
+
+<img className="thumbnail" alt="Snapshot policy create" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/manage_enterprise18.png" loading="lazy" />
+
+Fill in the fields to specify the time of day, days of a month, week days and months for the snapshot creation. You also have to enter a prefix for the snapshots, needed for naming them.
+
+You can find more detailed information for each value by clicking on the question mark icon. By expanding the <code className="action">Example</code> section you can view two sets of policy rules with an explanation of their outcome.
+
+Click on the check mark button to add the new rule. Once all rules are added, click on <code className="action">Create a new snapshot policy</code>.
+
+[Select a volume](#manage_volume) and go to the <code className="action">Snapshots</code> tab in order to [apply your policies](#snapshots).
+
+To remove a policy, click on the respective trash can icon in the table.
+
+### First steps <a name="firststeps"></a>
+
+If you are new to using Enterprise File Storage, you can follow this sequence of steps to get started:
+
+- [Create a volume](#create_volume)
+- [Configure access control](#access_control)
+- [Configure snapshot policies](#snapshot_policy) (optional)
+- [Apply snapshot policies to the volume](#snapshots) (optional)
+- [Access snapshots](#access_snapshots) (optional)
+- [Connect to your volume by following the instructions in the "General information" section](#modify_volume)
+- [Learn how to use Enterprise File Storage via API by consulting our guides](#gofurther) (optional)
+
+## Go further <a name="gofurther"></a>
+
+[API Quickstart](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-quick-start/)
+
+[Managing volumes via API](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volumes/)
+
+[Managing volume ACLs via API](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volume-acl/)
+
+[Managing volume snapshots via API](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volume-snapshots/)
+
+[Enterprise File Storage - FAQ](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-faq/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,76 @@
+---
+title: Crear firmas automáticas
+description: Cómo agregar firmas automáticas a sus cuentas de correo electrónico
+lastUpdated: 2025-04-28
+---
+
+## Objetivo
+
+El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mensaje) para direcciones de correo electrónico que utilicen el mismo dominio (firma «corporativa»). Estas se añadirán automáticamente a los correos electrónicos enviados desde la cuenta de un usuario.
+
+**Esta guía explica cómo crear una firma automática desde el área de cliente de OVHcloud.**
+
+## Requisitos
+
+- Tener una solución [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/) ya configuradas.
+
+{/* CP-NAV-START:web-exchange */}
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleccione su plataforma
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Seleccione su plataforma
+
+---
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-exchange */}
+
+## Procedimiento
+
+Haga clic en la pestaña <code className="action">Más +</code> en la barra horizontal y seleccione <code className="action">Pies de página</code>.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step1.png" loading="lazy" />
+
+En esta sección podrá consultar sus dominios asociados y crear un pie de mensaje para cada uno ellos. Haga clic en el icono <code className="action">...</code> y seleccione <code className="action">Editar</code> para abrir el editor HTML.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step2.png" loading="lazy" />
+
+El editor ofrece una selección de variables que corresponden a los datos del usuario en la configuración de su cuenta. Puede, por ejemplo, redactar un mensaje de cierre genérico y agregar una firma apropiada u otra información de contacto debajo, utilizando las variables. Haga clic en la flecha hacia abajo para seleccionar una variable y, a continuación, seleccione <code className="action">Insertar una variable</code> para agregarla al panel de edición.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step3aag.gif" loading="lazy" />
+
+La firma se crea mediante etiquetas HTML que ofrecen algunas opciones de formato. Utilice la barra de herramientas en la parte superior para personalizar la firma. También puede comprobar el código HTML haciendo clic en <code className="action">Fuente HTML</code>.
+ 
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step4.png" loading="lazy" />
+
+Marque la casilla «Activar la firma solo para los correos de salida» para evitar agregar este pie a los correos electrónicos enviados entre usuarios del mismo dominio. Haga clic en <code className="action">Aceptar</code> una vez que haya terminado de crear su firma. De ahora en adelante esta firma se adjuntará a los correos electrónicos enviados desde las cuentas de usuario de dicho dominio. Una vez creadas, puede editar o eliminar las firmas desde el área de cliente de OVHcloud.
+
+Tenga en cuenta los siguientes datos antes de introducir firmas para los usuarios:
+
+- Aparte de «Nombre», «Apellido» y «Nombre visible», los datos de la cuenta no se pueden editar desde el área de cliente de OVHcloud, sino que deberá indicarlos en el webmail OWA del usuario («Opciones» > «General» > «Mi cuenta»).
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step5.png" loading="lazy" />
+
+- La firma se agregará al cuerpo del correo electrónico sin espacios, por lo que es recomendable comenzar la firma con al menos una línea en blanco.
+- OWA no indica si una firma está habilitada en este dominio y **no se sincroniza**. Cuando los usuarios agregan sus [propias firmas](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa#anadir-una-firma/), los correos electrónicos incluyen tanto el pie del mensaje individual como el de todo el dominio.
+- El editor admite formato HTML, hipervínculos, imágenes, etc. Sin embargo, las firmas no deben abusar de estas opciones. Es posible que los destinatarios utilicen clientes de correo electrónico incompatibles con HTML y las imágenes incrustadas, o que las firmas se muestren de forma diferente a la previsualizada. Tenga en cuenta que las etiquetas HTML se eliminarán por completo si se envía un mensaje como «Texto sin formato» desde OWA.
+- Las «iniciales» no están activadas en el servicio, por lo que agregar esta variable no tendrá ningún efecto.
+
+## Más información <a name="go-further"></a>
+
+[Usar Outlook Web App con una cuenta de correo](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Delegar permisos en una cuenta de correo](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[Compartir un calendario con el webmail OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,287 @@
+---
+title: Jak odnawiać usługi OVHcloud
+excerpt: Dowiedz się, jak zarządzać usługami i odnawianiem usług w Panelu klienta
+updated: 2025-01-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Menu **Moje rozwiązania i usługi** w Panelu klienta OVHcloud umożliwia sprawdzenie statusu usług, ich odnowienie, zmianę typu odnowienia, regulowanie faktur lub antycypowanie płatności.
+
+Z tego przewodnika dowiesz się:
+
+- [Zrozumieć różnice między automatycznym a ręcznym odnowieniem](#auto-vs-manual)
+- [Określ, jaki typ odnowienia jest stosowany w Twoich usługach](#renewal-type)
+- [Poznaj dostępne operacje dla każdej usługi](#actions)
+- [Sprawdź, które operacje mogą być pogrupowane w kilka usług](#group-actions)
+
+**Dowiedz się, jak zarządzać usługami i ich odnawianiem w Panelu klienta OVHcloud.**
+
+> [!info]
+>
+> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach [Panelu klienta OVHcloud](/links/manager): kliknij nazwę w prawym górnym rogu ekranu, kliknij `Moje rozwiązania i usługi`, a następnie zakładkę `Regulaminy`.
+>
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Wymagania początkowe
+
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- Posiadanie aktywnych usług OVHcloud
+- Posiadanie [kontaktu księgowego](/guides/account-and-service-management/account-information/managing-contacts#definicja) za usługi OVHcloud
+- Posiadanie ważnego sposobu płatności na koncie OVHcloud. Zapoznaj się z przewodnikiem "[Zarządzanie sposobami płatności](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods)"
+
+<a id="auto-vs-manual"></a>
+
+## Rodzaje odnowienia
+
+**Kliknij jedną z poniższych kart.**
+
+<Tabs>
+<Tab label="Automatyczne odnawianie">
+
+Podczas rejestracji usługi są domyślnie ustawione na **automatyczne odnawianie**. Dzięki tej opcji masz pewność, że Twoje usługi będą automatycznie odnawiane z dniem wygaśnięcia abonamentu.
+Przykład: zamówiłeś hosting www 15 stycznia 2024. Zostanie on automatycznie odnowiony 15 stycznia 2025 r., a kwota odpowiadająca jego rocznemu abonamentowi zostanie pobrana z Twojego domyślnego sposobu płatności.
+
+Jeśli masz ustawiony sposób płatności w Panelu klienta, należności za faktury będą pobierane automatycznie.
+Jeśli nie masz zarejestrowanego żadnego [sposobu płatności](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods), wyślemy do Ciebie e-mailem fakturę. Wówczas wystarczy ją opłacić online.
+
+W przypadku usług z częstotliwością automatycznego odnawiania większą niż 1 miesiąc (3 miesiące, 6 miesięcy, 12 miesięcy), otrzymasz przypomnienie e-mailem miesiąc przed datą automatycznego odnowienia. Podsumowanie będzie wkrótce widoczne.
+Jeśli nie chcesz przedłużać którejś z usług, wystarczy, że [zrezygnujesz z niej w Panelu klienta](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services).
+
+**Uwaga**, brak sposobu płatności na Twoim koncie nie powoduje automatycznego zakończenia usługi. Aby zrezygnować z usług, zapoznaj się z naszym przewodnikiem "[Jak zrezygnować z usług OVHcloud](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services)".
+
+</Tab>
+<Tab label="Odnowienie ręczne">
+
+Jeśli nie chcesz automatycznego odnawiania i tym samym automatycznego pobrania środków, możesz zmienić typ odnowienia dla niektórych produktów (Domeny, Hosting, VPS, Serwery dedykowane) i włączyć dla nich odnowienie **manuel**.
+
+Tryb odnowienia może być przydatny:
+
+- jeśli nie masz pewności, czy chcesz zachować usługę po terminie wygaśnięcia;
+- jeśli nie chcesz, aby należności za faktury były pobierane automatycznie za pomocą ustawionego sposobu płatności.
+
+Jeśli wybierzesz odnowienie ręczne, przed terminem wygaśnięcia otrzymasz kilka wiadomości e-mail z przypomnieniem. W każdej znajdziesz link pozwalający na odnowienie wygasających usług online.
+Płatności będzie można również dokonać w prosty sposób z Panelu klienta.
+
+**Uwaga**, jeśli nie opłacisz usługi odnawianej ręcznie, zostanie ona **zawieszona** w dniu jej wygaśnięcia, a następnie **usunięta** po kilku dniach.
+Natomiast jeśli nie chcesz przedłużać tej usługi, nie musisz zlecać rezygnacji z niej.
+
+</Tab>
+</Tabs>
+
+
+## W praktyce
+
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager).<br />
+Kliknij swoją nazwę w prawym górnym rogu i wybierz `Moje rozwiązania i usługi`.
+
+![produkty i usługi](/images/assets/screens/control-panel/product-selection/right-menu/my-solutions-and-services.png)
+
+### Wyświetl typ odnowienia <a id="renewal-type"></a>
+
+Na stronie **Moje rozwiązania i usługi** znajduje się tabela wyszczególniająca Twoje usługi OVHcloud. Znajdziesz tam nazwy swoich usług, ich rodzaj, dostępność (Domyślny składnik `aktywów`), status (rodzaj odnowienia, działanie do przeprowadzenia itd.), kolejną datę odnowienia lub rozwiązania umowy oraz przycisk `...` przeznaczony do działań możliwych do przeprowadzenia dla każdej usługi.
+
+![Moje usługi](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/my-services-en.png)
+
+> [!tip]
+> Narzędzia do sortowania, filtrowania i wyszukiwania są dostępne nad tabelą.
+> Możesz sortować kolumny w kolejności rosnącej lub malejącej, wyszukiwać nazwy usług lub zastosować filtr, aby wyświetlić tylko niektóre usługi zgodnie z wybranymi kryteriami.
+>
+> Kryteria filtrowania zostaną wyświetlone nad tabelą. Oto przykład filtra umożliwiającego wyświetlenie nazw domen, których odnowienie jest wykonywane ręcznie.
+>
+> ![manageautomaticrenewal](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/filters-en.png)
+
+<a id="actions"></a>
+
+### Operacje dla każdej usługi
+
+> [!info]
+>
+> Niektóre działania mogą nie być dostępne w zależności od tego, czy dana usługa kwalifikuje się do odnowienia ręcznego.
+>
+
+Po prawej stronie usługi kliknij przycisk `...` w kolumnie `Filtruj`, a następnie wybierz odpowiednią akcję.
+
+![menu actions](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/actions-en.png)
+
+**Każda operacja została wyszczególniona w jednej z poniższych kart.**
+
+<Tabs>
+<Tab label="Skonfiguruj odnowienie">
+
+![Skonfiguruj odnowienie](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/configure-renewal-en.png)
+
+Kliknij na akcję `Skonfiguruj odnowienie`. W zależności od wybranej usługi, możesz ustawić odnawianie ręczne lub wybrać częstotliwość odnawiania automatycznego. W razie potrzeby będziesz mógł wybrać rodzaj i częstotliwość odnowienia.
+
+![Skonfiguruj odnowienie](/images/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal/configure-renew-en.png)
+
+W zależności od dokonanego wyboru, zostaną określone przyszłe daty pobrania środków, sposób płatności, który zostanie wykorzystany oraz data wygaśnięcia usługi.
+
+</Tab>
+<Tab label="Prognoza płatności">
+
+![antycypowanie płatności](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png)
+
+To działanie jest dostępne w przypadku usług z opcją **automatycznego odnowienia**.
+
+Zostaniesz przekierowany do interfejsu płatności online.
+
+Możesz odnowić te usługi w dowolnym momencie przed ich wygaśnięciem, a także wybrać czas ich odnowienia.
+W tym przypadku zamówiony czas ważności zostanie dodany do bieżącego czasu ważności. Nie tracisz pozostałego czasu ważności usługi.
+
+> [!tip]
+>
+> Po uruchomieniu internetowego interfejsu płatności, jeśli usługa, którą chcesz odnowić ma powiązane opcje i chcesz ją odnowić, **nie zaznaczaj białego(-ych) przycisku(-ów)**, po którym następuje(-ych) wzmianka `Nie odnawiaj`(ów) przypisanego do każdej z wyświetlonych opcji.
+> Jeśli zaznaczysz ten(e) biały(e) przycisk(y), poprosisz o odnowienie głównej usługi **BEZ** jej ewentualnych opcji.
+>
+> Po dokonaniu wyboru, kontynuuj realizację zamówienia, klikając `Zatwierdź`.
+>
+> W celach informacyjnych ceny niektórych opcji są wyświetlane dopiero po wygenerowaniu zamówienia na odnowienie usługi.
+
+</Tab>
+<Tab label="Rezygnuję z usługi">
+
+![Zrezygnuj](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/cancel-en.png)
+
+To działanie jest dostępne w przypadku usług z opcją **automatycznego odnowienia**.
+
+Po wybraniu tej operacji automatyczne odnawianie i pobieranie środków zostanie wyłączone dla wybranej usługi.
+
+Aby uzyskać więcej informacji na temat rezygnacji z usług OVHcloud, postępuj zgodnie z instrukcjami zawartymi w przewodniku "**[Jak zrezygnować z usług OVHcloud](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services)**".
+
+</Tab>
+<Tab label="Odnów usługę">
+
+![Odnów usługę](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png)
+
+To działanie jest dostępne tylko w przypadku usług wymagających odnowienia **odnowienie ręczne**.
+
+Zostaniesz wówczas przekierowany do interfejsu płatności online.
+Możesz odnowić te usługi w dowolnym momencie przed ich wygaśnięciem, a także wybrać czas ich odnowienia.
+
+> [!tip]
+>
+> Po uruchomieniu internetowego interfejsu płatności, jeśli usługa, którą chcesz odnowić ma powiązane opcje i chcesz ją odnowić, **nie zaznaczaj białego(-ych) przycisku(-ów)**, po którym następuje(-ych) wzmianka `Nie odnawiaj`(ów) przypisanego do każdej z wyświetlonych opcji.
+> Jeśli zaznaczysz ten(e) biały(e) przycisk(y), poprosisz o odnowienie głównej usługi **BEZ** jej ewentualnych opcji.
+>
+> Po dokonaniu wyboru, kontynuuj realizację zamówienia, klikając `Zatwierdź`.
+>
+> W celach informacyjnych ceny niektórych opcji są wyświetlane dopiero po wygenerowaniu zamówienia na odnowienie usługi.
+
+</Tab>
+<Tab label="Ureguluj należności">
+
+![Zapłać fakturę](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png)
+
+Pojawi się informacja `Faktura do zapłaty`, gdy faktura oczekuje na płatność i gdy:
+
+- posiadasz usługi z opcją automatycznego odnawiania;
+- nie masz ustawionego sposobu płatności umożliwiającego pobranie środków w celu uregulowania faktur.
+
+Wystarczy, że wybierzesz działanie `Opłać fakturę`, które przekieruje Cię do platformy płatności online.
+
+</Tab>
+</Tabs>
+
+
+### Działania zbiorcze
+
+Działania zbiorcze na usługach możesz wykonać, zaznaczając kilka usług w tabeli i klikając przycisk `Operacje`.
+
+![operacje zbiorcze](/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png)
+
+W poniższej tabeli przedstawiono możliwe działania zbiorcze.
+
+|Możliwe działania|Opis|
+|---|---|
+|Odnów|Umożliwia odnowienie kilku usług na raz. Zostaniesz przekierowany na stronę, na której możesz wybrać żądany czas trwania odnowienia i będziesz mógł dokonać płatności online.|
+|Wyłącz płatność automatyczną|Powoduje wyłączenie automatycznego odnawiania kilku usług na raz. Jeśli co najmniej jedna usługa nie kwalifikuje się do odnawiania ręcznego, zostanie to wskazane podczas zatwierdzania.|
+|Włącz płatność automatyczną|Powoduje włączenie automatycznego odnawiania kilku usług na raz. Zaktualizowane zostaną tylko te usługi, które się do tego kwalifikują.|
+|Eksportuj w formacie CSV|Wyeksportuj do pliku csv wszystkie usługi i daty ich wygaśnięcia.|
+|Ustaw daty odnowienia|Opcja pozwala na ustawienie dat wygaśnięcia usług na ten sam dzień kalendarzowy. Zaktualizowane zostaną tylko te usługi, które się do tego kwalifikują.|
+
+## FAQ
+
+:::details Gdzie znajdę mój identyfikator klienta (NIC) OVHcloud?
+
+Wyświetli się on w Panelu klienta, klikając Twoją nazwę w prawym górnym rogu. Jest również widoczny w prawym górnym rogu wszystkich faktur. Jest on również podany w e-mailu z potwierdzeniem utworzenia konta, w wiadomościach z potwierdzeniem zamówienia lub odnowienia usług, a także w powiadomieniach dotyczących logowania do konta.
+
+:::
+
+:::details Nie mogę zalogować się na moje konto OVHcloud, aby odnowić usługi, co zrobić?
+
+Zapoznaj się z częścią "[Co zrobić, jeśli nie mogę się zalogować?](/guides/account-and-service-management/account-information/ovhcloud-account-login#login-failure), jeśli nie udało się-nie udało-mi-się-zalogować)" naszego przewodnika "[Logowanie do Panelu klienta OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-login)".
+
+:::
+
+:::details Chcę włączyć automatyczne odnawianie, ale otrzymuję komunikat o błędzie. Co powinienem zrobić?
+
+Aby włączyć automatyczne odnawianie usług, musisz mieć dodany ważny sposób płatności na koncie OVHcloud. Jeśli tak się nie stało lub jeśli sposób płatności wygasł, w Panelu klienta pojawi się komunikat o błędzie podczas prób włączenia opcji automatycznego odnowienia. Zapoznaj się z przewodnikiem "[Zarządzanie sposobami płatności](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods)", aby sprawdzić lub dodać sposób płatności.
+
+:::
+
+:::details Mój sposób płatności utracił ważność. W jaki sposób dodać nowy sposób płatności?
+
+Sprawdź przewodnik "[Zarządzanie sposobami płatności](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods)". Zanim usuniesz stary sposób płatności, dodaj nowy, ważny sposób płatności do Twojego konta OVHcloud.
+
+:::
+
+:::details Mam pytanie dotyczące odnowienia mojej domeny
+
+Sprawdź przewodnik "[Odnowienie domen OVHcloud](/guides/web-cloud/domains/autorenew-domain-name)".
+
+:::
+
+:::details Nie chcę już automatycznego przelewu, ale nie chcę rezygnować z usługi. Co powinienem zrobić?
+
+Jeśli Twoja usługa na to pozwala, możesz skorzystać z działania [Skonfiguruj odnowienie](#actions) i wybrać odnowienie ręczne.
+
+:::
+
+:::details Odnowiłem usługę na 12 miesięcy. Czy mogę cofnąć wybór?
+
+Po odnowieniu usługi nie można jej anulować. Możesz jednak wybrać inny rodzaj odnowienia lub zrezygnować z usługi, ale te dwie opcje mogą być brane pod uwagę dopiero po zakończeniu aktualnego abonamentu, czyli po 12 miesiącach.
+
+:::
+
+:::details Moja witryna sieci Web została zawieszona, ponieważ nie odnowiłam usług na czas. Właśnie odnowiłem usługi. Jak długo muszę czekać na ponowne udostępnienie strony WWW?
+
+Czas przywrócenia usługi różni się w zależności od wybranych usług.
+Jeśli tylko Twój hosting został zawieszony i odnowiony, uzyskanie ponownej dostępności strony zajmuje średnio 2 godziny.
+Jeśli Twoja domena również została zawieszona i odnowiona, może to oznaczać, że czas propagacji DNS wyniesie do 48 godzin.
+Aby zapobiec niedostępności wszystkich Twoich krytycznych usług, zalecamy automatyczne odnawianie usług i regularne sprawdzanie [czy Twoje sposoby płatności są aktualne](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods).
+
+:::
+
+:::details Abonament za usługę wygasa w lipcu 2024. Jest styczeń 2024 roku i chcę go odnowić na rok. Czy w związku z tym abonament wygaśnie w lipcu 2025 r., czy w styczniu 2025 r.?
+
+Po przedłużeniu okresu odnowienia usługi (na 1 rok lub na krótszy okres) okres ten zostanie dodany do kolejnej daty wejścia w życie, która będzie widoczna w tabeli "Moje rozwiązania i usługi". W Twoim przypadku usługa będzie odnawiana do lipca 2025 roku.
+
+:::
+
+:::details Subskrypcja mojej usługi wygasła 1 stycznia 2024 r. i zapomniałem ją odnowić. Właśnie odnowiłem go 16 stycznia 2024 na 6 miesięcy, ale widzę, że wygaśnie on 1 lipca 2024 roku, a nie 16 lipca 2024. Czy to normalne?
+
+Tak, to normalne, odnawianie rozpoczyna się w dniu wygaśnięcia subskrypcji.
+
+:::
+
+
+## Sprawdź również
+
+Ten przewodnik nie odpowiedział na Twoje pytanie? Sprawdź nasze [FAQ dotyczący fakturowania i płatności](/guides/account-and-service-management/managing-billing-payments-and-services/faq-billing)
+
+[Odnowienie domen OVHcloud](/guides/web-cloud/domains/autorenew-domain-name)
+
+[Zarządzanie sposobami płatności](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods)
+
+[Jak zrezygnować z usług OVHcloud](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services)
+
+[Rozliczanie należności za usługę Public Cloud](/guides/public-cloud/public-cloud-cross-functional/analyze-billing)
+
+[Zarządzanie fakturowaniem kont Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange)
+
+Dołącz do [grona naszych użytkowników](/links/community).

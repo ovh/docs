@@ -1,0 +1,131 @@
+---
+title: Jak dodać rekord DNS typu CNAME dla subdomeny
+description: Dowiedz się, jak dodać rekord DNS typu CNAME w strefie DNS zarządzanej przez OVHcloud dla subdomeny nazwy domeny
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Rekord CNAME umożliwia powiązanie subdomeny z nazwą domeny lub subdomeny bez konieczności podawania adresu IP. Oznacza to, że subdomena zostanie przekierowana na adres IP nazwy domeny docelowej lub subdomeny, bez konieczności dalszej konfiguracji.
+
+Na przykład, jeśli utworzysz rekord CNAME dla *www.domain.tld*, który wskazuje na *domain.tld*, wówczas *www.domain.tld* użyje tego samego adresu IP co *domain.tld*.
+
+Rekordy CNAME są użyteczne, jeśli chcesz uniknąć konieczności zmiany adresów IP dla subdomen. Można ich również używać do konfigurowania usług, takich jak serwery e-mail.
+
+**Dowiedz się, jak dodać rekord CNAME w strefie DNS OVHcloud.**
+
+> **Czy w strefie DNS posiadasz już rekord CNAME?** Zapoznaj się z naszym przewodnikiem "[Modyfikacja strefy DNS](/guides/web-cloud/domains/dns-zone-edit/)".
+
+## Wymagania początkowe
+
+- Posiadanie [nazwy domeny](https://www.ovhcloud.com/pl/domains/).
+- Posiadanie strefy DNS powiązanej z tą nazwą domeny w OVHcloud.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Strefy DNS</code> > Wybierz nazwę domeny
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+
+:::warning
+**Dodawanie, modyfikowanie lub usuwanie rekordów DNS w aktywnej strefie DNS jest operacją wymagającą odpowiedniej wiedzy.**
+W razie wątpliwości skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+
+:::
+
+
+## W praktyce
+
+### Dodaj rekord DNS typu CNAME dla subdomeny nazwy domeny
+
+Kliknij poniższe karty, aby wyświetlić kolejne **5** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią domenę.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij przycisk <code className="action">Dodaj wpis</code>.
+  </Tab>
+  <Tab label="Krok 3">
+    W wyświetlonym oknie wybierz typ rekordu <code className="action">CNAME</code>.
+  </Tab>
+  <Tab label="Krok 4">
+    W polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Adres docelowy *` nazwę domeny lub subdomeny (na przykład: `domain.tld`), do której chcesz przypisać rekord typu CNAME. Kliknij <code className="action">Dalej</code>.
+  </Tab>
+  <Tab label="Krok 5">
+    Sprawdź podsumowanie i kliknij <code className="action">Zatwierdź</code>. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Zapoznaj się ze szczegółowymi przewodnikami:</summary>
+
+
+- [Informacje o strefach DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Wszystko o rekordach DNS](/guides/web-cloud/domains/dns-zone-records/)
+- [Jak utworzyć subdomenę?](/guides/web-cloud/domains/domain-create-subdomains/)
+- [Modyfikacja strefy DNS](/guides/web-cloud/domains/dns-zone-edit/)
+- [Instalacja kilku stron WWW na jednym hostingu](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+- [Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem](/guides/web-cloud/web-hosting/multisites-modify-domain/)
+
+</details>
+
+
+
+### Przypadki szczególne
+
+Kliknij poniższe łącza, aby uzyskać więcej informacji:
+
+<details>
+
+<summary>Rekordy CNAME i TXT dla tej samej subdomeny</summary>
+
+
+Nie konfiguruj jednocześnie rekordu CNAME i rekordu TXT dla tej samej subdomeny. Może to spowodować losowe wyniki podczas rozpoznawania DNS, ponieważ tylko jedna odpowiedź może zostać zwrócona przez zapytanie DNS.
+
+Na przykład, jeśli masz następujące rekordy dla *www.domain.tld*:
+
+- Rekord CNAME wskazujący na *domain.tld*.
+- Rekord TXT z określoną wartością.
+
+Zapytanie DNS dla *www.domain.tld* zwróci losowo wartość docelową rekordu CNAME lub wartość rekordu TXT.
+
+</details>
+
+
+<details>
+
+<summary>CNAME dla nazwy domeny w jej własnej strefie DNS</summary>
+
+
+Konwencjonalnie, **rekordy CNAME nie mogą być używane dla nazwy domeny w jej własnej strefie DNS**. Nazwa domeny musi wskazywać bezpośrednio na adres IP z rekordem typu [A](/guides/web-cloud/domains/dns-zone-a-record-creation/) w przypadku adresu IPv4 lub [AAAA](/guides/web-cloud/domains/dns-zone-aaaa-record-creation/) w przypadku adresu IPv6.
+
+Aby postępować zgodnie z powyższym przykładem, nie będziesz mógł utworzyć rekordu CNAME dla nazwy domeny *domain.tld* w strefie DNS, którą utworzyłeś dla nazwy domeny.
+Będziesz mógł jednak tworzyć rekordy CNAME dla wszystkich subdomen (na przykład: *subdomain.domain.tld* lub *www.domain.tld*) dla nazwy domeny *domain.tld* w strefie DNS utworzonej dla *domain.tld*.
+
+</details>
+
+
+## Sprawdź również
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

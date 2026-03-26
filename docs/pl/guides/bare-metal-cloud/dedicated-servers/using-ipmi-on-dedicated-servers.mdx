@@ -1,0 +1,284 @@
+---
+title: Jak korzystać z konsoli IPMI na serwerze dedykowanym
+description: Dowiedz się, jak zalogować się do serwera z poziomu panelu klienta bez korzystania z zewnętrznego oprogramowania
+lastUpdated: 2026-01-29
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Przyłącz się do społeczności [user community](https://community.ovhcloud.com/community/en). Konsola IPMI (Intelligent Platform Management Interface) umożliwia bezpośrednie połączenie do serwera dedykowanego bez zależności od stanu łączności z systemem operacyjnym. Niniejszy przewodnik wyjaśnia, jak uruchomić tę konsolę.
+
+## Wymagania początkowe
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">Serwery dedykowane</code> > Wybierz serwer
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+:::warning
+Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+
+Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+
+:::
+
+
+<a name="procedure"></a>
+
+## W praktyce
+
+Logowanie do IPMI można wykonać kilkoma dostępnymi metodami. Klucze SSH przechowywane na serwerze nie będą używane dla tych połączeń. Tabela podsumowująca:
+
+|Nazwa metody|Inna nazwa|Opis|Kopiuj-wklej|Wirtualny dysk ISO²|Przykłady zastosowania|
+|---|---|---|---|---|---|
+|**KVM**³ przez **przeglądarkę internetową**|**KVM HTML**|Emulacja ekranu wideo przez **kanwę HTML**, dokładnie tak, jak w przypadku fizycznego podłączenia klawiatury/myszy USB i ekranu wideo w formacie VGA do serwera dedykowanego.|❌|⚠️⁴|- Diagnozowanie problemu z uruchamianiem serwera dedykowanego.|
+|**KVM**³ przez **aplet Java**|**KVM Java**|Idem jak w przypadku KVM HTML, z wyjątkiem emulacji przez **aplet Java** zamiast kanwy HTML.|❌|✅|- Diagnozowanie problemu z uruchamianiem serwera dedykowanego. <br />- Ręcznie zainstaluj określony system operacyjny (spoza [katalog](https://www.ovhcloud.com/pl/bare-metal/os/))⁵.|
+|**SoL**⁶ przez **przeglądarkę internetową**|**SoL JavaScript**|Emulacja połączenia szeregowego w przeglądarce internetowej — działa to tak, jakby połączenie konsoli szeregowej RS-232 fizycznie z serwerem dedykowanym.|✅|❌|- Diagnozowanie problemu z siecią: pobieranie logów i manipulowanie plikami konfiguracyjnymi.|
+|**SoL**⁶ przez **SSH**|**SoL SSH**|Idem jak w przypadku SoL JavaScript, z wyjątkiem emulacji przez bramę SSH. Łączysz się za pomocą ulubionego klienta SSH ze zdalnym serwerem za pomocą SSH, który następnie transponuje polecenia łącząc szeregowo do serwera dedykowanego.|✅|❌|- Idem SoL JavaScript, ale z maszyny, która nie ma graficznego interfejsu użytkownika.|
+
+¹ W zależności od kompatybilności sprzętowej Twojego serwera dedykowanego (niektóre metody nie będą wyświetlane w panelu klienta [OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl)).<br />
+² Funkcja pozwalająca na zamontowanie obrazu ISO przechowywanego lokalnie na Twojej maszynie na zdalnym serwerze dedykowanym i tym samym na zainstalowanie systemu operacyjnego za pośrednictwem IPMI.<br />
+³ KVM = Keyboard Video and Mouse<br />
+⁴ w zależności od kompatybilności sprzętowej Twojego serwera dedykowanego: użyj KVM Java zamiast niego, jeśli jest on niekompatybilny.<br />
+⁵ Jeśli system operacyjny, który chcesz zainstalować, nie jest dostępny w [katalogu systemów operacyjnych dostępnych na serwerach dedykowanych OVHcloud](https://www.ovhcloud.com/pl/bare-metal/os/), możesz również użyć spersonalizowanego obrazu: zobacz [Porównanie Bring Your Own Image (BYOI) i Bring Your Own Linux (BYOLinux)](/guides/bare-metal-cloud/dedicated-servers/bring-your-own-image-versus-bring-your-own-linux/), aby uzyskać więcej informacji.<br />
+⁶ SoL = Serial over Lan
+
+Aby aktywować jedną z tych metod, kliknij zakładkę <code className="action">IPMI/KVM</code>.
+
+### Otwórz KVM za pomocą apletu Java <a name="applet-java"></a>
+
+:::info
+Zalecamy zainstalowanie najnowszej wersji Java.
+
+:::
+
+
+Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jeszcze tego nie zrobiłeś, przejdź do [oficjalnej strony](https://www.java.com/en/download/).
+
+W sekcji <code className="action">Remote KVM</code> Panelu klienta OVHcloud kliknij <code className="action">Z apletu Java (KVM)</code>:
+
+<img className="thumbnail" alt="Dostęp KVM Java" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-kvm-java-01.png" loading="lazy" />
+
+Pobierz plik `kvm.jnlp`, gdy zostaniesz zaproszony, a następnie uruchom go:
+
+<img className="thumbnail" alt="Otwarcie KVM Java" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-kvm-java-02.png" loading="lazy" />
+
+Następnie przejdź do strony logowania. Wprowadź dane dostępowe `root`, tak jak przy logowaniu przy użyciu terminala lub programu zewnętrznego:
+
+<img className="thumbnail" alt="Podgląd KVM Java" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-kvm-java-03.png" loading="lazy" />
+
+Możesz teraz zarządzać serwerem.
+
+### Otwórz KVM za pomocą przeglądarki sieci Web <a name="kvm-browser"></a>
+
+W sekcji <code className="action">Remote KVM</code> Panelu klienta OVHcloud kliknij <code className="action">Z przeglądarki (KVM)</code>:
+
+<img className="thumbnail" alt="Dostęp KVM HTML" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-kvm-html-01.png" loading="lazy" />
+
+Aktywacja zajmie kilka sekund. Pojawi się komunikat o dostępności połączenia przez IPMI.
+
+<img className="thumbnail" alt="Otwarcie KVM HTML" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-kvm-html-02.png" loading="lazy" />
+
+Kliknij <code className="action">Dostęp do konsoli (KVM)</code>, aby otworzyć konsolę w przeglądarce.
+
+<img className="thumbnail" alt="Podgląd KVM HTML" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-kvm-html-03.png" loading="lazy" />
+
+### Otwórz SoL przez SSH <a name="sol-ssh"></a>
+
+Więcej informacji na temat tworzenia par kluczy SSH znajdziesz na [tej stronie](/guides/bare-metal-cloud/dedicated-servers/creating-ssh-keys-dedicated#create-ssh-key/).
+
+W sekcji <code className="action">Serial over LAN (SoL)</code> Panelu klienta OVHcloud kliknij przycisk <code className="action">Dodaj klucz SSH</code>.
+
+<img className="thumbnail" alt="Dostęp SoL SSH" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-sol-sshkey-01.png" loading="lazy" />
+
+Otworzy się wtyczka, dzięki czemu będziesz mógł wprowadzić publiczny klucz SSH, za pomocą którego chcesz się zalogować. Następnie kliknij <code className="action">Uruchom sesję SoL przez SSH</code>.
+
+<img className="thumbnail" alt="SoL SSH klucz publiczny SSH" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-sol-sshkey-02.png" loading="lazy" />
+
+Gdy sesja jest gotowa, pojawia się komunikat potwierdzenia i URI, dzięki czemu możesz ustanowić połączenie szeregowe z Twoim serwerem dedykowanym przez SSH. Skopiuj ten identyfikator URI do schowka.
+
+<img className="thumbnail" alt="Otwarcie SoL SSH" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-sol-sshkey-03.png" loading="lazy" />
+
+[ta strona](/guides/bare-metal-cloud/dedicated-servers/creating-ssh-keys-dedicated#multiplekeys/) zawiera więcej informacji na temat używania klucza SSH do łączenia się przez SSH.
+
+### Otwórz SoL w przeglądarce sieci Web <a name="sol-browser"></a>
+
+W sekcji <code className="action">Serial over LAN (SoL)</code> w obszarze klienta OVHcloud kliknij <code className="action">Z poziomu przeglądarki (SoL)</code>.
+
+<img className="thumbnail" alt="Dostęp SoL JavaScript" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-sol-html-01.png" loading="lazy" />
+
+:::info
+Jeśli przełączenie na popup nie odbywa się automatycznie, zawsze możesz kliknąć przycisk <code className="action">Dostęp do konsoli (SoL)</code>.
+
+:::
+
+
+<img className="thumbnail" alt="Otwarcie SoL JavaScript" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-sol-html-02.png" loading="lazy" />
+
+### Testowanie i restartowanie IPMI <a name="ipmi-test-reboot"></a>
+
+Możliwe, że IPMI nie odpowiada. Jeśli nie możesz uzyskać do niego dostępu, możesz najpierw wykonać test, klikając <code className="action">Przetestuj IPMI</code> i wyświetlić wynik diagnostyki:
+
+<img className="thumbnail" alt="Test IPMI" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-test.png" loading="lazy" />
+
+Jeśli wszystko jest normalne, jak w naszym przykładzie, prawdopodobnie masz do czynienia z lokalnym problemem (połączenie z Internetem, poczta lokalna). Jeśli wystąpił problem z IPMI, możesz uruchomić go ponownie klikając <code className="action">Zrestartuj IPMI</code>.
+
+<img className="thumbnail" alt="Test IPMI" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/ipmi-reboot.png" loading="lazy" />
+
+Ponowne uruchomienie IPMI zajmuje kilka minut.
+
+:::info
+Operacja ta nie ma wpływu na działanie serwera.
+
+:::
+
+
+### Instalacja systemu operacyjnego za pomocą IPMI v1
+
+:::warning
+OVHcloud nie gwarantuje funkcjonalności systemów operacyjnych zainstalowanych za pomocą IPMI. Metoda ta powinna być rozważana tylko przez doświadczonego administratora serwerów.
+
+64-bitowe wersje Javy mogą uniemożliwić otwarcie menu `Redirect ISO`/`Redirect CDROM` i spowodować zablokowanie JViewera.
+
+:::
+
+
+Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](#applet-java) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij <code className="action">Device</code> na pasku menu i wybierz <code className="action">Redirect ISO</code> z rozwijanego menu.
+
+<img className="thumbnail" alt="Redirect_ISO" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/RedirectISO.jpg" loading="lazy" />
+
+Następnie wybierz ISO, której chcesz użyć w systemie plików Twojego lokalnego komputera. Po wybraniu ISO naciśnij przycisk <code className="action">Ctrl Alt Del</code> w prawym górnym rogu ekranu, aby uruchomić serwer. Wciśnij przycisk `F`, aby uzyskać dostęp do opcji startowych.
+
+:::info
+Być może będziesz musiał użyć klawiatury oprogramowania do zapisywania wpisów w IPMI. Aby się zalogować, kliknij opcję <code className="action">Keyboard</code> na pasku menu na górze okna. Następnie wybierz `Soft Keyboard` z rozwijanego menu i kliknij <code className="action">Show</code>.
+
+:::
+
+
+Wybierz opcję `UEFI Virtual CDROM 1.000` w menu startowym (Boot), aby uruchomić serwer z wcześniej podłączonego ISO.
+
+<img className="thumbnail" alt="UEFI_Virt" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/UEFIVirt.jpg" loading="lazy" />
+
+Postępuj zgodnie z instrukcjami potrzebnymi do zainstalowania systemu operacyjnego. Pamiętaj, aby usunąć ISO z opcji Redirect ISO.
+
+### Instalacja systemu operacyjnego za pomocą IPMI v1
+
+:::warning
+OVHcloud nie gwarantuje funkcjonalności systemów operacyjnych zainstalowanych za pomocą IPMI. Metoda ta powinna być rozważana tylko przez doświadczonego administratora serwerów.
+
+:::
+
+
+Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](#applet-java) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij <code className="action">Virtual Media</code>, a następnie <code className="action">Virtual Storage</code>.
+
+<img className="thumbnail" alt="Virtual storage" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/virtual_storage.png" loading="lazy" />
+
+W oknie, które się wyświetla wybierz `ISO File` z rozwijanej listy "Logical Drive Type". Następnie kliknij <code className="action">Open Image</code> i przejdź do pliku ISO. Na koniec kliknij <code className="action">Plug-in</code> i <code className="action">OK</code>.
+
+<img className="thumbnail" alt="ISO_file" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/iso_file.png" loading="lazy" />
+
+Aby rozpocząć korzystanie z pliku ISO, należy uzyskać dostęp do BIOS i zmienić opcje uruchamiania. W tym celu kliknij <code className="action">Power Control</code>, a następnie <code className="action">Set Power Reset</code>.
+
+<img className="thumbnail" alt="Power_Reserver" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/power_reset.png" loading="lazy" />
+
+:::info
+Być może będziesz musiał użyć klawiatury oprogramowania do zapisywania wpisów w IPMI. Aby się zalogować, kliknij opcję <code className="action">Virtual Media</code> na pasku menu na górze okna. Wybierz następnie <code className="action">Virtual Keyboard</code> z rozwijanego menu.
+
+:::
+
+
+Podczas procesu uruchamiania, naciśnij przycisk `DEDIP`, gdy zostaniesz poproszony o dostęp do BIOSu. Możesz również nacisnąć przycisk `F1` i uzyskać dostęp do BIOS, wybierając opcję <code className="action">Enter Setup</code>.
+
+<img className="thumbnail" alt="Menu_startowe" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/boot_menu.png" loading="lazy" />
+
+W BIOS przejdź do karty <code className="action">Boot</code> i zastąp `UEFI Boot Order #1` > `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
+
+<img className="thumbnail" alt="Bios" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/bios.png" loading="lazy" />
+
+Na koniec, naciśnij klawisz `F4`, aby zapisać zmiany i zrestartować serwer.
+
+### Zainstaluj system operacyjny korzystając z przeglądarki KVM (tylko dla najnowszych serwerów)
+
+:::warning
+OVHcloud nie gwarantuje funkcjonalności systemów operacyjnych zainstalowanych za pomocą IPMI. Metoda ta powinna być rozważana tylko przez doświadczonego administratora serwerów.
+
+:::
+
+
+W [Panelu client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) otwórz [konsolę KVM](#kvm-browser).
+
+Tutaj masz dostęp do tych samych informacji i funkcji, co w modułach IPMI opartych na Java.
+
+:::info
+Upewnij się, że kolejne kroki są realizowane w dobrym tempie. Proces może zostać anulowany, jeśli między działaniami występują dłuższe przerwy.
+
+:::
+
+
+Kliknij przycisk <code className="action">Browse File</code> i wybierz Twój plik obrazu.
+
+<img className="thumbnail" alt="Instalacja KVM" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/kvm_install01.png" loading="lazy" />
+
+Kliknij <code className="action">Start Media</code>. Przygotuje to ISO dla procesu instalacji.
+
+<img className="thumbnail" alt="Instalacja KVM" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/kvm_install02.png" loading="lazy" />
+
+Rozmiar wyświetlanego pliku nie jest rzeczywistym rozmiarem. To normalne, ponieważ plik nie jest do końca wysyłany na ten etap.
+
+<img className="thumbnail" alt="Instalacja KVM" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/kvm_install03.png" loading="lazy" />
+
+Kliknij <code className="action">Power</code> i wybierz <code className="action">Reset Server</code> (zresetuj serwer) z rozwijanego menu.
+
+<img className="thumbnail" alt="Instalacja KVM" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/kvm_install04.png" loading="lazy" />
+
+Poczekaj, aż pojawi się ekran wyboru boot i naciśnij odpowiedni przycisk, aby przejść do menu Boot (`F11` w tym przykładzie).
+
+<img className="thumbnail" alt="Instalacja KVM" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/kvm_install05.png" loading="lazy" />
+
+W menu boot wybierz czytnik optyczny (`UEFI: AMI Virtual CDROM0` w tym przykładzie) i naciśnij `Enter`.
+
+<img className="thumbnail" alt="Instalacja KVM" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/kvm_install06.png" loading="lazy" />
+
+Plik ISO zostanie teraz przesłany, a następnie serwer zostanie uruchomiony z pliku.
+
+<img className="thumbnail" alt="Instalacja KVM" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/kvm_install07.png" loading="lazy" />
+
+<a name="bios"></a>
+
+### Restart serwera w menu BIOS
+
+Skonfiguruj serwer i rozwiąż problemy, uzyskując dostęp do systemu BIOS. Praktycznym sposobem na to jest użycie narzędzia `ipmiutil` (więcej informacji znajduje się na [stronie projektu](https://ipmiutil.sourceforge.net/)).
+
+Gdy serwer znajduje się w trybie [rescue](/guides/bare-metal-cloud/dedicated-servers/rescue-mode/) i zalogujesz się do niego, zainstaluj go za pomocą następującego polecenia:
+
+```bash
+apt install ipmiutil
+```
+
+Następnie zrestartuj serwer za pomocą polecenia:
+
+```bash
+ipmiutil reset -b
+```
+
+Następnie przejdź do [konsoli IPMI](#procedure) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl). Powinno pojawić się menu BIOS serwera.
+
+<img className="thumbnail" alt="KVM BIOS" src="/images/bare-metal-cloud/dedicated-servers/using-ipmi-on-dedicated-servers/kvm_bios.png" loading="lazy" />
+
+## Sprawdź również
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Przyłącz się do [społeczności użytkowników](https://community.ovhcloud.com/community/en).

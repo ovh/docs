@@ -1,0 +1,119 @@
+---
+title: Web Hosting - Activating the 100M free hosting plan
+description: Find out how to activate your 100M free hosting plan
+lastUpdated: 2024-12-06
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+With [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), OVHcloud offers you a 100 MB web hosting plan, and an email account with 5 GB of storage.  
+This guide will show you how to activate a 100M free hosting on your [domain name](https://www.ovhcloud.com/en-gb/domains/).
+
+:::warning
+This 100 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**.  
+It is also suitable if you do not need several MX plan email accounts.  
+If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/) directly from our website or your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+:::
+
+
+**Find out how to activate your 100M free hosting plan.**
+
+## Requirements
+
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/) in your OVHcloud Control Panel, detached from any web hosting plan, and with no associated [MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+:::info
+The free 100M hosting is **only** available to our customers in Europe.
+
+:::
+
+
+{/* CP-NAV-START:web-domains */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](https://manager.eu.ovhcloud.com/#/web-domains/domain)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Domain names</code> > Select your domain name
+
+---
+{/* CP-NAV-END:web-domains */}
+
+
+## Instructions
+
+To activate your free 100M hosting plan, click on the tabs below to view each of the **3** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Domain names](https://manager.eu.ovhcloud.com/#/web-domains/domain) page, then choose the domain name concerned.
+    
+    <img className="thumbnail" alt="Domain Names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    In the **General information** box, you will see **Free web hosting and email**. Click <code className="action">...</code> on the right-hand side, then <code className="action">Enable</code>.
+    
+    <img className="thumbnail" alt="enable 100m" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png" loading="lazy" />
+
+The activation window will appear. Section **1** will detail the plan and its price — click <code className="action">Next</code>. For section **2**, choose the changes you need to make to your DNS zone:
+  </Tab>
+  <Tab label="Step 3">
+    <img className="thumbnail" alt="activate100m" src="/images/assets/screens/control-panel/product-selection/web-cloud/order/order-100m-step-2.png" loading="lazy" />
+    
+    | Choice                                       	| Description                                                                                                               								|
+    |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | DNS A record                         	| The domain name will point to the IP address of the 100M free hosting plan.                                               								|
+    | MX DNS record 	| The email servers (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) of OVHcloud will be applied to the domain name. 	|
+    
+    :::warning
+    If you tick one or both of the `DNS A record` and `DNS MX record` boxes, this will overwrite the configuration originally set up in your domain's DNS zone.  
+    Tick both boxes to automatically configure your domain name with the free 100M hosting and email service included.
+    
+    If your DNS zone is not managed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), you will need to make the modifications manually in your external DNS zone.
+    
+    For more details, please refer to our guide on [Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/).
+
+    :::
+
+    
+    
+    Section **3** reminds you of the pricing of the offer. 
+    
+    During section **4**, you must read the contracts and confirm your order.
+  </Tab>
+</Tabs>
+
+
+:::info
+If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from 100M free hosting to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+To switch to the **Pro** or **Performance** plan, you will need to switch from the 100M free hosting to the **Personal** plan beforehand.
+
+You can also choose to delete the free offer after backing up your hosting data and the contents of your email account.
+
+For more details, see our [hosting offers](https://www.ovhcloud.com/en-gb/web-hosting/).
+
+:::
+
+
+Once your order has been confirmed, you will be sent an email with the information for the [FTP connection](/guides/web-cloud/web-hosting/ftp-connection/) to your 100M free hosting plan.
+
+Please refer to our guide on [Creating an MX Plan email account](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/) to take advantage of the email account included with your 100M free hosting plan.
+
+## Go further
+
+[Logging in to your Web Hosting plan’s storage space](/guides/web-cloud/web-hosting/ftp-connection/)
+
+[Creating an email address with an MX Plan solution](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/)
+
+[Managing SSL certificates on a Web Hosting plan](/guides/web-cloud/web-hosting/ssl-on-webhosting/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

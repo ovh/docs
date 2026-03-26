@@ -1,0 +1,179 @@
+---
+title: Gestionar las formas de pago
+description: Cómo añadir y gestionar las formas de pago en el área de cliente de OVHcloud
+lastUpdated: 2025-04-28
+---
+
+import Api from '@components/Api';
+
+
+## Objetivo
+
+En el área de cliente de OVHcloud, puede registrar y gestionar diferentes formas de pago.
+
+## Requisitos
+
+- Disponer de un medio de pago válido.
+
+{/* CP-NAV-START:billing-payment-methods */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Formas de pago](https://manager.eu.ovhcloud.com/#/billing/payment/method)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > <code className="action">Mis formas de pago</code>
+
+---
+{/* CP-NAV-END:billing-payment-methods */}
+
+## Procedimiento <a name="payment_methods"></a>
+
+En la página [Formas de pago](https://manager.eu.ovhcloud.com/#/billing/payment/method), podrá consultar la forma de pago registrada en su cuenta de cliente.
+
+<img className="thumbnail" alt="hubpayment" src="/images/assets/screens/control-panel/product-selection/right-menu/my-payment-methods.png" loading="lazy" />
+
+Allí, podrá:
+
+- Añadir una forma de pago
+- Cambiar su forma de pago por defecto
+- Editar la descripción de la forma de pago
+- Eliminar una forma de pago
+
+### Añadir una forma de pago
+
+Al realizar el primer pedido, deberá registrar una forma de pago para garantizar la renovación del servicio mediante cargo automático.
+
+Esta forma de pago se utilizará por defecto para todas sus renovaciones y se le propondrá abonar nuevos pedidos.
+
+Puede registrar otras formas de pago para que le sean propuestas al realizar nuevos pedidos o utilizar por defecto para sus futuros cargos.
+
+Es posible registrar tres tipos de formas de pago:
+
+- Domiciliación bancaria
+- Tarjeta bancaria
+- Cuenta PayPal
+
+Para ello, haga clic en el botón <code className="action">Añadir una forma de pago</code> y seleccione la forma de pago que quiera utilizar.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods2.png" loading="lazy" />
+
+Siga los siguientes pasos para registrar una forma de pago. En el primer paso, puede marcar la casilla <code className="action">Una vez validada, quiero seleccionar esta forma de pago por defecto</code>, para que se utilice en las futuras compras o cargos automáticos.
+
+#### Domiciliación bancaria
+
+:::warning
+- El uso de la domiciliación bancaria solo es posible para las cuentas de clientes de Francia, Bélgica, Alemania, España, Irlanda, Italia y los Países Bajos.
+
+- El propietario de la cuenta bancaria debe ser idéntico al propietario de la cuenta de OVHcloud.
+
+:::
+
+
+Para registrar un cargo en su cuenta bancaria, será redirigido a un espacio que permita el registro de dicha cuenta y la firma electrónica de su autorización de cobro.
+
+<img className="thumbnail" alt="forma de pago SEPA" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/sepa.png" loading="lazy" />
+
+Si su entidad bancaria está registrada por nuestro partner, el registro de la cuenta bancaria será inmediato. En caso contrario, puede ser necesario un plazo aproximado de 48 horas.
+
+#### Tarjeta bancaria
+
+<img className="thumbnail" alt="credit-card" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-card.png" loading="lazy" />
+
+Para registrar una nueva tarjeta bancaria, será redirigido a la página de pago seguro de nuestro proveedor. Para confirmar el registro y la validez de la tarjeta, realizaremos una retención en su cuenta.<br/>
+No se cargará ningún importe y su tarjeta bancaria se activará en unos minutos.
+
+#### Cuenta PayPal
+
+<img className="thumbnail" alt="paypal" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/paypal.png" loading="lazy" />
+
+Seleccionar <code className="action">PayPal</code> como forma de pago. Haga clic en el botón <code className="action">PayPal</code>. Se abrirá una ventana emergente donde podrá conectarse a su cuenta de PayPal® y registrarla como forma de pago autorizada con OVHcloud.
+
+Su cuenta de PayPal® se activará en unos minutos.
+
+### Cambiar su forma de pago por defecto
+
+Las facturas correspondientes a la renovación de sus servicios siempre se cargarán a su forma de pago por defecto. Si desea modificarla, deberá añadir primeramente una nueva forma de pago en su área de cliente.
+
+Para ello, haga clic en el botón <code className="action">...</code> a la derecha de la nueva forma de pago y, seguidamente, en <code className="action">Establecer como forma de pago por defecto</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods3.png" loading="lazy" />
+
+> **Deseo cambiar mi forma de pago por defecto por otra, ¿cómo puedo hacerlo?**
+>
+> - 1. añada la nueva forma de pago
+> - 2. establezca la nueva forma de pago por defecto
+> - 3. elimine la antigua forma de pago
+>
+
+### Eliminar una forma de pago
+
+Si ya no desea utilizar alguna de sus formas de pago, puede eliminarla haciendo clic en el botón <code className="action">...</code> a la derecha de esta. A continuación, haga clic en <code className="action">Eliminar esta forma de pago</code>.
+
+<img className="thumbnail" alt="manage-payment-methods" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/managepaymentmethods4.png" loading="lazy" />
+
+Si quiere eliminar todas sus formas de pago, todos sus servicios deben estar [renovados manualmente](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#renovacion-manual/).
+
+#### Eliminar una forma de pago a través de las API OVHcloud
+
+La eliminación de una forma de pago puede realizarse a través de las API conectándose a [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+
+En primer lugar, debe obtener el id. de la forma de pago:
+
+<Api version="v1" section="/me" method="GET" route={"/me/payment/method"} />
+
+A continuación, elimine la forma de pago utilizando el ID obtenido en el paso anterior:
+
+<Api version="v1" section="/me" method="DELETE" route={"/me/payment/method/\{paymentMethodId\}"} />
+
+
+:::info
+Para más información, consulte la guía [Primeros pasos con la API OVHcloud](/guides/manage-and-operate/api/first-steps/).
+
+Si necesita ayuda para identificar sus formas de pago a través de las API de OVHcloud, utilice la función <code className="action">Modificar la descripción</code> (botón <code className="action">...</code> a la derecha de su pantalla) en la sección [Formas de pago](#payment_methods) del [área de cliente de OVHcloud](https://manager.eu.ovhcloud.com/#/billing/payment/method).
+
+:::
+
+
+### Cuenta de prepago
+
+#### ¿Qué es la cuenta de prepago?
+
+Una vez que haya creado, la *cuenta de prepago* aparecerá en el [área de cliente de OVHcloud](https://manager.eu.ovhcloud.com/#/billing/payment/method). Le permite recargar con antelación su cuenta de cliente y utilizar estos fondos para abonar sus pedidos y sus facturas de renovación.
+
+Recargando su cuenta con regularidad, se asegurará de que la [renovación automática](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal/) de sus servicios no se interrumpa nunca por defecto de pago.
+
+Para ello, acceda a la página [Formas de pago](https://manager.eu.ovhcloud.com/#/billing/payment/method) y seleccione la pestaña <code className="action">Mi cuenta de prepago</code>.
+
+<img className="thumbnail" alt="prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/prepaid-account.png" loading="lazy" />
+
+#### ¿Cómo funciona?
+
+Cuando tiene servicios configurados con *renovación automática*, el importe de la factura se cargará prioritariamente a su cuenta de prepago cada vez que tenga contratados servicios.
+
+A falta de fondos suficientes, el saldo de su cuenta pasará a negativo y permanecerá pendiente de pago.
+
+Si dispone de una forma de pago válida guardada en su cuenta de cliente, este importe se cargará automáticamente en las 24 horas y el saldo será cero. sin que ello afecte al estado de sus servicios.
+
+Si no ha registrado ninguna forma de pago, deberá abonar el importe pendiente desde el área de cliente en un plazo de 7 días para evitar cortes del servicio.
+
+Si no ha guardado ninguna forma de pago, le recomendamos que establezca un **umbral de alerta** para asegurarse de que dispone de los fondos necesarios para sus próximas facturas:
+
+<img className="thumbnail" alt="warning_prepaid_account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/warning_prepaid_account.png" loading="lazy" />
+
+Si el crédito disponible en su cuenta de prepago se reduce por debajo del límite establecido, se le enviará de inmediato un email de notificación.
+
+#### ¿Cómo recargar su cuenta de prepago?
+
+En la pestaña <code className="action">Mi cuenta de prepago</code>, haga clic en el botón <code className="action">Recargar</code>.
+
+<img className="thumbnail" alt="credit-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/credit-prepaid-account.png" loading="lazy" />
+
+En la nueva ventana, seleccione el importe que desea recargar y haga clic en <code className="action">Siguiente</code>. A continuación, haga clic en <code className="action">Contratar</code>.
+
+<img className="thumbnail" alt="order-prepaid-account" src="/images/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/order-prepaid-account.png" loading="lazy" />
+
+En la nueva orden de pedido, seleccione la forma de pago que desee y abone el pedido.
+
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,75 @@
+---
+title: Creating a private registry
+lastUpdated: 2022-04-14
+---
+
+
+
+A Docker Registry is a system that lets you store and distribute your Docker images. The best known Registry is the official [Docker Hub](https://hub.docker.com/), where you can find official public images such as [Alpine](https://hub.docker.com/_/alpine), [Golang](https://hub.docker.com/_/golang) or [Debian](https://hub.docker.com/_/debian).
+
+Today, OVHcloud allows you to spawn your own authenticated Docker Registry where you can privately store your Docker images. This is the best way to use your private images with our OVHcloud Managed Kubernetes Service offer without exposing them to everyone.
+
+## Objective
+
+OVHcloud Managed Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images. This guide will explain how to create your Private Registry.
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+1. In the left menu, in the <code className="action">Containers & Orchestration</code> section, select <code className="action">Managed Private Registry</code>.
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-001.png" loading="lazy" />
+
+2. Then click on <code className="action">Create a private registry</code>.
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-002.png" loading="lazy" />
+
+3. In the following menu, choose a region to deploy your private registry in, and click on <code className="action">Next</code>.
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-003.png" loading="lazy" />
+
+4. Choose the registry name (`my-registry` in my example), and click on <code className="action">Next</code>.
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-004.png" loading="lazy" />
+
+5. Choose your plan between the three available plans, and click on <code className="action">Next</code>.
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-005.png" loading="lazy" />
+
+:::info
+With the `M` and `L` plan, OVHcloud installs and maintains a vulnerability scanner for you: [Trivy](https://aquasecurity.github.io/trivy/).
+
+:::
+
+
+6. Your private registry is being created...
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-006.png" loading="lazy" />
+
+7. When status switches to `OK`, click on the right <code className="action">...</code> button and select <code className="action">Generate identification details</code>.
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-007.png" loading="lazy" />
+
+8. Then click on <code className="action">Confirm</code> to generate new credentials.
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-008.png" loading="lazy" />
+
+9. Credentials will be shown on the page. Please write then down, you will need them in order to use your private registry.
+
+    <img className="thumbnail" alt="Create a Private Registry" src="/images/public-cloud/containers-orchestration/managed-private-registry/creating-a-private-registry/create-a-private-registry-009.png" loading="lazy" />
+
+Congratulations, you have now a working OVHcloud Managed Private Registry.
+
+## Go further
+
+To go further you can look at our guide on [connecting to the UI](/guides/public-cloud/containers-orchestration/managed-private-registry/connecting-to-the-ui/).

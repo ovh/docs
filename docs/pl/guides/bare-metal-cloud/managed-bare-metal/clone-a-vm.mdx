@@ -1,0 +1,73 @@
+---
+title: Klonowanie wirtualnej maszyny
+description: Dowiedz się, jak sklonować wirtualną maszynę przy użyciu vSphere
+lastUpdated: 2020-11-18
+---
+
+## Wprowadzenie
+
+Klonowanie wirtualnej maszyny umożliwia utworzenie kopii maszyny źródłowej.
+
+**Ten przewodnik wyjaśnia, jak przeprowadzić tę operację**
+
+## Wymagania początkowe
+
+- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/).
+- Posiadanie co najmniej jednej wirtualnej maszyny w klastrze.
+- Dostęp do [interfejsu vSphere](/guides/bare-metal-cloud/managed-bare-metal/vsphere-interface/)
+
+## W praktyce
+
+### Klonowanie wirtualnej maszyny
+
+Przejdź do [interfejsu vSphere](/guides/bare-metal-cloud/managed-bare-metal/vsphere-interface/), a następnie do widoku `Hosty i klastry`.
+
+Kliknij prawym przyciskiem myszy wirtualną maszynę, którą chcesz sklonować, a następnie kliknij <code className="action">Klonuj</code> i <code className="action">Klonuj wirtualną maszynę...</code>. 
+
+<img className="thumbnail" alt="Klonowanie wirtualnej maszyny" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm01.png" loading="lazy" />
+
+Nadaj nazwę nowej wirtualnej maszynie i określ jej lokalizację w strukturze drzewa.
+
+<img className="thumbnail" alt="Nadanie nazwy wirtualnej maszynie" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm02.png" loading="lazy" />
+
+### Wybór zasobu
+
+Określ klaster, host, vApp lub pulę zasobów wirtualnej maszyny.
+
+<img className="thumbnail" alt="Zasoby wirtualnej maszyny" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm03.png" loading="lazy" />
+
+### Wybór przestrzeni dyskowej
+
+Określ lokalizację przestrzeni dyskowej dla tej wirtualnej maszyny. 
+
+Format dysku wirtualnego w tym przypadku to "Thin Provision", co oznacza, że wirtualny dysk zostanie utworzony, ale będzie wykorzystywał tylko rzeczywistą przestrzeń dyskową, niezależnie od przestrzeni dyskowej wcześniej wykorzystywanej na źródłowej wirtualnej maszynie.
+
+Więcej informacji o rodzajach formatów dysków znajdziesz w [tym przewodniku](/guides/bare-metal-cloud/managed-bare-metal/choosing-disk-type/).
+
+Za pomocą linii `VM Storage Policy` będziesz mógł wybrać domyślną politykę przechowywania danych w przypadku datastore lub opcji [VM encryption](/guides/bare-metal-cloud/managed-bare-metal/vm-encrypt/).
+
+<img className="thumbnail" alt="Storage wirtualnej maszyny" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm04.png" loading="lazy" />
+
+### Konfiguracja systemu
+
+W tym kroku zdefiniuj konfigurację sieci, która zostanie zastosowana do wirtualnej maszyny. Masz dwie opcje do wyboru:
+
+- Jeśli nic nie zaznaczysz, nie nastąpią żadne zmiany w konfiguracji sieciowej nowej wirtualnej maszyny w porównaniu do źródła;
+
+- <code className="action">Dostosuj sprzęt wirtualnej maszyny</code>\: opcja ta umożliwia określenie nowych konfiguracji, które zostaną zaimplementowane na nowej wirtualnej maszynie.
+
+<img className="thumbnail" alt="Sieć VM" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm05.png" loading="lazy" />
+
+:::warning
+Jeśli nie przeprowadziłeś dostosowania wirtualnej maszyny, konieczne jest zmodyfikowanie konfiguracji klonu przed jej uruchomieniem, aby uniknąć konfliktu IP / MAC. 
+
+:::
+
+>W tym przypadku należy usunąć zaznaczenie przy karcie sieciowej w ustawieniach wirtualnej maszyny po jej sklonowaniu, tuż przed jej uruchomieniem.
+>
+><img className="thumbnail" alt="Wylogowanie wirtualnej maszyny" src="/images/bare-metal-cloud/managed-bare-metal/clone-a-vm/clonevm06.png" loading="lazy" />
+>
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

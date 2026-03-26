@@ -1,0 +1,86 @@
+---
+title: MX Plan - Créer une réponse automatique sur une adresse e-mail
+description: Découvrez comment mettre en place une réponse automatique sur une adresse e-mail
+lastUpdated: 2025-04-28
+---
+
+## Objectif
+
+Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre adresse e-mail, vous pouvez mettre en place une réponse automatique (ou répondeur) qui transmettra un e-mail aux interlocuteurs qui vous envoient un e-mail.
+
+**Découvrez comment mettre en place une réponse automatique sur une adresse e-mail.**
+
+## Prérequis
+
+- Disposer d’une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), l’[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) compris avec un nom de domaine (activé au préalable) ou l’offre MX Plan commandée séparément.
+
+{/* CP-NAV-START:web-mx-plan */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Sélectionnez votre service MX Plan
+
+---
+{/* CP-NAV-END:web-mx-plan */}
+
+## En pratique
+
+:::warning
+Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/) ou qu'il n'y a pas de section <code className="action">Gestion des répondeurs</code> dans votre MX Plan, vous devrez alors créer une réponse automatique depuis votre webmail en vous aidant de la documentation [« Mettre en place une réponse automatique depuis l’interface OWA »](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-automatic-replies/).
+
+:::
+
+
+### Création d'une réponse automatique
+
+Cliquez sur l'onglet <code className="action">Emails</code> en haut, puis sur <code className="action">Gestion des répondeurs</code>.
+
+Vous serez redirigé vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des réponses automatiques e-mail en place sur votre offre e-mail.
+
+Cliquez sur <code className="action">Ajouter un répondeur</code>
+
+<img className="thumbnail" alt="hosting" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/feature-auto-responses/email_responder01.png" loading="lazy" />
+
+La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations ci-dessous.
+
+- `Type de répondeur`:
+
+    - **Associé à une boîte e-mail** : à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
+    - **Libre** : à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
+
+- `Boîte email` ou `Nom du répondeur`: l'adresse e-mail ou l'alias concerné par la réponse automatique.
+- `Durée du répondeur`:
+    - **Temporaire** : définissez une date de début et de fin à prendre en compte pour le fonctionnement de votre réponse automatique (utile si vous partez en congé par exemple).
+    - **Permanent** : la réponse automatique fonctionnera tant que vous ne l'aurez pas désactivée.
+- `Envoyer une copie` ou `Garder les messages sur le serveur`: permet de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les conserver sur l'adresse e-mail.
+
+:::warning
+Si vous décochez cette case, les messages reçus pendant votre absence seront automatiquement supprimés.
+
+:::
+
+
+- `Adresse en copie` (seulement en mode libre) : dans le cas d'un alias, sélectionnez l'adresse e-mail qui recevra les e-mails envoyés vers l'alias.
+- `Message` : il s'agit du message que vos correspondants recevront lorsqu'ils vous enverront un e-mail.
+
+Cliquez ensuite sur <code className="action">Valider</code> pour terminer la configuration de votre réponse automatique.
+
+:::tip[Success]
+Si vous souhaitez déléguer la gestion d'une réponse automatique pour une adresse e-mail, consultez notre guide [« Déléguer la gestion de vos comptes e-mails à une autre personne »](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/feature-delegation/)
+
+:::
+
+
+### Modification ou suppression d'une réponse automatique
+
+Lorsque votre réponse automatique a été créée, elle apparaît dans la liste visible dans la section <code className="action">Gestion des répondeurs</code> de votre offre e-mail. Vous pouvez la supprimer ou la modifier en cliquant sur <code className="action">...</code> à droite de celle-ci.
+
+<img className="thumbnail" alt="hosting" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/feature-auto-responses/email_responder02.png" loading="lazy" />
+
+## Aller plus loin <a name="go-further"></a>
+
+[FAQ e-mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

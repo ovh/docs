@@ -1,0 +1,280 @@
+---
+title: Pierwsze kroki z usługą MX Plan
+description: Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan
+lastUpdated: 2026-03-05
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Właśnie zakupiłeś usługę MX Plan. Pozwala ona na korzystanie z kont e-mail, dzięki którym możesz wysyłać i odbierać wiadomości, korzystając z dowolnego urządzenia.
+
+**Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan.**
+
+## Wymagania początkowe
+
+- Posiadanie pakietu MX Plan Jest ona dostępna przez: oferta [hostingu](https://www.ovhcloud.com/pl/web-hosting/), bezpłatny [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub oferta MX Plan.
+
+{/* CP-NAV-START:web-mx-plan */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Wybierz usługę MX Plan
+
+---
+{/* CP-NAV-END:web-mx-plan */}
+
+## W praktyce <a name="instructions"></a>
+
+1. Kliknij opcję <code className="action">MX Plan</code>.
+1. **Następnie postępuj zgodnie z technologią poczty elektronicznej używaną przez Twoją usługę MX Plan**.
+
+:::info
+**Sprawdzenie konfiguracji usługi MX Plan:**
+
+W zależności od daty aktywacji oferty MX Plan lub niedawnej migracji, przypisana technologia e-mail może się różnić. Wersja ta charakteryzuje się interfejsem webmaila. Aby ją zidentyfikować:
+
+- W zakładce <code className="action">Informacje ogólne</code> sprawdź technologię oznaczoną **Webmail** w ramce <code className="action">Subskrypcja</code> lub <code className="action">Logowanie</code>.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/technology-email.png" loading="lazy" />
+
+:::
+
+
+**Podsumowanie**
+
+- [Utwórz adres e-mail](#create-email)
+- [Użyj Twoich kont e-mail](#consult-emails)
+    - [Korzystaj z poczty Webmail](#consult-emails-webmail)
+    - [Korzystanie z klienta poczty](#consult-emails-client)
+        - [Ustawienia odbierania IMAP i POP](#imap-pop)
+        - [Parametry wysyłania SMTP](#smtp)
+- [Przekierowania i Aliasy](#redirection-alias)
+- [Automatyczna odpowiedź](#autoreply)
+
+### Załóż adres e-mail <a name="create-email"></a>
+
+Aby dowiedzieć się, jak utworzyć konto e-mail, kliknij zakładkę odpowiadającą technologii e-mail używanej przez Twoją usługę MX Plan:
+
+<Tabs>
+  <Tab label="Roundcube">
+    Aby utworzyć konto e-mail, przejdź do zakładki <code className="action">Emaile</code>. W oknie, które się wyświetla, widnieje lista utworzonych kont. Aby dodać nowe konto e-mail, kliknij przycisk <code className="action">Dodaj konto</code>.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/mxplan-starter-new-step2.png" loading="lazy" />
+
+W oknie, które się wyświetla, wprowadź wymagane informacje:
+    
+    - **Nazwa konta**: Wpisz nowy adres e-mail (na przykład Twoje imię.nazwisko). Nazwa domeny zawierająca adres e-mail jest już wstępnie zaznaczona na liście.
+    - **Opis konta**: Informacja o adresie e-mail, widoczna tylko w tabeli w zakładce <code className="action">Emaile</code> Twojej usługi e-mail.
+    - **Rozmiar konta**: Określ rozmiar konta, który chcesz przypisać do konta e-mail.
+    - **Hasło**: [Ustaw hasło](/guides/account-and-service-management/account-information/manage-ovh-password/) i potwierdź je. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia) i regularnie je zmieniać.
+    
+    Po uzupełnieniu pól kliknij przycisk <code className="action">Dalej</code>, następnie sprawdź informacje, które wyświetlą się w podsumowaniu. Jeśli są prawidłowe, kliknij przycisk <code className="action">Zatwierdź</code>. Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/mxplan-creation-new-step3-roundcube.png" loading="lazy" />
+  </Tab>
+  <Tab label="Zimbra i OWA">
+    Aby utworzyć konto e-mail, przejdź do zakładki <code className="action">Konta e-mail</code>. W oknie, które się wyświetla, widnieje lista dostępnych kont oraz kont, które możesz jeszcze utworzyć. Aby dodać nowe konto e-mail, kliknij przycisk <code className="action">Dodaj konto</code>.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/mxplan-starter-new-step2.png" loading="lazy" />
+
+W oknie, które się wyświetla, wprowadź wymagane informacje:
+    
+    - **Konto e-mail**: Nazwa tymczasowa jest już wstępnie wpisana w polu tekstowym: usuń ją i wskaż nowy adres e-mail (na przykład Twoje imię.nazwisko). Nazwa domeny zawierająca adres e-mail jest już wstępnie zaznaczona na liście.
+    - **Imię**: Wprowadź imię.
+    - **Nazwa**: Wprowadź nazwę.
+    - **Nazwa do wyświetlenia**: Wpisz nazwę nadawcy, która ma się wyświetlać podczas wysyłania wiadomości e-mail przy użyciu tego adresu.
+    - **Hasło**: [Ustaw hasło](/guides/account-and-service-management/account-information/manage-ovh-password/) i potwierdź je. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia) i regularnie je zmieniać.
+    - **Quota**: Określ rozmiar konta e-mail, który chcesz przypisać.
+    
+    Po uzupełnieniu pól kliknij przycisk <code className="action">Dalej</code>, następnie sprawdź informacje, które wyświetlą się w podsumowaniu. Jeśli są prawidłowe, kliknij przycisk <code className="action">Zatwierdź</code>. Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz.
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/mxplan-starter-new-step3.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Korzystanie z kont e-mail <a name="consult-emails"></a>
+
+Po utworzeniu kont e-mail możesz zacząć z nich korzystać. Możesz to zrobić na dwa sposoby: za pomocą interfejsu webmail w przeglądarce internetowej lub przy użyciu programu pocztowego.
+
+#### Korzystanie z interfejsu Webmail <a name="consult-emails-webmail"></a>
+
+Przejdź do strony "[Logowanie do interfejsu webmail](https://www.ovhcloud.com/pl/mail/)", następnie wprowadź odpowiedni adres e-mail i hasło. Następnie kliknij przycisk <code className="action">Logowanie</code>.
+
+Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
+
+<Tabs>
+  <Tab label="Roundcube">
+    Otrzymasz interfejs podobny do poniższego obrazka z napisem "Roundcube" w lewym górnym rogu.
+    Zapoznaj się z interfejsem Roundcube i jego wykorzystaniem w przewodniku "[Korzystanie z adresu e-mail przy użyciu interfejsu Roundcube](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-roundcube/)".
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/mxplan-webmail-roundcube01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Zimbra">
+    Jak na poniższym obrazku, na górze po lewej stronie pojawi się okno z napisem "Zimbra".
+    Aby dowiedzieć się, jak korzystać z konta e-mail przy użyciu webmaila Zimbra, zapoznaj się z naszym przewodnikiem "[Korzystanie z webmaila Zimbra](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)".
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/mxplan-webmail-zimbra01.png" loading="lazy" />
+  </Tab>
+  <Tab label="OWA">
+    Podczas pierwszego logowania do interfejsu webmail zostaniesz poproszony o ustawienie języka interfejsu oraz strefy czasowej, w której się znajdujesz. Wyświetli się wówczas Twoja skrzynka odbiorcza.
+    
+    Zapoznaj się z przewodnikiem dotyczącym korzystania z konta e-mail przy użyciu Webmail OWA "[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)".
+    
+    <img className="thumbnail" alt="email" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/mxplan-webmail-owa01.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Korzystanie z klienta poczty <a name="consult-emails-client"></a>
+
+Konto e-mail można skonfigurować w programie pocztowym takim jak Outlook, Thunderbird, Mail na komputery Mac itd.
+
+Poniżej znajdziesz linki przewodników dotyczących konfiguracji, które będą odpowiadać Twoim typom urządzeń:
+
+<Tabs>
+  <Tab label="Komputer z systemem Windows">
+    - [Outlook dla Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/).<br/>
+    - [Thunderbird for Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/).<br/>
+    - [Poczta elektroniczna systemu Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/).
+  </Tab>
+  <Tab label="Komputer Apple Mac">
+    - [Outlook for macOS](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016-mac/).<br/>
+    - [Mail: macOS](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/).<br/>
+    - [Thunderbird dla macOS](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-mac/).
+  </Tab>
+  <Tab label="iPhone lub iPad">
+    - [Mail na iPhone'a i iPada](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/).
+  </Tab>
+  <Tab label="Smartphone lub tablet z systemem Android">
+    - [Gmail na Androida](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/).
+  </Tab>
+</Tabs>
+
+
+Jeśli chcesz tylko uzyskać elementy niezbędne do konfiguracji Twojego konta e-mail, zapoznaj się z poniższymi parametrami, których należy użyć.
+
+#### Parametry odbioru IMAP i POP <a name="imap-pop"></a>
+
+Jeśli chcesz otrzymywać e-maile, wybierz rodzaj konta. Zalecamy użycie **IMAP**. Możesz jednak wybrać **POP**.
+
+:::warning
+Należy wyraźnie podnieść wartość odnoszącą się do Twojej lokalizacji (**EUROPE** lub **AMERYKA / AZJA-PACYFIK**).
+
+:::
+
+
+Wybierz kartę odpowiadającą Twojemu typowi konfiguracji:
+
+<Tabs>
+  <Tab label="Konfiguracja IMAP">
+    - **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
+    - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
+    - **Serwer EUROPE (ruch przychodzący)**: imap.mail.ovh.net **lub** ssl0.ovh.net.
+    - **Serwer USA/AZJA-PACYFIK (ruch przychodzący)**: imap.mail.ovh.ca.
+    - **Port**: 993.
+    - **Typ bezpieczeństwa**: SSL/TLS.
+  </Tab>
+  <Tab label="Konfiguracja POP">
+    - **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
+    - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
+    - **Serwer EUROPE (ruch przychodzący)**: pop.mail.ovh.net **lub** ssl0.ovh.net.
+    - **Serwer amerykański/AZJA-PACYFIK (ruch przychodzący)**: pop.mail.ovh.ca.
+    - **Port**: 995.
+    - **Typ bezpieczeństwa**: SSL/TLS.
+  </Tab>
+</Tabs>
+
+
+#### Parametry przesyłania SMTP <a name="smtp"></a>
+
+Do wysyłki e-maili należy użyć następujących ustawień **SMTP**:
+
+**Konfiguracja SMTP**
+
+- **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
+- **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
+- **Serwer EUROPE (ruch wychodzący)**: smtp.mail.ovh.net **lub** ssl0.ovh.net.
+- **Serwer amerykański/AZJA-PACYFIK (ruch wychodzący)**: smtp.mail.ovh.ca.
+- **Port**: 465.
+- **Typ bezpieczeństwa**: SSL/TLS.
+
+### Przekierowania i aliasy <a name="redirection-alias"></a>
+
+Chcesz przekierować wiadomości e-mail do innego odbiorcy, utworzyć alias lub systematycznie kopiować inny adres e-mail?
+
+W tym celu kliknij kartę odpowiadającą Twojej technologii e-mail:
+
+<Tabs>
+  <Tab label="Roundcube">
+    Aby dodać przekierowanie lub alias, kliknij na zakładkę <code className="action">Emaile</code> w Twojej usłudze MX Plan i kliknij na przycisk <code className="action">Zarządzanie przekierowaniami</code> po prawej stronie.
+    Pojawi się tabela już aktywnych przekierowań. Kliknij przycisk <code className="action">Dodaj przekierowanie</code>, aby uruchomić proces tworzenia przekierowania lub aliasu po prawej stronie.
+    
+    - `Od adresu`: Wpisz tutaj adres e-mail, który chcesz przekierować.<br/>
+    - `Na adres`: Wpisz tutaj adres docelowy przekierowania. Może to być jeden z Twoich adresów e-mail OVHcloud lub adres zewnętrzny.<br/>
+    - `Wybierz tryb kopii`: Określ, czy chcesz zachować kopię wiadomości otrzymanej na docelowy adres e-mail (`Z adresu`), czy też przekierować ją bezpośrednio na adres przekierowania (`Na adres`) bez zachowywania kopii.
+    
+    Zapoznaj się z przekierowaniami i aliasami usługi MX Plan z naszego przewodnika: "[Korzystanie z przekierowań e-mail](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/)".
+  </Tab>
+  <Tab label="OWA i Zimbra">
+    Korzystając z technologii **OWA** lub **Zimbra**, możesz wykonać dwie czynności:
+    
+    1. **Utwórz przekierowanie z poziomu interfejsu Webmail**: Za pomocą reguł skrzynki odbiorczej lub filtrów. Reguły, które stosujemy w momencie otrzymania wiadomości e-mail, pozwalają na przesłanie lub przekierowanie wiadomości. W tym celu zapoznaj się z przewodnikiem "[Reguły skrzynki odbiorczej w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/creating-inbox-rules-in-owa-mx-plan/)" lub zapoznaj się z rozdziałem "Filtry" w naszym przewodniku "[Korzystanie z interfejsu webmail Zimbra](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)".
+    
+    2. **Utwórz przekierowanie i alias w Panelu klienta OVHcloud**: Aby dodać przekierowanie lub alias, kliknij zakładkę <code className="action">Przekierowania</code>. Pojawi się tabela już aktywnych przekierowań. Kliknij przycisk <code className="action">Dodaj przekierowanie</code> znajdujący się po prawej.
+    
+    - `Od adresu`: Wpisz tutaj adres e-mail, który chcesz przekierować.<br/>
+    - `Na adres`: Wpisz tutaj adres docelowy przekierowania. Może to być jeden z Twoich adresów e-mail OVHcloud lub adres zewnętrzny.<br/>
+    - `Wybierz tryb kopii`: Określ, czy chcesz zachować kopię wiadomości otrzymanej na docelowy adres e-mail (`Z adresu`), czy też przekierować ją bezpośrednio na adres przekierowania (`Na adres`) bez zachowywania kopii.
+    
+    Aby dowiedzieć się, jak korzystać z przekierowań i aliasów w usłudze MX Plan, zapoznaj się z naszym przewodnikiem: "[Korzystanie z przekierowań e-mail](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/)".
+  </Tab>
+</Tabs>
+
+
+### Automatyczna odpowiedź <a name="autoreply"></a>
+
+Kiedy musisz być nieobecny, ważne jest, abyś mógł ustawić automatyczną odpowiedź, aby poinformować, że nie możesz przeglądać ani przetwarzać wiadomości e-mail.
+
+Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
+
+<Tabs>
+  <Tab label="Roundcube">
+    Aby dodać automatyczną odpowiedź do jednego z Twoich adresów e-mail, kliknij w zakładkę <code className="action">Emaile</code> w Twojej usłudze MX Plan i kliknij przycisk <code className="action">Zarządzanie autoresponderami</code> po prawej stronie.
+    Pojawi się tabela aktywnych autoresponderów. Kliknij przycisk <code className="action">Dodaj autoresponder</code> po prawej stronie, aby uruchomić proces tworzenia przekierowania lub aliasu.
+    
+    Więcej informacji na temat uruchomienia automatycznej odpowiedzi z poziomu usługi MX Plan w Panelu klienta OVHcloud znajdziesz w przewodniku "[MX Plan - Tworzenie automatycznej odpowiedzi na adres e-mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/feature-auto-responses/)".
+  </Tab>
+  <Tab label="Zimbra">
+    Automatyczna odpowiedź jest uruchamiana po zalogowaniu się do konta e-mail za pomocą interfejsu Webmail. Więcej informacji na ten temat znajdziesz w przewodniku "[Korzystanie z poczty Zimbra](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)", a w podsumowaniu wybierz "Automatyczne odpowiedzi / autoresponder".
+  </Tab>
+  <Tab label="OWA">
+    Automatyczna odpowiedź jest uruchamiana po zalogowaniu się do konta e-mail za pomocą interfejsu Webmail. Aby uzyskać szczegółowe informacje, zapoznaj się z naszym przewodnikiem "[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)", przejdź bezpośrednio do rozdziału "Dodaj automatyczną odpowiedź".
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również <a name="go-further"></a>
+
+[Użyj interfejsu Webmail Roundcube](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-roundcube/)
+
+[Skorzystaj z poczty Zimbra Webmail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)
+
+[Użyj Webmail Outlook Web App (OWA)](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Użyj przekierowań poczty e-mail](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/)
+
+[MX Plan - Utwórz automatyczną odpowiedź na adres e-mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/feature-auto-responses/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

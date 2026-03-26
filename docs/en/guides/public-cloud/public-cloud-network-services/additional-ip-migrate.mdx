@@ -1,0 +1,81 @@
+---
+title: Migrating an Additional IP
+description: Find out how to migrate an Additional IP address to another instance
+lastUpdated: 2025-04-28
+---
+
+:::info
+Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This renaming has no effect on its technical features.
+
+:::
+
+
+## Objective
+
+Being able to migrate IP addresses generally limits or removes the possibility that your service becomes unavailable. For example, you can effectively update a whole website to a new version or you can keep a replicated server active while running maintenance or installing updates on your production server.
+
+**This guide explains how to migrate an Additional IP from one OVHcloud Public Cloud instance to another.**
+
+## Prerequisites
+
+- At least two [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- An Additional IP address
+
+:::warning
+This feature is currently not available for Metal instances.
+
+:::
+
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+:::warning
+An Additional IP cannot be moved between different zones. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
+
+:::
+
+
+In the left-hand menu, open <code className="action">Public IPs</code> under **Network**, then click on the <code className="action">Additional IP</code> tab.
+
+In this example, the Additional IP address routed to "Instance_A" will be migrated to "Instance_B".
+
+Click on <code className="action">...</code> in the row of the Additional IP and select <code className="action">Update attached instance</code>.
+
+<img className="thumbnail" alt="migrating Additional IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-migrate/migrateip_01.png" loading="lazy" />
+
+Click on the drop-down menu to choose the destination instance from the list.
+
+<img className="thumbnail" alt="migrating Additional IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-migrate/migrateip_02.png" loading="lazy" />
+
+Confirm by clicking on <code className="action">Attach</code>.
+
+After a few seconds, the Control Panel will be updated and a confirmation message will be displayed if the migration was done sucessfully.
+
+<img className="thumbnail" alt="migrating Additional IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-migrate/migrateip_03.png" loading="lazy" />
+
+:::info
+:::
+
+The Additional IP can be configured on the destination server before or after carrying out the migration. If it was preconfigured, it will begin to respond as soon as the routing operation is completed.
+>
+
+## Go further
+
+[Configuring an Additional IP](/guides/public-cloud/public-cloud-network-services/getting-started-04-configure-additional-ip-to-instance/)
+
+[Importing an Additional IP](/guides/public-cloud/public-cloud-network-services/additional-ip-import/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

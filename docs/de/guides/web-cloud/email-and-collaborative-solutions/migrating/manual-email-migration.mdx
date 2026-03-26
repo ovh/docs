@@ -1,0 +1,288 @@
+---
+title: Ihre E-Mail-Adresse manuell migrieren
+description: Erfahren Sie hier, wie Sie Ihre E-Mail-Adresse manuell auf eine andere E-Mail-Adresse migrieren.
+lastUpdated: 2026-03-30
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Ziel
+
+Die automatische [Migration](/guides/web-cloud/email-and-collaborative-solutions/migrating/migration-omm/) einer E-Mail-Adresse ist über unseren [OVHcloud Mail Migrator](https://omm.ovhcloud.com/) möglich. Sie können Ihre E-Mail-Adresse auch manuell über einen E-Mail-Client migrieren.
+
+**Diese Anleitung erläutert, wie Sie Ihre E-Mail-Adresse manuell migrieren.**
+
+:::warning
+:::
+
+>In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
+>
+Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovhcloud.com/community/en). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. 
+>
+
+## Voraussetzungen
+
+- Sie verfügen über einen E-Mail-Dienst bei OVHcloud, wie zum Beispiel [Exchange](https://www.ovhcloud.com/de/emails-exchange/), [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/), [Zimbra](https://www.ovhcloud.com/de/emails/zimbra-emails/) oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot).
+- Sie verfügen über die Login-Daten für die E-Mail-Accounts, die Sie migrieren möchten (Quell-Accounts).
+- Sie verfügen über die Login-Daten der OVHcloud E-Mail-Accounts, auf die Sie die Inhalte übertragen möchten (Ziel-Accounts).
+
+{/* CP-NAV-START:web-mx-plan */}
+{/* CP-NAV-START:web-email-pro */}
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Wählen Sie Ihren MX Plan Dienst aus
+
+**E-Mail Pro:**
+
+- **Direkter Link:** [E-Mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">E-Mail Pro</code> > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wählen Sie Ihre Plattform aus
+
+---
+{/* CP-NAV-END:web-exchange */}
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-mx-plan */}
+
+## In der praktischen Anwendung
+
+:::info
+Überprüfen Sie zunächst, ob die automatische Migration mit unserem [OVHcloud Mail Migrator](https://omm.ovhcloud.com/) möglich ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVHcloud Mail Migrator migrieren](/guides/web-cloud/email-and-collaborative-solutions/migrating/migration-omm/).
+
+:::
+
+
+In dieser Anleitung haben wir die Operationen mit den 3 meistverwendeten E-Mail-Programmen **Outlook**, **Mail** auf Mac OS und **Thunderbird** durchgeführt.
+
+Die folgenden Anweisungen sind in zwei Teile gegliedert:
+
+- **Export**: So können Sie ein vollständiges Backup Ihres E-Mail-Accounts abrufen, um diese auf einen anderen Account, ein E-Mail-Programm oder einen anderen Account umzuziehen. Wenn Sie Elemente von einer E-Mail-Adresse auf eine andere Adresse verschieben müssen, die im gleichen E-Mail-Programm konfiguriert ist, können Sie diese kopieren/einfügen oder verschieben/ablegen. Es wird jedoch empfohlen, das von Ihnen verwendete Software-Exportsystem zu verwenden.
+
+- **Import**: So können Sie ein Backup, das Sie für Ihre neue Station oder Software erstellt haben, verwenden. Überprüfen Sie, ob die zu importierende Backup-Datei mit dem von Ihnen verwendeten E-Mail-Programm kompatibel ist.
+
+### Outlook
+
+Wenn Sie einen OVHcloud [Exchange E-Mail-Account](https://www.ovhcloud.com/de/emails/hosted-exchange/) haben, können Sie diesen direkt im PST-Format über das Kundencenter exportieren.
+
+Im Tab <code className="action">E-Mail-Accounts</code> Ihres Exchange-Dienstes klicken Sie rechts neben dem zu exportierenden E-Mail-Account auf <code className="action">...</code> und dann auf <code className="action">In PST-Format exportieren</code>.
+
+<img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/manager-export-pst01.png" loading="lazy" />
+
+Danach muss die Dauer des Exports abgewartet werden, die je nach Größe des Exports einige Minuten bis mehrere Stunden in Anspruch nehmen kann. Am Ende dieses Vorgangs gehen Sie einfach zurück zum Button <code className="action">In PST-Format exportieren</code>, um einen Download-Link abzurufen.
+
+<img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/manager-export-pst02.png" loading="lazy" />
+
+#### Windows
+
+<Tabs>
+  <Tab label="Exportieren">
+    - Klicken Sie oben links auf <code className="action">Datei</code>, dann auf <code className="action">Öffnen und Exportieren</code> und dann auf <code className="action">importieren/exportieren</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-import-win.png" loading="lazy" />
+    
+    - Wählen Sie <code className="action">Daten in eine Datei exportieren</code> und klicken Sie dann auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-win02.png" loading="lazy" />
+    
+    - Wählen Sie <code className="action">Outlook Datendatei (.pst)</code> und klicken Sie auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-win03.png" loading="lazy" />
+    
+    - Wählen Sie den Namen des zu exportierenden E-Mail-Accounts aus.
+    
+    :::info
+    Sie können nur einen Account gleichzeitig exportieren.
+
+    :::
+
+    
+    Setzen Sie ein Häkchen bei <code className="action">Unterordner einbeziehen</code> und klicken Sie dann auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-win04.png" loading="lazy" />
+    
+    - Wählen Sie den Zielordner Ihres Backups aus und geben Sie einen Namen für dieses ein, indem Sie auf <code className="action">Durchsuchen</code> klicken. Wählen Sie die für Sie passende Option aus und klicken Sie dann auf <code className="action">Beenden</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-win05.png" loading="lazy" />
+
+Der Export Ihrer Datei beginnt. Bei der Erstellung einer Datei werden Sie aufgefordert, ein Passwort festzulegen (optional).
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-win06.png" loading="lazy" />
+  </Tab>
+  <Tab label="Importieren">
+    - Klicken Sie oben links auf <code className="action">Datei</code>, dann auf <code className="action">Öffnen und Exportieren</code> und dann auf <code className="action">importieren/exportieren</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-import-win.png" loading="lazy" />
+    
+    - Wählen Sie <code className="action">Aus einem anderen Programm oder einer anderen Datei importieren</code> und klicken Sie dann auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-import-win02.png" loading="lazy" />
+    
+    - Wählen Sie <code className="action">Outlook Datendatei (.pst)</code> und klicken Sie auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-import-win03.png" loading="lazy" />
+    
+    - Wählen Sie Ihre Backup-Datei aus, indem Sie auf <code className="action">Durchsuchen</code> klicken. Wählen Sie die für Sie passende Option aus und klicken Sie dann auf <code className="action">Beenden</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-import-win04.png" loading="lazy" />
+    
+    - Wenn Sie ein Passwort in Ihrer Backup-Datei festgelegt haben, geben Sie dieses ein und klicken Sie dann auf <code className="action">OK</code>.
+    
+    - Wählen Sie <code className="action">Elemente in den aktiven Ordner importieren</code> und klicken Sie dann auf <code className="action">Beenden</code>.
+    
+    Der Import Ihres Backups beginnt.
+  </Tab>
+</Tabs>
+
+
+#### Mac OS
+
+<Tabs>
+  <Tab label="Exportieren">
+    Klicken Sie im Tab <code className="action">Werkzeuge</code> in Ihrem Outlook-Fenster auf <code className="action">Exportieren</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-mac01.png" loading="lazy" />
+
+Wählen Sie im Fenster "In eine Archivdatei (.olm) exportieren" die Elemente aus, die Sie zu Ihrer Backup-Datei hinzufügen möchten, und klicken Sie dann auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-mac02.png" loading="lazy" />
+
+Wählen Sie anschließend den Zielordner für Ihr Backup aus und klicken Sie auf <code className="action">Speichern</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-export-mac03.png" loading="lazy" />
+
+Es wird ein Fortschrittsfenster angezeigt. Klicken Sie auf <code className="action">Am Ende der Operation fortfahren</code>. Sie finden Ihre Backup-Datei im zuvor gewählten Ordner.
+  </Tab>
+  <Tab label="Importieren">
+    Klicken Sie im Tab <code className="action">Werkzeuge</code> in Ihrem Outlook-Fenster auf <code className="action">Importieren</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-import-mac01.png" loading="lazy" />
+
+Wählen Sie das Backup-Format aus, das Sie importieren möchten, und klicken Sie dann auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-import-mac02.png" loading="lazy" />
+
+Wählen Sie Ihre Backup-Datei aus und klicken Sie dann auf <code className="action">Importieren</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/outlook-import-mac03.png" loading="lazy" />
+
+Es wird ein Fortschrittsfenster angezeigt. Klicken Sie am Ende der Operation auf <code className="action">Weiter</code>.
+  </Tab>
+</Tabs>
+
+
+### Mail auf Mac OS
+
+<Tabs>
+  <Tab label="Exportieren">
+    Wählen Sie in der linken Spalte einen oder mehrere E-Mail-Accounts aus. Klicken Sie im horizontalen Menü auf <code className="action">Mailbox</code> und dann auf <code className="action">Mailbox exportieren</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/mail-export-mac01.png" loading="lazy" />
+
+Wählen Sie den Ordner Ihrer Wahl aus oder erstellen Sie einen neuen Ordner und klicken Sie dann auf <code className="action">Auswählen</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/mail-export-mac02.png" loading="lazy" />
+
+Ihre Ausfuhr erfolgt in Form einer ".mbox" Datei.
+  </Tab>
+  <Tab label="Importieren">
+    Klicken Sie im horizontalen Menü auf <code className="action">Datei</code> und dann auf <code className="action">Briefkästen importieren</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/mail-import-mac01.png" loading="lazy" />
+
+Wählen Sie Ihre Backup-Datei im Format ".mbox" aus und klicken Sie dann auf <code className="action">Weiter</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/mail-import-mac02.png" loading="lazy" />
+
+In der linken Spalte befinden sich die importierten E-Mails in einem neuen E-Mail-Account namens "Import". Sie können die Ordner und Nachrichten vom Import-Account auf Ihre bereits konfigurierten E-Mail-Accounts verschieben. Sobald Ihre Transfers abgeschlossen sind, können Sie den Account "Import" löschen.
+  </Tab>
+</Tabs>
+
+
+### Thunderbird
+
+Es gibt derzeit keine native Funktion zum Export oder Import eines E-Mail-Accounts aus Thunderbird. Es ist jedoch möglich, ein Thunderbird-Profil zu sichern. Es enthält alle Accounts und E-Mails auf Ihrem lokalen Computer. Der folgende Abschnitt erklärt, wie ein Thunderbird-Profil gesichert und es in eine neue Thunderbird-Instanz integriert wird.
+
+<Tabs>
+  <Tab label="Exportieren">
+    Klicken Sie im Hauptfenster oben rechts auf das Menü, dann auf <code className="action">Hilfe</code> und schließlich auf <code className="action">Informationen zur Fehlerbehebung</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/thunderbird_menu.png" loading="lazy" />
+
+Es erscheint eine Tabelle. Wählen Sie die Zeile <code className="action">Profilverzeichnis</code> aus und klicken Sie auf den Button <code className="action">Den zugehörigen Ordner öffnen</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/thunderbird_open_folder.png" loading="lazy" />
+
+Sie werden dann zum Profilordner geleitet. Gehen Sie von einem Ordner in die Baumstruktur.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/thunderbird_profil_folder1.png" loading="lazy" />
+
+Kopieren Sie den Profilordner mit einem Rechtsklick auf diesen und fügen Sie diesen Ordner in den Ordner oder Support Ihrer Wahl ein.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/thunderbird_profil_folder2.png" loading="lazy" />
+  </Tab>
+  <Tab label="Importieren">
+    Statt einzelne Elemente zu importieren, wird hier ein komplettes Profil eingespielt.
+    Wenn E-Mail-Accounts auf der Ziel-Thunderbird-Instanz eingerichtet sind, gehören diese zum bereits aktiven Profil (Profil A).
+    Wenn Thunderbird ein neues Profil (Profil B) öffnen soll, können **nur** die Elemente dieses Profils B geladen werden.
+    Daher empfehlen wir Ihnen, zuerst das neue Profil (Profil B) zu laden und die E-Mail-Accounts aus Profil A darauf zu konfigurieren.
+    
+    Starten Sie zuerst Thunderbird über die Profilverwaltung.
+    
+    - Gehen Sie in Windows ins Startmenü und dann auf <code className="action">Ausführen</code>. Geben Sie dort `thunderbird.exe -ProfileManager` ein und klicken Sie auf <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/thunderbird-run-profil.png" loading="lazy" />
+    
+    - Starten Sie auf Mac OS die Terminal-Anwendung und legen Sie dann Ihre Thunderbird-Anwendung im Fenster des Terminals ab, indem Sie `/Contents/MacOS/thunderbird-bin -ProfileManager` einfügen. Klicken Sie auf `Enter` (⏎), um zu bestätigen.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/thunderbird-terminal-profil.png" loading="lazy" />
+
+Im folgenden Fenster werden die vorhandenen Profile angezeigt. Klicken Sie auf <code className="action">Profil erstellen</code> und dann auf <code className="action">Weiter</code>, wenn die Informationsnachricht angezeigt wird.
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/thunderbird-profil-create01.png" loading="lazy" />
+
+Im nächsten Schritt benennen Sie Ihr Profil und identifizieren Sie den Ordner, in dem das Profil erstellt wird unterhalb von "Ihre Benutzereinstellungen, Einstellungen und weitere persönlichen Daten werden gespeichert in:".
+    
+    <img className="thumbnail" alt="E-Mails" src="/images/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/thunderbird-profil-create02.png" loading="lazy" />
+    
+    :::info
+    Wir empfehlen Ihnen, die Sicherung Ihres Thunderbird-Profils in den Thunderbird-Profilordner zu kopieren.
+
+    :::
+
+    
+    Klicken Sie auf <code className="action">Ordner auswählen...</code> um den Ordner auszuwählen, der Ihr Backup enthält. Klicken Sie auf <code className="action">Beenden</code>, um das Profil mit Ihrem Backup zu erstellen.
+    
+    Sie finden das Fenster zur Auswahl Ihres Profils mit Ihrem neuen ausgewählten Profil. Klicken Sie auf <code className="action">Thunderbird starten</code>, Thunderbird wird mit allen Elementen, die Sie in Ihrem Backup hatten, gestartet.
+  </Tab>
+</Tabs>
+
+
+### Import auf der neuen E-Mail-Adresse überprüfen
+
+Wenn Sie die Import-Schritte befolgt haben, überprüfen Sie, ob Ihre Elemente auf dem Server vorhanden sind.
+
+Loggen Sie sich im [Webmail](https://www.ovhcloud.com/de/mail/) ein.
+
+In Ihrem Posteingang und in der linken Spalte finden Sie die Ordner und E-Mails Ihrer gesicherten E-Mail-Adresse.
+
+:::info
+Dabei ist die Zeit zu berücksichtigen, in der die auf Ihrem Computer befindlichen Elemente auf den E-Mail-Server geladen werden. Abhängig von Ihrer Internetverbindung kann dies mehrere Minuten oder Stunden in Anspruch nehmen.
+
+:::
+
+
+## Weiterführende Informationen
+
+[E-Mail-Accounts mit dem OVHcloud Mail Migrator migrieren](/guides/web-cloud/email-and-collaborative-solutions/migrating/migration-omm/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

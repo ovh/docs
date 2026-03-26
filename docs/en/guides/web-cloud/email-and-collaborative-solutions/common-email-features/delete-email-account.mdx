@@ -1,0 +1,117 @@
+---
+title: Deleting an email account
+excerpt: Find out how to delete or reset an email account of your email solution
+updated: 2025-04-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+You want to:
+
+- Delete an email account you no longer use.
+- Reset an email account to use it with a new email address.
+- Reset an email account in order to cancel it.
+
+**This guide explains how to delete or reset an email account of your email solution.**
+
+## Requirements
+
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) or **MX Plan** (available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately)
+- Access to the [OVHcloud Control Panel](/links/manager) as the Admin contact of the email service concerned (section `Web Cloud`)
+
+## Instructions <a id="instructions"></a>
+
+OVHcloud offers 3 email solutions, and the concept of account deletion differs depending on which email solution you choose.
+
+- **MX Plan**: This offer contains a certain number of email accounts as a bundle. When you delete an account, you free up an account "slot" of the email service.
+- **Email Pro** and **Hosted Exchange**: Each of these offers consist of the service itself and individually billed email accounts. If you want to delete an email account, you will need to **reset** it. Once you have reset your email account, you can use this account again to create a new email address. You can also [cancel the subscription](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange#deleting-accounts) for this account if you wish to permanently delete it.
+
+### Delete or reset an email account
+
+Select the tab corresponding to your email solution:
+
+<Tabs>
+<Tab label="MX Plan legacy">
+
+To check if your MX Plan solution is a legacy or new version, please refer to the table in the "[Identifying your MX Plan solution](#whichmxplan)" section of this guide.
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Open the `Web Cloud` section.
+1. Click `MX Plan`.
+1. Select the domain concerned.
+1. Go to the `Email accounts`  tab. The window that appears will display the existing email accounts.
+1. Click the `...` button to the right of the account you want to modify, then click `Disable account`.
+
+![email](/images/guides/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-mxplan-legacy-reset.png)
+
+</Tab>
+<Tab label="MX Plan new version">
+
+To check if your MX Plan solution is a legacy version, please refer to the table in the "[Identifying your MX Plan solution](#whichmxplan)" section of this guide.
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Open the `Web Cloud` section.
+1. Click `MX Plan`.
+1. Select the domain concerned.
+1. Go to the `Email accounts` tab. The window that appears will display the existing email accounts.
+1. Click the `...` button to the right of the account you want to modify, then click `Reset this account`.
+
+![email](/images/guides/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/email-mxplan-new-reset.png)
+
+</Tab>
+<Tab label="Email Pro">
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Open the `Web Cloud` section.
+1. Click `Email Pro`.
+1. Select the service concerned.
+1. Go to the `Email accounts` tab. The window that appears will display the existing email accounts.
+1. Click the `...` button to the right of the account you want to modify, then click `Reset this account`.
+
+After resetting your account, if you want to permanently delete it, you must cancel it. To do this, please refer to our guide "[Managing the billing for your Email Pro accounts](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro)".
+
+![email](/images/guides/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/emailpro-reset.png)
+
+</Tab>
+<Tab label="Exchange">
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Open the `Web Cloud` section.
+1. In the `MICROSOFT` section, click `Exchange`.
+1. Select the service concerned.
+1. Go to the `Email accounts` tab.
+1. Click the `...` button to the right of the account you want to modify, then click `Reset`.
+
+After resetting your account, if you want to permanently delete it, you must cancel it. To do this, please refer to our guide "[Managing the billing for your Exchange accounts](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange)".
+
+![email](/images/guides/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/exchange-reset.png)
+
+</Tab>
+</Tabs>
+
+
+In the table below, you will find the information you need to identify your MX Plan solution.
+
+|MX Plan legacy version|MX Plan new version|
+|---|---|
+|![email](/images/guides/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/mxplan-starter-legacy-step1.png)<br /> The solution appears in the **Subscription** box on the right. The legacy solution *does not* have a server reference.|![email](/images/guides/web-cloud/email-and-collaborative-solutions/common-email-features/email-reset-account/mxplan-starter-new-step1.png)<br />The new solution has a **Server model** in the **Summary** box on the left.|
+|Select the **MX Plan legacy** emails tab above in this guide.|Select the **MX Plan new version** emails tab above in this guide.|
+
+## Go further
+
+[Getting started with MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities)
+
+[Getting started with Email Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/first-config)
+
+[Getting started with Hosted Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted)
+
+[Managing the billing of your Email Pro accounts](/guides/web-cloud/email-and-collaborative-solutions/email-pro/manage-billing-emailpro)
+
+[Managing the billing of your Exchange accounts](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange)
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+
+Join our [community of users](/links/community).

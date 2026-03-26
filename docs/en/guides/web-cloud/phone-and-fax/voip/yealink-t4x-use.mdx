@@ -1,0 +1,98 @@
+---
+title: "Utiliser le Yealink T4X"
+excerpt: "Découvrez comment utiliser votre téléphone Yealink T4X"
+flag: hidden
+updated: 2018-05-30
+---
+
+## Objectif
+
+**Ce guide vous présente les différentes fonctionnalités de votre téléphone Yealink T4X tel que fourni par OVH.**
+
+## Prérequis
+
+- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
+- Avoir réceptionné et installé le téléphone Yealing T4X fourni par OVH.
+
+## En pratique
+
+![Visuel du Yealink T4X](/images/guides/web-cloud/phone-and-fax/voip/yealink-t4x-use/t41p.png)
+
+### Passer un appel
+
+|Mode de réponse|Procédure|
+|---|---|
+|Via le combiné|Une fois le combiné décroché, saisissez le numéro et appuyez sur la touche de fonction `envoi` (touche en bas à gauche de l'écran rétroéclairé).|
+|Via le haut-parleur|Le combiné étant raccroché, appuyez sur `Haut-parleur` (1). Saisissez ensuite le numéro et appuyez sur la touche de fonction `envoi` (touche en bas à gauche de l'écran rétroéclairé).|
+|Via le casque|Le casque étant branché, appuyez sur `Casque` (2) pour activer le mode casque. Saisissez ensuite le numéro, puis appuyez sur la touche de fonction `envoi` (touche en bas à gauche de l'écran rétroéclairé).|
+
+Pendant un appel, vous pouvez basculer entre les modes `casque`, `haut-parleur mains libres` et `combiné` en appuyant sur la touche `Casque` (2), sur la touche `Haut-parleur` (1) ou en décrochant le combiné (le mode `casque` nécessite qu'un casque soit branché).
+
+### Répondre à un appel
+
+|Mode de réponse|Procédure|
+|---|---|
+|Via le combiné|Décrochez le combiné.|
+|Via le haut-parleur|Appuyez sur `Haut-parleur` (1).|
+|Via le casque|Appuyez sur `Casque` (2).|
+
+> [!info]
+>
+> Vous pouvez ignorer un appel entrant en appuyant sur la touche de fonction `refus` (en bas à droite de l'écran rétroéclairé).
+>
+
+### Recomposer un appel
+
+Pour recomposer un appel, appuyez sur `Redial` (3) pour accéder à la liste des appels, puis utilisez `Flèche directionnelle (haut)` (4) ou `Flèche directionnelle (bas)` (5) pour sélectionner l'entrée souhaitée et valider avec `Redial` (3) ou sur la touche `envoi` (touche en bas à gauche de l'écran rétroéclairé).
+
+Pour appeler le dernier numéro composé, il vous suffit d'appuyer deux fois sur `Redial` (3) lorsque le téléphone est inactif.
+
+### Mettre un appel en sourdine et rétablir le son
+
+Pendant un appel, appuyez sur le bouton `Mute` (6) pour couper le son du microphone. Appuyez une seconde fois pour le réactiver.
+
+### Mettre en attente et reprendre un appel
+
+Pour mettre un appel en attente, appuyez sur la touche de fonction `pel en atte` (touche au milieu gauche de l'écran rétroéclairé) pendant un appel actif.
+
+Pour reprendre l'appel, vous avez deux possibilités :
+
+- s'il n'y a qu'un seul appel en attente, appuyez sur la touche de fonction `reprise` (touche au milieu gauche de l'écran rétroéclairé) ;
+- s'il y a plusieurs appels en attente, appuyez sur `Flèche directionnelle (haut)` (4) ou `Flèche directionnelle (bas)` (5) pour sélectionner l'appel souhaité, puis appuyez sur la touche de fonction `reprise` (touche au milieu gauche de l'écran rétroéclairé) ou appuyez sur `OK` (3).
+
+### Transfert d'appel
+
+#### Transfert aveugle
+
+Appuyez sur la touche de fonction `transfert` (touche en bas à gauche de l'écran rétroéclairé) pendant un appel, l'appel est mis en attente. Saisissez le numéro auquel vous souhaitez transférer l'appel, puis appuyez sur `Envoi` (7).
+
+Enfin, appuyez sur la touche de fonction `transfert` (touche en bas à gauche de l'écran rétroéclairé) quand vous entendez la tonalité de retour.
+
+#### Transfert accompagné
+
+Appuyez sur la touche de fonction `transfert` (touche en bas à gauche de l'écran rétroéclairé) pendant un appel. Celui-ci est mis en attente. Saisissez le numéro auquel vous souhaitez transférer l'appel, puis appuyez sur `Envoi` (7).
+
+Enfin, appuyez sur la touche de fonction `transfert` (touche en bas à gauche de l'écran rétroéclairé) quand vous entendez la tonalité de retour.
+
+#### Configurer la gestion des transferts d'appels depuis l'espace client
+
+Une fois connecté dans l'[espace client OVH](/links/manager), rendez-vous dans la partie `Télécom`, puis `VoIP & Fax`. Sélectionnez ensuite, dans l'onglet `Services` la ligne téléphonique concernée, puis cliquez sur le téléphone que vous souhaitez paramétrer. Cliquez ensuite sur `Téléphone` et `Paramètres Plug & Phone personnalisés`.
+
+![Espace client Telecom](/images/guides/web-cloud/phone-and-fax/voip/yealink-t4x-use/control_panel_telecom.png)
+
+Vous aurez accès à la section `Gestion des transferts d'appels`avec les éléments suivants :
+
+- `Transfert à l'aveugle autorisé` : si l'option est positionnée sur `Non`, vous ne pourrez effectuer que des transferts accompagnés ;
+- `Transfert à l'aveugle sur raccroché` : si l'option est positionnée sur `Oui`, vous pourrez raccrocher le combiné au lieu d'appuyer sur `transfert` ;
+- `Transfert sur raccroché` : si l'option est positionnée `Oui`, vous pourrez raccrocher le combiné au lieu d'appuyer sur `transfert` ;
+- `Mode de transfert via DssKey` : cette option permet de définir le mode de transfert par défaut lorsque vous utilisez les touches programmables (comme « appeler un numéro » ou « supervision »).
+
+Il existe trois modes de transfert :
+ 
+- `Transfert supervisé` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert` pour transférer l'appel (les deux appels se trouvent sur deux touches programmables différentes) ;
+- `Transfert accompagné` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert` pour transférer l'appel (les deux appels sont situés sur la même touche programmable) ;
+- `Transfert aveugle` : lorsque vous êtes en appel, vous appuyez sur la touche programmable et l'appel est transféré en aveugle sans autres actions.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

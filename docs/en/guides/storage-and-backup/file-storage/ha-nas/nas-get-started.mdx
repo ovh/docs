@@ -1,0 +1,128 @@
+---
+title: Getting started with a HA-NAS solution
+description: Find out how to manage a HA-NAS via the OVHcloud Control Panel
+lastUpdated: 2021-09-16
+---
+
+## Objective
+
+Network Attached Storage (NAS) is a file server connected to a network whose main function is the storing of data in a centralised volume for heterogeneous network clients.
+
+## Requirements
+
+- An IP address attached to an OVHcloud service (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud instance, etc.)
+- A [HA-NAS solution](https://www.ovhcloud.com/en-gb/storage-solutions/nas-ha/)
+
+{/* CP-NAV-START:storage-nas-ha */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [NAS-HA](https://manager.eu.ovhcloud.com/#/dedicated/nasha)
+- **Navigation path:** <code className="action">Bare Metal Cloud</code> > <code className="action">HA-NAS</code> > Select your NAS-HA
+
+---
+{/* CP-NAV-END:storage-nas-ha */}
+
+## Instructions
+
+Click on your service to access the administration menu.
+
+<img className="thumbnail" alt="NAS access" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-01.png" loading="lazy" />
+
+### Creating a partition <a name="partition"></a>
+
+To add a new partition, click <code className="action">Create a partition</code>.
+
+<img className="thumbnail" alt="create a partition" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-02.png" loading="lazy" />
+
+Simply enter your partition **name**, partition **size**, and authorised **protocol** (NFS or CIFS).
+
+<img className="thumbnail" alt="partition attributes" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-03.png" loading="lazy" />
+
+### Modifying the size of a partition
+
+To change the size of a partition, click on the <code className="action">...</code> button to the right of the partition concerned, then <code className="action">Modify size</code>.
+
+<img className="thumbnail" alt="change the size of a partition" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-04.png" loading="lazy" />
+
+Enter the new size, then confirm.
+
+### Change the frequency of snapshots
+
+By default, a snapshot of your NAS content takes place every hour, and is saved on your NAS.
+
+However, you can create up to 3 additional snapshots at different frequencies if you wish, which will also be saved on your NAS.
+
+To do this, click the <code className="action">...</code> button to the right of the partition concerned, then click <code className="action">Frequency of snapshots</code>.
+
+<img className="thumbnail" alt="change snapshot frequency" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-05.png" loading="lazy" />
+
+Select the new frequency, then confirm.
+
+### Creating an instant snapshot
+
+Apart from the snapshots taken automatically, you can create an instant snapshot of a partition at any time by clicking on the <code className="action">...</code> button to the right of the partition, then on <code className="action">Custom snapshot</code>.
+
+<img className="thumbnail" alt="snapshot" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-10.png" loading="lazy" />
+
+Name the snapshot and click <code className="action">Add</code>.
+
+### Adding an access <a name="addaccess"></a>
+
+In order to access the partition you created earlier, you will need to configure access.
+
+:::info
+Only OVHcloud service IP addresses can access your NAS (e.g. a dedicated server, a VPS, a Public Cloud instance, etc.).
+
+:::
+
+
+To authorise an IP to access the NAS, click on the <code className="action">...</code> button to the right of the existing partition, then on <code className="action">Manage access</code>.
+
+<img className="thumbnail" alt="manage access" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-06.png" loading="lazy" />
+
+Then click <code className="action">Add an access</code>, and select the IP address of your OVHcloud product.
+<br/>You must also define whether the authorised access for this IP address is read-only or read/write.
+
+<img className="thumbnail" alt="add access" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-07.png" loading="lazy" />
+
+#### Deleting an access
+
+To remove access to a partition, click on the <code className="action">...</code> button to the right of the IP address concerned, then <code className="action">Delete</code>.
+
+<img className="thumbnail" alt="createaccess" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-09.png" loading="lazy" />
+
+### ZFS settings
+
+:::warning
+All the default Z File System settings are optimised. Though we do not recommend changing those settings, this menu does allow you to adjust the ZFS that the HA-NAS is using.
+
+:::
+
+
+To change the ZFS settings of a partition, click on the <code className="action">...</code> button to the right of the partition concerned, then <code className="action">Z File System (ZFS) settings</code>.
+
+<img className="thumbnail" alt="zfss" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-13.png" loading="lazy" />
+
+- **Disabling access time update (atime)**: Disabling *atime* means the kernel will no longer update the file system timestamp each time a file is accessed. This can be useful to speed up frequent read operations, for example on static web pages. However, it should not be enabled for consistency-critical applications such as databases.
+- **ZFS recordsize**: This property changes the maximum block size on the ZFS filesystem. Please note that ZFS will still use a smaller block size if the file is smaller than the maximum. For example, a 16 KB file will use a 16 KB block (plus metadata) to not waste storage space. We generally advise against changing ZFS *recordsize* for this reason.
+- **Sync**: This changes the behaviour of ZFS filesystem transactions with regard to RAM data buffering and writing data to disk. We do not recommend changing this property without an appropriate reason.
+
+### Deleting a partition
+
+:::danger
+Deleting a partition deletes all of the data stored on it permanently.
+
+:::
+
+
+To delete a partition, click on the <code className="action">...</code> button to the right of the existing partition, then <code className="action">Delete</code>.
+
+<img className="thumbnail" alt="delete a partition" src="/images/storage-and-backup/file-storage/ha-nas/nas-get-started/nas2021-08.png" loading="lazy" />
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

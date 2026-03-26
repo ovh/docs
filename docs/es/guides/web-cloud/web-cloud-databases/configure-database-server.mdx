@@ -1,0 +1,518 @@
+---
+title: Configurar el servidor de bases de datos
+description: Cómo configurar y optimizar el servidor de bases de datos
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+Los servidores de bases de datos Web Cloud Databases le permiten modificar los parámetros globales de su servidor. También puede consultar la actividad de su servidor.
+
+**Esta guía explica cómo configurar y optimizar su servidor de bases de datos.**
+
+## Requisitos
+
+- Disponer de una [instancia Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/) (incluida en un [plan de hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/)).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Seleccione su servicio de base de datos
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## Procedimiento
+
+### Consultar la información general del servidor de bases de datos
+
+Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Asegúrese de estar en la pestaña <code className="action">Información general</code>.
+    
+    Podrá consultar la información más importante de su instancia SQL. Le recomendamos que se tome unos minutos para comprobar que la información mostrada es correcta y se corresponde con las indicaciones que se ofrecen a continuación.
+    
+    |Información|Detalles|
+    |---|---|
+    |Estado del servicio|Indica si la instancia está iniciada, se está reiniciando o está suspendida. La instancia debe estar iniciada para poder realizar cualquier acción.|
+    |Tipo|Muestra el sistema de bases de datos utilizado por el servidor. Si no sabe si el tipo utilizado es correcto, debe saber que el más habitual es "MySQL", aunque existen otros como PostgreSQL o MariaDB. Por ejemplo, si su sitio web es un WordPress, el sistema MySQL es perfectamente adecuado.|
+    |Versión|Muestra la versión del sistema de bases de datos utilizado por el servidor. Asegúrese de que su sitio web es compatible con la versión elegida.|
+    |Saturación CPU|Muestra el tiempo de CPU consumido en saturación en las últimas 24 horas.|
+    |RAM|Muestra la memoria RAM disponible para su instancia, así como los posibles desbordamientos de memoria. Su servidor de bases de datos dispone de recursos dedicados y garantizados: su memoria RAM. Si lo necesita, puede escalarla y recibir alertas si consume todos los recursos de RAM de su instancia.|
+    |Infraestructura|Muestra la infraestructura utilizada por su instancia. Se trata de una información inherente a la infraestructura de OVHcloud.|
+    |Datacenter|Muestra el centro de datos en el que se ha creado la instancia. Asegúrese de que el datacenter de su instancia sea el mismo que el del plan de hosting de OVHcloud en el que esté (o vaya a estar) alojado su sitio web.|
+    |Host|Indica el servidor de OVHcloud en el que se ha creado la instancia. Se trata de una información inherente a la infraestructura de OVHcloud y puede utilizarse en nuestras comunicaciones relacionadas con [incidencias de OVHcloud](https://web-cloud.status-ovhcloud.com/).|
+    
+    <img className="thumbnail" alt="Información general" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Gestionar los accesos
+
+Puede acceder a su Web Cloud Databases desde sus alojamientos web de OVHcloud o desde la red pública.
+
+**Haga clic en cada título para ver su contenido.**
+
+<details>
+
+<summary>Autorizar una dirección IP</summary>
+
+
+Para acceder a su instancia Web Cloud Databases, deberá indicar las direcciones IP o rangos de IP autorizados a conectarse a sus bases de datos.
+
+Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">IPs autorizadas</code> y, a continuación, en el botón <code className="action">Añadir una dirección IP / máscara</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 3">
+    En la ventana que aparece, indique en <code className="action">IP/máscara</code> la dirección IP o la máscara que desee autorizar y, si lo desea, añada una descripción. A continuación, indique si desea autorizar el acceso únicamente a las bases de datos o también al SFTP. Por último, haga clic en <code className="action">Aceptar</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Autorizar las conexiones a los alojamientos web de OVHcloud</summary>
+
+
+Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">IPs autorizadas</code>.
+  </Tab>
+  <Tab label="Paso 3">
+    Marque <code className="action">Autorizar a los alojamientos web de OVHcloud a acceder a la base de datos</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+### Modificar su solución Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
+
+:::warning
+Si su solución Web Cloud Databases está asociada a un plan de hosting **Performance**, deberá desvincular previamente la solución Web Cloud Databases de su alojamiento **Performance** antes de migrar a un plan superior.
+
+Para desvincular una solución Web Cloud Databases de un alojamiento web **Performance**, consulte nuestra guía "[Desvincular mi solución Web Cloud Databases de un alojamiento web](/guides/web-cloud/web-cloud-databases/detach-from-web-hosting/)".
+
+**Esta acción es irreversible y la solución Web Cloud Databases se facturará de forma independiente de su plan de hosting Performance.**
+
+:::
+
+
+Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    En la pestaña **Información general** que se muestra por defecto, haga clic en <code className="action">...</code> a la derecha de "RAM" y, a continuación, en <code className="action">Cambiar la cantidad de RAM</code> para acceder al pedido de esta modificación.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/general-information/change-the-amount-of-ram.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 3">
+    Elija la cantidad de RAM deseada y haga clic en <code className="action">Siguiente</code>. A continuación, seleccione la duración deseada.
+    
+    :::info
+    El tiempo restante hasta la fecha de expiración se prorrateará. Este prorrateo se basará en la fecha de expiración de su instancia Web Cloud Databases, no en la fecha de la orden de pedido.
+
+    :::
+
+    
+    Una vez aceptados los contratos, será redirigido a la orden de pedido para abonar la modificación. El cambio será efectivo en unas horas.
+    
+    :::warning
+    Si actualmente dispone de un Web Cloud Databases gratuito gracias a su hosting Performance, la modificación del plan hará que deje de ser gratuito.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+### Modificar la configuración de mi servidor de bases de datos
+
+**Haga clic en cada título para ver su contenido.**
+
+<details>
+
+<summary>Instancia MySQL y MariaDB</summary>
+
+
+Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">Configuración</code>.
+  </Tab>
+  <Tab label="Paso 3">
+    En el recuadro **Configuración general de MySQL** encontrará la configuración actualmente establecida para su base de datos. Puede modificarla directamente y hacer clic en <code className="action">Aplicar</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png" loading="lazy" />
+    
+    - **MaxAllowedPacket**: Tamaño máximo de los paquetes.
+    - **Max_user_connections**: Número de conexiones simultáneas autorizadas por usuario.
+    - **AutoCommit**: Define si las peticiones se validan automáticamente (committed) o no.
+    - **Interactive_timeout**: Tiempo (en segundos) que el servidor espera actividad en una conexión interactiva antes de cerrarla.
+    - **InnodbBufferPoolSize**: Tamaño de la memoria intermedia seleccionada.
+    - **MaxConnections:** Número de conexiones simultáneas autorizadas en el servidor de bases de datos.
+    - **Wait_timeout**: Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
+    - **Event_scheduler**: Permite activar la ejecución de consultas programadas directamente en el servidor MySQL.
+    - **sql_mode**: La opción **sql_mode** afecta a la sintaxis SQL soportada y a las verificaciones de validación de datos realizadas por MySQL/MariaDB.
+    
+    :::info
+    Cuando aparece un error en su sitio web que indica **"Too many connections"**, se debe a que se ha superado el número de conexiones simultáneas en su servidor de bases de datos. Puede aumentar la variable **"MaxConnections"** si no está al máximo.
+
+    :::
+
+    
+    :::info
+    <b>sql_mode</b>:
+    
+    &emsp;&emsp;Modo por defecto de MariaDB 10.1:
+    <pre className="highlight language-console"><code className="language-console">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</code></pre>
+    
+    &emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores:
+    <pre className="highlight language-console"><code className="language-console">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</code></pre>
+    
+    &emsp;&emsp;Modo por defecto de MySQL 5.6:
+    <pre className="highlight language-console"><code className="language-console">NO_ENGINE_SUBSTITUTION</code></pre>
+    
+    &emsp;&emsp;Modo por defecto de MySQL 5.7 y versiones superiores:
+    <pre className="highlight language-console"><code className="language-console">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</code></pre>
+    
+    Le recomendamos que utilice siempre el modo por defecto, excepto si su base de datos se ha actualizado desde una versión con un modo por defecto diferente al de la versión actual.
+
+    :::
+
+    
+    Realice los cambios necesarios y haga clic en <code className="action">Aceptar</code>.
+  </Tab>
+</Tabs>
+
+
+:::warning
+Cualquier modificación requiere el reinicio del servidor de bases de datos.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>Instancia PostgreSQL</summary>
+
+
+Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">Configuración</code>.
+  </Tab>
+  <Tab label="Paso 3">
+    En el recuadro **Configuración general de PostgreSQL** encontrará la configuración actualmente definida para su base de datos. Puede modificarla directamente y hacer clic en <code className="action">Aplicar</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-postgresql.png" loading="lazy" />
+    
+    - **log_min_messages**: Controla los niveles de mensajes que se registran en los logs del servidor. Los niveles disponibles para una solución Web Cloud Databases son:
+        - **"WARNING"**: Proporciona mensajes de advertencia sobre posibles problemas.
+        - **"ERROR"**: Envía el error que ha provocado la cancelación de un comando en curso.
+        - **"LOG"**: Registra la información destinada a los administradores del servidor.
+        - **"FATAL"**: Envía el error que ha provocado el final de la sesión en curso.
+        - **"PANIC"**: Envía el error que ha provocado el final de todas las sesiones.
+    
+    Cada nivel incluye todos los niveles posteriores. Cuanto mayor sea el nivel, menos mensajes se registrarán en los logs del servidor.
+    
+    Por defecto, el valor definido es **"WARNING"**, ya que incluye los valores **"ERROR"**, **"LOG"**, **"FATAL"** y **"PANIC"**.
+    
+    También puede activar extensiones en sus bases de datos. Para ello, haga clic en la pestaña <code className="action">Bases de datos</code> y, a continuación, en el icono de la tabla de su base de datos en la columna **"Extensiones"**.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+### Cambiar la versión MySQL, PostgreSQL o MariaDB del servidor de bases de datos
+
+Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    En la pestaña **Información general**, la versión actual aparece en la línea **Versión**.
+  </Tab>
+  <Tab label="Paso 3">
+    Para modificar esta versión, haga clic en <code className="action">Modificar la versión</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>¿Cómo puedo conocer la versión exacta de PostgreSQL que utilizo?</summary>
+
+
+Introduzca este comando en phpPgAdmin haciendo clic en **Su base de datos**, en la sección **"SQL"**, y haga clic en <code className="action">Iniciar</code>:
+
+```sql
+select version();
+```
+
+</details>
+
+
+<details>
+
+<summary>¿Cómo puedo conocer la versión exacta de MySQL o MariaDB que utilizo?</summary>
+
+
+Introduzca este comando en phpMyAdmin, en la sección **"SQL"**, y haga clic en <code className="action">Ejecutar</code>:
+
+```sql
+show variables like "version";
+```
+
+</details>
+
+
+:::info
+- Antes de migrar a una versión superior, asegúrese de que su base de datos es compatible con la versión elegida.
+- La modificación será efectiva en unos minutos.
+
+:::
+
+
+:::warning
+No es posible pasar directamente de una versión antigua a la última.
+Es obligatorio pasar por todas las versiones intermedias.
+
+:::
+
+
+### Logs y métricas
+
+**Haga clic en cada título para ver su contenido.**
+
+<details>
+
+<summary>Acceso a los logs</summary>
+
+
+Para acceder a los logs de su solución Web Cloud Databases, consulte nuestra guía "[Web Cloud Databases - Cómo recuperar los logs](/guides/web-cloud/web-cloud-databases/retrieve-logs/)".
+
+</details>
+
+
+<details>
+
+<summary>Seguimiento del uso de RAM</summary>
+
+
+Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">Métricas</code>. Encontrará el gráfico **"Estadísticas de memoria RAM utilizada"**.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Seguimiento del número de conexiones por minuto</summary>
+
+
+Este gráfico permite realizar un seguimiento, en las últimas 24 horas, de la carga de las conexiones por minuto en su servidor de bases de datos.
+
+Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
+
+<Tabs>
+  <Tab label="Paso 1">
+    Acceda a la página [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) y seleccione la solución correspondiente.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Paso 2">
+    Haga clic en la pestaña <code className="action">Métricas</code>. Encontrará el gráfico **"Estadísticas del total de conexiones por minuto"**.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+### Optimizar las bases de datos
+
+Es recomendable mantener su base de datos para que ofrezca un buen rendimiento y devuelva la información a los scripts con rapidez. Para ello, es necesaria una base de datos estructurada y optimizada.
+
+**Haga clic en cada título para ver su contenido.**
+
+<details>
+
+<summary>Indexar la base de datos</summary>
+
+
+Para aumentar la velocidad de búsqueda en una consulta, es necesario indexar los campos utilizados en las cláusulas WHERE.
+
+Ejemplo: realiza regularmente una búsqueda de personas por ciudad. Indexe el campo "city" con la siguiente consulta:
+
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
+```
+
+</details>
+
+
+<details>
+
+<summary>Purgar la base de datos</summary>
+
+
+¿Algunos de sus datos ya no se consultan? Archívelos: sus tablas estarán menos saturadas y las búsquedas serán más rápidas.
+
+</details>
+
+
+<details>
+
+<summary>Limitación de visualización</summary>
+
+
+Limite la visualización de los registros a un número determinado (por ejemplo, 10 por página) con la parte LIMIT de su consulta SQL.
+
+</details>
+
+
+<details>
+
+<summary>Agrupar las consultas</summary>
+
+
+Agrupe sus consultas al inicio del script de esta forma:
+
+```bash
+open_connection
+request1
+request2
+...
+close_connection
+Display...
+Process data
+Loop through data...
+Display...
+...
+```
+
+</details>
+
+
+<details>
+
+<summary>Obtener solo los datos útiles</summary>
+
+
+En sus consultas SQL, compruebe que solo seleccione lo que necesite y que no haya olvidado los enlaces entre las tablas.
+
+Ejemplo:
+
+```sql
+(where table1.champs = table2.champs2)
+```
+
+</details>
+
+
+<details>
+
+<summary>Evitar opciones que consuman demasiados recursos</summary>
+
+
+Evite usar **"HAVING"**, por ejemplo, ya que incrementa sus consultas. Del mismo modo, evite usar **"GROUP BY"**, a menos que sea estrictamente necesario.
+
+</details>
+
+
+## Más información
+
+[Lista de direcciones IP de los clusters y alojamientos web](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

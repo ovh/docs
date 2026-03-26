@@ -1,0 +1,199 @@
+---
+title: MX Plan / Zimbra Starter - Dodanie konta e-mail w nowym Outlook na Windows
+description: Dowiedz się, jak skonfigurować swój adres e-mail w nowym Outlook na Windows
+lastUpdated: 2026-01-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Adresy e-mail w ofercie **MX Plan** oraz [Zimbra Starter](https://www.ovhcloud.com/pl/emails/zimbra-emails/) mogą być konfigurowane na kompatybilnym kliencie pocztowym. Umożliwia to wysyłanie i odbieranie wiadomości z wybranej aplikacji.
+
+Od dnia 1 stycznia 2025 roku **nowy Outlook** zastąpił aplikację **Poczta** w systemie Windows. Więcej informacji na ten temat można znaleźć na stronie Microsoft "[Outlook dla systemu Windows: przyszłość poczty, kalendarza i Osoby na Windows 11](https://support.microsoft.com/pl-pl/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
+
+**Dowiedz się, jak skonfigurować swój adres e-mail MX Plan w nowym Outlook na Windows.**
+
+## Wymagania wstępne
+
+- Posiadanie wcześniej skonfigurowanego rozwiązania e-mail OVHcloud, takiego jak:
+    - **MX Plan** oferowany wraz z naszymi [ofertami hostingowymi](https://www.ovhcloud.com/pl/web-hosting/) lub włączonym w [bezpłatnym hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/).
+    - [Zimbra](https://www.ovhcloud.com/pl/emails/zimbra-emails/) Starter (tylko).
+- Posiadanie [nowej wersji Outlook](https://support.microsoft.com/pl-pl/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) zainstalowanej w systemie Windows.
+- Posiadanie danych dostępowych do konta e-mail, które chcesz skonfigurować.
+
+<details>
+
+<summary>Informacje dotyczące zarządzania i konfiguracji usług OVHcloud</summary>
+
+
+OVHcloud udostępnia usługi, za których konfigurację, zarządzanie i odpowiedzialność odpowiadasz Ty. Należy więc do Ciebie zapewnić ich prawidłowe działanie.
+
+Udostępniamy tę instrukcję, aby pomóc w najczęstszych zadaniach. Jednakże, jeśli napotkasz trudności, zalecam skontaktowanie się z [partnerem specjalistą](https://partner.ovhcloud.com/pl/directory/) lub producentem usługi. Nie będziemy w stanie udzielić pomocy technicznej. Więcej informacji w sekcji "[Sprawdź również](#go-further)" tej instrukcji.
+
+</details>
+
+
+## W praktyce
+
+:::warning
+Ta dokumentacja dotyczy wyłącznie **nowego Outlooka** i nie dotyczy "[klasycznego Outlooka](https://support.microsoft.com/pl-pl/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", dostępnego w pakiecie Microsoft 365 lub wcześniej zainstalowanego na komputerze.
+
+Aby odróżnić obie wersje Outlooka, gdy są zainstalowane, wpisz „Outlook” w pasku wyszukiwania Windows. Możesz zauważyć różnicę jak poniżej. Nowy Outlook nie ma żadnej specjalnej oznaki.
+
+<img className="thumbnail" alt="outlook Windows" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/outlook-windows-identify01.png" loading="lazy" />
+
+Aby skonfigurować adres e-mail MX Plan lub Zimbra Starter w klasycznym Outlooku, zapoznaj się z naszym przewodnikiem "[MX Plan / Zimbra Starter - Konfiguracja adresu e-mail w klasycznym Outlooku dla Windowsa](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/)".
+
+:::
+
+
+### Dodanie konta <a name="add-account"></a>
+
+:::warning
+Należy wybrać odpowiednią zakładkę etapu 3, odpowiadającą Twojej lokalizacji (**EUROPA** lub **AMERYKA/ASIA-PACIFIK**), aby uzyskać prawidłowe wartości.
+
+:::
+
+
+Aby skonfigurować adres e-mail, wykonaj poniższe kroki, klikając odpowiednie zakladki.
+
+<Tabs>
+  <Tab label="Etap 1">
+    - Otwórz Outlook. W lewym menu kliknij na przycisk <code className="action">Dodaj konto</code>, aby rozpocząć konfigurację.
+    
+    <img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 2">
+    - Wprowadź swój adres e-mail, a następnie kliknij <code className="action">Dalej</code>.
+    - Wprowadź hasło, a następnie kliknij przycisk <code className="action">Pokaż więcej</code>.
+    
+    <img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 3 EUROPA">
+    - Wprowadź następujące parametry:
+       - **Serwer IMAP dla przychodzących wiadomości**: imap.mail.ovh.net **lub** ssl0.ovh.net.
+       - **Port**: 993.
+       - **Typ bezpiecznego połączenia**: SSL/TLS
+       - **Nazwa użytkownika SMTP**: Wprowadź pełny adres e-mail.
+       - **Serwer SMTP dla wychodzących wiadomości**: smtp.mail.ovh.net **lub** ssl0.ovh.net.
+       - **Port**: 465.
+       - **Typ bezpiecznego połączenia**: SSL/TLS.
+       - **Hasło**: Nie wprowadzaj niczego, użyje się hasła wprowadzonego wcześniej.
+    - Kliknij <code className="action">Dalej</code>, aby zakończyć konfigurację.
+    
+    <img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etap 3 AMERYKA/ASIA-PACIFIK">
+    - Wprowadź następujące parametry:
+       - **Serwer IMAP dla przychodzących wiadomości**: imap.mail.ovh.ca.
+       - **Port**: 993.
+       - **Typ bezpiecznego połączenia**: SSL/TLS.
+       - **Nazwa użytkownika SMTP**: Wprowadź pełny adres e-mail.
+       - **Serwer SMTP dla wychodzących wiadomości**: smtp.mail.ovh.ca.
+       - **Port**: 465.
+       - **Typ bezpiecznego połączenia**: SSL/TLS.
+       - **Hasło**: Nie wprowadzaj niczego, użyje się hasła wprowadzonego wcześniej.
+    - Kliknij <code className="action">Dalej</code>, aby zakończyć konfigurację.
+    
+    <img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-03ca.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Użycie adresu e-mail <a name="use-account"></a>
+
+Po skonfigurowaniu adresu e-mail możesz go już używać! Możesz teraz wysyłać i odbierać wiadomości.
+
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Aby uzyskać dostęp do interfejsu OVHcloud Webmail, kliknij [ten link](https://www.ovhcloud.com/pl/mail/). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+
+### Modyfikacja istniejących parametrów <a name="modify-settings"></a>
+
+Aplikacja Outlook nie pozwala na modyfikację parametrów serwera dla Twojego konta e-mail.
+
+Jeśli Twoje konto e-mail jest już skonfigurowane i chcesz je skonfigurować ponownie, musisz je najpierw usunąć, a następnie ponownie dodać:
+
+- Kliknij na ikonę ustawień <code className="action">⛭</code> u dołu lewego menu.
+- W sekcji "Twoje konta" kliknij <code className="action">Zarządzaj</code> prawej strony od interesującego Ciebie adresu e-mail.
+
+<img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-04.png" loading="lazy" />
+
+- Przewiń do dołu strony.
+- Kliknij <code className="action">Usuń</code>, aby rozpocząć usuwanie.
+- Zdecyduj, czy chcesz usunąć konto tylko w tym urządzeniu, czy też w innych urządzeniach korzystających z Outlook.
+
+<img className="thumbnail" alt="outlook" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/configuration-newoutlook-windows-05.png" loading="lazy" />
+
+:::tip[Success]
+Po usunięciu konta e-mail, postępuj zgodnie z instrukcjami w sekcji "[Dodanie konta](#add-account)" tej dokumentacji.
+
+:::
+
+
+### Ogólne ustawienia wysyłania i odbierania <a name="settings-account"></a>
+
+#### Ustawienia odbierania IMAP i POP <a name="imap-pop"></a>
+
+Do odbierania e-maili, podczas wyboru typu konta, zalecamy użycie **IMAP**. Możesz również wybrać **POP**.
+
+:::warning
+Należy wprowadzić wartość odpowiadającą Twojej lokalizacji (**EUROPA** lub **AMERYKA/ASIA-PACIFIK**).
+
+:::
+
+
+Wybierz odpowiednią zakładkę dla swojej konfiguracji:
+
+<Tabs>
+  <Tab label="Konfiguracja IMAP">
+    - **Nazwa użytkownika**: Wprowadź pełny adres e-mail.
+    - **Hasło**: Wprowadź hasło do adresu e-mail.
+    - **Serwer EUROPA (przychodzący)**: imap.mail.ovh.net **lub** ssl0.ovh.net.
+    - **Serwer AMERYKA/ASIA-PACIFIK (przychodzący)**: imap.mail.ovh.ca.
+    - **Port**: 993.
+    - **Typ zabezpieczenia**: SSL/TLS.
+  </Tab>
+  <Tab label="Konfiguracja POP">
+    - **Nazwa użytkownika**: Wprowadź pełny adres e-mail.
+    - **Hasło**: Wprowadź hasło do adresu e-mail.
+    - **Serwer EUROPA (przychodzący)**: pop.mail.ovh.net **lub** ssl0.ovh.net.
+    - **Serwer AMERYKA/ASIA-PACIFIK (przychodzący)**: pop.mail.ovh.ca.
+    - **Port**: 995.
+    - **Typ zabezpieczenia**: SSL/TLS.
+  </Tab>
+</Tabs>
+
+
+#### Ustawienia wysyłania SMTP <a name="smtp"></a>
+
+Do wysyłania e-maili, poniżej znajdziesz parametry **SMTP** do użycia:
+
+**Konfiguracja SMTP**
+
+- **Nazwa użytkownika**: Wprowadź pełny adres e-mail.
+- **Hasło**: Wprowadź hasło do adresu e-mail.
+- **Serwer EUROPA (wychodzący)**: smtp.mail.ovh.net **lub** ssl0.ovh.net.
+- **Serwer AMERYKA/ASIA-PACIFIK (wychodzący)**: smtp.mail.ovh.ca.
+- **Port**: 465.
+- **Typ zabezpieczenia**: SSL/TLS.
+
+## Sprawdź również <a name="go-further"></a>
+
+:::info
+Więcej informacji na temat konfiguracji adresu e-mail w kliencie pocztowym Nouvel Outlook na Windows można znaleźć w [centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+
+:::
+
+
+[Podstawy korzystania z oferty MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-generalities/)
+
+[Podstawy korzystania z oferty Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

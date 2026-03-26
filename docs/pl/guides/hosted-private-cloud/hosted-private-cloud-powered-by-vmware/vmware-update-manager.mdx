@@ -1,0 +1,129 @@
+---
+title: VMware Update Manager
+description: Dowiedz się, jak korzystać z VMware Update Manager
+lastUpdated: 2021-12-09
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Menedżer aktualizacji oprogramowania VMware pozwala na aktualizację hostów poprzez instalację *Bug Fixes* i Patchs bezpieczeństwa bez interwencji naszych zespołów.     
+
+:::info
+Aktualizacje vCenter lub ważne aktualizacje wymagają zawsze naszego zaangażowania.
+
+:::
+
+
+**Niniejszy przewodnik wyjaśnia, jak narzędzie działa**
+
+## Wymagania początkowe
+
+- Posiadanie kontaktu administratora [Hosted Private Cloud Infrastructure](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
+- Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla NSX (utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl))
+
+## W praktyce
+
+### Maintenance Mode
+
+Przed rozpoczęciem pracy na hoście należy uruchomić go w trybie konserwacji.    
+Załadowanie patchera powoduje w większości przypadków restartowanie hosta, co ogranicza wpływ na VM produkcyjne. 
+
+W menu interfejsu vSphere przejdź do dashboardu <code className="action">Hosts and Clusters</code>.
+
+<img className="thumbnail" alt="Konserwacja" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en01menu.png" loading="lazy" />
+
+Po lewej stronie ekranu kliknij prawym przyciskiem myszy na hosta. W sekcji <code className="action">Maintenance Mode</code> wybierz <code className="action">Enter Maintenance Mode</code>.
+
+<img className="thumbnail" alt="Konserwacja" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en02maintenance.png" loading="lazy" />
+
+Upewnij się, że kratka jest zaznaczona na kolejnym etapie, po czym kliknij <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Konserwacja" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en03enter.png" loading="lazy" />
+
+Zakładając, że DRS jest aktywny, maszyny produkcyjne zostaną przeniesione na inny host.
+
+:::info
+Jeśli masz ustawiony spersonalizowane środowisko, możesz ręcznie wykonać migrację wirtualnych maszyn.
+
+:::
+
+
+Może pojawić się następujące ostrzeżenie:     
+
+<img className="thumbnail" alt="Konserwacja" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en04warning.png" loading="lazy" />
+
+Twój host znajduje się wówczas w trybie konserwacji.
+
+<img className="thumbnail" alt="Konserwacja" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en05maintenanced.png" loading="lazy" />
+
+### Update Manager
+
+Wybierz host i przejdź do sekcji <code className="action">Update</code>.
+Widzicie różne podstawowe statusy i zgodność hosta.     
+
+Będziesz musiał zastosować "linię podstawową", aby sprawdzić zgodność.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en06summary.png" loading="lazy" />
+
+W sekcji `Attached Baselines` kliknij <code className="action">Attach</code>, a następnie <code className="action">Attach Baseline or Baseline Group</code>.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en07attach.png" loading="lazy" />
+
+Istnieją wstępnie zdefiniowane linie bazowe dla poszczególnych zalecanych poziomów poprawek.
+
+:::info
+W naszym przykładzie używamy krytycznych poprawek, ale możesz użyć dwóch istniejących linii lub utworzyć inne, aby zaspokoić różne potrzeby środowiska.
+
+:::
+
+
+Wybierz wymaganą linię podstawową i kliknij <code className="action">Attach</code>.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en08define.png" loading="lazy" />
+
+Streszczenie zgodności zostaje zaktualizowane.     
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en09noncompliant.png" loading="lazy" />
+
+Wróć do sekcji `Attached Baselines`, wybierz wszystkie przydzielone linie bazowe i kliknij <code className="action">Stage</code> pośrednie.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en10bisstage.png" loading="lazy" />
+
+Wybierz host i kliknij ponownie <code className="action">Stage</code>.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en10terstagea.png" loading="lazy" />
+
+Proces transferu rozpoczyna się i będzie trwał w zależności od liczby i rozmiaru poprawek.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en10terstage.png" loading="lazy" />
+
+Zawsze w sekcji `Attached Baselines`, wybierz wszystkie przydzielone linie bazowe i kliknij <code className="action">Remediate</code>.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en10remediate.png" loading="lazy" />
+
+Wybierz host i kliknij ponownie <code className="action">Remediate</code>.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en11remediate.png" loading="lazy" />
+
+Proces aktualizacji rozpoczyna się i będzie trwał w zależności od liczby i rozmiaru zastosowanych poprawek.<br/>
+W razie potrzeby host zostanie automatycznie zrestartowany.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en12remediating.png" loading="lazy" />
+
+Po zakończeniu procesu weryfikacja zgodności zostanie wznowiona (lub może zostać wymuszona przez kliknięcie linku) i pojawi się zielony zaznaczyć.
+
+<img className="thumbnail" alt="Update" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-update-manager/en13compliant.png" loading="lazy" />
+
+Twój host jest teraz zaktualizowany.    
+
+Pamiętaj, aby wyłączyć go z trybu konserwacji i wróci do produkcji.
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

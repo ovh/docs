@@ -1,0 +1,80 @@
+---
+title: How to identify your database server
+description: Discover how to find the name of the server hosting your shared database, accessible with your web hosting
+lastUpdated: 2026-02-12
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+During the use of your services, you may need to know the name of the SQL server on which your database is located (either included or ordered as an additional service via your [web hosting](https://www.ovhcloud.com/en-gb/web-hosting/)).
+
+:::warning
+This guide does not apply to databases hosted on a [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) solution.
+
+:::
+
+
+**Discover how to find the name of the server hosting your shared database, accessible with your web hosting.**
+
+## Requirements
+
+- An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- A database included or [ordered as an additional service](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) via your web hosting
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Hosting plans</code> > Select your web hosting plan
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instructions
+
+Click on the tabs below to view each of the **3** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting) page, then select the web hosting plan concerned.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    On the page that pops up, click on the <code className="action">Databases</code> tab.
+    
+    <img className="thumbnail" alt="Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    In the table, locate the **Server** column.
+    
+    <img className="thumbnail" alt="database-server" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/databases/tab.png" loading="lazy" />
+
+For the relevant database, you will find the name of the SQL server (e.g., **mysqlXXX.euXXX**) in this column, on which your shared database is hosted.
+    
+    :::warning
+    Do not confuse the **Server** with the **Server address**:
+    
+    - The **Server address** is part of the login credentials specific to your database and allows your website to connect to it.
+    - The **Server** represents the infrastructure hosting your database, as well as other databases. The server name allows you to check whether it is affected by a maintenance operation or an incident reported on our [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) page.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+## Go further <a name="go-further"></a>
+
+[Troubleshooting common database errors](/guides/web-cloud/web-hosting/diagnosis-database-errors/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

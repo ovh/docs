@@ -1,0 +1,188 @@
+---
+title: OPCP - How to install an instance from the Horizon interface
+description: Learn how to install an OPCP instance via Horizon by configuring networks, subnets, instances, and SSH keys.
+lastUpdated: 2025-11-10
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+Before deploying services on your **OPCP** arrays, you must have an installed and active instance.
+
+This guide details the steps to install an OPCP instance from the **Horizon** interface.
+
+## Requirements
+
+- Have an active [OPCP](https://www.ovhcloud.com/en-gb/hosted-private-cloud/onprem-cloud-platform/) service.
+- Have a **user account** with sufficient permissions to access Horizon for the OPCP offer.
+
+## Instructions
+
+### 1. Log in to Horizon
+
+Log in to the **Horizon** interface of your OPCP environment.
+
+<img className="thumbnail" alt="horizon-interface" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/01-log-to-horizon-step01.png" loading="lazy" />
+
+Once connected, select the **project** where you want to install your instance.
+
+<img className="thumbnail" alt="horizon-select-project" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/01-log-to-horizon-step02.png" loading="lazy" />
+
+### 2. Creating a private network
+
+Before deploying your instance, it is generally necessary to create a **private network** so that it can be accessed within your local infrastructure.
+
+In the left-hand menu, click on <code className="action">Network</code>, then on <code className="action">Networks</code>.
+
+<img className="thumbnail" alt="horizon-network-networks" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/02-create-network-step01.png" loading="lazy" />
+
+Click on <code className="action">Create Network</code>.
+
+<img className="thumbnail" alt="horizon-network-networks" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/02-create-network-step02.png" loading="lazy" />
+
+<Tabs>
+  <Tab label="Network">
+    <img className="thumbnail" alt="horizon-network-setup-network" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/02-create-network-setup-network.png" loading="lazy" />
+    
+    | Field | Description |
+    |--------|--------------|
+    |**Network Name**|Enter a name for your network.|
+    |**Enable Admin State**|Leave this option checked to activate the network.|
+    |**Shared**|Check this box if you want to make the network available to multiple projects.|
+    |**Create Subnet**|Leave this option checked to create a subnet.|
+    |**Availability Zone Hints**|Leave the default value.|
+  </Tab>
+  <Tab label="Subnet">
+    <img className="thumbnail" alt="horizon-network-setup-subnet" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/02-create-network-setup-subnet.png" loading="lazy" />
+    
+    :::info
+     Although it is possible to create a network without a subnet, it cannot be attached to an instance unless it has one.
+
+    :::
+
+    
+    | Field | Description |
+    |--------|--------------|
+    |**Subnet Name**|Enter a name for your subnet.|
+    |**Network Address**|Define a private IP range, for example `192.168.100.0/24`.|
+    |**IP Version**|Leave the default value **IPv4**.|
+    |**Gateway IP**|Optional. If not specified, an address will be automatically selected.|
+    |**Disable Gateway**|Check this box to not assign a gateway address.|
+  </Tab>
+  <Tab label="Subnet Details">
+    <img className="thumbnail" alt="horizon-network-setup-subnet" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/02-create-network-setup-subnet-details.png" loading="lazy" />
+    
+    | Field | Description |
+    |--------|--------------|
+    |**Enable DHCP**|Keep enabled if you want IP addresses to be automatically assigned.|
+    |**Allocation Pools**|Optional. Allows you to define a specific IP address range.|
+    |**DNS Name Servers**|Optional. Lets you specify one or more DNS servers.|
+    |**Host Routes**|Optional. Allows you to add static routes.|
+  </Tab>
+</Tabs>
+
+
+### 3. Creating an instance
+
+In the left-hand menu, click on <code className="action">Compute</code>, then on <code className="action">Instances</code>.<br/><br/>
+<img className="thumbnail" alt="horizon-compute-instances" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-step01.png" loading="lazy" />
+
+Click on <code className="action">Launch Instance</code> to create a new instance.<br/><br/>
+<img className="thumbnail" alt="horizon-compute-instances-launch-instance" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-step02.png" loading="lazy" />
+
+#### Details
+
+<img className="thumbnail" alt="horizon-compute-instances-launch-instance-details" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-details.png" loading="lazy" />
+
+| Field | Description |
+|--------|--------------|
+|**Instance Name**|Enter the name of the instance to create.|
+|**Description**|Optional. Add a description if needed.|
+|**Availability Zone**|Leave the default value **nova**.|
+|**Count**|Specify the number of instances to deploy.|
+
+#### Source
+
+<img className="thumbnail" alt="horizon-compute-instances-launch-instance-source" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-source.png" loading="lazy" />
+
+| Field | Description |
+|--------|--------------|
+|**Boot Source**|Select the boot source: *Image* or *Instance Snapshot*.|
+|**Image Name**|Choose the image to use (e.g. *Debian 12 BMPOD*).|
+
+#### Flavor
+
+<img className="thumbnail" alt="horizon-compute-instances-launch-instance-flavor" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-flavor.png" loading="lazy" />
+
+Select the appropriate **hardware configuration** (vCPU, memory, storage).
+
+#### Networks
+
+<img className="thumbnail" alt="horizon-compute-instances-launch-instance-network" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-networks.png" loading="lazy" />
+
+Select the **private network** previously created. You can also attach an existing **network port** from the *Network Ports* tab.
+
+### 4. Managing SSH key pairs
+
+:::warning
+Although selecting an SSH key in Horizon is not mandatory, it is **essential for connecting to the instance** once it has been created.
+
+:::
+
+
+<img className="thumbnail" alt="horizon-compute-instances-launch-instance-key-pairs" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-key-pairs.png" loading="lazy" />
+
+<Tabs>
+  <Tab label="Create a new key pair">
+    Click <code className="action">+ Create Key Pair</code> and fill in the following fields:
+    
+    | Field | Description |
+    |--------|--------------|
+    |**Key Pair Name**|Enter a name for the key.|
+    |**Key Type**| Select <code className="action">SSH Key</code>.|
+    
+    Next, click on <code className="action">Create Keypair</code>.
+    Copy the private key with **Copy Private Key to Clipboard**, then click on <code className="action">Done</code>.<br/><br/>
+    <img className="thumbnail" alt="horizon-compute-instances-launch-instance-key-pairs-create-step01" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-key-pairs-create-step01.png" loading="lazy" />
+
+The key is now selected by default. Click on <code className="action">Launch Instance</code> to start creating the instance.<br/><br/>
+    <img className="thumbnail" alt="horizon-compute-instances-launch-instance-key-pairs-create-step02" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-key-pairs-create-step02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Import an existing key">
+    Click on <code className="action">Import Key Pair</code> and fill in the following fields:
+    
+    | Field | Description |
+    |--------|--------------|
+    |**Key Pair Name**|Name of the key.|
+    |**Key Type**|Select **SSH Key**.|
+    |**Public Key**|Paste your public key or upload the corresponding file.|
+    
+    Click on <code className="action">Import Key Pair</code>.<br/><br/>
+    <img className="thumbnail" alt="horizon-compute-instances-launch-instance-key-pairs-import-step01" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-key-pairs-import-step01.png" loading="lazy" />
+
+The key is now selected by default. Click on <code className="action">Launch Instance</code> to start creating the instance.<br/><br/>
+    <img className="thumbnail" alt="horizon-compute-instances-launch-instance-key-pairs-import-step02" src="/images/hosted-private-cloud/opcp/how-to-setup-instance/03-create-instance-horizon-key-pairs-import-step02.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### 5. Other options
+
+The other configuration tabs (Security Groups, Configuration, Metadata, etc.) are not required for a standard installation.<br/>
+To learn more, refer to the [official OpenStack documentation](https://docs.openstack.org/).
+
+### 6. References
+
+- [OpenStack Official Documentation – Horizon](https://docs.openstack.org/horizon/latest/)
+- [OpenStack Networking Guide (Neutron)](https://docs.openstack.org/neutron/latest/)
+- [OpenStack Compute Guide (Nova)](https://docs.openstack.org/nova/latest/)
+- [OpenStack Key Pairs](https://docs.openstack.org/nova/latest/user/ssh-keys.html)
+- [Debian 12 Official Site](https://www.debian.org/releases/book/)
+
+## Go further
+
+If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](https://www.ovhcloud.com/en-gb/professional-services/) to request a quote and have your project analyzed by our Professional Services team experts.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

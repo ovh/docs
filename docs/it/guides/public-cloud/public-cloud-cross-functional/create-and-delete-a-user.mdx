@@ -1,0 +1,109 @@
+---
+title: Gestione degli utenti OpenStack
+description: Scopri come gestire gli utenti OpenStack nello Spazio Cliente OVHcloud e nell’interfaccia Horizon
+lastUpdated: 2025-04-28
+---
+
+## Obiettivo
+
+L’accesso a Horizon e alle API OpenStack avviene tramite combinazioni identificativo/password chiamate "*OpenStack users*". Potrete creare tutti gli utenti OpenStack che vi servono e attribuire loro diversi diritti di accesso.
+
+Dall’interfaccia Horizon, è possibile impostare una password per ogni utente. Attenzione: la modifica della password di un account utente comporta la revoca immediata della password precedente.
+
+**Questa guida ti mostra come gestire gli utenti OpenStack dallo Spazio Cliente OVHcloud e tramite l’interfaccia Horizon.**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+## Prerequisiti
+
+- Un progetto [Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) nel tuo account OVHcloud
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Percorso di navigazione:** <code className="action">Public Cloud</code> > Seleziona il tuo project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedura
+
+### Crea un utente OpenStack
+
+Clicca su <code className="action">Utenti e ruoli</code> nel menu a sinistra sotto **Impostazioni**.
+
+Clicca sul pulsante <code className="action">Crea un utente</code>.
+
+<img className="thumbnail" alt="User roles" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/users_roles.png" loading="lazy" />
+
+La descrizione dell'utente non è il nome utente OpenStack ma una descrizione da inserire per aiutarti a organizzare gli utenti e i loro diritti. Inserisci una descrizione e clicca su <code className="action">Seguente</code>.
+
+<img className="thumbnail" alt="Add user" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/adduser.png" loading="lazy" />
+
+Adesso puoi selezionare ruoli che rappresentano le autorizzazioni che l'utente otterrà. Per ogni casella selezionata, l'utente otterrà privilegi di accesso in base alla tabella qui sotto.
+
+<img className="thumbnail" alt="Permessi" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/permissions.png" loading="lazy" />
+
+Clicca su <code className="action">Conferma</code> per creare l'utente OpenStack. L'identificativo e la password vengono generati automaticamente e visualizzati nello Spazio Cliente.
+
+<img className="thumbnail" alt="User_pw" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/user_pw.png" loading="lazy" />
+
+Salva la password, solo visualizzata in verde in quel momento, su un gestore di password. La password non potrà essere recuperata in seguito. Tuttavia, è sempre possibile creare una nuova password cliccando su <code className="action">...</code> e selezionando <code className="action">Rigenerare una password</code>.
+
+<img className="thumbnail" alt="Generate" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/generatepw.png" loading="lazy" />
+
+Una volta creato l'utente OpenStack, puoi utilizzare le credenziali per accedere all'[interfaccia Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/) cliccando sul link <code className="action">Horizon</code> nel menu di sinistra.
+
+### Modificare la password di un utente OpenStack
+
+Puoi creare una password OpenStack dopo esserti collegato a [OpenStack Horizon](https://horizon.cloud.ovh.net/): 
+
+<img className="thumbnail" alt="Connessione a Horizon" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/1_H_login_window.png" loading="lazy" />
+
+Il nome utente Horizon si trova nell’angolo in alto a destra dell’interfaccia Horizon. Clicca sul tuo nome utente per far apparire un menu con le opzioni disponibili. Seleziona <code className="action">Settings</code> e poi, sulla sinistra, <code className="action">Change Password</code>.
+
+<img className="thumbnail" alt="Modifica della password" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/2_H_pass_change_option.png" loading="lazy" />
+
+Inserisci la password attuale nel primo campo e la nuova password nei due campi successivi.
+
+:::info
+è necessario che la nuova password abbia la seguenti caratteristiche: 
+
+- un minimo di 8 caratteri
+- un massimo di 30 caratteri
+- almeno una lettera maiuscola 
+- almeno una lettera minuscola
+- almeno un numero
+- solo numeri e lettere
+
+:::
+
+
+Successivamente conferma la tua nuova password cliccando su <code className="action">Change</code>.
+
+<img className="thumbnail" alt="Impostazione password" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/3_H_set_new_passord.png" loading="lazy" />
+
+Ricorda che la modifica della password dell’account utente comporta l’annullamento immediato delle precedenti credenziali.
+
+### Elimina l'utente OpenStack
+
+Clicca su <code className="action">Utenti e ruoli</code> nel menu a sinistra sotto **Impostazioni**.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/delete.png" loading="lazy" />
+
+Clicca su <code className="action">...</code> e seleziona <code className="action">Elimina</code>.
+
+:::warning
+L'eliminazione di un utente è definitiva e invaliderà tutti i token associati, inclusi quelli la cui data di scadenza non è ancora stata superata.
+
+:::
+
+
+## Per saperne di più
+
+[Introduzione a Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

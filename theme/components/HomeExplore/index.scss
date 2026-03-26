@@ -1,0 +1,57 @@
+.rp-home-explore {
+  margin: 0.5rem auto;
+  padding: 0 1.5rem;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--rp-c-text-1); /* #f2f2f2; /* var(--rp-c-brand);*/
+    margin-bottom: 1.5rem;
+    padding-left: 0.25rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    > * {
+      flex: 1;
+      min-width: 0;
+    }
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+
+      > * {
+        flex: 1 1 calc(33.33% - 1rem);
+      }
+    }
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+
+      > * {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

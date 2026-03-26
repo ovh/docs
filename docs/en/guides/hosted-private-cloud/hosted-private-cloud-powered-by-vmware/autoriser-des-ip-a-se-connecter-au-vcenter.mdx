@@ -1,0 +1,42 @@
+---
+title: Authorising IP addresses for vCenter access
+description: Find out how to manage IP address access restrictions for vCenter
+lastUpdated: 2023-01-25
+---
+
+## Objective
+
+Access to your vCenter is restricted only to authorized IP addresses.
+
+**This guide explains how to authorise IP addresses for vCenter access in the OVHcloud Control Panel.**
+
+## Requirements
+
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+
+## Instructions
+
+Log into your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Switch to the <code className="action">Hosted Private Cloud</code> tab and click again on <code className="action">Hosted Private Cloud</code> to the left. 
+
+Select your infrastructure and go to the <code className="action">Security</code> tab.
+
+Click <code className="action">Add a new IP address range</code>.
+
+<img className="thumbnail" alt="vCenter" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/autoriser-des-ip-a-se-connecter-au-vcenter/restrictIP.JPG" loading="lazy" />
+
+In the new Window, enter an IP address (range) that should be allowed access. You can also add a description to make the organisation of the whitelist easier.
+
+<img className="thumbnail" alt="vCenter" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/autoriser-des-ip-a-se-connecter-au-vcenter/restrictIP2.JPG" loading="lazy" />
+
+Click on <code className="action">Next</code> when you have filled in the fields, then click on <code className="action">Confirm</code> to apply your changes. Connections from this IP address (range) will now be possible.
+
+:::info
+Please note that for security reasons, you will only be able to allow a maximum of 2048 IP addresses to connect to your vCenter.
+
+:::
+
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

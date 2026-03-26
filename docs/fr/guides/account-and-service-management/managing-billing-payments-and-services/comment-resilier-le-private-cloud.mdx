@@ -1,0 +1,92 @@
+---
+title: Comment résilier votre offre Private Cloud
+description: "Découvrez comment demander la résiliation d'une infrastructure Private cloud"
+lastUpdated: 2020-07-08
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+Si votre offre Private Cloud ne vous convient plus, ou que vous avez commandé une nouvelle infrastructure pour remplacer l'ancienne, vous pouvez demander la résiliation de cette infrastructure, une fois toutes vos données récupérées.
+
+**Découvrez comment demander la résiliation d'une offre Private Cloud** 
+
+## Prérequis
+
+- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+
+{/* CP-NAV-START:privatecloud-vmware-vsphere */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](https://manager.eu.ovhcloud.com/#/dedicated/dedicated_cloud)
+- **Pour accéder à vos services :** <code className="action">Hosted Private Cloud</code> > <code className="action">Managed VMware vSphere</code> > Sélectionnez votre service vSphere
+
+---
+{/* CP-NAV-END:privatecloud-vmware-vsphere */}
+
+## En pratique
+
+L'offre Private Cloud est sans engagement. Cependant, comme indiqué dans les [Conditions Particulières du Service](http://www.ovh.com/fr/support/documents_legaux/conditions_particulieres_dedicated_cloud_2014.pdf), tout mois commencé est dû et payable d’avance.
+
+:::warning
+Avant de résilier votre offre, veuillez prendre garde à récupérer toutes les données que vous souhaitez conserver. En effet, la résiliation entrainera la suppression intégrale de votre Private Cloud et toutes les données qu'il contient.
+
+:::
+
+
+### Étape 1 : demander la résiliation depuis l'espace client OVHcloud
+
+Dans le tableau « Gestion du service » de l'onglet <code className="action">Informations Générales</code>, cliquez sur le bouton <code className="action">...</code> (4) à droite de la date de renouvellement. Cliquez enfin sur <code className="action">Supprimer le service</code> (5).
+
+<img className="thumbnail" alt="resiliation depuis l'espace client" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation1.png" loading="lazy" />
+
+> Pour les offres Private Cloud antérieures, la demande de résiliation se fait de la manière suivante: 
+>
+> Toujours dans l'onglet <code className="action">Informations Générales</code>, cliquez sur le bouton <code className="action">...</code> à droite du nom de votre Private Cloud dans le tableau « Informations Générales ». Cliquez ensuite sur <code className="action">Supprimer mon service</code>.
+>
+> <img className="thumbnail" alt="resiliation depuis l'espace client" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation1bis.png" loading="lazy" />
+>
+
+Prenez alors connaissance du fait que cette action supprimera toute donnée présente sur l'infrastructure dès la confirmation de la résiliation. Aucun remboursement au prorata ne sera effectué si l'infrastructure est résiliée avant la fin du mois.
+
+Cliquez sur <code className="action">Valider</code> pour demander la résiliation.
+
+<img className="thumbnail" alt="validation resiliation" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation2.png" loading="lazy" />
+
+Une notification de confirmation de votre demande vous sera alors présentée. La procédure de confirmation de la résiliation vous est envoyée par e-mail, à l'adresse liée au compte OVHcloud.
+
+<img className="thumbnail" alt="validation resiliation" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation3.png" loading="lazy" />
+
+### Étape 2 : confirmer la résiliation
+
+Suite à votre demande, un e-mail de confirmation de résiliation vous est envoyé à l'adresse liée au compte OVHcloud. 
+
+Vous pouvez également retrouver cet e-mail dans votre espace client OVHcloud. Cliquez sur votre nom en haut à droite puis sur <code className="action">E-mails de service</code>.
+
+<img className="thumbnail" alt="validation resiliation" src="/images/assets/screens/control-panel/product-selection/right-menu/my-messages.png" loading="lazy" />
+
+L'objet de l'e-mail est :
+
+> **Suppression de votre Private Cloud pcc-xxx-xxx-xxx-xxx**".
+
+L'e-mail contient un lien cliquable qui vous permettra de confirmer la résiliation de votre offre.
+
+:::info
+Attention, ce lien est valable pendant **72 heures**. Nous vous conseillons donc de formuler votre demande de résiliation à partir du 25 du mois.
+
+:::
+
+
+Vous pouvez également valider la demande de résiliation via l'API OVHcloud suivante :
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/confirmTermination"} />
+
+Vous devrez alors renseigner le token de validation disponible dans l'e-mail de confirmation de résiliation.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

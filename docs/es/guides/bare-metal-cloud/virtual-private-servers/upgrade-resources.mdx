@@ -1,0 +1,148 @@
+---
+title: Cómo escalar los recursos de un VPS
+description: Cómo escalar la RAM, la vCPU o el almacenamiento desde el área de cliente
+lastUpdated: 2025-09-08
+---
+
+
+
+## Objetivo
+
+Nuestros servicios VPS ofrecen flexibilidad, fiabilidad y rendimiento para una variedad de necesidades de alojamiento. Puede actualizar su RAM, vCPU o almacenamiento en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+**Descubra cómo añadir vCores, memoria y almacenamiento a su servicio VPS.**
+
+## Requisitos
+
+- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en el área de cliente de OVHcloud
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Ruta de navegación:** <code className="action">Bare Metal Cloud</code> > <code className="action">Servidores privados virtuales</code> > Seleccione su VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+## Procedimiento
+
+:::info
+Las opciones de actualización disponibles en el área de cliente dependen de la gama y el modelo del VPS seleccionado. Las siguientes capturas de pantalla se ofrecen a modo de ilustración y no hacen referencia a un escenario concreto de actualización del VPS.
+
+:::
+
+
+A partir de ahí, podrá actualizar sus vCores (`1`), su memoria (`2`) o su almacenamiento (`3`).
+
+<img className="thumbnail" alt="Actualizar recursos" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade01.png" loading="lazy" />
+
+### 1. Para añadir **vCores**
+
+En la pestaña **Inicio** del panel **Su configuración**, haga clic en <code className="action">Añadir vCores pasando a la gama superior</code>.
+
+Elija una nueva plantilla y haga clic en <code className="action">Siguiente</code>.
+
+<img className="thumbnail" alt="Actualizar recursos" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade02.png" loading="lazy" />
+
+Elija las opciones de memoria y almacenamiento y haga clic en <code className="action">Siguiente</code>.
+
+<img className="thumbnail" alt="Actualizar recursos" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade03.png" loading="lazy" />
+
+Acepte (<code className="action">✓</code>) los **términos del contrato** y haga clic en <code className="action">Siguiente</code>.
+
+<img className="thumbnail" alt="Actualizar recursos" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade04.png" loading="lazy" />
+
+Revise los cambios y haga clic en <code className="action">Contratar</code>.
+
+<img className="thumbnail" alt="Actualizar recursos" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade05.png" loading="lazy" />
+
+### 2. Para actualizar **Memoria**
+
+En la pestaña **Inicio** del panel **Su configuración**, haga clic en la cantidad de memoria que desea. Las opciones disponibles dependen de la gama de VPS que tenga actualmente.
+
+En la ventana emergente, haga clic en <code className="action">Confirmar y pagar</code> para finalizar el pedido.
+
+<img className="thumbnail" alt="Actualizar recursos" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade06.png" loading="lazy" />
+
+### 3. Para actualizar el **Almacenamiento**
+
+En la pestaña **Inicio** del panel **Su configuración**, haga clic en la cantidad de almacenamiento que desea. Las opciones disponibles dependen de la gama de VPS que tenga actualmente.
+
+En la ventana emergente, haga clic en <code className="action">Confirmar y pagar</code> para finalizar el pedido.
+
+<img className="thumbnail" alt="Actualizar recursos" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade07.png" loading="lazy" />
+
+Consulte nuestra guía dedicada para: [Cómo reparticionar un VPS tras una actualización de almacenamiento](/guides/bare-metal-cloud/virtual-private-servers/upsize-vps-partition/)
+
+## FAQ
+
+<details>
+
+<summary>¿Conservaré la misma dirección IP?</summary>
+
+
+Sí, conservará la misma dirección IP tras la actualización de su VPS.
+
+</details>
+
+
+<details>
+
+<summary>¿Conservaré mis datos en el servidor?</summary>
+
+
+Sí, después de una actualización, conservará los datos. Cuando actualice el disco, es posible que tenga que extender las particiones.
+
+</details>
+
+
+<details>
+
+<summary>¿Qué ocurre con la copia de seguridad o el snapshot? ¿Puedo utilizarlo en el nuevo VPS?</summary>
+
+
+Sí. Tras las actualizaciones, seguirá teniendo acceso a sus copias de seguridad y snapshots.
+
+</details>
+
+
+<details>
+
+<summary>¿Qué ocurre con la licencia de software en el VPS antiguo? ¿Puedo moverla automáticamente al nuevo VPS?</summary>
+
+
+Si tiene una licencia activa, permanecerá asociada al VPS. El precio puede cambiar en función del acuerdo de licencia o los requisitos del proveedor.  
+Si se realizan cambios en la licencia, estos se explicarán antes de actualizar el VPS.
+
+</details>
+
+
+<details>
+
+<summary>¿La tasa de transferencia cambia?</summary>
+
+
+En algunos casos, la tasa de transferencia puede cambiar, por ejemplo, al pasar de un VPS de nivel inferior al superior.
+
+</details>
+
+
+<details>
+
+<summary>¿Esta actualización sería inmediata o tendré tiempo para utilizar ambas al mismo tiempo (configurar, transferir datos, etc.)?</summary>
+
+
+La actualización será efectiva inmediatamente, conservando todos sus datos. La actualización asignará más recursos a su VPS existente.
+
+</details>
+
+
+
+## Más información
+
+[FAQ VPS](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

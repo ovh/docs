@@ -1,0 +1,76 @@
+---
+title: Creating automatic signatures
+description: Find out how to add automatic signatures to your email accounts
+lastUpdated: 2025-04-28
+---
+
+## Objective
+
+In the OVHcloud Control Panel, you can create universal signatures (footers) for email addresses using the same domain ("corporate" signature). They will be attached automatically to emails sent from a user's account.
+
+**This guide explains how to create an automatic signature using the OVHcloud Control Panel.**
+
+## Requirements
+
+- an [OVHcloud Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) solution already set up
+
+{/* CP-NAV-START:web-exchange */}
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### OVHcloud Control Panel Access
+
+**Exchange:**
+
+- **Direct link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Select your platform
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-exchange */}
+
+## Instructions
+
+Click on the <code className="action">More+</code> tab in the horizontal menu and select <code className="action">Footers</code>.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step1.png" loading="lazy" />
+
+In this section you will see your attached domains, for each of which you can create a footer scheme. Click on <code className="action">...</code> and then on <code className="action">Configuration</code> to open the HTML editor.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step2.png" loading="lazy" />
+
+The editor offers a selection of variables that correspond to the user's data in their account settings. You can, for example, compose a generic closing message and add an appropriate sign-off or some contact information below it, using the variables. Click on the down-arrow to select a variable, then click <code className="action">Insert a variable</code> to add it into the editing pane.
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step3aag.gif" loading="lazy" />
+
+The footer is created using HTML tags, which allow for some formatting options. Use the tool bar on the top to customise the signature. You can also verify the HTML code by clicking on <code className="action">Source</code>.
+ 
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step4.png" loading="lazy" />
+
+Tick the box "Enable the signature for outgoing mail only" to prevent adding this footer to emails sent between users on the same domain. Click <code className="action">Confirm</code> once the signature is finished. It will now be attached to emails sent from this domain's user accounts. You can edit or delete signatures in the OVHcloud Control Panel after they are created.
+
+Please take the following specifics into consideration before applying signatures for users:
+
+- Apart from "First name", "Surname", and "Display name", the account details cannot be edited from the OVHcloud Control Panel but need to be specified in the user's OWA ("Options", "General", "My account").
+
+<img className="thumbnail" alt="exchangesig" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/exchange-footer-step5.png" loading="lazy" />
+
+- The signature will be added to the email's body without gap, meaning it is advisable to begin the signature with at least one empty line.
+- It is not indicated in OWA whether a footer is enabled on this domain and there is **no synchronisation**. If users add their [own signatures](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa#adding-a-signature/), emails will include both the individual and the domain-wide footer.
+- The editor supports HTML formatting, hyperlinks, images, etc. However, signatures should not rely on these options too heavily. Recipients may use email clients that prevent HTML and embedded images, or the signatures will appear in a different way than intended. Note that HTML tags will be completely removed if a message is sent as "Plain text" from OWA.
+- "Initials" are not active on the service. Adding this variable will have no effect.
+
+## Go further <a name="go-further"></a>
+
+[Using the Outlook Web App with an Exchange account](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Delegating permissions on an email account](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[How to share calendars via OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,62 @@
+---
+title: Se connecter à l’interface vSphere
+description: Découvrez les différentes façons de se connecter à vSphere
+lastUpdated: 2020-11-18
+---
+
+## Objectif
+
+**Ce guide vous présente les différentes façons de se connecter à vSphere.**
+
+## Prérequis
+
+- Être contact administrateur du Managed Bare Metal, celui-ci recevant les identifiants de connexion.
+- Avoir créé un utilisateur actif dans l'espace client.
+
+## En pratique
+
+### Récupération des identifiants
+
+Les identifiants sont envoyés par e-mail durant la création du Managed Bare Metal, lors d’une modification du mot de passe ou à la création d’un utilisateur :
+
+```
+adresse IP/Nom : pcc-xxx-xxx-xxx-xxx.ovh.com nom d’utilisateur : admin mot de passe : xxxxxx
+```
+
+Ce document de VMware répertorie les différents ports que vous devez ouvrir sur votre pare-feu pour, par exemple, accéder à la console : [Accès console](https://kb.vmware.com/kb/1012382)
+
+### Utilisation du web client HTML5
+
+Le web client HTML5 est disponible sur l’interface web de votre Managed Bare Metal à l’adresse : `https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui` (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Managed Bare Metal).
+
+<img className="thumbnail" alt="Connexion à l'interface vSphere HTML5" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-interface/connection_interface_w_html5.png" loading="lazy" />
+
+Vous accéderez ensuite à cette interface :
+
+<img className="thumbnail" alt="Connexion à l'interface vSphere HTML5" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-interface/vsphere-client-html5.png" loading="lazy" />
+
+La page <code className="action">Home</code> permet de retrouver les grands menus de votre vCenter. Vous allez pouvoir effectuer différentes actions, telles que :
+
+- Déployer une machine virtuelle en allant dans <code className="action">Hosts and Clusters</code> ;
+- Parcourir vos datastores.
+
+### Utilisation du web client flash
+
+Le web client flash est disponible sur l’interface web de votre Managed Bare Metal à l’adresse : `https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client` (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Managed Bare Metal).
+
+Connectez-vous avec les identifiants qui vous ont été transmis :
+
+<img className="thumbnail" alt="Client vSphere" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-interface/vsphere-client.png" loading="lazy" />
+
+Vous accéderez ensuite à cette interface :
+
+<img className="thumbnail" alt="Connexion à l'interface vSphere" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-interface/connection_interface_w.png" loading="lazy" />
+
+La page <code className="action">Home</code> permet de retrouver les grands menus de votre vCenter. Vous allez pouvoir effectuer différentes actions, telles que :
+
+- Déployer une machine virtuelle en allant dans <code className="action">Hosts and Clusters</code> ;
+- Parcourir vos datastores.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

@@ -1,0 +1,197 @@
+---
+title: Creating an OVHcloud DNS zone for a domain name
+description: Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel
+lastUpdated: 2026-03-10
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions.
+
+For more information, please refer to our guides:
+
+- [Everything you need to know about DNS servers](/guides/web-cloud/domains/dns-server-general-information/)
+- [Everything you need to know about DNS zone](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Everything you need to know about DNS records](/guides/web-cloud/domains/dns-zone-records/)
+
+For a number of reasons, you may need to create a DNS zone for your domain name at OVHcloud.
+
+**This guide explains how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel.**
+
+## Requirements
+
+- You have administrative access to manage your domain name.
+- The domain name concerned does not already have an active or inactive DNS zone with OVHcloud, nor is it the subject of an operation or order in progress with OVHcloud.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">DNS zones</code> > Select your domain name
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## Instructions
+
+:::warning
+You can create multiple DNS zones (from different DNS/hosting providers) for the same domain name. However, you can only have one active DNS zone for your domain name. This restriction is designed to avoid *DNS conflicts*.
+
+You can activate/deactivate a DNS zone by declaring the **DNS servers** of your domain name. You can change this declaration and change the **DNS servers** of a domain name at: 
+
+- The *registrar* registered your domain name.
+- The service provider that manages it, if you use a specialised service provider to manage your domain name.
+
+By modifying the **DNS servers** of a domain name, you disable the configuration of the old DNS zone applied in favour of the configuration of the new DNS zone (present on the new **DNS servers** declared).
+
+Therefore, please check that the configuration of the new DNS zone meets your expectations before changing the **DNS servers** registered with your domain name.
+
+:::
+
+
+### 1 - Create the DNS zone via the OVHcloud Control Panel
+
+Click on the tabs below to view each of the **3** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone) page, then on the <code className="action">Order</code> button.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    On the page that appears, enter the domain name (for example: *domain.tld*) for which you want to create an OVHcloud DNS zone. Wait a few moments while the tool performs checks on the domain name.
+    
+    <img className="thumbnail" alt="dnszonecreate" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png" loading="lazy" />
+
+If a message indicates that the DNS zone cannot be created, check that the domain name meets the necessary requirements or contact the person who manages it. Once everything is correct, try the operation again.
+  </Tab>
+  <Tab label="Step 3">
+    Once the verification is complete, choose whether to enable the minimum records for the DNS zone you are going to create. This choice is not definitive, as you can always [edit DNS zone records](/guides/web-cloud/domains/dns-zone-edit/) later.
+    
+    <img className="thumbnail" alt="dnszonecreate" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png" loading="lazy" />
+    
+    |Enable minimal entries?|Details|
+    |---|---|
+    |Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.<br/><img className="thumbnail" alt="minimal-dns-entries" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png" loading="lazy" />|
+    |No|Select this option if you plan to use OVHcloud services as a [web hosting](https://www.ovhcloud.com/en-gb/web-hosting/), with the zone preconfigured for this purpose.<br/><img className="thumbnail" alt="no-minimum-dns-entries" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png" loading="lazy" />|
+    
+    Once your choice is made, follow the steps displayed in your OVHcloud Control Panel until the DNS zone is created.
+  </Tab>
+</Tabs>
+
+
+### 2 - Edit the DNS zone (optional)
+
+Now that your domain name’s DNS zone has been created, you can edit it. This step is optional, but it may be necessary if you want to ensure that the services associated with your domain name remain available (e.g. your website and/or emails).
+
+To edit this DNS zone, please read our guide on [Editing a DNS zone at OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+
+:::info
+If you have just created the DNS zone and the domain name does not yet appear in your list of services, wait 15 to 20 minutes, then reload the page.
+
+:::
+
+
+### 3 - Modify the domain name’s DNS servers
+
+Once the OVHcloud DNS zone is ready to be used, activate it by declaring the corresponding DNS servers. First, retrieve the names of the OVHcloud **DNS servers** on which your domain name’s DNS zone was created.
+
+To find them, click on the tabs below to view each of the **2** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [DNS zones](https://manager.eu.ovhcloud.com/#/web/zone) page, then choose the domain name concerned.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    In the table on the page that appears, locate the two **Type** and **Target** columns.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png" loading="lazy" />
+
+Find the two lines of type **NS** and retrieve the two values present in the **Target** column.
+    The names of the DNS servers should be in one of the following three forms:
+    
+    - `nsXX.ovh.net` and `dnsXX.ovh.net` or, `nsXXX.ovh.net` and `dnsXXX.ovh.net` (where each `X` represents a number between **0** and **9**).
+    - `nsXX.ovh.ca` and `dnsXX.ovh.ca` or, `nsXXX.ovh.ca` and `dnsXXX.ovh.ca` (where each `X` represents a number between **0** and **9**).
+    - `ns200.anycast.me` and `dns200.anycast.me` (if you have subscribed to the [DNS anycast](https://www.ovhcloud.com/en-gb/domains/options/) option).
+  </Tab>
+</Tabs>
+
+
+Once the two DNS server names have been retrieved, two situations are possible.
+
+:::info
+As a reminder, please check that the configuration of the new DNS zone meets your expectations before changing the **DNS servers** registered with your domain name.
+
+:::
+
+
+**Click on one of the two situations to display the content.**
+
+<details>
+
+<summary>The domain name has its active DNS zone with OVHcloud</summary>
+
+
+Refer to [this guide](/guides/web-cloud/domains/dns-server-edit/) to verify or modify the DNS servers registered for your domain name.
+
+</details>
+
+
+<details>
+
+<summary>The domain name has its active DNS zone with another provider</summary>
+
+
+In this specific case, contact your DNS provider and specify that you want to replace the NS-type DNS records for your domain name.
+
+Here is an example of a request to send to your DNS provider:
+
+<pre className="bgwhite"><code>
+Hello,
+
+For my domain name <b>domain.tld</b>, I would like to replace the current DNS servers with the following DNS servers:
+
+ - nsXX.ovh.net.
+ - dnsXX.ovh.net.
+
+Kind regards,
+</code></pre>
+
+In the example above, replace the values **domain.tld**, **nsXX.ovh.net** and **dnsXX.ovh.net** with your own values.
+
+</details>
+
+
+After modifying the domain name’s DNS servers, the propagation of changes may take up to **48 hours**.
+
+:::tip[Success]
+If you would like to customise the names of the DNS servers associated with your domain name’s active DNS zone, please read our guide "[Customising a domain name’s DNS servers (Glue Records)](/guides/web-cloud/domains/glue-registry/)".
+
+:::
+
+
+## Go further
+
+[Everything you need to know about DNS servers](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Everything you need to know about DNS zone](/guides/web-cloud/domains/dns-zone-general-information/)
+
+[Everything you need to know about DNS records](/guides/web-cloud/domains/dns-zone-records/)
+
+[Editing an OVHcloud DNS zone](/guides/web-cloud/domains/dns-zone-edit/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en). 

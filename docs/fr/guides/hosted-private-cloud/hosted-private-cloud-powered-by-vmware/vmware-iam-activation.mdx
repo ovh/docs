@@ -1,0 +1,95 @@
+---
+title: IAM pour VMware on OVHcloud - Comment activer IAM
+description: "Découvrez comment activer IAM pour votre offre VMware on OVHcloud via l'espace client OVHcloud ou par le biais de l'API OVHcloud"
+lastUpdated: 2024-05-23
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+**Ce guide vous détaille comment activer IAM avec Hosted Private Cloud - VMware on OVHcloud via l'espace client OVHcloud ou par le biais de l'API OVHcloud**.
+
+## Prérequis
+
+- Disposer d'un [compte OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+- Avoir un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware).
+
+## En pratique
+
+### Activer IAM
+
+:::info
+Cette opération peut prendre jusqu’à 30 minutes.
+
+:::
+
+
+### Via l'espace client OVHcloud
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur l'onglet <code className="action">Hosted Private Cloud</code>.
+
+Cliquez sur la rubrique <code className="action">VMware</code>, sélectionnez votre infrastructure puis rendez-vous dans l'onglet <code className="action">Utilisateurs</code>.
+
+Sous la section <code className="action">IAM OVHcloud</code>, cliquez sur <code className="action">Activer l'IAM OVHcloud</code>.
+
+<img className="thumbnail" alt="Activer IAM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-activation/iam_enable_2.png" loading="lazy" />
+
+:::tip[Success]
+Une fois IAM activé, son statut sera `Activé` (*Enabled*) et en vert.
+
+:::
+
+
+<img className="thumbnail" alt="Activer IAM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-activation/iam_enable_3.png" loading="lazy" />
+
+### Via l'API OVHcloud
+
+:::tip[Success]
+Consultez le guide [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+
+:::
+
+
+:::warning
+Veillez à remplacer le `serviceName` par la référence de votre service PCC, sous la forme `pcc-XXX-XXX-XXX-XXX`.
+
+:::
+
+
+Pour activer l'option IAM, exécutez l'appel API suivant :
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/iam/enable"} />
+
+
+#### Pour vérifier si IAM est activé
+
+Pour contrôler l'activation d'IAM, exécutez l'appel API suivant :
+
+<Api version="v1" section="/dedicatedCloud" method="GET" route={"/dedicatedCloud/\{serviceName\}/iam"} />
+
+Retour de l'API :
+
+```shell
+{
+  "state": "enabled",
+  "identityProviderId": 275
+}
+```
+
+## Aller plus loin
+
+Vous pouvez maintenant suivre le guide « [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role/) ».
+
+**IAM pour VMware on OVHcloud - Index des guides :**
+
+- Guide 1 : [IAM pour VMware on OVHcloud - Présentation et FAQ](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-getting-started/)
+- Guide 2 : IAM pour VMware on OVHcloud - Comment activer IAM
+- Guide 3 : [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role/)
+- Guide 4 : [IAM pour VMware on OVHcloud - Comment associer un rôle vSphere à une politique IAM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role-policy/)
+- Guide 5 : [IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-user-policy/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

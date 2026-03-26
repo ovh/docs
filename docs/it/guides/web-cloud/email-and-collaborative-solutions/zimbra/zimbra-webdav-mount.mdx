@@ -1,0 +1,177 @@
+---
+title: Zimbra - Configurare una cartella WebDAV sul tuo computer
+description: "Configura l'accesso WebDAV alla Malette Zimbra sul tuo computer per gestire e condividere i tuoi file direttamente dal tuo sistema"
+lastUpdated: 2026-02-10
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Obiettivo
+
+I conti e-mail Zimbra Pro dispongono di uno spazio di archiviazione, chiamato **Malette**, che si può utilizzare per scambiare file tramite la funzione WebDAV. Questa funzione è disponibile tramite il Webmail Zimbra e può essere configurata anche sul tuo computer per far apparire la Malette come un volume di archiviazione.
+
+**Scopri come montare una cartella WebDAV Zimbra sul tuo computer.**
+
+## Prerequisiti
+
+- Disporre di un indirizzo e-mail [Zimbra Pro](https://www.ovhcloud.com/it/emails/) OVHcloud.
+- Disporre di un computer Windows o macOS.
+- Possedere le credenziali relative all'indirizzo e-mail associato al conto Zimbra Pro interessato.
+
+## Procedura
+
+WebDAV (Web-based Distributed Authoring and Versioning) è un'estensione del protocollo HTTP che permette di gestire da remoto file su un server e di modificarli come se fossero locali.
+
+Lo spazio di archiviazione assegnato al tuo conto e-mail Zimbra è suddiviso tra le tue e-mail e i file presenti nella Malette. Ogni file caricato nella Malette Zimbra non può superare i 100 MB.
+
+In questa documentazione utilizzeremo l'indirizzo e-mail di esempio `john.smith@mydomain.ovh` e la cartella della Malette che monteremo sarà la cartella `Briefcase`, che è presente per default.
+
+### Montare una cartella da Windows
+
+Prima di poterti connettere alla tua cartella WebDAV dal file manager di Windows, è necessario abilitare e configurare i servizi necessari per la connessione a un volume WebDAV.
+
+#### 1. Abilitare il servizio WebClient
+
+<Tabs>
+  <Tab label="Passo 1">
+    - Apri <code className="action">Servizi</code> dal menu Start di Windows.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-services-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passo 2">
+    1. Individua il servizio **WebClient** nell'elenco.
+    2. Fai clic destro su **WebClient**, quindi clicca su <code className="action">Proprietà</code>.
+    3. Cambia il *Tipo di avvio* in **Automatico**.
+    4. Clicca su <code className="action">Avvia</code> per avviare il servizio, quindi clicca su <code className="action">OK</code> per confermare le modifiche.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-services-02.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### 2. Modificare la chiave di registro WebClient
+
+<Tabs>
+  <Tab label="Passo 1">
+    - Apri l'<code className="action">Editor del Registro</code> dal menu Start di Windows.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-regedit-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passo 2">
+    1. Individua il servizio **WebClient** nell'albero `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters\BasicAuthLevel`.
+    2. Fai doppio clic sulla chiave del registro `BasicAuthLevel`.
+    3. Cambia il *Valore dati*: di default impostato su `1`, sostituiscilo con il valore `2` e clicca su <code className="action">OK</code> per confermare le modifiche.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-regedit-02.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### 3. Importare il certificato SSL del server Zimbra
+
+:::info
+Per esportare il certificato SSL, abbiamo utilizzato il browser [Mozilla Firefox](https://www.firefox.com/).
+
+:::
+
+
+<Tabs>
+  <Tab label="Passo 1">
+    1. Apri il tuo browser Internet, carica la pagina https://zimbra1.mail.ovh.net/, quindi clicca sull'icona del lucchetto nella barra degli indirizzi.
+    2. Clicca su <code className="action">Connessione sicura</code>.
+    3. Clicca su <code className="action">Ulteriori informazioni</code>.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-ssl-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passo 2">
+    1. Clicca su <code className="action">Mostra certificato</code>.
+    2. Dalla finestra che appare, rimani sull'etichetta `zimbra1.mail.ovh.net` e clicca su <code className="action">PEM (cert)</code> per scaricare il certificato SSL.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-ssl-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passo 3">
+    - Modifica l'estensione del file da `.pem` a `.cer`.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-ssl-03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passo 4">
+    1. Apri il file `zimbra1-mail-ovh-net.cer`, quindi clicca su <code className="action">Installa certificato…</code>.
+    2. Clicca su <code className="action">Computer locale</code>, quindi clicca su <code className="action">Avanti</code>.
+    3. Seleziona `Inserisci tutti i certificati nel seguente archivio`, quindi clicca su <code className="action">Sfoglia…</code>.
+    4. Seleziona la cartella `Autorità di certificazione radice attendibili`, quindi clicca su <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-ssl-04.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### 4. Montare il volume
+
+Nel nostro esempio, utilizziamo l'indirizzo e-mail del conto Zimbra `john.smith@mydomain.ovh` e la cartella `Briefcase`, creata per default nello spazio di archiviazione di Zimbra.
+
+1. Apri il file manager di Windows e clicca su <code className="action">Questo PC</code>.
+2. Nella barra superiore, clicca sul pulsante <code className="action">…</code>, quindi su <code className="action">Connetti unità di rete</code>.
+3. Nella finestra che appare, inserisci il percorso della cartella. Secondo il nostro esempio, il percorso è `\\zimbra1.mail.ovh.net@SSL\dav\john.smith@mydomain.ovh\Briefcase`. Clicca su <code className="action">Fine</code>.
+4. Una finestra di autenticazione si apre, inserisci il `Nome utente` che corrisponde all'indirizzo e-mail completo e la `Password` associata. Clicca su <code className="action">OK</code>.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-mount-01.png" loading="lazy" />
+
+Il tuo volume di rete appare ora. Puoi depositarvi i tuoi file, entro il limite di 100 MB per file.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/windows-mount-02.png" loading="lazy" />
+
+### Montare una cartella da macOS
+
+Su macOS, non è necessario abilitare un servizio o registrare il certificato SSL, basta montare il volume direttamente dal **Finder**.
+
+<Tabs>
+  <Tab label="Passo 1">
+    - Apri il **Finder**.
+    - Nella barra superiore, clicca sul menu <code className="action">Vai</code>.
+    - Clicca su <code className="action">Connetti al server</code> (`⌘ + K`).
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/macos-mount-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passo 2">
+    :::warning
+    È importante sostituire il `@` del tuo indirizzo e-mail con `%40` nell'inserimento del percorso di accesso.
+
+    :::
+
+    
+    - Dalla finestra che appare, inserisci il percorso di connessione adatto al tuo indirizzo e-mail e alla cartella che desideri collegare. Secondo il nostro esempio, il percorso è `https://zimbra1.mail.ovh.net/dav/john.smith%40mydomain.ovh/Briefcase`.
+    - Clicca su <code className="action">Connetti</code>.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/macos-mount-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Passo 3">
+    1. Una finestra di validazione del server `zimbra1.mail.ovh.net` appare, clicca su <code className="action">Connetti</code>.
+    2. Una finestra ti chiederà di inserire il `Nome` che corrisponde al tuo indirizzo e-mail completo e la `Password` associata. Seleziona `Mantieni questa password nel mio portachiavi` se desideri conservarla per una futura connessione ad un'altra cartella. Clicca su <code className="action">Connetti</code> per montare il volume.
+    
+    <img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/macos-mount-03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Hai ora accesso allo spazio di archiviazione della tua Malette Zimbra. Puoi depositarvi qualsiasi tipo di file non superiore a 100 MB.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-webdav-mount/macos-mount-04.png" loading="lazy" />
+
+## Per saperne di più <a name="go-further"></a>
+
+[Primi passi con l'offerta Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+[Configurare l'indirizzo e-mail Zimbra su un software di posta](/guides/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-mail-apps/)
+
+[Utilizzare il webmail Zimbra](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)
+
+[FAQ sulla soluzione Zimbra OVHcloud](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-zimbra/)
+
+Per prestazioni specializzate (posizionamento, sviluppo, ecc.), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Se desideri beneficiare di un supporto sull'utilizzo e la configurazione delle tue soluzioni OVHcloud, ti proponiamo di consultare le nostre diverse [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

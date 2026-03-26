@@ -1,0 +1,164 @@
+---
+title: Enterprise File Storage - Pierwsze kroki z API
+description: Pierwsze kroki z Twoją usługą Enterprise File Storage przy użyciu API OVHcloud
+lastUpdated: 2021-10-27
+---
+
+import Api from '@components/Api';
+
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+W tym przewodniku szybko uruchamiania dowiesz się, jak rozpocząć korzystanie z usługi Enterprise File Storage.
+
+**Dowiesz się, jak pobrać informacje dotyczące Twojej oferty i utworzyć pierwszy wolumen za pomocą API OVHcloud.**
+
+## Wymagania początkowe
+
+- Posiadanie oferty OVHcloud Enterprise File Storage
+- Dostęp do strony [API OVHcloud](https://eu.api.ovh.com/)
+- Umiejętność [montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](/guides/storage-and-backup/file-storage/ha-nas/nas-nfs/)
+
+## Podstawowe
+
+Oferta OVHcloud Enterprise File Storage pozwala na tworzenie wolumenów i na zarządzanie udostępnianiem plików w sieci.
+
+Możesz wybrać rozmiar wolumenów, zarządzać dostępami za pomocą ACL lub tworzyć snapshoty (natychmiastowa kopia wolumenu).
+
+## W praktyce
+
+Wszystkie API wykorzystywane w tym przewodniku są dostępne w sekcji */storage*: [https://api.ovh.com/console/#/storage](https://api.ovh.com/console/#/storage).
+
+:::info
+Podczas korzystania z API wszystkie pola oznaczone gwiazdką (\*) są obowiązkowe.
+
+:::
+
+
+### Pobranie danych z usługi
+
+Wszystkie Twoje aktywne usługi mogą zostać odzyskane przy użyciu następującej drogi API:
+
+<Api version="v1" section="/storage" method="GET" route={"/storage/netapp"} />
+
+
+### Utwórz nowy wolumen
+
+Wolumen to jednostka magazynowa o rozmiarze i protokole.
+
+Aby utworzyć wolumen, użyj następującej drogi API:
+
+<Api version="v1" section="/storage" method="POST" route={"/storage/netapp/\{serviceName\}/share"} />
+
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `NetAppShare.description` |  | Opis objętości |
+| `NetAppShare.name` |  | Nazwa wolumenu |
+| `NetAppShare.protocole` | Yes | Protokół używany przez wolumen |
+| `NetAppShare.size` |  | Rozmiar wolumenu |
+
+Wybierz protokół `NFS` i rozmiar `10` gigabajtów.
+
+### Dodaj ACL do wolumenu
+
+ACL pozwalają na udzielenie lub odmowę dostępu do wolumenu.
+
+:::warning
+Domyślne zachowanie polega na odmowie dostępu do nowego wolumenu.
+
+:::
+
+
+Po utworzeniu wolumenu utwórz nowy ACL, aby uzyskać do niego dostęp.
+
+Aby utworzyć nowy ACL, który pozwoli Ci łączyć się z wolumenem, użyj następującej drogi API:
+
+<Api version="v1" section="/storage" method="POST" route={"/storage/netapp/\{serviceName\}/share/\{shareId\}/acl"} />
+
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
+| `NetAppShareACLRule.accessLevel` | Yes | Poziom dostępu ACL Może być **rw** (odczyt i zapis) lub **ro** (tylko odczyt). |
+| `NetAppShareACLRule.accessTo` | Yes | Adres IP lub zakres adresów IP z ratingiem CIDR. |
+
+:::info
+Korzystając z ratingu CIDR możesz zezwolić na dostęp do wolumenu z zakresu adresów IP X.X.X.X/X.
+Na przykład: 192.0.2.0/24
+
+:::
+
+
+### Zamontuj wolumen
+
+Sprawdź status utworzenia ACL przy użyciu następującej drogi API:
+
+<Api version="v1" section="/storage" method="GET" route={"/storage/netapp/\{serviceName\}/share/\{shareId\}/acl/\{aclRuleId\}"} />
+
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
+| `aclRuleId` | Yes | ID ACL |
+
+Zastąp `aclRuleId` identyfikatorem ACL utworzonym dla wolumenu.
+
+:::info
+Status ACL musi być `active`.
+
+:::
+
+
+Po aktywacji ACL pobierz ścieżki dostępu wolumenu za pomocą następującego API:
+
+<Api version="v1" section="/storage" method="GET" route={"/storage/netapp/\{serviceName\}/share/\{shareId\}/accessPath"} />
+
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
+
+Zostanie wyświetlona jedna lub więcej ścieżek dostępu dla wolumenu.
+
+Teraz możesz zamontować wolumen za pomocą polecenia:
+
+```sh
+mount -t nfs accessPath
+```
+
+:::info
+Jeśli używasz Linuksa, należy zainstalować pakiet `nfs-utils`.
+
+:::
+
+
+Po zamontowaniu wolumenu możesz przechowywać pliki.
+
+### Usuwanie wolumenu
+
+Możesz usunąć wolumen za pomocą następującej drogi API:
+
+<Api version="v1" section="/storage" method="DELETE" route={"/storage/netapp/\{serviceName\}/share/\{shareId\}"} />
+
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
+
+## Sprawdź również
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,41 @@
+---
+title: Utiliser le plugin OVHcloud dans vSphere
+description: "Découvrez comment utiliser le plugin OVHcloud afin d'ajouter des ressources dédiées à votre infrastructure"
+lastUpdated: 2021-11-15
+---
+
+## Objectif
+
+Le plugin OVHcloud vous permet d'ajouter, en quelques minutes, des ressources dédiées à votre infrastructure.
+
+**Découvrez comment utiliser le plugin OVHcloud.**
+
+## Prérequis
+
+- Posséder une offre [Hosted Private Cloud OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+- Accéder à l’interface de gestion vSphere.
+
+## En pratique
+
+Deux ressources dédiées sont proposées en facturation horaire :
+
+- les serveurs hôtes ;
+- les datastores.
+
+Depuis le client web vSphere, il suffit de vous rendre dans la partie "Host and Cluster" et de développer l'arborescence de gauche. Vous accédez alors aux menus du plugin via l'onglet <code className="action">Configure</code> du datacenter ou du cluster.
+
+Le menu <code className="action">Add Host</code> est consacré aux serveurs hôtes. Il affiche leurs détails techniques et permet de les commander.
+
+<img className="thumbnail" alt="OVHcloud Plugin - ajouter des hôtes" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/plugin-private-cloud-ovh/Plugin01.jpg" loading="lazy" />
+
+La commande de datastores supplémentaires s'effectue, elle, dans le menu <code className="action">Add Storage</code>.
+
+<img className="thumbnail" alt="OVHcloud Plugin - ajouter des datastores" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/plugin-private-cloud-ovh/Plugin02.jpg" loading="lazy" />
+
+À noter qu'il existe une alternative pour accéder à ces menus. En effet, vous pouvez aussi effectuer un clic droit sur le datacenter ou le cluster de l'infrastructure, puis choisir <code className="action">OVHcloud</code>.
+
+<img className="thumbnail" alt="Option OVH Hosted Private Cloud" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/plugin-private-cloud-ovh/Plugin03.jpg" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

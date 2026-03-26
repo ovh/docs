@@ -1,0 +1,44 @@
+---
+title: Eliminar um datastore
+description: Saiba como eliminar um datastore do Private Cloud
+lastUpdated: 2020-07-01
+---
+
+## Sumário
+
+Existem casos em que pode ser útil eliminar um datastore do cluster, por exemplo, para o substituir por outro ou para migrar para um modelo com maior capacidade de armazenamento.
+
+**Este manual explica-lhe como remover, com toda a segurança, um datastore da sua infraestrutura.**
+
+## Requisitos
+
+* Dispor do serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
+* Aceder à interface de gestão vSphere.
+
+## Instruções
+
+:::warning
+Por razões de segurança, não é possível eliminar um datastore se este tiver máquinas virtuais (na janela de validação, pode ver a lista de máquinas virtuais alojadas no datastore).
+
+:::
+
+
+Para eliminar um datastore, aceda ao armazenamento da sua plataforma na janela <code className="action">Storage</code> da coluna à esquerda. Depois, clique com o botão direito sobre o datastore correspondente e selecione <code className="action">OVHcloud</code> e, a seguir, <code className="action">Remove storage</code>.
+
+<img className="thumbnail" alt="Seleção do datastore" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-datastore/removedatastore01.png" loading="lazy" />
+
+Na nova janela que irá aparecer, confirme que pretende eliminar o datastore clicando em <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Confirmação da eliminação" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-datastore/removedatastore02.png" loading="lazy" />
+
+O pedido de eliminação é imediatamente processado.
+
+<img className="thumbnail" alt="Eliminação validada" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-datastore/removedatastore03.png" loading="lazy" />
+
+É possível seguir o progresso da operação através da secção <code className="action">Recent Tasks</code>.
+
+<img className="thumbnail" alt="Progresso da operação de eliminação" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-datastore/removedatastore04.png" loading="lazy" />
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/](https://community.ovh.com/en/).

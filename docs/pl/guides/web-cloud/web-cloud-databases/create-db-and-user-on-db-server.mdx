@@ -1,0 +1,175 @@
+---
+title: Tworzenie baz danych i użytkowników na serwerze baz danych
+description: Dowiedz się, jak utworzyć bazę danych na serwerze baz danych
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Baza danych (DB) pozwala na przechowywanie elementów dynamicznych, takich jak komentarze czy artykuły. Bazy danych są obecnie wykorzystywane przez niemal wszystkie systemy zarządzania treścią (CMS), takie jak WordPress lub Joomla!.
+
+**Dowiedz się, jak utworzyć bazę danych na serwerze baz danych i przyznać dostęp użytkownikom.**
+
+## Wymagania początkowe
+
+- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartej w ofercie [hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Wybierz usługę bazy danych
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## W praktyce
+
+### Tworzenie bazy danych
+
+Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij kartę <code className="action">Bazy danych</code>.
+  </Tab>
+  <Tab label="Krok 3">
+    Kliknij <code className="action">Dodaj bazę danych</code>.
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png" loading="lazy" />
+    
+    :::info
+    Tworzenie schematów PostgreSQL jest obecnie niedostępne na serwerach Web Cloud Databases.
+
+    :::
+
+  </Tab>
+  <Tab label="Krok 4">
+    Wypełnij pola zgodnie z podanymi kryteriami. Możesz utworzyć użytkownika bezpośrednio, zaznaczając pole **"Utwórz użytkownika"**:
+    
+    - **Nazwa bazy danych** (obowiązkowe): nazwa Twojej przyszłej bazy danych.
+    - **Nazwa użytkownika** (tylko jeśli pole `Utwórz użytkownika` jest zaznaczone): użytkownik, który będzie mógł się zalogować do bazy danych i wykonywać zapytania.
+    - **Uprawnienia** (tylko jeśli pole `Utwórz użytkownika` jest zaznaczone): uprawnienia przypisane użytkownikowi w bazie danych. W przypadku standardowego użycia wybierz <code className="action">Administrator</code>. Uprawnienia można zmienić później.
+    - **Hasło**/**Potwierdź hasło** (tylko jeśli pole `Utwórz użytkownika` jest zaznaczone): wybierz hasło, a następnie je potwierdź.
+    
+    Kliknij <code className="action">Zatwierdź</code>.
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Tworzenie użytkownika
+
+Aby korzystać z serwera baz danych OVHcloud, utwórz użytkowników z odpowiednimi uprawnieniami do łączenia się z bazą danych.
+
+Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij kartę <code className="action">Użytkownicy i uprawnienia</code>.
+  </Tab>
+  <Tab label="Krok 3">
+    Kliknij <code className="action">Dodaj użytkownika</code>.
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 4">
+    Wpisz "nazwę użytkownika" i "hasło", a następnie kliknij <code className="action">Zatwierdź</code>.
+  </Tab>
+</Tabs>
+
+
+### Zarządzanie uprawnieniami użytkowników
+
+Aby użytkownik mógł wykonywać operacje na bazie danych, konieczne jest przypisanie mu uprawnień.
+
+Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij kartę <code className="action">Użytkownicy i uprawnienia</code>.
+  </Tab>
+  <Tab label="Krok 3">
+    Kliknij przycisk <code className="action">...</code> po prawej stronie odpowiedniego użytkownika, a następnie <code className="action">Zarządzaj uprawnieniami</code>.
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 4">
+    W kolumnie po lewej stronie **Baza danych** znajdziesz listę baz danych na Twoim serwerze.
+    
+    Dostępne są 3 typy uprawnień:
+    
+    - `Administrator`: autoryzacja zapytań typu **Select / Insert / Update / Delete / Create / Alter / Drop**.
+    - `Odczyt / Zapis`: autoryzacja zapytań typu **Select / Insert / Update / Delete**.
+    - `Odczyt`: autoryzacja zapytań typu **Select**.
+    - `Żaden`: brak uprawnień do bazy danych.
+    
+    :::info
+    Podział uprawnień wymienionych powyżej jest właściwy dla OVHcloud. Użytkownik z uprawnieniami `Administrator` może korzystać z **DDL** (Data Definition Language) i **DML** (Data Manipulation Language), podczas gdy użytkownik z uprawnieniami `Odczyt / Zapis` może korzystać tylko z **DML** (Data Manipulation Language).
+
+    :::
+
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Usuwanie bazy danych
+
+:::warning
+Przed usunięciem bazy danych na serwerze baz danych nie jest
+przeprowadzana żadna weryfikacja zawartości bazy. Zostanie ona usunięta,
+nawet jeśli zawiera dane. Dlatego zaleca się utworzenie
+kopii zapasowej i pobranie jej przed każdym usunięciem.
+
+:::
+
+
+Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), następnie wybierz odpowiednie rozwiązanie.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Kliknij kartę <code className="action">Bazy danych</code>.
+  </Tab>
+  <Tab label="Krok 3">
+    Kliknij przycisk <code className="action">...</code> po prawej stronie odpowiedniej bazy danych, a następnie <code className="action">Usuń bazę</code>.
+    
+    <img className="thumbnail" alt="web-cloud-databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również
+
+Kontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (pozycjonowanie, rozwój, itp.).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

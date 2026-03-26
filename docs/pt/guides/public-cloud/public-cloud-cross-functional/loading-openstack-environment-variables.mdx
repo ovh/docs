@@ -1,0 +1,92 @@
+---
+title: Carregar as variáveis de ambiente OpenStack
+description: Aprenda a carregar as suas variáveis de ambiente para utilizar a API do OpenStack
+lastUpdated: 2024-07-15
+---
+
+:::info
+Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+
+:::
+
+
+## Objetivo
+
+Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a API OpenStack e, assim, gerir a sua infraestrutura a partir daí.
+
+## Requisitos
+
+- Ter criado um utilizador OpenStack. Consulte [o respetivo guia](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/).
+- Ter preparado o ambiente para usar o OpenStack. Para isso, consulte o seguinte guia: [Preparar o ambiente para utilizar a API OpenStack](/guides/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/).
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Caminho de navegação:** <code className="action">Public Cloud</code> > Selecione o seu projeto
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instruções
+
+### Etapa 1: recuperar as variáveis
+
+Para recuperar as suas variáveis de ambiente, pode transferir o ficheiro OpenRC do seu utilizador OpenStack previamente criado.
+
+No menu à esquerda, na rubrica **Parâmetros**, clique em <code className="action">Utilizadores & Funções</code>. A seguir, clique nas <code className="action">...</code> do lado direito do seu utilizador, e selecione <code className="action">Transferir o ficheiro RC do OpenStack</code>.
+
+<img className="thumbnail" alt="openstack-variables" src="/images/public-cloud/public-cloud-cross-functional/loading-openstack-environment-variables/download_rc_file.png" loading="lazy" />
+
+Um ficheiro OpenRC corresponde a um utilizador e, também, a uma zona. Não pode gerir várias zonas num mesmo ficheiro.
+
+### Etapa 2: carregar as variáveis
+
+#### **Em Linux**
+
+* Abra um terminal, ou ligue-se ao utilizador que fará as chamadas à API OpenStack.
+* Carregue o conteúdo do ficheiro no ambiente normal. A palavra-passe do utilizador Horizon correspondente ser-lhe-á então pedida.
+
+```bash
+admin@remote_host:~$ source openrc.sh
+Please enter your OpenStack Password:
+```
+
+Como indicado em [este guia](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/), a palavra-passe só é visível uma vez, no momento da sua criação.
+
+Se se tiver esquecido da palavra-passe, terá de voltar a criá-la.
+
+Se as CLI já tiverem sido instaladas, basta verificar o bom funcionamento:
+
+```bash
+(env)$ openstack server list
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+```
+
+#### **Em Windows**
+
+O ficheiro OpenRC não está concebido para ser lançado no Windows.
+
+Tem, por isso, 2 soluções para carregar as variáveis de ambiente:
+
+- Será necessário adaptar o ficheiro, alterando alguns comandos. Com efeito, **export** pode ser substituído por **set**:
+
+```bash
+set OS_PASSWORD="Palavra-passe do utilizador Horizon"
+```
+
+- É possível carregar as variáveis diretamente a partir dos parâmetros do sistema: Painel de configuração > Sistema > Parâmetros sistemas avançados > Variáveis de ambiente:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/public-cloud-cross-functional/loading-openstack-environment-variables/pciopenstackvariables2.png" loading="lazy" />
+
+## Quer saber mais?
+
+Para aprender a utilizar o OpenStack: [Documentação OpenStack](https://docs.openstack.org/)
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,36 @@
+---
+title: Authorising IP addresses for vCenter access
+description: Find out how to manage IP address access restrictions for vCenter
+lastUpdated: 2020-11-18
+---
+
+## Objective
+
+Access to your Managed Bare Metal can be restricted by allowing only certain IP addresses or ranges to connect to it.
+
+**This guide explains how to authorise IP addresses for vCenter access in the OVHcloud Control Panel.**
+
+## Requirements
+
+- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+
+## Instructions
+
+If you have set the [vCenter access policy](/guides/bare-metal-cloud/managed-bare-metal/vcenter-modify-access-policy/) to "Restricted", you need to add the IP addresses that will be allowed to connect to the service.
+
+In your OVHcloud Control Panel, open the "Bare Metal Cloud" section, then select your service under <code className="action">Managed Bare Metal</code> in the left-hand navigation bar.
+
+From the main page of the service, switch to the <code className="action">Security</code> tab, then click on <code className="action">Add a new IP address range</code>.
+
+<img className="thumbnail" alt="vCenter" src="/images/bare-metal-cloud/managed-bare-metal/vcenter-authorise-ip-access/restrictIP.png" loading="lazy" />
+
+In the new Window, enter an IP address (range) that should be allowed access. You can also add a description to make the organisation of the whitelist easier.
+
+<img className="thumbnail" alt="vCenter" src="/images/bare-metal-cloud/managed-bare-metal/vcenter-authorise-ip-access/restrictIP2.JPG" loading="lazy" />
+
+Click on <code className="action">Next</code> when you have filled in the fields, then click on <code className="action">Confirm</code> to apply your changes. Connections from this IP address (range) will now be possible.
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

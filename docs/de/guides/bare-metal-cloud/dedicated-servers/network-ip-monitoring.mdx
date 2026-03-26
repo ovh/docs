@@ -1,0 +1,89 @@
+---
+title: Welche IP-Adressen nutzt das OVHcloud Monitoring?
+description: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
+lastUpdated: 2025-06-04
+---
+
+## Ziel
+
+Mit dem Monitoring-Dienst können Sie den Zustand Ihrer Maschine überwachen und einen Eingriff durch einen Techniker im Rechenzentrum automatisch auslösen.
+
+Alle Server unserer Kunden und das gesamte Netzwerk werden 24/24 und 7/7 Stunden von den technischen Teams von OVHcloud überwacht.
+
+OVHcloud greift ein, sobald ein Alarm ausgelöst wird (keine Antwort auf Pings), um die Ausfallzeit der Server und des Netzwerks auf ein Minimum zu begrenzen.
+
+Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vom OVHcloud Monitoring zu profitieren, müssen die IP-Adressen, die Sie im Folgenden finden, autorisiert werden.
+
+## Voraussetzungen
+
+- Sie haben einen OVHcloud Dienst, auf dem Sie eine Firewall installiert haben.
+- Sie haben Zugriff auf die Firewall-Regeln.
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [Dedicated Server](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Navigationspfad:** <code className="action">Bare Metal Cloud</code> > <code className="action">Dedicated Server</code> > Wählen Sie Ihren Server aus
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+## In der praktischen Anwendung
+
+### IP-Adressen erlauben
+
+|Reverse|IP|Protokoll|
+|---|---|---|
+|netmon-rbx-probe|92.222.184.0/24|icmp|
+|netmon-sbg-probe|92.222.185.0/24|icmp|
+|netmon-gra-probe|92.222.186.0/24|icmp|
+|netmon-bhs-probe|167.114.37.0/24|icmp|
+|netmon-sgp-probe|139.99.1.144/28|icmp|
+|netmon-waw-probe|193.70.125.118/32|icmp|
+|netmon-mum-probe|148.113.25.1/32|icmp|
+|netmon-syd-probe|139.99.187.247/32|icmp|
+|netmon-tor-probe|72.251.7.222/32|icmp|
+|netmon-eri-probe|51.195.135.163/32|icmp|
+|netmon-lim-probe|51.38.117.56|icmp|
+|netmon-sbg-probe|51.38.25.100|icmp|
+|netmon-par-probe|57.130.4.212|icmp|
+|ping.ovh.net|213.186.33.13|icmp|
+|---|---|---|
+||xxx.xxx.xxx.250 (xxx.xxx.xxx.xxx.aaa ist die IP des Servers)|icmp|
+||xxx.xxx.xxx.251 (xxx.xxx.xxx.xxx.aaa ist die IP des Servers)|icmp + vom Monitoring-Dienst überwachter Port|
+
+**Für die Kommunikation zwischen dem RTM Dienst und Ihrem Server müssen Sie außerdem die ein- und ausgehenden Verbindungen über die UDP 6100 bis 6200 Ports erlauben.**
+
+:::info
+Wenn Ihr Server sich in Roubaix 3 befindet, muss die letzte IP über `tcpdump` abgerufen werden:
+<pre className="highlight language-console"><code className="language-console">tcpdump host server_ip | grep ICMP</code></pre>
+
+:::
+
+
+
+### Monitoring aktivieren oder deaktivieren
+
+Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) und gehen Sie zum Bereich <code className="action">Bare Metal Cloud</code>. Wählen Sie den betreffenden Server unter <code className="action">Dedicated Server</code> aus.
+
+Sie können den Monitoring-Status eines Servers vom Tab <code className="action">Allgemeine Informationen</code> aus einrichten (Abschnitt **Dienststatus**).
+
+<img className="thumbnail" alt="Monitoring" src="/images/bare-metal-cloud/dedicated-servers/network-ip-monitoring/monitoring-server.png" loading="lazy" />
+
+Klicken Sie auf den Button <code className="action">Konfigurieren</code>. Im neu angezeigten Fenster haben Sie drei Optionen für das Überwachungsverhalten:
+
+- **Deaktiviert**: Mit dieser Option werden Warnmeldungen und Eingriffe von OVHcloud gestoppt. Wählen Sie dies aus, wenn Sie auf dem Server relevante Administrationsmaßnahmen durchführen, die eine ICMP-Antwort verhindern.
+- **Aktiviert mit proaktivem Eingriff**: Wenn der Server nicht mehr reagiert wird Ihnen eine Benachrichtigung per E-Mail gesendet und der Server von einem Techniker überprüft.
+- **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, muss eine Support-Anfrage erstellt werden.
+
+<img className="thumbnail" alt="Monitoring" src="/images/bare-metal-cloud/dedicated-servers/network-ip-monitoring/monitoring-server2.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Bestätigen</code>, um Ihre Monitoring-Konfiguration zu aktualisieren.
+
+## Weiterführende Informationen
+
+[Konfiguration der Network Firewall](/guides/bare-metal-cloud/dedicated-servers/firewall-network/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

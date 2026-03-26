@@ -1,0 +1,75 @@
+---
+title: Disattivare una soluzione Managed Bare Metal
+description: Come richiedere l’eliminazione di un’infrastruttura Managed Bare Metal
+lastUpdated: 2020-11-18
+---
+
+import Api from '@components/Api';
+
+
+## Obiettivo
+
+Se il servizio Managed Bare Metal utilizzato non è più in grado di rispondere alle esigenze o è necessario sostituire la piattaforma esistente con una nuova, è possibile richiedere la disattivazione di questa infrastruttura dopo aver recuperato tutti i dati in essa contenuti.
+
+**Questa guida ti mostra come richiedere l’eliminazione di una soluzione Managed Bare Metal.** 
+
+## Prerequisiti
+
+- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it), sezione <code className="action">Bare Metal Cloud</code> > <code className="action">Managed Bare Metal</code>.
+- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) attivo
+
+## Procedura
+
+:::warning
+Prima di completare il processo di disattivazione, consigliamo di effettuare un backup di tutti i dati da conservare: l’operazione di cancellazione comporta infatti la completa rimozione del Managed Bare Metal e dei dati ad esso associati.
+
+:::
+
+
+### Step 1: richiedi la disattivazione del servizio dallo Spazio Cliente OVHcloud
+
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) e, nella sezione <code className="action">Bare Metal Cloud</code> (1), clicca su <code className="action">Managed Bare Metal</code> (2) e seleziona il servizio nella lista (3).
+
+Nel riquadro “Gestisci il servizio” disponibile nella scheda “Informazioni generali”, clicca sul pulsante <code className="action">...</code>  (4) in corrispondenza della data di rinnovo e seleziona l’opzione <code className="action">Elimina il servizio</code> (5).
+
+<img className="thumbnail" alt="Disattivazione dallo Spazio Cliente" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation1.png" loading="lazy" />
+
+Ricordiamo che, una volta confermata, l’operazione di eliminazione comporta la rimozione definitiva di tutti i dati presenti sull’infrastruttura. In caso di disattivazione prima della fine del mese non è inoltre previsto alcun rimborso.
+
+Clicca su <code className="action">Conferma</code> per completare l’operazione.
+
+<img className="thumbnail" alt="Conferma disattivazione" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation2.png" loading="lazy" />
+
+Compare un messaggio di conferma di ricezione della richiesta. La procedura da seguire per completare la disattivazione verrà inviata via email all’indirizzo associato all’account OVHcloud.
+
+<img className="thumbnail" alt="Conferma disattivazione" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation3.png" loading="lazy" />
+
+### Step 2: conferma la disattivazione
+
+Una volta inoltrata la richiesta, un’email di conferma della disattivazione viene inviata all’indirizzo associato all’account OVHcloud. 
+
+Il messaggio è disponibile anche nello Spazio Cliente: clicca sul nome utente in alto a destra e seleziona <code className="action">Email di servizio</code>.
+
+<img className="thumbnail" alt="Conferma disattivazione" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation4.png" loading="lazy" />
+
+L’oggetto dell’email dovrebbe essere:
+
+> **Eliminazione del tuo Managed Bare Metal “pcc-xxx-xxx-xxx-xxx”**.
+
+L’email contiene un link con cui è possibile confermare la disattivazione del servizio.
+
+:::info
+Attenzione: il link è valido **72 ore**. Consigliamo quindi di inoltrare la domanda di eliminazione a partire dal 25 del mese.
+
+:::
+
+
+L’operazione richiesta può essere confermata anche tramite la seguente API OVHcloud:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/confirmTermination"} />
+
+In questo caso è necessario inserire il token riportato nell’email di conferma della cancellazione.
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

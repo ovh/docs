@@ -1,0 +1,54 @@
+---
+title: SQL Database Web Hosting EOL und EOS Ankündigungen
+description: SQL Database Web Hosting EOL und EOS Ankündigungen
+lastUpdated: 2025-05-20
+---
+
+Die von der folgenden Terminierung zu End-of-Life (EOL) und End-of-Sale (EOS) erfassten Produkte sind Webhosting SQL Datenbankdienste, d.h. MySQL Datenbanken, die über das Webhosting-Netzwerk erreichbar sind.
+
+Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Databases](/guides/web-cloud/web-cloud-databases/eol-policy/).
+
+|DBMS-Version|EOL Ankündigung|End-of-Sale|End-of-Support|
+|---|---|---|---|
+|MySQL 8.0|2025-05-20|2025-09-30|2026-04-01|
+|MySQL 8.4|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+
+:::info
+Derzeit können Kunden die in den OVHcloud Webhostings enthaltenen SQL-Datenbankdienste zum End-of-Sale/Life nicht direkt über das OVHcloud Kundencenter oder die Datenbank aktualisieren.
+
+:::
+
+
+Um das End-of-Sale/Life vorzubereiten oder Aktualisierungen manuell vorzunehmen, müssen Sie die folgenden Aktionen ausführen:
+
+- Fall Nr. 1: Sie verfügen über eine einzige Datenbank, die in Ihrem Webhosting Angebot enthalten ist:
+    - Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
+    - [Datenbankinhalt exportieren](/guides/web-cloud/web-hosting/sql-database-export/).
+    - Löschen Sie die alte Datenbank.
+    - [Neue Datenbank erstellen](/guides/web-cloud/web-hosting/sql-create-database/), in einer neueren DBMS-Version.
+    - [Inhalt der alten Datenbank in die neue importieren](/guides/web-cloud/web-hosting/sql-importing-mysql-database/).
+    - Verbinden Sie die neue Datenbank mit Ihrer Website.
+
+- Fall Nr. 2: Sie verfügen über mehrere Datenbanken, die bei Ihrem Webhosting Angebot inklusive sind:
+    - Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
+    - [Datenbankinhalt exportieren](/guides/web-cloud/web-hosting/sql-database-export/).
+    - [Neue Datenbank erstellen](/guides/web-cloud/web-hosting/sql-create-database/) in einer neueren DBMS-Version.
+    - [Duplizieren Sie den Inhalt der alten Datenbank in die neue Datenbank](/guides/web-cloud/web-hosting/copy-database/).
+    - Verbinden Sie die neue Datenbank mit Ihrer Website.
+    - Löschen Sie die alte Datenbank.
+
+## Weiterführende Informationen
+
+[In das OVHcloud Kundencenter einloggen](/guides/account-and-service-management/account-information/ovhcloud-account-login/)
+
+[Eine Datenbank auf Ihrem Webhosting erstellen](/guides/web-cloud/web-hosting/sql-create-database/)
+
+[Backup einer Webhosting-Datenbank exportieren](/guides/web-cloud/web-hosting/sql-database-export/)
+
+[Inhalt einer Datenbank in eine andere duplizieren](/guides/web-cloud/web-hosting/copy-database/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

@@ -1,0 +1,65 @@
+---
+title: Update the plan of Analytics
+description: Find out how to upgrade the service plan of your cluster
+lastUpdated: 2025-02-03
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+Learn how to upgrade the service plan of your cluster according to your needs.
+
+:::warning
+Once you have upgraded your solution, you will not be able to downgrade to a lower solution.
+
+:::
+
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) or to the [OVHcloud API](https://eu.api.ovh.com/)
+- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
+
+## Instructions
+
+### Using the OVHcloud Control Panel
+
+To upgrade the service plan of your cluster, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) and open your Public Cloud project. Click <code className="action">Data Analysis</code> or <code className="action">Data Streaming</code> in the left navigation bar, then select your engine instance.
+
+<img className="thumbnail" alt="Cluster overview" src="/images/public-cloud/data-analytics/analytics/analytics-update-cluster-plan/cluster_overview.png" loading="lazy" />
+
+Click <code className="action">Change solution</code> and adjust the Plan of your cluster.
+
+<img className="thumbnail" alt="Change solution" src="/images/public-cloud/data-analytics/analytics/analytics-update-cluster-plan/plan_change_view.png" loading="lazy" />
+
+### Using the OVHcloud API
+
+:::tip[Success]
+If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/guides/manage-and-operate/api/first-steps/).
+
+:::
+
+
+To upgrade or downgrade the service plan of your cluster, use the following API call:
+
+<Api version="v1" section="/cloud" method="PUT" route={"/cloud/project/\{serviceName\}/database/\{engine\}/\{clusterId\}"} />
+
+```console
+body : {
+    plan: <essential|business|enterprise>
+}
+```
+
+If you downgrade to an Essential plan, your current flavor and/or number of nodes will be downgraded automatically if they exceed the limits of the Essential plan.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) and interact directly with the team that builds our analytics service!
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

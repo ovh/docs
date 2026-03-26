@@ -1,0 +1,103 @@
+---
+title: Tutorial - Zainstaluj ręcznie Typo3
+description: Dowiedz się, jak ręcznie zainstalować CMS Typo3
+lastUpdated: 2024-03-28
+---
+
+## Wprowadzenie
+
+**CMS** (**C**ontent **M**anagement **S**ystem) Typo3 umożliwia tworzenie złożonych i skalowalnych stron WWW dla firm każdej wielkości, od instytucjonalnych stron WWW po platformy e-commerce. Dzięki dużej społeczności programistów i szerokiej gamie rozszerzeń,  oferuje potężne narzędzia do personalizacji i rozszerzania strony zgodnie z Twoimi potrzebami.
+
+**Dowiedz się, jak ręcznie zainstalować CMS Typo3 na hostingu OVHcloud.**
+
+## Wymagania początkowe
+
+- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającego co najmniej jedną bazę danych.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/).
+
+## W praktyce
+
+### Przygotowanie do instalacji
+
+Aby zainstalować CMS **Typo3** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), należy wykonać kilka czynności przygotowawczych.
+
+Postępuj zgodnie z **wszystkimi krokami** opisanymi w tutorialu [Instalacja ręczna modułu CMS](/guides/web-cloud/web-hosting/cms-manual-installation/), aby przejść do kolejnego etapu.
+
+### Zakończ instalację ręczną
+
+:::info
+Przed kontynuowaniem instalacji wyczyść pamięć podręczną przeglądarki internetowej, aby uniknąć problemów z jej działaniem.
+
+:::
+
+
+#### Przejdź na stronę Typo3 za pomocą przeglądarki
+
+Wpisz nazwę domeny w pasku wyszukiwania przeglądarki internetowej.
+
+Jeśli pliki źródłowe Typo3 zostały pomyślnie umieszczone w folderze głównym, pojawi się następująca strona:
+
+<img className="thumbnail" alt="Typo3 installation" src="/images/assets/screens/other/cms/typo3/install-step-one.png" loading="lazy" />
+
+Jak wspomniano, utwórz pusty plik o nazwie `FIRST_INSTALL` w katalogu, w którym umieściłeś swoje pliki i foldery Typo3. Wróć do przeglądarki internetowej i odśwież stronę. Jeśli pojawią się błędy, pojawi się poniższy ekran z opisem błędów.
+
+<img className="thumbnail" alt="Typo3 installation" src="/images/assets/screens/other/cms/typo3/install-step-2-error.png" loading="lazy" />
+
+Usuń błędy lub kliknij przycisk <code className="action">Continue with errors</code>.
+
+Pojawi się drugi etap instalacji.
+
+<img className="thumbnail" alt="Typo3 installation" src="/images/assets/screens/other/cms/typo3/install-step-2.png" loading="lazy" />
+
+Wprowadź informacje dotyczące systemu zarządzania bazami danych, a następnie kliknij przycisk <code className="action">Continue</code>.
+
+Pojawi się trzeci etap instalacji.
+
+<img className="thumbnail" alt="Typo3 installation" src="/images/assets/screens/other/cms/typo3/install-step-3.png" loading="lazy" />
+
+Wybierz nazwę bazy danych, której chcesz użyć na Twojej stronie WWW lub [utwórz nową](/guides/web-cloud/web-hosting/sql-create-database/), a następnie kliknij przycisk <code className="action">Continue</code>.
+
+Pojawi się czwarty etap instalacji.
+
+<img className="thumbnail" alt="Typo3 installation" src="/images/assets/screens/other/cms/typo3/install-step-4.png" loading="lazy" />
+
+Wpisz nazwę swojej strony www oraz informacje o użytkowniku admin.
+
+Pojawi się piąty i ostatni etap instalacji.
+
+<img className="thumbnail" alt="Typo3 installation" src="/images/assets/screens/other/cms/typo3/install-step-5.png" loading="lazy" />
+
+Przeczytaj informacje wyświetlane na ekranie i wybierz odpowiednią opcję:
+
+- `Create empty starting page` : wybierz tę opcję, aby utworzyć domyślną stronę serwisu WWW. Po zatwierdzeniu tego etapu wpisz nazwę domeny w przeglądarce internetowej, aby uzyskać dostęp do witryny Typo3.
+- `Take me straight to the backend` : wybierz tę opcję, aby zostać przekierowanym do dashboardu Twojej strony WWW Typo3. Za pomocą tego dashboardu będziesz musiał samodzielnie tworzyć strony WWW, zasilać ich treści i wiele więcej. Więcej informacji znajdziesz w [oficjalnej dokumentacji Typo3](https://docs.typo3.org/Home/GettingStarted.html).
+
+Kliknij <code className="action">Open the TYPO3 Backend</code>, aby potwierdzić wybraną właśnie opcję.
+
+### Zakończenie
+
+Właśnie ręcznie zainstalowałeś CMS Typo3 na Twoim hostingu OVHcloud. Po skonfigurowaniu strony www, dodaniu spersonalizowanych treści, spersonalizowaniu szablonu i zainstalowaniu wtyczek, Twoja strona Typo3 jest dostępna online za pośrednictwem Twojej domeny.
+
+## Sprawdź również <a name="go-further"></a>
+
+[Tutorial - Zainstaluj ręcznie WordPress](/guides/web-cloud/web-hosting/cms-manual-installation-wordpress/)
+
+[Tutorial - Zainstaluj ręcznie Joomla!](/guides/web-cloud/web-hosting/cms-manual-installation-joomla/)
+
+[Tutorial - Zainstaluj ręcznie Drupal](/guides/web-cloud/web-hosting/cms-manual-installation-drupal/)
+
+[Tutorial - Zainstaluj ręcznie PrestaShop](/guides/web-cloud/web-hosting/cms-manual-installation-prestashop/)
+
+[Tutorial - Zainstaluj ręcznie Pico](/guides/web-cloud/web-hosting/cms-manual-installation-pico/)
+
+[Tutorial - Zainstaluj ręcznie Grav](/guides/web-cloud/web-hosting/cms-manual-installation-grav/)
+
+[Tutorial - Zainstaluj ręcznie SPIP](/guides/web-cloud/web-hosting/cms-manual-installation-spip/)
+
+[Tutorial - Zainstaluj ręcznie CMS na hostingu](/guides/web-cloud/web-hosting/cms-manual-installation/)
+
+[Tworzenie bazy danych na hostingu](/guides/web-cloud/web-hosting/sql-create-database/)
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

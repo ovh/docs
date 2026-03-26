@@ -1,0 +1,110 @@
+---
+title: Jak usunąć strefę DNS OVHcloud?
+description: Dowiedz się, jak usunąć strefę DNS Twojej domeny z poziomu Panelu klienta OVHcloud
+lastUpdated: 2026-03-11
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie
+
+Strefa **D**omain **N**ame **S**ystem (**DNS**) jest plikiem konfiguracyjnym domeny. Zawiera on informacje techniczne nazywane *rekordami DNS*. Strefa DNS jest w pewnym sensie ośrodkiem prowadzącym.
+
+Więcej informacji o strefach DNS i serwerach DNS znajdziesz w przewodnikach: 
+
+- [Wszystko o serwerach DNS](/guides/web-cloud/domains/dns-server-general-information/)
+- [Wszystko o strefie DNS](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Wszystko o rekordach DNS](/guides/web-cloud/domains/dns-zone-records/)
+
+Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w następujących przypadkach (lista nie jest wyczerpująca):
+
+- Używasz aktywnej strefy DNS dla swojej domeny u innego dostawcy niż OVHcloud.
+- Nie używasz już nazwy domeny powiązanej ze strefą DNS obecną w OVHcloud.
+- Przeniosłeś usługi do innego dostawcy i chcesz zrezygnować z usług OVHcloud.
+
+:::info
+Utworzenie / modyfikacja / usunięcie strefy DNS w [Panelu klienta OVHcloud](https://manager.eu.ovhcloud.com/#/web/zone) jest całkowicie darmowe.
+
+:::
+
+
+**Dowiedz się, jak usunąć strefę DNS z OVHcloud dla Twojej domeny, korzystając z Panelu klienta OVHcloud.**
+
+## Wymagania początkowe
+
+- Strefa DNS w Panelu klienta OVHcloud.
+- Dysponujesz wystarczającymi uprawnieniami w strefie DNS, którą chcesz usunąć. Więcej informacji znajdziesz w przewodniku "[Zarządzanie kontaktami dla usług OVHcloud](/guides/account-and-service-management/account-information/managing-contacts/)".
+
+{/* CP-NAV-START:billing-services */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Moje rozwiązania i usługi](https://manager.eu.ovhcloud.com/#/billing/autorenew/services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > <code className="action">Moje rozwiązania i usługi</code>
+
+---
+{/* CP-NAV-END:billing-services */}
+
+:::info
+Usunięcie strefy DNS nie powoduje usunięcia rekordu przypisanej do niej domeny. Nie utracisz domeny, usuwając powiązaną z domeną strefę DNS.
+
+:::
+
+
+## W praktyce
+
+:::warning
+Przed kontynuowaniem sprawdź, czy strefa DNS, którą chcesz usunąć, nie jest już używana przez Twoją domenę.
+
+Jeśli usuniesz aktywną strefę DNS dla Twojej domeny, spowoduje to przerwę w działaniu Twoich usług online (strona WWW, konta e-mail, etc.).
+
+Sprawdź [WHOIS](https://www.ovhcloud.com/pl/domains/whois/), czy aktywna strefa DNS Twojej domeny jest strefą obecną w OVHcloud.
+
+Jeśli domena jest aktywna w strefie DNS OVHcloud i chcesz ją zastąpić strefą DNS hostowaną gdzie indziej, zapoznaj się z naszym przewodnikiem "[Zmiana serwerów DNS domeny OVHcloud](/guides/web-cloud/domains/dns-server-edit/)" przed usunięciem strefy DNS.
+
+:::
+
+
+Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **3** etapy.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Moje rozwiązania i usługi](https://manager.eu.ovhcloud.com/#/billing/autorenew/services), a następnie kliknij przycisk <code className="action">...</code> po prawej stronie strefy DNS, którą chcesz zakończyć, a następnie kliknij <code className="action">Rezygnuję z usługi</code>.
+    
+    <img className="thumbnail" alt="Zakończ" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Na nowej stronie, która się pojawi, podaj powód swojej prośby o zakończenie oraz swoje projekty, a następnie kliknij <code className="action">Zatwierdź</code>.
+    
+    <img className="thumbnail" alt="Zakończ usługę" src="/images/assets/screens/control-panel/product-selection/right-column/my-solutions-and-services/dns-zone-delete-your-service.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 3">
+    Zakończenie Twojej usługi nastąpi w **Data wejścia w życie**, która jest wskazana w tabeli "Zarządzanie moimi ofertami i usługami". Jeśli nie widzisz statusu "Planowane zakończenie usługi", odśwież stronę.
+    
+    :::info
+    Jeśli chcesz natychmiast usunąć strefę DNS ze swojego Panelu klienta OVHcloud, wykonaj 3 kroki, aby złożyć prośbę o zakończenie w data wejścia w życie, a następnie skontaktuj się z obsługą OVHcloud, tworząc zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
+    W zgłoszeniu wsparcia określ strefę DNS, która jest dotyczy, oraz wyraźnie zaznacz, że chcesz ją usunąć natychmiast, bez oczekiwania na data wejścia w życie.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+## Sprawdź również
+
+[Zarządzaj kontaktami swoich usług](/guides/account-and-service-management/account-information/managing-contacts/)
+
+[Edycja strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+[Modyfikacja serwerów DNS domeny OVHcloud](/guides/web-cloud/domains/dns-server-edit/)
+
+[Utwórz strefę DNS OVHcloud](/guides/web-cloud/domains/dns-zone-create/)
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

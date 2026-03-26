@@ -1,0 +1,97 @@
+---
+title: Konfiguracja DNS secondary OVHcloud na serwerze VPS
+description: Dowiedz się, jak dodać serwer DNS secondary dla Twojej domeny
+lastUpdated: 2022-01-12
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Jeśli skonfigurujesz serwer VPS jako serwer DNS, możesz użyć Secondary DNS OVHcloud do zainstalowania strefy DNS secondary. Dzięki temu serwery DNS Twojej domeny pozostaną dostępne nawet, jeśli serwer DNS primary nie odpowiada.
+
+**Dowiedz się, jak dodać domenę do Panelu klienta i używać serwera DNS secondary OVHcloud.**
+
+## Wymagania początkowe
+
+- Domena, do której masz dostęp jako administrator
+- Serwer [VPS](https://www.ovhcloud.com/pl/vps/) w Panelu klienta OVHcloud
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">Prywatne serwery wirtualne</code> > Wybierz VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+:::warning
+OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+
+Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub uruchomieniem usługi na serwerze zalecamy skorzystanie z pomocy specjalisty.
+
+:::
+
+
+## W praktyce
+
+### Etap 1: odzyskanie kodu <a name="retrievecode"></a>
+
+Przejdź do zakładki <code className="action">DNS secondary</code> i kliknij przycisk <code className="action">Dodaj domenę</code>.
+
+<img className="thumbnail" alt="Secondary DNS" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-01.png" loading="lazy" />
+
+Wpisz nazwę domeny, którą chcesz dodać, następnie kliknij <code className="action">Zatwierdź</code>.
+
+<img className="thumbnail" alt="Secondary DNS" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-02.png" loading="lazy" />
+
+W Panelu klienta wyświetli się komunikat dotyczący procesu weryfikacji.
+
+<img className="thumbnail" alt="Secondary DNS" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-03.png" loading="lazy" />
+
+Przed dodaniem domeny do DNS secondary OVHcloud należy zatwierdzić zezwolenie na zarządzanie domeną. Jest to realizowane poprzez automatyczne wyszukiwanie DNS subdomeny *ownercheck.twojejdomeny*. W tym celu generowany jest indywidualny ciąg znaków i wyświetlany w czerwonej strefie powiadomienia. Skopiuj ten kod, aby korzystać z niego na kolejnym etapie.
+
+### Etap 2: weryfikacja autoryzacji domeny <a name="verifyingdomain"></a>
+
+Operacja jest inna w zależności od tego, gdzie są zarządzane DNS Twojej domeny.
+
+- Jeśli domena jest zarządzana przez zewnętrznego operatora domeny **lub** na tym etapie używa zewnętrznych serwerów DNS, zaloguj się do panelu klienta Twojego dostawcy DNS i dodaj w strefie DNS wpis TXT z subdomeną "ownercheck" oraz wartość dodaną wykonując [etap 1](#retrievecode).
+
+- Jeśli domena jest zarządzana przez OVHcloud jako operator **i** używa serwerów DNS OVHcloud, dodaj rekord TXT do sekcji <code className="action">Web Cloud</code> w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl). Postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Edytuj strefę DNS](/guides/web-cloud/domains/dns-zone-edit/)”, jeśli nie znasz tego procesu.
+
+<img className="thumbnail" alt="Secondary DNS" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-04.png" loading="lazy" />
+
+### Etap 3: dodanie domeny
+
+Po dodaniu rekordu TXT do strefy DNS domeny powtórzcie [kroki opisane w pierwszej części tego przewodnika](#retrievecode), aby dodać domenę do serwera DNS secondary OVHcloud.
+
+Kliknij na <code className="action">Zatwierdź</code>, aby rozpocząć automatyczną weryfikację właściciela, przepytując pole TXT. Wiadomość z Panelu klienta potwierdzi poprawność weryfikacji DNS. Możesz usunąć wpis TXT.
+
+Dodane domeny wyświetlają się w zakładce z **nazwą odpowiadającą serwerowi DNS secondary**. Odśwież stronę w przeglądarce po dodaniu domeny.
+
+<img className="thumbnail" alt="Secondary DNS" src="/images/bare-metal-cloud/virtual-private-servers/adding-secondary-dns-on-vps/sec-05.png" loading="lazy" />
+
+Można usunąć domenę klikając przycisk <code className="action">...</code> w tabeli.
+
+:::info
+Inne operacje niezbędne do konfiguracji Twojego serwera DNS dla Twoich domen mogą być wymagane:
+
+- konfiguracja usługi DNS (np. *BIND*)
+- konfiguracja wpisów GLUE
+- autoryzacja transferów strefy DNS
+
+Jeśli potrzebujesz dodatkowych informacji do realizacji tych zadań administracyjnych, skorzystaj z zewnętrznych dokumentacji.
+
+:::
+
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,196 @@
+---
+title: Exchange - Configurer son adresse e-mail sur Thunderbird pour macOS
+description: Découvrez comment configurer votre adresse e-mail Exchange sur Thunderbird pour macOS
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objectif
+
+Les comptes Exchange peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
+
+**Découvrez comment configurer votre adresse e-mail Exchange sur Thunderbird pour macOS.**
+
+## Prérequis
+
+- Disposer d’une adresse e-mail [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/).
+- Disposer du logiciel Thunderbird installé sur votre Mac.
+- Posséder les identifiants relatifs à l’adresse e-mail que vous souhaitez paramétrer.
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Sélectionnez votre plateforme
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+<details>
+
+<summary>Informations relatives à la gestion et configuration des services OVHcloud</summary>
+
+
+Ce guide vous montre comment utiliser des solutions OVHcloud avec des outils externes ainsi que les modifications à apporter dans des contextes spécifiques. Il se peut que vous deviez adapter les instructions en fonction de votre situation.
+
+Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recommandons de contacter un [prestataire de services spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou d’en discuter avec notre communauté. OVHcloud ne peut pas vous fournir d’assistance technique sur l’utilisation d’outils externes. Plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
+
+</details>
+
+
+## En pratique
+
+:::info
+Dans notre exemple, nous utilisons la mention serveur : ex?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
+
+Cliquez sur [ce lien](https://manager.eu.ovhcloud.com/#/web/exchange) pour accéder à la section <code className="action">Exchange</code>. Le nom du serveur s’affiche dans la zone **Connexion** de l’onglet <code className="action">Informations générales</code>.
+
+:::
+
+
+### Ajouter le compte
+
+- **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
+
+- **Si un compte est déjà paramétré sur l'application** :
+
+    1. Cliquez sur le menu <code className="action">☰</code> dans la barre horizontale supérieure.
+    2. Cliquez sur <code className="action">Nouveau Compte</code>.
+    3. Cliquez sur <code className="action">Adresse E-mail</code>.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-mac-01.png" loading="lazy" />
+
+Suivez les étapes de configuration en cliquant successivement sur les **5** onglets ci-dessous :
+
+<Tabs>
+  <Tab label="Étape 1">
+    Dans la fenêtre qui s'affiche, saisissez les 2 informations suivantes :
+    
+     - Votre nom complet (nom d'affichage).
+     - L'adresse e-mail à paramétrer.
+    
+    Cliquez sur <code className="action">Continuer</code> pour compléter les paramètres.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-exchange-02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Lorsque Thunderbird détecte un nom de domaine OVHcloud, une configuration automatique relative à l'offre MX Plan est proposée. Cliquez sur <code className="action">MODIFIER LA CONFIGURATION</code>.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-ssl0-03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 3">
+    Paramètres du serveur de réception :
+    
+     - **Protocole** : IMAP
+     - **Nom d'hôte** : ex?.mail.ovh.net (remplacez le « ? » par le numéro de votre serveur)
+     - **Port** : 993
+     - **Sécurité de la connexion** : SSL/TLS
+     - **Méthode d'authentification** : Mot de passe normal
+     - **Nom d'utilisateur** : Votre adresse e-mail complète
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-exchange-04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 4">
+    Paramètres du serveur d'envoi :
+    
+     - **Protocole** : SMTP 
+     - **Nom d'hôte** : ex?.mail.ovh.net (remplacez le « ? » par le numéro de votre serveur)
+     - **Port** : 587
+     - **Sécurité de la connexion** : STARTTLS
+     - **Méthode d'authentification** : Mot de passe normal
+     - **Nom d'utilisateur** : Votre adresse e-mail complète
+    
+    1\. Cliquez sur <code className="action">Tester</code> pour vérifier les paramètres saisis.
+    2\. Cliquez sur <code className="action">Continuer</code> pour valider ces paramètres.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-exchange-05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 5">
+    Saisir le mot de passe associé à l'adresse e-mail, puis cliquez sur <code className="action">Continuer</code> pour finaliser la configuration.
+    
+    <img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-password-06.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::info
+**Configuration POP**
+
+Si vous souhaitez une configuration POP pour votre adresse e-mail, remplacez les paramètres de **l'étape 3** par les suivants :
+
+Paramètres du serveur de réception :
+
+- **Protocole** : POP3
+- **Nom d'hôte** : ex?.mail.ovh.net (remplacez le « ? » par le numéro de votre serveur)
+- **Port** : 995
+- **Sécurité de la connexion** : SSL/TLS
+- **Méthode d'authentification** : Mot de passe normal
+- **Nom d'utilisateur** : Votre adresse e-mail complète
+
+:::
+
+**Configuration POP**
+
+Si vous souhaitez une configuration POP pour votre adresse e-mail, remplacez les paramètres de l'étape 3 par les suivants :
+
+Paramètres du serveur de réception :
+
+- Protocole : POP3
+- Nom d'hôte : ex?.mail.ovh.net (remplacez le « ? » par le numéro de votre serveur)
+- Port : 995
+- Sécurité de la connexion : SSL/TLS
+- Méthode d'authentification : Mot de passe normal
+- Nom d'utilisateur : Votre adresse e-mail complète
+
+
+### Utiliser l'adresse e-mail
+
+Une fois votre adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des e-mails.
+
+OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Pour accéder au Webmail OVHcloud, cliquez sur [ce lien](https://www.ovhcloud.com/fr/mail/). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+
+### Récupérer une sauvegarde de votre adresse e-mail
+
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide « [Migrer manuellement votre adresse e-mail](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/) ».
+
+### Modifier les paramètres existants
+
+Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
+
+1. Cliquez sur le menu <code className="action">☰</code> dans la barre horizontale supérieure.
+2. Cliquez sur <code className="action">Paramètres des comptes</code>.
+
+<img className="thumbnail" alt="Thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-mac-07.png" loading="lazy" />
+
+- Pour modifier les paramètres liés à la **réception** de vos e-mails, cliquez sur <code className="action">Paramètres serveur</code> dans la colonne de gauche sous votre adresse e-mail.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-exchange-mac-08.png" loading="lazy" />
+
+- Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur <code className="action">Serveur sortant (SMTP)</code> tout en bas de la colonne de gauche.
+- Cliquez sur l'adresse e-mail concernée dans la liste, puis cliquez sur <code className="action">Modifier</code>.
+
+<img className="thumbnail" alt="thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-thunderbird-mac/configuration-thunderbird-exchange-mac-09.png" loading="lazy" />
+
+## Aller plus loin <a name="go-further"></a>
+
+:::info
+Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Thunderbird, consultez [le centre d'aide de Mozilla](https://support.mozilla.org/products/thunderbird).
+
+:::
+
+
+[Premiers pas avec le service Hosted Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/)
+
+[Premiers pas avec le service Private Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-private/)
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

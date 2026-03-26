@@ -1,0 +1,167 @@
+---
+title: Gérer mes factures OVHcloud
+description: Découvrez comment gérer vos factures et les paiements liés à celles-ci
+lastUpdated: 2025-04-28
+---
+
+## Objectif
+
+OVHcloud met à votre disposition un espace vous permettant de consulter, gérer et régler vos différentes factures.
+
+**Découvrez comment gérer vos factures depuis votre espace client OVHcloud**
+
+:::info
+En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. En cas de doute, référez-vous à vos contrats OVHcloud (disponibles sur la page [Liste des contrats](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/%23/dedicated/billing/autoRenew/agreements)).
+
+:::
+
+
+<div style={{padding:"56.25% 0 0 0", position:"relative"}}><iframe src="https://player.vimeo.com/video/696213687?h=78a6ea1e6e&title=0&byline=0&portrait=0" style={{position:"absolute", top:"0", left:"0", width:"100%", height:"100%"}} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen={true}></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/696213687">Introduction &agrave; l&rsquo;espace client &ndash; Mes factures</a> from <a href="https://vimeo.com/ovhcloud">OVHcloud</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+## Prérequis
+
+- Être [contact facturation](/guides/account-and-service-management/account-information/managing-contacts/) de votre service.
+
+{/* CP-NAV-START:billing-invoices */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes factures](https://manager.eu.ovhcloud.com/#/billing/history)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > <code className="action">Mes factures</code>
+
+---
+{/* CP-NAV-END:billing-invoices */}
+
+## En pratique
+
+:::info
+Chaque facture vous est envoyée par e-mail et accessible via un lien cliquable. Vous pourrez alors y accéder sur la page [Mes factures](https://manager.eu.ovhcloud.com/#/billing/history). Toute facture reste également disponible depuis la page d'accueil de votre espace client.
+
+:::
+
+
+### Comprendre votre facture
+
+La facture de votre service OVHcloud vous est envoyée suite au règlement d'une commande ou à un renouvellement. Elle récapitule les montants correspondant à l'achat ou au renouvellement de vos produits, ainsi que leurs périodes de validité. La référence d'une facture, pour un compte français, commence toujours par les lettres **FR**.
+
+<img className="thumbnail" alt="Détail d'une facture" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/invoice_ovh.png" loading="lazy" />
+
+|Numéro|Description|
+|---|---|
+|1|Informations sur la facture : référence, date d'émission, bon de commande auquel elle se réfère, type de paiement et identifiant client concerné.|
+|2|Informations du contact facturation.|
+|3|Abonnement : une description du service et de la période facturée|
+|4|Référence : la référence du service facturé|
+|5|Quantité : le nombre d'unités du service facturé|
+|6|Prix unitaire (Hors Taxe) d'un produit|
+|7|Montant total (Toutes Taxes Comprises) de la facture|
+
+### Découvrir l'espace facturation
+
+#### Consulter et gérer ses factures
+
+Pour consulter vos factures, ouvrez la page [Mes factures](https://manager.eu.ovhcloud.com/#/billing/history).
+
+<img className="thumbnail" alt="Facturation" src="/images/assets/screens/control-panel/product-selection/right-menu/my-bills.png" loading="lazy" />
+
+Vous arriverez alors sur une page récapitulative de vos différentes factures :
+
+<img className="thumbnail" alt="Récapitulatif des factures" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/billing_section.png" loading="lazy" />
+
+:::info
+Si une facture est en attente de règlement (statut `Impayé`), le montant dû sera indiqué en rouge dans la colonne `Solde`.
+
+:::
+
+
+Sur chaque ligne du tableau, vous retrouverez les informations suivantes :
+
+- la <code className="action">Référence</code> de la facture (exemple : FR12345678);
+- le <code className="action">Numéro de la commande</code> correspondante;
+- la <code className="action">Date d'émission</code> de la facture;
+- son <code className="action">Montant HT</code>;
+- son <code className="action">Montant TTC</code>;
+- le <code className="action">Solde</code> à régler;
+- le <code className="action">Statut</code> de la facture (`Impayée` ou `Payée`);
+
+En cliquant sur l'un des boutons <code className="action">...</code> à droite du tableau, vous pourrez également :
+
+- <code className="action">Voir la version HTML</code> : la facture s'affichera sur votre navigateur dans un nouvel onglet ;
+- <code className="action">Voir la version PDF</code> : une version PDF téléchargeable de votre facture sera générée automatiquement.
+
+<img className="thumbnail" alt="Actions sur les factures" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/actions_choices.png" loading="lazy" />
+
+:::info
+Si l'une de vos factures est en attente de paiement, un bouton <code className="action">Régler mon solde immédiatement</code> apparaîtra également en cliquant sur <code className="action">...</code>.
+
+:::
+
+
+##### **Filtres**
+
+Plusieurs filtres sont mis à votre disposition :
+
+<img className="thumbnail" alt="Filtres de tri" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/sort_filters.png" loading="lazy" />
+
+Afin de retrouver une facture précise, vous pourrez ainsi indiquer sa référence, le numéro de la commande associée ou sa date d'émission.
+
+##### **Actions de masse**
+
+Via le menu <code className="action">Actions de masse</code>, il vous est enfin possible d'exporter en format *.csv* ou *.pdf* le récapitulatif de vos factures. Les fichiers ainsi créés feront apparaître leur montant, référence et date d'émission.
+
+Si vous souhaitez exporter l'ensemble de vos factures, utilisez les boutons <code className="action">Tout exporter en CSV</code> ou <code className="action">Tout exporter en PDF</code>.
+
+<img className="thumbnail" alt="export_all" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/export_all.png" loading="lazy" />
+
+Si vous souhaitez n'en exporter qu'une partie, cochez les cases correspondantes dans la première colonne du tableau afin de sélectionner les factures qui vous intéressent. Deux nouvelles actions, <code className="action">Exporter la sélection au format CSV</code> ou <code className="action">Exporter la sélection au format PDF</code>, seront alors disponibles dans le menu <code className="action">Actions de masse</code>.
+
+<img className="thumbnail" alt="export_selection" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/export_selection.png" loading="lazy" />
+
+#### Payer vos factures <a name="pay-bills"></a>
+
+Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le menu <code className="action">Actions de masse</code> puis sur le bouton <code className="action">Régler mon solde immédiatement</code>.
+
+<img className="thumbnail" alt="Paiement de la dette" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/pay_debt.png" loading="lazy" />
+
+Un [bon de commande de régularisation](/guides/account-and-service-management/managing-billing-payments-and-services/managing-ovh-orders#le-bon-de-commande/) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
+
+:::info
+Si vous souhaitez régler une facture pour le compte d'une administration publique, suivez les instructions de ce [guide](/guides/account-and-service-management/managing-billing-payments-and-services/mandat-administratif/).
+
+:::
+
+
+#### Demander l'annulation d'une facture
+
+:::info
+Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services/).
+
+:::
+
+
+Si vous avez reçu une facture que vous ne considérez pas comme légitime et souhaitez en demander le remboursement, ou faire valoir votre [droit de rétractation](/guides/account-and-service-management/managing-billing-payments-and-services/managing-ovh-orders#appliquer-le-droit-de-retractation/), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](https://manager.eu.ovhcloud.com/#/billing/history), sous réserve de l'application de nos [Conditions Générales de Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-fr.pdf).
+<br/> Cliquez en haut à droite de votre écran sur votre nom, puis sur <code className="action">Créer un ticket</code>.
+
+### Suivre vos paiements
+
+Retrouvez l'historique des paiements effectués dans <code className="action">Mes factures</code> puis <code className="action">Suivi des paiements</code>. Vous pouvez ainsi faire le lien entre chaque facture et le paiement associé.
+
+<img className="thumbnail" alt="Suivi des paiements" src="/images/account-and-service-management/managing-billing-payments-and-services/invoice-management/payment_tracking.png" loading="lazy" />
+
+Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement au format *.csv*, via le bouton <code className="action">Exporter en CSV</code> (1). Plusieurs filtres sont aussi à votre disposition via le bouton <code className="action">Filtrer</code> (2).
+
+:::info
+Si vous constatez une différence entre un paiement et le montant d'une facture, cela signifie que vous possédiez un avoir qui a automatiquement diminué le montant prélevé.
+
+:::
+
+
+## Aller plus loin
+
+[Gérer le renouvellement de mes services](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal/)
+
+[Gérer mes moyens de paiement](/guides/account-and-service-management/managing-billing-payments-and-services/manage-payment-methods/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

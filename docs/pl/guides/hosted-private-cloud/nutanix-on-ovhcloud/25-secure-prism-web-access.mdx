@@ -1,0 +1,62 @@
+---
+title: Zabezpieczenie dostępu do Internetu w Prism Central (EN)
+description: Find out how to restrict Prism Central Web access
+lastUpdated: 2022-01-11
+---
+
+## Objective
+
+After delivery, Prism Central is accessible on the public Internet. Access restriction to one or more IP addresses can be achieved through the [OVHcloud Load Balancer](https://www.ovhcloud.com/pl/network/load-balancer/).
+
+**This guide explains how to secure access to Prism Central.**
+
+:::warning
+OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+
+This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](https://www.ovhcloud.com/pl/professional-services/) or a [specialist service provider](https://partner.ovhcloud.com/pl/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+
+:::
+
+
+## Requirements
+
+- A Nutanix cluster in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+
+## Instructions
+
+### Step 1: Find the relevant Load Balancer
+
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) and open the Nutanix cluster vRack configuration page.
+
+Identify the name of your Load Balancer.
+
+<img className="thumbnail" alt="vRack image" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/25-secure-prism-web-access/vRack1.png" loading="lazy" />
+
+### Step 2: Access your Load Balancer front-ends
+
+Select your Load Balancer identified in the previous step.
+
+<img className="thumbnail" alt="IPLB Access" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/25-secure-prism-web-access/iplb1.png" loading="lazy" />
+
+Open the <code className="action">Front-ends</code> tab.
+
+<img className="thumbnail" alt="IPLB Front-Ends" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/25-secure-prism-web-access/iplb2.png" loading="lazy" />
+
+### Step 3: Edit the Prism Central front-end
+
+Click on the <code className="action">...</code> button in the table and select <code className="action">Edit</code>.
+
+<img className="thumbnail" alt="edit Front-End Prism Central" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/25-secure-prism-web-access/iplb3.png" loading="lazy" />
+
+### Step 4: Add the authorised IPs
+
+In the advanced settings, you can now add your public ISP IP address or any IP addresses from which acesss should be granted to Prism Central Web.
+
+<img className="thumbnail" alt="edit Front-End Prism Central" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/25-secure-prism-web-access/iplb4.png" loading="lazy" />
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

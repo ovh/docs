@@ -1,0 +1,196 @@
+---
+title: AI Notebooks - Manage and use data in a notebook via UI
+description: Learn how to manage and access data from your Object Storage in your Notebook
+lastUpdated: 2023-08-08
+---
+
+## Objective
+
+This guide shows how to access Object Storage data from your [**notebooks**](/guides/public-cloud/ai-machine-learning/notebook-guide-introduction-definition/) via the OVHcloud Control Panel.
+
+## Requirements
+
+- a [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de)
+- a Public Cloud user with `Administrator` or `AI Training operator` role, see [here](/guides/public-cloud/ai-machine-learning/gi-01-manage-users/) for more information
+
+## Upload data to your Object Storage
+
+First, you need to push some data to the `Object Storage` before accessing it from the notebook.
+
+You can access to the `Object Storage` section of your Public Cloud project on the OVHcloud Control Panel.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-object-storage.png" loading="lazy" />
+
+:::info
+You can upload different types of data: datasets, code, notebooks, connection weights, text or csv files, etc.
+
+:::
+
+
+To upload your data, go to `Create an object container`.
+
+Let's assume that a file named `my-dataset.zip` exists locally on your computer and contains your dataset. You will be able to upload it into an object container in your Object Storage by following these steps.
+
+### 1- Select your solution
+
+:::warning
+If you choose an S3* compatible Object Storage solution, please note that they are not yet compatible with our AI products from the Control Panel (UI). **To use S3 compatible buckets, you will need to use [ovhai](/guides/public-cloud/ai-machine-learning/cli-10-howto-install-cli/)**. The Control Panel allows you to use Swift containers only.
+
+:::
+
+
+If you want to know more about the different storage solutions, refer to this page.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-container-solution.png" loading="lazy" />
+
+### 2- Select a region
+
+:::info
+To optimize the download and upload times, we advise you to store your data in the same place as your notebook (`GRA` or `BHS`).
+
+:::
+
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-container-region.png" loading="lazy" />
+
+### 3- Select a type of container
+
+Choose the type of your data according to what you want to do.
+
+:::info
+**Example:** for a dataset that you use to train your model, the `Private` type is appropriate
+
+:::
+
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-container-type.png" loading="lazy" />
+
+### 4- Name your container
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-container-name.png" loading="lazy" />
+
+You have created your container to host your dataset.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-object-container-created.png" loading="lazy" />
+
+You are now ready to load your data!
+
+### 5- Add objects to your container
+
+In order to upload your dataset into your object container `my-dataset`, you have to go on `Add objects` and select your local `my-dataset.zip` file.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-add-objects-to-container.png" loading="lazy" />
+
+You will now see your `my-dataset.zip` file displayed in your object container.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-zip-file-uploaded.png" loading="lazy" />
+
+:::info
+You can also create a new empty `my-weights` container in which you can save your **connection weights** (or your **validated model**) at the end of your training.
+
+:::
+
+
+We assume that we now have two object containers available:
+
+- `my-dataset`, containing the file `my-dataset.zip`
+- `my-weights`, empty
+
+You are now ready to launch a notebook with your data!
+
+## Launch a notebook with attached data
+
+To launch an AI notebook, access the **AI Notebooks** section of your Public Cloud project in the OVHcloud Control Panel.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-ai-notebooks.png" loading="lazy" />
+
+For the *first 4 steps* of the notebook creation, please refer to this [tutorial](/guides/public-cloud/ai-machine-learning/notebook-guide-introduction-definition/).
+
+### Choose the notebook location
+
+You can choose between *2 datacenters* for the storage of your notebook: `GRA` or `BHS`.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-notebook-localisation.png" loading="lazy" />
+
+### Attach container or a Git repository
+
+You can attach your different types of data to your notebook.
+
+:::warning
+As mentioned before, S3 compatible buckets are not yet compatible with our AI products from the Control Panel. To use S3 compatible solutions, you will need to use the [ovhai](/guides/public-cloud/ai-machine-learning/cli-10-howto-install-cli/) CLI.
+
+:::
+
+
+#### Access with Read-Only permissions
+
+You can load the container `my-dataset` in the `/workspace/dataset` directory, with `Read-only` permission.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-notebook-dataset-ro.png" loading="lazy" />
+
+You will not be able to modify the dataset from this notebook because you loaded it with `Read-only` permission.
+
+`Read-only` permissions are to ensure you don't modify your data by mistake. If you want to modify data from your
+notebooks, to store a trained neural network for example, you can use the `Read-write` permission instead.
+
+#### Access with Read-Write permissions
+
+Similarly to the `Read-only` mode, you can load data with `Read-write` permission.
+
+Once you have some data that you want to save from the notebook to Object Storage (connection weights in this example), you can simply write it to the `/workspace/weights` folder.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-notebook-weights-rw.png" loading="lazy" />
+
+This folder will be uploaded to your Object Storage when you stop your notebook.
+
+As long as your notebook is in the `STOPPING` state, this means that the upload is still in progress. Once the state changes to `STOPPED`, it means all the data was uploaded to your Object Storage.
+
+#### Attach a public Git repository
+
+If Python code, notebooks or other files are available on a public GitHub repository, you can attach them to your notebook.
+To be able to edit and make changes easily, use the Read-write permission.
+
+The command is as follows:
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-notebook-git-repo-rw.png" loading="lazy" />
+
+:::warning
+To make your command valid, don't forget to add a `.git` at the end of the GitHub repository URL.
+
+:::
+
+
+#### Use cached volumes
+
+When loading large files from the `Object Storage`, it can take some time to download to your notebooks. In these cases, you can cache the volumes so that it does not need to be downloaded again when you start new notebooks that use the same data.
+
+To do so, you can check `Cache`.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-notebook-dataset-cache.png" loading="lazy" />
+
+Cached volumes will be deleted at least 72 hours after the last notebook using it has stopped.
+Note that the cache is shared with all users in your project. The main consequence you need to be careful about
+is the fact that if someone else modifies the data in your cached volume, you will also see the modifications on your side.
+
+### Launch and access the notebook
+
+Your notebook is now ready to be launched with your data!
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-notebook-attached-data.png" loading="lazy" />
+
+You can read the [Getting started](/guides/public-cloud/ai-machine-learning/notebook-guide-introduction-definition/) page to know how to find this URL.
+
+As soon as you access your notebook, you will see your different folders containing your data.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-guide-data-ui/ui-notebook-containers.png" loading="lazy" />
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

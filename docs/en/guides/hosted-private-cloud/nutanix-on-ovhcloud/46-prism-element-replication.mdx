@@ -1,0 +1,255 @@
+---
+title: Asynchronous or NearSync replication through Prism Element
+description: How to set up asynchronous or NearSync replication through Prism Element
+lastUpdated: 2024-05-13
+---
+
+## Objective
+
+This guide details how to set up cluster replication via Prism Element.
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure  that they function correctly.
+
+This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+
+:::
+
+
+## Introduction
+
+Via **Prism Element**, you can:
+
+- Add links to remote clusters.
+- Create protection domains to add replications to remote sites.
+
+:::warning
+The **Starter** pack of the Nutanix on OVHcloud packaged service allows you to use asynchronous replicas **every hour**.
+
+For a shorter replication time between 1 and 15 minutes, you must configure NearSync replicas. This option is only available with the **Pro** or **Ultimate** OVHcloud packs.
+
+:::
+
+
+## Requirements
+
+- Two Nutanix clusters in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to your clusters via **Prism Central**
+- An interconnection between two clusters, e.g. via an IPsec VPN
+
+## Instructions
+
+We will use two Nutanix clusters in OVHcloud data centres, one in Canada and the other in France, connected via an IPsec VPN, on two different IP addressing schemes which are:
+
+- **192.168.0.0/24** for the cluster in a data centre in France.
+- **192.168.10.0/24** for the cluster in a Canadian data centre.
+
+If you need help setting up an IPsec VPN, please refer to our guide on [interconnecting two Nutanix clusters through an IPsec VPN](/guides/hosted-private-cloud/nutanix-on-ovhcloud/44-ipsec-interconnection/).
+
+Connect via **Prism Element** to the cluster in France from **Prism Central**, as shown in this documentation: [Nutanix Hyperconvergence](/guides/hosted-private-cloud/nutanix-on-ovhcloud/03-nutanix-hci/).
+
+Click <code className="action">Data Protection</code> from the <code className="action">Home</code> menu.
+
+<img className="thumbnail" alt="01 Create Remote Site From France01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france01.png" loading="lazy" />
+
+Click <code className="action">Remote Site</code> on the left side of the screen.
+
+<img className="thumbnail" alt="01 Create Remote Site From France02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france02.png" loading="lazy" />
+
+Click <code className="action">+ Remote Site</code> to the right of the screen and choose <code className="action">Physical Cluster</code> to add a remote site.
+
+<img className="thumbnail" alt="01 Create Remote Site From France04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france04.png" loading="lazy" />
+
+Name the remote site in the `REMOTE SITE NAME` field, enter the IP address of the **Prism Element** of the remote site in France in the `CLUSTER VIRTUAL IP` field, and click <code className="action">Add Site</code>.
+
+<img className="thumbnail" alt="01 Create Remote Site From France05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france05.png" loading="lazy" />
+
+Scroll through the window using the <code className="action">scroll bar</code>.
+
+<img className="thumbnail" alt="01 Create Remote Site From France06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france06.png" loading="lazy" />
+
+In the **Network Mapping** section, select `AHV:base` in the **Source Cluster** and **Destination Cluster** drop-down menus. Then click the <code className="action">+</code> button.
+
+<img className="thumbnail" alt="01 Create Remote Site From France07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france07.png" loading="lazy" />
+
+If you have another VLAN, repeat the same operation with `AHV VLAN: VLAN50`. Click the <code className="action">+</code> button to validate the association of source and destination networks.
+
+<img className="thumbnail" alt="01 Create Remote Site From France08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france08.png" loading="lazy" />
+
+Choose `default-container...` from the **Source VStore** and **Destination VStore** drop-down menus. Then click the <code className="action">+</code> button to connect the source and destination storage.
+
+<img className="thumbnail" alt="01 Create Remote Site From France09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france09.png" loading="lazy" />
+
+Click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="01 Create Remote Site From France10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france10.png" loading="lazy" />
+
+The remote site will then appear in the list.
+
+<img className="thumbnail" alt="01 Create Remote Site From France11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/01-create-remote-site-from-france11.png" loading="lazy" />
+
+We will now connect to the **Prism Element** interface of the remote site in Canada and perform the same operation.
+
+From the <code className="action">Home</code> menu, click <code className="action">Data Protection</code>.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada01.png" loading="lazy" />
+
+Click <code className="action">Remote Site</code> on the left side of the screen.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada02.png" loading="lazy" />
+
+Click <code className="action">+ Remote Site</code> to the right of the screen and choose <code className="action">Physical Cluster</code> to add a remote site.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada04.png" loading="lazy" />
+
+Name the remote site in the `REMOTE SITE NAME` field, enter the IP address of the **Prism Element** of the remote site in Canada in the `CLUSTER VIRTUAL IP` field, and click <code className="action">Add Site</code>.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada05.png" loading="lazy" />
+
+Scroll through the window using the <code className="action">scroll bar</code>.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada06.png" loading="lazy" />
+
+In the **Network Mapping** section, select `AHV:base` in the **Source Cluster** and **Destination Cluster** drop-down menus. Then click the <code className="action">+</code> button.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada07.png" loading="lazy" />
+
+If you have another VLAN, repeat the same operation with `AHV VLAN: VLAN50`. Click the <code className="action">+</code> button to validate the association of source and destination networks.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada08.png" loading="lazy" />
+
+Choose `default-container...` from the **Source VStore** and **Destination VStore** drop-down menus. Then click the <code className="action">+</code> button to connect the source and destination storage.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada09.png" loading="lazy" />
+
+Click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada10.png" loading="lazy" />
+
+The remote site will then appear in the list. 
+
+<img className="thumbnail" alt="02 Create Remote Site From Canada11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/02-create-remote-site-from-canada11.png" loading="lazy" />
+
+### Setting up inter-site replication
+
+Now that the two sites are connected, we will create a protection domain with asynchronous replication containing three virtual machines located on the cluster in France to the remote site in Canada.
+
+Return to the cluster’s **Prism Element** interface, located in France.
+
+Choose <code className="action">Data Protection</code> from the main <code className="action">Home</code> menu.
+
+<img className="thumbnail" alt="03 Create dataprotection 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection01.png" loading="lazy" />
+
+In the **Data Protection** dashboard, click <code className="action">+ Protection Domain</code> in the top right-hand corner, then <code className="action">Async DR</code>.
+
+<img className="thumbnail" alt="03 Create data protection 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection03.png" loading="lazy" />
+
+Name the protection domain and click <code className="action">Create</code>.
+
+<img className="thumbnail" alt="03 Create dataprotection 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection04.png" loading="lazy" />
+
+Select three virtual machines and click <code className="action">Protect Selected Entities</code>.
+
+<img className="thumbnail" alt="03 Create dataprotection 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection05.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="03 Create dataprotection 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection06.png" loading="lazy" />
+
+Click <code className="action">New Schedule</code> to configure the schedule.
+
+<img className="thumbnail" alt="03 Create dataprotection 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection07.png" loading="lazy" />
+
+Modify this option to **Configure your local schedule**:
+
+- Enter **Repeat every** `1 hour`. 
+
+Then enter the retention policies in **Retention policy**:
+
+- Choose locally and remotely **keep the last** `2` **snapshots** to keep two snapshots locally and remotely.
+
+Click <code className="action">Create Schedule</code> to commit the schedule.
+
+<img className="thumbnail" alt="03 Create dataprotection 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection08.png" loading="lazy" />
+
+The replication task is created to run hourly. This will be asynchronous replication, which can be used with the OVHcloud **Starter** pack. 
+
+Click <code className="action">Close</code> to close the window.
+
+:::info
+You can change the schedule to reduce the risk of data loss in the event of a disaster, but replication will switch from asynchronous to *NearSync* mode, and you will then need to upgrade your licence to the OVHcloud **Pro** or **Ultimate** packs.
+
+:::
+
+
+<img className="thumbnail" alt="03 Create dataprotection 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection09.png" loading="lazy" />
+
+The protection domain is created and appears in the list.
+
+<img className="thumbnail" alt="03 Create data protection 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/03-create-dataprotection10.png" loading="lazy" />
+
+### Virtual machine migration
+
+Migrating VMs is an operation to move VMs that are members of a protection domain to the remote site without losing data. Both clusters must be online and communicate correctly with each other. 
+
+The migration steps are as follows:
+
+1. Stopping virtual machines on the source cluster (if they are turned on).
+2. Replication of missing data to destination cluster.
+3. Deleting virtual machines on the source cluster.
+4. Disable scheduling.
+5. Enabling virtual machines on the destination cluster.
+6. Replication is reversed, the destination becomes the source.
+
+Go to the **Prism Element** interface where the replicated virtual machines are located.
+
+In the **Data Protection** dashboard, click <code className="action">Migrate</code>. 
+
+<img className="thumbnail" alt="04 Migrate VM to Canada 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/04-migrate-to-canada01.png" loading="lazy" />
+
+Select the remote site, type `MIGRATE`, and click <code className="action">Migrate</code>.
+
+<img className="thumbnail" alt="04 Migrate VM to Canada 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/04-migrate-to-canada02.png" loading="lazy" />
+
+The migration is then launched. It will be completed when the VMs appear at the remote site and are no longer visible at the original site. 
+
+Since the migrated virtual machines are turned off, you must start them manually.
+
+<img className="thumbnail" alt="04 Migrate VM to Canada 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/04-migrate-to-canada03.png" loading="lazy" />
+
+### Virtual machine failover in case of disaster
+
+If the original site is down, you can enable virtual machines that are members of a protection domain at the destination site. 
+
+:::warning
+Activation of virtual machines at the remote site will be done with the latest replicated data. For asynchronous replication, the maximum data loss risk is one hour.
+
+:::
+
+
+Connect to the functional site with **Prism Element**.
+
+Go to the **Data Protection** dashboard.
+
+Select the site to activate and click <code className="action">Activate</code>. 
+
+<img className="thumbnail" alt="05 Active VM on remote site 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/05-activate-protection-domain01.png" loading="lazy" />
+
+Click <code className="action">Yes</code>. 
+
+<img className="thumbnail" alt="05 Active VM on remote site 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/46-prism-element-replication/05-activate-protection-domain02.png" loading="lazy" />
+
+The virtual machines will appear in the **Prism Element** console in the state of last replication. Data modified after the last valid replication will be lost.
+
+## Go further
+
+[Disaster Recovery Plan in Nutanix](/guides/hosted-private-cloud/nutanix-on-ovhcloud/43-disaster-recovery-plan-overview/)
+
+[IPsec interconnection between two sites](/guides/hosted-private-cloud/nutanix-on-ovhcloud/44-ipsec-interconnection/)
+
+[Nutanix Documentation on Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

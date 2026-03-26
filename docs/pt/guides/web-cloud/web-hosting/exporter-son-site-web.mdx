@@ -1,0 +1,152 @@
+---
+title: Exportar o seu website
+description: Descubra como exportar o seu website OVHcloud
+lastUpdated: 2025-10-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objetivo
+
+Este guia mostra-lhe as etapas para exportar todos os elementos do seu website para o formato padrão, a partir de um [alojamento web OVHcloud.](https://www.ovhcloud.com/pt/web-hosting/).
+
+**Descubra como exportar o seu website OVHcloud.**
+
+## Requisitos
+
+- Ter um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Alojamentos</code> > Selecione o seu alojamento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instruções
+
+### 1 - Recuperação dos ficheiros do seu espaço de armazenamento FTP
+
+#### 1.1 Aceder ao espaço de armazenamento
+
+Para se ligar ao seu espaço de armazenamento, deve dispor dos seguintes elementos:
+
+- o nome de utilizador FTP ou SSH ativo;
+- a palavra-passe associada ao nome de utilizador FTP ou SSH;
+- o endereço do servidor;
+- a porta de ligação ao servidor.
+
+Estes elementos foram-lhe enviados no e-mail enviado após a instalação do seu alojamento web.
+
+Se não possuir estas informações, clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+
+<Tabs>
+  <Tab label="Etapa 1">
+    Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção <code className="action">Web Cloud</code>.
+    
+    <img className="thumbnail" alt="Web Cloud" src="/images/assets/screens/control-panel/product-selection/web-cloud.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 2">
+    Clique no menu <code className="action">Alojamentos</code> e escolha o alojamento web em causa.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 3">
+    Na página que se abrir, clique no separador <code className="action">FTP - SSH</code>.
+    
+    <img className="thumbnail" alt="FTP - SSH" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh.png" loading="lazy" />
+  </Tab>
+  <Tab label="Etapa 4">
+    Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo.
+    
+    <img className="thumbnail" alt="FTP -SSH tab" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png" loading="lazy" />
+
+Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/guides/web-cloud/web-hosting/ftp-connection/).
+    
+    Caso tenha perdido a palavra-passe, consulte o manual ["Modificar a palavra-passe de um utilizador FTP"](/guides/web-cloud/web-hosting/ftp-change-password/).
+  </Tab>
+</Tabs>
+
+
+Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no espaço de armazenamento pode ser realizado de duas formas:
+
+- **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível, como o [FileZilla](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/). Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização, OVHcloud não criou esse programa;
+
+- **Utilizar um acesso SSH**: terá de utilizar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos mais avançados, bem como um [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) específica. Para mais informações, pode consultar o nosso guia  ["Utilizar o acesso SSH do seu alojamento web"](/guides/web-cloud/web-hosting/ssh-on-webhosting/). 
+
+#### 1.2 Transferir os ficheiros a partir do seu espaço de armazenamento
+
+Uma vez ligado ao seu espaço de armazenamento, resta-lhe apenas transferir os ficheiros do seu site. **Recomendamos que seja especialmente atento ao diretório em que instalou o seu site**. Num cenário de utilização comum, o site deve ser transferido para a pasta « www ». No entanto, se estiver a utilizar o seu alojamento para alojar vários sítios Web, certamente declarou vários sítios Web.
+
+Para verificar a pasta em que o seu site está armazenado, posicione-se no separador <code className="action">Multisite</code> a partir da sua Área de cliente OVHcloud. No quadro que aparece, para o domínio pretendido, consulte o <code className="action">Pasta raiz</code> que aparece.
+
+<img className="thumbnail" alt="export-website" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png" loading="lazy" />
+
+### 2 - Recuperar o backup da sua base de dados (opcional) 
+
+:::info
+Esta etapa é opcional se o seu website não utiliza uma base de dados.
+
+:::
+
+
+Para recuperar um backup da sua base de dados, consulte o nosso guia:
+["Recuperar o backup da base de dados de um alojamento web"](/guides/web-cloud/web-hosting/sql-database-export/).
+
+Se utiliza uma base de dados **Web Cloud Databases** para o seu website, consulte a secção dedicada ao backup no nosso guia:
+[Backup e exportação de uma base de dados no servidor de bases de dados](/guides/web-cloud/web-cloud-databases/save-export-on-database-server/).
+
+### 3 - Recuperar os logs do seu alojamento OVHcloud
+
+Se deseja guardar o histórico dos logs do seu website, pode aceder aos logs no seu alojamento.
+
+Clique em <code className="action">Alojamentos</code> e selecione o plano correspondente. Clique no separador <code className="action">Estatísticas e logs</code>.
+
+<img className="thumbnail" alt="statistics-and-logs" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png" loading="lazy" />
+
+A seguir, clique na ligação sob a menção <code className="action">Consultar os logs</code>:
+
+<img className="thumbnail" alt="export-website" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png" loading="lazy" />
+
+Aparece uma janela com os diferentes tipos de logs disponíveis.  Estão classificados por mês:
+
+| Tipo  	| Descrição                                                                                                                                                                                         	|
+|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Web   	| Encontre aqui os diferentes logs de consulta do seu site, assim como as diferentes ações realizadas a partir do seu site. Isto permite, por exemplo, detetar tentativas de pirataria. 	|
+| FTP   	| as várias ligações FTP serão guardadas e armazenadas nestes logs.                                                                                                                     	|
+| Error 	| os vários erros gerados pelo seu site.                                                                                                                                                    	|
+| CGI   	| as várias chamadas para os scripts do cgi.bin que foram feitas.                                                                                                                                     	|
+| out   	| as estatísticas do seu alojamento sobre as várias chamadas externas efetuadas.                                                                                                                  	|
+| ssh   	| estes logs indicam as diferentes ligações feitas com o protocolo SSH.                                                                                                                      	|
+| cron  	| o resultado da execução das suas tarefas planeadas.                                                                                                                                                	|
+
+<img className="thumbnail" alt="export-website" src="/images/assets/screens/other/web-tools/logs/raw-logs-general.png" loading="lazy" />
+
+Quando seleciona o tipo de logs para o mês que mais lhe interessa, estes são arquivados por dia:
+
+<img className="thumbnail" alt="export-website" src="/images/assets/screens/other/web-tools/logs/raw-logs.png" loading="lazy" />
+
+## Quer saber mais?
+
+[Aceder ao espaço de armazenamento do alojamento web](/guides/web-cloud/web-hosting/ftp-connection/)
+
+[Alterar a palavra-passe de um utilizador FTP](/guides/web-cloud/web-hosting/ftp-change-password/)
+
+[Utilização do programa FileZilla com o seu alojamento](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)
+
+[Utilizar o acesso SSH do seu alojamento web](/guides/web-cloud/web-hosting/ssh-on-webhosting/)
+
+[Recuperar o backup da base de dados de um alojamento web](/guides/web-cloud/web-hosting/sql-database-export/)
+
+[Web Cloud Databases - primeira utilização](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en). 

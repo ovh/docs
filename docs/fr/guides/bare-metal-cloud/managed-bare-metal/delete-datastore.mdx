@@ -1,0 +1,44 @@
+---
+title: Supprimer un datastore
+description: Découvrez comment supprimer un datastore de votre Managed Bare Metal
+lastUpdated: 2020-11-18
+---
+
+## Objectif
+
+Dans certains cas, il peut être utile de supprimer un datastore de votre cluster, par exemple pour le remplacer ou le faire évoluer vers une taille supérieure.
+
+**Ce guide vous explique comment retirer en toute sécurité un datastore de votre infrastructure.**
+
+## Prérequis
+
+* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
+* Accéder à l’interface de gestion vSphere.
+
+## En pratique
+
+:::warning
+Attention, il n'est pas possible de supprimer les **deux datastores de 300 Go ou 1,2 To** inclus dans votre pack. Pour des raisons de sécurité, la demande de suppression échouera également si vous avez des machines virtuelles (VM) présentes sur le datastore concerné (vous trouverez la liste dans la fenêtre de validation).
+
+:::
+
+
+Pour supprimer un datastore, la première étape consiste à effectuer un clic droit sur la ressource concernée. Sélectionnez <code className="action">OVHcloud</code>, puis <code className="action">Retirer ce stockage</code>.
+
+<img className="thumbnail" alt="Choix du datastore" src="/images/bare-metal-cloud/managed-bare-metal/delete-datastore/removedatastore01.png" loading="lazy" />
+
+Une fenêtre de confirmation s'ouvre. Validez alors avec <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Confirmation de la suppression" src="/images/bare-metal-cloud/managed-bare-metal/delete-datastore/removedatastore02.png" loading="lazy" />
+
+La demande de suppression est dès lors prise en compte.
+
+<img className="thumbnail" alt="Suppression validée" src="/images/bare-metal-cloud/managed-bare-metal/delete-datastore/removedatastore03.png" loading="lazy" />
+
+Il est possible de surveiller la progression de la suppression du datastore via les tâches récentes.
+
+<img className="thumbnail" alt="Tâche de suivi de la suppression" src="/images/bare-metal-cloud/managed-bare-metal/delete-datastore/removedatastore04.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

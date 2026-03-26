@@ -1,0 +1,141 @@
+---
+title: Ajouter un enregistrement DNS de type A pour un nom de domaine
+description: Découvrez comment ajouter un enregistrement DNS de type A dans une zone DNS gérée chez OVHcloud pour votre nom de domaine
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objectif
+
+Vous souhaitez que votre site web soit accessible via votre nom de domaine ? Pour cela, votre nom de domaine doit pointer vers l'adresse IP du service sur lequel votre site web est situé (hébergement web, serveur dédié, VPS, etc.). Vous devrez alors configurer la zone DNS active de votre nom de domaine à l'aide d'un enregistrement DNS de type A.
+
+**Découvrez comment ajouter un enregistrement DNS de type A dans une zone DNS gérée chez OVHcloud pour votre nom de domaine.**
+
+:::info
+Pour modifier ou supprimer un enregistrement DNS de type A d'une zone DNS OVHcloud, suivez [ce guide](/guides/web-cloud/domains/dns-zone-edit/).
+
+:::
+
+
+## Prérequis
+
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Disposer d'une zone DNS associée à ce nom de domaine chez OVHcloud.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Zones DNS</code> > Sélectionnez votre nom de domaine
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## En pratique
+
+:::warning
+L'ajout, la modification ou la suppression d'enregistrements DNS dans une zone DNS active est une manipulation sensible. En cas de doute, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
+
+:::
+
+
+### Ajouter un enregistrement DNS de type A pour un nom de domaine
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Zones DNS](https://manager.eu.ovhcloud.com/#/web/zone), puis choisissez le nom de domaine concerné.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Cliquez sur le bouton <code className="action">Ajouter une entrée</code>.
+  </Tab>
+  <Tab label="Étape 3">
+    Dans la fenêtre qui s'ouvre, sélectionnez le champ de pointage de type <code className="action">A</code>.
+  </Tab>
+  <Tab label="Étape 4">
+    Renseignez dans le champ `Cible *` l'adresse IP (par exemple : `203.0.113.0`) du service sur lequel votre site web est situé (hébergement web, serveur dédié, VPS, etc.), puis cliquez sur <code className="action">Suivant</code>.
+  </Tab>
+  <Tab label="Étape 5">
+    Vérifiez le résumé, puis cliquez sur <code className="action">Valider</code>. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Cliquez ici pour plus d'informations.</summary>
+
+
+Consultez nos guides détaillés :
+
+- [Tout savoir sur les zones DNS](/guides/web-cloud/domains/dns-zone-general-information/).
+- [Tout savoir sur les enregistrements DNS](/guides/web-cloud/domains/dns-zone-records/).
+- [Éditer une zone DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+- [Hébergement web - Partager son hébergement entre plusieurs sites](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+- [Hébergement web - Modifier un nom de domaine déjà associé](/guides/web-cloud/web-hosting/multisites-modify-domain/).
+
+</details>
+
+
+### Ajouter un enregistrement DNS de type A pour le sous-domaine d'un nom de domaine
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Zones DNS](https://manager.eu.ovhcloud.com/#/web/zone), puis choisissez le nom de domaine concerné.
+    
+    <img className="thumbnail" alt="DNS zones" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Cliquez sur le bouton <code className="action">Ajouter une entrée</code>.
+  </Tab>
+  <Tab label="Étape 3">
+    Dans la fenêtre qui s'ouvre, sélectionnez le champ de pointage de type <code className="action">A</code>.
+  </Tab>
+  <Tab label="Étape 4">
+    Renseignez dans le champ `Sous-domaine` le sous-domaine concerné (par exemple : `www` pour le sous-domaine `www.domain.tld`), et, dans le champ `Cible *`, l'adresse IP (par exemple : `203.0.113.0`) du service sur lequel votre site web est situé (hébergement web, serveur dédié, VPS, etc.). Cliquez sur <code className="action">Suivant</code>.
+  </Tab>
+  <Tab label="Étape 5">
+    Vérifiez le résumé, puis cliquez sur <code className="action">Valider</code>. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
+  </Tab>
+</Tabs>
+
+
+<details>
+
+<summary>Cliquez ici pour plus d'informations.</summary>
+
+
+Consultez nos guides détaillés :
+
+- [Tout savoir sur les zones DNS](/guides/web-cloud/domains/dns-zone-general-information/).
+- [Tout savoir sur les enregistrements DNS](/guides/web-cloud/domains/dns-zone-records/).
+- [Comment créer un sous-domaine](/guides/web-cloud/domains/domain-create-subdomains/).
+- [Éditer une zone DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+- [Hébergement web - Partager son hébergement entre plusieurs sites](/guides/web-cloud/web-hosting/multisites-configure-multisite/).
+- [Hébergement web - Modifier un nom de domaine déjà associé](/guides/web-cloud/web-hosting/multisites-modify-domain/).
+
+</details>
+
+
+## Aller plus loin
+
+[Tout savoir sur les zones DNS](/guides/web-cloud/domains/dns-zone-general-information/).
+
+[Tout savoir sur les enregistrements DNS](/guides/web-cloud/domains/dns-zone-records/).
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

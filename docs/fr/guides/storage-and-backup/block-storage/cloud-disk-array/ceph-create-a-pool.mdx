@@ -1,0 +1,100 @@
+---
+title: Cloud Disk Array - Comment créer un pool
+description: "Découvrez comment créer un un pool via l'espace client OVHcloud ou l'API OVHcloud"
+lastUpdated: 2025-05-06
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+Ce guide vous montre comment créer un pool pour votre cluster Ceph, en utilisant l'espace client OVHcloud ou l'API OVHcloud.
+
+## Prérequis
+
+- Une solution [Cloud Disk Array](https://www.ovhcloud.com/fr/storage-solutions/cloud-disk-array/)
+
+{/* CP-NAV-START:storage-cloud-disk-array */}
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Cloud Disk Array](https://manager.eu.ovhcloud.com/#/dedicated/cda)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">Cloud Disk Array</code> > Sélectionnez votre service
+
+---
+{/* CP-NAV-END:storage-cloud-disk-array */}
+
+## En pratique
+
+:::info
+L'utilisation de l'espace client OVHcloud est la méthode la plus simple pour créer un pool.
+
+:::
+
+
+### Depuis l'espace client OVHcloud
+
+Vous retrouverez les pools existants dans l’onglet <code className="action">Pools</code>.
+
+<img className="thumbnail" alt="Ceph pools" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-create-a-pool/ceph-add-pool-1.png" loading="lazy" />
+
+Entrez un nom de pool, celui-ci doit comporter au moins trois caractères.
+
+<img className="thumbnail" alt="Ceph pool creation" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-create-a-pool/ceph-add-pool-2.png" loading="lazy" />
+
+Vous pouvez alors voir que le statut du cluster a changé car le pool est en cours de création.
+
+<img className="thumbnail" alt="Ceph pool creation is running" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-create-a-pool/ceph-task-1.png" loading="lazy" />
+
+## Depuis l'API OVHcloud
+
+:::tip[Success]
+Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) ».
+
+:::
+
+
+Utilisez l'appel API ci-dessous pour créer votre pool :
+
+<Api version="v1" section="/dedicated/ceph" method="POST" route={"/dedicated/ceph/\{serviceName\}/pool"} />
+
+
+`serviceName` est le fsid de votre cluster.
+
+Vous pouvez vérifier la création d'un pool en consultant la liste des pools, via l'appel API suivant :
+
+<Api version="v1" section="/dedicated/ceph" method="GET" route={"/dedicated/ceph/\{serviceName\}/pool"} />
+
+Par example:
+
+```bash
+GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/pool
+[
+{
+  replicaCount: 3
+  serviceName: "98d166d8-7c88-47b7-9cb6-63acd5a59c15"
+  name: "rbd"
+  minActiveReplicas: 2
+  poolType: "REPLICATED"
+  backup: false
+},
+{
+  replicaCount: 3
+  serviceName: "98d166d8-7c88-47b7-9cb6-63acd5a59c15"
+  name: "testpool"
+  minActiveReplicas: 2
+  poolType: "REPLICATED"
+  backup: true
+  }
+]
+```
+
+## Aller plus loin
+
+Rendez-vous sur notre chaîne Discord dédiée : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

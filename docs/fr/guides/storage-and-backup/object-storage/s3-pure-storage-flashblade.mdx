@@ -1,0 +1,94 @@
+---
+title: Object Storage - Utiliser Object Storage avec Pure Storage Flashblade
+description: Configurez Pure Storage Flashblade pour collaborer avec OVHcloud Object Storage
+lastUpdated: 2025-07-08
+---
+
+## Objectif
+
+Ce guide a pour but de vous aider à configurer et à utiliser OVHcloud Object Storage comme cible de réplication pour Pure Storage [Flashblade unified storage platform](https://www.purestorage.com/fr/products/unstructured-data-storage/flashblade-s.html).
+
+**Découvrez comment configurer, gérer et répliquer facilement des objets compatibles Pure Storage Flashblade S3<sup>1</sup> vers OVHcloud Object Storage.**
+
+## Prérequis
+
+- Un conteneur/bucket OVHcloud Object Storage.
+- Un utilisateur avec les droits d'accès requis sur le bucket.
+- Vos identifiants Object Storage (`access_key` et `secret_access_key`).
+
+Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/).
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Pour accéder à vos services :** <code className="action">Public Cloud</code> > Sélectionnez votre projet
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## En pratique
+
+### Créer une connexion cible compatible S3
+
+1\. Connectez-vous à l'interface utilisateur de Pure Storage Flashblade.
+
+2\. Rendez-vous dans la section <code className="action">Storage</code>, puis <code className="action">Array</code>.
+
+3\. Cliquez sur le bouton <code className="action">+</code> à côté de `S3 Target Connections` pour créer un stockage d'objets cloud *Target Connections*.
+
+4\. Nommez la connexion (par exemple `OVHCLOUD_OBJECT_STORAGE`) et ajoutez les endpoints OVHcloud Object Storage associés dans le champ `Address`.
+
+<img className="thumbnail" alt="page de connexion" src="/images/storage-and-backup/object-storage/s3-pure-storage-flashblade/01-connections.png" loading="lazy" />
+
+La liste de tous les endooints OVHcloud Object Storage se trouve [ici](/guides/storage-and-backup/object-storage/s3-location/).
+
+### Ajouter des informations d'identification pour le stockage d'objets distant
+
+5\. Rendez-vous dans la section <code className="action">Protection</code> puis cliquez sur <code className="action">Object Replica Links</code>.
+
+6\. Cliquez sur le bouton <code className="action">+</code> pour ajouter des informations d'identification et de connexion distantes pour la réplication d'objets.
+
+7\. Sélectionnez <code className="action">OVHCLOUD_OBJECT_STORAGE</code> dans <code className="action">Remote Array</code>.
+
+8\. Ajoutez le nom de votre connexion (par exemple `OVHcloud_credentials`) et ajoutez votre clé d'accès et votre clé secrète disponibles depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+9\. Confirmez en cliquant sur <code className="action">Create</code> et vos identifiants distants seront créés.
+
+<img className="thumbnail" alt="creds page" src="/images/storage-and-backup/object-storage/s3-pure-storage-flashblade/02-creds.png" loading="lazy" />
+
+### Créer un bucket qui sera répliqué sur l’Object Storage OVHcloud
+
+10\. Si ce n'est pas déjà fait, rendez-vous dans la section <code className="action">Storage</code> puis <code className="action">Object Storage</code> et enfin <code className="action">Accounts</code> pour créer le compte.
+
+11\. Configurez les différents paramètres suivants : `account name`, `quota limit` et `bucket default quota limit` pour créer le compte.
+
+12\. Cliquez sur la section <code className="action">Buckets</code> et sélectionnez le nom du compte.
+
+13\. Entrez un nom de conteneur tel que `OVHcloud-source-2025` et cliquez sur <code className="action">Create</code>.
+
+### Configurer la réplication de conteneurs vers l’Object Storage OVHcloud
+
+14\. Accédez à <code className="action">Protection</code> > <code className="action">Object Replication</code> et <code className="action">Bucket Replication Link</code>.
+
+15\. Cliquez sur le bouton <code className="action">+</code> pour créer un lien de réplica de conteneur.
+
+16\. Sélectionnez le conteneur que vous venez de créer.
+
+17\. Sélectionnez <code className="action">OVHCLOUD_OBJECT_STORAGE</code> dans <code className="action">Remote Array</code>.
+
+18\. Ajoutez le nom de votre conteneur Object Storage OVHcloud, tel que `OVHcloud-dest-2025`.
+
+19\. Ajoutez vos identifiants `OVHcloud_credentials`. Le lien vers le conteneur réplica va être créé.
+
+<img className="thumbnail" alt="replica page" src="/images/storage-and-backup/object-storage/s3-pure-storage-flashblade/03-replica.png" loading="lazy" />
+
+20\. Vous pouvez maintenant tester et valider la réplication du conteneur de la plateforme Pure Storage Flashblade vers OVHcloud Object Storage.
+
+## Aller plus loin
+
+Rejoignez notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

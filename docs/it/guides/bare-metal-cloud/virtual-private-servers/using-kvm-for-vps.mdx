@@ -1,0 +1,129 @@
+---
+title: Utilizzare la console KVM per accedere a un VPS
+description: Scopri come connettersi a un VPS tramite un browser Web grazie alla funzionalità KVM
+lastUpdated: 2025-02-07
+---
+
+import Api from '@components/Api';
+
+
+
+
+## Obiettivo
+
+La console KVM per VPS, disponibile nello Spazio Cliente OVHcloud, permette di aprire una connessione al VPS nel browser Web, indipendentemente da un software di connessione aggiuntivo. In questo contesto, KVM sta per *keyboard, video, and mouse*, con riferimento al metodo emulato di input/output della connessione remota.
+
+:::info
+Ti ricordiamo che la console KVM non è una soluzione alternativa se hai perso l'accesso al sistema operativo del tuo VPS. Sarà necessario [utilizzare il Rescue mode del VPS per recuperare l'accesso al server](/guides/bare-metal-cloud/dedicated-servers/replacing-user-password/).
+
+:::
+
+
+**Questa guida ti mostra come utilizzare la console KVM per accedere al tuo VPS.**
+
+## Prerequisiti
+
+- Un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Percorso di navigazione:** <code className="action">Bare Metal Cloud</code> > <code className="action">Server Privati Virtuali</code> > Seleziona il tuo VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+## Procedura
+
+### Come aprire la console KVM dallo Spazio Cliente OVHcloud
+
+Nella scheda <code className="action">Informazioni generali</code>, clicca sul pulsante <code className="action">...</code> accanto al nome del tuo VPS nella sezione **Il tuo VPS**.
+
+<img className="thumbnail" alt="Open KVM" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/vps/cp-kvm.png" loading="lazy" />
+
+### Come aprire la console KVM via API OVHcloud
+
+<details>
+
+<summary>Espandi questa sezione</summary>
+
+
+Per chi non ha familiarità con l’API OVHcloud, consulta la nostra guida "[Iniziare a utilizzare le API OVHcloud](/guides/manage-and-operate/api/first-steps/)".
+
+Per recuperare l’URL di accesso KVM, apri questo endpoint:
+
+<Api version="v1" section="/vps" method="POST" route={"/vps/\{serviceName\}/getConsoleUrl"} />
+
+Inserisci il nome interno del tuo VPS (`vps-x11x11xyy.vps.ovh.net`) nel campo `serviceName`.
+
+Clicca sul pulsante <code className="action">EXECUTE</code>.
+
+L’URL di accesso verrà visualizzato nella sezione `RESPONSE`.
+
+</details>
+
+
+### Utilizzo della console KVM
+
+Se accedi al KVM dal tuo Spazio Cliente OVHcloud, viene visualizzata una finestra pop-up. Per utilizzarlo a schermo intero, clicca sul link <code className="action">Apri in una nuova finestra</code> nell’angolo in basso a destra. In genere verrà aperta una nuova scheda del browser.
+
+<img className="thumbnail" alt="Connessione al KVM" src="/images/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/kvm_screen.png" loading="lazy" />
+
+Lo schermo KVM visualizzato dipende dal sistema operativo e dallo stato individuale del VPS. Se richiesto, accedere con le credenziali di un account utente attivo.
+
+È inoltre possibile utilizzare software client di terze parti per eseguire l'accesso.
+
+#### Come cambiare il layout di tastiera
+
+:::info
+La tastiera della console KVM potrebbe avere un layout diverso dal proprio. Prima di immettere una password, digitare alcuni caratteri per verificare il layout, ad esempio [questa pagina](https://en.wikipedia.org/wiki/Keyboard_layout#Conventional_Latin-script_keyboard_layouts).
+
+:::
+
+
+È possibile attivare il layout di tastiera per semplificare l'utilizzo della console. Immettere il comando seguente:
+
+```bash
+sudo dpkg-reconfigure keyboard-configuration
+```
+
+Se necessario, installare il pacchetto prima tramite il gestore di pacchetti della distribuzione (`sudo dnf install keyboard-configuration` o `sudo apt install keyboard-configuration`).
+
+Viene visualizzato un menu grafico in cui è possibile selezionare un modello di tastiera.
+
+<img className="thumbnail" alt="KVM" src="/images/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/kvm_vps01.png" loading="lazy" />
+
+Utilizza i tasti freccia per accedere all’opzione più vicina al tuo hardware e clicca su <code className="action">Enter</code>.
+
+Nel menu seguente, seleziona il tuo paese.
+
+<img className="thumbnail" alt="KVM" src="/images/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/kvm_vps02.png" loading="lazy" />
+
+Nel terzo menu è possibile specificare il layout effettivo della tastiera.
+
+<img className="thumbnail" alt="KVM" src="/images/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/kvm_vps03.png" loading="lazy" />
+
+In base alle selezioni effettuate, dopo il terzo menu possono essere visualizzate altre opzioni.
+
+Per applicare le modifiche, esegui questo comando:
+
+```bash
+sudo systemctl restart keyboard-setup
+```
+
+:::info
+Questa modifica non persisterà se il server viene riavviato.
+
+:::
+
+
+## Per saperne di più
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

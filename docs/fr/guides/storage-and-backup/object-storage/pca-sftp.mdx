@@ -1,0 +1,75 @@
+---
+title: Cloud Archive Swift - Gérer ses archives depuis un client SFTP/SCP
+description: Retrouvez ici comment gérer et administrer vos archives Public Cloud.
+lastUpdated: 2022-05-13
+---
+
+## Objectif
+
+Public Cloud Archive est une solution de stockage qui peut s'utiliser avec les API OpenStack. Cependant, il est possible que vous ne soyez pas familier avec cette façon de gérer un espace de stockage. Nous avons donc développé une passerelle qui vous permet d’accéder à votre PCA via un client SFTP.
+
+## Prérequis
+
+- Un client SFTP : [WinSCP](https://winscp.net/eng/download.php)
+- Login & Password OpenStack
+- TenantName du projet
+
+## En pratique
+
+### Le client SFTP
+
+Nous utilisons dans cet exemple WinSCP en tant que client SFTP. D’autres solutions existent, leur configuration est similaire à celle que nous allons vous présenter.
+
+### Identifiant OpenStack
+
+Vous pouvez générer votre login et password OpenStack en suivant ce [Guide](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/).
+
+### Le TenantName
+
+Le TenantName correspond au nom de votre projet sur Horizon. Pour récupérer le TenantName, il vous faudra vous connecter au manager OpenStack via les accès générés précédemment : [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/). Une fois connecté, le TenantName est accessible en haut de page.
+
+<img className="thumbnail" alt="horizon" src="/images/storage-and-backup/object-storage/pca-sftp/image1.png" loading="lazy" />
+
+### Connexion
+
+- Host Name : gateways.storage. &lt; region > .cloud.ovh.net
+- User Name : pca
+- Password : &lt; TenantName > . &lt; Username_Openstack > . &lt; Password_Openstack >
+
+<img className="thumbnail" alt="connexion" src="/images/storage-and-backup/object-storage/pca-sftp/image2.png" loading="lazy" />
+
+### Exemple
+
+Si vous avez créé un conteneur PCA sur SBG :
+
+- Host Name : gateways.storage.sbg.cloud.ovh.net
+- User Name : pca
+- Password : 971891XXXX1214.f6nBXXXXXAmcv.SfPeASYfuWeqBZgXXXXX2XhF3DY12RkD
+
+<img className="thumbnail" alt="connexion" src="/images/storage-and-backup/object-storage/pca-sftp/image3.png" loading="lazy" />
+
+### Paramétrage WinSCP
+Dans cette partie nous allons désactiver deux options de WinSCP :
+
+**Transfer Resume / Transfer to Temporary Filename :** Cette option sera à désactiver car la reprise n'est pas possible avec PCA, et WinSCP peut alors vous renvoyer une erreur. Veuillez vous référer à la capture d'écran ci-dessous.
+
+- Dans la rubrique <code className="action">Endurance</code>, séléctionnez <code className="action">Disable</code>.
+
+<img className="thumbnail" alt="connexion" src="/images/storage-and-backup/object-storage/pca-sftp/conf1.png" loading="lazy" />
+
+**Preserve Timestamp :** Le TimeStamp correspond à la date de modification du fichier, nous le désactivons car sur PCA nous remplaçons cette donnée par la date d'upload du fichier. Veuillez vous référer aux captures d'écrans ci-dessous.
+
+- Dans la catégorie <code className="action">Transfer</code>, cliquez sur <code className="action">Edit...</code>.
+
+<img className="thumbnail" alt="connexion" src="/images/storage-and-backup/object-storage/pca-sftp/conf2.png" loading="lazy" />
+
+- Décochez <code className="action">Preserve timestamp</code>.
+
+<img className="thumbnail" alt="connexion" src="/images/storage-and-backup/object-storage/pca-sftp/conf3.png" loading="lazy" />
+
+### Récuperation de données
+La récupération de données est soumise à un déblocage préalable de l'objet. Une requête GET est nécessaire sur l’objet en question. Si cette manipulation n’est pas effectuée au préalable, votre client SFTP retournera un message d’erreur lors d’une tentative de téléchargement de fichier. Consulter notre guide sur le déverrouillage de vos objets [ici](/guides/storage-and-backup/object-storage/pca-unlock/).
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

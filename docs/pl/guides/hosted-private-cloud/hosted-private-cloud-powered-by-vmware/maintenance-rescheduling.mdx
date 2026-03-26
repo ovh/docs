@@ -1,0 +1,85 @@
+---
+title: Przeniesienie zaplanowanej konserwacji do Hosted Private Cloud
+description: Dowiedz się, jak przenieść zaplanowaną konserwację na usługę VMware on OVHcloud
+lastUpdated: 2022-11-30
+---
+
+import Api from '@components/Api';
+
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Po zaplanowaniu prac konserwacyjnych na Twojej usłudze Hosted Private Cloud otrzymasz e-mail z powiadomieniem o dacie przeprowadzenia prac konserwacyjnych. Jeśli data ta nie jest dla Ciebie odpowiednia, na przykład ze względu na konieczność produkcji, możesz przełożyć tę konserwację na wybrany termin w Panelu klienta OVHcloud lub API OVHcloud.
+
+:::info
+Staramy się jak najlepiej dopasować się do Twojego zapotrzebowania na infrastrukturę. Czasem jednak musimy zaplanować prace konserwacyjne, w przypadku których nie będzie można zmienić daty i/lub godziny (np. prace konserwacyjne w infrastrukturze z udziałem kilku klientów, pilne interwencje w celu uniknięcia incydentu itp.).
+
+Jeśli data konserwacji może zostać zmieniona przez użytkownika, proponowane nowe daty mieszczą się w skróconym przedziale czasowym.
+
+:::
+
+
+**Dowiedz się, jak zmienić datę zaplanowanej konserwacji na VMware on OVHcloud w Panelu klienta OVHcloud lub w API OVHcloud.**
+
+## Wymagania początkowe
+
+- Otrzymałeś e-mail z powiadomieniem o pracach konserwacyjnych informujący, że możesz **zmienić datę wykonania prac konserwacyjnych**. W przeciwnym razie data utrzymania nie może zostać zmieniona.
+- Posiadanie kontaktu administracyjnego lub technicznego w infrastrukturze [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub [interfejsu administracyjnego usług przez API](https://eu.api.ovh.com/).
+
+## W praktyce
+
+:::tip[Success]
+E-maile wysłane przez OVHcloud są również dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br/>
+Kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie <code className="action">E-maile usługi</code> w menu po prawej stronie.
+
+:::
+
+
+### W Panelu klienta OVHcloud
+
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) za pomocą konta administratora.
+
+W menu <code className="action">Hosted Private Cloud</code> kliknij zakładkę <code className="action">Dział operacyjny</code>. Wybierz <code className="action">Do wykonania</code> z rozwijanego menu, w którym mają być filtrowane operacje.
+
+Następnie kliknij przycisk <code className="action">...</code>, a następnie <code className="action">Zmień datę wykonania</code>.
+
+<img className="thumbnail" alt="zmiana harmonogramu" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/maintenance-rescheduling/maintenance-date-edition01.png" loading="lazy" />
+
+:::info
+Jeśli przycisk <code className="action">Zmień datę wykonania</code> jest szary, oznacza to, że nie można odroczyć tej konserwacji.
+
+:::
+
+
+Wybierz datę w przedstawionym kalendarzu. Można wybrać tylko daty bez szarości.<br/>
+Następnie wprowadź ręcznie kolejną godzinę konserwacji lub zostaw niezmieniony pierwotnie zaplanowany czas. Jeśli przekroczysz ostatnią dozwoloną godzinę, ostatnia możliwa godzina programowania zostanie automatycznie zaproponowana.<br/>
+**Uważaj!** Aby został uwzględniony, nie należy już podkreślać nowego harmonogramu na niebiesko. Po wpisaniu nowego harmonogramu kliknij obok niego w oknie, aby nie zaznaczono na niebiesko harmonogramu.
+
+Następnie kliknij przycisk <code className="action">Zmień</code>, aby zatwierdzić zmiany.
+
+<img className="thumbnail" alt="zmiana harmonogramu" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/maintenance-rescheduling/maintenance-date-edition02.png" loading="lazy" />
+
+### Za pośrednictwem API OVHcloud
+
+Zaloguj się do [interfejsu administracyjnego Twoich usług przez API](https://eu.api.ovh.com/). Zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/guides/manage-and-operate/api/first-steps/)".
+
+Wykonaj następujące wywołanie API:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/task/\{taskId\}/changeMaintenanceExecutionDate"} />
+
+Wpisz zmienne:
+
+- serviceName: numer referencyjny usługi Hosted Private Cloud w formie `pcc-XX-XX-XX-XX`.
+- taskId: jest to "numer referencyjny operacji" konserwacji podany w przesłanym do Ciebie e-mailu z powiadomieniem.
+- executionDate: wprowadź nową datę konserwacji w formacie `YYYY-MM-DDTHH:MM+01:SS` (np. 2023-01-02T08:00:00+01:00 dla konserwacji zaplanowanej na dzień 02/01/2023 o 0800 (UTC+1)).
+
+## Sprawdź również
+
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

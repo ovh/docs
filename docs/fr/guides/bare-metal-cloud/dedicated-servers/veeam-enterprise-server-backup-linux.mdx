@@ -1,0 +1,98 @@
+---
+title: Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise
+description: Découvrez comment faire un backup de votre serveur Bare Metal Linux avec Veeam Backup and Replication (Enterprise)
+lastUpdated: 2024-04-05
+---
+
+## Objectif
+
+Qu'il s'agisse d'une panne matérielle ou de la suppression accidentelle d'un fichier important, effectuer des sauvegardes fréquentes est extrêmement important et peut vous faire économiser de nombreuses heures de travail inutiles.
+
+**Découvrez comment réaliser une sauvegarde de votre serveur Bare Metal Linux avec Veeam Backup and Replication (Enterprise).**
+
+:::info
+Pour sauvegarder un serveur Bare Metal Windows avec Veeam Agent pour Microsoft Windows, consultez [ce guide](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/).
+
+:::
+
+
+## Prérequis
+
+- Un [serveur Bare Metal Linux OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+- [Veeam Backup & Replication installé et enregistré](/guides/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication/)
+
+:::warning
+Pour suivre les étapes de ce guide, vous devez avoir préalablement suivi les étapes détaillées de notre premier guide « [Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/) ».
+
+:::
+
+
+## En pratique
+
+Dans l'onglet <code className="action">Home</code> de Veeam, cliquez sur le bouton <code className="action">Backup Job</code> et sélectionnez l'option `Linux computer...`.
+
+<img className="thumbnail" alt="Home - backup job" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup01.png" loading="lazy" />
+
+Dans la section **Job Mode**, sélectionnez le **Type** de serveur et le **Mode** pour la sauvegarde.
+
+Cliquez ensuite sur le bouton <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Job mode - type and mode" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup02.png" loading="lazy" />
+
+Dans la section **Name**, attribuez un **Nom** et une **Description** à votre tâche de sauvegarde.
+
+Cliquez ensuite sur le bouton <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Name - name and description" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup03.png" loading="lazy" />
+
+Dans la section **Computers**, cliquez sur le bouton <code className="action">Add...</code>.
+
+<img className="thumbnail" alt="Ordinateurs - ajouter" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup04.png" loading="lazy" />
+
+Dans la fenêtre **Add Computer**, entrez le **nom d'hôte ou l'adresse IP** du serveur.
+
+Cliquez ensuite sur le bouton <code className="action">Add...</code>, sélectionnez <code className="action">Stored</code> puis <code className="action">Linux account...</code>.
+
+<img className="thumbnail" alt="Ajouter un ordinateur - nom d'hôte ou adresse IP" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup05.png" loading="lazy" />
+
+Entrez le **Nom d'utilisateur** et le **Mot de passe**, cochez la case **Elevate account privileges automatically** puis cliquez sur <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Ajouter un ordinateur - nom d'utilisateur et mot de passe" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup06.png" loading="lazy" />
+
+Dans la section **Backup Mode**, sélectionnez le mode de sauvegarde de cette tâche de sauvegarde.
+
+Cliquez ensuite sur le bouton <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Mode de sauvegarde - mode de sélection" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup07.png" loading="lazy" />
+
+Dans la section **Storage**, choisissez le **Backup repository** (répertoire de sauegarde) et les paramètres.
+
+Cliquez ensuite sur le bouton <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Stockage - Backup repository" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup08.png" loading="lazy" />
+
+Cliquez de nouveau sur le bouton <code className="action">Next</code> pour ignorer la section **Guest Processing**,$ car aucune configuration n'y est nécessaire.
+
+Dans la section **Schedule**, vous pouvez cocher la case <code className="action">Run the job automatically</code> si vous souhaitez que la tâche de sauvegarde se produise de manière récurrente.
+
+Pour ce guide, nous allons exécuter la sauvegarde manuellement. Nous allons donc cliquer sur le bouton <code className="action">Apply</code> pour continuer.
+
+<img className="thumbnail" alt="Schedule" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup09.png" loading="lazy" />
+
+Vérifiez que toutes les informations sont correctes dans la section **Summary**.
+
+Si vous souhaitez lancer la tâche de sauvegarde dès la fin de la configuration, cochez la case <code className="action">Run the job when I click Finish</code>.
+
+<img className="thumbnail" alt="Summary" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup10.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">Finish</code> pour terminer la configuration de la tâche de sauvegarde. Une nouvelle fenêtre s'ouvre, vous permettant de visualiser le détail de la sauvegarde en cours.
+
+<img className="thumbnail" alt="détails de la sauvegarde" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/backup11.png" loading="lazy" />
+
+Une fois la tâche terminée, votre sauvegarde sera alors scréée.
+
+Pour plus d'informations sur la restauration d'un serveur Bare Metal, consultez notre guide « [Restaurer un serveur Bare Metal avec Veeam Backup & Replication](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/) ».
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

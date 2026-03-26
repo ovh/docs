@@ -1,0 +1,67 @@
+---
+title: IAM for VMware on OVHcloud - How to associate a user with a global IAM policy
+description: Find out how to link an identity to an OVHcloud IAM policy
+lastUpdated: 2024-11-05
+---
+
+:::info
+IAM is currently in beta phase. This guide can be updated in the future with the advances of our teams in charge of this product.
+
+:::
+
+
+## Objective
+
+**This guide details how to associate an OVHcloud identity (a user) with a global IAM policy**.
+
+## Requirements
+
+- An [OVHcloud account](/guides/account-and-service-management/account-information/ovhcloud-account-creation/).
+- One or more Hosted Private Cloud products - VMware on OVHcloud linked to this account (Hosted Private Cloud powered by VMware, VMware Service Pack).
+- IAM enabled for your Hosted Private Cloud service - VMware on OVHcloud. Follow the steps in the guide [IAM for VMware on OVHcloud - How to enable IAM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-activation/).
+
+## Instructions
+
+### How do I associate a user with a global IAM policy?
+
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es). Click on your name in the top right-hand corner of the OVHcloud Control Panel, then click on your initials to go to the <code className="action">My account</code> section.
+
+Under <code className="action">My account</code>, click <code className="action">Identities and Access Management (IAM)</code> and stay in the <code className="action">Policies</code> tab.
+
+<img className="thumbnail" alt="IAM USER POLICY" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-user-policy/iam_policies_resize.png" loading="lazy" />
+
+You will find here the policies you have already created.
+
+Click your policy or click the <code className="action">...</code> then <code className="action">Modify policy</code>.
+
+<img className="thumbnail" alt="IAM USER POLICY" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-user-policy/iam_policies_modify.png" loading="lazy" />
+
+Then enter the identity you want in the `Local users` and `User groups` boxes, by clicking <code className="action">Add users</code> or <code className="action">Add user groups</code>.
+
+<img className="thumbnail" alt="IAM USER POLICY" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-user-policy/iam_add_user.png" loading="lazy" />
+
+Only IAM Groups (not vSphere IAM Groups) appear automatically, so make sure you copy/paste your choice without errors.
+
+Confirm the addition of your user by clicking <code className="action">Add</code>.
+
+Then, to finish your policy, click <code className="action">Modify policy</code>.
+
+:::info
+If your identity is not present, you will need to add it first in the OVHcloud Control Panel.
+
+:::
+
+
+## Go further
+
+**IAM for VMware on OVHcloud - Guide index:**
+
+- Guide 1: [IAM for VMware on OVHcloud - Overview and FAQ](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-getting-started/)
+- Guide 2: [IAM for VMware on OVHcloud - How to enable IAM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-activation/)
+- Guide 3: [IAM for VMware on OVHcloud - How to create an IAM vSphere role](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role/)
+- Guide 4: [IAM for VMware on OVHcloud - How to associate a vSphere role with an IAM policy](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role-policy/)
+- Guide 5: IAM for VMware on OVHcloud - How to associate a user with a global IAM policy
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

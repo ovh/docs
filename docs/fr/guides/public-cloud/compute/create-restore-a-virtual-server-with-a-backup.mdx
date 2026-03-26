@@ -1,0 +1,203 @@
+---
+title: Créer / restaurer un serveur virtuel a partir d’une sauvegarde
+description: Découvrez comment créer ou restaurer la sauvegarde d’une instance
+lastUpdated: 2025-11-04
+---
+
+import Api from '@components/Api';
+
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+L'espace client OVHcloud vous permet de créer des [sauvegardes de vos instances](/guides/public-cloud/compute/save-an-instance/) en quelques clics et d'automatiser ce processus.
+Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauvegarde, par exemple en cas de mauvaise manipulation effectuée sur la configuration de votre instance. Vous pouvez utiliser ces sauvegardes d'instances pour deux raisons principales :
+
+- Créer une instance sur la base de la sauvegarde, afin de dupliquer l'instance d'origine. Par exemple si vous configurez une infrastructure de répartition de charge (load balancing).
+- Restaurer une instance à partir d'une sauvegarde. Par exemple si des modifications récentes ont cassé des configurations critiques sur l'instance.
+
+**Découvrez comment utiliser vos sauvegardes pour dupliquer ou restaurer vos instances.**
+
+## Prérequis
+
+- Disposer d'[une sauvegarde d'une instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/instance-backup/). À cet effet, consultez [le guide dédié à la création d'une sauvegarde](/guides/public-cloud/compute/save-an-instance/).
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+## En pratique
+
+:::info
+Deux types de sauvegardes sont disponibles :
+
+- Locale : stockée dans la même région que votre instance.
+- Distante : automatiquement répliquée dans une autre région de votre choix.
+
+Les opérations de **création** et de **restauration** d'une instance depuis une sauvegarde distante sont entièrement prises en charge via l’API OVHcloud, offrant une plus grande flexibilité et une intégration facilitée dans vos processus d’automatisation.
+
+**Note :** Ces opérations ne sont pas encore disponibles depuis l’espace client OVHcloud.
+
+:::
+
+
+### Créer une instance a partir d'une sauvegarde
+
+<Tabs>
+  <Tab label="Via l'espace client OVHcloud">
+    Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section <code className="action">Public Cloud</code> et sélectionnez le projet Public Cloud concerné.<br/>
+
+Cliquez ensuite sur <code className="action">Instance backup</code> dans la barre de navigation de gauche sous **Compute**.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup01.png" loading="lazy" />
+
+Cliquez alors sur les <code className="action">...</code> à droite de la sauvegarde choisie et enfin sur <code className="action">Créer une instance</code>.
+    
+    Une version simplifiée de la page de création d'instance est affichée, vous permettant de personnaliser certaines options.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup02.png" loading="lazy" />
+
+Certains éléments sont prédéfinis :
+    
+    - **Localisation** : Votre instance sera créée dans le même datacentre que votre sauvegarde.
+    - **Image** : L'image correspondra à votre sauvegarde.
+    - **Modèle** : Seuls les modèles pouvant accueillir votre image seront disponibles, en fonction de votre quota.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup03.png" loading="lazy" />
+
+Définissez le nom de la nouvelle instance, la clé SSH, le vRack et la période de facturation, puis cliquez sur le bouton <code className="action">Créer l'instance</code>.
+    
+    Pour plus d'informations sur la création d'une instance, consultez [ce guide](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/).
+    
+    :::info
+    Pour créer une instance dans un autre datacentre que celui de la sauvegarde, il faudra transférer celle-ci vers la zone correspondante. Référez-vous alors au [guide sur la sauvegarde d'une instance d'un datacentre à l'autre](/guides/public-cloud/compute/transfer-instance-backup-from-one-datacentre-to-another/).
+
+    :::
+
+  </Tab>
+  <Tab label="Via la CLI OpenStack">
+    Pour créer une instance à partir de votre sauvegarde, utilisez l'ID de sauvegarde comme image avec cette commande :
+    
+    ```bash
+    $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+    ```
+  </Tab>
+  <Tab label="Via Horizon">
+    Dans l'interface Horizon, cliquez sur <code className="action">Compute</code> dans le menu de gauche, puis sur <code className="action">Images</code>. Cherchez l'image désirée et Cliquez sur le bouton <code className="action">Launch</code> se trouvant sur la droite de la ligne de votre image. 
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon1.png" loading="lazy" />
+
+Nommez votre instance dans le champs dédié et determinez le nombre d'instance à créer. Puis cliquez sur l'onglet <code className="action">Flavor</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-2" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon2.png" loading="lazy" />
+
+Choisissez le modèle d'instance désiré, puis cliquez sur l'onglet <code className="action">Networks</code>.
+    
+    :::warning
+    Si votre instance est un serveur Windows, vous devez sélectionner une flavor de type win-xx-xx (par exemple, win-b2-15) et disposer d’une interface publique sur le réseau Ext-Net. Sans ces conditions, l’authentification auprès du KMS OVHcloud ne sera pas possible, et votre serveur restera avec une [licence non activée](/guides/public-cloud/compute/activate-windows-license-private-mode/). Cela pourrait entraîner des limitations, notamment l’absence de mises à jour. À noter qu’il est impossible de redimensionner une instance Linux (par exemple b2-15) en une instance Windows (comme win-b2-15). Pour effectuer cette transition, il est nécessaire de recréer une nouvelle instance.
+
+    :::
+
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-3" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon3.png" loading="lazy" />
+
+Choisissez le network que vous souhaitez lui assigner, puis cliquez sur le bouton <code className="action">Launch Instance</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-4" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon4.png" loading="lazy" />
+
+Vous pouvez retrouver le status de votre nouvelle instance dans <code className="action">Compute</code> dans le menu de gauche, puis sur <code className="action">Instances</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon-5" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackuphorizon5.png" loading="lazy" />
+  </Tab>
+  <Tab label="Via l'API OVHcloud">
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance"} />
+
+Renseignez les variables :
+    
+    - **serviceName** : L’ID du projet OVHcloud.
+    - **regionName** : Le nom de la région où l’instance sera créée.
+    
+    Exemple de corps de requête :
+    
+    ```json
+    {
+      "billingPeriod": "hourly",
+      "bootFrom": {
+        "imageId": "5cb8ea68-****-****-****-820be8346***"
+      },
+      "flavor": {
+        "id": "e81b46f8-****-****-****-cad655e65***"
+      },
+      "name": "newInstance",
+      "network": {
+        "public": true
+      },
+      "sshKey": {
+        "name": "MySSHKey"
+      }
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+### Restaurer une instance à partir d’une sauvegarde
+
+<Tabs>
+  <Tab label="Via l'espace client OVHcloud">
+    Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section <code className="action">Public Cloud</code> et sélectionnez le projet Public Cloud concerné.<br/>
+
+Cliquez ensuite sur <code className="action">Instances</code> dans la barre de navigation de gauche sous **Compute**.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup04.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">...</code> à droite de l'instance que vous souhaitez restaurer et cliquez sur <code className="action">Editer</code>.
+    
+    La page d'édition d'instance s'affichera alors. Vous pourrez y modifier :
+    
+    - le nom de l'instance ;
+    - l'image de l'instance ;
+    - le modèle de l'instance ;
+    - la facturation de l'instance (uniquement depuis le modèle « Horaire » vers le modèle « Mensuel »).
+    
+    Effectuez les modifications nécessaires puis sélectionnez l'onglet <code className="action">Backups</code> dans la partie « Image ».
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/restorebackup05.png" loading="lazy" />
+
+Sélectionnez une sauvegarde dans la liste des sauvegardes disponibles. Cliquez sur <code className="action">Modifier l'image</code> si vous êtes certain de vouloir remplacer l'image actuelle par la sauvegarde.
+    
+    L'instance aura le statut `Réinstallation` jusqu'à ce que le processus soit terminé. Il peut être nécessaire d'actualiser la page dans le navigateur pour voir l'état actuel.
+    
+    :::warning
+    Comme indiqué dans l'encadré jaune qui vous est alors précisé, aucune donnée ajoutée après la création de cette sauvegarde ne pourra être récupérée.
+
+    :::
+
+  </Tab>
+  <Tab label="Via l'API OVHcloud">
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance/\\{instanceId\\}/reinstall"} />
+
+Renseignez les variables :
+    
+    - **serviceName** : L’ID du projet OVHcloud.
+    - **regionName** : Le nom de la région où se trouve l’instance source.
+    - **instanceId** : L’ID unique de l’instance.
+    
+    Exemple de corps de requête :
+    
+    ```json
+    {
+      "imageId": "5cb8ea68-****-****-****-820be8346***",
+      "imageRegionName": "GRA11"
+    }
+    ```
+  </Tab>
+</Tabs>
+
+
+## Aller plus loin
+
+[Création et connexion à une première instance Public Cloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+[Sauvegarder une instance](/guides/public-cloud/compute/save-an-instance/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

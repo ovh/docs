@@ -1,0 +1,127 @@
+---
+title: Using Exchange error diagnostics
+description: Find out how to run automated error checks on Exchange accounts
+lastUpdated: 2025-04-28
+---
+
+## Objective
+
+Since there is a multitude of reasons why errors might occur on Exchange email accounts, an automatic check of the account's functionalities helps to narrow down possible causes. The test results are therefore useful for a support request regarding issues on your Exchange service.
+
+**This guide explains how to launch an Exchange diagnostic check and interpret the results.**
+
+## Requirements
+
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) already set up
+- credentials for the Exchange account to be checked
+- being up to date in the [payments](/guides/account-and-service-management/managing-billing-payments-and-services/invoice-management#pay-bills/) for this service and the related domain name.
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Instructions
+
+### Running the diagnostic
+
+Click on the tab <code className="action">Diagnostics</code> and choose the Exchange account concerned from the drop-down menu. Enter the account password in the field below, then click on <code className="action">Launch diagnostic</code>. 
+
+<img className="thumbnail" alt="Exchange Diagnostic" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/diagnostic-advanced/img_4451.png" loading="lazy" />
+
+The diagnostic routine will take approximately 3 to 10 minutes to complete. Below is an example output of the results:
+
+<img className="thumbnail" alt="Exchange Diagnostic" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/diagnostic-advanced/img_4471.png" loading="lazy" />
+
+The results page offers two actions to continue:
+
+- <code className="action">New diagnostic</code>: starts another diagnostic check.
+
+- <code className="action">Open a support ticket</code>: allows you to create a request to our technical support which will include the diagnostic results. 
+
+### Error explanations
+
+Refer to the following summary of possible errors to find the quickest resolution.
+
+### The account has been blocked for sending spam <a name="blocked"></a>
+
+A blocked account still receives emails but sending has been disabled by the automatic spam protection system.
+
+You can verify this in the <code className="action">Email accounts</code> tab of your Exchange service. The account will have the <code className="action">SPAM</code> status displayed in the table.
+
+Please follow the instructions in [this guide](/guides/web-cloud/email-and-collaborative-solutions/troubleshooting/locked-for-spam/) to enable our security teams to re-enable the account.
+
+### Subscription to the account has expired <a name="expired"></a>
+
+Your subscription is no longer active, sending and receiving has been disabled.<br/>
+To reactivate your subscription, simply reconfigure its [billing frequency](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange#periodicity/) in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+### Account locked due to the security policy
+
+If there is a security policy activated in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), the account could be temporarily locked. 
+
+You can for example decide that the account will be locked after multiple unsuccessful login attempts, for a period of time determined by you. 
+
+In this case, you can either wait until the account becomes available again or you can contact our Exchange teams by creating a support request.
+
+You can find more information about this topic in the [security policy guide](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/security-policy/).
+
+### Webmail authentication has failed <a name="password"></a>
+
+This can be caused by entering an incorrect account password. First verify via a [webmail login](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/) that the password is correct, then restart the diagnostics.
+
+If necessary, you can change the password of the account concerned in the Exchange tab <code className="action">Email accounts</code> of your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). If the issue persists, create a support request.
+
+### The domain MX record is not valid
+
+This error indicates that emails cannot be received and it is also linked to the error "**WARNING: The test email has not been received.**".
+
+Depending on your Exchange service usage, the following MX servers are valid:
+
+- Exchange only: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.net
+<a name="hostname"></a>
+
+:::warning
+In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
+
+You can find this information in the OVHcloud Control Panel, in the <code className="action">Web Cloud</code> section. Open <code className="action">Exchange</code> and select your service. The server name is displayed in the **Connection** section of the <code className="action">General information</code> tab.
+
+:::
+
+
+### The domain's SRV record is not valid
+
+The SRV record is essential to the automatic configuration of your Exchange account with a compatible email software such as Microsoft Outlook.
+
+You can verify these settings in your [domain's DNS zone](/guides/web-cloud/domains/dns-zone-edit/).
+
+Here are the mandatory values for an Exchange service:
+
+Field        | Value
+------------ | -------------
+Sub-domain   | _autodiscover._tcp
+Priority     | 0
+Weight       | 0
+Port         | 443
+Target       | [Your hostname](#hostname) (ex<b>?</b>.mail.ovh.net)
+
+### The test email could not be sent from this account 
+
+This error indicates a general email sending failure wich may have several causes:
+
+- [Your account has been suspended](#expired)
+- [The password that was entered is incorrect](#password)
+- [Your account has been blocked for sending spam](#blocked)
+- [An incident has occurred on the infrastructure](https://web-cloud.status-ovhcloud.com/)
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

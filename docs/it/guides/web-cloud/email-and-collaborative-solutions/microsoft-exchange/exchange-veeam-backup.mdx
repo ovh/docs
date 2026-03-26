@@ -1,0 +1,301 @@
+---
+title: Private Exchange - Backing up your email accounts with Veeam Backup for Microsoft 365
+description: Find out how to back up the email accounts on your Private Exchange platform with Veeam Backup for Microsoft 365
+lastUpdated: 2024-12-06
+---
+
+import Api from '@components/Api';
+
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+Want to back up your email accounts hosted on an OVHcloud Private Exchange platform? Use the Veeam Backup for Microsoft 365 software. This guide details all the elements you need to install, configure and use Veeam Backup for your email accounts.
+
+**Find out how to back up the email accounts on your Private Exchange platform with Veeam Backup for Microsoft 365.**
+
+## Requirements
+
+- You must have signed up to an [OVHcloud Private Exchange solution](https://www.ovhcloud.com/it/emails/private-exchange/) and created email accounts on it.
+- [Download Veeam Backup for Microsoft 365](https://www.veeam.com/products/free/backup-microsoft-office-365.html) on a computer running Microsoft Windows 10 or higher.
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleziona la tua piattaforma
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Instructions
+
+### Install Veeam Backup <a name="install-veeam"></a>
+
+Download the latest version of [Veeam Backup for Microsoft 365](https://www.veeam.com/products/free/backup-microsoft-office-365.html) from the Veeam website.
+
+Follow the installation steps by clicking on the 8 tabs below:
+
+<Tabs>
+  <Tab label="Step 1">
+    - Launch the downloaded file in `.iso` format to mount the virtual DVD.
+    - Open the virtual DVD `Veeam Backup for Microsoft 365` mounted on your computer and run the `Veeam.Setup.exe` installation file.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup01-2.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Click <code className="action">Install</code>, then select the first item in the `Veeam Backup for Microsoft 365` list to install all components.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    Read and confirm the Veeam Backup Terms of Use by clicking <code className="action">I Accept</code>.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    - If you have a Veeam Backup license, you can load it from your computer by clicking the <code className="action">Browse...</code> button.
+    - Leave the `Update license automatically` box ticked.
+    - Click <code className="action">Next</code> to proceed to the next step.
+    
+    :::info
+    Unlicensed, use of Veeam Backup is **limited to 10 email accounts**.
+
+    :::
+
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup04.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 5">
+    - The installation tunnel automatically sets the database instance and NATS server credentials. Retrieve the elements indicated in the window below or click <code className="action">Customize Settings</code> to define the settings yourself.
+    - Launch the installation by clicking <code className="action">Install</code>.
+    - After this installation, you can go to the [Configure Veeam Backup](#configure-veeam) chapter.
+    
+    :::warning
+    If Veeam Backup has already been installed on your computer and/or you do not get the same window as below, **proceed to step 6**.
+
+    :::
+
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup05bis.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 6">
+    - If you do not have a Veeam Backup database instance, you can create one by clicking directly on <code className="action">Next</code>.
+    - **OR** you can connect to an existing instance by selecting `Use existing instance` and `Native authentication with the following credentials`, then filling in the connection information.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 7">
+    - For a new instance, enter a strong `Username` and password `Password`. If you already have an existing instance, select `Use existing instance` and enter the corresponding information.
+    - Click <code className="action">Next</code> to proceed to the next step.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup06.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 8">
+    Launch the installation by clicking <code className="action">Install</code>.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup07.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Configure Veeam Backup <a name="configure-veeam"></a>
+
+#### Connect Veeam Backup to your Exchange platform
+
+Find out how to add your Exchange platform to Veeam Backup before you can create backup operations on your email accounts.
+
+Follow the configuration steps by clicking on the 10 tabs below:
+
+<Tabs>
+  <Tab label="Step 1">
+    Launch the `Veeam Backup for Microsoft 365` application from the Windows menu or on your desktop.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup08.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    By default, Veeam Backup allows you to log in locally to your computer. Click <code className="action">Connect</code>.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup09.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    If you have not entered a license, a message will appear reminding you that you are limited to 10 users (10 email accounts). Click <code className="action">No</code> to continue or <code className="action">Yes</code> if you wish to associate a license with your installation.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup10.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    Click <code className="action">Add Org</code> in the top left of your window.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup11.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 5">
+    In the `Select organization deployment type` dropdown menu, select <code className="action">On-premise</code>, then deselect `SharePoint Server`.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup12.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 6">
+    Before you proceed, you must create a user named "Impersonate User" on your Exchange platform. To create this type of user, log in to the [OVHcloud API](https://eu.api.ovh.com/) and use the following API call:
+    
+    <Api version="v1" section="/email/exchange" method="POST" route={"/email/exchange/\\{organizationName\\}/service/\\{exchangeService\\}/impersonatedUser"} />    - In the `exchangeService` and `organizationName` boxes, enter the reference for your Exchange platform. Click [this link](https://manager.eu.ovhcloud.com/#/web/exchange) to access the <code className="action">Exchange</code> section, then select the platform concerned to find its reference.
+    
+    - Enter a password of at least 15 characters between the quotation marks, next to `"password": `.
+    
+    - Click <code className="action">Execute</code> below to start creating your “Impersonate User”.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup13.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 7">
+    Retrieve the name of your "Impersonate User" with the following API call:
+    
+    <Api version="v1" section="/email/exchange" method="GET" route={"/email/exchange/\\{organizationName\\}/service/\\{exchangeService\\}/impersonatedUser"} />    - In the `exchangeService` and `organizationName` boxes, enter the reference for your Exchange platform that you retrieved in the previous step.
+    
+    - Click <code className="action">Execute</code> below.
+    
+    - The name of the "Impersonate User" corresponds to the value `"upn": ` visible in the `RESPONSE` of the API call.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup14.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 8">
+    - Enter the host name of your Exchange platform. You can find it by clicking [this link](https://manager.eu.ovhcloud.com/#/web/exchange) to access the <code className="action">Exchange</code> section, then selecting the platform concerned.
+    
+    - The host name corresponds to the value mentioned to access the webmail.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup15.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 9">
+    From the Veeam Backup interface, enter the following information:
+    
+    - `Server name` : Host name of the Exchange platform listed in step 8, enter it without the `https://`.
+    - `Username`: Username recorded in step 7 corresponding to the Impersonate User.
+    - `Password`: The password for the Impersonate User defined in step 6.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup16.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 10">
+    - You should get the same results as on the screenshot below (ignore the warning `Check ApplicationImpersanation role`).
+    - Click <code className="action">Finish</code> to finish connecting to the Exchange platform.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup17.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Create email account backup operations
+
+Once your Exchange platform has been added to Veeam backup, find out how to create a backup operation for your email accounts.
+
+Follow the creation steps by clicking on the 9 tabs below:
+
+<Tabs>
+  <Tab label="Step 1">
+    Your Exchange server is visible in the `Organization` column on the left. Select it.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup18.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Right-click in the window in the center and click <code className="action">Add to backup job...</code>.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup19.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    Enter a name and description for your backup operation, then click <code className="action">Next</code>.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup20.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    - Select <code className="action">Back up the following object</code>.
+    - Click <code className="action">Add</code>, then <code className="action">Users</code>.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup21.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 5">
+    From this window, determine whether your backup operation affects one or more accounts at once.
+    
+    - Select the email account(s) you would like to assign to your backup operation.
+    - Click <code className="action">Add</code> when you have finished your selection.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup22.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 6">
+    - The selected items appear in the window.
+    - Click <code className="action">Next</code> to proceed to the next step.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup23.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 7">
+    From this window, you can add exclusion rules using the <code className="action">Add</code> button. These settings will be applied to the email accounts you have selected. For example, you can exclude a specific calendar or folder.
+    
+    :::warning
+    If you want specific exclusion rules for each email account, you will need to create several backup operations for each email account.
+
+    :::
+
+    
+    - Click <code className="action">Next</code> to proceed to the next step.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup24.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 8">
+    Select the backup repository that is located, by default, on your computer.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup25.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 9">
+    - From this window, set backup scheduling options if desired.
+    - Tick `Start the job` if you want to start the backup operation immediately.
+    - Click <code className="action">Create</code> to finish creating the backup operation.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup26.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Launch an email account backup operation
+
+When a backup operation is created, find out how to start it and retrieve the backup.
+
+Follow the launch steps by clicking on the 4 tabs below:
+
+<Tabs>
+  <Tab label="Step 1">
+    From the list of backup operations, select the one you want to launch, right-click it, then click <code className="action">Start</code>.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup27.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Once the operation is complete, in the lower part of your Veeam Backup interface, you will find the backup report.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup28.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    - Click <code className="action">Explore</code> in the top horizontal menu bar.
+    - Choose the last backup with the <code className="action">Explore the Exchange state of...</code> **or** choose other backups via <code className="action">Explore Exchange point-in-time state...</code>.
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup29.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    In the left-hand column, you will see a list of your saved email accounts. Right-click the email account of your choice. There are two choices:
+    
+    - Export a backup to a file `.pst` using the <code className="action">Export to...</code> buttons
+    - Restore a backup directly to an email account using the <code className="action">Restore to...</code> buttons
+    
+    <img className="thumbnail" alt="veeam backup exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-veeam-backup/exchange_veeam_backup30.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Go further <a name="go-further"></a>
+
+[Getting started with the Private Exchange service](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-private/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/it/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/it/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

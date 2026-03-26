@@ -1,0 +1,91 @@
+---
+title: Importowanie adresu Additional IP
+description: Dowiedz się, jak zaimportować adres Additional IP do projektu OVHcloud Public Cloud
+lastUpdated: 2025-04-28
+---
+
+:::info
+Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). To nie ma wpływu na jego funkcje.
+
+:::
+
+
+## Wprowadzenie
+
+Jeśli chcesz skonfigurować adres Additional IP w swoich instancjach, ponieważ:
+
+- masz w instancji wiele witryn internetowych, 
+- obsługujesz projekty międzynarodowe,
+- chcesz migrować z serwera dedykowanego do instancji Public Cloud,
+
+Można zaimportować adres Additional IP powiązany z inną usługą OVHcloud.
+
+**Dowiedz się, jak zaimportować adres Additional IP do projektu OVHcloud Public Cloud.**
+
+## Wymagania początkowe
+
+- [Projekt Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
+- [Adres Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ścieżka nawigacji:** <code className="action">Public Cloud</code> > Wybierz projekt
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+:::warning
+Ta funkcja nie jest aktualnie dostępna dla instancji Metal.
+
+:::
+
+
+## W praktyce
+
+W menu po lewej stronie otwórz <code className="action">Publiczne adresy IP</code> w **Sieć**.
+
+Otwórz kartę <code className="action">Additional IP</code> i kliknij przycisk <code className="action">Operacje</code>. Wybierz <code className="action">Importuj Additional IP</code>, aby wyświetlić wszystkie adresy IP, które mogą być importowane do Twojego projektu Public Cloud.
+
+<img className="thumbnail" alt="Sekcja IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_01.png" loading="lazy" />
+
+Jeśli nie posiadasz jeszcze additional IP w Twoim projekcie Public Cloud, na stronie głównej pojawi się opcja importu dodatkowego adresu IP.
+
+Kliknij <code className="action">...</code> obok adresu IP, który chcesz importować i kliknij <code className="action">Importuj ten Additional IP</code>.
+
+<img className="thumbnail" alt="Dodatkowe IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_02.png" loading="lazy" />
+
+Zatwierdź klikając <code className="action">Importuj</code>.
+
+<img className="thumbnail" alt="Import potwierdzenia" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_03.png" loading="lazy" />
+
+Odczekaj kilka minut, aż import zostanie zrealizowany. Otwórz zakładkę <code className="action">Additional IP</code>, aby wyszukać zaimportowany adres Additional IP. W razie potrzeby odśwież stronę.
+
+Kliknij <code className="action">...</code> po prawej stronie i wybierz <code className="action">Zmień powiązaną</code> instancję.
+
+<img className="thumbnail" alt="Dodatkowe IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_04.png" loading="lazy" />
+
+Pojawi się okno, w którym wybierz instancję, do której należy przypisać Twój adres IP.
+
+<img className="thumbnail" alt="Dodatkowe IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_05.png" loading="lazy" />
+
+Kliknij przycisk <code className="action">Dołącz</code>, aby potwierdzić. Na stronie pojawi się komunikat modyfikacji.
+
+:::warning
+Dodatkowy adres IP nie może być przenoszony między różnymi strefami. Na przykład adres IP zlokalizowany w centrum danych SBG może zostać przeniesiony do GRA lub RBX, ale nie do BHS.
+
+:::
+
+
+Twój adres Additional IP zostanie teraz przypisany do Twojej instancji.
+
+Następnym krokiem jest konfiguracja IP w systemie operacyjnym. Zapoznaj się [z przewodnikiem dotyczącym tej konfiguracji](/guides/public-cloud/public-cloud-network-services/getting-started-04-configure-additional-ip-to-instance/).
+
+## Sprawdź również
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

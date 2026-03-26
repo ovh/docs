@@ -1,0 +1,455 @@
+---
+title: Weiterleitung von bei OVHcloud verwalteten Domainnamen
+description: Erfahren Sie hier, wie Sie verschiedene Weiterleitungsarten für einen von OVHcloud verwalteten Domainnamen erstellen
+lastUpdated: 2026-03-27
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+Bei der Weiterleitung eines Domainnamens wird dieser auf ein neues Ziel umgeleitet. Es gibt verschiedene Arten von Weiterleitungen, die jeweils einem bestimmten Bedarf entsprechen.
+
+**Diese Anleitung erklärt die verschiedenen Möglichkeiten zur Weiterleitung Ihres Domainnamens.**
+
+## Voraussetzungen
+
+- Ein [Domainname](https://www.ovhcloud.com/de/domains/)
+- Zugriff auf Ihr Webhosting (für eine Weiterleitung über eine [.htaccess](#htaccess_rewrite)-Datei)
+
+{/* CP-NAV-START:web-domains */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](https://manager.eu.ovhcloud.com/#/web-domains/domain)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Domainnamen</code> > Wählen Sie Ihren Domainnamen aus
+
+---
+{/* CP-NAV-END:web-domains */}
+
+## In der praktischen Anwendung
+
+### Domain-Weiterleitungen verstehen
+
+Mit dieser Funktion können Sie einen Domainnamen/eine Subdomain umleiten auf:
+
+- Einen anderen bereits bestehenden Domainnamen/eine Subdomain:
+    - **Beispiel**: `domain.tld`
+- Eine Website-URL (Uniform Resource Locator):
+    - **Beispiele**: `http://www.domain.tld/welcome/` oder `https://www.domain.tld/welcome/` (wenn der Ziel-Domainname über ein kompatibles SSL-Zertifikat verfügt).
+
+Diese Weiterleitungen können auf mehrere Arten eingerichtet werden:
+
+- **Über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de)**, in dem ein Konfigurationsassistent Ihre Weiterleitung einrichten kann.
+- **Über eine codebasierte Methode**: Sie müssen die Weiterleitung selbst in einer Datei erstellen (in der Regel [.htaccess](#htaccess_rewrite)).
+
+:::warning
+Die Einrichtung einer Weiterleitung kann Auswirkungen auf das SEO-Ranking Ihrer Website haben.
+Achten Sie auf die Änderungen, die Sie vornehmen, oder kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) für SEO.
+
+Achtung: Eine über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) erstellte Weiterleitung erlaubt nicht die Weiterleitung einer `https://`-URL auf einen anderen Domainnamen oder eine andere URL.
+Um diese Art von Weiterleitung zu erstellen, müssen Sie eine [URL-Umschreibung](/guides/web-cloud/web-hosting/htaccess-url-rewriting-using-mod-rewrite/) verwenden, zum Beispiel mithilfe einer ".htaccess"-Datei.
+
+:::
+
+
+### Einen Domainnamen über das Kundencenter weiterleiten
+
+Neben Weiterleitungen, die auf DNS-Einträge vom Typ A, AAAA und CNAME verweisen, sind über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) 3 Weiterleitungsoptionen verfügbar.
+
+Weitere Informationen finden Sie bei Bedarf in unserer Dokumentation zu [DNS-Einträgen](/guides/web-cloud/domains/dns-zone-records/).
+
+:::warning
+Um eine der 3 nachstehenden Optionen nutzen zu können, muss die aktive DNS-Zone Ihres Domainnamens in Ihrem OVHcloud Kundencenter verwaltet werden. Diese Weiterleitungsoptionen ändern Ihre DNS-Zonenkonfiguration, um zu funktionieren.
+
+Andernfalls funktionieren die Weiterleitungen nicht.
+
+:::
+
+
+:::info
+Unabhängig von der gewählten Weiterleitungsoption benötigt die Änderung eine Propagationszeit von 4 bis maximal 24 Stunden, bis sie voll wirksam ist.
+
+:::
+
+
+**Klicken Sie auf die nachstehenden Optionen, um deren Inhalt anzuzeigen.**
+
+<details>
+
+<summary>Option 1 - Sichtbare permanente Weiterleitung auf eine Web-Adresse</summary>
+
+
+Mit dieser Option wird nach Eingabe des weitergeleiteten Domainnamens der Ziel-Domainname in der Adresszeile Ihres Browsers angezeigt, anstelle des weitergeleiteten Domainnamens.
+
+- **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird `domain2.tld` in der Adresszeile Ihres Browsers angezeigt.
+
+<img className="thumbnail" alt="Gif1" src="/images/assets/schemas/domains/visible-redirection.gif" loading="lazy" />
+
+> Diese "Standard-Weiterleitung" gibt einen HTTP 301 Code zurück.
+
+Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Domainnamen](https://manager.eu.ovhcloud.com/#/web-domains/domain), und wählen Sie den betreffenden Domainnamen aus.
+    
+    <img className="thumbnail" alt="Domain names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf den Tab <code className="action">Weiterleitung</code>: Die Tabelle zeigt die aktiven Weiterleitungen für Ihren Domainnamen an. Klicken Sie dann auf <code className="action">Weiterleitung hinzufügen</code>.
+    
+    <img className="thumbnail" alt="Redirection menu overview" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Im Fenster wird Ihr weiterzuleitender Domainname bereits angezeigt. Füllen Sie das Formular **nur dann** aus, wenn Sie eine *Subdomain* weiterleiten möchten.
+    
+    Die Option <code className="action">Ebenfalls weiterleiten</code> kann aktiviert werden, um auch die Subdomain `www` auf dasselbe Ziel weiterzuleiten, das Sie für Ihren Domainnamen/Ihre Subdomain gewählt haben.
+    
+    <img className="thumbnail" alt="Step 1" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 4">
+    Wählen Sie <code className="action">Zu einer Web-Adresse</code> aus.
+    
+    <img className="thumbnail" alt="Step 4" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 5">
+    Wählen Sie <code className="action">Mit einer sichtbaren Weiterleitung</code> aus den beiden angezeigten Optionen.
+    
+    <img className="thumbnail" alt="Step 5" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 6">
+    Wählen Sie <code className="action">Permanent (301)</code> aus den beiden angezeigten Optionen und geben Sie den Ziel-Domainnamen oder die Ziel-URL Ihrer Weiterleitung im Feld <code className="action">Web-Adresse</code> ein.
+    
+    <img className="thumbnail" alt="Step 6" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 7">
+    Überprüfen Sie in diesem letzten Schritt, ob die angezeigten Informationen korrekt sind.
+    
+    <img className="thumbnail" alt="Step 7" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-permanent.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Bestätigen</code>, um Ihre Konfiguration zu bestätigen.
+    
+    :::info
+    Wenn die Meldung "*Es gibt Weiterleitungen von Domainnamen, die Sie weiterleiten möchten, die mit den Weiterleitungen, die Sie hinzufügen möchten, in Konflikt stehen*" angezeigt wird, können Sie die Option <code className="action">Überschreiben der existierenden Weiterleitung bestätigen</code> aktivieren, um die Anwendung Ihrer Weiterleitung zu erzwingen.
+    
+    Achtung: Die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Option 2 - Temporäre sichtbare Weiterleitung auf eine Web-Adresse</summary>
+
+
+Wie bei Option 1 wird nach Eingabe des weitergeleiteten Domainnamens der Ziel-Domainname in der Adresszeile Ihres Browsers anstelle des weitergeleiteten Domainnamens angezeigt.
+
+Diese Option sollte jedoch nur punktuell verwendet werden, zum Beispiel für temporäre Ereignisse.
+
+Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtbaren permanenten** Weiterleitung vom Typ 301 (HTTP-Code).
+
+- **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird `domain2.tld` in der Adresszeile Ihres Browsers angezeigt.
+
+<img className="thumbnail" alt="Gif1" src="/images/assets/schemas/domains/visible-redirection.gif" loading="lazy" />
+
+> Diese Weiterleitung gibt einen HTTP 302 Code zurück.
+
+Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Domainnamen](https://manager.eu.ovhcloud.com/#/web-domains/domain), und wählen Sie den betreffenden Domainnamen aus.
+    
+    <img className="thumbnail" alt="Domain names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf den Tab <code className="action">Weiterleitung</code>: Die Tabelle zeigt die aktiven Weiterleitungen für Ihren Domainnamen an. Klicken Sie dann auf <code className="action">Weiterleitung hinzufügen</code>.
+    
+    <img className="thumbnail" alt="Redirection menu overview" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Im Fenster wird Ihr weiterzuleitender Domainname bereits angezeigt. Füllen Sie das Formular **nur dann** aus, wenn Sie eine *Subdomain* weiterleiten möchten.
+    
+    Die Option <code className="action">Ebenfalls weiterleiten</code> kann aktiviert werden, um auch die Subdomain `www` auf dasselbe Ziel weiterzuleiten, das Sie für Ihren Domainnamen/Ihre Subdomain gewählt haben.
+    
+    <img className="thumbnail" alt="Step 3" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 4">
+    Wählen Sie <code className="action">Zu einer Web-Adresse</code> aus.
+    
+    <img className="thumbnail" alt="Step 4" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 5">
+    Wählen Sie <code className="action">Mit einer sichtbaren Weiterleitung</code> aus den beiden angezeigten Optionen.
+    
+    <img className="thumbnail" alt="Step 5" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 6">
+    Wählen Sie <code className="action">Temporär (302)</code> aus den beiden angezeigten Optionen und geben Sie den Ziel-Domainnamen oder die Ziel-URL Ihrer Weiterleitung im Feld <code className="action">Web-Adresse</code> ein.
+    
+    <img className="thumbnail" alt="Step 6" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 7">
+    Überprüfen Sie in diesem letzten Schritt, ob die angezeigten Informationen korrekt sind.
+    
+    <img className="thumbnail" alt="Step 7" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-temporary.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Bestätigen</code>, um Ihre Konfiguration zu bestätigen.
+    
+    :::info
+    Wenn die Meldung "*Es gibt Weiterleitungen von Domainnamen, die Sie weiterleiten möchten, die mit den Weiterleitungen, die Sie hinzufügen möchten, in Konflikt stehen*" angezeigt wird, können Sie die Option <code className="action">Überschreiben der existierenden Weiterleitung bestätigen</code> aktivieren, um die Anwendung Ihrer Weiterleitung zu erzwingen.
+    
+    Achtung: Die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Option 3 - Unsichtbare Weiterleitung auf eine Web-Adresse</summary>
+
+
+Diese Weiterleitung erlaubt es, nach Eingabe des weitergeleiteten Domainnamens, diesen in der Adresszeile Ihres Browsers angezeigt zu lassen, anstatt ihn durch den Ziel-Domainnamen zu ersetzen.
+
+**Achtung: Diese Aktion ist nicht mit allen Websites kompatibel und beeinträchtigt das SEO-Ranking Ihrer Website.**
+
+- **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird `domain1.tld` in der Adresszeile Ihres Browsers angezeigt.
+
+<img className="thumbnail" alt="Gif2" src="/images/assets/schemas/domains/invisible-redirection.gif" loading="lazy" />
+
+Die unsichtbare Weiterleitung funktioniert über ein *iFrame*-HTML-Tag. Damit kann Ihr weitergeleiteter Domainname den Inhalt der anderen Seite, die dem Ziel-Domainnamen entspricht, in seine eigene HTML-Seite integrieren.
+
+Diese Einbettung verhindert, dass Besuchern Ihrer Website der Ziel-Domainname angezeigt wird.
+
+> Diese Option gibt einen HTTP 200 Code zurück.
+
+:::warning
+Achtung: Mit einem *iFrame*-Tag eingebettete Seiten werden möglicherweise auf Smartphones nicht korrekt dargestellt. Ihr Inhalt wird von Suchmaschinen in der Regel nicht für das SEO-Ranking und die Indexierung Ihrer Website berücksichtigt.
+
+:::
+
+
+Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Domainnamen](https://manager.eu.ovhcloud.com/#/web-domains/domain), und wählen Sie den betreffenden Domainnamen aus.
+    
+    <img className="thumbnail" alt="Domain names" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf den Tab <code className="action">Weiterleitung</code>: Die Tabelle zeigt die aktiven Weiterleitungen für Ihren Domainnamen an. Klicken Sie dann auf <code className="action">Weiterleitung hinzufügen</code>.
+    
+    <img className="thumbnail" alt="Redirection menu overview" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Im Fenster wird Ihr weiterzuleitender Domainname bereits angezeigt. Füllen Sie das Formular **nur dann** aus, wenn Sie eine *Subdomain* weiterleiten möchten.
+    
+    Die Option <code className="action">Ebenfalls weiterleiten</code> kann aktiviert werden, um auch die Subdomain `www` auf dasselbe Ziel weiterzuleiten, das Sie für Ihren Domainnamen/Ihre Subdomain gewählt haben.
+    
+    <img className="thumbnail" alt="Step 3" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 4">
+    Wählen Sie <code className="action">Zu einer Web-Adresse</code> aus.
+    
+    <img className="thumbnail" alt="Step 4" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 5">
+    Wählen Sie <code className="action">Mit einer unsichtbaren Weiterleitung</code> aus den beiden angezeigten Optionen.
+    
+    <img className="thumbnail" alt="Step 5" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-with-an-invisible-redirection.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 6">
+    Wählen Sie <code className="action">Temporär (iframe)</code> aus den beiden angezeigten Optionen und geben Sie den Ziel-Domainnamen oder die Ziel-URL Ihrer Weiterleitung im Feld <code className="action">Web-Adresse</code> ein.
+    
+    <img className="thumbnail" alt="Step 6" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png" loading="lazy" />
+
+In diesem Schritt stehen Ihnen drei optionale Einstellungen zur Verfügung:
+    
+    - **Titel**: Der Titel Ihrer Website. Er wird als Seitentitel im Browser-Tab angezeigt.
+    - **Schlüsselwörter**: Sie können von Suchmaschinen verwendet werden, um die Seite teilweise zu indexieren.
+    - **Beschreibung**: Eine Beschreibung Ihrer Website. Sie wird von Suchmaschinen in deren Ergebnissen verwendet.
+    
+    Klicken Sie auf <code className="action">Weiter</code>.
+  </Tab>
+  <Tab label="Schritt 7">
+    Überprüfen Sie in diesem letzten Schritt, ob die angezeigten Informationen korrekt sind.
+    
+    <img className="thumbnail" alt="Step 7" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-iframe.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Bestätigen</code>, um Ihre Konfiguration zu bestätigen.
+    
+    :::info
+    Wenn die Meldung "*Es gibt Weiterleitungen von Domainnamen, die Sie weiterleiten möchten, die mit den Weiterleitungen, die Sie hinzufügen möchten, in Konflikt stehen*" angezeigt wird, können Sie die Option <code className="action">Überschreiben der existierenden Weiterleitung bestätigen</code> aktivieren, um die Anwendung Ihrer Weiterleitung zu erzwingen.
+    
+    Achtung: Die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+### Einen Domainnamen über eine ".htaccess"-Datei weiterleiten <a name="htaccess_rewrite"></a>
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, wenn Sie Schwierigkeiten haben. Wir werden Ihnen bei den unten dokumentierten Schritten keine weitergehende Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
+
+:::
+
+
+".htaccess"-Dateien sind Konfigurationsdateien, in denen Befehle angegeben werden können. Wenn der Webserver (Apache) den Code Ihrer Website ausführt, werden die Befehle interpretiert und ausgeführt.
+
+Mit solchen Befehlen können Sie Weiterleitungen erstellen.
+
+Eine fehlerhafte ".htaccess"-Datei kann Ihre Website unerreichbar machen. Kontaktieren Sie im Zweifelsfall einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+
+Unsere gesamte Dokumentation zu ".htaccess" finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
+
+:::tip[Success]
+Wir empfehlen Ihnen, **vor jeder Änderung eine Sicherung Ihrer .htaccess-Datei zu erstellen**. So können Sie im Fehlerfall die vorherige Version der Datei wiederherstellen.
+
+:::
+
+
+Nachfolgend finden Sie 4 Variablen, um Weiterleitungen über die ".htaccess"-Datei einzurichten.
+
+#### Variable 1 - "Redirect permanent"
+
+Diese Variable erlaubt die Weiterleitung einer Website als Ganzes oder nur eines Teils auf eine andere Website oder einen anderen Teil. Besucher werden automatisch auf die korrekte Adresse/URL weitergeleitet, wenn sie versuchen, über die historische Adresse/URL auf Ihre Website zuzugreifen.
+
+<Tabs>
+  <Tab label="Einzufügender Code in &quot;.htaccess&quot;">
+    Um eine ganze Website weiterzuleiten:
+    
+    ```bash
+    Redirect permanent / http://domainTarget.tld/
+    ```
+    
+    Um ein Verzeichnis auf ein anderes weiterzuleiten:
+    
+    ```bash
+    Redirect permanent /old_folder http://domain.tld/new_folder
+    ```
+    
+    Um eine Datei auf eine andere weiterzuleiten:
+    
+    ```bash
+    Redirect permanent /old_file.php http://domain.tld/new_file.php
+    ```
+  </Tab>
+  <Tab label="HTTP-Code">
+    Das Skript gibt einen HTTP 301 Code zurück. Dies signalisiert den Suchmaschinen-Bots, dass ihre Links auf die neue Adresse/URL aktualisiert werden müssen.
+  </Tab>
+</Tabs>
+
+
+#### Variable 2 - "Redirect gone"
+
+Diese Variable ist für gelöschte Dateien nützlich. Sie ersetzt die Meldung *404 document not found* durch eine aussagekräftigere Meldung wie *410 document no longer exists*. Besucher Ihrer Website werden darüber informiert, dass die aufgerufene Datei nicht mehr existiert.
+
+<Tabs>
+  <Tab label="Einzufügender Code in &quot;.htaccess&quot;">
+    ```bash
+    Redirect gone /fileDeleted.html
+    ```
+  </Tab>
+  <Tab label="HTTP-Code">
+    Das Skript gibt einen HTTP 410 Code zurück.
+  </Tab>
+</Tabs>
+
+
+#### Variable 3 - "Redirect seeother"
+
+Wenn Sie die Dateiendung ändern, ermöglicht die Variable *seeother* das Ändern des Dateityps. Besucher, die auf die alte Datei zugreifen möchten, werden automatisch auf die Datei mit der korrekten Endung weitergeleitet.
+
+<Tabs>
+  <Tab label="Einzufügender Code in &quot;.htaccess&quot;">
+    ```bash
+    Redirect seeother /example.doc http://domain.tld/example.pdf
+    ```
+  </Tab>
+  <Tab label="HTTP-Code">
+    Das Skript gibt einen HTTP 303 Code zurück.
+  </Tab>
+</Tabs>
+
+
+#### Variable 4 - "Redirect Temp"
+
+Diese Variable kann verwendet werden, wenn Sie Dateien vorübergehend auf eine andere Website verschieben. Besucher, die über die historische Adresse/URL auf Ihre Website zugreifen möchten, werden automatisch auf die neue temporäre Adresse/URL weitergeleitet.
+
+<Tabs>
+  <Tab label="Einzufügender Code in &quot;.htaccess&quot;">
+    ```bash
+    Redirect temp / http://OtherWebsite.tld/site/
+    ```
+  </Tab>
+  <Tab label="HTTP-Code">
+    Das Skript gibt einen HTTP 302 Code zurück.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Den Zugang zu Ihrer Website für bestimmte IP-Adressen über eine ".htaccess"-Datei sperren](/guides/web-cloud/web-hosting/htaccess-how-to-block-a-specific-ip-address-from-accessing-your-website/).
+
+[Den Adminbereich Ihrer Website mit einer ".htaccess"-Datei schützen](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+
+[URLs mittels mod_rewrite umschreiben](/guides/web-cloud/web-hosting/htaccess-url-rewriting-using-mod-rewrite/).
+
+[Weitere Operationen mit ".htaccess"-Dateien](/guides/web-cloud/web-hosting/htaccess-what-else-can-you-do/).
+
+[Wie bearbeite ich meine DNS-Zone?](/guides/web-cloud/domains/dns-zone-records/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

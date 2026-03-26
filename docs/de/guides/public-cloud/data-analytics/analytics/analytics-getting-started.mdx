@@ -1,0 +1,97 @@
+---
+title: Getting started with Analytics
+description: Find out how to set up your managed analytic service in the OVHcloud Control Panel
+lastUpdated: 2025-02-03
+---
+
+## Objective
+
+OVHcloud Analytics allows you to focus on building and deploying cloud applications while OVHcloud takes care of the analytics infrastructure and maintenance.
+
+**This guide explains how to order an analytics solution in the OVHcloud Control Panel.**
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de)
+- A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
+
+## Instructions
+
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) and switch to the <code className="action">Public Cloud</code> section. After selecting your Public Cloud project, go in the left-hand navigation bar under **Databases & Analytics**:
+
+- Clicking on <code className="action">Data Streaming</code> will give you access to `Kafka`, `Kafka Connect` and `KafkaMirrorMaker` services.
+- Clicking on `Data Analysis` will give you access to `Dashboards` and `OpenSearch` services.
+
+Click the <code className="action">Create a database instance</code> button (or the <code className="action">Create a service</code> button if your project already contains analytics services).
+
+### Step 1: Select your analytics type
+
+Click on the type of analytics you want to use and then select the version to install from the respective drop-down menu.
+
+<img className="thumbnail" alt="Choose database" src="/images/public-cloud/data-analytics/analytics/analytics-getting-started/getting_started_control_panel_01.png" loading="lazy" />
+
+### Step 2: Select a Plan
+
+Choose an appropriate service plan. You will be able to upgrade the plan after its creation.
+
+Please visit the [capabilities page](/guides/public-cloud/data-analytics/overview/) of your selected analytics type for detailed information on each plan's properties.
+
+<img className="thumbnail" alt="Choose plan" src="/images/public-cloud/data-analytics/analytics/analytics-getting-started/getting_started_control_panel_02.png" loading="lazy" />
+
+### Step 3: Select a location
+
+Choose the geographical region of the data centre in which your analytics service will be hosted.
+
+<img className="thumbnail" alt="Choose region" src="/images/public-cloud/data-analytics/analytics/analytics-getting-started/getting_started_control_panel_03.png" loading="lazy" />
+
+### Step 4: Configure analytics service nodes
+
+You can choose the node template in this step.
+
+<img className="thumbnail" alt="Order nodes" src="/images/public-cloud/data-analytics/analytics/analytics-getting-started/getting_started_control_panel_04.png" loading="lazy" />
+
+Please visit the [capabilities page](/guides/public-cloud/data-analytics/overview/) of your selected analytics service type for detailed information on the hardware resources and other properties of the analytics service installation.
+
+Take note of the pricing information.
+
+### Step 5: Sizing
+
+Additional storage can be ordered and, depending on the engine, the number of nodes in your cluster can be adjusted:
+
+<img className="thumbnail" alt="Sizing" src="/images/public-cloud/data-analytics/analytics/analytics-getting-started/getting_started_control_panel_05.png" loading="lazy" />
+
+### Step 6: Configure your options
+
+Define your network configuration:
+
+<img className="thumbnail" alt="Configure options" src="/images/public-cloud/data-analytics/analytics/analytics-getting-started/getting_started_control_panel_06.png" loading="lazy" />
+
+#### Connecting a private network (optional)
+
+<img className="thumbnail" alt="Attach network" src="/images/public-cloud/data-analytics/analytics/analytics-getting-started/getting_started_control_panel_07.png" loading="lazy" />
+
+If you already have a private subnet available, check the box **Private** and select it from the drop-down menu. Note that this option might not be available for the selected service type.
+
+You can be forwarded to create a private network or subnet by clicking on the respective links. You will have to start the analytics service order process anew in that case.
+
+Please follow [this guide](/guides/public-cloud/public-cloud-network-services/getting-started-09-creating-vrack-with-openstack/) for detailed instructions.
+
+### Step 7: Summary and confirmation
+
+The final section will display a summary of your order as well as the API equivalent of creating this analytics service instance with the [OVHcloud API](/guides/manage-and-operate/api/first-steps/).
+
+<img className="thumbnail" alt="Confirm order" src="/images/public-cloud/data-analytics/analytics/analytics-getting-started/getting_started_control_panel_08.png" loading="lazy" />
+
+Within a few minutes your new analytics service will be deployed. Messages in the OVHcloud Control Panel will inform you when the analytics service is ready to use.
+
+Continue with the *Configure your instance to accept incoming connections* guide of your selected analytics service type available [here](/guides/public-cloud/public-cloud-databases/overview/) to configure your service after installation.
+
+Note that the configuration options might be different, depending on the analytics type. You will find example on this repository: [https://github.com/ovh/public-cloud-databases-examples](https://github.com/ovh/public-cloud-databases-examples).
+
+## We want your feedback!
+
+Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our Analytics services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

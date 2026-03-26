@@ -1,0 +1,106 @@
+---
+title: Redimensionar uma instância através do Horizon
+description: Saiba como redimensionar uma instância a partir da interface Horizon
+lastUpdated: 2025-07-17
+---
+
+:::info
+Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+
+:::
+
+
+## Objetivo
+
+No seguimento de um crescimento da sua atividade, ou simplesmente porque tem novas necessidades, é possível que a sua instância não tenha a potência necessária para responder aos novos picos de carga.
+É possível, graças ao Public Cloud, aumentar os recursos que a sua instância dispõe em apenas alguns cliques.
+
+**Este guia explica-lhe o procedimento a seguir para redimensionar a sua instância a partir da interface OpenStack Horizon.**
+
+:::warning
+Apenas o redimensionamento para um modelo superior é possível para os modelos clássicos.
+Além disso, esta operação provoca um corte da instância durante o tempo da operação.
+
+:::
+
+
+:::warning
+As instâncias de Metal só podem ser redimensionadas de e para outras instâncias de Metal.
+
+:::
+
+
+:::tip[Success]
+As instâncias do tipo *flex* permitem o redimensionamento para modelos superiores ou inferiores graças a um tamanho de disco único.
+
+:::
+
+
+## Requisitos
+
+- Ter [criado uma instância Public Cloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) na sua conta OVHcloud
+- [Aceder à interface Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+## Instruções
+
+Ligue-se ao [Horizon interface](https://horizon.cloud.ovh.net/auth/login/), e verifique se está na região correcta. Pode verificar isto no canto superior esquerdo.<br/>
+Clique no menu <code className="action">Compute</code> à esquerda e selecione <code className="action">Instances</code>. Selecione a <code className="action">Resize Instance</code> no menu pendente à direita da instância em questão.
+
+<img className="thumbnail" alt="Resize instance" src="/images/public-cloud/compute/resize-of-an-instance/resizeinstance2021.png" loading="lazy" />
+
+### Escolha do template (*Flavor Choice*)
+
+Esta secção indica o template atual (*old flavor*) e permite-lhe selecionar um novo template (*new flavor*) para o recurso da instância.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/flavorchoice.png" loading="lazy" />
+
+#### Detalhes do template (*Flavor Details*)
+
+Nesta secção apresentam-se os recursos associados ao template escolhido. 
+
+#### Limites do Projeto (*Project Limits*)
+
+Visite aqui os recursos ocupados em comparação com os recursos totais atribuídos ao projeto.
+
+:::warning
+Tenha em conta que só pode redimensionar uma instância de um modelo Linux para outro modelo Linux e de um modelo Windows para outro modelo Windows.
+
+:::
+
+
+### Opções avançadas (*Advanced Options*)
+
+Esta secção permite gerir o particionamento do disco (*Disk Partition*) e o grupo de servidores (*Server Group*).
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/resize_advanced.png" loading="lazy" />
+
+Concluída a configuração, clique em <code className="action">Resize</code>.
+
+### Redimensionamento do disco sob Windows
+
+Atenção, aquando de um redimensionamento para uma Instância Windows, o tamanho da partição não é automaticamente atualizado, será necessário ampliá-la ao utilizar o **disk manager**:
+
+- Clique com o botão direito do rato no menu <code className="action">Start</code> e lance o gestor de disco ao clicar em <code className="action">Disk Management</code>:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2980.png" loading="lazy" />
+
+- Clique com o botão direito na partição principal e, em seguida, em <code className="action">Extend Volume</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2981a.png" loading="lazy" />
+
+- Clique em <code className="action">Next</code> para aceder à secção `Extend Volume Wizard`. Escolha os recursos do disco a expandir e clique em <code className="action">Next</code>. 
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2978a.png" loading="lazy" />
+
+A seguir, clique em <code className="action">Finish</code> para validar a sua escolha.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/wizard2021.png" loading="lazy" />
+
+- A nova dimensão do disco será então apresentada no gestor de disco.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2979.png" loading="lazy" />
+
+## Quer saiba mais?
+
+Junte-se à nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).
+

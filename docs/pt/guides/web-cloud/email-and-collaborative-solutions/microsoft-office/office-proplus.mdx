@@ -1,0 +1,108 @@
+---
+title: Utilizar o ambiente de trabalho remoto com Microsoft 365 apps
+description: Saiba como instalar e utilizar Microsoft 365 apps num ambiente de trabalho remoto (RDS) ou num computador partilhado
+lastUpdated: 2021-09-06
+---
+
+## Objetivo
+
+Deseja utilizar o pacote de software presente no pack Microsoft 365 apps numa máquina distante ou partilhada. Para isso, é necessário seguir o procedimento de instalação descrito neste guia.
+
+**Saiba como instalar e utilizar Microsoft 365 apps num ambiente de trabalho remoto (RDS) ou num computador partilhado.**
+
+## Requisitos
+
+- Dispor de uma licença Microsoft 365 apps for entreprise (Ex Office 365 ProPlus)
+- Utilizar Microsoft Windows através de um escritório à distância (**R**emote **D**esktop **S**ervices)
+
+:::warning
+A licença Microsoft 365 Apps for business é incompatível com uma utilização via RDS e computador partilhado.
+
+:::
+
+
+## Instruções
+
+Este guia baseia-se nas informações fornecidas no guia Microsoft [Deploy Microsoft 365 Apps by using Remote Desktop Services](https://docs.microsoft.com/pt/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
+
+:::warning
+A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+
+Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+
+:::
+
+
+### Método 1: Configuração manual
+
+A instalação de uma oferta Microsoft 365 Apps for entreprise num computador partilhado utilizando os serviços de ambiente de trabalho remoto (RDS) não funciona sem uma configuração específica. Sem esta configuração, deverá obter a seguinte mensagem:
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-office/office-proplus/4717.png" loading="lazy" />
+
+:::info
+Se já realizou a instalação da sua licença Office 365 Proplus, é necessário **desinstalar** a licença.
+
+:::
+
+
+- Depois de desinstalar a sua licença, queira [clicar aqui](https://www.microsoft.com/en-us/download/details.aspx?id=49117) para descarregar a ferramenta de implementação Microsoft 365.
+
+- **Execute** a ferramenta de implementação na sua máquina.
+
+- Altere o ficheiro de `configuration.xml`.
+
+<img className="thumbnail" alt="office 365" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-office/office-proplus/4720.png" loading="lazy" />
+
+Edite o ficheiro de `configuration.xml` e depois descarregue as seguintes linhas:
+
+```xml
+Display Level="None" AcceptEULA="True"
+Property Name="SharedComputerLicensing" Value="1"
+```
+
+Se estas linhas não existirem, pode copiá-las/colá-las no ficheiro.
+
+- Registe as alterações efetuadas. A seguir, abra um terminal powershell e execute estes dois comandos a partir da pasta onde está o ficheiro de `configuration.xml`:
+
+```powershell
+./setup.exe /download configuration.xml
+```
+
+e
+
+```powershell
+./setup.exe /configure configuration.xml
+```
+:::info
+A execução destes comandos pode levar vários minutos.
+
+:::
+
+
+- Abra o editor do registo windows executando o `Regedit` e siga o seguinte caminho:
+
+```powershell
+HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration
+```
+
+- Verifique a seguinte chave:
+
+```powershell
+SharedComputerLicensing
+```
+
+Certifique-se de que o seu valor é de `1`. Se esta chave não existir, pode criá-la.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-office/office-proplus/4723.png" loading="lazy" />
+
+- Execute uma aplicação da suite Office 365 e deverá introduzir o seu nome de utilizador e a respetiva palavra-passe.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-office/office-proplus/4724.png" loading="lazy" />
+
+- Agora pode utilizar a suite Office 365 a partir do seu computador partilhado utilizando os serviços de ambiente de trabalho remoto (RDS).
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-office/office-proplus/4726.png" loading="lazy" />
+
+## Quer saber mais?
+
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

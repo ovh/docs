@@ -1,0 +1,104 @@
+---
+title: Skaluj instancję w interfejsie Horizon
+description: Dowiedz się, jak zmienić rozmiar instancji w interfejsie Horizon.
+lastUpdated: 2025-07-17
+---
+
+:::info
+Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+
+:::
+
+
+## Wprowadzenie
+
+Jeśli Twoja działalność się rozwija i zapotrzebowanie na zasoby wzrasta, możesz za pomocą kilku kliknięć zwiększyć zasoby, którymi dysponuje Twoja instancja. 
+
+**Z tego przewodnika dowiesz się, jak zmienić rozmiar instancji w interfejsie OpenStack Horizon.**
+
+:::warning
+W przypadku modeli klasycznych możliwe jest tylko zmiana rozmiaru na wyższy.
+Operacja ta spowoduje również wycięcie instancji w czasie jej wykonywania.
+
+:::
+
+
+:::warning
+Rozmiar instancji Metal można zmieniać tylko z i do innych instancji Metal.
+
+:::
+
+
+:::tip[Success]
+Instancje typu *flex* umożliwiają zmianę rozmiaru na wyższe lub niższe modele dzięki unikalnemu rozmiarowi dysku.
+
+:::
+
+
+## Wymagania początkowe
+
+- Utworzenie [instancji Public Cloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) na Twoim koncie OVHcloud
+- [Dostęp do interfejsu Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+## W praktyce
+
+Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/) i upewnij się, że jesteś we właściwym regionie. Możesz to sprawdzić w lewym górnym rogu.<br/>
+Kliknij menu <code className="action">Compute</code> po lewej stronie, a następnie wybierz <code className="action">Instances</code>. Wybierz <code className="action">Resize Instance</code> z rozwijanego menu po prawej stronie odpowiedniej instancji.
+
+<img className="thumbnail" alt="Resize instance" src="/images/public-cloud/compute/resize-of-an-instance/resizeinstance2021.png" loading="lazy" />
+
+### Wybór szablonu (*Flavor Choice*)
+
+W tej sekcji podajemy aktualny szablon (*old flavor*) i możesz wybrać nowy szablon (*new flavor*) dla zasobów instancji.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/flavorchoice.png" loading="lazy" />
+
+#### Szczegóły szablonu (*Flavor Details*)
+
+W tej sekcji wyświetlają się zasoby przypisane do wybranego szablonu. 
+
+#### Limity Projektu (*Project Limits*)
+
+Tutaj możecie zobaczyć wykorzystane zasoby w porównaniu z całkowitymi zasobami przeznaczonymi na dany projekt.
+
+:::warning
+Pamiętaj, że możesz tylko zmienić rozmiar instancji z jednego modelu Linux na inny model Linux i z jednego modelu Windows na inny model Windows.
+
+:::
+
+
+### Opcje zaawansowane (*Advanced Options*)
+
+Sekcja ta pozwala na zarządzanie partycjonowaniem dysku (*Disk Partition*) i grupy serwerów (*Server Group*).
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/resize_advanced.png" loading="lazy" />
+
+Po zakończeniu konfiguracji kliknij <code className="action">Resize</code>.
+
+### Zmiana rozmiaru dysku w systemie Windows
+
+Uwaga: podczas zmiany rozmiaru instancji Windows rozmiar partycji nie jest automatycznie aktualizowany. Należy więc rozszerzyć ją, używając **disk manager**:
+
+- Kliknij prawym przyciskiem myszy w menu <code className="action">Start</code> i uruchom menedżer dysku klikając <code className="action">Disk Management</code>:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2980.png" loading="lazy" />
+
+- Kliknij prawym przyciskiem myszy na partycję główną, a następnie kliknij <code className="action">Extend Volume</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2981a.png" loading="lazy" />
+
+- Kliknij <code className="action">Next</code>, aby uzyskać dostęp do `Extend Volume Wizard`. Wybierz zasoby dysku do rozszerzenia i kliknij <code className="action">Next</code>. 
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2978a.png" loading="lazy" />
+
+Następnie kliknij <code className="action">Finish</code>, aby zatwierdzić wybór.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/wizard2021.png" loading="lazy" />
+
+- Nowy rozmiar dysku zostanie wyświetlony w managerze dysku.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/resize-of-an-instance/2979.png" loading="lazy" />
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

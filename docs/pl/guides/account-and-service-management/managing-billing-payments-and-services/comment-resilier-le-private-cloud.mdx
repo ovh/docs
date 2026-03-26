@@ -1,0 +1,85 @@
+---
+title: Jak zrezygnować z usługi Private Cloud
+description: Dowiedz się, jak zrezygnować z infrastruktury Private Cloud
+lastUpdated: 2020-07-08
+---
+
+import Api from '@components/Api';
+
+
+## Wprowadzenie
+
+Jeśli usługa Private Cloud nie jest już dla Ciebie odpowiednia lub jeśli zamówiłeś nową infrastrukturę, możesz wydać dyspozycję usunięcia starej infrastruktury, gdy wszystkie Twoje dane zostaną zabezpieczone.
+
+**Dowiedz się, jak zrezygnować z infrastruktury Private Cloud** 
+
+## Wymagania początkowe
+
+- Posiadanie usługi [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
+
+{/* CP-NAV-START:privatecloud-vmware-vsphere */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VMware vSphere](https://manager.eu.ovhcloud.com/#/dedicated/dedicated_cloud)
+- **Ścieżka nawigacji:** <code className="action">Hosted Private Cloud</code> > <code className="action">Managed VMware vSphere</code> > Wybierz usługę vSphere
+
+---
+{/* CP-NAV-END:privatecloud-vmware-vsphere */}
+
+## W praktyce
+
+W przypadku korzystania z usługi Private Cloud nie musisz podpisywać umowy terminowej. Jednak, jak wskazano w Szczegółowych warunkach korzystania z usług, należna jest opłata z góry za każdy rozpoczęty miesiąc.
+
+:::warning
+Zanim usługa zostanie zakończona, pamiętaj o pobraniu wszystkich danych, które chcesz zachować. Zakończenie usługi spowoduje całkowite usunięcie infrastruktury Private Cloud i wszystkich zawartych w niej danych.
+
+:::
+
+
+### Etap 1: złóż dyspozycję zakończenia usługi w Panelu klienta 
+
+W tabeli „Zarządzanie usługami” w zakładce „Informacje ogólne” kliknij przycisk <code className="action">...</code> (4) po prawej stronie od daty odnowienia. Na koniec kliknij <code className="action">Usuń usługę</code> (5).
+
+<img className="thumbnail" alt="zakończenie usługi w Panelu klienta" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation1.png" loading="lazy" />
+
+Pamiętaj, że ta czynność spowoduje usunięcie wszelkich danych obecnych w infrastrukturze, gdy tylko zostanie potwierdzone zakończenie usługi. Jeśli usługa zostanie zakończona przed końcem miesiąca, nie będzie przysługiwało prawo do zwrotu środków za niewykorzystany do końca miesiąca okres.
+
+Kliknij <code className="action">Zatwierdź</code>, aby potwierdzić rezygnację.
+
+<img className="thumbnail" alt="zatwierdzenie rezygnacji" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation2.png" loading="lazy" />
+
+Otrzymasz powiadomienie potwierdzające Twoją dyspozycję. Procedura potwierdzenia rezygnacji z usługi zostanie wysłana do Ciebie e-mailem na adres powiązany z kontem OVHcloud.
+
+<img className="thumbnail" alt="zatwierdzenie rezygnacji" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation3.png" loading="lazy" />
+
+### Etap 2: zatwierdź rezygnację
+
+Po złożeniu rezygnacji otrzymasz potwierdzenie wysłane na Twój adres e-mail powiązany z kontem OVHcloud. 
+
+E-mail ten możesz również znaleźć w Panelu klienta OVHcloud. Kliknij Twoją nazwę w prawym górnym rogu, a następnie <code className="action">E-maile dotyczące usługi</code>.
+
+<img className="thumbnail" alt="zatwierdzenie rezygnacji" src="/images/assets/screens/control-panel/product-selection/right-menu/my-messages.png" loading="lazy" />
+
+Temat e-maila:
+
+> **Usunięcie usługi Private Cloud pcc-xxx-xxx-xxx-xxx**".
+
+W wiadomości e-mail zamieścimy link, który pozwoli Ci potwierdzić rezygnację z usługi.
+
+:::info
+Należy pamiętać, że link ważny jest przez 72 godziny. Dlatego zalecamy złożyć dyspozycję zakończenia usługi począwszy od 25 dnia miesiąca.
+
+:::
+
+
+Możesz również zatwierdzić dyspozycję zakończenia usługi za pośrednictwem następującego API OVHcloud:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/confirmTermination"} />
+
+Następnie wprowadź token zatwierdzający podany w przesłanym do Ciebie e-mailu.
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

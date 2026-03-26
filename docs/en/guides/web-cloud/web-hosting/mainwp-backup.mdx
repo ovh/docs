@@ -1,0 +1,127 @@
+---
+title: Backing up your WordPress websites with MainWP
+description: Find out how to back up and restore your WordPress websites with MainWP
+lastUpdated: 2024-01-25
+---
+
+## Objective
+
+Backing up a website is a vital part of running your business. It offers several advantages:
+
+- **Data security**: Regular backups ensure your website's data is protected in the event of a cyberattack, technical failure or human error.
+- **Protection against update errors**: A backup made before a WordPress plugin or theme is updated allows you to go back in time if an error or version conflict occurs during the update.
+- **Rapid Restore**: In the event of a technical error, the backup can be reverted to a previous version to offer your customers a functional website and business continuity.
+- **Legal Compliance**: Maintaining regular backups may be a regulatory compliance requirement for your organization and may protect you from legal action.
+
+MainWP offers several extensions for backing up your websites.
+
+**This guide explains how to back up your WordPress websites with the UpdraftPlus extension.**
+
+## Requirements
+
+- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- Access to your MainWP dashboard.
+
+:::warning
+OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+
+This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/) if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+
+:::
+
+
+## Instructions
+
+### Install the UpdraftPlus extension
+
+:::info
+If you have never installed a MainWP extension, you can find out how to install one in [this guide](/guides/web-cloud/web-hosting/mainwp-general/).
+
+:::
+
+
+To find all the extensions linked to the backup, go to the [backup](https://mainwp.com/mainwp-extensions/extension-category/backup/) section of MainWP. You can also search for an extension by clicking <code className="action">Extensions</code> from the MainWP main menu, then <code className="action">Install Extensions</code>. Click on the <code className="action">Backup</code> tab to view the list of extensions linked to the backup.
+
+In this example, we choose the free UpdraftPlus extension, but you are free to choose the extension of your choice.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/install-updraftPlus.png" loading="lazy" />
+
+Once you have selected the extension, click <code className="action">Install Selected Extensions</code>.
+
+In the MainWP main menu, click <code className="action">Extensions</code> then <code className="action">Manage Extensions</code>. The previously installed UpdraftPlus extension appears.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/extensions-dashboard-updraftPlus.png" loading="lazy" />
+
+Click <code className="action">Enable</code> to enable the extension. If an error message indicates that the license is not activated, simply click the <code className="action">License</code> button. Before you can use UpdraftPlus, you must enable the UpdraftPlus plugin on the child sites that you want to back up.
+
+### Install the UpdraftPlus plugin on a child site
+
+In the main menu of MainWP, click <code className="action">Sites</code> then <code className="action">Install Plugins</code>. In the search bar, type UpdraftPlus.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/search-updraftplus.png" loading="lazy" />
+
+Once you have identified the "UpdraftPlus: WordPress Backup & Migration" plugin, click <code className="action">Install Plugin</code>. Then, on the right-hand side of the screen, select the child website on which you want to install UpdraftPlus. Click <code className="action">Complete Installation</code>. Remember to tick <code className="action">Activate after installation</code>.
+
+Once the installation is complete, go to the MainWP main menu. Click <code className="action">Sites</code>, <code className="action">Plugins</code> then <code className="action">Manage Plugins</code>. To check that UpdraftPlus is installed on your websites, select the child websites you want, on the right-hand side of the screen. Further down, in the search field <code className="action">Search Options</code>, type “UpdraftPlus” then select <code className="action">Show Plugins</code>.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/show-plugins.png" loading="lazy" />
+
+The extension “MainWP UpdraftPlus Extension” and the plugin “UpdraftPlus - Backup/Retore” are displayed, which means that they are correctly installed on the child websites concerned.
+
+Select the “MainWP UpdraftPlus Extension” and the “UpdraftPlus - Backup/Retore” plugin, then click <code className="action">Install to Selected Site(s)</code> (button in the top right-hand corner).
+
+To ensure that the plugins are enabled on your child website, click <code className="action">Sync Dashboard with Sites</code>, in the top right-hand corner of the interface.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/sync-dashboard-sites.png" loading="lazy" />
+
+You can now create backups of your child websites with UpdraftPlus.
+
+### Create a backup with UpdraftPlus
+
+In the main menu of MainWP, click <code className="action">Sites</code> then <code className="action">Manage Sites</code>. Click the child site for which you want to create a backup, then click the <code className="action">UpdraftPlus Backups</code> tab.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/tab-updraftPlus.png" loading="lazy" />
+
+On the screen that pops up, click <code className="action">Backup Now</code> and follow the instructions. To confirm the backup, click <code className="action">Backup Now</code>.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/backup-now.png" loading="lazy" />
+
+Once the backup is complete, click the <code className="action">ExistingBackups</code> tab.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/existing-backup.png" loading="lazy" />
+
+A new line will appear, corresponding to your backup. You can perform various actions on your backup, including restoring.
+
+### Restore a backed up version of a child site
+
+In the MainWP main menu, click <code className="action">Extensions</code> then <code className="action">UpdraftPlus</code>. If you click <code className="action">Existing Backups</code>, a list of your backups will appear.
+
+To restore your website, locate the line corresponding to your backup, then click <code className="action">Restore</code>.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/restore-backup-line.png" loading="lazy" />
+
+A new window will appear. It contains some information, including a list of your backups.
+
+Identify the backup you want to restore, then click <code className="action">Restore</code>. Remember to check the date to avoid any errors.
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/restoration-message.png" loading="lazy" />
+
+Select the elements you want to restore, then confirm. The following confirmation message is displayed:
+
+<img className="thumbnail" alt="mainWP backup" src="/images/assets/screens/other/cms/wordpress/mainwp/restoration-success.png" loading="lazy" />
+
+## Go further <a name="go-further"></a>
+
+[Manage multiple WordPress websites with the MainWP plugin](/guides/web-cloud/web-hosting/mainwp-general/)
+
+[Manage your website’s customer information with MainWP](/guides/web-cloud/web-hosting/mainwp-client-management/)
+
+[Improve your website's security with MainWP](/guides/web-cloud/web-hosting/mainwp-security/)
+
+[Tutorial - Backup your WordPress website](/guides/web-cloud/web-hosting/how-to-backup-your-wordpress/)
+
+[Restore your web hosting plan’s storage space](/guides/web-cloud/web-hosting/ftp-save-and-backup/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

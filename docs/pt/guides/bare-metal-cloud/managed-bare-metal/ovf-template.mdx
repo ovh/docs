@@ -1,0 +1,85 @@
+---
+title: Usar um template OVF Windows e SQL Server
+description: Saiba como usar um template Windows e SQL Server
+lastUpdated: 2020-11-18
+---
+
+## Sumário
+
+A OVH disponibiliza templates Windows e SQL server (em formato OVF) que pode usar diretamente a partir do seu vSphere thick client (versão 5.5 e 6.0) ou do web client (Flash e HTML 5 na versão 6.5).
+
+**Este guia explica onde encontrar os recursos e como proceder à utilização.**
+
+:::info
+Encontre nesta [página](https://www.ovhcloud.com/pt/managed-bare-metal/options/) os preços das imagens disponibilizadas pela OVHcloud.
+
+:::
+
+
+## Requisitos
+
+- Ter acesso ao web client ou ao thick client, consoante a versão utilizada.
+- [Ter ativado as licenças Windows](/guides/bare-metal-cloud/managed-bare-metal/manager-ovhcloud#licence-windows/) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt) (separador <code className="action">Licença Windows</code> do datacenter). 
+
+## Instruções
+
+### Obter o URL do template OVF
+
+No browser, vá á página inicial da sua Managed Bare Metal e clique em <code className="action">OVH Template</code>.
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/gatewayssl.png" loading="lazy" />
+
+No ecrã `OVH Templates`, pode aceder às informações relativas aos templates Windows e SQL disponíveis. 
+
+Depois de escolher o template desejado, vai abrir-se uma janela com ligações a que poderá recorrer para usar o template, em função da sua versão do vSphere.
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/copylink.png" loading="lazy" />
+
+### Usar o template OVF
+
+Quando estiver conectado ao web client vSphere, vá à página <code className="action">Hosts and clusters</code>. Clique com o botão direito do rato sobre o seu datacenter e clique em <code className="action">Deploy OVF template...</code>:
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/selectdeploy.png" loading="lazy" />
+
+Quando o menu de contexto se abrir, pode dar início à configuração do template. Na primeira etapa, é preciso adicionar a ligação que obteve anteriormente:
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/puturl.png" loading="lazy" />
+
+A etapa seguinte permite-lhe escolher o datacenter:
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/selectdatacenter.png" loading="lazy" />
+
+De seguida, selecione o cluster no qual a máquina virtual vai ser implementada:
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/selectcluster.png" loading="lazy" />
+
+Esta página apresenta todos os pormenores do template, nomeadamente a palavra-passe definida de forma padrão.
+ Por razões de segurança, é importante que a altere assim que fizer a primeira conexão:
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/detailstemplate.png" loading="lazy" />
+
+Escolha o datastore no qual a máquina virtual vai ser armazenada, bem como o formato do disco:
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/selectdatastore.png" loading="lazy" />
+
+Agora deve escolher a rede que será utilizada.
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/selectnetwork.png" loading="lazy" />
+
+A configuração está quase concluída. Agora tem acesso a um resumo da configuração desejada:
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/resume.png" loading="lazy" />
+
+Depois de ter clicado em <code className="action">Finish</code>, é criada uma tarefa que lhe permite acompanhar a implantação:
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/startdeploy.png" loading="lazy" />
+
+Quando a operação for concluída, pode fechar a janela.
+
+Agora vai encontrar a nova máquina virtual no seu inventário.
+
+<img className="thumbnail" alt="Nome da imagem" src="/images/bare-metal-cloud/managed-bare-metal/ovf-template/inventory.png" loading="lazy" />
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/).

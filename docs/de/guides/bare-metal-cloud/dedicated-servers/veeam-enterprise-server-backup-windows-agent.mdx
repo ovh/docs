@@ -1,0 +1,144 @@
+---
+title: Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows (EN)
+description: Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server
+lastUpdated: 2024-04-05
+---
+
+## Objective
+
+Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server.
+
+:::info
+To back up a Bare Metal Linux server using Veeam Backup and Replication (Enterprise), see [this guide](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-linux/).
+
+:::
+
+
+## Requirements
+
+- An [OVHcloud Bare Metal Windows server](https://www.ovhcloud.com/de/bare-metal/)
+- [Veeam Backup and Replication 12.0](https://www.veeam.com/download-version.html?ad=downloads&tab=previous) installed
+- Veeam Agent for Microsoft Windows 6.0.2 [installation software](https://login.veeam.com/realms/veeamsso/protocol/openid-connect/auth?client_id=veeam-com&response_type=code&redirect_uri=https%3A%2F%2Fwww.veeam.com%2Foauth&scope=profile&state=e9a55dcbf050f86c5eb69ea264b8fb86) (Veeam account required)
+
+:::warning
+This guide presupposes that you have followed the steps detailed in our first guide [Preparing a Bare Metal Server backup with Veeam Enterprise](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-preparation/).
+
+:::
+
+
+## Instructions
+
+### Download and install Veeam Agent
+
+Download [Veeam Agent for Microsoft Windows 6.0.2](https://login.veeam.com/realms/veeamsso/protocol/openid-connect/auth?client_id=veeam-com&response_type=code&redirect_uri=https%3A%2F%2Fwww.veeam.com%2Foauth&scope=profile&state=e9a55dcbf050f86c5eb69ea264b8fb86) on the target server for your backup.
+
+Install the Veeam Agent and select <code className="action">No</code> when prompted to install a license file.
+
+<img className="thumbnail" alt="Licence choose NO" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/01a-licence.PNG" loading="lazy" />
+
+Click the menu button and select <code className="action">+ Add New Job...</code>.
+
+<img className="thumbnail" alt="Add New Job" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/01b-new-job.PNG" loading="lazy" />
+
+### Backup configuration
+
+#### Name
+
+Modify the default **Name** and/or **Description**, if you want to, and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Name" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/02-name.PNG" loading="lazy" />
+
+#### Backup Mode
+
+Choose what data you want to back up and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Backup mode" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/02b-backup-mode.PNG" loading="lazy" />
+
+#### Destination
+
+Choose <code className="action">Veeam backup repository</code>. and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Destination" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/03-destination.PNG" loading="lazy" />
+
+#### Backup server
+
+Enter the **Veeam backup server name or IP address** and **Specify your personal credentials** (from a valid [Veeam Enterprise service account](/guides/storage-and-backup/backup-and-disaster-recovery-solutions/veeam/veeam-veeam-backup-replication#create/)).
+
+Click <code className="action">Next</code>.
+
+It will take a moment for your license to load.
+
+<img className="thumbnail" alt="Backup server - credentials" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/04-backup-server-credentials.PNG" loading="lazy" />
+
+#### Backup repository
+
+Select your **Backup repository** and, if desired, modify the retention policy.
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Backup repository" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/05-backup-repository.PNG" loading="lazy" />
+
+:::warning
+If you do not see "Standard S3" as an option for your backup repository, use the steps below to check the access permissions.
+From the Veeam Enterprise application interface, select <code className="action">Backup Repositories</code>, right-click on your repository, and select <code className="action">Access permissions...</code>.
+
+<img className="thumbnail" alt="Backup repository - access permissions" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/05-backup-repository-access-permissions.PNG" loading="lazy" />
+
+In the <code className="action">Standalone applications</code> tab, make sure one of the **Allow** options is selected for repository access. If you need to add your account or group, you can use the <code className="action">Add...</code> button. If you made changes, select <code className="action">OK</code> to apply them.
+
+<img className="thumbnail" alt="Backup repository - standalone applications" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/05-backup-repository-standalone-applications.PNG" loading="lazy" />
+
+:::
+
+
+#### Backup cache (optional)
+
+If desired, you can enable the backup cache if the remote backup target is temporarily unavailable.
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Backup cache" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/06-backup-cache.PNG" loading="lazy" />
+
+#### Guest processing (optional)
+
+If you want, you can choose guest processing options.
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Guest processing" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/07-guest-processing.PNG" loading="lazy" />
+
+#### Schedule
+
+Choose your backup schedule preferences and click <code className="action">Apply</code>.
+
+<img className="thumbnail" alt="Schedule" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/08-schedule.PNG" loading="lazy" />
+
+#### Summary
+
+Review your settings. If you want the backup job to run as soon as you finish, tick the checkbox ☑ at the bottom of the window.
+
+Click <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="Summary" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/09-summary.PNG" loading="lazy" />
+
+### Start your backup
+
+Click the menu ☰ button, select the job you just created, and click <code className="action">Backup Now</code>.
+
+<img className="thumbnail" alt="Start backup" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/10-start-backup.png" loading="lazy" />
+
+You can view the progress of your backup in the Veeam Agent application:
+
+<img className="thumbnail" alt="Backup progress" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/10a-backup-progress.PNG" loading="lazy" />
+
+On the Veeam Backup and Recovery server, the backup job will appear:
+
+<img className="thumbnail" alt="Backup jobs" src="/images/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-backup-windows-agent/10b-backup-job.PNG" loading="lazy" />
+
+## Go further
+
+[Restoring a Bare Metal Server with Veeam Enterprise](/guides/bare-metal-cloud/dedicated-servers/veeam-enterprise-server-restore/)
+
+[Veeam support site](https://www.veeam.com/knowledge-base.html)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

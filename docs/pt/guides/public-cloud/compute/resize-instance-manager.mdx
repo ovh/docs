@@ -1,0 +1,93 @@
+---
+title: Redimensionar uma instância através da Área de Cliente OVHcloud
+description: Saiba como redimensionar uma instância Public Cloud a partir da Área de Cliente OVHcloud
+lastUpdated: 2026-03-04
+---
+
+## Objetivo
+
+Se a sua instância não dispõe de recursos suficientes devido a um aumento da atividade ou a novas necessidades, pode aumentar os seus recursos em poucos cliques graças ao Public Cloud.
+
+**Este guia explica como redimensionar a sua instância a partir da Área de Cliente OVHcloud.**
+
+:::warning
+Apenas o redimensionamento para um modelo superior é possível para os modelos clássicos.
+Além disso, esta operação provoca a interrupção da instância durante o tempo da operação.
+
+:::
+
+
+:::tip[Success]
+As instâncias do tipo *flex* permitem o redimensionamento para modelos superiores ou inferiores graças a um tamanho de disco único.
+
+:::
+
+
+## Requisitos
+
+- Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Caminho de navegação:** <code className="action">Public Cloud</code> > Selecione o seu projeto
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instruções
+
+No menu à esquerda, clique em <code className="action">Instâncias</code>.
+
+Clique em <code className="action">...</code> à direita da instância e selecione <code className="action">Editar</code>. Também pode aceder a esta ação a partir dos detalhes da instância, clicando no seu nome e depois em <code className="action">Alterar o modelo</code>.
+
+No novo separador, desloque a página até à secção **Modelo** para selecionar o modelo pretendido.
+
+:::info
+Para os modelos clássicos, pode mudar para qualquer modelo cujo disco seja semelhante ou maior. Não pode mudar para um modelo com um disco mais pequeno.<br/>
+
+Apenas **as instâncias flexíveis** podem ser atualizadas ou degradadas, mantendo um tamanho de disco fixo de 50 GB.
+
+:::
+
+
+Se o seu disco for igual ou inferior a 50 GB, pode mudar para uma <code className="action">Instância flexível</code>, se assim o desejar.
+
+:::warning
+Se editar uma instância do tipo *flex*, não é possível voltar a uma instância clássica através da Área de Cliente. Para mais informações, consulte o nosso guia sobre [Reverter de uma instância flex para uma instância clássica](/guides/public-cloud/compute/revert-a-flex-instance/).
+
+:::
+
+
+Após a seleção, clique em <code className="action">Alterar o modelo</code> para confirmar a sua escolha.
+
+### Redimensionamento do disco em Windows
+
+Ao redimensionar uma instância Windows, o tamanho da partição não é automaticamente atualizado. É necessário ampliá-lo utilizando o **gestor de disco**:
+
+- Clique com o botão direito do rato no menu <code className="action">Start</code> e abra o gestor de disco clicando em <code className="action">Disk Management</code>:
+
+<img className="thumbnail" alt="Menu de contexto do menu Iniciar com a opção Gestão de disco" src="/images/public-cloud/compute/resize-instance-manager/2980.png" loading="lazy" />
+
+- Clique com o botão direito na partição principal e depois em <code className="action">Extend Volume</code>.
+
+<img className="thumbnail" alt="Clique com o botão direito na partição principal para ampliar o volume" src="/images/public-cloud/compute/resize-instance-manager/2981a.png" loading="lazy" />
+
+- No menu `Extend Volume Wizard`, clique em <code className="action">Next</code>. Escolha os recursos do disco a expandir e clique em <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Assistente de extensão de volume com seleção de recursos do disco" src="/images/public-cloud/compute/resize-instance-manager/2978a.png" loading="lazy" />
+
+Clique em <code className="action">Finish</code> para confirmar a sua escolha.
+
+<img className="thumbnail" alt="Passo de finalização do assistente de extensão de volume" src="/images/public-cloud/compute/resize-instance-manager/wizard2021.png" loading="lazy" />
+
+- O novo tamanho do disco será apresentado no gestor de disco.
+
+<img className="thumbnail" alt="Gestor de disco a apresentar o novo tamanho" src="/images/public-cloud/compute/resize-instance-manager/2979.png" loading="lazy" />
+
+## Quer saber mais?
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

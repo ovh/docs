@@ -1,0 +1,389 @@
+---
+title: Häufig gestellte Fragen zu HA-NAS
+description: Sie haben eine Frage zu HA-NAS? Erfahren Sie hier Antworten auf die am häufigsten gestellten Fragen
+lastUpdated: 2025-07-15
+---
+
+import Api from '@components/Api';
+
+
+
+
+## Ziel
+
+**Sie finden hier die häufigsten Fragen zum HA-NAS von OVHcloud.**
+
+## Allgemeine Fragen
+
+<details>
+
+<summary>Was ist die HA-NAS Lösung von OVHcloud?</summary>
+
+
+HA-NAS ist ein vollständig gemanagter und gemeinsam genutzter Dateispeicherdienst, der auf der Open-Source-Technologie OpenZFS basiert.
+
+</details>
+
+
+<details>
+
+<summary>Was kann ich mit HA-NAS tun?</summary>
+
+
+HA-NAS erlaubt die Zentralisierung der Daten verschiedener Workloads von Linux und Windows für zahlreiche Szenarien, zum Beispiel:
+
+- Geteilter und ausgelagerter Speicher für IT-Anwendungen (VM, DB, etc.)
+- Verwaltung von Webinhalten 
+- Filesharing im Netzwerk
+
+</details>
+
+
+<details>
+
+<summary>Kann das HA-NAS über eine Verwaltungsoberfläche genutzt werden?</summary>
+
+
+Ja, das ist in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich <code className="action">Bare Metal Cloud</code> und dann <code className="action">NAS und CDN</code> möglich.
+
+</details>
+
+
+## Verfügbarkeit
+
+<details>
+
+<summary>Welches SLA wird mit HA-NAS bereitgestellt?</summary>
+
+
+NAS-HA unterstützt die Dateiübertragung über NFS (NFSv3, NFSv4.1, NFNSv4.2) sowie CIFS (SMB).
+
+</details>
+
+
+## Netzwerk und Sicherheit
+
+<details>
+
+<summary>Welche Dateiübertragungsprotokolle werden derzeit auf der HA-NAS unterstützt?</summary>
+
+
+HA-NAS unterstützt den Transfer von Dateien über NFS (NFSv3) und CIFS (SMB).
+
+</details>
+
+
+<details>
+
+<summary>Aus welchen OVHcloud Diensten kann ich Daten übertragen?</summary>
+
+
+HA-NAS ist ein Dienst, der Daten aus allen bestehenden OVHcloud Diensten empfangen kann: Bare Metal Cloud (VPS, Dedicated Server, So you Start, Kimsufi), Public Cloud, Hosted Private Cloud.
+
+</details>
+
+
+<details>
+
+<summary>Wie werden HA-NAS-Zugänge verwaltet?</summary>
+
+
+Die Zugriffskontrollliste (ACL) ist über Ihr OVHcloud Kundencenter konfigurierbar. Geben Sie einfach die IP-Adresse des Dienstes ein, für den Sie den Zugriff auf das HA-NAS erlauben möchten.
+
+</details>
+
+
+<details>
+
+<summary>Ist HA-NAS mit anderen Servern außerhalb von OVHcloud kompatibel?</summary>
+
+
+Nein, der Zugriff auf Ihr HA-NAS ist nur über das OVHcloud Netzwerk möglich.
+
+</details>
+
+
+<details>
+
+<summary>Ist HA-NAS für die Nutzung mit vRack geeignet?</summary>
+
+
+Derzeit kann ein HA-NAS nicht in das private Netzwerk vRack integriert werden. Die Verwendung von HA-NAS mit vRack ist jedoch insofern kompatibel, als der Zugriff über die öffentliche IP-Adresse des mit dem vRack verbundenen Servers erfolgen kann.
+
+</details>
+
+
+## Kapazitäten und Leistung
+
+<details>
+
+<summary>Welche Speicherkapazitäten sind verfügbar?</summary>
+
+
+Die Mindestgröße eines Dienstes beträgt 3 TB und die Höchstgröße 144 TB.<br/>
+Wir bieten folgende Speicherkapazitäten auf Basis von 3 TB Disks:
+
+- 3 TB
+- 6 TB
+- 9 TB
+- 18 TB
+- 36 TB
+
+Wir bieten folgende Speicherkapazitäten auf Basis von 12 TB Disks:
+
+- 12 TB
+- 24 TB
+- 36 TB
+- 72 TB
+- 144 TB
+
+Bei den angebotenen Speicherkapazitäten handelt es sich um die nutzbaren Kapazitäten.
+
+</details>
+
+
+<details>
+
+<summary>Sind die Ressourcen meines HA-NAS dediziert?</summary>
+
+
+Die Disks in Ihrem HA-NAS sind ausschliesslich für Ihre Nutzung dediziert. Die weiteren Hardware-Ressourcen werden mit anderen Nutzern geteilt (RAM, CPU, Bandbreite).
+
+**Sonderfall:** Wenn Sie das 144 TB Angebot bestellen, stehen Ihnen alle Ressourcen des Host-Servers (RAM, CPU, Bandbreite) zur Verfügung.
+
+</details>
+
+
+<details>
+
+<summary>Wie viele HA-NAS Dienstleistungen kann ich über meine Kundenkennung erstellen?</summary>
+
+
+Es gibt keine Begrenzung der Anzahl der Dienstleistungen pro Kunden-Account.
+
+</details>
+
+
+<details>
+
+<summary>Wie viele Partitionen können maximal pro Dienstleistung erstellt werden?</summary>
+
+
+Es können so viele Partitionen erstellt werden, wie Sie möchten. Die Mindestgröße beträgt 10 GB und die Maximalgröße wird von der Gesamtgröße des Dienstes bestimmt.
+
+</details>
+
+
+<details>
+
+<summary>Ist die Transfer- und Verfügbarkeitsrate garantiert?</summary>
+
+
+- Transfer: Die Bandbreite des Dienstes wird geteilt. Transferraten können von OVHcloud nicht garantiert werden.
+- Verfügbarkeit: Die Service-Verfügbarkeit ist garantiert und unterliegt einer Service-Level-Vereinbarung (SLA). Die Details finden Sie unter unseren spezifischen Nutzungsbedingungen.
+
+</details>
+
+
+## Nutzung des Dienstes
+
+<details>
+
+<summary>Kann ein HA-NAS an mehrere Server gleichzeitig angeschlossen werden?</summary>
+
+
+Ja. Ihr HA-NAS kann gleichzeitig mit mehreren OVHcloud-Diensten interagieren.
+
+</details>
+
+
+<details>
+
+<summary>Kann ich ein Betriebssystem auf einem HA-NAS installieren?</summary>
+
+
+Nein, es ist nicht möglich, ein Betriebssystem auf den HA-NAS Diensten zu installieren.
+
+</details>
+
+
+<details>
+
+<summary>Ist der zugewiesene Speicherplatz partitionierbar?</summary>
+
+
+Ja, es ist notwendig, eine oder mehrere Partitionen zu erstellen, je nach Ihrer Verwendung. Die Erstellung von Partitionen ist nicht begrenzt.
+
+</details>
+
+
+<details>
+
+<summary>Wie ändere ich die Speicherkapazität meines NAS-HA?</summary>
+
+
+Derzeit ist es nicht möglich, die HA-NAS Kapazität dynamisch zu ändern. Gehen Sie dazu wie folgt vor:
+
+1. Bestellen Sie einen neuen HA-NAS Dienst mit der gewünschten Kapazität, und greifen Sie auf beide HA-NAS Dienste zu.
+2. Migrieren Sie Ihre Daten mithilfe unserer Anleitung: "[Migration von Daten von einem HA-NAS auf einen anderen per NFS](/guides/storage-and-backup/file-storage/ha-nas/nas-migration/)".
+3. Kündigen Sie den alten HA-NAS Dienst.
+
+</details>
+
+
+## Snapshots
+
+<details>
+
+<summary>Was sind Snapshots?</summary>
+
+
+Ein Snapshot ist ein Image (Abbild) des Zustandes Ihrer Disk und der dort gespeicherten Daten zu einem bestimmten Zeitpunkt. Snapshots bieten so eine erste Backup-Ebene. Konfiguration und Verwaltung von Snapshots sind über Ihr OVHcloud Kundencenter möglich.
+
+Standardmäßig ist die Snapshot-Funktion aktiviert, wenn Sie Ihre Partition erstellen. Die Frequenz ist auf "stündlich" voreingestellt.
+
+</details>
+
+
+<details>
+
+<summary>Welche Backup-Policy ist mit HA-NAS verbunden?</summary>
+
+
+Die Benutzer sind für die Verwaltung ihrer Backups (Tools und Zeitplanung) innerhalb und außerhalb des Dienstes sowie für ihre Business Continuity und Planung von Disaster Recovery verantwortlich. Aus Gründen der Sicherheit und Resilienz der Infrastruktur kann OVHcloud jedoch Snapshots des Dienstes auf einem Remote-Server durchführen, ohne jedoch dazu verpflichtet zu sein.
+
+Wenn OVHcloud eine Sicherung auf einem Remote-Server verfügbar hat, können wir im Fall eines Ausfalls oder Angriffs die Daten der letzten verfügbaren Sicherung wiederherstellen. Bitte beachten Sie, dass diese Aktion nur auf Anfrage durchgeführt wird und als optionale Dienstleistung in Rechnung gestellt wird.
+
+</details>
+
+
+<details>
+
+<summary>Wie oft werden Snapshots erstellt? <a name="frequency"></a></summary>
+
+
+Die Snapshot-Frequenz kann über Ihr OVHcloud Kundencenter verwaltet werden. Sie können die Frequenz aus den folgenden Optionen auswählen:
+
+- Stündlich (Standardeinstellung)
+- Alle 6 Stunden
+- Täglich
+- Alle zwei Tage
+- Alle drei Tage
+- Wöchentlich
+
+Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) oder über folgenden [API-Aufruf](https://eu.api.ovh.com/) verfügbar:
+
+<Api version="v1" section="/dedicated/nasha" method="POST" route={"/dedicated/nasha/\{serviceName\}/partition/\{partitionName\}/customSnapshot"} />
+
+
+:::info
+Lesen Sie unsere Anleitung zu den [ersten Schritten mit der OVHcloud API](/guides/manage-and-operate/api/first-steps/), um sich mit der Verwendung der OVHcloud API vertraut zu machen.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>Wie funktioniert das Snapshot-Management-System?</summary>
+
+
+Sie können automatische Snapshots zu den verschiedenen verfügbaren Frequenzen aktivieren. Unabhängig von der eingestellten Frequenz wird der zuletzt ausgeführte Snapshot immer den vorherigen ersetzen und überschreiben. Sie können Snapshots auch bei Bedarf erstellen und löschen.
+
+</details>
+
+
+<details>
+
+<summary>Kann ein Snapshot gelöscht werden?</summary>
+
+
+Es können nur manuell erstellte Snapshots gelöscht werden (vgl. Abschnitt "[Wie oft werden Snapshots erstellt?](#frequency))".<br/>
+Festfrequenz-Snapshots werden automatisch gelöscht und können nicht manuell gelöscht werden.
+
+</details>
+
+
+<details>
+
+<summary>Sind Snapshots in der Kapazität eines Dienstes enthalten?</summary>
+
+
+Ihnen wird zusätzlicher Speicherplatz auf dem gleichen physischen Speichermedium zugewiesen, um die Speicherung Ihrer Snapshots sicherzustellen. Dieser Speicherplatz entspricht mindestens 15 % des Hauptvolumens. Wenn Sie diesen Wert überschreiten, werden die Snapshots auf Ihrem primären Speicherplatz gespeichert. Der zusätzliche Speicherplatz kann nur für die Ablage Ihrer Snapshots verwendet werden.
+
+Für einen Dienst mit 3 TB sind zum Beispiel 450 GB für Snapshots reserviert.
+
+</details>
+
+
+<details>
+
+<summary>Wie viele Snapshots kann ich maximal erstellen?</summary>
+
+
+- Für automatische Snapshots: ein Snapshot pro Partition
+- Für manuelle Snapshots: zehn pro Partition
+
+</details>
+
+
+<details>
+
+<summary>Wo werden die Snapshots gespeichert?</summary>
+
+
+Die Snapshots werden auf der gleichen Ebene wie Ihr Dienst gespeichert.
+Darüber hinaus erstellt OVHcloud täglich einen Snapshot (mit einer Vorhaltezeit von 24 Stunden) auf einem Backup-Server in einem separaten Rack.
+
+</details>
+
+
+<details>
+
+<summary>Wo kann ich meine Snapshots einsehen?</summary>
+
+
+In der betreffenden Partition finden Sie ein verstecktes Verzeichnis mit dem Namen `.zfs`, das ein Verzeichnis `snapshot` beinhaltet. Die Dateien sind als "read only" verfügbar.
+
+</details>
+
+
+<details>
+
+<summary>Wie viele Snapshot-Richtlinien kann ich pro Volume erstellen?</summary>
+
+
+Sie können eine Richtlinie (Policy) erstellen.
+
+</details>
+
+
+## Preise
+
+<details>
+
+<summary>Welche Art von Abrechnung wird auf den Dienst angewendet?</summary>
+
+
+HA-NAS ist ein Dienst, der monatlich nach Volumen abgerechnet wird (in Schritten von 3 bis 144 TB).
+
+</details>
+
+
+<details>
+
+<summary>Für wie lange kann ich einen HA-NAS abonnieren?</summary>
+
+
+Die angebotenen Nutzungsperioden sind 1, 12, 24 und 36 Monate. Am Ende Ihrer Vertragslaufzeit wird Ihr Abonnement automatisch verlängert, wenn keine [Kündigungsanfrage gestellt wurde](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-cancel-services/). Sie können das Abonnement jederzeit über Ihr OVHcloud Kundencenter kündigen.
+
+</details>
+
+
+## Weiterführende Informationen
+
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

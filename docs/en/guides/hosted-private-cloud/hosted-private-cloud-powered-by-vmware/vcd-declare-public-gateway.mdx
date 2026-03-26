@@ -1,0 +1,80 @@
+---
+title: Public VCF as-a-Service - Declaring the public IP gateway in VCD
+description: Declare the gateway of your public IP block on your VCD Virtual Datacenter to use public IPs on your VMs
+lastUpdated: 2025-08-13
+---
+
+## Objective
+
+When you order a new Public VCF as-a-Service organization, a vRack and a block of public IP addresses are delivered. To assign those public IPs to workloads, you must declare the block’s gateway inside the target VCD Virtual Datacenter.
+
+This guide shows how to retrieve the correct gateway and add it to your VDC.
+
+## Requirements
+
+- A [Public VCF as-a-Service](https://www.ovhcloud.com/en-gb/lp/vmware-vcd-evolution/) organization with a delivered public IP block.
+- Technical administrator rights on [VMware vSphere on OVHcloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+## Instructions
+
+1. Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click <code className="action">Hosted Private Cloud</code>, then <code className="action">Public VCF as-a-Service</code>, and select your organization.
+
+    <img className="thumbnail" alt="Open organization" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/vcd-declare-public-gateway-01.png" loading="lazy" />
+
+2. Open the <code className="action">Virtual Datacenters</code> tab and select the VDC where you want to use the public IPs.
+
+    <img className="thumbnail" alt="Select VDC and check vRack" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/vcd-declare-public-gateway-02.png" loading="lazy" />
+
+In <code className="action">General information</code>, verify that the vRack shown is the one linked to your public IP block.
+
+    <img className="thumbnail" alt="Select VDC and check vRack" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/vcd-declare-public-gateway-03.png" loading="lazy" />
+
+3. Select the <code className="action">vRack</code> tab.
+
+    <img className="thumbnail" alt="Select the vRack tab" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/vcd-declare-public-gateway-04.png" loading="lazy" />
+
+Locate the vRack segment named `vRack segment - VLAN0` or `vRack segment - PUBLIC`.
+
+    Click the three dot menu <code className="action">⋮</code> and <code className="action">Add a subnet</code>.
+
+    <img className="thumbnail" alt="Add a subnet on the vRack segment" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/vcd-declare-public-gateway-05.png" loading="lazy" />
+
+4. In the modal, enter the **gateway in CIDR** form for your public IP block, then confirm. The gateway is the **last usable host** of the block.
+
+    **Example**: for `203.0.113.0/29`, the last usable host is `203.0.113.6` so enter `203.0.113.6/29`. You can use any standard IP calculator to verify.
+
+    <img className="thumbnail" alt="Enter gateway CIDR" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/vcd-declare-public-gateway-06.png" loading="lazy" />
+
+5. Wait a few seconds and refresh the page. The subnet gateway should now appear on the segment.
+
+    <img className="thumbnail" alt="Gateway visible after refresh" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/vcd-declare-public-gateway-07.png" loading="lazy" />
+
+### Use the gateway when creating workloads
+
+- When creating a vApp or VM in VCD, pick the corresponding **Organization VDC network** and choose a **Direct** network type to see the available public gateways.
+
+<img className="thumbnail" alt="Select Direct network type and gateway" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-declare-public-gateway/vcd-declare-public-gateway-08.png" loading="lazy" />
+
+:::info
+**Known limitation**:
+
+In the current VCF version, the **Gateway CIDR** field may display the first gateway declared on your `VLAN0` segment, even if you selected another one. This is a visual only issue and does not affect IP assignment. Use any address from the selected public block on your VM, consistent with the gateway you chose in **Organization VDC network connection**.
+
+:::
+
+
+## Troubleshooting
+
+- If the gateway is rejected, recheck that you entered the **last usable host** with the correct **CIDR mask** for the block.
+- Ensure the VDC is attached to the **same vRack** that you linked to the public IP block in the previous guide [Public VCF as-a-Service - Linking a public IP block with vRack](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-link-ip-to-vrack/).
+
+## Go further
+
+First step guide: [Public VCF as-a-Service - Linking a public IP block with vRack](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-link-ip-to-vrack/).
+
+If you need training or technical assistance to implement our solutions, please contact your Technical Account Manager or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

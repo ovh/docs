@@ -1,0 +1,75 @@
+---
+title: PCI-DSS-Zertifizierung für Ihre Private Cloud aktivieren
+description: Erfahren Sie hier, wie Sie Finanz- und Patientendaten auf Ihrer Hosted Private Cloud Infrastruktur hosten
+lastUpdated: 2020-05-27
+---
+
+## Ziel
+
+Sie haben die Möglichkeit, für Ihre Private Cloud die PCI-DSS-Zertifizierung zu aktivieren, was zum Beispiel beim Hosten von [Kreditkartendaten](https://www.ovh.de/private-cloud/payment-infrastructure/pci-dss.xml) unerlässlich sein kann.
+
+**In dieser Anleitung erfahren Sie, wie Sie die PCI-DSS-Zertifizierung für Ihre Private Cloud aktivieren.**
+
+## Voraussetzungen
+
+- Sie verfügen über eine Private Cloud Infrastruktur mit Version 6.0 oder höher.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+## In der praktischen Anwendung
+
+### Überprüfen, dass die Sicherheitsoption aktiviert ist
+
+Um eine Zertifizierung wie PCI-DSS für Ihre Private Cloud zu aktivieren, muss die entsprechende Sicherheitsoption aktiviert sein. Um dies zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich „Server“ (vormals „Dedicated“). Klicken Sie auf <code className="action">Private Cloud</code> und wählen Sie den betreffenden Dienst aus. 
+
+Gehen Sie im angezeigten Fenster in den Tab <code className="action">Allgemeine Informationen</code>. Überprüfen Sie dort den Aktivierungsstatus der Sicherheitsoptionen im Bereich „Sicherheitsoptionen“. **Bitte beachten Sie, dass es aktuell nicht möglich ist, mehrere Sicherheitsoptionen für dieselbe Private Cloud zu aktivieren.**
+
+<img className="thumbnail" alt="PCI-DSS Compliance" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/activer-l-option-hds-hipaa-ou-pci-dss/HomeSDDCManager.PNG" loading="lazy" />
+
+Wenn die gewünschte Sicherheitsoption nicht aktiviert ist, klicken Sie auf den Button <code className="action">...</code> und dann auf <code className="action">Aktivieren</code>. Hierzu sind einige Voraussetzungen erforderlich:
+
+- **Die Optionen [NSX](https://www.ovh.de/private-cloud/optionen/nsx.xml) und [vROps](https://www.ovh.de/private-cloud/optionen/vrops.xml) müssen installiert sein**: Sie können den Aktivierungsstatus der Option im Tab <code className="action">Allgemeine Informationen</code> im Bereich „Private Cloud Optionen“ einsehen. Sind sie nicht aktiviert, klicken Sie auf den Button <code className="action">...</code> und dann auf <code className="action">Aktivieren</code>.
+
+- **Die Zugangseinstellungen für vCenter müssen eingeschränkt sein**: Sie können den Status der Zugangseinstellungen im „Tab“ Sicherheit überprüfen. Sind diese nicht eingeschränkt, klicken Sie auf den Button <code className="action">Regeln für den Zugang zum vCenter</code> und befolgen Sie die angezeigten Schritte. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud#security/) (Englisch).
+
+- **Sie benötigen mindestens eine IP-Adresse mit der Berechtigung, sich mit vCenter zu verbinden**: Überprüfen Sie im Tab „Sicherheit“, dass Sie über mindestens eine autorisierte IP-Adresse verfügen. Falls nötig, verwenden Sie den Button <code className="action">IP-Adressen hinzufügen</code>. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud#security/) (Englisch).
+
+Um sicherzustellen, dass Sie sich immer einloggen können, empfehlen wir, mindestens zwei autorisierte IP-Adressen einzurichten. Diese sollten natürlich fix und nicht dynamisch sein, um die Verfügbarkeit zu gewährleisten.
+
+- **Die Informationen des Admin-Benutzers müssen vollständig sein und er verfügt über die erforderliche Berechtigung**: Überprüfen Sie im Tab „Benutzer“, dass Telefonnummer und E-Mail-Adresse des Admin-Benutzers gespeichert sind und dass dieser die „**token validator**“-Berechtigung hat. Falls nötig können Sie Änderungen vornehmen, indem Sie auf den Button <code className="action">...</code> klicken und dann auf <code className="action">Bearbeiten</code>. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud#users/) (Englisch).
+
+Um sicherzustellen, dass Sie sich im vCenter einloggen können, empfehlen wir Ihnen, mindestens zwei Benutzer mit den notwendigen Informationen und Berechtigungen (mit verschiedenen E-Mail-Adressen und Telefonnummern).
+
+Wenn Sie die Aktivierungsschritte durchgeführt haben, müssen Sie nur noch:
+
+- den Erhalt des Tokens bestätigen, der per SMS an die Benutzer mit **token validator**-Berechtigung versendet wurde. So wird sichergestellt, dass Sie diese für die Bestätigung sensibler Operationen notwendigen Token empfangen können.
+- die Dokumente vervollständigen, die Sie per E-Mail erhalten werden, um den vertraglichen Teil abzuschließen. 
+
+Während Sie warten, empfehlen wir Ihnen, diese Anleitung weiter zu lesen und sich so bereits mit dem sicheren Interface vertraut zu machen. 
+
+:::info
+Bitte beachten Sie, dass das vSphere-Interface während der Aktivierung der Sicherheitsoption nicht verfügbar ist.
+
+:::
+
+
+### Mit der Verwendung des sicheren Interface beginnen
+
+Nach der Aktivierung der Sicherheitsoption erhalten Sie per E-Mail eine Beschreibung der Funktionsweise des Token-Validierungsprozesses. Diese erklärt unter anderem, wie Token funktionieren und wie Sie diese verwenden können. 
+
+Aus Sicherheitsgründen gilt Folgendes nach der Aktivierung der Sicherheitsoption:
+
+- Alle für Ihre Private Cloud eingerichteten Benutzer sind deaktiviert.
+- Ändern Sie die Passwörter Ihrer Benutzer, um dieser wieder zu aktivieren.
+- Die Passwörter Ihrer Benutzer können von nun an nur noch über das sichere Interface geändert werden. Sie können diese Aktion nicht länger über das OVHcloud Kundencenter vornehmen. 
+
+Zur Erinnerung: Es ist nicht möglich auf das sichere Interface zuzugreifen, bevor die Aktivierung der Sicherheitsoption abgeschlossen ist.
+
+Nach fertiger Aktivierung können Sie sich über den Link, den Sie per E-Mail erhalten haben, auf dem sicheren Interface einloggen. Dieser Link entspricht in etwa der Form „https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost“. Sobald Sie eingeloggt sind, können Sie das Passwort des Admin-Benutzers und anschließend die Passwörter der anderen Benutzer ändern. Weitere Informationen hierzu finden Sie in unserer Anleitung [Das sichere Interface verwenden](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/interface-secure/).
+
+## Weiterführende Informationen
+
+[vSphere Web Client sichern](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/)
+
+[VMware Tools installieren](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-tools-install/)
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

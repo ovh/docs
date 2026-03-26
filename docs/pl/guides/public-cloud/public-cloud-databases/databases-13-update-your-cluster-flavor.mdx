@@ -1,0 +1,70 @@
+---
+title: Update the flavor of Public Cloud Databases
+description: Find out how to adjust the flavor of your cluster
+lastUpdated: 2024-12-30
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+Learn how to adjust the flavor of your cluster according to your needs.
+
+## How to upgrade your flavor
+
+This option is available through the OVHcloud [API](https://eu.api.ovh.com/) and [Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+### Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud API](https://eu.api.ovh.com/) (optional)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+### Instructions
+
+Click <code className="action">Databases</code> in the left navigation bar, select your engine instance then click the <code className="action">Configuration</code> tab.
+
+![Cluster overview](/images/public-cloud/public-cloud-databases/databases-13-update-your-cluster-flavor/cluster_overview.png)
+
+Click <code className="action">Edit</code> on the "Flavor" line and adjust the flavor of your cluster.
+
+![Change node template](/images/public-cloud/public-cloud-databases/databases-13-update-your-cluster-flavor/flavor_change_view.png)
+
+## How to downgrade your flavor
+
+This option is currently available via the OVHcloud [API](https://eu.api.ovh.com/).
+
+### Requirements
+
+- Access to the OVHcloud [API](https://eu.api.ovh.com/) (create your credentials by consulting [this guide](/guides/manage-and-operate/api/first-steps/))
+- A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
+
+### Instructions
+
+In order to be able to downgrade your flavor, you must have a threshold of 20% between your current disk space used (base storage + additional storage) and the maximum storage space allowed for the flavor.
+
+![Change node template](/images/public-cloud/public-cloud-databases/databases-13-update-your-cluster-flavor/flavor_change_view.png)
+
+For instance, if you have a PostgreSQL cluster with db1-15 as flavor and less than 384 GB (80% of 480GB) of disk space used, you can decrease the flavor to db1-7 on that endpoint:
+
+<Api version="v1" section="/cloud" method="PUT" route={"/cloud/project/\{serviceName\}/database/mongodb/\{clusterId\}"} />
+
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) and interact directly with the team that builds our databases service!

@@ -1,0 +1,85 @@
+---
+title: Disattivare una soluzione Private Cloud
+description: Come richiedere l’eliminazione di un’infrastruttura Private Cloud
+lastUpdated: 2020-07-08
+---
+
+import Api from '@components/Api';
+
+
+## Obiettivo
+
+Se il servizio Private Cloud utilizzato non è più in grado di rispondere alle esigenze o è necessario sostituire la piattaforma esistente con una nuova, è possibile richiedere la disattivazione di questa infrastruttura dopo aver recuperato tutti i dati in essa contenuti.
+
+**Questa guida ti mostra come richiedere l’eliminazione di una soluzione Private Cloud.** 
+
+## Prerequisiti
+
+- Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) attivo
+
+{/* CP-NAV-START:privatecloud-vmware-vsphere */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VMware vSphere](https://manager.eu.ovhcloud.com/#/dedicated/dedicated_cloud)
+- **Percorso di navigazione:** <code className="action">Hosted Private Cloud</code> > <code className="action">Managed VMware vSphere</code> > Seleziona il tuo vSphere service
+
+---
+{/* CP-NAV-END:privatecloud-vmware-vsphere */}
+
+## Procedura
+
+La soluzione Private Cloud non prevede un impegno contrattuale minimo ma, come indicato nelle [Condizioni Particolari dell’offerta](https://www.ovh.it/supporto/documenti_legali/condizioni_particolari_dell_offerta_dedicated_cloud_2014.pdf), tutti i mesi iniziati sono interamente dovuti con pagamento anticipato.
+
+:::warning
+Prima di completare il processo di disattivazione, consigliamo di effettuare un backup di tutti i dati da conservare: l’operazione di cancellazione comporta infatti la completa rimozione del Private Cloud e dei dati ad esso associati.
+
+:::
+
+
+### Step 1: richiedi la disattivazione del servizio dallo Spazio Cliente OVHcloud
+
+Nel riquadro “Gestisci il servizio” disponibile nella scheda “Informazioni generali”, clicca sul pulsante <code className="action">...</code> (4) in corrispondenza della data di rinnovo e seleziona l’opzione <code className="action">Elimina il servizio</code> (5).
+
+<img className="thumbnail" alt="Disattivazione dallo Spazio Cliente" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation1.png" loading="lazy" />
+
+Ricordiamo che, una volta confermata, l’operazione di eliminazione comporta la rimozione definitiva di tutti i dati presenti sull’infrastruttura. In caso di disattivazione prima della fine del mese non è inoltre previsto alcun rimborso.
+
+Clicca su <code className="action">Conferma</code> per completare l’operazione.
+
+<img className="thumbnail" alt="Conferma disattivazione" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation2.png" loading="lazy" />
+
+Compare un messaggio di conferma di ricezione della richiesta. La procedura da seguire per completare la disattivazione verrà inviata via email all’indirizzo associato all’account OVHcloud.
+
+<img className="thumbnail" alt="Conferma disattivazione" src="/images/account-and-service-management/managing-billing-payments-and-services/comment-resilier-le-private-cloud/resiliation3.png" loading="lazy" />
+
+### Step 2: conferma la disattivazione
+
+Una volta inoltrata la richiesta, un’email di conferma della disattivazione viene inviata all’indirizzo associato all’account OVHcloud. 
+
+Il messaggio è disponibile anche nello Spazio Cliente: clicca sul nome utente in alto a destra e seleziona <code className="action">Le mie comunicazioni</code>.
+
+<img className="thumbnail" alt="Conferma disattivazione" src="/images/assets/screens/control-panel/product-selection/right-menu/my-messages.png" loading="lazy" />
+
+L’oggetto dell’email dovrebbe essere:
+
+> **Eliminazione del tuo Private Cloud “pcc-xxx-xxx-xxx-xxx”**.
+
+L’email contiene un link con cui è possibile confermare la disattivazione del servizio.
+
+:::info
+Attenzione: il link è valido **72 ore**. Consigliamo quindi di inoltrare la domanda di eliminazione a partire dal 25 del mese.
+
+:::
+
+
+L’operazione richiesta può essere confermata anche tramite la seguente API OVHcloud:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/confirmTermination"} />
+
+In questo caso è necessario inserire il token riportato nell’email di conferma della cancellazione.
+
+## Per saperne di più
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

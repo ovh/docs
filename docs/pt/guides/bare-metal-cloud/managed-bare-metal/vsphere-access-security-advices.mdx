@@ -1,0 +1,68 @@
+---
+title: Boas práticas de segurança vSphere Web Client
+description: Descubra como proteger o acesso ao vSphere Web Client
+lastUpdated: 2020-11-18
+---
+
+## Objetivo
+
+Para assegurar a integridade da sua infraestrutura, convém que restrinja o acesso a ela. Para isso, sugerimos-lhe diferentes métodos.
+
+**Aprenda a proteger rápida e facilmente o acesso ao seu vSphere Web Client graças a alguns conselhos.**
+
+## Requisitos
+
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+## Instruções
+
+### Controlar os acessos por IP
+
+O primeiro conselho está ligado à restrição do acesso por IP. Aconselhamos que trabalhe sempre com um sistema de registo que use whitelisting. Esta técnica assenta sobre a recusa de princípio de todos os endereços IP e sobre o acrescento de endereços que possam dar acesso à sua infraestrutura.
+
+Esta ação pode ser feita diretamente através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt). Quando estiver no espaço Managed Bare Metal, clique em <code className="action">Segurança</code>. Aparecerá um quadro, no qual poderá ver os endereços IP autorizados ou recusados. Para acrescentar novos, clique à direita, em <code className="action">Adicionar IP</code>:
+
+<img className="thumbnail" alt="Adicionar IP" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/adding_ip.png" loading="lazy" />
+
+### Criar utilizadores específicos
+
+Recomendamos fortemente que crie um acesso personalizado para cada pessoa que deva ter acesso à sua infraestrutura. Esta operação também pode ser feita na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt), mas desta vez no separador <code className="action">Utilizadores</code>. Para adicionar novos, clique no botão situado à direita: <code className="action">Criar um utilizador</code>.
+
+<img className="thumbnail" alt="Utilizadores" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/users.png" loading="lazy" />
+
+Quando se cria um utilizador, é pedida uma palavra-passe.
+
+:::info
+Para proteger ao máximo os seus dados, a palavra-passe deve respeitar algumas recomendações:
+
+- conter pelo menos oito caracteres;
+- conter pelo menos três tipos de caracteres;
+- não existir no dicionário;
+- não conter informações pessoais (nome, sobrenome ou data de nascimento);
+- não ser utilizada por vários utilizadores;
+- estar armazenada num cofre-forte de palavras-passe;
+- ser alterada a cada três meses;
+- ser diferente das palavras-passe anteriores.
+
+:::
+
+
+A seguir, poderá gerir as autorizações de cada utilizador clicando no botão <code className="action">...</code> à direita de cada username:
+
+<img className="thumbnail" alt="Edição dos parâmetros dos utilizadores" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/users_edit.png" loading="lazy" />
+
+### Limitar os tempos de sessão
+
+No final da sessão, aconselha-se que os utilizadores a concluam em conformidade. Para limitar o tempo de conexão, é possível adicionar uma duração de expiração da sessão.
+
+Esta pode ser configurada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt). Quando estiver no espaço Managed Bare Metal, escolha <code className="action">Segurança</code>. A seguir, clique em <code className="action">Alterar o prazo de expiração</code>, à direita.
+
+<img className="thumbnail" alt="Expiração da sessão" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/security-expiration.png" loading="lazy" />
+
+Indique o número de minutos antes que uma sessão expire.
+
+<img className="thumbnail" alt="Expiração da sessão" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/expiration.png" loading="lazy" />
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

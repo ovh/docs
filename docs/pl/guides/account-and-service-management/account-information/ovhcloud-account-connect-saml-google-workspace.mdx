@@ -1,0 +1,193 @@
+---
+title: Włącz połączenia SSO Google Workspace z Twoim kontem OVHcloud
+description: Dowiedz się, jak powiązać Twoją usługę Google Workspace z Twoim kontem OVHcloud przez SAML 2.0
+lastUpdated: 2025-05-15
+---
+
+## Wprowadzenie
+
+Możesz użyć uwierzytelnienia **SSO** (*Single Sign-On*), aby zalogować się do Twojego konta OVHcloud. Aby aktywować te połączenia, Twoje konto OVHcloud oraz konta Google Workspace muszą być skonfigurowane za pomocą uwierzytelniania SAML (*Security Assertion Markup Language*).
+
+**Niniejszy przewodnik wyjaśnia, jak powiązać Twoje konto OVHcloud z zewnętrzną usługą Google Workspace.**
+
+## Wymagania początkowe
+
+- Posiadanie statusu administratora usługi Google Workspace
+- Posiadanie [konta OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+
+{/* CP-NAV-START:iam-saml-sso */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SAML SSO](https://manager.eu.ovhcloud.com/#/iam/identities/sso)
+- **Ścieżka nawigacji:** <code className="action">Tożsamość, bezpieczeństwo i operacje</code> > <code className="action">Users</code> > <code className="action">SSO connection</code>
+
+---
+{/* CP-NAV-END:iam-saml-sso */}
+
+## W praktyce
+
+:::info
+Aby usługodawca (tzn. Twoje konto OVHcloud) mógł nawiązać połączenie SSO z dostawcą tożsamości (tzn. Twoją usługą Google Workspace), przede wszystkim należy nawiązać relacje zaufania, rejestrując połączenie SSO w obu usługach.
+
+:::
+
+
+### Zapisz OVHcloud w Google Workspace
+
+Twój Google Workspace działa jako dostawca danych osobowych. Zlecenia uwierzytelnienia Twojego konta OVHcloud zostaną przyjęte tylko wtedy, gdy zostanie ono uznane za zaufaną organizację trzecią.
+
+Oznacza to, że musi być dodany jako `Web and mobile apps`.
+
+Zaloguj się do interfejsu administracyjnego [Google Workspace](https://admin.google.com) za pomocą konta administratora.
+
+Przejdź do <code className="action">Apps</code>, a następnie <code className="action">Web and mobile apps</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację internetową lub mobilną" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_add_saml_app.png" loading="lazy" />
+
+Kliknij <code className="action">Add app</code>, a następnie <code className="action">Add custom SAML app</code>.
+
+W etapie "App details" dodaj nazwę dla tego połączenia. Jeśli nie posiadasz inspiracji, **OVHcloud** jest odpowiednią nazwą. Kliknij <code className="action">Continue</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 1" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_add_saml_app_step1.png" loading="lazy" />
+
+W etapie "Google Identity Provider details" pobierz plik metadanych, klikając <code className="action">Download metadata</code> i klikając przycisk <code className="action">Continue</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 2" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_add_saml_app_step2.png" loading="lazy" />
+
+W etapie "Service provider details" uzupełnij pola `ACS URL` i `Entity ID` podając wartości Twojego regionu: 
+
+- Region UE: **ACS URL**: `https://www.ovhcloud.com/eu/auth/saml/acs` i **Entity ID**: `https://www.ovhcloud.com/eu/auth/`
+- Region CA: **ACS URL**: `https://www.ovhcloud.com/ca/auth/saml/acs` i **Entity ID**: `https://www.ovhcloud.com/ca/auth/`
+
+Kliknij <code className="action">Continue</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 3" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_add_saml_app_step3.png" loading="lazy" />
+
+W etapie "Atrybut mapping" dodaj następującą mapping:
+
+- **First Name**: Imię
+- **Last Name**: Nazwisko
+- **Primary email**: Adres e-mail
+
+Kliknij <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="Dodaj aplikację SAML, etap 4" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_add_saml_app_step4.png" loading="lazy" />
+
+Aktywuj dostęp do tej aplikacji, klikając <code className="action">OFF for everyone</code> w sekcji "User Access". Kliknij przycisk <code className="action">ON for everyone</code>, a następnie przycisk <code className="action">SAVE</code>
+
+<img className="thumbnail" alt="Włącz aplikację dla wszystkich użytkowników" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_enable_app1.png" loading="lazy" />
+
+<img className="thumbnail" alt="Włącz aplikację dla wszystkich użytkowników" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_enable_app2.png" loading="lazy" />
+
+:::info
+Dodanie dostępu do aplikacji dla użytkowników może zająć kilka godzin, zanim stanie się ona skuteczna.
+
+:::
+
+
+Twoja usługa Google Workspace stała się dla OVHcloud zaufana jako dostawca usług. Następnym krokiem jest sprawdzenie, czy konto OVHcloud zaufa Twojemu Google Workspace jako dostawcy tożsamości.
+
+### Budowa zaufania do konta OVHcloud i konfiguracja połączenia
+
+Aby dodać Google Workspace jako zaufanego dostawcę tożsamości, musisz dostarczyć metadane dostawcy tożsamości w Panelu klienta OVHcloud. [Przejdź na stronę SAML SSO](https://manager.eu.ovhcloud.com/#/iam/identities/sso), następnie kliknij przycisk <code className="action">Logowanie SSO</code>.
+
+<img className="thumbnail" alt="Dostęp do menu IAM" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/access_to_the_IAM_menu_03.png" loading="lazy" />
+
+Wpisz metadane XML Twojej usługi Google Workspace. Uzupełnij pole "Nazwa atrybutu użytkownika" wartością `Name` i pole "Nazwa atrybutu grupy" wartością `Group`. Kliknij na <code className="action">Zatwierdź</code>.
+
+Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status „aktywny” dla użytkowników OVHcloud`.
+
+<img className="thumbnail" alt="Etap 2 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_user_management_connect_sso_2.png" loading="lazy" />
+
+Musisz teraz odnaleźć Twój Google Workspace jako dostawcę tożsamości, a także grupy domyślne.
+
+<img className="thumbnail" alt="Etap 3 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_user_management_connect_sso_3.png" loading="lazy" />
+
+Aby uzyskać więcej informacji, kliknij link pod "URL usługi SSO".
+
+<img className="thumbnail" alt="Etap 4 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_user_management_connect_sso_4.png" loading="lazy" />
+
+Przycisk <code className="action">...</code> pozwala na aktualizację lub usunięcie certyfikatu SSO i na zapoznanie się z jego szczegółami.
+
+<img className="thumbnail" alt="Etap 5 OVHcloud logowania SSO" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_user_management_connect_sso_5.png" loading="lazy" />
+
+Twój Google Workspace jest teraz uważany za zaufanego dostawcę tożsamości. Jednocześnie należy dodać grupy do konta OVHcloud.
+
+:::warning
+Jeśli spróbujesz zalogować się przez SSO, prawdopodobnie wyświetli się komunikat błędu `Not in valid groups`.
+
+Twoje konto OVHcloud sprawdza, czy użytkownik loguje się do grupy istniejącej na koncie.
+
+:::
+
+
+W tym celu należy zezwolić grupom, które zostaną przesłane z Google Workspace do OVHcloud. Grupy te są takie same, jak używane do kategoryzacji użytkowników.
+
+W tym celu zaloguj się do interfejsu administracyjnego [Google Workspace](https://admin.google.com) za pomocą konta administratora
+
+Przejdź do <code className="action">Apps</code>, a następnie <code className="action">Web and mobile apps</code>.
+
+<img className="thumbnail" alt="Zarządzanie aplikacjami www i mobilnymi" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_add_saml_app.png" loading="lazy" />
+
+Kliknij na linię aplikacji, którą wcześniej dodałeś.
+
+<img className="thumbnail" alt="Lista aplikacji www i mobilnych" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_list_app.png" loading="lazy" />
+
+Kliknij na <code className="action">SAML attribute mapping</code>, aby edytować mapping informacji udostępnianych przez Google Workspace i OVHcloud.
+
+<img className="thumbnail" alt="Szczegóły aplikacji SAML" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_show_app.png" loading="lazy" />
+
+W kategorii "Group membership (optional)" możesz dodać wszystkie grupy, które chcesz autoryzować logując się do OVHcloud. W polu "App attribute" podaj `Group`.
+
+Następnie przypisz **role** tym grupom użytkowników do OVHcloud. W przeciwnym razie Twoje konto OVHcloud nie wie, co użytkownik może zrobić i domyślnie nie przyznaje mu żadnych uprawnień.
+
+<img className="thumbnail" alt="Konfiguracja grup użytkowników" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/google_workspace_web_mobile_setup_groups.png" loading="lazy" />
+
+W Panelu klienta OVHcloud przejdź do sekcji <code className="action">Tożsamości</code> i w zakładce <code className="action">Grupy użytkowników</code>. Następnie kliknij przycisk <code className="action">Zadeklaruj grupę</code> i wypełnij pola:
+
+- **Nazwa grupy**: Nazwa grupy w Google Workspace
+- **Uprawnienia**: Poziom prawa przyznany tej grupie
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami Google Workspace" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_user_management_groups_1.png" loading="lazy" />
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami Google Workspace" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_user_management_groups_2.png" loading="lazy" />
+
+Następnie możesz sprawdzić, czy grupa została dodana do Twojego konta OVHcloud w sekcji "Grupy":
+
+<img className="thumbnail" alt="Grupy zarządzania użytkownikami Google Workspace" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_user_management_groups_3.png" loading="lazy" />
+
+Po zalogowaniu się z użytkownikiem grupy **wewnętrznej** konto OVHcloud zostanie uznane za użytkownika spełniającego rolę "UNPRIVILEGED" określoną przez jego grupę.
+
+Uwaga: jeśli nadasz tej grupie uprawnienia `Brak`, konieczne będzie przypisanie uprawnień za pośrednictwem [zasad IAM](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+Następnie będziesz mógł wylogować się z konta i ponownie zalogować się do Google Workspace jako dostawca danych.
+
+### Logowanie przez SSO
+
+Na [stronie logowania OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) wpisz [identyfikator](/guides/account-and-service-management/account-information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta/), po którym następuje **/idp** bez hasła i kliknij przycisk <code className="action">Login</code>.
+
+<img className="thumbnail" alt="Połączenie z federacją OVHcloud" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_federation_login_1.png" loading="lazy" />
+
+Zostaniesz przekierowany na stronę logowania Google Workspace. Wprowadź login/hasło użytkownika Twojego Google Workspace, następnie kliknij przycisk <code className="action">Sign in</code> .
+
+<img className="thumbnail" alt="OVHcloud Federacja Login Przekierowanie Google Workspace" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_federation_login_2.png" loading="lazy" />
+
+Teraz jesteś zalogowany tym samym identyfikatorem klienta, ale za pomocą użytkownika Google Workspace.
+
+<img className="thumbnail" alt="Federacja Informacji o Użytkownikach OVHcloud" src="/images/account-and-service-management/account-information/ovhcloud-account-connect-saml-google-workspace/ovhcloud_user_infos_federation.png" loading="lazy" />
+
+## Sprawdź również
+
+[Załóż konto OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+
+[Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/guides/account-and-service-management/account-information/all-about-username/)
+
+[Definicja i zarządzanie hasłem do konta](/guides/account-and-service-management/account-information/manage-ovh-password/)
+
+[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/guides/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/)
+
+[Jak korzystać z polityki IAM w Panelu klienta](/guides/account-and-service-management/account-information/iam-policy-ui/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

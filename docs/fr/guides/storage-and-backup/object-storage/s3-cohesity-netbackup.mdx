@@ -1,0 +1,107 @@
+---
+title: Object Storage - Utiliser Object Storage avec Cohesity NetBackup
+description: Configurez OVHcloud Object Storage comme cible de sauvegarde avec Cohesity NetBackup.
+lastUpdated: 2025-06-03
+---
+
+## Objectif
+
+Ce guide a pour objectif de vous accompagner dans la configuration et l’utilisation de l’Object Storage OVHcloud comme cible de sauvegarde dans Cohesity NetBackup, via un Disk Pool dédupliqué.
+
+Il couvre notamment l’ajout d’un volume cloud, la configuration des paramètres WORM (facultatif) et l’intégration dans les politiques de sauvegarde NetBackup.
+
+## Prérequis
+
+Assurez-vous de disposer des éléments suivants :
+
+- Un Primary Server NetBackup installé et configuré. Voir la documentation suivante : « [Installing NetBackup primary server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020) ».
+- Un serveur de médias avec option de déduplication installé sur Red Hat Enterprise ou SUSE Linux Enterprise Server. Voir la documentation suivante : « [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index) ».
+- Un espace disque local disponible d’environ 1 To pour la gestion des métadonnées de déduplication.
+
+## En pratique
+
+Cette section décrit, étape par étape, comment configurer un Disk Pool dédupliqué utilisant OVHcloud Object Storage comme volume cloud dans Cohesity NetBackup.
+Vous serez guidé tout au long de la procédure, depuis la sélection du Storage Server jusqu'à l'intégration dans vos politiques de sauvegarde. Chaque étape est accompagnée d’une capture pour faciliter la configuration.
+
+1. Assurez-vous qu’un Storage Server MSDP est déjà créé.
+
+2. Connectez-vous à l’interface NetBackup en tant qu’administrateur.
+
+    <img className="thumbnail" alt="connection page" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/user_connection.png" loading="lazy" />
+
+3. Accédez au menu <code className="action">Storage</code>, au sous-menu <code className="action">Disk storage</code> puis cliquez sur l'onglet <code className="action">Storage Servers</code>.
+
+    <img className="thumbnail" alt="storage menu" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/storage_menu-b.png" loading="lazy" />
+
+4. Ouvrez l’onglet <code className="action">Disk Pools</code> et cliquez sur <code className="action">Add</code> pour créer un nouveau Disk Pool.
+
+    <img className="thumbnail" alt="diskpool menu" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/diskpool_menu.png" loading="lazy" />
+
+5. Sélectionnez le <code className="action">Storage Server MSDP</code> sur lequel vous souhaitez créer le pool dédupliqué.
+
+    <img className="thumbnail" alt="storage server selection" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/storage_server_selection.png" loading="lazy" />
+
+6. Lors de la sélection du volume, cliquez sur <code className="action">Add Cloud Volume</code>.
+
+    <img className="thumbnail" alt="add cloud volume" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/add_cloud_volume.png" loading="lazy" />
+
+7. Choisissez <code className="action">OVHcloud Standard Object Storage</code> comme type de stockage cloud.
+
+    <img className="thumbnail" alt="type selection of storage" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/type_selection_of_storage.png" loading="lazy" />
+
+8. Sélectionnez l’endpoint souhaité et ajoutez le credential OVHcloud si ce n’est pas déjà fait.
+
+    <img className="thumbnail" alt="credentials page" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/credentials_page.png" loading="lazy" />
+
+9. (Optionnel) Pour activer le mode WORM (S3 Object Lock), cochez <code className="action">Use Object Lock</code>. Sélectionnez le mode de verrouillage NetBackup correspondant au mode OVhcloud Object Lock :
+
+    - Compliance -> Compliance
+    - Enterprise -> Governance
+
+    Définissez ensuite les durées de rétention minimum et maximum du verrouillage.
+
+    <img className="thumbnail" alt="activate worm mode" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/activate_worm_mode.png" loading="lazy" />
+
+10. Entrez le nom du bucket que vous souhaitez utiliser, ou créez-en un nouveau.
+
+    <img className="thumbnail" alt="bucket name" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/bucket_name.png" loading="lazy" />
+
+11. Cliquez sur <code className="action">Next</code>, puis vérifiez les paramètres dans l’onglet Review.
+
+    <img className="thumbnail" alt="review page" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/review_page.png" loading="lazy" />
+
+12. Cliquez sur <code className="action">Add Storage Unit</code> en haut de l'écran, puis nommez l’unité de stockage.
+
+    <img className="thumbnail" alt="add storage unit popup" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/add_storage_unit_popup.png" loading="lazy" />
+
+    <img className="thumbnail" alt="unit storage name" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/unit_storage_name.png" loading="lazy" />
+
+13. (Optionnel) Pour activer le verrouillage WORM, cochez <code className="action">Lock until Expiration</code>.
+
+    :::info
+    Remarque : des données WORM et non-WORM peuvent coexister dans un même Disk Pool dédupliqué.
+
+    :::
+
+
+14. Vérifiez tous les paramètres dans l’onglet Review, puis validez.
+
+    <img className="thumbnail" alt="unit storage review" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/unit_storage_review.png" loading="lazy" />
+
+15. Vous pouvez maintenant :
+
+    - Utiliser l’unité de stockage directement dans vos jobs de sauvegarde,
+    - Ou l’utiliser en tant que cible secondaire via une Storage Lifecycle Policy (SLP).
+
+16. Modifiez vos politiques de sauvegarde en conséquence pour intégrer le stockage OVHcloud.
+
+    <img className="thumbnail" alt="storage lifecycle policy" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/storage_lifecycle_policy.png" loading="lazy" />
+    <img className="thumbnail" alt="create storage lifecycle policy" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/new_operation_storage_lifecycle_policy.png" loading="lazy" />
+    <img className="thumbnail" alt="create new policy" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/create_new_policy.png" loading="lazy" />
+    <img className="thumbnail" alt="create new policy 2" src="/images/storage-and-backup/object-storage/s3-cohesity-netbackup/create_new_policy2.png" loading="lazy" />
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

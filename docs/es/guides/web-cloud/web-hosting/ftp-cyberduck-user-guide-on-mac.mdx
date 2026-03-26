@@ -1,0 +1,247 @@
+---
+title: Tutorial - Utilizar Cyberduck con mi alojamiento web
+description: Cómo utilizar la aplicación Cyberduck para conectarse a un alojamiento web de OVHcloud
+lastUpdated: 2025-06-10
+---
+
+## Objetivo
+
+Cyberduck, disponible en macOS y Windows, es una aplicación open source de transferencia de archivos. Le permite conectarse al espacio de almacenamiento FTP de su alojamiento web (en protocolo FTP o SFTP).
+
+Para descargar Cyberduck, acceda al [sitio web oficial](https://cyberduck.io/) de la aplicación.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/logo.png" loading="lazy" />
+
+:::info
+- Cyberduck es una aplicación disponible en macOS y Windows. Debido a que la interfaz y las funciones de Cyberduck son relativamente similares en ambos sistemas operativos, el tutorial se ha realizado en una máquina Windows.
+- Esta guía ha sido elaborada con una versión gratuita de la aplicación en versión 8.7.2 descargada desde el [sitio web oficial](https://cyberduck.io/).
+
+:::
+
+
+:::warning
+OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+
+Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
+
+:::
+
+
+## Requisitos
+
+- Tener contratado un plan de hosting [web hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+- Haber descargado e instalado la aplicación Cyberduck en su ordenador.
+
+:::info
+Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
+
+:::
+
+
+## Procedimiento
+
+### Interfaz
+
+Al iniciar la aplicación, se muestra la siguiente interfaz.
+
+- La parte superior, rodeada de naranja, corresponde a la barra de herramientas. Le permite establecer una conexión con su espacio de alojamiento, navegar por la estructura de carpetas y archivos, consultar el historial de sus acciones y muchas otras acciones.
+- Debajo está el contenido que desea ver. Por ejemplo, si hace clic en el icono <code className="action">History</code>, aparecerá una lista de las acciones.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/start-page.png" loading="lazy" />
+
+### Personalizar la visualización de Cyberduck
+
+Puede personalizar la visualización de Cyberduck para que sea más eficaz y personal.
+
+En el menú principal, en la parte superior de la interfaz, haga clic en <code className="action">View</code> y luego en <code className="action">Customize Toolbar...</code>.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/customize-toolbar.png" loading="lazy" />
+
+En la nueva ventana, arrastre los elementos que desee a la barra de herramientas. Por ejemplo, si desea agregar un icono de <code className="action">Download</code> a la barra de herramientas, arrastre el icono de <code className="action">Download</code> a la barra de herramientas. Para confirmar los cambios, haga clic en <code className="action">Done</code>.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/customize-display.png" loading="lazy" />
+
+### Utilizar Cyberduck
+
+#### Conexión SFTP
+
+:::warning
+Por motivos de seguridad, no se recomienda conectarse por FTP. La mayoría de los sistemas operativos ahora prohíben la posibilidad de conectarse por FTP. por lo que le recomendamos que se conecte por SFTP.
+
+:::
+
+
+Para conectarse a su espacio de alojamiento web, siga los pasos que se indican a continuación:
+
+**1.** En la barra de herramientas, haga clic en <code className="action">Open Connection</code>
+
+**2.** En el menú desplegable (marco naranja de la imagen), seleccione <code className="action">SFTP (SSH File Transfert Protocol)</code>
+
+**3.** Introduzca los datos de conexión a su espacio FTP:
+
+- Servidor (servidor)
+- Username (Nombre de usuario)
+- Password (Contraseña)
+- Puerto (22)
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/sftp-connection.png" loading="lazy" />
+
+:::tip[Success]
+- Puede guardar su contraseña en Cyberduck marcando <code className="action">Add to keychain</code>. Si no marca la casilla, deberá introducir la contraseña para volver a conectarse a su espacio de alojamiento web.
+- Si no conoce todos sus datos FTP (servidor, identificadores, etc.), consulte la guía "[Conectarse al espacio de almacenamiento FTP de un alojamiento web](/guides/web-cloud/web-hosting/ftp-connection/)".
+
+:::
+
+
+La primera vez que se conecte a su espacio de alojamiento web, aparecerá una ventana con el título <code className="action">Modified fingerprint</code>. Marque la casilla <code className="action">Always</code> y acepte. Esto le permitirá certificar definitivamente el host de conexión (OVHcloud).
+
+:::tip[Success]
+- Le recomendamos que guarde sus datos de conexión mediante un marcador. Esto le permitirá guardar en la memoria cierta información de conexión.
+- Consulte esta sección de la guía: [Qué es un marcador?](#signet)
+
+:::
+
+
+#### Errores de conexión
+
+Es posible que se haya producido un error al intentar conectarse a su espacio de alojamiento web. Estos son los 2 errores más frecuentes que puede encontrar.
+
+- `Connection failed (<server-SFTP>) - DNS lookup for <server> failed`
+
+En la mayoría de los casos, este error está relacionado con las claves que ha introducido y que probablemente sean incorrectas. Por lo tanto, debe comprobar la información de conexión que haya introducido.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/open-session-failed.png" loading="lazy" />
+
+:::tip[Success]
+- Si no conoce todos sus datos FTP (servidor, identificadores, etc.), consulte la guía "[Conectarse al espacio de almacenamiento FTP de un alojamiento web](/guides/web-cloud/web-hosting/ftp-connection/)".
+
+:::
+
+
+- `Connection failed (<server-SFTP>) - Operation timed out`
+
+Este mensaje también va acompañado de la mención `Operation timed out`. Este mensaje suele indicar que no se puede acceder al host o que éste es incorrecto. Debe comprobar la información de conexión que ha introducido.
+
+Este error también puede deberse a un firewall o a una red local que bloquea el puerto 21 o 22 que se utiliza para conectarse al servidor. En ese caso, debe comprobar su configuración personal.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/connection-failed.png" loading="lazy" />
+
+:::info
+- Le recordamos que el host de conexión para su espacio de alojamiento es `ftp.cluster0XX.hosting.ovh.net` (sustituya los `XXX` por su número de cluster).
+- Si lo necesita, consulte la guía "[Conectarse al espacio de almacenamiento FTP de un alojamiento web](/guides/web-cloud/web-hosting/ftp-connection/)".
+
+:::
+
+
+<a name="signet"></a>
+
+### ¿Qué es un marcador?
+
+Para facilitar el acceso a su espacio de alojamiento web, le recomendamos que utilice los marcadores. Le permiten pre-registrar sus datos de conexión, evitando que los introduzca cada vez que se conecte.
+
+Para añadir:
+
+1. Conéctese al espacio FRP de su alojamiento web.
+2. En la parte superior de la interfaz, en la barra de herramientas, haga clic en la pestaña <code className="action">Bookmarks</code> (cuadro naranja en la imagen siguiente).
+3. En la parte inferior izquierda de la ventana, haga clic en el icono <code className="action">+</code> para añadir un nuevo marcador.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/add-signet.png" loading="lazy" />
+
+Aparecerá una ventana con la información de inicio de sesión y una nueva línea en la lista de marcadores. La próxima vez que inicie Cyberduck, podrá hacer doble clic en el marcador para conectarse más rápidamente.
+
+### Transferir archivos
+
+La transferencia de archivos le permite subir su sitio web a su espacio de alojamiento web. Por defecto, deberá subir sus ficheros al directorio (carpeta) `www`. Puede transferir sus archivos a través de varios métodos.
+
+#### Mediante arrastrar
+
+Para realizar la transferencia de sus archivos, seleccione y arrastre desde la ventana de la carpeta local (sus archivos en su máquina) a la ventana de Cyberduck (espacio de almacenamiento FTP de su alojamiento web). Una vez realizada esta acción, los archivos se colocarán automáticamente en cola para su envío al servidor. Se abrirá una ventana.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/drag-drop-transfert-file.png" loading="lazy" />
+
+#### A través del menú principal
+
+En el menú de Cyberduck, haga clic en <code className="action">File</code> y luego en <code className="action">Upload...</code>. Seleccione los archivos que quiera transferir al servidor y haga clic en <code className="action">Upload</code>.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/transfert-files.png" loading="lazy" />
+
+### Ver las transferencias en curso
+
+Puede consultar el historial de transferencias realizadas al espacio de almacenamiento FTP de su alojamiento web. Así podrá encontrar:
+
+- los archivos pendientes de subir al servidor remoto (todavía presentes en la cola o en proceso de envío);
+- los archivos para los que no se ha podido realizar la transferencia;
+- los archivos para los que la transferencia se ha realizado correctamente en el alojamiento web remoto.
+
+Existen dos formas de visualizar esta ventana:
+
+- automáticamente cuando se inicia una transferencia;
+- haciendo clic en <code className="action">Window</code> (en el menú principal) y luego en <code className="action">Transfers</code>.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/transfert-files-list.png" loading="lazy" />
+
+### Acciones posibles en un archivo o carpeta
+
+Haga doble clic en un archivo o carpeta para:
+
+- Leer la información de un archivo o carpeta y modificar sus permisos (CHMOD).
+- Editar el archivo con la aplicación que elija.
+- Cambiar el nombre del archivo o carpeta.
+- Eliminar el archivo o la carpeta.
+- Descargar los elementos seleccionados.
+- Crear una nueva carpeta o archivo.
+
+La lista anterior no es exhaustiva. Si lo necesita, visite el [sitio web oficial](https://cyberduck.io/) de Cyberduck.
+
+### Información útil
+
+#### Derechos de archivos y carpetas
+
+Puede modificar los permisos (CHMOD) de sus archivos y carpetas presentes en el alojamiento web.
+
+Estos últimos se reparten en 3 familias:
+
+- Owner (Propietario)
+- Group (Group)
+- Others (Otros)
+
+Haga doble clic en un archivo o carpeta y seleccione <code className="action">Info</code>. Se abrirá la siguiente ventana:
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/transfert-files-list.png" loading="lazy" />
+
+Haga clic en la pestaña <code className="action">Permissions</code> y realice los cambios deseados:
+
+- UNIX Permissions: este valor define los derechos de las 3 familias (Propietario, grupo y otros).
+- Marque las casillas deseadas: el valor se actualizará automáticamente para los permisos UNIX.
+
+#### Reapertura del sitio web
+
+Puede reabrir su sitio web utilizando un comando personalizado.
+
+En la mayoría de los casos, esta operación se realiza tras un cierre por seguridad del espacio de almacenamiento FTP de un alojamiento web por parte de OVHcloud tras un ataque de pirateo informático.
+
+En el menú de Cyberduck, haga clic en <code className="action">Go</code> y seleccione <code className="action">Send command...</code>.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/send-ftp-command.png" loading="lazy" />
+
+En la nueva ventana, introduzca el comando `CHMOD 705 /` y haga clic en <code className="action">Send</code> para ejecutar el comando. En confirmación, el mensaje `200 Permissions changed on /` debería aparecer en el recuadro de abajo.
+
+Para comprobar que la reapertura es efectiva, inicie sesión en su sitio web desde un navegador web.
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/other/web-tools/cyberduck/site-chmod-705-command.png" loading="lazy" />
+
+:::warning
+- Este comando no funciona en SFTP. Para ello, utilice una conexión FTP.
+- Recuerde que debe probar la pantalla después de un máximo de 3 horas. De hecho, nuestros robots pasan cada 3 horas comprobando los cambios de estado. En función del momento en el que se realice la operación, podrá restaurar el sitio web más o menos rápidamente.
+- Si el plazo de 3 horas ha expirado y su sitio web todavía no está en línea, contacte con el soporte de OVHcloud.
+
+:::
+
+
+## Más información <a name="go-further"></a>
+
+[Tutorial - Utilizar FileZilla con el alojamiento de OVHcloud](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

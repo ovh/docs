@@ -1,0 +1,78 @@
+---
+title: AI Notebooks - Tutorial - Use tensorboard inside notebooks
+description: How to use tensorboard inside AI Notebooks
+lastUpdated: 2022-09-01
+---
+
+## Objective
+
+The purpose of this tutorial is to show how it is possible to launch a [TensorBoard](https://www.tensorflow.org/tensorboard) inside an `AI Notebooks`.
+
+TensorBoard is a tool made by TensorFlow, for providing the measurements and visualizations needed during the machine learning workflow. It enables tracking experiment metrics like loss and accuracy, visualizing the model graph, projecting embeddings to a lower dimensional space, and much more.
+
+TensorBoard provides a visual interface :
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-tuto-02-tensorboard/overview_interface_tensorboard.png" loading="lazy" />
+
+The tutorial presents a simple example of launching **TensorBoard** in a notebook.
+
+## Requirements
+
+- an AI Notebooks project created inside a Public Cloud project
+- a user for AI Notebooks
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Launch and access Jupyter notebook
+
+If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es), just create a new notebook and select **TensorFlow** docker image.
+
+If you want to launch it with the [CLI](/guides/public-cloud/ai-machine-learning/cli-11-howto-run-notebook-cli/), just choose the name of your notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) your want and use the following command:
+
+```bash
+ovhai notebook run tensorflow jupyterlab \
+    --name <notebook-name> \
+    --gpu <nb-gpus>
+```
+
+You can then reach your notebook's URL once the notebook is running.
+
+### Experiment with example notebook
+
+All source code for this tutorial can be found [here](https://github.com/ovh/ai-training-examples).
+
+The example notebook is based on the Fashion MNIST dataset.
+
+<img className="thumbnail" alt="image" src="/images/public-cloud/ai-machine-learning/notebook-tuto-02-tensorboard/image_overview_jupyter_notebook_tensorboard.png" loading="lazy" />
+
+Then access the example notebook via the following path:
+
+`ai-training-examples` > `notebooks` > `computer-vision` > `image-classification` > `tensorflow` > `tensorboard` > `notebook_tutorial_tensorboard.ipynb`
+
+The aim of this tutorial is to show how it is possible, thanks to TensorBoard, to see the dynamic display of different metrics.
+
+A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/tensorboard/notebook_tutorial_tensorboard.ipynb).
+
+## Go further
+
+- Another way to track your training with an AI notebook is to use **Weights & Biases**. Follow this [tutorial](/guides/public-cloud/ai-machine-learning/notebook-tuto-03-weight-biases/).
+- If you want to launch **TensorBoard** in a job, please refer to this [documentation](/guides/public-cloud/ai-machine-learning/training-tuto-05-tensorboard/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)

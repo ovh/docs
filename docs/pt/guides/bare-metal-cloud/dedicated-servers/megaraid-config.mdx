@@ -1,0 +1,133 @@
+---
+title: Configurar o seu MegaRAID em RAID 0
+description: Descubra como configurar os discos do seu servidor em RAID 0, de forma a explorar o máximo de espaço utilizável
+lastUpdated: 2025-04-29
+---
+
+:::info
+Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+
+:::
+
+
+ 
+## Objetivo
+
+O RAID (Redundant Array of Independent Disks) é um conjunto de técnicas que atenuam a perda de dados num servidor, replicando as informações em vários discos.
+
+O nível de RAID predefinido dos servidores OVHcloud é o RAID 1. que duplica o volume ocupado pelos seus dados, reduzindo assim o espaço disponível.
+
+**Saiba como configurar os discos do seu servidor em RAID 0, de forma a explorar o máximo de espaço utilizável.**
+
+:::warning
+Atenção: o RAID 0 não oferece **tolerância a avarias** nem **redundância de dados**. Isto torna muito provável a perda de informações em caso de falha de disco.
+
+:::
+
+
+## Requisitos
+
+- Dispor de um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) com um RAID por hardware.
+- Ter acesso ao servidor através de SSH enquanto administrador (sudo)
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Caminho de navegação:** <code className="action">Bare Metal Cloud</code> > <code className="action">Servidores dedicados</code> > Selecione o seu servidor
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+## Instruções
+
+### Utilizar a Área de Cliente OVHcloud
+
+No separador <code className="action">Informações gerais</code>, clique em <code className="action">...</code> em frente do sistema operativo e, a seguir, em <code className="action">Instalar</code>.
+
+Selecione o sistema operativo que deseja instalar e clique em <code className="action">Seguinte</code>.
+
+Selecione as casas **Personalizar a configuração do RAID** por hardware e **Personalizar a configuração das partições** e clique em <code className="action">Seguinte</code>.
+
+<img className="thumbnail" alt="MegaRAID" src="/images/bare-metal-cloud/dedicated-servers/megaraid-config/server_installation_raid0_2.png" loading="lazy" />
+
+Selecione "raid0" na lista de RAID pendente e clique em <code className="action">Seguinte</code>.
+
+<img className="thumbnail" alt="MegaRAID" src="/images/bare-metal-cloud/dedicated-servers/megaraid-config/server_installation_raid0_3.png" loading="lazy" />
+
+Configure as partições conforme as suas necessidades e clique em <code className="action">Seguinte</code>.
+
+<img className="thumbnail" alt="MegaRAID" src="/images/bare-metal-cloud/dedicated-servers/megaraid-config/server_installation_raid0_4.png" loading="lazy" />
+
+Finalmente, clique em <code className="action">Confirmar</code>.
+
+<img className="thumbnail" alt="MegaRAID" src="/images/bare-metal-cloud/dedicated-servers/megaraid-config/server_installation_raid0_5.png" loading="lazy" />
+
+Depois de configurar o servidor, verifique o tamanho das partições ligando-se através de SSH e executando o seguinte comando:
+
+```sh
+df -h
+```
+
+### Utilizar o modo rescue
+
+Procure "Boot" na zona **Informações gerais** e clique em <code className="action">...</code> e depois em <code className="action">Alterar</code> para alterar o sistema de arranque.
+
+<img className="thumbnail" alt="MegaRAID" src="/images/bare-metal-cloud/dedicated-servers/megaraid-config/rescue_mode_raid0_1.png" loading="lazy" />
+
+De seguida, selecione <code className="action">Fazer boot em modo rescue</code> e escolha <code className="action">rescue-customer</code> na lista pendente.
+
+No campo "Receber as credenciais de acesso ao modo no endereço de e-mail:", indique outro endereço de e-mail se não deseja que as credenciais de acesso sejam enviadas para o endereço principal da sua conta OVHcloud.
+
+<img className="thumbnail" alt="MegaRAID" src="/images/bare-metal-cloud/dedicated-servers/megaraid-config/rescue_mode_raid0_2.png" loading="lazy" />
+
+Clique em <code className="action">Seguinte</code> e, a seguir, em <code className="action">Confirmar</code> no ecrã que aparece.
+
+<img className="thumbnail" alt="MegaRAID" src="/images/bare-metal-cloud/dedicated-servers/megaraid-config/rescue_mode_raid0_3.png" loading="lazy" />
+
+Concluída a alteração, clique em <code className="action">...</code> à direita do "Estado" na zona **Estado dos serviços.** 
+
+Clique no botão <code className="action">Reiniciar</code> e o servidor reinicie em modo rescue. Esta operação pode demorar alguns minutos. 
+
+<img className="thumbnail" alt="MegaRAID" src="/images/bare-metal-cloud/dedicated-servers/megaraid-config/server_installation_raid0_6.png" loading="lazy" />
+
+Quando o servidor reiniciar, ligue-se ao servidor através de SSH utilizando as suas informações de acesso ao modo rescue. Estes foram-lhe enviados para o endereço de e-mail principal da conta ou, caso exista, para o endereço de e-mail indicado anteriormente.
+
+A partir da linha de comandos, introduza os seguintes comandos para eliminar os parâmetros RAID existentes. Todos os dados do RAID serão eliminados:
+
+```sh
+MegaCli -CfgLdDel -L0 -a0
+MegaCli -CfgLdDel -Lall -aAll
+```
+
+Introduza o seguinte comando para recuperar os identificadores de localização dos seus discos:
+
+```sh
+MegaCli -PdList -aALL | egrep "Slot|Device ID"
+```
+
+Introduza os seguintes comandos para configurar o RAID 0:
+
+```sh
+MegaCli -CfgLDAdd -R0[252:0,252:1] -a0
+```
+
+Neste exemplo, 252 é o identificador da caixa do disco.
+
+Depois de definir o novo nível de RAID, pode verificar os parâmetros através do seguinte comando:
+
+```sh
+MegaCli -LDInfo -Lall -a0 | grep -i size
+```
+
+## Quer saber mais?
+
+[Substituir um disco a quente para um servidor em RAID por hardware](/guides/bare-metal-cloud/dedicated-servers/hotswap-raid-hard/)
+
+[Substituir um disco a quente para um servidor em RAID por software](/guides/bare-metal-cloud/dedicated-servers/hotswap-raid-soft/)
+
+[Gestão do RAID por hardware](/guides/bare-metal-cloud/dedicated-servers/raid-hard/)
+
+Junte-se à nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

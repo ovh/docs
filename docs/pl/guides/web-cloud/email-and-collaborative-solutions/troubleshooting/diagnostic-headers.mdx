@@ -1,0 +1,245 @@
+---
+title: Pobieranie nagłówka i pliku .eml wiadomości e-mail
+description: Dowiedz się, jak pobrać nagłówek wiadomości e-mail lub wyodrębnić plik .eml z programu pocztowego, webmaila lub aplikacji zewnętrznej
+lastUpdated: 2026-03-06
+---
+
+
+
+## Wprowadzenie
+
+Nagłówek wiadomości e-mail umożliwia prześledzenie drogi, jaką pokonała wiadomość w sieci, od nadawcy do odbiorcy.<br/>
+Pozwala w szczególności zidentyfikować złośliwą wiadomość e-mail lub wykryć opóźnienie w odbiorze.
+
+Każdy otrzymany e-mail posiada nagłówek (*header*), który nie wyświetla się domyślnie podczas przeglądania wiadomości. Można go jednak pobrać z programu pocztowego lub z interfejsu webmail.
+
+Możesz również wyodrębnić cały e-mail w postaci pliku `.eml`. Plik ten może być wymagany w celu przeanalizowania otrzymanej złośliwej wiadomości.<br/>
+Aby pobrać plik `.eml`, przejdź do sekcji [webmail](#webmail).
+
+**Dowiedz się, jak pobrać nagłówek wiadomości e-mail i wyodrębnić plik .eml z programu pocztowego.**
+
+## Wymagania początkowe
+
+- Posiadanie adresu e-mail w jednym z naszych [rozwiązań e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) lub w rozwiązaniu zewnętrznym.
+- Dostęp do adresu e-mail przez interfejs webmail lub program pocztowy.
+
+## W praktyce
+
+### Zrozumienie zawartości nagłówka
+
+Nagłówek składa się z kilku elementów wskazujących drogę wiadomości e-mail, uporządkowanych w odwrotnej kolejności chronologicznej, oraz z dodatkowych informacji.<br/>
+Poniżej znajduje się niewyczerpująca lista elementów, które mogą składać się na nagłówek, oraz ich znaczenie.
+
+- Pole `Received` jest obecne w nagłówku przy każdym przejściu wiadomości e-mail przez serwer wysyłki (SMTP). Zwykle zawiera nazwę hosta serwera z jego adresem IP oraz datę. Pola `Received` są uporządkowane od najnowszego do najstarszego przejścia przez serwer:
+<pre className="bgwhite"><code>
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
+	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+</code></pre>
+  *Wiadomość e-mail została przesłana z serwera MX Plan7.mail.ovh.net do serwera mo3005.mail-out.ovh.net 30 czerwca 2021 r. o godzinie 13:12:40 (strefa czasowa UTC)*
+
+- Pole `Return-Path` odpowiada adresowi zwrotnemu w przypadku niepowodzenia wysyłki wiadomości. Adres zwrotny jest zazwyczaj adresem nadawcy.
+<pre className="bgwhite"><code>
+Return-Path: &lt;john@mydomain.ovh&gt;
+</code></pre>
+
+- Pole `From` oznacza adres nadawcy wiadomości e-mail oraz jego nazwę wyświetlaną.
+<pre className="bgwhite"><code>
+From: John &lt;john@mydomain.ovh&gt;
+</code></pre>
+
+- Pole `To` oznacza adres odbiorcy wiadomości e-mail oraz jego nazwę wyświetlaną.
+<pre className="bgwhite"><code>
+To: Robert &lt;robert@hisdomain.ovh&gt;
+</code></pre>
+
+- Pole `Subject` oznacza temat wiadomości e-mail.
+<pre className="bgwhite"><code>
+Subject: Hello my friend
+</code></pre>
+
+- Pole `Message-ID` oznacza unikalny identyfikator wiadomości e-mail i kończy się nazwą serwera wysyłki (po znaku "@").
+<pre className="bgwhite"><code>
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
+</code></pre>
+
+- Pole `Received-SPF` wyświetla wynik kontroli [SPF](/guides/web-cloud/domains/dns-zone-spf/) przeprowadzonej na domenie nadawcy. Argument `client-ip` pozwala ustalić adres IP serwera, który wysłał wiadomość e-mail.
+<pre className="bgwhite"><code>
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
+</code></pre>
+
+- Pola `X-` to pola niestandardowe, które uzupełniają pola standardowe. Są implementowane przez serwery, przez które przechodzą wiadomości e-mail.
+<pre className="bgwhite"><code>
+X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
+X-Ovh-Tracer-Id: 1234567891011121314
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 0
+X-VR-SPAMCAUSE:
+</code></pre>
+
+### Pobranie nagłówka w programie pocztowym
+
+#### Microsoft Outlook
+
+##### **Pobranie nagłówka**
+
+Istnieją dwie wersje programu Outlook dla systemu Windows: **Outlook klasyczny** i **Nowy Outlook**. Aby zidentyfikować swoją wersję, wpisz "Outlook" w pasku wyszukiwania systemu Windows. Jeśli pojawi się oznaczenie "(klasyczny)", korzystasz z klasycznego programu Outlook. W przeciwnym razie jest to Nowy Outlook.
+
+<img className="thumbnail" alt="Outlook Windows - identyfikacja wersji" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/outlook-windows-identify01.png" loading="lazy" />
+
+**Outlook klasyczny:**
+
+1. Kliknij dwukrotnie wiadomość e-mail, aby otworzyć ją w oddzielnym oknie.
+2. W nowym oknie kliknij <code className="action">Plik</code> w lewym górnym rogu.
+3. Wybierz <code className="action">Informacje</code> po lewej stronie i kliknij <code className="action">Właściwości</code>.
+4. Pełny nagłówek wiadomości e-mail wyświetla się w dolnym polu. Zaznacz cały tekst i skopiuj go do pliku.
+
+<img className="thumbnail" alt="Pełny nagłówek w programie Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/classic-outlook-01.png" loading="lazy" />
+
+**Nowy Outlook:**
+
+1. Otwórz wybraną wiadomość e-mail.
+2. Kliknij **prawym przyciskiem myszy** na wiadomość e-mail.
+3. Wybierz <code className="action">Widok</code>, a następnie <code className="action">Wyświetl szczegóły wiadomości</code>.
+4. Pełny nagłówek wiadomości e-mail wyświetla się w panelu szczegółów wiadomości. Zaznacz cały tekst i skopiuj go do pliku.
+
+<img className="thumbnail" alt="Pełny nagłówek w programie Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/new-outlook-01.png" loading="lazy" />
+
+##### **Pobranie pliku .eml**
+
+**Outlook klasyczny:**
+
+1. Zaznacz wiadomość e-mail w skrzynce odbiorczej (nie otwieraj jej).
+2. Kliknij <code className="action">Plik</code> na pasku menu.
+3. Kliknij <code className="action">Zapisz jako</code>.
+4. W menu rozwijanym "Zapisz jako typ" wybierz **Format wiadomości programu Outlook - Unicode (.msg)**. Wybierz lokalizację na komputerze (np. Pulpit) i kliknij <code className="action">Zapisz</code>.
+
+Możesz również **przeciągnąć i upuścić** wiadomość e-mail ze skrzynki odbiorczej bezpośrednio na Pulpit. Spowoduje to utworzenie pliku `.msg`, który możesz dołączyć do zgłoszenia.
+
+<img className="thumbnail" alt="Zapisywanie pliku msg w programie Outlook" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/classic-outlook-02.png" loading="lazy" />
+
+**Nowy Outlook:**
+
+1. Na liście wiadomości kliknij **prawym przyciskiem myszy** na wiadomość e-mail.
+2. Wybierz <code className="action">Zapisz jako</code>, a następnie <code className="action">Zapisz jako plik EML</code>.
+3. Wybierz lokalizację na komputerze i kliknij <code className="action">Zapisz</code>.
+
+<img className="thumbnail" alt="Zapisywanie pliku EML w Nowym Outlooku" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/new-outlook-02.png" loading="lazy" />
+
+#### Mozilla Thunderbird
+
+##### **Pobranie nagłówka**
+
+1. Wybierz wiadomość e-mail.
+2. Naciśnij jednocześnie klawisze `Ctrl` \+ `U` (`Cmd` \+ `U` w systemie macOS).
+3. Pełny nagłówek wiadomości e-mail pojawi się w oddzielnym oknie. Zaznacz cały tekst i skopiuj go do pliku.
+
+<img className="thumbnail" alt="Pełny nagłówek w programie Thunderbird" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/thunderbird-01.png" loading="lazy" />
+
+##### **Pobranie pliku .eml**
+
+1. Wybierz wiadomość e-mail.
+2. Naciśnij jednocześnie klawisze `Ctrl` \+ `S` (`Cmd` \+ `S` w systemie macOS).
+3. Plik zostanie domyślnie zapisany w formacie `.eml`.
+
+#### Mail macOS
+
+##### **Pobranie nagłówka**
+
+1. Wybierz wiadomość e-mail.
+2. Naciśnij jednocześnie klawisze `Cmd` \+ `Shift` \+ `H`.
+3. Pełny nagłówek wiadomości e-mail pojawi się. Zaznacz szary tekst i skopiuj go do pliku.
+
+<img className="thumbnail" alt="Pełny nagłówek w Mail macOS" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/mailmacos-01.png" loading="lazy" />
+
+##### **Pobranie pliku .eml**
+
+1. Wybierz wiadomość e-mail.
+2. Naciśnij jednocześnie klawisze `Cmd` \+ `S`. Plik `.eml` zostanie utworzony automatycznie. Wybierz format `Surowe źródło wiadomości`.
+3. Wybierz lokalizację na komputerze i kliknij <code className="action">Zapisz</code>.
+
+<img className="thumbnail" alt="Zapisywanie pliku eml z Mail macOS" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/mailmacos-02.png" loading="lazy" />
+
+### Pobranie nagłówka w interfejsie webmail <a name="webmail"></a>
+
+#### Roundcube
+
+##### **Pobranie nagłówka**
+
+1. Wybierz wiadomość e-mail.
+2. Kliknij przycisk <code className="action">... Więcej</code>, a następnie <code className="action">&lt; > Pokaż źródło</code>.
+3. Otworzy się nowe okno z pełnym nagłówkiem wiadomości e-mail. Zaznacz cały tekst i skopiuj go do pliku.
+
+<img className="thumbnail" alt="Pokaż źródło w Roundcube" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/roundcube01.png" loading="lazy" />
+
+##### **Pobranie pliku .eml**
+
+1. Wybierz wiadomość e-mail.
+2. Kliknij przycisk <code className="action">... Więcej</code>, a następnie <code className="action">Pobierz (.eml)</code>.
+
+<img className="thumbnail" alt="Pobieranie pliku eml w Roundcube" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/roundcube02.png" loading="lazy" />
+
+#### Outlook Web App (OWA) <a name="owa"></a>
+
+##### **Pobranie nagłówka**
+
+1. Wybierz wiadomość e-mail, której nagłówek chcesz wyświetlić.
+2. Kliknij **strzałkę** po prawej stronie przycisku <code className="action">Odpowiedz wszystkim</code>, a następnie <code className="action">Wyświetl szczegóły wiadomości</code>.
+3. Otworzy się nowe okno z pełnym nagłówkiem wiadomości e-mail, umożliwiając jego pobranie.
+
+<img className="thumbnail" alt="Szczegóły wiadomości w OWA" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/owa01.png" loading="lazy" />
+
+Zobacz także nasz samouczek wideo:
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No?start=36" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+##### **Pobranie pliku .eml**
+
+1. Kliknij <code className="action">(+) Nowy</code>, aby utworzyć nową wiadomość e-mail.
+2. Wybierz wiadomość e-mail, którą chcesz wyodrębnić, i przeciągnij ją do treści nowej wiadomości.
+3. Kliknij strzałkę w dół obok wygenerowanego załącznika, a następnie kliknij <code className="action">Pobierz</code>, aby zapisać plik na swoim komputerze.
+
+<img className="thumbnail" alt="Wyodrębnianie pliku eml z OWA" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/owa02.gif" loading="lazy" />
+
+#### Zimbra
+
+##### **Pobranie nagłówka**
+
+1. Wybierz wiadomość e-mail.
+2. Kliknij <code className="action">Więcej</code> na pasku akcji i wybierz <code className="action">Pokaż oryginał</code>.
+3. Otworzy się nowe okno z pełnym nagłówkiem i surową treścią wiadomości e-mail.
+
+<img className="thumbnail" alt="Szczegóły wiadomości w Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/zimbra-01.png" loading="lazy" />
+
+##### **Pobranie pliku .eml**
+
+1. Wybierz wiadomość e-mail.
+2. Kliknij <code className="action">Więcej</code> na pasku akcji i wybierz <code className="action">Pokaż oryginał</code>.
+3. W oknie, które się otworzy, użyj skrótu `Ctrl` \+ `S` (lub `Cmd` \+ `S` w systemie macOS), aby zapisać stronę jako plik `.eml`.
+
+### Pobranie nagłówka w innym kliencie poczty
+
+#### Gmail
+
+##### **Pobranie nagłówka**
+
+1. Wybierz wiadomość e-mail.
+2. Kliknij 3 pionowe kropki po prawej stronie, a następnie <code className="action">Pokaż oryginał wiadomości</code>.
+3. Otworzy się nowe okno z pełnym nagłówkiem wiadomości e-mail.
+
+<img className="thumbnail" alt="Pokaż oryginał wiadomości w Gmail" src="/images/web-cloud/email-and-collaborative-solutions/troubleshooting/diagnostic-headers/gmail01.png" loading="lazy" />
+
+##### **Pobranie pliku .eml**
+
+1. Wybierz wiadomość e-mail.
+2. Kliknij 3 pionowe kropki po prawej stronie i wybierz <code className="action">Pobierz wiadomość</code>.
+
+#### Outlook.com
+
+Aby pobrać nagłówek lub wyodrębnić plik `.eml` z interfejsu webmail &#60;Outlook.com&#62;, przejdź do sekcji [Outlook Web App](#owa) tego przewodnika.
+
+## Sprawdź również
+
+[FAQ e-mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

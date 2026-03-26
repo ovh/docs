@@ -1,0 +1,41 @@
+---
+title: Utiliser votre infrastructure Managed Bare Metal au sein d’un vRack
+description: Découvrez comment utiliser le vRack avec votre offre Managed Bare Metal
+lastUpdated: 2020-11-23
+---
+
+## Objectif
+
+Le vRack, c’est la possibilité de connecter différents services cloud de OVHcloud entre eux, au sein d’un ou plusieurs réseaux privés sécurisés (VLAN).
+
+**Ce guide explique comment le mettre en place**
+
+## En pratique
+
+### Espace client
+
+Lors de la livraison de votre service [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/), la partie *datacenter* est déjà à l'intérieur d'un vRack.
+
+<img className="thumbnail" alt="Datacenter" src="/images/bare-metal-cloud/managed-bare-metal/using-vrack/vRackDatacenter.PNG" loading="lazy" />
+
+Il est possible de déplacer le *datacenter* de votre infrastructure Managed Bare Metal dans un autre vRack en cliquant sur le bouton <code className="action">Déplacer</code>
+
+### Client vSphere
+
+Dans le client vSphere, vous pouvez retrouver les *VLANs* compatibles vRack dans le switch virtuel distribué (vds), lui-même situé dans le dossier **vrack**.
+
+:::tip[Success]
+Par défaut, OVHcloud vous livre une infrastructure avec 11 VLANs (VLAN10 à VLAN20).
+
+:::
+
+
+<img className="thumbnail" alt="vlan" src="/images/bare-metal-cloud/managed-bare-metal/using-vrack/vRackVsphere.png" loading="lazy" />
+
+Il est possible de modifier leurs paramètres, ou d'en créer de nouveau en suivant le guide de [création de VLAN](/guides/bare-metal-cloud/managed-bare-metal/vlan-creation/).
+
+Vous pourrez ensuite assigner ces *portgroup* sur les interfaces réseaux de vos machines virtuelles.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

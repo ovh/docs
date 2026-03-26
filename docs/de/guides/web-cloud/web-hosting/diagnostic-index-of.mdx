@@ -1,0 +1,108 @@
+---
+title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
+description: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
+lastUpdated: 2025-10-28
+---
+
+## Ziel 
+
+Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
+
+- Die [Einrichtung Ihres Domainnamens mit Ihrer Website](/guides/web-cloud/web-hosting/multisites-configure-multisite/) ist nicht korrekt auf Ihr Zielverzeichnis eingestellt.
+- Das Zielverzeichnis, auf das Ihr Domainname verweist, enthält keine Datei namens **index.html** oder **index.php**.
+
+<img className="thumbnail" alt="index_of" src="/images/assets/screens/other/browsers/errors/index-of.png" loading="lazy" />
+
+**Diese Anleitung erklärt, wie Sie die Anzeige einer "Index of"-Seite korrigieren.**
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+
+:::
+
+
+## Voraussetzungen
+
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Hosting-Pakete</code> > Wählen Sie Ihr Webhosting aus
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## In der praktischen Anwendung
+
+### Den Ursprung der "Index of"-Seite verstehen
+
+Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Zielverzeichnis im [FTP-Speicherplatz](/guides/web-cloud/web-hosting/ftp-connection/) Ihres Webhostings verknüpft. Dies geschieht über den Tab [Multisite](/guides/web-cloud/web-hosting/multisites-configure-multisite/) Ihres Webhostings in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+Die Seite "**Index of**" ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei repräsentiert die Startseite bzw. den Einstiegspunkt Ihrer Website. Der Name dieser Datei ist standardisiert.
+
+Ihr Domainname muss daher im Bereich <code className="action">Multisite</code> Ihres Webhostings mit dem Wurzelverzeichnis verknüpft werden, das eine **index.php** oder **index.html** enthält.
+
+:::info
+Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verknüpfen möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [diesem Tutorial](/guides/web-cloud/web-hosting/htaccess-what-else-can-you-do#verzeichnis-browsing-verhindern/) folgen. Sie können auch den Zugang zu Ihren Ordnern [mit einem Passwort schützen](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+
+Wir empfehlen Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams können keine Unterstützung bei Änderungen der internen Programmierung Ihrer Website anbieten.
+
+:::
+
+
+### Die häufigste Ursache einer "Index of"-Seite beheben
+
+Sie haben die Dateien Ihrer Website **mydomain.ovh** in das Verzeichnis `www` über [FTP](/guides/web-cloud/web-hosting/ftp-connection/) hochgeldaen. Allerdings ist Ihr Domainname nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer Website verknüpft.
+
+<img className="thumbnail" alt="index_multisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png" loading="lazy" />
+
+Ändern Sie das `Wurzelverzeichnis`, indem Sie in der Zeile des betreffenden Domainnames auf die Schaltfläche <code className="action">...</code> klicken und dann <code className="action">Domain bearbeiten</code> auswählen.
+
+<img className="thumbnail" alt="modify_domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png" loading="lazy" />
+
+Führen Sie im neuen Fenster die folgenden Aktionen aus:
+
+- Setzen Sie einen Haken bei <code className="action">Auch die Subdomain www.mydomain.ovh ändern</code> (1).
+- Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an.
+- Klicken Sie auf <code className="action">Weiter</code> (3).
+
+<img className="thumbnail" alt="change_root_folder" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png" loading="lazy" />
+
+:::info
+Den `www`-Ordner als `Wurzelverzeichnis` zu verwenden ist nicht zwingend. Sie können Ihre Webseite auch in einem anderen Ordner innerhalb Ihres [FTP-Speicherplatzes](/guides/web-cloud/web-hosting/ftp-connection/) installieren.
+
+:::
+
+
+Klicken Sie anschließend auf <code className="action">Bestätigen</code>.
+
+<img className="thumbnail" alt="modify_root_folder_confirm" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png" loading="lazy" />
+
+Sie erhalten das Ergebnis innerhalb weniger Minuten (denken Sie daran, Ihren Browser zu aktualisieren) wie in der folgenden Abbildung dargestellt:
+
+<img className="thumbnail" alt="multisite_modified" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png" loading="lazy" />
+
+Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
+
+Stellen Sie außerdem sicher, dass eine Datei namens **index.php** oder **index.html** in Ihrem Zielverzeichnis vorhanden ist.
+
+## Weiterführende Informationen <a name="“go-further“"></a>
+
+[Die häufigsten Fehler bei 1-Klick-Modulen beheben](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/)
+
+[Fehler “Seite nicht installiert” beheben](/guides/web-cloud/web-hosting/multisites-website-not-installed/)
+
+[Mehrere Websites auf einem Webhosting einrichten](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

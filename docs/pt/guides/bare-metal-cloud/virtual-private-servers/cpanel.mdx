@@ -1,0 +1,127 @@
+---
+title: Implementar o cPanel num VPS
+description: Saiba como instanciar um VPS com a aplicação cPanel pré-instalada
+lastUpdated: 2025-09-11
+---
+
+## Objetivo
+
+O cPanel é um painel de configuração que facilita a gestão dos alojamentos web. Torna as tarefas complexas mais acessíveis, incluindo para os novos utilizadores. Oferece uma vasta gama de funcionalidades como, por exemplo, para a gestão:
+
+- E-mails
+- Domínios
+- Bases de dados
+- Da segurança
+- etc.
+
+Graças a uma interface gráfica que permite a automatização dos parâmetros, o alojamento de websites é simplificado.
+
+**Saiba como implementar o cPanel com aplicações pré-instaladas num VPS.**
+
+## Requisitos
+
+- Ter uma oferta [VPS recente](https://www.ovhcloud.com/pt/vps/) com uma distribuição [compatível com cPanel](https://www.ovhcloud.com/pt/vps/os/).
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Caminho de navegação:** <code className="action">Bare Metal Cloud</code> > <code className="action">Servidores Privados Virtuais</code> > Selecione o seu VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+:::warning
+Esta funcionalidade está atualmente indisponível para os servidores privados virtuais nas [Local Zones](https://www.ovhcloud.com/pt/lp/vps-localzone/).
+
+:::
+
+
+## Instruções
+
+Se já dispõe de um VPS e deseja instalar o cPanel, pode reinstalar o VPS a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt) através de um [OS compatível com cPanel](https://www.ovhcloud.com/pt/vps/os/).
+
+:::warning
+Se reinstalar um VPS, todos os dados armazenados no VPS serão eliminados.
+
+:::
+
+
+Para instalar o seu servidor cPanel, encomende um VPS com a distribuição cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/cpanel-order.png" loading="lazy" />
+
+Quando o VPS estiver pronto, receberá um e-mail a dar-lhe as informações de acesso ao servidor cPanel:
+
+```
+ |    As suas aplicações:
+ |    Aplicação: cpanel
+ |    Pode conectar-se ao cPanel a partir de https://<nome_do_servidor_vps>:2087/<session_parameters>
+```
+
+### Primeira ligação
+
+Quando tiver recebido a mensagem de correio eletrónico com a hiperligação única, clique nesta hiperligação para concluir a configuração inicial. Se a ligação já expirou, ligue-se ao servidor em [SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/) e execute o comando `sudo whmlogin` para gerar uma nova ligação.
+
+O URL gerado pelo comando `sudo whmlogin` permite que se ligue sem informações de identificação (utilizador e palavra-passe) à sua interface WHM. WHM é uma camada de cPanel. Pode aceder ao cPanel após ter efetuado os seguintes passos.
+
+#### Etapa 1: ler e aceitar as condições de utilização do cPanel
+
+Leia e aceite os termos de utilização do cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/license_validation.png" loading="lazy" />
+
+#### Etapa 2: preencher os campos
+
+Indique os servidores de e-mail e nomes (nameservers) que deseja definir no servidor VPS.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/setup_config_cpanel.png" loading="lazy" />
+
+#### Etapa 3: definir a password root
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/change_root.png" loading="lazy" />
+
+Agora, pode ligar-se ao servidor em SSH utilizando o utilizador root com a palavra-passe que acabou de definir.
+
+### Criar uma conta cPanel a partir da interface WHM
+
+Depois de aceder à interface WHM, clique em <code className="action">Create a New Account</code> para criar uma conta cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/create_new_account.png" loading="lazy" />
+
+Preencha o formulário e valide para confirmar a criação da sua conta cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/create_new_account_form.png" loading="lazy" />
+
+No novo ecrã que se abrir, clique no botão <code className="action">Go to cPanel</code> à direita do ecrã.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/go_to_cpanel.png" loading="lazy" />
+
+Será redirecionado para a sua interface cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/manager_cpanel.png" loading="lazy" />
+
+Já pode utilizar o cPanel. Para obter mais informações sobre o cPanel, consulte a [documentação oficial](https://docs.cpanel.net/).
+
+:::info
+Na barra de navegação do browser, introduza estes URL para iniciar sessão no:
+
+- cPanel: https&#58;//&#60;IP_V4&#62;:2083/ (utilize os identificadores que acabaram de ser criados na interface WHM)
+- WHM: https&#58;//&#60;IP_V4&#62;:2087/ (utilize o nome de utilizador "root" e a palavra-passe recebida no e-mail de aquisição do serviço ou a palavra-passe SSH modificada na interface WHM)
+
+Encontre o seu endereço IPv4 no e-mail que recebeu no seguimento da encomenda do seu VPS com a distribuição cPanel.
+
+:::
+
+
+### Segurança do seu serviço
+
+Recomendamos que tome todas as medidas necessárias para proteger o seu WHM e o seu VPS. Para isso, recomendamos que leia [as recomendações da cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+
+Além disso, recomendamos que consulte o nosso manual para [proteger um VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps/), que utilize [as nossas soluções de backup](/guides/bare-metal-cloud/virtual-private-servers/overview/) e que configure o [Edge Network Firewall](/guides/bare-metal-cloud/dedicated-servers/firewall-network/).
+
+## Quer saber mais?
+
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

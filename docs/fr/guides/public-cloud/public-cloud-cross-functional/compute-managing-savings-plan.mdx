@@ -1,0 +1,199 @@
+---
+title: Comment gérer un Savings Plan
+excerpt: Découvrez comment créer un Savings Plan avec différents outils
+updated: 2025-04-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+import Api from '@components/Api';
+
+
+
+
+## Objectif
+
+Ce guide a pour objectif de fournir une méthode claire et détaillée pour la création et la mise à jour des Savings Plans pour vos ressources. Vous découvrirez comment gérer vos Savings Plans en utilisant l'espace client OVHcloud, l'API OVHcloud, ainsi que Terraform. En suivant ce guide, vous serez en mesure de :
+
+- Créer un Savings Plan pour vos ressources.
+- Modifier un Savings Plan.
+- Automatiser la gestion des Savings Plans via l'API OVHcloud ou Terraform pour une plus grande efficacité et flexibilité.
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mjllp_3rkOA?si=nsuEH33N4Q7xEHmS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Prérequis
+
+- Un [projet Public Cloud OVHcloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
+- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[API OVHcloud](/links/api) (créez vos identifiants en consultant [ce guide](/guides/manage-and-operate/api/first-steps)).
+- Être familier de l'utilisation de [Terraform](/guides/public-cloud/public-cloud-cross-functional/how-to-use-terraform) si vous souhaitez l'utiliser.
+- Connaitre les principes d'un [Savings Plan](/links/public-cloud/savings-plan)
+
+## En pratique
+
+Connectez-vous à l'[espace client OVHcloud](/links/manager) et rendez-vous dans la section `Public Cloud`. Après avoir sélectionné votre projet Public Cloud, cliquez sur `Savings Plans` dans la barre de navigation de gauche sous **Paramètres**.
+
+### Créer un Savings plan
+
+Vous pouvez créer votre Savings Plan pour le type de ressource voulue en suivant ces étapes :
+
+<Tabs>
+<Tab label="Via l'espace client OVHcloud">
+
+Cliquez sur le bouton `Créer un Savings Plan`.
+
+![Savings Plan menu](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_menu.png)
+
+Sélectionnez le type de ressource pour lequel le Savings Plan s'appliquera, définissez le modèle spécifique de ressource et indiquez le nombre de ressources concernées par ce plan.
+
+![Savings Plan service](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_service.png)
+
+Choisissez la durée de votre Savings Plan parmi les durées disponibles et donnez-lui un nom. 
+
+![Savings Plan duration name](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_duration_name.png)
+
+Lisez attentivement les termes et conditions, puis cochez la case pour confirmer leur acceptation. Une fois tous les paramètres configurés, cliquez sur le bouton `Créer un Savings Plan` pour finaliser la création.
+
+![Savings Plan terms/conditions and create](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_terms_and_creation.png)
+
+</Tab>
+<Tab label="Via Terraform">
+
+Pour créer un Savings plan, vous aurez besoin de 5 éléments minimum :
+
+- L'ID de votre projet Public Cloud
+- La flavor concernée par votre Savings Plan
+- La durée de votre Savings Plan (au format standard ISO 8601)
+- Le nombre de ressources concernées
+- Le nom de votre Savings Plan
+
+Dans notre exemple, nous allons créer un Savings Plan pour 10 instances de type **b3-8**, pour une durée de 1 mois. Ajoutez les lignes suivantes à un fichier nommé *savings_plan.tf* :
+
+```python
+# création d'un Savings Plan
+resource "ovh_savings_plan" "Savings_plan_simple_b3_8" {
+  service_name = "<public cloud project ID>"
+  flavor = "b3-8" # type de l'instance ou rancher/rancher_standard ou rancher_ovhcloud_edition
+  period = "P1M" # P obligatoire, chiffre pour la durée et M pour "mois", Y pour "year" ..
+  size = 10
+  display_name = "Savings_plan_simple_b3_8"
+  auto_renewal = true # facultatif, "true" pour activer.
+}
+```
+
+Vous pouvez créer votre Savings Plan en entrant la commande suivante dans votre console :
+
+```sh
+terraform apply
+```
+
+</Tab>
+</Tabs>
+
+### Modifier un Savings plan
+
+<Tabs>
+<Tab label="Via l'espace client OVHcloud">
+
+> [!info]
+>
+> Les options modifiables via l'espace client OVHcloud se limitent au **nom** et à **l'activation/désactivation** du renouvellement automatique du Savings Plan.
+
+![Savings Plan update menu](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_update_menu.png)
+
+Si vous souhaitez modifier le nom d'unn Savings Plan, cliquez sur le bouton `Modifier le nom`, modifiez-le puis cliquez sur `Comfirmer`.
+
+![Savings Plan update name](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_update_name.png)
+
+Si vous souhaitez activer/désactiver le renouvellement automatique de votre Savings Plan, cliquez sur le bouton `Activer/Désactiver le renouvellement automatique` puis sur le bouton `Activer` ou `Désactiver` selon votre cas.
+
+![Savings Plan update renewal](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_update_renewal.png)
+
+</Tab>
+<Tab label="Via l'API OVHcloud">
+
+Retrouvez d'abord l'id de votre service dans la liste de vos service qui s'obtient via l'appel suivant :
+
+<Api version="v1" section="/services" method="GET" route={"/services"} />
+
+Vous devez inscrire en paramètre, dans le champ **resourceName**, l'id de votre projet Public Cloud.
+
+Vous obtenez une liste contenant l'id de vos services comme suit :
+
+![Savings Plan services list](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_list_service.png)
+
+Vous pouvez vérifier si le service correspond au projet Public Cloud concerné via cette appel :
+
+<Api version="v1" section="/services" method="GET" route={"/services/\\{serviceId\\}"} />
+Le **serviceId** correspond à l'id récupéré via l'appel API précédent.
+
+Vous obtenez une liste contenant les détails de votre service comme ci-dessous. Vérifiez qu'il s'agit bien du bon projet grâce au champ `vars.value` :
+
+![Savings Plan details service list](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_list_service_details.png)
+
+Vous pouvez retrouver l'ID de votre Savings Plan dans la liste de vos Savings Plans qui s'obtient via l'appel suivant :
+
+<Api version="v1" section="/services" method="GET" route={"/services/\\{serviceId\\}/savingsPlans/subscribed"} />
+Le **serviceId** correspondant à l'id récupéré précédemment.
+
+Vous obtenez une liste de Savings Plans comme suit :
+
+![Savings Plan list](/images/guides/public-cloud/public-cloud-cross-functional/how-to-manage-savings-plan/savings_plan_list_svp.png)
+
+Cherchez ensuite le Savings Plan concerné dans la liste et copiez le champ **id**.
+
+<details>
+
+<summary>Modifier le nom d'un Savings Plan</summary>
+
+
+Pour modifier le nom d'un Savings plan, utilisez l'appel API suivant :
+
+<Api version="v1" section="/services" method="PUT" route={"/services/\\{serviceId\\}/savingsPlans/subscribed/\\{savingsPlanId\\}"} />
+
+Le **savingsPlanId** correspondant à l'id de votre Savings Plan copié précédemment.
+
+</details>
+
+<details>
+
+<summary>Activer/désactiver le renouvellement automatique d'un Savings Plan</summary>
+
+
+Pour **activer/désactiver** le renouvellement automatique du Savings Plan, utilisez l'appel API suivant :
+
+<Api version="v1" section="/services" method="POST" route={"/services/\\{serviceId\\}/savingsPlans/subscribed/\\{savingsPlanId\\}/changePeriodEndAction"} />
+
+</details>
+
+<details>
+
+<summary>Augmenter le nombre de ressources d'un Savings Plan</summary>
+
+
+Pour augmenter le nombre de ressources souscrites par votre Savings Plan, utilisez cet appel API :
+
+:::info
+
+Le nombre de ressources peut uniquement être augmenté.
+
+:::
+
+<Api version="v1" section="/services" method="POST" route={"/services/\\{serviceId\\}/savingsPlans/subscribed/\\{savingsPlanId\\}/changeSize"} />
+
+</details>
+
+</Tab>
+<Tab label="Via Terraform">
+
+Modifiez votre ressource dans le fichier Terraform *savings_plan.tf* précédemment créé.
+
+> [!info]
+>
+> A noter que seuls les champs **service_name**, **size** et **auto_renewal** sont modifiables. La valeur de **size** peut uniquement être augmentée.
+
+</Tab>
+</Tabs>
+
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

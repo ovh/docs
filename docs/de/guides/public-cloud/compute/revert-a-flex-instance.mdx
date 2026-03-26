@@ -1,0 +1,80 @@
+---
+title: Revertierung einer Flex-Instanz
+description: Erfahren Sie hier, wie Sie eine Flex-Instanz über OpenStack Horizon zurücksetzen können
+lastUpdated: 2024-07-17
+---
+
+:::info
+Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+
+:::
+
+
+## Ziel
+
+Eine Flex-Instanz beruht auf einer Single-Size-Disk (50GB), die einen schnelleren Prozess für Snapshots bietet. Das ermöglicht ein Wechseln auf ein höheres oder niedrigeres Modell mit festem Speicherplatz, während reguläre Instanzen nur auf ein höheres Modell skaliert werden können.
+
+Wenn sich Ihre Infrastruktur weiterentwickelt, müssen Sie unter Umständen den Speicherplatz Ihrer Instanz erhöhen. In diesem Fall kann eine Flex-Instanz auf ein klassisches Modell zurückgesetzt werden (Revertierung). Diese Aktion kann nur über das Horizon Interface durchgeführt werden.
+
+**Diese Anleitung erklärt, wie Sie eine Flex-Instanz über das OpenStack Horizon Interface zurücksetzen und ihre Größe verändern können.**
+
+## Voraussetzungen
+
+- Sie haben eine [Public Cloud Instanz](/guides/public-cloud/compute/public-cloud-first-steps#configuration/) mit der Flex-Option.
+- Sie haben Zugriff auf das [Horizon Interface](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/).
+
+## In der praktischen Anwendung
+
+:::warning
+- Wenn Sie von einer Flex-Instanz auf eine klassische Instanz mit mehr Ressourcen umsteigen, wird dies als Upgrade betrachtet. In diesem Fall wird Ihnen die Differenz in Rechnung gestellt. Am Ende Ihres Abrechnungszeitraums erhalten Sie zwei Rechnungen.
+
+- Wenn Sie von einer Flex-Instanz auf eine klassische Instanz mit weniger Ressourcen upgraden, gilt dies als Downgrade. In diesem Fall wird Ihnen nichts in Rechnung gestellt.
+
+- Wenn Sie von einer Flex-Instanz zu einer klassischen Instanz mit denselben Ressourcen wechseln, wird Ihnen nichts in Rechnung gestellt.
+
+:::
+
+
+Loggen Sie sich ins [Horizon Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.
+
+<img className="thumbnail" alt="Region selection" src="/images/public-cloud/compute/revert-a-flex-instance/region2021.png" loading="lazy" />
+
+Klicken Sie links im Menü auf <code className="action">Compute</code> und wählen Sie dann <code className="action">Instances</code> aus. Wählen Sie <code className="action">Resize Instance</code> im Drop-down-Menü rechts neben der betreffenden Instanz aus. 
+
+<img className="thumbnail" alt="Resize instance" src="/images/public-cloud/compute/revert-a-flex-instance/resizeinstance2021.png" loading="lazy" />
+
+**Wahl des Templates (*Flavor Choice*)** <a name="flavorchoice"></a>
+
+Dieser Abschnitt zeigt das aktuelle Template (*old flavor*) an und erlaubt es Ihnen, das neue Template (*new flavor*) für die Instanz auszuwählen.
+
+In diesem Beispiel ist der *flavor* "b2-15-flex". Sie können dann entweder auf "b2-15" zurücksetzen oder zu "b2-30" upgraden. Hier wird die Instanz auf das klassische Modell "b2-30" aktualisiert.
+
+<img className="thumbnail" alt="choose new flavor" src="/images/public-cloud/compute/revert-a-flex-instance/confirmflavor.png" loading="lazy" />
+
+:::warning
+- Sie können nicht von einem Linux-Modell auf ein Windows-Modell oder umgekehrt wechseln.
+
+- Die Flex-Option ist nicht für alle Modelle verfügbar.
+
+:::
+
+
+**Erweiterte Optionen (*Advanced Options*)**
+
+In diesem Bereich können Sie die Partitionierung der Disk (*Disk Partition*) und die Servergruppe (*Server Group*) einrichten.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/revert-a-flex-instance/resize_advanced.png" loading="lazy" />
+
+Wenn die Konfiguration abgeschlossen ist, klicken Sie auf <code className="action">Resize</code>.
+
+Mit dem Abschluss der Prozedur wird Ihre Instanz auf das ausgewählte Modell umgeschaltet. In diesem Fall wurde die Instanz auf ein klassisches Modell mit mehr Speicherplatz umgestellt.
+
+<img className="thumbnail" alt="Neuer Geschmack" src="/images/public-cloud/compute/revert-a-flex-instance/newflavor.png" loading="lazy" />
+
+Falls Sie wieder zu einem Flex-Modell wechseln möchten, können Sie dies tun, indem Sie die gleichen Schritte wie [oben](#flavorchoice) ausführen und ein Flex-Modell anstelle eines klassischen Modells auswählen. 
+
+Alternativ können Sie auch im OVHcloud Kundencenter [die Konfiguration der Instanz bearbeiten](/guides/public-cloud/compute/first-steps-with-public-cloud-instance#die-konfiguration-einer-instanz-bearbeiten/).
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,106 @@
+---
+title: Configure incoming connections of a Public Cloud Databases for Valkey service
+description: Find out how to configure your Valkey service to accept incoming connections
+lastUpdated: 2024-06-12
+---
+
+## Objective
+
+Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
+
+**This guide explains how to configure your Valkey instance to accept incoming connections.**
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/guides/public-cloud/public-cloud-databases/databases-01-order-control-panel/) can help you to meet this requirement)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Configure your Valkey instance to accept incoming connections
+
+Before making a connection, we need to verify that our Valkey instance is correctly configured.
+
+Click on <code className="action">Databases</code> in the left-hand navigation bar and select your Valkey instance.
+
+#### Step 1: Verify your user roles and password
+
+Select the <code className="action">Users</code> tab. Verify that you have a user with sufficient rights and a password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
+
+In our example, we will create a user called *redisUser* and rights for :
+
+- Keys:
+    - **\*** (for *allkeys*)
+- Commands:
+    - **+ping** (for the *ping* command)
+    - **+info** (for the *info* command)
+    - **+echo** (for the *echo* command)
+    - **+get** (for the *get* command)
+    - **+set** (for the *set* command)
+    - **+client** (for the *client* command)
+- Channels:
+    - **\*** (for *allchannels*)
+
+<img className="thumbnail" alt="User creation" src="/images/public-cloud/public-cloud-databases/redis-08-prepare-for-incoming-connections/redis_08_prepare_for_incoming_connections-2022032912263856.png" loading="lazy" />
+
+Once created or updated, the user has to be ready and with the "Enabled" status in the Control Panel.
+
+<img className="thumbnail" alt="User ready" src="/images/public-cloud/public-cloud-databases/redis-08-prepare-for-incoming-connections/redis_08_prepare_for_incoming_connections-20220329122758377.png" loading="lazy" />
+
+:::info
+Follow the [Commands Official Documentation](https://redis.io/commands/) to learn more.
+
+Follow this [guide](/guides/public-cloud/public-cloud-databases/redis-01-capabilities#users-and-roles/) to learn more about users and roles capabilities and limitations.
+
+:::
+
+
+#### Step 2: Authorise incoming connections from the service
+
+:::warning
+For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your database.
+
+:::
+
+
+In this step, select the <code className="action">Authorised IPs</code> tab. IP addresses must be authorised here before they can connect to your database.
+
+Clicking on <code className="action">Add an IP address or IP address block (CIDR)</code> opens a new window in which you can add single IP addresses or blocks to allow access to the database.
+
+<img className="thumbnail" alt="Add an IP" src="/images/public-cloud/public-cloud-databases/redis-08-prepare-for-incoming-connections/ip_authorize.png" loading="lazy" />
+
+You can edit and retract database access via the <code className="action">...</code> button in the IP table.
+
+:::info
+If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
+
+:::
+
+
+#### Collect required information
+
+Select the <code className="action">General information</code> tab to find the required login credentials in the `Login informations` section.
+
+![Login informations](/images/public-cloud/public-cloud-databases/redis-08-prepare-for-incoming-connections/redis_08_prepare_for_incoming_connections-20220329100705698.png)
+
+## Go further
+
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/redis) to find how to connect to your database with several languages.
+
+Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+

@@ -1,0 +1,850 @@
+---
+title: Configurer HYCU Backup
+description: Installation de la sauvegarde HYCU Backup sur un cluster Nutanix
+lastUpdated: 2025-05-14
+---
+
+
+
+## Objectif
+
+HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix. 
+
+**Apprenez à installer, configurer et utiliser HYCU sur un cluster Nutanix avec un stockage de type Object Storage fourni par OVHCloud**
+
+:::warning
+OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+
+Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+
+:::
+
+
+## Prérequis
+
+- Une licence [HYCU for OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/hycu/) valide dans votre compte OVHcloud (la première étape de ce guide vous détaille la procédure à suivre) ou une licence HYCU acquise depuis un fournisseur tiers.
+- Disposer d'un cluster Nutanix on OVHcloud dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté sur le cluster via Prism Central.
+- Avoir un projet Public Cloud avec un bucket de stockage de type High Performance Object Storage ainsi qu'un utilisateur ayant les droits en lecture et écriture sur ce bucket. Vous trouverez plus d'informations sur la création d'un projet Public Cloud et sur l’utilisation du service High Performance Object Storage sur les pages suivantes :
+    - [Création d'un projet Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/).
+    - [Débuter avec Object Storage](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/).
+    - [Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)](/guides/storage-and-backup/object-storage/s3-managing-object-lock/)
+- 60 Go de stockage, 8 Go de mémoire et 8 cœurs sur votre Cluster Nutanix pour l'Instance/Appliance HYCU.
+
+## En pratique
+
+### Présentation du contenu
+
+- [Commander une licence HYCU for OVHcloud](#license-order)
+    - [Activer la licence](#license-activation)
+    - [Régénérer une licence HYCU for OVHcloud](#license-renew)
+    - [Résilier un abonnement HYCU for OVHcloud (et sa licence associée)](#license-cancel)
+    - [Mettre à niveau une licence HYCU for OVHcloud](#license-upgrade)
+- [Installer et configurer HYCU](#installation)
+    - [Ajouter l'image d'installation d'HYCU](#adding-image)
+    - [Configurer l'adresse IP pour ISCSI](#adding-ip)
+    - [Ajouter un compte utilisateur dans Prism Element pour HYCU](#adding-user)
+    - [Créer la machine virtuelle pour HYCU](#create-vm)
+    - [Configurer la redirection de l'URL HYCU vers le réseau public](#url-redirection)
+    - [Configurer HYCU](#hycu-configuration)
+- [Mise à jour d'HYCU](#hycu-update)
+    - [Ajouter les sources d'une nouvelle version d'HYCU](#adding-new-sources)
+    - [Lancer la mise à jour à partir d'HYCU](#update-launch)
+- [Configurer la sauvegarde dans HYCU](#backup-configuration)
+    - [Paramétrer les mots de passe de connexion aux machines virtuelles](#setting-passwords)
+    - [Créer des stratégies de sauvegardes](#backup-strategies)
+    - [Affecter des stratégies de sauvegardes](#backup-strategies-assignment)
+- [Contrôler l'état des sauvegardes](#backup-check)
+- [Restaurer à partir d'HYCU](#restoring)
+    - [Restaurer une machine virtuelle](#restoring-vm)
+    - [Récupérer un fichier](#restoring-file)
+    - [Restaurer une application](#restoring-app)
+
+### Commander une licence HYCU for OVHcloud <a name="license-order"></a>
+
+Nous vous proposons différents packs de licences selon le nombre de machines virtuelles (VM) utilisées par vos charges de travail Nutanix.
+
+:::tip[Success]
+Retrouvez plus d'informations sur notre page [HYCU for OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/hycu/).
+
+:::
+
+
+:::info
+**Vous avez déjà une licence HYCU ?**<br/>
+Poursuivez la lecture de ce guide à l'étape « [Installer et configurer HYCU](#installation) ».
+
+:::
+
+
+Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous successivement dans <code className="action">Hosted Private Cloud</code> et <code className="action">Stockage et sauvegarde</code>.
+
+Cliquez sur <code className="action">HYCU</code> puis sur <code className="action">Toutes mes licenses</code>. 
+
+<img className="thumbnail" alt="Commander une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-order.png" loading="lazy" />
+
+Cliquez alors sur le bouton <code className="action">Commencer</code> pour choisir et commander un pack HYCU for OVHcloud.
+
+Une fois votre commande effectuée, vous recevrez un e-mail de confirmation et votre souscription apparaîtra dans le tableau de bord <code className="action">Toutes mes licenses</code>.
+
+Cliquez sur votre licence pour procéder à son activation.
+
+#### Activer la licence <a name="license-activation"></a>
+
+:::warning
+Cette étape nécessite d'avoir préalablement **installé et configuré le logiciel HYCU sur votre cluster Nutanix**.<br/>
+Si ce n'est pas déjà le cas, poursuivez la lecture de ce guide à l'étape « [Installer et configurer HYCU](#installation) » avant de suivre l'étape d'activation de la licence HYCU ci-dessous.
+
+:::
+
+
+<details>
+
+<summary>Activer la licence HYCU</summary>
+
+
+Lorsque vous cliquez sur une licence dans votre tableau de bord, un menu vous permet de renommer, d'activer, de renouveler ou de résilier votre licence HYCU for OVHcloud.
+
+Cliquez sur le bouton <code className="action">Activer la licence</code> (dans le cadre `Raccourcis`).
+
+<img className="thumbnail" alt="Commander une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-activation-01.png" loading="lazy" />
+
+Une fenêtre s'affiche pour transférer le fichier de demande de licence.
+
+<img className="thumbnail" alt="Activer une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-activation-02.png" loading="lazy" />
+
+Pour obtenir votre fichier de demande de licence, connectez-vous à votre instance/appliance Hybrid Cloud HYCU et accédez au menu des licences (<code className="action">Licensing</code>).
+
+<img className="thumbnail" alt="Activer une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-activation-03.png" loading="lazy" />
+
+Cliquez sur <code className="action">Download Request</code> et téléchargez le fichier.
+
+<img className="thumbnail" alt="Activer une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-activation-04.png" loading="lazy" />
+
+De retour dans l'espace client OVHcloud, glissez-déposez le fichier téléchargé dans la fenêtre restée ouverte puis cliquez sur <code className="action">Activer</code>.
+
+<img className="thumbnail" alt="Activer une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-activation-05.png" loading="lazy" />
+
+Après vérification, le statut de votre licence passera à `Active`.
+
+<img className="thumbnail" alt="Activer une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-activation-06.png" loading="lazy" />
+
+Une fois la licence active, cliquez sur le bouton <code className="action">Télécharger la licence</code> (en bas du cadre `Informations générales`).
+
+Retournez dans le menu <code className="action">Licensing</code> de votre instance/appliance Hybrid Cloud HYCU et transférez la licence que vous venez de télécharger depuis l'espace client OVHcloud.
+
+<img className="thumbnail" alt="Activer une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-activation-07.png" loading="lazy" />
+
+Une fenêtre vous indiquera alors que votre licence est validée.
+
+<img className="thumbnail" alt="Activer une licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-activation-08.png" loading="lazy" />
+
+</details>
+
+
+#### Régénérer une licence HYCU for OVHcloud <a name="license-renew"></a>
+
+Si votre configuration technique HYCU a changé, vous devrez effectuer une nouvelle demande afin d'obtenir un nouveau fichier de licence compatible avec votre contrôleur HYCU.
+
+<details>
+
+<summary>Régénérer une licence HYCU for OVHcloud</summary>
+
+
+Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous successivement dans <code className="action">Hosted Private Cloud</code> et <code className="action">Stockage et sauvegarde</code>. Cliquez sur <code className="action">HYCU</code>.
+
+Une fois dans votre tableau de bord de licences, cliquez sur le bouton <code className="action">Régénérer la licence</code> (dans le cadre `Raccourcis`).
+
+<img className="thumbnail" alt="Régénérer licence HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-renew.png" loading="lazy" />
+
+Comme précédemment pour l'activation de votre licence, téléchargez et transférez votre demande de licence.
+
+Suivez ensuite le même processus que pour l'activation de la licence :
+
+- Téléchargez la clé de licence.
+- Transférez la clé de licence sur votre instance/appliance Hybrid Cloud.
+
+</details>
+
+
+#### Résilier un abonnement HYCU for OVHcloud (et sa licence associée) <a name="license-cancel"></a>
+
+<details>
+
+<summary>Comment résilier un abonnement HYCU for OVHcloud</summary>
+
+
+Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous successivement dans <code className="action">Hosted Private Cloud</code> et <code className="action">Stockage et sauvegarde</code>. Cliquez sur <code className="action">HYCU</code>.
+
+Une fois dans votre tableau de bord de licences, cliquez sur <code className="action">Résilier la licence</code> dans le cadre `Abonnement`.
+
+<img className="thumbnail" alt="Résilier abonnement HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-cancel-01.png" loading="lazy" />
+
+Confirmez ensuite la résilitation en saisissant `TERMINATE`dans le cadre prévu à cet effet, puis cliquez sur <code className="action">Résilier</code>.
+
+<img className="thumbnail" alt="Résilier abonnement HYCU" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/hycu-for-ovhcloud-license-cancel-02.png" loading="lazy" />
+
+</details>
+
+
+#### Mettre à niveau une licence HYCU for OVHcloud <a name="license-upgrade"></a>
+
+Pour mettre à niveau votre offre, vous devez d'abord résilier votre abonnement HYCU for OVHcloud (voir ci-dessus) puis [commander un nouvel abonnement](https://www.ovhcloud.com/fr/storage-solutions/hycu/) avec le pack de machines virtuelles nécessaire.
+
+### Installer et configurer HYCU <a name="installation"></a>
+
+Connectez-vous à **Prism Central**.
+
+Pour plus d'informations sur la connexion au cluster, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
+
+Via le menu principal, cliquez sur <code className="action">Images</code> depuis le menu <code className="action">Compute & Storage</code>
+
+<img className="thumbnail" alt="Add Image HYCU 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-addimagehycu01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Add Image</code>.
+
+<img className="thumbnail" alt="Add Image HYCU 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-addimagehycu02.png" loading="lazy" />
+
+Choisissez <code className="action">URL</code> comme type de source, saisissez l'URL `https://download.hycu.com/ec/v4.X.X/hycu-4.X.X-XXXX.qcow2` dans **Enter Image URL** et cliquez sur <code className="action">Upload file</code>. 
+
+:::info
+L'URL utilisée pour le téléchargement correspond à la dernière version disponible sur le site d'HYCU.
+
+:::
+
+
+<img className="thumbnail" alt="Add Image HYCU 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-addimagehycu03.png" loading="lazy" />
+
+Retirez l'extension **.qcow2** derrière le nom et laissez `hycu-4.X.X-XXXX`. Saisissez une description et cliquez sur <code className="action">Next</code>.
+
+:::warning
+Il est important d'enlever l'extension dans le nom afin de faciliter le processus de configuration d'HYCU.
+
+:::
+
+
+<img className="thumbnail" alt="Add Image HYCU 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-addimagehycu04.png" loading="lazy" />
+
+Cliquez sur <code className="action">Save</code> pour importer l'image.
+
+<img className="thumbnail" alt="Add Image HYCU 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-addimagehycu05.png" loading="lazy" />
+
+Sur le tableau de bord de **Prism Central**, cliquez sur le <code className="action">nom du cluster</code> dans la section **Cluster Quick Access** afin de vous rendre sur **Prism Element**.
+
+<img className="thumbnail" alt="Configure ISCSI 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-configureiscsi01.png" loading="lazy" />
+
+#### Configurer l'adresse IP pour ISCSI <a name="adding-ip"></a>
+
+Allez dans les paramètres en cliquant sur l'icône représentant un <code className="action">engrenage</code>.
+
+<img className="thumbnail" alt="Configure ISCSI 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-configureiscsi02.png" loading="lazy" />
+
+Cliquez sur <code className="action">Cluster Details</code>.
+
+<img className="thumbnail" alt="Configure ISCSI 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-configureiscsi03.png" loading="lazy" />
+
+Saisissez <code className="action">une adresse IP locale non utilisée</code> dans le champ **Data Services IP** et cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Configure ISCSI 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-configureiscsi04b.png" loading="lazy" />
+
+Vérifiez votre choix et cliquez sur <code className="action">Yes</code>.
+
+<img className="thumbnail" alt="Configure ISCSI 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-configureiscsi05.png" loading="lazy" />
+
+L'adresse IP est affichée dans **virtual IP**.
+
+<img className="thumbnail" alt="Configure ISCSI 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/00-configureiscsi06.png" loading="lazy" />
+
+#### Ajouter un compte utilisateur dans **Prism Element** pour HYCU <a name="adding-user"></a>
+
+Cliquez sur l'engrenage pour aller dans la configuration de **Prism Element**
+
+<img className="thumbnail" alt="Add local user to Prism Element 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/01-adduserprismelement01.png" loading="lazy" />
+
+Faites défiler le menu et cliquez sur <code className="action">Local User Management</code>.
+
+<img className="thumbnail" alt="Add local user to Prism Element 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/01-adduserprismelement02.png" loading="lazy" />
+
+Cliquez sur <code className="action">New User</code>.
+
+<img className="thumbnail" alt="Add local user to Prism Element 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/01-adduserprismelement03.png" loading="lazy" />
+
+Saisissez ces valeurs :
+
+- **Username** : `svc_hycu`
+- **First Name** : `HYCU`
+- **Last Name** : `HYCU`
+- **Email** : `hycu@example.com`
+- **Password** : `mot de passe`
+
+:::info
+Ces informations sont fournies à titre d'exemple, l'adresse de messagerie est obligatoire mais n'est pas utilisée.
+
+:::
+
+
+Cochez la case <code className="action">Cluster Admin</code> et cliquez sur <code className="action">Save</code>
+
+<img className="thumbnail" alt="Add local user to Prism Element 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/01-adduserprismelement04.png" loading="lazy" />
+
+L'utilisateur est alors créé.
+
+<img className="thumbnail" alt="Add local user to Prism Element 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/01-adduserprismelement05.png" loading="lazy" />
+
+#### Créer la machine virtuelle pour HYCU <a name="create-vm"></a>
+
+Allez dans **Prism Central**.
+
+Via le menu principal, cliquez sur <code className="action">VMs</code> depuis le menu <code className="action">Compute & Storage</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Create VM</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm02.png" loading="lazy" />
+
+Nommez la machine virtuelle et modifiez les propriétés de la machine virtuelle avec ces paramètres:
+
+- **CPU** : `4 vCPU`
+- **Cores Per CPU** : `2 Cores`
+- **Memory** : `8GB`
+
+Cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm03.png" loading="lazy" />
+
+Cliquez sur <code className="action">Attach Disk</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm04.png" loading="lazy" />
+
+Saisissez ces informations :
+
+- **Type** : `Disk`
+- **Operation** : `Clone from Image`
+- **Image** : `hycu-4.X.X-XXXX`
+
+Cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm05.png" loading="lazy" />
+
+Cliquez sur <code className="action">Attach Disk</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm06.png" loading="lazy" />
+
+Choisissez ces options :
+
+- **Type** : `Disk`
+- **Operation** : `Allocate on Storage Container`
+- **Image** : `default-container`
+- **Capacity** : `32Gib`
+
+Cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm07.png" loading="lazy" />
+
+Cliquez sur <code className="action">Attach to Subnet</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm08.png" loading="lazy" />
+
+Sélectionnez le réseau <code className="action">infra</code> dans le menu déroulant **Subnet** et <code className="action">Connected</code> dans le menu déroulant **Network Connection State**. Cliquez ensuite sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm09.png" loading="lazy" />
+
+Cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm10.png" loading="lazy" />
+
+Créez un fichier **yaml** en modifiant ces valeurs :
+
+- **&lt; Adresse IP >** : Adresse IP locale de la machine virtuelle avec le masque de sous-réseau sous la forme XX.XX.XX.XX/XX. 
+- **&lt; GATEWAY >** : Passerelle locale de la machine virtuelle pour aller sur Internet.
+- **&lt; DNS >** : DNS utilisé sur Internet.
+
+```yaml
+#cloud-config
+bootcmd:
+- /opt/grizzly/bin/cloud_init_setup.sh hycubc < Adresse IP > < GATEWAY >  < DNS > "hycu.local,ntnx.local"
+```
+
+Modifiez les options de **Guest Customization** en sélectionnant <code className="action">Cloud-init (Linux)</code> dans le menu déroulant **Script Type** et <code className="action">Custom Script</code> dans le menu déroulant **Configuration Method**.
+
+Copiez le contenu du script yaml et collez-le à l'emplacement réservé au-dessous de **Clear Script**. Cliquez ensuite sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm11.png" loading="lazy" />
+
+Cliquez sur <code className="action">Create VM</code>.
+
+<img className="thumbnail" alt="Create HYCUVM 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm12.png" loading="lazy" />
+
+Sélectionnez la machine virtuelle créée en utilisant la <code className="action">case à cocher</code> à droite de la machine virtuelle.
+
+<img className="thumbnail" alt="Create HYCUVM 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm13.png" loading="lazy" />
+
+Cliquez sur <code className="action">Power On</code> dans le menu `Actions`.
+
+<img className="thumbnail" alt="Create HYCUVM 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm14.png" loading="lazy" />.
+
+La machine virtuelle est démarrée et possède l'adresse IP définie dans **cloud-init**.
+
+<img className="thumbnail" alt="Create HYCUVM 15" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/02-createhycuvm15.png" loading="lazy" />
+
+#### Configurer la redirection de l'URL HYCU vers le réseau public <a name="url-redirection"></a>
+
+Dans cette section, nous allons configurer une redirection pour que vous puissiez configurer HYCU en utilisant l’interface web de l’extérieur de votre cluster.
+
+Depuis votre espace client OVHcloud, sélectionnez <code className="action">Bare Metal Cloud</code> puis cliquez sur votre <code className="action">Load Balancer</code> dans la barre de menu à gauche.
+
+Dans l'onglet <code className="action">Fermes de serveurs</code>, cliquez sur <code className="action">Ajouter une ferme de serveurs</code>.
+
+<img className="thumbnail" alt="Configure Load Balancer 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer01.png" loading="lazy" />
+
+Nommez votre ferme de serveurs puis selectionnez <code className="action">TCP</code> et saisissez ces informations
+
+- **Port** : `8443`
+- **Datacenter** : `ALL`
+- **Réseau privé** : `nutanix`
+
+Cliquez sur <code className="action">Ajouter</code> pour valider la création de la ferme de serveurs.
+
+<img className="thumbnail" alt="Configure Load Balancer 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer02.png" loading="lazy" />
+
+Cliquez sur <code className="action">Ajouter un serveur</code>
+
+<img className="thumbnail" alt="Configure Load Balancer 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer03.png" loading="lazy" />
+
+Saisissez ces valeurs :
+
+- **Name (optional)** : `VM-HYCU`
+- **Adresse IPv4** : `addresseiphycu`
+- **Port** : `8443`
+
+Cliquez sur <code className="action">Ajouter</code> pour valider la création du cluster.
+
+<img className="thumbnail" alt="Configure Load Balancer 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer04.png" loading="lazy" />
+
+Cliquez ensuite sur l'onglet <code className="action">Frontends</code> et sur <code className="action">Ajouter un frontend</code>.
+
+<img className="thumbnail" alt="Configure Load Balancer 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer05.png" loading="lazy" />
+
+Nommez votre frontend, choisissez le protocole <code className="action">TCP</code> et modifiez ces valeurs :
+
+- **Port** : `8443`
+- **Datacenter** : `ALL`
+- **Ferme par défaut** : `HYCU (TCP)`
+
+Cliquez sur <code className="action">Ajouter</code>.
+
+<img className="thumbnail" alt="Configure Load Balancer 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer06.png" loading="lazy" />
+
+Cliquez sur <code className="action">Appliquer la configuration</code>.
+
+<img className="thumbnail" alt="Configure Load Balancer 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer07.png" loading="lazy" />
+
+Sélectionnez le <code className="action">Datacenter</code> et cliquez sur <code className="action">Appliquer la configuration</code>.
+
+<img className="thumbnail" alt="Configure Load Balancer 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer08.png" loading="lazy" />
+
+Dans l'onglet <code className="action">Tâches</code>, vous pourrez suivre l'avancement de l'application des changements.
+
+<img className="thumbnail" alt="Configure Load Balancer 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03a-configureloadbalancer09.png" loading="lazy" />
+
+Pour plus d'informations concernant le Load Balancer OVHcloud, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
+
+#### Configurer HYCU <a name="hycu-configuration"></a>
+
+Connectez-vous avec un navigateur web à l'interface d'administration de HYCU qui doit avoir cette forme **https://fqdnclusternutanix:8443**. La variable `fqdn` correspond à l'URL fournie lors de la création du cluster Nutanix.
+
+Saisissez le mot de passe par défaut et cliquez sur <code className="action">Sign In</code>.
+
+<img className="thumbnail" alt="Configure HYCU 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu01.png" loading="lazy" />
+
+Changez le mot de passe de connexion pour plus de sécurité.
+
+Cliquez sur <code className="action">Change Password</code> dans le menu <code className="action">admin</code> en haut à droite de l'interface.
+
+<img className="thumbnail" alt="Configure HYCU 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu02.png" loading="lazy" />
+
+Saisissez le mot de passe par défaut dans le champ **OLD PASSWORD**, le nouveau mot de passe dans les champs **PASSWORD** et **CONFIRM PASSWORD**.
+
+Cliquez ensuite sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Configure HYCU 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu03.png" loading="lazy" />
+
+Nous allons connecter HYCU au cluster Nutanix.
+
+Cliquez sur l'icône <code className="action">Administration</code> en forme d'engrenage en haut à droite et choisissez <code className="action">Sources</code>
+
+<img className="thumbnail" alt="Configure HYCU 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu04.png" loading="lazy" />
+
+Saisissez les informations concernant **Prism Element** :
+
+- **URL** : `https://url_prism_element_local:9440`
+- **USERNAME** : `utilisateur Prism Element`
+- **PASSWORD** : `mot de passe de l'utilisateur Prism Element`
+
+Cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Configure HYCU 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu05.png" loading="lazy" />
+
+Saisissez ces informations concernant **Prism Central** :
+
+- **URL** : `https://url_prism_central_local:9440`
+- **USERNAME** : `utilisateur de Prism Central`
+- **PASSWORD** : `mot de passe de Prism Central`
+
+Cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Configure HYCU 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu06.png" loading="lazy" />
+
+L'information `VALIDATION SUCCESSFUL` apparaît pour signifier que les informations saisies sont correctes, cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Configure HYCU 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu07.png" loading="lazy" />
+
+Cliquez sur <code className="action">Close</code>.
+
+<img className="thumbnail" alt="Configure HYCU 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu08.png" loading="lazy" />
+
+Sélectionnez <code className="action">Targets</code> dans le menu à gauche et cliquez sur <code className="action">+ Add</code> en haut à droite de l'interface.
+
+<img className="thumbnail" alt="Configure HYCU 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu09.png" loading="lazy" />
+
+Saisissez les paramètres de configuration et les clés d’authentification de votre utilisateur Object Storage ayant les droits d’accès en lecture/écriture au bucket Object Storage utilisé comme expliqué ci-dessous :
+
+- **Name** : Nom
+- **Size** : Taille du stockage
+- **Type** : `AWS S3/Compatible`
+
+:::warning
+Le service **High Performance Object Storage** d'OVHcloud n'a pas de limites de stockage et est facturé à l'utilisation .
+Dans la configuration du logiciel HYCU, il est nécessaire de fixer une taille comme dans l'exemple ci-dessous. Vous pouvez bien sûr choisir une autre valeur.
+
+:::
+
+
+Activez <code className="action">ENABLE COMPRESSION</code> et faites défilez la fenêtre avec la <code className="action">barre de défilement</code>. 
+
+<img className="thumbnail" alt="Configure HYCU 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu10.png" loading="lazy" />.
+
+Finalisez la saisie des informations :
+
+- SERVICE ENDPOINT: `URL Object Storage`
+- BUCKET NAME: `Nom du bucket`
+- ACCESS KEY ID: `Clé d'accès de l'utilisateur Object Storage`
+- SECRET ACCESS KEY `Clé secrète de l'utilisateur Object Storage`
+
+Activez <code className="action">TARGET ENCRYPTION</code> et cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Configure HYCU 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu11.png" loading="lazy" />.
+
+La cible est activée pour les sauvegardes du cluster Nutanix.
+
+<img className="thumbnail" alt="Configure HYCU 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/03-configurehycu12.png" loading="lazy" />.
+
+### Mise à jour d'HYCU <a name="hycu-update"></a>
+
+HYCU fournit régulièrement des mises à jour dont nous détaillons le processus ci-dessous.
+
+#### Ajouter les sources d'une nouvelle version d'HYCU <a name="adding-new-sources"></a>
+
+Via le menu principal de **Prism Central**, cliquez sur <code className="action">Images</code> depuis le menu <code className="action">Compute & Storage</code>.
+
+<img className="thumbnail" alt="Add Image HYCU for update 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/04-addimageforupdate01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Add Image</code>.
+
+<img className="thumbnail" alt="Add Image HYCU for update 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/04-addimageforupdate02.png" loading="lazy" />
+
+Sélectionnez <code className="action">URL</code>. 
+
+Saisissez l'URL de l'image qcow2 de la dernière version d'HYCU, tel que : 
+
+- `https://download.hycu.com/ec/v4.X.X/hotfixes/4.X.X-XXXX/hycu-4.X.X-XXXX.qcow2`
+
+:::info
+L'URL utilisée pour le téléchargement correspond à la dernière version disponible sur le site d'HYCU. 
+
+:::
+
+
+Cliquez sur <code className="action">Upload file</code>.
+
+<img className="thumbnail" alt="Add Image HYCU for update 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/04-addimageforupdate03.png" loading="lazy" />
+
+Retirez l'extension **.qcow2** derrière le nom `hycu-'4.X.X-XXXX`, saisissez une description et cliquez sur <code className="action">Next</code>.
+
+:::warning
+Il est important de retirer l'extension dans le nom afin de faciliter le processus de mise à jour d'HYCU.
+
+:::
+
+
+<img className="thumbnail" alt="Add Image HYCU for update 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/04-addimageforupdate04.png" loading="lazy" />
+
+Cliquez sur <code className="action">Save</code> pour importer l'image. 
+
+<img className="thumbnail" alt="Add Image HYCU for update 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/04-addimageforupdate05.png" loading="lazy" />
+
+#### Lancer la mise à jour à partir d'HYCU <a name="update-launch"></a>
+
+Connectez-vous via l'URL fournie lors de la création du cluster Nutanix en remplaçant le port **https://fqdnclusternutanix:8443**.
+
+Rendez-vous dans la configuration d'HYCU en cliquant sur l'icône <code className="action">Administration</code> en forme d'engrenage et choisissez <code className="action">Power Options</code>.
+
+<img className="thumbnail" alt="Before Update 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/05-beforeupdate01.png" loading="lazy" />
+
+Sélectionnez <code className="action">Suspend All</code>, cochez <code className="action">AUTO RESUME AFTER</code> et laissez le champ **Hours** à<code className="action">1</code> puis cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Before Update 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/05-beforeupdate02.png" loading="lazy" />
+
+Cliquez sur <code className="action">Software Upgrade</code> depuis le menu <code className="action">Administration</code> en forme d'engrenage. 
+
+<img className="thumbnail" alt="Update 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/06-updatehycu01.png" loading="lazy" />
+
+Choisissez la dernière version dans le menu déroulant **AVAILABLE VERSIONS** et cliquez sur <code className="action">Software Upgrade</code>.
+
+<img className="thumbnail" alt="Update HYCU 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/06-updatehycu02.png" loading="lazy" />
+
+Cliquez sur <code className="action">Yes</code> pour lancer le processus de mise à jour.
+
+<img className="thumbnail" alt="Update HYCU 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/06-updatehycu03.png" loading="lazy" />
+
+Une copie de sauvegarde est effectuée lors du processus de mise à jour pour pouvoir revenir en arrière en cas de problèmes.
+
+<img className="thumbnail" alt="Update HYCU 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/06-updatehycu04.png" loading="lazy" />
+
+Connectez-vous à l'interface d'administration d'HYCU. 
+
+Cliquez sur l'icône en forme d'engrenage et cliquez sur <code className="action">Power Options</code>.
+
+<img className="thumbnail" alt="After Update 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/07-afterupdate01.png" loading="lazy" />
+
+Décochez <code className="action">Suspend All</code> et cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="After Update 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/07-afterupdate02.png" loading="lazy" />
+
+### Configurer la sauvegarde dans HYCU <a name="backup-configuration"></a>
+
+#### Paramétrer les mots de passe de connexion aux machines virtuelles <a name="setting-passwords"></a>
+
+Les mots de passe de connexion aux machines virtuelles permettent la sauvegarde des applications comme une base Microsoft SQL ou un serveur Exchange.
+
+Connectez-vous via le menu <code className="action">Virtual Machines</code> à gauche et cliquez sur l'icône <code className="action">Credentials</code> en forme de clé en haut à droite de l'interface.
+
+<img className="thumbnail" alt="Add credential 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addcredential01.png" loading="lazy" />
+
+Cliquez sur le signe <code className="action">+</code>.
+
+<img className="thumbnail" alt="Add credential 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addcredential02.png" loading="lazy" />
+
+Saisissez ces valeurs :
+
+- **NAME** : nom du stockage de mot de passe
+- **PROTOCOL** : `AUTOMATIC`
+- **USERNAME** : compte utilisateur de la machine virtuelle
+- **PASSWORD** : mot de passe
+
+Cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Add credential 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addcredential03.png" loading="lazy" />
+
+Cliquez sur le signe <code className="action">+</code> pour ajouter un autre compte.
+
+<img className="thumbnail" alt="Add credential 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addcredential04.png" loading="lazy" />
+
+Saisissez ces valeurs :
+
+- **NAME** : nom du stockage de mot de passe
+- **PROTOCOL** : `AUTOMATIC`
+- **USERNAME** : compte utilisateur de la machine virtuelle
+- **PASSWORD** : mot de passe
+
+Cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Add credential 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addcredential05.png" loading="lazy" />
+
+Cliquez sur <code className="action">Close</code>
+
+<img className="thumbnail" alt="Add credential 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addcredential06.png" loading="lazy" />
+
+Sélectionnez les machines virtuelles qui vont utiliser un mot de passe en cochant la case à droite de la machine virtuelle puis cliquez sur l'icône <code className="action">credentials</code> en forme de clé.
+
+<img className="thumbnail" alt="Add vm to credential 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addvmtocredential01.png" loading="lazy" />
+
+Sélectionnez le mot de passe à utiliser et cliquez sur <code className="action">Assign</code>.
+
+<img className="thumbnail" alt="Add vm to credential 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addvmtocredential02.png" loading="lazy" />
+
+Sélectionnez une autre machine virtuelle qui va utiliser un mot de passe en cochant la case  à droite de la machine virtuelle puis cliquez sur l'icône <code className="action">credentials</code> en forme de clé.
+
+<img className="thumbnail" alt="Add vm to credential 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addvmtocredential03.png" loading="lazy" />
+
+Sélectionnez le mot de passe à utiliser et cliquez sur <code className="action">Assign</code>.
+
+<img className="thumbnail" alt="Add vm to credential 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/08-addvmtocredential04.png" loading="lazy" />
+
+#### Créer des stratégies de sauvegardes <a name="backup-strategies"></a>
+
+Allez dans le menu <code className="action">policies</code> à gauche et cliquez en haut à droite sur l'icône avec le signe <code className="action">+</code>.
+
+<img className="thumbnail" alt="Create Policy " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/09-createpolicy01.png" loading="lazy" />
+
+Saisissez ces informations :
+
+- **NAME** : `HYCU VM`
+- **BACKUP EVERY** : `4 hours`
+- **BACKUP THRESHOLD** : `42`
+
+Laissez l'option <code className="action">BACKUP</code> cochée et utilisez la barre de défilement à droite.
+
+<img className="thumbnail" alt="Create Policy for HYCU 01 " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/09-createpolicyforhycuvm01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Create Policy for HYCU 02 " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/09-createpolicyforhycuvm02.png" loading="lazy" />
+
+Cette stratégie est créée pour la machine virtuelle HYCU. 
+
+Dans le menu `policies`, cliquez en haut à droite sur l'icône avec le signe <code className="action">+</code>.
+
+<img className="thumbnail" alt="Create Policy " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/09-createpolicy01.png" loading="lazy" />
+
+Définissez le nom de la stratégie <code className="action">BACKUP to Object Storage and local SNAPSHOTS</code> dans le champ **NAME**.
+
+Cochez l'option <code className="action">FAST RESTORE</code>, laissez l'option <code className="action">BACKUP</code> cochée.
+
+Modifiez les options de sauvegardes dans  **Backup** puis modifiez la valeur **BACKUP THREESHOLD** à <code className="action">25</code>. Utilisez ensuite la <code className="action">barre de défilement</code> à droite.
+
+<img className="thumbnail" alt="Create Policy for General Usage 01 " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/10-createpolicyforgeneralusage01.png" loading="lazy" />
+
+Modifiez l'option **Fast restore** avec vos paramètres et cliquez sur <code className="action">Save</code>
+
+<img className="thumbnail" alt="Create Policy for General Usage 02 " src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/10-createpolicyforgeneralusage02.png" loading="lazy" />
+
+Cette stratégie fait une sauvegarde sur le stockage Object Storage d'OVHcloud et aussi des **snapshots** à l'intérieur du cluster Nutanix, ce qui permet une plus grande rapidité de restauration.
+
+#### Affecter des stratégies de sauvegardes <a name="backup-strategies-assignment"></a>
+
+Sélectionnez toutes les machines virtuelles via la case à cocher à coté de **NAME**, puis cliquez sur l'icône <code className="action">Policies</code> en forme de bouclier en haut à droite pour affecter une stratégie à toutes les machines virtuelles.
+
+<img className="thumbnail" alt="Exclude ALL VM for BACKUP" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/10-excludeallvmfrombackup01.png" loading="lazy" />
+
+Choisissez la stratégie <code className="action">Exclude</code> et cliquez sur <code className="action">Assign</code>.
+
+<img className="thumbnail" alt="Exclude ALL VM for BACKUP" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/10-excludeallvmfrombackup02.png" loading="lazy" />
+
+Sélectionnez la machine virtuelle HYCU en sélectionnant la case à cocher à coté de la machine virtuelle HYCU, puis cliquez sur l'icône <code className="action">Policies</code> pour affecter une stratégie à cette machine virtuelle.
+
+<img className="thumbnail" alt="Affect policy to HYCU VM 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/11-addhycuvmtopolicy01.png" loading="lazy" />
+
+Choisissez la stratégie <code className="action">HYCU VM</code> et cliquez sur <code className="action">Assign</code>.
+
+<img className="thumbnail" alt="Affect policy to HYCU VM 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/11-addhycuvmtopolicy02.png" loading="lazy" />
+
+Sélectionnez quatre machines virtuelles puis cliquez sur l'icône <code className="action">Policies</code> pour affecter une stratégie.
+
+<img className="thumbnail" alt="Affect policy to HYCU VM 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/11-addsomevmtopolicy01.png" loading="lazy" />
+
+Choisissez la stratégie <code className="action">BACKUP to Object Storage and local SNAPSHOTS</code> et cliquez sur <code className="action">Assign</code>.
+
+<img className="thumbnail" alt="Affect policy to HYCU VM 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/11-addsomevmtopolicy02.png" loading="lazy" />
+
+### Contrôler l'état des sauvegardes <a name="backup-check"></a>
+
+Rendez-vous dans le menu <code className="action">Dashboard</code> à gauche pour afficher le tableau de bord et connaître l'état de la sauvegarde.
+
+<img className="thumbnail" alt="Display Dashboard" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/12-dashbord01.png" loading="lazy" />
+
+Ouvrez le menu <code className="action">Jobs</code> à gauche pour afficher l'état des travaux.
+
+<img className="thumbnail" alt="Display JobState" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/12-jobstate01.png" loading="lazy" />
+
+### Restaurer à partir d'HYCU <a name="restoring"></a>
+
+Utilisez le menu <code className="action">Virtual Machines</code> et cliquez sur une machine virtuelle sauvegardée.
+
+<img className="thumbnail" alt="Restore VM 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/13-restorevm01.png" loading="lazy" />
+
+#### Restaurer une machine virtuelle <a name="restoring-vm"></a>
+
+Cliquez en bas à droite sur l'icône <code className="action">Restore VM</code>.
+
+<img className="thumbnail" alt="Restore VM 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/13-restorevm02.png" loading="lazy" />
+
+Sélectionnez <code className="action">Restore VM</code> et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore VM 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/13-restorevm03.png" loading="lazy" />
+
+Laissez les options par défaut et cliquez sur <code className="action">Restore</code>.
+
+<img className="thumbnail" alt="Restore VM 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/13-restorevm04.png" loading="lazy" />
+
+La machine virtuelle est entièrement restaurée. 
+
+#### Récupérer un fichier <a name="restoring-file"></a>
+
+Cliquez en bas à droite sur l'icône <code className="action">Restore files</code>
+
+<img className="thumbnail" alt="Restore FILES 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/15-restorefile01.png" loading="lazy" />
+
+Laissez <code className="action">AUTOMATIC</code> dans le menu déroulant **RESTORE FROM** et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore FILES 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/15-restorefile02.png" loading="lazy" />
+
+Sélectionnez le fichier à restaurer et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore FILES 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/15-restorefile03.png" loading="lazy" />
+
+Laissez les options par défaut et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore FILES 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/15-restorefile04.png" loading="lazy" />
+
+Choisissez <code className="action">Rename restored</code> et cliquez sur <code className="action">Restore</code>.
+
+<img className="thumbnail" alt="Restore FILES 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/15-restorefile05.png" loading="lazy" />
+
+Le fichier restauré se trouve à l'intérieur de la machine virtuelle avec un nouveau nom pour ne pas supprimer l'ancien fichier.
+
+#### Restaurer une application <a name="restoring-app"></a>
+
+Cliquez sur le menu <code className="action">Applications</code> puis choisissez une application à restaurer en cliquant sur une application en dessous de **Name**.
+
+<img className="thumbnail" alt="Restore Application 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/16-restoreapplication01.png" loading="lazy" />
+
+Cliquez sur l'icône <code className="action">Restore</code> en bas à droite.
+
+<img className="thumbnail" alt="Restore Application 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/16-restoreapplication02.png" loading="lazy" />
+
+Sélectionnez <code className="action">Restore databases</code> et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore Application 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/16-restoreapplication03.png" loading="lazy" />
+
+Choisissez une base de données et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Restore Application 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/16-restoreapplication04.png" loading="lazy" />
+
+Désactivez <code className="action">OVERWRITE EXISTING DATABASES</code> et cliquez sur <code className="action">Restore</code>.
+
+<img className="thumbnail" alt="Restore Application 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/40-hycu-backup/16-restoreapplication05.png" loading="lazy" />
+
+La base de données est restaurée dans une nouvelle base de données.
+
+## Aller plus loin <a name="gofurther"></a>
+
+[Nutanix on OVHcloud - Documentation générale](/guides/hosted-private-cloud/nutanix-on-ovhcloud/01-global-high-level-doc/)
+
+[Hyper-convergence Nutanix](/guides/hosted-private-cloud/nutanix-on-ovhcloud/03-nutanix-hci/)
+
+[Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)](/guides/storage-and-backup/object-storage/s3-managing-object-lock/)
+
+[Page d'accueil HYCU](https://www.hycu.com/)
+
+[Documentation HYCU](https://support.hycu.com/hc/en-us/sections/115001018365-Product-documentation)
+
+[Documentation OVHcloud Load Balancer](/guides/network/load-balancer/overview/)
+
+[Nos solutions OVHcloud Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

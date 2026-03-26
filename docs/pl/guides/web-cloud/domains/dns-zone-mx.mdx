@@ -1,0 +1,138 @@
+---
+title: Konfiguracja rekordu MX dla emaili
+description: Dowiedz się, jak skonfigurować rekord MX dla Twojej nazwy domeny w OVHcloud
+lastUpdated: 2026-03-27
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+Rekord MX umożliwia powiązanie nazwy domeny z serwerem platformy e-mail. Jest to niezbędne, aby usługa e-mail nadawcy mogła dotrzeć do usługi e-mail odbiorcy.
+
+**Dowiedz się, jak skonfigurować rekord MX dla Twojej nazwy domeny w OVHcloud.**
+
+## Wymagania początkowe
+
+- Wybrana nazwa domeny musi korzystać z konfiguracji OVHcloud (tzn. z serwerów DNS OVHcloud).
+- Posiadanie konta e-mail MX Plan (zawartego w pakiecie [hostingowym](https://www.ovhcloud.com/pl/web-hosting/), [bezpłatnym hostingu 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub w ofercie MX Plan zamówionej oddzielnie), jednej z naszych [ofert e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) lub zewnętrznej usługi e-mail.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Strefy DNS</code> > Wybierz nazwę domeny
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+:::info
+- Jeśli Twoja nazwa domeny nie używa serwerów DNS OVHcloud, przeprowadź zmianę wpisów MX w interfejsie dostawcy zarządzającego konfiguracją Twojej nazwy domeny.
+
+- Jeśli Twoja nazwa domeny jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona naszej konfiguracji. W tym celu i w razie potrzeby zapoznaj się z naszym przewodnikiem „[Zmiana serwerów DNS domeny OVHcloud](/guides/web-cloud/domains/dns-server-edit/)".
+
+:::
+
+
+## W praktyce
+
+### Zrozumienie roli rekordów MX
+
+Rekord MX (**M**ail e**X**change) to typ rekordu DNS, który określa, które serwery poczty przychodzącej są przypisane do Twojej nazwy domeny.
+
+Aby zrozumieć, jak to działa, posłużymy się przykładem:
+
+- Adres **sender@otherdomain.ovh** wysyła wiadomość e-mail na adres **contact@mydomain.ovh**.
+- Serwer poczty wychodzącej (**Outgoing mail server**) odpytuje strefę DNS nazwy domeny **mydomain.ovh** i odczytuje rekordy **MX**.
+- Wiadomość e-mail jest przekazywana na adres URL odczytanego rekordu **MX**.
+- Wiadomość e-mail zostaje wysłana na adres docelowy **mx0.mail.ovh.net**, poprzedzony wartością **0**. Ta wartość odpowiada priorytetowi: najniższa wartość jest odpytywana w pierwszej kolejności, a najwyższa w ostatniej. Oznacza to, że obecność wielu rekordów MX pozwala na kompensację braku odpowiedzi z serwera wskazanego przez rekord o najniższym priorytecie, poprzez przejście do kolejnych serwerów w kolejności priorytetów.
+
+<img className="thumbnail" alt="email" src="/images/assets/schemas/emails/mx-dns-resolution.png" loading="lazy" />
+
+Dla tej samej nazwy domeny można skonfigurować wiele rekordów MX. W takim przypadku konieczne jest określenie numeru priorytetu dla każdego z nich. Rekordy MX są odpytywane w kolejności rosnącej, od najniższego numeru do najwyższego, aż do uzyskania odpowiedzi z serwera poczty przychodzącej.
+
+:::warning
+Ogólnie rzecz biorąc, **modyfikacja rekordów MX w strefie DNS nazwy domeny jest operacją wymagającą wiedzy**: omyłkowe działanie może uniemożliwić spływanie e-maili na Twoje adresy. Zalecamy szczególną ostrożność podczas wykonywania tej operacji.
+W przypadku wątpliwości zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](https://partner.ovhcloud.com/pl/directory/).
+
+:::
+
+
+### Wartości konfiguracji MX OVHcloud <a name="mxovhcloud"></a>
+
+Zapoznaj się z przedstawioną poniżej konfiguracją MX OVHcloud przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)), [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), [Exchange](https://www.ovhcloud.com/pl/emails-exchange/) oraz [Zimbra](https://www.ovhcloud.com/pl/emails/zimbra-emails/). Na serwerach poczty elektronicznej OVH zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
+
+Wartości te są wspólne dla wszystkich ofert z wyjątkiem [Private Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-private/) i Dedicated Exchange.
+
+|Domena|TTL|Typ rekordu|Priorytet|Adres docelowy|
+|---|---|---|---|---|
+|*pozostaw puste*|3600|MX|1|mx0.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|5|mx1.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|50|mx2.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|100|mx3.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|200|mx4.mail.ovh.net.|
+
+Rekordy MX muszą być skonfigurowane w strefie DNS Twojej nazwy domeny.
+
+### Konfiguracja rekordu MX w strefie DNS OVHcloud
+
+Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Strefy DNS](https://manager.eu.ovhcloud.com/#/web/zone), następnie wybierz odpowiednią nazwę domeny.
+    
+    <img className="thumbnail" alt="Strefy DNS" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Tabela wyświetla konfigurację OVHcloud Twojej nazwy domeny. Każdy wiersz odpowiada jednemu rekordowi DNS.
+    
+    Sprawdź, czy rekordy MX już istnieją, wybierając typ **MX** z listy filtrów nad tabelą, a następnie potwierdź.
+    
+    <img className="thumbnail" alt="Rekord MX DNS" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 3">
+    - Jeśli rekordy MX już istnieją i chcesz je zmienić, kliknij przycisk <code className="action">...</code> po prawej stronie każdego wiersza w tabeli, a następnie kliknij <code className="action">Zmień rekord</code>.
+    - Jeśli rekord MX nie jest obecny, kliknij przycisk <code className="action">Dodaj rekord</code> po prawej stronie tabeli i wybierz <code className="action">MX</code>.
+  </Tab>
+  <Tab label="Krok 4">
+    Uzupełnij wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej.
+    
+    **Jeśli dysponujesz rozwiązaniem e-mail OVHcloud**, zapoznaj się z informacjami podanymi w etapie „[Wiedza na temat konfiguracji MX OVHcloud](#mxovhcloud)".
+    
+    <img className="thumbnail" alt="Rekord MX DNS" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 5">
+    Po wpisaniu informacji zakończ ostatni etap, następnie kliknij <code className="action">Zatwierdź</code>.
+  </Tab>
+</Tabs>
+
+
+**Jeśli używasz innego rozwiązania poczty e-mail**, skorzystaj z informacji dostarczonych przez Twojego dostawcę usługi e-mail.
+
+:::info
+W związku z wprowadzoną zmianą, należy wziąć pod uwagę czas propagacji, który wynosi od 4 do 24 godzin maksimum. Po tym czasie zmiana będzie aktywna.
+
+:::
+
+
+## Sprawdź również
+
+[Informacje na temat serwerów DNS.](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Edycja strefy DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/guides/web-cloud/domains/dns-zone-spf/)
+
+[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/guides/web-cloud/domains/dns-zone-dkim/)
+
+Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

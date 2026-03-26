@@ -1,0 +1,64 @@
+---
+title: Dobre praktyki bezpieczeństwa dotyczące klienta vSphere
+description: Dowiedz się, jak zabezpieczyć dostęp do klienta vSphere
+lastUpdated: 2020-11-18
+---
+
+## Wprowadzenie
+
+Zalecamy ograniczenie dostępu do infrastruktury w celu zapewnienia jej optymalnego bezpieczeństwa. Możesz wykorzystać do tego jedną z proponowanych przez nas metod.
+
+**Dowiedz się, jak szybko i w prosty sposób zabezpieczyć dostęp do klienta vSphere.**
+
+## Wymagania początkowe
+
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+
+## W praktyce
+
+### Kontrola dostępu z adresów IP
+
+Pierwsze zalecenie dotyczy ograniczenia dostępu z adresów IP. Zalecamy korzystanie z systemu dodawania adresów IP do białej listy.  Metoda ta działa w oparciu o zasadę odrzucania wszystkich adresów IP i dodawania do białej listy adresów uprawnionych do dostępu do Twojej infrastruktury.
+
+Funkcja ta dostępna jest w Twoim [Panelu klienta](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przejdź do sekcji Managed Bare Metal, a następnie do zakładki <code className="action">Bezpieczeństwo</code>. Pojawi się tabela, w której wyświetlą się adresy IP uprawnione do dostępu oraz adresy z odmową dostępu. Aby dodać nowe adresy, kliknij przycisk po prawej stronie <code className="action">Dodanie adresów IP</code> :
+
+<img className="thumbnail" alt="Dodanie adresów IP" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/adding_ip.png" loading="lazy" />
+
+### Tworzenie indywidualnych dostępów dla użytkowników 
+
+Zalecamy tworzenie odrębnego dostępu dla każdego użytkownika. Aby wykonać tę operację przejdź do[Panelu klienta](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), zakładka <code className="action">Użytkownicy</code>. Aby dodać nowych użytkowników, kliknij przycisk po prawej stronie: <code className="action">Stwórz użytkownika</code>.
+
+<img className="thumbnail" alt="Użytkownicy" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/users.png" loading="lazy" />
+
+Podczas tworzenia użytkownika zostaniesz poproszony o wpisanie hasła. 
+
+:::info
+Aby zapewnić bezpieczeństwo Twoich danych, wpisz hasło spełniające poniższe kryteria: 
+
+- hasło musi zawierać minimum osiem znaków;
+- musi zawierać minimum trzy typy znaków;
+- nie może figurować w słowniku;
+- nie może zawierać informacji osobistych typu imię, nazwisko czy data urodzenia;
+- nie może być wykorzystane dla kilku użytkowników;
+- musi być przechowywane w menedżerze haseł;
+- musi być zmieniane co trzy miesiące;
+- musi być inne niż poprzednie hasła.
+
+:::
+
+
+Następnie możesz zarządzać uprawnieniami każdego użytkownika. W tym celu kliknij trzy kropki po prawej stronie nazwy użytkownika:
+
+<img className="thumbnail" alt="Edycja parametrów użytkowników" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/users_edit.png" loading="lazy" />
+
+### Ograniczenie czasu sesji
+
+Zalecamy każdorazowe zamknięcie sesji użytkownika. Aby ograniczyć czas połączenia, możesz określić liczbę minut, po upływie których wygasa sesja.
+
+Ustawienia te możesz wprowadzić w [Panelu klienta](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przejdź do sekcji Managed Bare Metal, po czym wybierz <code className="action">Bezpieczeństwo</code>. Następnie kliknij przycisk po prawej stronie<code className="action">Zmień czas wygasania sesji</code>. W oknie, które się ukaże, wybierz czas (w minutach) wygaśnięcia sesji.
+
+<img className="thumbnail" alt="Wygaśnięcie sesji" src="/images/bare-metal-cloud/managed-bare-metal/vsphere-access-security-advices/expiration.png" loading="lazy" />
+
+## Sprawdź również
+
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

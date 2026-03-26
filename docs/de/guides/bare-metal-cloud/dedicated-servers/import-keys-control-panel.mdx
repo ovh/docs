@@ -1,0 +1,74 @@
+---
+title: Öffentliche Authentifizierungsschlüssel im OVHcloud Kundencenter speichern
+description: Erfahren Sie hier, wie Sie Ihre öffentlichen SSH-Schlüssel ins OVHcloud Kundencenter importieren können
+lastUpdated: 2024-12-04
+---
+
+## Ziel
+
+Schlüsselpaare werden zur Authentifizierung von SSH-Verbindungen zwischen Hosts verwendet, z.B. zwischen einem Desktop-Client und einem Remote-Server. Bei der Reinstallation eines Dedicated Servers oder VPS über Ihr Kundencenter haben Sie die Möglichkeit, einen öffentlichen Schlüssel zum Betriebssystem hinzuzufügen. Die Speicherung öffentlicher SSH-Schlüssel in Ihrem Kundencenter vereinfacht diesen Vorgang.
+
+**Diese Anleitung erklärt, wie Sie Ihre öffentlichen SSH-Schlüssel in Ihrem Kundencenter speichern.**
+
+## Voraussetzungen
+
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+
+:::info
+Weitere Informationen zur Verwendung von SSH-Schlüsseln mit [Public Cloud Diensten](https://www.ovhcloud.com/de/public-cloud/) finden Sie in unserer Anleitung:
+
+[SSH-Schlüssel mit OpenSSH für Public Cloud Instanzen erstellen](/guides/public-cloud/compute/compute-creating-ssh-keys/)
+
+:::
+
+
+{/* CP-NAV-START:billing-services */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Meine Dienste](https://manager.eu.ovhcloud.com/#/billing/autorenew/services)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > <code className="action">Produkte und Dienstleistungen</code>
+
+---
+{/* CP-NAV-END:billing-services */}
+
+## In der praktischen Anwendung
+
+Wenn Sie noch kein SSH-Schlüsselpaar erstellt haben, lesen Sie zuerst unsere Anleitungen:
+
+- [Erstellen und Verwenden von Schlüsseln für die SSH-Authentifizierung](/guides/bare-metal-cloud/dedicated-servers/creating-ssh-keys-dedicated/)
+- [Tutorial - PuTTY für SSH-Verbindungen und Authentifizierung verwenden](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/)
+
+<img className="thumbnail" alt="Products and Services" src="/images/assets/screens/control-panel/product-selection/right-menu/my-solutions-and-services.png" loading="lazy" />
+
+Klicken Sie im Kundencenter-Bereich `Meine Dienste` auf <code className="action">SSH-Schlüssel</code>.
+
+<img className="thumbnail" alt="control panel ssh keys" src="/images/bare-metal-cloud/dedicated-servers/import-keys-control-panel/importkey1.png" loading="lazy" />
+
+Klicken Sie auf den Button <code className="action">SSH-Schlüssel hinzufügen</code> und wählen Sie <code className="action">Dedicated</code> aus dem Menü.
+
+<img className="thumbnail" alt="control panel ssh keys" src="/images/bare-metal-cloud/dedicated-servers/import-keys-control-panel/importkey2.png" loading="lazy" />
+
+Geben Sie im neuen Fenster im ersten Feld eine Bezeichnung für den Schlüssel ein.  
+Kopieren Sie die gesamte Zeichenfolge des öffentlichen Schlüssels und fügen Sie sie in das zweite Feld ein.
+
+<img className="thumbnail" alt="control panel ssh keys" src="/images/bare-metal-cloud/dedicated-servers/import-keys-control-panel/importkey3.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Bestätigen</code>.
+
+Der Schlüssel ist ab sofort bei der Reinstallation eines Dedicated Servers oder VPS in Ihrem Kundencenter verfügbar.
+
+Weitere Informationen zu diesem Thema finden Sie in unseren Anleitungen zu "Ersten Schritten":
+
+- [Dedicated Server](/guides/bare-metal-cloud/dedicated-servers/getting-started-with-dedicated-server/)
+- [Dedicated Server der Reihe **Eco**](/guides/bare-metal-cloud/dedicated-servers/getting-started-with-dedicated-server-eco/)
+- [VPS](/guides/bare-metal-cloud/virtual-private-servers/starting-with-a-vps/)
+
+## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

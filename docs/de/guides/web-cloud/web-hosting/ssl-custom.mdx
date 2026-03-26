@@ -1,0 +1,270 @@
+---
+title: Webhosting - Eigenes SSL-Zertifikat installieren
+description: Erfahren Sie hier, wie Sie ein SSL-Zertifikat eines externen Anbieters auf Ihrem OVHcloud Webhosting importieren und installieren
+lastUpdated: 2025-12-16
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+  
+## Ziel  
+
+Secure Socket Layer (SSL) Zertifikate erlauben es, Verbindungen von und zu Ihrer Website zu verschlüsseln. So wird verhindert, dass unbefugte Personen oder Bots auf ausgehende und eingehende Anfragen von Ihrer Website zugreifen können.
+
+OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für die [Webhostings](https://www.ovhcloud.com/de/web-hosting/) an, wie in unserer Anleitung "[Webhosting - SSL-Zertifikat verwalten](/guides/web-cloud/web-hosting/ssl-on-webhosting/)" beschrieben. SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
+
+Je nach Ihrer Situation kann es sein, dass Sie ein anderes SSL-Zertifikat als das von OVHcloud angebotene auf Ihrem Webhosting installieren möchten.
+
+**Diese Anleitung erklärt, wie Sie ein personalisiertes SSL-Zertifikat importieren und auf Ihrem OVHcloud Webhosting installieren.**
+
+## Voraussetzungen
+
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder beabsichtigen, eines zu bestellen.
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/) und dessen exklusive Nutzungsrechte oder beabsichtigen, einen neu zu registrieren. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
+- Sie haben OpenSSL oder eine kompatible Anwendung lokal auf Ihrem Gerät installiert.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Hosting-Pakete</code> > Wählen Sie Ihr Webhosting aus
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## In der praktischen Anwendung
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung genereller Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. **Bei der Installation oder Bestellung eines anderen SSL-Zertifikats als [den von OVHcloud angebotenen](https://www.ovhcloud.com/de/web-hosting/options/ssl/)** können wir Ihnen keine Unterstützung anbieten. Weitere Informationen finden Sie im Abschnitt „[Weiterführende Informationen](#go-further)“ in dieser Anleitung.
+
+:::
+
+
+### 1 - SSL Certificate Signing Request (CSR) erstellen <a name="step-1"></a>
+
+:::info
+Dieser Schritt ist optional, wenn Sie das SSL-Zertifikat bereits erstellt und von Ihrem SSL-Anbieter erhalten haben oder wenn dieser während der Bestellung des SSL-Zertifikats die Erstellung des CSR anbietet. Ist das der Fall, fahren Sie direkt mit [Teil 2](#step-2) fort.
+
+:::
+
+
+#### 1.1 - Schlüsselpaar und CSR in der Befehlszeile generieren <a name="step-1.1"></a>
+
+Um die folgenden Befehle auszuführen, benötigen Sie das OpenSSL Toolkit, das in vielen Linux-Distributionen enthalten ist. Installieren Sie sie andernfalls über die Paketverwaltung des Systems. Unter Windows können Sie das Windows-Subsystem für Linux (WSL) verwenden oder OpenSSL über eine Drittanbieteranwendung installieren.  
+Diese Vorgehensweise ist betriebssystemspezifisch, daher ist sie in dieser Anleitung nicht im Detail beschrieben.
+
+Öffnen Sie Ihr Kommandozeileninterface (Terminal) und führen Sie folgenden Befehl aus:
+
+```sh
+openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8
+```
+
+Ersetzen Sie `my_private` und `your_file_name` durch die gewünschten Dateinamen.
+
+Sobald die Bestellung gestartet wurde, fragt das Terminal Sie nach den folgenden Informationen (zu Ihrer Person, Ihrem Unternehmen, Verein, etc.). Drücken Sie jeweils die <code className="action">EINGABETASTE</code> auf der Tastatur, um die folgenden Fragen schrittweise anzuzeigen:
+
+- `Country Name (2 letter code) [AU]`: Geben Sie den **Country Code** Ihres Landes in Großbuchstaben ein. Alle Ländercodes sind [hier](https://www.iban.com/country-codes) aufgelistet.
+- `State or Province Name (full name) [Some-State]`: Geben Sie den Namen Ihrer Region oder Ihres Bundeslandes in Großbuchstaben ein.
+- `Locality Name (eg, city) []`: Geben Sie den Namen Ihrer Stadt in Großbuchstaben ein.
+- `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: Geben Sie den Namen Ihrer Organisation bzw. Ihres Unternehmens ein. **Wenn Sie eine Privatperson sind, beantworten Sie diese Frage nicht und drücken Sie die <code className="action">EINGABETASTE</code> auf Ihrer Tastatur, um die nächste Frage anzuzeigen**.
+- `Organizational Unit Name (eg, section) []`: Geben Sie den Namen Ihrer Abteilung in der zuvor eingegebenen Organisation ein. **Wenn Sie eine Privatperson sind, beantworten Sie diese Frage nicht und drücken Sie die <code className="action">EINGABETASTE</code> auf Ihrer Tastatur, um die nächste Frage anzuzeigen**.
+- `Common Name (e.g. server FQDN or YOUR name) []`: Geben Sie den Domainnamen (Beispiel: `domain.tld`) oder die Subdomain (Beispiel: `sub.domain.tld`) ein, für die Sie ein SSL-Zertifikat erhalten möchten. **Hier kann nur ein** Domainname oder dessen Subdomain angegeben werden. Je nach SSL-Anbieter geben Sie entweder Ihren Domainnamen an (Beispiel: `domain.tld`) oder dessen www-Subdomain (Beispiel: `www.domain.tld`). Erkundigen Sie sich hierzu vorab bei Ihrem SSL-Anbieter.
+- `Email Address []`: Geben Sie Ihre E-Mail-Adresse ein.
+
+Die nachfolgenden gestellten Fragen sind optional und betreffen hauptsächlich erfahrene Benutzer. Im Zweifelsfall empfehlen wir Ihnen, diese zu übergehen, indem Sie die <code className="action">EINGABETASTE</code> auf Ihrer Tastatur drücken, bis Sie keine weiteren Fragen mehr vom Terminal erhalten.
+
+- `A challenge password []`: Geben Sie nur wenn dies ausdrücklich erforderlich ist ein Passwort ein, das zwischen Ihnen und dem SSL-Zertifikatanbieter verwendet wird. Beachten Sie, dass der CSR und der private Schlüssel auf Seiten von OVHcloud nicht durch ein Passwort geschützt sein müssen, um einem Webhosting von OVHcloud hinzugefügt zu werden.
+- `An optional company name []`: Für fortgeschrittene Benutzer; Sie können einen anderen Namen für Ihre Organisation, Firma oder Organisation eingeben.
+
+#### 1.2 - Den privaten Schlüssel abrufen
+
+Um den zuvor generierten privaten Schlüssel in Ihrem Terminal zu erhalten, führen Sie folgenden Befehl aus:
+
+```sh
+cat my_private.key
+```
+
+Ersetzen Sie `my_private` durch den Dateinamen, den Sie zuvor in [Teil 1.1](#step-1.1) dieser Anleitung ausgewählt haben.
+
+Der private Schlüssel wird dann in folgendem Format in Ihrem Terminal angezeigt:
+
+```console
+-----BEGIN PRIVATE KEY-----
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXX The Private Key XXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+------END PRIVATE KEY------
+```
+
+Kopieren Sie den privaten Schlüssel, öffnen Sie ein Textverarbeitungsprogramm (Notepad, LibreOffice, etc.) und fügen Sie den gesamten Schlüssel, einschließlich der Zeilen `-----BEGIN PRIVATE KEY-----` und `-----END PRIVATE KEY-----` ein.
+
+Speichern Sie diese Datei und bewahren Sie sie sorgfältig für die weitere Verwendung dieser Anleitung auf, um Sie Ihrem SSL-Anbieter zu übermitteln.
+
+#### 1.3 - CSR abrufen
+
+Um die zuvor erstellte CSR immer über Ihr Terminal abzurufen, geben Sie folgenden Befehl ein:
+
+```sh
+cat your_file_name.csr
+```
+
+Ersetzen Sie den Begriff `your_file_name` durch den Dateinamen, den Sie zuvor in [Teil 1.1](#step-1.1) dieser Anleitung ausgewählt haben.
+
+Der CSR erscheint dann in folgender Form in Ihrem Terminal:
+
+```console
+-----BEGIN CERTIFICATE REQUEST-----
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXX The CSR XXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+------END CERTIFICATE REQUEST------
+```
+
+Kopieren Sie die Zeichenfolge, öffnen Sie ein Textverarbeitungsprogramm (Notepad, LibreOffice, etc.) und fügen Sie den gesamten Schlüssel, einschließlich der Zeilen `-----BEGIN CERTIFICATE REQUEST-----` und `-----END CERTIFICATE REQUEST-----` ein.
+
+Speichern Sie diese Datei und bewahren Sie sie sorgfältig für die weitere Verwendung dieser Anleitung auf, um Sie Ihrem SSL-Anbieter zu übermitteln.
+
+:::warning
+Die Datei mit dem privaten Schlüssel und die Datei mit der CSR sind miteinander verknüpft und nicht austauschbar. Wenn Sie mehrere private Schlüssel oder CSRs erstellt haben, achten Sie darauf, dass Sie Ihre verschiedenen privaten Schlüssel und CSRs nicht mischen.
+
+:::
+
+
+### 2 - SSL-Zertifikat bei Ihrem SSL-Anbieter bestellen <a name="step-2"></a>
+
+:::info
+Dieser Schritt ist optional, wenn Sie das SSL-Zertifikat bereits von Ihrem SSL-Anbieter erstellt und abgerufen haben. Ist das der Fall, fahren Sie direkt mit [Teil 3](#step-3) fort.
+
+:::
+
+
+Bestellen Sie das SSL-Zertifikat bei Ihrem SSL-Anbieter. Falls nötig, übermitteln Sie den Inhalt der CSR-Datei, die im [Teil 1](#step-1) generiert wurde. Wenn Sie dazuaufgefordert werden, übergeben Sie auch den privaten Schlüssel, der in [Teil 1](#step-1) generiert wurde.
+
+Nach Ihrer Bestellung muss der Anbieter des SSL-Zertifikats Ihnen 3 Dateien zur Verfügung stellen:
+
+- Die Datei `certificate.crt`
+- Die Datei `private.key`
+- Die Datei `ca_bundle.crt`
+
+Der Inhalt jeder einzelnen Datei wird benötigt, um [Teil 3](#step-3) dieser Anleitung durchzuführen.
+
+<a name="3files"></a>
+
+:::warning
+Einige SSL-Anbieter liefern den Inhalt der Dateien `certificate.crt` und `ca_bundle.crt` in einer einzigen Datei. Sie müssen den Inhalt dieser Datei aufteilen, um die Dateien `certificate.crt` und `ca_bundle.crt` zu erstellen. Dies geschieht vor der Ausführung von [Teil 3](#step-3) dieser Anleitung.
+
+Andere SSL-Anbieter liefern die Datei `ca_bundle.crt` in mehreren Teilen/Dateien. Sie müssen den Inhalt dieser Dateien zusammenfügen, um eine einzelne Datei `ca_bundle.crt` zu erstellen und den [Teil 3](#step-3) dieser Anleitung zu befolgen.
+
+Wenn Sie davon betroffen sind und bei der Durchführung dieser Operationen Schwierigkeiten haben, wenden Sie sich an Ihren SSL-Anbieter mit der Information, dass Sie Ihre Daten in diesen 3 Dateien (`certificate.crt`, `ca_bundle.crt` und `private.key`) aufgeteilt benötigen, damit Sie mit der Installation des SSL-Zertifikats fortfahren können.
+
+:::
+
+
+### 3 - Installieren des personalisierten SSL-Zertifikat auf Ihrem Webhosting <a name="step-3"></a>
+
+Wenn Sie diese Anleitung in diesem Schritt beginnen, da Sie bereits über ein externes SSL-Zertifikat verfügen, das bei einem SSL-Anbieter bestellt wurde, überprüfen Sie, dass Sie über die folgenden 3 Dateien verfügen: `certificate.crt`, `private.key` und `ca_bundle.crt`. Ist das nicht der Fall, lesen Sie die Informationen [oben](#3files).
+
+**Bevor Sie die Installation des SSL-Zertifikats auf Ihrem Webhosting** abschließen, überprüfen Sie, dass **alle Domains und Subdomains**, die von Ihrem SSL-Zertifikat betroffen sind:
+
+- Auf die IP-Adresse Ihres Webhostings verweisen.
+- Auf einem der Webseiten Ihres Webhostings deklariert sind.
+- Nicht bereits über ein aktives SSL-Zertifikat verfügen.
+
+Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen:
+
+- [Mehrere Websites auf einem Webhosting einrichten](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+- [Webhosting - Liste der IP-Adressen pro Cluster](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)
+- [Bearbeiten der OVHcloud DNS-Zone](/guides/web-cloud/domains/dns-zone-edit/)
+- [Webhosting - SSL-Zertifikat einrichten](/guides/web-cloud/web-hosting/ssl-on-webhosting/), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**
+
+Sobald alle diese Voraussetzungen erfüllt sind, können Sie mit der Fertigstellung der Installation Ihres personalisierten SSL-Zertifikats auf Ihrem Webhosting beginnen.
+
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Hosting-Pakete](https://manager.eu.ovhcloud.com/#/web/hosting), und wählen Sie das betreffende Webhosting aus.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf der angezeigten Seite auf den Tab <code className="action">SSL-Zertifikate</code>.
+    
+    <img className="thumbnail" alt="SSL-Zertifikate" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Wenn der Inhalt des Tab angezeigt wird, klicken Sie auf <code className="action">Import Ihres eigenen SSL-Zertifikats</code>.
+    
+    <img className="thumbnail" alt="Personalisiertes SSL" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Im folgenden Fenster wird ein Formular mit 3 auszufüllenden Feldern angezeigt:
+    
+    <img className="thumbnail" alt="Order an SSL certificate" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window.png" loading="lazy" />
+    
+    - <code className="action">Inhalt Ihres Zertifikats kopieren (nur RSA)</code>: Geben Sie den Inhalt der Datei **certificate.crt** ein, die von Ihrem SSL-Anbieter bereitgestellt wurde, einschließlich `-----BEGIN CERTIFICATE-----` und `-----END CERTIFICATE-----` (oder entsprechender Zeilen). Die RSA-Verschlüsselung ist die Standardmethode für SSL-Zertifikate.
+    - <code className="action">Inhalt Ihres Private Key kopieren (nicht verschlüsselt)</code>: Geben Sie den Inhalt der von Ihrem SSL-Anbieter bereitgestellten **private.key** Datei ein, einschließlich `-----BEGIN RSA PRIVATE KEY-----` und `-----END RSA PRIVATE KEY-----` (oder entsprechender Zeilen). *Unverschlüsselt* bedeutet, dass der private Schlüssel nicht durch ein Kennwort oder eine Passphrase geschützt sein darf. Andernfalls schlägt die Installation des Zertifikats fehl.
+    - <code className="action">Inhalt Ihrer Zertifikatskette kopieren</code>: Geben Sie den Inhalt der Datei **ca_bundle.crt** Ihres SSL-Anbieters ein, einschließlich `-----BEGIN CERTIFICATE-----` und `-----END CERTIFICATE-----` (oder Entsprechungen).
+    
+    <img className="thumbnail" alt="Order an SSL certificate" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png" loading="lazy" />
+
+Wenn Sie alle 3 Formulare ausgefüllt haben, klicken Sie auf <code className="action">Bestätigen</code>, um den Import des personalisierten SSL-Zertifikats auf Ihr Webhosting abzuschließen.
+  </Tab>
+</Tabs>
+
+
+Wenn das SSL-Zertifikat vom SSL-Anbieter korrekt generiert wurde und die Voraussetzungen erfüllt sind, erscheint die Meldung, dass die Aktivierung des SSL-Zertifikats auf Ihrem Webhosting durchgeführt wird.
+
+:::warning
+Wenn der Fehler `error check SAN from certificate` auftritt, liegt mindestens eine der folgenden Ursachen vor:
+
+- Mindestens eine in Ihrem SSL-Zertifikat deklarierte Domain oder Subdomain verweist nicht auf die IP-Adresse Ihres Webhostings.
+- Mindestens ein in Ihrem SSL-Zertifikat angegebener Domain-/Subdomainname ist mit keiner der Websites Ihres Webhostings verknüpft.
+
+Lesen Sie unsere Anleitungen „[Mehrere Websites auf einem Webhosting einrichten](/guides/web-cloud/web-hosting/multisites-configure-multisite/)“ und „[Bearbeiten der OVHcloud DNS-Zone](/guides/web-cloud/domains/dns-zone-edit/)“, um diese Situation zu beheben.
+
+:::
+
+
+Die Installation dauert mehrere Minuten.
+
+Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Hosting-Pakete](https://manager.eu.ovhcloud.com/#/web/hosting), und wählen Sie das betreffende Webhosting aus.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie auf der angezeigten Seite auf den Tab <code className="action">SSL-Zertifikate</code>.
+    
+    <img className="thumbnail" alt="SSL-Zertifikate" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Wenn der Inhalt des Tab angezeigt wird, überprüfen Sie, ob jeder betroffene Domainname und/oder jede Subdomain in der Tabelle mit dem SSL-Zertifikattyp `Custom` aufgeführt ist.
+    
+    <img className="thumbnail" alt="Tabelle zur Verwaltung der SSL-Zertifikate" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Ihr personalisiertes SSL-Zertifikat ist installiert und aktiv. Sie können es nun mit Ihrem Webhosting nutzen und zum Beispiel [HTTPS für Ihre Website aktivieren](/guides/web-cloud/web-hosting/ssl-activate-https-website/).
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Webhosting - SSL-Zertifikat verwalten](/guides/web-cloud/web-hosting/ssl-on-webhosting/)
+
+[Webhosting - Website auf HTTPS umstellen](/guides/web-cloud/web-hosting/ssl-activate-https-website/)
+
+[Häufige Fehler beim Schutz Ihrer Website mit SSL](/guides/web-cloud/web-hosting/ssl-avoid-common-pitfalls-of-making-website-secure/)
+ 
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+ 
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+ 
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

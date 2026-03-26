@@ -1,0 +1,156 @@
+---
+title: Tutorial - Zapisz stronę WWW z modułem WordPress
+description: Dowiedz się, jak zapisać zawartość strony WordPress i bazę danych
+lastUpdated: 2023-02-22
+---
+
+## Wprowadzenie
+
+Twoja strona WWW jest narażona na nieprawidłowe działanie (np. błąd w trakcie operacji, przypadkowe usunięcie plików, nieprawidłowa konfiguracja, luka w zabezpieczeniach lub włamanie), co może spowodować częściową lub całkowitą utratę danych.<br/>
+Regularne tworzenie kopii zapasowych danych umieszczonych na Twojej stronie WWW jest dobrym rozwiązaniem. W przypadku wystąpienia usterki, przywrócisz poprzednią wersję Twojej strony WWW.
+
+Na hostingu możesz zarządzać kopiami zapasowymi Twojej strony WWW. Nawet jeśli OVHcloud oferuje kopie zapasowe (nieobjęte umową), zalecamy wykonywanie również regularnych kopii zapasowych oraz zarządzanie własnymi nośnikami kopii zapasowych (dysk twardy, klucz USB, itp.), aby zachować szczególną ostrożność.
+
+:::warning
+OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+
+Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub [edytora CMS WordPress](https://wordpress.com/support/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+
+:::
+
+
+**Dowiedz się, jak zapisać zawartość strony WordPress i jej bazy danych.**
+
+## Wymagania początkowe
+
+- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) i zainstalowanie WordPressa
+
+## W praktyce
+
+Możesz wykonać kopię zapasową na dwa sposoby: **ręcznie** lub przez **poprzez rozszerzenie**.
+
+OVHcloud dostarcza [usługę (nieokreśloną w umowie) umożliwiającą automatyczne tworzenie kopii zapasowych danych](/guides/web-cloud/web-hosting/ftp-save-and-backup/) oraz udostępnia te kopie zapasowe. Twoja odpowiedzialność spoczywa jednak na wdrożeniu własnej polityki przywracania i określaniu punktów przywracania usług w momentach, które uważasz za stosowne.
+
+### Metoda 1 - ręczna kopia zapasowa
+
+Ręczna kopia zapasowa musi być wykonana w dwóch etapach. Najpierw należy wykonać kopię zapasową plików PHP na Twojej stronie WWW, a następnie wyeksportować bazę danych.
+
+#### 1.1 - Zapisz pliki strony www
+
+Odzyskanie informacji odbywa się za pośrednictwem klienta FTP, takiego jak FileZilla. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Użyj FileZilla na Twoim hostingu OVHcloud](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)".
+
+Po zalogowaniu się do serwera przez FTP, pobierz (przeciągnij/upuść) zawartość katalogu `www` na prawym boku. Katalog ten zawiera wszystkie pliki i katalogi Twojej strony WordPress (konfiguracja, szablony, media, itp.).
+
+<img className="thumbnail" alt="Widok plików i katalogów WordPress z katalogiem głównym" src="/images/assets/screens/other/web-tools/filezilla/wordpress-into-www.png" loading="lazy" />
+
+Kliknij na katalog `www` i przeciągnij go do wybranego katalogu w oknie po lewej stronie. Transfer plików rozpocznie się automatycznie.
+
+W przypadku awarii na Twojej stronie WWW wykonaj operację odwrotną, usuwając pliki docelowe.
+
+#### 1.2 - Eksport bazy danych
+
+Aby wyeksportować Twoją bazę danych, przejdź do interfejsu _PHPMyAdmin_ poprzez adres URL, który otrzymałeś w momencie składania zamówienia na hosting.
+
+:::tip[Success]
+Zapoznaj się z naszym przewodnikiem dotyczącym [eksportu bazy danych](/guides/web-cloud/web-hosting/sql-database-export/).
+
+:::
+
+
+<img className="thumbnail" alt="Dostęp PHPMyAdmin - Strona główna" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png" loading="lazy" />
+
+Kliknij <code className="action">Eksport</code> na górze strony:
+
+<img className="thumbnail" alt="Dostęp PHPMyAdmin - Eksport" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-export.png" loading="lazy" />
+
+Pozostaw wybór domyślny: metoda szybkiego eksportu i format SQL.
+
+Kliknij polecenie <code className="action">Uruchom</code>, pobierz Twoją bazę danych w formacie SQL (Structured Query Language).
+
+<img className="thumbnail" alt="Dostęp PHPMyAdmin - Eksport - Pobieranie" src="/images/assets/screens/other/browsers/web-pages/dowload-successfull.png" loading="lazy" />
+
+### Metoda 2 - wykonanie kopii zapasowej z rozszerzeniem
+
+Dzięki licznym rozszerzeniom WordPress możesz zarządzać kopiami zapasowymi. Najbardziej popularną opcją jest [UdraftPlus](https://wordpress.org/plugins/updraftplus/), który zawiera kilka milionów aktywnych instalacji. Darmowa wersja wystarczy, aby zapisać Twoją stronę WWW. Wersja premium oferuje więcej opcji, takich jak przyrostowe kopie zapasowe, narzędzie do migracji, kopie zapasowe dla wielu stron, większy wybór w chmurze do przechowywania danych, etc.
+
+Pobierz rozszerzenie w formacie `.zip` na komputerze. W celu zachowania jasności plik przesłany do rozszerzenia otrzymuje nazwę **updraftplus.zip** w dalszej części tego tutoriala.
+
+#### 2.1 - Zaloguj się do interfejsu administracyjnego, aby zainstalować rozszerzenie
+
+Domyślnie jest to nazwa domeny, po której następuje `/wp-admin`:
+
+<img className="thumbnail" alt="Dostęp administratora do wp-admin" src="/images/assets/screens/other/cms/wordpress/login-interface.png" loading="lazy" />
+
+Na stronie głównej przejdź do sekcji <code className="action">Wtyczki</code>, następnie kliknij <code className="action">Dodaj nową</code>:
+
+<img className="thumbnail" alt="Dodaj rozszerzenie" src="/images/assets/screens/other/cms/wordpress/plugins-add-new.png" loading="lazy" />
+
+Pobierz rozszerzenie klikając na przycisk <code className="action">Przeglądaj</code>:
+
+<img className="thumbnail" alt="Prześlij rozszerzenie" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-add-new-updraftplus.png" loading="lazy" />
+
+Kliknij polecenie <code className="action">Zainstaluj</code>:
+
+<img className="thumbnail" alt="Zainstaluj rozszerzenie" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-browse-updraftplus.png" loading="lazy" />
+
+Po instalacji zostaniesz poproszony o włączenie rozszerzenia:
+
+<img className="thumbnail" alt="Potwierdzenie instalacji" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-activate-updraftplus.png" loading="lazy" />
+
+Po włączeniu domeny pojawi się ona na liście rozszerzeń:
+
+<img className="thumbnail" alt="Lista zainstalowanych rozszerzeń" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-list-updraftplus.png" loading="lazy" />
+
+#### 2.2 - Skonfiguruj kopie zapasowe
+
+Na stronie, o której mowa powyżej, kliknij <code className="action">Ustawienia</code>, a następnie na stronie `UpdraftPlus Backup/Restore`, kliknij zakładkę <code className="action">Ustawienia</code>:
+
+<img className="thumbnail" alt="Strona UpdraftPlus Backup/Restore" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings.png" loading="lazy" />
+
+Zdefiniuj codzienną kopię zapasową swoich plików i bazy danych:
+
+<img className="thumbnail" alt="Strona UpdraftPlus Ustawienia" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings-2.png" loading="lazy" />
+
+Wybierz kopię zapasową e-mailem.
+
+Kopie zapasowe zostaną wysłane na adres e-mail konta administratora (konto, którego używasz):
+
+<img className="thumbnail" alt="Kopia zapasowa na adres e-mail" src="/images/assets/screens/other/cms/wordpress/email-setting.png" loading="lazy" />
+
+Na dole strony kliknij <code className="action">Zapisz zmiany</code>, aby zatwierdzić.
+
+#### 2.3 - Wykonaj pierwszą kopię zapasową
+
+Przejdź do zakładki <code className="action">Kopia zapasowa/Przywracanie</code> i kliknij na przycisk <code className="action">Utwórz kopię</code>:
+
+<img className="thumbnail" alt="Strona UpdraftPlus Kopia zapasowa/Przywracanie" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-backup-now.png" loading="lazy" />
+
+W oknie, które się wyświetli kliknij ponownie <code className="action">Utwórz kopię</code>:
+
+<img className="thumbnail" alt="Strona UpdraftPlus modalny Kopia zapasowa/Przywracanie" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-perform-backup.png" loading="lazy" />
+
+Po utworzeniu kopii zapasowych otrzymasz dwa e-maile: jeden z nich ma zawartość modułu Wordpress, drugi z bazą danych na swojej stronie internetowej.
+Jeśli nie otrzymasz e-maili, sprawdź adres e-mail używanego konta (w sekcji <code className="action">Użytkownicy</code>). Sprawdź również swoje foldery "SPAM / Niechciany Poczta".
+
+### Jak często wykonywać kopie zapasowe?
+
+Częstotliwość wykonywania kopii zapasowych zależy od częstotliwości, z jaką zmienia się Twoja zawartość. Przydatna jest codzienna kopia zapasowa, jeśli codziennie publikujesz treści na Twojej stronie WWW. Dostosuj częstotliwość wykonywania Twoich publikacji. Masz możliwość ręcznej aktualizacji (jest to opcja, która jest proponowana domyślnie). Zalecamy również wykonanie kopii zapasowej po zainstalowaniu lub zmianie tematu lub rozszerzenia.
+
+### Pamiętaj o tym
+
+- Zintegrowanie rutynowej kopii zapasowych jest dobrym sposobem, aby zabezpieczyć zawartość swojej strony internetowej.
+- Upewnij się, że Twoje kopie zapasowe są bezpieczne.
+- Wykonaj kopię zapasową przed wykonaniem aktualizacji i sprawdź, czy wszystko działa poprawnie na Twojej stronie WWW. 
+
+Stosując te dobre praktyki będziesz miał możliwość powrotu do zdrowej wersji poprzedniej.
+
+## Sprawdź również <a name="go-further"></a>
+
+- [Oficjalna strona WordPress](https://wordpress.org)
+- [Więcej informacji na temat kopii zapasowych Twojego hostingu](/guides/web-cloud/web-hosting/hosting-technical-specificities#informacje-o-automatycznych-kopiach-zapasowych/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

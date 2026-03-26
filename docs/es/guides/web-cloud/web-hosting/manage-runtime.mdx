@@ -1,0 +1,154 @@
+---
+title: Gestionar los motores de ejecución en un hosting Cloud Web
+description: Cómo realizar las operaciones relativas a los motores de ejecución en un hosting Cloud Web
+lastUpdated: 2022-07-27
+---
+
+## Objetivo
+
+Cloud Web ofrece la posibilidad de utilizar distintos lenguajes de programación para la realización de su proyecto. De hecho, para finalizarlo, debe utilizar el motor de ejecución más adecuado.
+
+**Esta guía explica cómo gestionar los motores de ejecución de su alojamiento Cloud Web.**
+
+## Requisitos
+
+- Tener contratado un plan de alojamiento [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Alojamientos</code> > Seleccione su alojamiento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedimiento
+
+Para adaptarse a todos los proyectos de forma óptima, los planes de alojamiento Cloud Web le permiten disponer de uno o varios motores de ejecución. Por lo tanto, la elección de uno u otro dependerá de lo que desee instrumentar. 
+
+Así pues, **si aún no lo ha hecho, asegúrese de que su proyecto sea técnicamente compatible con su alojamiento Cloud Web**. Puede consultar los lenguajes compatibles visitando el siguiente enlace: [https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/).Una vez que sepa exactamente qué motor o motores de ejecución debe utilizar, puede realizar las acciones que se detallan a continuación.
+
+### Etapa 1:  acceder a la gestión de los motores de ejecución
+
+Para ver los motores de ejecución de su alojamiento Cloud Web, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en <code className="action">«Alojamientos»</code> en la barra de servicios a la izquierda y seleccione el nombre del alojamiento Cloud Web de su interés. A continuación, abra la pestaña <code className="action">«Motores de ejecución»</code>.
+
+Se mostrará una tabla con los motores de ejecución que haya añadido a su alojamiento Cloud Web hasta ese momento. Tenga en cuenta que se crea automáticamente un motor en el momento de la instalación de su alojamiento.
+
+<img className="thumbnail" alt="cloudweb" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-phpfpm7-4.png" loading="lazy" />
+
+### Etapa 2: gestionar los motores de ejecución
+
+Existen diversas formas de gestionar los motores de ejecución de su alojamiento Cloud Web:
+
+- [Añadir o modificar un motor de ejecución](#21-anadir-o-modificar-un-motor-de-ejecucion) (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/)).
+- Establecer un motor de ejecución como opción por defecto.
+- Eliminar un motor de ejecución.
+
+#### 2.1\. Añadir o modificar un motor de ejecución
+
+:::info
+Antes de modificar un motor de ejecución, asegúrese previamente de que dicha operación no provocará que el sitio web o la aplicación que utilice el motor deje de estar disponible. Puede encontrar el número de multisitios que se apoyan en sus motores de ejecución gracias a la columna `«Número de multisitios vinculados»`. En la pestaña <code className="action">«Multisitio»</code>, también puede encontrar el motor que utiliza cada dominio gracias a la columna `«Motor de ejecución»` de la tabla.
+
+Para poder eliminar un motor de ejecución, es necesario eliminar las entradas multisitio que utilizan este último.
+
+:::
+
+
+Para añadir o modificar un motor de ejecución, abra la pestaña <code className="action">«Motores de ejecución»</code> del alojamiento Cloud Web de su interés. Y luego:
+
+- **Si quiere añadir un motor de ejecución**, haga clic en <code className="action">«Acciones»</code> (encima de la tabla) y, seguidamente, en <code className="action">«Añadir un motor de ejecución</code>.
+- **Si quiere modificar un motor de ejecución**, haga clic en el botón <code className="action">«···»</code> a la derecha del motor correspondiente y, seguidamente, haga clic en <code className="action">«Editar»</code>.
+
+Introduzca la información solicitada en la ventana que aparece. Prosiga en función del motor de ejecución seleccionado:
+
+- [PHP](#php) 
+- [Node.js](#nodejs)
+- [Ruby](#ruby) 
+- [Python](#python) 
+
+##### **PHP**
+
+|Elemento|Descripción| 
+|---|---| 
+|Nombre personalizado|Introduzca un nombre que le permita diferenciar este motor de ejecución de los otros motores de su cuenta de OVHcloud.|  
+|Motor de ejecución|Seleccione el nuevo motor de ejecución deseado.|  
+
+Una vez cumplimentada toda la información, haga clic en <code className="action">«Validar»</code>. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la Etapa 3 [«asociar el motor de ejecución a un multisitio»](#etapa-3-asociar-el-motor-de-ejecucion-a-un-multisitio).
+
+##### **Node.js**
+
+|Elemento|Descripción| 
+|---|---| 
+|Nombre personalizado|Introduzca un nombre que le permita diferenciar este motor de ejecución de los otros motores de su cuenta de OVHcloud.|
+|Motor de ejecución|Seleccione el nuevo motor de ejecución deseado.|
+|Ruta de acceso al directorio público|Indique el directorio en el que se alojará el contenido estático (el motor no ejecutará este contenido).|
+|Entorno de la aplicación|Especifique si se trata de un entorno de «Producción», de «Prueba» o, incluso, de «Desarrollo».  Tenga en cuenta que este último tiene un comportamiento diferente a los otros y que muestra los errores directamente en la interfaz web, así pues, utilícelo con conocimiento de causa.|
+|Secuencia de comandos de ejecución de la aplicación|Designe la secuencia de comandos que ejecutará la tecnología Node.js.|
+
+Una vez cumplimentada toda la información, haga clic en <code className="action">«Validar»</code>. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](#3-asociar-el-motor-de-ejecución-a-un-multisitio )».
+
+<img className="thumbnail" alt="cloudweb" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png" loading="lazy" />
+
+##### **Ruby**
+
+|Elemento|Descripción| 
+|---|---| 
+|Nombre personalizado|Introduzca un nombre que le permita diferenciar este motor de ejecución de los otros motores de su cuenta de OVHcloud.|
+|Motor de ejecución|Seleccione el nuevo motor de ejecución deseado.|
+|Ruta de acceso al directorio público|Indique el directorio en el que se alojará el contenido estático (el motor no ejecutará este contenido).|
+|Entorno de la aplicación|Especifique si se trata de un entorno de «Producción», de «Prueba» o, incluso, de «Desarrollo». Tenga en cuenta que este último tiene un comportamiento diferente a los otros y que muestra los errores directamente en la interfaz web, así pues, utilícelo con conocimiento de causa.|
+|Secuencia de comandos de ejecución de la aplicación|Designe la secuencia de comandos que ejecutará el motor de ejecución Ruby.|
+
+Una vez cumplimentada toda la información, haga clic en <code className="action">«Validar»</code>. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](#3-asociar-el-motor-de-ejecución-a-un-multisitio )».
+
+<img className="thumbnail" alt="cloudweb" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png" loading="lazy" />
+
+##### **Python**
+
+|Elemento|Descripción| 
+|---|---| 
+|Nombre personalizado|Introduzca un nombre que le permita diferenciar este motor de ejecución de los otros motores de su cuenta de OVHcloud.|
+|Motor de ejecución|Seleccione el nuevo motor de ejecución deseado.|
+|Ruta de acceso al directorio público|Indique el directorio en el que se alojará el contenido estático (el motor no ejecutará este contenido).|
+|Entorno de la aplicación|Especifique si se trata de un entorno de «Producción», de «Prueba» o, incluso, de «Desarrollo». Tenga en cuenta que este último tiene un comportamiento diferente a los otros y que muestra los errores directamente en la interfaz web, así pues, utilícelo con conocimiento de causa.|
+|Secuencia de comandos de ejecución de la aplicación|Designe la secuencia de comandos que ejecutará el motor de ejecución Python.|
+
+Una vez cumplimentada toda la información, haga clic en <code className="action">«Validar»</code>. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](#3-asociar-el-motor-de-ejecución-a-un-multisitio )».
+
+<img className="thumbnail" alt="cloudweb" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png" loading="lazy" />
+
+### Etapa 3: asociar el motor de ejecución a un multisitio
+
+:::info
+En nuestro ejemplo, solo se crearon los motores PHP y Node.js. En su proyecto, bien podría utilizar Ruby o Python. En dicho caso, las operaciones descritas a continuación son
+aplicables.
+
+La utilización de dos motores de ejecución al mismo tiempo en su alojamiento Cloud Web depende del [plan que haya contratado](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/).
+
+:::
+
+
+Una vez que disponga del motor o los motores de ejecución necesarios para su proyecto, asegúrese de que estos estén correctamente asociados a sus multisitios. Para ello, abra la pestaña <code className="action">«Multisitio»</code> del alojamiento Cloud Web de su interés. 
+
+En la columna `«Motor de ejecución»` de la tabla, compruebe que el motor de ejecución asociado a los dominios de su interés sea el correcto. Los nombres que se visualizan corresponden al «Nombre personalizado» que haya establecido.
+
+<img className="thumbnail" alt="cloudweb" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/runtime-software-application/runtime-software-applications.png" loading="lazy" />
+
+Si quiere cambiar el motor de ejecución asociado a un multisitio, haga clic en el pictograma con forma de rueda dentada situado a la derecha del dominio de su interés y, seguidamente, seleccione <code className="action">«Editar»</code>.
+
+A continuación, seleccione el motor correcto al lado de `«Motor de ejecución»` en la ventana que aparece. Le recordamos que los nombres que aparecen corresponden al «Nombre personalizado» que haya establecido. Es absolutamente necesario que el sitio o la aplicación accesible desde el dominio en cuestión sea compatible con el motor de ejecución seleccionado. 
+
+Una vez seleccionado, prosiga con las etapas correspondientes hasta finalizar.
+
+<img className="thumbnail" alt="cloudweb" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/multisite/modify-a-domain-step-1.png" loading="lazy" />
+
+## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

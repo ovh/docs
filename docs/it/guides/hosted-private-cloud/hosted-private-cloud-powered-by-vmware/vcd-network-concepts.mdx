@@ -1,0 +1,327 @@
+---
+title: Public VCF as-a-Service - Network concepts and best practices
+description: Discover the powerful networking capabilities of Public VCF as-a-Service with this comprehensive guide (key concepts and features)
+lastUpdated: 2025-11-04
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+:::info
+:::
+
+>Public VCF as-a-Service is currently in Alpha phase. This guide can evolve and be updated in the future as our teams continue to develop this product.
+>
+
+## Objective
+
+**The guide details the fundamental principles and notions of networking within Public VCF as-a-Service.**
+
+## Requirements
+
+:::info
+If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in to Public VCF as-a-Service](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-logging/).
+
+:::
+
+
+- A web browser (with preferably a Chromium-based one, and translation enabled in English).
+- A Public VCF as-a-Service account with required user rights (make sure your user account has the necessary permissions).
+- You need to have followed the guide: "[Public VCF as-a-Service - Basic Public VCF as-a-Service concepts](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-get-concepts/)".
+
+## Instructions
+
+<details>
+
+<summary>Introduction to networking within Public VCF as-a-Service.</summary>
+
+
+In this introductory guide, we will explore:
+
+- The different networking concepts within Public VCF as-a-Service.
+- Concepts related to optimizing network space, such as IP space, Edge Gateways, and Datacentre Groups.
+
+To ensure a flexible and secure network infrastructure in a versatile cloud environment, Public VCF as-a-Service uses a layered networking architecture that includes four categories of networks:
+
+- **External networks**
+- **Organizational vDC networks**
+- **Datacentre group networks**
+- **vApp networks**
+
+Most of these networks require additional infrastructure elements, such as "**Edge Gateways**" and "**Network Pools**".
+
+the Public VCF as-a-Service control panel has a network banner with 6 sections: 
+
+- `Network`
+- `Edge Gateways`
+- `Provider Gateways`
+- `IP Spaces`
+- `Data Center Groups`
+- `Security Tags`
+
+<img className="thumbnail" alt="Public VCF as-a-ServiceControl Panel Network Overview Gif" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_overview.gif" loading="lazy" />
+
+As well as a network section within each vDC in `Data Center Groups > My vDC Name > Networking > Network > Edge Gateway`.
+
+</details>
+
+
+### Step 1 - Network offers and features
+
+
+<details>
+
+<summary>What capabilities, features and functions are offered?</summary>
+
+
+**Public VCF as-a-Serviceon OVHcloud networking capabilities**
+
+Here are the main network features offered with the Public VCF as-a-Service solutions.
+
+| Features                        	| Standard 	| Advanced 	| Premium 	| Comments                                                                                                                                                                                           	                        |
+|---------------------------------	|----------	|----------	|---------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Routing & Switching IPv4        	|         	| ✅        	| ✅       	| - Network segments. distributed & non distributed routing. <br/> - Routed Network with or without NAT/BGP/DHCP/DNS/Static routes. <br/> - Cross vDC networking on the same site. <br/> - **Not supported:** OSPF, VRF Lite. 	 |
+| Public IPv4 Range               	| ✅        	| ✅        	| ✅       	| 	                                                                                                                                                                                                                           |
+| Private Network - vRack support 	| ✅        	| ✅        	| ✅       	| - in Roadmap                                                                                                                                                                                                  	             |
+| Routing & Switching IPv6        	|          	|          	|         	| - in Roadmap                                                                                                                                                                                         	                      |
+| VPN                             	|          	| ✅        	| ✅       	| - L2VPN, VPN IPsec Policy Based Not Supported: SSL VPN, route-based IPsec VPN.                                                                                                                      	                     |
+| Load Balancing                  	|          	|          	|         	| - Not supported with native Public VCF as-a-Service network capabilities                                                                                                                                                 	                      |
+| Advanced Load Balancing         	|          	|          	|         	| - in Roadmap                                                                                                                                                                                         	                      |                                                                                          	|
+
+**Network features**
+
+Here is a comparison of the 3 solutions offered by Public VCF as-a-Service.
+
+|              | Advanced Network & Security | vSAN Storage |
+|:------------:|:---------------------------:|:------------:|
+| Standard Public VCF as-a-Service |              -              |      -       |
+| Public VCF as-a-Service Advanced |              ✅              |      -       |
+
+Here we see that only the advanced networking and security features within Public VCF as-a-Service are available in the **Advanced and Premium** offers.
+
+</details>
+
+
+### Step 2 - Concepts and best practices
+
+<details>
+
+<summary>What are the best practices within the Public VCF as-a-Service control panel?</summary>
+
+
+**Recommendations in network space design and administration**
+
+| Design Recommendation                                                                                                 | Design Justification                                               | Design Involvement                                        |
+|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------|
+| Create one or more Edge Gateways (Level 1 Gateways) per organization vDC.                                             | Enables networking services for the organization's vDC.            | None.                                                     |
+| Create datacenter groups, if there is a need to have Org vDC networks spanning multiple Org vDCs in an organization. | Simplifies Org vDC cross-functional connectivity.                  | Requires creation of datacenter groups in the Public VCF as-a-Service tenant. |
+| Use the IP Spaces feature instead of traditional IP block addressing.                                                 | Note: The delivery of all Spaces IP features spans several phases. | None.                                                     |
+
+**The network within Public VCF as-a-Service (concept)**
+
+The types of network supported within an organization’s vDC:
+
+<Tabs>
+  <Tab label="Direct">
+    - An organization’s vDC network that has a direct connection to one of the external networks that are provisioned by the system administrator and rely on vSphere resources.
+    - Direct networks are supported for organization VDCs that rely on NSX. Direct networks are accessible by multiple organization VDCs. Virtual machines belonging to different organization VDCs can connect to this network and see the traffic.
+    - A direct network provides direct Layer 2 connectivity to virtual machines outside of the organization VDC.
+    - Virtual machines outside of this organization VDC can connect directly to the virtual machines inside the organization VDC.
+    - **Note**: Only OVHcloud can add a direct organization VDC network.
+  </Tab>
+  <Tab label="Isolated (internal)">
+    - Isolated networks can only be accessed by the same organization vDC.
+    - Only virtual machines located in this organization vDC can connect to the internal organization VDC network and see the traffic for it.
+    - Isolated networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere. The isolated organization VDC network provides an organization VDC with an isolated private network to which multiple virtual machines and vApp can connect. This network does not provide connectivity to virtual machines outside of the organization VDC. Machines outside the organization VDC cannot connect to machines inside the organization VDC.
+  </Tab>
+  <Tab label="Routed">
+    - Routed networks can only be accessed by the same organization vDC. Only virtual machines inside this organization vDC can connect to this network.
+    - This network also provides controlled access to an external network. As a system administrator or organization administrator, you can configure Network Address Translation (NAT), Firewall, and VPN settings to make certain virtual machines accessible from the external network.
+    - Routed networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.
+  </Tab>
+</Tabs>
+
+
+Organizational virtual datacentre (vDC) networks enable **vApps**/VMs to communicate with each other or with networks external to the organization.
+
+Organization vDC networks provide direct or routed connections to external networks, or can be isolated from external networks and other organization vDC networks. Routed connections require an **Edge Gateway** and a **network pool** in the organization vDC.
+
+A recently created organization vDC does not have any available networks.
+
+**Network pools (concept)**
+
+A network pool is a set of isolated layer 2 network segments that you can use to design vApp networks and various types of vDC networks to suit your requirements.
+
+Network pools must be set up before organization vDC networks and vApp networks. In their absence, the only network option for an organization is to connect directly to an external network.
+
+**IP spaces (recommended)**
+
+:::info
+You can use a new way to manage your IP space in Public VCF as-a-Service with the new IP space management subsystem.
+
+An Edge Gateway can only connect to provider gateways that use IP spaces.
+
+:::
+
+
+An IP space consists of a set of non-overlapping IP address ranges and small CIDR blocks that are reserved and used when consuming the IP space lifecycle. An IP space can be IPv4 or IPv6, but not both.
+
+Since version 10.4.1, IP spaces have been part of the new features and are recommended for your network space needs.
+
+There are two types of IP spaces that you can use as the Organization Administrator user:
+
+- **Public IP space**: A public IP space is used by multiple organizations and is controlled by the Service Provider through a quota-based system.
+- **Private IP space**: Private IP spaces are dedicated to a single tenant: a private IP space is used only by an organization specified when the IP space was created. For this organization, the consumption of IP addresses is unlimited.
+
+<img className="thumbnail" alt="Public VCF as-a-Service Network IP Prefixe" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_ipspace_banner.png" loading="lazy" />
+
+#### Via the Public VCF as-a-Service control panel
+
+<img className="thumbnail" alt="Public VCF as-a-Service Network IP Prefixe 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_ipspace.gif" loading="lazy" />
+
+**Configuration:**
+
+- <code className="action">General</code>.
+- <code className="action">Network Topology</code>.
+
+**Allocation:**
+
+- <code className="action">Floating IPs</code>.
+- <code className="action">IP Prefixes</code>.
+
+**IP prefixes (recommended)**
+
+You can set an IP prefix for automatic or manual use and prevent Public VCF as-a-Service from randomly assigning it.
+
+If you no longer use an IP prefix that has been allocated to your IP space, you can free it up in the pool.
+
+<img className="thumbnail" alt="Public VCF as-a-ServiceIP Spaces Prefixe 00" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_prefixe_ip.png" loading="lazy" />
+
+<img className="thumbnail" alt="Public VCF as-a-ServiceIP Spaces Prefixe 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_prefixe_ip_2.png" loading="lazy" />
+
+**Network topologies (concept)**
+
+You can view the network topology from the Public VCF as-a-Service control panel by clicking on: <code className="action">Networking | IP Spaces | IP space's name | Configuration | Network Topology</code>
+
+Network topologies are used to configure IP spaces to enable north-south traffic.
+
+<img className="thumbnail" alt="Public VCF as-a-Service Network IP Spaces Topology" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_ip_space_topology.png" loading="lazy" />
+
+**Default auto-configuration rules:**
+
+- Note that the internal and external scope of IP spaces must be configured if the default NAT rules are to be generated automatically. Default rules can be configured automatically on Edge Gateways and Provider Gateways by manually triggering them on them using the "Automatic Configuration" action.
+
+**Datacentre groups (recommended)**
+
+Datacentre group networks are a type of organizational vDC networks that are shared between one or more vDCs and to which vApps can connect.
+
+<img className="thumbnail" alt="Public VCF as-a-Service Network Datacenter Groups Overview Gif" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_datacenter-groups_overview.gif" loading="lazy" />
+
+When creating a network, you can join your datacentre group, which will then provide connectivity to the vApps/VMs of all participating vDC.
+
+**Synchronization (optional)**
+
+You can also synchronize them. This synchronization action will check all associated vDC to ensure that they are always realized and correctly configured.
+
+<img className="thumbnail" alt="Public VCF as-a-Service Network Datacenter Groups Sync" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_datacenter-groups_sync.png" loading="lazy" />
+
+**Create or import network into datacenter group (optional)**
+
+<img className="thumbnail" alt="Public VCF as-a-Service Network Datacenter Groups Network Creation" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_datacenter-groups_network_creation.png" loading="lazy" />
+
+<img className="thumbnail" alt="Public VCF as-a-Service Network Datacenter Groups Network Import" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_datacenter-groups_network_import.png" loading="lazy" />
+
+**Edge Gateway (required)**
+
+Public VCF as-a-ServiceEdge Gateway allows an organization vDC network to route connectivity to internal networks, network address translation (NAT), firewall, IPsec tunnel mounting,
+
+- **Public VCF as-a-Servicesupports**: `IPv4 and IPv6` Edge Gateways.
+
+![Public VCF as-a-Service Network Edge Overview Gif](/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_edge_overview.gif)
+
+**DHCP mode (optional)**
+
+:::info
+Warning: **DHCP** must be enabled and configured in a network in order to work properly if you need it.
+
+:::
+
+
+DHCP automates the assignment of IP addresses to virtual machines connected to the organization's vDC networks.
+
+**Three modes are available:**
+
+- **Network:** A new DHCP service directly associated with this network is used to obtain the DHCP IPs. Use network mode if the network is isolated or if you plan to detach the network from the perimeter.
+- **Relay:** DHCP messages are relayed from virtual machines to designated DHCP servers in your physical DHCP infrastructure.
+- **Gateway:** The Edge Gateway DHCP service is used to obtain DHCP IPs.
+
+![Public VCF as-a-Service Network DHCP Activation](/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_dhcp.png)
+
+**vApp networks (concept)**
+
+vApp networks allow virtual machines to communicate with each other or, by connecting to an organizational vDC network, with virtual machines in other vApps.
+
+![Public VCF as-a-Service Network vApp Network Gif](/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-concepts/vcd_network_vapp.gif)
+
+</details>
+
+
+### Step 3 - Limitations
+
+<details>
+
+<summary>What are the known network limitations?</summary>
+
+
+From a general point of view, the only limitations you can find within Public VCF as-a-Service are those of a managed service.
+
+A little less granularity when it comes to low-level configuration.
+
+Of course, this can impact advanced networking features, although these features may be included in future phases.
+
+**IPsec VPN Limitations**
+
+When adding an IPsec tunnel, the parameter of adding a route-based IPsec session (route based IPsec tunnel) is not supported within Public VCF as-a-Service to date (see: [docs / VMware NSX / NSX administration guide / Adding an IPSec session based on a route](https://knowledge.broadcom.com/external/article/319147/vmware-cloud-director-nsx-feature-suppor.html)).
+
+**Provider gateways limitations**
+
+Provider gateways are clearly visible, but cannot be modified (like a managed service).
+
+**NSX limitations**
+
+You do not have access to the NSX control panel for your Hosted Private Public VCF as-a-Service.
+
+**Load Balancer limitations**
+
+The features of Load Balancing within Public VCF as-a-Service are not available at the moment.
+
+**IAM limitations**
+
+IAM is not available within Public VCF as-a-Service at this time.
+
+</details>
+
+
+## Go further
+
+You can now follow the steps in the following guide: [“Guide 2 - Public VCF as-a-Service - Network - Creating network components via the Public VCF as-a-Service control panel”](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-creation/).
+
+**Networking for Public VCF as-a-Service - Guide index:**
+
+- « Guide 1: Public VCF as-a-Service - Network - Concepts »
+- [« Guide 2: Public VCF as-a-Service - Network - Creating network components via the Public VCF as-a-Service control panel »](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vcd-network-creation/).
+- **Coming soon** : « Guide 3 - Public VCF as-a-Service - Network - How to create an IPsec tunnel with Public VCF as-a-Service? »
+- **Coming soon** : « Guide 4 - Public VCF as-a-Service - Network - How to operate an IP block with Public VCF as-a-Service? »
+- **Coming soon** : « Guide 5 - Public VCF as-a-Service - Network - How to use distributed firewalling (East - West)? »
+
+**Useful network concept**
+
+To strengthen your network knowledge within the OVHcloud universe, please visit [our dedicated page](https://www.ovhcloud.com/it/network/).
+
+If you require training or technical support to implement our solutions, please contact your sales representative or click [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated channel [Discord](https://discord.gg/ovhcloud).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

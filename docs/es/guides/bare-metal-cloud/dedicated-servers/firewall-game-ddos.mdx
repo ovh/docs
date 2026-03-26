@@ -1,0 +1,295 @@
+---
+title: Protección de un servidor de juegos con el firewall de aplicaciones
+description: Cómo configurar el OVHcloud Game DDoS Protection Firewall
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+import Api from '@components/Api';
+
+
+
+
+
+## Objetivo
+
+El objetivo de esta guía es ayudarle a entender mejor nuestra protección anti-DDoS Game (también llamada *Game firewall*) y ofrecerle instrucciones sobre cómo configurar una protección eficaz.
+
+:::info
+Para más información, consulte nuestra página web [Protección anti-DDoS Game](https://www.ovhcloud.com/es-es/security/game-ddos-protection/).
+
+:::
+
+
+Nuestros servidores dedicados Bare Metal Gaming incluyen una protección adicional contra los ataques de red especialmente diseñada para proteger las aplicaciones de juego contra ataques específicos, garantizando así la estabilidad y accesibilidad de los jugadores. Esta solución de protección dedicada es sólida y fácil de usar, lo que le permite centrarse en el desarrollo de su empresa sin tener que defenderse de los delitos informáticos.
+
+| ![global-schema](/images/bare-metal-cloud/dedicated-servers/firewall-game-ddos/global_schema_focus_game_new.png) |
+|:--:|
+| Esquema de los servicios de infraestructura y de protección de los juegos anti-DDoS de OVHcloud |
+
+## Requisitos
+
+- Un [servidor dedicado OVHcloud **Game**](https://www.ovhcloud.com/es-es/bare-metal/game/)
+
+{/* CP-NAV-START:network-public-ip */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public IP](https://manager.eu.ovhcloud.com/#/network/ip)
+- **Ruta de navegación:** <code className="action">Network</code> > <code className="action">IP pública</code>
+
+---
+{/* CP-NAV-END:network-public-ip */}
+
+:::warning
+Esta funcionalidad puede no estar disponible o estar limitada en los servidores de la [**gama Eco**](https://eco.ovhcloud.com/es-es/about/).
+
+Consulte nuestra [página de comparación](https://eco.ovhcloud.com/es-es/compare/) para obtener más información.
+
+:::
+
+
+## Procedimiento
+
+### Introducción
+
+La infraestructura anti-DDoS, combinada con el cortafuegos de red perimetral, protege la red de las amenazas habituales (centradas principalmente en las capas ISO OSI 3 y 4). Sin embargo, alojar aplicaciones de juegos puede suponer un reto para la seguridad de la red. **Game DDoS Protection*** le ayuda: se trata de un firewall de nivel 7 (aplicación) que se centra en la protección de protocolos de juego específicos. Sus principales ventajas son:
+
+- **Muy baja latencia**: Sabemos que la latencia y la estabilidad son esenciales para los juegos online. Estas soluciones se acercan a los servidores y funcionan juntas con un hardware potente.
+- **Bidireccional**: La plataforma analiza el tráfico entrante y saliente para comprender mejor la situación de cada jugador.
+- **Instantánea**: Permite distinguir a los jugadores reales de los ataques maliciosos en un servidor desde los primeros paquetes de la red.
+- **Siempre activo**: la capacidad de detectar y detener ataques garantiza una experiencia fluida para aplicaciones de juegos sensibles, sin interrupciones ni cambios de latencia.
+
+### Activación y configuración de la protección anti-DDoS Game
+
+:::warning
+El *Game Firewall* protege las direcciones IP asociadas a un servidor. Por lo tanto, si tiene un servidor con varias direcciones IP (p. ej., [direcciones Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/)), deberá configurar cada una de ellas por separado.
+
+Cada una de las direcciones que desee proteger con el Game Firewall **debe mostrar** el estado `Configurada` en la columna Game Firewall para que se apliquen las reglas de protección.
+
+:::
+
+
+Para configurar las reglas de protección de juegos de su servidor Bare Metal Game, siga estos pasos:
+
+- Haga clic en <code className="action">Network</code> en el menú situado a la izquierda de la pantalla.
+- Haga clic en <code className="action">Direcciones IP públicas</code>.
+
+Puede filtrar las direcciones IP utilizando el menú desplegable <code className="action">Todos los tipos de servicio</code> o introduciendo directamente la dirección IP deseada en la barra de búsqueda. Introduzca el nombre o la categoría del servidor correspondiente:
+
+#### Listar las direcciones IP vinculadas a su servidor Game
+
+<Tabs>
+  <Tab label="Desde la página **Servidores dedicados**">
+    - Abra la sección <code className="action">Bare Metal Cloud</code> en la barra lateral izquierda.
+    - Seleccione <code className="action">Servidores dedicados</code>.
+    - Haga clic en el servidor Game que desee configurar.
+    - En la sección `Red` de la pestaña `Información general`, busque la sección "Game DDoS Protection".
+    - Haga clic en el botón <code className="action">...</code> y seleccione <code className="action">Configurar Game Protection</code>. Se le redirigirá a la lista de direcciones IP asignadas a su servidor.
+  </Tab>
+  <Tab label="Desde la página **Direcciones IP públicas**">
+    - Abra la sección <code className="action">Network</code> en la barra lateral izquierda.
+    - Seleccione <code className="action">Direcciones IP públicas</code>.
+    - En el menú desplegable <code className="action">Todos los tipos de servicio</code>, busque y seleccione el servidor Bare Metal Game que desee configurar.
+    - Aparecerá una lista de las direcciones IP asignadas a su servidor.
+  </Tab>
+</Tabs>
+
+
+#### Activar y configurar las reglas del Game Firewall
+
+Para cada dirección vinculada a su servidor que requiera protección, compruebe que el estado del *Game Firewall* sea <code className="action">Disponible</code>. Deberá configurar las reglas del *Game Firewall* individualmente para cada una de ellas.
+
+- Haga clic en el botón <code className="action">⁝</code> a la derecha de la tabla y seleccione <code className="action">Configurar el firewall Game</code>.
+- Añada reglas especificando el protocolo y el rango de puertos para cada aplicación de juego que sea accesible en la dirección IP seleccionada. Consulte la sección [Menciones específicas para determinados juegos](#game_specific) para obtener más información.
+- Por razones de seguridad, le recomendamos encarecidamente activar la opción <code className="action">Aplicar la política de «Denegación por omisión»</code>, en la parte superior derecha de la tabla de reglas. Esta opción bloquea todo el tráfico que no coincida con las reglas que ha definido para el Game Firewall, es decir, que todas las aplicaciones de juego enumeradas estarán protegidas y ninguna otra conexión podrá llegar a su servidor. Esta opción reduce considerablemente la superficie de ataque expuesta a posibles actores maliciosos.
+
+La protección anti-DDoS Game le permite configurar hasta **100 reglas por dirección IP** que apunten a un servidor Bare Metal Game de las gamas GAME-1 y GAME-2 (a partir de 2024), o hasta **30 reglas por dirección IP** para las antiguas gamas de juegos Bare Metal (normalmente identificadas como RISE-GAME o SYS-GAME).
+
+Tenga en cuenta que los protocolos de juego compatibles (títulos y versiones de juegos que se pueden proteger) pueden cambiar con el tiempo. Además, pueden ser diferentes entre las antiguas gamas de servidores Bare Metal Game y las más recientes. La lista más reciente de perfiles de juegos compatibles está disponible en la [página Game DDoS Protection](https://www.ovhcloud.com/es-es/security/game-ddos-protection/).
+
+Las reglas de protección del *Game Firewall* no deben solaparse en términos de puertos o rangos de puertos definidos.
+
+La opción **Otro** puede seleccionarse para las aplicaciones alojadas en puertos específicos (para los que no hay protección disponible) con el fin de permitir el paso del tráfico de cliente. Tenga en cuenta que no hay mucha seguridad adicional para el tráfico que coincide con la regla **Otro** y debe utilizarse con precaución.
+
+Unos minutos después de completar la configuración del Game Firewall para una dirección IP, todas las reglas recién creadas se aplicarán y el estado del *Game Firewall* de esa dirección IP pasará de `Disponible` a `Configurada`.
+
+:::warning
+La protección anti-DDoS Game se aplica después de las reglas definidas en el [Edge Network Firewall](/guides/bare-metal-cloud/dedicated-servers/firewall-network/). Para que ambos funcionen correctamente, el Edge Network Firewall no puede ser demasiado estricto y debe dejar pasar el tráfico apropiado a la protección anti-DDoS Game.
+
+:::
+
+
+#### Verificar la configuración
+
+Una vez completada la configuración, compruebe que su servidor está protegido por el Game Firewall verificando estos 2 puntos:
+
+- En la página **Direcciones IP públicas**, cada dirección IP vinculada a su servidor Bare Metal Game que requiera protección debe tener su estado de Game Firewall definido como `Configurada`.
+- En la página de gestión de su servidor Bare Metal Game, en la sección `Red` de la pestaña `Información general`, el estado de la Protección anti-DDoS Game debe ser `Todas las direcciones IP están protegidas` o `Algunas direcciones IP están protegidas`. En este último caso, asegúrese de haber configurado todas las direcciones IP pertinentes.
+
+### Menciones específicas para determinados juegos <a name="game_specific"></a>
+
+#### Ark Survival Evolved
+
+- **Ark Survival Evolved**: Motor de protección básico.
+- **Ark Survival Evolved v.311.78**: Motor de protección actualizado, añadido a los recientes servidores de juegos Bare Metal GAME-1 y GAME-2 (2024 y posteriores).
+
+#### Counter Strike 2
+
+- **Counter-Strike 2**: Se ha añadido un nuevo motor de protección a los recientes servidores de juegos Bare Metal GAME-1 y GAME-2 (2024 y posteriores).
+
+#### FiveM
+
+- **FiveM** es un mod multijugador para Grand Theft Auto V creado por *Cfx.re* y reconocido actualmente por la editorial del juego, Rockstar. Hemos añadido compatibilidad con FiveM a los recientes servidores de juegos Bare Metal GAME-1 y GAME-2 (2024 y posteriores).
+
+#### Rust
+
+- **Rust** es compatible con un perfil de protección específico en todas las generaciones de servidores Bare Metal Game. Ten en cuenta que hemos actualizado este perfil de protección (hemos añadido la compatibilidad con las cookies RakNet) para la tercera generación de servidores Bare Metal Game (2024, basado en EPYC).
+
+#### Minecraft
+
+Minecraft es compatible con los siguientes perfiles:
+
+- **Java Minecraft**: Debería ser la mejor solución para todas las versiones de Java Minecraft. Protege el protocolo Minecraft Query y está configurado para el tráfico TCP. Se añadió en 2024, pero también está disponible para las generaciones anteriores de servidores Bare Metal Game. Atención si hay otros juegos UDP alojados en la misma IP.
+- **Minecraft Query**: Protección general del protocolo Minecraft Query.
+- **Minecraft Bedrock**: protección Minecraft Bedrock (con compatibilidad con cookies RakNet), añadida a los recientes servidores de juegos GAME-1 y GAME-2 Bare Metal (2024 y posteriores).
+- **Minecraft Pocket Edition**: protección Minecraft PE/Bedrock, igual que Bedrock, mantenida por motivos de compatibilidad.
+
+#### Valheim
+
+- **Valheim**: Nuevo motor de protección, añadido a los recientes servidores de juegos Bare Metal GAME-1 y GAME-2 (2024 y posteriores).
+
+:::info
+Si aloja un servicio más grande con uno de los juegos compatibles, pero sigue viendo falsos positivos de los sistemas de infraestructura anti-DDoS, póngase en contacto con nuestro equipo de soporte mediante el [Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) con todos los detalles necesarios para mejorar el perfil de la aplicación.
+
+:::
+
+
+### Uso de direcciones Additional IP con servidores dedicados Game
+
+Las direcciones Additional IP ofrecen una forma flexible de gestionar sus aplicaciones en varios servidores o servicios alojados. Añaden valor a su infraestructura de alojamiento de juegos, ya que permiten gestionar la escalabilidad o las acciones de failover sin que ello afecte a las direcciones IP públicas. Las direcciones Additional IP también permiten definir diferentes localizaciones geográficas de IP o incluso explotar su propio bloque de IP (utilizando el servicio BYOIP) para los servidores Game de OVHcloud.
+
+Aunque las direcciones Additional IP permiten una cierta flexibilidad, hay situaciones que requieren una atención adicional.
+
+#### Configuración por IP específica para la generación de un servidor Game
+
+Para ofrecer la mayor flexibilidad de configuración, es posible establecer diferentes reglas de protección del juego en diferentes direcciones Additional IP que apunten hacia el mismo servidor Bare Metal Game.  
+El número máximo de reglas y la configuración de protección disponibles se establecen por dirección IP, pero son específicos de la generación de servidores Bare Metal Game específicos detrás del firewall.
+
+Se pueden observar diferencias entre los servidores Game más recientes (3.ª generación de servidores Game Bare Metal, 2024, basados en EPYC) y los servidores Game más antiguos (generaciones anteriores, normalmente identificados como RISE-GAME o SYS-GAME).
+
+###### Comprobación de las protecciones de juegos admitidas
+
+Todos los protocolos de protección anti-DDoS Game admitidos para un servidor específico están visibles en la página de configuración <code className="action">GAME firewall</code> para cualquier dirección IP que apunte a ese servidor, en el menú desplegable <code className="action">Game protocol</code>:
+
+| ![control-panel-game-protocols](/images/bare-metal-cloud/dedicated-servers/firewall-game-ddos/game_protocols_list_new.png) |
+|:--:|
+| Lista de protocolos de protección compatibles |
+
+Si prefiere la automatización, los detalles del protocolo pueden recuperarse mediante [la APIv6 de OVHcloud](/guides/manage-and-operate/api/first-steps/):
+
+<Api version="v1" section="/ip" method="GET" route={"/ip/\{ip\}/game/\{ipOnGame\}"} />
+
+Ejemplo de respuesta API:
+
+```python
+{
+    ipOnGame: "1.2.3.4"
+    maxRules: 30
+    state: "ok"
+    firewallModeEnabled: true
+  - supportedProtocols: [
+        "arkSurvivalEvolved"
+        "arma"
+        "gtaMultiTheftAutoSanAndreas"
+        "gtaSanAndreasMultiplayerMod"
+        "hl2Source"
+        "minecraftPocketEdition"
+        "minecraftQuery"
+        "mumble"
+        "other"
+        "rust"
+        "teamspeak2"
+        "teamspeak3"
+        "trackmaniaShootmania"
+    ]
+}
+```
+
+
+#### Traslado de una Additional IP entre servidores
+
+Aunque una configuración de conjunto de reglas estática puede ser explícita, las acciones de movimiento de direcciones Additional IP pueden requerir algunos comentarios.
+
+- **Traslado de una IP de antigua generación a una nueva generación de servidores Bare Metal Game:**
+    - El proceso es transparente y se conservarán todas las reglas de protección y los parámetros IP.
+
+- **Traslado de una IP de nueva generación a una antigua generación de servidores Bare Metal Game:**
+    - Si el servidor de destino admite menos reglas de protección que el servidor de origen, se mostrará un error y la acción se detendrá.
+    - De lo contrario:
+        - Se conservan las reglas de compatibilidad con versiones anteriores (el nombre del perfil de protección debe ser igual).
+        - Se eliminarán las reglas no admitidas en el servidor de destino.
+
+- **Traslado de una IP de un servidor Bare Metal Game a otros servidores o servicios:**
+    - Se eliminarán todas las reglas de protección anti-DDoS Game aplicadas a la IP, ya que no son compatibles fuera de los servidores Bare Metal Game.
+
+
+## FAQ
+
+<details>
+
+<summary>**¿Puedo utilizar la protección anti-DDoS Game en otras gamas distintas de los servidores Bare Metal Game?**</summary>
+
+
+No, la protección anti-DDoS Game solo está disponible para nuestros servidores dedicados Bare Metal Game.
+
+</details>
+
+
+<details>
+
+<summary>**¿Cómo puedo asegurarme de que la automatización funcione para una Additional IP entre una nueva y una antigua generación de servidores Bare Metal Game?**</summary>
+
+
+Puede limitar sus reglas de protección a 30 por IP o configurar sus scripts de automatización para que puedan eliminar y añadir reglas antes y después de mover una IP hacia otro servidor. Le recomendamos que utilice la última generación de servidores Bare Metal Game, ya que se entregan con numerosas mejoras.
+
+</details>
+
+
+<details>
+
+<summary>**¿Puedo desactivar la protección anti-DDoS Game?**</summary>
+
+
+Es posible, pero no se recomienda. Puede hacerlo eliminando todas las reglas de protocolo de juego de la configuración y desactivando la entrada `Default policy: DROP`.
+
+</details>
+
+
+<details>
+
+<summary>**Mi juego no está en la lista de protocolos compatibles, ¿qué puedo hacer?**</summary>
+
+
+Puede proponer sus necesidades en nuestro [roadmap de las soluciones de infraestructura en GitHub](https://github.com/orgs/ovh/projects/16/views/14). Esto nos ayudará a determinar la prioridad de las siguientes características que se desarrollarán.
+
+</details>
+
+
+<details>
+
+<summary>**Después de configurar el juego con los puertos adecuados y la directiva predeterminada que se va a eliminar, sigo recibiendo ataques que afectan a mi servidor Game. ¿Qué hago?**</summary>
+
+
+Deberá compartir volcados relevantes del tráfico de red como ejemplos de tales ataques (archivo *.pcap*) para solicitar el ajuste de la protección de su perfil. Para ello, conéctese a nuestro [Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+</details>
+
+
+
+## Más información <a name="go-further"></a>
+
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

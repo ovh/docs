@@ -1,0 +1,75 @@
+---
+title: Como rescindir o seu Managed Bare Metal
+description: Saiba como solicitar a rescisão de uma infraestrutura Managed Bare Metal
+lastUpdated: 2020-11-18
+---
+
+import Api from '@components/Api';
+
+
+## Objetivo
+
+Se a sua oferta de Managed Bare Metal já não lhe convier, ou se encomendou uma nova infraestrutura para substituir a antiga, pode solicitar a rescisão da infraestrutura depois de recuperar todos os seus dados.
+
+**Saiba como solicitar a rescisão de uma oferta Managed Bare Metal** 
+
+## Requisitos
+
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceder à secção <code className="action">Bare Metal Cloud</code> e, depois, <code className="action">Managed Bare Metal</code>.
+- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
+
+## Instruções
+
+:::warning
+Antes de rescindir a sua oferta, não se esqueça de recuperar todos os dados que pretende conservar. De facto, a rescisão provocará a supressão integral do seu Managed Bare Metal e de todos os dados lá armazenados.
+
+:::
+
+
+### 1 - Solicitar a rescisão através da Área de Cliente OVHcloud
+
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt), dirija-se à secção <code className="action">Bare Metal Cloud</code> (1), clique em <code className="action">Managed Bare Metal</code> (2) e selecione a sua oferta na lista (3).
+
+Na tabela «Gestão do serviço» do separador «Informações gerais», clique no botão <code className="action">...</code> (4) à direita da data de renovação. Clique em <code className="action">Eliminar o serviço</code> (5).
+
+<img className="thumbnail" alt="rescisão a partir da Área de Cliente" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation1.png" loading="lazy" />
+
+Tenha em conta que, a partir da confirmação da rescisão, esta ação irá eliminar todos os dados presentes na infraestrutura. Não será realizado qualquer reembolso prorata caso a infraestrutura seja rescindida antes do final do mês.
+
+Clique em <code className="action">Validar</code> para solicitar a rescisão.
+
+<img className="thumbnail" alt="validação rescisão" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation2.png" loading="lazy" />
+
+Ser-lhe-á apresentada uma notificação de confirmação do seu pedido. O procedimento de confirmação da rescisão é-lhe enviado por e-mail, para o endereço associado à conta OVHcloud.
+
+<img className="thumbnail" alt="validação rescisão" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation3.png" loading="lazy" />
+
+### 2 - Confirmar a rescisão
+
+No seguimento do seu pedido, ser-lhe-á enviado um e-mail de confirmação para o endereço associado à conta OVHcloud. 
+
+Também poderá encontrar este e-mail na sua Área de Cliente OVHcloud. Clique no seu nome na parte superior à direita > <code className="action">E-mails de serviço</code>.
+
+<img className="thumbnail" alt="validação rescisão" src="/images/bare-metal-cloud/managed-bare-metal/how-to-cancel/resiliation4.png" loading="lazy" />
+
+O assunto do e-mail será:
+
+> **Supressão do seu Managed Bare Metal pcc-xxx-xxx-xxx-xxx**".
+
+O e-mail contém uma ligação que lhe permitirá confirmar a rescisão da sua oferta.
+
+:::info
+Atenção: esta ligação é válida durante **72 horas**. Por isso, aconselhamos que realize o seu pedido de rescisão a partir do dia 25 do mês.
+
+:::
+
+
+Poderá também validar o pedido de rescisão através da seguinte API OVHcloud:
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/confirmTermination"} />
+
+Deverá indicar o token de validação disponível no e-mail de confirmação da rescisão.
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,250 @@
+---
+title: Enregistrer une ligne SIP OVHcloud sur Zoiper
+description: Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone Zoiper
+lastUpdated: 2025-10-06
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objectif
+
+Le logiciel [Zoiper](https://www.zoiper.com/) est un softphone (logiciel de téléphonie) gratuit permettant d'enregistrer une ligne SIP fixe OVHcloud afin d'émettre et recevoir des appels via cette ligne, depuis un ordinateur ou un smartphone.
+
+**Découvrez comment enregistrer votre ligne SIP OVHcloud sur Zoiper**
+
+:::warning
+OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+
+Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+
+:::
+
+
+## Prérequis
+
+- Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/)
+- [Disposer des identifiants de votre ligne SIP OVHcloud](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone/)
+- Disposer du logiciel [Zoiper](https://www.zoiper.com/en/voip-softphone/download/current) sur un smartphone ou un ordinateur
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+## En pratique
+
+Ce tutoriel décrit la méthode pour enregistrer votre ligne sur la version gratuite de Zoiper5 pour Windows, macOS et Android, via l'assistant de configuration.
+
+La version gratuite de Zoiper pour iOS, appelée *Zoiper Lite*, ne propose pas d'assistant de configuration. Retrouvez la méthode de configuration manuelle pour Zoiper Lite sur iOS [en bas de ce guide](#ios-manual-installation)
+
+### Windows - macOS - Android
+
+Une fois Zoiper ouvert, vous devez renseigner deux champs.
+
+- Le premier champ doit être renseigné avec votre **Login/Username** et votre **Domain** OVHcloud sous la forme `username@domain`. Par exemple : `0033912345678@sip-domain.io`.
+- Renseignez votre **mot de passe SIP** dans le deuxième champ.
+
+**Cliquez sur l'onglet correspondant à votre plateforme :**
+
+<Tabs>
+  <Tab label="Windows">
+    Une fois les deux champs complétés, cliquez sur <code className="action">Login</code>.<br/><br/>
+    <img className="thumbnail" alt="assistant zoiper Windows" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper01.png" loading="lazy" />
+  </Tab>
+  <Tab label="macOS">
+    Une fois les deux champs complétés, cliquez sur <code className="action">Login</code>.<br/><br/>
+    <img className="thumbnail" alt="assistant zoiper macOS" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper01-macos.png" loading="lazy" />
+  </Tab>
+  <Tab label="Android">
+    Une fois les deux champs complétés, cliquez sur <code className="action">Créer un compte</code>.<br/><br/>
+    <img className="thumbnail" alt="assistant zoiper Android" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper01-android.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Dans la fenêtre suivante, renseignez à nouveau votre **Domain** OVHcloud et cliquez sur <code className="action">Suivant</code>.
+
+<Tabs>
+  <Tab label="Windows">
+    <img className="thumbnail" alt="domain zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper02.png" loading="lazy" />
+  </Tab>
+  <Tab label="macOS">
+    <img className="thumbnail" alt="domain zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper02-macos.png" loading="lazy" />
+  </Tab>
+  <Tab label="Android">
+    <img className="thumbnail" alt="domain zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper02-android.png" loading="lazy" />
+
+Un message d'avertissement apparaît si un proxy est nécessaire, poursuivez la création du compte.
+    <img className="thumbnail" alt="warning domain zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper02-android-proxy-warning.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+L'assistant de configuration Zoiper vous propose alors de saisir un nom d'utilisateur d'authentification et un proxy sortant.
+
+Si le proxy sortant :
+
+<details>
+
+<summary>est identique au **Domain**</summary>
+
+Ces informations n'étant pas nécessaires pour l'enregistrement d'une ligne SIP OVHcloud, cliquez sur le bouton <code className="action">Passer</code>.
+
+<Tabs>
+  <Tab label="Windows">
+    <img className="thumbnail" alt="proxy zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper03.png" loading="lazy" />
+  </Tab>
+  <Tab label="macOS">
+    <img className="thumbnail" alt="proxy zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper03-macos.png" loading="lazy" />
+  </Tab>
+  <Tab label="Android">
+    <img className="thumbnail" alt="proxy zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper03-android.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>est différent du **Domain**</summary>
+
+Renseignez uniquement le proxy sortant de votre ligne SIP, puis cliquez sur le bouton <code className="action">Suivant</code>.
+
+<Tabs>
+  <Tab label="Windows">
+    <img className="thumbnail" alt="proxy zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper03-proxy.png" loading="lazy" />
+  </Tab>
+  <Tab label="macOS">
+    <img className="thumbnail" alt="proxy zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper03-macos-proxy.png" loading="lazy" />
+  </Tab>
+  <Tab label="Android">
+    <img className="thumbnail" alt="proxy zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper03-android-proxy.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+Le logiciel testera ensuite les protocoles de transport possibles. Les lignes SIP OVHcloud utilisant uniquement le protocole UDP, veillez à ce qu'il soit sélectionné.
+
+Sélectionnez ensuite <code className="action">Suivant</code> ou <code className="action">Terminer</code>.
+
+<Tabs>
+  <Tab label="Windows">
+    <img className="thumbnail" alt="protocole zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper04.png" loading="lazy" />
+  </Tab>
+  <Tab label="macOS">
+    <img className="thumbnail" alt="protocole zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper04-macos.png" loading="lazy" />
+  </Tab>
+  <Tab label="Android">
+    <img className="thumbnail" alt="protocole zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper04-android.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Un message de succès de l'enregistrement de la ligne est alors présenté. Si ce n'est pas le cas, consultez la section « [Dépannage](#depannage) » de ce guide.
+
+<img className="thumbnail" alt="protocole zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper05.png" loading="lazy" />
+
+Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP OVHcloud.
+
+<img className="thumbnail" alt="enregistrement zoiper" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper06.png" loading="lazy" />
+
+### iOS - Installation manuelle <a name="ios-manual-installation"></a>
+
+:::info
+Sur iOS, la version gratuite de Zoiper est intitulée *Zoiper Lite* et ne propose pas d'assistant de configuration de ligne.
+Les étapes ci-dessous décrivent comment configurer manuellement une ligne SIP OVHcloud dans Zoiper Lite pour iOS.
+
+:::
+
+
+<details>
+
+<summary>Cliquez sur ce lien pour la procédure d'installation de Zoiper Lite sur iOS</summary>
+
+
+Une fois Zoiper Lite installé, sélectionnez <code className="action">Réglages</code> en bas à droite.
+
+<img className="thumbnail" alt="zoiper - iOS - réglages" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios01.png" loading="lazy" />
+
+Sélectionnez <code className="action">Comptes</code>.
+
+<img className="thumbnail" alt="zoiper - iOS - comptes" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios02.png" loading="lazy" />
+
+Sélectionnez le bouton <code className="action">+</code> pour ajouter un nouveau compte SIP.
+
+<img className="thumbnail" alt="zoiper - iOS - ajouter un compte" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios03.png" loading="lazy" />
+
+Répondez <code className="action">Oui</code> à la question « Avez-vous déjà un compte ? ».
+
+<img className="thumbnail" alt="zoiper - iOS - ajouter un compte" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios04.png" loading="lazy" />
+
+Sélectionnez <code className="action">Compte SIP</code>.
+
+<img className="thumbnail" alt="zoiper - iOS - compte SIP" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios05.png" loading="lazy" />
+
+Vous avez alors accès à la configuration du compte SIP. Complétez les champs suivants :
+
+- `Nom du compte` : Définissez un nom pour votre compte.
+- `Domaine` : Renseignez le **Domain** de votre ligne SIP. Si vous ne le connaissez pas, consultez le guide « [Tutoriel - Utiliser une ligne SIP OVHcloud sur un softphone](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone/) ».
+- `Numéro` : Renseignez le numéro de votre ligne SIP au format `0033912345678`.
+- `Mot de passe` : Renseignez le mot de passe de votre ligne SIP. Si vous ne connaissez plus votre mot de passe SIP, consultez notre guide pour [modifier le mot de passe d'une ligne SIP](/guides/web-cloud/phone-and-fax/voip/modifier-mot-de-passe-ligne-sip/).
+- `Proxy sortant` : Activez le slider `Proxy sortant activé` et renseignez le proxy sortant de votre ligne SIP **uniquement s'il est différent du Domain**.
+
+Appuyez ensuite sur le bouton vert <code className="action">S'enregistrer</code> situé **au-dessus** des champs complétés.
+
+<Tabs>
+  <Tab label="Configuration de base">
+    <img className="thumbnail" alt="zoiper - iOS - informations SIP" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios06.png" loading="lazy" />
+  </Tab>
+  <Tab label="Proxy sortant différent du **Domain**">
+    <img className="thumbnail" alt="zoiper - iOS - informations SIP" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios06_proxy.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Si les informations d'identification de la ligne sont correctes, vous obtiendrez le message `État de l'enregistrement: OK`. Revenez alors au menu principal de l'application Zoiper pour utiliser votre ligne SIP.
+
+<Tabs>
+  <Tab label="Configuration de base">
+    <img className="thumbnail" alt="zoiper - iOS - informations SIP" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios07.png" loading="lazy" />
+  </Tab>
+  <Tab label="Proxy sortant différent du **Domain**">
+    <img className="thumbnail" alt="zoiper - iOS - informations SIP" src="/images/web-cloud/phone-and-fax/voip/register-sip-softphone-zoiper/zoiper-ios07_proxy.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+### Dépannage <a name="depannage"></a>
+
+Si l'enregistrement de votre ligne a échoué, vérifiez que vous avez bien saisi les identifiants SIP OVHcloud, notamment le mot de passe SIP.<br/>
+En cas d'échecs répétés, [modifiez votre mot de passe SIP depuis l'espace client OVHcloud](/guides/web-cloud/phone-and-fax/voip/modifier-mot-de-passe-ligne-sip/) et refaites un essai d'enregistrement avec un nouveau mot de passe SIP.
+
+Vérifiez également que l'adresse IP depuis laquelle vous utilisez Zoiper fait partie des adresses IP autorisées à utiliser votre ligne SIP.<br/>
+Pour plus de détails, consultez le guide [Restreindre sa ligne SIP OVHcloud par IP](/guides/web-cloud/phone-and-fax/voip/secure-sip-line-ovh/).
+
+Vous pouvez aussi tester l'enregistrement de votre ligne sur [un autre softphone](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/).
+
+## Aller plus loin
+
+[Utiliser une ligne SIP OVHcloud sur un softphone](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone/)
+
+[Utiliser une ligne SIP OVHcloud sur Linphone](/guides/web-cloud/phone-and-fax/voip/register-sip-softphone-linphone/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

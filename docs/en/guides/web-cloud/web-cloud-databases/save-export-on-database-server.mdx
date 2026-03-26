@@ -1,0 +1,200 @@
+---
+title: Backing up and exporting a database on your database server
+description: Find out how to back up and export a database from your Web Cloud Databases server using the OVHcloud Control Panel or phpMyAdmin
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+Your database can contain a large amount of essential information for your website. It is therefore vital to be able to back it up or export it.
+
+**Find out how to back up and export your database from your database server.**
+
+## Requirements
+
+- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-gb/web-cloud/databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Select your database service
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## Instructions
+
+:::info
+[Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) solutions do not provide access to the database management system itself, but to the databases hosted on it.
+
+- There is no super user "root" access.
+- Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL SQL or Adminer is fully compatible.
+
+:::
+
+
+### Backing up and exporting a database from the Control Panel
+
+:::info
+- Backups are automatically performed once a day on all your databases.
+- Automatic and manual backups are kept for 30 days. After this period, they are automatically deleted.
+
+:::
+
+
+#### Creating a manual backup
+
+Click on the tabs below to view each of the **3** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) page, then select the solution concerned.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Click on the <code className="action">Databases</code> tab.
+    
+    In the **Backups** column, the number corresponds to the number of available backups for your database.
+  </Tab>
+  <Tab label="Step 3">
+    Click the <code className="action">...</code> button to the right of the database, then on <code className="action">Back up now</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Exporting a backup
+
+Click on the tabs below to view each of the **4** steps.
+
+<Tabs>
+  <Tab label="Step 1">
+    Go to the [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database) page, then select the solution concerned.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Click on the <code className="action">Databases</code> tab.
+    
+    In the **Backups** column, the number corresponds to the number of available backups for your database.
+  </Tab>
+  <Tab label="Step 3">
+    Click the <code className="action">...</code> button to the right of the database, then on <code className="action">Show backups</code>.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 4">
+    The list of available backups appears. Click the <code className="action">...</code> button to the right of the backup you want, then on <code className="action">Download the backup</code>.
+  </Tab>
+</Tabs>
+
+
+### Backing up and exporting a database outside the Control Panel
+
+If the available RAM on your server does not allow the desired export, use the OVHcloud tool in the Control Panel, which uses resources external to your plan. Refer to the section "[Backing up and exporting a database from the Control Panel](#backing-up-and-exporting-a-database-from-the-control-panel)" of this documentation.
+
+**Click on the export method of your choice to view the content.**
+
+<details>
+
+<summary>Export a MySQL or MariaDB database from OVHcloud phpMyAdmin</summary>
+
+
+To export your database directly from phpMyAdmin, first log in using the guide "[Connecting to a database](/guides/web-cloud/web-cloud-databases/connecting-to-database-on-database-server/)".
+
+Once logged in to phpMyAdmin, click on the name of the database you want to export, then on the <code className="action">Export</code> tab at the top.
+
+There are two possible export modes. If you do not have a specific need, we recommend using the **quick** mode in **SQL** format.
+
+<img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png" loading="lazy" />
+
+</details>
+
+
+<details>
+
+<summary>Export a MySQL or MariaDB database via command line</summary>
+
+
+```bash
+mysqldump --host=server --user=user --port=port --password=password database_name > database_name.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>Export a MySQL or MariaDB database from a PHP script</summary>
+
+
+```php
+1. <?php echo "Your database is being backed up.......";
+2. system("mysqldump --host=server --user=user --port=port --password=password database_name > database_name.sql");
+3. echo "Backup complete. You can retrieve the database via FTP";
+4. ?>
+```
+
+:::warning
+- To prevent third-party access to this file containing sensitive data, secure access to it using the guide: [How do I password-protect a directory?](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/)
+- This action is only possible from an OVHcloud shared hosting plan.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>Export a PostgreSQL database via command line</summary>
+
+
+```bash
+pg_dump --host=server --port=port --user=user --password=password database_name > database_name.sql
+```
+
+</details>
+
+
+<details>
+
+<summary>Export a PostgreSQL database from a PHP script</summary>
+
+
+```php
+1. <?php echo "Your database is being backed up.......";
+2. system("PGPASSWORD=password pg_dump --host=server --port=port --user=user --password=password database_name > database_name.sql");
+3. echo "Backup complete. You can retrieve the database via FTP";
+4. ?>
+```
+
+:::warning
+- To prevent third-party access to this file containing sensitive data, secure access to it using the guide: [How do I password-protect a directory?](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/)
+- This action is only possible from an OVHcloud shared hosting plan.
+
+:::
+
+
+</details>
+
+
+## Go further
+
+[Backing up and exporting a database from the Control Panel](#backing-up-and-exporting-a-database-from-the-control-panel)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

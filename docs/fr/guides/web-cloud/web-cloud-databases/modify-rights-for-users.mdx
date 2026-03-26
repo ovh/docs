@@ -1,0 +1,130 @@
+---
+title: "Web Cloud Databases - Modifier les droits d'un utilisateur"
+description: "Découvrez comment modifier les droits d'un utilisateur sur votre solution Web Cloud Databases"
+lastUpdated: 2026-03-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+La solution [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) peut contenir plusieurs bases de données. Elle permet de définir un ou plusieurs utilisateurs pour la gestion et l'utilisation de vos bases de données. Ces utilisateurs peuvent avoir des droits plus ou moins élevés en fonction de leurs rôles au niveau de vos bases de données.
+Au cours de l'utilisation du produit, vous pouvez être amené à modifier les droits d'un utilisateur sur votre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+
+**Découvrez comment modifier les droits d'un utilisateur sur votre solution Web Cloud Databases.**
+
+## Prérequis
+
+- Disposer d'une solution [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) et d'un ou plusieurs utilisateurs.
+
+{/* CP-NAV-START:web-cloud-databases */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Web Cloud Databases</code> > Sélectionnez votre service de base de données
+
+---
+{/* CP-NAV-END:web-cloud-databases */}
+
+## En pratique
+
+:::info
+Pour créer un nouvel utilisateur sur votre solution Web Cloud Databases, consultez la section **Créer un utilisateur** de notre guide « [Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/guides/web-cloud/web-cloud-databases/create-db-and-user-on-db-server/) ».
+
+:::
+
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Web Cloud Databases](https://manager.eu.ovhcloud.com/#/web/web/private_database), puis choisissez la solution concernée.
+    
+    <img className="thumbnail" alt="Web Cloud Databases" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Sur la page qui s'affiche, cliquez sur l'onglet <code className="action">Utilisateurs et droits</code>.
+    
+    <img className="thumbnail" alt="Users and rights" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 3">
+    Cliquez sur le bouton <code className="action">...</code> situé à droite de l'utilisateur concerné, puis sur <code className="action">Gérer les droits</code>.
+    
+    <img className="thumbnail" alt="Manage rights" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-user-alone.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 4">
+    Sur la nouvelle page qui s'affiche, vous trouverez un tableau recensant toutes les bases de données présentes sur votre solution Web Cloud Databases. Vous visualiserez dans ce tableau l'ensemble des droits dont votre utilisateur dispose pour chacune des bases de données présentes sur votre solution Web Cloud Databases.
+    
+    <img className="thumbnail" alt="Changing user rights" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png" loading="lazy" />
+
+C'est à cet endroit que vous pourrez modifier les droits de votre utilisateur pour chacune de vos bases de données. Pour cela et pour chacune des bases de données concernées, il vous suffit de cliquer sur les cercles vides correspondants aux droits que vous souhaitez redéfinir pour votre utilisateur. La modification est effective en quelques instants.
+  </Tab>
+</Tabs>
+
+
+Retrouvez ci-dessous un tableau récapitulatif des types de requêtes possibles sur une base de données en fonction du droit attribué à l'utilisateur :
+
+<table align="center">
+<thead>
+<tr>
+<th><center>Droits</center></th>
+<th><center>Administrateur</center></th>
+<th><center>Lecture / Écriture</center></th>
+<th><center>Lecture</center></th>
+<th><center>Aucun</center></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><center>Select</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td></td>
+</tr>
+<tr>
+<td><center>Insert</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td></td><td></td>
+</tr>
+<tr>
+<td><center>Update</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td></td><td></td>
+</tr>
+<tr>
+<td><center>Delete</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td></td><td></td>
+</tr>
+<tr>
+<td><center>Create</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td><center>Alter</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td><center>Drop</center></td>
+<td><center><span style={{backgroundColor:"#198754", color:"#ffffff", padding:"2px 7px", borderRadius:"7px"}}>✔</span></center></td>
+<td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+
+## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

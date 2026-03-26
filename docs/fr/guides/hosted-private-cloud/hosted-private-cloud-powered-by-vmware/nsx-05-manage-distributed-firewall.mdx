@@ -1,0 +1,246 @@
+---
+title: Gestion du pare-feu distribué dans NSX
+description: "Découvrez la gestion du pare-feu distribué au travers de la création d'une règle qui bloque le trafic entre une machine virtuelle et l'ensemble des machines virtuelles d'un autre segment"
+lastUpdated: 2023-02-27
+---
+
+## Objectif
+
+La fonctionnalité du pare-feu distribué dans NSX permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. Il doit être utilisé normalement sur les connexions est-ouest (ovh-T1-gw)  mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-T0-gw). Le filtrage s'applique à partir de la source (VM, segment, réseau, etc...).
+
+Pour simplifier l'administration de NSX, il est possible de positionner des marqueurs (*tags*) sur vos éléments (segments, machines virtuelles, rôles, etc..) et de créer des groupes qui contiennent les objets associés aux marqueurs ou des plages d'adresses IP (cette solution n'est pas à privilégier).
+
+**Découvrez la gestion du pare-feu distribué au travers de la création d'une règle qui bloque le trafic entre une machine virtuelle et l'ensemble des machines virtuelles d'un autre segment.**
+
+:::warning
+OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+
+Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+
+:::
+
+
+## Prérequis
+
+- Être contact administrateur de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
+- Avoir **NSX** déployé avec deux segments configurés dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/).
+
+## En pratique
+
+Nous allons isoler les communications entre une machine virtuelle et l'ensemble des machines virtuelles d'un segment, de manière bi-directionnelle en effectuant ces opérations : 
+
+- Création de deux marqueurs (tags), un sur une machine virtuelle et l'autre sur un segment.
+- Création de deux groupes associés, l'un contenant le premier marqueur et l'autre le second.
+- Création d'une stratégie dans le pare-feu distribué qui contiendra deux règles :
+    - Une règle qui interdira le trafic venant du premier groupe vers le second.
+    - Une autre règle qui interdira le trafic venant du second groupe vers le premier.
+
+### Création des marqueurs (tags)
+
+Dans l'interface NSX, allez dans l'onglet <code className="action">Networking</code> et cliquez sur <code className="action">Segments</code> à gauche dans la rubrique **Connectivity**.
+
+Cliquez ensuite sur les <code className="action">trois points verticaux</code> à gauche du segment que vous voulez marquer et choisissez <code className="action">Edit</code> dans le menu.
+
+<img className="thumbnail" alt="01 Create tag on segment 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/01-create-tag-on-segment01.png" loading="lazy" />
+
+A droite de **Tags**, saisissez <code className="action">ovsegment</code> à la place de tag et cliquez sur <code className="action">Add Item(s) ovsegment</code> en dessous de la zone de saisie.
+
+<img className="thumbnail" alt="01 Create tag on segment 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/01-create-tag-on-segment02.png" loading="lazy" />
+
+Saisissez <code className="action">ov1</code> à la place de **Scope** et cliquez sur <code className="action">Add Item(s) ov1</code> en dessous de la zone de saisie.
+
+<img className="thumbnail" alt="01 Create tag on segment 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/01-create-tag-on-segment02.png" loading="lazy" />
+
+Cliquez sur le signe <code className="action">+</code> à gauche de votre marqueur.
+
+<img className="thumbnail" alt="01 Create tag on segment 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/01-create-tag-on-segment03.png" loading="lazy" />
+
+Le marqueur créé est affiché en bas à droite de **Tags**, vous pouvez en créer d'autres en fonction de vos besoins.
+
+Cliquez sur <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="01 Create tag on segment 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/01-create-tag-on-segment04.png" loading="lazy" />
+
+Cliquez sur <code className="action">CLOSE EDITING</code> pour finaliser le balisage de votre segment.
+
+<img className="thumbnail" alt="01 Create tag on segment 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/01-create-tag-on-segment04.png" loading="lazy" />
+
+Allez sur l'onglet <code className="action">Inventory</code> et cliquez sur <code className="action">Virtual Machines</code> à gauche dans l'inventaire pour afficher la liste des machines virtuelles. 
+
+Cliquez ensuite sur les <code className="action">trois points verticaux</code> à gauche de la machine virtuelle que vous voulez marquer et choisissez <code className="action">Edit</code> dans le menu.
+
+<img className="thumbnail" alt="02 Create tag on vm 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/02-create-tag-on-vm01.png" loading="lazy" />
+
+Saisissez <code className="action">vm</code> à la place de **Tag** et cliquez sur <code className="action">Add Item(s) vm</code> en dessous de la zone de saisie.
+
+<img className="thumbnail" alt="02 Create tag on vm 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/02-create-tag-on-vm02.png" loading="lazy" />
+
+Saisissez <code className="action">ov2</code> à la place de **Scope** et cliquez sur <code className="action">Add Item(s) ov2</code> en dessous de la zone de saisie.
+
+<img className="thumbnail" alt="02 Create tag on vm 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/02-create-tag-on-vm03.png" loading="lazy" />
+
+Cliquez sur le signe <code className="action">+</code> à gauche de votre marqueur.
+
+<img className="thumbnail" alt="02 Create tag on vm 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/02-create-tag-on-vm04.png" loading="lazy" />
+
+Le marqueur est créé, cliquez sur <code className="action">SAVE</code> pour enregistrer vos modifications.
+
+<img className="thumbnail" alt="02 Create tag on vm 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/02-create-tag-on-vm05.png" loading="lazy" />
+
+Restez dans l'inventaire et cliquez sur <code className="action">Tags</code> à gauche pour afficher la liste des marqueurs.
+
+<img className="thumbnail" alt="03 Show tags 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/03-show-tags01.png" loading="lazy" />
+
+### Ajout de groupes qui contiennent les marqueurs (tags)
+
+Toujours dans l'inventaire, allez dans <code className="action">Groups</code> à gauche et cliquez sur <code className="action">ADD GROUP</code> pour créer un groupe.
+
+<img className="thumbnail" alt="04 Create Group With tag on segment 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/04-create-group-with-tag-on-segment01.png" loading="lazy" />
+
+Saisissez <code className="action">g-segment01</code> en dessous de la colonne **Name** et cliquez sur <code className="action">Set</code> sous la colonne **Compute Members**.
+
+<img className="thumbnail" alt="04 Create Group With tag on segment 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/04-create-group-with-tag-on-segment02.png" loading="lazy" />
+
+Laissez <code className="action">Generic</code> sélectionné et cliquez sur <code className="action">+ ADD CRITERION</code>.
+
+<img className="thumbnail" alt="04 Create Group With tag on segment 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/04-create-group-with-tag-on-segment03.png" loading="lazy" />
+
+Choisissez ces paramètres :
+
+- **Type** : `NSX Segment`.
+- **Tags** : Equals `ovsegment`.
+- **Scope**: Equals `ov1`.
+
+Cliquez sur <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="04 Create Group With tag on segment 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/04-create-group-with-tag-on-segment04.png" loading="lazy" />
+
+Cliquez sur <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="04 Create Group With tag on segment 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/04-create-group-with-tag-on-segment05.png" loading="lazy" />
+
+Le groupe est créé, cliquez sur le bouton <code className="action">View Members</code> se trouvant sur la ligne de votre groupe pour en afficher la liste des membres.
+
+<img className="thumbnail" alt="04 Create Group With tag on segment 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/04-create-group-with-tag-on-segment06.png" loading="lazy" />
+
+Cliquez sur <code className="action">IP Addresses</code> pour afficher les adresses IP qui sont utilisées sur votre segment et qui ont été automatiquement ajoutées à votre groupe.
+
+<img className="thumbnail" alt="04 Create Group With tag on segment 07" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/04-create-group-with-tag-on-segment07.png" loading="lazy" />
+
+Cliquez sur <code className="action">NSX Segments</code> pour afficher le segment membre de ce groupe automatiquement rajouté à partir des critères. Vous pouvez cliquer sur <code className="action">CLOSE</code> pour fermer cette fenêtre.
+
+<img className="thumbnail" alt="04 Create Group With tag on segment 08" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/04-create-group-with-tag-on-segment08.png" loading="lazy" />
+
+Cliquez sur <code className="action">ADD GROUP</code> pour créer un deuxième groupe.
+
+<img className="thumbnail" alt="05 Create Group With tag on VM 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/05-create-group-with-tag-on-vm01.png" loading="lazy" />
+
+Saisissez <code className="action">g-vm</code> en dessous de la colonne **Name** et cliquez sur <code className="action">Set</code> sous la colonne **Compute Members**.
+
+<img className="thumbnail" alt="05 Create Group With tag on VM 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/05-create-group-with-tag-on-vm02.png" loading="lazy" />
+
+Laissez <code className="action">Generic</code> sélectionné et cliquez sur <code className="action">+ ADD CRITERION</code>.
+
+<img className="thumbnail" alt="05 Create Group With tag on VM 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/05-create-group-with-tag-on-vm03.png" loading="lazy" />
+
+Choisissez ces paramètres :
+
+- **Type** : `Virtual Machine`.
+- **Tags** : Equals `vm`.
+- **Scope**: Equals `ov2`.
+
+Cliquez sur <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="05 Create Group With tag on VM 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/05-create-group-with-tag-on-vm04.png" loading="lazy" />
+
+Cliquez sur <code className="action">SAVE</code>.
+
+<img className="thumbnail" alt="05 Create Group With tag on VM 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/05-create-group-with-tag-on-vm05.png" loading="lazy" />
+
+Cliquez sur <code className="action">View Members</code> sur la ligne de votre groupe pour en afficher les membres.
+
+<img className="thumbnail" alt="05 Create Group With tag on VM 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/05-create-group-with-tag-on-vm06.png" loading="lazy" />
+
+Dans la rubrique **Virtual Machines**, vous voyez la machine virtuelle balisée qui a été automatiquement ajoutée.
+
+Cliquez sur <code className="action">CLOSE</code> pour fermer cette fenêtre.
+
+<img className="thumbnail" alt="05 Create Group With tag on VM 07" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/05-create-group-with-tag-on-vm07.png" loading="lazy" />
+
+### Mise en place d'une règle de pare-feu distribué
+
+Nous allons maintenant créer, sur le pare-feu distribué, une règle de blocage bidirectionnel entre les deux groupes créés.
+
+Allez sur l'onglet <code className="action">Security</code>, sélectionnez <code className="action">Distributed Firewall</code> et cliquez sur <code className="action">+ ADD POLICY</code>.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules01.png" loading="lazy" />
+
+Nommez votre stratégie <code className="action">Isolate vm and segment</code>.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules02.png" loading="lazy" />
+
+Cliquez sur les <code className="action">trois points verticaux</code> à gauche de votre stratégie et choisissez <code className="action">Add Rule</code> dans le menu.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules03.png" loading="lazy" />
+
+Cliquez sur l'icône en forme de <code className="action">stylo</code> à droite de **Any** dans la colonne **Sources**.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules04.png" loading="lazy" />
+
+Restez sur l'onglet <code className="action">groups</code>, cochez le groupe <code className="action">g-segment01</code> et cliquez sur <code className="action">APPLY</code>
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules05.png" loading="lazy" />
+
+Cliquez sur l'icône en forme de <code className="action">stylo</code> à droite de **Any** dans la colonne **Destinations**.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules06.png" loading="lazy" />
+
+Cochez le groupe <code className="action">g-vm</code> et cliquez sur <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 07" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules07.png" loading="lazy" />
+
+Choisissez <code className="action">Drop</code> pour supprimer les paquets sur cette règle et cliquez sur les <code className="action">trois points verticaux</code> à gauche de votre stratégie.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 08" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules08.png" loading="lazy" />
+
+Cliquez sur <code className="action">Add Rule</code> dans le menu.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 09" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules09.png" loading="lazy" />
+
+Cliquez sur l'icône en forme de <code className="action">stylo</code> à droite de **Any** dans la colonne **Sources**.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 10" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules10.png" loading="lazy" />
+
+Cochez le groupe <code className="action">g-vm</code> et cliquez sur <code className="action">APPLY</code>
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 11" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules11.png" loading="lazy" />
+
+Cliquez sur l'icône en forme de <code className="action">stylo</code> à droite de **Any** dans la colonne **Destinations**.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 12" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules12.png" loading="lazy" />
+
+Cochez le groupe <code className="action">g-segment01</code> et cliquez sur <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 13" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules13.png" loading="lazy" />
+
+Choisissez <code className="action">Drop</code> pour supprimer les paquets sur cette règle et cliquez sur <code className="action">PUBLISH</code> pour valider la création de la stratégie et de ses deux règles associées.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 14" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules14.png" loading="lazy" />
+
+Votre règle est active, le trafic n'est plus possible dans les deux sens entre la machine virtuelle membre du groupe g-vm et le segment membre du group g-segment.
+
+<img className="thumbnail" alt="06 Create distributed firewall rules 14" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/06-create-distributed-firewall-rules14.png" loading="lazy" />
+
+## Aller plus loin
+
+[Premiers pas avec NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-01-first-steps/)
+
+[Gestion des segments dans NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/)
+
+[Documentation VMware sur le pare-feu distribué dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-6AB240DB-949C-4E95-A9A7-4AC6EF5E3036.html)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).
+

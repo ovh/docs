@@ -1,0 +1,98 @@
+---
+title: Historial de envíos
+description: Cómo gestionar el historial de envíos de sus SMS desde una cuenta de OVHcloud
+lastUpdated: 2025-12-30
+---
+
+:::info
+Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+
+:::
+
+
+## Objetivo
+
+Esta guía explica cómo consultar y descargar el historial de SMS enviados desde el área de cliente de OVHcloud.
+
+## Requisitos
+
+- Tener una cuenta de SMS de OVHcloud con la que haya enviado al menos un SMS.
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Ruta de navegación:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Seleccione su cuenta SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png" loading="lazy" />
+
+## Procedimiento
+
+El historial de envíos incluye información sobre la fecha, el remitente, el destinatario y el contenido del SMS enviado.
+
+:::info
+El área de cliente de OVHcloud permite consultar los SMS enviados en los últimos 6 meses (o los últimos 5000 SMS si ha enviado más de 5000 en los últimos 6 meses).
+
+Para consultar SMS anteriores (hasta los últimos 12 meses), deberá descargar el historial de sus SMS en formato CSV. Consulte [el paso 2 de esta guía](#csv).
+
+:::
+
+
+### 1. Consultar el historial en el área de cliente
+
+En la barra de pestañas, haga clic en <code className="action">Mensage y campaña</code> y, seguidamente, en <code className="action">Gestión de SMS</code> para acceder al historial de sus SMS unitarios o en <code className="action">Gestión de campañas</code> para acceder al historial de sus campañas de SMS.
+
+A continuación, haga clic en el botón <code className="action">Historial de envíos</code> o <code className="action">Estadísticas e historial</code>.
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory1.png" loading="lazy" />
+
+Para filtrar el historial de SMS por fecha de envío, haga clic sobre la palabra «Fecha» en la primera columna a la izquierda.
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory2.png" loading="lazy" />
+
+Para consultar o eliminar un SMS, haga clic en el icono con forma de tres puntos (<code className="action">...</code>) en la columna «Acciones».
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory3.png" loading="lazy" />
+
+Para eliminar varios SMS a la vez, selecciónelos marcando las casillas correspondientes y haga clic en el botón <code className="action">Eliminar el SMS seleccionado</code>.
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory4.png" loading="lazy" />
+
+El botón <code className="action">Filtrar</code> permite filtrar la búsqueda por remitente (si hubiera más de uno) o por destinatario.
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory5.png" loading="lazy" />
+ 
+### 2. Descargar el historial de sus SMS en CSV <a name="csv"></a>
+ 
+Para descargar el historial de los SMS enviados en formato «.CSV», haga clic en el botón <code className="action">Acciones</code> en la esquina superior izquierda y seleccione <code className="action">Descargar</code>. 
+ 
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory6.png" loading="lazy" />
+
+También puede consultar el historial desde un programa de hojas de cálculo. La información aparecerá como se muestra a continuación:
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory7.png" loading="lazy" />
+
+Detalles de la información incluida en el historial:
+
+|  Título  |  Descripción  |
+|  :-----          |  :-----          |
+|  id |  Identificador único en nuestros servidores del SMS enviado |
+|  date | Fecha y hora de envío del SMS  |
+|  sender |  Remitente desde el que se ha enviado el SMS |
+|  receiver |  Número del móvil destinatario del SMS |
+|  ptt |  Código de respuesta con el estado del SMS |
+|  operatorCode |  Identificador de red del operador móvil al que se le ha transmitido el SMS |
+|  descriptionDlr |  Descripción del código ptt recibido y estado del SMS |
+|  tag |  Etiqueta que se atribuye manualmente a través de las API (a uno o varios SMS) o automáticamente a través de nuestros servidores a cada uno de los SMS (o a cada campaña de SMS) enviados |
+|  message |  Contenido del SMS |
+
+Para más información sobre los códigos ptt y los diferentes ID del DLR, consulte la última sección de la guía [Usuarios de la API](/guides/web-cloud/messaging/sms/tout-savoir-sur-les-utilisateurs-sms#5-especificar-una-url-de-callback/).
+ 
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

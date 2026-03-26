@@ -1,0 +1,93 @@
+---
+title: Instanzgröße über das OVHcloud Kundencenter ändern
+description: Erfahren Sie, wie Sie eine Public Cloud Instanz über das OVHcloud Kundencenter skalieren
+lastUpdated: 2026-03-04
+---
+
+## Ziel
+
+Wenn Ihre Instanz aufgrund erhöhter Aktivität oder neuer Anforderungen nicht mehr über ausreichende Ressourcen verfügt, können Sie diese mit wenigen Klicks über die Public Cloud erhöhen.
+
+**Diese Anleitung erklärt, wie Sie die Größe Ihrer Instanz über das OVHcloud Kundencenter ändern.**
+
+:::warning
+Bei klassischen Modellen ist nur die Umstellung auf ein größeres Modell möglich.
+Beachten Sie, dass die Instanz während der Operation unterbrochen wird.
+
+:::
+
+
+:::tip[Success]
+*Flex*-Instanzen erlauben die Anpassung auf höhere oder niedrigere Modelle aufgrund einer festen Einzeldiskgröße.
+
+:::
+
+
+## Voraussetzungen
+
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Account.
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigationspfad:** <code className="action">Public Cloud</code> > Wählen Sie Ihr Projekt aus
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## In der praktischen Anwendung
+
+Klicken Sie im linken Menü auf <code className="action">Instanzen</code>.
+
+Klicken Sie auf <code className="action">...</code> rechts neben der Instanz und wählen Sie <code className="action">Bearbeiten</code>. Sie können auch über die Instanzdetails auf diese Aktion zugreifen, indem Sie auf den Namen der Instanz und dann auf <code className="action">Modell ändern</code> klicken.
+
+Scrollen Sie im neuen Tab zum Abschnitt **Modell**, um das gewünschte Modell auszuwählen.
+
+:::info
+Bei klassischen Modellen können Sie auf jedes Modell mit gleicher oder größerer Disk umstellen. Sie können nicht auf ein Modell mit kleinerer Disk wechseln.<br/>
+
+Nur **flexible Instanzen** können auf ein höheres oder niedrigeres Modell umgestellt werden, wobei eine feste Diskgröße von 50 GB beibehalten wird.
+
+:::
+
+
+Wenn Ihre Disk 50 GB oder weniger beträgt, können Sie bei Bedarf auf eine <code className="action">Flexible Instanz</code> wechseln.
+
+:::warning
+Wenn Sie eine Instanz vom Typ *Flex* bearbeiten, ist es nicht möglich, über das Kundencenter auf eine klassische Instanz zurückzuwechseln. Weitere Informationen finden Sie in unserer Anleitung [Eine Flex-Instanz auf eine klassische Instanz zurücksetzen](/guides/public-cloud/compute/revert-a-flex-instance/).
+
+:::
+
+
+Klicken Sie nach der Auswahl auf <code className="action">Modell ändern</code>, um Ihre Auswahl zu bestätigen.
+
+### Änderung der Diskgröße unter Windows
+
+Bei einer Größenanpassung einer Windows-Instanz wird die Partitionsgröße nicht automatisch aktualisiert. Sie müssen diese über die **Datenträgerverwaltung** erweitern:
+
+- Klicken Sie mit der rechten Maustaste auf das Menü <code className="action">Start</code> und öffnen Sie die Datenträgerverwaltung, indem Sie auf <code className="action">Disk Management</code> klicken:
+
+<img className="thumbnail" alt="Kontextmenü des Startmenüs mit der Option Datenträgerverwaltung" src="/images/public-cloud/compute/resize-instance-manager/2980.png" loading="lazy" />
+
+- Klicken Sie mit der rechten Maustaste auf die Hauptpartition und dann auf <code className="action">Extend Volume</code>.
+
+<img className="thumbnail" alt="Rechtsklick auf die Hauptpartition zum Erweitern des Volumes" src="/images/public-cloud/compute/resize-instance-manager/2981a.png" loading="lazy" />
+
+- Klicken Sie im `Extend Volume Wizard` auf <code className="action">Next</code>. Wählen Sie die Ressourcen der zu erweiternden Disk aus und klicken Sie auf <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Extend Volume Wizard mit Auswahl der Diskressourcen" src="/images/public-cloud/compute/resize-instance-manager/2978a.png" loading="lazy" />
+
+Klicken Sie abschließend auf <code className="action">Finish</code>, um die Änderung zu bestätigen.
+
+<img className="thumbnail" alt="Abschlussschritt des Extend Volume Wizard" src="/images/public-cloud/compute/resize-instance-manager/wizard2021.png" loading="lazy" />
+
+- Die neue Diskgröße wird in der Datenträgerverwaltung angezeigt.
+
+<img className="thumbnail" alt="Datenträgerverwaltung mit der neuen Diskgröße" src="/images/public-cloud/compute/resize-instance-manager/2979.png" loading="lazy" />
+
+## Weiterführende Informationen
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

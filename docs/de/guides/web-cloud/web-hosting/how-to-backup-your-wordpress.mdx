@@ -1,0 +1,156 @@
+---
+title: Tutorial - Backup Ihrer WordPress Installation
+description: Erfahren Sie hier, wie Sie Dateien und Datenbank Ihrer WordPress Website sichern
+lastUpdated: 2023-02-22
+---
+
+## Ziel
+
+Auch mit allen Vorsichtsmaßnahmen kann Ihre Website von Fehlfunktionen betroffen sein (versehentliches Überschreiben von Dateien, Konfigurationsfehler, Sicherheitslücken, Hacks). Dies kann teilweise oder vollständig zu Datenverlusten führen.<br/>
+Die regelmäßige Sicherung Ihrer Website ist eine gute Vorgehensweise. So können Sie zu einem früheren Zustand Ihrer Website zurückkehren, wenn eine Störung auftritt.
+
+Sie sind für Backups von auf Webhostings gehosteten Websites alleine verantwortlich. Neben den von OVHcloud automatisch erzeugten Backups (nicht garantiert) empfehlen wir, eigene Sicherungen regelmäßig anzulegen und mithilfe geeigneter Backup-Medien (Festplatte, USB-Laufwerk etc.) zu verwalten.
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+
+:::
+
+
+**Dieses Tutorial erklärt, wie Sie Ihre WordPress Website und deren Datenbank sichern.**
+
+## Voraussetzungen
+
+- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit einer [WordPress Installation](/guides/web-cloud/web-hosting/wordpress-first-steps/).
+
+## In der praktischen Anwendung
+
+Sie können ein Backup auf zwei Arten durchführen: **Manuell** oder über ein **Plugin**.
+
+OVHcloud Webhostings beinhalten [automatische Sicherungen](/guides/web-cloud/web-hosting/ftp-save-and-backup/) (außervertraglich) und stellen einen Zugang zu diesen Backups zur Verfügung. Es liegt jedoch in Ihrer Verantwortung, eine sinnvolle Sicherungsplanung mit Ihren eigenen Wiederherstellungspunkten einzurichten.
+
+### Methode 1: Manuelle Sicherung durchführen
+
+Das manuelle Backup muss in zwei Schritten erfolgen. Speichern Sie zuerst die PHP-Dateien Ihrer Website und exportieren Sie Ihre Datenbank.
+
+#### 1.1 Dateien Ihrer Website sichern
+
+Der Datentransfer erfolgt über einen FTP-Client, z.B. FileZilla. Weitere Informationen finden Sie in unserem Tutorial "[FileZilla mit Ihrem OVHcloud Hosting verwenden](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)".
+
+Wenn Sie mit Ihrem Server über FTP verbunden sind, kopieren Sie den Inhalt des Verzeichnisses `www` (per Drag & Drop) zu einem lokalen Ordner. Dieses Verzeichnis enthält alle Dateien und Verzeichnisse Ihrer WordPress Installation (Einstellungen, Themes, Medien, etc.).
+
+<img className="thumbnail" alt="Übersicht der WordPress Dateien und Ordner" src="/images/assets/screens/other/web-tools/filezilla/wordpress-into-www.png" loading="lazy" />
+
+Klicken Sie auf das Verzeichnis `www` und ziehen Sie es zum linken Fenster auf das Verzeichnis Ihrer Wahl. Der Dateitransfer beginnt automatisch.
+
+Bei einer Fehlfunktion Ihrer Website müssen Sie die umgekehrte Operation durchführen, indem Sie die Zieldateien überschreiben.
+
+#### 1.2 Datenbank exportieren
+
+Um Ihre Datenbank zu exportieren, loggen Sie sich Sie sich über die URL, die Sie bei der Installation Ihres Webhostings erhalten haben, in das *PHPMyAdmin* Interface ein.
+
+:::tip[Success]
+Folgen Sie unserer Anleitung zum [Export einer Datenbank](/guides/web-cloud/web-hosting/sql-database-export/).
+
+:::
+
+
+<img className="thumbnail" alt="PHPMyAdmin Zugang - Empfang" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png" loading="lazy" />
+
+Klicken Sie oben auf <code className="action">Export</code>:
+
+<img className="thumbnail" alt="PHPMyAdmin-Zugang - Exportieren" src="/images/assets/screens/other/web-tools/phpmyadmin/pma-export.png" loading="lazy" />
+
+Übernehmen Sie die Voreinstellungen zum schnellen Export und SQL-Format.
+
+Klicken Sie auf <code className="action">Go</code>, um die gesamte Datenbank im SQL-Format (Structured Query Language) herunterzuladen.
+
+<img className="thumbnail" alt="PHPMyAdmin Zugang - Exportieren - Download" src="/images/assets/screens/other/browsers/web-pages/dowload-successfull.png" loading="lazy" />
+
+### Methode 2: Backups über Plugin erstellen
+
+Es gibt viele Plugins für WordPress zur Verwaltung von Backups. Das meistgenutzte ist [UpdraftPlus](https://wordpress.org/plugins/updraftplus/) mit mehreren Millionen aktiven Installationen. Die kostenlose Version reicht aus, um Ihre Website zu sichern. Die Premium Version bietet mehr Optionen wie inkrementelle Backups, Migrationstools, Multisite-Backups, mehr Auswahl an Datenspeicher-Diensten, etc. .
+
+Laden Sie das Plugin im Format `.zip` herunter. Die heruntergeladene Datei wurde in diesem Beispiel zu **updraftplus.zip** umbenannt.
+
+#### 2.1 Zur Installation des Plugin im Admin-Bereich einloggen
+
+Standardmäßig handelt es sich um Ihren Domainnamen gefolgt von `/wp-admin`:
+
+<img className="thumbnail" alt="Administrator-Anbindung an wp-admin" src="/images/assets/screens/other/cms/wordpress/login-interface.png" loading="lazy" />
+
+Gehen Sie auf der Startseite in den Bereich <code className="action">Plugins</code> und klicken Sie dann auf <code className="action">Installieren</code>:
+
+<img className="thumbnail" alt="Plugin hinzufügen" src="/images/assets/screens/other/cms/wordpress/plugins-add-new.png" loading="lazy" />
+
+Wählen Sie das Plugin aus, indem Sie auf den Button <code className="action">Durchsuchen</code> klicken:
+
+<img className="thumbnail" alt="Plugin hochladen" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-add-new-updraftplus.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Jetzt installieren</code>:
+
+<img className="thumbnail" alt="Plugin installieren" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-browse-updraftplus.png" loading="lazy" />
+
+Nach der Installation können Sie das Plugin aktivieren:
+
+<img className="thumbnail" alt="Installationsbestätigung" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-activate-updraftplus.png" loading="lazy" />
+
+Sobald die Erweiterung aktiviert ist, erscheint sie in der Liste der Plugins:
+
+<img className="thumbnail" alt="Liste der installierten Domainendungen" src="/images/assets/screens/other/cms/wordpress/updraftplus/plugins-list-updraftplus.png" loading="lazy" />
+
+#### 2.2 Backups konfigurieren
+
+Klicken Sie auf der oben genannten Seite auf <code className="action">Einstellungen</code> und dann auf der Seite `UpdraftPlus Backup/Restore` auf den Tab <code className="action">Einstellungen</code>:
+
+<img className="thumbnail" alt="Seite UpdraftPlus Backup/Restore" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings.png" loading="lazy" />
+
+Legen Sie das tägliche Backup für Ihre Dateien und Datenbanken fest:
+
+<img className="thumbnail" alt="UpdraftPlus Einstellungen Seite" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-settings-2.png" loading="lazy" />
+
+Wählen Sie E-Mail als Methode aus.
+
+Die Backups werden an die E-Mail-Adresse des Administrator-Accounts (den von Ihnen verwendeten Account) versendet:
+
+<img className="thumbnail" alt="Sicherung per E-Mail" src="/images/assets/screens/other/cms/wordpress/email-setting.png" loading="lazy" />
+
+Klicken Sie am Ende der Seite auf <code className="action">Änderungen speichern</code>, um zu bestätigen.
+
+### 2.3 Erstes Backup ausführen
+
+Gehen Sie auf den Tab <code className="action">Sichern/Wiederherstellen</code> und klicken Sie auf den Button <code className="action">Jetzt sichern</code>:
+
+<img className="thumbnail" alt="Seite UpdraftPlus Sichern/Wiederherstellen" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-backup-now.png" loading="lazy" />
+
+Klicken Sie im neuen Fenster auf <code className="action">Jetzt sichern</code>:
+
+<img className="thumbnail" alt="Seite Sicherung/Wiederherstellung" src="/images/assets/screens/other/cms/wordpress/updraftplus/updraftplus-perform-backup.png" loading="lazy" />
+
+Sobald Ihre Backups abgeschlossen sind, erhalten Sie eine E-Mail mit den Dateien Ihres WordPress und eine mit der Datenbank Ihrer Website.
+Wenn Sie die E-Mails nicht erhalten, überprüfen Sie die E-Mail-Adresse des von Ihnen verwendeten Accounts (im Bereich <code className="action">Benutzer</code>). Überprüfen Sie auch Ihre Ordner "Spam" oder "Junk".
+
+### Planung von Sicherungen
+
+Die Häufigkeit Ihrer Backups hängt davon ab, wie oft Sie Ihre Seiten aktualisieren. Eine tägliche Sicherung ist nützlich, wenn Sie jeden Tag Inhalte auf Ihrer Website veröffentlichen. Passen Sie die Frequenz an Ihre Veröffentlichungen an. Sie können das Update manuell durchführen (dies ist die standardmäßig angebotene Option). Es wird auch empfohlen, ein Backup durchzuführen, bevor Sie ein Theme oder eine Endung installieren oder ändern.
+
+## Zusammenfassung
+
+- Die Integration einer regelmäßigen Backup-Routine ist eine gute Methode, um den Inhalt Ihrer Website zu sichern.
+- Achten Sie darauf, dass Ihre Backups selbst gesichert sind.
+- Erstellen Sie ein Backup, bevor Sie Updates durchführen, und überprüfen Sie anschließend, dass alles korrekt auf Ihrer Website funktioniert.
+
+Wenn Sie diese bewährten Verfahren anwenden, können Sie Ihre Website stets zu einem funktionalen früheren Zustand wiederherstellen.
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+- [Offizielle Website von WordPress](https://wordpress.org)
+- [Mehr Informationen zu den Sicherungen Ihres Webhostings](/guides/web-cloud/web-hosting/hosting-technical-specificities#informationen-zu-den-automatischen-backups/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

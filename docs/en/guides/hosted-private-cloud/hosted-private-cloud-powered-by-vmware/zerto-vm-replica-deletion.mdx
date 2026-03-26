@@ -1,0 +1,56 @@
+---
+title: Delete VM replica from Zerto recovery site
+description: Remove a VM replica from a recovery site after deletion on the source site
+lastUpdated: 2021-12-09
+---
+
+## Objective
+
+Once a VM is purposefully deleted from the source site, the Zerto VPG it is part of pauses and goes into error state.<br/>
+The VM replica files are still on the target datastore.<br/>
+This document shows how to get the VPG back to normal and delete the VM replica from the target site.
+
+**Use the Zerto UI to delete the VM replica from the target site.**
+
+## Requirements 
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as Zerto (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- A deployed [Zerto Virtual Replication](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-as-a-service/)
+
+## Instructions
+
+In the Zerto target site interface menu, check the <code className="action">VPGs</code> and <code className="action">VMs</code> dashboards.<br/>
+In our example, VPG1 holds two VMs, vm1-zerto and vm2-zerto. The site sync status is functional.
+
+<img className="thumbnail" alt="Dash" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en01sync.png" loading="lazy" />
+
+In the source site vSphere interface, vm2-zerto is purposefully deleted.<br/>
+Both the VM and its disks are removed.
+
+<img className="thumbnail" alt="VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en02vmdelete.png" loading="lazy" />
+
+Back in the Zerto target site interface, the VPG pauses and goes into an error state. The vm2-zerto is also greyed out now.
+
+<img className="thumbnail" alt="VM" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en03vpgerror.png" loading="lazy" />
+
+In the <code className="action">VPGs</code> section, check the VPG1 box and in the <code className="action">Actions</code> menu, click <code className="action">Edit VPG</code>.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en04vpgedit.png" loading="lazy" />
+
+In <code className="action">VMs</code>, remove vm2-zerto from the `Selected VMS` (check the box then click the arrow back).<br/>
+Click <code className="action">Done</code>.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en05vpgremove.png" loading="lazy" />
+
+Click <code className="action">No</code> in the warning window as there is no typical need to save the recovery disk.
+
+<img className="thumbnail" alt="VPG" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en06warning.png" loading="lazy" />
+
+The VPG will sync and will get back to a functional state with only one VM left.
+
+<img className="thumbnail" alt="DONE" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-vm-replica-deletion/en07green.png" loading="lazy" />
+
+## Go further 
+
+Discuss with other Zerto users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

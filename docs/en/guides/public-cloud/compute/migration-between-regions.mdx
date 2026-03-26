@@ -1,0 +1,93 @@
+---
+title: Migration of instances between different regions
+description: This guide describes how to migrate an OVHcloud Public Cloud instance between two regions, 1AZ and 3AZ. It covers the backup, transfer and re-creation steps, with instructions via the Manager, Horizon or the OpenStack CLI.
+lastUpdated: 2025-11-04
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectives
+
+This guide explains how to migrate a Public Cloud instance from one region to another, from 1AZ to 3AZ or vice versa. It centralizes the key steps (backup, transfer and re-creation) and redirects to the detailed guides for each element.
+
+## Requirements
+
+- An [OVHcloud Public Cloud instance](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/).
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+:::info
+Before migrating an instance, it's important to understand the differences between the deployment types offered in the OVHcloud Public Cloud. Each mode (1AZ, 3AZ or Local Zones) has a direct impact on the resilience, availability and design of your infrastructure.
+
+To find out more, consult the documentation: [Comparison and resilience of Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones](/guides/public-cloud/public-cloud-cross-functional/deployment-modes-comparison-resilience-details/).
+
+:::
+
+
+### Step 1. Backup your instance
+
+Start by creating a backup of your instance to be migrated, or use an existing one if it's still valid.
+
+OVHcloud offers two types of backup, with different behaviors depending on the type of migration desired:
+
+- Local backup: Requires manual transfer if you're migrating to another region or AZ.
+- Remote backup (**recommended**): Automatically managed by OVHcloud, the local backup is replicated in the selected region. No manual transfer required.
+
+:::info
+If your local backup was performed in a 3AZ region and you wish to re-create the instance in another AZ in the same region, no transfer is required.
+
+Local backups are accessible from all availability zones within a 3AZ region. You can proceed directly to the instance re-creation stage.
+
+:::
+
+
+An instance can be backed up:
+
+- via the OVHcloud Control Panel.
+- via the OVHcloud API.
+- via the OpenStack CLI.
+- via Horizon.
+
+Find all the detailed information in the **Creating a backup of an instance** section in our guide "[Backing up an instance](/guides/public-cloud/compute/save-an-instance/)".
+
+### Step 2. Migrate your backup to another region
+
+:::info
+If you used a remote backup, you can go straight to [step 3. restore instance in new region](#step3recreateinstance).
+
+:::
+
+
+<Tabs>
+  <Tab label="Via the Openstack CLI">
+    To transfer your backup from one AZ to another via the Openstack CLI, please follow our guide: [Downloading and transferring an instance backup from one OpenStack region to another](/guides/public-cloud/compute/transfer-instance-backup-from-one-datacentre-to-another/).
+  </Tab>
+</Tabs>
+
+
+### Step 3. Restore the instance in new region <a name="step3recreateinstance"></a>
+
+The instance can be restored in the new region:
+
+- via the OVHcloud Control Panel.
+- via the OVHcloud API.
+- via the OpenStack CLI.
+- via Horizon.
+
+Find all the detailed information in the **Creating an instance from a backup** section in our guide "[Using instance backups to create or restore an instance](/guides/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/)".
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

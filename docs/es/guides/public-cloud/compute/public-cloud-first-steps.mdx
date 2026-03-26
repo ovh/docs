@@ -1,0 +1,624 @@
+---
+title: Cómo crear una instancia de Public Cloud y conectarse a ella
+description: Descubra cómo configurar instancias de Public Cloud en el área de cliente de OVHcloud y los primeros pasos con sus instancias
+lastUpdated: 2026-02-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo
+
+Las instancias de Public Cloud son fáciles de desplegar y gestionar. Sin embargo, como miembro del ecosistema Public Cloud de OVHcloud, las instancias ofrecen numerosas opciones de configuración y pueden adaptarse a diferentes casos de uso. Las siguientes instrucciones incluyen todos los pasos necesarios (y también los pasos opcionales) para crear una instancia en el área de cliente de OVHcloud y acceder a ella de forma remota.
+A continuación, podrá ir más allá con su proyecto de Public Cloud en función de sus necesidades.
+
+**Esta guía explica los primeros pasos con una instancia de Public Cloud.**
+
+
+## Requisitos
+
+- Un [proyecto Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ruta de navegación:** <code className="action">Public Cloud</code> > Seleccione su proyecto
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+:::tip[Success]
+Benefíciese de precios reducidos comprometiéndose por un periodo de 1 a 36 meses en sus recursos de Public Cloud. Más información en nuestra página [Savings Plans](https://www.ovhcloud.com/es-es/public-cloud/savings-plan/).
+
+:::
+
+
+## Procedimiento
+
+:::info
+Si todavía no ha creado ningún proyecto de Public Cloud, comience por nuestra [guía sobre la creación de un proyecto](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/).
+
+**Los detalles técnicos** importantes relativos al Public Cloud de OVHcloud están disponibles en [esta página](/guides/public-cloud/public-cloud-cross-functional/00-essential-info-to-get-started-on-public-cloud/).
+
+:::
+
+
+### Presentación del contenido
+
+- [Objetivo](#objetivo)
+- [Requisitos](#requisitos)
+- [Procedimiento](#procedimiento)
+  - [Presentación del contenido](#presentacion-del-contenido)
+  - [Paso 1: crear un juego de claves SSH](#paso-1-crear-un-juego-de-claves-ssh)
+  - [Paso 2: Importar las claves SSH](#paso-2-importar-las-claves-ssh)
+  - [Paso 3: preparar la configuración de red](#paso-3-preparar-la-configuracion-de-red)
+  - [Paso 4: crear la instancia](#paso-4-crear-la-instancia)
+    - [Paso 4.1: Nombre de la instancia](#paso-41-nombre-de-la-instancia)
+    - [Paso 4.2: Seleccione una localización](#paso-42-seleccione-una-localizacion)
+    - [Paso 4.3: Seleccione un modelo](#paso-43-seleccione-un-modelo)
+      - [Información adicional](#informacion-adicional)
+    - [Paso 4.4: Seleccione una imagen](#paso-44-seleccione-una-imagen)
+    - [Paso 4.5: Seleccione una clave SSH (no aplicable a las instancias Windows)](#paso-45-seleccione-una-clave-ssh-no-aplicable-a-las-instancias-windows)
+    - [Paso 4.6: Configure los parámetros de backup](#paso-46-configure-los-parametros-de-backup)
+    - [Paso 4.7: Configure la red](#paso-47-configure-la-red)
+    - [Paso 4.8: Seleccione un período de facturación](#paso-48-seleccione-un-periodo-de-facturacion)
+    - [Paso 4.9: Configure los parámetros avanzados](#paso-49-configure-los-parametros-avanzados)
+      - [Instancia flexible](#instancia-flexible)
+      - [Script de post-instalación](#script-de-post-instalacion)
+    - [Paso 4.10: Finalización de la instancia](#paso-410-finalizacion-de-la-instancia)
+  - [Paso 5: Conectarse a la instancia](#paso-5-conectarse-a-la-instancia)
+    - [5.1: Verificar el estado de la instancia en el área de cliente](#51-verificar-el-estado-de-la-instancia-en-el-area-de-cliente)
+    - [5.2: Primera conexión a una instancia con sistema operativo GNU/Linux](#52-primera-conexion-a-una-instancia-con-sistema-operativo-gnulinux)
+    - [5.3: Instancias Windows](#53-instancias-windows)
+      - [5.3.1: Finalizar la instalación de una instancia Windows](#531-finalizar-la-instalacion-de-una-instancia-windows)
+      - [5.3.2: Conéctese de forma remota desde Windows](#532-conectese-de-forma-remota-desde-windows)
+      - [5.3.3: Conectarse de forma remota desde otro SO](#533-conectarse-de-forma-remota-desde-otro-so)
+    - [5.4: Acceso a la consola VNC](#54-acceso-a-la-consola-vnc)
+  - [Paso 6: primeros pasos en una nueva instancia](#paso-6-primeros-pasos-en-una-nueva-instancia)
+    - [6.1: Gestión de usuarios](#61-gestion-de-usuarios)
+      - [6.1.1: Establezca una contraseña para la cuenta de usuario actual](#611-establezca-una-contrasena-para-la-cuenta-de-usuario-actual)
+      - [6.1.2: Activación de la conexión remota mediante contraseña (opcional)](#612-activacion-de-la-conexion-remota-mediante-contrasena-opcional)
+    - [6.2: Claves SSH adicionales](#62-claves-ssh-adicionales)
+- [Más información](#mas-informacion)
+
+:::info
+**Debe proporcionar una clave SSH pública al crear instancias de Public Cloud en el área de cliente.** Una vez creada la instancia, puede configurar el acceso remoto como desee.
+
+**Excepción**: la autenticación de inicio de sesión en instancias Windows requiere un nombre de usuario y una contraseña porque Windows utiliza RDP (**R**emote **D**esktop **P**rotocol).
+
+:::
+
+
+### Paso 1: crear un juego de claves SSH
+
+Si ya dispone de un par de claves SSH listo para usar, puede omitir este paso.
+
+El [protocolo SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/) permite una comunicación cliente-servidor cifrada. Un **par de claves SSH** se compone de una clave pública y una clave privada.
+
+- La **clave pública** se añade a la instancia de Public Cloud (y también puede [almacenarse en el área de cliente de OVHcloud](#paso-2-importar-las-claves-ssh)).
+- La **clave privada** se almacena en su dispositivo local y debe estar protegida contra el acceso no autorizado. Solo los dispositivos cliente con la clave privada correspondiente pueden acceder a su instancia. No se requiere contraseña de cuenta de usuario para iniciar sesión.
+
+Dispone de dos opciones para crear y gestionar sus claves SSH:
+
+- La interfaz de línea de comandos de su SO (simple cliente **OpenSSH**).
+- Software adicional (compatible con el protocolo **OpenSSH**) con línea de comandos o interfaz gráfica.
+
+La mayoría de los sistemas operativos de escritorio contemporáneos incluyen de forma nativa el cliente **OpenSSH** accesible a través de la aplicación de línea de comandos del sistema (`cmd`, `Powershell`, `Terminal`, etc.). Si no está familiarizado con el uso de las claves SSH como método de autenticación, puede utilizar las instrucciones de [esta guía](/guides/public-cloud/compute/creating-ssh-keys-pci#create-ssh-key/) para crear su par de claves.
+
+Si utiliza otro software, consulte su documentación de usuario. Las instrucciones para la solución open source `PuTTY` están disponibles en [esta guía](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/).
+
+### Paso 2: Importar las claves SSH
+
+Puede almacenar sus claves SSH públicas en la sección <code className="action">Public Cloud</code> de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es). No es obligatorio, pero hace que el proceso de creación de instancias sea más práctico.
+
+:::info
+Las claves SSH almacenadas le permiten crear sus instancias más rápidamente en el área de cliente. Para cambiar los pares de claves y añadir usuarios una vez creada la instancia, consulte la guía sobre [las claves SSH adicionales](/guides/public-cloud/compute/configuring-additional-ssh-keys/).
+
+Las claves SSH públicas añadidas al área de cliente de OVHcloud estarán disponibles para los servicios Public Cloud de todas las [regiones](https://www.ovhcloud.com/es-es/public-cloud/regions-availability/). Puede almacenar claves cifradas con **RSA**, **ECDSA** y **ED25519**.
+
+:::
+
+
+Abra <code className="action">Claves SSH</code> en el menú de la izquierda en **Parámetros**. Haga clic en el botón <code className="action">Añadir una clave SSH</code>.
+
+<img className="thumbnail" alt="ssh keys" src="/images/assets/screens/control-panel/product-selection/public-cloud/cp-pci-sshkeys.png" loading="lazy" />
+
+En la nueva ventana, introduzca un nombre para la clave. Rellene el campo `Clave` con su cadena de clave pública, por ejemplo, la creada en el [paso 1](#paso-1-crear-un-juego-de-claves-ssh). Confirme haciendo clic en <code className="action">Añadir</code>.
+
+<img className="thumbnail" alt="add key" src="/images/public-cloud/compute/public-cloud-first-steps/24-addkey.png" loading="lazy" />
+
+Ahora puede seleccionar esta clave en el [Paso 4](#paso-4-crear-la-instancia) para añadirla a una nueva instancia.
+
+### Paso 3: preparar la configuración de red
+
+Antes de crear su instancia, le recomendamos que analice cómo se utilizará la instancia en términos de red.
+
+- Si por el momento no necesita configurar la instancia con una red privada, puede pasar al [paso 4](#paso-4-crear-la-instancia). Puede crear una instancia expuesta a Internet (ver el **Modo Público** [a continuación](#networking-modes).)
+- Si la instancia debe estar conectada a una nueva red privada (OVHcloud [vRack](https://www.ovhcloud.com/es-es/network/vrack/)), tenga en cuenta que el vRack se crea automáticamente durante la creación de su proyecto Public Cloud. Por lo tanto, no es necesaria ninguna acción previa. Para más información, consulte la [guía sobre el vRack de Public Cloud](/guides/public-cloud/public-cloud-network-services/getting-started-09-creating-vrack-with-openstack/).
+
+<a name="networking-modes"></a>
+
+<details>
+
+<summary>Public Cloud Networking - Modos</summary>
+
+
+**Modo Público**
+
+Las instancias en modo público están expuestas a Internet directamente a través de IPv4/IPv6. Las direcciones IP no pueden modificarse, pero las instancias pueden tener direcciones [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/) asociadas ([incluida su propia IP](https://www.ovhcloud.com/es-es/network/byoip/)) y pueden conectarse a un [vRack](https://www.ovhcloud.com/es-es/network/vrack/).
+
+**Modo Privado**
+
+Las instancias en modo privado solo pueden estar expuestas a Internet a través de un servicio [Gateway](https://www.ovhcloud.com/es-es/public-cloud/gateway/) o [Load Balancer](https://www.ovhcloud.com/es-es/public-cloud/load-balancer/) y direcciones [Floating IP](https://www.ovhcloud.com/es-es/public-cloud/floating-ip/).
+
+Para más información, consulte nuestras guías en la sección [Public Cloud Network Services](/guides/public-cloud/public-cloud-network-services/overview/). La [guía de conceptos](/guides/public-cloud/public-cloud-network-services/concepts-01-public-cloud-networking-concepts/) proporciona una introducción a Public Cloud Networking.
+
+**Modo Privado Local**
+
+El modo privado local solo se aplica si se crea una instancia en una **Local Zone**. Las instancias pueden estar expuestas a Internet directamente a través de IPv4/IPv6. Solo las instancias de una misma Local Zone pueden conectarse a través de redes privadas. Las Local Zones no son compatibles con el [vRack](https://www.ovhcloud.com/es-es/network/vrack/). En este modo, DHCP proporciona automáticamente direcciones IP a sus instancias.
+
+Para más información, consulte la [página web de Local Zones](https://www.ovhcloud.com/es-es/public-cloud/local-zone-compute/).
+
+</details>
+
+
+### Paso 4: crear la instancia
+
+:::info
+Se requiere una clave SSH pública al crear una instancia en el área de cliente de OVHcloud (excepto las instancias Windows).
+
+Consulte el [paso 1](#paso-1-crear-un-juego-de-claves-ssh) y el [paso 2](#paso-2-importar-las-claves-ssh) de esta guía si no dispone de claves SSH listas para usar.
+
+:::
+
+
+En la página **Inicio**, haga clic en <code className="action">Crear una instancia</code>.
+
+#### Paso 4.1: Nombre de la instancia
+
+Introduzca un nombre completo para su instancia. La referencia comercial del modelo de instancia es el valor por defecto. Si es necesario, también puede añadir la región y la fecha para facilitar la identificación y la gestión de sus instancias.
+
+#### Paso 4.2: Seleccione una localización
+
+Seleccione una [localización](https://www.ovhcloud.com/es-es/public-cloud/regions-availability/) lo más cercana posible a sus usuarios o clientes. Tenga en cuenta que si selecciona una **Local Zone** en este paso, se aplicarán limitaciones de red a la instancia (ver [Paso 3](#networking-modes)).
+
+Consulte también la información de nuestra [página web sobre las Local Zones](https://www.ovhcloud.com/es-es/public-cloud/local-zone-compute/) y de la [documentación de capacidades de las Local Zones](/guides/public-cloud/compute/local-zones-capabilities-limitations/).
+
+La elección de la región determina el modo de despliegue de su instancia (1-AZ, 3-AZ o Local Zones). Para comprender las diferencias en términos de resiliencia, disponibilidad y arquitectura, consulte nuestra guía [Comparación y resiliencia de los modos de despliegue – Entender las regiones 3-AZ / 1-AZ / Local Zones](/guides/public-cloud/public-cloud-cross-functional/deployment-modes-comparison-resilience-details/).
+
+#### Paso 4.3: Seleccione un modelo
+
+En este paso, elegirá el modelo de instancia (también llamado flavour), que determina los recursos asignados a su instancia: procesador, memoria y capacidades asociadas. Abra la lista desplegable `Modelo de instancia` y seleccione el tipo de modelo más adecuado a su caso de uso para acceder a nuestra gama de instancias optimizadas.
+
+El tipo de modelo `Discovery` agrupa instancias con recursos compartidos, ofrecidas a precios competitivos. Son especialmente adecuadas para descubrir el Public Cloud de OVHcloud, realizar pruebas o alojar cargas de trabajo ligeras como aplicaciones web.
+
+Los modelos `Metal Instances` ofrecen recursos físicos totalmente dedicados, garantizando un rendimiento constante y un aislamiento máximo para las cargas de trabajo más exigentes.
+
+:::info
+El total de recursos de Public Cloud se limitará inicialmente por motivos de control de costes y seguridad. Puede comprobar estas cuotas haciendo clic en <code className="action">Cuotas y regiones</code> en la barra de navegación de la izquierda en **Parámetros**. Consulte [la documentación dedicada](/guides/public-cloud/public-cloud-cross-functional/increasing-public-cloud-quota/) para obtener más información.
+
+Tenga en cuenta que puede **mejorar** su instancia una vez creada para tener más recursos disponibles. Sin embargo, no es posible cambiar a un modelo más pequeño con una instancia regular. Encontrará más información sobre este tema en el **paso 4.9** a continuación.
+
+:::
+
+
+##### Información adicional
+
+<details>
+
+<summary>Categorías de modelos de instancia</summary>
+
+
+| Tipo | Recursos garantizados | Notas de uso |
+| :---         |     :---:      |          :--- |
+| Best Sellers   | ✓     | Modelos más utilizados.    |
+| General Purpose   | ✓     | Servidores de desarrollo, aplicaciones web o empresariales    |
+| Compute Optimized     | ✓       | Codificación de vídeo u otra computación de alto rendimiento      |
+| Memory Optimized    | ✓     | Bases de datos, análisis y cálculos en memoria    |
+| Storage Optimized   | ✓     | Optimizado para la transferencia de datos en disco    |
+| Discovery    | -       | Alojamiento en recursos compartidos para entornos de prueba y desarrollo      |
+| Cloud GPU     | ✓       | Potencia de procesamiento masivamente paralela para aplicaciones especializadas (renderizado, big data, deep learning, etc.)       |
+| Metal Instances | ✓ | Recursos dedicados con acceso directo a los recursos de cálculo, almacenamiento y red|
+
+</details>
+
+
+<details>
+
+<summary>Regiones y Local Zones</summary>
+
+
+**Regiones**
+
+Una **región** se define como una ubicación en el mundo formada por uno o varios datacenters en los que están alojados los servicios de OVHcloud. Puede encontrar más información sobre las regiones, la distribución geográfica y la disponibilidad de los servicios en nuestra [página web dedicada](https://www.ovhcloud.com/es-es/public-cloud/regions-availability/) y nuestra [página web sobre las localizaciones de las infraestructuras de OVHcloud](https://www.ovhcloud.com/es-es/about-us/global-infrastructure/regions/).
+
+**Local Zones**
+
+Las Local Zones son una extensión de las **regiones** que acercan los servicios de OVHcloud a sitios específicos, ofreciendo una latencia reducida y un rendimiento mejorado para las aplicaciones. Puede encontrar más información en la [página web de Local Zones](https://www.ovhcloud.com/es-es/public-cloud/local-zone-compute/) y en la [documentación de capacidades de las Local Zones](/guides/public-cloud/compute/local-zones-capabilities-limitations/).
+
+</details>
+
+
+#### Paso 4.4: Seleccione una imagen
+
+Abra la lista desplegable `Tipo de distribución`, seleccione la categoría correspondiente a su necesidad y, a continuación, elija el sistema operativo que desea desplegar en su instancia a través del menú desplegable `Versión de la imagen`.
+
+Las imágenes disponibles en este paso dependen de las opciones elegidas en los pasos anteriores, es decir, de la compatibilidad con el modelo de instancia y de la disponibilidad regional. Por ejemplo, si desea seleccionar un sistema operativo Windows y no hay opciones en la pestaña Windows, debe modificar sus opciones de los pasos anteriores.
+
+:::info
+Si elige un sistema operativo que requiera una licencia de pago, estos costes se incluirán automáticamente en la facturación del proyecto.
+
+:::
+
+
+#### Paso 4.5: Seleccione una clave SSH (no aplicable a las instancias Windows)
+
+A excepción de las instancias Windows, la configuración de la instancia también requiere **la adición de una clave SSH pública**. Tiene dos opciones:
+
+- Utilizar una clave pública ya almacenada en el área de cliente de OVHcloud
+- Introducir directamente una clave pública
+
+Haga clic en las pestañas siguientes para ver su presentación:
+
+<Tabs>
+  <Tab label="Utilizar una clave almacenada">
+    Para añadir una clave almacenada en el área de cliente de OVHcloud (consulte [Paso 2](#paso-2-importar-las-claves-ssh)), selecciónela en la lista.
+  </Tab>
+  <Tab label="Introducir directamente una clave">
+    Para añadir una clave pública pegando la cadena de clave, haga clic en el botón <code className="action">Crear una nueva llave SSH</code>.
+    
+    Introduzca un nombre para la clave y la cadena de clave en los campos respectivos. Haga clic en <code className="action">Validar la clave</code>.
+  </Tab>
+</Tabs>
+
+
+
+#### Paso 4.6: Configure los parámetros de backup
+
+Los [backups automatizados](/guides/public-cloud/compute/save-an-instance/) están activados por defecto. Consulte la información sobre precios y los detalles complementarios antes de continuar.
+
+A continuación, seleccione el tipo de rotación, es decir, el número máximo de backups conservados en el historial: 7 o 14 días.
+
+#### Paso 4.7: Configure la red
+
+En este paso, configurará la red de su instancia.
+
+**Red privada**
+
+Puede conectar su instancia a una [red privada](#networking-modes) y asignarle una [Floating IP](https://www.ovhcloud.com/es-es/public-cloud/floating-ip/).
+
+Haciendo clic en <code className="action">Crear una red privada</code>, puede crear una directamente:
+
+- Nombrar la red
+- **Elegir el VLAN ID:** identificador que permite interconectar varios servicios y recursos dentro de una misma red privada, a través de un número de segmentación de red común
+- **Definir el CIDR:** rango de direcciones IP de la red
+- **Activar el DHCP marcando la casilla correspondiente, si es necesario:** active esta opción si desea una asignación automática de direcciones IP
+
+:::info
+La instancia puede permanecer totalmente privada si no le asigna una IP pública.
+
+:::
+
+
+**Gateway**
+
+Puede activar la opción para asignar una gateway a su red. Por defecto, la gateway es de tamaño S, pero podrá ajustar su tamaño más adelante en los parámetros.
+
+**Asignar una conectividad pública**
+
+Puede activar o desactivar esta funcionalidad según sus necesidades. Si decide activarla, tiene dos opciones:
+
+- **Basic Public IP:** una dirección IP pública temporal, que no persiste más allá de la duración de vida de la instancia. Tenga en cuenta que el uso de una Basic Public IP no es compatible con una gateway.
+- **Floating IP:** puede crear una nueva Floating IP o reutilizar una dirección existente, lo que permite una IP pública persistente y desvinculable de la instancia.
+
+#### Paso 4.8: Seleccione un período de facturación
+
+:::info
+Tenga en cuenta que, según el modelo de instancia elegido, la facturación **por horas** puede ser la única opción mostrada. Se trata de una limitación temporal. Pronto estarán disponibles nuevas opciones de facturación de Public Cloud.
+
+:::
+
+
+<Tabs>
+  <Tab label="Facturación mensual">
+    La facturación mensual conlleva una reducción de los costes a lo largo del tiempo, pero **no puede cambiarse** a facturación por horas una vez creada la instancia.
+  </Tab>
+  <Tab label="Facturación por horas">
+    La facturación por horas es la mejor opción si no ha determinado claramente la duración del período de uso. Si decide conservar la instancia para su uso a largo plazo, puede [cambiar a una suscripción mensual](/guides/account-and-service-management/managing-billing-payments-and-services/changing-hourly-monthly-billing/).
+    
+    La instancia se facturará mientras no se **elimine**, independientemente del uso real de la instancia.
+  </Tab>
+</Tabs>
+
+
+A continuación se muestra nuestra documentación de facturación dedicada:
+
+- [Facturación de Public Cloud](/guides/public-cloud/public-cloud-cross-functional/analyze-billing/)
+- [FAQ sobre la facturación mensual](/guides/public-cloud/compute/faq-change-of-monthly-billing-method/)
+
+Una vez finalizada la configuración de su instancia, puede hacer clic en el botón <code className="action">Lanzar mi instancia</code> o configurar los parámetros avanzados (ver a continuación). La entrega del servicio puede tardar unos minutos.
+
+#### Paso 4.9: Configure los parámetros avanzados
+
+##### Instancia flexible
+
+Una instancia Flex es una instancia con un único disco de 50 GB, diseñada para ofrecer un proceso de creación y restauración de snapshots más rápido.
+
+Permite redimensionar la instancia hacia modelos superiores o inferiores, manteniendo un espacio de almacenamiento fijo. Los modelos clásicos solo permiten un redimensionamiento hacia modelos superiores.
+
+##### Script de post-instalación
+
+Puede añadir [su script de post-instalación](/guides/public-cloud/compute/launching-script-when-creating-instance/) en este campo.
+
+#### Paso 4.10: Finalización de la instancia
+
+En el lado derecho de su pantalla, se encuentra el resumen de su configuración. En esta sección, podrá configurar el número de instancias a crear. Puede crear varias instancias en función de las selecciones realizadas durante los pasos de creación, pero se aplicarán [los límites de cuota de recursos](/guides/public-cloud/public-cloud-cross-functional/increasing-public-cloud-quota/).
+
+Una vez finalizada la configuración de su instancia, haga clic en el botón <code className="action">Lanzar mi instancia</code>. La entrega del servicio puede tardar unos minutos.
+
+### Paso 5: Conectarse a la instancia
+
+Las instrucciones de esta parte se refieren a las conexiones remotas mediante los protocolos **OpenSSH** y **RDP** a través de una red pública (Internet).
+
+Tenga en cuenta que ofrecemos formas de acceso alternativas (principalmente utilizadas para la solución de problemas) que solo están disponibles a través de su área de cliente de OVHcloud:
+
+- [Consola VNC](#54-acceso-a-la-consola-vnc)
+- [Modo rescue](/guides/public-cloud/compute/put-an-instance-in-rescue-mode/)
+
+:::info
+Si ha instalado un **SO con aplicación**, consulte nuestra [guía sobre los primeros pasos con las aplicaciones](/guides/public-cloud/compute/apps-first-steps/), así como la documentación oficial del editor del SO.
+
+:::
+
+
+#### 5.1: Verificar el estado de la instancia en el área de cliente
+
+Seleccione <code className="action">Instancias</code> en la barra de navegación de la izquierda en **Compute**. La instancia está lista cuando el estado se establece en `Activado` en la tabla. Si la instancia se ha creado recientemente y tiene un estado diferente, haga clic en el botón "Actualizar" situado junto al filtro de búsqueda.
+
+<img className="thumbnail" alt="page instances" src="/images/public-cloud/compute/public-cloud-first-steps/24-instance-connect01.png" loading="lazy" />
+
+Haga clic en el nombre de la instancia en esta tabla para abrir el <code className="action">Panel de control</code>, donde puede encontrar toda la información relativa a la instancia. Para más información sobre las funciones disponibles en esta página, consulte nuestra guía sobre [la gestión de las instancias en el área de cliente](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/).
+
+Se creará automáticamente un **usuario con derechos elevados (*sudo*)** en la instancia. El nombre de usuario refleja la imagen instalada, por ejemplo "ubuntu", "debian", "fedora", etc. Puede comprobarlo en el lado derecho del <code className="action">Panel de control</code> en la sección **Redes**.
+
+<img className="thumbnail" alt="page instances" src="/images/public-cloud/compute/public-cloud-first-steps/24-instance-connect02.png" loading="lazy" />
+
+Si su [par de claves SSH está correctamente configurado](#paso-1-crear-un-juego-de-claves-ssh), puede conectarse a la instancia con el usuario preconfigurado y su clave SSH. En los siguientes párrafos encontrará instrucciones más detalladas.
+
+:::info
+El acceso a través de la **consola VNC** en una nueva instancia del sistema operativo GNU/Linux creada en el área de cliente debe activarse primero como se describe en la [sección de la guía a continuación](#54-acceso-a-la-consola-vnc).
+
+Esta guía no cubre la red privada para las instancias. Para más información, consulte nuestra documentación [Public Cloud Network Services](/guides/public-cloud/public-cloud-network-services/overview/).
+
+:::
+
+
+#### 5.2: Primera conexión a una instancia con sistema operativo GNU/Linux
+
+:::info
+Si recibe mensajes de error relativos a sus **claves SSH**, compruebe que su dispositivo local dispone de una clave SSH privada correctamente configurada utilizando la información de [esta guía](/guides/public-cloud/compute/creating-ssh-keys-pci#create-ssh-key/).<br/>
+Si sigue teniendo problemas, puede reemplazar el par de claves con [esta guía](/guides/public-cloud/compute/replacing-lost-ssh-key/).
+
+Si ha creado una instancia sin clave SSH, a través de la [API de OVHcloud](/guides/manage-and-operate/api/first-steps/) o de la [interfaz OpenStack Horizon](/guides/public-cloud/compute/create-instance-in-horizon/), solo podrá añadir una clave SSH a su instancia a través del [modo rescue](/guides/public-cloud/compute/put-an-instance-in-rescue-mode/) siguiendo las instrucciones descritas en [esta guía](/guides/public-cloud/compute/replacing-lost-ssh-key/).
+
+:::
+
+
+Puede acceder a su instancia inmediatamente después de su creación a través de la interfaz de línea de comandos de su estación de trabajo local (`Terminal`, `Command prompt`, `Powershell`, etc.) por SSH.
+
+```bash
+ssh username@IPv4_instance
+```
+
+Ejemplo:
+
+```bash
+ssh ubuntu@203.0.113.101
+```
+
+[En función de su configuración](#paso-1-crear-un-juego-de-claves-ssh), tendrá que introducir una frase de contraseña que proteja su clave privada o especificar la ruta de acceso a su archivo de clave. Para más información, consulte nuestra [guía de claves SSH](/guides/public-cloud/compute/creating-ssh-keys-pci#multiplekeys/).
+
+Si utiliza otro cliente SSH, consulte su documentación de usuario. Puede consultar un ejemplo de uso de la solución open source `PuTTY` en [esta guía](/guides/web-cloud/web-hosting/ssh-using-putty-on-windows/).
+
+Continúe en el [paso 6 a continuación](#paso-6-primeros-pasos-en-una-nueva-instancia).
+
+#### 5.3: Instancias Windows
+
+##### 5.3.1: Finalizar la instalación de una instancia Windows
+
+Una vez que haya comprobado que la instancia Windows está [instalada](#51-verificar-el-estado-de-la-instancia-en-el-area-de-cliente), abra la pestaña <code className="action">Consola VNC</code> en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+A continuación, complete la configuración inicial del sistema operativo Windows. Siga los pasos que se indican a continuación en las pestañas:
+
+<Tabs>
+  <Tab label="1. **Configuración regional**">
+    Configure su **país/región**, el **idioma preferido de Windows** y su **distribución de teclado**. Haga clic en el botón <code className="action">Siguiente</code> en la esquina inferior derecha.<br/><br/>
+    <img className="thumbnail" alt="VNC" src="/images/assets/screens/other/windows/windows-locale.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="2. **Contraseña de administrador**">
+    Establezca una contraseña para su cuenta Windows `Administrator` y confírmela, y haga clic en <code className="action">Finalizar</code>.<br/><br/>
+    <img className="thumbnail" alt="VNC" src="/images/assets/screens/other/windows/windows-admin.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="3. **Pantalla de conexión**">
+    Windows aplicará la configuración y mostrará la pantalla de inicio de sesión. Haga clic en el botón <code className="action">Send CtrlAltDel</code> en la esquina superior derecha para conectarse.<br/><br/>
+    <img className="thumbnail" alt="VNC" src="/images/assets/screens/other/windows/windows-vnc.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="4. **Inicio de sesión de administrador**">
+    Introduzca la contraseña `Administrator` que creó en el paso anterior y haga clic en el botón "Arrow".<br/><br/>
+    <img className="thumbnail" alt="VNC" src="/images/assets/screens/other/windows/windows-login.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+##### 5.3.2: Conéctese de forma remota desde Windows
+
+En su equipo Windows local, puede utilizar la aplicación cliente `Remote Desktop Connection` para conectarse a su instancia.
+
+<img className="thumbnail" alt="rdp connection" src="/images/assets/screens/other/windows/windows-rdp.png" loading="lazy" />
+
+Introduzca la dirección IPv4 de su instancia, su identificador y su contraseña. Normalmente, aparece un mensaje de advertencia solicitándole que confirme la conexión debido a un certificado desconocido. Haga clic en <code className="action">Sí</code> para conectarse.
+
+:::info
+Si tiene problemas con este procedimiento, compruebe que las conexiones remotas (RDP) están permitidas en su dispositivo comprobando la configuración del sistema, las reglas de firewall y las posibles restricciones de red.
+
+:::
+
+
+##### 5.3.3: Conectarse de forma remota desde otro SO
+
+Las conexiones desde un sistema operativo de escritorio que no sea Windows suelen requerir un software cliente compatible con el `Remote Desktop Protocol` (RDP). Algunos entornos de escritorio y sistemas operativos pueden tener un cliente nativo integrado.
+
+Independientemente del cliente que utilice, solo necesita la dirección IP de su instancia y su contraseña para que la cuenta `Administrator` pueda conectarse.
+
+**Ejemplo de uso**
+
+El software libre y open source `Remmina Remote Desktop Client` está disponible para muchas distribuciones de escritorio GNU/Linux. Si no encuentra Remmina en el administrador de software de su entorno de escritorio, puede obtenerlo en el [sitio oficial](https://remmina.org/).
+
+<img className="thumbnail" alt="linux remote" src="/images/public-cloud/compute/public-cloud-first-steps/24-rem-connect01.png" loading="lazy" /><br/>
+
+<Tabs>
+  <Tab label="1. **Conexión**">
+    Abra Remmina y asegúrese de que el protocolo de conexión está establecido en "RDP". Introduzca la dirección IPv4 de su instancia Public Cloud y pulse "Enter".<br/><br/>
+    <img className="thumbnail" alt="linux remote" src="/images/public-cloud/compute/public-cloud-first-steps/24-rem-connect02.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="2. **Autenticación**">
+    Si aparece un mensaje de advertencia de certificado, haga clic en <code className="action">Yes</code>. Introduzca el nombre de usuario y la contraseña de Windows y haga clic en <code className="action">OK</code> para establecer la conexión.<br/><br/>
+    <img className="thumbnail" alt="linux remote" src="/images/public-cloud/compute/public-cloud-first-steps/24-rem-connect03.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="3. **Parámetros**">
+    Puede encontrar elementos útiles en la barra de herramientas de la izquierda. Por ejemplo, haga clic en el icono <code className="action">Toggle dynamic resolution update</code> para mejorar la resolución de la ventana.<br/><br/>
+    <img className="thumbnail" alt="linux remote" src="/images/public-cloud/compute/public-cloud-first-steps/24-rem-connect04.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### 5.4: Acceso a la consola VNC
+
+La consola VNC le permite conectarse a sus instancias incluso cuando otros medios de acceso no están disponibles.
+
+Seleccione <code className="action">Instancias</code> en la barra de navegación de la izquierda en **Compute**. Haga clic en el nombre de la instancia y abra la pestaña <code className="action">Consola VNC</code>.
+
+<img className="thumbnail" alt="console vnc" src="/images/assets/screens/control-panel/product-selection/public-cloud/cp-pci-vnc-login.png" loading="lazy" />
+
+<Tabs>
+  <Tab label="Instancia con un SO GNU/Linux instalado">
+    Es necesario configurar una cuenta de usuario **con contraseña** en la instancia para utilizar la consola VNC. Para establecer una contraseña para la cuenta preconfigurada, siga los pasos de la [sección 6.1.1 a continuación](#611-establezca-una-contrasena-para-la-cuenta-de-usuario-actual).
+  </Tab>
+  <Tab label="Instancia Windows">
+    Inicie sesión con sus credenciales de Windows. Si tiene una sesión activa, dispone de acceso inmediato. Habrá una latencia considerable con respecto a una conexión RDP.
+  </Tab>
+</Tabs>
+
+
+### Paso 6: primeros pasos en una nueva instancia
+
+:::info
+**Instancias Windows**
+
+No es necesario realizar ningún paso adicional en las instancias que tengan instalado un sistema operativo Windows.
+
+Encontrará más información en la sección [Más información](#mas-informacion) a continuación.
+
+:::
+
+
+#### 6.1: Gestión de usuarios
+
+:::info
+Al configurar las cuentas de usuario y los niveles de permisos en una instancia, le recomendamos que utilice la información de nuestra [guía de cuentas de usuario](/guides/bare-metal-cloud/dedicated-servers/changing-root-password-linux-ds/).
+
+:::
+
+
+##### 6.1.1: Establezca una contraseña para la cuenta de usuario actual
+
+Al [conectarse a su instancia](#paso-6-primeros-pasos-en-una-nueva-instancia), establezca una contraseña para el usuario actual introduciendo este comando:
+
+```bash
+sudo passwd
+```
+
+Introduzca una frase de contraseña, confirme con `Enter` y repita.
+
+```console
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
+**Es suficiente para activar los inicios de sesión a través de la [consola VNC](#54-acceso-a-la-consola-vnc) en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es)**. Sin embargo, las conexiones SSH remotas con esta contraseña están siempre **desactivadas** por defecto.
+
+##### 6.1.2: Activación de la conexión remota mediante contraseña (opcional)
+
+:::warning
+Este paso no es necesario y solo debe realizarse si tiene una razón válida para activar este tipo de acceso; por ejemplo, si necesita conectarse temporalmente a la instancia desde un dispositivo en el que no esté almacenada su clave SSH privada.
+
+En el ejemplo siguiente se muestra una solución temporal en una instancia en la que está instalado Ubuntu. Tenga en cuenta que es posible que tenga que ajustar los comandos en función del sistema operativo. No se recomienda conservar esta configuración de forma permanente, ya que añade un riesgo potencial de seguridad al abrir el sistema a ataques basados en SSH.
+
+:::
+
+
+Una vez [conectado a su instancia](#paso-6-primeros-pasos-en-una-nueva-instancia), abra el archivo de configuración con un editor de texto. Ejemplo:
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+Modifique la línea `#PasswordAuthentication yes` como sigue:
+
+```console
+PasswordAuthentication yes
+```
+
+Modifique la línea `Include /etc/ssh/sshd_config.d/*.conf` como sigue:
+
+```console
+#Include /etc/ssh/sshd_config.d/*.conf
+```
+
+Guarde el archivo y cierre el editor.
+
+Reinicie el servicio SSH con uno de los siguientes comandos:
+
+```bash
+sudo systemctl restart ssh
+```
+
+```bash
+sudo systemctl restart sshd
+```
+
+Ya puede conectarse por SSH con un nombre de usuario y una contraseña.
+
+Cancele estos cambios para volver a la conexión por clave para la instancia.
+
+#### 6.2: Claves SSH adicionales
+
+Si desea autorizar a más cuentas de usuario a acceder a la instancia, el procedimiento estándar es el siguiente:
+
+- Crear la cuenta en la instancia.
+- Crear un nuevo par de claves SSH en el dispositivo correspondiente.
+- Añadir la clave pública a la instancia.
+
+Para más información, consulte nuestra [guía dedicada](/guides/public-cloud/compute/configuring-additional-ssh-keys/).
+
+## Más información
+
+[Cómo activar una licencia Windows para una instancia en modo privado](/guides/public-cloud/compute/activate-windows-license-private-mode/)
+
+[Cómo restablecer una contraseña de administrador de Windows](/guides/bare-metal-cloud/virtual-private-servers/resetting-a-windows-password/)
+
+[Gestión de instancias en el área de cliente](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+[Cómo empezar con OpenStack](/guides/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/)
+
+[Cómo empezar con Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

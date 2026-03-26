@@ -1,0 +1,108 @@
+---
+title: "Troubleshooting an \"Index of\" page"
+description: "Find out how to get your website back online if it displays an \"Index of\" page"
+lastUpdated: 2025-10-28
+---
+
+## Objective
+
+An "**Index of**" page appears in at least one of the following cases:
+
+- The [configuration of your domain name with your website](/guides/web-cloud/web-hosting/multisites-configure-multisite/) is not correctly set to your target directory.
+- The target folder to which your domain name points does not contain **index.html** or **index.php** files.
+
+<img className="thumbnail" alt="index_of" src="/images/assets/screens/other/browsers/errors/index-of.png" loading="lazy" />
+
+**This guide explains how to troubleshoot the display of an "Index of" page.**
+
+:::warning
+OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+
+:::
+
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
+>
+
+## Requirements
+
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Hosting plans</code> > Select your web hosting plan
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instructions
+
+### Understanding the origin of the "Index of" page
+
+Your domain name is declared to access a target directory (a `Root Folder`) on the server [FTP](/guides/web-cloud/web-hosting/ftp-connection/) of your web hosting plan. You can do this via the [Multisite](/guides/web-cloud/web-hosting/multisites-configure-multisite/) tab in your web hosting plan, in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+The "**Index of**" page indicates that the target directory does not contain a **index.php** or **index.html** file. A file of this type is the *entry point* for your website. This file name is standardised.
+
+To view your website, you will need to link your domain to the `Root folder` containing this file **index.php** or **index.html** to view it from the <code className="action">Multisite</code> section of your hosting plan.
+
+:::info
+If you want to temporarily link your domain to a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the list of folders from being displayed on your site by following this [tutorial](/guides/web-cloud/web-hosting/htaccess-what-else-can-you-do#prevent-the-content-of-a-directory-from-being-listed/). You can also protect access to your folders with a [password](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+
+We recommend that you contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you have difficulties setting up this configuration. Indeed, our support teams will not be able to assist you with any changes to the internal programming of your website.
+
+:::
+
+
+### Resolving the most common cause of an "Index of" page
+
+You have imported the files of your site **mydomain.ovh** into the `www` folder of your hosting. However, your domain name is not linked to this folder in the `Root folder` column of your website.
+
+<img className="thumbnail" alt="index_of_multisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png" loading="lazy" />
+
+Modify the `Root folder` by clicking on the <code className="action">...</code> button in the row of the domain name concerned, then <code className="action">Modify domain</code>:
+
+<img className="thumbnail" alt="modify_domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png" loading="lazy" />
+
+In the window that opens:
+
+- Select the <code className="action">Also modify the www.mydomain.ovh sub-domain</code> (1) box.
+- Specify the directory containing your site's **index.php** or **index.html** file as `Root folder` (2).
+- Click on <code className="action">Next</code> (3).
+
+<img className="thumbnail" alt="change_root_folder" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png" loading="lazy" />
+
+:::info
+It is not mandatory to use the `www` directory as `Root folder`. You can install your website in another folder on your [FTP server](/guides/web-cloud/web-hosting/ftp-connection/).
+
+:::
+
+
+In the next window, click on <code className="action">Confirm</code>.
+
+<img className="thumbnail" alt="modify_root_folder_confirm" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png" loading="lazy" />
+
+In a few minutes (remember to refresh your browser), you will see the following result: 
+
+<img className="thumbnail" alt="multisite_modified" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png" loading="lazy" />
+
+Finally, check that your website appears correctly. Otherwise, reboot your device and clear your browser cache if necessary.
+
+Also make sure that a **index.php** or **index.html** file is present in your target directory.
+
+## Go further <a name="go-further"></a>
+
+[Resolve the most common 1-click module errors](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/)
+
+[Resolve the "Website not installed" error](/guides/web-cloud/web-hosting/multisites-website-not-installed/)
+
+[Hosting multiple websites on your Web Hosting plan](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,1016 @@
+---
+title: Mise en place de NCM Self Service (CALM)
+description: Comment activer Self Service (CALM) dans votre Prism Central
+lastUpdated: 2024-05-13
+---
+
+## Objectif
+
+**Découvrez comment mettre en place NCM Self-Service (Calm) sur votre Prism Central**
+
+:::warning
+OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+
+Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+
+:::
+
+
+## Prérequis
+
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté sur le cluster via Prism Central.
+- Avoir des licences Self Service (CALM). Ces licences sont disponibles dans l'offre Nutanix on OVHcloud packagée (avec des limitations pour le pack **Starter**).
+- Posséder un VLAN supplémentaire dans votre cluster qui distribue des adresses IP en IPAM et possède un accès à Internet.
+
+## Présentation
+
+NCM Self Service (CALM) est une solution d'orchestration hétérogène qui permet l'automatisation et la gestion de déploiements, il fonctionne sur Prism Central et autorise l'administration de divers environnements (cluster Nutanix, serveur bare metal, etc...).
+
+## En pratique
+
+Nous allons activer CALM, créer deux applications pour notre cluster Nutanix et les publier sur les portails d'applications qui sont :
+
+- Un serveur WEB Nginx sous Linux Ubuntu.
+- Un serveur WEB IIS sous Windows server.
+
+### Activation de CALM
+
+Avant de déployer CALM, vérifiez l'adresse IP pour le **ISCSI Data Services IP**.
+
+Depuis le tableau de bord Prism Central, cliquez sur votre <code className="action">Cluster</code> dans la rubrique **Cluster Quick Access**.
+
+<img className="thumbnail" alt="00 Activate CALM 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/00-activate-calm01.png" loading="lazy" />
+
+Dans Prism Element, cliquez en haut à gauche sur les <code className="action">paramètres de votre cluster</code>.
+
+<img className="thumbnail" alt="00 Activate CALM 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/00-activate-calm02.png" loading="lazy" />
+
+Vérifiez l'adresse IP dans **ISCSI Data Services IP**.
+
+<img className="thumbnail" alt="00 Activate CALM 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/00-activate-calm03.png" loading="lazy" />
+
+Revenez sur Prism Central, allez dans le menu principal à gauche et cliquez sur <code className="action">Calm</code> dans la rubrique **Services**
+
+<img className="thumbnail" alt="00 Activate CALM 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/00-activate-calm04.png" loading="lazy" />
+
+Cliquez sur <code className="action">Enable App. Orchestration(Calm)</code>.
+
+<img className="thumbnail" alt="00 Activate CALM 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/00-activate-calm05.png" loading="lazy" />
+
+Cochez la case <code className="action">Enable App Management</code> et cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="00 Activate CALM 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/00-activate-calm06.png" loading="lazy" />
+
+L'activation de CALM est en cours.
+
+<img className="thumbnail" alt="00 Activate CALM 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/00-activate-calm07.png" loading="lazy" />
+
+:::info
+Un message d'erreur apparait pendant le déploiement de CALM. N'en tenez pas compte, quittez la fenêtre et patientez jusqu'a que l'installation soit terminée.
+
+:::
+
+
+![00 Activate CALM 08](/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/00-activate-calm08.png)
+
+### Création d'un projet
+
+Il est nécessaire de créer un projet pour déployer des applications.
+
+Via le menu de Prism Central, cliquez sur <code className="action">Calm</code> dans la rubrique Services.
+
+<img className="thumbnail" alt="01 create Project 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-01.png" loading="lazy" />
+
+Cliquez sur l'icône <code className="action">Projects</code> dans la barre de menu verticale.
+
+<img className="thumbnail" alt="01 create Project 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-02.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">+ Create Project</code>.
+
+<img className="thumbnail" alt="01 create Project 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-03.png" loading="lazy" />
+
+Saisissez le <code className="action">nom du projet</code> dans **Project Name** et cliquez sur <code className="action">Create</code>
+
+<img className="thumbnail" alt="01 create Project 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-04.png" loading="lazy" />
+
+Cliquez sur <code className="action">+ Add infrastructure</code>.
+
+<img className="thumbnail" alt="01 create Project 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-05.png" loading="lazy" />
+
+Cliquez sur <code className="action">Add infrastructure</code>.
+
+<img className="thumbnail" alt="01 create Project 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-06.png" loading="lazy" />
+
+Sélectionnez <code className="action">NTNX_LOCAL_AZ</code> dans accounts.
+
+<img className="thumbnail" alt="01 create Project 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-07.png" loading="lazy" />
+
+Cliquez sur <code className="action">Configure Resources</code>.
+
+<img className="thumbnail" alt="01 create Project 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-08.png" loading="lazy" />
+
+Sélectionnez votre <code className="action">Cluster</code> dans **Select clusters to be added to this project** et cliquez sur <code className="action">+ Select VLANs</code>.
+
+<img className="thumbnail" alt="01 create Project 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-09.png" loading="lazy" />
+
+Cochez le VLAN <code className="action">production</code> et cliquez sur <code className="action">Confirm and Select Default</code>.
+
+<img className="thumbnail" alt="01 create Project 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-10.png" loading="lazy" />
+
+Cliquez sur <code className="action">Confirm</code>.
+
+<img className="thumbnail" alt="01 create Project 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-11.png" loading="lazy" />
+
+Cliquez sur <code className="action">Save</code>.
+
+<img className="thumbnail" alt="01 create Project 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-12.png" loading="lazy" />
+
+Dans la barre d'onglets, rendez-vous sur <code className="action">Environments</code> et cliquez sur <code className="action">Create Environment</code>.
+
+<img className="thumbnail" alt="01 create Project 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-13.png" loading="lazy" />
+
+Saisissez un <code className="action">Nom</code> dans **Name** et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="01 create Project 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-14.png" loading="lazy" />
+
+Cliquez sur <code className="action">Select Infrastucture</code>.
+
+<img className="thumbnail" alt="01 create Project 15" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-15.png" loading="lazy" />
+
+Cliquez sur <code className="action">NTNX_LOCAL_AZ</code>.
+
+<img className="thumbnail" alt="01 create Project 16" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-16.png" loading="lazy" />
+
+Cliquez sur <code className="action">Required for lauching blueprints from marketplace</code> à droite de **VM Configuration**
+
+<img className="thumbnail" alt="01 create Project 17" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-17.png" loading="lazy" />
+
+Renseignez ces informations :
+
+- **Cluster** : `sélection de votre cluster`
+- **vCPUs** : `4`
+- **Core per vCPU** : `1`
+- **Memory (GiB)** : `4`
+- **Image** : `WS2022EN-SYSPREPED`
+
+:::info
+L'image est générée à partir d'une VM WINDOWS Server 2022 sur laquelle on a appliqué un sysprep pour remettre la configuration par défaut. Lors d'une utilisation avec CALM, il est possible d'automatiser l'installation d'un OS Windows à partir de ce type d'image et de lui appliquer des paramètres stockés dans un fichier XML.
+
+:::
+
+
+Faites ensuite défiler la fenêtre vers le bas.
+
+<img className="thumbnail" alt="01 create Project 18" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-18.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">+</code> à droite de **NETWORK ADAPTERS (NICs)**.
+
+<img className="thumbnail" alt="01 create Project 19" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-19.png" loading="lazy" />
+
+Choisissez la carte réseau dans le VLAN <code className="action">production</code>, cochez la case <code className="action">Check log-in upon create</code> et faites défiler la fenêtre vers le haut.
+
+<img className="thumbnail" alt="01 create Project 20" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-20.png" loading="lazy" />
+
+Allez sur l'onglet <code className="action">Linux</code>, saisissez ces informations :
+
+- **Cluster** : `sélection de votre cluster`
+- **vCPUs** : `4`
+- **Core per vCPU** : `1`
+- **Memory (GiB)** : `4`
+- **Image** : `jammy-server-cloudimg-amd64.img`
+
+:::info
+L'image est préconfigurée pour l'utilisation de cloud-init d'UBUNTU, elle est téléchargeable sur Internet à cette adresse [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/). CALM permet l'automatisation et la personnalisation d'une installation Linux au travers de ce type d'images et de fichiers de configuration YAML.
+
+:::
+
+
+Faites ensuite défiler la fenêtre vers le bas.
+
+<img className="thumbnail" alt="01 create Project 21" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-21.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">+</code> à droite de **NETWORK ADAPTERS (NICs)**.
+
+<img className="thumbnail" alt="01 create Project 22" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-22.png" loading="lazy" />
+
+Choisissez la carte réseau dans le VLAN <code className="action">production</code>, cochez la case <code className="action">Check log-in upon create</code> et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="01 create Project 23" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-23.png" loading="lazy" />
+
+Cliquez sur <code className="action">+ Add Credential</code>.
+
+<img className="thumbnail" alt="01 create Project 24" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-24.png" loading="lazy" />
+
+Cliquez sur <code className="action">+ Add Credential</code>.
+
+<img className="thumbnail" alt="01 create Project 25" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-25.png" loading="lazy" />
+
+Saisissez ces informations :
+
+- **Name** : `WindowsAccount`
+- **Username** : `administrator`
+- **Password** : `mot de passe du compte administrator`
+
+Cliquez ensuite sur <code className="action">+ Add Credential</code>.
+
+<img className="thumbnail" alt="01 create Project 26" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-26.png" loading="lazy" />
+
+Saisissez ces informations :
+
+- **Name** : `LinuxAccount`
+- **Username** : `administrator`
+- **Password** : `mot de passe du compte administrator`
+
+Cliquez ensuite sur <code className="action">Save Environment</code>.
+
+<img className="thumbnail" alt="01 create Project 27" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/01-create-project-27.png" loading="lazy" />
+
+Cliquez sur <code className="action">Marketplace Usage</code>.
+
+<img className="thumbnail" alt="02 add credential to environment 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Update</code>.
+
+<img className="thumbnail" alt="02 add credential to environment 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment02.png" loading="lazy" />
+
+Cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="02 add credential to environment 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment03.png" loading="lazy" />
+
+Cliquez sur <code className="action">Not ready for marketplace usage</code> à droite de VM Configuration.
+
+<img className="thumbnail" alt="02 add credential to environment 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment04.png" loading="lazy" />
+
+Faites défiler la fenêtre vers le bas.
+
+<img className="thumbnail" alt="02 add credential to environment 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment05.png" loading="lazy" />
+
+Choisissez <code className="action">WindowsAccount</code> dans **Credential** et faites défiler la fenêtre vers le haut.
+
+<img className="thumbnail" alt="02 add credential to environment 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment06.png" loading="lazy" />
+
+Cliquez sur l'onglet <code className="action">Linux</code> dans **Credential** et faites défiler la fenêtre vers le bas.
+
+<img className="thumbnail" alt="02 add credential to environment 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment07.png" loading="lazy" />
+
+Choisissez <code className="action">LinuxAccount</code> dans **Credential** et cliquez sur <code className="action">Next</code>.
+
+<img className="thumbnail" alt="02 add credential to environment 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment08.png" loading="lazy" />
+
+Cliquez sur <code className="action">Save Environment</code>.
+
+<img className="thumbnail" alt="02 add credential to environment 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment09.png" loading="lazy" />
+
+Votre environnement est prêt pour la création et la diffusion d'applications.
+
+<img className="thumbnail" alt="02 add credential to environment 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/02-add-credential-to-environment10.png" loading="lazy" />
+
+### Création d'applications
+
+Nous allons créer deux applications, tester leur bon fonctionnement et les publier dans le marketplace du cluster.
+
+#### Création de l'application WEB IIS sous Windows
+
+Dans la barre verticale, choisissez <code className="action">Blueprints</code>, faites défiler le menu <code className="action">Create Blueprint</code> et cliquez sur <code className="action">Multi VM/Pod Blueprint</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint01.png" loading="lazy" />
+
+Choisissez le <code className="action">nom</code> de votre plan dans **Name** et cliquez sur <code className="action">Proceed</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint02.png" loading="lazy" />
+
+Saisissez le <code className="action">nom</code> dans **Application Profile Name** et cliquez sur <code className="action">Credentials</code> en haut.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint03.png" loading="lazy" />
+
+Nous allons créer le compte Windows. Il sera utilisé à l'intérieur de sysprep en tant que variable, dans la configuration des tâches d'installation du plan et pour le test de connexion distant.
+
+Cliquez sur bouton <code className="action">+</code> à côté de Credentials.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint04.png" loading="lazy" />
+
+Saisissez ces informations :
+
+- **Name** : `WindowsAccount`
+- **Username** : `administrator`
+- **Password** : `Mot de passe du compte administrator`
+
+Cliquez ensuite sur <code className="action">Done</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint05.png" loading="lazy" />
+
+Cliquez sur <code className="action">Back</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint06.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">+</code> dans la fenêtre de gauche à côté de **Service**.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint07.png" loading="lazy" />
+
+Saisissez ces informations :
+
+- **Name** : `VM IIS`
+- **Operation System** : `Windows`
+
+Cliquez ensuite sur <code className="action">Clone from environment</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint08.png" loading="lazy" />
+
+Faites défiler la fenêtre de droite vers le bas, cochez <code className="action">Guest Customization</code>, cliquez sur <code className="action">Sysprep</code> puis copiez le contenu du fichier sysprep ci-dessous dans **Script** :
+
+:::info
+Ce fichier est généré à partir des outils Windows ADK téléchargeables via ce [lien](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) et a été ensuite adapté en rajoutant des variables venant de Nutanix CALM, comme `@@{WindowsAccount.secret}@@` qui représente le mot de passe du compte WindowsAccount.
+
+:::
+
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="windowsPE">
+        <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SetupUILanguage>
+                <UILanguage>en-US</UILanguage>
+                <WillShowUI>Never</WillShowUI>
+            </SetupUILanguage>
+            <InputLocale>0409:00000409</InputLocale>
+            <SystemLocale>en-US</SystemLocale>
+            <UILanguage>en-US</UILanguage>
+            <UserLocale>en-US</UserLocale>
+        </component>
+        <component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <UserData>
+                <AcceptEula>true</AcceptEula>
+                <FullName>Nutanix Doc</FullName>
+                <Organization>Nutanix Doc</Organization>
+            </UserData>
+            <EnableFirewall>true</EnableFirewall>
+            <EnableNetwork>true</EnableNetwork>
+        </component>
+    </settings>
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <TimeZone>Central Standard Time</TimeZone>
+            <AutoLogon>
+                <Password>
+                    <Value>@@{WindowsAccount.secret}@@</Value>
+                    <PlainText>true</PlainText>
+                </Password>
+                <Enabled>true</Enabled>
+                <Username>administrator</Username>
+                <LogonCount>1</LogonCount>
+            </AutoLogon>
+        </component>
+    </settings>
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <UserAccounts>
+                <AdministratorPassword>
+                    <Value>@@{WindowsAccount.secret}@@</Value>
+                    <PlainText>true</PlainText>
+                </AdministratorPassword>
+            </UserAccounts>
+            <OOBE>
+                <HideEULAPage>true</HideEULAPage>
+                <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+                <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+                <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+                <ProtectYourPC>1</ProtectYourPC>
+                <HideLocalAccountScreen>true</HideLocalAccountScreen>
+            </OOBE>
+            <FirstLogonCommands>
+                <SynchronousCommand wcm:action="add">
+                    <CommandLine>powershell Set-NetConnectionProfile -NetworkCategory Private</CommandLine>
+                    <Order>1</Order>
+                </SynchronousCommand>
+                <SynchronousCommand wcm:action="add">
+                    <CommandLine>powershell Set-WSManQuickConfig -Force</CommandLine>
+                    <Order>2</Order>
+                </SynchronousCommand>
+            </FirstLogonCommands>
+        </component>
+        <component name="Microsoft-Windows-International-Core" processorArchitecture="wow64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <UILanguage>en-US</UILanguage>
+            <UserLocale>en-US</UserLocale>
+            <SystemLocale>en-US</SystemLocale>
+            <InputLocale>0409:00000409</InputLocale>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="wim:c:/w2022/sources/install.wim#Windows Server 2022 SERVERSTANDARD" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
+```
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint09.png" loading="lazy" />
+
+Continuez de faire défiler la fenêtre et vérifiez que **Check log-in upon create** est coché puis choisissez <code className="action">WindowsAccount</code> dans **Credential**.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint10.png" loading="lazy" />
+
+Nous allons maintenant créer des tâches en Powershell qui s'exécuteront après l'installation et la personnalisation de Windows. Chacune de ces tâches s'exécute l'une après l'autre.
+
+Dans la fenêtre de gauche, positionnez-vous sur <code className="action">Install</code> en dessous de la catégorie **Package** et cliquez sur <code className="action">+ Task</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint11.png" loading="lazy" />
+
+Renseignez ces informations :
+
+- **Task Name** : `IIS Installation`
+- **Type** : `Execute`
+- **Script Type** : `Powershell`
+- **Credential** : `WindowsAccount`
+
+Copiez ce contenu dans **Script** :
+
+```powershell
+Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
+if ($?) {
+exit 0
+}
+
+```
+
+Cliquez ensuite sur <code className="action">+ Task</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint12.png" loading="lazy" />
+
+Complétez ces informations :
+
+- **Task Name** : `Customize IIS`
+- **Type** : `Execute`
+- **Script Type** : `Powershell`
+- **Credential** : `WindowsAccount`
+
+Copiez ce contenu dans **Script** :
+
+```powershell
+echo "<!DOCTYPE html>" | out-file "C:\inetpub\wwwroot\default.htm"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "<html>"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "<head>"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "<title>IIS on Windows AHV VM</title>"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "</head>"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "<body>"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value ""
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "<h1>IIS on Windows AHV VM</h1>"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "<p>Deployed with CALM</p>"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value ""
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "</body>"
+Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "</html>"
+```
+
+Cliquez ensuite sur <code className="action">+ Task</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint13.png" loading="lazy" />
+
+Saisissez ces informations :
+
+- **Task Name** : `reboot VM`
+- **Type** : `Execute`
+- **Script Type** : `Powershell`
+- **Credential** : `WindowsAccount`
+
+Copiez ce contenu dans **Script** :
+
+```powershell
+restart-computer -force
+```
+
+Cliquez ensuite sur <code className="action">Save</code> en haut de la fenêtre.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint14.png" loading="lazy" />
+
+L'application est créée, cliquez sur <code className="action">Launch</code> pour tester votre application.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 15" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint15.png" loading="lazy" />
+
+Saisissez un <code className="action">Nom</code> dans **Application Name** et cliquez sur <code className="action">Deploy</code>.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 16" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint16.png" loading="lazy" />
+
+Une nouvelle fenêtre apparait, cliquez sur <code className="action">Audit</code> pour voir les étapes du déploiement de votre application. Lorsque le déploiement est terminé, vous pouvez voir en haut de la fenêtre l'indication **RUNNING** qui vous indique que l'application est déployée et active.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 17" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint17.png" loading="lazy" />
+
+Dans notre cas, le serveur IIS est actif et affiche un message sur l'adresse IP de la machine virtuelle en HTTP.
+
+<img className="thumbnail" alt="03 Create Windows Blueprint 18" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/03-create-windows-blueprint18.png" loading="lazy" />
+
+#### Création de l'application WEB Nginx sous Linux Ubuntu
+
+Nous allons créer une autre application sous Linux Ubuntu avec Nginx installé en tant que serveur WEB.
+
+Rendez-vous sur l'icône <code className="action">Blueprints</code> dans la barre de menu verticale de CALM, cliquez sur <code className="action">Multi VM/Pod Blueprint</code> depuis le menu **Create Blueprint**.
+
+<img className="thumbnail" alt="04 create Linux blueprint 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint01.png" loading="lazy" />
+
+Saisissez le <code className="action">Nom</code> dans **Name** et cliquez sur <code className="action">Proceed</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint02.png" loading="lazy" />
+
+Cliquez sur <code className="action">Credentials</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint03.png" loading="lazy" />
+
+Cliquez sur <code className="action">Credentials +</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint04.png" loading="lazy" />
+
+Saisissez ces informations concernant le compte d'administration Linux :
+
+- **Name** : `LinuxAccount`
+- **Username** : `administrator`
+- **Password** : `Mot de passe du compte administrator`
+
+Cliquez ensuite sur <code className="action">Done</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint05.png" loading="lazy" />
+
+Cliquez sur <code className="action">Credentials +</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint06.png" loading="lazy" />
+
+Saisissez ces informations concernant le compte d'administration de Prism Central :
+
+- **Name** : `PC_ADMIN`
+- **Username** : `admin`
+- **Password** : `Mot de passe de Prism Central`
+
+:::info
+Ce mot de passe sert si vous utilisez des EScript (Scripts en python) dans vos tâches de déploiements, il sera utilisé lors de l'utilisation de l'API Prism Central. Dans cet exemple vous trouverez un EScript qui redimensionnera le stockage de la machine virtuelle Ubuntu NGINX.
+
+:::
+
+
+Cliquez ensuite sur <code className="action">Done</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint07.png" loading="lazy" />
+
+Cliquez sur <code className="action">Back</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint08.png" loading="lazy" />
+
+Saisissez <code className="action">Linux Application</code> dans **Application Profile Name** et cliquez sur <code className="action">+</code> dans la fenêtre de gauche à droite de **Service**.
+
+<img className="thumbnail" alt="04 create Linux blueprint 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint09.png" loading="lazy" />
+
+Saisissez ces informations :
+
+- **Service Name** : `Ubuntu`
+- **VM Name** : `Ubuntu NGINX`
+
+Cliquez ensuite sur <code className="action">Clone from environment</code> et faites défiler la fenêtre de droite vers le bas.
+
+<img className="thumbnail" alt="04 create Linux blueprint 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint10.png" loading="lazy" />
+
+Cochez <code className="action">Guest Customization</code>, copiez le contenu ci-dessous dans **script**.
+
+```ini
+#cloud-config
+users:
+- name: @@{LinuxAccount.username}@@
+  groups: sudo
+  sudo: ALL=(ALL) NOPASSWD:ALL
+  shell: /bin/bash
+  lock-passwd: false
+chpasswd:
+ list: |
+   @@{LinuxAccount.username}@@:@@{LinuxAccount.secret}@@
+ expire: False
+ssh_pwauth: true
+```
+
+:::info
+Il s'agit du fichier d'initialisation de Linux avec des images cloud-init. Il utilise les informations du compte LinuxAccount qui vient de CALM au travers de macro-instructions qui ont cette forme @@&#123;LinuxAccount.username&#125;@@ pour le compte utilisateur et @@&#123;LinuxAccount.secret&#125;@@ pour le mot de passe.
+
+:::
+
+
+Faites défiler la fenêtre de droite vers le bas.
+
+<img className="thumbnail" alt="04 create Linux blueprint 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint11.png" loading="lazy" />
+
+Choisissez <code className="action">LinuxAccount</code> dans **Check log-in upon create**.
+
+<img className="thumbnail" alt="04 create Linux blueprint 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint12.png" loading="lazy" />
+
+Dans la fenêtre de gauche, rendez-vous sur <code className="action">Install</code> en dessous de **Package** et cliquez sur <code className="action">+ Task</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint13.png" loading="lazy" />
+
+Saisissez les informations de la tâche de redimensionnement du disque de votre machine virtuelle.
+
+- **Task Name** : `Disk resize`
+- **Type** : `Execute`
+- **Script Type** : `EScript`
+
+Copiez ensuite le contenu de ce script :
+
+:::info
+Ce script utilise les mots de passe qui viennent de CALM au travers de variables qui ont cette forme @@&#123;PC_ADMIN.username&#125;@@ pour le compte utilisateur et @@&#123;PC_ADMIN.secret&#125;@@ pour le mot de passe.
+
+:::
+
+
+```python
+vmUuid = '@@{id}@@'
+diskSize = 50 # GB
+pcAddress = '127.0.0.1'
+pcUsername = '@@{PC_ADMIN.username}@@'
+pcPassword = '@@{PC_ADMIN.secret}@@'
+
+# ============== DO NO CHANGE AFTER THIS ===============
+
+usrPass = '{}:{}'.format(pcUsername,pcPassword)
+b64Pass = base64.b64encode(usrPass)
+
+# Get VM
+api_url = 'https://{}:9440/api/nutanix/v3/vms/{}'.format(pcAddress,vmUuid)
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': 'Basic {}'.format(b64Pass)}
+
+r = urlreq(api_url, verb='GET', headers=headers, verify=False)
+if r.ok:
+    resp = json.loads(r.content)
+
+else:
+    print("Post request failed", r.content)
+    exit(1)
+
+# Power off VM and extend disk
+del resp['status']
+
+disk_size_mib = diskSize * 1024
+disk_size_bytes = disk_size_mib * 1024**2
+
+resp['spec']['resources']['disk_list'][0]['disk_size_mib'] = disk_size_mib
+resp['spec']['resources']['disk_list'][0]['disk_size_bytes'] = disk_size_bytes
+resp['spec']['resources']['power_state'] = 'OFF'
+
+payload = resp
+
+r = urlreq(api_url, verb='PUT', params=json.dumps(payload), headers=headers, verify=False)
+if r.ok:
+    resp = json.loads(r.content)
+    taskUuid = resp['status']['execution_context']['task_uuid']
+
+else:
+    print("Post request failed", r.content)
+    exit(1)
+
+# Monitor task
+state = ""
+while state != "SUCCEEDED":
+    api_url = 'https://{}:9440/api/nutanix/v3/tasks/{}'.format(pcAddress,taskUuid)
+
+    sleep(2)
+    r = urlreq(api_url, verb='GET', headers=headers, verify=False)
+    if r.ok:
+        resp = json.loads(r.content)
+        state = resp['status']
+        if state == "FAILED":
+            print("Task failed", resp['progress_message'])
+            exit(1)
+
+    else:
+        print("Post request failed", r.content)
+        exit(1)
+
+# Wait for VM to power off
+api_url = 'https://{}:9440/api/nutanix/v3/vms/{}'.format(pcAddress,vmUuid)
+r = urlreq(api_url, verb='GET', headers=headers, verify=False)
+if r.ok:
+    resp = json.loads(r.content)
+    power_state = resp['status']['resources']['power_state']
+
+else:
+    print("Post request failed", r.content)
+    exit(1)
+
+state = ""
+while state != "OFF":
+    api_url = 'https://{}:9440/api/nutanix/v3/vms/{}'.format(pcAddress,vmUuid)
+
+    sleep(2)
+    r = urlreq(api_url, verb='GET', headers=headers, verify=False)
+    if r.ok:
+        resp = json.loads(r.content)
+        state = resp['status']['resources']['power_state']
+        if state == "FAILED":
+            print("Task failed", resp['progress_message'])
+            exit(1)
+
+    else:
+        print("Post request failed", r.content)
+        exit(1)
+
+# Power on VM
+del resp['status']
+
+resp['spec']['resources']['power_state'] = 'ON'
+
+api_url = 'https://{}:9440/api/nutanix/v3/vms/{}'.format(pcAddress,vmUuid)
+payload = resp
+
+r = urlreq(api_url, verb='PUT', params=json.dumps(payload), headers=headers, verify=False)
+if r.ok:
+    resp = json.loads(r.content)
+    taskUuid = resp['status']['execution_context']['task_uuid']
+
+else:
+    print("Post request failed", r.content)
+    exit(1)
+
+# Monitor task
+state = ""
+while state != "SUCCEEDED":
+    api_url = 'https://{}:9440/api/nutanix/v3/tasks/{}'.format(pcAddress,taskUuid)
+
+    sleep(2)
+    r = urlreq(api_url, verb='GET', headers=headers, verify=False)
+    if r.ok:
+        resp = json.loads(r.content)
+        state = resp['status']
+        if state == "FAILED":
+            print("Task failed", resp['progress_message'])
+            exit(1)
+
+    else:
+        print("Post request failed", r.content)
+        exit(1)
+
+print("OS disk extended to {} GB".format(diskSize))
+
+# Wait until VM boots
+sleep(60) 
+```
+
+Cliquez ensuite sur <code className="action">+ Task</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint14.png" loading="lazy" />
+
+Renseignez ces informations sur la tâche de vérification des services sur Linux :
+
+- **Task Name** : `Service restart`
+- **Type** : `Execute`
+- **Script Type** : `Shell`
+- **Credential** : `LinuxAccount`
+
+Copiez ensuite le contenu ci-dessous dans **Script** :
+
+```bash
+sudo sed 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf
+```
+
+Cliquez sur <code className="action">+ Task</code> pour ajouter une nouvelle tâche à la suite.
+
+<img className="thumbnail" alt="04 create Linux blueprint 15" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint15.png" loading="lazy" />
+
+Renseignez ces informations sur la tâche de mise à jour UBUNTU:
+
+- **Task Name** : `Service restart`
+- **Type** : `Execute`
+- **Script Type** : `Shell`
+- **Credential** : `LinuxAccount`
+
+Copiez ensuite le contenu ci-dessous dans **Script** :
+
+```bash
+sudo apt update
+sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+```
+
+Cliquez à nouveau sur <code className="action">+ Task</code> pour ajouter une nouvelle tâche à la suite.
+
+<img className="thumbnail" alt="04 create Linux blueprint 16" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint16.png" loading="lazy" />
+
+Renseignez ces informations sur la tâche d'installation de Nginx et Curl :
+
+- **Task Name** : `Service restart`
+- **Type** : `Execute`
+- **Script Type** : `Shell`
+- **Credential** : `LinuxAccount`
+
+Copiez ensuite le contenu ci-dessous dans **Script** :
+
+```bash
+sudo DEBIAN_FRONTEND=noninteractive apt install nginx curl -y
+```
+
+Cliquez à nouveau sur <code className="action">+ Task</code> pour ajouter une nouvelle tâche à la suite.
+
+<img className="thumbnail" alt="04 create Linux blueprint 17" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint17.png" loading="lazy" />
+
+Saisissez ces informations concernant la dernière tâche de personnalisation de NGINX':
+
+- **Task Name** : `Service restart`
+- **Type** : `Execute`
+- **Script Type** : `Shell`
+- **Credential** : `LinuxAccount`
+
+Copiez ensuite le contenu ci-dessous dans **Script** :
+
+```bash
+sudo ls -l /var/www/html/
+sudo rm -rf /var/www/html/index.nginx-debian.html
+sudo touch /var/www/html/index.nginx-debian.html
+sudo chown $USER:$USER /var/www/html/index.nginx-debian.html
+sudo ls -l /var/www/html/
+sudo echo '<!DOCTYPE html>' > /var/www/html/index.nginx-debian.html
+sudo echo '<html>' >> /var/www/html/index.nginx-debian.html
+sudo echo '<head>' >> /var/www/html/index.nginx-debian.html
+sudo echo '<title>NGINX on Linux AHV VM</title>' >> /var/www/html/index.nginx-debian.html
+sudo echo '</head>' >> /var/www/html/index.nginx-debian.html
+sudo echo '<body>' >> /var/www/html/index.nginx-debian.html
+sudo echo '' >> /var/www/html/index.nginx-debian.html
+sudo echo '<h1>Nginx on Linux AHV VM</h1>' >> /var/www/html/index.nginx-debian.html
+sudo echo '<p>Deployed with CALM</p>' >> /var/www/html/index.nginx-debian.html
+sudo echo '' >> /var/www/html/index.nginx-debian.html
+sudo echo '</body>' >> /var/www/html/index.nginx-debian.html
+sudo echo '</html>' >> /var/www/html/index.nginx-debian.html
+sudo cat /var/www/html/index.nginx-debian.html
+```
+
+Enfin, cliquez sur + <code className="action">Save</code> pour finaliser la création de votre plan.
+
+<img className="thumbnail" alt="04 create Linux blueprint 18" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint18.png" loading="lazy" />
+
+Cliquez sur <code className="action">Launch</code> pour tester votre plan.
+
+<img className="thumbnail" alt="04 create Linux blueprint 19" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint19.png" loading="lazy" />
+
+Saisissez le <code className="action">nom</code> de votre déploiement de test dans **Application Name** et cliquez sur <code className="action">Deploy</code>.
+
+<img className="thumbnail" alt="04 create Linux blueprint 20" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint20.png" loading="lazy" />
+
+Le déploiement se lance.
+
+<img className="thumbnail" alt="04 create Linux blueprint 21" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint21.png" loading="lazy" />
+
+Cliquez sur <code className="action">Audit</code> pour voir l'avancement du déploiement.
+
+<img className="thumbnail" alt="04 create Linux blueprint 22" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint22.png" loading="lazy" />
+
+Une fois le déploiement terminé, vous pouvez accéder en HTTP à l'adresse IP de votre VM NGINX pour visualiser le message de bienvenue.
+
+<img className="thumbnail" alt="04 create Linux blueprint 23" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/04-create-linux-blueprint23.png" loading="lazy" />
+
+#### Publication des applications 
+
+Allez sur l'icône <code className="action">Blueprints</code> dans la barre verticale de CALM à gauche et cliquez sur le plan <code className="action">WS 2022 IIS</code>.
+
+<img className="thumbnail" alt="05 publish Windows Application 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/05-publish-windows-application01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Publish</code>.
+
+<img className="thumbnail" alt="05 publish Windows Application 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/05-publish-windows-application02.png" loading="lazy" />
+
+Appliquez ces valeurs :
+
+- **Name** : `WS 2022 IIS`
+- **Publish with secrets** : `activé`
+- **Initial Version** : `1.0.0`
+
+Cliquez ensuite à gauche sur <code className="action">Change</code>.
+
+<img className="thumbnail" alt="05 publish Windows Application 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/05-publish-windows-application03.png" loading="lazy" />
+
+Cliquez sur <code className="action">Upload from computer</code>.
+
+<img className="thumbnail" alt="05 publish Windows Application 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/05-publish-windows-application04.png" loading="lazy" />
+
+Choisissez l'<code className="action">image</code> sur votre ordinateur et cliquez sur <code className="action">Ouvrir</code>.
+
+<img className="thumbnail" alt="05 publish Windows Application 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/05-publish-windows-application05.png" loading="lazy" />
+
+Nommez votre icône <code className="action">IIS</code> et cliquez sur le <code className="action">bouton bleu de validation</code>.
+
+<img className="thumbnail" alt="05 publish Windows Application 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/05-publish-windows-application06.png" loading="lazy" />
+
+Cliquez sur <code className="action">Select & continue</code>.
+
+<img className="thumbnail" alt="05 publish Windows Application 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/05-publish-windows-application07.png" loading="lazy" />
+
+Cliquez sur <code className="action">Submit for approval</code>.
+
+<img className="thumbnail" alt="05 publish Windows Application 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/05-publish-windows-application08.png" loading="lazy" />
+
+L'application Windows est dans le marketplace en attente d'approbation.
+
+Cliquez sur le plan <code className="action">UBUNTU 22 NGINX</code>.
+
+<img className="thumbnail" alt="06 publish Windows Application 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/06-publish-linux-application01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Publish</code>.
+
+<img className="thumbnail" alt="06 publish Windows Application 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/06-publish-linux-application02.png" loading="lazy" />
+
+Appliquez ces valeurs :
+
+- **Name** : `UBUNTU 22 NGINX`
+- **Publish with secrets** : `activé`
+- **Initial Version** : `1.0.0`
+
+Cliquez ensuite à gauche sur <code className="action">Change</code>.
+
+<img className="thumbnail" alt="06 publish Windows Application 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/06-publish-linux-application03.png" loading="lazy" />
+
+Cliquez sur <code className="action">Upload from computer</code>.
+
+<img className="thumbnail" alt="06 publish Windows Application 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/06-publish-linux-application04.png" loading="lazy" />
+
+Choisissez l'<code className="action">image</code> sur votre ordinateur et cliquez sur <code className="action">Ouvrir</code>.
+
+<img className="thumbnail" alt="06 publish Windows Application 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/06-publish-linux-application05.png" loading="lazy" />
+
+Nommez votre icône <code className="action">NGINX</code> et cliquez sur le <code className="action">bouton bleu de validation</code>.
+
+<img className="thumbnail" alt="06 publish Windows Application 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/06-publish-linux-application06.png" loading="lazy" />
+
+Sélectionnez votre icône et cliquez sur <code className="action">Select & continue</code>.
+
+<img className="thumbnail" alt="06 publish Windows Application 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/06-publish-linux-application07.png" loading="lazy" />
+
+Cliquez sur <code className="action">Submit for approval</code>.
+
+<img className="thumbnail" alt="06 publish Windows Application 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/06-publish-linux-application08.png" loading="lazy" />
+
+L'application Linux se trouve dans la marketplace en attente d'approbation.
+
+#### Ajout des applications publiées sur le portail de CALM
+
+Cliquez sur l'icône du <code className="action">Marketplace Manager</code>, allez sur l'onglet <code className="action">Approval Pending</code>, cochez l'application <code className="action">UBUNTU 22 NGINX</code> et cliquez sur l'icône de validation à droite.
+
+<img className="thumbnail" alt="07 approve Application 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/07-approve-application01.png" loading="lazy" />
+
+Cochez l'application <code className="action">WS 2022 IIS</code> et cliquez sur l'icône de validation à droite.
+
+<img className="thumbnail" alt="07 approve Application 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/07-approve-application02.png" loading="lazy" />
+
+Allez sur l'onglet <code className="action">Approved</code>, cliquez sur la colonne <code className="action">Source</code> pour afficher les applications locales en premier, cochez <code className="action">WS 2022 IIS</code>. Sélectionnez en bas à droite <code className="action">NCM Self Service Project 01</code> et cliquez sur <code className="action">Apply</code>.
+
+<img className="thumbnail" alt="08 ADD to market place 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace01.png" loading="lazy" />
+
+Cliquez sur <code className="action">Publish</code>.
+
+<img className="thumbnail" alt="08 ADD to market place 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace02.png" loading="lazy" />
+
+L'application Windows est publiée.
+
+<img className="thumbnail" alt="08 ADD to market place 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace03.png" loading="lazy" />
+
+Cochez <code className="action">Ubuntu 22 NGINX</code>, Sélectionnez à droite <code className="action">NCM Self Service Project 01</code> et cliquez sur <code className="action">Apply</code>.
+
+<img className="thumbnail" alt="08 ADD to market place 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace04.png" loading="lazy" />
+
+Cliquez sur <code className="action">Publish</code>.
+
+<img className="thumbnail" alt="08 ADD to market place 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace05.png" loading="lazy" />
+
+L'application Ubuntu est publiée.
+
+<img className="thumbnail" alt="08 ADD to market place 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace06.png" loading="lazy" />
+
+Cliquez sur l'icône <code className="action">Marketplace</code> en haut de la barre de menu verticale à gauche et cliquez sur <code className="action">Get</code> en dessous de l'application UBUNTU 22 NGINX.
+
+<img className="thumbnail" alt="08 ADD to market place 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace07.png" loading="lazy" />
+
+Cliquez sur <code className="action">Launch</code>.
+
+<img className="thumbnail" alt="08 ADD to market place 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace08.png" loading="lazy" />
+
+Saisissez un <code className="action">Nom</code> dans **Application Name** et cliquez sur <code className="action">Deploy</code> pour déployer une application.
+
+<img className="thumbnail" alt="08 ADD to market place 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/08-add-to-marketplace09.png" loading="lazy" />
+
+#### Suppression d'une application déployée
+
+La suppression d'une application déployée est aussi simple que son déploiement.
+
+Cliquez sur l'icône des <code className="action">Blueprints</code> à gauche et cochez une application déployée.
+
+<img className="thumbnail" alt="09 delete deployed APP 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/09-delete-deployed-app01.png" loading="lazy" />
+
+Via le menu **Action** cliquez sur <code className="action">Delete</code>.
+
+<img className="thumbnail" alt="09 delete deployed APP 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/09-delete-deployed-app02.png" loading="lazy" />
+
+Cliquez sur <code className="action">Confirm</code>.
+
+<img className="thumbnail" alt="09 delete deployed APP 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/09-delete-deployed-app03.png" loading="lazy" />
+
+Il est possible de suivre la suppression comme pour un déploiement.
+
+<img className="thumbnail" alt="09 delete deployed APP 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/09-delete-deployed-app04.png" loading="lazy" />
+
+L'application est maintenant supprimée.
+
+<img className="thumbnail" alt="09 delete deployed APP 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/36-self-service-calm/09-delete-deployed-app05.png" loading="lazy" />
+
+## Aller plus loin <a name="gofurther"></a>
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).
+
+[Nutanix NCM Self Service (CALM)](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v3_6_0:Nutanix-Calm-Admin-Operations-Guide-v3_6_0).

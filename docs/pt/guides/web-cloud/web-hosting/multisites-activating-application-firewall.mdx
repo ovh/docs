@@ -1,0 +1,88 @@
+---
+title: "Partilhado: ativação da firewall"
+description: "Partilhado: ativação da firewall"
+lastUpdated: 2025-08-22
+---
+
+## Objetivo
+
+*O ModSecurity* é um módulo Apache complementar que filtro todos os pedidos de acesso ao seu servidor Web. Aumenta a segurança contra vulnerabilidades conhecidas, intercetando e filtrando pedidos antes que sejam tratados com scripts.
+
+O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso *ModSecurity* protege os seus websites contra os ataques mais comuns, por exemplo:
+
+- Trojans,
+- Injeções de e-mails,
+- Falha dos ficheiros PDF,
+- Injeção de ficheiros no seu alojamento,
+- injeção do tipo SQL ou XSS,
+- etc.
+
+**Este guia explica-lhe como ativar a firewall de aplicação a partir da Área de Cliente OVHcloud, de forma a obter uma proteção melhorada.**
+
+:::info
+Uma vez que o seu alojamento web está presente numa infraestrutura partilhada, a alteração dos parâmetros de configuração da firewall não está disponível.
+
+:::
+
+
+## Requisitos
+
+- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de, pelo menos, um [domínio](https://www.ovhcloud.com/pt/domains/) associado ao alojamento.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Alojamentos</code> > Selecione o seu alojamento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instruções
+
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione <code className="action">Web Cloud</code>. Na barra à esquerda, clique em <code className="action">Alojamentos</code> e, a seguir, no alojamento correspondente.
+
+### Ativar a firewall aplicativa na configuração PHP
+
+Clique no separador <code className="action">Informações gerais</code>. A `versão global de PHP` é apresentada na zona **Configuração**. Clique no botão <code className="action">...</code> e selecione <code className="action">Alterar configuração</code>. Na nova janela, selecione o elemento <code className="action">Alterar configuração atual</code> e clique no botão <code className="action">Seguinte</code>.
+
+<img className="thumbnail" alt="managephpconfig" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png" loading="lazy" />
+
+Na nova janela, certifique-se de que a **Aplicação Firewall** está definida em <code className="action">Ativado</code>. Para confirmar a configuração, clique no botão <code className="action">Confirmar</code>.
+
+### Ativar a firewall de aplicação para os nomes de domínio individuais num multi-site
+
+Clique no separador <code className="action">Multisite</code> da sua oferta de alojamento. Clique no botão <code className="action">...</code> à direita do nome de domínio em causa e selecione a opção <code className="action">Alterar o domínio</code>.
+
+<img className="thumbnail" alt="managemultisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png" loading="lazy" />
+
+Na janela de configuração, selecione a caixa <code className="action">Ativar a firewall</code>. Também pode incluir o subdomínio `www` nesta configuração, selecionando a opção no topo.
+
+Clique em <code className="action">Seguinte</code> e, a seguir, em <code className="action">Confirmar</code> para modificar os parâmetros multisite.
+
+<img className="thumbnail" alt="modifydomain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png" loading="lazy" />
+
+### Verificar o estado da tarefa de ativação
+
+<img className="thumbnail" alt="gestão em curso" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png" loading="lazy" />
+
+As tarefas de atualização da sua configuração multi-site serão listadas no separador <code className="action">Operações em curso</code> (o estado inicial é "Planificado"). A firewall estará ativa assim que a sua tarefa de atualização deixar de aparecer na lista.
+
+### Verificação dos nomes de domínio para os quais a firewall está ativada
+
+O separador <code className="action">Multisite</code> da sua oferta de alojamento fornece informações sobre os domínios para os quais a opção de firewall está ativa.
+
+<img className="thumbnail" alt="gerageenabled" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png" loading="lazy" />
+
+A tabela apresentada contém todos os domínios adicionados ao alojamento web. Na coluna "Firewall", apresenta-se o estado de ativação de cada nome de domínio.
+
+## Quer saber mais?
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

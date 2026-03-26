@@ -1,0 +1,106 @@
+---
+title: Email Pro - Configure your email account on Outlook for macOS
+description: Find out how to configure your Email Pro account in Outlook for Mac.
+lastUpdated: 2025-04-28
+---
+
+## Objective
+
+You can configure Email Pro accounts on email clients, if they are compatible. By doing so, you can use your email address with your preferred email application.
+
+:::warning
+:::
+
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
+
+## Requirements
+
+- You must have an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) solution.
+- You must have Microsoft Outlook installed on your Mac.
+- You need to have the required credentials for the email address you would like to configure.
+
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-email-pro */}
+
+:::info
+Are you using Outlook for Windows? Read this guide: [Configuring your email address in Outlook for Windows](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/).
+
+:::
+
+
+## Instructions
+
+### Step 1: Add the account
+
+:::info
+In this guide, we will use as the server name: "pro?.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+
+Click [this link](https://manager.eu.ovhcloud.com/#/web/email_pro) to access the <code className="action">Email Pro</code> section. The server name is visible in the **Connection** section of the <code className="action">General information</code> tab.
+
+:::
+
+
+Once you have launched Outlook on your device, you can add an account in two different ways:
+
+- **When you start the application for the first time.** A setup wizard will appear and prompt you to enter your email address.
+
+- **If you have already added an account.** Click <code className="action">Tools</code> in the menu bar at the top of your screen, then <code className="action">Accounts</code>. In the window that pops up, click <code className="action">+</code>, then <code className="action">New account</code>.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016-mac/configuration-outlook-2016-mac-step1.png" loading="lazy" />
+
+Enter your email address, then click <code className="action">Continue</code>. For the provider, click on <code className="action">IMAP/POP</code>, then enter the information requested.
+
+|Information|Description|
+|---|---|
+|Account type|Leave **IMAP** (selected by default).|
+|Mail address|Enter a name that will distinguish this account from any other accounts added in your Outlook app.|
+|Username|Enter your full email address.|
+|Password|Enter the password for your email address.|
+|Incoming server|Enter “pro?.mail.ovh.net”. Leave the "Use SSL to connect" box ticked.|
+|Incoming port|Enter port 993.|
+|Outgoing server|Enter “pro?.mail.ovh.net”. Leave the "Use SSL to connect" box ticked.|
+|Outgoing port|Enter port 587.|
+
+Once you have entered this information, click <code className="action">Next</code>. If the information is correct, Outlook will successfully connect to the account.
+
+To check that the account has been configured correctly, you can send a test email.
+
+<img className="thumbnail" alt="emailpro" src="/images/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016-mac/configuration-outlook-2016-mac-step2.png" loading="lazy" />
+
+If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our Email Pro solution are listed below.
+
+|Server type|Server name|SSL|Port|
+|---|---|---|---|
+|Incoming|pro?.mail.ovh.net|Yes|993|
+|Outgoing|pro?.mail.ovh.net|Yes|587|
+
+### Step 2: Use the email address
+
+Once you have configured your email address, you can start using it! You can now send and receive emails.
+
+OVHcloud also offers a web application that includes various [collaborative features](https://www.ovhcloud.com/en-gb/emails/), accessible at [Webmail](https://www.ovhcloud.com/en-gb/mail/). You can log in using your email credentials.
+
+## Go further
+
+:::info
+For more information on configuring an email address from the Outlook app on macOS, see [the Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
+
+:::
+
+
+[Configuring an email address included in an MX Plan package or in a Web Hosting package in Outlook for Mac](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016-mac/)
+
+[Configuring your Exchange account in Outlook for Mac](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016-mac/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

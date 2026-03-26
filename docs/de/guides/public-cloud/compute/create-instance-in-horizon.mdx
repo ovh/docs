@@ -1,0 +1,206 @@
+---
+title: Eine Instanz über das Horizon-Interface erstellen
+description: Erfahren Sie hier, wie Sie eine Instanz über das Horizon-Interface erstellen
+lastUpdated: 2024-09-05
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+:::info
+Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+
+:::
+
+
+## Ziel
+
+Sie haben die Möglichkeit, Instanzen direkt über das Horizon-Interface zu erstellen. So können Sie beispielsweise mehrere Instanzen erzeugen oder eine Sicherheitsgruppe für Ihre Instanzen einrichten.
+
+**Diese Anleitung erklärt, wie Sie eine Instanz über das Horizon-Interface erstellen.**
+
+## Voraussetzungen
+
+- Sie haben ein [Public Cloud](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/), Projekt in Ihrem OVHcloud Kunden-Account erstellt.
+- Sie haben Zugang zum [Horizon-Interface](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/). 
+
+## In der praktischen Anwendung
+
+### Ein privates Netzwerk erstellen
+
+Generell empfiehlt es sich, vor der Erstellung einer Instanz ein privates Netzwerk zu erstellen. Sie können dieses Netzwerk später mit Ihrer Instanz verbinden.
+
+Loggen Sie sich zunächst im Horizon-Interface ein. Wenn Sie hierbei Hilfe benötigen, lesen Sie unsere [Anleitung](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/).
+
+Klicken Sie dann im linken Menü auf <code className="action">Network</code> und anschließend auf <code className="action">Networks</code>.
+
+<img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/create-network.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Create Network</code>
+
+<img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/create-network-1.png" loading="lazy" />
+
+
+<Tabs>
+  <Tab label="1. **Network (Netzwerk)**">
+    **Network Name:** Geben Sie einen Namen für Ihr Netzwerk ein.<br/>
+
+**Enable Admin State:** Lassen Sie diese Option aktiviert, um das Netzwerk zu aktivieren.<br/>
+
+**Create Subnet:** Lassen Sie diese Option aktiviert, um das Subnetz zu erstellen.<br/>
+
+**Availability Zone Hints:** Behalten Sie die Standardoption bei.<br/><br/>
+    <img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/network_information.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="2. **Subnet (Subnetz)**">
+    **Subnet Name:** Geben Sie einen Namen für Ihr Subnetz ein.<br/>
+
+**Network Address:** Wählen Sie einen privaten Netzwerkbereich aus. Beispiel: `192.168.0.0/24`.<br/>
+
+**IP Version:** Behalten Sie den Wert IPv4 bei.<br/>
+
+**Gateway IP:** Optional. Wenn diese Option nicht aktiviert ist, wird automatisch eine IP-Gateway-Adresse ausgewählt.<br/>
+
+**Disable Gateway:** Lassen Sie diese Option deaktiviert.<br/><br/>
+    <img className="thumbnail" alt="subnet" src="/images/public-cloud/compute/create-instance-in-horizon/subnet_information.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="3. **Subnet Details (Subnetzdetails)**">
+    **Enable DHCP:** Lassen Sie diese Option aktiviert.<br/>
+
+**Allocation Pools:** Optional. Sie können den Bereich angeben, in dem IP-Adressen ausgewählt werden.<br/>
+
+**DNS Name Servers:** Optional. Sie können einen beliebigen DNS-Server angeben.<br/>
+
+**Host Routes:** Optional. Sie können eine beliebige Hostroute angeben.<br/><br/>
+    <img className="thumbnail" alt="KVM" src="/images/public-cloud/compute/create-instance-in-horizon/subnetdetails_information.png" loading="lazy" /><br/>
+  </Tab>
+</Tabs>
+
+
+
+### Instanz erstellen
+
+Klicken Sie dann im linken Menü auf <code className="action">Compute</code> und anschließend auf <code className="action">Instances</code>.
+
+<img className="thumbnail" alt="Instanz erstellen" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step1.png" loading="lazy" />
+
+Auf der angezeigten Seite können Sie die bereits gestarteten Instanzen einsehen. Um eine neue Instanz zu starten, klicken Sie auf den Button <code className="action">Launch Instance</code>.
+
+<img className="thumbnail" alt="Instanz erstellen" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step2.png" loading="lazy" />
+
+Geben Sie dann die angeforderten Informationen ein. Beachten Sie, dass die Tabelle nicht vollständig ist.
+
+**Details**
+
+<img className="thumbnail" alt="createInstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step3.png" loading="lazy" />
+
+|Informationen|Details|
+|---|---|
+|Instance name|Geben Sie den gewünschten Namen für die Instanz an, die gestartet wird.|
+|Description|Optional. Fügen Sie bei Bedarf eine Beschreibung hinzu.|
+|Availability zone|Behalten Sie “nova” bei (Standardauswahl).|
+|Count|Geben Sie die Anzahl der zu erstellenden Instanzen ein.|
+
+**Source**
+
+<img className="thumbnail" alt="createInstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step4.png" loading="lazy" />
+
+
+|Information|Details|
+|---|---|
+|Boot Source|Klicken Sie auf den Dropdownpfeil, um die Basis einer Instanz auszuwählen (z.B. *Image* oder *Instance Snapshot*).|
+|Create New Volume|Aktivieren Sie diese Option, wenn Sie ein Volume erstellen möchten, auf das das angegebene Betriebssystem-Image kopiert wird.|
+|Volume size (GB)|Wenn Sie ein Volume erstellen möchten, überlassen Sie die Größe dem System.|
+|Delete Volume on Instance Delete|Sie können die Standardoption **No** beibehalten. Wenn **Yes** ausgewählt ist, wird beim Löschen der Instanz auch das Volume gelöscht.|
+|Image name|Wählen Sie das Image der Instanz aus (nur beim Start von einem Image aus), indem Sie auf den Pfeil neben dem gewünschten Image klicken. In diesem Beispiel wählen wir CentOS 7.|
+|Instance Snapshot|Wählen Sie einen Snapshot einer Instanz aus (nur beim Start von einem Snapshot aus), indem Sie auf den Pfeil neben dem gewünschten Instanz-Snapshot-Image klicken.|
+
+**Flavor**
+
+<img className="thumbnail" alt="createInstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step5.png" loading="lazy" />
+
+Es sind Vorlagen in Form von *flavors* verfügbar. Wählen Sie im Tab `Available` den *flavor* Ihrer Wahl aus.
+
+**Networks**
+
+|Information|Details|
+|---|---|
+|Network|Wählen Sie in der Liste der verfügbaren Netzwerke das Netzwerk für die Instanz aus, die Sie erstellen möchten. |
+|Ext-Net|Das öffentliche Netzwerk.|
+|Mynewnetwork|Das private Netzwerk, das zu Beginn dieser Anleitung erstellt wurde.|
+
+**Security Groups (Sicherheitsgruppen)**
+
+<img className="thumbnail" alt="createInstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step7.png" loading="lazy" />
+
+Weitere Informationen finden Sie in [dieser Anleitung](/guides/public-cloud/compute/setup-security-group/).
+
+**Key Pair**
+
+:::warning
+Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen (Für weitere Informationen lesen Sie die Anleitung [Änderung des SSH-Schlüssels bei Verlust](/guides/public-cloud/compute/replacing-lost-ssh-key#in-der-praktischen-anwendung/)).
+
+:::
+
+
+<img className="thumbnail" alt="createInstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step8.png" loading="lazy" />
+
+In diesem Abschnitt können Sie ein Schlüsselpaar erstellen, ein Schlüsselpaar importieren oder ein vorhandenes Schlüsselpaar verwenden.
+
+Weitere Informationen zum Erstellen eines SSH-Schlüssels finden Sie in [dieser Anleitung](/guides/public-cloud/compute/public-cloud-first-steps#create-ssh/).
+
+
+<Tabs>
+  <Tab label="+ Create Key Pair">
+    Klicken Sie auf die Schaltfläche <code className="action">+ Create Key Pair</code>, um ein Schlüsselpaar zu erstellen. Bitte beachten Sie, dass bei dieser Option zusätzliche Schritte notwendig sind, bevor Sie sich mit der Instanz verbinden können, insbesondere wenn Sie die PuTTY-Software verwenden, um sich mit Ihrer Instanz zu verbinden. Lesen Sie [diesen Abschnitt](/guides/public-cloud/compute/public-cloud-first-steps#connect-instance/) der entsprechenden Anleitung.
+    
+    **Key Pair Name:** Geben Sie einen Namen für Ihren Schlüssel ein.<br/>
+
+**Key Type:** Klicken Sie auf den <code className="action">Dropdownpfeil</code> und wählen Sie <code className="action">SSH Key</code>.<br/>
+
+Klicken Sie anschließend auf <code className="action">Create Keypair</code>, um mit der Erstellung des Schlüssels zu beginnen.<br/>
+
+Nachdem das Schlüsselpaar erstellt wurde, klicken Sie auf <code className="action">Copy Private Key to Clipboard</code> und dann auf <code className="action">Done</code>.<br/><br/>
+    <img className="thumbnail" alt="SSH-Schlüssel erstellen" src="/images/public-cloud/compute/create-instance-in-horizon/create-ssh-key-1.png" loading="lazy" /><br/>
+
+Danach wird der neu erstellte Schlüssel automatisch ausgewählt. Klicken Sie auf <code className="action">Launch Instance</code>, um mit der Erstellung Ihrer Instanz zu beginnen.<br/><br/>
+    
+    <img className="thumbnail" alt="Create Instance" src="/images/public-cloud/compute/create-instance-in-horizon/launch-instance.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="Import Key Pair (Schlüsselpaar importieren)">
+    Wenn Sie einen zuvor erstellten SSH-Schlüssel importieren möchten, klicken Sie auf <code className="action">Import Key Pair</code>.
+    
+    **Key Pair Name:** Geben Sie einen Namen für Ihren Schlüssel ein.<br/>
+
+**Key Type:** Klicken Sie auf den `Dropdownpfeil` und wählen Sie `SSH Key`.<br/>
+
+**Load Public Key from a file (Öffentlichen Schlüssel aus Datei laden):** Klicken Sie auf <code className="action">Browse</code>, um den Speicherort des öffentlichen Schlüssels auf Ihrem Computer anzugeben.<br/>
+
+**Public Key:** Kopieren Sie Ihren öffentlichen Schlüssel und fügen Sie ihn hier ein.<br/>
+
+Klicken Sie auf <code className="action">Import Key Pair</code>, um den Schlüssel zu importieren.<br/><br/>
+    <img className="thumbnail" alt="Import-Key-gerade" src="/images/public-cloud/compute/create-instance-in-horizon/import-ssh-key.png" loading="lazy" /><br/>
+
+Nach Abschluss des Vorgangs wird der importierte Schlüssel automatisch ausgewählt. Klicken Sie auf <code className="action">Launch Instance</code>, um mit der Erstellung Ihrer Instanz zu beginnen.<br/><br/>
+    
+    <img className="thumbnail" alt="Create Instance" src="/images/public-cloud/compute/create-instance-in-horizon/launch-instance.png" loading="lazy" /><br/>
+  </Tab>
+</Tabs>
+
+
+**Weitere Optionen**
+
+Achtung, diese Optionen sind für die Erstellung einer Instanz nicht zwingend erforderlich. Weitere Informationen zu diesen Optionen finden Sie in der [offiziellen OpenStack-Dokumentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
+
+
+|Information|Details|
+|---|---|
+|Custom script source|Geben Sie die Quelle als "direct entry" oder "file" ein.|
+|Script data|Geben Sie den Skriptcode in das Eingabefeld ein (maximal 16 KB).|
+|Script file|Klicken Sie auf <code className="action">Browse</code>, um das Post-Installation-Skript auszuwählen.|
+|Disk Partitioning|Wählen Sie zwischen "automatic" und "manual".|
+|Configuration disk|Konfigurieren Sie OpenStack so, dass Metadaten auf einen bestimmten Konfigurationsdatenträger geschrieben werden, der beim Start an die Instanz angehängt wird.|
+
+## Weiterführende Informationen
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

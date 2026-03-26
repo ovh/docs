@@ -1,0 +1,267 @@
+---
+title: Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu
+description: Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud
+lastUpdated: 2025-10-21
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Wprowadzenie 
+
+Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj za pomocą funkcji "mail()" w PHP. Są one wykorzystywane na przykład do formularza kontaktowego na Twojej stronie WWW i umożliwiają Twoim użytkownikom wysyłanie wiadomości.
+
+:::info
+Niniejszy przewodnik dotyczy przede wszystkim wiadomości e-mail wysyłanych ze skryptów znajdujących się na [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) za pomocą funkcji "mail()" PHP.
+
+Jeśli chcesz zarządzać adresami e-mail zawartymi w Twojej usłudze MX Plan lub usłudze[hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/), zapoznaj się z naszą dokumentacją dotyczącą [E-maili na hostingu - MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/overview/).
+
+:::
+
+
+:::tip[Success]
+Nawet jeśli polecamy użycie funkcji "mail()" PHP, możesz również wysyłać e-maile z hostingu współdzielonego przy użyciu skryptu wykorzystującego [protokół SMTP (Simple Mail Transfer Protocol)](#SMTP).
+
+:::
+
+
+**Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud.**
+
+## Wymagania początkowe
+
+- Posiadanie oferty [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Wybierz hosting WWW
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## W praktyce
+
+Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl). 
+
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+
+<Tabs>
+  <Tab label="Krok 1">
+    Przejdź na stronę [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting), następnie wybierz odpowiedni hosting.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Krok 2">
+    Na stronie, która się wyświetli kliknij zakładkę Na stronie, która się wyświetli przejdź do zakładki <code className="action">Więcej</code> i kliknij <code className="action">Skrypty e-mail</code>.
+    
+    <img className="thumbnail" alt="More tab" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/more.png" loading="lazy" />
+    
+    <img className="thumbnail" alt="More tab 2" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/more-2.png" loading="lazy" />
+
+Wyświetli się strona, na której możesz monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+  </Tab>
+</Tabs>
+
+
+### Prezentacja części "Skrypty e-mail"
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png" loading="lazy" />
+
+Na stronie wyświetla się kilka informacji umożliwiających wyświetlenie aktywności wysyłanych z skryptów automatycznych wiadomości e-mail:
+
+- **Status usługi**: aktualny stan usługi realizującej wysyłkę automatycznych wiadomości e-mail z Twojego hostingu:
+    - Jeśli jest zielony (*"Aktywny"* lub *"Force"*), oznacza to, że wysyłka jest operacyjna. 
+    - Jeśli jest czerwony (*"Nieaktywny"*, *"Bounce"* lub *"SPAM"*), przesyłki nie są wysyłane. <br/>
+
+W zależności od statusu, zarządzanie wysyłką będzie inne.
+
+- **Raporty o błędach**: możesz otrzymywać ją codziennie na wybrany adres e-mail. Zdefiniuj ją za pomocą przycisku <code className="action">Zmień odbiorcę</code>. Raport ten zawiera listę wiadomości e-mail wysłanych z Twojego hostingu, które zostały zwrócone do OVHcloud. Przycisk <code className="action">Email z błędem</code> umożliwia również sprawdzanie w każdej chwili sprawozdań po prawej stronie strony <code className="action">Scripts email</code>.
+- **Łączna liczba wysłanych e-maili**: całkowita liczba automatycznych wiadomości e-mail wysłanych od momentu utworzenia hostingu OVHcloud.
+- **E-maile wysłane dzisiaj** : całkowita liczba automatycznych wiadomości wysłanych tylko dzisiaj.
+- **Łączna liczba e-maili z błędem**: łączna liczba automatycznych wiadomości e-mail wysłanych od momentu utworzenia hostingu, które zostały zwrócone w błędzie w OVHcloud.
+- **Historia wysłanych e-maili**: wykres przedstawiający historię wiadomości e-mail wysłanych z Twojego hostingu w poprzednich dniach.
+
+Po prawej stronie możesz zarządzać wysyłką automatycznych wiadomości e-mail z Twojego hostingu. Niektóre z nich mogą nie być dostępne w zależności od statusu usługi.
+
+- **Usuń wiadomości e-mail** : usuwa wiadomości e-mail oczekujące w kolejce i odblokowuje wysyłkę e-maili. Ze względu na konieczność zachowania poufności informacji, dostęp do wiadomości e-mail oczekujących w kolejce jest niemożliwy po stronie OVHcloud. Możesz wyświetlić te e-maile tylko wtedy, gdy zostały wcześniej zapisane w bazie danych Twojej strony WWW przed wysłaniem.
+- **E-maile z błędami** : umożliwia dostęp do logów ostatnich e-maili z błędami podczas wysyłki. Na tej stronie znajdziesz adresy e-mail, których dotyczy powiązany z nimi błąd. Uwaga, ta historia nie zostanie zresetowana, nawet jeśli zdecydujesz się na <code className="action">Usuń wiadomości e-mail</code> lub <code className="action">Odblokuj wysyłkę</code>.
+- **Blokuj wysyłkę** : blokuje dystrybucję automatycznych wiadomości e-mail wysyłanych z Twojego hostingu. Wiadomości e-mail generowane przez Twoje skrypty po zablokowaniu będą czekały w kolejce przez 72 godziny.
+- **Odblokuj wysyłkę** : odblokuj wysyłkę automatycznych wiadomości e-mail z Twojego hostingu. Wiadomości oczekujące w kolejce zostaną ponownie przydzielone do dystrybucji.
+
+Aby wykonać wybraną operację, kliknij odpowiedni przycisk, po czym kliknij <code className="action">Zatwierdź</code>. W niektórych przypadkach pożądana operacja może potrwać kilkadziesiąt minut.
+
+:::info
+Aby uniknąć niepożądanego użycia automatycznych wiadomości e-mail z Twojego hostingu, zalecamy wdrożenie systemu bezpieczeństwa, takiego jak "captcha" w formularzach na Twojej stronie WWW, które przesyłają wiadomości (np. formularz kontaktowy).
+
+:::
+
+
+Jeśli Twoje e-maile nie są wysyłane za pomocą skryptów, podczas gdy status usługi pozwala na wysyłkę (*"Aktywny"* lub *"Force"*), zalecamy, aby:
+
+- **sprawdź skrypty do wysyłki**: skrypty mogą nie wysyłać e-maili z powodu błędu składni. Sprawdź zawartość skryptów, w razie potrzeby ich poprawiaj, a następnie spróbuj ponownie.
+
+- **przetestować wysyłkę e-maila za pomocą skryptu testowego**: stwórz skrypt testowy wykonujący emisję e-maila na Twój adres osobowy, używając następującego kodu:
+
+```bash
+<?php
+$to = "RecipientEmail@address.tld"; 
+$subject = "Test mail PHP"; 
+$content = "The body/content of the Email";
+$headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
+
+if (mail($to, $subject, $content, $headers))
+echo "The email has been sent successfully!";
+else
+echo "Email did not leave correctly!";
+?>
+```
+
+Dla `$headers`, wpisz dwa razy ten sam email.
+
+Jeśli otrzymasz wiadomość *The e-mail has been sent successfully!* na adres e-mail, który ustawiłeś w linii `$to`, oznacza to, że skrypty, które wykonujesz zawierają błędy.
+
+- **Upewnij się, czy Twoje e-maile nie używają serwera SMTP**: nie wskazuj serwera SMTP w ustawieniach skryptów podczas korzystania z funkcji "mail()" PHP. Jeśli dysponujesz interfejsem do zarządzania wysyłką e-maili z Twojej strony WWW, zmień ten parametr w konfiguracji Twojej strony.
+
+- **Sprawdź całkowity rozmiar wiadomości e-mail**: Wysłany e-mail nie może przekraczać całkowitego rozmiaru **10 MB** (w tym kapsułka i nagłówek). Treść Twojej wiadomości e-mail nie powinna zatem przekraczać **7/8 MB**.
+
+### Zarządzaj statusami "Nieaktywny", "Bounce" i "SPAM"
+
+W tej części znajdziesz szczegółowe informacje o każdym stanie, który spowodował zablokowanie Twojej funkcji e-mail.
+
+:::warning
+Zanim wyszczególnisz każdy z tych statusów, musisz zrozumieć punkty, które mogą pogorszyć reputację Twojej domeny lub zablokować otrzymywanie e-maili.
+
+Zweryfikuj z wyprzedzeniem następujące elementy:
+
+- Konfiguracja [rekordu SPF](/guides/web-cloud/domains/dns-zone-spf/) w strefie DNS domeny.
+- Konfiguracja [rekordu DMARC](/guides/web-cloud/domains/dns-zone-dmarc/) w strefie DNS domeny, **tylko, jeśli serwer docelowy tego wymaga**.
+- Sprawdź reputację adresu IP, z którego została wysłana wiadomość (w Twoim przypadku to adres [hosting](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/)), za pomocą narzędzi takich jak [MXtoolbox](https://mxtoolbox.com/) lub [Spamhaus](https://check.spamhaus.org/).
+- E-mail nie zawiera elementów, które można zinterpretować jako SPAM. Lista tych elementów znajduje się w części "[Przypadek nr 3: Wysyłanie legalnych wiadomości e-mail uznanych za SPAM](#elements-list-spam)" niniejszego przewodnika.
+- Jeśli e-mail nie został zablokowany przez OVHcloud i nie został odebrany lub odrzucony przez odbiorcę, skontaktuj się z adresatem, aby sprawdzić, czy wiadomość nie została zablokowana na serwerze poczty przychodzącej.
+
+:::
+
+
+### Stan "Nieaktywny"
+
+Stan ten występuje, gdy:
+
+- zbyt dużo e-maili zostało wysłanych bardzo szybko;
+- zbyt dużo e-maili zwróconych w błąd;
+- samodzielnie wyłączyłeś funkcję z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+Aby odblokować sytuację, przejdź do sekcji <code className="action">Web Cloud</code>, kliknij przycisk <code className="action">Hosting</code>, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę <code className="action">Plus</code>, następnie <code className="action">Scripts e-mail</code>.
+
+Następnie kliknij polecenie <code className="action">Odblokuj wysyłkę</code> i odczekaj kilka minut, aż usługa wysyłania e-maili stanie się aktywna.
+
+#### Stan "Bounce"
+
+Status ten pojawia się, gdy pewna część Twoich e-maili wysłanych automatycznie powróci w błąd.
+
+Aby odblokować sytuację, przejdź do sekcji <code className="action">Web Cloud</code>, kliknij przycisk <code className="action">Hosting</code>, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę <code className="action">Plus</code>, następnie <code className="action">Scripts e-mail</code>.
+
+Istnieją dwie możliwości:
+
+- Jeśli klikniesz <code className="action">Odblokuj wysyłkę</code>, stan usługi zmieni się na *"Force"*. Stosunek **e-maili zwróconych z błędem / całkowita liczba wysyłanych e-maili** dozwolona przed blokadą zostanie podwojony. Wysyłka rozpocznie się kilka minut po odblokowaniu.
+- Po kliknięciu przycisku <code className="action">Purger des e-mail</code>, wszystkie e-maile oczekujące w kolejce zostaną usunięte, a status usługi przejdzie do *"Aktywny"* bez podwojenia współczynnika.
+
+#### Status "SPAM"
+
+Status ten występuje, gdy e-maile uznawane za SPAM zostały wysłane z Twojego hostingu.
+
+Na ogół blokadą tą towarzyszy wysłanie e-maila o nazwie **"Nadużycie na hostingu domain.tld"** wygenerowanego automatycznie przez nasze roboty związane z bezpieczeństwem:
+
+<img className="thumbnail" alt="hosting" src="/images/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png" loading="lazy" />
+
+W porównaniu z tą sytuacją możliwe są trzy przypadki:
+
+- **Przypadek nr 1: obsługa formularza kontaktowego przez robota**:
+
+Aby to naprawić, musisz zabezpieczyć wszystkie skrypty mogące wysyłać e-maile z Twojego hostingu za pomocą systemu typu "Captcha".
+
+Następnie przejdź do sekcji <code className="action">Web Cloud</code>, kliknij przycisk <code className="action">Hosting</code>, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę <code className="action">Plus</code>, a następnie <code className="action">Scripts e-mail</code>.
+
+Następnie kliknij polecenie <code className="action">Czyszczenie e-maili</code>, usunie wszystkie e-maile z kolejki i stan usługi przejdzie do *"Włączony"*.
+
+W tym przypadku obowiązkowe jest czyszczenie SPAM oczekujących na wysyłkę.
+
+- **Przypadek nr 2: wprowadzanie złośliwych plików do Twojego hostingu** :
+
+W celu poprawienia tej sytuacji należy wykonać co najmniej następujące czynności:
+
+- Przeanalizuj [logi Twojego hostingu](/guides/web-cloud/web-hosting/logs-and-statistics/), aby zidentyfikować luki bezpieczeństwa i zainfekowane pliki.
+- Usuń lub poprawij złośliwy plik/moduły.
+- W przypadku systemów CMS (Wordpress, Joomla, Prestashop, Drupal, ...) aktualizuj CMS, wtyczki (wtyczki) i powiązane tematy.
+- Zabezpiecz swoje formularze kontaktowe "captcha".
+
+Jeśli korzystasz z CMS-a, skorzystaj z "oficjalnej" wtyczki/szablonów.
+Zaktualizuj CMS, wtyczki i powiązane z nimi tematy tak często, jak to tylko możliwe, aby nie powtórzyło się.
+
+Po zabezpieczeniu Twojego hostingu przejdź do sekcji <code className="action">Web Cloud</code>, kliknij przycisk <code className="action">Hosting</code>, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę <code className="action">Plus</code>, a następnie <code className="action">Scripts e-mail</code>.
+
+Następnie kliknij polecenie <code className="action">Czyszczenie e-maili</code>, usunie wszystkie e-maile z kolejki i stan usługi przejdzie do *"Włączony"*.
+
+W tym przypadku obowiązkowe jest czyszczenie SPAM oczekujących na wysyłkę.
+
+- **Przypadek nr 3: Wysyłka prawidłowych wiadomości e-mail uznanych za SPAM**: <a name="elements-list-spam"></a>
+
+Poniżej znajdziesz kilka przykładów użycia **sposobów, których należy unikać** podczas wysyłania wiadomości e-mail (aby nie był on uważany za zbyt "łatwy" jako SPAM):
+
+- 3 lub więcej wielkich liter w temacie/obiekcie wiadomości.
+- Brak tematu/tekstu wpisanego w e-mailu.
+- E-mail zawiera tylko obraz wielkości powyżej 1 MB i kilka słów.
+- Temat wiadomości rozpoczyna się od: Hi, FREE, BUY, BUYING,....
+- E-mail zawiera więcej niż 70% białych wiadomości (nadużycie na klawiaturze "ESPACE" lub "WEJŚCIE").
+- czcionka używana do pisania e-maila jest bardzo duża.
+- Kolor zapisu i tła są identyczne, jeśli chodzi o pisanie e-maila.
+- Publiczny adres IP (na przykład adres IP Twojego punktu dostępu do internetu) jest wyświetlany u renomowanych organizacji.
+- Nagłówek wysłanej wiadomości nie jest zgodny z RFC "e-maile" (standardy lub standardy e-mail).
+- Link lub linki w e-mailu są nieprawidłowe.
+- Adres URL w e-mailu jest niezabezpieczony (na przykład: zgłoszona jako `https://`, gdy adres URL istnieje tylko na `http://`)
+- E-mail zawiera słowa o charakterze pornograficznym lub zbliża się do nich.
+- E-mail zawiera plik wykonalny (EXE, BAT, PIF, XML, XLSX lub dokumenty z makrami), nawet jeśli jest "zaznaczony".
+
+Jeśli mimo to status usługi powróci do stanu *"SPAM"*, odpowiedz na automatyczny e-mail, który otrzymałeś, wskazując, że zrobiłeś to, co konieczne.
+
+Nasza usługa anty-spamowa będzie analizować sytuację, a nasz dział wsparcia powróci do Ciebie, aby wyjaśnić procedurę odblokowania.
+
+### Wysyłka e-maili za pomocą skryptu "SMTP" <a name="SMTP"></a>
+
+:::warning
+OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+
+Oddajemy do Twojej dyspozycji następną część, która pomoże Ci w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
+
+:::
+
+
+Mimo że rekomendujemy korzystanie z funkcji "mail()" PHP, hosting współdzielony umożliwia wysyłanie e-maili przy użyciu skryptu SMTP (Simple Mail Transfer Protocol). Całkowity rozmiar wiadomości e-mail nie może przekroczyć **10 MB** (tj. **7/8 MB bez kapsułek**).
+
+:::warning
+E-maile wysyłane za pomocą skryptu wykorzystującego konfigurację SMTP nie mogą być zarządzane i monitorowane za pomocą [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+:::
+
+
+:::info
+Jeśli używasz adresu e-mail OVHcloud i tylko w tym przypadku możesz również używać `SMTPSecure` *"starttls"* lub *"tls"* z `Port` **587**. Natomiast `SMTPSecure` *"ssl"* z `Port` **465** pozostaje konfiguracją uprzywilejowaną dla naszej infrastruktury.
+
+:::
+
+
+## Sprawdź również <a name="go-further"></a>
+
+[Sprawdź logi Twojego hostingu](/guides/web-cloud/web-hosting/logs-and-statistics/)
+
+[Sprostowanie strony "403 Forbidden", która wyświetla się na Twojej stronie](/guides/web-cloud/web-hosting/diagnostic-403-forbidden/)
+
+[Przywracanie przestrzeni dyskowej FTP Twojego hostingu](/guides/web-cloud/web-hosting/ftp-save-and-backup/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en)

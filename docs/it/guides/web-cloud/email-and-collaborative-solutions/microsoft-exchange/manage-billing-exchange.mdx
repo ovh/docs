@@ -1,0 +1,116 @@
+---
+title: Gestire la fatturazione di un account Exchange
+description: Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange
+lastUpdated: 2026-03-24
+---
+
+## Obiettivo
+
+I servizi Hosted Exchange e Private Exchange offrono una gestione flessibile della fatturazione degli account. OVHcloud ti aiuta a configurarla passo dopo passo.
+
+**Questa guida ti mostra come gestire gli abbonamenti dei tuoi account Exchange.**
+
+## Prerequisiti
+
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/).
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleziona la tua piattaforma
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Procedura
+
+### Hosted Exchange
+
+#### Ordina account aggiuntivi
+
+Quindi clicca sulla scheda <code className="action">Account email</code> e poi sul pulsante <code className="action">Azioni</code> in alto a sinistra. Infine clicca su <code className="action">Ordina account</code>
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-00.png" loading="lazy" />
+
+#### Modifica la frequenza di rinnovo dei tuoi account <a name="periodicity"></a>
+
+Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante <code className="action">Azioni</code> in alto a destra e poi su <code className="action">Configura il rinnovo</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-01.png" loading="lazy" />
+
+Verrai reindirizzato alla sezione “I tuoi servizi” dello Spazio Cliente OVHcloud. Come puoi notare, è stato applicato un filtro per visualizzare soltanto la piattaforma Exchange su cui apportare la modifica.
+
+Clicca sui tre puntini <code className="action">...</code> a destra della piattaforma Exchange e poi su <code className="action">Modifica la fatturazione</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-02.png" loading="lazy" />
+
+Nella nuova pagina, è possibile visualizzare e modificare la fatturazione di ciascuno dei tuoi account. Le modifiche possono essere effettuate dal menu “**Rinnovo**” su uno o più account allo stesso tempo.  Le modifiche all’account saranno applicate alla data indicata nella colonna “**Scadenza**”.
+
+L’esempio che segue, ti mostra le operazioni da effettuare per passare a un rinnovo mensile del tuo account.
+
+> Nel primo step, clicca sulla voce “**Mensile**” in corrispondenza del tuo account e poi clicca sul pulsante <code className="action">Continua</code> in basso a sinistra.
+>
+> Nel secondo step, un riepilogo ti indica che la modifica è stata applicata. Clicca sul pulsante <code className="action">Invia</code> in basso a sinistra.
+>
+> <img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-03.png" loading="lazy" />
+
+#### Elimina account
+
+Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitutto, disattivare l’account, modificando la sua configurazione di rinnovo in “**Annulla alla scadenza**”. Per farlo, consulta lo Step [“modifica la frequenza di rinnovo dei tuoi account.”](#periodicity).
+
+Una volta disattivato, il tuo account sarà sospeso alla data di scadenza. Per eliminare l’indirizzo email ospitato dall’account prima della data di scadenza, è necessario ripristinarlo.
+
+Clicca sulla scheda <code className="action">Account email</code> della tua piattaforma, quindi clicca sui tre puntini <code className="action">...</code> in corrispondenza dell’account interessato e infine clicca su `Ripristina`. Una volta ripristinato, il tuo account resterà vuoto fino alla scadenza.
+
+### Private Exchange
+
+:::info
+In una piattaforma Private Exchange, è consentito solo il rinnovo mensile degli account. Non è necessario configurare una frequenza di rinnovo.
+
+:::
+
+
+#### Ordina account aggiuntivi
+
+Clicca sulla scheda <code className="action">Account email</code>, poi sul pulsante <code className="action">Azioni</code> in alto a sinistra e infine su <code className="action">Aggiungi account</code> L’account verrà addebitato per il mese in corso.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-06.png" loading="lazy" />
+
+#### Elimina account
+
+:::warning
+Per poter eliminare un account email su una piattaforma Private Exchange, **è necessario che sia stato creato** (associato a un dominio della piattaforma Exchange). Impossibile eliminare un account non configurato.
+
+:::
+
+
+Dalla scheda <code className="action">Account email</code>, clicca su <code className="action">...</code> in corrispondenza dell’account interessato e poi clicca su <code className="action">Elimina</code>.  L’account sarà rimosso dalla piattaforma immediatamente, quindi non sarà necessario disattivarlo.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-07.png" loading="lazy" />
+
+### Disattiva la piattaforma
+
+Dopo aver eliminato gli account email, è necessario eliminare il o i domini associati alla piattaforma Exchange prima di disattivarla. Per farlo, clicca sulla scheda <code className="action">Domini associati</code>. Clicca sul pulsante <code className="action">...</code> sulla riga del nome di dominio da eliminare e poi clicca su <code className="action">Eliminare questo dominio</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-del-dom.png" loading="lazy" />
+
+Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante <code className="action">Azioni</code> in alto a destra e poi su <code className="action">Disattiva</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-08.png" loading="lazy" />
+
+:::info
+Questa azione comporta la sospensione e l'eliminazione di tutti gli account della piattaforma Exchange alla data di scadenza.
+
+:::
+
+
+## Per saperne di più <a name="go-further"></a>
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

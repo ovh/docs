@@ -1,0 +1,82 @@
+---
+title: Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019
+description: "Attivare l'opzione OVHcloud Link Aggregation sul tuo server Windows Server 2019"
+lastUpdated: 2021-03-25
+---
+
+## Obiettivo
+
+La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcloud per aumentare la disponibilità dei server e potenziare le connessioni di rete. L’attivazione dell’opzione permette di aggregare in pochi click le schede di rete e rendere i collegamenti ridondati in modo che, in caso di malfunzionamenti, il traffico venga reindirizzato automaticamente verso il collegamento disponibile.
+
+## Prerequisiti
+
+- [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/guides/bare-metal-cloud/dedicated-servers/ola-enable-manager/)
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Percorso di navigazione:** <code className="action">Bare Metal Cloud</code> > <code className="action">Server dedicati</code> > Seleziona il tuo server
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+## Procedura
+
+Il tipo di configurazione disponibile in OLA per i nostri NIC non permette di accedere al server in SSH. Per stabilire la connessione alla macchina è quindi necessario utilizzare IPMI.
+
+Clicca sulla scheda <code className="action">IPMI</code> (1) e poi sul pulsante <code className="action">Da una applet Java (KVM)</code> (2).
+
+<img className="thumbnail" alt="remote_kvm" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/remote_kvm2022.png" loading="lazy" />
+
+Verrà scaricato un programma JNLP: aprilo e utilizza le credenziali associate al server per accedere.
+
+Una volta effettuato il login alla macchina, apri Server Manager (se non si apre di default, è disponibile nel menu **Start**).
+
+<img className="thumbnail" alt="server manager" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/local_server.png" loading="lazy" />
+
+A questo punto clicca sulla scheda <code className="action">Local Server</code> a sinistra e clicca sul pulsante <code className="action">Disabled</code> vicino a **NIC Teaming**.
+
+<img className="thumbnail" alt="local server" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/server_manager.png" loading="lazy" />
+
+Si apre una nuova finestra: nella sezione **TEAMS**, clicca su <code className="action">TASKS</code> e seleziona **New Team** dal menu a tendina.
+
+<img className="thumbnail" alt="nic teaming" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/nic_teaming.png" loading="lazy" />
+
+Assegna un nome al team e spunta i NIC da utilizzare con OLA. Clicca sulla freccia verso il basso in corrispondenza di **Additional properties** e modifica il `Teaming mode` in LACP. Una volta verificata la correttezza delle informazioni inserite, clicca su <code className="action">OK</code>.
+
+<img className="thumbnail" alt="new team" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/new_team.png" loading="lazy" />
+
+Potrebbero essere necessari un paio di minuti prima che il team NIC risulti online. Una volta terminato, clicca sull’icona della connessione di rete in basso a destra e poi sul pulsante <code className="action">Network & Internet settings</code>. Seleziona **Ethernet** nella barra laterale sinistra.
+
+<img className="thumbnail" alt="network button" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/network_button.png" loading="lazy" />
+
+Clicca su <code className="action">Change adapter options</code>.
+
+<img className="thumbnail" alt="ethernet" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/ethernet.png" loading="lazy" />
+
+A questo punto clicca con il tasto destro sul team NIC e seleziona **Properties** nel menu a tendina.
+
+<img className="thumbnail" alt="properties" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/properties.png" loading="lazy" />
+
+Nella nuova finestra, clicca due volte su <code className="action">Internet Protocol Version 4 (TCP/IPv4)</code>.
+
+<img className="thumbnail" alt="ipv4" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/ipv4.png" loading="lazy" />
+
+Seleziona <code className="action">Use the following IP address</code> e aggiungi l’IP privato e la sottorete scelta. Una volta verificata la correttezza delle impostazioni, clicca su <code className="action">OK</code>.
+
+<img className="thumbnail" alt="ipv42" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/ipv42.png" loading="lazy" />
+
+Per testare il corretto funzionamento del nuovo NIC team creato, effettua il ping di un altro server presente nella stessa vRack. Se funziona, la procedura è conclusa. In caso contrario, verifica nuovamente la configurazione o prova a riavviare il server.
+
+## Per saperne di più
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/guides/bare-metal-cloud/dedicated-servers/ola-enable-manager/).
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9](/guides/bare-metal-cloud/dedicated-servers/ola-enable-debian9/).
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in SLES 15](/guides/bare-metal-cloud/dedicated-servers/ola-enable-sles15/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

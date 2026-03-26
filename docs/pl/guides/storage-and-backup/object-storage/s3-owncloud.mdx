@@ -1,0 +1,90 @@
+---
+title: Object Storage - Skorzystaj z oferty Object Storage z Owncloud (EN)
+description: Learn how to set up storage in Owncloud to use an Object Storage bucket
+lastUpdated: 2024-05-20
+---
+
+## Objective
+
+Owncloud is a suite of client-server software for creating and using file hosting services.
+
+**This guide explains how to set up storage in Owncloud to use an Object Storage bucket.**
+
+:::warning
+OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+
+This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/pl/directory/) and/or discuss the issue with our [community of users](https://community.ovhcloud.com/community/en). OVHcloud cannot provide you with technical support in this regard.
+
+:::
+
+
+## Requirements
+
+- A bucket
+- A user with the required access rights on the bucket
+- Your Object Storage credentials (access_key and secret_access_key)
+
+See our [Getting started with Object Storage](/guides/storage-and-backup/object-storage/s3-getting-started-with-object-storage/) guide.
+
+:::info
+In order to identify your endpoint corresponding to your storage class, please refer to this guide: [Object Storage - Endpoints and Object Storage geoavailability](/guides/storage-and-backup/object-storage/s3-location/).
+
+:::
+
+
+## Instructions
+
+If needed, install the `External Storage: S3` plugin from the <code className="action">Market</code>.
+
+<img className="thumbnail" alt="Owncloud open Market" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-20211209131331778.png" loading="lazy" />
+
+Search for the `External Storage: S3` plugin.
+
+<img className="thumbnail" alt="Owncloud plugin External Storage S3" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-20211209131556714.png" loading="lazy" />
+
+And <code className="action">install</code> it.
+
+<img className="thumbnail" alt="Owncloud install plugin" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-20211209131648711.png" loading="lazy" />
+
+Go to the <code className="action">Settings</code>.
+
+<img className="thumbnail" alt="Owncloud open Settings" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-20211209131942821.png" loading="lazy" />
+
+Then :
+
+1. in <code className="action">Storage</code>
+2. enable <code className="action">Enable external storage</code>
+3. name your folder
+4. add an <code className="action">Amazon S3 compatible storage (SDK v3)</code>
+
+<img className="thumbnail" alt="Owncloud create AWS S3 storage" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-20211209143008822.png" loading="lazy" />
+
+Fill in the following information:
+
+1. Enter the name of your bucket
+2. Set the host as: `s3.<region_in_lowercase>.io.cloud.ovh.net`
+3. Set the port to 443
+4. Specify the region
+5. Activate SSL
+6. Enter your access key
+7. Enter your secret key
+
+<img className="thumbnail" alt="Owncloud complete AWS S3 storage" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-20211209133630272.png" loading="lazy" />
+
+Go to <code className="action">Files</code>.
+
+<img className="thumbnail" alt="Owncloud open Files" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-20211209133730832.png" loading="lazy" />
+
+Then in <code className="action">External storage</code>.
+
+<img className="thumbnail" alt="Owncloud Files External Storage" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-2021120913382299.png" loading="lazy" />
+
+The result should be similar to this:
+
+<img className="thumbnail" alt="Owncloud Bucket listing" src="/images/storage-and-backup/object-storage/s3-owncloud/HighPerf-Owncloud-20211209140757288.png" loading="lazy" />
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

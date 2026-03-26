@@ -1,0 +1,59 @@
+---
+title: Hébergement web - Comment connaître son cluster et son filer
+description: Découvrez comment retrouver le numéro de cluster et/ou le numéro du filer où se trouve votre hébergement web
+lastUpdated: 2025-08-12
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+Les hébergements web fonctionnent sur une infrastructure mutualisée appelée *cluster*. OVHcloud dispose de plusieurs clusters sur lesquels sont répartis plusieurs hébergements web.
+Chaque cluster, pour des raisons d'efficacité et de sécurité, est également divisé virtuellement en plusieurs segments appelés *filers*. Les filers contiennent eux-mêmes plusieurs hébergements web.
+Au cours de l'utilisation de votre hébergement web, vous pouvez être amenés à devoir connaître le numéro du cluster et/ou du filer où se situe votre hébergement web.
+
+**Découvrez comment retrouver le numéro de cluster et le numéro du filer où se trouve votre hébergement web.**
+
+## Prérequis
+
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Hébergements</code> > Sélectionnez votre hébergement web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## En pratique
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+<Tabs>
+  <Tab label="Étape 1">
+    Accédez à la page [Hébergements](https://manager.eu.ovhcloud.com/#/web/hosting), puis choisissez l'hébergement web concerné.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Étape 2">
+    Dans l'encadré **Informations générales** de la page qui s'affiche, récupérez le numéro du cluster sous la mention **Cluster** (3 chiffres compris entre `0` et `9`) et le numéro du filer sous la mention **Filer**.
+    
+    <img className="thumbnail" alt="Numéros du cluster et du filer" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Aller plus loin
+
+[Hébergement web - Liste des adresses IP par cluster](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip/).
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

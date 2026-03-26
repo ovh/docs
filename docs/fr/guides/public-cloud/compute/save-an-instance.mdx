@@ -1,0 +1,262 @@
+---
+title: Sauvegarder une instance
+description: Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud ou via OpenStack
+lastUpdated: 2025-12-09
+---
+
+import Api from '@components/Api';
+
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objectif
+
+Vous pouvez créer une sauvegarde unique d'une instance ou configurer un planning afin d'automatiser les sauvegardes de vos instances. Les sauvegardes peuvent être utilisées pour restaurer votre instance à un état antérieur ou pour créer une nouvelle instance identique.
+
+**Ce guide explique comment créer des sauvegardes manuelles et automatiques d'une instance Public Cloud.**
+
+## Prérequis
+
+- Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- CLI OpenStack. Consultez notre guide « [Préparer l'environnement pour utiliser l'API OpenStack](/guides/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/) ». (optionnel)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Pour accéder à vos services :** <code className="action">Public Cloud</code> > Sélectionnez votre projet
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## En pratique
+
+### Créer une sauvegarde d'une instance
+
+:::warning
+Cette option est uniquement disponible via un **Cold Snapshot** pour les instances Metal. L'instance Metal passera en mode rescue et, une fois la sauvegarde effectuée, l'instance sera redémarrée en mode normal.
+
+:::
+
+
+:::info
+Deux types de sauvegardes sont disponibles :
+
+- Locale : Une sauvegarde locale est stockée dans la même région que votre instance.
+- Distante : Une sauvegarde distante crée automatiquement une copie de la sauvegarde locale dans une autre région de votre choix.
+
+Chaque sauvegarde est facturée séparément. La sauvegarde distante sera facturée selon la tarification du stockage dans la région distante sélectionnée.
+
+**Note :** les Local Zones ne sont pas éligibles pour les sauvegardes distantes
+
+:::
+
+
+<Tabs>
+  <Tab label="Via l'espace client OVHcloud">
+    Cliquez sur <code className="action">Instances</code> dans le menu de gauche.<br/>
+
+Une fois sur la page des instances, cliquez sur le bouton <code className="action">...</code> à droite de l'instance et sélectionnez <code className="action">Créer un backup</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup1.png" loading="lazy" />
+    
+    <details>
+    <summary>Sauvegarde locale</summary>
+
+    
+    Renseignez un nom pour la sauvegarde. Prenez connaissance des informations tarifaires et cliquez sur <code className="action">Confirmer</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup2bis.png" loading="lazy" />
+    
+
+    </details>
+    
+    <details>
+    <summary>Sauvegarde distante</summary>
+
+    
+    Entrez un nom pour la sauvegarde et vérifiez les informations tarifaires. Cliquez sur <code className="action">Ajouter un backup distant (Option)</code>, entrez un nom pour la sauvegarde distante, sélectionnez une région et cliquez sur <code className="action">Confirmer</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createdistantbackup.png" loading="lazy" />
+    
+
+    </details>
+    
+    Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, vous pouvez consulter le statut de la sauvegarde dans la section <code className="action">Instance Backup</code> sous la rubrique **Compute** du menu de gauche, où l'état `Backup en cours` sera affiché pendant le processus.
+    
+    Une fois la sauvegarde terminée, celle-ci sera disponible dans la section <code className="action">Instance Backup</code> sous la rubrique **Compute** dans le menu de gauche.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup3.png" loading="lazy" />
+  </Tab>
+  <Tab label="Via l'API OVHcloud">
+    Authentifiez-vous sur [l'API OVHcloud](https://eu.api.ovh.com/console/).
+    
+    Vous pouvez répertorier toutes les régions disponibles à l'aide de l'appel API suivant :
+    
+    <Api version="v1" section="/cloud" method="GET" route={"/cloud/project/\\{serviceName\\}/region"} />
+
+Utilisez ensuite l'appel API suivant :
+    
+    <Api version="v1" section="/cloud" method="POST" route={"/cloud/project/\\{serviceName\\}/region/\\{regionName\\}/instance/\\{instanceId\\}/snapshot"} />
+
+Renseignez les variables :
+    
+    - **instanceId** : Identifiant unique de l’instance concernée.
+    - **regionName** : Nom de la région où se situe l’instance source.
+    - **serviceName** : Identifiant du projet OVHcloud.
+    - **distantRegionName (optionnel)** : Nom de la région distante où le backup sera stocké.
+    - **distantSnapshotName (optionnel)** : Nom du backup distant à créer dans la région distante.
+    - **snapshotName** : Nom du snapshot (sauvegarde locale) à créer.
+    
+    :::info
+    Ne créez un backup distant que si les paramètres relatifs à la région distante (**distantRegionName** et **distantSnapshotName**) sont renseignés.
+
+    :::
+
+  </Tab>
+  <Tab label="Via la CLI OpenStack">
+    Exécutez la commande suivante pour afficher la liste des instances :
+    
+    ```bash
+    $ openstack server list
+    
+    +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+    | ID | Name | Status | Networks | Image Name |
+    +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+    | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
+    +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+    ```
+    
+    Vous pouvez répertorier toutes les régions disponibles à l'aide de la commande suivante :
+    
+    ```bash
+    $ openstack region list
+    ```
+    
+    <details>
+    <summary>Sauvegarde locale</summary>
+
+    
+    Exécutez ensuite la commande suivante pour créer une sauvegarde de votre instance :
+    
+    ```bash
+    $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
+    ```
+    
+
+    </details>
+    
+    <details>
+    <summary>Sauvegarde distante</summary>
+
+    
+    Exécutez la commande suivante après avoir suivi l'étape de la sauvegarde locale :
+    
+    ```bash
+    $ openstack workflow execution create ovh.glance.glance_download '{"src_image_id": "<image_id>", "src_region": "<current_region>", "dst_region": "<remote_region>"}'
+    ```
+    
+
+    </details>
+  </Tab>
+  <Tab label="Via Horizon">
+    Cliquez sur le menu <code className="action">Compute</code> à gauche puis sélectionnez <code className="action">Instances</code>.<br/>
+
+Cliquez ensuite sur le bouton <code className="action">Create Snapshot</code> situé à droite de la ligne correspondant à l’instance concernée.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon1" src="/images/public-cloud/compute/save-an-instance/createbackuphorizon1.png" loading="lazy" />
+
+Renseignez le nom du backup et appuyez sur le bouton <code className="action">Create Snapshot</code>.
+    
+    <img className="thumbnail" alt="public-cloud-instance-backup-horizon2" src="/images/public-cloud/compute/save-an-instance/createbackuphorizon2.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Créer une sauvegarde automatisée d’une instance
+
+:::info
+Si vous souhaitez automatiser cette fonctionnalité directement via OpenStack, vous pouvez créer un workflow Mistral associé à un cron trigger.
+
+:::
+
+
+Cliquez sur le bouton <code className="action">...</code> à droite de l'instance et sélectionnez <code className="action">Créer une sauvegarde automatisée</code>.
+
+<img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup4.png" loading="lazy" />
+
+Vous pourrez alors configurer les paramètres de sauvegarde suivants :
+
+#### **Le workflow** 
+
+Actuellement, un seul workflow existe. Il créera une sauvegarde pour l'instance et son volume principal.
+
+<img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup5.png" loading="lazy" />
+
+#### **La ressource** 
+
+Vous pouvez sélectionner l'instance à sauvegarder.
+
+<img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup6.png" loading="lazy" />
+
+#### **Le nom** 
+
+Entrez un nom pour la planification de sauvegarde automatique et consultez les informations de tarification.
+
+<img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup7.png" loading="lazy" />
+
+#### **Le planning**
+
+Vous pouvez définir une planification de sauvegarde personnalisée ou choisir l'une des fréquences par défaut :
+
+- Sauvegarde quotidienne avec rétention des 7 dernières sauvegardes
+- Sauvegarde quotidienne avec rétention des 14 dernières sauvegardes
+
+<img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup8.png" loading="lazy" />
+
+<details>
+
+<summary>**Ajout d'une sauvegarde distante**</summary>
+
+
+Cliquez sur le bouton <code className="action">Ajouter un backup distant</code>, sélectionnez une localisation, prenez connaissance des informations de tarification et cliquez sur le bouton <code className="action">Créer</code> 
+
+<img className="thumbnail" alt="public-cloud-instance-backup-distant" src="/images/public-cloud/compute/save-an-instance/createbackup8distant.png" loading="lazy" />
+
+</details>
+
+
+### Gestion des sauvegardes et des plannings
+
+Les planifications peuvent être créées et supprimées dans la section <code className="action">Workflow Management</code> qui se trouve sous la rubrique **Compute** dans le menu de gauche.
+
+<img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup9.png" loading="lazy" />
+
+Les sauvegardes de vos instances sont gérées dans la section <code className="action">Instance Backup</code> qui se trouve sous la rubrique **Compute** dans le menu de gauche.
+
+<img className="thumbnail" alt="public-cloud-instance-backup" src="/images/public-cloud/compute/save-an-instance/createbackup10.png" loading="lazy" />
+
+:::warning
+L'option de sauvegarde de l'instance doit être supprimée séparément si vous ne souhaitez plus qu'elle vous soit facturée. La suppression d'une instance ne supprime pas les options qui y sont attachées.
+
+:::
+
+
+:::warning
+**Notez que vous ne pouvez pas supprimer une sauvegarde d'instance si une instance qui a été générée à partir de cette sauvegarde est en cours d'exécution au moment de l'action de suppression.**
+
+:::
+
+
+Découvrez comment utiliser les sauvegardes pour cloner ou restaurer des instances dans [ce guide](/guides/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/).
+
+## Aller plus loin
+
+[Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/guides/public-cloud/compute/create-restore-a-virtual-server-with-a-backup/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

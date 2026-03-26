@@ -1,0 +1,97 @@
+---
+title: "Comment créer une politique IAM pour permettre à un utilisateur de se connecter à l'espace client OVHcloud"
+description: Découvrez comment octroyer les droits minimums nécessaires pour vous connecter à votre espace client
+lastUpdated: 2024-10-02
+---
+
+## Objectif
+
+Ce guide explique comment fournir à un utilisateur les droits essentiels lui permettant de se connecter à l'espace client OVHcloud.
+
+## Prérequis
+
+- Disposer d'un [compte OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+- Savoir [gérer les utilisateurs du compte](/guides/account-and-service-management/account-information/ovhcloud-users-management/)
+- Savoir [comment configurer des stratégies pour IAM](/guides/account-and-service-management/account-information/iam-policy-ui/)
+
+{/* CP-NAV-START:iam-policies */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Politiques IAM](https://manager.eu.ovhcloud.com/#/iam/policies/myPolicies)
+- **Pour y accéder :** <code className="action">Identité, Sécurité & Opérations</code> > <code className="action">Politiques</code>
+
+---
+{/* CP-NAV-END:iam-policies */}
+
+## En pratique
+
+Pour pouvoir se connecter à l'espace client OVHcloud, un utilisateur doit disposer au moins de cet ensemble minimal de droits sur la ressource du compte :
+
+- account:apiovh:me/get
+- account:apiovh:me/supportLevel/get
+- account:apiovh:me/certificates/get
+- account:apiovh:me/tag/get
+
+Grâce à ces droits, un utilisateur pourra se connecter à l'espace client. Cependant, pour pouvoir effectuer des actions à l’intérieur de celui-ci, des droits supplémentaires doivent être attribués via IAM.
+
+### Via l'interface utilisateur
+
+L'interface utilisateur permet de configurer une stratégie avec la configuration suivante :
+
+Ajouter la ou les identités auxquelles vous souhaitez donner accès.
+
+<img className="thumbnail" alt="Add identities" src="/images/account-and-service-management/account-information/iam-control-panel-access/add_identities.png" loading="lazy" />
+
+Ajouter un `resourceType` « OVHcloud customer account » et ajouter votre compte en tant que ressource.
+
+<img className="thumbnail" alt="Account ressourceType" src="/images/account-and-service-management/account-information/iam-control-panel-access/account_ressourceType.png" loading="lazy" />
+
+Ensuite il est possible soit d'utiliser un groupe de permissions managée `controlPanelAccess`
+
+<img className="thumbnail" alt="Control Panel Access" src="/images/account-and-service-management/account-information/iam-control-panel-access/controlPanelAccess.png" loading="lazy" />
+
+Ou d'ajouter les 4 droits listés ci-dessus en tant qu'action
+
+<img className="thumbnail" alt="Add actions" src="/images/account-and-service-management/account-information/iam-control-panel-access/add_actions.png" loading="lazy" />
+
+Vous pouvez maintenant associer vos utilisateurs à cette politique pour leur donner le droit de se connecter à votre espace client.
+
+### Via l'API
+
+L'API vous permet de mettre en place une policy selon l'exemple suivant :
+
+```json
+{
+  "name": "manager_ro",
+  "description": "manager_ro",
+  "identities": [
+    .... 
+  ],
+  "resources": [ 
+     {
+         "urn": "urn:v1:eu:resource:account:xx1111-ovh" 
+     }],
+  "permissions": {
+    "allow": [
+      {
+        "action": "account:apiovh:me/get"
+      },
+      {
+        "action": "account:apiovh:me/supportLevel/get"
+      },
+      {
+        "action": "account:apiovh:me/certificates/get"
+      },
+      {
+        "action": "account:apiovh:me/tag/get"
+      }
+    ]
+  }
+}
+```
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

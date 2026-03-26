@@ -1,0 +1,366 @@
+---
+title: Erste Schritte mit Zimbra
+description: Erfahren Sie hier, wie Sie Ihr Zimbra Angebot über Ihr OVHcloud Kundencenter verwalten
+lastUpdated: 2025-11-04
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+Mit dem Zimbra Dienst bietet Ihnen OVHcloud eine kollaborative Open Source Messaging Plattform mit allen für eine professionelle Nutzung notwendigen Funktionen. In dieser Anleitung erfahren Sie, wie Sie mit der Konfiguration Ihrer Zimbra E-Mail-Accounts beginnen.
+
+**Diese Anleitung erklärt, wie Sie Zimbra E-Mail im OVHcloud Kundencenter konfigurieren.**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/q8QCtcXRbME?si=bAjQhzr-PQ--3Aj7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen={true}></iframe>
+
+## Voraussetzungen
+
+- Sie haben einen E-Mail-Account auf der OVHcloud Zimbra E-Mail-Lösung abonniert.
+- Sie verwalten einen [OVHcloud Domainnamen](https://www.ovhcloud.com/de/domains/).
+
+{/* CP-NAV-START:web-zimbra */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Zimbra](https://manager.eu.ovhcloud.com/#/web/zimbra)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Zimbra Mail</code>
+
+---
+{/* CP-NAV-END:web-zimbra */}
+
+## In der praktischen Anwendung
+
+**Inhalt**
+
+- [Konfigurieren Sie Ihre Zimbra Dienstleistung](#zimbra-conf)
+- [Organisationen](#organizations)
+    - [Organisation erstellen](#organizations-create)
+    - [Nach Organisation filtern](#organizations-filters)
+- [Domains](#domains)
+    - [Domain hinzufügen](#domains-add)
+    - [Domainnamen bearbeiten](#domains-modify)
+- [E-Mail Accounts](#emails)
+    - [E-Mail-Account erstellen](#emails-create)
+    - [Angebot ändern](#emails-offer)
+- [E-Mail-Account einsehen](#emails-consult)
+- [Weiterleitungen](#redirections)
+- [Alias](#alias)
+- [automatische Antworten](#autoreply)
+
+### Ihren Zimbra Dienst konfigurieren <a name="zimbra-conf"></a>
+
+Bevor Sie mit der Konfiguration Ihrer Zimbra E-Mail-Accounts beginnen, beachten Sie die drei Elemente, die Ihre Zimbra Dienstleistung hierarchisch strukturieren:
+
+- [**Organisation**](#organizations): Gruppierung von Domainnamen zur Verwendung mit E-Mails.
+- [**Domainname**](#domains): Notwendig zur Erstellung eines E-Mail-Accounts; mindestens ein Domainname in Ihrem OVHcloud Kundencenter ist erforderlich, um ihn dem Zimbra-Dienst hinzufügen zu können.
+- [**E-Mail-Accounts**](#emails): Mit den zu Ihrem Zimbra Dienst hinzugefügten Domainnamen können Sie E-Mail-Adressen erstellen.
+
+:::info
+Die *Organisation* dient zur Abbildung einer Entität (Unternehmen, Verein, persönliches Projekt, etc.). Sie erlaubt die Trennung von E-Mail-Accounts, die Anwendung spezifischer Sicherheitsrichtlinien (zukünftige Funktion) und die Übertragung von Rechten an eine Organisation (zukünftige Funktion). Die Verwendung von Organisationen vereinfacht die Navigation und Verwaltung Ihres Zimbra Dienstes.
+
+:::
+
+
+Die folgende Abbildung zeigt die hierarchische Beziehung zwischen den oben genannten Elementen.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_organization.png" loading="lazy" />
+
+### Organisationen <a name="organizations"></a>
+
+Wenn Sie eine große Anzahl von Domainnamen zu Ihrem Zimbra Dienst hinzufügen, kann es nützlich sein, diese zu einer "Organisation" zusammenzufassen. Klicken Sie in Ihrem Zimbra Dienst auf <code className="action">Organisation</code>.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_organization_tab.png" loading="lazy" />
+
+#### Organisation erstellen <a name="organizations-create"></a>
+
+Um eine Organisation zu erstellen, klicken Sie auf <code className="action">Organisation hinzufügen</code>. Legen Sie den `Namen` der Organisation und das `Label der Organisation` fest. Dabei handelt es sich um eine kurze Beschreibung der Organisation, anhand derer Sie die Anzeige der Domainnamen und E-Mail-Accounts Ihrer Zimbra Dienstleistung filtern können.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_organization_add.png" loading="lazy" />
+
+#### Nach Organisation filtern <a name="organizations-filters"></a>
+
+In den Tabs <code className="action">Organisation</code>, <code className="action">Domain</code> und <code className="action">E-Mail-Accounts</code> erstellen Sie einen Filter, der nur die Elemente anzeigt, die mit dieser Organisation verknüpft sind.
+
+Sie sehen, dass der Filter angewendet wird, wenn das Label neben dem Namen Ihres Zimbra Dienstes angezeigt wird.
+
+Um den Filter zu entfernen, klicken Sie auf das Filterkreuz.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_organization_filter.png" loading="lazy" />
+
+### Domains <a name="domains"></a>
+
+:::warning
+Für einen optimalen Betrieb, wenn Sie den gleichen Domainnamen für OVHcloud [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/), [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) und Zimbra verwenden, muss der Domainname als `nicht-autoritativ` konfiguriert werden.   Weitere Informationen zum Konfigurieren eines nicht-autoritativen Domainnamens für die Dienste Exchange und E-Mail Pro finden Sie in unserer Anleitung: [Domainnamen zu Ihrem Exchange Dienst hinzufügen](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/).
+
+:::
+
+
+In diesem Tab finden Sie alle Domainnamen, die zu Ihrer Zimbra Dienstleistung hinzugefügt wurden. Sie müssen über Ihr OVHcloud Kundencenter verwaltet werden, um sie verwenden zu können.
+
+Die Tabelle der Domainnamen enthält zwei Informationen:
+
+- **Organisation**: Diese wird festgelegt, wenn Sie Ihren Domainnamen hinzufügen. Dessen Label wird automatisch in dieser Spalte angezeigt.
+- **Anzahl der Accounts**: Hier finden Sie alle Accounts, die unter dem betreffenden Domainnamen erstellt wurden.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_domain_tab.png" loading="lazy" />
+
+#### Einen Domainnamen hinzufügen <a name="domains-add"></a>
+
+:::warning
+Um eine Domain zu Ihrer Zimbra Dienstleistung hinzuzufügen, müssen Sie eine [Organisation erstellen](#organisations).
+
+:::
+
+
+Um eine Domain zu Ihrer Zimbra Dienstleistung hinzuzufügen, klicken Sie auf <code className="action">Domain</code> und dann auf <code className="action">Domain hinzufügen</code>.
+
+Wählen Sie im Dropdown-Menü eine Organisation aus, und wählen Sie dann eine der folgenden Optionen aus:
+
+- **Domain in der Liste auswählen** (interne Domain): In dieser Liste finden Sie die Domainnamen, die Sie über Ihr OVHcloud Kundencenter verwalten.
+- **Eine Domain angeben, die nicht in Ihrem OVHcloud Account verwaltet wird** (externe Domain): Geben Sie einen Domainnamen ein, der nicht in Ihrem OVHcloud Kundencenter verwaltet wird oder der bei einem anderen Registrar registriert ist und von Ihnen verwaltet wird.
+
+Wählen Sie den betreffenden Tab aus:
+
+<Tabs>
+  <Tab label="Interne Domain">
+    Wählen Sie eine über Ihr OVHcloud Kundencenter verwaltete Domain aus der Liste aus.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_domain_add_internal01.png" loading="lazy" />
+
+Wählen Sie eine der folgenden Optionen aus, um Ihre DNS-Zone zu konfigurieren:
+    
+    - **Empfohlene Konfiguration**: Ihre DNS-Zone wird automatisch konfiguriert. Diese Option eignet sich, wenn Sie für Ihre Domain kein E-Mail-Angebot eingerichtet haben.
+    - **Benutzerdefinierte Konfiguration**: Wenn Sie bereits ein E-Mail-Angebot für Ihre Domain eingerichtet haben, können Sie die für Sie interessanten Elemente auswählen.
+       - *MX-Eintrag automatisch konfigurieren*: Ermöglicht die automatische Eingabe der Empfangsserver von OVHcloud (gilt für alle E-Mail-Angebote von OVHcloud).
+       - *SPF-Eintrag automatisch konfigurieren*: Ermöglicht die automatische Eingabe des Eintrags, der den OVHcloud E-Mail-Servern den Versand Ihrer E-Mails erlaubt. Diese Registrierung gilt für alle OVHcloud E-Mail-Angebote.
+       - *DKIM-Eintrag automatisch konfigurieren*: Damit werden automatisch die erforderlichen Einträge für die Authentifizierung des Versands von E-Mails eingegeben.
+       - *SRV-Eintrag automatisch konfigurieren*: Ermöglicht die automatische Konfiguration der Parameter eines E-Mail-Accounts, wenn Sie ihn in einer E-Mail-Software (Outlook, Mail für Mac, Thunderbird usw.) hinzufügen.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_domain_add_internal02.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Bestätigen</code>, um das Hinzufügen Ihrer Domain abzuschließen und den Konfigurationsprozess zu starten.
+  </Tab>
+  <Tab label="Externe Domain">
+    Geben Sie einen Domainnamen ein, der nicht in Ihrem Kundencenter verwaltet wird. Vergewissern Sie sich, dass Sie die notwendigen Rechte haben, um die DNS-Zone der betreffenden Domain zu ändern.
+    
+    Klicken Sie anschließend auf <code className="action">Bestätigen</code>
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_domain_add_external01.png" loading="lazy" />
+
+Das folgende Fenster wird angezeigt. Sie müssen diesen CNAME-Eintrag in der DNS-Zone der Domain eingeben, damit er auf Ihrer Zimbra-Plattform validiert werden kann.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_domain_add_external02.png" loading="lazy" />
+    
+    :::warning
+    Nach 48 Stunden wird der Vorgang abgebrochen, wenn der CNAME in der DNS-Zone nicht sichtbar ist. In diesem Fall muss der Vorgang wiederholt werden.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+#### Domainnamen bearbeiten <a name="domains-modify"></a>
+
+Sie können einen Domainnamen bearbeiten, um dessen Organisation zu ändern oder die zugehörigen DNS-Einträge zu überprüfen.
+
+Klicken Sie im Tab <code className="action">Domain</code> Ihres Zimbra Dienstes auf das Symbol &#8285; rechts neben der betreffenden Domain, um die Optionen anzuzeigen.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_domain_modify01.png" loading="lazy" />
+
+- Klicken Sie auf <code className="action">Konfigurieren</code>, um die Ihrem Domainnamen zugeordnete Organisation zu ändern.
+- Klicken Sie auf <code className="action">Diagnose</code>, um die Ansicht für die Diagnose der DNS-Einträge anzuzeigen. Es sollten keine Warnungen für die DNS-Einträge in den Tabs angezeigt werden. Falls Warnungen angezeigt werden, folgen Sie jeweils den Anweisungen in den Tabs, um die DNS-Einträge zu konfigurieren:
+    - **MX**: Notwendig zum Empfang Ihrer E-Mails.
+    - **SPF**: Sicherheitseintrag, der von den meisten E-Mail-Empfänger-Servern verlangt wird, um die OVHcloud Server für den E-Mail-Versand mit Ihrem Domainnamen zu legitimieren.
+    - **DKIM**: Ermöglicht die Einrichtung eines Signatursystems für jede E-Mail, die von Ihrem Zimbra-Dienst gesendet wird. Die Signatur wird vom Empfänger anhand des öffentlichen Schlüssels überprüft, der in Ihrer DNS-Zone hinterlegt ist.
+    - **SRV**: Ermöglicht die Konfiguration Ihres Zimbra Accounts, wenn Sie ihn in einer E-Mail-Software (Outlook, Mail für Mac, Thunderbird usw.) einrichten.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_domain_modify02.png" loading="lazy" />
+
+### E-Mail-Accounts <a name="emails"></a>
+
+Die Verwaltung der E-Mail-Accounts Ihrer Zimbra Dienstleistung erfolgt über den Tab <code className="action">E-Mail-Accounts</code>. Die Tabelle enthält eine Liste der auf Ihrem Dienst vorhandenen E-Mail-Accounts sowie 3 Informationen zu jedem Account:
+
+- **Organisation**: Wenn der Domainname Ihres E-Mail-Accounts mit einer Organisation verbunden ist, finden Sie das zugehörige Label automatisch in dieser Spalte.
+- **Angebot**: Da Ihre Zimbra Dienstleistung mehrere Dienste enthalten kann, finden Sie den Ihrem E-Mail-Account zugeordneten Dienst in dieser Spalte.
+- **Größe**: Diese Spalte zeigt die Gesamtkapazität und den aktuellen Speicherplatz Ihres E-Mail-Accounts an.
+
+Außerdem finden Sie oben auf dieser Seite einen Link zum [Webmail](https://www.ovhcloud.com/de/mail/), um die Inhalte des E-Mail-Accounts im Webbrowser anzuzeigen.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_emailaccounts_tab.png" loading="lazy" />
+
+#### Einen E-Mail-Account erstellen <a name="emails-create"></a>
+
+Um einen E-Mail-Account auf Ihrer Zimbra Dienstleistung zu erstellen, klicken Sie auf den Tab <code className="action">E-Mail-Accounts</code> und dann auf <code className="action">Einen Account erstellen</code>.
+
+Geben Sie die angezeigten Informationen ein.
+
+- **E-Mail-Account**: Geben Sie den *Namen des Accounts* ein, den Ihre E-Mail-Adresse erhalten soll (zum Beispiel Vorname.Name) und *wählen Sie einen Domainnamen* aus dem Drop-down-Menü aus.
+
+:::warning
+Die Wahl des Namens Ihrer E-Mail-Adresse muss folgende Bedingungen erfüllen:
+
+- Mindestens 2 Zeichen.
+- Maximal 32 Zeichen.
+- Keine Zeichen mit Akzent.
+- Keine Sonderzeichen außer `.`, `+`, `-` und `_`.
+
+:::
+
+
+- **Vorname**: Geben Sie einen Vornamen ein.
+- **Name**: Geben Sie einen Namen ein.
+- **Anzeigename**: Geben Sie den Namen ein, der als Absender angezeigt wird, wenn E-Mails von dieser Adresse aus versendet werden.
+- **Passwort**: Legen Sie ein sicheres Passwort fest, das aus (mindestens) 9 Zeichen, einem Großbuchstaben, einem Kleinbuchstaben und einer Ziffer besteht. Verwenden Sie aus Sicherheitsgründen nicht dasselbe Kennwort zweimal. Wählen Sie einen Namen aus, der in keinem Zusammenhang mit Ihren persönlichen Daten steht (vermeiden Sie z. B. Ihren Namen, Vornamen und Ihr Geburtsdatum). Ändern Sie es regelmäßig.
+
+:::warning
+Die Wahl des Passworts muss folgende Bedingungen erfüllen:
+
+- Mindestens 10 Zeichen.
+- Maximal 64 Zeichen.
+- Mindestens 1 Großbuchstabe.
+- Mindestens 1 Sonderzeichen.
+- Keine Zeichen mit Akzent.
+
+:::
+
+
+Klicken Sie auf <code className="action">Bestätigen</code>, um die Erstellung des Accounts zu starten.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_emailaccounts_add.png" loading="lazy" />
+
+#### Angebot wechseln <a name="emails-offer"></a>
+
+Es ist möglich, jeden Zimbra Account auf ein höheres oder niedrigeres Angebot zu ändern.
+
+1. Klicken Sie auf den Tab <code className="action">E-Mail-Accounts</code>.
+1. Klicken Sie rechts neben dem E-Mail-Account, für den Sie das Angebot ändern möchten, auf <code className="action">⁝</code>.
+1. Klicken Sie auf <code className="action">Angebot wechseln</code>.
+
+<img className="thumbnail" alt="Zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra-change-offer.png" loading="lazy" />
+
+:::warning
+Bevor Sie auf ein niedrigeres Angebot wechseln, stellen Sie sicher, dass folgende Punkte erfüllt sind:
+
+- Keine Dateien sind auf Ihrem Speichervolumen "Aktentasche" gespeichert, wenn Sie auf das Angebot Starter wechseln.
+- Der Inhalt Ihres E-Mail-Accounts muss weniger als 15 GB sein, wenn Sie auf das Angebot Starter wechseln.
+
+:::
+
+
+### E-Mail-Account einsehen <a name="mail-consult"></a>
+
+Um Ihren E-Mail-Account einzusehen:
+
+- Loggen Sie sich über einen Webbrowser auf [webmail](https://www.ovhcloud.com/de/mail/) ein und geben Sie Ihre E-Mail-Adresse und Ihr Passwort ein. Weitere Informationen finden Sie auf unserer Seite „[Zimbra Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)“.
+- Richten Sie ein E-Mail-Programm auf Ihrem Computer, Smartphone oder Tablet ein. Besuchen Sie unsere Seite „[Zimbra-E-Mail-Adresse auf einem E-Mail-Client konfigurieren](/guides/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-mail-apps/)“.
+
+### Weiterleitungen <a name="redirections"></a>
+
+Um eine Weiterleitung auf eine Zimbra E-Mail-Adresse zu erstellen, loggen Sie sich im [webmail] ein (https://www.ovhcloud.com/de/mail/).
+Die Erstellung einer Weiterleitung erfolgt über Posteingangsregeln, im Webmail als „Filter“ bezeichnet. Diese Regeln, die beim Empfang einer E-Mail angewendet werden, erlauben es, eine E-Mail weiterzuleiten oder umzuleiten.
+
+Um die E-Mails Ihres Zimbra-Accounts an eine andere E-Mail-Adresse weiterzuleiten, wenden wir eine Transferregel an. Folgen Sie den unten stehenden Tabs, um Ihre Weiterleitung einzurichten.
+
+:::info
+Im Beispiel unten sollen alle eingehenden E-Mails an eine andere E-Mail-Adresse weitergeleitet werden. Als Beispiel-Account wird **zimbra@mydomain.ovh** verwendet und alle eingehenden E-Mails an diese E-Mail-Adresse werden an die Adresse **address@example.com** geleitet.
+
+:::
+
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Klicken Sie auf die Schaltfläche &#9881; oben rechts in Ihrem Webmail-Fenster und dann auf <code className="action">Einstellungen</code>.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_settings01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Klicken Sie im Parameterfenster auf den Abschnitt <code className="action">Filter</code> und dann auf die Schaltfläche <code className="action">Filter hinzufügen</code>.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_redirection02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    - Klicken Sie oben rechts auf <u>Erweiterter Modus</u>, um diese Regel zu implementieren.
+    - Geben Sie einen Namen für Ihren Filter in das Feld `Filtername` ein.
+    - Lassen Sie das Dropdown-Menü auf `Alle` im Satz „Wenn eine eingehende Nachricht ... dieser Bedingungen entspricht“.
+    - Wählen Sie im ersten Pop-up-Menü der Regeln `An` (To) aus, lassen Sie `enthält` (contains) und geben Sie die Quell-Adresse in das Feld rechts ein.
+    - Wählen Sie unter „Dann“ (Then) im Drop-down-Menü `Weiterleiten an` (Forward to) aus und geben Sie die Ziel-Adresse ein.
+    - Klicken Sie unten auf <code className="action">+ Bedingung hinzufügen</code>(Add an action) und wählen Sie `Im Posteingang aufbewahren` (Keep in Inbox).
+    - Klicken Sie auf <code className="action">Speichern</code> im Fenster Ihres Filters und im Fenster der Einstellungen.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_redirection03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Weitere Informationen zur Verwendung von Zimbra Webmail finden Sie in unserer Anleitung „[Zimbra Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)“.
+
+### Alias <a name="alias"></a>
+
+Mit Alias-Adressen für Ihren E-Mail-Account können Sie Ihre Account-E-Mail-Adresse privat halten. Sie können die Alias-Adressen an Ihre Kontakte weitergeben und an diese Adressen gesendete E-Mails werden dann an Ihren E-Mail-Account weitergeleitet.
+
+Klicken Sie auf die folgenden Tabs, um einen Alias zu erstellen:
+
+<Tabs>
+  <Tab label="Schritt 1">
+    - Klicken Sie auf den Tab <code className="action">E-Mail-Accounts</code> Ihres Zimbra Dienstes.
+    - Klicken Sie auf den Button &#8942; des betreffenden E-Mail-Accounts.
+    - Klicken Sie auf <code className="action">Bearbeiten</code>.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_alias01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Das Fenster zur Konfiguration Ihres E-Mail-Accounts wird angezeigt. Klicken Sie oben auf den Tab <code className="action">Alias</code>.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_alias02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 3">
+    Das folgende Fenster enthält eine Liste der Aliase, die Sie dem betreffenden Account zuordnen können. Klicken Sie auf den Button <code className="action">Alias erstellen</code>.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_alias03.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Legen Sie die Adresse Ihres Alias fest und wählen Sie einen der mit Ihrem Zimbra Dienst verbundenen Domainnamen aus.
+    
+    <img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_alias04.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+### Automatische Antworten <a name="autoreply"></a>
+
+Wenn Sie abwesend sind und Ihre E-Mails nicht bearbeiten können, können Sie eine Abwesenheitsnachricht einrichten. Führen Sie die folgenden Schritte aus:
+
+- Klicken Sie auf den Button &#9881; oben rechts in Ihrem Webmail-Fenster und dann auf <code className="action">Einstellungen</code>.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_settings01.png" loading="lazy" />
+
+- Klicken Sie auf den Abschnitt `Abwesend im Büro` hinter dem Fenster der Parameter.
+- Aktivieren Sie das Kontrollkästchen „Automatische Antwort für diese Datumsangaben (inklusive) aktivieren“.
+- Geben Sie das Startdatum der Abwesenheit vor dem Vermerk „Von“ ein.
+- Deaktivieren Sie die Option „Kein Enddatum“, wenn Sie ein Enddatum für die Abwesenheit festlegen möchten.
+- Geben Sie in das Feld Ihre Abwesenheitsmeldung ein.
+- Klicken Sie auf <code className="action">Speichern</code>, um die Abwesenheitsnotiz abzuschließen.
+
+<img className="thumbnail" alt="zimbra" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/zimbra_autoreply01.png" loading="lazy" />
+
+Weitere Informationen zur Verwendung von Zimbra Webmail finden Sie in unserer Anleitung „[Zimbra Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)“.
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Zimbra-E-Mail-Adresse auf einem E-Mail-Client konfigurieren](/guides/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-mail-apps/)
+
+[Zimbra Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)
+
+[OVHcloud Zimbra FAQ](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-zimbra/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

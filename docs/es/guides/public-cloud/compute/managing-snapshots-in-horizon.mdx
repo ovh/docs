@@ -1,0 +1,97 @@
+---
+title: Gestionar las instantáneas de una instancia
+description: Cómo gestionar una instantánea de una instancia en Horizon.
+lastUpdated: 2024-09-06
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+:::info
+Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+
+:::
+
+
+## Objetivo
+
+En algunos casos, será necesario realizar una copia de seguridad de sus datos, de sus configuraciones o incluso de sus instancias al completo.<br/>
+
+Para ello, puede crear instantáneas (snapshot) de sus instancias, que podrá utilizar para restaurar una configuración posterior en su instancia o incluso para crear una copia exacta de la misma. 
+
+**Esta guía explica cómo gestionar una instantánea en OpenStack Horizon.**
+
+## Requisitos
+
+- Haber [creado una instancia de Public Cloud](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) en su cuenta de OVHcloud
+- [Conectarse a Horizon](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+## Procedimiento
+
+### Creación del snapshot
+
+Conéctese a la interfaz Horizon y asegúrese de estar en la zona adecuada. Puede comprobarlo en la parte superior izquierda. 
+
+<img className="thumbnail" alt="Selección de región" src="/images/public-cloud/compute/managing-snapshots-in-horizon/region2021.png" loading="lazy" />
+
+En el menú <code className="action">Compute</code>, haga clic en el botón <code className="action">Instances</code>. Haga clic en <code className="action">Create Snapshot</code> en la línea de la instancia correspondiente.
+
+<img className="thumbnail" alt="Create snapshot" src="/images/public-cloud/compute/managing-snapshots-in-horizon/createsnapshot.png" loading="lazy" />
+
+Se abrirá una ventana en la que deberá introducir la siguiente información:
+
+* Snapshot Name: asigne un nombre al snapshot y haga clic en <code className="action">Create Snapshot</code>.
+
+<img className="thumbnail" alt="Create snapshot" src="/images/public-cloud/compute/managing-snapshots-in-horizon/createsnapshot2.png" loading="lazy" />
+
+El snapshot se mostrará en la sección <code className="action">Images</code>. Es recomendable asignar un nombre explícito a cada snapshot.
+
+### Restauración de un snapshot
+
+Es posible restaurar un snapshot creando una nueva instancia a partir de él.
+
+En la interfaz de Horizon, haga clic en el menú <code className="action">Compute</code> a la izquierda y seleccione <code className="action">Images</code>.
+
+Haga clic en <code className="action">Launch</code> junto al snapshot seleccionado.
+
+<img className="thumbnail" alt="restore snapshot" src="/images/public-cloud/compute/managing-snapshots-in-horizon/restoresnapshot.png" loading="lazy" />
+
+Para completar la restauración del snapshot, es necesario seleccionar una serie de opciones en la ventana emergente.
+
+<Tabs>
+  <Tab label="Details">
+    **Nombre de la instancia (*Instance name*):** Especifique el nombre deseado para la instancia.<br/>
+
+**Count:** Seleccione el número de instancias que quiere iniciar a partir del snapshot.<br/><br/>
+    <img className="thumbnail" alt="snapshot" src="/images/public-cloud/compute/managing-snapshots-in-horizon/restoresnapshot1.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="Flavor">
+    Seleccione el *flavor* deseado. Asegúrese de seleccionar una versión con recursos iguales o mayores que el tamaño de la imagen (snapshot).<br/><br/>
+    <img className="thumbnail" alt="network" src="/images/public-cloud/compute/managing-snapshots-in-horizon/restoresnapshot2.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="Red (*Networks*)">
+    Seleccione una red pública (Ext-Net) para asociarla a la instancia.<br/><br/>
+    <img className="thumbnail" alt="network" src="/images/public-cloud/compute/managing-snapshots-in-horizon/restoresnapshot3.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="Keypair">
+    Seleccione (3), cree (1) o importe (2) un par de claves.<br/><br/>
+    <img className="thumbnail" alt="network" src="/images/public-cloud/compute/managing-snapshots-in-horizon/restoresnapshot4.png" loading="lazy" /><br/>
+  </Tab>
+</Tabs>
+
+
+Haga clic en <code className="action">Launch Instance</code> para empezar a crear su instancia.
+
+### Eliminación de un snapshot
+
+En el menú <code className="action">Compute</code>, haga clic en el botón <code className="action">Images</code> y seleccione Compute.
+
+Haga clic en la flecha desplegable situada junto al snapshot que desea eliminar y seleccione <code className="action">Delete Image</code>. Confirme la eliminación del snapshot.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-snapshots-in-horizon/deletesnapshot.png" loading="lazy" />
+
+## Más información
+  
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).
+	
+

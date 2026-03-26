@@ -1,0 +1,105 @@
+---
+title: Configure incoming connections of a Public Cloud Databases for PostgreSQL service
+description: Find out how to configure your PostgreSQL instance to accept incoming connections
+lastUpdated: 2022-04-04
+---
+
+## Objective
+
+Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
+
+**This guide explains how to configure your PostgreSQL instance to accept incoming connections.**
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/guides/public-cloud/public-cloud-databases/databases-01-order-control-panel/) can help you to meet this requirement)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+### Configure your PostgreSQL instance to accept incoming connections
+
+Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
+
+Click on <code className="action">Databases</code> in the left-hand navigation bar and select your PostgreSQL instance.
+
+#### Step 1: Verify your user roles and password
+
+Select the <code className="action">Users</code> tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
+
+This first user **avnadmin** comes with the following privileges:
+
+```console
+  LOGIN
+  NOSUPERUSER
+  INHERIT
+  CREATEDB
+  CREATEROLE
+  REPLICATION
+```
+
+We rely on official PostgreSQL roles and privileges. You can manage them yourself via CLI or code.
+So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
+
+Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html) to select the right roles for your use case.
+
+To simply reset the **avnadmin** password, click on the <code className="action">...</code> on the right of user, then on <code className="action">Reset the password</code>.
+
+<img className="thumbnail" alt="User Enabled" src="/images/public-cloud/public-cloud-databases/postgresql-07-prepare-for-incoming-connections/postgresql_07_prepare_for_incoming_connections-20220408122659546.png" loading="lazy" />
+
+To create a new user, click on <code className="action">Add User</code>, fill the form, then click on the <code className="action">Create User</code>
+
+<img className="thumbnail" alt="Create User" src="/images/public-cloud/public-cloud-databases/postgresql-07-prepare-for-incoming-connections/postgresql_07_prepare_for_incoming_connections-20220408132905528.png" loading="lazy" />
+
+Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
+
+#### Step 2: Authorise incoming connections from the PostgreSQL client
+
+In this step, select the <code className="action">Authorised IP's</code> tab (Access Control List).
+By default, a Public Cloud Database does not accept any form of connection from the outside world.
+This way we can help prevent intrusive connection attempts.
+
+Click to authorise a new IP, and enter the IP of your pgAdmin environment. In our case we will enter 109.190.200.59.
+
+<img className="thumbnail" alt="Add an IP" src="/images/public-cloud/public-cloud-databases/postgresql-07-prepare-for-incoming-connections/ip_authorize.png" loading="lazy" />
+
+:::info
+If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
+
+:::
+
+
+#### Collect required information
+
+Select the <code className="action">General information</code> tab to find the required login credentials in the `Login informations` section.
+
+<img className="thumbnail" alt="Login information tab" src="/images/public-cloud/public-cloud-databases/postgresql-07-prepare-for-incoming-connections/postgresql_07_prepare_for_incoming_connections-20220408134445538.png" loading="lazy" />
+
+Select the <code className="action">Databases</code> tab to get the database name.
+
+<img className="thumbnail" alt="Databases tab" src="/images/public-cloud/public-cloud-databases/postgresql-07-prepare-for-incoming-connections/postgresql_07_prepare_for_incoming_connections-20220408134547314.png" loading="lazy" />
+
+Select the <code className="action">Users</code> tab to get the username.
+
+<img className="thumbnail" alt="User table" src="/images/public-cloud/public-cloud-databases/postgresql-07-prepare-for-incoming-connections/postgresql_07_prepare_for_incoming_connections-20220408134639441.png" loading="lazy" />
+
+## Go further
+
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql) to find how to connect to your database with several languages.
+
+Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,324 @@
+---
+title: "Mise en œuvre d'un VPN pour votre PRA Zerto OVHcloud"
+description: Découvrez comment paramétrer un tunnel VPN pour connecter votre plateforme Zerto locale à votre Managed Bare Metal OVHcloud.
+lastUpdated: 2020-11-18
+---
+
+## Objectif :
+Ce guide a pour objectif de vous aider à configurer le réseau privé virtuel (VPN) pour raccorder votre plateforme locale à votre Managed Bare Metal OVHcloud et mettre en œuvre la solution de reprise d’activité
+Zerto.
+Pour illustrer la mise en œuvre de l’interconnexion, nous utiliserons les fonctionnalités VPN d’OPNSense qui est une plateforme firewall/VPN open source. 
+Pour faciliter les explications, nous décrirons la configuration la plus simple où la passerelle VPN dispose d'une connexion dans le réseau de la Zerto Virtual Manager (ZVM). 
+
+## Prérequis :
+
+- Le PCC de destination doit disposer d'au moins une adresse IP publique disponible pour le point de connexion VPN.
+- Le site client doit disposer d’une installation Zerto opérationnelle.
+- Les machines de réplication Zerto (VRA : Virtual Réplication Appliance) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 4007 et 4008
+- Les machines d’administration Zerto (ZVM : Zerto Virtual Manager) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 9071
+
+## En pratique
+
+### Présentation de l'architecture de la solution
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-1.png" loading="lazy" />
+
+**Définition des paramètres de cette architecture :**
+
+Côté client :
+
+- Adresse publique du point de connexion VPN (1)
+- Adresse interne du point de connexion VPN (2)
+- Adresse interne de la ZVM (3)
+- Plan d’adressage du réseau ZVM (4)
+
+Côté OVHcloud :
+
+- Adresse publique du point de connexion VPN (5)
+- Plan d’adressage du réseau ZVM (6)
+- Adresse de la ZVM (7)
+
+:::info
+:::
+
+>Vous devez choisir la plage réseau dans laquelle vous souhaitez qu’OVHcloud déploie la ZVM distante, afin d’éviter toute collision avec vos adresses internes. 
+>
+>Vous pouvez simplement accepter celle qui vous est proposée par défaut dans l’interface de l’espace client si elle convient.
+>
+
+### Étape 1 : activer la fonction Zerto client vers OVHcloud
+
+L’activation se fait très simplement depuis l’espace client OVHcloud. Sélectionnez d'abord le datacenter associé au PCC, puis cliquez sur l'onglet <code className="action">Plan de reprise d'activité(PRA)</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-2-nucp.png" loading="lazy" />
+
+Sélectionnez l’option <code className="action">Entre votre infrastructure et un Managed Bare Metal OVH</code> puis cliquez sur <code className="action">Activer Zerto PRA</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-3.png" loading="lazy" />
+
+Sélectionnez une adresse publique disponible dans la plage proposée.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-4.png" loading="lazy" />
+
+Saisissez ensuite la plage réseau souhaitée pour le déploiement de la ZVM.
+
+<img className="thumbnail" alt="zerto vpnzerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-5.png" loading="lazy" />
+
+Cliquez ensuite sur <code className="action">Installer</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-6.png" loading="lazy" />
+
+### Étape 2 : activer le service IPSec
+
+Depuis la console OPNSense, allez dans le menu <code className="action">VPN</code> sur la gauche, puis dans la rubrique <code className="action">IPSec</code> et sélectionnez  <code className="action">Tunnel Setting</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-7.png" loading="lazy" />
+
+Cochez la case <code className="action">Enable IPsec</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-8.png" loading="lazy" />
+
+Sauvegardez en cliquant sur <code className="action">Save</code>.
+
+### Étape 3 : paramétrer le tunnel IPSec
+
+La configuration du tunnel se fait en complétant deux groupes de paramètres appelés **Phase 1** et **Phase 2**.
+
+#### 3.1 Ajouter la Phase 1
+
+Dans le menu <code className="action">VPN</code>, puis la rubrique <code className="action">Tunnel setting</code>, cliquez sur le <code className="action">+</code> à droite de l’écran.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-9.png" loading="lazy" />
+
+##### 3.1.1 Phase 1 : ajout des informations générales
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-10.png" loading="lazy" />
+
+Vous pouvez conserver les valeurs par défaut :
+
+- Methode de connection : Default
+- Protocole d’échange de clés : V2
+- Protocole Internet : IPv4
+- Interface : WAN
+
+Vous devez néanmoins renseigner impérativement l’IP du point de connexion IPSec d’OVHcloud, dans le champ <code className="action">Remote gateway</code>.
+
+##### 3.1.2 Phase 1 : authentification
+
+Là encore, vous pouvez conserver les paramètres par défaut. Vous devrez juste saisir le mot de passe partagé dans le champ <code className="action">Pre-Shared Key</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-11.png" loading="lazy" />
+
+##### 3.1.3 Phase 1  : choix des algorithmes de chiffrement
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-12.png" loading="lazy" />
+
+Les valeurs supportées des paramètres sont les suivantes :
+
+- Algorithme de chiffrement : AES 256 bits
+- Algorithme de hachage : SHA256
+- Groupe de clés Diffie-Hellman : 14 (2048 bits)
+- Durée de vie : 28 800 secondes
+
+Les paramètres avancés peuvent conserver les valeurs par défaut. Cliquer sur <code className="action">Save</code> puis sur <code className="action">appliquer les changements</code>.
+
+La Phase 1 est maintenant disponible dans l’interface.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-13.png" loading="lazy" />
+
+#### 3.2 Ajout d'une entrée Phase 2
+
+Cliquez sur le bouton <code className="action">afficher les entrées Phase 2</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-14.png" loading="lazy" />
+
+Aucune phase 2 n’est alors disponible, il faut donc en ajouter une :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-15.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">+ </code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-16.png" loading="lazy" />
+
+##### 3.2.1 Phase 2 : Informations générales
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-17.png" loading="lazy" />
+
+Vérifiez que le mode est bien positionné sur « Tunnel IPv4 ».
+
+##### 3.2.2 Phase 2 : Réseau Local
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-18.png" loading="lazy" />
+
+Le type de réseau local sélectionné doit être « Sous réseau Local »
+
+##### 3.2.3 Phase 2 : Réseau distant
+
+A ce stade il faut saisir le plan d’adressage du réseau sur lequel se trouve la ZVM OVHcloud. 
+
+Le réseau sera forcément en /23 (512 IPs).
+
+:::warning
+Soyez vigilants car si une erreur se produit à ce stade, le VPN ne pourra pas fonctionner. 
+
+:::
+
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-19.png" loading="lazy" />
+
+##### 3.2.4 Phase 2 : Échanges de clés
+
+Les paramètres supportés sont
+
+- Protocole : ESP
+- Algorithmes de chiffrement : AES 256 bits
+- Algorithmes de hachage : SHA256
+- PFS : Off
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-20.png" loading="lazy" />
+
+Il n’est pas nécessaire de modifier les options avancées. Cliquez sur <code className="action">Save</code> puis sur <code className="action">Appliquer les changements</code>.
+
+#### 3.3 Vérification de l’état du VPN :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-21.png" loading="lazy" />
+
+Appuyez sur le triangle orange à droite pour lancer la connexion.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-22.png" loading="lazy" />
+
+Si les paramètres sont corrects, le tunnel s’établit. Deux nouvelles icônes apparaissent alors :
+
+- Désactiver le tunnel
+- Obtenir des informations sur l’état du tunnel
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-23.png" loading="lazy" />
+
+Cliquez sur l’icône d’informations.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-24.png" loading="lazy" />
+
+Le tunnel est maintenant opérationnel. N’oubliez pas, si nécessaire à ce stade, d’ajouter une route sur la ZVM locale vers le réseau de la ZVM OVHcloud.
+
+**En cas de dysfonctionnement** :
+
+Si le tunnel ne monte pas, vérifiez que les paramètres suivants ont bien été saisis :
+
+- La clé partagée
+- L’IP du point de connexion distant.
+- La plage IP du réseau distant
+
+Vérifiez également qu’un firewall ne bloque pas les flux entre les deux extrémités du VPN.
+
+Vous pouvez également consulter le fichier de log IPSec dans /var/log/ipsec.log.
+
+### Étape 4 : configuration du firewall
+
+Afin de permettre l’appairage entre le site client et le site OVHcloud, vous devez autoriser :
+
+- Le port 9081 entre les ZVM
+- Les ports 4007 et 4008 entre les vRAs
+
+#### 4.1 Ouvertures ZVM
+
+Rendez-vous dans le menu <code className="action">Firewall</code> , puis la section <code className="action">Rules</code> et sélectionnez <code className="action">IPSec</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-25.png" loading="lazy" />
+
+Cliquez sur <code className="action">Add</code> pour créer une nouvelle régle.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-26.png" loading="lazy" />
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-27.png" loading="lazy" />
+
+Cette règle comporte les paramètres suivants :
+
+- Action : « Pass » (Autoriser le flux)
+- Interface : « IPsec » (les flux entrant à autoriser proviennent  du VPN)
+- Protocole : « TCP »
+
+Les sections Source et Destination sont de type « Single host or Network » et référencent respectivement les IPs de la ZVM OVHcloud vers la ZVM client.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-28.png" loading="lazy" />
+
+Le port TCP de destination autorisé est le 9081.
+
+Sauvegardez la règle et déployez-la.
+
+#### 4.2 Ouvertures pour les vRA
+
+Les ouvertures pour les vRA sont un peu plus complexes puisqu’il y a autant de vRA que d’ESXi, aussi bien côté client que côté OVHCloud. 
+
+Toutes doivent pouvoir se parler sur les ports TCP 4007 et 4008. 
+
+Pour simplifier ce type de situations, OPNSense offre les alias. Un alias est un groupe d’objets (IPs, réseaux, URLs etc…) qui peut être utilisé dans la définition des règles de firewall.
+
+Dans notre cas, nous aurons besoins de 3 alias :
+
+- Un pour les IPs des vRAs côté client
+- Un pour les IPs des vRAs côté OVHcloud
+- Un pour les ports à autoriser
+
+L’IP des vRAs coté OVHcloud visible dans l’interface vSphere du Managed Bare Metal de destination :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-29.png" loading="lazy" />
+
+Créez l’alias OVH_VRA pour les vRAs coté OVHcLoud :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-30.png" loading="lazy" />
+
+De manière similaire, il faut créer un alias pour les machines coté client :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-31.png" loading="lazy" />
+
+Il ne reste plus qu’à créer l’alias pour les ports :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-32.png" loading="lazy" />
+
+Vous avez maintenant tous les éléments pour créer vos règles firewall qui autorisent le flux en provenance d’OVHcloud vers la plateforme client. La procédure est la même, il suffit simplement d’utiliser les alias dans les paramètres :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-33.png" loading="lazy" />
+
+À ce stade, la connexion VPN est opérationnelle et sécurisée.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-34.png" loading="lazy" />
+
+### Étape 5 : appairage des ZVM
+
+Une fois la ZVM installée sur le site client, vous pouvez vous connecter à l’interface Zerto. 
+
+L’écran suivant s’affiche.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-35.png" loading="lazy" />
+
+Choisissez l’option <code className="action">Pair to a site with a licence</code> et saisissez l’adresse IP de la ZVM coté OVHcloud puis cliquez sur <code className="action">Start</code>.
+
+Dans le tableau de bord, un message indique que l’appairage est en cours.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-36.png" loading="lazy" />
+
+Si l’opération s’est bien déroulée, le message suivant s’affiche :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-37.png" loading="lazy" />
+
+Vous pouvez vérifier que le nom de votre PCC OVHcloud est bien visible dans l’onglet <code className="action">Sites</code>.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-38.png" loading="lazy" />
+
+À ce stade, votre solution Zerto est opérationnelle et vous pouvez créer vos groupes de protection virtuels (VPG).
+
+#### **Diagnostic** :
+
+En cas d’impossibilité d’établir un dialogue entre les ZVM (notamment en cas d’omission au niveau des règles de firewall) le message suivant s’affiche :
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-39.png" loading="lazy" />
+
+Puis vous êtes ramené à l’écran de connexion de la ZVM avec le message d’erreur suivant.
+
+<img className="thumbnail" alt="zerto vpn" src="/images/bare-metal-cloud/managed-bare-metal/zerto-virtual-replication-customer-to-ovhcloud/image-EN-40.png" loading="lazy" />
+
+La cause la plus probable est que la ZVM OVHCloud n'arrive pas à contacter la ZVM client sur le port TCP 9081. Il est nécessaire qu'elle puisse ouvrir la connexion.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

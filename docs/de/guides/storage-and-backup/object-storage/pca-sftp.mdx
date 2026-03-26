@@ -1,0 +1,84 @@
+---
+title: Cloud Archive Swift - Verwaltung der Archive via SFTP/SCP Client
+description: Hier erfahren Sie, wie Sie Ihre Public Cloud Archive verwalten und verwalten.
+lastUpdated: 2022-05-13
+---
+
+:::info
+Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+
+:::
+
+
+## Ziel
+
+Public Cloud Archive ist eine Speicherlösung, die mit OpenStack-APIs verwendet werden kann. Es ist jedoch möglich, dass Sie mit der Verwaltung eines Speicherplatzes nicht vertraut sind. Wir haben also ein Gateway entwickelt, mit dem Sie über einen SFTP-Client auf Ihr PCA zugreifen können.
+
+## Voraussetzungen
+
+- Ein SFTP Client: [WinSCP](https://winscp.net/eng/download.php)
+- Login & Password OpenStack
+- TenantName des Projekts
+
+## In der praktischen Anwendung
+
+### SFTP Client
+
+In diesem Beispiel verwenden wir WinSCP als SFTP-Client. Es gibt auch andere Lösungen, deren Konfiguration der entspricht, die wir Ihnen vorstellen werden.
+
+### OpenStack-Kennung
+
+Sie können OpenStack Login und Passwort anhand [dieser Anleitung](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/) generieren.
+
+### TenantName
+
+Der TenantName entspricht dem Namen Ihres Projekts auf Horizon. Um den TenantName abzurufen, loggen Sie sich mit dem OpenStack-Manager über die zuvor erstellten Zugänge ein: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/). Wenn Sie eingeloggt sind, wird der TenantName oben angezeigt.
+
+<img className="thumbnail" alt="cPanel" src="/images/storage-and-backup/object-storage/pca-sftp/image1.png" loading="lazy" />
+
+### Verbindung
+
+- Host Name: gateways.storage.&#123;region&#125;.cloud.ovh.net
+- User Name: pca
+- Password: &#123;TenantName&#125;.&#123;Username_Openstack&#125;.&#123;Password_Openstack&#125;
+- Port: 22
+
+<img className="thumbnail" alt="Verbindung" src="/images/storage-and-backup/object-storage/pca-sftp/image2.png" loading="lazy" />
+
+### Beispiel
+
+Wenn Sie einen PCA Container auf SBG erstellt haben:
+
+- Host Name: gateways.storage.sbg.cloud.ovh.net
+- User Name: pca
+- Password: 971891XXXX1214.f6nBXXXXXAmcv.SfPeASYfuWeqBZgXXXXX2XhF3DY12RkD
+
+<img className="thumbnail" alt="Verbindung" src="/images/storage-and-backup/object-storage/pca-sftp/image3.png" loading="lazy" />
+
+### WinSCP Einstellungen
+In diesem Teil deaktivieren wir zwei WinSCP Optionen:
+
+**Transfer Resume / Transfer to Temporary Filename:** Diese Option muss deaktiviert werden, da eine Wiederaufnahme bei PCA nicht möglich ist, und WinSCP kann Ihnen dann einen Fehler zurückgeben. Bitte beachten Sie den unten stehenden Screenshot.
+
+- Wählen Sie unter <code className="action">Endurance</code> den Eintrag <code className="action">Disable</code> aus.
+
+<img className="thumbnail" alt="Verbindung" src="/images/storage-and-backup/object-storage/pca-sftp/conf1.png" loading="lazy" />
+
+**Preserve Timestamp:** Die TimeStamp entspricht dem Datum der Dateiänderung. Wir deaktivieren die Datei, da wir bei PCA diese Daten durch das Datum des Upload der Datei ersetzen. Bitte beachten Sie die unten aufgeführten Bildschirmeinträge.
+
+- In der Kategorie <code className="action">Transfer</code> klicken Sie auf <code className="action">Edit...</code>.
+
+<img className="thumbnail" alt="Verbindung" src="/images/storage-and-backup/object-storage/pca-sftp/conf2.png" loading="lazy" />
+
+- Entfernen Sie <code className="action">Preserve timestamp</code>.
+
+<img className="thumbnail" alt="Verbindung" src="/images/storage-and-backup/object-storage/pca-sftp/conf3.png" loading="lazy" />
+
+### Datenwiederherstellung
+Das Abrufen von Daten unterliegt der vorherigen Freigabe des Objekts. Für das betreffende Objekt ist ein GET-Aufruf erforderlich. Wird dieser Vorgang nicht durchgeführt, wird Ihr SFTP-Client bei einem Downloadversuch eine Fehlermeldung zurückgeben. Hier finden Sie unsere Anleitung zum [Entsperren Ihrer Objekte](/guides/storage-and-backup/object-storage/pca-unlock/).
+
+## Weiterführende Informationen
+
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+Für den Austausch mit unserer Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

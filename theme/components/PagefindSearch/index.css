@@ -1,0 +1,213 @@
+/* ── Trigger button (sidebar) ──────────────────────────────────────────── */
+
+.pagefind-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--rp-c-divider-light);
+  border-radius: var(--rp-radius-small);
+  background: var(--rp-c-bg);
+  color: var(--rp-c-text-2);
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.pagefind-trigger:hover {
+  border-color: var(--rp-c-brand);
+}
+
+.pagefind-trigger kbd {
+  margin-left: auto;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--rp-c-divider-light);
+  background: var(--rp-c-bg-soft);
+  color: var(--rp-c-text-3);
+}
+
+/* ── Overlay ───────────────────────────────────────────────────────────── */
+
+.pagefind-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* ── Modal wrapper — positions close button above the modal ────────────── */
+
+.pagefind-modal-wrapper {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 840px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.pagefind-close {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  backdrop-filter: blur(4px);
+  flex-shrink: 0;
+}
+
+.pagefind-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ── Modal container ───────────────────────────────────────────────────── */
+
+.pagefind-modal {
+  width: 100%;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  background: var(--rp-c-bg);
+  border-radius: var(--rp-radius);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  padding: 16px 20px 20px;
+}
+
+/* ── Search form ───────────────────────────────────────────────────────── */
+
+.pagefind-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--rp-c-brand);
+  border-radius: var(--rp-radius-small);
+  padding: 0 12px;
+  height: 48px;
+}
+
+.pagefind-form__icon {
+  color: var(--rp-c-text-3);
+  flex-shrink: 0;
+}
+
+.pagefind-form__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: var(--rp-c-text-1);
+  font-family: inherit;
+  /* remove browser default search clear button */
+  -webkit-appearance: none;
+}
+
+.pagefind-form__input::placeholder {
+  color: var(--rp-c-text-3);
+}
+
+.pagefind-form__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.pagefind-form__clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--rp-c-text-3);
+  padding: 4px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.pagefind-form__clear:hover {
+  color: var(--rp-c-text-1);
+}
+
+/* ── Results ───────────────────────────────────────────────────────────── */
+
+.pagefind-results {
+  margin-top: 12px;
+}
+
+.pagefind-status {
+  font-size: 13px;
+  color: var(--rp-c-text-2);
+  margin: 0 0 8px;
+}
+
+.pagefind-result {
+  padding: 14px 0;
+  border-top: 1px solid var(--rp-c-divider-light);
+}
+
+.pagefind-result__title {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--rp-c-brand);
+  text-decoration: none;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.pagefind-result__title:hover {
+  text-decoration: underline;
+}
+
+.pagefind-result__excerpt {
+  font-size: 13px;
+  color: var(--rp-c-text-2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pagefind-result__excerpt mark,
+.pagefind-sub__excerpt mark {
+  background-color: #ffc107;
+  color: inherit;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+/* ── Sub-results ───────────────────────────────────────────────────────── */
+
+.pagefind-sub {
+  margin-top: 10px;
+  padding-left: 14px;
+  border-left: 2px solid var(--rp-c-divider-light);
+}
+
+.pagefind-sub__title {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--rp-c-brand);
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+
+.pagefind-sub__title:hover {
+  text-decoration: underline;
+}
+
+.pagefind-sub__excerpt {
+  font-size: 12px;
+  color: var(--rp-c-text-2);
+  line-height: 1.5;
+  margin: 0;
+}

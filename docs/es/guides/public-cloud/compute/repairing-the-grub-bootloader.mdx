@@ -1,0 +1,72 @@
+---
+title: Reparar el bootloader Grub
+description: Guía de reparación del bootloader GRUB en una instancia
+lastUpdated: 2020-11-23
+---
+
+:::info
+Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+
+:::
+
+
+## Objetivo
+
+Es posible que tuviera que reparar el bootloader GRUB. Esta guía explica cómo reparar el bootloader y restablecer el funcionamiento de su instancia.
+
+## Requisitos
+
+- Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Ruta de navegación:** <code className="action">Public Cloud</code> > Seleccione su proyecto
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedimiento
+
+:::warning
+La instancia debe estar en modo de rescate (puede consultar la guía [Pasar una instancia en modo de rescate](/guides/public-cloud/compute/put-an-instance-in-rescue-mode/)).
+
+:::
+
+
+Conéctese a la instancia, ya sea a través del VNC desde [el área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) o por SSH.
+
+Introduzca los siguientes comandos para montar el sistema de archivos remoto e iniciar la reparación de GRUB:
+
+```sh
+mount /dev/sdb1 /mnt
+mount -o bind /proc /mnt/proc
+mount -o bind /sys /mnt/sys
+mount -o bind /dev /mnt/dev
+chroot /mnt /bin/bash
+```
+
+### Actualizar GRUB (o GRUB2)
+
+Actualizar GRUB:
+
+```sh
+grub-install /dev/sdb
+update-grub
+```
+
+Actualizar GRUB2:
+
+```sh
+grub2-install /dev/sdb
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
+Ya puede sacar la instancia del modo de rescate. (Ver la guía [Convertir una instancia en modo de rescate](/guides/public-cloud/compute/put-an-instance-in-rescue-mode/)).
+
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

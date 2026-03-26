@@ -1,0 +1,415 @@
+---
+title: Configurar El Flujo De Nutanix (EN)
+description: Find out how to configure and use Nutanix Flow
+lastUpdated: 2022-04-08
+---
+
+## Objective
+
+Nutanix Flow is available on all **Nutanix on OVHcloud** offers. This option secures the network in one or more clusters managed by **Prism Central**
+
+**Learn how to use Nutanix Flow for network security within a Nutanix cluster.**
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+
+This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+
+:::
+
+
+## Instructions
+
+Log in to **Prism Central**.
+
+To connect to a Nutanix cluster, if required, see the [Go further](#gofurther) section in this guide. 
+
+### Enabling **Nutanix Flow**
+
+Click the gear in the top right to change the settings.
+
+<img className="thumbnail" alt="Activate Flow 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/activatemicrosegmentation01.png" loading="lazy" />
+
+Click <code className="action">Microsegmentation</code> from the scroll bar on the left.
+
+<img className="thumbnail" alt="Activate Flow 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/activatemicrosegmentation02.png" loading="lazy" />
+
+Select the **Enable Microsegmentation** checkbox and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Activate Flow 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/activatemicrosegmentation03.png" loading="lazy" />
+
+Microsegmentation is enabled. You can always disable it.
+
+<img className="thumbnail" alt="Activate Flow 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/activatemicrosegmentation04.png" loading="lazy" />
+
+### Category configuration <a name="gocategoriesemanage"></a>
+
+A category is an object that can contain one or more values.
+
+When installing a cluster, some categories already exist and can be modified, other categories can be added.
+
+Entities, such as virtual machines, subnets, or images, can be among the categories used for a tool like **Flow**, for example.
+
+#### Creating a category
+
+From the main menu, click <code className="action">Categories</code> on the `Administration` submenu.
+
+<img className="thumbnail" alt="Create Category 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurecategories01.png" loading="lazy" />
+
+Click <code className="action">New Category</code>.
+
+<img className="thumbnail" alt="Create Category 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurecategories02.png" loading="lazy" />
+
+Type the name of the category in **Name** and Click <code className="action">New value</code>.
+
+<img className="thumbnail" alt="Create Category 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurecategories03.png" loading="lazy" />
+
+Type a name in **Value** and click the blue validation button on the right. 
+
+<img className="thumbnail" alt="Create Category 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurecategories04.png" loading="lazy" />
+
+Click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Create Category 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurecategories05.png" loading="lazy" />
+
+The new category appears in the category list.
+
+<img className="thumbnail" alt="Create Category 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurecategories06.png" loading="lazy" />
+
+#### Modifying a Category
+
+Select the <code className="action">Special-Computers category</code>
+
+<img className="thumbnail" alt="Create Isolation Rule 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/modifycategory02.png" loading="lazy" />
+
+Click <code className="action">Update</code> on the <code className="action">Actions menu</code>.
+
+<img className="thumbnail" alt="Create Isolation Rule 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/modifycategory03.png" loading="lazy" />
+
+Click <code className="action">New value</code>.
+
+<img className="thumbnail" alt="Create Isolation Rule 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/modifycategory04.png" loading="lazy" />
+
+Enter a value in the **Value** column and click the validation icon.
+
+<img className="thumbnail" alt="Create Isolation Rule 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/modifycategory05.png" loading="lazy" />
+
+Click <code className="action">New value</code>.
+
+<img className="thumbnail" alt="Create Isolation Rule 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/modifycategory06.png" loading="lazy" />
+
+Enter another value in the **Value** column and click the validation icon.
+
+<img className="thumbnail" alt="Create Isolation Rule 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/modifycategory07.png" loading="lazy" />
+
+Click <code className="action">Save</code> to commit the category change.
+
+<img className="thumbnail" alt="Create Isolation Rule 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/modifycategory08.png" loading="lazy" />
+
+The category is visible in the category dashboard with these two new values.
+
+<img className="thumbnail" alt="Create Isolation Rule 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/modifycategory09.png" loading="lazy" />
+
+#### Assigning a Category to a Virtual Machine
+
+In the main menu, click <code className="action">VMs</code> under `Compute & Storage.`
+
+<img className="thumbnail" alt="Add VM to Category 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtocategory01.png" loading="lazy" />
+
+Select the virtual machine by ticking on the left.
+
+<img className="thumbnail" alt="Add VM to Category 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtocategory02.png" loading="lazy" />
+
+Click <code className="action">Actions</code>, then click <code className="action">Manage Categories</code>. 
+
+<img className="thumbnail" alt="Add VM to Category 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtocategory03.png" loading="lazy" />
+
+Type `categoryName:value` and click the <code className="action">+</code> sign.
+
+<img className="thumbnail" alt="Add VM to Category 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtocategory04.png" loading="lazy" />
+
+Click <code className="action">Save</code> to save the virtual machine to a category.
+
+<img className="thumbnail" alt="Add VM to Category 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtocategory05.png" loading="lazy" /> 
+
+#### Assigning a category to multiple VMs
+
+Select three virtual machines using the <code className="action">check</code> boxes on the left.
+
+<img className="thumbnail" alt="Add category to multi VMs 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/multivmcategorychange01.png" loading="lazy" />
+
+Click the <code className="action">Actions</code> menu and select <code className="action">Manage Categories</code>.
+
+<img className="thumbnail" alt="Add category to multi VMs 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/multivmcategorychange02.png" loading="lazy" />
+
+Type `categoryName:value` and click <code className="action">+</code>.
+
+<img className="thumbnail" alt="Add category to multi VMs 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/multivmcategorychange03.png" loading="lazy" />
+
+Click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Add category to multi VMs 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/multivmcategorychange04.png" loading="lazy" />
+
+#### Assigning a Category to Subnets
+
+From the main menu, click <code className="action">Subnets</code> under `Network & Security`.
+
+<img className="thumbnail" alt="Add Category to subnet 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addcategorytosubnet01.png" loading="lazy" />
+
+Select the subnets by checking their left. 
+
+<img className="thumbnail" alt="Add Category to subnet 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addcategorytosubnet02.png" loading="lazy" />
+
+Click the <code className="action">Actions</code> menu and select <code className="action">Manage Categories</code>.
+
+<img className="thumbnail" alt="Add Category to subnet 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addcategorytosubnet03.png" loading="lazy" />
+
+Type `categoryName:value` and click <code className="action">+</code>.
+
+<img className="thumbnail" alt="Add Category to subnet 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addcategorytosubnet04.png" loading="lazy" />
+
+Click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Add Category to subnet 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addcategorytosubnet05.png" loading="lazy" />
+
+### Network quarantine management
+
+Network quarantine allows you to isolate a virtual machine from the entire network, or allow it restricted access to certain repair tools that are on the network.
+
+#### VM quarantine
+
+In the main menu, click <code className="action">VMs</code> under `Compute & Storage.`
+
+<img className="thumbnail" alt="Add VM to Quarantine 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtoquarantine01.png" loading="lazy" />
+
+Select the virtual machine by ticking on the left. 
+
+<img className="thumbnail" alt="Add VM to Quarantine 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtoquarantine02.png" loading="lazy" />
+
+Click <code className="action">Actions</code> and choose <code className="action">Quarantine VMs</code> from the menu.
+
+<img className="thumbnail" alt="Add VM to Quarantine 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtoquarantine03.png" loading="lazy" />
+
+Select <code className="action">Forensic</code> in `Quarantine Method` and click <code className="action">Quarantine</code>.
+
+<img className="thumbnail" alt="Add VM to Quarantine 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/addvmtoquarantine04.png" loading="lazy" />
+
+The virtual machine is now in quarantine.
+
+#### Customising the network quarantine.
+
+There are currently no blockages affecting the quarantined virtual machine. Follow these instructions to configure the quarantine.
+
+From the main menu, click <code className="action">Security Policies</code> in the `Network & Security` submenu.
+
+<img className="thumbnail" alt="Configure Quarantine 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule01.png" loading="lazy" />
+
+Click the number next to `Quarantined` to view the quarantined virtual machines.
+
+<img className="thumbnail" alt="Configure Quarantine 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule02.png" loading="lazy" />
+
+The list of quarantined VMs appears in the **Name** column. Click <code className="action">Close</code> to return to the previous menu.
+
+<img className="thumbnail" alt="Configure Quarantine 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule03.png" loading="lazy" />
+
+Click <code className="action">Quarantine</code> below the **Name** column to edit the rule.
+
+<img className="thumbnail" alt="Configure Quarantine 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule04.png" loading="lazy" />
+
+The rule status is in `monitoring` mode, as shown in the top left-hand corner. 
+
+Traffic is not blocked but monitored. Connections between the quarantined VMs and the rest of the network are represented by orange lines attached to rectangles representing the IP address of the source or destination.
+
+Click <code className="action">Enforce</code> in the top right-hand corner to switch from **Monitoring** mode to **Enforcing** mode with traffic blocking.
+
+<img className="thumbnail" alt="Configure Quarantine 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule05.png" loading="lazy" />
+
+Type <code className="action">ENFORCE</code> and click <code className="action">Confirm</code>.
+
+<img className="thumbnail" alt="Configure Quarantine 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule06.png" loading="lazy" />
+
+The rule status is now on `Enforced`.
+
+Traffic is blocked. We see attempts to access VMs in quarantines via red dotted lines to blocks containing the IP address of the VM.
+
+Click <code className="action">Update</code> in the top right-hand corner to edit the rule to allow certain network streams.
+
+<img className="thumbnail" alt="Configure Quarantine 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule07.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Configure Quarantine 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule08.png" loading="lazy" />
+
+Move your mouse over an incoming connection attempt and click <code className="action">Allow Traffic</code>
+
+<img className="thumbnail" alt="Configure Quarantine 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule09.png" loading="lazy" />
+
+Select the checkbox to the left of the **Source** to select the incoming discovered traffic, then click <code className="action">Allow 1 Discovered Traffic</code> to allow only the discovered traffic, such as ICMP below.
+
+<img className="thumbnail" alt="Configure Quarantine 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule10.png" loading="lazy" />
+
+Move your mouse over an outgoing connection attempt and click <code className="action">Allow Traffic</code>.
+
+<img className="thumbnail" alt="Configure Quarantine 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule11.png" loading="lazy" />
+
+Select the checkbox to the left of the **Source** to select the outbound discovered traffic, then click <code className="action">Allow 1 Discovered Traffic</code> to allow only the discovered traffic.
+
+<img className="thumbnail" alt="Configure Quarantine 12" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule12.png" loading="lazy" />
+
+The authorised traffic is now visible via grey lines, while the blocked traffic is in red.
+
+To create a rule manually without going through network discovery, left-click <code className="action">Add Source</code> to allow an incoming connection to the quarantine.
+
+<img className="thumbnail" alt="Configure Quarantine 13" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule13.png" loading="lazy" />
+
+Enter the category name and its value in `Add source by: Category`, then click <code className="action">Add</code>.
+
+<img className="thumbnail" alt="Configure Quarantine 14" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule14.png" loading="lazy" />
+
+The source appears in `Configured`.
+
+Click <code className="action">+</code> to the left of **Quarantine: Forensics**.
+
+<img className="thumbnail" alt="Configure Quarantine 15" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule15.png" loading="lazy" />
+
+Allow all traffic and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Configure Quarantine 16" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule16.png" loading="lazy" />
+
+Right-click <code className="action">Add Destination</code> to allow an outgoing rule from quarantine.
+
+<img className="thumbnail" alt="Configure Quarantine 17" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule17.png" loading="lazy" />
+
+Enter the category name and its value in `Add source by: Category`, and then click <code className="action">Add</code>.
+
+<img className="thumbnail" alt="Configure Quarantine 18" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule18.png" loading="lazy" />
+
+Click <code className="action">+</code> to the right of **Quarantine: Forensics**.
+
+<img className="thumbnail" alt="Configure Quarantine 19" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule19.png" loading="lazy" />
+
+Allow all traffic and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Configure Quarantine 20" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule20.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Configure Quarantine 21" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule21.png" loading="lazy" />
+
+Click <code className="action">Save and Enforce</code> to apply the quarantine rule changes.
+
+<img className="thumbnail" alt="Configure Quarantine 22" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule22.png" loading="lazy" />
+
+Click <code className="action">Quarantine</code> to view quarantine rule details.
+
+<img className="thumbnail" alt="Configure Quarantine 23" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule23.png" loading="lazy" />
+
+The rule status is on `Enforced`, the **Forensic** mode has been customised.
+
+A virtual machine in **Strict** mode will be completely isolated from the network, while in **Forensic** mode it will have access to the areas defined in the quarantine rule.
+
+<img className="thumbnail" alt="Configure Quarantine 24" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/configurequarantinerule24.png" loading="lazy" />
+
+### Creating an isolation rule
+
+An isolation rule allows blocking of network communications between two categories (virtual machines or subnets).
+
+For more information about managing categories, see the [Setting up categories](#gocategoriesemanage) section in this guide. 
+
+From the main menu, click <code className="action">Securities Policies</code> in the `Network & Security` submenu.
+
+<img className="thumbnail" alt="Create Isolation Rule 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createisolationrule03.png" loading="lazy" />
+
+Click <code className="action">Create Security Policy</code>.
+
+<img className="thumbnail" alt="Create Isolation Rule 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createisolationrule04.png" loading="lazy" />
+
+Select <code className="action">Isolation Policy</code> and click <code className="action">Create</code>.
+
+<img className="thumbnail" alt="Create Isolation Rule 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createisolationrule05.png" loading="lazy" />
+
+Type the rule name in <code className="action">Name</code> and then add a comment in <code className="action">Purpose</code>, choose a category in <code className="action">Isolate this category</code>, followed by another category in <code className="action">From this category</code>.
+
+Select `Enforce` in **Select a Policy mode**, then click <code className="action">Save and Enforce</code>. 
+
+<img className="thumbnail" alt="Create Isolation Rule 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createisolationrule06.png" loading="lazy" />
+
+The rule is active in the list of security rules.
+
+Click <code className="action">The rule</code> name below the **Name** column to view details.
+
+<img className="thumbnail" alt="Create Isolation Rule 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createisolationrule07.png" loading="lazy" />
+
+The status of the rule indicates `Enforced`, and you can see that no connection attempt between the two zones is detected, as this message indicates: **No Traffic between them has been discovered**.
+
+<img className="thumbnail" alt="Create Isolation Rule 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createisolationrule08.png" loading="lazy" />
+
+If a network connection attempt is detected between these two zones, the message changes to **Traffic between them has been discovered**.
+
+<img className="thumbnail" alt="Create Isolation Rule 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createisolationrule09.png" loading="lazy" />
+
+### Setting up an application rule.
+
+An application rule limits access to certain ports, protocols, or services for members of a category from another category.
+
+This rule can only be used with a category named **Applications** that can be edited but not deleted.
+
+For more information about managing categories, see the [Setting up categories](#gocategoriesemanage) section in this guide.
+
+From the main menu, click <code className="action">Security Policies</code> in the `Network & Security` submenu.
+
+<img className="thumbnail" alt="Create Application Rule 01" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule01.png" loading="lazy" />
+
+Click <code className="action">Create Security Policy</code>.
+
+<img className="thumbnail" alt="Create Application Rule 02" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule02.png" loading="lazy" />
+
+Select <code className="action">Secure Application (App Policy)</code> and click <code className="action">Create</code>.
+
+<img className="thumbnail" alt="Create Application Rule 03" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule03.png" loading="lazy" />
+
+Enter the **Name** fields for the rule name, **Purpose** for comment, **Secure this App** by choosing an existing application category, and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create Application Rule 04" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule04.png" loading="lazy" />
+
+Click <code className="action">Add Source</code> on the left.
+
+<img className="thumbnail" alt="Create Application Rule 05" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule05.png" loading="lazy" />
+
+Choose the `category` for the VLAN and click <code className="action">Add</code>.
+
+<img className="thumbnail" alt="Create Application Rule 06" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule06.png" loading="lazy" />
+
+Click <code className="action">+</code> to connect the application to the source.
+
+<img className="thumbnail" alt="Create Application Rule 07" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule07.png" loading="lazy" />
+
+Select <code className="action">Select a Service</code>, choose the category in **Protocol/Service**, search for the service name in **Port/Service Details**, and click <code className="action">Save</code>.
+
+<img className="thumbnail" alt="Create Application Rule 08" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule08.png" loading="lazy" />
+
+Click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Create Application Rule 09" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule09.png" loading="lazy" />
+
+Select <code className="action">Enforce</code> and click <code className="action">Save and Enforce</code> to enable this rule.
+
+<img className="thumbnail" alt="Create Application Rule 10" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule10.png" loading="lazy" />
+
+The rule you created is in the list of rules.
+
+<img className="thumbnail" alt="Create Application Rule 11" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/28-flow/createapplicationrule11.png" loading="lazy" />
+
+## Go further <a name="gofurther"></a>
+
+[Hyperconvergencia Nutanix (EN)](/guides/hosted-private-cloud/nutanix-on-ovhcloud/03-nutanix-hci/)
+
+[Presentation of Nutanix FLOW](https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2094-Flow:TN-2094-Flow)
+
+[Nutanix FLOW security rules](https://portal.nutanix.com/page/documents/details?)
+
+[Categories in Nutanix](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-Prism-vpc_2022_1:ssp-ssp-categories-manage-pc-c.html)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

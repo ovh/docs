@@ -1,0 +1,32 @@
+---
+title: "Déconnecter l'image ISO d'une VM"
+description: "Comment déconnecter une image ISO d'une machine virtuelle ?"
+lastUpdated: 2022-04-27
+---
+
+## Objectif
+
+Si un ISO est connecté à une VM, celle-ci ne peut être migrée, ni manuellement, ni automatiquement. Cela peut donc empêcher le fonctionnement correct de DRS et la mise en maintenance de l'hôte qui l'héberge.
+
+## Prérequis
+
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
+## En pratique
+
+Si vous décochez simplement la case <code className="action">Connecter</code> du Datastore ISO File, la VM est toujours liée à l'ISO :
+
+<img className="thumbnail" alt="Disconnect" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-disconnect-an-iso-image-from-vm/disconnect1.png" loading="lazy" />
+
+Pour déconnecter l'ISO, cliquez d'abord sur la flèche déroulante à côté de CD/DVD drive 1 et sélectionnez <code className="action">Client Device</code>.
+
+<img className="thumbnail" alt="Disconnect" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-disconnect-an-iso-image-from-vm/disconnect2.png" loading="lazy" />
+
+L'ISO est maintenant déconnecté :
+
+<img className="thumbnail" alt="Disconnect" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-disconnect-an-iso-image-from-vm/disconnect3.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

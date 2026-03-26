@@ -1,0 +1,81 @@
+---
+title: Aplikacja Backup - Procedura usuwania
+description: Dowiedz się, jak usunąć agenta, skarbonkę lub dzierżawcę aplikacji Backup
+lastUpdated: 2026-01-03
+---
+
+## Wprowadzenie
+
+W tym przewodniku wyjaśniono, jak usunąć różne elementy Twojej usługi Backup Agent: agentów, skarbonek i dzierżawców.
+
+## Wymagania początkowe
+
+- Aktywna usługa Backup Agent.
+
+{/* CP-NAV-START:baremetal-backup-agent */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Backup Agent](https://manager.eu.ovhcloud.com/#/bmc-backup-agent-baremetal/service)
+- **Ścieżka nawigacji:** <code className="action">Bare Metal Cloud</code> > <code className="action">Backup Agent</code>
+
+---
+{/* CP-NAV-END:baremetal-backup-agent */}
+
+## W praktyce
+
+### Usunięcie agenta
+
+:::info
+**Zachowanie w zależności od użycia agenta:**
+
+- **Jeśli agent nie był używany do przesyłania danych** : Można go usunąć natychmiast. Najpierw zostanie wyłączony, a następnie usunięty.
+- **Jeśli dane zostały przesłane** : Zastosowana zostanie 14-dniowa zawiesina agenta w stanie "Wyłączony", pozwalając na usunięcie danych niemutowalnych.
+
+:::
+
+
+:::warning
+Po zawieszeniu agenta nie możesz już utworzyć nowego agenta na tym samym serwerze. Musisz poczekać, aż pierwszy agent zostanie usunięty.
+
+:::
+
+
+Przejdź do sekcji <code className="action">Agenci</code> i kliknij przycisk usuwania dla odpowiedniego agenta.
+
+Potwierdź usunięcie agenta w oknie, które się pojawi.
+
+<img className="thumbnail" alt="Backup Agent Usuwanie agenta" src="/images/storage-and-backup/backup-agent/backup-agent-deletion/01-backup-agent-delete-agent.png" loading="lazy" />
+
+### Usunięcie skarbonek
+
+:::warning
+Skarbonkę nie można usunąć, jeśli zawiera dane. Jeśli chcesz usunąć skarbonkę, musisz [skontaktować się z obsługą](https://help.ovhcloud.com/csm?id=csm_get_help), która przeprowadzi z Tobą sprawdzenia przed uruchomieniem usunięcia.
+
+:::
+
+
+Przejdź do sekcji <code className="action">Skarbonki</code> i kliknij przycisk usuwania dla odpowiedniej skarbonki.
+
+Potwierdź usunięcie w oknie, które się pojawi.
+
+<img className="thumbnail" alt="Backup Agent Usuwanie skarbonki" src="/images/storage-and-backup/backup-agent/backup-agent-deletion/01-backup-agent-delete-vault.png" loading="lazy" />
+
+### Usunięcie dzierżawcy
+
+:::warning
+Obecnie dzierżawcę nie można usunąć samodzielnie. Jeśli chcesz usunąć dzierżawcę, musisz [skontaktować się z obsługą](https://help.ovhcloud.com/csm?id=csm_get_help). Przetworzymy Twoją prośbę.
+
+:::
+
+
+Wybierz swojego dzierżawcę i kliknij przycisk usuwania.
+
+Potwierdź usunięcie w oknie, które się pojawi.
+
+<img className="thumbnail" alt="Backup Agent Usuwanie dzierżawcy" src="/images/storage-and-backup/backup-agent/backup-agent-deletion/01-backup-agent-delete-tenant.png" loading="lazy" />
+
+## Sprawdź również
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,80 @@
+---
+title: Connect using PgAdmin for Public Cloud Databases for PostgreSQL
+description: Connect to your Public Cloud Databases for PostgreSQL using pgAdmin
+lastUpdated: 2025-10-30
+---
+
+## Objective
+
+Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
+
+**This guide explains how to connect to a PostgreSQL database instance with one of the world's most famous Open Source management tool for PostgreSQL: pgAdmin.**
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account.
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/guides/public-cloud/public-cloud-databases/databases-01-order-control-panel/) can help you to meet this requirement)
+- [Configure your PostgreSQL instance](/guides/public-cloud/public-cloud-databases/postgresql-07-prepare-for-incoming-connections/) to accept incoming connections
+- A pgAdmin stable version installed and public network connectivity (Internet). This guide was made in pgAdmin 4 version 9.9.
+
+## Concept
+
+A PostgreSQL instance can be managed through multiple ways.
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to PostgreSQL with CLI](/guides/public-cloud/public-cloud-databases/postgresql-03-connect-cli/) or by using programming languages, such as [PHP](/guides/public-cloud/public-cloud-databases/postgresql-04-connect-php/) or [Python](/guides/public-cloud/public-cloud-databases/postgresql-05-connect-python/).
+
+Another way is to interact directly using a management tool for PostgreSQL: pgAdmin.
+
+In order to do so, we will need to install pgAdmin, then configure our Public Cloud Databases for PostgreSQL instances to accept incoming connections, and finally configure pgAdmin 4.
+
+## Instructions
+
+### Installation
+
+To interact with your PostgreSQL instance with pgAdmin 4 you need to install it.
+
+Please follow the official [pgAdmin](https://www.pgadmin.org/download/) to get the latest information.
+
+We are now ready to learn how to connect to our PostgreSQL instance.
+
+### Connect with pgAdmin 4
+
+#### Configuration
+
+Once logged in pgAdmin, from the Servers dashboard view select <code className="action">Add new server</code>.
+
+<img className="thumbnail" alt="pgAdmin Dashboard view not connected" src="/images/public-cloud/public-cloud-databases/postgresql-06-connect-pgadmin/pgadmin_dashboard_not_connected.png" loading="lazy" />
+
+Fill in the `name` from the  <code className="action">General</code> tab of the **Register - Server** dialog.
+
+<img className="thumbnail" alt="Register - Server - General tab" src="/images/public-cloud/public-cloud-databases/postgresql-06-connect-pgadmin/pgadmin_register_server_general.png" loading="lazy" />
+
+Then select the <code className="action">Connection</code> tab and fill in the following fields with the collected credentials:
+
+- Host
+- Port
+- Maintenance database
+- Username
+- Password
+
+<img className="thumbnail" alt="Register - Server - Connection tab" src="/images/public-cloud/public-cloud-databases/postgresql-06-connect-pgadmin/pgadmin_register_server_connection.png" loading="lazy" />
+
+Finally, select the <code className="action">Parameters</code> tab and set the **SSL mode** to **require**.
+
+<img className="thumbnail" alt="Register - Server - Parameters tab" src="/images/public-cloud/public-cloud-databases/postgresql-06-connect-pgadmin/pgadmin_register_server_parameters.png" loading="lazy" />
+
+If needed you can also adjust the connection timeout from the same tab.
+
+Once saved, select your server in the servers list on the left. In the Dashboard view, you can observe that the connection is active:
+
+<img className="thumbnail" alt="pgAdmin Dashboard view connected" src="/images/public-cloud/public-cloud-databases/postgresql-06-connect-pgadmin/pgadmin_dashboard_connected.png" loading="lazy" />
+
+## Go further
+
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql) to find how to connect to your database with several languages.
+
+Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

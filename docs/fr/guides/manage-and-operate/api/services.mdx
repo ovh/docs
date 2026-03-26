@@ -1,0 +1,65 @@
+---
+title: Gestion des services
+description: Gérer le cycle de vie de vos services OVHcloud après leur livraison
+lastUpdated: 2020-01-02
+---
+
+import Api from '@components/Api';
+
+
+## Objectif
+
+Nous allons décrire une partie du cycle de vie des services chez OVHcloud
+via les routes d'API /service & /services
+
+La route d'API **/service** regroupe les actions communes à tous types de services chez OVHcloud :
+
+* Factures
+* Gestion du cycle de vie
+* Contacts associés
+* Point d'entrée d'API pour la gestion technique éventuelle.
+
+## Prérequis
+
+* Être connecté aux [API OVHcloud](https://eu.api.ovh.com/).
+* Avoir [créé ses identifiants pour l'API OVHcloud](/guides/manage-and-operate/api/first-steps/).
+* Avoir un compte client avec un tag Reseller (contactez votre commercial pour connaître votre éligibilité le cas échéant).
+
+## En pratique
+
+### Ressources
+
+* service : Entité de base qui est contractualisée auprès d'OVHcloud
+* serviceId : Identifiant unique du service chez OVHcloud
+
+### Déroulement des opérations
+
+#### Suspension
+
+<Api version="v1" section="/service" method="POST" route={"/service/\{serviceId\}/suspend"} />
+
+L'appel change l'état du service pour le passer en suspension :
+
+* state : expired
+
+La facture est alors bloquée.
+
+#### Réouverture
+
+Le cas échéant :
+
+<Api version="v1" section="/service" method="POST" route={"/service/\{serviceId\}/reopen"} />
+
+L'appel entraîne la réouverture du service et l'édition de la facture sur la période entre la date de suspension et la date de réouverture.
+
+#### Suppression
+
+Pour finir :
+
+<Api version="v1" section="/service" method="POST" route={"/service/\{serviceId\}/terminate"} />
+
+L'appel entraîne la suppression du service et des données et l'édition de la facture sur la période entre la date de suspension et la date de suppression.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

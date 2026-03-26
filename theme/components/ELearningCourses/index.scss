@@ -1,0 +1,113 @@
+.rp-elearning-courses {
+  max-width: 72rem;
+  margin: 0 0 2.5rem 0;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--rp-c-text-1);
+    margin-bottom: 0.375rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: var(--rp-c-text-2);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    border: 1px solid var(--rp-c-divider-light);
+    border-radius: 0.75rem;
+    background: var(--rp-c-bg);
+    text-decoration: none;
+    color: inherit;
+    transition:
+      border-color 0.2s,
+      transform 0.2s,
+      box-shadow 0.2s;
+
+    &:hover {
+      border-color: var(--rp-c-brand);
+      transform: translateY(-2px);
+      box-shadow: var(--rp-shadow-2);
+    }
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 0.3rem 0.625rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--rp-c-text-1);
+    background: var(--rp-c-bg);
+    border: 1px solid var(--rp-c-divider-light);
+    border-left: 3px solid var(--rp-c-brand);
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__card-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--rp-c-brand-lighter);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+  &__card-description {
+    font-size: 0.875rem;
+    color: var(--rp-c-text-2);
+    line-height: 1.55;
+    flex: 1;
+    margin: 0;
+  }
+
+  &__card-meta {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: auto;
+    padding-top: 0.875rem;
+    border-top: 1px solid var(--rp-c-divider-light);
+  }
+
+  &__meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.8125rem;
+    color: var(--rp-c-gray);
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .rp-elearning-courses__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .rp-elearning-courses__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rp-elearning-courses__title {
+    font-size: 1.25rem;
+  }
+}

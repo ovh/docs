@@ -1,0 +1,64 @@
+---
+title: OVF Tool
+description: Find out how to export or import virtual machines using the OVF Tool
+lastUpdated: 2022-01-31
+---
+
+## Objective
+
+[OVFTOOL](https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest) is an **export/import** tool for VMs using the OVF format (compatible with Windows, Linux and Mac).
+
+**This guide offers a step by step study case on how to use this tool.**
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+
+## Instructions
+
+We will use the OVFTOOL v4.0 under **Linux Debian**.
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool.png" loading="lazy" />
+
+Use the `ovftool --help` command to see the application help file and `ovftool --help examples` for examples.
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool2.png" loading="lazy" />
+
+We will proceed with an export of an **.ovf** virtual machine in pcc-37-187-228-180.ovh.com called SQL3.
+
+Before the export, shut the VM down using the `vftool powerOffSource` command as shown below.
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool5.png" loading="lazy" />
+
+In the vCenter recent tasks, you can see the VM being shut.
+
+We can now export the VM. Type in the following command:
+
+`ovftool vi://user:password@Dedicatedcloud/datacentre/vm/vmname /destination`
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool6.png" loading="lazy" />
+
+Export happens and is successful.
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool7.png" loading="lazy" />
+
+To convert an .OVF file into a .VMX one, use the `ovftool -tt=vmx file.ovf /destination/` command.
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool8.png" loading="lazy" />
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool9.png" loading="lazy" />
+
+To import the VM in your infrastructure, you need to indicate the destination datastore `ovftool -ds=datastore file.ovf`
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool11.png" loading="lazy" />
+
+The virtual machine is now deployed in your environment.
+
+Finally, migrating SQL3 to a new Hosted Private Cloud (transfer does not require a third party machine).
+
+<img className="thumbnail" alt="OVF Tool" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/ovf-tool/ovftool14.png" loading="lazy" />
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

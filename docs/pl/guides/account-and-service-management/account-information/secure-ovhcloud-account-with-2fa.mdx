@@ -1,0 +1,308 @@
+---
+title: Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej
+description: Dowiedz się, jak poprawić bezpieczeństwo Twojego konta OVHcloud dzięki aktywacji weryfikacji dwuetapowej (2FA)
+lastUpdated: 2025-04-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Wprowadzenie
+
+OVHcloud oddaje do Twojej dyspozycji narzędzia pozwalające zwiększyć bezpieczeństwo Twojego konta i naszych usług.
+Możesz aktywować uwierzytelnianie z wykorzystaniem weryfikacji dwuetapowej (2FA). Metoda ta stanowi uzupełnienie loginu i hasła. Można z niej korzystać za pośrednictwem posiadanego urządzenia: telefonu, tabletu lub klucza sprzętowego. 
+
+**Poznaj różne oferowane metody weryfikacji dwuetapowej i sposoby ich aktywacji.**
+
+Z tego przewodnika dowiesz się:
+
+- [Poznaj różne metody weryfikacji dwuetapowej](#instructions)
+- [Aktywuj Twoją pierwszą metodę weryfikacji dwuetapowej](#enabling-2fa)
+- [Dowiedz się, jak się zalogować przy użyciu weryfikacji dwuetapowej](#login-2fa)
+- [Poznaj kroki, jeśli Twój telefon/tablet/klucz został zgubiony(a) / skradziony(e) / uszkodzony(e)](#lost-device)
+- [Dowiedz się, jak całkowicie wyłączyć weryfikację dwuetapową](#disable-2fa)
+
+## Wymagania początkowe
+
+- Posiadanie telefonu komórkowego (w przypadku metody SMS-owej), smartfona lub tabletu (w przypadku aplikacji mobilnej), bądź klucza sprzętowego Universal Second Factor (U2F).
+- Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/guides/account-and-service-management/account-information/manage-ovh-password/).
+
+{/* CP-NAV-START:account-security */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Bezpieczeństwo](https://manager.eu.ovhcloud.com/#/account/useraccount/security)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > <code className="action">Dostęp do konta</code> > <code className="action">Bezpieczeństwo</code>
+
+---
+{/* CP-NAV-END:account-security */}
+
+## W praktyce <a name="instructions"></a>
+
+Możesz aktywować jedną lub więcej metod weryfikacji dwuetapowej, aby zabezpieczyć i kontrolować dostęp do Twojego panelu klienta.
+
+Proponujemy cztery różne metody (kliknij na poniższe zakładki, aby wyświetlić ich prezentację):
+
+<Tabs>
+  <Tab label="SMS">
+    ![2FA sms](/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/sms.svg)<br/>
+
+W przypadku tej metody należy podać numer telefonu komórkowego.
+    Otrzymasz kod jednorazowy SMS-em przy każdej próbie zalogowania się na Twoje konto OVHcloud.
+    
+    Główną zaletą tej metody jest korzystanie z kodu przesyłanego na inne urządzenie niż Twój komputer. W razie włamania na komputer, np. za sprawą oprogramowania malware, Twoje konto pozostanie bezpieczne.
+    Musisz jednak dysponować wystarczającym zasięgiem sieci, aby móc otrzymywać SMS-y.
+  </Tab>
+  <Tab label="Aplikacja mobilna">
+    ![2FA OTP](/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/app.svg)<br/>
+
+W przypadku tej metody należy zainstalować aplikację **OTP** na smartfonie lub tablecie z systemem Android lub iOS.
+    Istnieje wiele aplikacji OTP (OVHcloud nie opracowała żadnej aplikacji OTP), które można pobrać ze Sklepu Google Play dla Androida lub z Apple Store dla iOS. Następujące dwie aplikacje są darmowe:
+    
+    - FreeOTP dla Androida
+    - OTP Auth dla systemu iOS
+    
+    Po połączeniu aplikacji z kontem OVHcloud aplikacja generuje kod jednorazowy, który zachowuje ważność przez krótki czas (kilka sekund) przy każdej próbie logowania.
+    
+    :::tip[Success]
+    **Zalety tej metody**:
+    
+    - Po pierwszym powiązaniu aplikacji z Twoim kontem dostęp smartfona/tabletu do Internetu nie będzie już konieczny, aby wygenerować kody.
+    - Możesz używać jednej aplikacji OTP do obsługi wszystkich usług lub stron wymagających weryfikacji dwuetapowej.
+
+    :::
+
+  </Tab>
+  <Tab label="Klucz bezpieczeństwa">
+    ![2FA U2F](/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/key.svg)<br/>
+
+Metoda ta wymaga fizycznego klucza **U2F**, który należy podłączyć do portu USB komputera przy każdym połączeniu z kontem OVHcloud. Uwierzytelnienie zostanie wówczas przeprowadzone automatycznie.
+    
+    Metoda ta zapewnia wyższy poziom bezpieczeństwa, ponieważ opiera się na niezależnym urządzeniu zabezpieczającym, całkowicie odseparowanym od komputera, smartfona lub tabletu, dzięki czemu jest mniej narażone na ryzyko włamania.
+  </Tab>
+  <Tab label="Kody zapasowe">
+    ![2FA kody](/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/code.svg)<br/>
+
+Jeśli po raz pierwszy skonfigurujesz weryfikację dwuetapową (za pomocą **SMS**, **Aplikacja mobilna** lub **Klucz bezpieczeństwa**), w Panelu klienta wyświetli się 10 kodów zapasowych **jednorazowych**.
+    
+    Ta metoda weryfikacji dwuetapowej jest uzupełnieniem metody już aktywowanej (przez **SMS**, **Aplikacja mobilna** lub **Klucz bezpieczeństwa**). Metody tej nie można aktywować samodzielnie.
+    
+    Przy każdej próbie zalogowania możesz wpisać jeden z 10 kodów jednorazowych.
+    Bardzo ważne jest, aby zawsze dysponować co najmniej jednym pozostałym kodem zapasowym. Pamiętaj, aby wygenerować je ponownie w Panelu klienta, jeśli już z nich korzystałeś lub je utraciłeś.
+  </Tab>
+</Tabs>
+
+
+### Etap 1 - Aktywuj Twoją pierwszą metodę weryfikacji dwuetapowej <a name="enabling-2fa"></a>
+
+Na stronie [Bezpieczeństwo konta](https://manager.eu.ovhcloud.com/#/account/useraccount/security) kliknij <code className="action">Włącz weryfikację dwuetapową</code>.
+
+**Kliknij na zakładkę wybranej przez Ciebie metody:**
+
+<Tabs>
+  <Tab label="SMS">
+    Wybierz metodę SMS-ową i kliknij na <code className="action">Dalej</code>.
+    
+    <img className="thumbnail" alt="2FA sms" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-002-sms-choice.png" loading="lazy" style={{ maxWidth: '400px' }} /><br/>
+
+Wprowadź numer telefonu komórkowego w formacie międzynarodowym (na przykład +33612345678 na telefon komórkowy we Francji) i zatwierdź.
+    Na podany numer otrzymasz wiadomość SMS z kodem zatwierdzenia.
+    
+    <img className="thumbnail" alt="2FA sms" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2fasms3edit.png" loading="lazy" style={{ maxWidth: '400px' }} /><br/>
+
+Wpisz ten kod w odpowiednim polu.<br/>
+
+Możesz również dodać opis podanego numeru telefonu.
+    
+    <img className="thumbnail" alt="2FA sms" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-002-sms-code.png" loading="lazy" style={{ maxWidth: '400px' }} /><br/>
+
+Weryfikacja dwuetapowa jest teraz aktywna. Można też dodać kolejne numery.
+  </Tab>
+  <Tab label="Aplikacja Mobilna">
+    Wybierz metodę za pomocą aplikacji mobilnej i kliknij przycisk <code className="action">Dalej</code>.
+    
+    <img className="thumbnail" alt="2FA mobileapp" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-003-otp-choice.png" loading="lazy" style={{ maxWidth: '400px' }} /><br/>
+
+Wygenerowany jest kod QR. Zeskanuj go za pomocą aplikacji OTP. Jeśli Twoja aplikacja OTP nie oferuje tej opcji, kliknij <code className="action">Wyświetl klucz</code>, aby wyświetlić kod, który należy wprowadzić w aplikacji OTP.<br/>
+
+Aplikacja generuje kod jednorazowy.
+    Wpisz ten kod w odpowiednim polu (po prawej stronie kodu QR). Możesz również dodać opis dla tej metody uwierzytelniania.
+    
+    <img className="thumbnail" alt="2FA mobileapp" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-003-otp-code.png" loading="lazy" style={{ maxWidth: '400px' }} /><br/>
+
+Weryfikacja dwuetapowa jest teraz aktywna.
+  </Tab>
+  <Tab label="Klucz bezpieczeństwa">
+    Wybierz metodę z wykorzystaniem klucza sprzętowego i kliknij na <code className="action">Dalej</code>.
+    
+    <img className="thumbnail" alt="2FA securitykey" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-004-u2f-choice.png" loading="lazy" style={{ maxWidth: '400px' }} /><br/>
+
+Podłącz klucz sprzętowego, gdy otrzymasz taki monit. Jeśli jest on wyposażony w przycisk, naciśnij go.
+    
+    <img className="thumbnail" alt="2FA securitykey" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-004-u2f-insert.png" loading="lazy" style={{ maxWidth: '400px' }} />
+    
+    :::warning
+    Otworzy się okno pop-up z prośbą o zatwierdzenie klucza. Jeśli to okno nie pojawi się, sprawdź, czy Twoja przeglądarka nie blokuje okien pop-up.
+
+    :::
+
+    
+    Po rozpoznaniu klucza możesz także dodać opis.
+    Weryfikacja dwuetapowa jest teraz aktywna.
+  </Tab>
+</Tabs>
+
+
+Po dodaniu pierwszej metody możesz również **dodać jedną lub dwie inne metody**, aby mieć więcej sposobów logowania się do swojego konta.
+
+### Etap 2 - Zapisz kody zapasowe <a name="codes"></a>
+
+Przy pierwszym dodaniu weryfikacji dwuetapowej w Panelu klienta wyświetlanych jest 10 jednorazowych kodów zapasowych **jednorazowych**.
+
+**Zachowaj je w bezpiecznym miejscu**. Zalecamy, aby przechowywać je w menedżerze haseł, takim jak [KeePass](https://keepass.info/) lub [Bitwarden](https://bitwarden.com/) (obie aplikacje są bezpłatne).
+
+<img className="thumbnail" alt="2FA" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-005-backup-codes.png" loading="lazy" style={{ maxWidth: '544px' }} />
+
+Możesz wygenerować lub usunąć kody zapasowe w Panelu klienta:
+
+<img className="thumbnail" alt="2FA" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/emergency-codes.png" loading="lazy" />
+
+:::warning
+**Zdecydowanie zalecamy zapisanie tych kodów awaryjnych i upewnienie się, że są one ważne.**
+Bez posiadanego kodu bezpieczeństwa, w przypadku kradzieży lub utraty telefonu/smartfona/tabletu lub klucza sprzętowego, dostęp do Twojego panelu klienta i usług może zostać zablokowany.
+
+:::
+
+
+### Etap 3 - Logowanie do Panelu klienta OVHcloud z weryfikacją dwuetapową <a name="login-2fa"></a>
+
+Przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wpisz swój identyfikator (lub główny adres e-mail) oraz hasło.
+
+Na ekranie identyfikacji wyświetlana jest ostatnia użyta lub podana metoda weryfikacji dwuetapowej. Jeśli chcesz skorzystać z innej metody, kliknij przycisk <code className="action">Wypróbuj inną metodę</code>.
+
+<img className="thumbnail" alt="2FA" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-007-log-in-01.png" loading="lazy" style={{ maxWidth: '400px' }} />
+
+Pojawią się wówczas wszystkie aktywowane przez Ciebie metody, w tym metoda kodów zapasowych.
+
+<img className="thumbnail" alt="2FA" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-007-log-in-02.png" loading="lazy" style={{ maxWidth: '400px' }} />
+
+Wybierając tę ostatnią metodę, wystarczy wpisać jeden z kodów zapasowych.
+
+<img className="thumbnail" alt="2FA" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-007-log-in-03.png" loading="lazy" style={{ maxWidth: '400px' }} />
+
+### Co zrobić, jeśli jedno z moich urządzeń zostanie zgubione/skradzione lub przestanie działać? <a name="lost-device"></a>
+
+Jeśli Twoje urządzenie (telefon komórkowy/smartfon/klucz sprzętowy) zostanie zgubione, skradzione lub przestanie działać, możesz:
+
+- używać [kody zapasowe](#codes) aktywnych, które zapisałeś;
+- korzystać z innego dostępnego urządzenia do weryfikacji dwuetapowej, jeśli aktywowałeś kilka takich urządzeń;
+- [wyłącz weryfikację dwuetapową](#2FA-deletion).
+
+:::warning
+W przypadku zgubienia lub kradzieży jednego z Twoich urządzeń może być zagrożone bezpieczeństwo konta OVHcloud.
+Po ponownym uzyskaniu dostępu do Panelu klienta należy **usunąć to urządzenie z listy urządzeń używanych do weryfikacji dwuetapowej**.
+
+Więcej informacji na temat usuwania urządzenia można znaleźć w następnym rozdziale tego przewodnika.
+
+:::
+
+
+### Usuń urządzenie <a name="delete-device"></a>
+
+:::warning
+Aby nie zablokować dostępu do Twojego konta, przed usunięciem urządzenia upewnij się, że dysponujesz co najmniej jedną z poniższych metod:
+
+- innego działającego urządzenia;
+- inną działającą metodą weryfikacji dwuetapowej;
+- prawidłowymi kodami zapasowymi.
+
+:::
+
+
+Aby usunąć urządzenie, przejdź na stronę [Bezpieczeństwo konta](https://manager.eu.ovhcloud.com/#/account/useraccount/security) i kliknij <code className="action">...</code> po prawej stronie Twojego urządzenia do usunięcia, a następnie wybierz <code className="action">Usuń</code>.
+
+<img className="thumbnail" alt="2FA" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/2024-006-delete-device.png" loading="lazy" />
+
+Na urządzeniu, które chcesz usunąć, zostanie wysłany ostatni kod weryfikacyjny. W wyświetlonym oknie wpisz ten kod, a następnie kliknij <code className="action">Zatwierdź</code>, aby zakończyć usuwanie.
+
+Jeśli nie masz dostępu do urządzenia, które chcesz usunąć, nie będziesz mógł usunąć go samodzielnie z Panelu klienta OVHcloud.
+W takim przypadku **skontaktuj się bezpośrednio** z naszymi zespołami pomocy, [tworząc zgłoszenie z Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help) lub postępując zgodnie z procedurą opisaną [poniżej](#2FA-deletion).
+
+:::warning
+Usunięcie pojedynczego urządzenia nie powoduje dezaktywacji weryfikacji dwuetapowej na koncie OVHcloud.
+
+:::
+
+
+### Wyłącz w pełni weryfikację dwuetapową <a name="disable-2fa"></a>
+
+#### Jeśli masz dostęp do Panelu klienta OVHcloud
+
+Aby w pełni wyłączyć weryfikację dwuetapową na Twoim koncie OVHcloud, usuń **wszystkie** wskazane urządzenia **i wyłącz kody zapasowe**.
+
+Aby usunąć każde urządzenie, zapoznaj się z [częścią niniejszego przewodnika](#delete-device).
+
+Po usunięciu wszystkich urządzeń, wyłącz kody zapasowe, klikając przycisk <code className="action">Wyłącz kody 2FA</code>.
+
+<img className="thumbnail" alt="2FA kody" src="/images/account-and-service-management/account-information/secure-ovhcloud-account-with-2fa/disabling-codes.png" loading="lazy" />
+
+#### Jeśli nie masz już dostępu do Panelu klienta OVHcloud <a name="2FA-deletion"></a>
+
+Jeśli nie dysponujesz już prawidłowymi urządzeniami lub prawidłowymi kodami zapasowymi, poproś o dezaktywację weryfikacji dwuetapowej, dostarczając dokumenty potwierdzające tożsamość powiązane z Twoim kontem OVHcloud.
+
+Najpierw przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+Aby przejść do etapu weryfikacji dwuetapowej, wprowadź identyfikator OVHcloud i hasło. Kliknij przycisk <code className="action">Nie mam dostępu do telefonu komórkowego, klucza bezpieczeństwa U2F ani kodów zapasowych</code>.<br/>
+Jeśli nie widzisz tego przycisku, kliknij przycisk <code className="action">Wypróbuj inną metodę</code>, a następnie <code className="action">Nie mam dostępu do telefonu komórkowego, klucza bezpieczeństwa U2F ani kodów zapasowych</code>.
+
+Poniższy interfejs umożliwia przesłanie i wysłanie do naszych pracowników dokumentów niezbędnych do wyłączenia weryfikacji dwuetapowej na Twoim koncie.
+
+:::warning
+- Uwaga: upewnij się, że wszystkie dokumenty są poprawne i czytelne przed wysłaniem.
+- **Akceptowane formaty** : jpg, jpeg, pdf, png. Maksymalny rozmiar pliku dla każdego dokumentu to 10 MB.
+- W przypadku nieprawidłowych dokumentów procedura ta zostanie anulowana i będziesz musiał przeprowadzić nową procedurę.
+
+:::
+
+
+W ciągu 72 godzin otrzymasz e-mail z potwierdzeniem dezaktywacji weryfikacji dwuetapowej.
+
+<details>
+
+<summary>Lista dokumentów potwierdzających</summary>
+
+
+|Typ konta OVHcloud|Wymagane dokumenty|
+|---|---|
+|Osoba prywatna|- Dowód tożsamości (dowód tożsamości, prawo jazdy, paszport) zawierający nazwisko, datę urodzenia i datę ważności na nazwisko posiadacza konta OVHcloud|
+|Firma|- Dokument potwierdzający tożsamość (dowód tożsamości, prawo jazdy, paszport) zawierający nazwisko, datę urodzenia i datę ważności, osoby upoważnionej do reprezentowania firmy.<br/><br/>- Dokumenty potwierdzające dane firmy - kopia nadania NIPu lub Regonu lub aktualny odpis z KRS, wydruk z CEIDG|
+
+</details>
+
+
+Po skomplementowaniu dokumentów skontaktuj się z pomocą OVHcloud +48 71 750 02 00.
+
+:::warning
+Dokumenty należy przesłać z adresu e-mail przypisanego do konta klienta OVHcloud.
+
+:::
+
+
+Po sprawdzeniu dokumentów konsultant może ręcznie wyłączyć weryfikację dwuetapową na Twoim koncie OVHcloud.
+
+:::tip[Success]
+Ze względów bezpieczeństwa, po przywróceniu dostępu do konta, zalecamy jak najszybsze ponowne włączenie weryfikacji dwuetapowej.
+
+:::
+
+
+## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

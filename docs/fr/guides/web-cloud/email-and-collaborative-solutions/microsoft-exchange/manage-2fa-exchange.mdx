@@ -1,0 +1,88 @@
+---
+title: Configurer la double authentification sur un compte Exchange
+description: Découvrez comment configurer la double authentification sur un compte Exchange
+lastUpdated: 2025-04-28
+---
+
+## Objectif
+
+Si vous souhaitez augmenter la sécurité de votre compte Exchange, vous pouvez activer la double authentification (2FA). Celle-ci permet de générer un code à saisir à chaque connexion, en complément de votre mot de passe. Ce code est généré par une application *one-time password* (OTP) qu'il faudra installer sur votre smartphone ou tablette.
+
+**Découvrez comment activer l'authentification à deux facteurs sur votre compte Exchange.**
+
+## Prérequis
+
+- Disposer d'une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/).
+- Avoir installé une application OTP sur un smartphone ou une tablette Android ou iOS.
+
+:::info
+**Les applications mobiles OTP**
+
+De nombreuses applications OTP existent. En voici deux, gratuites :
+
+- sur Android : Free OTP ;
+- sur iOS : OTP Auth.
+
+:::
+
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Sélectionnez votre plateforme
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## En pratique
+
+### Première configuration
+
+#### Étape 1 : activer la double authentification sur la plateforme
+
+Lors d'une première configuration, il est nécessaire d'activer la double authentification sur la plateforme avant de l'activer sur un compte.
+
+Sélectionnez l'onglet <code className="action">Sécurité</code> de votre plateforme.
+1. En dessous de la mention « Double authentification », cliquez sur <code className="action">Activer</code>.
+1. Pour terminer, descendez en bas de la page et cliquez sur <code className="action">Enregistrer les modifications</code>.
+
+<img className="thumbnail" alt="2fa-exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-2fa-exchange/2fa-exchange.gif" loading="lazy" />
+
+#### Étape 2 : activer la double authentification sur un compte
+
+Après activation de la double authentification sur votre plateforme, vous pouvez l'activer sur l'un de vos comptes.
+
+Toujours depuis votre plateforme Exchange, dirigez-vous sur l'onglet <code className="action">Comptes e-mail</code>. Cliquez sur <code className="action">...</code> à droite du compte sur lequel vous souhaitez activer la double authentification, puis cliquez sur <code className="action">Activer la double authentification</code>.
+
+<img className="thumbnail" alt="2fa-exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-2fa-exchange/2fa-exchange-01.png" loading="lazy" />
+
+Pour associer votre compte à votre application OTP, connectez-vous au [webmail](https://mail.ovh.net).
+
+Lors de cette première connexion, un QR code apparaît. Utilisez votre application OTP pour le scanner, puis saisissez le code généré par celle-ci pour vous connecter.
+
+<img className="thumbnail" alt="2fa-exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-2fa-exchange/2fa-exchange-02.png" loading="lazy" />
+
+Lors de vos connexions suivantes, seul le code généré par votre application vous sera demandé.
+
+### Désactiver la double authentification
+
+La double authentification de votre compte peut être désactivée de trois manières.
+
+Depuis l'onglet <code className="action">Comptes e-mail</code> de votre plateforme Exchange, cliquez sur <code className="action">...</code> à droite du compte sur lequel la double authentification est déjà active.
+
+<img className="thumbnail" alt="2fa-exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-2fa-exchange/2fa-exchange-04.png" loading="lazy" />
+
+Sélectionnez l'option correspondante à votre besoin selon le tableau ci-dessous :
+
+| N° | Fonction | Description
+|----------------------------------|------------------|------------------|
+| 1. | « Désactiver la double authentification » | Permet la suspension de la double authentification pendant une période définie en heures. Une fois le délai dépassé, la double authentification sera réactivée. <br/> *Exemple : un utilisateur a oublié son smartphone et ne peut pas s'authentifier avec l'application OTP.*   |
+| 2. | « Réinitialiser la double authentification » | Permet de réinitialiser le QR code demandé lors de votre première connexion au webmail.<br/> *Exemple : un utilisateur a changé de smartphone et doit reconfigurer son application OTP.* |
+| 3. | « Supprimer la double authentification » | Supprime totalement la double authentification sur le compte. |
+
+## Aller plus loin <a name="go-further"></a>
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

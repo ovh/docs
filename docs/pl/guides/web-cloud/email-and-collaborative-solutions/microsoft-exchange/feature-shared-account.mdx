@@ -1,0 +1,123 @@
+---
+title: Tworzenie i korzystanie z konta współdzielonego
+description: Dodaj i użyj konta współdzielonego w Twojej usłudze E-mail Exchange
+lastUpdated: 2025-04-28
+---
+ 
+## Wprowadzenie
+
+Konto **współdzielone** to skrzynka e-mail współdzielona między kilka kont Exchange i dostępna tylko za ich pośrednictwem. Konto współdzielone nie posiada hasła. Należy zatem przekazać dostęp do jednego lub kilku kont platformy Exchange.
+<br/>Konta współdzielone są dostępne z poziomu OWA (webmail Exchange) lub z poziomu programu pocztowego Outlook.
+
+**Dowiedz się, jak utworzyć konto współdzielone na platformie Exchange i zarządzać nim.**
+
+## Wymagania początkowe
+
+- Wykupienie usługi [Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ścieżka nawigacji:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wybierz platformę
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## W praktyce
+
+### Dodaj konto współdzielone
+
+Wybierz kartę <code className="action">Konta współdzielone</code> w menu poziomym i kliknij <code className="action">Dodaj konto współdzielone</code>.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts01.png" loading="lazy" />
+
+Wpisz wymagane pola:
+
+|Stanowisko|Opis|
+|---|---|
+|Konto e-mail|Wybierz nazwę konta współdzielonego. **Nie może to być istniejący adres e-mail.**|
+|Quota|Podaj wymagany rozmiar przestrzeni dyskowej dla konta współdzielonego, [w zależności od dostępnej przestrzeni](#size).|
+|Nazwa, która będzie się wyświetlać.|Nazwa wyświetlacza, którą chcesz wyświetlić podczas wysyłki z konta współdzielonego.|
+|Ukryj adres w książce adresowej|Dzięki ukryciu adresu w książce adresowej adres konta współdzielonego nie jest widoczny na liście adresów Twojej platformy Exchange.|
+
+<a name="size"></a>
+
+:::info
+Dostępna przestrzeń do utworzenia konta współdzielonego zależy od liczby kont zamówionych na platformie. Każde konto Exchange wykupione na platformie odblokowuje 5 GB dla kont współdzielonych.
+
+**Przykład:**
+
+Na platformie zamówiłeś 4 konta Exchange. W związku z tym masz **4 x 5GB**, czyli **20 GB** przyznanej przestrzeni dla kont współdzielonych.
+
+:::
+
+
+Kliknij Dalej, aby <code className="action">uzyskać dostęp</code> do podsumowania. Zakończ operację, klikając <code className="action">Zatwierdź</code>.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts02.png" loading="lazy" />
+
+### Zarządzanie delegowaniem uprawnień do konta współdzielonego
+
+Po utworzeniu konta współdzielonego należy przekazać dostęp do jednego lub kilku kont Twojej platformy.
+
+Konto współdzielone nie jest bezpośrednio dostępne, ponieważ nie posiada hasła. Nie można go skonfigurować bezpośrednio w kliencie typu Outlook lub jest dostępny poprzez interfejs webmail.
+
+Delegacja musi być aktywowana między kontem Exchange a kontem współdzielonym.
+
+W zakładce <code className="action">Konta współdzielone</code> w Twojej platformie Exchange kliknij przycisk <code className="action">...</code> przed kontem współdzielonym, a następnie kliknij <code className="action">Konfiguracja uprawnień</code>. Na liście kont będziesz mógł wybrać te, które będą miały dostęp do konta współdzielonego.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts03.png" loading="lazy" />
+
+Wybierz operacje dostępne dla wybranego konta:
+
+|Stanowisko|Opis|
+|---|---|
+|Prawo do wysyłki poczty|Umożliwia wybranemu kontu e-mail wysłanie wiadomości "jako" współdzielonego konta e-mail.|
+|Uprawnienia do wysyłki „w imieniu”|Umożliwia wybranemu kontu e-mail wysłanie wiadomości "ze strony" na wspólny adres e-mail.|
+|Prawo dostępu|Zezwalaj na wyświetlanie i zarządzanie kontem współdzielonym w OWA (webmail) lub Outlook.|
+
+Następnie kliknij <code className="action">Dalej</code> i <code className="action">Zatwierdź</code>, aby zapisać zmiany.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts04.png" loading="lazy" />
+
+W naszym przykładzie udostępniamy konta **guide-exchange@** i **test@** dostęp do konta współdzielonego **shared_test@**.
+<br/>Konto e-mail **guide-exchange@** będzie również miało prawo do wysyłania e-maili "jako" **shared_test@**.
+<br/>Konto e-mail **test@** będzie również mogło wysyłać e-maile "od" **shared_test@**.
+
+### Korzystanie z konta współdzielonego w OWA (webmail)
+
+Zaloguj się do Webmail Exchange (OWA) na adres [Webmail](https://www.ovhcloud.com/pl/mail/) z kontem e-mail uprawnionym do dostępu do konta współdzielonego.
+<br/>W naszym przykładzie zalogujemy się do konta **guide-exchange@**.
+
+Po zalogowaniu, w kolumnie po lewej stronie, kliknij prawym przyciskiem myszy główny drzewo Twojego konta e-mail, a następnie kliknij <code className="action">Dodaj współdzielony</code> katalog.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts05.png" loading="lazy" />
+
+Następnie wpisz nazwę konta współdzielonego, po czym kliknij <code className="action">Dodaj</code>, gdy zostało ono znalezione w katalogu Exchange.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts06.png" loading="lazy" />
+
+W naszym przykładzie konto współdzielone jest dostępne z konta **guide-exchange@**.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts07.png" loading="lazy" />
+
+### Korzystanie z konta współdzielonego w programie Outlook
+
+W programie Outlook możesz odnaleźć konto współdzielone w kolumnie po lewej stronie, tak jak w interfejsie Webmail.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts10.png" loading="lazy" />
+
+## Sprawdź również <a name="go-further"></a>
+
+[Sprawdź konto Exchange w interfejsie OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Delegowanie uprawnień na konto Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[Współdzielenie kalendarza przez webmail OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+[Dodaj stopkę strony dla kont Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/)
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

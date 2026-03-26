@@ -1,0 +1,98 @@
+---
+title: Adicionar um bloco IP
+description: Encomendar um bloco IP no seu Managed Bare Metal
+lastUpdated: 2020-11-18
+---
+
+import Api from '@components/Api';
+
+
+## Objetivo
+
+Um bloco IP pode servir para tornar os seus serviços acessíveis na Internet. 
+
+**Este manual explica como encomendar, adicionar e migrar um bloco IP associado ao seu Managed Bare Metal.**
+
+## Requisitos
+
+* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+* Dispor de uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/) na sua conta OVHcloud.
+
+## Instruções
+
+### Encomendar um bloco IP
+
+Para encomendar um bloco IP adicional para o seu **Managed Bare Metal**, aceda à sua Área de Cliente OVHcloud. Na secção `Bare Metal Cloud`, clique na opção `IP` no menu à esquerda e, a seguir, clique em <code className="action">Encomendar IP adicionais</code>. De seguida, selecione o seu **Managed Bare Metal** no menu pendente antes de passar para o seguinte passo.
+
+Vários campos deverão ser preenchidos para criar o seu bloco IP
+
+- Tamanho do bloco IP (de /28 a /24)
+
+:::info
+Esta tabela recapitula o número de IP presentes num bloco e o número de IP utilizáveis.
+
+:::
+
+
+|Tamanho do bloco|IP no bloco|IP utilizáveis na OVHcloud|
+|:---:|:---:|:---:|
+|28|16|11|
+|27|32|27|
+|26|64|59|
+|25|128|123|
+|24|256|251|
+
+:::info
+Não hesite em consultar o nosso manual sobre o [plugin OVHcloud Network](/guides/bare-metal-cloud/managed-bare-metal/plugin-ovh-network/) para saber quais são os IP reservados do seu bloco, assim como a sua utilização.
+
+:::
+
+
+- País do bloco IP: importante em certos casos para o referenciamento dos seus serviços (um site português terá um melhor SEO em Portugal se o IP também for português)
+- Nome da rede (informação visível no whois do bloco IP)
+- Número de clientes estimados (quantos clientes finais serão alojados nesses IP)
+- Descrição da rede (informação visível no whois do bloco IP)
+- Utilização (informação sobre a utilização (web, SSL, cloud, etc.))
+
+Após ter confirmado o último passo, receberá uma nota de encomenda do seu bloco IP. Se esta estiver correta, só precisará de a pagar através dos métodos de pagamento disponíveis na parte inferior da página.
+
+### Migrar um bloco IP entre dois Managed Bare Metal
+
+A migração de um bloco IP requer a deslocação manual dos blocos através da APIv6 OVHcloud.
+
+Utilize a seguinte chamada API:
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\{ip\}/move"} />
+
+Os campos devem ser preenchidos da seguinte forma:
+
+- ip: bloco IP com /mask
+- nexthop “newPrimaryIp” (sensível a maiúsculas/minúsculas)
+- to: Managed Bare Metal de destino sob a forma pcc-XXX-XXX-XXX-XXX
+
+<img className="thumbnail" alt="campo nexthop" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/move-api.png" loading="lazy" />
+
+O resultado terá este formato:
+
+<img className="thumbnail" alt="campo nexthop" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/api-result.png" loading="lazy" />
+
+De seguida, utilize esta chamada API para mover o IP no “IP parking”:
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\{ip\}/park"} />
+
+
+:::warning
+Esta chamada associa a rede nas VM que utilizam os IP em questão.
+
+:::
+
+
+Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt) na secção <code className="action">Bare Metal Cloud</code> > <code className="action">Managed Bare Metal</code>. Clique no seu serviço Managed Bare Metal e, depois, no separador <code className="action">Operações</code>.
+
+A referência da operação é “removeIpRipeBlock”.
+
+<img className="thumbnail" alt="operations manager" src="/images/bare-metal-cloud/managed-bare-metal/ip-block-addition/operations.png" loading="lazy" />
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

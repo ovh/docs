@@ -1,0 +1,108 @@
+---
+title: "O que fazer em caso de página \"Index of\"?"
+description: "Descubra como repor o seu site online quando exibe uma página \"Index of\"."
+lastUpdated: 2025-10-28
+---
+
+## Objetivo
+
+Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
+
+- A [configuração do seu nome de domínio com o seu site web](/guides/web-cloud/web-hosting/multisites-configure-multisite/) não está corretamente configurada para o seu diretório alvo.
+- A pasta alvo para a qual o seu nome de domínio aponta não contém ficheiros **"index.html"** ou **"index.php"**
+
+<img className="thumbnail" alt="index_of" src="/images/assets/screens/other/browsers/errors/index-of.png" loading="lazy" />
+
+**Descubra como corrigir a apresentação de uma página "Index of".**
+
+:::warning
+A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+
+Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
+
+:::
+
+
+## Requisitos
+
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Alojamentos</code> > Selecione o seu alojamento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instruções
+
+### Compreender a origem da página "Index of"
+
+O seu nome de domínio é declarado para aceder a um diretório alvo (um "`Pasta raiz`") no servidor [FTP](/guides/web-cloud/web-hosting/ftp-connection/) do seu alojamento web partilhado. Isto no separador [Multisite](/guides/web-cloud/web-hosting/multisites-configure-multisite/) do seu alojamento web presente no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
+
+Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que contém o ficheiro **index.php** ou **index.html**.
+
+:::info
+Para associar temporariamente o seu domínio a um `Pasta raiz` que não contém ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [tutorial](/guides/web-cloud/web-hosting/htaccess-what-else-can-you-do/). Pode também proteger o acesso às suas pastas com uma [palavra-passe](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+
+Recomendamos que contacte um [provedor especializado](https://partner.ovhcloud.com/pt/directory/) se tiver dificuldades em configurar esta configuração. De facto, as nossas equipas de apoio não poderão prestar assistência para qualquer modificação da programação interna do seu site.
+
+:::
+
+
+### Resolver o caso mais comum de uma página "Index of"
+
+Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento através de [FTP](/guides/web-cloud/web-hosting/ftp-connection/). No entanto, o seu nome de domínio não está ligado a esta pasta na coluna `Pasta raiz` do seu site.
+
+<img className="thumbnail" alt="index_of_multisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png" loading="lazy" />
+
+Altere a `Pasta raiz` clicando no botão <code className="action">...</code> à direita da tabela e depois em <code className="action">Modificar o domínio</code>:
+
+<img className="thumbnail" alt="modify_domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png" loading="lazy" />
+
+Na nova janela:
+
+* Selecione a opção <code className="action">Modificar também o subdomínio www.mydomain.ovh</code> (1);
+* Indique o diretório que contém o ficheiro **index.php** ou **index.html** do seu site como `Pasta raiz` (2);
+* Clique em `Seguinte` (3).
+
+<img className="thumbnail" alt="change_root_folder" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png" loading="lazy" />
+
+:::info
+A utilização do diretório `www` como `Pasta raiz` não é, em caso algum, obrigatória. Pode instalar o seu site noutra pasta do seu [servidor FTP](/guides/web-cloud/web-hosting/ftp-connection/).
+
+:::
+
+
+Na janela seguinte, clique em <code className="action">Validar</code>.
+
+<img className="thumbnail" alt="modify_root_folder_confirm" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png" loading="lazy" />
+
+Dentro de alguns minutos (refrescando o seu browser), obterá o seguinte resultado:
+
+<img className="thumbnail" alt="multisite_modified" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png" loading="lazy" />
+
+Por fim, verifique se o seu site está a aparecer corretamente. Caso contrário, reinicie o seu dispositivo e esvazie a cache do seu browser, caso seja necessário.
+
+Certifique-se igualmente de que está presente no seu diretório um ficheiro **index.php** ou **index.html**.
+
+## Quer saber mais? <a name="go-further"></a>
+
+[Resolver os erros mais frequentes associados aos módulos 1 clique](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/)
+
+[Resolver o erro “Site não instalado”](/guides/web-cloud/web-hosting/multisites-website-not-installed/)
+
+[Partilhar o alojamento entre vários sites](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en). 

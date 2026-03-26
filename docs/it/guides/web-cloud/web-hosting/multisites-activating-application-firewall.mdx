@@ -1,0 +1,88 @@
+---
+title: "Hosting condiviso: attiva un firewall applicativo"
+description: "Hosting condiviso: attiva un firewall applicativo"
+lastUpdated: 2025-08-22
+---
+
+## Obiettivo
+
+*ModSecurity* è un modulo Apache complementare che filtra tutte le richieste in entrata sul tuo server Web. Aumenta la sicurezza contro le vulnerabilità note intercettando e filtrando le richieste prima che siano trattate con script.
+
+L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostra *ModSecurity* protegge i tuoi siti Web dagli attacchi più diffusi, ad esempio:
+
+- Trojans,
+- Email injection,
+- Bug sui file PDF,
+- File injection sul tuo hosting,
+- SQL o XSS injection,
+- e tanto altro ancora
+
+**Questa guida ti mostra come attivare il firewall applicativo dallo Spazio Cliente OVHcloud per ottenere una protezione ancora maggiore.**
+
+:::info
+La modifica delle impostazioni di configurazione del firewall non è disponibile perché l’hosting Web è presente su un’infrastruttura condivisa.
+
+:::
+
+
+## Prerequisiti
+
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) attivo
+- Disporre di almeno un [dominio](https://www.ovhcloud.com/it/domains/) associato all'hosting
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Seleziona il tuo hosting web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedura
+
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona <code className="action">Web Cloud</code>. Clicca su <code className="action">Hosting</code> e poi su quello corrispondente.
+
+### Attiva il firewall applicativo nella configurazione PHP
+
+Assicurati di trovarti nella scheda <code className="action">Informazioni generali</code>. La `versione PHP globale` attuale è disponibile nella zona **Configurazione**. Clicca sui tre puntini <code className="action">...</code> e seleziona <code className="action">Modifica la configurazione</code>. Nella nuova finestra, seleziona l'elemento <code className="action">Modifica la configurazione attuale</code> e clicca su <code className="action">Seguente</code>.
+
+<img className="thumbnail" alt="managephpconfig" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png" loading="lazy" />
+
+Nella nuova finestra, assicurati che l'**Applicazione firewall** sia definita su <code className="action">Attivato</code>. Per confermare la configurazione, clicca sul pulsante <code className="action">Conferma</code>.
+
+### Attiva il firewall applicativo per i domini individuali su un multisito
+
+Clicca sulla scheda <code className="action">Multisito</code> della tua offerta di hosting. Clicca sui tre puntini <code className="action">...</code> a destra del dominio interessato e seleziona l'opzione <code className="action">Modifica il dominio</code>.
+
+<img className="thumbnail" alt="managemultisite" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png" loading="lazy" />
+
+Nella finestra di configurazione, spunta la casella <code className="action">Attiva il firewall</code>. È possibile includere anche il sottodominio `www` in questa configurazione selezionando la casella in alto.
+
+Clicca su <code className="action">Seguente</code> e poi su <code className="action">Conferma</code> per modificare i parametri multisito.
+
+<img className="thumbnail" alt="modifydomain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png" loading="lazy" />
+
+### Verifica lo stato dell'operazione di attivazione
+
+<img className="thumbnail" alt="gestione in corso" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png" loading="lazy" />
+
+Gli aggiornamenti della configurazione multisito saranno elencati nella scheda <code className="action">Operazioni in corso</code> (lo stato iniziale è "Pianificato"). Il firewall sarà attivo non appena il suo aggiornamento non sarà più incluso nella lista.
+
+### Verifica dei domini per i quali il firewall è attivo
+
+La scheda <code className="action">Multisito</code> del tuo piano di hosting fornisce informazioni sui domini per i quali è attiva l'opzione firewall.
+
+<img className="thumbnail" alt="gerageenabled" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png" loading="lazy" />
+
+La tabella visualizzata contiene tutti i domini aggiunti alla tua offerta di hosting Web. Nella colonna "Firewall" viene mostrato lo stato di attivazione di ciascun dominio.
+
+## Per saperne di più
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

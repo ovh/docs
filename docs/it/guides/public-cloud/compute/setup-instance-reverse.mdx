@@ -1,0 +1,59 @@
+---
+title: "Configura il reverse DNS di un'istanza Public Cloud"
+description: Come impostare la risoluzione reverse DNS
+lastUpdated: 2026-01-06
+---
+
+## Obiettivo
+
+Il **Reverse DNS** (*rDNS*) è il complemento della risoluzione "classica" dei DNS che permette di convertire un dominio in un indirizzo IP (record di tipo **A**). Una richiesta di questo tipo può essere risolta con il nome di dominio (record di tipo **PTR**). Ciò significa che le richieste DNS sull'indirizzo IP in questione restituiranno un dominio.
+
+Configurare la risoluzione **Reverse DNS** di un'istanza è particolarmente utile per l'invio di email. Il rischio che i tuoi messaggi vengano inviati tramite un sistema di protezione dallo Spam diminuirà se l'indirizzo IP del tuo server di posta elettronica si risolve correttamente nel tuo dominio.
+
+**Questa guida ti mostra come configurare il reverse DNS per gli indirizzi IP della tua istanza Public Cloud.**
+
+## Prerequisiti
+
+- Disporre di un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
+- Un dominio con il suo record `A` che punta verso l'istanza
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Percorso di navigazione:** <code className="action">Public Cloud</code> > Seleziona il tuo project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedura
+
+Accedi alla sezione <code className="action">Network</code> e clicca su <code className="action">Indirizzi IP pubblici</code>.
+
+Il menu a tendina sotto “**I tuoi indirizzi IP pubblici e servizi associati**” consente di filtrare i servizi per categoria. È inoltre possibile cercare un indirizzo IP specifico utilizzando la barra di ricerca situata a sinistra del menu a tendina.
+
+<img className="thumbnail" alt="Reverse DNS" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/network/filterip-new.png" loading="lazy" />
+
+Clicca su <code className="action">⁝</code> nella riga dell'indirizzo IP interessato e seleziona <code className="action">Configurare il reverse DNS</code>.
+
+<img className="thumbnail" alt="Reverse DNS" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/network/modifyreverse-new.png" loading="lazy" />
+
+Nella nuova finestra, inserisci il tuo reverse e clicca su <code className="action">Confermare</code>.
+
+<img className="thumbnail" alt="Reverse DNS" src="/images/assets/screens/control-panel/product-selection/bare-metal-cloud/network/enterreverse-new.png" loading="lazy" />
+
+Puoi anche modificare il reverse direttamente tramite l'icona <code className="action">matita</code> nella colonna **Reverse DNS** della tabella.
+
+:::info
+:::
+
+Se la modifica non funziona come previsto, verifica che il record `A` sia configurato correttamente nella zona DNS del tuo dominio. Attenzione, la modifica della [zona DNS](/guides/web-cloud/domains/dns-zone-edit/) può richiedere fino a 24 ore se hai modificato solo recentemente il record `A`.
+>
+
+## Spingiti oltre <a name="gofurther"></a>
+
+[Creare una prima istanza Public Cloud e connettersi](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/)
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

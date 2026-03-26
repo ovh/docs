@@ -1,0 +1,167 @@
+---
+title: Współdzielenie obrazów między projektami Public Cloud
+description: Dowiedz się, jak współdzielić obrazy między projektami Public Cloud za pomocą OpenStack
+lastUpdated: 2025-04-01
+---
+
+## Wprowadzenie
+
+Czasami może być konieczne współdzielenie obrazu [Instance Backup](/guides/public-cloud/compute/save-an-instance/) lub obrazu [Volume Backup](/guides/public-cloud/compute/volume-backup/) między kilkoma projektami Public Cloud.
+
+Dzięki technologii OpenStack możesz współdzielić obrazy między kilkoma projektami, nawet jeśli nie należą one do tego samego konta.
+
+Funkcjonalność ta oferuje wiele możliwości, ale wiąże się również z pewnym ryzykiem. Ważne jest zatem poznanie ich zasad.
+
+Na przykład, jeśli chcesz udostępnić obraz z projektu A dla projektu B (na tym samym lub innym koncie), obowiązują następujące reguły:
+
+- Obrazy mogą być udostępniane tylko w ramach tego samego regionu. Na przykład obraz utworzony w projekcie A w regionie GRA11 będzie dostępny tylko dla projektu B w tym samym regionie GRA11.
+- Obraz pozostaje fizycznie przypisany do projektu A. Projekt B ma tylko "uprawnienie dostępu" do tego obrazu.
+- Jeśli Projekt A usunie dostęp do obrazu (usunie ACL, usunie obraz, usunie projekt z niezapłaconych faktur itp.), instancje uruchomione z tego obrazu w projekcie B mogą przestać działać z powodu problemów z migracją lub rekonstrukcją.
+
+Dlatego ważne jest, aby pamiętać o tym przed rozpoczęciem konfiguracji.
+
+Więcej informacji znajdziesz w oficjalnej [dokumentacji OpenStack](https://docs.openstack.org/image-guide/share-images.html).
+
+**Z tego przewodnika dowiesz się, jak współdzielić obrazy między jednym lub kilkoma projektami przy jednoczesnym zachowaniu konfiguracji i statusu obrazu.**
+
+## Wymagania początkowe
+
+Przed wykonaniem tych kroków, należy najpierw zapoznać się z treścią przewodnika:
+
+- [Przygotowanie środowiska dla API OpenStack](/guides/public-cloud/public-cloud-cross-functional/prepare-the-environment-for-using-the-openstack-api/)
+
+Będziesz również potrzebował:
+
+- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud;
+- [Utworzenie użytkownika OpenStack](/guides/public-cloud/public-cloud-cross-functional/create-and-delete-a-user/)
+
+:::info
+Niniejszy przewodnik odnosi się do korzystania z [klienta wiersza poleceń OpenStack](https://docs.openstack.org/python-openstackclient/latest/).
+
+:::
+
+
+## W praktyce
+
+### Udostępnij obraz
+
+Najpierw wprowadź następującą komendę, aby wyświetlić istniejące obrazy:
+
+```bash
+$ openstack image list --private
+| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | pfsense |
+```
+
+:::warning
+Aby obraz był udostępniany, najpierw należy ustawić go jako współdzieloną widoczność (*shared visibility*).
+
+:::
+
+
+```bash
+$ openstack image set --shared <Image_UUID>
+```
+
+W celu wyświetlenia obrazów, które mogą być współdzielone z innym projektem, użyj następującego polecenia:
+
+```bash
+$ openstack image list --shared
+9a0fbdc5-****-****-****-8d404a1313ba 	pfsense
+```
+
+### Dodaj projekt do obrazu
+
+Następnym krokiem jest dodanie identyfikatora UUID innego projektu jako elementu członkowskiego obrazu. W poniższym przykładzie dodajemy UUID dla « Projektu B ».
+
+```bash
+$ openstack image add project 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project_B>
++------------+--------------------------------------+
+| Field      | Value                                |
++------------+--------------------------------------+
+| created_at | 2020-01-27T13:26:52Z                 |
+| image_id   | 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba |
+| member_id  | <UUID_Project_B>                      |
+| schema     | /v2/schemas/member                   |
+| status     | pending                              |
+| updated_at | 2020-01-30T15:18:00Z                 |
++------------+--------------------------------------+
+```
+
+Następnie sprawdź wniosek dotyczący projektu B:
+
+```bash
+$ openstack image member list <Image_UUID>
++--------------------------------------+----------------------------------+----------+
+| Image ID | Member ID | Status |
++--------------------------------------+----------------------------------+----------+
+| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <UUID_Project_B> | pending |
++--------------------------------------+----------------------------------+----------+
+```
+
+Jeśli zlecenie udostępnienia jest w statusie `pending`, musisz je zaakceptować:
+
+```bash
+$ openstack image set --accept 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
++--------------------------------------+----------------------------------+----------+
+| Image ID                             | Member ID                        | Status   |
++--------------------------------------+----------------------------------+----------+
+| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | eff99684d8294dbe8c2d4dd7407073f1 | accepted |
++--------------------------------------+----------------------------------+----------+
+```
+
+Po zaakceptowaniu żądania udostępniania upewnij się, że widzisz obrazek i masz do niego dostęp:
+
+```bash
+$ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
++------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field            | Value                                                                                                                                                                                  |
++------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| checksum         | 1b19c9e5bdd36b9010de0164dd8b245e                                                                                                                                                       |
+| container_format | bare                                                                                                                                                                                   |
+| created_at       | 2018-05-08T15:38:50Z                                                                                                                                                                   |
+| disk_format      | raw                                                                                                                                                                                    |
+| file             | /v2/images/9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba/file                                                                                                                                   |
+| id               | 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba                                                                                                                                                   |
+| min_disk         | 0                                                                                                                                                                                      |
+| min_ram          | 0                                                                                                                                                                                      |
+| name             | pfsense                                                                                                                                                                                |
+| owner            | 35c9ee22e5c84c1097a5652b0abcbab3                                                                                                                                                       |
+| properties       | direct_url='swift+config://ref1/glance/9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba', locations='[{'url': 'swift+config://ref1/glance/9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba', 'metadata': {}}]' |
+| protected        | False                                                                                                                                                                                  |
+| schema           | /v2/schemas/image                                                                                                                                                                      |
+| size             | 10737418240                                                                                                                                                                            |
+| status           | active                                                                                                                                                                                 |
+| tags             |                                                                                                                                                                                        |
+| updated_at       | 2018-05-08T15:53:57Z                                                                                                                                                                   |
+| virtual_size     | None                                                                                                                                                                                   |
+| visibility       | private                                                                                                                                                                                |
++------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+```
+
+### Sprawdzanie członków obrazu
+
+Aby zobaczyć wszystkie projekty, które mają dostęp do obrazu, z projektu źródłowego (w tym przypadku projekt A), możesz użyć tego polecenia:
+
+```bash
+$ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
++--------------------------------------+----------------------------------+----------+
+| Image ID                             | Member ID                        | Status   |
++--------------------------------------+----------------------------------+----------+
+| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <project C>                      | pending  |
+| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <project B>                      | accepted |
++--------------------------------------+----------------------------------+----------+
+```
+
+### Usuń członka z obrazu lub anuluj udostępnianie obrazu
+
+W projekcie źródłowym (projekt A) możesz usunąć część członkowską konta zasobów współdzielonych:
+
+```bash
+$ openstack image remove project <image> <UUID_Project_To_Delete>
+```
+
+## Sprawdź również
+
+[Przeniesienie kopii zapasowej instancji do innego centrum danych](/guides/public-cloud/compute/transfer-instance-backup-from-one-datacentre-to-another/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en).

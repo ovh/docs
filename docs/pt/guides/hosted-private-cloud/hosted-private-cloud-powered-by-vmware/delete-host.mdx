@@ -1,0 +1,70 @@
+---
+title: Eliminar um servidor host
+description: Saiba como eliminar um servidor host de uma infraestrutura Private Cloud
+lastUpdated: 2021-03-19
+---
+
+## Sumário
+
+Em certas situações, pode ser útil eliminar um servidor host do seu cluster, por exemplo, para devolver um _spare_ não utilizado ou para migrar para uma gama superior.
+
+**Este manual explica como remover, com toda a segurança, um servidor host da sua infraestrutura Private Cloud.**
+
+## Requisitos
+
+* Dispor do serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
+* Aceder à interface de gestão vSphere.
+
+## Instruções
+
+:::warning
+Atenção: não desligue o servidor host que deseja retirar, pois isso não teria o efeito desejado. Com efeito, isto implicaria a entrega de um servidor host de spare e o servidor host desligado não seria automaticamente retirado.
+
+:::
+
+
+A eliminação de um servidor host passa por duas etapas: em primeiro lugar, deve pôr este recurso em modo de manutenção para, posteriormente, proceder à eliminação.
+
+### Ativar o modo de manutenção
+
+Uma vez ligado ao vSphere, aceda ao inventário da sua plataforma na janela <code className="action">Hosts and Clusters</code> na coluna à esquerda. Clique com o botão direito no servidor host correspondente e selecione <code className="action">Maintenance Mode</code> e, de seguida, <code className="action">Enter Maintenance Mode</code>. Se houver máquinas virtuais (VM) em funcionamento neste servidor host, estas serão automaticamente registadas noutro servidor host presente no cluster (os modos HA e DRS devem estar ativados).
+
+<img className="thumbnail" alt="Ativação do modo de manutenção" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-host/removehost01.png" loading="lazy" />
+
+Na caixa de diálogo, confirme a ativação do modo de manutenção clicando em <code className="action">OK</code>.
+
+<img className="thumbnail" alt="Confirmação do modo de manutenção" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-host/removehost02.png" loading="lazy" />
+
+Poderá seguir o progresso da operação na secção `Recent Tasks`.
+
+<img className="thumbnail" alt="Progresso da ativação do modo de manutenção" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-host/removehost03.png" loading="lazy" />
+
+### Eliminar o servidor host
+
+Uma vez que o servidor host estiver em modo de manutenção, clique com o botão direito e selecione <code className="action">OVHcloud</code> e, a seguir, <code className="action">Remove this host</code>.
+
+<img className="thumbnail" alt="Remover o host" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-host/removehost04.png" loading="lazy" />
+
+Na nova janela que aparecerá, confirme que pretende eliminar o servidor host clicando no botão <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Confirmação da eliminação" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-host/removehost05.png" loading="lazy" />
+
+O pedido de eliminação é imediatamente processado.
+
+<img className="thumbnail" alt="Validação da eliminação" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-host/removehost06.png" loading="lazy" />
+
+Poderá seguir o progresso da operação na secção `Recent Tasks`.
+
+<img className="thumbnail" alt="Progresso da eliminação do host" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/delete-host/removehost07.png" loading="lazy" />
+
+O servidor host será eliminado em poucos minutos e deixará de aparecer no inventário.
+
+:::info
+Se adicionar algum ficheiro ou diretório que não estava inicialmente presente no armazenamento local do servidor host, ocorrerá um erro que irá impedir a eliminação do servidor. Apenas os diretórios de base e os ficheiros de vSwap não bloqueiam a operação de eliminação.
+
+:::
+
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

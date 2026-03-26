@@ -1,0 +1,167 @@
+---
+title: Was tun, wenn Ihre Website nicht erreichbar ist?
+description: Diagnose der Ursachen für die Unverfügbarkeit Ihrer Website
+lastUpdated: 2025-10-09
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Ziel 
+
+Wenn Ihre Website nicht erreichbar ist, können in Ihrem Browser mehrere Fehlermeldungen angezeigt werden. Die folgenden Beispiele zeigen eine fehlerhafte Konfiguration Ihrer [DNS-Server](/guides/web-cloud/domains/dns-server-edit/), Ihrer [DNS-Zone](/guides/web-cloud/domains/dns-zone-edit/) oder einer gesperrten Domäne (wenn auf Ihrer Website eine der hier beschriebenen Fehlermeldungen nicht angezeigt wird, finden Sie weitere Informationen im Abschnitt [Weiterführende Informationen](#go-further):
+
+|Browser|Betreffende Fehlermeldung|
+|-|---|
+|Chrome:<br/>"Die Website ist nicht erreichbar"|<img className="thumbnail" alt="cantbereached_chrome" src="/images/assets/screens/other/browsers/errors/cant-be-reached-chrome.png" loading="lazy" />|
+|Firefox:<br/>"Seite wurde nicht gefunden"|<img className="thumbnail" alt="cantbereached_firefox" src="/images/assets/screens/other/browsers/errors/cant-be-reached-firefox.png" loading="lazy" />|
+|Edge:<br/>"Hmmm...diese Seite ist leider nicht erreichbar"|<img className="thumbnail" alt="cantbereached_edge" src="/images/assets/screens/other/browsers/errors/cant-be-reached-edge.png" loading="lazy" />|
+|Safari:<br/>"Safari kann keine Verbindung zum Server aufbauen"|<img className="thumbnail" alt="cantbereached_safari" src="/images/assets/screens/other/browsers/errors/cant-be-reached-safari.png" loading="lazy" />|
+
+**Diese Anleitung erklärt, wie Sie Fehler der Art "Website nicht erreichbar" beheben.**
+
+:::warning
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+
+:::
+
+
+## Voraussetzungen
+
+- Sie haben keine ausstehenden [Zahlungen](/guides/account-and-service-management/managing-billing-payments-and-services/invoice-management#pay-bills/) und [Verlängerungen](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#renewal-management/) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Hosting-Pakete</code> > Wählen Sie Ihr Webhosting aus
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## In der praktischen Anwendung
+
+### 1: Die Gültigkeit Ihrer Domain überprüfen
+
+:::warning
+Die Verlängerung Ihrer Dienste liegt in Ihrer alleinigen Verantwortung.<br/>
+OVHcloud ist als Hosting-Anbieter verpflichtet, Dienste (Domains, Hosting-Pakete, E-Mail-Accounts etc.), die nicht rechtzeitig verlängert wurden, sowie alle darin enthaltenen Daten unwiderruflich zu löschen.
+
+Daher empfehlen wir Ihnen dringend, die [automatische Verlängerung](/guides/account-and-service-management/managing-billing-payments-and-services/how-to-use-automatic-renewal#in-der-praktischen-anwendung/) für alle Ihre OVHcloud Abonnements zu aktivieren.
+
+:::
+
+
+Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf <code className="action">Meine Angebote und Dienste</code>.
+
+<img className="thumbnail" alt="control-panel" src="/images/assets/screens/control-panel/product-selection/right-menu/my-solutions-and-services.png" loading="lazy" />
+
+Wenn nötig verlängern Sie Ihre Domain mit Klick auf den Button <code className="action">...</code> rechts und dann auf <code className="action">Dienst verlängern</code>.
+
+<img className="thumbnail" alt="renew-service-button" src="/images/assets/screens/control-panel/product-selection/web-cloud/order/renew-service-button.png" loading="lazy" />
+
+Nach dieser Verlängerung ist Ihre Website innerhalb von maximal 48 Stunden verfügbar.
+
+### 2: DNS Server überprüfen
+
+Um die Gültigkeit Ihrer [DNS Server](/guides/web-cloud/domains/dns-server-edit/) zu überprüfen, klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) auf <code className="action">Domainnamen</code> und dann auf die Domain Ihrer Website.
+
+#### Szenario 1: keine Anomalien bei den DNS Servern
+
+Überprüfen Sie die im Tab <code className="action">DNS-Server</code> angezeigten Informationen:
+
+<img className="thumbnail" alt="srv-dns-ok2" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-servers/name-dns-server.png" loading="lazy" />
+
+Wenn die Servernamen mit den Zielen der `NS`-Einträge in der <code className="action">DNS-Zone</code> identisch sind, gehen Sie zu [Schritt 3](#step3).
+
+<img className="thumbnail" alt="srv-dns-ok" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png" loading="lazy" />
+
+#### Szenario 2: eine Warnung erscheint über der DNS Zone
+
+Eine Warnung im Tab <code className="action">DNS-Zone</code> zeigt an, dass die von Ihrer Domain verwendeten DNS Server nicht in Ihrer Zone hinterlegt sind. Hier sind zwei Szenarien möglich.
+
+- Unter "Sie verwenden derzeit folgende DNS-Server:" sind die angegebenen Server vom Typ "ns **?** .ovh.net" und "dns **?** .ovh.net" (wobei "**?**" für eine zweistellige Zahl steht):
+
+<img className="thumbnail" alt="warning_other_ovh_dns_srv" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png" loading="lazy" />
+
+Ändern Sie die DNS Server entsprechend den Anweisungen in dieser [Anleitung](/guides/web-cloud/domains/dns-server-edit/), damit diese mit den Zielen der Einträge vom Typ `NS` in der <code className="action">DNS-Zone</code> identisch sind.
+
+Ihre Website wird dann innerhalb von maximal 48 Stunden verfügbar sein.
+
+- Unter "Sie verwenden derzeit folgende DNS-Server:" sind die angegebenen Server nicht vom Typ "ns **?** .ovh.net" und "dns **?** .ovh.net":
+
+<img className="thumbnail" alt="warning_external_dns_srv" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png" loading="lazy" />
+
+:::warning
+Kontaktieren Sie in diesem Fall den Hoster Ihrer DNS Zone, Ihren Webmaster oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/), bevor Sie die Änderung vornehmen.
+
+Es ist möglich, dass die von Ihrer Domain verwendeten DNS Server funktionieren und dass das Problem beim Zugriff auf Ihre Website auf einen fehlenden oder fehlerhaften Eintrag in der [DNS Zone](/guides/web-cloud/domains/dns-zone-general-information/) zurückzuführen ist. Jede Änderung der DNS Server kann dazu führen, dass Ihre E-Mail Adressen oder andere Online-Anwendungen nicht mehr verfügbar sind.
+
+:::
+
+
+#### Szenario 3: In der DNS Zone wird kein Eintrag des Typs "NS" angezeigt
+
+Die <code className="action">DNS-Zone</code> Ihrer Domain enthält keinen Eintrag vom Typ `NS`:
+
+<img className="thumbnail" alt="srv_dns_missing" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns-missing.png" loading="lazy" />
+
+Erstellen Sie ein Backup der aktuellen DNS Zone, indem Sie rechts im Menü auf den Button <code className="action">Im Textmodus bearbeiten</code> klicken:
+
+<img className="thumbnail" alt="change_DNS_zone_change_text_format" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format.png" loading="lazy" />
+
+Kopieren Sie anschließend den Inhalt Ihrer <code className="action">DNS-Zone</code> in ein Textdokument. Speichern Sie diese Datei lokal ab.
+
+Klicken Sie anschließend auf <code className="action">Meine DNS-Zone zurücksetzen</code> und wählen Sie <code className="action">Nein, aber ich möchte meine DNS-Zone zurücksetzen.</code>, wählen Sie Ihre E-Mail- und Hosting-Server aus und klicken Sie auf <code className="action">Bestätigen</code>.
+
+<img className="thumbnail" alt="change_DNS_zone_reset" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png" loading="lazy" />
+
+Ihre Website wird dann innerhalb von maximal 24 Stunden verfügbar sein.
+
+### 3: Die DNS Zone überprüfen <a name="step3"></a>
+
+In diesem Schritt ermitteln Sie die IP-Adresse Ihres Hostings und fügen sie zu Ihrer <code className="action">DNS-Zone</code> hinzu.
+
+Wenn Ihre Website nicht auf der OVHcloud Infrastruktur gehostet ist oder von einem anderen Anbieter verwaltet wird, kontaktieren Sie bitte den zuständigen Support.
+
+Wenn Ihre Website auf einem unserer [Hosting-Angebote](https://www.ovhcloud.com/de/web-hosting/) gehostet wird, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [Hosting-Pakete](https://manager.eu.ovhcloud.com/#/web/hosting), und wählen Sie das betreffende Webhosting aus.
+    
+    <img className="thumbnail" alt="Web Hosting" src="/images/assets/screens/control-panel/product-selection/web-cloud/hosting-plans.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Im Feld **Allgemeine Informationen** finden Sie die Adressen unter **IPv4** und **IPv6**.
+    
+    <img className="thumbnail" alt="IPv4-IPv6" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png" loading="lazy" />
+
+Kopieren Sie im Tab <code className="action">Allgemeine Informationen</code> die IPv4- und/oder IPv6-Adresse Ihrer Domain.
+  </Tab>
+</Tabs>
+
+
+Tragen Sie diese dann in die [DNS-Zone](/guides/web-cloud/domains/dns-zone-edit/) Ihrer Domain ein, indem Sie einen oder mehrere Einträge vom Typ `A` bearbeiten oder erstellen.
+
+<img className="thumbnail" alt="ipv4-DNSzone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png" loading="lazy" />
+
+Ihre Website wird dann innerhalb von maximal 24 Stunden verfügbar sein.
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Fehler "Seite nicht installiert" beheben](/guides/web-cloud/web-hosting/multisites-website-not-installed/)
+
+[Beheben des Fehlers "500 Internal Server Error"](/guides/web-cloud/web-hosting/diagnostic-fix-500-internal-server-error/)
+
+[Die häufigsten Fehler bei 1-Klick-Modulen beheben](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

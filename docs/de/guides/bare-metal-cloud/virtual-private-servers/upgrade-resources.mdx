@@ -1,0 +1,148 @@
+---
+title: Upgrade der Ressourcen eines VPS
+description: Erfahren Sie hier, wie Sie RAM, vCPU und Speicherplatz im OVHcloud Kundencenter upgraden können
+lastUpdated: 2025-09-08
+---
+
+
+
+## Ziel
+
+Unsere VPS-Dienste bieten Flexibilität, Zuverlässigkeit und Leistung für verschiedene Hosting-Anforderungen. Sie können Upgrades Ihres Arbeitsspeichers, vCPU oder Speicherplatzes direkt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) durchführen.
+
+**Diese Anleitung erklärt, wie Sie Ihrem VPS vCores, Speicherplatz und Arbeitsspeicher hinzufügen.** 
+
+## Voraussetzungen
+
+- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kundencenter.
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Navigationspfad:** <code className="action">Bare Metal Cloud</code> > <code className="action">Virtual Private Server</code> > Wählen Sie Ihren VPS aus
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+## In der praktischen Anwendung
+
+:::info
+Die im Kundencenter verfügbaren Upgrade-Optionen hängen von der Reihe und dem Modell des ausgewählten VPS ab. Die unten angezeigten Screenshots dienen lediglich der Veranschaulichung und beziehen sich nicht auf ein konkretes VPS-Upgrade-Szenario.
+
+:::
+
+
+Von hier aus können Sie vCores (`1`), RAM (`2`) oder Speicherplatz (`3`) erhöhen.
+
+<img className="thumbnail" alt="Ressourcen upgraden" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade01.png" loading="lazy" />
+
+### 1. So fügen Sie **vCores** hinzu
+
+Unter dem Tab **Start** im Panel **Ihre Konfiguration** klicken Sie auf <code className="action">vCores hinzufügen und dazu zur nächsthöheren Serverreihe wechseln</code>.
+
+Wählen Sie ein neues Modell aus und klicken Sie auf <code className="action">Weiter</code>.
+
+<img className="thumbnail" alt="Ressourcen upgraden" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade02.png" loading="lazy" />
+
+Wählen Sie Ihre RAM- und Speicheroptionen aus und klicken Sie auf <code className="action">Weiter</code>.
+
+<img className="thumbnail" alt="Ressourcen upgraden" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade03.png" loading="lazy" />
+
+Akzeptieren (<code className="action">☑</code>) Sie die **Nutzungsbedingungen** und klicken Sie auf <code className="action">Weiter</code>.
+
+<img className="thumbnail" alt="Ressourcen upgraden" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade04.png" loading="lazy" />
+
+Überprüfen Sie Ihre Änderungen und klicken Sie auf <code className="action">Bestellen</code>.
+
+<img className="thumbnail" alt="Ressourcen upgraden" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade05.png" loading="lazy" />
+
+### 2. So upgraden Sie den **Arbeitsspeicher**
+
+Im Tab **Start** im Panel **Ihre Konfiguration** klicken Sie auf den Arbeitsspeicher, auf den Sie upgraden möchten. Die verfügbaren Optionen hängen von der VPS-Reihe ab, die Sie derzeit nutzen.
+
+Klicken Sie im Popup-Fenster auf <code className="action">Bestätigen und bezahlen</code>, um Ihre Bestellung abzuschließen.
+
+<img className="thumbnail" alt="Ressourcen upgraden" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade06.png" loading="lazy" />
+
+### 3. So upgraden Sie den **Speicherplatz**
+
+Im Tab **Start** im Panel **Ihre Konfiguration** klicken Sie auf den Speicher, auf den Sie upgraden möchten. Die verfügbaren Optionen hängen von der VPS-Reihe ab, die Sie derzeit nutzen.
+
+Klicken Sie im Pop-up-Fenster auf <code className="action">Bestätigen und bezahlen</code>, um Ihre Bestellung abzuschließen.
+
+<img className="thumbnail" alt="Ressourcen upgraden" src="/images/bare-metal-cloud/virtual-private-servers/upgrade-resources/vps_upgrade07.png" loading="lazy" />
+
+Lesen Sie unsere dedizierte Anleitung für die nächsten Schritte: [VPS-Partitionierung nach einem Storage-Upgrade](/guides/bare-metal-cloud/virtual-private-servers/upsize-vps-partition/)
+
+## FAQ
+
+<details>
+
+<summary>Behalte ich die gleiche IP-Adresse?</summary>
+
+
+Ja, Sie behalten die IP-Adresse nach dem Upgrade Ihres VPS.
+
+</details>
+
+
+<details>
+
+<summary>Behalte ich meine Daten auf dem Server?</summary>
+
+
+Ja, nach einem Upgrade behalten Sie Ihre Daten. Wenn Sie Ihre Disk upgraden, müssen Sie möglicherweise die Partitionen erweitern.
+
+</details>
+
+
+<details>
+
+<summary>Was passiert mit der Sicherung/Snapshot? Kann ich sie auf dem neuen VPS verwenden?</summary>
+
+
+Ja. Nach einem Upgrade haben Sie weiterhin Zugriff auf Ihre Backups und Snapshots.
+
+</details>
+
+
+<details>
+
+<summary>Was passiert mit der Software-Lizenz auf dem alten VPS? Kann sie automatisch auf das neue VPS übertragen werden?</summary>
+
+
+Wenn Sie eine aktive Lizenz haben, bleibt sie an das VPS gebunden. Die Preise können je nach Lizenzvereinbarung oder Anforderungen des Anbieters geändert werden.  
+Wenn es Änderungen an der Lizenz gibt, werden sie vor dem Upgrade des VPS erläutert.
+
+</details>
+
+
+<details>
+
+<summary>Ändert sich die Bandbreite?</summary>
+
+
+In einigen Fällen kann sich die Bandbreite ändern, insbesondere wenn Sie von einer VPS-Reihe auf eine höhere Reihe umsteigen.
+
+</details>
+
+
+<details>
+
+<summary>Wird das Upgrade sofort wirksam, oder habe ich Zeit, beide gleichzeitig zu verwenden (konfigurieren, Daten übertragen usw.)?</summary>
+
+
+Das Upgrade wird sofort wirksam und bewahrt alle Ihre Daten. Durch das Upgrade werden mehr Ressourcen Ihrem bestehenden VPS zugewiesen.
+
+</details>
+
+
+
+## Weiterführende Informationen
+
+[VPS FAQ](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

@@ -1,0 +1,96 @@
+---
+title: Enviar SMS desde el área de cliente
+description: Descubra cómo enviar sus primeros SMS paso a paso, configurar remitentes y gestionar destinatarios desde el área de cliente de OVHcloud
+lastUpdated: 2026-01-07
+---
+
+## Objetivo
+
+Es posible enviar SMS directamente desde el área de cliente de OVHcloud. 
+
+**Esta guía explica paso a paso cómo enviar sus primeros SMS.**
+
+## Requisitos
+
+- Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Ruta de navegación:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Seleccione su cuenta SMS
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="área de cliente Telecom SMS" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png" loading="lazy" />
+
+## Procedimiento
+
+En la pestaña **Inicio**, haga clic en el enlace <code className="action">Enviar un SMS</code> del apartado **Quiero...**.
+
+<img className="thumbnail" alt="quiero enviar un sms" src="/images/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/sms-send-control-panel01E.png" loading="lazy" />
+
+### 1. Configurar el remitente y el destinatario
+
+:::info
+Para obtener más información sobre la creación y el uso de un remitente, consulte nuestra guía "[Todo sobre los remitentes SMS](/guides/web-cloud/messaging/sms/tout-savoir-sur-les-expediteurs-sms/)".
+
+:::
+
+
+Una vez en la página de envío de los SMS, podrá configurar distintos parámetros para adaptar el envío de SMS a sus necesidades.
+
+<img className="thumbnail" alt="configurar remitente y destinatario" src="/images/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/sms-send-control-panel02E.png" loading="lazy" />
+
+En el desplegable <code className="action">Remitente</code> (1), seleccione un número corto que permita responder (solo para las cuentas de OVHcloud Francia) o un remitente alfanumérico.
+
+Introduzca a continuación el número del destinatario (2) en formato internacional (+346XXXXXXXX). También es posible enviar SMS a varios destinatarios. Puede hacerlo de dos formas diferentes:
+
+- Mediante una lista de destinatarios en formato .CSV con el botón <code className="action">Lista de destinatarios</code>.
+Para más información, puede consultar nuestra guía relativa a las [listas de destinatarios de SMS](/guides/web-cloud/messaging/sms/liste-de-destinataire-sms/).
+
+- Mediante una agenda de contactos (3). Puede crearla directamente en el área de cliente o importarla a través de un archivo .CSV o .TXT.
+Para más información, puede consultar nuestra guía relativa a las [agendas de contactos de SMS](/guides/web-cloud/messaging/sms/gerer-mes-carnets-dadresses-sms/).
+
+### 2. Escribir un SMS
+
+:::info
+Por motivos legales, los SMS comerciales solo se enviarán **entre 8:00 y 20:00, de lunes a sábado**.
+
+:::
+
+
+Una vez que haya seleccionado el remitente y los destinatarios, ya puede empezar a escribir el mensaje.
+
+<img className="thumbnail" alt="escribir sms" src="/images/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/sms-send-control-panel03E.png" loading="lazy" />
+
+Introduzca su mensaje en el área de texto (1). En la esquina inferior derecha podrá ver un contador en el que se indican el número de caracteres restantes y la cantidad de SMS correspondiente (2).
+
+:::info
+Recomendamos no superar los 8 SMS por mensaje. A partir de este límite, los operadores ya no garantizan la entrega del mensaje.
+
+:::
+
+
+Las tablas que ofrecemos a continuación recogen los caracteres autorizados con codificación de 7 bits. Los caracteres de la tabla "**Extensiones**" cuentan por dos.
+
+La longitud máxima de un SMS es de 160 caracteres con codificación de 7 bits (norma GSM 03.38).
+
+ Si utiliza caracteres que no figuran en estas tablas, la codificación pasará a Unicode y la longitud máxima del SMS se reducirá a 70 caracteres.
+
+<img className="thumbnail" alt="Lista de caracteres de SMS" src="/images/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/smsauthorizedcharacters.png" loading="lazy" />
+
+**Opciones avanzadas**
+
+<img className="thumbnail" alt="opciones avanzadas de envío de SMS" src="/images/web-cloud/messaging/sms/envoyer-des-sms-depuis-mon-espace-client/sms-send-control-panel-advanced.png" loading="lazy" />
+
+Desplegando estas opciones, puede realizar un envío de SMS en diferido (1). Por defecto, el envío será inmediato.
+
+También puede configurar el tipo de envío (2) (eligiendo entre Estándar, Flash y Sim) pero esta funcionalidad está desfasada.
+
+## Más información
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

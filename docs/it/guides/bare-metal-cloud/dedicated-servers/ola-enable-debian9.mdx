@@ -1,0 +1,118 @@
+---
+title: Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9 a 11
+description: "Attivare l'opzione OVHcloud Link Aggregation sul tuo server Debian 9 a 11"
+lastUpdated: 2026-01-09
+---
+
+## Obiettivo
+
+La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcloud per aumentare la disponibilità dei server e potenziare le connessioni di rete. L’attivazione dell’opzione permette di aggregare in pochi click le schede di rete e rendere i collegamenti ridondati in modo che, in caso di malfunzionamenti, il traffico venga reindirizzato automaticamente verso il collegamento disponibile.
+
+**Scopri come raggruppare le tue NIC (Network Interface Controller) per utilizzarle con il servizio OLA su Debian (versioni da 9 a 11).**
+
+## Prerequisiti
+
+- [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/guides/bare-metal-cloud/dedicated-servers/ola-enable-manager/)
+
+{/* CP-NAV-START:baremetal-dedicated-servers */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](https://manager.eu.ovhcloud.com/#/dedicated-servers/server)
+- **Percorso di navigazione:** <code className="action">Bare Metal Cloud</code> > <code className="action">Server dedicati</code> > Seleziona il tuo server
+
+---
+{/* CP-NAV-END:baremetal-dedicated-servers */}
+
+:::warning
+Prima di attivare OVHcloud Link Aggregation nello Spazio Cliente o nell’API, è necessario scaricare il pacchetto ifenslave tramite questo comando:
+
+```
+apt install ifenslave
+```
+
+:::
+
+
+:::info
+Questa guida fornisce istruzioni per configurare l'aggregazione delle interfacce di rete specificamente con `ifupdown`, il cui file di configurazione è `/etc/network/interfaces`. È applicabile anche alla modalità di ripristino.
+
+Se la configurazione di rete del tuo sistema utilizza invece `Netplan`, fai riferimento a [questa guida](/guides/bare-metal-cloud/dedicated-servers/lacp-enable-netplan/).
+
+:::
+
+
+## Procedura
+
+Il tipo di configurazione disponibile in OLA per i nostri NIC non permette di accedere al server in SSH. Per stabilire la connessione alla macchina è quindi necessario utilizzare IPMI.
+<br/>Per attivare il tool accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it). Nella sezione <code className="action">Bare Metal Cloud</code>, seleziona il tuo server tra <code className="action">Server dedicati</code> e clicca sulla scheda <code className="action">IPMI</code> (1).
+
+Clicca sul pulsante <code className="action">Da una applet Java (KVM)</code> (2).
+
+<img className="thumbnail" alt="remote_kvm" src="/images/bare-metal-cloud/dedicated-servers/ola-enable-debian9/remote_kvm2022.png" loading="lazy" />
+
+Verrà scaricato un programma JNLP: aprilo e utilizza le credenziali associate al server per accedere.
+
+Se utilizzi un template OVHcloud, il nome delle schede di rete assegnato di default sarà **ethX** o **enoX**. In caso contrario è possibile trovare i nomi delle interfacce eseguendo questo comando:
+
+```bash
+ip a
+```
+
+:::info
+Il risultato restituito mostrerà diverse "interfacce". In caso di difficoltà nel determinare i propri NIC fisici, è utile considerare che gli indirizzi IP pubblici del server sono associati di default alla prima interfaccia.
+
+:::
+
+
+Una volta individuati i nomi dei due NIC sarà possibile configurarne il bonding nel sistema operativo. Per creare il file **interfaces** in un editor di testo, utilizza questo comando:
+
+```bash
+vi /etc/network/interfaces
+```
+
+Si aprirà un file di testo vuoto. Per configurare l’interfaccia bond, inserisci queste righe:
+
+```bash
+auto bond0
+iface bond0 inet static
+  address 10.0.0.1/24
+  hwaddress ether 00:11:22:33:44:55
+  bond-mode 802.3ad
+  bond-slaves eno1 eno2
+  bond-lacp-rate fast
+  bond-xmit_hash_policy layer3+4
+
+  up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
+```
+
+:::info
+Per il parametro `hwaddress`, si consiglia di utilizzare il più piccolo dei due indirizzi MAC delle schede di rete, poiché appartiene all'interfaccia di riserva (fallback) LACP.
+
+:::
+
+
+:::info
+Per configurare una rete privata via IPv6 è sufficiente aggiungere al file solo l’ultima riga.
+
+:::
+
+
+A questo punto riavvia il servizio di rete con il comando:
+
+```bash
+systemctl restart networking
+```
+
+Questa operazione potrebbe richiedere alcuni secondi per costruire l’interfaccia bond. Per testare il corretto funzionamento della nuova interfaccia creata, effettua il ping di un altro server presente nella stessa vRack. Se funziona, la procedura è conclusa. In caso contrario, verifica nuovamente la configurazione o prova a riavviare il server.
+
+## Per saperne di più
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/guides/bare-metal-cloud/dedicated-servers/ola-enable-manager/).
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019](/guides/bare-metal-cloud/dedicated-servers/ola-enable-w2k19/).
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in SLES 15](/guides/bare-metal-cloud/dedicated-servers/ola-enable-sles15/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

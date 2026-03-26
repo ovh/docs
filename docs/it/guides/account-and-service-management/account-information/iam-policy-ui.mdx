@@ -1,0 +1,230 @@
+---
+title: Come utilizzare le politiche IAM dallo Spazio Cliente
+description: Come assegnare diritti di accesso specifici agli utenti da un account OVHcloud
+lastUpdated: 2025-10-27
+---
+
+## Obiettivo
+
+Questa guida ti mostra come assegnare diritti di accesso specifici agli utenti di un account OVHcloud.
+
+La gestione degli accessi OVHcloud si basa su un sistema di gestione delle politiche. È possibile scrivere diverse politiche che danno accesso agli utenti a funzionalità specifiche sui prodotti associati a un account OVHcloud.
+
+In dettaglio, una politica contiene:
+
+- Una o più **identità** oggetto di tale politica. 
+    - Può trattarsi di identificativi di account, utenti o gruppi di utenti (come quelli utilizzati in [Federation](/guides/account-and-service-management/account-information/ovhcloud-account-connect-saml-adfs/) - sono disponibili altre guide SSO). 
+- Una o più **risorse** interessate da tale politica. 
+    - Una risorsa è un prodotto OVHcloud che sarà interessato da questa politica (un dominio, un server Nutanix, un Load Balancer, ecc...).
+- Una o più **azioni** autorizzate o escluse da tale politica.
+    - Le azioni sono i diritti specifici coinvolti in questa politica (riavvio di un server, creazione di un account email, rescissione di un abbonamento, ecc...)
+ 
+Ad esempio, possiamo creare una politica per dare ad un utente di nome John, per un VPS, l'accesso all'azione "riavviare".
+
+**Questa guida ti mostra come definire queste politiche tramite lo Spazio Cliente OVHcloud e come elencare le identità, le risorse e le azioni disponibili.**
+
+<img className="thumbnail" alt="politiche IAM" src="/images/account-and-service-management/account-information/iam-policy-ui/iam_policies.png" loading="lazy" />
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/g6qvskdFwy8?si=51mbyM6affEFknxv" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen={true}></iframe>
+
+## Prerequisiti
+
+- Disporre di un [account OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+- Sapere [gestire gli utenti dell'account](/guides/account-and-service-management/account-information/ovhcloud-users-management/)
+- Uno o più prodotti OVHcloud associati a questo account OVHcloud (Load Balancer, dominio, VPS, ecc...)
+
+{/* CP-NAV-START:iam-policies */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [IAM Policies](https://manager.eu.ovhcloud.com/#/iam/policies/myPolicies)
+- **Percorso di navigazione:** <code className="action">Identità, sicurezza e operazioni</code> > <code className="action">Policy</code>
+
+---
+{/* CP-NAV-END:iam-policies */}
+
+## Procedura
+
+### Accedi al menu IAM
+
+Apri la pagina [Policy IAM](https://manager.eu.ovhcloud.com/#/iam/policies/myPolicies).
+
+<img className="thumbnail" alt="Accesso al menu IAM" src="/images/account-and-service-management/account-information/iam-policy-ui/access_to_the_IAM_menu_01.png" loading="lazy" />
+
+Se si accede per la prima volta a questo menu, viene visualizzata la pagina seguente:
+
+<img className="thumbnail" alt="Accesso al menu IAM" src="/images/assets/screens/control-panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png" loading="lazy" />
+
+Clicca direttamente su [Crea una policy](#create-policy) o su [Crea utenti](#create-users) in base all’azione che vuoi effettuare.
+
+:::info
+Cliccare sul pulsante "Modalità avanzata" permette di visualizzare l'elenco di tutte le politiche OVHcloud. Queste politiche vengono create automaticamente da OVHcloud per convertire la delega preesistente delle `NIC Tech` (contatto tecnico) e `NIC Admin` (contatto amministratore) sulla nuova funzionalità IAM. 
+
+I clienti non sono autorizzati a modificare o eliminare queste politiche.
+
+:::
+
+
+Se hai già creato policy o utenti, puoi trovarli nella prima scheda <code className="action">Le mie politiche</code>. La scheda <code className="action">Politiche OVHcloud</code> raggruppa le politiche non modificabili create automaticamente da OVHcloud.
+
+<img className="thumbnail" alt="Accesso al menu IAM" src="/images/account-and-service-management/account-information/iam-policy-ui/access_to_the_IAM_menu_03.png" loading="lazy" />
+
+Ogni politica è visualizzata con il suo nome, il numero di identità ad essa associate e il numero di azioni che contiene.
+
+### Gestione delle politiche
+
+<a name="create-policy"></a>
+
+#### Crea una politica
+
+Clicca su <code className="action">Crea una politica</code>.
+
+Compare il seguente form:
+
+<img className="thumbnail" alt="Crea una politica" src="/images/account-and-service-management/account-information/iam-policy-ui/create_a_policy_01.png" loading="lazy" />
+
+- **Nome della politica** (obbligatorio): è il nome che comparirà nelle interfacce. Il nome deve essere unico e non deve contenere spazi.
+- **Identità**: selezionare le identità interessate da questo criterio. È possibile assegnare più tipi di identità.
+- **Tipi di prodotti**: seleziona i tipi di prodotto per definire il campo di applicazione della politica. Uno o più tipi di prodotto possono essere inclusi nella stessa politica.
+- **Risorse**: aggiungete risorse o gruppi di risorse che saranno coperti dalla politica. Le risorse disponibili sono filtrate per tipo di prodotto selezionato in precedenza.
+- **Azioni**
+
+**Esistono 4 modi per aggiungere azioni:**
+
+##### 1 - Attivare l'opzione "Autorizza tutte le azioni"
+
+<img className="thumbnail" alt="Crea una politica" src="/images/account-and-service-management/account-information/iam-policy-ui/create_a_policy_02.png" loading="lazy" />
+
+Al momento dell'attivazione di questa opzione, autorizzi tutte le azioni relative ai prodotti selezionati. Ciò comprende tutte le azioni esistenti e le azioni aggiunte in futuro per queste categorie di prodotti.
+
+##### 2 - Selezionare un gruppo di autorizzazioni gestite
+
+OVHcloud mette a disposizione gruppi di permessi preconfigurati e gestiti da OVHcloud.
+È possibile selezionare uno o più gruppi selezionandoli dall'elenco disponibile.
+
+<img className="thumbnail" alt="Crea una politica" src="/images/account-and-service-management/account-information/iam-policy-ui/create_a_policy_05.png" loading="lazy" />
+
+I dettagli del contenuto dei gruppi di permessi gestiti sono disponibili nella [documentazione associata](/guides/account-and-service-management/account-information/iam-permission-groups/).
+
+I gruppi di azioni gestite possono essere utilizzati in aggiunta alle azioni unitarie.
+
+##### 3 - Aggiungere manualmente delle azioni
+
+Se conosci il nome dell'azione, puoi aggiungerla manualmente.
+
+<img className="thumbnail" alt="Crea una politica" src="/images/account-and-service-management/account-information/iam-policy-ui/create_a_policy_03.png" loading="lazy" />
+
+Si può utilizzare una *wildcard* all'inizio o alla fine dell'azione con `*`.
+
+Ad esempio, l'aggiunta di `vps:apiovh:ips/*` conferirà i seguenti diritti:
+
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
+
+##### 4 - Selezionare le azioni dall'elenco
+
+Le azioni possono essere selezionate nell'elenco.
+
+<img className="thumbnail" alt="Crea una politica" src="/images/account-and-service-management/account-information/iam-policy-ui/create_a_policy_04.png" loading="lazy" />
+
+Le azioni disponibili dipendono dal tipo di risorsa e appartengono ad una delle cinque categorie seguenti:
+
+- **Read**: registra i prodotti e visualizza le informazioni che li riguardano (*es: listare un IP VPS*).
+- **Create**: azione che permette di creare qualcosa su un prodotto (*es: creare un ticket supporto*).
+- **Delete**: azione che permette di eliminare qualcosa su un prodotto (*es: eliminare un'istanza Public Cloud*)
+- **Edit**: azione per modificare un elemento esistente su un prodotto (*es: modificare la rotta TCP di un Load Balancer*).
+- **Operate**: applicare modifiche all'infrastruttura connessa al prodotto (*es.: riavviare un server dedicato*).
+
+Per aiutarti a identificare un'azione specifica nella lista, è disponibile un campo di ricerca.
+
+:::info
+Le azioni legate all'acquisto e alla fatturazione non sono ancora disponibili nell'IAM di OVHcloud.
+
+:::
+
+
+#### Condizioni sulle politiche
+
+È possibile aggiungere condizioni alle politiche IAM.
+
+Una politica con condizioni è valida quando tutte le condizioni sono validate.
+
+È possibile applicare condizioni su:
+
+- un tag della risorsa;
+- il nome della risorsa;
+- il tipo di prodotto;
+- l'indirizzo IP della richiesta;
+- il giorno della settimana;
+- la data;
+- l'ora.
+
+<img className="thumbnail" alt="Creare una politica" src="/images/account-and-service-management/account-information/iam-policy-ui/conditions.png" loading="lazy" />
+
+Una volta aggiunte, le condizioni vengono visualizzate con la sintassi [utilizzata nell'API](/guides/account-and-service-management/account-information/iam-policies-api/)
+
+#### Modifica una politica
+
+Per modificare una politica esistente, clicca sul pulsante <code className="action">...</code> a destra della politica e poi su <code className="action">Modifica la politica</code>.
+
+<img className="thumbnail" alt="Modifica una politica" src="/images/account-and-service-management/account-information/iam-policy-ui/editing_a_policy.png" loading="lazy" />
+
+In seguito, è possibile modificare la portata della politica.
+
+#### Elimina una politica
+
+Per eliminare una politica esistente, clicca sul pulsante <code className="action">...</code> a destra della politica e poi su <code className="action">Elimina la politica</code>.
+
+Una finestra contestuale ti chiederà di confermare l'eliminazione.
+
+<a name="create-users"></a>
+
+#### Caso di policy relative ad altri account cliente OVHcloud
+
+Le policy di accesso possono essere indirizzate ad altri account cliente.
+L'account destinatario di questa politica potrà gestire i diritti ricevuti nelle proprie politiche di accesso, ma non potrà mai oltrepassare i diritti definiti nella politica di accesso.
+
+Ad esempio un account **xx1111-ovh** con diritti `vps:apiovh:ips/*` all’account **xx2222-ovh**.
+L’account **xx2222-ovh** potrà assegnare il diritto `vps:apiovh:ips/delete` ai propri utenti, ma non potrà mai assegnare il diritto `vps:apiovh:reboot`.
+
+L'accesso al supporto resterà riservato all'account proprietario della risorsa.
+
+### Gestione delle identità
+
+Per gestire le identità disponibili per le policy, accedi al menu <code className="action">Identità, Sicurezza e Operazioni</code>, poi alla sezione <code className="action">Identità</code>.
+
+Visualizza i dettagli della gestione degli utenti nella [documentazione dedicata](/guides/account-and-service-management/account-information/ovhcloud-users-management/).
+
+### Gestione dei gruppi di risorse
+
+Le politiche possono concentrarsi su gruppi di risorse (invece di indirizzare risorse direttamente). Questi gruppi di risorse possono assemblare risorse provenienti da diversi prodotti, ad esempio per configurare un ambiente di test.
+
+#### Crea un gruppo di risorse
+
+Per creare un gruppo di risorse, vai alla sezione <code className="action">Policy</code> e clicca sulla scheda <code className="action">Gruppi di risorse</code>:
+
+<img className="thumbnail" alt="Resource Group" src="/images/account-and-service-management/account-information/iam-policy-ui/resource_groups.png" loading="lazy" />
+
+Clicca su <code className="action">Crea il gruppo di risorse</code>.
+
+<img className="thumbnail" alt="Resource Group" src="/images/account-and-service-management/account-information/iam-policy-ui/resource_groups_form.png" loading="lazy" />
+
+- **Nome del gruppo di risorse**: è il nome che comparirà nelle interfacce. Il nome deve essere unico e non deve contenere spazi.
+- **Tipi di prodotti**: elenco dei tipi di prodotti interessati da questo gruppo di risorse.
+- **Risorse**: elenco delle risorse che il gruppo conterrà.
+
+#### Modifica un gruppo di risorse
+
+Per modificare un gruppo di risorse, clicca sul nome nella lista.
+
+#### Elimina un gruppo di risorse
+
+Per eliminare un gruppo di risorse esistente, clicca sul pulsante <code className="action">...</code> a destra del gruppo e poi su <code className="action">Elimina il gruppo di risorse</code>.
+
+Una finestra contestuale ti chiederà di confermare l'eliminazione.
+
+## Per saperne di più
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

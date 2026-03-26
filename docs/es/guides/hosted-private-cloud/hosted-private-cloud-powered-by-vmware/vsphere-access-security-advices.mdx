@@ -1,0 +1,68 @@
+---
+title: Buenas prácticas de seguridad en vSphere Web Client
+description: Cómo proteger el acceso a vSphere Web Client
+lastUpdated: 2020-06-30
+---
+
+## Objetivo
+
+Restringir el acceso a su infraestructura es una medida recomendable para garantizar su seguridad. Existen distintas formas de hacerlo.
+
+**Esta guía ofrece algunos consejos para proteger rápida y fácilmente el acceso al cliente web vSphere**.
+
+## Requisitos
+
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+## Procedimiento
+
+### Controlar los accesos por IP
+
+En primer lugar, debe restringir los accesos por IP. Le aconsejamos que utilice siempre un sistema de lista blanca. Esta técnica consiste en prohibir el acceso por defecto a todas las direcciones IP e indicar las direcciones que sí pueden acceder a la infraestructura.
+
+Puede realizar esta operación directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es). Una vez conectado a su Private Cloud, abra la pestaña <code className="action">Seguridad</code>. Se mostrará una tabla en la que podrá consultar las direcciones IP autorizadas o denegadas. Para añadir nuevas direcciones IP, haga clic en el botón <code className="action">Añadir IP</code>, situado a la derecha.
+
+<img className="thumbnail" alt="Añadir IP" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/adding_ip.png" loading="lazy" />
+
+### Crear usuarios específicos
+
+Le recomendamos encarecidamente que cree un acceso personal para cada usuario que necesite acceder a la infraestructura. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es), en la pestaña <code className="action">Usuarios</code>. Para añadir nuevos usuarios, haga clic en el botón <code className="action">Crear un usuario</code>.
+
+<img className="thumbnail" alt="Usuarios" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/users.png" loading="lazy" />
+
+Al crear un usuario, deberá asignarle una contraseña.
+
+:::info
+Para proteger mejor sus datos, la contraseña debe seguir una serie de recomendaciones:
+
+- tener un mínimo de ocho caracteres;
+- incluir al menos tres tipos de caracteres diferentes;
+- no elegir una palabra que esté en el diccionario;
+- no incluir datos personales (nombre, apellidos o fecha de nacimiento); 
+- no utilizar la misma contraseña para varias cuentas de usuario;
+- guardar la contraseña en un gestor de contraseñas;
+- cambiar la contraseña cada tres meses;
+- utilizar una contraseña diferente a las utilizadas anteriormente.
+
+:::
+
+
+A continuación, podrá administrar los permisos de cada usuario haciendo clic en los tres puntos (<code className="action">...</code>) situados al final de la línea correspondiente a cada usuario.
+
+<img className="thumbnail" alt="Configuración de los parámetros de los usuarios" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/users_edit.png" loading="lazy" />
+
+### Limitar la duración de las sesiones
+
+Le recomendamos que cierre la sesión cuando termine de utilizar el cliente. Es posible añadir un plazo de expiración para limitar la duración de las sesiones.
+
+Puede configurar este parámetro directamente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es). Una vez conectado a su Private Cloud, abra la pestaña <code className="action">Seguridad</code>. A continuación, haga clic en el botón <code className="action">Cambiar el plazo de expiración</code>, situado a la derecha.
+
+<img className="thumbnail" alt="Expiración de la sesión" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/security-expiration.png" loading="lazy" />
+
+Se abrirá una ventana en la que podrá elegir el tiempo (en minutos) que debe transcurrir antes de que expire una sesión.
+
+<img className="thumbnail" alt="Expiración de la sesión" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vsphere-access-security-advices/expiration.png" loading="lazy" />
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

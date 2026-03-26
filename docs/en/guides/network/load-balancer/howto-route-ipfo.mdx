@@ -1,0 +1,131 @@
+---
+title: How to route an Additional IP
+description: Find out how to route an Additional IP and link it to the OVHcloud Load Balancer
+lastUpdated: 2025-11-27
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+An **Additional IP** is an IP address that can be switched from one service to another. This capability helps you maintain infrastructure continuity by mitigating issues such as hardware failures, service overload, or maintenance downtime.
+
+For more information on Additional IPs, please consult our [webpage](https://www.ovhcloud.com/en-gb/bare-metal/ip/).
+
+The OVHcloud Load Balancer solution provides load balancing features for various protocols, including HTTP, HTTPS, TCP, and UDP. Linking it to an Additional IP allows you to switch your existing infrastructure to the Load Balancer without service interruption. Since you continue using the Additional IP, you avoid the need to change your public IP address and wait for DNS zone propagation. Using an additional IP means you avoid the need to change your service's IP address, and no longer have to wait for your DNS zone to propagate changes.
+
+For more information on the OVHcloud Load Balancer solution, please read our [Introduction to the OVHcloud Load Balancer](/guides/network/load-balancer/use-presentation/) guide.
+
+**This guide explains how to use an Additional IP with the OVHcloud Load Balancer service.**
+
+## Requirements
+
+- A configured [OVHcloud Load Balancer](https://www.ovhcloud.com/en-gb/network/load-balancer/)
+- An [Additional IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud API](https://eu.api.ovh.com/)
+
+:::info
+**Required Load Balancer configuration**
+
+Once you confirm the changes in the list of Additional IPs associated with the Load Balancer, the configuration needs to be refreshed. Several conditions must be met for this to work:
+
+- **vRack configuration:** If the Load Balancer is in a vRack, all farms must also be in the vRack, and the Load Balancer must have its vLAN defined. Otherwise, there should be no farms in a vRack.
+
+- **Front-end validity:** At least one front-end must exist, and all front-ends must be valid. They can be enabled or disabled, but must have either:
+   - a valid route (with routing rules)
+   - a redirection (<code className="action">redirectLocation</code>)
+   - a default farm
+
+- **Configuration state:** The Load Balancer must not be undergoing any other refresh process. A Load Balancer cannot be refreshed several times at once, as this would prevent changes from being applied to the resulting configuration.
+
+:::
+
+
+## Instructions
+
+In this document, we will cover two distinct use cases:
+
+- linking an Additional IP to the overall OVHcloud Load Balancer service
+- linking an Additional IP to a single front-end of the OVHcloud Load Balancer service
+
+### Add an Additional IP to the OVHcloud Load Balancer
+
+You can link these IPs to your OVHcloud Load Balancer via the [OVHcloud API](https://eu.api.ovh.com/).
+The API call for this is:
+
+<Api version="v1" section="/ip" method="POST" route={"/ip/\{ip\}/move"} />
+
+You can then list the Additional IPs linked to your OVHcloud Load Balancer with the following API call:
+
+<Api version="v1" section="/ipLoadbalancing" method="GET" route={"/ipLoadbalancing/\{serviceName\}/failover"} />
+
+Additional IPs linked this way are available for **all** your front-ends. This differs from the next case, where an Additional IP is linked to a single front-end.
+
+### Add a dedicated Additional IP to a front-end
+
+Regardless of the front-end type, you can define a list of dedicated Additional IPs to be linked to it. In this specific case, your Additional IP will be attached to **only one** single front-end. As a result, it will only grant access to the service provided by that front-end. Services for your other front-ends will remain accessible via your IP Load Balancer’s primary IP address.
+
+#### Via the API
+
+**If you are creating a front-end:**
+
+From the [OVHcloud API](https://eu.api.ovh.com/), you can use the following calls to define one or more Additional IPs on a front-end during its creation:
+
+- HTTP protocol
+
+<Api version="v1" section="/ipLoadbalancing" method="POST" route={"/ipLoadbalancing/\{serviceName\}/http/frontend"} />
+
+
+- TCP protocol
+
+<Api version="v1" section="/ipLoadbalancing" method="POST" route={"/ipLoadbalancing/\{serviceName\}/tcp/frontend"} />
+
+
+- UDP protocol
+
+<Api version="v1" section="/ipLoadbalancing" method="POST" route={"/ipLoadbalancing/\{serviceName\}/udp/frontend"} />
+
+**If you are updating an existing front-end:**
+
+From the [OVHcloud API](https://eu.api.ovh.com/), you can use the following calls to define one or more Additional IPs on an existing front-end:
+
+- HTTP protocol
+
+<Api version="v1" section="/ipLoadbalancing" method="PUT" route={"/ipLoadbalancing/\{serviceName\}/http/frontend/\{frontendId\}"} />
+
+
+- TCP protocol
+
+<Api version="v1" section="/ipLoadbalancing" method="PUT" route={"/ipLoadbalancing/\{serviceName\}/tcp/frontend/\{frontendId\}"} />
+
+
+- UDP protocol
+
+<Api version="v1" section="/ipLoadbalancing" method="PUT" route={"/ipLoadbalancing/\{serviceName\}/udp/frontend/\{frontendId\}"} />
+
+
+#### Via the OVHcloud Control Panel
+
+You can define dedicated Additional IPs via the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) by navigating to the <code className="action">Network</code> section, then <code className="action">Load Balancer</code>.
+
+Once you have selected the Load Balancer you want to modify, navigate to the <code className="action">Front-ends</code> tab, where you can either create a new front-end or edit an existing one.
+
+In <code className="action">Advanced settings</code>, you can select the Additional IPs you would like to associate with your front-end.
+
+<img className="thumbnail" alt="Configure the front-end by associating an Additional IP" src="/images/network/load-balancer/howto-route-ipfo/iplb_frontend.png" loading="lazy" />
+
+Once the front-end has been configured, click <code className="action">Add</code> or <code className="action">Modify</code>, depending on whether you are configuring a new or existing front-end.
+
+Remember to deploy the configuration. There are two ways to do this:
+
+- via the <code className="action">Status</code> section of the <code className="action">Home</code> tab of your OVHcloud Control Panel, by clicking on the <code className="action">...</code> button next to your Load Balancer's ID and selecting <code className="action">Apply configuration</code>
+
+- via the reminder box in the OVHcloud Control Panel, which notifies you that the configuration has not been applied, by clicking <code className="action">Apply configuration</code>.
+
+<img className="thumbnail" alt="Apply a Load Balancer configuration" src="/images/network/load-balancer/howto-route-ipfo/apply_configuration.png" loading="lazy" />
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

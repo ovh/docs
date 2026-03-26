@@ -1,0 +1,67 @@
+---
+title: VPS - Attivare i log di avvio Windows
+description: Scopri come attivare i log di avvio Windows per facilitare la diagnostica e la risoluzione dei problemi di avvio del tuo VPS
+lastUpdated: 2026-01-21
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Obiettivo
+
+I log di avvio Windows permettono di identificare i driver e i servizi caricati durante l'avvio del sistema.  
+Sono particolarmente utili per la **diagnosi dei problemi di avvio**, degli **schermi blu** o dei **bloccaggi del sistema**.
+
+**Questo manuale ti spiega come attivare i log di avvio su un server Windows per facilitare l'analisi e la risoluzione dei problemi del tuo VPS.**
+
+## Prerequisiti
+
+- Disporre di un'offerta [VPS](https://www.ovhcloud.com/it/vps/) attiva nel tuo Spazio Cliente OVHcloud.
+
+## Procedura
+
+### Attivazione dei log di avvio Windows
+
+I log di avvio di Windows possono essere utili per la diagnostica degli errori del server.
+
+Per attivarli, segui le seguenti fasi scorrendo le schede:
+
+<Tabs>
+  <Tab label="1. **Connettersi al server**">
+    Connetti il tuo server tramite desktop remoto o una [sessione KVM](/guides/bare-metal-cloud/virtual-private-servers/using-kvm-for-vps/).
+  </Tab>
+  <Tab label="2. **Aprire l'utilità &quot;Esegui&quot;**">
+    Apri il menu `Start` di Windows e clicca su <code className="action">Esegui</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-start-run.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. **Aprire `msconfig`**">
+    Digita `msconfig` e clicca su <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-msconfig.png" loading="lazy" />
+  </Tab>
+  <Tab label="4. **Attivare i log**">
+    Nella nuova finestra, attiva l'opzione log accanto a `Boot log`. Clicca quindi su <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="KVM" src="/images/assets/screens/other/windows/windows-log.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Al prossimo avvio del tuo server, i log saranno registrati in un file `.txt`. Il percorso del file è: `C:\Windows\ntbtlog.txt`.
+
+Per accedere al file di log in modalità rescue, segui le istruzioni del manuale "[Attivare e utilizzare la modalità rescue su un VPS](/guides/bare-metal-cloud/virtual-private-servers/rescue/)".
+
+## Per saperne di più
+
+[Cambiare la password amministratore su un server Windows](/guides/bare-metal-cloud/virtual-private-servers/resetting-a-windows-password/)
+
+[VPS FAQ](/guides/bare-metal-cloud/virtual-private-servers/vps-faq/)
+
+[Introduzione al SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/)
+
+[Proteggere un VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps/)
+
+[Come recuperare l'accesso al server in caso di perdita della password dell'utente](/guides/bare-metal-cloud/dedicated-servers/replacing-user-password/)
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,192 @@
+---
+title: Berechtigungen für einen E-Mail Account übertragen
+description: Hier erfahren Sie, wie Sie einem anderen Account Berechtigungen für Ihren E-Mail Account zuweisen.
+lastUpdated: 2025-04-28
+---
+
+## Einleitung
+
+Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professionellen E-Mail-Accounts, die die kollaborative Arbeit dank verschiedener Funktionen vereinfachen. Mit einer dieser Optionen können bestimmte Rechte (z. B. Versand- oder Zugriffsrechte) zwischen verschiedenen E-Mail-Accounts übertragen werden.
+
+**In dieser Anleitung erfahren Sie, wie Sie anderen Accounts Berechtigungen für Ihren E-Mail Account zuweisen.**
+
+## Voraussetzungen
+
+- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
+
+:::warning
+**Für [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)** können die in dieser Anleitung beschriebenen Delegierungsfunktionen nur über [Webmail](https://www.ovhcloud.com/de/mail/) verwendet werden. Die Protokolle, die ihre Verwendung über einen E-Mail-Client ermöglichen, erfordern einen [Exchange-Account](https://www.ovhcloud.com/de/emails/hosted-exchange/).
+
+:::
+
+
+- Sie verfügen über mindestens zwei aktive E-Mail Account, die auf derselben OVHcloud E-Mail Plattform eingerichtet sind.
+- Sie verfügen über die Login-Informationen für den E-Mail Account, dem Sie neue Berechtigungen zuweisen möchten.
+
+{/* CP-NAV-START:web-exchange */}
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wählen Sie Ihre Plattform aus
+
+**E-Mail Pro:**
+
+- **Direkter Link:** [E-Mail Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">E-Mail Pro</code> > Wählen Sie Ihre Plattform aus
+
+---
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-exchange */}
+
+## In der praktischen Anwendung
+
+Legen Sie zunächst fest, welche Berechtigungen Sie vergeben möchten. Zur Erinnerung: Bei einer Delegation übertragen Sie einem oder mehreren E-Mail Account zusätzliche Rechte für einen ausgewählten E-Mail Account.
+
+|Berechtigungen|Beschreibung|
+|---|---|
+|**Senden als**|Erlaubt dem Benutzer, Nachrichten von einem anderen Account aus zu versenden. Nicht der Benutzer, der die E-Mail versendet, wird als Absender angezeigt, sondern der Account, für den dieser die „Senden als“-Berechtigung hat. Der Empfänger kann nicht erkennen, dass die Nachricht von einem anderen Account aus versandt wurde.|
+|**Senden im Auftrag von**|Erlaubt dem Benutzer, Nachrichten von einem anderen Account aus zu versenden. Nicht der Benutzer, der die E-Mail versendet, wird als Absender angezeigt, sondern der Account, für den dieser die „Senden im Auftrag von“-Berechtigung hat. Im Gegensatz zur „Senden als“-Berechtigung wird in diesem Fall eine Anmerkung hinzugefügt, dass die Nachricht von einem anderen Benutzer im Auftrag des angezeigten Accounts versandt wurde.|
+|**Zugangsrechte**|Mit dieser Berechtigung vergeben Sie für den betreffenden Account reine Leserechte. Nachrichten können nicht versandt werden. Es ist nur möglich, Inhalte zu lesen.|
+
+:::warning
+Sie können nicht gleichzeitig „Senden als“- und „Senden im Auftrag von“-Berechtigungen vergeben. Andere Kombinationen sind jedoch möglich.
+
+:::
+
+
+Wählen Sie zunächst den Account aus, für den Sie Berechtigungen vergeben möchten. Bestimmen Sie dann die entsprechenden Rechte sowie den oder die Accounts, die zusätzliche Berechtigungen erhalten sollen. Folgen Sie nun Schritt 1 der vorliegenden Anleitung.
+
+### Schritt 1: Delegation einrichten
+
+Gehen Sie nun auf den Tab <code className="action">E-Mail-Accounts</code>.
+
+Die Tabelle zeigt alle Accounts an, die mit Ihrem E-Mail Dienst verbunden sind. Klicken Sie auf die drei Punkte rechts neben dem Account, für den Sie Berechtigungen vergeben möchten, und gehen Sie dann auf <code className="action">Berechtigungen verwalten</code>.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step1.png" loading="lazy" />
+
+Wählen Sie im angezeigten Fenster die Berechtigungen aus, die Sie übertragen möchten. Weisen Sie die Rechte einem oder mehreren Accounts zu. Klicken Sie anschließend auf <code className="action">Weiter</code>.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step2.png" loading="lazy" />
+
+Überprüfen Sie die Änderungen in der Übersicht und klicken Sie anschließend auf <code className="action">Bestätigen</code>. Innerhalb weniger Minuten wird die Delegation auf unseren Servern eingerichtet.
+
+Sobald die Delegation konfiguriert ist, kann *test@mypersonaldomain.ovh* die ausgewählten Berechtigungen für *test2@mypersonaldomain.ovh* nutzen und die entsprechenden Aktionen ausführen (siehe Grafik).
+
+### Schritt 2: Berechtigungen nutzen
+
+Nun, da die Delegation eingerichtet ist, können Sie die vergebenen Berechtigungen nutzen. Vergewissern Sie sich zunächst, dass Sie über die Login-Informationen für den E-Mail Account verfügen, der die neuen Berechtigungen erhalten hat.
+
+Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und der Software bzw. dem Webinterface, das Sie für den Zugang zu Ihrem E-Mail Account verwenden. Folgen Sie dieser Anleitung deshalb entsprechend der Berechtigungen, die Sie vergeben haben.
+
+- [Zugangsrechte nutzen](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation#21-zugangsrechte-nutzen/)
+
+- [„Senden als“-Berechtigung nutzen](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation#22-senden-als-berechtigung-nutzen/)
+
+- [„Senden im Auftrag von“-Berechtigung nutzen](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation#23-senden-im-auftrag-von-berechtigung-nutzen/)
+
+:::warning
+Für die nachstehenden Aktionen sind Kenntnisse über die von Ihnen verwendete Software bzw. das Interface erforderlich. Im Folgenden haben wir einige Informationen zur Vorgehensweise zusammengetragen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber der Software oder des Interface zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+
+:::
+
+
+#### 2.1 Zugangsrechte nutzen
+
+- **Über die Outlook Web App (OWA)**
+
+Gehen Sie auf[Webmail](https://www.ovhcloud.com/de/mail/) und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie links im Menü auf den betreffenden Account und wählen Sie <code className="action">Freigegebenen Ordner hinzufügen</code>.
+
+Geben Sie im angezeigten Fenster den Namen des Accounts ein, für den Sie Zugangsrechte erhalten haben, und klicken Sie dann auf <code className="action">Hinzufügen</code>. Der neue Account erscheint dann links im Menü und Sie können die Inhalte einsehen.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step3.png" loading="lazy" />
+
+- **Über Outlook für Windows**
+
+:::warning
+Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](https://www.ovhcloud.com/de/emails/hosted-exchange/) verfügbar.
+
+:::
+
+
+Öffnen Sie Outlook und klicken Sie oben im Menü auf <code className="action">Datei</code> und dann auf <code className="action">Kontoeinstellungen</code>. Wählen Sie im Drop-down-Menü erneut <code className="action">Kontoeinstellungen</code> aus. Wählen Sie im angezeigten Fenster den Account mit zugewiesenen Berechtigungen aus und klicken Sie dann auf <code className="action">Ändern</code>.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step4.png" loading="lazy" />
+
+Klicken Sie nun auf <code className="action">Weitere Einstellungen</code>. Gehen Sie im neuen Fenster auf den Tab <code className="action">Erweitert</code> und dann auf <code className="action">Hinzufügen</code>. Geben Sie den Namen des Accounts ein, für den Sie die Berechtigungen erhalten haben, und bestätigen Sie die Änderung. Der neue Account erscheint dann links im Menü von Outlook und Sie können die Inhalte einsehen.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step5.png" loading="lazy" />
+
+#### 2.2 „Senden als“-Berechtigung nutzen
+
+- **Über die Outlook Web App (OWA)**
+
+Gehen Sie auf[Webmail](https://www.ovhcloud.com/de/mail/) und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button <code className="action">+ Neu</code>, um eine neue Nachricht zu verfassen.
+
+Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf <code className="action">Absender anzeigen</code>. Klicken Sie danach auf den Button <code className="action">Von</code> und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein.
+
+Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step6.png" loading="lazy" />
+
+- **Über Outlook für Windows**
+
+:::warning
+Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](https://www.ovhcloud.com/de/emails/hosted-exchange/) verfügbar.
+
+:::
+
+
+Öffnen Sie Outlook und beginnen Sie eine neue Nachricht. Vergewissern Sie sich, dass der Button <code className="action">Von</code> im geöffneten Fenster angezeigt wird. Ist das nicht der Fall, gehen Sie oben im Menü auf den Tab <code className="action">Optionen</code> und klicken Sie dann bei <code className="action">Felder anzeigen</code> auf <code className="action">Von</code>.
+
+Klicken Sie danach auf den Button <code className="action">Von</code> und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, klicken Sie auf <code className="action">Weitere E-Mail-Adresse</code>, geben Sie die gewünschte Adresse ein und bestätigen Sie diese.
+
+Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step7.png" loading="lazy" />
+
+#### 2.3 „Senden im Auftrag von“-Berechtigung nutzen
+
+- **Über die Outlook Web App (OWA)**
+
+Gehen Sie auf[Webmail](https://www.ovhcloud.com/de/mail/) und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button <code className="action">+ Neu</code>, um eine neue Nachricht zu verfassen.
+
+Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf <code className="action">Absender anzeigen</code>. Klicken Sie danach auf den Button <code className="action">Von</code> und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein.
+
+Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step6.png" loading="lazy" />
+
+- **Über Outlook für Windows**
+
+:::warning
+Die Verwendung dieser Funktion **über Outlook** ist nur für einen [Exchange-Account](https://www.ovhcloud.com/de/emails/hosted-exchange/) verfügbar.
+
+:::
+
+
+Öffnen Sie Outlook und beginnen Sie eine neue Nachricht. Vergewissern Sie sich, dass der Button <code className="action">Von</code> im geöffneten Fenster angezeigt wird. Ist das nicht der Fall, gehen Sie oben im Menü auf den Tab <code className="action">Optionen</code> und klicken Sie dann bei <code className="action">Felder anzeigen</code> auf <code className="action">Von</code>.
+
+Klicken Sie danach auf den Button <code className="action">Von</code> und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, klicken Sie auf <code className="action">Weitere E-Mail-Adresse</code>, geben Sie die gewünschte Adresse ein und bestätigen Sie diese.
+
+Sie können nun die Mail verfassen und senden.
+
+<img className="thumbnail" alt="Delegation" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/delegation-step7.png" loading="lazy" />
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+[E-Mail-Accounts über Outlook Web App (OWA) verwenden](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Ordner in OWA freigeben](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-directory-sharing/)
+
+[CKontaktgruppen erstellen](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/)
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

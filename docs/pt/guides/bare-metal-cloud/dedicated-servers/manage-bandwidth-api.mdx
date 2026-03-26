@@ -1,0 +1,85 @@
+---
+title: Upgrade and downgrade Bandwidth via the OVHcloud API
+description: Find out how to upgrade and downgrade the bandwidth on a Dedicated Server via the OVHcloud API
+lastUpdated: 2025-01-20
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+Each of our dedicated servers includes a minimum public bandwidth of 500Mbps. If you have specific download or mass distribution requirements, such as software updates, you can upgrade the bandwidth. And if you need less bandwidth, you can also downgrade to a lower bandwidth.
+
+**In this guide, we explain how you can easily upgrade or downgrade the bandwidth of a dedicated server.**
+
+:::warning
+Please note that this option is available on most dedicated servers, but not all. Although our servers come with a minimum public bandwidth of 500Mbps, the public bandwidth upgrade option is not available on all dedicated server ranges.
+
+:::
+
+
+## Requirements
+
+- A [dedicated server](https://www.ovhcloud.com/pt/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud API](/guides/manage-and-operate/api/first-steps/)
+
+## Instructions
+
+### Find available services
+
+Use the following API call to list all the available services for upgrade (or downgrade) and verify that the service you wish to upgrade/downgrade is listed:
+
+<Api version="v1" section="/order" method="GET" route={"/order/upgrade/baremetalPublicBandwidth"} />
+
+
+<img className="thumbnail" alt="bandwidth" src="/images/bare-metal-cloud/dedicated-servers/manage-bandwidth-api/bandwidth_01.png" loading="lazy" />
+
+### Find the plan code
+
+List available offers and find the **planCode** of your choice with the API call below:
+
+<Api version="v1" section="/order" method="GET" route={"/order/upgrade/baremetalPublicBandwidth/\{serviceName\}"} />
+
+Enter the variables:
+
+- serviceName: the name of your dedicated server, for example `ns1234567.ip-203.0.113.eu`
+
+<img className="thumbnail" alt="bandwidth" src="/images/bare-metal-cloud/dedicated-servers/manage-bandwidth-api/bandwidth_02.png" loading="lazy" />
+
+The `RESPONSE` field should display information similar to the following:
+
+<img className="thumbnail" alt="bandwidth" src="/images/bare-metal-cloud/dedicated-servers/manage-bandwidth-api/bandwidth_02_1.png" loading="lazy" />
+
+### Review your order
+
+Use the following API call for a preview of your order, including pricing:
+
+<Api version="v1" section="/order" method="GET" route={"/order/upgrade/baremetalPublicBandwidth/\{serviceName\}/\{planCode\}"} />
+
+Enter the variables:
+
+- planCode: the reference retrieved in the previous step
+- serviceName: the name of your dedicated server
+- quantity: 1
+
+<img className="thumbnail" alt="bandwidth" src="/images/bare-metal-cloud/dedicated-servers/manage-bandwidth-api/bandwidth_03.png" loading="lazy" />
+
+The `RESPONSE` field should display information similar to the following:
+
+<img className="thumbnail" alt="bandwidth" src="/images/bare-metal-cloud/dedicated-servers/manage-bandwidth-api/bandwidth_03_1.png" loading="lazy" />
+
+### Submit your order
+
+To officially submit the order, use the following API call:
+
+<Api version="v1" section="/order" method="POST" route={"/order/upgrade/baremetalPublicBandwidth/\{serviceName\}/\{planCode\}"} />
+
+
+<img className="thumbnail" alt="bandwidth" src="/images/bare-metal-cloud/dedicated-servers/manage-bandwidth-api/bandwidth_4.png" loading="lazy" />
+
+The order will be processed once you have clicked <code className="action">Execute</code>. The amount displayed corresponds to your option’s first billing month, calculated on a pro rata basis for the current month.
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

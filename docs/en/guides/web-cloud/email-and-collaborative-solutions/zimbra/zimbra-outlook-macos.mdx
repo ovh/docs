@@ -1,0 +1,131 @@
+---
+title: Zimbra Pro - Configuring your email account via EWS in Outlook for Mac
+description: Find out how to configure your Zimbra Pro email address in Outlook for macOS via the EWS protocol
+lastUpdated: 2025-07-03
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+
+## Objective
+
+:::info
+This guide is aimed at customers with the email solution [Zimbra Pro](https://www.ovhcloud.com/en-gb/emails/zimbra-emails/). This service will be available in beta version from July 2025.
+
+:::
+
+
+Zimbra Pro accounts can be configured on a Mac using the EWS protocol (**E**xchange **W**eb **S**ervices). This allows you to configure all the collaborative features of your email address at once. The application [Outlook on macOS](https://apps.apple.com/app/microsoft-outlook/id985367838?mt=12) is available on the Apple App Store.
+
+**Find out how to configure your Zimbra Pro email address in Outlook for macOS via the EWS protocol.**
+
+:::warning
+OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+
+This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
+
+:::
+
+
+## Requirements
+
+- A [Zimbra Pro](https://www.ovhcloud.com/en-gb/emails/zimbra-emails/) account
+- [Outlook on macOS](https://apps.apple.com/app/microsoft-outlook/id985367838?mt=12) installed on your device
+- The login details for the email account you would like to configure
+
+## Instructions
+
+### Add the <a name="add-account"></a> account
+
+- **When you start the Outlook application for the first time**: A configuration wizard will appear, prompting you to enter the first email address you would like to add.
+
+- **If an account is already set up on the Outlook application**:  
+1. Click <code className="action">Tools</code> in the menu bar at the top of your screen.
+2. Click <code className="action">Accounts</code>.
+3. In the “Accounts” window that pops up, click on <code className="action">+</code> in the bottom left-hand corner, then click on <code className="action">New account</code>.
+
+<img className="thumbnail" alt="mail macOS" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-macos/outlook-macos-add-step00.png" loading="lazy" />
+
+Follow the installation steps by clicking on the **3** tabs below:
+
+<Tabs>
+  <Tab label="Step 1">
+    Enter your email address under “Email address”, then click <code className="action">Continue</code>.
+    
+    <img className="thumbnail" alt="mail macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-macos/outlook-macos-add-step01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Two scenarios are possible:
+    
+    - **If the “IMAP/POP” window appears**: Click <code className="action">This is not a POP/IMAP account</code>, then choose <code className="action">Exchange</code> from the “Choose Provider” window.
+    - **If you go directly to “Choose the provider”**: Choose <code className="action">Exchange</code>.
+    
+    <img className="thumbnail" alt="mail macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-macos/outlook-macos-add-step02.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    Check and complete the following information:
+    
+    - **Method**: Choose `User name and password`.
+    - **Email address**: Enter your full email address.
+    - **DOMAIN\User name or email address**: Enter your full email address.
+    - **Password**: Enter the password associated with your email address.
+    - **Server**: Enter "zimbra1.mail.ovh.net".
+    
+    To finalize the configuration, tap <code className="action">Add an account</code> and select the features you want to use on your Mac.
+    
+    <img className="thumbnail" alt="mail macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-macos/outlook-macos-add-step03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::warning
+If you encounter a sending or receiving error after following the configuration steps above, please refer to the “[Modify existing settings](#modify-settings)” section of this guide.
+
+:::
+
+
+
+### Use the email address
+
+Once you have configured your email address, you can start using it! You can now send and receive messages, and manage your calendars and tasks.
+
+OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail/) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/).
+
+### How do I modify existing settings? <a name="modify-settings"></a>
+
+To modify the settings of an email account that has already been configured, follow the instructions below:
+
+1. Click <code className="action">Tools</code> in the menu bar at the top of your screen.
+1. Click <code className="action">Accounts</code>.
+1. Select your account in the left column.
+1. Click <code className="action">Advanced...</code> in the bottom right.
+
+<img className="thumbnail" alt="outlook macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-macos/outlook-macos-modify-01.png" loading="lazy" />
+
+Find the settings in **Step 3** of the [Add account](#add-account) chapter.
+
+### How do I delete an email account? <a name="delete-account"></a>
+
+1. Click <code className="action">Tools</code> in the menu bar at the top of your screen.
+1. Click <code className="action">Accounts</code>.
+1. Select your account in the left column.
+1. Click <code className="action">-</code> in the bottom left-hand corner
+
+<img className="thumbnail" alt="outlook macos" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-macos/outlook-macos-delete-01.png" loading="lazy" />
+
+## Go further <a name="go-further"></a>
+
+:::info
+For more information on configuring an email address from the Mail app on macOS, see the [Apple Help Center](https://support.apple.com/en-gb/102619).
+
+:::
+
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

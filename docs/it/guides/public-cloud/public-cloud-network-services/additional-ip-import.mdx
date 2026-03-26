@@ -1,0 +1,91 @@
+---
+title: Importa un Additional IP
+description: Come importare un Additional IP nel tuo progetto Public Cloud
+lastUpdated: 2025-04-28
+---
+
+:::info
+Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). Questo non ha alcun impatto sulla sua funzionalità.
+
+:::
+
+
+## Obiettivo
+
+Per configurare un indirizzo Additional IP sulle tue istanze Public Cloud, ad esempio, se:
+
+- Ospiti più siti sulla tua istanza.  
+- Ospiti progetti internazionali.
+- Vuoi trasferire la tua attività da un server dedicato a un’istanza Public Cloud. 
+
+È possibile importare un indirizzo Additional IP associato a un altro servizio OVHcloud.
+
+**Questa guida ti mostra come importare un Additional IP nel tuo progetto Public Cloud OVHcloud.**
+
+## Prerequisiti
+
+- Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
+- Un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Percorso di navigazione:** <code className="action">Public Cloud</code> > Seleziona il tuo project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+:::warning
+Questa funzionalità al momento non è disponibile per le istanze Metal.
+
+:::
+
+
+## Procedura
+
+Nel menu a sinistra, apri <code className="action">IP pubblici</code> in **Network**.
+
+Apri la scheda <code className="action">Additional IP</code> e clicca sul pulsante <code className="action">Azioni</code>. Seleziona <code className="action">Importa un Additional IP</code> per visualizzare tutti gli indirizzi IP che possono essere importati nel tuo progetto Public Cloud.
+
+<img className="thumbnail" alt="Sezione IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_01.png" loading="lazy" />
+
+Se non disponi ancora di un Additional IP sul tuo progetto Public Cloud, l'opzione di importazione di un Additional IP verrà visualizzata sulla home page.
+
+Clicca sui tre puntini <code className="action">...</code> in corrispondenza dell'indirizzo IP che vuoi importare e clicca su <code className="action">Importa questo Additional IP</code>.
+
+<img className="thumbnail" alt="Importazione Additional IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_02.png" loading="lazy" />
+
+Clicca su <code className="action">Importa</code>.
+
+<img className="thumbnail" alt="Importazione conferm" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_03.png" loading="lazy" />
+
+Attendi qualche minuto fino al completamento dell'importazione. Apri la scheda <code className="action">Additional IP</code> per ricercare l'indirizzo aggiuntivo IP importato. Aggiorna la pagina se necessario.
+
+Clicca sui tre puntini <code className="action">...</code> a destra e seleziona <code className="action">Modifica l'istanza associata</code>.
+
+<img className="thumbnail" alt="Importazione Additional IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_04.png" loading="lazy" />
+
+Per scegliere l'istanza a cui associare il tuo indirizzo IP, visualizzi una finestra contestuale.
+
+<img className="thumbnail" alt="Importazione Additional IP" src="/images/public-cloud/public-cloud-network-services/additional-ip-import/import22_05.png" loading="lazy" />
+
+Clicca su <code className="action">Conferma</code>. La pagina visualizzerà quindi un messaggio di modifica.
+
+:::warning
+Un Additional IP non può essere spostato tra diverse zone. Ad esempio, un IP localizzato nel datacenter di SBG può essere spostato verso GRA o RBX ma non verso BHS.
+
+:::
+
+
+Il tuo indirizzo aggiuntivo IP sarà associato alla tua istanza.
+
+Il prossimo step consiste nel configurare l'IP nel tuo sistema operativo. Consulta [la nostra guida dedicata a questa configurazione](/guides/public-cloud/public-cloud-network-services/getting-started-04-configure-additional-ip-to-instance/).
+
+## Per saperne di più 
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

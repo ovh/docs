@@ -1,0 +1,163 @@
+---
+title: Utilizar Hyper-V con direcciones Additional IP en un vRack
+description: Cómo configurar una máquina virtual con Additional IP e Hyper-V en un vRack
+lastUpdated: 2025-07-22
+---
+
+:::info
+Este artículo explica cómo configurar direcciones Additional IPv4 adicionales en un vRack. También puede configurar direcciones Additional IPv6 en el vRack utilizando [esta guía](/guides/bare-metal-cloud/dedicated-servers/configure-an-ipv6-in-a-vrack/).
+
+:::
+
+
+## Objetivo
+
+Siga el proceso de instalación de Hyper-V, asocie un switch virtual y configure una máquina virtual para funcionar con las Additional IP en un vRack.
+
+**Esta guía explica cómo configurar una máquina virtual con Additional IP e Hyper-V en un vRack.**
+
+## Requisitos
+
+- Un servidor dedicado (compatible con el [vRack](https://www.ovhcloud.com/es-es/network/vrack/)) en el que está instalado Windows Server
+- Una imagen ISO para el sistema operativo que se instalará en su máquina virtual (CentOS 7 se utilizará como ejemplo en esta guía)
+- Un vRack incluido en su cuenta de OVHcloud
+- Un bloque IP de 4 o más direcciones IP
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+:::warning
+Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+
+Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+
+:::
+
+
+## Procedimiento
+
+Esta guía asume que ya tiene Windows Server, que está conectado a través del escritorio remoto y que ya ha asignado su servidor dedicado y su bloque IP a un vRack. Para más información sobre estos pasos, consulte los pasos 1 a 4 de nuestra guía: [Configurar varios servidores dedicados en el vRack](/guides/bare-metal-cloud/dedicated-servers/vrack-configuring-on-dedicated-server/).
+
+### Instalación de Hyper-V
+
+El primer paso es instalar Hyper-V.
+
+En el gestor de servidores, haga clic en <code className="action">Add roles and feature</code>
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features.png" loading="lazy" />
+
+En el Asistente, haga clic en <code className="action">Next</code> para ir a la página siguiente.
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features-2.png" loading="lazy" />
+
+Compruebe que la opción "Role-Based or feature-based instalation" está seleccionada y haga clic en <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features-3.png" loading="lazy" />
+
+Compruebe que la opción "Select a server from the server pool" esté seleccionada, así como el servidor en el que esté trabajando en la lista inferior. Haga clic en <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features-4.png" loading="lazy" />
+
+En la lista de roles, marque "Hyper-V" y haga clic en <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features-5.png" loading="lazy" />
+
+En la página siguiente ("Funcionalidades"), haga clic en <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features-9.png" loading="lazy" />
+
+Identifique la conexión de red del servidor que quiera utilizar para el switch virtual.
+
+Para identificarlo, abra un Command Prompt o PowerShell y ejecute el comando `ipconfig /all`.
+
+En nuestro ejemplo, `Ethernet 2` es la interfaz utilizada para el vRack. Sin embargo, es posible que la tarjeta de red vRack utilice una interfaz diferente. Utilice una interfaz que no posea la dirección IP principal del servidor o que utilice una dirección IP autoasignada (169.254.x.x).
+
+<img className="thumbnail" alt="check-interface" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/ipconfig.png" loading="lazy" />
+
+Una vez que disponga de esta información, acceda a la ventana <code className="action">Add Roles and Feature Wizard</code> y haga clic en <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features-6.png" loading="lazy" />
+
+Seleccione el adaptador del vRack que haya indicado en el command Prompt o PowerShell y haga clic en <code className="action">Next</code>.
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features-7.png" loading="lazy" />
+
+Las siguientes dos páginas le permiten elegir las opciones de migración y almacenamiento. Puede configurarlos como desee.
+
+Una vez que haya llegado a la página de confirmación, marque la casilla "Restart the destination server automatically if required", haga clic en <code className="action">Yes</code> y seleccione <code className="action">Install</code>.
+
+<img className="thumbnail" alt="Installing hyper-v" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/add-roles-features-8.png" loading="lazy" />
+
+Hyper-V se instalará y el servidor se reiniciará.
+
+### Crear y configurar una máquina virtual
+
+Una vez reiniciado el servidor, conéctese y abra el Hyper-V Manager.
+
+Seleccione el servidor a la izquierda, haga clic en <code className="action">Nueva</code> y seleccione "Virtual Machine".
+
+<img className="thumbnail" alt="create-vm" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/create-vm.png" loading="lazy" />
+
+En "New Virtual Machine Wizard", configure la máquina virtual como desee. Para acceder al paso Configure Networking, seleccione el switch virtual. A continuación, haga clic en <code className="action">Next</code> para continuar.
+
+<img className="thumbnail" alt="create-vm" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/create-vm-2.png" loading="lazy" />
+
+Una vez que haya accedido al apartado "Instalación Opciones", añada la imagen ISO para el sistema operativo que vaya a instalar. Haga clic en <code className="action">Next</code> para continuar.
+
+<img className="thumbnail" alt="create-vm" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/create-vm-3.png" loading="lazy" />
+
+Acceda a la página "Summary", compruebe que los parámetros del switch virtual y del sistema operativo son correctos y haga clic en <code className="action">Finish</code>.
+
+<img className="thumbnail" alt="create-vm" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/create-vm-4.png" loading="lazy" />
+
+### Instalar el SO y configurar la IP
+
+Inicie la máquina virtual. La instalación del sistema operativo debe iniciarse automáticamente. En caso contrario, se mostrará el siguiente mensaje de error:
+
+> "The unsigned image's hash is not allowed (DB)"
+
+En ese caso, debe desactivar el "Secure Boot".
+
+Apaga la máquina virtual y haga clic en <code className="action">Settings</code>.
+
+<img className="thumbnail" alt="disable-secure-boot" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/disable-secure-boot.png" loading="lazy" />
+
+Haga clic en <code className="action">Security</code>, desmarque "Enable Secure Boot" y, seguidamente, en <code className="action">Apply</code>.
+
+<img className="thumbnail" alt="disable-secure-boot" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/disable-secure-boot-2.png" loading="lazy" />
+
+Una vez finalizado, reinicie la máquina virtual.
+
+Configure el sistema operativo como desee.
+
+Para los parámetros de red, será necesario establecer una dirección IP estática.
+
+En nuestro ejemplo, el bloque IP asociado al vRack es 192.xxx.xxx.80/29. Aquí está la distribución del bloque:
+
+<br/>
+192.xxx.xxx.80 - Dirección de red (reservado - No utilizable)<br/>
+192.xxx.xxx.81 - Primera dirección IP utilizable<br/>
+192.xxx.xxx.82<br/>
+192.xxx.xxx.83<br/>
+192.xxx.xxx.84<br/>
+192.xxx.xxx.85 - Última dirección IP utilizable<br/>
+192.xxx.xxx.86 - Puerta de enlace por defecto (reservada - no utilizable)<br/>
+192.xxx.xxx.87 - Dirección de broadcast (Reservado - No utilizable)<br/>
+<br/>
+
+Utilizaremos 192.xxx.xxx.81 en nuestro ejemplo. La configuración debe tener el siguiente formato:
+
+<br/>
+Address: 192.168.xxx.81<br/>
+Subnet Mask: 255.255.255.248<br/>
+Gateway: 192.xxx.xxx.86<br/>
+DNS: 213.186.33.99 (Puede poner otro DNS si lo desea)<br/>
+<br/>
+
+Una vez instalado el sistema operativo, Ya debería estar conectado.
+
+En el ejemplo que se muestra a continuación se muestra cómo debe aparecer el archivo `ifcfg-eth0`.
+
+<img className="thumbnail" alt="configured" src="/images/bare-metal-cloud/dedicated-servers/ipfo-vrack-hyperv/configured.png" loading="lazy" />
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

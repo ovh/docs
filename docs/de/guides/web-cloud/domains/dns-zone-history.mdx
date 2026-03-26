@@ -1,0 +1,239 @@
+---
+title: Versionsverlauf einer DNS-Zone verwalten
+description: Erfahren Sie, wie Sie Backups Ihrer DNS-Zone einsehen, vergleichen, herunterladen und wiederherstellen
+lastUpdated: 2026-03-27
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+Die **D**omain **N**ame **S**ystem (**DNS**)-Zone eines Domainnamens ist dessen Konfigurationsdatei. Sie besteht aus technischen Informationen, den sogenannten *DNS-Einträgen*. Die DNS-Zone funktioniert gewissermaßen wie eine Vermittlungszentrale.
+
+Weitere Informationen finden Sie in den folgenden Anleitungen:
+
+- [Alle Informationen zu DNS-Servern](/guides/web-cloud/domains/dns-server-general-information/)
+- [Alle Informationen zu DNS-Zonen](/guides/web-cloud/domains/dns-zone-general-information/)
+- [Alle Informationen zu DNS-Einträgen](/guides/web-cloud/domains/dns-zone-records/)
+
+Es kann aus verschiedenen Gründen erforderlich sein, eine ältere DNS-Konfiguration auf Ihren Domainnamen anzuwenden.
+
+Die DNS-Verwaltung wird durch den Versionsverlauf Ihrer DNS-Zonen vereinfacht.
+
+**Erfahren Sie, wie Sie Backups Ihrer DNS-Zone einsehen, vergleichen, herunterladen und wiederherstellen.**
+
+## Voraussetzungen
+
+- Sie verfügen über Zugriff auf die Verwaltung des betreffenden Domainnamens.
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">DNS-Zone</code> > Wählen Sie Ihren Domainnamen aus
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+## In der praktischen Anwendung
+
+:::info
+Die Backups Ihrer DNS-Zone unterliegen folgenden Einschränkungen:
+
+- Es werden maximal 200 Backups für eine DNS-Zone aufbewahrt.
+- Sobald ein Backup älter als 31 Tage ist, wird es automatisch gelöscht, mit Ausnahme der **5 jüngsten Backups**.
+
+:::
+
+
+**Klicken Sie auf die gewünschte Aktion, um den Inhalt anzuzeigen.**
+
+<details>
+
+<summary>Eine DNS-Zone anzeigen</summary>
+
+
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone), und wählen Sie den betreffenden Domainnamen aus.
+    
+    <img className="thumbnail" alt="DNS-Zonen" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Die angezeigte Tabelle stellt die DNS-Zone Ihres Domainnamens dar. Sie enthält die Liste der darin enthaltenen DNS-Einträge. Auf der rechten Seite der Tabelle können Sie über mehrere Buttons Aktionen in Ihrer DNS-Zone durchführen.
+    
+    <img className="thumbnail" alt="DNS-Verlaufstool" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Den Verlauf meiner DNS-Zone einsehen</code>.
+  </Tab>
+  <Tab label="Schritt 3">
+    Auf der neuen Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DNS-Zone-Backups angezeigt, von der jüngsten bis zur ältesten Version. Am Anfang dieser Tabelle befindet sich die aktuelle Version Ihrer DNS-Zone.
+    
+    Um die gewünschte DNS-Zone anzuzeigen, identifizieren Sie die entsprechende Zeile in der Tabelle und klicken Sie auf das Symbol in der Spalte <code className="action">Anzeigen</code>.
+    
+    <img className="thumbnail" alt="Eine DNS-Zone anzeigen" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/visualize-dns-eyes.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Die Daten der betreffenden DNS-Zone werden angezeigt.
+    
+    <img className="thumbnail" alt="Details einer DNS-Zone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/details-dns-zone.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Schließen</code>, um zur Hauptseite "Versionsverlauf der DNS-Zone" zurückzukehren.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Eine DNS-Zone herunterladen</summary>
+
+
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone), und wählen Sie den betreffenden Domainnamen aus.
+    
+    <img className="thumbnail" alt="DNS-Zonen" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Die angezeigte Tabelle stellt die DNS-Zone Ihres Domainnamens dar. Sie enthält die Liste der darin enthaltenen DNS-Einträge. Auf der rechten Seite der Tabelle können Sie über mehrere Buttons Aktionen in Ihrer DNS-Zone durchführen.
+    
+    <img className="thumbnail" alt="DNS-Verlaufstool" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Den Verlauf meiner DNS-Zone einsehen</code>.
+  </Tab>
+  <Tab label="Schritt 3">
+    Auf der neuen Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DNS-Zone-Backups angezeigt, von der jüngsten bis zur ältesten Version. Am Anfang dieser Tabelle befindet sich die aktuelle Version Ihrer DNS-Zone.
+    
+    Um die gewünschte DNS-Zone herunterzuladen, identifizieren Sie die entsprechende Zeile in der Tabelle und klicken Sie auf das Symbol in der Spalte <code className="action">Herunterladen</code>.
+    
+    <img className="thumbnail" alt="Eine DNS-Zone herunterladen" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/download-dns-zone.png" loading="lazy" />
+
+Die DNS-Zone wird im .txt-Format heruntergeladen.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Eine DNS-Zone wiederherstellen</summary>
+
+
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone), und wählen Sie den betreffenden Domainnamen aus.
+    
+    <img className="thumbnail" alt="DNS-Zonen" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Die angezeigte Tabelle stellt die DNS-Zone Ihres Domainnamens dar. Sie enthält die Liste der darin enthaltenen DNS-Einträge. Auf der rechten Seite der Tabelle können Sie über mehrere Buttons Aktionen in Ihrer DNS-Zone durchführen.
+    
+    <img className="thumbnail" alt="DNS-Verlaufstool" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Den Verlauf meiner DNS-Zone einsehen</code>.
+  </Tab>
+  <Tab label="Schritt 3">
+    Auf der neuen Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DNS-Zone-Backups angezeigt, von der jüngsten bis zur ältesten Version. Am Anfang dieser Tabelle befindet sich die aktuelle Version Ihrer DNS-Zone.
+    
+    Wenn Sie Ihre aktuelle DNS-Zone durch eine ältere ersetzen möchten, genügt es, diese wiederherzustellen. Identifizieren Sie in der Tabelle mit dem Versionsverlauf Ihrer DNS-Zonen die Zeile für die DNS-Zone, die Sie wiederherstellen möchten (überprüfen Sie das Datum links neben der Zeile), und klicken Sie auf das Symbol in der Spalte <code className="action">Wiederherstellen</code>.
+    
+    <img className="thumbnail" alt="Eine DNS-Zone wiederherstellen" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/restore-dns-zone.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Das folgende Fenster wird angezeigt.
+    
+    <img className="thumbnail" alt="Bestätigung Wiederherstellung DNS-Zone" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/confirmation-restore-dns-zone.png" loading="lazy" />
+    
+    Überprüfen Sie, ob das in der Nachricht angezeigte Datum der DNS-Zone entspricht, die Sie wiederherstellen möchten. Wie das gelbe Banner anzeigt, wird die aktuelle DNS-Zone (ganz oben in der Liste des Versionsverlaufs der DNS-Zonen) gelöscht und durch die DNS-Zone ersetzt, die Sie wiederherstellen möchten.
+    
+    Klicken Sie auf <code className="action">Wiederherstellen</code>, um die Wiederherstellung zu bestätigen, oder auf <code className="action">Abbrechen</code>.
+  </Tab>
+</Tabs>
+
+
+:::info
+Das Ändern oder Wiederherstellen einer DNS-Zone führt zu einer Propagationsverzögerung von **4** bis **24** Stunden, bis die Änderung im DNS-Netzwerk vollständig berücksichtigt wird.
+
+:::
+
+
+</details>
+
+
+<details>
+
+<summary>Zwei DNS-Zonen vergleichen</summary>
+
+
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+<Tabs>
+  <Tab label="Schritt 1">
+    Gehen Sie auf die Seite [DNS-Zone](https://manager.eu.ovhcloud.com/#/web/zone), und wählen Sie den betreffenden Domainnamen aus.
+    
+    <img className="thumbnail" alt="DNS-Zonen" src="/images/assets/screens/control-panel/product-selection/web-cloud/dns-zones.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 2">
+    Die angezeigte Tabelle stellt die DNS-Zone Ihres Domainnamens dar. Sie enthält die Liste der darin enthaltenen DNS-Einträge. Auf der rechten Seite der Tabelle können Sie über mehrere Buttons Aktionen in Ihrer DNS-Zone durchführen.
+    
+    <img className="thumbnail" alt="DNS-Verlaufstool" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png" loading="lazy" />
+
+Klicken Sie auf <code className="action">Den Verlauf meiner DNS-Zone einsehen</code>.
+  </Tab>
+  <Tab label="Schritt 3">
+    Auf der neuen Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DNS-Zone-Backups angezeigt, von der jüngsten bis zur ältesten Version. Am Anfang dieser Tabelle befindet sich die aktuelle Version Ihrer DNS-Zone.
+    
+    Sie können den Inhalt zweier DNS-Zonen vergleichen. Identifizieren Sie in der Tabelle mit dem Versionsverlauf Ihrer DNS-Zone die beiden Zeilen, die den beiden DNS-Zonen entsprechen, die Sie vergleichen möchten (überprüfen Sie das Datum links neben jeder Zeile), und wählen Sie diese aus. Um diese beiden DNS-Zone-Versionen zu vergleichen, klicken Sie oben links auf <code className="action">Versionen vergleichen</code>.
+    
+    <img className="thumbnail" alt="Zwei DNS-Zonen vergleichen" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/compare-two-dns-zone.png" loading="lazy" />
+  </Tab>
+  <Tab label="Schritt 4">
+    Eine neue Seite wird angezeigt, auf der der Inhalt beider DNS-Zonen dargestellt wird. Über jeder Version wird das entsprechende Datum angezeigt. Standardmäßig befindet sich die jüngste DNS-Zone-Version links und die älteste rechts. Eine Farbcodierung hilft Ihnen, Unterschiede im Inhalt zu erkennen.
+    
+    Auf der linken Seite wurde der rot markierte Inhalt in der neueren Version geändert oder gelöscht.
+    
+    Auf der rechten Seite wurde der grün markierte Inhalt im Vergleich zur älteren Version geändert oder hinzugefügt.
+    
+    Sie können auch die Datumsangaben der Versionen, die Sie vergleichen möchten, mithilfe der beiden Dropdown-Listen aktualisieren.
+    
+    <img className="thumbnail" alt="Details zum Vergleich zweier DNS-Zonen" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+## Weiterführende Informationen
+
+[Alle Informationen zu DNS-Servern](/guides/web-cloud/domains/dns-server-general-information/)
+
+[Alle Informationen zu DNS-Zonen](/guides/web-cloud/domains/dns-zone-general-information/)
+
+[Alle Informationen zu DNS-Einträgen](/guides/web-cloud/domains/dns-zone-records/)
+
+[In das OVHcloud Kundencenter einloggen](/guides/account-and-service-management/account-information/ovhcloud-account-login/)
+
+[DNS-Zone bei OVHcloud erstellen](/guides/web-cloud/domains/dns-zone-create/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

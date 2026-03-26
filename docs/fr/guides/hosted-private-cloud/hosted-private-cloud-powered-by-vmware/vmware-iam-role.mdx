@@ -1,0 +1,123 @@
+---
+title: IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM
+description: Découvrez comment créer un rôle vSphere IAM pour Hosted Private Cloud - VMware on OVHcloud
+lastUpdated: 2024-05-23
+---
+
+import Api from '@components/Api';
+
+
+:::info
+La fonctionnalité IAM est actuellement en phase bêta. Ce guide peut donc être mis à jour à l'avenir avec les avancées de nos équipes en charge de ce produit.
+
+:::
+
+
+## Objectif
+
+**Dans ce guide, nous allons vous expliquer comment créer un role IAM dans Hosted Private Cloud - VMware on OVHcloud**.
+
+## Prérequis
+
+- Disposer d'un [compte OVHcloud](/guides/account-and-service-management/account-information/ovhcloud-account-creation/)
+- Avoir un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware).
+- Avoir activé IAM pour votre service Hosted Private Cloud - VMware on OVHcloud. Suivez les étapes du guide « [IAM pour VMware on OVHcloud - Comment activer IAM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-activation/) »
+
+## En pratique
+
+Par défaut, vous disposez de 2 rôles IAM vSphere. La création d'un rôle supplémentaire est donc facultative.
+
+Nous allons vous expliquer comment créer un rôle supplémentaire.
+
+### Créer un rôle IAM via l'espace client OVHcloud
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur l'onglet <code className="action">Hosted Private Cloud</code>.
+
+Cliquez sur la rubrique <code className="action">VMware</code>, sélectionnez votre infrastructure puis rendez-vous dans l'onglet <code className="action">Utilisateurs</code>.
+
+Cliquez sur <code className="action">Créer un rôle IAM</code>.
+
+<img className="thumbnail" alt="IAM role add" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role/iam_role_8.png" loading="lazy" />
+
+Dans la fenêtre qui s'affiche, définissez le nom de votre rôle puis cliquez sur <code className="action">Confirmer</code>.
+
+:::info
+Les rôles IAM sont automatiquement préfixés par `iam-`.
+
+:::
+
+
+<img className="thumbnail" alt="IAM role add" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role/iam_role_9.png" loading="lazy" />
+
+Vous pouvez ensuite éditer les droits du groupe de la même manière qu'avec un utilisateur local vSphere.
+
+#### Créer un rôle IAM via l'API OVHcloud
+
+:::tip[Success]
+Consultez le guide [Premiers pas avec les API OVHcloud](/guides/manage-and-operate/api/first-steps/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+
+:::
+
+
+
+Exécutez l'appel API suivant :
+
+<Api version="v1" section="/dedicatedCloud" method="POST" route={"/dedicatedCloud/\{serviceName\}/iam/addRole"} />
+
+
+:::warning
+Veillez à remplacer le `serviceName` par la référence de votre service PCC, sous la forme `pcc-XXX-XXX-XXX-XXX`.
+
+:::
+
+
+Retour de l'API :
+
+```shell
+{
+  "userId": null,
+  "maintenanceDateTo": null,
+  "parentTaskId": null,
+  "datacenterId": null,
+  "network": null,
+  "createdBy": null,
+  "state": "todo",
+  "hostId": null,
+  "endDate": null,
+  "networkAccessId": null,
+  "maintenanceDateFrom": null,
+  "name": "addUser",
+  "vlanId": null,
+  "description": null,
+  "filerId": null,
+  "executionDate": "2024-05-15T14:21:17+02:00",
+  "createdFrom": null,
+  "taskId": 56446627,
+  "orderId": null,
+  "type": "generic",
+  "progress": 0,
+  "lastModificationDate": "2024-05-15T14:21:17+02:00"
+}
+```
+
+:::info
+Les rôles IAM sont automatiquement préfixés par `iam-`.
+
+:::
+
+
+## Aller plus loin
+
+Vous pouvez maintenant suivre les étapes du guide « [IAM pour VMware on OVHcloud - Comment associer un rôle à une politique IAM globale](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role-policy/) ».
+
+**IAM pour VMware on OVHcloud - Index des guides :**
+
+- Guide 1 : [IAM pour VMware on OVHcloud - Présentation et FAQ](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-getting-started/)
+- Guide 2 : [IAM pour VMware on OVHcloud - Comment activer IAM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-activation/)
+- Guide 3 : IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM
+- Guide 4 : [IAM pour VMware on OVHcloud - Comment associer un rôle vSphere à une politique IAM](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-role-policy/)
+- Guide 5 : [IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vmware-iam-user-policy/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

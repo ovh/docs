@@ -1,0 +1,455 @@
+---
+title: Reindirizzare un dominio gestito da OVHcloud
+description: Scopri i diversi tipi di reindirizzamento e come crearne uno per un dominio gestito da OVHcloud
+lastUpdated: 2026-03-27
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Obiettivo
+
+Il reindirizzamento di un dominio consiste nel reindirizzarlo verso una nuova destinazione. Esistono diversi tipi di reindirizzamento, ognuno dei quali risponde a un'esigenza specifica.
+
+**Scopri le diverse modalità per reindirizzare il tuo dominio**
+
+## Prerequisiti
+
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
+- Essere connessi al proprio hosting Web (per un reindirizzamento tramite file [.htaccess](#htaccess_rewrite)).
+
+{/* CP-NAV-START:web-domains */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](https://manager.eu.ovhcloud.com/#/web-domains/domain)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Domini</code> > Seleziona il tuo nome di dominio
+
+---
+{/* CP-NAV-END:web-domains */}
+
+## Procedura
+
+### Comprendere il reindirizzamento di un dominio
+
+Questa funzionalità permette di reindirizzare un dominio/sottodominio verso:
+
+- un altro dominio/sottodominio già esistente:
+    - **Esempio**: `domain.tld`
+- un URL (Uniform Resource Locator) di un sito Internet:
+    - **Esempi**: `http://www.domain.tld/welcome/` o `https://www.domain.tld/welcome/` (se il dominio di destinazione dispone di un certificato SSL compatibile).
+
+Queste operazioni possono essere eseguite in diversi modi:
+
+- **Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it)**, dove un assistente di configurazione permette di impostare il reindirizzamento.
+- **Tramite un metodo che richiede programmazione**. Dovrai creare il reindirizzamento direttamente in un file (generalmente un [.htaccess](#htaccess_rewrite)).
+
+:::warning
+L'attivazione di un reindirizzamento può avere conseguenze sul posizionamento SEO del sito Internet.
+Presta attenzione alle operazioni che stai per effettuare o contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) nel posizionamento SEO, se necessario.
+
+Attenzione: un reindirizzamento creato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) non permette di reindirizzare un URL in `https://` verso un altro dominio o un altro URL.
+Per creare questo tipo di reindirizzamento, è necessario utilizzare [una riscrittura URL](/guides/web-cloud/web-hosting/htaccess-url-rewriting-using-mod-rewrite/) tramite un file ".htaccess", ad esempio.
+
+:::
+
+
+### Reindirizzare un dominio dallo Spazio Cliente
+
+Oltre ai reindirizzamenti di "puntamento" verso i record DNS A, AAAA e CNAME, sono disponibili 3 opzioni di reindirizzamento dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it).
+
+Se necessario, consulta la nostra documentazione sui [record DNS](/guides/web-cloud/domains/dns-zone-records/).
+
+:::warning
+Per utilizzare una delle 3 opzioni seguenti, la zona DNS attiva del dominio deve essere gestita nello Spazio Cliente OVHcloud. Queste opzioni di reindirizzamento modificheranno la configurazione della zona DNS per funzionare.
+
+In caso contrario, i reindirizzamenti non funzioneranno.
+
+:::
+
+
+:::info
+Indipendentemente dall'opzione di reindirizzamento scelta, la modifica richiede un tempo di propagazione da 4 a 24 ore al massimo per essere pienamente effettiva.
+
+:::
+
+
+**Clicca sull'opzione desiderata per visualizzare il contenuto.**
+
+<details>
+
+<summary>Opzione 1 - Reindirizzamento visibile permanente verso un indirizzo web</summary>
+
+
+Questa opzione permette, dopo aver inserito il dominio reindirizzato, di mostrare il dominio di destinazione nella barra degli indirizzi del browser al posto del dominio reindirizzato.
+
+- **Esempio**: se reindirizzi `domain1.tld` verso `domain2.tld`, nella barra degli indirizzi del browser apparirà `domain2.tld`.
+
+<img className="thumbnail" alt="Gif1" src="/images/assets/schemas/domains/visible-redirection.gif" loading="lazy" />
+
+> Questo reindirizzamento "standard" restituisce un codice HTTP 301.
+
+Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
+
+<Tabs>
+  <Tab label="Step 1">
+    Accedi alla pagina [Domini](https://manager.eu.ovhcloud.com/#/web-domains/domain), poi seleziona il dominio interessato.
+    
+    <img className="thumbnail" alt="Domini" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Clicca sulla scheda <code className="action">Reindirizzamento</code>: la tabella mostra i reindirizzamenti attivi per il tuo dominio. Clicca poi su <code className="action">Aggiungi un reindirizzamento</code>.
+    
+    <img className="thumbnail" alt="Presentazione del menu reindirizzamento" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    Nella finestra, il dominio da reindirizzare appare già. Compila il modulo **solo** se desideri reindirizzare un *sottodominio*.
+    
+    La casella <code className="action">Reindirizza anche</code> può essere selezionata per reindirizzare anche il sottodominio in `www` verso la stessa destinazione scelta per il dominio/sottodominio.
+    
+    <img className="thumbnail" alt="Step 1" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 4">
+    Seleziona <code className="action">Verso un indirizzo Web</code>.
+    
+    <img className="thumbnail" alt="Step 4" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 5">
+    Seleziona <code className="action">Con un reindirizzamento visibile</code> tra le due opzioni indicate.
+    
+    <img className="thumbnail" alt="Step 5" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 6">
+    Seleziona <code className="action">Permanente (301)</code> tra le due opzioni indicate, poi inserisci il dominio o l'URL di destinazione del reindirizzamento nel campo <code className="action">Indirizzo web</code> che appare.
+    
+    <img className="thumbnail" alt="Step 6" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 7">
+    In quest'ultimo step, assicurati che le informazioni mostrate siano corrette.
+    
+    <img className="thumbnail" alt="Step 7" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-permanent.png" loading="lazy" />
+
+Clicca su <code className="action">Conferma</code> per confermare la configurazione.
+    
+    :::info
+    Se appare il messaggio "*Esistono reindirizzamenti a partire dai nomi di dominio che desideri reindirizzare che entrano in conflitto con i reindirizzamenti che desideri aggiungere*", puoi selezionare la casella <code className="action">Conferma la sovrascrittura del reindirizzamento esistente</code> per forzare l'applicazione del reindirizzamento.
+    
+    Attenzione, la configurazione precedente verrà disattivata e rimossa.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Opzione 2 - Reindirizzamento visibile temporaneo verso un indirizzo web</summary>
+
+
+Come per l'opzione 1, questa opzione permette di mostrare, dopo aver inserito il dominio reindirizzato, il dominio di destinazione nella barra degli indirizzi del browser al posto del dominio reindirizzato.
+
+Tuttavia, questa opzione deve essere utilizzata in modo puntuale, ad esempio per eventi temporanei.
+
+Il posizionamento sui motori di ricerca è meno performante rispetto a un reindirizzamento **visibile permanente** di tipo 301 (codice HTTP).
+
+- **Esempio**: se reindirizzi `domain1.tld` verso `domain2.tld`, nella barra degli indirizzi del browser apparirà `domain2.tld`.
+
+<img className="thumbnail" alt="Gif1" src="/images/assets/schemas/domains/visible-redirection.gif" loading="lazy" />
+
+> Questo reindirizzamento restituisce un codice HTTP 302.
+
+Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
+
+<Tabs>
+  <Tab label="Step 1">
+    Accedi alla pagina [Domini](https://manager.eu.ovhcloud.com/#/web-domains/domain), poi seleziona il dominio interessato.
+    
+    <img className="thumbnail" alt="Domini" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Clicca sulla scheda <code className="action">Reindirizzamento</code>: la tabella mostra i reindirizzamenti attivi per il tuo dominio. Clicca poi su <code className="action">Aggiungi un reindirizzamento</code>.
+    
+    <img className="thumbnail" alt="Presentazione del menu reindirizzamento" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    Nella finestra, il dominio da reindirizzare appare già. Compila il modulo **solo** se desideri reindirizzare un *sottodominio*.
+    
+    La casella <code className="action">Reindirizza anche</code> può essere selezionata per reindirizzare anche il sottodominio in `www` verso la stessa destinazione scelta per il dominio/sottodominio.
+    
+    <img className="thumbnail" alt="Step 3" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 4">
+    Seleziona <code className="action">Verso un indirizzo Web</code>.
+    
+    <img className="thumbnail" alt="Step 4" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 5">
+    Seleziona <code className="action">Con un reindirizzamento visibile</code> tra le due opzioni indicate.
+    
+    <img className="thumbnail" alt="Step 5" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 6">
+    Seleziona <code className="action">Temporaneo (302)</code> tra le due opzioni indicate, poi inserisci il dominio o l'URL di destinazione del reindirizzamento nel campo <code className="action">Indirizzo web</code> che appare.
+    
+    <img className="thumbnail" alt="Step 6" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 7">
+    In quest'ultimo step, assicurati che le informazioni mostrate siano corrette.
+    
+    <img className="thumbnail" alt="Step 7" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-temporary.png" loading="lazy" />
+
+Clicca su <code className="action">Conferma</code> per confermare la configurazione.
+    
+    :::info
+    Se appare il messaggio "*Esistono reindirizzamenti a partire dai nomi di dominio che desideri reindirizzare che entrano in conflitto con i reindirizzamenti che desideri aggiungere*", puoi selezionare la casella <code className="action">Conferma la sovrascrittura del reindirizzamento esistente</code> per forzare l'applicazione del reindirizzamento.
+    
+    Attenzione, la configurazione precedente verrà disattivata e rimossa.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+<details>
+
+<summary>Opzione 3 - Reindirizzamento invisibile verso un indirizzo web</summary>
+
+
+Questo reindirizzamento permette, dopo aver inserito il dominio reindirizzato, di lasciarlo nella barra degli indirizzi del browser invece di sostituirlo con il dominio di destinazione.
+
+**Attenzione, questa operazione non è compatibile con tutti i siti e influisce sul posizionamento SEO del sito.**
+
+- **Esempio**: se reindirizzi `domain1.tld` verso `domain2.tld`, nella barra degli indirizzi del browser apparirà `domain1.tld`.
+
+<img className="thumbnail" alt="Gif2" src="/images/assets/schemas/domains/invisible-redirection.gif" loading="lazy" />
+
+Il reindirizzamento invisibile funziona con un tag HTML *iFrame*. Questo permette al dominio reindirizzato di integrare nella propria pagina HTML il contenuto dell'altra pagina corrispondente al dominio di destinazione.
+
+Questa incapsulazione impedisce ai visitatori del sito di visualizzare il dominio di destinazione.
+
+> Questa opzione restituisce un codice HTTP 200.
+
+:::warning
+Attenzione, le pagine incapsulate con un tag *iFrame* potrebbero non essere visualizzate sugli smartphone. Il loro contenuto generalmente non è preso in considerazione dai motori di ricerca per il posizionamento SEO e l'indicizzazione del sito.
+
+:::
+
+
+Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
+
+<Tabs>
+  <Tab label="Step 1">
+    Accedi alla pagina [Domini](https://manager.eu.ovhcloud.com/#/web-domains/domain), poi seleziona il dominio interessato.
+    
+    <img className="thumbnail" alt="Domini" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-names.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Clicca sulla scheda <code className="action">Reindirizzamento</code>: la tabella mostra i reindirizzamenti attivi per il tuo dominio. Clicca poi su <code className="action">Aggiungi un reindirizzamento</code>.
+    
+    <img className="thumbnail" alt="Presentazione del menu reindirizzamento" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 3">
+    Nella finestra, il dominio da reindirizzare appare già. Compila il modulo **solo** se desideri reindirizzare un *sottodominio*.
+    
+    La casella <code className="action">Reindirizza anche</code> può essere selezionata per reindirizzare anche il sottodominio in `www` verso la stessa destinazione scelta per il dominio/sottodominio.
+    
+    <img className="thumbnail" alt="Step 3" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 4">
+    Seleziona <code className="action">Verso un indirizzo Web</code>.
+    
+    <img className="thumbnail" alt="Step 4" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 5">
+    Seleziona <code className="action">Con un reindirizzamento invisibile</code> tra le due opzioni indicate.
+    
+    <img className="thumbnail" alt="Step 5" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-with-an-invisible-redirection.png" loading="lazy" />
+
+Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 6">
+    Seleziona <code className="action">Temporaneo (iframe)</code> tra le due opzioni indicate, poi inserisci il dominio o l'URL di destinazione del reindirizzamento nel campo <code className="action">Indirizzo web</code> che appare.
+    
+    <img className="thumbnail" alt="Step 6" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png" loading="lazy" />
+
+Tre parametri opzionali sono disponibili in questo step:
+    
+    - **Titolo**: il titolo del sito Internet. Verrà visualizzato come titolo della pagina nella scheda del browser.
+    - **Parole chiave**: possono essere utilizzate dai motori di ricerca per indicizzare parzialmente la pagina.
+    - **Descrizione**: relativa al sito Internet. Verrà utilizzata dai motori di ricerca nei loro risultati.
+    
+    Clicca su <code className="action">Avanti</code>.
+  </Tab>
+  <Tab label="Step 7">
+    In quest'ultimo step, assicurati che le informazioni mostrate siano corrette.
+    
+    <img className="thumbnail" alt="Step 7" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-iframe.png" loading="lazy" />
+
+Clicca su <code className="action">Conferma</code> per confermare la configurazione.
+    
+    :::info
+    Se appare il messaggio "*Esistono reindirizzamenti a partire dai nomi di dominio che desideri reindirizzare che entrano in conflitto con i reindirizzamenti che desideri aggiungere*", puoi selezionare la casella <code className="action">Conferma la sovrascrittura del reindirizzamento esistente</code> per forzare l'applicazione del reindirizzamento.
+    
+    Attenzione, la configurazione precedente verrà disattivata e rimossa.
+
+    :::
+
+  </Tab>
+</Tabs>
+
+
+### Reindirizzare un dominio tramite un file ".htaccess" <a name="htaccess_rewrite"></a>
+
+:::warning
+OVHcloud mette a disposizione i servizi la cui configurazione, gestione e responsabilità spettano a te. Spetta a te assicurarne il corretto funzionamento.
+
+Mettiamo a tua disposizione questa parte della guida per assisterti nelle operazioni più comuni. Tuttavia, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di difficoltà. Non saremo in grado di fornirti assistenza per i passaggi documentati qui sotto. Trovi maggiori informazioni nella sezione "[Per saperne di più](#go-further)" di questa guida.
+
+:::
+
+
+I file ".htaccess" sono file di configurazione in cui è possibile specificare dei comandi. Quando il server web (Apache) esegue il codice del sito Internet, i comandi vengono interpretati e quindi eseguiti.
+
+Tra questi comandi, è possibile creare reindirizzamenti.
+
+Manipolare un file ".htaccess" può rendere il sito inaccessibile. In caso di dubbio, contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+
+Trovi tutta la documentazione sul ".htaccess" nella sezione "[Per saperne di più](#go-further)" di questa guida.
+
+:::tip[Success]
+Ti consigliamo di **effettuare un backup del file .htaccess** prima di apportare modifiche. In questo modo potrai ripristinare la versione precedente del file in caso di errore.
+
+:::
+
+
+Di seguito trovi 4 variabili per eseguire reindirizzamenti tramite il file ".htaccess".
+
+#### Variabile 1 - "Redirect permanent"
+
+Questa variabile permette di reindirizzare un sito nella sua interezza, o solo una parte, verso un altro sito o un'altra parte di un sito. I visitatori vengono reindirizzati automaticamente all'indirizzo/URL corretto quando tentano di accedere al sito tramite l'indirizzo/URL precedente.
+
+<Tabs>
+  <Tab label="Codice da inserire nel &quot;.htaccess&quot;">
+    Per reindirizzare un sito intero:
+    
+    ```bash
+    Redirect permanent / http://domainTarget.tld/
+    ```
+    
+    Per reindirizzare una directory verso un'altra:
+    
+    ```bash
+    Redirect permanent /old_folder http://domain.tld/new_folder
+    ```
+    
+    Per reindirizzare un file verso un altro:
+    
+    ```bash
+    Redirect permanent /old_file.php http://domain.tld/new_file.php
+    ```
+  </Tab>
+  <Tab label="Codice HTTP">
+    Lo script restituisce un codice HTTP 301. I robot dei motori di ricerca vengono avvisati di aggiornare i loro link al nuovo indirizzo/URL.
+  </Tab>
+</Tabs>
+
+
+#### Variabile 2 - "Redirect gone"
+
+Questa variabile è utile per i file eliminati. Sostituisce il messaggio *404 documento non trovato* con un messaggio più esplicito del tipo *410 il documento non esiste più*. Il visitatore del sito viene informato che il file che sta tentando di raggiungere non esiste più.
+
+<Tabs>
+  <Tab label="Codice da inserire nel &quot;.htaccess&quot;">
+    ```bash
+    Redirect gone /fileDeleted.html
+    ```
+  </Tab>
+  <Tab label="Codice HTTP">
+    Lo script restituisce un codice HTTP 410.
+  </Tab>
+</Tabs>
+
+
+#### Variabile 3 - "Redirect seeother"
+
+Se si modifica l'estensione di un file, la variabile *seeother* permette di modificarne il tipo. Il visitatore che tenta di accedere al vecchio file viene reindirizzato automaticamente a quello con l'estensione corretta.
+
+<Tabs>
+  <Tab label="Codice da inserire nel &quot;.htaccess&quot;">
+    ```bash
+    Redirect seeother /example.doc http://domain.tld/example.pdf
+    ```
+  </Tab>
+  <Tab label="Codice HTTP">
+    Lo script restituisce un codice HTTP 303.
+  </Tab>
+</Tabs>
+
+
+#### Variabile 4 - "Redirect Temp"
+
+Questa variabile può essere utilizzata quando si spostano temporaneamente dei file su un altro sito. I visitatori che tentano di accedere al sito tramite l'indirizzo/URL precedente vengono automaticamente reindirizzati al nuovo indirizzo/URL temporaneo.
+
+<Tabs>
+  <Tab label="Codice da inserire nel &quot;.htaccess&quot;">
+    ```bash
+    Redirect temp / http://OtherWebsite.tld/site/
+    ```
+  </Tab>
+  <Tab label="Codice HTTP">
+    Lo script restituisce un codice HTTP 302.
+  </Tab>
+</Tabs>
+
+
+</details>
+
+
+## Per saperne di più <a name="go-further"></a>
+
+[Bloccare l'accesso al sito per determinati indirizzi IP tramite un file ".htaccess"](/guides/web-cloud/web-hosting/htaccess-how-to-block-a-specific-ip-address-from-accessing-your-website/).
+
+[Proteggere l'interfaccia di amministrazione del sito tramite il ".htaccess"](/guides/web-cloud/web-hosting/htaccess-protect-directory-by-password/).
+
+[Riscrivere gli URL grazie al "mod_rewrite"](/guides/web-cloud/web-hosting/htaccess-url-rewriting-using-mod-rewrite/).
+
+[Effettuare altre operazioni con il file ".htaccess"](/guides/web-cloud/web-hosting/htaccess-what-else-can-you-do/).
+
+[Come modificare la zona DNS](/guides/web-cloud/domains/dns-zone-records/)
+
+Per prestazioni specializzate (SEO, sviluppo, ecc.), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [community di utenti](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,297 @@
+---
+title: Améliorer la sécurité des e-mails via un enregistrement SPF
+description: "Découvrez comment configurer un enregistrement SPF sur votre nom de domaine afin d'améliorer la sécurité de vos e-mails"
+lastUpdated: 2026-02-10
+---
+
+
+
+## Objectif
+
+Le SPF (Sender Policy Framework) permet au serveur qui reçoit un e-mail de s’assurer que ce dernier a bien été envoyé depuis un serveur de confiance.
+
+<details>
+
+<summary>Pourquoi mettre en place le SPF pour vos e-mails ?</summary>
+
+
+- Il permet de prévenir les potentielles usurpations d'identité venant d'adresses e-mail utilisant votre nom de domaine (spoofing).
+- Il permet également d'authentifier les e-mails que vous envoyez.
+- Le SPF s'ajoute en tant qu'enregistrement dans la zone DNS du nom de domaine.
+
+Cette action est rendue possible grâce aux informations renseignées dans un enregistrement SPF, qui est en réalité un enregistrement TXT dans la zone DNS. On peut y retrouver :
+
+- **des adresses de serveurs et/ou plusieurs adresses IP** : ceci permettra de les identifier en tant que sources d'envoi légitimes ;
+- **un qualifieur** : il permettra de préconiser au serveur réceptionnant les e-mails une manière de réagir à un message considéré comme non légitime, c'est-à-dire provenant d'une source qui n'est pas listée.
+
+Vous devrez donc vous assurer de mettre dans l'enregistrement SPF les sources d'envoi que vous utilisez pour émettre vos e-mails avec votre nom de domaine. Ces sources peuvent être votre propre serveur e-mail, celui de votre prestataire ou l'une des solutions e-mail d'OVHcloud.
+
+**Exemple**
+
+Vous envoyez un e-mail depuis votre adresse `contact@mydomain.ovh`.
+
+Seul le serveur sortant **A** (Outgoing Mail Server **A**) est déclaré dans l'enregistrement SPF du nom de domaine `mydomain.ovh`.
+
+Lorsque le serveur de réception (Inbound Mail Server) reçoit l'e-mail, celui-ci va lire la zone DNS de votre nom de domaine `mydomain.ovh` pour inspecter l'enregistrement SPF.
+
+- Le serveur sortant **A** (Outgoing Mail Server **A**) étant bien listé dans l'enregistrement SPF, alors l'e-mail sera transmis normalement dans la boite de réception du destinataire.
+- Le serveur sortant **B** (Outgoing Mail Server **B**) n'étant pas listé dans l'enregistrement SPF, alors l'e-mail envoyé depuis ce serveur sera marqué comme suspect dans la boite mail de réception. Cela peut se traduire par une mention `[SPAM]` dans l'objet de l'e-mail, le placement dans un dossier `Courrier indésirable`, ou une suppression directe, selon les règles du serveur de réception.
+
+<img className="thumbnail" alt="domain" src="/images/assets/schemas/emails/spf-records-diagram.png" loading="lazy" />
+
+:::info
+Le SPF n'est qu'une indication fournie aux serveurs recevant des e-mails, dont les vôtres. Il appartient à ces derniers d'appliquer ou non ce qui est spécifié dans l'enregistrement SPF des noms de domaine pour lesquels ils reçoivent des messages.
+
+:::
+
+
+</details>
+
+
+**Découvrez comment configurer un enregistrement SPF à votre nom de domaine chez OVHcloud.**
+
+## Prérequis
+
+- Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS OVHcloud).
+
+{/* CP-NAV-START:web-dns-zone */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](https://manager.eu.ovhcloud.com/#/web/zone)
+- **Pour accéder à vos services :** <code className="action">Web Cloud</code> > <code className="action">Zones DNS</code> > Sélectionnez votre nom de domaine
+
+---
+{/* CP-NAV-END:web-dns-zone */}
+
+:::warning
+Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification du SPF depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
+
+Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si celui-ci utilise notre configuration OVHcloud dans votre [espace client](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) depuis l'onglet <code className="action">Serveurs DNS</code>, une fois positionné sur le domaine concerné.
+
+:::
+
+
+## En pratique
+
+### Vérifier votre configuration SPF actuelle
+
+Si votre nom de domaine utilise la configuration OVHcloud, vous pouvez vérifier si un enregistrement SPF est déjà configuré pour celui-ci.
+
+<details>
+
+<summary>Comment vérifier une configuration SPF existante ?</summary>
+
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la section <code className="action">Noms de domaine</code>, sélectionnez le nom de domaine concerné. Cliquez sur l'onglet <code className="action">Zone DNS</code>.
+
+Un tableau devrait apparaître. Ce dernier affiche la zone DNS de votre nom de domaine chez OVHcloud. Elle est constituée de plusieurs enregistrements, tous symbolisés par une ligne du tableau.
+
+:::info
+Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si celui-ci utilise bien les serveurs DNS OVHcloud depuis l'onglet <code className="action">Serveurs DNS</code>.
+
+:::
+
+
+Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filtre d'affichage peut être utilisé. Ce dernier pouvant apparaître à deux endroits différents, sélectionnez <code className="action">TXT</code> ou <code className="action">SPF</code> dans l'enregistrement de filtrage, en passant de l'un à l'autre si nécessaire. Dès lors, l'affichage du tableau peut être différent.
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/spf-records-check-OVH-configuration.png" loading="lazy" />
+
+- **Un SPF correspondant aux informations OVHcloud de votre offre est affiché** : votre nom de domaine utilise déjà la configuration OVHcloud. Si vous ne souhaitez plus l'utiliser, vous devrez la modifier lors de l'étape suivante.
+
+- **Un SPF ne correspondant pas aux informations OVHcloud est affiché** : votre nom de domaine utilise déjà un SPF personnalisé. Sa modification ou le choix de la configuration OVHcloud se font à l'étape suivante. Si votre configuration est erronée, vous devrez la modifier.
+
+- **Aucun SPF ne s'affiche dans la colonne cible** : vérifiez au préalable si l'enregistrement n'est pas créé en tant que SPF ou TXT en modifiant le filtrage. Si aucun SPF ne s'affiche, qu'importe le filtrage, votre nom de domaine n'en utilise pas. Vous pourrez en ajouter un lors de l'étape suivante.
+
+:::info
+Un SPF se compose toujours de la forme suivante : "v=spf1 `sources` `qualifieur`". Par exemple, le SPF OVHcloud est : "v=spf1 include:mx.ovh.com ~all".
+
+:::
+
+
+</details>
+
+
+### Configurer l'enregistrement SPF
+
+Pour ajouter un enregistrement SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la section <code className="action">Noms de domaine</code>, cliquez sur le nom de domaine concerné, puis rendez-vous ensuite dans l’onglet <code className="action">Zone DNS</code>.
+
+Pour ajouter un enregistrement SPF, cliquez sur <code className="action">Ajouter une entrée</code>.
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/spf-records-add-entry-step1.png" loading="lazy" />
+
+Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont proposés. Concernant l’ajout d’un SPF, deux possibilités s’offrent à vous :
+
+- [Ajouter un enregistrement SPF OVHcloud](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) et Exchange Provider).
+- [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
+- [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur.
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/spf-records-add-entry.png" loading="lazy" />
+
+#### Utiliser l'enregistrement SPF OVHcloud <a name="spfrecordovhcloud"></a>
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-4dD_ssjxNI?start=48" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
+
+Vous avez choisi l'enregistrement <code className="action">SPF</code> et souhaitez appliquer la configuration OVHcloud. Celle-ci permet d'inclure l'ensemble des serveurs e-mail sortants OVHcloud pour les offres e-mail suivantes :
+
+- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) .
+- [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
+- [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
+
+Cliquez sur le bouton <code className="action">Utiliser le SPF pour mutualisé OVHcloud</code> en haut de la fenêtre d'assistance. Les informations relatives au SPF OVHcloud s'afficheront. Cliquez sur le bouton <code className="action">Valider</code> pour réaliser la modification.
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/spf-records-add-entry-step2.png" loading="lazy" />
+
+:::info
+La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
+
+:::
+
+
+#### Ajouter un enregistrement SPF <a name="spfrecord"></a>
+
+Vous avez choisi l'enregistrement <code className="action">SPF</code>
+
+L'assistant de configuration vous permettra de personnaliser au fur et à mesure votre SPF. Pour ce faire, vous devrez répondre aux différentes questions et apporter les informations nécessaires. Certains éléments demandés peuvent s'adresser à des utilisateurs avertis.
+
+Nous allons les aborder progressivement.
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/spf-records-add-entry-personnalize-step1.png" loading="lazy" />
+
+- **Sous-domaine** : complétez si le SPF doit s'appliquer à un sous-domaine de votre nom de domaine. Cela s'applique si vous envoyez des e-mails depuis un sous-domaine.
+- **TTL** : il s'agit du temps de propagation qui s'appliquera à la configuration de cet enregistrement DNS.
+- **Autoriser l'IP à envoyer des e-mails** : à cocher si votre site internet et vos adresses e-mail sont hébergés sur un serveur utilisant la même adresse IP (par exemple sur votre serveur dédié).
+- **Autoriser les serveurs MX à envoyer des e-mails** : à cocher si les serveurs réceptionnant vos e-mails peuvent également en envoyer.
+- **Autoriser tous les serveurs dont le nom se termine par votre nom de domaine à envoyer des e-mails** : option à utiliser avec précaution, car elle permet de légitimer de manière très large les sources d'envoi utilisant votre nom de domaine.
+
+<details>
+
+<summary>"**D'autres serveurs envoient-ils le courrier avec votre nom de domaine ?**"</summary>
+
+
+- **a** : renseignez ici des noms de domaine. Cela légitimera les serveurs hébergeant les sites liés à ces noms de domaine pour envoyer des e-mails avec vos adresses.
+- **mx** : renseignez ici les serveurs qui réceptionnent vos e-mails (serveurs MX) si ces serveurs peuvent également en envoyer. Ils seront ainsi identifiés comme une source d'envoi légitime.
+- **ptr** : renseignez ici des noms d'hôtes dont le *reverse* est fonctionnel (grâce à un enregistrement PTR dans la zone DNS). Ils seront ainsi identifiés comme une source d'envoi légitime.
+- **ip4** : indiquez les IP ou les plages d'IP (IPv4) autorisées à envoyer des e-mails avec vos adresses.
+- **ip6** : indiquez les IP ou les plages d'IP (IPv6) autorisées à envoyer des e-mails avec vos adresses.
+- **include** : renseignez ici des noms de domaine incluant leurs propres règles SPF. Cela permettra ces dernières pour votre propre nom de domaine. Par exemple, OVHcloud utilise cette méthode dans sa configuration SPF : "v=spf1 include:mx.ovh.com ~all", ce qui permet à OVHcloud de gérer le SPF de mx.ovh.com et de permettre à ses clients de l'utiliser.
+
+</details>
+
+
+<details>
+
+<summary>"**Est-ce que les informations que vous avez indiquées décrivent tous les hôtes qui envoient du courrier avec votre nom de domaine ?**"</summary>
+
+
+- **Oui, je suis sûr** : préconisez aux serveurs réceptionnant des e-mails provenant de votre nom de domaine de les rejeter s'ils proviennent d'une source non légitime (non présente dans votre SPF).
+- **Oui, mais utiliser le safe mode** : préconisez aux serveurs réceptionnant des e-mails provenant de votre nom de domaine de les accepter s'ils proviennent d'une source non légitime (non présent dans votre SPF), mais de les taguer afin qu'ils soient identifiables comme potentiellement non légitimes (en tant que "spam" par exemple).
+- **Non** : préconisez aux serveurs réceptionnant des e-mails provenant de votre nom de domaine de les accepter s'ils proviennent d'une source non légitime (non présente dans votre SPF), sans action particulière. L'entête de l'e-mail sera cependant incrémenté.
+
+</details>
+
+
+Une fois les informations complétées, cliquez sur <code className="action">Suivant</code>, assurez-vous que les informations affichées soient bien correctes, puis cliquez sur <code className="action">Confirmer</code>.
+
+:::info
+La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
+
+:::
+
+
+#### Ajouter un enregistrement TXT <a name="txtrecord"></a>
+
+Parmi les enregistrements proposés, cliquez sur <code className="action">TXT</code>, puis complétez les informations demandées. Dans la zone <code className="action">Valeur</code>, renseignez le SPF que vous souhaitez utiliser.
+
+Pour finaliser l'action, cliquez sur <code className="action">Suivant</code>. Assurez-vous que les informations affichées sont correctes, puis cliquez sur <code className="action">Confirmer</code>.
+
+:::info
+La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
+
+:::
+
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/spf-records-add-TXT-entry.png" loading="lazy" />
+
+### Modifier un enregistrement SPF <a name="modifyspf"></a>
+
+Pour modifier le SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la section <code className="action">Noms de domaine</code>, cliquez sur le nom de domaine concerné puis rendez-vous ensuite dans l’onglet <code className="action">Zone DNS</code>.
+
+Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque ligne correspond à un enregistrement DNS. Repérez votre enregistrement TXT ou SPF dans ce tableau et cliquez sur le bouton <code className="action">...</code> afin d'éditer l'entrée.
+
+### Configuration SPF OVHcloud pour les offres e-mail mutualisées <a name="ovhcloudspfvalue"></a>
+
+La configuration SPF OVHcloud générale s'applique aux solutions ci-dessous :
+
+- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
+- [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
+- [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
+
+La configuration est la suivante :
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+```
+
+### Configuration SPF OVHcloud pour Exchange Provider
+
+Pour l'offre Exchange Provider, la configuration est la suivante :
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+```
+
+En revanche, la configuration est la suivante si vous souhaitez aussi déclarer la *gateway* du service **Exchange Provider** :
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw.ex-mail.biz ~all"
+```
+
+### Configuration SPF OVHcloud pour Private Exchange
+
+Pour l'offre Private Exchange, il est nécessaire de renseigner les adresses IP de votre serveur e-mail. Pour cela, utilisez l'argument `ip4` pour renseigner l'adresse IPv4 (**A**) et l'argument `ip6` pour l'adresse IPv6 (**AAAA**) de votre serveur Private Exchange.
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 ~all"
+```
+
+Si vous utilisez également [une offre e-mail mutualisée](#ovhcloudspfvalue), vous pouvez ajouter l'argument `include:mx.ovh.com` à l'enregistrement ci-dessus, ce qui donnera la valeur suivante :
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 include:mx.ovh.com ~all"
+```
+
+<details>
+
+<summary>Comment récupérer les adresses IP d'un serveur Private Exchange ?</summary>
+
+
+Cliquez sur <code className="action">Microsoft</code> puis sur <code className="action">Exchange</code>. Cliquez enfin sur le nom du service Private Exchange concerné.
+
+Dans l'onglet <code className="action">Informations générales</code>, cliquez sur le `A` et le `AAAA` dans la partie `Diagnostic serveur`. Dans la fenêtre qui s'affiche, relevez la valeur.
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/microsoft/exchange/general-information/spf-records-ip.png" loading="lazy" />
+
+Si les pastilles `A` et `AAAA` sont vertes, vous ne verrez pas les adresses IP en cliquant dessus. Vous devrez récupérer celles-ci depuis la zone DNS du nom de domaine attaché à votre plateforme Private Exchange. Pour cela, récupérez le lien du webmail depuis l'onglet <code className="action">Informations générales</code>, dans le cadre `Connexion`.
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/microsoft/exchange/general-information/spf-records-ip2.png" loading="lazy" />
+
+Dirigez-vous ensuite dans la section <code className="action">Noms de domaine</code>, sélectionnez le nom de domaine attaché à votre plateforme Private Exchange, puis cliquez sur l'onglet <code className="action">Zone DNS</code>. Récupérez les adresses IPv4 (enregistrement `A`) et IPv6 (enregistrement `AAAA`) correspondant à l'URL du webmail.
+
+<img className="thumbnail" alt="domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/dns-zone/spf-records-ip3.png" loading="lazy" />
+
+</details>
+
+
+## Aller plus loin <a name="go-further"></a>
+
+[Editer une zone DNS OVHcloud](/guides/web-cloud/domains/dns-zone-edit/).
+
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/guides/web-cloud/domains/dns-server-edit/).
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

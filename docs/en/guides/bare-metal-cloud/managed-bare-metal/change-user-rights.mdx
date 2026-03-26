@@ -1,0 +1,40 @@
+---
+title: Changing user rights
+description: Find out how to manage user permissions for the vSphere client
+lastUpdated: 2020-11-18
+---
+
+## Objective
+
+The purpose of this guide is to explain the user rights management regarding the OVHcloud Managed Bare Metal solution.
+
+**Learn how to manage user rights on your infrastructure.**
+
+## Requirements
+
+- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+
+## Instructions
+
+In your OVHcloud Control Panel, open the "Bare Metal Cloud" section, then select your service under <code className="action">Managed Bare Metal</code> in the left-hand navigation bar.
+
+From the main page of the service, click on the <code className="action">Users</code> tab. Click on <code className="action">...</code> in the row of the user concerned to open the context menu.
+
+<img className="thumbnail" alt="See/Change the rights for each DC" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_1.png" loading="lazy" />
+
+From this menu, you can change the rights of your vSphere users per data centre.
+
+<img className="thumbnail" alt="Modify rights" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_2.png" loading="lazy" />
+
+| Access | Possible right | Description |
+|---|---|---|
+| vSphere access | None / Read-only / Read & Write | Global user rights on vSphere |
+| Access to the VM Network | None / Read-only / Provider | Management rights over the public network section (a.k.a VM Network in the vSphere interface) |
+| Add resources | Yes / No | Right to add additional resources through the OVHcloud plugin in the vSphere client (Host, Datastore, Veeam Backup) |
+
+<img className="thumbnail" alt="Modify rights" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_3.png" loading="lazy" />
+
+## Go further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

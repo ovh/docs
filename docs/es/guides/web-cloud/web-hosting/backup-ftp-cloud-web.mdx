@@ -1,0 +1,109 @@
+---
+title: Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web
+description: Descubra cómo descargar una copia de seguridad del espacio FTP de un alojamiento Cloud Web
+lastUpdated: 2023-11-16
+---
+
+## Objetivo
+
+Su hosting Cloud Web dispone de un espacio de almacenamiento en el que podrá alojar sus sitios web o aplicaciones.
+
+**Esta guía explica cómo descargar una copia de seguridad del espacio FTP de un alojamiento Cloud Web**.
+
+:::info
+Las copias de seguridad ofrecidas por OVHcloud para los alojamientos Cloud Web son extracontractuales. que podrá utilizar para completar sus propias copias de seguridad en situaciones urgentes. Por lo tanto, le recomendamos que realice regularmente sus propias copias de seguridad para paliar posibles pérdidas de datos.
+
+Si realiza una copia de seguridad para su sitio web y utiliza una base de datos, realice una copia de seguridad de la misma. No dude en consultar nuestra guía para [obtener una copia de seguridad de su base de datos](/guides/web-cloud/web-hosting/sql-database-export/).
+
+:::
+
+
+**Esta guía explica cómo recuperar y restaurar una copia de seguridad FTP de un alojamiento Cloud Web.**
+
+## Requisitos
+
+- Tener un [hosting Cloud Web.](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/)
+- Tener acceso a la dirección de correo electrónico de contacto asociada a su ID de cliente.
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Alojamientos</code> > Seleccione su alojamiento web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedimiento
+
+Un hosting Cloud Web dispone de copias de seguridad automáticas activadas a las siguientes frecuencias:
+
+- el mismo día, efectuada después de las 0.00 horas.
+- el día anterior, realizado después de las 0.00 horas.
+- el penúltimo, realizado después de las 0.00 horas.
+- el domingo anterior, efectuada después de las 01:00 horas.
+
+OVHcloud solo podrá ofrecer las copias de seguridad antes mencionadas, siempre que su hosting Cloud Web ya exista en las fechas indicadas y siempre que la infraestructura esté disponible al solicitar el backup.
+
+### Obtener una copia de seguridad
+
+A diferencia de los alojamientos compartidos de OVHcloud, no es posible restaurar el espacio FTP en un clic desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+Se genera un enlace de descarga de la copia de seguridad y se envía por correo electrónico a la dirección de correo electrónico asociada al ID de cliente administrador del hosting Cloud Web.
+
+#### Paso 1 - Generar el enlace de recuperación enviado por correo electrónico
+
+Para generar el enlace de recuperación, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección <code className="action">Web Cloud</code>, haga clic en <code className="action">Alojamientos</code> y seleccione el Cloud Web correspondiente. 
+
+Seleccione la pestaña <code className="action">FTP - SSH</code> y haga clic en el botón <code className="action">Generar una copia de seguridad</code> a la derecha.
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png" loading="lazy" />
+
+En la nueva ventana, seleccione una de las copias de seguridad disponibles y haga clic en <code className="action">Siguiente</code>.
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png" loading="lazy" />
+
+Se abrirá una segunda ventana en la que deberá indicar que el enlace de recuperación del archivo de backup se enviará por correo electrónico y que OVHcloud no restaurará el alojamiento Cloud Web automáticamente.
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png" loading="lazy" />
+
+Haga clic en <code className="action">Confirmar</code> para aceptar su solicitud.
+
+Si la generación de la copia de seguridad se ha iniciado correctamente, aparecerá el siguiente mensaje en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es):
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/control-panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png" loading="lazy" />
+
+La generación de la copia de seguridad tarda entre 10 y 15 minutos en realizarse.
+
+#### Paso 2 - Descargar la copia de seguridad
+
+Una vez finalizada la generación del backup, recibirá un mensaje de correo electrónico en la dirección asociada al usuario de administrador de su hosting Cloud Web.<br/>
+El mensaje de correo electrónico incluye un enlace de descarga **válido durante 9 días** desde la recepción del mensaje de correo electrónico:
+
+<img className="thumbnail" alt="backupftpcw" src="/images/assets/screens/email-sending-to-customer/cloud-web/backup-information.png" loading="lazy" />
+
+El archivo así descargado está en formato *.tar.gz*.
+
+### Restaurar la copia de seguridad
+
+Una vez que haya cargado los archivos, podrá [conectarse a su espacio FTP](/guides/web-cloud/web-hosting/ftp-connection/) utilizando un programa FTP como [Filezilla](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/) y sustituir los archivos que desee por los recuperados.
+
+:::info
+Utilice los puertos indicados en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) para conectarse por SFTP y SSH, ya que el puerto 22 no funcionará para su hosting Cloud Web.
+
+:::
+
+
+## Más información 
+
+[Conectarse al espacio de almacenamiento de un alojamiento web](/guides/web-cloud/web-hosting/ftp-connection/)
+
+[Conectarse mediante Filezilla](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en)

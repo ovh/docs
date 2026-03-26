@@ -1,0 +1,242 @@
+---
+title: Aktualizacja oprogramowania sprzętowego cluster Nutanix (EN)
+description: Find out how to update your Nutanix cluster firmware
+lastUpdated: 2023-03-09
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+This article provides you with the steps to update Nutanix cluster's firmwares by putting each node into maintenance, before rebooting one node at a time in rescue mode.
+
+Our services will take over to apply updates and firmwares and will restart the node thereafter.
+
+:::warning
+Before following the steps below, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) and create a support ticket, requesting a firmware update. Make sure to provide the OVHcloud support teams with all technical information regarding your cluster.
+
+:::
+
+
+**This guide explains how to update your Nutanix cluster firmware.**
+
+## Requirements
+
+- A Nutanix cluster in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Consulting the guide [First steps to use the OVHcloud API](/guides/manage-and-operate/api/first-steps/) (to familiarise yourself with the OVHcloud API)
+
+## Instructions
+
+Before any other action, log in to your Prism Element interface and perform the following tasks:
+
+- Check that the cluster's "**Data Resiliency Status**" is `OK`.
+
+This can be verified on the main dashboard of your Prism Element interface:
+
+<img className="thumbnail" alt="Prism element - Data Resiliency Status" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-01.png" loading="lazy" />
+
+- Run an NCC check.
+
+In the Prism Element interface, click <code className="action">Health</code> from the main menu.
+
+<img className="thumbnail" alt="Prism element - health" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-02.png" loading="lazy" />
+
+Then click <code className="action">Actions</code> to the right and click <code className="action">Run NCC Checks</code>.
+
+<img className="thumbnail" alt="Prism element - Run NCC checks" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-03.png" loading="lazy" />
+
+Select <code className="action">All checks</code> and click <code className="action">Run</code>.
+
+<img className="thumbnail" alt="Prism element - run checks" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-03b.png" loading="lazy" />
+
+A log file called `/home/nutanix/data/logs/ncc-output-latest.log` will be generated at the end of the checks.
+
+Please analyse it carefully. If you find errors or fails about the cluster or service state, do not continue and contact the OVHcloud support.
+
+:::info
+It is possible to run NCC checks on the CVM by typing the following command from a terminal.
+
+:::
+
+
+```bash
+ncc health_checks run_all
+```
+
+### Enabling maintenance mode
+
+Nodes will be updated one by one, the Nutanix cluster will continue to work properly.
+
+To log in to CVM, you can launch IPMI from your OVHcloud Control Panel or use a terminal.
+
+:::info
+Before putting the host into maintenance, ensure that remaining hosts have enough resources to host migrated VMs from it (CPU, memory, storage).
+
+:::
+
+
+#### Connect to CVM
+
+At the login prompt, log in with root credentials to access the host terminal.<br/>
+Then open an SSH connection to any CVM with Nutanix credentials to access the CVM terminal.
+
+<img className="thumbnail" alt="CVM connection" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-04.png" loading="lazy" />
+
+#### Check nodes state
+
+Once logged in, check that:
+
+- `Node state` status is set to `AcropolisNormal`.
+- `Schedulable` column is set to `True` for all nodes.
+
+Then run the following command to check:
+
+```bash
+acli host.list
+```
+
+<img className="thumbnail" alt="Checking nodes state" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-05.png" loading="lazy" />
+
+If all checks are OK, you need to check that the current host state can be changed to `Maintenance`. To do so, use the following command:
+
+```bash
+acli host.enter_maintenance_mode_check <Hypervisor_IP>
+```
+
+<img className="thumbnail" alt="Checking nodes state" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-06.png" loading="lazy" />
+
+#### Put a node in maintenance mode
+
+:::info
+VMs with specific policies (like affinity, CPU passthrough, etc.) should be stopped manually before running maintenance as they will not migrate.
+
+:::
+
+
+If all hosts are eligible to enter maintenance mode, put a first host into maintenance mode with the following command:
+
+```bash
+acli host.enter_maintenance_mode 192.168.0.1 wait=true
+```
+
+<img className="thumbnail" alt="maintenance mode" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-07.png" loading="lazy" />
+
+:::warning
+When hosts enter maintenance mode, all hosted VMs will be migrated on other hosts without any interruption.
+
+:::
+
+
+#### Shut down the CVM
+
+Once the host is in maintenance mode, CVM can be shut down with the following command:
+
+```bash
+cvm_shutdown -P now
+```
+
+<img className="thumbnail" alt="shutdown CVM" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-08.png" loading="lazy" />
+
+With root credentials, open a terminal on the node that hosts the CVM and confirm that the CVM is stopped:
+
+```bash
+virsh list --all
+```
+
+<img className="thumbnail" alt="shutdown CVM" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-09.png" loading="lazy" />
+
+On the main dashboard, the "**Data Resiliency Status**" will become `Critical`, the cluster is now running with 2 nodes.
+
+<img className="thumbnail" alt="shutdown CVM" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-10.png" loading="lazy" />
+
+The CVM is now shut down.
+
+### Reboot to rescue mode
+
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl), go to the <code className="action">Hosted Private Cloud</code>, choose the <code className="action">Nutanix</code> solution and select your cluster.
+
+<img className="thumbnail" alt="OVHcloud Control Panel - cluster access" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-11.png" loading="lazy" />
+
+Identify the node to boot in rescue mode by using the following OVHcloud API call:
+
+<Api version="v1" section="/nutanix" method="GET" route={"/nutanix/\{serviceName\}"} />
+
+
+- `serviceName`: Enter the cluster name.
+
+You can then identify your node name:
+
+<img className="thumbnail" alt="OVHcloud API - node name" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-12.png" loading="lazy" />
+
+Once you have retrieved the name of the node to reboot in rescue mode, select this node in your OVHcloud Control Panel.
+
+In the `Boot` section, click the <code className="action">...</code> button then click <code className="action">Edit</code>.
+
+<img className="thumbnail" alt="OVHcloud Control Panel - Boot" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-13.png" loading="lazy" />
+
+Change the netboot by choosing <code className="action">Boot in rescue mode</code>, choose the <code className="action">rescue-customer</code> version and click <code className="action">Next</code>.
+
+<img className="thumbnail" alt="OVHcloud Control Panel - Boot" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-14.png" loading="lazy" />
+
+Confirm your choice.
+
+<img className="thumbnail" alt="OVHcloud Control Panel - Boot" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-15.png" loading="lazy" />
+
+Once confirmed, a green message will confirm that the netboot has been updated.
+
+Click again the <code className="action">...</code> button and click <code className="action">Restart</code>.
+
+<img className="thumbnail" alt="OVHcloud Control Panel - Boot" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-13.png" loading="lazy" />
+
+The server will reboot. Optionally, you can open an IPMI session to follow the reboot process of your node.
+
+When the node is booted into `rescue-customer`, update the your support ticket with this information to notify the OVHcloud support teams that they can proceed with the firmware update.
+
+Our support teams will finish the necessary updates, meaning they will:
+
+- Restart the node on the local disk, which will start the Nutanix system and the CVM automatically.
+- Update the ticket to let you know when the node can exit from maintenance mode.
+
+At this time, the node will be up and running. Follow the next step to exit maintenance mode.
+
+### Exit from maintenance mode
+
+After updating the node, our services will reboot the node from its local disk. The Nutanix software will load AOS and the CVM will automatically start.
+
+Once the system is up and running, log in to the CVM and run the following command:
+
+```bash
+acli host.list
+```
+
+As you can see in the output example below, the first node is still in maintenance mode.
+
+<img className="thumbnail" alt="maintenance mode exit" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-07.png" loading="lazy" />
+
+To remove the node from maintenance mode, run the following command:
+
+```bash
+host.exit_maintenance_mode 192.168.0.1
+```
+
+The host exits the `Maintenance` state and goes back to the `Normal` state.
+
+<img className="thumbnail" alt="maintenance mode exit" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-16.png" loading="lazy" />
+
+Migrated VMs from this node automatically move from other nodes to it.
+
+On the main dashboard, the "**Data Resiliency Status**" will revert to `OK`. The cluster also returns to its normal state.
+
+<img className="thumbnail" alt="Data Resiliency Status" src="/images/hosted-private-cloud/nutanix-on-ovhcloud/70-cluster-firmware-update/nutanix-cluster-fw-update-01.png" loading="lazy" />
+
+Proceed with the remaining nodes one at a time with the same steps.
+
+Please do not open a new ticket, just add comments on the same ticket for each node, specifying the name of the server (example: `ns123456.ip-169-254-10.eu`).
+
+## Go further <a name="gofurther"></a>
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

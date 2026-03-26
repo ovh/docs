@@ -1,0 +1,283 @@
+---
+title: E-Mail-Accounts mit MX Plan erstellen
+description: Erfahren Sie hier, wie Sie einen MX Plan E-Mail-Account erstellen
+lastUpdated: 2025-08-26
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Ziel
+
+Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail-Accounts die mit Domainnamen verknüpft sind.
+
+**Diese Anleitung erklärt, wie Sie einen E-Mail-Account mit Ihrem MX Plan erstellen.**
+
+## Voraussetzungen
+
+- Sie verfügen über ein MX Plan Angebot. Dieses ist verfügbar über:
+    - Ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+    - Ein aktiviertes [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/), inklusive mit einem Domainnamen.
+    - Ein separat bestelltes MX Plan Angebot.
+
+:::info
+**Sonderfälle**
+
+- Hinweis zu Kostenloses Hosting 100M: Es muss zuerst [aktiviert werden](/guides/web-cloud/web-hosting/activate-start10m/), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) durchführen, indem Sie die betreffende Domain auswählen.
+- Bei einem Webhosting muss der [inkludierte MX Plan aktiviert werden](https://www.ovhcloud.com/de/web-hosting/), bevor Sie die übrigen Schritte dieser Anleitung durchführen. Lesen Sie hierzu unsere Anleitung zur [Aktivierung der im Webhosting enthaltenen E-Mail-Accounts](/guides/web-cloud/web-hosting/activate-email-hosting/).
+
+:::
+
+
+{/* CP-NAV-START:web-mx-plan */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+{/* CP-NAV-END:web-mx-plan */}
+
+## In der praktischen Anwendung <a name="instructions"></a>
+
+**Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort**.
+
+:::info
+**E-Mail-Technologie Ihres MX Plan Angebots identifizieren.**
+
+Abhängig vom Aktivierungsdatum Ihres MX Plan Angebots oder einer kürzlich durchgeführten Migration kann die zugehörige E-Mail-Technologie variieren. Diese Version ist durch das Webmail-Interface gekennzeichnet. Um es zu identifizieren:
+
+- Gehen Sie in den Tab <code className="action">Allgemeine Informationen</code> und beachten Sie die Technologie unter **Webmail** in der Randleiste <code className="action">Abonnement</code> unter <code className="action">Webmail</code>.
+
+<img className="thumbnail" alt="MX plan" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/technology-email.png" loading="lazy" />
+
+:::
+
+
+### OWA und Zimbra
+
+In diesem Abschnitt werden MX Plan Angebote dokumentiert, die die Webmail-Technologie **OWA** und **Zimbra** verwenden.
+
+#### Einen E-Mail-Account erstellen
+
+Um einen neuen E-Mail-Account zu erstellen, gehen Sie in den Tab <code className="action">E-Mail-Accounts</code>. Das angezeigte Fenster enthält bereits vorhandene E-Mail-Accounts sowie die Anzahl der Accounts, die Sie noch anlegen können. Klicken Sie auf den Button <code className="action">Account hinzufügen</code>.
+
+<img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/mxplan-creation-new-step2.png" loading="lazy" />
+
+Geben Sie im neu angezeigten Fenster die angeforderten Informationen ein.
+
+- **E-Mail Account**: Im Textfeld ist bereits ein vorläufiger Name angegeben. Fügen Sie hier Ihre gewünschte E-Mail-Adresse ein (zum Beispiel vorname.name). Der Domainname der E-Mail-Adresse ist bereits in der Liste vorausgewählt.
+
+:::warning
+Die Wahl des Namens Ihrer E-Mail-Adresse muss folgende Bedingungen erfüllen:
+
+- Mindestens 2 Zeichen
+- Maximal 32 Zeichen
+- Keine Zeichen mit Akzent
+- Keine Sonderzeichen außer `.`, `,`, `-` und `_`
+
+:::
+
+
+- **Vorname**: Geben Sie einen Vornamen an.
+- **Name**: Geben Sie einen Nachnamen an.
+- **Anzeigename**: Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.
+- **Passwort**: Wählen Sie ein Passwort und bestätigen Sie es. Aus Sicherheitsgründen empfehlen wir Ihnen, Passwörter nicht mehrfach zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (beispielsweise Namen, Vornamen oder Ihr Geburtsdatum). Es wird empfohlen, das Passwort regelmäßig zu ändern.
+
+:::warning
+Die Wahl des Passworts muss folgende Bedingungen erfüllen:
+
+- Mindestens 9 Zeichen
+- Maximal 30 Zeichen
+- Keine Zeichen mit Akzent
+
+:::
+
+
+Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button <code className="action">Weiter</code>.
+
+<img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/mxplan-creation-new-step3.png" loading="lazy" />
+
+Überprüfen Sie die in der Übersicht angezeigten Informationen. Sind alle Angaben korrekt, klicken Sie auf <code className="action">Bestätigen</code>. Der neu hinzugefügte Account erscheint nun in der Tabelle. Warten Sie kurz ab, bis der Account verfügbar ist.
+
+Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
+
+#### E-Mails einsehen
+
+Gehen Sie auf die [Webmail Loginseite](https://www.ovhcloud.com/de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button <code className="action">Login</code>.
+
+Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
+
+<Tabs>
+  <Tab label="Zimbra">
+    Wenn Sie im Zimbra Webmail eingeloggt sind, erhalten Sie das unten stehende Interface. Weitere Informationen zur Verwendung von Zimbra Webmail finden Sie in unserer Anleitung „[Zimbra Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)“.
+    
+    <img className="thumbnail" alt="Zimbra - Schnittstelle" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/zimbra-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="OWA">
+    Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Postfach angezeigt. Um herauszufinden, wie Sie Ihre E-Mail-Adresse mit Outlook Web App (OWA) nutzen, lesen Sie unsere Anleitung zur [Verwendung von E-Mail-Accounts über Outlook Web App (OWA)](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/).
+    
+    <img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/mxplan-creation-new-step5.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+Um Ihre E-Mails über ein E-Mail-Programm einzusehen, finden Sie die entsprechenden Informationen im Bereich "[E-Mail-Account von einem Client aus anzeigen](#configdevices)".
+
+#### Einen E-Mail Account löschen
+
+In der neuen MX Plan Version wird das Löschen eines Accounts als *Zurücksetzen des Accounts* bezeichnet.
+
+:::warning
+Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung ["Ihre E-Mail-Adresse manuell migrieren"](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
+
+:::
+
+
+Klicken Sie im Tab <code className="action">E-Mail-Accounts</code> auf den Button <code className="action">...</code> rechts vom zu löschenden Account und danach auf <code className="action">Diesen Account zurücksetzen</code>.
+
+<img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/mxplan-new-reset.png" loading="lazy" />
+
+### MX Plan Roundcube
+
+Dieser Bereich ist MX Plan Angeboten gewidmet, die die Webmail-Technologie **Roundcube** verwenden.
+
+#### Einen E-Mail Account erstellen
+
+Um eine neue E-Mail-Adresse zu erstellen, gehen Sie in den Tab <code className="action">E-Mails</code>. Die angezeigte Tabelle enthält alle E-Mail-Accounts, die im Rahmen Ihres MX Plan Angebots erstellt wurden. Klicken Sie nun auf den Button <code className="action">Eine E-Mail-Adresse erstellen</code>.
+
+<img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/mxplan-creation-legacy-step2.png" loading="lazy" />
+
+Geben Sie im angezeigten Fenster die angeforderten Informationen ein.
+
+- **Name des Accounts**: Fügen Sie hier Ihre gewünschte E-Mail-Adresse ein (zum Beispiel vorname.name). Die betreffende Domain ist bereits standardmäßig angegeben.
+- **Kontobeschreibung**: Geben Sie eine kurze Beschreibung ein, damit Sie diesen Account später von anderen Accounts in Ihrem OVHcloud Kundencenter unterscheiden können.
+- **Account-Größe**: Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz, den Ihr Account zum Speichern von Nachrichten nutzen kann.
+- **Passwort**: Wählen Sie ein Passwort und bestätigen Sie es. Aus Sicherheitsgründen empfehlen wir Ihnen, Passwörter nicht mehrfach zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (beispielsweise Namen, Vornamen oder Ihr Geburtsdatum). Es wird empfohlen, das Passwort regelmäßig zu ändern.
+
+Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button <code className="action">Weiter</code>.
+
+<img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/mxplan-creation-legacy-step3.png" loading="lazy" />
+
+Überprüfen Sie die in der Übersicht angezeigten Informationen. Sind alle Angaben korrekt, klicken Sie erneut auf <code className="action">Weiter</code>. Klicken Sie zum Abschluss auf <code className="action">Bestätigen</code>, um den E-Mail-Account zu erstellen. Warten Sie kurz ab, bis der Account verfügbar ist.
+
+Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
+
+#### E-Mails einsehen
+
+Gehen Sie auf die [Webmail Loginseite](https://www.ovhcloud.com/de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button <code className="action">Login</code>.
+
+Daraufhin wird Ihr Postfach angezeigt. Weitere Informationen finden Sie in unserer Anleitung zur [Verwendung Ihres E-Mail-Accounts mit RoundCube Webmail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-roundcube/).
+
+<img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/mxplan-creation-legacy-step4.png" loading="lazy" />
+
+Um Ihre E-Mails über ein E-Mail-Programm einzusehen, finden Sie die entsprechenden Informationen im Bereich "[E-Mail-Account von einem Client aus anzeigen](#configdevices)".
+
+#### Einen E-Mail Account löschen
+
+:::warning
+Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung [Ihre E-Mail-Adresse manuell migrieren](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
+
+:::
+
+
+Klicken Sie im Tab <code className="action">E-Mail-Accounts</code> rechts neben dem zu löschenden Account auf <code className="action">...</code> und dann auf <code className="action">Account löschen</code>.
+
+<img className="thumbnail" alt="E-Mail" src="/images/web-cloud/email-and-collaborative-solutions/mx-plan/email-creation/mxplan-legacy-reset.png" loading="lazy" />
+
+### E-Mail-Account von einem Client aus anzeigen <a name="configdevices"></a>
+
+Sie können Ihre E-Mail-Accounts auf Ihrem gewünschten Gerät konfigurieren (z. B. einem Smartphone oder Tablet). Folgen Sie hierzu unseren Konfigurationsanleitungen:
+
+<Tabs>
+  <Tab label="Windows">
+    - [Mail auf Windows 10](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-windows-10/)
+    - [Outlook](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/)
+    - [Thunderbird](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-windows/)
+  </Tab>
+  <Tab label="Apple">
+    - [macOS Mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-mail-macos/)
+    - [Mail für iPhone oder iPad](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-ios/)
+    - [Outlook Mac OS](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016-mac/)
+    - [Thunderbird](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-thunderbird-mac/)
+  </Tab>
+  <Tab label="Android">
+    - [Android](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-android/)
+  </Tab>
+  <Tab label="Andere">
+    - [Interface Gmail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-gmail/)
+  </Tab>
+</Tabs>
+
+
+Wenn Sie nur die Informationen zur Konfiguration Ihres E-Mail-Accounts benötigen, verwenden Sie die folgenden Einstellungen:
+
+#### Einstellungen für den IMAP- und POP-Empfang <a name="imap-pop"></a>
+
+Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können jedoch **POP** auswählen.
+
+:::warning
+Geben Sie nur die passenden Werte für Ihren Standort ein (**EUROPA** oder **AMERIKA/ASIEN-PAZIFIK**).
+
+:::
+
+
+Wählen Sie den Tab für Ihren Konfigurationstyp aus:
+
+<Tabs>
+  <Tab label="IMAP-Konfiguration">
+    - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+    - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+    - **Server eingehend EUROPA**: imap.mail.ovh.net **oder** ssl0.ovh.net.
+    - **Server eingehend AMERIKA/ASIEN-PAZIFIK**: imap.mail.ovh.ca.
+    - **Port**: 993.
+    - **Sicherheitstyp**: SSL/TLS.
+  </Tab>
+  <Tab label="POP-Konfiguration">
+    - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+    - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+    - **Server eingehend EUROPA**: pop.mail.ovh.net **oder** ssl0.ovh.net.
+    - **Server eingehend AMERIKA/ASIEN-PAZIFIK**: pop.mail.ovh.ca.
+    - **Port**: 995.
+    - **Sicherheitstyp**: SSL/TLS.
+  </Tab>
+</Tabs>
+
+
+#### Parameter für den SMTP-Versand <a name="smtp"></a>
+
+Für den Versand von E-Mails verwenden Sie die folgenden **SMTP** Einstellungen:
+
+**SMTP-Konfiguration**
+
+- **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+- **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+- **Server ausgehend EUROPA**: smtp.mail.ovh.net **oder** ssl0.ovh.net.
+- **Server ausgehend AMERIKA/ASIEN-PAZIFIK**: smtp.mail.ovh.ca.
+- **Port**: 465.
+- **Sicherheitstyp**: SSL/TLS.
+
+### Anwendungsbeispiele
+
+**Sie benötigen mehr E-Mail-Adressen?**
+
+- Fragen in [unseren E-Mail FAQ](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails/).
+- Sehen Sie sich alle unsere E-Mail-Angebote [Zimbra](https://www.ovhcloud.com/de/emails/zimbra-emails/) oder [Exchange](https://www.ovhcloud.com/de/emails-exchange/) an, um Ihr MX Plan Angebot für dieselbe Domain zu vervollständigen.
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Roundcube Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-roundcube/)
+
+[Zimbra Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)
+
+[Outlook Web App (OWA) Webmail verwenden](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

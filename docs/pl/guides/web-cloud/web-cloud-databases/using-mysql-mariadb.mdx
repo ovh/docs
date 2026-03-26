@@ -1,0 +1,126 @@
+---
+title: MySQL i MariaDB
+description: Korzystanie z baz danych
+lastUpdated: 2023-07-26
+---
+
+## Wprowadzenie
+
+Chcesz korzystać z MySQL lub MariaDB dla swoich baz danych?
+
+### Czym jest baza danych MySQL?
+
+MySQL to system zarządzania relacyjnymi bazami danych przygotowany z myślą o zwiększonej wydajności odczytu, w przeciwieństwie do pozostałych systemów.
+
+Jest to silnik open source firmy Oracle.
+
+### Czym jest baza danych MariaDB?
+
+MariaDB to pochodna systemu zarządzania bazami danych MySQL.
+
+Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni dostępne, w przeciwieństwie do wersji Oracle.
+
+**Dowiedz się, jak tworzyć bazy danych MySQL lub MariaDB**
+  
+## Wymagania początkowe
+
+- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Przeglądanie [przewodnik dotyczący uruchomienia usługi Web Cloud Databases](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/)
+
+## W praktyce
+
+### Logowanie do bazy danych
+
+:::info
+Oferta ta nie daje dostępu do hosta, lecz do baz danych, które są na nim zainstalowane. Podstawowe polecenia SQL działają bez problemu, a oprogramowanie typu HeidiSQL i SQuirreL SQL jest w pełni kompatybilne.
+
+:::
+
+
+:::info
+MariaDB to pochodna MySQL, więc poszczególne polecenia są identyczne dla tych dwóch typów baz danych.
+
+:::
+
+
+Aby zalogować się do bazy danych, musisz dysponować:
+
+- Posiadanie adresu instancji Web Cloud Databases
+- Posiadanie portu dla instancji Web Cloud Databases
+- Posiadanie nazwy użytkownika instancji Web Cloud Databases
+- Hasło przypisane do użytkownika
+- Posiadanie bazy danych
+
+Wszystkie te informacje są dostępne w [Panelu klienta OVHcloud](https://manager.eu.ovhcloud.com/#/web/web/private_database).
+
+Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/).
+
+#### Logowanie z linii polecen
+
+```bash
+mysql --host=serwer --user=użytkownik --port=port --password=password nazwa_bazy
+```
+
+#### Logowanie przez skrypt PHP
+
+```php
+1. <?php
+2. $db = new PDO('mysql:host=host;port=port;dbname=dbname', 'username', 'password');
+3. ?>
+```
+
+#### Logowanie z poziomu oprogramowania (SQuirreL SQL)
+
+- Uruchom program SQuirreL SQL i kliknij na <code className="action">Aliases</code>, i na <code className="action">+</code>.
+
+<img className="thumbnail" alt="launch SQuirreL SQL" src="/images/assets/screens/other/web-tools/squirrel/aliases.png" loading="lazy" />
+
+- Wypełnij poniższe pola i zatwierdź za pomocą przycisku <code className="action">OK</code>:
+    - **Name**: Wybierz nazwę
+    - **Driver**: Wybierz `MySQL Driver`
+    - **URL**: Wskaż adres serwera i port w formie `jdbc:mysql://server:port`
+    - **User Name**: Wskaż nazwę użytkownika
+    - **Password**: Wskaż hasło
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/add-alias.png" loading="lazy" />
+
+- Zatwierdź za pomocą przycisku <code className="action">Connect</code>
+
+<img className="thumbnail" alt="valid connection" src="/images/assets/screens/other/web-tools/squirrel/connect-to-mysql.png" loading="lazy" />
+
+Połączyłeś się z bazą danych:
+
+<img className="thumbnail" alt="config connection" src="/images/assets/screens/other/web-tools/squirrel/general-dashboard.png" loading="lazy" />
+
+#### Logowanie przez interfejs phpMyAdmin
+
+Możesz korzystać z phpMyAdmin do przeglądania zawartości bazy danych. W tym celu zainstaluj phpMyAdmin na Twoim własnym serwerze lub hostingu. Podczas tej instalacji skonfiguruj informacje dotyczące Twojego serwera Web Cloud Databases i wybranej bazy danych, aby phpMyAdmin mógł się do niego zalogować.
+
+### Eksportuj i zaimportuj bazę danych MySQL lub MariaDB
+
+- **Eksportowanie bazy danych z linii polecen**
+
+```bash
+mysqldump --host=serwer --user=użytkownik --port=port --password=password nazwa_bazy > nazwa_bazy.sql
+```
+
+- **Importowanie bazy danych z linii polecen**
+
+```bash
+cat nazwa_bazy.sql | mysql --host=serwer --user=użytkownik --port=port --password=password nazwa_bazy
+```
+
+:::info
+W niektórych przypadkach pamięć RAM dostępna w Twojej instancji Web Cloud Databases może nie powodować odpowiedniego eksportu lub importu. W takim przypadku zalecamy użycie narzędzia OVHcloud w Panelu klienta. W razie potrzeby skorzystaj z dokumentacji ["Pierwsze kroki z usługą Web Cloud Databases"](/guides/web-cloud/web-cloud-databases/starting-with-clouddb/).
+
+:::
+
+
+## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do [grona naszych użytkowników](https://community.ovhcloud.com/community/en). 

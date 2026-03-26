@@ -1,0 +1,692 @@
+[
+  {
+    "path": "account-and-service-management/account-information/key-concepts",
+    "titleEn": "Key Concepts - Account Information",
+    "titleFr": "Concepts clés - Informations du compte"
+  },
+  {
+    "path": "account-and-service-management/account-information/iam-overview",
+    "titleEn": "Overview - IAM",
+    "titleFr": "Aperçu - IAM"
+  },
+  {
+    "path": "account-and-service-management/account-information/iam-key-concepts",
+    "titleEn": "Key Concepts - IAM",
+    "titleFr": "Concepts clés - IAM"
+  },
+  {
+    "path": "account-and-service-management/account-information/sso-overview",
+    "titleEn": "Overview - SSO",
+    "titleFr": "Aperçu - SSO"
+  },
+  {
+    "path": "account-and-service-management/account-information/sso-key-concepts",
+    "titleEn": "Key Concepts - SSO",
+    "titleFr": "Concepts clés - SSO"
+  },
+  {
+    "path": "account-and-service-management/account-information/sso-getting-started",
+    "titleEn": "Getting Started - SSO",
+    "titleFr": "Premiers pas - SSO"
+  },
+  {
+    "path": "account-and-service-management/managing-billing-payments-and-services/billing-overview",
+    "titleEn": "Overview - Billing",
+    "titleFr": "Aperçu - Facturation"
+  },
+  {
+    "path": "account-and-service-management/managing-billing-payments-and-services/key-concepts",
+    "titleEn": "Key Concepts - Billing",
+    "titleFr": "Concepts clés - Facturation"
+  },
+  {
+    "path": "account-and-service-management/managing-billing-payments-and-services/getting-started",
+    "titleEn": "Getting Started - Billing",
+    "titleFr": "Premiers pas - Facturation"
+  },
+  {
+    "path": "account-and-service-management/startup-program/overview",
+    "titleEn": "Overview - Startup Program",
+    "titleFr": "Aperçu - Programme Startup"
+  },
+  {
+    "path": "account-and-service-management/startup-program/key-concepts",
+    "titleEn": "Key Concepts - Startup Program",
+    "titleFr": "Concepts clés - Programme Startup"
+  },
+  {
+    "path": "account-and-service-management/startup-program/getting-started",
+    "titleEn": "Getting Started - Startup Program",
+    "titleFr": "Premiers pas - Programme Startup"
+  },
+  {
+    "path": "bare-metal-cloud/dedicated-servers/key-concepts",
+    "titleEn": "Key Concepts - Dedicated Servers",
+    "titleFr": "Concepts clés - Serveurs Dédiés"
+  },
+  {
+    "path": "bare-metal-cloud/managed-bare-metal/key-concepts",
+    "titleEn": "Key Concepts - Managed Bare Metal",
+    "titleFr": "Concepts clés - Managed Bare Metal"
+  },
+  {
+    "path": "bare-metal-cloud/virtual-private-servers/key-concepts",
+    "titleEn": "Key Concepts - VPS",
+    "titleFr": "Concepts clés - VPS"
+  },
+  {
+    "path": "hosted-private-cloud/hosted-private-cloud-powered-by-vmware/key-concepts",
+    "titleEn": "Key Concepts - VMware on OVHcloud",
+    "titleFr": "Concepts clés - VMware on OVHcloud"
+  },
+  {
+    "path": "hosted-private-cloud/nutanix-on-ovhcloud/key-concepts",
+    "titleEn": "Key Concepts - Nutanix on OVHcloud",
+    "titleFr": "Concepts clés - Nutanix on OVHcloud"
+  },
+  {
+    "path": "hosted-private-cloud/sap-on-ovhcloud/key-concepts",
+    "titleEn": "Key Concepts - SAP on OVHcloud",
+    "titleFr": "Concepts clés - SAP on OVHcloud"
+  },
+  {
+    "path": "hosted-private-cloud/opcp/key-concepts",
+    "titleEn": "Key Concepts - OPCP",
+    "titleFr": "Concepts clés - OPCP"
+  },
+  {
+    "path": "hosted-private-cloud/baremetal-pod/overview",
+    "titleEn": "Overview - Baremetal Pod",
+    "titleFr": "Aperçu - Baremetal Pod"
+  },
+  {
+    "path": "hosted-private-cloud/baremetal-pod/key-concepts",
+    "titleEn": "Key Concepts - Baremetal Pod",
+    "titleFr": "Concepts clés - Baremetal Pod"
+  },
+  {
+    "path": "hosted-private-cloud/cloud-platform/overview",
+    "titleEn": "Overview - Cloud Platform",
+    "titleFr": "Aperçu - Cloud Platform"
+  },
+  {
+    "path": "hosted-private-cloud/cloud-platform/key-concepts",
+    "titleEn": "Key Concepts - Cloud Platform",
+    "titleFr": "Concepts clés - Cloud Platform"
+  },
+  {
+    "path": "public-cloud/compute/key-concepts",
+    "titleEn": "Key Concepts - Compute",
+    "titleFr": "Concepts clés - Compute"
+  },
+  {
+    "path": "public-cloud/public-cloud-databases/overview",
+    "titleEn": "Overview - Databases",
+    "titleFr": "Aperçu - Bases de données"
+  },
+  {
+    "path": "public-cloud/public-cloud-databases/key-concepts",
+    "titleEn": "Key Concepts - Databases",
+    "titleFr": "Concepts clés - Bases de données"
+  },
+  {
+    "path": "public-cloud/ai-machine-learning/overview",
+    "titleEn": "Overview - AI & Machine Learning",
+    "titleFr": "Aperçu - IA & Machine Learning"
+  },
+  {
+    "path": "public-cloud/ai-machine-learning/key-concepts",
+    "titleEn": "Key Concepts - AI & Machine Learning",
+    "titleFr": "Concepts clés - IA & Machine Learning"
+  },
+  {
+    "path": "public-cloud/ai-machine-learning/getting-started",
+    "titleEn": "Getting Started - AI & Machine Learning",
+    "titleFr": "Premiers pas - IA & Machine Learning"
+  },
+  {
+    "path": "public-cloud/containers-orchestration/overview",
+    "titleEn": "Overview - Containers & Orchestration",
+    "titleFr": "Aperçu - Conteneurs & Orchestration"
+  },
+  {
+    "path": "public-cloud/containers-orchestration/key-concepts",
+    "titleEn": "Key Concepts - Containers & Orchestration",
+    "titleFr": "Concepts clés - Conteneurs & Orchestration"
+  },
+  {
+    "path": "public-cloud/containers-orchestration/getting-started",
+    "titleEn": "Getting Started - Containers & Orchestration",
+    "titleFr": "Premiers pas - Conteneurs & Orchestration"
+  },
+  {
+    "path": "public-cloud/network-services/overview",
+    "titleEn": "Overview - Network Services",
+    "titleFr": "Aperçu - Services réseau"
+  },
+  {
+    "path": "public-cloud/network-services/key-concepts",
+    "titleEn": "Key Concepts - Network Services",
+    "titleFr": "Concepts clés - Services réseau"
+  },
+  {
+    "path": "public-cloud/network-services/getting-started",
+    "titleEn": "Getting Started - Network Services",
+    "titleFr": "Premiers pas - Services réseau"
+  },
+  {
+    "path": "manage-and-operate/api/overview",
+    "titleEn": "Overview - API",
+    "titleFr": "Aperçu - API"
+  },
+  {
+    "path": "manage-and-operate/api/key-concepts",
+    "titleEn": "Key Concepts - API",
+    "titleFr": "Concepts clés - API"
+  },
+  {
+    "path": "manage-and-operate/cli/overview",
+    "titleEn": "Overview - CLI",
+    "titleFr": "Aperçu - CLI"
+  },
+  {
+    "path": "manage-and-operate/cli/key-concepts",
+    "titleEn": "Key Concepts - CLI",
+    "titleFr": "Concepts clés - CLI"
+  },
+  {
+    "path": "manage-and-operate/iam/key-concepts",
+    "titleEn": "Key Concepts - IAM",
+    "titleFr": "Concepts clés - IAM"
+  },
+  {
+    "path": "manage-and-operate/iam/getting-started",
+    "titleEn": "Getting Started - IAM",
+    "titleFr": "Premiers pas - IAM"
+  },
+  {
+    "path": "manage-and-operate/kms/key-concepts",
+    "titleEn": "Key Concepts - KMS",
+    "titleFr": "Concepts clés - KMS"
+  },
+  {
+    "path": "manage-and-operate/observability/logs-data-platform/key-concepts",
+    "titleEn": "Key Concepts - Logs Data Platform",
+    "titleFr": "Concepts clés - Logs Data Platform"
+  },
+  {
+    "path": "manage-and-operate/secret-manager/key-concepts",
+    "titleEn": "Key Concepts - Secret Manager",
+    "titleFr": "Concepts clés - Secret Manager"
+  },
+  {
+    "path": "manage-and-operate/secret-manager/getting-started",
+    "titleEn": "Getting Started - Secret Manager",
+    "titleFr": "Premiers pas - Secret Manager"
+  },
+  {
+    "path": "manage-and-operate/terraform/key-concepts",
+    "titleEn": "Key Concepts - Terraform",
+    "titleFr": "Concepts clés - Terraform"
+  },
+  {
+    "path": "manage-and-operate/terraform/getting-started",
+    "titleEn": "Getting Started - Terraform",
+    "titleFr": "Premiers pas - Terraform"
+  },
+  {
+    "path": "network/additional-ip/key-concepts",
+    "titleEn": "Key Concepts - Additional IP",
+    "titleFr": "Concepts clés - Additional IP"
+  },
+  {
+    "path": "network/additional-ip/getting-started",
+    "titleEn": "Getting Started - Additional IP",
+    "titleFr": "Premiers pas - Additional IP"
+  },
+  {
+    "path": "network/bgp-service/key-concepts",
+    "titleEn": "Key Concepts - BGP Service",
+    "titleFr": "Concepts clés - Service BGP"
+  },
+  {
+    "path": "network/bgp-service/getting-started",
+    "titleEn": "Getting Started - BGP Service",
+    "titleFr": "Premiers pas - Service BGP"
+  },
+  {
+    "path": "network/bring-your-own-ip/key-concepts",
+    "titleEn": "Key Concepts - Bring Your Own IP",
+    "titleFr": "Concepts clés - Bring Your Own IP"
+  },
+  {
+    "path": "network/bring-your-own-ip/getting-started",
+    "titleEn": "Getting Started - Bring Your Own IP",
+    "titleFr": "Premiers pas - Bring Your Own IP"
+  },
+  {
+    "path": "network/content-delivery-network-infrastructure/overview",
+    "titleEn": "Overview - CDN Infrastructure",
+    "titleFr": "Aperçu - CDN Infrastructure"
+  },
+  {
+    "path": "network/content-delivery-network-infrastructure/key-concepts",
+    "titleEn": "Key Concepts - CDN Infrastructure",
+    "titleFr": "Concepts clés - CDN Infrastructure"
+  },
+  {
+    "path": "network/load-balancer/key-concepts",
+    "titleEn": "Key Concepts - Load Balancer",
+    "titleFr": "Concepts clés - Load Balancer"
+  },
+  {
+    "path": "network/load-balancer/getting-started",
+    "titleEn": "Getting Started - Load Balancer",
+    "titleFr": "Premiers pas - Load Balancer"
+  },
+  {
+    "path": "network/ovhcloud-connect/key-concepts",
+    "titleEn": "Key Concepts - OVHcloud Connect",
+    "titleFr": "Concepts clés - OVHcloud Connect"
+  },
+  {
+    "path": "network/ovhcloud-connect/getting-started",
+    "titleEn": "Getting Started - OVHcloud Connect",
+    "titleFr": "Premiers pas - OVHcloud Connect"
+  },
+  {
+    "path": "network/vrack-services/key-concepts",
+    "titleEn": "Key Concepts - vRack Services",
+    "titleFr": "Concepts clés - vRack Services"
+  },
+  {
+    "path": "network/vrack-services/getting-started",
+    "titleEn": "Getting Started - vRack Services",
+    "titleFr": "Premiers pas - vRack Services"
+  },
+  {
+    "path": "storage-and-backup/object-storage/overview",
+    "titleEn": "Overview - Object Storage",
+    "titleFr": "Aperçu - Object Storage"
+  },
+  {
+    "path": "storage-and-backup/object-storage/key-concepts",
+    "titleEn": "Key Concepts - Object Storage",
+    "titleFr": "Concepts clés - Object Storage"
+  },
+  {
+    "path": "storage-and-backup/object-storage/getting-started",
+    "titleEn": "Getting Started - Object Storage",
+    "titleFr": "Premiers pas - Object Storage"
+  },
+  {
+    "path": "storage-and-backup/file-storage/overview",
+    "titleEn": "Overview - File Storage",
+    "titleFr": "Aperçu - File Storage"
+  },
+  {
+    "path": "storage-and-backup/file-storage/key-concepts",
+    "titleEn": "Key Concepts - File Storage",
+    "titleFr": "Concepts clés - File Storage"
+  },
+  {
+    "path": "storage-and-backup/file-storage/getting-started",
+    "titleEn": "Getting Started - File Storage",
+    "titleFr": "Premiers pas - File Storage"
+  },
+  {
+    "path": "storage-and-backup/block-storage/overview",
+    "titleEn": "Overview - Block Storage",
+    "titleFr": "Aperçu - Block Storage"
+  },
+  {
+    "path": "storage-and-backup/block-storage/key-concepts",
+    "titleEn": "Key Concepts - Block Storage",
+    "titleFr": "Concepts clés - Block Storage"
+  },
+  {
+    "path": "storage-and-backup/block-storage/getting-started",
+    "titleEn": "Getting Started - Block Storage",
+    "titleFr": "Premiers pas - Block Storage"
+  },
+  {
+    "path": "storage-and-backup/backup-agent/key-concepts",
+    "titleEn": "Key Concepts - Backup Agent",
+    "titleFr": "Concepts clés - Backup Agent"
+  },
+  {
+    "path": "storage-and-backup/backup-agent/getting-started",
+    "titleEn": "Getting Started - Backup Agent",
+    "titleFr": "Premiers pas - Backup Agent"
+  },
+  {
+    "path": "storage-and-backup/backup-and-disaster-recovery-solutions/overview",
+    "titleEn": "Overview - Backup & Disaster Recovery",
+    "titleFr": "Aperçu - Sauvegarde & Reprise d'activité"
+  },
+  {
+    "path": "storage-and-backup/backup-and-disaster-recovery-solutions/key-concepts",
+    "titleEn": "Key Concepts - Backup & Disaster Recovery",
+    "titleFr": "Concepts clés - Sauvegarde & Reprise d'activité"
+  },
+  {
+    "path": "storage-and-backup/backup-and-disaster-recovery-solutions/getting-started",
+    "titleEn": "Getting Started - Backup & Disaster Recovery",
+    "titleFr": "Premiers pas - Sauvegarde & Reprise d'activité"
+  },
+  {
+    "path": "web-cloud/domains/key-concepts",
+    "titleEn": "Key Concepts - Domains",
+    "titleFr": "Concepts clés - Noms de domaine"
+  },
+  {
+    "path": "web-cloud/domains/getting-started",
+    "titleEn": "Getting Started - Domains",
+    "titleFr": "Premiers pas - Noms de domaine"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/mx-plan/key-concepts",
+    "titleEn": "Key Concepts - MX Plan",
+    "titleFr": "Concepts clés - MX Plan"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/mx-plan/getting-started",
+    "titleEn": "Getting Started - MX Plan",
+    "titleFr": "Premiers pas - MX Plan"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/email-pro/overview",
+    "titleEn": "Overview - Email Pro",
+    "titleFr": "Aperçu - Email Pro"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/email-pro/key-concepts",
+    "titleEn": "Key Concepts - Email Pro",
+    "titleFr": "Concepts clés - Email Pro"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/microsoft-exchange/key-concepts",
+    "titleEn": "Key Concepts - Microsoft Exchange",
+    "titleFr": "Concepts clés - Microsoft Exchange"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/microsoft-exchange/getting-started",
+    "titleEn": "Getting Started - Microsoft Exchange",
+    "titleFr": "Premiers pas - Microsoft Exchange"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/microsoft-office/overview",
+    "titleEn": "Overview - Microsoft Office",
+    "titleFr": "Aperçu - Microsoft Office"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/microsoft-office/key-concepts",
+    "titleEn": "Key Concepts - Microsoft Office",
+    "titleFr": "Concepts clés - Microsoft Office"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/microsoft-office/getting-started",
+    "titleEn": "Getting Started - Microsoft Office",
+    "titleFr": "Premiers pas - Microsoft Office"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/zimbra/overview",
+    "titleEn": "Overview - Zimbra",
+    "titleFr": "Aperçu - Zimbra"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/zimbra/key-concepts",
+    "titleEn": "Key Concepts - Zimbra",
+    "titleFr": "Concepts clés - Zimbra"
+  },
+  {
+    "path": "web-cloud/web-hosting/key-concepts",
+    "titleEn": "Key Concepts - Web Hosting",
+    "titleFr": "Concepts clés - Hébergement Web"
+  },
+  {
+    "path": "web-cloud/web-hosting/getting-started",
+    "titleEn": "Getting Started - Web Hosting",
+    "titleFr": "Premiers pas - Hébergement Web"
+  },
+  {
+    "path": "web-cloud/web-cloud-databases/key-concepts",
+    "titleEn": "Key Concepts - Web Cloud Databases",
+    "titleFr": "Concepts clés - Web Cloud Databases"
+  },
+  {
+    "path": "web-cloud/web-cloud-databases/getting-started",
+    "titleEn": "Getting Started - Web Cloud Databases",
+    "titleFr": "Premiers pas - Web Cloud Databases"
+  },
+  {
+    "path": "web-cloud/ssl-gateway/overview",
+    "titleEn": "Overview - SSL Gateway",
+    "titleFr": "Aperçu - SSL Gateway"
+  },
+  {
+    "path": "web-cloud/ssl-gateway/key-concepts",
+    "titleEn": "Key Concepts - SSL Gateway",
+    "titleFr": "Concepts clés - SSL Gateway"
+  },
+  {
+    "path": "web-cloud/ssl-gateway/getting-started",
+    "titleEn": "Getting Started - SSL Gateway",
+    "titleFr": "Premiers pas - SSL Gateway"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/sms/key-concepts",
+    "titleEn": "Key Concepts - SMS",
+    "titleFr": "Concepts clés - SMS"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/sms/getting-started",
+    "titleEn": "Getting Started - SMS",
+    "titleFr": "Premiers pas - SMS"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/voip/overview",
+    "titleEn": "Overview - VoIP",
+    "titleFr": "Aperçu - VoIP"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/voip/key-concepts",
+    "titleEn": "Key Concepts - VoIP",
+    "titleFr": "Concepts clés - VoIP"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/voip/getting-started",
+    "titleEn": "Getting Started - VoIP",
+    "titleFr": "Premiers pas - VoIP"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/fax/overview",
+    "titleEn": "Overview - Fax",
+    "titleFr": "Aperçu - Fax"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/fax/key-concepts",
+    "titleEn": "Key Concepts - Fax",
+    "titleFr": "Concepts clés - Fax"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/fax/getting-started",
+    "titleEn": "Getting Started - Fax",
+    "titleFr": "Premiers pas - Fax"
+  },
+  {
+    "path": "web-cloud/internet/internet-access/key-concepts",
+    "titleEn": "Key Concepts - Internet Access",
+    "titleFr": "Concepts clés - Accès Internet"
+  },
+  {
+    "path": "web-cloud/internet/internet-access/getting-started",
+    "titleEn": "Getting Started - Internet Access",
+    "titleFr": "Premiers pas - Accès Internet"
+  },
+  {
+    "path": "web-cloud/internet/overthebox/overview",
+    "titleEn": "Overview - OverTheBox",
+    "titleFr": "Aperçu - OverTheBox"
+  },
+  {
+    "path": "web-cloud/internet/overthebox/key-concepts",
+    "titleEn": "Key Concepts - OverTheBox",
+    "titleFr": "Concepts clés - OverTheBox"
+  },
+  {
+    "path": "web-cloud/managed-hosting/overview",
+    "titleEn": "Overview - Managed Hosting",
+    "titleFr": "Aperçu - Hébergement Managé"
+  },
+  {
+    "path": "web-cloud/managed-hosting/key-concepts",
+    "titleEn": "Key Concepts - Managed Hosting",
+    "titleFr": "Concepts clés - Hébergement Managé"
+  },
+  {
+    "path": "web-cloud/managed-hosting/getting-started",
+    "titleEn": "Getting Started - Managed Hosting",
+    "titleFr": "Premiers pas - Hébergement Managé"
+  },
+  {
+    "path": "bare-metal-cloud/dedicated-servers/overview",
+    "titleEn": "Overview - Dedicated Servers",
+    "titleFr": "Aperçu - Serveurs Dédiés"
+  },
+  {
+    "path": "bare-metal-cloud/managed-bare-metal/overview",
+    "titleEn": "Overview - Managed Bare Metal",
+    "titleFr": "Aperçu - Managed Bare Metal"
+  },
+  {
+    "path": "bare-metal-cloud/virtual-private-servers/overview",
+    "titleEn": "Overview - VPS",
+    "titleFr": "Aperçu - VPS"
+  },
+  {
+    "path": "hosted-private-cloud/hosted-private-cloud-powered-by-vmware/overview",
+    "titleEn": "Overview - VMware on OVHcloud",
+    "titleFr": "Aperçu - VMware on OVHcloud"
+  },
+  {
+    "path": "hosted-private-cloud/nutanix-on-ovhcloud/overview",
+    "titleEn": "Overview - Nutanix on OVHcloud",
+    "titleFr": "Aperçu - Nutanix on OVHcloud"
+  },
+  {
+    "path": "hosted-private-cloud/sap-on-ovhcloud/overview",
+    "titleEn": "Overview - SAP on OVHcloud",
+    "titleFr": "Aperçu - SAP on OVHcloud"
+  },
+  {
+    "path": "hosted-private-cloud/opcp/overview",
+    "titleEn": "Overview - OPCP",
+    "titleFr": "Aperçu - OPCP"
+  },
+  {
+    "path": "manage-and-operate/iam/overview",
+    "titleEn": "Overview - IAM",
+    "titleFr": "Aperçu - IAM"
+  },
+  {
+    "path": "manage-and-operate/kms/overview",
+    "titleEn": "Overview - KMS",
+    "titleFr": "Aperçu - KMS"
+  },
+  {
+    "path": "manage-and-operate/observability/logs-data-platform/overview",
+    "titleEn": "Overview - Logs Data Platform",
+    "titleFr": "Aperçu - Logs Data Platform"
+  },
+  {
+    "path": "manage-and-operate/secret-manager/overview",
+    "titleEn": "Overview - Secret Manager",
+    "titleFr": "Aperçu - Secret Manager"
+  },
+  {
+    "path": "manage-and-operate/terraform/overview",
+    "titleEn": "Overview - Terraform",
+    "titleFr": "Aperçu - Terraform"
+  },
+  {
+    "path": "network/additional-ip/overview",
+    "titleEn": "Overview - Additional IP",
+    "titleFr": "Aperçu - Additional IP"
+  },
+  {
+    "path": "network/bgp-service/overview",
+    "titleEn": "Overview - BGP Service",
+    "titleFr": "Aperçu - Service BGP"
+  },
+  {
+    "path": "network/bring-your-own-ip/overview",
+    "titleEn": "Overview - Bring Your Own IP",
+    "titleFr": "Aperçu - Bring Your Own IP"
+  },
+  {
+    "path": "network/load-balancer/overview",
+    "titleEn": "Overview - Load Balancer",
+    "titleFr": "Aperçu - Load Balancer"
+  },
+  {
+    "path": "network/ovhcloud-connect/overview",
+    "titleEn": "Overview - OVHcloud Connect",
+    "titleFr": "Aperçu - OVHcloud Connect"
+  },
+  {
+    "path": "network/vrack-services/overview",
+    "titleEn": "Overview - vRack Services",
+    "titleFr": "Aperçu - vRack Services"
+  },
+  {
+    "path": "web-cloud/domains/overview",
+    "titleEn": "Overview - Domains",
+    "titleFr": "Aperçu - Noms de domaine"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/mx-plan/overview",
+    "titleEn": "Overview - MX Plan",
+    "titleFr": "Aperçu - MX Plan"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/microsoft-exchange/overview",
+    "titleEn": "Overview - Microsoft Exchange",
+    "titleFr": "Aperçu - Microsoft Exchange"
+  },
+  {
+    "path": "web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/overview",
+    "titleEn": "Overview - OWA Webmail",
+    "titleFr": "Aperçu - OWA Webmail"
+  },
+  {
+    "path": "web-cloud/web-hosting/overview",
+    "titleEn": "Overview - Web Hosting",
+    "titleFr": "Aperçu - Hébergement Web"
+  },
+  {
+    "path": "web-cloud/web-cloud-databases/overview",
+    "titleEn": "Overview - Web Cloud Databases",
+    "titleFr": "Aperçu - Web Cloud Databases"
+  },
+  {
+    "path": "web-cloud/phone-and-fax/sms/overview",
+    "titleEn": "Overview - SMS",
+    "titleFr": "Aperçu - SMS"
+  },
+  {
+    "path": "web-cloud/internet/internet-access/overview",
+    "titleEn": "Overview - Internet Access",
+    "titleFr": "Aperçu - Accès Internet"
+  },
+  {
+    "path": "storage-and-backup/backup-agent/overview",
+    "titleEn": "Overview - Backup Agent",
+    "titleFr": "Aperçu - Backup Agent"
+  },
+  {
+    "path": "account-and-service-management/account-information/overview",
+    "titleEn": "Overview - Account Information",
+    "titleFr": "Aperçu - Informations du compte"
+  }
+]

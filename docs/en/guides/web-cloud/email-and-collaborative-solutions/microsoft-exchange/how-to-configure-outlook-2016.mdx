@@ -1,0 +1,176 @@
+---
+title: Exchange - Configure your email account on Outlook for Windows
+description: Find out how to configure your Exchange account in Outlook for Windows
+lastUpdated: 2026-01-30
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objective
+
+You can configure Exchange accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application. Microsoft Outlook is the recommended software for using an Exchange email address with its collaborative features.
+
+**Find out how to configure your Exchange account in Outlook for Windows**
+
+<iframe className="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2YeGXo10CX8?si=mINBBXq6qb4MiFEt" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen={true}></iframe>
+
+## Requirements
+
+- An [OVHcloud Exchange account](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
+- [Outlook Classic](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) for Windows installed on your device
+- Login credentials for the email account to be configured
+- The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/).
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+<details>
+
+<summary>Information regarding the management and configuration of OVHcloud services</summary>
+
+
+This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
+
+If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
+
+</details>
+
+
+:::info
+Are you using Outlook for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook for Mac.](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016-mac/).
+
+:::
+
+
+## Instructions
+
+:::warning
+Before you begin configuring your account, it is important to note that the Outlook application included free with Windows 11 is [incompatible](https://learn.microsoft.com/en-gb/microsoft-365-apps/outlook/get-started/supported-account-types) with OVHcloud Exchange solutions, known as on-premises. You will need to use the classic **Outlook** version.
+
+To install Outlook Classic on your Windows computer, download it from the Microsoft page "[Install or reinstall Outlook Classic on a Windows PC](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5)", and install it.
+
+Once the installation is complete, to distinguish between the two versions when they are installed, type "Outlook" in the Windows search bar. You can then see the difference as below.
+
+<img className="thumbnail" alt="outlook Windows" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/outlook-windows-identify01.png" loading="lazy" />
+
+:::
+
+
+### Adding the account
+
+- **When you start the application for the first time**: A setup wizard will appear and prompt you to enter your email address.
+
+- **If you have already added an account**: Click <code className="action">File</code> in the menu bar at the top of your screen, then <code className="action">Add account</code>.
+
+<img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange01.png" loading="lazy" />
+
+**On Windows 11, the Outlook classic interface may differ when you add an account.**
+
+Depending on the Outlook usage history on the concerned computer, a specific configuration may lead to the display of a different interface. In some cases, the so-called "modern" interface (**interface 1**) may be disabled in favour of the historical interface (**interface 2**).
+
+This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
+
+<Tabs>
+  <Tab label="Interface 1">
+    - Enter your email address, then click <code className="action">Advanced options</code>.
+    - Tick the box next to <code className="action">Let me set up my account manually</code>, then click <code className="action">Connect</code>.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-legacy-exchange02.png" loading="lazy" />
+    - Select **Exchange** from the list of account types.
+    
+    - Enter your email password in the next window, tick the box to store it, then click <code className="action">OK</code>.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-legacy-exchange03.png" loading="lazy" />
+    
+    :::info
+    If you get a message saying that Outlook was unable to configure your account, this may mean that the OVHcloud SRV record is not correctly configured in your domain name’s DNS zone.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-legacy-exchange04.png" loading="lazy" />
+
+We recommend that you check the configuration of the domain name associated with your Exchange service. In your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the <code className="action">Associated domains</code> tab and check the <code className="action">Diagnostic</code> column of the table.
+
+    :::
+
+    
+    - If your domain name’s configuration is valid, you may receive a login authorisation message for your OVHcloud servers. Accept this to allow your Exchange account to be configured automatically.
+    - Then determine the retention period of the items in your Exchange account to keep them stored **locally on your computer**. Click <code className="action">Next</code>, and then click <code className="action">Done</code>.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-legacy-exchange05.png" loading="lazy" />
+  </Tab>
+  <Tab label="Interface 2">
+    - Leave `Mail account` checked and complete the following information:
+        - **Name**: set a display name.
+        - **Email address**: enter your full email address.
+        - **Password**: enter the password associated with your email address.
+        - **Confirm password**: enter the password associated with your email address again.
+    - Click on <code className="action">Next</code> to continue.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange02.png" loading="lazy" />
+    
+    - If your domain name configuration is valid, a message authorizing connection to the OVHcloud Exchange server may appear. Click on <code className="action">Allow</code> **(1)** to allow the automatic configuration of your Exchange account.
+    - A second authentication window appears, enter the password of your email address **(2)**.
+    
+    <img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange03.png" loading="lazy" />
+
+After authorization and authentication to the OVHcloud Exchange server, the configuration will be completed and your account will be operational.
+  </Tab>
+</Tabs>
+
+
+### Using your email address
+
+Once you have configured your email address, you can start using it! You can now send and receive emails.
+
+Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovhcloud.com/en-gb/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/).
+
+### Modifying existing settings
+
+:::warning
+It is not possible to modify the server settings of an Exchange account. If you encounter an anomaly related to synchronization with the server, it is necessary to delete the Outlook account and reconfigure it. To do this, follow the instructions below.
+
+:::
+
+
+If your email account is already set up and you need to access the account settings to delete it:
+
+- Go to <code className="action">File</code> from the menu bar at the top of your screen.
+- Select the account to modify in the drop-down menu **(1)**.
+- Click on <code className="action">Account settings</code> **(2)** below.
+- Click on <code className="action">Account settings...</code> **(3)** to access the settings window.
+
+<img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange04.png" loading="lazy" />
+
+- The account settings window appears, select the concerned email account and click on <code className="action">Delete</code>.
+
+<img className="thumbnail" alt="Outlook" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/how-to-configure-outlook-2016/config-outlook-exchange05.png" loading="lazy" />
+
+Once the Exchange account is deleted, follow the "[Add the account](#add-account)" section of this guide to reconfigure your email account.
+
+### Retrieving a backup of your email address
+
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration#exporting-from-windows/).
+
+## Go further <a name="go-further"></a>
+
+:::info
+For more information about configuring an email address from the Outlook app on Windows, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
+
+:::
+
+
+[Configuring your MX Plan address in Outlook for Windows](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/how-to-configure-outlook-2016/)
+
+[Configuring your Email Pro account in Outlook for Windows](/guides/web-cloud/email-and-collaborative-solutions/email-pro/how-to-configure-outlook-2016/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

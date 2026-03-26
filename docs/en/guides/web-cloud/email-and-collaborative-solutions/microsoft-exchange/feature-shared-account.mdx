@@ -1,0 +1,123 @@
+---
+title: Creating and using a shared account
+description: Find out how to add and use a shared account on your Exchange email solution
+lastUpdated: 2025-04-28
+---
+
+## Objective
+
+A **shared account** is a mailbox shared between several Exchange accounts and can only be accessed through them. A shared account does not have a password. It is therefore necessary to delegate its access to one or more Exchange accounts of the same service.
+<br/>Shared accounts can be accessed via delegation from OWA (Exchange webmail) or via Outlook email software.
+
+**This guide explains how to create and manage a shared account on your Exchange platform.**
+
+## Requirements
+
+- An [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Instructions
+
+### Adding a shared account
+
+Select the <code className="action">Shared accounts</code> tab in the horizontal menu and click on <code className="action">Add a shared account</code>.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts01.png" loading="lazy" />
+
+Fill in the requested fields:
+
+|Field|Description|
+|---|---|
+|Email account|Choose the name of your shared account. **This must not be an existing email address.**|
+|Quota|Enter the desired storage quota for your shared account, [depending on available space](#size).|
+|Display name|The display name you want to appear when sending from your shared account.|
+|Hide the address in the directory|By hiding the address in the directory you can ensure that the shared account is not visible in the address list of your Exchange service.|
+
+<a name="size"></a>
+
+:::info
+The space available for creating a shared account depends on the number of accounts subscribed on the Exchange service. Each account adds 5 GB of space for shared accounts.
+
+**Example**:
+
+You have subscribed to 4 accounts on your Exchange service, so you have **4 x 5 GB** i.e. **20 GB** of allocated space for shared accounts on this Exchange service.
+
+:::
+
+
+Click <code className="action">Next</code> to proceed to the summary. Complete the operation by clicking on <code className="action">Confirm</code>.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts02.png" loading="lazy" />
+
+### Managing the delegation of a shared account
+
+Once you have created your shared account, you will need to grant access permissions to one or more accounts of the Exchange service.
+
+A shared account cannot be accessed directly because it does not have a password. It cannot be configured directly in an Outlook client, or accessed via webmail.
+
+You will need to set up a delegation between an Exchange account and the shared account.
+
+In the <code className="action">Shared accounts</code> tab of your Exchange service, click on the <code className="action">...</code> button next to the shared account, then click <code className="action">Manage delegations</code>. You can then choose which accounts can access the shared account.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts03.png" loading="lazy" />
+
+Choose the permissions for the selected account:
+
+|Permission|Description|
+|---|---|
+|"Send As" permission|Allows the selected email account to send an email as the shared email address.|
+|"Send on Behalf" permission|Allows the selected email account to send on behalf of the shared email address.|
+|Access permission|Allows the selected email account to view and manage the shared account from OWA or Outlook.|
+
+Then click <code className="action">Next</code> and <code className="action">Confirm</code> to save the changes.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts04.png" loading="lazy" />
+
+In our example, we allow the accounts **guide-exchange@** and **test@** to access **shared_test@**.
+<br/>The account **guide-exchange@** will also have the right to send mails "as" **shared_test@**.
+<br/>The account **test@** can also send emails "on behalf of" **shared_test@**.
+
+### Using the account shared from OWA (webmail)
+
+Log in to [webmail](https://www.ovhcloud.com/en-gb/mail/) with an Exchange account that has access to the shared account.
+<br/>In our example, we connect with the **guide-exchange@** account.
+
+Once you have logged in, right-click on the main tree for your email address in the left-hand column. Select <code className="action">Add shared folder...</code> from the context menu.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts05.png" loading="lazy" />
+
+Enter the name of your shared account and click <code className="action">Add</code> when it is found in the Exchange directory.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts06.png" loading="lazy" />
+
+In our example, the shared account is now accessible from the **guide-exchange@** account.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts07.png" loading="lazy" />
+
+### Using the shared account from Outlook
+
+In the Outlook application, you will see your shared account in the left-hand column in the same way as in OWA.
+
+<img className="thumbnail" alt="emails" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-shared-account/exchange-shared_accounts10.png" loading="lazy" />
+
+## Go further <a name="go-further"></a>
+
+[Using the Outlook Web App with an Exchange account](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Delegating permissions on an Exchange account](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[How to share calendars via OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+[Creating automatic signatures](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

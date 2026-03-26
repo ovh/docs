@@ -1,0 +1,197 @@
+---
+title: Creating an Instance via the Horizon interface
+description: Find out how to create an Instance via the Horizon interface
+lastUpdated: 2024-08-27
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objective
+
+You can create multiple Instances directly in the Horizon interface, and also configure a security group to apply to your Instances.
+
+**Find out how to create an Instance via the Horizon interface.**
+
+## Requirements
+
+- A [Public Cloud project](/guides/public-cloud/public-cloud-cross-functional/create-a-public-cloud-project/) in your OVHcloud account
+- [Access to the Horizon interface](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/)
+
+## Instructions
+
+### Create a private network
+
+As a general rule, we recommend creating a private network before creating an instance. You can later attach this network to your instance.
+
+To begin, log in to the Horizon interface. If you are unsure about how to do this, please refer to [our guide](/guides/public-cloud/public-cloud-cross-functional/introducing-horizon/).
+
+Next, click on <code className="action">Network</code> in the left-hand menu, then <code className="action">Networks</code>.
+
+<img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/create-network.png" loading="lazy" />
+
+Click on <code className="action">Create Network</code>
+
+<img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/create-network-1.png" loading="lazy" />
+
+<Tabs>
+  <Tab label="1. **Network**">
+    **Network Name:** Enter a name for your network.<br/>
+
+**Enable Admin State:** Leave this option checked to activate the network.<br/>
+
+**Create Subnet:** Leave this option checked to create the subnet.<br/>
+
+**Availability Zone Hints:** Leave the default option.<br/><br/>
+    <img className="thumbnail" alt="network" src="/images/public-cloud/compute/create-instance-in-horizon/network_information.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="2. **Subnet**">
+    **Subnet Name:** Enter a name for your subnet.<br/>
+
+**Network Address:** Choose a private network range. For example: `192.168.0.0/24`.<br/>
+
+**IP Version:** Leave this value at IPv4.<br/>
+
+**Gateway IP:** This is optional. If it is not defined, a Gateway IP is automatically selected.<br/>
+
+**Disable Gateway:** Leave this unchecked.<br/><br/>
+    <img className="thumbnail" alt="subnet" src="/images/public-cloud/compute/create-instance-in-horizon/subnet_information.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="3. **Subnet Details**">
+    **Enable DHCP:** Leave this option checked.<br/>
+
+**Allocation Pools:** Optional. You can specify the range from which IPs are selected.<br/>
+
+**DNS Name Servers:** Optional. You can specify any DNS name servers.<br/>
+
+**Host Routes:** Optional. You can specify any host routes.<br/><br/>
+    <img className="thumbnail" alt="KVM" src="/images/public-cloud/compute/create-instance-in-horizon/subnetdetails_information.png" loading="lazy" /><br/>
+  </Tab>
+</Tabs>
+
+
+### Create Instance
+
+In the Horizon interface, click on <code className="action">Compute</code> in the left-hand menu, then <code className="action">Instances</code>.
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step1.png" loading="lazy" />
+
+The page that opens can be used to view the Instances that are currently launched. To launch a new one, click the <code className="action">Launch Instance</code> button.
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step2.png" loading="lazy" />
+
+You will then need to fill in the information requested. Please note that this grid is not exhaustive.
+
+**Details**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step3.png" loading="lazy" />
+
+|Information|Details|
+|---|---|
+|Instance name|Specify the name you want for the Instance that will be launched.|
+|Description|This is Optional. Set a description if applicable.|
+|Availability zone|Leave "nova" (default choice).|
+|Count|Specify the number of Instances to launch.|
+
+**Source**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step4.png" loading="lazy" />
+
+
+|Information|Details|
+|---|---|
+|Select Boot Source|Click on the drop-down arrow to select the source for launching an instance (e.g. "Image" or "Instance snapshot").|
+|Create New Volume|You may choose to check this option if you wish to create a volume into which the specified operating system image is copied.|
+|Volume size (GB)|If you have chosen to create a volume, allow the system to determine the size for you.|
+|Delete Volume on Instance Delete|You can leave the default option **No**. If **Yes** is selected, when the instance is deleted, so is the volume.|
+|Image name (only when launching from an image)|Select the Instance image by clicking on the upward arrow next to the image of your choice. In our example, we use selected Centos 7.|
+|Instance snapshot (only for launching from a snapshot)|Choose an Instance snapshot by clicking on the upward arrow next to the instance snapshot image of your choice.|
+
+**Flavor**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step5.png" loading="lazy" />
+
+Pre-built flavors are available for you, select the flavor of your choice underneath the `Available` tab.
+
+**Networks**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step6.png" loading="lazy" />
+
+|Information|Details|
+|---|---|
+|Network|Select the network(s) for the Instance you want to create, from the list of available networks.|
+|Ext-Net|Represents the Public Network.|
+|Mynewnetwork|Represents the Private network created at the beginning of this guide.|
+
+**Security Groups**
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step7.png" loading="lazy" />
+
+For more information, consult [this guide](/guides/public-cloud/compute/setup-security-group/).
+
+**Key Pair**
+
+:::warning
+Although the "Key Pair" field is not mandatory in the Horizon interface when creating an instance, registering an SSH key is absolutely necessary to be able to connect to an instance. Without an SSH key, you will be required to reboot the instance in rescue mode to either create a password or add an SSH key to the appropriate file (for more information, please refer to the guide on [Replacing your lost SSH key pair](/guides/public-cloud/compute/replacing-lost-ssh-key#instructions/)).
+
+:::
+
+
+<img className="thumbnail" alt="createinstance" src="/images/public-cloud/compute/create-instance-in-horizon/create-instance-step8.png" loading="lazy" />
+
+In this section, you have the option to create a keypair, import a keypair or use an existing key pair.
+
+For more information on how to create an SSH key, consult [this guide](/guides/public-cloud/compute/compute-creating-ssh-keys/).
+
+<Tabs>
+  <Tab label="+ Create Key Pair">
+    To create a Keypair, click on the <code className="action">+ Create Key Pair</code> button. Please note that with this option, additional steps have to be made before you are able to connect to the instance, especially if you are using the software PuTTY to connect to your instance. See [this section](/guides/public-cloud/compute/public-cloud-first-steps#connect-instance/) of the corresponding guide.
+    
+    **Key Pair Name:** Enter a name for your key.<br/>
+    *Key Type:** Click on the <code className="action">drop down arrow</code> and select <code className="action">SSH Key</code>.<br/>
+
+Next, click on <code className="action">Create Keypair</code> to begin the creation of the key pair.<br/>
+
+Once the Key Pair is created, click on <code className="action">Copy Private Key to Clipboard</code>, then on <code className="action">Done</code>.<br/><br/>
+    <img className="thumbnail" alt="create ssh key" src="/images/public-cloud/compute/create-instance-in-horizon/create-ssh-key-1.png" loading="lazy" /><br/>
+
+Once done, the newly created key will be automatically selected. Click on <code className="action">Launch Instance</code> to begin the creation of your instance.<br/><br/>
+    
+    <img className="thumbnail" alt="create instance" src="/images/public-cloud/compute/create-instance-in-horizon/launch-instance.png" loading="lazy" /><br/>
+  </Tab>
+  <Tab label="Import Key Pair">
+    If you prefer to import a previously created SSH key, click on the <code className="action">Import Key Pair</code> button.
+    
+    **Key Pair Name:** Enter a name for your key.<br/>
+    *Key Type:** Click on the <code className="action">drop down arrow</code> and select <code className="action">SSH Key</code>.<br/>
+
+**Load Public Key from a file:**  Click on <code className="action">Browse</code> to specify the location of the public key on your computer.<br/>
+
+**Public Key:** Copy and paste your public key here.<br/>
+
+Click on <code className="action">Import Key Pair</code> to import the key.<br/><br/>
+    <img className="thumbnail" alt="import key pair" src="/images/public-cloud/compute/create-instance-in-horizon/import-ssh-key.png" loading="lazy" /><br/>
+
+Once done, the imported key will be automatically selected. Click on <code className="action">Launch Instance</code> to begin the creation of your instance.<br/><br/>
+    
+    <img className="thumbnail" alt="create instance" src="/images/public-cloud/compute/create-instance-in-horizon/launch-instance.png" loading="lazy" /><br/>
+  </Tab>
+</Tabs>
+
+
+**Other options**
+
+Please note that these options are not mandatory for the creation of a basic instance. If you wish to explore these options further, consult the [official OpenStack documentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
+
+|Information|Details|
+|---|---|
+|Custom script source|Specify the source between a "direct entry" or a "file".|
+|Script data|Enter the script code in the input field (16KB maximum).|
+|Script file|Click <code className="action">Browse</code> to select the post-installation script.|
+|Disk partitioning|Choose between "automatic" or "manual".|
+|Configuration disk|Configure OpenStack to write metadata on to a specific configuration disk that will be attached to the Instance when it is launched.|
+
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

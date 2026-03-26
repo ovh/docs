@@ -1,0 +1,144 @@
+---
+title: Exchange - Cómo gestionar los logs
+description: Aprenda a visualizar y gestionar los logs en su oferta Private Exchange o Trusted Exchange
+lastUpdated: 2025-10-28
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Objetivo 
+
+Los logs corresponden a los eventos ocurridos en un sistema informático (servidor, ordenador, aplicación, sitio web, base de datos, red informática, etc.). Por ejemplo, los logs pueden registrar y contener uno o varios de los siguientes elementos:
+
+- La marca de tiempo (fecha, hora, minuto, segundo) del evento.
+- La naturaleza del evento (conexión, desconexión, error, descarga, carga, alerta, etc.).
+- Información complementaria sobre el evento (páginas o archivos consultados, aplicaciones iniciadas, servidores remotos llamados, nombre de un archivo cargado o descargado, etc.).
+- El origen del evento (identificador del usuario, dirección IP de origen, programa de origen, etc.).
+- El estado del sistema en el momento del evento (recursos disponibles, memoria restante, uso del CPU, etc.).
+
+Normalmente, los logs se generan directamente por los sistemas informáticos en los que ocurren los eventos. Se almacenan e historializan en archivos de texto también llamados archivos de registro.
+
+Los archivos de registro permiten realizar las siguientes acciones:
+
+- Analizar el comportamiento del sistema informático que genera los logs.
+- Identificar los errores ocurridos en el sistema informático.
+- Resolver los errores encontrados en el sistema informático.
+- Optimizar el funcionamiento y el rendimiento del sistema informático.
+
+Su oferta Private Exchange o Trusted Exchange genera sus propios logs. Puede que necesite consultar/recuperar los logs para analizar el acceso a sus buzones de correo o seguir los flujos de correo electrónico.
+
+**Aprenda a visualizar y gestionar los logs en su oferta Private Exchange o Trusted Exchange**
+
+## Requisitos
+
+- Tener contratada una oferta [Private Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [Trusted Exchange](https://www.ovhcloud.com/es-es/enterprise/products/trusted-exchange/).
+- Una cuenta Logs Data Platform (LDP). Este guía le guiará a través de todos los pasos necesarios: [Quick start for Logs Data Platform](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start/).
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleccione su plataforma
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Procedimiento
+
+### Visualizar los logs de su plataforma Exchange en tiempo real
+
+Para acceder a los logs en tiempo real en su oferta Private o Trusted Exchange, a la derecha de la serie de pestañas, haga clic en la pestaña <code className="action">Más +</code> y luego en <code className="action">Logs</code>.
+
+<img className="thumbnail" alt="exchange - logs" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-manage-logs/exchange-logs01.png" loading="lazy" />
+
+:::warning
+Dado que se trata de una consola en tiempo real, los logs solo aparecen cuando se encuentra en la pestaña <code className="action">Logs</code>. Si abandona la pestaña <code className="action">Logs</code> y vuelve a ella, el historial anterior habrá desaparecido.
+
+:::
+
+
+Los servicios Exchange ofrecen 2 tipos de logs:
+
+- **Access** : Permite consultar la actividad de conexiones en su servicio Exchange.
+- **Messagetracking** : Permite consultar los logs detallados del flujo de correos electrónicos que atraviesan su servicio Exchange. Encontrará las siguientes informaciones:
+    - el estado de entrega de correos electrónicos en sus cuentas Exchange;
+    - el estado de envío de correos electrónicos desde su servicio Exchange;
+    - el tamaño de los correos electrónicos transmitidos;
+    - etc.
+
+### Integrar los logs de su solución Exchange en Logs Data Platform
+
+La solución Logs Data Platform puede ser útil si dispone de una infraestructura importante o si sus servicios generan una gran cantidad de logs. De hecho, esta plataforma está diseñada para facilitar la agregación y gestión de los logs.
+
+Funciona recuperando los logs generados por su infraestructura, sus sitios web o sus aplicaciones para, por ejemplo:
+
+- almacenarlos;
+- mostrarlos en paneles de control en tiempo real;
+- permitir a los usuarios realizar consultas complejas;
+- filtrarlos por fecha, aplicación, tipo o contenido.
+
+:::info
+Para más detalles sobre Logs Data Platform, consulte nuestro guía de introducción a [Logs Data Platform (EN)](/guides/manage-and-operate/observability/logs-data-platform/getting-started-introduction-to-ldp/).
+
+:::
+
+
+Las soluciones Exchange son compatibles con diversos servicios como el alojamiento compartido, los VPS y los servidores dedicados. También pueden complementarse con flujos de datos en Logs Data Platform, además de los logs en tiempo real ya disponibles.
+
+Para suscribir los logs de su solución Exchange a un flujo de datos en Logs Data Platform, realice las siguientes acciones:
+
+1. A la derecha de la serie de pestañas, haga clic en la pestaña <code className="action">Más +</code> y luego en <code className="action">Logs</code>.
+1. En la parte derecha del recuadro donde se muestran los logs en tiempo real, haga clic en el botón <code className="action">Suscribirse</code>.
+
+<img className="thumbnail" alt="exchange - logs" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-manage-logs/exchange-logs02.png" loading="lazy" />
+
+Desde la página que se muestra, seleccione la cuenta Logs Data Platform deseada en el menú desplegable situado encima de la tabla.
+
+<img className="thumbnail" alt="exchange - logs" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-manage-logs/exchange-logs03.png" loading="lazy" />
+
+Se presentan dos casos para suscribir su solución Exchange:
+
+<Tabs>
+  <Tab label="Caso n°1">
+    **Suscribirse a un flujo ya existente en su solución Logs Data Platform**
+    
+    Si el flujo ya existe, aparece en forma de línea en la tabla. En este caso concreto y para suscribir su solución Exchange a este flujo existente, simplemente haga clic en el botón <code className="action">Suscribirse</code> situado a la derecha de la línea correspondiente al flujo.
+    
+    Después de unos momentos y si permanece en la misma página, aparecerá un mensaje en su área de cliente para indicarle que la suscripción se ha creado con éxito.
+  </Tab>
+  <Tab label="Caso n°2">
+    **Suscribirse a un nuevo flujo de datos en su solución Logs Data Platform**
+    
+    Si el flujo aún no existe, haga clic en el botón <code className="action">Añadir un flujo de datos</code>. Será redirigido a una nueva página de su área de cliente OVHcloud, en la que podrá crear un nuevo flujo de datos en su solución Logs Data Platform.
+    
+    Consulte nuestros guías [Introduction to Logs Data Platform (EN)](/guides/manage-and-operate/observability/logs-data-platform/getting-started-introduction-to-ldp/) y [Quick start for Logs Data Platform (EN)](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start/) para realizar esta acción.
+    
+    Una vez completado el formulario, haga clic en el botón <code className="action">Guardar</code>.
+    
+    <img className="thumbnail" alt="exchange - logs" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-manage-logs/exchange-logs04.png" loading="lazy" />
+
+Será redirigido a la pestaña <code className="action">Flujos de datos</code> de su solución Logs Data Platform.
+    
+    Ahora puede suscribir su solución Exchange a su nuevo flujo Logs Data Platform siguiendo las instrucciones del comienzo del capítulo.
+  </Tab>
+</Tabs>
+
+
+## Más información <a name="go-further"></a>
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+[Primeros pasos con el servicio Private Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-private/)
+
+[Introduction to Logs Data Platform (EN)](/guides/manage-and-operate/observability/logs-data-platform/getting-started-introduction-to-ldp/)
+
+[Quick start for Logs Data Platform (EN)](/guides/manage-and-operate/observability/logs-data-platform/getting-started-quick-start/)
+
+Si desea beneficiarse de una asistencia en el uso y la configuración de sus soluciones OVHcloud, le proponemos consultar nuestras diferentes [ofertas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,127 @@
+---
+title: Déployer cPanel sur un VPS
+description: Découvrez comment instancier un VPS avec l’application cPanel pré-installée.
+lastUpdated: 2025-09-11
+---
+
+## Objectif
+
+cPanel est un panneau de configuration qui facilite la gestion d'hébergements web. Il rend les tâches complexes plus accessibles, y compris pour les nouveaux utilisateurs. Il offre une vaste gamme de fonctionnalités comme, par exemple, pour la gestion :
+
+- des e-mails
+- des domaines
+- des bases de données
+- de la sécurité
+- etc.
+
+Grâce à une interface graphique permettant l'automatisation des paramètres, l'hébergement de sites web est ainsi simplifié.
+
+**Découvrez comment déployer cPanel avec les applications pré-installées sur un VPS.**
+
+## Prérequis
+
+- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) avec une distribution [compatible](https://www.ovhcloud.com/fr/vps/os/).
+
+{/* CP-NAV-START:baremetal-vps */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](https://manager.eu.ovhcloud.com/#/dedicated/vps)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">Serveurs Privés Virtuels</code> > Sélectionnez votre VPS
+
+---
+{/* CP-NAV-END:baremetal-vps */}
+
+:::warning
+Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](https://www.ovhcloud.com/fr/lp/vps-localzone/).
+
+:::
+
+
+## En pratique
+
+Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) via un [OS compatible avec cPanel](https://www.ovhcloud.com/fr/vps/os/).
+
+:::warning
+Si vous réinstallez un VPS, toutes les données stockées sur le VPS seront perdues.
+
+:::
+
+
+Pour installer votre serveur cPanel, commandez un VPS avec la distribution cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/cpanel-order.png" loading="lazy" />
+
+Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour vous connecter à votre serveur cPanel :
+
+```
+ |    Vos application(s):
+ |    Application: cpanel
+ |    Vous pouvez vous connecter à cpanel depuis https://<nom_du_serveur_vps>:2087/<session_parameters>
+```
+
+### Première connexion
+
+Une fois que vous avez reçu l'e-mail contenant le lien unique, cliquez sur ce lien pour effectuer la configuration initiale. Si le lien a déjà expiré, connectez-vous en [SSH](/guides/bare-metal-cloud/dedicated-servers/ssh-introduction/) au serveur et exécutez la commande `sudo whmlogin` pour générer un nouveau lien.
+
+L'URL générée par la commande `sudo whmlogin` vous permet de vous connecter à WHM sans identifiants. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
+
+#### Étape 1 : lire et accepter les conditions d'utilisation de cPanel
+
+Lisez et acceptez les conditions d'utilisation de cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/license_validation.png" loading="lazy" />
+
+#### Étape 2 : compléter les champs requis
+
+Indiquez les serveurs de messagerie et de noms (nameservers) que vous souhaitez définir sur le serveur VPS.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/setup_config_cpanel.png" loading="lazy" />
+
+#### Étape 3 : définir le mot de passe root
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/change_root.png" loading="lazy" />
+
+Désormais, vous pouvez vous connecter à votre serveur en SSH en utilisant l'utilisateur root avec le mot de passe que vous venez de définir.
+
+### Créer un compte cPanel depuis l’interface WHM
+
+Une fois connecté à votre interface WHM, cliquez sur <code className="action">Create a New Account</code> pour créer un compte cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/create_new_account.png" loading="lazy" />
+
+Remplissez le formulaire puis validez pour confirmer la création de votre compte cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/create_new_account_form.png" loading="lazy" />
+
+Sur le nouvel écran qui s'affiche, cliquez sur le bouton <code className="action">Go to cPanel</code> à droite de l'écran.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/go_to_cpanel.png" loading="lazy" />
+
+Vous êtes redirigé vers votre interface cPanel.
+
+<img className="thumbnail" alt="cPanel" src="/images/bare-metal-cloud/virtual-private-servers/cpanel/manager_cpanel.png" loading="lazy" />
+
+Vous pouvez désormais utiliser cPanel. Pour plus d'informations sur cPanel, consultez la [documentation officielle](https://docs.cpanel.net/).
+
+:::info
+Dans la barre de navigation de votre navigateur, entrez les URLs suivantes pour vous connecter à :
+
+- cPanel : https&#58;//&#60;IP_V4&#62;:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
+- WHM : https&#58;//&#60;IP_V4&#62;:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’e-mail d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
+
+Votre adresse IPv4 figure dans l'e-mail reçu lors de la commande de votre VPS avec la distribution cPanel.
+
+:::
+
+
+### Sécurisation de votre service
+
+Nous vous recommandons de prendre toutes les mesures nécessaires pour sécuriser votre WHM et votre VPS. Pour cela, nous vous recommandons de lire [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+
+Nous vous recommandons également de consulter notre guide pour [sécuriser un VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps/), d'utiliser [nos solutions de sauvegarde](/guides/bare-metal-cloud/virtual-private-servers/overview/) et de configurer le [Edge Network Firewall](/guides/bare-metal-cloud/dedicated-servers/firewall-network/).
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

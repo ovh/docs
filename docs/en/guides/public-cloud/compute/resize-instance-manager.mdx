@@ -1,0 +1,93 @@
+---
+title: Resize an instance via the OVHcloud Control Panel
+description: Find out how to resize a Public Cloud instance from the OVHcloud Control Panel
+lastUpdated: 2026-03-04
+---
+
+## Objective
+
+If your instance lacks resources due to increased activity or new needs, you can increase its resources in just a few clicks with the Public Cloud.
+
+**This guide explains how to resize your instance from the OVHcloud Control Panel.**
+
+:::warning
+Only upscaling is possible for classic models.
+In addition, this manipulation causes the instance to be shut down for the time of the operation.
+
+:::
+
+
+:::tip[Success]
+Flex instances allow resizing to higher or lower models due to a locked single disk size.
+
+:::
+
+
+## Requirements
+
+- A [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Navigation path:** <code className="action">Public Cloud</code> > Select your project
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Instructions
+
+Click on <code className="action">Instances</code> in the left-hand menu.
+
+Click on <code className="action">...</code> to the right of the instance, and select <code className="action">Edit</code>. You can also access this action from the instance details by clicking on its name, then on <code className="action">Modify model</code>.
+
+In the new tab, scroll down to the **Template** section to select the model of your choice.
+
+:::info
+For classic models, you can switch to any flavor that has a similar or bigger disk. You can't switch to a model with a smaller disk.<br/>
+
+Only **Flexible instances** can be upgraded and downgraded while maintaining a fixed disk size of 50GB.
+
+:::
+
+
+If your disk is equal to or smaller than 50GB, you can switch to a <code className="action">Flexible instance</code> if desired.
+
+:::warning
+If you are editing a flex instance, you cannot revert to a classic instance via the Control Panel. For more information, consult the guide on [Revert a flex instance](/guides/public-cloud/compute/revert-a-flex-instance/).
+
+:::
+
+
+Once the selection has been made, click on <code className="action">Modify template</code> to confirm your choice.
+
+### Resizing a disk in Windows
+
+When performing a resize for a Windows Instance, the partition size is not automatically updated. You must extend it using the **disk manager**:
+
+- Right-click on the <code className="action">Start</code> menu and launch the disk manager by clicking on <code className="action">Disk Management</code>:
+
+<img className="thumbnail" alt="Windows Start menu context menu with Disk Management option" src="/images/public-cloud/compute/resize-instance-manager/2980.png" loading="lazy" />
+
+- Right-click on the main partition, then click on <code className="action">Extend Volume</code>.
+
+<img className="thumbnail" alt="Right-click on main partition to extend volume" src="/images/public-cloud/compute/resize-instance-manager/2981a.png" loading="lazy" />
+
+- In the `Extend Volume Wizard` menu, click on <code className="action">Next</code> to proceed. In the next tab, choose the disk resources to extend and click on <code className="action">Next</code>. 
+
+<img className="thumbnail" alt="Extend Volume Wizard showing disk resources selection" src="/images/public-cloud/compute/resize-instance-manager/2978a.png" loading="lazy" />
+
+Once done, click on <code className="action">Finish</code> to confirm your choice.
+
+<img className="thumbnail" alt="Extend Volume Wizard completion step" src="/images/public-cloud/compute/resize-instance-manager/wizard2021.png" loading="lazy" />
+
+- The new disk size will then be displayed in the disk manager.
+
+<img className="thumbnail" alt="Disk manager displaying the new disk size" src="/images/public-cloud/compute/resize-instance-manager/2979.png" loading="lazy" />
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

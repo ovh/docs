@@ -1,0 +1,138 @@
+---
+title: Zimbra Pro - Configurare un account email con ActiveSync su Outlook per iOS
+description: Scopri come configurare il tuo indirizzo email Zimbra Pro sull’applicazione mobile Outlook per iOS tramite il protocollo ActiveSync
+lastUpdated: 2025-07-03
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+## Obiettivo
+
+:::info
+Questa guida è per i clienti che dispongono di un servizio di posta elettronica [Zimbra Pro](https://www.ovhcloud.com/it/emails/zimbra-emails/). Questo servizio sarà disponibile in beta a partire da luglio 2025.
+
+:::
+
+
+Gli account Zimbra Pro possono essere configurati su un iPhone utilizzando il protocollo ActiveSync. In questo modo è possibile configurare tutte le funzionalità collaborative del proprio indirizzo email in una sola volta. L'applicazione Microsoft Outlook su iOS è disponibile gratuitamente dall'App Store di Apple.
+
+**Questa guida ti mostra come configurare il tuo indirizzo email Zimbra Pro sull’applicazione mobile Outlook per iOS tramite il protocollo ActiveSync.**
+
+:::warning
+OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. Garantire il corretto funzionamento di questi servizi è responsabilità dell’utente.
+
+Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore del servizio. Non saremo infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
+
+:::
+
+
+## Prerequisiti
+
+- Disporre di un indirizzo email [Zimbra Pro](https://www.ovhcloud.com/it/emails/zimbra-emails/).
+- Aver installato l’applicazione [Outlook for iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
+- Disporre delle credenziali associate all’indirizzo email da configurare.
+
+## Procedura
+
+### Aggiungi l'account <a name="add-account"></a>
+
+- **Al primo avvio dell’applicazione Outlook**, verrà visualizzata un’assistente di configurazione:
+    - Clicca su <code className="action">Aggiungi account</code>.
+
+  <img className="thumbnail" alt="outlook-ios" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-app-ios/outlook-app-ios-add-01.png" loading="lazy" />
+
+- **Se un account è già impostato sull'applicazione Outlook**:
+    1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o sull’icona di casa (<code className="action">⌂</code>) in alto a sinistra dello schermo.
+    2. Premere l'ingranaggio (<code className="action">⛭</code>) nella parte inferiore sinistra dello schermo.
+    3. Clicca su <code className="action">Account</code> nel menu **Impostazioni**.
+    4. Clicca su <code className="action">Aggiungi un account</code>.
+    5. Clicca su <code className="action">Account di posta</code>.
+
+  <img className="thumbnail" alt="outlook-ios" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-app-ios/outlook-app-ios-add-02.png" loading="lazy" />
+
+Segui i passaggi di installazione cliccando sulle **3** schede qui sotto:
+
+<Tabs>
+  <Tab label="Step 1">
+    Inserisci il tuo indirizzo email e clicca su <code className="action">Aggiungi un account</code>.
+    
+    <img className="thumbnail" alt="outlook-ios" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-app-ios/outlook-app-ios-add-step-01.png" loading="lazy" />
+  </Tab>
+  <Tab label="Step 2">
+    Sono possibili due scenari:
+    
+    - Se nella parte superiore della pagina compare la voce "**IMAP**": clicca sul pulsante `?` nell’angolo in alto a destra dello schermo **(1)**, poi seleziona <code className="action">Cambia provider account</code> **(2)**. Seleziona `Exchange` **(3)** e passa allo Step 3.
+    
+    <img className="thumbnail" alt="outlook-ios" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-app-ios/outlook-app-ios-add-step-02.png" loading="lazy" />
+    
+    - Se sei diretto alla scelta del tipo di account, seleziona `Exchange`.
+  </Tab>
+  <Tab label="Step 3">
+    Nella finestra successiva, spunta <code className="action">Impostazioni avanzate</code> e inserisci le informazioni seguenti:
+    
+    - **Indirizzo email**: Inserisci il tuo indirizzo email completo.
+    - **Password**: Inserisci la password associata al tuo indirizzo email.
+    - **Descrizione**: Inserisci un nome che permetta di identificare questo account tra quelli registrati su Outlook.
+    - **Server**: inserisci "zimbra1.mail.ovh.net".
+    - **Dominio**: Lasciare vuoto questo campo.
+    - **Nome utente**: inserisci il tuo indirizzo email completo.
+    
+    Per completare la configurazione, clicca su <code className="action">Connessione</code>.
+    
+    <img className="thumbnail" alt="outlook-ios" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-app-ios/outlook-app-ios-add-step-03.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+:::warning
+Se riscontri un problema di invio o di ricezione dopo aver seguito i passaggi di configurazione di cui sopra, consulta l'argomento "[Modifica le impostazioni esistenti](#modify-settings)" di questa guida.
+
+:::
+
+
+
+### Utilizza l'indirizzo email
+
+Una volta configurato l’indirizzo email, puoi iniziare a utilizzarlo! Da questo momento è possibile inviare e ricevere messaggi, ma anche gestire calendari e task.
+
+OVHcloud propone anche un’applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. È possibile accedere alla [webmail OVHcloud](https://www.ovhcloud.com/it/mail/) con le credenziali del tuo indirizzo email. Per qualsiasi domanda relativa al suo utilizzo, consulta la nostra guida "[Utilizzare la webmail Zimbra](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-zimbra/)".
+
+### Come modificare le impostazioni esistenti? <a name="modify-settings"></a>
+
+1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona della casa (<code className="action">⌂</code>) nella parte superiore sinistra dello schermo.
+1. Premere l'ingranaggio (<code className="action">⛭</code>) nella parte inferiore sinistra dello schermo.
+1. Clicca su <code className="action">Account</code> nel menu **Impostazioni**.
+1. Selezionare l'account.
+1. Clicca su <code className="action">Modifica le informazioni di connessione</code>.
+
+<img className="thumbnail" alt="outlook-ios" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-app-ios/outlook-app-ios-modify-01.png" loading="lazy" />
+
+I parametri sono disponibili al **step 3** del capitolo "[Aggiungi account](#add-account)".
+
+### Come eliminare un account email? <a name="delete-account"></a>
+
+1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona della casa (<code className="action">⌂</code>) nella parte superiore sinistra dello schermo.
+1. Premere l'ingranaggio (<code className="action">⛭</code>) nella parte inferiore sinistra dello schermo.
+1. Clicca su <code className="action">Account</code> nel menu **Impostazioni**.
+1. Selezionare l'account.
+1. Clicca su <code className="action">Elimina l’account</code>.
+
+<img className="thumbnail" alt="outlook-ios" src="/images/web-cloud/email-and-collaborative-solutions/zimbra/zimbra-outlook-app-ios/outlook-app-ios-delete-01.png" loading="lazy" />
+
+
+## Per saperne di più <a name="go-further"></a>
+
+:::info
+Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su iOS, consultare il [centro assistenza Microsoft](https://support.microsoft.com/it-it/office/configurer-l-application-outlook-pour-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
+
+:::
+
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

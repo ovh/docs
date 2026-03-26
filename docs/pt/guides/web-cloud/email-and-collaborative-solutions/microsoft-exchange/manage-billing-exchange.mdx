@@ -1,0 +1,116 @@
+---
+title: Gerir a faturação das contas Exchange
+description: Saiba como gerir a faturação do serviço Exchange.
+lastUpdated: 2026-03-24
+---
+
+## Objetivo
+
+Os serviços Hosted Exchange e Private Exchange dispõem de uma gestão flexível no que se refere à faturação das contas. Este guia explica como pode configurá-la.
+
+**Saiba como gerir as subscrições das suas contas Exchange.**
+
+## Requisitos
+
+- Ter uma oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Caminho de navegação:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Selecione a sua plataforma
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Instruções
+
+### Hosted Exchange
+
+#### Encomendar contas suplementares
+
+Clique no separador <code className="action">Contas de e-mail</code> e, depois, no botão <code className="action">Ações</code> (canto superior esquerdo). Então, clique em <code className="action">Encomendar contas</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-00.png" loading="lazy" />
+
+#### Alterar a periodicidade das contas <a name="periodicity"></a>
+
+Na janela de gestão da plataforma Exchange, clique no botão <code className="action">Ações</code> (canto superior direito) e em <code className="action">Configuração da renovação</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-01.png" loading="lazy" />
+
+Será reencaminhado para a rubrica «Os meus serviços» da Área de Cliente OVHcloud. Vai verificar que será aplicado um filtro que só exibirá a plataforma Exchange sujeita à alteração.
+
+Clique em <code className="action">...</code>, à direita da plataforma Exchange, e em <code className="action">Modificar a faturação</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-02.png" loading="lazy" />
+
+Na nova janela, poderá visualizar e alterar a faturação de cada uma das suas contas. É possível efetuar modificações em uma ou várias contas em simultâneo a partir da coluna «**Renovação**». Cada modificação realizada numa conta será aplicada na data indicada na coluna «**Expiração**».
+
+No exemplo abaixo, eis as ações a realizar para fazer uma conta passar para renovação mensal:
+
+> Na primeira etapa, clique na menção «**Mensal**», à direita da conta em causa, e a seguir clique em «<code className="action">Seguinte</code>», no canto inferior esquerdo.
+>
+> Na segunda etapa, um resumo vai indicar-lhe a alteração aplicada. Clique em <code className="action">Enviar</code>, no canto inferior esquerdo.
+>
+> <img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-03.png" loading="lazy" />
+
+#### Eliminar contas
+
+Para eliminar uma conta da plataforma Hosted, primeiro tem de a cancelar alterando a configuração da renovação para «**Expiração no termo**». Para isso, consulte a etapa [«Alterar a periodicidade das contas»](#periodicity).
+
+Após o cancelamento, a conta será suspensa na data de expiração. Se deseja eliminar o endereço de e-mail alojado pela conta antes da data de expiração, tem de o restaurar.
+
+Aceda ao separador <code className="action">Contas de e-mail</code> da plataforma, clique no botão <code className="action">...</code> junto à conta em causa e, por fim, clique em <code className="action">Restaurar</code>. Após o restauro, a conta permanecerá virgem até à data de expiração.
+
+### Private Exchange
+
+:::info
+Nas plataformas Private Exchange, as contas são apenas de renovação mensal. Não pode configurar outra periodicidade.
+
+:::
+
+
+#### Encomendar contas suplementares
+
+Clique no separador <code className="action">Contas de e-mail</code> e, depois, no botão <code className="action">Ações</code> (canto superior esquerdo). Então, clique em <code className="action">Adicionar uma conta</code>. A conta será faturada no âmbito do mês em curso.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-06.png" loading="lazy" />
+
+#### Eliminar contas
+
+:::warning
+Para poder eliminar uma conta de e-mail numa plataforma Private Exchange, **é necessário que esta tenha sido criada** (associada a um domínio da sua plataforma Exchange). Uma conta não configurada não pode ser eliminada.
+
+:::
+
+
+No separador <code className="action">Contas de e-mail</code>, clique em <code className="action">...</code> à direita da conta em causa e, a seguir, clique em <code className="action">Eliminar</code>. A conta será imediatamente retirada da plataforma, pelo que não haverá nenhum cancelamento a realizar.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-07.png" loading="lazy" />
+
+### Rescindir a plataforma
+
+Depois de eliminar as contas de e-mail, é necessário eliminar o(s) domínio(s) associado(s) à sua plataforma Exchange antes de a rescindir. Para isso, aceda ao separador <code className="action">Domínios associados</code>. Clique no botão <code className="action">...</code> na linha do nome de domínio a eliminar e, a seguir, clique em <code className="action">Eliminar este domínio</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-del-dom.png" loading="lazy" />
+
+Na janela de gestão da sua plataforma Exchange, clique no botão <code className="action">Ações</code> em cima à direita e, a seguir, em <code className="action">Rescindir</code>.
+
+<img className="thumbnail" alt="billing_exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange/billing-exchange-08.png" loading="lazy" />
+
+:::info
+Esta ação implica a suspensão e a eliminação de todas as contas da plataforma Exchange na data de expiração.
+
+:::
+
+
+## Quer saber mais? <a name="go-further"></a>
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com a nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

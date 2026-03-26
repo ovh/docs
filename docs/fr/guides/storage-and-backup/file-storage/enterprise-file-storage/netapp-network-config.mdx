@@ -1,0 +1,123 @@
+---
+title: Enterprise File Storage - Configuration du réseau privé
+description: Découvrez configurer un réseau privé pour votre service Enterprise File Storage depuis votre espace client OVHcloud
+lastUpdated: 2025-10-23
+---
+
+## Objectif
+
+Les services Enterprise File Storage peuvent être gérés via [les API OVHcloud](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-quick-start/) ou depuis votre espace client OVHcloud.
+
+Découvrez dans ce guide comment rattacher votre service Enterprise File Storage à un [réseau privé vRack](https://www.ovhcloud.com/fr/network/vrack/), via la technologie vRack Services et la fonctionnalité Service Endpoint.
+
+:::info
+Pour plus d’informations concernant vRack Services, consultez [cette page](/guides/network/vrack-services/global/).
+
+:::
+
+
+## Prérequis
+
+- Avoir un service [Enterprise File Storage](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/) dans votre compte OVHcloud.
+
+{/* CP-NAV-START:storage-enterprise-file-storage */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Enterprise File Storage](https://manager.eu.ovhcloud.com/#/dedicated/netapp)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">Enterprise File Storage</code>
+
+---
+{/* CP-NAV-END:storage-enterprise-file-storage */}
+
+## Overview
+
+<img className="thumbnail" alt="Schéma global" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-network-config/global_schema_20240410.png" loading="lazy" />
+
+Enterprise File Storage est un service exposé via une adresse IP sur le vRack. L’attribution de l’IP de votre service se fait en trois étapes :
+
+1. Sélection ou création d’un vRack
+2. Sélection ou création d'un vRack Services
+3. Sélection ou création d’un sous-réseau
+
+## En pratique <a name="instructions"></a>
+
+Sélectionnez votre service dans la liste.
+
+<img className="thumbnail" alt="Sans configuration réseau" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-network-config/01-EFS.png" loading="lazy" />
+
+Par défaut, le service n’est pas rattaché à un réseau privé, il est dans un statut <code className="action">Prêt à configurer</code>. 
+
+Cette étape est nécessaire avant même de pouvoir créer vos volumes et/ou de paramétrer vos ACLs.
+
+Cliquez sur le lien <code className="action">Configurer les paramètres réseaux</code> pour configurer votre Service Endpoint et ainsi permettre à vos volumes d’être consommés depuis votre réseau privé.
+
+### Etape 1 - Sélection ou création d’un vRack
+
+Pour activer votre vRack Services, vous devez avoir un vRack. Si vous n'en avez pas à cette étape, il est possible d'en commander un via le bouton <code className="action">Commander</code> de votre espace client. Le vRack est un service gratuit. Sinon, sélectionnez votre vRack dans la liste déroulante.
+
+<img className="thumbnail" alt="Sans configuration réseau" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-network-config/02-EFS.png" loading="lazy" />
+
+:::info
+Veuillez noter que la création de vRack Services, de Sous-réseaux ou de Service Endpoints sur un vRack en production **n'entraîne aucune interruption de service**.
+Par conséquent, vous pouvez suivre les étapes 2 et 3 de ce guide en toute sécurité dans un environnement de production.
+
+:::
+
+
+### Etape 2 - Sélection ou création d'un vRack Services
+
+Dans cette deuxième étape, vous devez sélectionner un vRack Services. Si vous n'avez pas de vRack Services, il est possible à cette étape d'en activer un nouveau. Cliquez sur <code className="action">Activer</code>, vous serez alors redirigé vers la page de configuration de vRack Services. Pour plus d'informations sur la création d'un vRack Services, vous pouvez consulter [cette page](/guides/network/vrack-services/global/).
+
+Une fois votre vRack Services activé, revenez à l'étape de configuration des paramètres réseaux (étape 1 ci-dessus).
+
+<img className="thumbnail" alt="Enable vRack Services" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-network-config/03-EFS.png" loading="lazy" />
+
+### Etape 3 - Sélection ou création d’un sous-réseau
+
+Sélectionnez le sous-réseau sur lequel vous voulez exposer votre service Enterprise File Storage. Si votre sous-réseau n’existe pas encore, il est nécessaire de le créer. Pour ce faire, rendez-vous sur la page de configuration de vRack Services, onglet <code className="action">Sous-réseau</code>. Pour plus d'informations sur la création d'un sous-réseau, vous pouvez consulter [cette page](/guides/network/vrack-services/global/).
+
+<img className="thumbnail" alt="Enable vRack Services" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-network-config/05-EFS.png" loading="lazy" />
+
+Une fois ces trois étapes terminées, cliquez sur le bouton <code className="action">Configurer</code>. Vous allez être redirigé vers la page d'information de votre Enterprise File Storage et pourrez suivre le déploiement de votre Service Endpoint.
+
+Après quelques instants, votre nouveau Service Endpoint est configuré et disponible.
+
+<img className="thumbnail" alt="Enable vRack Services" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-network-config/07-EFS.png" loading="lazy" />
+
+Vous pouvez à présent suivre les guides ci-dessous pour créer et gérer vos volumes, créer et gérer vos snapshots ainsi que vos ACLs.
+
+### Tests de connectivité réseau à votre Service Endpoint depuis un client NFS
+
+:::info
+**Prérequis :**
+
+- Votre client NFS doit avoir une interface réseau configurée dans le même sous-réseau que votre vRack Services et doit être dans le même VLAN que celui-ci. Le sous-réseau du vRack Services n'est pas routable et nécessite un sous-réseau de type CIDR 24  (x.x.x.x/24 ou x.x.x.x/255.255.255.0).
+- Si ce n'est pas possible, vous pouvez utiliser une passerelle qui fera une translation d'adresse et de port vers celui-ci mais il vous faudra contacter le [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Sans cela vous ne pourrez pas monter vos partages NFS.
+- L'adresse IP de votre Service Endpoint est dans un sous-ensemble en CIDR 27, 28 ou 29 de votre sous-réseau vRack Services.
+- L'adresse IP de votre Service Endpoint doit être unique dans votre sous-réseau et doit être exclue de votre serveur DHCP si vous en utilisez un.
+- Exemple : sous-réseau vRack Services 10.0.0.0/24 - Service Endpoint 10.0.0.16/29  - Votre service sera donc accessible à l'adresse IP 10.0.0.16 dans le sous-réseau 10.0.0.0/24.
+
+:::
+
+
+- La commande **arping IP_Endpoint** ne doit retourner qu'une seule adresse MAC.
+- La commande **traceroute -T IP_Endpoint -p 2049** ne doit pas retourner d'erreur.
+- La commande  **nmap -sV -T4 -p111,635,2049,4045,4046 IP_Endpoint** doit retourner des ports dans l'état OPEN (indispensable pour le bon fonctionnement de NFSv3).
+
+## Aller plus loin <a name="gofurther"></a>
+
+[Enterprise File Storage - Gestion depuis l'espace client OVHcloud](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-control-panel/)
+
+[Enterprise File Storage - API Quickstart](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-quick-start/)
+
+[Enterprise File Storage - Gestion des volumes](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volumes/)
+
+[Enterprise File Storage - Gestion des ACL de volume](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volume-acl/)
+
+[Enterprise File Storage - Gestion des snapshots de volumes](/guides/storage-and-backup/file-storage/enterprise-file-storage/netapp-volume-snapshots/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

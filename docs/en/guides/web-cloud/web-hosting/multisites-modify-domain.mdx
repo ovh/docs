@@ -1,0 +1,159 @@
+---
+title: Web Hosting - How to modify a domain name already associated to a hosting plan
+description: Find out how to change the association settings for a domainname or subdomain already declared on your web hosting plan
+lastUpdated: 2025-11-05
+---
+
+## Objective
+
+When you use your web hosting plan or update your website, you may need to modify settings for your domain name or subdomain already associated with your web hosting plan.
+
+:::info
+This guide only explains how to modify a domain name or subdomain that has already been declared on an OVHcloud Web Hosting plan. If you would like to link a new domainname or subdomain to your web hosting plan, please read our guide on “[Hosting multiple websites on your Web Hosting plan](/guides/web-cloud/web-hosting/multisites-configure-multisite/)”.
+
+:::
+
+
+**Find out how to modify the association settings for a domainname or subdomain already declared on your web hosting plan.**
+
+## Requirements
+
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- One or more [domain names](https://www.ovhcloud.com/en-gb/domains/)
+- Sufficient rights to all the services concerned, find more information in our guide “[Managing contacts for your services](/guides/account-and-service-management/account-information/managing-contacts/)”
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Hosting plans</code> > Select your web hosting plan
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Instructions
+
+:::warning
+Modifying the association settings for a domain name or subdomain can result in access to your services (your website) being interrupted. If you have any doubts about the modifications to be made, do not hesitate to contact a specialist provider.
+
+:::
+
+
+To modify the association settings for a domain name or subdomain that has already been declared on your Web Hosting plan, perform the following actions:
+
+1. Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+2. Click on the <code className="action">Web Cloud</code> tab.
+3. In the left-hand column, click on the <code className="action">Hosting plans</code> menu.
+4. Select the web hosting plan concerned.
+5. On the page that appears, click on the <code className="action">Multisite</code> tab.
+6. In the table that appears below the tab and to the right of the domainname or subdomain concerned, click on the <code className="action">...</code> button, then on <code className="action">Modify domain</code>.
+
+<img className="thumbnail" alt="Modify domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png" loading="lazy" />
+
+The following window appears:
+
+<img className="thumbnail" alt="Modify domain" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png" loading="lazy" />
+
+In the remainder of this guide, you will find a description of each of the available settings in the window above. Once you have read the descriptions below and made your changes, click the <code className="action">Next</code> button in the bottom right-hand corner of the window, then go to [step 2](#step2).
+
+### Step 1 - Description of editable parameters <a name="step1"></a>
+
+:::info
+The <code className="action">Domain name</code> form cannot be modified, as it is a change to the settings of the domain name associated with the web hosting plan. If you would like to link a new domainname or subdomain to your web hosting plan, please read our guide on “[Hosting multiple websites on your Web Hosting plan](/guides/web-cloud/web-hosting/multisites-configure-multisite/)”.
+
+:::
+
+
+#### Modify the "root folder"
+
+:::warning
+**Special case: configuration with Git**
+
+To modify the <code className="action">Root folder</code> declared for your domain name if a configuration exists with Git for the same domain name, you must first delete this configuration.
+
+If a configuration exists with Git, a message will appear just below the form:
+
+<img className="thumbnail" alt="Modify domain associed with git" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png" loading="lazy" />
+
+To delete the Git configuration for a domainname or subdomain associated with your hosting plan, please read our guide on [Configuring and using Git with an OVHcloud web hosting plan](/guides/web-cloud/web-hosting/git-integration-webhosting/).
+
+:::
+
+
+The <code className="action">Root folder</code> form shows the name of the folder containing the items that appear with your domain name. For example, a folder might contain your website’s files.
+
+When using your services, you may need to change the <code className="action">Root folder</code> declared for your domain name. This can happen when, for example:
+
+- You have developed a new website in a new folder in your web hosting plan’s FTP storage space.
+- You want to redirect your domain name to an empty folder and then place a new website there.
+- etc.
+
+In this form, replace the name of the pre-filled folder with the name of the new folder you want.
+
+:::tip[Success]
+If you enter a non-existent folder name in your web hosting plan’s FTP storage space, it will be automatically created by our robots in your FTP storage space.
+
+:::
+
+
+#### Other options available
+
+##### The "Activate the CDN" option
+
+To use this option, you must have already subscribed to an OVHcloud CDN solution, or have a Performance web hosting plan.
+
+Tick/untick this box to enable/disable the CDN option for your domain name or subdomain.
+
+You can find more information on the CDN options/offers available in our dedicated documentation “[Speeding up your website with CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/)”.
+
+##### The "country IP" option
+
+This option is mainly used for websites whose target audience is located in a different country than the web hosting. This will improve the SEO ranking of the website in the chosen country.
+
+You can find more information on this option in our dedicated documentation "[Geolocating your website in a specific country](/guides/web-cloud/web-hosting/multisites-geolocation/)".
+
+##### The "Enable the firewall" option
+
+This option filters incoming requests to protect your web hosting plan against the most common attacks.
+
+You can find more information on this option in our dedicated documentation "[Activating the application firewall](/guides/web-cloud/web-hosting/multisites-activating-application-firewall/)".
+
+##### The "Separate logs" option
+
+Tick/untick this option only if you want to separate your domain name logs from other domain names declared on your web hosting plan.
+
+Find out more about this option in our [detailed statistics page](https://www.ovhcloud.com/en-gb/web-hosting/uc-website-traffic-analysis/).
+
+Once you have made your changes, click the <code className="action">Next</code> button in the bottom right-hand corner of the window to go to [step 2](#step2).
+
+### Step 2 - Summary of changes <a name="step2"></a>
+
+Once you have clicked the <code className="action">Next</code> button, you will see a summary of the settings you are about to apply to your domain name:
+
+<img className="thumbnail" alt="Modify domain resume" src="/images/assets/screens/control-panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png" loading="lazy" />
+
+If all the settings are configured as you want, click the <code className="action">Confirm</code> button.
+
+Depending on the options you have selected, the changes may take between a few minutes and a few hours to be applied.
+
+If modifications of the **CDN**, **Country IP** and **separate logs** options are not taken into account after 24 hours, please refer to the respective resources listed for all of the options described in [step 1](#step1), in order to check that all of the required conditions have been met.
+
+## Go further
+
+[Hosting multiple websites on your Web Hosting plan](/guides/web-cloud/web-hosting/multisites-configure-multisite/)
+
+[Managing SSL certificates on a web hosting plan](/guides/web-cloud/web-hosting/ssl-on-webhosting/)
+
+[Speeding up your website with CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn/)
+
+[Geolocating your website in a specific country](/guides/web-cloud/web-hosting/multisites-geolocation/)
+
+[Activating the application firewall](/guides/web-cloud/web-hosting/multisites-activating-application-firewall/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+ 
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,112 @@
+---
+title: "Créer une sauvegarde d'un volume"
+description: Découvrez comment créer une sauvegarde de votre volume Block Storage depuis votre espace client
+lastUpdated: 2026-02-24
+---
+
+## Objectif
+
+Si vous accordez de l'importance aux données stockées dans vos volumes Block Storage, il convient d'en organiser la sauvegarde afin de limiter l'impact potentiel de tout problème sur ces données, qu'il s'agisse d'une erreur humaine ou d'un incident au niveau du cluster.
+
+Un **Volume Snapshot** est un point de récupération stocké dans le même cluster de stockage que le volume d'origine. Les opérations de création et de restauration sont rapides, mais en cas d'incident sur le cluster, le volume et le Volume Snapshot peuvent être indisponibles.<br/>
+La création d'un Volume Snapshot ne nécessite pas que le volume soit détaché de l'instance.
+
+Un **Volume Backup** est une image créée à partir de votre volume, cette dernière est stockée dans le cluster Object Storage de la localisation du volume d'origine.
+Ce niveau de résilience est idéal et vous permettra de réagir rapidement à tout incident sur votre volume, en créant un autre volume à partir de la sauvegarde.<br/>
+La création d'une sauvegarde de volume nécessite que le volume soit détaché de l'instance.
+
+Le Volume Snapshot et le Volume Backup vous permettent de :
+
+- créer des sauvegardes de votre volume en quelques clics et les conserver aussi longtemps que nécessaire ;
+- utiliser les sauvegardes pour restaurer l'état de votre volume ;
+- utiliser les sauvegardes comme modèle pour créer des volumes identiques.
+
+**Ce guide vous explique comment créer une sauvegarde de votre volume Block Storage depuis votre espace client OVHcloud.**
+
+## Prérequis
+
+- Un [volume Block storage](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) détaché créé dans votre [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Pour accéder à vos services :** <code className="action">Public Cloud</code> > Sélectionnez votre projet
+
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Limitations
+
+Les sauvegardes de volumes LUKS chiffrés ne peuvent être restaurées que sur le même type de volume LUKS chiffré.
+
+## En pratique
+
+Ouvrez le menu <code className="action">Block Storage</code> dans la barre de navigation à gauche sous **Storage & Backup**.
+
+À droite du volume concerné, cliquez sur le bouton <code className="action">...</code> puis sur <code className="action">Créer une sauvegarde</code>.
+
+:::info
+**Pour réaliser une sauvegarde, le volume doit préalablement être détaché de son instance.**
+
+- Pour un environnement Linux, consultez la section **Sous Linux** du guide « [Créer et configurer un disque supplémentaire sur une instance](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) ».
+- Pour un environnement Windows, référez-vous à la section **Sous Windows** du guide « [Créer et configurer un disque supplémentaire sur une instance](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/) ».
+
+:::
+
+
+<img className="thumbnail" alt="Volume Backup - création" src="/images/public-cloud/compute/volume-backup/volumebackup01.png" loading="lazy" />
+
+Sélectionnez le volume à partir duquel vous souhaitez créer une sauvegarde.
+
+Sélectionnez ensuite le type de sauvegarde que vous souhaitez créer : **Volume Snapshot** ou **Volume Backup**.
+
+- En choisissant **Volume Snapshot**, vous aurez la possibilité de modifier le nom du Volume Snapshot à créer avant de valider via le bouton <code className="action">Créer la sauvegarde</code>.
+- En choisissant **Volume Backup**, il vous sera demandé de détacher votre volume de l'instance afin de pouvoir continuer. Vous pourrez alors modifier le nom du Volume Backup à créer avant de valider via le bouton <code className="action">Créer la sauvegarde</code>.
+
+<img className="thumbnail" alt="Volume Backup ou Snapshot - création" src="/images/public-cloud/compute/volume-backup/volumebackup02.png" loading="lazy" />
+
+Le temps de création de la sauvegarde, qu'il s'agisse d'un Volume Snapshot ou d'un Volume Backup, peut prendre plusieurs heures, en fonction de la quantité de données présentes sur le volume, de l'utilisation des ressources de l'instance pour le Volume Snapshot, ainsi que d'autres facteurs spécifiques au host.
+
+:::info
+**Bonnes pratiques :**
+
+- effectuez vos sauvegardes de volume en dehors de vos heures de production ;
+- évitez de créer des snapshots aux heures de pointe (entre 04h00 et 22h00, heure de Paris) ;
+- installez l’agent qemu-guest si ce n’est pas fait ou essayez de le désactiver si nécessaire ;
+- essayez de ne pas trop « solliciter » le serveur pendant la phase de création du snapshot (limitation des I/O, consommation de RAM, etc.)
+- même si ce n'est pas obligatoire, il est préférable de détacher votre volume lors de la création d'un Volume Snapshot ;
+- vérifiez régulièrement que vous êtes en mesure de récupérer vos données à partir de votre Volume Snapshot ou de votre Volume Backup.
+
+:::
+
+
+Un Volume Snapshot ou un Volume Backup étant un clone de l’ensemble du disque, il aura la taille maximale du volume d’origine, quelle que soit l’allocation réelle d’espace disque.
+
+Vous trouverez la liste de vos Volume Snapshots dans la section <code className="action">Volume Snapshot</code> dans la barre de navigation à gauche.
+Dès que le Volume Snapshot est créé, il apparaît dans cette liste.
+
+<img className="thumbnail" alt="Volume Snapshot - liste" src="/images/public-cloud/compute/volume-backup/volumebackup03.png" loading="lazy" />
+
+Vous trouverez la liste de vos Volume Backups dans la section <code className="action">Volume Backup</code> dans la barre de navigation à gauche.
+Dès que la création du Volume Backup a été demandée, il est ajouté à la liste.
+
+<img className="thumbnail" alt="Volume Backup - liste" src="/images/public-cloud/compute/volume-backup/volumebackup04.png" loading="lazy" />
+
+Cliquez sur le bouton <code className="action">...</code> pour <code className="action">Supprimer</code> ou <code className="action">Créer un volume</code> à partir du Volume Snapshot ou du Volume Backup correspondant.
+
+Retrouvez plus d’informations à ce sujet dans [notre guide sur la création d'un volume depuis une sauvegarde](/guides/public-cloud/compute/storage-create-volume-from-backup/).
+
+<img className="thumbnail" alt="Créer un volume depuis un backup" src="/images/public-cloud/compute/volume-backup/volumebackup05.png" loading="lazy" />
+
+## Aller plus loin
+
+[Créer un volume à partir d’une sauvegarde](/guides/public-cloud/compute/storage-create-volume-from-backup/)
+
+[Créer et configurer un disque supplémentaire sur une instance](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance/)
+
+[Augmenter la taille d’un disque supplémentaire](/guides/public-cloud/compute/increase-the-size-of-an-additional-disk/)
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

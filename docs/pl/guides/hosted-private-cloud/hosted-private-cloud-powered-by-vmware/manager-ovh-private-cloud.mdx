@@ -1,0 +1,239 @@
+---
+title: Prezentacja Panelu klienta Private Cloud OVHcloud
+description: Odkryj możliwości Panelu klienta Private Cloud
+lastUpdated: 2021-12-15
+---
+
+## Wprowadzenie
+
+Panel klienta OVHcloud oferuje liczne opcje konfiguracji Twojej infrastruktury Private Cloud.
+
+**W tym przewodniku odkryjesz jego liczne możliwości.**
+
+## Wymagania początkowe
+
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejście do sekcji <code className="action">Serwer</code>, a następnie <code className="action">Private Cloud</code>
+- Posiadanie usługi [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
+
+## W praktyce
+
+### Karta ogólna
+
+W sekcji <code className="action">Private Cloud</code> znajdującej się w części <code className="action">Serwer</code> [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl) masz dostęp do ogólnego podglądu infrastruktury Private Cloud:
+
+<img className="thumbnail" alt="Informacje ogólne" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel1.png" loading="lazy" />
+
+U góry strony, `ozn. 1 na zdjęciu`, znajdziesz nazwę i opis Twojej usługi Private Cloud. Możesz ją dowolnie personalizować, co jest szczególnie przydatne, gdy posiadasz kilka infrastruktur. 
+
+Po lewej stronie, `ozn. 2 na zdjęciu`, znajdziesz Twoje infrastruktury Private Cloud oraz wirtualne centra danych, które je tworzą.
+
+#### Informacje ogólne
+
+W tabeli po lewej stronie znajdują się informacje ogólne o usłudze Private Cloud.
+
+<img className="thumbnail" alt="Informacje ogólne" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel2.png" loading="lazy" />
+
+- Opis usługi Private Cloud (z możliwością zmiany nazwy)
+- Wersja usługi Private Cloud
+- Handlowy numer referencyjny OVHcloud
+- Centrum danych, a dokładniej strefa, w której jest zainstalowana Twoja infrastruktura
+- Polityka dostępu do infrastruktury (`Otwarty` lub `Ograniczony`) z ograniczeniami według źródłowego adresu IP
+- Liczba wirtualnych centrów danych w Twojej infrastrukturze
+- Liczba bloków IP (z możliwością zamówienia dodatkowych bloków).
+
+#### Opcje i zgodność
+
+W środkowej tabeli znajduje się widok stanu aktywacji opcji Twojej infrastruktury Private Cloud.
+
+<img className="thumbnail" alt="Opcje" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel3.png" loading="lazy" />
+
+#### Zarządzanie usługą
+
+W tabeli po prawej stronie możesz zarządzać subskrypcją listy mailingowej usługi Private Cloud OVHcloud.
+
+Znajdziesz tam również informację o kolejnym odnowieniu usługi Private Cloud. Po prawej stronie od daty znajduje się przycisk <code className="action">...</code> umożliwiający zamówienie licencji lub usunięcie usługi Private Cloud.
+
+<img className="thumbnail" alt="Opcje" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel4.png" loading="lazy" />
+
+#### Centra danych
+
+W tej karcie znajdziesz krótkie podsumowanie wirtualnych centrów danych zawartych w Twojej ofercie Private Cloud:
+
+<img className="thumbnail" alt="Datacenters" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel5.png" loading="lazy" />
+
+Więcej szczegółów na temat wirtualnych centrów danych znajduje się w dalszej części tego przewodnika.
+
+:::info
+Na tej stronie możesz dodać inne centrum danych. Nie spowoduje to naliczenia dodatkowych opłat.
+
+:::
+
+
+#### Użytkownicy
+
+W tej części widoczni będą wszyscy użytkownicy, którzy mogą się zalogować do vSphere:
+
+<img className="thumbnail" alt="Użytkownicy" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel6.png" loading="lazy" />
+
+Użytkownika możesz utworzyć, klikając przycisk <code className="action">Utwórz użytkownika</code> po lewej stronie.
+
+W przypadku każdego użytkownika znajdziesz jego uprawnienia i różne informacje mające zastosowanie w całej usłudze Private Cloud:
+
+- identyfikator,
+- nazwa użytkownika (opcjonalnie),
+- nazwisko użytkownika (opcjonalnie),
+- adres e-mail (opcjonalnie),
+- numer telefonu (opcjonalnie),
+- uprawnienie *token validator* pozwalające na zatwierdzanie wrażliwych operacji w infrastrukturach Private Cloud dysponujących opcją HDS lub PCI-DSS,
+- uprawnienie *Ip* pozwalające na uzyskanie dostępu do wtyczki OVH network,
+- uprawnienie *Additional IP* pozwalające na zarządzanie trybem Additional IP związanym z infrastrukturą Private Cloud,
+- uprawnienie *Interface NSX* pozwalające na uzyskanie dostępu do interfejsu NSX, jeśli odpowiednia opcja jest aktywna w usłudze Private Cloud,
+- stan (Diagnostyka) pozwalający sprawdzić, czy użytkownik został prawidłowo utworzony.
+
+Po kliknięciu przycisku <code className="action">...</code> po prawej stronie tabeli pojawiają się następujące opcje:
+
+- Zmień wpisy w tej tabeli (zmiana uprawnień wspomnianych powyżej, dodanie adresu e-mail lub numeru telefonu).
+- Zobacz i zmień uprawnienia tego użytkownika według centrum danych.
+- Zmień hasło użytkownika.
+- Usuń tego użytkownika.
+
+Poniżej przyjrzymy się bliżej zmianie uprawnień według centrum danych:
+
+<img className="thumbnail" alt="Droits utilisateur par datacenter" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel7.png" loading="lazy" />
+
+- <code className="action">vSphere access</code> — są to uprawnienia globalne użytkownika w interfejsie vSphere:
+
+|Uprawnienia|Opis|
+|---|---|
+|Brak|Brak dostępu|
+|Do odczytu|Dostęp tylko do odczytu|
+|Odczyt/Zapis|Dostęp do odczytu i zapisu|
+|Operator|Dostęp zarezerwowany dla administratorów OVHcloud|
+
+- <code className="action">Dostęp do sieci VM</code> — jest to zarządzanie uprawnieniami dotyczącymi części sieci publicznej (nazywanej `VM Network` w interfejsie vSphere):
+
+|Uprawnienia|Opis|
+|---|---|
+|Brak|Brak dostępu|
+|Do odczytu|Dostęp tylko do odczytu|
+|Operator|Może konfigurować maszyny wirtualne (VM) w sieci publicznej|
+
+- <code className="action">Dostęp do V(X)LAN</code> — zarządzanie uprawnieniami dotyczącymi części sieci prywatnej VXLAN dla gamy Hosted Private Cloud lub VLAN dla gamy Private Cloud SDDC:
+
+|Uprawnienia|Opis|
+|---|---|
+|Brak|Brak dostępu|
+|Do odczytu|Dostęp tylko do odczytu|
+|Operator|Może konfigurować maszyny wirtualne (VM) w sieci prywatnej|
+|Administrator|Może zarządzać grupami portów przełącznika wirtualnego (tworzyć, modyfikować, usuwać itp.)|
+
+- <code className="action">Dodaj zasoby</code> — ten przycisk pozwala na przyznanie (lub cofnięcie) uprawnień do dodawania dodatkowych zasobów przez wtyczkę OVH w interfejsie vSphere klienta.
+
+#### Bezpieczeństwo
+
+W tej karcie można skonfigurować politykę dostępu do interfejsu vCenter:
+
+<img className="thumbnail" alt="Paramètres de sécurité" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel8.png" loading="lazy" />
+
+Elementy wymienione powyżej i w tabeli można konfigurować za pomocą przycisków dostępnych po prawej stronie tabeli. Można skonfigurować następujące elementy:
+
+- termin wygaśnięcia sesji połączenia;
+
+- liczba dozwolonych jednoczesnych połączeń;
+
+- polityka dostępu (ograniczony lub nie), z zezwoleniem według źródłowego adresu IP. Adresy IP są przedstawione w tabeli.
+Można modyfikować lub usunąć adres IP lub zakres, klikając przycisk <code className="action">...</code> po prawej stronie tabeli.
+
+:::warning
+Jeśli polityka dostępu będzie ustawiona na tryb ograniczony i nie wprowadzisz żadnego adresu IP, żaden użytkownik nie będzie mógł się zalogować do klienta vSphere. Maszyny wirtualne pozostaną jednak dostępne.
+
+:::
+
+
+- polityka wylogowania polega na wylogowaniu pierwszego lub ostatniego zalogowanego użytkownika.
+Jeśli na przykład jest zalogowanych 50 użytkowników i zaloguje się 51, to rozłączona zostanie pierwsza osoba, która się zalogowała.
+
+Druga tabela dotyczy opcji *VM encryption*.
+
+Więcej szczegółów na temat tej opcji znajdziesz w [tym przewodniku](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/vm-encrypt/).
+
+#### Operacje
+
+W tej karcie znajdziesz operacje trwające w Twojej infrastrukturze:
+
+<img className="thumbnail" alt="Operacje" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel9.png" loading="lazy" />
+
+Możesz sprawdzić, czy nie występują błędy w operacjach lub czy jest zaplanowana konserwacja.
+
+Możesz zmienić datę konserwacji, klikając przycisk <code className="action">...</code> po prawej stronie tabeli.
+
+:::info
+Jeśli dostęp do interfejsu vSphere jest niemożliwy, może to oznaczać trwającą konserwację — w tej karcie możesz to sprawdzić.
+
+:::
+
+
+#### Licencja Windows
+
+Karta <code className="action">Licencja Windows</code> pozwala aktywować licencje SPLA Windows w Twojej usłudze Private Cloud. W tym celu kliknij przycisk po prawej stronie:
+
+<img className="thumbnail" alt="Licence SPLA Windows" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel10.png" loading="lazy" />
+
+Cennik znajdziesz [tutaj](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/images-licenses/).
+
+### Widok centrum danych
+
+W usłudze Private Cloud można mieć kilka centrów danych Kliknij Twoją Private Cloud, aby je zobaczyć:
+
+<img className="thumbnail" alt="Vue Datacenter" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel11.png" loading="lazy" />
+
+Kliknij ikonę ołówka, aby dostosować nazwę centrum danych lub dodać spersonalizowany opis.
+
+Znajdziesz tu podstawowe informacje o Twoim centrum danych, gamie, liczbie hostów i magazynów danych.
+W ramach jednej oferty Private Cloud można mieć kilka centrów danych, posiadając gamy Hosted Private Cloud oraz Private Cloud SDDC.
+
+#### Hosty
+
+Tutaj są przedstawione hosty Twojego centrum danych:
+
+<img className="thumbnail" alt="Hosts" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel12.png" loading="lazy" />
+
+W tej części znajdziesz takie informacje jak:
+
+- nazwy hostów,
+- ich profile (M, L, L+...),
+- tryb płatności: jeśli Twój host jest płatny za godzinę, możesz przejść na płatności miesięczne, klikając przycisk po prawej stronie tabeli;
+- status hosta,
+- liczba wykorzystanych godzin (tylko w przypadku zasobów na godziny).
+
+W lewym górnym rogu tej tabeli możesz zamówić nowego hosta z abonamentem miesięcznym.
+
+#### Magazyny danych
+
+Tabela magazynów danych przypomina tabelę hostów:
+
+<img className="thumbnail" alt="Magazyny danych" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel13.png" loading="lazy" />
+
+W tej części znajdziesz takie informacje jak:
+
+- nazwy magazynów danych,
+- ich profile,
+- ich typy (hybrydowe lub full SSD),
+- ich rozmiary,
+- tryb płatności,
+- status magazynu danych informujący o tym, czy jest on prawidłowo zainstalowany,
+- liczba wykorzystanych godzin (tylko w przypadku zasobów na godziny).
+
+W lewym górnym rogu tej tabeli możesz zamówić nowy magazyn danych z abonamentem miesięcznym.
+
+#### Backup
+
+Karta Backup umożliwia aktywację rozwiązania `Veeam Backup`.
+
+<img className="thumbnail" alt="Backup" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/manager-ovh-private-cloud/controlpanel14.png" loading="lazy" />
+
+Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/veeam-backup-as-a-service/).
+
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

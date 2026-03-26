@@ -1,0 +1,78 @@
+.rp-migration-resources {
+  max-width: 72rem;
+  margin: 0 0 2.5rem 0;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--rp-c-text-1);
+    margin-bottom: 1.25rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: var(--rp-c-bg-soft);
+    border-radius: 0.75rem;
+  }
+
+  &__card-icon {
+    color: var(--rp-c-brand);
+    margin-bottom: 0.75rem;
+  }
+
+  &__card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--rp-c-text-1);
+    margin: 0 0 0.5rem;
+    line-height: 1.4;
+  }
+
+  &__card-description {
+    font-size: 0.875rem;
+    color: var(--rp-c-text-2);
+    line-height: 1.55;
+    margin: 0 0 0.75rem;
+    flex: 1;
+  }
+
+  &__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--rp-c-brand-lighter);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    font-size: 0.9375rem;
+    color: var(--rp-c-text-2);
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .rp-migration-resources__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rp-migration-resources__title {
+    font-size: 1.25rem;
+  }
+}

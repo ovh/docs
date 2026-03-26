@@ -1,0 +1,197 @@
+---
+title: Añadir un dominio a un servicio Exchange
+description: Cómo añadir un dominio a un servicio Exchange
+lastUpdated: 2025-04-28
+---
+
+
+
+## Objetivo
+
+Añadir un dominio a un servicio Exchange es un requisito indispensable para poder utilizar las cuentas de dicho servicio. También es posible añadir varios dominios a un servicio Exchange o Email Pro.
+
+**Esta guía explica cómo añadir un dominio a una plataforma Exchange o Email Pro.**
+
+## Requisitos
+
+- Tener una [solución Exchange](https://www.ovhcloud.com/es-es/emails/) o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
+- Tener uno o más dominios.
+- Estar en condiciones de modificar la configuración del dominio ([zona DNS](/guides/web-cloud/domains/dns-zone-edit/)).
+
+{/* CP-NAV-START:web-exchange */}
+{/* CP-NAV-START:web-email-pro */}
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleccione su plataforma
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Ruta de navegación:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Seleccione su plataforma
+
+---
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-exchange */}
+
+## Procedimiento
+
+### Añadir un dominio
+
+1. Haga clic en la pestaña <code className="action">Dominios asociados</code> de su plataforma Exchange o Email Pro.
+1. Se mostrará una tabla con los dominios asociados a su servicio.
+1. Haga clic en el botón <code className="action">Añadir un dominio</code>.
+
+<img className="thumbnail" alt="Add Domain" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step1.png" loading="lazy" />
+
+:::warning
+Por defecto, todas las cuentas de correo de una plataforma están interconectadas. Todas las direcciones creadas en el servicio de correo podrán ver todas las direcciones de ese servicio en el directorio, incluidas las que tengan un nombre de dominio diferente. Para disociar la visualización de los dominios, es necesario contratar otra plataforma [Exchange o Email Pro](https://www.ovhcloud.com/es-es/emails/) para el dominio o dominios en cuestión.
+
+:::
+
+
+En la ventana de adición de dominio:
+
+- **Seleccionar un dominio de la lista**: En el área de cliente de OVHcloud, podrá ver la lista de dominios que gestiona en su totalidad (o como mínimo, la zona DNS).
+
+- **introducir un dominio no gestionado por su cuenta de OVHcloud**: Para poder configurar el servicio, deberá poder modificar la configuración del dominio, concretamente su zona DNS.
+
+Una vez su elegido hecho, haga clic en el botón <code className="action">Siguiente</code>.
+
+<img className="thumbnail" alt="Add Domain" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step2.png" loading="lazy" />
+
+La ventana muestra ahora la información relativa a la configuración de los modos.
+
+- **Si ha seleccionado en la lista un dominio gestionado por OVHcloud**, puede elegir entre dos modos.
+    - **Configuración recomendada**: su zona DNS se configurará automáticamente. Es adecuado si no tiene una configuración específica en su zona DNS para los registros MX, SPF, DKIM y SRV.
+    - **Configuración personalizada**: adecuado si ya ha configurado una solución de correo en su dominio. Puede elegir los elementos que le interesen.
+        - Si desea utilizar un servicio de correo privado o externo a OVHcloud como complemento de esta plataforma de correo, introduzca el nombre de host del servidor de correo en el recuadro `URL del servidor de correo de destino`.
+        - *Configurar el registro MX automáticamente*: Permite introducir automáticamente los servidores de recepción de OVHcloud (se aplica a todos los productos de correo de OVHcloud).
+        - *Configurar el registro SPF automáticamente*: Permite introducir automáticamente el registro SPF para autorizar a los servidores de envío de correo de OVHcloud a transmitir sus mensajes de correo. Este registro es válido para todas las soluciones de correo de OVHcloud.
+        - *Configurar el registro DKIM automáticamente*: Permite introducir automáticamente los registros necesarios para autentificar los envíos de correo.
+        - *Configurar el registro SRV automáticamente*: Permite que el cliente de correo configure automáticamente las cuentas Exchange en el dominio.
+
+<img className="thumbnail" alt="Add Domain" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step2-1b.png" loading="lazy" />
+
+- **Si ha introducido un dominio no gestionado por su cuenta de OVHcloud**, significa que el dominio, y en particular su zona DNS, no está gestionado desde el área de cliente de OVHcloud. También puede estar registrado en otro agente registrador. Para ello, deberá realizar la configuración directamente en su interfaz de gestión, independientemente de la siguiente opción elegida.
+    - **Configuración recomendada**: adecuada si solo utiliza las soluciones de correo electrónico de OVHcloud.<br/><br/>
+    - **Configuración personalizada**: si desea utilizar un servicio de correo privado o externo a OVHcloud como complemento de esta plataforma de correo, introduzca el nombre de host del servidor de correo en el recuadro `URL del servidor de correo de destino`.
+
+<img className="thumbnail" alt="Add Domain" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step2-2.png" loading="lazy" />
+
+Una vez realizada la configuración, compruebe que la información mostrada es correcta y haga clic en <code className="action">Confirmar</code> para añadir el dominio.
+
+### Configurar el dominio (zona DNS)
+
+Una vez asociado el dominio, asegúrese de que su configuración es correcta comprobando la información indicada en la tabla. La etiqueta verde indica que el dominio está configurado correctamente.<br/>
+
+Si la etiqueta es roja:
+
+- **Si ha elegido la configuración automática al añadir el dominio**, puede durar unos minutos en mostrarse en el área de cliente de OVHcloud.
+
+- **Si ha introducido un dominio no gestionado por su cuenta de OVHcloud**:
+    - Haga clic en la etiqueta roja `MX`, `SRV`, `SPF` y `DKIM` para ver los cambios que debe realizar. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVHcloud), deberá realizar los cambios necesarios desde el panel de administración del dominio.
+    - En el marco de una etiqueta roja `CNAME`, consulte nuestra guía explicando cómo [crear un registro CNAME al añadir un dominio asociado](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/).
+
+<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step4.png" loading="lazy" />
+
+:::info
+La modificación de la configuración de un dominio dura entre 4 y 24 horas en propagarse y ser efectiva.
+
+:::
+
+
+Para comprobar que la configuración del dominio es correcta, vuelva a la tabla <code className="action">Dominios asociados</code> del servicio. Si la etiqueta es ahora de color verde, el dominio está correctamente configurado. De lo contrario, es posible que la propagación aún no se haya finalizado.
+
+### Cambiar el modo de un dominio asociado
+
+Es posible modificar el modo de un dominio asociado en su plataforma. En primer lugar, es necesario entender la diferencia de funcionamiento entre los modos autoritario y no autoritario.
+
+:::info
+**Autoritario/no autoritario**
+
+- La elección del modo **autoritario** en su plataforma de correo (*Server A*) implica el alojamiento de todas las direcciones de correo de su nombre de dominio en esta plataforma.<br/>Por ejemplo, si se envía un mensaje de correo a la dirección «*mary.johnson@mydomain.ovh*», el «*Server A*» devuelve un mensaje de error al remitente, ya que esta dirección no existe en el «*Server A*».<br/><br/>
+
+- El modo **no autoritario** de su plataforma de correo (*Server A*) permite dividir las direcciones de correo de su dominio entre su plataforma de correo principal (*Server A*) y otro servicio de correo (*Server B*).<br/>Por ejemplo, si envía un mensaje de correo a la dirección «*mary.johnson@mydomain.ovh*», el *Server A* remitirá el correo electrónico al «*Server B*» para que este último pueda entregarlo.<br/>
+
+:::
+
+><img className="thumbnail" alt="Authoritative" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_authoritative.png" loading="lazy" />
+
+1. Haga clic en la pestaña <code className="action">Dominios asociados</code>.
+1. Haga clic en el botón <code className="action">...</code> en la línea del dominio correspondiente.
+1. Haga clic en <code className="action">Configuración</code>.
+1. Seleccione el modo que desee.
+
+:::warning
+Si recibe el mensaje «**authoritative domain detected**» al añadir el dominio a su plataforma de correo, significa que el dominio está declarado en modo **autoritativo** en otra plataforma de correo. Deberá cambiarlo a modo **no autoritario** en ambas plataformas para que puedan coexistir.
+
+:::
+
+
+### Configurar y utilizar las cuentas
+
+Una vez que haya añadido los dominios, ya puede configurar sus cuentas de correo con ellos. Para ello, abra la pestaña <code className="action">Cuentas de correo</code> de . Si lo necesita, puede contratar cuentas adicionales con el botón <code className="action">Acción</code>/<code className="action">Contratar cuentas</code> o <code className="action">Añadir una cuenta</code>.
+
+Le recordamos que todas las direcciones creadas en el servicio podrán ver en el directorio todas las direcciones del servicio, incluidas aquellas que tengan un nombre de dominio diferente.
+
+Una vez que haya configurado las cuentas, ya puede empezar a utilizarlas. Para ello, OVHcloud pone a su disposición el **webmail**, disponible [aquí](https://www.ovhcloud.com/es-es/mail/). Para un uso óptimo de su dirección en un programa, asegúrese de que es compatible con el servicio.
+
+Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo periférico, como un smartphone o una tablet, u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte nuestras guías, que encontrará en las páginas [Exchange](https://www.ovhcloud.com/es-es/emails-exchange/) y [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
+
+Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es) y licencias Office 365 en la página [Microsoft 365](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/). Le recomendamos una de estas soluciones si desea disfrutar del cliente de correo Outlook o de más programas de la suite Office, según sus necesidades.
+
+### Eliminar un dominio de una plataforma
+
+Si quiere eliminar un dominio asociado a su servicio Exchange o Email Pro, compruebe que este no esté asociado a cuentas de correo, alias, recursos, cuentas compartidas (solo en Exchange), grupos, contactos externos o pies de página siempre configurados. En ese caso, deberá **asociar las cuentas a otro dominio** de su plataforma o eliminarlas y/o **eliminarlas**.
+
+:::warning
+Antes de eliminar cuentas de correo, asegúrese de que no se están utilizando. Puede que sea necesario realizar una copia de seguridad de estas cuentas. Si necesita ayuda, consulte la guía [Migrar manualmente una dirección de correo electrónico](/guides/web-cloud/email-and-collaborative-solutions/migrating/manual-email-migration/), que explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
+
+:::
+
+
+Acceda a la pestaña <code className="action">Dominios asociados</code> de su plataforma. Desde la tabla, la columna `Cuentas` indica el número de cuentas asociadas a los dominios de su lista.
+
+Si tiene cuentas de correo asociadas al dominio que desea desvincular, tiene dos posibilidades:
+
+**Asociar las cuentas a otro dominio**:
+
+1. Acceda a la pestaña <code className="action">Cuentas de correo</code>.
+1. A la derecha de las cuentas que quiera modificar, haga clic en el botón <code className="action">...</code>.
+1. Haga clic en <code className="action">Editar</code>.
+
+<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step8.png" loading="lazy" />
+
+4\. Desde la ventana de modificación, puede modificar el nombre de dominio asociado a la cuenta a través del menú desplegable.
+
+<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step9.png" loading="lazy" />
+
+**Eliminar las cuentas de su plataforma**:
+
+1. Acceda a la pestaña <code className="action">Cuentas de correo</code>.
+1. A la derecha de la cuenta que quiera eliminar, haga clic en el botón <code className="action">...</code>.
+1. Haga clic en <code className="action">Restablecer esta cuenta</code> o <code className="action">Restablecer</code>.
+
+<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step7.png" loading="lazy" />
+
+Una vez que las cuentas se hayan reasignado a otro dominio o se hayan restablecido, es posible eliminar el dominio.
+
+En la pestaña <code className="action">Dominios asociados</code> de su plataforma, haga clic en el botón <code className="action">...</code> a la derecha del dominio correspondiente y seleccione <code className="action">Eliminar este dominio</code>.
+
+<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/add_domain_exchange_step10.png" loading="lazy" />
+
+## Más información
+
+[Crear un registro CNAME al añadir un dominio asociado](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-dns-cname/)
+
+[Editar una zona DNS de OVHcloud](/guides/web-cloud/domains/dns-zone-edit/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte.](https://www.ovhcloud.com/es-es/support-levels/)
+
+Interactúe con nuestra [comunidad de usuarios](https://community.ovhcloud.com/community/en).

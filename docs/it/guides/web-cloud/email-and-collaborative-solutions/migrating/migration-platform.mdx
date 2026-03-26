@@ -1,0 +1,169 @@
+---
+title: "Migrare i tuoi indirizzi email da una piattaforma OVHcloud verso un'altra"
+description: "Questa guida ti mostra come migrare gli indirizzi email da una piattaforma Exchange o Email Pro verso un'altra piattaforma Exchange, Email Pro, MX Plan o Zimbra"
+lastUpdated: 2026-03-30
+---
+
+## Obiettivo
+
+Per migrare i tuoi indirizzi email presenti su una piattaforma Exchange o Email Pro su un'altra piattaforma Exchange, Email Pro, MX Plan o Zimbra. In questa guida trovi il processo di migrazione in due fasi:
+
+1. **Configura la piattaforma di destinazione**
+2. **Migrare gli account email** dalla piattaforma attuale verso la nuova.
+
+<img className="thumbnail" alt="email-migrazione" src="/images/web-cloud/email-and-collaborative-solutions/migrating/migration-platform/migration_platform01.gif" loading="lazy" />
+
+:::info
+Per migrare una soluzione MX Plan verso una piattaforma Exchange o Email Pro, consulta la guida [Migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/guides/web-cloud/email-and-collaborative-solutions/migrating/migration-control-panel/).
+
+:::
+
+
+**Questa guida ti mostra come migrare gli indirizzi email da una piattaforma Exchange o Email Pro verso un'altra piattaforma Exchange o Email Pro.**
+
+## Prerequisiti
+
+- Disporre di una piattaforma **"sorgente"** con conti [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) configurati o [Zimbra](https://www.ovhcloud.com/it/emails/zimbra-emails/).
+- Disporre di una piattaforma di **"destinazione"** con account [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/), [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) o MX Plan (inclusa nella soluzione MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)) Questa piattaforma deve disporre di account non configurati o disponibili per accogliere gli indirizzi email che devono essere migrati.
+
+{/* CP-NAV-START:web-mx-plan */}
+{/* CP-NAV-START:web-email-pro */}
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link diretto:** [MX Plan](https://manager.eu.ovhcloud.com/#/web/web/email_domain)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">MX Plan</code> > Seleziona il tuo servizio MX Plan
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](https://manager.eu.ovhcloud.com/#/web/email_pro)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Email Pro</code> > Seleziona la tua piattaforma
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Seleziona la tua piattaforma
+
+---
+{/* CP-NAV-END:web-exchange */}
+{/* CP-NAV-END:web-email-pro */}
+{/* CP-NAV-END:web-mx-plan */}
+
+## Procedura
+
+### Configura la piattaforma di destinazione
+
+:::warning
+Prima di iniziare la tua migrazione, se hai appena ordinato la tua nuova offerta email, aggiungi prima il nome del dominio alla tua piattaforma email. Se stai migrando verso una piattaforma MX Plan, il nome del dominio associato essendo "fisso", puoi passare direttamente alla [prossima fase](#accountsmigration).
+
+Seleziona l'opzione <code className="action">Domini associati</code> o <code className="action">Dominio</code> sulla tua piattaforma, quindi clicca su <code className="action">Aggiungi un dominio</code>. Una volta aggiunto il nome del dominio, assicurati che l'indicazione `OK` o <code className="action">Attivo</code> sia presente nella colonna `Stato`.
+
+<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/migrating/migration-platform/account_migration_adddomain.png" loading="lazy" />
+
+Per ulteriori dettagli sull'aggiunta di un nome di dominio, segui la [guida Email Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/first-config/), la [guida Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-adding-domain/) o la [guida Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/).
+
+:::
+
+
+### Migra gli account email <a name="accountsmigration"></a>
+
+La migrazione dei tuoi account email avverrà in 3 step principali: **Rinomina** l'account email originale, **crea** il nuovo account email e **migra** dalla piattaforma di origine alla nuova.
+
+<img className="thumbnail" alt="email-migrazione" src="/images/web-cloud/email-and-collaborative-solutions/migrating/migration-platform/migration_platform03.gif" loading="lazy" />
+
+:::warning
+Caso specifico:
+
+- Se devi migrare **un conto Exchange o Zimbra PRO** verso un conto **Email Pro** o **Zimbra STARTER**, devi assicurarti che i tuoi conti email non superino i 10 Go (Email Pro) o 15 Go (Zimbra STARTER). Le funzioni collaborative, la sincronizzazione dei calendari e contatti non sono presenti su Email Pro o Zimbra STARTER e non possono essere migrate.
+- Se devi migrare **un conto Exchange, Email Pro o Zimbra** verso un conto **MX Plan**, devi assicurarti che il tuo conto email non superi i 5 Go. Le funzioni collaborative, la sincronizzazione dei calendari e contatti non sono presenti su MX Plan e non possono essere migrate.
+
+:::
+
+
+#### Rinomina
+
+Rinomina l'account email da migrare con un nome provvisorio (ad esempio: per migrare l'account email *john.smith@mydomain.ovh*, rinominalo in *john.smith01@mydomain.ovh*).
+
+Nella scheda <code className="action">Account email</code> della tua piattaforma email, clicca sui tre puntini <code className="action">...</code> e poi su <code className="action">Modifica</code>.
+
+<img className="thumbnail" alt="email-migrazione" src="/images/web-cloud/email-and-collaborative-solutions/migrating/migration-platform/migration_platform04.png" loading="lazy" />
+
+#### Crea
+
+Crea il tuo indirizzo email sul nuovo account della tua piattaforma Email Pro, Exchange o MX Plan (prendendo l'esempio precedente, crei *john.smith@mydomain.ovh* sulla tua nuova piattaforma)
+
+Nella scheda <code className="action">Account email</code> della tua piattaforma, clicca sui tre puntini in corrispondenza dell'account <code className="action">...</code>. e seleziona <code className="action">Modifica</code>.
+
+<img className="thumbnail" alt="email-migrazione" src="/images/web-cloud/email-and-collaborative-solutions/migrating/migration-platform/migration_platform05.png" loading="lazy" />
+
+#### Migrare
+
+:::warning
+Verranno migrati solo i dati dei tuoi account email (email, contatti, calendari, regole della posta in arrivo, ecc...). Le funzionalità legate alla tua piattaforma dovranno essere ripristinate sulla nuova piattaforma:
+
+- [Alias](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/feature-redirections/)
+- [Delega dei diritti](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+- [Gruppi](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/)
+- Contatti esterni
+- [Firma](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-footers/)
+
+:::
+
+
+Migra l'account email "sorgente" verso l'account della tua nuova piattaforma con l'aiuto del nostro tool [OMM](https://omm.ovhcloud.com/) (OVHcloud Mail Migrator).
+
+Per maggiori informazioni su OMM, consulta la guida [Migrare account email via OVHcloud Mail Migrator](/guides/web-cloud/email-and-collaborative-solutions/migrating/migration-omm/).
+
+<img className="thumbnail" alt="email-migrazione" src="/images/web-cloud/email-and-collaborative-solutions/migrating/migration-platform/migration_platform06.png" loading="lazy" />
+
+Il tempo di migrazione dipende dalla quantità di dati da migrare verso il nuovo account. che può variare da pochi minuti a diverse ore.
+
+Una volta completata la migrazione, verifica di trovare tutti i tuoi elementi accedendo alla Webmail all'indirizzo Web [Webmail](https://www.ovhcloud.com/it/mail/).
+
+Una volta completata la migrazione, puoi conservare o eliminare l'account di origine con il nome provvisorio.
+
+Per eliminarlo, seleziona la scheda <code className="action">Account email</code> della tua piattaforma email originale, clicca sul pulsante<code className="action">...</code> e poi su <code className="action">Reimposta questo account </code>.
+
+### Verifica o modifica la configurazione del tuo dominio
+
+In questa fase, gli account email devono essere già migrati e funzionali. Per motivi di sicurezza, ti consigliamo di assicurarti che la configurazione del tuo dominio sia corretta consultando il tuo Spazio Cliente OVHcloud.
+
+Per farlo, seleziona il servizio Email Pro, Exchange o Zimbra interessato, quindi vai nell'opzione <code className="action">Domini associati</code> o <code className="action">Dominio</code> sulla tua piattaforma. Verifica la sezione o la colonna <code className="action">Diagnostica</code>.
+
+<img className="thumbnail" alt="exchange" src="/images/web-cloud/email-and-collaborative-solutions/migrating/migration-platform/check_the_dns_records_associated_domains.png" loading="lazy" />
+
+:::info
+Se hai appena effettuato la migrazione o modificato un record DNS del tuo dominio, è possibile che l'aggiornamento della pagina nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) richieda qualche ora.
+
+:::
+
+
+Per modificare la configurazione, clicca sulla pastiglia rossa e effettua la manipolazione richiesta. Questa richiede un tempo di propagazione di 4 a 24 ore massimo prima di essere pienamente attiva.
+
+### Utilizza i tuoi account email migrati
+
+A questo punto non ti resta che utilizzare i tuoi account email migrati. OVHcloud mette a disposizione un'applicazione online (_Web app_) accessibile all'indirizzo [Webmail](https://www.ovhcloud.com/it/mail/). inserendo le credenziali associate al tuo indirizzo email.
+
+Se hai configurato uno degli account migrati su un client di posta (ad esempio: Outlook, Thunderbird), è necessario impostarlo di nuovo. Le informazioni di connessione al server OVHcloud sono cambiate in seguito alla migrazione.
+
+:::info
+Inoltre, è possibile migrare manualmente indirizzi email verso OVHcloud utilizzando il nostro tool [OVHcloud Mail Migrator (OMM)](https://omm.ovhcloud.com/). Per farlo, è necessario disporre delle informazioni (utente, password, server) dell'email sorgente e dell'email di destinazione.
+
+:::
+
+
+## Per saperne di più
+
+[Gestire i contatti dei servizi](/guides/account-and-service-management/account-information/managing-contacts/)
+
+[Primi passi con l'offerta Email Pro](/guides/web-cloud/email-and-collaborative-solutions/email-pro/first-config/)
+
+[Primi passi con l'offerta Exchange](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/exchange-starting-hosted/)
+
+[Primi passi con l'offerta Zimbra](/guides/web-cloud/email-and-collaborative-solutions/zimbra/getting-started-zimbra/)
+
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

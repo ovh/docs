@@ -1,0 +1,50 @@
+.language-switcher {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  &__select {
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--rp-c-divider);
+    border-radius: 6px;
+    padding: 0.4rem 2rem 0.4rem 0.75rem;
+    font-size: 0.875rem;
+    color: var(--rp-c-text-1);
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+
+    &:hover {
+      border-color: var(--rp-c-brand);
+      background-color: var(--rp-c-bg-soft);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--rp-c-brand);
+      box-shadow: 0 0 0 2px var(--rp-c-brand-light);
+    }
+  }
+
+  &__current {
+    position: absolute;
+    right: 0.5rem;
+    pointer-events: none;
+    font-size: 1rem;
+  }
+
+  // Add dropdown arrow
+  &::after {
+    content: '';
+    position: absolute;
+    right: 1.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid var(--rp-c-text-2);
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,111 @@
+---
+title: Exchange - How to create contact groups
+description: Find out how to manage mailing lists in Exchange
+lastUpdated: 2025-04-28
+---
+
+
+
+## Objective
+
+Exchange groups enable multiple participants to communicate by sending emails to a unique group address. With this collaborative feature you can create and manage mailing lists that include Exchange users as well as external contacts.
+
+**This guide explains how to use Exchange groups via the OVHcloud Control Panel and Outlook Web App (OWA).**
+
+## Requirements
+
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) already set up
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigation path:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Select your platform
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## Instructions
+
+### Creating a new group
+
+Click on the <code className="action">Groups</code> tab in the horizontal menu.
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-create01.png" loading="lazy" />
+
+Clicking on <code className="action">Create a contact group</code> will open a new window where you can define the group's settings:
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-create02.png" loading="lazy" />
+
+- **Email address**: Set a new address that will send messages to the mailing list. Please note that you cannot enter an existing email address.
+- **Group name**: The display name that appears in your [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and in your [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail/) (OWA).
+- **Max size incoming / outgoing**: You can specify the maximum size of incoming and outgoing emails.
+- **Hide in Outlook**: If this box is ticked, the group address will not appear in the Exchange service's list of addresses.
+- **Authentication required**: If this box is ticked, only users on the same platform will be able to send a message using the group address.
+
+Click <code className="action">Next</code> to continue.
+
+On the second page, select the **Contacts** for the group and designate the **Administrators**. The choices will only include email addresses and external contacts that are already created on the service
+
+- **Administrators**: Email accounts authorized to send an email to all group contacts.
+- **Contacts**: Email accounts that will receive emails sent to the group by administrators.
+
+:::info
+Please note that administrators must be configured as **Contacts** in order to receive group emails.
+
+:::
+
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-create03.png" loading="lazy" />
+
+Click <code className="action">Next</code> to continue and click <code className="action">Confirm</code> to finalize your choices.
+
+### Managing groups
+
+After your group is created, you can adjust the settings described above by clicking <code className="action">...</code> to the right of the group in the table.
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-options01.png" loading="lazy" />
+
+#### Managing users in a group
+
+To add `Contacts` to your group or define `Administrators`, click the <code className="action">...</code> button, then <code className="action">Configure users</code>. Select the attributes that you want to attach to the email addresses in the `Email account` column.
+
+:::info
+A group can contain a maximum number of 10,000 contacts.
+
+:::
+
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-group-options-users01.png" loading="lazy" />
+
+#### Managing group delegations
+
+Additionally, the menu item <code className="action">Manage delegations</code> will be displayed. This option allows you to delegate access in the same way as for an Exchange account. Find all the details in [this guide](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/).
+
+<img className="thumbnail" alt="contactgroups" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-groups/exchange-groups-options-delegation01.png" loading="lazy" />
+
+:::info
+Please note that any changes to this service may take a few minutes to be applied. You can check the status of most operations by selecting the <code className="action">More</code> and <code className="action">Recent tasks</code> options from the horizontal menu.
+
+:::
+
+
+### Messaging a group in OWA
+
+You can now test your mailing list via [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail/) (OWA): simply send an email to the group address.
+
+## Go further <a name="go-further"></a>
+
+[Delegating permissions on an Exchange account](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/feature-delegation/)
+
+[Using the Outlook Web App with an Exchange account](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/)
+
+[Sharing calendars in OWA](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/owa-calendar-sharing/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

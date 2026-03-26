@@ -1,0 +1,80 @@
+---
+title: Administración de firewall de puerta de enlace en NSX (EN)
+description: Learn how to manage gateway firewalls
+lastUpdated: 2023-02-27
+---
+
+## Objective
+
+Gateway Firewall allows filtering between internal segments and the network outside the incoming or outgoing cluster.
+
+It works on the North-South (Tier-0 Gateways) and East-West (Tier-1 Gateways) gateways if the source or destination is not inside the cluster.
+
+If you want to create filtering rules between internal segments, you will need to use distributed firewall using our guide on [distributed firewall management](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/).
+
+**Learn how to manage gateway firewalls.**
+
+:::warning
+OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+
+This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/es-es/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+
+:::
+
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Having **NSX** deployed with one segment configured in your NSX configuration. You can use our guide on [segment management in NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/) for more information.
+
+## Instructions
+
+We will create a strategy to improve the visibility and administration of rules based on their usefulness.
+
+Next, we will add a rule within our strategy that blocks access to the entire external network of a cluster from a group that contains a segment (you can use our [Distributed Firewall Management](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/) guide to create groups) and **any** for the destination.
+
+Go to the <code className="action">Security</code> tab, select <code className="action">Gateway Firewall</code> and click <code className="action">+ ADD POLICY</code>.
+
+<img className="thumbnail" alt="01 Create gateway firewall rules 01" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-06-manage-gateway-firewall/01-create-gateway-firewall-rules01.png" loading="lazy" />
+
+Select <code className="action">ovh-T0-gw</code> to the right of **Gateway**, name your policy <code className="action">my policy</code> below the **Name** column and click the <code className="action">three vertical dots</code> to the left of your policy.
+
+<img className="thumbnail" alt="01 Create gateway firewall rules 02" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-06-manage-gateway-firewall/01-create-gateway-firewall-rules02.png" loading="lazy" />
+
+Click <code className="action">Add Rule</code> in the menu.
+
+<img className="thumbnail" alt="01 Create gateway firewall rules 03" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-06-manage-gateway-firewall/01-create-gateway-firewall-rules03.png" loading="lazy" />
+
+Name your rule <code className="action">block segment1 to any</code> below the **Name** column.
+
+<img className="thumbnail" alt="01 Create gateway firewall rules 04" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-06-manage-gateway-firewall/01-create-gateway-firewall-rules04.png" loading="lazy" />
+
+Click on the <code className="action">pen</code> to the right of "Any" in the **Source** column.
+
+<img className="thumbnail" alt="01 Create gateway firewall rules 05" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-06-manage-gateway-firewall/01-create-gateway-firewall-rules05.png" loading="lazy" />
+
+Stay in the <code className="action">Group</code> tab, select the <code className="action">g-segment1</code> group and click <code className="action">APPLY</code>.
+
+<img className="thumbnail" alt="01 Create gateway firewall rules 06" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-06-manage-gateway-firewall/01-create-gateway-firewall-rules06.png" loading="lazy" />
+
+Choose <code className="action">Drop</code> under the **Action** column and click <code className="action">PUBLISH</code>.
+
+<img className="thumbnail" alt="01 Create gateway firewall rules 07" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-06-manage-gateway-firewall/01-create-gateway-firewall-rules07.png" loading="lazy" />
+
+Your rule is active on the **ovh-T0-gw** gateway, it blocks all outgoing traffic from members of the **g-segment01** group.
+
+## Go further <a name="gofurther"></a>
+
+[Getting started with NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-01-first-steps/)
+
+[Segment management in NSX](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-02-segment-management/)
+
+[Distributed Firewall management](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/nsx-05-manage-distributed-firewall/).
+
+[VMware Gateway Firewall in NSX Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+

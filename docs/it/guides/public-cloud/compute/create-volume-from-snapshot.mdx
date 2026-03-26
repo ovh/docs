@@ -1,0 +1,81 @@
+---
+title: Creare un volume a partire da un backup
+description: Come creare dischi aggiuntivi a partire da un backup di un disco supplementare
+lastUpdated: 2025-04-28
+---
+
+:::info
+Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+
+:::
+
+
+## Obiettivo
+
+Per creare dischi aggiuntivi per le tue istanze Public Cloud è possibile utilizzare il backup di un disco supplementare.
+
+Ciò può essere utile nei seguenti casi:
+
+- Per ripristinare i dati del disco aggiuntivi
+- Per avere uno spazio di storage high availability e performante con i tuoi dati
+- Spostare i dati verso un'altra istanza
+
+**Scopri come creare e configurare un disco aggiuntivo su una delle tue istanze tramite il backup di un disco.**
+
+## Prerequisiti
+
+- Disporre di un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
+- Disco nella stessa Region OpenStack
+- Avere accesso alla tua istanza via SSH come amministratore (sudo)
+
+{/* CP-NAV-START:publiccloud-projects */}
+---
+### Accesso allo Spazio Cliente OVHcloud
+- **Link diretto:** [Public Cloud Projects](https://manager.eu.ovhcloud.com/#/pci/projects)
+- **Percorso di navigazione:** <code className="action">Public Cloud</code> > Seleziona il tuo project
+---
+{/* CP-NAV-END:publiccloud-projects */}
+
+## Procedura
+
+### Crea il disco a partire da un backup
+
+Clicca su <code className="action">Volume Snapshot</code> nella barra di navigazione di sinistra sotto **Storage e Backup**.
+
+A destra del backup che preferisci, clicca sul pulsante <code className="action">...</code> e poi su <code className="action">Crea un volume</code>.
+
+<img className="thumbnail" alt="crea volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume01.png" loading="lazy" />
+
+Inserisci il nome del nuovo disco e la sua capacità e clicca su <code className="action">Crea il volume</code>.
+
+<img className="thumbnail" alt="crea volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume02.png" loading="lazy" />
+
+La creazione del disco potrebbe richiedere alcuni minuti, a seconda della sua dimensione.
+
+### Associa il disco a un'istanza
+
+Una volta creato il disco, puoi decidere di associarlo a un'istanza. clicca su <code className="action">Block Storage</code> nella barra di navigazione di sinistra su **Storage e Backup**.
+
+A destra del volume scelto, clicca sul pulsante <code className="action">...</code> e poi su <code className="action">Associa all'istanza</code>.
+
+<img className="thumbnail" alt="associare volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume03.png" loading="lazy" />
+
+Seleziona l'istanza e clicca su <code className="action">Conferma</code> per associare il disco.
+
+<img className="thumbnail" alt="associare volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume04.png" loading="lazy" />
+
+Il processo di associazione del disco all'istanza sta per iniziare e potrebbe richiedere alcuni minuti.
+
+<img className="thumbnail" alt="associare volume" src="/images/public-cloud/compute/create-volume-from-snapshot/volume05.png" loading="lazy" />
+
+:::warning
+:::
+
+Evitare la navigazione fuori dalla scheda in corso durante l'associazione del disco. Ciò può interrompere il processo.
+>
+
+Una volta effettuato l'associazione, puoi seguire gli step successivi [con Linux](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#da-linux/) o [Windows](/guides/public-cloud/compute/create-and-configure-an-additional-disk-on-an-instance#da-windows/).
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

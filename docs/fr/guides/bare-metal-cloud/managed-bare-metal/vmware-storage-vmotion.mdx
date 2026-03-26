@@ -1,0 +1,61 @@
+---
+title: VMware Storage vMotion
+description: Déplacer votre machine virtuelle sur un hôte différent à chaud
+lastUpdated: 2020-11-18
+---
+
+## Objectif
+
+Le **Storage vMotion** permet de modifier l'emplacement de stockage des fichiers de la machine virtuelle et cela en conservant la machine virtuelle sous tension. Il est possible de déplacer la machine virtuelle complètement ou disque par disque.
+
+**Ce guide montre comment réaliser cette opération.**
+
+## En pratique
+
+### Déplacer le disque d'une machine virtuelle
+
+Pour déplacer les fichiers d'une machine virtuelle vers un autre datastore, il vous suffit de faire un clic droit sur la machine virtuelle allumée puis de sélectionner le menu `Migrer...`.
+
+<img className="thumbnail" alt="déplacer disque" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage1.png" loading="lazy" />
+
+### Choix du type de vMotion
+
+Le menu propose plusieurs options de **vMotion**. Dans notre exemple, nous désirons uniquement migrer la machine virtuelle sur une autre banque de données. Il faut donc sélectionner « Modifier uniquement le stockage ».
+
+L'option « Modifier uniquement la ressource de calcul » permet de migrer la machine virtuelle sur un autre hôte.  
+
+Cette opération appelé **vMotion** est décrit dans [ce guide](/guides/bare-metal-cloud/managed-bare-metal/vmware-vmotion-new/).
+
+<img className="thumbnail" alt="choix de vMotion" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage2.png" loading="lazy" />
+
+### Choix du datastore
+
+Choisissez vers quel stockage migrer les données.
+
+Il est également possible de modifier la politique de stockage lors de cette opération.
+
+Ainsi, vous pouvez appliquer les politiques de stockage créées si vous disposez d'un de l'option [VMencryption](/guides/bare-metal-cloud/managed-bare-metal/vm-encrypt/).
+
+<img className="thumbnail" alt="choix datastore" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage3.png" loading="lazy" />
+
+Dans le cas ou vous avez plusieurs disques virtuels sur la même machine, il est possible de ne migrer qu'un seul disque de la VM en utilisant le bouton <code className="action">Advanced</code>.
+
+Vous retrouverez cette vue :
+
+<img className="thumbnail" alt="datastore vMotion" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage6.png" loading="lazy" />
+
+### Finaliser le vMotion
+
+Cliquez sur <code className="action">Terminer</code> pour lancer la procédure de migration.
+
+<img className="thumbnail" alt="finaliser le vMotion" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage4.png" loading="lazy" />
+
+### Suivi du vMotion
+
+Dans les tâches récentes, vous pourrez suivre l'état de la migration. Celle-ci prend plus ou moins de temps selon la taille de la VM, les accès IO et la bande passante utilisée.
+
+<img className="thumbnail" alt="suivi de vMotion" src="/images/bare-metal-cloud/managed-bare-metal/vmware-storage-vmotion/VmotionStorage5.png" loading="lazy" />
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

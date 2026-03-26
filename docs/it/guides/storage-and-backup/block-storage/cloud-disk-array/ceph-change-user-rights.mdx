@@ -1,0 +1,56 @@
+---
+title: "Modifica i diritti dell'utente (EN)"
+description: This guide shows you how to change Ceph user rights using the web interface.
+lastUpdated: 2020-09-21
+---
+
+import Api from '@components/Api';
+
+
+## Using web interface
+Using web interface is the easiest way to change user rights.
+
+You must first select the action icon to the right of the user.
+
+<img className="thumbnail" alt="Ceph users" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-change-user-rights/change_user_rights_1.png" loading="lazy" />
+
+It will list current rights, by default there is no rights.
+
+<img className="thumbnail" alt="Ceph pool creation" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-change-user-rights/change_user_rights_2.png" loading="lazy" />
+
+Let's chose some rights for our user.
+
+<img className="thumbnail" alt="Ceph pool creation" src="/images/storage-and-backup/block-storage/cloud-disk-array/ceph-change-user-rights/change_user_rights_3.png" loading="lazy" />
+
+As usual cluster status and task list changes.
+
+## Using API
+
+<Api version="v1" section="/dedicated/ceph" method="PUT" route={"/dedicated/ceph/\{serviceName\}/pool"} />
+
+
+<Api version="v1" section="/dedicated/ceph" method="GET" route={"/dedicated/ceph/\{serviceName\}/user"} />
+
+Result example:
+
+```bash
+GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/user
+[
+  {
+    mdsCaps: "",
+    monCaps: "allow r",
+    serviceName: "98d166d8-7c88-47b7-9cb6-63acd5a59c15",
+    name: "myuser"
+    osdCaps: "allow class-read object_prefix rbd_children, allow rwx pool=mypool",
+    key: "AQA9KpdXoBrDNhAAFCM7m/XOtmWh3LMSNlHVqw==",
+  }
+]
+```
+
+## Go further
+
+Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

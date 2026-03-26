@@ -1,0 +1,105 @@
+---
+title: Enterprise File Storage - Gérez vos politiques de snapshots
+description: "Découvrez comment créer une politique de snapshot, l'appliquer sur votre volume, la modifier et la supprimer depuis votre espace client"
+lastUpdated: 2023-08-30
+---
+
+## Objectif
+
+Dans ce guide, nous allons vous donner un aperçu de la gestion de vos politiques de snapshots pour les volumes Enterprise File Storage d'OVHcloud.
+
+**Découvrez comment créer une politique de snapshot, l'appliquer sur votre volume, la modifier et la supprimer depuis votre espace client.**
+
+## Prérequis
+
+- Un service Enterprise File Storage OVHcloud avec un volume disponible
+
+{/* CP-NAV-START:storage-enterprise-file-storage */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Enterprise File Storage](https://manager.eu.ovhcloud.com/#/dedicated/netapp)
+- **Pour accéder à vos services :** <code className="action">Bare Metal Cloud</code> > <code className="action">Enterprise File Storage</code>
+
+---
+{/* CP-NAV-END:storage-enterprise-file-storage */}
+
+## Principes de base
+
+Un snapshot de volume est une copie ponctuelle en lecture seule d'un volume.<br/>
+Les snapshots sont créés à partir d'un volume opérationnel existant. Ils ne peuvent exister sans cela.<br/>
+Une politique de snapshot permet d'automatiser la création de snapshots à l'aide de différents paramètres. La politique peut ensuite être modifiée et supprimée si vous n'en avez plus besoin.
+
+## En pratique
+
+Sélectionnez votre service dans la liste.
+
+### Créer votre politique de snapshot
+
+Une politique de snapshot vous permet d'automatiser les snapshots en définissant la fréquence de création en minutes, heures, jours, semaines ou mois. 
+Il est également nécessaire de préciser le nombre de copies que vous souhaitez conserver.
+
+1\. Cliquez sur l'onglet <code className="action">Snapshot policies</code>.
+
+<img className="thumbnail" alt="SnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_1.png" loading="lazy" />
+
+2\. Définissez le nom de votre politique de snapshot, une description pour celle-ci, puis utilisez le bouton <code className="action">Ajouter une nouvelle règle</code> pour ajouter une ou plusieurs règles à la politique.
+
+<img className="thumbnail" alt="SnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_2.png" loading="lazy" />
+
+3\. Remplissez les champs pour spécifier l'heure, les jours du mois, les jours de la semaine et les mois pour la création du snapshot. Vous devrez également renseigner un préfixe pour les snapshots, nécessaire à leur dénomination.
+
+Vous pouvez trouver des informations plus détaillées pour chaque valeur en cliquant sur le point d'interrogation. En développant la section <code className="action">Exemple</code>, vous pouvez afficher deux ensembles de règles avec une explication de leur résultat.
+
+Cliquez sur la coche pour ajouter la nouvelle règle. Une fois toutes les règles ajoutées, cliquez sur <code className="action">Créer une nouvelle Snapshot policy</code>.
+
+:::info
+Vous devez spécifier un préfixe et une durée en minutes. De manière optionnelle, vous pouvez renseigner les heures, jours et mois d'exécution pour affiner votre planification.
+
+:::
+
+
+Vous ne pouvez pas modifier une politique de snapshot après l'avoir créée. Si vous devez appliquer de nouveaux paramètres de fréquence, vous devrez supprimer la politique de snapshot actuelle et en créer une nouvelle. 
+
+### Appliquer une politique de snapshot 
+
+Une fois la politique de snapshot créée, vous pouvez l'appliquer sur un volume.
+
+1\. Positionnez-vous sur l'onglet <code className="action">Volumes</code> de votre pool de capacité.
+
+<img className="thumbnail" alt="ApplySnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_3.png" loading="lazy" />
+
+2\. Choisissez dans la liste le volume auquel la politique de snapshot doit être appliquée.
+
+3\. Rendez-vous dans la section <code className="action">Snapshots</code> et dans la section <code className="action">Gérer la snapshot policy</code>, sélectionnez la politique que vous souhaitez appliquer. 
+
+4\. Cliquez sur le bouton <code className="action">Appliquer la policy</code>.
+
+<img className="thumbnail" alt="ApplySnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_4.png" loading="lazy" />
+
+### Supprimer une politique de snapshot
+
+:::warning
+Une politique de snapshot attachée à un volume ne peut pas être supprimée. Si vous souhaitez supprimer une politique de snapshot associée à un ou plusieurs volumes, vous devez d'abord dissocier cette politique en associant une autre politique de snapshot à ces volumes.
+
+:::
+
+
+Pour supprimer une politique de snapshot :
+
+1\. Rendez-vous dans l'onglet <code className="action">Snapshot policies</code> de votre pool de capacité.
+
+<img className="thumbnail" alt="DeleteSnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_5.png" loading="lazy" />
+
+2\. Sélectionnez la politique à supprimer.
+
+3\. Cliquez sur le bouton de suppression représentée par une <code className="action">corbeille</code>.
+
+<img className="thumbnail" alt="DeleteSnapshotPolicy" src="/images/storage-and-backup/file-storage/enterprise-file-storage/netapp-snapshot-policy/Snapshot_Policy_6.png" loading="lazy" />
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

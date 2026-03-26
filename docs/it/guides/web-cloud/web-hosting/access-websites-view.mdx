@@ -1,0 +1,145 @@
+---
+title: Visualizzare e gestire tutti i siti Web dallo Spazio Cliente OVHcloud
+description: Scopri come consultare e gestire tutti i siti Web dallo Spazio Cliente OVHcloud
+lastUpdated: 2025-05-27
+---
+
+## Obiettivo
+
+La visualizzazione `Siti Internet` permette di visualizzare in modo centralizzato tutti i siti Web, indipendentemente dal loro hosting. Questa soluzione permette di tenere traccia in modo semplice delle funzionalità attive per ogni sito Web e fornisce un rapido accesso alle azioni essenziali. Questa interfaccia è particolarmente utile per le agenzie o i professionisti del Web che gestiscono un gran numero di domini ripartiti su più hosting.
+
+**Questa guida ti mostra come visualizzare e gestire tutti i siti Web dallo Spazio Cliente.**
+
+## Prerequisiti
+
+- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
+
+{/* CP-NAV-START:web-hosting */}
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](https://manager.eu.ovhcloud.com/#/web/hosting)
+- **Percorso di navigazione:** <code className="action">Web Cloud</code> > <code className="action">Hosting</code> > Seleziona il tuo hosting web
+
+---
+{/* CP-NAV-END:web-hosting */}
+
+## Procedura
+
+### Accedi alla visualizzazione `Siti Internet`
+
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su <code className="action">Web Cloud</code>. Nel menu a sinistra, clicca su <code className="action">Siti Internet</code>. Visualizzi una tabella con tutti i tuoi siti Web e le informazioni principali.
+
+<img className="thumbnail" alt="visualizzazione_siti_internet" src="/images/web-cloud/web-hosting/access-websites-view/website_view_tab.png" loading="lazy" />
+
+#### Dominio
+
+Mostra il dominio principale del sito Web, così come configurato nella scheda Multisito del tuo hosting.
+
+Cliccando sul pulsante sarai reindirizzato alla scheda <code className="action">Multisito</code> dell’hosting interessato.
+
+#### Diagnostica
+
+Informa se il tuo dominio punta correttamente verso l’hosting Web associato. Per ogni dominio sono disponibili tre risultati diagnostici:
+
+- `A/AAAA` verde: i record A e/o AAAA del dominio puntano correttamente verso l’indirizzo IP dell’hosting Web.
+- `A/AAAA` giallo: i record A e/o AAAA del tuo dominio puntano verso un indirizzo IP diverso da quello del tuo hosting Web.
+- `A/AAAA` grigio: Nessun record A o AAAA è configurato, il dominio non punta verso alcun indirizzo IP.
+
+Cliccando sul pulsante sarai reindirizzato alla scheda <code className="action">Multisito</code> dell’hosting interessato.
+
+Per maggiori informazioni sulla diagnostica, consulta la sezione "Diagnostica i tuoi domini" della nostra guida "[Ospitare più siti su uno stesso hosting](/guides/web-cloud/web-hosting/multisites-configure-multisite/)".
+
+#### Cartella di root
+
+Indica la directory dell’hosting (ad esempio, www, app, public_html, ecc.) verso cui punta il dominio.
+
+Cliccando sul pulsante sarai reindirizzato alla scheda <code className="action">Multisito</code> dell’hosting interessato.
+
+#### Nome del servizio
+
+Nome tecnico del servizio di hosting Web su cui è configurato il sito, nel formato `abcdv.clusterXX.hosting.ovh.net`.
+
+Cliccando sul tasto, verrai reindirizzato alla scheda <code className="action">Informazioni generali</code> dell’hosting interessato.
+
+#### Nome visualizzato
+
+Alias personalizzato definito dal cliente per meglio identificare il proprio servizio nello Spazio Cliente.
+
+Cliccando sul tasto, verrai reindirizzato alla scheda <code className="action">Informazioni generali</code> dell’hosting interessato.
+
+#### Piano
+
+Mostra il tipo di offerta associata all'hosting: Starter, Personale, Pro o Performance.
+
+Cliccando sul tasto, verrai reindirizzato alla scheda <code className="action">Informazioni generali</code> dell’hosting interessato.
+
+#### Git
+
+Visualizza lo stato dell'integrazione Git sul sito Web:
+
+- Attivo: Il repository Git è connesso.
+- Inattivo: Il repository Git non è attivato.
+- In corso: Il repository Git è in corso di configurazione.
+- Errore: Viene rilevato un errore nella configurazione del repository Git.
+
+Cliccando sul pulsante sarai reindirizzato alla scheda <code className="action">Multisito</code> dell’hosting interessato.
+
+#### Log separati
+
+Indica se nel dominio selezionato è attivo uno spazio di log.
+
+Cliccando sul pulsante sarai reindirizzato alla scheda <code className="action">Multisito</code> dell’hosting interessato.
+
+Per maggiori informazioni, consulta la nostra pagina "[Segui e analizza il traffico dei tuoi siti Web](https://www.ovhcloud.com/it/web-hosting/uc-website-traffic-analysis/)".
+
+:::warning
+Impossibile attivare i log separati per un dominio esterno. Questa opzione è disponibile solo per i domini registrati in OVHcloud.
+
+:::
+
+
+#### CDN
+
+Mostra lo stato della CDN (**C**ontent **D**elivery **N**etwork) sul dominio:
+
+- Attivo: La CDN è attiva.
+- Inattivo: la CDN è disattivata.
+- N/D: Non applicabile (offerta non compatibile).
+
+Cliccando sul pulsante sarai reindirizzato alla scheda <code className="action">Multisito</code> dell’hosting interessato.
+
+La CDN permette di mettere in cache elementi statici del sito Web, come le immagini. Per maggiori informazioni, consulta la nostra pagina "[Shared CDN](https://www.ovhcloud.com/it/web-hosting/options/cdn/)".
+
+#### SSL
+
+Indica se l'SSL è attivo o meno sul dominio in questione.
+
+Cliccando sul pulsante sarai reindirizzato alla scheda <code className="action">Multisito</code> dell’hosting interessato.
+
+L'SSL ti permette di usufruire di una connessione sicura (**https://**) sul dominio selezionato. Per maggiori informazioni, consulta la nostra pagina "[Proteggi efficacemente il tuo sito web OVHcloud con un certificato SSL Premium](https://www.ovhcloud.com/it/web-hosting/options/ssl/)".
+
+#### Firewall
+
+Indica se il firewall dell'applicazione è attivato o meno sul dominio.
+
+Cliccando sul pulsante sarai reindirizzato alla scheda <code className="action">Multisito</code> dell’hosting interessato.
+
+Per maggiori informazioni, consulta la nostra pagina "[Opzioni indispensabili per l’hosting Web](https://www.ovhcloud.com/it/web-hosting/options/)".
+
+#### Boost
+
+Indica se l’opzione boost è attiva o meno sul tuo hosting Web. L’opzione Boost permette di aumentare temporaneamente le risorse CPU e RAM del tuo hosting Web.
+
+Cliccando sul pulsante, verrai reindirizzato alla scheda <code className="action">Boost</code> dell’hosting interessato.
+
+Per maggiori dettagli sull'opzione Boost, consulta la sezione "Potenzia temporaneamente il tuo hosting Performance" della nostra guida "[Hosting Web - Come far evolvere la tua offerta](/guides/web-cloud/web-hosting/how-to-upgrade-web-hosting-offer/)".
+
+## Per saperne di più <a name="go-further"></a>
+ 
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+ 
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+ 
+Contatta la nostra [Community di utenti](https://community.ovhcloud.com/community/en).

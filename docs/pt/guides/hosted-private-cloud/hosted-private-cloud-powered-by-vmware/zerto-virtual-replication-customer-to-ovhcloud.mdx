@@ -1,0 +1,355 @@
+---
+title: Using Zerto between OVHcloud and a third-party platform
+description: Learn how to set up Zerto between your OVHcloud Private Cloud and another platform
+lastUpdated: 2025-09-15
+---
+
+import Api from '@components/Api';
+
+
+## Objective
+
+This guide provides an outline of how to configure a virtual private network between an OVHcloud Hosted Private Cloud and a different platform.
+
+We will use the OPNsense open-source VPN Solution as an example, and explain the simplest way to set up a VPN tunnel to the Zerto network. 
+
+Check out [Zerto between two OVHcloud datacenters](/guides/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-as-a-service/) for the other scenario.
+
+**Find out how to get started with a VPN for OVHcloud Zerto DRP.**
+
+## Requirements
+
+- One public IP, available on the target Hosted Private Cloud for the VPN endpoint
+- A Zerto platform installed on the on-premises platform
+- VRAs (Virtual Replication Appliances) on both sides that are able to connect to the counterpart on TCP ports 4007 and 4008
+- Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9071
+- A **Read Write (RW)** vCenter account is required to access and operate the Zerto interface.
+
+:::info
+For an operational Zerto installation:
+
+- [Download Zerto](https://www.zerto.com/myzerto/login/?redirect_to=%2Fmyzerto%2Fsupport%2Fdownloads%2F). You need to have an account.
+- [Read the Zerto installation documentation](https://help.zerto.com/bundle/Install.VC.HTML/page/Installing_the_Zerto_Solution.htm).
+
+:::
+
+
+:::warning
+OVHcloud supports the N-1 version of Zerto (currently up to and including version 10).
+You can find the different versions available here : [https://help.zerto.com/kb/000004585](https://help.zerto.com/kb/000004585).
+
+:::
+
+
+### Solution overview
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-1.png" loading="lazy" />
+
+**Listed parameters**:
+
+On-premises side:
+
+- VPN endpoint public IP address (1)
+- VPN endpoint internal IP address (2)
+- ZVM internal IP address (3)
+- ZVM internal network (4)
+
+OVHcloud side:
+
+- VPN endpoint public IP address (5)
+- ZVM internal network (6)
+- ZVM internal IP address (7)
+
+## Instructions
+
+:::info
+:::
+
+>You need to decide which network to deploy the OVHcloud ZVM in. This avoids any overlap with local networks, which would prevent routing.
+>
+>You can either accept the suggested network or provide your own, as long as it is within a valid /23 range.
+>
+
+### Step 1: Activate Zerto features.
+
+It is easy to activate Zerto features from the OVHcloud Control Panel. You just need to select the data centre linked to the Hosted Private Cloud solution that you want to use, from the <code className="action">Disaster Recovery Plan</code> tab.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-2-nucp.png" loading="lazy" />
+
+First select <code className="action">Between your infrastructure and an OVHcloud Private Cloud</code>, then click <code className="action">Activate Zerto DRP</code>. Next, select a free public IP from the dropdown menu and enter the desired network range for the ZVM deployment. Confirm the VRA Network range and then click <code className="action">Install</code>.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-3.png" loading="lazy" />
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-4.png" loading="lazy" />
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-5.png" loading="lazy" />
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-6.png" loading="lazy" />
+
+### Step 2: Activate IPSec service.
+
+From the OPNsense interface, go to the <code className="action">VPN</code> menu on the left, <code className="action">IPSec</code> section and select <code className="action">Tunnel Setting</code>. Click <code className="action">Enable IPsec</code> and click save. 
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-7.png" loading="lazy" />
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-8.png" loading="lazy" />
+
+### Step 3: Set up IPSec tunnel.
+
+You can configure the IPSec tunnel by defining two sets of parameters: **Phase 1** and **Phase 2**.
+
+##### 3.1 Set up Phase 1.
+
+In the <code className="action">VPN</code> menu, go to <code className="action">Tunnel settings</code>, and click on the <code className="action">+</code> to add a new **Phase 1**:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-9.png" loading="lazy" />
+
+##### 3.1.1 Phase 1: General information.
+
+> <img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-10.png" loading="lazy" />
+
+If the default values are correct:
+
+- Connection Method: Default
+- Key Exchange version: V2
+- Internet Protocol: IPv4
+- Interface: WAN
+
+The only required parameter is the OVHcloud IPSec endpoint IP address.
+
+##### 3.1.2 Phase 1: Authentication.
+
+Once the default values are valid, you only need to provide the shared secret for authentication.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-11.png" loading="lazy" />
+
+##### 3.1.3 Phase 1: Encryption algorithms.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-12.png" loading="lazy" />
+
+Supported values for each parameter:
+
+- Encryption algorithms: AES 256 bits
+- Hash algorithms: SHA256
+- Diffie-Hellman key group: 14 (2048 bits)
+- Lifetime: 28,800 seconds
+
+You can keep the default values for the other parameters. Click <code className="action">Save</code>, then <code className="action">Apply changes</code>.
+
+The new Phase 1 is now present in the interface:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-13.png" loading="lazy" />
+
+#### 3.2 Set up Phase 2.
+
+Click on <code className="action">Show Phase 2 entries</code>.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-14.png" loading="lazy" />
+
+There is no phase 2 available, so you will need to add one:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-15.png" loading="lazy" />
+
+Click on <code className="action">+</code>.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-16.png" loading="lazy" />
+
+##### 3.2.1 Phase 2: General information
+
+Check that the mode is set to  "Tunnel IPv4".
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-17.png" loading="lazy" />
+
+##### 3.2.2 Phase 2: Local Network
+
+The local network type must be set to  "Lan subnet".
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-18.png" loading="lazy" />
+
+##### 3.2.3 Phase 2: Remote Network
+
+You need to give the ZVM IP and the associated network range.
+
+On OVHcloud side, the ZVM network is always a /23 network (512 IPs).
+
+:::warning
+:::
+
+>Make sure to double-check the parameters, otherwise the VPN tunnel won't come up.
+>
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-19.png" loading="lazy" />
+
+##### 3.2.4 Phase 2: Key exchange
+
+Supported values are:
+
+- Protocol: ESP
+- Encryption algorithm: AES 256 bits
+- Hash algorithms: SHA256
+- PFS: Off
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-20.png" loading="lazy" />
+
+You can leave advanced parameters to their default value. Click <code className="action">Save</code>, then <code className="action">Apply changes</code>.
+
+#### 3.3. Check VPN status.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-21.png" loading="lazy" />
+
+Click the orange triangle on the right to initialise the connection:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-22.png" loading="lazy" />
+
+If all the parameters are correct, the tunnel will come up and two new icons will appear:
+
+* tear down tunnel
+* tunnel information
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-23.png" loading="lazy" />
+
+Click on the information icon.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-24.png" loading="lazy" />
+
+The tunnel is now up. Make sure to add, if required, a route to the OVHcloud ZVM network on your local ZVM.
+
+**Troubleshooting**
+
+If the tunnel is not coming up, make sure that the parameters values are identical on both sides:
+
+- Shared secret
+- Remote endpoint IP address
+- Remote network range
+
+Make sure that a firewall is not interfering in the dialog between the local and remote endpoints.
+
+You can check the IPSec logfile in /var/log/ipsec.log on the OPNsense appliance to get more information.
+
+### Step 4: Set up firewall.
+
+To allow pairings of on-premises and OVHcloud instances, traffic must be authorised on the following ports:
+
+* TCP 9071 between ZVMs
+* TCP 4007/4008 between vRAs
+
+#### 4.1 ZVM opening.
+
+Go to the <code className="action">Firewall</code> menu, <code className="action">Rules</code>  section, <code className="action">IPSec</code> interface:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-25.png" loading="lazy" />
+
+Click on <code className="action">Add</code> to create a new rule.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-26.png" loading="lazy" />
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-27.png" loading="lazy" />
+
+Rule parameters are as follow:
+
+- Action: "Pass" (authorise traffic)
+- Interface: "IPsec" (incoming traffic coming from the VPN tunnel)
+- Protocol: "TCP"
+
+For "Source" and "Destination", select "Single host or Network" type. The source is the OVHcloud ZVM, and the destination is your on-premises ZVM.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-28.png" loading="lazy" />
+
+Destination TCP port is 9071. Click <code className="action">Save</code> and <code className="action">Apply Changes</code>.
+
+#### 4.2 vRAs opening.
+
+vRAs opening is a bit more complex since there are multiple vRAs on each side that need to be able to exchange information on TCP ports 4007 and 4008.
+To simplify this setup, we are going to use the alias feature of OPNsense. An alias is a group of objects IPs, networks, URLs…) that can be used in firewall rules.
+
+We will define three aliases:
+
+* one for vRA IPs on the customer side
+* one for vRA IPs on the OVHcloud side
+* one for the ports
+
+You can get the OVHcloud vRAs IP from the destination Private Cloud vCenter interface.  
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-29.png" loading="lazy" />
+
+Let's create the OVH_VRA alias for OVHcloud vRAs:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-30.png" loading="lazy" />
+
+Similarly, we can create an alias for the on-premises vRAs:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-31.png" loading="lazy" />
+
+Finally, you need to create the ports alias:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-32.png" loading="lazy" />
+
+We have now all the elements we need to implement the required firewall rules to authorise data coming from the OVHcloud platform. It is the same procedure as before, we just need to use the aliases instead of explicit IPs or ports:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-33.png" loading="lazy" />
+
+At this point, we have a functional and secure link between our on-premises platform and cloud instance.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-34.png" loading="lazy" />
+
+### Step 5: ZVM Pairing
+
+Before starting the pairing process, you need to retrieve a **pairing token**.
+
+There are two possible ways to do this:
+
+- From [the OVHcloud API](https://eu.api.ovh.com/console/) with the request below:
+
+<Api version="v1" section="/dedicatedCloud/{serviceName}" method="POST" route={"/dedicatedCloud/\{serviceName\}/datacenter/\{datacenterId\}/disasterRecovery/zertoSingle/requestPairingToken"} />
+
+- On request to OVHcloud support by opening a ticket via the [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+
+Once your request has been processed, you will receive an email containing the pairing token, which you can add to the Zerto interface in order to pair it with the PCC.
+
+Then, log in to your on-premises ZVM. The following screen is displayed:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-35.png" loading="lazy" />
+
+Select <code className="action">Pair to a site with a licence</code>, enter the OVHcloud ZVM IP and press <code className="action">Start</code>.
+
+In the dashboard, you can see the pairing is ongoing:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-36.png" loading="lazy" />
+
+You will be notified when the pairing is successful:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-37.png" loading="lazy" />
+
+You can check that your OVHcloud PCC is visible in the <code className="action">Sites</code> tab.
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-38.png" loading="lazy" />
+
+At this point, your Zerto setup is functional and you can start to create your virtual protection groups (VPGs).
+
+:::warning
+When enabling Zerto, a `Z-VRAH` VM may appear in your inventory.
+This deployment is **not systematic**; it depends notably on the data volume to process.
+If present, it is essential to the service and **must not be modified or deleted**.
+
+:::
+
+
+#### Troubleshooting
+
+If the on-premises ZVM is not able to successfully contact the OVHcloud ZVM (due to an incorrect firewall setup, for example) you will get the following message:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-39.png" loading="lazy" />
+
+You will then be brought back to the log-in screen, with the following error message:
+
+<img className="thumbnail" alt="" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/zerto-virtual-replication-customer-to-ovhcloud/image-EN-40.png" loading="lazy" />
+
+The most probable cause is that the OVHcloud ZVM is not authorised to contact your on-premises ZVM on TCP 9071 (it needs to be able to initiate the connection).
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

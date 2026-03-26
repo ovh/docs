@@ -1,0 +1,61 @@
+---
+title: Déployer un template OVF à travers les bibliothèques de contenu (content libraries)
+description: Découvrez comment déployer, depuis votre vSphere, un template OVF à travers les bibliothèques de contenu (content libraries)
+lastUpdated: 2023-06-15
+---
+ 
+## Objectif
+
+OVHcloud propose des templates OVF que vous pouvez déployer directement depuis votre vSphere *(version 7.0 ou ultérieure)* à travers les [bibliothèques de contenu (*content libraries*)](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-254B2CE8-20A8-43F0-90E8-3F6776C2C896.html).
+
+**Ce guide vous explique comment procéder pour déployer ces templates.**
+
+## Prérequis
+
+- Avoir accès au client Web (HTML5)
+
+## En pratique
+
+### Etape 1 - Déployer un template
+
+#### Déployer un template depuis une bibliothèque de contenu
+
+Vous pouvez retrouver les bibiliothèques de contenu auxquelles votre vSphere a souscrit via la page d'accueil de celui-ci, en cliquant sur l'icône <code className="action">Content libraries</code>.
+
+<img className="thumbnail" alt="Content libraries button" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/content-library-button.png" loading="lazy" />
+
+Cliquez alors sur l'une des bibliothèques pour en afficher le contenu et déployer une nouvelle machine virtuelle depuis l'onglet <code className="action">OVF & OVA Templates</code>.
+
+<img className="thumbnail" alt="Content library overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/content-library-overview.png" loading="lazy" />
+
+#### Déployer un template directement depuis la vue Cluster
+
+Vous pouvez également déployer du contenu provenant des bibliothèques directement depuis la vue *Cluster* en faisant un clic droit sur l'un de vos clusters et en sélectionnant <code className="action">New Virtual Machine</code>.
+
+<img className="thumbnail" alt="Cluster overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/hosts-view-deploy.png" loading="lazy" />
+
+Sélectionnez alors l'option <code className="action">Deploy from template</code>.
+
+<img className="thumbnail" alt="Deploy from template" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/deploy-from-template.png" loading="lazy" />
+
+Cliquez sur l'un des templates offerts par les bibliothèques de contenu installées sur votre vSphere.
+
+<img className="thumbnail" alt="Deploy from template overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/deploy-from-template-content-library-overview.png" loading="lazy" />
+
+### Etape 2 - Configurer le template
+
+Le processus de déploiement d'un template vous demandera de confirmer les détails, ansi qu'une destination pour la nouvelle machine virtuelle (datacenter, cluster, datastore, etc.).
+
+<img className="thumbnail" alt="Template overview" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/template-overview.png" loading="lazy" />
+
+Certains templates acceptent des propriétés au déploiement permettant de configurer rapidement la nouvelle machine virtuelle en créant, par exemple, un utiliseur privilégié ou en configurant l'interface de réseau principale.
+
+<img className="thumbnail" alt="Template customization" src="/images/hosted-private-cloud/hosted-private-cloud-powered-by-vmware/how-to-use-content-library/template-customization.png" loading="lazy" />
+
+Les templates n'offrant pas de personnalisation auront les identifiants par défaut spécifiés dans les notes de la machine virtuelle.
+  
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

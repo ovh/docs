@@ -1,0 +1,156 @@
+---
+title: How to install Nextcloud on an OVHcloud VPS with Docker
+description: Find out how to easily install Nextcloud on an OVHcloud VPS using Docker and Docker Compose, to have a functional personal cloud
+lastUpdated: 2026-02-04
+---
+
+## Objective
+
+This guide explains how to install **Nextcloud**, a personal cloud solution (files, photos, contacts, calendar), on an **OVHcloud VPS**.
+
+It is intended for **beginner users** who want a simple installation, without a reverse-proxy.
+
+At the end of this guide, you will have:
+
+- A working Nextcloud on your VPS
+- Access via a web browser
+- A MariaDB database suitable for real use
+
+## Requirements
+
+- An [OVHcloud VPS](https://www.ovhcloud.com/en-gb/vps/) offer under **Ubuntu 22.04 LTS** (or equivalent)
+- Access via SSH to your VPS
+- A domain name (optional but recommended)
+
+## Instructions
+
+**Table of contents:**
+
+- [Step 1: Connect to the VPS](#step1)
+- [Step 2: Prepare the system](#step2)
+- [Step 3: Install Docker and Docker Compose](#step3)
+- [Step 4: Deploy Nextcloud](#step4)
+- [Step 5: Access Nextcloud](#step5)
+- [Step 6: Best practices after installation](#step6)
+
+### Step 1: Connecting to the VPS <a name="step1"></a>
+
+Connect to your VPS via SSH with the user provided by OVHcloud (e.g. `ubuntu`).
+
+```bash
+ssh ubuntu@IPv4_OF_YOUR_VPS
+```
+
+### Step 2: Preparing the system <a name="step2"></a>
+
+Update the system:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+Install the required dependencies:
+
+```bash
+sudo apt install -y ca-certificates curl gnupg
+```
+
+### Step 3: Installing Docker and Docker Compose <a name="step3"></a>
+
+Install Docker:
+
+```bash
+curl -fsSL https://get.docker.com | sudo sh
+```
+
+Add your user to the Docker group:
+
+```bash
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+Check the installation:
+
+```bash
+docker --version
+docker compose version
+```
+
+### Step 4: Deploying Nextcloud <a name="step4"></a>
+
+Create a working directory:
+
+```bash
+mkdir ~/nextcloud && cd ~/nextcloud
+```
+
+Create the `docker-compose.yml` file:
+
+```yaml
+services:
+  db:
+    image: mariadb:10.6
+    restart: always
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    environment:
+      MYSQL_ROOT_PASSWORD: change-root-password
+      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: nextcloud
+      MYSQL_PASSWORD: change-user-password
+    volumes:
+      - db:/var/lib/MySQL
+
+  app:
+    image: nextcloud
+    restart: always
+    ports:
+      - 8080:80
+    depends_on:
+      - db
+    volumes:
+      - nextcloud:/var/www/html
+
+volumes:
+  db:
+  nextcloud:
+```
+
+Launch Nextcloud:
+
+```bash
+docker compose up -d
+```
+
+### Step 5: Accessing Nextcloud <a name="step5"></a>
+
+In your browser, open [http://IPv4_DE_VOTRE_VPS:8080](http://IPv4_DE_VOTRE_VPS:8080).
+
+On first access:
+
+- Create an **administrator account**
+- Let Nextcloud automatically detect the database
+
+### Step 6: Best practices after installation <a name="step6"></a>
+
+For long-term use, we recommend:
+
+- Configuring a **domain name**
+- Setting up **HTTPS** access (Nginx Proxy Manager or Traefik)
+- Enabling **background tasks in Cron mode**
+- Installing the **Nextcloud PC and mobile clients** for automatic synchronization
+- Setting up **regular backups**
+
+## Go further
+
+This guide allowed you to quickly deploy Nextcloud on a VPS using Docker, without complex configuration.
+
+If you want to go further - notably by adding **automatic HTTPS**, a **reverse-proxy**, or hosting **multiple services** on the same VPS - we recommend you consult the **[guide for advanced users](/guides/bare-metal-cloud/virtual-private-servers/install-nextcloud-on-vps-advanced)**, which presents a more robust architecture based on Docker and a modern reverse-proxy.
+
+To deepen certain aspects or strengthen the security and reliability of your installation, you can also consult the following resources:
+
+[Secure an OVHcloud VPS](/guides/bare-metal-cloud/virtual-private-servers/secure-your-vps)
+
+[Official Nextcloud documentation](https://docs.nextcloud.com)
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

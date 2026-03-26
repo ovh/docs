@@ -1,0 +1,39 @@
+---
+title: Modificare i permessi di un utente
+lastUpdated: 2020-11-18
+---
+
+## Obiettivo
+
+Il servizio Managed Bare Metal di OVHcloud permette di assegnare agli utenti permessi che li autorizzano a eseguire operazioni specifiche.
+
+**Questa guida ti mostra come gestire i permessi utente sulla tua infrastruttura.**
+
+## Prerequisiti
+
+* Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/)
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it)
+
+## Procedura
+
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.it/&ovhSubsidiary=it) e, nella sezione <code className="action">Bare Metal Cloud</code>, clicca su <code className="action">Managed Bare Metal</code> nella colonna a sinistra e seleziona il servizio su cui apportare la modifica.
+
+Clicca sulla scheda <code className="action">Utenti</code> e poi sui tre puntini in corrispondenza dell’utente in questione.
+
+<img className="thumbnail" alt="Visualizza/Modifica i diritti per DC" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_1.png" loading="lazy" />
+
+Dal menu a tendina è possibile modificare i diritti degli utenti vSphere per datacenter:
+
+<img className="thumbnail" alt="Modificare i diritti" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_2.png" loading="lazy" />
+
+| Accesso  | Tipo di permesso | Descrizione |
+|---|---|---|
+| Accesso vSphere | Nessuno/Sola lettura/Lettura e scrittura | Permessi globali dell'utente su vSphere |
+| Accesso al vmNetwork | Nessuno/Sola lettura/Provider | Permessi di gestione nella sezione della rete pubblica (“VM Network” nell'interfaccia vSphere) |
+| Aggiunta di risorse | Sì/No | Permesso di aggiungere risorse supplementari tramite il plugin OVHcloud nel client vSphere (Host, Datastore, Veeam Backup) |
+
+<img className="thumbnail" alt="Modificare i diritti" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_3.png" loading="lazy" />
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

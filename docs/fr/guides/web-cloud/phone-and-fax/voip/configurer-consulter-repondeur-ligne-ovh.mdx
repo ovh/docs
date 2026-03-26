@@ -1,0 +1,166 @@
+---
+title: Configurer et consulter le répondeur de sa ligne
+description: Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud
+lastUpdated: 2026-01-20
+---
+
+## Objectif
+
+Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnaliser et consulter de plusieurs manières. Selon vos besoins, vous pouvez également associer un répondeur à une seule ou plusieurs lignes.
+
+**Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud.**
+
+:::tip[Success]
+Vous souhaitez que vos appelants arrivent directement sur votre répondeur en fonction de plages horaires ou de jours exceptionnels ?
+Consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/guides/web-cloud/phone-and-fax/voip/configure-time-slot-and-closing-time/) ».
+
+Attention ! Si vos appelants connaissent un autre numéro que celui de votre ligne directe, vous disposez alors probablement d'un « numéro alias ».
+Vous devez alors configurer les plages horaires sur ce numéro et non sur votre ligne. Pour en savoir plus, consultez notre [FAQ](/guides/web-cloud/phone-and-fax/voip/faq-voip/) et nos [guides de configuration des numéro alias](/guides/web-cloud/phone-and-fax/voip/overview/).
+
+:::
+
+
+## Prérequis
+
+- Disposer d'une [ligne téléphonique OVHcloud](https://www.ovhcloud.com/fr/phone/).
+
+{/* CP-NAV-START:telecom-voip-fax */}
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](https://manager.eu.ovhcloud.com/#/telecom/telephony)
+- **Pour accéder à vos services :** <code className="action">Télécom</code> > <code className="action">VoIP & Fax</code> > Sélectionnez votre groupe de téléphonie
+
+---
+{/* CP-NAV-END:telecom-voip-fax */}
+
+<img className="thumbnail" alt="espace client Telecom VoIP" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png" loading="lazy" />
+
+## En pratique
+
+Les lignes OVHcloud disposent par défaut d'un répondeur que vous pouvez consulter et personnaliser à votre guise. Si vous venez d'obtenir votre ligne téléphonique OVHcloud ou si vous n'avez pas modifié la configuration initiale de cette dernière, le répondeur de votre ligne est activé par défaut et enregistre déjà les messages de vos correspondants. 
+
+Vous pouvez également modifier l'association d'une ligne à son répondeur. Ceci vous permet en l'occurrence d'associer plusieurs lignes à un seul répondeur.
+
+Poursuivez la lecture de cette documentation selon la manipulation que vous souhaitez réaliser avec votre répondeur.
+
+- [Consulter le répondeur](#consulter)
+- [Personnaliser la configuration de son répondeur](#personnaliser)
+- [Associer une ligne à un répondeur](#associer)
+
+### Consulter son répondeur <a name="consulter"></a>
+
+Il existe trois méthodes pour consulter les messages laissés sur votre répondeur. Poursuivez vers celle que vous souhaitez utiliser.
+
+- [Consulter son répondeur via un téléphone](#via-telephone).
+- [Consulter son répondeur via l'espace client](#via-espace-client).
+- [Consulter son répondeur via les notifications e-mail](#via-notifications).
+
+:::info
+Si votre répondeur vous indique que vous n'avez aucun nouveau message alors qu'un correspondant vous affirme en avoir laissé un, assurez-vous que votre ligne est associée au bon répondeur. Aidez-vous des informations de la section « [Associer une ligne à un répondeur](#associer) » de cette documentation si nécessaire.
+
+:::
+
+
+#### Consulter son répondeur via un téléphone <a name="via-telephone"></a>
+
+Depuis votre ligne téléphonique OVHcloud, composez le **123** pour accéder au serveur de messagerie. Si vous souhaitez consulter votre répondeur depuis une autre ligne, utilisez le numéro adéquat ci-dessous selon le pays de la ligne concernée :
+
+|Pays de la ligne|Numéro à appeler|
+|---|---|
+|Lignes françaises (+33)|+33 9 72 55 00 00|
+|Lignes belges FR (+32)|+32 23 18 55 55|
+|Lignes belges NL (+32)|+32 23 18 55 56|
+|Lignes suisses FR (+41)|+41 2 75 19 00 06|
+|Lignes suisses IT (+41)|+41 2 75 19 00 05|
+|Lignes suisses DE (+41)|+41 2 75 19 00 04|
+|Lignes anglaises (+44)|+44 33 06 84 01 00|
+
+Une fois en communication avec le serveur de messagerie, laissez-vous guider par celui-ci en appuyant sur les touches correspondant aux actions que vous souhaitez réaliser. Sachez que si vous appelez depuis une autre ligne, vous devrez indiquer le numéro associé au répondeur que vous souhaitez consulter, ainsi que son mot de passe d'accès à distance préalablement défini. 
+
+Si vous n'avez pas défini de mot de passe d'accès à distance, accédez à l'onglet <code className="action">Répondeur</code>, cliquez sur <code className="action">Mot de passe accès répondeur</code> et suivez les indications.
+
+#### Consulter son répondeur via votre espace client <a name="via-espace-client"></a>
+
+Dans l'onglet <code className="action">Répondeur</code>, cliquez sur <code className="action">Écoute et gestion des messages</code>.
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step7.png" loading="lazy" />
+
+Sur la nouvelle page, un tableau apparaît, dans lequel se trouvent les messages actuellement enregistrés sur votre répondeur. Trois boutons vous permettent respectivement de les lire (voir **1** dans l'image ci-dessous), de les télécharger (voir **2**) et de les supprimer (voir **3**).
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step8.png" loading="lazy" />
+
+#### Consulter son répondeur via les notifications e-mail <a name="via-notifications"></a>
+
+Vous recevez une notification par e-mail sur les adresses renseignées dans la configuration du répondeur. Ceux-ci peuvent simplement vous notifier de la disponibilité d'un nouveau message mais peuvent aussi, selon votre choix, contenir en pièce jointe ce dernier.  
+
+Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les notifications, reportez-vous aux instructions de la section « [Personnaliser la configuration de son répondeur](#personnaliser) » de cette documentation.
+
+### Personnaliser la configuration de son répondeur <a name="personnaliser"></a>
+
+Dans l'onglet <code className="action">Répondeur</code>, cliquez sur <code className="action">Configuration du répondeur</code>. 
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step3.png" loading="lazy" />
+
+Trois parties sont visibles sur la page qui apparaît alors. Configurez votre répondeur selon ce que vous souhaitez activer et/ou paramétrer dans les parties correspondantes.
+
+- **Accueil et enregistrement des messages** : faites votre choix parmi les paramètres proposés, puis appuyez sur le bouton <code className="action">Appliquer les options</code> pour valider les modifications que vous venez d'effectuer.
+
+|Paramètres|Détails|
+|---|---|
+|Enregistrement des messages|Permet d'activer ou désactiver l'enregistrement de messages audio par vos appelants. Ceux-ci n'auront alors que votre message d'accueil du répondeur, sans possibilité de laisser un message.|
+|Message d'accueil du répondeur|Permet d'importer un message d'accueil personnalisé qui sera lu par votre répondeur.<br/> - **Formats de fichiers pris en charge** : MP3, OGG, WAV et WMA.<br/> - **Préconisations** : La taille du fichier ne doit pas excéder 10 Mo, avec une fréquence de 8 kHz, une résolution de 8 bits et un canal mono.|
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step4.png" loading="lazy" />
+
+- **Options de notification** : faites votre choix parmi les paramètres proposés, puis appuyez sur le bouton <code className="action">Appliquer les options</code> pour valider les modifications que vous venez d'effectuer.
+
+|Paramètres|Détails|
+|---|---|
+|Format des fichiers audio|Définit le format des fichiers audio que vous recevrez en pièce jointe dans les notifications e-mail lorsqu'un nouveau message sera reçu.|
+|Activation des notifications|Active ou désactive la réception des notifications.|
+|Nom de l'expéditeur|Personnalise le nom qui sera affiché en tant qu'expéditeur lorsqu'un e-mail de notification sera envoyé.|
+|Adresse e-mail de l'expéditeur|Personnalise l'adresse e-mail qui sera utilisée en tant qu'expéditeur lorsqu'un e-mail de notification sera envoyé.|
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step5.png" loading="lazy" />
+
+- **Adresses e-mail à notifier** : visualisez, grâce au tableau, les adresses qui recevront une notification, supprimez-en grâce à l'icône en forme de poubelle et ajoutez-en des nouvelles en cliquant sur le bouton <code className="action">Ajouter une adresse e-mail</code>, puis en remplissant les champs demandés.
+
+|Champs|Détails|
+|---|---|
+|E-mail|Renseignez l'adresse e-mail que vous souhaitez notifier.|
+|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.<br/><br/>**Nouvelle fonctionnalité en Bêta** : Vous pouvez recevoir par e-mail une transcription écrite du message générée par Intelligence Artificielle.<br/> Pour cela, choisissez « Transcription et message joint en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir la transcription écrite et le message vocal au format souhaité en pièce jointe, ou « Transcription en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir uniquement la transcription écrite du message en pièce jointe.|
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step6.png" loading="lazy" />
+
+### Associer une ligne à un répondeur <a name="associer"></a>
+
+Cette association s'effectue par le biais de deux manipulations : la première permet de choisir le répondeur qui pourra être consulté depuis la ligne et la seconde permet de définir vers quel répondeur les correspondants sont renvoyés.
+
+Dans l'onglet <code className="action">Répondeur</code>, cliquez sur <code className="action">Choix de la messagerie par défaut</code>.
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step1.png" loading="lazy" />
+
+Sur la page qui s'affiche, sélectionnez dans le menu déroulant le nouveau répondeur que vous souhaitez associer à la ligne concernée. Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs lignes, grâce au bouton <code className="action">Appliquer à plusieurs lignes</code>. Cliquez sur le bouton <code className="action">Valider</code> pour terminer la première manipulation.
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step2.png" loading="lazy" />
+
+Retournez vers la gestion du répondeur et positionnez-vous maintenant sur l'onglet <code className="action">Gestion des appels</code>. Cliquez alors sur le bouton <code className="action">Renvoi d'appel</code>. 
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step9.png" loading="lazy" />
+
+Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](/guides/web-cloud/phone-and-fax/voip/comment-configurer-les-renvois-d-appels/) ».
+
+Vous pouvez notamment définir le délai (en secondes) au bout duquel un appel sera renvoyé vers le répondeur.
+
+Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs lignes, grâce au bouton <code className="action">Appliquer à plusieurs lignes</code>. Cliquez sur le bouton <code className="action">Valider</code> pour terminer l'opération.
+
+<img className="thumbnail" alt="repondeur" src="/images/web-cloud/phone-and-fax/voip/configurer-consulter-repondeur-ligne-ovh/voicemail-step10.png" loading="lazy" />
+
+## Aller plus loin
+
+- [Filtrer et renvoyer ses appels](/guides/web-cloud/phone-and-fax/voip/comment-configurer-les-renvois-d-appels/)
+- Pour associer le déclenchement d'un répondeur à des conditions particulières (respect de certaines plages horaires, fermeture lors des jours fériés, etc.), consultez le guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/guides/web-cloud/phone-and-fax/voip/configure-time-slot-and-closing-time/) ».
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).

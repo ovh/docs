@@ -1,0 +1,122 @@
+---
+title: Tutorial - Instalar manualmente Grav
+description: Saiba como instalar o CMS Grav num alojamento web da OVHcloud
+lastUpdated: 2024-03-28
+---
+
+## Objetivo
+
+O **CMS** (**C**ontent **M**anagement **S**ystem) Grav permite desenvolver rapidamente sites web. Concebido para uma gestão otimizada do conteúdo através de ficheiros Markdown, o Grav é ideal para criar websites pessoais ou projetos para pequenas empresas, sem comprometer a qualidade ou a personalização.
+
+**Saiba como instalar manualmente o CMS Grav no seu alojamento web da OVHcloud.**
+
+## Requisitos
+
+- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/).
+
+## Instruções
+
+### Preparar a instalação
+
+Para instalar o CMS **Grav** no seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), alguns preparativos são necessários.
+
+Siga o **conjunto de passos** descritos no nosso tutorial de [instalação manual de um CMS](/guides/web-cloud/web-hosting/cms-manual-installation/) antes de avançar para o passo seguinte.
+
+### Finalizar a instalação manual
+
+:::info
+Antes de continuar a instalação, limpe a cache do browser da Internet para evitar problemas.
+
+:::
+
+
+#### Aceder ao website Grav através do navegador
+
+Introduza o seu domínio na barra de pesquisa do browser.
+
+Se os ficheiros de origem Grav tiverem sido corretamente colocados na pasta raiz, será apresentada a página `your-domain/admin`:
+
+<img className="thumbnail" alt="Grav installation" src="/images/assets/screens/other/cms/grav/first-page-config.png" loading="lazy" />
+
+Preencha o formulário para criar um utilizador admin e, em seguida, clique em <code className="action">Create User</code> para confirmar.
+
+Uma vez conectado à interface de administração de Grav, comece a personalizar o seu website.
+
+### Personalizar o seu website Grav
+
+Depois de se conectar como administrador ao painel de controle do Grav, vá para várias opções para configurar e personalizar seu site.
+
+#### Configuração geral do website
+
+##### Configuração do sistema
+
+No menu principal de Grav, clique em <code className="action">Configuration</code>, no separador <code className="action">Site</code>, altere o nome do seu website, defina a língua predefinida ou configure vários parâmetros associados ao seu website.
+
+Para melhorar as performances do seu website, ative a cache. Clique no separador <code className="action">System</code> e, a seguir, em <code className="action">Caching</code>. Identifique a linha <code className="action">Caching</code> e assinale <code className="action">Yes</code>.
+
+<img className="thumbnail" alt="Grav installation" src="/images/assets/screens/other/cms/grav/activate-cache.png" loading="lazy" />
+
+##### Configuração dos média
+
+No menu principal de Grav, escolha <code className="action">Configuration</code> e, no separador <code className="action">System</code>, clique em <code className="action">Media</code>. Utilize esta página para definir o comportamento dos média do seu website, como imagens, vídeos ou documentos.
+
+#### Gestão do conteúdo
+
+##### Páginas
+
+No menu principal de Grav, clique em <code className="action">Pages</code> para ver a lista de todas as páginas do seu website. Crie novas páginas, modifique as existentes e organize a estrutura do seu website.
+
+Para ver e editar o conteúdo de uma página, clique no nome da página na lista. Por exemplo, clique em <code className="action">Home</code> para alterar o título da página principal do seu website, bem como o seu conteúdo.
+
+<img className="thumbnail" alt="Grav instalação" src="/images/assets/screens/other/cms/grav/list-pages.png" loading="lazy" />
+
+##### Temas
+
+No menu principal de Grav, clique em <code className="action">Themes</code> para alterar a aparência do seu website. Instale novos temas ou selecione um já instalado como tema ativo.
+
+Para alterar o tema ativo, clique no tema que possui o rótulo "Ative Theme".
+
+<img className="thumbnail" alt="Grav installation" src="/images/assets/screens/other/cms/grav/theme-active.png" loading="lazy" />
+
+Na página que aparece, personalize o seu tema ativo.
+
+#### Backup e atualização
+
+##### Backup
+
+Fazer o backup do seu website permite restaurá-lo a um estado anterior em caso de mau funcionamento.
+
+No menu principal de Grav, clique em <code className="action">Tools</code>, selecione <code className="action">Backup Now</code> no canto superior direito do ecrã que se abrir e, a seguir, <code className="action">Download Backup</code> para descarregar o backup do seu website para o seu computador. Ao atualizar a página `Backup`, o seu backup será apresentado na lista <code className="action">Backup History</code>.
+
+<img className="thumbnail" alt="Grav installation" src="/images/assets/screens/other/cms/grav/backup-history.png" loading="lazy" />
+
+##### Atualização
+
+Atualizar o seu sistema é primordial para a segurança e a performance do seu website. No menu principal de Grav, clique em <code className="action">Check for Updates</code> para descobrir as atualizações disponíveis.
+
+### Conclusão
+
+Acaba de instalar manualmente o CMS Grav no seu alojamento web da OVHcloud. Depois de configurar o seu website, adicionar conteúdo, personalizar o tema e instalar plugins, o seu website Grav está acessível online através do seu nome de domínio.
+
+## Quer saber mais? <a name="go-further"></a>
+
+[Tutorial - Instalar manualmente WordPress](/guides/web-cloud/web-hosting/cms-manual-installation-wordpress/)
+
+[Tutorial - Instalar manualmente Joomla!](/guides/web-cloud/web-hosting/cms-manual-installation-joomla/)
+
+[Tutorial - Instalar manualmente Drupal](/guides/web-cloud/web-hosting/cms-manual-installation-drupal/)
+
+[Tutorial - Instalar manualmente PrestaShop](/guides/web-cloud/web-hosting/cms-manual-installation-prestashop/)
+
+[Tutorial - Instalar manualmente Pico](/guides/web-cloud/web-hosting/cms-manual-installation-pico/)
+
+[Tutorial - Instalar manualmente Typo3](/guides/web-cloud/web-hosting/cms-manual-installation-typo3/)
+
+[Tutorial - Instalar manualmente SPIP](/guides/web-cloud/web-hosting/cms-manual-installation-spip/)
+
+[Tutorial - Instalar manualmente um CMS no meu alojamento](/guides/web-cloud/web-hosting/cms-manual-installation/)
+ 
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Fale com nossa [comunidade de utilizadores](https://community.ovhcloud.com/community/en).

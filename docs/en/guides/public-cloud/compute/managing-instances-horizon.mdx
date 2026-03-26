@@ -1,0 +1,181 @@
+---
+title: Managing your Public Cloud Instances in Horizon
+description: Find out how to manage your Public Cloud projects via the Horizon interface
+lastUpdated: 2022-01-25
+---
+
+## Objective
+
+Beside the OVHcloud Control Panel, you can also manage your Public Cloud projects via the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/). In this interface, you will find all of your infrastructure (instances, backups, disks, SSH keys, etc.) and storage projects there (including the list of your containers).
+
+**This guide details how to manage your Public Cloud instances via the Horizon interface.**
+
+## Requirements
+
+- You need to have created a Public Cloud instance in your [OVHcloud Control Panel](/guides/public-cloud/compute/first-steps-with-public-cloud-instance/) or through the [Horizon interface](/guides/public-cloud/compute/create-instance-in-horizon/)
+- [An SSH key](/guides/public-cloud/compute/compute-creating-ssh-keys/)
+
+## Access the management interface for the instance
+
+First, log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+
+Unlike the OVHcloud Control Panel, Horizon separates your services according to their region. You can choose the region from the menu in the top left-hand corner:
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/region2021.png" loading="lazy" />
+
+Click the <code className="action">Compute</code> menu on the left-hand side, then select <code className="action">Instances</code>. On that page you will see a summary of all your instances. There will be several pieces of information displayed here:
+
+- The model of your instance (Flavor)
+- Its name, power state, and time since created
+- Your instance’s IPv4 and IPV6 address
+- Its associated private network and private IPv4 address
+- Its status
+- The image used to install the instance (if applicable)
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/options2022.png" loading="lazy" />
+
+**Launch Instance** 
+
+This option allows you to create an instance. Please refer to [this guide](/guides/public-cloud/compute/create-instance-in-horizon/) for more information.
+
+**Delete Instances**
+
+This option allows you to delete several instances at once, make sure to tick the box to the left of the instance name.
+
+**More Actions**
+
+Use this menu to perform the following actions on one or more instances. First, ensure that you tick the box to the left of the instance name:
+
+- Start Instances: This option allows you to reboot one or more instances in « shutoff or off » status.
+- Shut Off Instances: This option allows you to suspend one or more instances.
+- Soft Reboot Instances: This option allows you to perform a software reboot on one or more instances.
+
+**Create snapshot**: This option allows you to create a snapshot of your instance. Consult [this guide](/guides/public-cloud/compute/managing-snapshots-in-horizon/) for more information.
+
+### Modify an instance
+
+In the management interface for the Instance, select the option you want from the dropdown list.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/list2022.png" loading="lazy" />
+
+- Attach Interface: This option allows you to add one or more private interfaces to your instance via the VLAN. For more information, refer to [this section](/guides/public-cloud/public-cloud-network-services/getting-started-07-creating-vrack#adding-a-private-interface/) of the corresponding guide.
+- Detach Interface: This option allows you to detach an interface linked to an instance. For more information, refer to [this section](/guides/public-cloud/public-cloud-network-services/getting-started-07-creating-vrack#removing-a-private-interface/) of the corresponding guide.
+- Edit Instance: This option allows you to change the instance name and [security groups](/guides/public-cloud/compute/setup-security-group/).
+
+:::warning
+The options in red indicate the possibility of data loss during the process, always make sure you have a backup of your data before making any changes to your instance.
+
+:::
+
+
+### Resize an instance
+
+With the Public Cloud, you can increase the resources your instance has with just a few clicks.
+
+:::warning
+Only upscaling is possible for classic models.
+In addition, this manipulation causes the instance to be shut down for the time of the operation. 
+
+:::
+
+
+:::tip[Success]
+Flex instances allow resizing to higher or lower models due to a locked single disk size.
+
+:::
+
+
+For detailed instructions, consult the following guide: [Resize an instance via Horizon](/guides/public-cloud/compute/resize-of-an-instance/).
+
+### Rebuild an instance
+
+This option allows you to reconfigure your instance on a new basis, or simply change the operating system.
+
+:::danger
+This operation will delete the instance’s data.
+
+:::
+
+
+- Select <code className="action">Rebuild Instance</code> from the drop-down list for the instance.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/rebuildinstance.png" loading="lazy" />
+
+- Select the image for reconstruction.
+- Select the type of partitioning ("Automatic" or "Manual"). This is optional.
+- Finally, click on <code className="action">Rebuild Instance</code>, this operation may take a few minutes.
+
+### Shelve or pause an instance 
+
+To find out how to shelve or pause an instance, please refer to [this guide](/guides/public-cloud/compute/suspend-or-pause-an-instance/).
+
+### Access the instance console <a name="console"></a>
+
+If you lose access to your instance, either because of a bad configuration, or because the SSH service is down, you can always reconfigure your instance using the VNC console.
+
+:::info
+You can access your instance directly through the VNC console. Only you will have to set up a password for the root user beforehand.
+Consult [this guide](/guides/public-cloud/compute/public-cloud-first-steps#user-mgmt/) for more information.
+The VNC console can also be used as a first approach during a malfunction, to establish a diagnostic using the analysis of your instance's startup phase.
+
+:::
+
+
+From the drop-down list for the instance, select <code className="action">Console</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/accessconsole.png" loading="lazy" />
+
+- The instance console will appear.
+
+:::tip[Success]
+If the console no longer responds to the keyboard input, click on the status bar.
+To exit full-screen mode, click the browser's back button.
+
+:::
+
+
+**Instance console**
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/console.png" loading="lazy" />
+
+### Reboot an instance
+
+There are two methods for rebooting an instance:
+
+- Soft Reboot Instance (Software)
+- Hard Reboot Instance (Hardware)
+
+From the drop-down list for the instance, select either <code className="action">Soft Reboot Instance</code> or <code className="action">Hard Reboot Instance</code>.
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/rebootinstance.png" loading="lazy" />
+
+Then confirm your request in the window that pops up.
+
+### Delete an instance
+
+If you no longer need one of your instances, you can delete it at any time.
+
+:::danger
+The data stored on the instance will be permanently deleted.
+You can always create a backup of this instance if you want to keep the data and restart an identical instance later.
+
+Deleting an instance does not automatically delete all the options associated with it (storage, snapshot, backup, etc...), so make sure that all other options associated with the instance are also deleted to stop being billed.
+
+:::
+
+
+From the drop-down list for the instance, select <code className="action">Delete Instance</code>. 
+
+<img className="thumbnail" alt="public-cloud" src="/images/public-cloud/compute/managing-instances-horizon/deleteinstance.png" loading="lazy" />
+
+Then click <code className="action">Confirm</code> to start the process.
+
+:::tip[Success]
+Once deleted, you will no longer be charged for your instance, and you will not be able to recover it.
+
+:::
+
+
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

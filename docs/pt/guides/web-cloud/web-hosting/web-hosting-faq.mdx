@@ -1,0 +1,723 @@
+---
+title: "Alojamentos web - FAQ"
+excerpt: "Encontre as principais questões colocadas sobre os alojamentos web da OVHcloud"
+updated: 2025-11-10
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+
+
+**Clique nas perguntas abaixo para ver as explicações.**
+
+## Gestão da sua oferta
+
+<details>
+
+<summary>Como configurar o meu alojamento web?</summary>
+
+Siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+
+Poderá gerir os seus certificados SSL, a versão PHP aplicada ao seu alojamento web, a opção CDN, os eventuais multi-sites, as bases de dados, etc.
+
+:::tip
+
+Para o ajudar a configurar o seu alojamento web, não hesite em consultar os tópicos "*Primeiros passos*" e "*Configurar o alojamento web Perso, Pro ou Performance*" de [esta página](/guides/web-cloud/web-hosting/overview).
+
+:::
+
+</details>
+
+<details>
+
+<summary>Esqueci-me da palavra-passe de acesso à conta do meu alojamento web. O que fazer?</summary>
+
+Se se esquecer do seu identificador de cliente OVHcloud ou da palavra-passe associada a este identificador, siga estas etapas:
+
+1. Aceda à [interface de ligação à Área de Cliente OVHcloud](/links/manager).
+2. Clique no link `ID de utilizador ou palavra-passe esquecida?` presente na janela de início de sessão.
+3. Especifique o seu identificador de cliente OVHcloud (por exemplo: **aa00000-ovh**) ou o endereço de e-mail de contacto associado ao seu identificador de cliente OVHcloud.
+4. De seguida, clique no botão `Enviar`.
+
+O procedimento de reinicialização será, então, enviado para o seu endereço de e-mail de contacto.
+
+:::tip
+
+Encontre todos os detalhes no nosso guia "[Definir e gerir a palavra-passe da sua conta](/guides/account-and-service-management/account-information/manage-ovh-password)".
+
+:::
+
+</details>
+
+<details>
+
+<summary>Como gerir a palavra-passe do espaço de armazenamento FTP do alojamento web?</summary>
+
+Siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que vai aparecer, clique no separador `FTP - SSH`.
+
+Poderá alterar a palavra-passe FTP do seu alojamento web.
+
+:::tip
+
+Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe de um utilizador FTP](/guides/web-cloud/web-hosting/ftp-change-password)".
+
+:::
+
+</details>
+
+<details>
+
+<summary>Como alterar a palavra-passe da minha base de dados associada ao meu alojamento web?</summary>
+
+:::warning
+
+Se alterar a palavra-passe de uma base de dados utilizada por um dos seus websites, atualize-a igualmente no ficheiro de configuração do website em causa. Sem esta atualização, o seu website será desligado da sua base de dados e não funcionará.
+
+:::
+
+Siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, clique no separador `Bases de dados`.
+
+Poderá alterar as palavras-passe das bases de dados associadas ao seu alojamento web.
+
+:::tip
+
+Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe da base de dados de um alojamento web](/guides/web-cloud/web-hosting/sql-change-password)".
+
+:::
+
+</details>
+
+<details>
+
+<summary>Como alterar a palavra-passe de um endereço de e-mail associado ao meu alojamento web?</summary>
+
+Siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `E-mails` (ou no menu `MX Plan` se utilizar a versão beta da Área de Cliente OVHcloud) e escolha o domínio em causa.
+3. Na página que se abrir, clique no separador `E-mails`.
+4. Na tabela que aparecer, clique no botão `...` à direita do endereço de e-mail em causa e, a seguir, clique em `Alterar palavra-passe`.
+
+Poderá alterar a palavra-passe do endereço de e-mail (observe a política de palavras-passe indicada na janela de introdução).
+
+:::tip
+
+Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe de um endereço de e-mail](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/email-change-password)".
+
+Se estiver a utilizar um programa de mensagens (Outlook, Mail para macOS, Thunderbird, etc.), atualize a palavra-passe para o seu endereço de e-mail quando este lhe for solicitado pelo programa de mensagens, quer seja aberto ou sincronizado.
+
+Se tiver mais perguntas sobre a solução de e-mail *MX Plan*, consulte o nosso [FAQ - E-mails](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails).
+
+:::
+
+</details>
+
+<details>
+
+<summary>Como colocar o meu website online?</summary>
+
+Para publicar o seu website, deve primeiro dispor dos seguintes elementos:
+
+- Um [nome de domínio](/links/web/domains) que corresponderá ao endereço Web a partir do qual o seu website será acessível através de um browser (por exemplo: *domain.tld*). Este domínio deve também estar associado ao seu alojamento web para poder ver o website.
+- Um [alojamento web](/links/web/hosting) no qual pode instalar o seu website.
+
+Aqui estão os principais passos a seguir:
+
+1. Defina o seu projeto (site "chave na mão" (CMS) instalado manualmente ou graças aos módulos 1 clique da OVHcloud / site criado por si ou por um prestador de serviços / etc.).
+2. Colocar os ficheiros do site online no espaço de armazenamento FTP do seu alojamento web.
+3. Associe o website a uma base de dados (se o website utilizar uma base de dados).
+4. Aceda ao seu website.
+
+:::tip
+
+Para mais informações sobre como publicar um site num alojamento web, consulte o guia detalhado "[Publicar um site num alojamento web](/guides/web-cloud/web-hosting/hosting-how-to-get-my-website-online)".
+
+Se optar por instalar um CMS (WordPress, Joomla!, PrestaShop, Drupal) com a nossa solução "Módulos 1 clique", consulte o guia detalhado "[Instalar o seu website com um Módulos "1 clique" (CMS)](/guides/web-cloud/web-hosting/cms-install-1-click-modules)".
+
+Se o seu website já existe noutro fornecedor e se pretender migrá-lo para a OVHcloud, consulte o guia detalhado "[Migrar o seu website e os seus serviços associados para a OVHcloud](/guides/web-cloud/web-hosting/hosting-migrating-to-ovh)".
+
+Para o ajudar a configurar o seu alojamento web, pode utilizar todos os [guias relativos às nossas soluções de alojamento web](/guides/web-cloud/web-hosting/overview).
+
+:::
+
+</details>
+
+<details>
+
+<summary>Como transferir, sem interrupção de serviço, o meu website, a minha base de dados, o meu nome de domínio e os meus e-mails para a OVHcloud?</summary>
+
+Aqui estão os principais passos a seguir:
+
+1. Encomendar o alojamento e os endereços de e-mail na OVHcloud.
+2. Criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud.
+3. Recuperar um backup completo do seu site web.
+4. Importar o backup do seu website para a sua oferta de alojamento OVHcloud.
+5. Recriar os mesmos endereços de e-mail na OVHcloud.
+6. Declarar os servidores de e-mail OVHcloud na zona DNS ativa do seu domínio.
+7. Transferir o conteúdo dos seus antigos endereços de e-mail para os novos endereços na OVHcloud.
+8. Reconfigurar os seus softwares de e-mail.
+9. Substituir os servidores DNS ativos do seu domínio pelos da OVHcloud.
+10. Transferir um domínio para a OVHcloud.
+
+:::tip
+
+Encontre todos os detalhes no nosso guia "[Migrar o seu website e os seus serviços associados para a OVHcloud](/guides/web-cloud/web-hosting/hosting-migrating-to-ovh)".
+
+:::
+
+</details>
+
+<details>
+
+<summary>Como alojar vários websites num mesmo alojamento web?</summary>
+
+Se o seu [alojamento web](/links/web/hosting) é compatível, siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que vai aparecer, clique no separador `Multisite`.
+
+Poderá gerir os nomes de domínio/subdomínios declarados em multi-site no seu alojamento web.
+
+:::tip
+
+Encontre todos os detalhes no nosso guia "[Partilhar o alojamento entre vários sites](/guides/web-cloud/web-hosting/multisites-configure-multisite)".
+
+:::
+
+</details>
+
+<details>
+
+<summary>Como apresentar o meu website com um URL em "HTTPS"?</summary>
+
+Para que o seu website esteja acessível com um URL em "HTTPS" (exemplo: `https://domain.tld`), são necessários dois pré-requisitos:
+
+- Deve dispor de um certificado SSL ativo para o seu nome de domínio (ou instalado no seu alojamento web).
+- No código-fonte do seu website, este deve forçar a reescrita dos URLs em "HTTPS".
+
+A OVHcloud disponibiliza vários [certificados SSL](/links/web/hosting-options) nos alojamentos web.
+
+Para ativar um certificado SSL no alojamento web do seu website, efetue os seguintes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, clique no separador `Certificados SSL`.
+4. Escolha o certificado que deseja entre os [certificados disponíveis](/guides/web-cloud/web-hosting/ssl-on-webhosting).
+5. Continue até que a instalação do certificado SSL esteja finalizada (após ter validado a nota de encomenda no caso de escolher um dos certificados SSL Sectigo).
+
+:::tip
+
+Encontre todos os detalhes nos seguintes guias:
+
+- [Alojamento web - Gerir um certificado SSL](/guides/web-cloud/web-hosting/ssl-on-webhosting).
+- [Alojamento web - Ativar um certificado SSL gratuito Let's Encrypt](/guides/web-cloud/web-hosting/ssl-letsencrypt).
+- [Alojamento web - Ativar um certificado SSL Sectigo DV](/guides/web-cloud/web-hosting/ssl-dv).
+- [Alojamento web - Ativar um certificado SSL Sectigo EV](/guides/web-cloud/web-hosting/ssl-ev).
+- [Alojamento web - Instalar um certificado SSL personalizado](/guides/web-cloud/web-hosting/ssl-custom).
+
+:::
+
+Depois de o certificado SSL da sua escolha ser instalado e implementado na OVHcloud, verifique se o código-fonte do seu website reescreve corretamente os URLs de acesso ao seu website em "HTTPS". Se tiver problemas com isso, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
+
+</details>
+
+<details>
+
+<summary>Como alterar a forma de alojamento web?</summary>
+
+Para encomendar o alojamento web mais adaptado às suas necessidades, consulte as nossas ofertas [nesta página](/links/web/hosting).
+
+:::info
+
+Dependendo do seu plano de alojamento web atual, algumas ofertas podem não lhe ser propostas. Consulte o nosso guia "[Fazer evoluir a sua oferta de alojamento web](/guides/web-cloud/web-hosting/how-to-upgrade-web-hosting-offer)" para mais informações sobre o assumpto.
+
+:::
+
+Depois de fazer a escolha, siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, na caixa **Subscrição**, clique no botão `...` à direita da menção `Plano` e, a seguir, em `Mudar de oferta`.
+4. De seguida, selecione a nova subscrição e a respetiva duração. Valide os contratos correspondentes e depois clique em `Enviar`.
+
+:::tip
+
+Encontre todos os detalhes no nosso guia "[Fazer evoluir a sua oferta de alojamento web](/guides/web-cloud/web-hosting/how-to-upgrade-web-hosting-offer)".
+
+:::
+
+</details>
+
+:::details Após o cancelamento, como conservar a oferta de e-mail associada ao meu alojamento web?
+
+Quando rescindir ou eliminar o seu alojamento web, a oferta de e-mail que lhe está associada será igualmente rescindida. Para conservar os seus endereços de e-mail, é preciso desassociar a oferta de e-mail **antes** da rescisão do alojamento web em causa.
+
+Siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, na caixa **Configuração**, clique no botão `...` à direita da menção `Endereços de e-mail` e, a seguir, em `Desassociar a minha opção de e-mail`.
+4. Siga as instruções para encomendar uma oferta de e-mail independente que lhe permitirá conservar os seus endereços de e-mail já criados.
+
+:::
+
+:::details Quando rescindir um alojamento web "Performance", como conservar a oferta "Web Cloud Databases" associada?
+
+Os alojamentos web **Performance** incluem uma oferta Web Cloud Databases ativável gratuitamente.<br />
+Quando rescindir ou eliminar o seu alojamento web **Performance**, a oferta Web Cloud Databases eventualmente associada será igualmente rescindida. Para conservar a sua solução Web Cloud Databases, deverá desassociá-la **antes** da rescisão do alojamento.
+
+Siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, na caixa **Configuração**, clique no botão `...` à direita da menção `Web Cloud Databases` e, a seguir, em `Desassociar`.
+4. Siga as instruções para encomendar uma oferta Web Cloud Databases independente para conservar a sua solução Web Cloud Databases já criada.
+
+**Esta ação é irreversível e a oferta Web Cloud Databases será faturada independentemente do seu alojamento web Performance.**
+
+:::
+
+<details>
+
+<summary>Como aumentar a RAM de uma oferta "Web Cloud Databases" associada a um alojamento web "Performance"?</summary>
+
+Siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Web Cloud Databases` e escolha a solução Web Cloud Databases correspondente.
+3. Na página que se abrir, na caixa **Informações gerais**, clique no botão `...` à direita da menção `RAM` e, a seguir, em `Alterar quantidade de RAM`.
+4. Siga as instruções para encomendar a quantidade de RAM desejada e prossiga até à validação da encomenda.
+
+:::tip
+
+Consulte também, se necessário, a secção "*Editar a oferta Web Cloud Databases*" do guia "[Configuração de uma oferta Web Cloud Databases](/guides/web-cloud/web-cloud-databases/db-configure-optimise-database-server)".
+
+:::
+
+</details>
+
+## Diagnóstico
+
+> [!tip]
+>
+> Se encontrar um problema não mencionado nesta FAQ, consulte a secção "*Diagnóstico*" dos nossos [guias sobre soluções de alojamento web](/guides/web-cloud/web-hosting/overview).
+
+<details>
+
+<summary>O que fazer se o meu website tiver um problema?</summary>
+
+Existem várias razões que podem explicar um problema de funcionamento do seu website.<br />
+Para identificar a causa, comece por verificar que nenhuma das suas subscrições necessita de ser **renovada**.
+
+Siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Na página que se abrir, clique no seu nome no canto superior direito e selecione `As minhas ofertas e serviços`.
+
+:::tip
+
+Encontre todos os pormenores no nosso guia "[Como renovar os meus serviços OVHcloud](/guides/account-and-service-management/managing-billing-payments-and-services/automatic-renewal)".
+
+:::
+
+De seguida, consulte os [eventos em curso na nossa infraestrutura](https://www.status-ovhcloud.com/).
+
+Se todos os seus serviços se encontrarem ativos e não forem afetados por qualquer incidente ou manutenção, realize um diagnóstico mais aprofundado.
+
+:::tip
+
+Consulte a secção "*Diagnóstico*" dos nossos [guias sobre as soluções de alojamento web](/guides/web-cloud/web-hosting/overview).
+
+:::
+
+</details>
+
+<details>
+
+<summary>O que fazer se a página "Site em construção" da OVHcloud continuar a ser apresentada depois de o meu site estar online?</summary>
+
+![site-en-construction](/images/assets/screens/other/browsers/errors/site-en-construction.png)
+
+Ao instalar o seu alojamento web, a OVHcloud implementa esta página de espera sob a forma de um ficheiro **index.html** contido na pasta `www` presente no espaço de armazenamento FTP do seu alojamento web.
+
+Existem dois casos possíveis:
+
+- Se instalou um [Módulos "1 clique"](/guides/web-cloud/web-hosting/cms-install-1-click-modules): este ficheiro é automaticamente eliminado pelos nossos robôs de instalação.
+- Se instalou o seu website manualmente, siga os passos abaixo:
+    - Ligue-se ao [espaço de armazenamento FTP](/guides/web-cloud/web-hosting/ftp-connection) do seu alojamento web.
+    - Depois de aceder ao espaço de armazenamento FTP, aceda ao diretório `www`.
+    - Renomear o ficheiro **index.html** em **index.html.old**. Esta operação irá desativar a página após alguns minutos.
+
+:::tip
+
+Encontre mais detalhes nos seguintes guias:
+
+- [Aceder ao espaço de armazenamento FTP do alojamento web](/guides/web-cloud/web-hosting/ftp-connection).
+- [Alterar a palavra-passe de um utilizador FTP](/guides/web-cloud/web-hosting/ftp-change-password).
+- [Tutorial - Utilizar o FileZilla com o seu alojamento OVHcloud](/guides/web-cloud/web-hosting/ftp-filezilla-user-guide).
+- [Tutorial - Utilizar o Cyberduck com o meu alojamento web](/guides/web-cloud/web-hosting/ftp-cyberduck-user-guide-on-mac).
+
+:::
+
+</details>
+
+<details>
+
+<summary>Após a criação, o meu website será apresentado com um endereço do tipo "xxxxx.clusterXXX.hosting.ovh.net". O que devo fazer?</summary>
+
+![url-cluster](/images/assets/screens/other/browsers/urls/url-cluster.png)
+
+O seu website foi criado com um [Módulos "1 clique"](/guides/web-cloud/web-hosting/cms-install-1-click-modules) utilizando, no momento da instalação, o endereço web predefinido do seu alojamento web "xxxxx.clusterXXX.hosting.ovh.net".
+
+Será necessário eliminar o módulo 1 clique e voltar a instalá-lo.
+
+:::warning
+
+A eliminação de um [Módulos "1 clique"](/guides/web-cloud/web-hosting/cms-install-1-click-modules), tal como a de uma base de dados, é definitiva. Implica igualmente a **eliminação dos backups** dos dados em causa. Antes de eliminar o seu website no alojamento web, **certifique-se de que consegue criar o seu site da mesma forma**. Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
+
+Consulte também os guias detalhados, se necessário:
+
+- [Restaurar o espaço de armazenamento do alojamento web](/guides/web-cloud/web-hosting/ftp-save-and-backup).
+- [Recuperar a cópia de segurança da base de dados de um alojamento web](/guides/web-cloud/web-hosting/sql-database-export).
+
+:::
+
+**Apenas** Depois de realizar todos os backups necessários, elimine o seu [Módulos "1 clique"](/guides/web-cloud/web-hosting/cms-install-1-click-modules) através das seguintes ações:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, clique no separador `Módulos "1 clique"`.
+4. Na tabela que aparecer, clique no botão `...` à direita na linha do *Módulos "1 clique"* em causa e, a seguir, em `Eliminar o módulo`.
+
+A eliminação do *módulo "1 clique"* pode demorar **vários minutos**.
+
+De seguida, elimine a base de dados associada, executando as seguintes ações:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, clique no separador `Bases de dados`.
+4. Na tabela que aparecer, clique no botão `...` à direita na linha da base de dados em causa e, a seguir, em `Eliminar base de dados`.
+
+A eliminação da base de dados associada pode demorar **vários minutos**.
+
+Uma vez terminadas as eliminações, realize uma nova instalação do seu *Módulos "1 clique"*, zelando por selecionar o nome de domínio desejado.
+
+:::tip
+
+Encontre todos os detalhes no nosso guia "[Instalar o seu website com um 'módulo 1 clique' (CMS)](/guides/web-cloud/web-hosting/cms-install-1-click-modules)".
+
+:::
+
+</details>
+
+<details>
+
+<summary>No seguimento de uma alteração, o meu Web site será apresentado com um endereço do tipo "xxxxx.clusterXXX.hosting.ovh.net". O que devo fazer?</summary>
+
+![url-cluster](/images/assets/screens/other/browsers/urls/url-cluster.png)
+
+O seu website é apresentado com o endereço web predefinido do seu alojamento web do tipo "xxxxx.clusterXXX.hosting.ovh.net" após uma alteração do seu [Módulos "1 clique"](/guides/web-cloud/web-hosting/cms-install-1-click-modules).
+
+Se o seu website apresentar este URL após uma operação, a solução mais rápida será restaurá-lo para um estado anterior onde funcionasse corretamente.
+
+:::danger
+
+O restauro de um alojamento web implica o restauro de **todos os websites** que o mesmo contém.
+
+Aquando de um restauro, o conteúdo do seu espaço de armazenamento FTP, ou do da sua base de dados, é substituído de forma irreversível por um backup. Os dados presentes **antes do lançamento da restauração** no espaço de armazenamento FTP ou na base de dados a restaurar serão substituídos e perdidos permanentemente. Se necessário, certifique-se de que tem de efetuar previamente uma cópia de segurança deste conteúdo. Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
+
+Consulte também os guias detalhados, se necessário:
+
+- [Restaurar o espaço de armazenamento do alojamento web](/guides/web-cloud/web-hosting/ftp-save-and-backup).
+- [Recuperar a cópia de segurança da base de dados de um alojamento web](/guides/web-cloud/web-hosting/sql-database-export).
+
+:::
+
+Para restaurar o código-fonte do seu website, siga estas etapas:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que vai aparecer, clique no separador `FTP - SSH`.
+4. Na nova página que aparece, clique no botão `Restaurar um backup`.
+5. Na janela que aparece, escolha a data do backup que pretende restaurar e prossiga até que o restauro seja iniciado.
+
+O restauro do espaço de armazenamento FTP pode demorar **vários minutos**.
+
+Para restaurar um backup da sua base de dados, siga estas etapas:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, clique no separador `Bases de dados`.
+4. Na tabela que aparecer, clique no botão `...` situado à direita na linha da base de dados em causa e, a seguir, em `Restaurar um backup`.
+5. Na nova página que vai aparecer, escolha a cópia de segurança que pretende restaurar (**idealmente a que corresponde à data escolhida para o restauro do código-fonte do seu website (ver acima)**).
+6. Depois de escolher o backup, clique no botão `...` à direita do backup a restaurar e, a seguir, em `Restaurar backup`.
+
+O restauro de uma base de dados pode demorar **vários minutos**.
+
+:::tip
+
+Encontre todos os detalhes nos seguintes guias:
+
+- [Alojamento Web - Restaurar o espaço de armazenamento FTP](/guides/web-cloud/web-hosting/ftp-save-and-backup).
+- [Restaurar um backup da sua base de dados](/guides/web-cloud/web-hosting/sql-importing-mysql-database).
+
+:::
+
+</details>
+
+<details>
+
+<summary>O meu website reencaminha para a interface de ligação ao Webmail OVHcloud. O que devo fazer?</summary>
+
+![webmail-login-interface](/images/assets/screens/website/webmail/webmail-login-interface.png)
+
+Esta situação indica uma configuração errada ao nível dos [servidores DNS](/guides/web-cloud/domains/dns-server-edit) ou da [zona DNS](/guides/web-cloud/domains/dns-zone-edit) associados ao seu domínio.
+
+O caso mais comum é o seguinte: encomendou separadamente o seu nome de domínio e o seu alojamento web. Como tal, estes não são automaticamente ligados através da zona DNS do seu domínio.
+
+Para corrigir isto, siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Nomes de domínio` e escolha o domínio em causa.
+3. Na página que vai aparecer, clique no separador `Servidores DNS`.
+4. De seguida, anote os nomes dos servidores DNS indicados e aceda ao separador `Zona DNS` (à direita do separador `Servidores DNS`).
+5. Na tabela (que representa a zona DNS do nome de domínio) que aparece, compare os `Alvos` das entradas do tipo `NS` presentes na zona DNS com os nomes dos servidores DNS recuperados anteriormente. Podem ocorrer três situações. Clique nas guias abaixo para exibir sucessivamente cada um dos **3** casos.
+
+<Tabs>
+<Tab label="Caso n°1">
+
+Os `Alvos` (servidores DNS) das entradas do tipo `NS` declaradas na zona DNS do nome de domínio **são iguais** às recuperadas no separador `Servidores DNS`.
+
+Neste caso, significa que o seu nome de domínio (ou o seu subdomínio em *www*) aponta para o endereço IP do nosso servidor de reencaminhamento (213.186.33.5).
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Nomes de domínio` (ou no menu `Zonas DNS`, se utilizar a versão beta da Área de Cliente OVHcloud) e escolha o domínio em causa.
+3. Na página que se abrir, clique no separador `Zona DNS`.
+4. Na tabela que aparece (representando a zona DNS do seu domínio), identifique a entrada do tipo `A` cujo `Alvo` é o endereço IP `213.186.33.5`.
+5. Clique no botão `...` à direita da linha e, a seguir, em `Modificar entrada`.
+6. Na janela que se abrir, substitua, no compo `Alvo *`, o endereço IP `213.186.33.5` pelo endereço IP do alojamento web onde se encontra o seu website.
+
+:::tip
+
+Se necessário, consulte também os seguintes guias detalhados:
+
+- [Editar uma zona DNS da OVHcloud](/guides/web-cloud/domains/dns-zone-edit).
+- [Alojamento web - Lista dos endereços IP por cluster](/guides/web-cloud/web-hosting/clusters-and-shared-hosting-ip).
+
+:::
+
+</Tab>
+<Tab label="Caso n°2">
+
+Os `Alvos` (servidores DNS) das entradas do tipo `NS` declaradas na zona DNS do nome de domínio **não são idênticos** às que são obtidas no separador `Servidores DNS`. No entanto, os `Alvos` (servidores DNS) assumem uma das seguintes formas:
+
+- `nsXX.ovh.net` e `dnsXX.ovh.net` **ou** `nsXXX.ovh.net` e `dnsXXX.ovh.net` (em que cada `X` designa um algarismo compreendido entre **0** e **9**);
+- `nsXX.ovh.ca` e `dnsXX.ovh.ca` **ou** `nsXXX.ovh.ca` e `dnsXXX.ovh.ca` (em que cada `X` designa um algarismo compreendido entre **0** e **9**);
+- `ns200.anycast.me` e `dns200.anycast.me` (se subscreveu a opção [DNS anycast](/links/web/domains-options)).
+
+:::info
+
+Se um dos seus servidores DNS declarados no separador `Servidores DNS` tiver a seguinte forma: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXXXX.ovh.net` ou `vpsXXXXXX.ovh.ca` (em que cada `X` designa um algarismo compreendido entre **0** e **9**), consulte diretamente o **Caso n°3**.
+Trata-se de nomes de servidores DNS fornecidos pela OVHcloud que permitem unicamente aos nossos clientes alojar a sua configuração DNS diretamente nos seus próprios servidores (Servidores dedicados, VPS, etc.).
+
+:::
+
+Neste caso, isto significa que o seu domínio não utiliza os servidores DNS corretos da OVHcloud para aplicar a configuração da zona DNS presente no separador `Zona DNS`.
+
+Para corrigir isto, siga estes passos:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Nomes de domínio` e escolha o domínio em causa.
+3. Na página que se abrir, clique no separador `Servidores DNS`.
+4. Na nova página que aparece, clique no botão `Modificar os servidores DNS`.
+5. Na página que se abrir, selecione `Utilizar os DNS predefinidos da OVHcloud` e clique no botão `Aplicar configuração`.
+
+A propagação da atualização dos servidores DNS aplicados a um domínio pode levar até **48** horas.
+
+:::tip
+
+Encontre todos os pormenores no nosso guia "[Modificar os servidores DNS de um nome de domínio OVHcloud](/guides/web-cloud/domains/dns-server-edit)".
+
+:::
+
+</Tab>
+<Tab label="Caso n°3">
+
+Os `Alvos` (servidores DNS) das entradas do tipo `NS` declaradas na zona DNS do nome de domínio **não são idênticos** às que são obtidas no separador `Servidores DNS`. Além disso, os nomes dos servidores DNS recuperados no separador `Servidores DNS` não têm nenhuma das formas descritas no **Caso n°2**, com exceção das seguintes formas: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` ou `vpsXXXXXX.ovh.ca` (em que cada `X` designa um algarismo compreendido entre **0** e **9**).
+
+Neste caso, isto significa que a zona DNS ativa aplicada ao seu domínio não é gerida pela OVHcloud diretamente. Contacte o seu Webmaster, o seu fornecedor de nome de domínio, o seu fornecedor de DNS ou um dos nossos [parceiros](/links/partner).
+
+</Tab>
+</Tabs>
+
+
+</details>
+
+<details>
+
+<summary>O que fazer se o meu website apresentar um erro "A página não é redirecionada corretamente"?</summary>
+
+![the-page-isnt-redirecting-properly](/images/assets/screens/other/browsers/errors/the-page-isnt-redirecting-properly.png)
+
+Neste caso, a solução mais rápida será restaurá-lo para um estado anterior em que tenha funcionado corretamente.
+
+:::danger
+
+O restauro de um alojamento web implica o restauro de todos os websites** que o mesmo contém.
+
+Aquando de um restauro, o conteúdo do seu espaço de armazenamento FTP, ou do da sua base de dados, é substituído de forma irreversível por um backup. Os dados presentes **antes do lançamento da restauração** no espaço de armazenamento FTP ou na base de dados a restaurar serão substituídos e perdidos permanentemente. Por isso, certifique-se de que tem de obter previamente uma cópia de segurança deste conteúdo. Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
+
+Consulte também estes guias detalhados:
+
+- [Restaurar o espaço de armazenamento do alojamento web](/guides/web-cloud/web-hosting/ftp-save-and-backup).
+- [Recuperar a cópia de segurança da base de dados de um alojamento web](/guides/web-cloud/web-hosting/sql-database-export).
+
+:::
+
+Para restaurar o código-fonte do seu website, siga estas etapas:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que vai aparecer, clique no separador `FTP - SSH`.
+4. Na nova página que aparece, clique no botão `Restaurar um backup`.
+5. Na janela que aparece, escolha a data do backup que pretende restaurar e prossiga até que o restauro seja iniciado.
+
+O restauro do espaço de armazenamento FTP pode demorar **vários minutos**.
+
+Para restaurar um backup da sua base de dados, siga estas etapas:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`.
+2. Clique no menu `Alojamentos` e escolha o alojamento web em causa.
+3. Na página que se abrir, clique no separador `Bases de dados`.
+4. Na tabela que aparecer, clique no botão `...` situado à direita na linha da base de dados em causa e, a seguir, em `Restaurar um backup`.
+5. Na nova página que vai aparecer, escolha a cópia de segurança que pretende restaurar (**idealmente a que corresponde à data escolhida para o restauro do código-fonte do seu website (ver acima)**).
+6. Depois de escolher o backup, clique no botão `...` à direita do backup a restaurar e, a seguir, em `Restaurar backup`.
+
+O restauro de uma base de dados pode demorar **vários minutos**.
+
+:::tip
+
+Encontre todos os detalhes nos seguintes guias:
+
+- [Restaurar o espaço de armazenamento do alojamento web](/guides/web-cloud/web-hosting/ftp-save-and-backup).
+- [Importar um backup para a base de dados de um alojamento web](/guides/web-cloud/web-hosting/sql-importing-mysql-database).
+
+:::
+
+Se o restauro não permitir restabelecer o acesso ao seu website, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
+
+</details>
+
+<details>
+
+<summary>O que fazer se o meu website apresentar um erro "503 error Backend fetch failed (Varnish cache)"?</summary>
+
+![503_varnish](/images/assets/screens/other/browsers/errors/http-503-backend-varnish.png)
+
+Se ativou a [opção CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn) do seu alojamento web, desative o modo *Manutenção* no seu site WordPress ou PrestaShop.
+
+Se não ativou esta opção nem utilizou o modo *Manutenção*, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
+
+De facto, este erro também pode aparecer em caso de pedido HTTP que chegue ao *timeout* no seu website.
+
+:::tip
+
+Consulte também os guias detalhados, se necessário:
+
+- [Acelerar o meu website utilizando o CDN](/guides/web-cloud/web-hosting/cdn-how-to-use-cdn).
+- [Resolver os erros mais frequentes associados aos módulos 1 clique](/guides/web-cloud/web-hosting/diagnostic-errors-module1clic).
+
+:::
+
+</details>
+
+<details>
+
+<summary>O que fazer se o meu website apresentar um erro "Your request has been blocked"?</summary>
+
+![your-request-has-been-blocked](/images/assets/screens/other/browsers/errors/your-request-has-been-blocked.png)
+
+A página "Your request has been blocked" pode ser apresentada por vários motivos (lista não exaustiva):
+
+- O pedido é efetuado a partir de um browser Internet (Firefox, Chrome, Safari, Edge, etc.) não atualizado.
+- Um grande número de pedidos, semelhantes ou não, são efetuados num prazo extremamente curto.
+- O pedido tenta executar ações não autorizadas na infraestrutura partilhada onde se encontra o seu alojamento web.
+
+Nesta situação, são necessárias várias ações:
+
+- Verifique se o seu browser da Internet está atualizado.
+- Recupere o URL chamado (por exemplo: `https://www.domain.tld`), bem como todas as informações presentes na página "Your request has been blocked" (`IP address`, `Date` e `Request ID`).
+- Transmita os elementos recuperados ao suporte através da criação de um [ticket de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
+
+:::tip
+
+Consulte também o nosso guia detalhado: [O que acontece se a página "Your request has been blocked" aparecer?](/guides/web-cloud/web-hosting/diagnostic-request-blocked).
+
+</details>
+
+<details>
+
+<summary>O que devo fazer se o meu website apresentar um erro "Your IP has been banned"?</summary>
+
+![your-ip-has-been-banned](/images/assets/screens/other/browsers/errors/your-ip-has-been-banned.png)
+
+A página "Your IP has been banned" pode ser apresentada por vários motivos (lista não exaustiva):
+
+- Um grande número de pedidos, semelhantes ou não, são efetuados num prazo extremamente curto a partir do mesmo endereço IP.
+- As consultas efetuadas a partir do endereço IP em questão são suspeitas.
+
+Nesta situação, são necessárias várias ações:
+
+- Recupere o URL chamado (por exemplo: `https://www.domain.tld`), bem como todas as informações presentes na página "Your IP has been banned" (`IP address`, `Date` e `Request ID`).
+- Transmita os elementos recuperados ao suporte através da criação de um [ticket de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
+
+:::tip
+
+Consulte também o nosso guia detalhado: [O que acontece se a página "Your IP has been banned" aparecer?](/guides/web-cloud/web-hosting/diagnostic-ip-banned).
+
+:::
+
+</details>
+
+<details>
+
+<summary>Eu encomendei um domínio com acentos e ele escreve de forma estranha na minha Área de Cliente. O que devo fazer?</summary>
+
+![notação_idn](/images/assets/screens/control-panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png)
+
+Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentado em [notação internacionalizada (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name) na sua Área de Cliente, funcionará e apresentará-se de forma perfeitamente normal noutro local. O endereço Web do seu site será apresentado conforme solicitado. Os seus endereços de e-mail aparecerão também conforme o seu desejo.
+
+:::danger
+
+É desaconselhado utilizar um endereço de e-mail com um nome de domínio IDN (Internationalized Domain Name) a partir de um cliente de e-mail (Outlook, Mail de macOS, etc.). Alguns clientes de correio eletrónico não interpretam nomes de domínio com caracteres acentuados, o que bloqueia a transmissão de correio eletrónico. Um remetente que lhe envie um e-mail receberá uma mensagem automática indicando que o seu endereço de e-mail não existe.
+
+**Recomenda-se a reserva do mesmo domínio sem acentos, em complemento do seu nome de domínio com caracteres acentuados, a fim de evitar incompatibilidades na troca de e-mails.**
+
+:::
+
+</details>
+
+## Quer saber mais? <a id="go-further"></a>
+
+[FAQ - E-mails partilhados MX Plan](/guides/web-cloud/email-and-collaborative-solutions/mx-plan/faq-emails)
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Fale com nossa [comunidade de utilizadores](/links/community).

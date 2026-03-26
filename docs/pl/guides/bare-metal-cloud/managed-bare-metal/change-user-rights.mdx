@@ -1,0 +1,39 @@
+---
+title: Zmiana uprawnień użytkownika
+lastUpdated: 2020-11-18
+---
+
+## Wprowadzenie
+
+Celem niniejszego przewodnika jest wyjaśnienie, na czym polega zarządzanie prawami użytkowników w usłudze Managed Bare Metal.
+
+**Dowiedz się, jak zarządzać prawami użytkowników w Twojej infrastrukturze.**
+
+## Wymagania początkowe
+
+- Wykupienie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+## W praktyce
+
+Kliknij **Server**, następnie **Managed Bare Metal**, po czym wybierz infrastrukturę, na której chcesz zmodyfikować użytkowników.
+
+Przejdź do zakładki **Użytkownicy** i kliknij trzy kropki po prawej stronie wiersza użytkownika, aby wyświetlić menu.
+
+<img className="thumbnail" alt="Sprawdź / Zmień uprawnienia dla poszczególnych centrów danych" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_1.png" loading="lazy" />
+
+W menu możesz dokonywać modyfikacji uprawnień użytkowników vSphere dla poszczególnych centrów danych:
+
+<img className="thumbnail" alt="Zmiana uprawnień" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_2.png" loading="lazy" />
+
+| Dostęp  | Możliwe uprawnienie | Opis |
+|---|---|---|
+| Dostęp do vSphere | Brak / Tylko odczyt / Odczyt i zapis | Globalne uprawnienia użytkownika w interfejsie vSphere |
+| Dostęp do vmNetwork | Brak / Tylko odczyt / Operator | Uprawnienia do zarządzania w części sieci publicznej  (VM Network w interfejsie vSphere) |
+| Dodawanie zasobów | Tak/Nie | Uprawnienia do dodawania dodatkowych zasobów za pomocą wtyczki OVHcloud w vSphere Client (Host, Datastore, Kopie zapasowe Veeam) |
+
+<img className="thumbnail" alt="Zmiana uprawnień" src="/images/bare-metal-cloud/managed-bare-metal/change-user-rights/user_rights_3.png" loading="lazy" />
+
+## Sprawdź również
+
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,0 +1,92 @@
+---
+title: Manage your SMS history
+description: Find out how to view your sent messages log from your OVHcloud account
+lastUpdated: 2025-12-30
+---
+
+## Objective
+
+You can view and download a log of your sent SMS messages from your OVHcloud Control Panel. This guide will explain how to do this.
+
+## Requirements
+
+- An OVHcloud SMS account with at least 1 sent SMS.
+
+{/* CP-NAV-START:telecom-sms */}
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](https://manager.eu.ovhcloud.com/#/telecom/sms)
+- **Navigation path:** <code className="action">Telecom</code> > <code className="action">SMS</code> > Select your SMS account
+
+---
+{/* CP-NAV-END:telecom-sms */}
+
+<img className="thumbnail" alt="SMS Control Panel" src="/images/assets/screens/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png" loading="lazy" />
+
+## Instructions
+
+The log records the date, time, sender, recipient and contents of the sent SMS.
+
+:::info
+In the OVHcloud Control Panel, you can view SMS messages sent in the last 6 months (or the last 5,000 SMS messages if you have sent more than 5,000 SMS messages in the last 6 months).
+
+To view older SMS messages (up to the last 12 months), you will need to download your SMS history in CSV format. See [Step 2 of this guide](#csv).
+
+:::
+
+
+### Step 1: Viewing the log in your Control Panel
+
+In the tab bar, click <code className="action">Message and campaign</code> then <code className="action">SMS Management</code> to access your unit SMS history or <code className="action">Campaign Management</code> to access your SMS campaign history.
+
+Then click on <code className="action">Sending log</code> or <code className="action">Statistics and history</code>.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory1.png" loading="lazy" />
+
+You can click on the ‘Date’ column on the left to sort your log by send date.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory2.png" loading="lazy" />
+
+The Actions <code className="action">...</code> heading at the end of each SMS allows you to view or delete the message.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory3.png" loading="lazy" />
+
+To delete several SMS messages at once, tick the boxes next to each message. The <code className="action">Delete the SMS selected</code> button will appear above the log.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory4.png" loading="lazy" />
+
+The <code className="action">Filter</code> button allows you to filter your search by sender (if you have several senders) or by recipient.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory5.png" loading="lazy" />
+ 
+### Step 2: Downloading the sending log as a CSV <a name="csv"></a> 
+
+Click on the <code className="action">Actions</code> button above your log then on <code className="action">Download</code> to download your SMS log in a .csv format. 
+ 
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory6.png" loading="lazy" />
+
+You can then view the log using a spreadsheet program. The information will display as in the example below.
+
+<img className="thumbnail" alt="sms-history" src="/images/web-cloud/messaging/sms/gerer-l-historique-des-sms/smshistory7.png" loading="lazy" />
+
+Here is a breakdown of the information included in the log:
+
+|  Title  |  Description  |
+|  :-----          |  :-----          |
+|  id |  the unique id for the sent SMS used by our servers |
+|  date | the date and time that the SMS was sent  |
+|  sender |  the sender of the SMS message |
+|  receiver |  the recipient’s phone number |
+|  ptt |  the return code on the SMS status |
+|  operatorCode |  the network ID of the mobile operator to which we sent the SMS |
+|  descriptionDlr |  the description of the ptt code received and therefore the status of the SMS |
+|  tag |  the tag attributed either manually via the APIs (to one or more SMS messages) or automatically by our servers to each sent SMS (or each SMS campaign) |
+|  message |  the content of the SMS |
+
+Further information about the ptt codes and various DLR IDs can be found in the final section of the guide [Everything you need to know about SMS users](/guides/web-cloud/messaging/sms/tout-savoir-sur-les-utilisateurs-sms#step-5-specify-a-callback-url/).
+ 
+## Go further
+
+Join our [community of users](https://community.ovhcloud.com/community/en).

@@ -1,0 +1,131 @@
+---
+title: Verwendung der Exchange Fehlerdiagnose
+description: Erfahren Sie hier, wie Sie eine automatische Fehlerdiagnose für Exchange Accounts durchführen
+lastUpdated: 2025-04-28
+---
+
+## Ziel
+
+Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gibt, kann eine automatische Überprüfung der Kontofunktionen helfen, die Ursachen einzugrenzen. Die Prüfergebnisse sind daher hilfreich für eine Supportanfrage bei Problemen mit Ihrem Exchange-Dienst.
+
+**Diese Anleitung erklärt, wie Sie eine Exchange Diagnose starten und deren Ergebnisse interpretieren.**
+
+## Voraussetzungen
+
+- Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account.
+- Sie haben keine ausstehenden [Zahlungen](/guides/account-and-service-management/managing-billing-payments-and-services/invoice-management#pay-bills/) zu dieser Dienstleistung und der dazugehörigen Domain.
+
+{/* CP-NAV-START:web-exchange */}
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](https://manager.eu.ovhcloud.com/#/web/exchange)
+- **Navigationspfad:** <code className="action">Web Cloud</code> > <code className="action">Exchange</code> > Wählen Sie Ihre Plattform aus
+
+---
+{/* CP-NAV-END:web-exchange */}
+
+## In der praktischen Anwendung
+
+### Diagnose durchführen
+
+<img className="thumbnail" alt="Exchange-Diagnose" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/diagnostic-advanced/img_4450.png" loading="lazy" />
+
+Klicken Sie auf den Tab <code className="action">Diagnosen</code> und wählen Sie im Drop-down-Menü den betreffenden Exchange Account aus. Geben Sie das Passwort des Accounts im dafür vorgesehenen Feld ein und klicken Sie dann auf <code className="action">Diagnose starten</code>.
+
+<img className="thumbnail" alt="Exchange-Diagnose" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/diagnostic-advanced/img_4451.png" loading="lazy" />
+
+Der Diagnosevorgang dauert etwa 3 bis 10 Minuten. Hier ein Beispiel für die Ergebnisse:
+
+<img className="thumbnail" alt="Exchange-Diagnose" src="/images/web-cloud/email-and-collaborative-solutions/microsoft-exchange/diagnostic-advanced/img_4471.png" loading="lazy" />
+
+Auf der Ergebnisseite finden Sie zwei Aktionen, um fortzufahren:
+
+- <code className="action">Neue Diagnose</code>: eine andere Diagnose starten.
+
+- <code className="action">Support-Anfrage erstellen</code>: ermöglicht es Ihnen, eine Anfrage an unseren technischen Support zu erstellen, die die Diagnoseergebnisse enthält. 
+
+### Fehler-Erläuterungen
+
+Schauen Sie in der folgenden Übersicht möglicher Fehler nach, um die schnellste Lösung zu finden.
+
+### Der Account wurde wegen Spam-Versand blockiert <a name="blocked"></a>
+
+Ein blockiertes Konto empfängt weiterhin E-Mails, aber der Versand wurde vom automatischen Spamschutzsystem deaktiviert.
+
+Sie können dies im Tab <code className="action">E-Mail-Accounts</code> Ihres Exchange-Dienstes überprüfen. Für den Account wird dann der Status `SPAM` in der Tabelle angezeigt.
+
+Bitte folgen Sie den Anweisungen in [dieser Anleitung](/guides/web-cloud/email-and-collaborative-solutions/troubleshooting/locked-for-spam/), damit unsere Sicherheitsteams das Konto wieder freischalten können.
+
+### Das Abonnement des Accounts ist abgelaufen <a name="expired"></a>
+
+Da Ihr Abonnement nicht mehr aktiv ist, wurden Versand und Empfang deaktiviert.<br/>
+Um Ihr Abonnement wieder zu aktivieren genügt es, die [Abrechnungsfrequenz](/guides/web-cloud/email-and-collaborative-solutions/microsoft-exchange/manage-billing-exchange#periodicity/) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) neu zu konfigurieren.
+
+### Account aufgrund der Sicherheitsrichtlinien gesperrt
+
+Wenn im [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) eine Sicherheitsrichtlinie aktiv ist, kann der Account vorübergehend gesperrt sein.
+
+Sie können zum Beispiel festlegen, dass das Konto nach mehreren fehlgeschlagenen Anmeldeversuchen für eine von Ihnen festgelegte Zeitspanne gesperrt werden soll.
+
+In diesem Fall können Sie entweder warten, bis das Konto wieder verfügbar ist, oder Sie können unsere Exchange-Teams kontaktieren, indem Sie eine Support-Anfrage erstellen.
+
+Weitere Informationen zu dieser Funktion finden Sie in unserer [Anleitung zu Sicherheitsrichtlinien](/guides/web-cloud/email-and-collaborative-solutions/common-email-features/security-policy/).
+
+### Webmail-Authentifizierung ist fehlgeschlagen <a name="password"></a>
+
+Vergewissern Sie sich zunächst über eine Webmail-Anmeldung, dass das Passwort korrekt ist, und starten Sie dann die Diagnose neu.
+
+Dies kann durch die Eingabe eines falschen Account-Passworts verursacht werden. Überprüfen Sie zunächst, ob das Passwort korrekt ist, indem Sie sich [über Webmail einloggen](/guides/web-cloud/email-and-collaborative-solutions/using-the-outlook-web-app-webmail/email-owa/), und starten Sie dann die Diagnose neu.
+
+Wenn nötig können Sie das Passwort des betroffenen Accounts im Tab <code className="action">E-Mail-Accounts</code> in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?onsuccess=https://manager.eu.ovhcloud.com/&from=https://www.ovh.de/&ovhSubsidiary=de) ändern. Wenn das Problem weiterhin besteht, erstellen Sie eine Support-Anfrage.
+
+### Der MX-Eintrag der Domain ist ungültig
+
+Dieser Fehler zeigt an, dass E-Mails nicht empfangen werden können, und steht in Zusammenhang mit dem Fehler "**ACHTUNG: Die Test-E-Mail wurde nicht empfangen.** "
+
+Je nach Verwendung Ihres Exchange Dienstes sind die folgenden MX Server gültig:
+
+- Nur Exchange: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange und bei OVHcloud gehostete POP/IMAP-E-Mails: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
+- Exchange und nicht bei OVHcloud gehostete POP/IMAP-E-Mails: ex<b>?</b>.mail.ovh.net
+<a name="hostname"></a>
+
+:::warning
+In unseren Anleitungen verwenden wir als Servernamen: ex<b>?</b>.mail.ovh.net. Ersetzen Sie das "?" durch die dem Server Ihres Exchange Dienstes entsprechende Nummer.
+
+Diese Informationen finden Sie im OVHcloud Kundencenter im Bereich <code className="action">Web Cloud</code>: Öffnen Sie <code className="action">Exchange</code> und wählen Sie Ihre Dienstleistung aus. Der Servername wird im Bereich **Verbindung** im Tab <code className="action">Allgemeine Informationen</code> angezeigt.
+
+:::
+
+
+### Der SRV-Eintrag der Domain ist ungültig
+
+Der SRV-Eintrag dient der automatischen Konfiguration Ihres Exchange Accounts mit einem kompatiblen E-Mail-Programm wie Microsoft Outlook.
+
+Sie können diese Einstellungen in der [DNS Zone Ihrer Domain überprüfen](/guides/web-cloud/domains/dns-zone-edit/).
+
+Die folgende Tabelle enthält die Werte für einen Exchange Dienst:
+
+Feld | Wert
+------------ | -------------
+Subdomain | _autodiscover._tcp
+Priorität | 0
+Gewichtung | 0
+Port | 443
+Ziel | [ex<b>?</b>.mail.ovh.net](#hostname) (ersetzen Sie "?" durch die entsprechende Nummer Ihres Exchange Servers)
+
+### Die Test-E-Mail konnte nicht über den Account versendet werden
+
+Dieser Fehler zeigt an, dass der Versand von E-Mails generell nicht möglich, was mehrere Ursachen haben kann:
+
+- [Ihr Account wurde geschlossen](#expired)
+- [Das eingegebene Passwort ist nicht korrekt](#password)
+- [Ihr Account wurde wegen Spam-Versand blockiert](#blocked)
+- [Auf der Infrastruktur ist eine Störung aufgetreten](https://web-cloud.status-ovhcloud.com/)
+
+## Weiterführende Informationen
+
+Treten Sie unserer [User Community](https://community.ovhcloud.com/community/en) bei.

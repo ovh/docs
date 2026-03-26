@@ -1,0 +1,300 @@
+---
+title: Comment configurer une interface réseau ?
+description: "Découvrez comment configurer votre réseau depuis l'interface OverTheBox"
+lastUpdated: 2024-10-24
+---
+
+import { Tab, Tabs } from '@rspress/core/theme';
+
+
+## Objectif
+
+Découvrez comment configurer votre réseau depuis l'interface OverTheBox. Ce guide vous permet de configurer votre réseau dans d'autres topologies que celle présente par défaut.
+
+Découvrez ainsi :
+
+- Comment transformer une interface WAN en interface LAN sur les OTB V3, V3 LTE et V2c.
+- Comment transformer une interface LAN en interface WAN sur l'OTB V2b.
+- Comment configurer une interface en IP statique.
+- Comment configurer une interface en PPPoE avec [les offres internet d'OVHcloud](https://www.ovhcloud.com/fr/internet/).
+- Comment configurer une interface en 4G.
+
+## Prérequis
+
+- Une **OverTheBox** fournie par OVHcloud ou une installation depuis [le projet Open Source](/guides/web-cloud/internet/overthebox/advanced-installer-limage-overthebox-sur-votre-materiel/).
+- Être connecté à l'interface web de l'**OverTheBox** depuis [overthebox.ovh](http://overthebox.ovh) ou [192.168.100.1](https://192.168.100.1).
+
+## En pratique
+
+### Modifier la topologie réseau
+
+:::tip[Success]
+Il est recommandé de redémarrer votre **OverTheBox** une fois la configuration terminée pour une bonne prise en compte de celle-ci.
+
+:::
+
+
+Cette section explique comment modifier la topologie réseau par défaut d'une **OverTheBox**.
+
+#### OTB V3 et V2c <a name="v3-v2c"></a>
+
+Les OTB V3, V3 LTE et V2c ont **quatre** interfaces physiques, par défaut **trois** interfaces **WAN** et **une** interface **LAN**. Il est possible de transformer une interface WAN en interface LAN.
+
+<Tabs>
+  <Tab label="1. Suppression">
+    - Rendez-vous dans l'onglet <code className="action">Network > Interfaces</code>.
+    - Supprimez l'interface que vous souhaitez ajouter au LAN avec le bouton <code className="action">Delete</code>, dans notre exemple `eth3_dhcp`.
+    - Confirmez vos changements avec le bouton <code className="action">Save & Apply</code>.
+    - Puis passez à l'étape 2 « Modifier le bridge ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step1-v3-1-removeInterface-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="2. Modifier le bridge">
+    - Rendez-vous dans l'onglet <code className="action">Devices</code>.
+    - Modifiez le bridge `br-lan` à l'aide du bouton <code className="action">Configure...</code>.
+    - Puis passez à l'étape 3 « Ajout au bridge ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step1-v3-2-selectBridge-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. Ajout au bridge">
+    - Modifiez le paramètre <code className="action">Bridge ports</code> en sélectionnant l'interface, dans notre exemple `eth3`.
+    - Confirmez avec le bouton <code className="action">Save</code>.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step1-v3-3-addToBridge-2024.png" loading="lazy" />
+    
+    - Confirmez vos changements avec le bouton <code className="action">Save & Apply</code>.
+    - Puis passez à l'étape 4 « Confirmation ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step1-v3-4-saveBridge-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="4. Confirmation">
+    - Retournez dans la section <code className="action">Interfaces</code>.
+    - Vérifiez que l'interface est présente dans le bridge en passant la souris au-dessus des icônes.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step1-v3-5-confirmSchema-2024.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### OTB V2B
+
+L'OTB V2B a **quatorze** interfaces physiques, par défaut **deux** interfaces **WAN** et **douze** interfaces **LAN**. Il est possible de transformer une interface LAN en interface WAN pour ajouter une connexion supplémentaire.
+
+- Rendez-vous dans l'onglet <code className="action">OverTheBox > Switch Configuration</code>.
+- Cliquez sur le port que vous souhaitez modifier, dans notre exemple le `port 12`.
+- Validez la modification avec le bouton `Save & Apply`.
+- Le port est maintenant prêt pour être connecté à votre troisième connexion WAN.
+
+<img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step1-v2b-switchConfiguration-2024.png" loading="lazy" />
+
+### Modifier la configuration des interfaces
+
+:::tip[Success]
+Il est recommandé de redémarrer votre **OverTheBox** une fois la configuration terminée pour une bonne prise en compte de celle-ci.
+
+:::
+
+
+Cette section explique comment modifier la configuration des interfaces d'une **OverTheBox**.
+
+#### Configurer une interface en IP statique
+
+Si vous souhaitez qu'une interface utilise une IP statique plutôt que le DHCP de votre modem.
+
+<Tabs>
+  <Tab label="1. Changer de protocole">
+    - Rendez-vous dans l'onglet <code className="action">Network > Interfaces</code>.
+    - Sélectionnez l'interface à modifier, dans notre exemple `eth2_dhcp`.
+    - Cliquez sur le bouton <code className="action">Edit</code>.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-1-editInterface-2024.png" loading="lazy" />
+    
+    - Modifiez le protocole en <code className="action">Static Address</code>.
+    - Cliquez sur le bouton <code className="action">Switch protocol</code>.
+    - Puis passez à l'étape 2 « Configuration ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-static-2-editProtocol-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="2. Configuration">
+    - Dans le paramètre <code className="action">IPv4 address</code>, renseignez l'IP statique que l'**OverTheBox** doit utiliser (cette IP ne doit pas être déjà utilisée). Pour notre exemple, `192.168.2.10`.
+    - Dans le paramètre <code className="action">IPv4 netmask</code>, renseignez le [masque de sous réseau](https://fr.wikipedia.org/wiki/Sous-r%C3%A9seau#IPv4). Pour notre exemple, le réseau est `192.168.2.0/24`, le masque est donc `255.255.255.0`.
+    - Dans le paramètre <code className="action">IPv4 gateway</code>, renseignez l'IP de passerelle de votre modem. Pour notre exemple, le modem a l'IP `192.168.2.1`.
+    - De manière facultative, vous pouvez donner un autre nom à l'interface avec le paramètre <code className="action">Label</code>.
+    - Confirmez vos changements avec le bouton <code className="action">Save</code>.
+    - Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-static-3-configureInterface-2024.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Configurer une interface en PPPoE <a name="pppoe"></a>
+
+:::info
+Cette configuration n'est fonctionnelle qu'avec [les offres internet d'OVHcloud](https://www.ovhcloud.com/fr/internet/).
+
+:::
+
+
+Si vous souhaitez qu'une interface utilise le PPPoE plutôt que le DHCP de votre modem.
+
+- Pour un **accès fibre**, vous pouvez directement brancher l'**OverTheBox** à l'**ONT**.
+- Pour un **accès DSL**, vous devez brancher l'**OverTheBox** sur un **modem en bridge**. Voir le guide « [Comment activer le mode bridge sur un modem Zyxel](/guides/web-cloud/internet/internet-access/comment-activer-bridge-zyxel/) ».
+
+Tout d'abord, consultez le guide « [Configurer un routeur manuellement](/guides/web-cloud/internet/internet-access/advanced-config-router-manually/) » pour obtenir vos **identifiants de connexion PPP** ainsi que votre **profil d'accès internet**
+
+<Tabs>
+  <Tab label="1. Changer de protocole">
+    - Rendez-vous dans l'onglet <code className="action">Network > Interfaces</code>.
+    - Sélectionnez l'interface à modifier, dans notre exemple `eth2_dhcp`.
+    - Cliquez sur le bouton <code className="action">Edit</code>.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-1-editInterface-2024.png" loading="lazy" />
+    
+    - Modifiez le protocole en <code className="action">PPPoE</code>.
+    - Cliquez sur le bouton <code className="action">Switch protocol</code>.
+    - Puis passez à l'étape 2 « Configuration ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-ppp-2-editProtocol-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="2. Configuration">
+    - Dans le paramètre <code className="action">PAP/CHAP username</code>, renseignez votre **nom d'utilisateur PPP**. Pour notre exemple, `0320xxyyzz_1@ovh.kosc`.
+    - Dans le paramètre <code className="action">PAP/CHAP password</code>, renseignez votre **mot de passe PPP** reçu par e-mail.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-ppp-2-generalSettings-2024.png" loading="lazy" />
+    
+    - Rendez-vous dans la section <code className="action">Advanced Settings</code>.
+    - Vérifiez que le paramètre <code className="action">Obtain IPv6 address</code> est correctement positionné sur `Disabled`. Si ce n'est pas le cas, modifiez-le.
+    - Confirmez vos changements avec le bouton <code className="action">Save</code>.
+    - Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+    - Si votre **profil d'accès internet** nécessite un **VLAN**, passez à l'étape 3 « Ajout du VLAN ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-ppp-3-advancedSettings-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. Ajout du VLAN">
+    - Si votre **profil d'accès internet** est `Standard`, cette étape n'est pas nécessaire.
+    - Si votre **profil d'accès internet** est `Orange`, vous devez utiliser le `VLAN ID` **835**.
+    - Si votre **profil d'accès internet** est `Bouygues`, vous devez utiliser le `VLAN ID` **4001**.
+    - Rendez-vous dans l'onglet <code className="action">Devices</code>.
+    - Cliquez sur le bouton <code className="action">Add device configuration...</code>.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-ppp-4-addVlan-2024.png" loading="lazy" />
+    
+    - Dans le paramètre <code className="action">Device type</code>, renseignez `VLAN 802.1q`.
+    - Dans le paramètre <code className="action">Base device</code>, renseignez l'interface. Pour notre exemple, `eth2`.
+    - Dans le paramètre <code className="action">VLAN ID</code>, renseignez le `VLAN ID` de votre **profil d'accès internet**. Pour notre exemple, en profil **Bouygues**, le `VLAN ID` est `4001`.
+    - Confirmez vos changements avec le bouton <code className="action">Save</code>.
+    - Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+    - Puis passez à l'étape 4 « Utiliser le VLAN ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-ppp-5-configureVlan-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="4. Utiliser le VLAN">
+    - Si votre **profil d'accès internet** est `Standard`, cette étape n'est pas nécessaire.
+    - Retournez sur l'onglet <code className="action">Interfaces</code>.
+    - Cliquez sur le bouton <code className="action">Edit</code> de l'interface.
+    - Dans le paramètre <code className="action">Device</code>, renseignez le *device* créé lors de l'étape précédente. Pour notre exemple, `eth2.4001`.
+    - Confirmez vos changements avec le bouton <code className="action">Save</code>.
+    - Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step2-ppp-6-useVlan-2024.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+#### Configurer une interface 4G <a name="4g"></a>
+
+:::warning
+Cette section est pour un usage avancé, veuillez d'abord consulter le guide « [Comment configurer un lien 4G sur OverTheBox ?](/guides/web-cloud/internet/overthebox/plus-itv2-lte/) ».
+
+:::
+
+
+Cette section est indiquée pour vous si :
+
+- Vous utilisez votre propre matériel avec un module 4G/5G intégré.
+- Vous souhaitez configurer manuellement une interface 4G.
+- Vous utilisez un modem USB qui n'utilise pas le DHCP.
+- Vous souhaitez aller plus loin dans la configuration d'une **OTB V3 LTE**.
+
+:::info
+Le protocole `uqmi` est disponible nativement sur **OverTheBox**, mais l'usage de `ModemManager` est recommandé.
+
+:::
+
+
+<Tabs>
+  <Tab label="1. Exploration">
+    - Rendez-vous dans l'onglet <code className="action">Status > Mobile Service</code>.
+    - Notez le *device* utilisé par votre interface, dans notre exemple : `/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2`.
+    - Puis passez à l'étape 2 « Ajout ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step3-4g-1-findDevice-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="2. Ajout">
+    - Retournez sur l'interface web.
+    - Rendez-vous dans l'onglet <code className="action">Network > Interfaces</code>.
+    - Cliquez sur le bouton <code className="action">Add new interface...</code>.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step3-4g-2-addInterface-2024.png" loading="lazy" />
+    
+    - Dans le paramètre <code className="action">Name</code>, renseignez un nom. Pour notre exemple, `LTE`.
+    - Dans le paramètre <code className="action">Protocol</code>, renseignez `ModemManager`.
+    - Cliquez sur le bouton <code className="action">Create Interface</code>.
+    - Puis passez à l'étape 3 « Configuration ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step3-4g-3-configureInterface-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="3. Configuration">
+    - Dans le paramètre <code className="action">Modem Device</code>, choisissez le *device* récupéré à l'étape 1. Pour notre exemple, `/sys/devices/pci0000:00/0000:00:14.0/usb2/2-2`.
+    - Dans le paramètre <code className="action">APN</code>, renseignez l'APN de votre opérateur.
+    - Dans le paramètre <code className="action">PIN</code>, renseignez le PIN de votre carte SIM.
+    - Dans le paramètre <code className="action">Authentication Type</code>, renseignez le champ en suivant les recommandations de votre opérateur, par défaut `None` pour les opérateurs nationaux.
+    - Dans le paramètre <code className="action">IP Type</code>, renseignez `IPv4 only`.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step3-4g-4-generalSettings-2024.png" loading="lazy" />
+    
+    - Rendez-vous dans la section <code className="action">Advanced Settings</code>.
+    - Vérifiez que le paramètre <code className="action">Multipath TCP</code> est correctement positionné sur `enabled` ou `backup`.
+    - Dans le paramètre <code className="action">Use gateway metric</code>, renseignez un poids, idéalement plus haut que les interfaces physiques, par exemple `38`.
+    - Dans le paramètre <code className="action">Override IPv4 routing table</code>, renseignez une table, idéalement plus haute que les interfaces physiques, par exemple `208` (ce paramètre ne peut pas dépasser 253).
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step3-4g-5-advancedSettings-2024.png" loading="lazy" />
+    
+    - Rendez-vous dans la section <code className="action">Firewall</code>.
+    - Dans le paramètre <code className="action">Create / Assign firewall-zone</code>, choisissez la zone `wan` en rouge.
+    - Confirmez vos changements avec le bouton <code className="action">Save</code>.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step3-4g-6-firewallSettings-2024.png" loading="lazy" />
+    
+    - Appliquez vos changements avec le bouton <code className="action">Save & Apply</code>.
+    - Puis passez à l'étape 4 « Vérification ».
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step3-4g-7-saveInterface-2024.png" loading="lazy" />
+  </Tab>
+  <Tab label="4. Vérification">
+    - Rendez-vous dans l'onglet <code className="action">Status > Mobile Service</code>.
+    - Vérifiez que le paramètre `Power State` est sur `on`.
+    - Vérifiez que le paramètre `State` est sur `connected`.
+    - Vérifiez que le paramètre `Signal Quality` est au-dessus de `50%`. Une valeur plus basse indique une mauvaise réception.
+    - Vérifiez que les paramètres `MCC` et `MNC` correspondent aux valeurs fournies par votre opérateur.
+    - Vérifiez que le paramètre `Active` de la carte SIM est sur `yes`.
+    
+    <img className="thumbnail" alt="overthebox" src="/images/web-cloud/internet/overthebox/advanced-creer-une-interface-modem-manuellement/step3-4g-8-confirmSettings-2024.png" loading="lazy" />
+  </Tab>
+</Tabs>
+
+
+## Aller plus loin
+
+### Configurations avancées des interfaces
+
+Ce guide contient de nombreuses informations vous permettant d'établir des configurations avancées de vos interfaces.
+
+- Pour des configurations à base de VLAN, consultez les étapes 3 et 4 de la section « [Configurer une interface en PPPoE](#pppoe) ».
+- Pour la création manuelle d'une interface WAN, consultez l'étape 3 de la section « [Configurer une interface en 4G](#4g) », en particulier les paramètres de la section `Advanced Settings` et `Firewall`.
+- Pour la création et la configuration d'un bridge, consultez la section « [OTB V3 et V2c](#v3-v2c) ».
+
+**OverTheBox** étant basé sur **OpenWRT**, vous pouvez également consulter la [documentation OpenWRT](https://openwrt.org/docs/start).
+
+Échangez avec notre [communauté d'utilisateurs](https://community.ovhcloud.com/community/fr).
