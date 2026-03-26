@@ -29,6 +29,17 @@ This guide explains how to enable IAM authentication and control user access to 
 - An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) guide for more information).
 - An access to the Harbor UI to operate the private registry (see the [connecting to the UI](/pages/public_cloud/containers_orchestration/managed_private_registry/connecting-to-the-ui) guide for more information).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Introduction to OVHcloud IAM
@@ -58,9 +69,7 @@ By integrating IAM with your registry, you ensure consistent access control acro
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Private Registry`{.action}.
->>
->> In the list of registries, click the `...`{.action} button for the relevant registry, then select:
+>> In the left-hand menu under **Containers & Orchestration**, click on `Managed Private Registry`{.action}. In the list of registries, click the `...`{.action} button for the relevant registry, then select:
 >>
 >> - `Activate authentication via OVHcloud IAM`{.action} to enable it.
 >>
@@ -105,7 +114,7 @@ By integrating IAM with your registry, you ensure consistent access control acro
 >>
 >> - **Via the OVHcloud Control Panel:**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Private Registry`{.action}.
+>> In the Managed Private Registry list, click on your registry — the `registryID` is visible in the URL.
 >>
 
 
@@ -147,7 +156,7 @@ OVHcloud IAM provides two predefined roles for managing access to your Managed P
 > - After changing a user’s group and assigning the Standard role, fine-tune their permissions directly in Harbor for better control and consistency. See the different roles in Harbor [here](https://goharbor.io/docs/2.14.0/administration/managing-users/user-permissions-by-role/).
 >
 
-These roles are assigned through IAM policies. To create and configure a policy, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.
+These roles are assigned through IAM policies. To create and configure a policy, navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.
 
 ![Create policy](images/managing_iam.png){.thumbnail}
 
