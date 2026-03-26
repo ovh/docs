@@ -16,17 +16,26 @@ W przypadku rzadko używanych danych wymagane jest odblokowanie, co oznacza koni
 
 ## Wymagania początkowe
 
-- Odblokowanie w Panelu klienta:
-    - Dostęp do [Panelu client OVHcloud](/links/manager).
 - Odblokowanie za pomocą python-swiftclient:
     - [Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) poprzez instalację python-swiftclient.
     - [Pobranie zmiennych środowiskowych OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
 ### Odblokuj obiekty w Panelu klienta
 
-W [Panelu client OVHcloud](/links/manager) kliknij zakładkę `Public Cloud`{.action}, wybierz Twój projekt Public Cloud i kliknij sekcję `Cloud Archive`{.action} w menu po lewej stronie.
+Kliknij sekcję `Cloud Archive`{.action} w menu po lewej stronie.
 
 Aby odblokować archiwum, kliknij przycisk `...`{.action} po prawej stronie, a następnie `Odblokuj`{.action}, aby rozpocząć proces odzyskiwania.
 

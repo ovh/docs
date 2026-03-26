@@ -1,7 +1,7 @@
 ---
 title: Backup Storage auf einem Dedicated Server verwenden
 excerpt: Aktivieren Sie den in Ihrem OVHcloud Dedicated Server enthaltenen Backup Storage und greifen Sie darauf zu, um Backups auf Dateiebene zu erstellen.
-updated: 2025-10-09
+updated: 2026-03-25
 ---
 
 ## Ziel
@@ -315,12 +315,12 @@ Nachdem Sie FileZilla auf Ihrem Server installiert haben, können Sie die Softwa
 
 #### NFS
 
-Vergewissern Sie sich zunächst, dass Ihre IP-Blöcke auf den Speicher zugreifen und das NFS-Protokoll verwenden können. Je nach dem von Ihnen verwendeten Linux-Betriebssystem kann es sein, dass der NFS-Client installiert und der NFS/portmap-Dienst gestartet werden muss.
+Der Backup Storage ist nur mit NFSv3 kompatibel. Vergewissern Sie sich zunächst, dass Ihre IP-Blöcke auf den Speicher zugreifen und das NFS-Protokoll verwenden können. Je nach dem von Ihnen verwendeten Linux-Betriebssystem kann es sein, dass der NFS-Client installiert und der NFS/portmap-Dienst gestartet werden muss.
 
 Wenn Sie den NFS-Client installiert und den portmap-Dienst gestartet haben, können Sie die NFS-Freigabe wie eine normale Partition mit folgendem Befehl mounten:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.

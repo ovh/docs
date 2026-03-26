@@ -66,7 +66,7 @@ Stellen Sie daher sicher, dass Sie die Absenderquellen, die Sie für den Versand
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
 - **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---

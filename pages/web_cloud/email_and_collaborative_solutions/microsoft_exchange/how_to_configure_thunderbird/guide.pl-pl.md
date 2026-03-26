@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Konfigurowanie adresu e-mail w Thunderbird na Windows'
 excerpt: 'Dowiedz się, jak skonfigurować adres e-mail Exchange w Thunderbird na Windows'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>

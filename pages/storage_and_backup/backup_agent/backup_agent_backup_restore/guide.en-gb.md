@@ -14,8 +14,18 @@ Learn how to back up and restore your data on your Bare Metal servers with Backu
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A Bare Metal server with the Backup Agent installed on it. Read our guide "[How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) for more information".
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## Instructions
 

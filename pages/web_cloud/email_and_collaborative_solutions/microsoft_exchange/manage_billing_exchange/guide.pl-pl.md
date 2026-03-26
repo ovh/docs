@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie fakturowaniem kont Exchange'
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi Exchange'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie

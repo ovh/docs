@@ -37,7 +37,7 @@ Para más información, consulte nuestras guías "[Todo sobre los servidores DNS
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Enlace directo:** [Zonas DNS](/links/control-panel/web-dns-zone)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Seleccione su nombre de dominio
 
 ---
@@ -66,7 +66,7 @@ Para acceder a la gestión de una zona DNS de OVHcloud, haga clic en las fichas 
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -104,7 +104,7 @@ Para modificar una zona DNS de OVHcloud en modo de texto, haga clic en las ficha
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -134,7 +134,7 @@ Para agregar un nuevo registro DNS, haga clic en las fichas siguientes para ver 
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -161,7 +161,7 @@ Para editar un registro DNS, haga clic en las fichas siguientes para ver cada un
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -182,7 +182,7 @@ Para eliminar un registro DNS, haga clic en las fichas siguientes para ver cada 
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -212,7 +212,7 @@ Para restaurar la zona DNS, haga clic en las fichas siguientes para ver cada una
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -260,7 +260,7 @@ Si quiere reducir este plazo en las próximas ediciones de la zona DNS de OVHclo
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

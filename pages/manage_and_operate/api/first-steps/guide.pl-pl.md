@@ -233,7 +233,7 @@ Do wyświetlania i odwoływania kluczy możesz użyć [portalu API](/links/api) 
 >>
 > W Panelu klienta OVHcloud
 >>
->> Przejdź do menu `Tożsamość, bezpieczeństwo i operacje`{.action} a następnie `Klucze API`{.action}.
+>> Przejdź do strony [Klucze API](/links/control-panel/iam-api-keys).
 >>
 >> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>

@@ -37,7 +37,7 @@ Per maggiori spiegazioni, consulta le nostre guide "[Scopri tutto sui server DNS
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
 
 ---
@@ -66,7 +66,7 @@ Per accedere alla gestione di una zona DNS OVHcloud, clicca sulle schede qui sot
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il nome di dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -104,7 +104,7 @@ Per modificare in modalitÃ  testo una zona DNS di OVHcloud, clicca sulle schede 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il nome di dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -134,7 +134,7 @@ Per aggiungere un nuovo record DNS, clicca sulle schede qui sotto per visualizza
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il nome di dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -161,7 +161,7 @@ Per modificare un record DNS, clicca sulle schede qui sotto per visualizzare in 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il nome di dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -182,7 +182,7 @@ Per eliminare un record DNS, clicca sulle schede qui sotto per visualizzare in s
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il nome di dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -212,7 +212,7 @@ Per reinizializzare la zona DNS, clicca sulle schede qui sotto per visualizzare 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il nome di dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -260,7 +260,7 @@ Per ridurre il tempo di propagazione per le prossime modifiche della zona DNS, Ã
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il nome di dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

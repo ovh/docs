@@ -37,7 +37,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
 
 ---
@@ -50,7 +50,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -84,7 +84,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -135,7 +135,7 @@ Una volta che tutto è pronto per creare il record, clicca sulle schede qui sott
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -208,7 +208,7 @@ Verifica che l'indirizzo IP di destinazione sia stato aggiornato correttamente. 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

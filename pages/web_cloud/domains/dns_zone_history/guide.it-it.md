@@ -29,7 +29,7 @@ Da questo momento, la gestione dei DNS è semplificata grazie alla cronologia de
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
 
 ---
@@ -42,7 +42,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone) e seleziona il dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -110,7 +110,7 @@ Clicca su `Ripristinare`{.action} per confermare il ripristino o su `Annullare`{
 
 ### Confronta due zone DNS <a name="compare"></a>
 
-È possibile confrontare il contenuto di due zone DNS. Nella tabella che contiene la cronologia della zona DNS, identifica le due righe corrispondenti alle due zone DNS che vuoi confrontare (verifica la data a sinistra di ogni riga) e selezionale. Per confrontare queste due versioni di zona DNS, clicca in alto a sinistra su `Confrontare le versioni`{.action}.
+È possibile confrontare il contenuto di due zone DNS. Nella tabella che contiene la cronologia della zona DNS, identifica le due righe corrispondenti alle due zone DNS che vuoi confrontare (verifica la data a sinistra di ogni riga), poi selezionale. Per confrontare queste due versioni di zona DNS, clicca in alto a sinistra su `Confrontare le versioni`{.action}.
 
 ![Confronta due zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-two-dns-zone.png){.thumbnail}
 

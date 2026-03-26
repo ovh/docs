@@ -37,6 +37,17 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 Moreover, follow the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-an-application) documentation in order to have an example application running on your cluster.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 At this time you should have a running Kubernetes cluster with hello-world deployment and pod like below:
 
 ```console
@@ -302,9 +313,7 @@ In order to store your Popeye reports on an OVHcloud Object Storage, and general
 
 In order to do that you will create an OpenStack user.
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the Public Cloud section and select the Public Cloud project concerned.
-
-Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Users & Roles`{.action} in the left-hand menu and click on `+ Add user`{.action}.
+From your Public Cloud project, click on `Users & Roles`{.action} in the left-hand menu, then click on `+ Add user`{.action}.
 
 ![Create OpenStack user](images/create_openstack_user1.png){.thumbnail}
 

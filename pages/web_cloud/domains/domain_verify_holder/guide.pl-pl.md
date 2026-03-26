@@ -58,7 +58,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-domains), a następnie wybierz nazwę domeny, która jest dotyczy.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz nazwę domeny, która jest dotyczy.
 >>
 >> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -135,7 +135,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Operacje w Toku](/links/control-panel/web-ongoing-operations), a następnie znajdź odpowiednią nazwę domeny na wyświetlonej liście.
+>> Przejdź na stronę [Operacje w Toku](/links/control-panel/web-ongoing-operations), a następnie znajdź odpowiednią nazwę domeny na wyświetlonej liście.
 >>
 >> ![Trwające operacje](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>

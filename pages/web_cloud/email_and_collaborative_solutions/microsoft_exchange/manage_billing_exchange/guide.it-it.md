@@ -1,7 +1,7 @@
 ---
 title: 'Gestire la fatturazione di un account Exchange'
 excerpt: 'Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Obiettivo

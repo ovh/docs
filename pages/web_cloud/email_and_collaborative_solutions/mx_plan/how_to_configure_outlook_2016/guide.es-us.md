@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurar una dirección de correo electrónico en Outlook clásico para Windows"
 excerpt: "Cómo configurar una cuenta MX Plan en Outlook clásico para Windows"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -251,12 +251,6 @@ Por eso, le invitamos a consultar el capítulo correspondiente a la interfaz que
 >> ![Outlook](images/config-outlook-legacy-mxplan07.png){.thumbnail}
 >>
 >> La ventana se divide en dos partes, **Correo entrante** y **Correo saliente**. Haga clic en la parte que desee modificar.
->>
->> > [!primary]
->> >
->> > En nuestro ejemplo, el nombre del servidor utilizado es "pro**?**.mail.ovh.net". Deberá reemplazar el carácter "?" por el número correspondiente al servidor de su servicio Email Pro.
->> >
->> > Encuentre este número en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y luego `Email Pro`{.action}. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>

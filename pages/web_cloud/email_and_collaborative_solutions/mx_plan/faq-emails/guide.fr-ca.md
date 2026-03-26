@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mails OVHcloud
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails'
-updated: 2026-03-05
+updated: 2026-03-24
 ---
 
 <style>
@@ -244,7 +244,7 @@ Si vous avez souscrit à l'une de nos [offres e-mail OVHcloud](/links/web/emails
 
 Vous souhaitez changer d'[offre e-mail](/links/web/emails) pour bénéficier de plus d'espace et de fonctionnalités, mais vous souhaitez conserver le contenu de votre adresse existante ? Pour cela nous vous invitons à suivre le guide de migration correspondant à votre besoin :
 
-- [Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+- [Migrer une adresse e-mail MX Plan vers un compte Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrer des comptes e-mail via OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)..

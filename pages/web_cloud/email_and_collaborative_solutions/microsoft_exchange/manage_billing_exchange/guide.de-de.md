@@ -1,7 +1,7 @@
 ---
 title: 'Die Abrechnung für Ihre Exchange Accounts verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnung für OVHcloud Exchange im Kundencenter verwalten'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Ziel

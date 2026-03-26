@@ -25,6 +25,17 @@ Pulumi offers an intuitive command line interface (CLI), to provision, update or
 - A [Pulumi access token](https://app.pulumi.com/account/tokens)
 - Installing the [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Before you begin
 
 You should have installed the Pulumi CLI on your machine. Verify the Pulumi CLI is successfully installed in your machine with the `pulumi version` command.
@@ -349,8 +360,7 @@ Resources:
 Duration: 2m30s
 ```
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
-As you can see, your registry has been successfuly created:
+Go to the `Managed Private Registry`{.action} section. Your registry has been successfully created:
 
 ![Managed private registry](images/private-registry.png){.thumbnail}
 

@@ -45,7 +45,7 @@ To activate your free 100M hosting plan, click on the tabs below to view each of
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

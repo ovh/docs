@@ -29,7 +29,7 @@ O registo MX permite associar um nome de domínio ao servidor da sua plataforma 
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
 
 ---

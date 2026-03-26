@@ -1,7 +1,7 @@
 ---
 title: "Serwer dedykowany - Korzystanie z Backup Storage"
 excerpt: "Uzyskaj dostęp do przestrzeni Backup Storage na serwerze dedykowanym OVHcloud i zarządzaj nią przez NFS, CIFS lub FTP."
-updated: 2025-10-09
+updated: 2026-03-25
 ---
 
 ## Wprowadzenie
@@ -318,12 +318,12 @@ Zainstaluj klienta FileZilla na Twoim serwerze i skonfiguruj go, aby zalogować 
 
 #### NFS
 
-Upewnij się, że zezwalasz blokom IP na dostęp do przestrzeni dyskowej oraz używania protokołu NFS. W zależności od dystrybucji Linux, jaką posiadasz, być może powinieneś zainstalować klienta NFS i uruchomić usługę NFS/portmap.
+Backup storage jest kompatybilny wyłącznie z NFSv3. Upewnij się, że zezwalasz blokom IP na dostęp do przestrzeni dyskowej oraz używania protokołu NFS. W zależności od dystrybucji Linux, jaką posiadasz, być może powinieneś zainstalować klienta NFS i uruchomić usługę NFS/portmap.
 
 Po zainstalowaniu klienta NFS i uruchomieniu usługi portmap możesz zamontować zasób NFS jako zwykłą partycję, jak pokazano poniżej:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.

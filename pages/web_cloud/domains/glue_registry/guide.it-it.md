@@ -75,7 +75,7 @@ In generale, OVHcloud crea automaticamente gli **host objects** quando riguardan
 
 È possibile recuperare i server DNS attualmente utilizzati dal nome di dominio tramite lo strumento DNS online [Zonemaster](https://zonemaster.net/en).
 
-Accedi al link [https://zonemaster.net](https://zonemaster.net/en), inserisci il tuo nome di dominio senza i *www* (esempio: *domain.tld*) e seleziona il pulsante `Options`{.action} situato immediatamente sotto il modulo di inserimento del nome di dominio.
+Accedi al link [https://zonemaster.net](https://zonemaster.net/en), inserisci il tuo nome di dominio senza i *www* (esempio: *domain.tld*), poi seleziona il pulsante `Options`{.action} situato immediatamente sotto il modulo di inserimento del nome di dominio.
 
 Nelle opzioni disponibili, clicca direttamente sul pulsante `Fetch NS from parent zone`{.action}.
 
@@ -116,7 +116,7 @@ Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare
 > [!tabs]
 > **Passaggio1**
 >>
->> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il nome di dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

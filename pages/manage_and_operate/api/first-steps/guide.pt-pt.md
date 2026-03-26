@@ -233,7 +233,7 @@ Para listar e revogar as chaves, é possível utilizar o [portal API](/links/api
 >>
 > Através da Área de Cliente OVHcloud
 >>
->> Aceda ao menu `Identidade, Segurança & Operações`{.action} e, a seguir, `Chaves API`{.action}.
+>> Aceda à página [Chaves API](/links/control-panel/iam-api-keys).
 >>
 >> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>

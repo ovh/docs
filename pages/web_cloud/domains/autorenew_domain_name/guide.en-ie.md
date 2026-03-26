@@ -98,7 +98,7 @@ Click the tabs below to view each of the **2** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/billing-services). In the table, identify the domain name(s) for which you would like to change the renewal mode.
+>> Go to the [My offers and services](/links/control-panel/billing-services) page. In the table, identify the domain name(s) for which you would like to change the renewal mode.
 >>
 >> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Click the tabs below to view each of the **3** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/billing-services). In the table, identify the domain name you want to renew.
+>> Go to the [My offers and services](/links/control-panel/billing-services) page. In the table, identify the domain name you want to renew.
 >>
 >> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -153,7 +153,7 @@ To check the renewal status of your domain name, click the tabs below to view ea
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then select the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -170,7 +170,7 @@ Click the tabs below to view each of the **2** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/billing-services). In the table, identify the domain name you want to cancel.
+>> Go to the [My offers and services](/links/control-panel/billing-services) page. In the table, identify the domain name you want to cancel.
 >>
 >> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -193,7 +193,7 @@ Click the tabs below to view each of the **2** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/billing-services). In the table, identify the domain name for which you need to pay a renewal bill.
+>> Go to the [My offers and services](/links/control-panel/billing-services) page. In the table, identify the domain name for which you need to pay a renewal bill.
 >>
 >> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ To check the renewal status of your domain name, click the tabs below to view ea
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then select the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

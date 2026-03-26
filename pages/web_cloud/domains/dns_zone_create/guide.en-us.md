@@ -91,7 +91,7 @@ Click on the tabs below to view each of the **3** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click on [this link](/links/control-panel/web-dns-zone), then on the `Order`{.action} button.
+>> Go to the [DNS zones](/links/control-panel/web-dns-zone) page, then on the `Order`{.action} button.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -136,7 +136,7 @@ To find them, click on the tabs below to view each of the **2** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click on [this link](/links/control-panel/web-dns-zone), then select the concerned domain name.
+>> Go to the [DNS zones](/links/control-panel/web-dns-zone) page, then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

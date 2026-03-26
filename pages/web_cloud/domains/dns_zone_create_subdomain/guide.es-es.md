@@ -80,7 +80,7 @@ Este subdominio dispondrá entonces de su propia zona para configurar sus regist
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Enlace directo:** [Zonas DNS](/links/control-panel/web-dns-zone)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Seleccione su nombre de dominio
 
 ---
@@ -95,7 +95,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Pulse en [este enlace](/links/control-panel/web-dns-zone), y luego en el botón `Contratar`{.action}.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone), y luego en el botón `Contratar`{.action}.
 >>
 >> ![Nombres de dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -141,7 +141,7 @@ Para encontrarlos, haga clic en las fichas siguientes para ver cada una de las *
 > [!tabs]
 > **Etapa 1**
 >>
->> Pulse en [este enlace](/links/control-panel/web-dns-zone), y luego seleccione el subdominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y elija el subdominio correspondiente.
 >>
 >> ![Zonas DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -169,7 +169,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Pulse en [este enlace](/links/control-panel/web-dns-zone), y luego seleccione el subdominio correspondiente.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y elija el subdominio correspondiente.
 >>
 >> ![Zonas DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

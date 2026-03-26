@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar Backup Storage en un servidor dedicado'
 excerpt: 'Cómo activar y acceder al espacio de almacenamiento adicional'
-updated: 2025-10-09
+updated: 2026-03-25
 ---
 
 ## Objetivo
@@ -315,12 +315,12 @@ Una vez que haya instalado FileZilla en el servidor, podrá configurarlo para co
 
 #### NFS
 
-En primer lugar, asegúrese de haber autorizado a sus bloques de IP a acceder al espacio de backup y a utilizar el protocolo NFS. Según el sistema operativo Linux, es posible que necesite instalar el cliente NFS e iniciar el servicio NFS/portmap.
+El backup storage solo es compatible con NFSv3. En primer lugar, asegúrese de haber autorizado a sus bloques de IP a acceder al espacio de backup y a utilizar el protocolo NFS. Según el sistema operativo Linux, es posible que necesite instalar el cliente NFS e iniciar el servicio NFS/portmap.
 
 Una vez que haya instalado el cliente NFS y que haya iniciado el servicio portmap, puede montar NFS como una partición normal con el siguiente comando:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
@@ -360,7 +360,6 @@ You can't access this shared folder because your organization's security policie
 > Para corregir este error, es necesario modificar el registro de Windows. Para ello, abra el editor del registro (regedit) y acceda a la clave `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
 > Asigne el valor "1" al parámetro `AllowInsecureGuestAuth`.<br>
 > Encuentre más información sobre este tema en las [páginas de asistencia de Microsoft](https://learn.microsoft.com/es-mx/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
-
 
 ##### Linux
 

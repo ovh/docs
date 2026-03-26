@@ -1,7 +1,7 @@
 ---
 title: How to use the backup storage on a dedicated server
 excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2025-10-09
+updated: 2026-03-25
 ---
 
 ## Objective
@@ -52,7 +52,7 @@ Your backup storage will be configured within a few minutes. A confirmation emai
 
 ### Managing access control
 
-Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorized by default but have to be selected when adding IP addresses.
+Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorised by default but have to be selected when adding IP addresses.
 
 #### Adding a backup access
 
@@ -310,12 +310,12 @@ After installing FileZilla on your server, you can configure it to connect to yo
 
 #### NFS
 
-First make sure that you have authorized your IP blocks to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
+The backup storage is only compatible with NFSv3. First, ensure that you have authorised your IP ranges to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
 
 Once you have the NFS client installed and portmap running, you can mount the NFS share like a normal partition as shown below:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -353,7 +353,7 @@ You can't access this shared folder because your organization's security policie
 >
 > To correct this error, you need to modify the Windows registry. To do this, open the Registry Editor (regedit), then navigate to the key `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
 > Then set the value of the parameter `AllowInsecureGuestAuth` to "1".<br>
-> Find more information on this topic on the [Microsoft support pages](https://learn.microsoft.com/en-sg/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
+> Find more information on this topic on the [Microsoft support pages](https://learn.microsoft.com/en-gb/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 

@@ -98,7 +98,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den oder die Domainnamen, deren Verlängerungsmodus Sie ändern möchten.
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den oder die Domainnamen, deren Verlängerungsmodus Sie ändern möchten.
 >>
 >> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, den Sie verlängern möchten.
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, den Sie verlängern möchten.
 >>
 >> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -153,7 +153,7 @@ Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Ta
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den betreffenden Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den betreffenden Domainnamen aus.
 >>
 >> ![Domainnamen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -170,7 +170,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, den Sie kündigen möchten.
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, den Sie kündigen möchten.
 >>
 >> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -193,7 +193,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, für den Sie eine Verlängerungsrechnung bezahlen müssen.
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, für den Sie eine Verlängerungsrechnung bezahlen müssen.
 >>
 >> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Ta
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den betreffenden Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den betreffenden Domainnamen aus.
 >>
 >> ![Domainnamen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

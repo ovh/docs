@@ -1,7 +1,7 @@
 ---
 title: 'Gerir a faturação das contas Exchange'
 excerpt: 'Saiba como gerir a faturação do serviço Exchange.'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Objetivo

@@ -62,7 +62,7 @@ Per diversi motivi, potresti aver bisogno di creare una zona DNS per il tuo domi
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
 
 ---
@@ -91,7 +91,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone), quindi sul pulsante `Ordina`{.action}.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), quindi sul pulsante `Ordina`{.action}.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -138,7 +138,7 @@ Per trovarli, clicca sulle schede qui sotto per visualizzare in sequenza ciascun
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-dns-zone), quindi seleziona il dominio interessato.
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi scegli il dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

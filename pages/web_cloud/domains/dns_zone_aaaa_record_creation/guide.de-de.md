@@ -38,7 +38,7 @@ Sie möchten Ihre Website über einen bestimmten Domainnamen erreichbar machen? 
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
 - **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---
@@ -57,7 +57,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anz
 > [!tabs]
 > **Schritt 1**
 >>
->> Gehen Sie auf die Seite [DNS zones](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -96,7 +96,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anz
 > [!tabs]
 > **Schritt 1**
 >>
->> Gehen Sie auf die Seite [DNS zones](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

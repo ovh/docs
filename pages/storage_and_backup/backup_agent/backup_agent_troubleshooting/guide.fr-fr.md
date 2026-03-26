@@ -57,6 +57,17 @@ Retrouvez sur cette page une liste de potentielles problématiques que vous pouv
 
 - Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide « [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) » pour plus d'informations.
 
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
+
 ## Liste des possibles problématiques
 
 /// details | Mon Backup Agent n'arrive pas à se connecter à votre serveur.
@@ -167,7 +178,7 @@ Le changement de mot de passe s’effectue via le lien « Mot de passe oublié ?
 
 /// details | J'ai réinstallé mon serveur, comment réinstaller Backup Agent ?
 
-Vous devez télécharger l'agent à partir de votre [espace client OVHcloud](/links/manager) et l'installer sur votre nouveau système d'exploitation.
+Vous devez télécharger l'agent depuis la section [Backup Agent](/links/control-panel/baremetal-backup-agent) de votre espace client OVHcloud et l'installer sur votre nouveau système d'exploitation.
 
 ///
 

@@ -31,7 +31,7 @@ Il est possible de communiquer avec le KMS en utilisant :
 
 ### Utilisation de l'API KMS via l'interface utilisateur Swagger
 
-Il est possible d'accéder au swagger correspondant à votre KMS en cliquant sur le lien présent dans [l'espace client](/links/manager) au niveau du dashboard de votre KMS.
+Il est possible d'accéder au swagger correspondant à votre KMS en cliquant sur le lien présent dans le dashboard de votre domaine [Key Management Service](/links/control-panel/security-kms).
 
 ![swagger](images/swagger.png){.thumbnail}
 

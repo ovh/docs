@@ -116,7 +116,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

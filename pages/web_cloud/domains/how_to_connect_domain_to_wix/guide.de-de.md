@@ -63,7 +63,7 @@ Klicken Sie auf die nachstehenden Tabs, um die **5** Schritte nacheinander anzuz
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-dns-zone) und wählen Sie den betreffenden Domainnamen aus.
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
 >>
 >> ![DNS-Zone](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
