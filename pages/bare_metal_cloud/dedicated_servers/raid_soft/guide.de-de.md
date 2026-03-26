@@ -1,5 +1,5 @@
 ---
-title: Dedicated Server - Software-RAID verwalten (BIOS)
+title: Software-RAID (BIOS-Boot-Modus) auf Dedicated Servern verwalten
 excerpt: Verwalten und erstellen Sie Software-RAID-Arrays nach einem Festplattenaustausch auf einem Dedicated Server im BIOS-Boot-Modus neu.
 updated: 2026-03-02
 ---

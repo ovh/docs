@@ -1,6 +1,6 @@
 ---
-title: BYOI vs BYOLinux - Comparaison pour serveurs dédiés
-excerpt: Comparez les services BYOI et BYOLinux pour choisir la bonne méthode de déploiement d'images personnalisées sur votre serveur dédié
+title: Bring Your Own Image (BYOI) vs Bring Your Own Linux (BYOLinux) - Comparaison pour serveurs dédiés
+excerpt: Comparez les services Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux) pour choisir la bonne méthode de déploiement d'images personnalisées sur votre serveur dédié
 updated: 2026-02-03
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Gérer le RAID matériel sur un serveur dédié
-excerpt: Vérifiez l'état de votre matrice RAID matériel et surveillez la santé des disques durs sur votre serveur dédié OVHcloud
+excerpt: Vérifiez l'état de votre contrôleur RAID matériel et surveillez la santé des disques durs sur votre serveur dédié OVHcloud
 updated: 2025-03-19
 ---
 

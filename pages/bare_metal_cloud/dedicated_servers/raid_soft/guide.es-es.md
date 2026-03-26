@@ -1,5 +1,5 @@
 ---
-title: Gestionar el RAID por software (BIOS) en un servidor dedicado
+title: Gestionar el RAID por software (modo de arranque BIOS) en un servidor dedicado
 excerpt: "Gestione y reconstruya las matrices RAID por software tras un reemplazo de disco en un servidor dedicado en modo de arranque BIOS"
 updated: 2026-03-02
 ---

@@ -1,6 +1,6 @@
 ---
-title: 'Creating a Windows partition on a server with hardware RAID'
-excerpt: 'This guide will explain the steps needed to create a Windows partition on a server with hardware RAID.'
+title: 'Creating a Windows Partition on a Dedicated Server with Hardware RAID'
+excerpt: 'Create a Windows partition on an OVHcloud dedicated server equipped with a hardware RAID controller.'
 updated: 2018-07-24
 ---
 

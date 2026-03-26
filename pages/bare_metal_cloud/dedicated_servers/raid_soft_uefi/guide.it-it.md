@@ -1,5 +1,5 @@
 ---
-title: "Gestire il RAID software (UEFI) su un server dedicato"
+title: "Gestire il RAID software (modalità di avvio UEFI) su un server dedicato"
 excerpt: Gestisci e ricostruisci le matrici RAID software dopo la sostituzione di un disco su un server dedicato in modalità boot UEFI
 updated: 2026-01-26
 ---

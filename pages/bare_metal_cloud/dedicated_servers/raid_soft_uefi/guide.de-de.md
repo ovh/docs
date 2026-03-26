@@ -1,5 +1,5 @@
 ---
-title: Dedicated Server - Software-RAID verwalten (UEFI)
+title: Software-RAID (UEFI-Boot-Modus) auf Dedicated Servern verwalten
 excerpt: Verwalten und erstellen Sie Software-RAID-Arrays nach einem Festplattenaustausch auf einem Dedicated Server im UEFI-Boot-Modus neu.
 updated: 2026-01-26
 ---

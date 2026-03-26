@@ -1,6 +1,6 @@
 ---
-title: "Konfiguracja RAID programowego na serwerze dedykowanym"
-excerpt: "Skonfiguruj RAID programowy (mdadm) na serwerze dedykowanym OVHcloud z systemem Linux."
+title: "Zarządzanie programowym RAID (tryb rozruchu BIOS) na serwerach dedykowanych"
+excerpt: "Zarządzaj i odbudowuj tablice RAID programowego po wymianie dysku na serwerze dedykowanym działającym w trybie rozruchu BIOS."
 updated: 2026-03-02
 ---
 
