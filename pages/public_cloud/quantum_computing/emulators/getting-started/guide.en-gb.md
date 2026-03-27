@@ -30,8 +30,18 @@ Each method offers its distinct advantages, depending on your expertise and pref
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A Public Cloud user with the **Administrator** or **Quantum Operator & Objectstore Operator** roles.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -39,9 +49,8 @@ Each method offers its distinct advantages, depending on your expertise and pref
 
 If you're using the CLI, API, or SDK, you will need to complete an authorization process before creating a Quantum Emulators Notebook. To do so, follow these steps:
 
-1. Log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Public Cloud`{.action} section.
-2. Select the Public Cloud project you want to use and click the `Quantum Emulators`{.action} category.
-3. Click the `Create a Notebook`{.action} button. The authorization process will take place silently in the background.
+1. Click the `Quantum Emulators`{.action} category.
+2. Click the `Create a Notebook`{.action} button. The authorization process will take place silently in the background.
 
 ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
 
@@ -52,7 +61,7 @@ To create a Quantum Notebook, follow these steps:
 > [!tabs]
 > **Using the Control Panel (UI)**
 >> 
->> Navigate to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager), click the `Quantum Emulators`{.action} category.
+>> Click the `Quantum Emulators`{.action} category.
 >> Click the `Create a Notebook`{.action} button and follow the prompts to specify the configuration of your Quantum Notebook.
 >>
 >> ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
