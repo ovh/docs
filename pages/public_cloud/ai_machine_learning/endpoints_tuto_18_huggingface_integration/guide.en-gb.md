@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Integration with Hugging Face Inference Providers
 excerpt: Find out how to use OVHcloud AI Endpoints through Hugging Face Inference Providers
-updated: 2026-02-16
+updated: 2026-03-27
 ---
 
 > [!primary]
