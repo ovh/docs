@@ -1,7 +1,7 @@
 ---
 title: "FAQ sur la solution Fax OVHcloud"
 excerpt: "Retrouvez les questions les plus fréquemment posées sur le service Fax OVHcloud"
-updated: 2026-03-25
+updated: 2026-03-27
 ---
 
 <style>
@@ -53,7 +53,7 @@ Vous pouvez envoyer des fax par plusieurs canaux. Le guide « [Envoyer des fax p
 
 OVHcloud propose deux méthodes pour envoyer une campagne de fax :
 
-- **Via l'espace client :** [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne Fax, puis cliquez sur `Envoi de campagne`{.action}. Chargez votre document (PDF recommandé) et la liste de destinataires (fichier CSV avec une colonne contenant les numéros de fax au format international). Vous pouvez planifier l'heure d'envoi et suivre le taux de délivrance en temps réel.
+- **Via l'espace client :** [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne Fax, puis cliquez sur l'onglet `Fax`{.action} puis sur `Campagnes de fax`{.action}. Chargez votre document (PDF recommandé) et la liste de destinataires (fichier txt contenant les numéros de fax au format international). Vous pouvez planifier l'heure d'envoi et suivre le taux de délivrance en temps réel.
 - **Par e-mail :** envoyez votre document en pièce jointe à l'adresse `numéro1,numéro2,numéro3@fax.ovh.net` pour une liste courte.
 
 La méthode via l'espace client est recommandée pour les campagnes volumineuses car elle offre un meilleur suivi et un rapport de délivrance détaillé. Pour plus de détails, consultez le guide « [Envoyer une campagne de fax depuis l'espace client OVHcloud](/pages/web_cloud/phone_and_fax/fax/envoyer_une_campagne_de_fax_via_le_manager) ».
@@ -101,7 +101,7 @@ Ces paramètres s'ajustent dans le menu de configuration de votre télécopieur.
 
 /// details | Comment activer le répondeur Fax sur mon offre EcoFax Pro ou Plug & Fax ?
 
-Le répondeur Fax permet de recevoir des fax entrants sous forme de pièces jointes e-mail, même lorsque votre ligne Fax n'est pas connectée à un télécopieur physique. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne Fax, puis accédez à `Configuration`{.action} > `Répondeur Fax`{.action}. Activez la fonctionnalité et renseignez l'adresse e-mail sur laquelle vous souhaitez recevoir les fax entrants en pièce jointe (format PDF). Vous pouvez également configurer une notification par e-mail pour chaque fax reçu, incluant les informations de l'expéditeur et la date/heure de réception.
+Le répondeur Fax permet de recevoir des fax entrants sous forme de pièces jointes e-mail, même lorsque votre ligne Fax n'est pas connectée à un télécopieur physique. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne Fax, puis cliquez sur l'onglet `Répondeur`{.action}. Activez la fonctionnalité et renseignez l'adresse e-mail sur laquelle vous souhaitez recevoir les fax entrants en pièce jointe (format PDF). Vous pouvez également configurer une notification par e-mail pour chaque fax reçu, incluant les informations de l'expéditeur et la date/heure de réception.
 
 Pour plus de détails, consultez le guide « [Activation du répondeur Fax EcoFax Pro / Plug & Fax](/pages/web_cloud/phone_and_fax/fax/activer_repondeur_fax) ».
 
@@ -155,7 +155,7 @@ Le RIO sera envoyé par e-mail au contact détenteur du service.
 
 /// details | Comment résilier une ligne Fax ?
 
-[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud. Sélectionnez le groupe de facturation contenant la ligne Fax à résilier, puis cliquez sur le service dans l'onglet `Services`{.action}. Accédez à `Gestion du service`{.action} et cliquez sur `Résilier le service`{.action}. La résiliation prend effet à la fin de la période de facturation en cours. Un service résilié ne peut pas être réactivé. Si un boîtier Plug & Fax est associé au service, un bon de retour (RMA) vous sera envoyé pour le renvoyer et récupérer votre dépôt de garantie.
+[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud. Sélectionnez le groupe de facturation contenant la ligne Fax à résilier, puis cliquez sur le service dans l'onglet `Services`{.action}. Depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation du fax`{.action}. La résiliation prend effet à la fin de la période de facturation en cours. Un service résilié ne peut pas être réactivé. Si un boîtier Plug & Fax est associé au service, un bon de retour (RMA) vous sera envoyé pour le renvoyer et récupérer votre dépôt de garantie.
 
 Pour plus de détails, consultez le guide « [Comment résilier un service VoIP ou une ligne Fax](/pages/web_cloud/phone_and_fax/voip/resilier-services-voip) ».
 
