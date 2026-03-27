@@ -4,7 +4,7 @@ excerpt: Découvrez les informations visibles et fournies lorsque la protection 
 updated: 2026-XX-XX
 ---
 
-**Découvrez les informations visibles et fournies lorsque la protection Anti-DDoS interne d'OVHcloud est déclenchée pour votre Serveur dédié ou votre VPS.**
+**Découvrez ce qui se passe lorsque la protection Anti-DDoS d'OVHcloud s'active sur votre Serveur dédié ou votre VPS.**
 
 ## Prérequis
 
@@ -17,13 +17,12 @@ updated: 2026-XX-XX
 
 Lorsque la protection Anti-DDoS est déclenchée sur votre Serveur dédié, un message s'affiche dans votre [espace client OVHcloud](/links/manager) : « *Votre serveur a été compromis. Veuillez contacter notre équipe d'assistance pour obtenir des instructions sur la marche à suivre.* »
 
-Votre serveur peut être démarré en mode rescue, ce qui permettra un redémarrage ou la réinstallation du système d'exploitation. Voici les options de démarrage de votre serveur :
+Selon la criticité de la protection Anti-Hack déclenchée par OVHcloud, les actions suivantes seront autorisées/requises afin de rétablir le service complet sur le serveur.
 
-| Nom | Fonction | Statut |
+| Statut | Actions attendues |
 | ------ | --------- | ----------- |
-| Rescue | Permettra un redémarrage ou la réinstallation du système d'exploitation. | Compromis |
-| Rescue FTP | Permettra un redémarrage ou la réinstallation du système d'exploitation. | Compromis |
-| rescue12-ftp - FTP rescue system for anti-hack | Ne permettra **pas** un redémarrage ou la réinstallation du système d'exploitation. | Compromis et bloqué |
+| Compromis | Redémarrer le serveur ou demander à OVHcloud de réinstaller le serveur |
+| CompromisBloqué | Collecter les données via FTP sur le serveur démarré en système rescue FTP |
 
 ![informations antihack SD](images/hacked-service.png){.thumbnail}
 
@@ -61,6 +60,7 @@ Lorsque la protection Anti-DDoS est déclenchée sur votre VPS, celui-ci est pla
 
 OVHcloud ouvrira également un ticket de support en votre nom contenant les informations suivantes :
 
+>
 > Cher client,
 >
 > Une activité anormale a été détectée sur votre VPS vps-XXXXXXXX.vps.ovh.net.

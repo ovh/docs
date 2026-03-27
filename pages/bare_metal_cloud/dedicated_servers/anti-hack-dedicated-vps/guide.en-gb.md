@@ -1,5 +1,5 @@
 ---
-title: Anti-hack information - Dedicated Server and VPS
+title: Anti-Hack information - Dedicated Server and VPS
 excerpt: Find out what information will be visible and provided when OVHcloud's internal Anti-DDoS protection is triggered
 updated: 2026-XX-XX
 ---
