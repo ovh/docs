@@ -96,7 +96,7 @@ You can also use your OVHcloud AI Endpoints API key directly for billing through
 
 #### Python - using OpenAI SDK
 
-Here's a simple usage example using the Hugging Face Hub SDK:
+Here's a simple usage example using the OpenAI SDK:
 
 ```python
 import os
@@ -134,7 +134,10 @@ Alternatively, use the native Hugging Face Hub client:
 import os
 from huggingface_hub import InferenceClient
 
-client = InferenceClient()
+client = InferenceClient(
+  provider="ovhcloud",
+  api_key=os.environ["HF_TOKEN"]
+)
 
 completion = client.chat.completions.create(
     model="openai/gpt-oss-120b:ovhcloud",
