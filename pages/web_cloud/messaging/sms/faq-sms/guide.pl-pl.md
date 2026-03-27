@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Wprowadzenie
 
-**Znajdź tutaj najczęściej zadawane pytania dotyczące usługi OVHcloud SMS.**
+Znajdź tutaj najczęściej zadawane pytania dotyczące usługi OVHcloud SMS.
 
 ## FAQ
 
@@ -297,7 +297,7 @@ Usługa ta jest dostępna wyłącznie dla kont OVHcloud we Francji (z wyłączen
 
 /// details | Jak zarządzać żądaniami rezygnacji (STOP)?
 
-Gdy odbiorca odpowie `STOP` na jedną z Twoich wiadomości SMS, jego numer zostaje automatycznie dodany do czarnej listy przez OVHcloud. Przyszłe wiadomości SMS wysyłane na ten numer z Twojego konta będą blokowane. Czarną listę możesz przeglądać i zarządzać nią w [Panelu klienta OVHcloud](/links/manager), w zakładce `Opcje`{.action} > `Zarządzaj adresatami czarnej listy`{.action}. Możesz:
+Gdy odbiorca odpowie "STOP" na jedną z Twoich wiadomości SMS, jego numer zostaje automatycznie dodany do czarnej listy przez OVHcloud. Przyszłe wiadomości SMS wysyłane na ten numer z Twojego konta będą blokowane. Czarną listę możesz przeglądać i zarządzać nią w [Panelu klienta OVHcloud](/links/manager), w zakładce `Opcje`{.action} > `Zarządzaj adresatami czarnej listy`{.action}. Możesz:
 
 - Wyświetlić numery, które wysłały STOP.
 - Sprawdzić, czy dany numer jest na czarnej liście przed wysłaniem.
@@ -439,7 +439,7 @@ Tak, OVHcloud obsługuje personalizację SMS-ów ze zmiennymi dynamicznymi. Z po
 Wysyłanie marketingowych SMS-ów we Francji podlega przepisom RODO i francuskiemu Kodeksowi pocztowemu i łączności elektronicznej. Główne obowiązki to:
 
 - **Uprzednia zgoda (opt-in):** odbiorca musi wyraźnie wyrazić zgodę na otrzymywanie komercyjnych SMS-ów.
-- **Prawo do rezygnacji (opt-out):** każdy marketingowy SMS musi zawierać informację umożliwiającą odbiorcy rezygnację (np. `STOP na 36xxx` lub `Odpowiedz STOP`).
+- **Prawo do rezygnacji (opt-out):** każdy marketingowy SMS musi zawierać informację umożliwiającą odbiorcy rezygnację (np. "STOP na 36xxx" lub "Odpowiedz STOP").
 - **Godziny wysyłki:** komercyjne SMS-y nie mogą być wysyłane między **20:00 a 8:00** w dni powszednie ani w **niedziele i święta**.
 - **Identyfikacja nadawcy:** tożsamość reklamodawcy musi być rozpoznawalna.
 - **Rejestr zgód:** musisz być w stanie udowodnić zgodę każdego odbiorcy w przypadku kontroli CNIL.

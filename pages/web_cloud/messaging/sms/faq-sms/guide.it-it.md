@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Obiettivo
 
-**Trova qui le domande più frequenti sul servizio SMS OVHcloud.**
+Trova qui le domande più frequenti sul servizio SMS OVHcloud.
 
 ## FAQ
 

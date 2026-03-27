@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-**Encuentre aquí las preguntas más frecuentes sobre el servicio SMS de OVHcloud.**
+Encuentre aquí las preguntas más frecuentes sobre el servicio SMS de OVHcloud.
 
 ## FAQ
 
@@ -97,7 +97,7 @@ La función http2sms permite enviar un SMS mediante una simple llamada HTTP GET 
 
 `https://www.ovh.com/cgi-bin/sms/http2sms.cgi?account=sms-xx12345-1&login=user&password=password&from=sender&to=+33612345678&message=Your+message`
 
-Los parámetros obligatorios son: `account` (nombre de la cuenta SMS), `login` y `password` (credenciales del usuario API), `from` (remitente), `to` (destinatario en formato internacional), `message` (contenido del SMS). Para securizar el acceso, configure restricciones por IP en el usuario API utilizado. Se recomienda el método POST con HTTPS.
+Los parámetros obligatorios son: `account` (nombre de la cuenta SMS), `login` y `password` (credenciales del usuario API), `from` (remitente), `to` (destinatario en formato internacional), `message` (contenido del SMS). Para proteger el acceso, configure restricciones por IP en el usuario API utilizado. Se recomienda el método POST con HTTPS.
 
 Para más información, consulte la guía "[Enviar SMS desde una URL - http2sms](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms)".
 
@@ -318,7 +318,7 @@ Los usuarios API SMS permiten delegar el envío de SMS a través de la API o la 
 
 - Una **cuota de créditos** deducida del saldo global de la cuenta.
 - Una **alerta de umbral** que envía una notificación cuando el saldo del usuario cae por debajo de un umbral definido.
-- **Restricciones por IP** (hasta 5 IP) para securizar el acceso a la función http2sms.
+- **Restricciones por IP** (hasta 5 IP) para proteger el acceso a la función http2sms.
 - Una **URL de callback** para recibir los acuses de recibo (DLR) en un endpoint personalizado.
 
 Para más información, consulte la guía "[Todo sobre los usuarios SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)".

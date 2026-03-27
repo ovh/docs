@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-**Retrouvez ici les questions les plus fréquemment posées sur le service SMS OVHcloud.**
+Retrouvez ici les questions les plus fréquemment posées sur le service SMS OVHcloud.
 
 ## FAQ
 
@@ -38,7 +38,7 @@ Le service SMS OVHcloud fonctionne sur un système de crédits prépayés. Un cr
 
 - **La destination :** un SMS vers la France métropolitaine consomme 1 crédit. Les destinations internationales consomment plus de crédits (consultez la [grille tarifaire OVHcloud](/links/telecom/sms-prices)).
 - **La longueur du message :** un SMS dépassant 160 caractères est automatiquement découpé en plusieurs SMS concaténés. Un message de 300 caractères consomme 2 crédits.
-- **L'encodage :** si votre message contient des caractères spéciaux ou des accents non supportés par le GSM 7-bit, l'encodage Unicode (UCS-2) est utilisé, limitant chaque SMS à 70 caractères.
+- **L'encodage :** si votre message contient des caractères spéciaux ou des accents non pris en charge par le GSM 7-bit, l'encodage Unicode (UCS-2) est utilisé, limitant chaque SMS à 70 caractères.
 
 Le solde de crédits est consultable en temps réel depuis l'espace client OVHcloud ou via l'API.
 
@@ -105,7 +105,7 @@ Pour plus de détails, consultez le guide « [Envoyer des SMS depuis une URL - 
 
 /// details | Comment envoyer des SMS depuis une adresse e-mail ?
 
-OVHcloud permet l'envoi de SMS depuis votre adresse e-mail, peu importe l'expéditeur. Envoyez un e-mail à l'adresse `numéro_destinataire@email2sms.ovh.net` (ex : `0033612345678@email2sms.ovh.net`). Le corps de l'e-mail constitue le contenu du SMS. L'objet de l'e-mail doit contenir vos identifiants au format : `compte:login:password`. Cette méthode est particulièrement utile pour des alertes automatisées depuis des systèmes qui ne supportent que l'envoi d'e-mails (serveurs de monitoring, applications métier).
+OVHcloud permet l'envoi de SMS depuis votre adresse e-mail, peu importe l'expéditeur. Envoyez un e-mail à l'adresse `numéro_destinataire@email2sms.ovh.net` (ex : `0033612345678@email2sms.ovh.net`). Le corps de l'e-mail constitue le contenu du SMS. L'objet de l'e-mail doit contenir vos identifiants au format : `compte:login:password`. Cette méthode est particulièrement utile pour des alertes automatisées depuis des systèmes qui ne prennent en charge que l'envoi d'e-mails (serveurs de monitoring, applications métier).
 
 Pour plus de détails, consultez le guide « [Envoyer des SMS depuis une adresse e-mail](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_adresse_email) ».
 
@@ -118,7 +118,7 @@ Pour envoyer des SMS en masse via l'API OVHcloud de manière optimale :
 - **Utilisez l'envoi groupé :** l'endpoint `POST /sms/{serviceName}/jobs` accepte un tableau de destinataires. Envoyez vos SMS par lots (ex : 500 destinataires par appel API) plutôt qu'un appel API par SMS.
 - **Gérez les erreurs et les retry :** implémentez une logique de retry avec backoff exponentiel pour les erreurs temporaires (HTTP 429 Too Many Requests, HTTP 500).
 - **Utilisez les callbacks DLR :** configurez une URL de callback sur votre utilisateur API plutôt que de requêter l'API pour chaque statut.
-- **Planifiez vos envois :** l'API supporte l'envoi différé (`differedPeriod`).
+- **Planifiez vos envois :** l'API prend en charge l'envoi différé (`differedPeriod`).
 - **Pour les très gros volumes :** privilégiez le protocole SMPP.
 
 Surveillez votre consommation de crédits pendant les envois en masse et assurez-vous que la recharge automatique est activée.
@@ -185,10 +185,10 @@ Si votre message utilise l'encodage **Unicode (UCS-2)** (nécessaire pour les em
 
 /// details | Quels caractères spéciaux font basculer un SMS en encodage Unicode ?
 
-L'encodage GSM 7-bit (standard) supporte un jeu de caractères limité. Les caractères suivants provoquent un basculement vers l'encodage Unicode (UCS-2), réduisant la capacité du SMS de 160 à 70 caractères :
+L'encodage GSM 7-bit (standard) prend en charge un jeu de caractères limité. Les caractères suivants provoquent un basculement vers l'encodage Unicode (UCS-2), réduisant la capacité du SMS de 160 à 70 caractères :
 
 - Les **emojis** (tous sans exception).
-- Les caractères **accentués non GSM** : certains accents sont supportés (é, è, ê, ù, à, etc.) mais d'autres non (ő, ű, ā, etc.).
+- Les caractères **accentués non GSM** : certains accents sont pris en charge (é, è, ê, ù, à, etc.) mais d'autres non (ő, ű, ā, etc.).
 - Les caractères des alphabets **non latins** : cyrillique, arabe, chinois, japonais, coréen, etc.
 - Certains **symboles typographiques** : guillemets typographiques « », tiret cadratin —, etc.
 
@@ -400,10 +400,10 @@ Le service SMPP OVHcloud respecte la spécification SMPP v3.4. Les principales c
 
 - **Mode de connexion :** Transceiver (envoi et réception sur la même session) ou Transmitter/Receiver séparés.
 - **Port de connexion :** communiqué lors de l'activation du service SMPP.
-- **Chiffrement :** TLS supporté et recommandé.
+- **Chiffrement :** TLS pris en charge et recommandé.
 - **Enquire Link :** intervalle recommandé de 30 secondes pour maintenir la session active.
 - **Fenêtre d'envoi (window size) :** paramétrable, généralement entre 1 et 10 selon le débit souhaité.
-- **Encodage supporté :** GSM 7-bit (data_coding=0) et UCS-2 (data_coding=8).
+- **Encodage pris en charge :** GSM 7-bit (data_coding=0) et UCS-2 (data_coding=8).
 - **Longueur maximale :** 160 caractères en GSM 7-bit, 70 en UCS-2, avec support de la concaténation via UDH.
 - **DLR :** accusés de réception transmis en mode push sur la même session SMPP.
 
@@ -417,10 +417,10 @@ Pour plus de détails, consultez le guide « [Spécifications techniques du SMP
 
 L'intégration SMS OVHcloud peut se faire de plusieurs manières :
 
-- **http2sms (le plus simple) :** un simple appel HTTP GET/POST déclenche l'envoi d'un SMS. Idéal pour les scripts basiques, les automates industriels ou les logiciels métier ne supportant que les appels HTTP.
+- **http2sms (le plus simple) :** un simple appel HTTP GET/POST déclenche l'envoi d'un SMS. Idéal pour les scripts basiques, les automates industriels ou les logiciels métier ne prenant en charge que les appels HTTP.
 - **API REST OVHcloud :** intégration complète avec authentification sécurisée (OAuth), gestion des contacts, historique, statistiques. Des SDK sont disponibles en PHP, Python, Node.js, Java et C#.
 - **SMPP :** connexion persistante à haut débit pour les plateformes de messaging.
-- **E-mail2SMS :** envoi par e-mail, utile pour les systèmes qui ne supportent que l'envoi d'e-mails (alertes de monitoring, ERP).
+- **E-mail2SMS :** envoi par e-mail, utile pour les systèmes qui ne prennent en charge que l'envoi d'e-mails (alertes de monitoring, ERP).
 
 Pour les CRM courants (Salesforce, HubSpot, etc.), des connecteurs tiers utilisant l'API OVHcloud sont disponibles sur les marketplaces respectifs.
 
@@ -441,7 +441,7 @@ Si vous prévoyez des campagnes de très grande envergure (plus de 100 000 SMS),
 
 /// details | Puis-je envoyer des SMS contenant des variables personnalisées ?
 
-Oui, OVHcloud supporte la personnalisation des SMS avec des variables dynamiques. Depuis l'espace client, lorsque vous importez une liste de destinataires au format CSV, vous pouvez inclure des colonnes supplémentaires (ex : `prenom`, `nom`, `rdv_date`). Dans le corps de votre SMS, utilisez les variables sous la forme `{prenom}`, `{nom}`, `{rdv_date}`, etc. Chaque SMS sera automatiquement personnalisé avec les données du contact correspondant. Via l'API, vous pouvez utiliser le paramètre `message` avec des placeholders et fournir les données de personnalisation dans le payload d'envoi.
+Oui, OVHcloud prend en charge la personnalisation des SMS avec des variables dynamiques. Depuis l'espace client, lorsque vous importez une liste de destinataires au format CSV, vous pouvez inclure des colonnes supplémentaires (ex : `prenom`, `nom`, `rdv_date`). Dans le corps de votre SMS, utilisez les variables sous la forme `{prenom}`, `{nom}`, `{rdv_date}`, etc. Chaque SMS sera automatiquement personnalisé avec les données du contact correspondant. Via l'API, vous pouvez utiliser le paramètre `message` avec des placeholders et fournir les données de personnalisation dans le payload d'envoi.
 
 ///
 
@@ -516,7 +516,7 @@ Pour plus de détails, consultez le guide « [Tout ce qu'il faut savoir sur le 
 
 Le nettoyage HLR s'effectue depuis l'espace client OVHcloud :
 
-1. **Importez votre fichier de contacts :** dans `Contacts`{.action} et chargez votre fichier CSV (colonne : numbers au format international).
+1. **Importez votre fichier de contacts :** dans `Contacts`{.action} et chargez votre fichier CSV (colonne : `numbers` au format international).
 2. **Lancez le nettoyage :** sélectionnez le carnet importé, puis cliquez sur « Nettoyer ». Deux options :
     - **Freemium (gratuit) :** dédoublonnage et vérification syntaxique uniquement.
     - **Premium (0,1 crédit/contact) :** dédoublonnage + requête HLR sur chaque numéro pour vérifier sa validité.
