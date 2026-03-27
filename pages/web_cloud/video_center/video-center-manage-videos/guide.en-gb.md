@@ -32,6 +32,17 @@ The [OVHcloud Video Center](/links/web/video-center) is a video hosting and stre
 
 ## Instructions
 
+<!-- GUIDED-TOUR-START -->
+<iframe
+  src="../../../assets/slideshows/web_cloud/video_center/video-center-manage-videos/en-gb/index.html"
+  width="100%"
+  height="600"
+  frameborder="0"
+  allowfullscreen
+  title="Interactive guided tour — Video Center: access, upload and embed"
+></iframe>
+<!-- GUIDED-TOUR-END -->
+
 ### Accessing the Video Center from the Control Panel
 
 Go to your [OVHcloud Control Panel, Video Center section](/links/control-panel/web-video-center).
