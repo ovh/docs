@@ -19,11 +19,10 @@ When Anti-Hack protection is triggered on your Dedicated Server, you will see a 
 
 Your server will automatically be booted in rescue, which will allow a restart or the reinstallation of the operating system. Below are the boot options for your server:
 
-| Name | Function | Status |
+| Status | Expected actions |
 | ------ | --------- | ----------- |
-| Rescue | Will allow a restart or the reinstallation of the operating system. | Hacked |
-| Rescue FTP | Will allow a restart or the reinstallation of the operating system. | Hacked |
-| rescue12-ftp - FTP rescue system for anti-hack | Will **not** allow a restart or the reinstallation of the operating system. | Hacked and blocked |
+| Hacked | Restart the server or ask OVHcloud to reinstall the server |
+| HackedBlocked | Collect data through FTP on server booted in FTP rescue system |
 
 ![antihack information SD](images/hacked-service.png){.thumbnail}
 
