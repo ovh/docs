@@ -17,7 +17,7 @@ updated: 2026-XX-XX
 
 When Anti-Hack protection is triggered on your Dedicated Server, you will see a message in the [OVHcloud Control Panel](/links/manager): "*Your server has been hacked. Please contact our support team for instructions on what to do next.*"
 
-Your server will automatically be booted in rescue, which will allow a restart or the reinstallation of the operating system. Below are the boot options for your server:
+Depending on the criticity of the Anti-Hack protection triggered by OVHcloud, the following actions will be allowed/required in order to recover the full service on the server.
 
 | Status | Expected actions |
 | ------ | --------- | ----------- |
@@ -60,6 +60,7 @@ When Anti-DDoS protection is triggered on your VPS, your VPS will be placed in r
 
 OVHcloud will also open a support ticket on your behalf containing the following:
 
+>
 > Dear Customer,
 >
 > Abnormal activity has been detected on your VPS vps-XXXXXXXX.vps.ovh.net.
