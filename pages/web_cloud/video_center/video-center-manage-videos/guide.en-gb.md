@@ -1,7 +1,7 @@
 ---
 title: "Video Center - Manage your videos online"
 excerpt: "Find out how to import, embed, share, download and delete your videos from the OVHcloud Video Center interface"
-updated: 2026-03-26
+updated: 2026-03-27
 ---
 
 ## Objective

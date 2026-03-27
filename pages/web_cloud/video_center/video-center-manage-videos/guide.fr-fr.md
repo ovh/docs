@@ -1,7 +1,7 @@
 ---
 title: "Video Center - Gérer vos vidéos en ligne"
 excerpt: "Découvrez comment importer, intégrer, partager, télécharger et supprimer vos vidéos depuis l'interface OVHcloud Video Center"
-updated: 2026-03-26
+updated: 2026-03-27
 ---
 
 ## Objectif
