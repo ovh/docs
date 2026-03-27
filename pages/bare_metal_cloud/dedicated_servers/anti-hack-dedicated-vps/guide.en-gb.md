@@ -4,7 +4,7 @@ excerpt: Find out what information will be visible and provided when OVHcloud's 
 updated: 2026-XX-XX
 ---
 
-**Learn what information will be visible and provided when OVHcloud's internal Anti-DDoS protection is triggered on behalf of your Dedicated Server or VPS.**
+**Learn what happens when OVHcloud's Anti-DDoS protection activates on your Dedicated Server or VPS.**
 
 ## Requirements
 
