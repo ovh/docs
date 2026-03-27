@@ -6,7 +6,7 @@ updated: 2026-02-19
 
 ## Objective
 
-The [Bring Your Own IP (BYOIP)](/links/network/byoip) feature allows you to use IP address ranges that you already own, as Additional IPs directly on the OVHcloud network and products.
+The [Bring Your Own IP (BYOIP)](/links/network/byoip) feature allows you to use IP addresses ranges that you already own, as Additional IPs directly on the OVHcloud network and products.
 
 These IP addresses will be imported in the form of a /24 IP block size and will behave like a regular OVHcloud [Additional IP](/links/bare-metal/ip) block product.
 
@@ -44,7 +44,6 @@ To be considered as a valid owned block, imported blocks must be one of the foll
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |  &bull; Allocated-Portable <br>&bull; Allocated-Non-Portable <br>&bull; Assigned-Portable <br>&bull; Assigned-Non-Portable  |
 | **For more information:** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information:** <br>[Description of the INETNUM Object](https://docs.db.ripe.net/entire-documentation-HTML.html#description-of-the-inetnum-object) |  **For more information:** <br>&bull; [INETNUM Quick Guide](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [Recording network assignments](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
 
-
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
 We accept IP blocks from size /24 up to size /19. Below, is the number of /24 you will receive from the imported range:
@@ -78,21 +77,21 @@ To choose a region, please refer to the list of available regions accessible on 
 
 To prove that you are the owner of the range, you will be requested to enter a special token which we will provide, into the public whois object corresponding to your range. This will be done via the web portal of the RIR managing your IPs. This token will be provided at order.
 
-- For RIPE, edit the "**descr**" field of the "**inetnum**" object of the IP.
-- For ARIN, edit the "**Public Comments**" field of the "**Network**" object.
-- For APNIC, edit the "**remarks**" field of the "**inetnum**" object.
+- For RIPE, edit the « **descr** » field of the « **inetnum** » object of the IP.
+- For ARIN, edit the « **Public Comments** » field of the « **Network** » object.
+- For APNIC, edit the « **remarks** » field of « **inetnum** » object.
 
-The token needs to appear in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
+The token needs to appears in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
 
 ### You must prove ownership of the AS number (required only if you provide an AS number) <a name="proveownershipas"></a>
 
 To prove that you are the owner of the AS number, you will be required to reuse the same token previously used to prove ownership of the IP range, and insert it into the public whois object corresponding to the AS number. This will be done via the web portal of the RIR managing your AS number. This token will be provided at order (it may also be found directly in the OVHcloud Control Panel, in the IP section).
 
-- For RIPE, edit the "**descr**" field of the "**aut-num**" object of the AS number.
-- For ARIN, edit the "**Public Comments**" field of the "**ASN**" object.
-- For APNIC, edit the "**remarks**" field of the "**aut-num**" object.
+- For RIPE, edit the « **descr** » field of the « **aut-num** » object of the AS number.
+- For ARIN, edit the « **Public Comments** » field of the « **ASN** » object.
+- For APNIC, edit the « **remarks** » field of « **aut-num** » object.
 
-The token needs to appear in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
+The token needs to appears in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
 
 ### You have to allow OVHcloud to announce the IP range <a name="announceip"></a>
 
@@ -105,13 +104,21 @@ For more information on route objects, please refer to your RIR’s documentatio
 - APNIC - [Creating Route Objects](https://www.apnic.net/manage-ip/using-whois/guide/creating-route-objects/)
 
 > [!warning]
-> If your imported IP block is already advertised on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
+> If your imported IP block is already advertized on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 ## Instructions
 
 ### How to order a BYOIP service
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar, then select `Public IP Addresses`{.action}.
 
 ![Public IP addresses - BYOIP button](images/byoip_public_ip.png){.thumbnail}
 
@@ -142,7 +149,7 @@ Filtering public IP addresses by tag is not currently available. We recommend fi
 ### How to use the product
 
 The imported IPs will behave like the current Additional IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same region.<br>
-To activate the announcement of your imported IP range on the Internet, simply assign one of your blocks to an eligible product via the control panel or the OVHcloud API.<br>
+To activate the announcement of your imported IP range on the Internet, simply assign one of your block to an eligible product via the control panel or the OVHcloud API.<br>
 
 > [!warning]
 > Some operations available on the Additional IP product will not be available on the BYOIP product.
@@ -196,7 +203,7 @@ To merge back a block into a parent block, use this API call:
 
 Use the following parameters:
 
-- ip: the IP block you want to merge, in CIDR notation.
+- ip: the IP block you want to merge, in CIDR notation.-
 - aggregationIp: the resulting block, in CIDR notation.
 
 The resulting block will be an aggregate of all its children blocks.
@@ -283,7 +290,7 @@ Not for the moment.
 
 ### Can I order the service while I still have my IP range announced from another site?
 
-Yes, but once the BYOIP service has been delivered, you must immediately cancel the announcement from the other site, as you risk connectivity issues with any services hosted at OVHcloud. In this case, OVHcloud cannot be held responsible.
+Yes, but once the BYOIP service has been delivered, you must immediately cancel the annoucement from the other site, as you risk connectivity issues with any services hosted at OVHcloud. In this case, OVHcloud cannot be held responsible.
 
 ## Go further
 

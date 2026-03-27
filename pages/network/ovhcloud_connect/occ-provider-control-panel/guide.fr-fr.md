@@ -18,8 +18,17 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 
 - Avoir commandé une [offre OVHcloud Connect Provider](/links/network/ovhcloud-connect)
 - Disposer d'un [vRack OVHcloud](/links/network/vrack)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
 ## En pratique
 
 ### Étape 1 : commande de votre offre
@@ -29,11 +38,11 @@ Une fois votre offre OVHcloud Connect Provider commandée, vous recevrez une con
 Selon le fournisseur que vous avez choisi, rendez-vous ensuite sur le portail de celui-ci pour vous identifier, le lien étant fourni dans l'e-mail de confirmation de commande. 
 Renseignez alors votre clé de service et validez la commande qui vous sera présentée.
 
-Vérifiez par la suite dans votre  [espace client OVHcloud](/links/manager) le statut d'activation de votre offre. Pour cela, cliquez sur `Bare Metal Cloud`{.action} puis sélectionnez l'onglet `Network`{.action}. Ensuite, cliquez sur `OVHcloud Connect`{.action} puis sur votre offre. Le statut de votre offre passera à « Actif ».
+Vérifiez ensuite le statut d'activation de votre offre : cliquez sur elle pour confirmer que son statut est passé à « Actif ».
 
 ### Étape 2 : associer un vRack
 
-Connectez-vous à [l’espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
+Cliquez sur votre offre OVHcloud Connect.
 
 ![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 

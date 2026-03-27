@@ -11,13 +11,20 @@ Ziel dieser Anleitung ist es, Sie bei der erstmaligen Verwendung des Loadbalance
 ## Voraussetzungen
 
 - Sie haben einen [OVHcloud Loadbalancer](/links/network/load-balancer) in Ihrem OVHcloud Kundencenter.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigationspfad:** `Network`{.action} > `Loadbalancer`{.action} > Wählen Sie Ihren Dienst aus
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Beschreibung
 
 ### Den Loadbalancer über das Kundencenter verwalten
-
-Um Ihren Loadbalancer über das Kundencenter zu verwalten, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie dann auf `Network`{.action} und `Loadbalancer`{.action}. Wählen Sie Ihren Dienst aus.
 
 ![Load Balancer](images/lbip-main.png){.thumbnail}
 

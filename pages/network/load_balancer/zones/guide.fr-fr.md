@@ -24,7 +24,6 @@ Ce guide explique comment configurer et utiliser ces zones multiples afin d'obte
 ## Prérequis
 
 - Un service [Load Balancer OVHcloud](/links/network/load-balancer)
-- Accès à l'[espace client OVHcloud](/links/manager)
 
 ## Introduction aux zones de disponibilité
 
@@ -53,13 +52,23 @@ La répartition de charge entre plusieurs zones de disponibilité (AZ) au sein d
 ![Différence entre les déploiements multi-régions et multi-AZ](images/multi-az.png){.thumbnail}
 *Diagramme représentant un load balancer répartissant le trafic sur les zones d'une seule région multi-AZ*
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 ### Ajouter une zone
 
 #### Depuis l'espace client OVHcloud
 
-Vous pouvez commander une zone supplémentaire depuis l'[espace client OVHcloud](/links/manager). Dans la section `Network`{.action}, sous `Services réseau`{.action} cliquez sur `Load Balancer`{.action}.
+Vous pouvez commander une zone supplémentaire depuis l'espace client OVHcloud.
 
 Sélectionnez votre Load Balancer, puis dans l'onglet `Accueil`{.action}, section `Configuration`{.action}, cliquez sur le bouton `...`{.action} sur la droite de "Zones de disponibilité" et choisissez `Ajouter`{.action}.
 

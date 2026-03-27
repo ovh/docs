@@ -44,7 +44,6 @@ To be considered as a valid owned block, imported blocks must be one of the foll
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |  &bull; Allocated-Portable <br>&bull; Allocated-Non-Portable <br>&bull; Assigned-Portable <br>&bull; Assigned-Non-Portable  |
 | **For more information:** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information:** <br>[Description of the INETNUM Object](https://docs.db.ripe.net/entire-documentation-HTML.html#description-of-the-inetnum-object) |  **For more information:** <br>&bull; [INETNUM Quick Guide](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [Recording network assignments](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
 
-
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
 We accept IP blocks from size /24 up to size /19. Below, is the number of /24 you will receive from the imported range:
@@ -107,11 +106,19 @@ For more information on route objects, please refer to your RIR’s documentatio
 > [!warning]
 > If your imported IP block is already advertized on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 ## Instructions
 
 ### How to order a BYOIP service
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar, then select `Public IP Addresses`{.action}.
 
 ![Public IP addresses - BYOIP button](images/byoip_public_ip.png){.thumbnail}
 

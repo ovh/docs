@@ -17,10 +17,19 @@ This guide is specifically for you if you only find private IP addresses in your
 ## Requirements
 
 - Have an [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account.
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - Have a Web service installed and configured on your servers.
 - Have an Nginx service installed and configured on your servers.
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 ```bash

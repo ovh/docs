@@ -11,13 +11,20 @@ This guide is designed to help you get started using the Load Balancer, by intro
 ## Requirements
 
 - An [OVHcloud Load Balancer](/links/network/load-balancer) service
-- Access to the [OVHcloud Control Panel](/links/manager)
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 ### Managing your Load Balancer via the Control Panel
-
-To manage your Load Balancer via the Control Panel, go to the `Bare Metal Cloud`{.action} section, click `Network`{.action} and `Load Balancer`{.action}. The main page for the service will then appear:
 
 ![Load Balancer](images/lbip-main.png){.thumbnail}
 

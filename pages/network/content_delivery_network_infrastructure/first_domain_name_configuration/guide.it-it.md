@@ -14,13 +14,23 @@ Per iniziare a utilizzare il servizio Content Delivery Network (CDN) di OVH, è 
 
 - Usufruire della [Content Delivery Network (CDN) OVH](/links/network/cdn-infrastructure).
 - Avere accesso alla gestione della zona DNS del dominio
-- Avere accesso allo [Spazio Cliente OVH](/links/manager).
 
+
+<!-- CP-NAV-START:network-cdn -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [CDN](/links/control-panel/network-cdn)
+- **Percorso di navigazione:** `Network`{.action} > `Content Delivery Network`{.action}
+
+---
+<!-- CP-NAV-END:network-cdn -->
 ## Procedura
 
 ### Aggiungi il dominio sulla CDN
 
-Per prima cosa, è necessario aggiungere un sottodominio alla CDN in modo che possa accettare richieste HTTP(S) per questo dominio: accedi alla sezione `Dedicato`{.action} dello [Spazio Cliente OVH](/links/manager) e clicca su `NAS e CDN`{.action} nel menu a sinistra. 
+Per prima cosa, è necessario aggiungere un sottodominio alla CDN in modo che possa accettare richieste HTTP(S) per questo dominio. 
 
 Clicca su `Aggiungi un dominio alla CDN`{.action}:
 
