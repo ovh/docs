@@ -1,7 +1,7 @@
 ---
 title: "Personnaliser les serveurs DNS d'un nom de domaine (« Hôtes »)"
 excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2026-03-25
+updated: 2026-03-27
 ---
 
 <style>
@@ -166,7 +166,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}. Prenez connaissance des informations affichées, puis cliquez sur `Valider`{.action}. Répétez cette manipulation autant de fois que nécessaire, selon le nombre de serveurs DNS utilisés par votre nom de domaine.
 >>
->> Dans notre exemple, vous devrez réitérer l'opération pour créer l'hôte **dns2.domain.tld**. Ce dernier remplacera par la suite le serveur DNS **dnsX2.ovh.net**  actuellement associé aux adresses IP *203.0.113.1* (IPv4) et *2001:db8:1:1b00:203:0:113:1* (IPv6).
+>> Dans notre exemple, vous devrez réitérer l'opération pour créer l'hôte **dns2.domain.tld**. Ce dernier remplacera par la suite le serveur DNS **dnsX2.ovh.net** actuellement associé aux adresses IP *203.0.113.1* (IPv4) et *2001:db8:1:1b00:203:0:113:1* (IPv6).
 
 ### 4 - Créer les enregistrements DNS de type A et AAAA correspondants aux DNS personnalisés <a name="step4"></a>
 

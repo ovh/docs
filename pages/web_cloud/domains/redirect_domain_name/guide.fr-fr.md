@@ -1,7 +1,7 @@
 ---
 title: "Rediriger un nom de domaine géré par OVHcloud"
 excerpt: "Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud"
-updated: 2026-03-25
+updated: 2026-03-27
 ---
 
 <style>
@@ -341,9 +341,9 @@ Les fichiers « .htaccess » sont des fichiers de configuration dans lesquels 
 
 Parmi ces commandes, il est possible de créer des redirections.
 
-Manipuler un fichier « .htaccess »  peut rendre votre site inaccessible. En cas de doute, contactez un [prestataire spécialisé](/links/partner) .
+Manipuler un fichier « .htaccess »  peut rendre votre site inaccessible. En cas de doute, contactez un [prestataire spécialisé](/links/partner).
 
-Retrouvez l'ensemble de notre documentation sur le « .htaccess »  dans la section « [Aller plus loin](#go-further) » de ce guide.
+Retrouvez l'ensemble de notre documentation sur le « .htaccess » dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 > [!success]
 >

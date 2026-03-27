@@ -1,7 +1,7 @@
 ---
 title: "Configurer un enregistrement MX pour la gestion des emails"
 excerpt: "Découvrez comment configurer un enregistrement MX sur votre nom de domaine chez OVHcloud"
-updated: 2026-02-19
+updated: 2026-03-27
 ---
 
 <style>

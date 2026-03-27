@@ -1,7 +1,7 @@
 ---
 title: 'Comment utiliser un nom de domaine OVHcloud avec iCloud Mail'
 excerpt: 'Découvrez comment configurer votre nom de domaine OVHcloud avec iCloud pour créer des adresses e-mail personnalisées'
-updated: 2026-03-25
+updated: 2026-03-27
 ---
 
 > [!warning]

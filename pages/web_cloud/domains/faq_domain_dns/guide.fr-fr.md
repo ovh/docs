@@ -1,7 +1,7 @@
 ---
 title: "FAQ sur les noms de domaine & DNS"
 excerpt: "Retrouvez les principales questions posées sur les noms de domaine, les serveurs DNS et les zones DNS"
-updated: 2026-03-25
+updated: 2026-03-27
 ---
 
 <style>
@@ -96,7 +96,7 @@ Si votre nom de domaine est enregistré chez OVHcloud, cliquez sur les onglets c
 > [!tabs]
 > **Étape 1**
 >>
->> Accédez à la page [Mes offres et services](/links/control-panel/billing-services).
+>> Accédez à la page [Mes offres & services](/links/control-panel/billing-services).
 >>
 > **Étape 2**
 >>
@@ -149,7 +149,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Accédez à la page [Mes offres et services](/links/control-panel/billing-services).
+>> Accédez à la page [Mes offres & services](/links/control-panel/billing-services).
 >>
 > **Étape 2**
 >>
@@ -248,7 +248,7 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 > [!tabs]
 > **Étape 1**
 >>
->> Accédez à la page [Mes offres et services](/links/control-panel/billing-services).
+>> Accédez à la page [Mes offres & services](/links/control-panel/billing-services).
 >>
 > **Étape 2**
 >>

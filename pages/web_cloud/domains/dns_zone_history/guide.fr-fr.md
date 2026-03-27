@@ -1,7 +1,7 @@
 ---
 title: "Gérer l’historique d'une zone DNS"
 excerpt: "Découvrez comment consulter, comparer, télécharger et restaurer vos sauvegardes de zone DNS"
-updated: 2026-03-25
+updated: 2026-03-27
 ---
 
 <style>
@@ -57,7 +57,6 @@ Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zo
 >
 > - Nous conservons au maximum 200 sauvegardes pour une même zone DNS.
 > - Dès qu'une sauvegarde a plus de 31 jours, celle-ci est automatiquement supprimée, à l'exception des **5 sauvegardes les plus récentes** effectuées.
->
 
 **Cliquez sur l'action de votre choix pour afficher le contenu.**
 
