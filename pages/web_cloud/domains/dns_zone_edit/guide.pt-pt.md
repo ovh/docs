@@ -47,9 +47,9 @@ Para mais explicações, consulte os nossos manuais "[Saber tudo sobre os servid
 >
 > - Se o nome de domínio não usar os servidores DNS da OVHcloud, a alteração deverá ser efetuada na interface do agente responsável pela configuração do nome de domínio.
 > 
-> - Se o nome de domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) no separador `Servidores DNS`{.action} do nome de domínio correspondente. Se necessário, consulte o guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+> - Se o nome de domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração. Para isso e se necessário, consulte o guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 > 
-> Em ambos os casos acima, tenha cuidado ao efetuar as alterações dos servidores DNS. A configuração anterior que pode ser aplicada ao seu nome de domínio não estará ativa se não tiver reconfigurado e personalizado previamente a nova zona DNS presente na OVHcloud.<br>
+> Em ambos os casos acima, tenha cuidado ao efetuar as alterações dos servidores DNS. A configuração anterior que pode ser aplicada ao seu nome de domínio não estará ativa se não tiver reconfigurado e personalizado previamente a nova zona DNS presente na OVHcloud.
 > Só pode ter uma zona DNS ativa por nome de domínio.
 >
 
@@ -89,7 +89,7 @@ Compreender os diferentes registos irá permitir-lhe perceber as alterações qu
 > Consulte também o guia relativo aos [subdomínios](/pages/web_cloud/domains/domain_create_subdomains) para mais informações sobre este assumpto.
 >
 
-Pode editar a zona DNS da OVHcloud do seu nome de domínio adicionando, alterando ou eliminando um registo DNS.<br>
+Pode editar a zona DNS da OVHcloud do seu nome de domínio adicionando, alterando ou eliminando um registo DNS.
 Para isso, pode alterar manualmente a zona em modo de texto ou utilizar os nossos assistentes de configuração.
 
 #### Modificar manualmente a zona em modo de texto <a name="txtmod"></a>
@@ -237,7 +237,7 @@ Para reiniciar a zona DNS, clique nos separadores abaixo para visualizar cada um
 >>
 >> **Endereço IP do seu alojamento**
 >>
->> - `Reencaminhamento`: o seu nome de domínio apontará para o servidor de reencaminhamento OVHcloud. Isto permite apresentar uma página inicial da OVHcloud e evitar um erro DNS.<br>
+>> - `Reencaminhamento`: o seu nome de domínio apontará para o servidor de reencaminhamento OVHcloud. Isto permite apresentar uma página inicial da OVHcloud e evitar um erro DNS.
 >> - `Alojamento Web OVHcloud`: O seu nome de domínio ficará associado ao endereço IP do alojamento web associado ao nome de domínio <br>
 >> - `Personalizado`: defina o valor IPv4 ([registo A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) do alojamento web que deseja apontar. <br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}

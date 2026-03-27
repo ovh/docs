@@ -1,7 +1,7 @@
 ---
 title: 'Transferir o nome de domínio para a OVHcloud'
 excerpt: 'Descubra como transferir um nome de domínio para a OVHcloud'
-updated: 2026-02-10
+updated: 2026-03-27
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -77,7 +77,7 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 
 ### 1 - Verificar a informação relativa ao nome de domínio <a name="step1"></a>
 
-**Para começar, é importante verificar se as informações relativas ao nome de domínio estão atualizadas.** Desde a criação do RGPD, os dados visíveis no ["Whois"](/links/web/domains-whois) tornaram-se muito limitados. Assim, recomendamos que verifique as informações relativas ao seu nome de domínio no seu agente registador atual.
+**Para começar, é importante verificar se as informações relativas ao nome de domínio estão atualizadas.** Desde a criação do RGPD, os dados visíveis em « [Whois](/links/web/domains-whois) » tornaram-se muito limitados. Assim, recomendamos que verifique as informações relativas ao seu nome de domínio no seu agente registador atual.
 
 - **Se as informações estiverem corretas:** consulte o passo seguinte deste guia.
 
@@ -134,12 +134,11 @@ Também pode concluir a sua encomenda com um [alojamento web](/links/web/hosting
 
 #### Seguimento da transferência após a encomenda
 
-Depois de validar a encomenda, receberá uma nota de encomenda. O processo de transferência só terá início após a receção do pagamento. Depois de realizar esta operação, pode seguir o progresso da transferência através da [Área de Cliente OVHcloud](/links/manager). Depois de fazer login,
-aceda à secção `Web Cloud`{.action} e clique em `Operações em curso`{.action}.
+Depois de validar a encomenda, receberá uma nota de encomenda. O processo de transferência só terá início após a receção do pagamento. Depois de realizar esta operação, pode seguir o progresso da transferência na página [Operações em curso](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
-> Se o código de transferência não foi introduzido durante a encomenda, poderá introduzi-lo a partir da janela `Operações em curso`{.action} e assim validar a transferência.
+> Se o código de transferência não foi introduzido durante a encomenda, poderá introduzi-lo a partir desta mesma página e assim validar a transferência.
 
 ### Etapa 4: validação da transferência pelo agente de registo atual <a name="step4"></a>
 
@@ -153,8 +152,7 @@ Depois de validar a encomenda e o código de transferência, o agente registador
 
 Se o agente registador atual recusar o pedido, contacte o agente registador para saber por que razão o recusou.
 
-O processo de transferência pode ser reiniciado na [Área de Cliente OVHcloud](/links/manager). Depois de fazer login,
-aceda à secção `Web Cloud`{.action} e clique em `Operações em curso`{.action}.
+O processo de transferência pode ser reiniciado a partir da página [Operações em curso](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
@@ -168,7 +166,7 @@ aceda à secção `Web Cloud`{.action} e clique em `Operações em curso`{.actio
 
 ### Etapa 5: gerir o seu nome de domínio com a OVHcloud
 
-Uma vez terminado o processo de transferência, pode gerir o seu nome de domínio a partir da [Área de Cliente OVHcloud](/links/manager). Para isso, selecione a `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} e, a seguir, clique no nome de domínio em causa.
+Uma vez terminado o processo de transferência, pode gerir o seu nome de domínio a partir da página [Nomes de domínio](/links/control-panel/web-domains).
 
 > [!warning]
 >
@@ -178,10 +176,20 @@ Uma vez terminado o processo de transferência, pode gerir o seu nome de domíni
 > Para os nomes de domínio com uma extensão *local* ou *regional* (os **ccTLD** tais como os *.fr*, *.be*, *.de*, *.es*, etc.), tal depende das extensões e das regras implementadas pelo **registry** da extensão em questão.
 > Uma vez concluída a transferência, verifique a data de expiração do seu nome de domínio diretamente a partir da Área de Cliente OVHcloud.
 >
-> Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e selecione o nome de domínio em causa. Na página que aparece e imediatamente abaixo do seu nome de domínio, na parte superior da página, encontrará a data de renovação prevista com o **mês** e **ano** de expiração.
->
 > Em função da situação e da nova data de expiração do seu nome de domínio, poderá ser necessário renovar o nome de domínio imediatamente após a transferência.
->
+
+Para verificar isto, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e selecione o nome de domínio em causa.
+>>
+>> ![Nomes de domínio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Na página apresentada, logo abaixo do nome de domínio, encontrará a data de renovação prevista com o **mês** e o **ano** de expiração.
 
 ## Quer saber mais?
 
