@@ -157,7 +157,7 @@ Configurez ensuite l’instance MST :
 
 ![13 Deploy mst parameters](images/mst13.png){.thumbnail}
 
-- **Object Store Provider** : Sélectionnez `S3 Compatible (Nutanix Certified)`{.action}.
+- **Object Store Provider** : Sélectionnez `S3 Compatible (Nutanix certified)`{.action}.
 - **Object Store Endpoint** : Indiquez l'endpoint URL de votre container, dans notre exemple [https://s3.gra.io.cloud.ovh.net/](https://s3.gra.io.cloud.ovh.net/).
 - **Bucket Name** : Indiquez le nom de votre container. Dans notre exemple, *mst-dr-gra*.
 - **Access Key** : Indiquez l'`Access Key` de votre container.
