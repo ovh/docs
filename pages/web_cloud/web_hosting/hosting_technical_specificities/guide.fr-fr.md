@@ -1,7 +1,7 @@
 ---
 title: "Spécificités techniques liées aux hébergements mutualisés"
 excerpt: "Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements Web"
-updated: 2023-12-08
+updated: 2026-03-30
 ---
 
 ## Objectif
@@ -14,37 +14,20 @@ Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la co
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting) compatible.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## En pratique
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
 ### FTP
 
 - Utilisez le **mode passif** pour les connexions FTP. Assurez-vous que votre script ou votre client FTP est configuré en conséquence.
 
-- Si vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 » lors de la connexion à votre espace de stockage FTP: Assurez-vous que les informations d'accès à votre espace FTP sont correctes. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
-
-Vous y retrouverez l'ensemble des informations de connexion à votre espace de stockage FTP à l'exception du mot de passe.
-
-En effet, les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés.
-
-Retrouvez plus d'informations sur le sujet dans notre guide « [Se connecter à l'espace de stockage FTP de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection) ».
+- Si vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 » lors de la connexion à votre espace de stockage FTP, assurez-vous que les informations d'accès à votre espace FTP sont correctes. Consultez notre guide « [Se connecter à l'espace de stockage FTP de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection) » pour retrouver l'ensemble des informations de connexion à votre espace de stockage FTP. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés.
 
 ### E-mails <a name="emails"></a>
 

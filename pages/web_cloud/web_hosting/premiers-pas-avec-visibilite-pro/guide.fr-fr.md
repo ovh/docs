@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec la solution Visibilité Pro"
 excerpt: "Découvrez comment bien débuter avec la solution Visibilité Pro"
-updated: 2024-07-09
+updated: 2026-03-30
 ---
 
 ## Objectif
@@ -28,23 +28,32 @@ Visibilité Pro est une solution de référencement local vous permettant de gé
 
 ## En pratique
 
-### Étape 1 : accéder à la gestion de la solution Visibilité Pro
+### 1 - Accéder à la gestion de la solution Visibilité Pro
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement auquel la solution Visibilité Pro a été liée. 
+Pour accéder à la gestion de la solution Visibilité Pro, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-Cliquez sur l'onglet `Plus`{.action}, puis sur `Visibilité Pro`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web auquel la solution Visibilité Pro a été liée.
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis sur `Visibilité Pro`{.action}.
+>>
+>> ![visibilitypro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/tab.png){.thumbnail}
+>>
+>> Le tableau qui apparaît affiche les solutions Visibilité Pro commandées et liées à votre offre d'hébergement web. Chaque ligne correspond à une solution Visibilité Pro permettant de gérer le référencement local d'un seul établissement.
+>>
+>> Si vous possédez plusieurs établissements et souhaitez gérer leur référencement local de la même manière, nous vous recommandons d'effectuer un test de référencement local depuis la page : <https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/>, puis de souscrire une solution Visibilité Pro pour chacun d'entre eux.
+>>
+> **Étape 3**
+>>
+>> Pour accéder à l'interface de gestion de la solution Visibilité Pro, cliquez sur le bouton `...`{.action} à droite de la ligne concernée, puis sur `Accéder à l'interface`{.action}.
+>>
+>> ![visibilitypro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/acces-to-the-interface.png){.thumbnail}
 
-![visibilitypro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/tab.png){.thumbnail}
-
-Le tableau qui apparaît affiche les solutions Visibilité Pro commandées et liées à votre offre d'hébergement web. Chaque ligne correspond à une solution Visibilité Pro permettant de gérer le référencement local d'un seul établissement.
-
-Si vous possédez plusieurs établissements et souhaitez gérer leur référencement local de la même manière, nous vous recommandons d'effectuer un test de référencement local depuis la page : <https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/>, puis de souscrire une solution Visibilité Pro pour chacun d'entre eux.
-
-Pour accéder à l'interface de gestion de la solution Visibilité Pro, cliquez sur le bouton représentant trois points à droite de la ligne concernée, puis sur `Accéder à l'interface`{.action}.
-
-![visibilitypro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/acces-to-the-interface.png){.thumbnail}
-
-### Étape 2 : renseignez le profil de votre établissement
+### 2 - Renseigner le profil de votre établissement
 
 Sur la page qui s'affiche, vous êtes invité à renseigner le profil de votre établissement. Pour cela, complétez les informations demandées :
 
@@ -86,7 +95,7 @@ Cliquez alors sur le bouton `C'est parti !`{.action}.
 
 ![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/congratulations.png){.thumbnail}
 
-### Étape 3 : modifier et enrichir les informations de votre établissement
+### 3 - Modifier et enrichir les informations de votre établissement
 
 Une fois connecté à l'interface de gestion Visibilité Pro, nous vous recommandons vivement d'enrichir les informations du profil de votre établissement. Pour cela, positionnez-vous sur l'onglet `Profil`{.action}.
 
@@ -111,7 +120,7 @@ Si vous souhaitez que ces modifications soient envoyées automatiquement vers le
 
 ![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/autosync-enable.png){.thumbnail}
 
-### Étape 4 : commencer à interagir avec vos clients
+### 4 - Commencer à interagir avec vos clients
 
 Une fois votre profil complété, vous pouvez à présent vous familiariser avec les autres fonctionnalités à votre disposition dans l'interface de gestion Visibilité Pro. 
 
