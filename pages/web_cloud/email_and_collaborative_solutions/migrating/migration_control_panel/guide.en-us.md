@@ -53,7 +53,7 @@ If you need to migrate multiple accounts, we recommend that you set up a migrati
 
 This step is optional if you already have an Exchange service to which you are migrating.
 
-Order the Exchange service you want. Follow the steps, then wait until the service is actually installed. An email will be sent to you as soon as it is complete.
+Order the Exchange service you want. Follow the steps, then wait for the service to be installed. You will receive a confirmation email once it is complete.
 
 > [!primary]
 >
@@ -142,6 +142,6 @@ You can also manually migrate your email addresses to your new OVHcloud email so
 
 ## Go further
 
-[Exchange guides](/products/web-cloud-email-collaborative-solutions-mx-plan).
+[Exchange guides](/products/web-cloud-email-collaborative-solutions-mx-plan)
 
 Join our [community of users](/links/community).

@@ -100,7 +100,7 @@ Füllen Sie die Informationen entsprechend des Accounttyps aus:
     - **Service** *(je nach Typ)*: Wählen Sie den Dienst aus, der mit dem Ziel-E-Mail-Account verbunden ist.
     - **Advanced settings** > **Delegation account ID** *(je nach Typ)*: Wenn der zu migrierende E-Mail-Account ein geteilter Account ist, müssen Sie die E-Mail-Adresse des Administrator-Accounts des Delegation-Accounts eingeben.
 - **Start of Transfers**: Sie können die Migration unmittelbar über `Immediately` starten oder `Later` ankreuzen, um die Migration zu verschieben. Eine verschobene Migration ermöglicht es, Datum und Uhrzeit des Starts zu definieren.
-- **Data to transfer**: Abhängig vom Typ des zu migrierenden E-Mail-Accounts und des Ziel-Accounts zeigt Ihnen dieser Abschnitt die verschiedenen Arten von Daten an, die bei der Migration unterstützt werden. Dies hängt vom Quell-Account und vom Ziel-Accounts ab.
+- **Data to transfer**: Abhängig vom Typ des zu migrierenden E-Mail-Accounts und des Ziel-Accounts zeigt Ihnen dieser Abschnitt die verschiedenen Arten von Daten an, die bei der Migration unterstützt werden. Dies hängt vom Quell-Account und vom Ziel-Account ab.
 
 ![omm](images/omm-create-migration-04.png){.thumbnail .w-600}
 

@@ -37,9 +37,9 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 - **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
@@ -153,9 +153,9 @@ Wenn Sie einen der migrierten Accounts auf einem lokalen E-Mail-Client eingerich
 
 [Verwaltung der Kontakte Ihrer Dienste](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Erste Schritte mit dem E-Mail Pro-Angebot](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
+[Erste Schritte mit dem E-Mail Pro-Angebot](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Erste Schritte mit dem Exchange-Angebot](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted).
+[Erste Schritte mit dem Exchange-Angebot](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 [Erste Schritte mit dem Zimbra-Angebot](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 

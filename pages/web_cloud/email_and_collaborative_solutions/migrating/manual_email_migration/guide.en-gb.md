@@ -65,11 +65,11 @@ The following instructions are divided into two parts:
 
 If you have an [OVHcloud Exchange email account](/links/web/emails-hosted-exchange), you can export it directly in PST format via the OVHcloud Control Panel.
 
-In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email account you want to export, then `Export as a .PST`{.action} format.
+Once on your Exchange service page, in the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email account you want to export, then `Export in PST format`{.action}.
 
 ![emails](images/manager-export-pst01.png){.thumbnail .w-640}
 
-You will then need to wait for the export process to complete, which may take from a few minutes to several hours, depending on the size of the export. At the end of it, you just need to return to the `Export as a .PST`{.action} button to retrieve a link to download the file.
+You will then need to wait for the export process to complete, which may take from a few minutes to several hours, depending on the size of the export. At the end of it, you just need to return to the `Export in PST format`{.action} button to retrieve a link to download the file.
 
 ![emails](images/manager-export-pst02.png){.thumbnail .w-640}
 
@@ -78,15 +78,15 @@ You will then need to wait for the export process to complete, which may take fr
 > [!tabs]
 > **Export**
 >>
->> - Click `File` in the top left-hand corner, then `Open and Export`, and then `Import/Export`.
+>> - Click `File`{.action} in the top left-hand corner, then `Open and Export`{.action}, and then `Import/Export`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
->> - Select `Export to a file` and then click `Next`.
+>> - Select `Export to a file`{.action} and then click `Next`{.action}.
 >>
 >> ![emails](images/outlook-export-win02.png){.thumbnail .w-640}
 >>
->> - Select `Outlook Data File (.pst)` and click `Next`.
+>> - Select `Outlook Data File (.pst)`{.action} and click `Next`{.action}.
 >>
 >> ![emails](images/outlook-export-win03.png){.thumbnail .w-640}
 >>
@@ -95,11 +95,11 @@ You will then need to wait for the export process to complete, which may take fr
 >> > [!primary]
 >> > You can only export one account at a time.
 >>
->> Select `Include subfolders`, then click `Next`.
+>> Select `Include subfolders`{.action}, then click `Next`{.action}.
 >>
 >> ![emails](images/outlook-export-win04.png){.thumbnail .w-640}
 >>
->> - Choose the destination folder for your backup and enter a name for it by clicking `Browse`. Select the option you want, and then click `Finish`.
+>> - Choose the destination folder for your backup and enter a name for it by clicking `Browse`{.action}. Select the option you want, and then click `Finish`{.action}.
 >>
 >> ![emails](images/outlook-export-win05.png){.thumbnail .w-640}
 >>
@@ -109,25 +109,25 @@ You will then need to wait for the export process to complete, which may take fr
 >>
 > **Import**
 >>
->> - Click `File` in the top left-hand corner, then `Open and Export`, and then `Import/Export`.
+>> - Click `File`{.action} in the top left-hand corner, then `Open and Export`{.action}, and then `Import/Export`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
->> - Select `Import from another program or file` and click `Next`.
+>> - Select `Import from another program or file`{.action} and click `Next`{.action}.
 >>
 >> ![emails](images/outlook-import-win02.png){.thumbnail .w-640}
 >>
->> - Select `Outlook Data File (.pst)` and click `Next`.
+>> - Select `Outlook Data File (.pst)`{.action} and click `Next`{.action}.
 >>
 >> ![emails](images/outlook-import-win03.png){.thumbnail .w-640}
 >>
->> - Choose your backup file by clicking `Browse`. Select the option you want, and then click `Next`.
+>> - Choose your backup file by clicking `Browse`{.action}. Select the option you want, and then click `Next`{.action}.
 >>
 >> ![emails](images/outlook-import-win04.png){.thumbnail .w-640}
 >>
->> - If you need to set a password on your backup file, enter the password and click `OK`.
+>> - If you need to set a password on your backup file, enter the password and click `OK`{.action}.
 >>
->> - Select `Import items to the current folder` and then click `Finish`.
+>> - Select `Import items to the current folder`{.action} and then click `Finish`{.action}.
 >>
 >> Your backup will be imported.
 
@@ -136,46 +136,46 @@ You will then need to wait for the export process to complete, which may take fr
 > [!tabs]
 > **Export**
 >>
->> In the `Tools` tab of your Outlook window, click `Export`.
+>> In the `Tools`{.action} tab of your Outlook window, click `Export`{.action}.
 >>
 >> ![emails](images/outlook-export-mac01.png){.thumbnail .w-640}
 >>
->> In the Export to archive (.olm) window, tick the items you want to add to your backup file, then click `Continue`.
+>> In the Export to archive (.olm) window, tick the items you want to add to your backup file, then click `Continue`{.action}.
 >>
 >> ![emails](images/outlook-export-mac02.png){.thumbnail .w-640}
 >>
->> Then select the destination folder for your backup, and click `Save`.
+>> Then select the destination folder for your backup, and click `Save`{.action}.
 >>
 >> ![emails](images/outlook-export-mac03.png){.thumbnail .w-640}
 >>
->> A progress window will appear, click `Continue` at the end of the operation. You will find your backup file in the folder you selected earlier.
+>> A progress window will appear, click `Continue`{.action} at the end of the operation. You will find your backup file in the folder you selected earlier.
 >>
 > **Import**
 >>
->> In the `Tools` tab of your Outlook window, click `Import`.
+>> In the `Tools`{.action} tab of your Outlook window, click `Import`{.action}.
 >>
 >> ![emails](images/outlook-import-mac01.png){.thumbnail .w-640}
 >>
->> Choose the backup format you want to import, and then click `Continue`.
+>> Choose the backup format you want to import, and then click `Continue`{.action}.
 >>
 >> ![emails](images/outlook-import-mac02.png){.thumbnail .w-640}
 >>
->> Select your backup file, and then click `import`.
+>> Select your backup file, and then click `Import`{.action}.
 >>
 >> ![emails](images/outlook-import-mac03.png){.thumbnail .w-640}
 >>
->> A progress window will appear, click `Continue` at the end of the operation. Your backup is then deployed on your Outlook.
+>> A progress window will appear, click `Continue`{.action} at the end of the operation. Your backup is then deployed on your Outlook.
 
 ### Mail on Mac OS
 
 > [!tabs]
 > **Export**
 >>
->> In the left-hand column, select one or more email accounts. Click `Mailbox` in the horizontal menu, and then click `Export Mailbox`.
+>> In the left-hand column, select one or more email accounts. Click `Mailbox`{.action} in the horizontal menu, and then click `Export Mailbox`{.action}.
 >>
 >> ![emails](images/mail-export-mac01.png){.thumbnail .w-640}
 >>
->> Select the folder you want, or create a new folder, and then click `Choose`.
+>> Select the folder you want, or create a new folder, and then click `Choose`{.action}.
 >>
 >> ![emails](images/mail-export-mac02.png){.thumbnail .w-640}
 >>
@@ -183,11 +183,11 @@ You will then need to wait for the export process to complete, which may take fr
 >>
 > **Import**
 >>
->> Click `File` on the horizontal menu, and then click `Import Mailboxes`.
+>> Click `File`{.action} on the horizontal menu, and then click `Import Mailboxes`{.action}.
 >>
 >> ![emails](images/mail-import-mac01.png){.thumbnail .w-640}
 >>
->> Select your .mbox backup file, and then click `Continue`.
+>> Select your .mbox backup file, and then click `Continue`{.action}.
 >>
 >> ![emails](images/mail-import-mac02.png){.thumbnail .w-640}
 >>
@@ -200,11 +200,11 @@ There is currently no native feature to export or import an email account from T
 > [!tabs]
 > **Export**
 >>
->> In the main window, click on the menu in the top right-hand corner, then `Help`, then `Troubleshooting Information`.
+>> In the main window, click on the menu in the top right-hand corner, then `Help`{.action}, then `Troubleshooting Information`{.action}.
 >>
 >> ![emails](images/thunderbird_menu.png){.thumbnail .w-640}
 >>
->> A table appears. Identify the `Profile Folder` line and click the `Open Folder` button.
+>> A table appears. Identify the `Profile Folder`{.action} line and click the `Open Folder`{.action} button.
 >>
 >> ![emails](images/thunderbird_open_folder.png){.thumbnail .w-640}
 >>
@@ -225,7 +225,7 @@ There is currently no native feature to export or import an email account from T
 >>
 >> You must first start Thunderbird via the profile manager.
 >>
->> - On Windows, go to the `Start` menu and open the `Run` application. On the latter, type `thunderbird.exe -ProfileManager` and click `OK`.
+>> - On Windows, go to the `Start`{.action} menu and open the `Run`{.action} application. On the latter, type `thunderbird.exe -ProfileManager` and click `OK`{.action}.
 >>
 >> ![emails](images/thunderbird-run-profil.png){.thumbnail .w-640}
 >>
@@ -233,7 +233,7 @@ There is currently no native feature to export or import an email account from T
 >>
 >> ![emails](images/thunderbird-terminal-profil.png){.thumbnail .w-640}
 >>
->> The following window displays the existing profiles. Click `Create Profile` and then click `Next` when the information message appears.
+>> The following window displays the existing profiles. Click `Create Profile`{.action} and then click `Next`{.action} when the information message appears.
 >>
 >> ![emails](images/thunderbird-profil-create01.png){.thumbnail .w-640}
 >>
@@ -244,9 +244,9 @@ There is currently no native feature to export or import an email account from T
 >> > [!primary]
 >> > We recommend copying your Thunderbird profile backup to the Thunderbird profile folder.
 >>
->> Click `Choose Folder...` to select the folder that contains your backup. Click `Finish` to create the profile with your backup.
+>> Click `Choose Folder...`{.action} to select the folder that contains your backup. Click `Finish`{.action} to create the profile with your backup.
 >>
->> You will find your profile selection window with your new profile selected. When you click `Start Thunderbird`, Thunderbird will be launched with all the items you had in your backup.
+>> You will find your profile selection window with your new profile selected. When you click `Start Thunderbird`{.action}, Thunderbird will be launched with all the items you had in your backup.
 
 ### Checking the import on the new email address
 

@@ -67,11 +67,11 @@ Les instructions qui suivent sont décomposées en deux parties :
 
 Si vous possédez un compte e-mail [Exchange OVHcloud](/links/web/emails-hosted-exchange), il est possible de l'exporter directement au format PST depuis l'espace client.
 
-Dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte e-mail à exporter, puis sur `Exporter en PST`{.action}.
+Une fois sur la page de votre service Exchange, dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte e-mail à exporter, puis sur `Exporter au format PST`{.action}.
 
 ![emails](images/manager-export-pst01.png){.thumbnail .w-640}
 
-Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minutes à plusieurs heures selon la taille de l'export. À la fin de celui-ci, il vous suffira de retourner sur le bouton `Exporter en PST`{.action} pour récupérer un lien pour télécharger le fichier.
+Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minutes à plusieurs heures selon la taille de l'export. À la fin de celui-ci, il vous suffira de retourner sur le bouton `Exporter au format PST`{.action} pour récupérer un lien pour télécharger le fichier.
 
 ![emails](images/manager-export-pst02.png){.thumbnail .w-640}
 
@@ -80,15 +80,15 @@ Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minut
 > [!tabs]
 > **Exporter**
 >>
->> - Cliquez sur `fichier` en haut à gauche, puis sur `Ouvrir et exporter` et enfin sur `importer/exporter`.
+>> - Cliquez sur `fichier`{.action} en haut à gauche, puis sur `Ouvrir et exporter`{.action} et enfin sur `importer/exporter`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
->> - Sélectionnez `Exporter des données vers un fichier` puis cliquez sur `Suivant`.
+>> - Sélectionnez `Exporter des données vers un fichier`{.action} puis cliquez sur `Suivant`{.action}.
 >>
 >> ![emails](images/outlook-export-win02.png){.thumbnail .w-640}
 >>
->> - Sélectionnez `Fichier de données Outlook (.pst)` puis cliquez sur `Suivant`.
+>> - Sélectionnez `Fichier de données Outlook (.pst)`{.action} puis cliquez sur `Suivant`{.action}.
 >>
 >> ![emails](images/outlook-export-win03.png){.thumbnail .w-640}
 >>
@@ -97,11 +97,11 @@ Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minut
 >> > [!primary]
 >> > Vous ne pouvez exporter qu’un seul compte à la fois.
 >>
->> Cochez bien `Inclure les sous-dossiers` puis cliquez sur `Suivant`.
+>> Cochez bien `Inclure les sous-dossiers`{.action} puis cliquez sur `Suivant`{.action}.
 >>
 >> ![emails](images/outlook-export-win04.png){.thumbnail .w-640}
 >>
->> - Choisissez le dossier de destination de votre sauvegarde et entrez un nom pour celle-ci en cliquant sur `Parcourir`. Sélectionnez l’option qui vous convient puis cliquez sur `Terminer`.
+>> - Choisissez le dossier de destination de votre sauvegarde et entrez un nom pour celle-ci en cliquant sur `Parcourir`{.action}. Sélectionnez l’option qui vous convient puis cliquez sur `Terminer`{.action}.
 >>
 >> ![emails](images/outlook-export-win05.png){.thumbnail .w-640}
 >>
@@ -111,25 +111,25 @@ Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minut
 >>
 > **Importer**
 >>
->> - Cliquez sur `fichier` en haut à gauche, puis sur `Ouvrir et exporter` et enfin sur `importer/exporter`.
+>> - Cliquez sur `fichier`{.action} en haut à gauche, puis sur `Ouvrir et exporter`{.action} et enfin sur `importer/exporter`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
->> - Sélectionnez `Importer à partir d’un autre programme ou fichier` puis cliquez sur `Suivant`.
+>> - Sélectionnez `Importer à partir d’un autre programme ou fichier`{.action} puis cliquez sur `Suivant`{.action}.
 >>
 >> ![emails](images/outlook-import-win02.png){.thumbnail .w-640}
 >>
->> - Sélectionnez `Fichier de données Outlook (.pst)` puis cliquez sur `Suivant`.
+>> - Sélectionnez `Fichier de données Outlook (.pst)`{.action} puis cliquez sur `Suivant`{.action}.
 >>
 >> ![emails](images/outlook-import-win03.png){.thumbnail .w-640}
 >>
->> - Choisissez votre fichier de sauvegarde en cliquant sur `Parcourir`. Sélectionnez l’option qui vous convient puis cliquez sur `Terminer`.
+>> - Choisissez votre fichier de sauvegarde en cliquant sur `Parcourir`{.action}. Sélectionnez l’option qui vous convient puis cliquez sur `Terminer`{.action}.
 >>
 >> ![emails](images/outlook-import-win04.png){.thumbnail .w-640}
 >>
->> - Si vous avez défini un mot de passe sur votre fichier de sauvegarde, entrez celui-ci puis cliquez sur `OK`.
+>> - Si vous avez défini un mot de passe sur votre fichier de sauvegarde, entrez celui-ci puis cliquez sur `OK`{.action}.
 >>
->> - Sélectionnez `Importer les éléments dans le dossier actif` puis cliquez sur `Terminer`.
+>> - Sélectionnez `Importer les éléments dans le dossier actif`{.action} puis cliquez sur `Terminer`{.action}.
 >>
 >> L’importation de votre sauvegarde se lance.
 
@@ -138,46 +138,46 @@ Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minut
 > [!tabs]
 > **Exporter**
 >>
->> Dans l’onglet `Outils` de votre fenêtre Outlook, cliquez sur `Exporter`.
+>> Dans l’onglet `Outils`{.action} de votre fenêtre Outlook, cliquez sur `Exporter`{.action}.
 >>
 >> ![emails](images/outlook-export-mac01.png){.thumbnail .w-640}
 >>
->> Depuis la fenêtre « Exporter vers un fichier archive (.olm) », cochez les éléments que vous souhaitez ajouter à votre fichier sauvegarde, puis cliquez sur `Continuer`.
+>> Depuis la fenêtre « Exporter vers un fichier archive (.olm) », cochez les éléments que vous souhaitez ajouter à votre fichier sauvegarde, puis cliquez sur `Continuer`{.action}.
 >>
 >> ![emails](images/outlook-export-mac02.png){.thumbnail .w-640}
 >>
->> Sélectionnez ensuite le dossier de destination pour votre sauvegarde, puis cliquez sur `Enregistrer`.
+>> Sélectionnez ensuite le dossier de destination pour votre sauvegarde, puis cliquez sur `Enregistrer`{.action}.
 >>
 >> ![emails](images/outlook-export-mac03.png){.thumbnail .w-640}
 >>
->> Une fenêtre de progression s’affichera, cliquez sur `Continuer` à la fin de l’opération. Vous retrouverez votre fichier de sauvegarde dans le dossier choisi précédemment.
+>> Une fenêtre de progression s’affichera, cliquez sur `Continuer`{.action} à la fin de l’opération. Vous retrouverez votre fichier de sauvegarde dans le dossier choisi précédemment.
 >>
 > **Importer**
 >>
->> Dans l’onglet `Outils` de votre fenêtre Outlook, cliquez sur `Importer`.
+>> Dans l’onglet `Outils`{.action} de votre fenêtre Outlook, cliquez sur `Importer`{.action}.
 >>
 >> ![emails](images/outlook-import-mac01.png){.thumbnail .w-640}
 >>
->> Choisissez le format de sauvegarde que vous allez importer, puis cliquez sur `Continuer`.
+>> Choisissez le format de sauvegarde que vous allez importer, puis cliquez sur `Continuer`{.action}.
 >>
 >> ![emails](images/outlook-import-mac02.png){.thumbnail .w-640}
 >>
->> Sélectionnez votre fichier de sauvegarde, puis cliquez sur `importer`.
+>> Sélectionnez votre fichier de sauvegarde, puis cliquez sur `Importer`{.action}.
 >>
 >> ![emails](images/outlook-import-mac03.png){.thumbnail .w-640}
 >>
->> Une fenêtre de progression s’affichera, cliquez sur `Continuer` à la fin de l’opération. Votre sauvegarde est alors déployée sur votre Outlook.
+>> Une fenêtre de progression s’affichera, cliquez sur `Continuer`{.action} à la fin de l’opération. Votre sauvegarde est alors déployée sur votre Outlook.
 
 ### Mail sur Mac OS
 
 > [!tabs]
 > **Exporter**
 >>
->> Depuis la colonne de gauche, sélectionnez un ou plusieurs comptes e-mail. Cliquez sur `Boîte aux lettres` dans le menu horizontal, puis sur `Exporter la boîte aux lettres`.
+>> Depuis la colonne de gauche, sélectionnez un ou plusieurs comptes e-mail. Cliquez sur `Boîte aux lettres`{.action} dans le menu horizontal, puis sur `Exporter la boîte aux lettres`{.action}.
 >>
 >> ![emails](images/mail-export-mac01.png){.thumbnail .w-640}
 >>
->> Sélectionnez le dossier de votre choix ou créez-en un nouveau, puis cliquez sur `Choisir`.
+>> Sélectionnez le dossier de votre choix ou créez-en un nouveau, puis cliquez sur `Choisir`{.action}.
 >>
 >> ![emails](images/mail-export-mac02.png){.thumbnail .w-640}
 >>
@@ -185,11 +185,11 @@ Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minut
 >>
 > **Importer**
 >>
->> Cliquez sur `Fichier` dans le menu horizontal, puis sur `Importer des boîtes aux lettres`.
+>> Cliquez sur `Fichier`{.action} dans le menu horizontal, puis sur `Importer des boîtes aux lettres`{.action}.
 >>
 >> ![emails](images/mail-import-mac01.png){.thumbnail .w-640}
 >>
->> Sélectionnez votre fichier de sauvegarde au format « .mbox », puis cliquez sur `Continuer`.
+>> Sélectionnez votre fichier de sauvegarde au format « .mbox », puis cliquez sur `Continuer`{.action}.
 >>
 >> ![emails](images/mail-import-mac02.png){.thumbnail .w-640}
 >>
@@ -202,11 +202,11 @@ Il n'existe actuellement pas de fonctionnalité native pour exporter ou importer
 > [!tabs]
 > **Exporter**
 >>
->> Depuis la fenêtre principale, cliquez sur le menu en haut à droite puis sur `Aide` et enfin sur `Informations de dépannage`.
+>> Depuis la fenêtre principale, cliquez sur le menu en haut à droite puis sur `Aide`{.action} et enfin sur `Informations de dépannage`{.action}.
 >>
 >> ![emails](images/thunderbird_menu.png){.thumbnail .w-640}
 >>
->> Un tableau apparaît. Identifiez la ligne `Répertoire de profil` et cliquez sur le bouton `Ouvrir le dossier correspondant`.
+>> Un tableau apparaît. Identifiez la ligne `Répertoire de profil`{.action} et cliquez sur le bouton `Ouvrir le dossier correspondant`{.action}.
 >>
 >> ![emails](images/thunderbird_open_folder.png){.thumbnail .w-640}
 >>
@@ -227,15 +227,15 @@ Il n'existe actuellement pas de fonctionnalité native pour exporter ou importer
 >>
 >> Vous devez d’abord démarrer Thunderbird via le gestionnaire de profils.
 >>
->> - Sur Windows, allez sur le menu `Démarrer` puis sur le programme `Exécuter`. Sur ce dernier, tapez `thunderbird.exe -ProfileManager` et cliquez sur `OK`.
+>> - Sur Windows, allez sur le menu `Démarrer`{.action} puis sur le programme `Exécuter`{.action}. Sur ce dernier, tapez `thunderbird.exe -ProfileManager` et cliquez sur `OK`{.action}.
 >>
 >> ![emails](images/thunderbird-run-profil.png){.thumbnail .w-640}
 >>
->> - Sur Mac OS, lancez l’application Terminal puis glissez-déposez votre application Thunderbird dans la fenêtre du Terminal, en ajoutant à la ligne `/Contents/MacOS/thunderbird-bin -ProfileManager`. Tapez sur la touche `Entrée` (⏎) pour valider.
+>> - Sur Mac OS, lancez l’application Terminal puis glissez-déposez votre application Thunderbird dans la fenêtre du Terminal, en ajoutant à la ligne `/Contents/MacOS/thunderbird-bin -ProfileManager`. Tapez sur la touche `Entrée`{.action} (⏎) pour valider.
 >>
 >> ![emails](images/thunderbird-terminal-profil.png){.thumbnail .w-640}
 >>
->> La fenêtre suivante vous affiche les profils existants. Cliquez sur `Créer un profil` puis sur `Suivant` lorsque le message d’information s’affiche.
+>> La fenêtre suivante vous affiche les profils existants. Cliquez sur `Créer un profil`{.action} puis sur `Suivant`{.action} lorsque le message d’information s’affiche.
 >>
 >> ![emails](images/thunderbird-profil-create01.png){.thumbnail .w-640}
 >>
@@ -246,9 +246,9 @@ Il n'existe actuellement pas de fonctionnalité native pour exporter ou importer
 >> > [!primary]
 >> > Nous vous conseillons de copier la sauvegarde de votre profil Thunderbird dans le dossier de profils de Thunderbird.
 >>
->> Cliquez sur `Choisir un dossier...` pour sélectionner le dossier contenant votre sauvegarde. Cliquez sur `Terminer` pour créer le profil avec votre sauvegarde.
+>> Cliquez sur `Choisir un dossier...`{.action} pour sélectionner le dossier contenant votre sauvegarde. Cliquez sur `Terminer`{.action} pour créer le profil avec votre sauvegarde.
 >>
->> Vous retrouvez la fenêtre de choix de votre profil avec votre nouveau profil sélectionné. Cliquez sur `Démarrer Thunderbird`, Thunderbird sera lancé avec tous les éléments que vous aviez dans votre sauvegarde.
+>> Vous retrouvez la fenêtre de choix de votre profil avec votre nouveau profil sélectionné. Cliquez sur `Démarrer Thunderbird`{.action}, Thunderbird sera lancé avec tous les éléments que vous aviez dans votre sauvegarde.
 
 ### Vérifier l'importation sur la nouvelle adresse e-mail
 

@@ -60,11 +60,11 @@ Las instrucciones siguientes se dividen en dos partes:
 
 Si tiene una cuenta de correo [Exchange de OVHcloud](/links/web/emails-hosted-exchange), puede exportarla directamente en formato PST desde el área de cliente.
 
-En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta de correo que quiera exportar y luego en `Exportar a PST`{.action}.
+Una vez en la página de su servicio Exchange, en la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta de correo que quiera exportar y luego en `Exportar en formato PST`{.action}.
 
 ![correo electrónico](images/manager-export-pst01.png){.thumbnail .w-640}
 
-A continuación, habrá que esperar el tiempo de la exportación, que puede tardar unos minutos a varias horas, según el tamaño de la exportación. Al final del archivo, solo tendrá que volver al botón `Exportar a PST`{.action} para descargar el archivo.
+A continuación, habrá que esperar el tiempo de la exportación, que puede tardar unos minutos a varias horas, según el tamaño de la exportación. Al final del archivo, solo tendrá que volver al botón `Exportar en formato PST`{.action} para descargar el archivo.
 
 ![correo electrónico](images/manager-export-pst02.png){.thumbnail .w-640}
 
@@ -73,15 +73,15 @@ A continuación, habrá que esperar el tiempo de la exportación, que puede tard
 > [!tabs]
 > **Exportar**
 >>
->> - Haga clic en `archivo` en la parte superior izquierda, luego en `Abrir y Exportar` y, por último, en `importar y exportar`.
+>> - Haga clic en `archivo`{.action} en la parte superior izquierda, luego en `Abrir y Exportar`{.action} y, por último, en `importar y exportar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
->> - Seleccione `Exportar datos a un archivo` y haga clic en `Siguiente`.
+>> - Seleccione `Exportar datos a un archivo`{.action} y haga clic en `Siguiente`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-win02.png){.thumbnail .w-640}
 >>
->> - Seleccione `Archivo de datos Outlook (.pst)` y haga clic en `Siguiente`.
+>> - Seleccione `Archivo de datos Outlook (.pst)`{.action} y haga clic en `Siguiente`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-win03.png){.thumbnail .w-640}
 >>
@@ -90,11 +90,11 @@ A continuación, habrá que esperar el tiempo de la exportación, que puede tard
 >> > [!primary]
 >> > Solo puede exportar una cuenta a la vez.
 >>
->> Marque `Incluir las subcarpetas` y haga clic en `Siguiente`.
+>> Marque `Incluir las subcarpetas`{.action} y haga clic en `Siguiente`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-win04.png){.thumbnail .w-640}
 >>
->> - Seleccione la carpeta de destino de la copia de seguridad e introduzca un nombre para ella haciendo clic en `Navegar`. Seleccione la opción más adecuada y haga clic en `Finalizar`.
+>> - Seleccione la carpeta de destino de la copia de seguridad e introduzca un nombre para ella haciendo clic en `Navegar`{.action}. Seleccione la opción más adecuada y haga clic en `Finalizar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-win05.png){.thumbnail .w-640}
 >>
@@ -104,25 +104,25 @@ A continuación, habrá que esperar el tiempo de la exportación, que puede tard
 >>
 > **Importar**
 >>
->> - Haga clic en `archivo` en la parte superior izquierda, luego en `Abrir y Exportar` y, por último, en `importar y exportar`.
+>> - Haga clic en `archivo`{.action} en la parte superior izquierda, luego en `Abrir y Exportar`{.action} y, por último, en `importar y exportar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
->> - Seleccione `Importar de otro programa o archivo` y haga clic en `Siguiente`.
+>> - Seleccione `Importar de otro programa o archivo`{.action} y haga clic en `Siguiente`{.action}.
 >>
 >> ![correo electrónico](images/outlook-import-win02.png){.thumbnail .w-640}
 >>
->> - Seleccione `Archivo de datos Outlook (.pst)` y haga clic en `Siguiente`.
+>> - Seleccione `Archivo de datos Outlook (.pst)`{.action} y haga clic en `Siguiente`{.action}.
 >>
 >> ![correo electrónico](images/outlook-import-win03.png){.thumbnail .w-640}
 >>
->> - Seleccione el archivo de backup haciendo clic en `Navegar`. Seleccione la opción más adecuada y haga clic en `Finalizar`.
+>> - Seleccione el archivo de backup haciendo clic en `Navegar`{.action}. Seleccione la opción más adecuada y haga clic en `Finalizar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-import-win04.png){.thumbnail .w-640}
 >>
->> - Si ha establecido una contraseña en el archivo de backup, introdúzcala y haga clic en `Aceptar`.
+>> - Si ha establecido una contraseña en el archivo de backup, introdúzcala y haga clic en `Aceptar`{.action}.
 >>
->> - Seleccione `Importar elementos a la carpeta actual` y haga clic en `Finalizar`.
+>> - Seleccione `Importar elementos a la carpeta actual`{.action} y haga clic en `Finalizar`{.action}.
 >>
 >> Se inicia la importación de la copia de seguridad.
 
@@ -131,46 +131,46 @@ A continuación, habrá que esperar el tiempo de la exportación, que puede tard
 > [!tabs]
 > **Exportar**
 >>
->> En la pestaña `Herramientas` de su ventana de Outlook, haga clic en `Exportar`.
+>> En la pestaña `Herramientas`{.action} de su ventana de Outlook, haga clic en `Exportar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-mac01.png){.thumbnail .w-640}
 >>
->> En la ventana Exportar a archivo.olm, marque los elementos que quiera añadir al archivo de backup y haga clic en `Continuar`.
+>> En la ventana Exportar a archivo.olm, marque los elementos que quiera añadir al archivo de backup y haga clic en `Continuar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-mac02.png){.thumbnail .w-640}
 >>
->> A continuación, seleccione la carpeta de destino para la copia de seguridad y haga clic en `Guardar`.
+>> A continuación, seleccione la carpeta de destino para la copia de seguridad y haga clic en `Guardar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-mac03.png){.thumbnail .w-640}
 >>
->> Se abrirá una ventana de progreso. Haga clic en `Continuar` al finalizar la operación. El archivo de backup aparecerá en la carpeta que haya elegido anteriormente.
+>> Se abrirá una ventana de progreso. Haga clic en `Continuar`{.action} al finalizar la operación. El archivo de backup aparecerá en la carpeta que haya elegido anteriormente.
 >>
 > **Importar**
 >>
->> En la pestaña `Herramientas` de su ventana de Outlook, haga clic en `Importar`.
+>> En la pestaña `Herramientas`{.action} de su ventana de Outlook, haga clic en `Importar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-import-mac01.png){.thumbnail .w-640}
 >>
->> Seleccione el formato de la copia de seguridad que quiera importar y haga clic en `Continuar`.
+>> Seleccione el formato de la copia de seguridad que quiera importar y haga clic en `Continuar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-import-mac02.png){.thumbnail .w-640}
 >>
->> Seleccione el archivo de backup y haga clic en `importar`.
+>> Seleccione el archivo de backup y haga clic en `Importar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-import-mac03.png){.thumbnail .w-640}
 >>
->> Se abrirá una ventana de progreso. Haga clic en `Continuar` al finalizar la operación. La copia de seguridad se desplegará en su Outlook.
+>> Se abrirá una ventana de progreso. Haga clic en `Continuar`{.action} al finalizar la operación. La copia de seguridad se desplegará en su Outlook.
 
 ### Correo electrónico en Mac OS
 
 > [!tabs]
 > **Exportar**
 >>
->> En la columna izquierda, seleccione una o más cuentas de correo. En el menú horizontal, haga clic en `Buzón de correo` y seleccione `Exportar buzón`.
+>> En la columna izquierda, seleccione una o más cuentas de correo. En el menú horizontal, haga clic en `Buzón de correo`{.action} y seleccione `Exportar buzón`{.action}.
 >>
 >> ![correo electrónico](images/mail-export-mac01.png){.thumbnail .w-640}
 >>
->> Seleccione la carpeta que desee o cree una nueva, y haga clic en `Elegir`.
+>> Seleccione la carpeta que desee o cree una nueva, y haga clic en `Elegir`{.action}.
 >>
 >> ![correo electrónico](images/mail-export-mac02.png){.thumbnail .w-640}
 >>
@@ -178,11 +178,11 @@ A continuación, habrá que esperar el tiempo de la exportación, que puede tard
 >>
 > **Importar**
 >>
->> Haga clic en `Archivo` en el menú horizontal y seleccione `Importar buzones de correo`.
+>> Haga clic en `Archivo`{.action} en el menú horizontal y seleccione `Importar buzones de correo`{.action}.
 >>
 >> ![correo electrónico](images/mail-import-mac01.png){.thumbnail .w-640}
 >>
->> Seleccione el archivo de backup en formato ".mbox" y haga clic en `Continuar`.
+>> Seleccione el archivo de backup en formato ".mbox" y haga clic en `Continuar`{.action}.
 >>
 >> ![correo electrónico](images/mail-import-mac02.png){.thumbnail .w-640}
 >>
@@ -195,11 +195,11 @@ Actualmente no hay ninguna funcionalidad nativa para exportar o importar una cue
 > [!tabs]
 > **Exportar**
 >>
->> En la ventana principal, haga clic en el menú situado en la esquina superior derecha y seleccione `Ayuda` y luego en `Información de reparación`.
+>> En la ventana principal, haga clic en el menú situado en la esquina superior derecha y seleccione `Ayuda`{.action} y luego en `Información de reparación`{.action}.
 >>
 >> ![correo electrónico](images/thunderbird_menu.png){.thumbnail .w-640}
 >>
->> Se mostrará una tabla. Identifique la línea `Directorio de perfil` y haga clic en el botón `Abrir carpeta correspondiente`.
+>> Se mostrará una tabla. Identifique la línea `Directorio de perfil`{.action} y haga clic en el botón `Abrir carpeta correspondiente`{.action}.
 >>
 >> ![correo electrónico](images/thunderbird_open_folder.png){.thumbnail .w-640}
 >>
@@ -220,15 +220,15 @@ Actualmente no hay ninguna funcionalidad nativa para exportar o importar una cue
 >>
 >> En primer lugar, debe iniciar Thunderbird a través del gestor de perfiles.
 >>
->> - En Windows, abra el menú `Iniciar` y seleccione el programa `Ejecutar`. Introduzca `thunderbird.exe -ProfileManager` y haga clic en `OK`.
+>> - En Windows, abra el menú `Iniciar`{.action} y seleccione el programa `Ejecutar`{.action}. Introduzca `thunderbird.exe -ProfileManager` y haga clic en `OK`{.action}.
 >>
 >> ![correo electrónico](images/thunderbird-run-profil.png){.thumbnail .w-640}
 >>
->> - En Mac OS, ejecute la aplicación Terminal y arrastre y coloque su aplicación Thunderbird en la ventana de la Terminal, añadiendo a la línea `/Contents/MacOS/thunderbird-bin -ProfileManager`. Pulse la tecla `Entrar` (⏎) para aceptar.
+>> - En Mac OS, ejecute la aplicación Terminal y arrastre y coloque su aplicación Thunderbird en la ventana de la Terminal, añadiendo a la línea `/Contents/MacOS/thunderbird-bin -ProfileManager`. Pulse la tecla `Entrar`{.action} (⏎) para aceptar.
 >>
 >> ![correo electrónico](images/thunderbird-terminal-profil.png){.thumbnail .w-640}
 >>
->> La siguiente ventana muestra los perfiles existentes. Haga clic en `Crear un perfil` y luego en `Siguiente` cuando aparezca el mensaje informativo.
+>> La siguiente ventana muestra los perfiles existentes. Haga clic en `Crear un perfil`{.action} y luego en `Siguiente`{.action} cuando aparezca el mensaje informativo.
 >>
 >> ![correo electrónico](images/thunderbird-profil-create01.png){.thumbnail .w-640}
 >>
@@ -239,9 +239,9 @@ Actualmente no hay ninguna funcionalidad nativa para exportar o importar una cue
 >> > [!primary]
 >> > Le recomendamos que copie el backup de su perfil de Thunderbird en la carpeta de perfiles de Thunderbird.
 >>
->> Haga clic en `Elegir carpeta..` para seleccionar la carpeta que contenga la copia de seguridad. Haga clic en `Finalizar` para crear el perfil con la copia de seguridad.
+>> Haga clic en `Elegir carpeta...`{.action} para seleccionar la carpeta que contenga la copia de seguridad. Haga clic en `Finalizar`{.action} para crear el perfil con la copia de seguridad.
 >>
->> A continuación, encontrará la ventana de selección de su perfil con el nuevo perfil seleccionado. Haga clic en `Iniciar Thunderbird`. Thunderbird se ejecutará con todos los elementos que tenga en su copia de seguridad.
+>> A continuación, encontrará la ventana de selección de su perfil con el nuevo perfil seleccionado. Haga clic en `Iniciar Thunderbird`{.action}. Thunderbird se ejecutará con todos los elementos que tenga en su copia de seguridad.
 
 ### Comprobar la importación en la nueva dirección de correo
 

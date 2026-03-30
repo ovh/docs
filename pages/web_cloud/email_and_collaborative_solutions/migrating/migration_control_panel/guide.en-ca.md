@@ -48,7 +48,7 @@ If you need to migrate multiple accounts, we recommend that you set up a migrati
 
 This step is optional if you already have an Exchange service to which you are migrating.
 
-Order the Exchange service you want. Follow the steps, then wait until the service is actually installed. An email will be sent to you as soon as it is complete.
+Order the Exchange service you want. Follow the steps, then wait for the service to be installed. You will receive a confirmation email once it is complete.
 
 > [!primary]
 >
@@ -94,13 +94,13 @@ Once you are ready, follow the steps below, depending on the interface you have 
 
 ##### **Migration with the Exchange configuration assistant**
 
-The wizard should appear to help you configure your new Exchange service. During this process, you can select the MX Plan email accounts to migrate.
+A wizard will guide you through configuring your new Exchange service. During this process, you can select the MX Plan email accounts to migrate.
 
 If the configuration wizard does not appear, the general information for the Exchange service will appear instead. In this case, you will need to migrate your accounts via the MX Plan interface.
 
 ##### **Migration from the MX Plan interface**
 
-To migrate from this interface, go to the `Emails`{.action} section of the OVHcloud Control Panel. Then choose the service with the domain name of your email addresses. Click on the `Emails`{.action} tab. Click on `...`{.action} next to the relevant email account (also called the source account), then `Migrate account`{.action}.
+To carry out the migration from this interface, go to the [MX Plan](/links/control-panel/web-mx-plan) section of your OVHcloud Control Panel and select the relevant domain. In the `Emails`{.action} tab, click on `...`{.action} next to the relevant email account (also called the source account), then `Migrate account`{.action}.
 
 ![Exchange](images/access_the_migration_tool.png){.thumbnail}
 
@@ -152,7 +152,7 @@ For more information on OMM, please read our guide on [Migrating email accounts 
 
 The migration time depends on the amount of content to migrate to your new account. This may vary from a few minutes to several hours.
 
-Check that you can find your items after the migration, by logging into OVHcloud [webmail](/links/web/email).
+Check that you can find your items after the migration by logging into [Webmail OVHcloud](/links/web/email).
 
 You can keep or delete the original account with the temporary name after this migration.
 
@@ -193,6 +193,6 @@ You can also manually migrate your email addresses to your new OVHcloud email so
 
 ## Go further
 
-[Exchange guides](/products/web-cloud-email-collaborative-solutions-mx-plan).
+[Exchange guides](/products/web-cloud-email-collaborative-solutions-mx-plan)
 
 Join our [community of users](/links/community).

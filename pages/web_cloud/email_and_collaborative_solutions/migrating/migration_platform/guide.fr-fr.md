@@ -89,7 +89,7 @@ Dans l'onglet `Comptes e-mail`{.action} de votre plateforme e-mail, cliquez sur 
 
 #### Créer
 
-Créez votre adresse e-mail sur le nouveau compte de votre plateforme Email Pro, Exchange ou MX Plan (en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme)
+Créez votre adresse e-mail sur le nouveau compte de votre plateforme Email Pro, Exchange ou MX Plan (en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme).
 
 Dans l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton `...`{.action}, à droite du compte e-mail de destination, puis sur `Modifier`{.action}.
 
@@ -147,11 +147,11 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (ex
 
 ## Aller plus loin
 
-[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Premiers pas avec l'offre Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
+[Premiers pas avec l'offre Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Premiers pas avec l'offre Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted).
+[Premiers pas avec l'offre Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 [Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 

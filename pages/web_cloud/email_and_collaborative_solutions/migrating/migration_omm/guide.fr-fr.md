@@ -69,7 +69,7 @@ Vous êtes maintenant sur la page d'accueil du projet qui vous permettra de lanc
 
 Sur la nouvelle page qui s’affiche, renseignez les informations de connexion du compte source et du compte de destination afin de planifier la migration ou de la lancer immédiatement. Pour rappel, le contenu du **compte source** sera migré vers le **compte de destination**.
 
-Avant de commencer votre migration, il est important de bien connaître les 3 types de comptes que l'on peut migrer et vers lesquels vous pouvez migrer :
+Avant de commencer votre migration, il est important de bien connaître les 3 types de comptes que l'on peut migrer et vers lesquels vous pouvez migrer :
 
 - **OVHcloud** : L'`Autodétection` est conseillée si vous devez migrer un compte hébergé sur l'une des offres e-mail OVHcloud. Si vous possédez un grand nombre de comptes e-mail OVHcloud, sélectionnez l'une des offres suivantes : `MX plan`, `Email Pro`, `Exchange` ou `Zimbra`. Il vous sera demandé de vous connecter au compte OVHcloud associé à l'offre concernée par la migration. Pour plus d'informations, consultez la rubrique « [Migrer via une connexion au compte client OVHcloud](#sso-migration) ».
 - **Autres** : Il s'agit de services e-mail souscrits hors OVHcloud. Une liste non exhaustive de services e-mail pris en charge par OMM est disponible. Si le type de service de votre compte e-mail n'y figure pas, utilisez les protocoles `IMAP` ou `POP`, compatibles avec la plupart des serveurs e-mail.
@@ -117,7 +117,7 @@ Une fois les paramètres des comptes source et destination complétés, cliquez 
 
 ### Migrer via une connexion au compte client OVHcloud <a name="sso-migration"></a>
 
-Lors d'une migration vers ou depuis un compte OVHcloud, il est possible de sélectionner l'une de nos offres `MX plan`, `Email Pro`, `Exchange` ou `Zimbra`.
+Lors d'une migration vers ou depuis un compte OVHcloud, vous pouvez sélectionner l'une de nos offres `MX plan`, `Email Pro`, `Exchange` ou `Zimbra`.
 
 ![omm](images/omm-migration-sso-00.png){.thumbnail .w-300}
 

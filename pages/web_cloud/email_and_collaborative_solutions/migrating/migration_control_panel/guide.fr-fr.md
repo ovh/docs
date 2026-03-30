@@ -129,7 +129,7 @@ Pour plus d'informations sur OMM, consultez notre guide [Migrer des comptes e-ma
 
 Le délai de migration dépend de la quantité de contenu à migrer vers votre nouveau compte. Celui-ci peut varier de quelques minutes à plusieurs heures.
 
-Après la migration, vérifiez que vous retrouvez vos éléments en vous connectant au [Webmail](/links/web/email).
+Après la migration, vérifiez que vous retrouvez vos éléments en vous connectant au [Webmail OVHcloud](/links/web/email).
 
 Vous pouvez conserver ou supprimer le compte d'origine avec le nom provisoire après cette migration.
 
@@ -168,13 +168,13 @@ Une fois que vous êtes prêt, poursuivez la lecture de cette documentation selo
 
 ##### **Migration depuis l'assistant de configuration Exchange**
 
-L'assistant devrait apparaître afin de vous aider à configurer votre nouveau service Exchange. Durant ce processus, vous pourrez sélectionner les comptes e-mails MX Plan à migrer.
+L'assistant s'affiche pour vous aider à configurer votre nouveau service Exchange. Durant ce processus, vous pouvez sélectionner les comptes e-mail MX Plan à migrer.
 
 Si l'assistant de configuration ne s'affiche pas, les informations générales du service Exchange apparaîtront à la place. Dans ce cas, vous devrez réaliser la migration de vos comptes via l'interface MX Plan.
 
 ##### **Migration depuis l'interface MX Plan**
 
-Pour réaliser la migration depuis cette interface, rendez-vous dans la section `Emails`{.action} de votre espace client OVHcloud. Choisissez alors le service portant le nom de domaine de vos adresses e-mail. Cliquez sur l'onglet `Emails`{.action}. Cliquez sur `...`{.action} sur la ligne du compte e-mail concerné (également appelé compte source) puis sur `Migrer le compte`{.action}.
+Pour réaliser la migration depuis cette interface, rendez-vous dans la section [MX Plan](/links/control-panel/web-mx-plan) de votre espace client OVHcloud et sélectionnez le domaine concerné. Dans l'onglet `Emails`{.action}, cliquez sur `...`{.action} sur la ligne du compte e-mail concerné (également appelé compte source), puis sur `Migrer le compte`{.action}.
 
 ![exchange](images/access_the_migration_tool.png){.thumbnail .w-640}
 
@@ -191,7 +191,7 @@ Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voule
 
 À cette étape, vos adresses e-mail doivent déjà être migrées et fonctionnelles. Par sécurité, nous vous invitons à vous assurer que la configuration de votre domaine est correcte en consultant votre espace client.
 
-Pour cela, sélectionnez le service Email Pro, Exchange ou Zimbra concerné, puis rendez-vous sur l'onglet `Domaines associés`{.action} ou `Domaine`{.action} sur votre plateforme. Vérifiez la rubrique ou la colonne `Diagnostic`{.action}.
+Pour cela, sélectionnez le service Email Pro, Exchange ou Zimbra concerné, puis rendez-vous sur l'onglet `Domaines associés`{.action} ou `Domaine`{.action} sur votre plateforme. Vérifiez la rubrique ou la colonne `Diagnostics`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail .w-640}
 
@@ -224,7 +224,7 @@ Vous pouvez également migrer manuellement vos adresses e-mail vers votre nouvel
 
 ## Aller plus loin
 
-[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts)
 
 [Premiers pas avec l'offre Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 

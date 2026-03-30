@@ -93,7 +93,7 @@ Przed rozpoczęciem migracji określ wersję programu MX Plan, z której chcesz 
 >
 > Jeśli właśnie zamówiłeś nową ofertę e-mail, przed rozpoczęciem migracji dodaj najpierw nazwę domeny do platformy e-mail. <br> - *Na przykład, aby przenieść konto "myemail@mydomain.ovh", należy dodać do swojej platformy nazwę domeny "mydomain.ovh".*
 >
-> Wybierz kartę `Przypisane domeny`{.action} lub `Domeny`{.action} na swojej platformie, a następnie kliknij `Dodaj domenę`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Statut` znajduje się oznaczenie `OK` lub `Aktywny`{.action}.
+> Wybierz kartę `Przypisane domeny`{.action} lub `Domena`{.action} na swojej platformie, a następnie kliknij `Dodaj domenę`{.action}. Po dodaniu nazwy domeny upewnij się, że w kolumnie `Status` znajduje się oznaczenie `OK` lub `Aktywny`{.action}.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
@@ -127,7 +127,7 @@ Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym 
 
 Czas migracji zależy od ilości treści, które chcesz przenieść na nowe konto. Może się on różnić od kilku minut do kilku godzin.
 
-Po przeprowadzeniu migracji sprawdź, czy Twoje dane znajdują się na stronie WWW pod adresem [Webmail](/links/web/email)
+Po przeprowadzeniu migracji sprawdź, czy odnajdujesz swoje elementy, logując się do [Webmail OVHcloud](/links/web/email).
 
 Po przeprowadzeniu migracji możesz zachować lub usunąć konto źródłowe, używając tymczasowej nazwy.
 
@@ -172,7 +172,7 @@ Jeśli asystent konfiguracji nie wyświetla się, wyświetlą się ogólne infor
 
 ##### **Migracja z poziomu interfejsu MX Plan**
 
-Aby przeprowadzić migrację w tym interfejsie, przejdź do sekcji `E-maile`{.action} Panelu klienta OVHcloud. Wybierz usługę noszącą nazwę domeny Twoich kont e-mail. Kliknij kartę `E-maile`{.action}. Kliknij logo w kształcie koła zębatego na linii odpowiedniego konta e-mail (zwane również kontem źródłowym), a następnie kliknij `Przeprowadź migrację konta`{.action}.
+Aby przeprowadzić migrację w tym interfejsie, przejdź do sekcji [MX Plan](/links/control-panel/web-mx-plan) Panelu klienta OVHcloud i wybierz odpowiednią domenę. W karcie `E-maile`{.action} kliknij logo w kształcie koła zębatego na linii odpowiedniego konta e-mail (zwane również kontem źródłowym), a następnie kliknij `Przeprowadź migrację konta`{.action}.
 
 ![Exchange](images/access_the_migration_tool.png){.thumbnail}
 

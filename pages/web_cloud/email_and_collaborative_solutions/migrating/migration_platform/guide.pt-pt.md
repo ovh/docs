@@ -60,7 +60,7 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 >
 > Antes de iniciar a sua migração, se acabou de encomendar a sua nova oferta de e-mail, adicione primeiro o nome de domínio à sua plataforma de e-mail. Se estiver a migrar para uma plataforma MX Plan, o nome de domínio anexado sendo "fixo", pode passar diretamente para a [próxima etapa](#accountsmigration).
 >
-> Selecione o separador `Domínios associados`{.action} ou `Domínio`{.action} na sua plataforma, em seguida clique em `Adicionar domínio`{.action}. Uma vez o nome de domínio adicionado, certifique-se de que a indicação `OK` ou `Ativo`{.action} está bem presente na coluna `Status`.
+> Selecione o separador `Domínios associados`{.action} ou `Domínio`{.action} na sua plataforma, em seguida clique em `Adicionar domínio`{.action}. Uma vez o nome de domínio adicionado, certifique-se de que a indicação `OK` ou `Ativo`{.action} está bem presente na coluna `Estado`.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >

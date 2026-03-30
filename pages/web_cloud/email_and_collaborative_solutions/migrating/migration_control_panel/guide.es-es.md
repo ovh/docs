@@ -127,7 +127,7 @@ Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de corr
 
 El tiempo de migración dependerá de cuánto contenido quiera migrar a la nueva cuenta. Éste puede variar desde unos minutos hasta varias horas.
 
-Una vez realizada la migración, compruebe que los elementos que contiene se encuentren conectándose al webmail en la dirección [Webmail](/links/web/email)
+Una vez realizada la migración, compruebe que encuentra todos sus elementos conectándose al [Webmail OVHcloud](/links/web/email).
 
 Una vez realizada la migración, puede conservar o eliminar la cuenta original con el nombre provisional.
 
@@ -172,7 +172,7 @@ Si no aparece el asistente de configuración, la información general del servic
 
 ##### **Migración desde la interfaz MX Plan**
 
-Para realizar la migración desde esta interfaz, acceda a la sección `Correo electrónico`{.action} del área de cliente de OVHcloud. Seleccione el servicio con el nombre de dominio de sus direcciones de correo. Haga clic en la pestaña `Emails`{.action}. Haga clic en `...`{.action} en la línea de la cuenta de correo correspondiente (también llamada cuenta de origen) y seleccione `Migrar la cuenta`{.action}.
+Para realizar la migración desde esta interfaz, acceda a la sección [MX Plan](/links/control-panel/web-mx-plan) de su área de cliente de OVHcloud y seleccione el dominio correspondiente. En la pestaña `Correo electrónico`{.action}, haga clic en `...`{.action} en la línea de la cuenta de correo correspondiente (también llamada cuenta de origen) y seleccione `Migrar la cuenta`{.action}.
 
 ![exchange](images/access_the_migration_tool.png){.thumbnail}
 

@@ -80,7 +80,7 @@ Dans l'onglet `Comptes e-mail`{.action} de votre plateforme e-mail, cliquez sur 
 
 #### Créer
 
-Créez votre adresse e-mail sur le nouveau compte de votre plateforme Exchange ou MX Plan ( en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme)
+Créez votre adresse e-mail sur le nouveau compte de votre plateforme Exchange ou MX Plan ( en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme).
 
 Dans l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton `...`{.action}, à droite du compte e-mail de destination, puis sur `Modifier`{.action}.
 
@@ -139,8 +139,8 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (ex
 
 ## Aller plus loin
 
-[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

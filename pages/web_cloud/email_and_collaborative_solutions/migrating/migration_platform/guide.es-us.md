@@ -141,8 +141,8 @@ Si ha configurado una de las cuentas migradas en un cliente de correo (p.ej.: Ou
 
 ## Más información
 
-[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts).
+[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
