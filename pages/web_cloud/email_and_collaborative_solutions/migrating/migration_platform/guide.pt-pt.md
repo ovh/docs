@@ -1,7 +1,7 @@
 ---
 title: "Migrar os endereços de e-mail de uma plataforma de e-mail OVHcloud para outra"
 excerpt: "Saiba como migrar os endereços de e-mail de uma plataforma Exchange ou E-mail Pro para outra plataforma Exchange, E-mail Pro, MX Plan ou Zimbra"
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Objetivo

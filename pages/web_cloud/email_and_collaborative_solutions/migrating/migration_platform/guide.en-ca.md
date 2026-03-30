@@ -1,7 +1,7 @@
 ---
 title: "Migrating your email addresses from one OVHcloud email platform to another"
 excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro or MX Plan platform"
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Objective
