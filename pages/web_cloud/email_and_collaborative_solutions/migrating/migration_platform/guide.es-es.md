@@ -6,7 +6,7 @@ updated: 2026-01-16
 
 ## Objetivo
 
-Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchange o Email Pro a otra plataforma Exchange, Email Pro, MX Plan o Zimbra, Esta guía explica cómo realizar la migración en dos fases:
+Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchange o Email Pro a otra plataforma Exchange, Email Pro, MX Plan o Zimbra, esta guía explica cómo realizar la migración en dos fases:
 
 1. **Configurar la plataforma de destino**.
 2. **Migrar las cuentas de correo** de su plataforma actual a la nueva.
@@ -24,6 +24,7 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 - Disponer de una plataforma **"fuente"** con cuentas configuradas de [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) o [Zimbra](/links/web/zimbra).
 - Disponer de una plataforma de **"destino"** con cuentas [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-email-pro -->
 <!-- CP-NAV-START:web-exchange -->

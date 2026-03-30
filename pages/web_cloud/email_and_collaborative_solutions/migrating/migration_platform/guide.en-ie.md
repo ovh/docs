@@ -24,6 +24,7 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 
 - A **"source"** platform with configured [Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) accounts or [Zimbra](/links/web/zimbra).
 - A "**destination**" platform with [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](/links/web/hosting)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-email-pro -->
 <!-- CP-NAV-START:web-exchange -->
@@ -59,7 +60,7 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 >
 > Before starting your migration, if you have just ordered your new email offer, first add the domain name to your email platform. If you are migrating to an MX Plan platform, the attached domain name being "fixed", you can directly proceed to the [next step](#accountsmigration).
 >
-> Select the `Associated Domains`{.action} or `Domain`{.action} tab on your platform, then click on `Add a domain`{.action}. Once the domain name is added, make sure the `OK` or `Active`{.action} mention is present in the `Status` column.
+> Select the `Associated domains`{.action} or `Domain`{.action} tab on your platform, then click on `Add a domain`{.action}. Once the domain name is added, make sure the `OK` or `Active`{.action} mention is present in the `Status` column.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
@@ -82,7 +83,7 @@ Your email accounts will be migrated in 3 main steps: **Rename** the original em
 
 Rename the email account to be migrated with a provisional name (example: to migrate the email account *john.smith@mydomain.ovh*, rename it to *john.smith01@mydomain.ovh*).
 
-In the `Email accounts`{.action} tab for your email platform, click on the `...`{.action} button, then `Modify`{.action}.
+In the `Email accounts`{.action} tab for your email platform, click on the `...`{.action} button, then `Edit`{.action}.
 
 ![email-migration](images/migration_platform04.png){.thumbnail}
 
@@ -90,7 +91,7 @@ In the `Email accounts`{.action} tab for your email platform, click on the `...`
 
 Re-create your email address on the new account for your Email Pro, Exchange or MX Plan platform. (Using the previous example, you will create *john.smith@mydomain.ovh* on your new platform.)
 
-In the `Email accounts`{.action} tab for your platform, click on the `...`{.action} button, to the right of the target email account, then `Modify`{.action}.
+In the `Email accounts`{.action} tab for your platform, click on the `...`{.action} button, to the right of the target email account, then `Edit`{.action}.
 
 ![email-migration](images/migration_platform05.png){.thumbnail}
 
@@ -124,7 +125,7 @@ If you would like to delete it, go to the `Email accounts`{.action} tab on your 
 
 At this stage, your email addresses should already be migrated and functional. For security reasons, please ensure that your domain is correctly configured in your Control Panel.
 
-To do this, select the relevant Email Pro, Exchange or Zimbra service, then go to the `Associated Domains`{.action} or `Domain`{.action} tab on your platform. Check the `Diagnostics`{.action} section or column.
+To do this, select the relevant Email Pro, Exchange or Zimbra service, then go to the `Associated domains`{.action} or `Domain`{.action} tab on your platform. Check the `Diagnostics`{.action} section or column.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 

@@ -24,6 +24,7 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 - a "**source**" platform with configured [Exchange](/links/web/emails-hosted-exchange) accounts
 - a "**destination**" platform with [Exchange](/links/web/emails-hosted-exchange) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](/links/web/hosting)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-exchange -->
 ---
@@ -52,7 +53,7 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 >
 > Before starting your migration, if you have just ordered your new email offer, first add the domain name to your email platform. If you are migrating to an MX Plan platform, the attached domain name being "fixed", you can directly proceed to the [next step](#accountsmigration).
 >
-> Select the `Associated Domains`{.action} or `Domain`{.action} tab on your platform, then click on `Add a domain`{.action}. Once the domain name is added, make sure the `OK` or `Active`{.action} mention is present in the `Status` column.
+> Select the `Associated domains`{.action} or `Domain`{.action} tab on your platform, then click on `Add a domain`{.action}. Once the domain name is added, make sure the `OK` or `Active`{.action} mention is present in the `Status` column.
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
@@ -74,7 +75,7 @@ Your email accounts will be migrated in 3 main steps: **Rename** the original em
 
 Rename the email account to be migrated with a provisional name (example: to migrate the email account *john.smith@mydomain.ovh*, rename it to *john.smith01@mydomain.ovh*).
 
-In the `Email accounts`{.action} tab for your email platform, click on the `...`{.action} button, then `Modify`{.action}.
+In the `Email accounts`{.action} tab for your email platform, click on the `...`{.action} button, then `Edit`{.action}.
 
 ![email-migration](images/migration_platform04.png){.thumbnail}
 
@@ -82,7 +83,7 @@ In the `Email accounts`{.action} tab for your email platform, click on the `...`
 
 Re-create your email address on the new account for your Exchange or MX Plan platform. (Using the previous example, you will create *john.smith@mydomain.ovh* on your new platform.)
 
-In the `Email accounts`{.action} tab for your platform, click on the `...`{.action} button, to the right of the target email account, then `Modify`{.action}.
+In the `Email accounts`{.action} tab for your platform, click on the `...`{.action} button, to the right of the target email account, then `Edit`{.action}.
 
 ![email-migration](images/migration_platform05.png){.thumbnail}
 
