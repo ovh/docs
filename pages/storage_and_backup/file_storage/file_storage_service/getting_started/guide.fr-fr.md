@@ -8,7 +8,7 @@ updated: 2026-02-24
 
 OVHcloud propose un service File Storage basé sur OpenStack Manila. Ce service fournit des shares NFS gérés sur des réseaux privés, avec un accès ReadWriteMany (RWX) possible depuis plusieurs instances ou pods Kubernetes.
 
-Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI et Terraform.
+Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espace client OVHcloud et Terraform.
 
 ## Prérequis
 

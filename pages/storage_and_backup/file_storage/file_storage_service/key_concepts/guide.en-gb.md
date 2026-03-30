@@ -56,6 +56,7 @@ Operations & interfaces:
 - OpenStack CLI (Manila plugin)
 - Manila CSI (Kubernetes)
 - Terraform
+- The OVHcloud Control Panel
 
 > [!warning]
 >
