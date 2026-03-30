@@ -81,7 +81,7 @@ To prove that you are the owner of the range, you will be requested to enter a s
 - For ARIN, edit the « **Public Comments** » field of the « **Network** » object.
 - For APNIC, edit the « **remarks** » field of « **inetnum** » object.
 
-The token needs to appears in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
+The token needs to appear in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
 
 ### You must prove ownership of the AS number (required only if you provide an AS number) <a name="proveownershipas"></a>
 
@@ -91,7 +91,7 @@ To prove that you are the owner of the AS number, you will be required to reuse 
 - For ARIN, edit the « **Public Comments** » field of the « **ASN** » object.
 - For APNIC, edit the « **remarks** » field of « **aut-num** » object.
 
-The token needs to appears in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
+The token needs to appear in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
 
 ### You have to allow OVHcloud to announce the IP range <a name="announceip"></a>
 
@@ -149,7 +149,7 @@ Filtering public IP addresses by tag is not currently available. We recommend fi
 ### How to use the product
 
 The imported IPs will behave like the current Additional IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same region.<br>
-To activate the announcement of your imported IP range on the Internet, simply assign one of your block to an eligible product via the control panel or the OVHcloud API.<br>
+To activate the announcement of your imported IP range on the Internet, simply assign one of your blocks to an eligible product via the control panel or the OVHcloud API.<br>
 
 > [!warning]
 > Some operations available on the Additional IP product will not be available on the BYOIP product.
@@ -203,7 +203,7 @@ To merge back a block into a parent block, use this API call:
 
 Use the following parameters:
 
-- ip: the IP block you want to merge, in CIDR notation.-
+- ip: the IP block you want to merge, in CIDR notation.
 - aggregationIp: the resulting block, in CIDR notation.
 
 The resulting block will be an aggregate of all its children blocks.
@@ -290,7 +290,7 @@ Not for the moment.
 
 ### Can I order the service while I still have my IP range announced from another site?
 
-Yes, but once the BYOIP service has been delivered, you must immediately cancel the annoucement from the other site, as you risk connectivity issues with any services hosted at OVHcloud. In this case, OVHcloud cannot be held responsible.
+Yes, but once the BYOIP service has been delivered, you must immediately cancel the announcement from the other site, as you risk connectivity issues with any services hosted at OVHcloud. In this case, OVHcloud cannot be held responsible.
 
 ## Go further
 
