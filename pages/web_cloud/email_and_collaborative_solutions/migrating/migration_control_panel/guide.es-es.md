@@ -1,7 +1,7 @@
 ---
 title: 'Migrar una dirección de correo electrónico MX Plan a una cuenta de correo electrónico profesional, Exchange o Zimbra'
 excerpt: 'Descubra cómo migrar una dirección de correo electrónico MX Plan a una cuenta de correo electrónico profesional, Exchange o Zimbra'
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Objetivo

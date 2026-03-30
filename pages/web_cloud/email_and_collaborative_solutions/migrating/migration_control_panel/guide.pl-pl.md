@@ -1,7 +1,7 @@
 ---
 title: 'Migrowanie adresu e-mail MX Plan do konta E-mail Pro, Exchange lub Zimbra'
 excerpt: 'Dowiedz się, jak przeprowadzić migrację adresu e-mail MX Plan do konta E-mail Pro, Exchange lub Zimbra'
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Wprowadzenie

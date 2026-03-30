@@ -1,7 +1,7 @@
 ---
 title: Migrar manualmente o seu endereço de e-mail
 excerpt: Saiba como migrar manualmente um endereço de e-mail para outro endereço de e-mail
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Objetivo

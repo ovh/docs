@@ -1,7 +1,7 @@
 ---
 title: Ręczna migracja Twojego konta e-mail
 excerpt: Dowiedz się, jak ręcznie przenieść Twoje konto e-mail na inny adres e-mail
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Wprowadzenie

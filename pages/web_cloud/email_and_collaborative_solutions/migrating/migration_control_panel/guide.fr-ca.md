@@ -2,7 +2,7 @@
 title: 'Migrer une adresse e-mail MX Plan vers un compte Exchange'
 excerpt: 'Découvrez comment migrer une adresse e-mail MX Plan vers un compte Exchange'
 hidden: true
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: 'Migrate email accounts via OVHcloud Mail Migrator'
 excerpt: 'Find out how to migrate your email accounts to OVHcloud using our OVHcloud Mail Migrator tool'
-updated: 2025-11-25
+updated: 2026-03-30
 ---
 
 <style>
