@@ -35,9 +35,9 @@ updated: 2026-01-16
 - **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
@@ -80,7 +80,7 @@ De seguida, será necessário aguardar o tempo de exportação que pode levar al
 > [!tabs]
 > **Exportar**
 >>
->> - Clique em `ficheiro`{.action} no canto superior esquerdo, depois em `Abrir e exportar`{.action} e, por fim, em `importar/exportar`{.action}.
+>> - Clique em `Ficheiro`{.action} no canto superior esquerdo, depois em `Abrir e exportar`{.action} e, por fim, em `Importar/Exportar`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
@@ -111,7 +111,7 @@ De seguida, será necessário aguardar o tempo de exportação que pode levar al
 >>
 > **Importar**
 >>
->> - Clique em `ficheiro`{.action} no canto superior esquerdo, depois em `Abrir e exportar`{.action} e, por fim, em `importar/exportar`{.action}.
+>> - Clique em `Ficheiro`{.action} no canto superior esquerdo, depois em `Abrir e exportar`{.action} e, por fim, em `Importar/Exportar`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
@@ -210,7 +210,7 @@ Atualmente, não existe nenhuma funcionalidade nativa para exportar ou importar 
 >>
 >> ![emails](images/thunderbird_open_folder.png){.thumbnail .w-640}
 >>
->> Será então gerido na pasta do perfil. Remova de uma pasta para a arborescência.
+>> Será então direcionado para a pasta do perfil. Suba um nível na árvore de pastas.
 >>
 >> ![emails](images/thunderbird_profil_folder1.png){.thumbnail .w-640}
 >>

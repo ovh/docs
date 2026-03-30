@@ -80,7 +80,7 @@ A continuación, habrá que esperar el tiempo de la exportación, que puede tard
 > [!tabs]
 > **Exportar**
 >>
->> - Haga clic en `archivo`{.action} en la parte superior izquierda, luego en `Abrir y Exportar`{.action} y, por último, en `importar y exportar`{.action}.
+>> - Haga clic en `Archivo`{.action} en la parte superior izquierda, luego en `Abrir y Exportar`{.action} y, por último, en `Importar y exportar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
@@ -111,7 +111,7 @@ A continuación, habrá que esperar el tiempo de la exportación, que puede tard
 >>
 > **Importar**
 >>
->> - Haga clic en `archivo`{.action} en la parte superior izquierda, luego en `Abrir y Exportar`{.action} y, por último, en `importar y exportar`{.action}.
+>> - Haga clic en `Archivo`{.action} en la parte superior izquierda, luego en `Abrir y Exportar`{.action} y, por último, en `Importar y exportar`{.action}.
 >>
 >> ![correo electrónico](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>

@@ -59,7 +59,7 @@ Dans ce guide nous avons réalisé les opérations sur les 3 logiciels de messag
 
 Les instructions qui suivent sont décomposées en deux parties :
 
-- **L'exportation**. Cela vous permet d'extraire une sauvegarde complète de votre adresse e-mail pour la basculer vers un autre poste, logiciel de messagerie, ou import vers un autre compte. Si vous devez déplacer des éléments d'une adresse e-mail vers une autre adresse qui est configurée sur le même logiciel de messagerie, il est possible de copier/coller ou de glisser/déposer l'une vers l'autre. Il est néanmoins recommandé d'utiliser le système d'exportation du logiciel que vous utilisez.
+- **L'exportation**. Cela vous permet d'extraire une sauvegarde complète de votre adresse e-mail pour la basculer vers un autre poste, logiciel de messagerie, ou import vers un autre compte. Si vous devez déplacer des éléments d'une adresse e-mail vers une autre adresse qui est configurée sur le même logiciel de messagerie, il est possible de copier/coller ou de glisser/déposer l'une vers l'autre. Nous vous recommandons néanmoins d'utiliser le système d'exportation de votre logiciel de messagerie.
 
 - **L'importation**. Cela vous permet d'appliquer une sauvegarde que vous avez réalisée sur votre nouveau poste ou nouveau logiciel. Vérifiez que le fichier de sauvegarde à importer est compatible avec le logiciel de messagerie que vous utilisez.
 
@@ -80,7 +80,7 @@ Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minut
 > [!tabs]
 > **Exporter**
 >>
->> - Cliquez sur `fichier`{.action} en haut à gauche, puis sur `Ouvrir et exporter`{.action} et enfin sur `importer/exporter`{.action}.
+>> - Cliquez sur `Fichier`{.action} en haut à gauche, puis sur `Ouvrir et exporter`{.action} et enfin sur `Importer/Exporter`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
@@ -111,7 +111,7 @@ Il faudra ensuite patienter le temps de l'export qui peut prendre quelques minut
 >>
 > **Importer**
 >>
->> - Cliquez sur `fichier`{.action} en haut à gauche, puis sur `Ouvrir et exporter`{.action} et enfin sur `importer/exporter`{.action}.
+>> - Cliquez sur `Fichier`{.action} en haut à gauche, puis sur `Ouvrir et exporter`{.action} et enfin sur `Importer/Exporter`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
@@ -220,7 +220,7 @@ Il n'existe actuellement pas de fonctionnalité native pour exporter ou importer
 >>
 > **Importer**
 >>
->> Plutôt qu’une importation, il sera question ici d’un chargement de profil.
+>> Il ne s’agit pas d’une importation classique, mais d’un chargement de profil.
 >> Si des comptes e-mail ont déjà été configurés sur l’instance Thunderbird de destination, ils seront présents sur un profil A.
 >> Lorsque Thunderbird va charger un nouveau profil (profil B), il ne pourra charger **que** les éléments de ce profil B.
 >> C’est pourquoi nous vous conseillons de charger d’abord le nouveau profil (profil B) puis d’y configurer les comptes e-mail provenant du profil A.

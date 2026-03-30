@@ -19,7 +19,7 @@ updated: 2026-01-16
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](/links/web/emails-exchange), [Email Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](/links/web/hosting))
+- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](/links/web/emails-exchange), [E-mail Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](/links/web/hosting))
 - Posiadanie danych dostępowych do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Posiadanie danych dostępowych do kont e-mail OVHcloud, na które przeniesione zostaną dane (konta docelowe)
 
@@ -35,9 +35,9 @@ updated: 2026-01-16
 - **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 **Exchange:**
@@ -80,11 +80,11 @@ Następnie należy poczekać na eksport, który może trwać od kilku minut do k
 > [!tabs]
 > **Eksport**
 >>
->> - Kliknij `plik`{.action} w lewym górnym rogu, a następnie `Otwórz i wyeksportuj`{.action}, a następnie wybierz `import/eksport`{.action}.
+>> - Kliknij `Plik`{.action} w lewym górnym rogu, a następnie `Otwórz i wyeksportuj`{.action}, a następnie wybierz `Import/Eksport`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
->> - Wybierz Eksportuj `dane do pliku`{.action}, po czym kliknij `Dalej`{.action}.
+>> - Wybierz `Eksportuj dane do pliku`{.action}, po czym kliknij `Dalej`{.action}.
 >>
 >> ![emails](images/outlook-export-win02.png){.thumbnail .w-640}
 >>
@@ -111,11 +111,11 @@ Następnie należy poczekać na eksport, który może trwać od kilku minut do k
 >>
 > **Import**
 >>
->> - Kliknij `plik`{.action} w lewym górnym rogu, a następnie `Otwórz i wyeksportuj`{.action}, a następnie wybierz `import/eksport`{.action}.
+>> - Kliknij `Plik`{.action} w lewym górnym rogu, a następnie `Otwórz i wyeksportuj`{.action}, a następnie wybierz `Import/Eksport`{.action}.
 >>
 >> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
->> - Wybierz Importuj `z innego programu lub pliku`{.action}, a następnie kliknij `Dalej`{.action}.
+>> - Wybierz `Importuj z innego programu lub pliku`{.action}, a następnie kliknij `Dalej`{.action}.
 >>
 >> ![emails](images/outlook-import-win02.png){.thumbnail .w-640}
 >>
@@ -129,7 +129,7 @@ Następnie należy poczekać na eksport, który może trwać od kilku minut do k
 >>
 >> - Jeśli ustaliłeś hasło do pliku kopii zapasowej, wprowadź je i kliknij `OK`{.action}.
 >>
->> - Wybierz `Importuj elementy do aktywnego`{.action} folderu, a następnie kliknij `Zakończ`{.action}.
+>> - Wybierz `Importuj elementy do aktywnego folderu`{.action}, a następnie kliknij `Zakończ`{.action}.
 >>
 >> Rozpoczyna się import kopii zapasowej.
 
@@ -214,7 +214,7 @@ Aktualnie nie istnieje funkcjonalność umożliwiająca eksportowanie lub import
 >>
 >> ![emails](images/thunderbird_profil_folder1.png){.thumbnail .w-640}
 >>
->> Skopiuj folder profilu za pomocą prawym przyciskiem myszy, a następnie wklej ten folder do wybranego folderu lub pomocy.
+>> Skopiuj folder profilu za pomocą prawego przycisku myszy, a następnie wklej ten folder do wybranego folderu lub pomocy.
 >>
 >> ![emails](images/thunderbird_profil_folder2.png){.thumbnail .w-640}
 >>

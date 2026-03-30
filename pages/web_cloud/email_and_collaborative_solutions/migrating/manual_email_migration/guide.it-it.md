@@ -80,7 +80,7 @@ Attendi il completamento dell'operazione, che potrebbe richiedere da qualche min
 > [!tabs]
 > **Esportare**
 >>
->> - Clicca su `file`{.action} in alto a sinistra, poi su `Aprire ed esportare`{.action} e infine su `importare/esportare`{.action}.
+>> - Clicca su `File`{.action} in alto a sinistra, poi su `Aprire ed esportare`{.action} e infine su `Importare/Esportare`{.action}.
 >>
 >> ![email](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
@@ -105,13 +105,13 @@ Attendi il completamento dell'operazione, che potrebbe richiedere da qualche min
 >>
 >> ![email](images/outlook-export-win05.png){.thumbnail .w-640}
 >>
->> L'esportazione del tuo file inizia. Durante la creazione di un file, ti verrà chiesto di definire una password. che è facoltativo.
+>> L'esportazione del tuo file inizia. Durante la creazione di un file, ti verrà chiesto di definire una password, che è facoltativo.
 >>
 >> ![email](images/outlook-export-win06.png){.thumbnail .w-640}
 >>
 > **Importare**
 >>
->> - Clicca su `file`{.action} in alto a sinistra, poi su `Aprire ed esportare`{.action} e infine su `importare/esportare`{.action}.
+>> - Clicca su `File`{.action} in alto a sinistra, poi su `Aprire ed esportare`{.action} e infine su `Importare/Esportare`{.action}.
 >>
 >> ![email](images/outlook-export-import-win.png){.thumbnail .w-640}
 >>
@@ -127,7 +127,7 @@ Attendi il completamento dell'operazione, che potrebbe richiedere da qualche min
 >>
 >> ![email](images/outlook-import-win04.png){.thumbnail .w-640}
 >>
->> - Se hai impostato una password sul tuo file di backup, inseriscilo e clicca su `OK`{.action}.
+>> - Se hai impostato una password sul tuo file di backup, inseriscila e clicca su `OK`{.action}.
 >>
 >> - Seleziona `Importa gli elementi nella cartella attiva`{.action} e clicca su `Termina`{.action}.
 >>
@@ -150,7 +150,7 @@ Attendi il completamento dell'operazione, che potrebbe richiedere da qualche min
 >>
 >> ![email](images/outlook-export-mac03.png){.thumbnail .w-640}
 >>
->> Visualizzi una finestra di progressione, clicca su `Continua`{.action} alla fine dell'operazione. Il file di backup è disponibile nella cartella selezionata precedentemente.
+>> Viene visualizzata una finestra di progressione, clicca su `Continua`{.action} alla fine dell'operazione. Il file di backup è disponibile nella cartella selezionata precedentemente.
 >>
 > **Importare**
 >>
@@ -166,7 +166,7 @@ Attendi il completamento dell'operazione, che potrebbe richiedere da qualche min
 >>
 >> ![email](images/outlook-import-mac03.png){.thumbnail .w-640}
 >>
->> Visualizzi una finestra di progressione, clicca su `Continua`{.action} alla fine dell'operazione. Il backup viene poi implementato sul tuo Outlook.
+>> Viene visualizzata una finestra di progressione, clicca su `Continua`{.action} alla fine dell'operazione. Il backup viene poi implementato sul tuo Outlook.
 
 ### Email su Mac OS
 
@@ -197,7 +197,7 @@ Attendi il completamento dell'operazione, che potrebbe richiedere da qualche min
 
 ### Thunderbird
 
-Al momento non esistono funzionalità native per esportare o importare un account e-mail da Thunderbird. È comunque possibile salvare un profilo Thunderbird. che contiene tutti gli account e le email in locale sul tuo computer. Questa guida ti mostra come salvare un profilo Thunderbird e reinserirlo su una nuova istanza di Thunderbird.
+Al momento non esistono funzionalità native per esportare o importare un account e-mail da Thunderbird. È comunque possibile salvare un profilo Thunderbird che contiene tutti gli account e le e-mail in locale sul tuo computer. Questa guida ti mostra come salvare un profilo Thunderbird e reinserirlo su una nuova istanza di Thunderbird.
 
 > [!tabs]
 > **Esportare**
@@ -227,7 +227,7 @@ Al momento non esistono funzionalità native per esportare o importare un accoun
 >>
 >> Per prima cosa è necessario avviare Thunderbird tramite il gestore dei profili.
 >>
->> - Su Windows, clicca sul menu `Start`{.action} e poi sul programma `Esegui`{.action}. Clicca su `thunderbird.exe -ProfileManager` e clicca su `OK`{.action}.
+>> - Su Windows, clicca sul menu `Start`{.action} e poi sul programma `Esegui`{.action}. Inserisci `thunderbird.exe -ProfileManager` e clicca su `OK`{.action}.
 >>
 >> ![email](images/thunderbird-run-profil.png){.thumbnail .w-640}
 >>

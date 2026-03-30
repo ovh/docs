@@ -223,9 +223,9 @@ There is currently no native feature to export or import an email account from T
 >> When Thunderbird loads a new profile (profile B), it can **only** load the elements of **this particular** profile.
 >> For this reason, we recommend loading the new profile (profile B) first, then configuring the email accounts from profile A.
 >>
->> You must first start Thunderbird via the profile manager.
+>> First, launch Thunderbird via the Profile Manager.
 >>
->> - On Windows, go to the `Start`{.action} menu and open the `Run`{.action} application. On the latter, type `thunderbird.exe -ProfileManager` and click `OK`{.action}.
+>> - On Windows, go to the `Start`{.action} menu and open the `Run`{.action} application. In the Run dialog, type `thunderbird.exe -ProfileManager` and click `OK`{.action}.
 >>
 >> ![emails](images/thunderbird-run-profil.png){.thumbnail .w-640}
 >>

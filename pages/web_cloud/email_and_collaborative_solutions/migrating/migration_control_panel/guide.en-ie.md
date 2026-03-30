@@ -1,5 +1,5 @@
 ---
-title: 'Migrating an MX Plan email account to an Email Pro, Exchange account or Zimbra'
+title: 'Migrating an MX Plan email account to an Email Pro, Exchange or Zimbra account'
 excerpt: 'Find out how to migrate an MX Plan email address to an Email Pro, Exchange or Zimbra account'
 updated: 2026-01-16
 ---
@@ -125,7 +125,7 @@ For more information on OMM, please read our guide on [Migrating email accounts 
 
 The migration time depends on the amount of content to migrate to your new account. This may vary from a few minutes to several hours.
 
-Check that you can find your items after the migration by logging into [Webmail OVHcloud](/links/web/email).
+Check that you can find your items after the migration by logging into the [OVHcloud webmail](/links/web/email).
 
 You can keep or delete the original account with the temporary name after this migration.
 
