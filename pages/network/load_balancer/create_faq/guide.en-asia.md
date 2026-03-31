@@ -8,6 +8,16 @@ updated: 2025-11-12
 
 This document provides a set of the most frequently asked questions and their corresponding OVHcloud API calls for performing common management and configuration tasks on your OVHcloud Load Balancer service.
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## FAQ
 
 ### How do I configure my Firewall to accept traffic from the OVHcloud Load Balancer?

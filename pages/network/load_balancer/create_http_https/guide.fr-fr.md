@@ -39,11 +39,20 @@ Pour rappel, le service OVHcloud Load Balancer est composé de 4 parties éléme
 ## Prérequis
 
 - Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Posséder une ferme configurée
 - Posséder un frontend configuré
 - Posséder un certificat SSL
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 ## Sommaire
