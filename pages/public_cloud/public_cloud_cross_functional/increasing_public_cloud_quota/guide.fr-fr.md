@@ -29,6 +29,12 @@ Si vous souhaitez en créer davantage, une augmentation de quota est alors néce
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+Dans le menu de gauche, cliquez sur `Quota & Régions`{.action} sous **Paramètres**.
+
+![access quota](images/raisepciquota1.png){.thumbnail}
+
+Cette page présente un récapitulatif des quotas actuels de votre projet par région. Un avertissement apparaît dès qu'une ressource atteint 80 % de son quota.
+
 ### Augmenter votre quota de ressources
 
 En accord avec des critères internes (ancienneté, existence de factures acquitées, etc.), vous êtes désormais autonome sur les demandes d’augmentation de quotas en lien avec vos projets Public Cloud.
@@ -43,8 +49,6 @@ Cette option vous permet de demander une augmentation automatique et progressive
 >
 > **Note** : Ce processus n’est pas adapté pour des augmentations rapides de quota.
 >
-
-Dans le menu de gauche, cliquez sur `Quota & Régions`{.action} sous **Paramètres**.
 
 En haut à droite de la page qui s'affiche, retrouvez l'option **Quota autoscaling** :
 
@@ -68,12 +72,6 @@ Cette procédure permet une augmentation rapide et importante de vos quotas (par
 
 Il est possible d'acheter différents crédits.
 
-Dans le menu de gauche, cliquez sur `Quota & Régions`{.action} sous **Paramètres**.
-
-![access quota](images/raisepciquota1.png){.thumbnail}
-
-Cette page présente un récapitulatif des quotas actuels de votre projet par région. Un avertissement apparaît dès qu'une ressource atteint 80 % de son quota.
-
 Cliquez sur `Augmenter mes quotas`{.action}.
 
 ![raise-pci-quota](images/raisepciquota2.png){.thumbnail}
@@ -84,7 +82,7 @@ Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher 
 
 Le tableau ci-dessous présente les ressources obtenues pour chaque quota :
 
-|Quota|Instances|CPU/Cores|RAM (Go)|Taille du volume (To)|Volumes|Sauvegardes|Taille des sauvegardes (To)|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
+|Quota|Instances|CPU/Cores|RAM (Go)|Taille du volume (To)|Volumes (nombre maximum)|Sauvegardes|Taille des sauvegardes (To)|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
 |20 VMs|20|40|430|20|200|1200|120|30|10|4|
 |50 VMs|50|64|507|20|500|3000|300|75|25|10|

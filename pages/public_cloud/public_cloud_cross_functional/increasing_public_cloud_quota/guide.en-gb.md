@@ -29,6 +29,12 @@ To be able to use additional resources and projects, the quotas need to be incre
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**.
+
+![access quota](images/raisepciquota1.png){.thumbnail}
+
+This page shows a summary of your project's current quotas by region. A warning appears as soon as a resource reaches 80% of its quota.
+
 ### Increasing your resources quota
 
 In compliance with internal criteria (seniority, existence of paid invoices, etc.), you are now free to request quota increases for your Public Cloud projects resources directly from your OVHcloud Control Panel.
@@ -43,8 +49,6 @@ This option allows you to request an automatic and gradual increase in your reso
 >
 > **Note**: This process is not suitable for rapid quota increases.
 >
-
-In the left-hand menu, click on `Quota & Regions`{.action} under **Settings**.
 
 At the top right of the page that appears, you will find the **Auto-scaling quota** option:
 
@@ -68,12 +72,6 @@ This procedure allows for a rapid and significant increase in your quotas (e.g.,
 
 It is possible to purchase different amounts of credit.
 
-In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**.
-
-![access quota](images/raisepciquota1.png){.thumbnail}
-
-This page shows a summary of your project's current quotas by region. A warning appears as soon as a resource reaches 80% of its quota.
-
 Click on the `Increase your quota!`{.action} button.
 
 ![raise-pci-quota](images/raisepciquota2.png){.thumbnail}
@@ -84,7 +82,7 @@ Next, click on the drop down arrow next to "Select the volume" to view the list 
 
 The table below shows the resources obtained for each quota:
 
-|Quota|Instances|CPU/Cores|RAM (GB)|Volume Size (TB)|Volumes|Backups|Backup Size (TB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|Quota|Instances|CPU/Cores|RAM (GB)|Volume Size (TB)|Volumes (maximum number)|Backups|Backup Size (TB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
 |20 VMs|20|40|430|20|200|1200|120|30|10|4|
 |50 VMs|50|64|507|20|500|3000|300|75|25|10|
