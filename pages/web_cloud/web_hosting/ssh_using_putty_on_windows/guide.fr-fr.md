@@ -35,17 +35,6 @@ details[open]>summary::before {
 > Nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) ou [notre communauté](/links/community) si vous rencontrez des difficultés.
 >
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## En pratique
 
 ### Présentation du contenu

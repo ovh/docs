@@ -105,7 +105,6 @@ Pour vous connectez à la base de données via phpMyAdmin, cliquez sur les ongle
 > Désormais, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans phpMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
 >
 > Assurez-vous des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
->
 
 Une fois connecté, la page suivante s'affiche :
 
@@ -115,7 +114,7 @@ Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de
 
 ![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
-Les tables les plus volumineuses apparaissent en haut du tableau. Identifiez celles-ci puis passez à l'**étape 2**.
+Les tables les plus volumineuses apparaissent en haut du tableau. Identifiez celles-ci puis passez à la **partie 2**.
 
 ### 2 - Déterminer l'utilité du contenu présent dans la ou les table(s) volumineuse(s)
 
