@@ -1,12 +1,12 @@
 ---
 title: File Storage Service - Key concepts
 excerpt: "Understand the core concepts of OVHcloud File Storage Service, including NFS shares, access control, architecture, data protection, and how it compares to block and object storage."
-updated: 2026-03-27
+updated: 2026-03-31
 ---
 
 ## Objective
 
-This guide explains the key concepts behind OVHcloud File Storage Service for Public Cloud. It helps you decide when to use managed NFS shares and how they fit into your cloud architecture.
+This guide explains the key concepts behind OVHcloud File Storage Service for Public Cloud and helps you decide when to use managed NFS shares and how they fit into your cloud architecture.
 
 > [!primary]
 >
@@ -17,7 +17,7 @@ This guide explains the key concepts behind OVHcloud File Storage Service for Pu
 
 OVHcloud File Storage Service provides managed NFS shares for your compute workloads (instances, Kubernetes clusters, and other clients) over your private network.
 
-- Built on `OpenStack Manila.`
+- Built on `OpenStack Manila`.
 - Shares are NFS exports with controlled network placement and access rules.
 
 Key properties:
@@ -26,12 +26,12 @@ Key properties:
 - `ReadWriteMany (RWX)` – multiple clients can mount the same share concurrently.
 - `Private connectivity` – intended for private networks, not public Internet access.
 
-## Comparison with Other Storage Models
+## Comparison with other storage models
 
 | Data model         | File Storage (NFS)                                     | Block Storage                                   | Object Storage                               |
 | ------------------ | ------------------------------------------------------ | ----------------------------------------------- | -------------------------------------------- |
 | Concurrent writers | Multiple clients (RWX)                                 | Usually single instance                         | Many clients via API                         |
-| Typical access     | Mount path (/mnt/…)                                    | OS device or partition                          | Applications using S3 SDK/CLI                |
+| Typical access     | Mount path (/mnt/…)                                    | OS device or partition                          | Applications using S3<sup>1</sup> SDK/CLI                |
 | Good for           | Shared files, CMS storage, pipelines, some ML datasets | Databases, boot/data disks, low-latency storage | Backups, archives, static assets, data lakes |
 
 > [!warning]
@@ -39,7 +39,7 @@ Key properties:
 > This table is a decision aid. Always validate latency, throughput, and protocol requirements with your own tests.
 >
 
-## Architecture Overview
+## Architecture overview
 
 Logical components of File Storage Service:
 
@@ -63,7 +63,7 @@ Operations & interfaces:
 > Quotas, max share sizes, and limits are defined in the OVHcloud catalog. Always check current values in the Control Panel.
 >
 
-## Data Protection and Snapshots
+## Data protection and snapshots
 
 Snapshots provide point-in-time views of share data:
 
@@ -77,7 +77,7 @@ Snapshots provide point-in-time views of share data:
 
 For API steps to manage snapshots, see [File Storage Service – Managing Share Snapshots](/pages/storage_and_backup/file_storage/file_storage_service/create_snapshot).
 
-## Security and Shared Responsibility
+## Security and shared responsibility
 
 You remain responsible for:
 
@@ -85,7 +85,7 @@ You remain responsible for:
 - **NFS access control** – client access, IP rules, least privilege.
 - **OS and application security** – on all clients mounting the share.
 
-## Billing (High Level)
+## Billing (high level)
 
 - Billed for provisioned share capacity (per GiB-hour or equivalent).
 - Snapshots may consume additional capacity and could be billed separately.
@@ -94,3 +94,5 @@ You remain responsible for:
 ## Go further
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

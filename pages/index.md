@@ -914,7 +914,7 @@
             + [Key concepts](public-cloud-storage-file-storage-key-concepts)
                 + [File Storage Service - Key concepts](storage_and_backup/file_storage/file_storage_service/key_concepts)
             + [Getting Started](public-cloud-storage-file-storage-getting-started)
-                + [File Storage Service - Getting started (Alpha)](storage_and_backup/file_storage/file_storage_service/getting_started)
+                + [File Storage Service - Getting started](storage_and_backup/file_storage/file_storage_service/getting_started)
                 + [File Storage Service - Managing Share Snapshots](storage_and_backup/file_storage/file_storage_service/create_snapshot)
     + [Public Cloud Network Services](products/public-cloud-network)
         + [Key concepts](public-cloud-network-key-concepts)

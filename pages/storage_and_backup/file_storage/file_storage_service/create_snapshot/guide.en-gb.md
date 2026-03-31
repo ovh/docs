@@ -1,7 +1,7 @@
 ---
 title: File Storage Service - Managing Share Snapshots
 excerpt: "Learn how to list, create, and delete NFS share snapshots in OVHcloud’s File Storage Service using the API. Ensure data consistency and manage snapshots efficiently."
-updated: 2026-03-27
+updated: 2026-03-31
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ Snapshots capture a point-in-time state of a File Storage NFS share. This guide 
 
 > [!primary]
 >
-> **Tip:** Refer to the [OVHcloud API console] for exact operations, HTTP methods, and request schemas.
+> **Tip:** Refer to the [OVHcloud API console](/links/console) for exact operations, HTTP methods, and request schemas.
 >
 
 ## Requirements
@@ -22,7 +22,7 @@ Snapshots capture a point-in-time state of a File Storage NFS share. This guide 
 
 ## Instructions
 
-### Step 1: Identify Your Share
+### Step 1: Identify your share
 
 List all shares in your target region to find the share ID:
 
@@ -33,18 +33,18 @@ List all shares in your target region to find the share ID:
 
 Confirm that the share is in `available` state before creating snapshots.
 
-### Step 2: List Existing Snapshots
+### Step 2: List existing snapshots
 
 Retrieve all snapshots for a given share:
 
 > [!api]
 >
-> @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/share/{shareId}/snapshot
+> @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{shareId}/snapshot
 >
 
-Use the response to get snapshot IDs and statuses before deleting or automating snapshot operations.
+Use the response to retrieve snapshot IDs and statuses before deleting or automating operations.
 
-### Step 3: Create a Snapshot
+### Step 3: Create a snapshot
 
 Create a snapshot with a JSON payload specifying a human-readable name (and optional description):
 
@@ -62,7 +62,7 @@ Create a snapshot with a JSON payload specifying a human-readable name (and opti
 > **Note:** Snapshots are crash-consistent unless your application explicitly quiesces writes.
 >
 
-### Step 4: Retrieve Snapshot Details (Optional)
+### Step 4: Retrieve snapshot details (optional)
 
 Retrieve a single snapshot by ID:
 
@@ -73,7 +73,7 @@ Retrieve a single snapshot by ID:
 
 Use this for automated checks after backups or to verify snapshot metadata.
 
-### Step 5: Delete a Snapshot
+### Step 5: Delete a snapshot
 
 Free the storage consumed by a snapshot:
 
@@ -91,6 +91,6 @@ Free the storage consumed by a snapshot:
 
 - [File Storage Service – Key Concepts](/pages/storage_and_backup/file_storage/file_storage_service/key_concepts)
 - [File Storage Service – Getting Started](/pages/storage_and_backup/file_storage/file_storage_service/getting_started)
-- [Preparing an environment for using the OpenStack API](public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
 Join our [community of users](/links/community).
