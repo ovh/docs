@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Comment utiliser PuTTY pour les connexions SSH et l'authentification"
 excerpt: "Découvrez comment accéder à votre serveur cloud ou à votre hébergement web et gérer les clés SSH avec le logiciel client SSH PuTTY"
-updated: 2024-11-11
+updated: 2026-03-31
 ---
 
 <style>

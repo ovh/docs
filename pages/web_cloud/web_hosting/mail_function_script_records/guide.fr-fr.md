@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -39,9 +39,9 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 
 ## En pratique
 
-### Présentation de la partie « Scripts e-mails »
+### Présentation de la partie « Scripts e-mail »
 
-Pour accéder à la partie « Scripts e-mails », cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Pour accéder à la partie « Scripts e-mail », cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -52,7 +52,7 @@ Pour accéder à la partie « Scripts e-mails », cliquez sur les onglets ci-des
 >>
 > **Étape 2**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mails`{.action}.
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
 >>
 >> ![More tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more.png){.thumbnail}
 >>
@@ -62,7 +62,7 @@ Pour accéder à la partie « Scripts e-mails », cliquez sur les onglets ci-des
 >>
 >> La page qui s'affiche vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre [hébergement web OVHcloud](/links/web/hosting).
 >>
->> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
+>> ![Page Scripts e-mail de l'hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 >>
 >> La page affiche plusieurs informations vous permettant de visualiser l'activité des envois d'e-mails automatisés générés depuis vos scripts :
 >>
@@ -72,7 +72,7 @@ Pour accéder à la partie « Scripts e-mails », cliquez sur les onglets ci-des
 >>
 >>     Selon cet état, la gestion des envois sera différente.
 >>
->> - **Rapport d'erreurs à** : recevez-le quotidiennement sur l'adresse e-mail de votre choix. Définissez-la grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVHcloud. Un bouton `Emails en erreur`{.action} permet également de consulter ces rapports à tout moment sur la droite de la page `Scripts emails`{.action}.
+>> - **Rapport d'erreurs à** : recevez-le quotidiennement sur l'adresse e-mail de votre choix. Définissez-la grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVHcloud. Un bouton `E-mails en erreur`{.action} permet également de consulter ces rapports à tout moment sur la droite de la page `Scripts e-mail`{.action}.
 >> - **Total des e-mails envoyés** : nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web OVHcloud.
 >> - **E-mails envoyés aujourd'hui** : nombre total des e-mails automatisés envoyés aujourd'hui uniquement.
 >> - **Total des e-mails en erreur** : nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web qui sont revenus en erreur chez OVHcloud.
@@ -153,7 +153,7 @@ Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher s
 >>
 > **Étape 2**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mails`{.action}.
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
 >>
 > **Étape 3**
 >>
@@ -172,7 +172,7 @@ Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher s
 >>
 > **Étape 2**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mails`{.action}.
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
 >>
 > **Étape 3**
 >>
@@ -183,11 +183,11 @@ Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher s
 
 #### L'état « SPAM »
 
-Cet état survient lorsque des mails considérés comme du SPAM ont été émis depuis votre hébergement.
+Cet état survient lorsque des mails considérés comme du spam ont été émis depuis votre hébergement.
 
 Généralement, ce blocage est accompagné par l'envoi d'un e-mail intitulé **« Abus avec votre hébergement domain.tld »** généré automatiquement par nos robots de sécurité :
 
-![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![E-mail de notification de blocage des Scripts e-mail](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Trois cas de figure sont possibles par rapport à cette situation :
 
@@ -195,7 +195,7 @@ Trois cas de figure sont possibles par rapport à cette situation :
 
 Pour corriger cette situation, vous devez sécuriser l'ensemble des scripts en capacité d'émettre des e-mails depuis votre hébergement, à l'aide d'un système de type « Captcha ».
 
-Rendez-vous ensuite dans la partie « Scripts e-mails » de votre hébergement. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Rendez-vous ensuite dans la partie « Scripts e-mail » de votre hébergement. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -204,11 +204,11 @@ Rendez-vous ensuite dans la partie « Scripts e-mails » de votre hébergement. 
 >>
 > **Étape 2**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mails`{.action}.
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
 >>
 > **Étape 3**
 >>
->> Cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*. Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
+>> Cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*. Une purge est obligatoire dans ce cas pour effacer les spam en attente d'envoi.
 
 - **Cas n°2 : injection de fichiers malveillants dans votre hébergement** :
 
@@ -231,17 +231,17 @@ Une fois votre hébergement sécurisé, cliquez sur les onglets ci-dessous pour 
 >>
 > **Étape 2**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mails`{.action}.
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
 >>
 > **Étape 3**
 >>
 >> Cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*.
 
-Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
+Une purge est obligatoire dans ce cas pour effacer les spam en attente d'envoi.
 
 - **Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM** : <a name="elements-list-spam"></a>
 
-Si vous êtes à l'origine des e-mails ayant engendré le blocage, vous trouverez ci-dessous quelques exemples d’**usages à éviter** lors de l'envoi d'un e-mail (pour qu'il ne soit pas considéré trop « facilement » comme un SPAM) :
+Si vous êtes à l'origine des e-mails ayant engendré le blocage, vous trouverez ci-dessous quelques exemples d’**usages à éviter** lors de l'envoi d'un e-mail (pour qu'il ne soit pas considéré trop « facilement » comme un spam) :
 
 - 3 mots ou plus en majuscules dans le sujet/objet de l'e-mail.
 - Pas de sujet/texte renseigné dans l'e-mail.

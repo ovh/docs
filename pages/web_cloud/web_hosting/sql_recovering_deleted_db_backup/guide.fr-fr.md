@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde d'une base de données supprimée"
 excerpt: "Découvrez comment retrouver la sauvegarde d'une base de données lorsque celle-ci a été supprimée depuis votre espace client OVHcloud"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -55,9 +55,9 @@ Pour récupérer le nom de votre hébergement web, cliquez sur les onglets ci-de
 >>
 > **Étape 2**
 >>
->> En haut à gauche de la page qui s'affiche, retrouvez le nom de votre hébergement web à droite de la mention **Hébergements /**.
+>> En haut à gauche de la page qui s'affiche, retrouvez le nom de votre hébergement web à droite de la mention `Hébergements /`.
 >>
->> ![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+>> ![Nom de l'hébergement web dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
 
 ### 2 - Se connecter aux API OVHcloud et leur permettre l'accès à vos services
 

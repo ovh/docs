@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec la solution Visibilité Pro"
 excerpt: "Découvrez comment bien débuter avec la solution Visibilité Pro"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -41,17 +41,17 @@ Pour accéder à la gestion de la solution Visibilité Pro, cliquez sur les ongl
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis sur `Visibilité Pro`{.action}.
 >>
->> ![visibilitypro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/tab.png){.thumbnail}
+>> ![Accès à l'onglet Visibilité Pro dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/tab.png){.thumbnail}
 >>
 >> Le tableau qui apparaît affiche les solutions Visibilité Pro commandées et liées à votre offre d'hébergement web. Chaque ligne correspond à une solution Visibilité Pro permettant de gérer le référencement local d'un seul établissement.
 >>
->> Si vous possédez plusieurs établissements et souhaitez gérer leur référencement local de la même manière, nous vous recommandons d'effectuer un test de référencement local depuis la page : <https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/>, puis de souscrire une solution Visibilité Pro pour chacun d'entre eux.
+>> Si vous possédez plusieurs établissements et souhaitez gérer leur référencement local de la même manière, nous vous recommandons d'effectuer un test de référencement local depuis la page : [option Visibilité Pro](https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/), puis de souscrire une solution Visibilité Pro pour chacun d'entre eux.
 >>
 > **Étape 3**
 >>
 >> Pour accéder à l'interface de gestion de la solution Visibilité Pro, cliquez sur le bouton `...`{.action} à droite de la ligne concernée, puis sur `Accéder à l'interface`{.action}.
 >>
->> ![visibilitypro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/acces-to-the-interface.png){.thumbnail}
+>> ![Accès à l'interface de gestion Visibilité Pro depuis l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/acces-to-the-interface.png){.thumbnail}
 
 ### 2 - Renseigner le profil de votre établissement
 
@@ -67,7 +67,7 @@ Sur la page qui s'affiche, vous êtes invité à renseigner le profil de votre �
 
 Une fois les informations complétées, cliquez sur le bouton `C'est parti !`{.action}. Si l'outil nécessite de mieux localiser votre établissement, vous pourrez être amené à préciser son emplacement.
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/establishment-infos.png){.thumbnail}
+![Saisie des informations de base de l'établissement dans Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/establishment-infos.png){.thumbnail}
 
 Vous êtes ensuite invité à renseigner d'autres informations liées à votre établissement :
 
@@ -79,7 +79,7 @@ Vous êtes ensuite invité à renseigner d'autres informations liées à votre �
 
 Une fois les informations complétées, cliquez sur le bouton `Vous y êtes presque !`{.action}. 
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/establishment-infos-2.png){.thumbnail}
+![Saisie des informations complémentaires de l'établissement dans Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/establishment-infos-2.png){.thumbnail}
 
 Si vous disposez d'un profil Google My Business ou Facebook, vous avez la possibilité de lier ces derniers à votre profil Visibilité Pro et de les gérer depuis l'interface de gestion Visibilité Pro. 
 
@@ -87,19 +87,19 @@ Pour relier votre profil Google My Business, cliquez sur le bouton `Connecter Go
 
 Si vous ne souhaitez pas relier votre profil Google My Business et/ou votre compte Facebook, cliquez sur `Sauter cette étape`{.action}. Ce choix n'est pas définitif, vous pourrez réaliser cette manipulation une fois votre profil complété si vous le souhaitez.
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/google-facebook-connection.png){.thumbnail}
+![Connexion des profils Google My Business et Facebook à Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/google-facebook-connection.png){.thumbnail}
 
 Une page vous informe que les informations de votre établissement vont être transmises aux annuaires en ligne et plateformes. Ceci indique que vous avez terminé la complétion des informations de base de votre profil.
 
 Cliquez alors sur le bouton `C'est parti !`{.action}.
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/congratulations.png){.thumbnail}
+![Confirmation de la complétion du profil Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/congratulations.png){.thumbnail}
 
 ### 3 - Modifier et enrichir les informations de votre établissement
 
 Une fois connecté à l'interface de gestion Visibilité Pro, nous vous recommandons vivement d'enrichir les informations du profil de votre établissement. Pour cela, positionnez-vous sur l'onglet `Profil`{.action}.
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/profil-page.png){.thumbnail}
+![Page Profil de l'interface de gestion Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/profil-page.png){.thumbnail}
 
 Les informations que vous pouvez compléter sont réparties en trois sous-onglets :
 
@@ -118,7 +118,7 @@ Si vous souhaitez que ces modifications soient envoyées automatiquement vers le
 > Sachez que la mise à jour de vos informations dans les différents annuaires et plateformes peut nécessiter plusieurs heures avant d'apparaître en ligne.
 >
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/autosync-enable.png){.thumbnail}
+![Activation de la synchronisation automatique dans Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/autosync-enable.png){.thumbnail}
 
 ### 4 - Commencer à interagir avec vos clients
 
@@ -128,7 +128,7 @@ Une fois votre profil complété, vous pouvez à présent vous familiariser avec
 
 Positionnez-vous sur l'onglet `Publier`{.action}, puis cliquez sur `Créer votre première publication`{.action}.
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/to-publish.png){.thumbnail}
+![Onglet Publier de l'interface de gestion Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/to-publish.png){.thumbnail}
 
 Choisissez le type de publication, l'endroit où vous souhaitez la publier, puis définissez son contenu. Vous pouvez vous aider de la fenêtre d'aperçu vous permettant de mieux visualiser le rendu final qu'aura votre publication une fois en ligne.
 
@@ -136,7 +136,7 @@ Sélectionnez enfin la date de publication, puis cliquez sur le bouton `Publier`
 
 Revenez autant de fois que nécessaire dans l'onglet `Publier`{.action} pour continuer de communiquer avec vos clients en créant de nouvelles publications ou en suivant celles déjà publiées ou programmées.
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/create-new-publication.png){.thumbnail}
+![Création d'une nouvelle publication dans Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/create-new-publication.png){.thumbnail}
 
 #### Répondre aux avis de vos clients
 
@@ -146,13 +146,13 @@ Dès qu'un avis est disponible, vous pourrez alors le visionner et y répondre d
 
 Nous vous recommandons vivement de répondre à tous les avis que vous recevrez, qu'ils soient positifs ou négatifs !
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/customers-advisors.png){.thumbnail}
+![Onglet Avis clients dans l'interface de gestion Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/customers-advisors.png){.thumbnail}
 
 #### Piloter la performance de votre visibilité en ligne
 
 Positionnez-vous sur l'onglet `Tableau de bord`{.action} pour avoir accès à différents indicateurs vous permettant de piloter la performance de la visibilité de votre établissement en ligne. Nous vous conseillons de revenir régulièrement sur cet onglet afin de visionner en un coup d'œil cette performance. 
 
-![visibilitypro](/pages/assets/screens/other/web-tools/visibility-pro/dashboard.png){.thumbnail}
+![Tableau de bord de l'interface de gestion Visibilité Pro](/pages/assets/screens/other/web-tools/visibility-pro/dashboard.png){.thumbnail}
 
 ## Aller plus loin
 

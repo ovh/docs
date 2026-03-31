@@ -1,7 +1,7 @@
 ---
 title: "Comment réagir face à une activité anormale détectée sur votre hébergement web"
 excerpt: "Découvrez les étapes à suivre lorsqu’une activité anormale est détectée sur votre hébergement web OVHcloud"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -88,7 +88,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 2**
 >>
->> Une **fenêtre d’alerte** s’affiche : `« Activité anormale sur votre hébergement »`. Si vous avez cliqué sur le bouton `Plus tard`{.action}, une **bannière d’alerte** `« Activité anormale détectée »` apparaît en haut de la page. Cliquez sur `En savoir plus`{.action} pour rouvrir la fenêtre d’alerte.
+>> Une **fenêtre d’alerte** s’affiche : `« Activité anormale sur votre hébergement »`. Si vous cliquez sur le bouton `Plus tard`{.action}, une **bannière d’alerte** `« Activité anormale détectée »` apparaît en haut de la page. Cliquez sur `En savoir plus`{.action} pour rouvrir la fenêtre d’alerte.
 >>
 > **Étape 3**
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Importer une sauvegarde dans la base de données d'un hébergement web"
 excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVHcloud'
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -125,6 +125,7 @@ Pour effectuer la manipulation, cliquez sur les onglets ci-dessous pour afficher
 >> > [!primary]
 >> >
 >> > Le bouton `Utiliser un fichier existant`{.action} permet d’importer de nouveau les données d’un fichier déjà envoyé dans l’outil d’import.
+>> >
 
 ### Réaliser l'import depuis l'interface web phpMyAdmin
 

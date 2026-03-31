@@ -1,7 +1,7 @@
 ---
 title: 'Optimisation des performances de votre site'
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -110,11 +110,11 @@ Pour accéder aux statistiques et logs, cliquez sur les onglets ci-dessous pour 
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Sélection d'un hébergement web dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}. 
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >> 
@@ -131,7 +131,7 @@ Pour accéder aux graphiques, cliquez sur les onglets ci-dessous pour afficher s
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l’hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Sélection d’un hébergement web dans l’espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -141,7 +141,7 @@ Pour accéder aux graphiques, cliquez sur les onglets ci-dessous pour afficher s
 >>
 >> Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
 >>
->> ![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>> ![Graphiques des statistiques de l'hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 >>
 >> Les différents types de renseignements disponibles :
 >>
@@ -149,7 +149,7 @@ Pour accéder aux graphiques, cliquez sur les onglets ci-dessous pour afficher s
 >> - **Temps de réponse moyen** : temps de réponse moyen d’une page (distinction pages statiques / dynamiques).
 >> - **Dépassement du seuil des ressources** : utilisation par les travailleurs PHP. L’utilisation de PHP-FPM peut contribuer à la diminution des travailleurs PHP.
 >> - **Utilisation du processeur central** : utilisation du processeur central par votre site web, permettant d’identifier une surcharge éventuelle.
->> - **Connexions sortantes** : permet de voir la requête TCP émise par le serveur; par exemple en cas de piratage de votre site web, le serveur pourrait être utilisé pour attaquer d’autres sites web externes. Vous pouvez également vérifier les appels externes envoyés par des modules comme Facebook, Twitter etc. La réduction du nombre de requêtes TCP sortantes constitue un excellent moyen de diminuer le temps de chargement, car si le serveur dont vous sollicitez le contenu tarde à répondre, le temps de chargement de votre site web augmentera.
+>> - **Connexions sortantes** : permet de voir la requête TCP émise par le serveur ; par exemple en cas de piratage de votre site web, le serveur pourrait être utilisé pour attaquer d’autres sites web externes. Vous pouvez également vérifier les appels externes envoyés par des modules comme Facebook, Twitter, etc. La réduction du nombre de requêtes TCP sortantes constitue un excellent moyen de diminuer le temps de chargement, car si le serveur dont vous sollicitez le contenu tarde à répondre, le temps de chargement de votre site web augmentera.
 >> - **Commandes FTP** : commandes FTP utilisées par l’hébergement (connexions, téléchargements, chargements, suppression de fichiers, etc.).
 >> - **Temps de réponse SQL** : temps de réponse aux requêtes (visible uniquement si vous utilisez une base de données).
 >> - **Requêtes SQL** : nombre de requêtes (visible uniquement si vous utilisez une base de données).

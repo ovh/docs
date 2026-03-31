@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -37,17 +37,17 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Sélection d'un hébergement web dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>> ![Onglet Bases de données de l'hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 >> Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 >>
->> ![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+>> ![Liste des bases de données de l'hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Dans le tableau, les bases de données peuvent disposer de plusieurs statuts différents :
 
@@ -81,7 +81,7 @@ Pour créer une base de données, cliquez sur les onglets ci-dessous pour affich
 >>
 >> Dans la fenêtre qui s'ouvre, sélectionnez les informations suivantes puis cliquez sur `Suivant`{.action} :
 >>
->> ![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
+>> ![Étape 1 de la création d'une base de données : choix du type et du moteur](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 >>
 >> |Information|Description|
 >> |---|---|
@@ -93,11 +93,11 @@ Pour créer une base de données, cliquez sur les onglets ci-dessous pour affich
 >>
 >> Complétez les informations requises puis cliquez sur `Suivant`{.action} :
 >>
->> ![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
+>> ![Étape 2 de la création d'une base de données : choix du nom et du mot de passe](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 >>
 >> |Information|Description|
 >> |---|---|
->> |**Utilisateur**|Entrez un nom d'utilisateur qui sera associé à votre base de données (6 caractères maximum en plus du préfixe utilisateur déjà renseigné). Le nom de votre base de donnée sera identique au nom d'utilisateur.|
+>> |**Utilisateur**|Entrez un nom d'utilisateur qui sera associé à votre base de données (6 caractères maximum en plus du préfixe utilisateur déjà renseigné). Le nom de votre base de données sera identique au nom d'utilisateur.|
 >> |**Mot de passe**|Entrez un mot de passe pour cet utilisateur en respectant les *critères* mentionnés plus bas.|
 >> |**Confirmation**|Saisissez de nouveau le mot de passe pour cet utilisateur.|
 >>
@@ -105,7 +105,7 @@ Pour créer une base de données, cliquez sur les onglets ci-dessous pour affich
 >>
 >> Vérifiez que toutes les informations affichées dans le résumé sont correctes. Si tel est le cas, cliquez sur `Confirmer`{.action} pour lancer la création de votre base de données.
 >>
->> ![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
+>> ![Étape 3 de la création d'une base de données : résumé de confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 >>
 >> > [!primary]
 >> >
@@ -139,7 +139,7 @@ Répétez ce processus autant de fois que vous le souhaitez afin de créer plusi
 
 > [!warning]
 >
-> Ce guide ne remplace pas l'assistance d'un professionnel en développement. Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du logiciel de votre solution si vous rencontrez des difficultés. OVHcloud ne sera pas en mesure de vous fournir une assistance à ce propos. Retrouverez plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Ce guide ne remplace pas l'assistance d'un professionnel en développement. Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du logiciel de votre solution si vous rencontrez des difficultés. OVHcloud ne sera pas en mesure de vous fournir une assistance à ce propos. Retrouvez plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 À présent, vous pouvez utiliser votre base de données. Pour ce faire, vous aurez besoin de vos informations de connexion :
@@ -199,7 +199,7 @@ OVHcloud fournit un outil en ligne pour la gestion des bases de données, « php
 >>
 >> Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
 >>
->> ![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
+>> ![Page de connexion à l'interface phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Si besoin, consultez la [partie 3](#step3) du présent guide pour retrouver les informations de connexion à votre base de données.
 

@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde de la base de données d'un hébergement web"
 excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -175,7 +175,7 @@ La manipulation s'effectue en plusieurs étapes. Assurez-vous d'être en possess
 
 #### 1 - Créer le script de sauvegarde
 
-La première étape consiste à créer le script qui permettra de réaliser la sauvegarde de la base de données. Vous trouverez ci-dessous un exemple de script pouvant vous aider dans votre démarche. Néanmoins, si vous éprouvez des difficultés, cet exemple ne peut se substituer à lui seul à l'assistance que pourrait vous fournir un webmaster.
+La première étape consiste à créer le script qui permettra de réaliser la sauvegarde de la base de données. Vous trouverez ci-dessous un exemple de script pouvant vous aider dans votre démarche. Cependant, si vous éprouvez des difficultés, cet exemple ne peut se substituer à lui seul à l'assistance que pourrait vous fournir un webmaster.
 
 ```php
 <?

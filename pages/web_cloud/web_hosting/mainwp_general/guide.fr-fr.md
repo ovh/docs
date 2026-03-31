@@ -1,7 +1,7 @@
 ---
 title: "Administrer plusieurs sites web WordPress avec le plugin MainWP"
 excerpt: "Découvrez comment gérer plusieurs sites web WordPress depuis un seul outil grâce au plugin MainWP"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -16,7 +16,7 @@ Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous 
 **Ce guide vous explique comment utiliser le dashboard MainWP pour administrer plusieurs sites web WordPress.**
 
 > [!primary]
-> Dans ce guide, nous avons choisi le plugin MainWP. D'autres solutions analogues existent, vous êtes bein entendu libre de choisir le plugin que vous souhaitez.
+> Dans ce guide, nous avons choisi le plugin MainWP. D'autres solutions analogues existent, vous êtes bien entendu libre de choisir le plugin que vous souhaitez.
 > 
 
 ## Prérequis
@@ -73,7 +73,7 @@ Dans le menu principal à gauche, cliquez sur `Sites`{.action}, puis sur `Add Ne
 
 Renseignez l'URL du site enfant que voulez connecter au dashboard MainWP. Juste en dessous, sélectionnez le bouton pour indiquer que vous avez bien installé et activé le plugin MainWP Child sur votre site enfant. Les deux nouveaux champs suivants s'affichent :
 
-- `Administrator username` (nom d'administrateur) : renseignez le login (l'identifiant administrateur) que vous utilisez pour vous connecter à l'intreface d'administration de votre WordPress.
+- `Administrator username` (nom d'administrateur) : renseignez votre identifiant de connexion à l'interface d'administration WordPress.
 - `Site title` (titre du site) : renseignez la valeur que vous souhaitez. Si vous connectez de nombreux sites web enfants, pensez à renseigner un titre de site explicite.
 
 ![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/add_site.png){.thumbnail}

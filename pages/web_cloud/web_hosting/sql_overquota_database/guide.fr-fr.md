@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -67,7 +67,7 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 Récupérez les informations d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de la **partie 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
-Pour vous connectez à la base de données via phpMyAdmin, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Pour vous connecter à la base de données via phpMyAdmin, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -154,7 +154,7 @@ Vous devrez basculer votre base de données sur une base de données plus volumi
 > Pour augmenter la taille allouée à votre base de données, vous devrez obligatoirement créer une nouvelle base de données plus grande et copier le contenu de l'ancienne dans la nouvelle. En effet, il n'est pas possible d'augmenter directement la taille d'une base de données liée à un hébergement web.
 >
 
-Consultez notre offre de bases de données [Web Cloud Databasess](/links/web/databases) pour choisir votre nouveau service de base de données. 
+Consultez notre offre de bases de données [Web Cloud Databases](/links/web/databases) pour choisir votre nouveau service de base de données. 
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
@@ -163,8 +163,8 @@ Il est possible de dupliquer le contenu de votre base de données OVHcloud direc
 Dans le cas d'une migration vers une base de données externe aux offres [Start SQL](/links/web/hosting-options-startsql) et [Web Cloud Databases](/links/web/databases), vous pouvez déplacer manuellement le contenu de votre ancienne base de données vers une nouvelle à l'aide de nos guides:
 
 - [Exporter votre base de données existante](/pages/web_cloud/web_hosting/sql_database_export)
-- [Premiers pas avec l'offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Importer votre ancienne base de données dans votre offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [Premiers pas avec l'offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Importer votre ancienne base de données dans votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Cas n°2 - Une partie ou l'ensemble du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site
 

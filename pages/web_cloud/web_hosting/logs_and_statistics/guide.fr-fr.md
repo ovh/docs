@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Consulter les statistiques et logs d'un site web"
 excerpt: "Découvrez comment consulter les statistiques et les logs de votre site web grâce à votre offre d'hébergement web"
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -34,7 +34,7 @@ Pour accéder aux différentes données statistiques et aux logs de votre héber
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Sélection d'un hébergement web dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -107,7 +107,7 @@ Retrouvez dans cette section l'activité de l'infrastructure de votre hébergeme
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Sélection d'un hébergement web dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -117,7 +117,7 @@ Retrouvez dans cette section l'activité de l'infrastructure de votre hébergeme
 >>
 >> Différents types de graphiques sont disponibles depuis le menu déroulant en haut à gauche :
 >>
->> ![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>> ![Statistiques de l'infrastructure de l'hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 >>
 >> - **Commandes FTP** : commandes principales (upload, download, login, delete) réalisées en FTP.
 >> - **Requêtes HTTP** : nombre et code retour des requêtes HTTP (2xx/3xx, 4xx, 5xx).
@@ -138,7 +138,7 @@ Pour créer un nouvel utilisateur, cliquez sur les onglets ci-dessous pour affic
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Sélection d'un hébergement web dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -148,7 +148,7 @@ Pour créer un nouvel utilisateur, cliquez sur les onglets ci-dessous pour affic
 >>
 >> Cliquez sur `Créer un nouvel utilisateur`{.action} puis suivez les instructions pour finaliser la création.
 >>
->> ![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+>> ![Création d'un nouvel utilisateur pour les statistiques](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
 
 Pour accéder aux statistiques de votre site web avec un utilisateur que vous avez créé, saisissez l'adresse suivante en remplaçant `000` par le numéro du cluster de votre hébergement web et `domain.tld` par le nom de domaine de votre site web (sans les `www`) :
 
@@ -163,7 +163,7 @@ Vous pouvez également récupérer le lien d'accès aux statistiques / logs dire
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Sélection d'un hébergement web dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -173,13 +173,13 @@ Vous pouvez également récupérer le lien d'accès aux statistiques / logs dire
 >>
 >> Cliquez sur le bouton `Voir les statistiques`{.action}.
 >>
->> ![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
+>> ![Statistiques de visites du site web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
 >>
 >> Sur la nouvelle page qui apparaît, récupérez l'URL située dans la barre d'adresse de votre navigateur internet.
 
 > [!warning]
 >
-> Si vous avez activé les logs séparés sur l'un de vos [site web](/pages/web_cloud/web_hosting/multisites_configure_multisite), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de ce site web spécifique.
+> Si vous avez activé les logs séparés sur l'un de vos [sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de ce site web spécifique.
 
 ## Aller plus loin
 
