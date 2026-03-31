@@ -196,7 +196,7 @@ Exemple de suivi de migration :
 
 [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 
-[Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+[Migrer une adresse e-mail MX Plan vers un compte Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
