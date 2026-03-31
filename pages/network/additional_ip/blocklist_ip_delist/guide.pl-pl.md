@@ -47,7 +47,7 @@ Należy pamiętać, że listy blokowania mogą zawierać domeny i adresy IP, kt�
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [Public IP](/links/control-panel/network-public-ip)
-- **Ścieżka nawigacji:** `Network`{.action} > `Publiczne adresy IP`{.action}
+- **Ścieżka nawigacji:** `Sieć`{.action} > `Publiczne adresy IP`{.action}
 
 ---
 <!-- CP-NAV-END:network-public-ip -->
@@ -160,7 +160,7 @@ Usunięcie listy powinno zająć od 20 do 30 minut.
 Aby [usunąć adres IP z MIPSpace](https://www.mipspace.com/removal.php), upewnij się, że następujące informacje są aktualne:
 
 - [Rewers DNS](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (pole PTR).
-- Informacje na temat Twojej organizacji (*RWhois*): kliknij na przycisk `Koła zębatego`{.action} po prawej stronie. Z menu rozwijanego wybierz opcję `Zarządzaj moimi organizacjami`{.action}.
+- Informacje na temat Twojej organizacji (*RWhois*): w sekcji [Publiczne adresy IP](/links/control-panel/network-public-ip) w Panelu klienta OVHcloud przejdź do zakładki `Zarządzanie organizacjami`{.action}.
 
 ///
 

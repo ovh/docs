@@ -77,9 +77,9 @@ To choose a region, please refer to the list of available regions accessible on 
 
 To prove that you are the owner of the range, you will be requested to enter a special token which we will provide, into the public whois object corresponding to your range. This will be done via the web portal of the RIR managing your IPs. This token will be provided at order.
 
-- For RIPE, edit the « **descr** » field of the « **inetnum** » object of the IP.
-- For ARIN, edit the « **Public Comments** » field of the « **Network** » object.
-- For APNIC, edit the « **remarks** » field of « **inetnum** » object.
+- For RIPE, edit the "**descr**" field of the "**inetnum**" object of the IP.
+- For ARIN, edit the "**Public Comments**" field of the "**Network**" object.
+- For APNIC, edit the "**remarks**" field of "**inetnum**" object.
 
 The token needs to appear in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
 
@@ -87,9 +87,9 @@ The token needs to appear in the description field (see above) of the whois obje
 
 To prove that you are the owner of the AS number, you will be required to reuse the same token previously used to prove ownership of the IP range, and insert it into the public whois object corresponding to the AS number. This will be done via the web portal of the RIR managing your AS number. This token will be provided at order (it may also be found directly in the OVHcloud Control Panel, in the IP section).
 
-- For RIPE, edit the « **descr** » field of the « **aut-num** » object of the AS number.
-- For ARIN, edit the « **Public Comments** » field of the « **ASN** » object.
-- For APNIC, edit the « **remarks** » field of « **aut-num** » object.
+- For RIPE, edit the "**descr**" field of the "**aut-num**" object of the AS number.
+- For ARIN, edit the "**Public Comments**" field of the "**ASN**" object.
+- For APNIC, edit the "**remarks**" field of "**aut-num**" object.
 
 The token needs to appear in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
 

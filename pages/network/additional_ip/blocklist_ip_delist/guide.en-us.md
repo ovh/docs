@@ -159,7 +159,7 @@ Delisting should take between 20 and 30 minutes to complete.
 To [delist an IP from MIPSpace](https://www.mipspace.com/removal.php), first ensure that the following information is up-to-date:
 
 - [The reverse DNS resolution](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (PTR record).
-- The details of your organization (*RWhois*): click the `Cogwheel button`{.action} on the right. Select `Manage my organisation`{.action} from the drop-down menu.
+- The details of your organization (*RWhois*): in the [Public IP Addresses](/links/control-panel/network-public-ip) section of your OVHcloud Control Panel, go to the `Manage my organisations`{.action} tab.
 
 ///
 

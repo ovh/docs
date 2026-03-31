@@ -18,7 +18,7 @@ Niniejsza instrukcja ma na celu zapewnienie użytkownikowi pomocy we wdrożeniu 
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [Load Balancer](/links/control-panel/network-load-balancer)
-- **Ścieżka nawigacji:** `Network`{.action} > `Load Balancer`{.action} > Wybierz usługę
+- **Ścieżka nawigacji:** `Sieć`{.action} > `Load Balancer`{.action} > Wybierz usługę
 
 ---
 <!-- CP-NAV-END:network-load-balancer -->

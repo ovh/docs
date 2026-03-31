@@ -160,7 +160,7 @@ La eliminación de la lista debería tardar entre 20 y 30 minutos.
 Para [retirar una IP de MIPSpace](https://www.mipspace.com/removal.php), asegúrese de que la siguiente información esté actualizada:
 
 - [La resolución inversa DNS](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (campo PTR).
-- Detalles de su organización (*RWhois*): haga clic en el botón `Engranaje`{.action} a la derecha. Seleccione `Gestionar mis organizaciones`{.action} en el menú desplegable.
+- Detalles de su organización (*RWhois*): en la sección [Direcciones IP públicas](/links/control-panel/network-public-ip) de su área de cliente de OVHcloud, acceda a la pestaña `Gestionar mis organizaciones`{.action}.
 
 ///
 
