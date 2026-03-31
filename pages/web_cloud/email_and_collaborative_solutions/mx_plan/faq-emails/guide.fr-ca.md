@@ -186,8 +186,6 @@ Grâce au [webmail](/links/web/email), vous pouvez accéder à tout moment à vo
 
 L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud](/links/manager). Pour cela, une fois connecté, accédez au produit concerné. Vous pouvez ainsi modifier le mot de passe de vos adresses e-mail, vérifier leur taux de remplissage, créer de nouvelles adresses ou supprimer des adresses existantes.
 
-**Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous-même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](/links/manager). Vous pouvez vous appuyer sur [notre documentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
-
 ///
 
 /// details | Que faut-il savoir avant de créer une adresse e-mail ?
@@ -248,12 +246,6 @@ Vous souhaitez changer d'[offre e-mail](/links/web/emails) pour bénéficier de 
 - [Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrer des comptes e-mail via OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)..
-
-///
-
-/// details | L'offre Office 365 Pro Plus comprend-elle une licence Skype ?
-
-L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus.
 
 ///
 

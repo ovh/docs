@@ -60,10 +60,10 @@ Choose one of your domain names from the list, or select the check box `My domai
 
 #### Are you going to only use the OVHcloud Exchange solution with this domain name?
 
-The question "**Are you going to use OVHcloud Exchange only with this domain?**" will determine the type of configuration for your domain name. 
+The question "**Are you going to use OVHcloud Exchange only with this domain?**" will determine the type of configuration for your domain name.
 
 - If you use an Exchange offer alone or with other **OVHcloud email offers**, the configuration can be done automatically, or manually using only OVHcloud email servers.
-- If you are using your Exchange solution as a complement to an **external email service to the OVHcloud email offers**, you will be asked to enter the URL of your external email service’s incoming server under the heading `(SMTP) server`.
+- If you are using your Exchange solution as a complement to an **external email service to the OVHcloud email offers**, you will be asked to enter the URL of your external email service's incoming server under the heading `(SMTP) server`.
 
 ![email](images/exchange-wizard02.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Determine the name of your Exchange email addresses, and add additional informat
 
 - If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, or with another domain name provider, you will see the following window:<br>
 ![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
-This window will prompt you to add a **CNAME record** to the domain name’s DNS zone. The purpose of this entry is to check that you are actually managing this domain name.<br>
+This window will prompt you to add a **CNAME record** to the domain name's DNS zone. The purpose of this entry is to check that you are actually managing this domain name.<br>
 
 > [!warning]
 > Without this validation by CNAME record, you cannot use the platform with this domain name.
@@ -93,7 +93,7 @@ This window will prompt you to add a **CNAME record** to the domain name’s DNS
 ![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
 Here, you will find the values to enter into your DNS zone. The **MX records** correspond to the receiving servers of your emails. The **SRV field** corresponds to the automatic configuration of your email addresses.
 
-You can find the DNS zone configuration details for your email service on our [Add an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx) page.
+You can find the DNS zone configuration details for your email service on our [Add an MX record to your domain name's configuration](/pages/web_cloud/domains/dns_zone_mx) page.
 
 ### Add additional domain names (optional)
 
@@ -110,7 +110,7 @@ To find out more, please refer to this guide on [Adding a domain name to an Exch
 
 > [!primary]
 >
-> If a domain name requires a specific action for its configuration, a red box will appear in the `Diagnostic`{.action} column of the table. By clicking on it, you will see the modifications that need to be made. If this domain name does not use OVHcloud configuration (its DNS servers), you will need to carry out the modifications in the interface you use to manage your domain name’s configuration. 
+> If a domain name requires a specific action for its configuration, a red box will appear in the `Diagnostic`{.action} column of the table. By clicking on it, you will see the modifications that need to be made. If this domain name does not use OVHcloud configuration (its DNS servers), you will need to carry out the modifications in the interface you use to manage your domain name's configuration.
 >
 
 ![Add a domain](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
@@ -121,7 +121,7 @@ You can configure additional accounts if you have not already done so via the wi
 
 To do this, click on the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
 
-The accounts that have not yet been configured configuration will appear in the table as “*@configureme.me*”. To configure them, click on the pencil icon, then follow the steps.
+The accounts that have not yet been configured configuration will appear in the table as "*@configureme.me*". To configure them, click on the pencil icon, then follow the steps.
 
 > [!primary]
 >
@@ -156,7 +156,7 @@ To subscribe, go to our page on [Getting an Outlook licence for Exchange](/pages
 
 ### Set up collaborative features (optional)
 
-Now that your Hosted Exchange service is configured and functional, you can set up the service’s collaborative features in your [OVHcloud Control Panel](/links/manager). You can use these features to create resources (meeting rooms, equipment, etc.), groups, and more.
+Now that your Hosted Exchange service is configured and functional, you can set up the service's collaborative features in your [OVHcloud Control Panel](/links/manager). You can use these features to create resources (meeting rooms, equipment, etc.), groups, and more.
 
 To enable these features, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), then choose which action to perform from the tabs that appear.
 

@@ -184,8 +184,6 @@ Gracias al [webmail](/links/web/email), podrá acceder a su correo en cualquier 
 
 Todas sus direcciones de correo se gestionan desde el [área de cliente de OVHcloud](/links/manager). Para ello, una vez que se haya conectado, acceda al producto correspondiente. Puede de esta manera modificar la contraseña de sus direcciones de correo, verificar su índice de llenado, crear nuevas direcciones o eliminar direcciones existentes.
 
-**Trucos y consejos**: En los servicios MX Plan, puede delegar la gestión de una cuenta de correo en otra cuenta de OVHcloud, pero usted mismo podrá controlarla. Para ello, solo tiene que configurar una delegación desde su [área de cliente de OVHcloud](/links/manager). Puede basarse en [nuestra documentación](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
-
 ///
 
 /// details | ¿Qué hay que saber antes de crear una dirección de correo electrónico?
@@ -246,12 +244,6 @@ Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/e
 - [Migrar las direcciones de correo electrónico de una plataforma de correo de OVHcloud a otra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrar cuentas de correo electrónico mediante OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
-
-///
-
-/// details | ¿La solución Office 365 Pro Plus incluye licencia Skype?
-
-La solución Office 365 Pro Plus no incluye licencia Skype. Solo se incluye Skype for Business.
 
 ///
 

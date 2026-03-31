@@ -190,8 +190,6 @@ La puesta en marcha de una respuesta automática se realiza directamente conect�
 
 [Utilizar las redirecciones de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-[MX Plan - Crear una respuesta automática en una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
