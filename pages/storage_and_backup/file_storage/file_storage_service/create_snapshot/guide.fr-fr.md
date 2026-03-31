@@ -6,7 +6,7 @@ updated: 2026-03-31
 
 ## Objectif
 
-Les snapshots permettent de sauvegarder l'état d'un partage de fichiers NFS à un instant précis.  Ce guide explique comment répertorier, créer et supprimer des snapshots à l'aide de l'API OVHcloud (v1 /cloud routes), en garantissant la cohérence et la fiabilité opérationnelle.
+Les snapshots permettent de sauvegarder l'état d'un partage de fichiers NFS à un instant précis. Ce guide explique comment répertorier, créer et supprimer des snapshots à l'aide de l'API OVHcloud (v1 /cloud routes), en garantissant la cohérence et la fiabilité opérationnelle.
 
 > [!primary]
 >
