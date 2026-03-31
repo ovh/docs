@@ -1,7 +1,7 @@
 ---
 title: 'Object Storage - Getting Started with Versioning'
 excerpt: 'Learn how to enable and manage versioning for your OVHcloud Object Storage buckets using APIs'
-updated: 2026-03-06
+updated: 2026-03-31
 ---
 
 ## Objective
@@ -83,7 +83,7 @@ When versioning is enabled:
 
 ![Delete Marker With Versioning](images/Withversioningenabled2.png){.thumbnail}
 
-- You can still download or delete a specific version of an object by specifying a version ID. Please note that deleting an object by specifying a version number is irreversible.
+- You can still download or delete a specific version of an object by specifying a version ID. Deleting an object by specifying a version number is irreversible.
 
 ![Downloading or Deleting Specific Versions](images/Withversioningenabled3.png){.thumbnail}
 
@@ -108,13 +108,9 @@ When versioning is enabled:
 > Via the OVHcloud Control Panel
 >> There are two ways to activate versioning on an Object Storage bucket:
 >>
->> When creating the bucket, simply activate the versioning option in the associated step:
+>> - When creating a bucket, enable the versioning option in the corresponding step.
 >>
->> ![OVHcloud control panel - versioning in bucket creation](images/bucket_creation_versioning.png){.thumbnail}
->>
->> On an existing bucket, by modifying its parameters via the OVHcloud dashboard.
->>
->> ![OVHcloud control panel - versioning in bucket modification](images/bucket_modification_versioning.png){.thumbnail}
+>> - For an existing bucket, you can modify its settings from the OVHcloud Control Panel, in the `General Information`{.action} section.
 >>
 
 ### How to Suspend Versioning
@@ -142,18 +138,14 @@ When versioning is enabled:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> You can show or hide object versions in an Object Storage bucket by clicking on the following button:
->>
->> ![enable version objects](images/bucket_enable_versions.png){.thumbnail}
+>> You can display or hide object versions in an Object Storage bucket by clicking the `View versions`{.action} button.
 >>
 
 #### View the different versions of an object
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> To view the different versions of an object, click directly on the object concerned. You'll be redirected to a page detailing the information and versions available for this object:
->>
->> ![information versions object](images/bucket_versions_object_details.png){.thumbnail}
+>> To view the different versions of an object, click on the object in question. You will be redirected to a page showing its details. To see the available versions, click on the `Versions`{.action} tab.
 >>
 
 #### Download a current or previous version of an object
@@ -161,8 +153,6 @@ When versioning is enabled:
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> From the main page of your Object Storage bucket (if version display is enabled) or from the object details page (see previous step), you can download the desired version by clicking the `...`{.action} button, then `Download`{.action}.
->>
->> ![download current or versioned objects](images/bucket_download_versions.png){.thumbnail}
 >>
 
 ### Object deletion: simple, permanent deletion and Delete Marker management
@@ -176,11 +166,9 @@ When versioning is enabled:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> From the main page of your Object Storage bucket, or from the object details page, you can delete your object by clicking on `Delete`{.action}.
+>> From the main page of your Object Storage bucket, you can delete an object by clicking the `trash can`{.action} button.
 >>
->> ![delete current or versioned objects](images/bucket_delete_object_versions.png){.thumbnail}
->>
->> To delete a version permanently, click the `...`{.action} button, then on `Delete`{.action}, and confirm the definitive deletion action.
+>> From an object’s details page, to permanently delete a specific version, click the `...`{.action} button, select `Delete`{.action}, and confirm the permanent deletion.
 >>
 >>
 > Via the AWS CLI
@@ -202,7 +190,7 @@ When versioning is enabled:
 >> aws s3api delete-object --bucket <bucket_name> --key <object_key> --version-id <version_id>
 >> ```
 >>
->> If you wish to delete a delete marker to recover your object version, proceed as follows:
+>> To delete a delete marker and recover your object version:
 >>
 >> - List delete markers and identify the version ID of the delete marker:
 >>
