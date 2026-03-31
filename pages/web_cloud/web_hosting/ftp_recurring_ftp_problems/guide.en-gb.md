@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting recurring errors when using FTP software"
 excerpt: "Find out how to resolve the most common FTP software related issues"
-updated: 2025-10-20
+updated: 2026-03-26
 ---
 
 ## Objective
@@ -41,18 +41,11 @@ This message coming from [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_
 
 If the data you want to exchange via this link is not confidential, click `OK`{.action}.
 
-Otherwise, go to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then `Hosting plans`{.action}. Select the hosting plan concerned, then choose the `FTP-SSH`{.action} tab.
-
-If you have a [Personal](/links/web/hosting-personal-offer) Web Hosting plan, tick the `Disabled`{.action} box in the `SFTP`{.action} column, then wait a few minutes.
-
-If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](/links/web/hosting-performance-offer) Web Hosting plan, click on the `...`{.action} button to the right of the FTP user concerned, then on `Edit`{.action}.
-
-Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), click `Next`{.action} and then click on `Confirm`{.action}. Wait a few minutes.
+Otherwise, enable the SFTP protocol by following our guide "[Web Hosting - How to enable SFTP access](/pages/web_cloud/web_hosting/enable_sftp)".
 
 > [!primary]
 >
 > For any other error messages, see the `Troubleshooting` section of our [Web Hosting guides](/products/web-cloud-hosting).
->
 
 ### I transferred my files with FTP software, but my website does not appear.
 

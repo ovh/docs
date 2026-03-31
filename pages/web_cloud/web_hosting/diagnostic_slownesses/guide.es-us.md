@@ -37,16 +37,6 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 
 - Tener un sitio web alojado en uno de nuestros planes de hosting de OVHcloud (/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

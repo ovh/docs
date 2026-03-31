@@ -38,16 +38,6 @@ In rare cases, the slow display may also be caused by your Internet service prov
 - A website hosted on an [OVHcloud web hosting plan](/links/web/hosting)
 - A [domain name](/links/web/domains)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

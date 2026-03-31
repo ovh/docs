@@ -37,16 +37,6 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 
 - Sie hosten eine Website auf einem [OVHcloud Webhosting](/links/web/hosting).
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

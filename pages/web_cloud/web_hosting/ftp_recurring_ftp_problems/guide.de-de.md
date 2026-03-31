@@ -1,7 +1,7 @@
 ---
 title: "Häufige FTP-Probleme beheben"
 excerpt: "Diese Anleitung erklärt, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben"
-updated: 2025-10-20
+updated: 2026-03-26
 ---
 
 ## Ziel 
@@ -41,18 +41,11 @@ Diese Nachricht im [FileZilla-Programm](/pages/web_cloud/web_hosting/ftp_filezil
 
 Wenn die Daten, die Sie über diese Verbindung austauschen möchten, nicht vertraulich sind, klicken Sie auf `OK`{.action}.
 
-Ist das nicht der Fall, gehen Sie in Ihr [OVHcloud Kundencenter](/links/manager), dann auf `Web Cloud`{.action} und `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und öffnen Sie den Tab `FTP-SSH`{.action}.
-
-Wenn Sie über ein Webhosting [Basic](/links/web/hosting-personal-offer) verfügen, setzen Sie in der Spalte `SFTP`{.action} den Haken bei der Feld `Deaktiviert`{.action} und warten Sie einige Minuten.
-
-Wenn Sie über ein Webhosting [Pro](/links/web/hosting-professional-offer) oder [Performance](/links/web/hosting-performance-offer) verfügen, klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem betreffenden FTP-Benutzer und dann auf `Ändern`{.action}.
-
-Wählen Sie `SFTP`{.action} oder `Aktiviert`{.action} aus (um das SSH-Protokoll auf Ihrem Hosting zu aktivieren), klicken Sie auf `Weiter`{.action}, dann auf `Bestätigen`{.action}. Die Umstellung dauert einige Minuten.
+Aktivieren Sie andernfalls das SFTP-Protokoll mithilfe unserer Anleitung "[Webhosting - SFTP-Zugang aktivieren](/pages/web_cloud/web_hosting/enable_sftp)".
 
 > [!primary]
 >
 > Für sonstige Fehlermeldungen beachten Sie den Bereich `Diagnose` unserer [Webhosting-Anleitungen](/products/web-cloud-hosting).
->
 
 ### Ich habe meine Dateien mit einem FTP-Programm übertragen, aber meine Seite wird nicht angezeigt
 

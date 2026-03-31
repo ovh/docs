@@ -1,7 +1,7 @@
 ---
 title: "Administratorpasswort eines CMS ändern"
 excerpt: "Erfahren Sie hier, wie Sie das Administratorpasswort Ihres CMS über dessen Verwaltungsinterface oder mit phpMyAdmin im OVHcloud Kundencenter ändern können"
-updated: 2024-10-15
+updated: 2026-03-26
 ---
 
 ## Ziel
@@ -99,9 +99,26 @@ Sie haben Zugriff auf das Verwaltungsinterface des CMS und kennen Ihr aktuelles 
 
 Sie haben keinen Zugriff mehr auf das Verwaltungsinterface des CMS oder können die Funktion "Passwort vergessen" nicht verwenden, weil die zugehörige E-Mail-Adresse nicht erreichbar ist? Verwenden Sie phpMyAdmin in Ihrem [OVHcloud Kundencenter](/links/manager), um das Passwort direkt über die Datenbank zurückzusetzen.
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) und wählen Sie `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Angebot aus. Im Tab `Datenbanken`{.action} identifizieren Sie die von Ihrem CMS verwendete Datenbank, klicken Sie auf den Button `...`{.action} und dann auf `Zugang zu phpMyAdmin`{.action} zugreifen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-Geben Sie die Zugangsdaten (Benutzername und Kennwort) ein, die Sie bei der Erstellung der Datenbank festgelegt haben. Wenn Sie bei phpMyAdmin eingeloggt sind, klicken Sie unten auf den entsprechenden Tab.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Angebot aus.
+>>
+>> ![Hosting-Pakete](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action} und identifizieren Sie die von Ihrem CMS verwendete Datenbank.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Button `...`{.action} und dann auf `Zugang zu phpMyAdmin`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Geben Sie die Zugangsdaten (Benutzername und Kennwort) ein, die Sie bei der Erstellung der Datenbank festgelegt haben. Wenn Sie bei phpMyAdmin eingeloggt sind, klicken Sie unten auf den entsprechenden Tab.
 
 > [!tabs]
 > WordPress

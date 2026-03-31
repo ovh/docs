@@ -26,16 +26,6 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 - Disporre di un'[offerta di hosting condiviso](/links/web/hosting)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

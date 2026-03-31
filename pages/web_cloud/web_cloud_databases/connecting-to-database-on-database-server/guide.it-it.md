@@ -58,16 +58,16 @@ details[open]>summary::before {
 
 #### Connessione tramite phpMyAdmin OVHcloud
 
-Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Recupera le seguenti informazioni di connessione:
 >>
@@ -79,13 +79,13 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 >> >
 >> > Se modifichi la password di un utente di database, tutte le applicazioni/siti Web che accedono a questo database devono essere aggiornati di conseguenza.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Nella scheda `Informazioni generali`{.action}, individua la sezione **"Gestione database"** e clicca sul link phpMyAdmin sotto **"Interfaccia utente"**.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Nella pagina di login di phpMyAdmin, inserisci le informazioni recuperate allo step 2:
 >>
@@ -112,16 +112,16 @@ Se la connessione ha esito positivo, verrà visualizzata la pagina seguente.
 >
 > Se utilizzi una soluzione "Web Cloud Databases"/"SQL Privato", ricorda di autorizzare il tuo IP seguendo la guida sulla [configurazione del tuo database server](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
 
-Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Recupera le seguenti informazioni di connessione:
 >>
@@ -188,16 +188,16 @@ Puoi utilizzare la tua interfaccia phpMyAdmin per esplorare il contenuto del tuo
 
 ### Connettersi a un database PostgreSQL
 
-Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Recupera le seguenti informazioni di connessione:
 >>
