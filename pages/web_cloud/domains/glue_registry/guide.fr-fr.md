@@ -1,5 +1,5 @@
 ---
-title: "Personnaliser les serveurs DNS d'un nom de domaine (« Hôtes »)"
+title: "Personnaliser les serveurs DNS d'un nom de domaine (Hôtes)"
 excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
 updated: 2026-03-27
 ---
