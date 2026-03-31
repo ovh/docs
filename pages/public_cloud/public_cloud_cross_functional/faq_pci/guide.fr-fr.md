@@ -36,6 +36,12 @@ Pour plus d'informations sur la facturation Public Cloud, consultez [notre guide
 
 ///
 
+/// details | Quelle est la durée de validité d'un Voucher OVHcloud ?
+
+Les vouchers OVHcloud sont en règle générale valides pendant une durée de 1 mois. Nous vous recommandons donc de les utiliser rapidement pour optimiser leur usage. Le solde du voucher est utilisé avant le crédit Public Cloud.
+
+///
+
 /// details | Comment attacher une instance Public Cloud au Savings Plan que je viens de commander ?
 
 Il n'y a aucune action à effectuer. Toute instance déjà créée (ou prochainement créée) et correspondant au modèle choisi pour votre [Savings Plan](/links/public-cloud/savings-plan) y sera automatiquement intégrée, sous réserve que la quantité de ressources du Savings Plan ne soit pas épuisée.

@@ -64,7 +64,7 @@ The voucher balance will appear in the `Credits & Vouchers` list.
 
 > [!primary]
 >
-> Since the validity periods of vouchers are usually more limited, the voucher balance will be used before the regular Public Cloud credit.
+> Vouchers are generally valid for only one month; we therefore recommend that you use the voucher as soon as possible. The voucher balance will be applied before the Public Cloud credit.
 >
 
 ## Go further

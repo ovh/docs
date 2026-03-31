@@ -65,7 +65,7 @@ Le solde du voucher apparaîtra dans la liste `Crédits & Vouchers`.
 
 > [!primary]
 >
-> Les périodes de validité des vouchers étant généralement plus limitées, le solde du voucher sera utilisé avant le crédit Public Cloud.
+> Les périodes de validité des vouchers sont généralement limitées à 1 mois ; nous vous recommandons donc d'utiliser le voucher le plus tôt possible pour votre usage. Le solde du voucher sera utilisé avant le crédit Public Cloud.
 >
 
 ## Aller plus loin
