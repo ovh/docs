@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Find the most frequently asked questions about OVHcloud Public Cloud services
-updated: 2026-03-24
+updated: 2026-03-31
 ---
 
 <style>

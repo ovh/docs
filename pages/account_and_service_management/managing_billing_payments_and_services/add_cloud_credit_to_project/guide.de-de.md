@@ -1,7 +1,7 @@
 ---
 title: 'Cloud Guthaben aufladen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihrem Public Cloud Projekt Guthaben oder Gutscheine hinzufügen'
-updated: 2025-04-28
+updated: 2026-03-31
 ---
 
 ## Ziel
@@ -65,7 +65,7 @@ Der Gutschein-Saldo erscheint in der Liste `Guthaben und Gutscheine` .
 
 > [!primary]
 >
-> Da die Gültigkeitsdauer der Gutscheine in der Regel kürzer ist, wird der Guthaben des Gutscheins vor dem Public Cloud Guthaben verwendet.
+> Gutscheine sind in der Regel einen Monat gültig. Verwenden Sie den Gutschein so schnell wie möglich. Der Gutschein-Saldo wird vor dem Public Cloud Guthaben verwendet.
 >
 
 ## Weiterführende Informationen

@@ -1,7 +1,7 @@
 ---
 title: 'Añadir crédito Cloud'
 excerpt: 'Cómo añadir créditos o códigos promocionales a su proyecto de Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -65,7 +65,7 @@ El saldo del código promocional aparecerá en la lista `Crédito y códigos pro
 
 > [!primary]
 >
-> Los períodos de validez de los códigos promocionales suelen ser más limitados, por lo que el saldo del código promocional se utilizará antes que el crédito Public Cloud.
+> Los períodos de validez de los códigos promocionales suelen estar limitados a 1 mes; se recomienda utilizarlos lo antes posible. El saldo del código promocional se utilizará antes que el crédito Public Cloud.
 >
 
 ## Más información

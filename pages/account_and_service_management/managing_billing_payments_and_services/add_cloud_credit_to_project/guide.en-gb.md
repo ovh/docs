@@ -1,7 +1,7 @@
 ---
 title: 'Adding cloud credit'
 excerpt: 'Find out how to add credit or vouchers to your Public Cloud project'
-updated: 2025-04-28
+updated: 2026-03-31
 ---
 
 ## Objective
