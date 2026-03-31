@@ -37,11 +37,11 @@ Cette page présente un récapitulatif des quotas actuels de votre projet par r�
 
 ### Augmenter votre quota de ressources
 
-En accord avec des critères internes (ancienneté, existence de factures acquittées, etc.), vous pouvez désormais demander des augmentations de quota pour vos projets Public Cloud directement depuis votre espace client OVHcloud.
+En accord avec des critères internes (ancienneté, existence de factures acquittées, etc.), vous pouvez demander des augmentations de quota pour vos projets Public Cloud directement depuis votre espace client OVHcloud.
 
 Vous pouvez augmenter votre quota de ressources manuellement ou automatiquement.
 
-#### Augmenter automatiquement votre quota de ressources avec la fonctionnalité « Auto-scaling quota »
+#### Augmenter automatiquement votre quota de ressources avec la fonctionnalité « Quota autoscaling »
 
 Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Le quota sera ajusté en fonction de votre utilisation réelle **si vous dépassez 60 % de votre quota actuel pendant 30 jours consécutifs**, ainsi que selon un ensemble de critères internes et financiers.
 
@@ -50,7 +50,7 @@ Cette option vous permet de demander une augmentation automatique et progressive
 > Ce processus n’est pas adapté pour des augmentations rapides de quota.
 >
 
-En haut à droite de la page, l'option **Auto-scaling quota** est disponible :
+En haut à droite de la page, l'option **Quota autoscaling** est disponible :
 
 - Pour en savoir plus sur cette fonctionnalité, cliquez sur le `?`{.action} à côté de cette option.
 - Activez l’option en cliquant sur le bouton situé à droite de cette dernière. Son état passera de *Désactivé* à *Activé*.
@@ -63,7 +63,7 @@ Une fois activé, l’auto-scaling augmente progressivement le quota de votre pr
 
 > [!primary]
 >
-> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mon quota !`{.action} n'est pas disponible dans votre espace client, cliquez sur le bouton `Contacter le support`{.action}.
+> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas`{.action} n'est pas disponible dans votre espace client, cliquez sur le bouton `Contacter le support`{.action}.
 >
 
 ![Bouton Contacter le support visible sur la page des quotas de l'espace client](images/contact_support_quota.png){.thumbnail}
@@ -72,11 +72,11 @@ Cette procédure permet une augmentation rapide et importante de vos quotas (par
 
 Vous pouvez acheter différents montants de crédit.
 
-Cliquez sur le bouton `Augmenter mon quota !`{.action}.
+Cliquez sur le bouton `Augmenter mes quotas`{.action}.
 
 ![Bouton Augmenter mon quota dans la section des quotas Public Cloud](images/raisepciquota2.png){.thumbnail}
 
-Cliquez ensuite sur la flèche déroulante à côté de `Sélectionner le volume`{.action} pour afficher la liste des quotas disponibles. Cette section indique également le montant à payer pour bénéficier de ces ressources.
+Cliquez ensuite sur la flèche déroulante à côté de `Sélectionnez le volume`{.action} pour afficher la liste des quotas disponibles. Cette section indique également le montant à payer pour bénéficier de ces ressources.
 
 ![Liste déroulante affichant les niveaux de quota disponibles avec les coûts associés](images/selectquotas.png){.thumbnail}
 
@@ -124,7 +124,7 @@ Pour certaines ressources ou services, des quotas spécifiques peuvent s’appli
 
 **Quota S3**<sup>1</sup> : consultez la documentation officielle « [Object Storage - Limites techniques](/pages/storage_and_backup/object_storage/s3_limitations) ».
 
-**Quota Managed Kubernetes Service (MKS)** : consultez la documentation officielle « [Quotas ETCD, utilisation, dépannage et erreurs](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error) ».
+**Quota Managed Kubernetes Service (MKS)** : consultez la documentation officielle « [Quotas ETCD, utilisation, dépannage et erreurs (EN)](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error) ».
 
 ## Aller plus loin
 

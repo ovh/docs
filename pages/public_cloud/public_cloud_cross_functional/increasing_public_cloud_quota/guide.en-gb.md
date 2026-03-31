@@ -63,7 +63,7 @@ Once activated, auto-scaling will gradually increase your project's quota based 
 
 > [!primary]
 >
-> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, click on the `Contact Support`{.action} button.
+> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, click on the `Contact support`{.action} button.
 >
 
 ![Contact Support button visible in the Control Panel quota page](images/contact_support_quota.png){.thumbnail}
@@ -76,7 +76,7 @@ Click on the `Increase your quota!`{.action} button.
 
 ![Increase your quota button in the Public Cloud quota section](images/raisepciquota2.png){.thumbnail}
 
-Next, click on the drop down arrow next to `Select the volume`{.action} to view the list of quotas currently available to upgrade your resources to. This section also shows the amount to pay to benefit from these resources.
+Next, click on the drop-down arrow next to `Select the volume`{.action} to view the list of quotas currently available to upgrade your resources to. This section also shows the amount to pay for these resources.
 
 ![Dropdown list showing available quota tiers with associated costs](images/selectquotas.png){.thumbnail}
 
