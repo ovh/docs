@@ -35,23 +35,12 @@ You can use any of the [ClickHouse-recommended drivers and interfaces](https://c
 
 ### Plans
 
-Different plans are available:
+Two plans are available:
 
-- *Discovery* (Soon).
-- *Production*.
+Discovery (Soon): 1 node
+Production: 3 nodes
 
-Here is an overview of the various plans' capabilities:
-
-| Plan                  | Number of nodes by default |
-| --------------------- | -------------------------- |
-| *Discovery*           | 1                          |
-| *Production*          | 3                          |
-
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
-
-#### Nodes and replicas
-
-- **Production**: the cluster is delivered with 3 nodes by default.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 
 #### License type
 
