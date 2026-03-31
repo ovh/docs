@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar los alias y redirecciones de correo'
 excerpt: 'Cómo gestionar los alias y redirecciones de correo'
-updated: 2025-06-03
+updated: 2026-03-31
 ---
 
 <style>
@@ -101,52 +101,12 @@ Haga clic en las fichas siguientes para obtener una explicación ilustrada del f
 **Contenido**
 
 - [Crear una redirección](#redirect)
-    - [Desde el área de cliente](#redirect-manager)
     - [Desde el webmail](#redirect-webmail)
 - [Eliminar una redirección](#redirect-delete)
 - [Crear alias](#alias)
 - [Eliminar alias](#alias-delete)
 
 ### Crear una redirección <a name="redirect"></a>
-
-#### Desde el área de cliente <a name="redirect-manager"></a>
-
-Actualmente, solo los planes **MX plan** y **Redirect** disponen de una interfaz de gestión de las redirecciones a través del área de cliente de OVHcloud.
-
-##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
-
-Desde su servicio MX Plan, seleccione el dominio en cuestión.
-
-En nuestro ejemplo, se trata de una **redirección con copia local** (consulte el [esquema 2](#diagram) al principio de esta guía). Si lo necesita, siga los pasos que se indican a continuación:
-
-Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan. Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestionar las redirecciones`{.action} en el lado derecho.
-
-![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
-
-Se mostrará una tabla con las redirecciones activas. A la derecha, haga clic en el botón `Crear una redirección`{.action}.
-
-![emails](images/mxplan-legacy-2.png){.thumbnail .w-640}
-
-En el formulario `Crear una redirección`, complete los siguientes elementos:
-
-- **De la dirección**: Introduzca aquí la dirección de correo electrónico que quiera redirigir.
-- **A la dirección**: Introduzca aquí la dirección de destino de su redirección. Puede ser una de sus direcciones de correo electrónico de OVHcloud o una dirección de correo electrónico externa.
-- **Seleccione un modo de copia**: Elija si desea:
-     - **Conservar una copia del correo en OVHcloud**: Recibir el correo en su dirección principal y la dirección de redirección (ver el [esquema 2](#diagram) al principio de esta guía).
-     - **No conservar copia del correo**: Reenviar directamente a la dirección de redirección sin que la dirección principal lo reciba (ver el [esquema 1](#diagram) al principio de esta guía).
-
-Haga clic en `Aceptar`{.action} para confirmar la redirección.
-
-![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
-
-> [!primary]
->
-> Para modificar la dirección de destino o eliminar una redirección, haga clic en `...`{.action}, a la derecha de la redirección correspondiente.
-
-> [!primary]
->
-> Al elegir el modo de copia "**Conservar una copia del correo en OVHcloud**", se crea automáticamente una redirección de la dirección de correo hacia ella misma en la lista de redirecciones, materializando esta copia local.
->
 
 #### Desde el webmail <a name="redirect-webmail"></a>
 
@@ -210,21 +170,6 @@ Desplácese por las fichas siguientes para configurar la redirección a través 
 >
 
 #### Eliminar una redirección <a name="redirect-delete"></a>
-
-##### MX Plan desde el área de cliente <a name="redirect-delete-mxplan"></a>
-
-Desde su servicio MX Plan, seleccione el dominio en cuestión.
-
-Siga los pasos que se indican a continuación para eliminar una redirección:
-
-- Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan.
-- Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestiónar las redirecciones`{.action}.
-
-![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
-
-- Haga clic en `...`{.action}, a la derecha de la redirección correspondiente y luego en `Eliminar la redirección`{.action}.
-
-![emails](images/mxplan-redirect-delete01.png){.thumbnail .w-640}
 
 ##### Outlook Web App (OWA) <a name="redirect-delete-owa"></a>
 
