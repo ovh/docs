@@ -1,7 +1,7 @@
 ---
 title: "Mise en place de Multicloud Snapshot Technology (MST) sur une infrastructure Nutanix on OVHcloud"
 excerpt: 'Comment activer MST avec un container Object Storage OVHcloud'
-updated: 2026-03-30
+updated: 2026-03-31
 ---
 
 ## Objectif
