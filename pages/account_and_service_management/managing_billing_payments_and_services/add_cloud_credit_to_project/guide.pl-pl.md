@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z vouchera'
 excerpt: 'Dowiedz się, jak dodać zasilenie lub vouchery do Twojego projektu Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie
@@ -65,7 +65,7 @@ Pozostała część kodu pojawi się na liście `Kredyty i vouchery`.
 
 > [!primary]
 >
-> Ze względu na to, że kody promocyjne są ważne przez dłuższy czas, pozostała część kodu zostanie wykorzystana przed zasileniem Public Cloud.
+> Vouchery są zazwyczaj ważne przez jeden miesiąc; należy z nich korzystać jak najszybciej. Saldo vouchera zostanie wykorzystane przed zasileniem Public Cloud.
 >
 
 ## Sprawdź również

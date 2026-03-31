@@ -1,7 +1,7 @@
 ---
 title: 'Adicionar um crédito cloud'
 excerpt: 'Saiba como adicionar crédito ou vouchers ao seu projeto Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -65,7 +65,7 @@ O saldo do voucher aparecerá na lista `Créditos e Vouchers`.
 
 > [!primary]
 >
-> Uma vez que os prazos de validade dos vouchers são geralmente mais limitados, o saldo do voucher será utilizado antes do crédito Public Cloud.
+> Os prazos de validade dos vouchers são geralmente limitados a 1 mês; recomenda-se que os utilize o mais cedo possível. O saldo do voucher será utilizado antes do crédito Public Cloud.
 >
 
 ## Quer saber mais?
