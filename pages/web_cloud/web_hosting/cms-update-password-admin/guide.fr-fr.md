@@ -107,7 +107,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'offre concernée.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -119,7 +119,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 4**
 >>
->> Saisissez les identifiants de la base de données (nom d'utilisateur et mot de passe) que vous avez définis lors de la création de la base de données. Une fois connecté à phpMyAdmin, cliquez sur l'onglet concerné ci-dessous.
+>> Saisissez les identifiants de la base de données (nom d'utilisateur et mot de passe) que vous avez définis lors de sa création. Une fois connecté à phpMyAdmin, cliquez sur l'onglet concerné ci-dessous.
 
 > [!tabs]
 > WordPress

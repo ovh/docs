@@ -77,7 +77,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Étape 2**
 >>
->> Cliquez sur l’onglet `Bases de données`{.action}. Le tableau qui apparaît contient les bases de données créées sur votre offre d’hébergement web.
+>> Cliquez sur l’onglet `Bases de données`{.action}. Le tableau liste les bases de données créées sur votre offre d’hébergement web.
 >>
 >> ![Liste des BDD Start SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-dashboard-db-list.png){.thumbnail}
 >>
@@ -89,18 +89,18 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Étape 4**
 >>
->> Une fenêtre s’affiche afin d’identifier votre base de données de destination.
+>> Une fenêtre vous invite à choisir votre base de données de destination.
 >>
 >> ![Interface copier BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
 >>
 >> > [!primary]
 >> >
->> > Si vous ne possédez pas de base de données de destination, cliquez sur le lien présent dans la fenêtre pour en acheter une. N’oubliez pas de l’activer :
+>> > Si vous n'avez pas de base de données de destination, cliquez sur le lien présent dans la fenêtre pour en acheter une. N’oubliez pas de l’activer :
 >> >
 >> > - Pour une base de données « Shared SQL » : suivez notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
 >> > - Pour une base de données sur un serveur « Web Cloud Databases » : suivez notre guide « [Créer une base de données sur un serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
 >>
->> - **Choix 1 - Copier vers une base Start SQL** : sélectionnez `Copier vers une base de données hébergée chez OVHcloud`{.action}, puis choisissez la base de données de destination dans la liste déroulante.
+>> - **Choix 1 - Copier vers une base Start SQL** : sélectionnez `Copier vers une base de données`{.action}, puis choisissez la base de données de destination dans la liste déroulante.
 >> - **Choix 2 - Copier vers un serveur Web Cloud Databases** : sélectionnez `Copier vers un Web Cloud Databases`{.action}. Deux listes déroulantes s’affichent. Cliquez sur la première puis sélectionnez l’offre Web Cloud Databases, puis sur la deuxième pour choisir la base de données de destination.
 >>
 > **Étape 5**
@@ -144,18 +144,18 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Étape 4**
 >>
->> Une fenêtre s’affiche afin d’identifier votre base de données de destination.
+>> Une fenêtre vous invite à choisir votre base de données de destination.
 >>
 >> ![Interface copier BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
 >>
 >> > [!primary]
 >> >
->> > Si vous ne possédez pas de base de données de destination, cliquez sur le lien présent dans la fenêtre pour en acheter une. N’oubliez pas de l’activer :
+>> > Si vous n'avez pas de base de données de destination, cliquez sur le lien présent dans la fenêtre pour en acheter une. N’oubliez pas de l’activer :
 >> >
 >> > - Pour une base de données « Shared SQL » : suivez notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
 >> > - Pour une base de données sur un serveur « Web Cloud Databases » : suivez notre guide « [Créer une base de données sur un serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
 >>
->> - **Choix 1 - Copier vers une base Start SQL** : sélectionnez `Copier vers une base de données hébergée chez OVHcloud`{.action}, puis choisissez la base de données de destination dans la liste déroulante.
+>> - **Choix 1 - Copier vers une base Start SQL** : sélectionnez `Copier vers une base de données`{.action}, puis choisissez la base de données de destination dans la liste déroulante.
 >> - **Choix 2 - Copier vers un serveur Web Cloud Databases** : sélectionnez `Copier vers un Web Cloud Databases`{.action}. Deux listes déroulantes s’affichent. Cliquez sur la première puis sélectionnez l’offre Web Cloud Databases, puis sur la deuxième pour choisir la base de données de destination.
 >>
 > **Étape 5**
@@ -178,7 +178,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 
 Une fois la copie de votre base de données source effectuée, vous devrez réaliser une dernière action si vous souhaitez utiliser votre nouvelle base de données.
 
-Assurez-vous que la copie est bien terminée (la ligne mentionnée dans l'étape 6, correspondante à votre copie, a disparu).
+Assurez-vous que la copie est bien terminée (la ligne correspondant à votre copie dans l'onglet `Tâches en cours`{.action} a disparu).
 
 Pour connecter la nouvelle base de données à votre site web, éditez le fichier de configuration de votre **C**ontent **M**anagement **S**ystem (**CMS**) et saisissez les informations de connexion de la nouvelle base de données.
 
@@ -208,11 +208,11 @@ Durant le processus de copie du contenu de la base de données, vous pouvez renc
 
 /// details | Aucune base de données ne s’affiche dans la liste
 
-Cette notification signifie que vous ne possédez qu’une seule base de données active. Pour copier votre base de données source, il vous faut également une base de données de destination active. Pour cela, vous pouvez:
+Cette notification signifie que vous ne possédez qu’une seule base de données active. Pour copier votre base de données source, il vous faut également une base de données de destination active. Pour cela, vous pouvez :
 
-- Configurer une nouvelle base de données disponible sur votre hébergement web;
-- Configurer une nouvelle base de données sur votre serveur [Web Cloud Databases](/links/web/databases);
-- Commander une offre « [start SQL](/links/web/hosting-options-startsql) » ou un serveur de bases de données « [Web Cloud Databases](/links/web/databases) »
+- Configurer une nouvelle base de données disponible sur votre hébergement web.
+- Configurer une nouvelle base de données sur votre serveur [Web Cloud Databases](/links/web/databases).
+- Commander une offre « [start SQL](/links/web/hosting-options-startsql) » ou un serveur de bases de données « [Web Cloud Databases](/links/web/databases) ».
 
 ///
 

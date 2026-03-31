@@ -42,7 +42,7 @@ Ce message sur le logiciel [FileZilla](/pages/web_cloud/web_hosting/ftp_filezill
 
 Si les données que vous souhaitez échanger par ce biais ne sont pas confidentielles, cliquez sur `OK`{.action}.
 
-Dans le cas contraire, activez le protocole SFTP grâce à [ce guide](/pages/web_cloud/web_hosting/enable_sftp).
+Dans le cas contraire, activez le protocole SFTP en consultant notre guide « [Hébergement web - Comment activer l'accès SFTP](/pages/web_cloud/web_hosting/enable_sftp) ».
 
 > [!primary]
 >

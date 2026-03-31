@@ -93,9 +93,9 @@ Ce fichier est présent dans le dossier .vscode, lui-même positionné à la rac
 
 ### Configurer le fichier sftp.json
 
-Avant de travailler sur votre projet, téléchargez-le dans votre dossier local précédemment créé. Cependant, dans un premier temps, assurez-vous que le fichier « sftp.json » est correctement configuré. Les informations utiles sont récupérables en consultant notre guide « [Se connecter à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
+Avant de travailler sur votre projet, téléchargez-le dans votre dossier local précédemment créé. Cependant, dans un premier temps, assurez-vous que le fichier « sftp.json » est correctement configuré. Consultez notre guide « [Se connecter à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) » pour retrouver les informations utiles.
 
-Dans le fichier « sftp.json » , rentrez les valeurs pour les entrées suivantes :
+Dans le fichier « sftp.json », rentrez les valeurs pour les entrées suivantes :
 
 #### name 
 
@@ -106,7 +106,7 @@ Pour retrouver le nom de votre hébergement web, cliquez sur les onglets ci-dess
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -116,7 +116,7 @@ Pour retrouver le nom de votre hébergement web, cliquez sur les onglets ci-dess
 
 > [!primary]
 >
-> La valeur `name`(nom) étant personnalisable, vous pouvez attribuer celle de votre choix. Cependant, si vous configurez plusieurs fichiers « sftp.json » , il est préférable de prendre comme référence les valeurs visibles ci-dessus pour des raisons d'organisation.
+> La valeur `name`(nom) étant personnalisable, vous pouvez attribuer celle de votre choix. Cependant, si vous configurez plusieurs fichiers « sftp.json », il est préférable de prendre comme référence les valeurs visibles ci-dessus pour des raisons d'organisation.
 
 #### host
 
@@ -127,11 +127,11 @@ Pour retrouver le nom d’hôte (`host`), cliquez sur les onglets ci-dessous pou
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l’hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Dans l’onglet `FTP-SSH`{.action}, le nom d’hôte est visible sous la mention `Serveur FTP et SFTP`.
+>> Dans l’onglet `FTP - SSH`{.action}, le nom d’hôte est visible sous la mention `Serveur FTP et SFTP`.
 >>
 >> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
 
@@ -144,11 +144,11 @@ Pour retrouver le nom d'utilisateur (`username`), cliquez sur les onglets ci-des
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Dans l'onglet `FTP-SSH`{.action}, repérez le nom d'utilisateur dans la colonne `Login` du tableau.
+>> Dans l'onglet `FTP - SSH`{.action}, repérez le nom d'utilisateur dans la colonne `Login` du tableau.
 
 #### remotePath
 
@@ -159,11 +159,11 @@ Pour retrouver le chemin distant (`remotePath`), cliquez sur les onglets ci-dess
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Dans l'onglet `FTP-SSH`{.action}, repérez le chemin sous la mention `chemin du répertoire home`. Si plusieurs utilisateurs sont configurés, le chemin indiqué peut être différent. Dans ce cas, remplacez le nom d'utilisateur mentionné après `home/` par celui de votre choix dans la colonne `Login` du tableau.
+>> Dans l'onglet `FTP - SSH`{.action}, repérez le chemin sous la mention `chemin du répertoire home`. Si plusieurs utilisateurs sont configurés, le chemin indiqué peut être différent. Remplacez alors le nom d'utilisateur mentionné après `home/` par celui de votre choix dans la colonne `Login` du tableau.
 >>
 >> **Exemple** : Si votre nom d'utilisateur est « john-smith » vous obtiendrez `home/john-smith`
 
@@ -193,7 +193,7 @@ Voici un exemple de fichier « sftp.json » :
 
 ```
 
-Pour plus de détail concernant les options du fichier « sftp.json » , reportez-vous à la [documentation du projet](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration).
+Pour plus de détail concernant les options du fichier « sftp.json », reportez-vous à la [documentation du projet](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration).
 
 ### Télécharger le projet en local
 
@@ -203,7 +203,7 @@ Visual Studio Code vous demande de sélectionner le dossier que vous souhaitez t
 
 ![hosting](/pages/assets/screens/other/web-tools/vscode/download_project.png){.thumbnail}
 
-S'il est demandé, saisissez le mot de passe associé à l’utilisateur renseigné dans le fichier « sftp.json » , puis cliquez sur `enter`. Après le téléchargement, vous visualisez l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers situé dans la colonne à gauche de l’interface Visual Studio Code.
+S'il est demandé, saisissez le mot de passe associé à l’utilisateur renseigné dans le fichier « sftp.json », puis cliquez sur `enter`. Après le téléchargement, vous visualisez l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers situé dans la colonne à gauche de l’interface Visual Studio Code.
 
 ![hosting](/pages/assets/screens/other/web-tools/vscode/explorer.png){.thumbnail}
 

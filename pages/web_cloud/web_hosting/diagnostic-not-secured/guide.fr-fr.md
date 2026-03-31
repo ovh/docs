@@ -73,7 +73,7 @@ Pour retrouver l'adresse IP de votre [hébergement OVHcloud](/links/web/hosting)
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -130,7 +130,7 @@ Contactez votre webmaster ou les [partenaires OVHcloud](/links/partner) à ce su
 
 /// details | Votre domaine utilise d'autres serveurs DNS OVHcloud (ns?.ovh.net / dns?.ovh.net)
 
-Au dessus de la zone DNS présente dans votre espace client OVHcloud, un message indique que votre domaine utilise d'autres serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit) et ceux-ci apparaissent sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » (remplacez le « **?** » par le numéro de serveur DNS concerné) :
+Au-dessus de la zone DNS présente dans votre espace client OVHcloud, un message indique que votre domaine utilise d'autres serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit) et ceux-ci apparaissent sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » (remplacez le « **?** » par le numéro de serveur DNS concerné) :
 
 ![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}
 
@@ -140,7 +140,7 @@ Modifiez les serveurs DNS de votre domaine, afin qu'ils correspondent à ceux in
 
 /// details | Votre domaine utilise des serveurs DNS externes (non OVHcloud)
 
-Au dessus de la zone DNS présente dans votre espace client OVHcloud, un message indique que votre domaine utilise d'autres serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit) et ceux-ci n'apparaissent pas sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » :
+Au-dessus de la zone DNS présente dans votre espace client OVHcloud, un message indique que votre domaine utilise d'autres serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit) et ceux-ci n'apparaissent pas sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » :
 
 ![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}
 
@@ -171,7 +171,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>

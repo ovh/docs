@@ -59,7 +59,7 @@ Pour accéder aux moteurs d'exécution de votre hébergement [Cloud Web](/links/
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement Cloud Web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -80,11 +80,11 @@ Pour vérifier que vous disposez bien de 2 vCores avec votre hébergement Cloud 
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement Cloud Web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Dans l'encadré **Abonnement** et sous la mention `Offre`, vérifiez que la référence `Cloud Web 3`{.action} y est indiquée.
+>> Dans l'encadré **Abonnement** et sous la mention `Offre`, vérifiez que la référence `Cloud Web 3` y est indiquée.
 
 ### 3 - Créer des variables d'environnement (facultatif)
 
@@ -99,7 +99,7 @@ Pour ajouter une variable d'environnement, cliquez sur les onglets ci-dessous po
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement Cloud Web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -109,7 +109,7 @@ Pour ajouter une variable d'environnement, cliquez sur les onglets ci-dessous po
 >>
 >> Pour en ajouter une nouvelle, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter une variable d'environnement`{.action}. Suivez alors les indications en fonction de la variable que vous souhaitez créer.
 >>
->> ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
+>> ![Ajout d'une variable d'environnement sur un hébergement Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Si vous n’utilisez pas de framework de développement intégrant les variables d’environnement ou si vous souhaitez simplement vérifier le bon fonctionnement de vos variables, vous pouvez créer un script qui effectuera cette vérification. Vous trouverez, ci-dessous, deux exemples pouvant vous aider dans votre démarche, mais ils ne se substituent pas à l’aide d’un webmaster.
 
@@ -144,7 +144,7 @@ Maintenant que l’environnement technique de votre hébergement Cloud Web est p
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l’hébergement Cloud Web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -156,9 +156,9 @@ Maintenant que l’environnement technique de votre hébergement Cloud Web est p
 >>
 >> Soyez vigilant lors de la complétion des informations suivantes :
 >>
->> - **dossier racine** : il s’agit du répertoire où le nom de domaine renseigné devra être hébergé sur l’espace de stockage de votre hébergement Cloud Web ;
+>> - **dossier racine** : il s’agit du répertoire où le nom de domaine renseigné devra être hébergé sur l’espace de stockage de votre hébergement Cloud Web ;
 >>
->> - **Moteur d’exécution** : il s’agit du moteur d’exécution, préalablement paramétré, qui sera utilisé par le Multisite que vous êtes en train de configurer.
+>> - **Moteur d’exécution** : il s’agit du moteur d’exécution, préalablement paramétré, qui sera utilisé par le Multisite que vous êtes en train de configurer.
 >>
 >> > [!warning]
 >> >
@@ -181,7 +181,7 @@ Si votre choix se porte sur l'utilisation de nos modules en 1 clic, cliquez sur 
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement Cloud Web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -189,7 +189,7 @@ Si votre choix se porte sur l'utilisation de nos modules en 1 clic, cliquez sur 
 >>
 > **Étape 3**
 >>
->> Vous pourrez alors initier une installation en mode « simple » (non personnalisable) ou en mode « avancé » (possibilité de personnaliser certains éléments).
+>> Vous pouvez alors initier une installation en mode « simple » (non personnalisable) ou en mode « avancé » (possibilité de personnaliser certains éléments).
 
 Si vous désirez obtenir plus d'informations sur les modules en 1 clic OVHcloud, consultez notre documentation : [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
@@ -217,7 +217,7 @@ Il existe plusieurs enregistrements DNS inhérents à OVHcloud. Nous allons nous
 
 |Enregistrement DNS|Service associé|Où le récupérer ?|
 |---|---|---|
-|A|Pour le site internet|Récupérez l'adresse IP de votre hébergement Cloud Web en consultant [ce guide](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|
+|A|Pour le site internet|Récupérez l'adresse IP de votre hébergement Cloud Web en consultant notre guide « [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».|
 |MX|Pour les e-mails|Récupérez les informations MX en consultant notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx) ».|
 
 #### 2. Vérifier et/ou modifier les enregistrement DNS

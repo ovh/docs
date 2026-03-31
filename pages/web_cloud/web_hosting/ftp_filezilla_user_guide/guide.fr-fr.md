@@ -76,7 +76,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -120,7 +120,7 @@ Le **SFTP** utilise, comme le SSH, le port 22 par défaut au lieu du port 21. Si
 
 **Verifier l'activation du protocole SFTP**
 
-Pour cela, consultez notre guide « [Activer la connexion SFTP sur son hébergement web](/pages/web_cloud/web_hosting/enable_sftp) ».
+Pour cela, consultez notre guide « [Hébergement web - Comment activer l'accès SFTP](/pages/web_cloud/web_hosting/enable_sftp) ».
 
 **Se connecter en SFTP avec FileZilla**
 

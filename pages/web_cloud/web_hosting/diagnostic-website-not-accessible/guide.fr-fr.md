@@ -116,7 +116,7 @@ Pour vérifier les serveurs DNS déclarés, cliquez sur les onglets ci-dessous p
 
 /// details | Scénario 2 - Un avertissement apparaît au-dessus de la zone DNS
 
-Au dessus de la zone DNS présente dans votre espace client OVHcloud, un avertissement indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans votre zone. Deux cas sont possibles :
+Au-dessus de la zone DNS présente dans votre espace client OVHcloud, un avertissement indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans votre zone. Deux cas sont possibles :
 
 - Les serveurs indiqués sont du type « ns **?** .ovh.net » et « dns **?** .ovh.net » (remplacez le « **?** » par n'importe quel numéro) :
 
@@ -196,7 +196,7 @@ Si votre site web est hébergé sur l'une de nos [offres d'hébergement web](/li
 >>
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
->> Copiez l'adresse IPV4 et/ou IPV6 de votre nom de domaine.
+>> Copiez l'adresse IPv4 et/ou IPv6 de votre nom de domaine.
 
 Puis reportez-la dans la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) de votre nom de domaine, en modifiant ou créant une ou plusieurs entrées de type `A`.
 

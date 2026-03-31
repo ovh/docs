@@ -12,7 +12,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou l'éditeur du CMS que vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
 >
 > Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-après les liens vers leurs pages officielles respectives :
 >
@@ -126,11 +126,12 @@ Consultez notre documentation qui décrit [comment créer un site web sur son h�
 
 - Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](/links/web/hosting).
 
-Pour récupérer l'adresse IPv4 (ou IPv6) de votre offre d'hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+Pour récupérer l'adresse IPv4 (ou IPv6) de votre offre d'hébergement web, consultez notre guide « [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
 
 > [!warning]
 >
 > Si vous avez utilisé l'option d'adresse IP géolocalisée par pays ou activé une option CDN entre votre nom de domaine et votre hébergement web, utilisez l'adresse IP adéquate indiquée dans le guide cité ci-dessus.
+>
 
 Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](/links/control-panel/web-dns-zone), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 

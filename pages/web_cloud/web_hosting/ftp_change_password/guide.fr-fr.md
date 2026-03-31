@@ -56,9 +56,9 @@ Cet accès permet notamment de [mettre en ligne votre site](/pages/web_cloud/web
 
 > [!primary]
 >
-> Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, suivez les instructions de ce [guide](/pages/account_and_service_management/account_information/manage-ovh-password).
+> Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, consultez le guide « [Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password) ».
 
-Selon votre offre d'[hébergement web OVHcloud](/links/web/hosting), la modification du mot de passe de votre utilisateur FTP se fera par deux chemins différents.
+Selon votre offre d'[hébergement web OVHcloud](/links/web/hosting), le mot de passe de votre utilisateur FTP se modifie de deux façons différentes.
 
 **Cliquez sur votre offre pour afficher le contenu.**
 
@@ -77,7 +77,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Cliquez sur l'onglet `FTP - SSH`{.action}.
 >>
->> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
 > **Étape 3**
 >>
@@ -102,7 +102,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Cliquez sur l'onglet `FTP - SSH`{.action}.
 >>
->> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
 > **Étape 3**
 >>
@@ -114,7 +114,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 
 > [!primary]
 >
-> Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
+> Votre nouveau mot de passe doit respecter la **politique des mots de passe** suivante :
 >
 > - Minimum 9 caractères ;
 > - Maximum 30 caractères ;
@@ -123,7 +123,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > - Au moins un chiffre ;
 > - Être composé uniquement de chiffres et de lettres.
 
-Consultez enfin l'onglet `Tâches en cours`{.action} et rafraîchissez la page régulièrement. Le changement ne nécessite que quelques minutes pour être effectif.
+Consultez l'onglet `Tâches en cours`{.action} et rafraîchissez la page régulièrement. Le changement ne nécessite que quelques minutes pour être effectif.
 
 ### Accéder à votre espace de stockage
 

@@ -62,7 +62,7 @@ Si vous ne disposez pas de ces éléments, cliquez sur les onglets ci-dessous po
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
 >>
->> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
 > **Étape 3**
 >>
@@ -80,13 +80,13 @@ Si vous ne disposez pas de ces éléments, cliquez sur les onglets ci-dessous po
 >>
 > **Étape 4**
 >>
->> Retrouvez ci-dessous un descriptif des informations essentielles affichées sur la page `FTP - SSH` :
+>> Voici les informations essentielles affichées sur la page `FTP - SSH` :
 >>
->> - **Serveur FTP et SFTP** : adresse du serveur FTP de votre hébergement web permettant d'accéder à votre espace de stockage FTP. Ceci en utilisant, par exemple, un logiciel FTP via le protocole FTP ou SFTP.
+>> - **Serveur FTP et SFTP** : adresse du serveur FTP de votre hébergement web permettant d'accéder à votre espace de stockage FTP via un logiciel FTP ou SFTP.
 >>
->> > Le port classique de connexion est le port « 21 ». Utilisez le port « 22 » pour une connexion via le protocole SFTP (dans le cas où celui-ci est activé)
+>> > Le port classique de connexion est le port « 21 ». Utilisez le port « 22 » pour une connexion via le protocole SFTP (dans le cas où celui-ci est activé).
 >>
->> - **Serveur SSH** : adresse du serveur SSH de votre hébergement web permettant d'accéder à votre espace de stockage FTP. Ceci en utilisant un terminal via le protocole SSH.
+>> - **Serveur SSH** : adresse du serveur SSH de votre hébergement web permettant d'accéder à votre espace de stockage FTP via un terminal et le protocole SSH.
 >>
 >> > Le port de connexion SSH est le port « 22 ».
 >>
