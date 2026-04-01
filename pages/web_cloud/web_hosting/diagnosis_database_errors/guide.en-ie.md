@@ -326,7 +326,7 @@ First make sure that your database is empty. To do this, click on the tabs below
 >>
 > **Step 2**
 >>
->> Click on the `Databases`{.action} tab, then on the `...`{.action} button next to the database concerned and on `Recalculate the quota`{.action}.
+>> Click the `Databases`{.action} tab, then the `...`{.action} button next to the database, then `Recalculate the quota`{.action}.
 >>
 > **Step 3**
 >>

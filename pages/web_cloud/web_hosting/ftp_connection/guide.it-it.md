@@ -69,9 +69,9 @@ Se non disponi di questi elementi, clicca sulle schede qui sotto per visualizzar
 >>
 >> > [!primary]
 >> >
->> > Per creare un nuovo utente FTP/SSH dalla stessa pagina, clicca su `Crea utente`{.action} situato a destra.
->> > Definisci l'estensione del nome di questa nuova `Utente`{.action} e la `Cartella di root`{.action} in cui l'utente potrà agire e clicca su `Avanti`{.action}.
->> > Seleziona una password per questo nuovo account utente, clicca su `Avanti`{.action} e poi clicca su `Conferma`{.action}.
+>> > Per creare un nuovo utente FTP/SSH dalla stessa pagina, clicca su `Creare un utente`{.action} situato a destra.
+>> > Definisci l'estensione del nome di questa nuova `Utente`{.action} e la `Cartella di root`{.action} in cui l'utente potrà agire e clicca su `Continua`{.action}.
+>> > Seleziona una password per questo nuovo account utente, clicca su `Continua`{.action} e poi clicca su `Conferma`{.action}.
 >>
 >> Tutti gli elementi necessari per connetterti allo spazio di storage FTP sono presenti su questa stessa pagina.
 >>

@@ -156,7 +156,7 @@ Oznacza to, że Twoja domena nie jest zarządzana z poziomu [Panelu klienta OVHc
 
 Sprawdź, czy domena nie jest zarządzana z poziomu jednego z Twoich pozostałych [kont OVHcloud](/links/manager), jeśli utworzyłeś kilka z nich.
 
-Możesz również wskazać jej operatora oraz serwery DNS, z którymi jest powiązana, za pomocą naszego narzędzia [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).
+Możesz również wskazać jej operatora oraz serwery DNS, z którymi jest powiązana, za pomocą naszego narzędzia [WHOIS](/links/web/domains-whois).
 
 W razie potrzeby skontaktuj się z webmasterem lub [partnerami OVHcloud](/links/partner) w tym zakresie.
 

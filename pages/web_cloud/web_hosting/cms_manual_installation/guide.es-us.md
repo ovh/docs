@@ -108,7 +108,7 @@ Más información en nuestra página relativa a [PrestaShop](/links/web/hosting-
 > No importa cuál sea el CMS que elija, le recordamos que OVHcloud no proporciona soporte sobre el uso de estos CMS. Si necesita ayuda, contacte directamente con el editor del CMS que haya elegido utilizando los enlaces que se indican más arriba en este tutorial.
 >
 
-### 1 - preparar la instalación <a name="step1"></a>
+### 1 - Preparar la instalación <a name="step1"></a>
 
 Para instalar un CMS en su [plan de hosting](/links/web/hosting), es necesario realizar algunos preparativos.
 
@@ -181,7 +181,7 @@ Una vez que haya creado la base de datos, deberá descargar los parámetros de c
 > - Para conectarse a una base de datos en un databases de Web Cloud, consulte [esta guía](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
-### 2 - iniciar la instalación manual
+### 2 - Iniciar la instalación manual
 
 #### 2.1 - Obtener los archivos de origen de su CMS
 

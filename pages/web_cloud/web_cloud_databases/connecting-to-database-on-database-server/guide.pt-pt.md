@@ -73,7 +73,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> - **Servidor (hostname) e porta:** visíveis no separador `Informações gerais`{.action}, secção `Informações da ligação`.
 >> - **Nome de utilizador:** visível no separador `Utilizadores e permissões`{.action}.
->> - **Palavra-passe:** a palavra-passe associada ao utilizador. Se não se lembra dela, aceda ao separador `Utilizadores e permissões`{.action}, clique em `...`{.action} à direita do utilizador em causa e, em seguida, em `Alterar a palavra-passe`{.action}.
+>> - **Palavra-passe:** a palavra-passe associada ao utilizador. Se não se lembra dela, aceda ao separador `Utilizadores e permissões`{.action}, clique em `...`{.action} à direita do utilizador em causa e, em seguida, em `Alterar palavra-passe`{.action}.
 >>
 >> > [!warning]
 >> >

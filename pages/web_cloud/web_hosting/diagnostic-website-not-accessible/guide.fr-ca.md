@@ -163,7 +163,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 3**
 >>
->> Cliquez sur `Réinitialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS`{.action}.
+>> Cliquez sur `Réinitialiser ma zone DNS`{.action}, puis sélectionnez `Non, mais je veux réinitialiser ma zone DNS.`{.action}.
 >>
 >> Indiquez vos serveurs e-mail et d'hébergement, puis cliquez sur `Valider`{.action}.
 >>

@@ -29,7 +29,7 @@ updated: 2026-03-31
 
 ## Objective
 
-On your OVHcloud web hosting, you can use scripts to automate certain operations. A scheduled task ("cron job") allows your scripts to run at specific times without further actions on your part.
+On your OVHcloud web hosting, you can use scripts to automate certain operations. A scheduled task ("cron job") runs your scripts at specific times, automatically.
 
 **This guide explains how to create cron jobs to automate scheduled tasks on a web hosting plan.**
 
@@ -70,7 +70,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 > **Step 2**
 >>
->> Click on the `More`{.action} tab, then `Cron`{.action}. You will see an overview of your scheduled tasks and their settings.
+>> Click on the `More`{.action} tab, then `cron`{.action}. You will see an overview of your scheduled tasks and their settings.
 >>
 >> ![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/schedule-jobs.png){.thumbnail}
 >>
@@ -135,7 +135,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 > **Step 2**
 >>
->> On the page that pops up, click on the `More`{.action} tab, then `Cron`{.action}.
+>> On the page that pops up, click on the `More`{.action} tab, then `cron`{.action}.
 >>
 > **Step 3**
 >>

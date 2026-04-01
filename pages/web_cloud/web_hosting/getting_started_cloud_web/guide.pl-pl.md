@@ -65,7 +65,7 @@ Aby uzyskać dostęp do frameworków Twojego hostingu [Cloud Web](/links/web/hos
 >>
 >> Kliknij zakładkę `Frameworki`{.action}. Framework jest automatycznie tworzony podczas instalacji hostingu. Oznaczony jest jako `Wybór domyślny` w tabeli, która się wyświetli.
 >>
->> Aby zmodyfikować wcześniej skonfigurowany framework, kliknij przycisk `...`{.action} po jego prawej stronie, a następnie `Modyfikuj`{.action}.
+>> Aby zmodyfikować wcześniej skonfigurowany framework, kliknij przycisk `...`{.action} po jego prawej stronie, a następnie `Zmodyfikuj`{.action}.
 >>
 > **Krok 3**
 >>
@@ -185,7 +185,7 @@ Jeśli decydujesz się na skorzystanie z modułów CMS OVHcloud, kliknij na poni
 >>
 > **Krok 2**
 >>
->> Kliknij zakładkę `Moduły CMS`{.action}, a następnie `Dodaj moduł`{.action}.
+>> Kliknij zakładkę `Moduły CMS`{.action}, a następnie `Dodaj moduł CMS`{.action}.
 >>
 > **Krok 3**
 >>

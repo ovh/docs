@@ -111,7 +111,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action} e identifica il database utilizzato dal tuo CMS.
+>> Clicca sulla scheda `Databases`{.action} e identifica il database utilizzato dal tuo CMS.
 >>
 > **Passaggio 3**
 >>

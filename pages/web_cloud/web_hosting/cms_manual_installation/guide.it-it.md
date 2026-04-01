@@ -241,7 +241,7 @@ Indica la cartella "**CMS**" per estrarre i tuoi file da questa cartella.
 
 ### 2.3 - Sposta i file sorgente della cartella "CMS" sulla cartella root del tuo hosting Web
 
-Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tuo spazio di archiviazione](/pages/web_cloud/web_hosting/ftp_connection) con l'aiuto del [client FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) e copia i file contenuti nella cartella "**CMS**" nella "cartella root" definita sul tuo hosting durante lo [parte 1](#step1) di questa guida.
+Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tuo spazio di archiviazione](/pages/web_cloud/web_hosting/ftp_connection) con l'aiuto del [client FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) e copia i file contenuti nella cartella "**CMS**" nella "cartella root" definita sul tuo hosting durante la [parte 1](#step1) di questa guida.
 
 Di seguito, un esempio con il CMS *WordPress*:
 
@@ -254,7 +254,7 @@ Di seguito, un esempio con il CMS *WordPress*:
 
 > [!primary]
 >
-> Se la cartella root definita non è stata creata automaticamente durante le azioni descritte nello [parte 1](#step1), puoi crearla via FileZilla.
+> Se la cartella root definita non è stata creata automaticamente durante le azioni descritte nella [parte 1](#step1), puoi crearla via FileZilla.
 >
 > Il deposito dei file sul tuo hosting può richiedere qualche minuto.
 >

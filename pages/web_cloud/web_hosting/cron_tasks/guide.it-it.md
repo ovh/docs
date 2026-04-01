@@ -89,7 +89,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> |Log via email|Se necessario, seleziona un contatto (amministratore o tecnico) al quale verrà inviato un report in caso di errore di esecuzione. Puoi anche fornire un altro indirizzo email.|
 >> |Descrizione|Inserisci una descrizione per seguire l'esecuzione dei tuoi compiti.|
 >>
->> Clicca su `Avanti`{.action}.
+>> Clicca su `Continua`{.action}.
 >>
 > **Passaggio 4**
 >>
@@ -111,7 +111,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> Durante la configurazione è possibile passare da una modalità all'altra. Annota anche i [limiti durante la pianificazione di un'operazione su un hosting web](./#limitazioni-delle-attivita-pianificate-sul-tuo-hosting-web).
 >>
->> Clicca su `Avanti`{.action}.
+>> Clicca su `Continua`{.action}.
 >>
 > **Passaggio 5**
 >>
@@ -140,7 +140,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> Nella tabella che appare, clicca sul pulsante `...`{.action} a destra dell'operazione pianificata in questione.
 >>
->> Scegli tra i pulsanti `Modifica`{.action} o `Elimina`{.action} in base all'azione che vuoi effettuare sull'operazione pianificata.
+>> Scegli tra i pulsanti `Modificare`{.action} o `Eliminare`{.action} in base all'azione che vuoi effettuare sull'operazione pianificata.
 
 ### Limitazioni delle attività pianificate sul tuo hosting web
 
@@ -150,7 +150,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 |Durata|La durata di esecuzione di un'operazione è di 60 minuti. Se uno script supera il tempo di esecuzione, viene automaticamente arrestato dal sistema.|
 |Variabile|Puoi definire solo delle variabili in uno script. Aggiungere all'URL che chiama lo script non funzionerà (esempio: www/jobs/cron.php?variabili=value).|
 |Limite di dati|Un task può generare solo 5 MB di dati (*stdin/stderr*). Ad esempio, se uno script scrive dati in un file .txt, l'esecuzione si interrompe automaticamente quando il file raggiunge 5 MB.|
-|Script che producono errori|Se uno script è difettoso, verrà automaticamente disattivato dopo 10 tentativi di esecuzione non andati a buon fine. La segnalazione degli errori verrà inviata solo quando tutti e 10 i tentativi avranno avuto esito negativo.<br>Correggi lo script in base alla segnalazione degli errori ricevuta e riattiva il "task CRON" nel pannello di controllo (clicca su `...`{.action} e poi su `Modifica`{.action}).|
+|Script che producono errori|Se uno script è difettoso, verrà automaticamente disattivato dopo 10 tentativi di esecuzione non andati a buon fine. La segnalazione degli errori verrà inviata solo quando tutti e 10 i tentativi avranno avuto esito negativo.<br>Correggi lo script in base alla segnalazione degli errori ricevuta e riattiva il "task CRON" nel pannello di controllo (clicca su `...`{.action} e poi su `Modificare`{.action}).|
 |Relazioni di attuazione|I rapporti saranno inviati all'indirizzo elettronico selezionato una volta al giorno (durante le ore notturne).|
 
 ### Intervento tecnico

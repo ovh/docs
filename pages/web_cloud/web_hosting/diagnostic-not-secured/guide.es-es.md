@@ -134,7 +134,7 @@ Encima de la zona DNS mostrada en su área de cliente de OVHcloud, un mensaje in
 
 ![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}
 
-Modifique los servidores DNS de su dominio para que se ajusten a los inscritos en los registros de tipo `NS` de la zona. Para ello, siga las indicaciones de [esta guía](/pages/web_cloud/domains/dns_server_edit).
+Modifique los servidores DNS de su dominio para que se ajusten a los inscritos en los registros de tipo `NS` de la zona. Para ello, siga las indicaciones de nuestra guía "[Modificar los servidores DNS de un nombre de dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
 
@@ -156,7 +156,7 @@ Significa que su dominio no es gestionado desde su [área de cliente de OVHcloud
 
 Compruebe que no esté gestionado desde cualquiera de sus [cuentas OVHcloud](/links/manager), si ha creado varias.
 
-También puede determinar su agente registrador y los servidores DNS a los que está asociado a través de nuestra herramienta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).
+También puede determinar su agente registrador y los servidores DNS a los que está asociado a través de nuestra herramienta [WHOIS](/links/web/domains-whois).
 
 Si es necesario, contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.
 
@@ -185,7 +185,7 @@ Active un [certificado SSL](/links/web/hosting-options-ssl) en su alojamiento si
 
 #### Escenario 2: el certificado SSL de su alojamiento no funciona
 
-Si ha generado un **certificado SSL "Let's Encrypt"**, active la opción SSL de su alojamiento siguiendo las instrucciones de [esta guía](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Si ha generado un **certificado SSL "Let's Encrypt"**, active la opción SSL de su alojamiento siguiendo las instrucciones de nuestra guía "[Web hosting - Gestionar un certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 
 Si tiene un **certificado SSL importado** y este no funciona, póngase en contacto con su proveedor.
 

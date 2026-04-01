@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo <a name="objective"></a>
 
-Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro. Os exemplos abaixo indicam que o seu alojamento Web não contém [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se o seu site não apresentar uma das anomalias descritas neste guia, consulte a secção "[Quer saber mais?](#go-further)"):
+Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro. Os exemplos abaixo indicam que o seu alojamento web não contém [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se o seu site não apresentar uma das anomalias descritas neste guia, consulte a secção "[Quer saber mais?](#go-further)"):
 
 |Browser|Mensagem de erro em questão|
 |-|---|
@@ -116,7 +116,7 @@ O endereço IP indicado na [zona DNS](/pages/web_cloud/domains/dns_zone_edit) co
 
 O endereço IP indicado na zona não diz respeito a nenhum alojamento da sua [conta OVHcloud](/links/manager), mas aparece na [lista dos servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 
-Verifique que não possui um alojamento com este endereço IP num dos seus outros [contas OVHcloud](/links/manager), caso tenha criado vários. Se necessário, contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner) a este respeito.
+Verifique que não possui um alojamento com este endereço IP numa das suas outras [contas OVHcloud](/links/manager), caso tenha criado vários. Se necessário, contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner) a este respeito.
 
 ///
 
@@ -154,9 +154,9 @@ O seu nome de domínio não aparece na página [Nomes de domínio](/links/contro
 
 Isto significa que o seu domínio não é gerido a partir da sua [Área de Cliente OVHcloud](/links/manager).
 
-Verifique que o domínio não é gerido a partir de uma das suas outras [contas OVHcloud](/links/manager), se tiver criado vários.
+Verifique que o domínio não é gerido a partir de uma das suas outras [contas OVHcloud](/links/manager), se tiver criado várias.
 
-Pode igualmente determinar o seu bureau de registo e os servidores DNS aos quais está ligado através da nossa ferramenta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).
+Pode igualmente determinar o seu bureau de registo e os servidores DNS aos quais está ligado através da nossa ferramenta [WHOIS](/links/web/domains-whois).
 
 Se necessário, contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner).
 
@@ -212,4 +212,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

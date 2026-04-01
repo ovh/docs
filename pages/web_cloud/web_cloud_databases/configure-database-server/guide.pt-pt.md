@@ -92,13 +92,13 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 > **Etapa 2**
 >>
->> Clique no separador `IPs autorizados`{.action} e, em seguida, no botão `Adicionar um endereço IP / máscara`{.action}.
+>> Clique no separador `Endereços IP autorizados`{.action} e, em seguida, no botão `Adicionar um endereço IP / máscara`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
->> Na janela que aparece, indique o endereço IP ou a máscara que pretende autorizar em `IP/máscara`{.action} e, se desejar, adicione uma descrição. Decida se pretende conceder acesso apenas às bases de dados ou também ao SFTP. Por fim, clique em `Validar`{.action}.
+>> Na janela que aparece, indique o endereço IP ou a máscara que pretende autorizar em `IP / máscara`{.action} e, se desejar, adicione uma descrição. Decida se pretende conceder acesso apenas às bases de dados ou também ao SFTP. Por fim, clique em `Validar`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
@@ -117,11 +117,11 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 > **Etapa 2**
 >>
->> Clique no separador `IPs autorizados`{.action}.
+>> Clique no separador `Endereços IP autorizados`{.action}.
 >>
 > **Etapa 3**
 >>
->> Selecione `Autorizar os alojamentos web OVHcloud a aceder à base de dados`{.action}.
+>> Selecione `Autorizar o acesso dos alojamentos web da OVHcloud à base de dados`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
 
@@ -149,7 +149,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 > **Etapa 2**
 >>
->> No separador **Informações gerais** apresentado por predefinição, clique em `...`{.action} à direita da menção "RAM" e, em seguida, em `Alterar a quantidade de RAM`{.action} para aceder à encomenda desta alteração.
+>> No separador **Informações gerais** apresentado por predefinição, clique em `...`{.action} à direita da menção "RAM" e, em seguida, em `Alterar quantidade de RAM`{.action} para aceder à encomenda desta alteração.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/change-the-amount-of-ram.png){.thumbnail}
 >>
@@ -287,7 +287,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 > **Etapa 3**
 >>
->> Para modificar esta versão, clique em `Modificar a versão`{.action}.
+>> Para modificar esta versão, clique em `Alterar versão`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
 

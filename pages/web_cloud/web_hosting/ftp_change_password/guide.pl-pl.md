@@ -123,7 +123,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > - Przynajmniej jedna cyfra
 > - Składać się wyłącznie z cyfr i liter
 
-Następnie przejdź do zakładki `Zadania w realizacji`{.action} i odśwież stronę regularnie. Zmiana wymaga zaledwie kilku minut, aby stała się skuteczna.
+Następnie przejdź do zakładki `Zadania w toku`{.action} i odśwież stronę regularnie. Zmiana wymaga zaledwie kilku minut, aby stała się skuteczna.
 
 ### Dostęp do przestrzeni dyskowej
 

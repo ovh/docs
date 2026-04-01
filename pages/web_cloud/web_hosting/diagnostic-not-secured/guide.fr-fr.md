@@ -156,7 +156,7 @@ Cela signifie que votre nom de domaine n'est pas géré depuis votre [espace cli
 
 Vérifiez qu'il n'est pas géré depuis l'un de vos autres [comptes OVHcloud](/links/manager), si vous en avez créé plusieurs.
 
-Vous pouvez également déterminer son bureau d'enregistrement et les serveurs DNS auxquels il est lié via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).
+Vous pouvez également déterminer son bureau d'enregistrement et les serveurs DNS auxquels il est lié via notre outil [WHOIS](/links/web/domains-whois).
 
 Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](/links/partner) à ce sujet.
 

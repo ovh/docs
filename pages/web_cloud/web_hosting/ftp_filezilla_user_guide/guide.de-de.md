@@ -78,7 +78,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf den Tab `FTP-SSH`{.action}.
+>> Klicken Sie auf den Tab `FTP - SSH`{.action}.
 >>
 > **Schritt 3**
 >>
@@ -90,7 +90,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> > [!primary]
 >> >
->> > Aus Sicherheitsgründen wird das Passwort eines Benutzers nicht auf der Seite `FTP-SSH`{.action} angezeigt. Wenn Sie es vergessen haben, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/ftp_change_password), um es zu ändern.
+>> > Aus Sicherheitsgründen wird das Passwort eines Benutzers nicht auf der Seite `FTP - SSH`{.action} angezeigt. Wenn Sie es vergessen haben, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/ftp_change_password), um es zu ändern.
 
 ### 2 - Mit FileZilla auf den Speicherplatz Ihres Hostings zugreifen
 

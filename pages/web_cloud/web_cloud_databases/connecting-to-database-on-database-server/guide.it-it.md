@@ -129,7 +129,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> - **Porta:** visibile nella stessa posizione, voce "Porta" nella parte **SQL**.
 >> - **Nome utente:** visibile nella scheda `Utenti e diritti`{.action}.
 >> - **Password:** la password associata all'utente interessato.
->> - **Nome del database:** visibile nella scheda `Database`{.action}.
+>> - **Nome del database:** visibile nella scheda `Databases`{.action}.
 
 **Clicca sul metodo di connessione che preferisci per visualizzare il contenuto.**
 
@@ -205,7 +205,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> - **Porta:** visibile nella stessa posizione, voce "Porta" nella parte **SQL**.
 >> - **Nome utente:** visibile nella scheda `Utenti e diritti`{.action}.
 >> - **Password:** la password associata all'utente interessato.
->> - **Nome del database:** visibile nella scheda `Database`{.action}.
+>> - **Nome del database:** visibile nella scheda `Databases`{.action}.
 
 **Clicca sul metodo di connessione che preferisci per visualizzare il contenuto.**
 

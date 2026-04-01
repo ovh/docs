@@ -80,7 +80,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Étape 2**
 >>
->> Cliquez sur l'onglet `FTP-SSH`{.action}.
+>> Cliquez sur l'onglet `FTP - SSH`{.action}.
 >>
 > **Étape 3**
 >>
@@ -92,7 +92,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> > [!primary]
 >> >
->> > Pour des raisons de sécurité, le mot de passe d'un utilisateur n'apparaît pas sur la page de l'onglet `FTP-SSH`{.action}. Si vous l'avez oublié, consultez [ce guide](/pages/web_cloud/web_hosting/ftp_change_password) pour le modifier.
+>> > Pour des raisons de sécurité, le mot de passe d'un utilisateur n'apparaît pas sur la page de l'onglet `FTP - SSH`{.action}. Si vous l'avez oublié, consultez [ce guide](/pages/web_cloud/web_hosting/ftp_change_password) pour le modifier.
 
 ### 2 - Se connecter à l'espace de stockage de votre hébergement grâce à FileZilla
 

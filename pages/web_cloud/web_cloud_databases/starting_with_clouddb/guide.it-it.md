@@ -87,7 +87,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 
 > [!primary]
 >
-> Questo step non si applica al sistema di database Redis.
+> Questo passaggio non si applica al sistema di database Redis.
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
@@ -100,7 +100,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}.
+>> Clicca sulla scheda `Databases`{.action}.
 >>
 > **Passaggio 3**
 >>
@@ -129,11 +129,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 
 > [!primary]
 >
-> Questo step non si applica al sistema di database Redis.
+> Questo passaggio non si applica al sistema di database Redis.
 
-Se l'utente è stato creato contemporaneamente al database nello step precedente, questo passaggio è facoltativo. Tuttavia, un progetto potrebbe richiedere più utenti con diritti diversi (ad esempio, lettura/scrittura per uno e sola lettura per un altro).
+Se l'utente è stato creato contemporaneamente al database nello passaggio precedente, questo passaggio è facoltativo. Tuttavia, un progetto potrebbe richiedere più utenti con diritti diversi (ad esempio, lettura/scrittura per uno e sola lettura per un altro).
 
-Se il progetto non necessita di un utente aggiuntivo, è possibile passare allo step successivo. In caso contrario, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
+Se il progetto non necessita di un utente aggiuntivo, è possibile passare allo passaggio successivo. In caso contrario, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -162,7 +162,7 @@ Per modificare i diritti di un utente esistente, consulta la guida "[Web Cloud D
 
 > [!primary]
 >
-> Questo step si applica se vuoi importare un backup di un database esistente. In caso contrario, passa allo step successivo.
+> Questo passaggio si applica se vuoi importare un backup di un database esistente. In caso contrario, passa allo passaggio successivo.
 
 Per importare un database, consulta la guida "[Ripristinare e importare un database sul server di database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)".
 
@@ -205,12 +205,12 @@ Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno d
 >>
 >> - `IP/mask *`{.action}: Inserisci l'indirizzo IP (ad esempio `203.0.113.44`) o l'intervallo di IP (ad esempio `203.0.113.0/24`, che rappresenta tutti gli indirizzi IP da `203.0.113.0` a `203.0.113.255`) da autorizzare sulla soluzione Web Cloud Databases.
 >> - `Descrizione`{.action} (facoltativo): È possibile aggiungere informazioni sul ruolo dell'indirizzo IP o dell'intervallo di IP interessato.
->> - `Database`{.action}: Seleziona questa casella per consentire all'indirizzo IP o all'intervallo di IP di accedere ai database della soluzione Web Cloud Databases.
+>> - `Databases`{.action}: Seleziona questa casella per consentire all'indirizzo IP o all'intervallo di IP di accedere ai database della soluzione Web Cloud Databases.
 >> - `SFTP`{.action}: Seleziona questa casella per consentire all'indirizzo IP o all'intervallo di IP di accedere ai log della soluzione Web Cloud Databases.
 >>
 >> > [!warning]
 >> >
->> > Si sconsiglia fortemente di selezionare la casella `Database`{.action} per autorizzare l'intervallo di IP `0.0.0.0/0` ad accedere ai database.
+>> > Si sconsiglia fortemente di selezionare la casella `Databases`{.action} per autorizzare l'intervallo di IP `0.0.0.0/0` ad accedere ai database.
 >> >
 >> > Questo consentirebbe a tutti gli indirizzi IPv4 esistenti di accedere ai database.
 >>
@@ -224,7 +224,7 @@ Per farlo, consulta i casi particolari nella guida "[Web Cloud Databases - Come 
 
 ### Associare il sito Web al database
 
-Ora che il database è stato creato, uno o più utenti dispongono dei diritti necessari e almeno un indirizzo IP o gli hosting Web OVHcloud sono stati autorizzati sull'istanza Web Cloud Databases, non resta che associare il sito Web al database. Questo step può essere eseguito in diversi modi, a seconda del sito Web o del CMS (WordPress, Joomla!, ecc.) utilizzato, nonché della fase di installazione del sito Web.
+Ora che il database è stato creato, uno o più utenti dispongono dei diritti necessari e almeno un indirizzo IP o gli hosting Web OVHcloud sono stati autorizzati sull'istanza Web Cloud Databases, non resta che associare il sito Web al database. Questo passaggio può essere eseguito in diversi modi, a seconda del sito Web o del CMS (WordPress, Joomla!, ecc.) utilizzato, nonché della fase di installazione del sito Web.
 
 A tal fine, sono necessarie le seguenti 5 informazioni:
 

@@ -116,7 +116,7 @@ To find the name of your web hosting plan, click on the tabs below to view each 
 
 > [!primary]
 >
-> The `name` value is customizable, so you can assign the value of your choice. However, if you are configuring multiple “sftp.json” files, it is best to use the values visible above as a reference for organizational reasons.
+> The `name` value is customisable, so you can assign the value of your choice. However, if you are configuring multiple “sftp.json” files, it is best to use the values visible above as a reference for organisational reasons.
 
 #### host
 

@@ -78,7 +78,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 > **Etapa 2**
 >>
->> Haga clic en la pestaña `FTP-SSH`{.action}.
+>> Haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 > **Etapa 3**
 >>
@@ -90,7 +90,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> > [!primary]
 >> >
->> > Por motivos de seguridad, la contraseña de un usuario no aparece en la pestaña `FTP-SSH`{.action}. Si ha olvidado la contraseña, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password) para modificarla.
+>> > Por motivos de seguridad, la contraseña de un usuario no aparece en la pestaña `FTP - SSH`{.action}. Si ha olvidado la contraseña, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password) para modificarla.
 
 ### 2 - Conectarse al espacio de almacenamiento de su alojamiento gracias a FileZilla
 

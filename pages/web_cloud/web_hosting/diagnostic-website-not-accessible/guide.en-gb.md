@@ -74,7 +74,7 @@ To check that your domain name subscription is valid, click on the tabs below to
 >>
 > **Step 2**
 >>
->> Renew your domain if necessary via the `...`{.action} button, then `Renew service`{.action}.
+>> Renew your domain if necessary via the `...`{.action} button, then `Renew`{.action}.
 >>
 >> ![renew-service-button](/pages/assets/screens/control_panel/product-selection/web-cloud/order/renew-service-button.png){.thumbnail}
 >>
@@ -103,13 +103,13 @@ To check the DNS servers declared, click on the tabs below to view each of the *
 >>
 >> Check the servers listed in the `DNS servers`{.action} tab:
 >>
->> ![srv-dns-ok2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/name-dns-server.png){.thumbnail}
+>> ![DNS server confirmed](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/name-dns-server.png){.thumbnail}
 >>
 > **Step 3**
 >>
 >> If they are identical to the targets of the `NS` type entries in the **DNS zone**, go to [part 3](#step3):
 >>
->> ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
+>> ![DNS server verified](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
 ///
 
@@ -119,15 +119,15 @@ A warning in the **DNS zone** tab indicates that the DNS servers used by your do
 
 - Under the sentence "You currently use the following DNS servers", the servers listed are "ns **?** .ovh.net" and "dns **?** .ovh.net" (in which "**?**" stands for a double-digit number):
 
-![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}
+![OVHcloud DNS server warning](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}
 
-Modify the DNS servers as described in [this guide](/pages/web_cloud/domains/dns_server_edit), so that they are identical to the targets of the `NS` type records in your **DNS zone**.
+Modify the DNS servers as described in our guide "[How to modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)", so that they are identical to the targets of the `NS` type records in your **DNS zone**.
 
 Your website will then be available within a maximum of 48 hours.
 
 - Under the sentence "You currently use the following DNS servers", the servers listed are not "ns **?** .ovh.net" and "dns **?** .ovh.net".
 
-![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}
+![External DNS server warning](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}
 
 > [!warning]
 >
@@ -141,7 +141,7 @@ Your website will then be available within a maximum of 48 hours.
 
 Your domain's **DNS zone** does not contain any `NS` record:
 
-![srv_dns_missing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns-missing.png){.thumbnail}
+![Missing NS record warning](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns-missing.png){.thumbnail}
 
 Click on the tabs below to view each of the **4** steps.
 
@@ -156,17 +156,17 @@ Click on the tabs below to view each of the **4** steps.
 >>
 >> Back up the current zone by clicking on the `Change in text format`{.action} button:
 >>
->> ![change_DNS_zone_change_text_format](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format.png){.thumbnail}
+>> ![DNS zone text format button](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format.png){.thumbnail}
 >>
 >> Copy and paste the content of your **DNS zone** into a text document on your computer.
 >>
 > **Step 3**
 >>
->> Click on `Reset my DNS zone`{.action} and select `No, but I want to reset my DNS zone`{.action}.
+>> Click on `Reset my DNS zone`{.action} and select `No, but I want to reset my DNS zone.`{.action}.
 >>
 >> Select your email and hosting servers, then click on `Confirm`{.action}.
 >>
->> ![change_DNS_zone_reset](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
+>> ![DNS zone reset dialog](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 >>
 > **Step 4**
 >>

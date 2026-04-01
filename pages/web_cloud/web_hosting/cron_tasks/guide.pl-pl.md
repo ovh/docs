@@ -29,7 +29,7 @@ updated: 2026-03-31
 
 ## Wprowadzenie
 
-Na twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych operacji. Zaplanowane zadanie ("zadanie CRON") pozwala, aby twoje skrypty były wykonywane w określonych momentach, bez konieczności podejmowania dalszych działań.
+Na Twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych operacji. Zaplanowane zadanie ("zadanie CRON") pozwala, aby Twoje skrypty były wykonywane w określonych momentach, bez konieczności podejmowania dalszych działań.
 
 **Dowiedz się, jak tworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu.**
 
@@ -120,7 +120,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroków.
 >>
 >> ![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 >>
->> Zadanie będzie gotowe za kilka minut. Możesz zmienić wszystkie parametry lub usunąć zadanie klikając na `...`{.action} w tabeli prezentacji twojego panelu konfiguracyjnego OVHcloud.
+>> Zadanie będzie gotowe za kilka minut. Możesz zmienić wszystkie parametry lub usunąć zadanie klikając na `...`{.action} w tabeli prezentacji Twojego panelu konfiguracyjnego OVHcloud.
 
 ### Zmień lub usuń zaplanowane zadanie
 
@@ -141,7 +141,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 >> W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie planowanego zadania.
 >>
->> Wybierz przycisk `Zmień`{.action} lub `Usuń`{.action} w zależności od czynności, którą chcesz wykonać w odniesieniu do zaplanowanego zadania.
+>> Wybierz przycisk `Zmodyfikuj`{.action} lub `Usuń`{.action} w zależności od czynności, którą chcesz wykonać w odniesieniu do zaplanowanego zadania.
 
 ### Ograniczenia zaplanowanych zadań na twoim hostingu
 
@@ -151,7 +151,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 |Czas trwania|Czas wykonywania zadania to 60 minut. Jeśli skrypt przekracza ten czas, zostanie automatycznie zatrzymany przez system.|
 |Zmienna|Możesz zdefiniować tylko zmienne w skrypcie. Dodanie ich do adresu URL wywołującego skrypt nie będzie działać (Przykład: www/jobs/cron.php?zmienna=value).|
 |Limit danych|Zadanie może generować tylko 5 MB danych (*stdin/stderr*). Na przykład, jeśli skrypt zapisuje dane w pliku .txt, wykonywanie automatycznie kończy się, gdy plik osiągnie 5 MB.|
-|Skrypty powodujące błędy|Jeśli skrypt jest uszkodzony, zostanie automatycznie wyłączony po 10 nieudanych próbach. Raport o błędach zostanie wysłany dopiero po 10 próbach zakończonych niepowodzeniem.<br>Popraw skrypt na podstawie otrzymanego raportu o błędzie, a następnie ponownie włącz "zadanie CRON" w panelu sterowania (kliknij opcję `...`{.action}, a następnie `Zmień`{.action}).|
+|Skrypty powodujące błędy|Jeśli skrypt jest uszkodzony, zostanie automatycznie wyłączony po 10 nieudanych próbach. Raport o błędach zostanie wysłany dopiero po 10 próbach zakończonych niepowodzeniem.<br>Popraw skrypt na podstawie otrzymanego raportu o błędzie, a następnie ponownie włącz "zadanie CRON" w panelu sterowania (kliknij opcję `...`{.action}, a następnie `Zmodyfikuj`{.action}).|
 |Sprawozdania z realizacji|Raporty będą wysyłane na wybrany adres e-mail tylko raz dziennie (w godzinach nocnych).|
 
 ### Naprawa

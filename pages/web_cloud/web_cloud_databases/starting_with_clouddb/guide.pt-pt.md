@@ -104,7 +104,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 > **Etapa 3**
 >>
->> Clique em `Adicionar uma base de dados`{.action}.
+>> Clique em `Criar base de dados`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
 >>
@@ -148,7 +148,7 @@ Se o seu projeto não necessitar de um utilizador adicional, pode avançar para 
 >>
 > **Etapa 3**
 >>
->> Clique em `Adicionar um utilizador`{.action}.
+>> Clique em `Adicionar utilizador`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 >>
@@ -183,19 +183,19 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **4** etap
 >>
 > **Etapa 2**
 >>
->> Na página apresentada, clique no separador `IPs autorizados`{.action}.
+>> Na página apresentada, clique no separador `Endereços IP autorizados`{.action}.
 >>
 >> ![IPs autorizados](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
->> Clique no botão `Adicionar um endereço IP/máscara`{.action} acima da tabela.
+>> Clique no botão `Adicionar um endereço IP / máscara`{.action} acima da tabela.
 >>
 >> ![Interface de IPs autorizados](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
 >>
 >> > [!success]
 >> >
->> > Se pretender alterar um endereço IP ou intervalo de IP já autorizado, clique no botão `...`{.action} à direita da linha correspondente na tabela e depois em `Editar a whitelist`{.action}.
+>> > Se pretender alterar um endereço IP ou intervalo de IP já autorizado, clique no botão `...`{.action} à direita da linha correspondente na tabela e depois em `Editar whitelist`{.action}.
 >>
 > **Etapa 4**
 >>
@@ -205,12 +205,12 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **4** etap
 >>
 >> - `IP/máscara *`{.action}: Introduza o endereço IP (p. ex., `203.0.113.44`) ou o intervalo de IP (p. ex., `203.0.113.0/24` que representa todos os endereços IP de `203.0.113.0` a `203.0.113.255`) que pretende autorizar na solução Web Cloud Databases.
 >> - `Descrição`{.action} (opcional): Pode adicionar informações sobre a função do endereço IP ou do intervalo de IP em questão.
->> - `Bases de dados`{.action}: Assinale esta opção para que o endereço IP ou o intervalo de IP possa aceder às bases de dados da solução Web Cloud Databases.
+>> - `Base de dados`{.action}: Assinale esta opção para que o endereço IP ou o intervalo de IP possa aceder às bases de dados da solução Web Cloud Databases.
 >> - `SFTP`{.action}: Assinale esta opção para que o endereço IP ou o intervalo de IP possa aceder aos logs da solução Web Cloud Databases.
 >>
 >> > [!warning]
 >> >
->> > É fortemente desaconselhado assinalar a opção `Bases de dados`{.action} para autorizar o intervalo de IP `0.0.0.0/0` a aceder às suas bases de dados.
+>> > É fortemente desaconselhado assinalar a opção `Base de dados`{.action} para autorizar o intervalo de IP `0.0.0.0/0` a aceder às suas bases de dados.
 >> >
 >> > Isto permitiria que todos os endereços IPv4 existentes acedessem às suas bases de dados.
 >>
@@ -251,7 +251,7 @@ Para as obter, clique nos separadores abaixo para visualizar cada uma das **2** 
 >>
 >> - **Servidor (nome de host) e porta:** visíveis no separador `Informações gerais`{.action}, na secção `Informações de ligação`.
 >> - **Nome de utilizador:** visível no separador `Utilizadores e permissões`{.action}.
->> - **Palavra-passe:** a palavra-passe associada ao utilizador. Se a esqueceu, aceda ao separador `Utilizadores e permissões`{.action}, clique em `...`{.action} à direita do utilizador em causa e depois em `Alterar a palavra-passe`{.action}.
+>> - **Palavra-passe:** a palavra-passe associada ao utilizador. Se a esqueceu, aceda ao separador `Utilizadores e permissões`{.action}, clique em `...`{.action} à direita do utilizador em causa e depois em `Alterar palavra-passe`{.action}.
 >>
 >> > [!warning]
 >> >

@@ -40,7 +40,7 @@ In dieser Anleitung werden die verschiedenen Aktionen beschrieben, die notwendig
 > Die Anweisungen in dieser Anleitung beziehen sich auf verschiedene Produkte aus dem Web Cloud Universum. Wir empfehlen Ihnen, alle nachstehenden Schritte durchzugehen **bevor** Sie Ihre Dienste migrieren.
 >
 
-Die Migration Ihrer gesamten Website und Ihrer E-Mails zu OVHcloud **ohne Dienstunterbrechung** erfordert ein präzises Verfahren in 10 Teile:
+Die Migration Ihrer gesamten Website und Ihrer E-Mails zu OVHcloud **ohne Dienstunterbrechung** erfordert ein präzises Verfahren in 10 Teilen:
 
 - [1 - Webhosting und E-Mail-Accounts bei OVHcloud bestellen](#step1)
 - [2 - Eine DNS-Zone für Ihren Domainnamen bei OVHcloud erstellen und vorkonfigurieren](#step2)
@@ -155,7 +155,7 @@ Ersetzen Sie hierzu die Verbindungsdaten Ihrer alten Datenbank mit denen Ihrer n
 > Wenn Sie ein Content Management System (CMS) wie WordPress, Joomla!, Drupal oder PrestaShop verwenden, finden Sie die Informationen zur Datenbank in deren Konfigurationsdateien. Sie finden Details hierzu in **Teil 2** der Anleitung "[Änderung des Passworts einer Datenbank](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-Deklarieren und authorisieren Ihren externen Domainnamen auf Ihrem OVHcloud Webhosting mithilfe der Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“. Geben Sie den Namen des Ordners, den Sie zu Beginn von [Teil 4](#step4) ausgewählt haben, als Wurzelverzeichnis an. Zur Erinnerung: Es handelt sich um den Ordner im FTP-Speicherplatz, in den Sie Ihre Webseiten-Dateien abgelegt haben.
+Deklarieren und autorisieren Ihren externen Domainnamen auf Ihrem OVHcloud Webhosting mithilfe der Anleitung “[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)”. Geben Sie den Namen des Ordners, den Sie zu Beginn von [Teil 4](#step4) ausgewählt haben, als Wurzelverzeichnis an. Zur Erinnerung: Es handelt sich um den Ordner im FTP-Speicherplatz, in den Sie Ihre Webseiten-Dateien abgelegt haben.
 
 > [!warning]
 >

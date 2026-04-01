@@ -44,7 +44,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 > **Etapa 3**
 >>
->> Clique em `Adicionar uma base de dados`{.action}.
+>> Clique em `Criar base de dados`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
 >>
@@ -84,7 +84,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 > **Etapa 3**
 >>
->> Clique em `Adicionar um utilizador`{.action}.
+>> Clique em `Adicionar utilizador`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 >>
@@ -111,7 +111,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 > **Etapa 3**
 >>
->> Clique no botão `...`{.action} à direita do utilizador correspondente e depois em `Gerir as permissões`{.action}.
+>> Clique no botão `...`{.action} à direita do utilizador correspondente e depois em `Gerir permissões`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
 >>
@@ -157,7 +157,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 > **Etapa 3**
 >>
->> Clique no botão `...`{.action} à direita da base de dados correspondente e depois em `Eliminar a base de dados`{.action}.
+>> Clique no botão `...`{.action} à direita da base de dados correspondente e depois em `Eliminar base de dados`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
 

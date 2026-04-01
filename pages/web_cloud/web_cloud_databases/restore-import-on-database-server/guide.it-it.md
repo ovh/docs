@@ -63,7 +63,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}.
+>> Clicca sulla scheda `Databases`{.action}.
 >>
 >> Nella colonna **"Backup"**, la cifra corrisponde al numero di backup disponibili per il tuo database.
 >>
@@ -94,7 +94,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}.
+>> Clicca sulla scheda `Databases`{.action}.
 >>
 > **Passaggio 3**
 >>
@@ -108,9 +108,9 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >>
 >> **1 - Importare un nuovo file**
 >>
->> Clicca su **"Importa un nuovo file"**, poi su `Seguente`{.action}.
+>> Clicca su **"Importa un nuovo file"**, poi su `Continua`{.action}.
 >>
->> Inserisci un nome per il file importato, clicca su `Sfoglia`{.action} per selezionarlo, poi su `Invia`{.action} e infine su `Seguente`{.action}.
+>> Inserisci un nome per il file importato, clicca su `Sfoglia`{.action} per selezionarlo, poi su `Invia`{.action} e infine su `Continua`{.action}.
 >>
 >> > [!warning]
 >> >
@@ -118,17 +118,17 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
 >>
->> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo e-mail di riferimento del tuo account OVHcloud, poi clicca su `Conferma`{.action}.
+>> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo e-mail di riferimento del tuo account OVHcloud, poi clicca su `Invia`{.action}.
 >>
 >> **2 - Utilizzare un file esistente**
 >>
 >> Se hai già importato un file in precedenza, puoi scegliere l'opzione **"Importa un file esistente"**.
 >>
->> Seleziona il file nel menu a tendina e clicca su `Seguente`{.action}.
+>> Seleziona il file nel menu a tendina e clicca su `Continua`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
->> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo e-mail di riferimento del tuo account OVHcloud, poi clicca su `Conferma`{.action}.
+>> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo e-mail di riferimento del tuo account OVHcloud, poi clicca su `Invia`{.action}.
 
 ### Importare un database al di fuori dello Spazio Cliente
 

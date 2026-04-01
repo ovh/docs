@@ -150,7 +150,7 @@ Clicca sulle schede qui sotto per visualizzare in successione ciascuno dei **2**
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action} e verifica la corrispondenza tra gli elementi visualizzati e quelli presenti nel file `wp-config.php`:
+>> Clicca sulla scheda `Databases`{.action} e verifica la corrispondenza tra gli elementi visualizzati e quelli presenti nel file `wp-config.php`:
 >>
 >> - **my_database** deve corrispondere a quanto indicato in `Nome del database`;
 >> - **my_user** deve corrispondere a quanto riportato in `Nome utente`;
@@ -232,7 +232,7 @@ Per ricalcolare la quota, clicca sulle schede qui sotto per visualizzare in succ
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}, poi sul pulsante `...`{.action} accanto al database interessato.
+>> Clicca sulla scheda `Databases`{.action}, poi sul pulsante `...`{.action} accanto al database interessato.
 >>
 > **Passaggio 3**
 >>
@@ -258,7 +258,7 @@ Per ricalcolare la quota, clicca sulle schede qui sotto per visualizzare in succ
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}, poi sul pulsante `...`{.action} accanto al database interessato.
+>> Clicca sulla scheda `Databases`{.action}, poi sul pulsante `...`{.action} accanto al database interessato.
 >>
 > **Passaggio 3**
 >>
@@ -327,7 +327,7 @@ Per prima cosa, assicurati che il database sia vuoto. Per farlo, clicca sulle sc
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}, poi sul pulsante `...`{.action} accanto al database interessato e su `Ricalcola la quota`{.action}.
+>> Clicca sulla scheda `Databases`{.action}, poi sul pulsante `...`{.action} accanto al database interessato e su `Ricalcola la quota`{.action}.
 >>
 > **Passaggio 3**
 >>
@@ -450,7 +450,7 @@ Clicca sulle schede qui sotto per visualizzare in successione ciascuno dei **2**
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}. Il nome del server da inserire è indicato nella colonna `Indirizzo del server`.
+>> Clicca sulla scheda `Databases`{.action}. Il nome del server da inserire è indicato nella colonna `Indirizzo del server`.
 
 ///
 

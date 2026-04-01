@@ -155,7 +155,7 @@ Das bedeutet, dass dieser Domainname nicht in diesem [OVHcloud Kunden-Account](/
 
 Überprüfen Sie, ob er zu einem Ihrer anderen [OVHcloud Kunden-Accounts](/links/manager) gehört, falls Sie mehrere davon erstellt haben.
 
-Sie können auch, um den Registrar Ihres Domainnamens herauszufinden sowie die tatsächlich verwendeten DNS-Server zu überprüfen, das [WHOIS Tool](https://www.ovh.de/support/werkzeuge/check_whois.pl) verwenden.
+Sie können auch, um den Registrar Ihres Domainnamens herauszufinden sowie die tatsächlich verwendeten DNS-Server zu überprüfen, das [WHOIS Tool](/links/web/domains-whois) verwenden.
 
 Falls nötig kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner).
 

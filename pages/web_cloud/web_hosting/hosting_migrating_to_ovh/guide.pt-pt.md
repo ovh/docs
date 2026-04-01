@@ -152,7 +152,7 @@ Para isso, substitua as informações de ligação da sua antiga base de dados p
 
 > [!success]
 >
-> Para ligar a sua nova base de dados se utiliza um Content Management System (CMS) como WordPress, Joomla!, Drupal ou PrestaShop, encontre as informações sobre os seus ficheiros de configuração a partir do **parte 2** do guia "[modificação da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password)".
+> Para ligar a sua nova base de dados se utiliza um Content Management System (CMS) como WordPress, Joomla!, Drupal ou PrestaShop, encontre as informações sobre os seus ficheiros de configuração a partir da **parte 2** do guia "[modificação da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
 Declare/autorize o seu nome de domínio externo no seu alojamento web OVHcloud através do nosso guia "[gestão dos websites de um alojamento web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Declare o "nome" da pasta raiz que escolheu no início da [parte 4](#step4). Relembramos que esta é a pasta na qual colocou os seus ficheiros no seu espaço de armazenamento FTP.

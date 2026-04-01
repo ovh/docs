@@ -165,7 +165,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> Clique em `Reiniciar zona DNS`{.action} e selecione `Não, mas desejo reiniciar a minha zona DNS.`{.action}.
 >>
->> Indique os seus servidores de e-mail e de alojamento e clique em `Validar`{.action}.
+>> Indique os seus servidores de e-mail e de alojamento e clique em `Confirmar`{.action}.
 >>
 >> ![change_DNS_zone_reset](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 >>
@@ -216,4 +216,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

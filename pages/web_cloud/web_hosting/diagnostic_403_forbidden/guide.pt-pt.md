@@ -112,7 +112,7 @@ Se o seu alojamento foi encerrado há mais de duas semanas, contacte um [fornece
 
 > [!success]
 >
-> Para mais informações sobre os [partes 2 e 3](#step-2) anteriores, consulte o nosso manual sobre [ações a realizar em caso de pirataria do seu website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Para mais informações sobre as [partes 2 e 3](#step-2) anteriores, consulte o nosso manual sobre [ações a realizar em caso de pirataria do seu website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
 ### 4 - Reativar o alojamento com o FileZilla <a name="reactivate-web-hosting"></a>

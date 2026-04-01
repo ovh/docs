@@ -78,7 +78,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 > **Etapa 2**
 >>
->> Clique no separador `FTP-SSH`{.action}.
+>> Clique no separador `FTP - SSH`{.action}.
 >>
 > **Etapa 3**
 >>
@@ -90,7 +90,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> > [!primary]
 >> >
->> > Por razões de segurança, a palavra-passe de um utilizador não aparece na página do separador `FTP-SSH`{.action}. Se se esquecer da palavra-passe, consulte [este manual](/pages/web_cloud/web_hosting/ftp_change_password) para obter mais informações.
+>> > Por razões de segurança, a palavra-passe de um utilizador não aparece na página do separador `FTP - SSH`{.action}. Se se esquecer da palavra-passe, consulte [este manual](/pages/web_cloud/web_hosting/ftp_change_password) para obter mais informações.
 
 ### 2 - Ligue-se ao espaço de armazenamento do seu alojamento graças ao FileZilla
 

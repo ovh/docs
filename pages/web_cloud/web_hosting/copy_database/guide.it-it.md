@@ -77,7 +77,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}. La tabella elenca i database creati sul tuo piano di hosting Web.
+>> Clicca sulla scheda `Databases`{.action}. La tabella elenca i database creati sul tuo piano di hosting Web.
 >>
 >> ![Lista dei BDD Start SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-dashboard-db-list.png){.thumbnail}
 >>
@@ -113,7 +113,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 >>
 > **Passaggio 6**
 >>
->> La copia del database potrebbe richiedere alcuni minuti. Nella scheda `Task in corso`{.action} viene visualizzata una nuova riga con lo stato "Pianificato" per la copia. Al termine dell'operazione, la riga scompare.
+>> La copia del database potrebbe richiedere alcuni minuti. Nella scheda `Operazioni in corso`{.action} viene visualizzata una nuova riga con lo stato "Pianificato" per la copia. Al termine dell'operazione, la riga scompare.
 >>
 >> ![Task in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
@@ -132,7 +132,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}. La lista dei database presenti sul server Web Cloud Databases viene visualizzata.
+>> Clicca sulla scheda `Databases`{.action}. La lista dei database presenti sul server Web Cloud Databases viene visualizzata.
 >>
 >> ![Lista dei database WCD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/wcdb-dashboard-db-list.png){.thumbnail}
 >>
@@ -168,7 +168,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 >>
 > **Passaggio 6**
 >>
->> La copia del database potrebbe richiedere alcuni minuti. Nella scheda `Task in corso`{.action} viene visualizzata una nuova riga con lo stato "Pianificato" per la copia. Al termine dell'operazione, la riga scompare.
+>> La copia del database potrebbe richiedere alcuni minuti. Nella scheda `Operazioni in corso`{.action} viene visualizzata una nuova riga con lo stato "Pianificato" per la copia. Al termine dell'operazione, la riga scompare.
 >>
 >> ![Task in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
@@ -178,7 +178,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 
 Una volta effettuata la copia del database di origine, sarà necessario effettuare un'ultima operazione per utilizzare il nuovo database.
 
-Nella scheda `Task in corso`{.action}, assicurati che la copia sia terminata (la riga corrispondente alla copia è scomparsa).
+Nella scheda `Operazioni in corso`{.action}, assicurati che la copia sia terminata (la riga corrispondente alla copia è scomparsa).
 
 Per connettere il nuovo database al sito Web, modifica il file di configurazione del tuo **C**ontent **M**anagement **S**ystem (**CMS**) e inserisci le informazioni di connessione del nuovo database.
 
@@ -218,7 +218,7 @@ Questa notifica indica che è attivo un solo database. Per copiare il database d
 
 /// details | Hai già un'azione in corso
 
-Questo messaggio indica che sul database è già in corso un'operazione. Clicca sulla scheda `Task in corso`{.action} e verifica di avere un'operazione già in corso. In caso affermativo, attendi il completamento dell'operazione per riprovare a copiare il database.
+Questo messaggio indica che sul database è già in corso un'operazione. Clicca sulla scheda `Operazioni in corso`{.action} e verifica di avere un'operazione già in corso. In caso affermativo, attendi il completamento dell'operazione per riprovare a copiare il database.
 
 ///
 

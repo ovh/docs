@@ -78,7 +78,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 2**
 >>
->> Kliknij zakładkę `FTP-SSH`{.action}.
+>> Kliknij zakładkę `FTP - SSH`{.action}.
 >>
 > **Krok 3**
 >>
@@ -90,7 +90,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 >> > [!primary]
 >> >
->> > Ze względów bezpieczeństwa hasło użytkownika nie pojawia się na stronie zakładki `FTP-SSH`{.action}. Jeśli nie pamiętasz hasła, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/ftp_change_password), aby wprowadzić zmiany.
+>> > Ze względów bezpieczeństwa hasło użytkownika nie pojawia się na stronie zakładki `FTP - SSH`{.action}. Jeśli nie pamiętasz hasła, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/ftp_change_password), aby wprowadzić zmiany.
 
 ### 2 - Logowanie do przestrzeni dyskowej hostingu za pomocą FileZilla
 

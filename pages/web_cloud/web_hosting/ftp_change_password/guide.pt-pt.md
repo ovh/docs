@@ -105,7 +105,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 > **Etapa 3**
 >>
->> Um quadro apresenta os *utilizadores FTP* criados no seu alojamento web. Clique no botão `...`{.action} à direita do utilizador FTP em questão e depois em `Alterar a palavra-passe`{.action}. Na nova janela, introduza a nova palavra-passe pretendida **seguindo a política de palavras-passe**, confirme introduzindo-a uma segunda vez e clique no botão `Validar`{.action}.
+>> Um quadro apresenta os *utilizadores FTP* criados no seu alojamento web. Clique no botão `...`{.action} à direita do utilizador FTP em questão e depois em `Alterar palavra-passe`{.action}. Na nova janela, introduza a nova palavra-passe pretendida **seguindo a política de palavras-passe**, confirme introduzindo-a uma segunda vez e clique no botão `Confirmar`{.action}.
 >>
 >> ![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 

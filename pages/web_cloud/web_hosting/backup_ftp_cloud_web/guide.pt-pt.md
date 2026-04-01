@@ -79,7 +79,7 @@ Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 >>
 >> ![Confirmação da geração do backup](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
 >>
->> Clique em `Validar`{.action} para confirmar o seu pedido.
+>> Clique em `Confirmar`{.action} para confirmar o seu pedido.
 >>
 > **Etapa 5**
 >>

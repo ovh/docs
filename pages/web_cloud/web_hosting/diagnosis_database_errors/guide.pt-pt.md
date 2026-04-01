@@ -61,16 +61,16 @@ Verifique, em primeiro lugar, na página [Web Cloud Status](https://web-cloud.st
 
 /// details | Encontrar o datacenter do seu alojamento web
 
-Clique nos separadores abaixo para visualizar sucessivamente cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em questão.
 >>
 >> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> No separador `Informações gerais`{.action}, localize o `Datacenter`.
 
@@ -84,16 +84,16 @@ Consulte o nosso guia "[Conhecer o cluster e o filer do seu alojamento web](/pag
 
 /// details | Encontrar o nome do servidor Web Cloud Databases
 
-Clique nos separadores abaixo para visualizar sucessivamente cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e selecione o serviço em questão.
 >>
 >> ![Seleção de um servidor Web Cloud Databases na Área de Cliente OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Localize o `Nome do host` na secção `SQL` de `Informações da ligação`.
 
@@ -139,16 +139,16 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-Clique nos separadores abaixo para visualizar sucessivamente cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em questão.
 >>
 >> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Bases de dados`{.action} e verifique a correspondência entre os elementos apresentados e os presentes no ficheiro `wp-config.php`:
 >>
@@ -185,20 +185,20 @@ Se dispõe de uma fórmula **Starter** ou **Perso**, aconselhamos-o a passar par
 > Se verificar um aumento súbito da dimensão da sua base de dados, ou se dispuser de um site do tipo "blog" normalmente pouco consumidor de dados, aconselhamos que contacte imediatamente um [fornecedor especializado](/links/partner). Não poderemos dar-lhe apoio nesta matéria.
 >
 
-Para efetuar esta alteração, clique nos separadores abaixo para visualizar sucessivamente cada um dos **3** passos.
+Para efetuar esta alteração, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em questão.
 >>
 >> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no botão `...`{.action} na rubrica `Plano`, à direita do seu ecrã.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> Clique em `Mudar de oferta`{.action}.
 
@@ -221,20 +221,20 @@ Também pode migrar os seus dados para uma nova base:
 
 Depois de realizar um [backup da sua base de dados](/pages/web_cloud/web_hosting/sql_database_export), aceda à interface [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin) para eliminar os dados inúteis graças aos comandos Drop, Delete e Truncate.
 
-Para recalcular o limite, clique nos separadores abaixo para visualizar sucessivamente cada um dos **3** passos.
+Para recalcular o limite, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em questão.
 >>
 >> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Bases de dados`{.action} e, a seguir, no botão `...`{.action} junto à base de dados em questão.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> Clique em `Recalcular o limite`{.action}.
 
@@ -247,20 +247,20 @@ Para recalcular o limite, clique nos separadores abaixo para visualizar sucessiv
 
 Para otimizar a sua base de dados, siga as instruções do nosso guia "[Configurar o seu servidor de bases de dados](/pages/web_cloud/web_cloud_databases/configure-database-server#otimizar-as-bases-de-dados)".
 
-Para recalcular o limite, clique nos separadores abaixo para visualizar sucessivamente cada um dos **3** passos.
+Para recalcular o limite, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em questão.
 >>
 >> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Bases de dados`{.action} e, a seguir, no botão `...`{.action} junto à base de dados em questão.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> Clique em `Recalcular o limite`{.action}.
 
@@ -275,20 +275,20 @@ A seguinte mensagem indica que o seu servidor [Web Cloud Databases](/pages/web_c
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-Para aumentar a [quantidade de memória RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#acompanhar-a-ram-consumida), clique nos separadores abaixo para visualizar sucessivamente cada um dos **3** passos.
+Para aumentar a [quantidade de memória RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#acompanhar-a-ram-consumida), clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e selecione o serviço em questão.
 >>
 >> ![Seleção de um servidor Web Cloud Databases na Área de Cliente OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> No separador `Informações gerais`{.action}, localize a rubrica `RAM`.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> Clique no botão `...`{.action} na rubrica `RAM` e, a seguir, em `Alterar quantidade de RAM`{.action}.
 
@@ -316,20 +316,20 @@ Também pode otimizar a sua base de dados seguindo as instruções do nosso guia
 
 Esta mensagem de erro significa que a base de dados que está a tentar importar contém elementos não autorizados na infraestrutura partilhada da OVHcloud.
 
-Em primeiro lugar, certifique-se de que a sua base de dados está vazia. Para isso, clique nos separadores abaixo para visualizar sucessivamente cada um dos **3** passos.
+Em primeiro lugar, certifique-se de que a sua base de dados está vazia. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em questão.
 >>
 >> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Bases de dados`{.action} e, a seguir, no botão `...`{.action} junto à base de dados em questão e em `Recalcular o limite`{.action}.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> Se a base de dados não estiver vazia, [guarde os dados presentes](/pages/web_cloud/web_hosting/sql_database_export) e elimine-os antes de voltar a importar.
 >>
@@ -369,20 +369,20 @@ Esta mensagem de erro aparece aquando da [importação de uma base de dados](/pa
 
 Para resolver esta anomalia, pode:
 
-- Aumentar a [quantidade de memória viva (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#acompanhar-a-ram-consumida). Para isso, clique nos separadores abaixo para visualizar sucessivamente cada um dos **3** passos.
+- Aumentar a [quantidade de memória viva (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#acompanhar-a-ram-consumida). Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e selecione o serviço em questão.
 >>
 >> ![Seleção de um servidor Web Cloud Databases na Área de Cliente OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> No separador `Informações gerais`{.action}, localize a rubrica `RAM`.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> Clique no botão `...`{.action} na rubrica `RAM` e, a seguir, em `Alterar quantidade de RAM`{.action}.
 
@@ -439,16 +439,16 @@ Verifique o nome do servidor correspondente.
 
 /// details | Base de dados num alojamento web
 
-Clique nos separadores abaixo para visualizar sucessivamente cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em questão.
 >>
 >> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Bases de dados`{.action}. O nome do servidor a introduzir está inscrito na coluna `Endereço do servidor`.
 
@@ -456,16 +456,16 @@ Clique nos separadores abaixo para visualizar sucessivamente cada um dos **2** p
 
 /// details | Base de dados num servidor Web Cloud Databases
 
-Clique nos separadores abaixo para visualizar sucessivamente cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e selecione o serviço em questão.
 >>
 >> ![Seleção de um servidor Web Cloud Databases na Área de Cliente OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> No separador `Informações gerais`{.action}, o nome do servidor a introduzir está inscrito na secção `Informações da ligação`, parte `SQL`, rubrica `Nome do host`.
 

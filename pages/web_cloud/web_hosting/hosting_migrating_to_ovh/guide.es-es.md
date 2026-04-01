@@ -53,7 +53,7 @@ Migrar todo su sitio web y el correo a OVHcloud **sin interrupción del servicio
 - [9 - Sustituir los servidores DNS activos de su dominio por los de OVHcloud](#step9)
 - [10 - Transferir su dominio a OVHcloud](#step10)
 
-Siguiendo estas 10 partes **en el orden**, no tendrá interrupción del servicio para el acceso a su sitio web y para la recepción de sus nuevos emails.
+Siguiendo estas 10 partes **en el orden**, no tendrá interrupción del servicio para el acceso a su sitio web y para la recepción de sus nuevos correos electrónicos.
 
 No obstante, en función del agente registrador, del proveedor de alojamiento o del proveedor de servicios de correo, es posible que corten el acceso a sus antiguos servicios si se da cuenta de que el dominio ya no está configurado por sus infraestructuras.<br>
 En ese caso, puede producirse una interrupción del servicio.
@@ -88,7 +88,7 @@ También puede realizar el pedido desde su área de cliente de OVHcloud. Para el
 >>
 >> Siga los pasos del pedido **sin solicitar la transferencia del dominio** (esta acción se realizará en la parte 10 de esta guía).
 
-Una vez validado el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico en su dirección de correo electrónico de contacto. que contendrá las claves de acceso al espacio de almacenamiento FTP (File Transfer Protocol) de su alojamiento web.
+Una vez validado el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico en su dirección de correo electrónico de contacto, que contendrá las claves de acceso al espacio de almacenamiento FTP (File Transfer Protocol) de su alojamiento web.
 
 > [!primary]
 >
@@ -157,7 +157,7 @@ Para ello, sustituya los datos de conexión de su antigua base de datos por los 
 > Para asociar una nueva base de datos si utiliza un Content Management System (CMS) como WordPress, Joomla, Drupal o PrestaShop, consulte la información relativa a sus archivos de configuración desde **la parte 2** de la guía "[Modificación de la contraseña de una base de datos](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-Declare/autorice su nombre de dominio externo en su alojamiento web OVHcloud siguiendo nuestro tutorial "[gestión de sitios web de un alojamiento web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Introduzca el nombre de la carpeta raíz que haya elegido al comienzo del[parte 4](#step4). Le recordamos que esta es la carpeta en la que ha guardado sus archivos en su espacio de almacenamiento FTP.
+Declare/autorice su nombre de dominio externo en su alojamiento web OVHcloud siguiendo nuestro tutorial "[gestión de sitios web de un alojamiento web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Introduzca el nombre de la carpeta raíz que haya elegido al comienzo del [parte 4](#step4). Le recordamos que esta es la carpeta en la que ha guardado sus archivos en su espacio de almacenamiento FTP.
 
 > [!warning]
 >
@@ -225,7 +225,7 @@ Repita la operación para todas sus cuentas de correo.
 >
 Para ello, es necesario tener las claves de acceso de todas sus antiguas cuentas de correo y el nombre del servidor de correo de su anterior proveedor.
 >
-> Si sus direcciones de correo estuvieran configuradas en POP sin conservar copias de los mensajes en su antiguo servidor de correo, o si tuviera los emails registrados "localmente" en sus dispositivos, solo podrá realizar la **opción 2**.
+> Si sus direcciones de correo estuvieran configuradas en POP sin conservar copias de los mensajes en su antiguo servidor de correo, o si tuviera los correos electrónicos registrados "localmente" en sus dispositivos, solo podrá realizar la **opción 2**.
 >
 
 **Opción 2**: realice una copia de seguridad del contenido de sus direcciones de correo mediante un cliente de correo (Outlook, Mail para Mac...), reconfigure su cliente de correo e importe la copia de seguridad en su nueva dirección de correo de OVHcloud. Para más información, consulte nuestra guía "[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
@@ -259,7 +259,7 @@ Sustituya los servidores DNS actuales (del registrador de origen) por los dos se
 
 ### 10 - Transferir su dominio a OVHcloud <a name="step10"></a>
 
-Una vez completada la propagación DNS, compruebe que todo su sitio web esté operativo. Navegue por su sitio web para comprobar que todas las páginas se muestran correctamente y que no se devuelve ningún error 404. Compruebe también el envío y la recepción de los emails desde sus direcciones de correo.
+Una vez completada la propagación DNS, compruebe que todo su sitio web esté operativo. Navegue por su sitio web para comprobar que todas las páginas se muestran correctamente y que no se devuelve ningún error 404. Compruebe también el envío y la recepción de los correos electrónicos desde sus direcciones de correo.
 
 Si todo está en orden, desbloquee su dominio y recupere su "código de transferencia", "EPP" o "AuthCode" desde su actual agente registrador.
 

@@ -78,7 +78,7 @@ Sprawdź najpierw bezpieczeństwo swoich stacji/urządzeń:
 > W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z [partnerami OVHcloud](/links/partner).
 >
 
-### 3 - Interweniować na Twoim hostingu
+### 3 - Interweniuj na Twoim hostingu
 
 Najpierw zapisz datę wysłania wiadomości e-mail OVHcloud informującej o wyłączeniu hostingu WWW, a także folder lub foldery zawierające przykłady niezgodnych z prawem plików.
 
@@ -112,7 +112,7 @@ Jeśli Twój hosting został zamknięty ponad dwa tygodnie temu, skontaktuj się
 
 > [!success]
 >
-> Jeśli potrzebujesz więcej informacji na temat [części 2 i 3](#step-2), zapoznaj się z naszym tutorial [działań, które należy wykonać w przypadku włamania na Twojej stronie internetowej](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Jeśli potrzebujesz więcej informacji na temat [części 2 i 3](#step-2), zapoznaj się z naszym tutorialem [działań, które należy wykonać w przypadku włamania na Twojej stronie internetowej](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 > 
 
 ### 4 - Reaktywuj Twój hosting za pomocą FileZilla <a name="reactivate-web-hosting"></a>

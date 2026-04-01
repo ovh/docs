@@ -65,11 +65,11 @@ Para aceder aos motores de execução do seu alojamento [Cloud Web](/links/web/h
 >>
 >> Clique no separador `Motores de execução`{.action}. Será automaticamente criado um motor durante a instalação do alojamento. É indicado como `Escolha padrão` no quadro que se apresenta.
 >>
->> Para modificar um motor já parametrizado, clique no botão `...`{.action} à direita e, a seguir, em `Modificar`{.action}.
+>> Para modificar um motor já parametrizado, clique no botão `...`{.action} à direita e, a seguir, em `Alterar`{.action}.
 >>
 > **Etapa 3**
 >>
->> Se dispõe da oferta [Cloud Web](/links/web/hosting-cloud-web-offer) com 2 vCores, pode adicionar um segundo motor de execução (máximo de 2 por oferta) clicando no botão `Ações`{.action} e, depois, em `Adicionar um motor de execução`{.action}.
+>> Se dispõe da oferta [Cloud Web](/links/web/hosting-cloud-web-offer) com 2 vCores, pode adicionar um segundo motor de execução (máximo de 2 por oferta) clicando no botão `Ações`{.action} e, depois, em `Adicionar um tempo de execução para o aplicativo de software`{.action}.
 
 Assim, antes de prosseguir, certifique-se de que dispõe do ou dos motores de execução necessários ao seu projeto.
 
@@ -90,7 +90,7 @@ Para verificar que dispõe de 2 vCores com o seu alojamento Cloud Web, clique no
 
 Quando deseja implementar várias vezes o seu projeto em ambientes diferentes (por exemplo: desenvolvimento, teste ou produção), deverá fornecer variáveis de modo que o código reaja em conformidade. Para isso, a [Cloud Web](/links/web/hosting-cloud-web-offer) possibilita a definição de variáveis de ambiente acessíveis pelo código do seu site ou da sua aplicação web.
 
-Por exemplo, desta forma pode deixar de fora um ficheiro «.env» no framework PHP Laravel, como indica a documentação do framework: <https://laravel.com/docs/master/configuration>.
+Por exemplo, desta forma pode deixar de fora um ficheiro ".env" no framework PHP Laravel, como indica a documentação do framework: <https://laravel.com/docs/master/configuration>.
 
 Para adicionar uma variável de ambiente, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
@@ -107,7 +107,7 @@ Para adicionar uma variável de ambiente, clique nos separadores abaixo para vis
 >>
 > **Etapa 3**
 >>
->> Para adicionar uma nova, clique no botão `Ações`{.action} e depois em `Adicionar uma variável de ambiente`{.action}. Então, siga as indicações em função da variável que deseja criar.
+>> Para adicionar uma nova, clique no botão `Ações`{.action} e depois em `Adicionar um ambiente variável`{.action}. Então, siga as indicações em função da variável que deseja criar.
 >>
 >> ![Adicionar uma variável de ambiente num alojamento Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
@@ -185,11 +185,11 @@ Se optar pela utilização dos nossos módulos em 1 clique, clique nos separador
 >>
 > **Etapa 2**
 >>
->> Clique no separador `Módulos em 1 clique`{.action} e, a seguir, em `Adicionar um módulo`{.action}.
+>> Clique no separador `Módulos "1 clique"`{.action} e, a seguir, em `Adicionar um módulo`{.action}.
 >>
 > **Etapa 3**
 >>
->> Então, poderá iniciar uma instalação em modo «simples» (não personalizável) ou em modo «avançado» (com a possibilidade de personalizar certos elementos).
+>> Então, poderá iniciar uma instalação em modo "simples" (não personalizável) ou em modo "avançado" (com a possibilidade de personalizar certos elementos).
 
 Para mais informações sobre os módulos, consulte o guia: [Instalar um site com os módulos em 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

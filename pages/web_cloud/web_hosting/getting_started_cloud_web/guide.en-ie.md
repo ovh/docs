@@ -63,7 +63,7 @@ To access the runtime software applications for your [Cloud Web](/links/web/host
 >>
 > **Step 2**
 >>
->> Click on the `Runtime software`{.action} tab. When you set up your hosting plan, a runtime software application is created automatically. It is listed as `Default choice` in the table that appears.
+>> Click on the `Runtime software applications`{.action} tab. When you set up your hosting plan, a runtime software application is created automatically. It is listed as `Default choice` in the table that appears.
 >>
 >> To modify a runtime software that has already been set, click on the `...`{.action} button to the right, then `Modify`{.action}.
 >>
@@ -150,7 +150,7 @@ Now that the technical environment of your [Cloud Web](/links/web/hosting-cloud-
 >>
 >> Click on the `Multisite`{.action} tab. The table displayed will contain all of the domain names that have been added to your hosting plan. Some of these will have been created automatically, when your hosting plan was set up.
 >>
->> To add a new one, click on the `Add a domain or subdomain`{.action} button, and follow the instructions that appear. The method may be different, depending on whether the domain name concerned is registered with OVHcloud.
+>> To add a new one, click on the `Add a domain or sub-domain`{.action} button, and follow the instructions that appear. The method may be different, depending on whether the domain name concerned is registered with OVHcloud.
 >>
 > **Step 3**
 >>
@@ -162,7 +162,7 @@ Now that the technical environment of your [Cloud Web](/links/web/hosting-cloud-
 >>
 >> > [!warning]
 >> >
->> > If you have added a domain name that is considered to be external, you will need to add a TXT record called **ovhcontrol** to its DNS configuration. This way, OVHcloud can ensure that the domain addition is approved. If you do not do this, your domain addition will be cancelled.
+>> > If you have added a domain name that is considered to be external, you will need to add a TXT record called **ovhcontrol** to its DNS configuration. This way, OVHcloud can ensure that the domain addition is approved. If you skip this step, your domain will not be added.
 
 Repeat this step if you would like to add several domain names to your Cloud Web hosting plan. For more information on adding a domain name as a multisite, please read the following guide: [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 

@@ -78,7 +78,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `FTP-SSH`{.action}.
+>> Clicca sulla scheda `FTP - SSH`{.action}.
 >>
 > **Passaggio 3**
 >>
@@ -90,7 +90,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> > [!primary]
 >> >
->> > Per motivi di sicurezza, la password di un utente non appare sulla pagina della scheda `FTP-SSH`{.action}. Se l’hai dimenticato, consulta [questa guida](/pages/web_cloud/web_hosting/ftp_change_password) per modificarlo.
+>> > Per motivi di sicurezza, la password di un utente non appare sulla pagina della scheda `FTP - SSH`{.action}. Se l’hai dimenticato, consulta [questa guida](/pages/web_cloud/web_hosting/ftp_change_password) per modificarlo.
 
 ### 2 - Accedere allo spazio di storage dell’hosting grazie a FileZilla
 

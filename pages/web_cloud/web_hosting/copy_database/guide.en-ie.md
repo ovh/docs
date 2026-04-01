@@ -85,13 +85,13 @@ Click on the tabs below to view each of the **6** steps.
 >>
 >> Click the `...`{.action} button to the right of the row of the database you want to copy, then select `Copy database`{.action}.
 >>
->> ![CTA_copy_DB](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
+>> ![Copy database button](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
 >>
 > **Step 4**
 >>
 >> A window will prompt you to choose your destination database.
 >>
->> ![Copy DB Interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
+>> ![Database copy destination selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
 >>
 >> > [!primary]
 >> >
@@ -101,7 +101,7 @@ Click on the tabs below to view each of the **6** steps.
 >> > - For a database on a Web Cloud Databases server: follow our guide [Creating a database on a Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server).
 >>
 >> - **Choice 1 - Copy to a Start SQL database**: select `Copy to database`{.action}, then choose the destination database from the drop-down list.
->> - **Choice 2 - Copy to a Web Cloud Databases server**: select `Copy to a Web Cloud Databases`{.action}. Two drop-down lists appear. Click the first one to select the Web Cloud Databases solution, then click the second one to choose the destination database.
+>> - **Choice 2 - Copy to a Web Cloud Databases server**: select `Copy to a Web Cloud Database`{.action}. Two drop-down lists appear. Click the first one to select the Web Cloud Databases solution, then click the second one to choose the destination database.
 >>
 > **Step 5**
 >>
@@ -134,19 +134,19 @@ Click on the tabs below to view each of the **6** steps.
 >>
 >> Click on the `Databases`{.action} tab. The list of databases on your Web Cloud Databases server is displayed.
 >>
->> ![WCD DB List](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/wcdb-dashboard-db-list.png){.thumbnail}
+>> ![Web Cloud Databases database list](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/wcdb-dashboard-db-list.png){.thumbnail}
 >>
 > **Step 3**
 >>
 >> Click the `...`{.action} button to the right of the row of the database you want to copy, then select `Copy database`{.action}.
 >>
->> ![CTA_copy_DB](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
+>> ![Copy database button](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
 >>
 > **Step 4**
 >>
 >> A window will prompt you to choose your destination database.
 >>
->> ![Copy DB Interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
+>> ![Database copy destination selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
 >>
 >> > [!primary]
 >> >
@@ -156,7 +156,7 @@ Click on the tabs below to view each of the **6** steps.
 >> > - For a database on a Web Cloud Databases server: follow our guide [Creating a database on a Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server).
 >>
 >> - **Choice 1 - Copy to a Start SQL database**: select `Copy to database`{.action}, then choose the destination database from the drop-down list.
->> - **Choice 2 - Copy to a Web Cloud Databases server**: select `Copy to a Web Cloud Databases`{.action}. Two drop-down lists appear. Click the first one to select the Web Cloud Databases solution, then click the second one to choose the destination database.
+>> - **Choice 2 - Copy to a Web Cloud Databases server**: select `Copy to a Web Cloud Database`{.action}. Two drop-down lists appear. Click the first one to select the Web Cloud Databases solution, then click the second one to choose the destination database.
 >>
 > **Step 5**
 >>

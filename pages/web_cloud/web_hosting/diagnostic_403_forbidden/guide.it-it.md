@@ -112,7 +112,7 @@ Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provide
 
 > [!success]
 >
-> Per maggiori informazioni sui [parti 2 e 3](#step-2), consulta la nostra guida su [le azioni da effettuare in caso di hacking del tuo sito Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Per maggiori informazioni sulle [parti 2 e 3](#step-2), consulta la nostra guida su [le azioni da effettuare in caso di hacking del tuo sito Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
 ### 4 - Riattiva il tuo hosting con FileZilla <a name="reactivate-web-hosting"></a>

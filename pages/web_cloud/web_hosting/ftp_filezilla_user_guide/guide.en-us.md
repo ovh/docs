@@ -77,7 +77,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 > **Step 2**
 >>
->> Click on the `FTP-SSH`{.action} tab.
+>> Click on the `FTP - SSH`{.action} tab.
 >>
 > **Step 3**
 >>
@@ -89,7 +89,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> > [!primary]
 >> >
->> > For security reasons, a user’s password does not appear on the page of the `FTP-SSH`{.action} tab. If you have forgotten it, please refer to [this guide](/pages/web_cloud/web_hosting/ftp_change_password) to modify it.
+>> > For security reasons, a user’s password does not appear on the page of the `FTP - SSH`{.action} tab. If you have forgotten it, please refer to [this guide](/pages/web_cloud/web_hosting/ftp_change_password) to modify it.
 
 ### 2 - Log in to your hosting plan’s storage space using FileZilla
 

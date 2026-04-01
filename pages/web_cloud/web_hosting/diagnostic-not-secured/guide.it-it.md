@@ -156,7 +156,7 @@ Questo significa che il tuo dominio non è gestito dal tuo [Spazio Cliente OVHcl
 
 Verifica che non sia gestito da uno degli altri [account OVHcloud](/links/manager), se ne hai creati diversi.
 
-Puoi anche determinare il suo Registrar e i server DNS a cui è associato tramite il nostro tool [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).
+Puoi anche determinare il suo Registrar e i server DNS a cui è associato tramite il nostro tool [WHOIS](/links/web/domains-whois).
 
 Se necessario, contatta il tuo webmaster o i [partner OVHcloud](/links/partner) a questo proposito.
 

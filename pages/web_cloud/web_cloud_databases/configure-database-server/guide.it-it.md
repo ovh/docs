@@ -92,7 +92,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `IP autorizzati`{.action}, poi sul pulsante `Aggiungi un indirizzo IP / maschera`{.action}.
+>> Clicca sulla scheda `IP autorizzati`{.action}, poi sul pulsante `Aggiungi un indirizzo IP/mask`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
 >>
@@ -155,7 +155,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Passaggio 3**
 >>
->> Scegli la quantità di RAM desiderata, poi clicca su `Seguente`{.action}. Potrai quindi scegliere la durata desiderata.
+>> Scegli la quantità di RAM desiderata, poi clicca su `Continua`{.action}. Potrai quindi scegliere la durata desiderata.
 >>
 >> > [!primary]
 >> >

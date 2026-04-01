@@ -105,7 +105,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Passaggio 3**
 >>
->> Una tabella mostra gli *utenti FTP* creati sul tuo hosting Web. Clicca sul pulsante `...`{.action} a destra dell'utente FTP interessato e poi su `Modifica la password`{.action}. Nella nuova finestra, inserisci la nuova password **seguendo la politica delle password**, confermala inserendola una seconda volta e clicca su `Conferma`{.action}.
+>> Una tabella mostra gli *utenti FTP* creati sul tuo hosting Web. Clicca sul pulsante `...`{.action} a destra dell'utente FTP interessato e poi su `Modificare la password`{.action}. Nella nuova finestra, inserisci la nuova password **seguendo la politica delle password**, confermala inserendola una seconda volta e clicca su `Conferma`{.action}.
 >>
 >> ![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 

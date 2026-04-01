@@ -65,7 +65,7 @@ Um zu den Runtime Engines Ihres [Cloud Web](/links/web/hosting-cloud-web-offer) 
 >>
 >> Klicken Sie auf den Tab `Runtime Engines`{.action}. Bei der Installation Ihres Hostings wird automatisch eine Engine erstellt und als `Standardauswahl` in der zugehörigen Tabelle angezeigt.
 >>
->> Um eine bereits eingerichtete Runtime Engine zu bearbeiten, klicken Sie auf den Button `...`{.action} rechts daneben und anschließend auf `Bearbeiten`{.action}.
+>> Um eine bereits eingerichtete Runtime Engine zu bearbeiten, klicken Sie auf den Button `...`{.action} rechts daneben und anschließend auf `Ändern`{.action}.
 >>
 > **Schritt 3**
 >>
@@ -150,7 +150,7 @@ Nun da die technische Umgebung Ihres Cloud Web Hostings fertig ist, können Sie 
 >>
 >> Klicken Sie auf den Tab `Multisite`{.action}. Die angezeigte Tabelle listet alle Domains auf, die Ihrem Hosting zugewiesen sind. Einige wurden bei der Installation Ihres Hostings automatisch hinzugefügt.
 >>
->> Um weitere hinzuzufügen, klicken Sie auf den Button `Eine Domain oder Subdomain hinzufügen`{.action} und folgen Sie den Anweisungen. Die Vorgehensweise kann variieren, je nachdem, ob Ihre Domain bei OVHcloud gehostet ist oder nicht.
+>> Um weitere hinzuzufügen, klicken Sie auf den Button `Domain oder Subdomain hinzufügen`{.action} und folgen Sie den Anweisungen. Die Vorgehensweise kann variieren, je nachdem, ob Ihre Domain bei OVHcloud gehostet ist oder nicht.
 >>
 > **Schritt 3**
 >>
@@ -185,7 +185,7 @@ Wenn Sie sich für die Verwendung eines unserer 1-Klick-Module entscheiden, klic
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf den Tab `1 Klick Module`{.action} und anschließend auf `Ein Modul hinzufügen`{.action}.
+>> Klicken Sie auf den Tab `1-Klick-Module`{.action} und anschließend auf `Modul hinzufügen`{.action}.
 >>
 > **Schritt 3**
 >>

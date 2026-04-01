@@ -47,7 +47,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Procedimiento
 
-### 1 - analizar la situación
+### 1 - Analizar la situación
 
 Si la página **"403 forbidden"** ha aparecido como consecuencia de una modificación de su sitio web, [restaure la totalidad o parte del espacio de almacenamiento FTP de su alojamiento](/pages/web_cloud/web_hosting/ftp_save_and_backup) a una fecha anterior.
 
@@ -57,7 +57,7 @@ Si la página **"403 forbidden"** no ha aparecido debido a una modificación de 
 
 Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún email de nuestros servicios al respecto, compruebe los permisos de acceso FTP (CHMOD) de sus ficheros/carpetas así como el código contenido en su(s) archivo(s) **.htaccess**. Compruebe también si este fallo no se ha producido por un plugin de seguridad o por un firewall de aplicación. Si lo necesita, contacte con un [proveedor especializado](/links/partner).
 
-### 2 - proteger sus soluciones <a name="step-2"></a>
+### 2 - Proteger sus soluciones <a name="step-2"></a>
 
 En primer lugar, compruebe la seguridad de sus equipos o dispositivos informáticos:
 
@@ -77,7 +77,7 @@ En primer lugar, compruebe la seguridad de sus equipos o dispositivos informáti
 >
 > En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](/links/partner).
 
-### 3 - intervenir en su alojamiento
+### 3 - Intervenir en su alojamiento
 
 En primer lugar, la fecha de envío del mensaje de correo electrónico de OVHcloud indica la desactivación de su alojamiento web y la carpeta o carpetas que contienen ejemplos de archivos ilegítimos.
 
@@ -113,7 +113,7 @@ Si su alojamiento ha sido cerrado más de dos semanas antes, contacte con un [pr
 >
 > Si desea más información sobre los [partes 2 y 3](#step-2) anteriores, consulte nuestro tutorial sobre [las acciones a realizar en caso de pirateo de su sitio web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
-### 4 - reactivar el alojamiento con FileZilla <a name="reactivate-web-hosting"></a>
+### 4 - Reactivar el alojamiento con FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

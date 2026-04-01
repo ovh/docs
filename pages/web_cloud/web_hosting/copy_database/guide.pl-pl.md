@@ -97,8 +97,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 >> >
 >> > Jeśli nie posiadasz docelowej bazy danych, kliknij link w oknie, aby kupić nową bazę danych. Pamiętaj o jej aktywacji:
 >> >
->> > - W przypadku bazy danych Shared SQL: zapoznaj się z przewodnikiem « [Tworzenie bazy danych na hostingu WWW OVHcloud](/pages/web_cloud/web_hosting/sql_create_database) ».
->> > - W przypadku bazy danych na serwerze Web Cloud Databases: zapoznaj się z naszym przewodnikiem « [Tworzenie bazy danych na serwerze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
+>> > - W przypadku bazy danych Shared SQL: zapoznaj się z przewodnikiem "[Tworzenie bazy danych na hostingu WWW OVHcloud](/pages/web_cloud/web_hosting/sql_create_database)".
+>> > - W przypadku bazy danych na serwerze Web Cloud Databases: zapoznaj się z naszym przewodnikiem "[Tworzenie bazy danych na serwerze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 >>
 >> - **Wybór 1 - Skopiuj do bazy danych Start SQL**: wybierz `Skopiuj do bazy danych`{.action}, a następnie wybierz docelową bazę danych z listy rozwijanej.
 >> - **Wybór 2 - Skopiuj do serwera Web Cloud Databases**: wybierz `Skopiuj do Web Cloud Databases`{.action}. Pojawią się dwie listy rozwijane. Kliknij pierwszą, aby wybrać ofertę Web Cloud Databases, a następnie drugą, aby wybrać docelową bazę danych.
@@ -113,7 +113,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 >>
 > **Krok 6**
 >>
->> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w trakcie`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu wiersz znika.
+>> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w toku`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu wiersz znika.
 >>
 >> ![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
@@ -152,8 +152,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 >> >
 >> > Jeśli nie posiadasz docelowej bazy danych, kliknij link w oknie, aby kupić nową bazę danych. Pamiętaj o jej aktywacji:
 >> >
->> > - W przypadku bazy danych Shared SQL: zapoznaj się z przewodnikiem « [Tworzenie bazy danych na hostingu WWW OVHcloud](/pages/web_cloud/web_hosting/sql_create_database) ».
->> > - W przypadku bazy danych na serwerze Web Cloud Databases: zapoznaj się z naszym przewodnikiem « [Tworzenie bazy danych na serwerze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
+>> > - W przypadku bazy danych Shared SQL: zapoznaj się z przewodnikiem "[Tworzenie bazy danych na hostingu WWW OVHcloud](/pages/web_cloud/web_hosting/sql_create_database)".
+>> > - W przypadku bazy danych na serwerze Web Cloud Databases: zapoznaj się z naszym przewodnikiem "[Tworzenie bazy danych na serwerze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 >>
 >> - **Wybór 1 - Skopiuj do bazy danych Start SQL**: wybierz `Skopiuj do bazy danych`{.action}, a następnie wybierz docelową bazę danych z listy rozwijanej.
 >> - **Wybór 2 - Skopiuj do serwera Web Cloud Databases**: wybierz `Skopiuj do Web Cloud Databases`{.action}. Pojawią się dwie listy rozwijane. Kliknij pierwszą, aby wybrać ofertę Web Cloud Databases, a następnie drugą, aby wybrać docelową bazę danych.
@@ -168,7 +168,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 >>
 > **Krok 6**
 >>
->> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w trakcie`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu wiersz znika.
+>> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w toku`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu wiersz znika.
 >>
 >> ![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
@@ -178,7 +178,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 
 Jeśli chcesz użyć nowej bazy danych, po skopiowaniu źródłowej bazy danych wykonaj ostatnią czynność.
 
-W zakładce `Zadania w trakcie`{.action} upewnij się, że kopia została ukończona (wiersz odpowiadający kopii zniknął).
+W zakładce `Zadania w toku`{.action} upewnij się, że kopia została ukończona (wiersz odpowiadający kopii zniknął).
 
 Aby połączyć nową bazę danych ze stroną WWW, edytuj plik konfiguracyjny **C**ontent **M**anagement **S**ystem (**CMS**) i wprowadź informacje dotyczące połączenia z nową bazą danych.
 
@@ -218,7 +218,7 @@ To powiadomienie oznacza, że posiadasz tylko jedną aktywną bazę danych. Do s
 
 /// details | Trwa już wykonywanie operacji
 
-Ten komunikat oznacza, że dla Twojej bazy danych trwa już wykonywanie zadania. Przejdź do karty `Zadania w trakcie`{.action} i sprawdź, czy wykonujesz już operację. Jeśli tak jest, poczekaj na jej zakończenie, aby w razie potrzeby przesłać kopię bazy danych ponownie.
+Ten komunikat oznacza, że dla Twojej bazy danych trwa już wykonywanie zadania. Przejdź do karty `Zadania w toku`{.action} i sprawdź, czy wykonujesz już operację. Jeśli tak jest, poczekaj na jej zakończenie, aby w razie potrzeby przesłać kopię bazy danych ponownie.
 
 ///
 
