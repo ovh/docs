@@ -62,7 +62,7 @@ Le tableau suivant résume les différences majeures entre le plan Free et le pl
 | -------------------------- | --------------------------- | ------------------------------------------------- |
 | ControlPlane               | Géré                        | Géré & résilient Cross-AZ (3-AZ)                  |
 | Disponibilité              | 99,5 % SLO                  | 99,9% SLA (1-AZ) / 99,99% SLA (3-AZ)              |
-| etcd                       | Partagé, jusqu'à 400 Mo     | Dédiqué, jusqu'à 8 Go                             |
+| etcd                       | Partagé, jusqu'à 400 Mo     | Dédié, jusqu'à 8 Go                             |
 | Taille maximale du cluster | Jusqu'à 100 nœuds           | Jusqu'à 500 nœuds                                 |
 | Disponibilité régionale    | Régions à zone unique uniquement | Régions 1-AZ et 3-AZ disponibles              |
 
