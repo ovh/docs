@@ -1,7 +1,7 @@
 ---
 title: "Come cambiare la password amministratore di un CMS"
 excerpt: "Questa guida ti mostra come modificare la password amministratore del tuo CMS direttamente tramite l'interfaccia di amministrazione del CMS o utilizzando phpMyAdmin dallo Spazio Cliente OVHcloud"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Obiettivo

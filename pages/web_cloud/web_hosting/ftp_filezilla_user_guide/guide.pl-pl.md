@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Jak używać programu FileZilla"
 excerpt: "Dowiedz się, jak zalogować się do przestrzeni dyskowej hostingu OVHcloud i zarządzać danymi w niej zawartymi za pomocą oprogramowania FileZilla"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

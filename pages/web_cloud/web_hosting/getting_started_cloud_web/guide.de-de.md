@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit Cloud Web Hosting"
 excerpt: "Diese Anleitung erklärt, wie Sie richtig mit Ihrem Cloud Web Hosting starten"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Ziel
@@ -43,7 +43,7 @@ Nachdem Sie sich die verschiedenen Optionen angesehen und Ihr Projekt genau defi
 
 ### 2 - Runtime Engine auswählen
 
-Bei Cloud Web stehen Ihnen für Ihr Projekt verschiedene Entwicklungssprachen zur Verfügung. Falls Sie eine andere Sprache als das standardmäßig ausgewählte PHP verwenden möchten, wählen Sie die entsprechende „Runtime Engine" aus.
+Bei Cloud Web stehen Ihnen für Ihr Projekt verschiedene Entwicklungssprachen zur Verfügung. Falls Sie eine andere Sprache als das standardmäßig ausgewählte PHP verwenden möchten, wählen Sie die entsprechende "Runtime Engine" aus.
 
 Aktuell sind folgende Programmiersprachen verfügbar:
 
@@ -133,7 +133,7 @@ http.createServer(function(request, response) {
 }).listen(80);
 ```
 
-Vergessen Sie nicht, die allgemeinen Angaben in diesen Skripten („DB_DATABASE") durch die entsprechende Umgebungsvariable zu ersetzen.
+Vergessen Sie nicht, die allgemeinen Angaben in diesen Skripten ("DB_DATABASE") durch die entsprechende Umgebungsvariable zu ersetzen.
 
 ### 4 - Zusätzliche Domains und Multisite konfigurieren (optional)
 
@@ -164,7 +164,7 @@ Nun da die technische Umgebung Ihres Cloud Web Hostings fertig ist, können Sie 
 >> >
 >> > Wenn Sie eine externe Domain hinzugefügt haben, muss zusätzlich ein TXT-Feld mit dem Namen **ovhcontrol** in der DNS-Konfiguration der Domain erstellt werden. Über dieses Feld kann OVHcloud überprüfen, dass die Domain tatsächlich hinzugefügt werden darf. Wurde kein TXT-Feld erstellt, wird der Vorgang abgebrochen.
 
-Wiederholen Sie diesen Schritt, falls Sie mehrere Domains zu Ihrem Cloud Web Hosting hinzufügen möchten. Weitere Informationen zum Hinzufügen einer Domain als Multisite finden Sie in unserer Anleitung: [„Mehrere Websites auf einem Webhosting einrichten"](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Wiederholen Sie diesen Schritt, falls Sie mehrere Domains zu Ihrem Cloud Web Hosting hinzufügen möchten. Weitere Informationen zum Hinzufügen einer Domain als Multisite finden Sie in unserer Anleitung: ["Mehrere Websites auf einem Webhosting einrichten"](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ### 5 - Projekt auf Cloud Web Hosting einrichten
 
@@ -172,7 +172,7 @@ Es gibt zwei mögliche Vorgehensweisen, um Ihr Projekt einzurichten. Wenn Sie me
 
 #### 1. OVHcloud 1-Klick-Module verwenden
 
-Mit dieser Lösung können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung. Nähere Informationen finden Sie auf der Webseite [„Erstellen Sie Ihre Website mit 1-Klick-Modulen"](/links/web/hosting-website).
+Mit dieser Lösung können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung. Nähere Informationen finden Sie auf der Webseite ["Erstellen Sie Ihre Website mit 1-Klick-Modulen"](/links/web/hosting-website).
 
 Wenn Sie sich für die Verwendung eines unserer 1-Klick-Module entscheiden, klicken Sie auf die Tabs, um nacheinander jeden der **3** Schritte anzuzeigen.
 
@@ -189,7 +189,7 @@ Wenn Sie sich für die Verwendung eines unserer 1-Klick-Module entscheiden, klic
 >>
 > **Schritt 3**
 >>
->> Nun können Sie auswählen, ob Sie eine „einfache" (nicht personalisierbare) Installation oder die Installation „im Experten-Modus" (mit anpassbaren Optionen) durchführen möchten.
+>> Nun können Sie auswählen, ob Sie eine "einfache" (nicht personalisierbare) Installation oder die Installation "im Experten-Modus" (mit anpassbaren Optionen) durchführen möchten.
 
 Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie einen Blick in unsere Dokumentation: ["Installation Ihrer Website mit 1-Klick-Modulen"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
@@ -203,7 +203,7 @@ Die manuelle Einrichtung Ihres Projekts ist um einiges technischer und erfordert
 
 Wenn Sie sich für die manuelle Installation entschieden haben, benötigen Sie alle Dateien der Website oder Anwendung, die Sie einrichten möchten. Falls Sie zuvor eine Datenbank auf Ihrem Cloud Web Hosting angelegt haben, brauchen Sie außerdem die zugehörigen Angaben und Login-Daten. Wenn Sie eine Website migrieren, erstellen Sie zunächst ein komplettes Backup aller zugehörigen Daten.
 
-Da nicht alle Projekte gleich sind, gibt es auch keine universelle Vorgehensweise. Unsere Anleitungen [„Webhosting: Meine Seite online stellen"](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) und [„Migration Ihrer Website und E-Mails zu OVH"](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) enthalten jedoch einige hilfreiche Informationen zum weiteren Vorgehen.
+Da nicht alle Projekte gleich sind, gibt es auch keine universelle Vorgehensweise. Unsere Anleitungen ["Webhosting: Meine Seite online stellen"](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) und ["Migration Ihrer Website und E-Mails zu OVH"](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) enthalten jedoch einige hilfreiche Informationen zum weiteren Vorgehen.
 
 ### 6 - Konfiguration Ihrer Domain bearbeiten
 
@@ -217,8 +217,8 @@ Es gibt mehrere zu OVHcloud gehörige DNS-Einträge. Wir interessieren uns an di
 
 |DNS-Eintrag|Zugehöriger Dienst|Wo finde ich den Eintrag?|
 |---|---|---|
-|A|Für die Website|Lesen Sie unsere Anleitung [„Webhosting — Liste der IP-Adressen nach Cluster"](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|
-|MX|Für E-Mails|Lesen Sie unsere Anleitung [„MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen"](/pages/web_cloud/domains/dns_zone_mx).|
+|A|Für die Website|Lesen Sie unsere Anleitung ["Webhosting — Liste der IP-Adressen nach Cluster"](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|
+|MX|Für E-Mails|Lesen Sie unsere Anleitung ["MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen"](/pages/web_cloud/domains/dns_zone_mx).|
 
 #### 2. DNS-Einträge überprüfen oder bearbeiten
 
@@ -228,14 +228,14 @@ Nun, da Sie die DNS-Einträge für Ihr Cloud Web Hosting und Ihr OVHcloud E-Mail
 >
 > - Wenn Ihre Domain nicht die DNS-Konfiguration von OVHcloud verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration verwaltet wird.
 >
-> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere DNS-Konfiguration verwendet. Lesen Sie hierzu unsere Anleitung [„DNS-Server einer OVHcloud Domain ändern"](/pages/web_cloud/domains/dns_server_edit).
+> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere DNS-Konfiguration verwendet. Lesen Sie hierzu unsere Anleitung ["DNS-Server einer OVHcloud Domain ändern"](/pages/web_cloud/domains/dns_server_edit).
 >
 
 Lesen Sie in der folgenden Tabelle, wo Sie die entsprechenden Änderungen vornehmen:
 
 |Verwendete DNS-Konfiguration|Wo nehme ich die Änderungen vor?|
 |---|---|
-|OVHcloud|Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone) und wählen Sie die betreffende Domain aus. Weitere Informationen finden Sie in unserer Dokumentation [„Bearbeiten der OVHcloud DNS-Zone"](/pages/web_cloud/domains/dns_zone_edit).|
+|OVHcloud|Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone) und wählen Sie die betreffende Domain aus. Weitere Informationen finden Sie in unserer Dokumentation ["Bearbeiten der OVHcloud DNS-Zone"](/pages/web_cloud/domains/dns_zone_edit).|
 |Andere|Verwenden Sie das Interface des Anbieters, der die DNS-Konfiguration Ihrer Domain verwaltet. Bei Problemen wenden Sie sich bitte an Ihren Anbieter.|
 
 Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von bis zu 24 Stunden, bis sie voll wirksam ist. Falls Sie mehrere Domains als Multisite mit Ihrem Cloud Web Hosting verbunden haben, müssen die notwendigen Änderungen für jede Domain einzeln durchgeführt werden.

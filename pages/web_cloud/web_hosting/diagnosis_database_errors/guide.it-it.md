@@ -1,7 +1,7 @@
 ---
 title: "Risolvi gli errori più frequenti associati ai database"
 excerpt: "Diagnostica i casi di errore più frequenti associati ai database"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Obiettivo
 
-L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [Spazio Cliente OVHcloud](/links/manager), così come sull'interfaccia [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
+L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [Spazio Cliente OVHcloud](/links/manager), così come sull'interfaccia [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
 
 **Scopri come risolvere gli errori associati ai database sugli hosting condivisi OVHcloud.**
 
@@ -95,7 +95,7 @@ Clicca sulle schede qui sotto per visualizzare in successione ciascuno dei **2**
 >>
 > **Passaggio 2**
 >>
->> Individua il `Nome host` nella sezione `SQL` delle `Informazioni di connessione`.
+>> Individua il `Nome host` nella sezione `SQL` delle `Informazioni di login`.
 
 ///
 
@@ -116,7 +116,7 @@ Accedi in [FTP](/pages/web_cloud/web_hosting/ftp_connection) allo spazio di arch
 > In caso di necessità, ti consigliamo di rivolgerti all'editor del [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilizzato per creare il tuo sito o di rivolgerti a un [fornitore specializzato](/links/partner). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
-Verifica la corrispondenza **esatta** tra le credenziali di connessione a [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database) e quelle del file di configurazione del tuo sito.
+Verifica la corrispondenza **esatta** tra le credenziali di connessione a [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accedere-all-interfaccia-phpmyadmin) e quelle del file di configurazione del tuo sito.
 
 Modifica, se necessario, la [password del tuo database](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -196,7 +196,7 @@ Per effettuare questa modifica, clicca sulle schede qui sotto per visualizzare i
 >>
 > **Passaggio 2**
 >>
->> Clicca sul pulsante `...`{.action} nella sezione `Offerta` sulla destra dello schermo.
+>> Clicca sul pulsante `...`{.action} nella sezione `Piano` sulla destra dello schermo.
 >>
 > **Passaggio 3**
 >>
@@ -219,7 +219,7 @@ Puoi anche migrare i tuoi dati su un nuovo database:
 
 #### Metodo 3: eliminare i dati non necessari
 
-Dopo aver effettuato un [backup del tuo database](/pages/web_cloud/web_hosting/sql_database_export), accedi alla tua interfaccia [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database) per eliminare i dati inutili grazie ai comandi Drop, Delete e Truncate.
+Dopo aver effettuato un [backup del tuo database](/pages/web_cloud/web_hosting/sql_database_export), accedi alla tua interfaccia [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accedere-all-interfaccia-phpmyadmin) per eliminare i dati inutili grazie ai comandi Drop, Delete e Truncate.
 
 Per ricalcolare la quota, clicca sulle schede qui sotto per visualizzare in successione ciascuno dei **3** passaggi.
 
@@ -333,7 +333,7 @@ Per prima cosa, assicurati che il database sia vuoto. Per farlo, clicca sulle sc
 >>
 >> Se il database non è vuoto, [salva i dati presenti](/pages/web_cloud/web_hosting/sql_database_export) e poi eliminali prima di riavviare l'operazione di importazione.
 >>
->> Puoi anche selezionare la casella `Elimina tutti i file dal tuo database attuale`{.action} immediatamente prima di [avviare l'importazione](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server):
+>> Puoi anche selezionare la casella `Elimina tutti i file dal tuo database attuale`{.action} immediatamente prima di [avviare l'importazione](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importare-il-backup-personale-dallo-spazio-cliente-ovhcloud):
 >>
 >> ![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
 
@@ -390,7 +390,7 @@ Per risolvere questa anomalia, puoi:
 
 - [Ottimizza il tuo database](/pages/web_cloud/web_cloud_databases/configure-database-server#ottimizza-i-tuoi-database) e ripeti le operazioni di esportazione/importazione.
 
-### Impossibile accedere a PhpMyAdmin
+### Impossibile accedere a phpMyAdmin
 
 #### "Access denied for user"
 
@@ -398,11 +398,11 @@ Per risolvere questa anomalia, puoi:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Questo messaggio di errore può comparire durante la connessione al tuo database da [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database). Indica che gli identificativi inseriti sono errati.
+Questo messaggio di errore può comparire durante la connessione al tuo database da [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accedere-all-interfaccia-phpmyadmin). Indica che gli identificativi inseriti sono errati.
 
 ![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
-In questa situazione, [verifica le credenziali inserite](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) e, se necessario, modifica la [password del tuo database](/pages/web_cloud/web_hosting/sql_change_password).
+In questa situazione, [verifica le credenziali inserite](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#procedura) e, se necessario, modifica la [password del tuo database](/pages/web_cloud/web_hosting/sql_change_password).
 
 #### "Too many connections"
 
@@ -414,7 +414,7 @@ Il numero massimo di connessioni attive per i database consegnati con hosting co
 
 Questo numero è di **200** per i database dei server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (Questo parametro è modificabile nella sezione `Configurazione`{.action} del tuo server database).
 
-Questo messaggio compare durante la [connessione a PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database) quando viene superato il numero massimo di connessioni.
+Questo messaggio compare durante la [connessione a phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accedere-all-interfaccia-phpmyadmin) quando viene superato il numero massimo di connessioni.
 
 Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi database](/pages/web_cloud/web_cloud_databases/configure-database-server#ottimizza-i-tuoi-database).
 
@@ -429,7 +429,7 @@ Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi d
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Questo messaggio di errore compare durante la [connessione a PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) quando il nome del server inserito non è corretto.
+Questo messaggio di errore compare durante la [connessione a phpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#procedura) quando il nome del server inserito non è corretto.
 
 ![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
@@ -467,7 +467,7 @@ Clicca sulle schede qui sotto per visualizzare in successione ciascuno dei **2**
 >>
 > **Passaggio 2**
 >>
->> Nella scheda `Informazioni generali`{.action}, il nome del server da inserire è indicato nella sezione `Informazioni di connessione`, sotto `SQL`, alla voce `Nome host`.
+>> Nella scheda `Informazioni generali`{.action}, il nome del server da inserire è indicato nella sezione `Informazioni di login`, sotto `SQL`, alla voce `Nome host`.
 
 ///
 

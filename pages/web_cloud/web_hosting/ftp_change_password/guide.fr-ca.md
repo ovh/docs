@@ -1,7 +1,7 @@
 ---
 title: "Modifier le mot de passe d'un utilisateur FTP"
 excerpt: "Découvrez comment changer le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

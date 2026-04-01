@@ -1,7 +1,7 @@
 ---
 title: "Duplikuj zawartość jednej bazy danych do innej"
 excerpt: "Dowiedz się, jak skopiować zawartość bazy danych OVHcloud do innej bazy danych OVHcloud"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -113,7 +113,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 >>
 > **Krok 6**
 >>
->> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w trakcie`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem „Zaplanowany". Po jej zakończeniu wiersz znika.
+>> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w trakcie`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu wiersz znika.
 >>
 >> ![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
@@ -168,7 +168,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 >>
 > **Krok 6**
 >>
->> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w trakcie`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem „Zaplanowany". Po jej zakończeniu wiersz znika.
+>> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w trakcie`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu wiersz znika.
 >>
 >> ![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 

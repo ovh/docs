@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como utilizar o FileZilla"
 excerpt: "Saiba como aceder ao espaço de armazenamento do seu alojamento web OVHcloud e gerir os dados nele contidos graças ao software FileZilla"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

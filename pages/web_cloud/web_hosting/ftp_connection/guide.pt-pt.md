@@ -1,7 +1,7 @@
 ---
 title: "Aceder ao espaço de armazenamento FTP do alojamento web"
 excerpt: "Descubra como aceder ao espaço de armazenamento FTP do alojamento web da OVHcloud"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objetivo

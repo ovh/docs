@@ -1,7 +1,7 @@
 ---
 title: "Managing your web hosting plan with Visual Studio Code via SFTP"
 excerpt: "Administering a website on a web hosting plan with Visual Studio Code using an SFTP extension"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objective

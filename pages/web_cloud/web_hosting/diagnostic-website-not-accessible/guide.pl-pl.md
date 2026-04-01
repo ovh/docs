@@ -1,7 +1,7 @@
 ---
 title: "Co zrobić, jeśli moja strona jest niedostępna?"
 excerpt: "Zdiagnozuj przyczyny niedostępności Twojej strony WWW"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

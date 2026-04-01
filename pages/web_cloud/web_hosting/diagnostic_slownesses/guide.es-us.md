@@ -140,7 +140,7 @@ Conéctese a su base de datos siguiendo **el etapa 3** de nuestra guía sobre la
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Gérer son hébergement web avec Visual Studio Code via SFTP"
 excerpt: "Administrer un site internet sur un hébergement web avec Visual Studio Code grâce à une extension SFTP"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objectif

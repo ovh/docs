@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Installer manuellement un CMS sur mon hébergement"
 excerpt: "Découvrez comment installer manuellement un CMS sur votre hébergement"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objectif

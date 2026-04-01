@@ -1,7 +1,7 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z bazami danych"
 excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -78,7 +78,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
 /// details | Znaleźć klaster i filer Twojego hostingu
 
-Zapoznaj się z naszym przewodnikiem „[Poznaj klaster i filer Twojego hostingu](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
+Zapoznaj się z naszym przewodnikiem "[Poznaj klaster i filer Twojego hostingu](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 ///
 
@@ -101,7 +101,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
 /// details | Znaleźć serwer bazy danych hostingu
 
-Zapoznaj się z naszym przewodnikiem „[Odnaleźć serwer bazy danych](/pages/web_cloud/web_hosting/sql_find_server)".
+Zapoznaj się z naszym przewodnikiem "[Odnaleźć serwer bazy danych](/pages/web_cloud/web_hosting/sql_find_server)".
 
 ///
 
@@ -245,7 +245,7 @@ Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić k
 
 #### Metoda 4: zoptymalizuj bazę danych
 
-Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku „[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-baz-danych)".
+Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-baz-danych)".
 
 Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
@@ -296,10 +296,10 @@ Aby zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/conf
 >
 > Aby zwiększyć pamięć RAM, nie należy włączać usługi Web Cloud Databases za pomocą hostingu Performance. Jeśli chcesz zwiększyć ilość pamięci RAM bazy danych zawartej w [ofertach Performance](/links/web/hosting-performance-offer), musisz ją odłączyć.
 >
-> Aby odłączyć bazę danych, zapoznaj się z naszym przewodnikiem „[Odłączenie Web Cloud Databases od hostingu](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
+> Aby odłączyć bazę danych, zapoznaj się z naszym przewodnikiem "[Odłączenie Web Cloud Databases od hostingu](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
 >
 
-Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcjami zawartymi w przewodniku „[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-bazy-danych)".
+Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-bazy-danych)".
 
 > [!primary]
 >
@@ -390,7 +390,7 @@ Aby usunąć tę anomalię, możesz:
 
 - [Zoptymalizuj bazę danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-bazy-danych), a następnie powtórz operacje eksportu/importu.
 
-### Nie można uzyskać dostępu do PhpMyAdmin
+### Nie można uzyskać dostępu do phpMyAdmin
 
 #### "Access denied for user"
 

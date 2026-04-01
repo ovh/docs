@@ -1,7 +1,7 @@
 ---
 title: Was tun bei dem Fehler "Dies ist keine sichere Verbindung"?
 excerpt: Erfahren Sie hier, wie Sie bei sicherheitsrelevanten Fehlermeldungen auf Ihrer Website vorgehen
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

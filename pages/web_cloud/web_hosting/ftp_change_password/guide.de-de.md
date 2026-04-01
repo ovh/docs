@@ -1,7 +1,7 @@
 ---
 title: "Passwort eines FTP-Benutzers ändern"
 excerpt: "Erfahren Sie hier, wie Sie das Passwort eines auf Ihrem OVHcloud Webhosting erstellten FTP-Benutzers ändern"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -55,7 +55,7 @@ Dieser Zugang erlaubt unter anderem [Ihre Website online zu stellen](/pages/web_
 
 > [!primary]
 >
-> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung lesen Sie die Anleitung „[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account_and_service_management/account_information/manage-ovh-password)".
+> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung lesen Sie die Anleitung "[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account_and_service_management/account_information/manage-ovh-password)".
 
 Je nach Ihrem [OVHcloud Webhosting](/links/web/hosting) erfolgt die Änderung des Passworts Ihres FTP-Benutzers auf zwei verschiedene Weisen.
 

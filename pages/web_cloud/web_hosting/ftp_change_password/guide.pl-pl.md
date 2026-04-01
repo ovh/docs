@@ -1,7 +1,7 @@
 ---
 title: "Zmiana hasła do konta FTP"
 excerpt: "Dowiedz się, jak zmienić hasło dla użytkownika FTP utworzonego na Twoim hostingu"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -56,7 +56,7 @@ W szczególności dostęp ten umożliwia [umieszczenie strony w Internecie](/pag
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z przewodnikiem „[Tworzenie i zarządzanie hasłem do konta](/pages/account_and_service_management/account_information/manage-ovh-password)".
+> Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z przewodnikiem "[Tworzenie i zarządzanie hasłem do konta](/pages/account_and_service_management/account_information/manage-ovh-password)".
 
 W zależności od pakietu [hostingowego OVHcloud](/links/web/hosting) zmiana hasła do konta FTP odbywa się na dwa różne sposoby.
 

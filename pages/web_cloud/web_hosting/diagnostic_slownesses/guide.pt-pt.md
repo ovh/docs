@@ -146,7 +146,7 @@ Se utiliza uma base de dados numa oferta **Web Cloud Databases**, consulte o nos
 
 Se a ligação for bem-sucedida, poderá aceder à seguinte interface:
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

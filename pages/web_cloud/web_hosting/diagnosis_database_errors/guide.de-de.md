@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Datenbankfehler beheben"
 excerpt: "Erfahren Sie hier, wie Sie Fehler in Zusammenhang mit Datenbanken beheben"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -77,7 +77,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 /// details | Cluster und Filer Ihres Webhostings finden
 
-Lesen Sie unsere Anleitung „[Cluster und Filer Ihres Webhostings ermitteln](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
+Lesen Sie unsere Anleitung "[Cluster und Filer Ihres Webhostings ermitteln](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 ///
 
@@ -100,7 +100,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 /// details | Den Server Ihrer Webhosting-Datenbank finden
 
-Lesen Sie unsere Anleitung „[Den Server Ihrer Datenbank ermitteln](/pages/web_cloud/web_hosting/sql_find_server)".
+Lesen Sie unsere Anleitung "[Den Server Ihrer Datenbank ermitteln](/pages/web_cloud/web_hosting/sql_find_server)".
 
 ///
 
@@ -244,7 +244,7 @@ Um die Quota neu zu berechnen, klicken Sie auf die Tabs, um die **3** Schritte n
 
 #### Methode 4: Ihre Datenbank optimieren
 
-Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung „[Konfigurieren Ihres Datenbankservers](/pages/web_cloud/web_cloud_databases/configure-database-server#ihre-datenbanken-optimieren)".
+Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung "[Konfigurieren Ihres Datenbankservers](/pages/web_cloud/web_cloud_databases/configure-database-server#ihre-datenbanken-optimieren)".
 
 Um die Quota neu zu berechnen, klicken Sie auf die Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
@@ -295,10 +295,10 @@ Um die [RAM-Kapazität](/pages/web_cloud/web_cloud_databases/configure-database-
 >
 > Diese Erweiterung des RAM funktioniert nur bei einer Web Cloud Databases, die nicht Teil eines Performance Webhostings ist. Wenn Sie die RAM-Kapazität einer in den [Performance Angeboten](/links/web/hosting-performance-offer) enthaltenen Datenbank erhöhen möchten, müssen Sie diese zuerst abtrennen.
 >
-> Lesen Sie dazu unsere Anleitung „[Eine Web Cloud Databases von Ihrem Webhosting abtrennen](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
+> Lesen Sie dazu unsere Anleitung "[Eine Web Cloud Databases von Ihrem Webhosting abtrennen](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
 >
 
-Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung „[Ihren Datenbankserver konfigurieren](/pages/web_cloud/web_cloud_databases/configure-database-server#ihre-datenbanken-optimieren)" befolgen.
+Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung "[Ihren Datenbankserver konfigurieren](/pages/web_cloud/web_cloud_databases/configure-database-server#ihre-datenbanken-optimieren)" befolgen.
 
 > [!primary]
 >
@@ -340,7 +340,7 @@ Kontaktieren Sie gegebenenfalls unsere [Community](/links/community) oder einen 
 
 > [!primary]
 >
-> **Welche Elemente im Importskript meiner Datenbank können einen Fehler „#1044 - Access denied for user to database" verursachen?**
+> **Welche Elemente im Importskript meiner Datenbank können einen Fehler "#1044 - Access denied for user to database" verursachen?**
 
 Sie können keinen **Trigger** im Importskript Ihrer Datenbank verwenden. Importieren Sie in diesem Fall Ihre Datenbank auf einen [Web Cloud Databases Dienst](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

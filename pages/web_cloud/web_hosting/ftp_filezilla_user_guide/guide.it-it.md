@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come utilizzare FileZilla"
 excerpt: "Questa guida ti mostra come accedere allo spazio di storage dell’hosting Web OVHcloud e gestire i dati in esso contenuti grazie al software FileZilla"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

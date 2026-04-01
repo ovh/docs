@@ -1,7 +1,7 @@
 ---
 title: "Como alterar a palavra-passe de um CMS"
 excerpt: "Saiba como alterar a palavra-passe de administrador do seu CMS diretamente através da interface de administração do CMS ou utilizando o phpMyAdmin a partir da Área de Cliente OVHcloud"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objetivo

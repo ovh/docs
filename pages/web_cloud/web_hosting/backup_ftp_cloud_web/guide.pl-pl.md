@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie i pobieranie kopii zapasowej przestrzeni FTP na hostingu Cloud Web"
 excerpt: "Dowiedz się, jak pobrać kopię zapasową przestrzeni FTP Twojego hostingu Cloud Web"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie

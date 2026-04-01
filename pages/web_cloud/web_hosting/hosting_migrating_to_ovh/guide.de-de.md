@@ -1,7 +1,7 @@
 ---
 title: "Migration Ihrer Website und zugehörigen Dienste zu OVHcloud"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website, Ihren Domainnamen, Ihre Datenbank und E-Mails ohne Dienstunterbrechung zu OVHcloud migrieren"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Ziel
@@ -64,9 +64,9 @@ Diese Anleitung ist derart gestaltet, die Dauer einer möglichen Unterbrechung z
 
 Mehrere [OVHcloud Shared Hosting Angebote](/links/web/hosting) enthalten "[MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)" E-Mail-Dienste. Mit diesem E-Mail-Angebot können E-Mail-Accounts mit jeweils maximal 5 GB Speicherplatz erstellt werden. Wählen Sie aus den unten stehenden Hosting-Angeboten eines aus, das den Anforderungen Ihrer Website an PHP-Version, SQL-Version, Anzahl der benötigten E-Mail-Accounts, sowie der Größe der zu migrierenden Website entspricht:
 
-- Hosting [Basic](/links/web/hosting-personal-offer) mit **10 "MX Plan E-Mail-Accounts**
-- Hosting [Pro](/links/web/hosting-professional-offer) mit **100 "MX Plan E-Mail-Accounts** (für gewerbliche Webseiten)
-- Hosting [Performance](/links/web/hosting-performance-offer) mit **1000 "MX Plan E-Mail-Accounts** (skalierbare dedizierte Ressourcen)
+- Hosting [Basic](/links/web/hosting-personal-offer) mit **10 MX Plan E-Mail-Accounts**
+- Hosting [Pro](/links/web/hosting-professional-offer) mit **100 MX Plan E-Mail-Accounts** (für gewerbliche Webseiten)
+- Hosting [Performance](/links/web/hosting-performance-offer) mit **1000 MX Plan E-Mail-Accounts** (skalierbare dedizierte Ressourcen)
 - Hosting [Cloud Web](/links/web/hosting-cloud-web-offer) mit **200 E-Mail-Accounts** (für Anwendungsentwickler)
 
 Wenn Sie sich für ein passendes Webhosting-Angebot entschieden haben, klicken Sie auf den Button `Bestellen`{.action} auf unserer Webseite. Folgen Sie den Bestellschritten, aber **leiten Sie dabei noch nicht den Transfer Ihres Domainnamens ein**. (Diese Aktion wird in Teil 10 dieser Anleitung ausgeführt.)
@@ -105,7 +105,7 @@ Sobald die DNS-Zone eingerichtet ist, kann sie zur Verwendung mit dem Webhosting
 
 Fügen Sie folgende Einträge hinzu, sofern diese nicht existieren:
 
-**Beispiel** (für die Domain „domain.tld“):
+**Beispiel** (für die Domain "domain.tld“):
 
 |Domain|Datensatztyp|Priorität|Ziel|
 |---|---|---|---|
@@ -155,7 +155,7 @@ Ersetzen Sie hierzu die Verbindungsdaten Ihrer alten Datenbank mit denen Ihrer n
 > Wenn Sie ein Content Management System (CMS) wie WordPress, Joomla!, Drupal oder PrestaShop verwenden, finden Sie die Informationen zur Datenbank in deren Konfigurationsdateien. Sie finden Details hierzu in **Teil 2** der Anleitung "[Änderung des Passworts einer Datenbank](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-Deklarieren und authorisieren Ihren externen Domainnamen auf Ihrem OVHcloud Webhosting mithilfe der Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“. Geben Sie den Namen des Ordners, den Sie zu Beginn von [Teil 4](#step4) ausgewählt haben, als Wurzelverzeichnis an. Zur Erinnerung: Es handelt sich um den Ordner im FTP-Speicherplatz, in den Sie Ihre Webseiten-Dateien abgelegt haben.
+Deklarieren und authorisieren Ihren externen Domainnamen auf Ihrem OVHcloud Webhosting mithilfe der Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“. Geben Sie den Namen des Ordners, den Sie zu Beginn von [Teil 4](#step4) ausgewählt haben, als Wurzelverzeichnis an. Zur Erinnerung: Es handelt sich um den Ordner im FTP-Speicherplatz, in den Sie Ihre Webseiten-Dateien abgelegt haben.
 
 > [!warning]
 >
@@ -225,7 +225,7 @@ Wiederholen Sie den Vorgang für alle Ihre E-Mail-Accounts.
 > Wenn Ihre E-Mail-Accounts als "POP" ohne Aufbewahrung von E-Mail-Kopien auf Ihrem E-Mail-Server konfiguriert sind oder wenn Sie E-Mails haben, die nur lokal auf Ihrem Gerät gespeichert sind, kommt nur **Option 2** in Frage.
 >
 
-**Option 2**: Backup des Inhalts Ihrer E-Mail-Accounts mithilfe einer E-Mail-Software (Outlook, Mac Mail, etc.) durchführen, Ihr E-Mail-Programm neu einrichten und das Backup in Ihre neuen OVHcloud E-Mail-Accounts importieren. Weitere Informationen finden Sie in unserer Anleitung „[Ihre E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)“.
+**Option 2**: Backup des Inhalts Ihrer E-Mail-Accounts mithilfe einer E-Mail-Software (Outlook, Mac Mail, etc.) durchführen, Ihr E-Mail-Programm neu einrichten und das Backup in Ihre neuen OVHcloud E-Mail-Accounts importieren. Weitere Informationen finden Sie in unserer Anleitung "[Ihre E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)“.
 
 ### 8 - Ihre E-Mail-Software rekonfigurieren <a name="step8"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to use FileZilla"
 excerpt: "Find out how to log in to your OVHcloud Web Hosting plan’s storage space, and manage the data stored on it, using FileZilla software"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

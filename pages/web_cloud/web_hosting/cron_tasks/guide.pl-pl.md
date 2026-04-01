@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie automatycznych zadań (CRON) na twoim hostingu"
 excerpt: "Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -37,7 +37,7 @@ Na twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [„Sprawdź również"](#go-further).
+> Oddajemy w twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further).
 >
 
 ## Wymagania początkowe

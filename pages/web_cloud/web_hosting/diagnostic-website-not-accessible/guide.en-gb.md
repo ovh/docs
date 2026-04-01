@@ -1,7 +1,7 @@
 ---
 title: What do I do if my website is down?
 excerpt: How to diagnose the causes of inaccessibility of your web site
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

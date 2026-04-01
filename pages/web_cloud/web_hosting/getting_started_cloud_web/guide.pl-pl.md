@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z hostingiem Cloud Web"
 excerpt: "Dowiedz się, jak rozpocząć korzystanie z hostingu Cloud Web"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie
@@ -90,7 +90,7 @@ Aby sprawdzić, czy w ramach hostingu Cloud Web dysponujesz 2 vCores, kliknij na
 
 Jeśli chcesz wdrożyć kilka projektów w różnych środowiskach (na przykład: dewelopment, testy lub produkcja), wprowadź zmienne, aby kod mógł odpowiednio działać. W tym celu Cloud Web oferuje możliwość zdefiniowania zmiennych środowiskowych, do których ma dostęp kod Twojej strony WWW lub aplikacji internetowej.
 
-Dzięki temu nie jest na przykład konieczne określanie pliku „.env" we frameworku PHP Laravel, jak wskazuje dokumentacja: <https://laravel.com/docs/master/configuration>.
+Dzięki temu nie jest na przykład konieczne określanie pliku ".env" we frameworku PHP Laravel, jak wskazuje dokumentacja: <https://laravel.com/docs/master/configuration>.
 
 Aby dodać zmienną środowiskową, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
@@ -133,7 +133,7 @@ http.createServer(function(request, response) {
 }).listen(80);
 ```
 
-Pamiętaj, aby zastąpić informację „DB_DATABASE", zapisaną w powyższych skryptach, odpowiednią zmienną środowiskową.
+Pamiętaj, aby zastąpić informację "DB_DATABASE", zapisaną w powyższych skryptach, odpowiednią zmienną środowiskową.
 
 ### 4 - Konfiguracja dodatkowych domen jako MultiSite (opcjonalnie)
 
@@ -172,7 +172,7 @@ Aby zainstalować Twój projekt, masz do dyspozycji dwie możliwości. Powtarzaj
 
 #### 1. Użycie modułów CMS OVHcloud
 
-W tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud proponuje cztery moduły CMS, o których możesz dowiedzieć się więcej na stronie [„Twoja strona WWW dzięki modułom CMS"](/links/web/hosting-website).
+W tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud proponuje cztery moduły CMS, o których możesz dowiedzieć się więcej na stronie ["Twoja strona WWW dzięki modułom CMS"](/links/web/hosting-website).
 
 Jeśli decydujesz się na skorzystanie z modułów CMS OVHcloud, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
@@ -189,7 +189,7 @@ Jeśli decydujesz się na skorzystanie z modułów CMS OVHcloud, kliknij na poni
 >>
 > **Krok 3**
 >>
->> Będziesz mógł wówczas rozpocząć instalację w trybie „podstawowym" (bez personalizacji) lub „zaawansowanym" (z możliwością personalizacji niektórych elementów).
+>> Będziesz mógł wówczas rozpocząć instalację w trybie "podstawowym" (bez personalizacji) lub "zaawansowanym" (z możliwością personalizacji niektórych elementów).
 
 Jeśli chcesz uzyskać więcej informacji o modułach CMS OVHcloud, zapoznaj się z dokumentacją: [Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

@@ -1,7 +1,7 @@
 ---
 title: "Administratorpasswort eines CMS ändern"
 excerpt: "Erfahren Sie hier, wie Sie das Administratorpasswort Ihres CMS über dessen Verwaltungsinterface oder mit phpMyAdmin im OVHcloud Kundencenter ändern können"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Ziel
@@ -12,7 +12,7 @@ Sie haben den Zugriff auf Ihr Verwaltungsinterface von WordPress, PrestaShop, Jo
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting Angebot](/links/web/hosting), mit dem Sie ein 1-Klick-Modul installieren können.
+- Sie verfügen über ein [Webhosting-Angebot](/links/web/hosting), mit dem Sie ein 1-Klick-Modul installieren können.
 - Sie haben ein 1-Klick-Modul auf Ihrem Webhosting erstellt. (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules).)
 
 <!-- CP-NAV-START:web-hosting -->
@@ -53,7 +53,7 @@ Sie haben noch Zugriff auf Ihre E-Mails und das Login-Interface? Diese Methode i
 > [!tabs]
 > WordPress
 >>
->> Um Ihr WordPress-Administratorpasswort über die Option "Passwort vergessen" zu ändern, folgen Sie den Schritten im Abschnitt „[Through the automatic emailer](https://wordpress.org/documentation/article/reset-your-password/#through-the-automatic-emailer)“ der offiziellen WordPress-Dokumentation.
+>> Um Ihr WordPress-Administratorpasswort über die Option "Passwort vergessen" zu ändern, folgen Sie den Schritten im Abschnitt "[Through the automatic emailer](https://wordpress.org/documentation/article/reset-your-password/#through-the-automatic-emailer)“ der offiziellen WordPress-Dokumentation.
 >>
 > PrestaShop
 >>
@@ -61,16 +61,16 @@ Sie haben noch Zugriff auf Ihre E-Mails und das Login-Interface? Diese Methode i
 >>
 > Joomla!
 >>
->> Um Ihr Joomla! Administratorpasswort über die Option "Passwort vergessen" zu ändern, folgen Sie den Schritten im Abschnitt „[Frontend](https://docs.joomla.org/Resetting_a_user_password/en)“ der offiziellen Joomla! Dokumentation.
+>> Um Ihr Joomla! Administratorpasswort über die Option "Passwort vergessen" zu ändern, folgen Sie den Schritten im Abschnitt "[Frontend](https://docs.joomla.org/Resetting_a_user_password/en)“ der offiziellen Joomla! Dokumentation.
 >>
 > Drupal
 >>
 >> Um Ihr Drupal Administratorpasswort über die Option "Passwort vergessen" zu ändern, folgen Sie diesen Schritten:
 >>
->> - Navigieren Sie zum Login-interface.
->> - Klicken Sie auf den Link „Neues Passwort anfordern“.
+>> - Navigieren Sie zum Login-Interface.
+>> - Klicken Sie auf den Link "Neues Passwort anfordern“.
 >> - Geben Sie im angezeigten Dialogfeld entweder den Benutzernamen oder die E-Mail-Adresse ein, die dem Administrator-Account zugeordnet ist.
->> - Klicken Sie auf „Neues Passwort senden“ oder „E-Mail-Adresse für neues Passwort“.
+>> - Klicken Sie auf "Neues Passwort senden“ oder "E-Mail-Adresse für neues Passwort“.
 >> - Öffnen Sie die empfangene E-Mail und klicken Sie auf den bereitgestellten Link.
 >> - Geben Sie Ihr neues Passwort ein und bestätigen Sie es.
 >> - Kehren Sie zur Drupal-Anmeldeseite zurück und melden Sie sich mit dem neuen Passwort an.
@@ -81,7 +81,7 @@ Sie haben Zugriff auf das Verwaltungsinterface des CMS und kennen Ihr aktuelles 
 
 > [!tabs]
 > WordPress
->> Um Ihr WordPress-Administratorpasswort über das Verwaltungsinterface des CMS zu ändern, folgen Sie den Schritten im Abschnitt „[To Change Your Password](https://wordpress.org/documentation/article/reset-your-password/#to-change-your-password)“ der offiziellen WordPress-Dokumentation.
+>> Um Ihr WordPress-Administratorpasswort über das Verwaltungsinterface des CMS zu ändern, folgen Sie den Schritten im Abschnitt "[To Change Your Password](https://wordpress.org/documentation/article/reset-your-password/#to-change-your-password)“ der offiziellen WordPress-Dokumentation.
 >>
 > PrestaShop
 >>
@@ -89,7 +89,7 @@ Sie haben Zugriff auf das Verwaltungsinterface des CMS und kennen Ihr aktuelles 
 >>
 > Joomla!
 >>
->> Um Ihr Joomla! Administratorpasswort über das Administrator-Interface zu ändern, folgen Sie den Schritten im Abschnitt „[Backend](https://docs.joomla.org/Resetting_a_user_password/en)“ der offiziellen Joomla! Dokumentation.
+>> Um Ihr Joomla! Administratorpasswort über das Administrator-Interface zu ändern, folgen Sie den Schritten im Abschnitt "[Backend](https://docs.joomla.org/Resetting_a_user_password/en)“ der offiziellen Joomla! Dokumentation.
 >>
 > Drupal
 >>
@@ -123,15 +123,15 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > WordPress
 >>
->> Folgen Sie den Schritten im Abschnitt „[Through phpMyAdmin](https://wordpress.org/documentation/article/reset-your-password/#through-phpmyadmin)“ der offiziellen WordPress-Dokumentation.
+>> Folgen Sie den Schritten im Abschnitt "[Through phpMyAdmin](https://wordpress.org/documentation/article/reset-your-password/#through-phpmyadmin)“ der offiziellen WordPress-Dokumentation.
 >>
 > PrestaShop
 >>
->> Folgen Sie den Schritten im Abschnitt „[You do not have access to your e-mail address](https://help-center.prestashop.com/hc/en-us/articles/10799006732818-Recover-your-admin-password)“ der offiziellen PrestaShop Dokumentation.
+>> Folgen Sie den Schritten im Abschnitt "[You do not have access to your e-mail address](https://help-center.prestashop.com/hc/en-us/articles/10799006732818-Recover-your-admin-password)“ der offiziellen PrestaShop Dokumentation.
 >>
 > Joomla!
 >>
->> Folgen Sie den Schritten im Abschnitt „[Resetting in phpMyAdmin](https://docs.joomla.org/Resetting_a_user_password/en)“ der offiziellen Joomla! Dokumentation.
+>> Folgen Sie den Schritten im Abschnitt "[Resetting in phpMyAdmin](https://docs.joomla.org/Resetting_a_user_password/en)“ der offiziellen Joomla! Dokumentation.
 >>
 > Drupal
 >>

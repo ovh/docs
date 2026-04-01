@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores más frecuentes asociados a las bases de datos"
 excerpt: "Diagnóstico de los errores más comunes relacionados con las bases de datos"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sitio web o su [área de cliente OVHcloud](/links/manager), así como en la interfaz [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
+El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sitio web o su [área de cliente OVHcloud](/links/manager), así como en la interfaz [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
 
 **Descubra cómo solucionar los errores relacionados con las bases de datos de los alojamientos compartidos de OVHcloud.**
 
@@ -95,7 +95,7 @@ Haga clic en las pestañas para ver sucesivamente cada uno de los **2** pasos.
 >>
 > **Paso 2**
 >>
->> Localice `Nombre del host` en el apartado `SQL` de la sección `Información de conexión`.
+>> Localice `Nombre del host` en el apartado `SQL` de la sección `Datos de conexión`.
 
 ///
 
@@ -116,7 +116,7 @@ Conéctese al espacio de almacenamiento de archivos de su alojamiento mediante [
 > Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilizado para crear su sitio web o con un [proveedor especializado](/links/partner). No podremos asistirle en este asunto.
 >
 
-Compruebe la coincidencia **exacta** entre los identificadores de conexión a [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceso-a-la-interfaz-phpmyadmin) y los del fichero de configuración de su sitio web.
+Compruebe la coincidencia **exacta** entre los identificadores de conexión a [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceso-a-la-interfaz-phpmyadmin) y los del fichero de configuración de su sitio web.
 
 Cambie, si es necesario, la [contraseña de su base de datos](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -196,7 +196,7 @@ Para realizar este cambio, haga clic en las pestañas para ver sucesivamente cad
 >>
 > **Paso 2**
 >>
->> Haga clic en el botón `...`{.action} en el apartado `Producto` situado a la derecha de su pantalla.
+>> Haga clic en el botón `...`{.action} en el apartado `Solución` situado a la derecha de su pantalla.
 >>
 > **Paso 3**
 >>
@@ -219,7 +219,7 @@ También puede migrar sus datos a una nueva base de datos:
 
 #### Método 3: eliminar datos innecesarios
 
-Una vez realizada la [copia de seguridad de su base de datos](/pages/web_cloud/web_hosting/sql_database_export), conéctese a su interfaz [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin) para eliminar los datos innecesarios con los comandos Drop, Delete y Truncate.
+Una vez realizada la [copia de seguridad de su base de datos](/pages/web_cloud/web_hosting/sql_database_export), conéctese a su interfaz [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin) para eliminar los datos innecesarios con los comandos Drop, Delete y Truncate.
 
 Para recalcular el espacio utilizado, haga clic en las pestañas para ver sucesivamente cada uno de los **3** pasos.
 
@@ -362,7 +362,7 @@ USE `Database-Name`;
 #### "MySQL server has gone away"
 
 >
-> **"ERROR MySQL server has gone away"**
+> **"ERROR 2006 : MySQL server has gone away"**
 >
 
 Este mensaje de error aparece durante [la importación de una base de datos](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#2-importar-una-copia-de-seguridad-local) en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). La mayor parte del tiempo se debe a la cantidad excesiva de datos que se van a importar o a la falta de optimización de las peticiones SQL en el script de importación.
@@ -390,7 +390,7 @@ Para resolver esta anomalía, puede:
 
 - [Optimice su base de datos](/pages/web_cloud/web_cloud_databases/configure-database-server#gestionar-las-bases-de-datos) y luego repita las operaciones de exportación/importación.
 
-### No se ha podido acceder a PhpMyAdmin
+### No se ha podido acceder a phpMyAdmin
 
 #### "Access denied for user"
 
@@ -398,7 +398,7 @@ Para resolver esta anomalía, puede:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Este mensaje de error puede aparecer al conectarse a la base de datos por [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin). Indica que los identificadores introducidos son incorrectos.
+Este mensaje de error puede aparecer al conectarse a la base de datos por [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin). Indica que los identificadores introducidos son incorrectos.
 
 ![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
@@ -414,7 +414,7 @@ El número máximo de conexiones activas para las bases de datos entregadas con 
 
 Este número es de **200** para las bases de servidores [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (Puede cambiar este parámetro en la sección `Configuración`{.action} del servidor de la base de datos).
 
-Este mensaje aparece durante la [conexión a PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin) cuando se supera el número máximo de conexiones.
+Este mensaje aparece durante la [conexión a phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin) cuando se supera el número máximo de conexiones.
 
 En ese caso, deberá [optimizar las bases de datos](/pages/web_cloud/web_cloud_databases/configure-database-server#gestionar-las-bases-de-datos) para reducir el número de conexiones activas.
 
@@ -429,7 +429,7 @@ En ese caso, deberá [optimizar las bases de datos](/pages/web_cloud/web_cloud_d
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Este mensaje de error aparece durante la [conexión a PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#procedimiento) cuando el nombre del servidor introducido es incorrecto.
+Este mensaje de error aparece durante la [conexión a phpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#procedimiento) cuando el nombre del servidor introducido es incorrecto.
 
 ![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
@@ -467,7 +467,7 @@ Haga clic en las pestañas para ver sucesivamente cada uno de los **2** pasos.
 >>
 > **Paso 2**
 >>
->> En la pestaña `Información general`{.action}, el nombre del servidor a introducir se encuentra en la sección `Información de conexión`, apartado `SQL`, mención `Nombre del host`.
+>> En la pestaña `Información general`{.action}, el nombre del servidor a introducir se encuentra en la sección `Datos de conexión`, apartado `SQL`, mención `Nombre del host`.
 
 ///
 

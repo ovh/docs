@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores recurrentes durante el uso de un programa FTP"
 excerpt: "Encuentre aquí las anomalías más frecuentes asociadas a su programa FTP"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objetivo

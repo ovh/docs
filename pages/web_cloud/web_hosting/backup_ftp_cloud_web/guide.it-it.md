@@ -1,7 +1,7 @@
 ---
 title: "Recuperare il backup dello spazio FTP del tuo hosting Cloud Web"
 excerpt: "Questa guida ti mostra come recuperare un backup dello spazio FTP del tuo hosting Cloud Web"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Obiettivo

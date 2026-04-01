@@ -142,7 +142,7 @@ Si utiliza una base de datos en una solución **Web Cloud Databases**, consulte 
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

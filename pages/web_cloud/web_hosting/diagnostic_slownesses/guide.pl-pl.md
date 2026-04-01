@@ -146,7 +146,7 @@ Jeśli korzystasz z bazy danych w ofercie **Web Cloud Databases**, zapoznaj się
 
 Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

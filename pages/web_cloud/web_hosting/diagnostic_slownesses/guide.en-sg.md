@@ -143,7 +143,7 @@ If you are using a database of a **Web Cloud Databases** solution, please refer 
 
 If the connection is successful, you will land on the following interface:
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

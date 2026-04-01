@@ -1,7 +1,7 @@
 ---
 title: "Alterar a palavra-passe de um utilizador FTP"
 excerpt: "Descubra como alterar a palavra-passe de um utilizador FTP criado num alojamento web da OVHcloud"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

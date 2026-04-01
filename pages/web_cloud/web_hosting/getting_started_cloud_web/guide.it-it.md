@@ -1,7 +1,7 @@
 ---
 title: "Iniziare a utilizzare un hosting Cloud Web"
 excerpt: "Questa guida ti mostra come eseguire le prime operazioni su un Cloud Web"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Obiettivo

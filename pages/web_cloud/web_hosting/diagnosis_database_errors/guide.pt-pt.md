@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros mais frequentes associados às bases de dados"
 excerpt: "Diagnosticar os casos mais comuns de erros associados às bases de dados"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-A utilização das suas bases de dados pode dar origem a um certo número de anomalias no seu site ou na sua [Área de Cliente OVHcloud](/links/manager), bem como na interface [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
+A utilização das suas bases de dados pode dar origem a um certo número de anomalias no seu site ou na sua [Área de Cliente OVHcloud](/links/manager), bem como na interface [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
 
 **Descubra como resolver os erros associados às bases de dados nos alojamentos partilhados OVHcloud.**
 
@@ -95,7 +95,7 @@ Clique nos separadores abaixo para visualizar sucessivamente cada um dos **2** p
 >>
 > **Passo 2**
 >>
->> Localize o `Nome do host` na secção `SQL` de `Informações de ligação`.
+>> Localize o `Nome do host` na secção `SQL` de `Informações da ligação`.
 
 ///
 
@@ -116,7 +116,7 @@ Ligue-se ao espaço de armazenamento de ficheiros com [FTP](/pages/web_cloud/web
 > Recomendamos que contacte o editor do [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilizado para criar o seu site ou que recorra a um [fornecedor especializado](/links/partner) em caso de necessidade. A OVHcloud não lhe poderá fornecer assistência.
 >
 
-De seguida, verifique a correspondência **exata** entre os identificadores de ligação ao [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin) e os do ficheiro de configuração do seu site.
+De seguida, verifique a correspondência **exata** entre os identificadores de ligação ao [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin) e os do ficheiro de configuração do seu site.
 
 Altere, se necessário, a [palavra-passe da sua base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -196,7 +196,7 @@ Para efetuar esta alteração, clique nos separadores abaixo para visualizar suc
 >>
 > **Passo 2**
 >>
->> Clique no botão `...`{.action} na rubrica `Oferta`, à direita do seu ecrã.
+>> Clique no botão `...`{.action} na rubrica `Plano`, à direita do seu ecrã.
 >>
 > **Passo 3**
 >>
@@ -219,7 +219,7 @@ Também pode migrar os seus dados para uma nova base:
 
 #### Método 3: eliminar dados desnecessários
 
-Depois de realizar um [backup da sua base de dados](/pages/web_cloud/web_hosting/sql_database_export), aceda à interface [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin) para eliminar os dados inúteis graças aos comandos Drop, Delete e Truncate.
+Depois de realizar um [backup da sua base de dados](/pages/web_cloud/web_hosting/sql_database_export), aceda à interface [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin) para eliminar os dados inúteis graças aos comandos Drop, Delete e Truncate.
 
 Para recalcular o limite, clique nos separadores abaixo para visualizar sucessivamente cada um dos **3** passos.
 
@@ -390,7 +390,7 @@ Para resolver esta anomalia, pode:
 
 - [Otimize a sua base de dados](/pages/web_cloud/web_cloud_databases/configure-database-server#otimizar-as-bases-de-dados) e depois repita as operações de exportação/importação.
 
-### Não é possível aceder ao PhpMyAdmin
+### Não é possível aceder ao phpMyAdmin
 
 #### "Access denied for user"
 
@@ -398,7 +398,7 @@ Para resolver esta anomalia, pode:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Esta mensagem de erro pode aparecer no acesso à sua base de dados por [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin). Indica que os dados de identificação introduzidos estão errados.
+Esta mensagem de erro pode aparecer no acesso à sua base de dados por [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin). Indica que os dados de identificação introduzidos estão errados.
 
 ![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
@@ -414,7 +414,7 @@ O número máximo de ligações ativas para as bases de dados entregues com os a
 
 Este número é de **200** para as bases dos servidores [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (Este parâmetro pode ser modificado na secção `Configuração`{.action} do seu servidor de base de dados).
 
-Esta mensagem aparece na [ligação ao PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin) quando o número máximo de ligações é ultrapassado.
+Esta mensagem aparece na [ligação ao phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin) quando o número máximo de ligações é ultrapassado.
 
 Nesta situação, deverá [otimizar as suas bases de dados](/pages/web_cloud/web_cloud_databases/configure-database-server#otimizar-as-bases-de-dados) de forma a reduzir o número de ligações ativas.
 
@@ -429,7 +429,7 @@ Nesta situação, deverá [otimizar as suas bases de dados](/pages/web_cloud/web
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Esta mensagem de erro aparece na [ligação ao PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#instrucoes) quando o nome do servidor indicado está incorreto.
+Esta mensagem de erro aparece na [ligação ao phpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#instrucoes) quando o nome do servidor indicado está incorreto.
 
 ![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
@@ -467,7 +467,7 @@ Clique nos separadores abaixo para visualizar sucessivamente cada um dos **2** p
 >>
 > **Passo 2**
 >>
->> No separador `Informações gerais`{.action}, o nome do servidor a introduzir está inscrito na secção `Informações de ligação`, parte `SQL`, rubrica `Nome do host`.
+>> No separador `Informações gerais`{.action}, o nome do servidor a introduzir está inscrito na secção `Informações da ligação`, parte `SQL`, rubrica `Nome do host`.
 
 ///
 

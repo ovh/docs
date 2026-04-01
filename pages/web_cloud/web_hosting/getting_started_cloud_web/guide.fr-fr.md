@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un hébergement Cloud Web"
 excerpt: "Découvrez comment bien débuter avec un hébergement Cloud Web"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objectif

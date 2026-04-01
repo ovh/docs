@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Verwendung von FileZilla"
 excerpt: "Erfahren Sie, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden und die darin enthaltenen Daten mithilfe der FileZilla Software verwalten"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

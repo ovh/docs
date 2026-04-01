@@ -1,7 +1,7 @@
 ---
 title: "Jak zmienić hasło administratora CMS"
 excerpt: "Dowiedz się, jak zmienić hasło administratora Twojego CMS bezpośrednio w interfejsie zarządzania CMS lub za pomocą narzędzia phpMyAdmin w Panelu klienta OVHcloud"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: "Häufige FTP-Probleme beheben"
 excerpt: "Diese Anleitung erklärt, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Ziel 
@@ -76,7 +76,7 @@ Um den verbleibenden Speicherplatz auf Ihrem Webhosting zu überprüfen, klicken
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
-### Ich kann meine Dateien nicht auf den FTP Server übertragen
+### Ich kann meine Dateien nicht auf den FTP-Server übertragen
 
 Überprüfen Sie, dass Ihr FTP-Programm im “Passivmodus“ (Konfigurationsmodus eines FTP-Servers, in dem der Server den Verbindungsport bestimmt) verbunden ist.
 
@@ -92,7 +92,7 @@ Dieser Link ist standardmäßig auf den Shared Hosting Paketen von OVHcloud inst
 
 ![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
-Wenn Sie die Funktion “[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“ nicht für Ihre Website verwendet haben, müssen Sie sich [mit dem FTP-Speicherplatz verbinden](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings einloggen, um die Seite „Site under construction“ manuell zu löschen.
+Wenn Sie die Funktion “[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“ nicht für Ihre Website verwendet haben, müssen Sie sich [mit dem FTP-Speicherplatz verbinden](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings einloggen, um die Seite "Site under construction“ manuell zu löschen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

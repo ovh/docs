@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting recurring errors when using FTP software"
 excerpt: "Find out how to resolve the most common FTP software related issues"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objective

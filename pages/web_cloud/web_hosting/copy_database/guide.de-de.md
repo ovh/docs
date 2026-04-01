@@ -1,7 +1,7 @@
 ---
 title: "Inhalt einer Datenbank in eine andere duplizieren"
 excerpt: "Erfahren Sie hier, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Ziel
 
-Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies is möglich innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
+Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies ist möglich innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 **Diese Anleitung erklärt, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren.**
 
@@ -96,8 +96,8 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >> >
 >> > Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Fenster, um eine neue Datenbank zu bestellen. Denken Sie daran, sie zu aktivieren:
 >> >
->> > - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)".
->> > - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung „[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
+>> > - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung "[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)".
+>> > - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung "[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 >>
 >> - **Auswahl 1 - In eine Start SQL Datenbank kopieren**: Wählen Sie `In Datenbank kopieren`{.action}, und wählen Sie die Zieldatenbank aus der Dropdown-Liste aus.
 >> - **Auswahl 2 - In einen Web Cloud Databases Server kopieren**: Wählen Sie `In eine Web Cloud Databases kopieren`{.action}. Zwei Dropdown-Listen werden angezeigt. Klicken Sie auf die erste, um die Web Cloud Databases Lösung auszuwählen, dann auf die zweite, um die Zieldatenbank auszuwählen.
@@ -112,7 +112,7 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >>
 > **Schritt 6**
 >>
->> Der Kopiervorgang kann einige Minuten dauern. Im Tab `Aktuelle Tasks`{.action} wird eine neue Zeile für Ihre Kopie mit dem Status „Geplant" angezeigt. Wenn der Vorgang abgeschlossen ist, verschwindet die Zeile.
+>> Der Kopiervorgang kann einige Minuten dauern. Im Tab `Aktuelle Tasks`{.action} wird eine neue Zeile für Ihre Kopie mit dem Status "Geplant" angezeigt. Wenn der Vorgang abgeschlossen ist, verschwindet die Zeile.
 >>
 >> ![Aktuelle Tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
@@ -151,8 +151,8 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >> >
 >> > Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Fenster, um eine neue Datenbank zu bestellen. Denken Sie daran, sie zu aktivieren:
 >> >
->> > - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)".
->> > - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung „[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
+>> > - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung "[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)".
+>> > - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung "[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 >>
 >> - **Auswahl 1 - In eine Start SQL Datenbank kopieren**: Wählen Sie `In Datenbank kopieren`{.action}, und wählen Sie die Zieldatenbank aus der Dropdown-Liste aus.
 >> - **Auswahl 2 - In einen Web Cloud Databases Server kopieren**: Wählen Sie `In eine Web Cloud Databases kopieren`{.action}. Zwei Dropdown-Listen werden angezeigt. Klicken Sie auf die erste, um die Web Cloud Databases Lösung auszuwählen, dann auf die zweite, um die Zieldatenbank auszuwählen.
@@ -167,7 +167,7 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >>
 > **Schritt 6**
 >>
->> Der Kopiervorgang kann einige Minuten dauern. Im Tab `Aktuelle Tasks`{.action} wird eine neue Zeile für Ihre Kopie mit dem Status „Geplant" angezeigt. Wenn der Vorgang abgeschlossen ist, verschwindet die Zeile.
+>> Der Kopiervorgang kann einige Minuten dauern. Im Tab `Aktuelle Tasks`{.action} wird eine neue Zeile für Ihre Kopie mit dem Status "Geplant" angezeigt. Wenn der Vorgang abgeschlossen ist, verschwindet die Zeile.
 >>
 >> ![Aktuelle Tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 

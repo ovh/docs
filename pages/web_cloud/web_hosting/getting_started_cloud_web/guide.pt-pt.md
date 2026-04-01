@@ -1,7 +1,7 @@
 ---
 title: "Alojamento Cloud Web: primeira utilização"
 excerpt: "Saiba como começar num plano de alojamento Cloud Web"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objetivo

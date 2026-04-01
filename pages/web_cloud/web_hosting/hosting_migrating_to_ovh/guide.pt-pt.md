@@ -1,7 +1,7 @@
 ---
 title: "Migrar o seu website e os seus serviços associados para a OVHcloud"
 excerpt: "Descubra como migrar o seu website, o seu nome de domínio, a sua base de dados e os seus e-mails para a OVHcloud sem interrupção de serviços"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Objetivo

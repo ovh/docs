@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment utiliser FileZilla"
 excerpt: "Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVHcloud et gérer les données qu'il contient grâce au logiciel FileZilla"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 <style>

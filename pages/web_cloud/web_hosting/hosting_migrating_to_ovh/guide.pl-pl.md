@@ -1,7 +1,7 @@
 ---
 title: "Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud"
 excerpt: "Dowiedz się, jak migrować stronę WWW, nazwę domeny, bazę danych oraz konta e-mail do OVHcloud bez przerwy w dostępności usług"
-updated: 2026-03-26
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie
