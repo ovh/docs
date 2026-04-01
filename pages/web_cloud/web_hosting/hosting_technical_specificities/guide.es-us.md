@@ -1,7 +1,7 @@
 ---
 title: "Particularidades técnicas de los alojamientos compartidos"
 excerpt: "Descubra en esta guía diferentes informaciones y particularidades técnicas relativas a los alojamientos web"
-updated: 2023-12-08
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -13,17 +13,6 @@ Los planes de hosting de OVHcloud son compartidos. Por lo tanto, la configuraci�
 ## Requisitos
 
 - Tener contratado un [plan de hosting](/links/web/hosting) compatible.
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -38,13 +27,7 @@ Los planes de hosting de OVHcloud son compartidos. Por lo tanto, la configuraci�
 
 - Utilice el **modo pasivo** para las conexiones FTP. Asegúrese de que el script o el cliente FTP estén configurados correctamente.
 
-- Si encuentra el error de acceso "Fallo de la autenticación de conexión 530" al conectarse a su espacio de almacenamiento FTP: Asegúrese de que los datos de acceso a su espacio FTP son correctos. Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, abra la pestaña `FTP - SSH`{.action}.
-
-En él encontrará toda la información de conexión a su espacio de almacenamiento FTP, excepto la contraseña.
-
-Esto se debe a que las contraseñas no se muestran nunca, pero se pueden cambiar.
-
-Para más información, consulte nuestra guía "[Conectarse al espacio de almacenamiento FTP de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)".
+- Si encuentra el error de acceso "Fallo de la autenticación de conexión 530" al conectarse a su espacio de almacenamiento FTP, asegúrese de que los datos de acceso a su espacio FTP son correctos. Consulte nuestra guía "[Conectarse al espacio de almacenamiento FTP de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)" para encontrar toda la información de conexión a su espacio de almacenamiento FTP. Las contraseñas no se muestran nunca, pero se pueden cambiar.
 
 ### Emails <a name="emails"></a>
 
@@ -153,6 +136,8 @@ Por ejemplo, se puede utilizar la función *gethostbyaddr()* para recuperar el n
 ### Información técnica de su alojamiento web <a name="technical-infos-web-hosting"></a>
 
 Consulte y compruebe las librerías, lenguajes y versiones disponibles para su plan de hosting desde esta página: <https://webhosting-infos.hosting.ovh.net>
+
+Para conocer las especificaciones técnicas de la solución Cloud Web, acceda a la siguiente página: <https://cloudweb-infos.hosting.ovh.net/>.
 
 ### Información sobre las copias de seguridad automáticas <a name="backup"></a>
 

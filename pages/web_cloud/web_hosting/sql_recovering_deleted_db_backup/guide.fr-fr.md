@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde d'une base de données supprimée"
 excerpt: "Découvrez comment retrouver la sauvegarde d'une base de données lorsque celle-ci a été supprimée depuis votre espace client OVHcloud"
-updated: 2026-03-31
+updated: 2026-04-01
 ---
 
 ## Objectif

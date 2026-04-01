@@ -1,7 +1,7 @@
 ---
 title: "Importer une sauvegarde dans la base de données d'un hébergement web"
 excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVHcloud'
-updated: 2026-03-31
+updated: 2026-04-01
 ---
 
 ## Objectif

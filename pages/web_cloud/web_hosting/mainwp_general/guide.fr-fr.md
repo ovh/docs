@@ -1,7 +1,7 @@
 ---
 title: "Administrer plusieurs sites web WordPress avec le plugin MainWP"
 excerpt: "Découvrez comment gérer plusieurs sites web WordPress depuis un seul outil grâce au plugin MainWP"
-updated: 2026-03-31
+updated: 2026-04-01
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: "Spécificités techniques liées aux hébergements mutualisés"
 excerpt: "Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements web"
-updated: 2026-03-31
+updated: 2026-04-01
 ---
 
 ## Objectif
