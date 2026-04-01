@@ -98,7 +98,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >>
 > **Schritt 3**
 >>
->> Geben Sie im angezeigten Fenster die IP-Adresse oder Maske, die Sie autorisieren möchten, unter `IP/mask`{.action} ein und fügen Sie bei Bedarf eine Beschreibung hinzu. Legen Sie dann fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf SFTP gewähren möchten. Klicken Sie abschließend auf `Bestätigen`{.action}.
+>> Geben Sie im angezeigten Fenster die IP-Adresse oder Maske, die Sie autorisieren möchten, unter `IP / Maske`{.action} ein und fügen Sie bei Bedarf eine Beschreibung hinzu. Legen Sie dann fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf SFTP gewähren möchten. Klicken Sie abschließend auf `Bestätigen`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
@@ -149,7 +149,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >>
 > **Schritt 2**
 >>
->> Im standardmäßig angezeigten Tab **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM-Größe ändern`{.action}, um zur Bestellung für diese Änderung geleitet zu werden.
+>> Im standardmäßig angezeigten Tab **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM-Menge ändern`{.action}, um zur Bestellung für diese Änderung geleitet zu werden.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/change-the-amount-of-ram.png){.thumbnail}
 >>
@@ -287,7 +287,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >>
 > **Schritt 3**
 >>
->> Um die Version zu ändern, klicken Sie auf `Version aktualisieren`{.action}.
+>> Um die Version zu ändern, klicken Sie auf `Die Version ändern`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
 

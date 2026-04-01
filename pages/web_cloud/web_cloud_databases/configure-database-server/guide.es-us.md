@@ -92,13 +92,13 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 >>
 > **Paso 2**
 >>
->> Haga clic en la pestaña `IPs autorizadas`{.action} y, a continuación, en el botón `Añadir una dirección IP / máscara`{.action}.
+>> Haga clic en la pestaña `IP autorizadas`{.action} y, a continuación, en el botón `Añadir una dirección IP/máscara`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
 >>
 > **Paso 3**
 >>
->> En la ventana que aparece, indique en `IP/máscara`{.action} la dirección IP o la máscara que desee autorizar y, si lo desea, añada una descripción. A continuación, indique si desea autorizar el acceso únicamente a las bases de datos o también al SFTP. Por último, haga clic en `Aceptar`{.action}.
+>> En la ventana que aparece, indique en `IP/Máscara`{.action} la dirección IP o la máscara que desee autorizar y, si lo desea, añada una descripción. A continuación, indique si desea autorizar el acceso únicamente a las bases de datos o también al SFTP. Por último, haga clic en `Aceptar`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 >>
 > **Paso 2**
 >>
->> Haga clic en la pestaña `IPs autorizadas`{.action}.
+>> Haga clic en la pestaña `IP autorizadas`{.action}.
 >>
 > **Paso 3**
 >>
@@ -287,7 +287,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 >>
 > **Paso 3**
 >>
->> Para modificar esta versión, haga clic en `Modificar la versión`{.action}.
+>> Para modificar esta versión, haga clic en `Cambiar la versión`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
 

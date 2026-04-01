@@ -1,7 +1,7 @@
 ---
 title: "Risolvere gli errori ricorrenti nell'utilizzo di un software FTP"
 excerpt: "Ritrova qui le anomalie più frequenti associate al tuo software FTP"
-updated: 2025-10-20
+updated: 2026-03-31
 ---
 
 ## Obiettivo
@@ -25,7 +25,7 @@ L'utilizzo di software FTP durante la connessione al tuo [hosting Web Cloud](/li
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -41,18 +41,11 @@ Questo messaggio sul software [FileZilla](/pages/web_cloud/web_hosting/ftp_filez
 
 Se i dati che vuoi scambiare tramite questo canale non sono riservati, clicca su `OK`{.action}.
 
-In caso contrario, accedi alla sezione Web del tuo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud`{.action} e poi `Hosting`{.action}. Seleziona l'hosting interessato e clicca sulla scheda `FTP-SSH`{.action}.
-
-Se disponi di un hosting [Personale](/links/web/hosting-personal-offer), seleziona la casella `Disattivato`{.action} nella colonna `SFTP`{.action} e attendi qualche minuto.
-
-Se disponi di un hosting [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), clicca sul pulsante `...`{.action} a destra dell'utente FTP interessato e poi su `Modifica`{.action}.
-
-Scegli `SFTP`{.action} o `Attivo`{.action} (per attivare il protocollo SSH sul tuo hosting), clicca su `Continua`{.action} e infine su `Conferma`{.action}. Attendi qualche minuto.
+In caso contrario, attiva il protocollo SFTP consultando la nostra guida "[Hosting Web - Come attivare l'accesso SFTP](/pages/web_cloud/web_hosting/enable_sftp)".
 
 > [!primary]
 >
 > Per ulteriori messaggi di errore, consulta la sezione `Diagnostica` delle nostre guide [Hosting](/products/web-cloud-hosting).
->
 
 ### Ho trasferito i miei file con un software FTP, ma il mio sito non appare.
 
@@ -73,7 +66,7 @@ Per verificare lo spazio di storage rimasto sul tuo hosting, clicca sulle schede
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

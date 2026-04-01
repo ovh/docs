@@ -26,16 +26,6 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 - Tener un [plan de hosting](/links/web/hosting).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

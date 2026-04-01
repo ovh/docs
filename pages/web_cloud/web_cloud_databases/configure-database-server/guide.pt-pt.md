@@ -43,16 +43,16 @@ Os servidores de bases de dados Web Cloud Databases permitem-lhe modificar os pa
 
 ### Visualizar as informações gerais do servidor de bases de dados
 
-Clique nos separadores abaixo para ver cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Certifique-se de que está no separador `Informações gerais`{.action}.
 >>
@@ -81,24 +81,24 @@ O seu Web Cloud Databases está acessível a partir dos seus alojamentos web OVH
 
 Para aceder à sua instância Web Cloud Databases, deve indicar os endereços IP ou intervalos de IP autorizados a ligarem-se às suas bases de dados.
 
-Clique nos separadores abaixo para ver cada um dos **3** passos.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
->> Clique no separador `IPs autorizados`{.action} e, em seguida, no botão `Adicionar um endereço IP / máscara`{.action}.
+>> Clique no separador `Endereços IP autorizados`{.action} e, em seguida, no botão `Adicionar um endereço IP / máscara`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
->> Na janela que aparece, indique o endereço IP ou a máscara que pretende autorizar em `IP/máscara`{.action} e, se desejar, adicione uma descrição. Decida se pretende conceder acesso apenas às bases de dados ou também ao SFTP. Por fim, clique em `Validar`{.action}.
+>> Na janela que aparece, indique o endereço IP ou a máscara que pretende autorizar em `IP / máscara`{.action} e, se desejar, adicione uma descrição. Decida se pretende conceder acesso apenas às bases de dados ou também ao SFTP. Por fim, clique em `Validar`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
@@ -106,22 +106,22 @@ Clique nos separadores abaixo para ver cada um dos **3** passos.
 
 /// details | Autorizar as ligações aos alojamentos web OVHcloud
 
-Clique nos separadores abaixo para ver cada um dos **3** passos.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
->> Clique no separador `IPs autorizados`{.action}.
+>> Clique no separador `Endereços IP autorizados`{.action}.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
->> Selecione `Autorizar os alojamentos web OVHcloud a aceder à base de dados`{.action}.
+>> Selecione `Autorizar o acesso dos alojamentos web da OVHcloud à base de dados`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
 
@@ -138,22 +138,22 @@ Clique nos separadores abaixo para ver cada um dos **3** passos.
 > **Esta ação é irreversível e a oferta Web Cloud Databases será depois faturada independentemente do seu alojamento web Performance.**
 >
 
-Clique nos separadores abaixo para ver cada um dos **3** passos.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
->> No separador **Informações gerais** apresentado por predefinição, clique em `...`{.action} à direita da menção "RAM" e, em seguida, em `Alterar a quantidade de RAM`{.action} para aceder à encomenda desta alteração.
+>> No separador **Informações gerais** apresentado por predefinição, clique em `...`{.action} à direita da menção "RAM" e, em seguida, em `Alterar quantidade de RAM`{.action} para aceder à encomenda desta alteração.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/change-the-amount-of-ram.png){.thumbnail}
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> Escolha a quantidade de RAM pretendida e clique em `Seguinte`{.action}. Poderá então escolher a duração pretendida.
 >>
@@ -173,20 +173,20 @@ Clique nos separadores abaixo para ver cada um dos **3** passos.
 
 /// details | Instância MySQL e MariaDB
 
-Clique nos separadores abaixo para ver cada um dos **3** passos.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Configuração`{.action}.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> No quadro **Configuração geral de MySQL**, encontrará a configuração atualmente definida para a sua base de dados. Pode modificá-la diretamente e clicar em `Aplicar`{.action}.
 >>
@@ -234,20 +234,20 @@ Clique nos separadores abaixo para ver cada um dos **3** passos.
 
 /// details | Instância PostgreSQL
 
-Clique nos separadores abaixo para ver cada um dos **3** passos.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Configuração`{.action}.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> No quadro **Configuração geral de PostgreSQL**, encontrará a configuração atualmente definida para a sua base de dados. Pode modificá-la diretamente e clicar em `Aplicar`{.action}.
 >>
@@ -272,22 +272,22 @@ Clique nos separadores abaixo para ver cada um dos **3** passos.
 
 ### Alterar a versão MySQL, PostgreSQL ou MariaDB do servidor de bases de dados
 
-Clique nos separadores abaixo para ver cada um dos **3** passos.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> No separador **Informações gerais**, a versão atual aparece na linha **Versão**.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
->> Para modificar esta versão, clique em `Modificar a versão`{.action}.
+>> Para modificar esta versão, clique em `Alterar versão`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
 
@@ -335,16 +335,16 @@ Para aceder aos logs da sua solução Web Cloud Databases, consulte o nosso guia
 
 /// details | Acompanhar a RAM consumida
 
-Clique nos separadores abaixo para ver cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Métricas`{.action}. Encontrará o gráfico **"Estatísticas de memória RAM utilizada"**.
 >>
@@ -356,16 +356,16 @@ Clique nos separadores abaixo para ver cada um dos **2** passos.
 
 Este gráfico permite acompanhar, nas últimas 24 horas, o volume de ligações por minuto no servidor de bases de dados.
 
-Clique nos separadores abaixo para ver cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Métricas`{.action}. Encontrará o gráfico **"Estatísticas do total de ligações por minuto"**.
 >>

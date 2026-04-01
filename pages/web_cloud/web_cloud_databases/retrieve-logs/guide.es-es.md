@@ -72,16 +72,16 @@ En determinadas situaciones, puede necesitar consultar o recuperar los logs:
 
 ### Visualizar los logs en tiempo real de su Web Cloud Databases
 
-Haga clic en las pestañas siguientes para ver cada uno de los **2** pasos.
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Logs`{.action}.
 >>
@@ -106,16 +106,16 @@ Para recuperar el historial de logs de su solución Web Cloud Databases, debe co
 > Para comprobarlo, obtenga la dirección IP pública de su punto de acceso a internet y consulte el apartado **Autorizar una dirección IP** de [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-Para obtener la información de conexión SFTP de su solución Web Cloud Databases, haga clic en las pestañas siguientes para ver cada uno de los **2** pasos.
+Para obtener la información de conexión SFTP de su solución Web Cloud Databases, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> En la pestaña `Información general`{.action}, localice el recuadro **Información de conexión**. Debajo de la mención `SFTP`{.action}, encontrará los datos necesarios para conectarse por SFTP.
 >>
@@ -170,28 +170,28 @@ Para suscribir su solución Web Cloud Databases a un flujo de datos en Logs Data
 
 /// details | Caso 1 - Suscribirse a un flujo de datos existente en su solución Logs Data Platform
 
-Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Logs`{.action} y, a continuación, en el botón `Suscribirse`{.action} situado a la derecha del recuadro de logs en tiempo real.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab-subscribe.png){.thumbnail}
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Si dispone de varias soluciones Logs Data Platform, seleccione la referencia deseada en la lista desplegable situada debajo del botón `Añadir un flujo de datos`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/data-stream.png){.thumbnail}
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> El flujo existente aparece en la tabla de la parte inferior de la página. Haga clic en el botón `Suscribirse`{.action} situado a la derecha de la fila correspondiente.
 >>
@@ -201,28 +201,28 @@ Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
 
 /// details | Caso 2 - Suscribirse a un nuevo flujo de datos en su solución Logs Data Platform
 
-Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Logs`{.action} y, a continuación, en el botón `Suscribirse`{.action} situado a la derecha del recuadro de logs en tiempo real.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab-subscribe.png){.thumbnail}
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Si dispone de varias soluciones Logs Data Platform, seleccione la referencia deseada en la lista desplegable situada debajo del botón `Añadir un flujo de datos`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/data-stream.png){.thumbnail}
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> Dado que el flujo de datos aún no existe, haga clic en el botón `Añadir un flujo de datos`{.action}. Será redirigido a una página que le permitirá crear un nuevo flujo de datos en su solución Logs Data Platform.
 >>
@@ -230,7 +230,7 @@ Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 >>
 >> Si lo necesita, consulte nuestras guías "[Introducción a Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)" (EN) e "[Inicio rápido con Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)" (EN).
 >>
-> **Paso 5**
+> **Etapa 5**
 >>
 >> Una vez completados los formularios, haga clic en `Guardar`{.action}. Será redirigido a la pestaña `Flujo de datos` de su solución Logs Data Platform.
 >>

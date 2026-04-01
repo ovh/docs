@@ -52,26 +52,26 @@ Si se produce un error en la base de datos, es necesario poder restaurar una cop
 
 #### Restaurar una copia de seguridad existente
 
-Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
 >> En la columna **"Copias de seguridad"**, la cifra corresponde al número de copias de seguridad disponibles para la base de datos.
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} a la derecha de la base de datos y luego en `Mostrar las copias de seguridad`{.action}.
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> Se mostrará la lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y luego en `Restaurar la copia de seguridad`{.action}.
 >>
@@ -83,26 +83,26 @@ Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
 
 #### Importar una copia de seguridad local
 
-Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} a la derecha de la base de datos y luego en `Importar archivo`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png){.thumbnail}
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> ***Tiene dos posibilidades:***
 >>

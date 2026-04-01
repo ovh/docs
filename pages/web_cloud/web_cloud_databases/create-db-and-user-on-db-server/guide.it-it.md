@@ -29,20 +29,20 @@ Un database (DB) permette di archiviare elementi detti dinamici, come commenti o
 
 ### Creare un database
 
-Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}.
+>> Clicca sulla scheda `Databases`{.action}.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca su `Aggiungi un database`{.action}.
 >>
@@ -52,7 +52,7 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 >> >
 >> > La creazione di schemi PostgreSQL non è attualmente disponibile sui server Web Cloud Databases.
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Compila i campi in base ai criteri indicati. È possibile creare direttamente un utente selezionando la casella **"Crea un utente"**:
 >>
@@ -69,26 +69,26 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 
 Per utilizzare un database server OVHcloud, crea degli utenti con diritti specifici per la connessione a un database.
 
-Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sulla scheda `Utenti e diritti`{.action}.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca su `Aggiungi un utente`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Inserisci un "nome utente" e una "password", poi clicca su `Conferma`{.action}.
 
@@ -96,26 +96,26 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 
 Per consentire a un utente di eseguire operazioni su un database, è necessario assegnargli dei diritti.
 
-Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sulla scheda `Utenti e diritti`{.action}.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca sul pulsante `...`{.action} a destra dell'utente interessato, poi su `Gestisci i diritti`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Nella colonna di sinistra **Database**, trovi la lista dei database presenti sul tuo server.
 >>
@@ -142,20 +142,20 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 > un backup e scaricarlo prima di qualsiasi eliminazione.
 >
 
-Clicca sulle schede qui sotto per visualizzare i **3** step in sequenza.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}.
+>> Clicca sulla scheda `Databases`{.action}.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca sul pulsante `...`{.action} a destra del database interessato, poi su `Elimina il database`{.action}.
 >>
