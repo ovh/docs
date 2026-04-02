@@ -36,6 +36,15 @@ Before setting up BGP Service, be aware of the following capabilities and constr
 - **BGP sessions**: 4 BGP sessions per client (4 IPv4 + 4 IPv6). If you need more than 4 BGP peering hosts, you will need to deploy a Route Server (see the [Advanced BGP configuration](#use-case-advanced-bgp-configuration-using-route-servers-rs) use case).
 - **Hosts**: Up to 10 hosts per client.
 
+## Potential use cases
+
+The BGP Service supports a wide range of custom networking architectures; the following examples highlight some of the most frequent implementations:
+
+- **Run your own routing stack** (FRR/Bird/VMware NSX, etc.) on Bare Metal or virtual routers and establish standard BGP sessions directly with OVHcloud Edges.
+- **Build high‑availability frontends**: use BGP to move IPs between multiple servers (active/active or active/passive) by changing BGP announcements, enabling fast failover actions.
+- **Set up ECMP / multi-path routing** between your hosts and the OVHcloud backbone to increase resilience across multiple servers or VMs.
+- **Design multi-tenant service nodes** by replacing L2 proxy-ARP with native L3 routing, where customer IP prefixes are routed through your infrastructure as the next hop.
+
 ## Instructions
 
 ### Step 1: Join the Alpha

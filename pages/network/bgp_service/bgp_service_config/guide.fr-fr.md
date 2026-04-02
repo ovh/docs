@@ -36,6 +36,15 @@ Avant de configurer le service BGP, veuillez prendre connaissance des capacités
 - **Sessions BGP** : 4 sessions BGP par client (4 IPv4 + 4 IPv6). Au-delà de 4 hôtes en peering BGP, le déploiement d'un Route Server est nécessaire (voir le cas d'utilisation [Configuration BGP avancée utilisant des Route Servers](#cas-dutilisation-configuration-bgp-avancée-utilisant-des-route-servers-rs)).
 - **Hôtes** : jusqu'à 10 hôtes par client.
 
+## Cas d'usage potentiels
+
+Le Service BGP prend en charge une large gamme d'architectures réseau personnalisées ; les exemples suivants illustrent certaines des implémentations les plus courantes :
+
+- **Exécutez votre propre stack de routage** (FRR/Bird/VMware NSX, etc.) sur des serveurs Bare Metal ou des routeurs virtuels et établissez des sessions BGP standard directement avec les Edges OVHcloud.
+- **Créez des frontends à haute disponibilité** : utilisez BGP pour déplacer des adresses IP entre plusieurs serveurs (actif/actif ou actif/passif) en modifiant vos annonces BGP, permettant ainsi un basculement rapide (*failover*).
+- **Mettez en place le routage ECMP / multi-path** entre vos hôtes et le backbone OVHcloud pour renforcer la résilience sur plusieurs serveurs ou VM.
+- **Concevez des nœuds de services multi-tenants** en remplaçant le proxy-ARP L2 par du routage L3 natif, où les préfixes IP des clients sont routés via votre infrastructure en tant que *next hop*.
+
 ## En pratique
 
 ### Étape 1 : rejoindre l'Alpha
