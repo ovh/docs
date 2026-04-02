@@ -16,7 +16,6 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 ## Prérequis
 
 - Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange)).
-- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](/links/web/email).
 
 > [!primary]
 >
@@ -26,6 +25,26 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 > - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## En pratique
 
 ### Modifier le mot de passe depuis l'espace client <a name="controlpanel"></a>
@@ -33,7 +52,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 > [!warning]
 > Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
-Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre :
+Suivez les instructions selon votre offre :
 
 > [!tabs]
 > **Emails MX Plan**
@@ -58,7 +77,7 @@ La modification de votre mot de passe via le webmail est disponible pour les off
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accédez à la page « [Webmail](/links/web/email) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
+Accédez à la page « [Webmail](/links/web/email) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -87,7 +106,7 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 >
 > Si vous souhaitez stocker un mot de passe, il est conseillé d'utiliser un gestionnaire de mot de passe, comme **Keepass** par exemple.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Premiers pas avec la solution MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

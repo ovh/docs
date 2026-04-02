@@ -10,12 +10,22 @@ Ihr OVHcloud Kunden-Account ermöglicht Ihnen, verschiedene Zahlungsarten zu hin
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine gültige Zahlungsart.
+
+<!-- CP-NAV-START:billing-payment-methods -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Zahlungsarten](/links/control-panel/billing-payment-methods)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Zahlungsarten`{.action}
+
+---
+<!-- CP-NAV-END:billing-payment-methods -->
 
 ## In der praktischen Anwendung <a name="payment_methods"></a>
 
-Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) oben rechts auf Ihren Namen und wählen Sie `Meine Zahlungsarten`{.action} aus.
+Öffnen Sie die Seite [Zahlungsarten](/links/control-panel/billing-payment-methods).
 
 ![Hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
 
@@ -121,20 +131,20 @@ Löschen Sie anschließend die Zahlungsart mithilfe der im vorigen Schritt erhal
 >
 > Mehr Informationen finden Sie in der Einführung zur [Verwendung der OVHcloud API](/pages/manage_and_operate/api/first-steps).
 >
-> Falls Sie Schwierigkeiten haben, Ihre Zahlungsarten über die OVHcloud API zu identifizieren, verwenden Sie die Funktion `Beschreibung ändern`{.action} im [Kundencenter](/links/manager). Klicken Sie auf dazu `...`{.action} rechts neben der Zahlungsart im Bereich [Meine Zahlungsarten](#payment_methods).
+> Falls Sie Schwierigkeiten haben, Ihre Zahlungsarten über die OVHcloud API zu identifizieren, verwenden Sie die Funktion `Beschreibung ändern`{.action} im [Kundencenter](/links/control-panel/billing-payment-methods). Klicken Sie auf dazu `...`{.action} rechts neben der Zahlungsart im Bereich [Meine Zahlungsarten](#payment_methods).
 >
 
 ### Der Prepaid-Account
 
 #### Was ist der Prepaid-Account?
 
-Der Prepaid-Account ist in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbar. Damit können Sie in Ihrem Kunden-Account im Voraus Guthaben aufladen und es für die Bezahlung Ihrer Bestellungen und Verlängerungsrechnungen verwenden.
+Der Prepaid-Account ist in Ihrem [OVHcloud Kundencenter](/links/control-panel/billing-payment-methods) verfügbar. Damit können Sie in Ihrem Kunden-Account im Voraus Guthaben aufladen und es für die Bezahlung Ihrer Bestellungen und Verlängerungsrechnungen verwenden.
 
 Wenn Sie Ihren Account regelmäßig aufladen, stellen Sie damit sicher, dass die [automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) Ihrer Dienstleistungen nie wegen Zahlungsausfalls unterbrochen wird.
 
 Gehen Sie dazu in den Bereich `Zahlungsarten` Ihres Kundencenters:
 
-- Klicken Sie oben rechts auf Ihren Namen und dann im rechten Menü auf `Meine Zahlungsarten`{.action}.
+- Öffnen Sie die Seite [Zahlungsarten](/links/control-panel/billing-payment-methods).
 - Wählen Sie den Tab `Mein Prepaid-Account`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}

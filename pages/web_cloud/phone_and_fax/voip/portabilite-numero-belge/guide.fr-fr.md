@@ -33,7 +33,7 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 
 ### 1 - Préparer sa demande de portabilité
 
-Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le processus à suivre sera différent. Afin que votre demande de portabilité arrive au plus vite à son terme, nous vous invitons à prendre en considération les recommandations suivantes :
+Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le processus à suivre sera différent. Afin que votre demande de portabilité arrive au plus vite à son terme, suivez les recommandations suivantes :
 
 - assurez-vous de connaître les informations du titulaire actuel de la ou des lignes concernées (comme son nom et prénom, son adresse, etc.) ;
 

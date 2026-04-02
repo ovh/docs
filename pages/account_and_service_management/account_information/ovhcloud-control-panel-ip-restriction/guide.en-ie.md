@@ -21,8 +21,18 @@ By setting this option and securing your account with [two-factor authentication
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Knowledge of the [password management recommendations for accessing your account](/pages/account_and_service_management/account_information/manage-ovh-password)
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Account security](/links/control-panel/account-security)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action} > `Security`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## Instructions
 
@@ -52,9 +62,7 @@ If you are using a 4G/5G network as an addition, remember to also retrieve the I
 
 ### Step 2 - Set up access restriction by IP
 
-Log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
-
-Click on the `Security`{.action} tab to go to the next page:
+On the [Account security](/links/control-panel/account-security) page, find the **IP access restriction** section.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 

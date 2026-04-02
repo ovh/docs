@@ -19,24 +19,24 @@ flag: hidden
 
 ## Contexte
 
-Les outils CTI d'OVH permettent de recevoir des évenements en continue sur l'état des lignes et des files d'appels OVH.
+Les outils CTI d'OVHcloud permettent de recevoir des événements en continu sur l'état des lignes et des files d'appels OVHcloud.
 
 ## Champ d'action
 
-Les évenements sont remontés pour le protocole *SIP* (sipCirpack) et les files d'appels OVH (easyHunting et cloudHunting). 
+Les événements sont remontés pour le protocole *SIP* (sipCirpack) et les files d'appels OVHcloud (easyHunting et cloudHunting). 
 Cela fonctionne pour quelques postes MGCP excepté dans les cas suivants : 
 
 - Transferts d'appels
 - Appels en attente
 - Appels en absence
 
-## Pré-requis
+## Prérequis
 
-Cela nécessite d'effectuer en continue des requêtes (http) curl de long-polling du côté client. Aucune requête serveur n'est executée.
+Cela nécessite d'effectuer en continu des requêtes (http) curl de long-polling du côté client. Aucune requête serveur n'est exécutée.
 
 ## Principe
 
-OVH fournit des évenements pour les lignes SIP/MGCP et files d'appels.
+OVHcloud fournit des événements pour les lignes SIP/MGCP et files d'appels.
 
 **Pour une ligne :**
 
@@ -56,7 +56,7 @@ OVH fournit des évenements pour les lignes SIP/MGCP et files d'appels.
 
 ## Récupération du token d'authentification
 
-Il est possible d'associer un token à une ligne/alias (sipCirpack, mgcpCirpack, easyHunting, cloudHunting) ou à un groupe de facturation.
+Vous pouvez associer un token à une ligne/alias (sipCirpack, mgcpCirpack, easyHunting, cloudHunting) ou à un groupe de facturation.
 
 [Via l'API](https://api.ovh.com/console/#/telephony)
 
@@ -72,9 +72,9 @@ Il est possible d'associer un token à une ligne/alias (sipCirpack, mgcpCirpack,
 
 ## One liner CURL
 
-Après avoir récuperé votre token depuis l'API, supposons que celui-ci soit : ABCDEFAB-CDEF-ABCD-EFAB-CDEFABCDEFAB,
+Après avoir récupéré votre token depuis l'API, supposons que celui-ci soit : ABCDEFAB-CDEF-ABCD-EFAB-CDEFABCDEFAB,
 
-Vous pouvez vérifier la réception du flux d'évenements en executant la requête Curl suivante : 
+Vous pouvez vérifier la réception du flux d'événements en exécutant la requête Curl suivante : 
 
 ```curl
 curl https://events.voip.ovh.net/?token=ABCDEFAB-CDEF-ABCD-EFAB-CDEFABCDEFAB
@@ -82,7 +82,7 @@ curl https://events.voip.ovh.net/?token=ABCDEFAB-CDEF-ABCD-EFAB-CDEFABCDEFAB
 
 ## Réception des paramètres
 
-Le format type d'un évenement (en JSON) :
+Le format type d'un événement (en JSON) :
 
 ```json
 Data: 
@@ -94,36 +94,36 @@ Data:
 	Cseq: "181 REGISTER" (Le code CSeq du paquet SIP)
 	DateStart: Thu Mar 05 2015 12:44:30 GMT+0100 (CET) (La date)
 	Dialed: "0033912312312" (Le numéro composé)
-	Event: "registered" (Le type d'évenement)
+	Event: "registered" (Le type d'événement)
 	Protocol: "sip" (Le type de protocole, sip ou mgcp)
 	RelevantInfo: "" (Information importante)
 	Ts: 1425554670.102
-	TsGet: 1425554670238926800 (Le timestamp de l'évenement en nanoseconde)
+	TsGet: 1425554670238926800 (Le timestamp de l'événement en nanoseconde)
 
 Date: "2015-03-05T12:24:30.255954 (CET)"
 Details: 
 	Description: "Gaelle Becquet" (Description du numéro OVH)
 	Id: "295670" (Identifiant de la ligne du numéro OVH)
 	IdBillingAccount: "59415" (Identifiant du groupe du numéro OVH)
-	SimultaneousLine: "2" (Nombre de lignes simultannées)
+	SimultaneousLine: "2" (Nombre de lignes simultanées)
 	Type: "sipCirpack" (Type de ligne)
 
-Event: "registered" (Le type d'évenement)
+Event: "registered" (Le type d'événement)
 Ressource: "0033912312312" (Le numéro OVH)
 Service: "sip" (Le protocole)
-Timestamp: 1425554670255954700 (Le timestamp de l'évenement en nanoseconde)
+Timestamp: 1425554670255954700 (Le timestamp de l'événement en nanoseconde)
 Token: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" (Le token)
 ```
 
 ## IMPORTANT !!!
 
-- Pour les évenements de type `register` les informations de l'appelant, l'appelé et numéro composé sont les mêmes que le numéro OVH.
+- Pour les événements de type `register` les informations de l'appelant, l'appelé et numéro composé sont les mêmes que le numéro OVH.
 - Il est possible que certains champs soient redondants.
 - Dans le cas d'une file d'appels, les headers freeswitchs sont stockés dans "Data" sous la forme "Queue" suivi du header sans les patterns "CC" et "-" .
 
 ## Exemple de script Perl
 
-Voici un exemple basic en perl :
+Voici un exemple basique en Perl :
 
 ```perl
 #!/usr/bin/perl
@@ -148,6 +148,6 @@ while (1)
 ## Aller plus loin
 
 - [Projet communautaire](/pages/web_cloud/phone_and_fax/voip/projet_communautaire_cti)
-- [Intégration CTI de la téléphonie OVH aux CRM et ERP](/pages/web_cloud/phone_and_fax/voip/cti_crm_erp_sugarcrm)
+- [Intégration CTI de la téléphonie OVHcloud aux CRM et ERP](/pages/web_cloud/phone_and_fax/voip/cti_crm_erp_sugarcrm)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

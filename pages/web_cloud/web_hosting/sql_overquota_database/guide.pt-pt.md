@@ -18,9 +18,19 @@ Este tutorial propõe-lhe as ações a empreender quando a sua base de dados par
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter um [serviço de alojamento web da OVHcloud](/links/web/hosting) com uma base de dados partilhada da OVHcloud associada.
   
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instruções
 
 > [!warning]
@@ -55,28 +65,22 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 
 Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da **etapa 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
-Para se conectar ao banco de dados via phpMyAdmin, clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Para se conectar ao banco de dados via phpMyAdmin, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na parte inferior do ecrã será apresentada uma tabela com a lista das bases de dados.
 >>
@@ -86,7 +90,7 @@ Para se conectar ao banco de dados via phpMyAdmin, clique nas janelas abaixo par
 >>
 >> À direita da base de dados em causa, clique no botão `...`{.action} e, a seguir, em `Aceder ao phpMyAdmin`{.action}.
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
@@ -230,34 +234,28 @@ No entanto, pode forçar a sua passagem pelos seus serviços para acelerar o pro
 
 #### Recalcular o limite para uma base de dados incluída na sua oferta de alojamento web
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na nova página, é apresentada uma tabela com as bases de dados criadas. À direita da base de dados em causa, clique no botão `...`{.action} e, a seguir, em `Recalcular o limite`{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Na janela que se abrir, clique diretamente no botão `Validar`{.action}.
 >>
@@ -269,7 +267,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
 #### Recalcular o limite para uma base de dados alojada numa solução Web Cloud Databases
 
-Clique nos separadores abaixo para visualizar cada um dos **3** passos.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

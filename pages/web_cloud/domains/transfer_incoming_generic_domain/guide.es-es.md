@@ -1,10 +1,10 @@
 ---
 title: 'Transferir un nombre de dominio a OVHcloud'
 excerpt: 'Descubra cómo realizar la transferencia de un nombre de dominio a OVHcloud'
-updated: 2026-02-10
+updated: 2026-03-27
 ---
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/d-sBduMODQg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/d-sBduMODQg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Objetivo
 
@@ -43,6 +43,17 @@ Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **an
 - Estar facultado para solicitar la transferencia del nombre de dominio.
 - Haber informado al titular del nombre de dominio y a sus administradores de la solicitud de transferencia.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Procedimiento
 
 > [!success]
@@ -66,7 +77,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 ### 1. Comprobar la información relativa al nombre de dominio <a name="step1"></a>
 
-**En primer lugar, es importante comprobar que la información relativa al nombre de dominio esté actualizada.** Desde la introducción del RGPD, los datos visibles en el ["Whois"](/links/web/domains-whois) se han vuelto muy limitados. Por lo tanto, le recomendamos que consulte la información relativa al nombre de dominio en su agente registrador actual.
+**En primer lugar, es importante comprobar que la información relativa al nombre de dominio esté actualizada.** Desde la introducción del RGPD, los datos visibles en « [Whois](/links/web/domains-whois) » se han vuelto muy limitados. Por lo tanto, le recomendamos que consulte la información relativa al nombre de dominio en su agente registrador actual.
 
 - ** Si los datos son correctos: vaya al siguiente paso de esta guía.**
 
@@ -123,11 +134,11 @@ También puede completar el pedido con un [alojamiento web](/links/web/hosting) 
 
 #### Seguimiento de la transferencia tras el pedido
 
-Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](/links/manager). Una vez que se haya conectado, acceda a la sección `Web Cloud`{.action}. Haga clic en `Operaciones en curso`{.action}.
+Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia en la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
-> Si el código de transferencia no se ha introducido durante el pedido, podrá introducirlo en la ventana `Operaciones en curso`{.action} para validar la transferencia.
+> Si el código de transferencia no se ha introducido durante el pedido, podrá introducirlo desde esta misma página para validar la transferencia.
 
 ### 4. validación de la transferencia por el actual agente registrador <a name="step4"></a>
 
@@ -141,7 +152,7 @@ Una vez validados el pedido y el código de transferencia, el actual agente regi
 
 Si el actual agente registrador rechaza la solicitud, contacte con él para conocer el motivo por el que la rechazó.
 
-El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcloud](/links/manager). Una vez que se haya conectado, acceda a la sección `Web Cloud`{.action}. Haga clic en `Operaciones en curso`{.action}.
+El proceso de transferencia puede reanudarse desde la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
@@ -155,7 +166,7 @@ El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcl
 
 ### 5. gestionar su nombre de dominio con OVHcloud
 
-Una vez finalizado el procedimiento de transferencia, podrá administrar su nombre de dominio desde el [área de cliente de OVHcloud](/links/manager). Para ello, seleccione `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
+Una vez finalizado el procedimiento de transferencia, podrá administrar su nombre de dominio desde la página [Dominios](/links/control-panel/web-domains).
 
 > [!warning]
 >
@@ -165,10 +176,20 @@ Una vez finalizado el procedimiento de transferencia, podrá administrar su nomb
 > Para los nombres de dominio con una extensión *local* o *regional* (los **ccTLD**, como *.fr*, *.be*, *.de*, *.es*, etc.), esto depende de las extensiones y de las reglas establecidas por el **registro** de la extensión en cuestión.
 > Una vez finalizada la transferencia, compruebe la fecha de expiración del nombre de dominio directamente desde el área de cliente de OVHcloud.
 >
-> Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en el botón `Dominios`{.action} y seleccione el nombre de dominio correspondiente. En la nueva página, situada justo debajo del nombre de dominio, podrá consultar la fecha de renovación prevista en el **mes** y **el año**.
->
 > En función de la situación y de la nueva fecha de expiración de su nombre de dominio, podrá ser necesaria una renovación del nombre de dominio justo después de la transferencia.
->
+
+Para comprobarlo, haga clic en las pestañas siguientes para ver sucesivamente cada uno de los **2** pasos.
+
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>>
+>> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> En la nueva página, justo debajo del nombre de dominio, encontrará la fecha de renovación prevista con el **mes** y el **año** de expiración.
 
 ## Más información
 

@@ -16,11 +16,19 @@ Die Konfiguration der umgekehrten DNS-Auflösung eines Servers ist besonders bei
 
 - Sie verfügen über eine mit Ihrem Dienst verbundene IP-Adresse in Ihrem OVHcloud Kunden-Account.
 - Sie haben einen Domainnamen, dessen `A`-Eintrag oder `AAAA`-Eintrag den Server als Ziel hat.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP-Adressen`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ## In der praktischen Anwendung
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}.
 
 Das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** (Meine öffentlichen IP-Adressen und zugehörige Dienste) ermöglicht es Ihnen, Ihre Dienste nach Kategorie zu filtern. Sie können auch nach einer bestimmten IP-Adresse in der Suchleiste links neben dem Dropdown-Menü suchen.
 
@@ -49,9 +57,9 @@ Sie können den Reverse-Pfad auch direkt über das `Stift`{.action}-Symbol in de
 
 > [!primary]
 >
-Wenn die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der Eintrag vom Typ `A`- / `AAAA` in der DNS-Zone Ihres Domainnamens korrekt konfiguriert ist. Beachten Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den Eintrag erst kürzlich bearbeitet haben.
+> Wenn die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der Eintrag vom Typ `A`- / `AAAA` in der DNS-Zone Ihres Domainnamens korrekt konfiguriert ist. Beachten Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den Eintrag erst kürzlich bearbeitet haben.
 >
-> Falls der Domänenname von OVHcloud als Registrar verwaltet wird **und OVHcloud DNS-Server verwendet**, können Sie sich an [dieses Handbuch](/pages/web_cloud/domains/dns_zone_edit) wenden.
+> Falls der Domänenname von OVHcloud als Registrar verwaltet wird **und OVHcloud DNS-Server verwendet**, können Sie sich an [dieser Anleitung](/pages/web_cloud/domains/dns_zone_edit) orientieren.
 >
 
 ## Weiterführende Informationen

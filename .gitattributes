@@ -1,0 +1,4 @@
+# Normalize line endings to LF for all MD files.
+# This overrides core.autocrlf for all contributors regardless of OS,
+# so files are always checked out as LF — matching end_of_line = lf in .editorconfig.
+*.md text=auto eol=lf

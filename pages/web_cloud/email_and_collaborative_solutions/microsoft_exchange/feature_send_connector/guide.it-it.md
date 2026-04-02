@@ -47,9 +47,19 @@ Ecco il contesto del diagramma sopra:
 ## Prerequisiti
 
 - Disporre di una piattaforma [Private Exchange OVHcloud](/links/web/emails-private-exchange) o [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere connesso alle [API OVHcloud](/links/api).
 - Disporre dei parametri necessari per configurare il connettore di invio. Contatta il fornitore del servizio.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 
@@ -309,7 +319,7 @@ Nella sezione **PATH PARAMETERS**:
 
 Nella scheda **EXAMPLE** della sezione **REQUEST BODY**, completa i campi con i tuoi valori:
 
-- `sbrDefault `: lasciare vuoto.
+- `sbrDefault`: lasciare vuoto.
 - `sendConnectorIdDefault` - Inserire l'ID del connettore di invio, ottenuto come numero in [questa fase](#idconnector).
 
 Clicca su `Execute`{.action} per avviare la chiamata API.
@@ -358,7 +368,7 @@ Il risultato restituito è il seguente:
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 ['Modificare una zona DNS](/pages/web_cloud/domains/dns_zone_edit)
 

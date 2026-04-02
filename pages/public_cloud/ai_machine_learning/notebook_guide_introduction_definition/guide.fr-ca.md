@@ -26,8 +26,18 @@ Each method offers its distinct advantages, depending on your expertise and pref
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud user with the **Administrator** or **AI Training Operator & Objectstore Operator** roles, see [here](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for more information
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -44,7 +54,7 @@ Each method offers its distinct advantages, depending on your expertise and pref
 >>
 >> However, if this is the first time you are using the AI Products on your Public Cloud project, you will need to complete an authorization process before using the AI API, ovhai CLI, or Python SDK. To do so, please follow these steps:
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), and navigate to the `Public Cloud`{.action} section, in the horizontal menu at the top of the website. Select the Public Cloud project you want to use. Then, click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
 >>
 >> From there, click the `Create a Notebook`{.action} button. The authorization process will take place silently in the background.
 >>
@@ -61,9 +71,7 @@ To create an AI Notebook, follow these steps:
 >>
 >> The manager is the more intuitive way to launch an AI Notebook. To get started, follow these steps:
 >>
->> Navigate to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager) by clicking on it in the horizontal menu at the top of the website.
->>
->> From there, click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
 >>
 >> Once there, you can create your first Notebook by clicking the `Create a Notebook`{.action} button.
 >>

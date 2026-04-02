@@ -15,7 +15,18 @@ As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos
 - Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting).
 - Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVHcloud](/links/web/hosting).
 - Ter acesso ao backup que pretende importar na base de dados.
-- Consoante o método de importação utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager) ou às informações que lhe permitem aceder à base de dados.
+- Consoante o método de importação utilizado, ter acesso à gestão do alojamento web a partir da Área de Cliente OVHcloud ou às informações que lhe permitem aceder à base de dados.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

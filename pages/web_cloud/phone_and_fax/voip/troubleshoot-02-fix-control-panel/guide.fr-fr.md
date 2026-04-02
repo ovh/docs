@@ -1,6 +1,6 @@
 ---
-title: 'Dépanner son téléphone OVHcloud'
-excerpt: 'Apprenez à dépanner votre téléphone OVHcloud'
+title: "Dépanner son téléphone OVHcloud"
+excerpt: "Apprenez à dépanner votre téléphone OVHcloud"
 updated: 2025-04-28
 ---
 
@@ -12,8 +12,8 @@ Pour fonctionner correctement, comme votre ordinateur, un téléphone OVHcloud a
 
 Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 
-- un défaut d'alimentation électrique;
-- une problématique réseau;
+- un défaut d'alimentation électrique ;
+- une problématique réseau ;
 - un défaut temporaire de configuration du téléphone.
 
 **Découvrez comment diagnostiquer et dépanner votre téléphone OVHcloud.**
@@ -38,15 +38,15 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 
 Voici la table des matières de ce guide, vous pouvez cliquer sur une des entrées pour y arriver directement :
 
-[Etape 1 - Etablir un premier diagnostic](#step1)<br />
-[Etape 2 - Réinitialiser le téléphone](#step2)<br />
-[Etape 3 - Dépanner le téléphone depuis l'espace client OVHcloud](#step3)<br />
-[Etape 4 - Effectuer des tests complémentaires (facultatif)](#step4)<br />
+[Étape 1 - Établir un premier diagnostic](#step1)<br />
+[Étape 2 - Réinitialiser le téléphone](#step2)<br />
+[Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud](#step3)<br />
+[Étape 4 - Effectuer des tests complémentaires (facultatif)](#step4)<br />
 &emsp;&emsp;[4.1 - Réinitialiser votre routeur / modem / Box Internet](#step4-1)<br />
 &emsp;&emsp;[4.2 - Effectuer un test croisé](#step4-2)<br />
-[Etape 5 - Contacter l'assistance OVHcloud](#step5)<br />
+[Étape 5 - Contacter l'assistance OVHcloud](#step5)<br />
 
-Ce guide vous détaille les causes principales d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
+Ce guide détaille les causes principales d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
 Nous vous conseillons donc de **suivre l'ordre des étapes de diagnostic** afin de dépanner votre téléphone.<br>
 Si votre téléphone retrouve son fonctionnement normal après avoir suivi l'une des premières étapes de ce guide, il n'est pas indispensable de suivre les étapes ultérieures.
 
@@ -54,7 +54,7 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 ![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
 
-### Étape 1 - Etablir un premier diagnostic <a name="step1"></a>
+### Étape 1 - Établir un premier diagnostic <a name="step1"></a>
 
 **Question n°1 : Le défaut concerne-t-il un seul téléphone ?**
 

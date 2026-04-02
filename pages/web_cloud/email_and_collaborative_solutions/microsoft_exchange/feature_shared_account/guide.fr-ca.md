@@ -13,17 +13,22 @@ Un **compte partagé** est une boîte e-mail partagée entre plusieurs comptes E
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir souscrit une offre [Exchange OVHcloud](/links/web/emails-hosted-exchange).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
 ### Ajouter un compte partagé
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
 
 Sélectionnez l’onglet `Comptes partagés`{.action} dans le menu horizontal et cliquez sur `Ajouter un compte partagé`{.action}.
 
@@ -44,7 +49,7 @@ Renseignez les champs demandés :
 >
 > L'espace disponible pour créer un compte partagé dépend du nombre de comptes souscrits sur votre plateforme. Chaque compte Exchange souscrit sur votre plateforme débloque 5 Go pour les comptes partagés.
 >
-> **exemple:**
+> **Exemple :**
 >
 > Vous avez souscrit à 4 comptes Exchange sur votre plateforme, vous avez donc **4 x 5Go**, soit **20 Go** d'espace alloué pour les comptes partagés de votre plateforme.
 
@@ -82,10 +87,10 @@ Dans notre exemple, nous permettons aux comptes **guide-exchange@** et **test@**
 
 ### Utilisation du compte partagé depuis OWA (webmail)
 
-Connectez-vous au webmail Exchange (OWA) à l'adresse [Webmail](/links/web/email) avec un compte e-mail ayant le droit d'accès au compte partagé. 
+Connectez-vous au webmail Exchange (OWA) à l'adresse [Webmail](/links/web/email) avec un compte e-mail ayant le droit d'accès au compte partagé.
 <br>Dans notre exemple, nous nous connectons avec le compte **guide-exchange@**.
 
-Une fois connecté, dans la colonne de gauche, faites un clic droit sur l'arborescence principale de votre adresse e-mail puis sur `Ajouter un dossier partagé`{.action}. 
+Une fois connecté, dans la colonne de gauche, faites un clic droit sur l'arborescence principale de votre adresse e-mail puis sur `Ajouter un dossier partagé`{.action}.
 
 ![emails](images/exchange-shared_accounts05.png){.thumbnail}
 
@@ -103,7 +108,7 @@ Depuis votre logiciel Outlook, vous retrouverez votre compte partagé dans la co
 
 ![emails](images/exchange-shared_accounts10.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

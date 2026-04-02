@@ -19,6 +19,17 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 - Sie haben einen OVHcloud Dienst, auf dem Sie eine Firewall installiert haben.
 - Sie haben Zugriff auf die Firewall-Regeln.
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## In der praktischen Anwendung
 
 ### IP-Adressen erlauben

@@ -1,7 +1,7 @@
 ---
 title: 'Iniziare a utilizzare la soluzione MX Plan'
 excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
-updated: 2025-06-26
+updated: 2026-03-05
 ---
 
 <style>
@@ -30,15 +30,21 @@ La soluzione MX Plan di OVHcloud con cui potrai inviare e ricevere messaggi dal 
 ## Prerequisiti
 
 - Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](/links/web/hosting), l'[Hosting gratuito 100M](/links/web/domains-free-hosting) o la soluzione MX Plan da sola.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedura <a name="instructions"></a>
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `MX Plan`{.action}.
-1. Seleziona il dominio.
-1. **Prosegui nella lettura di questa guida in base alla tecnologia utilizzata dal tuo servizio MX Plan**.
+**Prosegui nella lettura di questa guida in base alla tecnologia utilizzata dal tuo servizio MX Plan**.
 
 > [!primary]
 >
@@ -116,7 +122,7 @@ Seleziona la scheda corrispondente alla tecnologia email della tua soluzione MX 
 > [!tabs]
 > **Roundcube**
 >>
->> Dovreste ottenere un'interfaccia simile all'immagine qui sotto con la dicitura "Rouncube" in alto a sinistra.
+>> Dovreste ottenere un'interfaccia simile all'immagine qui sotto con la dicitura "Roundcube" in alto a sinistra.
 >> Per scoprire l'interfaccia Roundcube e il suo utilizzo, consulta la nostra guida "[Utilizzare il proprio indirizzo e-mail dalla webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)".
 >>
 >> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
@@ -167,7 +173,7 @@ Consulta qui sotto i link delle guide di configurazione in base al tuo tipo di d
 
 Di seguito trovi i parametri necessari per configurare il tuo indirizzo email.
 
-##### Parametri di ricezione IMAP e POP <a name="imap-pop"></a>
+#### Parametri di ricezione IMAP e POP <a name="imap-pop"></a>
 
 Per la ricezione delle email, durante la scelta del tipo di account, ti consigliamo di utilizzare il **IMAP**. Tuttavia, è possibile selezionare **POP**.
 
@@ -196,7 +202,7 @@ Seleziona la scheda corrispondente al tuo tipo di configurazione:
 >> - **Porta**: 995.
 >> - **Tipo di sicurezza**: SSL/TLS.
 
-##### Parametri di invio SMTP <a name="smtp"></a>
+#### Parametri di invio SMTP <a name="smtp"></a>
 
 Di seguito sono riportati i parametri **SMTP** da utilizzare per l’invio delle email:
 
@@ -204,7 +210,7 @@ Di seguito sono riportati i parametri **SMTP** da utilizzare per l’invio delle
 
 - **Nome utente**: Inserisci l'indirizzo email **completo**.
 - **Password**: Inserisci la password dell’indirizzo email.
-- **Server EUROPE (in uscita)**: smtp.mail.ovh.net **o** ssl0.ovh.net.
+- **Server EUROPA (in uscita)**: smtp.mail.ovh.net **o** ssl0.ovh.net.
 - **Server AMERICA/ASIA PACIFICA (in uscita)**: smtp.mail.ovh.ca.
 - **Porta**: 465.
 - **Tipo di sicurezza**: SSL/TLS.
@@ -275,8 +281,6 @@ Seleziona la scheda corrispondente alla tecnologia email della tua soluzione MX 
 [Utilizza i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 [MX Plan - Crea risposta automatica su un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
-[Utilizza i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 

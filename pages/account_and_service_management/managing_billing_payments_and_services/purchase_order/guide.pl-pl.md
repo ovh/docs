@@ -8,6 +8,17 @@ updated: 2025-04-28
 
 Niniejszy przewodnik wyjaśnia, jak interpretować numer zamówienia lub polecenie Purchase (PO) zastosowane do fakturowania OVHcloud.
 
+<!-- CP-NAV-START:billing-orders -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Moje zamówienia](/links/control-panel/billing-orders)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje zamówienia`{.action}
+
+---
+<!-- CP-NAV-END:billing-orders -->
+
 ## W praktyce
 
 ### Numer zamówienia i Purchase Order (PO) Number
@@ -49,7 +60,7 @@ W przypadku OVHcloud dokument musi zawierać co najmniej następujące informacj
 
 ### Jak wpisać numer Purchase Order (PO) w Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie na wyświetlonej stronie kliknij `Wyświetl moje zamówienia`{.action}.
+Otwórz stronę [Moje zamówienia](/links/control-panel/billing-orders).
 
 ![Panel klienta](images/huborders.png){.thumbnail}
 

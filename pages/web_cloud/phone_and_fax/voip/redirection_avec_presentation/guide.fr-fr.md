@@ -59,9 +59,9 @@ Choisissez alors, parmi les lignes affichées, celle vers laquelle vous souhaite
 
 ![redirection d'appels](images/redirection2-2022.png){.thumbnail}
 
-La ligne sélectionnés apparaît alors sous la mention « Ligne vers laquelle vos appels seront redirigés ».
+La ligne sélectionnée apparaît alors sous la mention « Ligne vers laquelle vos appels seront redirigés ».
 
-Choisissez ensuite, dans la partie « **Vos appels sortants** », si vous souhaitez activer ou non la présentation de votre numéro alors lors d'un appel sortant.
+Choisissez ensuite, dans la partie « **Vos appels sortants** », si vous souhaitez activer ou non la présentation de votre numéro lors d'un appel sortant.
 
 Vous pouvez ainsi, lorsque vous émettez un appel depuis votre ligne SIP OVHcloud, présenter votre numéro alias (et non plus la ligne OVHcloud) sur les téléphones de vos destinataires.
 

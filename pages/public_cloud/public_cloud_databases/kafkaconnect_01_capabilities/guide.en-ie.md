@@ -1,6 +1,6 @@
 ---
-title: Kafka Connect - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka Connect
+title: Capabilities and Limitations of Analytics with Kafka Connect
+excerpt: Discover the capabilities and limitations of Analytics for Kafka Connect
 updated: 2026-02-17
 ---
 

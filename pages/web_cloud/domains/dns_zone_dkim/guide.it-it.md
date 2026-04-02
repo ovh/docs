@@ -55,14 +55,23 @@ Il record DKIM (**D**omain**K**eys **I**dentified **M**ail) permette di firmare 
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager) o dal provider del tuo dominio registrato al di fuori di OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver sottoscritto una delle soluzioni email disponibili:
     - MX Plan OVHcloud. È disponibile tramite una [offerta di hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](/links/web/domains-free-hosting) o una soluzione MX Plan ordinata separatamente.
     - [Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-hosted-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/zimbra).
     - Offerta di posta elettronica esterna a OVHcloud con DKIM.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >

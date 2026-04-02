@@ -15,24 +15,30 @@ updated: 2025-04-28
 
 ## Objectif
 
-Grâce aux groupes Exchange, de nombreux participants peuvent communiquer par envoi d’ e-mails à une seule adresse, celle du groupe. Cette fonction collaborative vous permet de créer et gérer des listes de diffusion constituées aussi bien d’utilisateurs d’Exchange que de contacts externes.
+Grâce aux groupes Exchange, de nombreux participants peuvent communiquer par envoi d’e-mails à une seule adresse, celle du groupe. Cette fonction collaborative vous permet de créer et gérer des listes de diffusion constituées aussi bien d’utilisateurs d’Exchange que de contacts externes.
 
 **Ce guide va vous expliquer comment utiliser les groupes Exchange via l’espace client OVHcloud et le service Outlook Web App (OWA).**
 
 ## Prérequis
 
-- Etre connecté à votre [espace client OVHcloud](/links/manager)
-- Avoir souscrit une offre [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) 
+- Avoir souscrit une [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) 
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
 ### Créer un nouveau groupe
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
-1. Cliquez sur l'onglet `Groupes`{.action} dans le menu horizontal.
+Cliquez sur l'onglet `Groupes`{.action} dans le menu horizontal.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 
@@ -44,7 +50,7 @@ Cliquez sur `Créer un groupe de contacts`{.action} afin d’ouvrir une nouvelle
 - **Nom du Groupe** : Utilisez le nom apparaissant dans votre [espace client OVHcloud](/links/manager) et dans votre [messagerie Web OVHcloud](/links/web/email) (OWA).
 - **Taille maximale d’entrée ou de sortie** : Vous pouvez spécifier la taille maximale des e-mails entrants et des e-mails sortants.
 - **Masquer dans Outlook** : Lorsque cette case est cochée, l’adresse du groupe ne s’affichera pas dans la liste des adresses du service Exchange.
-- **Authentication requise** : Lorsque cette case est cochée, seuls les utilisateurs de la même plate-forme pourront envoyer des messages avec l’adresse du groupe.
+- **Authentification requise** : Lorsque cette case est cochée, seuls les utilisateurs de la même plate-forme pourront envoyer des messages avec l’adresse du groupe.
 
 Cliquez sur `Suivant`{.action} pour continuer.
 
@@ -79,7 +85,7 @@ Pour ajouter des `Contacts` à votre groupe ou définir les `Administrateurs`, c
 
 #### Gérer les délégations d'un groupe
 
-L’option `Configurer les délégations`{.action} du menu s’affichera. Cette option vous permet de déléguer l’accès de la même manière qu’on le fait pour un compte Exchange. Retrouver tous les détails dans [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
+L’option `Configurer les délégations`{.action} du menu s’affichera. Cette option vous permet de déléguer l’accès de la même manière qu’on le fait pour un compte Exchange. Retrouvez tous les détails dans [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
 
 ![contactgroups](images/exchange-groups-options-delegation01.png){.thumbnail .w-600 .h-600}
 
@@ -87,11 +93,11 @@ L’option `Configurer les délégations`{.action} du menu s’affichera. Cette 
 >
 > Veuillez noter que chaque modification à ce service peut prendre quelques minutes pour être appliquée. Vous pouvez vérifier l’état de la plupart des opérations en sélectionnant les options `Plus`{.action} et `Tâches récentes`{.action} à partir du menu horizontal.
 
-### Ecrivez à un groupe via OWA
+### Écrivez à un groupe via OWA
 
-Vous pouvez déjà  tester votre liste de diffusion via [la messagerie Web d ’OVHcloud](/links/web/email) (OWA) Il suffit d’envoyer un e-mail à l’adresse du groupe.
+Vous pouvez déjà tester votre liste de diffusion via [la messagerie Web d’OVHcloud](/links/web/email) (OWA). Il suffit d’envoyer un e-mail à l’adresse du groupe.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Déléguer des permissions sur un compte Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

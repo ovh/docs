@@ -27,7 +27,16 @@ In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di e
 ## Prerequisiti
 
 - Avere la gestione dei [server DNS](/pages/web_cloud/domains/dns_server_general_information) e della [zona DNS](/pages/web_cloud/domains/dns_zone_general_information) del dominio
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -42,22 +51,16 @@ Per risolvere questa anomalia, è necessario:
 
 I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](/links/web/hosting). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](/links/web/domains).
 
-Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](/links/web/hosting), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](/links/web/hosting), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Informazioni generali**, troverete le informazioni **IPv4** e **IPv6**.
 >>

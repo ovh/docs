@@ -43,7 +43,16 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 ## Requisitos
 
 - Tener contratado un [plan de hosting](/links/web/hosting).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -108,26 +117,20 @@ La tarea estará lista en unos minutos. Podrá modificar todos los parámetros o
 
 ### Modificar o eliminar una tarea programada
 
-Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Más`{.action} y seleccione `Cron`{.action}.
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la tarea planificada correspondiente.
 >>

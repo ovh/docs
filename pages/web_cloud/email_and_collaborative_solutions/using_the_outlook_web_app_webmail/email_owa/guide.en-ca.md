@@ -1,12 +1,12 @@
 ---
 title: 'Using the Outlook Web App with an email account'
 excerpt: 'Find out how to manage an email address using OWA webmail'
-updated: 2024-09-03
+updated: 2026-03-24
 ---
 
 ## Objective
 
-With OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](/links/web/email) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
+With OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](/links/web/email) is the single point of access to the respective OWA for all active email accounts on MX Plan and Hosted Exchange.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 

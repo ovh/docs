@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurar una dirección de correo electrónico en Outlook clásico para Windows"
 excerpt: "Cómo configurar una cuenta MX Plan en Outlook clásico para Windows"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -35,6 +35,17 @@ Las direcciones de correo electrónico de la oferta **MX Plan** pueden configura
 - Disponer de una solución de correo electrónico OVHcloud configurada previamente, entre las siguientes **Plan MX** ofrecido con nuestras [ofertas de hosting web](/links/web/hosting).
 - Disponer de la [nueva versión de Outlook](https://support.microsoft.com/es-es/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) instalada en su Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 /// details | Información relativa a la gestión y configuración de los servicios de OVHcloud
 
@@ -241,12 +252,6 @@ Por eso, le invitamos a consultar el capítulo correspondiente a la interfaz que
 >>
 >> La ventana se divide en dos partes, **Correo entrante** y **Correo saliente**. Haga clic en la parte que desee modificar.
 >>
->> > [!primary]
->> >
->> > En nuestro ejemplo, el nombre del servidor utilizado es "pro**?**.mail.ovh.net". Deberá reemplazar el carácter "?" por el número correspondiente al servidor de su servicio Email Pro.
->> >
->> > Encuentre este número en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y luego `Email Pro`{.action}. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
->>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>
 > **Interfaz 2**
@@ -337,8 +342,6 @@ Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a detal
 > [!primary]
 >
 > Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en macOS, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/agregar-cuenta-de-correo-en-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
-
-[Configurar una cuenta Email Pro en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 [Configurar una cuenta Exchange en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 

@@ -12,29 +12,33 @@ Niniejszy przewodnik wyjaśnia, jak sprawdzić statystyki i logi generowane prze
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [hostingu](/links/web/hosting) z opcją CDN włączoną dla co najmniej jednej domeny.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
 ### Wyświetl statystyki usługi CDN
 
-Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
 >>
@@ -44,11 +48,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
 >>
 >> ![Statystyki i logi](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Zostaniesz przekierowany do narzędzia **OVHcloud Web Statistics**. W tym narzędziu kliknij na formularz `Wybór domeny`{.action} znajdujący się na górze strony, następnie wybierz nazwę domeny, dla której aktywny jest CDN.
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> W lewej kolumnie kliknij zakładkę `Cache`{.action}.
 >>
@@ -58,22 +62,16 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
 
 ### Wyświetl logi usługi CDN
 
-Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
 >>
@@ -83,13 +81,13 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
 >>
 >> ![Wyświetl logi](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Na nowej stronie, która się wyświetli kliknij przycisk `CDN`{.action} na pasku na górze strony.
 >>
 >> ![OSL CDN](/pages/assets/screens/other/web-tools/logs/osl-cdn.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Na nowej stronie, która się wyświetli:
 >>

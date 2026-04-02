@@ -1,5 +1,6 @@
 ---
-title: Envoyer des SMS permettant la réponse
+title: "Envoyer des SMS permettant la réponse"
+excerpt: "Découvrez comment envoyer des SMS avec réponse depuis votre espace client OVHcloud et gérer les options de réception des réponses"
 updated: 2023-12-29
 ---
 
@@ -95,7 +96,7 @@ Configurez alors une notification par e-mail ou par SMS.
 
 - Notification par e-mail
     - Expéditeur : renseignez obligatoirement une adresse e-mail valide vous appartenant.
-    - Adresse e-mail: renseignez l'adresse e-mail destinataire de la notification.
+    - Adresse e-mail : renseignez l'adresse e-mail destinataire de la notification.
 
 - Notification par SMS
     - Expéditeur : choisissez un expéditeur parmi ceux déjà validés dans votre compte SMS.

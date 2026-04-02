@@ -1,7 +1,7 @@
 ---
 title: 'Gestire la fatturazione di un account Exchange'
 excerpt: 'Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -12,15 +12,20 @@ I servizi Hosted Exchange e Private Exchange offrono una gestione flessibile del
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di una soluzione [Exchange](/links/web/emails-hosted-exchange).
 
-## Procedura
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Procedura
 
 ### Hosted Exchange
 
@@ -36,9 +41,9 @@ Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `A
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
-Accedi allo Spazio Cliente, clicca sul tuo nome utente in alto a destra e seleziona “I tuoi servizi”. Come puoi notare, è stato applicato un filtro per visualizzare soltanto la piattaforma Exchange su cui apportare la modifica.
+Verrai reindirizzato alla sezione “I tuoi servizi” dello Spazio Cliente OVHcloud. Come puoi notare, è stato applicato un filtro per visualizzare soltanto la piattaforma Exchange su cui apportare la modifica.
 
-Clicca sui tre puntini `...`{.action} a destra della piattaforma Exchange e pi su `Modifica la fatturazione`{.action}.
+Clicca sui tre puntini `...`{.action} a destra della piattaforma Exchange e poi su `Modifica la fatturazione`{.action}.
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
@@ -58,7 +63,7 @@ Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitut
 
 Una volta disattivato, il tuo account sarà sospeso alla data di scadenza. Per eliminare l’indirizzo email ospitato dall’account prima della data di scadenza, è necessario ripristinarlo.
 
-Clicca sulla scheda `Account email`{.action} della tua piattaforma, quindi clicca sui tre puntini`...`{.action}in corrispondenza dell’account interessato e infine clicca su `Ripristina`. Una volta ripristinato, il tuo account resterà vuoto fino alla scadenza.
+Clicca sulla scheda `Account email`{.action} della tua piattaforma, quindi clicca sui tre puntini `...`{.action} in corrispondenza dell’account interessato e infine clicca su `Ripristina`. Una volta ripristinato, il tuo account resterà vuoto fino alla scadenza.
 
 ### Private Exchange
 

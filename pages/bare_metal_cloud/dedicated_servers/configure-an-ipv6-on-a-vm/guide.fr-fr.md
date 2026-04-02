@@ -20,16 +20,27 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d'un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
-- Avoir installé un système d'exploitation permettant la virtualisation (Proxmox VE, Microsoft Hyper-V Server, etc.).
+- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d’un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
+- Avoir installé un système d’exploitation permettant la virtualisation (Proxmox VE, Microsoft Hyper-V Server, etc.).
 - Avoir toutes les informations relatives à votre IPv6 (préfixe, passerelle, etc.).
 - Avoir des connaissances de base en SSH et en réseau.
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
 Les sections suivantes contiennent les configurations des distributions que nous proposons actuellement et les distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à vous connecter à votre serveur en SSH ou via une session de connexion GUI (RDP pour un serveur Windows).
 
-Sur les serveurs dédiés, la première IPv6 est déclarée comme 2607:5300:xxxx:xxxx::/64. Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:xxxx:xxxx::/64`, la première IPv6 de votre serveur est : `2607:5300:xxxx:xxxx::/64`.
+Sur les serveurs dédiés, la première IPv6 est déclarée comme `2607:5300:xxxx:xxxx::/64`. Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:xxxx:xxxx::/64`, la première IPv6 de votre serveur est : `2607:5300:xxxx:xxxx::/64`.
 
 Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, nous vous invitons à prendre connaissance du tableau ci-dessous. Il référence des termes que nous utiliserons dans cette documentation :
 
@@ -50,8 +61,6 @@ La première étape consiste à récupérer la passerelle (gateway) IPv6 assign�
 
 #### Via votre espace client
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs dédiés`{.action}.
-
 La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}.
 
 ![configureipv6](images/ipv6_information.png){.thumbnail}
@@ -68,7 +77,7 @@ Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple :
 >
 
 > [!success]
-> Veuillez noter que les "0" de tête peuvent être supprimés dans une passerelle IPv6.
+> Veuillez noter que les `0` de tête peuvent être supprimés dans une passerelle IPv6.
 >
 > Exemple : IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` peut aussi être écrit comme `2607:5300:60:62ff:ff:ff:ff:ff`.
 >
@@ -118,7 +127,7 @@ Sélectionnez le réseau existant et cliquez sur `Edit`{.action}.
 
 ![configuration du conteneur](images/edit_network.png){.thumbnail}
 
-Complétez les champs IPV6 avec les bonnes informations.
+Complétez les champs IPv6 avec les bonnes informations.
 
 ![configuration du conteneur](images/configure_ipv6_container.png){.thumbnail}
 
@@ -196,7 +205,7 @@ Enregistrez vos modifications dans le fichier de configuration et quittez l'édi
 Appliquez la configuration :
 
 ```bash
-netplan apply
+sudo netplan apply
 ```
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
@@ -246,7 +255,7 @@ NetworkManager a précédemment stocké des profils réseau au format ifcfg dans
 Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration :
 
 ```bash
-sudo /etc/NetworkManager/system-connections
+cd /etc/NetworkManager/system-connections
 ```
 
 Utilisez la commande `ls` pour afficher le fichier de configuration réseau. Dans notre exemple, notre fichier s'appelle `ens18.nmconnection`.

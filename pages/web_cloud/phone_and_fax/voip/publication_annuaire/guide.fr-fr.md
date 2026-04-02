@@ -16,7 +16,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obligatoire d'y rattacher des coordonnées. Chez OVHcloud, vous avez la possibilité de réaliser cette démarche lors de votre commande ou par la suite, depuis votre espace client. Vous pouvez même choisir de publier ces informations dans les annuaires en ligne.
+Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obligatoire d'y rattacher des coordonnées. Chez OVHcloud, vous pouvez réaliser cette démarche lors de votre commande ou par la suite, depuis votre espace client. Vous pouvez même choisir de publier ces informations dans les annuaires en ligne.
 
 **Découvrez comment rattacher des informations à votre ligne ou numéro OVHcloud et les faire paraître dans les annuaires.**
 

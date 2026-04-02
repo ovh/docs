@@ -21,13 +21,24 @@ In dieser Anleitung erhalten Sie Schritt-für-Schritt-Anweisungen zum Deployment
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional).
 - Sie haben Grundkenntnisse in Networking.
 - Sie haben auf der [Stormshield-Website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm) einen Stormshield-Account erstellt.
 - Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
 - Sie haben eine Adressblock [Additional IP](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
 - Sie haben eine Stormshield Elastic Virtual Appliance Lizenz (**B**ring **Y**our **O**wn **L**icence) von [Partnern oder Drittanbietern](https://www.stormshield.com/partner/partner-finder/) erworben. Diese ist zur Installation und Konfiguration erforderlich.
+
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -133,7 +144,7 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 ### SNS EVA Instanzen konfigurieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.  Klicken Sie im linken Menü auf `Instanzen`{.action} unter **Compute** und finden Sie Ihre beiden SNS EVA Instanzen.
+Wählen Sie im Bereich `Public Cloud`{.action} das betreffende Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action} unter **Compute** und finden Sie Ihre beiden SNS EVA Instanzen.
 
 Greifen Sie für beide EVA SNS-Instanzen auf die VNC-Konsole zu, und konfigurieren Sie das Tastaturlayout und das Kennwort.
 

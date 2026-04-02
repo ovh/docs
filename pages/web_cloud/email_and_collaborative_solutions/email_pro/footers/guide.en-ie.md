@@ -11,9 +11,19 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
 - an [OVHcloud Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) solution already set up
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instructions
 
-Follow our guide [What do I do if my account is blocked for spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) in the “Microsoft collaborative solutions” section.
+Follow our guide [Creating automatic signatures](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers) in the “Microsoft collaborative solutions” section.

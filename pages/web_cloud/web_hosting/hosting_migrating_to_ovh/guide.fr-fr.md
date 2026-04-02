@@ -21,7 +21,17 @@ Ce guide vous présente les différentes actions à réaliser pour migrer l'ense
 - Avoir accès à la zone DNS (Domain Name System) active de votre nom de domaine.
 - Avoir accès aux fichiers et à la base de données de votre site web chez votre hébergeur actuel.
 - Disposer des identifiants (utilisateur, mot de passe, serveur) de vos adresses e-mail actuelles.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

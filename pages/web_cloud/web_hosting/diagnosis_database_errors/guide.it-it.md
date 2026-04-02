@@ -20,8 +20,18 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting web](/links/web/hosting) attiva.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Utilizzare una delle nostre offerte di database: [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -56,7 +66,7 @@ Verifica la corrispondenza **esatta** tra le credenziali di connessione a [PhpMy
 
 Modifica, se necessario, la [password del tuo database](/pages/web_cloud/web_hosting/sql_change_password).
 
-##### Esempio per WordPress
+#### Esempio per WordPress
 
 Se il tuo sito visualizza un messaggio **"Errore durante la connessione al database"** e non è interessato da un [incidente](https://web-cloud.status-ovhcloud.com/), accedi al tuo hosting e apri la directory contenente il tuo sito (di default la cartella `wwww`) ...
 
@@ -96,7 +106,7 @@ Hai ricevuto un'email dai nostri servizi che indica che la quantità di dati sul
 
 Tre metodi ti permettono di sbloccare il tuo database:
 
-##### Metodo 1: attiva il tuo abbonamento su un'offerta superiore
+#### Metodo 1: attiva il tuo abbonamento su un'offerta superiore
 
 Se disponi di una formula **Starter** o **Personale**, ti consigliamo di passare all'[offerta di hosting superiore](/links/web/hosting). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
 
@@ -125,7 +135,7 @@ Puoi anche migrare i tuoi dati su un nuovo database:
 > Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-##### Metodo 3: eliminare i dati non necessari
+#### Metodo 3: eliminare i dati non necessari
 
 Dopo aver effettuato un [backup del tuo database](/pages/web_cloud/web_hosting/sql_database_export), accedi alla tua interfaccia [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database) per eliminare i dati inutili grazie ai comandi Drop, Delete e Truncate.
 
@@ -203,7 +213,7 @@ USE `Database-Name`;
 
 (`Database-Name`: inserisci il nome del database indicato nel tuo [Spazio Cliente OVHcloud](/links/manager).)
 
-##### "MySQL server has gone away"
+#### "MySQL server has gone away"
 
 >
 > **"404 ERROR MySQL server has gone away"**
@@ -221,7 +231,7 @@ Per risolvere questa anomalia, puoi:
 
 ### Impossibile accedere a PhpMyAdmin
 
-##### "Access denied for user"
+#### "Access denied for user"
 
 >
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**

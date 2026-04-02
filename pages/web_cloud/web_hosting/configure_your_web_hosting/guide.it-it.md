@@ -45,7 +45,17 @@ Per riassumere, modificare la configurazione dell’hosting Web dallo [Spazio Cl
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting), ad eccezione di una [soluzione di hosting Cloud Web](/links/web/hosting-cloud-web-offer).
-- Avere accesso al piano di hosting Web dallo [Spazio Cliente OVHcloud](/links/manager) o conoscere le informazioni di accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

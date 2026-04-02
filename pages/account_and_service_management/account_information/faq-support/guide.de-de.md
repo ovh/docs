@@ -217,7 +217,7 @@ Entdecken und vergleichen Sie [hier](/links/support) die verfügbaren Support-Le
 
 /// details | Wo kann ich meinen Support-Level finden?
 
-Um den Support-Level für Ihre Kundenkennung zu ermitteln, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und klicken Sie oben rechts auf den Account-Namen. Der Support-Level wird rechts neben **Support** angezeigt. Wenn Sie keinen kostenpflichtigen Support abonniert haben, ht Ihr Kunden-Account den Support-Level Standard.
+Um den Support-Level für Ihre Kundenkennung zu ermitteln, öffnen Sie die Seite [Mein Account](/links/control-panel/account-dashboard). Der Support-Level wird rechts neben **Support** angezeigt. Wenn Sie keinen kostenpflichtigen Support abonniert haben, ht Ihr Kunden-Account den Support-Level Standard.
 
 Entdecken und vergleichen Sie [hier](/links/support) die verfügbaren Support-Level.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Migrar cuentas de correo electrónico con OVHcloud Mail Migrator'
 excerpt: 'Descubra cómo migrar sus cuentas de correo electrónico a OVHcloud con nuestra herramienta OVHcloud Mail Migrator'
-updated: 2025-11-25
+updated: 2026-03-30
 ---
 
 <style>
@@ -108,7 +108,7 @@ Complete las informaciones según el tipo de cuenta:
 
 > [!warning]
 >
-> Si migra una cuenta que dispone de funcionalidades que la cuenta de destino no posee, **deberá guardar por sus propios medios los elementos que no puedan ser migrados por OMM**. Para ayudarle, consulte nuestro guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+> Si migra una cuenta que dispone de funcionalidades que la cuenta de destino no posee, **deberá guardar por sus propios medios los elementos que no puedan ser migrados por OMM**. Para ayudarle, consulte nuestra guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 Una vez completados los parámetros de las cuentas de origen y de destino, haga clic en:
 

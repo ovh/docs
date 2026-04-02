@@ -15,7 +15,17 @@ Unser Cloud Web Hosting Angebot kombiniert 20 Jahre Webhosting-Erfahrung mit der
 - Sie verfügen über ein [Cloud Web Hosting](/links/web/hosting-cloud-web-offer) Angebot.
 - Sie haben die Bestätigungs-E-Mail zur Installation Ihres Cloud Web Hostings erhalten.
 - Sie besitzen eine [Domain](/links/web/domains), über die Ihre Website erreichbar sein wird.
-- Sie sind in Ihrem [Kundencenter](/links/manager) eingeloggt.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

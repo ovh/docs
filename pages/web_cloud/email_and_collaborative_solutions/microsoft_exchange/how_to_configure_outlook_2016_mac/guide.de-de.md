@@ -14,6 +14,17 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 - Die Microsoft Outlook Anwendung ist auf Ihrem Mac installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 > [!primary]
 >
 > Sie verwenden Outlook für Windows? Die entsprechende Dokumentation finden Sie hier: [Konfiguration von Exchange auf Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
@@ -39,7 +50,7 @@ Klicken Sie nun auf Ihre E-Mail-Adresse und dann auf `Weiter`{.action}. Falls ei
 |E-Mail-Adresse|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in Ihrer Outlook App unterscheiden können.|
 |DOMAIN\Benutzername oder E-Mail-Adresse|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Kennwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
-|Server|Je nach DNS-Konfiguration Ihrer Domain kann die Angabe des Servers optional sein. Falls notwendig, tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVHcloud Kundencenter](/links/manager), indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} klicken und dort in den Bereich `Verbindung`{.action} gehen.|
+|Server|Je nach DNS-Konfiguration Ihrer Domain kann die Angabe des Servers optional sein. Falls notwendig, tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Klicken Sie auf [diesen Link](/links/control-panel/web-exchange), um auf den Bereich `Exchange`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.|
 
 Nachdem Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Sind die Angaben korrekt, wird die Verbindung zu Ihrem Account hergestellt.
 

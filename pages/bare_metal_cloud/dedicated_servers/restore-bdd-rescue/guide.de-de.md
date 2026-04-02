@@ -17,7 +17,17 @@ Der Rescue-Modus stellt einen permanenten Zugriff auf Ihre Daten bereit, auch we
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps) oder eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem Kunden-Account (ausgenommen Windows-Systeme).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

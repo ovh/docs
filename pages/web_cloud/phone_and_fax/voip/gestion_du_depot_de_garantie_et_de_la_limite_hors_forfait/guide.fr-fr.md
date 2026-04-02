@@ -27,7 +27,7 @@ Vos lignes téléphoniques OVHcloud appartiennent à un ou plusieurs groupes de 
 
 ## Généralités
 
-Chaque groupe de téléphonie possède une autorisation de hors-forfait globale. C'est un hors forfait maximum par mois qui ne pourra être dépassé par votre groupe, c'est-à-dire par l'ensemble des lignes et numéros qui le composent.
+Chaque groupe de téléphonie possède une autorisation de hors-forfait globale. Ce plafond mensuel de hors-forfait s'applique à l'ensemble des lignes et numéros du groupe.
 Cette autorisation de hors-forfait est en fait composée de 2 entités :
 
 - **La limite de base**, une valeur non personnalisée.
@@ -118,7 +118,7 @@ Le dépôt de garantie sera alors crédité sur votre compte prépayé OVHcloud,
 
 Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauche puis cliquez sur l’onglet `Administration`{.action} et sur `Supprimer le groupe`{.action}.
 
-![Suppression groupe de téléphonie](images/SupprGroup.png)
+![Suppression groupe de téléphonie](images/SupprGroup.png){.thumbnail}
 
 > [!warning]
 >

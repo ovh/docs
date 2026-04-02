@@ -15,7 +15,18 @@ Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania 
 - Posiadanie [hostingu WWW OVHcloud](/links/web/hosting)
 - Posiadanie bazy danych utworzonej w ramach [pakietu hostingowego WWW OVHcloud](/links/web/hosting)
 - Posiadanie kopii zapasowej danych, które chcesz importować do bazy lub które chcesz przywrócić
-- W zależności od metody importu, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager) lub posiadanie informacji umożliwiających zalogowanie do bazy danych
+- W zależności od metody importu, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w Panelu klienta lub posiadanie informacji umożliwiających zalogowanie do bazy danych
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

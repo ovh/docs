@@ -12,6 +12,17 @@ This guide will show you how to create a Packer configuration file to create you
 
 You'll need an [OVHcloud Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) and a terminal.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Install Packer
 
 Packer can be downloaded from the official website (curently [here](https://www.packer.io/downloads.html) ) and you'll need to `unzip` it.

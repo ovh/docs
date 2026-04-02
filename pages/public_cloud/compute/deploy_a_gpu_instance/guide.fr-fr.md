@@ -20,6 +20,17 @@ Les instances GPU sont techniquement similaires aux instances de la gamme 2017 m
 - Un projet Public Cloud avec accès aux régions où la plupart des GPU sont disponibles (GRA7, GRA9, GRA11 et BHS5).
 - [Une clé SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) créée pour déployer une instance GPU Linux.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## En pratique
 
 Vous trouverez ci-dessous les informations pour déployer une instance GPU via Linux ou via Windows.
@@ -33,7 +44,7 @@ Toutes les images que nous proposons peuvent être utilisées sur une instance G
 > Si vous n'êtes pas à l'aise avec la compilation manuelle de module noyau, nous vous recommandons d'utiliser une distribution officiellement supportée par Nvidia, pour laquelle ils fournissent des drivers « clé en main » : <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Une fois connecté à votre [espace client OVHcloud](/links/manager), cliquez sur l'onglet `Public Cloud`{.action}. Sélectionnez votre projet Public Cloud et cliquez sur `Instances`{.action} dans le menu de gauche sous l'onglet **Compute**. Ensuite, cliquez sur `Créer une instance`{.action} et choisissez une instance GPU compatible :
+Cliquez sur `Instances`{.action} dans le menu de gauche sous l'onglet **Compute**. Ensuite, cliquez sur `Créer une instance`{.action} et choisissez une instance GPU compatible :
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -105,7 +116,7 @@ Nous fournissons des images spéciales, reposant sur un BIOS virtuel UEFI, qui p
 > Nous offrons la possibilité d'installer les images spéciales sur quelques modèles sélectionnés (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). En outre, selon la région sélectionnée, ces images spéciales peuvent ne pas être disponibles.
 >
 
-Une fois connecté à [votre espace client OVHcloud](/links/manager), rendez-vous dans votre projet Public Cloud et cliquez sur `Instances`{.action} dans le menu de gauche sous l'onglet **Compute**. Ensuite, cliquez sur `Créer une instance`{.action} et choisissez une instance GPU compatible :
+Cliquez sur `Instances`{.action} dans le menu de gauche sous l'onglet **Compute**. Ensuite, cliquez sur `Créer une instance`{.action} et choisissez une instance GPU compatible :
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 

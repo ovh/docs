@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Configurar una dirección de correo electrónico en Outlook clásico para Windows"
 excerpt: "Cómo configurar una cuenta MX Plan en Outlook clásico para Windows"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -37,6 +37,17 @@ Las direcciones de correo electrónico de la oferta **MX Plan** y [Zimbra Starte
     - [Zimbra](/links/web/emails-zimbra) Starter (solo).
 - Disponer de la [nueva versión de Outlook](https://support.microsoft.com/es-es/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) instalada en su Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 /// details | Información relativa a la gestión y configuración de los servicios de OVHcloud
 

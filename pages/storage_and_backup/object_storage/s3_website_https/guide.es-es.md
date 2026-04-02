@@ -1,7 +1,7 @@
 ---
-title: Object Storage - Habilitar HTTPS en un sitio web estático utilizando un dominio personalizado (EN)
+title: Object Storage - Enabling HTTPS on a static website using a custom domain
 excerpt: Learn how to configure your website and the OVHcloud Load Balancer to enable HTTPS
-updated: 2023-06-06
+updated: 2026-03-06
 ---
 
 ## Objective
@@ -9,7 +9,7 @@ updated: 2023-06-06
 OVHcloud Object Storage can be used to host a static website inside an Object Storage bucket.
 
 > [!primary]
-> A static website contains only static content (HTML pages, images, videos, client side scripts) whereas a dynamic website relies on server-side processing to process data and help render content.
+> A static website contains only static content (HTML pages, images, videos, client-side scripts) whereas a dynamic website relies on server-side processing to process data and help render content.
 
 However, OVHcloud Object Storage static website hosting does not support HTTPS. If you want to use HTTPS, you can use OVHcloud Load Balancer to serve a static website hosted on OVHcloud Object Storage and act as an SSL gateway.
 
@@ -17,13 +17,23 @@ However, OVHcloud Object Storage static website hosting does not support HTTPS. 
 
 ## Requirements
 
-The following are the prerequisites to have in order to enable https:
+To enable HTTPS, you need:
 
-- An [OVHcloud Load Balancer](/links/network/load-balancer) which will serve the role of an SSL gateway and can offer protection against DDOS attacks.
+- An [OVHcloud Load Balancer](/links/network/load-balancer) which will serve the role of an SSL gateway and can offer protection against DDoS attacks.
 - A registered [domain name](/links/web/domains).
 - You need to order a TLS certificate associated with your domain name at OVHcloud (optional if you already have a trusted TLS certificate associated with your domain name).
 - You have to [enable web hosting on your Object Storage bucket](/pages/storage_and_backup/object_storage/s3_website).
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -31,7 +41,7 @@ The following are the prerequisites to have in order to enable https:
 
 #### Step 1.1 - Add your certificate
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click `Load Balancer`{.action}.
+Click `Load Balancer`{.action}.
 
 Select your Load Balancer from the list, click the `SSL certificates`{.action} tab then click `Add an SSL certificate`{.action}.
 
@@ -48,7 +58,7 @@ You now need to configure a server cluster and add it to your Load Balancer. A s
 
 Still from the Load Balancer section of the OVHcloud Control Panel, click the `Server clusters`{.action} tab then click `Add a server cluster`{.action}.
 
-![server custer configuration](images/serv-cluster-01.png){.thumbnail}
+![server cluster configuration](images/serv-cluster-01.png){.thumbnail}
 
 Enter the configuration of the new server cluster:
 
@@ -57,23 +67,26 @@ Enter the configuration of the new server cluster:
 - Port: 80
 - Datacenter: Choose the region in which you have hosted your website
 
-![server custer configuration](images/serv-cluster-02.png){.thumbnail}
+![server cluster configuration](images/serv-cluster-02.png){.thumbnail}
 
 You now need to add servers to your server cluster. Click the `Add a server`{.action} button.
 
-![server custer configuration](images/serv-cluster-03.png){.thumbnail}
+![server cluster configuration](images/serv-cluster-03.png){.thumbnail}
 
 Enter the configuration information of your server:
 
 - Name (optional)
-- IPv4 address: Enter the public IP associated with your static website default URL in the form of `{bucket}.s3-website.{region}.io.cloud.ovh.net`
+- IPv4 address: Enter the public IP associated with your static website default URL in the form `<bucket_name>.s3-website.<region>.io.cloud.ovh.net`
 
 *You can retrieve this IP address by doing a dig command on the URL.*
 
-**Example**: using dig command
+**Example**: using `dig`
 
 ```sh
-lxxxx@LWI1XXXXXX:~$ dig my-site.s3-website.gra.io.cloud.ovh.net
+dig <bucket_name>.s3-website.<region>.io.cloud.ovh.net
+```
+
+```text
 
 ; <<>> DiG 9.16.1-Ubuntu <<>> my-site.s3-website.gra.io.cloud.ovh.net
 ;; global options: +cmd
@@ -95,19 +108,21 @@ my-site.s3-website.gra.io.cloud.ovh.net. 3600 IN A 141.95.161.77
 ;; MSG SIZE  rcvd: 84
 ```
 
-**Example**: using host command
+**Example**: using `host`
 
 ```sh
-lxxxx@LWI1XXXXXX:~$ host my-site.s3-website.gra.io.cloud.ovh.net
-my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
-
+host <bucket_name>.s3-website.<region>.io.cloud.ovh.net
 ```
 
-![server custer configuration](images/serv-cluster-04.png){.thumbnail}
+```text
+my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
+```
+
+![server cluster configuration](images/serv-cluster-04.png){.thumbnail}
 
 #### Step 1.3 - Configure your front-ends
 
-The next steps consists in adding front-ends to your Load Balancer. A front-end will be the internet facing element of your Load Balancer and is responsible for handling and routing incoming requests.
+The next step is to add front-ends to your Load Balancer. A front-end will be the internet facing element of your Load Balancer and is responsible for handling and routing incoming requests.
 
 In the Load Balancer section of the OVHcloud Control Panel, click the `Front-ends`{.action} tab then click `Add a front-end`{.action}.
 
@@ -121,7 +136,7 @@ Add 2 frontends:
     - port: 80
     - datacenter: all
     - default server cluster: none
-    - advanced settings > HTTP Redirection: `https://<your_domain_name>`
+    - advanced settings > HTTP Redirection: `https://<domain_name>`
 - One frontend that will handle all incoming HTTPS requests and perform the role of the SSL gateway
     - name (optional)
     - protocol: HTTPS
@@ -129,13 +144,13 @@ Add 2 frontends:
     - datacenter: the region where your bucket sits
     - default server cluster: the server cluster previously created
     - certificate: the certificate that you created
-    - advanced settings > HTTP Header: Host `<default_website_url>` in the form `<bucket>.s3-website.<region>.io.cloud.ovh.net`
+    - advanced settings > HTTP Header: Host `<website_endpoint>` in the form `<bucket_name>.s3-website.<region>.io.cloud.ovh.net`
 
 ![frontend configuration](images/front-2.PNG){.thumbnail}
 
 #### Step 1.4 - Apply changes
 
-Once you created and configured all the ressources, do not forget to click the `Apply configuration`{.action} button to apply all the changes to the Load Balancer.
+Once you have created and configured all the resources, do not forget to click the `Apply configuration`{.action} button to apply all the changes to the Load Balancer.
 
 ![apply LB configuration](images/LB-apply-conf.PNG){.thumbnail}
 
@@ -144,7 +159,7 @@ Once you created and configured all the ressources, do not forget to click the `
 > [!warning]
 > This section is relevant only if your domain name is registered at OVHcloud. If you have an external domain name, please check with your provider.
 
-CLick the `Web Cloud`{.action} tab of your OVHcloud Control Panel and select your domain name from the `Domain names`{.action} section. 
+Click the `Web Cloud`{.action} tab of your OVHcloud Control Panel and select your domain name from the `Domain names`{.action} section.
 
 Open the `DNS zone`{.action} tab.
 

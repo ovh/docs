@@ -37,6 +37,17 @@ By the end of this guide, you will have a reliable, fully automated backup syste
 - An S3<sup>1</sup>-compatible Object Storage service to host your backups.
 - A basic understanding of GNU/Linux system administration.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Architecture Overview
 
 The automated backup system is built around three main components.
@@ -68,10 +79,7 @@ Using Object Storage ensures your backups remain available even if the backup se
 
 **Access Object Storage**
 
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. Navigate to `Public Cloud`{.action}.
-3. If no project exists, create a new Public Cloud project.
-4. In the left-hand menu, go to `Object Storage`{.action}.
+In the left-hand menu, go to `Object Storage`{.action}.
 
 **Create an Object Storage User**
 

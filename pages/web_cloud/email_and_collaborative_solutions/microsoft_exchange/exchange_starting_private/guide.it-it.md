@@ -13,7 +13,17 @@ Se hai appena ordinato una soluzione Private Exchange, segui questi passaggi per
 ## Prerequisiti
 
 - Aver ordinato una [soluzione Private Exchange OVHcloud](/links/web/emails-private-exchange).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 
@@ -69,7 +79,7 @@ Una volta completato lo [Step 2](./#step-2-avvia-la-piattaforma), ricevi un’em
 
 Questa email è inviata dall’organismo che rilascia il certificato SSL e ha come oggetto:
 
-> **ORDER #1111111 - Domain Control Validation for exchange.votredomaine.com**
+> **ORDER #1111111 - Domain Control Validation for exchange.tuodominio.com**
 
 Copia il codice presente nell’email e clicca sul link di conferma del certificato SSL.
 
@@ -89,7 +99,7 @@ Una volta che il tuo server è pronto e disponibile, riceverai un’email di con
 
 Per aggiungere un dominio alla tua piattaforma e configurare gli account; consulta la nostra guida [“Aggiungere un dominio su Exchange”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) 
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Modificare una zona DNS](/pages/web_cloud/domains/dns_zone_edit)
 

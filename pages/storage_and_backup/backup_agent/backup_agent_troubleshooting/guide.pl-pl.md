@@ -57,6 +57,17 @@ Poniżej znajduje się lista potencjalnych problemów, które mogą wystąpić w
 
 - Co najmniej jeden serwer Bare Metal z zainstalowaną Aplikacją Backup. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Jak skonfigurować pierwsze kopie zapasowe](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)".
 
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
+
 ## Lista możliwych problemów
 
 /// details | Moja Aplikacja Backup nie może się połączyć z Twoim serwerem.

@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Konfigurieren Sie Ihre E-Mail-Adresse auf klassischem Outlook für Windows"
 excerpt: "Erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse mit dem klassischen Outlook für Windows konfigurieren"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -37,6 +37,17 @@ Die E-Mail-Adressen der Angebote **MX Plan** und [Zimbra](/links/web/emails-zimb
     - [Zimbra](/links/web/emails-zimbra) Starter.
 - Sie benötigen die [neue Outlook-Version](https://support.microsoft.com/de-de/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627), installiert auf Ihrem Windows-System.
 - Sie benötigen die Zugangsdaten für die E-Mail-Adresse, die Sie konfigurieren möchten.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 /// details | Informationen zur Verwaltung und Konfiguration der OVHcloud Dienste
 
@@ -247,7 +258,7 @@ Aus diesem Grund bitten wir Sie, den Abschnitt zu lesen, der der Benutzeroberfl�
 >> >
 >> > In unserem Beispiel wird der Servername "pro**?**.mail.ovh.net" verwendet. Sie müssen das Zeichen "?" durch die Zahl ersetzen, die dem Server Ihres E-Mail Pro-Dienstes entspricht.
 >> >
->> > Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action} und anschließend `E-mail Pro`{.action}. Der Servername ist im Feld **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
+>> > Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action} und anschließend `E-Mail Pro`{.action}. Der Servername ist im Feld **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>

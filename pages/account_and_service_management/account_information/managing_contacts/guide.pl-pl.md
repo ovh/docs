@@ -28,13 +28,23 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Dostęp do adresu e-mail podanego w profilu.
 - Wystarczające uprawnienia dotyczące danej usługi.
 - Posiadanie identyfikatora klienta nowego kontaktu (dla którego wprowadzasz zmianę).
 - Nowy kontakt musi mieć dostęp do adresu e-mail podanego w jego profilu.
 - Stary i nowy kontakt księgowy muszą mieć uregulowane płatności.
 - Nowy kontakt księgowy musi dysponować ważnym sposobem płatności na swoim koncie OVHcloud.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Zarządzanie kontaktami](/links/control-panel/account-contacts)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje kontakty`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## W praktyce
 
@@ -44,7 +54,7 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ### Dostęp do zarządzania kontaktami <a name="gestion_des_contacts"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje kontakty`{.action}.
+Otwórz stronę [Zarządzanie kontaktami](/links/control-panel/account-contacts).
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -85,7 +95,7 @@ Możesz wyznaczyć wyłącznie inny kontakt księgowy na swoje miejsce. Konieczn
 
 ### Zatwierdzenie, odrzucenie lub śledzenie zmiany kontaktu
 
-Aby śledzić bieżące wnioski i zarządzać nimi, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje kontakty`{.action}. Kliknij kartę `Moje wnioski`{.action}. Tutaj możesz zaakceptować lub odrzucić wniosek.
+Aby śledzić bieżące wnioski i zarządzać nimi, kliknij kartę `Moje wnioski`{.action}. Tutaj możesz zaakceptować lub odrzucić wniosek.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
 

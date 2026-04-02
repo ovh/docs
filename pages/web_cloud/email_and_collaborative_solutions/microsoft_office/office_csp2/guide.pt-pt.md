@@ -12,9 +12,19 @@ O Office 365 Revendedores (CSP2) é um serviço que lhe permite beneficiar de di
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Dispor de um [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier) 
 - Estar inscrito no programa CSP (Cloud Solution Provider) da Microsoft enquanto revendedor indireto na região em que exerce a sua atividade (por exemplo: "UE" para a Europa)
+
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 > [!warning]
 >
@@ -32,8 +42,6 @@ O MPN ID permite-lhe obter um backup das subscrições que encomendará através
 ## Instruções
 
 ### Encomendar um serviço Office 365 Revendedores
-
-Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente OVHcloud](/links/manager). Depois de conectar, selecione `Sunrise`{.action} no painel superior e clique em `Office 365 Revendedores`{.action}.
 
 - *Facultativo*: pode definir um **subdomínio personalizado** durante a criação de uma nova plataforma, selecionando a opção prevista para o efeito (sob reserva dos nomes disponíveis).
 - Introduza o seu MPN ID previamente criado junto da Microsoft.
@@ -55,9 +63,7 @@ Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente 
 
 ### Gerir o serviço Office 365 Revendedor
 
-Depois de criado e disponível o serviço Office 365, poderá geri-lo a partir da [Área de Cliente OVHcloud](/links/manager).
-
-Para isso, aceda à secção `Sunrise`{.action}. No menu à esquerda, escolha o `Office 365 Revendedores`{.action} e selecione o serviço.
+Depois de criado e disponível o serviço Office 365, poderá geri-lo. Selecione o serviço.
 
 Surgem as seguintes informações:
 

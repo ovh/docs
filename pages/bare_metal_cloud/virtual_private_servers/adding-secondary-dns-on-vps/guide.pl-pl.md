@@ -18,7 +18,17 @@ Jeśli skonfigurujesz serwer VPS jako serwer DNS, możesz użyć Secondary DNS O
 
 - Domena, do której masz dostęp jako administrator
 - Serwer [VPS](/links/bare-metal/vps) w Panelu klienta OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
@@ -29,8 +39,6 @@ Jeśli skonfigurujesz serwer VPS jako serwer DNS, możesz użyć Secondary DNS O
 ## W praktyce
 
 ### Etap 1: odzyskanie kodu <a name="retrievecode"></a>
-
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 Przejdź do zakładki `DNS secondary`{.action} i kliknij przycisk `Dodaj domenę`{.action}.
 

@@ -1,7 +1,7 @@
 ---
 title: "Zarządzanie kontaktem właściciela nazwy domeny"
 excerpt: "Dowiedz się, jak zweryfikować, poprawić lub uzupełnić dane kontaktowe właściciela nazwy domeny po otrzymaniu wiadomości e-mail z alertem od OVHcloud"
-updated: 2026-01-16
+updated: 2026-03-19
 ---
 
 ## Wprowadzenie
@@ -24,11 +24,20 @@ W takim przypadku OVHcloud nie będzie mógł zaoferować żadnego zwrotu pieni�
 ## Wymagania początkowe
 
 - Masz zarejestrowaną [nazwę domeny](/links/web/domains) w OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Otrzymałeś wiadomość e-mail od OVHcloud informującą, że wymagana jest akcja dotycząca danych kontaktowych właściciela Twojej nazwy domeny.
 - Sprawdź poniższe punkty, aby upewnić się, że nie jest to wiadomość oszukańcza:
     - Temat wiadomości zawiera Twój NIC handle (np.: `aa00000-ovh`) i Twoją nazwę domeny (np.: `domain.tld`).
-    - Adres URL w wiadomości zaczyna się od: `https://www.ovh.com/manager/#/web/domain/operation/`.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 
@@ -40,30 +49,20 @@ Po dokonaniu zamówienia, właściciel nazwy domeny otrzyma wiadomość e-mail o
 
 Kliknięcie w `Potwierdź swój adres e-mail`{.action} spowoduje otwarcie nowej strony z linkiem bezpośrednio weryfikującym adres e-mail właściciela.
 
-Jeśli ten sposób nie zadziała, właściciel może ręcznie zweryfikować swój adres e-mail, korzystając z jednorazowego kodu dostępowego podanego w wiadomości i klikając w `Formularz weryfikacji e-maila`{.action}.
-
-![Weryfikacja e-maila kontaktu właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
-
 ![Weryfikacja e-maila CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
 
 ### 2 - Popraw lub uzupełnij dane kontaktowe właściciela nazwy domeny jako administrator
 
-Kliknij w karty poniżej, aby wyświetlić każdy z **5** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Domeny`{.action}, a następnie wybierz nazwę domeny, która jest dotyczy.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz nazwę domeny, która jest dotyczy.
 >>
 >> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się otworzy, sprawdź, czy Twoja nazwa domeny jest objęta procedurą, ponieważ istnieje baner (żółty lub czerwony) wskazujący na operację do wykonania.
 >>
@@ -71,13 +70,13 @@ Kliknij w karty poniżej, aby wyświetlić każdy z **5** kroków.
 >>
 >> ![Zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Na nowej stronie przejdź do pola **Właściciel**, następnie kliknij przycisk `Zmodyfikuj`{.action}.
 >>
 >> ![Zarządzanie kontaktami i właścicielami](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> > [!warning]
 >> >
@@ -131,38 +130,34 @@ Dla niektórych rozszerzeń (np.: .fr, .it, .es), administrator domeny może bez
 > Jeśli poprawki w pierwszej części tego przewodnika wymagały zainicjowania zmiany właściciela dla nazwy domeny, ukończ zmianę właściciela **przed** kontynuowaniem działań opisanych w tym przewodniku.
 >
 
-Kliknij w karty poniżej, aby wyświetlić każdy z **4** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Operacje w Toku`{.action}, a następnie znajdź nazwę domeny w liście, która się pojawi.
+>> Przejdź na stronę [Operacje w Toku](/links/control-panel/web-ongoing-operations), a następnie znajdź odpowiednią nazwę domeny na wyświetlonej liście.
 >>
 >> ![Trwające operacje](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Kliknij przycisk `⁝`{.action} po prawej stronie, a następnie `Zmień operację`{.action}.
 >>
 >> ![Operacja nazwy domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W wyświetlonym oknie zaznacz opcję `Wznów operację`{.action}, następnie kliknij `Zatwierdź`{.action}.
 >>
 >> ![Dane operacji na domenie](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
-
-Operacja zajmie kilka minut, aby zostać ukończona. Odśwież stronę `Operacje na nazwach domen`, gdzie znajdowała się operacja korekty kontaktu dla Twojej nazwy domeny.
-
-Jeśli operacja została ukończona pomyślnie, wiersz dla przetworzonej operacji nie pojawia się już.
-
-Jeśli nie jest to prawdą, wymagana jest korekta danych kontaktowych właściciela nazwy domeny. W takim przypadku, proszę postępować zgodnie z tym przewodnikiem od początku, aby rozwiązać problem.
+>>
+> **Krok 4**
+>>
+>> Operacja zajmie kilka minut, aby zostać ukończona. Odśwież stronę `Operacje na nazwach domen`, gdzie znajdowała się operacja korekty kontaktu dla Twojej nazwy domeny.
+>>
+>> Jeśli operacja została ukończona pomyślnie, wiersz dla przetworzonej operacji nie pojawia się już.
+>>
+>> Jeśli nie jest to prawdą, wymagana jest korekta danych kontaktowych właściciela nazwy domeny. W takim przypadku, proszę postępować zgodnie z tym przewodnikiem od początku, aby rozwiązać problem.
 
 ## Sprawdź również
 

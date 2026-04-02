@@ -28,8 +28,18 @@ Si ha alcanzado la capacidad máxima de su disco adicional, puede añadir almace
 
 - Tener una [instancia Public Cloud](/links/public-cloud/compute) en su proyecto de Public Cloud.
 - Tener un [disco adicional](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creado en su proyecto.
-- Tienes acceso a su [área de cliente de OVHcloud](/links/manager).
 - Tener acceso administrativo (sudo) a su instancia a través de SSH (Linux) o RDP (Windows).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 

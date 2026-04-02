@@ -1,6 +1,6 @@
 ---
 title: 'Wysyłanie wiadomości SMS z adresu URL — http2sms'
-excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS z adresu http'
+excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS za pomocą narzędzia Wget i zapytań HTTP bezpośrednio z paska adresu przeglądarki internetowej'
 updated: 2020-05-20
 ---
 
@@ -21,7 +21,7 @@ Wysyłanie wiadomości SMS odbywa się przez zapytanie HTTPS oraz uzupełnienie 
 
 ![http2sms](images/img_4011.jpg){.thumbnail}
 
-### Etap 1: uzupełnienie pól obowiązkowych
+### Etap 1: Uzupełnienie pól obowiązkowych
 
 Adres URL musi mieć następującą formę: 
 
@@ -42,7 +42,7 @@ Poniższe parametry muszą być rozdzielone znakami &. Wszystkie symbole X zast�
 
 Domyślnie wiadomość jest wysyłana natychmiast.
 
-### Etap 2: dodawanie pól opcjonalnych
+### Etap 2: Dodawanie pól opcjonalnych
 
 W temacie możesz dodać pola opcjonalne, jak w poniższym przykładzie:
 
@@ -75,7 +75,7 @@ Wszystkie symbole X zastąp następującymi informacjami:
 
 > [!primary]
 >
-> **Szczegóły możliwego kodowania *smsCoding**
+> **Szczegóły możliwego kodowania *smsCoding***
 > 
 > *1* w przypadku kodowania 7-bitowego
 > 
@@ -86,7 +86,7 @@ Wszystkie symbole X zastąp następującymi informacjami:
 >Aby uzyskać więcej informacji na temat dozwolonych znaków z kodowaniu 7-bitowym, zapoznaj się z [załącznikiem](#zalacznik) na dole tego przewodnika.
 >
 
-### Etap 3: analiza wysyłki
+### Etap 3: Analiza wysyłki
 
 Po wysłaniu wiadomości kod zwrotny API poinformuje Cię, czy Twoja wiadomość została wysłana pomyślnie lub czy wysyłka zakończyła się niepowodzeniem.
 Kod powyżej 100 i poniżej 200 wskazuje, że wiadomość została wysłana pomyślnie.
@@ -117,7 +117,7 @@ W razie niepowodzenia przyczyna jest zapisywana:
 <?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more informations : https://help.ovhcloud.com/csm/pl-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051387</message></response>
 ```
 
-#### json
+#### JSON
 
 - W przypadku powodzenia:
 

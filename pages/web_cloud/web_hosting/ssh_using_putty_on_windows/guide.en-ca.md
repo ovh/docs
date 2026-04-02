@@ -28,13 +28,23 @@ details[open]>summary::before {
 
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) installed on your local device
 - A basic understanding of the [SSH protocol and its usage](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. This tutorial will illustrate how to use OVHcloud solutions with external tools. You may need to adapt some specific instructions to the operating system of your local device or your server.
 >
 > We recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](/links/community) if you experience any issues.
 >
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

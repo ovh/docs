@@ -1,23 +1,23 @@
 ---
 title: Cloud Archive Swift - Capacités et limitations
 excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
-updated: 2021-09-23
+updated: 2026-03-06
 ---
 
 ## Objectif
 
-Ce guide à pour objectif de vous présenter les principales capacités et limitations pour la gestion de vos conteneurs.
+Ce guide a pour objectif de vous présenter les principales capacités et limitations pour la gestion de vos conteneurs.
 
 ## En pratique
 
 > [!primary]
 >
-> Vous pouvez consulter une partie des ces informations directement depuis un navigateur en vous rendant sur : `https://storage.<region>.cloud.ovh.net/info`, ou, si vous utilisez python-swiftclient, via la commande : `swift capabilities`.
+> Vous pouvez consulter une partie des ces informations directement depuis un navigateur en vous rendant sur : `https://storage.<region>.cloud.ovh.net/info`, ou, si vous utilisez python-swiftclient, via la commande : `swift capabilities`
 >
 
 ### container_listing_limit = 10000
 
-Le nombre par défaut (et maximum) d'éléments renvoyés pour une demande de liste de conteneurs.
+Le nombre par défaut (et maximum) d'éléments renvoyés pour une demande de liste de conteneur.
 
 Afficher tous les éléments avec python-swiftclient :
 
@@ -82,7 +82,7 @@ Afficher la suite via `marker` :
 curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>?marker=container_listing_limit/10000" -X GET -H "X-Auth-Token: xxx"
 ```
 
-```output
+```text
 Content-Length: 10038
 X-Container-Object-Count: 10038
 X-Timestamp: 1627567737.86773
@@ -139,7 +139,6 @@ Consider using the --segment-size option to chunk the object
 ```bash
 swift upload --use-slo --segment-size 1G <conteneur> <largeobject>
 ```
-
 ```
 <largeobject> segment 5
 <largeobject> segment 4
@@ -153,7 +152,6 @@ swift upload --use-slo --segment-size 1G <conteneur> <largeobject>
 ```bash
 swift list <conteneur_segments>
 ```
-
 ```
 <largeobject>/slo/1627934910.652204/6442450944/1073741824/00000000
 <largeobject>/slo/1627934910.652204/6442450944/1073741824/00000001
@@ -174,7 +172,7 @@ swift post -m "max_meta_count_$i:value" <conteneur>
 done
 ```
 
-```output
+```text
 Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 400 Bad Request   b'Too many metadata items; max 90'
 Failed Transaction ID: txef5aa187467c4c949c0d4-00610a35f0
 ```
@@ -183,7 +181,7 @@ Failed Transaction ID: txef5aa187467c4c949c0d4-00610a35f0
 swift stat <conteneur>
 ```
 
-```output
+```text
 Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 502 Bad Gateway
 ```
 
@@ -216,10 +214,10 @@ Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxx
 Failed Transaction ID: tx062504c366c3454c958c9-00610a34c0
 ```
 
-### max_object_name_length = 1024
+###  max_object_name_length = 1024
 
 Le nombre maximum d'octets dans l'encodage utf8 d'un nom d'objet.  
-Le nom d'un objet inclut son préfixe.
+Le nom d'un objet inclut son préfixe
 
 ```bash
 cd /tmp/

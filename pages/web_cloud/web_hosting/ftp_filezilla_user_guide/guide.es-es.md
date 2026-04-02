@@ -33,9 +33,19 @@ Permite subir archivos o su sitio web [conectándose al espacio de almacenamient
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un [plan de hosting](/links/web/hosting).
 - Haber instalado FileZilla en su ordenador. Está disponible de forma gratuita en la página [filezilla-project.org](https://filezilla-project.org/download.php).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Presentación de la interfaz <a name="interface"></a>
 

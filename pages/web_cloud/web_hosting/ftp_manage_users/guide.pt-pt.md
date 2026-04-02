@@ -17,40 +17,43 @@ As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamen
 ## Requisitos
 
 - Ter um plano de [alojamento OVHcloud](/links/web/hosting) compatível.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
 ### Criar um novo utilizador FTP no seu alojamento web <a name="create-ftp-user"></a>
 
-Para criar um novo utilizador FTP no seu alojamento web através da Área de Cliente OVHcloud, clique nas janelas abaixo para visualizar cada uma das etapas **7**.
+Para criar um novo utilizador FTP no seu alojamento web através da Área de Cliente OVHcloud, clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Para criar um novo utilizador FTP, clique no botão `Criar utilizador`{.action} à direita. Dependendo da resolução da sua tela, o botão pode ser localizado na parte inferior da página.
 >>
 >> ![FTP-SSH create user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Surge a seguinte janela:
 >>
@@ -66,7 +69,7 @@ Para criar um novo utilizador FTP no seu alojamento web através da Área de Cli
 >>
 >> Depois de definidos os parâmetros, clique em `Seguinte`{.action}.
 >>
-> **Etapa 6**
+> **Etapa 5**
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
@@ -74,7 +77,7 @@ Para criar um novo utilizador FTP no seu alojamento web através da Área de Cli
 >> 
 >> Depois de escolher a sua palavra-passe e de a confirmar, clique em `Seguinte`{.action}.
 >>
-> **Etapa 7**
+> **Etapa 6**
 >>
 >> ![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
 >>
@@ -88,34 +91,28 @@ Se necessário, teste este novo utilizador FTP através do nosso guia "[Aceder a
 
 ### Modificar um utilizador FTP
 
-Para editar um utilizador FTP, clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Para editar um utilizador FTP, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na tabela que se encontra na parte inferior da página e na parte direita da linha correspondente ao utilizador FTP em questão, clique no botão `...`{.action} e, em seguida, clique em `Alterar`{.action}.
 >>
 >> ![FTP-SSH edit user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-user1.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Surge a seguinte janela:
 >>
@@ -135,34 +132,28 @@ Para editar um utilizador FTP, clique nas janelas abaixo para visualizar cada um
 
 ### Eliminar um utilizador FTP <a name="delete-ftp-user"></a>
 
-Para eliminar um utilizador FTP, clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Para eliminar um utilizador FTP, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na tabela que se encontra na parte inferior da página e na parte direita da linha correspondente ao utilizador FTP em questão, clique no botão `...`{.action} e, em seguida, clique em `Eliminar`{.action}.
 >>
 >> ![FTP-SSH delete user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Surge a seguinte janela:
 >>

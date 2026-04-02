@@ -6,19 +6,29 @@ updated: 2025-04-28
 
 ## Objective
 
-When you place an order, you can track and interact with it from your [OVHcloud Control Panel](/links/manager).
+When you place an order, you can track and interact with it from the [My orders](/links/control-panel/billing-orders) page.
 
 **This guide explains how to manage orders via the OVHcloud Control Panel.**
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts available in your [OVHcloud Control Panel](/links/manager) (click on your name in the top right-hand corner of the screen, then `My solutionss & services`{.action} . Finally, click on the `Contracts`{.action}) tab.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts (available on the [Contract list](/links/control-panel/billing-contracts) page).
 >
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - At least one OVHcloud product order
+
+<!-- CP-NAV-START:billing-orders -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My orders](/links/control-panel/billing-orders)
+- **Navigation path:** Click your name in the top right > `My orders`{.action}
+
+---
+<!-- CP-NAV-END:billing-orders -->
 
 ## Instructions
 
@@ -35,11 +45,11 @@ The purchase order is created when you place your order. It lists the products o
 |3|Payment methods saved to your customer account. For more information, please refer to our guide [Managing payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Payment methods available. You will only be offered payment methods that are authorised in the account’s country of origin, or those linked to the account type you have registered.|
 
-You can view your purchase order at any time in the [OVHcloud Control Panel](/links/manager), as explained below.
+You can view your purchase order at any time on the [My orders](/links/control-panel/billing-orders) page, as explained below.
 
 ### Access purchase orders via the OVHcloud Control Panel
 
-To access the Control Panel, log in to your [OVHcloud Control Panel](/links/manager). On the page that pops up, click `View my orders`{.action}.
+Open the [My orders](/links/control-panel/billing-orders) page.
 
 ![Control Panel](images/huborders.png){.thumbnail}
 
@@ -69,9 +79,9 @@ You can also view the purchase order in HTML format by clicking on `...`{.action
 
 ### Track your order
 
-After generating your purchase order, you can track your order from your [OVHcloud Control Panel](/links/manager):
+After generating your purchase order, you can track your order from the [My orders](/links/control-panel/billing-orders) page:
 
-- Log in to the [OVHcloud Control Panel](/links/manager). On the page that pops up, click `View my orders`{.action}, then click the `...`{.action} button in front of your order.
+- Click the `...`{.action} button in front of your order.
 - Select `Order tracking`{.action}. Order tracking can also be displayed by clicking the status of an order in the `Status` column.
 
 ![Order tracking](images/order05b.png){.thumbnail}

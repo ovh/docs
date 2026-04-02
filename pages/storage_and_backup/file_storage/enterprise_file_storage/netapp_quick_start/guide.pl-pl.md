@@ -50,40 +50,18 @@ Wolumen to jednostka magazynowa o rozmiarze i protokole.
 
 Aby utworzyć wolumen, użyj następującej drogi API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->> > **NetAppShare** *
->> >
->> >> **description**
->> >>
->> >> > Opis objętości
->> >>
->> >> **name**
->> >>
->> >> > Nazwa wolumenu
->> >>
->> >> **protocole** *
->> >>
->> >> > Protokół używany przez wolumen
->> >>
->> >> **size**
->> >>
->> >> > Rozmiar wolumenu
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `NetAppShare.description` |  | Opis objętości |
+| `NetAppShare.name` |  | Nazwa wolumenu |
+| `NetAppShare.protocole` | Yes | Protokół używany przez wolumen |
+| `NetAppShare.size` |  | Rozmiar wolumenu |
 
 Wybierz protokół `NFS` i rozmiar `10` gigabajtów.
 
@@ -100,36 +78,17 @@ Po utworzeniu wolumenu utwórz nowy ACL, aby uzyskać do niego dostęp.
 
 Aby utworzyć nowy ACL, który pozwoli Ci łączyć się z wolumenem, użyj następującej drogi API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->> > **shareId** *
->> >
->> >> ID woluminu
->> >
->> > **NetAppShareACLRule** *
->> >
->> >> **accessLevel** *
->> >>
->> >> > Poziom dostępu ACL Może być **rw** (odczyt i zapis) lub **ro** (tylko odczyt).
->> >>
->> >> **accessTo** *
->> >>
->> >> > Adres IP lub zakres adresów IP z ratingiem CIDR.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
+| `NetAppShareACLRule.accessLevel` | Yes | Poziom dostępu ACL Może być **rw** (odczyt i zapis) lub **ro** (tylko odczyt). |
+| `NetAppShareACLRule.accessTo` | Yes | Adres IP lub zakres adresów IP z ratingiem CIDR. |
 
 > [!primary]
 >
@@ -141,30 +100,16 @@ Aby utworzyć nowy ACL, który pozwoli Ci łączyć się z wolumenem, użyj nast
 
 Sprawdź status utworzenia ACL przy użyciu następującej drogi API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->> > **shareId** *
->> >
->> >> ID woluminu
->> >
->> > **aclRuleId** *
->> >
->> >> ID ACL
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
+| `aclRuleId` | Yes | ID ACL |
 
 Zastąp `aclRuleId` identyfikatorem ACL utworzonym dla wolumenu.
 
@@ -175,26 +120,15 @@ Zastąp `aclRuleId` identyfikatorem ACL utworzonym dla wolumenu.
 
 Po aktywacji ACL pobierz ścieżki dostępu wolumenu za pomocą następującego API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->> > **shareId** *
->> >
->> >> ID woluminu
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
 
 Zostanie wyświetlona jedna lub więcej ścieżek dostępu dla wolumenu.
 
@@ -215,26 +149,15 @@ Po zamontowaniu wolumenu możesz przechowywać pliki.
 
 Możesz usunąć wolumen za pomocą następującej drogi API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->> > **shareId** *
->> >
->> >> ID woluminu
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
 
 ## Sprawdź również
 

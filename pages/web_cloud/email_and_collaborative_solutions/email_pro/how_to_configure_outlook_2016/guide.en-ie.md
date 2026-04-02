@@ -36,6 +36,17 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 - [Outlook classic](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) installed on your Windows.
 - Login credentials for the email account to be configured.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Information related to the management and configuration of OVHcloud services
 
 This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
@@ -62,11 +73,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 >
 > In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number corresponding to your Email Pro service server.
 >
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 1. Go to the `Web Cloud`{.action} section.
-> 1. Click on `Email Pro`{.action}.
-> 1. Select the relevant platform.
-> 1. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
 
 - **When you start the application for the first time**: a setup wizard will appear and prompt you to enter your email address.
 
@@ -226,7 +233,7 @@ This is why we invite you to consult the chapter corresponding to the interface 
 >> >
 >> > In our example, the server name used is "pro**?**.mail.ovh.net". You must replace the character "?" with the number corresponding to your Email Pro service server.
 >> >
->> > Find this number in your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section then `Email Pro`{.action}. The server name is visible in the **Connection** box on the `General information`{.action} tab.
+>> > Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>

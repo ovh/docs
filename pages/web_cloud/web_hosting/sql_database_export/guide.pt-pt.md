@@ -16,6 +16,17 @@ As bases de dados são utilizadas pela maior parte dos websites e dos **C**onten
 - Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVHcloud](/links/web/hosting).
 - Consoante o método de backup utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager) ou às informações que lhe permitem aceder à base de dados.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instruções
 
 Antes de começar, defina o método que vai seguir para recuperar a cópia de segurança da sua base de dados. Tem à sua disposição várias possibilidades:
@@ -46,28 +57,22 @@ Consulte este manual de acordo com o método de backup pretendido.
 
 ### Recuperar um backup através da ferramenta da OVHcloud
 
-Para aceder à ferramenta de backup da OVHcloud, clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+Para aceder à ferramenta de backup da OVHcloud, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na nova página, é apresentada uma tabela com as bases de dados criadas.
 >>

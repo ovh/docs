@@ -14,8 +14,18 @@ Um zusätzliche Ressourcen und Instanzen nutzen zu können, müssen deren Quotas
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben eine [gültige Zahlungsart](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) in Ihrem OVHcloud Kundencenter hinterlegt.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -33,8 +43,6 @@ Diese Option ermöglicht Ihnen, eine automatische und schrittweise Erhöhung Ihr
 >
 > **Hinweis**: Dieser Prozess eignet sich nicht für schnelle Anpassungen der Quote.
 >
-
-Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an, wechseln Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Public Cloud Projekt aus.
 
 Klicken Sie im linken Menü auf `Quota und Regionen`{.action} unter **Einstellungen**.
 
@@ -59,8 +67,6 @@ Sobald aktiviert, erhöht sich die Quote Ihres Projekts automatisch und schrittw
 Dieser Vorgang ermöglicht eine schnelle und erhebliche Erhöhung Ihrer Quoten (z. B. schnelles Skalieren, GPU-Instanzen usw.). Dieses Verfahren basiert auf dem sofortigen Kauf von Cloud-Guthaben, aus denen alle relevanten Kosten automatisch abgebucht werden.
 
 Es ist möglich, unterschiedliche Gutschriftsbeträge zu erwerben.
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
 Klicken Sie im linken Menü auf `Quota und Regionen`{.action} unter **Einstellungen**.
 

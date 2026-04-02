@@ -18,23 +18,28 @@ Ihre Microsoft 365 Lizenzen werden zu einer Gruppe zusammengefasst, auch "Servic
 
 Die Lizenzen gelten für folgende Software:
 
-- Apps for Business: Excel, Word, PowerPoint, Outlook, Note, Publisher.
-- Apps for Enterprise: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
+- Apps for Business: Excel, Word, PowerPoint, Outlook, OneNote, Publisher.
+- Apps for Enterprise: Excel, Word, PowerPoint, Outlook, OneNote, Publisher, Access.
 
 **Diese Anleitung erklärt, wie Sie eine Microsoft 365 Lizenz bestellen und in Ihrem OVHcloud Kundencenter verwalten.**
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Navigationspfad:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## In der praktischen Anwendung
 
 ### Lizenz bestellen
 
-1. Gehen Sie auf [OVHcloud Microsoft 365](/links/web/ms365) oder bestellen Sie über das [OVHcloud Kundencenter](/links/manager):
-    - Gehen Sie in den Bereich `Web Cloud`{.action}.
-    - Klicken Sie im Bereich `MICROSOFT` auf `Microsoft 365`{.action}.
-    - Klicken Sie auf `Bestellen`{.action}.
 1. Wählen Sie aus unseren verfügbaren Angeboten *Apps for Business* und *Apps for Enterprise*.
 1. Legen Sie das Erneuerungsintervall für Ihre Lizenzgruppe fest.
 1. Legen Sie die Anzahl der gewünschten Lizenzen fest und schließen Sie Ihre Bestellung ab.
@@ -43,16 +48,9 @@ Die Lizenzen gelten für folgende Software:
 
 So aktivieren Sie die bestellte Lizenz:
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Klicken Sie im Feld `MICROSOFT` auf `Microsoft 365`{.action}.
-1. Wählen Sie den betreffenden Microsoft 365 Dienst aus.
-1. Wählen Sie den Tab `Lizenzen`{.action}.
-1. Klicken Sie auf die Schaltfläche `⁝`{.action} in der Zeile der Lizenz, die von der Aktivierung betroffen ist, und dann auf `Account bearbeiten`{.action}.
-
     ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
-1. Geben Sie die Lizenz-Daten ein, und klicken Sie auf `Bestätigen`{.action}.
+Geben Sie die Lizenz-Daten ein, und klicken Sie auf `Bestätigen`{.action}.
 
     ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
@@ -76,25 +74,11 @@ Um Ihre Lizenz auf mehreren Geräten zu installieren, wiederholen Sie [den vorhe
 
 Wenn Sie das Passwort Ihrer Lizenz selbst festlegen möchten:
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Klicken Sie im Feld `MICROSOFT` auf `Microsoft 365`{.action}.
-1. Wählen Sie den betreffenden Microsoft 365 Dienst aus.
-1. Wählen Sie den Tab `Lizenzen`{.action}.
-1. Klicken Sie auf den Button `⁝`{.action} rechts neben der betreffenden Lizenz und dann auf `Passwort ändern`{.action}.
-
 ![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
 ### Lizenz zu einer bestehenden Gruppe hinzufügen
 
 Wenn Sie Ihrer vorhandenen Lizenzgruppe eine oder mehrere Lizenzen hinzufügen möchten:
-
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Klicken Sie im Feld `MICROSOFT` auf `Microsoft 365`{.action}.
-1. Wählen Sie den betreffenden Microsoft 365 Dienst aus.
-1. Klicken Sie rechts auf `Weitere Lizenzen bestellen`{.action}.
-1. Bestimmen Sie die **Anzahl** und den **Lizenztyp**, den Sie bestellen möchten, und klicken Sie dann auf `Bestätigen`{.action}.
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail .w-500}
 
@@ -124,7 +108,7 @@ So kündigen Sie Ihre Microsoft Office 365 CSP1-Lizenzgruppe:
 >
 > Der Verbrauch des laufenden Monats wird am Ende des laufenden Monats abgerechnet.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Remote Desktop mit Microsoft 365 Apps verwenden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 

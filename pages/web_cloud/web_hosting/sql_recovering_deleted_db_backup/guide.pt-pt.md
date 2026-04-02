@@ -22,6 +22,17 @@ A maioria dos nossos serviços de [alojamento web](/links/web/hosting) incluem b
 - Dispor de um [serviço de alojamento web OVHcloud](/links/web/hosting) ativo que inclui uma (ou várias) base(s) de dados partilhada(s) OVHcloud associada(s).
 - A eliminação da base de dados deve ter menos de 30 dias.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instruções
 
 As API da OVHcloud são disponibilizadas para permitir que os programadores ou os integradores associem, por exemplo, funcionalidades presentes ou não na Área de Cliente OVHcloud diretamente nas suas aplicações ou soluções.

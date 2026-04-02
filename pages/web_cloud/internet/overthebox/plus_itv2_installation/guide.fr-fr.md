@@ -11,7 +11,7 @@ Découvrez comment installer et configurer votre équipement OverTheBox afin de 
 ## Prérequis
 
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
-- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
+- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
 
 > [!warning]
 >
@@ -46,7 +46,7 @@ Il n'est donc pas possible de cumuler l'un de ces modems avec un autre modem en 
 
 ### Étape 2 : branchement des modems
 
-Dans un premier temps, pour chaque modem, branchez un câble ethernet entre le port LAN du modem et le port **WAN** de votre **OverTheBox** afin qu'ils soient correctement identifiés comme liens vers internet.
+Dans un premier temps, pour chaque modem, branchez un câble ethernet entre le port LAN du modem et le port **WAN** de votre **OverTheBox** afin qu'ils soient correctement identifiés comme liens vers Internet.
 
 Branchez ensuite votre ordinateur sur un des ports LAN de votre **OverTheBox**. Vous pouvez alors raccorder votre **OverTheBox** sur le courant électrique.
 
@@ -141,7 +141,7 @@ Puis suivez toutes les étapes suivantes :
 
 ### Étape 4 : vérifier le bon fonctionnement de votre service
 
-Le service OverTheBox est actif et opérationnel, vous pouvez consultez l'**IP publique** de votre service sur l'interface **TUN**.
+Le service OverTheBox est actif et opérationnel, vous pouvez consulter l'**IP publique** de votre service sur l'interface **TUN**.
 
 ![overthebox](images/install-step4-1-serviceok-2024.png){.thumbnail}
 
@@ -158,7 +158,7 @@ Le service OverTheBox est actif et opérationnel, vous pouvez consultez l'**IP p
 
 ### Ajouter une interface 4G
 
-Si vous souhaitez configurer l'interface 4G de votre **OTB V3 LTE** ou ajouter une interface 4G par clé USB sur un autre modèle, consultez le guide « [Comment configurer un lien 4G sur OverTheBox?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
+Si vous souhaitez configurer l'interface 4G de votre **OTB V3 LTE** ou ajouter une interface 4G par clé USB sur un autre modèle, consultez le guide « [Comment configurer un lien 4G sur OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
 
 ### Ajouter une connexion supplémentaire
 
@@ -168,10 +168,10 @@ Si vous souhaitez ajouter une connexion supplémentaire, consultez le guide « [
 
 Si vous utilisez la télévision par Internet via l'un de vos fournisseurs d'accès, veuillez laisser le décodeur TV branché sur votre modem (si ce dernier n'est pas directement intégré dedans) afin d'éviter tout blocage du flux vidéo par votre opérateur si ce flux passe par le service OverTheBox.
 
-### Ajouter un réseau WiFi
+### Ajouter un réseau Wi-Fi
 
-Les modems sont isolés dans leurs propre VLAN. Le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet. Pour plus d'informations, consultez notre guide « [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb) ».
+Les modems sont isolés dans leur propre VLAN. Le Wi-Fi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le Wi-Fi d'un modem Zyxel fourni avec l'une de nos offres Internet. Pour plus d'informations, consultez notre guide « [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb) ».
 
-Dans les autres cas de figure, il faudra utiliser un point d'accès WiFi dédié. Le WiFi de vos modems reste fonctionnel mais les équipements connectés ne profiteront ni de l'agrégation, ni du tunnel chiffré.
+Dans les autres cas de figure, il faudra utiliser un point d'accès Wi-Fi dédié. Le Wi-Fi de vos modems reste fonctionnel mais les équipements connectés ne profiteront ni de l'agrégation, ni du tunnel chiffré.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community)..
+Échangez avec notre [communauté d'utilisateurs](/links/community).

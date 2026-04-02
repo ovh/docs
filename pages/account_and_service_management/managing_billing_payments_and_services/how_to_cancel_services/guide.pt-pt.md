@@ -4,6 +4,50 @@ excerpt: Descubra como interromper as suas subscrições OVHcloud a partir da Á
 updated: 2025-04-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objetivo
 
 Deseja rescindir um ou vários serviços OVHcloud. Este manual indicar-lhe-á como interromper à sua subscrição a partir da Área de Cliente OVHcloud.
@@ -36,8 +80,18 @@ Isto implica que, antes de qualquer rescisão, deve ter a **certeza**:
 ## Requisitos
 
 - Ser o "contacto administrador" do serviço a rescindir (para mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contacts#definition))
-- Ter acesso à sua [Área de Cliente OVHcloud](/links/manager)
 - Possuir serviços OVHcloud ativos (não suspensos por incumprimento)
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [As minhas ofertas e serviços](/links/control-panel/billing-services)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas ofertas e serviços`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Instruções
 
@@ -47,7 +101,7 @@ No entanto, existem **casos especiais** que são detalhados [mais abaixo](#speci
 
 ### Como cancelar a subscrição <a name="terminate"></a>
 
-Para rescindir a subscrição do seu serviço, aceda a [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, em `As minhas ofertas e serviços`{.action}.
+Abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -125,7 +179,7 @@ Também pode [consultar o seu consumo atual](/pages/public_cloud/public_cloud_cr
 > Pode anular um pedido de rescisão até 24 horas antes do fim da subscrição.
 >
 
-Para anular um pedido de rescisão, aceda a [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito em `As minhas ofertas e serviços`{.action}.
+Para anular um pedido de rescisão, abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 A seguir, clique no botão `...`{.action} à direita do serviço que é objeto de um pedido de rescisão e, a seguir, em `Anular a rescisão do serviço`{.action}.
 
@@ -137,33 +191,42 @@ A anulação da rescisão produz efeitos imediatos. Atualize a página "O meus S
 
 ## FAQ
 
-> [!faq]
->
-> Não consigo cancelar um serviço. O que fazer?
->> Se não conseguir rescindir um serviço (o botão `Rescindir o meu serviço`{.action} não está disponível), este poderá ser um dos casos particulares detalhados [mais acima neste guia](#specific-cases).
->> Verifique também se estão preenchidas as seguintes condições:
->>
->> - Deve ser o "contacto administradoa" do serviço. Para obter mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contacts#definition).
->> - O serviço está em **renovação automática**. Se o seu serviço estiver em [renovação manual](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), será suspenso à data de expiração e eliminado passado alguns dias.
->> - O serviço não é suspenso, nomeadamente devido a um problema de regularização de uma fatura. Certifique-se de que está atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) em todos os seus serviços.
->>
->> Se ainda não conseguir rescindir o seu serviço, contacte as nossas equipas de suporte abrindo um ticket a partir do [Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_get_help).
-> Como cancelar todos os meus serviços?
->> Deverá efetuar o procedimento de rescisão para cada serviço de forma unitária. Não é possível rescindir vários serviços de cada vez ou pedir uma rescisão global às nossas equipas de apoio ao cliente.
-> Como eliminar a minha conta OVHcloud?
->> O encerramento da sua conta de cliente OVHcloud e a eliminação dos seus dados pessoais só é possível se:
->>
->> 1. Já não tem serviços visíveis na secção [As minhas ofertas e serviços](https://www.ovh.com/manager/dedicated/#/billing/autoRenew). Caso contrário, deverá começar por solicitar à sua rescisão e aguardar à sua eliminação.
->> 2. Não possui faturas com pagamento pendente. Caso contrário, deverá proceder ao seu pagamento clicando no botão `Pagar imediatamente`{.action} nas ações de massas da página [As minhas faturas](https://www.ovh.com/manager/#/dedicated/billing/history).
->> 3. Não possui encomendas em curso. Verifique-o em [esta página](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
->> 4. A sua conta pré-paga não é positiva. Verifique-o em [esta página](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
->>
->> Se as condições acima estiverem preenchidas, pode pedir para eliminar à sua conta OVHcloud e os dados associados seguindo estas etapas:
->>
->> 1. Aceder a [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
->> 2. Clique no botão `Criar um ticket`{.action}.
->> 3. Selecione o motivo `Gerir à sua conta de cliente OVHcloud`.
->> 4. Especifique `Quero encerrar a minha conta de cliente OVHcloud` e siga as etapas descritas.
+/// details | Não consigo cancelar um serviço. O que fazer?
+
+Se não conseguir rescindir um serviço (o botão `Rescindir o meu serviço`{.action} não está disponível), este poderá ser um dos casos particulares detalhados [mais acima neste guia](#specific-cases).
+Verifique também se estão preenchidas as seguintes condições:
+
+- Deve ser o "contacto administradoa" do serviço. Para obter mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contacts#definition).
+- O serviço está em **renovação automática**. Se o seu serviço estiver em [renovação manual](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), será suspenso à data de expiração e eliminado passado alguns dias.
+- O serviço não é suspenso, nomeadamente devido a um problema de regularização de uma fatura. Certifique-se de que está atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) em todos os seus serviços.
+
+Se ainda não conseguir rescindir o seu serviço, contacte as nossas equipas de suporte abrindo um ticket a partir do [Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+///
+
+/// details | Como cancelar todos os meus serviços?
+
+Deverá efetuar o procedimento de rescisão para cada serviço de forma unitária. Não é possível rescindir vários serviços de cada vez ou pedir uma rescisão global às nossas equipas de apoio ao cliente.
+
+///
+
+/// details | Como eliminar a minha conta OVHcloud?
+
+O encerramento da sua conta de cliente OVHcloud e a eliminação dos seus dados pessoais só é possível se:
+
+1. Já não tem serviços visíveis na secção [As minhas ofertas e serviços](https://www.ovh.com/manager/dedicated/#/billing/autoRenew). Caso contrário, deverá começar por solicitar à sua rescisão e aguardar à sua eliminação.
+2. Não possui faturas com pagamento pendente. Caso contrário, deverá proceder ao seu pagamento clicando no botão `Pagar imediatamente`{.action} nas ações de massas da página [As minhas faturas](https://www.ovh.com/manager/#/dedicated/billing/history).
+3. Não possui encomendas em curso. Verifique-o em [esta página](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. A sua conta pré-paga não é positiva. Verifique-o em [esta página](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Se as condições acima estiverem preenchidas, pode pedir para eliminar à sua conta OVHcloud e os dados associados seguindo estas etapas:
+
+1. Aceder a [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+2. Clique no botão `Criar um ticket`{.action}.
+3. Selecione o motivo `Gerir à sua conta de cliente OVHcloud`.
+4. Especifique `Quero encerrar a minha conta de cliente OVHcloud` e siga as etapas descritas.
+
+///
 
 ## Quer saber mais? <a name="gofurther"></a>
 

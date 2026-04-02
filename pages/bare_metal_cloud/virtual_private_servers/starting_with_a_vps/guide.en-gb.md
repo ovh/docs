@@ -18,7 +18,17 @@ Unlike a managed web hosting service, you are responsible for the following:
 ## Requirements
 
 - An active [VPS](/links/bare-metal/vps) offer in your OVHcloud Control Panel.
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Instructions
 
@@ -71,11 +81,7 @@ Once the Windows operating system is installed, you receive an email with the de
 
 You will then need to complete the Windows installation process by setting your display language, keyboard layout, and administrator password.
 
-This is done in the VPS KVM console:
-
-1. Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Bare Metal Cloud`{.action} section.
-1. Click on `Virtual Private Servers`{.action} and select your server.
-1. In the `Home`{.action} tab, click the `...`{.action} button next to your VPS name in the **Your VPS** section and select `KVM`{.action}.
+This is done in the VPS KVM console: in the `Home`{.action} tab, click the `...`{.action} button next to your VPS name in the **Your VPS** section and select `KVM`{.action}.
 
 Find more information about this tool in our "[KVM guide](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)".
 

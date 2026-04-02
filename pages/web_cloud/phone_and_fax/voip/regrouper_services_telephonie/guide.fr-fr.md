@@ -1,12 +1,12 @@
 ---
-title: 'Gérer vos groupes de téléphonie'
-excerpt: 'Découvrez comment gérer vos groupes de téléphonie et déplacer vos services entre ces groupes'
+title: "Gérer vos groupes de téléphonie"
+excerpt: "Découvrez comment gérer vos groupes de téléphonie et déplacer vos services entre ces groupes"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Un **groupe de téléphonie** (aussi appelé **groupe de facturation** ou **billing account**) est un  conteneur dans lequel sont regroupés vos services de téléphonie, qu'il s'agisse de lignes téléphoniques ou de numéros alias.
+Un **groupe de téléphonie** (aussi appelé **groupe de facturation** ou **billing account**) est un conteneur dans lequel sont regroupés vos services de téléphonie, qu'il s'agisse de lignes téléphoniques ou de numéros alias.
 
 Vous pouvez créer plusieurs groupes de téléphonie, pour mieux organiser vos services VoIP, afin d'administrer séparément chaque entité de votre entreprise, ou encore pour séparer la facturation de vos services, chaque groupe générant sa propre facture.
 
@@ -49,7 +49,7 @@ L'ajout d'un groupe de téléphonie est gratuit. Pour créer un nouveau groupe, 
 
 ![ajouter groupe](images/02-ajouter-01.png){.thumbnail}
 
-Prenez connaissance des contrats et conditions, valides-les puis clquez sur `Commander un nouveau groupe de téléphonie (Gratuit)`{.action}
+Prenez connaissance des contrats et conditions, validez-les puis cliquez sur `Commander un nouveau groupe de téléphonie (Gratuit)`{.action}
 
 ![ajouter groupe](images/02-ajouter-02.png){.thumbnail}
 
@@ -57,7 +57,7 @@ La création du groupe prend quelques minutes. Il sera alors automatiquement ajo
 
 ### Regrouper des services dans un groupe de téléphonie <a name="regrouper-lignes"></a>
 
-Vous pouvez déplacer des lignes téléphones et numéros alias d'un groupe à un autre, afin de répondre à plusieurs cas d'usage, telle qu'une facturation distincte entre entités au sein d'une entreprise.
+Vous pouvez déplacer des lignes téléphones et numéros alias d'un groupe à un autre, pour répondre à plusieurs cas d'usage, telle qu'une facturation distincte entre entités au sein d'une entreprise.
 
 Un autre cas d'usage fréquent est la supervision, depuis un téléphone ou un logiciel de type POPC, d'un ensemble de lignes.
 Ainsi, une personne en charge de l'accueil téléphonique d'une entreprise peut connaître en temps réel le statut (libre ou occupé) des lignes de ses collègues et ainsi déterminer si un transfert d'appel est possible.

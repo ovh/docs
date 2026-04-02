@@ -20,6 +20,17 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting)
 - Installer [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) sur votre machine
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## En pratique
  
 > [!warning]

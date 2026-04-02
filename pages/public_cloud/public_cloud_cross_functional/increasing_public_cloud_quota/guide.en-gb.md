@@ -14,10 +14,20 @@ To be able to use additional resources and projects, the quotas need to be incre
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [valid payment method](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) registered in your OVHcloud account
 
 ## Instructions
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Increasing your resources quota
 
@@ -33,8 +43,6 @@ This option allows you to request an automatic and gradual increase in your reso
 >
 > **Note**: This process is not suitable for rapid quota increases.
 >
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select your Public Cloud project.
 
 In the left-hand menu, click on `Quota & Regions`{.action} under **Settings**.
 
@@ -59,8 +67,6 @@ Once activated, auto-scaling will gradually increase your project's quota based 
 This procedure allows for a rapid and significant increase in your quotas (e.g., rapid scaling, GPU instances, etc.). This method is based on the immediate purchase of credit, from which all cloud consumption will be automatically deducted.
 
 It is possible to purchase different amounts of credit.
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**.
 

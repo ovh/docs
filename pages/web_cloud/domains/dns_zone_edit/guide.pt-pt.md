@@ -30,17 +30,26 @@ Para mais explicações, consulte os nossos manuais "[Saber tudo sobre os servid
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do nome de domínio na [Área de Cliente OVHcloud](/links/manager).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar a configuração da OVHcloud (os seus servidores DNS) para o nome de domínio em questão.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
 > - Se o nome de domínio não usar os servidores DNS da OVHcloud, a alteração deverá ser efetuada na interface do agente responsável pela configuração do nome de domínio.
 > 
-> - Se o nome de domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) no separador `Servidores DNS`{.action} do nome de domínio em causa. Se necessário, consulte o guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+> - Se o nome de domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração. Para isso e se necessário, consulte o guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 > 
-> Em ambos os casos acima, tenha cuidado ao efetuar as alterações dos servidores DNS. A configuração anterior que pode ser aplicada ao seu nome de domínio não estará ativa se não tiver reconfigurado e personalizado previamente a nova zona DNS presente na OVHcloud.<br>
+> Em ambos os casos acima, tenha cuidado ao efetuar as alterações dos servidores DNS. A configuração anterior que pode ser aplicada ao seu nome de domínio não estará ativa se não tiver reconfigurado e personalizado previamente a nova zona DNS presente na OVHcloud.
 > Só pode ter uma zona DNS ativa por nome de domínio.
 >
 
@@ -52,22 +61,16 @@ Para mais explicações, consulte os nossos manuais "[Saber tudo sobre os servid
 >
 > Ao contrário do nome de domínio, para uma zona DNS não existe uma noção de titular, mas sim uma gestão de contactos para uma zona DNS da OVHcloud. Se desejar mudar a gestão da sua zona DNS para outra conta OVHcloud, siga o nosso guia [Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
 
-Para aceder à gestão de uma zona DNS da OVHcloud, clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Para aceder à gestão de uma zona DNS da OVHcloud, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> A tabela que aparecer apresenta para cada linha um registo DNS associado ao seu nome de domínio na OVHcloud. Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
 >>
@@ -86,7 +89,7 @@ Compreender os diferentes registos irá permitir-lhe perceber as alterações qu
 > Consulte também o guia relativo aos [subdomínios](/pages/web_cloud/domains/domain_create_subdomains) para mais informações sobre este assumpto.
 >
 
-Pode editar a zona DNS da OVHcloud do seu nome de domínio adicionando, alterando ou eliminando um registo DNS.<br>
+Pode editar a zona DNS da OVHcloud do seu nome de domínio adicionando, alterando ou eliminando um registo DNS.
 Para isso, pode alterar manualmente a zona em modo de texto ou utilizar os nossos assistentes de configuração.
 
 #### Modificar manualmente a zona em modo de texto <a name="txtmod"></a>
@@ -96,22 +99,16 @@ Para isso, pode alterar manualmente a zona em modo de texto ou utilizar os nosso
 > Apenas para utilizadores experientes. Esteja também muito atento à sintaxe aquando das suas modificações.
 > 
 
-Para editar uma zona DNS da OVHcloud em modo de texto, clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Para editar uma zona DNS da OVHcloud em modo de texto, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> À direita ou abaixo da tabela, clique em `Alterar em modo de texto`{.action} e siga as etapas que aparecem.
 >>
@@ -132,22 +129,16 @@ A partir de agora, o manual apenas irá abordar a configuração realizada atrav
 
 /// details | Adicionar um novo registo DNS
 
-Para adicionar um novo registo DNS, clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Para adicionar um novo registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> À direita ou abaixo da tabela, clique em `Adicionar uma entrada`{.action} e siga as etapas que aparecem.
 >>
@@ -163,25 +154,18 @@ Para adicionar um novo registo DNS, clique nas guias abaixo para exibir sucessiv
 
 ///
 
-
 /// details | Alterar um registo DNS existente
 
-Para alterar um registo DNS, clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Para alterar um registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> Na tabela que aparece, clique no pictograma `...`{.action} à direita da entrada em causa.
 >>
@@ -191,25 +175,18 @@ Para alterar um registo DNS, clique nas guias abaixo para exibir sucessivamente 
 
 ///
 
-
 /// details | Eliminar um registo DNS existente
 
-Para eliminar um registo DNS, clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Para eliminar um registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> Na tabela que aparece, clique no pictograma `...`{.action} à direita da entrada em causa.
 >>
@@ -221,7 +198,6 @@ Para eliminar um registo DNS, clique nas guias abaixo para exibir sucessivamente
 
 ///
 
-
 /// details | Reiniciar a zona DNS
 
 Reiniciar a zona DNS permite voltar a uma configuração mínima, com as entradas da OVHcloud predefinidas ou as dos seus serviços. Também pode apontar o nome de domínio para serviços de alojamento web e de correio eletrónico personalizados
@@ -231,28 +207,22 @@ Reiniciar a zona DNS permite voltar a uma configuração mínima, com as entrada
 > Antes de reiniciar a zona DNS, certifique-se de que o seu nome de domínio não está associado a serviços em curso de utilização, tais como um website ou endereços de e-mail.
 >
 
-Para reiniciar a zona DNS, clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
+Para reiniciar a zona DNS, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> À direita ou abaixo da tabela, clique em `Reiniciar a minha zona DNS`{.action} e siga os 2 passos que se apresentarem.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Responda à pergunta `Deseja ativar o número mínimo de entradas quando a zona DNS for reiniciada?` Definir entradas mínimas numa zona DNS permite evitar que um pedido para o nome de domínio não acarrete um erro.
 >>
@@ -267,7 +237,7 @@ Para reiniciar a zona DNS, clique nas guias abaixo para exibir sucessivamente ca
 >>
 >> **Endereço IP do seu alojamento**
 >>
->> - `Reencaminhamento`: o seu nome de domínio apontará para o servidor de reencaminhamento OVHcloud. Isto permite apresentar uma página inicial da OVHcloud e evitar um erro DNS.<br>
+>> - `Reencaminhamento`: o seu nome de domínio apontará para o servidor de reencaminhamento OVHcloud. Isto permite apresentar uma página inicial da OVHcloud e evitar um erro DNS.
 >> - `Alojamento Web OVHcloud`: O seu nome de domínio ficará associado ao endereço IP do alojamento web associado ao nome de domínio <br>
 >> - `Personalizado`: defina o valor IPv4 ([registo A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) do alojamento web que deseja apontar. <br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}
@@ -281,27 +251,20 @@ Para reiniciar a zona DNS, clique nas guias abaixo para exibir sucessivamente ca
 
 ///
 
-
 ### Tempo de propagação
 
 Depois de alterar a zona DNS do nome de domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 
-Se pretender reduzir esse tempo de espera para as suas próximas alterações da zona DNS da OVHcloud, pode fazê-lo, de certa forma, ajustando o TTL (*Time To Live*) que será aplicado a todos os registos da zona DNS. Para isso, clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Se pretender reduzir esse tempo de espera para as suas próximas alterações da zona DNS da OVHcloud, pode fazê-lo, de certa forma, ajustando o TTL (*Time To Live*) que será aplicado a todos os registos da zona DNS. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> À direita ou abaixo da tabela, clique no botão `Modificar o TTL por predefinição`{.action}e siga as etapas que aparecem.
 >>

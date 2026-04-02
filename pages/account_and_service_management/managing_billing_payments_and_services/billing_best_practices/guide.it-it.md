@@ -13,7 +13,17 @@ Questa guida ti mostra gli elementi essenziali per una corretta gestione del tuo
 ## Prerequisiti
 
 - Disporre di uno o più servizi OVHcloud attivi
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Le mie offerte e servizi](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie offerte e servizi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Procedura
 
@@ -31,10 +41,7 @@ Per garantire l'efficacia delle misure di sicurezza, assicurati che i tuoi indir
 
 Le tue informazioni personali (indirizzo postale, email, ecc...) devono essere aggiornate sul tuo account cliente per garantire la sicurezza e il corretto funzionamento dei tuoi servizi.
 
-Verifica le tue informazioni personali cliccando sul tuo nome in alto a destra del tuo [Spazio Cliente OVHcloud](/links/manager) e poi su `Accedere al mio account`{.action}.<br>
-Nella sezione `Il tuo profilo`{.action} a destra dello schermo (clicca di nuovo sul tuo nome per eliminare il menu a sinistra), clicca su `...`{.action} e poi su `Modifica il tuo profilo`{.action}.
-
-![myprofile](images/myprofile.png){.thumbnail}
+Verifica le tue informazioni personali nella pagina [Il mio profilo](/links/control-panel/account-profile).
 
 Per maggiori informazioni, consulta la guida [Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali](/pages/account_and_service_management/account_information/all_about_username#come-gestire-le-tue-informazioni-personali).
 
@@ -45,8 +52,7 @@ Assicurati che il tuo indirizzo email sia sempre **aggiornato, sicuro e accessib
 > Aggiungi un'**email di recupero** alle tue informazioni personali per proteggerti da qualsiasi perdita di accesso al tuo account cliente OVHcloud.
 >
 
-Le email inviate da OVHcloud sono accessibili anche dallo [Spazio Cliente OVHcloud](/links/manager).<br>
-Clicca sul tuo nome in alto a destra e poi su `Le mie comunicazioni`{.action} nel menu di destra.
+Le email inviate da OVHcloud sono accessibili anche dalla pagina [Messaggi](/links/control-panel/account-messages).
 
 ![service_emails](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
 
@@ -54,7 +60,7 @@ Clicca sul tuo nome in alto a destra e poi su `Le mie comunicazioni`{.action} ne
 
 > [!primary]
 >
-> Per evitare interruzioni di servizio e garantire il corretto funzionamento del rinnovo automatico, [registra una modalità di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) nello [Spazio Cliente OVHcloud](/links/manager).
+> Per evitare interruzioni di servizio e garantire il corretto funzionamento del rinnovo automatico, [registra una modalità di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) nello [Spazio Cliente OVHcloud](/links/control-panel/billing-payment-methods).
 >
 > Assicurati regolarmente che il tuo metodo di pagamento sia **valido**.
 >
@@ -68,16 +74,13 @@ Se decidi di non attivare il rinnovo automatico, riceverai una notifica via emai
 
 ### Controllo dei tuoi ordini
 
-Sapevate di poter [seguire i vostri ordini](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) nel vostro [Spazio Cliente OVHcloud](/links/manager) ?<br>
-Ti basta cliccare sul logo di OVHcloud in alto a sinistra e poi su `Visualizza i tuoi ordini`{.action}.
+Sapevate di poter [seguire i vostri ordini](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) dalla pagina [I miei ordini](/links/control-panel/billing-orders)?
 
 Riceverai gli step della consegna e saprai se hai bisogno di aiuto per effettuare l'operazione.
 
 ### Disattivare il serviziozione dei servizi
 
-Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dallo [Spazio Cliente OVHcloud](/links/manager).
-
-Clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}. Sul lato destro dello schermo, clicca sui tre puntini in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
+Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dalla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Clicca sui tre puntini `...`{.action} in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
 
 - `Configura il rinnovo`{.action}: sullo schermo successivo, potrai passare il `Tipo di rinnovo` del tuo servizio a `Manuale`. Clicca su `Continua`{.action} e `Conferma`{.action}. Prima della data di scadenza del tuo servizio, riceverai diverse notifiche via email. Se non rinnovi il tuo servizio, verrà eliminato **definitivamente**.
 - `Disattivare il servizio`{.action}: sulla schermata successiva, indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}. Alla data di scadenza del tuo servizio, verrà eliminato **definitivamente**.

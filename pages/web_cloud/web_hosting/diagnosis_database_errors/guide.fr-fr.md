@@ -20,8 +20,18 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Utiliser l'une de nos offres de bases de données [Web Cloud](/links/web/hosting-options-startsql) ou [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -190,9 +200,9 @@ Vous pouvez également cocher la case `Vider la base de données actuelle`{.acti
 
 Contactez si besoin notre [communauté d'utilisateurs](/links/community) ou un [prestataire spécialisé](/links/partner) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
 
-> [!faq]
+> [!primary]
 >
-> Quels éléments dans le script d'import de ma base de données peuvent causer une erreur « #1044 - Access denied for user to database » ?
+> **Quels éléments dans le script d'import de ma base de données peuvent causer une erreur « #1044 - Access denied for user to database » ?**
 
 Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé sur les serveurs d'hébergement mutualisé OVHcloud. Dans cette situation, importez votre base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

@@ -1,12 +1,12 @@
 ---
-title: 'Gérer vos services VoIP'
+title: "Gérer vos services VoIP"
 excerpt: "Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud"
 updated: 2025-10-30
 ---
 
 ## Objectif
 
-Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouvez modifier à votre convenance les options de vos lignes VoIP ainsi que les offres souscrites. Vous pouvez également convertir une ligne en numéro alias et inversement.
+Pour adapter votre téléphonie à votre activité professionnelle, vous pouvez modifier à votre convenance les options de vos lignes VoIP ainsi que les offres souscrites. Vous pouvez également convertir une ligne en numéro alias et inversement.
 
 **Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud.**
 
@@ -63,7 +63,7 @@ Ainsi, un changement d'offre VoIP sollicité entre le 1er et le 31 janvier serai
 
 #### Annuler un changement d'offre VoIP
 
-Le changement d'offre peut être annulé à tout moment, avant son application lors du prochain renouvellement de la ligne. Pour annuler un changement d'offre, sélectionnez votre ligne VoIP dans l'espace-client OVHcloud puis cliquez successivement sur `Gestion`{.action} et sur `Changer d'offre`{.action}. Cliquez enfin sur `Annuler le changement d'offre`{.action}.
+Le changement d'offre peut être annulé à tout moment, avant son application lors du prochain renouvellement de la ligne. Pour annuler un changement d'offre, sélectionnez votre ligne VoIP dans l'espace client OVHcloud puis cliquez successivement sur `Gestion`{.action} et sur `Changer d'offre`{.action}. Cliquez enfin sur `Annuler le changement d'offre`{.action}.
 
 ![changement-d-offre-voip](images/sip_change_offer_5.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Modifiez le nombre d'appels simultanés dans le premier menu déroulant. Chaque 
 
 Prenez connaissance des Conditions Générales de Téléphonie et validez-les en cochant la case de validation.
 
-Cliquez sur `Générer le bon de commande`{.action} afin de l'afficher. L'option ne sera prise en compte qu'après validation du paiement de ce bon de commande.
+Cliquez sur `Générer le bon de commande`{.action} pour l'afficher. L'option ne sera prise en compte qu'après validation du paiement de ce bon de commande.
 
 ![appels-simultané](images/simultaneous_calls-validation.png){.thumbnail}
 
@@ -100,7 +100,7 @@ Cliquez sur `Générer le bon de commande`{.action} afin de l'afficher. L'option
 
 ### Convertir une ligne SIP en numéro alias
 
-Les besoins en téléphonie d'une entreprise peuvent évoluer fréquemment. Il est donc possible de convertir une ligne SIP en numéro alias. Cela permet notamment, une fois la conversion faite, de faire sonner plusieurs lignes lorsque le numéro est appelé.<br>
+Les besoins en téléphonie d'une entreprise peuvent évoluer fréquemment. Vous pouvez donc convertir une ligne SIP en numéro alias. Cela permet notamment, une fois la conversion faite, de faire sonner plusieurs lignes lorsque le numéro est appelé.<br>
 Pour plus d'informations sur les différences entre une ligne SIP et un numéro alias, consultez [notre FAQ](/pages/web_cloud/phone_and_fax/voip/faq-voip)
 
 > [!success]
@@ -120,7 +120,7 @@ Prenez connaissance des informations liées à cette conversion et confirmez-la.
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.
 
-Une fois la conversion réalisée, votre ligne ne sera plus opérationnelle et vous ne pourrez plus faire d'appels sortants, car le numéro sera transformé en alias. Prenez connaissances des [configurations possibles sur un numéro alias](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins).
+Une fois la conversion réalisée, votre ligne ne sera plus opérationnelle et vous ne pourrez plus faire d'appels sortants, car le numéro sera transformé en alias. Prenez connaissance des [configurations possibles sur un numéro alias](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins).
 
 > [!warning]
 > 
@@ -135,17 +135,17 @@ Une fois la conversion réalisée, votre ligne ne sera plus opérationnelle et v
 >
 > Un numéro [porté depuis un autre opérateur de téléphonie](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) ne peut pas être converti en ligne SIP.
 
-Afin de répondre à tous les besoins en téléphonie, il est également possible de convertir un numéro alias en ligne SIP.
+Pour répondre à tous les besoins en téléphonie, vous pouvez également convertir un numéro alias en ligne SIP.
 
 Depuis votre espace client OVHcloud, sélectionnez votre numéro alias. Dans l'onglet `Gestion`{.action}, cliquez sur `Convertir le numéro en ligne`{.action}.
 
 ![conversion alias-sip](images/convert-alias-sip.png){.thumbnail}
 
-Vous devez alors:
+Vous devez alors :
 
-- prendre connaissance des informations liées à la conversion;
-- choisir un forfait VoIP parmi ceux proposés dans le menu déroulant;
-- prendre connaisance des conditions des contrats liés et les accepter en cochant la case prévue à cet effet;
+- prendre connaissance des informations liées à la conversion ;
+- choisir un forfait VoIP parmi ceux proposés dans le menu déroulant ;
+- prendre connaissance des conditions des contrats liés et les accepter en cochant la case prévue à cet effet ;
 - enfin, valider la conversion en cliquant sur `Convertir le numéro`{.action}.
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.

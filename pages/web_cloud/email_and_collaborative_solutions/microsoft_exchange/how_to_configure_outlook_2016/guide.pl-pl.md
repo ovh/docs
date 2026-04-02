@@ -39,6 +39,17 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 - Pole SRV OVHcloud musi być poprawnie skonfigurowane w strefie DNS domeny. Sprawdź nasz przewodnik [Dodaj domenę do usługi Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 OVHcloud oferuje usługi, których konfiguracja, zarządzanie i odpowiedzialność należy do Ciebie. Musisz więc zadbać o ich poprawne działanie.

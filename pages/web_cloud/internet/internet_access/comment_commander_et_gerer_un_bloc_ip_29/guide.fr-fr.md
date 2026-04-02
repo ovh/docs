@@ -44,7 +44,7 @@ Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), c
 
 Sur la page, dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie `IPs`. Vous retrouverez dans cette dernière les adresses IP associées à votre accès à Internet. Concernant les adresses IPv4, deux lignes peuvent apparaître :
 
-- l'adresse IP initiale de votre accès à Internet suivie du masque /32;
+- l'adresse IP initiale de votre accès à Internet suivie du masque /32 ;
 - une adresse IP associée à un bloc /29.
 
 Si vous ne possédez pas de bloc IP /29, vous pouvez en commander un en cliquant sur le bouton `Commander`{.action} puis en suivant les étapes.
@@ -53,7 +53,7 @@ Si vous ne possédez pas de bloc IP /29, vous pouvez en commander un en cliquant
 
 Collectez à présent les adresses IP qui serviront lors des étapes suivantes. Pour cela :
 
-- **récupérez l'adresse initiale de votre accès à Internet** : elle apparaît à côté du masque /32;
+- **récupérez l'adresse initiale de votre accès à Internet** : elle apparaît à côté du masque /32 ;
 - **récupérez les huit adresses IP (dont cinq associables à vos équipements)** : aidez-vous du tableau ci-dessous pour les retrouver.
 
 |Types d'adresses|Description|Exemple|
@@ -249,8 +249,8 @@ Votre bloc IP /29 étant à présent paramétré sur votre box OVHcloud, vous po
 
 Pour réaliser une configuration sur l'un de vos équipements, vous aurez besoin des trois informations suivantes :
 
-- **l'une des cinq adresses IP associables de votre bloc /29** : vous les avez récupérées lors de [l'étape 1](#trouver-ip-associees);
-- **l'adresse de passerelle de votre bloc /29** : vous l'avez récupérée lors de [l'étape 1](#trouver-ip-associees);
+- **l'une des cinq adresses IP associables de votre bloc /29** : vous les avez récupérées lors de [l'étape 1](#trouver-ip-associees) ;
+- **l'adresse de passerelle de votre bloc /29** : vous l'avez récupérée lors de [l'étape 1](#trouver-ip-associees) ;
 - **le masque de sous-réseau** : vous l'avez configuré lors de l'étape précédente ; il doit correspondre à `255.255.255.248`.
 
 Une fois cette opération effectuée depuis un ordinateur, vous aurez la possibilité de tester l'attribution de nouvelles adresses IP en réalisant un test de débit depuis notre site <http://ovh.net/>. À la fin, celles-ci apparaîtront à côté de **IPv4** à gauche.

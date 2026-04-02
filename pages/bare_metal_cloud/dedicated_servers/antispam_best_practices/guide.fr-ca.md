@@ -12,6 +12,17 @@ Si une adresse IP fait l'ojet d'un rapport auprès d'organisations comme Spamhau
 
 Il est donc important qu'OVHcloud s'occupe de la réputation, la qualité et la sécurité du réseau, qui constitue également une partie importante de votre service.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [IP publiques](/links/control-panel/network-public-ip)
+- **Pour accéder à vos services :** `Network`{.action} > `Adresses IP Publiques`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
+
 ### Comment fonctionne le système de protection ?
 
 Notre système est basé sur la technologie antispam de Vade Secure.
@@ -61,8 +72,6 @@ Une fois le problème résolu, vous pouvez débloquer votre adresse IP en effect
 ### Débloquer votre adresse IP
 
 #### Débloquer votre adresse IP depuis l'espace client
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran puis sur `Adresses IP Publiques`{.action}.
 
 Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** pour filtrer vos services par catégorie, ou taper directement l'adresse IP désirée dans la barre de recherche.
 

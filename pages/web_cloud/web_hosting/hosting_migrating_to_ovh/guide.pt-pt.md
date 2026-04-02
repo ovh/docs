@@ -21,7 +21,17 @@ Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto 
 - Ter acesso à zona DNS (Domain Name System) ativa do seu domínio.
 - Ter acesso aos ficheiros e à base de dados do seu website no seu alojamento atual.
 - Dispor de dados de acesso (utilizador, palavra-passe, servidor) aos seus endereços de e-mail atuais.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

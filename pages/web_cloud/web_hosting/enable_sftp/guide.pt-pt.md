@@ -31,7 +31,17 @@ A única diferença é que o SFTP utiliza um canal seguro para trocar dados. Os 
 ## Requisitos
 
 - Ter uma oferta de [alojamento web OVHcloud](/links/web/hosting).
-- Estar conectado ao seu [área de cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -41,28 +51,22 @@ A única diferença é que o SFTP utiliza um canal seguro para trocar dados. Os 
 
 /// details | Ativar o SFTP numa oferta de alojamento web **gratuita 100M**, **Starter** ou **Perso**
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na tabela no fundo da página, marque a caixa presente na coluna **SFTP** do utilizador FTP desejado. A página atualizar-se-á automaticamente.
 >>
@@ -75,28 +79,22 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 
 /// details | Ativar o SFTP numa oferta de alojamento web **Pro** ou **Performance**
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na tabela no fundo da página, verifique o estado presente na coluna **SFTP** do utilizador FTP desejado :
 >>
@@ -105,7 +103,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 >> ![FTP - SSH Pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Na janela que se abre, na secção **Protocolos de ligação**, selecione `FTP e SFTP`{.action} ou `FTP, SFTP e SSH`{.action} se também precisar ativar o protocolo SSH.
 >>

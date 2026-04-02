@@ -1,7 +1,7 @@
 ---
 title: FAQ email OVHcloud
 excerpt: "Rileggi le domande più frequenti sulle email"
-updated: 2025-05-21
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,40 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+**Zimbra:**
+
+- **Link diretto:** [Zimbra](/links/control-panel/web-zimbra)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Seleziona il tuo servizio Zimbra
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## FAQ e-mail
 
@@ -87,17 +121,12 @@ Di seguito trovi una tabella riassuntiva delle principali funzionalità email, o
 
 La tecnologia di posta utilizzata per il servizio MX Plan è caratterizzata dall’interfaccia della sua Webmail. Per identificarlo dallo Spazio Cliente, segui questo percorso:
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `MX Plan`{.action}.
-1. Seleziona il dominio.
 1. Nella scheda `Informazioni generali`{.action}, selezionata di default.
 1. Aumenta la tecnologia utilizzata sotto la voce **Webmail**.
 
 ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 ///
-
 
 /// details | Cosa è necessario sapere prima di creare un indirizzo email?
 
@@ -145,7 +174,6 @@ Qui sotto trovi le principali ragioni del mancato ricevimento delle tue email.
 
 ///
 
-
 /// details | Perché configurare record SPF e DKIM?
 
 **SPF (Sender Policy Framework)**
@@ -161,7 +189,6 @@ Permette di firmare le email per evitare furti di identità. Questa firma funzio
 Per informazioni su come configurare un record DKIM sul servizio di posta, consulta la nostra guida: "[Migliorare la sicurezza delle email tramite un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)".
 
 ///
-
 
 /// details | Come configurare il tuo indirizzo email e utilizzarlo con la Webmail?
 
@@ -280,7 +307,6 @@ Se nello Spazio Cliente non è presente la colonna `Filtri`, è necessario crear
 **Consigli e suggerimenti**: Se imposti un filtro sulla ricezione di SPAM, è probabile che alcune email legittime vengano considerate come SPAM. Queste email vengono chiamate "falsi positivi". In tal caso, ti invitiamo a creare una richiesta di assistenza dal tuo [Spazio Cliente](/links/manager) per informarci. In questo modo potremo fare il necessario per fare in modo che queste email non vengano considerate come SPAM anche in futuro.
 
 ///
-
 
 /// details | Il mio indirizzo email è pieno, non ho più spazio. Cosa posso fare?
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C ou SSE-OMK
 excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C ou SSE-OMK
-updated: 2025-09-12
+updated: 2026-03-06
 ---
 
 <style>
@@ -29,7 +29,7 @@ Bien que cette approche exige une gestion rigoureuse des clés de la part du cli
 En parallèle, le chiffrement côté serveur (Server-Side Encryption, SSE) propose une alternative où les données sont chiffrées à leur arrivée sur nos serveurs. Cette responsabilité incombe à OVHcloud, ce qui allège considérablement la charge de gestion de la sécurité pour nos clients. Deux méthodes de chiffrement côté serveur sont disponibles : 
 
 - **SSE-C (Server-Side Encryption with Customer Keys)** : vous pouvez fournir et gérer vos propres clés de chiffrement, vous offrant ainsi une maîtrise complète sur la sécurité de vos données. Cette option est particulièrement adaptée aux organisations ayant des besoins spécifiques en matière de conformité et de sécurité des données, puisqu'elle permet une gestion exclusive des clés de chiffrement.
-- **SSE-OMK  **\*** (Server-Side Encryption with OVHcloud-Managed Keys)** : simplifie le processus de chiffrement en utilisant des clés gérées par OVHcloud. Cette méthode est idéale pour les clients qui souhaitent bénéficier d'une solution de chiffrement robuste sans les complexités liées à la gestion des clés.
+- **SSE-OMK<sup>1</sup> (Server-Side Encryption with OVHcloud-Managed Keys)** : simplifie le processus de chiffrement en utilisant des clés gérées par OVHcloud. Cette méthode est idéale pour les clients qui souhaitent bénéficier d'une solution de chiffrement robuste sans les complexités liées à la gestion des clés.
 
 Notre objectif est vous aider à choisir le meilleur type de chiffrement pour vous. Cette page vous donne toutes les informations nécessaires pour faire un choix éclairé. Que vous préfériez gérer vous-même avec SSE-C ou opter pour la facilité de SSE-OMK, Nous nous engageons à vous offrir des solutions flexibles et sûres pour protéger vos données quand elles sont stockées.
 
@@ -44,9 +44,20 @@ Notre objectif est vous aider à choisir le meilleur type de chiffrement pour vo
 
 - Avoir créé un bucket Object Storage
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
-- Avoir installé et configuré l'interface de ligne de commande AWS (aws-cli)
+- Avoir installé et configuré l'AWS CLI
 
 Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -58,9 +69,9 @@ Lorsque vous utilisez SSE-C, vous devez fournir des informations sur la clé de 
 
 | Nom | Description |
 |:-----|:------------|
-| --sse​-customer-algorithm | Utilisez cet en-tête pour spécifier l'algorithme du chiffrement. La valeur de l'en-tête doit être *AES256*.  |
+| --sse-customer-algorithm | Utilisez cet en-tête pour spécifier l'algorithme du chiffrement. La valeur de l'en-tête doit être *AES256*. |
 | --sse-customer-key | Utilisez cet en-tête pour fournir la clé de chiffrement de 256 bits encodée en Base64 pour chiffrer ou déchiffrer les données. |
-| --sse​-customer-key-md5 | Utilisez cet en-tête pour fournir la valeur de hachage MD5 128 bits encodée en Base64 de la clé de chiffrement conformément à la norme RFC 1321. Cet en-tête est utilisé pour vérifier l'intégrité du message et veiller à ce que la clé de chiffrement ait été transmise sans erreur. |
+| --sse-customer-key-md5 | Utilisez cet en-tête pour fournir la valeur de hachage MD5 128 bits encodée en Base64 de la clé de chiffrement conformément à la norme RFC 1321. Cet en-tête est utilisé pour vérifier l'intégrité du message et veiller à ce que la clé de chiffrement ait été transmise sans erreur. |
 
 ### SSE-C - Chiffrement côté serveur avec clés de chiffrement client
 
@@ -69,20 +80,20 @@ Lorsque vous utilisez SSE-C, vous devez fournir des informations sur la clé de 
 Exemple de création d'une clé de chiffrement ( *--sse-customer-key* ) et de son hash MD5 :
 
 ```bash
-$ secret=$(openssl rand 32)
-$ encKey=$(echo -n $secret | base64)
-$ md5Key=$(echo -n $secret | openssl dgst -md5 -binary | base64)
+secret=$(openssl rand 32)
+encKey=$(echo -n $secret | base64)
+md5Key=$(echo -n $secret | openssl dgst -md5 -binary | base64)
 ```
 
 #### Envoi d'un objet avec SSE-C
 
-Pour envoyer un objet avec SSE-C et aws-cli, procédez comme suit :
+Pour envoyer un objet avec SSE-C et l'AWS CLI, procédez comme suit :
 
 ```bash
-$ aws s3api put-object \
-  --body /etc/magic \
+aws s3api put-object \
+  --body <file_path> \
   --bucket <bucket_name> \
-  --key encrypt_magic \
+  --key <object_key> \
   --sse-customer-algorithm AES256 \
   --sse-customer-key $encKey \
   --sse-customer-key-md5 $md5Key
@@ -90,37 +101,37 @@ $ aws s3api put-object \
 
 #### Réception d'un objet avec SSE-C
 
-Pour recevoir un objet avec SSE-C et aws-cli, procédez comme suit :
+Pour recevoir un objet avec SSE-C et l'AWS CLI, procédez comme suit :
 
 ```bash
-$ aws s3api get-object \
+aws s3api get-object \
   --bucket <bucket_name> \
-  --key encrypt_magic \
+  --key <object_key> \
   --sse-customer-algorithm AES256 \
   --sse-customer-key $encKey \
   --sse-customer-key-md5 $md5Key \
-  decrypt_magic
+  <destination_file_path>
 ```
 
 Sans les en-têtes de chiffrement, vous obtiendrez une erreur `Bad Request` :
 
 ```bash
-$ aws s3api get-object \
+aws s3api get-object \
   --bucket <bucket_name> \
-  --key encrypt_magic \
-  decrypt_magic
+  --key <object_key> \
+  <destination_file_path>
 
-$ An error occurred (400) when calling the HeadObject operation: Bad Request
+An error occurred (400) when calling the HeadObject operation: Bad Request
 ```
 
 #### Obtenir les métadonnées d'un objet avec SSE-C
 
-Pour obtenir les métadonnées d'un objet avec SSE-C et aws-cli, procédez comme suit :
+Pour obtenir les métadonnées d'un objet avec SSE-C et l'AWS CLI, procédez comme suit :
 
 ```bash
-$ aws s3api head-object \
+aws s3api head-object \
   --bucket <bucket_name> \
-  --key encrypt_magic \
+  --key <object_key> \
   --sse-customer-algorithm AES256 \
   --sse-customer-key $encKey \
   --sse-customer-key-md5 $md5Key
@@ -144,10 +155,10 @@ Sans les en-têtes de chiffrement, vous obtiendrez une erreur `Bad Request`.
 
 ### Suppression d'un objet chiffré avec SSE-C
 
-Pour supprimer un objet chiffré avec SSE-C et aws-cli, procédez comme suit :
+Pour supprimer un objet chiffré avec SSE-C et l'AWS CLI, procédez comme suit :
 
 ```bash
-$ aws s3 rm s3://<bucket_name>/encrypt_magic
+aws s3 rm s3://<bucket_name>/<object_key>
 ```
 
 #### Presigned URLs et SSE-C
@@ -207,14 +218,14 @@ L'implémentation du chiffrement SSE-OMK sur Object Storage est conçue pour off
 Pour envoyer un objet dans votre bucket Object Storage sur OVHcloud avec chiffrement SSE-OMK, utilisez la commande Bash suivante via l'AWS CLI. Cette commande intègre l'option de chiffrement côté serveur pour renforcer la sécurité de vos données stockées.
 
 ```bash
-aws s3api put-object --bucket votre-bucket --key votre-objet --body chemin/vers/votre/fichier --server-side-encryption AES256 --endpoint-url https://s3.io.cloud.ovh.net
+aws s3api put-object --bucket <bucket_name> --key <object_key> --body <file_path> --server-side-encryption AES256 --endpoint-url https://s3.<region>.io.cloud.ovh.net
 ```
 
 Lorsque vous utilisez la commande AWS CLI pour uploader un objet avec chiffrement SSE-OMK sur Object Storage, assurez-vous de remplacer les valeurs suivantes selon vos informations spécifiques :
 
-- `votre-bucket` : remplacez cette valeur par le nom de votre bucket Object Storage où vous souhaitez envoyer l'objet.
-- `votre-objet` : remplacez par la clé ou le nom sous lequel vous voulez que l'objet soit stocké dans le bucket.
-- `chemin/vers/votre/fichier` : indiquez le chemin d'accès complet au fichier que vous prévoyez d'envoyer.
+- `<bucket_name>` : le nom de votre bucket Object Storage.
+- `<object_key>` : la clé (nom) de l'objet dans le bucket.
+- `<file_path>` : le chemin vers le fichier que vous souhaitez uploader.
 
 L'option `--server-side-encryption AES256` dans la commande indique que vous souhaitez appliquer le chiffrement SSE-OMK. Cela garantit que l'objet envoyé est chiffré de manière sécurisée directement sur le serveur OVHcloud, offrant une couche supplémentaire de protection pour vos données.
 
@@ -223,13 +234,12 @@ L'option `--server-side-encryption AES256` dans la commande indique que vous sou
 Pour télécharger un objet qui a été chiffré avec SSE-OMK depuis Object Storage, il n'est pas nécessaire de spécifier des headers du chiffrement dans la commande. En effet, l'objet peut être téléchargé directement sans manipulation supplémentaire liée au chiffrement, car le déchiffrement est géré automatiquement côté serveur. Voici un exemple de commande de téléchargement :
 
 ```bash
-aws s3api get-object --bucket votre-bucket --key votre-objet chemin/vers/destination/fichier --endpoint-url https://s3.io.cloud.ovh.net
+aws s3api get-object --bucket <bucket_name> --key <object_key> <destination_file_path> --endpoint-url https://s3.<region>.io.cloud.ovh.net
 ```
 
-- Remplacez `votre-bucket` par le nom de votre bucket.
-- Remplacez `votre-objet` par la clé de l'objet que vous souhaitez télécharger.
-- Remplacez `chemin/vers/destination/fichier` par le chemin où vous souhaitez sauvegarder le fichier téléchargé.
-- Le paramètre `--endpoint-url https://s3.io.cloud.ovh.net` doit être ajusté à la région de votre service Object Storage.
+- Remplacez `<bucket_name>` par le nom de votre bucket.
+- Remplacez `<object_key>` par la clé de l'objet que vous souhaitez télécharger.
+- Remplacez `<destination_file_path>` par le chemin où vous souhaitez sauvegarder le fichier téléchargé.
 
 Attention de ne pas inclure de headers de chiffrement spécifiques lors du téléchargement d'un objet chiffré avec SSE-OMK pour éviter des erreurs, telles qu'une erreur 400 Bad Request.
 
@@ -245,17 +255,15 @@ Attention de ne pas inclure de headers de chiffrement spécifiques lors du tél�
 >> Pour ajouter le chiffrement SSE-OMK à un bucket Object Storage existant sur OVHcloud, vous devez utiliser la commande `put-bucket-encryption` de l'AWS CLI. Cette commande configure le chiffrement du bucket pour que tous les nouveaux objets ajoutés soient automatiquement chiffrés avec SSE-OMK. Voici la commande spécifique que vous utiliseriez :
 >>
 >> ```bash
->> aws s3api put-bucket-encryption --bucket votre-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.io.cloud.ovh.net
+>> aws s3api put-bucket-encryption --bucket <bucket_name> --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.<region>.io.cloud.ovh.net
 >> ```
 >>
->> - Remplacez `votre-bucket` par le nom de votre bucket Object Storage.
+>> - Remplacez `<bucket_name>` par le nom de votre bucket Object Storage.
 >>
 >> Cela va configurer le bucket pour utiliser le chiffrement SSE-OMK avec les clés gérées par Object Storage (AES256) pour tous les nouveaux objets.
 >>
-> Avec l'espace client OVHcloud
->> Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Object Storage`{.action} dans le menu de gauche.
->>
->> Sélectionnez ensuite le bucket Object Storage concerné, puis dans le menu d'informations, cliquez sur `Activer le chiffrement`{.action}.
+> Avec l’espace client OVHcloud
+>> Cliquez sur `Object Storage`{.action} dans `Storage & backup` dans le menu de gauche.  Sélectionnez le bucket Object Storage concerné, puis dans le menu d’informations, cliquez sur `Activer le chiffrement`{.action}.
 >>
 >> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
 >>
@@ -275,10 +283,10 @@ Après avoir configuré le chiffrement de votre bucket via `PutBucketEncryption`
 > [!tabs]
 > Avec AWS s3api
 >> ```bash
->> aws s3api get-bucket-encryption --bucket votre-bucket --endpoint-url https://s3.io.cloud.ovh.net
+>> aws s3api get-bucket-encryption --bucket <bucket_name> --endpoint-url https://s3.<region>.io.cloud.ovh.net
 >> ```
 >>
->> - Remplacez `votre-bucket` par le nom de votre bucket.
+>> - Remplacez `<bucket_name>` par le nom de votre bucket.
 >>
 >> Cette commande vous permet de vérifier la configuration actuelle du chiffrement de votre bucket pour vous assurer que le chiffrement SSE-OMK est bien activé.
 >>
@@ -451,4 +459,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

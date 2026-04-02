@@ -13,7 +13,17 @@ Si está ausente y no puede consultar su dirección de correo, puede implementar
 ## Requisitos
 
 - Tener una solución MX Plan. Esta está disponible a través de: un plan de hosting [web hosting](/links/web/hosting), el [alojamiento gratuito 100M](/links/web/domains-free-hosting) incluido con un dominio (activado previamente) o el MX Plan contratado por separado.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -23,11 +33,7 @@ Si está ausente y no puede consultar su dirección de correo, puede implementar
 
 ### Creación de una respuesta automática
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
-1. Haga clic en la pestaña `Correo electrónico`{.action} en la parte superior y, seguidamente, en `Gestión de los contestadores`{.action}.
+Haga clic en la pestaña `Correo electrónico`{.action} en la parte superior y, seguidamente, en `Gestión de los contestadores`{.action}.
 
 Será redirigido a la ventana `Gestión de los contestadores`, en la que podrá consultar todas las respuestas automáticas de correo que tiene instaladas en su servicio de correo.
 
@@ -39,8 +45,8 @@ Se abrirá la ventana de adición. Puede completar esta información de acuerdo 
 
 - `Tipo de contestador`:
 
-**Asociado a una cuenta de correo**: utilice esta opción si su servicio de correo ya contiene una dirección de correo.
-**Libre**: se utiliza en el caso de un alias. por lo que no está vinculado a ninguna dirección existente.
+    - **Asociado a una cuenta de correo**: utilice esta opción si su servicio de correo ya contiene una dirección de correo.
+    - **Libre**: se utiliza en el caso de un alias. Por lo que no está vinculado a ninguna dirección existente.
 
 - `Buzón de correo` o `Nombre del contestador`: la dirección de correo o el alias afectados por la respuesta automática.
 - `Duración del contestador`:

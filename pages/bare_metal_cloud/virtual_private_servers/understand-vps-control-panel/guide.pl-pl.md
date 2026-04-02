@@ -13,16 +13,24 @@ updated: 2026-01-21
 ## Wymagania początkowe
 
 - Aktywna oferta [VPS](/links/bare-metal/vps) w Twoim Panelu klienta OVHcloud.
-- Zalogowanie się do swojego [Panelu klienta OVHcloud](/links/manager).
 
 > [!warning]
 > Niektóre funkcje VPS opisane na tej stronie nie są dostępne w OVHcloud Local Zones.
 >
 > Aby uzyskać więcej informacji, odwiedź naszą [stronę Local Zones](/links/bare-metal/vps-lz).
 
-## W praktyce
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz swój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## W praktyce
 
 To przewodnik pomaga Ci **zrozumieć interfejs zarządzania VPS w Panelu klienta OVHcloud**, zidentyfikować kluczowe informacje i wykorzystać główne dostępne działania (reinstalacja, restart, kopia zapasowa, konfiguracja).
 

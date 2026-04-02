@@ -13,7 +13,17 @@ Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la co
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting) compatible.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

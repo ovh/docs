@@ -16,17 +16,27 @@ Note that in order to complete this tutorial, you should have at least:
 - A machine on which you will deploy ElastAlert.
 - Some data on an alias or an index.
 
+<!-- CP-NAV-START:logs-data-platform -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Logs Data Platform](/links/control-panel/logs-data-platform)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Logs Data Platform`{.action} > Select the platform concerned
+
+---
+<!-- CP-NAV-END:logs-data-platform -->
+
 ## Preparation
 
 In order to deploy ElastAlert, it is important that you have data for which you can see alerts. If you only have Graylog stream, you can use aliases to enable the OpenSearch API on your stream data. Here is how:
 
-1. Go to the Logs Data Platform manager.
-2. In the Alias panel, click the `Add an alias`{.action} button.
-3. Choose a name and define a description for your alias.
-4. Save the entry by clicking the `Save`{.action} button.
-5. Once the alias has been created. Use the **...** menu on the right side and select the `Attach content to the alias`{.action} option.
-6. Define there the data streams you want to associate to your alias.
-7. That's it.
+1. In the `Alias`{.action} tab, click the `Add an alias`{.action} button.
+2. Choose a name and define a description for your alias.
+3. Save the entry by clicking the `Save`{.action} button.
+4. Once the alias has been created. Use the **...** menu on the right side and select the `Attach content to the alias`{.action} option.
+5. Define there the data streams you want to associate to your alias.
+6. That's it.
 
 ![Alias creation](images/alias.png){.thumbnail}
 

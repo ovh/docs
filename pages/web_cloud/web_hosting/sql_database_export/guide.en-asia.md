@@ -16,6 +16,17 @@ Databases are used by most websites and **C**ontent **M**anagement **S**ystems (
 - a database created as part of an [OVHcloud Web Hosting plan](/links/web/hosting)
 - Depending on which backup method you use, you must be able to administer the Web Hosting plan from your [OVHcloud Control Panel](/links/manager), or have the information you need in order to connect to the database.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instructions
 
 Before you begin, define the method you will follow to retrieve the backup of your database. There are several ways to do this:
@@ -46,28 +57,22 @@ We recommend reading this guide, and focusing on the backup method you wish to u
 
 ### Retrieve a backup via the OVHcloud tool
 
-To access the OVHcloud backup tool, click on the tabs below to view each of the **4** steps.
+To access the OVHcloud backup tool, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page, a table will appear containing the databases you have created.
 >>

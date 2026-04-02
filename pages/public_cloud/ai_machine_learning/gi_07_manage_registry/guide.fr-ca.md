@@ -11,7 +11,17 @@ This guide is intended to help you to **use and manage your public and private r
 ## Requirements
 
 - A **Public Cloud** project
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -38,7 +48,7 @@ This is why it can be interesting to add and manage other registries. We can eit
 
 ### Manage existing registries through UI
 
-First, log in to the [OVHcloud Control Panel](/links/manager) and go to the `Public Cloud`{.action} section. Then go to the `AI Training` section, which is located under `AI & Machine Learning`.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Training` section, which is located under `AI & Machine Learning`.
 
 ![image](images/training_menu.png){.thumbnail}
 
@@ -129,7 +139,7 @@ During this step, you will be asked your user's credentials (user ID and passwor
 > [!tabs]
 > Using the Control Panel (UI)
 >>
->> To add your private registry via UI, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
+>> To add your private registry via UI, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 >> 
 >> ![image](images/training_menu.png){.thumbnail}
 >> 
@@ -218,7 +228,7 @@ During this step, you will be asked your Docker credentials.
 
 ##### Using UI
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 
 ![image](images/training_menu.png){.thumbnail}
 
@@ -272,7 +282,7 @@ You will be asked your GitHub credentials.
 > [!tabs]
 > Using the Control Panel (UI)
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 >> 
 >> ![image](images/training_menu.png){.thumbnail}
 >> 

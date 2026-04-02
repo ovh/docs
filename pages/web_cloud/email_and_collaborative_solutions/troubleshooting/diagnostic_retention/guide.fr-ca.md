@@ -1,7 +1,7 @@
 ---
 title: Restaurer les éléments supprimés de votre compte e-mail 
 excerpt: Découvrez comment restaurer des éléments supprimés depuis votre compte e-mail via le webmail (OWA)
-updated: 2022-02-08
+updated: 2026-03-24
 ---
 
  
@@ -41,10 +41,6 @@ La récupération des éléments supprimés peut être réalisée depuis le webm
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Connectez-vous à l'adresse e-mail concernée via le webmail (OWA) : [Webmail](/links/web/email).
-
-> [!primary]
->
-> Pour les offres de type **Private Exchange**, le lien de connexion au webmail se situe dans le cadre **Connexion** de l'onglet `Information générales`{.action} sur votre plateforme.
 
 Une fois connecté, cliquez sur `Éléments supprimés`{.action} dans la colonne de gauche, puis sur `Récupérer les éléments supprimés`{.action} dans la partie supérieure de la colonne centrale.
 

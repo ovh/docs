@@ -20,6 +20,17 @@ If you have an OVHcloud web hosting plan, you can access a storage space that al
 - a [OVHcloud web hosting plan](/links/web/hosting)
 - Install [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) on your machine
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instructions
  
 > [!warning]

@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Setting up your e-mail address on Classic Outlook for Windows"
 excerpt: "Find out how to configure your MX Plan email address in Classic Outlook for Windows"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -35,6 +35,17 @@ Email addresses from the **MX Plan** offer can be configured on a compatible ema
 - Have an OVHcloud email solution already configured, from the following **MX Plan** offered with our [web hosting offers](/links/web/hosting)
 - [Outlook classic](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) installed on your Windows.
 - Have the credentials related to the email address you wish to configure.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 /// details | Information related to the management and configuration of OVHcloud services
 
@@ -214,7 +225,7 @@ To configure your email address, follow the steps by clicking on the tabs below.
 
 Once the e-mail address is configured, you can now use it! You can now send and receive messages.
 
-OVHcloud also offers a web application allowing you to access your e-mail address from a web browser. OVHcloud Webmail is available [here](/links/web/email). You can log in using the credentials of your e-mail address. For any questions regarding its use, feel free to consult our guide "[Accessing your Exchange account from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
+OVHcloud also offers a web application allowing you to access your e-mail address from a web browser. OVHcloud Webmail is available [here](/links/web/email). You can log in using the credentials of your e-mail address. For any questions regarding its use, feel free to consult our guide "[Using the OWA webmail interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 
 ### Recover a backup of your e-mail address
 

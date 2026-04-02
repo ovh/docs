@@ -17,6 +17,17 @@ Apprenez à créer et à gérer un Health Monitor pour vos Load Balancers OVHclo
 
 ## En pratique
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Création d’un Health Monitor
 
 Les Health Monitors jouent un rôle crucial dans la gestion de la disponibilité et des performances des services hébergés sur des infrastructures comme le Public Cloud OVHcloud. Ils effectuent des vérifications régulières des serveurs pour garantir leur capacité à traiter les requêtes entrantes. Si un serveur ne répond pas aux critères de santé établis, il est temporairement retiré du pool, assurant ainsi que le trafic est dirigé uniquement vers les serveurs fonctionnels.
@@ -95,14 +106,12 @@ Selon l'interface choisie, voici les étapes à suivre :
 
 Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balancer OVHcloud, ce qui permet de surveiller l'état de santé des serveurs du pool :
 
-<strong>1.</strong> Connectez-vous à votre [espace client OVHcloud](/links/manager).<br>
-<strong>2.</strong> Rendez-vous dans l'onglet `Public Cloud`{.action} et sélectionnez votre projet.<br>
-<strong>3.</strong> Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.<br>
-<strong>4.</strong> Cliquez sur l'onglet `Pools`{.action} puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
+<strong>1.</strong> Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.<br>
+<strong>2.</strong> Cliquez sur l'onglet `Pools`{.action} puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
 
 ![Schema 1](images/healthM1.png){.thumbnail}
 
-<strong>5.</strong> Cliquez sur l'onglet `Health Monitors`{.action} dans les détails du Pool, puis sur `Ajouter un Health Monitor`{.action}.
+<strong>3.</strong> Cliquez sur l'onglet `Health Monitors`{.action} dans les détails du Pool, puis sur `Ajouter un Health Monitor`{.action}.
 
 ![Schema 1](images/healthM2.png){.thumbnail}
 
@@ -120,7 +129,7 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
       - **Max Retries**: nombre total d'échecs de connexion autorisés avant de marquer le membre comme inactif (entre 1 et 10).
       - **Timeout**: durée après laquelle un test s'arrête (doit être égal ou supérieur à la périodicité).
 
-<strong>6.</strong> Une fois toutes les informations renseignées, cliquez sur `Ajouter`{.action} pour activer votre Health Monitor.
+<strong>4.</strong> Une fois toutes les informations renseignées, cliquez sur `Ajouter`{.action} pour activer votre Health Monitor.
 
 ![Schema 1](images/healthM3.png){.thumbnail}
 

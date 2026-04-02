@@ -17,10 +17,20 @@ L'[hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer) vous per
 - Disposer d'un [hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer).
 - Avoir activé Node.js comme moteur d'exécution.
 - Avoir ajouté le nom de domaine concerné en tant que multisite et avoir défini Node.js comme étant son moteur d'exécution.
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Ce que vous devez savoir:
     - Les bases de l'écosystème Node.js.
     - Se connecter en SSH.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

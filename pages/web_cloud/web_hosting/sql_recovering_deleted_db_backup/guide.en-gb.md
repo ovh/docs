@@ -22,6 +22,17 @@ Databases are included in most of our [web hosting plans](/links/web/hosting). I
 - You have an active [OVHcloud web hosting plan](/links/web/hosting) that includes at least one shared database.
 - The database deletion must be less than 30 days old.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instructions
 
 The OVHcloud API is made available to developers or integrators to associate features, such as those not present in the OVHcloud Control Panel, directly with their applications or solutions.

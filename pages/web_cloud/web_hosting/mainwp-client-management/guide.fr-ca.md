@@ -62,7 +62,7 @@ Vous pouvez :
 
 ### Créer de nouveaux champs pour vos clients
 
-Pour chaque client, de nombreux champs par défaut sont présents, comme le nom, l'email, le pays, le numéro ou encore les liens vers les réseaux sociaux. Si vous souhaitez rajouter une information spécifique qui n'est pas présente par défaut, il est possible de rajouter manuellement les champs de votre choix.
+Pour chaque client, de nombreux champs par défaut sont présents, comme le nom, l'e-mail, le pays, le numéro ou encore les liens vers les réseaux sociaux. Si vous souhaitez rajouter une information spécifique qui n'est pas présente par défaut, il est possible de rajouter manuellement les champs de votre choix.
 Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Clients Fields`{.action}. Pour créer un nouveau champ, cliquez sur le bouton `New Field`{.action}. Dans la fenêtre qui s'affiche, entrez le nom et la description de votre nouveau champ.
 
 ![mainWPClientMngt](/pages/assets/screens/other/cms/wordpress/mainwp/new_field_client.png){.thumbnail}

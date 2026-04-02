@@ -1,7 +1,7 @@
 ---
 title: 'Transfer nazwy domeny do OVHcloud'
 excerpt: "Dowiedz się, jak wykonać transfer nazwy domeny do OVHcloud"
-updated: 2026-02-10
+updated: 2026-03-27
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -43,6 +43,17 @@ Transfer nazwy domeny może spowodować zmianę z **rejestrator** dla nazwy dome
 - Posiadanie uprawnień do złożenia wniosku o transfer nazwy domeny
 - Powiadomienie abonenta nazwy domeny i/lub administratorów o wszczęciu procedury transferu
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## W praktyce
 
 > [!success]
@@ -66,7 +77,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 ### Etap 1: weryfikacja informacji związanych z nazwą domeny <a name="step1"></a>
 
-**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie ["Whois"](/links/web/domains-whois). Sugerujemy zatem sprawdzenie informacji dotyczących Twojej nazwy domeny u aktualnego operatora.
+**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie « [Whois](/links/web/domains-whois) ». Sugerujemy zatem sprawdzenie informacji dotyczących Twojej nazwy domeny u aktualnego operatora.
 
 - **Jeśli informacje są poprawne: przejdź do kolejnego etapu niniejszego przewodnika.**
 
@@ -123,11 +134,11 @@ Możesz również zakończyć zamówienie [hostingiem www](/links/web/hosting) i
 
 #### Informacje o transferze po zamówieniu
 
-Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po otrzymaniu płatności. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu przejdź do sekcji `Web Cloud`{.action}, a następnie kliknij na `Operacje w toku`{.action}.
+Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po otrzymaniu płatności. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu na stronie [Operacje w toku](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
-> Jeśli kod transferu nie został wpisany podczas składania zamówienia, możesz go wpisać w oknie `Operacje w toku`{.action}, aby potwierdzić operację.
+> Jeśli kod transferu nie został wpisany podczas składania zamówienia, możesz go wpisać na tej samej stronie, aby potwierdzić operację.
 
 ### Etap 4: potwierdzenie transferu przez aktualnego operatora <a name="step4"></a>
 
@@ -141,7 +152,7 @@ Po zatwierdzeniu zamówienia i kodu transferu aktualny operator (którym nie jes
 
 Jeśli odmowa została wydana przez aktualny operator rejestracji, skontaktuj się z nim, aby dowiedzieć się, dlaczego odmówił rejestracji.
 
-Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu przejdź do sekcji `Web Cloud`{.action}, a następnie kliknij na `Operacje w toku`{.action}.
+Proces transferu może zostać ponownie uruchomiony na stronie [Operacje w toku](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
@@ -155,7 +166,7 @@ Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](
 
 ### Etap 5: zarządzaj nazwą domeny za pomocą OVHcloud
 
-Po zakończeniu operacji transferu możesz zarządzać nazwą domeny w [Panelu klienta OVHcloud](/links/manager). W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
+Po zakończeniu operacji transferu możesz zarządzać nazwą domeny na stronie [Domeny](/links/control-panel/web-domains).
 
 > [!warning]
 >
@@ -165,10 +176,20 @@ Po zakończeniu operacji transferu możesz zarządzać nazwą domeny w [Panelu k
 > Dla nazw domen z rozszerzeniem *lokalnym* lub *regionalnym* (z **ccTLD**, takich jak *.fr*, *.be*, *.de*, *.es*, itp.) zależy to od rozszerzeń i reguł wdrożonych przez **registry** danego rozszerzenia.
 > Po zakończeniu transferu sprawdź w Panelu klienta datę wygaśnięcia Twojej nazwy domeny.
 >
-> W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action} i wybierz odpowiednią domenę. Na stronie, która się wyświetla i tuż poniżej nazwy domeny w górnej części strony znajdziesz planowaną datę odnowienia wraz z **m** i **rok** jako termin wygaśnięcia.
->
 > W zależności od sytuacji oraz od daty wygaśnięcia nazwy domeny, może zaistnieć konieczność odnowienia nazwy domeny zaraz po jej zakończeniu.
->
+
+Aby to sprawdzić, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź do strony [Domeny](/links/control-panel/web-domains), a następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na wyświetlonej stronie, tuż poniżej nazwy domeny, znajdziesz planowaną datę odnowienia wraz z **miesiącem** i **rokiem** wygaśnięcia.
 
 ## Sprawdź również
 

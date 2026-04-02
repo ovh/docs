@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mail OVHcloud
 excerpt: "Znajdź najczęściej zadawane pytania dotyczące kont e-mail"
-updated: 2025-05-21
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,40 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+**Zimbra:**
+
+- **Link bezpośredni:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Wybierz usługę Zimbra
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## FAQ e-mail
 
@@ -48,7 +82,7 @@ OVHcloud oferuje aktualnie 4 oferty e-mail. Poznaj ich funkcje, przechodząc prz
 >>
 > **E-maile Pro**
 >>
->> ![Email Pro](images/emailpro01.png){.thumbnail .w-500}
+>> ![E-mail Pro](images/emailpro01.png){.thumbnail .w-500}
 >>
 >> 1. Oferta e-mail oparta na technologii Exchange, oferująca podstawowe funkcje z przestrzenią dyskową 10 GB.
 >> 2. Możesz zamówić konto E-mail Pro w Panelu klienta [OVHcloud](/links/manager) lub bezpośrednio w [ovhcloud.com](/links/web/email).
@@ -87,17 +121,12 @@ Poniżej znajduje się tabela podsumowująca najważniejsze funkcje poczty elekt
 
 Technologia poczty elektronicznej używana w usłudze MX Plan jest scharakteryzowana przez interfejs jej interfejsu webmail. Aby ją zidentyfikować w Panelu klienta:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij opcję `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
 1. Wybierz domyślnie w zakładce `Informacje ogólne`{.action}.
 1. Sprawdź technologię używaną pod napisem **Webmail**.
 
 ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 ///
-
 
 /// details | Co należy wiedzieć przed utworzeniem konta e-mail?
 
@@ -146,7 +175,6 @@ Poniżej znajdziesz główne przyczyny braku otrzymywania e-maili.
 
 ///
 
-
 /// details | Dlaczego warto skonfigurować rekordy SPF i DKIM?
 
 **SPF (Sender Policy Framework)**
@@ -162,7 +190,6 @@ Podpisuje e-maile, aby zapobiec kradzieży tożsamości. Podpis ten działa na z
 Aby dowiedzieć się, jak skonfigurować rekord DKIM w Twojej usłudze e-mail, zapoznaj się z naszym przewodnikiem „[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)“.
 
 ///
-
 
 /// details | Jak skonfigurować mój adres e-mail i używać go w interfejsie webmail?
 
@@ -260,7 +287,6 @@ Utworzenie adresu e-mail nie jest skomplikowane, ale należy przestrzegać pewny
 >
 > Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
 
-
 ///
 
 /// details | Jak odzyskać zapomniane hasło?
@@ -283,7 +309,6 @@ Jeśli w Panelu klienta nie widzisz kolumny `Filtry`, wówczas tworzenie filtró
 **Wskazówki i porady**: Jeśli włączysz filtr antyspamowy, możliwe, że niektóre prawidłowe wiadomości zostaną uznane za spam. Jest to tzw. wynik „fałszywie pozytywny”. Jeśli tak się zdarzy, zachęcamy do otwarcia zgłoszenia w [Panelu klienta OVHcloud](/links/manager), aby poinformować nas o tym. Dzięki temu będziemy mogli podjąć odpowiednie kroki, aby takie wiadomości nie były w przyszłości uznawane za spam.
 
 ///
-
 
 /// details | Mój adres e-mail jest zajęty. Nie mam już miejsca. Co mogę zrobić?
 

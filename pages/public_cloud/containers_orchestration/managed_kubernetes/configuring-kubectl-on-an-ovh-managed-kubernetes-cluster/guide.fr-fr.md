@@ -13,17 +13,25 @@ This guide will cover how to retrieve the `kubectl` configuration file to intera
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - You must have an OVHcloud Managed Kubernetes cluster.
 - You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed.
 
 You can find the detailed installation instructions for `kubectl` in Kubernetes' [official documentation](https://kubernetes.io/docs/home/).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Step 1 - Configure the default settings for kubectl
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 

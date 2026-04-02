@@ -1,7 +1,7 @@
 ---
 title: FAQ soluciones de correo electrónico de OVHcloud
 excerpt: "Encuentre las preguntas más frecuentes sobre el correo electrónico"
-updated: 2025-05-21
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,40 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Zimbra:**
+
+- **Enlace directo:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Seleccione su servicio Zimbra
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## FAQ e-mail
 
@@ -87,17 +121,12 @@ A continuación, se ofrece un resumen de las principales funcionalidades de corr
 
 La tecnología de correo utilizada en su solución MX Plan se caracteriza por la interfaz de su webmail. Para identificarlo desde el área de cliente, acceda a la siguiente ruta:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
 1. En la pestaña `Información general`{.action}, seleccionada por defecto.
 1. Revise la tecnología utilizada en la etiqueta **Webmail**.
 
 ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 ///
-
 
 /// details | ¿Qué hay que saber antes de crear una dirección de correo electrónico?
 
@@ -145,7 +174,6 @@ A continuación se indican las principales razones por las que no ha recibido su
 
 ///
 
-
 /// details | ¿Por qué configurar los registros SPF y DKIM?
 
 **SPF (Sender Policy Framework)**
@@ -161,7 +189,6 @@ Permite firmar los mensajes de correo para evitar el robo de identidad. Esta fir
 Para saber cómo configurar un registro DKIM en su servicio de correo, consulte nuestra guía: "[Mejorar la seguridad del correo electrónico mediante un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)".
 
 ///
-
 
 /// details | ¿Cómo configurar mi dirección de correo electrónico y utilizarla con el webmail?
 
@@ -282,7 +309,6 @@ Si la columna `Filtros` no está presente en el área de cliente, deberá crear 
 
 ///
 
-
 /// details | Mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
 
 Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/emails) y tiene una cuenta de correo llena, consulte nuestra guía "[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
@@ -311,7 +337,6 @@ La solución Office 365 Pro Plus no incluye licencia Skype. Solo se incluye Skyp
 Para más información, consulte la guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
 ///
-
 
 ## Más información <a name="go-further"></a>
 

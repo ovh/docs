@@ -1,7 +1,7 @@
 ---
 title: 'Instalar o Veeam Backup & Replication (EN)'
 excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam Enterprise'
-updated: 2024-12-19
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -9,6 +9,13 @@ updated: 2024-12-19
 Veeam Backup & Replication is a data protection software. It offers its users a wide range of options for backing up, replicating and restoring their data.
 
 **This guide explains how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
+
+> [!warning]
+>
+> If a virtual machine is protected using multiple backup methods (for example [VM backup](https://helpcenter.veeam.com/docs/vbr/qsg/vm_backup.html?ver=13) and [Agent backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html?ver=13)), each method consumes a separate licence and is billed independently.
+>
+> To avoid additional charges, protect each virtual machine using **only one backup method**.
+>
 
 ## Requirements
 
@@ -252,7 +259,7 @@ Go to the menu, then click `License`{.action}.
 
 Check that the information displayed is definitely for your OVHcloud licence.
 
-If everything went fine you should see "Edition: Enterprise Plus".
+If the registration was successful, you should see `Edition: Enterprise Plus`.
 
 > [!primary]
 > You can now disable the user that you have created to create the registration.

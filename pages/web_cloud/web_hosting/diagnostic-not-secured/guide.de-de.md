@@ -26,7 +26,17 @@ Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht errei
 ## Voraussetzungen
 
 - Sie haben die Berechtigung zur Verwaltung der [DNS-Server](/pages/web_cloud/domains/dns_server_general_information) und der [DNS-Zone](/pages/web_cloud/domains/dns_zone_general_information) Ihrer Domain.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -41,22 +51,16 @@ Um die Problemursache zu beheben müssen Sie:
 
 Die [oben](#objective) genannten Fehlermeldungen bedeuten nicht unbedingt, dass Ihre Website auf einem unserer [Web Cloud Angebote](/links/web/hosting) gehostet wird. Überprüfen Sie daher die IP-Adresse des Servers, auf den Ihr [Domainname](/links/web/domains) verweist.
 
-Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinden, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Im Feld **Allgemeine Informationen** finden Sie die Adressen unter **IPv4** und **IPv6**.
 >>

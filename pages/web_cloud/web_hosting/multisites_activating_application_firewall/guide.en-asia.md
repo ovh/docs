@@ -27,7 +27,17 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
 - at least one [domain name](/links/web/domains) attached to the hosting
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

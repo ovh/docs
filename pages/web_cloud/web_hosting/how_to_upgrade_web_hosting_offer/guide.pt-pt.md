@@ -21,8 +21,18 @@ A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidade
 ## Requisitos
 
 - Dispor de um [plano de alojamento web](/links/web/hosting)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ser, no mínimo, o contacto " [Administrador](/pages/account_and_service_management/account_information/managing_contacts)" dos serviços para os quais pretende alterar a subscrição.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -38,22 +48,16 @@ A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidade
 
 ### Alterar a oferta de alojamento web <a name="modify"></a>
 
-Para alterar a sua subscrição, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+Para alterar a sua subscrição, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No quadro **Subscrição**, clique no botão `...`{.action} à direita de **Oferta** e, a seguir, em `Mudar de oferta`{.action}.
 >>
@@ -77,34 +81,28 @@ Certifique-se de que a nova oferta inclui suficientes [bases de dados](/links/we
 
 Caso contrário, elimine as bases de dados não utilizadas e, se necessário, reduza a quantidade de dados nelas contida. Esta quantidade não deverá ultrapassar a dimensão máxima das bases de dados da nova oferta. Para qualquer pedido de assistência sobre as manipulações a efetuar, contacte os [parceiros OVHcloud](/links/partner).
 
-Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado. Para isso, clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado. Para isso, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na nova página, é apresentada uma tabela com as bases de dados criadas. À direita da base de dados em causa, clique no botão `...`{.action} e, a seguir, em `Recalcular o limite`{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Na janela que se abrir, clique diretamente no botão `Validar`{.action}.
 >>
@@ -122,22 +120,16 @@ Após a eliminação dos dados das suas bases de dados, recalcule o limite utili
 
 Se utilizar a oferta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluída com o seu alojamento web [Performance](/links/web/hosting-performance-offer) e pretender colocar o seu alojamento web numa oferta [Pro](/links/web/hosting-professional-offer), deverá primeiro dissociar a oferta Web Cloud Databases do seu alojamento web.
 
-Para isso, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No marco **Configuração**, clique no botão `...`{.action} à direita da menção **Web Cloud Databases** e, a seguir, em `Desassociar`{.action}.
 >>
@@ -154,22 +146,16 @@ Se não deseja conservar estes dados, pode igualmente eliminar o seu serviço We
 
 Certifique-se de que a nova oferta oferece um espaço de armazenamento [FTP](/pages/web_cloud/web_hosting/ftp_connection) suficiente para que seja possível a importação dos ficheiros do seu alojamento atual.
 
-Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamento web, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamento web, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No marco **Informações gerais**, encontrará **Espaço de disco**.
 >>
@@ -237,43 +223,31 @@ Com a [opção Boost](/links/web/hosting-options-boost), disponível nas nossas 
 
 Se a opção **Boost** for adequada às suas necessidades, encontrará abaixo as instruções para **ativar** ou **desativar** esta opção no seu alojamento.
 
-Para **ativar a opção Boost**, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+Para **ativar a opção Boost**, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >>  No quadro **Informações gerais** da página que se abrir, clique no botão `...`{.action} à direita de **Boost** e, a seguir, em `Aplicar opção boost ao serviço`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
 
-Para **desativar a opção Boost**, clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+Para **desativar a opção Boost**, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Mais`{.action} e clique em `Aplicar opção boost ao serviço`{.action}.
 >>
@@ -281,7 +255,7 @@ Para **desativar a opção Boost**, clique nas janelas abaixo para visualizar ca
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Aparece o quadro de utilização da opção Boost, clique em `Desativar a opção boost`{.action}.
 >>

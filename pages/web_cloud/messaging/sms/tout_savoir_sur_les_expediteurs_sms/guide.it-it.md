@@ -50,11 +50,11 @@ Consente di ricevere una risposta tramite l'opzione SMS ricevuti.
 
 #### Mittente alfanumerico
 
-Puoi personalizzare il tuo mittente. Non sarà però più possibile ricevere una risposta dal destinatario del tuo SMS. Per accedere alla gestione dei mittenti SMS, seleziona l'opzione `Mittenti`{.action}(1) quando sei sul relativo account SMS.
+Puoi personalizzare il tuo mittente. Non sarà però più possibile ricevere una risposta dal destinatario del tuo SMS. Per accedere alla gestione dei mittenti SMS, seleziona l'opzione `Mittenti`{.action} (1) quando sei sul relativo account SMS.
 
 ![invio sms manager](images/sms-send-control-panel04E.png){.thumbnail}
 
-Se desideri aggiungere un mittente SMS aggiuntivo, fai clic sul pulsante `Azioni`{.action} al centro e quindi su `Aggiungi`{.action}(2).
+Se desideri aggiungere un mittente SMS aggiuntivo, fai clic sul pulsante `Azioni`{.action} al centro e quindi su `Aggiungi`{.action} (2).
 
 ![invio sms manager](images/sms-send-control-panel05E.png){.thumbnail}
 

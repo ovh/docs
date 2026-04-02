@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Configurare l'indirizzo e-mail su Thunderbird per Windows"
 excerpt: 'Scopri come configurare il tuo indirizzo e-mail Exchange su Thunderbird per Windows'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>
@@ -33,6 +33,17 @@ I conti Exchange possono essere configurati su diversi software di posta elettro
 - Avere installato il software Thunderbird sul tuo dispositivo Windows.
 - Disporre delle credenziali relative all'indirizzo e-mail che desideri configurare.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 /// details | Informazioni relative alla gestione e configurazione dei servizi OVHcloud
 
 Questo manuale ti mostra come utilizzare le soluzioni OVHcloud con strumenti esterni e le modifiche da apportare in contesti specifici. Potrebbe essere necessario adattare le istruzioni in base alla tua situazione.
@@ -47,13 +58,7 @@ Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di
 >
 > Nel nostro esempio, utilizziamo il nome del server: ex?.mail.ovh.net. Dovrai sostituire il "?" con il numero che identifica il server del tuo servizio Exchange.
 >
-> Per trovare il nome del server:
->
-> 1. Accedi al tuo [spazio client OVHcloud](/links/manager).
-> 2. Vai alla sezione `Web Cloud`{.action}.
-> 3. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-> 4. Seleziona la piattaforma desiderata.
-> 5. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
+> Clicca su [questo link](/links/control-panel/web-exchange) per accedere alla sezione `Exchange`{.action}. Il nome del server viene visualizzato nella zona **Connessione** della scheda `Informazioni generali`{.action}.
 
 ### Aggiungere il conto
 

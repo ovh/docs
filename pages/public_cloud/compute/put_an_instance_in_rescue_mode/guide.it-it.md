@@ -13,7 +13,17 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 ## Prerequisiti
 
 - Aver creato un’istanza [Public Cloud](/links/public-cloud/compute) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -23,11 +33,9 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 
 ### Attiva la modalità di ripristino
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato.
-
 Clicca sulla scheda `Istanze`{.action} nella barra di navigazione a sinistra.
 
-Quindi, clicca sui tre puntini a destra dell’istanza e seleziona `Riavvia in modalità Rescue`{.action}.
+Clicca sui tre puntini a destra dell’istanza e seleziona `Riavvia in modalità Rescue`{.action}.
 
 ![Spazio Cliente](images/rescue2022.png){.thumbnail}
 

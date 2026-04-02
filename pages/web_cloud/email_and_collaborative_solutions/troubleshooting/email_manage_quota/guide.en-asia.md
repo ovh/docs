@@ -13,8 +13,18 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 ## Requirements
 
 - a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](/links/web/hosting));
-- access to the [OVHcloud Control Panel](/links/manager), and `Web Cloud`{.action} section ;
 - access to the email addresses concerned.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions  <a name="instructions"></a>
 
@@ -30,10 +40,6 @@ You can do this via the OVHcloud Control Panel if you are managing the email ser
 
 #### From the Control Panel <a name="quotacontrolpanel"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
 1. Go to the `Email`{.action} accounts tab. The window that appears will display the existing email accounts.
 1. In the `Size` column, you can see your email address’s current storage consumption.
 

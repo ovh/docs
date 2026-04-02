@@ -6,7 +6,7 @@ updated: 2023-10-12
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
+>
 
 ## Wprowadzenie
 
@@ -19,7 +19,6 @@ Jeśli utracisz hasło administratora, możesz je zresetować przy użyciu trybu
 ## Wymagania początkowe
 
 - Posiadanie na koncie OVHcloud serwera [VPS](/links/bare-metal/vps) lub [instancji Public Cloud](/links/public-cloud/public-cloud)
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -99,7 +98,7 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Wpisz "1" i naciśnij klawisz Enter. (Najpierw użyj opcji 2, jeśli obok "Wyłączony" znajduje się znak "X".)
+Wpisz "1" i naciśnij klawisz Enter. (Najpierw użyj opcji 2, jeśli obok "Disabled" znajduje się znak "X".)
 
 ```text
 Select: [q] > 1
@@ -146,4 +145,4 @@ Możesz teraz zalogować się jako "Administrator" przy użyciu nowego hasła.
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Przyłącz się do [społeczności naszych użytkowników](/links/community).

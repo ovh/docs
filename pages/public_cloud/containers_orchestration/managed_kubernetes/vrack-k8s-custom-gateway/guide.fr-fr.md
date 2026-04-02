@@ -38,6 +38,17 @@ At the end of this tutorial you should have the following flow:
 - Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you wish to use it.
 - The JSON parser tool [jq](https://stedolan.github.io/jq/) installed.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Initialization
 
 To setup a functional environment, you have to load the OpenStack and the OVHcloud API credentials.
@@ -396,7 +407,6 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> > 
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 >> 
@@ -443,8 +453,6 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 Now wait until your OVHcloud Managed Kubernetes cluster is READY.
 
 For that, you can check its status in the OVHcloud Control Panel:
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 

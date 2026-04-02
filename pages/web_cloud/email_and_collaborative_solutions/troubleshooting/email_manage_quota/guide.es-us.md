@@ -4,7 +4,6 @@ excerpt: "Cómo gestionar y optimizar el espacio de almacenamiento de una direcc
 updated: 2025-04-28
 ---
 
-
 ## Objetivo
 
 Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedicado. Gestionar bien el espacio de almacenamiento permite evitar la saturación, también llamada "overquota". Por defecto, los mensajes que usted reciba y envíe se almacenan en el servidor de su cuenta de correo. También es posible almacenar los mensajes de correo en local en su ordenador a través de un cliente de correo electrónico (Outlook, Mail de macOS, Thunderbird, etc.).
@@ -14,8 +13,27 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 ## Requisitos
 
 - Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](/links/web/hosting) o contratada por separado como solución autónoma, como [**Hosted Exchange**](/links/web/emails-hosted-exchange)).
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento  <a name="instructions"></a>
 

@@ -21,18 +21,24 @@ Exchange groups enable multiple participants to communicate by sending emails to
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
 - an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Creating a new group
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-1. Click on the `Groups`{.action} tab in the horizontal menu.
+Click on the `Groups`{.action} tab in the horizontal menu.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 
@@ -91,7 +97,7 @@ Additionally, the menu item `Manage delegations`{.action} will be displayed. Thi
 
 You can now test your mailing list via [OVHcloud webmail](/links/web/email) (OWA): simply send an email to the group address.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Delegating permissions on an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

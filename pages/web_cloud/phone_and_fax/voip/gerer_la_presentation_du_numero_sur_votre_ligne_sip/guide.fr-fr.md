@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-Votre ligne téléphonique OVHcloud vous permet de recevoir et d'émettre des appels. Selon vos besoins, vous avez la possibilité de modifier l'affichage présenté (ligne ou numéro alias) à vos correspondants ou de rester anonyme lor d'un appel sortant.
+Votre ligne téléphonique OVHcloud vous permet de recevoir et d'émettre des appels. Selon vos besoins, vous avez la possibilité de modifier l'affichage présenté (ligne ou numéro alias) à vos correspondants ou de rester anonyme lors d'un appel sortant.
 
 **Découvrez comment configurer la présentation du numéro de votre ligne OVHcloud.**
 

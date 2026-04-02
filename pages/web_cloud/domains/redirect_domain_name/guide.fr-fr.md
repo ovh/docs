@@ -1,8 +1,22 @@
 ---
 title: "Rediriger un nom de domaine géré par OVHcloud"
 excerpt: "Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud"
-updated: 2026-02-10
+updated: 2026-03-27
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -13,8 +27,18 @@ La redirection d'un nom de domaine consiste à rediriger celui-ci vers une nouve
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains)
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à votre hébergement web (pour une redirection via un fichier [.htaccess](#htaccess_rewrite)).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
@@ -43,30 +67,23 @@ Ces actions peuvent être réalisées de plusieurs manières :
 
 ### Rediriger un nom de domaine depuis l'espace client
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné. Cliquez sur l'onglet `Redirection`{.action}.
+Hormis les redirections de « pointage » vers les entrées DNS A, AAAA et CNAME, 3 options de redirections sont disponibles depuis l'[espace client OVHcloud](/links/manager).
 
-Le tableau affiche les redirections actives pour votre nom de domaine. Vous pouvez y gérer vos redirections existantes à l'aide du bouton `...`{.action} situé à droite de chaque ligne.
+Si besoin, consultez notre documentation sur les [enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
 
-Cliquez sur le bouton `Ajouter une redirection`{.action}.
-
-![Présentation du menu redirection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
-
-Trois options de redirections sont disponibles depuis l'[espace client OVHcloud](/links/manager) et chacune d'entre elles se compose de **5 étapes** successives.
-
-> L'onglet `Redirection`{.action} présente une quatrième option permettant de faire pointer rapidement votre nom de domaine vers les entrées DNS A, AAAA et CNAME.<br>
-> Du fait qu'il ne s'agit pas là à proprement parler d'une « redirection », cette option ne sera pas détaillée dans ce guide.
+> [!warning]
 >
-> Pour plus d'informations sur les entrées DNS, consultez notre documentation sur les [enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
+> Pour utiliser l'une des 3 options ci-après, la zone DNS active pour votre nom de domaine doit être gérée dans votre espace client OVHcloud. En effet, ces options de redirection vont modifier la configuration de votre zone DNS pour fonctionner.
 >
-
-Retrouvez ci-dessous les trois types de redirections détaillés étape par étape.
+> Dans le cas contraire, les redirections ne fonctionneront pas.
 
 > [!primary]
 >
-> Quelle que soit l'option de redirection choisie, la modification nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.
->
+> Quelle que soit l'option de redirection choisie, la modification nécessite un temps de propagation de 4 à 24 heures maximum avant d'être pleinement effective.
 
-#### Option 1 : redirection visible permanente vers une adresse web
+**Cliquez sur l'option de votre choix pour afficher le contenu.**
+
+/// details | Option 1 - Redirection visible permanente vers une adresse web
 
 Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le nom de domaine cible dans la barre d'adresses de votre navigateur internet au lieu du nom de domaine redirigé.
 
@@ -76,11 +93,22 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 
 > Cette redirection « standard » retournera un code HTTP 301.
 
-> [!success]
-> Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
 > **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Redirection`{.action} : le tableau affiche les redirections actives pour votre nom de domaine. Cliquez ensuite sur `Ajouter une redirection`{.action}.
+>>
+>> ![Présentation du menu redirection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
+>>
+> **Étape 3**
 >>
 >> Dans la fenêtre, votre nom de domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
 >>
@@ -88,37 +116,37 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 >>
 >> ![Étape 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
->>
-> **Étape 2**
->>
->> Sélectionnez `Vers une adresse Web`{.action}.
->>
->> ![Étape 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
->>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
->>
-> **Étape 3**
->>
->> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
->>
->> ![Étape 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
->>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
+>> Cliquez sur `Suivant`{.action}.
 >>
 > **Étape 4**
 >>
->> Sélectionnez `Permanente (301)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>> Sélectionnez `Vers une adresse Web`{.action}.
 >>
->> ![Étape 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
+>> ![Étape 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
+>> Cliquez sur `Suivant`{.action}.
 >>
 > **Étape 5**
 >>
+>> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
+>>
+>> ![Étape 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action}.
+>>
+> **Étape 6**
+>>
+>> Sélectionnez `Permanente (301)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>>
+>> ![Étape 6](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action}.
+>>
+> **Étape 7**
+>>
 >> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
 >>
->> ![Étape 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-permanent.png){.thumbnail}
+>> ![Étape 7](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-permanent.png){.thumbnail}
 >>
 >> Cliquez sur `Confirmer`{.action} pour valider votre configuration.
 >>
@@ -130,11 +158,14 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 >> >
 >>
 
-#### Option 2 : redirection visible temporaire vers une adresse web
+///
+
+/// details | Option 2 - Redirection visible temporaire vers une adresse web
 
 Comme pour l'option 1, cette option permet d'afficher, après la saisie du nom de domaine redirigé, le nom de domaine cible dans la barre d'adresses de votre navigateur internet au lieu du nom de domaine redirigé.
 
-Toutefois, celle-ci est à utiliser ponctuellement, par exemple pour des événements éphémères.<br>
+Toutefois, celle-ci est à utiliser ponctuellement, par exemple pour des événements éphémères.
+
 En effet, le positionnement sur les moteurs de recherche est moins performant qu'avec une redirection **visible permanente** de type 301 (code HTTP).
 
 - **Exemple** : si vous redirigez `domain1.tld` vers `domain2.tld`, c'est `domain2.tld` qui s'affichera dans la barre d'adresses dans votre navigateur.
@@ -143,49 +174,60 @@ En effet, le positionnement sur les moteurs de recherche est moins performant qu
 
 > Cette redirection retournera un code HTTP 302.
 
-> [!success]
-> Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
 > **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Redirection`{.action} : le tableau affiche les redirections actives pour votre nom de domaine. Cliquez ensuite sur `Ajouter une redirection`{.action}.
+>>
+>> ![Présentation du menu redirection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
+>>
+> **Étape 3**
 >>
 >> Dans la fenêtre, votre nom de domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
 >>
 >> La case `Rediriger aussi`{.action} peut être cochée pour rediriger également votre sous-domaine en `www` vers la même cible que vous choisirez pour votre nom de domaine/sous-domaine.
 >>
->> ![Étape 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
+>> ![Étape 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
->>
-> **Étape 2**
->>
->> Sélectionnez `Vers une adresse Web`{.action}.
->>
->> ![Étape 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
->>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
->>
-> **Étape 3**
->>
->> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
->>
->> ![Étape 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
->>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
+>> Cliquez sur `Suivant`{.action}.
 >>
 > **Étape 4**
 >>
->> Sélectionnez `Temporaire (302)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>> Sélectionnez `Vers une adresse Web`{.action}.
 >>
->> ![Étape 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
+>> ![Étape 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
+>> Cliquez sur `Suivant`{.action}.
 >>
 > **Étape 5**
 >>
+>> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
+>>
+>> ![Étape 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action}.
+>>
+> **Étape 6**
+>>
+>> Sélectionnez `Temporaire (302)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>>
+>> ![Étape 6](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action}.
+>>
+> **Étape 7**
+>>
 >> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
 >>
->> ![Étape 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-temporary.png){.thumbnail}
+>> ![Étape 7](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-temporary.png){.thumbnail}
 >>
 >> Cliquez sur `Confirmer`{.action} pour valider votre configuration.
 >>
@@ -194,13 +236,14 @@ En effet, le positionnement sur les moteurs de recherche est moins performant qu
 >> > Si le message « *Il existe des redirections à partir des noms de domaine que vous souhaitez rediriger qui entrent en conflit avec les redirections que vous souhaitez ajouter* » s'affiche, vous pouvez cocher la case `Confirmer l'écrasement de la redirection existante`{.action} pour forcer l'application de votre redirection.
 >> >
 >> > Attention, l'ancienne configuration sera donc désactivée et supprimée.
->> >
->>
 
-#### Option 3 : redirection invisible vers une adresse web
+///
 
-Cette redirection permet, après la saisie du nom de domaine redirigé, de le laisser affiché dans la barre d'adresses de votre navigateur internet au lieu de le remplacer par le nom de domaine cible.<br>
-**Attention, cette action n'est pas compatible avec tous les sites et affecte le référencement de votre site.**.
+/// details | Option 3 - Redirection invisible vers une adresse web
+
+Cette redirection permet, après la saisie du nom de domaine redirigé, de le laisser affiché dans la barre d'adresses de votre navigateur internet au lieu de le remplacer par le nom de domaine cible.
+
+**Attention, cette action n'est pas compatible avec tous les sites et affecte le référencement de votre site.**
 
 - **Exemple** : si vous redirigez `domain1.tld` vers `domain2.tld`, c'est `domain1.tld` qui s'affichera dans la barre d'adresses dans votre navigateur.
 
@@ -208,65 +251,74 @@ Cette redirection permet, après la saisie du nom de domaine redirigé, de le la
 
 La redirection invisible fonctionne avec une balise HTML *iFrame*. Celle-ci permet à votre nom de domaine redirigé d'intégrer dans sa propre page HTML le contenu de l'autre page correspondant au nom de domaine cible.
 
-Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser le nom de domaine cible
+Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser le nom de domaine cible.
 
 > Cette option retournera un code HTTP 200.
 
 > [!warning]
 >
 > Attention, les pages encapsulées avec une balise *iFrame* peuvent ne pas être lues sur les smartphones. Leur contenu n'est généralement pas pris en compte par les moteurs de recherche pour le référencement et l'indexation de votre site.
->
 
-> [!success]
-> Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
 > **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Redirection`{.action} : le tableau affiche les redirections actives pour votre nom de domaine. Cliquez ensuite sur `Ajouter une redirection`{.action}.
+>>
+>> ![Présentation du menu redirection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
+>>
+> **Étape 3**
 >>
 >> Dans la fenêtre, votre nom de domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
 >>
 >> La case `Rediriger aussi`{.action} peut être cochée pour rediriger également votre sous-domaine en `www` vers la même cible que vous choisirez pour votre nom de domaine/sous-domaine.
 >>
->> ![Étape 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
+>> ![Étape 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
->>
-> **Étape 2**
->>
->> Sélectionnez `Vers une adresse Web`{.action}.
->>
->> ![Étape 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
->>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
->>
-> **Étape 3**
->>
->> Sélectionnez `Avec une redirection invisible`{.action} parmi les deux choix indiqués.
->>
->> ![Étape 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
->>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
+>> Cliquez sur `Suivant`{.action}.
 >>
 > **Étape 4**
 >>
->> Sélectionnez `Temporaire (iframe)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>> Sélectionnez `Vers une adresse Web`{.action}.
 >>
->> ![Étape 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
+>> ![Étape 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
->> Trois paramètres optionnels sont mis à votre disposition à cette étape :
->>
->> - **Titre** : celui de votre site internet. Il s'affichera en tant que titre de page dans l'onglet des navigateurs internet.<br>
->> - **Mots clés** : ils peuvent être utilisés par les moteurs de recherche pour référencer partiellement la page.<br>
->> - **Description** : concerne votre site internet. Elle sera utilisée par les moteurs de recherche dans leurs résultats.
->>
->> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
+>> Cliquez sur `Suivant`{.action}.
 >>
 > **Étape 5**
 >>
+>> Sélectionnez `Avec une redirection invisible`{.action} parmi les deux choix indiqués.
+>>
+>> ![Étape 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action}.
+>>
+> **Étape 6**
+>>
+>> Sélectionnez `Temporaire (iframe)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>>
+>> ![Étape 6](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
+>>
+>> Trois paramètres optionnels sont mis à votre disposition à cette étape :
+>>
+>> - **Titre** : celui de votre site internet. Il s'affichera en tant que titre de page dans l'onglet des navigateurs internet.
+>> - **Mots clés** : ils peuvent être utilisés par les moteurs de recherche pour référencer partiellement la page.
+>> - **Description** : concerne votre site internet. Elle sera utilisée par les moteurs de recherche dans leurs résultats.
+>>
+>> Cliquez sur `Suivant`{.action}.
+>>
+> **Étape 7**
+>>
 >> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
 >>
->> ![Étape 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-iframe.png){.thumbnail}
+>> ![Étape 7](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-iframe.png){.thumbnail}
 >>
 >> Cliquez sur `Confirmer`{.action} pour valider votre configuration.
 >>
@@ -275,8 +327,6 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >> > Si le message « *Il existe des redirections à partir des noms de domaine que vous souhaitez rediriger qui entrent en conflit avec les redirections que vous souhaitez ajouter* » s'affiche, vous pouvez cocher la case `Confirmer l'écrasement de la redirection existante`{.action} pour forcer l'application de votre redirection.
 >> >
 >> > Attention, l'ancienne configuration sera donc désactivée et supprimée.
->> >
->>
 
 ### Rediriger un nom de domaine via un fichier « .htaccess » <a name="htaccess_rewrite"></a>
 
@@ -284,15 +334,16 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition cette partie du guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur les étapes documentées ci-dessous. Retrouvez plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition cette partie du guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur les étapes documentées ci-dessous. Retrouvez plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
-Les fichiers « .htaccess » sont des fichiers de configuration dans lesquels des commandes peuvent être spécifiées. Lors de l’exécution du code de votre site internet par le serveur web (Apache), les commandes seront interprétées et ainsi exécutées.<br>
+Les fichiers « .htaccess » sont des fichiers de configuration dans lesquels des commandes peuvent être spécifiées. Lors de l’exécution du code de votre site internet par le serveur web (Apache), les commandes seront interprétées et ainsi exécutées.
+
 Parmi ces commandes, il est possible de créer des redirections.
 
-Manipuler un fichier « .htaccess »  peut rendre votre site inaccessible. En cas de doute, contactez un [prestataire spécialisé](/links/partner) .
+Manipuler un fichier « .htaccess »  peut rendre votre site inaccessible. En cas de doute, contactez un [prestataire spécialisé](/links/partner).
 
-Retrouvez l'ensemble de notre documentation sur le « .htaccess »  dans la section [« Aller plus loin »](#go-further) de ce guide.
+Retrouvez l'ensemble de notre documentation sur le « .htaccess » dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 > [!success]
 >
@@ -377,7 +428,8 @@ Cette variable peut être utilisée lorsque vous déplacez temporairement des fi
 > Code HTTP
 >>
 >> Le script renverra un code HTTP 302.
->>
+
+///
 
 ## Aller plus loin <a name="go-further"></a>
 

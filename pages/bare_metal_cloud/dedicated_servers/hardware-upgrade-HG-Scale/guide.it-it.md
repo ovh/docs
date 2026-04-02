@@ -20,13 +20,19 @@ I nostri server High Grade e Scale offrono un'opzione di scalabilità che permet
 ## Prerequisiti
 
 - Un server [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/) o [SCALE](https://www.ovhcloud.com/it/bare-metal/scale/)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server Dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Procedura
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-
-Nella sezione `Bare Metal Cloud`{.action}, seleziona il tuo server tra i **Server dedicati**.
 
 ### Aumenta la RAM
 

@@ -16,7 +16,17 @@ Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie erhielten eine E-Mail, die bestätigt, dass Ihr Webhosting eingerichtet wurde.
 - Sie verfügen über einen [Domainnamen](/links/web/domains), mit dem Sie auf Ihre Webseite zugreifen können.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -84,28 +94,22 @@ Sie können direkt über das [OVHcloud Kundencenter](/links/manager) auf Ihre Lo
 
 Zugriff auf Statistiken und Logs:
 
-Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die Besucherstatistiken der Website zuzugreifen, oder auf `Die Logs einsehen`{.action}, um die für Ihr Webhosting verfügbaren Logs anzuzeigen.
 >>

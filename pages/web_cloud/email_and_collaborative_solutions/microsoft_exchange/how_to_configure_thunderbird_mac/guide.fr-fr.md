@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurer son adresse e-mail sur Thunderbird pour macOS'
 excerpt: 'Découvrez comment configurer votre adresse e-mail Exchange sur Thunderbird pour macOS'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>
@@ -31,13 +31,24 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 - Disposer d’une adresse e-mail [Hosted Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-private-exchange).
 - Disposer du logiciel Thunderbird installé sur votre Mac.
-- Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+- Posséder les identifiants relatifs à l’adresse e-mail que vous souhaitez paramétrer.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 /// details | Informations relatives à la gestion et configuration des services OVHcloud
 
 Ce guide vous montre comment utiliser des solutions OVHcloud avec des outils externes ainsi que les modifications à apporter dans des contextes spécifiques. Il se peut que vous deviez adapter les instructions en fonction de votre situation.
 
-Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) et/ou d'en discuter avec notre communauté. OVHcloud ne peut pas vous fournir d’assistance technique sur l'utilisation d'outils externes. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
+Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) et/ou d’en discuter avec notre communauté. OVHcloud ne peut pas vous fournir d’assistance technique sur l’utilisation d’outils externes. Plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
 
 ///
 
@@ -47,14 +58,7 @@ Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recom
 >
 > Dans notre exemple, nous utilisons la mention serveur : ex?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
 >
-> Pour retrouver le nom du serveur :
->
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
-> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-> 1. Sélectionnez la plateforme concernée.
-> 1. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
->
+> Cliquez sur [ce lien](/links/control-panel/web-exchange) pour accéder à la section `Exchange`{.action}. Le nom du serveur s’affiche dans la zone **Connexion** de l’onglet `Informations générales`{.action}.
 
 ### Ajouter le compte
 

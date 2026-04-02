@@ -29,6 +29,18 @@ El "**mod_rewrite**" ofrece un número infinito de posibilidades. A continuació
 
 - Disponer de un [hosting OVHcloud](/links/web/hosting)
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedimiento
 
 > [!warning]

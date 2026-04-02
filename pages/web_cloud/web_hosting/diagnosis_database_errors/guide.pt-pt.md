@@ -20,8 +20,18 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma das nossas ofertas de bases de dados [Web Cloud](/links/web/hosting-options-startsql) ou [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -192,9 +202,9 @@ Também pode selecionar a casa `Limpar a base de dados atual`{.action} imediatam
 
 Contacte, se necessário, a nossa [comunidade](/links/community) ou um [fornecedor especializado](/links/partner) sobre este assumpto. Não poderemos prestar-lhe assistência na correção desta anomalia.
 
-> [!faq]
+> [!primary]
 >
-> Que elementos no script de importação da minha base de dados podem causar um erro "#1044 - Access denied for user to database"?
+> **Que elementos no script de importação da minha base de dados podem causar um erro "#1044 - Access denied for user to database"?**
 
 Ter um **"trigger"** no script de importação da sua base de dados não é autorizado nos servidores de alojamento partilhado OVHcloud. Para isso, importe a sua base de dados para um servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

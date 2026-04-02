@@ -1,7 +1,7 @@
 ---
 title: "Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra"
 excerpt: "Cómo migrar las direcciones de correo de una plataforma Exchange o Email Pro a otra plataforma Exchange, Email Pro o MX Plan"
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 
@@ -25,7 +25,26 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 - Tener una plataforma **"source"** con cuentas [Exchange](/links/web/emails-hosted-exchange)  configuradas.
 - Disponer de una plataforma de **"destino"** con cuentas [Exchange](/links/web/emails-hosted-exchange) o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -122,8 +141,8 @@ Si ha configurado una de las cuentas migradas en un cliente de correo (p.ej.: Ou
 
 ## Más información
 
-[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts).
+[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

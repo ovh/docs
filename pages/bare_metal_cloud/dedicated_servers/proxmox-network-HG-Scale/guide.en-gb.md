@@ -33,7 +33,6 @@ updated: 2026-01-23
 
 - An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
 - One or more [Additional IP addresses](/links/network/additional-ip)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >
@@ -263,7 +262,6 @@ This configuration is more flexible as you do not need to associate an Additiona
 * A [server compatible with vRack](/links/bare-metal/bare-metal)
 * A [vRack service](/links/network/vrack)
 * A block of Additional IPs
-* Access to the [OVHcloud Control Panel](/links/manager)
 
 #### Target configuration schema
 

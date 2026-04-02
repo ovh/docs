@@ -28,8 +28,18 @@ Jeśli osiągniesz maksymalną pojemność dodatkowego dysku, możesz dodać prz
 
 - Instancja [Public Cloud](/links/public-cloud/compute) w Twoim projekcie Public Cloud
 - [Dodatkowy dysk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny (sudo) do Twojej instancji przez SSH (Linux) lub RDP (Windows)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 

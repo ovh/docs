@@ -17,26 +17,32 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 ## Requirements
 
-- an MX Plan email solution or a [Web Hosting plan](/links/web/hosting) 
-- access to the [OVHcloud Control Panel](/links/manager)
+- an MX Plan email solution or a [Web Hosting plan](/links/web/hosting)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!warning]
 >
 > The following instructions are only eligible for the legacy MX Plan solution. For our current solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pp). You can identify which version you are using with the table below.
 >
 
-MX Plan legacy version|MX Plan new version|
+|MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
 |Continue reading this guide in the [Instructions](#oldmxplan) section below.|Continue with our guide regarding [Inbox rules in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).|
 
 ## Instructions <a name="oldmxplan"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-1. In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
+In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
 
 ![emails](images/img_3239.png){.thumbnail}
 
@@ -73,8 +79,8 @@ Second choice (Rule):
 
 > [!primary]
 >
-> The SPF (Sender Policy Framework) allows the server that receives an email to ensure that it has been sent from a trusted server.
-> It helps prevent potential identity theft from email addresses that use your domain name (spoofing). For more information on the SPF record, please refer to our guide on [How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf) .
+> SPF (Sender Policy Framework) allows the server that receives an email to ensure that it has been sent from a trusted server.
+> It helps prevent identity fraud from email addresses that use your domain name (spoofing). For more information on the SPF record, please refer to our guide on [How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf).
 
 Third choice (Value):
 
@@ -105,7 +111,7 @@ You can choose between these types of actions:
 
 > [!warning]
 >
-> In our example, we will mention [SPAM] in the subject line of an email. This message appears when the receiving server’s anti-spam solution delivers emails that it considers unwanted directly to the inbox. This is the case with the legacy version of the MX Plan solution.
+> In our example, we will mention [SPAM] as it appears in the subject line of an email. It is added automatically when the receiving server’s anti-spam solution delivers emails that it considers unwanted directly to the inbox. This is the case with the legacy version of the MX Plan solution.
 
 ||Header|Rule|Value|Action|
 |---|---|---|---|---|
@@ -128,7 +134,7 @@ You can choose between these types of actions:
 
 <a name="MULTI"></a>
 
-#### Deleting emails containing an unwanted phrase, excluding one sender 
+#### Deleting emails containing an unwanted phrase, excluding one sender
 
 This filter example consists of two rules:
 
@@ -143,6 +149,6 @@ In the Control Panel, the filter configuration looks like this:
 
 ![emails](images/img_3242.jpg){.thumbnail}
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

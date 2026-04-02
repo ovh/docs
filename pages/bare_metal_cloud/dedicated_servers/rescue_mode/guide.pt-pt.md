@@ -43,13 +43,21 @@ O modo rescue é geralmente adaptado às seguintes tarefas:
 ## Requisitos
 
 - Ter um [servidor dedicado](/links/bare-metal/bare-metal).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instruções
 
 Para utilizar o modo rescue, deve modificar o parâmetro `Netboot` do servidor. Em seguida, o servidor deverá ser reiniciado.
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), abra a secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}.
 
 Clique no nome do seu servidor para abrir o separador `Informações gerais`{.action}.
 

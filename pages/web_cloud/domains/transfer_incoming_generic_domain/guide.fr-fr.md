@@ -1,7 +1,7 @@
 ---
 title: 'Transférer son nom de domaine vers OVHcloud'
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine vers OVHcloud"
-updated: 2026-02-10
+updated: 2026-03-27
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mbyfj1JyK7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -43,6 +43,17 @@ En transférant votre nom de domaine, vous changerez de **bureau d'enregistremen
 - Être habilité à demander le transfert du nom de domaine.
 - Avoir prévenu le titulaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## En pratique
 
 > [!success]
@@ -66,7 +77,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 ### Étape 1 : vérifier les informations associées au nom de domaine <a name="step1"></a>
 
-**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](/links/web/domains-whois) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
+**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le « [Whois](/links/web/domains-whois) » sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
 - **Si les informations sont correctes :**
  passez à l'étape suivante de ce guide.
@@ -123,11 +134,11 @@ Vous pouvez également terminer votre commande avec un [hébergement web](/links
 
 #### Suivi du transfert après la commande
 
-Lorsque la commande est validée, vous recevez un bon de commande. Le processus de transfert ne démarre qu'après réception du paiement. Dès que cette opération est effectuée, vous pouvez suivre la progression du transfert sur votre [espace client OVHcloud](/links/manager). Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Opérations en cours`{.action}.
+Lorsque la commande est validée, vous recevez un bon de commande. Le processus de transfert ne démarre qu'après réception du paiement. Dès que cette opération est effectuée, vous pouvez suivre la progression du transfert sur la page [Opérations en cours](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
-> Si le code de transfert n'a pas été saisi lors de la commande, vous pourrez le renseigner depuis la fenêtre `Opérations en cours`{.action} et ainsi valider le transfert.
+> Si le code de transfert n'a pas été saisi lors de la commande, vous pourrez le renseigner depuis cette même page et ainsi valider le transfert.
 
 ### Étape 4 : validation du transfert par le bureau d'enregistrement actuel <a name="step4"></a>
 
@@ -141,7 +152,7 @@ Une fois la commande et le code de transfert validés, le bureau d'enregistremen
 
 Si un refus est émis par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée.
 
-Le processus de transfert peut être redémarré à partir de l'[espace client OVHcloud](/links/manager). Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Opérations en cours`{.action}.
+Le processus de transfert peut être redémarré depuis la page [Opérations en cours](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
@@ -155,7 +166,7 @@ Le processus de transfert peut être redémarré à partir de l'[espace client O
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](/links/manager). Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine depuis la page [Noms de domaine](/links/control-panel/web-domains).
 
 > [!warning]
 >
@@ -165,10 +176,20 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 > Pour les noms de domaine avec une extension *locale* ou *régionale* (les **ccTLD** tels que les *.fr*, *.be*, *.de*, *.es*, etc.), cela dépend des extensions et des règles mises en place par le **registre** de l'extension en question.
 > Une fois le transfert terminé, vérifiez bien la date d'expiration de votre nom de domaine directement depuis votre espace client OVHcloud.
 >
-> Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche et juste en dessous de votre nom de domaine sur la partie haute de la page, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
->
 > En fonction de la situation et de la nouvelle date d'expiration de votre nom de domaine, un renouvellement du nom de domaine sera peut être nécessaire juste après le transfert.
->
+
+Pour vérifier cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, juste en dessous de votre nom de domaine, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
 
 ## Aller plus loin
 

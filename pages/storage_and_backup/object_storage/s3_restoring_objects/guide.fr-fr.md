@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Restaurer un objet archivé depuis la classe Cold Archive
 excerpt: Restaurer des objets depuis la classe Cold Archive
-updated: 2025-11-19
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -10,9 +10,19 @@ Découvrez comment restaurer un objet à partir du niveau Cold Archive dans un O
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Avoir un [projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) dans votre compte OVHcloud
 - Avoir un [utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) déjà créé
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Contexte et considérations
 
@@ -47,7 +57,7 @@ Vous pouvez restaurer un objet dans la classe de stockage Cold Archive en utilis
 > Via AWS CLI
 >>
 >> ```bash
->> aws s3api restore-object --bucket <bucket-name> --key <object-name> --restore-request '{"Days":10}'
+>> aws s3api restore-object --bucket <bucket_name> --key <object_key> --restore-request '{"Days":10}'
 >> ```
 >>
 >> > [!primary]
@@ -60,7 +70,7 @@ Vous pouvez restaurer un objet dans la classe de stockage Cold Archive en utilis
 >> Vous pouvez également surveiller l'état de la restauration via :
 >>
 >> ```bash
->> aws s3api head-object --bucket <bucket-name> --key <object-name>
+>> aws s3api head-object --bucket <bucket_name> --key <object_key>
 >> ```
 >>
 

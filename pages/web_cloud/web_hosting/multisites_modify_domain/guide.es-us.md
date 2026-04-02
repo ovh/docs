@@ -17,10 +17,20 @@ Al utilizar el alojamiento web o actualizar el sitio web, es posible que deba mo
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Tener uno o varios [dominios](/links/web/domains).
 - Disponer de los derechos necesarios sobre todos los servicios afectados. Para más información, consulte nuestra guía "[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

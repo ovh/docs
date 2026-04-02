@@ -233,7 +233,7 @@ Para consultar y revocar las claves, puede utilizar el [portal API](/links/api) 
 >>
 > Desde el área de cliente de OVHcloud
 >>
->> Acceda al menú `Identidad, Seguridad y Operaciones`{.action} y luego `Claves API`{.action}.
+>> Acceda a la página [Claves API](/links/control-panel/iam-api-keys).
 >>
 >> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>

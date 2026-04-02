@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Konfigurowanie adresu e-mail w Thunderbird na macOS'
 excerpt: 'Dowiedz się, jak skonfigurować adres e-mail Exchange w Thunderbird na macOS'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>
@@ -33,6 +33,17 @@ Konta Exchange można skonfigurować w różnych kompatybilnych programach poczt
 - Zainstalowanie oprogramowania Thunderbird na swoim Mac.
 - Posiadanie danych logowania do adresu e-mail, który chcesz skonfigurować.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 Ten przewodnik pokazuje, jak korzystać z rozwiązań OVHcloud z zewnętrznymi narzędziami oraz jakie zmiany wprowadzić w konkretnych sytuacjach. Możesz musieć dostosować instrukcje do swojej sytuacji.
@@ -47,13 +58,7 @@ Jeśli napotkasz trudności w wykonaniu tych czynności, zalecamy kontakt z [spe
 >
 > W naszym przykładzie używamy nazwy serwera: ex?.mail.ovh.net. Musisz zastąpić znak "?" numerem serwera swojej usługi Exchange.
 >
-> Aby znaleźć nazwę serwera:
->
-> 1. Zaloguj się do swojego [Panelu klienta](/links/manager).
-> 2. Przejdź do sekcji `Web Cloud`{.action}.
-> 3. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-> 4. Wybierz odpowiednią platformę.
-> 5. Nazwa serwera jest widoczna w ramce **Logowanie** na karcie `Informacje ogólne`{.action}.
+> Kliknij [ten link](/links/control-panel/web-exchange), aby uzyskać dostęp do sekcji `Exchange`{.action}. Nazwa serwera wyświetla się w strefie **Połączenie** w zakładce `Informacje ogólne`{.action}.
 
 ### Dodawanie konta
 

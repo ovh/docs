@@ -17,13 +17,23 @@ Mithilfe des Horizon-Interface kann jedem Benutzer ein Passwort zugewiesen werde
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
 ### Erstellung eines OpenStack Benutzers
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf `User und Rollen`{.action} im linken Menü unter **Einstellungen**.
+Klicken Sie auf `User und Rollen`{.action} im linken Menü unter **Einstellungen**.
 
 Klicken Sie auf den Button `Benutzer erstellen`{.action}.
 
@@ -80,7 +90,7 @@ Beachten Sie, dass beim Ändern des Benutzerkonto-Passworts die bisherigen Login
 
 ### Löschung eines OpenStack Benutzers
 
-Sie können OpenStack Benutzer im [OVHcloud Kundencenter](/links/manager) löschen. Klicken Sie auf `User und Rollen`{.action} im linken Menü unter **Einstellungen**. 
+Klicken Sie auf `User und Rollen`{.action} im linken Menü unter **Einstellungen**.
 
 ![public-cloud](images/delete.png){.thumbnail}
 

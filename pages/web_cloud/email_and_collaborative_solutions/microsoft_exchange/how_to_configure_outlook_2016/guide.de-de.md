@@ -39,6 +39,17 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 - Der OVHcloud SRV-Eintrag muss in der DNS-Zone der Domain korrekt konfiguriert sein. Lesen Sie hierzu unsere Anleitung "[Eine Domain zu Ihrer Exchange Dienstleistung hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 /// details | Informationen zur Verwaltung und Konfiguration der OVHcloud Dienste
 
 In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.

@@ -1,6 +1,6 @@
 ---
-title: 'Configurer et consulter le répondeur de sa ligne'
-excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
+title: "Configurer et consulter le répondeur de sa ligne"
+excerpt: "Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud"
 updated: 2026-01-20
 ---
 
@@ -40,7 +40,7 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 
 Les lignes OVHcloud disposent par défaut d'un répondeur que vous pouvez consulter et personnaliser à votre guise. Si vous venez d'obtenir votre ligne téléphonique OVHcloud ou si vous n'avez pas modifié la configuration initiale de cette dernière, le répondeur de votre ligne est activé par défaut et enregistre déjà les messages de vos correspondants. 
 
-Vous avez également la possibilité de modifier l'association d'une ligne à son répondeur. Ceci vous permet en l'occurrence d'associer plusieurs lignes à un seul répondeur.
+Vous pouvez également modifier l'association d'une ligne à son répondeur. Ceci vous permet en l'occurrence d'associer plusieurs lignes à un seul répondeur.
 
 Poursuivez la lecture de cette documentation selon la manipulation que vous souhaitez réaliser avec votre répondeur.
 
@@ -128,7 +128,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 |Champs|Détails|
 |---|---|
 |E-mail|Renseignez l'adresse e-mail que vous souhaitez notifier.|
-|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.<br><br>**Nouvelle fonctionnalité en Bêta** : Il est à présent possible de recevoir par e-mail une transcription écrite du message générée par Intelligence Artificielle.<br> Pour cela, choisissez « Transcription et message joint en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir la transcription écrite et le message vocal au format souhaité en pièce jointe, ou « Transcription en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir uniquement la transcription écrite du message en pièce jointe.|
+|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.<br><br>**Nouvelle fonctionnalité en Bêta** : Vous pouvez recevoir par e-mail une transcription écrite du message générée par Intelligence Artificielle.<br> Pour cela, choisissez « Transcription et message joint en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir la transcription écrite et le message vocal au format souhaité en pièce jointe, ou « Transcription en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir uniquement la transcription écrite du message en pièce jointe.|
 
 ![repondeur](images/voicemail-step6.png){.thumbnail}
 
@@ -150,7 +150,7 @@ Retournez vers la gestion du répondeur et positionnez-vous maintenant sur l'ong
 
 Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels) ».
 
-Vous pouvez notamment définir le délai (en secondes) au bout duquel un apppel sera renvoyé vers le répondeur.
+Vous pouvez notamment définir le délai (en secondes) au bout duquel un appel sera renvoyé vers le répondeur.
 
 Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez sur le bouton `Valider`{.action} pour terminer l'opération.
 

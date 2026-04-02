@@ -11,9 +11,20 @@ OVHcloud Public Cloud Databases can be deployed with different architectures to 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
 - An existing database service deployed in a single availability zone (1-AZ)
 - A 3-AZ region activated within your Public Cloud project
+- Access to the [OVHcloud API](/links/api) (optional)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Why move to 3-AZ?
 
@@ -35,7 +46,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> To move a database service from a 1-AZ to a 3-AZ region, log in to the [OVHcloud Control Panel](/links/manager) and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
+>> Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
 >>
 >> ![databases - select engines instances and go to the backups section](images/databases_select_cluster.png){.thumbnail}
 >>

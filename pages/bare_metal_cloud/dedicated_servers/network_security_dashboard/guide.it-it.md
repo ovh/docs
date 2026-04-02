@@ -11,7 +11,17 @@ Questa guida ti mostra il Dashboard di Sicurezza di Rete e ti fornisce una panor
 ## Prerequisiti
 
 - Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Istanza Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud)), [Additional IP](/links/network/additional-ip), ecc.
-- Accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Percorso di navigazione:** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## Procedura
 
@@ -64,8 +74,6 @@ Le colonne corrispondono allo stato di protezione anti-DDoS (**Mitigation**), al
 - La colonna **Alert** può indicare un centro di pulitura attivo con un'icona di avviso e un suggerimento appropriato.
 
 ### Network Security Dashboard
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra dello schermo e poi su `Network Security Dashboard`{.action}.
 
 Nella scheda **scrubbing center log** è possibile recuperare tutte le informazioni sugli attacchi rilevati in passato (o in corso).
 

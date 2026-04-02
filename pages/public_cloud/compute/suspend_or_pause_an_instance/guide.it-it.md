@@ -17,8 +17,19 @@ Durante la configurazione di un'infrastruttura ad alta disponibilità, potresti 
 ## Prerequisiti
 
 - un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con la fatturazione **oraria**
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) o all'[interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
-- Conoscenza dell'[API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e delle [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+- Avere accesso all’[interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Conoscenza dell’[API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e delle [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -103,7 +114,7 @@ Lo snapshot sarà quindi disponibile nella sezione `Instance Backup`{.action} de
 
 Per utilizzare questo metodo, è necessario [connettersi all’interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/):
 
-- Per accedere con l’autenticazione unica OVHcloud, clicca sul link `Horizon`{.action} nel menu di sinistra sotto "Management Interfaces" dopo aver aperto il progetto `Public Cloud`{.action} nello [Spazio Cliente OVHcloud](/links/manager).
+- Per accedere con il Single Sign-On OVHcloud: utilizza il link `Horizon`{.action} nel menu a sinistra sotto "Management Interfaces" dopo aver aperto il tuo progetto `Public Cloud`{.action} nello [Spazio Cliente OVHcloud](/links/manager).
 
 - Per accedere con un utente OpenStack specifico: apri la pagina di accesso a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e inserisci le [credenziali OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) precedentemente create, poi clicca su `Connect`{.action}.
 

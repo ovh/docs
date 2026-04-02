@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Thunderbird for macOS'
 excerpt: 'Discover how to configure your Exchange email address on Thunderbird for macOS'
-updated: 2026-01-22
+updated: 2026-03-24
 ---
 
 <style>
@@ -29,9 +29,20 @@ Exchange accounts can be configured on various compatible email clients. This al
 
 ## Requirements
 
-- A [Hosted Exchange](/links/web/emails-hosted-exchange) or [Private Exchange](/links/web/emails-private-exchange) email account
+- A [Hosted Exchange](/links/web/emails-hosted-exchange) email account
 - The Thunderbird software installed on your Windows device
 - The credentials for the email account you want to configure
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 /// details | Information regarding the administration and configuration of OVHcloud services
 
@@ -161,8 +172,6 @@ If your email account is already configured and you need to access the account s
 > For more information on configuring an email address from the Thunderbird email client, consult [Mozilla's help center](https://support.mozilla.org/products/thunderbird).
 
 [Getting started with Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
-
-[Getting started with Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

@@ -6,7 +6,7 @@ updated: 2025-09-11
 
 ## Objectif
 
-cPanel est un panneau de configuration qui facilite la gestion d'hébergements web. Il rend les tâches complexes plus accessibles, y compris pour les nouveaux utilisateurs. Il offre une vaste gamme de fonctionnalités comme, par exemple, pour la gestion : 
+cPanel est un panneau de configuration qui facilite la gestion d'hébergements web. Il rend les tâches complexes plus accessibles, y compris pour les nouveaux utilisateurs. Il offre une vaste gamme de fonctionnalités comme, par exemple, pour la gestion :
 
 - des e-mails
 - des domaines
@@ -21,7 +21,17 @@ Grâce à une interface graphique permettant l'automatisation des paramètres, l
 ## Prérequis
 
 - Disposer d'une offre [VPS](/links/bare-metal/vps) avec une distribution [compatible](/links/bare-metal/vps-os).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
@@ -34,9 +44,9 @@ Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous 
 > [!warning]
 >
 > Si vous réinstallez un VPS, toutes les données stockées sur le VPS seront perdues.
-> 
+>
 
-Afin d'installer votre serveur cPanel, commandez un VPS avec la distribution cPanel.
+Pour installer votre serveur cPanel, commandez un VPS avec la distribution cPanel.
 
 ![cPanel](images/cpanel-order.png){.thumbnail}
 
@@ -45,14 +55,14 @@ Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour v
 ```
  |    Vos application(s):
  |    Application: cpanel
- |    Vous pouvez vous connecter à cpanel depuis https://<nomduserveur>:2087/<session_parameters>
+ |    Vous pouvez vous connecter à cpanel depuis https://<nom_du_serveur_vps>:2087/<session_parameters>
 ```
 
 ### Première connexion
 
 Une fois que vous avez reçu l'e-mail contenant le lien unique, cliquez sur ce lien pour effectuer la configuration initiale. Si le lien a déjà expiré, connectez-vous en [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) au serveur et exécutez la commande `sudo whmlogin` pour générer un nouveau lien.
 
-L'URL générée par la commande `sudo whmlogin` vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
+L'URL générée par la commande `sudo whmlogin` vous permet de vous connecter à WHM sans identifiants. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
 
 #### Étape 1 : lire et accepter les conditions d'utilisation de cPanel
 
@@ -82,7 +92,7 @@ Remplissez le formulaire puis validez pour confirmer la création de votre compt
 
 ![cPanel](images/create_new_account_form.png){.thumbnail}
 
-Sur le nouvel écran qui s'affiche, cliquez sur le boutton `Go to cPanel`{.action} à droite de l'écran.
+Sur le nouvel écran qui s'affiche, cliquez sur le bouton `Go to cPanel`{.action} à droite de l'écran.
 
 ![cPanel](images/go_to_cpanel.png){.thumbnail}
 
@@ -90,7 +100,7 @@ Vous êtes redirigé vers votre interface cPanel.
 
 ![cPanel](images/manager_cpanel.png){.thumbnail}
 
-Vous pouvez désormais utiliser cPanel. Pour toute information complémentaire concernant cPanel, consultez la [documentation officielle](https://docs.cpanel.net/).
+Vous pouvez désormais utiliser cPanel. Pour plus d'informations sur cPanel, consultez la [documentation officielle](https://docs.cpanel.net/).
 
 > [!primary]
 >
@@ -99,7 +109,7 @@ Vous pouvez désormais utiliser cPanel. Pour toute information complémentaire c
 > - cPanel : https&#58;//&#60;IP_V4&#62;:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
 > - WHM : https&#58;//&#60;IP_V4&#62;:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’e-mail d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
 >
-> Retrouvez votre adresse IPv4 dans l'e-mail que vous avez reçu suite à la commande de votre VPS avec la distribution cPanel.
+> Votre adresse IPv4 figure dans l'e-mail reçu lors de la commande de votre VPS avec la distribution cPanel.
 >
 
 ### Sécurisation de votre service

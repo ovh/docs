@@ -30,6 +30,17 @@ Exchange E-Mail-Accounts können auf verschiedenen, kompatiblen E-Mail-Clients k
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren.
 - Sie verfügen über Anmeldeinformationen für den zu konfigurierenden E-Mail-Account
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 > [!primary]
 >
 > Die Anweisungen in dieser Anleitung basieren auf einem Gerät mit Android Version 13.
@@ -43,12 +54,7 @@ Exchange E-Mail-Accounts können auf verschiedenen, kompatiblen E-Mail-Clients k
 >
 > In dieser Anleitung verwenden wir den Servernamen: ex?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Exchange Dienst ersetzt werden.
 >
-> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-> 1. Wählen Sie den gewünschten Dienst aus.
-> 1. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
->
+> Klicken Sie auf [diesen Link](/links/control-panel/web-exchange), um auf den Bereich `Exchange`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.
 
 Öffnen Sie auf Ihrem Gerät die App `Gmail`{.action}.
 

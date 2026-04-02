@@ -1,6 +1,6 @@
 ---
 title: 'Managing SMS address books'
-excerpt: 'Find out how to create an SMS address book in your OVHcloud account'
+excerpt: 'Find out how to create, import and manage SMS address books for your OVHcloud account using the Control Panel and spreadsheet files'
 updated: 2022-08-05
 ---
 
@@ -62,7 +62,7 @@ If you would like to use or create a document in a spreadsheet format, you will 
 
 ![phonebook](images/smsphonebook-spreadsheet1.png){.thumbnail}
 
-The vast majority of spreadsheet tools will not take into account the international format expected for telephone/fax numbers (+44xxxxxxxxxx). This means you will need to change the format of the cells that contain these numbers (workPhone, workMobile, etc.). To do this, select the columns concerned, and select a “Text” format for them.
+The vast majority of spreadsheet tools won't support the international format expected for telephone/fax numbers (+44xxxxxxxxxx). This means you will need to change the format of the cells that contain these numbers (workPhone, workMobile, etc.). To do this, select the columns concerned, and select a “Text” format for them.
 
 ![phonebook](images/smsphonebook-spreadsheet2.png){.thumbnail}
 

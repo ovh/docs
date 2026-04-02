@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Restore a Bare Metal server with Veeam Backup Agent"
 excerpt: "Learn how to restore your entire system - online or on-site - using a recovery ISO image and Veeam backups hosted at OVHcloud"
-updated: 2026-02-09
+updated: 2026-03-10
 ---
 
 ## Objective
@@ -94,14 +94,13 @@ If your system no longer boots and you need to restore it:
 
 ![Enter DNS](images/step2_04.png){.thumbnail}
 
+> [!warning]
+>
+> The automatic credential recovery procedure to access your restore points is not yet available. If needed, [contact our support team](/links/support-contact) to obtain them.
 
 6\. Enter your username and password to log in.
 
 ![Enter credentials](images/step2_05.png){.thumbnail}
-
-> [!warning]
->
-> At this stage, we have not yet finalised the automatic procedure for recovering your credentials to access your restore points. If needed, you can [contact our support team](/links/support-contact) who will provide them to you.
 
 7\. Select the `server`{.action} you want to restore.
 

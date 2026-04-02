@@ -29,7 +29,17 @@ You can then go further with your Public Cloud project according to your needs.
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
@@ -119,10 +129,6 @@ You can store your public SSH keys in the `Public Cloud`{.action} section of the
 > Public SSH keys added to your OVHcloud Control Panel will be available for Public Cloud services of all [regions](/links/public-cloud/regions-pci). You can store keys encrypted with **RSA**, **ECDSA** and **ED25519**.
 >
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
-
 Open `SSH Keys`{.action} in the left-hand menu under **Settings**. Click on the button `Add an SSH key`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
@@ -170,8 +176,6 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >
 > Refer to [step 1](#step-1-create-an-ssh-key-set) and [step 2](#step-2-import-ssh-keys) in this guide if you do not have any SSH keys ready to use.
 >
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the relevant Public Cloud project.
 
 On the **Home** page, click `Create an instance`{.action}.
 
@@ -360,10 +364,6 @@ Note that we provide alternative ways of access (mainly used for troubleshooting
 
 #### 5.1: Verify the instance status in the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
-
 Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Your instance is ready when the status is set to `Enabled` in the table. If the instance was recently created and has a different status, click on the "Refresh" button located next to the search filter.
 
 ![instances page](images/24-instance-connect01.png){.thumbnail}
@@ -486,10 +486,6 @@ The free and open-source software `Remmina Remote Desktop Client` is available f
 #### 5.4: VNC console access
 
 The VNC console allows you to connect to your instances even when other means of access are not available.
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
 Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Click on the instance name and open the tab `VNC console`{.action}.
 

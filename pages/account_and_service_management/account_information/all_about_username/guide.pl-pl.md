@@ -16,7 +16,17 @@ Panel klienta OVHcloud pozwala również na zarządzanie danymi osobowymi i na d
 ## Wymagania początkowe
 
 - Utworzenie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:account-profile -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Mój profil](/links/control-panel/account-profile)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action} > `Edytuj mój profil`{.action}
+
+---
+<!-- CP-NAV-END:account-profile -->
 
 > [!primary]
 > W przypadku problemów z logowaniem do konta, zapoznaj się z sekcją "[Nie mogę się zalogować](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" w przewodniku "[Logowanie do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
@@ -53,9 +63,7 @@ Jeśli jeszcze tego nie zrobiłeś, zapisz hasło w [menedżerze haseł](/pages/
 W przypadku problemów z dostępem do Twojego głównego konta e-mail, zapasowy adres e-mail umożliwia zachowanie dostępu do Twojego konta, a tym samym zarządzanie usługami.
 <br>Ten drugi adres **musi być inny** niż pierwszy, w szczególności w celu ułatwienia wykonania kroków w przypadku odzyskania hasła.
 
-Aby wprowadzić ten adres zapasowy, klikając w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager) Twoje nazwisko, a następnie wybierając `Dostęp do konta`{.action}.
-
-W sekcji `Mój profil`{.action} po prawej stronie ekranu (kliknij ponownie nazwę, aby usunąć menu po lewej stronie), kliknij `Edytuj moj profil`{.action}.
+Aby wprowadzić ten adres zapasowy, przejdź do swojego [profilu użytkownika](/links/control-panel/account-profile).
 
 > [!warning]
 > Przypominamy, że **ważne** jest, aby zapasowy adres e-mail był **inny** niż główny adres e-mail przypisany do konta.
@@ -76,11 +84,9 @@ Wszystkie informacje, które chcesz aktywować w przewodniku "[Zabezpieczenie ko
 
 #### Zmiana danych osobowych
 
-Możesz zmienić informacje o swoim koncie w Panelu [klienta OVHcloud](/links/manager). W tym celu klikając w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager) Twoje nazwisko, a następnie wybierając `Dostęp do konta`{.action}.
+Możesz zmienić informacje o swoim koncie. Przejdź do swojego [profilu użytkownika](/links/control-panel/account-profile).
 
-W sekcji `Mój profil`{.action} po prawej stronie ekranu (kliknij ponownie nazwę, aby usunąć menu po lewej stronie), kliknij `Edytuj moj profil`{.action}.
-
-Zmień dane, a następnie kliknij przycisk `Potwierdź`{.action}.
+Zmień dane, a następnie kliknij przycisk `Zapisz zmiany`{.action}.
 
 > [!warning]
 >

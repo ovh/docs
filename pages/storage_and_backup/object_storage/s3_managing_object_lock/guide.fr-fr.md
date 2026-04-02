@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)"
 excerpt: "Object Lock est une fonctionnalité qui vous permet de stocker des objets en utilisant un modèle WORM (Write Once, Read Many)"
-updated: 2025-03-25
+updated: 2026-03-06
 ---
 
 <style>
@@ -30,9 +30,25 @@ Object Lock fournit deux façons de gérer la rétention des objets. La premièr
 
 ### Comment fonctionne Object Lock ?
 
-Object Lock permet de rendre les objets immuables pendant une période définie (*Rétention*) ou indéfinie (*Legal hold*).
-  
-Pour que la fonctionnalité fonctionne, le *versioning* doit être activé sur le bucket.
+Pour comprendre le fonctionnement de Object Lock, nous devons d'abord comprendre comment la suppression d'objets et le *versioning* fonctionnent ensemble. Lorsqu'une opération de suppression d'objet est effectuée sur un objet dans un bucket sur lequel le *versioning* est activé, elle ne supprime pas l'objet de manière permanente, mais crée un marqueur de suppression sur l'objet. Ce marqueur de suppression devient la version la plus récente et la version actuelle de l'objet avec un nouvel ID de version.
+
+Un marqueur de suppression possède les propriétés suivantes :
+
+- Une clé et un ID de version comme tout autre objet.
+- Il n'a pas de données associées, donc il ne récupère rien d'une requête GET (vous obtenez une erreur 404).
+- Par défaut, il n'est plus affiché dans l'espace client.
+- La seule opération que vous pouvez utiliser sur un marqueur de suppression est DELETE, et seul le propriétaire du bucket peut effectuer une telle demande.
+
+Pour supprimer définitivement un objet, vous devez spécifier l'ID de version dans votre demande de suppression d'objet :
+
+```bash
+aws s3api delete-object --bucket <bucket_name> --key <object_key> --version-id <version_id>
+```
+
+La fonction Object Lock empêche les objets, pendant une durée fixe (mode de rétention) ou indéfiniment (conservation légale), d'être :
+
+- supprimés même si vous spécifiez le *version ID* (vous obtenez une erreur « Access Denied ») ;
+- écrasés par le *versioning*.
 
 > [!primary]
 >
@@ -80,8 +96,8 @@ La fonction Legal hold offre la même protection qu'une période de rétention, 
 
 ## Prérequis
 
-- Connaître vos informations d'identification Object Storage (access_key et secret_access_key)
-- Avoir installé et configuré aws cli
+- Connaître vos informations d'identification Object Storage (`access_key` et `secret_access_key`)
+- Avoir installé et configuré l'AWS CLI
 
 Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
@@ -89,9 +105,9 @@ Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backu
 
 > [!primary]
 >
-> Tous les exemples suivants utiliseront aws cli.
+> Tous les exemples suivants utilisent l'AWS CLI.
 >
-> Pour en savoir plus sur aws cli, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+> Pour en savoir plus sur l'AWS CLI, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 >
 
 ### Permissions
@@ -112,7 +128,16 @@ Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backu
 
 > [!primary]
 >
-> L’activation de l’Object Lock ne s’applique pas automatiquement aux objets existants ou futurs du bucket. Elle permet uniquement d’activer la fonctionnalité au niveau du bucket ; une configuration de rétention doit ensuite être définie pour que les objets soient effectivement protégés.
+> La commande suivante n'applique pas l'Object Lock aux objets du bucket, elle active seulement la fonctionnalité.
+>
+
+```bash
+aws s3api create-bucket \
+  --bucket <bucket_name> \
+  --object-lock-enabled-for-bucket
+```
+
+> [!primary]
 >
 > Cette action active également le versioning du bucket.
 >
@@ -146,15 +171,15 @@ Object Lock vous permet de définir une période de rétention sur un bucket sp�
 > Via AWS cli
 >> ```bash
 >> aws s3api put-object-lock-configuration \
->>     --bucket object-lock-bucket \
->>     --object-lock-configuration '{ "ObjectLockEnabled" : "Enabled", "Rule" : { "DefaultRetention" : { "Mode" : "GOVERNANCE", "Days" : 60 }}}'
+>>   --bucket <bucket_name> \
+>>     --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "GOVERNANCE", "Days": 60 }}}'
 >> ```
 >>
 >> Pour afficher la configuration Object Lock d'un bucket, exécutez :
 >>
 >> ```bash
 >> aws s3api get-object-lock-configuration \
->>    --bucket object-lock-bucket
+>>   --bucket <bucket_name>
 >> ```
 >>
 >> Le résultat devrait ressembler à ceci :
@@ -192,10 +217,9 @@ Pour appliquer une configuration de rétention sur un objet :
 
 ```bash
 aws s3api put-object-retention \
-       --bucket object-lock-bucket \
-       --key test.txt \
-       --retention '{"Mode" : "COMPLIANCE", "RetainUntilDate" :
-"2023-01-01T12:00:00.00Z" }'
+  --bucket <bucket_name> \
+  --key <object_key> \
+  --retention '{"Mode":"COMPLIANCE","RetainUntilDate":"2023-01-01T12:00:00.00Z"}'
 ```
 
 > [!primary]
@@ -207,8 +231,8 @@ Pour afficher la configuration de rétention d'un objet, exécutez :
 
 ```bash
 aws s3api get-object-retention \
-   --bucket object-lock-bucket \
-   --key test.txt
+  --bucket <bucket_name> \
+  --key <object_key>
 ```
 
 Le résultat devrait ressembler à ceci :
@@ -233,8 +257,8 @@ Pour contourner le mode *Governance*, vous devez indiquer explicitement dans vot
 
 ```bash
 aws s3api delete-object \
-  --bucket object-lock-bucket \
-  --key test.txt \
+  --bucket <bucket_name> \
+  --key <object_key> \
   --bypass-governance-retention
 ```
 
@@ -249,8 +273,8 @@ Pour appliquer une configuration Legal hold à l'objet spécifié :
 
 ```bash
 aws s3api put-object-legal-hold \
-  --bucket object-lock-bucket \
-  --key test.txt \
+  --bucket <bucket_name> \
+  --key <object_key> \
   --legal-hold Status=ON
 ```
 
@@ -258,8 +282,8 @@ Pour afficher la configuration Legal hold d'un objet, exécutez :
 
 ```bash
 aws s3api get-object-legal-hold \
-  --bucket object-lock-bucket \
-  --key test.txt
+  --bucket <bucket_name> \
+  --key <object_key>
 ```
 
 Le résultat devrait ressembler à ceci :

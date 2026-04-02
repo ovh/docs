@@ -59,22 +59,26 @@ Zobaczymy teraz, jak korzystać z usługi SSL Gateway.
 |Pole|Opis|
 |---|---|
 |Konfiguracja|Przycisk pozwalający na zmianę konfiguracji usługi SSL Gateway|
-|HSTS [[1]]|Wymusza na przeglądarce wykonywanie kolejnych połączeń z Twoją stroną przez HTTPS|
+|HSTS [[1]](#id5){.note-ref #id1}|Wymusza na przeglądarce wykonywanie kolejnych połączeń z Twoją stroną przez HTTPS|
 |Rewers|Pozwala na nadanie nazwy hosta adresowi IP SSL Gateway|
-|Przekierowanie HTTPS [[2]]|Przekierowuje osobę odwiedzającą na wersję HTTPS Twojej strony, gdy ma ona dostęp przez HTTP|
-|Serwer HTTPS [[3]]|Uruchamia HTTPS między serwerem SSL Gateway i Twoim serwerem|
+|Przekierowanie HTTPS [[2]](#id6){.note-ref #id2}|Przekierowuje osobę odwiedzającą na wersję HTTPS Twojej strony, gdy ma ona dostęp przez HTTP|
+|Serwer HTTPS [[3]](#id7){.note-ref #id3}|Uruchamia HTTPS między serwerem SSL Gateway i Twoim serwerem|
 |Ograniczenia IP źródłowych|Jeśli to pole jest wypełnione, tylko wskazane IP lub sieci będą mogły łączyć się z SSL Gateway|
-|Konfiguracja ciphers [[4]]|Pozwala na wybranie poziomu bezpieczeństwa dla Twojego certyfikatu SSL/TLS|
+|Konfiguracja ciphers [[4]](#id8){.note-ref #id4}|Pozwala na wybranie poziomu bezpieczeństwa dla Twojego certyfikatu SSL/TLS|
 
 > [!primary]
 >
-> [[1]] Więcej informacji na temat HSTS</cite>
-> 
-> [[2]] Po sprawdzeniu prawidłowego działania Twojej strony z protokołem HTTPS, można przekierować cały ruch HTTP na HTTPS. Zaleca się poczekać 24 godziny po przekierowaniu domeny na usługę SSL Gateway zanim wykona się to przekierowanie. Dzięki temu osoby odwiedzające Twoją stronę będą korzystać z nowej działającej konfiguracji DNS.
-> 
-> [[3]] Pozwala na zabezpieczenie całego połączenia. Serwer SSL Gateway połączy się z Twoim serwerem na standardowym dla HTTPS porcie 443. Uwaga: Należy obowiązkowo dysponować certyfikatem SSL/TLS na serwerze, aby włączyć tę opcję. W przeciwnym razie Twoja strona nie będzie działać. Certyfikat ten nie musi być odnawiany na Twoim serwerze.
-> 
-> [[4]] Najwyższy poziom zapewnia najlepszą ochronę, ale może nie działać z najstarszymi przeglądarkami.</cite>
+> [[1]](#){.note-ref #id5} - ([1](#id1){.fn-backref})
+> <cite>Więcej informacji na temat HSTS.</cite>
+>
+> [[2]](#){.note-ref #id6} - ([1](#id2){.fn-backref})
+> <cite>Po sprawdzeniu prawidłowego działania Twojej strony z protokołem HTTPS, można przekierować cały ruch HTTP na HTTPS. Zaleca się poczekać 24 godziny po przekierowaniu domeny na usługę SSL Gateway zanim wykona się to przekierowanie. Dzięki temu osoby odwiedzające Twoją stronę będą korzystać z nowej działającej konfiguracji DNS.</cite>
+>
+> [[3]](#){.note-ref #id7} - ([1](#id3){.fn-backref})
+> <cite>Pozwala na zabezpieczenie całego połączenia. Serwer SSL Gateway połączy się z Twoim serwerem na standardowym dla HTTPS porcie 443. Uwaga: Należy obowiązkowo dysponować certyfikatem SSL/TLS na serwerze, aby włączyć tę opcję. W przeciwnym razie Twoja strona nie będzie działać. Certyfikat ten nie musi być odnawiany na Twoim serwerze.</cite>
+>
+> [[4]](#){.note-ref #id8} - ([1](#id4){.fn-backref})
+> <cite>Najwyższy poziom zapewnia najlepszą ochronę, ale może nie działać z najstarszymi przeglądarkami.</cite>
 >
 
 ### Konfiguracja domeny
@@ -91,48 +95,25 @@ Zakładka **"Domeny"** pozwala na dodawanie i usuwanie domen oraz subdomen z us�
 
 - Kliknij na `Dodaj domenę`{.action}, aby dodać domenę lub subdomenę.
 
-> [!faq]
+| Nazwa | URL |
+|---|---|
+| Domena | example.com |
+| Subdomena www | www.example.com |
+| Wybrana subdomena | blog.example.com |
+
+> [!warning]
 >
-> Posiadasz ofertę **"Free"**
->> 
->> Będziesz mógł dodać tylko jedną **domenę**, jak również jej **subdomenę "www"** i drugą **wybraną subdomenę**:
->> 
->> > [!primary]
->> >
->> > |Domena|example.com|
->> > |Subdomena www|www.example.com|
->> > |Wybrana subdomena|blog.example.com|
->> > 
->> 
->> 
->> > [!warning]
->> >
->> > - Oferta Free:
->> > 
->> > Można podać wyłącznie domeny do 3 poziomu (www.example.org).
->> > 
->> 
->> - Dokonaj wyboru i kliknij na `Dodaj`{.action}.
->> 
->> ![ajout domaine free](images/11.PNG){.thumbnail}
+> **Oferta Free**: Można podać wyłącznie domeny do 3 poziomu (www.example.org).
+
+> [!primary]
 >
-> Posiadasz ofertę **"Advanced"**
->> 
->> Będziesz mógł dodać wybrane aktywne domeny i subdomeny.
->> 
->> 
->> > [!primary]
->> >
->> > - Oferta Advanced:
->> > 
->> > Można podać domeny 4. i wyższego poziomu (log.france.example.org)
->> > 
->> 
->> - Dokonaj wyboru i kliknij na `Dodaj`{.action}.
->> 
->> ![ajout domaine advanced](images/12.PNG){.thumbnail}
->>
->
+> **Oferta Advanced**: Będziesz mógł dodać wybrane aktywne domeny i subdomeny, w tym domeny 4. i wyższego poziomu (log.france.example.org).
+
+Dokonaj wyboru i kliknij na `Dodaj`{.action}.
+
+![ajout domaine free](images/11.PNG){.thumbnail}
+
+![ajout domaine advanced](images/12.PNG){.thumbnail}
 
 > [!warning]
 >
@@ -146,30 +127,14 @@ Zakładka **"Serwery"** pozwala na zarządzanie adresem lub adresami IP serwera 
 
 ![onglet serveurs](images/13.PNG){.thumbnail}
 
-> [!faq]
+> [!primary]
 >
-> Posiadasz ofertę **"Free"**
->> 
->> Dysponujesz jednym adresem IP/PORT.
->> 
->> 
->
-> Posiadasz ofertę **"Advanced"**
->> 
->> Będziesz mógł dodać do 3 adresów IP/PORT dla swoich domen i subdomen.
->> 
->> 
->> > [!primary]
->> >
->> > Jeśli podasz kilka adresów IP/PORT, usługa SSL Gateway rozdzieli ruch za pomocą systemu Round Robin.
->> > Więcej informacji na temat DNS Round Robin
->> > 
->> 
->>  - Dokonaj wyboru i kliknij na `Dodaj`{.action}.
->> 
->> ![ajout IP/PORT advanced (interne)](images/15.PNG){.thumbnail}
->> 
->
+> - **Oferta Free**: Dysponujesz jednym adresem IP/PORT.
+> - **Oferta Advanced**: Będziesz mógł dodać do 3 adresów IP/PORT dla swoich domen i subdomen. Jeśli podasz kilka adresów IP/PORT, usługa SSL Gateway rozdzieli ruch za pomocą systemu Round Robin.
+
+Dokonaj wyboru i kliknij na `Dodaj`{.action}.
+
+![ajout IP/PORT advanced (interne)](images/15.PNG){.thumbnail}
 
 > [!warning]
 >
@@ -194,18 +159,10 @@ Zakładka **"Wykresy"** pozwala na wyświetlenie liczby połączeń i zapytań n
 
 ![onglet metriques](images/17.PNG){.thumbnail}
 
-> [!faq]
+> [!primary]
 >
-> Posiadasz ofertę **"Free"**
->> 
->> Będziesz mógł wyświetlić metryki z 24 godzin.
->> 
->
-> Posiadasz ofertę **"Advanced"**
->> 
->> Będziesz mógł wyświetlić metryki z 1 miesiąca.
->> 
->
+> - **Oferta Free**: Będziesz mógł wyświetlić metryki z 24 godzin.
+> - **Oferta Advanced**: Będziesz mógł wyświetlić metryki z 1 miesiąca.
 
 ## Odnowienie certyfikatu SSL
 

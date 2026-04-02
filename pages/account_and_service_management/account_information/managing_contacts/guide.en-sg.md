@@ -26,12 +26,22 @@ There are three different contact types:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - Access to the email address linked to any relevant customer account.
 - Appropriate rights for the service concerned.
 - The new contact’s email address.
 - No outstanding payments on billing contacts.
 - The new billing contact must have a valid payment method in their OVHcloud account.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Contact management](/links/control-panel/account-contacts)
+- **Navigation path:** Click your name in the top right > `My contacts`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## Instructions
 
@@ -41,7 +51,7 @@ There are three different contact types:
 
 ### Access contact management
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}.
+Open the [My contacts](/links/control-panel/account-contacts) page.
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -82,7 +92,7 @@ You can only add another billing contact to replace you. Confirmation is require
 
 ### Confirm, decline or track a contact change.
 
-To track and manage ongoing requests, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}. Click on the `My requests`{.action} tab. Here, you can accept or decline a request.
+To track and manage ongoing requests, click on the `My requests`{.action} tab. Here, you can accept or decline a request.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
 

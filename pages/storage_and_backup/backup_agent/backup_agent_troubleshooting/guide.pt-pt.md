@@ -57,6 +57,17 @@ Encontre nesta página uma lista de possíveis problemas que pode encontrar no p
 
 - Um servidor Bare Metal no qual o Backup Agent está instalado. Consulte o nosso guia "[Como configurar a sua primeira cópia de segurança](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" para mais informações.
 
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
+
 ## Lista de possíveis problemas
 
 /// details | O meu Backup Agent não consegue ligar-se ao seu servidor.

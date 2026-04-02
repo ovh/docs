@@ -28,6 +28,17 @@ This tutorial gives you some hints on how to debug your notebooks if things go w
 - An [Object Storage Container](/pages/storage_and_backup/object_storage/pcs_create_container) in your OVHcloud account
 - A Public Cloud user with the **Administrator** or **Quantum Operator** role
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 
@@ -42,7 +53,7 @@ All steps for starting and working on Quantum Notebooks are described in the [Qu
 If you are unable to connect to Quantum Notebooks, please ensure the following:
 
 - **Your notebook is up and running:** To connect to your notebook, it must be in `RUNNING` or in `IN SERVICE` status (green color in the OVHcloud Control Panel). If your notebook is starting up, wait a few moments until your data synchronizes and you will be able to connect. Starting time may vary due to some parameters. The more data you synchronize, the more time it will take.
-- **You have an authorized user or an authorized token:** To be able to connect to your notebook, you must have created a user or token. To create a new user, log in to the OVHcloud Control Panel and open your Public Cloud project. In the left menu, click the `Quantum computing`{.action} section. This will allow you to manage and create Quantum users. To simply access Quantum computing, use the `Quantum reader` role. For more advanced use, including management, select the `Quantum operator` role.
+- **You have an authorized user or an authorized token:** To be able to connect to your notebook, you must have created a user or token. To create a new user, click the `Quantum computing`{.action} section in the left menu. This will allow you to manage and create Quantum users. To simply access Quantum computing, use the `Quantum reader` role. For more advanced use, including management, select the `Quantum operator` role.
 
 To follow all the steps in detail, please refer to this [documentation](/pages/public_cloud/quantum_computing/users-roles).
 
@@ -140,7 +151,7 @@ If you are unable to see your synchronized data, please ensure that:
 
 Each Quantum Notebooks service comes with a monitoring dashboard, allowing you to closely watch your compute, storage and network consumptions.
 
-To verify your usage metrics, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager) and select `Quantum Notebooks`{.action}. All your notebooks will be listed. Click on your notebook to check its information. In `Resources`{.action}, you can then access the monitoring of your resources via the `Graph Dashboard`.
+To verify your usage metrics, select `Quantum Notebooks`{.action}. All your notebooks will be listed. Click on your notebook to check its information. In `Resources`{.action}, you can then access the monitoring of your resources via the `Graph Dashboard`.
 
 Please note that each Quantum Notebook is limited to a maximum amount of CPUs and GPUs. You can refer to the Quantum Notebooks [Capabilities and Limitations](/pages/public_cloud/quantum_computing/capabilities) guide.
 

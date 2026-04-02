@@ -1,7 +1,7 @@
 ---
 title: "Cycle de vie de la solution VMware on OVHcloud"
 excerpt: "Découvrez la politique de cycle de vie des services VMware on OVHcloud, incluant les phases de maintenance, sunset et fin de support"
-updated: 2026-03-03
+updated: 2026-03-06
 ---
 
 > [!warning]
@@ -15,7 +15,7 @@ updated: 2026-03-03
 
 Le service Hosted Private Cloud VMware on OVHcloud propose une infrastructure dédiée basée sur les technologies VMware SDDC ainsi que sur les technologies d'autres partenaires (Veeam, Zerto...).
 
-OVHcloud a une politique de cycle de vie du service afin de prendre en compte un certain nombre de facteurs, tels que :
+OVHcloud a une politique de cycle de vie du service pour prendre en compte plusieurs facteurs, tels que :
 
 - le cycle de vie des composants logiciels intégrés, tel que déterminé par leurs éditeurs (VMware, Veeam, Zerto, etc.) ;
 - le cycle de vie des composants matériels ;
@@ -30,7 +30,8 @@ Cette politique de cycle de vie est fournie pour aider les clients à comprendre
 
 - Public VMware Cloud Foundation as-a-Service
 - Managed VMware vSphere
-- Managed VMware Cloud Foundation - Stretched Cluster 3AZ
+- Private VMware Cloud Foundation as-a-Service - 1AZ
+- Private VMware Cloud Foundation as-a-Service - Stretched Cluster 3AZ
 
 ## Chronologie du cycle de vie et définitions
 
@@ -48,7 +49,7 @@ Nos équipes restent engagées pour vous accompagner dans cette transition et ga
 
 #### Mode Sunset
 
-Le mode Sunset correspond à une phase du cycle de vie d’un produit indiquant qu’un service ou une fonctionnalité approche de la fin de sa période de support. À ce stade, le service ou la fonctionnalité reste disponible, mais ne bénéficie plus de mises à jour régulières, de nouvelles fonctionnalités ou de correctifs importants.
+Le mode Sunset indique qu’un service ou une fonctionnalité approche de sa fin de support. À ce stade, le service ou la fonctionnalité reste disponible, mais ne bénéficie plus de mises à jour régulières, de nouvelles fonctionnalités ou de correctifs importants.
 
 Durant cette phase, OVHcloud accompagne les clients dans la migration vers d’autres services ou solutions plus adaptées à leurs besoins en évolution. Notre objectif est d’assurer une transition fluide et de minimiser toute perturbation de l’activité.
 
@@ -65,17 +66,18 @@ Les services et fonctionnalités suivants ont atteint leur fin de support et ne 
 
 ### Chronologie
 
-![Cycle de vie typique](images/01_lifecycle_pcc.png){.thumbnail}
+![Cycle de vie typique d'un service VMware on OVHcloud](images/01_lifecycle_pcc.png){.thumbnail}
 
 ## Statut de la gamme commerciale OVHcloud
 
 ### Produits (Plateformes)
 
-|                   Commercial Range                    | Disponibilité générale| Mode Maintenance | Mode Sunset | Fin de support |
+|                   Commercial Range                    | Disponibilité générale| Mode Maintenance | Mode Sunset | Fin de Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
 |     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2027-10-31  |
 |     Public VMware Cloud Foundation as-a-Service       |          2025        |              |               |             |
-|Private VMware Cloud Foundation - Stretched Cluster 3AZ|          2027        |              |               |             |
+|Private VMware Cloud Foundation as-a-Service - 1AZ                  |          2027        |              |               |             |
+|Private VMware Cloud Foundation as-a-Service - Stretched Cluster 3AZ|          2027        |              |               |             |
 
 ### Hôtes Managed VMware vSphere (calcul)
 
@@ -89,33 +91,27 @@ Pour le produit Managed VMware vSphere, un cycle de vie matériel spécifique s�
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-04-30   | 2027-05-31  |
 |              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-04-30   | 2027-05-31  |
 |             Essentials (Intel Broadwell)              |          2020        |  2026-04-30  |  2026-04-30   | 2027-05-31  |
-|               Premier (Intel Xeon Gold)               |          2020        |  2027-06-30  |  2027-08-30   | 2027-10-31  |
-|           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-06-30  |               | 2027-10-31  |
-
-### Hôtes Private VMware Cloud Foundation (calcul)
-
-|                   Génération matérielle               | General Availability |    Sales    |     Growth     | Fin de Support |
-|:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| AMD Epyc Turin (3AZ)                                  |          2027        |             |                |             |
+|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2027-03-30   | 2027-10-31  |
+|           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-06-30  |               |             |
+|           Premier2027 (Intel Granite Rapids)          |          2027        |              |               |             |
 
 ## Logiciels intégrés
 
 ### Cycle de vie VMware
 
-Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante :
+Pour connaître la politique de cycle de vie des produits VMware, consultez la page de l'éditeur :
 
-[VMware Lifecycle](https://lifecycle.vmware.com/#/)
+[VMware Lifecycle](https://support.broadcom.com/group/ecx/productlifecycle)
 
 ### Cycle de vie Veeam Backup & Replication
 
-Pour connaître la politique de cycle de vie des produits Veeam, merci de vous référer aux publications de l'éditeur accessibles aux URL suivantes :
+Pour connaître la politique de cycle de vie des produits Veeam, consultez la page de l'éditeur :
 
-- [Veeam Version Release](https://www.veeam.com/releasestatus_rn.pdf)
 - [Veeam Lifecycle](https://www.veeam.com/product-lifecycle.html)
 
 ### Cycle de vie Zerto
 
-Pour connaître la politique de cycle de vie des produits Zerto, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante :
+Pour connaître la politique de cycle de vie des produits Zerto, consultez la page de l'éditeur :
 
 - [Zerto Virtual Replication Product Version Lifecycle Matrix](https://help.zerto.com/bundle/Lifecycle.Matrix.HTML/page/Content/Lifecycle_Matrix/Lifecycle_Matrix.htm#zerto_virtual_replication_product_version_lifecycle_matrix_r_893035264_1010900)
 

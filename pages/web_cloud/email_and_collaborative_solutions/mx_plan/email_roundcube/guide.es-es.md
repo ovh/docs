@@ -30,6 +30,17 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedimiento
 
 **sumario**

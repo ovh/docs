@@ -18,8 +18,18 @@ Your database is a central part of building your dynamic website. During the lif
 ## Requirements
 
 - You are using a [Start SQL](/links/web/hosting-options-startsql) and/or [Web Cloud Databases](/links/web/databases) solution. The two databases concerned must be created beforehand in order to use the replication tool.
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have sufficient rights to all database services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -40,28 +50,22 @@ Depending on your situation, the path to your source database is different.
 
 #### Start SQL database
 
-Click on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> You will see a list of your Start SQL databases.
 >>

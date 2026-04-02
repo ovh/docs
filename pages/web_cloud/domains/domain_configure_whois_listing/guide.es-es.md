@@ -22,8 +22,19 @@ Durante el uso de su nombre de dominio, es posible que deba mostrar u ocultar de
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Tener un [nombre de dominio](/links/web/domains).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!warning]
 >
@@ -34,28 +45,22 @@ Durante el uso de su nombre de dominio, es posible que deba mostrar u ocultar de
 
 ## Procedimiento
 
-Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la página que aparece, en el recuadro **Configuración**, haga clic en el botón `Gestionar la protección de datos`{.action}.
 >>
 >> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la nueva página que aparece, podrá elegir entre `Ver` u `Ocultar` la información relativa a los contactos titular, administrador y técnico del nombre de dominio, dentro de los límites de las acciones autorizadas por el registro gestor de la extensión.
 >>
@@ -71,4 +76,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
  
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -29,9 +29,19 @@ details[open]>summary::before {
 * Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Aktywowanie usługi [vRack](/links/network/vrack)
 * Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) kompatybilnego z usługą vRack
-* Dostęp do [Panelu klienta OVHcloud](/links/manager)
 * Wybrany zakres prywatnych adresów IP
 * Obie usługi muszą znajdować się w tym samym vRack.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).

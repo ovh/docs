@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS depuis une URL - http2sms'
-excerpt: 'Découvrez comment envoyer des SMS depuis une adresse http'
+title: "Envoyer des SMS depuis une URL - http2sms"
+excerpt: "Découvrez comment envoyer des SMS via des requêtes HTTP en utilisant Wget directement depuis la barre d'adresses de votre navigateur"
 updated: 2023-12-21
 ---
 
@@ -39,7 +39,7 @@ Les paramètres suivants doivent être séparés par le caractère `&`. Remplace
 |password|Mot de passe de l'utilisateur|
 |from|Un des expéditeurs déclarés sur votre compte SMS.|
 |to|Numéro de téléphone du destinataire du message au **format international** (00336xxxx pour un numéro français). Il est possible d'ajouter des destinataires à la suite, séparés par une virgule ",".|
-|message|Votre message. Ajouter %0d pour effectuer un saut de ligne dans le SMS envoyé|
+|message|Votre message. Ajouter %0d pour insérer un saut de ligne dans le SMS envoyé|
 
 Par défaut, le message est envoyé immédiatement.<br>
 Votre navigateur vous affichera les informations suivantes :
@@ -156,7 +156,7 @@ Lors d'un échec, la cause est inscrite :
 <?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more informations : https://help.ovhcloud.com/csm/fr-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051397</message></response>
 ```
 
-#### json
+#### JSON
 
 - En cas de succès :
 
@@ -223,7 +223,7 @@ Missing message. For more informations : https://help.ovhcloud.com/csm/fr-sms-se
 
 ## Annexe
 
-Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. 
+Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau « Extensions » comptent double. 
 
 La taille maximum d’un SMS est de 160 caractères en encodage 7bit (norme GSM 03.38).
 

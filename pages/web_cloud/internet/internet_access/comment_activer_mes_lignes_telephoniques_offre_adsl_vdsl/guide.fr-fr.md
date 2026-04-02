@@ -29,7 +29,7 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 
 ### Combien de lignes puis-je activer ?
 
-Selon l'offre ADSL/VDSL/FTTH à laquelle vous avez souscrite, vous disposez d'au minimum 1 emplacement pour des lignes téléphoniques et de 0 à 1 emplacement pour une ligne fax virtuelle. 
+Selon l'offre ADSL/VDSL/FTTH à laquelle vous avez souscrit, vous disposez d'au minimum 1 emplacement pour des lignes téléphoniques et de 0 à 1 emplacement pour une ligne fax virtuelle. 
 Lorsque vous activez une ligne, celle-ci va occuper un emplacement.
 
 Pour connaître le nombre d'emplacements libres restants, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné.
@@ -43,7 +43,7 @@ Dans l'exemple ci-dessus, il y a :
 - 1 emplacement téléphonique déjà activé ;
 - 1 emplacement fax déjà activé.
 
-Il reste un emplacement libre, nous pouvons donc activer 1 ligne téléphonique pour ce pack ADSL/VDSL/FTTH.
+Il reste un emplacement libre, vous pouvez donc activer 1 ligne téléphonique pour ce pack ADSL/VDSL/FTTH.
 
 ### Comment activer les lignes associées à mon Pack ?
 
@@ -57,7 +57,7 @@ Vous avez alors le choix d'activer la ligne **avec ou sans** téléphone.
 
 #### Sans téléphone
 
-Une ligne sans téléphone est une ligne qui sera techniquement configurée directement dans le modem sans action de votre part. Il vous suffira de brancher un simple téléphone **analogique** sur le modem. Plus de détails [ici](./#comment-utiliser-les-lignes-activees-sans-telephone).
+Une ligne sans téléphone est une ligne qui sera techniquement configurée directement dans le modem sans action de votre part. Il vous suffira de brancher un simple téléphone **analogique** sur le modem. Plus de détails dans la section [Comment utiliser les lignes activées sans téléphone](./#comment-utiliser-les-lignes-activees-sans-telephone).
 
 Ce type d'activation nécessite que vous possédiez un téléphone analogique personnel.
 
@@ -74,7 +74,7 @@ Cette ligne sera alors disponible dans un délai moyen d'une heure.
 
 L'activation d'une ligne avec téléphone inclut l'envoi d'un téléphone IP sous caution qu'il suffira de brancher sur le réseau de votre modem comme un simple ordinateur.
 
-Vous pouvez consulter les détails techniques de chaque téléphone [ici](http://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml).
+Vous pouvez consulter les détails techniques de chaque téléphone sur la [page comparatif des téléphones](https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml).
 
 Pour activer une ligne avec téléphone, choisissez le nombre de lignes à activer (par défaut 1 est proposé).
 <br>Sélectionnez alors la case du téléphone de votre choix. Vous devez alors choisir le type de livraison :
@@ -100,9 +100,9 @@ Veuillez consulter [nos guides Fax](/products/web-cloud-phone-and-fax-fax) afin 
 
 ### Comment utiliser les lignes activées sans téléphone
 
-Si vous avez activé une ligne sans téléphone, vous devez posséder un simple téléphone analogique à fréquence vocale, c'est à dire un téléphone qui peut être utilisé sur une ligne fixe France Télécom par exemple.
+Si vous avez activé une ligne sans téléphone, vous devez posséder un simple téléphone analogique à fréquence vocale, c'est-à-dire un téléphone qui peut être utilisé sur une ligne fixe France Télécom par exemple.
 
-Pour que cette ligne soit utilisable, **les conditions suivantes doivent être remplies**:
+Pour que cette ligne soit utilisable, **les conditions suivantes doivent être remplies** :
 
 Le voyant **Voice** du modem doit être allumé sur les modems Technicolor (TG788 et TG799).<br>
 Le voyant **Phone** du modem doit être allumé sur les modems Zyxel.<br>

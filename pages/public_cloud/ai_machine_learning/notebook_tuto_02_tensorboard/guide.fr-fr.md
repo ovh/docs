@@ -18,9 +18,19 @@ The tutorial presents a simple example of launching **TensorBoard** in a noteboo
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
 - an AI Notebooks project created inside a Public Cloud project
 - a user for AI Notebooks
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

@@ -56,13 +56,23 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 ## Wymagania początkowe
 
 - Posiadanie dostępu do interfejsu zarządzania domeną w [Panelu klienta OVHcloud](/links/manager) lub u operatora domeny, jeśli jest zarejestrowany poza OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Zamówienie jednej z poniższych ofert e-mail:
     - MX Plan OVHcloud (dostępny w ramach [oferty hostingu Cloud](/links/web/hosting), [bezpłatny hosting 100M](/links/web/domains-free-hosting) lub w ramach oferty MX Plan zamówionej oddzielnie).
     - [Exchange](/links/web/emails-hosted-exchange) lub [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/zimbra).
     - Oferta e-mail poza OVHcloud z DKIM.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
