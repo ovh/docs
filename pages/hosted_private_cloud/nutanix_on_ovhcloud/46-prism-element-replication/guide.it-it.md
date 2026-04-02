@@ -31,7 +31,6 @@ Via **Prism Element**, you can:
 ## Requirements
 
 - Two Nutanix clusters in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via **Prism Central**
 - An interconnection between two clusters, e.g. via an IPsec VPN
 

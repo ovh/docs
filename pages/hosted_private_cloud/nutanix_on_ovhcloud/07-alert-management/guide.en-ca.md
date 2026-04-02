@@ -17,7 +17,6 @@ This guide details how to view alerts and events, and create custom alerts.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - You must be connected to the cluster via Prism Central
 
 ## Defining alerts, events, and tasks in Prism Central

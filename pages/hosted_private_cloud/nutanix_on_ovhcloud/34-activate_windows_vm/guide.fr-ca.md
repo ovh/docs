@@ -17,7 +17,6 @@ updated: 2022-12-21
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Une licence Windows fournie par OVHcloud.
 - Une machine virtuelle sous Windows Server. Vous pouvez vous aider de ce guide pour installer une machine virtuelle sous Windows : [Gestion des machines virtuelles](/pages/hosted_private_cloud/nutanix_on_ovhcloud/06-virtual-machine-management).
 - La machine virtuelle se connecte à Internet au travers du rtvRack (par exemple via la passerelle par défaut).

@@ -23,9 +23,28 @@ Contact OVHcloud Sales to help you choose the right server.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
-- You must be connected to the cluster via **Prism Central**. 
+- You must be connected to the cluster via **Prism Central**.
 - You have a [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account with several network cards, some on the public network, others on the private network. This server must be in the same data centre as the Nutanix cluster.
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+**Nutanix:**
+
+- **Direct link:** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Select your cluster
+
+**Dedicated Servers:**
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## Instructions
 
@@ -41,11 +60,11 @@ To replace the OVHgateway VM, we will use these settings:
 
 ### Retrieving information needed to deploy your server
 
-In your [OVHcloud Control Panel](/links/manager), click `Hosted Private Cloud`{.action} in the tab bar. Select your Nutanix cluster on the left-hand side, and note the name of the vRack associated with your Nutanix cluster in `Private network (vRack)`.
+Select your Nutanix cluster and note the name of the vRack associated with your Nutanix cluster in `Private network (vRack)`.
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
-Go to the `Bare Metal Cloud`{.action} tab in your Control Panel. Select your dedicated server in the menu bar on the left-hand side and click on `Network interfaces`{.action}.
+Select your dedicated server and click on `Network interfaces`{.action}.
 
 ![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
 

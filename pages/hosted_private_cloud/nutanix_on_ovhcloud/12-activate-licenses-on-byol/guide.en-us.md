@@ -16,7 +16,6 @@ updated: 2022-11-16
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - You must have your Nutanix login details on [Nutanix Official Site](https://www.nutanix.com).
 - You must have valid licences with your Nutanix NIC handle.
 

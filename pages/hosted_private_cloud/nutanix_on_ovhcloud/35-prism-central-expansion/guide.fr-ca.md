@@ -23,9 +23,19 @@ updated: 2023-12-18
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté sur le cluster via Prism Central
 - Connaître le mot de passe admin de Prism Element (lors du déploiement d'un cluster Nutanix by OVHcloud; ce mot de passe est créé à l'identique de celui de Prism Central mais il peut être changé par la suite).
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Sélectionnez votre cluster
+
+---
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## Présentation
 
@@ -46,7 +56,7 @@ Le cluster Nutanix reste opérationnel pendant cette opération mais les fonctio
 
 ### Configuration de l'accès à Prism Element en SSH avec le Load Balancer OVHcloud
 
-Connectez-vous à votre espace client OVHcloud et choisissez l'onglet `Hosted Private Cloud`{.action}. Cliquez ensuite sur votre `Cluster`{.action} à gauche dans la catégorie **Nutanix**, faites défiler la fenêtre et cliquez sur le `Load Balancer`{.action} associé à votre cluster.
+Dans `Network`{.action}, cliquez sur `Load Balancer`{.action} et sélectionnez le Load Balancer associé à votre cluster.
 
 ![Add ssh PE on Load Balancer 01](images/01-add-pe-ssh-on-loadbalancer01.png){.thumbnail}
 
