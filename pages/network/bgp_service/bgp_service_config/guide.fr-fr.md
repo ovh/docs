@@ -26,14 +26,14 @@ Le protocole Border Gateway Protocol (BGP) vous permet de construire des infrast
 
 Avant de configurer le service BGP, veuillez prendre connaissance des capacités et contraintes suivantes :
 
-- **Un service BGP par région** : un seul service BGP peut être déployé par région disponible (hors régions 3-AZ et US actuellement).
-- **Plusieurs blocs IP** : il est possible d'utiliser plusieurs blocs IP par région pour l'IPv4.
+- **Un service BGP par région** : un seul service BGP peut être déployé par région disponible (hors régions 3-AZ, APAC et US actuellement).
+- **Plusieurs blocs IP** : il est possible d'utiliser plusieurs blocs IPv4 et IPv6 par région.
 - **Tailles de blocs utilisables** : /24 à /30 pour l'IPv4, /56 pour l'IPv6.
 - **Pile IP** : les configurations IPv4 seul ou IPv4+IPv6 sont prises en charge. L'IPv6 seul n'est pas pris en charge actuellement.
 - **Blocs d'IP dédiés** : Les blocs d'adresses Additional IP utilisés par un service BGP ne doivent pas être partagés avec d'autres services OVHcloud, tels que les serveurs dédiés, les instances Public Cloud, etc.
 - **Nombre maximum d'annonces par pair BGP** : jusqu'à 32 préfixes IPv4 et 32 préfixes IPv6 par client.
 - **Tailles d'annonces** : pour l'IPv4, tout préfixe entre /24 et /32 peut être annoncé. Pour l'IPv6, seuls les préfixes /56 et /64 peuvent être annoncés.
-- **BFD** : le protocole Bidirectional Forwarding Detection (BFD) est disponible avec des timers configurables pour accélérer le temps de convergence.
+- **BFD** : le protocole Bidirectional Forwarding Detection (BFD) est disponible avec des intervalles fixes de 500ms et un multiplicateur 8x, afin accélérer le temps de convergence.
 - **Sessions BGP** : 4 sessions BGP par client (4 IPv4 + 4 IPv6). Au-delà de 4 hôtes en peering BGP, le déploiement d'un Route Server est nécessaire (voir le cas d'utilisation [Configuration BGP avancée utilisant des Route Servers](#cas-dutilisation-configuration-bgp-avancée-utilisant-des-route-servers-rs)).
 - **Hôtes** : jusqu'à 10 hôtes par client.
 
@@ -635,7 +635,7 @@ Nous nous assurerons que la connectivité BGP et les annonces IP sont correctes 
 
 ### Maintenance d'un hôte sans interruption de trafic
 
-Pour retirer un serveur en vue d'une maintenance (mise à jour de l'OS, intervention matérielle, etc.) sans interruption de trafic, vous pouvez utiliser le mécanisme `BGP graceful shutdown` (RFC 8326). Ce mécanisme signale aux pairs de déprioriser les routes vers l'hôte *avant* la coupure de la session, ce qui permet au trafic de basculer sur les hôtes restants sans perte de paquets.
+Pour retirer un serveur en vue d'une maintenance (mise à jour de l'OS, intervention matérielle, etc.) sans interruption de trafic, vous pouvez utiliser le mécanisme `BGP graceful shutdown` (RFC 8326). Ce mécanisme signale aux pairs de déprioriser les routes vers l'hôte *avant* la coupure de la session, ce qui permet au trafic de basculer sur les hôtes restants sans perte de paquets. Cependant, cela ne **permet pas de maintenir des sessions** (par exemple, TCP) si celles-ci ne sont pas synchronisées entre les hôtes annonçant la route.
 
 Avec FRR, lancez un `graceful shutdown` sur l'hôte à maintenir :
 
