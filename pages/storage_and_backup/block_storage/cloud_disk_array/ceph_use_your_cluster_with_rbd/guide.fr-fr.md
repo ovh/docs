@@ -1,7 +1,7 @@
 ---
 title: Accéder au cluster en utilisant le client rbd
 excerpt: Ce guide vous présente comment avoir accès à votre cluster en utilisant le client rbd.
-updated: 2022-06-22
+updated: 2026-04-02
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Ce guide explique comment accéder à votre **cluster Ceph OVHcloud** depuis une
 Avant de poursuivre :
 
 - Une solution [Cloud Disk Array](/links/storage/cloud-disk-array)
-- L'adresse IP publique ou privée de votre machine cliente est autorisée dans la liste de contrôle d'accès (ACL) {} de votre cluster Ceph. Consultez notre guide [Cloud Disk Array - Comment créer une ACL IP](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_an_ip_acl)
+- L'adresse IP publique ou privée de votre machine cliente est autorisée dans la liste de contrôle d'accès (ACL) {} de votre cluster Ceph. Consultez notre guide « [Cloud Disk Array - Comment créer une ACL IP](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_an_ip_acl) ».
 - Vous disposez des informations d'identification suivantes (disponibles dans l'espace client OVHcloud) :
   - Adresses IP du moniteur de cluster
   - Nom d'utilisateur Ceph (`client.<username>`)
@@ -38,7 +38,7 @@ sudo yum install -y ceph-common
 
 ### Récupérer les détails de connexion
 
-Accédez au l'[espace client OVHcloud](/links/manager) et naviguez jusqu'à votre **service Cloud Disk Array**.
+Connectez-vous à l'[espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action}, puis sur `Cloud Disk Array`{.action} et sélectionnez votre service.
 
 Présentation :
 
@@ -52,8 +52,8 @@ Utilisateurs :
 >
 > **Remarque :** si aucun utilisateur n'existe encore, suivez ces guides :
 >
-> - [Cloud Disk Array - Comment créer des utilisateurs](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_a_user)
-> - [Modifier les droits des utilisateurs](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_change_user_rights)
+> - « [Cloud Disk Array - Comment créer des utilisateurs](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_a_user) »
+> - « [Modifier les droits des utilisateurs](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_change_user_rights) »
 >
 
 ### Configurer le client
@@ -88,67 +88,67 @@ sudo chmod 600 /etc/ceph/ceph.client.<username>.keyring
 Vérifiez que le client peut se connecter correctement au cluster Ceph :
 
 ```bash
-ceph -s --id <nom d'utilisateur>
+ceph -s --id <username>
 ```
 
 Si la configuration est correcte, la commande renvoie l'état actuel du cluster.
 
-Pour valider davantage la configuration, répertoriez les images disponibles dans votre pool :
+Pour valider la configuration, répertoriez les images disponibles dans votre pool :
 
 ```bash
-rbd -n client.<nom d'utilisateur> list <nom_du_pool>
+rbd -n client.<username> list <pool_name>
 ```
 
 Un résultat vide indique qu'aucune image n'a encore été créée. Si une erreur se produit, vérifiez les fichiers de configuration et les informations d'identification pour vous assurer qu'ils sont corrects.
 
-### Créer, mapper et attacher un volume RBD
+### Créer, mapper et monter un volume RBD
 
 Un pool Ceph ne peut pas être monté directement. Vous devez d'abord créer une image RBD dans le pool, puis la mapper à un périphérique bloc.
 
-Créer une image RBD :
+Créez une image RBD :
 
 ```bash
-rbd -n client.<nom d'utilisateur> create <nom_du_pool>/<nom_de_l'image> \
-  -s <taille_en_Mo> \
+rbd -n client.<username> create <pool_name>/<image_name> \
+  -s <size_in_MB> \
   --image-format 2 \
   --image-feature layering
 ```
 
-Vérifier la création de l'image :
+Vérifiez la création de l'image :
 
 ```bash
-rbd -n client.<nom d'utilisateur> list <nom_du_pool>
+rbd -n client.<username> list <pool_name>
 ```
 
-Mappez l'image à un périphérique bloc.
+Mappez l'image à un périphérique bloc :
 
 ```bash
 sudo rbd -n client.<username> map <pool_name>/<image_name>
 ```
 
-Vérifiez le mappage.
+Vérifiez le mappage :
 
 ```bash
 rbd showmapped
 ```
 
-Formatez le périphérique bloc (exemple XFS).
+Formatez le périphérique bloc (exemple XFS) :
 
 ```bash
 sudo mkfs.xfs /dev/rbd0
 ```
 
-Attacher le système de fichiers
+Montez le système de fichiers :
 
 ```bash
-sudo mkdir -p /mnt/<point_de_montage>
-sudo mount /dev/rbd0 /mnt/<point_de_montage>
-df -h /mnt/<point_de_montage>
+sudo mkdir -p /mnt/<mount_point>
+sudo mount /dev/rbd0 /mnt/<mount_point>
+df -h /mnt/<mount_point>
 ```
 
 Vous pouvez désormais commencer à utiliser votre stockage en blocs Ceph.
 
-### Démontez et détacher le volume RBD
+### Démonter et détacher le volume RBD
 
 Avant de détacher une image RBD, assurez-vous que le système de fichiers est correctement démonté :
 
@@ -169,6 +169,6 @@ L'image RBD est désormais détachée en toute sécurité du client.
 
 Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
