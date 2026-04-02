@@ -30,6 +30,7 @@ Avant de configurer le service BGP, veuillez prendre connaissance des capacités
 - **Plusieurs blocs IP** : il est possible d'utiliser plusieurs blocs IP par région pour l'IPv4.
 - **Tailles de blocs utilisables** : /24 à /30 pour l'IPv4, /56 pour l'IPv6.
 - **Pile IP** : les configurations IPv4 seul ou IPv4+IPv6 sont prises en charge. L'IPv6 seul n'est pas pris en charge actuellement.
+- **Blocs d'IP dédiés** : Les blocs d'adresses Additional IP utilisés par un service BGP ne doivent pas être partagés avec d'autres services OVHcloud, tels que les serveurs dédiés, les instances Public Cloud, etc.
 - **Nombre maximum d'annonces par pair BGP** : jusqu'à 32 préfixes IPv4 et 32 préfixes IPv6 par client.
 - **Tailles d'annonces** : pour l'IPv4, tout préfixe entre /24 et /32 peut être annoncé. Pour l'IPv6, seuls les préfixes /56 et /64 peuvent être annoncés.
 - **BFD** : le protocole Bidirectional Forwarding Detection (BFD) est disponible avec des timers configurables pour accélérer le temps de convergence.
@@ -658,7 +659,6 @@ Ce produit est disponible dans les régions suivantes:
 
 | Localisation de la région | Nom de la région | Type de région |
 | :--- | :--- | :--- |
-| Europe (France - Paris) (ne sera disponible qu'à partir de la version bêta) | eu-west-par | 3-AZ |
 | Europe (France - Gravelines) | eu-west-gra | 1-AZ |
 | Europe (France - Roubaix) | eu-west-rbx | 1-AZ |
 | Europe (France - Strasbourg) | eu-west-sbg | 1-AZ |
@@ -667,9 +667,11 @@ Ce produit est disponible dans les régions suivantes:
 | Europe (UK - Erith) | eu-west-eri | 1-AZ |
 | North America (Canada - East - Beauharnois) | ca-east-bhs | 1-AZ |
 | North America (Canada - East - Toronto) | ca-east-tor | 1-AZ |
-| Asia-Pacific (Singapore - Singapore) | ap-southeast-sgp | 1-AZ |
-| Asia-Pacific (Australia - Sydney) | ap-southeast-syd | 1-AZ |
-| Asia-Pacific (India - Mumbai) | ap-south-mum | 1-AZ |
+
+> [!primary]
+>
+> Les régions 3-AZ ainsi que les régions localisées aux US et APAC seront disponibles à une date ultérieure. Nous vous remercions pour votre patience.
+>
 
 ## Résolution des problèmes
 

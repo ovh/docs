@@ -30,6 +30,7 @@ Before setting up BGP Service, be aware of the following capabilities and constr
 - **Multiple IP blocks**: You can use multiple IP blocks per region for IPv4.
 - **Usable block sizes**: /24 to /30 for IPv4, /56 for IPv6.
 - **IP stack support**: IPv4-only or IPv4+IPv6 configurations are supported. IPv6-only is not supported at this time.
+- **Dedicated IP blocks**: Additional IP blocks used by a BGP Service cannot be shared with other OVHcloud services, such as Dedicated Servers, Public Cloud instances, etc.
 - **Maximum announcements per BGP peer**: Up to 32 IPv4 prefixes and 32 IPv6 prefixes per client.
 - **Announcement sizes**: For IPv4, any prefix between /24 and /32 can be announced. For IPv6, only /56 and /64 prefixes can be announced.
 - **BFD support**: Bidirectional Forwarding Detection (BFD) is available with configurable timers to accelerate convergence time.
@@ -658,7 +659,6 @@ The product is available in the following regions:
 
 | Region Location | Region Name | Region Type |
 | :--- | :--- | :--- |
-| Europe (France - Paris) (to be available from beta) | eu-west-par | 3-AZ |
 | Europe (France - Gravelines) | eu-west-gra | 1-AZ |
 | Europe (France - Roubaix) | eu-west-rbx | 1-AZ |
 | Europe (France - Strasbourg) | eu-west-sbg | 1-AZ |
@@ -667,9 +667,11 @@ The product is available in the following regions:
 | Europe (UK - Erith) | eu-west-eri | 1-AZ |
 | North America (Canada - East - Beauharnois) | ca-east-bhs | 1-AZ |
 | North America (Canada - East - Toronto) | ca-east-tor | 1-AZ |
-| Asia-Pacific (Singapore - Singapore) | ap-southeast-sgp | 1-AZ |
-| Asia-Pacific (Australia - Sydney) | ap-southeast-syd | 1-AZ |
-| Asia-Pacific (India - Mumbai) | ap-south-mum | 1-AZ |
+
+> [!primary]
+>
+> 3-AZ regions and regions located in the US or APAC will be available at a later date. Thank you for your patience.
+>
 
 ## Troubleshooting
 
