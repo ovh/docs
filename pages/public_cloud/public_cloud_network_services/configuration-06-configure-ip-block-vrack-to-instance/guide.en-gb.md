@@ -524,7 +524,7 @@ Click the tab that corresponds to your distribution:
 >> sudo nmcli con mod 'Wired connection 1' connection.autoconnect true
 >> ```
 >> 
->> Reboot your network with the following command:
+>> Restart your network with the following command:
 >>
 >> ```bash
 >> sudo systemctl restart NetworkManager

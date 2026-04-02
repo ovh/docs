@@ -24,6 +24,17 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
+
 ## Instructions
 
 ### Step 1: Ordering the vRack
@@ -36,9 +47,7 @@ Click on the `vRack`{.action} box to be redirected to the page where you can val
 
 ### Step 2: Adding your servers to the vRack
 
-Once the vRack is activated in your account, open the `Network`{.action} menu in the left-hand sidebar and click `vRack private network`{.action}.
-
-Select your vRack from the list to display the list of eligible services. Click on each server you want to add to the vRack and then click the `Add`{.action} button.
+Once the vRack is activated in your account, select your vRack from the list to display the list of eligible services. Click on each server you want to add to the vRack and then click the `Add`{.action} button.
 
 ![vRack selection](images/vrack_selection.png){.thumbnail}
 
@@ -218,13 +227,13 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> In our example, we named our configuration profile `private-interface`.
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
+>> sudo nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
 >> ```
 >>
 >> **Example:**
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name private-interface ifname eno2
+>> sudo nmcli connection add type ethernet con-name private-interface ifname eno2
 >> ```
 >>
 >> - Check that the interface has been connected correctly:
@@ -251,13 +260,13 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> - Add your IP:
 >> 
 >> ```bash
->> nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
+>> sudo nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
 >> ```
 >>
 >> **Example:**
 >>
 >> ```bash
->> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
+>> sudo nmcli connection modify private-interface IPv4.address 192.168.0.1/16
 >> ```
 >>
 >> - Change the configuration from **auto** to **manual**:
