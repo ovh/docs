@@ -16,6 +16,17 @@ The OVHcloud vRack feature makes it possible to connect different cloud services
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
 
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
+
 ## Instructions
 
 ### OVHcloud Control Panel

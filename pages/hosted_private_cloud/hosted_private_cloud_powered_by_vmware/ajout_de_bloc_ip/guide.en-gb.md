@@ -15,11 +15,22 @@ IP blocks can be used to make your services accessible online.
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 ### Order an IP block
 
-To order an IP block for your **Hosted Private Cloud**, go to the OVHcloud Control Panel. In the `Hosted Private Cloud` section, click on the `IP` section in the left-hand column, then click `Order additional IP addresses`{.action}. Then select your **Hosted Private Cloud** in the dropdown menu before moving on to the next step.
+To order an IP block for your **Hosted Private Cloud**, click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then click on the `IP` section in the left-hand column and click `Order additional IP addresses`{.action}. Select your **Hosted Private Cloud** in the dropdown menu before moving on to the next step.
 
 You will need to fill in several fields in order to create your IP block.
 
@@ -93,7 +104,7 @@ If you need to detach the IP block, you can use the following API call to move t
 > This call cuts the network on the VMs that use the IPs concerned.
 >
 
-You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager) in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
+You can track the movement of your IP block by clicking [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then clicking on your Hosted Private Cloud service and on the `Operations`{.action} tab.
 
 The operation reference is “removeIpRipeBlock”.
 

@@ -14,13 +14,22 @@ Ce guide explique comment ajouter le stockage d'un nouveau serveur ESXi dans un 
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](/links/manager))
 - Avoir déployé un [datastore vSan](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 ### Commander un nouvel hôte vSan
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) avec un compte administrateur.
-
-Dans la section `Hosted Private Cloud`{.action}, sélectionnez votre datacentre et allez dans l'onglet `Hosts`{.action}.<br>
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis sélectionnez votre datacentre et allez dans l'onglet `Hosts`{.action}.<br>
 Cliquez le bouton `Commander un Host`{.action}.
 
 ![ORDER](images/en02order.png){.thumbnail}

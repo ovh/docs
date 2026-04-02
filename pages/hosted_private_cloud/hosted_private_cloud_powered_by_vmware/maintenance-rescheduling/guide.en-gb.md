@@ -19,7 +19,18 @@ When a maintenance is scheduled on your Hosted Private Cloud service, you will b
 
 - You have received a maintenance notification email specifically stating that you can **change the maintenance date**. Otherwise, the maintenance cannot be rescheduled.
 - You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) infrastructure.
-- You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](/links/api).
+- You have access to the [OVHcloud Control Panel](/links/control-panel/privatecloud-vmware-vsphere) or the [API console for your services](/links/api).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
@@ -29,9 +40,7 @@ When a maintenance is scheduled on your Hosted Private Cloud service, you will b
 
 ### From the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](/links/manager) with an administrator account.
-
-In the `Hosted Private Cloud`{.action} section, select your service and click on the `Operations`{.action} tab. Select `Available`{.action} from the drop-down menu to filter the operations.
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then click on the `Operations`{.action} tab. Select `Available`{.action} from the drop-down menu to filter the operations.
 
 Next, click on the `...`{.action} button and select `Modify the processing date`{.action}.
 
