@@ -1,7 +1,7 @@
 ---
 title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Ziel 

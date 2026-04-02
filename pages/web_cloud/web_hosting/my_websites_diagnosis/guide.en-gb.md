@@ -1,7 +1,7 @@
 ---
 title: "How to check the 'domain name / website' association"
 excerpt: "Use our diagnostic tool to verify that your domain name or subdomain is correctly declared with your website on your web hosting"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 <style>

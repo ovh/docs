@@ -1,7 +1,7 @@
 ---
 title: "Exportar o seu website"
 excerpt: "Descubra como exportar o seu website OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Objetivo

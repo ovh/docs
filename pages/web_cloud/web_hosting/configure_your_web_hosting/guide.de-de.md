@@ -1,8 +1,18 @@
 ---
 title: "Webhosting - Laufzeitumgebung, PHP-Version, .ovhconfig"
 excerpt: "Erfahren Sie hier, wie Sie die Einstellungen von Laufzeitumgebung, PHP-Version, Firewall, Engine, Modus und .ovhconfig ändern"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
+
+<style>
+ pre {
+   background-color: #300A24
+ }
+ details > summary {
+   color: var(--color-brand-blue-600);
+   font-weight: 700;
+ }
+</style>
 
 ## Ziel
 
@@ -121,20 +131,39 @@ Während OVHcloud die Installation der neuesten PHP-Versionen auf den Hosting-Se
 **Fall 2 - Sie verwenden eine Website, die auf einer personalisierten Lösung basiert**:
 
 - Wenden Sie sich an den Webmaster, der die Website erstellt hat.
-- Weitere Informationen zu Versionsmigrationen finden Sie in der [offiziellen PHP-Dokumentation](http://php.net/manual/en/appendices.php).
+- Weitere Informationen zu Versionsmigrationen finden Sie in der [offiziellen PHP-Dokumentation](https://php.net/manual/en/appendices.php).
 - Aktualisieren Sie bei Bedarf den Code Ihrer Website und stellen Sie sicher, dass diese weiterhin mit dem OVHcloud Webhosting kompatibel ist.
 
-Falls nötig, gibt es zwei Möglichkeiten, die aktuell von Ihrem Webhosting verwendete PHP-Version zu ermitteln:
+Falls nötig, gibt es zwei Möglichkeiten, die aktuell von Ihrem Webhosting verwendete PHP-Version zu ermitteln.
 
-- **Im OVHcloud Kundencenter**: Verbinden Sie sich mit dem [OVHcloud Kundencenter](/links/manager) und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} finden Sie die Version unter *Globale PHP-Version*. 
+**Klicken Sie auf die 2 Titel unten, um den Inhalt anzuzeigen.**
 
-![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
+/// details | Im OVHcloud Kundencenter
 
-> [!primary]
-> Wenn ein blaues rundes Symbol zu sehen ist, warten Sie einige Minuten, bis die Version aktualisiert wurde.
->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-- **Über ein Skript**: Erstellen Sie ein **.php** Skript, das nur den folgenden Code enthält:
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Im Tab `Allgemeine Informationen`{.action} finden Sie die Version unter *Globale PHP-Version*.
+>>
+>> ![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Wenn ein blaues rundes Symbol zu sehen ist, warten Sie einige Minuten, bis die Version aktualisiert wurde.
+>> >
+>>
+
+///
+
+/// details | Über ein Skript
+
+Erstellen Sie ein **.php** Skript, das nur den folgenden Code enthält:
 
 ```php
 <?php phpinfo(); ?>
@@ -144,10 +173,12 @@ Stellen Sie es anschließend auf Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_
 
 > [!warning]
 >
-> Die Änderung der PHP-Version über eine “.htaccess“-Datei ist bei den aktuellen [OVHcloud Webhosting Angeboten](/links/web/hosting) nicht mehr möglich.<br>
-> Mit dem Befehl zur Änderung der PHP-Version in der Datei “.htaccess“ können auch keine aktuellen PHP-Versionen auf unseren Infrastrukturen verwendet werden.
-> Die Datei “.ovhconfig“ muss verwendet werden.
+> Die Änderung der PHP-Version über eine “.htaccess”-Datei ist bei den aktuellen [OVHcloud Webhosting Angeboten](/links/web/hosting) nicht mehr möglich.<br>
+> Mit dem Befehl zur Änderung der PHP-Version in der Datei “.htaccess” können auch keine aktuellen PHP-Versionen auf unseren Infrastrukturen verwendet werden.
+> Die Datei “.ovhconfig” muss verwendet werden.
 >
+
+///
 
 #### 1.3 - PHP Runtime Engines <a name="php-runtime"></a>
 
@@ -163,7 +194,7 @@ Im Vergleich dazu bietet der PHP-Beschleuniger (PHP-FPM) eine bis zu siebenmal h
 
 #### 1.4 - Application Firewall <a name="firewall"></a>
 
-Die Firewall filtert eingehende Anfragen Ihres Webhostings als SIicherheitsmaßnahme. Bei unseren Webhostings funktioniert ist diese Konfigurationseinstellung nur **aktivierbar** oder **deaktivierbar**. Die Firewall-Regeln können nicht geändert werden.
+Die Firewall filtert eingehende Anfragen Ihres Webhostings als Sicherheitsmaßnahme. Bei unseren Webhostings ist diese Konfigurationseinstellung nur **aktivierbar** oder **deaktivierbar**. Die Firewall-Regeln können nicht geändert werden.
 
 Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung „[Application Firewall aktivieren](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)“.
 
@@ -197,9 +228,7 @@ Mit Kenntnis dieser bearbeitbaren Einstellungen für Ihr OVHcloud Webhosting kö
 > Änderungen dieser Elemente haben mögliche Auswirkungen auf die Darstellung oder das ordnungsgemäße Funktionieren Ihrer Website. **Stellen Sie im Vorfeld sicher, dass Ihre Website mit den Änderungen kompatibel ist, die Sie an der Konfiguration Ihres Webhostings vornehmen möchten.** Wenden Sie sich im Zweifelsfall oder bei Schwierigkeiten an einen [spezialisierten Anbieter](/links/partner).
 >
 
-#### 2.1 - Zugang zur Verwaltung der Webhosting-Konfiguration
-
-Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -222,25 +251,27 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> >
 >> > Wenn die Option **Globale PHP-Version** in Ihrem [OVHcloud Kundencenter](/links/manager) nicht angezeigt wird, überprüfen Sie, ob die *.ovhconfig*-Datei im FTP-Wurzelverzeichnis Ihres Webhostings vorhanden ist.
 >> >
->> > Alle Informationen zur Datei *.ovhconfig* finden Sie im dritten Teil „[Methode 2: Webhosting-Konfiguration über die Datei “.ovhconfig“](#setting-ovhconfig)“ dieser Anleitung.
-
-#### 2.2 - Webhosting-Konfiguration ändern
-
-Im Konfigurationsfenster haben Sie zwei Möglichkeiten. Wählen Sie die Aktion aus, die Sie durchführen möchten, und klicken Sie auf `Weiter`{.action}.
-
-|Auswahl|Detail|
-|---|---|
-|`Zurück zur vorherigen Konfiguration`|Wählen Sie nach Auswahl dieser Option die wiederherzustellende Konfiguration neben `Historische Auswahl` aus. Diese Option steht möglicherweise nicht zur Verfügung, wenn Sie in der Vergangenheit keine Änderungen vorgenommen haben.|
-|`Aktuelle Konfiguration ändern`|Wählen Sie nach Auswahl dieser Option die gewünschten Konfigurationsänderungen in den Feldern aus. Bei Bedarf lesen Sie im ersten Teil „[Beschreibung der auf den OVHcloud Webhostings verfügbaren Konfigurationseinstellungen](#all-parameters)“ dieser Anleitung nach.|
-
-> [!primary]
->
-> Durch das Ändern der Laufzeitumgebung Ihres Webhostings werden *PHP Sessions* automatisch zurückgesetzt.
-> 
-
-Wenn Sie bereit sind, klicken Sie auf `Bestätigen`{.action}, um die Änderung zu übernehmen. Warten Sie einen Moment, bis die Operation abgeschlossen ist.
-
-![hostingConfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
+>> > Alle Informationen zur Datei *.ovhconfig* finden Sie im dritten Teil „[Methode 2: Webhosting-Konfiguration über die Datei “.ovhconfig”](#setting-ovhconfig)” dieser Anleitung.
+>> >
+>>
+> **Schritt 3**
+>>
+>> Im Konfigurationsfenster haben Sie zwei Möglichkeiten. Wählen Sie die Aktion aus, die Sie durchführen möchten, und klicken Sie auf `Weiter`{.action}.
+>>
+>> |Auswahl|Detail|
+>> |---|---|
+>> |`Zurück zur vorherigen Konfiguration`|Wählen Sie nach Auswahl dieser Option die wiederherzustellende Konfiguration neben `Historische Auswahl` aus. Diese Option steht möglicherweise nicht zur Verfügung, wenn Sie in der Vergangenheit keine Änderungen vorgenommen haben.|
+>> |`Aktuelle Konfiguration ändern`|Wählen Sie nach Auswahl dieser Option die gewünschten Konfigurationsänderungen in den Feldern aus. Bei Bedarf lesen Sie im ersten Teil „[Beschreibung der auf den OVHcloud Webhostings verfügbaren Konfigurationseinstellungen](#all-parameters)” dieser Anleitung nach.|
+>>
+>> > [!primary]
+>> >
+>> > Durch das Ändern der Laufzeitumgebung Ihres Webhostings werden *PHP Sessions* automatisch zurückgesetzt.
+>> >
+>>
+>> Wenn Sie bereit sind, klicken Sie auf `Bestätigen`{.action}, um die Änderung zu übernehmen. Warten Sie einen Moment, bis die Operation abgeschlossen ist.
+>>
+>> ![hostingConfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
+>>
 
 ### 3 - Methode 2: Webhosting-Konfiguration in der Datei “.ovhconfig“ ändern <a name="setting-ovhconfig"></a>
 
@@ -307,7 +338,7 @@ Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie mi
 |app.engine.version|Definiert die vom Hosting verwendete [PHP-Version](#php-versions) unter [den von OVHcloud angebotenen Versionen](/links/web/hosting-programming-language). Geben Sie die gewünschte Version ein (die der ausgewählten Laufzeitumgebung entspricht).|
 |http.firewall|Hier können Sie die [OVHcloud Webhosting Firewall](/links/web/hosting-options) aktivieren oder deaktivieren. Geben Sie **security** zum Aktivieren oder **none** zum Deaktivieren ein.|
 |environment|Ermöglicht die Verwaltung des Cacheverhaltens der statischen Dateien Ihrer Website sowie der PHP-Fehlerbehandlung. Dies entspricht dem [Runtime-Modus](#runtime-mod). Geben Sie **production** ein, um das Caching zu maximieren und PHP-Fehler zu verbergen. Mit **development** wird kein Cache angewendet und PHP-Fehler werden angezeigt.|
-|container.image|Ermöglicht das Ändern der [Laufzeitumgebung](#runtime-environment), die vom Hosting verwendet wird. Geben Sie die gewünschte Laufzeitumgebung ein (**legacy**,**stable** oder **stable64**). Wenn Sie die Laufzeitumgebung **stable64** wählen, überprüfen Sie, ob Ihre Website mit der 64-Bit-Architektur kompatibel ist.|
+|container.image|Ermöglicht das Ändern der [Laufzeitumgebung](#runtime-environment), die vom Hosting verwendet wird. Geben Sie die gewünschte Laufzeitumgebung ein (**legacy**, **stable** oder **stable64**). Wenn Sie die Laufzeitumgebung **stable64** wählen, überprüfen Sie, ob Ihre Website mit der 64-Bit-Architektur kompatibel ist.|
 
 Bei Bedarf lesen Sie im ersten Teil „[Beschreibung der auf den OVHcloud Webhostings verfügbaren Konfigurationseinstellungen](#all-parameters)“ nach.
 
@@ -377,22 +408,18 @@ container.image=stable64
 
 #### 3.4 - Datei “.ovhconfig“ hochladen
 
-Nachdem Sie die Datei “.ovhconfig“ bearbeitet haben, laden Sie sie auf Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) hoch. Verbinden Sie sich hierzu erneut mit Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) und öffnen Sie dessen Wurzelverzeichnis (entspricht der Ebene `/`). Plazieren Sie die soeben bearbeitete “.ovhconfig“ an dieser Stelle in Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection). Wenn die Datei bereits vorhanden ist, ersetzen Sie sie.
+Nachdem Sie die Datei “.ovhconfig“ bearbeitet haben, laden Sie sie auf Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) hoch. Verbinden Sie sich hierzu erneut mit Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) und öffnen Sie dessen Wurzelverzeichnis (entspricht der Ebene `/`). Platzieren Sie die soeben bearbeitete “.ovhconfig” an dieser Stelle in Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection). Wenn die Datei bereits vorhanden ist, ersetzen Sie sie.
 
 ### 4 - Fortgeschrittene Verwendung der “.ovhconfig“ Dateien <a name="ovhconfig-more"></a>
 
 Wenn Sie Ihr Webhosting nutzen, um mehrere Webseiten darauf zu hosten, können verschiedene Gründe dafür sprechen, dass Sie für einige Ihrer Webseiten eine andere PHP-Version verwenden möchten.
 
-Erstellen Sie eine Datei namens „.ovhconfig“, die die gewünschte PHP-Version für die betreffenden Webseiten enthält. Nutzen Sie ggf. die Anweisungen im Abschnitt „[3.3 - Inhalt der Datei „.ovhconfig“ ändern](#update-ovhconfig)“ in dieser Anleitung. Wenn Sie die Datei „.ovhconfig“ auf Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) hochladen, tun Sie dies im Wurzelverzeichnis, in dem sich die Dateien der betreffenden Webseite befinden. Sie finden das Wurzelverzeichnis Ihrer Webseite in Ihrem [OVHcloud Kundencenter](/links/manager) im Tab `Meine Seiten`{.action} des betreffenden Hostings.
-
-Wenn Sie weitere Informationen benötigen, konsultieren Sie unsere Anleitung zum [Konfigurieren mehrerer Websites auf einem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Erstellen Sie eine Datei namens „.ovhconfig”, die die gewünschte PHP-Version für die betreffenden Webseiten enthält. Nutzen Sie ggf. die Anweisungen im Abschnitt „[3.3 - Inhalt der Datei „.ovhconfig” ändern](#update-ovhconfig)” in dieser Anleitung. Wenn Sie die Datei „.ovhconfig” auf Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) hochladen, tun Sie dies im Wurzelverzeichnis, in dem sich die Dateien der betreffenden Webseite befinden. Das Wurzelverzeichnis Ihrer Website finden Sie in unserer Anleitung zum [Konfigurieren mehrerer Websites auf einem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > **Es ist nicht möglich, eine zweite [Laufzeitumgebung](#runtime-environment), einen zweiten [Entwicklungsmodus](#runtime-mod) und/oder eine zweite [PHP-Engine](#php-runtime)** auf demselben Webhosting einzurichten. Es werden nur die Werte berücksichtigt, die in der Datei “.ovhconfig“ im Wurzelverzeichnis Ihres [FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_connection) angegeben sind.
 >
-
-![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ## Weiterführende Informationen
 

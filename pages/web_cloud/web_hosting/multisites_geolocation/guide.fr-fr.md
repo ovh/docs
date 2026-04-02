@@ -1,7 +1,7 @@
 ---
 title: "Comment géolocaliser un site web dans un pays spécifique ?"
 excerpt: "Découvrez comment localiser votre site web grâce aux adresses IP géolocalisées disponibles sur les offres d'hébergement mutualisé OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
  
 ## Objectif

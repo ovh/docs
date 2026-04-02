@@ -1,7 +1,7 @@
 ---
 title: "Comment modifier le dossier racine d'un site web existant ?"
 excerpt: "Découvrez comment modifier le dossier racine déclaré pour un site web déjà existant sur votre hébergement web depuis votre espace client OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Objectif

@@ -1,10 +1,24 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
-## Ziel 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
+## Ziel
 
 1-Klick-Module ermöglichen die einfache und schnelle Installation einer Website, auch ohne technische Vorkenntnisse. Es handelt sich hierbei um ein **C**ontent **M**anagement **S**ystem (**CMS**). OVHcloud bietet einen vereinfachten Installationsprozess der populärsten CMS an: *WordPress*, *Joomla!*, *Drupal* und *PrestaShop*.
 
@@ -37,11 +51,11 @@ updated: 2026-03-24
 >
 > Falls Sie auf Schwierigkeiten beim Ausführen der unten beschriebenen Schritte stoßen, finden Sie Lösungen in unserer [Dokumentation zu den häufigsten Fehlermeldungen bei 1-Klick-Modulen](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic).
 
-### Schritt 1: Ein CMS auswählen
+### 1 - Ein CMS auswählen
 
 Mit einem CMS können Sie Ihre Website über ein einfach zu verwendendes Interface einrichten. Es gibt verschiedene Arten von CMS, von denen einige beispielsweise konzipiert sind, um eine E-Commerce Seite zu erstellen, andere für die Einrichtung strukturierter Seiten wie etwa Blogs. So können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Gestaltung, Erweiterungen, Text etc.).
 
-OVHcloud bietet 4 CMS als automatische Installation über 1-Klick-Modul an. 
+OVHcloud bietet 4 CMS als automatische Installation über 1-Klick-Modul an.
 
 Wählen Sie aus den oben aufgeführten 4 CMS aus und folgen dann den Schritten in dieser Anleitung. Sie können unsere [Übersichtsseite für CMS](/links/web/hosting-cms-comparison) verwenden, um Ihre Auswahl zu erleichtern.
 
@@ -49,46 +63,16 @@ Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul ang
 
 ![CMS-Logos](/pages/assets/screens/other/cms/cms-logos.png){.thumbnail}
 
-### Schritt 2: Zugang zur Verwaltung der 1-Klick-Module
+### 2 - 1-Klick-Modul hinzufügen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann auf den Tab `1-Klick-Module`{.action}.
-
-Hier können Sie die bereits installierten 1-Klick-Module verwalten und neue Module installieren.
-
-![Zugang zur Verwaltung der 1-Klick-Module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/tab.png){.thumbnail}
-
-## Schritt 3: 1-Klick-Modul hinzufügen
-
-Klicken Sie im Tab `1-Klick-Module`{.action} Ihres Hostings auf den Button `Ein Modul hinzufügen`{.action}.
-
-Wählen Sie im neu angezeigten Fenster das gewünschte CMS aus und dann den Domainnamen, mit dem Sie Ihre Website installieren möchten.
-
-![Modulauswahl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
-
-Wenn der Domainname nicht in der Liste steht, gehen Sie in zum Tab `Meine Seiten`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)“.
-
-> [!primary]
->
-> Überprüfen Sie direkt unterhalb des Formulars zur Auswahl einer Domain (oder Subdomain), dass Ihr `Standard-Installationsverzeichnis` tatsächlich dem Verzeichnis entspricht, in dem Sie Ihr 1-Klick-Modul installieren möchten.
->
-> Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
->
-> Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“, um das Zielverzeichnis des Domainnamnes zu ändern.
-
-Anschließend versuchen Sie erneut, ein Modul zu installieren.
-
-Sie haben nun die Wahl zwischen einer **einfachen Installation** oder der **Installation im Experten-Modus**.
+Es stehen zwei Installationsmethoden zur Verfügung:
 
 - **Einfache Installation** (Standardeinstellung): OVHcloud führt die Installation des CMS durch und sendet Ihnen Ihre Zugangsdaten per E-Mail an Ihre OVHcloud Kontaktadresse. Dies ist die schnellste Art, ein 1-Klick-Modul zu installieren.
-- **Installation im Experten-Modus**: Sie können die Installationseinstellungen anpassen. Geben Sie hierzu die Informationen ein, die für das korrekte Funktionieren des CMS mit Ihrer Datenbank notwendig sind: 
+- **Installation im Experten-Modus**: Sie können die Installationseinstellungen anpassen. Geben Sie hierzu die Informationen ein, die für das korrekte Funktionieren des CMS mit Ihrer Datenbank notwendig sind:
     - Verbindungsinformationen zu Ihrer Datenbank (Server, Benutzername, Port, Passwort)
     - Installationspfad im FTP-Speicherplatz Ihres Hostings
     - Sprache des CMS
     - Administrationsdaten (Administratorname, Passwort, E-Mail-Adresse)
-
-#### Einfache Installation eines Moduls
-
-Wählen Sie den Domainnamen für Ihr CMS aus. Überprüfen Sie das Zielverzeichnis, das nach der Wahl des Domainnamens automatisch erscheint, und stellen Sie sicher, dass bei `Installation im Experten-Modus`{.action} kein Haken gesetzt ist. Klicken Sie anschließend auf den Button `Installieren`{.action}.
 
 > [!warning]
 >
@@ -96,97 +80,181 @@ Wählen Sie den Domainnamen für Ihr CMS aus. Überprüfen Sie das Zielverzeichn
 >
 > Wenn Sie nicht den Experten-Modus verwenden, erstellen Sie die Datenbank nicht im Voraus, da der Installationsroboter dies ausführt.
 
-![Einfache Installation eines Moduls](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-quick-mod-step-1-b.png){.thumbnail}
+**Klicken Sie auf eine der 2 Installationsmethoden, um den Inhalt anzuzeigen.**
 
-Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Daten. Damit können Sie sich in das Administrator-Interface (Backend) Ihres CMS einloggen.
+/// details | Einfache Installation eines Moduls
+
+Klicken Sie auf die Tabs unten, um die **4** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `1-Klick-Module`{.action}. Hier können Sie die bereits installierten 1-Klick-Module verwalten und neue Module installieren.
+>>
+>> ![Zugang zur Verwaltung der 1-Klick-Module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/tab.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie im Tab `1-Klick-Module`{.action} Ihres Hostings auf den Button `Ein Modul hinzufügen`{.action}.
+>>
+>> Wählen Sie im neu angezeigten Fenster das gewünschte CMS aus und dann den Domainnamen, mit dem Sie Ihre Website installieren möchten:
+>>
+>> ![Modulauswahl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
+>>
+>> Wenn der Domainname nicht in der Liste steht, gehen Sie zum Tab `Meine Seiten`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+>>
+>> > [!primary]
+>> >
+>> > Überprüfen Sie direkt unterhalb des Formulars zur Auswahl einer Domain (oder Subdomain), dass Ihr `Standard-Installationsverzeichnis` tatsächlich dem Verzeichnis entspricht, in dem Sie Ihr 1-Klick-Modul installieren möchten.
+>> >
+>> > Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
+>> >
+>> > Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)", um das Zielverzeichnis des Domainnamens zu ändern.
+>>
+>> Anschließend versuchen Sie erneut, ein Modul zu installieren.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie den Domainnamen für Ihr CMS aus. Überprüfen Sie das Zielverzeichnis, das nach der Wahl des Domainnamens automatisch erscheint, und stellen Sie sicher, dass bei `Installation im Experten-Modus`{.action} kein Haken gesetzt ist. Klicken Sie anschließend auf den Button `Installieren`{.action}.
+>>
+>> ![Einfache Installation eines Moduls](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-quick-mod-step-1-b.png){.thumbnail}
+>>
+>> Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Daten. Damit können Sie sich in das Administrator-Interface (Backend) Ihres CMS einloggen.
+>>
 
 > [!primary]
 >
 > Die Installation kann bis zu 15 Minuten dauern, nachdem Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Installieren`{.action} geklickt haben.
 
-#### Erweiterte Installation eines Moduls
+///
 
-Um die erweiterte Installation durchzuführen, vergewissern Sie sich, dass im Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie anschließend auf `Weiter`{.action}:
+/// details | Erweiterte Installation eines Moduls
 
-![Erweiterte Installation eines Moduls](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-1.png){.thumbnail}
+Klicken Sie auf die Tabs unten, um die **8** Schritte nacheinander anzuzeigen.
 
-##### Datenbank auswählen
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `1-Klick-Module`{.action}. Hier können Sie die bereits installierten 1-Klick-Module verwalten und neue Module installieren.
+>>
+>> ![Zugang zur Verwaltung der 1-Klick-Module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/tab.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie im Tab `1-Klick-Module`{.action} Ihres Hostings auf den Button `Ein Modul hinzufügen`{.action}.
+>>
+>> Wählen Sie im neu angezeigten Fenster das gewünschte CMS aus und dann den Domainnamen, mit dem Sie Ihre Website installieren möchten:
+>>
+>> ![Modulauswahl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
+>>
+>> Wenn der Domainname nicht in der Liste steht, gehen Sie zum Tab `Meine Seiten`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+>>
+>> > [!primary]
+>> >
+>> > Überprüfen Sie direkt unterhalb des Formulars zur Auswahl einer Domain (oder Subdomain), dass Ihr `Standard-Installationsverzeichnis` tatsächlich dem Verzeichnis entspricht, in dem Sie Ihr 1-Klick-Modul installieren möchten.
+>> >
+>> > Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
+>> >
+>> > Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)", um das Zielverzeichnis des Domainnamens zu ändern.
+>>
+>> Anschließend versuchen Sie erneut, ein Modul zu installieren.
+>>
+> **Schritt 4**
+>>
+>> Vergewissern Sie sich, dass im Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie anschließend auf `Weiter`{.action}:
+>>
+>> ![Erweiterte Installation eines Moduls](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-1.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Geben Sie die Verbindungsdaten zu Ihrer Datenbank ein.
+>>
+>> > [!warning]
+>> >
+>> > Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
+>> >
+>> > Um die Login-Daten zu Ihrer Webhosting-Datenbank zu ermitteln, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
+>> >
+>> > Um die Login-Daten zu einer mit Web Cloud Databases erstellten Datenbank herauszufinden, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>>
+>> ![Datenbank für erweiterte Installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
+>>
+>> Es gibt mehrere Möglichkeiten:
+>>
+>> - Die Datenbank ist bereits auf Ihrem Webhosting erstellt: Wählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
+>> - Die Datenbank ist noch nicht auf Ihrem Webhosting erstellt: [Erstellen Sie Ihre Datenbank auf dem Hosting](/pages/web_cloud/web_hosting/sql_create_database), wählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
+>> - Die Datenbank befindet sich auf einer [Instanz von Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server): Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Instanz und das Webhosting müssen im gleichen Rechenzentrum gehostet werden.
+>> - Die Datenbank wurde auf einem anderen OVHcloud Webhosting eingerichtet: Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Datenbank und das Webhosting mit dem neuen Modul müssen im gleichen Rechenzentrum gehostet werden.
+>>
+> **Schritt 6**
+>>
+>> Geben Sie die übrigen Informationen für die Datenbank ein:
+>>
+>> - *Adresse des Servers*: Geben Sie den Servernamen Ihrer Datenbank ein, den Sie in der E-Mail zur Installation oder in Ihrem OVHcloud Kundencenter finden können.
+>>
+>> > [!primary]
+>> >
+>> > - Der Servername einer inklusiven Datenbank eines Webhostings hat im Allgemeinen folgende Form: `NameOfYourDatabase.mysql.db`.
+>> >
+>> > - Der Name des Servers einer Datenbank von Web Cloud Databases beginnt mit Ihrer OVHcloud Kundenkennung und hat folgende Form: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei **XXX** mit der Referenz Ihrer Datenbank zu ersetzen ist.
+>>
+>> - *Name der Datenbank*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](/links/manager) festgelegt.
+>>
+>> - *Port*: Geben Sie die Nummer **3306** (Standard-Port) für eine Webhosting-Datenbank ein. Für Datenbanken auf einer Web Cloud Databases Instanz folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>>
+>> - *Benutzername*: Er ist identisch für Datenbanken, die in einem Webhosting inklusive sind. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>>
+>> - *Passwort*: Das Passwort wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
+>>
+>> Wenn Sie alle Informationen eingegeben haben, klicken Sie auf den Button `Weiter`{.action}.
+>>
+> **Schritt 7**
+>>
+>> Geben Sie die folgenden Informationen ein, um das Modul zu konfigurieren:
+>>
+>> - *Name oder E-Mail-Adresse des Administrators:* Kennung, die Sie verwenden, um sich mit der Verwaltungsoberfläche Ihres CMS zu verbinden (Backend).
+>> - *Passwort:* Passwort, das Sie verwenden, um sich mit der Verwaltungsoberfläche Ihres CMS zu verbinden.
+>> - *Domain:* Domainname, mit dem Sie Ihr CMS installieren möchten. Lesen Sie unsere Anleitung „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)" um mehr zu erfahren.
+>> - *Sprache:* Sprache, in der das CMS installiert wird.
+>> - *Installationspfad:* Wird bei der Auswahl des Domainnamens automatisch ausgewählt. Ergänzen Sie ihn mit Unterverzeichnissen, falls gewünscht (für fortgeschrittene Benutzer).
+>>
+>> > [!primary]
+>> >
+>> > Überprüfen Sie für das Formular `Installationspfad`, dass das Verzeichnis, in dem Sie Ihr 1-Klick-Modul unter Ihrem Domainnamen installieren möchten, korrekt ausgefüllt ist.
+>> >
+>> > Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
+>> >
+>> > Wenn Sie zusätzlich ein Unterverzeichnis im `Installationspfad` eingeben, erscheint es in der URL unter der Ihr 1-Klick-Modul abrufbar sein wird.
+>> > Wird also beispielsweise ein Verzeichnis namens *test* in das Formular eingetragen, erhält die URL für das 1-Klick-Modul die Form **http://domain.tld/test/**.
+>> >
+>> > Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)", um das Zielverzeichnis Ihres Domainnamens zu ändern.
+>>
+>> Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Das Verzeichnis am Ende des Installationspfads muss leer sein, damit die Installation ausgeführt werden kann.
+>>
+>> ![Modulkonfiguration für die erweiterte Installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-2.png){.thumbnail}
+>>
+> **Schritt 8**
+>>
+>> Überprüfen Sie die eingegebenen Informationen und klicken Sie dann auf `Bestätigen`{.action}:
+>>
+>> ![Bestätigung der Installation im Experten-Modus](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-4.png){.thumbnail}
+>>
 
-Geben Sie die Verbindungsdaten zu Ihrer Datenbank ein. 
+///
 
-> [!warning]
->
-> Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
-> 
-> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu ermitteln, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Um die Login-Daten zu einer mit Web Cloud Databases erstellten Datenbank herauszufinden, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
-
-![Datenbank für erweiterte Installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
-
-Es gibt mehrere Möglichkeiten:
-
-- Die Datenbank ist bereits auf Ihrem Webhosting erstellt: Wählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
-- Die Datenbank ist noch nicht auf Ihrem Webhosting erstellt: [Erstellen Sie Ihre Datenbank auf dem Hosting](/pages/web_cloud/web_hosting/sql_create_database), wählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
-- Die Datenbank befindet sich auf einer [Instanz von Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server): Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Instanz und das Webhosting müssen im gleichen Rechenzentrum gehostet werden.
-- Die Datenbank wurde auf einem anderen OVHcloud Webhosting eingerichtet: Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Datenbank und das Webhosting mit dem neuen Modul müssen im gleichen Rechenzentrum gehostet werden.
-
-Für die Datenbank sind folgende Angaben erforderlich:
-
-- *Adresse des Servers*: Geben Sie den Servernamen Ihrer Datenbank ein, den Sie in der E-Mail zur Installation oder in Ihrem OVHcloud Kundencenter finden können. 
-
-> [!primary]
-> 
-> - Der Servername einer inklusiven Datenbank eines Webhostings hat im Allgemeinen folgende Form: `Datenbankname.mysql.db`. 
->
-> - Der Name des Servers einer Datenbank von Web Cloud Databases beginnt mit Ihrer OVHcloud Kundenkennung und hat folgende Form: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei **XXX** mit der Referenz Ihrer Datenbank zu ersetzen ist.
-
-- *Name der Datenbank*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](/links/manager) festgelegt.
-
-- *Port*: Geben Sie die Nummer **3306** (Standard-Port) für eine Webhosting-Datenbank ein. Für Datenbanken auf einer Web Cloud Databases Instanz folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
-
-- *Benutzername*: Er ist identisch für Datenbanken, die in einem Webhosting inklusive sind. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
-
-- *Passwort*: Das Passwort wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
-
-Wenn Sie alle Informationen eingegeben haben, klicken Sie auf den Button `Weiter`{.action}.
-
-##### Konfiguration des Moduls
-
-Geben Sie die folgenden Informationenein, um das Modul zu konfigurieren:
-
-- *Name oder E-Mail-Adresse des Administrators:* Kennung, die Sie verwenden, um sich mit der Verwaltungsoberfläche Ihres CMS zu verbinden (Backend).
-- *Passwort:* Passwort, das Sie verwenden, um sich mit der Verwaltungsoberfläche Ihres CMS zu verbinden.
-- *Domain:* Domainname, mit dem Sie Ihr CMS installieren möchten. Lesen Sie unsere Anleitung „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)“ um mehr zu erfahren.
-- *Sprache:* Sprache, in der das CMS installiert wird.
-- *Installationspfad:* Wird bei der Auswahl des Domainnamens automatisch ausgewählt. Ergänzen Sie ihn mit Unterverzeichnissen, falls gewünscht (für fortgeschrittene Benutzer).
-
-> [!primary]
->
-> Überprüfen Sie für das Formular `Installationspfad`, dass das Verzeichnis, in dem Sie Ihr 1-Klick-Modul unter Ihrem Domainnamen installieren möchten, korrekt ausgefüllt ist.
->
-> Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
->
-> Wenn Sie zusätzlich ein Unterverzeichnis im `Installationspfad` eingeben, erscheint es in der URL unter der Ihr 1-Klick-Modul abrufbar sein wird.
-> Wird also beispielsweise ein Verzeichnis namens *test* in das Formular eingetragen, erhält die URL für das 1-Klick-Modul die Form **http://domain.tld/test/**.
->
-> Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“, um das Zielverzeichnis Ihres Domainnamens zu ändern.
-
-Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
-
-> [!warning]
->
-> Das Verzeichnis am Ende des Installationspfads muss leer sein, damit die Installation ausgeführt werden kann.
-
-![Modulkonfiguration für die erweiterte Installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-2.png){.thumbnail}
-
-##### Installation bestätigen
-
-Im letzten Schritt der erweiterten Installation überprüfen Sie die eingegebenen Informationen und klicken dann auf `Bestätigen`{.action}.
-
-![Bestätigung der Installation im Experten-Modus](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-4.png){.thumbnail}
-
-### Schritt 4: Ihre Website personalisieren
+### 3 - Ihre Website personalisieren
 
 Die Installation kann etwa zehn Minuten dauern.
 

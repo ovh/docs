@@ -1,12 +1,12 @@
 ---
 title: "1-Klick-Module verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
-## Ziel 
+## Ziel
 
-1-Klick-Module ermöglichen die einfache und schnelle Installation von Online-Software zur Erstellung von Websites (auch “CMS“ genannt). OVHcloud bietet Ihnen die meist verbreiteten: WordPress, PrestaShop, Drupal und Joomla!.
+1-Klick-Module ermöglichen die einfache und schnelle Installation von Online-Software zur Erstellung von Websites (auch "CMS" genannt). OVHcloud bietet Ihnen die meist verbreiteten: WordPress, PrestaShop, Drupal und Joomla!.
 
 **Diese Anleitung erklärt, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten.**
 
@@ -18,7 +18,7 @@ updated: 2026-03-24
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting), auf dem Sie 1-Klick-Module installieren können (ausgenommen  [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m)).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting), auf dem Sie 1-Klick-Module installieren können (ausgenommen [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m)).
 - Sie haben ein 1-Klick-Modul auf Ihrem Hosting erstellt (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
 
 <!-- CP-NAV-START:web-hosting -->
@@ -34,28 +34,56 @@ updated: 2026-03-24
 
 ## In der praktischen Anwendung
 
-### Login zu Ihrer Seite
+### Auf Ihre Website zugreifen
 
-Um nach der Installation eines 1-Klick-Moduls auf den öffentlichen Teil Ihrer Website zuzugreifen, gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action}, `Hosting-Pakete`{.action}, das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
+Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
-Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modul und dann auf `Zugang zum Modul`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `1-Klick-Module`{.action}.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Button `...`{.action} rechts in der Zeile für Ihr Modul und dann auf `Zugang zum Modul`{.action}.
+>>
 
 > [!primary]
 >
 > Sollte Ihre Website nach diesem Vorgang nicht korrekt angezeigt werden, lesen Sie die zu den Webhosting-Paketen gehörigen OVHcloud Anleitungen unter [Diagnose](/products/web-cloud-hosting).
 >
 
-### Administrator-Interface
+### Auf das Verwaltungsinterface zugreifen
 
-Um auf den Administratorbereich Ihrer Website zuzugreifen, gehen Sie im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
+Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
-Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr Modul und dann auf `Zum Verwaltungsinterface des Moduls`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `1-Klick-Module`{.action}.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Button `...`{.action} rechts neben der Zeile für Ihr Modul und dann auf `Zum Verwaltungsinterface des Moduls`{.action}.
+>>
 
-### Administrator-Login
+### Administrator-ID abrufen
 
-Klicken Sie im Bereich `Hosting-Pakete`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) auf den Tab `1-Klick-Module`{.action}. Die Administrator-ID Ihres Moduls wird in der Spalte `Login` angezeigt.
+Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](/links/manager) abrufen: Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `Meine Kommunikation`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `1-Klick-Module`{.action}. Die Administrator-ID Ihres Moduls wird in der Spalte `Login` angezeigt.
+>>
+> **Schritt 3**
+>>
+>> Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](/links/manager) abrufen: Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `Meine Kommunikation`{.action}.
+>>
 
 ### Passwort Ihres Moduls ändern <a name="password-change"></a>
 
@@ -68,9 +96,9 @@ Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr 
 > - Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum Drupal-Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://www.drupal.org/).
 > - PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum PrestaShop Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie [hier](https://www.prestashop.com) auf der offiziellen Seite.
 >
-> Sie können auch das Passwort für den Zugang zum Verwaltungsinterface Ihres CMS direkt über Ihre Datenbank ändern.<br>
-> Wir empfehlen Ihnen jedoch dringend, die Operation mithilfe der vom Herausgeber Ihres CMS zur Verfügung gestellten Dokumentation durchzuführen oder bei Problemen einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
->
+
+Sie können auch das Passwort für den Zugang zum Verwaltungsinterface Ihres CMS direkt über Ihre Datenbank ändern.<br>
+Wir empfehlen Ihnen jedoch dringend, die Operation mithilfe der vom Herausgeber Ihres CMS zur Verfügung gestellten Dokumentation durchzuführen oder bei Problemen einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
 
 ### Ihr Modul löschen
 
@@ -79,57 +107,93 @@ Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr 
 > Daten-Backups sind ein Bestandteil der Operationen, die für die [Absicherung Ihrer Webseiten](/pages/web_cloud/web_hosting/secure_your_website) notwendig sind. Wir empfehlen Ihnen, Backups Ihrer Daten regelmäßig auf einen lokalen Datenträger wie einen USB-Stick oder eine externe Festplatte zu [importieren](/pages/web_cloud/web_hosting/exporter-son-site-web).
 >
 
-#### Schritt 1: Die zu Ihrem Modul gehörige Datenbank identifizieren <a name="step1"></a>
+#### 1 - Die zu Ihrem Modul gehörige Datenbank identifizieren <a name="step1"></a>
 
-Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst dessen Datenbank **identifizieren**. Gehen Sie dazu im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
+Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst dessen Datenbank **identifizieren**.
 
-Wenn Sie über nur eine Datenbank in diesem Teil Ihres Kundencenters und keine [Web Cloud Databases](/links/web/databases) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
+Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-Andernfalls wechseln Sie zum Tab `Meine Seiten`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`, der in der Zeile der betreffenden Webseite angezeigt wird: Dies ist das Verzeichnis, in dem sich die Dateien des 1-Klick-Modul auf dem FTP-Server befinden.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 2**
+>>
+>> Wenn Sie über nur eine Datenbank in diesem Teil Ihres Kundencenters und keine [Web Cloud Databases](/links/web/databases) Lösung verfügen, können Sie davon ausgehen, dass es sich um die Datenbank Ihrer Website handelt.
+>>
+> **Schritt 3**
+>>
+>> Andernfalls wechseln Sie zum Tab `Meine Seiten`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`, das in der Zeile der betreffenden Webseite angezeigt wird: Dies ist das Verzeichnis, in dem sich die Dateien des 1-Klick-Moduls auf dem FTP-Server befinden.
+>>
 
 Loggen Sie sich anschließend in den [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Meine Seiten`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
-- WordPress: **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
-- Joomla!: **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
-- Drupal: **“settings.php“** (Gehen Sie zum Ordner **“sites“** und dann **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
-- PrestaShop: **“parameters.php“** (Gehen Sie zum Ordner **“app“** und dann **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
+- WordPress: **"wp-config.php"** (Der Name der Datenbank erscheint unter der Überschrift **"DB_NAME"**).
+- Joomla!: **"configuration.php"** (Der Name der Datenbank wird unter dem Eintrag **"public $db"** angezeigt).
+- Drupal: **"settings.php"** (Gehen Sie zum Ordner **"sites"** und dann **"default"**. Der Name der Datenbank erscheint unter der Bezeichnung **"database"**).
+- PrestaShop: **"parameters.php"** (Gehen Sie zum Ordner **"app"** und dann **"config"**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **"database_name"**).
 
-#### Schritt 2: Ihr Modul sichern
+#### 2 - Ihr Modul sichern
 
 Folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/exporter-son-site-web), um Dateien vom FTP-Bereich Ihres Hostings als auch Datenbanken zu exportieren und zu sichern.
 
-#### Schritt 3: Ihr Modul löschen
+#### 3 - Ihr Modul löschen
 
 > [!alert]
 >
 > Die Löschung Ihres 1-Klick-Moduls und seiner Datenbank zieht auch die Löschung **aller entsprechenden Backups** nach sich. Die gelöschten Daten können danach nicht mehr abgerufen werden.
 >
 
-Um Ihr 1-Klick-Modul zu löschen, gehen Sie in Ihr [OVHcloud Kundencenter](/links/manager), klicken Sie auf `Web Cloud`{.action}, `Hosting-Pakete`{.action}, das betreffende Hosting und dann auf `1-Klick-Module`{.action}.
+Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr Modul und dann auf den Befehl `Das Modul löschen`{.action}.
-
-> [!success]
-> Sie können den Button `Das Modul löschen`{.action} nicht finden? Oder möchten Sie nur Dateien auf Ihrem Modul löschen?
->
-> Unsere Anleitungen:
->
-> - [Mit dem FTP-Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection)
-> - [Tutorial - FileZilla mit Ihrem OVHcloud Hosting nutzen](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
->
-> <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHpsuvyNFtQ?si=4655K8lQQpkE2YNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
->
+> [!tabs]
+> **Schritt 1**
+>>
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `1-Klick-Module`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Button `...`{.action} rechts neben der Zeile für Ihr Modul und dann auf den Befehl `Das Modul löschen`{.action}.
+>>
+>> > [!success]
+>> > Sie können den Button `Das Modul löschen`{.action} nicht finden? Oder möchten Sie nur Dateien auf Ihrem Modul löschen?
+>> >
+>> > Unsere Anleitungen:
+>> >
+>> > - [Mit dem FTP-Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection)
+>> > - [Tutorial - FileZilla mit Ihrem OVHcloud Hosting nutzen](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
+>> >
+>> > <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHpsuvyNFtQ?si=4655K8lQQpkE2YNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+>> >
+>>
 
 > [!warning]
 >
-> Die Löschung Ihres 1-Klick-Moduls **beinhaltet nicht die Löschung der Datenbank**. Wenn Sie die Installation eines neuen CMS starten, ohne zuvor die bestehende Datenbank gelöscht zu haben (und Ihr Hosting erlaubt nicht die automatische Erstellung einer neuen Datenbank), erscheint die Nachricht “[Beim Laden der Informationen ist ein Fehler aufgetreten (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#beim-laden-der-informationen-ist-ein-fehler-aufgetreten-sie-benotigen-mindestens-eine-freie-datenbank)“ in Ihrem Kundencenter.
+> Die Löschung Ihres 1-Klick-Moduls **beinhaltet nicht die Löschung der Datenbank**. Wenn Sie die Installation eines neuen CMS starten, ohne zuvor die bestehende Datenbank gelöscht zu haben (und Ihr Hosting erlaubt nicht die automatische Erstellung einer neuen Datenbank), erscheint die Nachricht "[Beim Laden der Informationen ist ein Fehler aufgetreten (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#beim-laden-der-informationen-ist-ein-fehler-aufgetreten-sie-benotigen-mindestens-eine-freie-datenbank)" in Ihrem Kundencenter.
 >
 > Wenn Sie über ein [Basic Hosting](/links/web/hosting-personal-offer) verfügen oder bereits vier Datenbanken auf Ihrem [Pro Hosting](/links/web/hosting-professional-offer) oder [Performance Hosting](/links/web/hosting-performance-offer) erstellt haben, müssen Sie **ZUERST** die im [ersten Schritt](#step1) identifizierte Datenbank löschen, um ein neues 1-Klick-Modul erstellen zu können.
 >
 
-Um die Löschung Ihres Moduls abzuschließen, gehen Sie in im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}. Klicken Sie auf `...`{.action} rechts neben der Datenbank und wählen Sie `Die Datenbank löschen`{.action} aus.
+Um die Löschung Ihres Moduls abzuschließen, klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-Überprüfen Sie im Tab `Aktuelle Tasks`{.action}, dass die zuvor ausgelösten Lösch-Tasks abgeschlossen sind bevor Sie die Installation eines neuen Moduls starten.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf `...`{.action} rechts neben der Datenbank und wählen Sie `Die Datenbank löschen`{.action} aus.
+>>
+> **Schritt 3**
+>>
+>> Überprüfen Sie im Tab `Aktuelle Tasks`{.action}, dass die zuvor ausgelösten Lösch-Tasks abgeschlossen sind, bevor Sie die Installation eines neuen Moduls starten.
+>>
 
 ### Bewährte Praktiken
 

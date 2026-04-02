@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Schnellstart-Anleitung"
 excerpt: "Erfahren Sie hier, wie Sie auf einem Webhosting eine neue Website mithilfe eines 1-Klick-Moduls online stellen und personalisierte E-Mail-Adressen mit Ihrem Domainnamen verwenden"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 <style>

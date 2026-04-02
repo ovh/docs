@@ -1,7 +1,7 @@
 ---
 title: "Jak rozpocząć korzystanie z hostingu WWW"
 excerpt: 'Dowiedz się, jak zamieścić w Internecie nową stronę WWW za pomocą opcji"Moduły za 1 kliknięciem", jak utworzyć nowy spersonalizowany adres e-mail z nazwą domeny, a wszystko to za pomocą naszego rozwiązania hostingowego'
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 <style>

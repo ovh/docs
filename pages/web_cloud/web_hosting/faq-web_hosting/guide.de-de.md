@@ -1,7 +1,7 @@
 ---
 title: "FAQ Webhosting"
 excerpt: "Hier finden Sie Antworten zu den am häufigsten gestellten Fragen zu den OVHcloud Webhostings"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 <style>

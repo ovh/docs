@@ -1,7 +1,7 @@
 ---
 title: "Cas d'usage - Comment changer le domaine d'un site existant"
 excerpt: "Découvrez comment changer le nom de domaine d'un site existant"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Objectif

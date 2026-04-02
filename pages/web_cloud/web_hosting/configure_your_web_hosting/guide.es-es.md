@@ -1,8 +1,18 @@
 ---
 title: "Web hosting - Entorno, versión PHP, .ovhconfig"
 excerpt: "Descubra cómo cambiar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el .ovhconfig de un alojamiento web"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
+
+<style>
+ pre {
+   background-color: #300A24
+ }
+ details > summary {
+   color: var(--color-brand-blue-600);
+   font-weight: 700;
+ }
+</style>
 
 ## Objetivo
 
@@ -19,7 +29,7 @@ No obstante, en nuestras infraestructuras compartidas, puede modificar los sigui
 
 Estas opciones de configuración se pueden modificar de dos formas:
 
-- desde su [área de cliente de OVHcloud](/links/manager) ;
+- desde su [área de cliente de OVHcloud](/links/manager);
 - desde el espacio de almacenamiento FTP de su alojamiento web de OVHcloud mediante un archivo denominado ".ovhconfig".
 
 > [!primary]
@@ -103,7 +113,7 @@ Algunas versiones de PHP solo funcionan en determinados entornos de ejecución. 
 |---|---|
 |5.4, 5.5, 5.6 y 7.0|Legacy, Stable|
 |7.1, 7.2 y 7.3|Stable|
-|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 y 8.5|stable64|
+|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 y 8.5|Stable64|
 
 > [!primary]
 >
@@ -121,20 +131,39 @@ Aunque OVHcloud se encarga de instalar las últimas versiones de PHP en sus serv
 **Caso 2: utiliza un sitio basado en una solución personalizada**: 
 
 - Contacte con el webmaster que haya creado el sitio web.
-- Consulte la [documentación oficial de PHP](http://php.net/manual/en/appendices.php) para obtener más información sobre las migraciones de versiones.
+- Consulte la [documentación oficial de PHP](https://php.net/manual/en/appendices.php) para obtener más información sobre las migraciones de versiones.
 - Si es necesario, actualice el código de su sitio web asegurándose de que sigue siendo compatible con el alojamiento web de OVHcloud.
 
-Si lo necesita, puede conocer la versión de PHP que utiliza actualmente su alojamiento web de dos maneras:
+Si lo necesita, puede conocer la versión de PHP que utiliza actualmente su alojamiento web de dos maneras.
 
-- **A través del área de cliente de OVHcloud**. Conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, busque la versión en *Versión PHP global*. 
+**Haga clic en los 2 títulos siguientes para ver el contenido.**
 
-![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
+/// details | A través del área de cliente de OVHcloud
 
-> [!primary]
-> Si aparece un círculo de color azul, espere a que la versión se actualice en unos minutos.
->
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-- **Mediante un script**. Cree un script **.php** que contenga únicamente el código siguiente:
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la pestaña `Información general`{.action}, busque la versión en *Versión PHP global*.
+>>
+>> ![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Si aparece un círculo de color azul, espere a que la versión se actualice en unos minutos.
+>> >
+>>
+
+///
+
+/// details | Mediante un script
+
+Cree un script **.php** que contenga únicamente el código siguiente:
 
 ```php
 <?php phpinfo(); ?>
@@ -148,6 +177,8 @@ A continuación, póngalo en línea en su [espacio de almacenamiento FTP](/pages
 > El comando que permite cambiar la versión de PHP en el archivo ".htaccess" tampoco permite utilizar las versiones recientes de PHP en nuestras infraestructuras.
 > Es obligatorio utilizar el archivo ".ovhconfig".
 >
+
+///
 
 #### 1.3 - Los motores de ejecución PHP <a name="php-runtime"></a>
 
@@ -181,7 +212,7 @@ Existen **2** modos que puede activar: *Production* y *Development*.
 
 |Modo|Caché de archivos estáticos|Tratamiento de errores PHP|
 |---|---|---|
-|*Production*|Maximiza el almacenamiento en caché de los archivos estáticos en los navegadores de internet.|Los errores PHP no aparecen en su sitio web.|
+|*Production*|Maximiza el almacenamiento en caché de los archivos estáticos en los navegadores de Internet.|Los errores PHP no aparecen en su sitio web.|
 |*Development*|No se aplica ninguna caché.|Los errores PHP aparecen en su sitio web.|
 
 > [!primary]
@@ -198,9 +229,7 @@ Una vez que conozca los distintos parámetros que puede modificar para su alojam
 > Le recordamos que modificar al menos uno de estos elementos puede afectar a la visualización o al buen funcionamiento de su sitio web. **Asegúrese previamente de que su sitio web es compatible con los cambios que desea realizar en la configuración de su alojamiento web.** En caso de duda o de que tenga dificultades, contacte con un [proveedor especializado](/links/partner).
 >
 
-#### 2.1 - Acceder a la gestión de la configuración del alojamiento web
-
-Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -216,7 +245,7 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 >>
 >> A la derecha de la indicación **Versión PHP Global**, situada casi en el centro de la página, haga clic en el botón `...`{.action} y luego en `Editar la configuración`{.action}.
-
+>>
 >> > [!primary]
 >> >
 >> > Si el botón `Editar la configuración`{.action} aparece atenuado, es posible que se esté realizando una comprobación de la **Versión PHP Global**. En ese caso, aparecerá un círculo de color azul junto a la versión, indicando que se está realizando una comprobación. Espere unos minutos hasta que el botón `Editar la configuración`{.action} vuelva a estar disponible.
@@ -224,24 +253,26 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> > Si la opción **Versión PHP Global** no aparece en su [área de cliente de OVHcloud](/links/manager), compruebe que el archivo *.ovhconfig* existe en la raíz FTP de su alojamiento compartido de OVHcloud.
 >> >
 >> > Encontrará toda la información relativa al archivo *.ovhconfig* en la tercera parte "[Método 2: modificar la configuración del alojamiento web desde el archivo ".ovhconfig"](#setting-ovhconfig)" de esta guía.
-
-#### 2.2 - Cambiar la configuración del alojamiento web
-
-Se abrirá una ventana en la que podrá elegir entre dos opciones. Seleccione la que corresponde a la acción que quiera realizar y haga clic en `Siguiente`{.action}.
-
-|Elección|Detalle|
-|---|---|
-|`Volver a la configuración anterior`|Después de seleccionar esta opción, elija la configuración que desea restaurar junto a `Elección histórica`. Es posible que esta opción no esté disponible si no ha realizado ningún cambio anteriormente.|
-|`Modificar la configuración actual`|Después de seleccionar esta opción, elija los cambios que desea realizar en la configuración entre los campos disponibles. Si es necesario, vuelva a la primera parte "[Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud](#all-parameters)" de esta guía.|
-
-> [!primary]
->
-> Cambiar el entorno de ejecución de un alojamiento web borra automáticamente las sesiones PHP.
-> 
-
-Cuando esté listo, haga clic en `Aceptar`{.action} para aplicar el cambio. Espere a que se complete.
-
-![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
+>> >
+>>
+> **Etapa 3**
+>>
+>> Se abrirá una ventana en la que podrá elegir entre dos opciones. Seleccione la que corresponde a la acción que quiera realizar y haga clic en `Siguiente`{.action}.
+>>
+>> |Elección|Detalle|
+>> |---|---|
+>> |`Volver a la configuración anterior`|Después de seleccionar esta opción, elija la configuración que desea restaurar junto a `Elección histórica`. Es posible que esta opción no esté disponible si no ha realizado ningún cambio anteriormente.|
+>> |`Modificar la configuración actual`|Después de seleccionar esta opción, elija los cambios que desea realizar en la configuración entre los campos disponibles. Si es necesario, vuelva a la primera parte "[Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud](#all-parameters)" de esta guía.|
+>>
+>> > [!primary]
+>> >
+>> > Cambiar el entorno de ejecución de un alojamiento web borra automáticamente las sesiones PHP.
+>> >
+>>
+>> Cuando esté listo, haga clic en `Aceptar`{.action} para aplicar el cambio. Espere a que se complete.
+>>
+>> ![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
+>>
 
 ### 3 - Método 2: modificar la configuración del alojamiento web desde el archivo ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -308,7 +339,7 @@ Personalice los valores de las variables según la configuración que quiera uti
 |app.engine.version|Permite definir [la versión de PHP](#php-versions) utilizada por el alojamiento entre [las que ofrece OVHcloud](/links/web/hosting-programming-language). Introduzca la versión que desee (en función del entorno de ejecución que haya elegido).|
 |http.firewall|Permite activar o desactivar el [firewall incluido con los alojamientos web de OVHcloud](/links/web/hosting-options). Introduzca **security** para activarlo o **none** para desactivarlo.|
 |environment|Permite gestionar el comportamiento de la caché de los archivos estáticos de su sitio web y el tratamiento de los errores PHP. Esto corresponde al [modo de ejecución](#runtime-mod). Introduzca **production** para maximizar el almacenamiento en caché y ocultar los errores PHP o **development** para que no se aplique ninguna caché y se muestren los errores PHP.|
-|container.image|Permite modificar [el entorno de ejecución](#runtime-environment) utilizado por el alojamiento. Introduzca el entorno de ejecución (**legacy**,**stable** o **stable64**) que desee. Si elige el entorno de ejecución **stable64**, compruebe que su sitio web es compatible con la arquitectura de 64 bits.|
+|container.image|Permite modificar [el entorno de ejecución](#runtime-environment) utilizado por el alojamiento. Introduzca el entorno de ejecución (**legacy**, **stable** o **stable64**) que desee. Si elige el entorno de ejecución **stable64**, compruebe que su sitio web es compatible con la arquitectura de 64 bits.|
 
 Si lo necesita, vuelva a la sección "[Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud](#all-parameters)" de esta guía.
 
@@ -384,16 +415,12 @@ Una vez modificado el archivo ".ovhconfig", cárguelo en su [espacio de almacena
 
 Si utiliza su alojamiento web para alojar varios sitios web, puede que tenga razones para querer beneficiarse de una versión de PHP diferente para algunos de sus sitios web.
 
-Cree un archivo ".ovhconfig" que contenga la versión de PHP deseada para el o los sitios web afectados. Siga las manipulaciones descritas en la parte "[3.3 - Modificar el contenido del archivo ".ovhconfig"](#update-ovhconfig)" de este guía si es necesario. Cuando cargue el archivo ".ovhconfig" en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), hágalo en la carpeta raíz donde se encuentran los archivos que componen el sitio web afectado. Puede encontrar la carpeta raíz de su sitio web desde su [área de cliente de OVHcloud](/links/manager) en la pestaña `Mis sitios`{.action} del alojamiento afectado.
-
-Consulte nuestro guía detallando cómo [configurar un sitio web en un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) si es necesario.
+Cree un archivo ".ovhconfig" que contenga la versión de PHP deseada para el o los sitios web afectados. Siga las manipulaciones descritas en la parte "[3.3 - Modificar el contenido del archivo ".ovhconfig"](#update-ovhconfig)" de esta guía si es necesario. Cuando cargue el archivo ".ovhconfig" en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), hágalo en la carpeta raíz donde se encuentran los archivos que componen el sitio web afectado. Encuentre la carpeta raíz de su sitio web en nuestra guía sobre cómo [configurar un sitio web en un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) si es necesario.
 
 > [!warning]
 >
 > **No es posible especificar un segundo [entorno de ejecución](#runtime-environment), un segundo [modo de ejecución](#runtime-mod) ni un segundo [motor de ejecución PHP](#php-runtime)** en un mismo alojamiento web. Solo se tendrán en cuenta los datos introducidos en el archivo ".ovhconfig" que se encuentra en la raíz de su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
-
-![ovhconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ## Más información
 

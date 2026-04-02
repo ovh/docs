@@ -1,7 +1,7 @@
 ---
 title: "Guia de utilização do acelerador CDN num alojamento web"
 excerpt: "Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Objetivo
@@ -43,15 +43,25 @@ Para funcionar, cada servidor guarda na sua memória cache uma parte do seu webs
 
 ####  Se a opção CDN não for encomendada ou ativada no seu alojamento Web
 
-Aceda à Área de [Cliente OVHcloud](/links/manager) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e, a seguir, em `Encomendar um CDN`{.action} ou `Ativar a opção`{.action} se a opção CDN já estiver incluída no seu alojamento.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
-> [!primary]
-> 
-> Se possui uma opção CDN anterior a 19/11/2020, pode encomendar a nova oferta Shared CDN clicando em `Atualizar o CDN para a versão superior`{.action}.
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
-
-Será então redirecionado para a página onde será gerada a nota de encomenda. Uma vez efetuada e paga a encomenda, o serviço ficará disponível em apenas alguns minutos.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>>
+> **Etapa 2**
+>>
+>> Na página que se abrir, localize a menção **Opção CDN**. Clique em `...`{.action} à direita e, a seguir, em `Encomendar um CDN`{.action} ou `Ativar a opção`{.action} se a opção CDN já estiver incluída no seu alojamento.
+>>
+>> > [!primary]
+>> > 
+>> > Se possui uma opção CDN anterior a 19/11/2020, pode encomendar a nova oferta Shared CDN clicando em `Atualizar o CDN para a versão superior`{.action}.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
+>>
+>> Será então redirecionado para a página onde será gerada a nota de encomenda. Uma vez efetuada e paga a encomenda, o serviço ficará disponível em apenas alguns minutos.
+>>
 
 #### Se a opção CDN já estiver ativa no seu alojamento Web
 
@@ -509,15 +519,27 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 Esta ação tem como objetivo eliminar a opção CDN para a totalidade do seu alojamento Web.
 
-Aceda à Área de [Cliente OVHcloud](/links/manager) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Eliminar CDN`{.action}.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
-
-Clique em `Validar`{.action} para confirmar a eliminação.
-
-> [!warning]
->
-> Receberá um e-mail com o procedimento a realizar para o encerramento do CDN, cujas instruções deverá seguir seja para confirmar ou para anular o pedido. 
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>>
+> **Etapa 2**
+>>
+>> Localize a menção **Opção CDN**. Clique em `...`{.action} à direita e depois em `Eliminar CDN`{.action}.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Clique em `Validar`{.action} para confirmar a eliminação.
+>>
+>> > [!warning]
+>> >
+>> > Receberá um e-mail com o procedimento a realizar para o encerramento do CDN, cujas instruções deverá seguir seja para confirmar ou para anular o pedido.
+>>
 
 ### Verificar que o CDN se encontra ativo
 

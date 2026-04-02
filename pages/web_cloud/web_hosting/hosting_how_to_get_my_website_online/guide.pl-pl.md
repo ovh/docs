@@ -1,7 +1,7 @@
 ---
 title: "Uruchomienie strony WWW na hostingu"
 description: "Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Wprowadzenie 

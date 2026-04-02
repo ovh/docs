@@ -1,7 +1,7 @@
 ---
 title: "Comment bien débuter avec votre hébergement web"
 excerpt: "Découvrez comment mettre en ligne un nouveau site Internet via nos options de « Modules en 1 clic », comment créer une nouvelle adresse e-mail personnalisée avec votre nom de domaine, le tout grâce à notre solution d'hébergement web"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Ripristinare i dati dello spazio di storage di un hosting Web"
 excerpt: "Questa guida ti mostra come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Obiettivo

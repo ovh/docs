@@ -1,7 +1,7 @@
 ---
 title: "How to associate a domain name with an existing website?"
 excerpt: "Discover how to associate a domain name or subdomain with an existing website on your web hosting"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 <style>

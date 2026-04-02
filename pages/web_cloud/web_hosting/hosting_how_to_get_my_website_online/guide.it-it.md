@@ -1,7 +1,7 @@
 ---
 title: "Mettere online un sito Internet su un hosting Web"
 excerpt: "Questa guide ti mostra come pubblicare un sito su un hosting Web OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Obiettivo

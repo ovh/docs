@@ -1,7 +1,7 @@
 ---
 title: "Speeding up your website with CDN"
 excerpt: "Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Objective
@@ -43,15 +43,25 @@ In order for this to work, each server stores a part of your website in its cach
 
 #### If the CDN option is not ordered or enabled on your Web Hosting plan
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of "CDN option", then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
+Click on the tabs below to view each of the **2** steps.
 
-> [!primary]
-> 
-> If you have a CDN option from before 11/19/2020, you can order the new Shared CDN offer by clicking `Upgrade CDN to a later version`{.action}.
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
-
-You will be redirected to a page where you can generate a purchase order. Once the order is paid, the service will be available within a few minutes.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the relevant Web Hosting plan.
+>>
+> **Step 2**
+>>
+>> On the page that pops up, locate the **CDN option**. Click on `...`{.action} to the right, then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
+>>
+>> > [!primary]
+>> > 
+>> > If you have a CDN option from before 11/19/2020, you can order the new Shared CDN offer by clicking `Upgrade CDN to a later version`{.action}.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
+>>
+>> You will be redirected to a page where you can generate a purchase order. Once the order is paid, the service will be available within a few minutes.
+>>
 
 #### If the CDN option is already enabled on your Web Hosting plan
 
@@ -509,15 +519,27 @@ Click on the tabs below to view each of the **4** steps.
 
 This action will remove the CDN option from your entire Web Hosting solution.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant the Web Hosting plan. Click `...`{.action} to the right of “CDN option”, then on `Cancel the CDN`{.action}.
+Click on the tabs below to view each of the **3** steps.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
-
-Click `Confirm`{.action} to continue with the cancellation.
-
-> [!warning]
->
-> You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the relevant Web Hosting plan.
+>>
+> **Step 2**
+>>
+>> Locate the **CDN option**. Click on `...`{.action} to the right, then on `Cancel the CDN`{.action}.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Click `Confirm`{.action} to continue with the cancellation.
+>>
+>> > [!warning]
+>> >
+>> > You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request.
+>>
 
 ### Checking that your CDN is working
 

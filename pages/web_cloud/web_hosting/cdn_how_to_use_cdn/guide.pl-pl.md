@@ -1,7 +1,7 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Wprowadzenie 
@@ -43,15 +43,25 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli opcja CDN nie jest zamówiona lub włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-> [!primary]
-> 
-> Jeśli posiadasz opcję CDN sprzed 19/11/2020, możesz zamówić nową usługę Shared CDN klikając na `Aktualizuj CDN do wyższej`{.action} wersji.
-
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
-
-Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana kilka minut po jej opłaceniu.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli, znajdź sekcję **Opcja CDN**. Kliknij `...`{.action} po prawej stronie, a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja CDN jest już zawarta w Twoim hostingu.
+>>
+>> > [!primary]
+>> > 
+>> > Jeśli posiadasz opcję CDN sprzed 19/11/2020, możesz zamówić nową usługę Shared CDN klikając na `Aktualizuj CDN do wyższej`{.action} wersji.
+>>
+>> ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
+>>
+>> Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana kilka minut po jej opłaceniu.
+>>
 
 #### Jeśli opcja CDN jest już włączona na Twoim hostingu
 
@@ -509,15 +519,27 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
-
-Kliknij `Zatwierdź`{.action}, aby potwierdzić rezygnację.
-
-> [!warning]
->
-> Otrzymasz wiadomość e-mail z procedurą rezygnacji z GeoCache. Należy postępować zgodnie z podanymi instrukcjami, aby potwierdzić lub anulować swój wniosek. 
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Znajdź sekcję **Opcja CDN**. Kliknij `...`{.action} po prawej stronie, a następnie `Rezygnacja z GeoCache`{.action}.
+>>
+>> ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Kliknij `Zatwierdź`{.action}, aby potwierdzić rezygnację.
+>>
+>> > [!warning]
+>> >
+>> > Otrzymasz wiadomość e-mail z procedurą rezygnacji z GeoCache. Należy postępować zgodnie z podanymi instrukcjami, aby potwierdzić lub anulować swój wniosek.
+>>
 
 ### Sprawdzenie, czy GeoCache działa
 

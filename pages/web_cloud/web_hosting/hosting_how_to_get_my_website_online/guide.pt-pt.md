@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Sumário

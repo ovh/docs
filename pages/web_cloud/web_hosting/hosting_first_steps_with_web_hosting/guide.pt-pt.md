@@ -1,7 +1,7 @@
 ---
 title: "Como começar bem com o seu alojamento web"
 excerpt: 'Saiba como publicar um novo site através das nossas opções de "Módulos 1 clique", como criar um novo endereço de e-mail personalizado com o seu nome de domínio, tudo graças à nossa solução de alojamento web'
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 <style>

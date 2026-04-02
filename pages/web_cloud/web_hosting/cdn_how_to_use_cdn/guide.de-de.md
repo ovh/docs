@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseiten mit CDN beschleunigen"
 excerpt: "Diese Anleitung erklärt, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Ziel 
@@ -43,15 +43,25 @@ Jeder Server speichert einen Teil Ihrer Webseite im Cache, um die Funktion zu ge
 
 #### Wenn die CDN-Option nicht auf Ihrem Webhosting bestellt oder aktiviert wurde
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie auf `...`{.action} rechts neben "CDN-Option" danach auf `CDN bestellen`{.action} oder `Option aktivieren`{.action}, wenn die CDN-Option bereits in Ihrem Hosting enthalten ist.
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-> [!primary]
-> 
-> Wenn Sie eine CDN-Option von vor dem 19.11.2020 haben, können Sie das neue "Shared CDN" Angebot bestellen, indem Sie auf `CDN auf die neue Version updaten`{.action} klicken.
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
-
-Sie werden zum Bestellformular weitergeleitet. Sobald die Bestellung bezahlt wurde, ist Ihre Dienstleistung innerhalb weniger Minuten verfügbar.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Suchen Sie auf der angezeigten Seite den Eintrag **CDN-Option**. Klicken Sie auf `...`{.action} rechts daneben, dann auf `CDN bestellen`{.action} oder `Option aktivieren`{.action}, wenn die CDN-Option bereits in Ihrem Hosting enthalten ist.
+>>
+>> > [!primary]
+>> > 
+>> > Wenn Sie eine CDN-Option von vor dem 19.11.2020 haben, können Sie das neue "Shared CDN" Angebot bestellen, indem Sie auf `CDN auf die neue Version updaten`{.action} klicken.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
+>>
+>> Sie werden zum Bestellformular weitergeleitet. Sobald die Bestellung bezahlt wurde, ist Ihre Dienstleistung innerhalb weniger Minuten verfügbar.
+>>
 
 #### Wenn die CDN Option bereits für Ihr Webhosting aktiviert ist
 
@@ -509,15 +519,27 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 Sie können hiermit die CDN-Option für Ihr gesamtes Webhosting kündigen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie auf `...`{.action} rechts neben "CDN-Option" und danach auf `CDN kündigen`{.action}.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
-
-Bestätigen Sie die Kündigung, indem Sie auf `Bestätigen`{.action} klicken.
-
-> [!warning]
->
-> Sie erhalten eine E-Mail mit dem Verfahren zum Schließen Ihres CDN. Befolgen Sie die Anweisungen, um die Aktion zu bestätigen oder abzubrechen. 
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Suchen Sie den Eintrag **CDN-Option**. Klicken Sie auf `...`{.action} rechts daneben und danach auf `CDN kündigen`{.action}.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Bestätigen Sie die Kündigung, indem Sie auf `Bestätigen`{.action} klicken.
+>>
+>> > [!warning]
+>> >
+>> > Sie erhalten eine E-Mail mit dem Verfahren zum Schließen Ihres CDN. Befolgen Sie die Anweisungen, um die Aktion zu bestätigen oder abzubrechen.
+>>
 
 ### Überprüfen, ob Ihr CDN in Betrieb ist
 

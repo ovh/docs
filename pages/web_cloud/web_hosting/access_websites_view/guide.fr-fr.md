@@ -1,12 +1,12 @@
 ---
 title: "Visualiser et gérer tous ses sites web depuis son espace client OVHcloud"
 excerpt: "Découvrez comment consulter et gérer l'ensemble de vos sites web depuis votre espace client OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Objectif
 
-La vue `Sites internet` permet de centraliser l'affichage de l'ensemble de vos sites web, indépendamment de leur hébergement. Elle facilite le suivi des fonctionnalités activées pour chaque site web et donne un accès rapide aux actions essentielles. Cette interface est particulièrement utile pour les agences ou les professionnels du web qui gèrent un grand nombre de domaines répartis sur plusieurs hébergements.
+L'interface présentée dans ce guide permet de centraliser l'affichage de l'ensemble de vos sites web, indépendamment de leur hébergement. Elle facilite le suivi des fonctionnalités activées pour chaque site web et donne un accès rapide aux actions essentielles. Cette interface est particulièrement utile pour les agences ou les professionnels du web qui gèrent un grand nombre de domaines répartis sur plusieurs hébergements.
 
 **Découvrez comment visualiser et gérer tous vos sites web depuis votre espace client.**
 
@@ -14,126 +14,54 @@ La vue `Sites internet` permet de centraliser l'affichage de l'ensemble de vos s
 
 - Posséder une [offre d'hébergement web](/links/web/hosting).
 
-<!-- CP-NAV-START:web-hosting -->
+<!-- CP-NAV-START:web-website-view -->
 ---
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+- **Lien direct :** [Sites internet](/links/control-panel/web-website-view)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Sites internet`{.action} > Sélectionnez votre site web
 
 ---
-<!-- CP-NAV-END:web-hosting -->
+<!-- CP-NAV-END:web-website-view -->
 
 ## En pratique
 
-### Accéder à la vue `Sites internet`
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans le menu de gauche, cliquez sur `Sites internet`{.action}. Un tableau s'affiche, regroupant l'ensemble de vos sites web et de leurs principales informations.
-
-![vue_sites_internet](images/website_view_tab.png){.thumbnail}
-
-#### Nom de Domaine
-
-Affiche le nom de domaine principal du site web, tel qu’il est configuré dans l’onglet « Mes sites » de votre hébergement.
-
-Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
-
-#### Diagnostic
-
-Vous informe si votre nom de domaine pointe correctement vers l'hébergement web associé. Pour chaque nom de domaine, trois résultats de diagnostic sont possibles :
-
-- `A/AAAA` vert : Les enregistrements A et/ou AAAA de votre nom de domaine pointent correctement vers l'adresse IP de votre hébergement web.
-- `A/AAAA` jaune : Les enregistrements A et/ou AAAA de votre nom de domaine pointent vers une adresse IP différente de celle de votre hébergement web.
-- `A/AAAA` gris : Aucun enregistrement A ou AAAA n'est configuré, votre nom de domaine ne pointe vers aucune adresse IP.
-
-Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
-
-Pour plus de détails concernant le diagnostic, consultez notre guide « [Comment vérifier l'association « nom de domaine / site web » ?](/pages/web_cloud/web_hosting/my_websites_diagnosis) ».
-
-#### Dossier racine
-
-Indique le répertoire de votre hébergement (par exemple : www, app, public_html, etc.) vers lequel le domaine pointe.
-
-Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
-
-#### Nom du service
-
-Nom technique du service d’hébergement web sur lequel le site est configuré, sous la forme `abcdv.clusterXX.hosting.ovh.net`.
-
-Au clic, vous êtes redirigé vers l'onglet `Informations générales`{.action} de l'hébergement concerné.
-
-#### Nom d'affichage
-
-Alias personnalisé défini par le client pour mieux identifier son service dans l'espace client.
-
-Au clic, vous êtes redirigé vers l'onglet `Informations générales`{.action} de l'hébergement concerné.
-
-#### Offre
-
-Affiche le type d’offre associée à l’hébergement : Starter, Perso, Pro ou Performance.
-
-Au clic, vous êtes redirigé vers l'onglet `Informations générales`{.action} de l'hébergement concerné.
-
-#### Git
-
-Affiche le statut de l’intégration Git sur le site web :
-
-- Actif : Le dépôt Git est connecté.
-- Inactif : Le dépôt Git n'est pas activé.
-- En cours : Le dépôt Git est en cours de configuration.
-- Erreur : Une erreur est détectée dans la configuration du dépôt Git.
-
-Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
-
-#### Logs séparés
-
-Indique si un espace de logs est activé sur le domaine sélectionné.
-
-Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
-
-Consultez notre page « [Suivez et analysez le trafic de vos sites web](/links/web/hosting-traffic-analysis) » pour plus d'informations.
-
-> [!warning]
->
-> Les logs séparés ne peuvent pas être activés pour un nom de domaine externe. Cette option est uniquement disponible pour les domaines enregistrés chez OVHcloud.
->
-
-#### CDN
-
-Affiche le statut du CDN (**C**ontent **D**elivery **N**etwork) sur le nom de domaine :
-
-- Actif : Le CDN est en fonctionnement.
-- Inactif : Le CDN est désactivé.
-- N/A : Non applicable (offre non compatible).
-
-Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
-
-Le CDN permet de mettre en cache des éléments statiques de votre site web, comme des images. Consultez notre page « [Shared CDN](/links/web/hosting-options-cdn) » pour plus d'informations.
-
-#### SSL
-
-Indique si le SSL est activé ou non sur le nom de domaine concerné.
-
-Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
-
-Le SSL vous permet de bénéficier d'une connexion sécurisée (**https://**) sur le nom de domaine sélectionné. Consultez notre page « [Sécurisez efficacement votre site web OVHcloud avec un certificat SSL premium](/links/web/hosting-options-ssl) » pour plus d'informations.
-
-#### Firewall
-
-Indique si le pare-feu applicatif est activé ou non sur le domaine.
-
-Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
-
-Consultez notre page « [Les options indispensables pour votre hébergement web](/links/web/hosting-options) » pour plus d'informations.
-
-#### Boost
-
-Indique si l'option boost est activée ou non sur votre hébergement web. L'option Boost permet d'augmenter temporairement les ressources CPU et RAM de votre hébergement web.
-
-Au clic, vous êtes redirigé vers l'onglet `Booster mon offre`{.action} de l'hébergement concerné.
-
-Pour plus de détails concernant l'option Boost, consultez la section « Booster temporairement votre hébergement Performance » de notre guide « [Hébergement web - Comment faire évoluer son offre](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) ».
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Sites internet](/links/control-panel/web-website-view). Un tableau s’affiche, regroupant l’ensemble de vos sites web et de leurs principales informations.
+>>
+>> ![vue_sites_internet](images/website_view_tab.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Le tableau présente les colonnes suivantes :
+>>
+>> - **Nom de domaine** : affiche le nom de domaine principal du site web, tel que configuré dans l’onglet « Mes sites » de votre hébergement.
+>> - **Diagnostic** : vous informe si votre nom de domaine pointe correctement vers l’hébergement web associé. Pour plus de détails, consultez notre guide « [Comment vérifier l’association « nom de domaine / site web » ?](/pages/web_cloud/web_hosting/my_websites_diagnosis) ».
+>> - **Dossier racine** : indique le répertoire de votre hébergement (www, app, public_html, etc.) vers lequel le domaine pointe.
+>> - **Nom du service** : nom technique du service, sous la forme `FTPlogin.clusterXXX.hosting.ovh.net`.
+>> - **Nom d’affichage** : alias personnalisé pour identifier votre service dans l’espace client.
+>> - **Offre** : type d’offre associée à l’hébergement : Starter, Perso, Pro ou Performance.
+>> - **Git** : affiche le statut de l’intégration Git sur le site web. Pour plus de détails, consultez notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) ».
+>> - **Logs séparés** : indique si un espace de logs est activé sur le domaine (domaines OVHcloud uniquement). Pour plus d’informations, consultez notre page « [Suivez et analysez le trafic de vos sites web](/links/web/hosting-traffic-analysis) ».
+>> - **CDN** : affiche le statut du CDN : Actif / Inactif / N/A (offre non compatible). Pour plus d’informations, consultez notre page « [Shared CDN](/links/web/hosting-options-cdn) ».
+>> - **SSL** : indique si le SSL est activé, permettant une connexion sécurisée (**https://**). Pour plus d’informations, consultez notre page « [Sécurisez votre site web avec un certificat SSL premium](/links/web/hosting-options-ssl) ».
+>> - **Firewall** : indique si le pare-feu applicatif est activé sur le domaine. Pour plus d’informations, consultez notre page « [Les options essentielles pour votre hébergement web](/links/web/hosting-options) ».
+>> - **Boost** : indique si l’option Boost est activée, permettant d’augmenter temporairement les ressources CPU et RAM. Pour plus de détails, consultez notre guide « [Hébergement web - Comment faire évoluer son offre](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) ».
+>>
+>> Au clic sur un élément du tableau, vous êtes redirigé vers l’[hébergement web](/links/control-panel/web-hosting) concerné. Plus précisément :
+>>
+>> - Les colonnes **Nom de domaine**, **Diagnostic**, **Dossier racine**, **Git**, **Logs séparés**, **CDN**, **SSL** et **Firewall** redirigent vers l’onglet `Mes sites`{.action}.
+>> - Les colonnes **Nom du service**, **Nom d’affichage** et **Offre** redirigent vers l’onglet `Informations générales`{.action}.
+>> - La colonne **Boost** redirige vers l’onglet `Booster mon offre`{.action}.
+>>
+>> > [!warning]
+>> > Les logs séparés ne peuvent pas être activés pour un nom de domaine externe. Cette option est uniquement disponible pour les domaines enregistrés chez OVHcloud.
+>>
 
 ## Aller plus loin
 

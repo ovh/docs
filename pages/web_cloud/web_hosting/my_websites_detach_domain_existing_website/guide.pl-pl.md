@@ -1,7 +1,7 @@
 ---
 title: "Jak odłączyć nazwę domeny od istniejącej strony internetowej ?"
 excerpt: "Dowiedz się, jak odłączyć nazwę domeny lub poddomeny od istniejącej strony internetowej na Twoim hostingu"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Wprowadzenie

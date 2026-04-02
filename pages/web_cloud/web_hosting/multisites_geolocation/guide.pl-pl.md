@@ -1,7 +1,7 @@
 ---
 title: "Jak geolokalizować stronę WWW w danym kraju?"
 excerpt: "Dowiedz się, jak zlokalizować stronę WWW, korzystając z geolokalizowanych adresów IP dostępnych w ofercie hostingu współdzielonego OVHcloud"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Wprowadzenie

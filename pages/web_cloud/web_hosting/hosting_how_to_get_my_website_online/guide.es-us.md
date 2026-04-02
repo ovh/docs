@@ -1,7 +1,7 @@
 ---
 title: "Publicar un sitio web en internet"
 excerpt: "Descubra cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Objetivo

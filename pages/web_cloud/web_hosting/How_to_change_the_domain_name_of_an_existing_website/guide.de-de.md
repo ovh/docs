@@ -1,7 +1,7 @@
 ---
 title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Ziel

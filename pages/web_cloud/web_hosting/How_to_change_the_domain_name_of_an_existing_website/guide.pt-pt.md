@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Como alterar o domínio de um site existente"
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
-updated: 2026-03-24
+updated: 2026-04-02
 ---
 
 ## Objetivo
