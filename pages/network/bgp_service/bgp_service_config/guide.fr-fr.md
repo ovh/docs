@@ -26,16 +26,16 @@ Le protocole Border Gateway Protocol (BGP) vous permet de construire des infrast
 
 Avant de configurer le service BGP, veuillez prendre connaissance des capacités et contraintes suivantes :
 
-- **Un service BGP par région** : un seul service BGP peut être déployé par région disponible (hors régions 3-AZ, APAC et US actuellement).
-- **Plusieurs blocs IP** : il est possible d'utiliser plusieurs blocs IPv4 et IPv6 par région.
+- **Un service BGP par région** : Un seul service BGP peut être déployé par région disponible (hors régions 3-AZ, APAC et US actuellement).
+- **Plusieurs blocs IP** : Il est possible d'utiliser plusieurs blocs IPv4 et IPv6 par région.
 - **Tailles de blocs utilisables** : /24 à /30 pour l'IPv4, /56 pour l'IPv6.
-- **Pile IP** : les configurations IPv4 seul ou IPv4+IPv6 sont prises en charge. L'IPv6 seul n'est pas pris en charge actuellement.
+- **Pile IP** : Les configurations IPv4 seul ou IPv4+IPv6 sont prises en charge. L'IPv6 seul n'est pas pris en charge actuellement.
 - **Blocs d'IP dédiés** : Les blocs d'adresses Additional IP utilisés par un service BGP ne doivent pas être partagés avec d'autres services OVHcloud, tels que les serveurs dédiés, les instances Public Cloud, etc.
-- **Nombre maximum d'annonces par pair BGP** : jusqu'à 32 préfixes IPv4 et 32 préfixes IPv6 par client.
-- **Tailles d'annonces** : pour l'IPv4, tout préfixe entre /24 et /32 peut être annoncé. Pour l'IPv6, seuls les préfixes /56 et /64 peuvent être annoncés.
-- **BFD** : le protocole Bidirectional Forwarding Detection (BFD) est disponible avec des intervalles fixes de 500ms et un multiplicateur 8x, afin accélérer le temps de convergence.
+- **Nombre maximum d'annonces par pair BGP** : Jusqu'à 32 préfixes IPv4 et 32 préfixes IPv6 par client.
+- **Tailles d'annonces** : Pour l'IPv4, tout préfixe entre /24 et /32 peut être annoncé. Pour l'IPv6, seuls les préfixes /56 et /64 peuvent être annoncés.
+- **BFD** : Le protocole Bidirectional Forwarding Detection (BFD) est activée par défaut du côté d'OVHcloud, avec des paramètres fixes (intervalle de 500ms, multiplicateur de 8). Afin d'utiliser le protocole BFD, vous devez configurer votre service BGP avec ces mêmes paramètres.
 - **Sessions BGP** : 4 sessions BGP par client (4 IPv4 + 4 IPv6). Au-delà de 4 hôtes en peering BGP, le déploiement d'un Route Server est nécessaire (voir le cas d'utilisation [Configuration BGP avancée utilisant des Route Servers](#cas-dutilisation-configuration-bgp-avancée-utilisant-des-route-servers-rs)).
-- **Hôtes** : jusqu'à 10 hôtes par client.
+- **Hôtes** : Jusqu'à 10 hôtes par client.
 
 ## En pratique
 

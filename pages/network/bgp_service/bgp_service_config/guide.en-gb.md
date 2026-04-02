@@ -33,7 +33,7 @@ Before setting up BGP Service, be aware of the following capabilities and constr
 - **Dedicated IP blocks**: Additional IP blocks used by a BGP Service cannot be shared with other OVHcloud services, such as Dedicated Servers, Public Cloud instances, etc.
 - **Maximum announcements per BGP peer**: Up to 32 IPv4 prefixes and 32 IPv6 prefixes per client.
 - **Announcement sizes**: For IPv4, any prefix between /24 and /32 can be announced. For IPv6, only /56 and /64 prefixes can be announced.
-- **BFD support**: Bidirectional Forwarding Detection (BFD) is available with fixed 500ms intervals and an 8x multiplier to accelerate convergence time.
+- **BFD support**: Bidirectional Forwarding Detection (BFD) is enabled by default on the OVHcloud side, with fixed settings (500ms interval, 8x multiplier). In order to use the BFD protocol, you must configure your BGP Service to match these values.
 - **BGP sessions**: 4 BGP sessions per client (4 IPv4 + 4 IPv6). If you need more than 4 BGP peering hosts, you will need to deploy a Route Server (see the [Advanced BGP configuration](#use-case-advanced-bgp-configuration-using-route-servers-rs) use case).
 - **Hosts**: Up to 10 hosts per client.
 
@@ -55,14 +55,14 @@ If you need to import your IPs, you need to use our BYOIP service. Please follow
 
 ### Step 3: Configure your vRack
 
-You need to have created a vRack, which is the private network where the peering between your servers and the BGP service will take place.
+You need to have created a vRack, which is the private network where the peering between your servers and the BGP Service will take place.
 
 The vRack must contain the servers that will participate in the BGP peering.
 
 > [!warning]
 >
 > **Important Notice**:
-> - During the alpha period, the BGP service is only available within 1-AZ regions.
+> - During the alpha period, the BGP Service is only available within 1-AZ regions.
 > - The IP block used with BGP Service must **NOT** be attached or associated to the vRack. The IP block is announced via the BGP sessions, not through vRack association.
 >
 
@@ -73,7 +73,7 @@ The vRack must contain the servers that will participate in the BGP peering.
 
 ### Step 4: Provide configuration parameters of your BGP Service
 
-You need to provide us with the following parameters so that we can configure the BGP service on the OVHcloud side:
+You need to provide us with the following parameters so that we can configure the BGP Service on the OVHcloud side:
 
 | Parameter	| Value (example) | Description | Comment |
 | :--- | :--- | :--- | :--- |
