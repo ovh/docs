@@ -1,7 +1,7 @@
 ---
 title: PuTTY für SSH-Verbindungen und Authentifizierung verwenden
 excerpt: Erfahren Sie hier, wie Sie mit der SSH Client-Software PuTTY auf Cloud Server oder Webhostings zugreifen und SSH-Schlüssel verwalten können
-updated: 2024-11-11
+updated: 2026-04-01
 ---
 
 
@@ -35,17 +35,6 @@ details[open]>summary::before {
 >
 > Wir empfehlen Ihnen, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten.
 >
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

@@ -1,7 +1,7 @@
 ---
 title: "Technical specifications of Web Hostings"
 excerpt: "Find out details about the technical capabilities of your Web Hosting plan"
-updated: 2023-12-08
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -14,37 +14,20 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Instructions
 
 > [!warning]
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 > 
 
 ### FTP
 
 - Use **passive mode** for FTP connections. Make sure that your script or FTP client is configured accordingly.
 
-- If you encounter the access error "530 login authentication failed" when connecting to your FTP storage space: Make sure that the access information to your FTP space is correct. To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that opens, click on the `FTP - SSH`{.action} tab.
-
-It will contain all of the information required to log in to your FTP storage space, with the exception of the password.
-
-Passwords are never displayed, but they can be changed.
-
-You can find more information on this in our guide on "[Logging in to your Web Hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)".
+- If you encounter the access error "530 login authentication failed" when connecting to your FTP storage space, make sure that the access information to your FTP space is correct. Please refer to our guide "[Logging in to your Web Hosting plan's FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)" to find all the information you need to log in to your FTP storage space. Passwords are never displayed, but they can be changed.
 
 ### Emails <a name="emails"></a>
 
@@ -52,9 +35,9 @@ In order to guarantee a good quality of service on the entire shared infrastruct
 
 Over a rolling period of 3600 seconds (1 hour), your Web Hosting plan will allow you to send the following email quotas:
 
-|Offers|Starter|Personal|Pro|Performance|
-|---|---|---|---|---|
-|Maximum number of emails sent per hour and per service|20|100|200|2000|
+|Offers|Free 100M Hosting|Starter|Personal|Pro|Performance|
+|---|---|---|---|---|---|
+|Maximum number of emails sent per hour and per service|10|20|100|200|2000|
 
 > [!primary]
 >
@@ -79,7 +62,7 @@ You can also order additional [Web Cloud Databases](/links/web/databases) soluti
 - *max_connections*: 100 by default, with the option of increasing to 200.
 - *max_user_connections*: 50 by default, with the option of increasing to 200.
 
-To find out more, read the details of our [Web Hosting plans](/links/web/hosting) and our guide “[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)”.
+To find out more, read the details of our [Web Hosting plans](/links/web/hosting) and our guide "[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Connections from an external server
 
@@ -89,7 +72,7 @@ For security reasons, it is not possible to connect from an external server to a
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Only [Web Cloud Databases](/links/web/databases) database servers allow external servers to connect to them. This is because you have previously authorized your external server’s IP address on your database server. If necessary, please refer to our guide on "[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Only [Web Cloud Databases](/links/web/databases) database servers allow external servers to connect to them. This is because you have previously authorized your external server's IP address on your database server. If necessary, please refer to our guide on "[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Shared SQL server variables
 
@@ -154,6 +137,8 @@ For example, you can use the function *gethostbyaddr()* to retrieve the hostname
 
 Find the libraries, languages and versions available for your Web Hosting plan on this page: <https://webhosting-infos.hosting.ovh.net>.
 
+For the technical specifications of the Cloud Web solution, please visit this page: <https://cloudweb-infos.hosting.ovh.net/>.
+
 ### Automatic backup information <a name="backup"></a>
 
 > [!warning]
@@ -169,7 +154,7 @@ All of our Web Hosting plans located in:
 
 - Beauharnois (BHS), Canada have automatic backups on D-1 / D-2 / D-3 / D-7 / D-14. These backups are also stored in the Beauharnois (BHS) data centre in Canada.
 
-Find out how to [log in to your Web Hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) or [restore your Web Hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup) in our documentation.
+Find out how to [log in to your Web Hosting plan's FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) or [restore your Web Hosting plan's FTP storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup) in our documentation.
 
 #### Database/SQL
 
@@ -180,7 +165,7 @@ Find out how to [log in to your Web Hosting plan’s FTP storage space](/pages/w
 
 For shared databases (included in your Web Hosting plan) or database servers (Web Cloud Databases) offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. These backups are accessible via the [OVHcloud Control Panel](/links/manager) or via the [OVHcloud API](/links/api). Backups are also stored on another infrastructure. This data is replicated in a data centre in Strasbourg (SBG). The backup retention policy is 30 days.
 
-Find out how to [Retrieve a backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export) in our documentation.
+Find out how to [Retrieve a backup of a Web Hosting plan's database](/pages/web_cloud/web_hosting/sql_database_export) in our documentation.
 
 #### Email
 
@@ -227,15 +212,15 @@ In order to be used as part of OVHcloud Web Statistics, the aforementioned data 
 
 ## Go further <a name="go-further"></a>
 
-[Log in to your Web Hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
+[Log in to your Web Hosting plan's FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Activating HTTPS on your website with an SSL certificate](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-[Optimizing your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
+[Optimizing your website's performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-[Restoring your Web Hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup)
+[Restoring your Web Hosting plan's FTP storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
-[Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
+[Retrieving the backup of a Web Hosting plan's database](/pages/web_cloud/web_hosting/sql_database_export)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

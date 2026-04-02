@@ -1,7 +1,7 @@
 ---
 title: "Administrer plusieurs sites web WordPress avec le plugin MainWP"
 excerpt: "Découvrez comment gérer plusieurs sites web WordPress depuis un seul outil grâce au plugin MainWP"
-updated: 2024-01-24
+updated: 2026-04-01
 ---
 
 ## Objectif
@@ -16,7 +16,7 @@ Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous 
 **Ce guide vous explique comment utiliser le dashboard MainWP pour administrer plusieurs sites web WordPress.**
 
 > [!primary]
-> Dans ce guide, nous avons choisi le plugin MainWP. D'autres solutions analogues existent, vous êtes bein entendu libre de choisir le plugin que vous souhaitez.
+> Dans ce guide, nous avons choisi le plugin MainWP. D'autres solutions analogues existent, vous êtes bien entendu libre de choisir le plugin que vous souhaitez.
 > 
 
 ## Prérequis
@@ -28,25 +28,12 @@ Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du plugin MainWP](https://mainwp.com/support/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du plugin MainWP](https://mainwp.com/support/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
-Si vous n'êtes pas déjà connecté, accédez à l'interface d'administration de votre module en un clic sur lequel vous voulez installer le dashboard MainWP.
-
-![mainWP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/access-the-module-s-administration-interface.png){.thumbnail}
+Si vous n'êtes pas déjà connecté, accédez à l'interface d'administration du WordPress sur lequel vous voulez installer le dashboard MainWP.
 
 Entrez votre login et votre mot de passe pour vous connecter. Le dashboard WordPress s'affiche.
 
@@ -86,7 +73,7 @@ Dans le menu principal à gauche, cliquez sur `Sites`{.action}, puis sur `Add Ne
 
 Renseignez l'URL du site enfant que voulez connecter au dashboard MainWP. Juste en dessous, sélectionnez le bouton pour indiquer que vous avez bien installé et activé le plugin MainWP Child sur votre site enfant. Les deux nouveaux champs suivants s'affichent :
 
-- `Administrator username` (nom d'administrateur) : connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Sélectionnez l'hébergement web concerné et cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant à votre module en un clic. Votre nom d'administrateur se trouve dans la colonne `Login`{.action}.
+- `Administrator username` (nom d'administrateur) : renseignez votre identifiant de connexion à l'interface d'administration WordPress.
 - `Site title` (titre du site) : renseignez la valeur que vous souhaitez. Si vous connectez de nombreux sites web enfants, pensez à renseigner un titre de site explicite.
 
 ![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/add_site.png){.thumbnail}

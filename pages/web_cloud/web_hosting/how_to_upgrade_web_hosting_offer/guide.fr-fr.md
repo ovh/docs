@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment faire évoluer son offre"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement web OVHcloud"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Objectif
@@ -140,7 +140,16 @@ Cette action vous permettra de commander une offre Web Cloud Databases indépend
 Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre offre Web Cloud Databases avant de passer sur l'offre *Pro* : 
 
 1. Sauvegardez vos données en suivant les instructions de ce [guide](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](/links/manager). Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez en haut à droite sur votre nom puis sur `Mes offres & services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne de l'offre Web Cloud Databases/SQL Privé concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
+2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](/links/manager). Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Mes offres & services](/links/control-panel/billing-services).
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le bouton `...`{.action} à droite de la ligne de l'offre Web Cloud Databases/SQL Privé concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### 3 - Espace de stockage FTP
 
@@ -167,39 +176,80 @@ Pour vérifier le quota d'espace de stockage FTP utilisé sur votre hébergement
 
 Vérifiez que votre nouvelle offre propose un nombre suffisant d'adresses e-mail disponibles. Dans le cas contraire, supprimez les adresses e-mail inutilisées après avoir [sauvegardé](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) leur contenu si nécessaire.
 
-Si vous souhaitez conserver le même nombre de boîtes e-mail et **avant de passer votre hébergement web sur une offre inférieure**, il est également possible de commander une nouvelle offre de messagerie **MX Plan**. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `E-mails`{.action} puis sélectionnez l'offre e-mail concernée. Sur la page qui s'affiche, dans l'encadré `Abonnement`{.action} et à droite de la mention `Offre`{.action}, cliquez sur le bouton  `...`{.action} puis sur `Changer d'offre`{.action}.
+Si vous souhaitez conserver le même nombre de boîtes e-mail et **avant de passer votre hébergement web sur une offre inférieure**, il est également possible de commander une nouvelle offre de messagerie **MX Plan**. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [MX Plan](/links/control-panel/web-mx-plan), puis choisissez le domaine concerné.
+>>
+> **Étape 2**
+>>
+>> Dans l'encadré **Abonnement** et à droite de la mention **Offre**, cliquez sur le bouton `...`{.action} puis sur `Changer d'offre`{.action}.
+>>
+>> ![Changement d'offre MX Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
 
->[!primary]
->
-> Si le bouton `...`{.action} est indisponible sur votre offre e-mail, vous pouvez délier l'offre e-mail de votre hébergement web. Pour cela, restez connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page `Informations générales`{.action} qui s'affiche et dans l'encadré `Configuration`{.action}, cliquez sur le bouton `...`{.action} à droite de la mention `Adresses e-mails`{.action} puis sur `Délier mon option e-mail`{.action}.
->
+Si le changement d'offre est indisponible sur votre offre e-mail, c'est que celle-ci est liée à un hébergement web.
+
+Vous pouvez délier l'offre e-mail de votre hébergement web. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Dans l'encadré **Configuration**, cliquez sur le bouton `...`{.action} à droite de la mention **Adresses e-mails** puis sur `Délier mon option e-mail`{.action}.
 
 #### 5 - Mailing lists
 
 La fonctionnalité [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) est en option sur les hébergements [Perso](/links/web/hosting-personal-offer).
 
-Pour passer votre hébergement web sur une offre [Perso](/links/web/hosting-personal-offer), vous devrez dans un premier temps supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](/links/manager).
+Pour passer votre hébergement web sur une offre [Perso](/links/web/hosting-personal-offer), vous devrez dans un premier temps supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](/links/manager). Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `E-mails`{.action} puis sélectionnez l'offre e-mail concernée. Sur la page qui s'affiche, dans l'encadré `Abonnement`{.action} et à droite de la mention `Offre`{.action}, cliquez sur le bouton  `...`{.action} puis sur `Changer d'offre`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [MX Plan](/links/control-panel/web-mx-plan), puis choisissez le domaine concerné.
+>>
+> **Étape 2**
+>>
+>> Dans l'encadré **Abonnement** et à droite de la mention **Offre**, cliquez sur le bouton `...`{.action} puis sur `Changer d'offre`{.action}.
 
->[!primary]
->
-> Si le bouton `...`{.action} est indisponible sur votre offre e-mail, vous pouvez délier l'offre e-mail de votre hébergement web. Pour cela, restez connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page `Informations générales`{.action} qui s'affiche et dans l'encadré `Configuration`{.action}, cliquez sur le bouton `...`{.action} à droite de la mention `Adresses e-mails`{.action} puis sur `Délier mon option e-mail`{.action}.
->
+Si le changement d'offre est indisponible sur votre offre e-mail, c'est que celle-ci est liée à un hébergement web.
+
+Vous pouvez délier l'offre e-mail de votre hébergement web. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Dans l'encadré **Configuration**, cliquez sur le bouton `...`{.action} à droite de la mention **Adresses e-mails** puis sur `Délier mon option e-mail`{.action}.
 
 #### 6 - Utilisateurs FTP
 
 Assurez-vous que la nouvelle offre propose suffisamment d'utilisateurs FTP.
 
-Le nombre d'utilisateurs FTP est visible dans votre espace client OVHcloud. Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}.
+Le nombre d'utilisateurs FTP est visible dans votre espace client OVHcloud. Pour le vérifier, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-Dans la partie inférieure de la page qui apparaît, un tableau liste tous les utilisateurs FTP créés pour votre hébergement web.
-
-Pour supprimer des utilisateurs FTP, cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP que vous souhaitez supprimer puis sur `Supprimer`{.action}.
-
-![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail} 
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. Dans la partie inférieure de la page, un tableau liste tous les utilisateurs FTP créés pour votre hébergement web.
+>>
+> **Étape 3**
+>>
+>> Pour supprimer des utilisateurs FTP, cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Supprimer`{.action}.
+>>
+>> ![Suppression d'un utilisateur FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
 
 #### Finalisation
 
