@@ -1,7 +1,7 @@
 ---
 title: BGP Service configuration
 excerpt: By using BGP Service, you gain full control over your routing policies and network resilience. Follow this guide to set up and optimize your BGP sessions
-updated: 2025-03-31
+updated: 2026-04-02
 ---
 
 ## Objective
@@ -21,6 +21,20 @@ BGP Service allows you to build highly available infrastructures by running stan
 - A [vRack private network](/links/network/vrack)
 - Knowledge in IP networks and BGP routing protocol
 - Knowledge in Linux networking
+
+## Service capabilities and limits
+
+Before setting up BGP Service, be aware of the following capabilities and constraints:
+
+- **One BGP Service per region**: You can deploy one BGP Service per available region (excluding 3-AZ regions and US regions for now).
+- **Multiple IP blocks**: You can use multiple IP blocks per region for IPv4.
+- **Usable block sizes**: /24 to /30 for IPv4, /56 for IPv6.
+- **IP stack support**: IPv4-only or IPv4+IPv6 configurations are supported. IPv6-only is not supported at this time.
+- **Maximum announcements per BGP peer**: Up to 32 IPv4 prefixes and 32 IPv6 prefixes per client.
+- **Announcement sizes**: For IPv4, any prefix between /24 and /32 can be announced. For IPv6, only /56 and /64 prefixes can be announced.
+- **BFD support**: Bidirectional Forwarding Detection (BFD) is available with configurable timers to accelerate convergence time.
+- **BGP sessions**: 4 BGP sessions per client (4 IPv4 + 4 IPv6). If you need more than 4 BGP peering hosts, you will need to deploy a Route Server (see the [Advanced BGP configuration](#use-case-advanced-bgp-configuration-using-route-servers-rs) use case).
+- **Hosts**: Up to 10 hosts per client.
 
 ## Instructions
 
@@ -46,7 +60,14 @@ The vRack must contain the servers that will participate in the BGP peering.
 
 > [!warning]
 >
-> **Important**: the vRack must contain only servers in one given AZ of a region. As during the alpha period, the BGP service is only available on 1-AZ regions, this simply means that the vRack must contain only servers in one given region.
+> **Important Notice**:
+> - The vRack must contain only servers in one given AZ of a region. As during the alpha period, the BGP service is only available on 1-AZ regions, this simply means that the vRack must contain only servers in one given region.
+> - The IP block used with BGP Service must **NOT** be attached or associated to the vRack. The IP block is announced via the BGP sessions, not through vRack association.
+>
+
+> [!primary]
+>
+> If you plan to use BGP Service in multiple locations, it is recommended to use a **separate vRack for each location**. This avoids potential routing conflicts and simplifies your network management.
 >
 
 ### Step 4: Provide configuration parameters of your BGP Service
@@ -87,7 +108,9 @@ You now are able to setup the BGP sessions on your side. Below is a guide that w
 
 ## Use case: Basic BGP Configuration - Load Balancing using BGP ECMP
 
-Here is a simple architecture that allows you to perform load balancing of your traffic on 3 hosts:
+This design is suitable for setups with **up to 4 BGP peering hosts**, as the number of BGP sessions on the OVHcloud side is limited to 4. If you need more than 4 hosts, use the [Advanced BGP configuration using Route Servers](#advanced-bgp-configuration-using-route-servers-rs) use case described below.
+
+Below is a simple architecture that allows you to perform load balancing of your traffic on 3 hosts:
 
 ![BGPaaS Basic Architecture](images/bgpaas_basic-peering.png){.thumbnail}
 
@@ -270,7 +293,8 @@ We'll make sure the BGP connectivity and IP announcements are OK from our side.
 
 ## Use Case: Advanced BGP configuration using Route Servers (RS)
 
-If you want to use more than 4 hosts with BGP Service, you need to deploy and manage a Route Server (RS). The RS must deployed on a dedicated host.
+If you want to use more than 4 hosts with BGP Service, you need to deploy and manage a Route Server (RS). The RS must be deployed on a dedicated host. This design allows you to scale **up to 10 hosts/nexthops**. The Route Server can be deployed either in-path or out-of-path, depending on your architecture requirements.
+
 An RS peers with Edges and Hosts, establishing two sessions per peer (one for IPv4 and one for IPv6).
 
 Here is an overview of the system:
@@ -606,13 +630,27 @@ When your setup is done and after conducting basic tests, you should notify us v
 
 We'll make sure the BGP connectivity and IP announcements are OK from our side.
 
-## Limitations
+## Best practices for production
 
-The number of peers on OVHcloud side is limited to 4. If you need more than 4 peers, you will need to install a route server on your infrastructure in order to redistribute routes to your hosts.
+### Maintenance of a host without traffic interruption
 
-- **BGP sessions:** 4 BGP sessions per client (4 IPv4 + 4 IPv6)
-- **Prefixes:** up to 32 IPv4 prefixes and 32 IPv6 prefixes per client
--  **Hosts:** 10 hosts per client
+To offload a server for maintenance (e.g. OS update, hardware intervention) without traffic interruption, you can use `BGP graceful shutdown` (RFC 8326). This mechanism signals peers to deprioritize routes toward the host *before* the session goes down, allowing traffic to drain to the remaining hosts without packet loss.
+
+With FRR, you can initiate a `graceful shutdown` on the host to be maintained:
+
+```bash
+vtysh -c 'configure terminal' -c 'router bgp <CUSTOMER_ASN>' -c 'bgp graceful-shutdown'
+```
+
+This causes FRR to tag all advertised routes with the `GRACEFUL_SHUTDOWN` community, signalling peers to prefer alternative paths. Once traffic has drained (verify by checking route tables on the other hosts or the Route Server), you can safely proceed with maintenance.
+
+To restore the host after maintenance, disable `graceful shutdown`:
+
+```bash
+vtysh -c 'configure terminal' -c 'router bgp <CUSTOMER_ASN>' -c 'no bgp graceful-shutdown'
+```
+
+The host will resume advertising routes normally and start receiving traffic again.
 
 ## Available Regions
 

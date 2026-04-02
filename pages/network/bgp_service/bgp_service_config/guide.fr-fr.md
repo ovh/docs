@@ -1,7 +1,7 @@
 ---
 title: Configuration du service BGP
 excerpt: En utilisant le service BGP, vous bénéficiez d'un contrôle total sur vos politiques de routage et la résilience du réseau. Suivez ce guide pour configurer et optimiser vos sessions BGP
-updated: 2025-03-31
+updated: 2026-04-02
 ---
 
 ## Objectif
@@ -21,6 +21,20 @@ Le protocole Border Gateway Protocol (BGP) vous permet de construire des infrast
 - Un [réseau privé vRack](/links/network/vrack).
 - Des connaissances des réseaux IP et du protocole de routage BGP.
 - Des connaissances des paramètres réseau Linux.
+
+## Capacités et limites du service
+
+Avant de configurer le service BGP, veuillez prendre connaissance des capacités et contraintes suivantes :
+
+- **Un service BGP par région** : un seul service BGP peut être déployé par région disponible (hors régions 3-AZ et US actuellement).
+- **Plusieurs blocs IP** : il est possible d'utiliser plusieurs blocs IP par région pour l'IPv4.
+- **Tailles de blocs utilisables** : /24 à /30 pour l'IPv4, /56 pour l'IPv6.
+- **Pile IP** : les configurations IPv4 seul ou IPv4+IPv6 sont prises en charge. L'IPv6 seul n'est pas pris en charge actuellement.
+- **Nombre maximum d'annonces par pair BGP** : jusqu'à 32 préfixes IPv4 et 32 préfixes IPv6 par client.
+- **Tailles d'annonces** : pour l'IPv4, tout préfixe entre /24 et /32 peut être annoncé. Pour l'IPv6, seuls les préfixes /56 et /64 peuvent être annoncés.
+- **BFD** : le protocole Bidirectional Forwarding Detection (BFD) est disponible avec des timers configurables pour accélérer le temps de convergence.
+- **Sessions BGP** : 4 sessions BGP par client (4 IPv4 + 4 IPv6). Au-delà de 4 hôtes en peering BGP, le déploiement d'un Route Server est nécessaire (voir le cas d'utilisation [Configuration BGP avancée utilisant des Route Servers](#cas-dutilisation-configuration-bgp-avancée-utilisant-des-route-servers-rs)).
+- **Hôtes** : jusqu'à 10 hôtes par client.
 
 ## En pratique
 
@@ -46,7 +60,14 @@ Le vRack doit contenir les serveurs qui participeront au peering BGP.
 
 > [!warning]
 >
-> **Important**: le vRack ne doit contenir que des serveurs dans une zone de disponibilité (AZ) spécifique. Puisque seules les régions 1-AZ (possédant une seule AZ) sont disponibles pendant l'alpha, vos serveurs doivent simplement être dans la même région.
+> **Important** :
+> - Le vRack ne doit contenir que des serveurs dans une zone de disponibilité (AZ) spécifique. Puisque seules les régions 1-AZ (possédant une seule AZ) sont disponibles pendant l'alpha, vos serveurs doivent simplement être dans la même région.
+> - Le bloc IP utilisé avec le service BGP ne doit **PAS** être attaché ni associé au vRack. Le bloc IP est annoncé via les sessions BGP, et non par association au vRack.
+>
+
+> [!primary]
+>
+> Si vous prévoyez d'utiliser le service BGP dans plusieurs localisations, il est recommandé d'utiliser un **vRack distinct par localisation** afin d'éviter les conflits de routage et de simplifier la gestion de votre réseau.
 >
 
 ### Étape 4 : fournir les paramètres de configuration de votre service BGP
@@ -86,6 +107,8 @@ Vous pouvez maintenant configurer les sessions BGP de votre côté. Vous trouver
 > **Important** : OVHcloud n'est pas responsable de la configuration du daemon BGP sur les hôtes du client. Il appartient au client de configurer le daemon BGP sur ses hôtes. Nous fournissons des exemples de configurations à prendre en compte.
 
 ## Cas d'utilisation : Configuration BGP simple - Load Balancing utilisant BGP et ECMP
+
+Cette architecture convient aux configurations avec **jusqu'à 4 hôtes en peering BGP**, le nombre de sessions BGP côté OVHcloud étant limité à 4. Au-delà, reportez-vous au cas d'utilisation [Configuration BGP avancée utilisant des Route Servers](#cas-dutilisation-configuration-bgp-avancée-utilisant-des-route-servers-rs) ci-dessous.
 
 Voici une architecture simple qui vous permet d'effectuer un load balancing de votre trafic sur 3 hôtes :
 
@@ -270,7 +293,8 @@ Nous nous assurerons que la connectivité BGP et les annonces IP sont correctes 
 
 ## Cas d'utilisation: Configuration BGP avancée utilisant des Route Servers (RS)
 
-Les Route Servers sont déployés et gérés par le client. Ceux-ci doivent déployer leurs RS sur des hôtes dédiés.
+Au-delà de 4 hôtes, il est nécessaire de déployer et gérer un Route Server (RS) sur un hôte dédié. Cette architecture permet de supporter **jusqu'à 10 hôtes/nexthops**. Le Route Server peut être déployé in-path ou out-of-path, selon votre architecture.
+
 Les RS s'appairent avec les Load Balancing Edges (LBEdges) et les Hôtes, et établissent deux sessions par pair (une pour l'IPv4, l'autre pour l'IPv6).
 
 Voici une vue d'ensemble du système :
@@ -606,13 +630,27 @@ Une fois votre installation terminée et après avoir effectué des tests de bas
 
 Nous nous assurerons que la connectivité BGP et les annonces IP sont correctes de notre côté.
 
-## Limites
+## Bonnes pratiques en production
 
-Le nombre de pairs côté OVHcloud est limité à 4. Si vous avez besoin de plus de 4 pairs, vous devrez installer un réflecteur de route sur votre infrastructure, afin de redistribuer les routes vers vos hôtes.
+### Maintenance d'un hôte sans interruption de trafic
 
-- **Sessions BGP :** 4 par client (4IPv4 + 4IPv6)
-- **Préfixes IP :** jusqu'à 32 préfixes IPv4 et 32 préfixes IPv6 par client
-- **Hôtes :** 10 par client
+Pour retirer un serveur en vue d'une maintenance (mise à jour de l'OS, intervention matérielle, etc.) sans interruption de trafic, vous pouvez utiliser le mécanisme `BGP graceful shutdown` (RFC 8326). Ce mécanisme signale aux pairs de déprioriser les routes vers l'hôte *avant* la coupure de la session, ce qui permet au trafic de basculer sur les hôtes restants sans perte de paquets.
+
+Avec FRR, lancez un `graceful shutdown` sur l'hôte à maintenir :
+
+```bash
+vtysh -c 'configure terminal' -c 'router bgp <CUSTOMER_ASN>' -c 'bgp graceful-shutdown'
+```
+
+FRR marque alors toutes les routes annoncées avec la communauté `GRACEFUL_SHUTDOWN`, indiquant aux pairs de privilégier les chemins alternatifs. Une fois le trafic drainé (vérifiez les tables de routage sur les autres hôtes ou le Route Server), vous pouvez procéder à la maintenance.
+
+Après la maintenance, désactivez le `graceful shutdown` :
+
+```bash
+vtysh -c 'configure terminal' -c 'router bgp <CUSTOMER_ASN>' -c 'no bgp graceful-shutdown'
+```
+
+L'hôte reprend l'annonce de ses routes et recommence à recevoir du trafic.
 
 ## Régions disponibles
 
