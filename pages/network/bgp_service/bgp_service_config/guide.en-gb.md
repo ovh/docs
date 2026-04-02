@@ -61,7 +61,7 @@ The vRack must contain the servers that will participate in the BGP peering.
 > [!warning]
 >
 > **Important Notice**:
-> - The vRack must contain only servers in one given AZ of a region. As during the alpha period, the BGP service is only available on 1-AZ regions, this simply means that the vRack must contain only servers in one given region.
+> - During the alpha period, the BGP service is only available within 1-AZ regions.
 > - The IP block used with BGP Service must **NOT** be attached or associated to the vRack. The IP block is announced via the BGP sessions, not through vRack association.
 >
 
@@ -658,7 +658,7 @@ The product is available in the following regions:
 
 | Region Location | Region Name | Region Type |
 | :--- | :--- | :--- |
-| Europe (France - Paris) (will be available only in beta) | eu-west-par | 3-AZ |
+| Europe (France - Paris) (to be available from beta) | eu-west-par | 3-AZ |
 | Europe (France - Gravelines) | eu-west-gra | 1-AZ |
 | Europe (France - Roubaix) | eu-west-rbx | 1-AZ |
 | Europe (France - Strasbourg) | eu-west-sbg | 1-AZ |
