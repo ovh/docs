@@ -26,13 +26,14 @@ BGP Service allows you to build highly available infrastructures by running stan
 
 Before setting up BGP Service, be aware of the following capabilities and constraints:
 
-- **One BGP Service per region**: You can deploy one BGP Service per available region (excluding 3-AZ regions and US regions for now).
-- **Multiple IP blocks**: You can use multiple IP blocks per region for IPv4.
+- **One BGP Service per region**: You can deploy one BGP Service per available region (excluding 3-AZ regions, APAC and US regions for now).
+- **Multiple IP blocks**: You can use multiple IPv4 and IPv6 blocks per region.
 - **Usable block sizes**: /24 to /30 for IPv4, /56 for IPv6.
 - **IP stack support**: IPv4-only or IPv4+IPv6 configurations are supported. IPv6-only is not supported at this time.
+- **Dedicated IP blocks**: Additional IP blocks used by a BGP Service cannot be shared with other OVHcloud services, such as Dedicated Servers, Public Cloud instances, etc.
 - **Maximum announcements per BGP peer**: Up to 32 IPv4 prefixes and 32 IPv6 prefixes per client.
 - **Announcement sizes**: For IPv4, any prefix between /24 and /32 can be announced. For IPv6, only /56 and /64 prefixes can be announced.
-- **BFD support**: Bidirectional Forwarding Detection (BFD) is available with configurable timers to accelerate convergence time.
+- **BFD support**: Bidirectional Forwarding Detection (BFD) is enabled by default on the OVHcloud side, with fixed settings (500ms interval, 8x multiplier). In order to use the BFD protocol, you must configure your BGP Service to match these values.
 - **BGP sessions**: 4 BGP sessions per client (4 IPv4 + 4 IPv6). If you need more than 4 BGP peering hosts, you will need to deploy a Route Server (see the [Advanced BGP configuration](#use-case-advanced-bgp-configuration-using-route-servers-rs) use case).
 - **Hosts**: Up to 10 hosts per client.
 
@@ -63,14 +64,14 @@ If you need to import your IPs, you need to use our BYOIP service. Please follow
 
 ### Step 3: Configure your vRack
 
-You need to have created a vRack, which is the private network where the peering between your servers and the BGP service will take place.
+You need to have created a vRack, which is the private network where the peering between your servers and the BGP Service will take place.
 
 The vRack must contain the servers that will participate in the BGP peering.
 
 > [!warning]
 >
 > **Important Notice**:
-> - During the alpha period, the BGP service is only available within 1-AZ regions.
+> - During the alpha period, the BGP Service is only available within 1-AZ regions.
 > - The IP block used with BGP Service must **NOT** be attached or associated to the vRack. The IP block is announced via the BGP sessions, not through vRack association.
 >
 
@@ -81,7 +82,7 @@ The vRack must contain the servers that will participate in the BGP peering.
 
 ### Step 4: Provide configuration parameters of your BGP Service
 
-You need to provide us with the following parameters so that we can configure the BGP service on the OVHcloud side:
+You need to provide us with the following parameters so that we can configure the BGP Service on the OVHcloud side:
 
 | Parameter	| Value (example) | Description | Comment |
 | :--- | :--- | :--- | :--- |
@@ -302,7 +303,7 @@ We'll make sure the BGP connectivity and IP announcements are OK from our side.
 
 ## Use Case: Advanced BGP configuration using Route Servers (RS)
 
-If you want to use more than 4 hosts with BGP Service, you need to deploy and manage a Route Server (RS). The RS must be deployed on a dedicated host. This design allows you to scale **up to 10 hosts/nexthops**. The Route Server can be deployed either in-path or out-of-path, depending on your architecture requirements.
+If you want to use more than 4 hosts with BGP Service, you need to deploy and manage a Route Server (RS). This design allows you to scale **up to 10 hosts/nexthops**. The Route Server can be deployed either in-path or out-of-path, depending on your architecture requirements.
 
 An RS peers with Edges and Hosts, establishing two sessions per peer (one for IPv4 and one for IPv6).
 
@@ -643,7 +644,7 @@ We'll make sure the BGP connectivity and IP announcements are OK from our side.
 
 ### Maintenance of a host without traffic interruption
 
-To offload a server for maintenance (e.g. OS update, hardware intervention) without traffic interruption, you can use `BGP graceful shutdown` (RFC 8326). This mechanism signals peers to deprioritize routes toward the host *before* the session goes down, allowing traffic to drain to the remaining hosts without packet loss.
+To offload a server for maintenance (e.g. OS update, hardware intervention) without traffic interruption, you can use `BGP graceful shutdown` (RFC 8326). This mechanism signals peers to deprioritize routes toward the host *before* the session goes down, allowing traffic to drain to the remaining hosts without packet loss. This **does not mean that sessions (such as TCP) are maintained** if they are not synchronized between hosts announcing the route.
 
 With FRR, you can initiate a `graceful shutdown` on the host to be maintained:
 
@@ -667,7 +668,6 @@ The product is available in the following regions:
 
 | Region Location | Region Name | Region Type |
 | :--- | :--- | :--- |
-| Europe (France - Paris) (to be available from beta) | eu-west-par | 3-AZ |
 | Europe (France - Gravelines) | eu-west-gra | 1-AZ |
 | Europe (France - Roubaix) | eu-west-rbx | 1-AZ |
 | Europe (France - Strasbourg) | eu-west-sbg | 1-AZ |
@@ -676,9 +676,11 @@ The product is available in the following regions:
 | Europe (UK - Erith) | eu-west-eri | 1-AZ |
 | North America (Canada - East - Beauharnois) | ca-east-bhs | 1-AZ |
 | North America (Canada - East - Toronto) | ca-east-tor | 1-AZ |
-| Asia-Pacific (Singapore - Singapore) | ap-southeast-sgp | 1-AZ |
-| Asia-Pacific (Australia - Sydney) | ap-southeast-syd | 1-AZ |
-| Asia-Pacific (India - Mumbai) | ap-south-mum | 1-AZ |
+
+> [!primary]
+>
+> 3-AZ regions and regions located in the US or APAC will be available at a later date. Thank you for your patience.
+>
 
 ## Troubleshooting
 
