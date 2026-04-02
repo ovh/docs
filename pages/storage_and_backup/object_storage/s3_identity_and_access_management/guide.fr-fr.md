@@ -73,22 +73,6 @@ Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Conf
 
 ![Add a user to my container - Role](images/highperf-identity-and-access-management-20220928083800300.png){.thumbnail}
 
-### Gestion des accès à un objet via un profil
-
-Vous pouvez également définir l'accès à vos objets via des profils prédéfinis.
-
-Cliquez sur le bouton `...`{.action} à droite de votre objet puis sur `Ajouter un utilisateur à mon objet`{.action}.
-
-![object menu](images/highperf-identity-and-access-management-20220928084137918.png){.thumbnail}
-
-Sélectionnez l'utilisateur et cliquez sur `Suivant`{.action}.
-
-![add user to my object](images/highperf-identity-and-access-management-20220928084222940.png){.thumbnail}
-
-Sélectionnez le profil d'accès pour cet utilisateur et cliquez sur `Confirmer`{.action}.
-
-![add role to my object](images/highperf-identity-and-access-management-20220928084308265.png){.thumbnail}
-
 ### Gestion avancée des accès aux ressources
 
 #### Aperçu
