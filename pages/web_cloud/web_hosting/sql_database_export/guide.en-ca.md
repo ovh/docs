@@ -149,7 +149,7 @@ To do this, log in to *phpMyAdmin*. To do this, click on the tabs below to view 
 >>
 > **Step 3**
 >>
->> Click the `...`{.action} button to the right of the database concerned, then `Access phpMyAdmin`{.action}.
+>> Click the `...`{.action} button to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 

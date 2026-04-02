@@ -68,7 +68,7 @@ To carry out this procedure, click on the tabs below to view each of the **4** s
 >>
 > **Step 3**
 >>
->> Click on the `...`{.action} button to the right of the database you want to restore, then on `Restore a backup`{.action}. Please note that this action will replace the current contents of the database with the contents of the backup.
+>> Click on the `...`{.action} button to the right of the database you want to restore, then on `Restore backup`{.action}. Please note that this action will replace the current contents of the database with the contents of the backup.
 >>
 >> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 >>
@@ -142,7 +142,7 @@ To carry out this procedure, you will need to log in to phpMyAdmin. To do this, 
 >>
 > **Step 3**
 >>
->> Click on the `...`{.action} button to the right of the database concerned, then on `Access phpMyAdmin`{.action}.
+>> Click on the `...`{.action} button to the right of the database concerned, then on `Go to phpMyAdmin`{.action}.
 >>
 >> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 

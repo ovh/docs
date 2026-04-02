@@ -150,7 +150,7 @@ Une fois sur la page de phpMyAdmin, renseignez les informations de la base de do
 
 > [!warning]
 >
-> L'interface phpMyAdmin n'ayant pas été créée par OVHcloud, vous devrez réaliser la manipulation selon vos propres connaissances. Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de vous rapprocher du site l’éditeur de l'interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
+> L'interface phpMyAdmin n'ayant pas été créée par OVHcloud, vous devrez réaliser la manipulation selon vos propres connaissances. Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de vous rapprocher du site de l’éditeur de l’interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
 
 ### Importer une sauvegarde en utilisant un script
 

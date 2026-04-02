@@ -142,7 +142,7 @@ To create a new user, click on the tabs below to view each of the **3** steps.
 >>
 > **Step 2**
 >>
->> On the page that appears, click on the `Statistics and logs`{.action} tab, then go to the **User management** section.
+>> On the page that appears, click on the `Statistics and logs`{.action} tab, then go to the **User administration** section.
 >>
 > **Step 3**
 >>
@@ -167,7 +167,7 @@ You can also retrieve the statistics/logs access link directly from your Control
 >>
 > **Step 2**
 >>
->> On the page that appears, click on the `Statistics and logs`{.action} tab, then go to the **Visit statistics** section.
+>> On the page that appears, click on the `Statistics and logs`{.action} tab, then go to the **Website visit statistics** section.
 >>
 > **Step 3**
 >>

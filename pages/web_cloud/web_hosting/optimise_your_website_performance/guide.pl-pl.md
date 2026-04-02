@@ -111,7 +111,7 @@ Aby uzyskać dostęp do statystyk i logów, kliknij poniższe zakładki, aby wy�
 >>
 > **Krok 2**
 >>
->> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+>> Na stronie, która się wyświetli, kliknij zakładkę `Statystyki i logi`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
@@ -132,7 +132,7 @@ Aby uzyskać dostęp do wykresów, kliknij poniższe zakładki, aby wyświetlić
 >>
 > **Krok 2**
 >>
->> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}. Przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu.
+>> Na stronie, która się wyświetli, kliknij zakładkę `Statystyki i logi`{.action}. Przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu.
 >>
 > **Krok 3**
 >>

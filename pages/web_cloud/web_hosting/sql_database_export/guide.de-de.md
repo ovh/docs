@@ -181,7 +181,7 @@ system("mysqldump --host=server_address --user=user_name --password=user_passwor
 ?>
 ```
 
-Achten Sie darauf, die generischen Daten im Beispielskrip mit den Informationen der betreffenden Datenbank zu ersetzen. Wir empfehlen, das Skript am Ende zum Beispiel „backup.php" zu benennen.
+Achten Sie darauf, die generischen Daten im Beispielskript mit den Informationen der betreffenden Datenbank zu ersetzen. Wir empfehlen, das Skript am Ende zum Beispiel „backup.php" zu benennen.
 
 |Informationen|Ersetzen mit|
 |---|---|

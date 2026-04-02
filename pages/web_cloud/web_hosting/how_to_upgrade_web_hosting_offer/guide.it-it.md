@@ -190,7 +190,7 @@ Puoi scollegare il servizio di posta dal tuo hosting Web. Per farlo, clicca sull
 > **Passaggio 1**
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
 > **Passaggio 2**
->> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra di **Indirizzi email** e poi su `Scollega la mia opzione email`{.action}.
+>> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra di **Indirizzi email** e poi su `Scollega la tua opzione email`{.action}.
 
 #### 5 - Mailing list
 
@@ -212,7 +212,7 @@ Puoi scollegare il servizio di posta dal tuo hosting Web. Per farlo, clicca sull
 > **Passaggio 1**
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
 > **Passaggio 2**
->> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra di **Indirizzi email** e poi su `Scollega la mia opzione email`{.action}.
+>> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra di **Indirizzi email** e poi su `Scollega la tua opzione email`{.action}.
 
 #### 6 - Utenti FTP
 

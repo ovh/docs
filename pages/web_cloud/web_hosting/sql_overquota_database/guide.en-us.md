@@ -153,7 +153,7 @@ You will need to upgrade your database service to one that includes more space f
 > To increase the size allocated to your database, you will need to create a new, larger database, and copy the contents of the old database into the new one. You cannot directly increase the size of a database linked to a web hosting plan.
 >
 
-Consult our [Web Cloud Databases](https://www.ovhcloud.com/en-us/web-cloud/databases/) offer to choose your new database service. 
+Consult our [Web Cloud Databases](/links/web/databases) offer to choose your new database service. 
 
 We recommend this solution for large databases.
 

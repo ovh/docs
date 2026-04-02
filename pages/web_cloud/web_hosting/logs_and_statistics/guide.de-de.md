@@ -146,7 +146,7 @@ Um einen neuen Benutzer zu erstellen, klicken Sie auf die Tabs, um die **3** Sch
 >>
 > **Schritt 3**
 >>
->> Klicken Sie auf `Neuen Benutzer anlegen`{.action} und folgen Sie den Anweisungen, um die Erstellung abzuschließen.
+>> Klicken Sie auf `Einen neuen Nutzer erstellen`{.action} und folgen Sie den Anweisungen, um die Erstellung abzuschließen.
 >>
 >> ![Erstellung eines neuen Benutzers für die Statistiken](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
 
@@ -171,7 +171,7 @@ Sie können auch direkt über Ihr Kundencenter den Zugangslink zu den Statistike
 >>
 > **Schritt 3**
 >>
->> Klicken Sie auf die Schaltfläche `Statistiken anzeigen`{.action}.
+>> Klicken Sie auf die Schaltfläche `Die Statistiken anzeigen`{.action}.
 >>
 >> ![Besucherstatistiken der Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
 >>

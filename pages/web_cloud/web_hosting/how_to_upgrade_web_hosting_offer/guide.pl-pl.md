@@ -190,7 +190,7 @@ Możesz odłączyć ofertę e-mail od hostingu. Kliknij poniższe zakładki, aby
 > **Krok 1**
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting.
 > **Krok 2**
->> W ramce **Konfiguracja** kliknij przycisk `...`{.action} z prawej strony **Adresy e-mail**, a następnie `Odłącz moją opcję e-mail`{.action}.
+>> W ramce **Konfiguracja** kliknij przycisk `...`{.action} z prawej strony **Adresy e-mail**, a następnie `Odłącz opcję e-mail`{.action}.
 
 #### 5 - Listy mailingowe
 
@@ -212,7 +212,7 @@ Możesz odłączyć ofertę e-mail od hostingu. Kliknij poniższe zakładki, aby
 > **Krok 1**
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting.
 > **Krok 2**
->> W ramce **Konfiguracja** kliknij przycisk `...`{.action} z prawej strony **Adresy e-mail**, a następnie `Odłącz moją opcję e-mail`{.action}.
+>> W ramce **Konfiguracja** kliknij przycisk `...`{.action} z prawej strony **Adresy e-mail**, a następnie `Odłącz opcję e-mail`{.action}.
 
 #### 6 - Użytkownicy FTP
 

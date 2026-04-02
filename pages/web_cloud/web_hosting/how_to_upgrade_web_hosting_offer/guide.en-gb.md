@@ -186,7 +186,7 @@ You can unlink the email solution from your web hosting plan. To do this, click 
 > **Step 1**
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 > **Step 2**
->> In the **Configuration** box, click the `...`{.action} button to the right of **Email addresses**, then `Unlink my email option`{.action}.
+>> In the **Configuration** box, click the `...`{.action} button to the right of **Email addresses**, then `Detach my email option`{.action}.
 
 #### 5 - Mailing lists
 
@@ -208,7 +208,7 @@ You can unlink the email solution from your web hosting plan. To do this, click 
 > **Step 1**
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 > **Step 2**
->> In the **Configuration** box, click the `...`{.action} button to the right of **Email addresses**, then `Unlink my email option`{.action}.
+>> In the **Configuration** box, click the `...`{.action} button to the right of **Email addresses**, then `Detach my email option`{.action}.
 
 #### 6 - FTP users
 

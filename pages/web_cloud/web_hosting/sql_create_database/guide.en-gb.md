@@ -193,7 +193,7 @@ OVHcloud provides an online database management tool, phpMyAdmin. To find the ac
 >>
 > **Step 3**
 >>
->> In the table that appears, click on the `...`{.action} button to the right of the database concerned, then click on `Access phpMyAdmin`{.action} in the dropdown menu.
+>> In the table that appears, click on the `...`{.action} button to the right of the database concerned, then click on `Go to phpMyAdmin`{.action} in the dropdown menu.
 >>
 > **Step 4**
 >>
