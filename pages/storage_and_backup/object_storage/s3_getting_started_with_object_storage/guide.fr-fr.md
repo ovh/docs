@@ -196,6 +196,13 @@ Pour gérer un bucket Object Storage, rendez-vous dans `Object Storage`{.action}
 > Via l'espace client OVHcloud
 >> Cliquez sur `Object Storage`{.action} dans la barre de navigation, puis sur l'onglet `Mes conteneurs`{.action}.
 >>
+> Via la CLI OVHcloud
+>> Saisissez la commande suivante :
+>>
+>> ```shell
+>> ovhcloud cloud storage-s3 list
+>> ```
+>>
 
 #### Créer un bucket
 
