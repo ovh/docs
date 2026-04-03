@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Managing object immutability with Object Lock (WORM)
 excerpt: Object Lock is a feature that allows you to store objects using a Write Once, Read Many (WORM) model
-updated: 2026-03-06
+updated: 2026-04-03
 ---
 
 <style>
@@ -143,7 +143,7 @@ aws s3api create-bucket \
 >
 
 > [!tabs]
-> Via AWS cli
+> Via AWS CLI
 >> To use Object Lock, you have to create a bucket that supports the feature with the `--object-lock-enabled-for-bucket` flag. If a bucket is created without `--object-lock-enabled-for-bucket`, the flag cannot be added later.
 >>
 >> ```bash
@@ -157,7 +157,7 @@ aws s3api create-bucket \
 >>
 >> Click on `Object Storage`{.action} in the navigation bar, then click on `Create object container`{.action}.
 >>
->> When creating an Object Storage bucket, a dedicated step allows you to enable Object Lock in order to store objects in WORM (Write Once, Read Many) mode.
+>> When creating an Object Storage bucket, a dedicated step allows you to enable Object Lock to store objects in WORM (Write Once, Read Many) mode.
 >>
 >> Once Object Lock is enabled, the setting is irreversible for the bucket concerned. All stored objects are therefore guaranteed to remain immutable until the end of the defined retention period.
 >>
@@ -167,7 +167,7 @@ aws s3api create-bucket \
 The lock configuration enables you to set a lock configuration on a specified bucket. Once set, the rule specified in the Object Lock configuration is applied by default to every new object placed in the specified bucket.
 
 > [!tabs]
-> Via AWS cli
+> Via AWS CLI
 >> ```bash
 >> aws s3api put-object-lock-configuration \
 >>   --bucket <bucket_name> \
@@ -198,7 +198,7 @@ The lock configuration enables you to set a lock configuration on a specified bu
 >> ```
 >>
 > Via the OVHcloud Control Panel
->> To manage an Object Storage bucket, first log in to your [OVHcloud control panel](/links/manager) and open your `Public Cloud`{.action} project.
+>> To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
 >>
 >> Click on `Object Storage`{.action} in the navigation bar, then on the `My containers`{.action} tab, and then on the `name of your container`{.action}.
 >>
@@ -297,19 +297,19 @@ The result should look like this:
 
 ### Object Lock and Object Deletion
 
-When versioning is enabled, deleting an object does not delete the object immediately but creates a **delete flag**. This flag becomes the current version of the object with a new ID.
+When versioning is enabled, deleting an object does not delete the object immediately but creates a **delete marker**. This marker becomes the current version of the object with a new ID.
 
-A delete flag:
+A delete marker:
 
 - Has a key and version ID like any other object.
 - Does not contain data (GET returns 404).
-- Is not displayed by default in the customer area.
+- Is not displayed by default in the Control Panel.
 - Can only be manipulated by DELETE, by the bucket owner.
 
 The **Object Lock** feature prevents objects from being:
 
-- Deleted even with a version ID (returns `Access Denied`).
-- Overwritten by versioning.
+- deleted even with a version ID (returns `Access Denied`).
+- overwritten by versioning.
 
 #### How deletions work with Object Lock
 
@@ -335,8 +335,9 @@ aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456hu
 ///
 
 /// details | **Deletion without version ID (simple DELETE)**
+
 - The request returns 200 OK.
-- A deletion token is created in the bucket and becomes the current version of the object.
+- A delete marker is created in the bucket and becomes the current version of the object.
 - The object remains protected by the retention period.
 
 **Note:** Deletion markers and access errors can be managed via the corresponding APIs/CLIs.

@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)"
 excerpt: "Object Lock est une fonctionnalité qui vous permet de stocker des objets en utilisant un modèle WORM (Write Once, Read Many)"
-updated: 2026-03-06
+updated: 2026-04-03
 ---
 
 <style>
@@ -80,7 +80,7 @@ Une fois ce mode activé pour un objet, son mode de rétention et sa durée ne p
 
 > [!primary]
 >
-> **Bonne pratique :** utilisez le mode **Compliance** uniquement si vous devez assurer une immutabilité stricte pour des besoins de conformité ou réglementaires.
+> **Bonne pratique :** utilisez le mode **Compliance** uniquement si vous devez assurer une immuabilité stricte pour des besoins de conformité ou réglementaires.
 >
 
 > [!warning]
@@ -143,7 +143,7 @@ aws s3api create-bucket \
 >
 
 > [!tabs]
-> Via AWS cli
+> Via AWS CLI
 >> Pour utiliser Object Lock, vous devez créer un bucket qui supporte la fonctionnalité avec le flag `--object-lock-enabled-for-bucket`. Si un bucket est créé sans ce flag, il ne pourra pas être ajouté ultérieurement.
 >>
 >>
@@ -160,7 +160,7 @@ aws s3api create-bucket \
 >>
 >> Lors de la création d’un bucket Object Storage, une étape dédiée permet d’activer l’Object Lock afin de stocker les objets en mode WORM (Write Once, Read Many).
 >>
->> Une fois l’Object Lock activé, le paramètre est irréversible pour le bucket concerné. Tous les objets stockés bénéficient ainsi d’une immutabilité garantie jusqu’à la fin de la période de rétention définie.
+>> Une fois l’Object Lock activé, le paramètre est irréversible pour le bucket concerné. Tous les objets stockés bénéficient ainsi d’une immuabilité garantie jusqu’à la fin de la période de rétention définie.
 >>
 
 ### Configuration d'Object Lock sur un bucket
@@ -168,7 +168,7 @@ aws s3api create-bucket \
 Object Lock vous permet de définir une période de rétention sur un bucket spécifique. Une fois définie, la règle spécifiée est appliquée par défaut à chaque nouvel objet placé dans le bucket spécifié.
 
 > [!tabs]
-> Via AWS cli
+> Via AWS CLI
 >> ```bash
 >> aws s3api put-object-lock-configuration \
 >>   --bucket <bucket_name> \
@@ -309,8 +309,8 @@ Un marqueur de suppression :
 
 La fonction **Object Lock** empêche les objets d’être :
 
-- Supprimés même avec un ID de version (renvoie `Access Denied`).
-- Écrasés par le versioning.
+- supprimés même avec un ID de version (renvoie `Access Denied`).
+- écrasés par le versioning.
 
 #### Fonctionnement des suppressions avec Object Lock
 
@@ -336,6 +336,7 @@ aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456hu
 ///
 
 /// details | **Suppression sans ID de version (DELETE simple)**
+
 - La requête renvoie 200 OK.
 - Un marqueur de suppression est créé dans le bucket et devient la version actuelle de l’objet.
 - L’objet reste protégé par la période de rétention.
