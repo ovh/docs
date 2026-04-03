@@ -139,7 +139,7 @@ aws s3api create-bucket \
 
 > [!primary]
 >
-> Cette action active également le versioning du bucket.
+> Cette action active également le *versioning* du bucket.
 >
 
 > [!tabs]
@@ -310,7 +310,7 @@ Un marqueur de suppression :
 La fonction **Object Lock** empêche les objets d’être :
 
 - supprimés même avec un ID de version (renvoie `Access Denied`).
-- écrasés par le versioning.
+- écrasés par le *versioning*.
 
 #### Fonctionnement des suppressions avec Object Lock
 
