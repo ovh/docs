@@ -379,7 +379,7 @@ Click the tab that corresponds to your distribution:
 >> **Configuration example:**
 >>
 >> ```bash
->>   ens7:
+>>   eno2:
 >>     dhcp4: false
 >>     addresses:
 >>     - 203.0.113.1/29

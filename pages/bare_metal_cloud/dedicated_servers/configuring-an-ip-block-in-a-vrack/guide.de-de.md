@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration eines Additional IP-Blocks in einem vRack'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie einen Block öffentlicher IP-Adressen für die Verwendung mit dem vRack konfigurieren.'
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>
@@ -238,7 +238,7 @@ sudo dnf install iproute
 >> Passen Sie abschließend die Netzwerkkonfigurationsdatei an, um die neue Verkehrsregel zu berücksichtigen und den vRack-Verkehr über die Netzwerk-Gateway-Adresse **46.105.135.110** zu routen.
 >>
 >> ```sh
->> /etc/network/interfaces
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
 >>
 >> auto eth1
 >> iface eth1 inet static
@@ -273,7 +273,7 @@ sudo dnf install iproute
 >> sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
 >> ```
 >>
->> Definieren Sie die IP-Einstellungen:
+>> - Definieren Sie die IP-Einstellungen:
 >>
 >> ```sh
 >> # Created by cloud-init on instance boot automatically, do not edit.
@@ -352,7 +352,26 @@ sudo dnf install iproute
 >>
 >> Öffnen Sie die Netzwerkkonfigurationsdatei in `/etc/netplan` mit einem Texteditor Ihrer Wahl. Hier heißt die Datei `50-cloud-init.yaml`.
 >>
->> ```bash
+>>
+>> ```sh
+>> sudo nano /etc/netplan/50-cloud-init.yaml
+>> ```
+>>
+>> - Definieren Sie die IP-Einstellungen mit den folgenden Variablen:
+>>
+>> ```sh
+>> NETWORK_INTERFACE:
+>> dhcp4: false
+>> addresses:
+>> - ADDITIONAL_IP/PREFIX
+>> routes:
+>> - to: NETWORK_IP/PREFIX
+>>   via: GATEWAY_IP
+>> ```
+>>
+>> **Beispiel**
+>>
+>> ```sh
 >> eno2:
 >> dhcp4: false
 >> addresses:
@@ -362,6 +381,12 @@ sudo dnf install iproute
 >>   via: 46.105.135.110
 >> ```
 >>
+>> Wenden Sie die Konfiguration mit dem folgenden Befehl an:
+>>
+>> ```bash
+>> sudo netplan apply
+>> ```
+>> 
 > **Fedora, AlmaLinux und Rocky Linux (10/11)**
 >>
 >> Überprüfen Sie zunächst, dass Ihre vRack-Schnittstelle den Status `connected` oder `connecting` hat. In unserem Beispiel heißt die Schnittstelle `eno2`.
