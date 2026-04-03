@@ -10,9 +10,8 @@ This guide explains how to configure encrypted backup jobs using the Veeam backu
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A [VMware on OVHcloud](/links/hosted-private-cloud/vmware) offer.
-- Read the following guides: 
+- Read the following guides:
     - [Integrating a KMS with VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
     - [Getting started with OKMS](/pages/manage_and_operate/kms/quick-start).
 

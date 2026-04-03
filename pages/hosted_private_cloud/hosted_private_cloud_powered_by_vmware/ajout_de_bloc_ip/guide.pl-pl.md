@@ -13,7 +13,18 @@ Blok IP umożliwia udostępnianie witryn w Internecie.
 ## Wymagania początkowe
 
 - Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
-- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](/links/manager)
+- Posiadanie aktywnego konta użytkownika z dostępem do vSphere.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ścieżka nawigacji:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wybierz usługę vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## W praktyce
 

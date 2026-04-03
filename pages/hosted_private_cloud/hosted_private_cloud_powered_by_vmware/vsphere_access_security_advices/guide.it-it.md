@@ -12,7 +12,16 @@ Per assicurare un livello di sicurezza ottimale di un’infrastruttura, limitare
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Percorso di navigazione:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleziona il tuo vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedura
 

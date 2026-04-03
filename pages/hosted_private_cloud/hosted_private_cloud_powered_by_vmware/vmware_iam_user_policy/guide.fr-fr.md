@@ -22,11 +22,16 @@ updated: 2024-11-05
 
 ### Comment associer un utilisateur à une politique IAM globale ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de l'espace client puis cliquez sur vos initiales pour accéder à la rubrique `Mon compte`{.action}.
+<!-- CP-NAV-START:iam-policies -->
+---
 
-Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et restez dans l'onglet `Politiques`{.action}.
+### Accès à l'espace client OVHcloud
 
-![IAM USER POLICY](images/iam_policies_resize.png){.thumbnail}
+- **Lien direct :** [Politiques IAM](/links/control-panel/iam-policies)
+- **Pour accéder à vos services :** `Identity, Security & Operations`{.action} > `Politiques`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
 
 Vous retrouvez ici les politiques que vous avez déjà créés.
 

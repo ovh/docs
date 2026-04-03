@@ -12,8 +12,18 @@ Sulle soluzioni Private Cloud OVH è possibile attivare la certificazione PCI DS
 
 ## Prerequisiti
 
-- Disporre di una infrastruttura Private Cloud con versione 6.0 o superiore 
-- Avere accesso allo [Spazio Cliente OVH](/links/manager)
+- Disporre di una infrastruttura Private Cloud con versione 6.0 o superiore
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Percorso di navigazione:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleziona il tuo vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedura
 

@@ -10,9 +10,8 @@ Ce guide explique comment configurer des tâches de sauvegarde chiffrées en uti
 
 ## Prérequis
 
-- Être connecté à [l'espace client OVHcloud](/links/manager).
 - Disposer d'une offre [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
-- Avoir lu les guides : 
+- Avoir lu les guides :
     - [Intégration d'un KMS pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
     - [Premiers pas avec OKMS](/pages/manage_and_operate/kms/quick-start).
 

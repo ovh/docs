@@ -22,10 +22,16 @@ updated: 2024-05-23
 
 ### Creating or editing a policy
 
-Log in to your [OVHcloud Control Panel](/links/manager). Click on your name in the top right-hand corner of the OVHcloud Control Panel, then click on your initials to go to the `My account`{.action} section.<br>
-Under `My account`{.action}, click `Identity and Access Management (IAM)`{.action].
+<!-- CP-NAV-START:iam-policies -->
+---
 
-![OVHCLOUD IAM](images/iam_role_policy_9.png){.thumbnail}
+### OVHcloud Control Panel Access
+
+- **Direct link:** [IAM Policies](/links/control-panel/iam-policies)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Policies`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
 
 Click `Create a Policy`{.action}.<br>
 To modify a policy, click the `...`{.action} button to the right of the policy concerned, then `Modify policy`{.action}.

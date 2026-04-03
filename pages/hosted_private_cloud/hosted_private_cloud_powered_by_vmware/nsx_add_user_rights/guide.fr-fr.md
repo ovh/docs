@@ -39,7 +39,7 @@ Ce guide vous détaille comment ajouter les droits de lecture à un utilisateur 
 ---
 <!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
-## Instructions
+## En pratique
 
 ### Etape 1 - Activer NSX-T
 

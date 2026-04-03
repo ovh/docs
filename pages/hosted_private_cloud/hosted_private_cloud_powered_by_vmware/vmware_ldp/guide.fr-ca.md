@@ -14,7 +14,6 @@ updated: 2024-09-25
 
 ## Prérequis
 
-- Disposer d'un [compte client OVHcloud](/links/manager).
 - Disposer d'une offre [VMware on OVHcloud](/links/hosted-private-cloud/vmware) avec un stream Logs Data Platform actif.
     - Si vous ne connaissez pas toutes les possibilités de configuration d’un *Stream* LDP, il vous suffit d'en créer un nouveau avec les options par défaut (indexation & websocket activés, stockage longue durée désactivé) pour suivre ce guide.
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
