@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Alterar um nome de domínio já associado a um alojamento"
 excerpt: "Saiba como alterar as configurações de associação de um domínio/subdomínio já declarado na sua oferta de alojamento web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo

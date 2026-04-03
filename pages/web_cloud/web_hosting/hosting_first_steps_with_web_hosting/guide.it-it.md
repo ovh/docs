@@ -1,7 +1,7 @@
 ---
 title: "Come eseguire le prime operazioni sul tuo hosting Web"
 excerpt: 'Questa guida ti mostra come pubblicare un nuovo sito Internet con le nostre opzioni di "CMS in 1 click" e come creare un nuovo indirizzo email personalizzato con il tuo dominio, il tutto grazie alla nostra soluzione di hosting Web'
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>
@@ -53,10 +53,24 @@ Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno
 >
 > Se il dominio e l’hosting Web sono stati registrati con lo stesso ordine, i due servizi sono già associati. Consulta la [Parte 2](#part-2) di questa guida.
 
-1. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
-2. Seleziona la scheda `I miei siti`{.action} una volta posizionato sull’hosting Web interessato.
-3. Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web creato automaticamente al momento della creazione del tuo hosting web, quindi su `Aggiungi un dominio`{.action}.
-4. Nella nuova pagina che si apre, seleziona e completa gli elementi richiesti fino alla loro validazione.
+Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Seleziona la scheda `I miei siti`{.action} una volta posizionato sull’hosting Web interessato.
+>>
+> **Passaggio 3**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web creato automaticamente al momento della creazione del tuo hosting web, quindi su `Aggiungi un dominio`{.action}.
+>>
+> **Passaggio 4**
+>>
+>> Nella nuova pagina che si apre, seleziona e completa gli elementi richiesti fino alla loro validazione.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -72,10 +86,24 @@ Consulta le nostre guide dettagliate:
 
 Negli hosting Web, OVHcloud propone di installare gratuitamente i CMS WordPress, Joomla!, PrestaShop e Drupal con l’opzione "CMS in 1 click".
 
-1. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
-2. Seleziona la scheda `CMS in 1 click`{.action} una volta posizionato sull’hosting Web interessato.
-3. Clicca sul pulsante `Aggiungi un modulo`{.action}.
-4. Nella nuova finestra, seleziona il CMS da installare. In seguito seleziona il dominio su cui installare il modulo selezionando il nome di dominio **senza i "www"** davanti (esempio: `domain.tld` e non `www.domain.tld`), poi clicca direttamente su `Installa`{.action}.
+Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Seleziona la scheda `CMS in 1 click`{.action} una volta posizionato sull’hosting Web interessato.
+>>
+> **Passaggio 3**
+>>
+>> Clicca sul pulsante `Aggiungi un modulo`{.action}.
+>>
+> **Passaggio 4**
+>>
+>> Nella nuova finestra, seleziona il CMS da installare. In seguito seleziona il dominio su cui installare il modulo selezionando il nome di dominio **senza i "www"** davanti (esempio: `domain.tld` e non `www.domain.tld`), poi clicca direttamente su `Installa`{.action}.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -92,8 +120,20 @@ Consulta le nostre guide dettagliate:
 >
 > Se il dominio e l’hosting Web sono stati registrati con un unico ordine, gli indirizzi email inclusi nell’hosting Web sono già associati al dominio. Consulta la [Parte 4](#part-4) di questa guida.
 
-1. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
-2. Nella nuova pagina e nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra della dicitura `Account email`{.action}, poi su `Attiva il tuo servizio di posta`{.action}. Nella nuova pagina, seleziona il dominio nella sezione `(1)` e continua fino all’attivazione degli indirizzi email.
+Clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Nella nuova pagina e nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra della dicitura `Account email`{.action}, poi su `Attiva il tuo servizio di posta`{.action}.
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina, seleziona il dominio nella sezione `(1)` e continua fino all’attivazione degli indirizzi email.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -103,10 +143,24 @@ Consulta la nostra guida dettagliata "[Hosting Web - Attiva gli indirizzi email 
 
 ### 4 - Creare un indirizzo email personalizzato con il dominio <a name="part-4"></a>
 
-1. Clicca sul menu `Email`{.action} (o su `MX Plan`{.action} se utilizzi la nuova versione dello Spazio Cliente OVHcloud) e seleziona il dominio interessato.
-2. Clicca sulla scheda `Email`{.action}.
-3. Nella nuova pagina clicca sul pulsante `Crea un indirizzo Email`{.action}.
-4. Nella finestra che si apre, completa gli elementi richiesti fino alla loro convalida.
+Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [MX Plan](/links/control-panel/web-mx-plan) e seleziona il dominio interessato.
+>>
+> **Passaggio 2**
+>>
+>> Clicca sulla scheda `Email`{.action}.
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sul pulsante `Crea un indirizzo Email`{.action}.
+>>
+> **Passaggio 4**
+>>
+>> Nella finestra che si apre, completa gli elementi richiesti fino alla loro convalida.
 
 Ripeti l’operazione per ogni indirizzo email che vuoi creare (nel limite della tua offerta di hosting Web).
 

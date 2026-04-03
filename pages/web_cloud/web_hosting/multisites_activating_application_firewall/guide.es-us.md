@@ -1,7 +1,7 @@
 ---
 title: Activación del firewall de aplicación
 excerpt: Cómo activar el firewall de aplicación en un plan de hosting.
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

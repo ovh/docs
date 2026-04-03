@@ -1,7 +1,7 @@
 ---
 title: "Mettere online un sito Internet su un hosting Web"
 excerpt: "Questa guide ti mostra come pubblicare un sito su un hosting Web OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Obiettivo
@@ -114,15 +114,28 @@ Una volta recuperati i dati potrai connetterti allo spazio di storage in due mod
 
 Una volta connesso al tuo spazio di archiviazione, ti rimane solo da caricare i file del tuo sito. **Ti invitiamo a essere particolarmente attento al directory su cui intendi caricare i file**, soprattutto se hai dichiarato più siti web sull'hosting web.
 
-Per verificare la cartella in cui deve essere pubblicato il sito web, posizionati sull'onglet `I miei siti`{.action} dal tuo Spazio Cliente OVHcloud. Nella tabella che appare, per il sito web desiderato, guarda il `Cartella di root`{.action} che appare. Pubblica quindi i file del sito web in quest'ultimo.
+Per verificare la cartella in cui deve essere pubblicato il sito web, clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Seleziona la scheda `I miei siti`{.action}. Nella tabella che appare, per il sito web desiderato, guarda la `Cartella di root`{.action} che appare.
+>>
+>> ![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Pubblica quindi i file del sito web in quest'ultimo.
 
 Potrebbe capitare che tu trovi sul tuo spazio di archiviazione un file intitolato "index.html". Quest'ultimo può essere stato creato da OVHcloud all'installazione del tuo hosting web per visualizzare una pagina predefinita sul tuo sito web. Se è così, non dimenticarti di eliminarlo quando carichi i tuoi file.
 
 > [!primary]
 >
 > Un file "index.php" sostituirà sempre il file "index.html". Pertanto, quando entrambi sono presenti, sarà chiamato solo "index.php".
-
-![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3 - Associa il sito Web a un database
 
@@ -142,20 +155,43 @@ Se stai migrando un sito web, recupera il database esistente presso il tuo vecch
 
 Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](/links/web/hosting) o [Web Cloud Databases](/links/web/databases)) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
-Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](/links/manager), seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. 
+Per creare un nuovo database in OVHcloud, clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
-Inserisci le informazioni richieste.
-
-![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Seleziona la scheda `Database`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Clicca su `Crea un database`{.action} o, se non compare, su `Azioni`{.action} > `Crea un database`{.action}. Inserisci le informazioni richieste.
+>>
+>> ![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3.3. Importare il database esistente 
 
 Se stai migrando un sito, importa il database esistente in quello appena creato. Se invece si tratta di un nuovo sito Web, passa allo step successivo.
 
-L’importazione può essere effettuata in diversi modi. OVHcloud ne propone una direttamente dallo Spazio Cliente. Accedi allo Spazio Cliente OVHcloud, clicca sui tre puntini in corrispondenza del tuo servizio e seleziona `...`{.action} in corrispondenza del tuo database e poi su `Importa un file`{.action}.
+L’importazione può essere effettuata in diversi modi. OVHcloud ne propone una direttamente dallo Spazio Cliente. Clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Seleziona la scheda `Database`{.action}.
+>>
+> **Passaggio 3**
+>>
+>> Clicca su `...`{.action} in corrispondenza del tuo database e poi su `Importa un file`{.action}.
 
 #### 3.4. Collegare il sito web al database
 

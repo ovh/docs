@@ -1,7 +1,7 @@
 ---
 title: O que fazer em caso de página "Index of"?
 excerpt: Descubra como repor o seu site online quando exibe uma página "Index of".
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -19,7 +19,7 @@ Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção "[Quer saber mais?](#go-further)" deste guia.
 >
 
 ## Requisitos
@@ -27,26 +27,15 @@ Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
 - Dispor de um [nome de domínio](/links/web/domains)
 - Ter um [serviço de alojamento web](/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Instruções
 
 ### Compreender a origem da página "Index of"
 
-O seu nome de domínio está declarado para aceder a um diretório de destino (um "`Pasta raiz`") no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Isto através do separador [Meus sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) do seu alojamento web, disponível na sua [Área de Cliente OVHcloud](/links/manager).
+O seu nome de domínio está declarado para aceder a um diretório de destino (um "`Pasta raiz`") no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Para mais informações sobre a associação de um nome de domínio com um alojamento, consulte [este guia](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
 
-Para visualizar o seu site web, terá, a partir do separador `Meus sites`{.action} do seu alojamento web, de ligar o seu nome de domínio ao site web cujo `Pasta raiz` contenha este ficheiro **index.php** ou **index.html**.
+Para visualizar o seu site web, terá de se assegurar de que a `Pasta raiz` para a qual o seu nome de domínio está declarado contém um ficheiro **index.php** ou **index.html**.
 
 > [!primary]
 >
@@ -58,9 +47,7 @@ Para visualizar o seu site web, terá, a partir do separador `Meus sites`{.actio
 
 Importou os ficheiros do seu site **domain.tld** para a pasta `www` do seu alojamento através de [FTP](/pages/web_cloud/web_hosting/ftp_connection). No entanto, o site web ao qual está associado o seu nome de domínio não está ligado a este diretório na coluna `Pasta raiz`.
 
-![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
-
-Terá de modificar a `Pasta raiz` inicialmente declarada para o seu site a partir do seu [Área de Cliente OVHcloud](/links/manager). Para isso, consulte o nosso guia "[Como modificar a pasta raiz de um site existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
+Terá de modificar a `Pasta raiz` inicialmente declarada para o seu site a partir da sua [Área de Cliente OVHcloud](/links/control-panel/web-hosting). Para isso, consulte o nosso guia "[Como modificar a pasta raiz de um site existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
 Se o seu site tiver uma configuração com Git, consulte previamente o nosso guia "[Configurar e utilizar o Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" para eliminar a ligação com Git **antes** de continuar. De facto, a modificação da pasta raiz declarada para um site não está disponível se o seu site estiver configurado com Git.
 

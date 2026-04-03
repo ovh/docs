@@ -1,7 +1,7 @@
 ---
 title: "Ripristinare i dati dello spazio di storage di un hosting Web"
 excerpt: "Questa guida ti mostra come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Obiettivo
@@ -99,7 +99,7 @@ Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui
 > In questo caso:
 >
 > - I nostri team inviano un'email al [contatto amministratore](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti) dell'hosting. 
-> - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](/links/manager). Nella sezione `Web Cloud`{.action}, clicca sul tuo servizio nella sezione `Hosting`{.action} e poi sulla scheda `Informazioni generali`{.action}.
+> - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](/links/control-panel/web-hosting).
 > - Il(i) sito(i) ospita(i) mostra(no) una pagina "403 Forbidden".
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
@@ -159,7 +159,7 @@ Questa operazione prevede diversi step. Assicurati di avere a disposizione la pa
 > Questa soluzione richiede conoscenze del software o dell’interfaccia utilizzati. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. 
 >
 
-#### 1. Scegliere il software o l’interfaccia Web da utilizzare
+#### 1 - Scegliere il software o l’interfaccia Web da utilizzare
 
 Per prima cosa, definisci il software o l'interfaccia che utilizzerai per collegarti al backup del tuo spazio di archiviazione. Se lo conosci già, passa direttamente alla fase 2. In caso contrario, ti consigliamo di utilizzare una delle due soluzioni seguenti:
 
@@ -169,17 +169,13 @@ Per prima cosa, definisci il software o l'interfaccia che utilizzerai per colleg
 
 A questo punto, prosegui con lo step successivo.
 
-#### 2. Accedere al backup
+#### 2 - Accedere al backup
 
 Dall’interfaccia o dal software selezionato, dovrai connetterti al tuo spazio di storage per accedere ai dati del backup da recuperare. Per effettuare questa operazione è necessario disporre di nome utente FTP, password e hostname del server FTP.
 
-Queste informazioni sono disponibili nella scheda `FTP - SSH`{.action} del tuo hosting.
+Queste informazioni sono disponibili nella nostra guida ["Accedi allo spazio di storage FTP del tuo hosting Web"](/pages/web_cloud/web_hosting/ftp_connection).
 
-![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
-
-Se non possiedi più la password, segui le indicazioni descritte nella guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
+Se non possiedi più la password, segui le indicazioni descritte nella guida ["Modificare la password di un utente FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Una volta effettuato il login, dovrai aggiungere al tuo nome utente FTP il suffisso corrispondente al backup che utilizzerai, come indicato qui sotto:
 
@@ -199,7 +195,7 @@ Il metodo di accesso allo spazio di storage differisce in base all’interfaccia
 >
 > Le copie di backup sono accessibili solo tramite una connessione FTP.
 
-#### 3. Recuperare i file
+#### 3 - Recuperare i file
 
 A questo punto recupera i file da ripristinare esplorando il contenuto del tuo spazio di storage. L’operazione differisce a seconda del software o dell’interfaccia utilizzati.
 
@@ -210,7 +206,7 @@ Prima di passare allo step successivo, assicurati di aver recuperato tutti i fil
 > Se utilizzi un client per accedere allo spazio di storage FTP, per effettuare questa operazione è necessario consultare la documentazione ufficiale del client.
 >
 
-#### 4. Ripristinare i file
+#### 4 - Ripristinare i file
 
 Dopo aver recuperato i file, accedi di nuovo allo storage senza aggiungere suffissi al nome utente FTP: ti connetterai al contenuto corrente del tuo storage e non a un backup precedente.
 

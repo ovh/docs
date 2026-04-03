@@ -1,7 +1,7 @@
 ---
 title: 'Resolver o erro “Site não instalado”'
 excerpt: 'Saiba como resolver o erro da página “Site não instalado”'
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo

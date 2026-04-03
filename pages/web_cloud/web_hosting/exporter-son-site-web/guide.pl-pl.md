@@ -1,7 +1,7 @@
 ---
 title: "Eksportowanie witryny internetowej"
 excerpt: "Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Wprowadzenie 
@@ -96,7 +96,7 @@ W razie potrzeby wcześniej zidentyfikuj w swoim hostingu nazwę katalogu głów
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Zalogowany dalej do swojego miejsca przechowywania, musisz tylko pobrać pliki swojej witryny internetowej, uzyskując dostęp do wcześniej zidentyfikowanego katalogu głównego.
+Nadal zalogowany do swojego miejsca przechowywania, musisz tylko pobrać pliki swojej witryny internetowej, uzyskując dostęp do wcześniej zidentyfikowanego katalogu głównego.
 
 ### 2 - Utworzenie i pobranie kopii bazy danych (opcjonalnie)
 
@@ -113,33 +113,7 @@ Jeśli korzystasz z **serwera Web Cloud Databases** w Twojej witrynie, zapoznaj 
 
 ### 3 - Pobranie logów z hostingu OVHcloud
 
-Jeśli chcesz pobrać historię logów Twojej witryny, możesz to zrobić z poziomu planu hostingu WWW.
-
-Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}.
-
-![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
-
-Następnie kliknij link pod napisem `Sprawdź logi`{.action}:
-
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
-
-Pojawi się okno z różnymi typami dostępnych logów. Są one podzielone według miesięcy:
-
-| Typ  	| Opis                                                                                                                                                                                         	|
-|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Web   	| Tutaj znajdziesz logi dotyczące odwiedzin Twojej witryny, a także działań wykonywanych z jej poziomu. Dzięki temu możesz wykryć np. próby włamania. 	|
-| FTP   	| w tych logach są przechowywane połączenia z FTP.                                                                                                                     	|
-| Error 	| różne błędy generowane przez Twoją witrynę.                                                                                                                                                    	|
-| CGI   	| przeprowadzone wywołania skryptów cgi.bin.                                                                                                                                     	|
-| out   	| statystyki hostingu w zakresie wywołań zewnętrznych.                                                                                                                  	|
-| ssh   	| te logi przedstawiają różne połączenia zrealizowane za pomocą protokołu SSH.                                                                                                                      	|
-| cron  	| wynik realizacji zaplanowanych przez Ciebie zadań.                                                                                                                                                	|
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
-
-Po wybraniu logów danego typu i z konkretnego miesiąca, są one prezentowane dzień po dniu:
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
+Zapoznaj się z naszym dedykowanym przewodnikiem: [Hosting WWW - Sprawdzanie statystyk i logów strony internetowej](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ## Sprawdź również
 

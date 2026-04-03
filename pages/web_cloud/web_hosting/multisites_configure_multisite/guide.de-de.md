@@ -1,7 +1,7 @@
 ---
 title: 'Mehrere Websites auf einem Webhosting hosten'
 excerpt: "Erfahren Sie, wie Sie verschiedene Webseiten-Installationen mit Ihrem Hosting-Paket verwalten"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

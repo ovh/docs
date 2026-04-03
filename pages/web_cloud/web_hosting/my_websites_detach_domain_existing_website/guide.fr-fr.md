@@ -1,7 +1,7 @@
 ---
 title: "Comment détacher un nom de domaine d'un site web existant ?"
 excerpt: "Découvrez comment détacher un nom de domaine ou un sous-domaine d'un site web déjà existant sur votre hébergement web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objectif

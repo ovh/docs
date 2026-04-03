@@ -1,7 +1,7 @@
 ---
 title: ¿Qué hacer en caso de página del "Index of"?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página "Index of"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -17,7 +17,7 @@ En al menos uno de los siguientes casos aparece una página **"Index of"**:
 
 > [!warning]
 >
-La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
 > Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
@@ -27,26 +27,15 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 - Disponer de un [dominio](/links/web/domains)
 - Tener un [plan de hosting](/links/web/hosting).
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Procedimiento
 
 ### Comprender el origen de la página "Index of"
 
-Su nombre de dominio está declarado para acceder a un directorio objetivo (un "`Carpeta raíz`") en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Esto se hace a través de la pestaña [Mis sitios](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su alojamiento web, disponible en su [área de cliente de OVHcloud](/links/manager).
+Su nombre de dominio está declarado para acceder a un directorio objetivo (un "`Carpeta raíz`") en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Para más información sobre la asociación de un dominio con un alojamiento, consulte [esta guía](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 La página **Index of** indica que el directorio de destino no contiene un archivo **index.php** o **index.html**. Dicho archivo constituye el "*punto de entrada*" del sitio web. El nombre de este archivo está normalizado.
 
-Para mostrar su sitio web, deberá, desde la pestaña `Mis sitios`{.action} de su alojamiento web, conectar su nombre de dominio al sitio web cuyo `Carpeta raíz` contiene el archivo **index.php** o **index.html**.
+Para mostrar su sitio web, deberá asegurarse de que la `Carpeta raíz` para la que está declarado su dominio contiene un archivo **index.php** o **index.html**.
 
 > [!primary]
 >
@@ -58,13 +47,11 @@ Para mostrar su sitio web, deberá, desde la pestaña `Mis sitios`{.action} de s
 
 Ha importado los archivos de su sitio **domain.tld** en la carpeta `www` de su alojamiento mediante [FTP](/pages/web_cloud/web_hosting/ftp_connection). Sin embargo, el sitio web al que está asociado su nombre de dominio no está conectado a este directorio en la columna `Carpeta raíz`.
 
-![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
-
-Deberá modificar la `Carpeta raíz` declarada inicialmente para su sitio web desde su [área de cliente de OVHcloud](/links/manager). Para ello, consulte nuestra guía "[Cómo modificar la carpeta raíz de un sitio web existente](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
+Deberá modificar la `Carpeta raíz` declarada inicialmente para su sitio web desde su [área de cliente de OVHcloud](/links/control-panel/web-hosting). Para ello, consulte nuestra guía "[Cómo modificar la carpeta raíz de un sitio web existente](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
 Si su sitio web dispone de una configuración con Git, consulte previamente nuestra guía "[Configurar y utilizar Git con un alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" para eliminar la asociación con Git **antes** de continuar. De hecho, la modificación de la carpeta raíz declarada para un sitio web no está disponible si su sitio web está configurado con Git.
 
-Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacie la caché del navegador si fuera necesario.
+Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacíe la caché del navegador si fuera necesario.
 
 Asegúrese también de que el directorio de destino contiene un archivo **index.php** o **index.html**.
 
@@ -78,6 +65,6 @@ Asegúrese también de que el directorio de destino contiene un archivo **index.
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+Si desea ayuda para configurar sus soluciones de OVHcloud, consulte nuestras [ofertas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Przywracanie plików z kopii zapasowej OVHcloud"
 excerpt: "Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Wprowadzenie 
@@ -58,7 +58,7 @@ Określ również metodę przywracania, której użyjesz.
 >
 > Nasze roboty instalują na Twoim hostingu kopię zapasową, zanim usuną zawartość FTP, która zostanie zastąpiona przywróceniem danych.
 
-Aby sprawdzić rozmiar używany na Twoim hostingu,  kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+Aby sprawdzić rozmiar używany na Twoim hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -99,10 +99,10 @@ Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestr
 > W tym przypadku:
 >
 > - Do [kontaktu administratora](/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami) hostingu wysyłamy e-mail z naszymi zespołami. 
-> - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](/links/manager). W sekcji `Web Cloud`{.action} kliknij Twoją usługę w sekcji `Hosting`{.action}, a następnie zakładkę `Informacje ogólne`{.action}.
+> - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](/links/control-panel/web-hosting).
 > - Strona (-y), na której (-ych) hostowane są strony "403 Forbidden".
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroków.
 
 > [!tabs]
 > **Krok 1**
@@ -159,7 +159,7 @@ Operacja składa się z kilku etapów. Upewnij się, że posiadasz hasło użytk
 > Rozwiązanie to wymaga znajomości programu lub interfejsu, którego będziesz używał. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem programu lub interfejsu. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
-#### Etap 1: wybranie programu lub interfejsu, którego będziesz używał
+#### 1 - Wybranie programu lub interfejsu, którego będziesz używał
 
 Na wstępie określ program lub interfejs, którego będziesz używał do łączenia się z kopią zapasową Twojej przestrzeni dyskowej. Jeśli już wybrałeś program lub interfejs, przejdź od razu do etapu 2. W przeciwnym razie zalecamy użycie jednego z trzech rozwiązań:
 
@@ -169,17 +169,13 @@ Na wstępie określ program lub interfejs, którego będziesz używał do łącz
 
 Kiedy jesteś gotowy do rozpoczęcia operacji, przejdź do następnego etapu.
 
-#### Etap 2: logowanie do kopii zapasowej przestrzeni dyskowej
+#### 2 - Logowanie do kopii zapasowej przestrzeni dyskowej
 
 Najpierw należy określić oprogramowanie lub interfejs, którego będą Państwo używać do łączenia się z kopią zapasową przestrzeni dyskowej. Jeśli już je znają, proszę przejść od razu do kroku 2. W przeciwnym razie zalecamy skorzystanie z jednego z dwóch poniższych rozwiązań:
 
-Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hostingu.
+Możesz odnaleźć te informacje w naszym przewodniku ["Logowanie do przestrzeni dyskowej FTP hostingu"](/pages/web_cloud/web_hosting/ftp_connection).
 
-![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
-
-Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
+Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku ["Zmiana hasła do konta FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Uzupełnij Twoją nazwę głównego użytkownika („login”) FTP sufiksem wskazującym kopię zapasową, do której chcesz się zalogować. W uzyskaniu dostępu do wybranej kopii zapasowej pomogą Ci poniższe wskazówki:
 
@@ -199,7 +195,7 @@ Metoda logowania do Twojej przestrzeni dyskowej jest różna w zależności od u
 >
 > Kopie zapasowe są dostępne wyłącznie za pośrednictwem połączenia FTP.
 
-#### Etap 3: pobieranie wybranego pliku lub plików
+#### 3 - Pobieranie wybranego pliku lub plików
 
 Po zalogowaniu się, pobierz wybrany plik lub pliki. W tym celu przejrzyj zawartość Twojej przestrzeni dyskowej i zapisz lokalnie pliki. Operacja przebiega różnie w zależności od używanego programu lub interfejsu.
 
@@ -210,7 +206,7 @@ Zanim przejdziesz do kolejnego etapu, upewnij się, że pobrałeś wszystkie pli
 > Jeśli do logowania się do przestrzeni dyskowej FTP używasz programu, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc prawidłowo przeprowadzić operacje.
 >
 
-#### Etap 4: przywracanie wybranego pliku lub plików
+#### 4 - Przywracanie wybranego pliku lub plików
 
 Kiedy masz już plik lub pliki, zaloguj się ponownie do przestrzeni dyskowej. Nie dodawaj jednak sufiksu do Twojego użytkownika FTP, aby się zalogować. Jeśli nie wpiszesz sufiksu, zyskasz dostęp do aktualnej zawartości Twojej przestrzeni dyskowej, a nie to wcześniejszej kopii zapasowej.
 

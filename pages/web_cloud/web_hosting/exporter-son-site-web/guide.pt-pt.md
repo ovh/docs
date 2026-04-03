@@ -1,7 +1,7 @@
 ---
 title: "Exportar o seu website"
 excerpt: "Descubra como exportar o seu website OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -73,9 +73,9 @@ Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no es
 
 #### 1.2 Transferir os ficheiros a partir do seu espaço de armazenamento
 
-Uma vez ligado ao seu espaço de armazenamento e consoante os seus sítios Web alojados, vários diretórios podem aparecer.
+Uma vez ligado ao seu espaço de armazenamento e consoante os seus sítios web alojados, vários diretórios podem aparecer.
 
-Se necessário, identifique previamente no seu alojamento Web o nome do diretório principal em que o seu sítio Web está armazenado. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+Se necessário, identifique previamente no seu alojamento web o nome do diretório principal em que o seu sítio web está armazenado. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -92,11 +92,11 @@ Se necessário, identifique previamente no seu alojamento Web o nome do diretór
 >>
 > **Etapa 3**
 >>
->> Na tabela que aparece, para o sítio Web desejado, veja o `Pasta raiz`{.action} que aparece.
+>> Na tabela que aparece, para o sítio web desejado, veja o `Pasta raiz`{.action} que aparece.
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Ainda ligado ao seu espaço de armazenamento, basta descarregar os ficheiros do seu sítio Web ao aceder ao diretório principal identificado anteriormente.
+Ainda ligado ao seu espaço de armazenamento, basta descarregar os ficheiros do seu sítio web ao aceder à pasta raiz identificada anteriormente.
 
 ### 2 - Recuperar o backup da sua base de dados (opcional) 
 
@@ -113,33 +113,7 @@ Se utiliza uma base de dados **Web Cloud Databases** para o seu website, consult
 
 ### 3 - Recuperar os logs do seu alojamento OVHcloud
 
-Se deseja guardar o histórico dos logs do seu website, pode aceder aos logs no seu alojamento.
-
-Clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique no separador `Estatísticas e logs`{.action}.
-
-![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
-
-A seguir, clique na ligação sob a menção `Consultar os logs`{.action}:
-
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
-
-Aparece uma janela com os diferentes tipos de logs disponíveis.  Estão classificados por mês:
-
-| Tipo  	| Descrição                                                                                                                                                                                         	|
-|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Web   	| Encontre aqui os diferentes logs de consulta do seu site, assim como as diferentes ações realizadas a partir do seu site. Isto permite, por exemplo, detetar tentativas de pirataria. 	|
-| FTP   	| as várias ligações FTP serão guardadas e armazenadas nestes logs.                                                                                                                     	|
-| Error 	| os vários erros gerados pelo seu site.                                                                                                                                                    	|
-| CGI   	| as várias chamadas para os scripts do cgi.bin que foram feitas.                                                                                                                                     	|
-| out   	| as estatísticas do seu alojamento sobre as várias chamadas externas efetuadas.                                                                                                                  	|
-| ssh   	| estes logs indicam as diferentes ligações feitas com o protocolo SSH.                                                                                                                      	|
-| cron  	| o resultado da execução das suas tarefas planeadas.                                                                                                                                                	|
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
-
-Quando seleciona o tipo de logs para o mês que mais lhe interessa, estes são arquivados por dia:
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
+Consulte o nosso guia dedicado: [Alojamento web - Consultar as estatísticas e os logs de um site](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ## Quer saber mais?
 

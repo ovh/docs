@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Entorno, versión PHP, .ovhconfig"
 excerpt: "Descubra cómo cambiar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el .ovhconfig de un alojamiento web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

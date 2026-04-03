@@ -1,7 +1,7 @@
 ---
 title: Cosa fare in caso di pagina "Index of"?
 excerpt: Come caricare il tuo sito online, quando visualizza una pagina "Index of"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Obiettivo
@@ -13,7 +13,7 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 
 ![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
 
-**Questa guida ti mostra come correggere la visualizzazione di una pagina "Index of"**.
+**Questa guida ti mostra come correggere la visualizzazione di una pagina "Index of".**
 
 > [!warning]
 >
@@ -26,30 +26,19 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 - Disporre di un [dominio](/links/web/domains)
 - Disporre di una [soluzione di hosting Web](/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Procedura
 
 ### Comprendere l'origine della pagina "Index of"
 
-Il tuo dominio è dichiarato per accedere a una directory di destinazione (una "`Cartella di root`") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. Questo tramite la scheda [I miei siti](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting web presente nel tuo [Spazio Cliente OVHcloud](/links/manager).
+Il tuo dominio è dichiarato per accedere a una directory di destinazione (una "`Cartella di root`") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. Per ulteriori informazioni sull'associazione di un dominio con un hosting, consulta [questa guida](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-La pagina **Index of** indica che la directory di destinazione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*"del tuo sito Web. Il nome del file è normalizzato.
+La pagina **Index of** indica che la directory di destinazione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito Web. Il nome del file è normalizzato.
 
-Per visualizzare il tuo sito web, dovrai quindi, dalla scheda `I miei siti`{.action} del tuo hosting web, collegare il tuo dominio al sito web il cui `Cartella di root` contiene il file **index.php** o **index.html**.
+Per visualizzare il tuo sito web, dovrai assicurarti che la `Cartella di root` per cui il tuo dominio è dichiarato contenga un file **index.php** o **index.html**.
 
 > [!primary]
 >
-> Per collegare temporaneamente il tuo dominio a una `Cartella root` che non contiene file **index.php** o **index.html***, puoi vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questo [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+> Per collegare temporaneamente il tuo dominio a una `Cartella root` che non contiene file **index.php** o **index.html**, puoi vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questo [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
 > Ti consigliamo di contattare un [fornitore specializzato](/links/partner) se riscontri difficoltà nell'implementare questa configurazione. Infatti, i nostri team di supporto non saranno in grado di fornirti un supporto per qualsiasi modifica alla programmazione interna del tuo sito web.
 
@@ -57,13 +46,11 @@ Per visualizzare il tuo sito web, dovrai quindi, dalla scheda `I miei siti`{.act
 
 Hai importato i file del tuo sito **domain.tld** nella cartella `www` del tuo spazio di storage del tuo hosting Web tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Tuttavia, il sito web al quale è associato il tuo dominio non è collegato a questa directory nella colonna `Cartella di root`.
 
-![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
-
-Dovrai modificare la `Cartella di root` dichiarata inizialmente per il tuo sito web dal tuo [Spazio Cliente OVHcloud](/links/manager). Per farlo, consulta la nostra guida "[Come modificare la cartella di root di un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
+Dovrai modificare la `Cartella di root` dichiarata inizialmente per il tuo sito web dal tuo [Spazio Cliente OVHcloud](/links/control-panel/web-hosting). Per farlo, consulta la nostra guida "[Come modificare la cartella di root di un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
 Se il tuo sito web dispone di una configurazione con Git, consulta in precedenza la nostra guida « [Configurare e utilizzare Git con un hosting Web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » per rimuovere l'associazione con Git **prima** di procedere. Infatti, la modifica della cartella di root dichiarata per un sito web non è disponibile se il tuo sito web è configurato con Git.
 
-e verifica che il tuo sito venga visualizzato correttamente. In caso contrario, riavvia il tuo dispositivo e svuota la cache del tuo browser se necessario.
+Verifica che il tuo sito venga visualizzato correttamente. In caso contrario, riavvia il tuo dispositivo e svuota la cache del tuo browser se necessario.
 
 Assicurati inoltre che nella tua directory di destinazione sia presente un file **index.php** o **index.html**.
 

@@ -1,7 +1,7 @@
 ---
 title: "Restaurar o espaço de armazenamento do alojamento web"
 excerpt: "Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -99,7 +99,7 @@ Aceda à informação correspondente ao método de restauração escolhido.
 > Nesse caso:
 >
 > - As nossas equipas enviam um e-mail ao [administrador](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
-> - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](/links/manager). Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
+> - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](/links/control-panel/web-hosting).
 > - O(s) site(s) alojado(s) apresenta(m) uma página "403 Forbidden".
 
 Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
@@ -173,13 +173,9 @@ Assim que estiver pronto para continuar a operação, avance para o passo seguin
 
 A partir da interface ou do programa selecionado, deverá ligar-se ao seu espaço de armazenamento para aceder aos dados da cópia de segurança que pretende recuperar. Para isso, deverá ter um nome de utilizador FTP, a respetiva palavra-passe e o nome de host do seu servidor FTP.
 
-Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojamento.
+Pode consultar estas informações no nosso manual ["Aceder ao espaço de armazenamento FTP do alojamento web"](/pages/web_cloud/web_hosting/ftp_connection).
 
-![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
-
-Caso não tenha a palavra-passe do utilizador FTP, consulte o manual "[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
+Caso não tenha a palavra-passe do utilizador FTP, consulte o manual ["Alterar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Deverá adicionar um sufixo ao seu nome de utilizador (ou “login”) FTP principal, especificando a cópia de segurança à qual quer aceder. A seguir, poderá encontrar alguns exemplos sobre como aceder à cópia de segurança desejada.
 

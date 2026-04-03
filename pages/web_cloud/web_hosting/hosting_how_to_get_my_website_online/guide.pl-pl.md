@@ -1,7 +1,7 @@
 ---
 title: "Uruchomienie strony WWW na hostingu"
 description: "Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Wprowadzenie 
@@ -116,15 +116,28 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać do
 
 Po zalogowaniu się do swojej przestrzeni dyskowej, wystarczy, że wgrasz pliki swojej strony internetowej. **Zachęcamy Cię, byś był szczególnie uważny, wybierając katalog, do którego chcesz przesłać pliki**, zwłaszcza jeśli na swoim hostingu zadeklarowałeś wiele stron internetowych.
 
-Aby sprawdzić folder, w którym należy opublikować stronę internetową, przejdź do karty `Moje strony`{.action} w Panelu klienta OVHcloud. W wyświetlonej tabeli, dla wybranej strony internetowej, sprawdź `Katalog główny`{.action}, który się pokazuje. Następnie opublikuj pliki strony internetowej w tym folderze.
+Aby sprawdzić folder, w którym należy opublikować stronę internetową, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Przejdź do karty `Moje strony`{.action}. W wyświetlonej tabeli, dla wybranej strony internetowej, sprawdź `Katalog główny`{.action}, który się pokazuje.
+>>
+>> ![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Następnie opublikuj pliki strony internetowej w tym folderze.
 
 Możesz zauważyć na swojej przestrzeni dyskowej plik o nazwie „index.html”. Może on zostać utworzony przez OVHcloud podczas instalacji Twojego hostingu, aby wyświetlić stronę domyślną na Twojej stronie internetowej. Jeśli tak jest, nie zapomnij go usunąć podczas wdrażania swoich plików.
 
 > [!primary]
 >
 > Plik "index.php" zawsze przejdzie przez plik "index.html". W związku z tym, gdy oba są obecne, wywoływany jest tylko "index.php".
-
-![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3 - Powiązanie strony WWW z bazą danych
 
@@ -144,19 +157,43 @@ Jeśli przenosisz stronę internetową, pobierz istniejącą bazę danych ze swo
 
 Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](/links/web/hosting),[Web Cloud Databases](/links/web/databases)), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
-Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](/links/manager) i kliknij `Hosting`{.action}. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
+Jeśli chcesz utworzyć nową bazę danych w OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Następnie kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
-
-![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Przejdź do zakładki `Baza danych`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
+>>
+>> ![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3.3. Import istniejącej bazy danych
 
 Jeśli przenosisz stronę WWW do OVHcloud, zaimportuj istniejącą bazę danych do nowo utworzonej bazy. W przypadku nowej strony, przejdź do kolejnego etapu.
 
-Istnieje kilka metod importu. OVHcloud oferuje jedną z nich w Panelu klienta. Po kliknięciu na listę baz danych utworzonych w Twojej usłudze w Panelu klienta OVHcloud kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
+Istnieje kilka metod importu. OVHcloud oferuje jedną z nich w Panelu klienta. Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Przejdź do zakładki `Baza danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
 
 #### 3.4. Połączenie strony internetowej z bazą danych
 

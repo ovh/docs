@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Ambiente, versione PHP, .ovhconfig"
 excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e .ovhconfig di un hosting Web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

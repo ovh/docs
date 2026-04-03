@@ -1,7 +1,7 @@
 ---
 title: "Restaurer l'espace de stockage de son hébergement web"
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objectif
@@ -99,7 +99,7 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 > Dans ce cas de figure :
 >
 > - Un e-mail est envoyé au [contact administrateur](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
-> - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](/links/manager). Dans la partie `Web Cloud`{.action}, cliquez sur votre service dans la section `Hébergements`{.action} puis sur l'onglet `Informations générales`{.action}.
+> - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](/links/control-panel/web-hosting).
 > - Le(s) site(s) hébergé(s) affiche(nt) une page « 403 Forbidden ».
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
@@ -159,9 +159,9 @@ La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en posse
 > Cette solution requiert des connaissances à propos du logiciel ou de l'interface que vous allez utiliser. Nous vous proposons quelques informations sur la manière de procéder ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de vous rapprocher de l’éditeur du logiciel ou de l’interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance.
 >
 
-#### Étape 1 : définir le logiciel ou l'interface à utiliser
+#### 1 - Définir le logiciel ou l'interface à utiliser
 
-Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des deux solutions suivantes :
+Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à la section 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des deux solutions suivantes :
 
 - **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation « [Utiliser le logiciel FileZilla avec son hébergement web](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) », vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
@@ -169,17 +169,13 @@ Dans un premier temps, définissez le logiciel ou l'interface que vous allez uti
 
 Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape suivante.
 
-#### Étape 2 : se connecter à la sauvegarde
+#### 2 - Se connecter à la sauvegarde
 
 Depuis l'interface ou le logiciel sélectionné, vous allez devoir vous connecter à votre espace de stockage pour accéder aux données de la sauvegarde que vous voulez récupérer. Pour cela, vous devrez être en possession du nom d'utilisateur FTP, de son mot de passe et du nom d'hôte de votre serveur FTP.
 
-Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement.
+Vous pouvez retrouver ces informations dans notre guide [« Se connecter à l’espace de stockage FTP de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection).
 
-![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
-
-Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
+Si vous n’êtes plus en possession du mot de passe de l’utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Vous devrez compléter votre nom d'utilisateur (ou « login ») FTP principal d'un suffixe déterminant la sauvegarde à laquelle vous vous connecterez. Aidez-vous des indications ci-dessous pour savoir comment accéder à la sauvegarde souhaitée :
 
@@ -199,7 +195,7 @@ La méthode pour vous connecter à votre espace de stockage diffère selon l'int
 >
 > Les sauvegardes sont accessibles uniquement via une connexion FTP.
 
-#### Étape 3 : récupérer le ou les fichiers souhaités
+#### 3 - Récupérer le ou les fichiers souhaités
 
 Une fois connecté, récupérez le ou les fichiers que vous souhaitez restaurer. Pour cela, explorez le contenu de votre espace de stockage jusqu'à ces derniers, puis récupérez-les. La manipulation diffère selon le logiciel ou l'interface que vous utilisez.
 
@@ -210,7 +206,7 @@ Avant de passer à l'étape suivante, assurez-vous d'avoir récupéré tous les 
 > Si vous utilisez un logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
 >
 
-#### Étape 4 : restaurer le ou les fichiers souhaités
+#### 4 - Restaurer le ou les fichiers souhaités
 
 Une fois le ou les fichiers en votre possession, connectez-vous de nouveau à votre espace de stockage. Cependant, n'ajoutez pas de suffixe à votre utilisateur FTP pour vous connecter. En ne renseignant pas ce suffixe, vous vous connecterez au contenu actuel de votre espace de stockage et non à une sauvegarde antérieure.
 

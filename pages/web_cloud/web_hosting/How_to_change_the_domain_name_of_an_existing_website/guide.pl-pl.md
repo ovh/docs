@@ -1,7 +1,7 @@
 ---
 title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Wprowadzenie
@@ -43,20 +43,33 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 
 Aby zmienić domenę dostępu do Twojej strony WWW, należy wykonać kilka kroków w określonej kolejności.
 
-### Etap 1 - zadeklarowanie nowej domeny na hostingu <a name="step1"></a>
+### 1 - Zadeklarowanie nowej domeny na hostingu <a name="step1"></a>
 
 Zadeklaruj nową nazwę domeny, postępując zgodnie z naszym przewodnikiem „[Jak przypisać nazwę domeny do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Zadeklaruj również jej poddomenę w `www`, jeśli chcesz, na przykład, aby `www.NewDomain.tld` również wyświetlała Twoją stronę oprócz `NewDomain.tld`.
 
 Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 - Twoja nowa domena musi wskazywać na ten sam "folder główny", który jest używany do łączenia się ze stroną WWW.
-- Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web cloud`{.action}, kliknij przycisk `Hosting`{.action}, wybierz hosting i pobierz **IPv4** w zakładce `Informacje ogólne`{.action}.
+- Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, kliknij poniższe zakładki, aby wyświetlić kolejno **3** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Kliknij zakładkę `Informacje ogólne`{.action}.
+>>
+> **Krok 3**
+>>
+>> Pobierz wyświetlony **IPv4**.
 
 > [!warning]
 >
-> Jeśli aktywujesz opcje **IP kraju** lub **CDN** dla swojej nowej domeny, użyj właściwego adresu IP w naszej dokumentacji zawierającej listę [wszystkie adresy IP hostingu współdzielonego](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Jeśli aktywujesz opcje **IP kraju** lub **CDN** dla swojej nowej domeny, użyj właściwego adresu IP w naszej dokumentacji zawierającej listę [wszystkie adresy IP hostingu współdzielonego](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 >
-> Aby odnaleźć numer klastra, w którym znajduje się Twój hosting, przejdź do części `Web cloud`{.action}, kliknij `Hosting plans`{.action}, wybierz hosting, a następnie zakładkę `FTP-SSH`{.action}. Numer klastra będziesz wyświetlał w formularzu **Serwer FTP i SFTP**: `ftp.cluster0XX.ovh.net` (gdzie `X` oznacza numer klastra).
+> Aby odnaleźć numer klastra, w którym znajduje się Twój hosting, zapoznaj się z naszym przewodnikiem "[Hosting www - Poznaj klaster i syn](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 >
 
 > **Certyfikaty SSL**
@@ -76,7 +89,7 @@ Jeśli wszystkie czynności zostały poprawnie wykonane, deklaracje Twoich domen
 
 Jeśli Twoja strona WWW nie używa baz danych i/lub nie przeprowadzasz przepisywania adresu URL dla Twojej strony WWW, ta ostatnia musi być wyświetlana poprawnie dla Twojej nowej domeny. W takim przypadku przejdź bezpośrednio do [etapu 3](#step3) niniejszego przewodnika. Jeśli tak nie jest, przejdź do poniższego etapu 2.
 
-### Etap 2 - przepisanie adresów URL na Twojej stronie WWW z nową domeną
+### 2 - Przepisanie adresów URL na Twojej stronie WWW z nową domeną
 
 Większość stron używa baz danych do działania. Drzewo ostatnich jest zazwyczaj zbudowane wokół domeny pierwotnie używanej przez Twoją stronę. W przypadku tych stron konieczne są dalsze działania.
 
@@ -120,7 +133,7 @@ Jeśli korzystałeś z usług dostawcy podczas tworzenia strony, skontaktuj się
 > Po zakończeniu etapu 2 Twoja strona WWW powinna wyświetlać się z Twoją nową domeną.
 >
 
-### Etap 3 - usunięcie poprzedniej nazwy domeny <a name="step3"></a>
+### 3 - Usunięcie poprzedniej nazwy domeny <a name="step3"></a>
 
 Aby uniknąć „*Duplicate-content*” i po w pełni funkcjonalnej nowej nazwie domeny z Twoją stroną internetową, należy usunąć deklarację starej nazwy domeny ze swojej strony internetowej, korzystając z przewodnika „[Jak odłączyć nazwę domeny od istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)”.
 
@@ -133,7 +146,7 @@ Po odłączeniu starej nazwy domeny od witryny znajdującej się na Twoim serwis
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Lista adresów IP hostingu www](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[Lista adresów IP hostingu www](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
 [Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

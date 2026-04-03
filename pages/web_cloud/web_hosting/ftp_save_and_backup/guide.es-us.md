@@ -1,7 +1,7 @@
 ---
 title: "Restaurar el espacio de almacenamiento de un alojamiento web"
 excerpt: "Descubra cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -99,7 +99,7 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 > En este caso:
 >
 > - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
-> - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](/links/manager). En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
+> - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](/links/control-panel/web-hosting).
 > - Los sitios web alojados muestran una página "403 Forbidden".
 
 Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
@@ -159,7 +159,7 @@ Esta operación se realiza en varios pasos. Asegúrese de tener la contraseña d
 > Para realizar las siguientes acciones, debe tener conocimientos sobre el programa o la interfaz web que vaya a utilizar. A continuación ofrecemos algunas indicaciones sobre cómo realizarlas. No obstante, si tiene alguna duda, le recomendamos que contacte con un proveedor de servicios especializado o con el editor del programa o la interfaz. Nosotros no podremos asistirle.
 >
 
-#### 1. Elegir el programa o la interfaz web que vaya a utilizar
+#### 1 - Elegir el programa o la interfaz web que vaya a utilizar
 
 En primer lugar, defina el software o la interfaz que va a utilizar para conectarse a la copia de seguridad de su espacio de almacenamiento. Si ya lo sabe, pase directamente al paso 2. De lo contrario, le recomendamos que utilice una de las dos soluciones siguientes:
 
@@ -169,17 +169,13 @@ En primer lugar, defina el software o la interfaz que va a utilizar para conecta
 
 Una vez que esté listo para continuar, vaya al siguiente paso.
 
-#### 2. Conectarse a la copia de seguridad
+#### 2 - Conectarse a la copia de seguridad
 
 Una vez en la interfaz web o el programa elegido, deberá conectarse a su espacio de almacenamiento para acceder a los datos de la copia de seguridad que quiera recuperar. Para realizar esta operación, necesitará el nombre de usuario FTP, la contraseña y el nombre de host del servidor FTP.
 
-Puede consultar esta información en la pestaña `FTP - SSH`{.action} de su alojamiento.
+Puede consultar esta información en nuestra guía ["Conectarse al espacio de almacenamiento FTP de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection).
 
-![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
-
-Si no tiene la contraseña FTP, siga las indicaciones de la guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
+Si no tiene la contraseña FTP, siga las indicaciones de la guía ["Cambiar la contraseña de un usuario FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Al conectarse, deberá añadir a su nombre de usuario FTP el sufijo correspondiente a la copia de seguridad que desee, como se indica en la siguiente tabla:
 
@@ -199,7 +195,7 @@ La forma de conectarse al espacio de almacenamiento varía en función de la int
 >
 > Las copias de seguridad solo están accesibles a través de una conexión FTP.
 
-#### 3. Descargar los archivos
+#### 3 - Descargar los archivos
 
 Una vez que se haya conectado, deberá descargar los archivos que quiera restaurar. Para ello, navegue por el contenido de su espacio de almacenamiento y descargue los archivos. La operación varía en función de la interfaz web o el programa que utilice.
 
@@ -210,7 +206,7 @@ Antes de continuar en el siguiente paso, asegúrese de haber descargado todos lo
 > Si utiliza un programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
 >
 
-#### 4. Restaurar los archivos 
+#### 4 - Restaurar los archivos
 
 Una vez que haya descargado los archivos, vuelva a conectarse al espacio de almacenamiento, pero esta vez sin añadir ningún sufijo al usuario FTP. Así se conectará al contenido actual del espacio de almacenamiento y no a una copia de seguridad anterior.
 

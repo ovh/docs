@@ -1,7 +1,7 @@
 ---
 title: "View and manage all your websites from the OVHcloud Control Panel"
 excerpt: "Find out how to view and manage all of your websites via the OVHcloud Control Panel"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Jak przypisać nazwę domeny do istniejącej strony internetowej ?"
 excerpt: "Dowiedz się, jak przypisać nazwę domeny lub poddomeny do istniejącej strony internetowej na Twojej ofercie hostingu"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

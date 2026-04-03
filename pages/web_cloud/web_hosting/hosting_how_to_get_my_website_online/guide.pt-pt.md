@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Sumário
@@ -116,15 +116,28 @@ Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pod
 
 Depois de ligado ao seu espaço de armazenamento, basta carregar os ficheiros do seu site. **Convidamo-lo a prestar especial atenção ao diretório em que vai carregar os ficheiros**, nomeadamente se declarou vários sites web no seu alojamento web.
 
-Para verificar a pasta em que o site web deve ser publicado, posicione-se na aba `Meus sites`{.action} a partir do seu área de cliente OVHcloud. Na tabela que aparece, para o site web desejado, veja o `Pasta raiz`{.action} que aparece. Publique então os ficheiros do site web nessa pasta.
+Para verificar a pasta em que o site web deve ser publicado, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Aceda ao separador `Meus sites`{.action}. Na tabela que aparece, para o site web desejado, veja o `Pasta raiz`{.action} que aparece.
+>>
+>> ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Publique então os ficheiros do site web nessa pasta.
 
 Pode acontecer que encontre no seu espaço de armazenamento um ficheiro intitulado "index.html". Este pode ter sido criado pela OVHcloud durante a instalação do seu alojamento web para mostrar uma página predefinida no seu site web. Se for esse o caso, não se esqueça de o eliminar ao carregar os seus ficheiros.
 
 > [!primary]
 >
 > Um ficheiro "index.php" tomará sempre o controlo sobre um ficheiro "index.html". Por conseguinte, quando ambos estiverem presentes, apenas será chamado "index.php".
-
-![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3 - Associar o site a uma base de dados
 
@@ -144,19 +157,43 @@ Se está a migrar um site web, recupere a base de dados existente no seu antigo 
 
 Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](/links/web/hosting) ou [Web Cloud Databases](/links/web/databases)), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
 
-Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente OVHcloud](/links/manager) e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
+Se pretende criar uma nova base de dados na OVHcloud, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
-
-![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Base de dados`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
+>>
+>> ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3.3. Importar a base de dados existente 
 
 Se estiver a migrar um site, importe a base de dados existente para a que acabou de criar. Se se trata de um novo site, prossiga para a etapa seguinte.
 
-A importação pode ser feita de várias formas. A OVHcloud disponibiliza uma através da Área de Cliente. Na Área de Cliente OVHcloud, clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Importar ficheiro`{.action}.
+A importação pode ser feita de várias formas. A OVHcloud disponibiliza uma através da Área de Cliente. Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Base de dados`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Importar ficheiro`{.action}.
 
 #### 3.4. Associar o site web à base de dados
 

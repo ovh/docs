@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Como alterar o domínio de um site existente"
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -43,20 +43,33 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 
 Para alterar o domínio de acesso ao seu website, deverá realizar várias etapas por uma ordem precisa.
 
-### Etapa 1 - declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
+### 1 - Declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
 
 Declare o seu novo nome de domínio seguindo o nosso guia « [Como associar um nome de domínio a um site existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Declare também o seu subdomínio em `www` se quiser, por exemplo, que `www.NewDomain.tld` também mostre o seu site, em adição a `NewDomain.tld`.
 
 Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
 - O seu novo domínio deve apontar para a mesma "pasta raiz" que o domínio utilizado atualmente para aceder ao seu site.
-- Verifique que o seu novo domínio aponta para o endereço IP correto do seu alojamento partilhado. Para obter o endereço IP, aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web cloud`{.action}, clique nos `Alojamentos`{.action}, selecione o seu alojamento e recupere **o IPv4** no separador `Informações gerais`{.action}.
+- Verifique que o seu novo domínio aponta para o endereço IP correto do seu alojamento partilhado. Para obter o endereço IP, clique nos separadores abaixo para ver sucessivamente as **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Informações gerais`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Recupere o **IPv4** apresentado.
 
 > [!warning]
 >
 > Se ativar as opções **IP do país** ou **CDN** com o seu novo domínio, utilize o endereço IP correto através do nosso manual de recenseamento [o conjunto dos endereços IP dos nossos alojamentos partilhados](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
-> Para encontrar o número do cluster onde está o seu alojamento, aceda à parte `Web cloud`{.action}, clique em `Alojamentos`{.action}, selecione o separador `FTP-SSH`{.action}. Visualizará o número do cluster no formulário **Servidor FTP e SFTP**: `ftp.cluster0XX.ovh.net` (onde os `X` representam o número de cluster).
+> Para encontrar o número do cluster onde está o seu alojamento, consulte o nosso guia "[Alojamento web - Como conhecer o seu cluster e o seu filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 >
 
 > **Certificados SSL**
@@ -76,7 +89,7 @@ Se todas as ações foram corretamente realizadas, as declarações dos seus nom
 
 Se o seu website não utiliza bases de dados e/ou não efetuar uma re-escritura de URL para o seu website, este deve já ser apresentado corretamente com o seu novo domínio. Neste caso, passe diretamente para [etapa 3](#step3) deste guia. Caso contrário, consulte o passo 2 abaixo.
 
-### Etapa 2 - reescrita dos URLs no seu website com o novo domínio
+### 2 - Reescrita dos URLs no seu website com o novo domínio
 
 A maioria dos sites utiliza bases de dados para funcionar. A arborescência destas últimas é geralmente construída em torno do domínio inicialmente utilizado para o seu site. São necessárias ações suplementares para estes websites.
 
@@ -120,7 +133,7 @@ Se tiver contactado um fornecedor para a criação do seu site, contacte-o para 
 > Uma vez concluída a etapa 2, o seu site deve aparecer com o seu novo domínio.
 >
 
-### Etapa 3 - retirar o antigo nome de domínio <a name="step3"></a>
+### 3 - Retirar o antigo nome de domínio <a name="step3"></a>
 
 Para evitar o « *Duplicate-content* » e quando o seu novo nome de domínio estiver plenamente operacional com o seu site, deverá eliminar a declaração do seu antigo nome de domínio no seu site, utilizando o guia « [Como desassociar um nome de domínio de um site web existente](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 

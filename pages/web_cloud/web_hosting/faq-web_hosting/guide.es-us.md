@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Principales preguntas sobre los planes de hosting de OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>
@@ -24,12 +24,18 @@ details[open]>summary::before {
 
 /// details | ¿Cómo configurar un alojamiento web?
 
-Siga estos pasos:
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-
-Podrá gestionar allí sus certificados SSL, la versión PHP aplicada a su alojamiento web, la opción CDN, sus sitios web, las bases de datos, etc.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Podrá gestionar allí sus certificados SSL, la versión PHP aplicada a su alojamiento web, la opción CDN, sus sitios web, las bases de datos, etc.
 
 > [!success]
 >
@@ -39,12 +45,20 @@ Podrá gestionar allí sus certificados SSL, la versión PHP aplicada a su aloja
 
 /// details | He olvidado la contraseña de acceso a la cuenta en la que se encuentra mi alojamiento web, ¿qué hago?
 
-Si ha olvidado su ID de cliente de OVHcloud o la contraseña, siga estos pasos:
+Si ha olvidado su ID de cliente de OVHcloud o la contraseña, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Acceda a la [interfaz de conexión al área de cliente de OVHcloud](/links/manager).
-{.action} 2. Haga clic en el enlace `¿Ha olvidado el identificador o la contraseña?`{.action}, situado bajo la ventana de inicio de sesión.
-3. Introduzca su ID de cliente de OVHcloud (por ejemplo, **aa00000-ovh**) o la dirección de correo electrónico de contacto asociada a su ID de cliente de OVHcloud.
-4. Haga clic en el botón `Enviar`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la [interfaz de conexión al área de cliente de OVHcloud](/links/manager) y haga clic en el enlace `¿Ha olvidado el identificador o la contraseña?`{.action}, situado bajo la ventana de inicio de sesión.
+>>
+> **Etapa 2**
+>>
+>> Introduzca su ID de cliente de OVHcloud (por ejemplo, **aa00000-ovh**) o la dirección de correo electrónico de contacto asociada a su ID de cliente de OVHcloud.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en el botón `Enviar`{.action}.
 
 El procedimiento de restauración se enviará a su dirección de correo electrónico de contacto.
 
@@ -56,11 +70,18 @@ El procedimiento de restauración se enviará a su dirección de correo electró
 
 /// details | ¿Cómo gestionar la contraseña del espacio de almacenamiento FTP de un alojamiento web?
 
-Siga estos pasos:
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. Abra la pestaña `FTP - SSH`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Abra la pestaña `FTP - SSH`{.action}.
 
 Desde ahí podrá cambiar la contraseña FTP de su alojamiento web.
 
@@ -76,11 +97,18 @@ Desde ahí podrá cambiar la contraseña FTP de su alojamiento web.
 >
 > Si cambia la contraseña de una base de datos utilizada por uno de sus sitios web, actualícela también en el archivo de configuración del sitio web correspondiente. De lo contrario, el sitio web se desconectará de la base de datos y no funcionará.
 
-Siga estos pasos:
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 
 Desde ahí podrá cambiar las contraseñas de las bases de datos asociadas a su alojamiento web.
 
@@ -92,12 +120,20 @@ Desde ahí podrá cambiar las contraseñas de las bases de datos asociadas a su 
 
 /// details | ¿Cómo cambiar la contraseña de una dirección de correo asociada a mi alojamiento web?
 
-Siga estos pasos:
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Correo electrónico`{.action} (o en el menú `MX Plan`{.action} si utiliza la versión beta del área de cliente de OVHcloud) y seleccione el dominio correspondiente.
-3. En la nueva página, haga clic en la pestaña `Correo electrónico`{.action}.
-4. En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la dirección de correo electrónico correspondiente y seleccione `Cambiar la contraseña`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [MX Plan](/links/control-panel/web-mx-plan) y seleccione el nombre de dominio correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Correo electrónico`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la dirección de correo electrónico correspondiente y seleccione `Cambiar la contraseña`{.action}.
 
 Desde ahí podrá cambiar la contraseña de su dirección de correo (asegúrese de respetar la política de contraseñas que se indica en la ventana de entrada).
 
@@ -160,11 +196,18 @@ Estos son los pasos clave que debe seguir:
 
 /// details | ¿Cómo alojar varios sitios web en un mismo alojamiento web?
 
-Si su [alojamiento web](/links/web/hosting) es compatible, siga estos pasos:
+Si su [alojamiento web](/links/web/hosting) es compatible, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 
 Podrá gestionar allí los nombres de dominio/subdominios declarados en los sitios web presentes en su alojamiento web.
 
@@ -183,13 +226,26 @@ Para que su sitio web esté accesible con una URL en HTTPS (por ejemplo, `https:
 
 OVHcloud ofrece varios [certificados SSL](/links/web/hosting-options) en los alojamientos web.
 
-Para activar un certificado SSL en un alojamiento web para su sitio web, siga estos pasos:
+Para activar un certificado SSL en un alojamiento web para su sitio web, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
-4. Elija el certificado que desee de entre los [certificados disponibles](/pages/web_cloud/web_hosting/ssl_on_webhosting).
-5. Continúe hasta finalizar la instalación del certificado SSL (habiendo validado previamente la orden de pedido si elige uno de los certificados SSL Sectigo).
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Elija el certificado que desee de entre los [certificados disponibles](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+>>
+> **Etapa 4**
+>>
+>> Continúe hasta finalizar la instalación del certificado SSL (habiendo validado previamente la orden de pedido si elige uno de los certificados SSL Sectigo).
 
 > [!success]
 >
@@ -213,12 +269,22 @@ Para contratar el plan de hosting más adaptado a sus necesidades, consulte nues
 >
 > En función de su plan de hosting actual, es posible que algunos planes no se le ofrezcan. Para más información, consulte nuestra guía "[Web hosting - Cómo mejorar su solución](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
-Una vez que haya elegido, siga estos pasos:
+Una vez que haya elegido, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la página que aparece, en el recuadro **Suscripción**, haga clic en el botón `...`{.action} a la derecha de la mención `Solución` y luego en `Cambiar de plan`{.action}.
-4. A continuación, seleccione la nueva suscripción y su duración. Acepte los contratos correspondientes y haga clic en `Enviar`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la página que aparece, en el recuadro **Suscripción**, haga clic en el botón `...`{.action} a la derecha de la mención `Solución` y luego en `Cambiar de plan`{.action}.
+>>
+> **Etapa 3**
+>>
+>> A continuación, seleccione la nueva suscripción y su duración. Acepte los contratos correspondientes y haga clic en `Enviar`{.action}.
 
 > [!success]
 >
@@ -230,12 +296,22 @@ Una vez que haya elegido, siga estos pasos:
 
 Al dar de baja o eliminar el alojamiento web, también se dará de baja la solución de correo asociada. Para conservar sus direcciones de correo, deberá desvincular la solución de correo **antes* de la baja del alojamiento web correspondiente.
 
-Siga estos pasos:
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la página que se abre, en el recuadro **Configuración**, haga clic en el botón `...`{.action} a la derecha de la mención `Direcciones de correo` y seleccione `Desvincular mi opción de correo`{.action}.
-4. Siga las instrucciones para contratar un servicio de correo independiente que le permitirá conservar sus direcciones de correo ya creadas.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la página que se abre, en el recuadro **Configuración**, haga clic en el botón `...`{.action} a la derecha de la mención `Direcciones de correo` y seleccione `Desvincular mi opción de correo`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Siga las instrucciones para contratar un servicio de correo independiente que le permitirá conservar sus direcciones de correo ya creadas.
 
 ///
 
@@ -244,12 +320,22 @@ Siga estos pasos:
 Los planes de hosting **Performance** incluyen una solución Web Cloud Databases que puede activar gratuitamente.<br>
 Al dar de baja o eliminar el alojamiento web **Performance**, también se dará de baja la solución Web Cloud Databases asociada. Para conservar su solución Web Cloud Databases, deberá desvincularla **antes* de la baja del alojamiento.
 
-Siga estos pasos:
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la página que se abre, en el recuadro **Configuración**, haga clic en el botón `...`{.action} a la derecha de la mención `Web Cloud Databases` y seleccione `Desvincular`{.action}.
-4. Siga las instrucciones para contratar una solución Web Cloud Databases independiente con el fin de conservar su solución Web Cloud Databases ya creada.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la página que se abre, en el recuadro **Configuración**, haga clic en el botón `...`{.action} a la derecha de la mención `Web Cloud Databases` y seleccione `Desvincular`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Siga las instrucciones para contratar una solución Web Cloud Databases independiente con el fin de conservar su solución Web Cloud Databases ya creada.
 
 **Esta acción es irreversible y la solución Web Cloud Databases se facturará independientemente de su alojamiento web Performance.**
 
@@ -257,12 +343,22 @@ Siga estos pasos:
 
 /// details | ¿Cómo aumentar la RAM de una solución Web Cloud Databases asociada a un alojamiento web Performance?
 
-Siga estos pasos:
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Web Cloud Databases`{.action} y seleccione la solución Web Cloud Databases correspondiente.
-3. En la página que se abre, en el recuadro **Información general**, haga clic en el botón `...`{.action} a la derecha de la mención `RAM` y luego en `Cambiar la cantidad de RAM`{.action}.
-4. Siga las instrucciones para contratar la cantidad de RAM deseada y continúe hasta la validación del pedido.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución Web Cloud Databases correspondiente.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la página que se abre, en el recuadro **Información general**, haga clic en el botón `...`{.action} a la derecha de la mención `RAM` y luego en `Cambiar la cantidad de RAM`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Siga las instrucciones para contratar la cantidad de RAM deseada y continúe hasta la validación del pedido.
 
 > [!success]
 >
@@ -281,14 +377,16 @@ Siga estos pasos:
 Existen diversos motivos por los que un sitio web no funciona correctamente.<br>
 Para identificar la causa, compruebe primero que no es necesario **renovar** ninguna de sus suscripciones.
 
-Siga estos pasos:
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
-
-> [!success]
->
-> Para más información, consulte nuestra guía "[Cómo renovar mis servicios OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services).
+>>
+> **Etapa 2**
+>>
+>> Para más información, consulte nuestra guía "[Cómo renovar mis servicios OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
 
 A continuación, consulte los [eventos en curso en nuestra infraestructura](https://www.status-ovhcloud.com/).
 
@@ -342,21 +440,41 @@ En ese caso, deberá eliminar el módulo en un clic y volver a instalarlo.
 > - [Restaurar el espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export).
 
-**Solo** después de haber realizado todas las copias de seguridad necesarias, elimine su [módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) realizando las siguientes acciones:
+**Solo** después de haber realizado todas las copias de seguridad necesarias, elimine su [módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la nueva página, haga clic en la pestaña `Módulos en un clic`{.action}.
-4. En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha en la línea del *módulo en 1 clic* correspondiente y seleccione `Eliminar el módulo`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Módulos en un clic`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha en la línea del *módulo en 1 clic* correspondiente y seleccione `Eliminar el módulo`{.action}.
 
 La eliminación del *module en 1 clic* puede tardar **varios minutos**.
 
-A continuación, elimine la base de datos asociada realizando las siguientes acciones:
+A continuación, elimine la base de datos asociada Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
-4. En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la fila de la base de datos correspondiente y seleccione `Eliminar la base de datos`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la fila de la base de datos correspondiente y seleccione `Eliminar la base de datos`{.action}.
 
 La eliminación de la base de datos asociada puede tardar **varios minutos**.
 
@@ -387,24 +505,55 @@ Si el sitio web se abre con esta URL tras una manipulación, la solución más r
 > - [Restaurar el espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export).
 
-Para restaurar el código fuente de su sitio web, siga estos pasos:
+Para restaurar el código fuente de su sitio web, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. Abra la pestaña `FTP - SSH`{.action}.
-4. En la nueva página que aparece, haga clic en el botón `Restaurar una copia de seguridad`{.action}.
-5. En la nueva ventana, seleccione la fecha de la copia de seguridad que desea restaurar y continúe hasta que comience la restauración.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Abra la pestaña `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página que aparece, haga clic en el botón `Restaurar una copia de seguridad`{.action}.
+>>
+> **Etapa 4**
+>>
+>> En la nueva ventana, seleccione la fecha de la copia de seguridad que desea restaurar y continúe hasta que comience la restauración.
 
 La restauración del espacio de almacenamiento FTP puede tardar **varios minutos**.
 
-Para restaurar una copia de seguridad de la base de datos, siga estos pasos:
+Para restaurar una copia de seguridad de la base de datos, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
-4. En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la fila de la base de datos correspondiente y seleccione `Restaurar una copia de seguridad`{.action}.
-5. En la nueva página, seleccione la copia de seguridad que quiera restaurar (**preferentemente la que corresponde a la fecha elegida para la restauración del código fuente de su sitio web (ver más arriba)**).
-6. Una vez seleccionada la copia de seguridad, haga clic en el botón `...`{.action} situado a la derecha de la copia de seguridad que quiera restaurar y seleccione `Restaurar la copia de seguridad`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la fila de la base de datos correspondiente y seleccione `Restaurar una copia de seguridad`{.action}.
+>>
+> **Etapa 4**
+>>
+>> En la nueva página, seleccione la copia de seguridad que quiera restaurar (**preferentemente la que corresponde a la fecha elegida para la restauración del código fuente de su sitio web (ver más arriba)**).
+>>
+> **Etapa 5**
+>>
+>> Una vez seleccionada la copia de seguridad, haga clic en el botón `...`{.action} situado a la derecha de la copia de seguridad que quiera restaurar y seleccione `Restaurar la copia de seguridad`{.action}.
 
 La restauración de la copia de seguridad de una base de datos puede tardar **varios minutos**.
 
@@ -425,13 +574,26 @@ Esta situación indica una configuración errónea en los [servidores DNS](/page
 
 El caso más común es el siguiente: ha contratado un dominio por separado de su alojamiento web, por lo que no se conectan automáticamente entre sí a través de la zona DNS del dominio.
 
-Para corregirlo, siga estos pasos:
+Para corregirlo, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
-3. En la nueva página, haga clic en la pestaña `Servidores DNS`{.action}.
-4. Anote los nombres de los servidores DNS indicados y acceda a la pestaña `Zona DNS`{.action} (a la derecha de la pestaña `Servidores DNS`{.action}).
-5. En la tabla que aparece (que representa la zona DNS del dominio), compare los `Destinos` de las entradas de tipo `NS` presentes en la zona DNS con los nombres de los servidores DNS recuperados anteriormente. Pueden darse tres situaciones. Haga clic en las fichas siguientes para ver cada una de las **3** casos.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el nombre de dominio correspondiente.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Servidores DNS`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Anote los nombres de los servidores DNS indicados y acceda a la pestaña `Zona DNS`{.action} (a la derecha de la pestaña `Servidores DNS`{.action}).
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece (que representa la zona DNS del dominio), compare los `Destinos` de las entradas de tipo `NS` presentes en la zona DNS con los nombres de los servidores DNS recuperados anteriormente. Pueden darse tres situaciones. Haga clic en las fichas siguientes para ver cada una de las **3** casos.
 
 > [!tabs]
 > **Caso n° 1**
@@ -508,24 +670,55 @@ En ese caso, la solución más rápida será restaurarlo a un estado anterior en
 > - [Restaurar el espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export).
 
-Para restaurar el código fuente de su sitio web, siga estos pasos:
+Para restaurar el código fuente de su sitio web, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. Abra la pestaña `FTP - SSH`{.action}.
-4. En la nueva página, haga clic en el botón `Restaurar una copia de seguridad`{.action}.
-5. En la nueva ventana, seleccione la fecha de la copia de seguridad que desea restaurar y continúe hasta que comience la restauración.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Abra la pestaña `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en el botón `Restaurar una copia de seguridad`{.action}.
+>>
+> **Etapa 4**
+>>
+>> En la nueva ventana, seleccione la fecha de la copia de seguridad que desea restaurar y continúe hasta que comience la restauración.
 
 La restauración del espacio de almacenamiento FTP puede tardar **varios minutos**.
 
-Para restaurar una copia de seguridad de la base de datos, siga estos pasos:
+Para restaurar una copia de seguridad de la base de datos, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
-4. En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la fila de la base de datos correspondiente y seleccione `Restaurar una copia de seguridad`{.action}.
-5. En la nueva página, seleccione la copia de seguridad que quiera restaurar (**preferentemente la que corresponde a la fecha elegida para la restauración del código fuente de su sitio web (ver más arriba)**).
-6. Una vez seleccionada la copia de seguridad, haga clic en el botón `...`{.action} situado a la derecha de la copia de seguridad que quiera restaurar y seleccione `Restaurar la copia de seguridad`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la fila de la base de datos correspondiente y seleccione `Restaurar una copia de seguridad`{.action}.
+>>
+> **Etapa 4**
+>>
+>> En la nueva página, seleccione la copia de seguridad que quiera restaurar (**preferentemente la que corresponde a la fecha elegida para la restauración del código fuente de su sitio web (ver más arriba)**).
+>>
+> **Etapa 5**
+>>
+>> Una vez seleccionada la copia de seguridad, haga clic en el botón `...`{.action} situado a la derecha de la copia de seguridad que quiera restaurar y seleccione `Restaurar la copia de seguridad`{.action}.
 
 La restauración de la copia de seguridad de una base de datos puede tardar **varios minutos**.
 

@@ -1,7 +1,7 @@
 ---
 title: "Publicar un sitio web en internet"
 excerpt: "Descubra cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -114,15 +114,28 @@ Una vez que disponga de todos los datos necesarios, podrá conectarse a su espac
 
 Una vez conectado a su espacio de almacenamiento, solo le queda subir los archivos de su sitio web. **Le recomendamos que preste especial atención al directorio en el que va a cargar los archivos**, especialmente si ha declarado varios sitios web en su alojamiento web.
 
-Para verificar la carpeta en la que debe publicarse el sitio web, vaya a la pestaña `Mis sitios`{.action} desde su área de cliente de OVHcloud. En la tabla que aparece, para el sitio web deseado, mire el `Carpeta raíz`{.action} que se muestra. Publique entonces los archivos del sitio web en este último.
+Para verificar la carpeta en la que debe publicarse el sitio web, haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> Vaya a la pestaña `Mis sitios`{.action}. En la tabla que aparece, para el sitio web deseado, mire el `Carpeta raíz`{.action} que se muestra.
+>>
+>> ![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Publique entonces los archivos del sitio web en este último.
 
 Es posible que encuentre en su espacio de almacenamiento un archivo denominado "index.html". Este podría haber sido creado por OVHcloud durante la instalación de su alojamiento web para mostrar una página predeterminada en su sitio web. Si es así, no olvide eliminarlo al subir sus archivos.
 
 > [!primary]
 >
 > Un archivo "index.php" siempre estará por encima de un archivo "index.html". Por lo tanto, cuando ambos están presentes, sólo se llamará "index.php".
-
-![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3 - Conectar el sitio web a una base de datos
 
@@ -142,19 +155,43 @@ Si va a migrar un sitio web que ya existe, descargue la base de datos desde su a
 
 Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](/links/web/hosting), una solución [Cloud Databases](/links/web/databases)), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
 
-Si quiere crear una nueva base de datos en OVHcloud, conéctese al [área de cliente de OVHcloud](/links/manager) y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
+Si quiere crear una nueva base de datos en OVHcloud, haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etapas.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-A continuación, haga clic en `Crear una base de datos`{.action} o, si este botón no aparece, en `Acciones`{.action} > `Crear una base de datos`{.action}. Introduzca la información solicitada.
-
-![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> Abra la pestaña `Bases de datos`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Haga clic en `Crear una base de datos`{.action} o, si este botón no aparece, en `Acciones`{.action} > `Crear una base de datos`{.action}. Introduzca la información solicitada.
+>>
+>> ![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3.3. Importar una base de datos existente 
 
 Si está migrando un sitio web, deberá importar la base de datos existente en la que acaba de crear. Si se trata de un sitio web nuevo, omita este paso.
 
-Existen diversas formas de realizar la importación. OVHcloud ofrece una desde el área de cliente. Una vez que haya accedido a la lista de bases de datos creadas en su servicio, haga clic en el botón `...`{.action} situado a la derecha de la base de datos y seleccione `Importar un archivo`{.action}.
+Existen diversas formas de realizar la importación. OVHcloud ofrece una desde el área de cliente. Haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> Abra la pestaña `Bases de datos`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en el botón `...`{.action} situado a la derecha de la base de datos y seleccione `Importar un archivo`{.action}.
 
 #### 3.4. Conectar el sitio web a la base de datos
 

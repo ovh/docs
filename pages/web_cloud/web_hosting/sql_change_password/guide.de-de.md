@@ -1,7 +1,7 @@
 ---
 title: Passwort einer Webhosting-Datenbank ändern
 excerpt: Erfahren Sie, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Ziel 

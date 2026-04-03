@@ -1,7 +1,7 @@
 ---
 title: "Esporta il tuo sito Web"
 excerpt: "Come esportare un sito Web OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Obiettivo
@@ -73,9 +73,9 @@ Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 
-Una volta connesso al tuo spazio di archiviazione e in base ai siti web ospitati su di esso, potranno apparire diversi cartelle.
+Una volta connesso al tuo spazio di archiviazione e in base ai siti web ospitati su di esso, potranno apparire diverse cartelle.
 
-Se necessario, individua in precedenza nell'ospedalità web il nome della cartella radice in cui è conservato il tuo sito web. A tale scopo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Se necessario, individua in precedenza nel tuo hosting web il nome della cartella radice in cui è conservato il tuo sito web. A tale scopo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -96,7 +96,7 @@ Se necessario, individua in precedenza nell'ospedalità web il nome della cartel
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Rimani connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito web accedendo alla cartella radice precedentemente identificata.
+Ancora connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito web accedendo alla cartella radice precedentemente identificata.
 
 ### 2 - Recuperare il backup del tuo database (facoltativo)
 
@@ -113,33 +113,7 @@ Se utilizzi un database **Web Cloud Databases** per il tuo sito Web, consulta la
 
 ### 3 - Recuperare i log del tuo hosting OVHcloud
 
-Per conservare lo storico dei log del tuo sito, è disponibile un accesso a questi ultimi con il tuo hosting.
-
-Clicca su `Hosting`{.action} e seleziona il tuo servizio. Clicca sulla scheda `Statistiche e log`{.action}.
-
-![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
-
-Clicca sul link sotto la voce `Visualizza i log`{.action}:
-
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
-
-Visualizzi una finestra con i diversi tipi di log disponibili. Sono classificati per mese:
-
-| Tipo  	| Descrizione                                                                                                                                                                                         	|
-|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Web   	| Trovi qui i log di consultazione del tuo sito e le diverse azioni realizzate a partire dal tuo sito. per permetterti, ad esempio, di individuare i tentativi di attacco. 	|
-| FTP   	| le diverse connessioni FTP saranno registrate e conservate in questi log.                                                                                                                     	|
-| Error 	| i diversi errori generati dal tuo sito.                                                                                                                                                    	|
-| CGI   	| i diversi appelli agli scripts cgi.bin realizzati.                                                                                                                                     	|
-| out   	| le statistiche del tuo hosting sulle diverse chiamate esterne effettuate.                                                                                                                  	|
-| SSH   	| questi log indicano le differenti connessioni realizzate con il protocollo SSH.                                                                                                                      	|
-| cron  	| il risultato dell'esecuzione dei compiti pianificati.                                                                                                                                                	|
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
-
-Quando hai selezionato il tipo di log nel mese che ti interessa, questi vengono archiviati al giorno:
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
+Consulta la nostra guida dedicata: [Hosting Web - Consultare le statistiche e i log di un sito web](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ## Per saperne di più
 

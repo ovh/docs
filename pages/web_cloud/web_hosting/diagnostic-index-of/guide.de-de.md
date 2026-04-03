@@ -1,10 +1,10 @@
 ---
 title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
-## Ziel 
+## Ziel
 
 Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
@@ -26,26 +26,15 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## In der praktischen Anwendung
 
 ### Den Ursprung der "Index of"-Seite verstehen
 
-Ihr Domainname ist so konfiguriert, dass er auf ein Wurzelverzeichnis (`root folder`) auf dem [FTP](/pages/web_cloud/web_hosting/ftp_connection)-Server Ihres Webhostings zugreifen kann. Dies geschieht über den Tab [Meine Seiten](/pages/web_cloud/web_hosting/multisites_configure_multisite) Ihres Webhostings, der sich in Ihrem [OVHcloud Kundencenter](/links/manager) befindet.
+Ihr Domainname ist so konfiguriert, dass er auf ein Wurzelverzeichnis (`root folder`) auf dem [FTP](/pages/web_cloud/web_hosting/ftp_connection)-Server Ihres Webhostings zugreifen kann. Informationen zur Zuordnung eines Domainnamens zu einem Webhosting finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 Die Seite "**Index of**" ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei repräsentiert die Startseite bzw. den Einstiegspunkt Ihrer Website. Der Name dieser Datei ist standardisiert.
 
-Um Ihre Website anzuzeigen, müssen Sie also von dem Tab `Meine Seiten`{.action} Ihres Webhostings aus Ihren Domainnamen mit der Website verknüpfen, deren `Wurzelverzeichnis` die Datei **index.php** oder **index.html** enthält.
+Um Ihre Website anzuzeigen, müssen Sie sicherstellen, dass das `Wurzelverzeichnis`, für das Ihr Domainname deklariert ist, eine Datei **index.php** oder **index.html** enthält.
 
 > [!primary]
 >
@@ -57,11 +46,9 @@ Um Ihre Website anzuzeigen, müssen Sie also von dem Tab `Meine Seiten`{.action}
 
 Sie haben die Dateien Ihrer Website **domain.tld** in das Verzeichnis `www` über [FTP](/pages/web_cloud/web_hosting/ftp_connection) übertragen. Allerdings ist die Website, der Ihr Domainname zugeordnet ist, nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` verknüpft.
 
-![index_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
+Sie müssen das ursprünglich für Ihre Website angegebene `Wurzelverzeichnis` über das [OVHcloud Kundencenter](/links/control-panel/web-hosting) ändern. Dazu konsultieren Sie bitte unseren Guide "[Wie ändere ich den Wurzelverzeichnis einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)“.
 
-Sie müssen den ursprünglich für Ihre Website angegebenen `Wurzelverzeichnis` über das [OVHcloud Kundencenter](/links/manager) ändern. Dazu konsultieren Sie bitte unseren Guide „[Wie ändere ich den Wurzelverzeichnis einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)“.
-
-Wenn Ihre Website eine Konfiguration mit Git verwendet, konsultieren Sie vorab unseren Guide „[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)“, um die Verknüpfung mit Git **vor** Fortsetzung zu entfernen. Tatsächlich ist die Änderung des für eine Website deklarierten Stammordners nicht möglich, wenn Ihre Website mit Git konfiguriert ist.
+Wenn Ihre Website eine Konfiguration mit Git verwendet, konsultieren Sie vorab unseren Guide "[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)“, um die Verknüpfung mit Git **vor** Fortsetzung zu entfernen. Tatsächlich ist die Änderung des für eine Website deklarierten Stammordners nicht möglich, wenn Ihre Website mit Git konfiguriert ist.
 
 Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
 

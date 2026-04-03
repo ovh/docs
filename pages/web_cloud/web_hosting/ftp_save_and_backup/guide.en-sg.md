@@ -1,7 +1,7 @@
 ---
 title: "Restoring your Web Hosting plan’s storage space"
 excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objective
@@ -100,7 +100,7 @@ To check the quota used on your web hosting, click on the tabs below to view eac
 > In this case:
 >
 > - Our teams send an email to the hosting [administrator contact](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management).
-> - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
+> - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/control-panel/web-hosting).
 > - The hosted site(s) will display a "403 Forbidden" page.
 
 Click on the tabs below to view each of the **5** steps.
@@ -160,7 +160,7 @@ There are several stages to this procedure. Ensure that you have your FTP user p
 > This solution requires knowledge of the software or interface you would like to use. We have provided general information below on how to proceed. We recommend contacting a specialist provider and/or getting in touch with the publisher of the interface or software if you encounter any difficulties. We will not be able to assist you ourselves.
 >
 
-#### Step 1: Decide on the software or interface you want to use.
+#### 1 - Decide on the software or interface you want to use
 
 First of all, decide which software or interface you would like to use in order to connect to your storage space backup.  If you have already decided on one, you can move straight to step 2. Otherwise, we recommend using one of the following two solutions:
 
@@ -170,17 +170,13 @@ First of all, decide which software or interface you would like to use in order 
 
 Once you are ready to start making changes, continue to the next step.
 
-#### Step 2: Connect to your backup.
+#### 2 - Connect to your backup
 
 To access the backup data you would like to restore, you will need to log in to your storage space via the interface or software you have selected. To do this, you will need to have the FTP username, its password and your FTP server’s host name.
 
-You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan.
+You can find this information in our guide ["Logging in to your web hosting plan's FTP storage space"](/pages/web_cloud/web_hosting/ftp_connection).
 
-![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
-
-If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
+If you no longer have the FTP user password, please refer to our guide ["Changing an FTP user password"](/pages/web_cloud/web_hosting/ftp_change_password).
 
 You will need to enter your primary username (or FTP login) with a suffix determining the backup you want to connect to. Please use the information below to find out how to access the backup you want:
 
@@ -200,7 +196,7 @@ The method for connecting to your storage space will differ depending on the int
 >
 > Backups are only accessible via an FTP connection.
 
-#### Step 3: Gather the files you want to restore.
+#### 3 - Gather the files you want to restore
 
 Once you have connected, gather the files you want to restore. To do this, explore the content until you find them, then retrieve them. The method you need to use will differ depending on the software or interface you are using.
 
@@ -211,7 +207,7 @@ Before you move on to the next step, ensure that you have gathered all the files
 > If you use a program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
 >
 
-#### Step 4: Restore the files.
+#### 4 - Restore the files
 
 Once you have got the files you need to restore, connect to your storage space again. This time, however, do not add the suffix to connect but write only the FTP username. By not entering this suffix, you will connect to the current content on your storage space, and not a backup from an earlier date.
 

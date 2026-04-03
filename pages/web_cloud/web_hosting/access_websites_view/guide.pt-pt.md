@@ -1,7 +1,7 @@
 ---
 title: "Visualizar e gerir todos os seus websites a partir da Área de Cliente OVHcloud"
 excerpt: "Descubra como consultar e gerir os seus websites a partir da Área de Cliente OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo

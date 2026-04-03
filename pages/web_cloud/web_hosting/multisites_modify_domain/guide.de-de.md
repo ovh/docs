@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Ändern von mit einem Webhosting verbundenen Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie die Zuordnungseinstellungen von Domainnamen oder Subdomains ändern, die bereits auf Ihrem Webhosting deklariert sind"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Ziel

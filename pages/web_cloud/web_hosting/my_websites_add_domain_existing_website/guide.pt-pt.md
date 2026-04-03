@@ -1,7 +1,7 @@
 ---
 title: "Como associar um nome de domínio a um site web existente"
 excerpt: "Saiba como associar um nome de domínio ou um subdomínio a um site web já existente no seu alojamento web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Como começar bem com o seu alojamento web"
 excerpt: 'Saiba como publicar um novo site através das nossas opções de "Módulos 1 clique", como criar um novo endereço de e-mail personalizado com o seu nome de domínio, tudo graças à nossa solução de alojamento web'
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>
@@ -47,16 +47,30 @@ Pretende criar um site para a sua empresa ou um blogue pessoal? Precisa de uma l
 
 ## Instruções
 
-### 1 - Atribuir o seu nome de domínio a um site na sua alojamento web <a name="part-1"></a>
+### 1 - Atribuir o seu nome de domínio a um site no seu alojamento web <a name="part-1"></a>
 
 > [!success]
 >
 > Se subscreveu o seu nome de domínio e o seu alojamento web na mesma encomenda, estes dois serviços já estão associados. Passe diretamente para [Parte 2](#part-2) deste manual.
 
-1. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
-2. Selecione o separador `Meus sites`{.action} quando posicionado no alojamento web em causa.
-3. No quadro que aparece, clique no botão `⁝`{.action} à direita do site criado automaticamente no momento da criação do seu alojamento web, e depois em `Adicionar um domínio`{.action}.
-4. Na nova página que se abre, selecione e preencha os elementos solicitados até à sua validação.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Selecione o separador `Meus sites`{.action} quando posicionado no alojamento web em causa.
+>>
+> **Etapa 3**
+>>
+>> No quadro que aparece, clique no botão `⁝`{.action} à direita do site criado automaticamente no momento da criação do seu alojamento web, e depois em `Adicionar um domínio`{.action}.
+>>
+> **Etapa 4**
+>>
+>> Na nova página que se abre, selecione e preencha os elementos solicitados até à sua validação.
 
 /// details | Clique aqui para mais informações.
 
@@ -72,10 +86,24 @@ Consulte os nossos guias detalhados:
 
 Nos seus alojamentos web, a OVHcloud propõe instalar gratuitamente os CMS WordPress, Joomla!, PrestaShop e Drupal graças à opção "módulo 1 clique".
 
-1. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
-2. Selecione o separador `Módulos "1 clique"`{.action} quando posicionado no alojamento web em causa.
-3. Na página que se abrir, clique no botão `Adicionar um módulo`{.action}.
-4. Na nova janela, selecione o CMS que deseja instalar. De seguida, escolha o domínio no qual deseja instalar o módulo, selecionando o nome de domínio desejado **sem os "www"** à frente (por exemplo: `domain.tld` e não `www.domain.tld`), e clique diretamente em `Instalar`{.action}.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Selecione o separador `Módulos "1 clique"`{.action} quando posicionado no alojamento web em causa.
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no botão `Adicionar um módulo`{.action}.
+>>
+> **Etapa 4**
+>>
+>> Na nova janela, selecione o CMS que deseja instalar. De seguida, escolha o domínio no qual deseja instalar o módulo, selecionando o nome de domínio desejado **sem os "www"** à frente (por exemplo: `domain.tld` e não `www.domain.tld`), e clique diretamente em `Instalar`{.action}.
 
 /// details | Clique aqui para mais informações.
 
@@ -92,8 +120,20 @@ Consulte os nossos guias detalhados:
 >
 > Se subscreveu o seu domínio e o seu alojamento web numa única encomenda, os endereços de e-mail incluídos com o alojamento web já estão associados ao seu domínio. Passe diretamente para [Secção 4](#part-4) deste manual.
 
-1. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
-2. Na página que se abrir, na caixa **Configuração**, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action}, e depois em `Ativar a minha oferta de e-mail`{.action}. Na nova página que surgir, selecione o domínio em causa na secção `(1)` e, em seguida, prossiga até à ativação dos endereços de e-mail.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Na página que se abrir, na caixa **Configuração**, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action}, e depois em `Ativar a minha oferta de e-mail`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Na nova página que surgir, selecione o domínio em causa na secção `(1)` e, em seguida, prossiga até à ativação dos endereços de e-mail.
 
 /// details | Clique aqui para mais informações.
 
@@ -103,10 +143,24 @@ Consulte o nosso guia detalhado "[Alojamento web - Ativar os endereços de e-mai
 
 ### 4 - Criar um endereço de e-mail personalizado com o seu nome de domínio <a name="part-4"></a>
 
-1. Clique no menu `E-mails`{.action} (ou em `MX Plan`{.action} se utilizar a nova versão da Área de Cliente OVHcloud) e escolha o domínio em causa.
-2. Na página que se abrir, clique no separador `E-mails`{.action}.
-3. Na nova página que aparece, clique no botão `Criar um endereço de e-mail`{.action}.
-4. Na nova janela, preencha os elementos solicitados até à sua validação.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [MX Plan](/links/control-panel/web-mx-plan) e escolha o domínio em causa.
+>>
+> **Etapa 2**
+>>
+>> Na página que se abrir, clique no separador `E-mails`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Na nova página que aparece, clique no botão `Criar um endereço de e-mail`{.action}.
+>>
+> **Etapa 4**
+>>
+>> Na nova janela, preencha os elementos solicitados até à sua validação.
 
 Repita esta operação para cada endereço de e-mail que deseja criar (no limite da sua oferta de alojamento web).
 

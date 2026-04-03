@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas de page « Index of » ?"
 excerpt: "Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objectif
@@ -27,26 +27,15 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 - Disposer d'un [nom de domaine](/links/web/domains)
 - Disposer d'une [offre d'hébergement web](/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## En pratique
 
 ### Comprendre l'origine de la page « Index of »
 
-Votre nom de domaine est déclaré pour accéder à un répertoire cible (un « `Dossier racine` ») sur le serveur [FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web mutualisé. Ceci via l'onglet [Mes sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) de votre hébergement web présent dans votre [espace client OVHcloud](/links/manager).
+Votre nom de domaine est déclaré pour accéder à un répertoire cible (un « `Dossier racine` ») sur le serveur [FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web mutualisé. Concernant l'association d'un nom de domaine avec un hébergement, consultez [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 La page **Index of** indique que le répertoire cible concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « *point d'entrée* » de votre site web. Le nom de ce fichier est normalisé.
 
-Pour afficher votre site web, vous devrez donc, depuis l'onglet `Mes sites`{.action} de votre hébergement web, relier votre nom de domaine au site web dont le `Dossier racine` contient ce fichier **index.php** ou **index.html**.
+Pour afficher votre site web, assurez-vous que le `Dossier racine` associé à votre nom de domaine contient un fichier **index.php** ou **index.html**.
 
 > [!primary]
 >
@@ -56,11 +45,9 @@ Pour afficher votre site web, vous devrez donc, depuis l'onglet `Mes sites`{.act
 
 ### Résoudre le cas le plus courant d’une page « Index of »
 
-Vous avez importé les fichiers de votre site **domain.tld** dans le dossier `www` de votre hébergement par [FTP](/pages/web_cloud/web_hosting/ftp_connection). Or, le site web auquel est associé votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine`.
+Vous avez importé les fichiers de votre site **domain.tld** dans le dossier `www` de votre hébergement par [FTP](/pages/web_cloud/web_hosting/ftp_connection). Or, le site web auquel est associé votre nom de domaine n'est pas associé à ce dossier dans la colonne `Dossier racine`.
 
-![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
-
-Vous devrez modifier le `Dossier racine` déclaré initialement pour votre site web depuis votre [espace client OVHcloud](/links/manager). Pour cela, consultez notre guide « [Comment modifier le dossier racine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) ».
+Vous devrez modifier le `Dossier racine` déclaré initialement pour votre site web depuis votre [espace client OVHcloud](/links/control-panel/web-hosting). Pour cela, consultez notre guide « [Comment modifier le dossier racine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) ».
 
 Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec votre hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » pour supprimer l'association avec Git **avant** de poursuivre. En effet, la modification du dossier racine déclaré pour un site web est indisponible si votre site web est configuré avec Git.
 

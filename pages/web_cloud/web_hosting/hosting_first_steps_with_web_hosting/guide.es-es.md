@@ -1,7 +1,7 @@
 ---
 title: "Cómo empezar correctamente con su alojamiento web"
 excerpt: 'Descubra cómo publicar un nuevo sitio web a través de nuestras opciones de "Módulos en un clic" y cómo crear una nueva dirección de correo personalizada con su nombre de dominio gracias a nuestra solución de alojamiento web'
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>
@@ -53,10 +53,24 @@ details[open]>summary::before {
 >
 > Si ha contratado su dominio y su alojamiento web en un mismo pedido, estos dos servicios ya están asociados. Acceda directamente a la [Parte 2](#part-2) de esta guía.
 
-1. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-2. Seleccione la pestaña `Mis sitios`{.action} una vez que haya seleccionado el alojamiento web correspondiente.
-3. En la tabla que aparece, haga clic en el botón `⁝`{.action} situado a la derecha del sitio web creado automáticamente al crear su alojamiento web, y luego en `Agregar un dominio`{.action}.
-4. En la nueva página que se abre, marque y complete los elementos solicitados hasta su validación.
+Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> Seleccione la pestaña `Mis sitios`{.action} una vez que haya seleccionado el alojamiento web correspondiente.
+>>
+> **Etapa 3**
+>>
+>> En la tabla que aparece, haga clic en el botón `⁝`{.action} situado a la derecha del sitio web creado automáticamente al crear su alojamiento web, y luego en `Agregar un dominio`{.action}.
+>>
+> **Etapa 4**
+>>
+>> En la nueva página que se abre, marque y complete los elementos solicitados hasta su validación.
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -72,10 +86,24 @@ Consulte nuestras guías detalladas:
 
 En sus alojamientos web, OVHcloud ofrece la instalación gratuita de los CMS WordPress, Joomla, PrestaShop y Drupal gracias a la opción de módulo en un clic.
 
-1. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-2. Seleccione la pestaña `Módulos en 1 clic`{.action} una vez que haya seleccionado el alojamiento web correspondiente.
-3. En la nueva página, haga clic en el botón `Añadir un módulo`{.action}.
-4. En la nueva ventana, seleccione el CMS que quiera instalar. A continuación, seleccione el dominio en el que desea instalar el módulo seleccionando el dominio deseado **sin los "www"** situados delante (por ejemplo, `domain.tld` y no `www.domain.tld`) y haga clic directamente en `Instalar`{.action}.
+Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> Seleccione la pestaña `Módulos en 1 clic`{.action} una vez que haya seleccionado el alojamiento web correspondiente.
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en el botón `Añadir un módulo`{.action}.
+>>
+> **Etapa 4**
+>>
+>> En la nueva ventana, seleccione el CMS que quiera instalar. A continuación, seleccione el dominio en el que desea instalar el módulo seleccionando el dominio deseado **sin los "www"** situados delante (por ejemplo, `domain.tld` y no `www.domain.tld`) y haga clic directamente en `Instalar`{.action}.
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -92,8 +120,20 @@ Consulte nuestras guías detalladas:
 >
 > Si ha contratado su dominio y su alojamiento web en un solo pedido, las direcciones de correo incluidas con el alojamiento web ya están asociadas a su dominio. Acceda directamente a la [Part 4](#part-4) de esta guía.
 
-1. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-2. En la nueva página y en el recuadro **Configuración**, haga clic en el botón `...`{.action} de la derecha de la indicación `Direcciones de correo`{.action} y seleccione `Activar mi solución de correo`{.action}. En la nueva página que aparece, seleccione el dominio correspondiente en la sección `(1)` y continúe hasta que haya activado las direcciones de correo electrónico.
+Haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la nueva página y en el recuadro **Configuración**, haga clic en el botón `...`{.action} de la derecha de la indicación `Direcciones de correo`{.action} y seleccione `Activar mi solución de correo`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la nueva página que aparece, seleccione el dominio correspondiente en la sección `(1)` y continúe hasta que haya activado las direcciones de correo electrónico.
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -103,10 +143,24 @@ Consulte nuestra guía detallada "[web hosting - Activar las direcciones de corr
 
 ### 4 - Crear una dirección de correo electrónico personalizada con su nombre de dominio <a name="part-4"></a>
 
-1. Haga clic en el menú `Direcciones de correo`{.action} (o en `MX Plan`{.action} si utiliza la nueva versión del área de cliente de OVHcloud) y seleccione el dominio correspondiente.
-2. En la nueva página, haga clic en la pestaña `Correo electrónico`{.action}.
-3. Haga clic en el botón `Crear una dirección de correo electrónico`{.action}.
-4. En la nueva ventana, complete los datos solicitados hasta su validación.
+Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [MX Plan](/links/control-panel/web-mx-plan) y seleccione el dominio correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Correo electrónico`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en el botón `Crear una dirección de correo electrónico`{.action}.
+>>
+> **Etapa 4**
+>>
+>> En la nueva ventana, complete los datos solicitados hasta su validación.
 
 Repita esta operación para cada dirección de correo electrónico que quiera crear (dentro del límite de su plan de hosting).
 

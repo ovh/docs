@@ -1,7 +1,7 @@
 ---
 title: "Den Speicherplatz Ihres Webhostings wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Ziel 
@@ -19,7 +19,7 @@ updated: 2026-04-02
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.com/de/hosting/) Angebot (mit Ausnahme von [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot (mit Ausnahme von [Cloud Web](/links/web/hosting-cloud-web-offer)).
 
 <!-- CP-NAV-START:web-hosting -->
 ---
@@ -99,7 +99,7 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 > Konkret bedeutet das Folgendes:
 >
 > - Unsere Teams senden eine E-Mail über den Status an den [Administrator-Kontakt](/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
-> - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigt. Klicken Sie im Bereich `Web Cloud`{.action} auf Ihren Dienst unter `Hosting-Pakete`{.action} und dann auf den Tab `Allgemeine Informationen`{.action}.
+> - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](/links/control-panel/web-hosting) angezeigt.
 > - Die gehosteten Webseiten zeigen eine "403 Forbidden"-Meldung an.
 
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
@@ -159,7 +159,7 @@ Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass 
 > Hierfür sind Kenntnisse über die verwendete Software bzw. das Interface erforderlich. Im Folgenden haben wir einige Informationen zur Vorgehensweise zusammengetragen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber der Software bzw. des Interface zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
-#### Schritt 1: Software oder Interface auswählen <a name="viainterface"></a>
+#### 1 - Software oder Interface auswählen <a name="viainterface"></a>
 
 Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwenden möchten, um auf den Backup-Speicher zuzugreifen. Wenn Sie sich bereits entschieden haben, können Sie direkt zu Schritt 2 übergehen. Andernfalls empfehlen wir Ihnen eine der folgenden beiden Lösungen:
 
@@ -169,17 +169,13 @@ Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwe
 
 Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren.
 
-#### Schritt 2: Auf das Backup zugreifen
+#### 2 - Auf das Backup zugreifen
 
 Mithilfe der ausgewählten Software bzw. über das Interface können Sie sich nun auf Ihrem Speicherplatz einloggen, um auf die gewünschten Backup-Daten zuzugreifen. Sie benötigen hierfür den FTP-Benutzernamen, das zugehörige Passwort sowie den Hostnamen Ihres FTP-Servers.
 
-Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres Webhostings.
+Diese Login-Informationen finden Sie in unserer Anleitung ["Mit dem FTP-Speicherplatz eines Webhostings verbinden"](/pages/web_cloud/web_hosting/ftp_connection).
 
-![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
-
-Wenn Sie kein FTP-Passwort besitzen, lesen Sie die Anleitung [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
-
-![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
+Wenn Sie kein FTP-Passwort besitzen, lesen Sie die Anleitung ["Passwort eines FTP-Benutzers ändern"](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Ergänzen Sie Ihren Haupt-FTP-Benutzernamen (bzw. „FTP-Login“) mit einem Suffix, das sich auf das betreffende Backup bezieht. Verwenden Sie die folgenden Tabelle, um das korrekte Backup auszuwählen:
 
@@ -199,7 +195,7 @@ Wie Sie sich in Ihren Speicherplatz einloggen, hängt von der verwendeten Softwa
 >
 > Die Sicherungen sind nur über eine FTP-Verbindung zugänglich.
 
-#### Schritt 3: Eine oder mehrere Backup-Dateien wiederherstellen
+#### 3 - Eine oder mehrere Backup-Dateien wiederherstellen
 
 Wählen Sie nach dem Login die Dateien aus, die Sie wiederherstellen möchten. Gehen Sie hierfür den Inhalt Ihres Speicherplatzes durch, bis Sie die gewünschten Dateien finden, und laden Sie diese herunter. Die Vorgehensweise richtet sich nach der verwendeten Software oder dem Interface.
 
@@ -210,7 +206,7 @@ Vergewissern Sie sich, bevor Sie zum nächsten Schritt übergehen, dass Sie alle
 > Wenn Sie eine Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
 >
 
-#### Schritt 4: Die gewünschten Dateien wiederherstellen
+#### 4 - Die gewünschten Dateien wiederherstellen
 
 Wenn Sie alle Dateien heruntergeladen haben, loggen Sie sich erneut auf Ihrem Speicherplatz ein. Verwenden Sie für diesen Login allerdings den FTP-Benutzernamen ohne die zusätzliche Endung. Indem Sie das Suffix nicht verwenden, loggen Sie sich in die aktuelle Version Ihres Speicherplatzes ein und nicht in eine ältere Backup-Version.
 

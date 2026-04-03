@@ -1,7 +1,7 @@
 ---
 title: "Mettre en ligne un site web sur son hébergement web"
 excerpt: "Découvrez comment mettre en ligne un site web sur votre hébergement web OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objectif
@@ -114,15 +114,28 @@ Une fois tous les éléments en votre possession, la connexion à l'espace de st
 
 Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers**, notamment si vous avez déclaré plusieurs sites web sur votre hébergement web.
 
-Pour vérifier le dossier dans lequel doit être publié le site web, positionnez-vous sur l'onglet `Mes sites`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le site web souhaité, regardez le `Dossier racine`{.action} qui s'affiche. Publiez alors les fichiers du site web dans ce dernier.
+Pour vérifier le dossier dans lequel doit être publié le site web, cliquez sur les onglets ci-dessous pour afficher successivement les **3** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `Mes sites`{.action}. Dans le tableau qui s'affiche, pour le site web souhaité, regardez le `Dossier racine`{.action} qui s'affiche.
+>>
+>> ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Publiez alors les fichiers du site web dans ce dernier.
 
 Il se peut que vous trouviez sur votre espace de stockage un fichier intitulé « index.html ». Ce dernier peut avoir été créé par OVHcloud lors de l'installation de votre hébergement web pour afficher une page par défaut sur votre site web. Si tel est le cas, n'oubliez pas de le supprimer lors de la mise en ligne de vos fichiers.
 
 > [!primary]
 >
 > Un fichier « index.php » prendra toujours le dessus sur un fichier « index.html ». Par conséquent, lorsque les deux sont présent, seul « index.php » sera appelé.
-
-![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3 - Lier le site web à une base de données
 
@@ -142,19 +155,43 @@ Si vous êtes en train de migrer un site web, récupérez la base de données ex
 
 Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVHcloud](/links/web/hosting) ou [Web Cloud Databases](/links/web/databases)), munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
 
-Si vous souhaitez créer une nouvelle base de données chez OVHcloud, connectez-vous à votre [espace client OVHcloud](/links/manager), puis cliquez sur `Hébergements`{.action}. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `Base de données`{.action}.
+Si vous souhaitez créer une nouvelle base de données chez OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement les **3** étapes.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Dès lors, cliquez sur le bouton `Créer une base de données`{.action} ou, si ce dernier n'apparaît pas, sur `Actions`{.action} puis sur `Créer une base de données`{.action}. Suivez alors les informations qui s'affichent.
-
-![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `Base de données`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Cliquez sur le bouton `Créer une base de données`{.action} ou, si ce dernier n'apparaît pas, sur `Actions`{.action} puis sur `Créer une base de données`{.action}. Suivez alors les informations qui s'affichent.
+>>
+>> ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3.3. Importer la base de données existante
 
 Si vous migrez un site web, importez la base de données existante dans celle nouvellement créée. S'il s'agit d'un nouveau site, poursuivez vers l'étape suivante.
 
-Il existe plusieurs méthodes pour effectuer cet import. OVHcloud en propose une depuis son espace client. Une fois positionné sur la liste des bases de données créées sur votre service dans votre espace client OVHcloud, cliquez sur le bouton `...`{.action} à droite de votre base de données, puis sur `Importer un fichier`{.action}.
+Il existe plusieurs méthodes pour effectuer cet import. OVHcloud en propose une depuis son espace client. Cliquez sur les onglets ci-dessous pour afficher successivement les **3** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Sélectionnez l'onglet `Base de données`{.action}.
+>>
+> **Étape 3**
+>>
+>> Cliquez sur le bouton `...`{.action} à droite de votre base de données, puis sur `Importer un fichier`{.action}.
 
 #### 3.4. Lier le site web à la base de données
 

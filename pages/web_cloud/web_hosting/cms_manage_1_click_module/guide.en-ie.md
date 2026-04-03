@@ -1,7 +1,7 @@
 ---
 title: "How to manage your 1-click module"
 excerpt: "Find out how to manage your 1-click module in the OVHcloud Control Panel"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objective

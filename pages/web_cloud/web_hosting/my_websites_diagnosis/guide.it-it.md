@@ -1,7 +1,7 @@
 ---
 title: "Come verificare l'associazione 'nome di dominio / sito web'?"
 excerpt: "Utilizza il nostro strumento diagnostico per verificare che il tuo nome di dominio o sottodominio sia correttamente registrato con il tuo sito web sul tuo hosting web"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

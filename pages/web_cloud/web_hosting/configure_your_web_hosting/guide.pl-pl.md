@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Środowisko, wersja PHP, .ovhconfig"
 excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i .ovhconfig na hostingu WWW"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

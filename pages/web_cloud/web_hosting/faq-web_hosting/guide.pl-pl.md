@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Poznaj najważniejsze pytania dotyczące hostingu WWW OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>
@@ -24,12 +24,18 @@ details[open]>summary::before {
 
 /// details | Jak skonfigurować hosting WWW?
 
-Postępuj zgodnie z poniższymi instrukcjami:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-
-Zarządzaj tutaj swoimi certyfikatami SSL, wersją PHP zastosowaną do Twojego hostingu, opcją CDN, swoimi stronami internetowymi, bazami danych, itp.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Zarządzaj tutaj swoimi certyfikatami SSL, wersją PHP zastosowaną do Twojego hostingu, opcją CDN, swoimi stronami internetowymi, bazami danych, itp.
 
 > [!success]
 >
@@ -39,12 +45,20 @@ Zarządzaj tutaj swoimi certyfikatami SSL, wersją PHP zastosowaną do Twojego h
 
 /// details | Nie pamiętam hasła dostępowego do konta, na którym znajduje się mój hosting. Co mam zrobić?
 
-Jeśli nie pamiętasz twojego identyfikatora klienta OVHcloud lub hasła powiązanego z tym identyfikatorem, wykonaj następujące kroki:
+Jeśli nie pamiętasz twojego identyfikatora klienta OVHcloud lub hasła powiązanego z tym identyfikatorem, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Przejdź do [interfejsu logowania do Panelu klienta OVHcloud](/links/manager).
-2. Kliknij link `Nie pamiętasz nazwy użytkownika lub hasła?`{.action} znajdujący się pod okienkiem logowania.
-3. Podaj Twój identyfikator klienta OVHcloud (na przykład: **aa00000-ovh**) lub adres e-mail do kontaktu przypisany do twojego identyfikatora klienta OVHcloud.
-4. Następnie kliknij przycisk `Wyślij`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź do [interfejsu logowania do Panelu klienta OVHcloud](/links/manager) i kliknij link `Nie pamiętasz nazwy użytkownika lub hasła?`{.action} znajdujący się pod okienkiem logowania.
+>>
+> **Krok 2**
+>>
+>> Podaj Twój identyfikator klienta OVHcloud (na przykład: **aa00000-ovh**) lub adres e-mail do kontaktu przypisany do twojego identyfikatora klienta OVHcloud.
+>>
+> **Krok 3**
+>>
+>> Następnie kliknij przycisk `Wyślij`{.action}.
 
 Procedura resetu zostanie wysłana na adres e-mail do kontaktu.
 
@@ -56,11 +70,18 @@ Procedura resetu zostanie wysłana na adres e-mail do kontaktu.
 
 /// details | Jak zarządzać hasłem do przestrzeni dyskowej FTP na hostingu www?
 
-Postępuj zgodnie z poniższymi instrukcjami:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
 
 Będziesz mógł zmienić hasło FTP do twojego hostingu.
 
@@ -76,11 +97,18 @@ Będziesz mógł zmienić hasło FTP do twojego hostingu.
 >
 > Jeśli zmienisz hasło do bazy danych używanej przez jedną z twoich stron WWW, zaktualizuj również hasło w pliku konfiguracyjnym twojej strony WWW. Bez tej aktualizacji twoja strona WWW zostanie odłączona od bazy danych i będzie działać nieprawidłowo.
 
-Postępuj zgodnie z poniższymi instrukcjami:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 
 Będziesz mógł zmienić hasła do baz danych powiązanych z twoim hostingiem.
 
@@ -92,12 +120,20 @@ Będziesz mógł zmienić hasła do baz danych powiązanych z twoim hostingiem.
 
 /// details | Jak zmienić hasło do konta e-mail powiązanego z moim hostingiem?
 
-Postępuj zgodnie z poniższymi instrukcjami:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `E-maile`{.action} (lub menu `MX Plan`{.action}, jeśli korzystasz z wersji beta Panelu klienta OVHcloud), następnie wybierz odpowiednią domenę.
-3. Na stronie, która się wyświetli kliknij zakładkę `E-maile`{.action}.
-4. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie danego adresu e-mail, po czym kliknij `Zmień hasło`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [MX Plan](/links/control-panel/web-mx-plan), następnie wybierz odpowiednią domenę.
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `E-maile`{.action}.
+>>
+> **Krok 3**
+>>
+>> W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie danego adresu e-mail, po czym kliknij `Zmień hasło`{.action}.
 
 Będziesz mógł zmienić hasło przypisane do twojego konta e-mail (pamiętaj, aby zachować zasady dotyczące haseł, które są wyświetlane w oknie wprowadzania).
 
@@ -160,11 +196,18 @@ Oto najważniejsze kroki, które należy podjąć:
 
 /// details | Jak zainstalować kilka stron WWW na tym samym hostingu?
 
-Jeśli Twój [hosting WWW](/links/web/hosting) jest kompatybilny, wykonaj następujące kroki:
+Jeśli Twój [hosting WWW](/links/web/hosting) jest kompatybilny, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 
 Zarządzaj tutaj nazwami domen/poddomen zadeklarowanymi na stronach internetowych znajdujących się na Twoim hostingu.
 
@@ -183,13 +226,26 @@ Aby twoja strona WWW była dostępna z adresem URL oznaczonym jako "HTTPS" (na p
 
 OVHcloud oferuje kilka [certyfikatów SSL](/links/web/hosting-options) na hostingu.
 
-Aby aktywować certyfikat SSL na twoim hostingu, wykonaj następujące kroki:
+Aby aktywować certyfikat SSL na twoim hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
-4. Wybierz odpowiedni certyfikat spośród [dostępnych certyfikatów](/pages/web_cloud/web_hosting/ssl_on_webhosting).
-5. Kontynuuj aż do zakończenia instalacji certyfikatu SSL (po uprzednim zatwierdzeniu zamówienia, jeśli wybierzesz jeden z certyfikatów SSL Sectigo).
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
+>>
+> **Krok 3**
+>>
+>> Wybierz odpowiedni certyfikat spośród [dostępnych certyfikatów](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+>>
+> **Krok 4**
+>>
+>> Kontynuuj aż do zakończenia instalacji certyfikatu SSL (po uprzednim zatwierdzeniu zamówienia, jeśli wybierzesz jeden z certyfikatów SSL Sectigo).
 
 > [!success]
 >
@@ -213,12 +269,22 @@ Aby zamówić usługę hostingu najlepiej dopasowaną do twoich potrzeb, sprawd�
 >
 > W zależności od wykupionego pakietu hostingowego niektóre oferty mogą nie być dostępne. Więcej informacji na ten temat znajdziesz w przewodniku "[Hosting WWW - Jak zmienić ofertę](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
-Po dokonaniu wyboru wykonaj następujące kroki:
+Po dokonaniu wyboru Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli i w ramce **Abonament** kliknij przycisk `...`{.action} po prawej stronie wzmianki `Pakiet`, a następnie `Zmień ofertę`{.action}.
-4. Następnie wybierz nową subskrypcję i jej czas trwania. Zaakceptuj regulaminy i kliknij na `Wyślij`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli i w ramce **Abonament** kliknij przycisk `...`{.action} po prawej stronie wzmianki `Pakiet`, a następnie `Zmień ofertę`{.action}.
+>>
+> **Krok 3**
+>>
+>> Następnie wybierz nową subskrypcję i jej czas trwania. Zaakceptuj regulaminy i kliknij na `Wyślij`{.action}.
 
 > [!success]
 >
@@ -230,12 +296,22 @@ Po dokonaniu wyboru wykonaj następujące kroki:
 
 Po rezygnacji z hostingu lub jego usunięciu, oferta e-mail, która jest do niego przypisana, również zostaje usunięta. Aby zachować konta e-mail, należy odłączyć ofertę e-mail **przed** zakończeniem dzierżawy hostingu.
 
-Postępuj zgodnie z poniższymi instrukcjami:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli i w ramce **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie wzmianki `Adresy e-mail`, a następnie kliknij `Odłącz opcję e-mail`{.action}.
-4. Postępuj zgodnie z instrukcjami, aby zamówić niezależną usługę e-mail, która pozwoli Ci zachować utworzone konta e-mail.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli i w ramce **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie wzmianki `Adresy e-mail`, a następnie kliknij `Odłącz opcję e-mail`{.action}.
+>>
+> **Krok 3**
+>>
+>> Postępuj zgodnie z instrukcjami, aby zamówić niezależną usługę e-mail, która pozwoli Ci zachować utworzone konta e-mail.
 
 ///
 
@@ -244,12 +320,22 @@ Postępuj zgodnie z poniższymi instrukcjami:
 Pakiety hostingowe **Performance** zawierają bezpłatną usługę Web Cloud Databases.<br>
 W przypadku zakończenia lub usunięcia hostingu **Performance** oferta Web Cloud Databases, która może zostać dołączona, również zostaje rozwiązana. Aby zachować rozwiązanie Web Cloud Databases, odłącz je **przed** rezygnacją z hostingu.
 
-Postępuj zgodnie z poniższymi instrukcjami:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli i w ramce **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie wzmianki `Web Cloud Databases`, a następnie `Odłącz`{.action}.
-4. Postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę Web Cloud Databases i zachować utworzone rozwiązanie Web Cloud Databases.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli i w ramce **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie wzmianki `Web Cloud Databases`, a następnie `Odłącz`{.action}.
+>>
+> **Krok 3**
+>>
+>> Postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę Web Cloud Databases i zachować utworzone rozwiązanie Web Cloud Databases.
 
 **Czynność ta jest nieodwracalna i usługa Web Cloud Databases będzie fakturowana niezależnie od hostingu Performance.**
 
@@ -257,12 +343,22 @@ Postępuj zgodnie z poniższymi instrukcjami:
 
 /// details | Jak zwiększyć ilość pamięci RAM w ofercie "Web Cloud Databases" związanej z hostingiem "Performance"?
 
-Postępuj zgodnie z poniższymi instrukcjami:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Web Cloud Databases`{.action}, następnie wybierz odpowiednie rozwiązanie Web Cloud Databases.
-3. Na stronie, która się wyświetla i w ramce **Informacje ogólne** kliknij przycisk `...`{.action} po prawej stronie wzmianki `RAM`, a następnie `Zmień ilość pamięci RAM`{.action}.
-4. Postępuj zgodnie z instrukcjami, aby zamówić ilość RAM. Następnie kontynuuj aż do zatwierdzenia zamówienia.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie Web Cloud Databases.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetla i w ramce **Informacje ogólne** kliknij przycisk `...`{.action} po prawej stronie wzmianki `RAM`, a następnie `Zmień ilość pamięci RAM`{.action}.
+>>
+> **Krok 3**
+>>
+>> Postępuj zgodnie z instrukcjami, aby zamówić ilość RAM. Następnie kontynuuj aż do zatwierdzenia zamówienia.
 
 > [!success]
 >
@@ -281,14 +377,16 @@ Postępuj zgodnie z poniższymi instrukcjami:
 U podstaw nieprawidłowego działania twojej strony internetowej może znajdować się kilka przyczyn.<br>
 Aby ustalić źródło problemu, sprawdź, czy żadna z twoich subskrypcji nie wymaga odnowienia **odnowienia**.
 
-Postępuj zgodnie z poniższymi instrukcjami:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Na stronie, która się wyświetli kliknij twoją nazwę w prawym górnym rogu, następnie wybierz `Moje rozwiązania i usługi`{.action}.
-
-> [!success]
->
-> Szczegółowe informacje na ten temat znajdziesz w przewodniku "[Jak odnawiać usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
+>>
+> **Krok 2**
+>>
+>> Szczegółowe informacje na ten temat znajdziesz w przewodniku "[Jak odnawiać usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
 
 Następnie sprawdź [bieżące wydarzenia w naszej infrastrukturze](https://www.status-ovhcloud.com/).
 
@@ -342,21 +440,41 @@ W tym przypadku konieczne jest usunięcie modułu za pomocą 1 kliknięcia i pon
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
-**Tylko** po wykonaniu wszystkich niezbędnych kopii zapasowych usuń [Moduły CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) wykonując następujące czynności:
+**Tylko** po wykonaniu wszystkich niezbędnych kopii zapasowych usuń [Moduły CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `Moduły CMS`{.action}.
-4. W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w wierszu odpowiedniego *modułu za pomocą 1 kliknięcia*, a następnie `Usuń moduł`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Moduły CMS`{.action}.
+>>
+> **Krok 3**
+>>
+>> W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w wierszu odpowiedniego *modułu za pomocą 1 kliknięcia*, a następnie `Usuń moduł`{.action}.
 
 Usunięcie *modułu za pomocą 1 kliknięcia* może potrwać **kilka minut**.
 
-Następnie usuń powiązaną bazę danych, wykonując następujące czynności:
+Następnie usuń powiązaną bazę danych, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
-4. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie w linii odpowiedniej bazy danych, a następnie kliknij `Usuń bazę danych`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie w linii odpowiedniej bazy danych, a następnie kliknij `Usuń bazę danych`{.action}.
 
 Usunięcie skojarzonej bazy danych może potrwać **kilka minut**.
 
@@ -387,24 +505,55 @@ Jeśli po operacji wyświetli się twoja strona WWW z tym adresem URL, najszybsz
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
-Aby przywrócić kod źródłowy twojej strony WWW, wykonaj następujące kroki:
+Aby przywrócić kod źródłowy twojej strony WWW, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
-4. Na nowej stronie, która się wyświetli kliknij przycisk `Przywróć kopię zapasową`{.action}.
-5. W oknie, które się wyświetla wybierz datę kopii zapasowej, którą chcesz przywrócić, a następnie kontynuuj aż do uruchomienia przywracania.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Na nowej stronie, która się wyświetli kliknij przycisk `Przywróć kopię zapasową`{.action}.
+>>
+> **Krok 4**
+>>
+>> W oknie, które się wyświetla wybierz datę kopii zapasowej, którą chcesz przywrócić, a następnie kontynuuj aż do uruchomienia przywracania.
 
 Przywrócenie przestrzeni dyskowej FTP może potrwać **kilka minut**.
 
-Aby przywrócić kopię zapasową bazy danych, wykonaj następujące kroki:
+Aby przywrócić kopię zapasową bazy danych, kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
-4. W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w linii odpowiedniej bazy danych, a następnie `Przywróć kopię zapasową`{.action}.
-5. Na nowej stronie, która się wyświetli, wybierz kopię zapasową, którą chcesz przywrócić (**najlepiej odpowiadającą dacie wybranej do przywrócenia kodu źródłowego twojej strony WWW (patrz powyżej)**).
-6. Po wybraniu kopii zapasowej kliknij przycisk `...`{.action} znajdujący się po prawej stronie kopii zapasowej, którą chcesz przywrócić, a następnie kliknij `Przywróć kopię zapasową`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w linii odpowiedniej bazy danych, a następnie `Przywróć kopię zapasową`{.action}.
+>>
+> **Krok 4**
+>>
+>> Na nowej stronie, która się wyświetli, wybierz kopię zapasową, którą chcesz przywrócić (**najlepiej odpowiadającą dacie wybranej do przywrócenia kodu źródłowego twojej strony WWW (patrz powyżej)**).
+>>
+> **Krok 5**
+>>
+>> Po wybraniu kopii zapasowej kliknij przycisk `...`{.action} znajdujący się po prawej stronie kopii zapasowej, którą chcesz przywrócić, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
 Przywrócenie kopii zapasowej bazy danych może potrwać **kilka minut**.
 
@@ -417,7 +566,7 @@ Przywrócenie kopii zapasowej bazy danych może potrwać **kilka minut**.
 
 ///
 
-/// details | Moja strona www przekierowuje do interfejsu logowania do Webmail OVHcloud. Co powinienem zrobić?
+/// details | Moja strona www przekierowuje do interfejsu logowania do webmail OVHcloud. Co powinienem zrobić?
 
 ![webmail-login-interface](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
@@ -425,13 +574,26 @@ Wskazuje to na błędną konfigurację [serwerów DNS](/pages/web_cloud/domains/
 
 Najczęstszym przypadkiem jest to, że zamówiłeś osobno domenę i hosting www, więc nie są one automatycznie powiązane ze sobą za pośrednictwem strefy DNS twojej domeny.
 
-Aby to naprawić, wykonaj następujące kroki:
+Aby to naprawić, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
-3. Na stronie, która się wyświetli kliknij zakładkę `Serwery DNS`{.action}.
-4. Następnie zanotuj podane nazwy serwerów DNS i przejdź do zakładki `Strefa DNS`{.action} (po prawej stronie zakładki `Serwery DNS`{.action}).
-5. W tabeli (reprezentującej strefę DNS domeny), która się wyświetli, porównaj `Adres docelowy` wpisów typu `NS` obecnych w strefie DNS z nazwami uprzednio pobranych serwerów DNS. Mogą wystąpić trzy scenariusze. Kliknij poniższe zakładki, aby wyświetlić każdy z **3** przypadków.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Serwery DNS`{.action}.
+>>
+> **Krok 3**
+>>
+>> Następnie zanotuj podane nazwy serwerów DNS i przejdź do zakładki `Strefa DNS`{.action} (po prawej stronie zakładki `Serwery DNS`{.action}).
+>>
+> **Krok 4**
+>>
+>> W tabeli (reprezentującej strefę DNS domeny), która się wyświetli, porównaj `Adres docelowy` wpisów typu `NS` obecnych w strefie DNS z nazwami uprzednio pobranych serwerów DNS. Mogą wystąpić trzy scenariusze. Kliknij poniższe zakładki, aby wyświetlić każdy z **3** przypadków.
 
 > [!tabs]
 > **Przypadek nr 1**
@@ -508,24 +670,55 @@ W takim przypadku najszybszym rozwiązaniem będzie przywrócenie go do wcześni
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
-Aby przywrócić kod źródłowy twojej strony WWW, wykonaj następujące kroki:
+Aby przywrócić kod źródłowy twojej strony WWW, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
-4. Na nowej stronie, która się wyświetli, kliknij przycisk `Przywróć kopię zapasową`{.action}.
-5. W oknie, które się wyświetla wybierz datę kopii zapasowej, którą chcesz przywrócić, a następnie kontynuuj aż do uruchomienia przywracania.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Na nowej stronie, która się wyświetli, kliknij przycisk `Przywróć kopię zapasową`{.action}.
+>>
+> **Krok 4**
+>>
+>> W oknie, które się wyświetla wybierz datę kopii zapasowej, którą chcesz przywrócić, a następnie kontynuuj aż do uruchomienia przywracania.
 
 Przywrócenie przestrzeni dyskowej FTP może potrwać **kilka minut**.
 
-Aby przywrócić kopię zapasową bazy danych, wykonaj następujące kroki:
+Aby przywrócić kopię zapasową bazy danych, kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
-4. W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w linii odpowiedniej bazy danych, a następnie `Przywróć kopię zapasową`{.action}.
-5. Na nowej stronie, która się wyświetli, wybierz kopię zapasową, którą chcesz przywrócić (**najlepiej odpowiadającą dacie wybranej do przywrócenia kodu źródłowego twojej strony WWW (patrz powyżej)**).
-6. Po wybraniu kopii zapasowej kliknij przycisk `...`{.action} znajdujący się po prawej stronie kopii zapasowej, którą chcesz przywrócić, a następnie kliknij `Przywróć kopię zapasową`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w linii odpowiedniej bazy danych, a następnie `Przywróć kopię zapasową`{.action}.
+>>
+> **Krok 4**
+>>
+>> Na nowej stronie, która się wyświetli, wybierz kopię zapasową, którą chcesz przywrócić (**najlepiej odpowiadającą dacie wybranej do przywrócenia kodu źródłowego twojej strony WWW (patrz powyżej)**).
+>>
+> **Krok 5**
+>>
+>> Po wybraniu kopii zapasowej kliknij przycisk `...`{.action} znajdujący się po prawej stronie kopii zapasowej, którą chcesz przywrócić, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
 Przywrócenie kopii zapasowej bazy danych może potrwać **kilka minut**.
 

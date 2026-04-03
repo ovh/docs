@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Cómo cambiar el dominio de un sitio existente"
 excerpt: "Descubra cómo cambiar el dominio de un sitio existente"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -43,25 +43,38 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 
 Para cambiar el dominio de acceso al sitio web, deberá realizar diversas acciones en un orden adecuado.
 
-### Etape 1 - declarar el nuevo dominio en su alojamiento compartido <a name="step1"></a>
+### 1 - Declarar el nuevo dominio en su alojamiento compartido <a name="step1"></a>
 
 Declare su nuevo nombre de dominio siguiendo nuestro tutorial « [Cómo asociar un nombre de dominio a un sitio web existente](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Declare también su subdominio en `www` si desea, por ejemplo, que `www.NewDomain.tld` muestre también su sitio además de `NewDomain.tld`.
 
 Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 
 - El nuevo dominio debe apuntar hacia la misma "carpeta raíz" que el dominio utilizado actualmente para acceder a su sitio web.
-- Compruebe que su nuevo dominio apunta correctamente a la dirección IP correcta de su alojamiento compartido. Para obtener la dirección IP, conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione su alojamiento y recupere **l IPv4** en la pestaña `Información general`{.action}.
+- Compruebe que su nuevo dominio apunta correctamente a la dirección IP correcta de su alojamiento compartido. Para obtener la dirección IP, haga clic en las pestañas siguientes para ver sucesivamente los **3** pasos.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> Haga clic en la pestaña `Información general`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Recupere la **IPv4** que aparece.
 
 > [!warning]
 >
-> Si activa las opciones **IP del país** o **CDN** con su nuevo dominio, utilice la dirección IP correcta con nuestra documentación que recoge [todas las direcciones IP de nuestros alojamientos compartidos](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Si activa las opciones **IP del país** o **CDN** con su nuevo dominio, utilice la dirección IP correcta con nuestra documentación que recoge [todas las direcciones IP de nuestros alojamientos compartidos](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 >
-> Para consultar el número del cluster en el que se encuentra el alojamiento, acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione el alojamiento y abra la pestaña `FTP-SSH`{.action}. Podrá ver el número del cluster en el formulario **Servidor FTP y SFTP** : `ftp.cluster0XX.ovh.net` (donde los `X` representan el número de cluster).
+> Para consultar el número del cluster en el que se encuentra el alojamiento, consulte nuestra guía "[Web hosting - Cómo conocer su cluster y su filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 >
 
-> **Certificados SSL***
+> **Certificados SSL**
 >
-> Si el dominio inicialmente utilizado para acceder a su sitio web dispone de un certificado SSL, consulte nuestros 2 guías:
+> Si el dominio inicialmente utilizado para acceder a su sitio web dispone de un certificado SSL, consulte nuestras 2 guías:
 > - [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Habilitar HTTPS en un sitio web con certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
@@ -76,7 +89,7 @@ Si todas las acciones se han realizado correctamente, las declaraciones de sus n
 
 Si su sitio web no utiliza bases de datos ni reescribe URL para su sitio web, este último ya debe mostrarse correctamente con su nuevo dominio. En ese caso, vaya directamente a [el paso 3](#step3) de esta guía. En caso contrario, vaya al paso 2.
 
-### Etapa 2 - reescritura de las URLs en su sitio web con el nuevo dominio
+### 2 - Reescritura de las URLs en su sitio web con el nuevo dominio
 
 La mayoría de los sitios web utilizan bases de datos para funcionar. El árbol de estas se construye generalmente alrededor del dominio utilizado inicialmente para su sitio web. Se necesitan más acciones para estos sitios web.
 
@@ -120,7 +133,7 @@ Si ha contratado a un proveedor para que cree su sitio web, deberá ponerse en c
 > Una vez finalizado el paso 2, su sitio web debe mostrarse con su nuevo dominio.
 >
 
-### Etape 3 - retirar el antiguo nombre de dominio <a name="step3"></a>
+### 3 - Retirar el antiguo nombre de dominio <a name="step3"></a>
 
 Para evitar el "duplicate-content" y cuando su nuevo nombre de dominio esté completamente operativo con su sitio web, deberá eliminar la declaración de su antiguo nombre de dominio en su sitio web utilizando el tutorial « [Cómo desasociar un dominio de un sitio web existente](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
@@ -133,7 +146,7 @@ Una vez que su antiguo nombre de dominio esté desvinculado del sitio web alojad
 
 ## Más información <a name="go-further"></a>
 
-[Lista de las IP de nuestros alojamientos compartidos](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[Lista de las IP de nuestros alojamientos compartidos](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
 [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
@@ -143,6 +156,6 @@ Una vez que su antiguo nombre de dominio esté desvinculado del sitio web alojad
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [ofertas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

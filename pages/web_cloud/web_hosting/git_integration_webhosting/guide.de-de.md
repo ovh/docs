@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration und Nutzung von Git mit OVHcloud Webhosting"
 excerpt: "Erfahren Sie hier, wie Sie Git mit Ihrem Webhosting In Ihrem OVHcloud Kundencenter konfigurieren und verwenden"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Ziel

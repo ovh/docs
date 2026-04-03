@@ -1,7 +1,7 @@
 ---
 title: "Jak sprawdzić przypisanie 'nazwy domeny / strony internetowej'?"
 excerpt: "Użyj naszego narzędzia diagnostycznego, aby upewnić się, że Twoja domena lub poddomena jest poprawnie zadeklarowana z Twoją stroną internetową na Twoim hosting"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 <style>

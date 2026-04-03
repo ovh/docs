@@ -1,7 +1,7 @@
 ---
 title: "Exportar un sitio web"
 excerpt: "Cómo exportar un sitio web de OVHcloud"
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Objetivo
@@ -113,33 +113,7 @@ Si utiliza una base de datos **Web Cloud Databases** para su sitio web, consulte
 
 ### 3 - Obtener los logs de su alojamiento de OVHcloud
 
-Si desea conservar el historial de los logs de su sitio web, puede acceder a ellos desde el alojamiento.
-
-En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en la pestaña `Estadísticas y logs`{.action}.
-
-![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
-
-Haga clic en el enlace que aparece `Ver los logs`{.action}.
-
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
-
-Se abrirá una ventana con los diferentes tipos de logs disponibles. Se clasifican por meses:
-
-| Tipo  	| Descripción                                                                                                                                                                                         	|
-|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Web   	| Encuentre aquí los distintos logs de consulta de su sitio web, así como las diferentes acciones realizadas a partir de su sitio web. Esto permite, por ejemplo, identificar intentos de hackeo. 	|
-| FTP   	| las diferentes conexiones FTP se guardarán y conservarán en estos logs.                                                                                                                     	|
-| Error 	| los diferentes errores generados por su sitio web.                                                                                                                                                    	|
-| CGI   	| las diferentes llamadas a los scripts cgi.bin realizadas.                                                                                                                                     	|
-| out   	| las estadísticas de su alojamiento sobre las diferentes llamadas externas realizadas.                                                                                                                  	|
-| SSH   	| estos logs indican las distintas conexiones realizadas con el protocolo SSH.                                                                                                                      	|
-| Cron  	| el resultado de la ejecución de las tareas planificadas.                                                                                                                                                	|
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
-
-Al seleccionar el tipo de logs durante el mes que le interesa, estos se guardan al día:
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
+Consulte nuestra guía dedicada: [Alojamiento web - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ## Más información
 

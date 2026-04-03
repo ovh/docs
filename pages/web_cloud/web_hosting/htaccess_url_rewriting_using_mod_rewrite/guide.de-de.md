@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben"
 excerpt: "Diese Anleitung erklärt, wie Sie die Zugriffs-URL mithilfe des mod_rewrite über die .htaccess Datei neu schreiben."
-updated: 2026-04-02
+updated: 2026-04-03
 ---
 
 ## Ziel
@@ -29,17 +29,6 @@ Das Modul "**mod_rewrite**" bietet hierbei endlose Möglichkeiten. Im Folgenden 
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
   
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
