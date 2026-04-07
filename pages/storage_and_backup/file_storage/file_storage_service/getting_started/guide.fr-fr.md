@@ -1,7 +1,7 @@
 ---
 title: "File Storage Service - Premiers pas"
 excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de shares, l’accès des clients et le montage sur vos machines virtuelles."
-updated: 2026-03-31
+updated: 2026-04-07
 ---
 
 ## Objectif
@@ -37,7 +37,18 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Cliquez sur `File Storage`{.action} dans la barre de navigation.
+>> Accédez à `File Storage`{.action} depuis la barre de navigation, puis cliquez sur `Créer un share`{.action}.
+>>
+>> Renseignez le nom du share, puis appliquez un filtre selon le mode de déploiement afin de sélectionner la région cible.
+>>
+>> Définissez le niveau de performance et la capacité (en Gio), `associez`{.action} un réseau privé, puis cliquez sur `Valider`{.action} pour finaliser la création du share.
+>>
+>> > [!primary]
+>> >
+>> > Certaines fonctionnalités avancées du service File Storage, comme la gestion complète des shares et l’autorisation des machines clientes, ne sont pas encore accessibles depuis l’espace client OVHcloud.
+>> >
+>> > Pour l’instant, vous devez utiliser les API OVHcloud, la CLI OpenStack ou Manila CSI pour poursuivre la configuration et le montage des shares. Ces fonctionnalités seront intégrées à l'espace client OVHcloud dans une prochaine version.
+>> >
 >>
 > Via l'API OVHcloud
 >> **1\. Créer un share**
@@ -123,7 +134,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> > **Note :** Remplacez <my-share-name> par le nom de share que vous avez choisi.
 >> >
 >>
->> Répertoriez vos actions et attendez que la nouvelle action apparaisse avec le statut `available`.
+>> Listez vos shares et attendez que le nouveau share apparaisse avec le statut `available`.
 >>
 >> > [!api]
 >> >
@@ -280,9 +291,9 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> **Note :** Cela vous permet de surveiller la capacité de stockage et l'utilisation de votre share NFS.
 >>
 > Via la CLI OpenStack avec le plugin Manila
-> >> **Prérequis supplémentaires**
+>> **Prérequis supplémentaires**
 >>
->> - Assurez-vous que l'utilisateur OpenStack dispose du rôle ``Administrator` ou `Share operator`.
+>> - Assurez-vous que l'utilisateur OpenStack dispose du rôle `Administrator` ou `Share operator`.
 >>
 >> **1\. Installer le plugin CLI Manila**
 >>
@@ -578,7 +589,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >>
 >> **4\. Installation de la CLI OpenStack**
 >>
->> Préparez votre environnement pour utiliser l'API OpenStack en installant python-openstackclient, en suivant [ce guide](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+>> Préparez votre environnement pour utiliser l'API OpenStack en installant python-openstackclient, en suivant [ce guide de préparation de l'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 >>
 >> Installez le client Manila pour gérer les partages du service File Storage :
 >>
@@ -586,7 +597,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> pip install python-manilaclient
 >> ```
 >>
->> N'oubliez pas de mettre à jour votre script de complétion de shell pour activer l'autocomplétion OpenStack `share`.
+>> Mettez à jour votre script de complétion de shell pour activer l'autocomplétion OpenStack `share`.
 >>
 >> **5\. Installation du driver CSI NFS**
 >>
@@ -668,7 +679,6 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> - os-domainName
 >> - os-projectDomainID
 >> - os-projectName
->> - os-projectDomainID
 >>
 >> Une fois ces valeurs obtenues, créez un fichier nommé secrets.yaml avec le contenu suivant. Ce secret Kubernetes permet au pilote CSI Manila de s'authentifier auprès d'OpenStack et de gérer les ressources Manila dans votre cluster.
 >>
@@ -932,7 +942,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> kubectl apply -f nfs-deployment.yaml
 >> ```
 >>
->> Vous pouvez vérifier la fonctionnalité RWX en vous connectant à un pod en utilisant la commande `kubectl exec` et en créant un fichier dans le répertoire monté (par exemple, `/var/lib/www/`). Ensuite, connectez-vous au deuxième pod et vérifiez que le fichier est visible. Si c'est le cas, votre share Manila exposé via NFS fonctionne correctement.
+>> Pour vérifier la fonctionnalité RWX, connectez-vous à un pod via `kubectl exec` et créez un fichier dans le répertoire monté (par exemple, `/var/lib/www/`). Vérifiez ensuite que ce fichier est visible depuis le deuxième pod : si c'est le cas, votre share Manila exposé via NFS fonctionne correctement.
 >>
 >> **10\. Redimensionner un share NFS à l'aide du provisionnement dynamique**
 >>
@@ -979,7 +989,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> > error: persistentvolumeclaims "existing-nfs-share-pvc" could not be patched: persistentvolumeclaims "existing-nfs-share-pvc" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
 >> >
 >>
->> **11. Montage d'un share Manila existant comme volume dans les pods**
+>> **11\. Montage d'un share Manila existant comme volume dans les pods**
 >>
 >> Comme indiqué précédemment, une StorageClass Kubernetes peut créer dynamiquement des shares Manila exposés via NFS. Alternativement, vous pouvez utiliser un share Manila pré-provisionné et le monter directement dans un pod.
 >>
@@ -1017,7 +1027,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> - `SHARE_ACCESS_NAME` est le nom du share.
 >> - `SUBNET_CIDR` est le CIDR utilisé lors de la configuration du runtime Manila CSI.
 >>
->> >> Récupérez l'ID de share NFS et l'ID d'accès au share, puis créez un fichier nommé `static-provisioning.yaml` et mettez à jour les paramètres `volumeAttributes.shareID` et `volumeAttributes.shareAccessID` :
+>> Récupérez l'ID de share NFS et l'ID d'accès au share, puis créez un fichier nommé `static-provisioning.yaml` et mettez à jour les paramètres `volumeAttributes.shareID` et `volumeAttributes.shareAccessID` :
 >>
 >> ```yaml
 >> apiVersion: v1
@@ -1102,7 +1112,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >>
 >> > [!primary]
 >> >
->> > Vous pouvez trouver des exemples utiles [ici](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service)
+>> > Vous pouvez trouver des exemples utiles dans le [dépôt public-cloud-examples](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service)
 >> >
 >>
 >> **2\. Déclarer le fournisseur OpenStack**

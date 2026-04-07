@@ -1,7 +1,7 @@
 ---
 title: File Storage Service - Getting started
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
-updated: 2026-03-31
+updated: 2026-04-07
 ---
 
 ## Objective
@@ -24,6 +24,20 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >
 
 > [!tabs]
+> Via the OVHcloud Control Panel
+>> Access `File Storage`{.action} from the navigation bar, then click `Create a share`{.action}.
+>>
+>> Enter the share name, then filter by deployment mode to select the target region.
+>>
+>> Set the performance level and size (in GiB), `associate`{.action} a private network, and click `Validate`{.action} to complete the share creation.
+>>
+>> > [!primary]
+>> >
+>> > Some advanced features of the File Storage service, such as full share management and client VM access, are not yet available in the OVHcloud Control Panel.
+>> >
+>> > For now, you need to use the OVHcloud APIs, OpenStack CLI, or Manila CSI to continue configuring and mounting shares. These features will be added to the Control Panel in a future release.
+>> >
+>>
 > Via the OVHcloud API
 >> **1\. Create a share**
 >>
@@ -262,7 +276,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
 >> ```
 >>
->> **Note:** This allows you to monitor the storage capacity and usage of your NFS share.
+>> **Note:** Use this to monitor the storage capacity and usage of your NFS share.
 >>
 > Via the OpenStack CLI with the Manila plugin
 >> **Additional requirements**
@@ -571,7 +585,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> pip install python-manilaclient
 >> ```
 >>
->> Don’t forget to update your shell completion script to enable OpenStack `share` autocompletion.
+>> Update your shell completion script to enable OpenStack `share` autocompletion.
 >>
 >> **5\. Install the CSI NFS driver**
 >>
@@ -916,7 +930,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> kubectl apply -f nfs-deployment.yaml
 >> ```
 >>
->> You can verify the RWX functionality by connecting to one pod using the `kubectl exec` command and creating a file in the mounted directory (e.g., `/var/lib/www/`). Then, connect to the second pod and check that the file is visible. If it is, your Manila share exposed through NFS is functioning correctly.
+>> To verify RWX functionality, use `kubectl exec` to connect to one pod and create a file in the mounted directory (e.g., `/var/lib/www/`). Then connect to the second pod and confirm the file is visible. If it is, your Manila share exposed through NFS is functioning correctly.
 >>
 >> **10\. Resize an NFS share using dynamic provisioning**
 >>
@@ -1058,7 +1072,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> kubectl apply -f pod.yaml
 >> ```
 >>
->> You can now use `kubectl exec` to access the pod and run `df -h` to verify that the pre-created Manila share is properly mounted. 
+>> Use `kubectl exec` to access the pod and run `df -h` to verify the pre-created Manila share is properly mounted. 
 >>
 >> **Useful CLI**
 >>
@@ -1086,7 +1100,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >>
 >> > [!primary]
 >> >
->> > You can find useful examples [here](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service)
+>> > You can find useful examples in the [public-cloud-examples repository](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service)
 >> >
 >>
 >> **2\. Declare the OpenStack provider**
