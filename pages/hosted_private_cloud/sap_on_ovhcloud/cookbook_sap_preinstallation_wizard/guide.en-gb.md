@@ -58,8 +58,6 @@ The SAP pre-installation wizard offered by OVHcloud simplifies the deployment of
 
 ## First Steps
 
-To access our SAP pre-installation wizard, go to the SAP Features Hub section in the OVHcloud Control Panel.
-
 ![sap-features-hub](images/sap-features-hub.png){.thumbnail}
 
 You have two options: start a blank wizard to manually enter all the necessary information or import a previously created JSON file. This file can be generated from the schema of our API or come from a previous installation, allowing you to pre-fill the information and speed up the process.

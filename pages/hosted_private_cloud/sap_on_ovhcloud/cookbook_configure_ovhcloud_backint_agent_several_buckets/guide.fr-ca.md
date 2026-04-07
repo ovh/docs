@@ -52,7 +52,7 @@ Dans le cas des sauvegardes SAP HANA, le versioning vous permet de réaliser plu
 
 Vous pouvez vérifier le statut du versioning de votre bucket Object Storage en suivant ces étapes :
 
-1. Dans l'[espace client OVHcloud](/links/manager), cliquez sur l'univers `Public Cloud`{.action} et sélectionnez votre projet Public Cloud. Puis cliquez sur `Object Storage`{.action}.
+1. Après avoir sélectionné votre projet, cliquez sur `Object Storage`{.action}.
 2. Cliquez sur les buckets Object Storage qui accueilleront les sauvegardes de votre base de données SAP HANA.
 3. Vérifiez la valeur du paramètre `Versioning`{.action}, ce dernier doit avoir pour valeur `Activé`{.action}. Si la valeur de ce paramètre est `Désactivé`{.action}, cliquez sur `Activer le versioning`{.action}.
 

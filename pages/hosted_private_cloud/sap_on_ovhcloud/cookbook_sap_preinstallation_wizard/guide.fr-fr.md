@@ -58,8 +58,6 @@ L'assistant de pré-installation SAP proposé par OVHcloud facilite le déploiem
 
 ## Premiers pas
 
-Pour accéder à notre assistant de pré-installation SAP, rendez-vous dans la section `SAP Features Hub`{.action} de l'espace client OVHcloud.
-
 ![sap-features-hub](images/sap-features-hub.png){.thumbnail}
 
 Vous avez deux options : démarrer un assistant vierge pour saisir manuellement toutes les informations nécessaires, ou bien importer un fichier JSON préalablement créé. Ce fichier peut être généré à partir du schéma de notre API ou provenir d'une précédente installation, permettant ainsi de pré-remplir les informations et d'accélérer le processus.
