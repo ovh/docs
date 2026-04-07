@@ -79,11 +79,20 @@ You will be redirected to the launch wizard, simply close the window.
 
 #### Step 1 - Launch a service account
 
-You will need to generate a **complex** password.
+You will need to generate a **complex password** for your service account.
 
-To begin, launch Windows Powershell as an administrator.
+To ensure that the Veeam license activation works correctly, the username and password must use only supported characters:
 
-Next, create a service account, entering these lines of command:
+- Lowercase and uppercase letters **without accents** (a-z, A-Z)
+- Numbers (0-9)
+- Special characters: `! @ = # % & ' " { } * ( ) [ ] ? . , ; : - _ \ / +`
+
+> [!warning]
+>
+> If the username or password contains unsupported characters, license activation may fail.
+>
+
+Next, launch Windows PowerShell as an administrator and create the service account, for example:
 
 ```powershell
 New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVHcloud Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
