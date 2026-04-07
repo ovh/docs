@@ -1013,7 +1013,7 @@
                     + [Persistent Volumes on OVHcloud Managed Kubernetes Service](public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume)
                     + [Resizing Persistent Volumes](public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes)
                     + [Configuring multi-attach persistent volumes with OVHcloud NAS-HA](public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha)
-                    + [Configuring multi-attach persistent volumes with OVHcloud Enterprise File Storage](public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-efs)
+                    + [Enterprise File Storage - Getting started with Trident CSI](storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi)
                     + [Configuring multi-attach persistent volumes with OVHcloud Cloud Disk Array](public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-cloud-disk-array)
                     + [Formatting NVMe disks on IOPS nodes](public_cloud/containers_orchestration/managed_kubernetes/formating-nvme-disks-on-iops-nodes)
                 + [Network](public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-network)
