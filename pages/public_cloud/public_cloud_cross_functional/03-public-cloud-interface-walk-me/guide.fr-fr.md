@@ -1,7 +1,7 @@
 ---
 title: "Se familiariser avec l'interface Public Cloud"
 excerpt: "Visite guidée de l'interface Public Cloud"
-updated: 2025-04-28
+updated: 2026-04-07
 ---
 
 ## Objectif
@@ -25,7 +25,7 @@ Les paramètres de votre compte OVHcloud restent accessibles à tout moment, tou
 
 ### Votre projet Public Cloud
 
-Comme il est possible de gérer plusieurs projets selon vos quotas, le nom et l’ID de chaque projet restent toujours visibles, quel que soit l’écran que vous consultez. Cette information vous permet de savoir en permanence sur quel environnement vous travaillez. Vous pouvez la retrouver à tout moment dans le panneau de navigation situé à gauche.
+Comme il est possible de gérer plusieurs projets selon vos quotas, le nom et l’ID de chaque projet restent toujours visibles, quel que soit l’écran que vous consultez. Cette information vous permet de savoir en permanence sur quel environnement vous travaillez. Vous pouvez la retrouver à tout moment dans le menu de gauche.
 
 L'ID peut être nécessaire lors de l'utilisation de la CLI, de certaines demandes de support ou autre. Vous pouvez le copier en cliquant sur l'icône située à sa droite.
 
@@ -35,15 +35,15 @@ Vous pouvez modifier le nom du projet via l'onglet `Paramètres`{.action}. Rense
 
 |Section|Description des options|
 |---|---|
-|**Compute**|Cette section vous permet de démarrer des instances, ces serveurs cloud disponibles à la demande.|
+|**Compute**|Cette section vous permet de démarrer des instances, c'est-à-dire des serveurs cloud disponibles à la demande.|
 |**Storage & backup**|Vous y trouverez différentes solutions de stockage et bases de données, chacune adaptée à des besoins spécifiques.|
 |**Network**|Cette section permet de connecter vos ressources Public Cloud entre elles et avec d’autres produits OVHcloud.|
-|**Containers & Orchestration**|Elle propose des outils pour automatiser vos architectures et gagner en flexibilité.|
+|**Containers & Orchestration**|Cette section propose des outils pour automatiser vos architectures et gagner en flexibilité.|
 |**Databases & Analytics**|Ces services aident à gérer vos problématiques de Big Data et d’analyse de données.|
 |**AI & Machine Learning**|Vous y trouverez les outils OVHcloud dédiés à l’intelligence artificielle.|
 |**Quantum**|Cette section regroupe les services liés au calcul quantique.|
-|**Management Interface**|Un seul lien vers l’interface Horizon.|
-|**Paramètres**|Permet de configurer et gérer les aspects du projet.|
+|**Management Interfaces**|Un seul lien vers l’interface Horizon.|
+|**Paramètres**|Cette section permet de configurer et gérer les aspects du projet.|
 
 ### Les raccourcis
 
@@ -53,11 +53,11 @@ Le centre de l'écran vous propose des raccourcis permettant d'accéder rapideme
 
 Pour chaque ressource que vous souhaitez créer, vous serez accompagné par un assistant de configuration qui, étape après étape, vous permet de paramétrer la ressource selon vos besoins.
 
-La plupart du temps, vous devrez choisir la localisation de la ressource, le modèle, quelques paramétres personnalisables et, dans certains cas, le mode de facturation.
+La plupart du temps, vous devrez choisir la localisation de la ressource, le modèle, quelques paramètres personnalisables et, dans certains cas, le mode de facturation.
 
 ### Les outils de gestion
 
-Dans votre projet Public Cloud, plusieurs outils de gestion sont disponibles pour configurer vos ressources, vos utilisateurs et vos paramètres. Vous pouvez y accéder depuis la barre de menu à gauche, en bas de celle-ci. Les outils sont regroupés sous deux sections principales : Management Interface, qui contient le lien vers l’interface Horizon, et Settings, qui regroupe toutes les options de configuration du projet (utilisateurs, quotas, SSH, facturation, contacts, etc.).
+Dans votre projet Public Cloud, plusieurs outils de gestion sont disponibles pour configurer vos ressources, vos utilisateurs et vos paramètres. Vous pouvez y accéder depuis la partie inférieure du menu de gauche. Les outils sont regroupés sous deux sections principales : **Management Interfaces**, qui contient le lien vers l’interface Horizon, et **Paramètres**, qui regroupe toutes les options de configuration du projet (utilisateurs, quotas, SSH, facturation, contacts, etc.).
 
 |Entrée du menu|Description|
 |---|---|

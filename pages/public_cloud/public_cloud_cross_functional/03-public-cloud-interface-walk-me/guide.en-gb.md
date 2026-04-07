@@ -1,7 +1,7 @@
 ---
 title: "How to use the Public Cloud interface"
 excerpt: "Guided tour of the Public Cloud interface to explore the different sections"
-updated: 2025-04-28
+updated: 2026-04-07
 ---
 
 ## Objective
@@ -25,7 +25,7 @@ Your OVHcloud account settings are accessible at any time, as are notifications 
 
 ### Your Public Cloud project
 
-Since you can manage multiple projects according to your quotas, the name and ID of each project remain visible at all times, regardless of which screen you are viewing. This information allows you to know at all times which environment you are working on. You can find it at any time in the navigation panel on the left.
+Since you can manage multiple projects according to your quotas, the name and ID of each project remain visible at all times, regardless of the screen you are viewing. This lets you know which environment you are working in. You can find it at any time in the left-hand menu.
 
 The ID may be required when using the CLI, for certain support requests or otherwise. You can copy it by clicking on the icon to the right of it.
 
@@ -38,12 +38,12 @@ You can change the project name via the `Settings`{.action} tab. Enter a new nam
 |**Compute**|This section allows you to launch instances, which are cloud servers available on demand.|
 |**Storage & backup**|Here you will find various storage and database solutions, each tailored to specific needs.|
 |**Network**|This section allows you to connect your Public Cloud resources to each other and to other OVHcloud products.|
-|**Containers & Orchestration**|It offers tools to automate your architectures and increase flexibility.|
+|**Containers & Orchestration**|This section offers tools to automate your architectures and improve flexibility.|
 |**Databases & Analytics**|These services help you manage your Big Data and data analysis challenges.|
 |**AI & Machine Learning**|Here you will find OVHcloud tools dedicated to artificial intelligence.|
 |**Quantum**|This section includes services related to quantum computing.|
-|**Management Interface**|A single link to the Horizon interface.|
-|**Settings**|Allows you to configure and manage aspects of the project.|
+|**Management Interfaces**|A single link to the Horizon interface.|
+|**Settings**|This section allows you to configure and manage aspects of the project.|
 
 ### Shortcuts
 
@@ -57,7 +57,7 @@ Most of the time, you will have to choose the location of the resource, the mode
 
 ### Management tools
 
-In your Public Cloud project, several management tools are available to configure your resources, users, and settings. You can access them from the menu bar at the bottom left. The tools are grouped into two main sections: Management Interface, which contains the link to the Horizon interface, and Settings, which groups together all the project configuration options (users, quotas, SSH, billing, contacts, etc.).
+In your Public Cloud project, several management tools are available to configure your resources, users, and settings. You can access them from the bottom-left menu. The tools are grouped into two main sections: **Management Interfaces**, which contains the link to the Horizon interface, and **Settings**, which includes all the project configuration options (users, quotas, SSH, billing, contacts, etc.).
 
 |Menu entry|Description|
 |---|---|
