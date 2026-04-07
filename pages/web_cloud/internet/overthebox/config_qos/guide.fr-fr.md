@@ -32,7 +32,7 @@ Certaines règles sont déjà présentes par défaut, permettant notamment de pr
 > Le débit montant est la bande passante de votre réseau vers l'Internet, c'est-à-dire votre débit d'émission.
 >
 
-Avant de configurer la  **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [perf.overthebox.net](https://perf.overthebox.net/) afin de déterminer les débits maximum de chacune de vos connexions.
+Avant de configurer la **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [perf.overthebox.net](https://perf.overthebox.net/) afin de déterminer les débits maximum de chacune de vos connexions.
 
 **À titre d'exemple**, pour ce guide, voici les débits obtenus sur chaque connexion :
 
@@ -118,7 +118,7 @@ Dans notre exemple, nous souhaitons que le débit montant de notre serveur NAS s
 > Cette configuration ne fonctionne qu'à partir de la version v1.0. **SQM** est disponible en version v0.9 mais ne peut être configuré que sur une interface.
 >
 
-_Smart Queue Management_ (SQM) est un système de QoS unifié qui applique différents algorithmes pour améliorer la qualité de votre connexion internet. Ce système met en place automatiquement des politiques de planification réseau par flux et par paquet, de management de queue actif (AQM), de mise en forme du trafic (traffic shaping), de limite de débits (rate limiting) ou encore de priorisation.
+_Smart Queue Management_ (SQM) est un système de QoS unifié qui applique différents algorithmes pour améliorer la qualité de votre connexion Internet. Ce système met en place automatiquement des politiques de planification réseau par flux et par paquet, de management de queue actif (AQM), de mise en forme du trafic (traffic shaping), de limite de débits (rate limiting) ou encore de priorisation.
 De ce fait, il n'y a plus besoin de spécifier la QoS manuellement pour chaque flux, mais uniquement par interface.
 
 #### Configuration automatique
@@ -149,13 +149,13 @@ L'outil de configuration automatique applique une configuration générale en fo
 > - Le débit montant est la bande passante de votre réseau vers l'Internet, c'est-à-dire votre débit d'émission.
 >
 
-Avant de configurer la  **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [perf.overthebox.net](https://perf.overthebox.net/) afin de déterminer les débits maximum de chacune de vos connexions.
+Avant de configurer la **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [perf.overthebox.net](https://perf.overthebox.net/) afin de déterminer les débits maximum de chacune de vos connexions.
 
 **À titre d'exemple**, pour ce guide, voici les débits obtenus sur chaque connexion :
 
 - FTTH: Débit descendant : 1000 Mbps / Débit montant : 600 Mbps (nous ne configurons pas SQM sur ce lien, car supérieur à 300Mbps)
 - VDSL: Débit descendant : 25 Mbps / Débit montant : 3 Mbps
-- LTE: Débit descendant : 10 Mbps / Débit montant :  10 Mbps
+- LTE: Débit descendant : 10 Mbps / Débit montant : 10 Mbps
 
 > [!warning]
 >

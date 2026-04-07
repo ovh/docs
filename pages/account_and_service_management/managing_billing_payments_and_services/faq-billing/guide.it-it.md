@@ -10,7 +10,7 @@ Per maggiori informazioni, consulta le domande relative alla fatturazione e al p
 
 ### Come conoscere l’account di fatturazione?
 
-La lista dei contatti dei tuoi servizi è disponibile direttamente dal tuo [Spazio Cliente OVHcloud](/links/manager). Clicca sul tuo nome in alto a destra e poi su `I miei contatti`{.action}.
+La lista dei contatti dei tuoi servizi è disponibile dalla pagina [Gestione dei contatti](/links/control-panel/account-contacts).
 
 #### Consigli e suggerimenti
 
@@ -18,7 +18,7 @@ Per maggiori informazione sulla gestione dei contatti, consulta la guida [Gestir
 
 ### Come modificare i dati di fatturazione?
 
-I dati di fatturazione sono quelli del tuo identificativo cliente. Per le prossime fatture, è sufficiente aggiornare queste informazioni. Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Accedere al mio account`{.action}.
+I dati di fatturazione sono quelli del tuo identificativo cliente. Per le prossime fatture, è sufficiente aggiornare queste informazioni dalla pagina [Il mio profilo](/links/control-panel/account-profile).
 
 Ti ricordiamo che in generale non è possibile modificare una fattura già emessa. In caso di errore da parte dei nostri sistemi, contattaci tramite un **ticket di assistenza**.
 
@@ -29,13 +29,13 @@ Per alcune soluzioni (come domini, hosting Web, VPS e server dedicati) è possib
 
 #### Consigli e suggerimenti
 
-Per consultare lo stato dei tuoi servizi, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}.
+Per consultare lo stato dei tuoi servizi, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 Per effettuare il rinnovo manuale, accedi alla pagina <https://www.ovh.it/cgi-bin/order/renew.cgi>
 Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Come attivare il rinnovo automatico?
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Attiva il pagamento automatico`{.action}.
+Nella pagina [Le mie offerte e servizi](/links/control-panel/billing-services), clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Attiva il pagamento automatico`{.action}.
 
 #### Consigli e suggerimenti
 
@@ -44,7 +44,7 @@ Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/p
 
 ### Come disattivare il rinnovo automatico?
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Configura il rinnovo`{.action}. A questo punto è possibile scegliere la modalità manuale. Ricordiamo che questo tipo di rinnovo è disponibile solo per alcuni servizi come domini, hosting Web, VPS e server dedicati.
+Nella pagina [Le mie offerte e servizi](/links/control-panel/billing-services), clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Configura il rinnovo`{.action}. A questo punto è possibile scegliere la modalità manuale. Ricordiamo che questo tipo di rinnovo è disponibile solo per alcuni servizi come domini, hosting Web, VPS e server dedicati.
 
 Per disattivare un servizio, consulta la pagina [Come disattivare un servizio?](#cancelservice)
 
@@ -55,11 +55,11 @@ Per maggiori informazioni, consulta la guida Gestire il rinnovo dei servizi.
 
 ### Come aggiungere un metodo di pagamento?
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei metodi di pagamento`{.action} > `Aggiungi un metodo di pagamento`{.action}.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), clicca su `Aggiungi un metodo di pagamento`{.action}.
 
 ### Come aggiornare un metodo di pagamento?
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei metodi di pagamento`{.action}. È possibile aggiungere o eliminare un metodo di pagamento (carta bancaria, Paypal o addebito SEPA).
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), è possibile aggiungere o eliminare un metodo di pagamento (carta bancaria, Paypal o addebito SEPA).
 
 In caso di richiesta di addebito SEPA, entro 24-48 ore riceverai all'indirizzo di posta associato all’account OVHcloud un'email con il link per la firma elettronica del mandato di addebito. Attenzione: il titolare del conto bancario deve essere identico al proprietario dell'account OVHcloud.
 
@@ -71,7 +71,7 @@ Per il corretto rinnovo dei servizi è necessario registrare almeno un metodo di
 
 ### Come eliminare un metodo di pagamento?
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei metodi di pagamento`{.action}. Seleziona il metodo di pagamento da eliminare e clicca sull’icona a forma di cestino.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), seleziona il metodo di pagamento da eliminare e clicca sull’icona a forma di cestino.
 
 #### Consigli e suggerimenti
 
@@ -89,12 +89,12 @@ Se sul conto prepagato OVHcloud è disponibile del credito, verrà utilizzato di
 
 ### Come conoscere la data del prossimo pagamento?
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}. È possibile modificare la frequenza di rinnovo delle soluzioni.
+Nella pagina [Le mie offerte e servizi](/links/control-panel/billing-services), è possibile consultare e modificare la frequenza di rinnovo delle soluzioni.
 Per saperne di più, consulta questa guida dettagliata: [Gestire il rinnovo dei miei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 #### Consigli e suggerimenti
 
-La frequenza di rinnovo delle soluzioni può essere modificata dalla sezione `Le mie offerte e servizi`{.action} dello Spazio Cliente.
+La frequenza di rinnovo delle soluzioni può essere modificata dalla pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Quale metodo di pagamento viene utilizzato per il pagamento della fattura?
@@ -107,11 +107,11 @@ Se sul conto prepagato OVHcloud è disponibile del credito, verrà utilizzato di
 
 ### Come recuperare le fatture?
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie fatture`{.action}.
+Apri la pagina [Le mie fatture](/links/control-panel/billing-invoices).
 
 #### Consigli e suggerimenti
 
-Se la fattura che stai cercando non compare in questa sezione, è possibile che il tuo utente non risulti come contatto di fatturazione del servizio interessato. Per conoscerlo ed eventualmente modificarlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei contatti`{.action}.
+Se la fattura che stai cercando non compare in questa sezione, è possibile che il tuo utente non risulti come contatto di fatturazione del servizio interessato. Per conoscerlo ed eventualmente modificarlo, apri la pagina [Gestione dei contatti](/links/control-panel/account-contacts).
 
 ### Come saldare gli importi dovuti?
 
@@ -132,7 +132,7 @@ L’interfaccia principale dello Spazio Cliente mostra i pagamenti in attesa. É
 
 #### Consigli e suggerimenti
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei metodi di pagamento`{.action}. Potrete allora registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
 
 ### A cosa corrispondono i pagamenti effettuati?
 
@@ -140,7 +140,7 @@ I pagamenti eseguiti tramite il nostro sito Web e i prelievi automatici sono ele
 
 ### Come disattivare un servizio? <a name="cancelservice"></a>
 
-Per soluzioni come domini, hosting Web, server dedicati e VPS, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Disattivare il servizio`{.action}. Se hai già effettuato la richiesta in precedenza è possibile annullarla cliccando su `Annulla la disattivazione del servizio`{.action}.
+Per soluzioni come domini, hosting Web, server dedicati e VPS, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Disattivare il servizio`{.action}. Se hai già effettuato la richiesta in precedenza è possibile annullarla cliccando su `Annulla la disattivazione del servizio`{.action}.
 
 L’operazione diventerà effettiva al termine del periodo di validità o dell’impegno contrattuale relativo al servizio. È possibile effettuare o annullare una richiesta fino a 24 ore prima della scadenza.
 
@@ -168,7 +168,7 @@ Questo documento è in genere disponibile presso il dipartimento di contabilità
 
 OVHcloud mette comunque a disposizione tutte le fatture tramite un file Excel in formato CSV.
 
-Per scaricarlo accedi allo Spazio Cliente, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie fatture`{.action} > `Azioni`{.action} > `Esporta in CSV`{.action}.
+Per scaricarlo, apri la pagina [Le mie fatture](/links/control-panel/billing-invoices). Clicca su `Azioni`{.action} > `Esporta in CSV`{.action}.
 
 ## Per saperne di più
   

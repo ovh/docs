@@ -11,9 +11,19 @@ Nello Spazio Cliente OVHcloud, è possibile creare firme universali (footers) pe
 
 ## Prerequisiti
 
-- avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) attive 
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Procedura
 
-Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) nella sezione "Soluzioni collaborative Microsoft".
+Consulta la nostra guida [Creare firme automatiche](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers) nella sezione "Soluzioni collaborative Microsoft".

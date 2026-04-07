@@ -34,7 +34,18 @@ This ensures that all data traffic remains on the private network, with no Inter
 - An [Enterprise File Storage](/links/storage/enterprise-file-storage) service in your OVHcloud account.
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in the same region.
 - An active [vRack Private Network](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) in the same region.
-- Access to the [OVHcloud Control Panel](/links/manager) or the [Openstack CLI](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+- Access to the [OVHcloud Control Panel](/links/manager) or the [OpenStack CLI](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Overview
 
@@ -145,7 +156,7 @@ For detailed guidance, see OVHcloud’s official documentation: [vRack Services 
 
 /// details | Second method: creating via Enterprise File Storage section
 
-1. In the [OVHcloud Control Panel](/links/manager), navigate to the `Bare Metal Cloud`{.action} section. Click `Enterprise File Storage`{.action} under the heading **Storage and backups**, then select your EFS service.
+1. Select your EFS service.
 
 2. In the `Network Configuration` box, click `Configure Network Settings`{.action}.
 

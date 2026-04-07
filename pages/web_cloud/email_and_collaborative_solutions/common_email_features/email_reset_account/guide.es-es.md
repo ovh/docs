@@ -4,7 +4,6 @@ excerpt: "Cómo eliminar o restaurar una dirección de correo electrónico en un
 updated: 2026-02-19
 ---
 
-
 ## Objetivo
 
 Quiere:
@@ -22,8 +21,42 @@ Quiere:
     - [**Exchange**](/links/web/emails-exchange).
     - [**Email Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+- Ser el contacto administrador del servicio de correo electrónico en cuestión.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Zimbra:**
+
+- **Enlace directo:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 <a name="whichmxplan"></a>
 
@@ -53,10 +86,6 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 >>
 >> Para identificar la tecnología de correo electrónico asociada a su servicio MX Plan, consulte la sección "[Identificar la tecnología de correo de su solución MX Plan](#whichmxplan)" de esta guía.
 >>
->> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
->> 1. Acceda al apartado `Web Cloud`{.action}.
->> 1. Haga clic en `MX Plan`{.action}.
->> 1. Seleccione el dominio.
 >> 1. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.
 >> 1. Haga clic en el botón `...`{.action} situado a la derecha de la cuenta que desea modificar y, seguidamente, en `Eliminar la cuenta`{.action}.
 >>
@@ -66,10 +95,6 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 >>
 >> Para identificar la tecnología de correo electrónico asociada a su servicio MX Plan, consulte la sección "[Identificar la tecnología de correo de su solución MX Plan](#whichmxplan)" de esta guía.
 >>
->> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
->> 1. Acceda al apartado `Web Cloud`{.action}.
->> 1. Haga clic en `MX Plan`{.action}.
->> 1. Seleccione el dominio.
 >> 1. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.
 >> 1. Haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Restaurar la cuenta`{.action}.
 >>
@@ -77,10 +102,6 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 >>
 > **Email Pro**
 >>
->> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
->> 1. Acceda al apartado `Web Cloud`{.action}.
->> 1. Haga clic en `Email Pro`{.action}.
->> 1. Seleccione la plataforma correspondiente.
 >> 1. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.
 >> 1. Haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la cuenta que desea modificar y, seguidamente, en `Restaurar la cuenta`{.action}.
 >>
@@ -90,10 +111,6 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 >>
 > **Exchange**
 >>
->> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
->> 1. Acceda al apartado `Web Cloud`{.action}.
->> 1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
->> 1. Seleccione la plataforma correspondiente.
 >> 1. Abra la pestaña `Cuentas de correo`{.action}.
 >> 1. Haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la cuenta que desea modificar y, seguidamente, en `Reiniciar`{.action}.
 >>
@@ -103,9 +120,6 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 >>
 > **Zimbra STARTER/PRO**
 >>
->> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
->> 1. Acceda al apartado `Web Cloud`{.action}.
->> 1. Haga clic en `Zimbra Mail`{.action}.
 >> 1. Abra la pestaña `Cuenta email`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.
 >> 1. Haga clic en el botón `⋮`{.action} situado a la derecha de la cuenta que desea modificar y, seguidamente, haga clic en `Eliminar`{.action}.
 >>

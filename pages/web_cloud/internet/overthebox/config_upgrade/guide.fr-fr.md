@@ -49,7 +49,7 @@ Si une mise à jour est disponible, une bannière s'affiche comme sur l'image ci
 
 > [!warning]
 >
-> Cette action n'est possible que si votre appareil contacte notre serveur de provisionning. Si ce n'est pas le cas, vous devez effectuer une [installation manuelle](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel).
+> Cette action n'est possible que si votre appareil contacte notre serveur de provisioning. Si ce n'est pas le cas, vous devez [installer manuellement l'image](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel).
 >
 
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
@@ -62,7 +62,7 @@ Attendez quelques minutes afin que l'appareil **OverTheBox** soit de nouveau op�
 
 > [!success]
 >
-> Votre appareil OvertheBox est maintenant mise à jour, votre configuration a été réappliquée automatiquement.
+> Votre appareil OverTheBox est maintenant mis à jour, votre configuration a été réappliquée automatiquement.
 >
 
 ### Modifier le canal de version
@@ -74,24 +74,24 @@ Attendez quelques minutes afin que l'appareil **OverTheBox** soit de nouveau op�
 
 Par défaut, un appareil OverTheBox est sur le canal `stable` qui contient la dernière version logicielle stable. Ce canal est recommandé, vous pourrez ainsi profiter des dernières fonctionnalités.
 
-D'autre canaux sont disponibles :
+D'autres canaux sont disponibles :
 
-- Le canal `beta` permet de tester la prochaine version du logiciel avant le déploiment sur le canal `stable`.
+- Le canal `beta` permet de tester la prochaine version du logiciel avant le déploiement sur le canal `stable`.
 - Les canaux de versions, comme `v0.9`, `v1.0`, permettent de maintenir votre matériel sur une version majeure précise. Seules des mises à jour mineures, telles que des correctifs, seront proposées.
 
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez modifier.
 
-Selectionnez ensuite le canal souhaité à l'aide du menu déroulant `Versions disponibles`{.action}.
+Sélectionnez ensuite le canal souhaité à l'aide du menu déroulant `Versions disponibles`{.action}.
 
 ![overthebox](images/manager-releaseChannel-2024.png){.thumbnail}
 
 ### Désactiver les mises à jour automatiques
 
-Par défaut, un appareil OverTheBox est mis à jour automatiquement la nuit si une nouvelle version du logicielle est disponible. Vous pouvez désactiver cette fonctionnnalité depuis l'espace client.
+Par défaut, un appareil OverTheBox est mis à jour automatiquement la nuit si une nouvelle version du logiciel est disponible. Vous pouvez désactiver cette fonctionnalité depuis l'espace client.
 
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez modifier.
 
-Activez ou désactivez les mise à jour automatique à l'aide de l'interrupteur `Autoriser les mises à jour automatiques la nuit`{.action}.
+Activez ou désactivez les mises à jour automatiques à l'aide de l'interrupteur `Autoriser les mises à jour automatiques la nuit`{.action}.
 
 ![overthebox](images/manager-autoupgrade-2024.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Dans ce cas, les recommandations sont les suivantes :
 
 - Débranchez le câble réseau entre l'ordinateur et l'OverTheBox puis rebranchez-le au bout d'environ une minute.
 - Redémarrez les services réseau sur l'ordinateur.
-- Redémarrerzl'ordinateur pour le « forcer » à oublier l'ancien lease DHCP.
+- Redémarrez l'ordinateur pour le « forcer » à oublier l'ancien lease DHCP.
 - Si aucune des étapes précédentes ne fonctionne, débranchez électriquement l'OverTheBox pendant environ une minute puis rebranchez-la.
 
 ### Matrice des versions

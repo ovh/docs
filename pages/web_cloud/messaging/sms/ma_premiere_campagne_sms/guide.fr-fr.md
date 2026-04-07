@@ -1,6 +1,6 @@
 ---
-title: Ma première campagne SMS
-excerpt: Découvrez comment effectuer une première campagne d’envoi de SMS
+title: "Ma première campagne SMS"
+excerpt: "Découvrez comment effectuer une première campagne d’envoi de SMS"
 updated: 2022-08-05
 ---
 
@@ -31,7 +31,7 @@ La barre d'outils ainsi que les raccourcis vous permettront d'accéder aux fonct
 
 ![firstsms](images/firstsms01.png){.thumbnail}
 
-### Étape 1 : ajouter des contacts
+### Étape 1 : Ajouter des contacts
 
 #### Ajout d'une liste de contacts
 
@@ -53,15 +53,15 @@ Pour ajouter un carnet d'adresses, cliquez sur l'onglet `Contacts`{.action} puis
 
 Consultez le guide [Gérer mes carnets d'adresses SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms) afin d'en savoir plus.
 
-### Étape 2 : créer un expéditeur
+### Étape 2 : Créer un expéditeur
 
 Par défaut, l'envoi de vos SMS depuis un compte OVHcloud en France se fait depuis un numéro court permettant la réponse. Il peut être plus intéressant de formuler la demande d'un expéditeur alphanumérique, depuis l'onglet `Expéditeurs`{.action}, afin que vos SMS soient envoyés au nom de votre société ou de votre organisme.
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide "Envoyer des sms depuis mon espace client".](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms)
+À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide « Envoyer des sms depuis mon espace client »](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms).
 
-### Étape 3 : l'envoi d'une campagne SMS
+### Étape 3 : L'envoi d'une campagne SMS
 
 L'onglet `Message et campagne`{.action} vous permettra d'accéder aux options d'envoi, à l'historique de vos SMS envoyés et reçus ainsi qu'à vos envois de SMS planifiés dans le cadre d'envois différés.
 

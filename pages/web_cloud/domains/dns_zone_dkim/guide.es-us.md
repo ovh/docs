@@ -55,12 +55,21 @@ El registro DKIM (**D**omain**K**eys **I**dentified **M**ail) permite firmar los
 
 ## Requisitos
 
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager) o desde su proveedor de servicios si está registrado fuera de OVHcloud.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Haber contratado una de las siguientes soluciones de correo electrónico:
     - MX Plan de OVHcloud (disponible a través de un [plan de hosting Web Cloud](/links/web/hosting), un [alojamiento gratuito 100M](/links/web/domains-free-hosting) o un MX Plan contratado por separado).
     - [Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-hosted-exchange).
     - Una solución de correo fuera de OVHcloud con DKIM.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -609,7 +618,6 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> > Ahora ha realizado todas las operaciones necesarias para activar el DKIM. Para asegurarse de que esté activado, consulte la sección "[API - Los diferentes estados del DKIM](#dkim-status)" de esta guía para comprobar que el valor `status:` está bien en `inProduction`. En ese caso, su DKIM estará activo.<br><br> **Si ha creado dos selectores**, el segundo selector debe estar en `status: "ready"`.
 >>
 
-
 #### API - Los diferentes estados del DKIM <a name="dkim-status"></a>
 
 Seleccione el servicio de correo en las siguientes pestañas:
@@ -899,7 +907,6 @@ Haga clic en la pestaña que corresponde a su producto.
  - `organizationName`: introduzca el nombre de su plataforma Exchange con el formato "hosted-zz111111-1" o "private-zz111111-1". <br>
  - `selectorName`: escriba el nombre del selector al que desea cambiar. <br>
 
-
 Después de cambiar al nuevo selector, conserve el antiguo durante 7 días antes de eliminarlo y crear uno nuevo.
 
 #### ¿Por qué el DKIM no funciona y aparece en rojo en el área de cliente? <a name="reddkim"></a>
@@ -909,7 +916,6 @@ Después de cambiar al nuevo selector, conserve el antiguo durante 7 días antes
 > Esta pregunta solo se refiere a los productos Exchange.
 
 Tenga en cuenta que sus mensajes de correo electrónico no están firmados por el DKIM, a pesar de haberlo activado o configurado. En primer lugar, conéctese al área de cliente para comprobar el estado del DKIM.
-
 
  1. Conéctese al [área de cliente de OVHcloud](/links/manager).
  1. Acceda al apartado `Web Cloud`{.action}.

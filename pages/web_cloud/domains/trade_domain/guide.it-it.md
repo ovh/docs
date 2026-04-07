@@ -22,10 +22,20 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un nome di dominio registrato in OVHcloud e per il quale non sono in corso operazioni (modifica dell'intestatario, trasferimento, creazione). Se un'operazione è stata ultimata di recente sul tuo nome di dominio, prima di eseguire una nuova operazione è necessario almeno 60 giorni di calendario.
 - Il tuo account cliente è il [contatto amministratore e di fatturazione](/pages/account_and_service_management/account_information/managing_contacts) del nome di dominio interessato.
 - Disporre del consenso dell'intestatario attuale del nome di dominio per effettuare il cambio di intestatario.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedura
 
@@ -44,39 +54,33 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 >
 > - Il sito web del registro **TLD** corrispondente;
 > - La [lista dei TLD disponibili su OVHcloud](/links/web/domains-tld);
-> - Gli aggiornamenti di stato del nome di dominio. Per verificarlo, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Operazioni in corso`{.action}.
+> - Gli aggiornamenti di stato del nome di dominio. Per verificarlo, accedi alla pagina [Operazioni in corso](/links/control-panel/web-ongoing-operations).
 >
 
 ### Avvia la procedura di modifica dell'intestatario o modifica le informazioni ad essa associate
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Domini`{.action} e seleziona il nome di dominio interessato.
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina, nel riquadro **Abbonamento**, trovi la dicitura **Contatti**. Clicca sul pulsante `...`{.action} a destra e poi su `Gestisci i contatti`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 3**
 >>
 >> Accedi alla nuova pagina nel riquadro **Intestatario** e clicca sul pulsante `Modificare`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Step 5**
+> **Passaggio 4**
 >>
 >> > [!warning]
 >> >
@@ -88,7 +92,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
-> **Step 6**
+> **Passaggio 5**
 >>
 >> Si apre una nuova scheda del browser con tutti i nomi di dominio che possono essere modificati. Seleziona un nome di dominio nella lista selezionando la casella a sinistra. Questo step può essere utilizzato anche per avviare un'operazione di gruppo. In questo modo è possibile avviare la modifica dell'intestatario di più nomi di dominio contemporaneamente, ad esempio per cambiare l'intestatario di tutti i nomi di dominio *.ovh* se gli intestatari attuali sono gli stessi.
 >>
@@ -96,7 +100,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> Una volta effettuate le scelte, clicca su `Continua`{.action}.
 >>
-> **Step 7**
+> **Passaggio 6**
 >>
 >> Nel modulo Dettagli intestatario, assicurarsi di inserire informazioni valide in tutti i campi obbligatori. Presta attenzione agli errori di inserimento e utilizza [caratteri stampabili ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) quando possibile. Ti ricordiamo che eventuali informazioni inesatte o false possono causare un errore tecnico e quindi un ritardo dell'intero processo.
 >>
@@ -128,4 +132,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [par
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra [Community di utenti](/links/community).
+Contatta la nostra [Community di utenti](/links/community).

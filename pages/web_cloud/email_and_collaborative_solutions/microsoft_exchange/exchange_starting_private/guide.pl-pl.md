@@ -13,7 +13,17 @@ Właśnie złożyłeś zamówienie na platformę Private Exchange. Niniejszy prz
 ## Wymagania początkowe
 
 - Zamówienie [rozwiązania Private Exchange OVHcloud](/links/web/emails-private-exchange).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
@@ -88,7 +98,7 @@ Kiedy tylko Twój serwer będzie gotowy i dostępny, otrzymasz wiadomość e-mai
 
 Aby dodać pierwszą nazwę domeny do platformy i rozpocząć konfigurowanie kont, zapoznaj się z naszym przewodnikiem [„Dodanie domeny do usługi Exchange”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) 
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 

@@ -16,17 +16,26 @@ Per i dati raramente consultati, è necessaria una richiesta di sblocco che comp
 
 ## Prerequisiti
 
-- Dallo Spazio Cliente OVHcloud:
-    - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Via python-swiftclient:
     - [Preparare l'ambiente di sviluppo per utilizzare l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) installando python-swiftclient.
     - [Impostare le variabili d'ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
 ### Sposta i tuoi oggetti dallo Spazio Cliente
 
-Nello [Spazio Cliente OVHcloud](/links/manager) clicca sulla scheda `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca sulla sezione `Cloud Archive`{.action} nel menu a sinistra.
+Clicca sulla sezione `Cloud Archive`{.action} nel menu a sinistra.
 
 Per sbloccare un archivio, clicca sul pulsante `...`{.action} a destra e poi su `Sblocca`{.action} per avviare il processo di recupero.
 

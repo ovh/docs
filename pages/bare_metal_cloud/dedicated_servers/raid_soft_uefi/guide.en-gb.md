@@ -49,14 +49,14 @@ Throughout this guide, we use the terms **primary disk** and **secondary disk**.
 
 ## Instructions
 
-When you purchase a new server, you may feel the need to perform a series of tests and actions. One such test could be to simulate a disk failure in order to understand the RAID rebuild process.
+When you purchase a new server, you may feel the need to perform a series of tests and actions. One such test could be to simulate a disk failure to understand the RAID rebuild process.
 
 ### Content overview
 
 - [Basic Information](#basicinformation)
 - [Understanding the EFI System Partition (ESP)](#efisystempartition)
 - [Simulating a disk failure](#diskfailure)
-    - [Removing the failed disk](#diskremove)
+    - [Removing the failed disk](#removedisk)
 - [Rebuilding the RAID (with non mirrored ESP)](#raidrebuildnonmirrored)
     - [Rebuilding the RAID after the primary disk is replaced (rescue mode)](#nonmirroredrescuemode)
     - [Recreating the EFI System Partition](#recreateesp)
@@ -314,7 +314,7 @@ You can use the `lsblk` command to confirm whether your partition is part of a R
 
 ***Does the content of the EFI System Partition change regularly?***
 
-In general, the contents of this partition do not change much, its content should only change on bootloader (e.g. GRUB) updates.
+In general, the contents of this partition do not change much and should only change on bootloader (e.g. GRUB) updates.
 
 However, if your EFI partition is not mirrored, we recommend running an automatic or manual script to synchronise all ESPs, so that they all contain the same up-to-date files. This way, if the drive on which this partition is mounted fails, the server will be able to restart on the ESP of one of the other drives.
 
@@ -609,9 +609,9 @@ We can now proceed with the disk replacement and RAID rebuild.
 ### Rebuilding the RAID (with non mirrored ESP)
 
 > [!primary]
-> This process might be different depending on the operating system you have installed on your server. We recommend that you consult the official documentation of your operating system to have access to the proper commands.
+> This process may differ depending on the operating system installed on your server. We recommend that you consult the official documentation of your operating system to have access to the proper commands.
 > 
-> If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#nonmirrorednormalmode) if your EFI system partition is not mirrored or [this section](#mirrored-esp-normal) if your EFI system partition is mirrored.
+> If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#nonmirrorednormalmode) if your EFI system partition is not mirrored or [this section](#raidrebuildmirrored) if your EFI system partition is mirrored.
 >
 
 #### Rebuilding the RAID after the primary disk is replaced (rescue mode) <a name="nonmirroredrescuemode"></a>
@@ -662,7 +662,7 @@ The new table will be used at the next reboot or after you run partprobe(8) or k
 The operation has completed successfully.
 ```
 
-Simply run the `partprobe` command.
+Run the `partprobe` command.
 
 Next, we rebuild the RAID array. The following code snippet shows how to add the new partitions (`nvme0n1p2` and `nvme0n1p3`) back into the RAID array.
 
@@ -898,7 +898,7 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 ```
 
-Simply run the `partprobe` command. If you still cannot see the newly-created partitions (by running `lsblk`), you need to reboot the server before continuing.
+Run the `partprobe` command. If you still cannot see the newly-created partitions (by running `lsblk`), you need to reboot the server before continuing.
 
 Next, add the partitions to the RAID:
 
@@ -1035,7 +1035,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> The operation has completed successfully.
 >> ```
 >>
->> Simply run the `partprobe` command.
+>> Run the `partprobe` command.
 >>
 >> We can now rebuild the RAID array. The following code snippet shows how to add the new partitions (nvme0n1p1, nvme0n1p2 and nvme0n1p3) back in the RAID array.
 >>
@@ -1136,7 +1136,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> The operation has completed successfully.
 >> ```
 >>
->> Simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
+>> Run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
 >>
 >> Next, add the partitions to the RAID:
 >>
@@ -1157,7 +1157,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> [user@server_ip ~]# cat /proc/mdstat
 >> ```
 >>
->> Once the raid rebuild is complete, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
+>> Once the RAID rebuild is complete, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
 >>
 
 ///
@@ -1329,7 +1329,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 
 ///
 
-## Go Further
+## Go further
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
@@ -1343,6 +1343,6 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts to assist with your specific use case.
 
 Join our [community of users](/links/community).

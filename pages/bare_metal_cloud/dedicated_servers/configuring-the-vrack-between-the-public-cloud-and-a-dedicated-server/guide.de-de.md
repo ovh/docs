@@ -29,9 +29,19 @@ OVHcloud [vRack](/links/network/vrack) ist ein privates Netzwerk, mit dem Sie da
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) in Ihrem Kunden-Account.
 - Sie haben ein [vRack](/links/network/vrack) in Ihrem Kunden-Account eingerichtet.
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) (kompatibel mit vRack) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen privaten IP-Adressbereich für das vRack festgelegt.
 - Beide Dienste müssen sich im selben vRack befinden.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -749,7 +759,7 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >>
 > **Windows**
 >>
->> Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung "Server-Manager". Wählen Sie dann `Lokaler Server`{.action} aus und klicken Sie neben "**NIC Teamvorgang**" auf den Link `Deaktiviert`{.action}:
+>> Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung "Server-Manager". Wählen Sie dann `Lokaler Server`{.action} aus und klicken Sie neben "**NIC Teamvorgang**" auf den Link `Deaktiviert`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 >>
@@ -761,7 +771,7 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >>
 >> ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 >>
->> Geben Sie nun das VLAN-Tag an. Klicken Sie im "**NIC-Teamvorgang**"-Fenster im Panel "**ADAPTER UND SCHNITTSTELLEN**", Gehen Sie zur Registerkarte `Teamschnittstellen`{.action} und mit der rechten Maustaste auf das Interface, das Sie gerade zum neuen Team hinzugefügt haben, und klicken Sie dann auf `Eigenschaften`{.action}. Klicken Sie jetzt auf `Spezifisches VLAN`{.action} und geben Sie den Tag ein:
+>> Geben Sie nun das VLAN-Tag an. Klicken Sie im "**NIC-Teamvorgang**"-Fenster im Panel "**ADAPTER UND SCHNITTSTELLEN**", Gehen Sie zur Registerkarte `Teamschnittstellen`{.action} und mit der rechten Maustaste auf das Interface, das Sie gerade zum neuen Team hinzugefügt haben, und klicken Sie dann auf `Eigenschaften`{.action}. Klicken Sie jetzt auf `Spezifisches VLAN`{.action} und geben Sie den Tag ein.
 >>
 >> ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 >>
@@ -769,15 +779,15 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >>
 >> ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 >>
->> Klicken Sie auf `Netzwerk und Internet`{.action}:
+>> Klicken Sie auf `Netzwerk und Internet`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
 >>
->> Klicken Sie dann auf `Netzwerk- und Freigabecenter`{.action}:
+>> Klicken Sie dann auf `Netzwerk- und Freigabecenter`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 >>
->> Klicken Sie anschließend auf `Adaptereinstellugen ändern`{.action}:
+>> Klicken Sie anschließend auf `Adaptereinstellugen ändern`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 >>

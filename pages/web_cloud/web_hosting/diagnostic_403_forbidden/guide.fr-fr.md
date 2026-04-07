@@ -36,28 +36,27 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou d'échanger avec notre [communauté d'utilisateurs](/links/community) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou d'échanger avec notre [communauté d'utilisateurs](/links/community) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting) OVHcloud.
 - Disposer des [identifiants de connexion](/pages/web_cloud/web_hosting/ftp_connection) à l'espace de stockage FTP de votre hébergement web.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-### Étape 1 : analyser la situation
+### 1 - Analyser la situation
 
 Si la page **« 403 forbidden »** est apparue suite à une modification de votre site web, [restaurez tout ou partie de l'espace de stockage FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_save_and_backup) à une date antérieure.
 
 Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site web, contactez un [prestataire spécialisé](/links/partner).
 
-Si la page **« 403 forbidden »** n'est pas apparue suite à une modification de votre site web, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement web pour des raisons de sécurité, passez directement à [l'étape 2](#step-2) du présent guide.
+Si la page **« 403 forbidden »** n'est pas apparue suite à une modification de votre site web, consultez votre messagerie. Si vous avez reçu un e-mail de nos services indiquant une fermeture de votre hébergement web pour des raisons de sécurité, passez directement à la [partie 2](#step-2) du présent guide.
 
 Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu d'e-mail de nos services à ce sujet, vérifiez les droits d'accès FTP (CHMOD) de vos fichiers/dossiers ainsi que le code contenu dans votre (vos) fichier(s) **.htaccess**. Vérifiez également si cette situation n'est pas générée par un plugin de sécurité ou par un pare-feu applicatif. Si besoin, contactez un [prestataire spécialisé](/links/partner).
 
-### Étape 2 : sécuriser vos solutions <a name="step-2"></a>
+### 2 - Sécuriser vos solutions <a name="step-2"></a>
 
 Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informatique(s) :
 
@@ -78,7 +77,7 @@ Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informa
 > En cas de doute sur les manipulations à réaliser, contactez les [partenaires OVHcloud](/links/partner).
 >
 
-### Étape 3 : intervenir sur votre hébergement web
+### 3 - Intervenir sur votre hébergement web
 
 Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactivation de votre hébergement web, ainsi que le ou les dossiers contenant les exemples de fichiers illégitimes.
 
@@ -112,10 +111,10 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 
 > [!success]
 >
-> Si vous souhaitez plus de détails concernant les [étapes 2 et 3](#step-2) précédentes, consultez notre tutoriel sur [les actions à réaliser en cas de piratage de votre site web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Si vous souhaitez plus de détails concernant les [parties 2 et 3](#step-2) précédentes, consultez notre tutoriel sur [les actions à réaliser en cas de piratage de votre site web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Étape 4 : réactiver votre hébergement web avec FileZilla <a name="reactivate-web-hosting"></a>
+### 4 - Réactiver votre hébergement web avec FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

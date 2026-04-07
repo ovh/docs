@@ -1,7 +1,7 @@
 ---
 title: "Configurare un record MX per la gestione delle email"
 excerpt: "Come configurare un record MX su un nome di dominio in OVHcloud"
-updated: 2026-02-19
+updated: 2026-03-27
 ---
 
 <style>
@@ -21,18 +21,25 @@ Il record MX permette di collegare un nome di dominio al server della sua piatta
 
 ## Prerequisiti
 
-- Avere accesso alla gestione della zona DNS del nome di dominio dallo [Spazio Cliente OVHcloud](/links/manager).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Il nome di dominio in questione deve utilizzare la configurazione OVHcloud (ad esempio i server DNS di OVHcloud).
 - Disporre di una soluzione MX Plan (inclusa nelle soluzioni di [hosting Web](/links/web/hosting), [hosting gratuito 100M](/links/web/domains-free-hosting) o MX Plan ordinati separatamente), una delle nostre [offerte di posta elettronica OVHcloud](/links/web/emails) o un servizio di posta esterna.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!primary]
 >
 > - Se il nome di dominio non utilizza i server DNS di OVHcloud, la modifica dei record MX deve essere eseguita dall’interfaccia del provider che gestisce la configurazione del nome di dominio.
 >
-> - Se il nome di dominio è registrato presso OVHcloud, è possibile verificarne la configurazione attraverso lo [Spazio Cliente OVHcloud](/links/manager). Una volta effettuato il login sul nome di dominio interessato, accedi alla sezione `Informazioni Generali`{.action} della scheda `Server DNS`{.action} e clicca su `Standard` in "**server DNS**" per utilizzare i server DNS di OVHcloud.
->
-> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail .w-300}
+> - Se il nome di dominio è registrato presso OVHcloud, è possibile verificare se utilizza la nostra configurazione. A tal fine e se necessario, consulta la nostra guida "[Modificare i server DNS di un nome di dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ## Procedura
 
@@ -74,30 +81,45 @@ Questi record MX devono essere configurati nella zona DNS del nome di dominio.
 
 ### Configurare un record MX in una zona DNS OVHcloud
 
-Per creare o modificare i record MX nella configurazione OVHcloud del nome di dominio, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca sul menu `Zone DNS`{.action} e seleziona il nome di dominio interessato.
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** passaggi.
 
-Visualizzi una tabella con la configurazione OVHcloud del tuo nome di dominio. ogni riga corrisponde a un diverso record DNS.
-
-Per prima cosa, è necessario verificare se esistono record MX nella configurazione DNS OVHcloud del nome di dominio utilizzando l’elenco di filtri disponibile sopra la tabella della zona DNS.<br>
-Seleziona il tipo **MX** e poi conferma per visualizzare solo i record MX DNS della zona DNS. Consulta lo screenshot qui sotto.
-
-![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail .w-600}
-
-- Se esistono record MX e vuoi modificarli, clicca sui tre puntini `...`{.action} a destra di ogni riga della tabella e poi clicca su `Modifica record`{.action}.
-- Se non sono presenti record MX, clicca sul pulsante `Aggiungi un record`{.action} a destra della tabella e seleziona `MX`{.action}. In base alla soluzione email scelta, inserisci le informazioni richieste:
-
-**Se disponi di una soluzione email OVHcloud**, consulta le informazioni fornite nello step "[Conoscere la configurazione MX di OVHcloud](#mxovhcloud)".
-
-![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail .w-600}
-
-Una volta inserite le informazioni, prosegui con gli step successivi e clicca su `Conferma`{.action}.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![Zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> La tabella mostra la configurazione OVHcloud del tuo nome di dominio. Ogni riga corrisponde a un record DNS.
+>>
+>> Verifica se esistono già record MX selezionando il tipo **MX** nell’elenco di filtri sopra la tabella, poi conferma.
+>>
+>> ![Record MX DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail .w-600}
+>>
+> **Passaggio 3**
+>>
+>> - Se esistono già record MX e vuoi modificarli, clicca sul pulsante `...`{.action} a destra di ogni riga della tabella e poi su `Modifica il record`{.action}.
+>> - Se non sono presenti record MX, clicca sul pulsante `Aggiungi un record`{.action} a destra della tabella e seleziona `MX`{.action}.
+>>
+> **Passaggio 4**
+>>
+>> Inserisci le informazioni richieste in base alla soluzione email scelta.
+>>
+>> **Se disponi di una soluzione email OVHcloud**, consulta le informazioni fornite nel passaggio "[Conoscere la configurazione MX di OVHcloud](#mxovhcloud)".
+>>
+>> ![Record MX DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail .w-600}
+>>
+> **Passaggio 5**
+>>
+>> Una volta inserite le informazioni, prosegui con i passaggi successivi e clicca su `Conferma`{.action}.
 
 **Se utilizzi un’altra soluzione email**, segui le indicazioni fornite dal provider del tuo servizio di posta.
 
 > [!primary]
 >
 > La propagazione delle modifiche potrebbe richiedere da 4 a 24 ore.
->
 
 ## Per saperne di più
 

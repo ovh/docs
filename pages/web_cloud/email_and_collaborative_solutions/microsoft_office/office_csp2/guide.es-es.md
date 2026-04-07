@@ -4,7 +4,6 @@ excerpt: Cómo contratar y administrar un servicio Office 365 Reseller (CSP2) de
 updated: 2023-01-17
 ---
 
-
 ## Objetivo
 
 Office 365 Reseller (CSP2) es un servicio que permite disfrutar de diferentes tipos de licencias Microsoft 365 a precios preferentes para que pueda revenderlas a sus clientes.
@@ -13,9 +12,19 @@ Office 365 Reseller (CSP2) es un servicio que permite disfrutar de diferentes ti
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud.](/links/manager)
 - Tener un  [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier). 
 - Estar inscrito en el programa CSP (Cloud Solution Provider) de Microsoft como revendedor indirecto en la región en la que ejerza su actividad (por ejemplo: "UE" para Europa)
+
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 > [!warning]
 >
@@ -33,8 +42,6 @@ El ID del MPN le permitirá obtener un descuento en las suscripciones que contra
 ## Procedimiento
 
 ### Contratar un servicio Office 365 Reseller
-
-Para contratar un servicio Office 365 Reseller, acceda al [área de cliente de OVHcloud](/links/manager). Una vez conectado, seleccione `Sunrise`{.action} en la barra superior y haga clic en `Office 365 Reseller`{.action}.
 
 - *Opcional*: puede definir un **subdominio personalizado** al crear una nueva plataforma marcando la casilla prevista a tal efecto (siempre que se disponga de los nombres disponibles).
 - Introduzca su ID MPN previamente creado en Microsoft.
@@ -56,9 +63,7 @@ Para contratar un servicio Office 365 Reseller, acceda al [área de cliente de O
 
 ### Gestionar el servicio Office 365 Reseller
 
-Una vez que el servicio Office 365 haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](/links/manager).
-
-Para ello, acceda al apartado `Sunrise`{.action}. En el menú de la izquierda, seleccione `Office 365 Reseller`{.action} y seleccione el servicio.
+Una vez que el servicio Office 365 haya sido creado y esté disponible, puede administrarlo. Seleccione el servicio.
 
 Aparecerá la siguiente información:
 

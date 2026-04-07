@@ -10,8 +10,19 @@ In dieser Anleitung wird erläutert, wie Sie einen Block Storage Volume vom Typ 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/manager) oder auf das [Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
+- Zugriff auf das [Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Sie haben ein [Block Storage Volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) erstellt.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -35,7 +46,7 @@ Diese Änderung kann über Horizon oder OpenStack CLI vorgenommen werden.
 > [!tabs]
 > Über das OVHcloud Kundencenter
 >>
->> Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an, wechseln Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie anschließend auf `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
+>> Klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
 >>
 >> Suchen Sie das relevante Volumen in der Liste, klicken Sie dann auf den Button `...`{.action} rechts daneben und wählen Sie `Ändern Sie den Typ des Volumens`{.action}.
 >>
@@ -52,12 +63,12 @@ Diese Änderung kann über Horizon oder OpenStack CLI vorgenommen werden.
 >>
 >> ![Region selection](images/region2021.png){.thumbnail}
 >>
->> Klicken Sie anschließend auf das Menü `Volumes`{.action} auf der linken Seite und wählen Sie `Volumes`{.action} aus.
+>> Klicken Sie auf das Menü `Volumes`{.action} auf der linken Seite und wählen Sie `Volumes`{.action} aus.
 >> Klicken Sie auf das Dropdown-Menü neben `Edit Volume`{.action} und wählen Sie `Change Volume Type`{.action}.
 >>
 >> ![Option selection](images/selectoption.png){.thumbnail}
 >>
->> Im Pop-up-Fenster klicken Sie auf das Dropdown-Menü unter `Type` und wählen Sie `high-speed-gen-2`{.action} aus. Klicken Sie anschließend auf das Dropdown-Menü unter `Migration Policy` und wählen Sie `On Demand`{.action}.
+>> Im Pop-up-Fenster klicken Sie auf das Dropdown-Menü unter `Type` und wählen Sie `high-speed-gen-2`{.action} aus. Klicken Sie auf das Dropdown-Menü unter `Migration Policy` und wählen Sie `On Demand`{.action}.
 >>
 >> Sobald Sie fertig sind, klicken Sie auf `Change Volume Type`{.action}, um die Änderung zu bestätigen.
 >>

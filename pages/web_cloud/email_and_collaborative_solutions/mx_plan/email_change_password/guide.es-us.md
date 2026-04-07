@@ -16,7 +16,6 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 ## Requisitos
 
 - Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](/links/web/hosting) o contratada por separado como solución autónoma, como [**Hosted Exchange**](/links/web/emails-hosted-exchange)).
-- Según el método utilizado: Estar conectado al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} o estar conectado a la dirección de correo electrónico desde el [webmail](/links/web/email).
 
 > [!primary]
 >
@@ -26,6 +25,26 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 > - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedimiento
 
 ### Cambiar la contraseña desde el área de cliente <a name="controlpanel"></a>
@@ -33,7 +52,7 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 > [!warning]
 > Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
-Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
+Siga las indicaciones de su solución:
 
 > [!tabs]
 > **Emails MX Plan**
@@ -58,7 +77,7 @@ La modificación de su contraseña a través del webmail está disponible para l
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Acceda a la página [Webmail](/links/web/email) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
+Acceda a la página [Webmail](/links/web/email) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}.
 
 ![Correo electrónico](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -79,15 +98,15 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
 
-### Recupera una password
+### Recuperar una contraseña
 
-Per motivi di sicurezza e riservatezza non è possibile **recuperare** una password. Come descritto nei passaggi precedenti, è necessario reimpostare la password nel caso in cui non sia più nota.
+Por motivos de seguridad y confidencialidad, no es posible **recuperar** una contraseña. Como se describe en los pasos anteriores, es necesario restablecer la contraseña si ya no la conoce.
 
 > [!primary]
 >
-> Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
+> Si desea almacenar una contraseña, le recomendamos utilizar un gestor de contraseñas, como **Keepass** por ejemplo.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

@@ -14,7 +14,17 @@ Vous pouvez utiliser l'authentification **SSO** (*Single Sign-On*) pour vous con
 
 - Avoir accès aux rôles **Administrateur d'applications** et **Administrateur d'utilisateurs** d'un service Entra ID
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SSO SAML](/links/control-panel/iam-saml-sso)
+- **Pour y accéder :** `Identité, Sécurité & Opérations`{.action} > `Utilisateurs`{.action} > `Connexion SSO`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## En pratique
 
@@ -199,17 +209,9 @@ Utilisez ce lien pour télécharger le fichier de métadonnées de l'application
 
 ### Établir la confiance d'un compte OVHcloud et configurer la connexion
 
-L'ajout de votre application Entra ID en tant que fournisseur d'identité approuvé s'effectue dans [l'espace client OVHcloud](/links/manager) où vous pouvez fournir les métadonnées du fournisseur d'identité.
+L'ajout de votre application Entra ID en tant que fournisseur d'identité approuvé s'effectue depuis la page [SAML SSO](/links/control-panel/iam-saml-sso) de votre espace client OVHcloud, où vous pouvez fournir les métadonnées du fournisseur d'identité.
 
 #### Établir la confiance OVHcloud
-
-Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identités`{.action}.
-
-![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Cliquez ensuite sur l'onglet `SSO`{.action} et sur le bouton `Connexion SSO`{.action}.
-
-![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Complétez le champ **Nom d'attribut d'utilisateur** avec la valeur de claim d'applications Entra ID **UPN** et le champ **Nom d'attribut de groupe** avec la valeur de claim **groups** enregistrée précédemment.
 

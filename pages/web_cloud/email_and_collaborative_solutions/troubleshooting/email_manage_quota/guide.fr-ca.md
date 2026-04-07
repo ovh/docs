@@ -12,9 +12,28 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange)).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+- Disposer d’une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange)).
 - Disposer des informations de connexion aux adresses e-mails concernées.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l’espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique <a name="instructions"></a>
 

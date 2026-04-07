@@ -36,28 +36,28 @@ This device also legally protects you from actions resulting from a possible hac
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the [OVHcloud community](/links/community) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or reach out to the [OVHcloud community](/links/community) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
+
 
 ## Instructions
 
-### Step 1: Analyse the situation
+### 1 - Analyse the situation
 
 If the page "**403 forbidden**" appeared following a modification of your website, [restore all or part of the FTP storage space of your hosting](/pages/web_cloud/web_hosting/ftp_save_and_backup) to an earlier date.
 
 If the available backups do not allow you to restore access to your website, contact a [specialised provider](/links/partner).
 
-If the page "**403 forbidden**" did not appear following a modification of your website, check your inbox. If you have received an email from OVHcloud notifying you that your web hosting plan has been closed for security reasons, please skip directly to [step 2](#step-2) of this guide.
+If the page "**403 forbidden**" did not appear following a modification of your website, check your inbox. If you have received an email from OVHcloud notifying you that your web hosting plan has been closed for security reasons, please skip directly to [part 2](#step-2) of this guide.
 
 If the page "**403 forbidden**" appeared without any action on your part and you have not received any email from our services about it, check the FTP access rights (CHMOD) of your files and folders as well as the code contained in your **.htaccess** file(s). Also check if the restriction is caused by a security plugin or application firewall. If necessary, contact a [specialised provider](/links/partner).
 
-### Step 2: Apply security measures on your side <a name="step-2"></a>
+### 2 - Apply security measures on your side <a name="step-2"></a>
 
 First, check the security of your computers and devices:
 
@@ -78,7 +78,7 @@ First, check the security of your computers and devices:
 > If you have any doubts about the changes to be made, contact [OVHcloud partners](/links/partner).
 >
 
-### Step 3: Intervene on your web hosting plan
+### 3 - Intervene on your web hosting plan
 
 First, take note of the date on which the OVHcloud email regarding the deactivation of your hosting and the list of folder(s) containing the malicious files detected.
 
@@ -112,10 +112,10 @@ If your hosting plan was closed more than two weeks ago, please contact a [speci
 
 > [!success]
 >
-> If you would like more details on the previous [steps 2 and 3](#step-2), please refer to our tutorial on [what to do if your website is hacked](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> If you would like more details on the previous [parts 2 and 3](#step-2), please refer to our tutorial on [what to do if your website is hacked](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Step 4: Reactivating your web hosting with FileZilla <a name="reactivate-web-hosting"></a>
+### 4 - Reactivating your web hosting with FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

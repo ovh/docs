@@ -20,6 +20,17 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 - You must have Microsoft Outlook installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Are you using Outlook for Windows? Read this guide: [Configuring your email address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016).
@@ -32,8 +43,8 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 > [!primary]
 >
 > In this guide, we will use as the server name: "pro?.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
-> 
-> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+>
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
 >
 Once you have launched Outlook on your device, you can add an account in two different ways:
 

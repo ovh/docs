@@ -17,16 +17,24 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](/
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
 
 > [!warning]
 > Diese Funktion ist derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## In der praktischen Anwendung
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## In der praktischen Anwendung
 
 ### Schritt 1: Snapshot-Option aktivieren
 
@@ -103,7 +111,7 @@ temp_url_sig=f508cacda60256d5f211dddf3f81130e935f0e4&temp_url_expres=1678247579"
 
 > [!primary]
 >
-Wir empfehlen, Snapshots nicht direkt auf den VPS herunterzuladen, um die Auslastung des Speicherplatzes zu vermeiden.
+> Wir empfehlen, Snapshots nicht direkt auf den VPS herunterzuladen, um die Auslastung des Speicherplatzes zu vermeiden.
 >
 > Die heruntergeladene Datei kann über [OpenStack](/products/public-cloud-compute-instance-management) als Image (QCOW2) in ein Public Cloud Projekt importiert werden. (Nutzungsbeispiele finden Sie z.B. in [dieser Anleitung](/pages/public_cloud/compute/upload_own_image).)
 >
@@ -190,4 +198,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Automatische Backups auf einem VPS verwenden](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

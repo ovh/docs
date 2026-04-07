@@ -1,6 +1,6 @@
 ---
 title: Crear una campaña de SMS
-excerpt: Cómo crear una campaña de envío de SMS
+excerpt: Descubra cómo crear y lanzar su primera campaña de envío de SMS utilizando las herramientas integradas en el área de cliente de OVHcloud
 updated: 2022-08-05
 ---
 

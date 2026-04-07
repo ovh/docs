@@ -19,11 +19,21 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 - Hosting [Cloud Web](/links/web/hosting-cloud-web-offer) od OVHcloud
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
-- Dostęp do [Panelu klienta](/links/manager) > sekcja `Web Cloud`{.action}
 -Co powinieneś umieć:
     - Znać podstawy ekosystemu Node.js
     - Łączyć się z serwerem za pomocą protokołu SSH
     - Edytować plik za pomocą wiersza poleceń przy użyciu (na przykład) Vim, Emacs lub Nano.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -251,7 +261,7 @@ W wyniku tej operacji aplikacja będzie dostępna za pośrednictwem nazwy domeny
 
 ### Etap 8: użycie HTTPS
 
-Aby zwiększyć bezpieczeństwo Twojej strony WWW, możesz skonfigurować przekierowanie HTTP na HTTPS. W tym celu utwórz w katalogu `ghost` plik .htaccess` z następującą treścią:
+Aby zwiększyć bezpieczeństwo Twojej strony WWW, możesz skonfigurować przekierowanie HTTP na HTTPS. W tym celu utwórz w katalogu `ghost` plik `.htaccess` z następującą treścią:
 
 ```
 RewriteCond %{ENV:HTTPS} !on

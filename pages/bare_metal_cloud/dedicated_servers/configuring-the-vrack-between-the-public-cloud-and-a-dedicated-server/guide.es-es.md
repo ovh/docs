@@ -29,9 +29,19 @@ El [vRack](/links/network/vrack) de OVHcloud es una red privada que permite conf
 * Haber creado una [instancia de Public Cloud de OVHcloud.](/pages/public_cloud/compute/public-cloud-first-steps)
 * Haber activado un servicio [vRack.](/links/network/vrack)
 * Tener un [servidor dedicado](/links/bare-metal/bare-metal) compatible con el vRack.
-* Estar conectado al [área de cliente de OVHcloud.](/links/manager)
 * Un rango de direcciones IP privadas que elija.
 * Ambos servicios deben estar en el mismo vRack.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -749,7 +759,7 @@ En este ejemplo, utilizaremos **10** como VLAN ID (etiqueta) y **192.168.0.0/16*
 >>
 > **Windows**
 >>
->> Conéctese al servidor mediante el escritorio remoto y abra la aplicación **Administrador del servidor**. Haga clic en `Servidor local`{.action} del menú izquierdo. En el panel **Propiedades**, haga clic en el enlace `Disabled`{.action} situado junto a **Formación de equipos de NIC**.
+>> Conéctese al servidor mediante el escritorio remoto y abra la aplicación **Administrador del servidor**. Haga clic en `Servidor local`{.action} del menú izquierdo. En el panel **Propiedades**, haga clic en el enlace `Deshabilitado`{.action} situado junto a **Formación de equipos de NIC**.
 >>
 >> ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 >>
@@ -757,7 +767,7 @@ En este ejemplo, utilizaremos **10** como VLAN ID (etiqueta) y **192.168.0.0/16*
 >>
 >> ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
 >>
->> En la ventana emergente, cree un nuevo equipo introduciendo un nombre de equipo en el campo **Nombre del equipo**. Cuando haya terminado, haga clic en `Agregar`{.action}
+>> En la ventana emergente, cree un nuevo equipo introduciendo un nombre de equipo en el campo **Nombre del equipo**. Cuando haya terminado, haga clic en `Agregar`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 >>

@@ -27,6 +27,16 @@ Le produit vRack Services utilise le concept de sous-réseau (ou *subnet*) afin 
 3. **Service Endpoint**
 Le Service Endpoint représente votre point d'accès au service managé. Il est associé à un sous-réseau et dispose d'une ou plusieurs addresses IP privées attribuées automatiquement.
 
+<!-- CP-NAV-START:network-vrack-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [vRack Services](/links/control-panel/network-vrack-services)
+- **Pour accéder à vos services :** `Network`{.action} > `vRack Services`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack-services -->
 ## En pratique
 
 Configurer un Service Endpoint se déroule en 3 étapes :
@@ -121,7 +131,7 @@ Cette section aborde les actions qui peuvent être effectuées via l'API OVHclou
 
 Ces actions mettent en évidence les capacités opérationnelles des vRack Services, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
 
-Vous devez vous authentifier au préalable via cette [page](https://ca.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth).
+Vous devez vous authentifier au préalable via cette [page](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth).
 
 <a name="actions"></a>
 
@@ -139,9 +149,9 @@ Vous devez tout d'abord lister vos vRack Services afin de récuperer l'id du vRa
 Voici la ligne de commande correspondante :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
+ -H "authorization: Bearer <VOTRE_TOKEN_JWT>" \
 ```
 
 L'id qui sera utilisé dans notre exemple est le suivant : `vrs-a9y-v91-xnm-f5u`.
@@ -156,9 +166,9 @@ L'id qui sera utilisé dans notre exemple est le suivant : `vrs-a9y-v91-xnm-f5u`
 Voici la ligne de commande correspondante :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u/eligibleManagedService" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u/eligibleManagedService" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
+ -H "authorization: Bearer <VOTRE_TOKEN_JWT>" \
 ```
 
 Les IDs des services managés utilisés plus bas dans notre exemple sont les suivants :
@@ -224,9 +234,9 @@ Pour cette section, veuillez bien lire la section [Actions](#actions) ci-dessus.
 Action formulée avec un `GET`{.action} :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg" \
+ -H "authorization: Bearer <VOTRE_TOKEN_JWT>" \
 ```
 
 Retour de l'appel API :
@@ -286,9 +296,9 @@ Retour de l'appel API :
 Action formulée avec le `PUT`{.action} - Mise à jour en cours :
 
 ```bash
-curl -X PUT "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg"\
+ -H "authorization: Bearer <VOTRE_TOKEN_JWT>"\
  -H "content-type: application/json" \
  -d '{"checksum":"609cf69014e57abfb3d892133692ac6f","targetSpec":{"displayName":"My_vRackServices_updated","subnets":[{"cidr":"10.120.0.0/16","displayName":null,"serviceEndpoints":[{"managedServiceURN":"urn:v1:eu:resource:storageNetApp:f88c7410-f920-443b-ab1b-8c699a1c3xxx"}],"serviceRange":{"cidr":"10.120.0.0/29"},"vlan":null}]}}' \
 ```
@@ -370,9 +380,9 @@ Retour de l'appel API :
 Action formulée avec le `GET`{.action} :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg" \
+ -H "authorization: Bearer <VOTRE_TOKEN_JWT>" \
 ```
 
 Retour de l'appel API :

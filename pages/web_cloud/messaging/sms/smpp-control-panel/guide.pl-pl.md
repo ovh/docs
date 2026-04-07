@@ -39,7 +39,7 @@ Wybierz konto SMPP. Nazwa serwera różni się od innych kont SMS OVHcloud. Zacz
 
 ![SMPP account](images/smpp-account.png){.thumbnail}
 
-## Dane identyfikacyjne
+### Dane identyfikacyjne
 
 Ramka `Informacje ogólne` pozwala na odnalezienie danych identyfikacyjnych niezbędnych do korzystania z usługi. Skopiuj zawartość przycisku z prawej strony każdego pola.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Gérer mes carnets d’adresses SMS'
-excerpt: 'Découvrez comment créer un carnet d’adresses SMS dans votre compte OVHcloud'
+title: "Gérer mes carnets d’adresses SMS"
+excerpt: "Découvrez comment créer, importer et gérer des carnets d’adresses SMS dans votre espace client OVHcloud à l’aide de fichiers tableur"
 updated: 2022-08-05
 ---
 
@@ -28,7 +28,7 @@ Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresse
 
 ## En pratique
 
-### Étape 1 : créer un carnet d'adresses dans votre espace client
+### Étape 1 : Créer un carnet d'adresses dans votre espace client
 
 Choisissez l'onglet `Contacts`{.action} puis `Carnet d'adresses`{.action}.
 
@@ -38,7 +38,7 @@ Cliquez sur `Ajouter un carnet d'adresses`{.action} et nommez alors votre nouvea
 
 ![phonebook](images/smsphonebook2.png){.thumbnail}
 
-### Étape 2 : ajouter des contacts dans votre carnet
+### Étape 2 : Ajouter des contacts dans votre carnet
 
 Le carnet d'adresses est maintenant créé mais ne contient aucun contact. Plusieurs méthodes existent pour ajouter vos contacts.
 
@@ -100,7 +100,7 @@ Une pop-up s'affichera, cliquez alors sur `Fichier de contact`{.action} pour sé
 
 Patientez quelques secondes pendant le chargement du fichier dans votre espace client.
 
-### Étape 3 : éditer ou supprimer un carnet d'adresses
+### Étape 3 : Éditer ou supprimer un carnet d'adresses
 
 Si vous souhaitez modifier le nom d'un carnet d'adresses, sélectionnez votre carnet dans le menu déroulant (1) (si vous avez créé plusieurs carnets) puis cliquez sur le crayon (2) en face du nom du carnet. 
 

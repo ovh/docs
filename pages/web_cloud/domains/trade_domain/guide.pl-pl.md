@@ -22,10 +22,20 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie nazwy domeny zarejestrowanej w OVHcloud dla której nie trwa żadna operacja (zmiana abonenta, transfer, utworzenie). Jeśli operacja została ostatnio zakończona w ramach Twojej nazwy domeny, przed wykonaniem nowej operacji musi upłynąć co najmniej 60 dni kalendarzowych.
 - Twoje konto klienta to [kontakt administracyjny i księgowy](/pages/account_and_service_management/account_information/managing_contacts) danej nazwy domeny.
 - Zgoda aktualnego abonenta nazwy domeny na zmianę abonenta.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 
@@ -44,39 +54,33 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >
 > - Strona internetowa rejestru **TLD**;
 > - Lista [TLD dostępnych na OVHcloud](/links/web/domains-tld);
-> - Aktualizacje statusu nazwy domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Operacje w toku`{.action}.
+> - Aktualizacje statusu nazwy domeny. Aby to sprawdzić, przejdź na stronę [Operacje w toku](/links/control-panel/web-ongoing-operations).
 >
 
 ### Rozpocznij procedurę zmiany abonenta lub zmień powiązane z nim informacje
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **7**.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią nazwę domeny.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli, w polu **Abonament** znajduje się pozycja **Kontakt**. Kliknij przycisk `...`{.action} po prawej stronie, a następnie `Zarządzanie kontaktami`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Na nowej stronie przejdź do pola **Abonent**, następnie kliknij przycisk `Zmodyfikuj`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 4**
 >>
 >> > [!warning]
 >> >
@@ -88,7 +92,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **7**.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
-> **Etap 6**
+> **Krok 5**
 >>
 >> Otworzy się nowa zakładka w przeglądarce dla wszystkich nazw domen uprawnionych do zmiany abonenta. Wybierz z listy nazwę domeny, zaznaczając pole po lewej stronie. Etap ten można również wykorzystać do rozpoczęcia operacji zbiorczej. Możliwe jest zatem zainicjowanie zmiany abonenta dla kilku nazw domen jednocześnie, na przykład w celu zmiany abonenta wszystkich nazw domen *.ovh*, jeśli ich obecni abonenci są identyczni.
 >>
@@ -96,7 +100,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **7**.
 >>
 >> Po dokonaniu wyboru, kliknij przycisk `Dalej`{.action}.
 >>
-> **Etap 7**
+> **Krok 6**
 >>
 >> W formularzu danych posiadacza karty upewnij się, że wpisałeś poprawne informacje we wszystkich wymaganych polach. Uważaj na błędy przy wprowadzaniu danych i w miarę możliwości używaj [znaki ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Pamiętaj, że wszelkie niedokładne lub fałszywe informacje mogą spowodować błąd techniczny, a tym samym opóźnienie całego procesu.
 >>
@@ -128,4 +132,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

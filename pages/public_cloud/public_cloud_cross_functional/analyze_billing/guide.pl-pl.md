@@ -1,7 +1,7 @@
 ---
 title: 'Rozliczanie należności za usługę Public Cloud'
 excerpt: 'Zasady i modele naliczania opłat'
-updated: 2025-04-28
+updated: 2026-03-13
 ---
 
 ## Wstęp
@@ -20,7 +20,17 @@ Przypomina to model rozliczenia stosowany przez niektórych operatorów telefoni
 
 * [projekt Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 * [instancja Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-* dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Skorzystaj z obniżonych cen, zobowiązując się do korzystania z zasobów Public Cloud przez okres od 1 do 36 miesięcy. Więcej informacji na stronie [Savings Plans](/links/public-cloud/savings-plan).
@@ -168,35 +178,17 @@ Snapshoty instancji, podobnie jak obrazy (spoza katalogu obrazów dostarczanych 
 
 #### Object Storage
 
-W przypadku Object Storage fakturowane są dwa elementy:
+Object Storage jest rozliczany w modelu **pay-as-you-go** na podstawie średniego wolumenu przechowywanego na godzinę w każdej klasie przechowywania (GiB-godziny), z fakturowaniem na koniec miesiąca. Przechowywanie jest głównym składnikiem rozliczeń — ruch przychodzący, ruch wewnętrzny OVHcloud, wywołania API i publiczny ruch wychodzący są wliczone w cenę.
 
-- przechowywanie obiektów, czyli faktycznie wykorzystana przestrzeń w GB
-- ruch wychodzący, czyli ilość danych wychodzących w ramach usługi zawarta w ciele zapytań (body HTTP)
-
-> [!primary]
->
-> Ruch wychodzący między usługą Object Storage a instancjami jest fakturowany w taki sam sposób, jak gdyby miejscem docelowym był Internet.
-> 
-
-> [!warning]
->
-> Przeglądanie obiektów w Panelu klienta OVHcloud jest traktowane tak samo, jak ruch wychodzący.
-> 
-
-#### Archiwa
-
-W przypadku Cloud Archive fakturowane są trzy elementy:
-
-- przechowywanie archiwów, czyli faktycznie wykorzystana przestrzeń w GB
-- ruch przychodzący, czyli ilość danych przychodzących w ramach usługi zawarta w ciele zapytań (body HTTP)
-- ruch wychodzący, czyli ilość danych wychodzących w ramach usługi zawarta w ciele zapytań (body HTTP)
+Aby dostosować koszty do wzorców dostępu do danych, oferujemy kilka klas Object Storage kompatybilnych z S3<sup>1</sup> (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). Szczegółowe informacje o tych klasach, w tym przypadki użycia, wydajność i SLA, można znaleźć w dedykowanym przewodniku: [Wybór odpowiedniej klasy Object Storage](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> Ruch wychodzący między usługą Cloud Archive a instancjami fakturowany jest w takich sam sposób, jak gdyby miejscem docelowym był Internet.
-> 
-> 
+> Dla klas Infrequent Access, Active Archive i Cold Archive obowiązuje minimalny czas przechowywania oraz opłaty za odzyskiwanie danych.
+>
 
 ## Sprawdź również
+
+<sup>1</sup>: S3 jest znakiem towarowym Amazon Technologies, Inc. Usługa OVHcloud nie jest sponsorowana, popierana ani w żaden sposób powiązana z Amazon Technologies, Inc.
 
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -73,29 +73,33 @@ Este terá então a sua própria zona para configurar os seus registos DNS.
 ## Requisitos
 
 - Dispor do nome de domínio do qual o subdomínio escolhido vai depender.
-- O subdomínio em questão não deve já dispor de uma zona DNS (ativa ou não) na OVHcloud ou estar sujeito a uma operação ou a uma encomenda em curso na OVHcloud.
-- Estar ligado ao seu [Área de Cliente OVHcloud](/links/manager).
+- O subdomínio correspondente não deve já dispor de uma zona DNS (ativa ou não) na OVHcloud ou estar sujeito a uma operação ou a uma encomenda em curso na OVHcloud.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instruções
 
 ### 1 - Criar a zona DNS através do Área de Cliente OVHcloud
 
-Clique nas guias abaixo para exibir sucessivamente cada uma das **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action}, depois no botão `Encomendar`{.action}.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone), depois no botão `Encomendar`{.action}.
 >>
 >> ![Nomes de domínio](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na nova página, introduza o subdomínio (por exemplo: *sub.domain.tld*) para o qual quer criar uma zona DNS OVHcloud. Aguarde alguns instantes enquanto a ferramenta efetua verificações sobre o subdomínio.
 >>
@@ -103,7 +107,7 @@ Clique nas guias abaixo para exibir sucessivamente cada uma das **4** etapas.
 >>
 >> Se uma mensagem indicar que a zona DNS não pode ser criada, verifique se o subdomínio respeita os requisitos necessários ou contacte a pessoa que a gere. Assim que tudo estiver correto, tente novamente a operação.
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Assim que a verificação chegar ao fim, escolha ativar ou não as entradas mínimas para a zona DNS que vai criar. Esta escolha não é definitiva pois poderá sempre [editar os registos da zona DNS](/pages/web_cloud/domains/dns_zone_edit) mais tarde.
 >>
@@ -124,7 +128,7 @@ Para editar esta zona DNS, consulte o nosso guia "[Editar uma zona DNS da OVHclo
 
 > [!primary]
 >
-> Se acabou de criar a zona DNS e o subdomínio ainda não aparece na lista dos seus serviços (na parte `Web Cloud`{.action} do Área de Cliente OVHcloud e depois na secção `Zonas DNS`{.action}), aguarde 15 a 20 minutos e recarregue a página.
+> Se acabou de criar a zona DNS e o subdomínio ainda não aparece na lista dos seus serviços, aguarde 15 a 20 minutos e recarregue a página.
 
 ### 3 - Declarar os servidores DNS na zona DNS ativa do nome de domínio do qual o subdomínio escolhido depende
 
@@ -132,22 +136,16 @@ A ativação de uma zona DNS para um subdomínio difere daquela de um nome de do
 
 Deve primeiro recuperar os nomes dos **servidores DNS** OVHcloud associados à zona DNS criada para o seu subdomínio.
 
-Para os encontrar, clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Para os encontrar, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action}, depois selecione o subdomínio em questão.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o subdomínio correspondente.
 >>
 >> ![Zonas DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No quadro presente na página que aparece, localize as 2 colunas **Tipo** e **Alvo**.
 >>
@@ -166,36 +164,30 @@ Uma vez os 2 nomes de servidor DNS recuperados, 2 situações são possíveis:
 
 /// details | O nome de domínio do qual o seu subdomínio depende tem a sua zona DNS ativa na OVHcloud
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Zonas DNS`{.action}, depois selecione o subdomínio em questão.
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o subdomínio correspondente.
 >>
 >> ![Zonas DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> À direita ou abaixo do quadro, clique em `Adicionar uma entrada`{.action}.
 >>
 >> ![zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na janela que se abre, selecione o registo DNS do tipo `NS`{.action}, depois clique em `Seguinte`{.action}
 >>
 >> ![zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
->> Indique depois no campo `Subdomínio *` o subdomínio em questão (por exemplo: `sub` para o subdomínio `sub.domain.tld`), e no campo `Alvo *`, um dos 2 servidores DNS anteriormente recuperados (por exemplo: `nsXX.ovh.net`).
+>> Indique depois no campo `Subdomínio *` o subdomínio correspondente (por exemplo: `sub` para o subdomínio `sub.domain.tld`), e no campo `Alvo *`, um dos 2 servidores DNS anteriormente recuperados (por exemplo: `nsXX.ovh.net`).
 >>
 >> ![zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-a-ns-entry-to-the-dns-zone.png){.thumbnail}
 >>
@@ -259,4 +251,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com a nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

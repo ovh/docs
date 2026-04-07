@@ -1,8 +1,22 @@
 ---
-title: Object Storage - Gestão da imutabilidade de objectos com Object Lock (WORM) (EN)
+title: Object Storage - Managing object immutability with Object Lock (WORM)
 excerpt: Object Lock is a feature that allows you to store objects using a Write Once, Read Many (WORM) model
-updated: 2025-03-25
+updated: 2026-04-03
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -14,9 +28,9 @@ Object Lock is a feature that allows you to store objects using a **W**rite **O*
 
 Object Lock provides two ways to manage object retention. The first is *retention periods* and the second is *Legal hold*.
 
-### How does Object Lock work ?
+### How does Object Lock work?
 
-To understand how Object Lock lock works, we must first understand how deletion of objects and versioning work together. When a delete object operation is performed on an object in a versioning-enabled bucket, it does not delete the object permanently but it creates a delete marker on the object. This delete marker becomes the latest and current version of the object with a new version id.
+To understand how Object Lock works, you first need to understand how deletion of objects and versioning work together. When a delete object operation is performed on an object in a versioning-enabled bucket, it does not delete the object permanently but it creates a delete marker on the object. This delete marker becomes the latest and current version of the object with a new version ID.
 
 A delete marker has the following properties:
 
@@ -28,12 +42,12 @@ A delete marker has the following properties:
 To permanently delete an object, you have to specify the version-id in your delete object request:
 
 ```bash
-aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456huijw0
+aws s3api delete-object --bucket <bucket_name> --key <object_key> --version-id <version_id>
 ```
 
 The Object Lock feature prevents objects, for a fixed amount of time (retention mode) or indefinitely (legal hold), from being:
 
-- deleted even if you specify the version id (you get an Access Denied error) ;
+- deleted even if you specify the version ID (you get an Access Denied error);
 - overwritten by using versioning.
 
 > [!primary]
@@ -43,22 +57,35 @@ The Object Lock feature prevents objects, for a fixed amount of time (retention 
 
 ### Retention periods
 
-A retention period specifies a fixed period of time during which an object remains locked. During this period, your object is protected and can’t be overwritten or deleted. You apply a retention period either in number of days or number of years with the minimum being 1-day and no maximum limit.
+A retention period defines the length of time an object remains locked. During this period, the object is protected and cannot be modified or deleted. Retention can be defined in days or years, with a minimum of one day and no maximum limit.
 
-When setting a retention period for your objects or buckets, you can choose the retention mode you wish to apply to your objects. You can choose either the *Governance mode* or the *Compliance mode* for your objects.
+When defining a retention period for a bucket or its objects, you must choose the retention mode to apply: **Governance** or **Compliance**.
 
 #### Governance mode
 
-You should use the Governance mode if you want to protect objects from being deleted by most users during a pre-defined retention period, while authorising some users with special permissions to have the flexibility to alter the retention settings or delete the objects. Users with the `s3:BypassGovernanceRetention` permission can override or remove governance-mode retention settings.
+**Governance** mode prevents most users from deleting or modifying objects during the retention period, while allowing certain users with specific rights to manage retention or delete objects.
+
+Authorized users with `s3:BypassGovernanceRetention` can thus replace or delete objects in **Governance** mode.
+
+> [!primary]
+> 
+> **Best practice:** Use **Governance** mode when you want to protect your data while maintaining operational flexibility for specific administrative roles.
+>
 
 #### Compliance mode
 
-You should use the Compliance mode if you have a requirement to store compliant data.
-When this mode is set, an object version cannot be overwritten or deleted by any user. If this mode is configured for an object, then its retention mode cannot be changed, and its retention period can’t be shortened.
+**Compliance** mode ensures that objects cannot be modified or deleted by any user, including administrators, during the entire retention period.
+
+Once this mode is enabled for an object, its retention mode and duration cannot be changed.
+
+> [!primary]
+>
+> **Best practice:** Only use **Compliance** mode if you need to ensure strict immutability for compliance or regulatory purposes.
+>
 
 > [!warning]
 >
-> You should only use the Compliance mode if you never want any user, including the administrator user, to be able to delete the objects during a pre-defined retention period.
+> Compliance mode should only be selected if no user, including the administrator, should be able to delete or modify objects during the retention period.
 >
 
 ### Legal hold
@@ -69,8 +96,8 @@ Legal hold provides the same protection as a retention period, but it has no exp
 
 ## Requirements
 
-- Your Object Storage credentials (access_key and secret_access_key)
-- Aws cli installed and configured
+- Your Object Storage credentials (`access_key` and `secret_access_key`)
+- AWS CLI installed and configured
 
 See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide for more information.
 
@@ -78,9 +105,9 @@ See our [Getting started with Object Storage](/pages/storage_and_backup/object_s
 
 > [!primary]
 >
-> All the following examples will use aws cli.
+> All the following examples use the AWS CLI.
 >
-> To learn more about aws cli, please read this [guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+> To learn more about the AWS CLI, please read this [guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 >
 
 ### Permissions
@@ -99,8 +126,6 @@ See our [Getting started with Object Storage](/pages/storage_and_backup/object_s
 
 ### Object Lock configuration
 
-To use Object Lock, you have to create a bucket that supports the feature with the `--object-lock-enabled-for-bucket` flag. If a bucket is created without `--object-lock-enabled-for-bucket`, the flag cannot be added later.
-
 > [!primary]
 >
 > The following command does not apply Object Lock to the bucket’s objects, it only activates the feature.
@@ -108,7 +133,7 @@ To use Object Lock, you have to create a bucket that supports the feature with t
 
 ```bash
 aws s3api create-bucket \
-  --bucket object-lock-bucket \
+  --bucket <bucket_name> \
   --object-lock-enabled-for-bucket
 ```
 
@@ -117,38 +142,68 @@ aws s3api create-bucket \
 > This action also enables versioning of the bucket.
 >
 
+> [!tabs]
+> Via AWS CLI
+>> To use Object Lock, you have to create a bucket that supports the feature with the `--object-lock-enabled-for-bucket` flag. If a bucket is created without `--object-lock-enabled-for-bucket`, the flag cannot be added later.
+>>
+>> ```bash
+>> aws s3api create-bucket \
+>>   --bucket object-lock-bucket \
+>>   --object-lock-enabled-for-bucket
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
+>>
+>> Click on `Object Storage`{.action} in the navigation bar, then click on `Create object container`{.action}.
+>>
+>> When creating an Object Storage bucket, a dedicated step allows you to enable Object Lock to store objects in WORM (Write Once, Read Many) mode.
+>>
+>> Once Object Lock is enabled, the setting is irreversible for the bucket concerned. All stored objects are therefore guaranteed to remain immutable until the end of the defined retention period.
+>>
+
 ### How to configure Object Lock on bucket
 
 The lock configuration enables you to set a lock configuration on a specified bucket. Once set, the rule specified in the Object Lock configuration is applied by default to every new object placed in the specified bucket.
 
-```bash
-aws s3api put-object-lock-configuration \
-    --bucket object-lock-bucket \
-    --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "GOVERNANCE", "Days": 60 }}}'
-```
-
-To view the Object Lock configuration of a bucket, run:
-
-```bash
-aws s3api get-object-lock-configuration \
-   --bucket object-lock-bucket
-```
-
-The result should look like this:
-
-```json
-{
-  "ObjectLockConfiguration": {
-    "ObjectLockEnabled": "Enabled",
-    "Rule": {
-      "DefaultRetention": {
-        "Mode": "GOVERNANCE",
-        "Days": 60
-      }
-    }
-  }
-}
-```
+> [!tabs]
+> Via AWS CLI
+>> ```bash
+>> aws s3api put-object-lock-configuration \
+>>   --bucket <bucket_name> \
+>>     --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "GOVERNANCE", "Days": 60 }}}'
+>> ```
+>>
+>> To view the Object Lock configuration of a bucket, run:
+>>
+>> ```bash
+>> aws s3api get-object-lock-configuration \
+>>   --bucket <bucket_name>
+>> ```
+>>
+>> The result should look like this:
+>>
+>> ```json
+>> {
+>>   "ObjectLockConfiguration": {
+>>     "ObjectLockEnabled": "Enabled",
+>>     "Rule": {
+>>       "DefaultRetention": {
+>>         "Mode": "GOVERNANCE",
+>>         "Days": 60
+>>       }
+>>     }
+>>   }
+>> }
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
+>>
+>> Click on `Object Storage`{.action} in the navigation bar, then on the `My containers`{.action} tab, and then on the `name of your container`{.action}.
+>>
+>> From the `General Information`{.action} tab, click `Configure Retention`{.action}, enable retention, and then set the applicable retention mode and period. Next, click the `Save`{.action} button.
+>>
 
 ### How to configure an Object Lock retention period on an object
 
@@ -161,10 +216,9 @@ To set an object retention configuration on an object:
 
 ```bash
 aws s3api put-object-retention \
-       --bucket object-lock-bucket \
-       --key test.txt \
-       --retention '{ "Mode": "COMPLIANCE", "RetainUntilDate":
-"2023-01-01T12:00:00.00Z" }'
+  --bucket <bucket_name> \
+  --key <object_key> \
+  --retention '{"Mode":"COMPLIANCE","RetainUntilDate":"2023-01-01T12:00:00.00Z"}'
 ```
 
 > [!primary]
@@ -176,8 +230,8 @@ To view the Object Lock retention configuration of an object, run:
 
 ```bash
 aws s3api get-object-retention \
-   --bucket object-lock-bucket \
-   --key test.txt
+  --bucket <bucket_name> \
+  --key <object_key>
 ```
 
 The result should look like this:
@@ -202,8 +256,8 @@ To bypass governance mode, you must explicitly indicate in your request that you
 
 ```bash
 aws s3api delete-object \
-  --bucket object-lock-bucket \
-  --key test.txt \
+  --bucket <bucket_name> \
+  --key <object_key> \
   --bypass-governance-retention
 ```
 
@@ -218,8 +272,8 @@ To set a Legal hold configuration to the specified object:
 
 ```bash
 aws s3api put-object-legal-hold \
-  --bucket object-lock-bucket \
-  --key test.txt \
+  --bucket <bucket_name> \
+  --key <object_key> \
   --legal-hold Status=ON
 ```
 
@@ -227,8 +281,8 @@ To view the Object Lock Legal hold configuration of an object, run:
 
 ```bash
 aws s3api get-object-legal-hold \
-  --bucket object-lock-bucket \
-  --key test.txt
+  --bucket <bucket_name> \
+  --key <object_key>
 ```
 
 The result should look like this:
@@ -240,6 +294,55 @@ The result should look like this:
   }
 }
 ```
+
+### Object Lock and Object Deletion
+
+When versioning is enabled, deleting an object does not delete the object immediately but creates a **delete marker**. This marker becomes the current version of the object with a new ID.
+
+A delete marker:
+
+- Has a key and version ID like any other object.
+- Does not contain data (GET returns 404).
+- Is not displayed by default in the Control Panel.
+- Can only be manipulated by DELETE, by the bucket owner.
+
+The **Object Lock** feature prevents objects from being:
+
+- deleted even with a version ID (returns `Access Denied`).
+- overwritten by versioning.
+
+#### How deletions work with Object Lock
+
+When Object Lock is enabled and an object is protected by a retention period or legal hold, deletion attempts behave differently depending on the type of request:
+
+/// details | **Deletion with version ID (permanent DELETE)**
+
+- Deletion is blocked during the retention period.
+- The response returned is 403 Forbidden (Access denied).
+- This protection applies to all users, even administrators, depending on the retention mode.
+
+To permanently delete an object, you must specify the version ID in your request:
+
+```bash
+aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456huijw0
+```
+
+> [!primary]
+>
+> This command will fail if the object is protected by Object Lock in Compliance or Governance mode without the appropriate bypass.
+>
+
+///
+
+/// details | **Deletion without version ID (simple DELETE)**
+
+- The request returns 200 OK.
+- A delete marker is created in the bucket and becomes the current version of the object.
+- The object remains protected by the retention period.
+
+**Note:** Deletion markers and access errors can be managed via the corresponding APIs/CLIs.
+
+///
 
 ## Go further
 

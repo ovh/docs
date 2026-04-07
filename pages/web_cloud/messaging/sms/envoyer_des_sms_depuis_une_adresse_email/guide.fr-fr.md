@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS depuis une adresse e-mail'
-excerpt: 'Découvrez comment envoyer des SMS depuis une adresse email'
+title: "Envoyer des SMS depuis une adresse e-mail"
+excerpt: "Découvrez comment configurer et envoyer des SMS directement depuis votre adresse e-mail grâce à la passerelle email2sms OVHcloud"
 updated: 2020-06-04
 ---
 
@@ -15,7 +15,7 @@ Grâce à un compte SMS OVHcloud, vous pouvez envoyer des SMS depuis votre adres
 
 ## En pratique
 
-Tout webmail ou client de messagerie pourra être utilisé pour cette méthode.
+Vous pouvez utiliser n'importe quel webmail ou client de messagerie pour cette méthode.
 
 L'adresse du destinataire de l'e-mail sera : email2sms@ovh.net
 
@@ -33,8 +33,8 @@ Assurez-vous que vous disposez d'un nombre suffisant de crédits SMS avant d'eff
 
 > [!primary]
 >
-Si votre texte contient 2 sauts de ligne (double /n) ou si vous écrivez le paramètre "--end", tout ce qui se trouve ensuite ne sera pas pris en compte pour l'envoi.
-Pour envoyer un SMS contenant ces éléments, il vous faudra le faire depuis l'espace client ou via les API.
+> Si votre texte contient 2 sauts de ligne (double /n) ou si vous écrivez le paramètre "--end", tout ce qui se trouve ensuite ne sera pas pris en compte pour l'envoi.
+> Pour envoyer un SMS contenant ces éléments, il vous faudra le faire depuis l'espace client ou via les API.
 >
 
 Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](./#annexe) en bas de ce guide.
@@ -58,7 +58,7 @@ Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il s
 | 7bits (norme GSM 03.38) | 149 caractères | 153 caractères |
 | Unicode | 59 caractères | 70 caractères  |
 
-### Étape 1 : inclure les champs obligatoires dans votre e-mail
+### Étape 1 : Inclure les champs obligatoires dans votre e-mail
 
 Ouvrez votre webmail ou client de messagerie puis créez un e-mail. 
 
@@ -85,14 +85,14 @@ Vous devriez obtenir un résultat équivalent à l'image ci-dessous. Par défaut
 ![email2sms](images/send-sms-through-email1.png){.thumbnail}
 
 > [!primary]
->**Uniquement pour les comptes OVHcloud en France :**
+> **Uniquement pour les comptes OVHcloud en France :**
 >
-Si vous souhaitez utiliser un numéro court permettant la réponse, renseignez senderForResponse=1 en tant qu'expéditeur.
+> Si vous souhaitez utiliser un numéro court permettant la réponse, renseignez `senderForResponse=1` en tant qu'expéditeur.
 >
 
 Vous pouvez consulter le guide suivant pour toute précision sur les utilisateurs SMS : [Tout savoir sur les utilisateurs SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
 
-### Étape 2 : ajouter des champs facultatifs
+### Étape 2 : Ajouter des champs facultatifs
 
 Vous pouvez ajouter des champs supplémentaires dans le sujet, tels que :
 
@@ -116,8 +116,8 @@ Voici un exemple d'e-mail comprenant des champs facultatifs :
 
 Il est possible de déclarer les différents éléments constituant le sujet de deux manières différentes :
 
-- Soit dans l'ordre établi ci-avant, avec les paramètres séparés par ":" ou ";" entre chaque élément.
-- Soit dans n'importe quel ordre, mais en déclarant chaque élément, séparés entre eux par un ":" ou ";" : Account=; Login=; Password=; From=; To=; Deferred=; Class=.
+- Soit dans l'ordre établi ci-avant, avec les paramètres séparés par « : » ou « ; » entre chaque élément.
+- Soit dans n'importe quel ordre, mais en déclarant chaque élément, séparés entre eux par un « : » ou « ; » : Account=; Login=; Password=; From=; To=; Deferred=; Class=.
 
 > [!primary]
 >
@@ -143,27 +143,27 @@ Il est possible de déclarer les différents éléments constituant le sujet de 
 >Si vous modifiez l’encodage pour l'encodage Unicode, votre SMS fera 70 caractères maximum contre 160 sur l'encodage 7bit.
 >
 
-### Étape 3 : gérer les destinataires du SMS
+### Étape 3 : Gérer les destinataires du SMS
 
 Le(s) destinataire(s) du message peut/peuvent être géré(s) de plusieurs manières.
 
-- Soit comme vu précédemment, en le(s) écrivant au format international dans le sujet de l'email envoyé.
+- Soit comme vu précédemment, en le(s) écrivant au format international dans le sujet de l'e-mail envoyé.
 
 - Soit en ajoutant à l'e-mail, en tant que pièce jointe, un fichier texte (format txt) nommé "contact" qui contiendra le(s) numéro(s) de téléphone destinataire(s), au format international (exemple en France : +33xxxxxxxxx), à raison d'un numéro par ligne dans le fichier.
 
-### Étape 4 : analyser le rapport d'envoi
+### Étape 4 : Analyser le rapport d'envoi
 
 Une fois votre envoi effectué, vous recevrez par e-mail un rapport d'envoi. Le rapport ci-dessous indique que l'envoi s'est effectué avec succès :
 
 ![email2sms](images/send-sms-through-email4.png){.thumbnail}
 
-Si vous avez rencontrez une erreur lors de l'envoi, cette dernière sera notifiée dans le rapport, comme dans l'exemple ci-dessous :
+Si vous avez rencontré une erreur lors de l'envoi, cette dernière sera notifiée dans le rapport, comme dans l'exemple ci-dessous :
 
 ![email2sms](images/send-sms-through-email5.png){.thumbnail}
 
 ## Annexe
 
-Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. 
+Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau « Extensions » comptent double. 
 
 La taille maximum d’un SMS est de 160 caractères en encodage 7bit (norme GSM 03.38).
 

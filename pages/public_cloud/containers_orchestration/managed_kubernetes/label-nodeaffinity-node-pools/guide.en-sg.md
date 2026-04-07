@@ -1,7 +1,7 @@
 ---
 title: Deploy applications to specific Nodes and Nodes Pools
 excerpt: 'Find out how to deploy applications to specific Nodes and Nodes Pools, with labels and NodeAffinity, on OVHcloud Managed Kubernetes'
-updated: 2021-12-15
+updated: 2026-02-25
 ---
 
 <style>
@@ -41,13 +41,21 @@ We will:
 ## Requirements
 
 - a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Cluster creation
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu and click on `Create a cluster`{.action}.
 
@@ -164,10 +172,10 @@ Let's display our nodes. You should have 3 nodes running in our first node pool 
 ```bash
 $ kubectl get node
 NAME                                         STATUS   ROLES    AGE     VERSION
-hourly-node-8e4db2                           Ready    <none>   3m13s   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   161m    v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   163m    v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   161m    v1.22.2
+hourly-node-8e4db2                           Ready    <none>   3m13s   v1.34.0
+nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   161m    v1.34.0
+nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   163m    v1.34.0
+nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   161m    v1.34.0
 ```
 
 If you don't do anything during several minutes, the AutoScaling in "hourly" node pool will terminate the node because of inactivity:
@@ -175,9 +183,9 @@ If you don't do anything during several minutes, the AutoScaling in "hourly" nod
 ```bash
 $ kubectl get node
 NAME                                         STATUS   ROLES    AGE     VERSION
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   3h18m   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   3h20m   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   3h18m   v1.22.2
+nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   3h18m   v1.34.0
+nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   3h20m   v1.34.0
+nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   3h18m   v1.34.0
 ```
 
 ### Deploying our application
@@ -195,9 +203,9 @@ Let's show the labels of our running nodes:
 ```bash
 $ kubectl get node --show-labels
 NAME                                         STATUS   ROLES    AGE     VERSION   LABELS
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   3h56m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-23e81b,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   3h58m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-4bd23f,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   3h56m   v1.22.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-ef121e,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
+nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   3h56m   v1.34.0   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-23e81b,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
+nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   3h58m   v1.34.0   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-4bd23f,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
+nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   3h56m   v1.34.0   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,beta.kubernetes.io/os=linux,failure-domain.beta.kubernetes.io/region=GRA7,failure-domain.beta.kubernetes.io/zone=nova,kubernetes.io/arch=amd64,kubernetes.io/hostname=nodepool-cc40f90c-effb-4945-b7-node-ef121e,kubernetes.io/os=linux,node.k8s.ovh/type=standard,node.kubernetes.io/instance-type=0da61e94-ce69-4971-b6df-c410fa3659ec,nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d,topology.cinder.csi.openstack.org/zone=nova,topology.kubernetes.io/region=GRA7,topology.kubernetes.io/zone=nova
 ```
 
 As you can maybe see, our running Nodes got the label `nodepool=nodepool-cc40f90c-effb-4945-b7b9-05073725d62d`.
@@ -279,10 +287,10 @@ You have to wait several minutes in order to have a new Node that matches your c
 ```bash
 $ kubectl get node
 NAME                                         STATUS   ROLES    AGE   VERSION
-hourly-node-d4f9d7                           Ready    <none>   18s   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   21h   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   21h   v1.22.2
-nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   21h   v1.22.2
+hourly-node-d4f9d7                           Ready    <none>   18s   v1.34.0
+nodepool-cc40f90c-effb-4945-b7-node-23e81b   Ready    <none>   21h   v1.34.0
+nodepool-cc40f90c-effb-4945-b7-node-4bd23f   Ready    <none>   21h   v1.34.0
+nodepool-cc40f90c-effb-4945-b7-node-ef121e   Ready    <none>   21h   v1.34.0
 ```
 
 And you can check in which node our application is running:

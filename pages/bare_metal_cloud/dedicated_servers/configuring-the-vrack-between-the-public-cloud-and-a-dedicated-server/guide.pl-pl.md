@@ -29,9 +29,19 @@ details[open]>summary::before {
 * Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Aktywowanie usługi [vRack](/links/network/vrack)
 * Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) kompatybilnego z usługą vRack
-* Dostęp do [Panelu klienta OVHcloud](/links/manager)
 * Wybrany zakres prywatnych adresów IP
 * Obie usługi muszą znajdować się w tym samym vRack.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
@@ -750,7 +760,7 @@ W tym przykładzie użyjemy **10** jako identyfikatora VLAN (tag) oraz **192.168
 >>
 > **Windows**
 >>
->> Połącz się z serwerem przez zdalny pulpit i otwórz aplikację "Server Manager". Wybierz następnie `Server lokalny`{.action}, po czym kliknij link `Wyłączone`{.action} obok **Tworzenie zespołu kart interfejsu sieciowego**:
+>> Połącz się z serwerem przez zdalny pulpit i otwórz aplikację "Server Manager". Wybierz następnie `Server lokalny`{.action}, po czym kliknij link `Wyłączone`{.action} obok **Tworzenie zespołu kart interfejsu sieciowego**.
 >>
 >> ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 >>
@@ -762,11 +772,11 @@ W tym przykładzie użyjemy **10** jako identyfikatora VLAN (tag) oraz **192.168
 >>
 >> ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 >>
->> Następnie podaj tag VLAN. W panelu **KARTY I INTERFEJSY** na ekranie **Tworzenie zespołu kart interfejsu sieciowego**, przejdź do zakładki `Interfejsy zespołów`{.action} i kliknij prawym przyciskiem myszy interfejs, który właśnie dodałeś do nowego zespołu kart sieciowych, po czym kliknij `Właściwości`{.action}. Następnie kliknij `Określona sieć VLAN`{.action} i podaj tag:
+>> Następnie podaj tag VLAN. W panelu **KARTY I INTERFEJSY** na ekranie **Tworzenie zespołu kart interfejsu sieciowego**, przejdź do zakładki `Interfejsy zespołów`{.action} i kliknij prawym przyciskiem myszy interfejs, który właśnie dodałeś do nowego zespołu kart sieciowych, po czym kliknij `Właściwości`{.action}. Następnie kliknij `Określona sieć VLAN`{.action} i podaj tag.
 >>
 >> ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 >>
->> Teraz skonfiguruj adres IP VLAN: Kliknij przycisk `Start`{.action} w menu startowym, a następnie kliknij `Panel sterowania`{.action}:
+>> Teraz skonfiguruj adres IP VLAN: Kliknij przycisk `Start`{.action} w menu startowym, a następnie kliknij `Panel sterowania`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 >>
@@ -774,15 +784,15 @@ W tym przykładzie użyjemy **10** jako identyfikatora VLAN (tag) oraz **192.168
 >>
 >> ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
 >>
->> Kliknij `Centrum sieci i udostępniania`{.action}:
+>> Kliknij `Centrum sieci i udostępniania`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 >>
->> Kliknij `Zmień ustawienia karty sieciowej`{.action}:
+>> Kliknij `Zmień ustawienia karty sieciowej`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 >>
->> Następnie kliknij prawym przyciskiem myszy interfejs VLAN, po czym kliknij `Właściwości`{.action}:
+>> Następnie kliknij prawym przyciskiem myszy interfejs VLAN, po czym kliknij `Właściwości`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
 >>
@@ -801,8 +811,8 @@ W tym przykładzie użyjemy **10** jako identyfikatora VLAN (tag) oraz **192.168
 
 ///
 
-[Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
-
 ## Sprawdź również
+
+[Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 Dołącz do [grona naszych użytkowników](/links/community).

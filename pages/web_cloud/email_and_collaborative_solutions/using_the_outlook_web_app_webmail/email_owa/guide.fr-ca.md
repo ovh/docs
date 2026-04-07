@@ -1,12 +1,12 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-updated: 2024-09-03
+updated: 2026-03-24
 ---
 
 ## Objectif
 
-Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web App (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](/links/web/email).
+Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web App (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](/links/web/email).
 
 **Découvrez comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA.**
 

@@ -12,7 +12,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego webmastera](/links/partner) lub producenta systemu CMS, który wybrałeś. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego webmastera](/links/partner) lub producenta systemu CMS, który wybrałeś. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego tutoriala.
 >
 > Aby skontaktować się z poszczególnymi edytorami systemów zarządzania treścią, zapoznaj się z poniższymi linkami do ich odpowiednich oficjalnych stron:
 >
@@ -37,7 +37,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 
 - Posiadanie oferty [hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
 
 ## W praktyce
 
@@ -108,7 +108,7 @@ Więcej informacji znajduje się na naszej stronie dotyczącej [modułu PrestaSh
 > Niezależnie od wybranego przez Ciebie CMS, OVHcloud nie udziela żadnej pomocy w zakresie korzystania z tych systemów CMS. Jeśli masz trudności, skontaktuj się z producentem CMS, który wybrałeś za pomocą linków podanych powyżej w tym tutorialu.
 >
 
-### Etap 1 - przygotowanie instalacji <a name="step1"></a>
+### 1 - Przygotowanie instalacji <a name="step1"></a>
 
 Aby zainstalować CMS na Twoim [hostingu](/links/web/hosting), potrzebne są jakieś przygotowania.
 
@@ -127,15 +127,14 @@ Zapoznaj się z naszą dokumentacją, która opisuje [jak utworzyć stronę inte
 
 - Upewnij się, czy domena, której będziesz używał do uzyskania dostępu do CMS-a, jak również jej subdomena w www, wskazują na adres IP Twojej usługi [hosting](/links/web/hosting).
 
-Aby uzyskać adres IP Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager) w części `Web Cloud`{.action} i wybierz ofertę hostingu w sekcji `Hosting`{.action}.<br>
-W ramce `Informacje ogólne`{.action} po prawej stronie znajdziesz adres IP Twojego hostingu w formularzu `IPv4`{.action}.
-
-Jeśli aktywną strefą DNS Twojej domeny jest zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager), porównaj adres IP Twojego hostingu z adresem IP w strefie DNS Twojej domeny, korzystając z naszej dokumentacji dotyczącej [stref DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Aby uzyskać adres IPv4 (lub IPv6) Twojego hostingu, zapoznaj się z naszym przewodnikiem "[Hosting - Lista adresów IP według klastra](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
 > [!warning]
 >
-> Jeśli aktywowałeś opcje `CDN`{.action} lub `Geolokalizacja IP`{.action} dla Twojej domeny, użyj odpowiedniego adresu IP, korzystając z naszej dokumentacji zawierającej [wszystkie adresy IP naszych hostingów](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+> Jeśli korzystasz z opcji geolokalizowanego adresu IP według kraju lub aktywowałeś opcję CDN między domeną a hostingiem, użyj odpowiedniego adresu IP wskazanego w powyższym przewodniku.
 >
+
+Jeśli aktywna strefa DNS Twojej domeny jest zarządzana w Twoim [Panelu klienta OVHcloud](/links/control-panel/web-dns-zone), porównaj adres IP Twojego hostingu z adresem IP w strefie DNS Twojej domeny, korzystając z naszej dokumentacji dotyczącej [stref DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Jeśli nie jesteś w stanie dokonać tych weryfikacji, skontaktuj się z aktywnym hostingiem w strefie DNS, aby zaktualizować wskazanie Twojej domeny.
 
@@ -169,7 +168,7 @@ Skorzystaj z naszej dokumentacji, aby [utworzyć bazę danych w ramach Twojego h
 
 Jeśli dysponujesz usługą Web Cloud Databases w MySQL lub MariaDB i chcesz z niej korzystać do ręcznej instalacji CMS-a, zapoznaj się z naszą dokumentacją dotyczącą [utworzenia bazy danych w usłudze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#tworzenie-bazy-danych).
 
-Po utworzeniu bazy danych pobierz parametry połączenia (serwer, nazwa bazy danych, nazwa użytkownika i hasło) i zachowaj je dla [etap 3](#step3) tego przewodnika.
+Po utworzeniu bazy danych pobierz parametry połączenia (serwer, nazwa bazy danych, nazwa użytkownika i hasło) i zachowaj je dla [części 3](#step3) tego przewodnika.
 
 > [!primary]
 >
@@ -183,7 +182,7 @@ Po utworzeniu bazy danych pobierz parametry połączenia (serwer, nazwa bazy dan
 > - Aby zalogować się do bazy danych na stronie WWW Cloud Databases, zapoznaj się z tym [przewodnikiem](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
-### Etap 2 - uruchomienie ręcznej instalacji
+### 2 - Uruchomienie ręcznej instalacji
 
 #### 2.1 - Pobranie plików źródłowych z Twojego CMS
 
@@ -242,7 +241,7 @@ Wpisz folder "**CMS**", aby pobrać pliki z tego folderu.
 
 #### 2.3 - Przenieś pliki źródłowe z katalogu "CMS" do "katalogu głównego" na Twój hosting
 
-Po rozpakowaniu plików w Twoim katalogu "**CMS**", [zaloguj się przez FTP do przestrzeni dyskowej](/pages/web_cloud/web_hosting/ftp_connection) przy użyciu [klienta FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), a następnie skopiuj pliki zawarte w katalogu "**CMS**" do "katalogu głównego", który zdefiniowałeś na Twoim hostingu podczas [etap 1](#step1)) niniejszego przewodnika.
+Po rozpakowaniu plików w Twoim katalogu "**CMS**", [zaloguj się przez FTP do przestrzeni dyskowej](/pages/web_cloud/web_hosting/ftp_connection) przy użyciu [klienta FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), a następnie skopiuj pliki zawarte w katalogu "**CMS**" do "katalogu głównego", który zdefiniowałeś na Twoim hostingu podczas [części 1](#step1)) niniejszego przewodnika.
 
 Przykład systemu CMS *WordPress*:
 
@@ -255,7 +254,7 @@ Przykład systemu CMS *WordPress*:
 
 > [!primary]
 >
-> Jeśli "katalog główny", który zdefiniowałeś nie został utworzony automatycznie podczas operacji opisanych w [etap 1](#step1), możesz go utworzyć za pomocą FileZilla.
+> Jeśli "katalog główny", który zdefiniowałeś nie został utworzony automatycznie podczas operacji opisanych w [części 1](#step1), możesz go utworzyć za pomocą FileZilla.
 >
 > Przechowywanie plików na hostingu może zająć kilka minut.
 >
@@ -376,7 +375,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Etap 3 - zakończenie ręcznej instalacji <a name="step3"></a>
+### 3 - Zakończenie ręcznej instalacji <a name="step3"></a>
 
 > [!success]
 >

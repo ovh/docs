@@ -11,7 +11,7 @@ Les notifications sont envoyées par e-mail ou par SMS (il est alors nécessaire
 
 **Découvrez comment activer des alertes de monitoring sur un accès à Internet OVHcloud.**
 
-### Prérequis
+## Prérequis
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) qui répond aux requêtes ICMP (c'est le cas par défaut sur les modems distribués par OVHcloud).
 - Disposer d'une adresse e-mail pour recevoir les notifications.

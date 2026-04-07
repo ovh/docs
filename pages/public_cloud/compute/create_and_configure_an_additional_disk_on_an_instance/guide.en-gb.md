@@ -32,9 +32,19 @@ This can be useful in cases where:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](/pages/public_cloud/compute/public-cloud-first-steps) in your OVHcloud account
 - Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 >
@@ -91,7 +101,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
+>> Open `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 >>
 >> In this section, click on the button `Create a volume`{.action}.
 >>

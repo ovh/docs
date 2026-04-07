@@ -27,6 +27,17 @@ Sie können einen sekundären Server hinzufügen oder diese Konfiguration durch 
 - Sie haben administrativen Zugriff auf Ihre Instanz über SSH oder RDP.
 - Grundlegende Kenntnisse der Netzwerkverwaltung.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## In der praktischen Anwendung
 
 Verbinden Sie sich über SSH mit Ihrer Instanz. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).

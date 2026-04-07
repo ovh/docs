@@ -29,9 +29,19 @@ The OVHcloud [vRack](/links/network/vrack) allows you to configure private netwo
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](/links/network/vrack) service activated in your account
 - A [Dedicated Server](/links/bare-metal/bare-metal) compatible with the vRack
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A private IP address range of your choice
 - Both services must be in the same vRack.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).

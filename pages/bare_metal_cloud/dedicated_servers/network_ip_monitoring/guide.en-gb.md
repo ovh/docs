@@ -19,6 +19,17 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 - An OVHcloud service on which you have installed a firewall
 - Access to the firewall rules
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## Instructions
 
 ### IP addresses to be authorised
@@ -52,8 +63,6 @@ Reverse|IP|Protocol|
 >
 
 ### Server monitoring
-
-Log in to the [OVHcloud Control Panel](/links/manager) and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab (section **Service status**).
 

@@ -1,7 +1,7 @@
 ---
 title: FAQ OVHcloud emails
 excerpt: "Find the most frequently asked questions about emails"
-updated: 2025-04-07
+updated: 2026-03-24
 ---
 
 <style>
@@ -21,34 +21,32 @@ details[open]>summary::before {
 }
 </style>
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Email FAQ
 
 On this page, you will find the most frequently asked questions regarding the use of your emails, depending on the OVHcloud email offers.
 
 ### Email offers with OVHcloud
 
-OVHcloud currently offers 4 email solutions. To understand their specifics, navigate through the tabs below:
+OVHcloud offers the following email solution:
 
-> [!tabs]
-> **Emails/MX Plan**
->>
->> ![MX Plan](images/mxplan01.png){.thumbnail .w-500}
->>
->> 1. OVHcloud's oldest email solution, which includes the essential features of an email service with 5GB of storage space per email account.
->> 2. Included with web hosting plans and can be ordered via the [OVHcloud Control Panel](/links/manager).
->> 3. This solution uses the **OWA** (Outlook Web Access) webmail interface.
->>
-> **Exchange**
->>
->> ![Exchange](images/exchange01.png){.thumbnail .w-500}
->>
->> 1. A comprehensive email solution with collaborative features, with 50GB or 300GB of storage space.
->> 2. Included with web hosting plans and can be ordered via the [OVHcloud Control Panel](/links/manager).
->> 3. This solution uses the **OWA** (Outlook Web Access) webmail interface.
->>
+**Emails/MX Plan**
 
-> [!success]
-> Unless specified, the questions listed below concern all OVHcloud email solutions.
+![MX Plan](images/mxplan01.png){.thumbnail .w-500}
+
+1. OVHcloud's oldest email solution, which includes the essential features of an email service with 5GB of storage space per email account.
+2. Included with web hosting plans and can be ordered via the [OVHcloud Control Panel](/links/manager).
+3. This solution uses the **OWA** (Outlook Web Access) webmail interface.
 
 /// details | What should I know before I create an email address?
 
@@ -95,7 +93,6 @@ Below, you will find the main reasons for not receiving your emails.
 
 ///
 
-
 /// details | Why set up SPF and DKIM records?
 
 **SPF (Sender Policy Framework)**
@@ -111,7 +108,6 @@ It allows you to sign emails to prevent identity theft. This signature operates 
 To find out how to configure a DKIM record on your email service, please read our guide on [Enhancing email security via a DKIM record](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
-
 
 /// details | How do I configure my email address and use it with webmail?
 
@@ -137,24 +133,6 @@ To do this, we provide guides to set up your email address. You can find them on
 >> **Android Smartphone or tablet**
 >> - [Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 >>
-> **Microsoft Exchange**
->>
->> **Windows PC**
->> - [Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
->> - [Thunderbird for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird).
->> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10).
->>
->> **Apple Mac**
->> - [Outlook for macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
->> - [Mail for macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos).
->> - [Thunderbird for macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird_mac).
->>
->> **iPhone or iPad**
->> - [Mail for iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios).
->>
->> **Android Smartphone or tablet**
->> - [Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
->>
 
 With [webmail](/links/web/email), you can access your email at any time, from any connected device. Once you have created your email account, log in here to access it.
 
@@ -165,8 +143,6 @@ With [webmail](/links/web/email), you can access your email at any time, from an
 /// details | How do I manage my email services?
 
 All of your email addresses are managed via the [OVHcloud Control Panel](/links/manager). To do this, log in and access the product concerned. You can change the passwords for your email addresses, check how much space they have left, create new email addresses, or delete existing ones.
-
-**Tips and Tricks**: With MX Plan email solutions, you can delegate management of an email account to another OVHcloud account, while keeping control of it yourself. Simply configure a delegation in your [OVHcloud Control Panel](/links/manager). You can use [our documentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
 
 ///
 
@@ -214,7 +190,6 @@ If the `Filter` column is not present in your Control Panel, you will need to cr
 
 ///
 
-
 /// details | My email account is full, I don't have any more space. What can I do?
 
 If you have signed up to [one of our OVHcloud email solutions](/links/web/emails) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota). This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
@@ -225,16 +200,7 @@ If you have signed up to [one of our OVHcloud email solutions](/links/web/emails
 
 Want to change your [email solution](/links/web/emails) to get more space and features, but want to keep the content of your existing email address? To do this, please follow the migration guide that corresponds to your needs:
 
-- [Migrate an MX Plan email address to an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
-- [Migrate your email addresses from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrate your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
-- [Migrate email accounts via the OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
-
-///
-
-/// details | Does the Office 365 Pro Plus offer include a Skype license?
-
-Office 365 Pro Plus does not contain a Skype license. Only Skype for Business software is included.
 
 ///
 

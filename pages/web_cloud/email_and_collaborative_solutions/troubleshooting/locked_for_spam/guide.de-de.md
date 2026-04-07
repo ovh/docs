@@ -1,117 +1,138 @@
 ---
-title: Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?
-excerpt: Erfahren Sie hier, wie Sie vorgehen, wenn Ihr E-Mail-Acount wegen Spamverdachts blockiert ist 
-updated: 2025-04-28
+title: 'Was tun, wenn ein Account wegen Spamversands gesperrt wurde?'
+excerpt: 'Erfahren Sie, wie Sie vorgehen, wenn Ihre E-Mail-Adresse wegen Spamversands gesperrt wurde'
+updated: 2026-03-05
 ---
 
 ## Ziel
 
-Wenn ein E-Mail-Acoount wegen SPAM gesperrt ist, bedeutet dies, dass verdächtige Aktivitäten beim Versand von E-Mails von einer zugehörigen Adresse aus festgestellt wurden. In diesem Fall können Sie über diesen Account keine E-Mails mehr versenden. Es ist wichtig zu verstehen, warum verdächtige Aktivitäten erkannt wurden, und welche Maßnahmen zu ergreifen sind, um eine Wiederholung dieser Situation zu vermeiden.
+Wenn Ihre E-Mail-Adresse wegen Spamversands gesperrt ist, bedeutet dies, dass beim Versand von E-Mails über diese Adresse verdächtige Aktivitäten festgestellt wurden. In diesem Fall können Sie über diese E-Mail-Adresse keine E-Mails mehr versenden. Sie müssen daher verstehen, warum verdächtige Aktivitäten erkannt wurden, und Maßnahmen ergreifen, um eine Wiederholung dieser Situation zu vermeiden.
 
-**Diese Anleitung erläutert die Vorgehensweise, um einen wegen Spamverdacht gesperrten E-Mail-Account wieder freizuschalten.**
+**Erfahren Sie, wie Sie vorgehen, wenn Ihre E-Mail-Adresse wegen Spamversands gesperrt wurde.**
 
 ## Voraussetzungen
 
-- Sie verwenden eine [OVHcloud E-Mail-Lösung](/links/web/emails).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
+- Sie verfügen über eine [OVHcloud E-Mail-Lösung](/links/web/emails).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**E-Mail Pro:**
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
-Falls die Sperrung einen E-Mail-Account vom Typ MX Plan betrifft, identifizieren Sie zunächst die Version Ihres Dienstes, um den richtigen Vorgang zum Aufheben der Sperrung durchzuführen. Überprüfen Sie anhand der folgenden Tabelle, wie die beiden Versionen voneinander unterschieden werden.
+Bevor Sie fortfahren: Falls die Sperrung eine E-Mail-Adresse vom Typ MX Plan betrifft, identifizieren Sie zunächst die verwendete E-Mail-Technologie Ihres Dienstes, um den richtigen Entsperrungsvorgang durchzuführen.
 
-|Legacy MX Plan Version|Neue MX Plan Version|
-|---|---|
-|![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Dienstbezeichnung steht im Rahmen **Abo** rechts.|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Das neue Angebot hat eine **Server-Referenz** im Rahmen **Zusammenfassung** links.|
+> [!primary]
+>
+> **Die E-Mail-Technologie Ihres MX Plan Dienstes identifizieren.**
+>
+> Je nach Aktivierungsdatum Ihres MX Plan Dienstes oder einer kürzlich durchgeführten Migration kann die zugehörige E-Mail-Technologie unterschiedlich sein. Diese Version wird durch die Oberfläche Ihres Webmails charakterisiert. So identifizieren Sie sie:
+>
+> - Im Tab `Allgemeine Informationen`{.action} finden Sie die verwendete Technologie unter dem Eintrag **Webmail** im Rahmen `Abo`{.action}.
+>
+> ![E-Mail-Technologie im OVHcloud Kundencenter MX Plan identifizieren](images/technology-email.png){.thumbnail .w-500}
+>
+> - Wenn die angezeigte Technologie **RoundCube** ist, folgen Sie den Anweisungen im Tab **MX Plan - RoundCube**.
+> - Wenn die angezeigte Technologie **OWA** oder **Zimbra** ist, folgen Sie den Anweisungen im Tab **MX Plan - OWA / Zimbra**.
 
-### Schritt 1: Die Ursache für den SPAM-Verdacht ermitteln <a name="step1"></a>
+### Schritt 1: Warum wurde Ihre E-Mail-Adresse wegen Spamversands gesperrt? <a name="step1"></a>
 
-Wenn beim Versand von E-Mails verdächtige Aktivitäten festgestellt werden, wird der betreffende Account automatisch gesperrt. In diesem Fall können Sie über den E-Mail-Account keine E-Mails mehr versenden.
+Wenn beim Versand von E-Mails verdächtige Aktivitäten festgestellt werden, wird die betroffene Adresse automatisch gesperrt. In diesem Fall können Sie über diese E-Mail-Adresse keine E-Mails mehr versenden.
 
 > [!warning]
 >
-> "Verdächtige Aktivität" kann bedeuten:
+> "Verdächtige Aktivität" bedeutet, dass:
 >
-> - Der Anti-SPAM-Server, der E-Mails beim Versand scannt, hat ein oder mehrere Elemente der E-Mail als verdächtig eingestuft, die für SPAM-E-Mails typisch sind.
-> - Die Häufigkeit des Versands und die Anzahl der Empfänger sind ungewöhnlich hoch, was als SPAM-Massen-Mailing angesehen werden kann. Für Massen-Versand ist es notwendig, eine Mailingliste zu verwenden, statt einzelner E-Mail-Adressen.
+> - Der Anti-Spam-Server, der E-Mails beim Versand scannt, ein oder mehrere Elemente der E-Mail als verdächtig eingestuft hat und diese als Spam-E-Mail betrachtet werden können.
+> - Die Häufigkeit des Versands und die Anzahl der Empfänger zu hoch sind und als Spamming gewertet werden. Für Massenversand ist es erforderlich, einen Mailinglisten-Dienst zu verwenden und keine Standard-E-Mail-Adresse.
 >
-> Die genauen Gründe für einen gesperrten Account können nicht bekannt gegeben werden, um zu Versuche zu verhindern, das SPAM-Erkennungssystem zu umgehen. Um den Inhalt einer E-Mail zu testen, können Sie ein externes Tool wie [Mailtester](https://www.mail-tester.com/) verwenden.
+> Die genauen Gründe für eine Sperrung können nicht offengelegt werden, um Versuche zur Umgehung des Spam-Erkennungssystems zu verhindern. Um den Inhalt einer E-Mail zu testen, können Sie ein externes Tool wie [Mailtester](https://www.mail-tester.com/) verwenden.
 >
 
-Überprüfen Sie zunächst gegenüber allen Benutzern des gesperrten E-Mail-Accounts, ob sie die Sperrung direkt verursacht haben, etwa mit einem ungewöhnlichen Nutzungsverhalten (z.B. aufgrund eines Massenversands). Ist das der Fall, müssen Sie dies vor der Freigabe der betroffenen Accounts korrigieren.
+Stellen Sie zunächst bei den Benutzern der gesperrten E-Mail-Adresse sicher, dass diese die Sperrung nicht selbst durch eine ungewöhnliche Nutzung der E-Mail-Adresse verursacht haben (z. B. durch Massenversand von E-Mails). Ist dies der Fall, müssen Sie die Situation korrigieren, bevor Sie die Adresse entsperren.
 
-Wenn die vom Antispam-System erkannte verdächtige Aktivität nicht von einem legitimen Benutzer des E-Mail-Accounts verursacht wurde, führen Sie die folgenden Maßnahmen durch:
+Wenn die vom Anti-Spam-System erkannte verdächtige Aktivität nicht von einem legitimen Benutzer der E-Mail-Adresse verursacht wurde, führen Sie die folgenden Maßnahmen durch:
 
-- Führen Sie einen Virenscan für alle Mails durch, die vom gesperrten E-Mail-Account stammen und sorgen Sie für Patches, falls Infektionen bemerkt werden.
+- Führen Sie eine Virenprüfung aller Geräte durch, die die wegen Spamversands gesperrte E-Mail-Adresse verwenden, und wenden Sie Korrekturen an, falls diese infiziert sind.
 
-- Überprüfen Sie jegliche Software, die über Zugangsdaten für den gesperrten E-Mail-Account verfügt (Fax, Unternehmenssoftware, E-Mail-Clients etc.).
+- Überprüfen Sie alle Programme, die die Zugangsdaten der wegen Spamversands gesperrten E-Mail-Adresse verwenden (z. B. Faxgerät, Unternehmenssoftware, E-Mail-Client).
 
-### Schritt 2: Status des E-Mail-Accounts überprüfen und auf das zugehörige Support-Ticket zugreifen <a name="step2"></a>
+- Überprüfen Sie die Weiterleitungen, die auf der wegen Spamversands gesperrten E-Mail-Adresse konfiguriert sind.
 
-Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
+- Überprüfen Sie die Filter, die über einen E-Mail-Client oder das Webmail auf der wegen Spamversands gesperrten E-Mail-Adresse konfiguriert sind.
+
+- Überprüfen Sie die automatischen Antworten, die über einen E-Mail-Client oder das Webmail auf der wegen Spamversands gesperrten E-Mail-Adresse konfiguriert sind.
+
+### Schritt 2: Den Status der E-Mail-Adresse überprüfen und auf das zugehörige Support-Ticket zugreifen
+
+Wählen Sie den betroffenen E-Mail-Dienst in den folgenden Tabs aus:
 
 > [!tabs]
 > **Exchange**
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
->>
->> Gehen Sie auf den Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte „Status“ des betroffenen E-Mail-Accounts „Spam“ angegeben ist, klicken Sie auf `...`{.action} rechts und danach auf `Entsperren`{.action}. Das Entsperren des E-Mail-Accounts erfolgt nicht automatisch. Der Support muss über das Support-Ticket kontaktiert werden. Hierbei müssen die drei gestellten Fragen beantwortet werden.<br>
+>> Gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte "Status" der betroffenen E-Mail-Adresse "Gesperrt" angezeigt wird, klicken Sie auf `...`{.action} rechts neben dem Account und dann auf `Entsperren`{.action}. Die E-Mail-Adresse wird nicht automatisch entsperrt. Kontaktieren Sie den Support über das Support-Ticket, indem Sie die 3 gestellten Fragen beantworten.<br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
 >>
->> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
+>> ![Spalte "Status gesperrt" im Tab "E-Mail-Accounts" Exchange](images/blocked-for-SPAM-01-01.png){.thumbnail}
 >>
 > **E-Mail Pro**
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `E-Mail Pro`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
->>
->> Gehen Sie auf den Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte „Status“ des betroffenen E-Mail-Accounts „Spam“ angegeben ist, klicken Sie auf dieses Feld und dann auf `Ticket beantworten`{.action}. Das Entsperren des E-Mail-Accounts erfolgt nicht automatisch. Der Support muss über das Support-Ticket kontaktiert werden. Hierbei müssen die drei gestellten Fragen beantwortet werden. <br>
+>> Gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte "Status" rechts neben der betroffenen E-Mail-Adresse "Spam" angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Ticket beantworten`{.action}. Die E-Mail-Adresse wird nicht automatisch entsperrt. Kontaktieren Sie den Support über das Support-Ticket, indem Sie die 3 gestellten Fragen beantworten. <br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
 >>
->> ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
+>> ![Spalte "Status Spam" im Tab "E-Mail-Accounts" E-Mail Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
-> **MX Plan - Neue Version**
+> **MX Plan - OWA / Zimbra**
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `MX Plan`{.action}.
->> 1. Wählen Sie die betreffende Domain aus.
->>
->> Gehen Sie auf den Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte „Status“ des betroffenen E-Mail-Accounts „Spam“ angegeben ist, klicken Sie auf dieses Feld und dann auf Das `Ticket beantworten`{.action}. Das Entsperren des E-Mail-Accounts erfolgt nicht automatisch. Der Support muss über das Support-Ticket kontaktiert werden. Hierbei müssen die drei gestellten Fragen beantwortet werden.<br>
+>> Gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte "Status" rechts neben der betroffenen E-Mail-Adresse "Spam" angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Ticket beantworten`{.action}. Die E-Mail-Adresse wird nicht automatisch entsperrt. Kontaktieren Sie den Support über das Support-Ticket, indem Sie die 3 gestellten Fragen beantworten.<br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
 >>
->> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
+>> ![Spalte "Status Spam" im Tab "E-Mail-Accounts" MX Plan](images/blocked-for-SPAM-01-03.png){.thumbnail}
 >>
-> **MX Plan - Legacy**
+> **MX Plan - RoundCube**
 >>
->> Wenn die Sperrung einen Account des Legacy [MX Plan](#instructions) betrifft, gibt es kein Support-Ticket. Bitte lesen Sie [Schritt 1](#step1) dieser Anleitung, bevor Sie den Anweisungen folgen.
+>> Wenn die Sperrung eine MX Plan E-Mail-Adresse mit dem Webmail **RoundCube** betrifft, gibt es kein Support-Ticket. Bitte lesen Sie [Schritt 1](#step1) dieser Anleitung, bevor Sie den folgenden Anweisungen folgen.
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `MX Plan`{.action}.
->> 1. Wählen Sie die betreffende Domain aus.
+>> Gehen Sie zum Tab `E-Mails`{.action} Ihrer Plattform. Wenn in der Spalte "Blockiert wegen SPAM" der Wert "Ja" angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Passwort ändern`{.action}. Ihre E-Mail-Adresse ist jetzt entsperrt, Sie müssen [Schritt 3](#step3) nicht ausführen.
 >>
->> Gehen Sie auf den Tab `E-Mails`{.action}. Wenn „Ja“ in der Spalte „Blockiert wegen SPAM“ angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Passwort ändern`{.action}. Ihr E-Mail-Account ist jetzt freigegeben. Sie müssen [Schritt 3](#step3) nicht ausführen.
->>
->> ![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
+>> ![Spalte "Blockiert wegen SPAM" im Tab "E-Mails" MX Plan RoundCube](images/blocked-for-SPAM-01-04.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
->> > In seltenen Fällen kann „Nein“ in der Spalte „Blockiert wegen SPAM“ angezeigt werden, obwohl der Account blockiert ist. Wenn Sie den Account abgesichert haben, bleibt die Lösung wie oben beschrieben.
+>> > In seltenen Fällen kann in der Spalte "Blockiert wegen SPAM" der Wert "Nein" angezeigt werden, obwohl die E-Mail-Adresse gesperrt ist. Wenn Sie die erforderlichen Maßnahmen zur Absicherung der E-Mail-Adresse ergriffen haben, bleibt die Lösung wie oben beschrieben.
 
-### Schritt 3: Das Support-Ticket beantworten <a name="step3"></a>
+### Schritt 3: Auf das Support-Ticket zugreifen <a name="step3"></a>
 
-Nach Schritt 2 werden Sie zum Fenster „Meine Support-Anfragen“ weitergeleitet. Klicken Sie auf den Button `...`{.action} rechts neben dem Ticket mit dem Betreff „Account locked for spam.“ und dann auf `Details anzeigen`{.action}.
+Nach Schritt 2 werden Sie zum Fenster "Meine Support-Anfragen" weitergeleitet. Klicken Sie auf den Button `...`{.action} rechts neben dem Ticket mit dem Betreff "Account locked for spam." und dann auf `Details anzeigen`{.action}.
 
-![spam](images/blocked-for-SPAM-02.png){.thumbnail}
+![Fenster "Meine Support-Anfragen" mit dem Spam-Sperrungsticket](images/blocked-for-SPAM-02.png){.thumbnail}
 
-Sie finden hier die an Sie versendete E-Mail, die gleichzeitig ein Support-Ticket beim Support generiert.
+Sie finden hier die an Sie gesendete E-Mail, die gleichzeitig ein Support-Ticket beim Kundendienst generiert hat.
 
-Das erstellte Support-Ticket sieht wie folgt aus:
+Das Support-Ticket sieht wie folgt aus:
 
 >
 > Sehr geehrter Kunde,
@@ -135,11 +156,15 @@ Das erstellte Support-Ticket sieht wie folgt aus:
 > <br>
 > 
 
-Am Anschluss an diese Nachricht wird Ihnen ein Beispiel der Header der gesendeten E-Mails gesendet.
+Im Anschluss an diese Nachricht wird Ihnen ein Auszug der Header der versendeten E-Mails bereitgestellt.
 
-Diese Header werden verwendet, um die Route und den Ursprung der gesendeten E-Mails zu bestimmen.
+Diese Header ermöglichen es, den Weg und den Ursprung der versendeten E-Mails zu bestimmen.
 
-## Weiterführende Informationen <a name="go-further"></a>
+> [!primary]
+>
+> Sobald Ihr Ticket vom Kundendienst bearbeitet und Ihre E-Mail-Adresse entsperrt wurde, ändern Sie das Passwort der E-Mail-Adresse und achten Sie darauf, dass es ausreichend stark ist. Sie können dazu den [Passwort-Generator der CNIL](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) verwenden. Weitere Informationen finden Sie auch unter [Tipps der CNIL für ein gutes Passwort](https://www.cnil.fr/fr/les-conseils-de-la-cnil-pour-un-bon-mot-de-passe).
+
+## Weiterführende Informationen
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

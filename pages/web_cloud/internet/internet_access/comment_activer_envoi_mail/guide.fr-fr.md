@@ -39,7 +39,7 @@ Afin de protéger votre réseau et vos adresses e-mail, nous désactivons l'envo
 
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon accès`{.action}.
 
-Dans le cadre « Informations générales », reportez-vous à la partie `Envoi d'email via notre serveur SMTP`. Vous retrouverez dans cette dernière le statut actuel du service d'envoi d'e-mails.
+Dans le cadre « Informations générales », reportez-vous à la partie `Envoi d'e-mail via notre serveur SMTP`. Vous retrouverez dans cette dernière le statut actuel du service d'envoi d'e-mails.
 
 ![Mail Sending status](images/MailSending-Status.png){.thumbnail}
 

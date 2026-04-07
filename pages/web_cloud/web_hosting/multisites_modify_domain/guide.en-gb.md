@@ -17,10 +17,20 @@ When you use your web hosting plan or update your website, you may need to modif
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
 - One or more [domain names](/links/web/domains)
 - Sufficient rights to all the services concerned, find more information in our guide “[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)”
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Configurer son adresse e-mail sur Outlook classique pour Windows"
 excerpt: "Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook classique pour Windows"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -37,6 +37,17 @@ Les adresses e-mail de l'offre **MX Plan** et [Zimbra Starter](/links/web/emails
     - [Zimbra](/links/web/emails-zimbra) Starter (**uniquement**).
 - Disposer de l'application [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 /// details | Informations relatives à la gestion et la configuration des services OVHcloud
 
@@ -245,9 +256,9 @@ C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l�
 >>
 >> > [!primary]
 >> >
->> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service E-mail Pro.
+>> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service Email Pro.
 >> >
->> > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+>> > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `Email Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>
@@ -340,7 +351,7 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 >
 > Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur macOS, consultez [le centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/ajouter-un-compte-de-courrier-dans-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
-[Configurer son compte E-mail Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Configurer son compte Email Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 [Configurer son compte Exchange sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 

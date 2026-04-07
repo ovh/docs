@@ -14,7 +14,17 @@ L'autenticazione SSO (*Single Sign-On*) è **unica** per accedere al tuo account
 
 - I servizi AD FS (Active Directory Federation Services) devono essere eseguiti sul tuo server
 - Disporre di un [account OVHcloud attivo](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Percorso di navigazione:** `Identità, sicurezza e operazioni`{.action} > `Users`{.action} > `SSO connection`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## Procedura
 
@@ -121,15 +131,9 @@ Una volta terminata la tabella di corrispondenza, il servizio AD FS si fida di O
 
 L'aggiunta del tuo AD FS come affidabilità provider avviene [nello Spazio Cliente OVHcloud](/links/manager), dove è possibile fornire i metadati del provider.
 
-Nella barra laterale, clicca su `Identità, Sicurezza e Operazioni`{.action} e poi su `Identità`{.action}.
+Apri la pagina [SAML SSO](/links/control-panel/iam-saml-sso).
 
-![Accesso al menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Clicca sulla scheda `SSO`{.action} e sul pulsante `Connessione SSO`{.action}.
-
-![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Inserisci i metadati XML del tuo servizio AD FS. Il campo `Nome del gruppo` è facoltativo in questo caso. Clicca su `Conferma`{.action}.
+Nella sezione `SSO connection`{.action}, inserisci i metadati XML del tuo servizio AD FS. Il campo `Nome del gruppo` è facoltativo in questo caso. Clicca su `Conferma`{.action}.
 
 Per conservare gli utenti locali, spunta la casella `Conservare gli utenti OVHcloud attivi`.
 

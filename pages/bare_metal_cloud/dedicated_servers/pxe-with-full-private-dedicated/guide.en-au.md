@@ -75,14 +75,22 @@ Here is a (logical) Netboot boot schema:
 > This article is intended for experienced users who have at least basic knowledge of the open-source world, as well as knowledge of system and network administration.
 > 
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration).
 - At least one [dedicated server](/links/bare-metal/bare-metal) with an operating system **already installed**.
 - An additional dedicated server with the default network interfaces configured, namely public and private network access. This server will host all services (**DHCP** and **TFTP**). The operating system will be one of your choice.
 - You must have all of the network interfaces for this server in **private** mode, which implies that you have already configured [our OLA feature](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).<br>
 
->
-> To check that your machine is eligible for our procedure, log in to the [OVHcloud Control Panel](/links/manager) and click on the `Bare Metal Cloud`{.action} tab.
->
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
+
 > Select your server and check that it is eligible for `OLA: OVHcloud Link Aggregation` in the `Network interfaces`{.action} tab.
 >
 > ![OLA1](images/Scr_OLA1.png){.thumbnail}

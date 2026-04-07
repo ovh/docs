@@ -138,7 +138,7 @@ Les metadata sont disponibles en lecture et non facturées. Il est possible de l
 
 ### Existe-t-il une limitation en volume ? 
 
-Un conteneur ne pourra pas être archivé s'il dépasse la taille de 100 Tio.
+Un conteneur ne pourra pas être archivé s'il dépasse la taille de 100 To.
 
 Nous n’avons pas de limitation sur le nombre d’objets. Avoir beaucoup de petits objets aura un impact sur le temps d’archivage/restauration.
 

@@ -14,7 +14,6 @@ But for some specific usecases, you may have to customize nodes parameters.
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An OVHcloud Managed Kubernetes cluster
 - Access to your OVHcloud Managed Kubernetes cluster through the Kubeconfig file
 - You must have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Getting started
 excerpt: Discover AI Endpoints, the secure serverless platform by OVHcloud for developers to access top AI models with easy-to-use APIs. No AI expertise needed.
-updated: 2026-01-30
+updated: 2026-03-19
 ---
 
 > [!primary]
@@ -11,15 +11,15 @@ updated: 2026-01-30
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, with **data privacy as a top priority**. Indeed, we do not store user data, making it an ideal solution for developers who want to enhance their applications with AI capabilities while keeping data private and secure. 
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, with **data privacy as a top priority**. Indeed, we do not store user data, making it an ideal solution for developers who want to enhance their applications with AI capabilities while keeping data private and secure. 
 
 With no extensive AI expertise required, AI Endpoints is an ideal choice for developers seeking a convenient and secure way to integrate AI into their applications.
 
 ## Objective
 
-The objective of this guide is to help developers interested in AI quickly and easily get started with [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+The objective of this guide is to help developers interested in AI quickly and easily get started with [AI Endpoints](/links/public-cloud/ai-endpoints).
 
-It explains how to obtain an access key, access AI models, and interact with AI APIs on the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) platform. By following this guide, you will learn how to integrate AI capabilities into your applications with ease.
+It explains how to obtain an access key, access AI models, and interact with AI APIs on the [AI Endpoints](/links/public-cloud/ai-endpoints) platform. By following this guide, you will learn how to integrate AI capabilities into your applications with ease.
 
 ## Requirements
 
@@ -30,11 +30,11 @@ It explains how to obtain an access key, access AI models, and interact with AI 
 
 ### Generating your first API access key
 
-Getting an API key enables you to use the models available in our [catalog](https://endpoints.ai.cloud.ovh.net/catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
+Getting an API key enables you to use the models available in our [catalog](/links/public-cloud/ai-endpoints-catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
 
 **1\. Access the AI Endpoints section**
 
-Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Endpoints`{.action}.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Endpoints`{.action}.
 
 ![AI Endpoints section](images/api-access-key-creation-1.png){.thumbnail}
 
@@ -48,10 +48,22 @@ Once you have filled in the required information, click the `Create`{.action} bu
 
 *Note that this access key can be [revoked](#revoke-your-api-access-key) at any time.*
 
-> [!primary]
+> [!warning]
 >
-> **Only project administrators can create keys.**
-> 
+> **Regarding shared projects**
+>
+> Due to current IAM (Identity and Access Management) limitations, the ability to create and manage API keys for AI Endpoints varies depending on how your project is shared.
+>
+> - **If your project is shared with an existing OVHcloud NIC (with Read & Write permissions):**
+>   - Added team members **can** create API keys for AI Endpoints.
+>   - However, **project administrators cannot see or manage keys created by these users**.
+>   - As a result, **admins cannot revoke or audit tokens created by team members**. The only way to revoke such tokens is to remove the NIC’s access to the project.
+>
+> - **If your project is accessed via IAM-based sharing (`NIC/newuser`):**
+>   - Added team members **cannot create** new API keys unless they are granted admin-level IAM permissions.
+>
+> The platform is continuously being improved to provide a smoother and more consistent experience across all services. In the meantime, **please contact your project administrator** to create the key for you.
+>
 
 **3\. Store the created API access key**
 
@@ -70,7 +82,7 @@ With your access API key in hand, you are now ready to access the AI models and 
 
 ### Accessing AI models
 
-Once your API key has been generated, you can navigate to the [Catalog page](https://endpoints.ai.cloud.ovh.net/catalog) to choose the AI model you want to interact with.
+Once your API key has been generated, you can navigate to the [Catalog page](/links/public-cloud/ai-endpoints-catalog) to choose the AI model you want to interact with.
 
 AI Endpoints offers a variety of world-renowned AI models to choose from, including:
 
@@ -131,7 +143,7 @@ This will take you to a dedicated page with several options for interacting with
 
 To maintain security and control over your API access, it is essential to **revoke keys that are no longer needed**.
 
-To revoke one of your API access keys, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `AI Endpoints`{.action} underneath **AI & Machine Learning** in the left-hand menu, then on then `API key`{.action} management section.
+To revoke one of your API access keys, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on `AI Endpoints`{.action} underneath **AI & Machine Learning** in the left-hand menu, then on the `API key`{.action} management section.
 
 On the **AI key management** page, you will see a table listing all your generated API access keys, including their **name**, **description**, and **expiry date**. Find the key you want to revoke and click the three dots `...`{.action} button next to its details. This will open a menu where you can select `Delete`{.action}. Confirm this action to complete the revocation.
 
@@ -156,7 +168,7 @@ If you require higher usage, please **[get in touch with us](/links/support-cont
 
 For information on pricing and the models lifecycle of the platform, please refer to the [AI Endpoints - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) documentation.
 
-For your convenience, you can monitor your estimated consumption and model usage through the [OVHcloud Control Panel](/links/manager). To do so, navigate to the `AI Endpoints`{.action} section of the `AI & Machine Learning` category, in the left-hand vertical menu.
+For your convenience, you can monitor your estimated consumption and model usage in the `AI Endpoints`{.action} section of the `AI & Machine Learning` category in your [Public Cloud project](/links/control-panel/publiccloud-projects) left-hand vertical menu.
 
 ![AI Endpoints usage monitoring](images/ai-endpoints-usage-monitoring.png){.thumbnail}
 

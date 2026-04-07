@@ -14,9 +14,19 @@ Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Ter criado um utilizador OpenStack. Consulte [o respetivo guia](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 - Ter preparado o ambiente para usar o OpenStack. Para isso, consulte o seguinte guia: [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -24,8 +34,7 @@ Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a
 
 Para recuperar as suas variáveis de ambiente, pode transferir o ficheiro OpenRC do seu utilizador OpenStack previamente criado.
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o seu projeto Public Cloud no canto superior esquerdo.
-<br> No menu à esquerda, na rubrica **Parâmetros**, clique em `Utilizadores & Funções`{.action}. A seguir, clique nas `...`{.action} do lado direito do seu utilizador, e selecione `Transferir o ficheiro RC do OpenStack`{.action}.
+No menu à esquerda, na rubrica **Parâmetros**, clique em `Utilizadores & Funções`{.action}. A seguir, clique nas `...`{.action} do lado direito do seu utilizador, e selecione `Transferir o ficheiro RC do OpenStack`{.action}.
 
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 

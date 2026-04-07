@@ -14,7 +14,6 @@ When you install Windows on a server with a hardware RAID configuration, the RAI
 
 - a [Dedicated Server](/links/bare-metal/bare-metal) with Windows installed and a hardware RAID card (LSI MegaRaid)
 - at least two identical disks
-- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -230,8 +229,8 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes 
 ```
 
-### Installing Windows from the OVH Control Panel
-Finally, go to the OVH Control Panel to proceed with the installation of Windows on your server.
+### Installing Windows from the OVHcloud Control Panel
+Finally, proceed with the installation of Windows on your server.
 
 You will need to check the `Customize partition configuration`{.action} box, and change the current partition scheme to one specifying disk **C**, with a maximum size of 200GB.
 

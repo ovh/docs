@@ -1,7 +1,7 @@
 ---
-title: Object Storage - Einrichten von CORS auf Object Storage (EN)
+title: Object Storage - Setting up CORS on Object Storage
 excerpt: Learn how to enable and configure CORS on your buckets
-updated: 2023-05-30
+updated: 2026-03-06
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ By default, modern browsers impose a same-origin security policy i.e. by prevent
 
 Cross-Origin Resource Sharing (CORS) is a technique that allows resources from a client web application that is loaded from one domain to interact with resources located in a different domain.
 
-**The purpose of this guide is to explain the concept of CORS and how to enable it on your Object Storage buckets.**
+**This guide explains CORS and how to enable it on your Object Storage buckets.**
 
 ### Use case scenarios
 
@@ -50,7 +50,7 @@ The rules for accepted CORS requests are configured at the bucket level.
 Using the AWS CLI, set up CORS on the bucket:
 
 ```sh
-aws s3api put-bucket-cors --bucket my-bucket --cors-configuration file://cors.json
+aws s3api put-bucket-cors --bucket <bucket_name> --cors-configuration file://cors.json
 ```
 
 The cors.json file contains the following configuration:
@@ -69,9 +69,9 @@ The cors.json file contains the following configuration:
 ```
 #### Configuration example
 
-Let's assume we have a frontend web application hosted on `https://my-app.xyz` that uses JavaScript (React, Angular or any frontend framework) to query media files hosted in a Object Storage bucket (`https://my-media.s3.gra.io.cloud.ovh.net/`).
+Let's assume you have a frontend web application hosted on `https://my-app.xyz` that uses JavaScript (React, Angular, or any frontend framework) to query media files hosted in an Object Storage bucket (`https://my-media.s3.gra.io.cloud.ovh.net/`).
 
-We enable CORS on the my-media bucket:
+Enable CORS on the `my-media` bucket:
 
 ```sh
 aws s3api put-bucket-cors --bucket my-media --cors-configuration file://cors.json
@@ -105,3 +105,4 @@ The Object Storage server will expose the `Access-Control-Allow-Origin` header i
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+

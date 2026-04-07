@@ -14,8 +14,19 @@ This guide will walk you through accessing and interpreting the various metrics 
 
 - An AI Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [AI user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
-- Access to the [OVHcloud Control Panel](/links/manager) or [the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer
+- Access to the [OVHcloud Control Panel](/links/control-panel/publiccloud-projects) or [the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer
 - A running **OVHcloud AI Tool** (AI Notebooks, AI Training, or AI Deploy)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -28,9 +39,7 @@ To fetch your AI Tool monitoring URL, you can use either the CLI or the Control 
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
->>
->> Select your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action}, `AI Training`{.action} or `AI Deploy`{.action} section depending on the AI Tool you are using.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action}, `AI Training`{.action} or `AI Deploy`{.action} section depending on the AI Tool you are using.
 >>
 >> From there, you will access a table listing your instances, where you can find the one you need and its general information. To view your instance details, click either the instance name or the `...`{.action} button and then `Manage`{.action}.
 >>

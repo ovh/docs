@@ -1,6 +1,6 @@
 ---
-title: Time2Chat, la messagerie conversationnelle par SMS pour les entreprises
-excerpt: Lancez vos premières conversations SMS bidirectionnelles avec un numéro dédié en 09
+title: "Time2Chat, la messagerie conversationnelle par SMS pour les entreprises"
+excerpt: "Découvrez comment lancer vos premières conversations SMS bidirectionnelles avec un numéro dédié en 09"
 updated: 2025-11-27
 ---
 
@@ -33,7 +33,7 @@ Ce guide présente le principe de Time2Chat, ses avantages, les conditions d’a
 
 Time2Chat est une solution de messagerie conversationnelle bidirectionnelle (marque ↔ client) permettant à une entreprise et à ses clients d’échanger par SMS en France.
 
-Contrairement à un envoi de SMS classique, le service repose sur un numéro dédié commençant par « 09 », attribué spécifiquement à chaque entreprise. Ce numéro peut être utilisé à la fois pour envoyer et recevoir des SMS.
+Contrairement à un envoi de SMS classique, le service repose sur un numéro dédié commençant par « 09 », attribué spécifiquement à chaque entreprise. Vous pouvez utiliser ce numéro pour envoyer et recevoir des SMS.
 
 Une « session » de conversation débute dès qu’un premier message est envoyé — qu’il provienne de la marque ou du client. À partir de cet instant, la session reste active pendant 24 heures. Durant ce laps de temps, les deux interlocuteurs peuvent échanger un nombre illimité de SMS via le même canal, sous réserve de crédits disponibles côté marque. Une fois la période écoulée, tout nouveau message provenant de la marque ou du client relance automatiquement une nouvelle session de 24 heures.
 
@@ -77,7 +77,7 @@ Nous proposerons prochainement ce service à tous les clients possédant un [com
 >
 > Les crédits SMS existants peuvent être utilisés sur Time2Chat.
 >
-> Vous pouvez également acheter un pack de crédits SMS depuis votre [espace client OVHcloud](/links/manager-telecom), rubrique `Télécom`{.action} puis section `SMS`{.action}. Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
+> Vous pouvez également acheter un pack de crédits SMS depuis la [section SMS de votre espace client](/links/control-panel/telecom-sms). Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
 
 ### Commander un numéro Time2Chat
 

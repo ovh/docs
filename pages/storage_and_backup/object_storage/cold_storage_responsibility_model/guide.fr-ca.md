@@ -1,6 +1,6 @@
 ---
 title: "Cold Storage - Shared Responsibility for archive and restoration services (EN)"
-excerpt: "Shared responsibilities between OVHcloud and the customer on Cold Storage for archive and retoration services"
+excerpt: "Shared responsibilities between OVHcloud and the customer on Cold Storage for archive and restoration services"
 updated: 2024-02-26
 ---
 

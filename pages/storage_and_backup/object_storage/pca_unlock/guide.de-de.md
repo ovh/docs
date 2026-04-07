@@ -16,17 +16,26 @@ Da Cold Storage Daten nur selten Zugriff benötigen, ist eine Freigabeanforderun
 
 ## Voraussetzungen
 
-- *Unfreeze* im OVHcloud Kundencenter:
-    - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - *Unfreeze* über python-swiftclient:
     - [Umgebung für die Verwendung der OpenStack-API vorbereiten](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) indem python-swiftclient installiert wird.
     - [OpenStack Umgebungsvariablen einrichten](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
 ### Objekte über das Kundencenter abrufen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Cloud Archive`{.action}.
+Klicken Sie im linken Menü auf `Cloud Archive`{.action}.
 
 Um das Archiv freizugeben, klicken Sie auf den Button `...`{.action} rechts und dann auf `Unfreeze`{.action}, um den Vorgang zu starten.
 

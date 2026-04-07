@@ -16,8 +16,18 @@ Descubra como fazer cópias de segurança e restaurar os seus dados nos seus ser
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Um servidor Bare Metal com o Backup Agent instalado. Consulte o nosso guia "[Como configurar a sua primeira cópia de segurança](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" para mais informações.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## Instruções
 

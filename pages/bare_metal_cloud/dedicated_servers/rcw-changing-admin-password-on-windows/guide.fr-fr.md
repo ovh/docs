@@ -12,7 +12,17 @@ Ce guide vous explique comment réinitialiser le mot de passe `Administrator` gr
 
 - Microsoft Windows Server 2016 ou supérieur installé sur votre [serveur dédié](/links/bare-metal/bare-metal)
 - Au moins 16 Go de RAM installés sur le serveur
-- Accès à l’[espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

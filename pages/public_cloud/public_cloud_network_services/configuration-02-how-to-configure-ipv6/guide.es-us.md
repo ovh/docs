@@ -24,7 +24,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-El protocolo de internet versión 6 (IPv6), la última versión del protocolo de internet (IP), está diseñado para resolver el agotamiento de las direcciones IPv4 utilizando direcciones compuestas por 128 bits en vez de los 32 bits de las direcciones IPv4.
+El protocolo de Internet versión 6 (IPv6), la última versión del protocolo de Internet (IP), está diseñado para resolver el agotamiento de las direcciones IPv4 utilizando direcciones compuestas por 128 bits en vez de los 32 bits de las direcciones IPv4.
 
 Todas las instancias de Public Cloud se entregan con una dirección IPv4 y una dirección IPv6.
 
@@ -42,7 +42,16 @@ Por defecto solo está configurada la IPv4.
 * Tener una instancia de Public Cloud.
 * Tener acceso administrativo (sudo) por SSH o escritorio remoto (Windows) al servidor.
 * Tener conocimientos básicos de redes.
-* Estar conectado al [área de cliente de OVHcloud](/links/manager).
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
@@ -55,7 +64,7 @@ Las siguientes secciones contienen las configuraciones de las distribuciones que
 
 ### Léxico
 
-Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en la que se recogen los valores que utilizaremos en esta guía junto con su descripción:
+Antes de empezar, le recomendamos que eche un vistazo a la siguiente tabla, en la que se recogen los valores que utilizaremos en esta guía junto con su descripción:
 
 |Valor|Descripción|
 |---|---|
@@ -65,7 +74,7 @@ Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en l
 
 ### Obtener la información relativa a la red
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección de `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. En la columna izquierda, seleccione el menú `Instancias`{.action} y haga clic en el botón `...`{.action} junto a la instancia correspondiente y haga clic en `Detalles de la instancia`{.action}.
+En su proyecto Public Cloud, haga clic en `Instancias`{.action} en el menú de la izquierda. Haga clic en el botón `...`{.action} junto a la instancia correspondiente y haga clic en `Detalles de la instancia`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
@@ -107,7 +116,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >>
 >> Esto le permite separar la configuración IPv6 y revertir fácilmente los cambios en caso de error.
 >>
->> Agregue las siguientes líneas al archivo. Sustituya los elementos genéricos (*YOUR_IPV6*, *IPV6_PREFIX* y *IPV6_GATEWAY*) y la interfaz de red (si su servidor no utiliza **eth0**) por sus valores específicos:
+>> Agregue las siguientes líneas al archivo. Sustituya los elementos genéricos (`YOUR_IPV6`, `IPV6_PREFIX` y `IPV6_GATEWAY`) y la interfaz de red (si su servidor no utiliza **eth0**) por sus valores específicos:
 >>
 >> ```console
 >> iface eth0 inet6 static
@@ -154,7 +163,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >>
 >> Esto le permite separar la configuración IPv6 y revertir fácilmente los cambios en caso de error.
 >>
->> Agregue las siguientes líneas al archivo. Sustituya los elementos genéricos (*YOUR_IPV6*, *IPV6_PREFIX* y *IPV6_GATEWAY*) y la interfaz de red (si su servidor no utiliza **eth0**) por sus valores específicos:
+>> Agregue las siguientes líneas al archivo. Sustituya los elementos genéricos (`YOUR_IPV6`, `IPV6_PREFIX` y `IPV6_GATEWAY`) y la interfaz de red (si su servidor no utiliza **eth0**) por sus valores específicos:
 >>
 >> ```yaml
 >> network:
@@ -193,7 +202,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >>
 >> > [!warning]
 >> >
->> > Es importante mantener la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Sólo es necesaria la tecla espacio.
+>> > Es importante mantener la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Solo es necesaria la tecla espacio.
 >> >
 >>
 >> Para probar su configuración, utilice el siguiente comando:
@@ -227,7 +236,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >> sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 >> ```
 >>
->> A continuación, editamos el archivo `ifcfg-eth0`, añadiendo únicamente las líneas para la configuración IPv6 del servidor. Sustituya los elementos genéricos (*YOUR_IPV6*, *IPV6_PREFIX* y *IPV6_GATEWAY*) por sus valores específicos.
+>> A continuación, editamos el archivo `ifcfg-eth0`, añadiendo únicamente las líneas para la configuración IPv6 del servidor. Sustituya los elementos genéricos (`YOUR_IPV6`, `IPV6_PREFIX` y `IPV6_GATEWAY`) por sus valores específicos.
 >>
 >> ```console
 >> IPV6INIT=yes
@@ -268,7 +277,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 >> sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 >> ```
 >>
->> A continuación, editamos el archivo `cloud-init-eth0.nmconnection`, añadiendo únicamente las líneas para la configuración IPv6 del servidor. Sustituya los elementos genéricos (*YOUR_IPV6*, *IPV6_PREFIX* y *IPV6_GATEWAY*) por sus valores específicos.
+>> A continuación, editamos el archivo `cloud-init-eth0.nmconnection`, añadiendo únicamente las líneas para la configuración IPv6 del servidor. Sustituya los elementos genéricos (`YOUR_IPV6`, `IPV6_PREFIX` y `IPV6_GATEWAY`) por sus valores específicos.
 >>
 >> ```console
 >> [ipv6]
@@ -341,9 +350,10 @@ Vuelva a probar su red mediante un ping6, por ejemplo:
 ```bash
 ping6 ipv6.google.com
 ```
+
 Si la instancia responde, es posible que no haya seguido correctamente alguno de los pasos de la configuración inicial.
 
-Si el problema persiste, puede ponerse en contacto con nuestro equipo de soporte.
+Si el problema persiste, puede ponerse en contacto con [nuestro equipo de soporte](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ## Más información
 

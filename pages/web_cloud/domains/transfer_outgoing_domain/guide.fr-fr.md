@@ -1,7 +1,7 @@
 ---
 title: "Transférer un nom de domaine vers un autre bureau d'enregistrement"
 excerpt: "Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -25,8 +25,18 @@ Afin d'empêcher les transferts de noms de domaine non autorisés, les noms de d
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud
 - Être habilité à demander le transfert du nom de domaine : le titulaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine doit avoir été créé il y a plus de 61 jours **et** ne doit pas avoir été transféré ou avoir changé de titulaire durant cette période.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 > [!primary]
 >
@@ -51,58 +61,83 @@ Afin d'empêcher les transferts de noms de domaine non autorisés, les noms de d
 > Selon le nouveau bureau d'enregistrement que vous choisissez, le transfert d'un nom de domaine peut être une opération payante. Nous vous invitons à vous renseigner sur ce point avant de poursuivre.
 >
 
-### Étape 1 : lever la protection contre le transfert du nom de domaine
+### 1 - Lever la protection contre le transfert du nom de domaine
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Protection contre le transfert` sous **Securité**. Par défaut, cette protection est `Activée`{.action}.
-
-> [!warning]
->
-> Si le bouton `Protection contre le transfert` n'est pas présent, cela signifie que votre extension de nom de domaine ne nécessite pas de code de transfert. Vous pouvez alors lancer directement votre transfert.
-
-![protection activée](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
-
-Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous souhaitez supprimer cette protection. Patientez quelques minutes pour que l'état passe à `Désactivée`{.action}.
-
-> [!primary]
->
-> Si vous rencontrez le message "**Une erreur est survenue lors de la demande de désactivation de la protection du nom de domaine (User not granted for this request)**", cela signifie que vous n'avez pas les droits suffisants pour déverrouiller le nom de domaine.
->
-> De plus, si vous rencontrez le message : "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", cela signifie que le code de transfert de votre nom de domaine n'est pas récupérable via votre [espace client OVHcloud](/links/manager).
->
-> Dans les deux cas, vérifiez que vous êtes bien le contact **administrateur** du nom de domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts) puis vérifiez que l'extension de votre nom de domaine permet un déverrouillage depuis l'[espace client OVHcloud](/links/manager).
->
-> En effet, certains *codes de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des noms de domaine pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devez contactez directement le *registre* qui gère l'extension de votre nom de domaine afin de récupérer le *code de transfert*.
->
-
-![désactivation protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sous l'onglet `Informations générales`{.action}, repérez le curseur `Protection contre le transfert` sous **Sécurité**. Par défaut, cette protection est `Activée`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Si le bouton `Protection contre le transfert` n'est pas présent, cela signifie que votre extension de nom de domaine ne nécessite pas de code de transfert. Vous pouvez alors lancer directement votre transfert.
+>>
+>> ![protection activée](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous souhaitez supprimer cette protection. Patientez quelques minutes pour que l'état passe à `Désactivée`{.action}.
+>>
+>> > [!primary]
+>> >
+>> > Si vous rencontrez le message "**Une erreur est survenue lors de la demande de désactivation de la protection du nom de domaine (User not granted for this request)**", cela signifie que vous n'avez pas les droits suffisants pour déverrouiller le nom de domaine.
+>> >
+>> > De plus, si vous rencontrez le message : "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", cela signifie que le code de transfert de votre nom de domaine n'est pas récupérable via votre [espace client OVHcloud](/links/manager).
+>> >
+>> > Dans les deux cas, vérifiez que vous êtes bien le contact **administrateur** du nom de domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts) puis vérifiez que l'extension de votre nom de domaine permet un déverrouillage depuis l'[espace client OVHcloud](/links/manager).
+>> >
+>> > En effet, certains *codes de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des noms de domaine pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devez contacter directement le *registre* qui gère l'extension de votre nom de domaine afin de récupérer le *code de transfert*.
+>>
+>> ![désactivation protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
 > Une fois la protection levée, le nom de domaine reste déverrouillé pendant sept jours. Après cette période, la protection sera automatiquement réactivée. Si vous ne demandez pas de transfert de nom de domaine à votre nouveau bureau d'enregistrement pendant cet intervalle, il sera nécessaire de lever à nouveau la protection sur le nom de domaine.
 >
 
-### Étape 2 : récupérer le code de transfert
+### 2 - Récupérer le code de transfert
 
 > [!warning]
 >
 > Sachez qu'il est toujours possible de débloquer et récupérer le code de transfert de votre nom de domaine après son expiration. Selon les règles du registre, un nom de domaine en [période de rédemption (redemptionPeriod)](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) peut nécessiter d'être restauré pour être transféré. Contactez votre nouveau bureau d'enregistrement pour connaître les modalités de transfert.
 >
 
-Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine. Pour cela, toujours depuis l'onglet `Informations générales`{.action}, cliquez sur `AUTH/INFO`{.action} situé à côté de `Protection contre le transfert`. N'hésitez pas à actualiser la page si nécessaire.
+Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine.
 
-Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appelé code de transfert, mot de passe de nom de domaine, AUTH-CODE ou EPP-Code).
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
-
-Le code sera demandé par votre nouveau bureau d'enregistrement pour terminer le processus de transfert. Vous pouvez vérifier les détails auprès de votre nouveau bureau d'enregistrement.
-
-Plutôt que de taper manuellement le code, nous vous recommandons de copier/coller celui-ci, car certains caractères peuvent être facilement confondus.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sous l'onglet `Informations générales`{.action}, cliquez sur `AUTH/INFO`{.action} situé à côté de `Protection contre le transfert`. Actualisez la page si nécessaire.
+>>
+>> ![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Une fenêtre s'affiche et contient votre code AUTH/INFO (également appelé code de transfert, mot de passe de nom de domaine, AUTH-CODE ou EPP-Code).
+>>
+>> Le code sera demandé par votre nouveau bureau d'enregistrement pour terminer le processus de transfert. Vous pouvez vérifier les détails auprès de votre nouveau bureau d'enregistrement.
+>>
+>> Plutôt que de taper manuellement le code, nous vous recommandons de le copier/coller, car certains caractères peuvent être facilement confondus.
 
 Une fois le code de transfert récupéré, **ne reverrouillez pas votre nom de domaine, sauf si vous ne souhaitez plus le transférer**.
 
-### Étape 3 : débuter le transfert vers le nouveau bureau d'enregistrement
+### 3 - Débuter le transfert vers le nouveau bureau d'enregistrement
 
 Une fois les étapes précédentes effectuées, lancez le processus de transfert, généralement en passant une commande auprès de votre nouveau bureau d'enregistrement. Le transfert peut prendre jusqu'à 10 jours.
 
@@ -110,8 +145,7 @@ Pour plus d'informations, contactez le nouveau bureau d'enregistrement que vous 
 
 > [!warning]
 >
-> Si votre nouveau bureau d'enregistrement réclame un nouveau code de transfert, réactivez la `Protection contre le transfert` pour votre nom de domaine puis désactivez-la de nouveau quelques minutes après. Vous pourrez ainsi récupérer un nouveau code de transfert.
->
+> Si votre nouveau bureau d'enregistrement réclame un nouveau code de transfert, réactivez la **Protection contre le transfert** pour votre nom de domaine puis désactivez-la de nouveau quelques minutes après. Vous pourrez ainsi récupérer un nouveau code de transfert.
 
 ## Aller plus loin
 

@@ -1,7 +1,7 @@
 ---
 title: "Aumentar o tamanho de um disco adicional"
 excerpt: "Saiba como aumentar o tamanho de um volume adicional e aumentar a sua partição principal"
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -28,8 +28,18 @@ Se atingiu a capacidade máxima do seu disco suplementar, pode adicionar armazen
 
 - Uma [instância Public Cloud](/links/public-cloud/compute) no seu projeto Public Cloud
 - Um [disco adicional](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) criado no seu projeto
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ter acesso administrativo (sudo) à sua instância através de SSH (Linux) ou RDP (Windows)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -110,8 +120,6 @@ Clique no botão `...`{.action} à direita do volume em causa e selecione `Edita
 Na nova janela, indique o novo tamanho do volume e clique em `Modificar o volume`{.action}.
 
 ![painel de controlo](images/increase-disk-03.png){.thumbnail}
-
-Certifique-se de que o volume está ligado à sua instância antes de continuar. Se não for o caso, clique em `...`{.action} na linha do volume e selecione `Associar a instância`{.action}.
 
 ### Estender a partição (instância Linux)
 
@@ -201,7 +209,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Assim que esta operação estiver concluída, desligue o volume da instância e ligue-o novamente para se certificar de que as definições QoS atualizadas (IOPS e largura de banda) estão corretamente aplicadas.
+
 ### Estender a partição (instância Windows)
+
+Antes de continuar, ligue o volume à instância. Clique em `...`{.action} na linha do volume e selecione `Associar a instância`{.action}.
 
 Crie uma ligação RDP (Remote Desktop) na sua instância Windows.
 
@@ -230,6 +242,8 @@ Clique em `Terminar`{.action} para terminar o processo.
 O volume redimensionado inclui agora o espaço de disco suplementar.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Assim que esta operação estiver concluída, desligue o volume da instância e ligue-o novamente para se certificar de que as definições QoS atualizadas (IOPS e largura de banda) estão corretamente aplicadas.
 
 ## Quer saber mais?
 

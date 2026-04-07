@@ -1,7 +1,7 @@
 ---
 title: FAQ OVHcloud emails
 excerpt: "Find the most frequently asked questions about emails"
-updated: 2025-04-07
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,26 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Email FAQ
 
@@ -95,7 +115,6 @@ Below, you will find the main reasons for not receiving your emails.
 
 ///
 
-
 /// details | Why set up SPF and DKIM records?
 
 **SPF (Sender Policy Framework)**
@@ -111,7 +130,6 @@ It allows you to sign emails to prevent identity theft. This signature operates 
 To find out how to configure a DKIM record on your email service, please read our guide on [Enhancing email security via a DKIM record](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
-
 
 /// details | How do I configure my email address and use it with webmail?
 
@@ -166,8 +184,6 @@ With [webmail](/links/web/email), you can access your email at any time, from an
 
 All of your email addresses are managed via the [OVHcloud Control Panel](/links/manager). To do this, log in and access the product concerned. You can change the passwords for your email addresses, check how much space they have left, create new email addresses, or delete existing ones.
 
-**Tips and Tricks**: With MX Plan email solutions, you can delegate management of an email account to another OVHcloud account, while keeping control of it yourself. Simply configure a delegation in your [OVHcloud Control Panel](/links/manager). You can use [our documentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
-
 ///
 
 /// details | What should I know before I create an email address?
@@ -214,7 +230,6 @@ If the `Filter` column is not present in your Control Panel, you will need to cr
 
 ///
 
-
 /// details | My email account is full, I don't have any more space. What can I do?
 
 If you have signed up to [one of our OVHcloud email solutions](/links/web/emails) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota). This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
@@ -229,12 +244,6 @@ Want to change your [email solution](/links/web/emails) to get more space and fe
 - [Migrate your email addresses from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrate your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrate email accounts via the OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
-
-///
-
-/// details | Does the Office 365 Pro Plus offer include a Skype license?
-
-Office 365 Pro Plus does not contain a Skype license. Only Skype for Business software is included.
 
 ///
 

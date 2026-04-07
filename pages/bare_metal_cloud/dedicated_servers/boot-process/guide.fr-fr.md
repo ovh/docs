@@ -18,7 +18,18 @@ Les serveurs dédiés OVHcloud utilisent un processus de démarrage réseau (net
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
-- Un accès à l'[espace client OVHcloud](/links/manager) ou à l'[API OVHcloud](/links/api)
+- Un accès à l'[API OVHcloud](/links/api) (facultatif)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 

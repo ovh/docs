@@ -1,12 +1,8 @@
 ---
 title: 'Zarządzanie instancjami Public Cloud'
 excerpt: 'Dowiedz się, jak zarządzać instancjami Public Cloud w Panelu klienta OVHcloud'
-updated: 2025-04-28
+updated: 2026-02-24
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -18,126 +14,164 @@ Możesz zarządzać instancjami Public Cloud w [Panelu klienta OVHcloud](/links/
 
 - Projekt [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
 - Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) w Twoim projekcie
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
-
 ### Korzystanie z interfejsu zarządzania instancjami
 
-Kliknij `Instancje`{.action} w menu po lewej stronie. 
-
-![public-cloud](images/compute-2025.png){.thumbnail}
+Kliknij `Instancje`{.action} w menu po lewej stronie.
 
 Strona ta zawiera listę wszystkich instancji Public Cloud i niektórych ich właściwości:
 
-- ID instancji, wymagane dla niektórych połączeń API;
+- ID instancji, wymagane dla niektórych wywołań API;
 - lokalizacja centrum danych, czyli region instancji;
 - model instancji;
 - obraz, czyli system operacyjny zainstalowany na instancji;
 - adres IPv4 instancji;
 - adres prywatny aktualnie przypisany do instancji;
 - dodatkowe wolumeny (dyski) aktualnie przypisane do instancji;
-- status instancji, wskazujący, czy jest ona `włączona`.
+- status instancji, wskazujący, czy jest ona w stanie `Włączona`.
 
 ### Opcje zarządzania na dashboardzie instancji
 
-Na stronie z interfejsem zarządzania instancjami kliknij nazwę instancji.
+Na stronie zarządzania instancjami kliknij nazwę odpowiedniej instancji.
 
-Wybierz odpowiednią opcję w polu po lewej stronie "Zarządzanie".
+Wyświetli się strona `Informacje ogólne`, która zawiera główne szczegóły i stan operacyjny Twojej instancji (status, zasoby, sieć, dostęp i metadane).
 
-![public-cloud](images/management.png){.thumbnail}
-
-Działania te są również dostępne na stronie z interfejsem zarządzania instancjami, jeśli klikniesz przycisk `...`{.action} w tabeli.
+Niektóre z tych operacji są również dostępne na stronie zarządzania instancjami po kliknięciu przycisku `...`{.action} w tabeli.
 
 #### Edycja konfiguracji instancji
 
-Kliknij `Edytuj`{.action}.
+Kliknij `Zmień obraz`{.action} lub otwórz `Dodatkowe działania`{.action} i wybierz `Edytuj`{.action}.
 
-Na nowej stronie, która się wyświetla pojawi zmieniona wersja opcji [tworzenia instancji](/pages/public_cloud/compute/public-cloud-first-steps), w której możesz zmienić następujące elementy:
+Na nowej stronie wyświetli się zmodyfikowana wersja opcji [tworzenia instancji](/pages/public_cloud/compute/public-cloud-first-steps), w której możesz zmienić następujące elementy:
 
-- **Zmień nazwę**: możesz nadać instancji nazwę, aby ułatwić jej identyfikację.
-- **Zmień obraz**: możesz wybrać inny system operacyjny dla instancji (pamiętaj, że reinstalacja instancji spowoduje usunięcie wszystkich zawartych w niej danych).
-- **Zmień model**: możesz zmienić model instancji. Więcej informacji na temat opcji znajdziesz w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#model).
-- **Zmień okres fakturowania**: możesz zmienić okres fakturowania instancji z godzinowego na miesięczny. Więcej informacji znajdziesz w [tym przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
+- **Zmiana nazwy instancji**: możesz nadać instancji nazwę, aby ułatwić jej identyfikację.
+- **Zmiana obrazu**: możesz wybrać inny system operacyjny dla instancji (pamiętaj, że reinstalacja instancji spowoduje usunięcie wszystkich zawartych w niej danych).
+- **Zmiana modelu**: możesz zmienić model instancji. Więcej informacji na temat opcji znajdziesz w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#model).
+- **Zmiana typu rozliczenia**: możesz zmienić okres rozliczeniowy instancji z godzinowego na miesięczny. Więcej informacji znajdziesz w [tym przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
-#### Utwórz kopię zapasową instancji
+#### Tworzenie kopii zapasowej instancji
 
 Kliknij `Utwórz kopię zapasową`{.action}.
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Tworzenie kopii zapasowej instancji](/pages/public_cloud/compute/save_an_instance)". 
-
-#### Utwórz automatyczny backup instancji
-
-Kliknij `Utwórz automatyczną`{.action} kopię zapasową.
-
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Tworzenie kopii zapasowej instancji](/pages/public_cloud/compute/save_an_instance#tworzenie-zautomatyzowanych-kopii-zapasowych-instancji)".
-
-#### Zatrzymanie instancji
-
-Kliknij przycisk `Zatrzymaj`{.action}.
-
-Spowoduje to przełączenie instancji w stan `Wyłączona`, ale nadal będzie naliczana ta sama cena za instancję. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zatrzymaj-suspend-instancje)".
-
-Kliknij `Uruchom`{.action}, aby ponownie włączyć instancję.
-
-#### Korzystanie z trybu Rescue
-
-Kliknij `Zrestartuj w trybie Rescue`{.action}.
-
-Uruchomi to tryb Rescue dla instancji. Aby uzyskać szczegółowe informacje, zapoznaj się z przewodnikiem [Jak aktywować tryb ratunkowy na instancji Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
-
-#### Restart instancji 
-
-> [!warning]
-> Opcja uruchamiania bez wykonaj restart programowy (soft) nie jest aktualnie dostępna dla instancji Metal.
->
-
-- Kliknij przycisk `Wykonaj restart programowy (soft)`{.action}, aby wykonać restart programowy.
-- Kliknij `Wykonaj restart sprzętowy (hard)`{.action}, aby rozpocząć reboot na poziomie sprzętowym.
-
-Potwierdź zlecenie restartu w oknie, które się wyświetli.
-
-#### Zawieś (*shelve*) instancję
-
-Kliknij `Zawieś`{.action}.
-
-Wówczas instancja stanie się "*shelved*" wyświetlanym tutaj jako `Zawieszona`. Zapoznaj się z przewodnikiem "[Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zawies-shelve-instancje)", aby uzyskać więcej informacji na temat różnych stanów zawieszenia instancji.
-
-Kliknij `Reaktywuj`{.action}, aby przywrócić stan `Włączona` instancji.
-
-#### Reinstalacja instancji 
-
-Kliknij `Reinstalacja`{.action}.
-
-Operacja ta spowoduje ponowną instalację instancji za pomocą tego samego systemu operacyjnego, pod warunkiem, że obraz jest zawsze obsługiwany.
-
-Pamiętaj, że reinstalacja **usuwa wszystkie dane** aktualnie przechowywane na Twojej instancji.
+Więcej informacji znajdziesz w naszym przewodniku [Tworzenie kopii zapasowej instancji](/pages/public_cloud/compute/save_an_instance).
 
 #### Usuwanie instancji
 
 Kliknij `Usuń`{.action}.
 
-Operacja ta spowoduje definitywne usunięcie instancji oraz wszystkich jej danych.
+Ta operacja definitywnie usunie instancję i wszystkie przechowywane na niej dane.
 
-Potwierdź zlecenie usunięcia w oknie, które się wyświetli.
+Potwierdź usunięcie w oknie, które się wyświetli.
 
 > [!warning]
-> Usunięcie instancji nie powoduje automatycznego usunięcia wszystkich powiązanych z nią opcji (storage, snapshot, backup, itp...). Upewnij się, że wszystkie inne opcje powiązane z instancją również zostały usunięte, dzięki czemu przestaniesz być fakturowany.
+> Usunięcie instancji nie powoduje automatycznego usunięcia wszystkich powiązanych z nią opcji (storage, snapshot, backup, itp...). Upewnij się, że wszystkie inne opcje powiązane z instancją również zostały usunięte, aby przestać być fakturowanym.
 >
+
+#### Przypisanie wolumenu
+
+Kliknij `Przypisz wolumen`{.action}.
+
+Wybierz wolumen, który chcesz powiązać z instancją, a następnie kliknij `Potwierdź`{.action}. Po przyłączeniu wolumen jest natychmiast dostępny i może zostać zamontowany z poziomu systemu operacyjnego instancji.
+
+#### Zmiana rewersu DNS
+
+Kliknij `⋮`{.action}, a następnie `Zmień rewers DNS`{.action}.
+
+Więcej informacji znajdziesz w przewodniku [Konfiguracja rewersu DNS instancji](/pages/public_cloud/compute/setup_instance_reverse).
+
+#### Konfiguracja zapory
+
+Kliknij `⋮`{.action}, a następnie `Konfiguracja zapory`{.action}.
+
+Więcej informacji znajdziesz w przewodniku [Aktywacja i konfiguracja Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+
+#### Zarządzanie prywatnymi sieciami
+
+Kliknij `⋮`{.action}, a następnie `Zarządzaj prywatnymi sieciami`{.action}.
+
+Więcej informacji znajdziesz w przewodniku [Tworzenie sieci prywatnej z bramą Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
+
+#### Przypisanie sieci
+
+Kliknij `⋮`{.action}, a następnie `Przypisz sieć`{.action}.
+
+Wybierz odpowiednią sieć z listy rozwijanej, a następnie kliknij `Potwierdź`{.action}.
+
+#### Dodatkowe działania
+
+Kliknij `Dodatkowe działania`{.action}
+
+##### Tworzenie automatycznej kopii zapasowej instancji
+
+Kliknij `Utwórz automatyczną kopię zapasową`{.action}.
+
+Więcej informacji znajdziesz w naszym przewodniku [Tworzenie kopii zapasowej instancji](/pages/public_cloud/compute/save_an_instance#tworzenie-zautomatyzowanych-kopii-zapasowych-instancji).
+
+##### Zatrzymanie instancji
+
+Kliknij `Zatrzymaj`{.action}.
+
+Spowoduje to przełączenie instancji w stan `Wyłączona`, ale nadal będziesz obciążany tą samą ceną za instancję. Więcej informacji znajdziesz w naszym przewodniku [Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zatrzymaj-suspend-instancje).
+
+Kliknij `Uruchom`{.action}, aby ponownie aktywować instancję.
+
+##### Korzystanie z trybu Rescue
+
+Kliknij `Restartuj w trybie Rescue`{.action}.
+
+Operacja ta aktywuje tryb Rescue dla instancji. Więcej informacji znajdziesz w naszym przewodniku [Jak aktywować tryb ratunkowy na instancji Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
+
+##### Restart instancji
+
+> [!warning]
+> Opcja restartu programowego (soft) nie jest aktualnie dostępna dla instancji Metal.
+>
+
+- Kliknij `Restart programowy (soft)`{.action}, aby wykonać restart na poziomie oprogramowania.
+- Kliknij `Restart sprzętowy (hard)`{.action}, aby wykonać restart na poziomie sprzętowym.
+
+Potwierdź zlecenie restartu w oknie, które się wyświetli.
+
+##### Zawieszenie (*shelve*) instancji
+
+Kliknij `Zawieś`{.action}.
+
+Spowoduje to przejście instancji w stan „*shelved*", wyświetlany tutaj jako `Zawieszona`. Więcej informacji na temat różnych stanów zawieszenia instancji znajdziesz w naszym przewodniku [Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zawies-shelve-instancje).
+
+Kliknij `Reaktywuj`{.action}, aby przywrócić stan `Włączona` instancji.
+
+##### Reinstalacja instancji
+
+Kliknij `Reinstalacja`{.action}.
+
+Operacja ta spowoduje ponowną instalację instancji z tym samym systemem operacyjnym, pod warunkiem że obraz jest nadal obsługiwany.
+
+Pamiętaj, że reinstalacja **usuwa wszystkie dane** aktualnie przechowywane na Twojej instancji.
 
 ### Dostęp do konsoli VNC <a name="accessvnc"></a>
 
-Kliknij `Instancje`{.action} w menu po lewej stronie. Na stronie z interfejsem zarządzania instancjami kliknij nazwę instancji w tabeli.
+Kliknij `Instancje`{.action} w menu po lewej stronie. Na stronie zarządzania instancjami kliknij nazwę instancji w tabeli.
 
-Następnie kliknij kartę `Konsola VNC`{.action}.
+Przejdź z dashboardu na kartę `Konsola VNC`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-Konsola VNC zapewnia bezpośredni dostęp do Twojej instancji. Aby dostęp ten działał, najpierw skonfiguruj nazwę użytkownika i hasło dla instancji. 
+Konsola VNC zapewnia bezpośredni dostęp do Twojej instancji. Aby ten dostęp działał, musisz najpierw skonfigurować nazwę użytkownika i hasło na instancji.
 
-Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console)".
+Więcej informacji o wymaganych krokach znajdziesz w naszym przewodniku [Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console).
 
 ## Sprawdź również
 

@@ -1,26 +1,31 @@
 ---
 title: 'Gérer la facturation de vos comptes Exchange'
 excerpt: 'Découvrez comment gérer la facturation de votre service Exchange'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Objectif
 
-Les services Hosted Exchange et Private Exchange disposent d'une gestion flexible concernant la facturation des comptes. Ce guide vous détaille comment la configurer.
+Le service Hosted Exchange dispose d'une gestion flexible concernant la facturation des comptes. Ce guide vous détaille comment la configurer.
 
 **Découvrez comment gérer les abonnements de vos comptes Exchange.**
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir souscrit une offre [Exchange](/links/web/emails-hosted-exchange).
 
-## En pratique
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## En pratique
 
 ### Hosted Exchange
 
@@ -59,28 +64,6 @@ Pour supprimer un compte de votre plateforme Hosted, il faut d'abord le résilie
 Après résiliation, le compte sera suspendu à sa date d'expiration. Si vous souhaitez supprimer l'adresse e-mail hébergée par le compte avant sa date d'expiration, réinitialisez celui-ci.
 
 Dirigez-vous dans l'onglet `Comptes e-mail`{.action} de votre plateforme puis cliquez sur le bouton `...`{.action} devant le compte concerné et enfin cliquez sur `Réinitialiser`{.action}. Après réinitialisation, le compte restera vierge jusqu'à son expiration.
-
-### Private Exchange
-
-> [!primary]
->
-> Sur une plateforme Private Exchange, les comptes sont uniquement en renouvellement mensuel. Il n'y a pas de périodicité à configurer.
-
-#### Commander des comptes supplémentaires
-
-Dirigez-vous dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Actions`{.action} en haut à gauche puis cliquez sur `Ajouter un compte`{.action}. Le compte sera facturé pour le mois en cours.
-
-![billing_exchange](images/billing-exchange-06.png){.thumbnail}
-
-#### Supprimer des comptes
-
-> [!warning]
->
-> Pour pouvoir supprimer un compte e-mail sur une plateforme Private Exchange, **il est nécessaire que celui-ci ait été créé** (attaché à un nom de domaine de votre plateforme Exchange). Un compte non-configuré ne peut pas être supprimé.
-
-Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur `...`{.action} à droite du compte concerné puis cliquez sur `Supprimer`{.action}. Le compte sera immédiatement retiré de la plateforme, il n'y a pas de résiliation à effectuer.
-
-![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
 ### Résilier la plateforme
 

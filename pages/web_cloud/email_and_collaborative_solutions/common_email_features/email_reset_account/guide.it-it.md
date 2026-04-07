@@ -4,7 +4,6 @@ excerpt: Come eliminare o reimpostare un indirizzo email sul servizio di posta
 updated: 2026-02-19
 ---
 
-
 ## Obiettivo
 
 Vuoi:
@@ -22,8 +21,42 @@ Vuoi:
     - [**Exchange**](/links/web/emails-exchange).
     - [**Email Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
-- Disporre delle informazioni di connessione agli account email interessati
+- Essere il contatto amministratore del servizio email interessato.
+- Disporre delle informazioni di connessione agli account email interessati.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+**Zimbra:**
+
+- **Link diretto:** [Zimbra](/links/control-panel/web-zimbra)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 <a name="whichmxplan"></a>
 
@@ -53,10 +86,6 @@ Seleziona la scheda corrispondente al tuo servizio di posta:
 >>
 >> Per identificare la tecnologia email associata al tuo servizio MX Plan, fai riferimento alla sezione "[Identificare la tecnologia email della tua offerta MX Plan](#whichmxplan)" di questa guida.
 >>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Clicca su `MX Plan`{.action}.
->> 1. Seleziona il dominio.
 >> 1. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti.
 >> 1. Clicca sul pulsante `...`{.action} a destra dell'account da modificare e poi clicca su `Elimina l'account`{.action}.
 >>
@@ -66,10 +95,6 @@ Seleziona la scheda corrispondente al tuo servizio di posta:
 >>
 >> Per identificare la tecnologia email associata al tuo servizio MX Plan, fai riferimento alla sezione "[Identificare la tecnologia email della tua offerta MX Plan](#whichmxplan)" di questa guida.
 >>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Clicca su `MX Plan`{.action}.
->> 1. Seleziona il dominio.
 >> 1. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti.
 >> 1. Clicca sul pulsante `...`{.action} a destra dell'account da modificare e poi clicca su `Reimposta questo account`{.action}.
 >>
@@ -77,10 +102,6 @@ Seleziona la scheda corrispondente al tuo servizio di posta:
 >>
 > **Email Pro**
 >>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Clicca su `Email Pro`{.action}.
->> 1. Seleziona la piattaforma interessata.
 >> 1. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti.
 >> 1. Clicca sul pulsante `...`{.action} a destra dell'account da modificare e poi clicca su `Reimposta questo account`{.action}.
 >>
@@ -90,10 +111,6 @@ Seleziona la scheda corrispondente al tuo servizio di posta:
 >>
 > **Exchange**
 >>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
->> 1. Seleziona la piattaforma interessata.
 >> 1. Clicca sulla scheda `Account email`{.action}.
 >> 1. Clicca sul pulsante `...`{.action} a destra dell'account da modificare e poi clicca su `Reimposta`{.action}.
 >>
@@ -103,9 +120,6 @@ Seleziona la scheda corrispondente al tuo servizio di posta:
 >>
 > **Zimbra STARTER/PRO**
 >>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Clicca su `Zimbra Mail`{.action}.
 >> 1. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti.
 >> 1. Clicca sul pulsante `⋮`{.action} a destra dell'account da modificare e poi clicca su `Elimina`{.action}.
 >>

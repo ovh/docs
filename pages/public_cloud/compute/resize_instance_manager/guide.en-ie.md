@@ -1,14 +1,14 @@
 ---
 title: Resize an instance via the OVHcloud Control Panel
-excerpt: "Find out how to resize an instance in the OVHcloud Manager"
-updated: 2025-04-28
+excerpt: "Find out how to resize a Public Cloud instance from the OVHcloud Control Panel"
+updated: 2026-03-04
 ---
 
 ## Objective
 
-As a result of increased activity, or simply new needs, your instance may not be able to meet this new burden due to a lack of resources. However, with the Public Cloud, you can increase the resources available to your instance, and this can be done with just a few clicks.
+If your instance lacks resources due to increased activity or new needs, you can increase its resources in just a few clicks with the Public Cloud.
 
-**This guide will show you how to resize your instance in your OVHcloud Control Panel.**
+**This guide explains how to resize your instance from the OVHcloud Control Panel.**
 
 > [!warning]
 >
@@ -24,56 +24,64 @@ As a result of increased activity, or simply new needs, your instance may not be
 ## Requirements
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
-- [Access to the OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log into the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu. Click on `...`{.action} in the row of the instance concerned and select `Edit`{.action}.
+Click on `Instances`{.action} in the left-hand menu.
 
-![public-cloud](images/editinstance.png){.thumbnail}
+Click on `...`{.action} to the right of the instance, and select `Edit`{.action}. You can also access this action from the instance details by clicking on its name, then on `Modify model`{.action}.
 
 In the new tab, scroll down to the **Template** section to select the model of your choice.
 
-![public-cloud](images/template.png){.thumbnail}
-
 > [!primary]
 >
-> For classic models, you can switch to any flavor that have a similar or bigger disk. You can't switch to a model with a smaller disk.<br/>
+> For classic models, you can switch to any flavor that has a similar or bigger disk. You can't switch to a model with a smaller disk.<br/>
 >
-> Only **Flexible instances** can be upgraded and downgraded while maintaining a fix disk size of 50GB.
+> Only **Flexible instances** can be upgraded and downgraded while maintaining a fixed disk size of 50GB.
 >
 
-If your disk is equal or smaller to 50GB, you can switch to a `Flexible instance`{.action} if desired.
+If your disk is equal to or smaller than 50GB, you can switch to a `Flexible instance`{.action} if desired.
 
 > [!warning]
-> Note that in case you are editing a flex instance, it is not possible to revert to a classic instance via the control panel. For more information, please consult our guide on [Revert a flex instance](/pages/public_cloud/compute/revert_a_flex_instance).
+> If you are editing a flex instance, you cannot revert to a classic instance via the Control Panel. For more information, consult the guide on [Revert a flex instance](/pages/public_cloud/compute/revert_a_flex_instance).
 >
 
 Once the selection has been made, click on `Modify template`{.action} to confirm your choice.
 
 ### Resizing a disk in Windows
 
-When performing a resize for a Windows Instance, please note that the partition size is not automatically updated, so you will have to extend it using the **disk manager**:
+When performing a resize for a Windows Instance, the partition size is not automatically updated. You must extend it using the **disk manager**:
 
 - Right-click on the `Start`{.action} menu and launch the disk manager by clicking on `Disk Management`{.action}:
 
-![public-cloud](images/2980.png){.thumbnail}
+![Windows Start menu context menu with Disk Management option](images/2980.png){.thumbnail}
 
 - Right-click on the main partition, then click on `Extend Volume`{.action}.
 
-![public-cloud](images/2981a.png){.thumbnail}
+![Right-click on main partition to extend volume](images/2981a.png){.thumbnail}
 
 - In the `Extend Volume Wizard` menu, click on `Next`{.action} to proceed. In the next tab, choose the disk resources to extend and click on `Next`{.action}. 
 
-![public-cloud](images/2978a.png){.thumbnail}
+![Extend Volume Wizard showing disk resources selection](images/2978a.png){.thumbnail}
 
 Once done, click on `Finish`{.action} to confirm your choice.
 
-![public-cloud](images/wizard2021.png){.thumbnail}
+![Extend Volume Wizard completion step](images/wizard2021.png){.thumbnail}
 
 - The new disk size will then be displayed in the disk manager.
 
-![public-cloud](images/2979.png){.thumbnail}
+![Disk manager displaying the new disk size](images/2979.png){.thumbnail}
 
 ## Go further
 

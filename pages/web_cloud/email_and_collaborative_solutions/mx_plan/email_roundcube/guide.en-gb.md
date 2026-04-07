@@ -30,6 +30,17 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 >
 > ![MX Plan](images/technology-email.png){.thumbnail .w-500}
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Instructions
 
 **Summary**

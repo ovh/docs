@@ -32,6 +32,17 @@ This guide explains how to upgrade your OVHcloud Cloud Disk Array (CDA) cluster 
 - A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
 - Access to the [OVHcloud API](/links/api)
 
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
+
 > [!success]
 > If you are not familiar with the OVHcloud API, read our [First Steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps) guide.
 
@@ -83,8 +94,6 @@ You can retrieve it via the OVHcloud Control Panel or the following API call:
 >> This will return a list of your CDA services. Each service is identified by a UUID, for example 48e5f77f-427b-4261-9799-7861033659fb.
 >>
 > Via the OVHcloud Control Panel
->> First, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Bare Metal Cloud`{.action} section. Click the `Platforms and services`{.action} section then the `ceph-cluster`{.action} service.
->>
 >> In the `Details`, locate the `ID` field. This value is your CDA service name.
 >>
 >> ![Ceph details](images/ceph_details.png){.thumbnail}

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Integration with Hugging Face Inference Providers
 excerpt: Find out how to use OVHcloud AI Endpoints through Hugging Face Inference Providers
-updated: 2026-02-16
+updated: 2026-03-27
 ---
 
 > [!primary]
@@ -96,7 +96,7 @@ You can also use your OVHcloud AI Endpoints API key directly for billing through
 
 #### Python - using OpenAI SDK
 
-Here's a simple usage example using the Hugging Face Hub SDK:
+Here's a simple usage example using the OpenAI SDK:
 
 ```python
 import os
@@ -131,10 +131,12 @@ print(completion.choices[0].message.content)
 Alternatively, use the native Hugging Face Hub client:
 
 ```python
-import os
 from huggingface_hub import InferenceClient
 
-client = InferenceClient()
+client = InferenceClient(
+  provider="ovhcloud",
+  api_key=os.environ["HF_TOKEN"]
+)
 
 completion = client.chat.completions.create(
     model="openai/gpt-oss-120b:ovhcloud",

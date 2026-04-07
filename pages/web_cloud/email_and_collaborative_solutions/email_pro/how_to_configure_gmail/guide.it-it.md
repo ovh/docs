@@ -31,6 +31,17 @@ Gli account Email Pro possono essere configurati su client o applicazioni di pos
 - Disporre delle credenziali associate all’account Email Pro da configurare
 - Disporre delle credenziali associate all’account Gmail su cui configurare l’account Email Pro OVH
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Questa guida è stata realizzata utilizzando l’ultima interfaccia di Gmail. Le immagini mostrate potrebbero differire leggermente dalla tua versione, ma gli step da seguire sono gli stessi.
@@ -44,12 +55,7 @@ Gli account Email Pro possono essere configurati su client o applicazioni di pos
 >
 > Nel nostro esempio abbiamo utilizzato come nome del server "pro?.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-> 1. Accedi alla sezione `Web Cloud`{.action}.
-> 1. Clicca su `Email Pro`{.action}.
-> 1. Seleziona la piattaforma interessata. 
-> 1. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
->
+> Clicca su [questo link](/links/control-panel/web-email-pro) per accedere alla sezione `Email Pro`{.action}. Il nome del server viene visualizzato nella zona **Connessione** della scheda `Informazioni generali`{.action}.
 
 Accedi tramite browser all’interfaccia Web di Gmail, inserisci le credenziali del tuo account ed effettua il login.
 

@@ -12,8 +12,18 @@ Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre a
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d’une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](/links/web/hosting), l’[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable) ou l’offre MX Plan commandée séparément.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique
 
@@ -23,11 +33,7 @@ Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre a
 
 ### Création d'une réponse automatique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
-1. Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
+Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
 
 Vous serez redirigé vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des réponses automatiques e-mail en place sur votre offre e-mail.
 
@@ -39,14 +45,14 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations 
 
 - `Type de répondeur`:
 
-**Associé à une boite e-mail** : à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
-**Libre** : à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
+    - **Associé à une boîte e-mail** : à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
+    - **Libre** : à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
 
 - `Boîte email` ou `Nom du répondeur`: l'adresse e-mail ou l'alias concerné par la réponse automatique.
 - `Durée du répondeur`:
     - **Temporaire** : définissez une date de début et de fin à prendre en compte pour le fonctionnement de votre réponse automatique (utile si vous partez en congé par exemple).
     - **Permanent** : la réponse automatique fonctionnera tant que vous ne l'aurez pas désactivée.
-- `Envoyer une copie` ou `Garder les messages sur le serveur`: permets de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les conserver sur l'adresse e-mail.
+- `Envoyer une copie` ou `Garder les messages sur le serveur`: permet de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les conserver sur l'adresse e-mail.
 
 > [!warning]
 >
@@ -67,7 +73,7 @@ Lorsque votre réponse automatique a été créée, elle apparaît dans la liste
 
 ![hosting](images/email_responder02.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

@@ -16,6 +16,17 @@ Ce guide explique comment migrer vos données d’un volume Block Storage standa
 - Un volume Block Storage existant (source)
 - Un accès administrateur (root ou sudo) à votre instance
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## En pratique
 
 ### Etape 1 : Créer un volume LUKS

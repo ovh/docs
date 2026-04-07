@@ -1,5 +1,6 @@
 ---
-title: Branchements IP5000
+title: "Branchements IP5000"
+excerpt: "Apprenez comment brancher votre pieuvre IP5000 avec ou sans alimentation POE pour la connecter à votre réseau"
 flag: hidden
 updated: 2018-03-26
 ---
@@ -7,10 +8,6 @@ updated: 2018-03-26
 ------------------------------------------------------------------------
 
 **Sommaire :**
-
-****
-
-****
 
 **Niveau : Débutant**
 
@@ -20,7 +17,7 @@ updated: 2018-03-26
 
 La pieuvre IP5000 peut fonctionner sans alimentation si vous possédez un switch POE. Il suffit pour cela de brancher le câble RJ45 sur le port **LAN** de la pieuvre.
 
-![](images/ip5k-lan.png){.thumbnail}
+![Branchement du câble RJ45 sur le port LAN de l'IP5000](images/ip5k-lan.png){.thumbnail}
 
 Une fois branchée, l'écran de la pieuvre doit s'allumer.
 
@@ -30,7 +27,7 @@ Une fois branchée, l'écran de la pieuvre doit s'allumer.
 
 Vous pouvez acheter l'alimentation pour la pieuvre en accessoire. Si c'est le cas, le branchement est alors différent :
 
-![](images/ip5000power.png){.thumbnail}
+![Schéma de branchement de l'IP5000 avec alimentation](images/ip5000power.png){.thumbnail}
 
 1.  Raccordez votre câble Ethernet sur le port **LAN** de votre pieuvre.
 2.  Raccordez l'extrémité de votre câble Ethernet sur le port RJ45 de l'alimentation.
@@ -38,3 +35,6 @@ Vous pouvez acheter l'alimentation pour la pieuvre en accessoire. Si c'est le ca
 4.  Branchez le connecteur de l'alimentation sur le câble Ethernet de l'alimentation.
 5.  Branchez la prise électrique sur circuit.
 
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

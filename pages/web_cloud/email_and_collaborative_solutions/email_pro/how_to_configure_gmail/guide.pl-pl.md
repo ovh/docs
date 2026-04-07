@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Skonfiguruj swoje konto e-mail w interfejsie online programu pocztowego Gmail'
+title: 'E-mail Pro - Skonfiguruj swoje konto e-mail w interfejsie online programu pocztowego Gmail'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w interfejsie online programu pocztowego Gmail'
 updated: 2025-12-31
 ---
@@ -31,6 +31,17 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - Dane do logowania do konta E-mail Pro, które chcesz skonfigurować
 - Dane do konta Gmail, w którym chcesz skonfigurować konto E-mail Pro OVHcloud
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Niniejszy przewodnik został przygotowany w oparciu o nowy interfejs Gmail. Nawet jeśli elementy graficzne nieznacznie różnią się od Twojej wersji, instrukcje postępowania pozostają takie same.
@@ -44,12 +55,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 >
 > W przewodniku używamy oznaczenia serwera: pro?.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 >
-> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `Email Pro`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
->
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera wyświetla się w strefie **Połączenie** w zakładce `Informacje ogólne`{.action}.
 
 Przed rozpoczęciem operacji przejdź do interfejsu online programu Gmail, korzystając z Twojej przeglądarki internetowej. Wprowadź Twoje dane identyfikacyjne przypisane do konta Gmail, a następnie zaloguj się.
 

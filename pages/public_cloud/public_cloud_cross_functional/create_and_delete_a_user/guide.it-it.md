@@ -17,13 +17,23 @@ Dall’interfaccia Horizon, è possibile impostare una password per ogni utente.
 ## Prerequisiti
 
 - Un progetto [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
 ### Crea un utente OpenStack
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato. Clicca su `Utenti e ruoli`{.action} nel menu a sinistra sotto **Impostazioni**. 
+Clicca su `Utenti e ruoli`{.action} nel menu a sinistra sotto **Impostazioni**.
 
 Clicca sul pulsante `Crea un utente`{.action}.
 
@@ -79,7 +89,7 @@ Ricorda che la modifica della password dell’account utente comporta l’annull
 
 ### Elimina l'utente OpenStack
 
-L'utente OpenStack viene eliminato dallo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Utenti e ruoli`{.action} nel menu a sinistra sotto **Impostazioni**. 
+Clicca su `Utenti e ruoli`{.action} nel menu a sinistra sotto **Impostazioni**.
 
 ![public-cloud](images/delete.png){.thumbnail}
 

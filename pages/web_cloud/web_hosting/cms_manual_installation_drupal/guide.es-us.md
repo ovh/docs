@@ -30,7 +30,6 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
 - Disponer de un [dominio](/links/web/domains)
-- Estar conectado al [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 

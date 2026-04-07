@@ -11,7 +11,17 @@ This guide shows you how to create an IP ACL to allow access to your Ceph cluste
 ## Requirements
 
 - A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
 
 ## Instructions
 
@@ -22,9 +32,7 @@ This guide shows you how to create an IP ACL to allow access to your Ceph cluste
 
 ### Using the OVHcloud Control Panel
 
-First, log in to your [OVHcloud Control Panel](/links/manager) and click on `Bare Metal Cloud`{.action}. In the section called `STORAGE AND BACKUPS`, click the `Cloud Disk Array`{.action} service.
-
-Here you'll find the existing ACL in `IP access control`{.action}, by default there is no ACL.
+On your Cloud Disk Array service page, go to the `IP Access Control`{.action} tab. By default, there is no ACL.
 
 ![Ceph pools](images/ceph-add-ip-1.png){.thumbnail}
 

@@ -38,6 +38,7 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 - Holder contact information must be up to date in the [Whois](https://www.nominet.uk/whois) data of the domain name.
 - You are able to obtain the authorisation code that will be sent to the domain name holder's email address.
 
+
 > [!primary]
 >
 > The **Redemption** period is a maximum of 90 days from the day the domain name expires. In the case of a transfer, this period allows you to restore the domain name and thus unblock the ability to transfer it.

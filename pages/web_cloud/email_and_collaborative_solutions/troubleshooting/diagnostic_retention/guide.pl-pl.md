@@ -1,7 +1,7 @@
 ---
 title: Przywróć usunięte elementy konta e-mail
 excerpt: Dowiedz się, jak przywrócić usunięte elementy z konta e-mail poprzez Webmail (OWA)
-updated: 2022-02-08
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie

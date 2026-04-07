@@ -1,7 +1,7 @@
 ---
 title: Resetting an OVHcloud Managed Kubernetes cluster
 excerpt: Find out how to reset an OVHcloud Managed Kubernetes cluster
-updated: 2023-03-23
+updated: 2026-02-25
 ---
 
 <style>
@@ -50,13 +50,22 @@ The whole cluster configuration is reset but some values can be defined (optiona
 
 - an OVHcloud Managed Kubernetes cluster
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Reset a Kubernetes cluster on the OVHcloud Control Panel
 
 #### Step 1 - Ask for cluster reset on the OVHcloud Control Panel 
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
@@ -116,7 +125,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 {
   "name": "my-test-cluster",
   "updatePolicy": "ALWAYS_UPDATE",
-  "version": "1.25"
+  "version": "1.34"
 }
 ```
 
@@ -146,7 +155,7 @@ By default, if you don't specify it, the `workerNodesPolicy` option will be equi
   "name": "my-test-cluster",
   "url": "xxxxxx.xx.gra.k8s.ovh.net",
   "nodesUrl": "xxxxxx.nodes.c1.gra.k8s.ovh.net",
-  "version": "1.25.4-2",
+  "version": "1.34.1",
   "nextUpgradeVersions": [],
   "kubeProxyMode": "iptables",
   "customization": {

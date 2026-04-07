@@ -10,9 +10,19 @@ This guide covers the process of starting a simple interactive notebook leveragi
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](/links/manager)
 -   an **AI Training project** created inside a **public cloud** project
 -   a [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

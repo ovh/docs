@@ -1,7 +1,7 @@
 ---
 title: Gestion et reconstruction du RAID logiciel sur les serveurs en mode legacy boot (BIOS)
 excerpt: "Découvrez comment gérer et reconstruire le RAID logiciel après un remplacement de disque sur votre serveur en mode legacy boot (BIOS)"
-updated: 2026-02-02
+updated: 2026-03-02
 ---
 
 <style>
@@ -40,7 +40,7 @@ Pour vérifier si un serveur s'exécute en mode BIOS ou en mode UEFI, exécutez 
 
 - Posséder un [serveur dédié](/links/bare-metal/bare-metal) avec une configuration RAID logiciel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
-- Compréhension du RAID et des partitions
+- Compréhension du RAID et des partitions.
 
 ## En pratique
 
@@ -95,7 +95,7 @@ md4 : active raid1 sda4[0] sdb4[1]
 unused devices: <none>
 ```
 
-Bien que cette commande renvoie nos volumes RAID, elle ne nous indique pas la taille des partitions elles-mêmes. Nous pouvons retrouver cette information avec la commande suivante :
+Bien que cette commande renvoie nos volumes RAID, elle ne nous indique pas la taille des partitions elles-mêmes. Retrouvez cette information avec la commande suivante :
 
 ```sh
 [user@server_ip ~]# sudo fdisk -l
@@ -184,7 +184,7 @@ La partition `sda5` est un [config drive](https://cloudinit.readthedocs.io/en/la
 
 ### Simuler une panne de disque
 
-Maintenant que nous disposons de toutes les informations nécessaires, nous pouvons simuler une panne de disque. Dans cet exemple, nous allons faire échouer le disque `sda`.
+Nous disposons de toutes les informations nécessaires pour simuler une panne de disque. Dans cet exemple, nous allons faire échouer le disque `sda`.
 
 Le moyen privilégié pour y parvenir est l’environnement en mode rescue d’OVHcloud.
 
@@ -255,7 +255,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --manage /dev/
 # mdadm: hot removed /dev/sda4 from /dev/md4
 ```
 
-Pour nous assurer que nous obtenons un disque qui est similaire à un disque vide, nous utilisons la commande suivante. Remplacez **sda** par vos propres valeurs :
+Pour simuler un disque vide, utilisez la commande suivante. Remplacez **sda** par vos propres valeurs :
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ #
@@ -380,7 +380,7 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> sudo sgdisk -R /dev/sdX /dev/sdX
 >> ```
 >>
->> La commande doit être au format suivant : `sgdisk -R /dev/nouveau disque /dev/disque sain`.
+>> La commande doit être au format suivant : `sgdisk -R /dev/nouveau_disque /dev/disque_sain`.
 >>
 > **Pour les partitions MBR**
 >>
@@ -388,7 +388,7 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> [user@server_ip ~]# sudo sfdisk -d /dev/sdX | sfdisk /dev/sdX
 >> ```
 >>
->> La commande doit être au format suivant : `sfdisk -d /dev/disque sain | sfdisk /dev/nouveau disque`.
+>> La commande doit être au format suivant : `sfdisk -d /dev/disque_sain | sfdisk /dev/nouveau_disque`.
 >>
 
 Une fois cette opération effectuée, l'étape suivante consiste à attribuer un GUID aléatoire au nouveau disque afin d'éviter tout conflit avec les GUID d'autres disques :
@@ -406,7 +406,7 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 ```
 
-Vous pouvez simplement exécuter la commande `partprobe`. Si vous ne voyez toujours pas les partitions nouvellement créées (par exemple avec `lsblk`), vous devez redémarrer le serveur avant de continuer.
+Exécutez `partprobe`. Si vous ne voyez toujours pas les partitions nouvellement créées (par exemple avec `lsblk`), vous devez redémarrer le serveur avant de continuer.
 
 Ensuite, nous ajoutons les partitions au RAID :
 
@@ -492,7 +492,7 @@ Puis rechargez le système à l'aide de la commande suivante :
 [user@server_ip ~]# sudo systemctl daemon-reload
 ```
 
-La reconstruction du RAID est maintenant terminée.
+La reconstruction du RAID est terminée.
 
 <a name="rescuemode"></a>
 
@@ -511,7 +511,7 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/sdX /dev/sdX
 >> ```
 >>
->> La commande doit être au format suivant : `sgdisk -R /dev/nouveau disque /dev/disque sain`
+>> La commande doit être au format suivant : `sgdisk -R /dev/nouveau_disque /dev/disque_sain`
 >>
 >> Exemple :
 >>
@@ -525,12 +525,12 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> sudo sfdisk -d /dev/sda | sfdisk /dev/sdb
 >> ```
 >>
->> La commande doit être au format suivant : `sfdisk -d /dev/disque sain | sfdisk /dev/nouveau disque`
+>> La commande doit être au format suivant : `sfdisk -d /dev/disque_sain | sfdisk /dev/nouveau_disque`
 >>
->> Exemple:
+>> Exemple :
 >>
 >> ```sh
->> sudo sfdisk -d /dev/sda /dev/sdb
+>> sudo sfdisk -d /dev/sda | sfdisk /dev/sdb
 >> ```
 
 Une fois cette opération effectuée, l'étape suivante consiste à attribuer un GUID aléatoire au nouveau disque afin d'éviter tout conflit avec les GUID d'autres disques :
@@ -548,9 +548,9 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 ```
 
-Vous pouvez simplement exécuter la commande `partprobe`.
+Exécutez `partprobe`.
 
-Nous pouvons maintenant reconstruire la matrice RAID. L'extrait de code suivant montre comment ajouter les nouvelles partitions (sdb2 et sdb4) dans la matrice RAID.
+Nous pouvons maintenant reconstruire la matrice RAID en ajoutant les nouvelles partitions (sdb2 et sdb4) :
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --add /dev/md2 /dev/sdb2
@@ -594,7 +594,7 @@ Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
 LABEL=swap-sdb4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
 ```
 
-Ensuite, nous montons les répertoires suivants pour nous assurer que toute manipulation que nous faisons dans l'environnement chroot fonctionne correctement :
+Montez ensuite les répertoires suivants pour que l'environnement `chroot` fonctionne correctement :
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ #
@@ -620,7 +620,7 @@ root@rescue12-customer-eu:/# blkid -s UUID /dev/sda4
 root@rescue12-customer-eu:/# blkid -s UUID /dev/sdb4
 ```
 
-Exemple:
+Exemple :
 
 ```sh
 blkid /dev/sda4
@@ -635,7 +635,7 @@ Ensuite, nous remplaçons l'ancien UUID de la partition SWAP (**sdb4**) par le n
 root@rescue12-customer-eu:/# nano /etc/fstab
 ```
 
-Exemple:
+Exemple :
 
 ```sh
 UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
@@ -671,7 +671,7 @@ swapon: /dev/sdb4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/sdb4
 ```
 
-Nous quittons l'environnement `chroot` avec exit et rechargeons le système :
+Nous quittons l'environnement `chroot` avec `exit` et rechargeons le système :
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
@@ -683,7 +683,7 @@ Nous démontons tous les disques :
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
 ```
 
-Nous avons maintenant terminé avec succès la reconstruction du RAID sur le serveur et nous pouvons maintenant le redémarrer en mode normal.
+La reconstruction du RAID est terminée. Redémarrez le serveur en mode normal.
 
 ///
  

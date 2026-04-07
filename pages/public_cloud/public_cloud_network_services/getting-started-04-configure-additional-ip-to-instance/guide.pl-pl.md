@@ -40,11 +40,23 @@ Być może będziesz musiał skonfigurować adresy Additional IP na Twoich insta
 
 ## W praktyce
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 Niniejszy przewodnik zawiera najpopularniejsze konfiguracje dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na logowaniu się do Twojej instancji przez SSH lub poprzez sesję logowania do interfejsu graficznego użytkownika (VNC dla instancji Windows). Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami (administrator/sudo).
 
 > [!primary]
 >
-Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmodyfikować odpowiednią procedurę konfiguracji Twojego interfejsu sieciowego oraz nazw plików. W przypadku trudności zalecamy zapoznanie się z dokumentacją dotyczącą systemu operacyjnego.
+> Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmodyfikować odpowiednią procedurę konfiguracji Twojego interfejsu sieciowego oraz nazw plików. W przypadku trudności zalecamy zapoznanie się z dokumentacją dotyczącą systemu operacyjnego.
 >
 
 **Należy wziąć pod uwagę następującą terminologię, która zostanie użyta w przykładach kodu i instrukcjach zawartych w tym przewodniku:**
@@ -172,7 +184,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >>
 >> Zapisz i zamknij plik.
 >>
->> **Krok 3: zastosować nową konfigurację sieci**
+>> **Krok 3: zastosuj nową konfigurację sieci**
 >>
 >> Możesz przetestować konfigurację za pomocą polecenia:
 >>
@@ -227,9 +239,9 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 > **Fedora / AlmaLinux (10) / Rocky Linux (10)**
 >> Fedora, AlmaLinux 10 & Rocky Linux 10
 >>
->> Te systemy używają plików kluczy. NetworkManager przechowywał wcześniej profile sieciowe w formacie ifcfg w tym katalogu: `/etc/sysconfig/network-scripts/`. Jednak format iffg jest teraz przestarzały. Domyślnie program NetworkManager nie tworzy już profilów w tym formacie. Plik konfiguracyjny znajduje się teraz w `/etc/NetworkManager/system-connections/`.
+>> Te systemy używają plików kluczy. NetworkManager przechowywał wcześniej profile sieciowe w formacie ifcfg w tym katalogu: `/etc/sysconfig/network-scripts/`. Jednak format ifcfg jest teraz przestarzały. Domyślnie program NetworkManager nie tworzy już profilów w tym formacie. Plik konfiguracyjny znajduje się teraz w `/etc/NetworkManager/system-connections/`.
 >>
->> **Krok 1: edycja pliku konfiguracyjnego**
+>> **Krok 1: edytuj plik konfiguracyjny**
 >>
 >> > [!primary]
 >> > Pamiętaj, że nazwa pliku sieciowego w naszym przykładzie może się różnić od Twojej. Dostosuj polecenia do nazwy pliku.
@@ -242,7 +254,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >> Nie zmieniaj istniejących linii w pliku konfiguracyjnym, dodaj Additional IP do pliku w następujący sposób, zastępując `ADDITIONAL_IP/32` własnymi wartościami:
 >>
 >> ```console
->> [IPv4]
+>> [ipv4]
 >> method=auto
 >> may-fail=false
 >> address1=ADDITIONAL_IP/32
@@ -251,19 +263,19 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >> Jeśli masz dwa dodatkowe adresy IP do skonfigurowania, konfiguracja powinna wyglądać następująco:
 >>
 >> ```console
->> [IPv4]
+>> [ipv4]
 >> method=auto
 >> may-fail=false
 >> address1=ADDITIONAL_IP1/32
 >> address2=ADDITIONAL_IP2/32
 >> ```
 >>
->> **Krok 2: restart interfejsu**
+>> **Krok 2: uruchom ponownie interfejs**
 >>
 >> Uruchom ponownie interfejs:
 >>
 >> ```bash
->> systemctl restart Network Manager
+>> sudo systemctl restart NetworkManager
 >> ```
 >>
 > **Plesk**
@@ -275,7 +287,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >>
 >> ![dostęp do zarządzania adresami IP](images/pleskip1.png){.thumbnail}
 >>
->> Kliknij `IP Addresses`{.action} w **Tools & Settings**.
+>> Kliknij `IP Addresses`{.action} pod **Tools & Resources**.
 >>
 >> **Krok 2: dodaj dodatkowe informacje IP**
 >>
@@ -289,14 +301,14 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >>
 >> **Krok 3: sprawdź aktualną konfigurację IP**
 >>
->>  W sekcji "IP Addresses" sprawdź, czy adres Additional IP został poprawnie dodany.
+>> W sekcji "IP Addresses" sprawdź, czy adres Additional IP został poprawnie dodany.
 >>
 >> ![aktualna konfiguracja IP](images/pleskip4-4.png){.thumbnail}
 >>
 > **Windows Server**
 >> Windows Server
 >>
->> W sekcji Public Cloud otwórz `Instances`{.action} w menu po lewej stronie i kliknij nazwę instancji. Przejdź do zakładki `Console VNC`{.action}.
+>> W Twoim projekcie Public Cloud otwórz `Instances`{.action} w menu po lewej stronie i kliknij nazwę instancji. Przejdź do zakładki `Console VNC`{.action}.
 >>
 >> **Krok 1: sprawdź konfigurację sieci**
 >>
@@ -318,9 +330,9 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >>
 >> ![zmień konfigurację IP](images/image2.png){.thumbnail}
 >>
->> W oknie Właściwości IPv4 wybierz `Użyj następującego`{.action} adresu IP. Wpisz adres IP, który otrzymałeś w pierwszym etapie, po czym kliknij `Zaawansowane`{.action}.
+>> W oknie Właściwości IPv4 wybierz `Użyj następującego adresu IP`{.action}. Wpisz adres IP, który otrzymałeś w pierwszym etapie, po czym kliknij `Zaawansowane`{.action}.
 >>
->> **Krok 3: dodać adres Additional IP do zaawansowanych ustawień TCP/IP**
+>> **Krok 3: dodaj adres Additional IP do zaawansowanych ustawień TCP/IP**
 >>
 >> W nowym oknie kliknij `Dodaj...`{.action} pod "Adresy IP". Wpisz adres Additional IP i maskę podsieci (255.255.255.255).
 >>
@@ -349,7 +361,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 
 ### Diagnostyka
 
-Po pierwsze, zrestartuj Twoją instancję za pomocą systemu operacyjnego instancji lub [Panelu client OVHcloud](/links/manager). Jeśli nadal nie możesz utworzyć połączenia między siecią publiczną a Additional IP i podejrzewasz problem z siecią, zrestartuj instancję w [trybie rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). Następnie możesz skonfigurować adres Additional IP bezpośrednio na instancji.
+Po pierwsze, zrestartuj Twoją instancję za pomocą systemu operacyjnego instancji lub [Panelu klienta OVHcloud](/links/manager). Jeśli nadal nie możesz utworzyć połączenia między siecią publiczną a Additional IP i podejrzewasz problem z siecią, zrestartuj instancję w [trybie rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). Następnie możesz skonfigurować adres Additional IP bezpośrednio na instancji.
 
 Po zalogowaniu się do trybu Rescue przez SSH wprowadź następującą komendę:
 
@@ -357,7 +369,7 @@ Po zalogowaniu się do trybu Rescue przez SSH wprowadź następującą komendę:
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Aby przetestować połączenie, wystarczy wysłać ping na adres Additional IP z zewnątrz. Jeśli odpowiada w trybie Rescue, prawdopodobnie oznacza to, że wystąpił błąd w konfiguracji. Jeśli jednak adres IP nadal nie działa, poinformuj o tym zespół pomocy technicznej OVHcloud, wysyłając zgłoszenie serwisowe w [Panelu client OVHcloud](/links/manager).
+Aby przetestować połączenie, wystarczy wysłać ping na adres Additional IP z zewnątrz. Jeśli odpowiada w trybie Rescue, prawdopodobnie oznacza to, że wystąpił błąd w konfiguracji. Jeśli jednak adres IP nadal nie działa, poinformuj o tym zespół pomocy technicznej OVHcloud, wysyłając zgłoszenie serwisowe w [Panelu klienta OVHcloud](/links/manager).
 
 ## Sprawdź również
 

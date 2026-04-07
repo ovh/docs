@@ -1,7 +1,7 @@
 ---
 title: Customizing Kube-proxy on an OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to customize the Kube-proxy configuration on an OVHcloud Managed Kubernetes cluster'
-updated: 2023-03-14
+updated: 2026-02-25
 ---
 
 <style>
@@ -595,7 +595,7 @@ Terraform will perform the following actions:
       - status                      = "READY" -> null
       - update_policy               = "ALWAYS_UPDATE" -> null
       - url                         = "xxxxxx.c1.gra.k8s.ovh.net" -> null
-      - version                     = "1.25" -> null
+      - version                     = "1.34" -> null
 
       - customization_apiserver {
           - admissionplugins {

@@ -36,6 +36,17 @@ On OVHcloud Managed Kubernetes we have deployed a *Upgrade to the next minor ver
 
 - An OVHcloud Managed Kubernetes cluster
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Important information on the upgrading process
 
 Before you launch the upgrade, please back up your cluster’s configuration, and check that your worker tools are compatible with this new version.
@@ -55,9 +66,7 @@ Once the update has been performed, you cannot revert to the previous version.
 
 ### Step 1 - Ask for a minor version upgrade on the OVH Cloud Manager 
 
-1. Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-    Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
+1. Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
     ![Access to the administration UI](images/upgrading-kubernetes-version-000.png){.thumbnail}
 

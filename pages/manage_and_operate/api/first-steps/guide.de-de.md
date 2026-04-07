@@ -232,7 +232,7 @@ Um Schlüssel aufzulisten und zu widerrufen, können Sie die [API-Konsole](/link
 >>
 > OVHcloud Kundencenter
 >>
->> Gehen Sie zum Menü `Identität, Sicherheit und Operationen`{.action} und danach zu `API-Schlüssel`{.action}.
+>> Gehen Sie zur Seite [API-Schlüssel](/links/control-panel/iam-api-keys).
 >>
 >> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>

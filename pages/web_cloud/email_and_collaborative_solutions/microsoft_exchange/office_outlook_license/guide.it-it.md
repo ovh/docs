@@ -18,17 +18,22 @@ Dopo la sottoscrizione, puoi scaricare Outlook tra una delle 3 versioni seguenti
 
 **Questa guida ti mostra come attivare e installare una licenza Outlook sulla tua piattaforma Exchange OVHcloud.**
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 ## Procedura
 
 ### Ordina una licenza Outlook
 
 #### Per un account Hosted Exchange
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
-1. Clicca sull'icona `...`{.action} a destra dell'account e poi su `Ordina una licenza Outlook`{.action}.
 
 ![Outlook](images/order-outlook01.png){.thumbnail}
 
@@ -41,12 +46,6 @@ Dopo aver effettuato l'ordine, utilizza il pulsante `Salda`{.action} per generar
 Attendi qualche istante per la messa a disposizione della tua licenza Outlook nel tuo Spazio Cliente.
 
 #### Per un account Private Exchange
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
-1. Clicca sull'icona `...`{.action} a destra dell'account e poi su `Attiva la licenza Outlook`{.action}.
 
 ![Outlook](images/order-outlook03.png){.thumbnail}
 
@@ -65,7 +64,7 @@ Attendi qualche istante per la messa a disposizione della tua licenza Outlook ne
 
 A questo punto è necessario scaricare il file di installazione di Outlook per la tua macchina.
 
-Dall'interfaccia di gestione della tua piattaforma Exchange, clicca sull'icona `...`{.action} a destra dell'account interessato e poi su `Utilizza la licenza Outlook.`{.action}
+Dall'interfaccia di gestione della tua piattaforma Exchange, clicca sull'icona `...`{.action} a destra dell'account interessato e poi su `Utilizza la licenza Outlook`{.action}.
 
 Scegli la versione nel menu a tendina in base al tuo sistema operativo e la lingua, poi clicca su `Seguente`{.action}
 
@@ -79,16 +78,10 @@ Il file caricato è in formato .ISO, cioè un'immagine disco. Avvia l'installazi
 
 ### Elimina la licenza Outlook dal tuo account
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
-1. Clicca sull'icona `...`{.action} a destra dell'account e poi su `Elimina la licenza Outlook`{.action}
-
 ![Outlook](images/order-outlook07.png){.thumbnail}
 
-Dopo la conferma, ti ricordiamo che la licenza verrà eliminata definitivamente alla data di scadenza
+Dopo la conferma, ti ricordiamo che la licenza verrà eliminata definitivamente alla data di scadenza.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
   
 Contatta la nostra [Community di utenti](/links/community).

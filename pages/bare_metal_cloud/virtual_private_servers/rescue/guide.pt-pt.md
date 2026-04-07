@@ -8,11 +8,11 @@ updated: 2025-01-12
 
 O modo de segurança (*rescue*) é uma ferramenta fornecida pela OVHcloud para iniciar o seu VPS num sistema operativo temporário. Em seguida, você pode acessar seu sistema para executar tarefas de diagnóstico e resolver vários problemas, como por exemplo:
 
-- [Redefinição da palavra-passe do utilizador para recuperar o acesso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnóstico de Problemas de Rede
+- [Redefinir a palavra-passe do utilizador para recuperar o acesso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+- Diagnosticar problemas de rede
 - Reparar um sistema operativo com falha
 - Reparar uma firewall de software mal configurada
-- Teste das performances do disco
+- Testar as performances do disco
 
 Se encontrar um problema com o seu sistema, efetuar verificações em modo rescue permite determinar se ele está associado a um software instalado no VPS ou se existe uma causa mais profunda. Antes de contactar as nossas equipas de suporte, recomendamos que utilize o modo rescue para recolher os resultados dos testes e excluir os erros de software.
 
@@ -25,20 +25,28 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ter o seu [VPS OVHcloud](/links/bare-metal/vps) já configurado.
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](/links/control-panel/baremetal-vps)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Privados Virtuais`{.action} > Selecione o seu VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > A OVHcloud fornece serviços cuja configuração e gestão são da sua responsabilidade. É da sua responsabilidade assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor, recomendamos que contacte um [fornecedor de serviços especializado](/links/partner) ou que contacte a [nossa comunidade](https://community.ovh.com/en/).
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor, recomendamos que contacte um [fornecedor de serviços especializado](/links/partner) ou que contacte a [nossa comunidade](/links/community).
 >
 
 ## Instruções
 
 ### Ativação do modo rescue
-
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 No separador `Acolhimento`{.action}, clique em `...`{.action} junto de "Boot" na zona **O seu VPS**.
 
@@ -144,7 +152,7 @@ Depois de concluir as suas ações em modo rescue, reinicie o VPS em modo normal
 Se ocorrer um erro ao reiniciar um VPS, efetue estes passos:
 
 - Verifique o KVM na Área de Cliente para obter informações pertinentes sobre as razões pelas quais o VPS não pode iniciar. Consulte o nosso [guia KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) para obter ajuda para esta funcionalidade.
-- Se o KVM indicar que o VPS se encontra bloqueado durante o arranque ou não consegue encontrar o disco, certifique-se de que [os logs de arranque estão ativados](/pages/bare_metal_cloud/virtual_private_servers/bootlog_display_kvm). Transfira os logs pertinentes para as nossas equipas de suporte para mais investigações em [criar um pedido de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
+- Se o KVM indicar que o VPS se encontra bloqueado durante o arranque ou não consegue encontrar o disco, certifique-se de que [os logs de arranque estão ativados](/pages/bare_metal_cloud/virtual_private_servers/bootlog_display_kvm). Transfira os logs pertinentes para as nossas equipas de suporte para mais investigações, [criando um pedido de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 <a name="gofurther"></a>
 
@@ -158,4 +166,4 @@ Se ocorrer um erro ao reiniciar um VPS, efetue estes passos:
 
 [Verificar o sistema de ficheiros num VPS](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem)
 
-Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.
+Junte-se à nossa [comunidade de utilizadores](/links/community).

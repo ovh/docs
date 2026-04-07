@@ -8,17 +8,27 @@ updated: 2025-10-21
 
 This tutorial shows how to use **AI Endpoints** in AI Notebooks to get a coding assistant.
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform that provides easy access to world‑renowned pre‑trained AI models. It is simple, secure and intuitive, with data privacy as a top priority. We do not store user data, making it ideal for developers who want to add AI capabilities while keeping data private.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform that provides easy access to world‑renowned pre‑trained AI models. It is simple, secure and intuitive, with data privacy as a top priority. We do not store user data, making it ideal for developers who want to add AI capabilities while keeping data private.
 
 No extensive AI expertise is required, so AI Endpoints is a convenient and secure choice for integrating AI into your applications.
 
-By default you can use our [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) solution in all notebooks without a personal token, but you will be rate‑limited.
+By default you can use our [AI Endpoints](/links/public-cloud/ai-endpoints) solution in all notebooks without a personal token, but you will be rate‑limited.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An AI Notebooks user
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

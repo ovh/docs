@@ -1,5 +1,5 @@
 ---
-title: 'Installer le logiciel POPC'
+title: "Installer le logiciel POPC"
 excerpt: "Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud"
 updated: 2025-04-28
 ---
@@ -8,7 +8,7 @@ updated: 2025-04-28
 
 Le POPC ou « Poste Opérateur PC » est un logiciel qui virtualise un standard téléphonique, idéalement pour le traitement des appels entrants et des transferts internes/externes.
 
-Il se présente sous la forme d'une application, installée sur votre PC sous Windows, qui prend la place d'un téléphone physique. Ainsi vous appelez, décrochez et gérez vos appels non pas en pianotant sur un combiné physique, mais depuis l'application sur votre PC.
+Il remplace un téléphone physique : vous appelez, décrochez et gérez vos appels depuis l'application sur votre PC.
 
 **Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud**
 
@@ -75,7 +75,7 @@ Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://ke
 
 Vous pouvez retrouver le lien de téléchargement du logiciel POPC sur [la page de présentation du logiciel](/links/telecom/telephonie-standard-popc) ou via ce [lien direct](http://www.voiceoperatorpanel.com/priv/VoiceOperatorPanel-OVH-setup.exe).
 
-Comme indiqué sur la page de présentation, il est possible de tester une version d'essai du logiciel POPC. Celle-ci est valable pendant 30 jous à compter de son installation. Au delà de ce délai, l'enregistrement d'une ligne SIP sera automatiquement désactivé.
+Comme indiqué sur la page de présentation, il est possible de tester une version d'essai du logiciel POPC. Celle-ci est valable pendant 30 jours à compter de son installation. Au-delà de ce délai, l'enregistrement d'une ligne SIP sera automatiquement désactivé.
 
 ### Étape 3 : installation de POPC
 

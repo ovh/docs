@@ -17,7 +17,17 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 ## Prérequis
 
 - Posséder une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement Web Cloud](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou une offre MX Plan commandée séparément.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!warning]
 >
@@ -36,11 +46,7 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 > La mise en place d'une délégation sur un compte e-mail le fait apparaître dans [l'espace client](/links/manager) concerné. Pour autant, seules les modifications indiquées dans la section [Objectif](#objective) de ce guide seront possibles dans cette situation.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
-1. Pour afficher la liste des comptes e-mails de votre offre MX Plan, cliquez sur l'onglet `Emails`{.action}.
+Pour afficher la liste des comptes e-mails de votre offre MX Plan, cliquez sur l'onglet `Emails`{.action}.
 
 ![delegation](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -58,11 +64,11 @@ Une nouvelle fenêtre s'affiche. Cliquez sur le bouton `+`{.action} à droite de
 
 Vous pouvez déléguer la gestion de votre service MX Plan à plusieurs identifiants OVHcloud.
 
-### Déléguer un ou plusieurs comptes e-mails a un identifiant
+### Déléguer un ou plusieurs comptes e-mails à un identifiant
 
 Cette délégation vous permet de changer le mot de passe du compte e-mail concerné et de gérer ses filtres.
 
-A droite du compte e-mail que vous souhaitez déléguer, cliquez sur le bouton `...`{.action} puis sur `Gestion de la délégation`{.action}.
+À droite du compte e-mail que vous souhaitez déléguer, cliquez sur le bouton `...`{.action} puis sur `Gestion de la délégation`{.action}.
 
 ![delegation](images/mxplan-delegation-04.png){.thumbnail}
 
@@ -72,7 +78,7 @@ Saisissez l'identifiant OVHcloud qui bénéficiera de cette délégation et vali
 
 Il est possible d'ajouter plusieurs identifiants OVHcloud pour gérer chaque adresse e-mail.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Premiers pas avec l’offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

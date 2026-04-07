@@ -18,7 +18,18 @@ OVHcloud dedicated servers use a network-based boot process (netboot) that provi
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 

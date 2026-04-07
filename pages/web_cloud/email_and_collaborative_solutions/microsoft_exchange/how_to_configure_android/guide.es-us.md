@@ -101,8 +101,6 @@ Una vez que haya configurado la dirección de correo electrónico, ya puede empe
 
 [MX Plan - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
-[Email Pro - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
-
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).

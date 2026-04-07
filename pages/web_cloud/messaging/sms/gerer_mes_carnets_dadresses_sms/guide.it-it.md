@@ -1,6 +1,6 @@
 ---
 title: Gestire le rubriche indirizzi SMS
-excerpt: Come creare una rubrica SMS nel tuo account OVHcloud
+excerpt: Scopri come creare, importare e gestire le rubriche indirizzi SMS nel tuo account OVHcloud tramite lo Spazio Cliente e fogli di calcolo
 updated: 2022-08-05
 ---
 
@@ -32,9 +32,7 @@ Tutti gli account SMS OVHcloud possono utilizzare una o più rubriche. Questa gu
 
 ## Procedura
 
-### Step 1: crea una rubrica di contatti nel tuo Spazio Cliente
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager). Quindi seleziona `SMS`{.action}.
+### Passaggio 1: Crea una rubrica di contatti nel tuo Spazio Cliente
 
 Clicca sull'account SMS interessato e seleziona `Contatti`{.action} > `Rubrica`{.action}.
 
@@ -46,7 +44,7 @@ Clicca su `Aggiungi Rubrica Indirizzi`{.action} e assegna un nome alla tua nuova
 
 ![phonebook](images/smsphonebook2.png){.thumbnail}
 
-### Step 2: aggiungi contatti nella tua rubrica
+### Passaggio 2: Aggiungi contatti nella tua rubrica
 
 Una volta creata la rubrica indirizzi, esistono vari metodi per aggiungere i contatti.
 
@@ -106,13 +104,13 @@ Nel pop-up che appare, clicca su `File di contatto`{.action}, seleziona il file 
 
 Attendi alcuni secondi durante il caricamento del file nel tuo Spazio Cliente.
 
-### Step 3: modifica o elimina una rubrica indirizzi
+### Passaggio 3: Modifica o elimina una rubrica indirizzi
 
 Per modificare il nome di una rubrica, seleziona la tua lista di contatti nel menu a tendina (1) (se hai creato diverse rubriche) e clicca sulla matita (2) accanto al nome della rubrica. 
 
 Per eliminare una rubrica, selezionala nel menu a tendina (1) e clicca su `Elimina rubrica indirizzi`{.action} (3).
 
-Per modificare o eliminare un contatto, clicca sui tre puntini`...`{.action} nella colonna “Azioni” (4) accanto al contatto corrispondente. A questo punto, puoi selezionare l’opzione che desideri.
+Per modificare o eliminare un contatto, clicca sui tre puntini `...`{.action} nella colonna “Azioni” (4) accanto al contatto corrispondente. A questo punto, puoi selezionare l’opzione che desideri.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
 

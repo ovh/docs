@@ -22,13 +22,23 @@ updated: 2023-09-20
 ## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## In der praktischen Anwendung
 
 ### VPS mit GNU/Linux
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Starten Sie den Server im Rescue-Modus über das Kundencenter neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 Anschließend können Sie die verfügbaren Disks mit diesem Befehl überprüfen:
 
@@ -93,7 +103,7 @@ fsck /dev/sdb1 -f
 
 Die obigen Anweisungen gelten in der Regel nicht für einen Windows VPS, da die Überprüfung des Dateisystems nicht für NTFS funktioniert. Sie können jedoch eine NTFS-Konsistenzüberprüfung der Partitionen durchführen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Starten Sie den Server im Rescue-Modus über das Kundencenter neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 Anschließend können Sie die verfügbaren Disks und ihre Größe mit diesem Befehl überprüfen:
 

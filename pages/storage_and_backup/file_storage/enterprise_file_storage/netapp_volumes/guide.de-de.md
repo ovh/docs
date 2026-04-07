@@ -43,23 +43,14 @@ Alle für diese Anleitung verwendeten API-Routen sind im Bereich `/storage` verf
 
 Um die Volumes eines Dienstes aufzulisten, verwenden Sie den folgenden Pfad:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
 
 Ersetzen Sie `serviceName` mit der ID Ihres Dienstes.
 
@@ -67,26 +58,15 @@ Ersetzen Sie `serviceName` mit der ID Ihres Dienstes.
 
 Um die Informationen eines Volumes abzurufen, verwenden Sie die folgende Route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der Volume-ID.
 
@@ -94,23 +74,14 @@ Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der Volum
 
 Um ein neues Volume zu erstellen, verwenden Sie die folgende Route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
 
 Ersetzen Sie `serviceName` mit der ID Ihres Dienstes.
 
@@ -120,26 +91,15 @@ Wählen Sie das NFS-Protokoll für Ihr neues Volume (`protocol`) sowie dessen Gr
 
 Um den Mountpfad eines Volumes einzusehen, verwenden Sie die folgende Route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der Volume-ID.
 
@@ -158,26 +118,15 @@ Je nach gewähltem Protokoll für das Volume muss der Mountbefehl verschieden se
 
 Um ein Volume zu löschen, verwenden Sie folgende Route:  
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der ID des zu löschenden Volumes.
 

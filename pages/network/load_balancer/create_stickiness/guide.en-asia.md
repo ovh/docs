@@ -15,9 +15,18 @@ Each session on the OVHcloud Load Balancer service is maintained by a persistent
 ## Requirements
 
 - An [OVHcloud Load Balancer](/links/network/load-balancer)
-- Access to the [OVHcloud Control Panel](/links/manager), or 
 - Access to the [OVHcloud API](/links/api)
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 ### The different types of connection tracking

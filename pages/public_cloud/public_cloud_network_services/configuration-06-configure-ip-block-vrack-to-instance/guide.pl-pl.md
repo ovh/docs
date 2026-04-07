@@ -6,16 +6,15 @@ updated: 2025-04-28
 
 ## Objective
 
-As well as private IP addressing, the [vRack](/links/network/vrack) also allows you to route public IP traffic through your server's [vRack](/links/network/vrack) port using a public IP address block.
+As well as private IP addressing, the [vRack](/links/network/vrack) also lets you route public IP traffic through your server's [vRack](/links/network/vrack) port using a public IP address block.
 
-**This guide will show you how to configure a block of public IP addresses for use with the vRack on a Public cloud instance.**
+**This guide explains how to configure a block of public IP addresses for use with the vRack on a Public Cloud instance.**
 
 ## Requirements
 
 - A public block of IP addresses in your account, with a minimum of four addresses
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](/links/network/vrack) service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ### Content overview
@@ -33,14 +32,25 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 
 ## Instructions
 
-Before you start, please note that there are several steps to follow for this configuration. Some of the configuration will be done via the OVHcloud Control Panel and some via the Horizon interface.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+This configuration involves several steps, using both the OVHcloud Control Panel and the Horizon interface.
 
 <a name="addproject"></a>
 
 ### Add the Public Cloud project to the vRack
 
 > [!primary]
-> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, log in to the [OVHcloud Control Panel](/links/manager), go the `Network`{.action} section and click on `vRack private network`{.action} to view the vRack(s).
+> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, go to the `Network`{.action} section and click on `vRack private network`{.action} to view the vRack(s).
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish.
 
@@ -61,7 +71,7 @@ From the list of eligible services, select the project you want to add to the vR
 > This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
 >
 
-In your [OVHcloud Control Panel](/links/manager), go to the `Network`{.action} section and click on `vRack private network`{.action}.
+Go to the `Network`{.action} section and click on `vRack private network`{.action}.
 
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on `Add`{.action}.
 
@@ -71,7 +81,7 @@ Select your vRack from the list to display the list of eligible services. Click 
 
 ### Create a Private Network
 
-Once your project has been added to the vRack, the next step is to create a Private Network. This private network will be attached to the Public Cloud instance.
+Once your project has been added to the vRack, create a Private Network to attach to the Public Cloud instance.
 
 In the `Public Cloud`{.action} section, click on `Private Network`{.action} in the left-hand menu under **Network**.
 
@@ -85,13 +95,13 @@ In step 1, select the region in which you want the private network to be located
 
 ![select region](images/vrack2024-01.png){.thumbnail}
 
-Next select a VLAN ID. For this configuration, you must tag your private network with VLAN ID 0.
+Next, select a VLAN ID. For this configuration, you must tag your private network with VLAN ID 0.
 
 This can be configured in step 2.
 
 ![configure network](images/network_configuration.png){.thumbnail}
 
-This step offers several configuration options. For the purpose of this guide, we will focus on the necessary ones. Click on the tabs below to view the details:
+This step offers several configuration options. For the purpose of this guide, we will focus on the necessary ones. The necessary options are listed below:
 
 - **Private Network Name**: Enter a name for your private network.
 - **Layer 2 network options**: Tick the **Set a VLAN ID** box and select VLAN ID **0**.
@@ -113,7 +123,7 @@ For the configuration, you need to create a subnet in the previously created pri
 
 #### From the Horizon interface
 
-Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and ensure that you are in the correct region. You can verify this on the top left corner.
+Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and verify you are in the correct region (shown in the top left corner).
 
 ![Region selection](images/region2021.png){.thumbnail}
 
@@ -129,13 +139,13 @@ In the pop-up window, fill in the fields:
 
 ![Create Subnet](images/create_subnet_1.png){.thumbnail}
 
-- **Subnet Name**: Enter a name of your choice.<br>
-- **Network address***: Enter the complete CIDR of your Public IP block (in this example: 203.0.113.0/29).<br>
+- **Subnet Name**: Enter a name of your choice.
+- **Network address***: Enter the complete CIDR of your Public IP block (in this example: 203.0.113.0/29).
 - **Gateway IP**: The penultimate IP of the IP block (in this example 203.0.113.6). When you purchase your IP block, this information is provided to you in an email.
 
 Click `Next`{.action} and uncheck the `Enable DHCP`{.action} box. 
 
-- **DNS Name Servers**: Optional. We recommend you to add a DNS server mainly for domain resolution.
+- **DNS Name Servers**: Optional. We recommend adding a DNS server, mainly for domain resolution.
 
 Click on `Create`{.action}.
 
@@ -155,11 +165,11 @@ Once the subnet has been created, your private network will appear as follows:
 > If you have not yet created an instance, you must create it first, then attach the network later. Do not attach the private network during the creation of the instance.
 >
 
-We recommend you to consult the following guides if you are creating an instance for the first time: [How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps/) or [Creating an Instance via the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon/).
+We recommend consulting the following guides if you are creating an instance for the first time: [How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps/) or [Creating an Instance via the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon/).
 
 If you already have an instance, you can proceed to the next step.
 
-Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and ensure that you are in the correct region. You can verify this on the top left corner.
+Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and verify you are in the correct region (shown in the top left corner).
 
 ![region](images/region2021.png){.thumbnail}
 
@@ -167,7 +177,7 @@ Next, select `Compute`{.action} and then `Instances`{.action} from the menu.
 
 ![compute and instance](images/compute_instances.png){.thumbnail}
 
-Select `Attach Interface`{.action} in the drop list for the corresponding instance.
+Select `Attach Interface`{.action} in the drop-down list for the corresponding instance.
 
 ![attach network](images/attach_interface.png){.thumbnail}
 
@@ -211,7 +221,7 @@ To configure the first usable IP address, you need to edit the network configura
 
 ### Create a new IP routing table
 
-First, we need to download and install **iproute2**, which is a package that will enable us to manually configure IP routing on the server. In most cases, this package will already be available on your server. If that is the case, move to the next step.
+First, download and install **iproute2**, a package for manual IP routing configuration. This package may already be available on your server — if so, skip to the next step.
 
 Establish an SSH connection to your instance and run the following command from the command line. This will download and install iproute2.
 
@@ -369,7 +379,7 @@ Click the tab that corresponds to your distribution:
 >> **Configuration example:**
 >>
 >> ```bash
->>   ens7:
+>>   eno2:
 >>     dhcp4: false
 >>     addresses:
 >>     - 203.0.113.1/29
@@ -384,7 +394,7 @@ Click the tab that corresponds to your distribution:
 >> sudo netplan apply
 >> ```
 >> 
-> **CentOS, AlmaLinux & RockyLinux**
+> **CentOS, AlmaLinux & Rocky Linux**
 >>
 >> The configuration below is based on CentOS 7.
 >>
@@ -514,7 +524,7 @@ Click the tab that corresponds to your distribution:
 >> sudo nmcli con mod 'Wired connection 1' connection.autoconnect true
 >> ```
 >> 
->> Reboot your network with the following command:
+>> Restart your network with the following command:
 >>
 >> ```bash
 >> sudo systemctl restart NetworkManager

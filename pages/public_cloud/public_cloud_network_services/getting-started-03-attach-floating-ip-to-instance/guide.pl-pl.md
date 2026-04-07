@@ -27,14 +27,14 @@ Floating IPs are public IP addresses for [Public Cloud](/links/public-cloud/publ
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud API](/links/api), the [OVHcloud Control Panel](/links/manager) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
+- Access to the [OVHcloud API](/links/api) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) tool installed on your working environment (optional)
 
 ## Understanding the Floating IP service
 
 Floating IP is one of the services delivered by the OpenStack DVR (Distributed Virtual Router) services of the OVHcloud Public Cloud.
 
-Floating IP allows you to create a public IP address and use it for your private network based VMs for incoming and outgoing traffic. Floating IP addresses can be attached and detached from your VMs at any time. 
+Floating IP lets you create a public IP address for your private-network-based VMs, handling both incoming and outgoing traffic. Floating IP addresses can be attached and detached from your VMs at any time. 
 
 You can hold Floating IP addresses without attaching them to any service. They remain available for your resources until they are manually deleted.
 
@@ -47,6 +47,17 @@ The goal of this exercise is to create a VM (**vm4fip**) with a private local ne
 Next, we will use this Floating IP to connect to the instance (VM) from the outside and check its access to the Internet.
 
 ## Instructions
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Attaching a Floating IP to an instance
 
@@ -62,18 +73,16 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> If you wish to attach a Floating IP to an existing instance, please skip to **Option 2** (second tab above).
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
->> 
 >> Before creating your instance, make sure you have created a [private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
 >> To create a new instance, follow [this guide](/pages/public_cloud/compute/public-cloud-first-steps) if necessary. 
 >>
 >>
 >> > [!warning]
->> > As of today, all regions do not support this feature. Make sure to create an instance in a valid region. For more information, please refer to our [regions availability](/links/public-cloud/regions-pci) page. 
+>> > Not all regions support this feature. Make sure to create an instance in a valid region. For more information, please refer to our [regions availability](/links/public-cloud/regions-pci) page. 
 >> > 
 >>
->> In Step 5, you have the option to choose a mode for your instance: Public mode or Private mode to be used for your instance networking. 
+>> In Step 5, you can choose a networking mode for your instance: Public or Private.
 >>
 >> By default, the public mode is selected, but since we are creating an instance to which we will attach a Floating IP, we need to create an instance with a private network **ONLY**.
 >>
@@ -91,13 +100,13 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> ![selectbilling](images/selectbilling.png){.thumbnail}
 >>
->> We recommend to choose hourly billing if there is any doubt regarding the usage period, because it is not possible to choose it after the service delivery. You will have the option to switch to a monthly subscription as soon as the instance is available on the “Instances” page.
+>> Choose hourly billing if you are unsure about the usage period — you cannot switch to it after delivery. You will have the option to switch to a monthly subscription as soon as the instance is available on the “Instances” page.
 >>
 >> > [!warning]
 >> > If you choose to be billed hourly, you will continue to be billed as long as the instance is not deleted. It does not matter if the instance is not actually used during this time. 
 >> >
 >>
->> Once you have made sure that your configuration choices are correct, click on the `Create an instance`{.action} button to finish creating your new instance. It may take a few minutes until your service is delivered.
+>> Verify your configuration, then click `Create an instance`{.action}. It may take a few minutes until your service is delivered.
 >> 
 >>
 > **Option 2** 
@@ -106,9 +115,9 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> Please note that the private network must be linked to a gateway. For more information, consult this guide: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> In the public cloud section, click on `Public IPs`{.action} in the left-hand menu under **Network**.
+>> Click on `Public IPs`{.action} in the left-hand menu under **Network**.
 >>
->> Click on `Floating IPs`{.action}, then on `Add a new IP`{.action}.
+>> Click on `Floating IP`{.action}, then on `Add a new IP`{.action}.
 >>
 >> ![add a new ip](images/addfloatingip.png){.thumbnail}
 >>
@@ -141,11 +150,11 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 
 #### Detaching a Floating IP
 
-This feature is currently only available via the [OpenStack API](#detachip). 
+This feature is available via the [OpenStack API](#detachip) and the [Horizon interface](#disassociateip). 
 
 #### Deleting a Floating IP
 
-In the public cloud section, click on `Public IPs`{.action} in the left-hand menu under **Network**.
+Click on `Public IPs`{.action} in the left-hand menu under **Network**.
 
 In the `Floating IP`{.action} tab, click on the `...`{.action} next to the corresponding IP and select `Delete`{.action}.
 
@@ -356,7 +365,7 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 #### Adding a DNS to a Floating IP
 
 > [!primary]
-> This procedure must be carried out **after** you have followed the 9 steps above.
+> Complete the 9 steps above before starting this procedure.
 
 To add a DNS to a Floating IP, run the following command from the command line.
 
@@ -366,7 +375,7 @@ $ openstack floating ip set --dns-domain <DOMAIN_NAME> <IP_ADDRESS_ID>
 
 #### Detaching a Floating IP <a name="detachip"></a>
 
-You can detach a Floating IP from your VM at anytime.
+You can detach a Floating IP from your VM at any time.
 
 ```bash
 $ openstack server remove floating ip vm4fip 169.254.10.25
@@ -423,7 +432,7 @@ The following steps describe how to attach a Floating IP to an existing instance
 >>
 >> ![associate](images/associate_floating_ip.png){.thumbnail}
 >> 
->> A pop-up window will appear. Click on the drop-down arrow underneath `Port to be assiociated` and select the "port" or "instance" to attach the Floating IP to.
+>> A pop-up window will appear. Click on the drop-down arrow underneath `Port to be associated` and select the `port` or `instance` to attach the Floating IP to.
 >>
 >> ![associate](images/select_port.png){.thumbnail}
 >>
@@ -437,7 +446,7 @@ The following steps describe how to attach a Floating IP to an existing instance
 
 #### Detaching a Floating IP <a name="disassociateip"></a>
 
-You can detach a Floating IP from your instance at anytime.
+You can detach a Floating IP from your instance at any time.
 
 Once you are connected to the Horizon interface, click on `Network`{.action}, then on `Floating IPs`{.action}.
 
@@ -501,8 +510,6 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 >> > **serviceName**: The project ID
 >> >
 >> > **region**: You can specify the region for quicker results
->> 
->> The creation will take a few moments.
 >>
 >>
 > **Step 3**
@@ -512,7 +519,7 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/instance
 >>
->> Fill in the fields according the following table.
+>> Fill in the fields according to the following table.
 >>
 >> |Field|Description| 
 >> |---|---| 
@@ -523,14 +530,14 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 >> |ip|The private IP of the instance|
 >>
 >> > [!primary]
->> > The "gateway" property field should be left empty because you are attaching a Floating IP to an instance intially created with a private network **only** and already linked to a Gateway. Please note that for now, the Floating IP will not be created if the instance is linked to a private network that is not attached to a Gateway.
+>> > The "gateway" property field should be left empty because you are attaching a Floating IP to an instance initially created with a private network **only** and already linked to a Gateway. Please note that for now, the Floating IP will not be created if the instance is linked to a private network that is not attached to a Gateway.
 >> >
 >> The creation will take a few moments.
 >>
 
 #### Detaching a Floating IP
 
-This feature is available via the [OpenStack API](#detachip) and the [Horizon interface](#disassociateip).
+This feature is available via the [OpenStack API](#detachip) and the [Horizon interface](#disassociateip). 
 
 #### Deleting a Floating IP
 
@@ -581,7 +588,7 @@ Once the information has been retrieved, use the following call to delete the Fl
 > Fill in the fields with the information previously obtained:
 >
 > - **serviceName**: The project ID
-> - **regionName**: The name of the region in which the floating is located
+> - **regionName**: The name of the region in which the Floating IP is located
 > - **floatingIpId**: The ID of the Floating IP
 
 ///

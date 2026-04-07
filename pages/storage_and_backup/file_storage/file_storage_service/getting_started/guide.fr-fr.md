@@ -1,21 +1,14 @@
 ---
-title: "File Storage Service - Premiers pas (bêta)"
+title: "File Storage Service - Premiers pas"
 excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de shares, l’accès des clients et le montage sur vos machines virtuelles."
-updated: 2026-01-19
+updated: 2026-03-31
 ---
 
 ## Objectif
 
 OVHcloud propose un service File Storage basé sur OpenStack Manila. Ce service fournit des shares NFS gérés sur des réseaux privés, avec un accès ReadWriteMany (RWX) possible depuis plusieurs instances ou pods Kubernetes.
 
-Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI et Terraform.
-
-> [!warning]
->
->  Ce service est actuellement en version bêta et disponible uniquement dans les régions **SBG5**, **DE1** et **GRA**. Les fonctionnalités et la disponibilité peuvent être modifiées.
->
-> Pendant la phase bêta, la taille autorisée des shares varie entre 150 Gio à 10 Tio.
->
+Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espace client OVHcloud et Terraform.
 
 ## Prérequis
 
@@ -530,6 +523,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI et Terr
 >> - Krew (gestionnaire de plugins kubectl) installé.
 >> - Stern (plugin de suivi des logs kubectl) installé via Krew.
 >> - Un cluster Kubernetes déployé dans un réseau privé au sein d'une région Public Cloud où les points de terminaison Manila sont accessibles.
+>> - Assurez-vous que votre utilisateur OpenStack dispose du rôle Administrateur ou Opérateur de partage.
 >>
 >> > [!primary]
 >> >

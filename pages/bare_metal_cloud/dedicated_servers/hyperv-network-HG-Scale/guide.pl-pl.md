@@ -30,7 +30,6 @@ Konfiguracja ta może zostać wdrożona na każdym z serwerów Hyper-V (interfej
 
 * Posiadanie [serwera dedykowanego OVHcloud](/links/bare-metal/bare-metal)
 * Posiadanie adresu [Additional IP](/links/network/additional-ip)
-* Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 > [!warning]
 >

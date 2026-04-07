@@ -1,7 +1,7 @@
 ---
 title: 'Trasferire un nome di dominio in OVHcloud'
 excerpt: 'Questa guida ti mostra come avviare la procedura di trasferimento di un nome di dominio generico verso OVHcloud'
-updated: 2026-02-10
+updated: 2026-03-27
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -43,6 +43,17 @@ Con il trasferimento del tuo nome di dominio, potrai cambiare da **Registrar** p
 - Essere abilitato a richiedere il trasferimento del nome di dominio
 - Aver avvisato l'intestatario del nome di dominio e/o i suoi amministratori della richiesta di trasferimento
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Procedura
 
 > [!success]
@@ -66,7 +77,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 ### Step 1: verifica le informazioni dell’intestatario del nome di dominio <a name="step1"></a>
 
-**Come prima cosa, è importante accertarsi che i dati associati al nome di dominio siano aggiornati.** Dall'entrata in vigore del GDPR, i dati visibili nel ["Whois"](/links/web/domains-whois) sono diventati molto limitati. Puoi consultare le informazioni relative al tuo nome di dominio presso il tuo attuale Registrar.
+**Come prima cosa, è importante accertarsi che i dati associati al nome di dominio siano aggiornati.** Dall'entrata in vigore del GDPR, i dati visibili in « [Whois](/links/web/domains-whois) » sono diventati molto limitati. Puoi consultare le informazioni relative al tuo nome di dominio presso il tuo attuale Registrar.
 
 - **Se le informazioni sono corrette: passa allo step successivo di questa guida.**
 
@@ -94,7 +105,7 @@ Ti ricordiamo che, non essendo OVHcloud il Registrar del tuo nome di dominio al 
 
 Una volta sbloccato il nome di dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](/links/web/domains). Inserisci il nome del tuo nome di dominio e segui la procedura d’ordine.
 
-![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail
+![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail}
 
 Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella casella accanto al tuo nome di dominio Se non disponi ancora del codice di trasferimento, seleziona la casella `Inserisci il codice di trasferimento successivamente`{.action}. Prima di proseguire, assicurati di essere in grado di recuperare questo codice. Ricordati che il trasferimento non verrà avviato fino a quando non verrà fornito un codice valido.
 
@@ -123,11 +134,11 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 #### Stato del trasferimento dopo l'ordine
 
-Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](/links/manager). Una volta connesso, clicca su `Web Cloud`{.action} e poi su `Operazioni in corso`{.action}.
+Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dalla pagina [Operazioni in corso](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
-> Se il codice di trasferimento non è stato inserito durante l'ordine, inseriscilo nella finestra `Operazioni in corso`{.action} e infine confermare il trasferimento.
+> Se il codice di trasferimento non è stato inserito durante l'ordine, è possibile inserirlo da questa stessa pagina per confermare il trasferimento.
 
 ### Step 4: conferma del trasferimento da parte dell'attuale Registrar <a name="step4"></a>
 
@@ -141,7 +152,7 @@ Una volta convalidato l'ordine e il codice di trasferimento, il Registrar attual
 
 Se il provider attuale emette un rifiuto, contatta il provider per sapere perché l'ha rifiutata.
 
-Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](/links/manager). Una volta connesso, clicca su `Web Cloud`{.action} e poi su `Operazioni in corso`{.action}.
+Il trasferimento può essere riavviato dalla pagina [Operazioni in corso](/links/control-panel/web-ongoing-operations).
 
 > [!primary]
 >
@@ -155,7 +166,7 @@ Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](/links/ma
 
 ### Step 5: gestire il nome di dominio con OVHcloud
 
-Una volta completata la procedura, è possibile gestire il nome di dominio dallo [Spazio Cliente OVHcloud](/links/manager). Seleziona `Web Cloud`{.action}, clicca su `Nomidi dominio`{.action} nel menu a sinistra e poi clicca sul nome di dominio interessato.
+Una volta completata la procedura, è possibile gestire il nome di dominio dalla pagina [Domini](/links/control-panel/web-domains).
 
 > [!warning]
 >
@@ -165,10 +176,20 @@ Una volta completata la procedura, è possibile gestire il nome di dominio dallo
 > Per i nomi di dominio con estensione *locale* o *regionale* (i **ccTLD** come *.it*, *.be*, *.de*, *.es*, ecc.), questo dipende dalle estensioni e dalle regole messe in atto dal **Registro** dell'estensione in questione.
 > Una volta completata l'operazione, verifica la data di scadenza del nome di dominio direttamente dallo Spazio Cliente OVHcloud.
 >
-> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Nomidi dominio`{.action} e seleziona il nome di dominio interessato. Sulla pagina che appare e appena sotto il tuo nome di dominio sulla parte superiore della pagina, visualizzerai la data di rinnovo prevista con il **mese** e **l'anno** di scadenza.
->
 > In base alla situazione e alla nuova data di scadenza del nome di dominio, potrebbe essere necessario un rinnovo del nome di dominio subito dopo il trasferimento.
->
+
+Per verificarlo, clicca sulle schede qui sotto per visualizzare successivamente ognuno dei **2** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il nome di dominio interessato.
+>>
+>> ![Domini](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Sulla pagina che appare, appena sotto il nome di dominio, troverai la data di rinnovo prevista con il **mese** e **l'anno** di scadenza.
 
 ## Per saperne di più
 

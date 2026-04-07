@@ -1,7 +1,7 @@
 ---
 title: "Comment ajouter un enregistrement DNS de type CNAME pour un sous-domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type CNAME dans une zone DNS gérée chez OVHcloud pour le sous-domaine d'un nom de domaine"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -34,7 +34,18 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 
 - Disposer d'un [nom de domaine](/links/web/domains).
 - Disposer d'une zone DNS associée à ce nom de domaine chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 >
@@ -45,11 +56,30 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 
 ### Ajouter un enregistrement DNS de type CNAME pour le sous-domaine d'un nom de domaine
 
-1. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-2. Sur la page qui s'affiche, cliquez sur le bouton `Ajouter une entrée`{.action}.
-3. Dans la fenêtre qui s'ouvre, sélectionnez le champ de pointage de type `CNAME`{.action}.
-4. Renseignez ensuite dans le champ `Sous-domaine` le sous-domaine concerné (par exemple : `www` pour le sous-domaine `www.domain.tld`), et, dans le champ `Cible *`, le nom de domaine ou sous-domaine (par exemple : `domain.tld`) que vous souhaitez cibler à l'aide de l'enregistrement de type CNAME. Cliquez enfin sur `Suivant`{.action}.
-5. Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le bouton `Ajouter une entrée`{.action}.
+>>
+> **Étape 3**
+>>
+>> Dans la fenêtre qui s'ouvre, sélectionnez le champ de pointage de type `CNAME`{.action}.
+>>
+> **Étape 4**
+>>
+>> Renseignez dans le champ `Sous-domaine` le sous-domaine concerné (par exemple : `www` pour le sous-domaine `www.domain.tld`), et, dans le champ `Cible *`, le nom de domaine ou sous-domaine (par exemple : `domain.tld`) que vous souhaitez cibler à l'aide de l'enregistrement de type CNAME. Cliquez sur `Suivant`{.action}.
+>>
+> **Étape 5**
+>>
+>> Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
 
 /// details | Consultez nos guides détaillés :
 

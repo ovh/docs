@@ -17,13 +17,23 @@ updated: 2023-09-20
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Instructions
 
 ### GNU/Linux VPS
 
-Log in to the [OVHcloud Control Panel](/links/manager) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
+Initiate a server reboot in rescue mode from the Control Panel. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
 
 You can then verify the configuration of the disks:
 
@@ -88,7 +98,7 @@ fsck /dev/sdb1 -f
 
 The instructions above do generally not apply to a Windows VPS, because the file system check does not support NTFS. You can however perform a NTFS consistency check on the partitions.
 
-Log in to the [OVHcloud Control Panel](/links/manager) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
+Initiate a server reboot in rescue mode from the Control Panel. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
 
 You can then verify the configuration of the disks:
 

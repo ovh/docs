@@ -1,8 +1,22 @@
 ---
 title: "Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)"
 excerpt: "Object Lock est une fonctionnalité qui vous permet de stocker des objets en utilisant un modèle WORM (Write Once, Read Many)"
-updated: 2025-03-25
+updated: 2026-04-03
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -28,12 +42,12 @@ Un marqueur de suppression possède les propriétés suivantes :
 Pour supprimer définitivement un objet, vous devez spécifier l'ID de version dans votre demande de suppression d'objet :
 
 ```bash
-aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456huijw0
+aws s3api delete-object --bucket <bucket_name> --key <object_key> --version-id <version_id>
 ```
 
 La fonction Object Lock empêche les objets, pendant une durée fixe (mode de rétention) ou indéfiniment (conservation légale), d'être :
 
-- supprimés même si vous spécifiez le *version id* (vous obtenez une erreur « Access Denied ») ;
+- supprimés même si vous spécifiez le *version ID* (vous obtenez une erreur « Access Denied ») ;
 - écrasés par le *versioning*.
 
 > [!primary]
@@ -43,22 +57,35 @@ La fonction Object Lock empêche les objets, pendant une durée fixe (mode de r�
 
 ### Périodes de rétention
 
-Une période de rétention spécifie une période de temps fixe pendant laquelle un objet reste verrouillé. Pendant cette période, votre objet est protégé et ne peut pas être écrasé ou supprimé. Vous pouvez appliquer une période de rétention en nombre de jours ou en nombre d'années, avec un minimum d'un jour et aucune limite maximale.
+Une période de rétention définit une durée pendant laquelle un objet reste verrouillé. Pendant cette période, l’objet est protégé et ne peut ni être modifié ni supprimé. La rétention peut être définie en jours ou en années, avec un minimum d’un jour et sans limite maximale.
 
-Lorsque vous définissez une période de rétention pour vos objets ou vos buckets, vous pouvez choisir le mode de rétention que vous souhaitez appliquer à vos objets. Vous pouvez choisir soit le mode *Governance*, soit le mode *Compliance* pour vos objets.
+Lors de la définition d’une période de rétention pour un bucket ou ses objets, vous devez choisir le mode de rétention à appliquer : **Governance** ou **Compliance**.
 
 #### Mode Governance
 
-Vous devriez utiliser le mode *Governance* si vous souhaitez empêcher la suppression des objets par la plupart des utilisateurs au cours d'une période de rétention prédéfinie, tout en permettant à certains utilisateurs disposant d'autorisations spéciales de modifier les paramètres de rétention ou de supprimer les objets. Les utilisateurs disposant de l'autorisation `s3:BypassGovernanceRetention` peuvent remplacer ou supprimer les paramètres de rétention en mode *Governance*.
+Le mode **Governance** empêche la plupart des utilisateurs de supprimer ou modifier les objets pendant la période de rétention, tout en permettant à certains utilisateurs disposant de droits spécifiques de gérer la rétention ou de supprimer des objets.
+
+Les utilisateurs autorisés possédant `s3:BypassGovernanceRetention` peuvent ainsi remplacer ou supprimer des objets en mode **Governance**.
+
+> [!primary]
+> 
+> **Bonne pratique :** utilisez le mode **Governance** lorsque vous souhaitez protéger vos données tout en conservant une certaine flexibilité opérationnelle pour des rôles administratifs spécifiques.
+>
 
 #### Mode Compliance
 
-Vous devriez utiliser le mode *Compliance* si vous avez l'obligation de stocker des données conformes.
-Lorsque ce mode est activé, la version d'un objet ne peut être écrasée ou supprimée par aucun utilisateur. Si ce mode est configuré pour un objet, son mode de rétention ne peut pas être modifié et sa période de rétention ne peut pas être raccourcie.
+Le mode **Compliance** garantit que les objets ne peuvent être ni modifiés ni supprimés par aucun utilisateur, y compris les administrateurs, pendant toute la période de rétention.
+
+Une fois ce mode activé pour un objet, son mode de rétention et sa durée ne peuvent pas être modifiés.
 
 > [!primary]
 >
-> Vous ne devez utiliser le mode *Compliance* que si vous ne voulez jamais qu'un utilisateur, y compris l'utilisateur administrateur, puisse supprimer les objets pendant une période de rétention prédéfinie.
+> **Bonne pratique :** utilisez le mode **Compliance** uniquement si vous devez assurer une immuabilité stricte pour des besoins de conformité ou réglementaires.
+>
+
+> [!warning]
+>
+> Le mode Compliance doit être choisi uniquement si aucun utilisateur, y compris l’administrateur, ne doit pouvoir supprimer ou modifier les objets pendant la période de rétention.
 >
 
 ### Legal hold
@@ -69,8 +96,8 @@ La fonction Legal hold offre la même protection qu'une période de rétention, 
 
 ## Prérequis
 
-- Connaître vos informations d'identification Object Storage (access_key et secret_access_key)
-- Avoir installé et configuré aws cli
+- Connaître vos informations d'identification Object Storage (`access_key` et `secret_access_key`)
+- Avoir installé et configuré l'AWS CLI
 
 Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
@@ -78,9 +105,9 @@ Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backu
 
 > [!primary]
 >
-> Tous les exemples suivants utiliseront aws cli.
+> Tous les exemples suivants utilisent l'AWS CLI.
 >
-> Pour en savoir plus sur aws cli, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+> Pour en savoir plus sur l'AWS CLI, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 >
 
 ### Permissions
@@ -99,8 +126,6 @@ Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backu
 
 ### Configuration d'Object Lock
 
-Pour utiliser Object Lock, vous devez créer un bucket qui supporte la fonctionnalité avec le flag `--object-lock-enabled-for-bucket`. Si un bucket est créé sans ce flag, il ne pourra pas être ajouté ultérieurement.
-
 > [!primary]
 >
 > La commande suivante n'applique pas l'Object Lock aux objets du bucket, elle active seulement la fonctionnalité.
@@ -108,47 +133,78 @@ Pour utiliser Object Lock, vous devez créer un bucket qui supporte la fonctionn
 
 ```bash
 aws s3api create-bucket \
-  --bucket object-lock-bucket \
+  --bucket <bucket_name> \
   --object-lock-enabled-for-bucket
 ```
 
 > [!primary]
 >
-> Cette action active également le versioning du bucket.
+> Cette action active également le *versioning* du bucket.
 >
+
+> [!tabs]
+> Via AWS CLI
+>> Pour utiliser Object Lock, vous devez créer un bucket qui supporte la fonctionnalité avec le flag `--object-lock-enabled-for-bucket`. Si un bucket est créé sans ce flag, il ne pourra pas être ajouté ultérieurement.
+>>
+>>
+>> ```bash
+>> aws s3api create-bucket \
+>>   --bucket object-lock-bucket \
+>>   --object-lock-enabled-for-bucket
+>> ```
+>>
+> Via l'espace client OVHcloud
+>> Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}.
+>>
+>> Cliquez sur `Object Storage`{.action} dans la barre de navigation, puis cliquez sur `Créer un conteneur d'objets`{.action}.
+>>
+>> Lors de la création d’un bucket Object Storage, une étape dédiée permet d’activer l’Object Lock afin de stocker les objets en mode WORM (Write Once, Read Many).
+>>
+>> Une fois l’Object Lock activé, le paramètre est irréversible pour le bucket concerné. Tous les objets stockés bénéficient ainsi d’une immuabilité garantie jusqu’à la fin de la période de rétention définie.
+>>
 
 ### Configuration d'Object Lock sur un bucket
 
 Object Lock vous permet de définir une période de rétention sur un bucket spécifique. Une fois définie, la règle spécifiée est appliquée par défaut à chaque nouvel objet placé dans le bucket spécifié.
 
-```bash
-aws s3api put-object-lock-configuration \
-    --bucket object-lock-bucket \
-    --object-lock-configuration '{ "ObjectLockEnabled" : "Enabled", "Rule" : { "DefaultRetention" : { "Mode" : "GOVERNANCE", "Days" : 60 }}}'
-```
-
-Pour afficher la configuration Object Lock d'un bucket, exécutez :
-
-```bash
-aws s3api get-object-lock-configuration \
-   --bucket object-lock-bucket
-```
-
-Le résultat devrait ressembler à ceci :
-
-```json
-{
-  "ObjectLockConfiguration" : {
-    "ObjectLockEnabled" : "Enabled",
-    "Rule" : {
-      "DefaultRetention" : {
-        "Mode" : "GOVERNANCE",
-        "Days" : 60
-      }
-    }
-  }
-}
-```
+> [!tabs]
+> Via AWS CLI
+>> ```bash
+>> aws s3api put-object-lock-configuration \
+>>   --bucket <bucket_name> \
+>>     --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "GOVERNANCE", "Days": 60 }}}'
+>> ```
+>>
+>> Pour afficher la configuration Object Lock d'un bucket, exécutez :
+>>
+>> ```bash
+>> aws s3api get-object-lock-configuration \
+>>   --bucket <bucket_name>
+>> ```
+>>
+>> Le résultat devrait ressembler à ceci :
+>>
+>> ```json
+>> {
+>>   "ObjectLockConfiguration" : {
+>>     "ObjectLockEnabled" : "Enabled",
+>>     "Rule" : {
+>>       "DefaultRetention" : {
+>>         "Mode" : "GOVERNANCE",
+>>         "Days" : 60
+>>       }
+>>     }
+>>   }
+>> }
+>> ```
+>>
+> Via l'espace client OVHcloud
+>> Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}.
+>>
+>> Cliquez sur `Object Storage`{.action} dans la barre de navigation, sur l'onglet `Mes conteneurs`{.action}, puis cliquez sur le `nom de votre conteneur`{.action}.
+>>
+>> Depuis l’onglet `Informations générales`{.action}, cliquez sur `Configurer la rétention`{.action}, activez la rétention, puis définissez le mode et la période de rétention applicables. Cliquez ensuite sur le bouton `Sauvegarder`{.action}.
+>>
 
 ### Comment configurer une période de rétention sur un objet
 
@@ -161,10 +217,9 @@ Pour appliquer une configuration de rétention sur un objet :
 
 ```bash
 aws s3api put-object-retention \
-       --bucket object-lock-bucket \
-       --key test.txt \
-       --retention '{"Mode" : "COMPLIANCE", "RetainUntilDate" :
-"2023-01-01T12:00:00.00Z" }'
+  --bucket <bucket_name> \
+  --key <object_key> \
+  --retention '{"Mode":"COMPLIANCE","RetainUntilDate":"2023-01-01T12:00:00.00Z"}'
 ```
 
 > [!primary]
@@ -176,8 +231,8 @@ Pour afficher la configuration de rétention d'un objet, exécutez :
 
 ```bash
 aws s3api get-object-retention \
-   --bucket object-lock-bucket \
-   --key test.txt
+  --bucket <bucket_name> \
+  --key <object_key>
 ```
 
 Le résultat devrait ressembler à ceci :
@@ -202,8 +257,8 @@ Pour contourner le mode *Governance*, vous devez indiquer explicitement dans vot
 
 ```bash
 aws s3api delete-object \
-  --bucket object-lock-bucket \
-  --key test.txt \
+  --bucket <bucket_name> \
+  --key <object_key> \
   --bypass-governance-retention
 ```
 
@@ -218,8 +273,8 @@ Pour appliquer une configuration Legal hold à l'objet spécifié :
 
 ```bash
 aws s3api put-object-legal-hold \
-  --bucket object-lock-bucket \
-  --key test.txt \
+  --bucket <bucket_name> \
+  --key <object_key> \
   --legal-hold Status=ON
 ```
 
@@ -227,8 +282,8 @@ Pour afficher la configuration Legal hold d'un objet, exécutez :
 
 ```bash
 aws s3api get-object-legal-hold \
-  --bucket object-lock-bucket \
-  --key test.txt
+  --bucket <bucket_name> \
+  --key <object_key>
 ```
 
 Le résultat devrait ressembler à ceci :
@@ -240,6 +295,55 @@ Le résultat devrait ressembler à ceci :
   }
 }
 ```
+
+### Object Lock et suppression d'objets
+
+Lorsque le *versioning* est activé, une suppression d'objet ne supprime pas l'objet immédiatement mais crée un **marqueur de suppression**. Ce marqueur devient la version actuelle de l’objet avec un nouvel ID.
+
+Un marqueur de suppression :
+
+- A une clé et un ID de version comme tout autre objet.
+- Ne contient pas de données (GET retourne 404).
+- N'est pas affiché par défaut dans l’espace client.
+- Ne peut être manipulé que par DELETE, par le propriétaire du bucket.
+
+La fonction **Object Lock** empêche les objets d’être :
+
+- supprimés même avec un ID de version (renvoie `Access Denied`).
+- écrasés par le *versioning*.
+
+#### Fonctionnement des suppressions avec Object Lock
+
+Lorsque l’Object Lock est activé et qu’un objet est protégé par une période de rétention ou une conservation légale, les tentatives de suppression se comportent différemment selon le type de requête :
+
+/// details | **Suppression avec ID de version (DELETE permanente)**
+
+- La suppression est bloquée pendant la période de rétention.
+- La réponse renvoyée est 403 Forbidden (Accès refusé).
+- Cette protection s’applique à tous les utilisateurs, même les administrateurs, selon le mode de rétention.
+
+Pour supprimer définitivement un objet, vous devez spécifier l’ID de version dans votre demande :
+
+```bash
+aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456huijw0
+```
+
+> [!primary]
+>
+> Cette commande échouera si l’objet est protégé par Object Lock en mode Compliance ou Governance sans le contournement adéquat.
+>
+
+///
+
+/// details | **Suppression sans ID de version (DELETE simple)**
+
+- La requête renvoie 200 OK.
+- Un marqueur de suppression est créé dans le bucket et devient la version actuelle de l’objet.
+- L’objet reste protégé par la période de rétention.
+
+**Remarque :** la gestion des marqueurs de suppression et des erreurs d’accès peut se faire via les API/CLI correspondantes.
+
+///
 
 ## Aller plus loin
 

@@ -1,5 +1,6 @@
 ---
-title: 'Branchements SPA112'
+title: "Branchements SPA112"
+excerpt: "Apprenez comment raccorder votre adaptateur Cisco SPA112 à votre réseau, à l'alimentation et à un téléphone analogique"
 flag: hidden
 updated: 2018-03-26
 ---
@@ -16,6 +17,10 @@ L'équipement adaptateur doit être raccordé :
 
 ![branchements-spa112](images/BranchementsSPA112.png){.thumbnail}
 
-Notez que pour les offre Plug & Fax, le téléphone est à remplacer par un télécopieur.
+Notez que pour les offres Plug & Fax, le téléphone est à remplacer par un télécopieur.
 
 L'emplacement des deux prises Phone peut être trompeur. Le port N°1, qui doit être utilisé dans la majorité des cas, est situé à l'extérieur de l'adaptateur (à gauche lorsque l'on regarde l'arrière de l'adaptateur).
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -37,9 +37,19 @@ Ce guide vous permettra de :
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Posséder un téléphone mobile (pour la méthode par SMS), un smartphone ou une tablette (pour la méthode via application mobile) ou une clé de sécurité Universal Second Factor (U2F).
 - Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Sécurité du compte](/links/control-panel/account-security)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action} > `Sécurité`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## En pratique <a name="instructions"></a>
 
@@ -80,9 +90,7 @@ Nous vous proposons trois méthodes différentes (cliquez sur les onglets ci-de
 
 ### Étape 1 - Activer votre première méthode de double authentification <a name="enabling-2fa"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-
-Cliquez sur l'onglet `Sécurité`{.action}, puis sur `Activer la double authentification`{.action}.
+Sur la page [Sécurité du compte](/links/control-panel/account-security), cliquez sur `Activer la double authentification`{.action}.
 
 **Cliquez sur l'onglet correspondant à la méthode de votre choix :**
 
@@ -178,9 +186,7 @@ Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est p
 > - de codes de secours valides.
 >
 
-Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-
-Cliquez ensuite sur `Sécurité`{.action} puis sur les `...`{.action} à droite de votre périphérique à supprimer et enfin sur `Supprimer`{.action}.
+Pour supprimer un périphérique, rendez-vous sur la page [Sécurité du compte](/links/control-panel/account-security) et cliquez sur les `...`{.action} à droite de votre périphérique à supprimer, puis sur `Supprimer`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 

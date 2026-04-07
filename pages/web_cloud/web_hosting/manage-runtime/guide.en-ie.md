@@ -13,7 +13,17 @@ With a Cloud Web hosting plan, you can choose from a range of different coding l
 ## Requirements
 
 - a [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

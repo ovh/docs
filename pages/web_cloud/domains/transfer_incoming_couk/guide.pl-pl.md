@@ -39,6 +39,7 @@ Transfer nazwy domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejś
 - Dane kontaktowe abonenta muszą być aktualne w [bazie whois](https://www.nominet.uk/whois/) nazwy domeny.
 - Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail abonenta.
 
+
 > [!primary]
 >
 > Okres **odkupienia** wynosi maksymalnie 90 dni od dnia wygaśnięcia nazwy domeny. W przypadku transferu ten czas pozwala na przywrócenie nazwy domeny i odblokowanie możliwości jej transferu.

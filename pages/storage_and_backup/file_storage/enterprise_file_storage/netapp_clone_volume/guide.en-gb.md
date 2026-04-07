@@ -40,9 +40,20 @@ It is also possible to isolate the corrupted data and try to resolve the cause o
 
 ## Requirements
 
-- An active OVHcloud [Enterprise File Storage](/links/storage/enterprise-file-storage) service 
+- An active OVHcloud [Enterprise File Storage](/links/storage/enterprise-file-storage) service
 - Access to the [OVHcloud API](/links/api)
 - An Enterprise File Storage volume with a `manual` snapshot
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 > [!primary]
 >

@@ -81,7 +81,7 @@ OVHcloud propose une application web permettant d'accéder à votre adresse e-ma
 
 [Configurer son compte Exchange sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios).
 
-[Configurer son compte E-mail Pro sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios).
+[Configurer son compte Email Pro sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios).
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

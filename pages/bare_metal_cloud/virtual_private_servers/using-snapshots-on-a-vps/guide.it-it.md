@@ -12,21 +12,29 @@ Creare uno snapshot è un modo semplice e rapido per mettere al sicuro un sistem
 
 > [!primary]
 >
-Prima di applicare opzioni di backup, consigliamo di fare riferimento alle pagine prodotto [e alle domande frequenti](/links/bare-metal/vps-options) per confrontare i prezzi e per visualizzare ulteriori dettagli.
+> Prima di applicare opzioni di backup, consigliamo di fare riferimento alle pagine prodotto [e alle domande frequenti](/links/bare-metal/vps-options) per confrontare i prezzi e per visualizzare ulteriori dettagli.
 >
 
 ## Prerequisiti
 
-- avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - un servizio [VPS OVHcloud](/links/bare-metal/vps) già impostato
 
 > [!warning]
 > Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## Procedura
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](/links/control-panel/baremetal-vps)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Privati Virtuali`{.action} > Seleziona il tuo VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## Procedura
 
 ### Step 1: Attivare l’opzione snapshot
 
@@ -35,7 +43,7 @@ Se "Snapshot" è già in stato "Attivato", passa direttamente allo Step 2. Se "S
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
-Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura per l’ordine e riceverai una email di conferma.
+Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura per l’ordine e riceverai una e-mail di conferma.
 
 Per disattivare l’opzione di servizio, clicca sul pulsante `...`{.action} accanto a "Snapshot" e seleziona `Disattiva`{.action} nel menu contestuale.
 
@@ -55,7 +63,7 @@ Se sei certo che desideri ripristinare il tuo VPS allo stato dello snapshot, cli
 
 > [!alert]
 >
-> Ricorda che quando ripristina un VPS da un'istantanea, quest'ultima verrà eliminata. Per conservare la stessa istantanea, è necessario ripeterne una prima di apportare modifiche al sistema ripristinato.
+> Ricorda che quando ripristini un VPS da un'istantanea, quest'ultima verrà eliminata. Per conservare la stessa istantanea, è necessario crearne una nuova prima di apportare modifiche al sistema ripristinato.
 >
 > Se la funzione Snapshot è troppo limitata per il tuo progetto, l'opzione [Backup automatizzati](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) è un'alternativa.
 >
@@ -101,7 +109,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 
 > [!primary]
 >
-> Per evitare di consumare troppo spazio di storage, ti consigliamo di scaricare gli Snapshot direttamente sul VPS.
+> Per evitare di consumare troppo spazio di storage, ti consigliamo di non scaricare gli Snapshot direttamente sul VPS.
 >
 > Il file scaricato può essere importato in un Progetto Public Cloud come immagine (QCOW2) tramite [OpenStack](/products/public-cloud-compute-instance-management). (Un esempio di utilizzo è disponibile in [questa guida](/pages/public_cloud/compute/upload_own_image).)
 >
@@ -110,7 +118,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 
 #### Configurazione del software QEMU su un VPS
 
-Gli Snapshot sono istantanee del proprio sistema in esecuzione (“live snapshot”). Per garantire la disponibilità del sistema durante la creazione dello Snapshot è necessario utilizzare il software QEMU, che  prepara il filesystem al processo.
+Gli Snapshot sono istantanee del proprio sistema in esecuzione (“live snapshot”). Per garantire la disponibilità del sistema durante la creazione dello Snapshot è necessario utilizzare il software QEMU, che prepara il filesystem al processo.
 
 Nella maggior parte delle distribuzioni, il *qemu-guest-agent* necessario non è installato di default e le eventuali restrizioni delle licenze possono impedire a OVHcloud di includerlo nelle immagini degli OS disponibili. Consigliamo pertanto di verificare la presenza del software sul VPS e, in caso contrario, di installarlo. Per eseguire queste operazioni, accedi in SSH al VPS e segui le istruzioni indicate, in base al sistema operativo utilizzato.
 
@@ -177,4 +185,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Usare backup automatizzati su un VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
 
-Partecipa alla nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

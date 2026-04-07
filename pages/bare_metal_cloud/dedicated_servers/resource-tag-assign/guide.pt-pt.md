@@ -20,19 +20,21 @@ Por exemplo, pode categorizar os seus recursos por site, por serviço ou ainda p
 ## Requisitos
 
 - Dispor de um [servidor dedicado](/links/bare-metal/bare-metal).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instruções
 
 ### Atribuir uma tag a um servidor dedicado a partir da Área de Cliente
-
-Para atribuir uma tag a um servidor:
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Bare Metal Cloud`{.action}.
-1. Clique em `Servidores dedicados`{.action} e selecione o seu servidor na lista.
-
-Por predefinição, será redirecionado para o separador `Informações gerais`{.action}.
 
 ![Informações gerais](images/general_information.png){.thumbnail}
 

@@ -37,8 +37,17 @@ Probes are health checks. They periodically query each of your servers to ensure
 ## Requirements
 
 - Have an [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account. The service must be properly configured, with farms and servers set up.
-- Be logged in to your [OVHcloud Control Panel](/links/manager).
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 **Table of contents**
@@ -159,79 +168,23 @@ It is then sufficient to apply the configuration in the relevant area.
 
 Probes can be configured on a new farm (`POST`) or an existing farm (`PUT`). The two methods being equivalent, only the second one (`PUT`) will be presented here.
 
-> [!faq]
+> [!api]
 >
-> Service :
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
->> >
->>
->
-> Parameters :
->
->> > **serviceName**
->> >
->> >> The identifier of your OVHcloud Load Balancer.
->> >
->> > **farmId**
->> >
->> >> The numeric identifier of your `farm`.
->> >
->> > **probe**
->> >
->> >> **type**
->> >>
->> >> > The type of `probe` to enable. The probe types handled are :
->> >> >
->> >> > `tcp` for a basic TCP connection test ;
->> >> >
->> >> > `http` for an HTTP connection test. It is possible to specify the URL and method ;
->> >> >
->> >> > `smtp` for a basic SMTP connection test ;
->> >> >
->> >> > `mysql` for a basic MySQL connection test ;
->> >> >
->> >> > `pgslq` for a basic PostgreSQL connection test ;
->> >> >
->> >> > `oco` for a general status validation returned on port 79.
->> >
->> >> **interval**
->> >>
->> >> > The interval in seconds between two probe attempts. It must be at least 30 seconds.
->> >
->> >> **port**
->> >>
->> >> > The port that the probe should use, if it is different from the one configured on the farm.
->> >> > This allows you to delegate the server status validation to a third-party service on the machine and perform arbitrary probes.
->> >
->> >> **method**
->> >>
->> >> > The HTTP method to use if the probe is of type "http".
->> >> > The compatible methods are `GET`, `HEAD` and `OPTIONS` (default).
->> >
->> >> **url**
->> >>
->> >> > The URL to use for the tests, if the probe is of type "http".
->> >> > Its form must be `[[https?://]www.example.com]/path/to/check`.
->> >> > If a domain is specified, the request will be sent in HTTP/1.1 instead of HTTP/1.0 by default.
->> >
->> >> **match**
->> >>
->> >> > The type of comparator to use to check that the server is healthy.
->> >> > The comparators handled are `default`, `status`, `contains` and `matches`.
->> >> > The comparators are compatible with "http" and "tcp" probes.
->> >
->> >> **pattern**
->> >>
->> >> > The value to use as an argument for the comparator if it is different from "default".
->> >
->> >> **forceSsl**
->> >>
->> >> > Defines whether the probe should work in SSL/TLS even if the farm is configured to connect in classic TCP.
->> >> > This can be useful, for example, when your OVHcloud Load Balancer is configured to forward HTTPS traffic in TCP without decrypting it.
->
+
+| Parameter | Description |
+|-----------|-------------|
+| `serviceName` | The identifier of your OVHcloud Load Balancer. |
+| `farmId` | The numeric identifier of your `farm`. |
+| `probe.type` | The type of `probe` to enable. The probe types handled are : |
+| `probe.interval` | The interval in seconds between two probe attempts. It must be at least 30 seconds. |
+| `probe.port` | The port that the probe should use, if it is different from the one configured on the farm. |
+| `probe.method` | The HTTP method to use if the probe is of type "http". |
+| `probe.url` | The URL to use for the tests, if the probe is of type "http". |
+| `probe.match` | The type of comparator to use to check that the server is healthy. |
+| `probe.pattern` | The value to use as an argument for the comparator if it is different from "default". |
+| `probe.forceSsl` | Defines whether the probe should work in SSL/TLS even if the farm is configured to connect in classic TCP. |
 
 Other parameters can be edited via this call. As this guide focuses on probes, they are not documented here.
 
@@ -246,34 +199,17 @@ If a port other than the base port of the farm is configured on the probe, the `
 
 For a probe to be active, it must have been configured on the farm and enabled on the relevant servers. This call allows you to enable the probe :
 
-> [!faq]
+> [!api]
 >
-> Service :
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
->> >
->>
->
-> Parameters :
->
->> > **serviceName**
->> >
->> >> The identifier of your OVHcloud Load Balancer.
->> >
->> > **farmId**
->> >
->> >> The numeric identifier of your `farm`.
->> >
->> > **serverId**
->> >
->> >> The numeric identifier of your `server`.
->> >
->> > **probe**
->> >
->> >> Indicates whether `probe` should be taken into account or not.
->
+
+| Parameter | Description |
+|-----------|-------------|
+| `serviceName` | The identifier of your OVHcloud Load Balancer. |
+| `farmId` | The numeric identifier of your `farm`. |
+| `serverId` | The numeric identifier of your `server`. |
+| `probe` | Indicates whether `probe` should be taken into account or not. |
 
 Other parameters can be edited via this call. As this guide focuses on probes, they are not documented here.
 
@@ -294,62 +230,18 @@ The `contains` and `matches` comparators look for a match in the first 16 KB of 
 
 The list of available probes can be obtained with the API call :
 
-> [!faq]
+> [!api]
 >
-> Service :
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >
->> > [!api]
->> >
->> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
->> >
->>
->
-> Response :
->
->> > **type**
->> >
->> >> The type of `probe` to configure in the `probe.type` field of the `farms`.
->> >>
->> >> The probe types handled are :
->> >>
->> >> `tcp` for a basic TCP connection test ;
->> >>
->> >> `http` for an HTTP connection test. It is possible to specify the URL and method ;
->> >>
->> >> `smtp` for a basic SMTP connection test ;
->> >>
->> >> `mysql` for a basic MySQL connection test ;
->> >>
->> >> `pgslq` for a basic PostgreSQL connection test ;
->> >>
->> >> `oco` for a general status validation returned on port 79.
->> >
->> > **port**
->> >
->> >> Indicates whether the port can be configured for this probe.
->> >
->> > **method**
->> >
->> >> The list of HTTP methods handled or `null` if none exist.
->> >
->> > **url**
->> >
->> >> Indicates whether the probe URL can be configured.
->> >
->> > **matches**
->> >
->> >> The list of available comparators for this probe.
->> >> The interpretation of the `probe.pattern` field depends on this field.
->> >> The potentially handled comparators are :
->> >>
->> >> `default` the simplest test, without specific conditions. `probe.pattern` must be empty ;
->> >>
->> >> `status` checks that the HTTP status code is in the comma-separated list ;
->> >>
->> >> `contains` checks that the server response contains `probe.pattern` ;
->> >>
->> >> `matches` checks that the server response matches `probe.pattern`.
->
+
+| Parameter | Description |
+|-----------|-------------|
+| `type` | The type of `probe` to configure in the `probe.type` field of the `farms`. |
+| `port` | Indicates whether the port can be configured for this probe. |
+| `method` | The list of HTTP methods handled or `null` if none exist. |
+| `url` | Indicates whether the probe URL can be configured. |
+| `matches` | The list of available comparators for this probe. |
 
 ##### **TCP**
 

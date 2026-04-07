@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Find the most frequently asked questions about OVHcloud Public Cloud services
-updated: 2025-06-17
+updated: 2026-03-31
 ---
 
 <style>
@@ -33,6 +33,12 @@ For more information on Public Cloud billing, see [our dedicated guide](/pages/p
 
 > [!success]
 > Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
+
+///
+
+/// details | How long is an OVHcloud voucher valid?
+
+OVHcloud vouchers are generally valid for one month. You should use them as soon as possible to make full use of them. The voucher balance is applied before the Public Cloud credit.
 
 ///
 
@@ -150,6 +156,20 @@ Depending on your needs, you will need to disable the `Port Security` feature on
 Please refer to our guide on [Managing firewall rules and port security on networks using OpenStack CLI](/pages/public_cloud/public_cloud_cross_functional/security_group_private_network).
 
 You can also find all the details in the [OpenStack documentation](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) or on [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
+
+///
+
+/// details | What are the best practices for sending emails from a public cloud instance?
+
+To prevent your emails from being marked as spam, you need to configure your infrastructure correctly.
+
+This includes:
+
+- email authentication (SPF, DKIM, DMARC),
+- reverse DNS (PTR) configuration,
+- adherence to email providers’ best practices.
+
+For more details, see our dedicated guide: [How to prevent your emails from being marked as spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 ///
 

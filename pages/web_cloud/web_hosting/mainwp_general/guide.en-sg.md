@@ -1,7 +1,7 @@
 ---
 title: "Managing multiple WordPress websites with the MainWP plugin"
 excerpt: "Find out how to manage multiple WordPress websites from a single tool with the MainWP plugin"
-updated: 2024-01-25
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -22,7 +22,6 @@ Managing multiple websites can be complex and time-consuming. If you manage mult
 ## Requirements
 
 - A [Web Cloud hosting plan](/links/web/hosting).
-- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
 - Access to the WordPress administration interface.
 
 > [!warning]
@@ -34,9 +33,7 @@ Managing multiple websites can be complex and time-consuming. If you manage mult
 
 ## Instructions
 
-If you are not already logged in, access the administration interface of your one-click module for which you want to install the MainWP dashboard.
-
-![mainWP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/access-the-module-s-administration-interface.png){.thumbnail}
+If you are not already logged in, access the WordPress administration interface on which you want to install the MainWP dashboard.
 
 Enter your login and password to log in. The WordPress dashboard appears.
 
@@ -76,7 +73,7 @@ In the main menu on the left, click `Sites`{.action}, then `Add New`{.action}. T
 
 Enter the URL of the child site you want to connect to the MainWP dashboard. Just below, select the button to indicate that you have installed and activated the MainWP Child plugin on your child website. The following two new fields are displayed:
 
-- `Administrator username`: log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Select the web hosting plan concerned, and click the `1-click modules`{.action} tab. In the table that pops up, identify the row that corresponds to your 1-click module. Your admin name is in the `Login`{.action} column.
+- `Administrator username`: enter your login credentials for the WordPress administration interface.
 - `Site title`: enter the value you want. If you connect many child websites, remember to enter an explicit site title.
 
 ![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/add_site.png){.thumbnail}

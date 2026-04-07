@@ -1,6 +1,6 @@
 ---
-title: 'Utiliser le Yealink T4X'
-excerpt: 'Découvrez comment utiliser votre téléphone Yealink T4X'
+title: "Utiliser le téléphone Yealink T4X"
+excerpt: "Découvrez comment utiliser votre téléphone Yealink T4X"
 flag: hidden
 updated: 2018-05-30
 ---
@@ -91,7 +91,7 @@ Dans l'onglet `Services`{.action}, sélectionnez la ligne téléphonique concern
 
 ![Espace client Telecom](images/control_panel_telecom.png){.thumbnail}
 
-Vous aurez accès à la section `Gestion des transferts d'appels`avec les éléments suivants :
+Vous aurez accès à la section `Gestion des transferts d'appels` avec les éléments suivants :
 
 - `Transfert à l'aveugle autorisé` : si l'option est positionnée sur `Non`{.action}, vous ne pourrez effectuer que des transferts accompagnés ;
 - `Transfert à l'aveugle sur raccroché` : si l'option est positionnée sur `Oui`{.action}, vous pourrez raccrocher le combiné au lieu d'appuyer sur `transfert`{.action} ;

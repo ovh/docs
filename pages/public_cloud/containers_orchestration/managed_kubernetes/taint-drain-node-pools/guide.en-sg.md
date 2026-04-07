@@ -1,7 +1,7 @@
 ---
 title: Taint, cordon and drain specific Nodes and Nodes Pools
 excerpt: 'Find out how to do some operations on specific Nodes and Nodes Pools, like taint, drain and cordon, on OVHcloud Managed Kubernetes'
-updated: 2021-12-23
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -36,7 +36,17 @@ For these use cases, and other ones as well, you can do operations on Nodes. And
 ## Requirements
 
 - a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -106,12 +116,12 @@ Let's display our nodes. We should have 3 nodes running in our first node pool a
 ```bash
 $ kubectl get nodes
 NAME                                         STATUS   ROLES    AGE     VERSION
-nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   2d      v1.22.2
-second-node-pool-node-519613                 Ready    <none>   3m30s   v1.22.2
-second-node-pool-node-5fda8f                 Ready    <none>   3m28s   v1.22.2
-second-node-pool-node-c355db                 Ready    <none>   3m35s   v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   2d      v1.34.0
+second-node-pool-node-519613                 Ready    <none>   3m30s   v1.34.0
+second-node-pool-node-5fda8f                 Ready    <none>   3m28s   v1.34.0
+second-node-pool-node-c355db                 Ready    <none>   3m35s   v1.34.0
 ```
 
 ### Cordon a Node
@@ -143,12 +153,12 @@ node/second-node-pool-node-c355db cordoned
 
 $ kubectl get nodes
 NAME                                         STATUS                     ROLES    AGE     VERSION
-nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready                      <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready                      <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready                      <none>   2d      v1.22.2
-second-node-pool-node-519613                 Ready,SchedulingDisabled   <none>   4m23s   v1.22.2
-second-node-pool-node-5fda8f                 Ready,SchedulingDisabled   <none>   4m21s   v1.22.2
-second-node-pool-node-c355db                 Ready,SchedulingDisabled   <none>   4m28s   v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready                      <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready                      <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready                      <none>   2d      v1.34.0
+second-node-pool-node-519613                 Ready,SchedulingDisabled   <none>   4m23s   v1.34.0
+second-node-pool-node-5fda8f                 Ready,SchedulingDisabled   <none>   4m21s   v1.34.0
+second-node-pool-node-c355db                 Ready,SchedulingDisabled   <none>   4m28s   v1.34.0
 ```
 
 All the nodes in `second-node-pool` are now marked as `Unschedulable`.
@@ -173,12 +183,12 @@ node/second-node-pool-node-c355db uncordoned
 
 $ kubectl get nodes
 NAME                                         STATUS   ROLES    AGE     VERSION
-nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   2d      v1.22.2
-second-node-pool-node-519613                 Ready    <none>   4m53s   v1.22.2
-second-node-pool-node-5fda8f                 Ready    <none>   4m51s   v1.22.2
-second-node-pool-node-c355db                 Ready    <none>   4m58s   v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   2d      v1.34.0
+second-node-pool-node-519613                 Ready    <none>   4m53s   v1.34.0
+second-node-pool-node-5fda8f                 Ready    <none>   4m51s   v1.34.0
+second-node-pool-node-c355db                 Ready    <none>   4m58s   v1.34.0
 ```
 
 Nodes are in `Ready` state again.
@@ -214,12 +224,12 @@ error: cannot delete DaemonSet-managed Pods (use --ignore-daemonsets to ignore):
 
 $ kubectl get nodes
 NAME                                         STATUS                     ROLES    AGE     VERSION
-nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready                      <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready                      <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready                      <none>   2d      v1.22.2
-second-node-pool-node-519613                 Ready,SchedulingDisabled   <none>   5m37s   v1.22.2
-second-node-pool-node-5fda8f                 Ready,SchedulingDisabled   <none>   5m35s   v1.22.2
-second-node-pool-node-c355db                 Ready,SchedulingDisabled   <none>   5m42s   v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready                      <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready                      <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready                      <none>   2d      v1.34.0
+second-node-pool-node-519613                 Ready,SchedulingDisabled   <none>   5m37s   v1.34.0
+second-node-pool-node-5fda8f                 Ready,SchedulingDisabled   <none>   5m35s   v1.34.0
+second-node-pool-node-c355db                 Ready,SchedulingDisabled   <none>   5m42s   v1.34.0
 ```
 
 As you can see, Kubernetes can't remove `DaemonSet` objects, so in order to not have this error message, you can add the `--ignore-daemonsets` option:
@@ -245,12 +255,12 @@ node/second-node-pool-node-c355db uncordoned
 
 $ kubectl get nodes
 NAME                                         STATUS   ROLES    AGE     VERSION
-nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   2d      v1.22.2
-nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   2d      v1.22.2
-second-node-pool-node-519613                 Ready    <none>   6m8s    v1.22.2
-second-node-pool-node-5fda8f                 Ready    <none>   6m6s    v1.22.2
-second-node-pool-node-c355db                 Ready    <none>   6m13s   v1.22.2
+nodepool-9680a2e9-3e58-48c7-b4-node-874105   Ready    <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-b5c9e2   Ready    <none>   2d      v1.34.0
+nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   2d      v1.34.0
+second-node-pool-node-519613                 Ready    <none>   6m8s    v1.34.0
+second-node-pool-node-5fda8f                 Ready    <none>   6m6s    v1.34.0
+second-node-pool-node-c355db                 Ready    <none>   6m13s   v1.34.0
 ```
 
 ### Taint a Node

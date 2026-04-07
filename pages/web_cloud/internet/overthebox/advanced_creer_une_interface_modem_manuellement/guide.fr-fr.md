@@ -69,7 +69,7 @@ Les OTB V3, V3 LTE et V2c ont **quatre** interfaces physiques, par défaut **tro
 > 4. Confirmation
 >>
 >> - Retournez dans la section `Interfaces`{.action}.
->> - Vérifiez que l'interface est présente dans le bridge en passant la souris au dessus des icônes.
+>> - Vérifiez que l'interface est présente dans le bridge en passant la souris au-dessus des icônes.
 >>
 >> ![overthebox](images/step1-v3-5-confirmSchema-2024.png){.thumbnail}
 >>
@@ -204,7 +204,7 @@ Tout d'abord, consultez le guide « [Configurer un routeur manuellement](/pages/
 
 > [!warning]
 >
-> Cette section est pour un usage avancé, veuillez d'abord consulter le guide « [Comment configurer un lien 4G sur OverTheBox?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
+> Cette section est pour un usage avancé, veuillez d'abord consulter le guide « [Comment configurer un lien 4G sur OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
 >
 
 Cette section est indiquée pour vous si :

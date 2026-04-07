@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Jak używać PuTTY do połączeń SSH i uwierzytelniania"
 excerpt: "Dowiedz się, jak uzyskać dostęp do serwera cloud lub hostingu i zarządzać kluczami SSH za pomocą klienta SSH PuTTY"
-updated: 2024-11-11
+updated: 2026-04-01
 ---
 
 <style>
@@ -28,7 +28,6 @@ details[open]>summary::before {
 
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) zainstalowany na lokalnym sprzęcie
 - Podstawowa znajomość [protokołu SSH i jego zastosowania](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!warning]
 > OVHcloud zapewnia usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tutorial ten wyjaśnia, jak korzystać z rozwiązań OVHcloud przy użyciu narzędzi zewnętrznych. Może być konieczne dostosowanie niektórych instrukcji specyficznych dla systemu operacyjnego lokalnego komputera lub serwera.

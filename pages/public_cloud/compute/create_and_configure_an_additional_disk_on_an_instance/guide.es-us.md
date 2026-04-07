@@ -32,10 +32,17 @@ Esto puede ser útil en los siguientes casos:
 
 ## Requisitos
 
-- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 - Disponer de una instancia de [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su cuenta de OVHcloud.
 - Tener acceso de administrador (sudo) a su instancia a través de SSH.
 - Preparar el entorno si desea utilizar [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+### Acceso al área de cliente de OVHcloud
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 >
@@ -91,7 +98,7 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 
 > [!tabs]
 > **Desde el área de cliente de OVHcloud**
->> Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda, en **Storage & Backup**.
+>> Abra `Block Storage`{.action} en el menú de la izquierda, en **Storage & Backup**.
 >>
 >> En esta sección, haga clic en el botón `Crear un volumen`{.action}.
 >>

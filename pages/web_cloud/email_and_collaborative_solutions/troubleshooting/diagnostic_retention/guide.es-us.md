@@ -1,11 +1,10 @@
 ---
 title: Restaurar los elementos eliminados de su cuenta de correo
 excerpt: Cómo restaurar elementos eliminados de su cuenta de correo a través del webmail (OWA)
-updated: 2022-02-08
+updated: 2026-03-24
 ---
 
 
- 
 ## Objetivo
 
 Ha eliminado por error uno o varios elementos (correo electrónico, contacto, cita del calendario) y ha vaciado su papelera. Es posible restaurarlas hasta 14 días después de eliminarlas mediante el webmail OWA (Outlook Web App).
@@ -42,10 +41,6 @@ La recuperación de los elementos eliminados puede realizarse desde el webmail (
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs?start=117" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Conéctese a la dirección de correo electrónico correspondiente a través del webmail (OWA): [Webmail](/links/web/email).
-
-> [!primary]
->
-> Para los productos de tipo **Private Exchange**, el enlace de conexión al webmail se sitúa en el recuadro **Conexión** de la pestaña `Información general`{.action} de su plataforma.
 
 Una vez que se haya conectado, haga clic en `Elementos eliminados`{.action} en la columna de la izquierda y seleccione `Obtener elementos eliminados`{.action} en la parte superior de la columna central.
 

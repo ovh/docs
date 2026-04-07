@@ -21,11 +21,20 @@ Ce tutoriel explique comment connaître l'état de santé de chaque serveur pour
 ## Prérequis
 
 - Une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud
-- Un accès à l'[espace client OVHcloud](/links/manager)
 - Un accès à l'[API OVHcloud](/links/api)
 - Une ferme configurée
 - Un front-end configuré
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 > [!primary]
