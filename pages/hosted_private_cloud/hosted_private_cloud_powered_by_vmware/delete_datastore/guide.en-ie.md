@@ -1,7 +1,7 @@
 ---
 title: 'Removing a datastore'
 excerpt: 'Find out how to remove a datastore from your Private Cloud'
-updated: 2020-07-01
+updated: 2026-04-07
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ In certain cases — like replacing a datastore or scaling it up to a higher cap
 
 ## Requirements
 
-* an [OVH Private Cloud](https://www.ovh.ie/private-cloud/) solution
+* an [OVHcloud Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) solution
 * access to the vSphere management interface
 
 ## Instructions
@@ -20,23 +20,29 @@ In certain cases — like replacing a datastore or scaling it up to a higher cap
 > [!warning]
 >
 > For security reasons, the removal request will be blocked if you have virtual machines (VMs) on the datastore concerned (they will be listed in the confirmation window).
-> 
+>
+> Also check that none of the following remain:
+>
+> - ISO or snapshot attached to a VM;
+> - template present on the datastore;
+> - residual file or directory;
+> - vCLS file.
 
-To remove a datastore, right-click on the resource concerned. Then select `OVH Private Cloud`{.action}, and `Remove Storage`{.action}.
+To remove a datastore, right-click on the resource concerned. Then select `OVHcloud`{.action}, and `Remove this Storage`{.action}.
 
-![Choice of datastore](images/removestorage_01.png){.thumbnail}
+![Choice of datastore](images/removedatastore01.png){.thumbnail}
 
 A confirmation window will pop up. Confirm by clicking `Next`{.action}.
 
-![Confirm removal](images/removestorage_02.png){.thumbnail}
+![Confirm removal](images/removedatastore02.png){.thumbnail}
 
 The removal request will then be processed.
 
-![Removal confirmed](images/removestorage_03.png){.thumbnail}
+![Removal confirmed](images/removedatastore03.png){.thumbnail}
 
 You can also monitor the progress of the datastore removal in `Recent Tasks`{.action}.
 
-![Removal monitoring task](images/removedatastore.png){.thumbnail}
+![Removal monitoring task](images/removedatastore04.png){.thumbnail}
 
 ## Go further
 

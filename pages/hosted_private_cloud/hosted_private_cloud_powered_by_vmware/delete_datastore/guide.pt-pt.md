@@ -1,7 +1,7 @@
 ---
 title: 'Eliminar um datastore'
 excerpt: 'Saiba como eliminar um datastore do Private Cloud'
-updated: 2020-07-01
+updated: 2026-04-07
 ---
 
 ## Sumário
@@ -20,7 +20,13 @@ Existem casos em que pode ser útil eliminar um datastore do cluster, por exempl
 > [!warning]
 >
 > Por razões de segurança, não é possível eliminar um datastore se este tiver máquinas virtuais (na janela de validação, pode ver a lista de máquinas virtuais alojadas no datastore).
-> 
+>
+> Verifique também que não reste nenhum:
+>
+> - ISO ou snapshot associado a uma VM;
+> - template presente no datastore;
+> - ficheiro ou diretório residual;
+> - ficheiro vCLS.
 
 Para eliminar um datastore, aceda ao armazenamento da sua plataforma na janela `Storage`{.action} da coluna à esquerda. Depois, clique com o botão direito sobre o datastore correspondente e selecione `OVHcloud`{.action} e, a seguir, `Remove storage`{.action}.
 
