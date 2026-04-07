@@ -108,11 +108,19 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 > [!warning]
 > Si votre bloc IP importé est déjà annoncé sur Internet à partir d’autre sites qu’OVHcloud lors de l’utilisation du service BYOIP (multihoming), vous risquez d’éventuelles pertes de paquets ou d'autres difficultés de routage. Nous ne serons par conséquent pas en mesure de vous garantir la connectivité aux services OVHcloud avec votre bloc IP importé.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [IP publiques](/links/control-panel/network-public-ip)
+- **Pour accéder à vos services :** `Network`{.action} > `Adresses IP Publiques`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 ## En pratique
 
 ### Comment commander un service BYOIP
-
-Connectez-vous à l'[espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche, puis sélectionnez `Adresses IP publiques`{.action}.
 
 ![Adresses IP publiques - Bouton BYOIP](images/byoip_public_ip.png){.thumbnail}
 

@@ -37,6 +37,16 @@ Vous devez disposer de :
 >
 > Il est donc indispensable de limiter leur utilisation à des adresses IP de confiance, en l’occurrence les adresses IP de sortie de votre service OVHcloud Load Balancer. Les principaux serveurs tels que Nginx et Apache disposent de modules capable de gérer cet aspect de sécurité et de confiance.
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 ### Obtenir la liste de vos adresses IP de sortie

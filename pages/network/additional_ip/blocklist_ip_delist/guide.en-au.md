@@ -40,6 +40,16 @@ It is important to note that blocklists can include domain names and IP addresse
 
 - You have no open abuse cases involving your services.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 ## Instructions
 
 ### Supported providers
@@ -71,7 +81,6 @@ It is important to note that blocklists can include domain names and IP addresse
     > **Best practices:**
     > 
     > IP addresses used to send email should resolve to the responsible party domain name. You can also use subdomains for the reverse DNS resolution, such as `mail.domain_name.com` or `gateway.domain_name.com`.
-
 
 ### Unsupported providers
 
@@ -109,7 +118,6 @@ A detailed explanation is mentioned on the site <http://www.usenix.org.uk/conten
 
 #### UCEprotect
 
-
 /// details | More information...
 
 Recently, UCE Protect has placed over a thousand new ASNs on their blacklist. Unfortunately, our ASN (AS16276) has been affected by this. To view the list of other affected ASNs and the number of new ASNs added, please check the following links:
@@ -125,7 +133,6 @@ If you are currently affected by this, we recommend the following:
 
 1. Use IPv6 addresses to send emails. UCE Protect does not blacklist email sent via IPv6. All of our OVHcloud services come with at least a single IPv6 address which you can configure. All major email providers now support IPv6.
 2. Ask the receiving party to contact their mail provider and request to stop using UCE Protect blacklist for the time being.
-
 
 ///
 
@@ -145,15 +152,14 @@ Delisting should take between 20 and 30 minutes to complete.
 
 ///
 
-
 #### MIPSpace
 
 /// details | More information...
 
-To [delist an IP from MIPSpace](https://www.mipspace.com/removal.php), first log in to the [OVHcloud Control Panel](/links/manager) and ensure that the following information is up-to-date:
+To [delist an IP from MIPSpace](https://www.mipspace.com/removal.php), first ensure that the following information is up-to-date:
 
 - [The reverse DNS resolution](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (PTR record).
-- The details of your organization (*RWhois*) in the section `Network`{.action}: Open `IP`{.action} and then click the `Cogwheel button`{.action} on the right. Select `Manage my organisation`{.action} from the drop-down menu.
+- The details of your organization (*RWhois*): in the [Public IP Addresses](/links/control-panel/network-public-ip) section of your OVHcloud Control Panel, go to the `Manage my organisations`{.action} tab.
 
 ///
 

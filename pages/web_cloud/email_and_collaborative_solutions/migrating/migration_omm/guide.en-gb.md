@@ -1,7 +1,7 @@
 ---
 title: 'Migrate email accounts via OVHcloud Mail Migrator'
 excerpt: 'Find out how to migrate your email accounts to OVHcloud using our OVHcloud Mail Migrator tool'
-updated: 2025-11-25
+updated: 2026-03-30
 ---
 
 <style>
@@ -15,7 +15,7 @@ updated: 2025-11-25
 
 ## Objective
 
-[OVHcloud Mail Migrator](/links/web/omm) is a tool created by OVHcloud to meet the need for reversibility. It allows you to migrate your email accounts to your OVHcloud email addresses or an external email service. The process supports different types of content, such as emails, contacts, calendars and tasks, as long as these are compatible with your email addresses.
+[OVHcloud Mail Migrator](/links/web/omm) is a tool created by OVHcloud to meet the need for reversibility. It allows you to migrate your email accounts to OVHcloud email addresses or an external email service. The process supports different types of content, such as emails, contacts, calendars and tasks, as long as these are compatible with your email addresses.
 
 **Find out how to migrate your email accounts to OVHcloud using our OVHcloud Mail Migrator tool.**
 

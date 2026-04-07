@@ -334,6 +334,7 @@ public-cloud-storage-block-storage-configuration: Konfiguration
 public-cloud-storage-block-storage-migration: Migration
 public-cloud-storage-block-storage-additional-resources: Zusätzliche Ressourcen
 public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-key-concepts: Schlüsselkonzepte
 public-cloud-storage-file-storage-getting-started: Erste Schritte
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
@@ -472,6 +473,8 @@ web-cloud-hosting-tutorials-wordpress: Tutorials WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutorials für Cloud Web Hostings
 web-cloud-managed-hosting-for-wordpress: Managed Hosting for WordPress
 web-cloud-managed-hosting-for-wordpress-getting-started: Erste Schritte
+web-cloud-video-center: Video Center
+web-cloud-video-center-getting-started: Erste Schritte
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Erste Schritte
 storage-object-storage: Object Storage
@@ -506,6 +509,7 @@ storage-file-storage-ha-nas-configuration: Konfiguration
 storage-file-storage-ha-nas-migration: Migration
 storage-file-storage-ha-nas-additional-resources: Zusätzliche Ressourcen
 storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
+storage-file-storage-public-cloud-file-storage-key-concepts: Schlüsselkonzepte
 storage-file-storage-public-cloud-file-storage-getting-started: Erste Schritte
 storage-block-storage: Block Storage
 storage-block-storage-block-volume: Block volume

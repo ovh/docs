@@ -189,8 +189,6 @@ You can set up an automatic reply directly by logging in to your email account v
 
 [Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-[MX Plan - Create an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).

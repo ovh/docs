@@ -13,8 +13,17 @@ Avec OVHcloud Connect, vous pouvez relier votre réseau d'entreprise à votre r�
 ## Prérequis
 
 - Détenir une solution [OVHcloud Connect](/links/network/ovhcloud-connect) avec une configuration POP valide.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
 ## Liste des diagnostics disponibles
 
 ### Mode L3
@@ -30,8 +39,6 @@ Avec OVHcloud Connect, vous pouvez relier votre réseau d'entreprise à votre r�
 ## En pratique
 
 ### Mode L3
-
-Vous retrouverez la liste de vos services `OVHcloud Connect`{.action} dans la section `Network`{.action} de votre [espace client OVHcloud](/links/manager).
 
 ![OCC Control Panel](images/OCC_cpanel.png){.thumbnail}
 

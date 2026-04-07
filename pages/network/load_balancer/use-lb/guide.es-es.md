@@ -11,13 +11,20 @@ Esta guía explica los primeros pasos con el servicio Load Balancer y presenta s
 ## Requisitos
 
 - Tener el servicio [Load Balancer de OVHcloud](/links/network/load-balancer) en su cuenta de OVHcloud.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Ruta de navegación:** `Network`{.action} > `Load Balancer`{.action} > Seleccione su servicio
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Procedimiento
 
 ### Administrar el Load Balancer en el área de cliente
-
-Para gestionar el Load Balancer desde el área de cliente, acceda a la sección `Bare metal Cloud`{.action} y haga clic en `Network`{.action} y `Load Balancer`{.action}. Seleccione su servicio.
 
 ![Load Balancer](images/lbip-main.png){.thumbnail}
 

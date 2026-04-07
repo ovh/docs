@@ -98,7 +98,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 3**
 >>
->> W oknie, które się wyświetli, wskaż adres IP lub maskę, którą chcesz autoryzować w `IP/maska`{.action}, a następnie dodaj opis, jeśli chcesz. Zdecyduj, czy chcesz udzielić dostępu wyłącznie do baz danych, czy również do SFTP. Na koniec kliknij `Zatwierdź`{.action}.
+>> W oknie, które się wyświetli, wskaż adres IP lub maskę, którą chcesz autoryzować w `IP / maska`{.action}, a następnie dodaj opis, jeśli chcesz. Zdecyduj, czy chcesz udzielić dostępu wyłącznie do baz danych, czy również do SFTP. Na koniec kliknij `Zatwierdź`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 3**
 >>
->> Zaznacz opcję `Zezwól hostingom OVHcloud na dostęp do bazy danych`{.action}.
+>> Zaznacz opcję `Zezwól hostingowi OVHcloud na dostęp do bazy danych`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
 
@@ -188,7 +188,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 3**
 >>
->> W polu **Ogólna konfiguracja MySQL** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją bezpośrednio zmienić, a następnie kliknąć `Zastosuj`{.action}.
+>> W polu **Ogólna konfiguracja MySQL** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją bezpośrednio zmienić, a następnie kliknąć `Wyślij`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 3**
 >>
->> W polu **Ogólna konfiguracja PostgreSQL** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją bezpośrednio zmienić, a następnie kliknąć `Zastosuj`{.action}.
+>> W polu **Ogólna konfiguracja PostgreSQL** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją bezpośrednio zmienić, a następnie kliknąć `Wyślij`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-postgresql.png){.thumbnail}
 >>

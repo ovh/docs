@@ -27,6 +27,16 @@ The vRack Services product uses the concept of a subnet to define a range of pri
 3. **Service Endpoint**
 The Service Endpoint is your access point to the managed service. It is associated with a subnet and has one or more automatically assigned private IP addresses.
 
+<!-- CP-NAV-START:network-vrack-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack Services](/links/control-panel/network-vrack-services)
+- **Navigation path:** `Network`{.action} > `vRack Services`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack-services -->
 ## Instructions
 
 There are 3 steps to configure a Service Endpoint:
@@ -120,7 +130,7 @@ Note that in order to create a Service Endpoint, you must first go through the s
 
 This section covers the actions that can be performed using the OVHcloud API. This includes creating subnets and Service Endpoints, associating vRack Services with a vRack, and managing these services with detailed instructions. These actions highlight the operational capabilities of vRack Services and how they can be used to enhance and secure your network infrastructure.
 
-You must first authenticate via this [page](https://ca.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth).
+You must first authenticate via this [page](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth).
 
 <a name="actions"></a>
 
@@ -138,7 +148,7 @@ First, you need to list your vRack Services to get the ID of the vRack Services 
 Here is the command line :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
  -H "accept: application/json"\
  -H "authorization: Bearer <YOUR_BEARER_TOKEN>" \
 ```
@@ -155,7 +165,7 @@ The ID used in our example is `vrs-a8y-v9a-x5m-f4u`
 Here is the command line :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u/eligibleManagedService" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u/eligibleManagedService" \
  -H "accept: application/json"\
  -H "authorization: Bearer <YOUR_BEARER_TOKEN>" \
 ```
@@ -223,7 +233,7 @@ For this section, please read the [Actions](#actions) section above.
 Action formulated with a `GET`{.action} :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
  -H "authorization: Bearer <YOUR_BEARER_TOKEN>" \
 ```
@@ -285,7 +295,7 @@ Output:
 Action formulated with the `PUT`{.action} - Update in progress:
 
 ```bash
-curl -X PUT "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
  -H "authorization: Bearer <YOUR_BEARER_TOKEN>"\
  -H "content-type: application/json" \
@@ -370,7 +380,7 @@ Output:
 Action formulated with `GET`{.action}:
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
  -H "authorization: Bearer <YOUR_BEARER_TOKEN>" \
 ```

@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Hier finden Sie die am häufigsten gestellten Fragen zu den OVHcloud Public Cloud Diensten
-updated: 2026-03-24
+updated: 2026-03-31
 ---
 <style>
 details>summary {
@@ -33,6 +33,12 @@ Um von einem Abrechnungsmodus zum anderen zu wechseln, nutzen Sie unsere Anleitu
 
 > [!success]
 > Profitieren Sie von reduzierten Preisen, indem Sie Ihre Public Cloud-Ressourcen für einen Zeitraum von 1 bis 36 Monaten abonnieren. Weitere Informationen finden Sie auf unserer Webseite: [Savings Plan](/links/public-cloud/savings-plan).
+
+///
+
+/// details | Wie lange ist ein OVHcloud Gutschein gültig?
+
+OVHcloud Gutscheine sind in der Regel einen Monat gültig. Verwenden Sie diese so schnell wie möglich, um sie optimal zu nutzen. Der Gutschein-Saldo wird vor dem Public Cloud Guthaben verwendet.
 
 ///
 

@@ -98,7 +98,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Étape 3**
 >>
->> Sur la fenêtre qui s’affiche, indiquez l’adresse IP ou le masque que vous désirez autoriser dans `IP/masque`{.action} puis ajoutez une description si vous le souhaitez. Décidez ensuite si vous voulez donner accès uniquement aux bases de données ou au SFTP. Enfin, cliquez sur `Valider`{.action}.
+>> Sur la fenêtre qui s’affiche, indiquez l’adresse IP ou le masque que vous désirez autoriser dans `IP / masque`{.action} puis ajoutez une description si vous le souhaitez. Décidez ensuite si vous voulez donner accès uniquement aux bases de données ou au SFTP. Enfin, cliquez sur `Valider`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
@@ -223,7 +223,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> >
 >> > Nous vous recommandons de toujours utiliser le mode par défaut, sauf si votre base de données a été mise à jour depuis une version ayant un mode par défaut différent de la version actuelle.
 >>
->> Effectuez les modifications nécessaires puis cliquez sur `Confirmer`{.action}.
+>> Effectuez les modifications nécessaires puis cliquez sur `Valider`{.action}.
 
 > [!warning]
 >

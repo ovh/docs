@@ -1,7 +1,7 @@
 ---
 title: "Migrare i tuoi indirizzi email da una piattaforma OVHcloud verso un'altra"
 excerpt: "Questa guida ti mostra come migrare gli indirizzi email da una piattaforma Exchange o Email Pro verso un'altra piattaforma Exchange, Email Pro, MX Plan o Zimbra"
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Obiettivo
@@ -24,6 +24,7 @@ Per migrare i tuoi indirizzi email presenti su una piattaforma Exchange o Email 
 
 - Disporre di una piattaforma **"sorgente"** con conti [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) configurati o [Zimbra](/links/web/zimbra).
 - Disporre di una piattaforma di **"destinazione"** con account [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) o MX Plan (inclusa nella soluzione MX Plan o in una soluzione di [hosting Web OVHcloud](/links/web/hosting)) Questa piattaforma deve disporre di account non configurati o disponibili per accogliere gli indirizzi email che devono essere migrati.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-email-pro -->
 <!-- CP-NAV-START:web-exchange -->
@@ -124,7 +125,7 @@ Per eliminarlo, seleziona la scheda `Account email`{.action} della tua piattafor
 
 In questa fase, gli account email devono essere già migrati e funzionali. Per motivi di sicurezza, ti consigliamo di assicurarti che la configurazione del tuo dominio sia corretta consultando il tuo Spazio Cliente OVHcloud.
 
-Per farlo, seleziona il servizio Email Pro, Exchange o Zimbra interessato, quindi vai nell'opzione `Domini associati`{.action} o `Dominio`{.action} sulla tua piattaforma. Verifica la sezione o la colonna `Diagnostico`{.action}.
+Per farlo, seleziona il servizio Email Pro, Exchange o Zimbra interessato, quindi vai nell'opzione `Domini associati`{.action} o `Dominio`{.action} sulla tua piattaforma. Verifica la sezione o la colonna `Diagnostica`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 

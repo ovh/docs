@@ -1,7 +1,7 @@
 ---
 title: "E-Mail-Accounts mit dem OVHcloud Mail Migrator migrieren"
 excerpt: "Erfahren Sie, wie Sie Ihre E-Mail-Accounts mit dem OVHcloud Mail Migrator zu OVHcloud migrieren"
-updated: 2025-11-25
+updated: 2026-03-30
 ---
 
 <style>
@@ -17,7 +17,7 @@ updated: 2025-11-25
 
 [OVHcloud Mail Migrator](/links/web/omm) ist ein von OVHcloud entwickeltes Tool, das den Bedarf nach Reversibilität abdeckt. Sie können damit E-Mail-Accounts auf Ihre OVHcloud E-Mail-Accounts oder einen externen E-Mail-Dienst migrieren. Dabei können verschiedene Inhalte wie E-Mails, Kontakte, Kalender und Aufgaben übertragen werden, sofern diese mit Ihren E-Mail-Accounts kompatibel sind.
 
-**Diese Anleitung erklärt, wie Sie Ihre E-Mail--Accounts mit unserem OVHcloud Mail Migrator-Tool zu OVHcloud migrieren können.**
+**Diese Anleitung erklärt, wie Sie Ihre E-Mail-Accounts mit unserem OVHcloud Mail Migrator-Tool zu OVHcloud migrieren können.**
 
 ## Voraussetzungen
 
@@ -27,7 +27,7 @@ updated: 2025-11-25
 
 ## In der praktischen Anwendung
 
-Um auf OMM zuzugreifen, verwenden Sie die Adresse: <omm.ovhcloud.com>
+Um auf OMM zuzugreifen, verwenden Sie die Adresse: <https://omm.ovhcloud.com/>
 
 ![omm](images/omm-01.png){.thumbnail .w-600}
 
@@ -100,7 +100,7 @@ Füllen Sie die Informationen entsprechend des Accounttyps aus:
     - **Service** *(je nach Typ)*: Wählen Sie den Dienst aus, der mit dem Ziel-E-Mail-Account verbunden ist.
     - **Advanced settings** > **Delegation account ID** *(je nach Typ)*: Wenn der zu migrierende E-Mail-Account ein geteilter Account ist, müssen Sie die E-Mail-Adresse des Administrator-Accounts des Delegation-Accounts eingeben.
 - **Start of Transfers**: Sie können die Migration unmittelbar über `Immediately` starten oder `Later` ankreuzen, um die Migration zu verschieben. Eine verschobene Migration ermöglicht es, Datum und Uhrzeit des Starts zu definieren.
-- **Data to transfer**: Abhängig vom Typ des zu migrierenden E-Mail-Accounts und des Ziel-Accountss zeigt Ihnen dieser Abschnitt die verschiedenen Arten von Daten an, die bei der Migration unterstützt werden. Dies hängt vom Quell-Account und vom Ziel-Accounts ab.
+- **Data to transfer**: Abhängig vom Typ des zu migrierenden E-Mail-Accounts und des Ziel-Accounts zeigt Ihnen dieser Abschnitt die verschiedenen Arten von Daten an, die bei der Migration unterstützt werden. Dies hängt vom Quell-Account und vom Ziel-Account ab.
 
 ![omm](images/omm-create-migration-04.png){.thumbnail .w-600}
 
@@ -115,7 +115,7 @@ Sobald die Parameter der Quell- und Ziel-Accounts ausgefüllt sind, klicken Sie 
 
 ### Über eine Anmeldung beim OVHcloud Kunden-Account migrieren <a name="sso-migration"></a>
 
-Bei einer Migration zu oder von einem OVHcloud Kunden-Account können Sie unserere Angebote `MX Plan`, `E-Mail Pro`, `Exchange` und `Zimbra` auswählen.
+Bei einer Migration zu oder von einem OVHcloud Kunden-Account können Sie unsere Angebote `MX Plan`, `E-Mail Pro`, `Exchange` und `Zimbra` auswählen.
 
 ![omm](images/omm-migration-sso-00.png){.thumbnail .w-300}
 

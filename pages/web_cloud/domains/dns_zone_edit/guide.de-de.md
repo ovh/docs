@@ -47,9 +47,9 @@ Weitere Informationen finden Sie in unseren Anleitungen „[Alle Informationen z
 >
 > - Wenn Ihre Domain nicht die DNS-Server von OVHcloud verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, der die DNS-Konfiguration Ihrer Domain verwaltet.
 > 
-> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](/links/manager) in den Tab `DNS-Server`{.action} der betreffenden Domain. Bei Bedarf lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)“.
+> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Lesen Sie bei Bedarf unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)“.
 >
-> Seien Sie in jedem Fall vorsichtig, wenn Sie Ihre DNS-Server ändern. Die alte Konfiguration wird deaktiviert, wenn Sie die neue DNS-Zone bei OVHcloud aktivieren und nicht zuvor neu konfiguriert und bearbeitet haben.<br>
+> Seien Sie in jedem Fall vorsichtig, wenn Sie Ihre DNS-Server ändern. Die alte Konfiguration wird deaktiviert, wenn Sie die neue DNS-Zone bei OVHcloud aktivieren und nicht zuvor neu konfiguriert und bearbeitet haben.
 > Sie können nur eine aktive DNS-Zone pro Domainname nutzen.
 >
 
@@ -89,7 +89,7 @@ Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die
 > Weitere Informationen finden Sie in unserer Anleitung zu [Subdomains](/pages/web_cloud/domains/domain_create_subdomains).
 >
 
-Sie können die OVHcloud DNS-Zone Ihrer Domain bearbeiten, indem Sie einen DNS-Eintrag hinzufügen, bearbeiten oder löschen.<br>
+Sie können die OVHcloud DNS-Zone Ihrer Domain bearbeiten, indem Sie einen DNS-Eintrag hinzufügen, bearbeiten oder löschen.
 Dazu können Sie entweder die Zone im Textmodus manuell bearbeiten oder unsere Konfigurationsassistenten verwenden.
 
 #### Zone manuell im Textmodus bearbeiten <a name="txtmod"></a>

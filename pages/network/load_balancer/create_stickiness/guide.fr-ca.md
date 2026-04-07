@@ -15,9 +15,18 @@ Chaque session du service OVHcloud Load Balancer est maintenue par un système d
 ## Prérequis
 
 - Disposer d'un [Load Balancer OVHcloud](/links/network/load-balancer).
-- Avoir accès à l'[espace client OVHcloud](/links/manager), ou bien
 - Avoir accès à l'[API OVHcloud](/links/api).
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 ### Les différents types de suivi de connexion

@@ -17,15 +17,22 @@ Le traitement de la terminaison SSL sur le Load Balancer réduit la charge de ca
 ## Prérequis
 
 - Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 ### Depuis l'espace client OVHcloud
 
 La première étape est de configurer votre frontend pour gérer la terminaison SSL.
-
-Vous pouvez configurer votre terminaison SSL depuis l'[espace client OVHcloud](/links/manager) dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier, créez un nouveau frontend ou éditez-en un existant.
 

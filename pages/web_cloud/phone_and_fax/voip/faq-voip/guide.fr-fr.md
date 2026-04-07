@@ -1,7 +1,7 @@
 ---
 title: "FAQ VoIP OVHcloud"
 excerpt: "Retrouvez les réponses aux questions les plus fréquemment posées sur les services de téléphonie VoIP OVHcloud"
-updated: 2026-03-25
+updated: 2026-03-27
 ---
 
 <style>
@@ -177,7 +177,7 @@ Pour plus de détails, consultez le guide « [Effectuer un changement de contact
 
 /// details | Comment résilier un service VoIP ?
 
-[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud. Sélectionnez le groupe de facturation contenant le service à résilier, puis cliquez sur le service dans l'onglet `Services`{.action}. Accédez à `Gestion du service`{.action} et cliquez sur `Résilier le service`{.action}. La résiliation prend effet à la fin de la période de facturation en cours. Un service résilié ne peut pas être réactivé. Si un téléphone est associé au service en cours de résiliation, un bon de retour (RMA) vous sera envoyé pour le renvoyer et récupérer votre dépôt de garantie. Assurez-vous de sauvegarder vos données (enregistrements d'appels, messages du répondeur) avant la résiliation.
+[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud. Sélectionnez le groupe de facturation contenant le service à résilier, puis cliquez sur le service dans l'onglet `Services`{.action}. Depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation de la ligne`{.action}. La résiliation prend effet à la fin de la période de facturation en cours. Un service résilié ne peut pas être réactivé. Si un téléphone est associé au service en cours de résiliation, un bon de retour (RMA) vous sera envoyé pour le renvoyer et récupérer votre dépôt de garantie. Assurez-vous de sauvegarder vos données (enregistrements d'appels, messages du répondeur) avant la résiliation.
 
 Pour plus de détails, consultez le guide « [Comment résilier un service VoIP ou une ligne Fax](/pages/web_cloud/phone_and_fax/voip/resilier-services-voip) ».
 
@@ -252,7 +252,7 @@ Pour effectuer le renvoi d'appels de votre ligne téléphonique, deux solutions 
 
 /// details | Comment modifier le mot de passe de ma ligne SIP ?
 
-Le mot de passe SIP est un élément essentiel pour l'enregistrement de votre ligne sur un téléphone ou un softphone. Pour le modifier, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud. Sélectionnez la ligne SIP concernée dans l'onglet `Services`{.action}, puis rendez-vous dans `Gestion de la ligne`{.action} > `Mot de passe SIP`{.action}. Saisissez un nouveau mot de passe respectant les critères de sécurité (minimum 8 caractères, mélange de lettres, chiffres et caractères spéciaux). Après la modification, votre téléphone se déconnectera brièvement le temps de se réenregistrer avec le nouveau mot de passe. Si vous utilisez un téléphone Plug & Phone OVHcloud, la mise à jour est automatique. Si vous utilisez un softphone ou un téléphone tiers, vous devrez mettre à jour le mot de passe manuellement dans la configuration de votre appareil.
+Le mot de passe SIP est un élément essentiel pour l'enregistrement de votre ligne sur un téléphone ou un softphone. Pour le modifier, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud. Sélectionnez la ligne SIP concernée dans l'onglet `Services`{.action}, puis rendez-vous dans `Gestion`{.action} > `Mot de passe SIP`{.action}. Saisissez un nouveau mot de passe respectant les critères de sécurité (minimum 8 caractères, mélange de lettres, chiffres et caractères spéciaux). Après la modification, votre téléphone se déconnectera brièvement le temps de se réenregistrer avec le nouveau mot de passe. Si vous utilisez un téléphone Plug & Phone OVHcloud, la mise à jour est automatique. Si vous utilisez un softphone ou un téléphone tiers, vous devrez mettre à jour le mot de passe manuellement dans la configuration de votre appareil.
 
 Pour plus de détails, consultez le guide « [Modifier le mot de passe d'une ligne SIP](/pages/web_cloud/phone_and_fax/voip/modifier-mot-de-passe-ligne-sip) ».
 
@@ -274,7 +274,7 @@ Pour plus de détails, consultez le guide « [Diagnostic du réseau local](/page
 
 /// details | Comment restreindre ma ligne SIP par adresse IP ?
 
-La restriction par IP empêche l'enregistrement de votre ligne SIP depuis des adresses IP non autorisées. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud. Sélectionnez la ligne SIP concernée, puis accédez à `Gestion de la ligne`{.action} > `Restrictions par IP`{.action}. Ajoutez les adresses IP publiques depuis lesquelles vous autorisez l'enregistrement de votre ligne. Vous pouvez renseigner jusqu'à 6 adresses IP. Cette fonctionnalité est particulièrement recommandée si vous utilisez un softphone ou un SIP trunk sur une infrastructure à IP fixe.
+La restriction par IP empêche l'enregistrement de votre ligne SIP depuis des adresses IP non autorisées. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud. Sélectionnez la ligne SIP concernée, puis accédez à `Gestion`{.action} > `Restrictions SIP par IP`{.action}. Ajoutez les adresses IP publiques depuis lesquelles vous autorisez l'enregistrement de votre ligne. Vous pouvez renseigner jusqu'à 6 adresses IP. Cette fonctionnalité est particulièrement recommandée si vous utilisez un softphone ou un SIP trunk sur une infrastructure à IP fixe.
 
 > [!warning]
 >
@@ -294,7 +294,7 @@ Pour plus de détails, consultez le guide « [Configurer les touches programmabl
 
 /// details | Comment configurer des plages horaires et des fermetures exceptionnelles sur ma ligne ?
 
-[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne concernée dans l'onglet `Services`{.action}, puis rendez-vous dans `Gestion des appels`{.action} > `Plages horaires`{.action}. Vous pouvez y définir les créneaux pendant lesquels la ligne est joignable et configurer un renvoi vers le répondeur ou un autre numéro en dehors de ces créneaux. Les fermetures exceptionnelles (jours fériés, congés) permettent de configurer un comportement spécifique sur des dates précises, qui prime sur les plages horaires habituelles.
+[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne concernée dans l'onglet `Services`{.action}, puis rendez-vous dans `Gestion des appels`{.action} > `Gérer les plages horaires`{.action}. Vous pouvez y définir les créneaux pendant lesquels la ligne est joignable et configurer un renvoi vers le répondeur ou un autre numéro en dehors de ces créneaux. Les fermetures exceptionnelles (jours fériés, congés) permettent de configurer un comportement spécifique sur des dates précises, qui prime sur les plages horaires habituelles.
 
 Pour plus de détails, consultez le guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time) ».
 
@@ -314,7 +314,7 @@ Pour plus de détails, consultez le guide « [Gérer et utiliser les appels simu
 
 /// details | Comment utiliser la fonctionnalité Click2Call ?
 
-Le Click2Call permet de déclencher un appel entre votre ligne SIP et un numéro de destination depuis votre espace client ou via l'API OVHcloud, sans avoir à composer le numéro sur le téléphone. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne SIP, puis cliquez sur `Gestion des appels`{.action} > `Click2Call`{.action}. Saisissez le numéro à appeler : votre téléphone sonnera d'abord, puis le correspondant sera appelé une fois que vous aurez décroché. Le Click2Call est aussi utilisable via l'API OVHcloud (`POST /telephony/{billingAccount}/line/{serviceName}/click2CallUser`), ce qui permet de l'intégrer dans un CRM ou une application métier. Un identifiant et un mot de passe Click2Call dédiés doivent être créés au préalable.
+Le Click2Call permet de déclencher un appel entre votre ligne SIP et un numéro de destination depuis votre espace client ou via l'API OVHcloud, sans avoir à composer le numéro sur le téléphone. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne SIP, puis cliquez sur `Gestion des appels`{.action} > `Appel en 1 clic (Click2Call)`{.action}. Saisissez le numéro à appeler : votre téléphone sonnera d'abord, puis le correspondant sera appelé une fois que vous aurez décroché. Le Click2Call est aussi utilisable via l'API OVHcloud (`POST /telephony/{billingAccount}/line/{serviceName}/click2CallUser`), ce qui permet de l'intégrer dans un CRM ou une application métier. Un identifiant et un mot de passe Click2Call dédiés doivent être créés au préalable.
 
 Pour plus de détails, consultez le guide « [Configurer et utiliser le Click2Call sur une ligne SIP](/pages/web_cloud/phone_and_fax/voip/configurer-utiliser-click2call) ».
 
@@ -330,7 +330,7 @@ Pour plus de détails, consultez le guide « [Configurer la présentation de son
 
 /// details | Comment importer un carnet de contacts sur ma ligne SIP ?
 
-Vous pouvez importer un carnet de contacts au format CSV sur votre ligne SIP pour retrouver vos contacts directement sur l'écran de votre téléphone Plug & Phone. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne SIP, puis cliquez sur `Téléphone`{.action} > `Carnet de contacts`{.action}. Vous pouvez y ajouter des contacts manuellement ou importer un fichier CSV. Le fichier doit respecter le format attendu : colonnes pour le nom, le prénom et le numéro de téléphone. Le carnet de contacts est synchronisé automatiquement avec le téléphone. Le nombre de contacts supporté dépend du modèle de téléphone utilisé.
+Vous pouvez importer un carnet de contacts au format CSV sur votre ligne SIP pour retrouver vos contacts directement sur l'écran de votre téléphone Plug & Phone. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne SIP, puis cliquez sur `Carnets de contacts`{.action}. Vous pouvez y ajouter des contacts manuellement ou importer un fichier CSV. Le fichier doit respecter le format attendu : colonnes pour le nom, le prénom et le numéro de téléphone. Le carnet de contacts est synchronisé automatiquement avec le téléphone. Le nombre de contacts supporté dépend du modèle de téléphone utilisé.
 
 Pour plus de détails, consultez le guide « [Gérer un carnet de contacts sur une ligne SIP](/pages/web_cloud/phone_and_fax/voip/importer_un_carnet_de_contacts) ».
 
@@ -338,7 +338,7 @@ Pour plus de détails, consultez le guide « [Gérer un carnet de contacts sur u
 
 /// details | Qu'est-ce que le mode intercom et comment l'activer ?
 
-Le mode intercom permet à un appelant interne de déclencher le haut-parleur du téléphone du destinataire automatiquement, sans que celui-ci n'ait besoin de décrocher. Cette fonctionnalité est utile en milieu professionnel pour les communications rapides entre bureaux. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne SIP concernée, puis cliquez sur `Gestion des appels`{.action} > `Intercom`{.action}. Vous pouvez y définir les lignes autorisées à utiliser l'intercom vers ce poste. Le mode intercom nécessite un téléphone compatible (la plupart des téléphones Plug & Phone OVHcloud le supportent). L'appel intercom est généralement déclenché en composant un code spécifique avant le numéro abrégé du destinataire.
+Le mode intercom permet à un appelant interne de déclencher le haut-parleur du téléphone du destinataire automatiquement, sans que celui-ci n'ait besoin de décrocher. Cette fonctionnalité est utile en milieu professionnel pour les communications rapides entre bureaux. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne SIP concernée, puis cliquez sur `Gestion des appels`{.action} > `Double appel et Intercom`{.action}. Vous pouvez y définir les lignes autorisées à utiliser l'intercom vers ce poste. Le mode intercom nécessite un téléphone compatible (la plupart des téléphones Plug & Phone OVHcloud le supportent). L'appel intercom est généralement déclenché en composant un code spécifique avant le numéro abrégé du destinataire.
 
 Pour plus de détails, consultez le guide « [Gérer le mode intercom de votre ligne](/pages/web_cloud/phone_and_fax/voip/mode-intercom) ».
 
@@ -346,7 +346,7 @@ Pour plus de détails, consultez le guide « [Gérer le mode intercom de votre l
 
 /// details | Comment personnaliser la musique d'attente de ma ligne SIP ?
 
-La musique d'attente est diffusée à votre correspondant lorsqu'il est mis en attente pendant un appel. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne SIP, puis cliquez sur `Gestion des appels`{.action} > `Musiques et sonneries`{.action}. Vous pouvez y charger un fichier audio aux formats WAV, MP3 ou OGG. Le fichier est automatiquement converti au format adapté à la téléphonie. Vous pouvez également personnaliser la sonnerie d'appel entrant de la même manière. Pour les numéros alias configurés en File d'appels ou SVI, la musique d'attente se configure directement dans la configuration du numéro alias.
+La musique d'attente est diffusée à votre correspondant lorsqu'il est mis en attente pendant un appel. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne SIP, puis cliquez sur l'onglet `Gestion des musiques`{.action}. Vous pouvez y charger un fichier audio aux formats WAV, MP3 ou OGG. Le fichier est automatiquement converti au format adapté à la téléphonie. Vous pouvez également personnaliser la sonnerie d'appel entrant de la même manière. Pour les numéros alias configurés en File d'appels ou SVI, la musique d'attente se configure directement dans la configuration du numéro alias.
 
 Pour plus de détails, consultez le guide « [Modifier les musiques et sonneries de votre ligne](/pages/web_cloud/phone_and_fax/voip/modifier-musiques-sonneries-ligne) ».
 
@@ -354,7 +354,7 @@ Pour plus de détails, consultez le guide « [Modifier les musiques et sonneries
 
 /// details | Comment publier mes coordonnées dans l'annuaire avec ma ligne OVHcloud ?
 
-[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne ou le numéro concerné, puis cliquez sur `Gestion de la ligne`{.action} > `Annuaire`{.action}. Renseignez les coordonnées à publier (nom, adresse, activité pour les professionnels). La publication est gratuite et prend effet sous 4 à 6 semaines. Vous pouvez choisir de publier en liste normale, en liste rouge (coordonnées non communiquées sauf aux services d'urgence) ou en liste orange (coordonnées publiées mais non accessibles au démarchage). La modification ou la suppression des coordonnées suit le même délai.
+[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez la ligne ou le numéro concerné, puis cliquez sur l'onglet `Coordonnées`{.action}. Renseignez les coordonnées à publier (nom, adresse, activité pour les professionnels). La publication est gratuite et prend effet sous 4 à 6 semaines. Vous pouvez choisir de publier en liste normale, en liste rouge (coordonnées non communiquées sauf aux services d'urgence) ou en liste orange (coordonnées publiées mais non accessibles au démarchage). La modification ou la suppression des coordonnées suit le même délai.
 
 Pour plus de détails, consultez le guide « [Renseigner les coordonnées d'une ligne et les faire paraître en ligne](/pages/web_cloud/phone_and_fax/voip/publication_annuaire) ».
 
@@ -374,7 +374,7 @@ Pour plus de détails, consultez le guide « [Configuration sur un softphone / t
 
 /// details | Comment installer et utiliser Softcall, le softphone OVHcloud ?
 
-Softcall est l'application softphone développée par OVHcloud pour utiliser votre ligne SIP depuis un ordinateur (Windows ou macOS). [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne SIP, puis accédez à `Gestion de la ligne`{.action} > `Softcall`{.action}. Téléchargez l'application correspondant à votre système d'exploitation. L'authentification se fait via un lien d'activation envoyé par e-mail, ce qui évite de manipuler les identifiants SIP. Softcall offre les fonctionnalités classiques : appels entrants/sortants, transfert d'appel, mise en attente, gestion du répondeur, et affichage du carnet de contacts.
+Softcall est l'application softphone développée par OVHcloud pour utiliser votre ligne SIP depuis un ordinateur (Windows ou macOS). [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre ligne SIP, puis cliquez sur l'onglet `Softphone`{.action}. Téléchargez l'application correspondant à votre système d'exploitation. L'authentification se fait via un lien d'activation envoyé par e-mail, ce qui évite de manipuler les identifiants SIP. Softcall offre les fonctionnalités classiques : appels entrants/sortants, transfert d'appel, mise en attente, gestion du répondeur, et affichage du carnet de contacts.
 
 > [!warning]
 >

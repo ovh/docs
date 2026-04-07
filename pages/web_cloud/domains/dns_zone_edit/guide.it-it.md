@@ -47,9 +47,9 @@ Per maggiori spiegazioni, consulta le nostre guide "[Scopri tutto sui server DNS
 >
 > - Se il nome di dominio non utilizza i server DNS di OVHcloud, è necessario effettuare la modifica attraverso l'interfaccia del provider che gestisce la configurazione del nome di dominio.
 > 
-> - Se il nome di dominio è registrato presso OVHcloud, è possibile verificare se utilizza la nostra configurazione. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), cliccando sulla scheda `Server DNS`{.action} del nome di dominio pertinente. In caso di necessità, consulta la nostra guida "[Modificare i server DNS di un nome di dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+> - Se il nome di dominio è registrato presso OVHcloud, è possibile verificare se utilizza la nostra configurazione. Per farlo e in caso di necessità, consulta la nostra guida "[Modificare i server DNS di un nome di dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 > 
-> In entrambi i casi, fai attenzione effettuando le modifiche dei server DNS. Infatti, la configurazione precedente che può essere applicata al tuo nome di dominio non sarà più attiva se non hai precedentemente riconfigurato e personalizzato la nuova zona DNS presente in OVHcloud.<br>
+> In entrambi i casi, fai attenzione effettuando le modifiche dei server DNS. Infatti, la configurazione precedente che può essere applicata al tuo nome di dominio non sarà più attiva se non hai precedentemente riconfigurato e personalizzato la nuova zona DNS presente in OVHcloud.
 > È possibile avere una sola zona DNS attiva per ogni nome di dominio.
 >
 
@@ -89,7 +89,7 @@ Essere a conoscenza delle diverse tipologie di record consente di modificare al 
 > Per maggiori informazioni, consulta la nostra guida relativa ai [sottodomini](/pages/web_cloud/domains/domain_create_subdomains).
 >
 
-Per modificare la zona DNS del nome di dominio è possibile aggiungere, modificare o eliminare un record DNS.<br>
+Per modificare la zona DNS del nome di dominio è possibile aggiungere, modificare o eliminare un record DNS.
 Per effettuare questa operazione è possibile modificare manualmente la zona in modalità testo oppure utilizzare la configurazione guidata.
 
 #### Modifica manualmente la zona in modalità testuale <a name="txtmod"></a>
@@ -237,7 +237,7 @@ Per reinizializzare la zona DNS, clicca sulle schede qui sotto per visualizzare 
 >>
 >> **Indirizzo IP dell’hosting**
 >>
->> - `Reindirizzamento`: il nome di dominio punterà verso il server di reindirizzamento OVHcloud. In questo modo viene visualizzata una home page di OVHcloud e si evita un errore DNS.<br>
+>> - `Reindirizzamento`: il nome di dominio punterà verso il server di reindirizzamento OVHcloud. In questo modo viene visualizzata una home page di OVHcloud e si evita un errore DNS.
 >> - `Hosting Web OVHcloud`: il nome di dominio punterà verso l’indirizzo IP dell’hosting Web associato al nome di dominio <br>
 >> - `Personalizzato`: definisci il valore IPv4 ([record A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) dell’hosting Web che vuoi puntare. <br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}

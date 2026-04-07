@@ -38,16 +38,6 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
 - Disponer de un [dominio](/links/web/domains)
   
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -118,7 +108,7 @@ Más información en nuestra página relativa a [PrestaShop](/links/web/hosting-
 > No importa cuál sea el CMS que elija, le recordamos que OVHcloud no proporciona soporte sobre el uso de estos CMS. Si necesita ayuda, contacte directamente con el editor del CMS que haya elegido utilizando los enlaces que se indican más arriba en este tutorial.
 >
 
-### Etapa 1 - preparar la instalación <a name="step1"></a>
+### 1 - Preparar la instalación <a name="step1"></a>
 
 Para instalar un CMS en su [plan de hosting](/links/web/hosting), es necesario realizar algunos preparativos.
 
@@ -136,14 +126,14 @@ Consulte nuestra documentación que describe [cómo crear un sitio web en su alo
 
 - Asegúrese de que el dominio que utilizará para acceder al CMS y el subdominio en "www" apuntan a la dirección IP de su [plan de hosting](/links/web/hosting).
 
-Para obtener la dirección IP de su plan de hosting, conéctese a su [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} y seleccione su plan de hosting en la sección `Alojamientos`{.action}.<br>
-En el recuadro `Información general`{.action}, a su derecha, encontrará la dirección IP de su alojamiento web en el formulario `IPv4`{.action}.
-
-Si la zona DNS activa de su dominio está gestionada en su [área de cliente de OVHcloud](/links/manager), compare la dirección IP de su alojamiento con la presente en la zona DNS de su dominio, ayudándole a nuestra documentación sobre las [zonas DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Para obtener la dirección IPv4 (o IPv6) de su plan de hosting, consulte nuestra guía "[Alojamiento web - Lista de direcciones IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
 > [!warning]
 >
-> Si ha activado las opciones `CDN`{.action} o `IP del país`{.action} con su dominio, utilice la dirección IP adecuada con nuestra documentación que recoge [todas las direcciones IP de nuestros alojamientos compartidos](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+> Si ha utilizado la opción de dirección IP geolocalizada por país o ha activado una opción CDN entre su dominio y su alojamiento web, utilice la dirección IP adecuada indicada en la guía mencionada anteriormente.
+>
+
+Si la zona DNS activa de su dominio está gestionada en su [área de cliente de OVHcloud](/links/control-panel/web-dns-zone), compare la dirección IP de su alojamiento con la presente en la zona DNS de su dominio, ayudándose de nuestra documentación sobre las [zonas DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Si no puede realizar estas comprobaciones, póngase en contacto con el proveedor de hosting de su zona DNS activa para actualizar el direccionamiento del dominio.
 
@@ -177,7 +167,7 @@ Utilice nuestra guía para [crear una base de datos desde su plan de hosting](/p
 
 Si tiene un plan Web Cloud Databases en MySQL o MariaDB y quiere utilizarlo para instalar manualmente su CMS, consulte nuestra documentación sobre la [creación de una base de datos en un servicio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server).
 
-Una vez que haya creado la base de datos, deberá descargar los parámetros de conexión (servidor, nombre de la base de datos, nombre de usuario y contraseña) y conservarlos para [el etapa 3](#step3) de esta guía.
+Una vez que haya creado la base de datos, deberá descargar los parámetros de conexión (servidor, nombre de la base de datos, nombre de usuario y contraseña) y conservarlos para la [parte 3](#step3) de esta guía.
 
 > [!primary]
 >
@@ -191,7 +181,7 @@ Una vez que haya creado la base de datos, deberá descargar los parámetros de c
 > - Para conectarse a una base de datos en un databases de Web Cloud, consulte [esta guía](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
-### Etapa 2 - iniciar la instalación manual
+### 2 - Iniciar la instalación manual
 
 #### 2.1 - Obtener los archivos de origen de su CMS
 
@@ -252,7 +242,7 @@ Indique la carpeta "**CMS**" en la que quiera descargar los archivos desde esta 
 
 #### 2.3 - Mover los archivos fuente de la carpeta "CMS" al "directorio raíz" de su alojamiento web
 
-Una vez descomprimidos los archivos en su carpeta "**CMS**", [conéctese por FTP al espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) utilizando el [cliente FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) y, a continuación, copie los archivos contenidos en la carpeta "**CMS**" en la "carpeta raíz" que haya establecido en su alojamiento durante el [etapa 1](#step1) de esta guía.
+Una vez descomprimidos los archivos en su carpeta "**CMS**", [conéctese por FTP al espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) utilizando el [cliente FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) y, a continuación, copie los archivos contenidos en la carpeta "**CMS**" en la "carpeta raíz" que haya establecido en su alojamiento durante el [parte 1](#step1) de esta guía.
 
 A continuación, un ejemplo con el CMS *WordPress*:
 
@@ -265,7 +255,7 @@ A continuación, un ejemplo con el CMS *WordPress*:
 
 > [!primary]
 >
-Si la "carpeta raíz" que ha definido no se ha creado automáticamente en las acciones descritas en el [etapa 1](#step1), puede crearla a través de FileZilla.
+Si la "carpeta raíz" que ha definido no se ha creado automáticamente en las acciones descritas en el [parte 1](#step1), puede crearla a través de FileZilla.
 >
 > El almacenamiento de los archivos en el alojamiento puede tardar unos minutos.
 >
@@ -387,7 +377,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Etapa 3 - Finalizar la instalación manual <a name="step3"></a>
+### 3 - Finalizar la instalación manual <a name="step3"></a>
 
 > [!success]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre"
 excerpt: "Découvrez comment migrer les adresses e-mail d'une plateforme Exchange vers une autre plateforme Exchange ou MX Plan"
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Objectif
@@ -24,6 +24,7 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 
 - Disposer d'une plateforme **«source»** avec des comptes [Exchange](/links/web/emails-hosted-exchange)  configurés.
 - Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](/links/web/emails-hosted-exchange) ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-exchange -->
 ---
@@ -79,7 +80,7 @@ Dans l'onglet `Comptes e-mail`{.action} de votre plateforme e-mail, cliquez sur 
 
 #### Créer
 
-Créez votre adresse e-mail sur le nouveau compte de votre plateforme Exchange ou MX Plan ( en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme)
+Créez votre adresse e-mail sur le nouveau compte de votre plateforme Exchange ou MX Plan ( en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme).
 
 Dans l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton `...`{.action}, à droite du compte e-mail de destination, puis sur `Modifier`{.action}.
 
@@ -138,8 +139,8 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (ex
 
 ## Aller plus loin
 
-[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

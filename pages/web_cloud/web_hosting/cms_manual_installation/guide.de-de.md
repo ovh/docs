@@ -37,16 +37,6 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -117,7 +107,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](/links
 > Wir möchten Sie daran erinnern, dass OVHcloud bei der Verwendung von CMS keinerlei Unterstützung leisten kann. Sollten Sie Schwierigkeiten haben, kontaktieren Sie den Herausgeber des von Ihnen gewählten CMS über die Links oben in diesem Tutorial.
 >
 
-### Schritt 1: Installation vorbereiten <a name="step1"></a> 
+### 1 - Installation vorbereiten <a name="step1"></a>
 
 Um ein CMS auf Ihrem [Webhosting](/links/web/hosting) Angebot zu installieren sind einige Vorbereitungen erforderlich.
 
@@ -136,15 +126,14 @@ Konsultieren Sie unsere Dokumentation, die beschreibt [wie Sie eine Website auf 
 
 - Vergewissern Sie sich, dass der Domainname, den Sie für den Zugriff auf Ihr CMS verwenden, sowie dessen "www"-Subdomain auf die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) verweisen.
 
-Um die IP-Adresse Ihres Webhostings zu erfahren, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr Webhosting im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} aus.<br>
-Im Kasten `Allgemeine Informationen`{.action} finden Sie die IP-Adresse Ihres Webhostings im Eintrag `IPv4`{.action}.
-
-Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird, vergleichen Sie die IP-Adresse Ihres Hostings mit der in der DNS-Zone Ihres Domainnamens eingetragenen. Verwenden Sie dazu unsere Dokumentation zur [Verwaltung von OVHcloud DNS-Zonen](/pages/web_cloud/domains/dns_zone_edit).
+Die IPv4- (oder IPv6-) Adresse Ihres Webhostings finden Sie in unserer Anleitung "[Webhosting - Liste der IP-Adressen nach Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
 > [!warning]
 >
-> Wenn Sie eine der Optionen `CDN`{.action} oder `IP des Landes`{.action} für Ihren Domainnamen aktiviert haben, verwenden Sie die stattdessen die IP-Adresse, die Sie in unserer [Dokumentation zu IP-Adressen der Webhosting-Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) finden können.
+> Wenn Sie eine länderbasierte geolokalisierte IP-Adresse oder eine CDN-Option zwischen Ihrem Domainnamen und Ihrem Webhosting verwenden, nutzen Sie die entsprechende IP-Adresse aus der oben genannten Anleitung.
 >
+
+Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](/links/control-panel/web-dns-zone) verwaltet wird, vergleichen Sie die IP-Adresse Ihres Hostings mit der in der DNS-Zone Ihres Domainnamens eingetragenen. Verwenden Sie dazu unsere Dokumentation zur [Verwaltung von OVHcloud DNS-Zonen](/pages/web_cloud/domains/dns_zone_edit).
 
 Sollten Sie diese Maßnahmen nicht im Kundencenter durchführen können, kontaktieren Sie den Anbieter, der Ihre aktive DNS-Zone verwaltet, um Ihre Domaineinstellungen zu ändern.
 
@@ -178,7 +167,7 @@ Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank über Ihr Webhost
 
 Wenn Sie das Angebot Web Cloud Databases mit MySQL oder MariaDB nutzen und dieses für die manuelle Installation Ihres CMS verwenden möchten, lesen Sie unsere Anleitung zur [Erstellung einer Datenbank mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#datenbank-erstellen).
 
-Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Server, Name der Datenbank, Benutzername und Passwort) ab und speichern Sie diese für [Schritt 3](#step3) dieser Anleitung.
+Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Server, Name der Datenbank, Benutzername und Passwort) ab und speichern Sie diese für [Teil 3](#step3) dieser Anleitung.
 
 > [!primary]
 >
@@ -192,7 +181,7 @@ Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Ser
 > - Um sich mit einer Datenbank von Web Cloud Databases zu verbinden, folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
-### Schritt 2: Die manuelle Installation starten
+### 2 - Die manuelle Installation starten
 
 #### 2.1 Die Quelldateien Ihres CMS abrufen
 
@@ -251,7 +240,7 @@ Wählen Sie den Ordner "**CMS**" als Zielverzeichnis für die Extraktion der Dat
 
 #### 2.3 Die Quelldateien des "CMS"-Ordners zum Wurzelverzeichnis auf Ihrem Webhosting verschieben
 
-Nachdem Sie die Dateien in Ihrem Ordner "**CMS**" dekomprimiert haben, stellen Sie eine [FTP-Verbindung mit Ihrem Webhosting her](/pages/web_cloud/web_hosting/ftp_connection), etwa mithilfe des [Clients FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Kopieren Sie die Dateien aus dem Ordner "**CMS**" zum Wurzelverzeichnis für Ihr CMS, das Sie in [Schritt 1](#step1) dieser Anleitung erstellt haben.
+Nachdem Sie die Dateien in Ihrem Ordner "**CMS**" dekomprimiert haben, stellen Sie eine [FTP-Verbindung mit Ihrem Webhosting her](/pages/web_cloud/web_hosting/ftp_connection), etwa mithilfe des [Clients FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Kopieren Sie die Dateien aus dem Ordner "**CMS**" zum Wurzelverzeichnis für Ihr CMS, das Sie in [Teil 1](#step1) dieser Anleitung erstellt haben.
 
 Hier ein Beispiel für *WordPress*:
 
@@ -264,7 +253,7 @@ Hier ein Beispiel für *WordPress*:
 
 >[!primary]
 >
-> Wenn das von Ihnen definierte Wurzelverzeichnis nicht automatisch mit den in [Schritt 1](#step1) beschriebenen Aktionen erstellt wurde , können Sie es über FileZilla erstellen.
+> Wenn das von Ihnen definierte Wurzelverzeichnis nicht automatisch mit den in [Teil 1](#step1) beschriebenen Aktionen erstellt wurde , können Sie es über FileZilla erstellen.
 >
 > Es kann einige Minuten dauern, bis die Dateien auf Ihr Hosting übertragen sind.
 >
@@ -385,7 +374,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Schritt 3: Manuelle Installation abschließen <a name="step3"></a> 
+### 3 - Manuelle Installation abschließen <a name="step3"></a>
 
 > [!success]
 >

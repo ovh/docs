@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Find the most frequently asked questions about OVHcloud Public Cloud services
-updated: 2026-03-24
+updated: 2026-03-31
 ---
 
 <style>
@@ -33,6 +33,12 @@ For more information on Public Cloud billing, see [our dedicated guide](/pages/p
 
 > [!success]
 > Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
+
+///
+
+/// details | How long is an OVHcloud voucher valid?
+
+OVHcloud vouchers are generally valid for one month. You should use them as soon as possible to make full use of them. The voucher balance is applied before the Public Cloud credit.
 
 ///
 

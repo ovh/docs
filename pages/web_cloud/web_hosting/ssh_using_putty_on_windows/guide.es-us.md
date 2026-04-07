@@ -1,7 +1,7 @@
 ---
 title: Cómo utilizar PuTTY para conexiones SSH y autenticación
 excerpt: Cómo acceder a su servidor cloud o a su alojamiento web y gestionar las llaves SSH con el cliente SSH PuTTY
-updated: 2024-11-11
+updated: 2026-04-01
 ---
 
 <style>
@@ -34,17 +34,6 @@ details[open]>summary::before {
 >
 > Le recomendamos que, si necesita ayuda, contacte con un [proveedor de servicios especializado](/links/partner) o [nuestra comunidad](/links/community).
 >
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
