@@ -1,7 +1,7 @@
 ---
 title: "Setting up Veeam Backup & Replication"
 excerpt: "Find out how to set up a Veeam Backup & Replication server with Veeam Enterprise"
-updated: 2026-03-24
+updated: 2026-04-07
 ---
 
 ## Objective
@@ -79,9 +79,9 @@ You will be redirected to the launch wizard, simply close the window.
 
 #### Step 1 - Launch a service account
 
-You will need to generate a **complex password** for your service account.
+Generate a **complex password** for your service account.
 
-To ensure that the Veeam license activation works correctly, the username and password must use only supported characters:
+To ensure that the Veeam licence activation works correctly, the username and password must use only supported characters:
 
 - Lowercase and uppercase letters **without accents** (a-z, A-Z)
 - Numbers (0-9)
@@ -89,7 +89,7 @@ To ensure that the Veeam license activation works correctly, the username and pa
 
 > [!warning]
 >
-> If the username or password contains unsupported characters, license activation may fail.
+> If the username or password contains unsupported characters, licence activation may fail.
 >
 
 Next, launch Windows PowerShell as an administrator and create the service account, for example:
