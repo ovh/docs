@@ -77,7 +77,7 @@ aws --version
 #### Collect Credentials
 
 - Retrieve your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
-- You will also need your *endpoint_url*. If you have already created your bucket, find this information in the `My containers`{.action} tab, then in the details of your bucket. If needed, see the [Object Storage S3 endpoints and regions](/pages/storage_and_backup/object_storage/s3_location) guide.
+- You will also need your *endpoint_url*. If you have already created your bucket, find this information in the `My containers`{.action} tab, then in the details of your bucket. If needed, see the [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location) guide.
 
 #### Where to find the Endpoint URL of a bucket?
 
@@ -156,7 +156,7 @@ Here are the configuration values you can set:
 | max_bandwidth | Integer | **Default:** None | The maximum bandwidth that will be used to load and download data to and from your buckets. |
 | verify_ssl | Boolean | **Default:** true | Enable / Disable SSL certificate verification |
 
-For a list of endpoints by region and storage class, see [this page](/pages/storage_and_backup/object_storage/s3_location).
+For a list of endpoints by region and storage class, see the [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location) guide.
 
 #### Usage
 
@@ -258,7 +258,7 @@ To manage an Object Storage bucket, navigate to `Object Storage`{.action} in the
 >>
 >> At this stage, you can decide whether or not to enable **versioning**.
 >>
->> Versioning allows you to keep multiple variants of an object in the same bucket. This feature helps **preserve, retrieve, and restore every version of every object stored in your buckets**, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, enable it explicitly if needed. For more information about versioning, see our [dedicated guide](/pages/storage_and_backup/object_storage/s3_versioning).
+>> Versioning allows you to keep multiple variants of an object in the same bucket. This feature helps **preserve, retrieve, and restore every version of every object stored in your buckets**, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets; enable it explicitly if needed. For more information about versioning, see the [Object Storage - Getting Started with Versioning](/pages/storage_and_backup/object_storage/s3_versioning) guide.
 >>
 >> You can also enable [Object Lock](/pages/storage_and_backup/object_storage/s3_managing_object_lock) to store your objects in WORM (Write Once, Read Many) mode and guarantee their immutability for a defined retention period.
 >>
@@ -299,7 +299,7 @@ To manage an Object Storage bucket, navigate to `Object Storage`{.action} in the
 >>
 >> > [!primary]
 >> >
->> > The `--object-lock-status enabled` option must be set at bucket creation time, it cannot be enabled later.
+>> > The `--object-lock-status enabled` option must be set at bucket creation time; it cannot be enabled later.
 >> >
 >>
 
@@ -526,7 +526,7 @@ When uploading objects, select a storage class to control availability, redundan
 >>
 >> **Deleting a bucket**
 >>
->> The bucket must be empty before it can be deleted.
+>> The bucket must be empty before deletion.
 >>
 >> ```shell
 >> ovhcloud cloud storage-s3 delete <bucket_name>
@@ -600,7 +600,7 @@ When uploading objects, select a storage class to control availability, redundan
 >> ```
 >
 > Via the OVHcloud CLI
->> The OVHcloud CLI allows you to set tags on a bucket at **creation** or **editing** time via the `--tag key=value` option (repeatable for multiple tags). Individual tag management (reading, deleting) is not available via the CLI.
+>> The OVHcloud CLI lets you set tags on a bucket at **creation** time or when **editing** it via the `--tag key=value` option (repeatable for multiple tags). Individual tag management (reading, deleting) is not available via the CLI.
 >>
 >> **Setting tags when creating a bucket**
 >>
@@ -616,7 +616,7 @@ When uploading objects, select a storage class to control availability, redundan
 
 ## Go further
 
-For training or technical assistance to implement our solutions, contact your sales representative or visit our [Professional Services OVHcloud](/links/professional-services) page to get a quote and have our experts analyse your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
 

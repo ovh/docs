@@ -77,7 +77,7 @@ aws --version
 #### Collecter les informations d'identification
 
 - Récupérez l'*Access key* et la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs Object Storage`{.action} dans votre espace client OVHcloud.
-- Récupérez également votre *endpoint_url*. Si vous avez déjà créé votre bucket, retrouvez cette information dans l'onglet `Mes conteneurs`{.action} puis dans les détails de votre bucket. Si nécessaire, consultez le guide [Endpoints et régions Object Storage S3](/pages/storage_and_backup/object_storage/s3_location).
+- Récupérez également votre *endpoint_url*. Si vous avez déjà créé votre bucket, retrouvez cette information dans l'onglet `Mes conteneurs`{.action} puis dans les détails de votre bucket. Si nécessaire, consultez le guide [Object Storage - Endpoints et géo-disponibilité de l'Object Storage](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Où trouver l'endpoint d'un bucket ?
 
@@ -156,7 +156,7 @@ Voici les valeurs de configuration que vous pouvez définir :
 | max_bandwidth | Integer | **Défaut :** None | La bande passante maximale qui sera consommée pour le chargement et le téléchargement de données vers et depuis vos buckets. |
 | verify_ssl | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
 
-Pour la liste des endpoints par région et par classe de stockage, consultez [cette page](/pages/storage_and_backup/object_storage/s3_location).
+Pour la liste des endpoints par région et par classe de stockage, consultez le guide [Object Storage - Endpoints et géo-disponibilité de l'Object Storage](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Utilisation
 
@@ -258,7 +258,7 @@ Pour gérer un bucket Object Storage, rendez-vous dans `Object Storage`{.action}
 >>
 >> À ce stade, vous pouvez décider d'activer ou non la **gestion des versions**.
 >>
->> La gestion des versions vous permet de conserver plusieurs variantes d'un objet dans le même bucket. Cette fonctionnalité permet de **préserver, récupérer et restaurer chaque version de chaque objet stocké dans vos buckets**, ce qui facilite la récupération en cas d'actions involontaires de l'utilisateur ou de défaillances de l'application. Par défaut, la gestion des versions est désactivée sur les buckets ; activez-la explicitement si nécessaire. Pour en savoir plus sur la gestion des versions, consultez notre [guide dédié](/pages/storage_and_backup/object_storage/s3_versioning).
+>> La gestion des versions vous permet de conserver plusieurs variantes d'un objet dans le même bucket. Cette fonctionnalité permet de **préserver, récupérer et restaurer chaque version de chaque objet stocké dans vos buckets**, ce qui facilite la récupération en cas d'actions involontaires de l'utilisateur ou de défaillances de l'application. Par défaut, la gestion des versions est désactivée sur les buckets ; activez-la explicitement si nécessaire. Pour en savoir plus sur la gestion des versions, consultez le guide [Object Storage - Premiers pas avec la gestion de versions](/pages/storage_and_backup/object_storage/s3_versioning).
 >>
 >> Vous pouvez également activer l'[Object Lock](/pages/storage_and_backup/object_storage/s3_managing_object_lock) pour stocker vos objets en mode WORM (Write Once, Read Many) et garantir leur immutabilité pendant une période de rétention définie.
 >>
@@ -612,7 +612,7 @@ Lors du téléversement d'objets, sélectionnez une classe de stockage pour cont
 
 ## Aller plus loin
 
-Pour toute formation ou assistance technique à la mise en œuvre de nos solutions, contactez votre commercial ou accédez à la page [Professional Services OVHcloud](/links/professional-services) pour obtenir un devis et une analyse personnalisée de votre projet.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
