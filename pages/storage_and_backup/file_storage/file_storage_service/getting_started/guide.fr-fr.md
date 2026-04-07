@@ -16,6 +16,18 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 - Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Un [environnement CLI OpenStack prêt à l’emploi](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ## En pratique
 
 > [!primary]
@@ -24,6 +36,9 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >
 
 > [!tabs]
+> Via l'espace client OVHcloud
+>> Cliquez sur `File Storage`{.action} dans la barre de navigation.
+>>
 > Via l'API OVHcloud
 >> **1\. Créer un share**
 >>
