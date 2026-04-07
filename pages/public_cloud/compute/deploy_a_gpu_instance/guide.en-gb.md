@@ -1,7 +1,7 @@
 ---
 title: 'Deploying a GPU instance'
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-updated: 2025-05-28
+updated: 2026-04-07
 ---
 
 ## Objective
@@ -20,13 +20,22 @@ GPU instances are technically similar to the instances from the older range, but
 - A Public Cloud project with access to the regions where most GPUs are available (GRA7, GRA9, GRA11 and BHS5)
 - [An SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci) created to deploy a linux GPU instance.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 You will find the information needed to deploy a GPU instance on Linux or Windows below.
 
-Once you have logged in to your [OVHcloud Control Panel](/links/manager), click on the `Public Cloud`{.action} tab. Then select the relevant Public Cloud project. 
-
-In the navigation bar on the left, in the **Compute** section, click `Instances`{.action}. From this page, select `Create instance`{.action}, then choose a compatible GPU instance model corresponding to **Cloud GPU** instances, in order to benefit from resources adapted to graphics or intensive computing workloads.
+On the `Quick access`{.action} page, click `Create an instance`{.action}. Then choose a compatible GPU instance model corresponding to **Cloud GPU** instances, to benefit from resources suited to graphics or intensive computing workloads.
 
 Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). This process may take a few minutes.
 
@@ -34,7 +43,7 @@ Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud
 > On Linux
 >> All the images we offer can be used on a GPU instance.
 >>
->> During the image selection step, open the `UNIX Distributions` tab, then choose a UNIX image that suits your needs.
+>> During the image selection step, open the `Unix distributions`{.action} tab, then choose a UNIX image that suits your needs.
 >>
 >> > [!primary]
 >> >
@@ -101,16 +110,16 @@ Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud
 >>
 >> > [!warning]
 >> >
->> > We only offer the possiblity to install the special images on a few selected models (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Additionally, depending on the region selected, these special images may not be available.
+>> > We only offer the possibility to install the special images on a few selected models (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Additionally, depending on the region selected, these special images may not be available.
 >> >
 >>
->> During the image selection step, open the `Windows Operating Systems` tab, then select a Windows image that is compatible with the chosen instance model.
+>> During the image selection step, open the `Windows distributions`{.action} tab, then select a Windows image that is compatible with the chosen instance model.
 >>
 >> > [!warning]
 >> >
 >> > We cannot guarantee that the solution will work with all future versions of the NVIDIA driver.
 >> >
->> > Before performing any update of the NVIDIA driver, we strongly recommend that you take a snapshot of your instnace, this will allow you to do a rollback if necessary.
+>> > Before performing any update of the NVIDIA driver, we strongly recommend that you take a snapshot of your instance, this will allow you to do a rollback if necessary.
 >> >
 >>
 >> **Connecting to a Windows OS instance**
@@ -131,7 +140,7 @@ Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud
 >>
 >> > [!primary]
 >> >
->> >If you experience any issues with this procedure, verify that remote (RDP) connections are allowed on your device by checking your system settings, firewall rules and possible network restrictions.
+>> > If you experience any issues with this procedure, verify that remote (RDP) connections are allowed on your device by checking your system settings, firewall rules and possible network restrictions.
 >> >
 >>
 >> Once you have connected to your instance, you will need to install the NVIDIA driver from the [official website](https://www.nvidia.com/Download/index.aspx).

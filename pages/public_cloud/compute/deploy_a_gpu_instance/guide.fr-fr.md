@@ -1,7 +1,7 @@
 ---
 title: 'Déployer une instance GPU'
 excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
-updated: 2025-05-28
+updated: 2026-04-07
 ---
 
 ## Objectif
@@ -20,13 +20,22 @@ Les instances GPU sont techniquement similaires aux instances de la gamme 2017 m
 - Un projet Public Cloud avec accès aux régions où la plupart des GPU sont disponibles (GRA7, GRA9, GRA11 et BHS5).
 - [Une clé SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) créée pour déployer une instance GPU Linux.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## En pratique
 
 Vous trouverez ci-dessous les informations pour déployer une instance GPU via Linux ou via Windows.
 
-Une fois connecté à votre [espace client OVHcloud](/links/manager), cliquez sur l'onglet `Public Cloud`{.action}. Sélectionnez ensuite le projet Public Cloud concerné. 
-
-Dans la barre de navigation située à gauche, dans la section **Compute**, cliquez sur `Instances`{.action}. Depuis cette page, sélectionnez `Créer une instance`{.action}, puis choisissez un modèle d’instance GPU compatible correspondant aux instances de type **Cloud GPU**, afin de bénéficier de ressources adaptées aux charges de calcul graphique ou intensif.
+Sur la page `Accès rapide`{.action}, cliquez sur `Créer une instance`{.action}. Choisissez ensuite un modèle d’instance GPU compatible correspondant aux instances de type **Cloud GPU**, pour bénéficier de ressources adaptées aux charges de calcul graphique ou intensif.
 
 Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Ce processus peut prendre quelques minutes.
 
@@ -34,7 +43,7 @@ Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/pu
 > Sous Linux
 >> Toutes les images que nous proposons peuvent être utilisées sur une instance GPU.
 >>
->> Lors de l’étape de sélection de l’image, ouvrez l’onglet `Distributions UNIX`, puis choisissez une image UNIX adaptée à vos besoins.
+>> Lors de l’étape de sélection de l’image, ouvrez l’onglet `Distributions Unix`{.action}, puis choisissez une image UNIX adaptée à vos besoins.
 >>
 >> > [!primary]
 >> >
@@ -92,7 +101,7 @@ Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/pu
 >> +-----------------------------------------------------------------------------+
 >> ```
 >>
->> L'instance GPU est désormais pleinement fonctionelle et utilisable.
+>> L'instance GPU est désormais pleinement fonctionnelle et utilisable.
 >>
 > Sous Windows
 >> Des incompatibilités existent entre le driver NVIDIA et la solution de virtualisation *KVM/pci_passthrough*. **Les images Windows standard ne fonctionnent pas.**
@@ -104,7 +113,7 @@ Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/pu
 >> > Nous offrons la possibilité d'installer les images spéciales sur quelques modèles sélectionnés (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). En outre, selon la région sélectionnée, ces images spéciales peuvent ne pas être disponibles.
 >> >
 >>
->> Lors de l’étape de sélection de l’image, ouvrez l’onglet `Systèmes d’exploitation Windows`, puis sélectionnez une image Windows compatible avec le modèle d’instance choisi.
+>> Lors de l’étape de sélection de l’image, ouvrez l’onglet `Distributions Windows`{.action}, puis sélectionnez une image Windows compatible avec le modèle d’instance choisi.
 >>
 >> > [!warning]
 >> >
@@ -115,7 +124,7 @@ Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/pu
 >>
 >> **Connexion à une instance Windows**
 >>
->> Une fois l'instance créée, l'installation de Windows doit être finalisée (sysprep). Cliquez sur le bouton `...`{.action}, puis sur `Détails de l'instance`{.action}. Dirigez-vous sur l'onglet `Console VNC`{.action}. La console doit déjà afficher l'interface de post-installation.
+>> Une fois l'instance créée, l'installation de Windows doit être finalisée (sysprep). Cliquez sur le bouton `...`{.action}, puis sur `Détails de l'instance`{.action}. Accédez à l'onglet `Console VNC`{.action}. La console doit déjà afficher l'interface de post-installation.
 >>
 >> Dans la première étape, choisissez vos paramètres de localisation en sélectionnant une région, une langue et une configuration de clavier. Cliquez sur `Suivant`{.action} pour continuer.
 >>
