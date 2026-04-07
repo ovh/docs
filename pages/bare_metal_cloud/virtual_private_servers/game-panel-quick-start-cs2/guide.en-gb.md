@@ -1,0 +1,90 @@
+---
+title: "Deploy a Counter-Strike 2 server on the Game Panel"
+excerpt: "Deploy a Counter-Strike 2 server using the OVHcloud Game Panel with automated deployment, port configuration, and console connect steps."
+updated: 2026-04-12
+---
+
+## Objective
+
+The OVHcloud Game Panel lets you deploy a Counter-Strike 2 (CS2) server with automated installation and port configuration.
+
+**This guide explains how to deploy and connect to a Counter-Strike 2 server on the OVHcloud Game Panel.**
+
+## Requirements
+
+- A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
+- Access to the Game Panel. Refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+
+## Instructions
+
+### Step 1 — Access the Game Panel
+
+Log in to your OVHcloud Game Panel. Go to the **Game Servers** section in the left-hand menu.
+
+### Step 2 — Create a CS2 server
+
+Click `Add Game Server`{.action} and select **Counter-Strike 2** from the list.
+
+<!-- DRAFT: To screenshot — Game selection with Counter-Strike 2 highlighted -->
+![Selecting Counter-Strike 2 from the game list](images/select-cs2.png){.thumbnail}
+
+Configure the installation:
+
+- `Server Name`: Give your server a name (e.g., `CS2 Competitive Server`).
+- `Network Ports`: Leave the default ports or add more if needed in the advanced section. CS2 typically uses ports around `27015`.
+
+### Step 3 — Launch the installation
+
+Click `Install`{.action}. The deployment will start automatically. Wait a few minutes while:
+
+- The image is being downloaded.
+- The server is being installed.
+
+Then click the launch button to start the server.
+
+<!-- DRAFT: To screenshot — CS2 server installation progress -->
+![Counter-Strike 2 server installation progress](images/cs2-installation.png){.thumbnail}
+
+### Step 4 — Verify the server is running
+
+Check that the server status displays **Running** and that CPU/RAM activity is visible.
+
+Available actions:
+
+- `Console`{.action}: Open the console to monitor startup.
+- `Logs`{.action}: Check logs if there are any issues.
+- `Settings`{.action} > `Game Config`{.action}: Access game settings.
+
+<!-- DRAFT: To screenshot — CS2 server running with console and settings buttons -->
+![Counter-Strike 2 server with Running status](images/cs2-running.png){.thumbnail}
+
+### Step 5 — Connect to the server
+
+In the `Connection`{.action} column, you will find the IP address and port (e.g., `xxx.xxx.xxx.xxx:27015`).
+
+In Counter-Strike 2:
+
+1. Open the console (`~`).
+2. Type:
+
+```console
+connect IP:PORT
+```
+
+### Best practices
+
+- Configure permissions via `User Administration`{.action}.
+- Perform regular backups.
+- Customise your game settings.
+
+> [!primary]
+>
+> To go further, add mods or competitive configurations, adjust tickrate and performance settings, or restrict access with a password or whitelist.
+
+## Go further
+
+See our guide on [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
+
+See our guide on [Managing users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users).
+
+Join our [community of users](/links/community).
