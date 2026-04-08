@@ -1,5 +1,5 @@
 ---
-title: "Déployer une image Linux personnalisée via Bring Your Own Linux (BYOLinux) sur un serveur dédié"
+title: "Déployer des images Linux personnalisées via Bring Your Own Linux (BYOLinux) sur un serveur dédié"
 excerpt: "Déployez vos propres images Linux personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Linux (BYOLinux)"
 updated: 2026-03-16
 ---
