@@ -1,6 +1,6 @@
 ---
 title: "Zarządzanie programowym RAID (tryb rozruchu BIOS) na serwerach dedykowanych"
-excerpt: "Zarządzaj i odbudowuj tablice RAID programowego po wymianie dysku na serwerze dedykowanym działającym w trybie rozruchu BIOS."
+excerpt: "Zarządzaj i odbuduj programowy RAID po wymianie dysku na serwerze dedykowanym w trybie rozruchu BIOS."
 updated: 2026-03-02
 ---
 

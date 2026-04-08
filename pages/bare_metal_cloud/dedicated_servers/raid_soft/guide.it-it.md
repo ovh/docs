@@ -1,6 +1,6 @@
 ---
 title: "Gestire il RAID software (modalità di avvio BIOS) su un server dedicato"
-excerpt: "Gestisci e ricostruisci le matrici RAID software dopo la sostituzione di un disco su un server dedicato in modalità boot BIOS"
+excerpt: "Gestisci e ricostruisci il RAID software dopo la sostituzione di un disco su un server dedicato in modalità di avvio BIOS."
 updated: 2026-03-02
 ---
 

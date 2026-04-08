@@ -1,6 +1,6 @@
 ---
 title: "Software-RAID (BIOS-Boot-Modus) auf Dedicated Servern verwalten"
-excerpt: "Verwalten und erstellen Sie Software-RAID-Arrays nach einem Festplattenaustausch auf einem Dedicated Server im BIOS-Boot-Modus neu."
+excerpt: "Verwalten und Wiederaufbau von Software-RAID nach einem Festplattenwechsel auf einem Dedicated Server im BIOS-Boot-Modus."
 updated: 2026-03-02
 ---
 

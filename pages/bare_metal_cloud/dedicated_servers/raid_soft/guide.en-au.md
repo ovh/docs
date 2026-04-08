@@ -1,6 +1,6 @@
 ---
 title: "Managing Software RAID (BIOS boot mode) on Dedicated Servers"
-excerpt: "Manage and rebuild software RAID arrays after a disk replacement on a dedicated server running in BIOS boot mode."
+excerpt: "Manage and rebuild software RAID after a disk replacement on a dedicated server running in BIOS boot mode."
 updated: 2026-03-02
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Gestionar el RAID por software (modo de arranque UEFI) en un servidor dedicado"
-excerpt: "Gestione y reconstruya las matrices RAID por software tras un reemplazo de disco en un servidor dedicado en modo de arranque UEFI"
+excerpt: "Gestione y reconstruya el RAID por software tras la sustitución de un disco en un servidor dedicado en modo de arranque UEFI."
 updated: 2026-01-26
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Zarządzanie programowym RAID (tryb rozruchu UEFI) na serwerach dedykowanych"
-excerpt: "Skonfiguruj RAID programowy na serwerze dedykowanym OVHcloud z trybem rozruchowym UEFI."
+excerpt: "Zarządzaj i odbuduj programowy RAID po wymianie dysku na serwerze dedykowanym w trybie rozruchu UEFI."
 updated: 2026-01-26
 ---
 
