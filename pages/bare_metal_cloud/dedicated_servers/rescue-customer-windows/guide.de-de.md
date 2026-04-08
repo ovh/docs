@@ -1,6 +1,6 @@
 ---
-title: Windows Rescue-Modus auf einem Dedicated Server
-excerpt: Starten Sie Ihren Windows Dedicated Server im OVHcloud Rescue-Modus, um Fehler zu beheben, Reparaturen durchzuführen oder Passwörter zurückzusetzen.
+title: "Windows Rescue-Modus auf einem Dedicated Server"
+excerpt: "Starten Sie Ihren Windows Dedicated Server im OVHcloud Rescue-Modus, um Fehler zu beheben, Reparaturen durchzuführen oder Passwörter zurückzusetzen."
 updated: 2025-01-28
 ---
 

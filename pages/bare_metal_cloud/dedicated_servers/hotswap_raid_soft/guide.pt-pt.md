@@ -1,6 +1,6 @@
 ---
-title: Substituição a quente num servidor dedicado em RAID por software
-excerpt: Substitua um disco com defeito num servidor dedicado em RAID por software sem interrupção graças ao procedimento de hot-swap
+title: "Substituição a quente num servidor dedicado em RAID por software"
+excerpt: "Substitua um disco com defeito num servidor dedicado em RAID por software sem interrupção graças ao procedimento de hot-swap"
 updated: 2023-08-21
 ---
 

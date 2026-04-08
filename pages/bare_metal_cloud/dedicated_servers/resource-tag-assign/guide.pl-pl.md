@@ -1,5 +1,5 @@
 ---
-title: 'Jak przypisać tag do serwera bare metal'
+title: "Jak przypisać tag do serwera bare metal"
 excerpt: "Przypisuj i zarządzaj tagami zasobów na serwerach dedykowanych OVHcloud, aby organizować i śledzić infrastrukturę."
 updated: 2025-07-01
 ---

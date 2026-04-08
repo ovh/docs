@@ -1,5 +1,5 @@
 ---
-title: Déplacer une Additional IP sur un serveur dédié
+title: "Déplacer une Additional IP sur un serveur dédié"
 excerpt: "Déplacez une adresse Additional IP entre serveurs dédiés via l'espace client OVHcloud ou l'API"
 updated: 2026-01-21
 ---

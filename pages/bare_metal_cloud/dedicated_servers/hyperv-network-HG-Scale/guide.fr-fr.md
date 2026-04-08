@@ -1,6 +1,6 @@
 ---
-title: 'Réseau Hyper-V sur serveurs dédiés HG/Scale'
-excerpt: 'Configurez les interfaces réseau sur Windows Server avec Hyper-V sur les serveurs dédiés High Grade ou Scale'
+title: "Réseau Hyper-V sur serveurs dédiés HG/Scale"
+excerpt: "Configurez les interfaces réseau sur Windows Server avec Hyper-V sur les serveurs dédiés High Grade ou Scale"
 updated: 2025-05-16
 ---
 

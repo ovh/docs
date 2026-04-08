@@ -1,6 +1,6 @@
 ---
-title: SSH-Schlüssel für Dedicated Server im Kundencenter speichern
-excerpt: Importieren und verwalten Sie Ihre öffentlichen SSH-Schlüssel im OVHcloud Kundencenter für die schnelle Bereitstellung auf Dedicated Servern.
+title: "SSH-Schlüssel für Dedicated Server im Kundencenter speichern"
+excerpt: "Importieren und verwalten Sie Ihre öffentlichen SSH-Schlüssel im OVHcloud Kundencenter für die schnelle Bereitstellung auf Dedicated Servern."
 updated: 2024-12-04
 ---
 

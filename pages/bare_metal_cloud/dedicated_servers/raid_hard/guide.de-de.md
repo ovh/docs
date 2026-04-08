@@ -1,6 +1,6 @@
 ---
-title: Hardware-RAID auf einem Dedicated Server verwalten
-excerpt: Überprüfen Sie den Zustand Ihres Hardware-RAID-Controllers und überwachen Sie die Festplattengesundheit auf Ihrem OVHcloud Dedicated Server.
+title: "Hardware-RAID auf einem Dedicated Server verwalten"
+excerpt: "Überprüfen Sie den Zustand Ihres Hardware-RAID-Controllers und überwachen Sie die Festplattengesundheit auf Ihrem OVHcloud Dedicated Server."
 updated: 2025-03-19
 ---
 

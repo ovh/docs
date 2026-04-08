@@ -1,6 +1,6 @@
 ---
-title: Optimising Email Sending on a Dedicated Server
-excerpt: Apply email sending best practices on your dedicated server to prevent legitimate messages from being flagged as spam.
+title: "Optimising Email Sending on a Dedicated Server"
+excerpt: "Apply email sending best practices on your dedicated server to prevent legitimate messages from being flagged as spam."
 updated: 2024-09-24
 ---
 

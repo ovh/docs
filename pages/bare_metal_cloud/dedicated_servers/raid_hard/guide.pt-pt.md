@@ -1,6 +1,6 @@
 ---
-title: Gerir o RAID de hardware num servidor dedicado
-excerpt: Verifique o estado do seu controlador RAID de hardware e monitorize a saúde dos discos rígidos no seu servidor dedicado OVHcloud.
+title: "Gerir o RAID de hardware num servidor dedicado"
+excerpt: "Verifique o estado do seu controlador RAID de hardware e monitorize a saúde dos discos rígidos no seu servidor dedicado OVHcloud."
 updated: 2025-03-19
 ---
 

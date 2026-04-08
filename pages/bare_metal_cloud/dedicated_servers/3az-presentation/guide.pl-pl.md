@@ -1,6 +1,6 @@
 ---
 title: "Bare Metal 3-AZ Region - Prezentacja oferty"
-excerpt: 'Odkryj usługę Bare Metal 3-AZ, która oferuje niezrównaną wysoką dostępność i redundancję między trzema centrami danych'
+excerpt: "Odkryj usługę Bare Metal 3-AZ, która oferuje niezrównaną wysoką dostępność i redundancję między trzema centrami danych"
 updated: 2025-06-04
 ---
 

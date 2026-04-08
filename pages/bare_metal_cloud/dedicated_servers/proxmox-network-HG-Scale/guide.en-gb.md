@@ -1,6 +1,6 @@
 ---
-title: 'Proxmox VE Networking on HG/Scale Dedicated Servers'
-excerpt: 'Configure Proxmox VE network interfaces on High Grade, Scale, and Advance range dedicated servers step by step.'
+title: "Proxmox VE Networking on HG/Scale Dedicated Servers"
+excerpt: "Configure Proxmox VE network interfaces on High Grade, Scale, and Advance range dedicated servers step by step."
 updated: 2026-01-23
 ---
 

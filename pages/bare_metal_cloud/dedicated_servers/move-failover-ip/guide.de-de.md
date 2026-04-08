@@ -1,6 +1,6 @@
 ---
-title: Additional IP auf einem Dedicated Server umziehen
-excerpt: Ziehen Sie eine Additional IP-Adresse zwischen Dedicated Servern über das OVHcloud Kundencenter oder die API um.
+title: "Additional IP auf einem Dedicated Server umziehen"
+excerpt: "Ziehen Sie eine Additional IP-Adresse zwischen Dedicated Servern über das OVHcloud Kundencenter oder die API um."
 updated: 2026-01-21
 ---
 

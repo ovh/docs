@@ -1,6 +1,6 @@
 ---
-title: Virtuelle MAC-Adressen auf Ihrem Dedicated Server prüfen
-excerpt: Nutzen Sie die OVHcloud API, um zu prüfen, ob die Zuweisung virtueller MAC-Adressen auf Ihrem Dedicated Server Modell unterstützt wird.
+title: "Virtuelle MAC-Adressen auf Ihrem Dedicated Server prüfen"
+excerpt: "Nutzen Sie die OVHcloud API, um zu prüfen, ob die Zuweisung virtueller MAC-Adressen auf Ihrem Dedicated Server Modell unterstützt wird."
 updated: 2025-04-28
 ---
 

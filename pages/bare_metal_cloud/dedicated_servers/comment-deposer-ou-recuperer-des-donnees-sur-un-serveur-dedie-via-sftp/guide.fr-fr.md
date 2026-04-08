@@ -1,6 +1,6 @@
 ---
-title: Transférer des fichiers par SFTP sur un serveur dédié
-excerpt: Transférez des fichiers vers et depuis votre serveur dédié en utilisant SFTP avec FileZilla pour des uploads et téléchargements sécurisés
+title: "Transférer des fichiers par SFTP sur un serveur dédié"
+excerpt: "Transférez des fichiers vers et depuis votre serveur dédié en utilisant SFTP avec FileZilla pour des uploads et téléchargements sécurisés"
 updated: 2025-02-21
 ---
 

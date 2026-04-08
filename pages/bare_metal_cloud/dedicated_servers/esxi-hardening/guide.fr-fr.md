@@ -1,6 +1,6 @@
 ---
-title: 'Sécuriser votre serveur dédié ESXi'
-excerpt: 'Découvrez les différentes méthodes pour sécuriser efficacement votre serveur dédié ESXi'
+title: "Sécuriser votre serveur dédié ESXi"
+excerpt: "Découvrez les différentes méthodes pour sécuriser efficacement votre serveur dédié ESXi"
 updated: 2026-01-09
 ---
 

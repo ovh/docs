@@ -1,6 +1,6 @@
 ---
-title: Configuring Storage on a HGR-STOR-2 Dedicated Server
-excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-2 server
+title: "Configuring Storage on a HGR-STOR-2 Dedicated Server"
+excerpt: "Setting up and configuring the multipath as part of using an HGR-STOR-2 server"
 updated: 2022-08-25
 ---
 

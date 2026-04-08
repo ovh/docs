@@ -1,5 +1,5 @@
 ---
-title: Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise
+title: "Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise"
 excerpt: "Préparez votre serveur Bare Metal pour la sauvegarde avec Veeam Enterprise : réseau, stockage et configuration de l'agent"
 updated: 2024-04-05
 ---

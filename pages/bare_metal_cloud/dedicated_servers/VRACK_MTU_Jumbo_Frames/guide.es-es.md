@@ -1,6 +1,6 @@
 ---
-title: 'Configurar las tramas Jumbo en el vRack en un servidor dedicado'
-excerpt: 'Configure las tramas Jumbo (MTU 9000) en su vRack OVHcloud para optimizar el ancho de banda de red entre servidores dedicados'
+title: "Configurar las tramas Jumbo en el vRack en un servidor dedicado"
+excerpt: "Configure las tramas Jumbo (MTU 9000) en su vRack OVHcloud para optimizar el ancho de banda de red entre servidores dedicados"
 updated: 2020-08-17
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Installare un server Web (LAMP) su Debian o Ubuntu
+title: "Tutorial - Installare un server Web (LAMP) su Debian o Ubuntu"
 excerpt: "Installa un server web LAMP (Linux, Apache, MySQL, PHP) su un server dedicato Debian o Ubuntu passo dopo passo"
 updated: 2023-05-10
 ---

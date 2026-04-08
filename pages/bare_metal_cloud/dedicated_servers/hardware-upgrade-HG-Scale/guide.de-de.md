@@ -1,6 +1,6 @@
 ---
-title: Hardware-Upgrade auf einem High Grade oder Scale Server
-excerpt: Beantragen Sie ein Hardware-Upgrade (RAM, Festplatte, NIC) für Ihren High Grade oder SCALE Dedicated Server über das OVHcloud Kundencenter.
+title: "Hardware-Upgrade auf einem High Grade oder Scale Server"
+excerpt: "Beantragen Sie ein Hardware-Upgrade (RAM, Festplatte, NIC) für Ihren High Grade oder SCALE Dedicated Server über das OVHcloud Kundencenter."
 updated: 2024-01-04
 ---
 

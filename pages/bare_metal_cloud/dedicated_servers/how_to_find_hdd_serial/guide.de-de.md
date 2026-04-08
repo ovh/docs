@@ -1,6 +1,6 @@
 ---
-title: Festplatten-Seriennummer auf einem Dedicated Server
-excerpt: Ermitteln Sie die Seriennummer einer Festplatte auf Ihrem Dedicated Server, um diese für einen Austauschantrag zu identifizieren.
+title: "Festplatten-Seriennummer auf einem Dedicated Server"
+excerpt: "Ermitteln Sie die Seriennummer einer Festplatte auf Ihrem Dedicated Server, um diese für einen Austauschantrag zu identifizieren."
 updated: 2018-08-21
 ---
 

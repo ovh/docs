@@ -1,6 +1,6 @@
 ---
-title: 'Modificare la password amministratore su un server dedicato Windows'
-excerpt: 'Reimposta la password amministratore su un server dedicato Windows tramite la modalità rescue OVHcloud in caso di smarrimento'
+title: "Modificare la password amministratore su un server dedicato Windows"
+excerpt: "Reimposta la password amministratore su un server dedicato Windows tramite la modalità rescue OVHcloud in caso di smarrimento"
 updated: 2024-06-26
 flag: hidden
 ---

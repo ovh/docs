@@ -1,6 +1,6 @@
 ---
-title: ‘Assigner une MAC virtuelle sur un serveur dédié’
-excerpt: ‘Créez une adresse MAC virtuelle et associez-la à une Additional IP pour un réseau VM transparent sur vos serveurs dédiés’
+title: "Assigner une MAC virtuelle sur un serveur dédié"
+excerpt: "Créez une adresse MAC virtuelle et associez-la à une Additional IP pour un réseau VM transparent sur vos serveurs dédiés"
 updated: 2025-05-15
 ---
 

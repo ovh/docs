@@ -1,6 +1,6 @@
 ---
-title: Instalar una clave SSH de OVHcloud en un servidor dedicado
-excerpt: Instale una clave SSH de OVHcloud en su servidor dedicado para conceder acceso administrativo seguro a los equipos de soporte de OVHcloud
+title: "Instalar una clave SSH de OVHcloud en un servidor dedicado"
+excerpt: "Instale una clave SSH de OVHcloud en su servidor dedicado para conceder acceso administrativo seguro a los equipos de soporte de OVHcloud"
 updated: 2018-02-12
 ---
 

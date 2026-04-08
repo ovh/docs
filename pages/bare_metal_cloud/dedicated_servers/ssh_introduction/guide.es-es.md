@@ -1,5 +1,5 @@
 ---
-title: Primeros pasos con SSH en un servidor dedicado
+title: "Primeros pasos con SSH en un servidor dedicado"
 excerpt: "Conéctese a su servidor OVHcloud por SSH desde Windows, macOS o Linux con autenticación por contraseña o por clave"
 updated: 2024-12-03
 ---

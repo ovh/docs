@@ -1,6 +1,6 @@
 ---
-title: 'How to assign a tag to a Bare Metal server'
-excerpt: 'Create and assign tags to your OVHcloud dedicated servers via the Control Panel for organised resource management.'
+title: "How to assign a tag to a Bare Metal server"
+excerpt: "Create and assign tags to your OVHcloud dedicated servers via the Control Panel for organised resource management."
 updated: 2025-07-01
 ---
 

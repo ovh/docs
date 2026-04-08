@@ -1,6 +1,6 @@
 ---
-title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance'
-excerpt: 'Configurez les interfaces réseau Proxmox VE sur les serveurs dédiés des gammes High Grade, Scale et Advance étape par étape'
+title: "Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance"
+excerpt: "Configurez les interfaces réseau Proxmox VE sur les serveurs dédiés des gammes High Grade, Scale et Advance étape par étape"
 updated: 2026-01-23
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Gérer le RAID logiciel (mode de démarrage BIOS) sur un serveur dédié
+title: "Gérer le RAID logiciel (mode de démarrage BIOS) sur un serveur dédié"
 excerpt: "Gérez et reconstruisez les matrices RAID logiciel après un remplacement de disque sur un serveur dédié en mode boot BIOS"
 updated: 2026-03-02
 ---

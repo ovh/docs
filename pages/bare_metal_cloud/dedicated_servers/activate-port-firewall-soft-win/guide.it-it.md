@@ -1,6 +1,6 @@
 ---
-title: Configurare il firewall Windows su un server dedicato
-excerpt: Configura il firewall integrato di Windows sul tuo server dedicato per controllare il traffico di rete in entrata e in uscita
+title: "Configurare il firewall Windows su un server dedicato"
+excerpt: "Configura il firewall integrato di Windows sul tuo server dedicato per controllare il traffico di rete in entrata e in uscita"
 updated: 2022-01-31
 ---
 

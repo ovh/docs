@@ -1,6 +1,6 @@
 ---
 title: "Konfiguracja OVHcloud Link Aggregation w SUSE Linux Enterprise"
-excerpt: 'Włącz Link Aggregation na serwerze SLES 15'
+excerpt: "Włącz Link Aggregation na serwerze SLES 15"
 updated: 2024-11-26
 ---
 

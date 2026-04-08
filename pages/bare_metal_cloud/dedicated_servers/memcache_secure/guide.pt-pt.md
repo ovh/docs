@@ -1,5 +1,5 @@
 ---
-title: Proteger um servidor dedicado com um serviço Memcached
+title: "Proteger um servidor dedicado com um serviço Memcached"
 excerpt: "Proteja o serviço Memcached no seu servidor dedicado para impedir os acessos remotos não autorizados e a exposição de dados"
 updated: 2018-03-02
 ---

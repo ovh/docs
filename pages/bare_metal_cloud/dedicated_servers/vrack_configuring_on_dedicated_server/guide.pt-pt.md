@@ -1,6 +1,6 @@
 ---
-title: 'Configurar o vRack nos seus servidores dedicados'
-excerpt: 'Configure a rede privada vRack OVHcloud em dois ou mais servidores dedicados para uma comunicação inter-servidores isolada'
+title: "Configurar o vRack nos seus servidores dedicados"
+excerpt: "Configure a rede privada vRack OVHcloud em dois ou mais servidores dedicados para uma comunicação inter-servidores isolada"
 updated: 2026-02-20
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Configuring User Accounts and Root Access (Dedicated)
-excerpt: Manage user accounts, sudo access, and root login on a GNU/Linux dedicated server for secure system administration.
+title: "Configuring User Accounts and Root Access (Dedicated)"
+excerpt: "Manage user accounts, sudo access, and root login on a GNU/Linux dedicated server for secure system administration."
 updated: 2024-02-19
 ---
 

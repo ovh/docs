@@ -1,6 +1,6 @@
 ---
-title: Windows Server Product Key ändern (Dedicated)
-excerpt: Ändern oder aktivieren Sie den Windows Server Product Key auf Ihrem OVHcloud Dedicated Server nach der Installation oder Neuinstallation.
+title: "Windows Server Product Key ändern (Dedicated)"
+excerpt: "Ändern oder aktivieren Sie den Windows Server Product Key auf Ihrem OVHcloud Dedicated Server nach der Installation oder Neuinstallation."
 updated: 2025-01-06
 ---
 

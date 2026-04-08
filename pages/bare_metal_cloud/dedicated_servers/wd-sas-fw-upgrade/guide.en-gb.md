@@ -1,6 +1,6 @@
 ---
-title: Upgrading WD SS300 SSD Firmware on a Dedicated Server
-excerpt: Upgrade the Western Digital SS300 SAS SSD firmware on your Linux, ESXi, or Windows dedicated server.
+title: "Upgrading WD SS300 SSD Firmware on a Dedicated Server"
+excerpt: "Upgrade the Western Digital SS300 SAS SSD firmware on your Linux, ESXi, or Windows dedicated server."
 updated: 2024-03-26
 ---
 

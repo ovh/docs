@@ -1,6 +1,6 @@
 ---
-title: Configurer iptables sur un serveur dédié Linux
-excerpt: Sécurisez votre serveur dédié en configurant des règles de pare-feu iptables pour filtrer le trafic réseau sous Linux
+title: "Configurer iptables sur un serveur dédié Linux"
+excerpt: "Sécurisez votre serveur dédié en configurant des règles de pare-feu iptables pour filtrer le trafic réseau sous Linux"
 updated: 2024-12-20
 ---
 

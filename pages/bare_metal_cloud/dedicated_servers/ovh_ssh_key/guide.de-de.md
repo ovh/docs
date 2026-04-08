@@ -1,6 +1,6 @@
 ---
-title: OVHcloud SSH-Schlüssel auf einem Dedicated Server
-excerpt: Installieren Sie einen OVHcloud SSH-Schlüssel auf Ihrem Dedicated Server, um den OVHcloud Support-Teams sicheren administrativen Zugriff zu gewähren.
+title: "OVHcloud SSH-Schlüssel auf einem Dedicated Server"
+excerpt: "Installieren Sie einen OVHcloud SSH-Schlüssel auf Ihrem Dedicated Server, um den OVHcloud Support-Teams sicheren administrativen Zugriff zu gewähren."
 updated: 2018-02-12
 ---
 

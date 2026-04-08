@@ -1,6 +1,6 @@
 ---
-title: Déployer OpenNebula Hosted Cloud sur des serveurs Bare Metal
-excerpt: Déployez un OpenNebula Hosted Cloud certifié sur des serveurs Bare Metal OVHcloud avec des playbooks Ansible
+title: "Déployer OpenNebula Hosted Cloud sur des serveurs Bare Metal"
+excerpt: "Déployez un OpenNebula Hosted Cloud certifié sur des serveurs Bare Metal OVHcloud avec des playbooks Ansible"
 updated: 2025-12-09
 ---
 

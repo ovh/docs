@@ -1,5 +1,5 @@
 ---
-title: Dedicated Server absichern
+title: "Dedicated Server absichern"
 excerpt: "Wenden Sie grundlegende Sicherheitsmaßnahmen auf Ihrem Dedicated Server an: SSH-Härtung, Firewall-Konfiguration und Dienstüberwachung."
 updated: 2024-02-20
 ---

@@ -1,6 +1,6 @@
 ---
-title: OVHcloud Secondary DNS auf einem Dedicated Server
-excerpt: Fügen Sie einen sekundären DNS-Server für Ihren Domainnamen auf einem OVHcloud Dedicated Server hinzu, um die DNS-Resilienz zu verbessern.
+title: "OVHcloud Secondary DNS auf einem Dedicated Server"
+excerpt: "Fügen Sie einen sekundären DNS-Server für Ihren Domainnamen auf einem OVHcloud Dedicated Server hinzu, um die DNS-Resilienz zu verbessern."
 updated: 2021-01-08
 ---
 

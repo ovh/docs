@@ -1,6 +1,6 @@
 ---
-title: Upgrading Samsung NVMe PM9A1 Firmware on Dedicated Servers
-excerpt: Upgrade the Samsung NVMe PM9A1 firmware on your Linux, ESXi, or Windows dedicated server for improved reliability.
+title: "Upgrading Samsung NVMe PM9A1 Firmware on Dedicated Servers"
+excerpt: "Upgrade the Samsung NVMe PM9A1 firmware on your Linux, ESXi, or Windows dedicated server for improved reliability."
 updated: 2023-10-18
 ---
 

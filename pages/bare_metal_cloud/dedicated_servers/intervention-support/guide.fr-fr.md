@@ -1,5 +1,5 @@
 ---
-title: 'Finaliser une intervention de maintenance réalisée sur votre serveur dédié'
+title: "Finaliser une intervention de maintenance réalisée sur votre serveur dédié"
 excerpt: "Effectuez les actions requises sur votre serveur dédié après une intervention de maintenance OVHcloud pour restaurer le service"
 updated: 2026-03-20
 ---

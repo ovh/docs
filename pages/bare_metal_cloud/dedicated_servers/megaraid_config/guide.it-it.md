@@ -1,5 +1,5 @@
 ---
-title: 'Configurare MegaRAID in RAID 0 su un server dedicato'
+title: "Configurare MegaRAID in RAID 0 su un server dedicato"
 excerpt: "Configura il RAID 0 con il controller MegaRAID per utilizzare la capacità massima dei dischi del tuo server dedicato OVHcloud"
 updated: 2025-04-29
 ---

@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server mit Memcached-Dienst absichern
-excerpt: Sichern Sie den Memcached-Dienst auf Ihrem Dedicated Server ab, um unbefugten Remote-Zugriff und Datenlecks zu verhindern.
+title: "Dedicated Server mit Memcached-Dienst absichern"
+excerpt: "Sichern Sie den Memcached-Dienst auf Ihrem Dedicated Server ab, um unbefugten Remote-Zugriff und Datenlecks zu verhindern."
 updated: 2018-03-02
 ---
 

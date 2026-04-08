@@ -1,6 +1,6 @@
 ---
-title: 'Copiar dados entre servidores dedicados com rsync'
-excerpt: 'Copie facilmente os dados do seu servidor dedicado para outro graças ao rsync'
+title: "Copiar dados entre servidores dedicados com rsync"
+excerpt: "Copie facilmente os dados do seu servidor dedicado para outro graças ao rsync"
 updated: 2022-02-16
 ---
 

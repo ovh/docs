@@ -1,6 +1,6 @@
 ---
-title: Configurer le pare-feu Windows sur un serveur dédié
-excerpt: Configurez le pare-feu intégré de Windows sur votre serveur dédié pour contrôler le trafic réseau entrant et sortant
+title: "Configurer le pare-feu Windows sur un serveur dédié"
+excerpt: "Configurez le pare-feu intégré de Windows sur votre serveur dédié pour contrôler le trafic réseau entrant et sortant"
 updated: 2022-01-31
 ---
 

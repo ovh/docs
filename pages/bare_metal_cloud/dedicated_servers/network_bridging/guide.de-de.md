@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Additional IPs im Bridge-Modus
-excerpt: Konfigurieren Sie Ihre virtuellen Maschinen auf einem Dedicated Server für den öffentlichen Internetzugang im Bridge-Modus.
+title: "Dedicated Server - Additional IPs im Bridge-Modus"
+excerpt: "Konfigurieren Sie Ihre virtuellen Maschinen auf einem Dedicated Server für den öffentlichen Internetzugang im Bridge-Modus."
 updated: 2026-01-06
 ---
 

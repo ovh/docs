@@ -1,5 +1,5 @@
 ---
-title: Amélioration de la résilience réseau sur les serveurs Bare Metal
+title: "Amélioration de la résilience réseau sur les serveurs Bare Metal"
 excerpt: "Renforcez la résilience réseau de votre serveur Bare Metal OVHcloud en configurant l'agrégation des interfaces publiques et privées"
 updated: 2025-10-28
 ---

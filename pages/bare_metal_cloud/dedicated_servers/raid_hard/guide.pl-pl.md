@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie sprzętowym RAID na serwerze dedykowanym
-excerpt: Sprawdź stan kontrolera RAID sprzętowego i monitoruj stan dysków twardych na serwerze dedykowanym OVHcloud.
+title: "Zarządzanie sprzętowym RAID na serwerze dedykowanym"
+excerpt: "Sprawdź stan kontrolera RAID sprzętowego i monitoruj stan dysków twardych na serwerze dedykowanym OVHcloud."
 updated: 2025-03-19
 ---
 

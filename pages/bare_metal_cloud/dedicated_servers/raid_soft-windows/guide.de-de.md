@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Software-RAID Mirror unter Windows
-excerpt: Erstellen Sie die Software-RAID-Mirror-Konfiguration auf einem Windows Dedicated Server nach einem Festplattenaustausch neu.
+title: "Dedicated Server - Software-RAID Mirror unter Windows"
+excerpt: "Erstellen Sie die Software-RAID-Mirror-Konfiguration auf einem Windows Dedicated Server nach einem Festplattenaustausch neu."
 updated: 2023-03-28
 ---
 

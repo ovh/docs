@@ -1,6 +1,6 @@
 ---
-title: Benutzer-Accounts und Root-Zugriff konfigurieren (Dedicated)
-excerpt: Verwalten Sie Benutzer-Accounts, sudo-Zugriff und Root-Login auf einem dedizierten GNU/Linux-Server für eine sichere Systemadministration.
+title: "Benutzer-Accounts und Root-Zugriff konfigurieren (Dedicated)"
+excerpt: "Verwalten Sie Benutzer-Accounts, sudo-Zugriff und Root-Login auf einem dedizierten GNU/Linux-Server für eine sichere Systemadministration."
 updated: 2024-02-19
 ---
 

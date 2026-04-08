@@ -1,6 +1,6 @@
 ---
-title: 'Atribuir um MAC virtual num servidor dedicado'
-excerpt: 'Crie um endereço MAC virtual e associe-o a um Additional IP para uma rede VM transparente nos seus servidores dedicados'
+title: "Atribuir um MAC virtual num servidor dedicado"
+excerpt: "Crie um endereço MAC virtual e associe-o a um Additional IP para uma rede VM transparente nos seus servidores dedicados"
 updated: 2025-05-16
 ---
 

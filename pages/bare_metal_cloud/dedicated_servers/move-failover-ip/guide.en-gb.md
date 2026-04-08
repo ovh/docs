@@ -1,6 +1,6 @@
 ---
-title: Moving an Additional IP on a Dedicated Server
-excerpt: Move an Additional IP address between dedicated servers via the OVHcloud Control Panel or API.
+title: "Moving an Additional IP on a Dedicated Server"
+excerpt: "Move an Additional IP address between dedicated servers via the OVHcloud Control Panel or API."
 updated: 2026-01-21
 ---
 

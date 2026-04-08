@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Hot-Swap bei Software-RAID
-excerpt: Tauschen Sie eine defekte Festplatte auf einem Dedicated Server mit Software-RAID ohne Ausfallzeit durch Hot-Swap aus.
+title: "Dedicated Server - Hot-Swap bei Software-RAID"
+excerpt: "Tauschen Sie eine defekte Festplatte auf einem Dedicated Server mit Software-RAID ohne Ausfallzeit durch Hot-Swap aus."
 updated: 2023-08-21
 ---
 

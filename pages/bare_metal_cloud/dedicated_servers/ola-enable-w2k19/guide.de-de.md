@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - OVHcloud Link Aggregation unter Windows
-excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Windows Server 2019 Server aktivieren'
+title: "Dedicated Server - OVHcloud Link Aggregation unter Windows"
+excerpt: "Erfahren Sie hier, wie Sie OLA auf Ihrem Windows Server 2019 Server aktivieren"
 updated: 2021-03-25
 ---
 

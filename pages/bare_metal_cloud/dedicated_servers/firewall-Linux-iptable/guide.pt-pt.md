@@ -1,6 +1,6 @@
 ---
-title: Configurar iptables num servidor dedicado Linux
-excerpt: Proteja o seu servidor dedicado configurando regras de firewall iptables para filtrar o tráfego de rede em Linux
+title: "Configurar iptables num servidor dedicado Linux"
+excerpt: "Proteja o seu servidor dedicado configurando regras de firewall iptables para filtrar o tráfego de rede em Linux"
 updated: 2024-12-20
 ---
 

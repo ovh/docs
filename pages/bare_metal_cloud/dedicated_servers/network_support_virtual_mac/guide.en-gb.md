@@ -1,6 +1,6 @@
 ---
-title: Checking Virtual MAC Support on Your Dedicated Server
-excerpt: Use the OVHcloud API to check whether virtual MAC address assignment is supported on your dedicated server model.
+title: "Checking Virtual MAC Support on Your Dedicated Server"
+excerpt: "Use the OVHcloud API to check whether virtual MAC address assignment is supported on your dedicated server model."
 updated: 2025-04-28
 ---
 

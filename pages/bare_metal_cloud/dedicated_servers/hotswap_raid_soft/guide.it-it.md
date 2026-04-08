@@ -1,6 +1,6 @@
 ---
-title: Sostituzione a caldo su un server dedicato con RAID software
-excerpt: Sostituisci un disco difettoso su un server dedicato con RAID software senza interruzione grazie alla procedura di hot-swap
+title: "Sostituzione a caldo su un server dedicato con RAID software"
+excerpt: "Sostituisci un disco difettoso su un server dedicato con RAID software senza interruzione grazie alla procedura di hot-swap"
 updated: 2023-08-21
 ---
 

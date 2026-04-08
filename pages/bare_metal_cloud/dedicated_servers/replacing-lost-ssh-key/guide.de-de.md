@@ -1,6 +1,6 @@
 ---
-title: Verlorenen SSH-Schlüssel auf einem Dedicated Server ersetzen
-excerpt: Stellen Sie den SSH-Zugriff auf Ihren Dedicated Server wieder her, indem Sie ein neues Schlüsselpaar im Rescue-Modus erstellen und bereitstellen.
+title: "Verlorenen SSH-Schlüssel auf einem Dedicated Server ersetzen"
+excerpt: "Stellen Sie den SSH-Zugriff auf Ihren Dedicated Server wieder her, indem Sie ein neues Schlüsselpaar im Rescue-Modus erstellen und bereitstellen."
 updated: 2024-04-04
 ---
 

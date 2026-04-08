@@ -1,6 +1,6 @@
 ---
 title: "Configurar o IP aliasing num servidor dedicado"
-excerpt: 'Adicione e configure endereços Additional IP no seu servidor dedicado OVHcloud para um alojamento multi-sites ou multi-serviços'
+excerpt: "Adicione e configure endereços Additional IP no seu servidor dedicado OVHcloud para um alojamento multi-sites ou multi-serviços"
 updated: 2025-12-04
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: OVHcloud Monitoring IP Addresses for Dedicated Servers
-excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
+title: "OVHcloud Monitoring IP Addresses for Dedicated Servers"
+excerpt: "Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server"
 updated: 2025-06-04
 ---
 

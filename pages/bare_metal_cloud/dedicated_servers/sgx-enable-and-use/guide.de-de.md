@@ -1,6 +1,6 @@
 ---
-title: Intel SGX auf einem Dedicated Server verwalten
-excerpt: Aktivieren Sie Intel SGX auf Ihrem OVHcloud Dedicated Server und installieren Sie den Linux-Software-Stack für Secure-Enclave-Anwendungen.
+title: "Intel SGX auf einem Dedicated Server verwalten"
+excerpt: "Aktivieren Sie Intel SGX auf Ihrem OVHcloud Dedicated Server und installieren Sie den Linux-Software-Stack für Secure-Enclave-Anwendungen."
 updated: 2025-11-20
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit Kimsufi, So You Start oder Rise Server
+title: "Erste Schritte mit Kimsufi, So You Start oder Rise Server"
 excerpt: "Verwalten Sie Ihren Kimsufi, So You Start oder Rise Server im OVHcloud Kundencenter: OS installieren, SSH einrichten und Dienst absichern."
 updated: 2025-04-29
 ---

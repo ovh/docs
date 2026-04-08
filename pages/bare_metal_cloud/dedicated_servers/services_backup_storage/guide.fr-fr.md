@@ -1,5 +1,5 @@
 ---
-title: 'Utiliser Backup Storage sur un serveur dédié'
+title: "Utiliser Backup Storage sur un serveur dédié"
 excerpt: "Activez et accédez à l'espace de sauvegarde inclus avec votre serveur dédié OVHcloud pour vos sauvegardes de fichiers"
 updated: 2026-03-25
 ---

@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Benutzerdefiniertes iPXE Boot-Skript
-excerpt: Konfigurieren Sie ein benutzerdefiniertes iPXE-Skript über die OVHcloud API, um den Netzwerk-Boot-Prozess Ihres Dedicated Servers zu steuern.
+title: "Dedicated Server - Benutzerdefiniertes iPXE Boot-Skript"
+excerpt: "Konfigurieren Sie ein benutzerdefiniertes iPXE-Skript über die OVHcloud API, um den Netzwerk-Boot-Prozess Ihres Dedicated Servers zu steuern."
 updated: 2024-02-27
 ---
 

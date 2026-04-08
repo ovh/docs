@@ -1,6 +1,6 @@
 ---
-title: E-Mail-Versand auf einem Dedicated Server optimieren
-excerpt: Wenden Sie Best Practices für den E-Mail-Versand auf Ihrem Dedicated Server an, damit legitime Nachrichten nicht als Spam markiert werden.
+title: "E-Mail-Versand auf einem Dedicated Server optimieren"
+excerpt: "Wenden Sie Best Practices für den E-Mail-Versand auf Ihrem Dedicated Server an, damit legitime Nachrichten nicht als Spam markiert werden."
 updated: 2024-01-24
 ---
 

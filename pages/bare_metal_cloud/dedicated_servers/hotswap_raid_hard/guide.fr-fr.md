@@ -1,6 +1,6 @@
 ---
-title: Remplacement à chaud sur un serveur dédié en RAID matériel
-excerpt: Remplacez un disque défectueux sur un serveur dédié en RAID matériel sans interruption grâce à la procédure de hot-swap
+title: "Remplacement à chaud sur un serveur dédié en RAID matériel"
+excerpt: "Remplacez un disque défectueux sur un serveur dédié en RAID matériel sans interruption grâce à la procédure de hot-swap"
 updated: 2023-08-21
 ---
 

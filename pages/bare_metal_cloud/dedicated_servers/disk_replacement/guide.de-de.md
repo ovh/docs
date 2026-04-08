@@ -1,6 +1,6 @@
 ---
-title: Defekte Festplatte auf einem Dedicated Server austauschen
-excerpt: Identifizieren Sie eine defekte Festplatte auf Ihrem OVHcloud Dedicated Server und beantragen Sie den Austausch über das Kundencenter.
+title: "Defekte Festplatte auf einem Dedicated Server austauschen"
+excerpt: "Identifizieren Sie eine defekte Festplatte auf Ihrem OVHcloud Dedicated Server und beantragen Sie den Austausch über das Kundencenter."
 updated: 2018-06-21
 ---
 

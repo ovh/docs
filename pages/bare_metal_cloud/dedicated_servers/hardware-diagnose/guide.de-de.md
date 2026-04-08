@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Hardwarediagnose im Rescue-Modus
-excerpt: Führen Sie eine Hardwarediagnose auf Ihrem OVHcloud Dedicated Server im Rescue-Modus durch, um Festplatten-, RAM- oder CPU-Fehler zu identifizieren.
+title: "Dedicated Server - Hardwarediagnose im Rescue-Modus"
+excerpt: "Führen Sie eine Hardwarediagnose auf Ihrem OVHcloud Dedicated Server im Rescue-Modus durch, um Festplatten-, RAM- oder CPU-Fehler zu identifizieren."
 updated: 2025-10-16
 ---
 

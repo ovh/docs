@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit einem Dedicated Server
+title: "Erste Schritte mit einem Dedicated Server"
 excerpt: "Verwalten Sie Ihren OVHcloud Dedicated Server im Kundencenter: Betriebssystem installieren, SSH-Zugang konfigurieren und Ihren Dienst überwachen."
 updated: 2025-04-29
 ---

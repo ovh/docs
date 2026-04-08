@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - IP-Aliasing konfigurieren
-excerpt: Fügen Sie Additional IP-Adressen zu Ihrem OVHcloud Dedicated Server hinzu und konfigurieren Sie diese für Multi-Site- oder Dienst-Hosting.
+title: "Dedicated Server - IP-Aliasing konfigurieren"
+excerpt: "Fügen Sie Additional IP-Adressen zu Ihrem OVHcloud Dedicated Server hinzu und konfigurieren Sie diese für Multi-Site- oder Dienst-Hosting."
 updated: 2025-12-04
 ---
 

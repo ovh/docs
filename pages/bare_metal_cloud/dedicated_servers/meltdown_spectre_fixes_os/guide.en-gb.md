@@ -1,5 +1,5 @@
 ---
-title: Find your patch for Meltdown and Spectre
+title: "Find your patch for Meltdown and Spectre"
 updated: 2020-07-15
 ---
 

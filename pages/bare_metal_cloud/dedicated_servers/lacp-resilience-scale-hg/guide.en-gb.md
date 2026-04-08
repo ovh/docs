@@ -1,6 +1,6 @@
 ---
-title: Improving Network Resilience on Bare Metal servers
-excerpt: Reinforce network resilience on your OVHcloud Bare Metal server by configuring public and private interface aggregation.
+title: "Improving Network Resilience on Bare Metal servers"
+excerpt: "Reinforce network resilience on your OVHcloud Bare Metal server by configuring public and private interface aggregation."
 updated: 2025-10-28
 ---
 

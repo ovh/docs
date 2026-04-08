@@ -1,6 +1,6 @@
 ---
-title: Hot-Swapping a Disk on Hardware RAID Dedicated Servers
-excerpt: Replace a defective disk on a dedicated server with hardware RAID without downtime using the hot-swap procedure.
+title: "Hot-Swapping a Disk on Hardware RAID Dedicated Servers"
+excerpt: "Replace a defective disk on a dedicated server with hardware RAID without downtime using the hot-swap procedure."
 updated: 2023-08-21
 ---
 

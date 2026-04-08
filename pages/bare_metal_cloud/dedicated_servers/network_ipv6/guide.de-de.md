@@ -1,6 +1,6 @@
 ---
-title: IPv6 auf einem Dedicated Server konfigurieren
-excerpt: Konfigurieren Sie IPv6-Adressen auf Ihrem OVHcloud Dedicated Server mit Beispielen für die wichtigsten Linux-Distributionen und Windows.
+title: "IPv6 auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie IPv6-Adressen auf Ihrem OVHcloud Dedicated Server mit Beispielen für die wichtigsten Linux-Distributionen und Windows."
 updated: 2025-12-09
 ---
 

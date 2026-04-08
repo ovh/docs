@@ -1,6 +1,6 @@
 ---
-title: Replacing a Lost SSH Key on a Dedicated Server
-excerpt: Restore SSH access to your dedicated server by generating and deploying a new key pair in rescue mode.
+title: "Replacing a Lost SSH Key on a Dedicated Server"
+excerpt: "Restore SSH access to your dedicated server by generating and deploying a new key pair in rescue mode."
 updated: 2024-04-04
 ---
 

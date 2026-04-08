@@ -1,6 +1,6 @@
 ---
-title: How to install VMware ESXi 8 on a Dedicated Server
-excerpt: Install and configure VMware ESXi 8 on an OVHcloud dedicated server, selecting a predefined partitioning layout and configuring a datastore.
+title: "How to install VMware ESXi 8 on a Dedicated Server"
+excerpt: "Install and configure VMware ESXi 8 on an OVHcloud dedicated server, selecting a predefined partitioning layout and configuring a datastore."
 updated: 2025-10-03
 ---
 

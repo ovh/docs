@@ -1,5 +1,5 @@
 ---
-title: 'Sauvegarder données et bases de données sur un serveur dédié'
+title: "Sauvegarder données et bases de données sur un serveur dédié"
 excerpt: "Sauvegardez vos données et bases de données sur l'espace de stockage intégré de votre serveur dédié OVHcloud en cinq étapes"
 updated: 2018-09-12
 ---

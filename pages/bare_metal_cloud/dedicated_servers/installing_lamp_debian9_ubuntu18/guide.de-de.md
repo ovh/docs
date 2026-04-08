@@ -1,6 +1,6 @@
 ---
-title: Webserver (LAMP) auf Debian oder Ubuntu installieren
-excerpt: Richten Sie einen LAMP-Webserver (Linux, Apache, MySQL, PHP) auf einem Debian- oder Ubuntu-Dedicated-Server Schritt für Schritt ein.
+title: "Webserver (LAMP) auf Debian oder Ubuntu installieren"
+excerpt: "Richten Sie einen LAMP-Webserver (Linux, Apache, MySQL, PHP) auf einem Debian- oder Ubuntu-Dedicated-Server Schritt für Schritt ein."
 updated: 2023-05-10
 ---
 

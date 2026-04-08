@@ -1,6 +1,6 @@
 ---
-title: SSH-Schlüssel für Dedicated Server erstellen
-excerpt: Erstellen Sie OpenSSH-Schlüsselpaare auf Ihrem lokalen Gerät und verwenden Sie sie für sichere, passwortlose Verbindungen zu Ihrem Dedicated Server.
+title: "SSH-Schlüssel für Dedicated Server erstellen"
+excerpt: "Erstellen Sie OpenSSH-Schlüsselpaare auf Ihrem lokalen Gerät und verwenden Sie sie für sichere, passwortlose Verbindungen zu Ihrem Dedicated Server."
 updated: 2025-01-06
 ---
 

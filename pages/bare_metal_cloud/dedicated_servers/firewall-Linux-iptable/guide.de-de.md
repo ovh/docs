@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - iptables unter Linux konfigurieren
-excerpt: Sichern Sie Ihren Dedicated Server durch die Konfiguration von iptables-Firewallregeln zur Filterung des Netzwerkverkehrs unter Linux.
+title: "Dedicated Server - iptables unter Linux konfigurieren"
+excerpt: "Sichern Sie Ihren Dedicated Server durch die Konfiguration von iptables-Firewallregeln zur Filterung des Netzwerkverkehrs unter Linux."
 updated: 2024-12-20
 ---
 

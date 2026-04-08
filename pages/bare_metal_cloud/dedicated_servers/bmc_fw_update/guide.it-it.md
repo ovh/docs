@@ -1,5 +1,5 @@
 ---
-title: 'Come verificare la versione del firmware BMC su un server dedicato'
+title: "Come verificare la versione del firmware BMC su un server dedicato"
 excerpt: "Verifica la versione del firmware BMC sul tuo server dedicato OVHcloud per garantire la compatibilità della gestione hardware"
 updated: 2026-02-25
 ---

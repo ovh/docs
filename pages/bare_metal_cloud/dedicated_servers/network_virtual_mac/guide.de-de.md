@@ -1,6 +1,6 @@
 ---
-title: Virtuelle MAC-Adresse auf einem Dedicated Server zuweisen
-excerpt: Erstellen Sie eine virtuelle MAC-Adresse und weisen Sie sie einer Additional IP für transparentes VM-Networking auf Dedicated Servern zu.
+title: "Virtuelle MAC-Adresse auf einem Dedicated Server zuweisen"
+excerpt: "Erstellen Sie eine virtuelle MAC-Adresse und weisen Sie sie einer Additional IP für transparentes VM-Networking auf Dedicated Servern zu."
 updated: 2025-05-16
 ---
 

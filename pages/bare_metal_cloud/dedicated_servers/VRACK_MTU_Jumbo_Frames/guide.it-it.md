@@ -1,6 +1,6 @@
 ---
-title: 'Configurare i frame Jumbo nella vRack su un server dedicato'
-excerpt: 'Configura i frame Jumbo (MTU 9000) nella tua vRack OVHcloud per ottimizzare il throughput di rete tra server dedicati'
+title: "Configurare i frame Jumbo nella vRack su un server dedicato"
+excerpt: "Configura i frame Jumbo (MTU 9000) nella tua vRack OVHcloud per ottimizzare il throughput di rete tra server dedicati"
 updated: 2020-08-17
 ---
 

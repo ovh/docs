@@ -1,6 +1,6 @@
 ---
-title: BMC-Firmware-Version auf einem Dedicated Server prüfen
-excerpt: Überprüfen Sie die BMC-Firmware-Version auf Ihrem OVHcloud Dedicated Server, um die Kompatibilität der Hardwareverwaltung sicherzustellen.
+title: "BMC-Firmware-Version auf einem Dedicated Server prüfen"
+excerpt: "Überprüfen Sie die BMC-Firmware-Version auf Ihrem OVHcloud Dedicated Server, um die Kompatibilität der Hardwareverwaltung sicherzustellen."
 updated: 2026-02-25
 ---
 

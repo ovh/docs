@@ -1,6 +1,6 @@
 ---
-title: Configuring iptables on a Linux Dedicated Server
-excerpt: Secure your dedicated server by configuring iptables firewall rules to filter network traffic on Linux.
+title: "Configuring iptables on a Linux Dedicated Server"
+excerpt: "Secure your dedicated server by configuring iptables firewall rules to filter network traffic on Linux."
 updated: 2024-12-20
 ---
 

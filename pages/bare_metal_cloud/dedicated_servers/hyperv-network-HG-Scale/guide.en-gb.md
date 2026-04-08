@@ -1,6 +1,6 @@
 ---
-title: 'Hyper-V Networking on HG/Scale Dedicated Servers'
-excerpt: 'Configure network interfaces on a Windows Server with Hyper-V running on High Grade or Scale dedicated servers.'
+title: "Hyper-V Networking on HG/Scale Dedicated Servers"
+excerpt: "Configure network interfaces on a Windows Server with Hyper-V running on High Grade or Scale dedicated servers."
 updated: 2025-05-16
 ---
 

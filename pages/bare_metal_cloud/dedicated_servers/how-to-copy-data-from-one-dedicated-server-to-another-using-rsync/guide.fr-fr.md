@@ -1,6 +1,6 @@
 ---
-title: ‘Copier des données entre serveurs dédiés avec rsync’
-excerpt: ‘Copiez facilement les données de votre serveur dédié vers un autre grâce à rsync’
+title: "Copier des données entre serveurs dédiés avec rsync"
+excerpt: "Copiez facilement les données de votre serveur dédié vers un autre grâce à rsync"
 updated: 2022-02-16
 ---
 

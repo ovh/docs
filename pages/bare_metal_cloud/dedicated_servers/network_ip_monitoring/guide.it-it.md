@@ -1,6 +1,6 @@
 ---
-title: Indirizzi IP del monitoring OVHcloud per server dedicati
-excerpt: Trova gli indirizzi IP da autorizzare nel tuo firewall affinché il monitoring OVHcloud continui a funzionare sul tuo server
+title: "Indirizzi IP del monitoring OVHcloud per server dedicati"
+excerpt: "Trova gli indirizzi IP da autorizzare nel tuo firewall affinché il monitoring OVHcloud continui a funzionare sul tuo server"
 updated: 2025-06-04
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Recovering a Lost Password on a Dedicated Server
-excerpt: Reset a lost user password on a GNU/Linux dedicated server using OVHcloud rescue mode to regain access.
+title: "Recovering a Lost Password on a Dedicated Server"
+excerpt: "Reset a lost user password on a GNU/Linux dedicated server using OVHcloud rescue mode to regain access."
 updated: 2025-10-02
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Hot-Swapping a Disk on Software RAID Dedicated Servers
-excerpt: Replace a defective disk on a dedicated server with software RAID without downtime using the hot-swap procedure.
+title: "Hot-Swapping a Disk on Software RAID Dedicated Servers"
+excerpt: "Replace a defective disk on a dedicated server with software RAID without downtime using the hot-swap procedure."
 updated: 2023-08-21
 ---
 

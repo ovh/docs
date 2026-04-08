@@ -1,5 +1,5 @@
 ---
-title: Migrare i dati da un server dedicato a un altro
+title: "Migrare i dati da un server dedicato a un altro"
 excerpt: "Migra i dati tra server dedicati OVHcloud con rsync, SFTP o il backup storage per una transizione fluida"
 updated: 2021-09-16
 ---

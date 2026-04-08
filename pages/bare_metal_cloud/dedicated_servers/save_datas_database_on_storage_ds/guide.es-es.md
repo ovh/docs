@@ -1,5 +1,5 @@
 ---
-title: 'Guardar datos y bases de datos en un servidor dedicado'
+title: "Guardar datos y bases de datos en un servidor dedicado"
 excerpt: "Guarde sus datos y bases de datos en el espacio de almacenamiento integrado de su servidor dedicado OVHcloud en cinco pasos"
 updated: 2018-09-12
 ---

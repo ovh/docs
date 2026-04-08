@@ -1,6 +1,6 @@
 ---
-title: Dateien per SFTP auf einen Dedicated Server übertragen
-excerpt: Übertragen Sie Dateien auf Ihren Dedicated Server und von dort mithilfe von SFTP und FileZilla für sichere Uploads und Downloads.
+title: "Dateien per SFTP auf einen Dedicated Server übertragen"
+excerpt: "Übertragen Sie Dateien auf Ihren Dedicated Server und von dort mithilfe von SFTP und FileZilla für sichere Uploads und Downloads."
 updated: 2025-02-21
 ---
 

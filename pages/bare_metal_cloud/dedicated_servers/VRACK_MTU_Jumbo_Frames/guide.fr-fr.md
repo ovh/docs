@@ -1,6 +1,6 @@
 ---
-title: 'Configurer les trames Jumbo dans le vRack sur un serveur dédié'
-excerpt: 'Configurez les trames Jumbo (MTU 9000) dans votre vRack OVHcloud pour optimiser le débit réseau entre serveurs dédiés'
+title: "Configurer les trames Jumbo dans le vRack sur un serveur dédié"
+excerpt: "Configurez les trames Jumbo (MTU 9000) dans votre vRack OVHcloud pour optimiser le débit réseau entre serveurs dédiés"
 updated: 2020-08-17
 ---
 

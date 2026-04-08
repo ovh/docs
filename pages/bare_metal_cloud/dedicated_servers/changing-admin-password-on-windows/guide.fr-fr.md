@@ -1,6 +1,6 @@
 ---
-title: 'Modifier le mot de passe administrateur sur un serveur dédié Windows'
-excerpt: 'Réinitialisez le mot de passe administrateur sur un serveur dédié Windows via le mode rescue OVHcloud en cas de perte'
+title: "Modifier le mot de passe administrateur sur un serveur dédié Windows"
+excerpt: "Réinitialisez le mot de passe administrateur sur un serveur dédié Windows via le mode rescue OVHcloud en cas de perte"
 updated: 2024-06-26
 flag: hidden
 ---

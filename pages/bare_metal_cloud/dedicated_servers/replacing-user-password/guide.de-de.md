@@ -1,6 +1,6 @@
 ---
-title: Verlorenes Passwort auf einem Dedicated Server zurücksetzen
-excerpt: Setzen Sie ein verlorenes Benutzerpasswort auf einem GNU/Linux-Dedicated-Server im OVHcloud Rescue-Modus zurück.
+title: "Verlorenes Passwort auf einem Dedicated Server zurücksetzen"
+excerpt: "Setzen Sie ein verlorenes Benutzerpasswort auf einem GNU/Linux-Dedicated-Server im OVHcloud Rescue-Modus zurück."
 updated: 2025-10-02
 ---
 

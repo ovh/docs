@@ -1,6 +1,6 @@
 ---
-title: Backup Storage auf einem Dedicated Server verwenden
-excerpt: Aktivieren Sie den in Ihrem OVHcloud Dedicated Server enthaltenen Backup Storage und greifen Sie darauf zu, um Backups auf Dateiebene zu erstellen.
+title: "Backup Storage auf einem Dedicated Server verwenden"
+excerpt: "Aktivieren Sie den in Ihrem OVHcloud Dedicated Server enthaltenen Backup Storage und greifen Sie darauf zu, um Backups auf Dateiebene zu erstellen."
 updated: 2026-03-25
 ---
 

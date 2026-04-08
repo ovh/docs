@@ -1,6 +1,6 @@
 ---
-title: Windows-Passwort auf einem Dedicated Server zurücksetzen
-excerpt: Setzen Sie das Windows-Administratorpasswort auf einem Dedicated Server mit dem OVHcloud Windows Customer Rescue System zurück.
+title: "Windows-Passwort auf einem Dedicated Server zurücksetzen"
+excerpt: "Setzen Sie das Windows-Administratorpasswort auf einem Dedicated Server mit dem OVHcloud Windows Customer Rescue System zurück."
 updated: 2025-10-22
 ---
 

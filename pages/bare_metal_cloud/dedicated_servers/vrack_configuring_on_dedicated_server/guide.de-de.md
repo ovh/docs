@@ -1,6 +1,6 @@
 ---
-title: vRack auf Ihren Dedicated Servern konfigurieren
-excerpt: Konfigurieren Sie das private OVHcloud vRack-Netzwerk auf zwei oder mehr Dedicated Servern für isolierte Server-zu-Server-Kommunikation.
+title: "vRack auf Ihren Dedicated Servern konfigurieren"
+excerpt: "Konfigurieren Sie das private OVHcloud vRack-Netzwerk auf zwei oder mehr Dedicated Servern für isolierte Server-zu-Server-Kommunikation."
 updated: 2026-02-20
 ---
 

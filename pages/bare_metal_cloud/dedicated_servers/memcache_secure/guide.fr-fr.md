@@ -1,5 +1,5 @@
 ---
-title: Sécuriser un serveur dédié avec un service Memcached
+title: "Sécuriser un serveur dédié avec un service Memcached"
 excerpt: "Sécurisez le service Memcached sur votre serveur dédié pour empêcher les accès distants non autorisés et l'exposition des données"
 updated: 2018-03-02
 ---

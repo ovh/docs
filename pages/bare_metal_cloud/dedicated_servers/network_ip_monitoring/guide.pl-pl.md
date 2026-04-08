@@ -1,6 +1,6 @@
 ---
 title: "Serwer dedykowany - Konfiguracja monitorowania IP"
-excerpt: W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze.
+excerpt: "W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze."
 updated: 2025-06-04
 ---
 

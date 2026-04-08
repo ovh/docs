@@ -1,6 +1,6 @@
 ---
-title: Rescue-Modus auf einem Dedicated Server
-excerpt: Starten Sie Ihren Dedicated Server im OVHcloud Rescue-Modus, um Probleme zu diagnostizieren, Dateisysteme zu reparieren und Passwörter zurückzusetzen.
+title: "Rescue-Modus auf einem Dedicated Server"
+excerpt: "Starten Sie Ihren Dedicated Server im OVHcloud Rescue-Modus, um Probleme zu diagnostizieren, Dateisysteme zu reparieren und Passwörter zurückzusetzen."
 updated: 2026-01-09
 ---
 

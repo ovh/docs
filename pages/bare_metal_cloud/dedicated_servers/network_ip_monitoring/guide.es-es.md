@@ -1,6 +1,6 @@
 ---
-title: Direcciones IP de monitorización de OVHcloud para servidores dedicados
-excerpt: Encuentre las direcciones IP que debe autorizar en su firewall para que la monitorización de OVHcloud siga funcionando en su servidor
+title: "Direcciones IP de monitorización de OVHcloud para servidores dedicados"
+excerpt: "Encuentre las direcciones IP que debe autorizar en su firewall para que la monitorización de OVHcloud siga funcionando en su servidor"
 updated: 2025-06-04
 ---
 

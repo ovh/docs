@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Hyper-V Netzwerk auf HG/Scale Servern
-excerpt: Konfigurieren Sie Netzwerkinterfaces auf einem Windows Server mit Hyper-V auf High Grade oder Scale Dedicated Servern.
+title: "Dedicated Server - Hyper-V Netzwerk auf HG/Scale Servern"
+excerpt: "Konfigurieren Sie Netzwerkinterfaces auf einem Windows Server mit Hyper-V auf High Grade oder Scale Dedicated Servern."
 updated: 2025-05-16
 ---
 

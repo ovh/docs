@@ -1,6 +1,6 @@
 ---
-title: OVHcloud Monitoring IP-Adressen für Dedicated Server
-excerpt: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
+title: "OVHcloud Monitoring IP-Adressen für Dedicated Server"
+excerpt: "Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben"
 updated: 2025-06-04
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Instalacja serwera www (LAMP) na Debian lub Ubuntu
+title: "Tutorial - Instalacja serwera www (LAMP) na Debian lub Ubuntu"
 excerpt: "Zainstaluj stos LAMP (Linux, Apache, MySQL, PHP) na serwerze dedykowanym OVHcloud z systemem Debian lub Ubuntu."
 updated: 2023-05-10
 ---

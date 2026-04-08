@@ -1,6 +1,6 @@
 ---
-title: Admin-Passwort eines Windows Dedicated Servers ändern
-excerpt: Setzen Sie das Administratorpasswort eines Windows Dedicated Servers im OVHcloud Rescue-Modus zurück.
+title: "Admin-Passwort eines Windows Dedicated Servers ändern"
+excerpt: "Setzen Sie das Administratorpasswort eines Windows Dedicated Servers im OVHcloud Rescue-Modus zurück."
 updated: 2024-06-26
 flag: hidden
 ---

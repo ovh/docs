@@ -1,6 +1,6 @@
 ---
-title: Restoring a Bare Metal Server with Veeam Enterprise
-excerpt: Restore a Bare Metal server from backup using the Veeam Backup and Replication Enterprise recovery workflow.
+title: "Restoring a Bare Metal Server with Veeam Enterprise"
+excerpt: "Restore a Bare Metal server from backup using the Veeam Backup and Replication Enterprise recovery workflow."
 updated: 2024-04-05
 ---
 

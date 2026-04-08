@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Game DDoS Protection Firewall
-excerpt: Konfigurieren Sie die OVHcloud Game DDoS Protection Firewall, um Ihren Game Server vor Angriffen auf der Anwendungsebene zu schützen.
+title: "Dedicated Server - Game DDoS Protection Firewall"
+excerpt: "Konfigurieren Sie die OVHcloud Game DDoS Protection Firewall, um Ihren Game Server vor Angriffen auf der Anwendungsebene zu schützen."
 updated: 2026-03-24
 ---
 

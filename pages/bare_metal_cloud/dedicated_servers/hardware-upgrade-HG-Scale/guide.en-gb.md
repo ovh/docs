@@ -1,5 +1,5 @@
 ---
-title: Hardware upgrade on a High Grade or Scale Dedicated Server
+title: "Hardware upgrade on a High Grade or Scale Dedicated Server"
 excerpt: "Request a hardware upgrade (RAM, disk, NIC) on your High Grade or SCALE dedicated server via the OVHcloud Control Panel."
 updated: 2023-12-18
 ---

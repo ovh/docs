@@ -1,6 +1,6 @@
 ---
-title: 'Activer AMD SME/SEV sur un serveur dédié (Ubuntu)'
-excerpt: 'Activez SME sur votre serveur dédié Ubuntu et créez une machine virtuelle SEV sécurisée'
+title: "Activer AMD SME/SEV sur un serveur dédié (Ubuntu)"
+excerpt: "Activez SME sur votre serveur dédié Ubuntu et créez une machine virtuelle SEV sécurisée"
 updated: 2020-05-07
 ---
 

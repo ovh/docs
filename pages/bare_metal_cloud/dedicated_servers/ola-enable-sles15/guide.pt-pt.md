@@ -1,6 +1,6 @@
 ---
 title: "Servidor dedicado - OVHcloud Link Aggregation em SLES 15"
-excerpt: 'Ative o OVHcloud Link Aggregation no seu servidor dedicado SLES 15'
+excerpt: "Ative o OVHcloud Link Aggregation no seu servidor dedicado SLES 15"
 updated: 2024-11-26
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'Verificar o suporte de MAC virtuais num servidor dedicado'
+title: "Verificar o suporte de MAC virtuais num servidor dedicado"
 excerpt: "Utilize a API OVHcloud para verificar se a atribuição de MAC virtuais é suportada no seu modelo de servidor dedicado"
 updated: 2025-04-28
 ---

@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
-excerpt: Apply OVHcloud antispam best practices and unblock a dedicated server IP address flagged for spam sending.
+title: "OVHcloud AntiSpam - Best Practices and Unblocking an IP"
+excerpt: "Apply OVHcloud antispam best practices and unblock a dedicated server IP address flagged for spam sending."
 updated: 2026-01-06
 ---
 

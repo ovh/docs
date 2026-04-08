@@ -1,6 +1,6 @@
 ---
-title: Daten von einem Dedicated Server auf einen anderen migrieren
-excerpt: Migrieren Sie Daten zwischen OVHcloud Dedicated Servern mit rsync, SFTP oder Backup Storage für einen reibungslosen Serverwechsel.
+title: "Daten von einem Dedicated Server auf einen anderen migrieren"
+excerpt: "Migrieren Sie Daten zwischen OVHcloud Dedicated Servern mit rsync, SFTP oder Backup Storage für einen reibungslosen Serverwechsel."
 updated: 2021-09-16
 ---
 

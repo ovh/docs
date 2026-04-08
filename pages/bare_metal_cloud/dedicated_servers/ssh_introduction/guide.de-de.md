@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit SSH auf einem Dedicated Server
-excerpt: Verbinden Sie sich per SSH von Windows, macOS oder Linux aus mit Ihrem OVHcloud Server per Passwort- oder Schlüssel-Authentifizierung.
+title: "Erste Schritte mit SSH auf einem Dedicated Server"
+excerpt: "Verbinden Sie sich per SSH von Windows, macOS oder Linux aus mit Ihrem OVHcloud Server per Passwort- oder Schlüssel-Authentifizierung."
 updated: 2024-12-03
 ---
 

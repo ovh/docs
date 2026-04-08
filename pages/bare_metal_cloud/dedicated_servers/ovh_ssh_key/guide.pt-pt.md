@@ -1,6 +1,6 @@
 ---
-title: Instalar uma chave SSH OVHcloud num servidor dedicado
-excerpt: Instale uma chave SSH OVHcloud no seu servidor dedicado para conceder um acesso administrativo seguro às equipas de suporte OVHcloud
+title: "Instalar uma chave SSH OVHcloud num servidor dedicado"
+excerpt: "Instale uma chave SSH OVHcloud no seu servidor dedicado para conceder um acesso administrativo seguro às equipas de suporte OVHcloud"
 updated: 2018-02-12
 ---
 

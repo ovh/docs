@@ -1,6 +1,6 @@
 ---
-title: 'Configurar os quadros Jumbo no vRack num servidor dedicado'
-excerpt: 'Configure os quadros Jumbo (MTU 9000) no seu vRack OVHcloud para otimizar o débito de rede entre servidores dedicados'
+title: "Configurar os quadros Jumbo no vRack num servidor dedicado"
+excerpt: "Configure os quadros Jumbo (MTU 9000) no seu vRack OVHcloud para otimizar o débito de rede entre servidores dedicados"
 updated: 2020-08-17
 ---
 

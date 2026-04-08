@@ -1,6 +1,6 @@
 ---
-title: How to set up a web server (LAMP) on Debian or Ubuntu
-excerpt: Set up a LAMP web server (Linux, Apache, MySQL, PHP) on a Debian or Ubuntu dedicated server step by step.
+title: "How to set up a web server (LAMP) on Debian or Ubuntu"
+excerpt: "Set up a LAMP web server (Linux, Apache, MySQL, PHP) on a Debian or Ubuntu dedicated server step by step."
 updated: 2023-05-10
 ---
 

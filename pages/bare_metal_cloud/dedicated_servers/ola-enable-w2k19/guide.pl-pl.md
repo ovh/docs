@@ -1,6 +1,6 @@
 ---
 title: "Konfiguracja OVHcloud Link Aggregation w Windows Server"
-excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Windows Server 2019'
+excerpt: "Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Windows Server 2019"
 updated: 2021-03-25
 ---
 

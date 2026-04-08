@@ -1,6 +1,6 @@
 ---
-title: IPMI-Konsole mit einem Dedicated Server verwenden
-excerpt: Greifen Sie per IPMI/KVM-Konsole im OVHcloud Kundencenter ohne externe Software remote auf Ihren Dedicated Server zu.
+title: "IPMI-Konsole mit einem Dedicated Server verwenden"
+excerpt: "Greifen Sie per IPMI/KVM-Konsole im OVHcloud Kundencenter ohne externe Software remote auf Ihren Dedicated Server zu."
 updated: 2026-01-29
 ---
 

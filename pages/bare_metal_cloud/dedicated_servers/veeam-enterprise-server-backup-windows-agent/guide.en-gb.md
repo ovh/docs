@@ -1,6 +1,6 @@
 ---
-title: Backing Up a Dedicated Windows Server with Veeam Agent
-excerpt: Configure the Veeam Agent for Microsoft Windows to protect your Bare Metal server with scheduled backups.
+title: "Backing Up a Dedicated Windows Server with Veeam Agent"
+excerpt: "Configure the Veeam Agent for Microsoft Windows to protect your Bare Metal server with scheduled backups."
 updated: 2024-04-05
 ---
 

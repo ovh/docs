@@ -1,5 +1,5 @@
 ---
-title: Espejo RAID por software en un servidor dedicado Windows
+title: "Espejo RAID por software en un servidor dedicado Windows"
 excerpt: "Reconstruya la configuración del espejo RAID por software en un servidor dedicado Windows tras un reemplazo de disco"
 updated: 2023-03-28
 ---

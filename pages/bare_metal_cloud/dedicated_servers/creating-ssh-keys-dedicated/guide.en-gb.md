@@ -1,6 +1,6 @@
 ---
-title: How to Create SSH Keys for Dedicated Server Access
-excerpt: Create OpenSSH key pairs on your local device and use them for secure, passwordless connections to your dedicated server.
+title: "How to Create SSH Keys for Dedicated Server Access"
+excerpt: "Create OpenSSH key pairs on your local device and use them for secure, passwordless connections to your dedicated server."
 updated: 2025-01-06
 ---
 

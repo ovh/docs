@@ -1,6 +1,6 @@
 ---
-title: Dedicated Servers - Upgrading your Micron 7500 PRO firmware
-excerpt: Upgrade the Micron 7500 PRO NVMe firmware on your Linux, ESXi, or Windows dedicated server for improved stability.
+title: "Dedicated Servers - Upgrading your Micron 7500 PRO firmware"
+excerpt: "Upgrade the Micron 7500 PRO NVMe firmware on your Linux, ESXi, or Windows dedicated server for improved stability."
 updated: 2025-09-25
 ---
 

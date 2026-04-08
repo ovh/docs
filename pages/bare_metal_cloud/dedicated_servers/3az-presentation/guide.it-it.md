@@ -1,6 +1,6 @@
 ---
 title: "Bare Metal 3-AZ Region - Presentazione dell'offerta"
-excerpt: 'Scopri il servizio Bare Metal 3-AZ, che offre massima disponibilità e ridondanza tra tre datacenter'
+excerpt: "Scopri il servizio Bare Metal 3-AZ, che offre massima disponibilità e ridondanza tra tre datacenter"
 updated: 2025-06-04
 ---
 

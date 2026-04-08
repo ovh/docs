@@ -1,6 +1,6 @@
 ---
-title: OVHcloud Link Aggregation über das Kundencenter (Dedicated)
-excerpt: Aktivieren Sie OVHcloud Link Aggregation (OLA) auf Ihrem Dedicated Server direkt über das OVHcloud Kundencenter.
+title: "OVHcloud Link Aggregation über das Kundencenter (Dedicated)"
+excerpt: "Aktivieren Sie OVHcloud Link Aggregation (OLA) auf Ihrem Dedicated Server direkt über das OVHcloud Kundencenter."
 updated: 2022-05-18
 ---
 

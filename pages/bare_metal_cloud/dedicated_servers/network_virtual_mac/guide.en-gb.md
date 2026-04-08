@@ -1,6 +1,6 @@
 ---
-title: Assigning a Virtual MAC on a Dedicated Server
-excerpt: Create a virtual MAC address and assign it to an Additional IP for transparent VM networking on dedicated servers.
+title: "Assigning a Virtual MAC on a Dedicated Server"
+excerpt: "Create a virtual MAC address and assign it to an Additional IP for transparent VM networking on dedicated servers."
 updated: 2025-05-16
 ---
 

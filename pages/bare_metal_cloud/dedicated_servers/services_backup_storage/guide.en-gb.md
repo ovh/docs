@@ -1,6 +1,6 @@
 ---
-title: How to use the backup storage on a Dedicated Server
-excerpt: 'Enable and access the backup storage space included with your OVHcloud dedicated server for file-level backups.'
+title: "How to use the backup storage on a Dedicated Server"
+excerpt: "Enable and access the backup storage space included with your OVHcloud dedicated server for file-level backups."
 updated: 2026-03-25
 ---
 

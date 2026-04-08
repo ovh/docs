@@ -1,6 +1,6 @@
 ---
-title: Backing up a Bare Metal Linux Server with Veeam Enterprise
-excerpt: Back up your Bare Metal Linux server using Veeam Backup and Replication Enterprise with agent-based protection.
+title: "Backing up a Bare Metal Linux Server with Veeam Enterprise"
+excerpt: "Back up your Bare Metal Linux server using Veeam Backup and Replication Enterprise with agent-based protection."
 updated: 2024-04-05
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Server dedicato - Configurare un blocco IP nella vRack'
-excerpt: 'Configura un blocco di indirizzi IP pubblici per la rete privata vRack OVHcloud tra i tuoi server dedicati'
+title: "Server dedicato - Configurare un blocco IP nella vRack"
+excerpt: "Configura un blocco di indirizzi IP pubblici per la rete privata vRack OVHcloud tra i tuoi server dedicati"
 updated: 2026-04-03
 ---
 

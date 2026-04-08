@@ -1,6 +1,6 @@
 ---
-title: 'Copiare dati da un server dedicato a un altro con rsync'
-excerpt: 'Copia facilmente i dati dal tuo server dedicato a un altro grazie a rsync'
+title: "Copiare dati da un server dedicato a un altro con rsync"
+excerpt: "Copia facilmente i dati dal tuo server dedicato a un altro grazie a rsync"
 updated: 2022-02-16
 ---
 

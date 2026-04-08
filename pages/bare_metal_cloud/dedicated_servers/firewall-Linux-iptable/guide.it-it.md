@@ -1,6 +1,6 @@
 ---
-title: Configurare iptables su un server dedicato Linux
-excerpt: Proteggi il tuo server dedicato configurando regole firewall iptables per filtrare il traffico di rete su Linux
+title: "Configurare iptables su un server dedicato Linux"
+excerpt: "Proteggi il tuo server dedicato configurando regole firewall iptables per filtrare il traffico di rete su Linux"
 updated: 2024-12-20
 ---
 

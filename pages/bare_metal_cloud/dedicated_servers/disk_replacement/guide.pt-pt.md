@@ -1,5 +1,5 @@
 ---
-title: 'Substituir um disco com defeito num servidor dedicado'
+title: "Substituir um disco com defeito num servidor dedicado"
 excerpt: "Identifique um disco com defeito no seu servidor dedicado OVHcloud e solicite a sua substituição através da área de cliente"
 updated: 2018-06-21
 ---

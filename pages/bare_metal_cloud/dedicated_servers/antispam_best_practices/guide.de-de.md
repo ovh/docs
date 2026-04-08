@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Best Practices und IP-Entsperrung
-excerpt: Wenden Sie OVHcloud AntiSpam Best Practices an und entsperren Sie eine IP-Adresse Ihres Dedicated Servers, die wegen Spam-Versand markiert wurde.
+title: "OVHcloud AntiSpam - Best Practices und IP-Entsperrung"
+excerpt: "Wenden Sie OVHcloud AntiSpam Best Practices an und entsperren Sie eine IP-Adresse Ihres Dedicated Servers, die wegen Spam-Versand markiert wurde."
 updated: 2026-01-06
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Configurer le DNS secondaire OVHcloud sur un serveur dédié'
-excerpt: 'Ajoutez un serveur DNS secondaire pour votre nom de domaine hébergé sur un serveur dédié OVHcloud pour une meilleure résilience DNS'
+title: "Configurer le DNS secondaire OVHcloud sur un serveur dédié"
+excerpt: "Ajoutez un serveur DNS secondaire pour votre nom de domaine hébergé sur un serveur dédié OVHcloud pour une meilleure résilience DNS"
 updated: 2021-01-08
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Bare Metal 3-AZ Region - Présentation de l'offre"
-excerpt: 'Découvrez le service Bare Metal 3-AZ, qui offre une haute disponibilité et une redondance inégalées entre trois datacenters'
+excerpt: "Découvrez le service Bare Metal 3-AZ, qui offre une haute disponibilité et une redondance inégalées entre trois datacenters"
 updated: 2025-06-04
 ---
 

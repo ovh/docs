@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Network Security Dashboard
-excerpt: Überwachen Sie DDoS-Angriffe und Trafficmuster auf Ihrem Dedicated Server mit dem OVHcloud Network Security Dashboard.
+title: "Dedicated Server - Network Security Dashboard"
+excerpt: "Überwachen Sie DDoS-Angriffe und Trafficmuster auf Ihrem Dedicated Server mit dem OVHcloud Network Security Dashboard."
 updated: 2025-10-31
 ---
 

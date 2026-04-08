@@ -1,5 +1,5 @@
 ---
-title: 'Sustituir un disco defectuoso en un servidor dedicado'
+title: "Sustituir un disco defectuoso en un servidor dedicado"
 excerpt: "Identifique un disco defectuoso en su servidor dedicado OVHcloud y solicite su sustitución a través del área de cliente"
 updated: 2018-06-21
 ---

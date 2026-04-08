@@ -1,5 +1,5 @@
 ---
-title: Information about Meltdown and Spectre vulnerability fixes
+title: "Information about Meltdown and Spectre vulnerability fixes"
 fullwidth: true
 updated: 2020-07-15
 ---

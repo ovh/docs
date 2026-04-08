@@ -1,6 +1,6 @@
 ---
-title: Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise
-excerpt: Sauvegardez votre serveur Bare Metal Linux avec Veeam Backup and Replication Enterprise et la protection par agent
+title: "Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise"
+excerpt: "Sauvegardez votre serveur Bare Metal Linux avec Veeam Backup and Replication Enterprise et la protection par agent"
 updated: 2024-04-05
 ---
 
