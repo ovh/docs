@@ -1,6 +1,6 @@
 ---
-title: OVHcloud Control Panel for Kimsufi & So you Start Servers
-excerpt: Navigate the OVHcloud Control Panel as a Kimsufi or So you Start customer to manage your dedicated server services.
+title: "OVHcloud Control Panel for Kimsufi & So you Start Dedicated Servers"
+excerpt: "Navigate the OVHcloud Control Panel as a Kimsufi or So you Start customer to manage your dedicated server services."
 updated: 2025-04-28
 ---
 

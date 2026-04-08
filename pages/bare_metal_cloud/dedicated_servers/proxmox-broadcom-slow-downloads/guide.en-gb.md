@@ -1,6 +1,6 @@
 ---
-title: 'Dedicated Server - Fixing Proxmox VE Slow Downloads'
-excerpt: 'Resolve slow download speeds in Proxmox VE containers and VMs on servers with Broadcom BCM57502 network adapters.'
+title: "Fix Proxmox VE Slow Downloads on a Dedicated Server"
+excerpt: "Resolve slow download speeds in Proxmox VE containers and VMs on servers with Broadcom BCM57502 network adapters."
 updated: 2025-01-16
 ---
 

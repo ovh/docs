@@ -1,6 +1,6 @@
 ---
-title: Dedicated Server - Upgrading Solidigm D7-P5520 SSD Firmware
-excerpt: Upgrade the Solidigm D7-P5520 SSD firmware on your Linux, ESXi, or Windows dedicated server for improved performance.
+title: "Upgrade Solidigm D7-P5520 SSD Firmware on a Dedicated Server"
+excerpt: "Upgrade the Solidigm D7-P5520 SSD firmware on your Linux, ESXi, or Windows dedicated server for improved performance."
 updated: 2025-06-16
 ---
 

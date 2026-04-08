@@ -1,6 +1,6 @@
 ---
-title: Edge Network Firewall for Dedicated Servers
-excerpt: Enable and configure the Edge Network Firewall to filter incoming traffic to your OVHcloud dedicated server.
+title: "Configure the Edge Network Firewall for Dedicated Servers"
+excerpt: "Enable and configure the Edge Network Firewall to filter incoming traffic to your OVHcloud dedicated server."
 updated: 2026-03-10
 ---
 

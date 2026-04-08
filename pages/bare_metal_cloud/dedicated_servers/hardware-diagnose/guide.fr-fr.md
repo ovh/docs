@@ -1,6 +1,6 @@
 ---
-title: 'Serveur dédié - Diagnostic matériel en mode rescue'
-excerpt: 'Exécutez des diagnostics matériels sur votre serveur dédié OVHcloud en mode rescue pour identifier les pannes disque, RAM ou CPU'
+title: "Effectuer un diagnostic matériel en mode rescue sur un serveur dédié"
+excerpt: "Exécutez des diagnostics matériels sur votre serveur dédié OVHcloud en mode rescue pour identifier les pannes disque, RAM ou CPU"
 updated: 2025-10-16
 ---
 

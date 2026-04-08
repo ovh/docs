@@ -1,6 +1,6 @@
 ---
-title: 'Dedicated Server - Changing IP Block Announcement in vRack'
-excerpt: 'Change the geographic announcement zone of an IP block in your OVHcloud vRack for optimised routing.'
+title: "Change IP Block Announcement in a vRack on a Dedicated Server"
+excerpt: "Change the geographic announcement zone of an IP block in your OVHcloud vRack for optimised routing."
 updated: 2025-05-14
 ---
 

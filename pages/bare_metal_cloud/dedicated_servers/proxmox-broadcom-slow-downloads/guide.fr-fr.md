@@ -1,5 +1,5 @@
 ---
-title: "Serveur dédié - Corriger les téléchargements lents sur Proxmox VE"
+title: "Corriger les téléchargements lents de Proxmox VE sur un serveur dédié"
 excerpt: "Résolvez les lenteurs de téléchargement dans les conteneurs et VM Proxmox VE sur les serveurs avec cartes réseau Broadcom BCM57502"
 updated: 2025-01-16
 ---

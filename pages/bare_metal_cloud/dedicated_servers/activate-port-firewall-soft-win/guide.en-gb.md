@@ -1,6 +1,6 @@
 ---
-title: Configuring the Windows Firewall on a Dedicated Server
-excerpt: Configure the built-in Windows firewall on your dedicated server to control inbound and outbound network traffic.
+title: "Configure the Windows Firewall on a Dedicated Server"
+excerpt: "Configure the built-in Windows firewall on your dedicated server to control inbound and outbound network traffic."
 updated: 2022-01-31
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Deploying Custom Images (BYOI) on Dedicated Servers
-excerpt: Deploy your own custom OS images on OVHcloud dedicated servers using the Bring Your Own Image (BYOI) feature.
+title: "Deploying Custom Images using Bring Your Own Image (BYOI) on Dedicated Servers"
+excerpt: "Deploy your own custom OS images on OVHcloud dedicated servers using the Bring Your Own Image (BYOI) feature."
 updated: 2026-02-10
 ---
 

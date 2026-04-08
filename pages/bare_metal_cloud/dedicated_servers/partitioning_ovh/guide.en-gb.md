@@ -1,6 +1,6 @@
 ---
-title: 'Customising Dedicated Server Partitions via OVHcloud API'
-excerpt: 'Use the OVHcloud API to customise disk partitions, hardware RAID, and file systems on your dedicated server.'
+title: "Customising Dedicated Server Partitioning via OVHcloud API"
+excerpt: "Use the OVHcloud API to customise disk partitions, hardware RAID, software RAID and file systems on your dedicated server."
 updated: 2026-02-18
 ---
 

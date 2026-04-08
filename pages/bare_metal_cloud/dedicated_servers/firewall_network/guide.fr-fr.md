@@ -1,6 +1,6 @@
 ---
-title: 'Edge Network Firewall pour serveurs dédiés'
-excerpt: 'Activez et configurez le Edge Network Firewall pour filtrer le trafic entrant vers votre serveur dédié OVHcloud'
+title: "Configurer le Edge Network Firewall pour serveurs dédiés"
+excerpt: "Activez et configurez le Edge Network Firewall pour filtrer le trafic entrant vers votre serveur dédié OVHcloud"
 updated: 2026-03-10
 ---
 

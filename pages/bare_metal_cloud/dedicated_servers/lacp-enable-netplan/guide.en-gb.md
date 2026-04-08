@@ -1,5 +1,5 @@
 ---
-title: "Dedicated Server - LACP Link Aggregation on Debian/Ubuntu"
+title: "Configure LACP Link Aggregation on a Dedicated Server (Debian/Ubuntu)"
 excerpt: "Configure LACP link aggregation on Debian 12 or Ubuntu 24.04 servers using Netplan for improved bandwidth and redundancy."
 updated: 2026-01-09
 ---

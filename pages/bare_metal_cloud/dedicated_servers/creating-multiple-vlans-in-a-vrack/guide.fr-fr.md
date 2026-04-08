@@ -1,6 +1,6 @@
 ---
-title: 'Serveur dédié - Créer plusieurs VLAN dans le vRack'
-excerpt: 'Créez et gérez plusieurs VLAN dans votre vRack OVHcloud pour segmenter le trafic réseau entre serveurs dédiés'
+title: "Créer plusieurs VLAN dans le vRack sur un serveur dédié"
+excerpt: "Créez et gérez plusieurs VLAN dans votre vRack OVHcloud pour segmenter le trafic réseau entre serveurs dédiés"
 updated: 2026-02-20
 ---
 

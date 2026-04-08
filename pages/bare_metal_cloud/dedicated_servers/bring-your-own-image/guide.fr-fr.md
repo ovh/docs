@@ -1,6 +1,6 @@
 ---
-title: Déployer des images personnalisées (BYOI) sur un serveur dédié
-excerpt: Déployez vos propres images OS personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Image (BYOI)
+title: "Déployer des images personnalisées avec le service Bring Your Own Image (BYOI) sur un serveur dédié"
+excerpt: "Déployez vos propres images OS personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Image (BYOI)"
 updated: 2026-02-10
 ---
 

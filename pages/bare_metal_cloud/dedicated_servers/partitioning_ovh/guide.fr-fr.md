@@ -1,6 +1,6 @@
 ---
-title: "Personnaliser le partitionnement via l'API OVHcloud (Dédié)"
-excerpt: "Utilisez l'API OVHcloud pour personnaliser les partitions, le RAID matériel et les systèmes de fichiers sur votre serveur dédié"
+title: "Personnaliser le partitionnement de votre serveur dédié via l'API OVHcloud"
+excerpt: "Utilisez l'API OVHcloud pour personnaliser les partitions, le RAID matériel, le RAID logiciel et les systèmes de fichiers sur votre serveur dédié"
 updated: 2026-02-18
 ---
 

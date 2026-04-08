@@ -1,6 +1,6 @@
 ---
-title: 'Serveur dédié - Configurer le bridge réseau pfSense'
-excerpt: 'Configurez le bridge IP sur une machine virtuelle pfSense hébergée sur un serveur dédié OVHcloud pour le routage réseau'
+title: "Configurer le bridge réseau pfSense sur un serveur dédié"
+excerpt: "Configurez le bridge IP sur une machine virtuelle pfSense hébergée sur un serveur dédié OVHcloud pour le routage réseau"
 updated: 2025-04-28
 ---
 

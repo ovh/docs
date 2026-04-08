@@ -1,5 +1,5 @@
 ---
-title: "Serveur dédié - Agrégation LACP sur Debian/Ubuntu"
+title: "Configurer l'agrégation LACP sur un serveur dédié (Debian/Ubuntu)"
 excerpt: "Configurez l'agrégation de liens LACP sur un serveur dédié Debian 12 ou Ubuntu 24.04 avec Netplan pour la bande passante et la redondance"
 updated: 2026-01-09
 ---

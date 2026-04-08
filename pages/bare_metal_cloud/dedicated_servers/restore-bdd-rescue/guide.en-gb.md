@@ -1,5 +1,5 @@
 ---
-title: "Dedicated Server - Retrieving Databases in Rescue Mode"
+title: "Retrieve Databases in Rescue Mode on a Dedicated Server"
 excerpt: "Access and export your databases from a dedicated server in rescue mode to recover data after an incident."
 updated: 2023-04-13
 ---

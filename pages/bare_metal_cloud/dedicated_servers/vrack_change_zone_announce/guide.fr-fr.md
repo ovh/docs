@@ -1,5 +1,5 @@
 ---
-title: "Serveur dédié - Modifier l'annonce d'un bloc IP dans le vRack"
+title: "Modifier l'annonce d'un bloc IP dans le vRack sur un serveur dédié"
 excerpt: "Modifiez la zone d'annonce géographique d'un bloc IP dans votre vRack OVHcloud pour un routage optimisé"
 updated: 2025-05-14
 ---

@@ -1,6 +1,6 @@
 ---
-title: 'Dedicated Server - Configuring Additional IPs in Bridge Mode'
-excerpt: 'Configure your virtual machines on a dedicated server for public internet access using network bridge mode.'
+title: "Configure Additional IPs in Bridge Mode on a Dedicated Server"
+excerpt: "Configure your virtual machines on a dedicated server for public internet access using network bridge mode."
 updated: 2026-01-06
 ---
 

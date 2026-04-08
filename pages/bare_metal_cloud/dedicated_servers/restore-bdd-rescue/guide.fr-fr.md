@@ -1,5 +1,5 @@
 ---
-title: "Serveur dédié - Récupérer des bases de données en mode rescue"
+title: "Récupérer des bases de données en mode rescue sur un serveur dédié"
 excerpt: "Accédez à vos bases de données et exportez-les depuis un serveur dédié en mode rescue pour récupérer vos données après un incident"
 updated: 2023-04-13
 ---

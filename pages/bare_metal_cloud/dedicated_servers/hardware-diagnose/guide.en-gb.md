@@ -1,5 +1,5 @@
 ---
-title: "Dedicated Server - Hardware Diagnostics in Rescue Mode"
+title: "Run Hardware Diagnostics in Rescue Mode on a Dedicated Server"
 excerpt: "Run hardware diagnostics on your OVHcloud dedicated server using rescue mode to identify disk, RAM, or CPU failures."
 updated: 2025-10-16
 ---

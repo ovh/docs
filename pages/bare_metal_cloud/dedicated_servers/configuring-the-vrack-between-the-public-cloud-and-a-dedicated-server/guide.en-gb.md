@@ -1,6 +1,6 @@
 ---
-title: 'Configuring vRack Between Public Cloud and Dedicated Server'
-excerpt: 'Set up private networking between an OVHcloud Public Cloud instance and a dedicated server using the vRack.'
+title: "Configure the vRack between the Public Cloud and a Dedicated Server"
+excerpt: "Set up private networking between an OVHcloud Public Cloud instance and a dedicated server using the vRack."
 updated: 2026-02-20
 ---
 
