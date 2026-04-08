@@ -20,7 +20,7 @@ When Anti-Hack protection is triggered on your Dedicated Server, you will see a 
 Depending on the criticity of the Anti-Hack protection triggered by OVHcloud, the following actions will be allowed/required in order to recover the full service on the server.
 
 | Status | Expected actions |
-| ------ | --------- | ----------- |
+| ------ | ----------- |
 | Hacked | Restart the server or ask OVHcloud to reinstall the server |
 | HackedBlocked | Collect data through FTP on server booted in FTP rescue system |
 
