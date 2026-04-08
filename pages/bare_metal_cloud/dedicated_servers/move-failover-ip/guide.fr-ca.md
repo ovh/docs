@@ -1,6 +1,6 @@
 ---
-title:  Déplacer une Additional IP
-excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
+title: "Déplacer une Additional IP sur un serveur dédié"
+excerpt: "Déplacez une adresse Additional IP entre serveurs dédiés via l'espace client OVHcloud ou l'API"
 updated: 2026-01-21
 ---
 
@@ -86,13 +86,13 @@ Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et serv
 
 Cliquez sur le bouton `⁝`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action}.
 
-![espace client](images/move_ip_1_new.png){.thumbnail}
+![Menu contextuel pour deplacer une Additional IP](images/move_ip_1_new.png){.thumbnail}
 
 Dans le menu contextuel qui apparaît, sélectionnez le service vers lequel déplacer l'adresse IP.
 
 Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
-![espace client](images/move_ip_2_new.png){.thumbnail}
+![Selectionner le service de destination pour l'Additional IP](images/move_ip_2_new.png){.thumbnail}
 
 > [!warning]
 > Veuillez noter que pour certains produits, les adresses IP (ou blocs) doivent d'abord être déplacées vers un **Parking IP** (un emplacement de stockage temporaire), avant de pouvoir être déplacées vers le produit souhaité.
@@ -127,10 +127,6 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 
 ### Déplacer une Additional IP d'un compte So you Start vers un compte OVHcloud
 
-> [primary]
-> Avant de commencer, vous devez récupérer votre identifiant client OVHcloud unique. Vous trouverez cette information dans les e-mails envoyés par OVHcloud (e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.) Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte).
->
-
 Pour déplacer une Additional IP d'un compte SYS vers un compte OVHcloud, vous devez tenir compte de plusieurs éléments :
 
 - Le déplacement d'une Additional IP entraîne des frais d'installation. L'adresse IP ne sera pas déplacée si la facture reste impayée.
@@ -139,46 +135,46 @@ Pour déplacer une Additional IP d'un compte SYS vers un compte OVHcloud, vous d
 
 Pour commencer, connectez-vous à votre compte So you Start et cliquez sur `IP`{.action} dans le tableau de bord principal.
 
-![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+![Section IP So you Start dans le tableau de bord](images/sys-ip-section.png){.thumbnail}
 
 Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à côté de l'adresse IP correspondante et sélectionnez `Déplacer l'IP FO`{.action}.
 
-![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+![Option Deplacer l'IP failover dans le menu So you Start](images/move-ip-sys.png){.thumbnail}
 
 Sélectionnez `Déplacer vers un service OVH`{.action}, entrez votre identifiant client OVHcloud et cliquez sur `Suivant`{.action}.
 
-![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+![Selectionner Deplacer vers un service OVH et saisir le NIC handle](images/move-to-ovh.png){.thumbnail}
 
 Cela générera un code, sauvegardez-le.
 
-![soyoustart to ovh](images/token-id.png){.thumbnail}
+![Code token généré pour le transfert d'IP](images/token-id.png){.thumbnail}
 
 Ensuite, [connectez-vous à votre compte OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
 Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à droite et sélectionnez `Importer mes adresses IP de Sys vers OVHcloud`{.action}.
 
-![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+![Option Importer des adresses IP de SyS vers OVHcloud](images/import-ip-to-ovh.png){.thumbnail}
 
 Dans la fenêtre contextuelle, entrez l'adresse Additional IP (ou le bloc) et le code récupéré depuis le compte So you Start, puis cliquez sur `Suivant`{.action}.
 
-![soyoustart to ovh](images/Step-1.png){.thumbnail}
+![Saisir l'Additional IP et le token pour l'import](images/Step-1.png){.thumbnail}
 
 Sélectionnez le serveur de destination et cliquez sur `Suivant`{.action}. Si le serveur dédié est compatible avec l'adresse IP, un message vert s'affichera. Dans le cas contraire, vous recevrez un message d'erreur.
 
-![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
-![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+![Selectionner le serveur de destination avec vérification de compatibilite](images/Step-2.png){.thumbnail}<br>
+![Message de confirmation de compatibilite du serveur](images/Step-2.1.png){.thumbnail}
 
 Dans la fenêtre suivante, la durée est automatiquement sélectionnée et les frais sont affichés. Cliquez sur `Suivant`{.action} pour continuer.
 
-![soyoustart to ovh](images/Step-3.png){.thumbnail}
+![Resume de la duree et des frais pour le transfert d'IP](images/Step-3.png){.thumbnail}
 
 Cochez la case `Accepter les contrats`{.action} pour accepter les conditions d'utilisation après les avoir lues. Cliquez ensuite sur `Suivant`{.action}.
 
-![soyoustart to ovh](images/Step-4.png){.thumbnail}
+![Case a cocher d'acceptation des contrats pour le transfert d'IP](images/Step-4.png){.thumbnail}
 
 Prenez note du récapitulatif de la commande et cliquez sur `Confirmer`{.action} pour la valider.
 
-![soyoustart to ovh](images/Step-5.png){.thumbnail}
+![Resume et confirmation de la commande pour le transfert d'IP](images/Step-5.png){.thumbnail}
 
 Vous serez redirigé vers une nouvelle page pour effectuer le paiement.
 
@@ -206,5 +202,9 @@ Pour plus d'informations, consultez notre liste de [régions disponibles](/links
 
 
 ## Aller plus loin
+
+[Configurer son adresse IP en alias](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+
+[Configurer des Additional IP en mode bridge sur vos machines virtuelles](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

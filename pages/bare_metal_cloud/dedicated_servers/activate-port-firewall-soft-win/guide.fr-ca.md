@@ -1,6 +1,6 @@
 ---
-title: Configurer le pare-feu sous Windows
-excerpt: Découvrez comment configurer votre pare-feu sous Windows
+title: "Configurer le pare-feu Windows sur un serveur dédié"
+excerpt: "Configurez le pare-feu intégré de Windows sur votre serveur dédié pour contrôler le trafic réseau entrant et sortant"
 updated: 2022-01-31
 ---
 
@@ -35,7 +35,7 @@ Afin d’accéder au pare-feu Windows, vous pouvez suivre cet ordre :
 
 Cliquez ensuite sur la ligne `Configuration avancée`{.action}.
 
-![Step1](images/step1.PNG){.thumbnail}
+![Ecran des paramètres avances du pare-feu Windows](images/step1.PNG){.thumbnail}
 
 ### Etape 2 : activer une règle de trafic entrant
 
@@ -47,7 +47,7 @@ Dans la fenêtre affichée, vous trouverez des paramètres tels que :
 
 En sélectionnant les `Règles de trafic entrant `{.action}, toutes les règles préconfigurées de Windows Server associées aux connexions réseau et aux paquets entrants s’affichent. Certaines de ces règles ne sont pas activées par défaut. Si vous souhaitez les activer, faites un clic-droit sur la règle et sélectionnez l’option `Activer la règle `{.action}.
 
-![Step1](images/step2.PNG){.thumbnail}
+![Liste des règles entrantes avec option d'activation](images/step2.PNG){.thumbnail}
 
 ### Etape 3 : créer une nouvelle règle 
 
@@ -109,5 +109,9 @@ Cliquez sur le bouton `Terminer`{.action} pour terminer le processus et créer l
 Par la suite, vous pouvez apporter des modifications au niveau de la sécurité de la nouvelle règle créée.
 
 ## Aller plus loin
+
+[Activer et configurer le Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[Monitoring des attaques DDoS avec le Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

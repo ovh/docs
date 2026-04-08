@@ -1,6 +1,6 @@
 ---
-title: "Clientes Kimsufi y So you Start: familiarizarse con el área de cliente de OVHcloud"
-excerpt: "Navegue por el área de cliente de OVHcloud como cliente Kimsufi o So you Start para gestionar sus servidores dedicados"
+title: "Área de cliente de OVHcloud para servidores dedicados Kimsufi y So you Start"
+excerpt: "Navegue por el área de cliente de OVHcloud como cliente de Kimsufi o So you Start para gestionar sus servidores dedicados."
 updated: 2025-04-28
 ---
 

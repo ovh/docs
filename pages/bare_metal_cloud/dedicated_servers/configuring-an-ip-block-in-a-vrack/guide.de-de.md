@@ -1,6 +1,6 @@
 ---
-title: "Dedicated Server - IP-Block in einem vRack konfigurieren"
-excerpt: "Konfigurieren Sie einen öffentlichen IP-Adressblock für die Nutzung mit dem privaten OVHcloud vRack-Netzwerk auf Dedicated Servern."
+title: "Einen IP-Block im vRack auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie einen öffentlichen IP-Adressblock für das private OVHcloud vRack-Netzwerk auf Dedicated Servern."
 updated: 2026-04-03
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "OVHcloud Kundencenter für Kimsufi & So you Start Server"
-excerpt: "Navigieren Sie im OVHcloud Kundencenter als Kimsufi oder So you Start Kunde, um Ihre Dedicated Server Dienste zu verwalten."
+title: "OVHcloud Kundencenter für Kimsufi & So you Start Dedicated Server"
+excerpt: "Navigieren Sie im OVHcloud Kundencenter als Kimsufi- oder So you Start-Kunde, um Ihre Dedicated Server zu verwalten."
 updated: 2025-04-28
 ---
 

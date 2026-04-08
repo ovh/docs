@@ -1,6 +1,6 @@
 ---
-title: "Réseau - Résolution des problèmes de téléchargements lents dans les conteneurs et les machines virtuelles exécutées sur les serveurs Proxmox VE avec les cartes réseau Broadcom BCM57502"
-excerpt: "Découvrez comment résoudre les problèmes de téléchargements lents dans les conteneurs et les machines virtuelles exécutés sur les serveurs Proxmox VE avec un contrôleur d'interface réseau Broadcom BCM57502 en désactivant le paramètre generic-receive-offload"
+title: "Corriger les téléchargements lents de Proxmox VE sur un serveur dédié"
+excerpt: "Résolvez les lenteurs de téléchargement dans les conteneurs et VM Proxmox VE sur les serveurs avec cartes réseau Broadcom BCM57502"
 updated: 2025-01-16
 ---
 
@@ -139,5 +139,9 @@ systemctl restart networking.service
 ```
 
 ## Aller plus loin
+
+[Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale)
+
+[Mise à niveau du matériel sur un serveur dédié High Grade ou Scale](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

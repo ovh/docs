@@ -1,5 +1,5 @@
 ---
-title: Information about Meltdown and Spectre vulnerability fixes
+title: "Information about Meltdown and Spectre vulnerability fixes"
 fullwidth: true
 updated: 2020-07-15
 ---
@@ -1611,3 +1611,8 @@ updated: 2020-07-15
    </div>
 </div>
 
+## Go further
+
+[Dedicated Server - Mitigating the Downfall Vulnerability](/pages/bare_metal_cloud/dedicated_servers/vulnerability-downfall)
+
+Join our [community of users](/links/community).

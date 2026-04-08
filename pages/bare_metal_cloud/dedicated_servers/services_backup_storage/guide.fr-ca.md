@@ -1,6 +1,6 @@
 ---
-title: 'Utiliser Backup Storage sur un serveur dédié'
-excerpt: 'Découvrez comment activer et accéder à votre espace de stockage supplémentaire'
+title: "Utiliser Backup Storage sur un serveur dédié"
+excerpt: "Activez et accédez à l'espace de sauvegarde inclus avec votre serveur dédié OVHcloud pour vos sauvegardes de fichiers"
 updated: 2026-03-25
 ---
 
@@ -43,11 +43,11 @@ Les serveurs dédiés OVHcloud comprennent un espace de sauvegarde supplémentai
 
 Sous l'onglet `Backup Storage`{.action}, cliquez sur le bouton `Activer le Backup Storage`{.action}.
 
-![Activer votre Backup Storage](images/backup-storage01.png){.thumbnail}
+![Bouton d'activation du backup storage dans l'onglet Backup storage](images/backup-storage01.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} dans le menu contextuel qui s'affiche.
 
-![Activer votre Backup Storage](images/backup-storage02.png){.thumbnail}
+![Confirmation de l'activation du backup storage dans la fenêtre popup](images/backup-storage02.png){.thumbnail}
 
 Votre Backup Storage sera configuré en quelques minutes. Vous recevrez un e-mail de confirmation dès que la configuration sera terminée.
 
@@ -59,7 +59,7 @@ L'accès à votre espace de stockage est restreint par adresses IP à l'aide d'u
 
 Sélectionnez l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Ajouter un accès`{.action}.
 
-![Ajouter un accès backup](images/backup-storage03.png){.thumbnail}
+![Bouton Ajouter un acces dans l'onglet Backup storage](images/backup-storage03.png){.thumbnail}
 
 Sélectionnez le bloc IP que vous souhaitez autoriser. Une fois celui-ci sélectionné, choisissez le(s) protocole(s) à autoriser, puis cliquez sur `Suivant`{.action}.
 
@@ -68,7 +68,7 @@ Sélectionnez le bloc IP que vous souhaitez autoriser. Une fois celui-ci sélect
 > Seuls des blocs d'adresses IP de votre compte OVHcloud peuvent être ajoutés à l'ACL depuis votre espace client.
 >
 
-![Ajouter un accès backup](images/backup-storage04.png){.thumbnail}
+![Selectionner le bloc IP et les protocoles pour l'acces backup](images/backup-storage04.png){.thumbnail}
 
 Confirmez en cliquant sur `Terminer`{.action}.
 
@@ -78,7 +78,7 @@ Vous pourrez alors accéder au Backup Storage de votre serveur à partir du bloc
 
 Une fois le service activé, votre table ACL s'affiche dans l'onglet `Backup storage`{.action}. Cliquez sur `...`{.action} à droite d'un bloc IP pour ouvrir le menu d'accès.
 
-![Ajouter un accès backup](images/backup-storage05.png){.thumbnail}
+![Tableau des ACL d'acces backup avec options modifier et supprimer](images/backup-storage05.png){.thumbnail}
 
 Pour modifier les protocoles d'un bloc IP autorisé, cliquez sur `Modifier l'accès`{.action} et sélectionnez/désélectionnez les protocoles dans le menu qui apparaît. Enregistrez les modifications en cliquant sur `Confirmer`{.action}.
 
@@ -136,7 +136,7 @@ Cliquez sur `Confirmer`{.action} sur le message d'avertissement pour procéder �
 
 Sélectionnez l’onglet `Backup Storage`{.action} puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
 
-![Commander de l'espace disque supplémentaire](images/backup-storage06.png){.thumbnail}
+![Commander de l'espace disque supplementaire pour le backup storage](images/backup-storage06.png){.thumbnail}
 
 Sélectionnez la capacité de stockage que vous souhaitez commander, puis cliquez sur `Suivant`{.action}.
 
@@ -395,5 +395,9 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 - **FolderMount** : le répertoire où vous souhaitez monter le partage (il doit déjà exister).
 
 ## Aller plus loin
+
+[Sauvegarder mes informations et mes bases de données dans un serveur de stockage](/pages/bare_metal_cloud/dedicated_servers/save_datas_database_on_storage_ds)
+
+[Configuration du stockage d'un serveur HGR-STOR-2](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

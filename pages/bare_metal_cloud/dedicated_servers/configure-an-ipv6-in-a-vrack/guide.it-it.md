@@ -1,6 +1,6 @@
 ---
-title: "Server dedicato - Configurare un blocco IPv6 in una vRack"
-excerpt: "Configura un blocco di indirizzi IPv6 pubblici per la rete privata vRack OVHcloud sul tuo server dedicato"
+title: "Configurare un blocco IPv6 nella vRack su un server dedicato"
+excerpt: "Configura un blocco di indirizzi IPv6 pubblici per la rete privata vRack OVHcloud sul tuo server dedicato."
 updated: 2026-03-13
 ---
 

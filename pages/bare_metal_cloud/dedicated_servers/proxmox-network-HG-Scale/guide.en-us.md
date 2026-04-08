@@ -1,6 +1,6 @@
 ---
-title: 'Configuring the network on Proxmox VE on the High Grade, Scale & Advance ranges'
-excerpt: 'Find out how to configure the network on Proxmox VE'
+title: "Proxmox VE Networking on HG/Scale Dedicated Servers"
+excerpt: "Configure Proxmox VE network interfaces on High Grade, Scale, and Advance range dedicated servers step by step."
 updated: 2026-01-23
 ---
 
@@ -50,11 +50,11 @@ With this configuration, Additional IP addresses must be attached to a dedicated
 > [!tabs]
 > High Grade & Scale ranges
 >>
->> ![schema route](images/schema_route.png){.thumbnail}
+>> ![Routed mode network schema for High Grade and Scale ranges](images/schema_route.png){.thumbnail}
 >>
 > Advance range
 >>
->> ![schema route](images/gamme-advance-01.png){.thumbnail}
+>> ![Routed mode network schema for Advance range](images/gamme-advance-01.png){.thumbnail}
 >>
 
 #### Explanations
@@ -262,7 +262,6 @@ This configuration is more flexible as you do not need to associate an Additiona
 * A [server compatible with vRack](/links/bare-metal/bare-metal)
 * A [vRack service](/links/network/vrack)
 * A block of Additional IPs
-* Access to the [OVHcloud Control Panel](/links/manager)
 
 #### Target configuration schema
 
@@ -436,4 +435,11 @@ ADDITIONAL_IP # must return your additional ip
 
 ## Go further
 
+[Hyper-V Networking on HG/Scale Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
+
+[Hardware upgrade on a High Grade or Scale Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
+
+[Dedicated Server - Fixing Proxmox VE Slow Downloads](/pages/bare_metal_cloud/dedicated_servers/proxmox-broadcom-slow-downloads)
+
 Join our [community of users](/links/community).
+

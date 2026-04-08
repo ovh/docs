@@ -1,6 +1,6 @@
 ---
-title: "Jak uruchomić serwer dedykowany za pomocą skryptów iPXE"
-excerpt: "Skonfiguruj skrypty iPXE, aby niestandardowo uruchamiać serwer dedykowany OVHcloud za pomocą iPXE API."
+title: "Użycie niestandardowego skryptu iPXE na serwerach dedykowanych"
+excerpt: "Skonfiguruj niestandardowy skrypt iPXE za pomocą API OVHcloud, aby kontrolować proces netboot na serwerze dedykowanym."
 updated: 2024-02-27
 ---
 

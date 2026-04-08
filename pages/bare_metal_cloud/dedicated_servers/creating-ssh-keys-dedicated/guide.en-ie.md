@@ -1,6 +1,6 @@
 ---
-title: How to create and use authentication keys for SSH connections to OVHcloud servers
-excerpt: Find out how to create key pairs for OpenSSH on your local device and use them to establish secure connections to your dedicated server or VPS
+title: "How to Create SSH Keys for Dedicated Server Access"
+excerpt: "Create OpenSSH key pairs on your local device and use them for secure, passwordless connections to your dedicated server."
 updated: 2025-01-06
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Actualización del hardware en un servidor dedicado High Grade o Scale"
-excerpt: "Cómo solicitar la actualización del hardware para las gamas High Grade y SCALE desde el área de cliente"
+excerpt: "Solicite una actualización de hardware (RAM, disco, NIC) en su servidor dedicado High Grade o SCALE a través del área de cliente de OVHcloud"
 updated: 2024-01-04
 ---
 
@@ -18,7 +18,7 @@ Nuestros servidores High Grade y Scale le ofrecen una opción escalable que le p
 
 ## Requisitos
 
-- Un servidor [High Grade](https://www.ovhcloud.com/es/bare-metal/high-grade/) o [SCALE](https://www.ovhcloud.com/es/bare-metal/scale/)
+- Un servidor [High Grade](https://www.ovhcloud.com/es-es/bare-metal/high-grade/) o [SCALE](https://www.ovhcloud.com/es-es/bare-metal/scale/)
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---

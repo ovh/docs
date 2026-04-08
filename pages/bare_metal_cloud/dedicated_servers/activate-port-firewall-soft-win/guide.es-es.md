@@ -1,6 +1,6 @@
 ---
 title: "Configurar el firewall de Windows en un servidor dedicado"
-excerpt: "Configure el firewall integrado de Windows en su servidor dedicado para controlar el tráfico de red entrante y saliente"
+excerpt: "Configure el firewall integrado de Windows en su servidor dedicado para controlar el tráfico de red entrante y saliente."
 updated: 2022-01-31
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Tworzenie wielu sieci VLAN w sieci vRack na serwerach dedykowanych"
-excerpt: "Utwórz wiele sieci VLAN w sieci prywatnej OVHcloud vRack na serwerach dedykowanych z różnymi systemami operacyjnymi."
+title: "Tworzenie wielu sieci VLAN w sieci vRack na serwerze dedykowanym"
+excerpt: "Twórz i zarządzaj wieloma sieciami VLAN w sieci OVHcloud vRack, aby segmentować ruch sieciowy między serwerami dedykowanymi."
 updated: 2026-02-20
 ---
 

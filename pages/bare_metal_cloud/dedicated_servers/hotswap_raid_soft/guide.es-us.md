@@ -1,6 +1,6 @@
 ---
-title: Sustituir un disco en caliente en un servidor con RAID por software
-excerpt: Cómo sustituir un disco sin interrupción del servicio en un servidor con RAID por software
+title: "Sustitución en caliente en un servidor dedicado en RAID por software"
+excerpt: "Sustituya un disco defectuoso en un servidor dedicado en RAID por software sin interrupción gracias al procedimiento de hot-swap"
 updated: 2023-08-21
 ---
 
@@ -203,11 +203,11 @@ Una vez completada esta operación, vuelva a comprobar el estado del RAID.
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](/us/es/dedicated/hotswap-raid-soft/F)
+>>> md2 : active raid1 sda2[0] sdb2[1](/es/dedicated/hotswap-raid-soft/F)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](/us/es/dedicated/hotswap-raid-soft/F) sda1[0]
+>>> md1 : active raid1 sdb1[2](/es/dedicated/hotswap-raid-soft/F) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>

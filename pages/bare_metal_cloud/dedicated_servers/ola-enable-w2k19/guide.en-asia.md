@@ -1,6 +1,6 @@
 ---
-title: How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019
-excerpt: Enable OVHcloud Link Aggregation in your "Windows Server 2019" server
+title: "Configure OVHcloud Link Aggregation on a Dedicated Server (Windows)"
+excerpt: "Enable OVHcloud Link Aggregation in your \"Windows Server 2019\" server"
 updated: 2021-03-25
 ---
 
@@ -26,8 +26,9 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 ## Instructions
 
 Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
+<br>To do so, click the `IPMI`{.action} tab (1).
 
-Click the `IPMI`{.action} tab (1) and then click the `From a Java applet (KVM)`{.action} button (2).
+Next, click the `From a Java applet (KVM)`{.action} button (2).
 
 ![remote kvm](images/remote_kvm2022.png){.thumbnail}
 
@@ -63,7 +64,7 @@ Next, right-click on your NIC team and select **Properties** from the drop-down 
 
 On the ensuing pop-up window, double-click the **Internet Protocol Version 4 (TCP/IPv4)** button.
 
-![ipv4](images/ipv4.png){.thumbnail}
+![Internet Protocol Version 4 TCP/IPv4 properties](images/ipv4.png){.thumbnail}
 
 Click the button next to "Use the following IP address" and add your chosen private IP and subnet. Click the **OK** button once you have confirmed that your settings are correct.
 

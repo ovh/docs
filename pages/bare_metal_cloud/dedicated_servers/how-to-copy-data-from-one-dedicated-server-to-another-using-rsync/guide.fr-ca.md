@@ -1,6 +1,6 @@
 ---
-title: 'Comment copier des données d’un serveur dédié vers un autre en utilisant rsync'
-excerpt: 'Copiez facilement les données de votre serveur dédié vers un autre grâce à rsync'
+title: "Copier des données entre serveurs dédiés avec rsync"
+excerpt: "Copiez facilement les données de votre serveur dédié vers un autre grâce à rsync"
 updated: 2022-02-16
 ---
 
@@ -104,5 +104,9 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 ## Conclusion
 
 Vous savez maintenant comment copier les données de votre serveur dédié vers un autre grâce à rsync.
+
+[Comment utiliser le SFTP pour transférer des fichiers](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
+[Migrer les données d'un serveur dédié vers un autre](/pages/bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

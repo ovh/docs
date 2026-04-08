@@ -1,6 +1,6 @@
 ---
-title: "Dedicated Server - IPv6-Block in einem vRack konfigurieren"
-excerpt: "Konfigurieren Sie einen öffentlichen IPv6-Adressblock für die Nutzung mit einem OVHcloud vRack-Netzwerk auf Ihrem Dedicated Server."
+title: "Einen IPv6-Block im vRack auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie einen öffentlichen IPv6-Adressblock für das private OVHcloud vRack-Netzwerk auf Ihrem Dedicated Server."
 updated: 2026-03-13
 ---
 

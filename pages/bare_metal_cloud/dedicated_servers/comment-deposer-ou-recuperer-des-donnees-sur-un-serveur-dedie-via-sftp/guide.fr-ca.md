@@ -1,6 +1,6 @@
 ---
-title: Comment utiliser le SFTP pour transférer des fichiers
-excerpt: Découvrez comment vous connecter à votre serveur avec FileZilla pour uploader et télécharger des fichiers
+title: "Transférer des fichiers par SFTP sur un serveur dédié"
+excerpt: "Transférez des fichiers vers et depuis votre serveur dédié en utilisant SFTP avec FileZilla pour des uploads et téléchargements sécurisés"
 updated: 2025-02-21
 ---
 

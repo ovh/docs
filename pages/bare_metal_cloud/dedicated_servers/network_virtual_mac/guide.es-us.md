@@ -1,6 +1,6 @@
 ---
-title: 'Asignar una MAC virtual a una Additional IP'
-excerpt: 'Cómo crear una dirección MAC virtual y asociarle una Additional IP'
+title: "Asignar una MAC virtual en un servidor dedicado"
+excerpt: "Cree una dirección MAC virtual y asóciela a una Additional IP para una red VM transparente en sus servidores dedicados"
 updated: 2025-05-16
 ---
 

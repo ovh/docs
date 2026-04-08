@@ -1,6 +1,6 @@
 ---
-title: "Servidor dedicado - Recuperar bases de datos en modo rescue"
-excerpt: "Acceda a sus bases de datos y expórtelas desde un servidor dedicado en modo rescue para recuperar sus datos tras un incidente"
+title: "Recuperar bases de datos en modo rescue en un servidor dedicado"
+excerpt: "Acceda a sus bases de datos y expórtelas desde un servidor dedicado en modo rescue para recuperar datos tras un incidente."
 updated: 2023-04-13
 ---
 

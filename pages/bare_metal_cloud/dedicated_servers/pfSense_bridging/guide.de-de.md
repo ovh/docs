@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Configuring pfSense network bridge (EN)
-excerpt: This guide will show you how to do IP bridging on a pfSense virtual machine
+title: "Configure a pfSense Network Bridge on a Dedicated Server"
+excerpt: "Set up IP bridging on a pfSense virtual machine running on an OVHcloud dedicated server for network routing."
 updated: 2025-04-28
 ---
 

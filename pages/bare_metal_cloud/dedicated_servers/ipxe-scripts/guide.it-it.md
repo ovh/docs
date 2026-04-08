@@ -1,6 +1,6 @@
 ---
 title: "Script iPXE personalizzato per server dedicati"
-excerpt: "Configura uno script iPXE personalizzato tramite l'API OVHcloud per controllare il processo di avvio di rete del tuo server dedicato"
+excerpt: "Configura uno script iPXE personalizzato tramite l'API OVHcloud per controllare il netboot del tuo server dedicato."
 updated: 2024-02-27
 ---
 

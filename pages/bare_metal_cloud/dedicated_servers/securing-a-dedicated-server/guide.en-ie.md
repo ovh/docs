@@ -1,6 +1,6 @@
 ---
-title: "How to secure a dedicated server"
-excerpt: "Find out how to apply basic security measures to protect your dedicated server against attacks and unauthorised access"
+title: "How to secure a Dedicated Server"
+excerpt: "Apply essential security measures to your dedicated server: SSH hardening, firewall configuration, and service monitoring."
 updated: 2024-02-20
 ---
 
@@ -246,6 +246,10 @@ For more information on our backup storage solutions, please see our [backup sto
 [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win)
 
 [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[How to set up a web server (LAMP) on Debian or Ubuntu](/pages/bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
+
+[Securing a Dedicated Server with a Memcached service](/pages/bare_metal_cloud/dedicated_servers/memcache_secure)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

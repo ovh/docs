@@ -1,6 +1,6 @@
 ---
-title: Hot Swap - Hardware RAID
-excerpt: Find out how to hot-swap a disk on a server with a hardware RAID configuration
+title: "Hot-Swapping a Disk on Hardware RAID Dedicated Servers"
+excerpt: "Replace a defective disk on a dedicated server with hardware RAID without downtime using the hot-swap procedure."
 updated: 2023-08-21
 ---
 
@@ -235,15 +235,15 @@ At this point, the procedure is ready to be performed. You can then provide the 
 
 Once you have completed the Datacenter, you can go back to the MegaRAID Storage Manager in the Background operations and check that the disk is *Rebuild*.
 
-![back](images/back.png){.thumbnail}
+![MegaRAID background operations showing disk rebuild](images/back.png){.thumbnail}
 
 The detail will return you this type of result :
 
-![1](images/1.png){.thumbnail}
+![Rebuild progress detail for replaced disk](images/1.png){.thumbnail}
 
 Also, on the **Logical** tab, we always have the details of RAID and disks.
 
-![2](images/2.png){.thumbnail}
+![Logical tab showing RAID status and disk rebuild](images/2.png){.thumbnail}
 
 The **Slot ID 1** is in doing of *Rebuild*.
 

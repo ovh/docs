@@ -1,6 +1,6 @@
 ---
-title: Remplacement à chaud - RAID logiciel
-excerpt: Retrouvez ici comment remplacer un disque à chaud sur un serveur avec un RAID logiciel
+title: "Remplacement à chaud sur un serveur dédié en RAID logiciel"
+excerpt: "Remplacez un disque défectueux sur un serveur dédié en RAID logiciel sans interruption grâce à la procédure de hot-swap"
 updated: 2023-08-21
 ---
 
@@ -199,11 +199,11 @@ root@ns3054662:/home# mdadm --manage /dev/md2 --set-faulty /dev/sdb2
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](/ca/fr/dedicated/hotswap-raid-soft/F)
+>>> md2 : active raid1 sda2[0] sdb2[1](/fr/dedicated/hotswap-raid-soft/F)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](/ca/fr/dedicated/hotswap-raid-soft/F) sda1[0]
+>>> md1 : active raid1 sdb1[2](/fr/dedicated/hotswap-raid-soft/F) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>
@@ -299,5 +299,7 @@ Le disque défectueux est désormais prêt à être remplacé par un technicien 
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 [Remplacement à chaud - RAID Matériel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
+
+[Gestion et reconstruction d'un RAID logiciel sur les serveurs utilisant le mode de démarrage UEFI](/pages/bare_metal_cloud/dedicated_servers/raid_soft_uefi)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

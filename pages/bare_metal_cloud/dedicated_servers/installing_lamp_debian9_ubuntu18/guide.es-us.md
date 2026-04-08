@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Instalar un servidor web (LAMP) en Debian o Ubuntu
-excerpt: "Cómo configurar un servidor web LAMP"
+title: "Tutorial - Instalar un servidor web (LAMP) en Debian o Ubuntu"
+excerpt: "Instale un servidor web LAMP (Linux, Apache, MySQL, PHP) en un servidor dedicado Debian o Ubuntu paso a paso"
 updated: 2023-05-10
 ---
 
@@ -247,7 +247,7 @@ Para más información, consulte la guía [Editar una zona DNS](/pages/web_cloud
 >
 > Para establecer conexiones seguras (`https`), el servidor web debe estar protegido a través de una Autoridad de Certificación oficial como "[Let's Encrypt](https://letsencrypt.org/)" que ofrece certificados gratuitos. Es necesario instalar una herramienta de cliente (como Certbot) y configurar Apache en consecuencia. Sin este paso, su sitio web o su aplicación solo pueden aceptar peticiones `http` sin cifrar.
 > 
-> Como alternativa, OVHcloud le ofrece la solución [SSL Gateway](https://www.ovh.com/world/es/ssl-gateway/). Para más información, consulte [nuestra guía](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
+> Como alternativa, OVHcloud le ofrece la solución [SSL Gateway](/links/web/ssl-gateway). Para más información, consulte [nuestra guía](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
 En primer lugar, asegúrese de que el dominio se ha introducido correctamente en la zona DNS, es decir, en la dirección IP del servidor.

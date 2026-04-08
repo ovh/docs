@@ -1,6 +1,6 @@
 ---
-title: "Serwer dedykowany - Zapoznanie się z Panelem klienta OVHcloud"
-excerpt: "Poznaj interfejs Panelu klienta OVHcloud do zarządzania serwerami dedykowanymi, usługami i rozliczeniami."
+title: "Panel klienta OVHcloud dla serwerów dedykowanych Kimsufi i So you Start"
+excerpt: "Nawiguj w Panelu klienta OVHcloud jako klient Kimsufi lub So you Start, aby zarządzać usługami serwerów dedykowanych."
 updated: 2025-04-28
 ---
 

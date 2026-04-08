@@ -1,6 +1,6 @@
 ---
-title: Cómo crear y utilizar claves de autenticación para las conexiones SSH a los servidores de OVHcloud
-excerpt: Cómo crear pares de claves para OpenSSH en su dispositivo local y cómo utilizarlos para establecer conexiones seguras a su servidor dedicado o VPS
+title: "Crear claves SSH para acceder a un servidor dedicado"
+excerpt: "Cree pares de claves OpenSSH en su dispositivo local para conexiones seguras sin contraseña a su servidor dedicado"
 updated: 2025-01-06
 ---
 

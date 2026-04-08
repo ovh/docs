@@ -1,6 +1,6 @@
 ---
-title: "Jak zmienić strefę ogłaszania bloku IP w vRack"
-excerpt: "Zmień strefę ogłaszania bloku IP w sieci prywatnej OVHcloud vRack za pomocą API."
+title: "Zmiana ogłoszenia bloku IP w sieci vRack na serwerze dedykowanym"
+excerpt: "Zmień strefę ogłoszenia geograficznego bloku IP w sieci OVHcloud vRack w celu optymalizacji routingu."
 updated: 2025-05-14
 ---
 

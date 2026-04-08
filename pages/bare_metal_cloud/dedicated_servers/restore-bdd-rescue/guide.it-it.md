@@ -1,6 +1,6 @@
 ---
-title: "Server dedicato - Recuperare database in modalità rescue"
-excerpt: "Accedi ai tuoi database ed esportali da un server dedicato in modalità rescue per recuperare i tuoi dati dopo un incidente"
+title: "Recuperare database in modalità rescue su un server dedicato"
+excerpt: "Accedi ai tuoi database ed esportali da un server dedicato in modalità rescue per recuperare i dati dopo un incidente."
 updated: 2023-04-13
 ---
 

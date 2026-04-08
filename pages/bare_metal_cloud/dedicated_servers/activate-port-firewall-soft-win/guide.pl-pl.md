@@ -1,6 +1,6 @@
 ---
-title: "Konfiguracja zapory Windows na serwerze dedykowanym"
-excerpt: "Skonfiguruj wbudowaną zaporę Windows na serwerze dedykowanym, aby kontrolować ruch sieciowy przychodzący i wychodzący."
+title: "Konfiguracja zapory systemu Windows na serwerze dedykowanym"
+excerpt: "Skonfiguruj wbudowaną zaporę systemu Windows na serwerze dedykowanym, aby kontrolować przychodzący i wychodzący ruch sieciowy."
 updated: 2022-01-31
 ---
 

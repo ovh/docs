@@ -1,6 +1,6 @@
 ---
-title: Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en SLES 15
-excerpt: 'Activar OVHcloud Link Aggregation en su servidor SLES 15'
+title: "Configurar OVHcloud Link Aggregation en un servidor dedicado (SLES 15)"
+excerpt: "Active OVHcloud Link Aggregation en su servidor dedicado SLES 15."
 updated: 2024-11-26
 ---
 

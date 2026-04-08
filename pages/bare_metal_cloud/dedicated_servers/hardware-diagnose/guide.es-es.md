@@ -1,6 +1,6 @@
 ---
-title: "Servidor dedicado - Diagnóstico de hardware en modo rescue"
-excerpt: "Ejecute diagnósticos de hardware en su servidor dedicado OVHcloud en modo rescue para identificar fallos de disco, RAM o CPU"
+title: "Realizar un diagnóstico de hardware en modo rescue en un servidor dedicado"
+excerpt: "Ejecute diagnósticos de hardware en su servidor dedicado de OVHcloud en modo rescue para identificar fallos de disco, RAM o CPU."
 updated: 2025-10-16
 ---
 

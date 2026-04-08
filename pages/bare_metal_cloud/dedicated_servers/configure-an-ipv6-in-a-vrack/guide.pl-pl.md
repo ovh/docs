@@ -1,6 +1,6 @@
 ---
-title: "Konfiguracja IPv6 w sieci vRack na serwerach dedykowanych"
-excerpt: "Skonfiguruj adresowanie IPv6 w sieci prywatnej OVHcloud vRack między serwerami dedykowanymi."
+title: "Konfiguracja bloku IPv6 w sieci vRack na serwerze dedykowanym"
+excerpt: "Skonfiguruj publiczny blok adresów IPv6 do użytku z prywatną siecią OVHcloud vRack na serwerze dedykowanym."
 updated: 2026-03-13
 ---
 

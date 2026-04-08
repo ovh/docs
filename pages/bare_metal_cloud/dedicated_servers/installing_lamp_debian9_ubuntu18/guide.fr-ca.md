@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel - Installer un serveur web (LAMP) sur Debian ou Ubuntu'
-excerpt: 'Découvrez comment configurer un serveur web LAMP'
+title: "Tutoriel - Installer un serveur web (LAMP) sur Debian ou Ubuntu"
+excerpt: "Installez un serveur web LAMP (Linux, Apache, MySQL, PHP) sur un serveur dédié Debian ou Ubuntu étape par étape"
 updated: 2023-05-10
 ---
 
@@ -243,8 +243,8 @@ Consultez le guide « [Éditer une zone DNS](/pages/web_cloud/domains/dns_zone_e
 >
 > Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification officielle comme « [Let’s Encrypt](https://letsencrypt.org/) » qui propose des certificats gratuits. Vous devrez installer un outil client (tel que Certbot) et configurer Apache en conséquence. Sans cette étape, votre site web ou votre application ne peut accepter que des requêtes `http` non chiffrées.
 > 
-> En alternative, OVHcloud vous propose la solution [SSL Gateway](https://www.ovh.com/ca/fr/ssl-gateway/). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
->
+> En alternative, OVHcloud vous propose la solution [SSL Gateway](/links/web/ssl-gateway). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
+> 
 
 Assurez-vous d’abord que votre nom de domaine est correctement renseigné dans la zone DNS, c’est-à-dire mappé sur l’adresse IP de votre serveur.
 
@@ -283,5 +283,7 @@ Certbot renouvelle automatiquement les certificats. Aucune autre étape n'est n�
 [Documentation Certbot](https://eff-certbot.readthedocs.io/en/stable/)
 
 [Documentation NGINX](https://nginx.org/en/docs/) (alternative Apache)
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

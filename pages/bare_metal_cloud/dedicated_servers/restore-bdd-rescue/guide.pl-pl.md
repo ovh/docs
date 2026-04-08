@@ -1,6 +1,6 @@
 ---
-title: "Jak przywrócić bazę danych w trybie rescue"
-excerpt: "Przywróć bazę danych MySQL/MariaDB na serwerze dedykowanym OVHcloud za pomocą trybu rescue."
+title: "Odzyskiwanie baz danych w trybie rescue na serwerze dedykowanym"
+excerpt: "Uzyskaj dostęp do baz danych i wyeksportuj je z serwera dedykowanego w trybie rescue, aby odzyskać dane po awarii."
 updated: 2023-04-13
 ---
 

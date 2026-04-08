@@ -1,6 +1,6 @@
 ---
 title: "Sécuriser un serveur dédié"
-excerpt: "Découvrez comment mettre en place des mesures de sécurité basiques pour protéger votre serveur dédié des attaques et des accès non autorisés"
+excerpt: "Appliquez les mesures de sécurité essentielles sur votre serveur dédié : durcissement SSH, configuration du firewall et surveillance"
 updated: 2024-02-20
 ---
 
@@ -253,6 +253,10 @@ Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez 
 [Configurer le pare-feu sous Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win)
 
 [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[Tutoriel - Installer un serveur web (LAMP) sur Debian ou Ubuntu](/pages/bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
+
+[Sécuriser un serveur avec service Memcached](/pages/bare_metal_cloud/dedicated_servers/memcache_secure)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

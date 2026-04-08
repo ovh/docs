@@ -1,6 +1,6 @@
 ---
-title: Configurer un bloc Additional IPv6 dans un vRack
-excerpt: "Découvrez comment configurer un bloc d'adresses IPv6 publiques à utiliser dans un vRack"
+title: "Configurer un bloc IPv6 dans un vRack sur un serveur dédié"
+excerpt: "Configurez un bloc d'adresses IPv6 publiques pour le réseau privé vRack OVHcloud sur votre serveur dédié"
 updated: 2026-03-13
 ---
 
@@ -114,7 +114,7 @@ Sur la partie droite, vous pouvez voir ce qui est déjà configuré avec votre v
 
 Sélectionnez votre nouvelle Additional IPv6 et ajoutez-la à votre vRack.
 
-![vrack selection](images/701.png){.thumbnail}
+![vrack sélection](images/701.png){.thumbnail}
 
 Vous avez maintenant votre nouvelle Additional IPv6 ajoutée à votre vRack.
 
@@ -176,7 +176,7 @@ Vérifions quels sont les sous-réseaux bridgés :
 
 Comme dans l'exemple ci-dessous :
 
-![GET subrange bridged into your vrack](images/20240418-05.png){.thumbnail}
+![Reponse API listant les sous-réseaux bridges dans le vRack](images/20240418-05.png){.thumbnail}
 
 Pour obtenir plus de détails, utilisez l'appel suivant :
 
@@ -187,7 +187,7 @@ Pour obtenir plus de détails, utilisez l'appel suivant :
 
 Comme dans l'exemple ci-dessous :
 
-![GET subrange bridged into your vrack](images/20240418-06.png){.thumbnail}
+![Reponse API avec details du sous-réseau bridge et statut SLAAC](images/20240418-06.png){.thumbnail}
 
 Notez que la configuration d'IP automatique (SLAAC) est désactivée par défaut.
 
@@ -382,11 +382,11 @@ Pour créer un sous-réseau routé, nous devons d'abord définir :
 
 Veuillez noter qu'un sous-réseau donné ne peut pas chevaucher un autre sous-réseau défini, et que l'adresse du tronçon suivant doit appartenir à la première partie (sous-réseau /64 bridgé) de votre préfixe Additional IPv6.
 
-![continue](images/800.png){.thumbnail}
+![Definir un sous-réseau route en notation CIDR et adresse next-hop](images/800.png){.thumbnail}
 
 Le sous-réseau routé `2001:41d0:abcd:ef10::/60` est accessible via le saut suivant `2001:41d0:abcd:ef00::2`.
 
-![continue](images/801.png){.thumbnail}
+![Sous-réseau route créé avec next-hop affiche](images/801.png){.thumbnail}
 
 ///
 
@@ -401,7 +401,7 @@ Veuillez noter qu'un sous-réseau donné ne peut pas chevaucher un autre sous-r�
 
 L'exemple ci-dessous montre comment définir un tel sous-réseau :
 
-![continue](images/20240418-02.png){.thumbnail}
+![Appel API pour definir un sous-réseau route avec next-hop](images/20240418-02.png){.thumbnail}
 
 Nous avons ici défini le sous-réseau routé `2001:41d0:abcd:ef10::/60`, qui sera délégué à la VM hébergée à l'adresse `2001:41d0:abcd:ef00::2`.
 
@@ -595,7 +595,7 @@ D’autre part, les services comme Additional IPv6 sont régionaux, ce qui signi
 
 Ci-dessous, une architecture est présentée à des fins d'apprentissage avec deux régions différentes, et des blocs Additional IPv6 différents annoncés depuis chacune des deux régions. De plus, il y a un hôte configuré avec des adresses IP des deux réseaux ainsi qu'un exemple de route sous-optimale - un hôte dans une région possédant une adresse IPv6 annoncée dans une autre région :
 
-![image](images/20240418-08.png){.thumbnail}
+![Architecture vRack multi-region avec differents blocs IPv6](images/20240418-08.png){.thumbnail}
 
 Veuillez noter que dans de telles configurations (avec des Additional IPv6 provenant de plus d'une région), le SLAAC **doit être désactivé dans l'ensemble du vRack** (car cela peut entraîner des résultats imprévisibles et une perte de connectivité aléatoire).
 
@@ -623,5 +623,9 @@ Comprendre les contraintes liées à l'utilisation d'**Additional IPv6** dans l'
 - **Le routage d’Additional IPv6 dans le vRack n’est actuellement pas pris en charge dans les régions APAC.**
 
 ## Aller plus loin
+
+[Configurer le vRack sur vos serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+[Configurer des Additional IP en mode bridge sur vos machines virtuelles](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

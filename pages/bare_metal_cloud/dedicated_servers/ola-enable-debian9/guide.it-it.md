@@ -1,6 +1,6 @@
 ---
-title: "Server dedicato - OVHcloud Link Aggregation su Debian"
-excerpt: "Attiva OVHcloud Link Aggregation sul tuo server Debian (da Debian 9 a Debian 11)"
+title: "Configurare OVHcloud Link Aggregation su un server dedicato (Debian)"
+excerpt: "Attiva OVHcloud Link Aggregation sul tuo server Debian (da Debian 9 a Debian 11)."
 updated: 2026-01-09
 ---
 

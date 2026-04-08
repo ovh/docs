@@ -1,6 +1,6 @@
 ---
-title: Configuring a software mirror (RAID) on Windows
-excerpt: "Find out how to rebuild your server’s drive configuration after a disk replacement"
+title: "Software RAID Mirror on a Windows Dedicated Server"
+excerpt: "Rebuild the software RAID mirror configuration on a Windows dedicated server after a disk replacement."
 updated: 2023-03-28
 ---
 
@@ -21,11 +21,11 @@ Establish a remote desktop (RDP) connection to your server.
 
 Once logged in, right-click on the `Start Menu`{.action} button and open `Run`{.action}.
 
-![Software mirror Windows](images/raid-soft-windows-01.png){.thumbnail}
+![Windows Start menu with Run option](images/raid-soft-windows-01.png){.thumbnail}
 
 Enter "cmd" and click on `OK`{.action}.
 
-![Software mirror Windows](images/raid-soft-windows-02.png){.thumbnail}
+![Run dialog box with cmd command entered](images/raid-soft-windows-02.png){.thumbnail}
 
 The method to use depends on the partition style of your disks. Follow the instructions in [this section](#mbr) for **MBR** or skip to the [subsequent section](#gpt) for **GPT**. If you are unsure, run `diskpart` at the command prompt and enter `list disk`. Check the "Gpt" column in the output.
 
@@ -400,5 +400,9 @@ DISKPART> list volume
 It is best not to restart the server until the rebuild process is complete.
 
 ## Go further
+
+[Managing Software RAID (BIOS) on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
+
+[Creating a Windows Partition on a Dedicated RAID Server](/pages/bare_metal_cloud/dedicated_servers/windows_raid_hard)
 
 Join our [community of users](/links/community).

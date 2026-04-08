@@ -1,6 +1,6 @@
 ---
-title: "Jak przesyłać i pobierać dane przez SFTP na serwerze dedykowanym"
-excerpt: "Przesyłaj i pobieraj pliki na serwerze dedykowanym OVHcloud za pomocą SFTP w trybie rescue."
+title: "Transfer plików przez SFTP na serwerze dedykowanym"
+excerpt: "Przesyłaj pliki z i na serwer dedykowany za pomocą SFTP z FileZilla w celu bezpiecznego przesyłania danych."
 updated: 2024-02-23
 ---
 

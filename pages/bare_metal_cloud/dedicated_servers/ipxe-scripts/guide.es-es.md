@@ -1,6 +1,6 @@
 ---
 title: "Script iPXE personalizado para servidores dedicados"
-excerpt: "Configure un script iPXE personalizado a través de la API de OVHcloud para controlar el proceso de arranque de red de su servidor dedicado"
+excerpt: "Configure un script iPXE personalizado a través de la API de OVHcloud para controlar el netboot de su servidor dedicado."
 updated: 2024-02-27
 ---
 

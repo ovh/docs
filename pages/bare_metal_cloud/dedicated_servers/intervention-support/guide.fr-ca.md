@@ -1,6 +1,6 @@
 ---
-title: 'Finaliser une intervention de maintenance réalisée sur votre serveur dédié'
-excerpt: "Découvrez quelles actions peuvent être à effectuer par vos soins sur votre serveur suite à une intervention de maintenance"
+title: "Finaliser une intervention de maintenance réalisée sur votre serveur dédié"
+excerpt: "Effectuez les actions requises sur votre serveur dédié après une intervention de maintenance OVHcloud pour restaurer le service"
 updated: 2026-03-20
 ---
 
@@ -348,7 +348,7 @@ root@rescue-bsd:~ #
 
 ### Gentoo
 
-Suite au remplacement de la carte mère, vous ne pouvez pas modifier les nouvelles adresses MAC à travers l'OS en mode rescue.
+Suite au remplacement de la carte mère, vous ne pouvez pas modifier les nouvelles adresses MAC via l'OS en mode rescue.
 
 1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) et repérez la partition `/` :
 
@@ -602,7 +602,7 @@ Il est nécessaire de vérifier et d'adapter les fichiers suivants :
 
 ### ESXi
 
-Suite au remplacement de la carte mère, vous ne pouvez pas modifier les nouvelles adresses MAC à travers le fichier `esxi.conf` à l'aide des outils intégrés au mode rescue.
+Suite au remplacement de la carte mère, vous ne pouvez pas modifier les nouvelles adresses MAC via le fichier `esxi.conf` à l'aide des outils intégrés au mode rescue.
 Il sera donc nécessaire d'intervenir manuellement.
 
 #### Version 7.0 ou supérieure
@@ -901,5 +901,9 @@ L'image ci-dessous est un résumé des actions citées plus haut :
 ![select_efi](images/select_efi-v2.gif){.thumbnail}
 
 ## Aller plus loin
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Remplacer un disque défectueux](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

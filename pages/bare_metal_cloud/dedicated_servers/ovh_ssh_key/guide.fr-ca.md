@@ -1,6 +1,6 @@
 ---
-title: Installer la clé SSH OVHcloud
-excerpt: Ce guide vous décrit l'installation d'une clé SSH OVHcloud pour permettre l'intervention de nos administrateurs, puis sa désactivation
+title: "Installer une clé SSH OVHcloud sur un serveur dédié"
+excerpt: "Installez une clé SSH OVHcloud sur votre serveur dédié pour accorder un accès administratif sécurisé aux équipes support OVHcloud"
 updated: 2018-02-12
 ---
 
@@ -115,5 +115,7 @@ cat /root/.ssh/authorized_keys2
 ## Aller plus loin
 
 [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+[Comment stocker les clés SSH dans votre espace client](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

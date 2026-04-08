@@ -1,6 +1,6 @@
 ---
-title: "Serwer dedykowany - Konfiguracja network bridge"
-excerpt: "Skonfiguruj network bridge na serwerze dedykowanym OVHcloud, aby przypisać adresy IP do maszyn wirtualnych."
+title: "Konfiguracja Additional IP w trybie bridge na serwerze dedykowanym"
+excerpt: "Skonfiguruj maszyny wirtualne na serwerze dedykowanym, aby uzyskać publiczny dostęp do Internetu za pomocą trybu bridge."
 updated: 2026-01-06
 ---
 

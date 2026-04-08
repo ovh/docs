@@ -1,6 +1,6 @@
 ---
-title: "Remplacer une paire de clés SSH"
-excerpt: "Découvrez comment restaurer l'accès au serveur en cas de perte de votre clé privée, en générant une nouvelle paire de clés SSH"
+title: "Remplacer une clé SSH perdue sur un serveur dédié"
+excerpt: "Restaurez l'accès SSH à votre serveur dédié en générant et déployant une nouvelle paire de clés en mode rescue"
 updated: 2024-04-04
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Utilizar Backup Storage en un servidor dedicado'
-excerpt: 'Cómo activar y acceder al espacio de almacenamiento adicional'
+title: "Utilizar Backup Storage en un servidor dedicado"
+excerpt: "Active y acceda al espacio de backup incluido con su servidor dedicado OVHcloud para sus copias de seguridad de archivos"
 updated: 2026-03-25
 ---
 
@@ -359,7 +359,7 @@ You can't access this shared folder because your organization's security policie
 >
 > Para corregir este error, es necesario modificar el registro de Windows. Para ello, abra el editor del registro (regedit) y acceda a la clave `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
 > Asigne el valor "1" al parámetro `AllowInsecureGuestAuth`.<br>
-> Encuentre más información sobre este tema en las [páginas de asistencia de Microsoft](https://learn.microsoft.com/es-mx/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
+> Encuentre más información sobre este tema en las [páginas de asistencia de Microsoft](https://learn.microsoft.com/es-es/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 

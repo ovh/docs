@@ -1,6 +1,6 @@
 ---
-title: "Serwer dedykowany - Edge Network Firewall"
-excerpt: "Skonfiguruj OVHcloud Edge Network Firewall, aby filtrować ruch przychodzący na serwerze dedykowanym."
+title: "Konfiguracja Edge Network Firewall dla serwerów dedykowanych"
+excerpt: "Włącz i skonfiguruj Edge Network Firewall, aby filtrować ruch przychodzący do serwera dedykowanego OVHcloud."
 updated: 2026-03-10
 ---
 

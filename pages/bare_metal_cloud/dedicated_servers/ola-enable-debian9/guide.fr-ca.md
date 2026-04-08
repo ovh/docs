@@ -1,6 +1,6 @@
 ---
-title: 'Comment configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation sur Debian 9 à 11'
-excerpt: 'Activer OVHcloud Link Aggregation sur votre Debian (versions 9 à 11)'
+title: "Configurer OVHcloud Link Aggregation sur un serveur dédié (Debian)"
+excerpt: "Activez OVHcloud Link Aggregation sur votre serveur Debian (de Debian 9 à Debian 11)"
 updated: 2026-01-09
 ---
 
@@ -44,7 +44,6 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 ## En pratique
 
 Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
-<br>Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) et allez à l'onglet `Bare Metal Cloud`{.action}. Sélectionnez votre serveur dans la liste sous la rubrique `Serveurs dédiés`{.action}.
 
 Cliquez ensuite sur l'onglet `IPMI`{.action} (1) puis sur le bouton `Depuis un applet Java (KVM)`{.action} (2).
 

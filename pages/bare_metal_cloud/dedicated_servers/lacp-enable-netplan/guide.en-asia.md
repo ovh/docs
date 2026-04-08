@@ -1,6 +1,6 @@
 ---
-title: "How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04"
-excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server’s availability and boost the efficiency of your network connections"
+title: "Configure LACP Link Aggregation on a Dedicated Server (Debian/Ubuntu)"
+excerpt: "Configure LACP link aggregation on Debian 12 or Ubuntu 24.04 servers using Netplan for improved bandwidth and redundancy."
 updated: 2026-01-09
 ---
 
@@ -243,5 +243,9 @@ sudo netplan apply
 It may take several seconds for the bond interfaces to come up.
 
 ## Go further
+
+[OVHcloud Link Aggregation via Control Panel (Dedicated)](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+
+[Improving Network Resilience on Bare Metal servers](/pages/bare_metal_cloud/dedicated_servers/lacp-resilience-scale-hg)
 
 Join our [community of users](/links/community).

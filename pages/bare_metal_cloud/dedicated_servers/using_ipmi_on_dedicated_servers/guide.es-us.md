@@ -1,6 +1,6 @@
 ---
-title: 'Utilizar IPMI en un servidor dedicado'
-excerpt: 'Cómo conectarse a un servidor mediante IPMI, sin necesidad de utilizar software externo'
+title: "Cómo utilizar la consola IPMI con un servidor dedicado"
+excerpt: "Acceda a su servidor dedicado de forma remota a través de la consola IPMI/KVM del área de cliente de OVHcloud sin software externo"
 updated: 2026-01-29
 ---
 

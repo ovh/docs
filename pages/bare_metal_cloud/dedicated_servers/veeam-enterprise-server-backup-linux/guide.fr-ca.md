@@ -1,6 +1,6 @@
 ---
-title: Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise
-excerpt: Découvrez comment faire un backup de votre serveur Bare Metal Linux avec Veeam Backup and Replication (Enterprise)
+title: "Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise"
+excerpt: "Sauvegardez votre serveur Bare Metal Linux avec Veeam Backup and Replication Enterprise et la protection par agent"
 updated: 2024-04-05
 ---
 
@@ -88,5 +88,9 @@ Une fois la tâche terminée, votre sauvegarde sera alors scréée.
 Pour plus d'informations sur la restauration d'un serveur Bare Metal, consultez notre guide « [Restaurer un serveur Bare Metal avec Veeam Backup & Replication](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore) ».
 
 ## Aller plus loin
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

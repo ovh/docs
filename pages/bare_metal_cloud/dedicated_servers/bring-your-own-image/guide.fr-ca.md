@@ -1,6 +1,6 @@
 ---
-title: Bring Your Own Image (BYOI)
-excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
+title: "Déployer des images personnalisées avec le service Bring Your Own Image (BYOI) sur un serveur dédié"
+excerpt: "Déployez vos propres images OS personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Image (BYOI)"
 updated: 2026-02-10
 ---
 
@@ -64,11 +64,11 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 
 Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté de « Système (OS) » puis cliquez sur `Installer`{.action}.
 
-![BringYourOwnImage Control Panel 01](images/byoi-controlpanel01.png){.thumbnail}
+![Bouton d'installation Bring Your Own Image dans l'espace client](images/byoi-controlpanel01.png){.thumbnail}
 
 À l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Image - byoi` et cliquez sur `Suivant`{.action}.
 
-![BringYourOwnImage Control Panel 03](images/byoi-controlpanel03.png){.thumbnail}
+![Sélection d'image personnalisee Bring Your Own Image dans l'espace client](images/byoi-controlpanel03.png){.thumbnail}
 
 Vous allez être redirigé vers la page de configuration. Assurez-vous que l'URL de votre image est au bon format. Remplissez le reste des champs obligatoires de cette page. Une fois que vous avez confirmé que les informations sont correctes, cliquez sur `Confirmer`{.action}.
 
@@ -76,7 +76,7 @@ Vous trouverez plus de détails sur les options dans la section « [options de d
 
 Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consultez la documentation officielle sur [cette page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
-![BringYourOwnImage Control Panel 04](images/byoi-controlpanel04.png){.thumbnail}
+![Page de configuration Bring Your Own Image dans l'espace client](images/byoi-controlpanel04.png){.thumbnail}
 
 ### Déploiement de votre image via l'API <a name="viaapi"></a>
 

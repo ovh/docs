@@ -1,6 +1,6 @@
 ---
-title: "Konfiguracja vRack między Public Cloud a serwerem dedykowanym"
-excerpt: "Skonfiguruj sieć prywatną OVHcloud vRack między instancją Public Cloud a serwerem dedykowanym."
+title: "Konfiguracja sieci vRack między Public Cloud a serwerem dedykowanym"
+excerpt: "Skonfiguruj prywatną sieć między instancją OVHcloud Public Cloud a serwerem dedykowanym za pomocą sieci vRack."
 updated: 2026-02-20
 ---
 

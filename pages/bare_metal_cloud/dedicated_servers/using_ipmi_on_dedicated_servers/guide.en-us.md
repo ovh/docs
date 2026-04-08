@@ -1,6 +1,6 @@
 ---
-title: "How to use the IPMI console with a dedicated server"
-excerpt: "Find out how to log on to your server from the OVHcloud Control Panel without the use of external software"
+title: "How to use the IPMI console with a Dedicated Server"
+excerpt: "Access your dedicated server remotely via the IPMI/KVM console in the OVHcloud Control Panel without external software."
 updated: 2026-01-29
 ---
 
@@ -140,7 +140,7 @@ It will take several minutes for the IPMI to reboot.
 
 To begin, open [IPMI in a Java applet](#applet-java) from the [OVHcloud Control Panel](/links/manager). Then, click `Device`{.action} from the menu bar and select `Redirect ISO`{.action} from the drop-down menu.
 
-![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
+![Redirect ISO option in the Device menu](images/RedirectISO.jpg){.thumbnail}
 
 Next, select the ISO you wish to use from your local computer's file system. Once you have selected your ISO, press the `Ctrl Alt Del`{.action} button in the top-right corner of the screen to reboot the server. Press the appropriate `F` key to access the boot options.
 
@@ -150,7 +150,7 @@ Next, select the ISO you wish to use from your local computer's file system. Onc
 
 Select the **UEFI Virtual CDROM 1.00** option from the boot menu to start the server from the ISO attached previously.
 
-![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
+![UEFI Virtual CDROM boot option in the boot menu](images/UEFIVirt.jpg){.thumbnail}
 
 Complete the steps required to install the operating system. Do not forget to remove the ISO from the "Redirect ISO" option.
 
@@ -162,15 +162,15 @@ Complete the steps required to install the operating system. Do not forget to re
 
 To begin, open [IPMI in a Java applet](#applet-java) from the [OVHcloud Control Panel](/links/manager). Then, click `Virtual Media`{.action} and select `Virtual Storage`{.action}.
 
-![Virtual_Storage](images/virtual_storage.png){.thumbnail}
+![Virtual Storage option in the Virtual Media menu](images/virtual_storage.png){.thumbnail}
 
 From the new screen, select `ISO File` from the "Logical Drive Type" drop-down menu. Next, click `Open Image`{.action} and navigate to your ISO file. Finally, click `Plug-in`{.action} and `OK`{.action} to finish.
 
-![ISO_file](images/iso_file.png){.thumbnail}
+![Select and mount an ISO file in Virtual Storage](images/iso_file.png){.thumbnail}
 
 In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select `Power Control`{.action} and click `Set Power Reset`{.action}.
 
-![Power_Reserver](images/power_reset.png){.thumbnail}
+![Power Control menu with Set Power Reset option](images/power_reset.png){.thumbnail}
 
 > [!primary]
 >
@@ -179,11 +179,11 @@ In order to be able to boot from our ISO file, we need to access the BIOS and sw
 
 During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option `Enter Setup`{.action}.
 
-![Boot_Menu](images/boot_menu.png){.thumbnail}
+![Server boot menu with Enter Setup option](images/boot_menu.png){.thumbnail}
 
 In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order #1` to `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
 
-![Bios](images/bios.png){.thumbnail}
+![BIOS Boot tab with UEFI boot order configuration](images/bios.png){.thumbnail}
 
 Lastly, press the `F4` key to save your changes and restart the server.
 
@@ -204,31 +204,31 @@ Here you have access to the same information and functionalities as in the Java-
 
 Click on the `Browse File`{.action} button and select your image file.
 
-![KVM Install](images/kvm_install01.png){.thumbnail}
+![Browse File button in the KVM web console](images/kvm_install01.png){.thumbnail}
 
 Click on `Start Media`{.action}. This will prepare the ISO for the installation process.
 
-![KVM Install](images/kvm_install02.png){.thumbnail}
+![Start Media button to prepare the ISO](images/kvm_install02.png){.thumbnail}
 
 The file size displayed is not the actual size. This is normal, since the file is not fully uploaded in this step.
 
-![KVM Install](images/kvm_install03.png){.thumbnail}
+![ISO file size displayed during upload preparation](images/kvm_install03.png){.thumbnail}
 
 Click on `Power`{.action} and select `Reset Server`{.action} from the drop-down menu.
 
-![KVM Install](images/kvm_install04.png){.thumbnail}
+![Power menu with Reset Server option in KVM](images/kvm_install04.png){.thumbnail}
 
 Wait for the boot selection screen to appear and press the appropriate key to enter the boot menu (`F11` in this example).
 
-![KVM Install](images/kvm_install05.png){.thumbnail}
+![Boot selection screen with F11 key prompt](images/kvm_install05.png){.thumbnail}
 
 In the boot menu, select the optical drive (`UEFI: AMI Virtual CDROM0` in this example) and press `Enter`.
 
-![KVM Install](images/kvm_install06.png){.thumbnail}
+![Select the virtual CDROM drive in the boot menu](images/kvm_install06.png){.thumbnail}
 
 The ISO file will now be uploaded, then the server will boot from the file.
 
-![KVM Install](images/kvm_install07.png){.thumbnail}
+![ISO upload in progress and server booting from file](images/kvm_install07.png){.thumbnail}
 
 <a name="bios"></a>
 
@@ -255,5 +255,7 @@ Afterwards, access the [IPMI console](#procedure) in your [OVHcloud Control Pane
 ## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+[How to get started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 Join our [community of users](/links/community).

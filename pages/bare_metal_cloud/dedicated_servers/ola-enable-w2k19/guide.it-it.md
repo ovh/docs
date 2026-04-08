@@ -1,6 +1,6 @@
 ---
-title: "Server dedicato - OVHcloud Link Aggregation su Windows"
-excerpt: "Attiva OVHcloud Link Aggregation sul tuo server dedicato Windows Server 2019"
+title: "Configurare OVHcloud Link Aggregation su un server dedicato (Windows)"
+excerpt: "Attiva OVHcloud Link Aggregation sul tuo server dedicato Windows Server 2019."
 updated: 2021-03-25
 ---
 

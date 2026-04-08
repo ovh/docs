@@ -1,6 +1,6 @@
 ---
-title: How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15
-excerpt: Enable OVHcloud Link Aggregation in your SLES 15 server
+title: "Configure OVHcloud Link Aggregation on a Dedicated Server (SLES 15)"
+excerpt: "Enable OVHcloud Link Aggregation in your SLES 15 server"
 updated: 2024-11-26
 ---
 
@@ -28,8 +28,9 @@ The OVHcloud Link Aggregation (OLA) technology is designed by our teams to incre
 ## Instructions
 
 Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
+<br>Click the `IPMI`{.action} tab (1).
 
-Click the `IPMI`{.action} tab (1) and then click the `From a Java applet (KVM)`{.action} button (2).
+Next, click the `From a Java applet (KVM)`{.action} button (2).
 
 ![remote kvm](images/remote_kvm2022.png){.thumbnail}
 
@@ -116,7 +117,7 @@ This time, the file will be blank so add the following content to the file:
 
 ```bash
 BOOTPROTO='none'
-STARTMODUS= hotplug'
+STARTMODE='hotplug'
 LLADDR=0c:42:a1:a7:29:c2
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: 'Configuration des trames Jumbo dans le vRack'
-excerpt: 'Découvrez comment configurer les Jumbo frames dans le vRack'
+title: "Configurer les trames Jumbo dans le vRack sur un serveur dédié"
+excerpt: "Configurez les trames Jumbo (MTU 9000) dans votre vRack OVHcloud pour optimiser le débit réseau entre serveurs dédiés"
 updated: 2020-08-17
 ---
 
@@ -12,7 +12,7 @@ Les trames Jumbo, ou *Jumbo frames*, sont des trames Ethernet dont la charge uti
 
 ## Prérequis
 
-- Posséder un [vRack](https://www.ovh.com/ca/fr/solutions/vrack/).
+- Posséder un [vRack](/links/network/vrack).
 - Ouvrir un shell avec les droits root
 
 > [!warning]
@@ -63,5 +63,9 @@ Iface <nom de l’interface> inet static
 ```
 
 ## Aller plus loin
+
+[Configurer le vRack sur vos serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+[Configurer un bloc Additional IP dans le vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

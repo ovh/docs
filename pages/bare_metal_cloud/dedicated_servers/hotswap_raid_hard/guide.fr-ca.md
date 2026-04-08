@@ -1,6 +1,6 @@
 ---
-title: Remplacement à chaud - RAID Matériel
-excerpt: Retrouvez ici comment remplacer un disque à chaud sur un serveur avec un RAID matériel
+title: "Remplacement à chaud sur un serveur dédié en RAID matériel"
+excerpt: "Remplacez un disque défectueux sur un serveur dédié en RAID matériel sans interruption grâce à la procédure de hot-swap"
 updated: 2023-08-21
 ---
 
@@ -156,15 +156,15 @@ A ce moment là, l'intervention est prête à être effectuée. Vous pouvez alor
 
 Une fois l'intervention effectuée par le Datacentre, vous pouvez de nouveau aller dans l'outil MegaRAID Storage Manager, dans la partie Background operations, et vérifier que le disque est en cours de *Rebuild*.
 
-![back](images/back.png){.thumbnail}
+![Operations en arriere-plan MegaRAID affichant la reconstruction du disque](images/back.png){.thumbnail}
 
 Le détail vous retournera ce type de résultat :
 
-![1](images/1.png){.thumbnail}
+![Detail de la progression de reconstruction du disque remplace](images/1.png){.thumbnail}
 
 Egalement, dans l'onglet **Logical**, nous avons toujours le détails du RAID et des disques.
 
-![2](images/2.png){.thumbnail}
+![Onglet Logical affichant le statut RAID et la reconstruction du disque](images/2.png){.thumbnail}
 
 Le disque **Slot ID 1** est bien en cours de *Rebuild*.
 

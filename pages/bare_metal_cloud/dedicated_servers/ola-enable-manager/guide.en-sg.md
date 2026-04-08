@@ -1,7 +1,7 @@
 ---
-title: 'Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel'
-excerpt: 'Find out how to enable OVHcloud Link Aggregation in the OVHcloud Control Panel'
-updated: 2023-03-07
+title: "OVHcloud Link Aggregation via Control Panel (Dedicated)"
+excerpt: "Enable OVHcloud Link Aggregation (OLA) on your dedicated server directly from the OVHcloud Control Panel."
+updated: 2022-05-18
 ---
 
 ## Objective
@@ -38,9 +38,9 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ### Configuring OLA in the OVHcloud Control Panel
 
-Click on `Dedicated Servers`{.action} and select your server from the list.
+To start configuring OLA, open the `Network interfaces`{.action} tab on your server's management page.
 
-![network interfaces](images/network_interfaces2022.png){.thumbnail}
+![Network interfaces tab showing OLA configuration](images/network_interfaces2022.png){.thumbnail}
 
 In the tab `Network interfaces`{.action} (1), click on the `...`{.action} button (2) to the right of "Mode" in the **OLA: OVHcloud Link Aggregation** box. Next, click `Configure private aggregation`{.action}  (2).
 
@@ -59,7 +59,7 @@ This may take a few minutes. Once it is complete, the next step is to configure 
 
 To restore OLA to the default values, click on the `...`{.action} button to the right of "Mode" in the **OLA: OVHcloud Link Aggregation** box. Then click `Unconfigure private aggregation`{.action}. Click `Confirm`{.action} in the popup menu.
 
-![network interfaces](images/default_settings2021.png){.thumbnail}
+![Unconfigure private aggregation option in OLA box](images/default_settings2021.png){.thumbnail}
 
 This may take a few minutes.
 
@@ -74,4 +74,3 @@ This may take a few minutes.
 [How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 Join our [community of users](/links/community).
-

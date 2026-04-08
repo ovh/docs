@@ -1,6 +1,6 @@
 ---
-title: "Configure a custom iPXE script to boot your server from the OVHcloud API"
-excerpt: Find out how to configure a custom iPXE script to boot your server from the OVHcloud API
+title: "Use a Custom iPXE Boot Script on Dedicated Servers"
+excerpt: "Configure a custom iPXE script via the OVHcloud API to control the network boot process on your dedicated server."
 updated: 2024-02-27
 ---
 

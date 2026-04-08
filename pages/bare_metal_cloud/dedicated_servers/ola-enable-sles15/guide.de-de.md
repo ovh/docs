@@ -1,6 +1,6 @@
 ---
-title: "Dedicated Server - OVHcloud Link Aggregation unter SLES 15"
-excerpt: "Erfahren Sie hier, wie Sie OLA für Ihren SLES 15 Server aktivieren"
+title: "OVHcloud Link Aggregation auf einem Dedicated Server konfigurieren (SLES 15)"
+excerpt: "Aktivieren Sie OVHcloud Link Aggregation auf Ihrem Dedicated Server mit SLES 15."
 updated: 2024-11-26
 ---
 

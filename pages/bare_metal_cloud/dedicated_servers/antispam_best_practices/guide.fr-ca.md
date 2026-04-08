@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP
-excerpt: Découvrez nos bonnes pratiques antispam et comment débloquer une adresse IP bloquée pour SPAM
+title: "OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP"
+excerpt: "Appliquez les bonnes pratiques antispam OVHcloud et débloquez une adresse IP de serveur dédié signalée pour envoi de spam"
 updated: 2026-01-06
 ---
 
@@ -95,7 +95,7 @@ Une fois le traitement effectué, votre IP sera débloquée.
 
 Connectez-vous à l'interface [API d'OVHcloud](/links/api) et suivez les étapes ci-dessous. Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
-Récupérez tout d'abord la liste des IPs de chaque service OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serveur Dédié) :
+Récupérez tout d'abord la liste des adresses IP de chaque service OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serveur Dédié) :
 
 > [!api]
 >
@@ -116,7 +116,7 @@ Voici un exemple de résultat :
 "188.81.49.30/28",
 ```
 
-Recherchez ensuite les IPs dans un état particulier grâce à l'appel suivant. Si vous connaissez déjà l'adresse IP bloquée, vous pouvez passer à l'[étape suivante](#unblockip) :
+Recherchez ensuite les adresses IP dans un état particulier grâce à l'appel suivant. Si vous connaissez déjà l'adresse IP bloquée, vous pouvez passer à l'[étape suivante](#unblockip) :
 
 > [!api]
 >
@@ -291,5 +291,7 @@ Si vos e-mails sont conformes, vous pouvez nous en informer en envoyant un exemp
 Une fois les informations envoyées, notre service d'assistance communiquera avec Vade Secure pour une analyse plus approfondie de la situation.
 
 ## Aller plus loin
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: "VM Hyper-V con Additional IP nella vRack (Dedicato)"
-excerpt: "Scopri come utilizzare Hyper-V con Additional IP tramite una vRack su un server dedicato"
+title: "Configurare VM Hyper-V con Additional IP nella vRack su un server dedicato"
+excerpt: "Utilizza Hyper-V con Additional IP tramite la vRack sul tuo server dedicato OVHcloud."
 updated: 2025-07-22
 ---
 

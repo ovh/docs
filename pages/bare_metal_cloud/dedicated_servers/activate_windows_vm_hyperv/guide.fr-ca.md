@@ -1,6 +1,6 @@
 ---
-title: 'Activer des Machines Windows utilisant Hyper-V sur un Windows Server sous licence OVHcloud'
-excerpt: "Apprenez à créer et activer une machine virtuelle à l'aide de Hyper-V sur un serveur Windows sous licence OVHcloud"
+title: "Activer des VM Windows avec Hyper-V sur un serveur dédié"
+excerpt: "Créez et activez des machines virtuelles Windows avec Hyper-V sur un serveur dédié Windows Server sous licence OVHcloud"
 updated: 2024-10-30
 ---
 
@@ -170,5 +170,9 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 Votre VM doit être maintenant activée.
 
 ## Aller plus loin
+
+[Comment corriger la clé d’activation Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_key)
+
+[Modifier le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

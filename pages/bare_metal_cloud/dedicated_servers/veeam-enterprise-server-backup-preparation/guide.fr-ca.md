@@ -1,6 +1,6 @@
 ---
-title: Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise
-excerpt: Découvrez comment préparer la sauvegarde de votre serveur Bare Metal à l'aide de Veeam Backup and Replication (Enterprise)
+title: "Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise"
+excerpt: "Préparez votre serveur Bare Metal pour la sauvegarde avec Veeam Enterprise : réseau, stockage et configuration de l'agent"
 updated: 2024-04-05
 ---
 
@@ -120,19 +120,19 @@ Cliquez sur `Add`{.action} pour entrer vos informations d'identification. Entrez
 
 Cliquez sur `Browse...`{.action} pour sélectionner le **Bucket**.
 
-![Veeam - bucket](images/backup-preparation-11.png){.thumbnail}
+![Bouton Browse de Veeam pour sélectionner le bucket](images/backup-preparation-11.png){.thumbnail}
 
 Sélectionnez le bucket et cliquez sur `OK`{.action}.
 
-![Veeam - bucket](images/backup-preparation-12.png){.thumbnail}
+![Dialogue de sélection de bucket Veeam avec buckets disponibles](images/backup-preparation-12.png){.thumbnail}
 
 Cliquez sur `Browse...`{.action} pour sélectionner le **Dossier** (Folder).
 
-![Veeam - folder](images/backup-preparation-13.png){.thumbnail}
+![Bouton Browse de Veeam pour sélectionner le dossier](images/backup-preparation-13.png){.thumbnail}
 
 Cliquez sur `New Folder`{.action}, entrez un nom pour le dossier, sélectionnez-le, puis cliquez sur `OK`{.action}.
 
-![Veeam - folder](images/backup-preparation-14.png){.thumbnail}
+![Dialogue de création de dossier Veeam avec nom du nouveau dossier](images/backup-preparation-14.png){.thumbnail}
 
 A l'étape de montage du serveur, cliquez sur `Next`{.action}.
 

@@ -1,6 +1,6 @@
 ---
-title: Configuring an Additional IPv6 block in a vRack
-excerpt: Find out how to configure a block of public IPv6 addresses for use with an OVHcloud vRack network
+title: "Configure an IPv6 Block in a vRack on a Dedicated Server"
+excerpt: "Configure a public IPv6 address block for use with an OVHcloud vRack private network on your dedicated server."
 updated: 2026-03-13
 ---
 
@@ -178,7 +178,7 @@ Let's check exactly which subnet is bridged:
 
 As in the example below:
 
-![GET subrange bridged into your vRack](images/20240418-05.png){.thumbnail}
+![API response listing bridged subranges in the vRack](images/20240418-05.png){.thumbnail}
 
 To get more details, use this call:
 
@@ -189,7 +189,7 @@ To get more details, use this call:
 
 As in the example below:
 
-![GET subrange bridged into your vRack](images/20240418-06.png){.thumbnail}
+![API response with bridged subrange details and SLAAC status](images/20240418-06.png){.thumbnail}
 
 Notice that IP autoconfiguration (SLAAC) is turned off by default.
 
@@ -383,11 +383,11 @@ To create a routed subnet, we must first define:
 
 Please note that a given subnet cannot overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
 
-![continue](images/800.png){.thumbnail}
+![Define routed subnet in CIDR notation and next-hop address](images/800.png){.thumbnail}
 
 This created routed subnet `2001:41d0:abcd:ef10::/60` reachable via next hop `2001:41d0:abcd:ef00::2`. 
 
-![continue](images/801.png){.thumbnail}
+![Created routed subnet with next-hop displayed](images/801.png){.thumbnail}
 
 ///
 
@@ -402,7 +402,7 @@ Please note that a given subnet cannot overlap with any other subnet defined and
 
 The example below shows how to define such a subnet:
 
-![continue](images/20240418-02.png){.thumbnail}
+![API call to define a routed subnet with next-hop](images/20240418-02.png){.thumbnail}
 
 Here, we defined a routed subnet `2001:41d0:abcd:ef10::/60` which will be delegated to the VM hosted on: `2001:41d0:abcd:ef00::2`.
 
@@ -596,7 +596,7 @@ On the other hand, services like Additional IPv6 are regional, which means their
 
 Below, an architecture is presented for learning purposes with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as a suboptimal route example - a host in one region addressed with IPv6 address announced in another region:
 
-![image](images/20240418-08.png){.thumbnail}
+![Multi-region vRack architecture with different IPv6 blocks](images/20240418-08.png){.thumbnail}
 
 Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in the whole vRack** (as this may lead to unpredictable results and losing connectivity randomly).
 
@@ -624,5 +624,9 @@ Understanding the constraints of using **Additional IPv6** within the **vRack** 
 - **At the moment, routing Additional IPv6 into vRack is not supported in APAC (Asia-Pacific) regions.**
 
 ## Go further
+
+[Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+[Configuring Network Bridging](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Join our [community of users](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: Configuring the firewall on Windows
-excerpt: Find out how to configure your firewall on Windows
+title: "Configure the Windows Firewall on a Dedicated Server"
+excerpt: "Configure the built-in Windows firewall on your dedicated server to control inbound and outbound network traffic."
 updated: 2022-01-31
 ---
 
@@ -34,7 +34,7 @@ To access Windows Firewall, you can follow this order:
 
 Then click `Advanced settings`{.action}.
 
-![Step1](images/step1.PNG){.thumbnail}
+![Windows Firewall advanced settings screen](images/step1.PNG){.thumbnail}
 
 ### Step 2: Enable an inbound rule
 
@@ -46,7 +46,7 @@ In the window that appears, you will see settings such as:
 
 Selecting `Inbound Rules`{.action} displays all preconfigured Windows Server rules associated with network connections and incoming packets. Some of these rules are not enabled by default. If you want to enable them, right-click the rule and select the `Enable rule`{.action} option.
 
-![Step1](images/step2.PNG){.thumbnail}
+![Inbound rules list with enable rule option](images/step2.PNG){.thumbnail}
 
 ### Step 3: Create a new rule 
 
@@ -108,5 +108,9 @@ Click the `Finish`{.action} button to complete the process and create the new ru
 You can then make changes to the settings of the new rule you have created.
 
 ## Go further
+
+[Edge Network Firewall for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[Network Security Dashboard for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Join our [community of users](/links/community).

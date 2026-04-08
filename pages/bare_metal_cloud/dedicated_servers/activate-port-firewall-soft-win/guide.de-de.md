@@ -1,6 +1,6 @@
 ---
-title: "Dedicated Server - Windows Firewall konfigurieren"
-excerpt: "Konfigurieren Sie die integrierte Windows Firewall auf Ihrem Dedicated Server, um ein- und ausgehenden Netzwerkverkehr zu kontrollieren."
+title: "Windows-Firewall auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie die integrierte Windows-Firewall auf Ihrem Dedicated Server, um ein- und ausgehenden Netzwerkverkehr zu kontrollieren."
 updated: 2022-01-31
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Konfiguracja bloku IP w sieci vRack na serwerze dedykowanym"
-excerpt: "Skonfiguruj blok publicznych adresów IP w sieci prywatnej OVHcloud vRack na serwerze dedykowanym."
+excerpt: "Skonfiguruj publiczny blok adresów IP do użytku z prywatną siecią OVHcloud vRack na serwerach dedykowanych."
 updated: 2026-04-03
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Jak zaktualizować firmware BMC na serwerze dedykowanym"
-excerpt: "Zaktualizuj firmware BMC (Baseboard Management Controller) na serwerze dedykowanym OVHcloud za pomocą IPMI."
+title: "Sprawdzenie wersji firmware BMC na serwerze dedykowanym Linux"
+excerpt: "Sprawdź wersję firmware BMC na serwerze dedykowanym OVHcloud, aby zapewnić kompatybilność zarządzania sprzętowego."
 updated: 2026-02-25
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Configurare la vRack tra Public Cloud e un server dedicato"
-excerpt: "Implementa una rete privata tra un'istanza Public Cloud OVHcloud e un server dedicato tramite la vRack"
+excerpt: "Configura una rete privata tra un'istanza Public Cloud OVHcloud e un server dedicato tramite la vRack."
 updated: 2026-02-20
 ---
 

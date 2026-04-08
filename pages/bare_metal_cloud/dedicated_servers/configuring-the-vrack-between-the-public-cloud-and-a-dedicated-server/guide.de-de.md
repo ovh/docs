@@ -1,5 +1,5 @@
 ---
-title: "vRack zwischen Public Cloud und Dedicated Server"
+title: "Das vRack zwischen Public Cloud und einem Dedicated Server konfigurieren"
 excerpt: "Richten Sie ein privates Netzwerk zwischen einer OVHcloud Public Cloud Instanz und einem Dedicated Server über das vRack ein."
 updated: 2026-02-20
 ---

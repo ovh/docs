@@ -1,6 +1,6 @@
 ---
-title: "Serwer dedykowany - Diagnostyka sprzętowa"
-excerpt: "Przeprowadź diagnostykę sprzętową na serwerze dedykowanym OVHcloud, aby zidentyfikować usterki komponentów."
+title: "Diagnostyka sprzętu w trybie rescue na serwerze dedykowanym"
+excerpt: "Przeprowadź diagnostykę sprzętu na serwerze dedykowanym OVHcloud w trybie rescue, aby zidentyfikować awarie dysków, pamięci RAM lub procesora."
 updated: 2025-10-16
 ---
 

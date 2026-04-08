@@ -1,6 +1,6 @@
 ---
-title: 'Remplacer un disque défectueux'
-excerpt: 'Découvrez comment identifier un disque défectueux et demander son remplacement'
+title: "Remplacer un disque défectueux sur un serveur dédié"
+excerpt: "Identifiez un disque défectueux sur votre serveur dédié OVHcloud et demandez son remplacement via l'espace client"
 updated: 2018-06-21
 ---
 

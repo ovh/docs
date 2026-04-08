@@ -1,6 +1,6 @@
 ---
-title: "Dedicated Server - Datenbanken im Rescue-Modus abrufen"
-excerpt: "Greifen Sie auf Ihre Datenbanken auf einem Dedicated Server im Rescue-Modus zu und exportieren Sie diese, um Daten nach einem Vorfall wiederherzustellen."
+title: "Datenbanken im Rescue-Modus auf einem Dedicated Server wiederherstellen"
+excerpt: "Greifen Sie auf Ihre Datenbanken zu und exportieren Sie diese von einem Dedicated Server im Rescue-Modus, um Daten nach einem Vorfall wiederherzustellen."
 updated: 2023-04-13
 ---
 

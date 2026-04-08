@@ -1,6 +1,6 @@
 ---
-title: "Augmenter ou diminuer la bande passante privée (vRack) d'un serveur dédié via l'API OVHcloud"
-excerpt: "Découvrez comment augmenter ou diminuer la bande passante privée d'un serveur dédié via l'API OVHcloud"
+title: "Gérer la bande passante privée vRack via l'API OVHcloud"
+excerpt: "Augmentez ou diminuez la bande passante privée vRack de votre serveur dédié via l'API OVHcloud"
 updated: 2025-01-20
 ---
 
@@ -31,7 +31,7 @@ Utilisez l'appel API suivant pour répertorier tous les services disponibles pou
 > @api {v1} /order GET /order/upgrade/bare metalPrivateBandwidth
 >
 
-![bandwidth](images/bandwidth_01.png){.thumbnail}
+![Appel API listant les services de bande passante privee disponibles](images/bandwidth_01.png){.thumbnail}
 
 ### Trouver le code de l'offre (*planCode*)
 
@@ -46,11 +46,11 @@ Renseignez les variables :
 
 - serviceName : nom de votre serveur dédié, par exemple `ns1234567.ip-203.0.113.eu`
 
-![bandwidth](images/private-bandwidth-1.png){.thumbnail}
+![Appel API pour lister les codes de plan de bande passante vRack](images/private-bandwidth-1.png){.thumbnail}
 
 Le champ `RESPONSE` doit afficher des informations similaires à celles qui suivent :
 
-![bandwidth](images/private-bandwidth-2.png){.thumbnail}
+![Reponse API affichant les codes de plan de bande passante vRack](images/private-bandwidth-2.png){.thumbnail}
 
 ### Vérifier votre commande
 
@@ -67,11 +67,11 @@ Renseignez les variables :
 - serviceName : nom de votre serveur dédié
 - quantity : 1
 
-![bandwidth](images/private-bandwidth-3.png){.thumbnail}
+![Appel API pour previsualiser la commande de bande passante vRack avec tarif](images/private-bandwidth-3.png){.thumbnail}
 
 Le champ `RESPONSE` doit afficher des informations similaires à celles qui suivent :
 
-![bandwidth](images/private-bandwidth-4.png){.thumbnail}
+![Reponse API avec details de tarification de la bande passante vRack](images/private-bandwidth-4.png){.thumbnail}
 
 ### Soumettre votre commande
 
@@ -82,10 +82,14 @@ Pour soumettre officiellement votre commande, utilisez l'appel API suivant :
 > @api {v1} /order POST /order/upgrade/bare metalPrivateBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/private-bandwidth-5.png){.thumbnail}
+![Appel API pour soumettre la commande de bande passante privee vRack](images/private-bandwidth-5.png){.thumbnail}
 
 La commande sera traitée une fois que vous aurez cliqué sur `Execute`{.action}. Le montant affiché correspond au premier mois de facturation de votre option, calculé au prorata temporis du mois en cours.
 
 ## Aller plus loin
+
+[Augmenter et diminuer la bande passante d'un serveur dédié via l'API OVHcloud](/pages/bare_metal_cloud/dedicated_servers/manage_bandwidth_api)
+
+[Configurer le vRack sur vos serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

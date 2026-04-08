@@ -1,6 +1,6 @@
 ---
-title: "Sauvegarder un serveur Bare Metal via Veeam Agent pour Windows"
-excerpt: "Découvrez comment configurer Veeam Agent pour Microsoft Windows afin de sauvegarder votre serveur dédié"
+title: "Sauvegarder un serveur Bare Metal Windows via Veeam Agent pour Windows"
+excerpt: "Configurez Veeam Agent pour Microsoft Windows pour protéger votre serveur Bare Metal avec des sauvegardes planifiées"
 updated: 2024-04-05
 ---
 
@@ -40,7 +40,7 @@ Cliquez sur le bouton de menu et sélectionnez `+ Add New Job...`{.action}.
 
 Vous pouvez modifier le nom et/ou la description par défaut. Cliquez ensuite sur `Next`{.action}.
 
-![Nom](images/02-name.PNG){.thumbnail}
+![Champs nom et description du job de sauvegarde Veeam](images/02-name.PNG){.thumbnail}
 
 #### Mode de sauvegarde
 

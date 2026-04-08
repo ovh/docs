@@ -1,6 +1,6 @@
 ---
-title: "How to retrieve databases in rescue mode"
-excerpt: "Find out how to access and save your databases using rescue mode"
+title: "Retrieve Databases in Rescue Mode on a Dedicated Server"
+excerpt: "Access and export your databases from a dedicated server in rescue mode to recover data after an incident."
 updated: 2023-04-13
 ---
 
@@ -267,5 +267,7 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 ```
 
 ## Go further
+
+[Dedicated Server - Hardware Diagnostics in Rescue Mode](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 Join our [community of users](/links/community).

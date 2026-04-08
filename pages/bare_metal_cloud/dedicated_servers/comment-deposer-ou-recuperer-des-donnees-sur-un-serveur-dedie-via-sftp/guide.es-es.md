@@ -1,6 +1,6 @@
 ---
 title: "Transferir archivos por SFTP en un servidor dedicado"
-excerpt: "Transfiera archivos desde y hacia su servidor dedicado utilizando SFTP con FileZilla para subidas y descargas seguras"
+excerpt: "Transfiera archivos desde y hacia su servidor dedicado utilizando SFTP con FileZilla para cargas y descargas seguras."
 updated: 2025-02-21
 ---
 

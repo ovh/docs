@@ -1,6 +1,6 @@
 ---
-title: "How to protect a Game server with the application firewall"
-excerpt: "Learn how to configure the OVHcloud Game DDoS Protection firewall"
+title: "Game DDoS Protection Firewall on a Dedicated Server"
+excerpt: "Configure the OVHcloud Game DDoS Protection firewall to shield your game server from application-layer attacks."
 updated: 2026-03-24
 ---
 
@@ -78,7 +78,21 @@ To configure game protection rules for your Bare Metal Game server, follow these
 
 You can filter IP addresses by using the `All service types`{.action} drop-down menu, or directly enter the desired IP address in the search bar. Enter the name or category of the corresponding server:
 
-#### List the IP addresses attached to your Game Server
+| ![IP listing filtered by game server service](images/ip_listing_new.png) |
+|:--:|
+| IP listing: Find your IP address by corresponding service |
+
+Navigate to the *Game firewall* configuration:
+
+| ![game-server](images/firewall_game_01_blur_new.png) |
+|:--:|
+| Click on the `⁝`{.action} button next to the IP address of your Game server. |
+
+| ![Configure the GAME firewall option in context menu](images/firewall_game_02_new.png) |
+|:--:|
+| Click on `Configure the GAME firewall`{.action}. |
+
+Now you can configure game protection rules for the selected IP address.
 
 > [!tabs]
 > From the **Dedicated Servers** page
@@ -266,5 +280,7 @@ You will need to share relevant network traffic dumps as examples for such attac
 ## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+[Network Security Dashboard for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Join our [community of users](/links/community).
