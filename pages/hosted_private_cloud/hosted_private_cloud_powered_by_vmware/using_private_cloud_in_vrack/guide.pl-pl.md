@@ -18,14 +18,24 @@ vRack umożliwia podłączenie różnych usług cloud OVHcloud w ramach jednej l
 
 - Posiadanie usługi [vRack](/links/network/vrack) na Twoim koncie lub zamówienie usługi.
 - Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
-- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](/links/manager).
+- Posiadanie aktywnego konta użytkownika z dostępem do vSphere (utworzonego w [Panelu klienta OVHcloud](/links/manager)).
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [vRack](/links/control-panel/network-vrack)
+- **Ścieżka nawigacji:** `Network`{.action} > `Prywatna sieć vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 ## W praktyce
 
 ### Panel klienta
 
-Podczas dostarczania usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) część *datacenter* jest już w sieci vRack. Aby uzyskać dostęp do sekcji vRack,
-przejdź do sekcji `Bare Metal Cloud`{.action}, kliknij `Network`{.action}, następnie kliknij `vRack`{.action}. Wybierz vRack z listy, aby wyświetlić zawartość.
+Podczas dostarczania usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) część *datacenter* jest już w sieci vRack. Wybierz vRack z listy, aby wyświetlić zawartość.
 
 ![Centrum danych](images/vRackDatacenter.PNG){.thumbnail}
 

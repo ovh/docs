@@ -1,25 +1,36 @@
 ---
 title: Ajout de bloc IP
-excerpt: Commander un bloc IP sur votre Private Cloud
+excerpt: Commander un bloc IP sur votre Hosted Private Cloud
 updated: 2022-04-06
 ---
 
 ## Objectif
 
-Un bloc IP peut vous servir à rendre vos services accessibles sur Internet. 
+Un bloc IP peut vous servir à rendre vos services accessibles sur Internet.
 
 **Ce guide explique comment commander, ajouter et migrer un bloc IP associé à votre Hosted Private Cloud.**
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](/links/manager))
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 
 ### Commander un bloc IP
 
-Pour commander un bloc IP supplémentaire pour votre **Private Cloud** , dirigez-vous sur votre espace client OVHcloud. Dans la section `Serveur`, cliquez sur la rubrique `IP` dans la colonne de gauche puis cliquez sur `Commander des IP additionnelles`{.action}. Sélectionnez ensuite votre **Private Cloud** dans le menu déroulant avant de passer à l'étape suivante.
+Pour commander un bloc IP supplémentaire pour votre **Hosted Private Cloud**, cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis cliquez sur la rubrique `IP` dans la colonne de gauche et cliquez sur `Commander des IP additionnelles`{.action}. Sélectionnez ensuite votre **Private Cloud** dans le menu déroulant avant de passer à l'étape suivante.
 
 Plusieurs champs seront à remplir pour la création de votre bloc IP
 
@@ -28,7 +39,7 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 > [!primary]
 >
 > Pour rappel, voici un tableau récapitulant le nombres d'IPs présentes dans un bloc, et le nombres d'IP utilisables.
-> 
+>
 
 |Taille du bloc|IP dans le bloc|IP utilisables chez OVHcloud|
 |:---:|:---:|:---:|
@@ -67,7 +78,7 @@ Utilisez l'appel API suivant :
 > [!api]
 >
 > @api {v1} /ip POST /ip/{ip}/move
-> 
+>
 
 Les champs doivent être complétés ainsi :
 
@@ -86,14 +97,14 @@ Si, par la suite, vous devez détacher le bloc IP, vous pouvez utiliser cet appe
 > [!api]
 >
 > @api {v1} /ip POST /ip/{ip}/park
-> 
+>
 
 > [!warning]
 >
 > Cet appel coupe le réseau sur les VMs qui utilisent les IPs en question.
 >
 
-Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}. Cliquez sur votre service Hosted Private Cloud puis sur l'onglet `Operations`{.action}.
+Vous pourrez suivre le déplacement du bloc IP en cliquant sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis en cliquant sur votre service Hosted Private Cloud et sur l'onglet `Operations`{.action}.
 
 La référence de l'opération est « removeIpRipeBlock ».
 

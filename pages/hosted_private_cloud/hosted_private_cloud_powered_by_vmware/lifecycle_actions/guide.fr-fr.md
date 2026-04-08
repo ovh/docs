@@ -21,9 +21,19 @@ Dans ce guide, nous détaillons les actions à mener pour les sujets en cours :
 ## Prérequis
 
 - Posséder une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- Être connecté à [l'espace client OVHcloud](/links/manager).
 - Être connecté aux [API OVHCloud](/links/api). Au besoin, consultez le guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 - Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 
@@ -175,11 +185,7 @@ Pour réaliser votre migration, vous pouvez suivre ce guide : [Migrer vers une n
 
 #### Récupérer les informations de votre PCC dans l'espace client OVHcloud
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) avec un compte administrateur.
-
-Cliquez sur l'onglet `Hosted Private Cloud`{.action} et sélectionnez votre service dans la liste `VMware`{.action}.
-
-Dans l'onglet `Informations générales`{.action}, récupérez la version de votre vSphere.
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis ouvrez l'onglet `Informations générales`{.action} pour récupérer la version de votre vSphere.
 
 ![espace client - récupération de la version de vsphere](images/manager-version-vsphere.png){.thumbnail}
 

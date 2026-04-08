@@ -14,6 +14,17 @@ En complément des droits globaux au niveau du datacentre, vous pouvez attribuer
 - Un accès à l’[API OVHcloud](/links/api)
 - Un [utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) déjà créé dans votre service Hosted Private Cloud
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 ### Ajouter des droits sur un objet vSphere
@@ -48,9 +59,7 @@ En complément des droits globaux au niveau du datacentre, vous pouvez attribuer
 
 ### Afficher les droits dans l’Espace Client OVHcloud
 
-1. Ouvrez l’[Espace Client OVHcloud](/links/manager). Cliquez sur `Hosted Private Cloud`{.action} dans la barre supérieure, puis sur `Managed VMware vSphere`{.action} dans le menu de gauche, et sélectionnez votre service PCC.
-
-2. Accédez à l’onglet `Utilisateurs`{.action}. Sur la ligne de l’utilisateur concerné, ouvrez le menu `…`{.action} et cliquez sur `Afficher/Modifier les droits pour chaque DC`{.action}.
+1. Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis accédez à l’onglet `Utilisateurs`{.action}. Sur la ligne de l’utilisateur concerné, ouvrez le menu `…`{.action} et cliquez sur `Afficher/Modifier les droits pour chaque DC`{.action}.
 
     ![Onglet utilisateurs et menu d’actions](images/users-actions-menu.png){.thumbnail}
 

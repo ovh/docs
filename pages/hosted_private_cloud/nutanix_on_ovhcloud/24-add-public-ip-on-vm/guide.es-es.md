@@ -20,14 +20,24 @@ If you want to create a web front-end or a reverse proxy to create a stack of VM
 
 - A Nutanix cluster in your OVHcloud account
 - Login credentials and URL for Prism Central, received via email after the installation
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An available Additional IP address
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 ## Instructions
 
 ### Adding a new Additional IP to your vRack
 
-Log in to the [OVHcloud Control Panel](/links/manager) and add a Additional IP address to your [vRack](/links/network/vrack).
+Add a Additional IP address to your [vRack](/links/network/vrack).
 
 > [!primary]
 > The following instructions will use the IP block 123.45.6.78/30 for example purposes.

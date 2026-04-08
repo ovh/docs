@@ -22,8 +22,18 @@ This guide will outline the steps you need to take to get started with your Nuta
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to your [OVHcloud Control Panel](/links/manager)
 - You must be logged in to Prism Central on the cluster
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Select your cluster
+
+---
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 > [!warning]
 >
@@ -147,7 +157,7 @@ Open the console after restarting the VM. You can see that the VM has taken the 
 
 #### Load Balancer configuration
 
-Log in to your [OVHcloud Control Panel](/links/manager). Open the Nutanix Cluster configuration page.
+Open the Nutanix Cluster configuration page.
 
 In the `Cluster network` box at the bottom of the page, click on the Load Balancer.
 
@@ -411,7 +421,7 @@ In the system settings, enable "Remote Desktop".
 
 #### Load Balancer configuration
 
-Log in to your [OVHcloud Control Panel](/links/manager). Open the Nutanix Cluster configuration page. In the `Cluster network` box at the bottom of the page, click on the Load Balancer.
+In the `Cluster network` box at the bottom of the page, click on the Load Balancer.
 
 ![Configure Load Balancer 01 RDP](images/config-lb1-rdp.PNG){.thumbnail}
 

@@ -32,7 +32,6 @@ The solution relies on:
 
 ## Prerequisites
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - **Prism Central** version pc.7.5 or later.
 - **Prism Element** must be operational.
 

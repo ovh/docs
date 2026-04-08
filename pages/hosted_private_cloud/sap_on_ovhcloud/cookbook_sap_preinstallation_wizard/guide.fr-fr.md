@@ -58,8 +58,6 @@ L'assistant de pré-installation SAP proposé par OVHcloud facilite le déploiem
 
 ## Premiers pas
 
-Pour accéder à notre assistant de pré-installation SAP, rendez-vous dans la section `SAP Features Hub`{.action} du menu `Hosted Private Cloud`{.action}, disponible depuis [l'espace client](/links/manager) de votre compte OVHcloud.
-
 ![sap-features-hub](images/sap-features-hub.png){.thumbnail}
 
 Vous avez deux options : démarrer un assistant vierge pour saisir manuellement toutes les informations nécessaires, ou bien importer un fichier JSON préalablement créé. Ce fichier peut être généré à partir du schéma de notre API ou provenir d'une précédente installation, permettant ainsi de pré-remplir les informations et d'accélérer le processus.
@@ -76,6 +74,17 @@ Vous avez deux options : démarrer un assistant vierge pour saisir manuellement 
 - Un projet Public Cloud doit être créé dans votre compte OVHcloud.
     - Dans ce projet Public Cloud, un conteneur Object Storage doit être créé pour y stocker vos sources SAP<sup>2</sup>.
 - Un serveur DHCP doit être configuré dans le réseau où vous souhaitez déployer votre système SAP pour la machine virtuelle OVHcloud<sup>3</sup> qui sera déployée le temps du processus d'installation.
+
+<!-- CP-NAV-START:privatecloud-sap-hana -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SAP HANA](/links/control-panel/privatecloud-sap-hana)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `SAP Features Hub`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:privatecloud-sap-hana -->
 
 Il est important de noter que notre assistant de pré-installation SAP prend uniquement en charge les installations utilisant la base de données SAP HANA. Par conséquent, seules les sources SAPEXEDB pour SAP HANA sont prises en charge. Tous les autres fichiers SAPEXEDB doivent être supprimés de votre conteneur Object Storage s'ils ont été sélectionnés via le SAP Maintenance Planner.
 
@@ -167,7 +176,7 @@ Une fois que vous êtes satisfait des informations fournies, vous avez la possib
 
 ![sap-preinstallation-wizard-step-8](images/step-8.png){.thumbnail}
 
-Suite à la validation des informations, vous serez redirigé vers la page de suivi de votre pré-installation. Vous pouvez également retrouver la liste de l'ensemble de vos tâches de pré-installation et leurs détails dans la section `SAP Feature Hub`{.action} dans le menu `Hosted Private Cloud`{.action}, `Liste des pré-installations`{.action}.
+Suite à la validation des informations, vous serez redirigé vers la page de suivi de votre pré-installation. Vous pouvez également retrouver la liste de l'ensemble de vos tâches de pré-installation et leurs détails en cliquant sur `Liste des pré-installations`{.action} dans le SAP Features Hub.
 
 ![installation_report](images/installation_report.png){.thumbnail}
 

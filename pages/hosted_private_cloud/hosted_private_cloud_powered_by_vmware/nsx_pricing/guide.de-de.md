@@ -10,9 +10,19 @@ This documentation aims to explain the configuration options for NSX Edges and t
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager) to manage your NSX Edges.
 - Use of **VMware NSX 4.1.1** to access customization options.
 - Get a basic understanding of VMware concepts and NSX Edge features.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## General Overview
 
@@ -50,7 +60,6 @@ You can adapt your infrastructure to meet your specific needs:
 
 ### Steps to customize NSX Edges
 
-Log in to the [OVHcloud Control Panel](/links/manager).<br>
 From the Datacenters dashboard, access your datacenter then click on the `NSX Edge Nodes`{.action} tab.
 
 1. **Order new NSX Edges**:

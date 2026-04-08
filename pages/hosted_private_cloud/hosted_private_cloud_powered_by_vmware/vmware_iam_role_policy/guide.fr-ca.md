@@ -22,10 +22,16 @@ updated: 2024-05-23
 
 ### Créer ou modifier une politique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de l'espace client puis cliquez sur vos initiales pour accéder à la rubrique `Mon compte`{.action}.<br>
-Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action}.
+<!-- CP-NAV-START:iam-policies -->
+---
 
-![IAM OVHCLOUD](images/iam_role_policy_9.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Politiques IAM](/links/control-panel/iam-policies)
+- **Pour accéder à vos services :** `Identity, Security & Operations`{.action} > `Politiques`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
 
 Cliquez sur `Créer une politique`{.action}.<br>
 Pour modifier une politique, cliquer sur le bouton `...`{.action} à droite de la politique concernée puis sur `Modifier la politique`{.action}.

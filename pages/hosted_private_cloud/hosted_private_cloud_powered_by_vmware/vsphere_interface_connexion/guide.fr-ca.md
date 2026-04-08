@@ -19,6 +19,17 @@ Pour utiliser IAM, vous devez activer la fonctionnalité afin de déléguer la g
 - Guide 2 : [IAM pour VMware on OVHcloud - Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
 - Guide 3 : [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 Pour se connecter à la console web vSphere managée, vous avez besoin d'identifiants de connexion OVHcloud. Il peut s'agir d'un utilisateur vSphere (avec un utilisateur local), ou d'un rôle vSphere (avec IAM).
@@ -29,9 +40,7 @@ Pour se connecter à la console web vSphere managée, vous avez besoin d'identif
 
 Vous pouvez gérer vos identifiants de connexion depuis l'espace client OVHcloud de votre produit VMware managé on OVHcloud.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur l'onglet `Hosted Private Cloud`{.action}
-
-Cliquez sur la rubrique `Managed VMware vSphere `{.action}, sélectionnez votre infrastructure puis rendez-vous dans l'onglet `Utilisateurs`{.action}.
+Depuis votre service vSphere, rendez-vous dans l'onglet `Utilisateurs`{.action}.
 
 ![Connexion à l'interface vSphere HTML5](images/managed_vsphere_all.png){.thumbnail}
 

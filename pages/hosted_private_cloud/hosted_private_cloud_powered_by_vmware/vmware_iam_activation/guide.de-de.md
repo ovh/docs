@@ -13,6 +13,17 @@ updated: 2024-05-23
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - One or more Hosted Private Cloud - VMware on OVHcloud products linked to this account (Hosted Private Cloud powered by VMware, VMware Service Pack).
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 ### Enabling IAM
@@ -22,9 +33,7 @@ updated: 2024-05-23
 
 ### Via the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager) and click on the `Hosted Private Cloud`{.action} tab.
-
-Click on the `VMware`{.action} section, select your infrastructure, then go to the `Users`{.action} tab.
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then go to the `Users`{.action} tab.
 
 Under the `OVHcloud IAM`{.action} section, click `Enable OVHcloud IAM`{.action}.
 

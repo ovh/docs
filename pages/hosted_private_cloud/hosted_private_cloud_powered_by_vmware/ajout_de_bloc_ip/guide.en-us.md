@@ -1,34 +1,47 @@
 ---
 title: Adding an IP block
-excerpt: Find out how to order an IP block on your Private Cloud
+excerpt: Find out how to order an IP block for a Hosted Private Cloud project
 updated: 2022-04-06
 ---
 
 ## Objective
 
-An IP address block can be used to make your services available over the Internet.
+IP blocks can be used to make your services accessible online.
 
-**This guide explains how to order and migrate an IP block for your Private Cloud.**
+**This guide will explain how to order, add and migrate an IP block linked to your Hosted Private Cloud.**
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
-To order an additional IP block for your **Private Cloud**, log in to your OVHcloud Control Panel. In the `Hosted Private Cloud` section, click on `IP` in the left column and then click on `Order additional IPs`{.action}. Then select your **Private Cloud** from the drop-down menu before proceeding to the next step.
+### Order an IP block
 
-Several fields will be required to create your IP block:
+To order an IP block for your **Hosted Private Cloud**, click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then click on the `IP` section in the left-hand column and click `Order additional IP addresses`{.action}. Select your **Hosted Private Cloud** in the dropdown menu before moving on to the next step.
 
-- IP block size (from /28 to /24)
+You will need to fill in several fields in order to create your IP block.
+
+- Size of IP block (from /28 to /24)
 
 > [!primary]
 >
-> As a reminder, here is an array of IP addresses in a block, and the number of IPs that can be used:
-> 
+> As a reminder, here is a table listing the number of IPs present in a block, and the number of usable IPs.
+>
 
-|Block size|IPs in block|IPs usable in OVHcloud|
+|Block size|IPs in the block|IPs usable with OVHcloud|
 |:---:|:---:|:---:|
 |28|16|11|
 |27|32|27|
@@ -38,44 +51,44 @@ Several fields will be required to create your IP block:
 
 > [!primary]
 >
-> Please consult our guide ["Using the OVHcloud Network plugin"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/plugin_ovh_network) to find out which IP addresses are reserved in a block as well as their use.
+> Please feel free to refer to our guide on the [OVHcloud Network plugin](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/plugin_ovh_network) to find out which IPs are reserved for your block, as well as how they are used.
 >
 
-- Country of IP block, important in some cases for the SEO of your services (an English-language website will have a better SEO in England if the IP is also English)
-- Network name (information visible in the Whois of an IP block).
-- Number of clients estimated (how many end clients will be hosted on these IPs).
-- Network description (information visible in the Whois of an IP block).
-- Use (information about the general usage (Web, SSL, Cloud...)).
+- The country an IP block is hosted in is important in some cases, for your services' SEO ranking (a website based in France will have a higher SEO ranking in France if the IP address is French, too).
+- Network name (information visible in the WHOIS profile for the IP block).
+- Estimated number of customers (how many end-users or customers will be hosted on these IPs).
+- Network description (information visible in the WHOIS profile for the IP block).
+- Usage (information on the usage (web, SSL, cloud, etc.)).
 
 > [!success]
 >
 > There is a one time setup fee for an IP block that will be due before delivery.
 >
 
-After confirming the last step, you can view the order form for your IP block. If the order is in accordance with your wishes, you only have to pay it with the payment methods offered at the bottom of the page in order for it to be delivered.
+Once you have confirmed the final step, you will receive the purchase order for your IP block. If everything looks correct in the purchase order, you will simply need to pay the total using one of the payment methods listed at the bottom of the page, and your order will then be delivered.
 
-### Migrate an IP block between two Hosted Private Cloud services
+### Migrate an IP block between two Hosted Private Cloud solutions
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Migrating an IP block requires manually moving blocks through the OVHcloud APIv6.
+To migrate an IP block, you will need to move the blocks manually via the OVHcloud APIv6.
 
 Use the following API call:
 
 > [!api]
 >
 > @api {v1} /ip POST /ip/{ip}/move
-> 
+>
 
-The fields must be completed as follows:
+You will need to fill in the fields as follows:
 
-- ip: IP block with /mask
-- nexthop "newPrimaryIp" (case sensitive)
-- to: Destination Hosted Private Cloud in the form pcc-XXX-XXX-XXX-XXX
+- ip: IP block with the /mask
+- nexthop "newPrimaryIp" (case-sensitive)
+- to: Target Hosted Private Cloud in the following form: pcc-XXX-XXX-XXX-XXX
 
 ![nexthop field](images/move-api.png){.thumbnail}
 
-The result will be in this form:
+The result should look like this:
 
 ![nexthop field](images/api-result.png){.thumbnail}
 
@@ -84,16 +97,16 @@ If you need to detach the IP block, you can use the following API call to move t
 > [!api]
 >
 > @api {v1} /ip POST /ip/{ip}/park
-> 
+>
 
 > [!warning]
 >
-> This call cuts the network on VMs that use the IPs in question.
+> This call cuts the network on the VMs that use the IPs concerned.
 >
 
-You can track the IP block movement from your [OVHcloud Control Panel](/links/manager) in the `Hosted Private Cloud`{.action} part and then `Private Cloud`{.action}. Click on your Hosted Private Cloud service and then click the `Operations`{.action} tab.
+You can track the movement of your IP block by clicking [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then clicking on your Hosted Private Cloud service and on the `Operations`{.action} tab.
 
-The operation name is removeIpRipeBlock.
+The operation reference is "removeIpRipeBlock".
 
 ![operations manager](images/operations.png){.thumbnail}
 

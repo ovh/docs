@@ -21,13 +21,22 @@ The purpose of this guide is to provide step-by-step instructions to connect mul
 > Appropriate administrative access to Zerto Manager on both Managed vSphere and on-premises sites.
 >
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 ### 1 - Access Zerto Manager on Managed vSphere
 
-- Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Hosted Private Cloud`{.action} section.
-- Click the `Managed VMware vSphere`{.action} menu and select the infrastructure concerned.
-- Navigate to the `Datacenters`{.action} tab and select the datacenter.
+- Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then navigate to the `Datacenters`{.action} tab and select the datacenter.
 - Navigate to the `Zerto`{.action} tab.
 
 ![zerto manager tab](images/zerto_manager_tab.png){.thumbnail}

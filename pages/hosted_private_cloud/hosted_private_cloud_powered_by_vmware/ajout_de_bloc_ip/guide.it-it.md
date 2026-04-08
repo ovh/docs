@@ -13,7 +13,18 @@ Un blocco IP Un blocco IP può essere utilizzato per rendere i tuoi servizi acce
 ## Prerequisiti
 
 - Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
-- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](/links/manager)
+- Avere un utente attivo con accesso a vSphere.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Percorso di navigazione:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleziona il tuo vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedura
 

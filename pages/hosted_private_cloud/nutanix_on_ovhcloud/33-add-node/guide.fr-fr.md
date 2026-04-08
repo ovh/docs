@@ -16,8 +16,19 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 ## Prérequis
 
 - Un cluster Nutanix hébergé dans votre compte OVHcloud
-- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l’[API OVHcloud](/links/api)
 - Être connecté à l’interface Prism Central
+- Accès à l’[API OVHcloud](/links/api) (facultatif).
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Sélectionnez votre cluster
+
+---
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## Informations techniques
 
@@ -30,19 +41,15 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 
 #### Ajouter un nœud
 
-1. Depuis l'[espace client OVHcloud](/links/manager), accédez à votre cluster Nutanix via les menus `Hosted Private Cloud`{.action} et `Nutanix`{.action}.
-
-    ![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
-
-2. Dans l’onglet **Informations générales**, la section **Nombre de nœuds** est visible. Cliquez sur `Gérer mes nœuds`{.action}.
+1. Dans l’onglet **Informations générales**, la section **Nombre de nœuds** est visible. Cliquez sur `Gérer mes nœuds`{.action}.
 
     ![Nombre de nœuds](images/manage-nodes.png){.thumbnail}
 
-3. Dans l’onglet **Noeuds**, sélectionnez `Ajouter des nœuds`{.action}.
+2. Dans l’onglet **Noeuds**, sélectionnez `Ajouter des nœuds`{.action}.
 
     ![Ajouter des nœuds](images/adding-nodes-03.png){.thumbnail}
 
-4. Vérifiez la configuration et le tarif dans la fenêtre contextuelle, puis cliquez sur `Commander`{.action} pour lancer l’ajout.
+3. Vérifiez la configuration et le tarif dans la fenêtre contextuelle, puis cliquez sur `Commander`{.action} pour lancer l’ajout.
 
     ![Fenêtre commande](images/adding-nodes-04.png){.thumbnail}
 
@@ -89,15 +96,11 @@ Consultez la documentation suivante :
 
 #### Éteindre (power down) un nœud
 
-1. Depuis l'[espace client OVHcloud](/links/manager), accédez à votre cluster Nutanix via les menus `Hosted Private Cloud`{.action} et `Nutanix`{.action}.
-
-    ![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
-
-2. Dans l’onglet **General information**, vous pouvez voir le nombre de nœuds. Cliquez sur `Gérer mes nœuds`{.action}.
+1. Dans l’onglet **Informations générales**, vous pouvez voir le nombre de nœuds. Cliquez sur `Gérer mes nœuds`{.action}.
 
     ![Manage my nodes](images/manage-nodes.png){.thumbnail}
 
-3. Deux options s’offrent à vous :
+2. Deux options s’offrent à vous :
 
 > [!tabs]
 > Espace client OVHcloud

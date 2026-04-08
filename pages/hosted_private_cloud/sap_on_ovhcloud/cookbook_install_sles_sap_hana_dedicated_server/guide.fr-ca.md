@@ -10,14 +10,24 @@ Ce guide fournit des instructions pour le déploiement de l'image SUSE Linux Ent
 
 ## Prérequis
 
-- Un accès à l’[espace client OVHcloud](/links/manager)
 - Un [serveur dédié HGR-SAP Bare Metal](https://www.ovhcloud.com/fr-ca/lp/sap/)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
 ### Déploiement de l'image SLES 15 for SAP
 
-Depuis l'espace client OVHcloud, vous pouvez lancer le déploiement de l'image SLES 15 for SAP que OVHcloud met à disposition en cliquant sur le bouton `Installer`{.action}.
+Cliquez sur le bouton `Installer`{.action} pour lancer le déploiement de l'image SLES 15 for SAP mise à disposition par OVHcloud.
 
 ![install-manager](images/install-manager.png){.thumbnail}
 

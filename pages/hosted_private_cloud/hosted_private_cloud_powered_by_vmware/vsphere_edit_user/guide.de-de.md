@@ -13,15 +13,21 @@ Ein Name, Vorname, eine Telefonnummer und E-Mail-Adresse können mit dem vSphere
 ## Voraussetzungen
 
 - Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigationspfad:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wählen Sie Ihren vSphere Dienst aus
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie dann den Bereich `Hosted Private Cloud`. Klicken Sie im linken Menü auf `Private Cloud` und wählen Sie die betreffende Infrastruktur aus.
-
-![vSphere-Nutzer](images/addMailOnUser01.png){.thumbnail}
-
-Gehen Sie auf den Reiter `Benutzer`{.action}, klicken Sie rechts vom jeweiligen Nutzer auf `...` und dann auf `Bearbeiten`{.action}.
+Gehen Sie auf den Reiter `Benutzer`{.action}, klicken Sie rechts vom jeweiligen Nutzer auf `...`{.action} und dann auf `Bearbeiten`{.action}.
 
 ![vSphere-Nutzer](images/addMailOnUser02.png){.thumbnail}
 

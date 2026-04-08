@@ -26,32 +26,23 @@ details[open]>summary::before {
 ## Requirements
 
 - You have a [Hosted Private Cloud](/links/hosted-private-cloud/vmware) service with the option **"Network Security Virtualization"** or **"Software-Defined Datacenter"**.
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You are the administrator on your VMware on OVHcloud infrastructure, with the login credentials to create NSX-T user access.
 - You have followed the steps in the guide: [Getting started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
-### Step 1 - Access your Hosted Private Cloud
-
-#### In the OVHcloud Control Panel
-
-<details>
-
-<summary>How to access your VMware On OVHcloud Hosted Private Cloud service</summary>
-
-Log in to the [OVHcloud Control Panel](/links/manager).
-<br><br>
-Click on <code class="action">Hosted Private Cloud</code>.
-<br><br>
-- OVHcloud direct link: https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Replace PCC-XXX-XXX-XXX-XXX with the name of your PCC service.
-
-<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_7.png" loading="lazy"></p>
-
-</details>
-
-### Step 2 - Enable NSX-T
+### Step 1 - Enable NSX-T
 
 #### In the OVHcloud Control Panel
 
@@ -59,9 +50,7 @@ Click on <code class="action">Hosted Private Cloud</code>.
 
 <summary>How to enable the NSX-T web console for a user</summary>
 
-On the previously opened page, edit the user with whom you want to access the NSX-T web interface.
-<br><br>
-Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-X</code> > <code class="action">Users</code> > <code class="action">Edit</code>. Activate the button <code class="action">NSX Interface</code>.
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then select your service and go to `Users`{.action} > `Edit`{.action}. Activate the button `NSX Interface`{.action}.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_3.png" loading="lazy"></p>
 <p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_13.png" loading="lazy"></p>
@@ -69,14 +58,14 @@ Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX
 
 </details>
 
-### Step 3 - Add NSX-T permissions
+### Step 2 - Add NSX-T permissions
 
 #### In the OVHcloud Control Panel
 
 <details>
 <summary>How to grant permissions to a user</summary>
 
-Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Users</code> > <code class="action">Edit</code>.
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then select your service and go to `Users`{.action} > `Edit`{.action}.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_7.png" loading="lazy"></p>
 
