@@ -387,7 +387,7 @@ sudo dnf install iproute
 >> sudo netplan apply
 >> ```
 >> 
-> **Fedora, AlmaLinux et Rocky Linux (10/11)**
+> **Fedora, AlmaLinux et Rocky Linux (10)**
 >>
 >> Vérifiez d'abord que votre interface vRack est à l'état `connected` ou `connecting`. Dans notre exemple, l'interface s'appelle `eno2`.
 >>
