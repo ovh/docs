@@ -1,6 +1,6 @@
 ---
 title: Anti-Hack information - Dedicated Server and VPS
-excerpt: Find out what information will be visible and provided when OVHcloud's internal Anti-DDoS protection is triggered
+excerpt: Find out what information will be visible and provided when OVHcloud's internal Anti-Hack protection is triggered
 updated: 2026-XX-XX
 ---
 
@@ -54,7 +54,7 @@ situation does not become critical.
 
 ### **VPS**
 
-When Anti-DDoS protection is triggered on your VPS, your VPS will be placed in rescue mode.
+When Anti-Hack protection is triggered on your VPS, your VPS will be placed in rescue mode.
 
 ![antihack information VPS](images/hacked-vps.png){.thumbnail}
 

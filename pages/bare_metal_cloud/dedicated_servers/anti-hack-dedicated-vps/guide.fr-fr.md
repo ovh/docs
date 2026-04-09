@@ -1,10 +1,10 @@
 ---
-title: Informations anti-hack - Serveur dédié et VPS
-excerpt: Découvrez les informations visibles et fournies lorsque la protection Anti-DDoS interne d'OVHcloud est déclenchée
+title: Informations Anti-Hack - Serveur dédié et VPS
+excerpt: Découvrez les informations visibles et fournies lorsque la protection Anti-Hack interne d'OVHcloud est déclenchée
 updated: 2026-XX-XX
 ---
 
-**Découvrez ce qui se passe lorsque la protection Anti-DDoS d'OVHcloud s'active sur votre Serveur dédié ou votre VPS.**
+**Découvrez ce qui se passe lorsque la protection Anti-Hack d'OVHcloud s'active sur votre Serveur dédié ou votre VPS.**
 
 ## Prérequis
 
@@ -15,7 +15,7 @@ updated: 2026-XX-XX
 
 ### **Serveur dédié**
 
-Lorsque la protection Anti-DDoS est déclenchée sur votre Serveur dédié, un message s'affiche dans votre [espace client OVHcloud](/links/manager) : « *Votre serveur a été compromis. Veuillez contacter notre équipe d'assistance pour obtenir des instructions sur la marche à suivre.* »
+Lorsque la protection Anti-Hack est déclenchée sur votre Serveur dédié, un message s'affiche dans votre [espace client OVHcloud](/links/manager) : « *Votre serveur a été compromis. Veuillez contacter notre équipe d'assistance pour obtenir des instructions sur la marche à suivre.* »
 
 Selon la criticité de la protection Anti-Hack déclenchée par OVHcloud, les actions suivantes seront autorisées/requises afin de rétablir le service complet sur le serveur.
 
@@ -54,7 +54,7 @@ situation ne devienne pas critique.
 
 ### **VPS**
 
-Lorsque la protection Anti-DDoS est déclenchée sur votre VPS, celui-ci est placé en mode rescue.
+Lorsque la protection Anti-Hack est déclenchée sur votre VPS, celui-ci est placé en mode rescue.
 
 ![informations antihack VPS](images/hacked-vps.png){.thumbnail}
 
