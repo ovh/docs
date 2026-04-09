@@ -41,6 +41,8 @@ Ce guide a pour objectif de fournir une méthode claire et détaillée pour la c
 - Être familier de l'utilisation de [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) si vous souhaitez l'utiliser.
 - Connaitre les principes d'un [Savings Plan](/links/public-cloud/savings-plan)
 
+## En pratique
+
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
@@ -51,8 +53,6 @@ Ce guide a pour objectif de fournir une méthode claire et détaillée pour la c
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
-
-## En pratique
 
 Cliquez sur `Savings Plans`{.action} dans la barre de navigation de gauche sous **Paramètres**.
 
