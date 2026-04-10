@@ -1,20 +1,20 @@
 ---
-title: 'Migrar una dirección de correo MX Plan a una cuenta Zimbra OVHcloud'
-excerpt: 'Descubra cómo migrar una cuenta MX Plan a una cuenta de OVHcloud'
-updated: 2025-05-22
+title: 'Migrar una dirección de correo electrónico MX Plan a una cuenta Zimbra de OVHcloud'
+excerpt: 'Descubra cómo migrar una dirección de correo electrónico MX Plan a una cuenta Zimbra de OVHcloud'
+updated: 2026-04-10
 ---
 
 ## Objetivo
 
-En el marco de la transición progresiva de las cuentas MX Plan a Zimbra, es posible adelantarse a la migración y realizar usted mismo la transferencia de cuentas de correo antes de la puesta en marcha de una herramienta automatizada por OVHcloud. Esta guía explica cómo realizar la migración manualmente.
+Si desea cambiar su servicio de correo electrónico MX Plan por un servicio [Zimbra de OVHcloud](/links/web/zimbra), puede utilizar la herramienta [**O**VH **M**ail **M**igrator](/links/web/omm) para realizar su migración.
 
-**Descubra cómo migrar una cuenta MX Plan a una cuenta Zimbra OVHcloud.**
+**Descubra cómo migrar una dirección de correo electrónico MX Plan a una cuenta Zimbra de OVHcloud.**
 
 ## Requisitos
 
-- Disponer de una dirección de correo electrónico MX Plan (a través de un MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)).
-- Disponer de una cuenta de correo electrónico de Zimbra OVHcloud.
-- **No haber configurado una redirección en la dirección de correo electrónico MX Plan que quiera migrar**.
+- Disponer de una dirección de correo electrónico MX Plan (mediante el servicio MX Plan o incluida en un servicio de [alojamiento web de OVHcloud](/links/web/hosting)).
+- Disponer de una cuenta de correo electrónico Zimbra de OVHcloud.
+- **No haber configurado ninguna redirección en la dirección de correo electrónico MX Plan que desea migrar**.
 
 <!-- CP-NAV-START:web-zimbra -->
 ---
@@ -22,7 +22,7 @@ En el marco de la transición progresiva de las cuentas MX Plan a Zimbra, es pos
 ### Acceso al área de cliente de OVHcloud
 
 - **Enlace directo:** [Zimbra](/links/control-panel/web-zimbra)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+- **Para acceder a sus servicios:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
 
 ---
 <!-- CP-NAV-END:web-zimbra -->
@@ -31,128 +31,133 @@ En el marco de la transición progresiva de las cuentas MX Plan a Zimbra, es pos
 
 > [!warning]
 >
-> Si su cuenta de correo electrónico gestiona información sensible o si experimenta problemas durante la migración, le recomendamos que espere a la instalación de la herramienta de automatización en el área de cliente de OVHcloud.
+> Si su cuenta de correo electrónico gestiona información sensible o si tiene problemas durante la migración, le recomendamos que espere a la implementación de la herramienta de automatización en el área de cliente de OVHcloud.
 
-La migración de una cuenta de correo MX Plan a una cuenta de correo de Zimbra se realiza en 2 fases. Para evitar cortar la recepción en la dirección de correo electrónico original, es necesario seguir el siguiente proceso:
+La migración de una cuenta de correo electrónico MX Plan a una cuenta de correo electrónico Zimbra se realiza en 2 etapas. Para evitar interrumpir la recepción de correos en la dirección original, es necesario seguir el proceso siguiente:
 
-1. **Transferir el contenido de la cuenta MX Plan a una cuenta Zimbra**
+1. **[Transferir el contenido de la cuenta MX Plan a una cuenta Zimbra](#step1)**
     - [1.1 - Creación de una dirección de correo electrónico Zimbra](#step11)
-    - [1.2 - Migración de los mensajes de correo con OVHcloud Mail Migrator](#step12)
-    - [1.3 - Backup de los mensajes de correo de la cuenta de origen (opcional)](#step13)
-2. **Eliminar la cuenta MX Plan original y reasignar su dirección a la cuenta Zimbra**
-    - [2.1 - Eliminación de la antigua dirección de correo MX Plan](#step21)
-    - [2.2 - Renombrar la dirección de correo electrónico Zimbra](#step22)
+    - [1.2 - Migración de los correos electrónicos con OVHcloud Mail Migrator](#step12)
+    - [1.3 - Copia de seguridad de los correos electrónicos de la cuenta de origen (opcional)](#step13)
+2. **[Eliminar la cuenta MX Plan original y reasignar su dirección a la cuenta Zimbra](#step2)**
+    - [2.1 - Eliminación de la antigua dirección de correo electrónico MX Plan](#step21)
+    - [2.2 - Cambio del nombre de la dirección de correo electrónico Zimbra](#step22)
 
-En el ejemplo siguiente migramos la dirección `contact@mydomain.ovh`. Para ello, vamos a crear la cuenta Zimbra con el nombre `contact2@mydomain.ovh`.
+En el ejemplo siguiente, migramos la dirección `contact@mydomain.ovh`. Para ello, vamos a crear la cuenta Zimbra con el nombre `contact2@mydomain.ovh`.
 
 ![zimbra](images/zimbra_migration_mxplan.png){.thumbnail}
 
-### 1.1 - Creación de una dirección de correo electrónico Zimbra <a name="step11"></a>
+### 1 - Transferir el contenido de la cuenta MX Plan a una cuenta Zimbra <a name="step1"></a>
+
+#### 1.1 - Creación de una dirección de correo electrónico Zimbra <a name="step11"></a>
 
 > [!primary]
 >
-> Si ya tiene una dirección de correo electrónico de Zimbra, pásese a la [Migración del correo con OVHcloud Mail Migrator](#step12).
+> Si ya dispone de una dirección de correo electrónico Zimbra, vaya a la sección [Migración de los correos electrónicos con OVHcloud Mail Migrator](#step12).
 
-En primer lugar, cree una dirección de correo electrónico con un nombre temporal. Por ejemplo, puede crear la dirección `contact2@mydomain.ovh` si necesita migrar la dirección `contact@mydomain.ovh`.
+En primer lugar, cree una dirección de correo electrónico con un nombre provisional. Por ejemplo, puede crear la dirección `contact2@mydomain.ovh` si necesita migrar la dirección `contact@mydomain.ovh`.
 
-Para crear una dirección de correo electrónico de Zimbra, consulte la sección "Crear una cuenta de correo electrónico" de nuestra guía [Primeros pasos con el servicio Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+Para crear una dirección de correo electrónico Zimbra, consulte la sección «Crear una cuenta de correo electrónico» de nuestra guía [Primeros pasos con el servicio Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
-### 1.2 - Migración del correo electrónico con OVHcloud Mail Migrator <a name="step12"></a>
+#### 1.2 - Migración de los correos electrónicos con OVHcloud Mail Migrator <a name="step12"></a>
 
-Utilice la herramienta de migración [**O**VH **M**ail **M**igrator](/links/web/omm) (**OMM**) para transferir el contenido de la cuenta MX Plan original a la nueva cuenta de destino Zimbra, siguiendo el ejemplo anterior.
+Utilice la herramienta de migración [**O**VH **M**ail **M**igrator](/links/web/omm) (**OMM**) para transferir el contenido de la cuenta MX Plan original a la nueva cuenta de destino Zimbra, tomando como ejemplo el esquema mostrado anteriormente.
 
-#### Paso 1: Acceder a OVHcloud Mail Migrator
+La migración con OMM se realiza en 3 pasos: crear un proyecto, configurar la migración y, a continuación, seguir su progreso. Haga clic en cada pestaña para ver las instrucciones correspondientes.
 
-Acceda a [OVHcloud Mail Migrator](/links/web/omm).
+> [!tabs]
+> **Paso 1**
+>>
+>> **Crear un proyecto de migración**
+>>
+>> Acceda a <https://omm.ovhcloud.com/> y haga clic en `Nueva migración`{.action}.
+>>
+>> ![zimbra](images/omm-01.png){.thumbnail}
+>>
+>> - **Dirección de correo electrónico de contacto del proyecto**: Introduzca una dirección de correo electrónico que recibirá las credenciales de acceso y las notificaciones de seguimiento. No utilice una dirección que vaya a migrarse en este proyecto.
+>> - **Contraseña del proyecto**: Defina una contraseña (mínimo 10 caracteres, con al menos 1 carácter especial, 1 número, 1 mayúscula y 1 minúscula).
+>>
+>> Haga clic en `Crear mi proyecto`{.action}. Recibirá un correo electrónico de confirmación con el identificador único del proyecto.
+>>
+> **Paso 2**
+>>
+>> **Conectarse al proyecto y crear la migración**
+>>
+>> Desde la página de inicio de [OMM](/links/web/omm), haga clic en `Seguir una migración`{.action}, introduzca el `Identificador del proyecto` y la `Contraseña del proyecto`, y haga clic en `Conectarse al proyecto`{.action}.
+>>
+>> A continuación, haga clic en `Nueva migración`{.action} para configurar su migración:
+>>
+>> ![zimbra](images/omm-create-migration.png){.thumbnail}
+>>
+>> - **Cuenta de origen**:
+>>     - **Tipo de cuenta**: Seleccione `OVHcloud` y, a continuación, elija `MX Plan` o `Autodetección`. Haga clic en `Conectarse`{.action} para identificarse con su cuenta de OVHcloud y seleccionar automáticamente el servicio y la dirección que desea migrar (p. ej.: `john.smith@mydomain.ovh`). Introduzca a continuación la contraseña de esta cuenta de correo electrónico.
+>> - **Cuenta de destino**:
+>>     - **Tipo de cuenta**: Seleccione `OVHcloud` y, a continuación, elija `Zimbra`. Haga clic en `Conectarse`{.action} para identificarse con su cuenta de OVHcloud y seleccionar el servicio Zimbra y la dirección de destino (p. ej.: `zimbra2@mydomain.ovh`). Introduzca a continuación la contraseña de esta cuenta de correo electrónico.
+>> - **Datos a transferir**: Verifique los tipos de datos compatibles y desmarque los que no desee migrar.
+>> - **Inicio de la transferencia**: Elija `Inmediatamente` o marque `Más tarde` para programar la migración en una fecha y hora determinadas.
+>>
+>> Haga clic en `Migrar mi cuenta`{.action} para iniciar la migración.
+>>
+>> ![zimbra](images/omm-zimbra-01.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> **Seguir la migración**
+>>
+>> Hay dos métodos para acceder al seguimiento de su proyecto de migración:
+>>
+>> - Desde el correo electrónico recibido al crear el proyecto, mediante el enlace proporcionado (el identificador del proyecto aparece rellenado previamente).
+>> - Desde la página de inicio de [OMM](/links/web/omm): haga clic en `Seguir una migración`{.action}, introduzca su `Identificador del proyecto` y su `Contraseña del proyecto`, y haga clic en `Conectarse al proyecto`{.action}.
+>>
+>> Desde la página del proyecto, haga clic en el botón `⋮`{.action} a la derecha de la línea de su migración para ver las opciones:
+>>
+>> - `Ver más detalles`{.action}: Siga el progreso de la migración y consulte el informe una vez finalizada.
+>> - `Cancelar la migración`{.action}: Cancela la migración en curso. Los elementos ya migrados se conservan en la cuenta de destino.
+>> - `Eliminar mis datos de migración (RGPD)`{.action}: Activa la eliminación de todos los datos relacionados con la migración. La información sobre los eventos de la migración se conserva.
+>>
+>> ![zimbra](images/omm-migration-follow.png){.thumbnail}
 
-En la página [OMM](/links/web/omm), en la pestaña `Migration`{.action}, haga clic en `New migration`{.action}.
-
-![omm](images/omm-migration-create01.png){.thumbnail}
-
-#### Paso 2: Introducir la información de migración
-
-**Cuenta**
-
-- **Source Account**:
-    - **Server type**: Seleccione `Hosted by OVHcloud (Autodetect)` para completar automáticamente los datos, excepto la contraseña.
-    - **Server URL**: Este campo se rellena automáticamente.
-    - **Login**: Introduzca la dirección de correo electrónico completa de la cuenta que quiera migrar (por ejemplo: `contact@mydomain.ovh`).
-    - **Password**: Introduzca la contraseña de la dirección de correo electrónico correspondiente.
-- **Destination Account**:
-    - **Server type**: Seleccione `Zimbra` para el tipo de servidor de destino.
-    - **Server URL**: Introduzca la dirección del servidor Zimbra <https://zimbra1.mail.ovh.net>.
-    - **Login**: Introduzca la dirección de correo electrónico completa de la cuenta Zimbra de destino (por ejemplo: `contact2@mydomain.ovh`).
-    - **Password**: Introduzca la contraseña de la dirección de correo electrónico de la cuenta Zimbra de destino.
-
-**Opciones**
-
-Seleccione los elementos que desea migrar. Según el tipo de servidor elegido anteriormente, es posible que algunos contenidos no estén disponibles.
-
-**Información**
-
-Introduzca una dirección de correo electrónico para recibir notificaciones sobre el progreso de la migración. Active la casilla de verificación situada en la parte inferior de la página para aceptar los términos y condiciones de la OMM.
-
-![omm](images/omm-migration-create02.png){.thumbnail}
-
-#### Paso 3: Iniciar la migración
-
-Compruebe que toda la información es correcta y haga clic en `Start migration`{.action}. En la página que aparece, se explica cómo realizar el seguimiento de la migración. Guarde el `Migration ID` mostrado y espere a que termine el proceso. El tiempo de espera varía según el número de elementos que se van a migrar.
-
-#### Paso 4: Seguir la migración
-
-Existen dos formas de realizar el seguimiento de una migración:
-
-- Desde el mensaje de correo electrónico que le notifica el progreso de la migración.
-- Desde la página [OMM](/links/web/omm): En la pestaña `Migration`{.action}, haga clic en `Track/Synchronize`{.action}. Introduzca el ID de migración (`Migration ID`{.action}) y la cuenta original (`Source account`{.action}) correspondiente.
-
-![omm](images/omm-migration-track.png){.thumbnail}
-
-Se abrirá una página en la que podrá consultar el progreso de la migración. Aparecerá un mensaje indicándole si el proceso va a comenzar, está en curso o ha finalizado. En función del estado, puede realizar diversas acciones:
-
-- `Stop the process`{.action}: Permite cancelar la migración. Los elementos ya migrados se conservarán en la cuenta de destino.
-- `Delete migrated elements`{.action}: Permite eliminar los elementos ya migrados a la cuenta de destino. Es posible borrar elementos de un punto de sincronización específico.
-- `Synchronize`{.action}: Permite recuperar nuevos elementos no migrados durante una sincronización anterior entre la cuenta de origen y la de destino. Esta acción migra los elementos que faltan en la cuenta de destino con respecto a la cuenta de origen.
-
-Para realizar una migración por archivo o múltiple, consulte las secciones "Migración por archivo" y "Realizar y seguir una migración múltiple (modo proyecto)" de nuestra guía "[Migrar cuentas de correo electrónico mediante OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
+Para más información sobre el uso de OMM, consulte nuestra guía «[Migrar cuentas de correo electrónico mediante OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)».
 
 > [!primary]
 >
-> El tiempo de migración varía en función del volumen de datos y puede oscilar entre unos minutos y varias horas. Una vez completada la migración, compruebe que todos los mensajes de correo electrónico se hayan migrado correctamente.
+> El tiempo de migración varía en función del volumen de datos y puede oscilar entre unos minutos y varias horas. Una vez finalizada la migración, compruebe que todos los correos electrónicos se han migrado correctamente.
 
-### 1.3 - Copia de seguridad del correo electrónico de la cuenta de origen (opcional) <a name="step13"></a>
-
-> [!warning]
->
-> Antes de eliminar su cuenta MX Plan, **realice una copia de seguridad de sus mensajes de correo** para evitar cualquier pérdida de datos.
-
-Utilice las opciones de exportación de su cliente de correo. En nuestra guía "[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) " encontrará los detalles sobre la exportación manual de una dirección de correo electrónico desde un cliente de correo.
-
-### 2.1 - Eliminación de la antigua dirección de correo MX Plan <a name="step21"></a>
-
-Para eliminar la dirección de correo electrónico MX Plan (p. ej.: `contact@mydomain.ovh`), siga nuestra guía "[Eliminar una cuenta de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/email_reset_account) ".
+#### 1.3 - Copia de seguridad de los correos electrónicos de la cuenta de origen (opcional) <a name="step13"></a>
 
 > [!warning]
 >
-> Si migra desde una cuenta MX Plan que utiliza el webmail Zimbra, espere 5 minutos a que la eliminación sea efectiva antes de renombrar la segunda cuenta de correo.
+> Antes de eliminar su cuenta MX Plan, **realice una copia de seguridad de sus correos electrónicos** para evitar cualquier pérdida de datos.
 
-### 2.2 - Cambiar el nombre de la dirección de correo electrónico de Zimbra <a name="step22"></a>
+Utilice las opciones de exportación de su cliente de correo electrónico. En nuestra guía «[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)», encontrará los detalles de exportación manual de una dirección de correo electrónico desde un cliente de correo.
 
-En el área de cliente de OVHcloud, acceda a su servicio Zimbra Starter y cambie el nombre de la dirección de correo electrónico de su cuenta Zimbra por el de la cuenta de correo migrada (por ejemplo, `contact2@mydomain.ovh` en `contact@mydomain.ovh`).
+### 2 - Eliminar la cuenta MX Plan original y reasignar su dirección a la cuenta Zimbra <a name="step2"></a>
+
+#### 2.1 - Eliminación de la antigua dirección de correo electrónico MX Plan <a name="step21"></a>
+
+Para eliminar la dirección de correo electrónico MX Plan (p. ej.: `contact@mydomain.ovh`), siga nuestra guía «[Eliminar una cuenta de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/email_reset_account)».
+
+> [!warning]
+>
+> Si está migrando desde una cuenta MX Plan que utiliza el webmail Zimbra, espere 5 minutos para que la eliminación sea efectiva antes de cambiar el nombre de la segunda cuenta de correo electrónico.
+
+#### 2.2 - Cambio del nombre de la dirección de correo electrónico Zimbra <a name="step22"></a>
+
+En su área de cliente de OVHcloud, acceda a su servicio Zimbra y cambie el nombre de la dirección de correo electrónico Zimbra provisional por la dirección MX Plan migrada. Retomando el ejemplo del paso 2 del capítulo 1.2, la dirección provisional `zimbra2@mydomain.ovh` pasará a llamarse `john.smith@mydomain.ovh`, que es su dirección de correo electrónico habitual.
 
 ### Conclusión <a name="conclusion"></a>
 
-Su cuenta de correo electrónico ya está totalmente migrada a Zimbra Starter. Ya puede utilizar Zimbra para gestionar su correo electrónico.
+Su cuenta de correo electrónico ya ha sido migrada a Zimbra. Para finalizar la configuración, consulte las guías siguientes:
+
+- [Primeros pasos con el servicio Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
+- [Configurar su dirección de correo electrónico Zimbra en un cliente de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
 
 ## Más información <a name="go-further"></a>
 
-[Primeros pasos con Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
+[FAQ sobre la solución Zimbra de OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra)
 
-[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-[FAQ sobre la solución Zimbra OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra)
-
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
-
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+Si desea disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [soluciones de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
