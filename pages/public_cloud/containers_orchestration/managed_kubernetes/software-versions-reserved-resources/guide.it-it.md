@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2025-11-25
+updated: 2026-04-10
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -10,11 +10,11 @@ We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) &
 
 Currently, we support the following Kubernetes releases:
 
-* `1.30`
 * `1.31`
 * `1.32`
 * `1.33`
 * `1.34`
+* `1.35`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](/pages/public_cloud/containers_orchestration/managed_kubernetes/upgrading-kubernetes-version) to receive official support for your cluster.
 
@@ -39,6 +39,7 @@ We use `containerd` as the default CRI
 * `1.32`: 2.1.4
 * `1.33`: 2.1.4
 * `1.34`: 2.1.4
+* `1.35`: 2.2.1
 
 ## CNI (Cluster Network Interface)
 
@@ -51,6 +52,7 @@ The versions installed depends on the Kubernetes version:
 * `1.32`: calico v3.29.1, flannel v0.24.4
 * `1.33`: calico v3.30.1, flannel v0.24.4
 * `1.34`: calico v3.30.1, flannel v0.24.4
+* `1.35`: calico v3.31.4, flannel v0.24.4
 
 ## CCM (Cloud-controller-manager)
 
@@ -61,6 +63,7 @@ Our cloud-controller-manager (CCM) is based on the OpenStack cloud-controller-ma
 * `1.32`: OVH Octavia CCM based on OpenstackCCM 1.29
 * `1.33`: OVH Octavia CCM based on OpenstackCCM 1.33
 * `1.34`: OVH Octavia CCM based on OpenstackCCM 1.33
+* `1.35`: OVH Octavia CCM based on OpenstackCCM 1.33
 
 ## CSI (Container Storage Interface)
 
@@ -73,7 +76,7 @@ The versions depend on the Kubernetes cluster version:
 * `1.32`: csi-plugin v1.29.0, csi-attacher v4.10.0, csi-provisioner v5.3.0, csi-snapshotter v6.3.3 snapshot-controller: v8.3.0, csi-resizer v1.14.0
 * `1.33`: csi-plugin v1.29.0, csi-attacher v4.10.0, csi-provisioner v5.3.0, csi-snapshotter v6.3.3 snapshot-controller: v8.3.0, csi-resizer v1.14.0
 * `1.34`: csi-plugin v1.29.0, csi-attacher v4.10.0, csi-provisioner v5.3.0, csi-snapshotter v6.3.3 snapshot-controller: v8.3.0, csi-resizer v1.14.0
-
+* `1.35`: csi-plugin v1.33.0, csi-attacher v4.10.0, csi-provisioner v5.3.0, csi-snapshotter v6.3.3 snapshot-controller: v8.3.0, csi-resizer v1.14.0
 
 ## Other components
 
@@ -84,6 +87,7 @@ The versions are:
 * `1.32`: coredns v1.12.4, metrics-server v0.8.0
 * `1.33`: coredns v1.12.4, metrics-server v0.8.0
 * `1.34`: coredns v1.12.4, metrics-server v0.8.0
+* `1.35`: coredns v1.14.1, metrics-server v0.8.1
 
 ## Enabled policies
 
