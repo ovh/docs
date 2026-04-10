@@ -33,6 +33,7 @@ The toolbar and shortcuts will give you access to the main features for sending 
 
 ### Step 1: Add contacts
 
+<!-- CP-STEPS-START:add-contacts -->
 #### Add a contact list
 
 A contact list can be imported via a .csv or .txt file.
@@ -52,17 +53,21 @@ To add an address book, click the `Contacts`{.action} tab, then `Address book`{.
 ![firstsms](images/firstsms04.png){.thumbnail}
 
 Refer to our guide on [Managing SMS address books](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms) to find out more.
+<!-- CP-STEPS-END:add-contacts -->
 
 ### Step 2: Create a sender
 
+<!-- CP-STEPS-START:create-sender -->
 By default, SMS messages from an OVHcloud account in France are sent from a short number, which enables recipients to reply back. You may want to create an alpha-numeric sender name via the `Senders`{.action} tab, so that your SMS messages are sent with your company or organisation’s name.
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
 To do this, you can refer to the [section on choosing an SMS sender, in our guide on sending SMS messages via the OVHcloud Control Panel.](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-choose-an-sms-sender)
+<!-- CP-STEPS-END:create-sender -->
 
 ### Step 3: Sending an SMS campaign
 
+<!-- CP-STEPS-START:send-sms-campaign -->
 In the `Message and Campaign`{.action} tab, you can access the sending options, the log of SMS messages sent and received, and scheduled SMS messages that are due to be sent in future.
 
 ![firstsms](images/firstsms02.png){.thumbnail}
@@ -84,6 +89,7 @@ Then compose your message, and choose between sending it immediately or sending 
 ![firstsms](images/firstsms08.png){.thumbnail}
 
 You just need to click the `Send`{.action} button to send or schedule your campaign.
+<!-- CP-STEPS-END:send-sms-campaign -->
 
 ## Go further
 

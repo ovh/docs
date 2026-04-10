@@ -29,13 +29,16 @@ Wiadomości SMS możesz wysyłać bezpośrednio z Panelu klienta. W tym przewodn
 
 Pole "Wyślij SMS" jest pierwszym dostępnym elementem na liście działań.
 
+<!-- CP-STEPS-START:send-sms-overview -->
 ![menedżer wysyłki smsów](images/sms-send-control-panel01E.png){.thumbnail}
+<!-- CP-STEPS-END:send-sms-overview -->
 
 ### Etap 1: Konfigurowanie nadawcy i odbiorcy
 
 > [!primary]
 > Aby uzyskać więcej informacji na temat tworzenia i korzystania z nadawcy, zapoznaj się z naszym przewodnikiem "[Wszystko, co musisz wiedzieć o nadawcach SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
 
+<!-- CP-STEPS-START:configure-sender-recipient -->
 Po przejściu na stronę wysyłania wiadomości SMS możesz uzupełnić różne parametry, aby jak najlepiej dostosować wysyłanie wiadomości do Twoich potrzeb.
 
 ![menedżer wysyłki smsów](images/sms-send-control-panel02E.png){.thumbnail}
@@ -50,6 +53,7 @@ Więcej informacji znajdziesz w [przewodniku dotyczącym list odbiorców wiadomo
 
 - Za pośrednictwem książki adresowej (3). Możesz ją utworzyć bezpośrednio w Panelu klienta lub zaimportować z pliku w formacie .csv lub .txt.
 Zapoznaj się z [przewodnikiem dotyczącym książek adresowych odbiorców wiadomości SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
+<!-- CP-STEPS-END:configure-sender-recipient -->
 
 ### Etap 2: Tworzenie wiadomości SMS
 
@@ -57,6 +61,7 @@ Zapoznaj się z [przewodnikiem dotyczącym książek adresowych odbiorców wiado
 >
 > Ze względów prawnych wiadomości SMS o charakterze informacji handlowej będą wysyłane **tylko w godz. 8:00-20:00, od poniedziałku do soboty**.
 
+<!-- CP-STEPS-START:compose-sms-message -->
 Po wybraniu nadawcy i wpisaniu odbiorców możesz przejść do tworzenia wiadomości.
 
 ![menedżer wysyłki smsów](images/sms-send-control-panel03E.png){.thumbnail}
@@ -74,14 +79,17 @@ Maksymalny rozmiar wiadomości SMS wynosi 160 znaków w kodowaniu 7-bitowym (nor
 Użycie znaków niewymienionych w tych tabelach spowoduje przejście na kodowanie Unicode i ograniczenie rozmiaru wiadomości SMS do maksymalnie 70 znaków.
 
 ![Lista znaków SMS](images/smsauthorizedcharacters.png){.thumbnail}
+<!-- CP-STEPS-END:compose-sms-message -->
 
 #### Zaawansowane opcje
 
+<!-- CP-STEPS-START:advanced-options -->
 ![menedżer wysyłki smsów](images/sms-send-control-panel-advanced.png){.thumbnail}
 
 W tej sekcji możesz przeprowadzić wysyłkę natychmiastową lub odroczoną (1).
 
 Proponujemy trzy formaty wysyłki (Standard / Flash / Sim) (2), ale ta funkcja jest przestarzała.
+<!-- CP-STEPS-END:advanced-options -->
 
 ## Sprawdź również
 

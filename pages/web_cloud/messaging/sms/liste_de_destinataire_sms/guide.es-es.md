@@ -78,6 +78,7 @@ El resultado debería ser como el siguiente:
 
 ### 2. Importar la lista en el área de cliente de OVHcloud
 
+<!-- CP-STEPS-START:import-recipient-list -->
 Haga clic en la pestaña `Contactos`{.action} y en `Crear una lista de contactos`{.action}.
 
 ![recipients](images/sms-recipientlist-3b.png){.thumbnail}
@@ -91,6 +92,7 @@ Para ello, haga clic en `Acciones`{.action} y seleccione `Añadir`{.action}.
 Asigne un nombre al archivo de destinatarios e importe el archivo local desde el área de cliente.
 
 ![importar lista de destinatarios](images/sms-recipientlist-6b.png){.thumbnail}
+<!-- CP-STEPS-END:import-recipient-list -->
 
 ### 3. Enviar un SMS a su lista de destinatarios
 

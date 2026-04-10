@@ -36,12 +36,15 @@ Lo Spazio Cliente OVHcloud permette di recuperare le credenziali SMPP, modificar
 
 ## Procedura
 
+<!-- CP-STEPS-START:account-selection -->
 Seleziona il tuo account SMPP. Con il suo nome si distingue dagli altri account SMS OVHcloud. infatti inizia da `smpp-` invece di `sms-` per gli account SMS classici.
 
 ![SMPP account](images/smpp-account.png){.thumbnail}
+<!-- CP-STEPS-END:account-selection -->
 
 ### Informazioni di identificazione
 
+<!-- CP-STEPS-START:credentials -->
 Nella sezione `Informazioni generali` sono disponibili le credenziali necessarie all'utilizzo del tuo servizio. Utilizza il pulsante a destra di ogni campo per copiarne il contenuto.
 
 ![SMPP account](images/smpp-account-ID.png){.thumbnail}
@@ -51,9 +54,11 @@ Se hai dimenticato la password SMPP, clicca su `Genera una nuova password`{.acti
 Clicca su `Inviare`{.action} per confermare l'operazione.
 
 ![SMPP account](images/smpp-account-password.png){.thumbnail}
+<!-- CP-STEPS-END:credentials -->
 
 ### Gestione degli accessi
 
+<!-- CP-STEPS-START:access-management -->
 Clicca sulla scheda `Opzioni`{.action} e poi su `Impostazioni SMPP`{.action}.
 
 ![SMPP account](images/smpp-acl0.png){.thumbnail}
@@ -63,6 +68,7 @@ La casella `IP autorizzati` elenca gli indirizzi IP dei client SMPP a cui è con
 Clicca su `Aggiungi un IP`{.action} per aggiungere indirizzi IP a questa lista.
 
 ![SMPP account](images/smpp-acl1.png){.thumbnail}
+<!-- CP-STEPS-END:access-management -->
 
 ### Gestione mittenti e crediti
 

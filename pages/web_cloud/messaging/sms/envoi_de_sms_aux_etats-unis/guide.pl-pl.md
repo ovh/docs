@@ -48,6 +48,7 @@ Możesz poprosić o zatwierdzenie kilku modeli wiadomości.
 
 #### 2.1 Za pośrednictwem Panelu klienta
 
+<!-- CP-STEPS-START:add-template-cp -->
 Kliknij kartę `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}.
 
 Następnie kliknij polecenie `Zarządzanie modelami`{.action}.
@@ -68,6 +69,8 @@ Pojawi się okienko pop-up zawierające pola do wypełnienia.
 | Aktywność    | Wybierz typ modelu:<br>\- Ostrzeżenie<br>\- Uwierzytelnianie<br>\- System przetwarzania transakcji |
 | Opis | Opis modelu                                                                                            |
 | Model      | Napisz model zawierający zmienną między #                                                                  |
+
+<!-- CP-STEPS-END:add-template-cp -->
 
 #### 2.2 Za pośrednictwem API
 

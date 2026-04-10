@@ -23,7 +23,9 @@ Ce guide vous explique comment créer et utiliser des expéditeurs pour l’envo
 ---
 <!-- CP-NAV-END:telecom-sms -->
 
+<!-- CP-STEPS-START:cp-overview-screenshot -->
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
+<!-- CP-STEPS-END:cp-overview-screenshot -->
 
 ## En pratique
 
@@ -49,6 +51,7 @@ Il permet de recevoir une réponse via l’onglet SMS reçus.
 
 #### Expéditeur alphanumérique
 
+<!-- CP-STEPS-START:alphanumeric-sender-management -->
 Vous pouvez personnaliser votre expéditeur. Il n'est alors plus possible de recevoir une réponse de la part du destinataire de votre SMS. Pour accéder à la gestion des expéditeurs SMS, sélectionnez l'onglet `Expéditeurs`{.action} (1) lorsque vous êtes sur le compte SMS concerné.
 
 ![envoi sms manager](images/sms-send-control-panel04E.png){.thumbnail}
@@ -73,6 +76,7 @@ La validation d'un expéditeur alphanumérique est effectuée en moyenne dans le
 - **Ajouter des expéditeurs à partir de données personnelles** : Vous pouvez demander un expéditeur se basant sur les coordonnées de votre compte OVHcloud. Une liste déroulante des expéditeurs disponibles s'affichera alors.
 
 - **Ajouter des expéditeurs à partir de vos noms de domaines OVHcloud** : Vous pouvez utiliser un nom de domaine disponible dans votre compte OVHcloud en tant qu'expéditeur. Une liste déroulante des expéditeurs disponibles s'affichera alors.
+<!-- CP-STEPS-END:alphanumeric-sender-management -->
 
 #### Numéro mobile virtuel
 
