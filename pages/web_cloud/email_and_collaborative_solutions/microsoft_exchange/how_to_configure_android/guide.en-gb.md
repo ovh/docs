@@ -49,11 +49,13 @@ Email accounts of the Exchange solution can be configured on various compatible 
 
 ### How to add your email account <a name="addaccount"></a>
 
+<!-- CP-STEPS-START:exchange-server-lookup -->
 > [!primary]
 >
 > In this guide, we use as the hostname: ex?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 >
 > Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:exchange-server-lookup -->
 
 On your device’s homepage, open the `Gmail`{.action} app.
 

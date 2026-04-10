@@ -50,6 +50,7 @@ Here is the context of the diagram above:
 - Access to the [OVHcloud API](/links/api)
 - The configuration details needed for the send connector received from your service provider
 
+<!-- CP-STEPS-START:web-exchange-nav -->
 <!-- CP-NAV-START:web-exchange -->
 ---
 
@@ -60,6 +61,7 @@ Here is the context of the diagram above:
 
 ---
 <!-- CP-NAV-END:web-exchange -->
+<!-- CP-STEPS-END:web-exchange-nav -->
 
 ## Instructions
 

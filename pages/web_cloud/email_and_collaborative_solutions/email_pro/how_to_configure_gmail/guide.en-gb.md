@@ -50,11 +50,13 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 
 ### Step 1: Add the Email Pro account on to the Gmail interface.
 
+<!-- CP-STEPS-START:email-pro-server-name-lookup -->
 > [!primary]
 >
 > In this guide, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 >
 > Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:email-pro-server-name-lookup -->
 
 First of all, go to the Gmail online interface via your web browser. Then log in to your account using your Gmail credentials.
 

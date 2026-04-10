@@ -43,6 +43,7 @@ In the window that appears, click on `Advanced settings`{.action}, then select `
 
 Enter the following information:
 
+<!-- CP-STEPS-START:exchange-server-name-lookup -->
 |Information|Description|
 |---|---|
 |Email address|Enter your full email address.|
@@ -52,6 +53,7 @@ Enter the following information:
 |Server|Enter the details of the server your Exchange service is hosted on. Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.|
 |This server requires a secure connection (SSL)|You must leave this box ticked.|
 |Account name|Enter a name that will distinguish this account from any other accounts added in your Mail application.|
+<!-- CP-STEPS-END:exchange-server-name-lookup -->
 
 Once you have entered this information, click `Sign in`{.action}. If the information is correct, Outlook will successfully connect to the account.
 

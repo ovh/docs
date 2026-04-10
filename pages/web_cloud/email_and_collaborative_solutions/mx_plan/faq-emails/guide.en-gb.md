@@ -120,10 +120,12 @@ Below is a summary table of key email features, sorted by technology and configu
 
 The email technology used for your MX Plan solution is characterized by its webmail interface. To identify it via the OVHcloud Control Panel:
 
+<!-- CP-STEPS-START:faq-identify-technology -->
 1. From the `General Information`{.action} tab, select by default.
 1. Note the technology used as **Webmail**.
 
 ![MX Plan](images/technology-email.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:faq-identify-technology -->
 
 ///
 
@@ -301,8 +303,11 @@ For security and confidentiality reasons, it is not possible to **retrieve** a p
 
 /// details | How do I limit the amount of SPAM I receive?
 
-To limit the receipt of SPAM, you can set up filters on your emails (called "Filters" on the MX Plan solution). The purpose of these emails is to delete or move them into the SPAM folder as soon as they are received.  
-To do this, click on the `Emails`{.action} tab, then in the `Filters` column, click on the "Account filter management" icon.
+To limit the receipt of SPAM, you can set up filters on your emails (called “Filters” on the MX Plan solution). The purpose of these emails is to delete or move them into the SPAM folder as soon as they are received.
+
+<!-- CP-STEPS-START:faq-spam-filters -->
+To do this, click on the `Emails`{.action} tab, then in the `Filters` column, click on the “Account filter management” icon.
+<!-- CP-STEPS-END:faq-spam-filters -->
 
 If the `Filters` column is not present in your Control Panel, you will need to create filters via mailbox rules in the [webmail](/links/web/email). You can refer to the following guide for more details: “[Inbox rules from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)”.
 

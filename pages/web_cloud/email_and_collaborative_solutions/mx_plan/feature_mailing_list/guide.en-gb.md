@@ -51,6 +51,7 @@ The sender sends an email to the mailing list. The moderator receives an email w
 
 ### Create a mailing list
 
+<!-- CP-STEPS-START:create-mailing-list -->
 > [!success]
 >
 > A mailing list behaves like an email address. You cannot change its name. If you no longer like the name of a mailing list, you will need to create a new one and delete the old one.
@@ -88,14 +89,20 @@ Fill in the form with the information listed in the table below:
 > - 250 if emails are not moderated
 >
 
+<!-- CP-STEPS-END:create-mailing-list -->
+
 ### Manage mailing list options
 
+<!-- CP-STEPS-START:manage-mailing-list-options -->
 To modify the mailing list options, click the `...`{.action} to the right-hand side of it. You can then update the options, delete the mailing list, or share the list of subscribers via email.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
+<!-- CP-STEPS-END:manage-mailing-list-options -->
+
 ### Manage subscribers
 
+<!-- CP-STEPS-START:manage-subscribers -->
 To manage subscribers to your mailing list, click on the silhouette next to the “Subscribers” column.
 
 ![emails](images/manage_mailing-lists_05.png){.thumbnail}
@@ -120,8 +127,11 @@ There are two ways of adding and removing subscribers:
 
 Click `Export subscribers in CSV format`{.action} to generate a CSV file containing all of your subscribers. This option is not available in our example, because no subscribers have been added.
 
+<!-- CP-STEPS-END:manage-subscribers -->
+
 ### Manage moderators
 
+<!-- CP-STEPS-START:manage-moderators -->
 To manage moderators on your mailing list, click on the silhouette in the “Moderators” column.
 
 ![emails](images/manage_mailing-lists_08.png){.thumbnail}
@@ -148,6 +158,7 @@ There are two ways of adding and removing moderators:
 >
 
 Depending on the number of subscribers you need to add, this may take some time to do.
+<!-- CP-STEPS-END:manage-moderators -->
 
 ### Subscribe to a mailing list
 

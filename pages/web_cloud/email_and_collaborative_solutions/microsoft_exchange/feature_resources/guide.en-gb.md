@@ -28,10 +28,13 @@ This Exchange collaborative feature enables the creation of email addresses dedi
 
 ## Instructions
 
+<!-- CP-STEPS-START:navigate-to-resources -->
 Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
+<!-- CP-STEPS-END:navigate-to-resources -->
 
 ### Step 1: Creating a resource
 
+<!-- CP-STEPS-START:create-resource -->
 ![panelresource](images/exchange-resources-step1.png){.thumbnail}
 
 Click on the button `Add a resource account`{.action} to create your first resource. In the new window, fill in the fields:
@@ -47,12 +50,15 @@ Click on the button `Add a resource account`{.action} to create your first resou
 |Resource type|Choose the resource type: "Equipment" or "Room".|
 
 Click `Next`{.action} to proceed to the summary, then confirm the task by clicking `Create`{.action}.
+<!-- CP-STEPS-END:create-resource -->
 
 ### Step 2: Utilising resources
 
+<!-- CP-STEPS-START:manage-resources -->
 Your resources can be managed from the table in the `Resources` tab. Click on `...`{.action} to modify or delete a resource. Additionally, the menu item `Manage delegations`{.action} will be displayed. With this option you will be able to delegate access in the same way as for an Exchange account. Please find the details in [this guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
 
 ![resourceview](images/exchange-resources-step3.png){.thumbnail}
+<!-- CP-STEPS-END:manage-resources -->
 
 ### Adding a resource calendar in OWA
 

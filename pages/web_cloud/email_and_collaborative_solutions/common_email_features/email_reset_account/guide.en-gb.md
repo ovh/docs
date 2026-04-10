@@ -60,6 +60,7 @@ You want to:
 
 <a name="whichmxplan"></a>
 
+<!-- CP-STEPS-START:whichmxplan-note -->
 > [!primary]
 >
 > **Identifying the email technology of your MX Plan solution.**
@@ -69,6 +70,7 @@ You want to:
 > - From the `General information`{.action} tab, note the technology used under the **Webmail** heading in the `Subscription`{.action} box.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:whichmxplan-note -->
 
 ## Instructions <a name="instructions"></a>
 
@@ -81,6 +83,7 @@ OVHcloud offers 4 email solutions, and the concept of account deletion differs d
 
 Select the tab corresponding to your email solution:
 
+<!-- CP-STEPS-START:delete-or-reset -->
 > [!tabs]
 > **MX Plan Roundcube**
 >>
@@ -125,6 +128,7 @@ Select the tab corresponding to your email solution:
 >>
 >> ![email](images/email-zimbra-reset.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:delete-or-reset -->
 
 ## Go further
 

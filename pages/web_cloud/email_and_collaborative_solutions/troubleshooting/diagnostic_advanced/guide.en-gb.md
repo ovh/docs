@@ -76,6 +76,7 @@ Start by checking that you are up to date with your [payments](/pages/account_an
 
 Follow these steps to ensure that your relevant services are up and running:
 
+<!-- CP-STEPS-START:active-services-check -->
 > [!tabs]
 > **Domain name**
 >>
@@ -100,6 +101,7 @@ Follow these steps to ensure that your relevant services are up and running:
 > **Zimbra**
 >>
 >> Go to the `Web Cloud`{.action} section, click `Zimbra Mail`{.action}. Click the `Email account`{.action} tab. Check the email account status in the `Status` column.
+<!-- CP-STEPS-END:active-services-check -->
 
 ///
 
@@ -151,6 +153,7 @@ Make sure you have the right password. If necessary, you can modify it. Also che
 
 Here is how to change the password for an email address:
 
+<!-- CP-STEPS-START:webmail-login -->
 > [!tabs]
 > **MX Plan email account**
 >>
@@ -167,6 +170,7 @@ Here is how to change the password for an email address:
 > **Zimbra**
 >>
 >> For a **Zimbra** solution, go to the `Web Cloud`{.action} section and click `Zimbra Mail`{.action}. In the `Email account`{.action} tab, click the `⋮`{.action} button, then click `Edit`{.action} to change the password.
+<!-- CP-STEPS-END:webmail-login -->
 
 ///
 

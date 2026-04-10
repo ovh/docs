@@ -47,6 +47,7 @@ To register as an indirect reseller, please refer to the Microsoft documentation
 
 ### Order an Office 365 Reseller service
 
+<!-- CP-STEPS-START:order-office365-reseller -->
 - *Optional*: You can define a custom **subdomain** when you create a new platform by ticking the box provided for this purpose (subject to the available names).
 - Enter your previously created MPN ID from Microsoft.
 - Fill in the contact information for the end customer, and they are requested to define the manager of the licence group (*Tenant*) you are going to create.
@@ -62,9 +63,11 @@ To register as an indirect reseller, please refer to the Microsoft documentation
 > [!warning]
 > For products that are under licence, it is not possible to transfer an Office 365 reseller *Tenant* from one OVHcloud NIC handle to another. It is necessary to cancel the subscription on the original OVHcloud customer account and subscribe to the same type of licence on the new OVHcloud customer account.
 >
+<!-- CP-STEPS-END:order-office365-reseller -->
 
 ### Manage your Office 365 Reseller service
 
+<!-- CP-STEPS-START:manage-office365-reseller-service -->
 Once the Office 365 service has been created, it will be available to manage in the OVHcloud Control Panel. Select the service concerned.
 
 The following information appears:
@@ -77,9 +80,11 @@ The following information appears:
 - You can also manage additional domain names from the Microsoft administration interface. See [the Microsoft documentation](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
+<!-- CP-STEPS-END:manage-office365-reseller-service -->
 
 ### Manage your subscriptions
 
+<!-- CP-STEPS-START:manage-subscriptions -->
 By managing your subscriptions, you can increase or cancel licences associated with your subscription group. A table allows you to view the details:
 
 - **ID**: Each type of licence ordered has a unique identifier (ID).
@@ -97,6 +102,7 @@ Use the <i class="icons-pen"></i> to change the total number of licences in the 
 >
 
 ![office365](images/sunrise_office365_CSP2_Subscribers.png){.thumbnail}
+<!-- CP-STEPS-END:manage-subscriptions -->
 
 ### Manage users
 

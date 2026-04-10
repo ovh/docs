@@ -68,6 +68,7 @@ You can access your OVHcloud email accounts using the password associated with t
 >
 > For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
+<!-- CP-STEPS-START:cp-password-identification -->
 <a name="whichmxplan"></a>
 
 > [!primary]
@@ -79,9 +80,11 @@ You can access your OVHcloud email accounts using the password associated with t
 > - In the `General information`{.action} tab, note the technology used under the **Webmail** comment in the `Subscription`{.action} or `Connection`{.action} box.
 >
 > ![mx plan](images/technology-email.png){.thumbnail .w-500}Webmail
+<!-- CP-STEPS-END:cp-password-identification -->
 
 Follow the instructions for your solution:
 
+<!-- CP-STEPS-START:cp-password-change-tabs -->
 > [!tabs]
 > **MX Plan email (legacy version)**
 >>
@@ -115,6 +118,7 @@ Follow the instructions for your solution:
 >> Click the `...`{.action} button, then `Modify`{.action}.<br><br>
 >>![email](images/email-password-zimbra01.png){.thumbnail}<br>
 >>
+<!-- CP-STEPS-END:cp-password-change-tabs -->
 
 ### Changing the password via webmail
 
