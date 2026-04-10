@@ -1,7 +1,7 @@
 ---
 title: 'Migrer une adresse e-mail MX Plan vers un compte Zimbra OVHcloud'
 excerpt: 'Découvrez comment migrer une adresse e-mail MX Plan vers un compte Zimbra OVHcloud'
-updated: 2026-04-07
+updated: 2026-04-10
 ---
 
 ## Objectif
@@ -143,7 +143,7 @@ Pour supprimer l'adresse e-mail MX Plan (exemple : `john.smith@mydomain.ovh`), s
 
 #### 2.2 - Renommer l'adresse e-mail Zimbra <a name="step22"></a>
 
-Dans votre espace client OVHcloud, accédez à votre service Zimbra et renommez l'adresse e-mail Zimbra provisoire avec le nom de l'adresse MX Plan migrée (en reprenant l'exemple plus haut : `zimbra2@mydomain.ovh` en `john.smith@mydomain.ovh`).
+Dans votre espace client OVHcloud, accédez à votre service Zimbra et renommez l'adresse e-mail Zimbra provisoire en l'adresse MX Plan migrée. Si on reprend l'exemple de l'étape 2 du chapitre 1.2 plus haut, l'adresse provisoire `zimbra2@mydomain.ovh` sera renommée en `john.smith@mydomain.ovh` qui est son adresse e-mail d'usage.
 
 ### Conclusion <a name="conclusion"></a>
 
