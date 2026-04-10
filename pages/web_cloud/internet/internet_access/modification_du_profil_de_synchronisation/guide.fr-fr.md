@@ -29,6 +29,7 @@ Votre espace client OVHcloud Télécom regroupe un certain nombre de fonctionnal
 
 ### Comment accéder au changement de profil
 
+<!-- CP-STEPS-START:comment-acceder-au-changement-de-profil -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
 
 Par défaut, l'onglet affiché est `Mon accès`.
@@ -44,6 +45,8 @@ Vous retrouverez, dans les `Caractéristiques`, la possibilité de modifier le p
 **Pour un accès VDSL :**
 
 ![profil vdsl](images/ProfilsVDSL.gif){.thumbnail}
+
+<!-- CP-STEPS-END:comment-acceder-au-changement-de-profil -->
 
 ### Explication des différents profils
 

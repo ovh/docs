@@ -41,12 +41,15 @@ Poursuivez la lecture de cette documentation selon la vérification que vous sou
 
 Cette opération se réalise en plusieurs étapes. L'objectif est de vérifier si votre connexion est saturée ou non.
 
+<!-- CP-STEPS-START:verifier-connexion-intro -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon accès`{.action}.
 
 ![xdslsaturation](images/monacces-2022.png){.thumbnail}
+<!-- CP-STEPS-END:verifier-connexion-intro -->
 
 #### Étape 1 : vérifier le débit alloué à ma connexion
 
+<!-- CP-STEPS-START:etape-1-debit-alloue -->
 Toujours positionné sur l'onglet `Mon accès`{.action}, descendez dans la page jusqu'à voir la section `Statistiques`{.action}. Visualisez alors le graphique intitulé « **Synchronisation** ». Ce dernier représente le débit descendant (dit « download » pour les données reçues) et montant (dit « upload » pour les données envoyées) alloués à votre connexion.
 
 **Notez que le débit réel que vous pouvez utiliser correspond environ à 80 % du débit qui s'affiche dans le graphique de synchronisation.** D'ailleurs, si ce débit est beaucoup plus bas que celui qui était indiqué lors du test d'éligibilité, reportez-vous aux instructions de la documentation « [Rétablir la synchronisation d’une connexion suite à une coupure](/pages/web_cloud/internet/internet_access/reestablish-synchronization) », car un élément pourrait perturber la qualité de votre connexion.
@@ -54,9 +57,11 @@ Toujours positionné sur l'onglet `Mon accès`{.action}, descendez dans la page 
 Prenez connaissance des informations qui s'affichent dans le graphique sur la période que vous souhaitez vérifier. Nous vous conseillons de noter ces informations. Par exemple, l'image ci-dessous montre un modem disposant actuellement d'un débit synchronisé stable de 14,7 Mbit/s en descendant et de 1,01 Mbit/s en montant.
 
 ![xdslsaturation](images/xdsl-capacity-step2.png){.thumbnail}
+<!-- CP-STEPS-END:etape-1-debit-alloue -->
 
 #### Étape 2 : vérifier le trafic utilisé sur votre connexion
 
+<!-- CP-STEPS-START:etape-2-trafic-connexion -->
 Vérifions à présent le trafic utilisé sur votre connexion. Toujours positionné sur l'onglet `Mon accès`{.action}, descendez dans la page jusqu'à voir la section `Statistiques`{.action}. Visualisez alors le graphique intitulé « **Trafic** ». Ce dernier représente l'utilisation du débit descendant (dit « download » pour les données reçues) et montant (dit « upload » pour les données envoyées) de votre connexion Internet.
 
 Prenez connaissance des informations qui s'affichent. Par exemple, l'image ci-dessous montre l'utilisation du débit descendant d'une connexion Internet sur plusieurs jours ; elle pointe notamment le fait que la consommation a atteint un pic de 13,4 Mbit/s de débit descendant utilisé. 
@@ -66,6 +71,7 @@ Prenez connaissance des informations qui s'affichent. Par exemple, l'image ci-de
 Cette autre image montre une autre situation, où l'utilisation du débit montant d'une connexion Internet plafonne pendant plusieurs heures à 0,92 Mbit/s.
 
 ![xdslsaturation](images/xdsl-capacity-step4.png){.thumbnail}
+<!-- CP-STEPS-END:etape-2-trafic-connexion -->
 
 #### Étape 3 : interpréter les résultats obtenus
 

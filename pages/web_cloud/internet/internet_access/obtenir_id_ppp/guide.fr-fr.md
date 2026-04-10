@@ -48,11 +48,13 @@ Dans un premier temps, il vous faut retrouver le *serviceName* de votre accès �
 
 ### Récupérer le serviceName de votre accès xDSL ou FTTH
 
+<!-- CP-STEPS-START:recuperer-servicename -->
 Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, suivez ces étapes :
 
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné. La référence interne est affichée dans le cadre `Accès Internet` à droite.
 
 ![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
+<!-- CP-STEPS-END:recuperer-servicename -->
 
 ### Générer l'envoi de nouveaux identifiants par e-mail
 
@@ -74,6 +76,7 @@ Dans un délai approximatif de deux à trois minutes, vous recevrez un e-mail, *
 
 #### Retrouver l'e-mail dans l'espace client OVHcloud
 
+<!-- CP-STEPS-START:retrouver-email-espace-client -->
 Si vous n'avez pas accès à l'adresse e-mail de contact du compte OVHcloud, vous pouvez consulter les e-mails de service depuis l'[espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx).
 
 Une fois connecté, cliquez sur votre nom puis sur `E-mails de service`{.action}.
@@ -87,6 +90,7 @@ L'objet de l'e-mail est le suivant :
 Voici un exemple d'e-mail contenant les identifiants PPPoE :
 
 ![email_recus](images/contenumailtyperesetppp-2022.png){.thumbnail}
+<!-- CP-STEPS-END:retrouver-email-espace-client -->
 
 ### Configurer votre routeur
 
