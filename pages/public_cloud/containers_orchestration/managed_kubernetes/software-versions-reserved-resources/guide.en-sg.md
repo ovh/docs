@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2026-04-09
+updated: 2026-04-10
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
