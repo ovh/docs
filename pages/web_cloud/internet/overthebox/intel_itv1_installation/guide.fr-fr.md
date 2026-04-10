@@ -146,6 +146,7 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 
 ##### Manuellement
 
+<!-- CP-STEPS-START:etape-3-enregistrement-manuel -->
 - Cliquez sur **"Register"**.
 
 ![overthebox](images/installationV1-step3-2.png){.thumbnail}
@@ -163,6 +164,7 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 ![overthebox](images/installationV1-step3-5.png){.thumbnail}
 
 - Validez.
+<!-- CP-STEPS-END:etape-3-enregistrement-manuel -->
 
 > [!success]
 >
