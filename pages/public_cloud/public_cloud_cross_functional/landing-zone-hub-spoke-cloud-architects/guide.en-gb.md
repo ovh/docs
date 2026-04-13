@@ -1,6 +1,6 @@
 ---
 title: "Hub and Spoke Landing Zone on OVHcloud Public Cloud"
-excerpt: "Deploy a production-ready hub and spoke landing zone on OVHcloud Public Cloud: OPNsense HA firewall, IAM, vRack, IaC, logging, and lifecycle management."
+excerpt: "Deploy a production-ready hub and spoke landing zone on OVHcloud Public Cloud: HA firewall, governance, private networking, IaC automation, logging, and lifecycle management."
 updated: 2026-04-07
 ---
 
@@ -8,7 +8,7 @@ updated: 2026-04-07
 
 This guide walks cloud architects through deploying a full hub and spoke landing zone on OVHcloud Public Cloud, using OpenTofu or Terraform as the infrastructure-as-code engine.
 
-It covers project layout, IAM governance, vRack network topology, HA OPNsense firewall, security hardening, centralised logging, billing control, and spoke lifecycle management.
+It covers project layout, governance, private network topology, network security, centralised logging, billing control, and spoke lifecycle management.
 
 **This guide explains how to build a production-ready hub and spoke landing zone on OVHcloud Public Cloud, from initial architecture decisions to ongoing operations.**
 
@@ -33,55 +33,19 @@ It covers project layout, IAM governance, vRack network topology, HA OPNsense fi
 
 ## Instructions
 
-### 1. What is a Landing Zone and Why Hub and Spoke?
+### 1. Landing Zone and Hub-Spoke Architecture
 
 A **landing zone** is a pre-configured cloud environment that provides the security, governance, networking, and identity foundations your workloads need before deployment. Without one, organisations face configuration drift, security gaps, and uncontrolled costs.
 
-For a full conceptual introduction, see [Understanding Landing Zones](/pages/public_cloud/public_cloud_cross_functional/whats_is_landing_zone).
+OVHcloud supports several landing zone topologies (flat, segmented, hub and spoke). For a full conceptual overview, see [Understanding Landing Zones](/pages/public_cloud/public_cloud_cross_functional/whats_is_landing_zone). This guide focuses on **hub and spoke**, which provides the strongest network isolation model.
 
-The **hub and spoke** topology extends this foundation with strong network isolation:
+In a hub and spoke topology, each component has a distinct role:
 
 | Component | Role |
 |-----------|------|
-| **Hub project** | Hosts the HA OPNsense firewall cluster, Internet gateway (OVH Gateway), and the centralised security perimeter |
-| **Spoke project** | Isolated per application, domain, or business unit; each carries its own OPNsense cluster and connects back to the hub via IPsec/VTI |
-| **vRack** | OVHcloud private backbone extending across projects, regions, and services |
-
-**Key benefits:**
-
-- **Blast radius containment**: a compromise in one spoke does not laterally reach others without traversing hub firewall rules.
-- **Centralised policy enforcement**: all Internet egress, inter-spoke traffic, and admin VPN terminate at the hub firewall.
-- **Sovereignty**: European operator, EU data localisation, self-operated firewall with no dependence on a US-managed firewall-as-a-service.
-- **Portability**: OPNsense is a well-known on-premises product; operational skills transfer directly.
-
-> [!primary]
-> Looking for a ready-made IaC implementation? The open-source [hub-and-spoke-public-cloud](https://github.com/ovhcloud-examples/hub-and-spoke-public-cloud) project provides a complete Terraform/OpenTofu reference that automates the architecture described in this guide.
-
----
-
-### 2. Architecture Overview
-
-#### 2.1 Project layout
-
-Each environment or workload gets its own Public Cloud project. A consistent naming convention enables IAM scoping, billing isolation, and automation:
-
-```
-{domain}_{application}_{environment}
-
-# Examples
-infra_hub_prod
-finance_invoicing_qa
-it_monitoring_prod
-marketing_analytics_dev
-```
-
-The **Day-1 deployment** provisions two projects:
-- `infra_hub_prod` — the hub project
-- `infra_spoke_qa` — an initial QA spoke for validating the topology
-
-Additional spokes are added on **Day 2**, each with its own isolated IaC state and resource stack.
-
-#### 2.2 Network topology
+| **Hub** | Central monitoring and control point. Hosts the HA firewall, Internet gateway, admin VPN, and shared services. Connected to all spokes. |
+| **Spoke** | Isolated environment for a workload, team, or business unit. Linked to the hub via an encrypted IPsec tunnel. No direct spoke-to-spoke connectivity without traversing the hub. |
+| **Private network** | OVHcloud backbone (vRack) that extends across projects and services, providing the transport layer for all hub–spoke communication. |
 
 ```
 Internet
@@ -89,47 +53,62 @@ Internet
     ▼
 [OVH Gateway — WAN]
     │
-[Hub project — vRack]
-    ├── OPNsense HA cluster (active/passive CARP)
+[Hub — private network]
+    ├── HA firewall cluster (active/passive CARP)
     │       ├── WAN interface (public IP via Floating IP + CARP VIP)
     │       ├── LAN interface (private hub subnet)
     │       └── HASYNC interface (HA state replication)
     │
-    ├── IPsec IKEv2 / VTI ──── [Spoke A project]
-    │                               └── OPNsense spoke cluster
-    │                                       ├── WAN (vRack VLAN)
+    ├── IPsec IKEv2 / VTI ──── [Spoke A]
+    │                               └── HA firewall cluster
+    │                                       ├── WAN (private network VLAN)
     │                                       ├── LAN (spoke workloads)
     │                                       └── HASYNC
-    └── IPsec IKEv2 / VTI ──── [Spoke B project]
-                                    └── OPNsense spoke cluster
+    └── IPsec IKEv2 / VTI ──── [Spoke B]
+                                    └── HA firewall cluster
 ```
 
-Each spoke gets a **unique set** of VLAN IDs and CIDRs. Plan these before Day 1:
+Each spoke requires a **unique set** of VLAN IDs and CIDRs. Plan the full address space before deploying any infrastructure:
 
 | Segment | VLAN range | CIDR example | Notes |
 |---------|-----------|--------------|-------|
-| Hub WAN | 100 | 192.168.100.0/24 | Shared with all spokes |
-| Spoke A WAN | 110 | 192.168.110.0/24 | Unique per spoke |
-| Spoke A LAN | 111 | 10.10.1.0/24 | Workloads |
-| Spoke A HASYNC | 112 | 10.10.255.0/30 | OPNsense replication |
-| Spoke A VTI | — | 10.255.0.0/30 | IPsec virtual tunnel |
+| Hub WAN | 100 | 10.1.0.0/24 | Shared with all spokes |
+| Hub LAN | 200 | 192.168.10.0/24 | Hub shared services |
+| Hub HASYNC | 199 | 10.0.254.0/30 | Firewall replication |
+| Spoke A WAN | 300 | 10.2.0.0/24 | Unique per spoke |
+| Spoke A LAN | 301 | 192.168.20.0/24 | Workloads |
+| Spoke A HASYNC | 302 | 10.0.255.0/30 | Firewall replication |
+| Spoke A VTI | — | 169.254.0.0/30 | IPsec virtual tunnel (link-local) |
 
 > [!warning]
-> VLAN IDs and CIDR blocks must be globally unique across all spokes in the same vRack. Overlapping ranges will break routing. Assign them in your network design document before deploying any infrastructure.
+> VLAN IDs and CIDR blocks must be globally unique across all spokes in the same private network. Overlapping ranges will break routing. Record them in your network design document before deploying any infrastructure.
 
-#### 2.3 Region choice
+> [!primary]
+> Looking for a ready-made IaC implementation? The open-source [hub-and-spoke-public-cloud](https://github.com/ovhcloud-examples/hub-and-spoke-public-cloud) project provides a complete OpenTofu/Terraform reference that automates the architecture described in this guide.
 
-OVHcloud Public Cloud is available across multiple European and international regions (GRA, SBG, WAW, BHS, etc.). Your region choice affects:
+### 2. Key Benefits and Regions
+
+#### 2.1 Why hub and spoke?
+
+| Benefit | Description |
+|---------|-------------|
+| **Security** | All north-south and east-west traffic traverses a self-managed, auditable HA firewall. No reliance on a managed firewall-as-a-service. |
+| **Policy enforcement** | Internet egress, inter-spoke routing, and admin VPN are centralised at the hub, giving a single control point for rules, logging, and inspection. |
+| **Blast radius containment** | A compromise in one spoke cannot reach others without traversing hub firewall rules. Incident scope is limited to the affected spoke. |
+| **Scale** | New workloads or teams get their own spoke with full isolation. The hub scales independently spoke additions have no impact on existing spokes. |
+| **Sovereignty** | European operator, EU data localisation, and a self-operated firewall remove dependence on US hyperscaler-managed security services. |
+
+#### 2.2 Available regions
+
+OVHcloud Public Cloud regions are available across Europe and internationally (FR, ALL, UK, IT, POL, US, CAN, Asia..)
+
+Your region choice affects:
 
 - **Data localisation**: for GDPR/NIS2 compliance, choose EU regions.
-- **Instance flavour availability**: B3-series (CPU-optimised) instances recommended for OPNsense are not available in all regions.
-- **Latency**: co-locate hub and spokes in the same region for low-latency IPsec.
+- **Instance flavour availability**: CPU-optimised instances recommended for the HA firewall (e.g. `b3-8`) are not available in all regions. Verify before provisioning.
+- **Latency**: co-locate hub and spokes in the same region for low-latency IPsec tunnels.
 
-<!-- DRAFT: To verify — confirm the recommended OPNsense instance flavour (e.g. b3-8) is available in the target region before publishing -->
-
----
-
-### 3. IAM — Identity and Access Management
+### 3. Governance and Access Management
 
 For a detailed walkthrough of OVHcloud IAM, see [Securing & Structuring Public Cloud Projects](/pages/public_cloud/public_cloud_cross_functional/securing_and_structuring_projects).
 
@@ -183,10 +162,10 @@ Generate API credentials using the [OVHcloud API token generator](/links/api). S
 
 Create at least two OpenStack users per project with separate roles:
 
-| Role | Purpose |
-|------|---------|
-| `admin` | Full control for IaC provisioning (networks, instances, security groups) |
-| `compute_operator` | Restricted runtime operations (start/stop instances, read logs) |
+| Role | OpenStack roles assigned | Purpose |
+|------|--------------------------|---------|
+| IaC operator | `compute_operator`, `network_operator`, `network_security_operator`, `image_operator`, `volume_operator`, `key-manager_operator` | Full provisioning access for IaC (networks, instances, security groups, volumes, images) |
+| Runtime operator | `compute_operator` only | Restricted runtime operations (start/stop instances, read logs) |
 
 This separation prevents runtime workloads from accidentally modifying network or security configurations.
 
@@ -203,19 +182,19 @@ Recommended patterns:
 
 ---
 
-### 4. Deploy the Architecture — Day 1
+### 4. Deploy the Architecture
 
 > [!primary]
-> The steps below describe what to provision and why, using technology-agnostic language. You can implement them via the OVHcloud Control Panel, OpenStack CLI, OVHcloud API, or any IaC tool. If you prefer a ready-made Terraform/OpenTofu reference implementation, see the [hub-and-spoke-public-cloud](https://github.com/ovhcloud-examples/hub-and-spoke-public-cloud) open-source project, which automates all the steps below.
+> The steps below describe what to provision and why, using technology-agnostic language. You can implement them via the OVHcloud Control Panel, OpenStack CLI, OVHcloud API, or any IaC tool. For a ready-made automated implementation using OpenTofu scripts, see the [hub-and-spoke-public-cloud](https://github.com/ovhcloud-examples/hub-and-spoke-public-cloud) open-source project — it provisions the full architecture described below with a single `tofu apply`.
 
 #### 4.1 Create Public Cloud projects
 
-Create at least two projects for Day 1:
+Create at least two projects to start:
 
 - **Hub project** — hosts the firewall cluster, Internet gateway, and shared services.
 - **Spoke-QA project** — an initial spoke for validating the topology before going to production.
 
-Follow the naming convention defined in section 2.1. Each project gets its own billing boundary, IAM scope, and OpenStack credential set.
+Use a consistent naming convention to enable governance scoping, billing isolation, and automation — for example: `{domain}_{application}_{environment}` (e.g. `infra_hub_prod`, `finance_invoicing_qa`). Each project gets its own billing boundary, access scope, and OpenStack credential set.
 
 > [!primary]
 > After creating a project, OVHcloud requires a short propagation window (typically 30–60 seconds) before a vRack can be successfully attached. Account for this in any automation.
@@ -228,22 +207,22 @@ A [vRack](/pages/network/vrack/vrack_main_doc) extends a private layer-2 backbon
 
 1. Create a vRack for the hub project and attach the hub project to it.
 2. Create a vRack for the spoke-QA project and attach spoke-QA to it.
-3. Before creating private networks, plan and record the full VLAN and CIDR table (see section 2.2). This is irreversible — changing VLANs later requires reprovisioning.
+3. Before creating private networks, plan and record the full VLAN and CIDR table (see section 1). This is irreversible — changing VLANs later requires reprovisioning.
 
 **Why a separate vRack per project?** It preserves project-level network isolation: traffic between projects must traverse the firewall, not bypass it via a shared vRack segment.
 
-#### 4.3 Provision the hub OPNsense HA cluster
+#### 4.3 Network security and hardening — HA firewall cluster
 
-The hub firewall cluster is the most critical component. Provision it before any spoke:
+The hub HA firewall cluster is the most critical component. Provision it before any spoke:
 
 1. **3 private networks** in the hub project, each on a distinct VLAN:
     - **WAN network** — connects to the OVH Gateway for Internet egress/NAT
     - **LAN network** — internal hub subnet for shared services (bastion, logging, DNS)
-    - **HASYNC network** — dedicated to OPNsense HA state replication (CARP/pfsync); should be on an isolated VLAN with no other traffic
+    - **HASYNC network** — dedicated to OPNsense HA state replication (CARP/pfsync), should be on an isolated VLAN with no other traffic
 
 2. **OVH Gateway** on the WAN network — provides NAT and Internet routing for the hub project. See the [Private Network with Gateway guide](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) for setup steps.
 
-3. **Two OPNsense instances** (primary and secondary) — deploy them from the OPNsense ISO or a marketplace image. Recommended minimum sizing: 4 vCPUs / 8 GB RAM (`b3-8` on OVHcloud) for small/medium deployments. Attach each instance to all three networks (WAN, LAN, HASYNC).
+3. **Two OPNsense instances** (primary and secondary) — deploy them from the OPNsense ISO or a cloud-ready image (e.g. OPNsense 26.1-cloudready). Recommended minimum sizing: `b3-16` (8 vCPUs / 16 GB RAM) for the hub, `b3-8` for spokes. Attach each instance to all three networks (WAN, LAN, HASYNC).
 
 4. **Floating IP** — attach a public Floating IP to the primary instance's WAN port. This is the management IP (SSH + OPNsense web UI) and the IPsec endpoint for all spokes.
 
@@ -314,7 +293,10 @@ Provision two OVHcloud Object Storage buckets in the hub project:
 
 For regulated workloads, enable **Object Lock in Compliance Mode** on the backup bucket to enforce a minimum retention period (e.g. 90 days) and prevent premature deletion.
 
-Apply a lifecycle policy on both buckets to transition objects to Infrequent Access after 30 days and expire temporary data (e.g. debug logs) after a defined period.
+Apply a lifecycle policy on both buckets:
+
+- **Log files** (`logs/` prefix): transition to Infrequent Access after 60 days; expire non-current versions after 30 days.
+- **Temporary data** (`temp/` prefix, e.g. debug logs): expire current objects after 14 days, non-current versions after 7 days.
 
 #### 5.3 Metrics and alerting
 
@@ -332,7 +314,7 @@ Recommended alerting thresholds:
 
 ---
 
-### 6. Day 2 — Onboarding a New Spoke
+### 6. Onboarding a New Spoke
 
 > [!primary]
 > Each spoke is fully independent: its own project, vRack, OPNsense cluster, and IaC state. A failure or misconfiguration in one spoke has no effect on others. If you are using a Terraform/OpenTofu reference implementation, create an isolated state backend per spoke before provisioning.
@@ -341,17 +323,17 @@ Recommended alerting thresholds:
 
 Before adding a spoke, confirm you have:
 
-- [ ] Hub deployed and HTTPS-accessible at `https://<hub_floating_ip>:8443`
-- [ ] Hub WAN CARP VIP and hub WAN CIDR noted (from Day-1, section 4.5)
-- [ ] A strong, unique PSK generated for the new IPsec tunnel
-- [ ] Unique VLAN IDs and CIDRs assigned from your network plan (section 2.2)
-- [ ] A unique IPsec request ID (`reqid`) assigned — must not overlap with any existing spoke tunnel
+- Hub deployed and HTTPS-accessible at `https://<hub_floating_ip>:8443`
+- Hub WAN CARP VIP and hub WAN CIDR noted (from section 4.5)
+- A strong, unique PSK generated for the new IPsec tunnel
+- Unique VLAN IDs and CIDRs assigned from your network plan (section 1)
+- A unique IPsec request ID (`reqid`) assigned — must not overlap with any existing spoke tunnel
 
 #### 6.2 Provision spoke resources
 
 Perform these steps in order, waiting for each OVHcloud API operation to complete before proceeding:
 
-1. **Create a Public Cloud project** for the spoke (follow naming convention from section 2.1).
+1. **Create a Public Cloud project** for the spoke (follow naming convention from section 4.1).
 2. **Create a vRack** and attach the spoke project to it.
 3. **Create three private networks** in the spoke project, each on a distinct VLAN (WAN, LAN, HASYNC) — values from your network plan.
 4. **Deploy 2 OPNsense instances** (primary and secondary) attached to all three networks. Use the same sizing as the hub.
@@ -370,10 +352,11 @@ Once both ends are running, configure the IKEv2/IPsec tunnel. This involves symm
     - Local ID: spoke WAN CARP VIP
     - Remote gateway: hub WAN CARP VIP
     - Authentication: Pre-Shared Key (PSK)
+    - IKE proposal: `aes256gcm16-sha256-ecp256`
 2. Define a child SA (Phase 2):
-    - Local network: spoke LAN CIDR
-    - Remote network: hub WAN CIDR
+    - ESP proposal: `aes128gcm16-ecp256`
     - Unique `reqid` matching the one assigned in your network plan
+    - Traffic selectors: `0.0.0.0/0` on both sides (routing is handled by VTI interface and static routes, not by TS policy)
 3. Add a VTI interface bound to the tunnel and assign a `/30` link CIDR.
 4. Add a static route: hub WAN CIDR via the VTI interface.
 
@@ -436,20 +419,20 @@ For audited access at scale, deploy [OVHcloud Bastion](https://ovh.github.io/the
 
 #### 6.6 Onboarding checklist
 
-- [ ] VLAN IDs and CIDRs recorded in network design document and assigned uniquely
-- [ ] IPsec `reqid` incremented and recorded
-- [ ] Spoke IaC state isolated from hub and other spokes
-- [ ] IaC variable files containing credentials stored outside version control
-- [ ] Spoke project and vRack provisioned
-- [ ] OPNsense HA cluster deployed on spoke
-- [ ] IPsec configuration applied on both hub and spoke
-- [ ] IPsec SA visible on hub (`swanctl --list-sas`)
-- [ ] VTI interface up and spoke LAN route present on hub
-- [ ] Spoke LAN reachable from hub via ping
-- [ ] IAM policies created for spoke project (developer + SRE groups)
-- [ ] OpenStack users provisioned and credentials distributed to spoke team
-- [ ] Logging forwarded to LDP
-- [ ] SSH ProxyJump or Bastion access configured and tested
+- VLAN IDs and CIDRs recorded in network design document and assigned uniquely
+- IPsec `reqid` incremented and recorded
+- Spoke IaC state isolated from hub and other spokes
+- IaC variable files containing credentials stored outside version control
+- Spoke project and vRack provisioned
+- OPNsense HA cluster deployed on spoke
+- IPsec configuration applied on both hub and spoke
+- IPsec SA visible on hub (`swanctl --list-sas`)
+- VTI interface up and spoke LAN route present on hub
+- Spoke LAN reachable from hub via ping
+- IAM policies created for spoke project (developer + SRE groups)
+- OpenStack users provisioned and credentials distributed to spoke team
+- Logging forwarded to LDP
+- SSH ProxyJump or Bastion access configured and tested
 
 ---
 
@@ -457,7 +440,7 @@ For audited access at scale, deploy [OVHcloud Bastion](https://ovh.github.io/the
 
 #### 7.1 Scaling — adding spokes
 
-Repeat the Day-2 process (section 6) for each new spoke. Every spoke is fully independent: its own project, vRack, OPNsense cluster, and IaC state. A failure or change in one spoke has no effect on others.
+Repeat the onboarding process (section 6) for each new spoke. Every spoke is fully independent: its own project, vRack, OPNsense cluster, and IaC state. A failure or change in one spoke has no effect on others.
 
 #### 7.2 Removing a spoke
 
@@ -479,7 +462,7 @@ OPNsense updates (security patches, minor releases) follow a CARP failover proce
 1. Ensure CARP is operational: `Interfaces`{.action} > `Virtual IPs`{.action} > `Status`{.action}.
 2. Set the **secondary** node to CARP maintenance mode (demote to BACKUP).
 3. Update the secondary: `System`{.action} > `Firmware`{.action} > `Updates`{.action}.
-4. Reboot secondary; verify it rejoins CARP as BACKUP.
+4. Reboot secondary, verify it rejoins CARP as BACKUP.
 5. Perform a controlled failover: promote secondary to MASTER temporarily.
 6. Update and reboot primary.
 7. Restore original MASTER/BACKUP roles.
@@ -491,14 +474,14 @@ OPNsense updates (security patches, minor releases) follow a CARP failover proce
 
 | Area | Action |
 |------|--------|
-| IAM | Audit user/group memberships; remove leavers; rotate service account API keys |
-| Firewall rules | Review OPNsense rules; remove unused rules; validate admin source IPs are still accurate |
-| IPsec | List active SAs; confirm all spokes are connected; check re-key intervals |
-| IaC state | Verify remote state is accessible and encrypted; test a restore; confirm no secrets drift |
-| OPNsense firmware | Check for security advisories; schedule patching (see CARP procedure in section 7.3) |
+| IAM | Audit user/group memberships, remove leavers, rotate service account API keys |
+| Firewall rules | Review OPNsense rules, remove unused rules, validate admin source IPs are still accurate |
+| IPsec | List active SAs, confirm all spokes are connected, check re-key intervals |
+| IaC state | Verify remote state is accessible and encrypted, test a restore, confirm no secrets drift |
+| OPNsense firmware | Check for security advisories, schedule patching (see CARP procedure in section 7.3) |
 | OVHcloud changelog | Review new features (new regions, instance types, IAM capabilities) |
-| Costs | Review per-project spend; remove unused floating IPs, volumes, instances |
-| Logging | Verify LDP ingestion rate; check S3 replication health; confirm alert rules fire |
+| Costs | Review per-project spend, remove unused floating IPs, volumes, instances |
+| Logging | Verify LDP ingestion rate, check S3 replication health, confirm alert rules fire |
 
 ---
 
@@ -553,15 +536,17 @@ OVHcloud data centres in Europe (GRA, SBG, WAW, LIM) have among the lowest Power
 To minimise your carbon impact:
 
 - Prefer European regions with declared renewable energy sourcing.
-- Right-size instances: avoid over-provisioned OPNsense flavours; `b3-8` is sufficient for most spoke workloads.
+- Right-size instances: avoid over-provisioned OPNsense flavours, `b3-8` is sufficient for most spoke workloads.
 - Use Object Storage lifecycle policies to transition cold logs to Infrequent Access and expire temporary data.
 - Decommission unused spokes rather than leaving idle infrastructure running.
 
 ---
 
-### 9. Professional Services
+### 9. Conclusion
 
-If you need design assistance, a guided deployment, or a security review for your landing zone, OVHcloud Professional Services can help.
+The hub and spoke model on OVHcloud Public Cloud gives organisations a production-ready, auditable, and scalable landing zone with strong network isolation between workloads. The self-managed HA firewall provides full visibility and control over east-west and north-south traffic, without dependence on hyperscaler-managed security services.
+
+Deploying and operating this architecture requires advanced cloud and network skills — including vRack private networking, OPNsense HA cluster management, IPsec/IKEv2 configuration, and Infrastructure as Code practices. Teams new to these technologies are strongly encouraged to engage OVHcloud Professional Services for design review, assisted deployment, or an operational readiness assessment before going to production.
 
 [Request a quote from OVHcloud Professional Services](/links/professional-services)
 
