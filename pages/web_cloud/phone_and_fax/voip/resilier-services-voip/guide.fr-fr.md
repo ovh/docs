@@ -34,7 +34,9 @@ Retrouvez dans ce guide les explications pour résilier unitairement un service 
 >
 > Retrouvez les informations correspondantes dans notre guide « [Gérer vos groupes de téléphonie](/pages/web_cloud/phone_and_fax/voip/regrouper_services_telephonie) ».
 
+<!-- CP-STEPS-START:acces-service-resilier -->
 Cliquez sur l'onglet `Services`{.action} puis sur sur la ligne ou le numéro concerné (vous pouvez rechercher le service dans le champ prévu à cet effet).
+<!-- CP-STEPS-END:acces-service-resilier -->
 
 En fonction de votre service, référez-vous à la partie correspondante.
 

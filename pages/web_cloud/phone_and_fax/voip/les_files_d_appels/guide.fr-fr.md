@@ -88,7 +88,9 @@ Poursuivez la lecture de cette documentation selon le ou les paramètres que vou
 
 #### 2.1 Gérer la file d'appels et ses lignes <a name="manage-lines"></a>
 
+<!-- CP-STEPS-START:acces-gestion-lignes -->
 Depuis le menu « Configuration », cliquez sur `Gestion des lignes dans la file`{.action}.
+<!-- CP-STEPS-END:acces-gestion-lignes -->
 
 ##### 1. Ajouter une ligne à la file
 
@@ -184,7 +186,9 @@ La modification vous permet d'affiner les réglages de sonnerie de chaque ligne 
 
 #### 2.2 Gérer les sons et l'attente <a name="manage-sounds"></a>
 
-Dans le menu « Configuration », cliquez sur `Gestion des sons et de l'attente`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
+<!-- CP-STEPS-START:acces-gestion-sons -->
+Dans le menu « Configuration », cliquez sur `Gestion des sons et de l'attente`{.action}. Plusieurs actions sont alors possibles depuis cette page.
+<!-- CP-STEPS-END:acces-gestion-sons -->
 
 ##### Configuration de l'attente
 
@@ -233,7 +237,9 @@ Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer 
 
 #### 2.3 Gérer les plages horaires et les fermetures <a name="manage-agenda"></a>
 
-Depuis le menu « Configuration », cliquez sur `Plages horaires et fermetures`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
+<!-- CP-STEPS-START:acces-plages-horaires -->
+Depuis le menu « Configuration », cliquez sur `Plages horaires et fermetures`{.action}. Plusieurs actions sont alors possibles depuis cette page.
+<!-- CP-STEPS-END:acces-plages-horaires -->
 
 ##### 1. Activer ou désactiver les plages horaires
 
@@ -308,7 +314,9 @@ Une fois les informations complétées, cliquez sur `Créer l'événement`{.acti
 
 #### 2.4 Gérer le filtrage des appels <a name="manage-filters"></a>
 
-Depuis le menu « Configuration », cliquez sur `Filtrages des appels`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
+<!-- CP-STEPS-START:acces-filtrages-appels -->
+Depuis le menu « Configuration », cliquez sur `Filtrages des appels`{.action}. Plusieurs actions sont alors possibles depuis cette page.
+<!-- CP-STEPS-END:acces-filtrages-appels -->
 
 ##### 1. Configurer les filtrages d'appels
 

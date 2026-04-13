@@ -74,6 +74,7 @@ Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.a
 
 #### Présentation de la configuration
 
+<!-- CP-STEPS-START:presentation-configuration -->
 La configuration se présente sous la forme d'une arborescence étape par étape. À des fins de lisibilité, ce plan de configuration peut à tout moment être affiché verticalement ou horizontalement, via le bouton `Options d'affichage`{.action} situé en haut à gauche du plan.
 
 ![contact-center-solution](images/options-affichage.png){.thumbnail}
@@ -86,6 +87,7 @@ Le plan de configuration contient différents menus.
 |Permet de gérer les options principales de la configuration.|Permet de gérer les étapes du plan ainsi que les [options des appels](#options).|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
 
 Les étapes décrites dans ce guide permettent d'aboutir à la création d'une configuration complète.
+<!-- CP-STEPS-END:presentation-configuration -->
 
 ### Étape 3 : Gérer les sons / gérer les TTS <a name="gerer-sons-tts"></a>
 
