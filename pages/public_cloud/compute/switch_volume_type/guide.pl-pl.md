@@ -1,7 +1,7 @@
 ---
 title: Zmień wolumen Block Storage
 excerpt: "Dowiedz się, jak zmienić typ wolumenu block storage przy użyciu technologii Openstack"
-updated: 2026-01-13
+updated: 2026-04-13
 ---
 
 ## Wprowadzenie
@@ -36,9 +36,7 @@ Modyfikacja ta może zostać przeprowadzona za pośrednictwem interfejsu Horizon
 >
 > Jeśli wolumin Block Storage jest dołączone do instancji, musisz go najpierw odłączyć, zanim przejdziesz dalej. Aby uzyskać więcej informacji, zobacz sekcję **Odłącz wolumen** przewodnika "[Zarządzanie wolumenem instancji Public Cloud](/pages/public_cloud/Compute/create_and_configure_an_additional_disk_on_an_instance#detach-a-volume)".
 >
-> Zmiana typu woluminu (retypowanie) za pomocą Panelu klienta OVHcloud lub OVHcloud API jest możliwa tylko dla niezaszyfrowanych woluminów. Zaszyfrowane woluminy typu **-LUKS** nie mogą być retypowane za pomocą tych interfejsów.
->
-> Retypowanie jest obsługiwane za pomocą OpenStack / Horizon tylko dla woluminów **-LUKS** do **-LUKS**. W takim przypadku, przywracanie woluminu po retypowaniu nie jest możliwe.
+> Zmiana typu woluminu (retypowanie) za pomocą Panelu klienta OVHcloud lub OVHcloud API jest możliwa tylko dla niezaszyfrowanych woluminów. Zaszyfrowane woluminy typu **-LUKS** nie mogą być retypowane.
 >
 > Konwersje z **-LUKS** do **nie-LUKS** (lub odwrotnie) nie są obsługiwane, w tym za pomocą OpenStack / Horizon.
 >
