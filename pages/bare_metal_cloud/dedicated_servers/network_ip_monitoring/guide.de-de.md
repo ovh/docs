@@ -1,7 +1,7 @@
 ---
 title: Welche IP-Adressen nutzt das OVHcloud Monitoring?
 excerpt: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
-updated: 2025-06-04
+updated: 2026-04-13
 ---
 
 ## Ziel
@@ -60,6 +60,7 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 > Wenn Ihr Server sich in Roubaix 3 befindet, muss die letzte IP über `tcpdump` abgerufen werden:
 > <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 >
+
 ### Monitoring aktivieren oder deaktivieren
 
 Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](/links/manager) und gehen Sie zum Bereich `Bare Metal Cloud`{.action}. Wählen Sie den betreffenden Server unter `Dedicated Server`{.action} aus.
