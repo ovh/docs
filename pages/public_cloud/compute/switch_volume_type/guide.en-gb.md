@@ -1,7 +1,7 @@
 ---
 title: Change your block storage volume type
 excerpt: Find out how to change your volume type using OpenStack
-updated: 2026-01-13
+updated: 2026-04-13
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ This modification can be made via Horizon or the OpenStack CLI.
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
->> Click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
+>> Click on `Block Storage`{.action} in the left-hand menu under **Storage & Backup**.
 >>
 >> Locate the relevant volume in the list, then click the `...`{.action} button on the right. Select `Change the volume type`{.action}.
 >>
