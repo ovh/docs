@@ -602,6 +602,8 @@
             + [OPCP - Object Storage features and specifications](hosted_private_cloud/opcp/s3-opcp-limitations)
             + [OPCP - How to create a custom OS image](hosted_private_cloud/opcp/how-to-create-image)
             + [OPCP - Ceph RBD Block Storage - Performance, Resilience and Scalability with OpenStack](hosted_private_cloud/opcp/storage-ceph-rbd-overview)
+        + [Cloud Store](products/hosted-private-cloud-opcp-cloudstore)
+            + [Getting started](hosted_private_cloud/opcp/cloudstore/cloudstore-getting-started)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix)
         + [Key Concepts](hosted-private-cloud-nutanix-key-concepts)
             + [Nutanix global high-level documentation](hosted_private_cloud/nutanix_on_ovhcloud/01-global-high-level-doc)
