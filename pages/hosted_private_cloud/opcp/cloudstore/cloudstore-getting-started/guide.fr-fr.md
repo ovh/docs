@@ -8,7 +8,7 @@ updated: 2026-04-09
 
 Ce guide vous présente comment vous connecter à l'interface de gestion de votre **CloudStore**, comprendre ses concepts clés et effectuer les premières opérations telles que la création de comptes et le déploiement de services.
 
-Le **CloudStore** est un framework d'infrastructure de haut niveau déployé sur **OPCP** (On-Premise Cloud Platform). Il fournit des services essentiels pour aider les fournisseurs cloud à déployer et gérer des solutions Cloud Native pour leurs clients via une plateforme basée sur un catalogue de services.
+Le **CloudStore** est un framework d'infrastructure de haut niveau déployé sur [**OPCP**](pages/hosted_private_cloud/opcp/opcp-getting-started) (On-Premise Cloud Platform). Il fournit des services essentiels pour aider les fournisseurs cloud à déployer et gérer des solutions Cloud Native pour leurs clients via une plateforme basée sur un catalogue de services.
 
 ## Prérequis
 
@@ -26,7 +26,7 @@ Accédez à l'**URL** fournie pour votre instance CloudStore. Une page de connex
 Cliquez sur le bouton de connexion pour être redirigé vers la page d'authentification **Keycloak**. Deux options s'offrent à vous :
 
 - Saisir vos identifiants directement dans le formulaire de connexion Keycloak.
-- Utiliser le bouton **OPCP-SSO** pour vous authentifier via le Keycloak OPCP Core fédéré. Cette option permet aux utilisateurs déjà enregistrés dans OPCP Core de se connecter sans gérer un jeu d'identifiants supplémentaire.
+- Utiliser le bouton **OPCP-SSO** pour vous authentifier via le Keycloak OPCP Core fédéré. Cette option permet aux utilisateurs déjà enregistrés dans [OPCP Core de se connecter](#gestion-de-liam-sur-le-keycloak-cloudstore-l2) sans gérer un jeu d'identifiants supplémentaire.
 
 ![Formulaire de connexion Keycloak L2](images/keycloak_l2_login.png){.thumbnail}
 

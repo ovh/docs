@@ -8,7 +8,7 @@ updated: 2026-04-09
 
 This guide shows you how to log in to your **CloudStore** management interface, understand its key concepts, and perform initial operations such as creating accounts and deploying services.
 
-The **CloudStore** is a high-level infrastructure framework deployed on top of **OPCP** (On-Premise Cloud Platform). It provides core services to help cloud providers deploy and manage cloud-native solutions for their customers through a marketplace-based platform.
+The **CloudStore** is a high-level infrastructure framework deployed on top of [**OPCP**](pages/hosted_private_cloud/opcp/opcp-getting-started) (On-Premise Cloud Platform). It provides core services to help cloud providers deploy and manage cloud-native solutions for their customers through a marketplace-based platform.
 
 ## Requirements
 
@@ -26,7 +26,7 @@ Navigate to the **URL** provided for your CloudStore instance. You will be prese
 Click the login button to be redirected to the **Keycloak** authentication page. You have two options to authenticate:
 
 - Enter your credentials directly in the Keycloak login form.
-- Use the **OPCP-SSO** button to authenticate through the federated OPCP Core Keycloak. This option allows users already registered in OPCP Core to log in without managing a separate set of credentials.
+- Use the **OPCP-SSO** button to authenticate through the federated OPCP Core Keycloak. This option allows users already registered in [OPCP Core to log in](managing-iam-on-cloudstore-keycloak-l2) without managing a separate set of credentials.
 
 ![Keycloak L2 login form](images/keycloak_l2_login.png){.thumbnail}
 
