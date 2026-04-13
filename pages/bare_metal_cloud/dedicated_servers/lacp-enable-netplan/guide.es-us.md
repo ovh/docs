@@ -1,7 +1,7 @@
 ---
 title: "Cómo configurar la agregación de enlaces con LACP en Debian 12 o Ubuntu 24.04 (EN)"
 excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server’s availability and boost the efficiency of your network connections"
-updated: 2026-01-09
+updated: 2026-04-13
 ---
 
 <style>
@@ -60,8 +60,6 @@ Switch to the tab `Network Interfaces`{.action} and take note of the MAC address
 
 > [!primary]
 > Please note that the MAC address of the **main public** interface is the one receiving DHCP offers, both in the server's operating system and in rescue mode. This interface handles public connectivity in the default configuration.
->
-> Additionally, the MAC address of the **main private** interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:d6`.
 >
 
 Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
