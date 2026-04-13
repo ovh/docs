@@ -45,6 +45,7 @@ Per maggiori informazioni su questi argomenti, consulta le nostre guide disponib
 
 Per verificare se il dominio utilizza la configurazione DNS di OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
+<!-- CP-STEPS-START:verifica-server-dns -->
 > [!warning]
 >
 > **Questi 2 step sono validi solo se il dominio è registrato presso OVHcloud.** In caso contrario, è necessario effettuare la verifica presso il Registrar del dominio.
@@ -64,6 +65,7 @@ Per verificare se il dominio utilizza la configurazione DNS di OVHcloud, clicca 
 >> Seleziona la scheda `Server DNS`{.action} una volta posizionato sul dominio interessato.
 >>
 >> Se i nomi dei server DNS terminano con *ovh.net* (ad eccezione del server *snds2.ovh.net*), *ovh.ca* o *anycast.me*, il dominio utilizza i server DNS di OVHcloud.
+<!-- CP-STEPS-END:verifica-server-dns -->
 
 > [!primary]
 >
@@ -80,6 +82,7 @@ L'attivazione del **DNSSEC** è possibile in tre situazioni descritte di seguito
 
 Per attivare (o disattivare) la soluzione **DNSSEC** per il tuo dominio, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
+<!-- CP-STEPS-START:caso-1-attiva-dnssec -->
 > [!tabs]
 > **Passaggio 1**
 >>
@@ -100,6 +103,7 @@ Per attivare (o disattivare) la soluzione **DNSSEC** per il tuo dominio, clicca 
 >> Il pulsante di attivazione situato sopra la voce `Delegazione Sicura (DNSSEC)`{.action} permette di attivare o disattivare il **DNSSEC** sul dominio. L’operazione genera una nuova finestra da cui è possibile confermare la modifica.
 >>
 >> ![Enable DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:caso-1-attiva-dnssec -->
 
 ### Caso n°2 - Il dominio è registrato in OVHcloud e non utilizza i server DNS di OVHcloud
 
@@ -107,6 +111,7 @@ In questo caso, contatta il provider che gestisce la configurazione DNS del tuo 
 
 Una volta recuperate queste 4 impostazioni, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
+<!-- CP-STEPS-START:caso-2-record-ds -->
 > [!tabs]
 > **Passaggio 1**
 >>
@@ -129,6 +134,7 @@ Una volta recuperate queste 4 impostazioni, clicca sulle schede qui sotto per vi
 >> ![DS records](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ds-records/edit-plus-dashboard.png){.thumbnail}
 >>
 >> Una volta completati tutti e 4 i moduli, clicca sul pulsante blu `Conferma`{.action} a destra della tabella.
+<!-- CP-STEPS-END:caso-2-record-ds -->
 
 ### Caso n°3 - Il dominio non è registrato in OVHcloud e utilizza i server DNS di OVHcloud
 
@@ -184,4 +190,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra [Community di utenti](/links/community).
+Contatta la nostra [Community di utenti](/links/community).

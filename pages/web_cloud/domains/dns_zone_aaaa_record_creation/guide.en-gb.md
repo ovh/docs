@@ -52,6 +52,7 @@ Want your website to be accessible via your domain name? To do this, your domain
 
 ### Add a DNS AAAA record for a domain name
 
+<!-- CP-STEPS-START:add-aaaa-record -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -88,9 +89,11 @@ See our detailed guides:
 - [Web Hosting - How to modify a domain name already associated to a web hosting plan](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 ///
+<!-- CP-STEPS-END:add-aaaa-record -->
 
 ### Add a DNS AAAA record for a domain name subdomain
 
+<!-- CP-STEPS-START:add-aaaa-record-subdomain -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -128,6 +131,7 @@ See our detailed guides:
 - [Web Hosting - How to modify a domain name already associated to a web hosting plan](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 ///
+<!-- CP-STEPS-END:add-aaaa-record-subdomain -->
 
 ## Go further
 

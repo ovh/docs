@@ -89,6 +89,7 @@ Questa opzione consente di applicare automaticamente la configurazione della zon
 >
 > Se necessario, consulta le guide "[Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" e/o "[Creare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)" per verificare se esiste una zona DNS OVHcloud per il tuo nome di dominio.
 
+<!-- CP-STEPS-START:opzione-1-dns-predefiniti-ovhcloud -->
 Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 
 > [!tabs]
@@ -127,6 +128,7 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 >> Se corrispondono a quelli che desideri applicare, clicca su `Applica`{.action}.
 >>
 >> In questo modo, i 2 server DNS dichiarati (nei record di tipo NS della zona DNS OVHcloud) saranno utilizzati per il tuo nome di dominio.
+<!-- CP-STEPS-END:opzione-1-dns-predefiniti-ovhcloud -->
 
 I server DNS dichiarati in precedenza e la configurazione DNS da essi applicata saranno disattivati per il tuo nome di dominio. La zona DNS OVHcloud diventerà la zona DNS attiva per il tuo nome di dominio.
 
@@ -151,6 +153,7 @@ Può trattarsi, ad esempio, di:
 > - "Your own domain (or just an @)" IN NS ns2.dns-server.tld.
 > - "Your own domain (or just an @)" IN NS ns3.dns-server.tld.
 
+<!-- CP-STEPS-START:opzione-2-propri-dns -->
 Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
 
 > [!tabs]
@@ -200,6 +203,7 @@ Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
 >>
 >> Essa riepiloga i nomi dei server DNS che saranno applicati al tuo nome di dominio.
 >> Se corrispondono a quelli che desideri applicare, clicca su `Applica`{.action}.
+<!-- CP-STEPS-END:opzione-2-propri-dns -->
 
 I server DNS dichiarati in precedenza e la configurazione DNS da essi applicata saranno disattivati per il tuo nome di dominio. La zona DNS dichiarata sui tuoi server DNS diventerà la zona DNS attiva per il tuo nome di dominio.
 
@@ -227,6 +231,7 @@ Tuttavia, assicurati che le configurazioni delle zone DNS presenti sui diversi s
 > - "Your own domain (or just an @)" IN NS dnsXX.ovh.net.
 > - "Your own domain (or just an @)" IN NS nsXX.ovh.net.
 
+<!-- CP-STEPS-START:opzione-3-dns-ovhcloud-e-propri -->
 Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
 
 > [!tabs]
@@ -276,6 +281,7 @@ Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
 >>
 >> Essa riepiloga i nomi dei server DNS che saranno applicati al tuo nome di dominio.
 >> Se corrispondono a quelli che desideri applicare, clicca su `Applica`{.action}.
+<!-- CP-STEPS-END:opzione-3-dns-ovhcloud-e-propri -->
 
 I server DNS dichiarati in precedenza e la configurazione DNS da essi applicata saranno disattivati per il tuo nome di dominio. Le zone DNS presenti sui tuoi server DNS e sui server DNS OVHcloud diventeranno quelle attive per il tuo nome di dominio.
 

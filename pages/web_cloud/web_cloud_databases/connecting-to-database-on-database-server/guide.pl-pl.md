@@ -58,6 +58,7 @@ Zawartość bazy danych można przeglądać za pomocą interfejsu. Istnieje kilk
 
 #### Połączenie przez phpMyAdmin OVHcloud
 
+<!-- CP-STEPS-START:phpmyadmin-ovhcloud-connect -->
 Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -94,6 +95,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> - **Serwer:** wpisz *nazwę hosta*, a następnie *numer portu*, oddzielone znakiem "**:**" lub "**spacją**". Na przykład: **aaXXXXX-XXX.eu.clouddb.ovh.net:12345**.
 >> - **Użytkownik:** wpisz *nazwę użytkownika*.
 >> - **Hasło:** wpisz *hasło*.
+<!-- CP-STEPS-END:phpmyadmin-ovhcloud-connect -->
 
 Jeśli połączenie zakończy się pomyślnie, wyświetli się następująca strona.
 
@@ -112,6 +114,7 @@ Jeśli połączenie zakończy się pomyślnie, wyświetli się następująca str
 >
 > Jeśli korzystasz z rozwiązania "Web Cloud Databases"/"Prywatny SQL", pamiętaj, aby autoryzować swój adres IP, korzystając z przewodnika dotyczącego [konfiguracji serwera bazy danych](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
 
+<!-- CP-STEPS-START:mysql-external-connect -->
 Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -130,6 +133,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 >> - **Nazwa użytkownika:** widoczna w zakładce `Użytkownicy i uprawnienia`{.action}.
 >> - **Hasło:** hasło powiązane z danym użytkownikiem.
 >> - **Nazwa bazy danych:** widoczna w zakładce `Bazy danych`{.action}.
+<!-- CP-STEPS-END:mysql-external-connect -->
 
 **Kliknij wybraną metodę połączenia, aby wyświetlić jej zawartość.**
 
@@ -188,6 +192,7 @@ Możesz skorzystać z własnego interfejsu phpMyAdmin, aby przeglądać zawarto�
 
 ### Połączenie z bazą danych PostgreSQL
 
+<!-- CP-STEPS-START:postgresql-connect -->
 Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -206,6 +211,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 >> - **Nazwa użytkownika:** widoczna w zakładce `Użytkownicy i uprawnienia`{.action}.
 >> - **Hasło:** hasło powiązane z danym użytkownikiem.
 >> - **Nazwa bazy danych:** widoczna w zakładce `Bazy danych`{.action}.
+<!-- CP-STEPS-END:postgresql-connect -->
 
 **Kliknij wybraną metodę połączenia, aby wyświetlić jej zawartość.**
 

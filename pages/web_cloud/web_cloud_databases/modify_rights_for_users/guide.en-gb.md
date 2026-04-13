@@ -33,6 +33,8 @@ While using the product, you may need to modify a user's rights on your [Web Clo
 
 Click on the tabs below to view each of the **4** steps.
 
+<!-- CP-STEPS-START:modify-rights-tabs -->
+
 > [!tabs]
 > **Step 1**
 >>
@@ -59,6 +61,8 @@ Click on the tabs below to view each of the **4** steps.
 >> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png){.thumbnail}
 >>
 >> This is where you can modify your user's rights for each of your databases. To do this, for each database concerned, simply click on the empty circles corresponding to the rights you want to redefine for your user. The change takes effect within moments.
+
+<!-- CP-STEPS-END:modify-rights-tabs -->
 
 Below is a summary table of the types of queries that can be performed on a database, depending on the rights assigned to the user:
 

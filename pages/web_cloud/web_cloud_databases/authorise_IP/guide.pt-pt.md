@@ -51,6 +51,8 @@ Precisa de alterar estas permissões/restrições?
 
 ### Autorizar um endereço IP ou um intervalo de endereços IP
 
+<!-- CP-STEPS-START:authorise-ip-address-range -->
+
 > [!primary]
 >
 > Lembrete: se acabou de ativar a sua solução [Web Cloud Databases](/links/web/databases) e pretende utilizá-la com uma oferta de [alojamento web OVHcloud](/links/web/hosting), os endereços IP dessas ofertas já são autorizados por predefinição.
@@ -99,6 +101,8 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> Depois de inserir as informações, clique no botão `Validar`{.action}.
 
+<!-- CP-STEPS-END:authorise-ip-address-range -->
+
 ## Casos particulares
 
 **Clique nos casos abaixo para ver as respetivas informações.**
@@ -123,6 +127,8 @@ Aquando da ativação da sua solução Web Cloud Databases, a autorização de a
 
 Se deseja desativar esta autorização pois não utiliza um alojamento web com a sua solução Web Cloud Databases, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
+<!-- CP-STEPS-START:special-cases-authorizing-web-hosting -->
+
 > [!tabs]
 > **Etapa 1**
 >>
@@ -141,6 +147,8 @@ Se deseja desativar esta autorização pois não utiliza um alojamento web com a
 >> Na página que aparece, desmarque a caixa de verificação antes da menção `Autorizar o acesso dos alojamentos web da OVHcloud à base de dados`{.action}.
 >>
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+
+<!-- CP-STEPS-END:special-cases-authorizing-web-hosting -->
 
 ///
 

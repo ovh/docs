@@ -78,6 +78,7 @@ Sie müssen die DNS-Server Ihres Domainnamens möglicherweise in folgenden Situa
 >
 > Wenn Sie OVHcloud DNS-Server verwenden, haben die Nummern in den Servernamen keinen Bezug zu den von Ihnen verwendeten Diensten. Nur die Option [DNS Anycast](/links/web/domains-options) verwendet spezielle DNS-Server (`ns200.anycast.me` und `dns200.anycast.me`). Bei Abonnement werden diese automatisch zugewiesen.
 
+<!-- CP-STEPS-START:modify-dns-option1-ovhcloud-standard -->
 **Klicken Sie auf die Optionen unten, um den Inhalt anzuzeigen.**
 
 /// details | Option 1 - OVHcloud Standard-DNS-Server verwenden
@@ -130,7 +131,9 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 Die bisher deklarierten DNS-Server und deren DNS-Konfiguration werden für Ihren Domainnamen deaktiviert. Die OVHcloud DNS-Zone wird zur aktiven DNS-Zone für Ihren Domainnamen.
 
 ///
+<!-- CP-STEPS-END:modify-dns-option1-ovhcloud-standard -->
 
+<!-- CP-STEPS-START:modify-dns-option2-own-servers -->
 /// details | Option 2 - Eigene DNS-Server verwenden
 
 Mit dieser Option können Sie die DNS-Server einer DNS-Zone deklarieren, die nicht über das OVHcloud Kundencenter verwaltet wird.
@@ -203,7 +206,9 @@ Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anz
 Die bisher deklarierten DNS-Server und deren DNS-Konfiguration werden für Ihren Domainnamen deaktiviert. Die auf Ihren eigenen DNS-Servern deklarierte DNS-Zone wird zur aktiven DNS-Zone für Ihren Domainnamen.
 
 ///
+<!-- CP-STEPS-END:modify-dns-option2-own-servers -->
 
+<!-- CP-STEPS-START:modify-dns-option3-combined -->
 /// details | Option 3 - OVHcloud DNS-Server und eigene DNS-Server gemeinsam verwenden
 
 Mit dieser Option können Sie Ihre eigenen DNS-Server mit den OVHcloud DNS-Servern für Ihren Domainnamen kombinieren. Diese Kombination ermöglicht beispielsweise eine höhere Verfügbarkeit der verschiedenen mit Ihrem Domainnamen verbundenen Dienste (Webhosting, E-Mail-Server, etc.). Wenn eine Gruppe von DNS-Servern für einige Minuten nicht verfügbar ist, können die anderen deklarierten DNS-Server den Betrieb übernehmen.
@@ -279,6 +284,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anz
 Die bisher deklarierten DNS-Server und deren DNS-Konfiguration werden für Ihren Domainnamen deaktiviert. Die DNS-Zonen auf Ihren eigenen DNS-Servern und den OVHcloud DNS-Servern werden zu den aktiven Zonen für Ihren Domainnamen.
 
 ///
+<!-- CP-STEPS-END:modify-dns-option3-combined -->
 
 ### 2 - Propagation der DNS-Server-Änderung
 

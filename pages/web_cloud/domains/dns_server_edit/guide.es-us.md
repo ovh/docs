@@ -78,6 +78,7 @@ Puede ser necesario modificar los servidores DNS de su dominio en las siguientes
 >
 > Cuando utiliza los servidores DNS de OVHcloud, los números presentes en los nombres de los servidores no tienen ninguna relación con el servicio o servicios que utiliza. Solo la opción [DNS anycast](/links/web/domains-options) utiliza servidores DNS específicos (`ns200.anycast.me` y `dns200.anycast.me`). Cuando los contrata, se le asignan automáticamente.
 
+<!-- CP-STEPS-START:opcion-1-dns-ovhcloud -->
 **Haga clic en las opciones de abajo para ver su contenido.**
 
 /// details | Opción 1 - Utilizar los DNS por defecto de OVHcloud
@@ -130,7 +131,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para su dominio. La zona DNS de OVHcloud se convertirá en la zona DNS activa para su dominio.
 
 ///
+<!-- CP-STEPS-END:opcion-1-dns-ovhcloud -->
 
+<!-- CP-STEPS-START:opcion-2-propios-dns -->
 /// details | Opción 2 - Utilizar mis propios DNS
 
 Esta opción permite declarar los servidores DNS de una zona DNS no gestionada desde el área de cliente de OVHcloud.
@@ -203,7 +206,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para su dominio. La zona DNS declarada en sus propios servidores DNS se convertirá en la zona DNS activa para su dominio.
 
 ///
+<!-- CP-STEPS-END:opcion-2-propios-dns -->
 
+<!-- CP-STEPS-START:opcion-3-dns-ovhcloud-y-propios -->
 /// details | Opción 3 - Utilizar los DNS de OVHcloud y mis propios DNS
 
 Esta opción permite combinar el uso de sus propios servidores DNS manteniendo los servidores DNS de OVHcloud activos para su dominio. Esta combinación permite, por ejemplo, garantizar una mayor disponibilidad para los diferentes servicios asociados a su dominio (alojamiento web, servidores de correo electrónico, etc.). En efecto, si un grupo de servidores DNS deja de estar disponible durante unos minutos, los otros servidores DNS declarados pueden tomar el relevo.
@@ -279,6 +284,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para su dominio. Las zonas DNS presentes en sus propios servidores DNS y en los servidores DNS de OVHcloud se convertirán en las zonas activas para su dominio.
 
 ///
+<!-- CP-STEPS-END:opcion-3-dns-ovhcloud-y-propios -->
 
 ### 2 - Propagación de la modificación de los servidores DNS
 

@@ -52,6 +52,8 @@ En cas d'erreur sur votre base de données, vous devez pouvoir restaurer une sau
 
 #### Restaurer une sauvegarde existante
 
+<!-- CP-STEPS-START:restore-existing-backup -->
+
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -81,7 +83,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> >
 >> > La restauration implique l'écrasement du contenu de la base de données et donc une potentielle perte de données. Si vous n'êtes pas sûr de ce que vous faites, nous vous invitons à effectuer une sauvegarde auparavant.
 
+<!-- CP-STEPS-END:restore-existing-backup -->
+
 #### Importer une sauvegarde locale
+
+<!-- CP-STEPS-START:import-local-backup -->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -129,6 +135,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
 >> Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant l'import, et **« Envoyer un e-mail à la fin de l'import »** pour être informé de la fin de l'opération sur l'adresse e-mail de référence de votre compte OVHcloud, puis cliquez sur `Valider`{.action}.
+
+<!-- CP-STEPS-END:import-local-backup -->
 
 ### Importer une base de données hors espace client
 

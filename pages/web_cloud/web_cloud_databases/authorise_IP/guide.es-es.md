@@ -51,6 +51,8 @@ Por defecto y por motivos de seguridad, en estas soluciones:
 
 ### Autorizar una dirección IP o un intervalo de direcciones IP
 
+<!-- CP-STEPS-START:autorizar-direccion-ip-rango -->
+
 > [!primary]
 >
 > Le recordamos que, si acaba de activar su solución [Web Cloud Databases](/links/web/databases) y desea utilizarla con un plan de [hosting de OVHcloud](/links/web/hosting), las direcciones IP de estos planes están autorizadas por defecto.
@@ -99,6 +101,8 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> Una vez introducidos los datos, haga clic en el botón `Aceptar`{.action}.
 
+<!-- CP-STEPS-END:autorizar-direccion-ip-rango -->
+
 ## Casos particulares
 
 **Haga clic en los siguientes casos para ver la información correspondiente.**
@@ -123,6 +127,8 @@ Al activar la solución Web Cloud Databases, la autorización de acceso a los al
 
 Si quiere desactivar esta autorización porque no utiliza un alojamiento web con su solución Web Cloud Databases, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
+<!-- CP-STEPS-START:casos-particulares-acceso-alojamientos-web -->
+
 > [!tabs]
 > **Etapa 1**
 >>
@@ -141,6 +147,8 @@ Si quiere desactivar esta autorización porque no utiliza un alojamiento web con
 >> Desmarque la casilla que aparece antes de `Autorizar a los alojamientos web de OVHcloud a acceder a la base de datos`{.action}.
 >>
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+
+<!-- CP-STEPS-END:casos-particulares-acceso-alojamientos-web -->
 
 ///
 

@@ -28,6 +28,7 @@ Rozwiązania [Web Cloud Databases](/links/web/databases) można włączyć bezp�
 
 ## W praktyce
 
+<!-- CP-STEPS-START:detach-wcdb-tabs -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -49,6 +50,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-my-web-cloud-databases.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:detach-wcdb-tabs -->
 
 Po zakończeniu wszystkich 3 etapów usługa Web Cloud Databases zostanie odłączona w ciągu kilku godzin.
 

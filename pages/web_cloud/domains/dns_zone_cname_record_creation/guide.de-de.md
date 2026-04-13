@@ -56,6 +56,7 @@ CNAME-Einträge sind nützlich, um zu vermeiden, dass die IP-Adressen für Ihre 
 
 ### Einen CNAME DNS-Eintrag für die Subdomain eines Domainnamens hinzufügen
 
+<!-- CP-STEPS-START:add-cname-record -->
 Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -80,6 +81,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anz
 > **Schritt 5**
 >>
 >> Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Warten Sie bis zu **24** Stunden, bis die Propagation im DNS-Netzwerk voll wirksam ist.
+<!-- CP-STEPS-END:add-cname-record -->
 
 /// details | Lesen Sie unsere detaillierten Anleitungen:
 

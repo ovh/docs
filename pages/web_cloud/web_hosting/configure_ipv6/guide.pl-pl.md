@@ -51,6 +51,7 @@ Aby sprawdzić, czy Twoja strona WWW używa już adresu IPv6, użyj strony [ipv6
 
 ### 2 - Pobrać adres IPv6 Twojego hostingu
 
+<!-- CP-STEPS-START:pobrac-ipv6 -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -67,6 +68,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
 >> Skopiuj adres IP i kontynuuj czytanie przewodnika.
+<!-- CP-STEPS-END:pobrac-ipv6 -->
 
 ### 3 - Skonfiguruj aktywną strefę DNS Twojej domeny
 

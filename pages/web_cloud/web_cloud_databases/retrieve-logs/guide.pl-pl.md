@@ -72,6 +72,7 @@ W niektórych sytuacjach może zajść potrzeba przeglądania lub pobierania log
 
 ### Wyświetlanie logów w czasie rzeczywistym
 
+<!-- CP-STEPS-START:real-time-logs -->
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
 > [!tabs]
@@ -94,6 +95,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 >> > Logi są dostępne tutaj wyłącznie w czasie rzeczywistym. Pojawią się tylko wtedy, gdy zostaną wygenerowane, gdy znajdujesz się na karcie `Logi`{.action}.
 >> >
 >> > Jeśli opuścisz kartę `Logi`{.action} i wrócisz do niej później, wcześniej wyświetlana historia zniknie.
+<!-- CP-STEPS-END:real-time-logs -->
 
 ### Pobieranie historii logów usługi Web Cloud Databases
 
@@ -106,6 +108,7 @@ Aby pobrać historię logów usługi Web Cloud Databases, musisz połączyć si�
 > Aby to sprawdzić, pobierz publiczny adres IP swojego punktu dostępu do Internetu, a następnie zapoznaj się z sekcją **Autoryzacja adresu IP** w [tym przewodniku](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
+<!-- CP-STEPS-START:sftp-logs -->
 Aby uzyskać informacje o połączeniu SFTP z usługą Web Cloud Databases, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
 > [!tabs]
@@ -146,6 +149,7 @@ Pobierz go na swój komputer, aby go przejrzeć.
 >
 > Dzięki temu plikowi możesz zoptymalizować skrypty i zawartość baz danych, aby poprawić wydajność powiązanych usług.
 >
+<!-- CP-STEPS-END:sftp-logs -->
 
 ### Subskrypcja logów usługi Web Cloud Databases w Logs Data Platform <a name="wcdb-ldp"></a>
 
@@ -164,6 +168,7 @@ Ponieważ usługi [Web Cloud Databases](/links/web/databases) mogą być używan
 
 Aby subskrybować usługę Web Cloud Databases do strumienia danych w Logs Data Platform, mogą wystąpić dwa scenariusze.
 
+<!-- CP-STEPS-START:ldp-subscription -->
 **Kliknij każdy przypadek, aby wyświetlić jego zawartość.**
 
 <a name="wcdb-ldp-case1"></a>
@@ -237,6 +242,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 >> Aby subskrybować usługę Web Cloud Databases do tego nowego strumienia, wróć na kartę `Logi`{.action} usługi Web Cloud Databases, a następnie postępuj zgodnie z [Przypadkiem 1](#wcdb-ldp-case1) opisanym powyżej.
 
 ///
+<!-- CP-STEPS-END:ldp-subscription -->
 
 ## Sprawdź również <a name="go-further"></a>
 

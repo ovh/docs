@@ -86,6 +86,7 @@ Może zaistnieć konieczność utworzenia strefy DNS dla Twojej domeny w OVHclou
 
 ### 1 - Utworzyć strefę DNS w Panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:create-dns-zone -->
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -115,6 +116,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> |Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](/links/web/hosting), strefa jest wstępnie skonfigurowana do tego celu.<br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 >>
 >> Po dokonaniu wyboru, postępuj zgodnie z etapami wyświetlanymi w Panelu klienta OVHcloud, aż do utworzenia strefy DNS.
+<!-- CP-STEPS-END:create-dns-zone -->
 
 ### 2 - Edycja strefy DNS (opcjonalnie)
 
@@ -133,6 +135,7 @@ Kiedy strefa DNS OVHcloud jest gotowa do użytku, powiąż ją z Twoją domeną,
 
 Należy zatem pobrać z wyprzedzeniem **serwery DNS** OVHcloud, na których strefa DNS OVHcloud została utworzona dla Twojej domeny.
 
+<!-- CP-STEPS-START:find-dns-servers -->
 Aby je odnaleźć, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -154,6 +157,7 @@ Aby je odnaleźć, kliknij poniższe zakładki, aby wyświetlić kolejne **2** k
 >> - `nsXX.ovh.net` i `dnsXX.ovh.net` lub `nsXXX.ovh.net` i `dnsXXX.ovh.net` (gdzie każdy `X` reprezentuje cyfrę od **0** do **9**).
 >> - `nsXX.ovh.ca` i `dnsXX.ovh.ca` lub `nsXXX.ovh.ca` i `dnsXXX.ovh.ca` (gdzie każdy `X` reprezentuje cyfrę od **0** do **9**).
 >> - `ns200.anycast.me` i `dns200.anycast.me` (jeśli podpisałeś się na opcję [DNS anycast](/links/web/domains-options)).
+<!-- CP-STEPS-END:find-dns-servers -->
 
 Po odzyskaniu dwóch nazw serwerów DNS, mogą zajść dwie sytuacje.
 

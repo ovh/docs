@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-Want your website to be accessible via your domain name? To do this, your domain name must point to the IP address of the service your website is located on (web hosting plan, dedicated server, VPS, etc.). You will then need to configure your domain name's active DNS zone using a type AAAA DNS record.
+Want your website to be accessible via your domain name? To do this, your domain name must point to the IP address of the service your website is located on (web hosting plan, dedicated server, VPS, etc.). You will then need to configure your domain name’s active DNS zone using a type AAAA DNS record.
 
 **Find out how to add a DNS AAAA record to an OVHcloud DNS zone for your domain name.**
 
@@ -52,6 +52,7 @@ Want your website to be accessible via your domain name? To do this, your domain
 
 ### Add a DNS AAAA record for a domain name
 
+<!-- CP-STEPS-START:add-aaaa-record -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -88,9 +89,11 @@ See our detailed guides:
 - [Web Hosting - How to modify a domain name already associated to a web hosting plan](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 ///
+<!-- CP-STEPS-END:add-aaaa-record -->
 
 ### Add a DNS AAAA record for a domain name subdomain
 
+<!-- CP-STEPS-START:add-aaaa-record-subdomain -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -128,6 +131,7 @@ See our detailed guides:
 - [Web Hosting - How to modify a domain name already associated to a web hosting plan](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 ///
+<!-- CP-STEPS-END:add-aaaa-record-subdomain -->
 
 ## Go further
 
@@ -136,7 +140,7 @@ See our detailed guides:
 [Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
-
+ 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
-
+ 
 Join our [community of users](/links/community).

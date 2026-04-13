@@ -56,6 +56,7 @@ CNAME records are useful for avoiding changing IP addresses for your subdomains.
 
 ### Add a DNS record of type CNAME for a domain name subdomain
 
+<!-- CP-STEPS-START:add-cname-record -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -80,6 +81,7 @@ Click on the tabs below to view each of the **5** steps.
 > **Step 5**
 >>
 >> Check the summary, then click `Confirm`{.action}. It takes up to **24** hours for the change to propagate fully over the DNS network.
+<!-- CP-STEPS-END:add-cname-record -->
 
 /// details | See our detailed guides:
 

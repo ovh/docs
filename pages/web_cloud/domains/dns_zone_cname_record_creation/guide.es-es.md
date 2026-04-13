@@ -56,6 +56,7 @@ Los registros CNAME son útiles para evitar tener que modificar las direcciones 
 
 ### Añadir un registro DNS de tipo CNAME para el subdominio de un nombre de dominio
 
+<!-- CP-STEPS-START:add-cname-record -->
 Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 
 > [!tabs]
@@ -80,6 +81,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 > **Paso 5**
 >>
 >> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+<!-- CP-STEPS-END:add-cname-record -->
 
 /// details | Consulte nuestras guías detalladas:
 

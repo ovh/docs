@@ -51,6 +51,7 @@ Pour vérifier si votre site web utilise déjà une adresse IPv6, utilisez le si
 
 ### 2 - Récupérer l'adresse IPv6 de votre hébergement web
 
+<!-- CP-STEPS-START:recuperer-ipv6 -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -67,6 +68,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
 >> Copiez l'adresse IP, puis poursuivez la lecture du guide.
+<!-- CP-STEPS-END:recuperer-ipv6 -->
 
 ### 3 - Configurer la zone DNS active de votre nom de domaine
 

@@ -52,6 +52,7 @@ Vous souhaitez que votre site web soit accessible via votre nom de domaine ? Pou
 
 ### Ajouter un enregistrement DNS de type AAAA pour un nom de domaine
 
+<!-- CP-STEPS-START:add-aaaa-domain -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -76,6 +77,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > **Étape 5**
 >>
 >> Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
+<!-- CP-STEPS-END:add-aaaa-domain -->
 
 /// details | Cliquez ici pour plus d'informations.
 
@@ -91,6 +93,7 @@ Consultez nos guides détaillés :
 
 ### Ajouter un enregistrement DNS de type AAAA pour le sous-domaine d'un nom de domaine
 
+<!-- CP-STEPS-START:add-aaaa-subdomain -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -115,6 +118,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > **Étape 5**
 >>
 >> Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
+<!-- CP-STEPS-END:add-aaaa-subdomain -->
 
 /// details | Cliquez ici pour plus d'informations.
 
