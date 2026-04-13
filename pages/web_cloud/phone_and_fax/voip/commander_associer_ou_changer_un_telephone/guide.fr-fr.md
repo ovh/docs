@@ -41,6 +41,7 @@ Votre ligne SIP peut être associée à un téléphone OVHcloud. Vous pouvez ain
 
 ### Commander un téléphone OVHcloud <a name="obtenir-telephone"></a>
 
+<!-- CP-STEPS-START:commander-telephone -->
 Vous pouvez commander un téléphone OVHcloud pour une ligne SIP qui n'est pas déjà rattachée à un téléphone OVHcloud.
 
 Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
@@ -52,9 +53,11 @@ Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} puis cliquez sur `C
 Sur la page qui s'affiche, dans la partie « Choix de l'équipement », sélectionnez le téléphone que vous souhaitez commander parmi les modèles proposés puis suivez les étapes qui apparaissent.
 
 Si vous souhaitez rattacher votre ligne SIP à un équipement OVHcloud que vous possédez déjà et qui s'affiche dans l'espace client, suivez les instructions de la section « [Rattacher votre ligne à un téléphone](#rattacher-telephone) » de cette documentation.
+<!-- CP-STEPS-END:commander-telephone -->
 
 ### Changer ou renvoyer le téléphone de votre ligne <a name="changer-telephone"></a>
 
+<!-- CP-STEPS-START:changer-telephone -->
 Lorsque vous possédez une ligne SIP OVHcloud actuellement rattachée à un téléphone OVHcloud, vous pouvez :
 
 - changer votre téléphone actuel pour un autre modèle ;
@@ -81,9 +84,11 @@ Sur la page qui s'affiche, dans la partie « Choix de l'équipement », sélec
 > [!primary]
 >
 > Retrouvez plus d'informations sur le déroulement d'un renvoi ou d'un échange d'un téléphone sur notre guide « [Déroulement d'un RMA](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma) ».
+<!-- CP-STEPS-END:changer-telephone -->
 
 ### Rattacher votre ligne à un téléphone <a name="rattacher-telephone"></a>
 
+<!-- CP-STEPS-START:rattacher-telephone -->
 > [!primary]
 > Pour cette démarche, vous aurez besoin de récupérer l'adresse IP publique du téléphone. Dans votre espace client, sélectionnez la ligne principale qui lui est associée. Cliquez ensuite sur l'onglet `Gestion`{.action} puis sur `Informations générales`{.action}. Vous trouverez l'adresse IP publique actuelle du téléphone en bas à droite, dans la partie `Informations SIP`, sous **Ip / port publique**. Attention, ne prenez pas note du port situé après les `:`.
 >
@@ -108,9 +113,11 @@ Sur la page qui s'affiche, sélectionnez l'équipement sur lequel vous souhaitez
 ![rattacher une ligne SIP](images/plug-and-phone-step5.png){.thumbnail}
 
 Si vous préférez commander un nouveau téléphone OVHcloud, suivez les instructions de la section « [Commander un téléphone OVHcloud](#obtenir-telephone) » de ce guide.
+<!-- CP-STEPS-END:rattacher-telephone -->
 
 ### Détacher votre ligne d'un téléphone <a name="detacher-telephone"></a>
 
+<!-- CP-STEPS-START:detacher-telephone -->
 > [!primary]
 > Pour cette démarche, vous aurez besoin de récupérer l'adresse IP publique du téléphone. Dans votre espace client, sélectionnez la ligne principale qui lui est associée. Cliquez ensuite sur l'onglet `Gestion`{.action} puis sur `Informations générales`{.action}. Vous trouverez l'adresse IP publique actuelle du téléphone en bas à droite, dans la partie `Informations SIP`, sous **Ip / port publique**. Attention, ne prenez pas note du port situé après les `:`.
 >
@@ -128,9 +135,11 @@ Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Dé
 Sur la page qui s'affiche, renseignez l'adresse IP publique du téléphone puis cliquez sur `Détacher`{.action}.
 
 ![détacher une ligne SIP](images/detach-phone02.png){.thumbnail}
+<!-- CP-STEPS-END:detacher-telephone -->
 
 ### Commander des accessoires <a name="accessoires"></a>
 
+<!-- CP-STEPS-START:commander-accessoires -->
 Vous pouvez commander des accessoires (casques, câbles, combinés, etc.) pour vos téléphones OVHcloud. Pour cela, suivez les étapes ci-dessous :
 
 Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
@@ -142,6 +151,7 @@ Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Com
 Utilisez les onglets pour filtrer les accessoires par marque ou utilisez le filtre de compatibilité, à droite de l'écran, pour vous assurer de la compatibilité des accessoires avec vos téléphones.
 
 Sélectionnez l'accessoire de votre choix puis suivez les étapes qui apparaissent.
+<!-- CP-STEPS-END:commander-accessoires -->
 
 ## Aller plus loin
 

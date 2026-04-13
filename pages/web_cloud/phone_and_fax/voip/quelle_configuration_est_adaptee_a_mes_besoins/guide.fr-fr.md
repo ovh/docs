@@ -36,18 +36,22 @@ Lorsque vous disposez d'un numéro alias chez OVHcloud, qu'il soit nouvellement 
 
 ### Étape 1 : Accéder à la gestion de votre numéro
 
+<!-- CP-STEPS-START:acces-gestion-numero -->
 Dès lors, deux possibilités existent selon le numéro concerné :
 
 - **le numéro n'a aucune configuration** : cliquez sur l'onglet `Configuration`{.action}, puis suivez les instructions ci-dessous ;
 - **le numéro possède déjà une configuration** : cliquez sur l'onglet `Configuration`{.action}, puis sur `Changer de configuration`{.action}. Suivez ensuite les instructions ci-dessous.
 
 ![configurationnumeroalias](images/alias-config1-2022.png){.thumbnail}
+<!-- CP-STEPS-END:acces-gestion-numero -->
 
 ### Étape 2 : Définir la configuration la plus adaptée à votre besoin
 
+<!-- CP-STEPS-START:choisir-configuration -->
 Dans la nouvelle fenêtre qui apparaît, plusieurs configurations sont possibles.
 
 ![configurationnumeroalias](images/alias-config2.png){.thumbnail}
+<!-- CP-STEPS-END:choisir-configuration -->
 
 Vous trouverez ci-dessous un récapitulatif des différentes configurations. Poursuivez vers celle(s) que vous souhaitez consulter.
 
@@ -98,6 +102,7 @@ Consultez notre guide « [Configurer un Contact Center Solution](/pages/web_clou
 
 ### Étape 3 : Appliquer la configuration souhaitée
 
+<!-- CP-STEPS-START:appliquer-configuration -->
 Une fois votre choix effectué, sélectionnez la configuration que vous souhaitez appliquer à votre numéro, puis cliquez sur le bouton `Paramétrer`{.action}.
 
 Patientez quelques instants afin que le changement soit pris en compte.
@@ -111,6 +116,7 @@ Patientez quelques instants afin que le changement soit pris en compte.
 > Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
 >
 > Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+<!-- CP-STEPS-END:appliquer-configuration -->
 
 ## Aller plus loin
 

@@ -81,6 +81,7 @@ Si vous n'avez pas défini de mot de passe d'accès à distance, accédez à l'o
 
 #### Consulter son répondeur via votre espace client <a name="via-espace-client"></a>
 
+<!-- CP-STEPS-START:consulter-espace-client -->
 Dans l'onglet `Répondeur`{.action}, cliquez sur `Écoute et gestion des messages`{.action}.
 
 ![repondeur](images/voicemail-step7.png){.thumbnail}
@@ -88,6 +89,7 @@ Dans l'onglet `Répondeur`{.action}, cliquez sur `Écoute et gestion des message
 Sur la nouvelle page, un tableau apparaît, dans lequel se trouvent les messages actuellement enregistrés sur votre répondeur. Trois boutons vous permettent respectivement de les lire (voir **1** dans l'image ci-dessous), de les télécharger (voir **2**) et de les supprimer (voir **3**).
 
 ![repondeur](images/voicemail-step8.png){.thumbnail}
+<!-- CP-STEPS-END:consulter-espace-client -->
 
 #### Consulter son répondeur via les notifications e-mail <a name="via-notifications"></a>
 
@@ -97,6 +99,7 @@ Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les 
 
 ### Personnaliser la configuration de son répondeur <a name="personnaliser"></a>
 
+<!-- CP-STEPS-START:personnaliser-repondeur -->
 Dans l'onglet `Répondeur`{.action}, cliquez sur `Configuration du répondeur`{.action}. 
 
 ![repondeur](images/voicemail-step3.png){.thumbnail}
@@ -131,9 +134,11 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 |Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.<br><br>**Nouvelle fonctionnalité en Bêta** : Vous pouvez recevoir par e-mail une transcription écrite du message générée par Intelligence Artificielle.<br> Pour cela, choisissez « Transcription et message joint en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir la transcription écrite et le message vocal au format souhaité en pièce jointe, ou « Transcription en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir uniquement la transcription écrite du message en pièce jointe.|
 
 ![repondeur](images/voicemail-step6.png){.thumbnail}
+<!-- CP-STEPS-END:personnaliser-repondeur -->
 
 ### Associer une ligne à un répondeur <a name="associer"></a>
 
+<!-- CP-STEPS-START:associer-ligne-repondeur -->
 Cette association s'effectue par le biais de deux manipulations : la première permet de choisir le répondeur qui pourra être consulté depuis la ligne et la seconde permet de définir vers quel répondeur les correspondants sont renvoyés.
 
 Dans l'onglet `Répondeur`{.action}, cliquez sur `Choix de la messagerie par défaut`{.action}.
@@ -155,6 +160,7 @@ Vous pouvez notamment définir le délai (en secondes) au bout duquel un appel s
 Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez sur le bouton `Valider`{.action} pour terminer l'opération.
 
 ![repondeur](images/voicemail-step10.png){.thumbnail}
+<!-- CP-STEPS-END:associer-ligne-repondeur -->
 
 ## Aller plus loin
 

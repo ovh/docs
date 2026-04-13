@@ -614,6 +614,7 @@ Pour notre guide, nous allons utiliser une instance **Discovery D2-4**.
 
 #### Déploiement via l'espace client OVHcloud
 
+<!-- CP-STEPS-START:etape2-deploiement-espace-client -->
 Accédez à la section [Public Cloud](/links/control-panel/publiccloud-projects), puis sélectionnez votre projet.
 
 Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. Sélectionnez votre modèle d'instance et la région désirée.
@@ -643,6 +644,7 @@ tail -F /var/lib/3cxpbx/Data/Logs/PbxConfigTool.log
 ```
 
 Une fois le déploiement terminé, l'interface d'administration sera accessible via le FQDN donné lors de la souscription à votre licence 3CX ou via l'adresse IP de votre instance : `https://ip_publique_instance:5001/`
+<!-- CP-STEPS-END:etape2-deploiement-espace-client -->
 
 #### Déploiement via API
 
