@@ -86,8 +86,8 @@ OVHcloud Connect Provider is always a Layer 3 network service: please read the [
 
 ### Limits
 
-- Maximum one BGP session between your equipment and the OVHcloud Point of Presence router (no eBGP Multihop). More details in the [Define PoP BGP session guide](../3.5_define_pop_bgp/guide.en-gb.md).
-- Each Availability Zone supports up to 4 BGP peers. More details in the [Define AZ network guide](../3.6_define_az_subnets/guide.en-gb.md).
+- Maximum one BGP session between your equipment and the OVHcloud Point of Presence router (no eBGP Multihop). More details in the [Configure OCC L3 with BGP](../3.6_occ_l3_bgp/guide.en-gb.md).
+- Each Availability Zone supports up to 4 BGP peers. More details in the [Set up your vRack network](../3.5_vrack_network_setup/guide.en-gb.md).
 - Up to 100 prefixes can be announced per BGP session.
 
 - The following features are not supported:

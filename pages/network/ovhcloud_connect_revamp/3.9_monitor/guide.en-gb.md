@@ -132,7 +132,7 @@ show route protocol bgp
 
 ## What's next?
 
-- [Declare and follow up on an incident](3.9_incident_followup.md) if you detect a problem
+- [Declare and follow up on an incident](3.10_incident_followup.md) if you detect a problem
 - Review [SLAs](1.7_slas.md) to understand uptime guarantees
 
 ## Go further

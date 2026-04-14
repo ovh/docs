@@ -86,7 +86,7 @@ Order two separate OVHcloud Connect services at **different PoPs** for physical 
 ### 2. Install both physical connections
 
 For each link:
-- **Direct:** Install cross-connects at each PoP. See [Cross Connect LOA](3.10_cross_connect_loa.md).
+- **Direct:** Install cross-connects at each PoP. See [Cross Connect LOA](3.11_cross_connect_loa.md).
 - **Provider:** Share the respective pairing keys with your provider(s).
 
 ### 3. Configure BGP with failover
@@ -133,11 +133,11 @@ route-map BACKUP-OUT permit 10
 
 ### 4. Associate both links with your vRack
 
-Associate both OVHcloud Connect services with the **same vRack**. See [Associate with vRack](3.7_associate_vrack.md).
+Associate both OVHcloud Connect services with the **same vRack**. See [Associate with vRack](3.8_associate_vrack.md).
 
 ### 5. Configure subnets in both AZs
 
-Set up private subnets in both Availability Zones. See [Define AZ subnets](3.6_define_az_subnets.md).
+Set up private subnets in both Availability Zones. See [Set up your vRack network](3.5_vrack_network_setup.md).
 
 ### 6. Test failover
 
@@ -166,7 +166,7 @@ Monitor **both links** independently. Set alerts for:
 - Traffic imbalance (all traffic on one link may indicate a failure on the other)
 - Bandwidth approaching capacity on either link
 
-See [Monitor](3.8_monitor.md).
+See [Monitor](3.9_monitor.md).
 
 ## Advanced: Active/Active configuration
 
@@ -181,6 +181,6 @@ For maximum throughput and faster failover, you can run both links in **Active/A
 
 ## What's next?
 
-- [Monitor your connections](3.8_monitor.md)
+- [Monitor your connections](3.9_monitor.md)
 - Learn about [Multi-AZ architecture](1.5_multi_az.md)
 - Explore cloud interconnection: [AWS](4.3.1_aws_simple.md) · [Azure](4.4.1_azure_simple.md) · [GCP](4.5.1_gcp_simple.md)

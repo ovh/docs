@@ -86,7 +86,7 @@ Both OVHcloud Connect services should be associated with the same vRack.
 
 ### 5. Configure subnets across AZs
 
-Distribute subnets across both AZs for full redundancy. See [Define AZ subnets](3.6_define_az_subnets.md).
+Distribute subnets across both AZs for full redundancy. See [Set up your vRack network](3.5_vrack_network_setup.md).
 
 ### 6. Test failover
 
@@ -97,7 +97,7 @@ Distribute subnets across both AZs for full redundancy. See [Define AZ subnets](
 
 ### 7. Monitor both paths
 
-Set up independent monitoring for each link, each BGP session, and each WAN circuit. See [Monitor](3.8_monitor.md).
+Set up independent monitoring for each link, each BGP session, and each WAN circuit. See [Monitor](3.9_monitor.md).
 
 ## SD-WAN considerations
 

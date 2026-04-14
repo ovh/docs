@@ -117,7 +117,7 @@ The following tables list the regions accessible from each PoP, the correspondin
 ## What's next?
 
 - Understand [Multi-AZ](1.5_multi_az.md) for resilient architectures
-- Review [PoP configuration and BGP](3.5_define_pop_bgp.md) for technical setup
+- Review [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md) for technical setup
 
 ## Go further
 

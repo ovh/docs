@@ -97,7 +97,7 @@ You manage the BGP session yourself. Configure your router to peer with OVHcloud
 
 The provider handles BGP configuration on your behalf. Verify in your provider's portal that the session is established and routes are being exchanged.
 
-See [Define your PoP configuration (BGP session)](3.5_define_pop_bgp.md) for detailed guidance.
+See [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md) for detailed guidance.
 
 ### Step 5 — Associate with your vRack
 
@@ -107,7 +107,7 @@ Link the OVHcloud Connect service to your **vRack**:
 2. Add your OVHcloud Connect service.
 3. Configure the required VLANs and subnets.
 
-See [Associate an OVHcloud Connect to your vRack](3.7_associate_vrack.md).
+See [Associate an OVHcloud Connect to your vRack](3.8_associate_vrack.md).
 
 ### Step 6 — Test and verify
 
@@ -131,7 +131,7 @@ See [Associate an OVHcloud Connect to your vRack](3.7_associate_vrack.md).
 ## What's next?
 
 - For a self-managed connection, see [Quick Start: Direct Connection](2.1_quick_start_direct.md)
-- Set up [monitoring](3.8_monitor.md)
+- Set up [monitoring](3.9_monitor.md)
 - Explore [resilient architectures](4.1.2_onprem_resilient.md)
 
 ## Go further

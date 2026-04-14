@@ -79,7 +79,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 2. Install the physical connection
 >>
->>- **Direct:** Provide the LOA to the data centre operator to install a cross-connect. See [Cross Connect LOA](../3.10_cross_connect_loa).
+>>- **Direct:** Provide the LOA to the data centre operator to install a cross-connect. See [Cross Connect LOA](../3.11_cross_connect_loa).
 >>- **Provider:** Share the pairing key with your provider and wait for activation.
 >>
 >>#### 3. Configure BGP
@@ -89,15 +89,15 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>- Advertise your on-premises prefixes (e.g. `10.0.0.0/16`) to OVHcloud.
 >>- Accept OVHcloud prefixes (e.g. `172.16.0.0/16`) from OVHcloud.
 >>
->>See [Define your PoP configuration (BGP session)](../3.5_define_pop_bgp) for detailed instructions and configuration examples.
+>>See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp) for detailed instructions and configuration examples.
 >>
 >>#### 4. Associate with vRack
 >>
->>Link your OVHcloud Connect service to your vRack. See [Associate with vRack](../3.7_associate_vrack).
+>>Link your OVHcloud Connect service to your vRack. See [Associate with vRack](../3.8_associate_vrack).
 >>
 >>#### 5. Configure AZ subnets
 >>
->>Define the private subnets in OVHcloud that your on-premises network should reach. See [Define AZ subnets](../3.6_define_az_subnets).
+>>Define the private subnets in OVHcloud that your on-premises network should reach. See [Set up your vRack network](../3.5_vrack_network_setup).
 >>
 >>#### 6. Test connectivity
 >>
@@ -110,7 +110,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 7. Set up monitoring
 >>
->>Configure monitoring alerts for link status, BGP session, and bandwidth. See [Monitor](../3.8_monitor).
+>>Configure monitoring alerts for link status, BGP session, and bandwidth. See [Monitor](../3.9_monitor).
 >>
 >>### Limitations of a simple connection
 >>
@@ -209,11 +209,11 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>- Accept OVHcloud routes.
 >>- Ensure your WAN routing propagates the OVHcloud routes back to all branch offices.
 >>
->>See [Define your PoP configuration (BGP session)](../3.5_define_pop_bgp).
+>>See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp).
 >>
 >>#### 4. Associate with vRack and configure subnets
 >>
->>Link to your vRack and set up the required subnets. See [Associate with vRack](../3.7_associate_vrack) and [Define AZ subnets](../3.6_define_az_subnets).
+>>Link to your vRack and set up the required subnets. See [Associate with vRack](../3.8_associate_vrack) and [Set up your vRack network](../3.5_vrack_network_setup).
 >>
 >>#### 5. Test end-to-end connectivity
 >>
@@ -232,7 +232,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 6. Set up monitoring
 >>
->>Monitor the WAN edge BGP session and OVHcloud Connect link. See [Monitor](../3.8_monitor).
+>>Monitor the WAN edge BGP session and OVHcloud Connect link. See [Monitor](../3.9_monitor).
 >>
 > AWS
 >>### Prerequisites
@@ -340,7 +340,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 5. Associate OVHcloud Connect with vRack
 >>
->>See [Associate with vRack](../3.7_associate_vrack).
+>>See [Associate with vRack](../3.8_associate_vrack).
 >>
 >>#### 6. Test connectivity
 >>
@@ -482,13 +482,13 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 5. Configure OVHcloud BGP peering
 >>
->>[Define your PoP and BGP settings](../3.5_define_pop_bgp) for the OVHcloud Connect service.
+>>[Configure OCC L3 with BGP](../3.6_occ_l3_bgp) for the OVHcloud Connect service.
 >>
 >>Ensure the MCR or provider router advertises Azure prefixes (`10.2.0.0/16`) toward OVHcloud, and OVHcloud prefixes (`172.16.0.0/16`) toward Azure.
 >>
 >>#### 6. Associate your vRack
 >>
->>[Associate the OVHcloud Connect service with your vRack](../3.7_associate_vrack).
+>>[Associate the OVHcloud Connect service with your vRack](../3.8_associate_vrack).
 >>
 >>#### 7. Verify connectivity
 >>
@@ -656,7 +656,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 5. Configure OVHcloud BGP peering
 >>
->>[Define your PoP and BGP settings](../3.5_define_pop_bgp).
+>>[Configure OCC L3 with BGP](../3.6_occ_l3_bgp).
 >>
 >>Ensure the provider MCR:
 >>- Advertises GCP VPC prefixes (`10.3.0.0/16`) toward OVHcloud (ASN 35540).
@@ -664,7 +664,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 6. Associate your vRack
 >>
->>[Associate the OVHcloud Connect service with your vRack](../3.7_associate_vrack).
+>>[Associate the OVHcloud Connect service with your vRack](../3.8_associate_vrack).
 >>
 >>#### 7. Verify connectivity
 >>
@@ -699,7 +699,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 ### What's next?
 
 - [Resilient On-Prem architecture](../4.2_resilient) for high availability
-- [Monitor your connection](../3.8_monitor)
+- [Monitor your connection](../3.9_monitor)
 
 ### Go further
 

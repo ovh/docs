@@ -165,8 +165,8 @@ With default BGP timers (hold time = 90 seconds), failover can take **30–90 se
 |---|---|
 | Cross-connect not completed (Direct) | Contact your colocation provider; check LOA status |
 | Provider VXC not provisioned (Provider) | Check provider portal; ensure pairing key is correct |
-| BGP not configured | [Configure BGP](3.5_define_pop_bgp.md) |
-| vRack not associated | [Associate vRack](3.7_associate_vrack.md) |
+| BGP not configured | [Configure BGP](3.6_occ_l3_bgp.md) |
+| vRack not associated | [Associate vRack](3.8_associate_vrack.md) |
 
 ### I can see the BGP session but have no reachability
 
@@ -180,7 +180,7 @@ With default BGP timers (hold time = 90 seconds), failover can take **30–90 se
 - Check interface errors and CRC counts on your router.
 - Verify the **bandwidth** of your OVHcloud Connect matches your traffic load.
 - Look for **MTU mismatches** causing fragmentation.
-- Use the [monitoring guide](3.8_monitor.md) to check link health.
+- Use the [monitoring guide](3.9_monitor.md) to check link health.
 
 ### How do I open a support ticket?
 
@@ -189,7 +189,7 @@ With default BGP timers (hold time = 90 seconds), failover can take **30–90 se
 3. Select **Network** → **OVHcloud Connect**.
 4. Include your service name, error details, and any diagnostic output.
 
-See [Incident follow-up](3.9_incident_followup.md) for detailed escalation procedures.
+See [Incident follow-up](3.10_incident_followup.md) for detailed escalation procedures.
 
 ---
 

@@ -129,13 +129,13 @@ On the Azure ExpressRoute circuit:
 
 ### 5. Configure OVHcloud BGP peering
 
-[Define your PoP and BGP settings](../3.5_define_pop_bgp.md) for the OVHcloud Connect service.
+[Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md) for the OVHcloud Connect service.
 
 Ensure the MCR or provider router advertises Azure prefixes (`10.2.0.0/16`) toward OVHcloud, and OVHcloud prefixes (`172.16.0.0/16`) toward Azure.
 
 ### 6. Associate your vRack
 
-[Associate the OVHcloud Connect service with your vRack](../3.7_associate_vrack.md).
+[Associate the OVHcloud Connect service with your vRack](../3.8_associate_vrack.md).
 
 ### 7. Verify connectivity
 
@@ -173,5 +173,5 @@ There are **three BGP segments** in this architecture:
 
 - [Resilient Azure connection](4.4.2_azure_resilient.md) for production workloads
 - [Azure ExpressRoute documentation](https://learn.microsoft.com/en-us/azure/expressroute/)
-- [Monitor your OVHcloud Connect](../3.8_monitor.md) service
+- [Monitor your OVHcloud Connect](../3.9_monitor.md) service
 - [Connect GCP to OVHcloud](4.5.1_gcp_simple.md) for additional multi-cloud links

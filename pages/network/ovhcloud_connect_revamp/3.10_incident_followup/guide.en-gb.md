@@ -142,7 +142,7 @@ After the incident is resolved:
 
 ## What's next?
 
-- Set up proactive [monitoring](3.8_monitor.md) to detect issues before they impact your users
+- Set up proactive [monitoring](3.9_monitor.md) to detect issues before they impact your users
 - Review your [SLA](1.7_slas.md) commitments
 
 ## Go further

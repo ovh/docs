@@ -96,13 +96,13 @@ Once the physical link is up:
 2. On **your router**, configure a BGP neighbour using the peering IP and OVHcloud's ASN provided in the configuration details.
 3. Advertise the IP prefixes you want to reach from OVHcloud.
 
-For detailed BGP configuration, see [Define your PoP configuration (BGP session)](3.5_define_pop_bgp.md).
+For detailed BGP configuration, see [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md).
 
 ### Step 5 — Associate with your vRack
 
 Link your OVHcloud Connect service to your **vRack** so that your OVHcloud resources (servers, VMs, etc.) can communicate over the private connection.
 
-See [Associate an OVHcloud Connect to your vRack](3.7_associate_vrack.md).
+See [Associate an OVHcloud Connect to your vRack](3.8_associate_vrack.md).
 
 ### Step 6 — Test and verify
 
@@ -125,13 +125,13 @@ Run these checks to confirm everything is working:
 | No routes exchanged | BGP prefix filters, route-map configuration, maximum-prefix limits |
 | Cannot ping OVHcloud resources | vRack association, VLAN ID, subnet configuration in AZ |
 
-If you cannot resolve the issue, [open a support ticket](3.9_incident_followup.md) with your BGP output, interface status, and traceroute results.
+If you cannot resolve the issue, [open a support ticket](3.10_incident_followup.md) with your BGP output, interface status, and traceroute results.
 
 ## What's next?
 
 - For a managed connection, see [Quick Start: Provider Connection](2.2_quick_start_provider.md)
 - For resilient setups, see [Resilient On-Prem tutorial](4.1.2_onprem_resilient.md)
-- Set up [monitoring](3.8_monitor.md) for your connection
+- Set up [monitoring](3.9_monitor.md) for your connection
 
 ## Go further
 

@@ -107,7 +107,7 @@ If **not** using a provider MCR:
 
 ### 5. Associate OVHcloud Connect with vRack
 
-See [Associate with vRack](3.7_associate_vrack.md).
+See [Associate with vRack](3.8_associate_vrack.md).
 
 ### 6. Test connectivity
 

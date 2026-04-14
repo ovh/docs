@@ -96,7 +96,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>#### 2. Install both physical connections
 >>
 >>For each link:
->>- **Direct:** Install cross-connects at each PoP. See [Cross Connect LOA](../3.10_cross_connect_loa).
+>>- **Direct:** Install cross-connects at each PoP. See [Cross Connect LOA](../3.11_cross_connect_loa).
 >>- **Provider:** Share the respective pairing keys with your provider(s).
 >>
 >>#### 3. Configure BGP with failover
@@ -143,11 +143,11 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 4. Associate both links with your vRack
 >>
->>Associate both OVHcloud Connect services with the **same vRack**. See [Associate with vRack](../3.7_associate_vrack).
+>>Associate both OVHcloud Connect services with the **same vRack**. See [Associate with vRack](../3.8_associate_vrack).
 >>
 >>#### 5. Configure subnets in both AZs
 >>
->>Set up private subnets in both Availability Zones. See [Define AZ subnets](../3.6_define_az_subnets).
+>>Set up private subnets in both Availability Zones. See [Set up your vRack network](../3.5_vrack_network_setup).
 >>
 >>#### 6. Test failover
 >>
@@ -176,7 +176,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>- Traffic imbalance (all traffic on one link may indicate a failure on the other)
 >>- Bandwidth approaching capacity on either link
 >>
->>See [Monitor](../3.8_monitor).
+>>See [Monitor](../3.9_monitor).
 >>
 >>### Advanced: Active/Active configuration
 >>
@@ -282,7 +282,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 5. Configure subnets across AZs
 >>
->>Distribute subnets across both AZs for full redundancy. See [Define AZ subnets](../3.6_define_az_subnets).
+>>Distribute subnets across both AZs for full redundancy. See [Set up your vRack network](../3.5_vrack_network_setup).
 >>
 >>#### 6. Test failover
 >>
@@ -293,7 +293,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 7. Monitor both paths
 >>
->>Set up independent monitoring for each link, each BGP session, and each WAN circuit. See [Monitor](../3.8_monitor).
+>>Set up independent monitoring for each link, each BGP session, and each WAN circuit. See [Monitor](../3.9_monitor).
 >>
 >>### SD-WAN considerations
 >>
@@ -415,11 +415,11 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>- Use **AS-path prepending** on the backup path.
 >>- On AWS, use **Direct Connect Gateway** with appropriate route priorities.
 >>
->>See [Define your PoP configuration (BGP session)](../3.5_define_pop_bgp) for detailed instructions.
+>>See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp) for detailed instructions.
 >>
 >>#### 5. Associate both links with your vRack
 >>
->>Associate both OVHcloud Connect services with the same vRack. See [Associate with vRack](../3.7_associate_vrack).
+>>Associate both OVHcloud Connect services with the same vRack. See [Associate with vRack](../3.8_associate_vrack).
 >>
 >>#### 6. Test failover
 >>
@@ -585,7 +585,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 6. Configure OVHcloud BGP with failover
 >>
->>On the OVHcloud side, use [BGP Local Preference](../3.5_define_pop_bgp) to prefer the primary path:
+>>On the OVHcloud side, use [Configure OCC L3 with BGP](../3.6_occ_l3_bgp) to prefer the primary path:
 >>
 >>| Path | Local Preference | AS-path prepend |
 >>|---|---|---|
@@ -594,7 +594,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 7. Associate both services with your vRack
 >>
->>[Associate both OVHcloud Connect services](../3.7_associate_vrack) with the same vRack. Both will inject routes; the vRack will use the higher Local Preference path.
+>>[Associate both OVHcloud Connect services](../3.8_associate_vrack) with the same vRack. Both will inject routes; the vRack will use the higher Local Preference path.
 >>
 >>#### 8. Test failover
 >>
@@ -774,7 +774,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>**OVHcloud side:**
 >>
->>Use [Local Preference and AS-path prepending](../3.5_define_pop_bgp):
+>>Use [Configure OCC L3 with BGP](../3.6_occ_l3_bgp):
 >>
 >>| Path | Local Preference | AS-path prepend |
 >>|---|---|---|
@@ -783,7 +783,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 7. Associate both services with your vRack
 >>
->>[Associate both OVHcloud Connect services](../3.7_associate_vrack) with the same vRack.
+>>[Associate both OVHcloud Connect services](../3.8_associate_vrack) with the same vRack.
 >>
 >>#### 8. Test failover
 >>
@@ -806,7 +806,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 ### What's next?
 
 - [Simple architecture](../4.1_simple) for non-critical use cases
-- [Monitor your connections](../3.8_monitor)
+- [Monitor your connections](../3.9_monitor)
 - [Multi-AZ configuration](../1.5_multi_az) for OVHcloud side resilience
 
 ### Go further

@@ -69,7 +69,7 @@ Choose **Direct** or **Provider** depending on your situation:
 
 ### 2. Install the physical connection
 
-- **Direct:** Provide the LOA to the data centre operator to install a cross-connect. See [Cross Connect LOA](3.10_cross_connect_loa.md).
+- **Direct:** Provide the LOA to the data centre operator to install a cross-connect. See [Cross Connect LOA](3.11_cross_connect_loa.md).
 - **Provider:** Share the pairing key with your provider and wait for activation.
 
 ### 3. Configure BGP
@@ -79,15 +79,15 @@ Set up a single BGP session between your on-premises router and OVHcloud:
 - Advertise your on-premises prefixes (e.g. `10.0.0.0/16`) to OVHcloud.
 - Accept OVHcloud prefixes (e.g. `172.16.0.0/16`) from OVHcloud.
 
-See [Define your PoP configuration (BGP session)](3.5_define_pop_bgp.md) for detailed instructions and configuration examples.
+See [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md) for detailed instructions and configuration examples.
 
 ### 4. Associate with vRack
 
-Link your OVHcloud Connect service to your vRack. See [Associate with vRack](3.7_associate_vrack.md).
+Link your OVHcloud Connect service to your vRack. See [Associate with vRack](3.8_associate_vrack.md).
 
 ### 5. Configure AZ subnets
 
-Define the private subnets in OVHcloud that your on-premises network should reach. See [Define AZ subnets](3.6_define_az_subnets.md).
+Define the private subnets in OVHcloud that your on-premises network should reach. See [Set up your vRack network](3.5_vrack_network_setup.md).
 
 ### 6. Test connectivity
 
@@ -100,7 +100,7 @@ Define the private subnets in OVHcloud that your on-premises network should reac
 
 ### 7. Set up monitoring
 
-Configure monitoring alerts for link status, BGP session, and bandwidth. See [Monitor](3.8_monitor.md).
+Configure monitoring alerts for link status, BGP session, and bandwidth. See [Monitor](3.9_monitor.md).
 
 ## Limitations of a simple connection
 
@@ -113,4 +113,4 @@ Configure monitoring alerts for link status, BGP session, and bandwidth. See [Mo
 ## What's next?
 
 - [Resilient On-Prem architecture](4.1.2_onprem_resilient.md) for high availability
-- [Monitor your connection](3.8_monitor.md)
+- [Monitor your connection](3.9_monitor.md)

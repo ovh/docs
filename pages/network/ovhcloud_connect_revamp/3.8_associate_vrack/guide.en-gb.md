@@ -118,8 +118,8 @@ If you need to dissociate OVHcloud Connect from a vRack:
 
 ## What's next?
 
-- [Monitor your OVHcloud Connect](3.8_monitor.md)
-- [Define your AZ configuration](3.6_define_az_subnets.md) to set up subnets properly
+- [Monitor your OVHcloud Connect](3.9_monitor.md)
+- [Set up your vRack network](3.5_vrack_network_setup.md) to set up subnets properly
 
 ## Go further
 

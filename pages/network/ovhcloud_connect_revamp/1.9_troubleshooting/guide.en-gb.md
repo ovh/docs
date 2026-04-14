@@ -24,8 +24,8 @@ This guide helps you diagnose and resolve the most common issues encountered wit
 | **Glossary** | [Glossary of OVHcloud Connect terms](../1.2_glossary/guide.en-gb.md) |
 | **OVHcloud services status** | [status.ovhcloud.com](https://www.status-ovhcloud.com/) |
 | **Prerequisites & Limitations** | [Prerequisites & Limitations](../1.8_prerequisites_limitations/guide.en-gb.md) |
-| **Monitoring guide** | [Monitor Your OVHcloud Connect](../3.8_monitor/guide.en-gb.md) |
-| **Incident follow-up** | [Declare and Follow Up Upon an Incident](../3.9_incident_followup/guide.en-gb.md) |
+| **Monitoring guide** | [Monitor Your OVHcloud Connect](../3.9_monitor/guide.en-gb.md) |
+| **Incident follow-up** | [Declare and Follow Up Upon an Incident](../3.10_incident_followup/guide.en-gb.md) |
 
 ---
 
@@ -37,7 +37,7 @@ After ordering OVHcloud Connect Direct, the physical link shows no optical signa
 
 | # | Possible cause | Solution |
 |---|---|---|
-| 1 | **Cross-connect not yet installed** | Contact your data centre operator and provide the LOA. See [Ordering a Cross Connect with an LOA](../3.10_cross_connect_loa/guide.en-gb.md). |
+| 1 | **Cross-connect not yet installed** | Contact your data centre operator and provide the LOA. See [Ordering a Cross Connect with an LOA](../3.11_cross_connect_loa/guide.en-gb.md). |
 | 2 | **LOA misinterpreted by the data centre** | Verify the LOA details with the PoP operator: cabinet, cage, patch panel, port, fibre termination. See [How to read LOA information](#how-to-read-loa-information) below. |
 | 3 | **Tx/Rx fibre inversion** | The transmit and receive fibres may be swapped, causing light to arrive on the wrong port. Ask the data centre operator to check for a Tx/Rx inversion on the cross-connect. |
 | 4 | **SFP module issue** | Ensure the SFP matches the ordered bandwidth: 1000Base-LX/LH for 1 Gbps, 10GBase-LR for 10 Gbps, 100GBase-LR4 for 100 Gbps. Replace the SFP if faulty. See [Prerequisites & Limitations](../1.8_prerequisites_limitations/guide.en-gb.md). |
@@ -183,11 +183,11 @@ The physical link is up, but the BGP session does not reach the `Established` st
 
 | # | Possible cause | Solution |
 |---|---|---|
-| 1 | **Incorrect peer IP address** | Verify that the peer IP configured on your router matches exactly the IP assigned by OVHcloud in the Control Panel. The PoP peering subnet is a /30: OVHcloud takes the first IP, you take the second. See [Define PoP BGP session](../3.5_define_pop_bgp/guide.en-gb.md). |
+| 1 | **Incorrect peer IP address** | Verify that the peer IP configured on your router matches exactly the IP assigned by OVHcloud in the Control Panel. The PoP peering subnet is a /30: OVHcloud takes the first IP, you take the second. See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp/guide.en-gb.md). |
 | 2 | **Incorrect ASN** | Check that you are peering with OVHcloud ASN **35540** and that your own ASN is correctly configured (private ASN range 64512–65534 recommended). Avoid reserved ASNs: **65501** (EU PoP), **65502** (CA PoP), **65519** (Asia PoP). |
 | 3 | **VLAN ID mismatch** | The VLAN tag on your interface must match the VLAN ID configured in the OVHcloud Control Panel PoP configuration. Verify with `show interfaces` or `show vlans`. |
 | 4 | **Firewall blocking TCP port 179** | BGP uses TCP port 179. Ensure no firewall or ACL is blocking this port between the two peers. |
-| 5 | **Interface not configured with correct encapsulation** | For L3 connections, the interface must use 802.1Q encapsulation with the correct VLAN ID. See configuration examples in the [BGP guide](../3.5_define_pop_bgp/guide.en-gb.md). |
+| 5 | **Interface not configured with correct encapsulation** | For L3 connections, the interface must use 802.1Q encapsulation with the correct VLAN ID. See configuration examples in the [Configure OCC L3 with BGP](../3.6_occ_l3_bgp/guide.en-gb.md). |
 | 6 | **PoP configuration not created in OVHcloud** | Verify in the OVHcloud Control Panel that a PoP configuration has been created for your service. Without it, OVHcloud's router will not peer. |
 | 7 | **MD5 authentication mismatch** | If MD5 is configured, the password must match on both sides. Check with your OVHcloud Connect service details. |
 
@@ -292,10 +292,10 @@ The BGP session shows `Established`, but no prefixes are being received from OVH
 
 | # | Possible cause | Solution |
 |---|---|---|
-| 1 | **Missing `network` statement or export policy** | On your router, ensure you are advertising the correct prefixes using `network` commands (Cisco) or export policies (Juniper). See [Define PoP BGP session](../3.5_define_pop_bgp/guide.en-gb.md). |
+| 1 | **Missing `network` statement or export policy** | On your router, ensure you are advertising the correct prefixes using `network` commands (Cisco) or export policies (Juniper). See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp/guide.en-gb.md). |
 | 2 | **Prefix filter blocking routes** | Your import prefix-list may be too restrictive, filtering out OVHcloud routes. Check your prefix-lists and route policies. |
-| 3 | **vRack not associated** | OVHcloud routes are only exchanged if the OVHcloud Connect service is associated with a vRack. Verify the association in the Control Panel. See [Associate with vRack](../3.7_associate_vrack/guide.en-gb.md). |
-| 4 | **AZ subnets not configured** | If no subnets are defined in the Availability Zone configuration, there will be no routes to exchange. See [Define AZ Network](../3.6_define_az_subnets/guide.en-gb.md). |
+| 3 | **vRack not associated** | OVHcloud routes are only exchanged if the OVHcloud Connect service is associated with a vRack. Verify the association in the Control Panel. See [Associate with vRack](../3.8_associate_vrack/guide.en-gb.md). |
+| 4 | **AZ subnets not configured** | If no subnets are defined in the Availability Zone configuration, there will be no routes to exchange. See [Set up your vRack network](../3.5_vrack_network_setup/guide.en-gb.md). |
 | 5 | **Maximum prefix limit reached** | OVHcloud supports up to **100 prefixes** per BGP session. If you exceed this limit, the session may stop accepting new routes. Aggregate your prefixes. |
 | 6 | **Route not in the routing table** | The prefix you are trying to advertise must exist in your router's routing table (via a connected network, static route, or IGP). |
 
@@ -366,7 +366,7 @@ BGP is up, routes appear in the routing table on both sides, but actual traffic 
 |---|---|---|
 | 1 | **Firewall or ACL blocking traffic** | Check firewall rules and access control lists on your router, your OVHcloud resources (security groups, iptables), and any intermediate devices. |
 | 2 | **VLAN tagging mismatch** | The VLAN ID on your interface must match the VLAN configured in OVHcloud. A mismatch results in tagged traffic being silently dropped. |
-| 3 | **Incorrect subnet configuration** | Verify that source and destination IPs belong to the correct subnets and that there are no overlapping ranges. See [Define AZ Network](../3.6_define_az_subnets/guide.en-gb.md). |
+| 3 | **Incorrect subnet configuration** | Verify that source and destination IPs belong to the correct subnets and that there are no overlapping ranges. See [Set up your vRack network](../3.5_vrack_network_setup/guide.en-gb.md). |
 | 4 | **Asymmetric routing** | If you have multiple paths (e.g. internet + OVHcloud Connect), return traffic may take a different path. Ensure symmetric routing using BGP attributes (Local Preference, AS-path prepending). |
 | 5 | **vRack resource not attached** | The target OVHcloud resource (Bare Metal server, Public Cloud instance, Hosted Private Cloud) must be attached to the same vRack as OVHcloud Connect. Verify in the Control Panel. |
 | 6 | **MTU mismatch causing fragmentation** | Large packets may be silently dropped if MTU differs between segments. Test with varying packet sizes: `ping -s 1472 -M do <destination>` (Linux) to check for fragmentation issues. |
@@ -465,9 +465,9 @@ You have two OVHcloud Connect links for redundancy, but traffic does not failove
 | # | Possible cause | Solution |
 |---|---|---|
 | 1 | **Both links in the same PoP** | For true Multi-AZ resilience, the two links must terminate at **different PoPs** and **different Availability Zones**. See [Multi-AZ](../1.5_multi_az/guide.en-gb.md). |
-| 2 | **BGP failover not configured** | Configure BGP attributes to control path selection: use **Local Preference** to prefer the primary path and **AS-path prepending** on the backup. See [Define PoP BGP session](../3.5_define_pop_bgp/guide.en-gb.md). |
+| 2 | **BGP failover not configured** | Configure BGP attributes to control path selection: use **Local Preference** to prefer the primary path and **AS-path prepending** on the backup. See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp/guide.en-gb.md). |
 | 3 | **BFD not enabled** | Without BFD, BGP failover relies on hold timers (default 90 seconds). Enable **BFD (Bidirectional Forwarding Detection)** to reduce failover time to under 1 second. Contact OVHcloud support to confirm BFD availability for your service. |
-| 4 | **vRack not shared between both services** | Both OVHcloud Connect services must be associated with the **same vRack** for failover to work. Verify in the Control Panel. See [Associate with vRack](../3.7_associate_vrack/guide.en-gb.md). |
+| 4 | **vRack not shared between both services** | Both OVHcloud Connect services must be associated with the **same vRack** for failover to work. Verify in the Control Panel. See [Associate with vRack](../3.8_associate_vrack/guide.en-gb.md). |
 | 5 | **Prefix-list filtering backup routes** | Ensure your import/export prefix filters allow the same prefixes on both links. |
 
 ### Verification commands
@@ -495,7 +495,7 @@ BGP session may not establish, or traffic may be routed incorrectly due to IP ad
 | # | Possible cause | Solution |
 |---|---|---|
 | 1 | **Using OVHcloud reserved IPs** | In the PoP /30 subnet, the **first IP** is reserved for OVHcloud. In the DC /28 (minimum) subnet, the **first three IPs** are reserved for OVHcloud. Ensure you are using the correct IPs. |
-| 2 | **Overlapping subnets** | Your on-premises subnets must not overlap with subnets used in the OVHcloud vRack. Plan your IP addressing carefully. See [Define AZ Network](../3.6_define_az_subnets/guide.en-gb.md). |
+| 2 | **Overlapping subnets** | Your on-premises subnets must not overlap with subnets used in the OVHcloud vRack. Plan your IP addressing carefully. See [Set up your vRack network](../3.5_vrack_network_setup/guide.en-gb.md). |
 | 3 | **Duplicate ASN** | Your BGP ASN must differ from OVHcloud's ASN (35540) and from the reserved ASNs (65501, 65502, 65519). |
 
 ---
@@ -578,13 +578,13 @@ If you have followed the troubleshooting steps above and the issue persists, ope
    - **Symptoms** observed
    - **Diagnostic outputs** (BGP summary, interface status, traceroute, optical values)
    - **Steps already taken** to troubleshoot
-5. See [Declare and Follow Up Upon an Incident](../3.9_incident_followup/guide.en-gb.md) for the full incident management process.
+5. See [Declare and Follow Up Upon an Incident](../3.10_incident_followup/guide.en-gb.md) for the full incident management process.
 
 ---
 
 ## What's next?
 
-- Set up proactive [monitoring](../3.8_monitor/guide.en-gb.md) to detect issues before they impact your users
+- Set up proactive [monitoring](../3.9_monitor/guide.en-gb.md) to detect issues before they impact your users
 - Review [Prerequisites & Limitations](../1.8_prerequisites_limitations/guide.en-gb.md) to avoid known pitfalls
 - Consult the [FAQ](../5_faq/guide.en-gb.md) for answers to common questions
 - Check [SLAs](../1.7_slas/guide.en-gb.md) for uptime guarantees and service credits

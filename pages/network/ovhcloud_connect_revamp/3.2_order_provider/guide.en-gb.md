@@ -111,9 +111,9 @@ The pairing key identifies your OVHcloud Connect order and allows the provider t
 
 ## What's next?
 
-- [Configure BGP at the PoP](3.5_define_pop_bgp.md)
-- [Associate with your vRack](3.7_associate_vrack.md)
-- [Monitor your connection](3.8_monitor.md)
+- [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md)
+- [Associate with your vRack](3.8_associate_vrack.md)
+- [Monitor your connection](3.9_monitor.md)
 
 ## Go further
 

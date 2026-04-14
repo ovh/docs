@@ -137,7 +137,7 @@ After the provider provisions the connection:
 
 ### 5. Configure OVHcloud BGP peering
 
-[Define your PoP and BGP settings](../3.5_define_pop_bgp.md).
+[Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md).
 
 Ensure the provider MCR:
 - Advertises GCP VPC prefixes (`10.3.0.0/16`) toward OVHcloud (ASN 35540).
@@ -145,7 +145,7 @@ Ensure the provider MCR:
 
 ### 6. Associate your vRack
 
-[Associate the OVHcloud Connect service with your vRack](../3.7_associate_vrack.md).
+[Associate the OVHcloud Connect service with your vRack](../3.8_associate_vrack.md).
 
 ### 7. Verify connectivity
 
@@ -181,5 +181,5 @@ Ensure the provider MCR:
 
 - [Resilient GCP connection](4.5.2_gcp_resilient.md) for production workloads
 - [GCP Interconnect documentation](https://cloud.google.com/network-connectivity/docs/interconnect)
-- [Monitor your OVHcloud Connect](../3.8_monitor.md) service
+- [Monitor your OVHcloud Connect](../3.9_monitor.md) service
 - [FAQ](../5_faq.md) for common questions

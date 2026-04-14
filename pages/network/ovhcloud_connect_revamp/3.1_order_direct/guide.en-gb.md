@@ -104,9 +104,9 @@ print(result)
 
 ## What's next?
 
-- [Receive and use your LOA](3.10_cross_connect_loa.md)
-- [Configure BGP at the PoP](3.5_define_pop_bgp.md)
-- [Associate with your vRack](3.7_associate_vrack.md)
+- [Receive and use your LOA](3.11_cross_connect_loa.md)
+- [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md)
+- [Associate with your vRack](3.8_associate_vrack.md)
 
 ## Go further
 
