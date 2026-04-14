@@ -169,7 +169,7 @@ Lorsque le versioning est activé :
 > Via l'espace client OVHcloud
 >> Depuis l'onglet `Objets`{.action} de votre bucket Object Storage, vous pouvez supprimer un objet en cliquant sur le bouton `corbeille`{.action}.
 >>
->> Depuis l'onglet `Objets`{.action} de votre bucket Object Storage, cliquez sur l'objet concerné, puis accédez à l'onglet `Versions`{.action}. Pour supprimer définitivement une version spécifique, cliquez sur le bouton `...`{.action}, sélectionnez `Supprimer`{.action}, puis confirmez la suppression définitive.
+>> Pour supprimer définitivement une version spécifique, cliquez sur l'objet concerné, accédez à l'onglet `Versions`{.action}, cliquez sur le bouton `...`{.action}, sélectionnez `Supprimer`{.action}, puis confirmez la suppression définitive.
 >>
 >>
 > Via l'AWS CLI

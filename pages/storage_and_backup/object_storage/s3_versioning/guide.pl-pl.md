@@ -168,7 +168,7 @@ When versioning is enabled:
 > Via the OVHcloud Control Panel
 >> From the `Objects`{.action} tab of your Object Storage bucket, you can delete an object by clicking the `trash can`{.action} button.
 >>
->> From the `Objects`{.action} tab of your Object Storage bucket, click the object, then go to the `Versions`{.action} tab. To permanently delete a specific version, click the `...`{.action} button, select `Delete`{.action}, and confirm the permanent deletion.
+>> To permanently delete a specific version, click the object, then go to the `Versions`{.action} tab, click the `...`{.action} button, select `Delete`{.action}, and confirm the permanent deletion.
 >>
 >>
 > Via the AWS CLI
