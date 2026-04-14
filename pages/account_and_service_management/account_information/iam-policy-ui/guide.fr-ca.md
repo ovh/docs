@@ -140,9 +140,11 @@ Un champ de recherche est disponible pour vous aider à identifier une action sp
 
 > [!primary]
 > Les actions liées à la commande et la facturation ne sont pas encore disponibles dans l'IAM OVHcloud.
+<!-- CP-STEPS-END:create-policy -->
 
 #### Conditions sur les politiques
 
+<!-- CP-STEPS-START:conditions-on-policies -->
 Il est possible d'ajouter des conditions sur les politiques IAM.
 
 Une politique avec des conditions est valide lorsque toutes les conditions sont validées.
@@ -160,20 +162,25 @@ Il est possible d'appliquer des conditions sur :
 ![Créer une politique](images/conditions.png){.thumbnail}
 
 Une fois ajoutées, les conditions sont affichées avec la syntaxe [utilisée dans l'API](/pages/account_and_service_management/account_information/iam-policies-api)
+<!-- CP-STEPS-END:conditions-on-policies -->
 
 #### Modifier une politique
 
+<!-- CP-STEPS-START:edit-policy -->
 Pour modifier une politique existante, cliquez sur le bouton `...`{.action} à droite de la politique puis sur `Modifier la politique`{.action}.
 
 ![Modifier une politique](images/editing_a_policy.png){.thumbnail}
 
 Vous pouvez ensuite modifier la portée de la politique.
+<!-- CP-STEPS-END:edit-policy -->
 
 #### Supprimer une politique
 
+<!-- CP-STEPS-START:delete-policy -->
 Pour supprimer une politique existante, cliquez sur le bouton `...`{.action} à droite de la politique puis sur `Supprimer la politique`{.action}.
 
 Une fenêtre contextuelle vous demandera de confirmer la suppression.
+<!-- CP-STEPS-END:delete-policy -->
 
 <a name="create-users"></a>
 
@@ -189,9 +196,11 @@ L'accès au support restera réservé au compte propriétaire de la ressource.
 
 ### Gestion des identités
 
+<!-- CP-STEPS-START:manage-identities -->
 Pour gérer les identités disponibles pour les politiques, accédez au menu `Identité, Sécurité & Opérations`{.action}, puis à la section `Identités`{.action}.
 
 Retrouvez les détails de la gestion des utilisateurs dans la [documentation dédiée](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+<!-- CP-STEPS-END:manage-identities -->
 
 ### Gestion des groupes de ressources
 
@@ -199,6 +208,7 @@ Les politiques peuvent cibler des groupes de ressources (au lieu de cibler des r
 
 #### Créer un groupe de ressources
 
+<!-- CP-STEPS-START:create-resource-group -->
 Pour créer un groupe de ressources, accédez à la section `Politiques`{.action} puis cliquez sur l'onglet `Groupe de ressources`{.action} :
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
@@ -210,6 +220,7 @@ Cliquez sur `Créer le groupe de ressources`{.action}.
 - **Nom du groupe de ressources** : il s'agit du nom qui apparaîtra dans les interfaces. Le nom doit être unique et ne doit contenir aucun espace.
 - **Types de produits** : liste des types de produits concernés par ce groupe de ressources.
 - **Ressources** : liste des ressources que le groupe contiendra.
+<!-- CP-STEPS-END:create-resource-group -->
 
 #### Modifier un groupe de ressources
 
@@ -217,9 +228,11 @@ Pour modifier un groupe de ressources, cliquez sur son nom dans la liste.
 
 #### Supprimer un groupe de ressources
 
+<!-- CP-STEPS-START:delete-resource-group -->
 Pour supprimer un groupe de ressources existant, cliquez sur le bouton `...`{.action} à droite du groupe puis sur `Supprimer le groupe de ressources`{.action}.
 
 Une fenêtre contextuelle vous demandera de confirmer la suppression.
+<!-- CP-STEPS-END:delete-resource-group -->
 
 ## Aller plus loin
 

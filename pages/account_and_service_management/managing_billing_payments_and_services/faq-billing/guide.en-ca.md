@@ -169,8 +169,10 @@ You can access comprehensive documentation on cancelling all of our products and
 
 ### How do I customize the reference for my product/service on my bill?
 
+<!-- CP-STEPS-START id="block_08" section="How do I customize the reference for my product/service on my bill?" -->
 To make bills more easily readable, the custom names you attribute to your products and services are included directly in the bill, along with the OVHcloud reference.
 Also, to customize the names of your products/services (with the exception of `domain name`{.action} products), go to the OVHcloud Control Panel, then to the configuration page for each service.
+<!-- CP-STEPS-END id="block_08" -->
 
 ### How does Public Cloud billing work?
 
@@ -182,11 +184,13 @@ For further information, please read this detailed guide: [Information regarding
 
 ### How do I see the accounts ledger?
 
+<!-- CP-STEPS-START id="block_09" section="How do I see the accounts ledger?" -->
 The accounts ledger is only issued by the requesting party’s accounts department.
 
 However, OVHcloud offers you access to all of your invoices in an Excel file (.csv).
 
 To download the file, open the [My bills](/links/control-panel/billing-invoices) page. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
+<!-- CP-STEPS-END id="block_09" -->
 
 ## Go further
   

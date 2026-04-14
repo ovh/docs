@@ -101,6 +101,7 @@ No obstante, existen **casos especiales**, que se explican en detalle [más adel
 
 ### Cómo dar de baja la suscripción <a name="terminate"></a>
 
+<!-- CP-STEPS-START:cancel-subscription -->
 Para cancelar la suscripción al servicio, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
@@ -121,6 +122,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 La baja del servicio tendrá lugar el **fecha de aplicación** que se indica en la tabla "Gestión de mis soluciones y servicios". Si no ve el estado "Baja programada", actualice la página.
 
 ![solicitud de baja](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Casos particulares <a name="specific-cases"></a>
 
@@ -140,9 +142,11 @@ Para dar de baja su servicio [VMware on OVHcloud](https://www.ovhcloud.com/es/en
 
 #### Public Cloud <a name="publiccloud"></a>
 
+<!-- CP-STEPS-START:public-cloud-deletion -->
 Cada servicio [Public Cloud](/links/public-cloud/public-cloud) puede eliminarse haciendo clic en el botón `...`{.action} a la derecha del servicio correspondiente y, seguidamente, en `Eliminar`{.action}, como en el ejemplo de abajo para una instancia:
 
 ![public cloud instance deleite](images/pci-deletion-en.png){.thumbnail}
+<!-- CP-STEPS-END:public-cloud-deletion -->
 
 El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
 
@@ -155,6 +159,7 @@ También puede [consultar su consumo actual](/pages/public_cloud/public_cloud_cr
 > Puede anular una solicitud de baja hasta 24 horas antes de la fecha de finalización de la suscripción.
 >
 
+<!-- CP-STEPS-START:stop-cancellation -->
 Para anular una solicitud de baja, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 
 Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la solicitud de baja y, seguidamente, en `Cancelar la baja del servicio`{.action}.
@@ -162,6 +167,7 @@ Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la sol
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination.png){.thumbnail}
 
 Por último, haga clic en `Confirmar la cancelación`{.action}.
+<!-- CP-STEPS-END:stop-cancellation -->
 
 La cancelación de la baja tendrá efecto inmediato. Actualice la página "Gestión de mis soluciones y servicios" si sigue viendo el estado "Baja programada".
 

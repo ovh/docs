@@ -121,6 +121,7 @@ Vous pouvez mettre à jour ou supprimer un groupe en cliquant sur le bouton `...
 Lorsque vous modifiez un groupe, vous pouvez modifier sa description et son rôle.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
+<!-- CP-STEPS-END:manage-groups -->
 
 ### Gestion des droits
 

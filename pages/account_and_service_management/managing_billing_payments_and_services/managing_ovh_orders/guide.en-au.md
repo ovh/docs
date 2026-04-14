@@ -49,6 +49,7 @@ You can view your purchase order at any time on the [My orders](/links/control-p
 
 ### Access purchase orders via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:access-purchase-orders -->
 Open the [My orders](/links/control-panel/billing-orders) page.
 
 ![Control Panel](images/huborders.png){.thumbnail}
@@ -76,9 +77,11 @@ The various order statuses are listed below:
 You can also view the purchase order in HTML format by clicking on `...`{.action} to the right of your order, then `View order in HTML format`{.action}.
 
 ![Order summary](images/order04.png){.thumbnail}
+<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Track your order
 
+<!-- CP-STEPS-START:track-order -->
 After generating your purchase order, you can track your order from the [My orders](/links/control-panel/billing-orders) page:
 
 - Click the `...`{.action} button in front of your order.
@@ -89,6 +92,7 @@ After generating your purchase order, you can track your order from the [My orde
 The window below will appear, allowing you to follow it in four steps.
 
 ![Order tracking](images/order06.png){.thumbnail}
+<!-- CP-STEPS-END:track-order -->
 
 ## Go further
 

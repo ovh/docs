@@ -37,7 +37,9 @@ Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania si
 
 ### W jaki sposób włączyć automatyczne odnawianie usług?
 
+<!-- CP-STEPS-START id="block_01" section="How do I enable automatic renewal?" -->
 Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Włącz automatyczne odnowienie`{.action}. W ten sposób odnowienie automatyczne zostaje aktywowane w trybie domyślnym przy każdym zamawianiu danej usługi.
+<!-- CP-STEPS-END id="block_01" -->
 
 #### Wskazówki i porady
 
@@ -46,9 +48,11 @@ Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania si
 
 ### W jaki sposób wyłączyć automatyczne odnawianie?
 
+<!-- CP-STEPS-START id="block_02" section="How do I disable automatic renewal?" -->
 Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, aby wyświetlić więcej opcji, po czym wybierz opcję `Konfiguracja odnowienia`{.action}. Następnie możesz wybrać tryb ręczny. Tryb ten dostępny jest tylko dla niektórych usług, takich jak domeny, hosting, VPS i serwery dedykowane.
 
 Aby zrezygnować z usługi, sprawdź [W jaki sposób zrezygnować z usługi?](#cancelservice)
+<!-- CP-STEPS-END id="block_02" -->
 
 #### Wskazówki i porady
 
@@ -57,7 +61,9 @@ Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania si
 
 ### Jak mogę dodać sposób płatności?
 
+<!-- CP-STEPS-START id="block_03" section="How do I add a payment method?" -->
 Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-methods) kliknij `Dodaj sposób płatności`{.action}.
+<!-- CP-STEPS-END id="block_03" -->
 
 ### W jaki sposób zaktualizować sposób płatności?
 
@@ -73,7 +79,9 @@ Aby Twoje usługi były sprawnie i we właściwy sposób odnawiane, musisz mieć
 
 ### Jak usunąć sposób płatności?
 
+<!-- CP-STEPS-START id="block_04" section="How do I delete a payment method?" -->
 Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-methods) wyszukaj sposób płatności, który chcesz usunąć i kliknij ikonę kosza.
+<!-- CP-STEPS-END id="block_04" -->
 
 #### Wskazówki i porady
 
@@ -91,6 +99,7 @@ Jeśli Twoje konto prepaid OVHcloud ma saldo dodatnie, będzie ono używane domy
 
 ### Jaka jest data kolejnej płatności?
 
+<!-- CP-STEPS-START id="block_05" section="When is my next payment due date?" -->
 Daty odnowienia usług znajdziesz na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 Informujemy, że rozwiązania z opcją automatycznego odnowienia są wznawiane pierwszego dnia miesiąca. Niemniej jednak, częstotliwość ich odnawiania może być różna w zależności od Twoich usług.
@@ -99,6 +108,7 @@ Informujemy, że rozwiązania z opcją automatycznego odnowienia są wznawiane p
 
 Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services) będziesz mógł zmienić częstotliwość odnawiania Twoich rozwiązań.
 Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
+<!-- CP-STEPS-END id="block_05" -->
 
 ### Który z moich sposobów płatności zostanie obciążony?
 
@@ -139,13 +149,17 @@ Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-metho
 
 ### Jakim usługom i fakturom odpowiadają moje płatności?
 
+<!-- CP-STEPS-START id="block_06" section="What do my payments correspond to?" -->
 Płatności, których dokonujesz na naszej stronie, jak również automatyczne przelewy są zapisywane w historii operacji w Twoim Panelu klienta. W sekcji `Informacje o płatnościach`{.action} odnajdziesz daty, faktury oraz odpowiadające im kwoty.
+<!-- CP-STEPS-END id="block_06" -->
 
 ### W jaki sposób zrezygnować z usługi? <a name="cancelservice"></a>
 
+<!-- CP-STEPS-START id="block_07" section="How do I cancel a service?" -->
 Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnuję z usługi`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację z usługi`{.action}.
 
 Rezygnacja z usługi będzie skuteczna, gdy skończy się okres ważności usługi lub umowy. Możesz złożyć dyspozycję lub ją anulować do 24 godzin przed datą wygaśnięcia.
+<!-- CP-STEPS-END id="block_07" -->
 
 #### Wskazówki i porady
 
@@ -154,8 +168,10 @@ Pełna dokumentacja dotycząca rezygnacji z wszystkich naszych produktów i usł
 
 ### Jak spersonalizować nazwę produktu/usługi na fakturze?
 
+<!-- CP-STEPS-START id="block_08" section="How do I customize the reference for my product/service on my bill?" -->
 Aby faktura była bardziej czytelna, zapisujemy na niej, oprócz nazwy produktu/usługi OVHcloud, spersonalizowaną nazwę, którą nadałeś produktowi/usłudze w Panelu klienta.
 Aby nadać indywidualne nazwy Twoim produktom/usługom (z wyjątkiem produktu `nazwa domeny`{.action}), przejdź do Panelu klienta na stronie konfiguracyjnej każdego z produktów.
+<!-- CP-STEPS-END id="block_08" -->
 
 ### Jak naliczane są opłaty za usługę Public Cloud?
 
@@ -167,11 +183,13 @@ Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania si
 
 ### W jaki sposób uzyskać dostęp do księgi rachunkowej?
 
+<!-- CP-STEPS-START id="block_09" section="How do I see the accounts ledger?" -->
 Księgę rachunkową może udostępnić wyłącznie dział księgowości wnioskodawcy.
 
 OVHcloud zapewnia dostęp do wszystkich faktur za pośrednictwem pliku Excel (.csv).
 
 Aby pobrać fakturę, otwórz stronę [Faktury](/links/control-panel/billing-invoices). Następnie kliknij przycisk `Operacje`{.action} i wybierz `Eksport CSV`{.action}.
+<!-- CP-STEPS-END id="block_09" -->
 
 ## Sprawdź również
  

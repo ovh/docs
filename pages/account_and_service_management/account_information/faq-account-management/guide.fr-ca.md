@@ -111,10 +111,9 @@ Retrouvez plus d'informations dans notre guide «[Modifier le mot de passe de vo
 >
 > Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
 >
+<!-- CP-STEPS-END:change-password -->
 
 ///
-
-<!-- CP-STEPS-END:change-password -->
 
 /// details | Existe-t-il une limite au nombre de fois où je peux modifier le mot de passe de mon compte OVHcloud (via l'option « Identifiant ou mot de passe oublié ») ?
 
@@ -216,6 +215,7 @@ Pour toute information complémentaire, contactez notre support en créant un [t
 
 /// details | Comment supprimer mon compte OVHcloud ?
 
+<!-- CP-STEPS-START:delete-account -->
 La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
 
 1. Vous n'avez plus de services visibles dans la section « [Mes Services](https://www.ca.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
@@ -228,6 +228,7 @@ Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer vot
 1. Connectez-vous au [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 1. Sélectionnez le motif `Gérez votre compte client OVHcloud`{.action}.
 1. Précisez `Je veux fermer mon compte client OVHcloud`{.action} et suivez les étapes décrites.
+<!-- CP-STEPS-END:delete-account -->
 
 ///
 
@@ -273,7 +274,9 @@ Tous nos e-mails respectent nos standards de sécurité (SPF, DKIM, DMARC) et pr
 **En cas de doute sur l'authenticité d'un e-mail** :
 
 - Sachez que nous ne vous demanderons jamais de mot de passe ou de coordonnées bancaires par e-mail.
+<!-- CP-STEPS-START:check-emails -->
 - Vérifiez si l'e-mail que vous avez reçu est aussi visible sur la page [Mes communications](/links/control-panel/account-messages). Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
+<!-- CP-STEPS-END:check-emails -->
 - Consultez également notre guide « [Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
 ///
@@ -316,8 +319,9 @@ Remplacez `{logId}` par l'identifiant réel du log que vous souhaitez consulter.
 
 ### Déléguer l'accès à ses services
 
-/// details | Comment déléguer l'accès à mes servives à d'autres personnes ?
+/// details | Comment déléguer l’accès à mes servives à d’autres personnes ?
 
+<!-- CP-STEPS-START:change-contacts -->
 Vous avez la possibilité de déléguer à d’autres comptes clients OVHcloud la gestion administrative, technique et facturation de vos services depuis votre espace client. Pour cela, rendez-vous sur la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 La délégation de service devra être validée par e-mail à la fois par l’administrateur du service et par le nouveau contact.
@@ -328,15 +332,18 @@ Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire
 
 > [!success]
 > Un guide complet sur la gestion des contacts est disponible [ici](/pages/account_and_service_management/account_information/managing_contacts).
+<!-- CP-STEPS-END:change-contacts -->
 
 ///
 
 /// details | Comment paramétrer ou modifier un contact de facturation ?
 
+<!-- CP-STEPS-START:change-billing-contact -->
 Rendez-vous sur la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 > [!success]
 > Si vous souhaitez en savoir plus sur la gestion des contacts, nous vous invitons à consulter ce guide détaillé : « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
+<!-- CP-STEPS-END:change-billing-contact -->
 
 ///
 

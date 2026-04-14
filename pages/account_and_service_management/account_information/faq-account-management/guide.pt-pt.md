@@ -354,10 +354,12 @@ Se desejar recuperar um nome de domínio de que é o proprietário registado jun
 
 /// details | Como configurar ou modificar um contacto de faturação?
 
+<!-- CP-STEPS-START:change-billing-contact -->
 Abra a página [Os meus contactos](/links/control-panel/account-contacts).
 
 > [!success]
 > Se desejar saber mais sobre a gestão de contactos, convidamo-lo a consultar este guia detalhado: "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
+<!-- CP-STEPS-END:change-billing-contact -->
 
 ///
 

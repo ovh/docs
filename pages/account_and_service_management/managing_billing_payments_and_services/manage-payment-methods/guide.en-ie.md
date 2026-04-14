@@ -25,6 +25,7 @@ In the OVHcloud Control Panel, you can save and manage different payment methods
 
 ## Instructions <a name="payment_methods"></a>
 
+<!-- CP-STEPS-START:instructions-overview -->
 Open the [My payment methods](/links/control-panel/billing-payment-methods) page.
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
@@ -35,9 +36,11 @@ The page that opens contains a table listing the payment methods saved to your c
 - Change your default payment method.
 - Modify your payment method description.
 - Delete a payment method.
+<!-- CP-STEPS-END:instructions-overview -->
 
 ### Register a payment method
 
+<!-- CP-STEPS-START:register-payment-method -->
 When you place your first order, you are asked to save a payment method to ensure that your service can be renewed via automatic payments.
 
 This payment method is then used by default for all of your renewals and is offered to pay for new orders.
@@ -84,9 +87,11 @@ No amount will be charged and your credit card will be activated in a few minute
 Select `PayPal`{.action} as your payment method, then click on the button `PayPal`{.action}. A popup window will then open to log in to your PayPal® account and register it as an authorized payment method with OVHcloud.
 
 Your PayPal® account will be activated within a few minutes.
+<!-- CP-STEPS-END:register-payment-method -->
 
 ### Change your default payment method
 
+<!-- CP-STEPS-START:change-default-payment-method -->
 Payments for your services’ renewal bills are always taken via your default payment method. If you would like to change it, you will need to add a new payment method in the OVHcloud Control Panel.
 
 To do this, click on the `...`{.action} to the right of the new payment method, then `Make this the default payment method`{.action}.
@@ -99,14 +104,17 @@ To do this, click on the `...`{.action} to the right of the new payment method, 
 > - Step 2: set the new payment method as the default payment method
 > - Step 3: delete the old payment method
 >
+<!-- CP-STEPS-END:change-default-payment-method -->
 
 ### Delete a payment method
 
+<!-- CP-STEPS-START:delete-payment-method -->
 If you no longer want to use one of your payment methods, you can delete it by clicking on the `...`{.action} button to the right of it. Then click `Delete this payment method`{.action}.
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
 If you would like to delete all of your payment methods, all of your services must be set to [manual renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#manual-renewal).
+<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Delete a payment method via the OVHcloud API
 
@@ -137,6 +145,7 @@ Then delete the payment method using the ID you obtained in the previous step:
 
 #### What is the prepaid account?
 
+<!-- CP-STEPS-START:prepaid-account-overview -->
 The *prepaid account* is added to the [My payment methods](/links/control-panel/billing-payment-methods) page as soon as it is created. It allows you to credit your customer account in advance and use these funds to pay for your orders and renewal invoices.
 
 By crediting your account regularly, you will ensure that your services will never be interrupted for default on their [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#automatic-renewal).
@@ -147,6 +156,7 @@ To do this, simply go to the `Payment methods` section in your Control Panel:
 - Select the `My Prepaid Account`{.action} tab.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
+<!-- CP-STEPS-END:prepaid-account-overview -->
 
 #### How does it work?
 
@@ -160,12 +170,15 @@ However, if you have not saved a payment method, you will need to pay the balanc
 
 If you do not have a registered payment method, we recommend setting an **alert threshold**, to ensure that you have sufficient funds for your next bills:
 
+<!-- CP-STEPS-START:prepaid-account-alert -->
 ![warning_prepaid_account](images/warning_prepaid_account.png){.thumbnail}
 
 If the credit available on your prepaid account falls below the defined limit, you will be sent a notification email immediately.
+<!-- CP-STEPS-END:prepaid-account-alert -->
 
 #### How do I credit my prepaid account?
 
+<!-- CP-STEPS-START:prepaid-account-credit -->
 In the `My prepaid account`{.action} tab, click on the `Credit`{.action} button.
 
 ![credit-prepaid-account](images/credit-prepaid-account.png){.thumbnail}
@@ -175,6 +188,7 @@ In the window that pops up, enter the amount you want to credit, click on `Next`
 ![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
 
 On the purchase order that appears, select the payment method of your choice and pay for your order.
+<!-- CP-STEPS-END:prepaid-account-credit -->
 
 ## Go further
 
