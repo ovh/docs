@@ -67,6 +67,7 @@ Ce guide contient les configurations des distributions/systèmes d’exploitatio
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
+<!-- CP-STEPS-START:configurer-ip-supplementaire -->
 > [!success]
 > Sélectionnez l'onglet correspondant à votre système d'exploitation.
 
@@ -353,6 +354,7 @@ Ce guide contient les configurations des distributions/systèmes d’exploitatio
 >>
 >> ![vérifier la configuration réseau actuelle](images/image8-8.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:configurer-ip-supplementaire -->
 
 ### Diagnostic
 

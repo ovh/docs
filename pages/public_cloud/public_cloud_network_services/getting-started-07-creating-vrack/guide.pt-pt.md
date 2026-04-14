@@ -164,6 +164,7 @@ Para isso, terá de escolher o fornecedor e o recurso Terraform adequados. Encon
 > O vRack é gerido ao nível da infraestrutura OVHcloud, o que significa que só o pode administrar a partir do seu espaço cliente e das APIv6 OVHcloud.
 >
 
+<!-- CP-STEPS-START:activate-vrack -->
 > [!tabs]
 > A partir da Área de Cliente OVHcloud
 >> > [!primary]
@@ -348,6 +349,8 @@ Para isso, terá de escolher o fornecedor e o recurso Terraform adequados. Encon
 >> >
 >>
  
+<!-- CP-STEPS-END:activate-vrack -->
+
 ### Passo 2: Criar uma rede privada no vRack <a name="create-pn-in-vrack"></a>
 
 É necessário criar uma rede privada com uma rede local virtual (VLAN) para que as instâncias ligadas ao vRack possam comunicar entre si.
@@ -372,6 +375,7 @@ A partir da Área de Cliente OVHcloud e das APIv6 OVHcloud, poderá personalizar
 > A OpenStack não estando situada ao mesmo nível da infraestrutura, não poderá personalizar as VLAN através da interface Horizon ou das API OpenStack.
 >
 
+<!-- CP-STEPS-START:create-private-network -->
 > [!tabs]
 > A partir da Área de Cliente OVHcloud
 >> Após a criação do seu vRack, o próximo passo é criar uma rede privada.
@@ -574,6 +578,8 @@ A partir da Área de Cliente OVHcloud e das APIv6 OVHcloud, poderá personalizar
 >> ```
 >> 
 
+<!-- CP-STEPS-END:create-private-network -->
+
 ### Etapa 3: Integrar uma instância no vRack
 
 Duas situações podem ocorrer:
@@ -583,6 +589,7 @@ Duas situações podem ocorrer:
 
 /// details | **Caso de uma nova instância**
 
+<!-- CP-STEPS-START:integrate-new-instance -->
 > [!tabs]
 > A partir da Área de Cliente OVHcloud
 >> Consulte o guia "[Criar uma instância a partir do espaço cliente](/pages/public_cloud/Compute/public-cloud-first-steps)". Durante a criação de uma instância, pode escolher na etapa 5, um modo de rede e, em seguida, uma rede privada à qual integrar a sua instância.
@@ -863,6 +870,8 @@ Duas situações podem ocorrer:
 >> ```
 >>
 
+<!-- CP-STEPS-END:integrate-new-instance -->
+
 ///
 
 /// details | **Caso de uma instância já existente**
@@ -877,6 +886,7 @@ Assim, por exemplo, se tiver uma interface pública *eth0*, terá também uma in
 > A configuração desta nova interface raramente é automática. Terá, por isso, de a configurar em DHCP ou com IP fixo, consoante a sua infraestrutura.
 >
 
+<!-- CP-STEPS-START:integrate-existing-instance -->
 > [!tabs]
 > A partir da Área de Cliente OVHcloud
 >> Inicie sessão na sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud relevante no canto superior esquerdo.
@@ -1141,6 +1151,8 @@ Assim, por exemplo, se tiver uma interface pública *eth0*, terá também uma in
 >> [...]
 >> ```
 >>
+
+<!-- CP-STEPS-END:integrate-existing-instance -->
 
 ### Desligar uma interface de rede
 

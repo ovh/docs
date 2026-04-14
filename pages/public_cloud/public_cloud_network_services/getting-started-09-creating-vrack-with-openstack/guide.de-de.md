@@ -59,6 +59,7 @@ Bevor Sie beginnen, sollten Sie unbedingt diese Leitfäden lesen, um Ihre OpenSt
 
 #### Über das OVHcloud Kundencenter
 
+<!-- CP-STEPS-START:activate-vrack -->
 > [!primary]
 > Dies gilt nicht für neu erstellte Projekte, da die automatisch mit einem vRack ausgeliefert werden. Um das vRack anzuzeigen, nachdem das Projekt erstellt wurde, gehen Sie in das Menü `Network`{.action} und klicken Sie auf `Privates Netzwerk vRack`{.action}, um alle vRacks anzuzeigen.
 >
@@ -76,6 +77,8 @@ Sobald der Dienst aktiv ist, finden Sie ihn in Ihrem Kundencenter im Bereich `Ne
 Wählen Sie in der Liste der wählbaren Dienste das Projekt aus, das Sie dem vRack hinzufügen möchten, und klicken Sie auf `Hinzufügen`{.action}.
 
 ![Projekt hinzufügen](images/addprojectvrack.png){.thumbnail}
+
+<!-- CP-STEPS-END:activate-vrack -->
 
 <a name="ovhcloud-api"></a>
 

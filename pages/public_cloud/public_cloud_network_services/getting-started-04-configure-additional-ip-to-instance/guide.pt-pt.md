@@ -72,6 +72,7 @@ Este guia contém as configurações das distribuições/sistemas operativos mai
 > A configuração de um endereço Additional IP numa instância Public Cloud não requer gateway nem máscara de sub-rede.
 >
 
+<!-- CP-STEPS-START:configure-additional-ip -->
 > [!success]
 > Selecione a guia correspondente ao seu sistema operacional.
 
@@ -358,6 +359,7 @@ Este guia contém as configurações das distribuições/sistemas operativos mai
 >>
 >> ![verificar a configuração de rede atual](images/image8-8.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:configure-additional-ip -->
 
 ### Diagnóstico
 

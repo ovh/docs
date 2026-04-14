@@ -164,6 +164,7 @@ Do tego potrzebujesz wybrać odpowiedni dostawcę i zasób terraform. Znajdziesz
 > vRack jest zarządzany na poziomie infrastruktury OVHcloud, co oznacza, że możesz go administrować wyłącznie w Panelu klienta OVHcloud i w APIv6 OVHcloud.
 >
 
+<!-- CP-STEPS-START:activate-vrack -->
 > [!tabs]
 > Przez Panelu klienta OVHcloud
 >> > [!primary]
@@ -346,6 +347,8 @@ Do tego potrzebujesz wybrać odpowiedni dostawcę i zasób terraform. Znajdziesz
 >> >
 >>
 
+<!-- CP-STEPS-END:activate-vrack -->
+
 ### Krok 2: Tworzenie prywatnej sieci w vRacku <a name="create-pn-in-vrack"></a>
 
 Należy utworzyć prywatną sieć z wirtualną lokalną siecią LAN (VLAN), aby połączone instancje mogły komunikować się ze sobą.
@@ -370,6 +373,7 @@ Z Panelu klienta OVHcloud i APIv6 OVHcloud możesz dostosować wszystkie ustawie
 > Ponieważ OpenStack nie znajduje się na tym samym poziomie, nie będziesz mógł dostosować VLANów przez interfejs Horizon lub API OpenStack.
 >
 
+<!-- CP-STEPS-START:create-private-network -->
 > [!tabs]
 > Przez Panelu klienta OVHcloud
 >> Po przygotowaniu vRacka następnym krokiem jest utworzenie prywatnej sieci.
@@ -570,6 +574,8 @@ Z Panelu klienta OVHcloud i APIv6 OVHcloud możesz dostosować wszystkie ustawie
 >> ```
 >>
 
+<!-- CP-STEPS-END:create-private-network -->
+
 ### Krok 3: Integracja instancji z vRackiem <a name="instance-integration"></a>
 
 Istnieją dwa możliwe scenariusze:
@@ -579,6 +585,7 @@ Istnieją dwa możliwe scenariusze:
 
 /// details | **W przypadku nowej instancji**
 
+<!-- CP-STEPS-START:integrate-new-instance -->
 > [!tabs]
 > Przez Panelu klienta OVHcloud
 >> Jeśli potrzebujesz pomocy, najpierw przejrzyj ten przewodnik: [Tworzenie instancji w Panelu klienta OVHcloud](/pages/public_cloud/Compute/public-cloud-first-steps). Przy tworzeniu instancji możesz wybrać, w kroku 5, tryb sieciowy, a następnie prywatną sieć, do której chcesz dołączyć swoją instancję.
@@ -861,6 +868,8 @@ Istnieją dwa możliwe scenariusze:
 >> ```
 >>
 
+<!-- CP-STEPS-END:integrate-new-instance -->
+
 ///
 
 /// details | **W przypadku istniejącej instancji**
@@ -876,6 +885,7 @@ Na przykład, jeśli masz publiczny interfejs *eth0*, dodasz interfejs *eth1*.
 > Musisz więc ustawić statyczny adres IP lub skonfigurować DHCP, w zależności od infrastruktury.
 >
 
+<!-- CP-STEPS-START:integrate-existing-instance -->
 > [!tabs]
 > Przez Panelu klienta OVHcloud
 >> W Twoim projekcie Public Cloud,
@@ -1145,6 +1155,8 @@ Na przykład, jeśli masz publiczny interfejs *eth0*, dodasz interfejs *eth1*.
 >> [...]
 >> ```
 >>
+
+<!-- CP-STEPS-END:integrate-existing-instance -->
 
 ### Usuwanie interfejsu sieciowego
 

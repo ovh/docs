@@ -138,9 +138,12 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 #### Configurar las instancias SNS EVA
 
+<!-- CP-STEPS-START:configure-sns-eva-instances -->
 En la sección `Public Cloud`{.action}, seleccione su proyecto. En el menú de la izquierda, haga clic en `Instances`{.action} en la pestaña **Compute** y seleccione las dos instancias SNS EVA.
 
 Acceda a la consola VNC para las dos instancias SNS EVA y configure la distribución del teclado y la contraseña.
+
+<!-- CP-STEPS-END:configure-sns-eva-instances -->
 
 Configure la pasarela por defecto en el primer SNS EVA con nuestra pasarela de bloque IP:
 
