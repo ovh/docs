@@ -1,12 +1,14 @@
 ---
 title: Wybór odpowiedniej klasy Block Storage
 excerpt: Dowiedz się, jak wybrać odpowiednią klasę OVHcloud Block Storage. Porównaj wydajność, ceny i przypadki użycia, aby zoptymalizować swoje magazynowanie pod kątem kosztu i wydajności.
-updated: 2025-12-15
+updated: 2026-04-14
 ---
 
 ## Wprowadzenie
 
-Ten przewodnik pomoże Ci zrozumieć różne klasy OVHcloud Block Storage i wybrać tę, która najlepiej odpowiada Twoim potrzebom. Nauczysz się o poziomach wydajności, aspektach cenowych i zalecanych przypadkach użycia, aby podejmować świadome decyzje dotyczące magazynowania.
+**Ten przewodnik pomoże Ci zrozumieć różne klasy OVHcloud Block Storage i wybrać tę, która najlepiej odpowiada Twoim potrzebom.**
+
+Nauczysz się o poziomach wydajności, aspektach cenowych i zalecanych przypadkach użycia, aby podejmować świadome decyzje dotyczące magazynowania.
 
 ## Omówienie Block Storage
 
@@ -71,7 +73,7 @@ Każdy typ woluminu Block Storage jest również dostępny w wersji zaszyfrowane
 Zaszyfrowane woluminy można tworzyć bezpośrednio z Panelu klienta OVHcloud lub za pomocą narzędzi CLI/API, określając typ woluminu z sufiksem `-luks` (np. classic-luks lub highspeed-luks). Zapewnia to łatwy i bezpieczny sposób ochrony wrażliwych danych, jednocześnie korzystając z tej samej wydajności i funkcji co woluminy standardowe.
 
 > [!primary]
-> Zaszyfrowane woluminy nie mają wpływu na wydajność.
+> W przypadku dużych zaszyfrowanych woluminów (powyżej 800 GiB) wydajność może być niższa niż oczekiwana QoS woluminu, z możliwą redukcją przepustowości o do 20 % dla technologii High Speed Gen2. Wpływ zależy od implementacji wybranej przez klienta.
 
 ## Przypadki użycia
 
@@ -99,6 +101,6 @@ Woluminy Block Storage mogą być wdrażane z różnymi opcjami dostępności w 
 
 [Zmień wolumen Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Jeśli potrzebujesz szkoleń lub pomocy technicznej w wdrożeniu naszych rozwiązań, skontaktuj się ze swoim przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i zażądać indywidualnej analizy Twojego projektu od zespołu Professional Services.
+Jeśli potrzebujesz szkoleń lub pomocy technicznej w wdrożeniu naszych rozwiązań, skontaktuj się ze swoim przedstawicielem handlowym lub zwróć się do naszego [zespołu Professional Services](/links/professional-services), aby uzyskać wycenę i poprosić o indywidualną analizę Twojego projektu.
 
 Dołącz do [grona naszych użytkowników](/links/community).
