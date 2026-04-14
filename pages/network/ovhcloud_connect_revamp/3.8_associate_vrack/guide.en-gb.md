@@ -78,10 +78,12 @@ import ovh
 
 client = ovh.Client(endpoint='ovh-eu')
 
+vrack_service_name = "pn-12345"
+occ_service_id = "your-occ-service-uuid"
+
 # Associate OVHcloud Connect with a vRack
-# Check the API console for exact endpoint and parameters
-client.post('/vrack/{serviceName}/ovhCloudConnect', 
-            ovhCloudConnect='ovhcloudconnect-xyz789')
+client.post(f"/vrack/{vrack_service_name}/ovhCloudConnect",
+            ovhCloudConnect=occ_service_id)
 ```
 
 > See the [OVHcloud API Console](https://eu.api.ovh.com/console/?section=%2FovhCloudConnect&branch=v1) for the complete list of vRack-related endpoints.

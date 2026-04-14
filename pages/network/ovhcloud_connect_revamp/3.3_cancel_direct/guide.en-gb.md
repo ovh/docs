@@ -61,9 +61,10 @@ import ovh
 
 client = ovh.Client(endpoint='ovh-eu')
 
-# Check the API console for the exact cancellation endpoint
-# Example: terminate a service
-client.post('/ovhCloudConnect/{serviceName}/terminate')
+service_name = "your-occ-service-uuid"
+
+# Terminate the service
+client.post(f"/ovhCloudConnect/{service_name}/terminate")
 ```
 
 > Refer to the [OVHcloud API Console](https://eu.api.ovh.com/console/?section=%2FovhCloudConnect&branch=v1) for available cancellation endpoints.

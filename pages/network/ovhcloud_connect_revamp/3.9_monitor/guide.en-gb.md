@@ -37,12 +37,14 @@ import ovh
 
 client = ovh.Client(endpoint='ovh-eu')
 
+service_name = "your-occ-service-uuid"
+
 # Get service status
-service = client.get('/ovhCloudConnect/{serviceName}')
+service = client.get(f"/ovhCloudConnect/{service_name}")
 print(f"Status: {service['status']}")
 
 # Get PoP configuration and BGP state
-pop_config = client.get('/ovhCloudConnect/{serviceName}/config/pop')
+pop_config = client.get(f"/ovhCloudConnect/{service_name}/config/pop")
 print(pop_config)
 ```
 
