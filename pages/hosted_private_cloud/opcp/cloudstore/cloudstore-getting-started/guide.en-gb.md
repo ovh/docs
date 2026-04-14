@@ -1,14 +1,14 @@
 ---
 title: "Getting started with your CloudStore"
 excerpt: "Find out how to log in, manage accounts, deploy services, and configure your CloudStore"
-updated: 2026-04-09
+updated: 2026-04-14
 ---
 
 ## Objective
 
-This guide shows you how to log in to your **CloudStore** management interface, understand its key concepts, and perform initial operations such as creating accounts and deploying services.
+**This guide shows you how to log in to your CloudStore management interface, understand its key concepts, and perform initial operations such as creating accounts and deploying services.**
 
-The **CloudStore** is a high-level infrastructure framework deployed on top of [**OPCP**](pages/hosted_private_cloud/opcp/opcp-getting-started) (On-Premise Cloud Platform). It provides core services to help cloud providers deploy and manage cloud-native solutions for their customers through a marketplace-based platform.
+The **CloudStore** is a high-level infrastructure framework deployed on top of [On-Premise Cloud Platform (**OPCP**)](/pages/hosted_private_cloud/opcp/opcp-getting-started). It provides core services to help cloud providers deploy and manage cloud-native solutions for their customers through a marketplace-based platform.
 
 ## Requirements
 
@@ -26,7 +26,7 @@ Navigate to the **URL** provided for your CloudStore instance. You will be prese
 Click the login button to be redirected to the **Keycloak** authentication page. You have two options to authenticate:
 
 - Enter your credentials directly in the Keycloak login form.
-- Use the **OPCP-SSO** button to authenticate through the federated OPCP Core Keycloak. This option allows users already registered in [OPCP Core to log in](managing-iam-on-cloudstore-keycloak-l2) without managing a separate set of credentials.
+- Use the `OPCP-SSO`{.action} button to authenticate through the federated OPCP Core Keycloak. This option allows users already registered in OPCP Core to log in without managing a separate set of credentials.
 
 ![Keycloak L2 login form](images/keycloak_l2_login.png){.thumbnail}
 
@@ -78,15 +78,15 @@ An **account** represents a company or a department. Each account gets its own K
 
 To create an account:
 
-1. From the CloudStore dashboard, navigate to the **Accounts** section.
-2. Click on **Create an account**.
+1. From the CloudStore dashboard, navigate to the `Accounts`{.action} section.
+2. Click on `Create an account`{.action}.
 3. Fill in the required fields: account name, admin full name, and admin email address.
 
-![Account creation form](images/account_creation_form.png){.thumbnail}
+    ![Account creation form](images/account_creation_form.png){.thumbnail}
 
 4. Submit the form.
 
-The platform will automatically:
+The platform automatically:
 
 - Create a dedicated Keycloak realm named `account-{name}`.
 - Create an admin user with the `account-admin` role.
@@ -99,12 +99,12 @@ Deploying a service is a two-step process: first deploy the **controller**, then
 
 #### Step 1 — Deploy a controller
 
-1. Navigate to the **Service catalog** from the dashboard.
+1. Navigate to the `Service catalog`{.action} from the dashboard.
 
-![Service catalog](images/service_catalog.png){.thumbnail}
+    ![Service catalog](images/service_catalog.png){.thumbnail}
 
 2. Select the service you want to activate.
-3. Click **Activate the service**.
+3. Click `Activate the service`{.action}.
 4. Choose the version and configure the required properties.
 5. Select the hosts on which the controller will be deployed.
 6. Submit the form.
@@ -119,7 +119,7 @@ Deploying a service is a two-step process: first deploy the **controller**, then
 Once the controller is active and at least one account exists:
 
 1. Navigate to the controller page.
-2. Click **Deploy an app**.
+2. Click `Deploy an app`{.action}.
 3. Select the target account.
 4. Choose the version and configure the required properties.
 5. Select the hosts for the app deployment.
@@ -137,11 +137,11 @@ During app deployment, the platform automatically creates the necessary Keycloak
 You can add or remove hosts from a deployed controller or app to adjust capacity.
 
 1. Navigate to the controller or app page.
-2. Click **Expand capacity**.
+2. Click `Expand capacity`{.action}.
 3. Select the hosts to add.
 4. Submit the form.
 
-The scaling operation is asynchronous. Kubernetes will reconcile the configuration and provision resources on the updated hosts.
+The scaling operation is asynchronous. Kubernetes reconciles the configuration and provisions resources on the updated hosts.
 
 ### Authentication and access levels
 
@@ -158,11 +158,11 @@ CloudStore uses a layered Keycloak federation model that mirrors the platform ar
 
 #### Managing IAM on CloudStore Keycloak (L2)
 
-To be able to manage users, roles, and groups on the CloudStore Keycloak (L2), you must first assign the `cloudstore-admins` role to your user in the **OPCP Core Keycloak (L1)**.
+To be able to manage users, roles, and groups on the CloudStore Keycloak (L2), first assign the `cloudstore-admins` role to your user in the **OPCP Core Keycloak (L1)**.
 
 1. Log in to the OPCP Core Keycloak administration console (L1).
 2. Navigate to the user you want to grant IAM management rights to.
-3. In the **Role mappings** tab, assign the `cloudstore-admins` client role.
+3. In the `Role mappings`{.action} tab, assign the `cloudstore-admins` client role.
 
 ![Assigning the cloudstore-admins role in OPCP Core Keycloak](images/opcp_keycloak_cloudstore_admins_role.png){.thumbnail}
 

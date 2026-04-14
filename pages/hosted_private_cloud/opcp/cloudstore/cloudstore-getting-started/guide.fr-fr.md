@@ -1,14 +1,14 @@
 ---
 title: "Premiers pas avec votre CloudStore"
 excerpt: "Découvrez comment vous connecter, gérer les comptes, déployer des services et configurer votre CloudStore"
-updated: 2026-04-09
+updated: 2026-04-14
 ---
 
 ## Objectif
 
-Ce guide vous présente comment vous connecter à l'interface de gestion de votre **CloudStore**, comprendre ses concepts clés et effectuer les premières opérations telles que la création de comptes et le déploiement de services.
+**Ce guide vous présente comment vous connecter à l'interface de gestion de votre CloudStore, comprendre ses concepts clés et effectuer les premières opérations : créer des comptes et déployer des services.**
 
-Le **CloudStore** est un framework d'infrastructure de haut niveau déployé sur [**OPCP**](pages/hosted_private_cloud/opcp/opcp-getting-started) (On-Premise Cloud Platform). Il fournit des services essentiels pour aider les fournisseurs cloud à déployer et gérer des solutions Cloud Native pour leurs clients via une plateforme basée sur un catalogue de services.
+Le **CloudStore** est un framework d'infrastructure de haut niveau déployé sur [On-Premise Cloud Platform (**OPCP**)](/pages/hosted_private_cloud/opcp/opcp-getting-started). Il fournit des services essentiels pour aider les fournisseurs cloud à déployer et gérer des solutions Cloud Native pour leurs clients via une plateforme basée sur un catalogue de services.
 
 ## Prérequis
 
@@ -23,10 +23,10 @@ Accédez à l'**URL** fournie pour votre instance CloudStore. Une page de connex
 
 ![Page de connexion CloudStore](images/cloudstore_login.png){.thumbnail}
 
-Cliquez sur le bouton de connexion pour être redirigé vers la page d'authentification **Keycloak**. Deux options s'offrent à vous :
+Cliquez sur le bouton de connexion pour être redirigé vers la page d'authentification **Keycloak**. Deux options s'offrent à vous :
 
 - Saisir vos identifiants directement dans le formulaire de connexion Keycloak.
-- Utiliser le bouton **OPCP-SSO** pour vous authentifier via le Keycloak OPCP Core fédéré. Cette option permet aux utilisateurs déjà enregistrés dans [OPCP Core de se connecter](#gestion-de-liam-sur-le-keycloak-cloudstore-l2) sans gérer un jeu d'identifiants supplémentaire.
+- Utiliser le bouton `OPCP-SSO`{.action} pour vous authentifier via le Keycloak OPCP Core fédéré. Cette option permet aux utilisateurs déjà enregistrés dans OPCP Core de se connecter sans gérer un jeu d'identifiants supplémentaire.
 
 ![Formulaire de connexion Keycloak L2](images/keycloak_l2_login.png){.thumbnail}
 
@@ -38,12 +38,12 @@ Après connexion, vous êtes redirigé vers le tableau de bord du CloudStore.
 
 ![Tableau de bord CloudStore](images/cloudstore_dashboard.png){.thumbnail}
 
-Depuis le tableau de bord, vous pouvez accéder aux sections suivantes :
+Depuis le tableau de bord, vous pouvez accéder aux sections suivantes :
 
-- **Catalogue de services** : Parcourir et activer les services disponibles (par exemple, VCF).
-- **Comptes** : Créer et gérer les comptes locataires pour vos clients ou équipes internes.
-- **Contrôleurs et Apps** : Déployer et gérer les composants d'infrastructure de chaque service.
-- **Gestion IAM** : Configurer les utilisateurs et les permissions dans Keycloak.
+- **Catalogue de services** : Parcourir et activer les services disponibles (par exemple, VCF).
+- **Comptes** : Créer et gérer les comptes locataires pour vos clients ou équipes internes.
+- **Contrôleurs et Apps** : Déployer et gérer les composants d'infrastructure de chaque service.
+- **Gestion IAM** : Configurer les utilisateurs et les permissions dans Keycloak.
 
 ### Concepts clés
 
@@ -51,10 +51,10 @@ Avant d'utiliser le CloudStore, il est important de comprendre ses principaux co
 
 #### Personas
 
-Le CloudStore distingue deux types d'utilisateurs :
+Le CloudStore distingue deux types d'utilisateurs :
 
-- **Fournisseurs cloud** (IT admins, Service admins) : Clients OVHcloud qui exploitent la plateforme. Ils provisionnent l'infrastructure, déploient les services et gèrent les comptes.
-- **Utilisateurs cloud** (End users) : Clients des fournisseurs cloud qui consomment les services déployés pour eux via la **Landing Zone**.
+- **Fournisseurs cloud** (IT admins, Service admins) : Clients OVHcloud qui exploitent la plateforme. Ils provisionnent l'infrastructure, déploient les services et gèrent les comptes.
+- **Utilisateurs cloud** (End users) : Clients des fournisseurs cloud qui consomment les services déployés pour eux via la **Landing Zone**.
 
 | Persona | Responsabilités |
 |---------|-----------------|
@@ -65,7 +65,7 @@ Le CloudStore distingue deux types d'utilisateurs :
 
 #### Le modèle contrôleur/app
 
-Chaque service dans le CloudStore suit une architecture **contrôleur/app** :
+Chaque service dans le CloudStore suit une architecture **contrôleur/app** :
 
 - Le **contrôleur** (controlplane) est déployé en premier. Il gère le cycle de vie des apps et orchestre les opérations multi-locataires. Un seul contrôleur peut gérer plusieurs apps réparties sur différents comptes.
 - Les **apps** (dataplane) sont les charges de travail déployées pour un compte spécifique. Chaque app est isolée dans un seul compte et ne peut pas être partagée entre les comptes.
@@ -76,17 +76,17 @@ Ce modèle permet aux fournisseurs cloud d'offrir le même service à plusieurs 
 
 Un **compte** représente une entreprise ou un département. Chaque compte dispose de son propre realm Keycloak, garantissant une isolation IAM complète. Les comptes doivent être créés avant de déployer des apps, car celles-ci sont toujours rattachées à un compte.
 
-Pour créer un compte :
+Pour créer un compte :
 
-1. Depuis le tableau de bord du CloudStore, accédez à la section **Comptes**.
-2. Cliquez sur **Créer un compte**.
-3. Remplissez les champs requis : nom du compte, nom complet de l'administrateur et adresse e-mail de l'administrateur.
+1. Depuis le tableau de bord du CloudStore, accédez à la section `Comptes`{.action}.
+2. Cliquez sur `Créer un compte`{.action}.
+3. Remplissez les champs requis : nom du compte, nom complet de l'administrateur et adresse e-mail de l'administrateur.
 
-![Formulaire de création de compte](images/account_creation_form.png){.thumbnail}
+    ![Formulaire de création de compte](images/account_creation_form.png){.thumbnail}
 
 4. Validez le formulaire.
 
-La plateforme effectuera automatiquement les actions suivantes :
+La plateforme effectue automatiquement les actions suivantes :
 
 - Création d'un realm Keycloak dédié nommé `account-{name}`.
 - Création d'un utilisateur administrateur avec le rôle `account-admin`.
@@ -95,16 +95,16 @@ La plateforme effectuera automatiquement les actions suivantes :
 
 ### Déploiement d'un service
 
-Le déploiement d'un service se fait en deux étapes : d'abord déployer le **contrôleur**, puis déployer une ou plusieurs **apps** pour des comptes spécifiques.
+Le déploiement d'un service se fait en 2 étapes : commencez par déployer le **contrôleur**, puis déployez une ou plusieurs **apps** pour des comptes spécifiques.
 
 #### Étape 1 — Déployer un contrôleur
 
-1. Accédez au **Catalogue de services** depuis le tableau de bord.
+1. Accédez au `Catalogue de services`{.action} depuis le tableau de bord.
 
-![Catalogue de services](images/service_catalog.png){.thumbnail}
+    ![Catalogue de services](images/service_catalog.png){.thumbnail}
 
 2. Sélectionnez le service que vous souhaitez activer.
-3. Cliquez sur **Activer le service**.
+3. Cliquez sur `Activer le service`{.action}.
 4. Choisissez la version et configurez les propriétés requises.
 5. Sélectionnez les hôtes sur lesquels le contrôleur sera déployé.
 6. Validez le formulaire.
@@ -116,10 +116,10 @@ Le déploiement d'un service se fait en deux étapes : d'abord déployer le **co
 
 #### Étape 2 — Déployer une app
 
-Une fois le contrôleur actif et au moins un compte créé :
+Une fois le contrôleur actif et au moins un compte créé :
 
 1. Accédez à la page du contrôleur.
-2. Cliquez sur **Déployer une app**.
+2. Cliquez sur `Déployer une app`{.action}.
 3. Sélectionnez le compte cible.
 4. Choisissez la version et configurez les propriétés requises.
 5. Sélectionnez les hôtes pour le déploiement de l'app.
@@ -137,15 +137,15 @@ Lors du déploiement d'une app, la plateforme crée automatiquement les ressourc
 Vous pouvez ajouter ou retirer des hôtes d'un contrôleur ou d'une app déployée pour ajuster la capacité.
 
 1. Accédez à la page du contrôleur ou de l'app.
-2. Cliquez sur **Étendre la capacité**.
+2. Cliquez sur `Étendre la capacité`{.action}.
 3. Sélectionnez les hôtes à ajouter.
 4. Validez le formulaire.
 
-L'opération de mise à l'échelle est asynchrone. Kubernetes réconciliera la configuration et provisionnera les ressources sur les hôtes mis à jour.
+L'opération de mise à l'échelle est asynchrone. Kubernetes réconcilie la configuration et provisionne les ressources sur les hôtes mis à jour.
 
 ### Authentification et niveaux d'accès
 
-Le CloudStore utilise un modèle de fédération Keycloak en couches qui reflète l'architecture de la plateforme :
+Le CloudStore utilise un modèle de fédération Keycloak en couches qui reflète l'architecture de la plateforme :
 
 | Niveau | Instance Keycloak | Utilisateurs | Rôle |
 |--------|-------------------|--------------|------|
@@ -162,7 +162,7 @@ Pour pouvoir gérer les utilisateurs, rôles et groupes sur le Keycloak CloudSto
 
 1. Connectez-vous à la console d'administration du Keycloak OPCP Core (L1).
 2. Accédez à l'utilisateur auquel vous souhaitez accorder les droits de gestion IAM.
-3. Dans l'onglet **Role mappings**, attribuez le rôle client `cloudstore-admins`.
+3. Dans l'onglet `Role mappings`{.action}, attribuez le rôle client `cloudstore-admins`.
 
 ![Attribution du rôle cloudstore-admins dans le Keycloak OPCP Core](images/opcp_keycloak_cloudstore_admins_role.png){.thumbnail}
 
