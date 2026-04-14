@@ -1,12 +1,14 @@
 ---
 title: Scegliere la classe corretta di Block Storage
 excerpt: Scopri come scegliere la classe corretta di Block Storage OVHcloud. Confronta le prestazioni, i costi e i casi d'uso per ottimizzare il tuo storage in termini di prezzo ed efficienza.
-updated: 2025-12-15
+updated: 2026-04-14
 ---
 
 ## Obiettivo
 
-Questo manuale ti aiuta a comprendere le diverse classi di Block Storage OVHcloud e a scegliere quella che meglio si adatta alle tue esigenze. Scopri i livelli di prestazione, le considerazioni sui costi e i casi d'uso consigliati per prendere decisioni informate sullo storage.
+**Questo manuale ti aiuta a comprendere le diverse classi di Block Storage OVHcloud e a scegliere quella che meglio si adatta alle tue esigenze.**
+
+Scopri i livelli di prestazione, le considerazioni sui costi e i casi d'uso consigliati per prendere decisioni informate sullo storage.
 
 ## Introduzione a Block Storage
 
@@ -73,7 +75,7 @@ Ogni tipo di volume Block Storage è disponibile anche in versione crittografata
 I volumi crittografati possono essere creati direttamente da Spazio Cliente OVHcloud o tramite gli strumenti CLI/API specificando il tipo di volume con il suffisso `-luks` (ad esempio: classic-luks o highspeed-luks). Questo permette di proteggere facilmente i dati sensibili mantenendo le stesse prestazioni e funzionalità dei volumi standard.
 
 > [!primary]
-> I volumi crittografati non hanno alcun impatto sulle prestazioni.
+> Per i volumi crittografati di grandi dimensioni (oltre 800 GiB), le prestazioni possono essere inferiori alla qualità del servizio (QoS) prevista per il volume, con una riduzione del throughput fino al 20 % per la tecnologia High Speed Gen2. L'impatto varia in base all'implementazione scelta dal cliente.
 
 ## Casi d'uso
 
@@ -101,6 +103,6 @@ Scegliere l'opzione di distribuzione corretta garantisce prestazioni ottimali, u
 
 [Modificare un Volume Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Se hai bisogno di formazione o di supporto tecnico per l'implementazione delle nostre soluzioni, contatta il tuo rappresentante commerciale o clicca su [questo link](/links/professional-services) per richiedere un preventivo e un'analisi personalizzata del tuo progetto da parte del nostro team Professional Services.
+Se hai bisogno di formazione o di supporto tecnico per l'implementazione delle nostre soluzioni, contatta il tuo rappresentante commerciale o rivolgiti al nostro [team Professional Services](/links/professional-services) per richiedere un preventivo e un'analisi personalizzata del tuo progetto.
 
 Contatta la nostra [Community di utenti](/links/community).

@@ -1,12 +1,14 @@
 ---
 title: Elegir la clase adecuada de Block Storage
 excerpt: Aprenda a elegir la clase adecuada de Block Storage de OVHcloud. Compare rendimiento, costos y casos de uso para optimizar su almacenamiento en términos de precio y eficacia.
-updated: 2025-12-15
+updated: 2026-04-14
 ---
 
 ## Objetivo
 
-Este guía le ayuda a comprender las diferentes clases de Block Storage de OVHcloud y a elegir la que mejor se adapte a sus necesidades. Descubra los niveles de rendimiento, las consideraciones de costos y los casos de uso recomendados para tomar decisiones informadas sobre el almacenamiento.
+**Este guía le ayuda a comprender las diferentes clases de Block Storage de OVHcloud y a elegir la que mejor se adapte a sus necesidades.**
+
+Descubra los niveles de rendimiento, las consideraciones de costos y los casos de uso recomendados para tomar decisiones informadas sobre el almacenamiento.
 
 ## Presentación del Block Storage
 
@@ -73,7 +75,7 @@ Cada tipo de volumen Block Storage también está disponible en versión cifrada
 Los volúmenes cifrados pueden crearse directamente desde el área de cliente de OVHcloud o a través de las herramientas CLI/API especificando el tipo de volumen con el sufijo `-luks` (por ejemplo: classic-luks o highspeed-luks). Esto permite proteger fácilmente los datos sensibles manteniendo el mismo rendimiento y funcionalidades que los volúmenes estándar.
 
 > [!primary]
-> Los volúmenes cifrados no tienen ningún impacto en el rendimiento.
+> Para los volúmenes cifrados de gran tamaño (más de 800 GiB), el rendimiento puede ser inferior a la calidad de servicio (QoS) esperada para el volumen, con una reducción de hasta el 20 % del rendimiento para la tecnología High Speed Gen2. El impacto varía en función de la implementación elegida por el cliente.
 
 ## Casos de uso
 
@@ -101,6 +103,6 @@ Los volúmenes Block Storage pueden desplegarse con diferentes opciones de dispo
 
 [Modificar un Volume Block Storage](/pages/public_cloud/Compute/switch_volume_type)
 
-Si necesita formación o asistencia técnica para la implementación de nuestras soluciones, contacte a su representante comercial o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto por parte de nuestro equipo de Professional Services.
+Si necesita formación o asistencia técnica para la implementación de nuestras soluciones, contacte a su representante comercial o diríjase a nuestro [equipo de Professional Services](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto.
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

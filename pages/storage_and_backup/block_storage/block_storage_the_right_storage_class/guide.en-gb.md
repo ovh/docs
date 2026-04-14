@@ -1,12 +1,14 @@
 ---
 title: Choosing the Right Block Storage Class
-excerpt: Discover how to choose the right OVHcloud Block Storage class. Compare performance, pricing, and use cases to optimize your storage for both cost and efficiency.
-updated: 2026-03-31
+excerpt: Find out how to choose the right OVHcloud Block Storage class. Compare performance, pricing, and use cases to optimize your storage for both cost and efficiency.
+updated: 2026-04-14
 ---
 
 ## Objective
 
-**This guide helps you understand the different OVHcloud Block Storage classes and choose the one that best fits your needs.** You will learn about performance levels, pricing considerations, and recommended use cases to make informed storage decisions.
+**This guide helps you understand the different OVHcloud Block Storage classes and choose the one that best fits your needs.**
+
+You will learn about performance levels, pricing considerations, and recommended use cases to make informed storage decisions.
 
 ## Block Storage Overview
 
@@ -99,6 +101,6 @@ Block Storage volumes can be deployed with different availability options depend
 
 [Change your Block Storage volume type](/pages/public_cloud/compute/switch_volume_type)
 
-If you need training or technical assistance to implement our solutions, please contact your sales representative or contact our [Professional Services team](/links/professional-services) to get a quote and request a personalised analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or reach out to our [Professional Services team](/links/professional-services) to get a quote and request a personalised analysis of your project.
 
 Join our [community of users](/links/community).
