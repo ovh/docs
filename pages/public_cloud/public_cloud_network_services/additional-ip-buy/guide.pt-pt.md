@@ -47,6 +47,7 @@ Estes endereços Additional IP só poderão ser migrados para as instâncias de 
 
 ## Instruções
 
+<!-- CP-STEPS-START:cp-block-instructions-additional-ip -->
 No menu à esquerda, abra o `IP públicos`{.action} em **Network**.
 
 Abra o separador `Additional IP`{.action} e clique no botão `Ações`{.action}. Selecione `Adicionar um novo IP`{.action}.
@@ -93,6 +94,8 @@ A nota de encomenda será aberta automaticamente a fim de finalizar a sua compra
 Para mais informações, consulte o nosso manual sobre a [gestão das encomendas da OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
 
 Também pode consultar a nota de encomenda na sua Área de Cliente, na secção `Dashboard`{.action}, clicando em `Ver as minhas encomendas`{.action}.
+
+<!-- CP-STEPS-END:cp-block-instructions-additional-ip -->
 
 O próximo passo consiste em configurar o IP no seu sistema operativo. Consulte o [nosso guia dedicado a esta configuração](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 

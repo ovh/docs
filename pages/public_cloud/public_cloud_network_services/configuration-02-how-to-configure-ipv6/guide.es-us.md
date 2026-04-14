@@ -74,6 +74,7 @@ Antes de empezar, le recomendamos que eche un vistazo a la siguiente tabla, en l
 
 ### Obtener la información relativa a la red
 
+<!-- CP-STEPS-START:obtener-informacion-red -->
 En su proyecto Public Cloud, haga clic en `Instancias`{.action} en el menú de la izquierda. Haga clic en el botón `...`{.action} junto a la instancia correspondiente y haga clic en `Detalles de la instancia`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
@@ -81,6 +82,7 @@ En su proyecto Public Cloud, haga clic en `Instancias`{.action} en el menú de l
 Puede consultar la información en la columna `Redes`{.action}.
 
 ![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
+<!-- CP-STEPS-END:obtener-informacion-red -->
 
 ### Ejemplos de configuraciones persistentes
 

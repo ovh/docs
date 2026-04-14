@@ -43,6 +43,7 @@ Puede importar una dirección Additional IP que esté asociada a otro servicio d
 
 ## Procedimiento
 
+<!-- CP-STEPS-START:import-additional-ip -->
 En el menú de la izquierda, abra `IP públicas`{.action} en **Network**.
 
 Abra la pestaña `Additional IP`{.action} y haga clic en el botón `Acciones`{.action}. Seleccione `Importar una IP`{.action} para mostrar todas las direcciones IP que puedan importarse a su proyecto de Public Cloud.
@@ -77,6 +78,7 @@ Haga clic en `Adjuntar`{.action} para confirmar la operación. Se mostrará un m
 >
 
 Su dirección Additional IP estará asociada a su instancia.
+<!-- CP-STEPS-END:import-additional-ip -->
 
 El siguiente paso es configurar la IP en el sistema operativo. Consulte [nuestra guía sobre cómo configurar](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance) el alojamiento web.
 

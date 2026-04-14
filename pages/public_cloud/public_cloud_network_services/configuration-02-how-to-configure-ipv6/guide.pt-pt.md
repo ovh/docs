@@ -74,6 +74,7 @@ Aqui tem um breve léxico dos termos utilizados neste tutorial:
 
 ### Obter as informações de rede
 
+<!-- CP-STEPS-START:obter-informacoes-rede -->
 No seu projeto Public Cloud, clique em `Instâncias`{.action} no menu à esquerda. Depois clique no `...`{.action} ao lado da instância correspondente e clique em `Detalhes da instância`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
@@ -81,6 +82,7 @@ No seu projeto Public Cloud, clique em `Instâncias`{.action} no menu à esquerd
 Todas as informações necessárias serão visíveis na secção **Redes**.
 
 ![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
+<!-- CP-STEPS-END:obter-informacoes-rede -->
 
 ### Exemplos de configurações persistentes
 

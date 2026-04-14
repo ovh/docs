@@ -70,6 +70,7 @@ Voici un lexique rapide des termes utilisés dans ce tutoriel :
 
 ### Récupérer les informations réseaux
 
+<!-- CP-STEPS-START:recuperer-informations-reseau -->
 Dans votre projet Public Cloud, cliquez sur `Instances`{.action} dans le menu de gauche. Ensuite, cliquez sur le bouton `...`{.action} à droite de l’instance correspondante et cliquez sur `Détails de l’instance`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
@@ -77,6 +78,7 @@ Dans votre projet Public Cloud, cliquez sur `Instances`{.action} dans le menu de
 Toutes les informations nécessaires sont visibles dans la partie **Réseaux**.
 
 ![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
+<!-- CP-STEPS-END:recuperer-informations-reseau -->
 
 ### Exemples de configurations persistantes
 

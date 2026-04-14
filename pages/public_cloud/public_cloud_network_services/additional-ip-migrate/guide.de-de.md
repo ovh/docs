@@ -41,6 +41,8 @@ IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls
 
 ## In der praktischen Anwendung
 
+<!-- CP-STEPS-START:migrate_additional_ip -->
+
 > [!warning]
 >
 > Eine Additional IP kann nicht von einer Länderzone zur anderen umgezogen werden. So kann beispielsweise eine IP-Adresse von SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS.
@@ -70,6 +72,8 @@ Nach einigen Sekunden wird die Kundencenter-Anzeige aktualisiert und eine Bestä
 >
 Die Additional IP kann vor oder nach der Migration auf dem Zielserver konfiguriert werden. Wenn sie vorkonfiguriert wurde, wird sie funktional, sobald die Routing-Operation abgeschlossen ist.
 >
+
+<!-- CP-STEPS-END:migrate_additional_ip -->
 
 ## Weiterführende Informationen
 

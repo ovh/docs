@@ -47,6 +47,7 @@ Diese Additional IPs können nur für Instanzen desselben Projekts migriert werd
 
 ## In der praktischen Anwendung
 
+<!-- CP-STEPS-START:additional-ip-purchase -->
 Öffnen Sie im linken Menü `Öffentliche IPs`{.action} unter **Network**.
 
 Öffnen Sie den Tab `Additional IP`{.action} und klicken Sie auf den Button `Aktionen`{.action}. Wählen Sie `Eine neue IP hinzufügen`{.action}.
@@ -93,6 +94,7 @@ Der Bestellschein wird automatisch geöffnet, damit Sie Ihre Bestellung abschlie
 Weitere Informationen finden Sie in unserer [Anleitung zur Verwaltung von Bestellungen](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
 
 Sie finden den Bestellschein auch in Ihrem Kundencenter, wenn Sie im Bereich `Dashboard`{.action} auf `Meine Bestellungen`{.action} klicken.
+<!-- CP-STEPS-END:additional-ip-purchase -->
 
 Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert werden. Lesen Sie dazu unsere [Anleitung zur IP-Konfiguration](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 

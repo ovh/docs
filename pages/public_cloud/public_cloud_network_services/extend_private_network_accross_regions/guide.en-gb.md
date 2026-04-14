@@ -85,9 +85,11 @@ This section provides step-by-step instructions to configure a private network s
 
 ### Configuration for Public Cloud
 
+<!-- CP-STEPS-START:add-pcp-to-vrack -->
 Add the public cloud project to a vRack:
 
 ![Add Public Cloud project to Vrack](images/add_pcp_to_vrack.png){.thumbnail}
+<!-- CP-STEPS-END:add-pcp-to-vrack -->
 
 > [!tabs]
 > Via the OVHcloud Control Panel and Horizon
@@ -216,9 +218,11 @@ Add the public cloud project to a vRack:
 
 This section explains how to provide Public Cloud DHCP IP addresses to Bare Metal servers by integrating them into a stretched private network.
 
+<!-- CP-STEPS-START:add-baremetal-to-vrack -->
 The Public Cloud project and Bare Metal server must be added to the same vRack:
 
 ![Add Bare Metal server to Vrack](images/add_baremetal_to_vrack.png){.thumbnail}
+<!-- CP-STEPS-END:add-baremetal-to-vrack -->
 
 > [!tabs]
 > Via the OVHcloud Control Panel and Horizon

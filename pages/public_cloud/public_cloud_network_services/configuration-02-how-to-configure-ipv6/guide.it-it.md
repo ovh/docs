@@ -74,6 +74,7 @@ Ecco una lista di termini impiegati in questa guida:
 
 ### Recupera le informazioni di rete
 
+<!-- CP-STEPS-START:recupera-informazioni-rete -->
 Nel tuo progetto Public Cloud, clicca su `Istanze`{.action} nella barra di navigazione a sinistra. Poi clicca su `...`{.action} accanto all’istanza corrispondente e clicca su `Dettagli dell’istanza`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
@@ -81,6 +82,7 @@ Nel tuo progetto Public Cloud, clicca su `Istanze`{.action} nella barra di navig
 Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 
 ![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
+<!-- CP-STEPS-END:recupera-informazioni-rete -->
 
 ### Esempi di configurazioni persistenti
 
