@@ -598,7 +598,7 @@
             + [OPCP - How to setup trunk on a Node](hosted_private_cloud/opcp/how-to-setup-trunk-on-node)
             + [OPCP - How to setup Softraid on a Node](hosted_private_cloud/opcp/how-to-setup-softraid-on-node)
             + [OPCP - How to see node inventory](hosted_private_cloud/opcp/how-to-see-node-inventory)
-        + [CloudStore](products/hosted-private-cloud-hosted-private-cloud-opcp-cloudstore)
+        + [CloudStore](hosted-private-cloud-hosted-private-cloud-opcp-cloudstore)
             + [Getting started with your CloudStore](hosted_private_cloud/opcp/cloudstore-getting-started)
         + [Additional resources](hosted-private-cloud-hosted-private-cloud-opcp-additional-resources)
             + [OPCP - Object Storage features and specifications](hosted_private_cloud/opcp/s3-opcp-limitations)
