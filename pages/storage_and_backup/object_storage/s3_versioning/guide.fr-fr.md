@@ -1,12 +1,12 @@
 ---
 title: "Object Storage - Premiers pas avec la gestion de versions"
-excerpt: "Découvrez comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API"
-updated: 2026-03-31
+excerpt: "Découvrez comment activer et gérer la gestion de versions pour vos buckets Object Storage OVHcloud en utilisant les API"
+updated: 2026-04-14
 ---
 
 ## Objectif
 
-**Ce guide explique comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API.**
+**Ce guide explique comment activer et gérer la gestion de versions pour vos buckets Object Storage OVHcloud en utilisant les API.**
 
 ## Prérequis
 
@@ -33,7 +33,7 @@ La gestion de versions vous permet de conserver plusieurs variantes d'un objet d
 
 ### Informations générales
 
-Un bucket de stockage d'objets peut être dans l'un des trois états suivants :
+Un bucket Object Storage peut être dans l'un des trois états suivants :
 
 1. **Non versionné** (état par défaut) : aucune version n'est conservée pour les objets.
 2. **Versioning activé** : plusieurs versions de chaque objet sont conservées.
@@ -63,7 +63,7 @@ Chaque objet a un identifiant de version unique, que le versioning soit activé 
 
 Lorsque le versioning n'est pas activé :
 
-- Il n'y a pas de versions non actuelles car le stockage d'objets OVHcloud écrasera toujours la version actuelle avec la dernière version créée lorsque vous téléchargez le même objet (c'est-à-dire avec la même clé).
+- Il n'y a pas de versions non actuelles car l'Object Storage OVHcloud écrasera toujours la version actuelle avec la dernière version créée lorsque vous téléchargez le même objet (c'est-à-dire avec la même clé).
 
 ![Versioning désactivé](images/Withversioningdisabled.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Lorsque le versioning est activé :
 
 ![Versioning activé](images/Withversioningenabled.png){.thumbnail}
 
-- Si vous supprimez un objet, par défaut, OVHcloud crée un marqueur de suppression (DM) comme nouvelle version actuelle et toutes les versions précédentes resteront. L'objet est ainsi considéré comme « supprimé » et une opération GET object sur cet objet renverra une erreur 404.
+- Si vous supprimez un objet, par défaut, OVHcloud crée un marqueur de suppression (DM) comme nouvelle version actuelle et toutes les versions précédentes restent. L'objet est ainsi considéré comme « supprimé » et une opération GET object sur cet objet renverra une erreur 404.
 
 ![Marqueur de suppression avec versioning](images/Withversioningenabled2.png){.thumbnail}
 
@@ -110,7 +110,7 @@ Lorsque le versioning est activé :
 >>
 >> - Lors de la création du bucket, activez l’option de versioning dans l’étape qui lui est associée.
 >>
->> - Pour un bucket existant, vous pouvez modifier ses paramètres depuis l'espace client OVHcloud, dans la section `Informations générales`{.action}.
+>> - Pour un bucket existant, vous pouvez modifier ses paramètres depuis l'espace client OVHcloud, dans l'onglet `Informations générales`{.action}.
 >>
 
 ### Comment suspendre la gestion des versions
@@ -139,21 +139,21 @@ Lorsque le versioning est activé :
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Vous pouvez afficher ou masquer les versions d'objets dans un bucket Object Storage en cliquant sur le bouton `Voir les versions`{.action}.
+>> Vous pouvez afficher ou masquer les versions d'objets dans un bucket Object Storage en cliquant sur le bouton `Voir les versions`{.action} dans l'onglet `Objets`{.action}.
 >>
 
 #### Afficher les différentes versions d'un objet
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Pour consulter les différentes versions d'un objet, cliquez sur l'objet en question. Vous serez redirigé vers une page affichant ses détails. Pour voir les versions disponibles, cliquez sur l'onglet `Versions`{.action}.
+>> Pour consulter les différentes versions d'un objet, cliquez sur l'objet en question dans l'onglet `Objets`{.action}. Vous serez redirigé vers une page affichant ses détails. Pour voir les versions disponibles, cliquez sur l'onglet `Versions`{.action}.
 >>
 
 #### Télécharger une version actuelle ou antérieure d’un objet
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Depuis la page d'accueil de votre compartiment de stockage d'objets (si l'affichage des versions est activé) ou depuis la page de détails de l'objet (voir l'étape précédente), vous pouvez télécharger la version souhaitée en cliquant sur le bouton `...`{.action}, puis sur `Télécharger`{.action}.
+>> Depuis la page principale de votre bucket Object Storage (si l'affichage des versions est activé) ou depuis l'onglet `Versions`{.action} de la page de détails de l'objet (voir l'étape précédente), vous pouvez télécharger la version souhaitée en cliquant sur le bouton `...`{.action}, puis sur `Télécharger`{.action}.
 >>
 
 ### Suppression d’objets : suppression simple, définitive et gestion des Delete Markers
@@ -167,9 +167,9 @@ Lorsque le versioning est activé :
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Depuis la page principale de votre compartiment de stockage d'objets, vous pouvez supprimer un objet en cliquant sur le bouton `corbeille`{.action}.
+>> Depuis l'onglet `Objets`{.action} de votre bucket Object Storage, vous pouvez supprimer un objet en cliquant sur le bouton `corbeille`{.action}.
 >>
->> Depuis la page de détails d'un objet, pour supprimer définitivement une version spécifique, cliquez sur le bouton `...`{.action}, sélectionnez `Supprimer`{.action}, puis confirmez la suppression définitive.
+>> Depuis l'onglet `Objets`{.action} de votre bucket Object Storage, cliquez sur l'objet concerné, puis accédez à l'onglet `Versions`{.action}. Pour supprimer définitivement une version spécifique, cliquez sur le bouton `...`{.action}, sélectionnez `Supprimer`{.action}, puis confirmez la suppression définitive.
 >>
 >>
 > Via l'AWS CLI
@@ -209,7 +209,7 @@ Lorsque le versioning est activé :
 >>   --version-id <delete_marker_version_id>
 >> ```
 >>
->> l’objet sera de nouveau accessible comme s’il n’avait jamais été supprimé.
+>> L’objet sera de nouveau accessible comme s’il n’avait jamais été supprimé.
 >>
 
 ### Considérations importantes

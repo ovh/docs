@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion des identités et des accès
 excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources Object Storage
-updated: 2026-03-06
+updated: 2026-04-14
 ---
 
 ## Objectif

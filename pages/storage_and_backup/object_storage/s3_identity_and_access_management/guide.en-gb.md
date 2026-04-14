@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Identity and access management
 excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
-updated: 2026-03-06
+updated: 2026-04-14
 ---
 
 ## Objective

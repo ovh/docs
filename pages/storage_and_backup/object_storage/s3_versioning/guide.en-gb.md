@@ -1,7 +1,7 @@
 ---
 title: 'Object Storage - Getting Started with Versioning'
 excerpt: 'Learn how to enable and manage versioning for your OVHcloud Object Storage buckets using APIs'
-updated: 2026-03-31
+updated: 2026-04-14
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ updated: 2026-03-31
 
 Versioning lets you keep multiple variants of an object in the same bucket. This feature helps preserve, retrieve, and restore every version of every object stored in your buckets, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it.
 
-### General Information
+### General information
 
 An Object Storage bucket can be in one of three states:
 
@@ -46,7 +46,7 @@ An Object Storage bucket can be in one of three states:
 
 Enabling and suspending versioning is done at the bucket level. Once enabled, all objects in the bucket will receive a unique version ID. Existing objects will have a version ID of null until they are modified.
 
-#### How Versioning Works
+#### How versioning works
 
 Versioning adds a layer of protection to your data by keeping multiple versions of an object in the same bucket. When you enable versioning for a bucket, every object in the bucket gets a unique version ID. This means that every time an object is modified or deleted, a new version is created, and the old version is retained. This allows you to recover previous versions of an object if necessary.
 
@@ -56,7 +56,7 @@ Versioning adds a layer of protection to your data by keeping multiple versions 
 
 #### Version IDs
 
-Each object has a unique version ID, whether or not Versioning is enabled. In a versioning-enabled bucket, this version ID distinguishes one version from other versions of the same object.
+Each object has a unique version ID, whether or not versioning is enabled. In a versioning-enabled bucket, this version ID distinguishes one version from other versions of the same object.
 
 - **Current version:** The most recently created version of an object (with the most recent `LastModifiedDate` metadata value).
 - **Noncurrent versions:** Versions previously created (with their own unique version IDs).
@@ -71,7 +71,7 @@ When versioning is not enabled:
 
 ![Permanent Deletion Without Versioning](images/Withversioningdisabled2.png){.thumbnail}
 
-### With Versioning Enabled
+### With versioning enabled
 
 When versioning is enabled:
 
@@ -87,7 +87,7 @@ When versioning is enabled:
 
 ![Downloading or Deleting Specific Versions](images/Withversioningenabled3.png){.thumbnail}
 
-### How to Enable Versioning
+### How to enable versioning
 
 > [!tabs]
 > Via AWS CLI
@@ -110,10 +110,10 @@ When versioning is enabled:
 >>
 >> - When creating a bucket, enable the versioning option in the corresponding step.
 >>
->> - For an existing bucket, you can modify its settings from the OVHcloud Control Panel, in the `General Information`{.action} section.
+>> - For an existing bucket, you can modify its settings from the OVHcloud Control Panel, in the `General information`{.action} tab.
 >>
 
-### How to Suspend Versioning
+### How to suspend versioning
 
 > [!tabs]
 > Via AWS CLI
@@ -138,37 +138,37 @@ When versioning is enabled:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> You can display or hide object versions in an Object Storage bucket by clicking the `View versions`{.action} button.
+>> You can display or hide object versions in an Object Storage bucket by clicking the `See versions`{.action} button in the `Objects`{.action} tab.
 >>
 
 #### View the different versions of an object
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> To view the different versions of an object, click on the object in question. You will be redirected to a page showing its details. To see the available versions, click on the `Versions`{.action} tab.
+>> To view the different versions of an object, click the object in the `Objects`{.action} tab. You will be redirected to a page showing its details. To see the available versions, click the `Versions`{.action} tab.
 >>
 
 #### Download a current or previous version of an object
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> From the main page of your Object Storage bucket (if version display is enabled) or from the object details page (see previous step), you can download the desired version by clicking the `...`{.action} button, then `Download`{.action}.
+>> From the main page of your Object Storage bucket (if version display is enabled) or from the `Versions`{.action} tab on the object details page (see previous step), you can download the desired version by clicking the `...`{.action} button, then `Download`{.action}.
 >>
 
 ### Object deletion: simple, permanent deletion and Delete Marker management
 
 > [!primary]
 >
-> If versioning is enabled on your Object Storage bucket, deleting an object adds a Delete Marker: the object disappears from the default view, but remains visible via the `View versions`{.action} option.
+> If versioning is enabled on your Object Storage bucket, deleting an object adds a Delete Marker: the object disappears from the default view, but remains visible via the `See versions`{.action} option.
 >
 > This protection allows you to restore an object deleted by mistake.
 >
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> From the main page of your Object Storage bucket, you can delete an object by clicking the `trash can`{.action} button.
+>> From the `Objects`{.action} tab of your Object Storage bucket, you can delete an object by clicking the `trash can`{.action} button.
 >>
->> From an object’s details page, to permanently delete a specific version, click the `...`{.action} button, select `Delete`{.action}, and confirm the permanent deletion.
+>> From the `Objects`{.action} tab of your Object Storage bucket, click the object, then go to the `Versions`{.action} tab. To permanently delete a specific version, click the `...`{.action} button, select `Delete`{.action}, and confirm the permanent deletion.
 >>
 >>
 > Via the AWS CLI
@@ -209,7 +209,7 @@ When versioning is enabled:
 >> ```
 >>
 
-### Important Considerations
+### Important considerations
 
 - **Storage Costs:** Each version of an object is stored as a full object, incurring Standard Object Storage costs.
 - **Application:** When versioning is enabled, it applies to all objects in the bucket, including those added before versioning was enabled.
