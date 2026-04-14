@@ -1,4 +1,3 @@
-
 ---
 title: Buying an Additional IP
 excerpt: "Find out how to order Additional IP addresses for your instances"
