@@ -48,6 +48,7 @@ Par exemple, nous pouvons créer une politique pour donner à un utilisateur nom
 
 ### Accéder au menu IAM
 
+<!-- CP-STEPS-START:access-iam-menu -->
 Ouvrez la page [Politiques IAM](/links/control-panel/iam-policies).
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
@@ -69,11 +70,13 @@ Si vous avez déjà créé des politiques ou des utilisateurs, vous les retrouve
 ![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont liées et le nombre d'actions qu'elle contient.
+<!-- CP-STEPS-END:access-iam-menu -->
 
 ### Gestion des politiques
 
 #### Créer une politique
 
+<!-- CP-STEPS-START:create-policy -->
 Cliquez sur le bouton `Créer une politique`{.action}.
 
 Le formulaire suivant s'affiche :

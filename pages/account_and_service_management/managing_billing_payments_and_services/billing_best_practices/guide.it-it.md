@@ -80,11 +80,13 @@ Riceverai gli step della consegna e saprai se hai bisogno di aiuto per effettuar
 
 ### Disattivare il serviziozione dei servizi
 
+<!-- CP-STEPS-START:service-termination -->
 Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dalla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Clicca sui tre puntini `...`{.action} in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
 
 - `Configura il rinnovo`{.action}: sullo schermo successivo, potrai passare il `Tipo di rinnovo` del tuo servizio a `Manuale`. Clicca su `Continua`{.action} e `Conferma`{.action}. Prima della data di scadenza del tuo servizio, riceverai diverse notifiche via email. Se non rinnovi il tuo servizio, verrà eliminato **definitivamente**.
 - `Disattivare il servizio`{.action}: sulla schermata successiva, indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}. Alla data di scadenza del tuo servizio, verrà eliminato **definitivamente**.
 - `Elimina subito`{.action}: nella schermata successiva clicca su `Conferma`{.action}. Riceverai un'email di conferma Dopo la conferma, il tuo servizio verrà eliminato **immediatamente e definitivamente**.
+<!-- CP-STEPS-END:service-termination -->
 
 Per maggiori informazioni sulla disattivazione dei tuoi servizi, consulta la guida [Come disattivare i tuoi servizi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 

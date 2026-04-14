@@ -66,14 +66,16 @@ Nell’ambito della propria attività professionale o per interesse personale, p
 
 ### Recupera il bilancio mensile del mese precedente dallo Spazio Cliente OVHcloud
 
-1. Nel [Dashboard dell'account](/links/control-panel/account-dashboard), nella colonna a sinistra, scorri la pagina fino alla sezione **Link utili**, poi clicca sulla scheda `Il mio bilancio del carbonio`{.action}.
+<!-- CP-STEPS-START:retrieve-cp-footprint -->
+1. Nel [Dashboard dell’account](/links/control-panel/account-dashboard), nella colonna a sinistra, scorri la pagina fino alla sezione **Link utili**, poi clicca sulla scheda `Il mio bilancio del carbonio`{.action}.
 1. Nella nuova pagina clicca su `Scarica la tua impronta di [Mese] [Anno]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
 
-È possibile recuperare ogni mese l'impronta di carbonio del mese precedente per i servizi compatibili.
+È possibile recuperare ogni mese l’impronta di carbonio del mese precedente per i servizi compatibili.
 
 Se hai bisogno dell’impronta di carbonio per un mese precedente al mese in corso, è necessario passare dalle nostre API per recuperarla.
+<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Recupera un bilancio mensile precedente al mese precedente via API
 

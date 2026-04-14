@@ -37,6 +37,7 @@ Apri `Crediti e voucher`{.action} nel menu a sinistra sotto **Impostazioni**.
 
 ### Aggiungi credito
 
+<!-- CP-STEPS-START:add-credit -->
 Clicca sul pulsante `Acquista credito Cloud`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -50,9 +51,11 @@ A questo punto sarà generato un buono d’ordine. Clicca sul link nell'ambito d
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Una volta effettuato il pagamento, il tuo credito comparirà nella lista `Crediti e voucher`.
+<!-- CP-STEPS-END:add-credit -->
 
 ### Utilizza un voucher
 
+<!-- CP-STEPS-START:redeem-voucher -->
 Clicca sul pulsante `Attiva un voucher`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -62,6 +65,7 @@ Nella nuova finestra, inserisci il codice del voucher e clicca su `Conferma`{.ac
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 Il saldo del voucher comparirà nella lista `Crediti e voucher`.
+<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >

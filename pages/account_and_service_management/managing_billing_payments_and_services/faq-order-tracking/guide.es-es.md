@@ -14,19 +14,25 @@ Para abonar un pedido deberá identificarse utilizando su cuenta de cliente. A c
 
 #### Ideas y consejos
 
+<!-- CP-STEPS-START:pay-new-order -->
 ¿Ha cerrado la página de la orden de pedido? Acceda a la página [Mis pedidos](/links/control-panel/billing-orders). A continuación, podrá ver el pedido y abonarlo.
+<!-- CP-STEPS-END:pay-new-order -->
 
 ### ¿Cómo consultar el estado de un pago?
 
+<!-- CP-STEPS-START:check-payment-status -->
 Abra la página [Mis facturas](/links/control-panel/billing-invoices). Si una factura está pendiente de pago, se le propondrá abonar el saldo.
 
 #### Ideas y consejos
 
 En la página [Formas de pago](/links/control-panel/billing-payment-methods), puede registrar su forma de pago. De este modo, sus facturas se abonarán automáticamente.
+<!-- CP-STEPS-END:check-payment-status -->
 
 ### ¿Cómo realizar el seguimiento de un pedido?
 
+<!-- CP-STEPS-START:track-order-status -->
 Abra la página [Mis pedidos](/links/control-panel/billing-orders).
+<!-- CP-STEPS-END:track-order-status -->
 
 #### Ideas y consejos
 
@@ -52,6 +58,7 @@ Si es un usuario profesional, no está sujeto a la Ley de defensa de consumidore
 
 ### ¿Por qué no se ha entregado el servicio?
 
+<!-- CP-STEPS-START:service-not-delivered -->
 La entrega de un servicio puede retrasarse por varias razones.
 
 Con el fin de garantizar la protección de nuestros clientes, en OVHcloud prestamos especial atención a la seguridad de las transacciones financieras. Para ello, hemos puesto en marcha un procedimiento de validación aleatoria de los pagos, que podría retrasar algunos pedidos. Para saber si este es su caso, puede consultar el estado de sus pagos desde la sección `Facturación`{.action} del área de cliente, en el apartado «Mis pedidos».
@@ -63,6 +70,7 @@ Otra posible causa del retraso puede ser que la factura se encuentre pendiente d
 #### Ideas y consejos
 
 En la página [Formas de pago](/links/control-panel/billing-payment-methods), puede registrar su forma de pago. De este modo, sus facturas se abonarán automáticamente.
+<!-- CP-STEPS-END:service-not-delivered -->
 
 ## Más información
 

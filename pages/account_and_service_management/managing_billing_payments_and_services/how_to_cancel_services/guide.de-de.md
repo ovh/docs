@@ -110,6 +110,7 @@ Es gibt jedoch auch **Sonderfälle**, die [weiter unten](#specific-cases) in die
 
 ## Wie kann ich ein Abonnement kündigen? <a name="terminate"></a>
 
+<!-- CP-STEPS-START:cancel-subscription -->
 Um das Abonnement Ihres Dienstes zu kündigen, öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
@@ -130,6 +131,7 @@ Bitte geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie dann
 Die Kündigung Ihrer Dienstleistung erfolgt zum **Datum des Inkrafttretens** in der Tabelle "Verwaltung meiner Angebote und Dienste". Wenn der Status "Kündigung geplant" nicht angezeigt wird, aktualisieren Sie die Seite.
 
 ![Kündigungsanfrage](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Sonderfälle <a name="specific-cases"></a>
 

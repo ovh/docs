@@ -40,6 +40,7 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 
 ### Desde à Área de Cliente OVHcloud
 
+<!-- CP-STEPS-START:switch-to-monthly-billing -->
 > [!warning]
 > O seguinte procedimento não funciona para instâncias de terceira geração (por exemplo: B3-32). Para ser faturado mensalmente para este tipo de instância, deve criar um [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) para este modelo de instância.
 >
@@ -53,6 +54,7 @@ Em seguida, tem de confirmar que pretende mudar o modo de faturação:
 ![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
 Depois de confirmar à sua escolha, receberá imediatamente uma factura mensal rateada. A factura seguinte incluirá a parte do mês com a taxa horária (1º do mês até à mudança) e a nova taxa mensal.
+<!-- CP-STEPS-END:switch-to-monthly-billing -->
 
 ### Desde a API OpenStack
 

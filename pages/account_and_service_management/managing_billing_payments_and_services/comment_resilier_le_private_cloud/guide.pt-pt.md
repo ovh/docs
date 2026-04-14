@@ -36,6 +36,7 @@ A oferta Hosted Private Cloud não tem compromisso. No entanto, tal como indicad
 
 ### 1 - Solicitar a rescisão através da Área de Cliente OVHcloud
 
+<!-- CP-STEPS-START:cancel-step1 -->
 Na tabela «Gestão do serviço» do separador «Informações gerais», clique no botão `...`{.action} (4) à direita da data de renovação. Clique em `Eliminar o serviço`{.action} (5).
 
 ![rescisão a partir da Área de Cliente](images/resiliation1.png){.thumbnail}
@@ -49,14 +50,17 @@ Clique em `Validar`{.action} para solicitar a rescisão.
 Ser-lhe-á apresentada uma notificação de confirmação do seu pedido. O procedimento de confirmação da rescisão é-lhe enviado por e-mail, para o endereço associado à conta OVHcloud.
 
 ![validação rescisão](images/resiliation3.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-step1 -->
 
 ### 2 - Confirmar a rescisão
 
 No seguimento do seu pedido, ser-lhe-á enviado um e-mail de confirmação para o endereço associado à conta OVHcloud. 
 
+<!-- CP-STEPS-START:cancel-step2 -->
 Também poderá encontrar este e-mail na sua Área de Cliente OVHcloud. Clique no seu nome na parte superior à direita > `As minhas comunicações`{.action}.
 
 ![validação rescisão](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-step2 -->
 
 O assunto do e-mail será:
 

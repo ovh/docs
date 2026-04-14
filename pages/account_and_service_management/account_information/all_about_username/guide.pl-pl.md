@@ -86,7 +86,9 @@ Wszystkie informacje, które chcesz aktywować w przewodniku "[Zabezpieczenie ko
 
 Możesz zmienić informacje o swoim koncie. Przejdź do swojego [profilu użytkownika](/links/control-panel/account-profile).
 
+<!-- CP-STEPS-START:save-profile-changes -->
 Zmień dane, a następnie kliknij przycisk `Zapisz zmiany`{.action}.
+<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
@@ -95,6 +97,7 @@ Zmień dane, a następnie kliknij przycisk `Zapisz zmiany`{.action}.
 
 #### Zmień główny adres e-mail
 
+<!-- CP-STEPS-START:changing-primary-email -->
 Jeśli chcesz podać nowy główny kontaktowy adres e-mail, musisz to potwierdzić za pomocą kodu wysłanego na obecny główny kontaktowy adres e-mail. Po otrzymaniu kodu kliknij przycisk `Otrzymałem kod potwierdzający`{.action}.
 
 ![identyfikator klienta](images/nichandle07.png){.thumbnail}
@@ -102,6 +105,7 @@ Jeśli chcesz podać nowy główny kontaktowy adres e-mail, musisz to potwierdzi
 Wpisz kod w polu zatytułowanym `Kod potwierdzający`, następnie zatwierdź.
 
 ![identyfikator klienta](images/nichandle08.png){.thumbnail}
+<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -109,11 +113,13 @@ Wpisz kod w polu zatytułowanym `Kod potwierdzający`, następnie zatwierdź.
 
 #### Zmień typ konta
 
+<!-- CP-STEPS-START:changing-account-type -->
 Kiedy edytujesz swój profil, kliknij `typ konta`. rozwijane menu pozwala na zdefiniowanie typu konta odpowiadającego Twojej sytuacji.
 
 ![identyfikator klienta](images/nichandle09.png){.thumbnail}
 
 Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}.
+<!-- CP-STEPS-END:changing-account-type -->
 
 #### Korzystanie z moich praw do danych osobowych
 

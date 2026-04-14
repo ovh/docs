@@ -39,6 +39,7 @@ Cette procédure vous permet de demander manuellement une augmentation de quota 
 
 Une fois les prérequis ci-dessus remplis, vous pouvez créer un ticket de support en suivant ces étapes :
 
+<!-- CP-STEPS-START:quota-increase-ticket -->
 Dans votre [projet Public Cloud](/links/control-panel/publiccloud-projects), accédez à la rubrique `Project Management` et cliquez sur `Quota and Regions`{.action}. Cliquez sur `Contacter le support`{.action}.
 
 ![Contacter le support](images/01-quota.png){.thumbnail width="800"}
@@ -46,6 +47,7 @@ Dans votre [projet Public Cloud](/links/control-panel/publiccloud-projects), acc
 Motivez votre demande d'augmentation de quota en précisant votre participation au Startup Program d'OVHcloud et en indiquant votre besoin technique et le nom du Startup Program Manager en charge du suivi de votre participation (consultez la liste des Startup Program Managers [ici](/links/transversal/startup-program-faq-managers)).
 
 ![Contacter le support](images/02-support-request.png){.thumbnail width="800"}
+<!-- CP-STEPS-END:quota-increase-ticket -->
 
 ### Etape 2 - Contacter votre Startup Program Manager
 

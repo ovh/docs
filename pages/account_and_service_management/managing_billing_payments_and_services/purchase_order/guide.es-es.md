@@ -60,6 +60,7 @@ Por lo tanto, para OVHcloud, el documento debe contener al menos la siguiente in
 
 ### Cómo introducir un número de Purchase Order (PO) en el área de cliente de OVHcloud
 
+<!-- CP-STEPS-START:enter-po-reference -->
 Abra la página [Mis pedidos](/links/control-panel/billing-orders).
 
 ![Área de cliente](images/huborders.png){.thumbnail}
@@ -88,6 +89,7 @@ Desde la pestaña `Mis referencias internas`{.action} puede modificar o desactiv
 
 > [!primary]
 > Si desea desactivar/modificar una referencia en beneficio de otra **en el mismo intervalo de tiempo**, debe utilizar la opción `Editar`{.action} para modificar el intervalo de tiempo de la primera referencia.
+<!-- CP-STEPS-END:enter-po-reference -->
 
 ## Más información
 

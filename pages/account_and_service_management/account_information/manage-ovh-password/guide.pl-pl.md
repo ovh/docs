@@ -80,6 +80,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 #### W panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:change-password-cp -->
 - Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) kliknij `Zmień`{.action} po prawej stronie "Password".
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
@@ -94,10 +95,13 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 - Kiedy wykonasz te czynności, wyświetli się komunikat informujący o powodzeniu operacji. Kliknij przycisk `Kontynuuj`{.action} na dole wiadomości. Zostaniesz wówczas przekierowany na stronę logowania. Następnie wpisz nazwę użytkownika i nowe hasło.
 
+<!-- CP-STEPS-END:change-password-cp -->
+
 <a name="lost-password"></a>
 
 #### Jeśli nie znasz swojego aktualnego hasła
 
+<!-- CP-STEPS-START:change-password-forgotten -->
 - Kliknij przycisk `Nie pamiętasz nazwy użytkownika lub hasła?`{.action} w oknie logowania w Panelu klienta.
 
 ![manage-ovh-password](images/account-password-modif-forgotten-step1.png){.thumbnail}
@@ -120,6 +124,8 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 > 
 > Ustanowienie nowego hasła automatycznie powoduje zamknięcie wszystkich aktywnych sesji na Twoim koncie OVHcloud.
 > 
+
+<!-- CP-STEPS-END:change-password-forgotten -->
 
 ## Sprawdź również
 [Zalecenia dotyczące tworzenia bezpiecznych haseł](https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla)

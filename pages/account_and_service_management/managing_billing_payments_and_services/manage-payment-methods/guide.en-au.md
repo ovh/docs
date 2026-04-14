@@ -25,6 +25,7 @@ In the OVHcloud Control Panel, you can save and manage different payment methods
 
 ## Instructions <a name="payment_methods"></a>
 
+<!-- CP-STEPS-START:instructions-overview -->
 Open the [My payment methods](/links/control-panel/billing-payment-methods) page.
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
@@ -35,9 +36,11 @@ The page that opens contains a table listing the payment methods saved to your c
 - Change your default payment method.
 - Modify your payment method description.
 - Delete a payment method.
+<!-- CP-STEPS-END:instructions-overview -->
 
 ### Register a payment method
 
+<!-- CP-STEPS-START:register-payment-method -->
 When you place your first order, you are asked to save a payment method to ensure that your service can be renewed via automatic payments.
 
 This payment method is then used by default for all of your renewals and is offered to pay for new orders.

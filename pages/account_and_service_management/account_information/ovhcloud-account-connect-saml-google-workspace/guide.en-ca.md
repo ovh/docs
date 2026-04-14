@@ -89,6 +89,7 @@ Your Google Workspace service now trusts OVHcloud as a service provider. The nex
 
 ### Registering Google Workspace into the OVHcloud account and configuring the connection
 
+<!-- CP-STEPS-START:register-gws-ovhcloud -->
 To add Google Workspace as a trusted identity provider, you need to provide the identity provider metadata in your OVHcloud Control Panel. [Access the SAML SSO page](/links/control-panel/iam-saml-sso), then click the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -112,6 +113,7 @@ The `...`{.action} button allows you to update or delete the SSO, and view its d
 ![OVHcloud SSO connection step 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Your Google Workspace is now considered a trusted identity provider. However, you still need to add groups to your OVHcloud account.
+<!-- CP-STEPS-END:register-gws-ovhcloud -->
 
 > [!warning]
 > If you try to connect via SSO at this point, you will probably receive a `Not in valid groups` error message.
@@ -141,6 +143,7 @@ You must then assign **roles** to these user groups at OVHcloud. Otherwise, your
 
 ![Configuring user groups](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
+<!-- CP-STEPS-START:declare-groups-ovhcloud -->
 In your OVHcloud Control Panel, go to the `Identities`{.action} section, then the `User groups`{.action} tab. Then click the `Declare a group`{.action} button and fill in the fields:
 
 - **Group name**: Group name within Google Workspace
@@ -153,6 +156,7 @@ In your OVHcloud Control Panel, go to the `Identities`{.action} section, then th
 You can then verify that the group is added to your OVHcloud account in the "Groups" section:
 
 ![Google Workspace User Management Groups](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+<!-- CP-STEPS-END:declare-groups-ovhcloud -->
 
 When you later log in with a user from the **Intern** group, your OVHcloud account will recognise that the user has the role "UNPRIVILEGED" specified by his group.
 

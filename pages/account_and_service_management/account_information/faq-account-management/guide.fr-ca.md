@@ -68,6 +68,7 @@ La création d'un compte est gratuite. Cet espace facilite l'accès à vos infor
 
 /// details | Comment sécuriser mon compte ?
 
+<!-- CP-STEPS-START:secure-account -->
 Plusieurs solutions s'offrent à vous pour sécuriser votre compte, telles que :
 
 - le choix d'un [mot de passe complexe et son renouvellement régulier](/pages/account_and_service_management/account_information/manage-ovh-password) ;
@@ -75,6 +76,7 @@ Plusieurs solutions s'offrent à vous pour sécuriser votre compte, telles que :
 - la configuration d'une [restriction par IP](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction).
 
 Rendez-vous sur la page [Sécurité du compte](/links/control-panel/account-security) pour les afficher.
+<!-- CP-STEPS-END:secure-account -->
 
 ///
 
@@ -93,6 +95,7 @@ Pour tous ces cas de figure, consultez [cette documentation](/pages/account_and_
 
 /// details | Comment modifier le mot de passe de mon compte OVHcloud ?
 
+<!-- CP-STEPS-START:change-password -->
 Rendez-vous sur la page [Sécurité du compte](/links/control-panel/account-security) et cliquez sur le bouton `Modifier`{.action} situé à droite de la mention **Mot de passe**. Vous pouvez alors modifier votre mot de passe actuel. Un message de sécurité apparaît alors pour vous informer que vous êtes sur le point d'effectuer un changement de mot de passe. A la suite de votre confirmation, vous allez recevoir (à l'adresse mail principale renseignée dans le compte) un e-mail contenant la procédure à suivre. 
 
 Retrouvez plus d'informations dans notre guide «[Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password)».
@@ -110,6 +113,8 @@ Retrouvez plus d'informations dans notre guide «[Modifier le mot de passe de vo
 >
 
 ///
+
+<!-- CP-STEPS-END:change-password -->
 
 /// details | Existe-t-il une limite au nombre de fois où je peux modifier le mot de passe de mon compte OVHcloud (via l'option « Identifiant ou mot de passe oublié ») ?
 
@@ -149,6 +154,7 @@ Consultez la partie « [Que faire si l'un de mes périphériques est perdu/volé
 
 /// details | Comment modifier mes informations personnelles ?
 
+<!-- CP-STEPS-START:change-personal-information -->
 Pour visualiser ou modifier vos coordonnées, rendez-vous sur la page [Mon profil](/links/control-panel/account-profile).
 
 > [!success]
@@ -156,16 +162,19 @@ Pour visualiser ou modifier vos coordonnées, rendez-vous sur la page [Mon profi
 >
 > Une demande de confirmation vous sera d'abord envoyée à l'adresse e-mail que vous avez actuellement renseignée dans votre espace client. Si vous ne parvenez plus à accéder à cette adresse e-mail, un délai de 24 heures est nécessaire. Passé ce délai, le changement sera automatiquement effectué.
 >
+<!-- CP-STEPS-END:change-personal-information -->
 
 ///
 
 /// details | Comment accéder aux contrats et conditions générales de services ?
 
+<!-- CP-STEPS-START:access-contracts -->
 Vous pouvez retrouver les contrats de vos services OVHcloud directement sur la page [Liste des contrats](/links/control-panel/billing-contracts).
 
 Vous pouvez également consulter les contrats sur notre site, via [ce lien](/links/terms-conditions-contracts).
 
 Cette page contient toutes les informations nécessaires concernant nos contrats, y compris les termes et conditions de nos services.
+<!-- CP-STEPS-END:access-contracts -->
 
 ///
 

@@ -54,6 +54,7 @@ El identificador de cliente es un identificador personal que se envía por corre
 
 ### Acceder a la gestión de los contactos <a name="gestion_des_contacts"></a>
 
+<!-- CP-STEPS-START:access-contact-management -->
 Abra la página [Gestión de contactos](/links/control-panel/account-contacts).
 
 ![Gestión de contactos](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
@@ -61,6 +62,7 @@ Abra la página [Gestión de contactos](/links/control-panel/account-contacts).
 Se mostrará una tabla con todos los servicios en los que su identificador de cliente aparece como contacto.
 
 ![Gestión de contactos](images/managing_contacts_02.png){.thumbnail}
+<!-- CP-STEPS-END:access-contact-management -->
 
 > [!warning]
 >
@@ -69,6 +71,7 @@ Se mostrará una tabla con todos los servicios en los que su identificador de cl
 
 ### Cambiar los contactos de un servicio
 
+<!-- CP-STEPS-START:change-contacts-service -->
 Una vez haya accedido a la página de gestión de los contactos, haga clic en `...`{.action} a la derecha del servicio que quiere modificar, y a continuación haga clic en `Modificar los contactos`{.action}. Introduzca el o los nuevos contactos y haga clic en `Confirmar`{.action} su solicitud.
 
 ![Gestión de contactos](images/managing_contacts_03.png){.thumbnail}
@@ -76,6 +79,7 @@ Una vez haya accedido a la página de gestión de los contactos, haga clic en `.
 ![Gestión de contactos](images/managing_contacts_04.png){.thumbnail}
 
 Los contactos implicados en el proceso de modificación recibirán un mensaje de correo electrónico.
+<!-- CP-STEPS-END:change-contacts-service -->
 
 #### Soy contacto administrador <a name="administrateur"></a>
 
@@ -95,6 +99,7 @@ Como contacto de facturación, solo puede designar a otro contacto de facturaci�
 
 ### Validar, rechazar o realizar el seguimiento de un cambio de contacto
 
+<!-- CP-STEPS-START:confirm-track-contact-change -->
 Para gestionar y realizar el seguimiento de las solicitudes en curso, haga clic en la pestaña `Mis solicitudes`{.action}. Ahí es donde puede aceptar o rechazar una solicitud.
 
 ![Gestión de contactos](images/managing_contacts_05.png){.thumbnail}
@@ -115,6 +120,7 @@ Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaj
 ![Gestión de contactos](images/managing_contacts_007.png){.thumbnail}
 
 El cambio de contacto será efectivo unos minutos después de que los dos contactos hayan validado la solicitud. Recibirán un mensaje de correo electrónico informándoles de que la solicitud se ha tramitado correctamente.
+<!-- CP-STEPS-END:confirm-track-contact-change -->
 
 ### Ejemplo: dar la gestión técnica de su sitio web a su webmaster
 

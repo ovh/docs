@@ -14,19 +14,25 @@ Só pode efetuar o pagamento depois de identificar à sua encomenda através da 
 
 #### Truques e dicas
 
+<!-- CP-STEPS-START:pay-new-order -->
 Saiu da página da encomenda? Abra a página [Encomendas](/links/control-panel/billing-orders). Poderá depois visualizar à sua encomenda e pagá-la.
+<!-- CP-STEPS-END:pay-new-order -->
 
 ### Como consultar o estado do pagamento?
 
+<!-- CP-STEPS-START:check-payment-status -->
 Abra a página [As minhas faturas](/links/control-panel/billing-invoices). Se uma fatura está a aguardar pagamento, ser-lhe-á proposta a possibilidade de pagar o seu saldo.
 
 #### Truques e dicas
 
 Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
+<!-- CP-STEPS-END:check-payment-status -->
 
 ### Como acompanhar o estado da encomenda?
 
+<!-- CP-STEPS-START:track-order-status -->
 Abra a página [Encomendas](/links/control-panel/billing-orders).
+<!-- CP-STEPS-END:track-order-status -->
 
 ### Truques e dicas
 
@@ -51,6 +57,7 @@ Enquanto profissional, não se encontra sujeito ao artigo introdutório do Códi
 
 ### Porque é que o meu serviço não foi entregue?
 
+<!-- CP-STEPS-START:service-not-delivered -->
 Várias causas podem explicar um eventual atraso da sua encomenda.
 De modo a garantir a proteção de todos os clientes, a OVHcloud trata com uma atenção redobrada a segurança das transações financeiras realizadas. Assim, implementámos um processo de validação aleatória dos pagamentos, suscetível de provocar atrasos. Para saber se é o seu caso, pode consultar o estado dos pagamentos já feitos na rubrica `Faturação`{.action}.
 
@@ -61,6 +68,7 @@ Uma fatura com pagamento pendente também pode causar este atraso. Se for o seu 
 #### Truques e dicas:
 
 Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
+<!-- CP-STEPS-END:service-not-delivered -->
 
 ## Quer saber mais?
 

@@ -52,6 +52,7 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 
 ### Auf die Kontaktverwaltung zugreifen <a name="gestion_des_contacts"></a>
 
+<!-- CP-STEPS-START:access-contact-management -->
 Öffnen Sie die Seite [Kontaktverwaltung](/links/control-panel/account-contacts).
 
 ![Kontaktverwaltung](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
@@ -59,9 +60,11 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 In der angezeigten Tabelle können Sie die verschiedenen Dienste einsehen, für die Ihre Kundenkennung als Kontakt eingetragen ist.
 
 ![Kontaktverwaltung](images/managing_contacts_02.png){.thumbnail}
+<!-- CP-STEPS-END:access-contact-management -->
 
 ### Kontakte eines Dienstes ändern
 
+<!-- CP-STEPS-START:change-contacts-service -->
 Wenn Sie auf der Seite der Kontaktverwaltung sind, klicken Sie rechts neben dem betreffenden Dienst auf `...`{.action} und anschließend auf `Kontakte ändern`{.action} . Geben Sie den oder die neuen Kontakt(e) ein, die Sie hinzufügen möchten, und klicken Sie auf `Bestätigen`{.action}.
 
 ![Kontaktverwaltung](images/managing_contacts_03.png){.thumbnail}
@@ -74,6 +77,7 @@ Es wird eine E-Mail an die Kontakte versendet, die vom Änderungsprozess betroff
 >
 > Ein Kontaktwechsel ist nicht zulässig, wenn das betreffende alte oder neue Kundenkonto eine oder mehrere Rechnungen unbezahlt haben.
 >
+<!-- CP-STEPS-END:change-contacts-service -->
 
 #### Ich bin der Administrator-Kontakt <a name="administrateur"></a>
 
@@ -93,6 +97,7 @@ Sie können lediglich eine andere Person an Ihrer Stelle als Rechnungskontakt er
 
 ### Bestätigung, Ablehnung oder Nachverfolgung einer Kontaktänderung
 
+<!-- CP-STEPS-START:confirm-track-contact-change -->
 Um aktuelle Änderungsanfragen zu verfolgen und zu verwalten, klicken Sie auf den Tab `Meine Anfragen`{.action}. Hier können Sie eine Anfrage annehmen oder ablehnen.
 
 ![Kontaktverwaltung](images/managing_contacts_05.png){.thumbnail}
@@ -113,6 +118,7 @@ Wenn nur ein Kontakt die Änderung bestätigt hat, wird eine Meldung angezeigt, 
 ![Kontaktverwaltung](images/managing_contacts_007.png){.thumbnail}
 
 Die Kontaktänderung wird einige Minuten nach Bestätigung der Anfrage durch die beiden Kontakte wirksam. Anschließend erhalten sie eine E-Mail, in der sie darüber informiert werden, dass die Anfrage erfolgreich bearbeitet wurde.
+<!-- CP-STEPS-END:confirm-track-contact-change -->
 
 ### Beispiel: Ihrem Webmaster die technische Verwaltung Ihrer Website erlauben
 

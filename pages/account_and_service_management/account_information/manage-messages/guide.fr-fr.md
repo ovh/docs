@@ -27,12 +27,15 @@ Lors de la création de votre compte OVHcloud, vous avez spécifié une adresse 
 
 ### Mes communications
 
+<!-- CP-STEPS-START:my-messages -->
 Depuis l'onglet `Mes communications`{.action}, retrouvez tous les messages qui ont été envoyés à votre adresse e-mail de contact. Dans la partie supérieure droite du tableau, vous pouvez activer un filtre pour trier vos messages par priorité, date et catégorie.
 
 ![my messages](images/messages-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:my-messages -->
 
 ### Contacts
 
+<!-- CP-STEPS-START:contacts -->
 Depuis l'onglet `Contacts`{.action}, vous retrouverez l'adresse e-mail de référence du compte OVHcloud, qui ne peut pas être retirée ou modifiée depuis l'espace client.
 
 > [!primary]
@@ -49,9 +52,11 @@ En plus de votre contact `par défaut`, vous pouvez ajouter de nouvelles adresse
     - `Supprimer`{.action} : Permet de supprimer ce contact.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:contacts -->
 
 ### Paramètres de diffusion
 
+<!-- CP-STEPS-START:delivery-settings -->
 Depuis l'onglet `Paramètres de diffusion`{.action}, vous pouvez créer des règles pour organiser la distribution des messages vers vos adresses e-mail de contact.
 
 - **(1)** : Cliquez sur le bouton `Créer une règle`{.action} pour définir quels contacts recevront les communications, en fonction des catégories et des niveaux de priorité que vous sélectionnez.
@@ -74,6 +79,7 @@ Vous pouvez également créer une règle comprenant plusieurs conditions qui ser
 Par défaut, si une condition s'applique, le processus s'arrête. Si vous souhaitez que le processus continue à appliquer les conditions suivantes, activez le bouton `Et continuer le traitement de règles`{.action} **(2)** sous la règle que vous avez paramétrée.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:delivery-settings -->
 
 ## Aller plus loin
 

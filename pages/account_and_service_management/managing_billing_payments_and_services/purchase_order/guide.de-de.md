@@ -60,6 +60,7 @@ Für OVHcloud muss das Dokument daher mindestens folgende Angaben enthalten:
 
 ### Wie Sie eine Purchase Order Nummer (PO) in Ihrem OVHcloud Kundencenter eingeben
 
+<!-- CP-STEPS-START:enter-po-reference -->
 Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders).
 
 ![Kundencenter](images/huborders.png){.thumbnail}
@@ -88,6 +89,7 @@ Im Tab `Meine internen Referenzen`{.action} können Sie eine Referenz ändern od
 
 > [!primary]
 > Wenn Sie eine Referenz **innerhalb des gleichen Zeitintervalls** deaktivieren/ändern möchten, verwenden Sie die Option `Bearbeiten`{.action}, um die Zeitspanne der ersten Referenz zu ändern.
+<!-- CP-STEPS-END:enter-po-reference -->
 
 ## Weiterführende Informationen
 

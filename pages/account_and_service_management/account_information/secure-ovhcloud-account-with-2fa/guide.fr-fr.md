@@ -104,6 +104,7 @@ Sur la page [Sécurité du compte](/links/control-panel/account-security), cliqu
 
 > [!tabs]
 > SMS
+>> <!-- CP-STEPS-START:enable-2fa-sms -->
 >> Choisissez la méthode par SMS et cliquez sur `Suivant`{.action}.
 >>
 >> ![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
@@ -116,7 +117,9 @@ Sur la page [Sécurité du compte](/links/control-panel/account-security), cliqu
 >>
 >> ![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
 >> La double authentification est maintenant activée. L'ajout d'autres numéros est également possible.
+>> <!-- CP-STEPS-END:enable-2fa-sms -->
 > Application Mobile
+>> <!-- CP-STEPS-START:enable-2fa-otp -->
 >> Choisissez la méthode par application mobile et cliquez sur `Suivant`{.action}.
 >>
 >> ![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
@@ -126,7 +129,9 @@ Sur la page [Sécurité du compte](/links/control-panel/account-security), cliqu
 >>
 >> ![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
 >> La double authentification est maintenant activée.
+>> <!-- CP-STEPS-END:enable-2fa-otp -->
 > Clé de sécurité
+>> <!-- CP-STEPS-START:enable-2fa-u2f -->
 >> Choisissez la méthode par clé de sécurité et cliquez sur `Suivant`{.action}.
 >>
 >> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
@@ -139,6 +144,7 @@ Sur la page [Sécurité du compte](/links/control-panel/account-security), cliqu
 >>
 >> Une fois la clé reconnue, vous pouvez également ajouter une description.
 >> La double authentification est maintenant activée.
+>> <!-- CP-STEPS-END:enable-2fa-u2f -->
 
 Une fois la première méthode ajoutée, vous pouvez également **ajouter une ou deux autres méthodes** afin de disposer de multiples moyens de vous connecter à votre compte.
 

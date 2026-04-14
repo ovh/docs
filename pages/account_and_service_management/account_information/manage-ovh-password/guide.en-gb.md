@@ -79,6 +79,8 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 #### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:change-password-cp -->
+
 - On the [Account security](/links/control-panel/account-security) page, click `Edit`{.action} to the right of “Password”.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
@@ -93,9 +95,13 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 - A message will then pop up, confirming that the password has been changed successfully. Click `Continue`{.action} at the bottom of the pop-up to be redirected to the login page, then enter your NIC handle and new password.
 
+<!-- CP-STEPS-END:change-password-cp -->
+
 <a name="lost-password"></a>
 
 #### If you have forgotten your current password
+
+<!-- CP-STEPS-START:change-password-forgotten -->
 
 - Click `Forgotten your username or password?`{.action} when you load the login page for the OVHcloud Control Panel.
 
@@ -119,6 +125,8 @@ If your password has been compromised, we strongly recommend [changing it as soo
 >
 > When you reset your password, all active sessions for your OVHcloud account will be automatically closed.
 >
+
+<!-- CP-STEPS-END:change-password-forgotten -->
 
 ## Go further
 

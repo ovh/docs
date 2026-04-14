@@ -84,6 +84,7 @@ If you have several datacentres in your infrastructure, the datastore will be ac
 
 ### Monthly resources
 
+<!-- CP-STEPS-START:monthly-resources-cp -->
 You can order monthly resources via the OVHcloud Control Panel, in the `datacentre`{.action} tab of your Hosted Private Cloud.
 
 #### Monthly billing
@@ -121,9 +122,11 @@ Then confirmation.
 ![datastore order confirmation](images/images-order_datastore_manager_confirm.png){.thumbnail}
 
 In the OVHcloud Control Panel, there is no indication of availability. If a resource is not available, the order will remain on hold, and as a result, the rental period will only start when the resource is delivered.
+<!-- CP-STEPS-END:monthly-resources-cp -->
 
 ### Windows licenses
 
+<!-- CP-STEPS-START:windows-spla-licenses -->
 From your OVHcloud Control Panel, you can activate SPLA licenses in order to [deploy Windows virtual machines with an OVHcloud license](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 
 After clicking the `Activate SPLA`{.action} button, the following window will open:
@@ -131,6 +134,7 @@ After clicking the `Activate SPLA`{.action} button, the following window will op
 ![activate SPLA](images/images-activate_spla.png){.thumbnail}
 
 Once you have confirmed the various conditions, you will be asked to validate a free purchase order so that the option can be activated.
+<!-- CP-STEPS-END:windows-spla-licenses -->
 
 This license will be billed at the beginning of the following month, based on the number of machines deployed and powered on in the previous month.
 
@@ -156,11 +160,13 @@ A virtual machine will be billed upon startup for an entire month, regardless of
 
 ### Veeam Backup
 
+<!-- CP-STEPS-START:veeam-backup -->
 From your OVHcloud Control Panel, you can enable the Veeam option, which will allow you to back up your virtual machines.
 
 Activation is done on the button available in the `Backup`{.action} tab. You will need to confirm the activation in the window that opens.
 
 ![activate Veeam](images/images-activate_veeam.png){.thumbnail}
+<!-- CP-STEPS-END:veeam-backup -->
 
 A Windows virtual machine will then be deployed on your infrastructure for a fixed cost of €20 ex. VAT, whatever your range and host types.
 

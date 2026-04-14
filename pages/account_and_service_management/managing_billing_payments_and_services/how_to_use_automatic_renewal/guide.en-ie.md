@@ -122,12 +122,15 @@ This guide will help you to:
 
 ## Instructions
 
+<!-- CP-STEPS-START:services-table -->
 Open the [My offers and services](/links/control-panel/billing-services) page.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
+<!-- CP-STEPS-END:services-table -->
 
 ### Display renewal type <a name="renewal-type"></a>
 
+<!-- CP-STEPS-START:services-table -->
 The **Manage my solutions and services** page contains a table for managing your OVHcloud services. You can find their names, the type of service, service availability (`Active` by default), its status (renewal type, action to be taken, etc.), the next renewal or cancellation date of effect, and a `...`{.action} button dedicated to the possible actions for each service.
 
 ![my services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
@@ -139,6 +142,7 @@ The **Manage my solutions and services** page contains a table for managing your
 > Your filter criteria will then be displayed above the table. Here is an example of a filter that can be used to display domain names that are renewed manually.
 >
 > ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
+<!-- CP-STEPS-END:services-table -->
 
 <a name="actions"></a>
 
@@ -149,7 +153,8 @@ The **Manage my solutions and services** page contains a table for managing your
 > Depending on the service and its eligibility to manual renewal, some actions may not be available.
 >
 
-To the right of a service, click the `...`{.action}' button in the `Actions` column, then click on the action you want to perform.
+<!-- CP-STEPS-START:configure-renewal -->
+To the right of a service, click the `...`{.action}’ button in the `Actions` column, then click on the action you want to perform.
 
 ![actions menu](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
@@ -166,6 +171,8 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> Depending on your choice, you will be given information on future payment dates, the payment method that will be used, and the service’s expiry date.
 >>
+<!-- CP-STEPS-END:configure-renewal -->
+<!-- CP-STEPS-START:bring-forward-payment -->
 > **Bring forward payment**
 >>
 >>![anticipate payment](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
@@ -179,13 +186,15 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> > [!success]
 >> >
->> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don't tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
+>> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don’t tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
 >> > If you tick this/these white button(s), you will request renewal for your main service **WITHOUT** any associated options.
 >> >
 >> > Once you have made your choices, proceed with your order by clicking `Confirm`{.action}.
 >> >
 >> > Please note that some options are only priced when the renewal purchase order is generated.
 >>
+<!-- CP-STEPS-END:bring-forward-payment -->
+<!-- CP-STEPS-START:cancel-subscription -->
 > **Cancel my subscription**
 >>
 >>![cancel](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
@@ -196,6 +205,8 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> For more information on cancelling OVHcloud services, follow the instructions in our guide **[How to cancel your OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**.
 >>
+<!-- CP-STEPS-END:cancel-subscription -->
+<!-- CP-STEPS-START:renew-service -->
 > **Renew service**
 >>
 >>![Renew service](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
@@ -207,13 +218,15 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> > [!success]
 >> >
->> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don't tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
+>> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don’t tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
 >> > If you tick this/these white button(s), you will request renewal for your main service **WITHOUT** any associated options.
 >> >
 >> > Once you have made your choices, proceed with your order by clicking `Confirm`{.action}.
 >> >
 >> > Please note that some options are only priced when the renewal purchase order is generated.
 >>
+<!-- CP-STEPS-END:renew-service -->
+<!-- CP-STEPS-START:pay-bill -->
 > **Pay my bill**
 >>
 >>![Pay a bill](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
@@ -225,11 +238,13 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> Simply click the `Pay my bill`{.action} action, which will redirect you to an online payment platform.
 >>
+<!-- CP-STEPS-END:pay-bill -->
 
 <a name="group-actions"></a>
 
 ### Bulk actions
 
+<!-- CP-STEPS-START:bulk-actions -->
 You can perform group actions by selecting several services in the table, then clicking on the `Actions`{.action} button.
 
 ![bulk actions](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
@@ -243,6 +258,7 @@ The table below details the possible group actions.
 |Enable automatic payment|Enable automatic payment for several services at once. Only eligible services will be updated.|
 |Export as CSV|Export all of your services and their expiry dates into a csv-formatted file.|
 |Align renewal dates|Aligns the expiry dates for your services on a single calendar day. Only eligible services can be updated.|
+<!-- CP-STEPS-END:bulk-actions -->
 
 ## FAQ
 

@@ -38,7 +38,9 @@ Diese Anleitung beschreibt die Verlängerung ausführlich: [Verlängerung Ihrer 
 
 ### Wie kann ich die automatische Verlängerung aktivieren?
 
+<!-- CP-STEPS-START id="block_01" section="How do I enable automatic renewal?" -->
 Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} aus. Standardmäßig wird die automatische Verlängerung bei der Bestellung des Dienstes aktiviert.
+<!-- CP-STEPS-END id="block_01" -->
 
 #### Tipps und Tricks
 

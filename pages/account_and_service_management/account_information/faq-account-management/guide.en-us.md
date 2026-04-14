@@ -81,6 +81,7 @@ If you have not yet found your username, you can click on the “Forgotten your 
 
 /// details | How do I secure my account?
 
+<!-- CP-STEPS-START:secure-account -->
 There are several ways you can secure your account, such as:
 
 - the choice of a [complex password and its regular renewal](/pages/account_and_service_management/account_information/manage-ovh-password);
@@ -90,6 +91,7 @@ There are several ways you can secure your account, such as:
 On the [Account security](/links/control-panel/account-security) page, you can view them.
 
 And for more info, watch the [video](https://www.youtube.com/watch?v=odO58c4gJfc&list=PL0DynEzr_sE5MnOfJOpVJN-EhfMDWoqGS&index=24).
+<!-- CP-STEPS-END:secure-account -->
 
 ///
 
@@ -108,12 +110,13 @@ If this happens to you, please follow [this guide](/products/account-and-service
 
 /// details | How do I change my OVHcloud account password?
 
+<!-- CP-STEPS-START:change-password -->
 On the [Account security](/links/control-panel/account-security) page, click on the `Modify`{.action} button to the right of the **Password**. You can then change your current password. A security message will then appear, confirming that you are about to change your password. Once you have confirmed, you will receive an email (to the main email address entered in the account) containing the procedure to follow.
 
 You can find more information in our guide [Changing your account password](/pages/account_and_service_management/account_information/manage-ovh-password).
 
 > [!success]
-> **Can't remember your password?**
+> **Can’t remember your password?**
 >
 > Go to the [login page for your Control Panel](/links/manager) and click `Forgot username or password?`{.action}. Enter your NIC handle or the primary email address associated with your OVHcloud account, then click `Submit`{.action}. An email is then sent to the account’s contact email address, to confirm the request. Please read the instructions carefully and click on the link in it.
 >
@@ -123,6 +126,7 @@ You can find more information in our guide [Changing your account password](/pag
 >
 > If you have forgotten your NIC handle, you can find it in the top right-hand corner of your last bill. It looks like this: "aa00000-ovh" (the first letters are usually the initials of the person who created the account). You will also find this ID in the email confirming that you have created your account, as well as in the emails of orders confirmation or renewal.
 >
+<!-- CP-STEPS-END:change-password -->
 
 ///
 
@@ -164,6 +168,7 @@ Check out the "[What do I do if I lose one of my devices, or if it stops working
 
 /// details | How do I change my personal information?
 
+<!-- CP-STEPS-START:change-personal-information -->
 To view or change your personal details, open the [My profile](/links/control-panel/account-profile) page.
 
 > [!success]
@@ -171,16 +176,19 @@ To view or change your personal details, open the [My profile](/links/control-pa
 >
 > A confirmation request will first be sent to the email address you currently have listed in the OVHcloud Control Panel. If you can no longer access this email address, you will need to wait 24 hours. After this period, the change will automatically be made.
 >
+<!-- CP-STEPS-END:change-personal-information -->
 
 ///
 
 /// details | How do I access the contracts and general terms and conditions of service?
 
+<!-- CP-STEPS-START:access-contracts -->
 You can view the contracts for your OVHcloud services directly on the [Contract list](/links/control-panel/billing-contracts) page.
 
 You can also view the contracts on our website, via [this link](/links/terms-conditions-contracts).
 
 This page contains all necessary information about our contracts, including the terms and conditions of our services.
+<!-- CP-STEPS-END:access-contracts -->
 
 ///
 
@@ -220,6 +228,7 @@ For more information, please contact our support team by creating a [support tic
 
 /// details | How do I delete my OVHcloud account?
 
+<!-- CP-STEPS-START:delete-account -->
 Closing your OVHcloud customer account and deleting your personal data is only possible if:
 
 1. You no longer have any services listed in the [My offers and services](https://www.ca.ovh.com/manager/dedicated/#/billing/autoRenew) section. Otherwise, you will need to request their termination and wait for their deletion.
@@ -232,6 +241,7 @@ If the above conditions are met, you can request to delete your OVHcloud account
 1. Log in to the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
 1. Select the reason `Manage your OVHcloud customer account`{.action}.
 1. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
+<!-- CP-STEPS-END:delete-account -->
 
 ///
 
@@ -277,7 +287,9 @@ All our e-mails comply with our security standards (SPF, DKIM, DMARC) and come f
 **If you are in doubt about the authenticity of an e-mail**:
 
 - Know that we will never ask for your password or banking details by e-mail.
+<!-- CP-STEPS-START:check-emails -->
 - Check whether the e-mail you received is also visible on the [My messages](/links/control-panel/account-messages) page. You will find copies of all official e-mails sent by OVHcloud there.
+<!-- CP-STEPS-END:check-emails -->
 - Also refer to our guide: [Phishing - How to identify fraudulent e-mails or SMS?](/pages/account_and_service_management/account_information/phishing_care).
 
 ///
@@ -322,6 +334,7 @@ Replace `{logId}` with the actual log ID of the log you want to view. This will 
 
 /// details | How do I change contacts?
 
+<!-- CP-STEPS-START:change-contacts -->
 You can delegate the administrative, technical and billing management of your services to other OVHcloud customer accounts from the OVHcloud Control Panel. To do this, open the [My contacts](/links/control-panel/account-contacts) page.
 
 The service delegation must be validated via email both by the service administrator and the new contact.
@@ -332,15 +345,18 @@ If you would like to retrieve a domain name that you are the registered owner of
 
 > [!success]
 > A full contact management guide is available here: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+<!-- CP-STEPS-END:change-contacts -->
 
 ///
 
 /// details | How do I set and change a billing contact?
 
+<!-- CP-STEPS-START:change-billing-contact -->
 Open the [My contacts](/links/control-panel/account-contacts) page.
 
 > [!success]
 > For further information about contact management, please read this detailed guide: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+<!-- CP-STEPS-END:change-billing-contact -->
 
 ///
 
