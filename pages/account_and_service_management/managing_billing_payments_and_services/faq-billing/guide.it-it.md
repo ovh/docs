@@ -35,9 +35,9 @@ Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/p
 
 ### Come attivare il rinnovo automatico?
 
-<!-- CP-STEPS-START id="block_01" section="How do I enable automatic renewal?" -->
+<!-- CP-STEPS-START:enable-automatic-renewal -->
 Nella pagina [Le mie offerte e servizi](/links/control-panel/billing-services), clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Attiva il pagamento automatico`{.action}.
-<!-- CP-STEPS-END id="block_01" -->
+<!-- CP-STEPS-END:enable-automatic-renewal -->
 
 #### Consigli e suggerimenti
 
@@ -46,11 +46,11 @@ Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/p
 
 ### Come disattivare il rinnovo automatico?
 
-<!-- CP-STEPS-START id="block_02" section="How do I disable automatic renewal?" -->
+<!-- CP-STEPS-START:disable-automatic-renewal -->
 Nella pagina [Le mie offerte e servizi](/links/control-panel/billing-services), clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Configura il rinnovo`{.action}. A questo punto è possibile scegliere la modalità manuale. Ricordiamo che questo tipo di rinnovo è disponibile solo per alcuni servizi come domini, hosting Web, VPS e server dedicati.
 
 Per disattivare un servizio, consulta la pagina [Come disattivare un servizio?](#cancelservice)
-<!-- CP-STEPS-END id="block_02" -->
+<!-- CP-STEPS-END:disable-automatic-renewal -->
 
 #### Consigli e suggerimenti
 
@@ -59,9 +59,9 @@ Per maggiori informazioni, consulta la guida Gestire il rinnovo dei servizi.
 
 ### Come aggiungere un metodo di pagamento?
 
-<!-- CP-STEPS-START id="block_03" section="How do I add a payment method?" -->
+<!-- CP-STEPS-START:add-payment-method -->
 Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), clicca su `Aggiungi un metodo di pagamento`{.action}.
-<!-- CP-STEPS-END id="block_03" -->
+<!-- CP-STEPS-END:add-payment-method -->
 
 ### Come aggiornare un metodo di pagamento?
 
@@ -77,9 +77,9 @@ Per il corretto rinnovo dei servizi è necessario registrare almeno un metodo di
 
 ### Come eliminare un metodo di pagamento?
 
-<!-- CP-STEPS-START id="block_04" section="How do I delete a payment method?" -->
+<!-- CP-STEPS-START:delete-payment-method -->
 Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), seleziona il metodo di pagamento da eliminare e clicca sull’icona a forma di cestino.
-<!-- CP-STEPS-END id="block_04" -->
+<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Consigli e suggerimenti
 
@@ -97,7 +97,7 @@ Se sul conto prepagato OVHcloud è disponibile del credito, verrà utilizzato di
 
 ### Come conoscere la data del prossimo pagamento?
 
-<!-- CP-STEPS-START id="block_05" section="When is my next payment due date?" -->
+<!-- CP-STEPS-START:next-payment-due-date -->
 Nella pagina [Le mie offerte e servizi](/links/control-panel/billing-services), è possibile consultare e modificare la frequenza di rinnovo delle soluzioni.
 Per saperne di più, consulta questa guida dettagliata: [Gestire il rinnovo dei miei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
@@ -105,7 +105,7 @@ Per saperne di più, consulta questa guida dettagliata: [Gestire il rinnovo dei 
 
 La frequenza di rinnovo delle soluzioni può essere modificata dalla pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
-<!-- CP-STEPS-END id="block_05" -->
+<!-- CP-STEPS-END:next-payment-due-date -->
 
 ### Quale metodo di pagamento viene utilizzato per il pagamento della fattura?
 
@@ -146,17 +146,17 @@ Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-m
 
 ### A cosa corrispondono i pagamenti effettuati?
 
-<!-- CP-STEPS-START id="block_06" section="What do my payments correspond to?" -->
+<!-- CP-STEPS-START:payments-correspondence -->
 I pagamenti eseguiti tramite il nostro sito Web e i prelievi automatici sono elencati nella cronologia dello Spazio Cliente. Clicca sul tuo nome utente in alto a destra e seleziona `Fatturazione`{.action}: nella scheda `Controllo dei pagamenti`{.action} sono disponibili fatture, date e importi corrispondenti.
-<!-- CP-STEPS-END id="block_06" -->
+<!-- CP-STEPS-END:payments-correspondence -->
 
 ### Come disattivare un servizio? <a name="cancelservice"></a>
 
-<!-- CP-STEPS-START id="block_07" section="How do I cancel a service?" -->
+<!-- CP-STEPS-START:cancel-service -->
 Per soluzioni come domini, hosting Web, server dedicati e VPS, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Disattivare il servizio`{.action}. Se hai già effettuato la richiesta in precedenza è possibile annullarla cliccando su `Annulla la disattivazione del servizio`{.action}.
 
 L’operazione diventerà effettiva al termine del periodo di validità o dell’impegno contrattuale relativo al servizio. È possibile effettuare o annullare una richiesta fino a 24 ore prima della scadenza.
-<!-- CP-STEPS-END id="block_07" -->
+<!-- CP-STEPS-END:cancel-service -->
 
 #### Consigli e suggerimenti
 
@@ -165,10 +165,10 @@ Per consultare la documentazione completa sulla disattivazione di tutti i nostri
 
 ### Come personalizzare il riferimento di un prodotto o servizio sulla fattura?
 
-<!-- CP-STEPS-START id="block_08" section="How do I customize the reference for my product/service on my bill?" -->
+<!-- CP-STEPS-START:customize-product-reference-bill -->
 Per una lettura semplificata, oltre al riferimento OVHcloud anche i nomi assegnati a prodotti e servizi vengono riportati direttamente sulla fattura.
 Ad eccezione dei domini, è possibile personalizzare il nome delle proprie soluzioni nello Spazio Cliente, nella pagina di configurazione del servizio in questione.
-<!-- CP-STEPS-END id="block_08" -->
+<!-- CP-STEPS-END:customize-product-reference-bill -->
 
 ### Come funziona il sistema di fatturazione Public Cloud?
 
@@ -180,13 +180,13 @@ Per maggiori informazioni, consulta la guida [Sistema di fatturazione dei serviz
 
 ### Come consultare il registro contabile?
 
-<!-- CP-STEPS-START id="block_09" section="How do I see the accounts ledger?" -->
+<!-- CP-STEPS-START:see-accounts-ledger -->
 Questo documento è in genere disponibile presso il dipartimento di contabilità.
 
 OVHcloud mette comunque a disposizione tutte le fatture tramite un file Excel in formato CSV.
 
 Per scaricarlo, apri la pagina [Le mie fatture](/links/control-panel/billing-invoices). Clicca su `Azioni`{.action} > `Esporta in CSV`{.action}.
-<!-- CP-STEPS-END id="block_09" -->
+<!-- CP-STEPS-END:see-accounts-ledger -->
 
 ## Per saperne di più
   
