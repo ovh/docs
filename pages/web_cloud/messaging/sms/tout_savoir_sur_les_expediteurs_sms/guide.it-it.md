@@ -23,7 +23,9 @@ Questo manuale ti spiega come creare e utilizzare mittenti per l'invio dei tuoi 
 ---
 <!-- CP-NAV-END:telecom-sms -->
 
+<!-- CP-STEPS-START:cp-overview-screenshot -->
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
+<!-- CP-STEPS-END:cp-overview-screenshot -->
 
 ## Procedura
 
@@ -50,6 +52,7 @@ Consente di ricevere una risposta tramite l'opzione SMS ricevuti.
 
 #### Mittente alfanumerico
 
+<!-- CP-STEPS-START:alphanumeric-sender-management -->
 Puoi personalizzare il tuo mittente. Non sarà però più possibile ricevere una risposta dal destinatario del tuo SMS. Per accedere alla gestione dei mittenti SMS, seleziona l'opzione `Mittenti`{.action} (1) quando sei sul relativo account SMS.
 
 ![invio sms manager](images/sms-send-control-panel04E.png){.thumbnail}
@@ -74,6 +77,7 @@ La validazione di un mittente alfanumerico avviene in media entro 72 ore dopo la
 - **Aggiungi mittenti a partire da dati personali**: Puoi richiedere un mittente basato sui dati del tuo account OVHcloud. Verrà visualizzata una lista a discesa dei mittenti disponibili.
 
 - **Aggiungi mittenti a partire dai tuoi domini OVHcloud**: Puoi utilizzare un nome di dominio disponibile nel tuo account OVHcloud come mittente. Verrà visualizzata una lista a discesa dei mittenti disponibili.
+<!-- CP-STEPS-END:alphanumeric-sender-management -->
 
 #### Numero mobile virtuale
 

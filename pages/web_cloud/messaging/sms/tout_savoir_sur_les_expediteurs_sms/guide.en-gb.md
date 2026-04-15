@@ -23,7 +23,9 @@ This guide explains how to create and use senders for sending your SMS messages.
 ---
 <!-- CP-NAV-END:telecom-sms -->
 
+<!-- CP-STEPS-START:cp-overview-screenshot -->
 ![OVHcloud Control Panel Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
+<!-- CP-STEPS-END:cp-overview-screenshot -->
 
 ## Instructions
 
@@ -50,6 +52,7 @@ It allows you to receive a reply via the "Received SMS" tab.
 
 #### Alphanumeric sender
 
+<!-- CP-STEPS-START:alphanumeric-sender-management -->
 You can customise your sender. However, you will no longer be able to receive a reply from the recipient of your SMS. To access the management of SMS senders, select the `Senders`{.action} tab (1) when you are on the relevant SMS account.
 
 ![sms send control panel](images/sms-send-control-panel04E.png){.thumbnail}
@@ -74,6 +77,7 @@ The validation of an alphanumeric sender is usually processed within 72 hours af
 - **Add senders from personal data**: You can request a sender based on the contact details of your OVHcloud account. A drop-down list of available senders will then appear.
 
 - **Add senders from your OVHcloud domain names**: You can use a domain name available in your OVHcloud account as a sender. A drop-down list of available senders will then appear.
+<!-- CP-STEPS-END:alphanumeric-sender-management -->
 
 #### Virtual mobile number
 

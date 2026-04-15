@@ -57,6 +57,7 @@ La réponse (si vous l'activez) peut être ensuite :
 
 ### Gérer les options des réponses
 
+<!-- CP-STEPS-START:gerer-options-reponses -->
 Avant d'envoyer votre SMS réponse, nous vous conseillons de configurer les options de réception des réponses.
 
 Dans la barre d'onglets, cliquez sur `Options`{.action} puis sur `Options des réponses`{.action}.
@@ -103,9 +104,11 @@ Configurez alors une notification par e-mail ou par SMS.
     - Numéro : entrez le numéro du destinataire de la notification au **format international**.
 
 Une fois votre notification configurée, cliquez sur le bouton `Valider`{.action}. Vous pouvez ajouter plusieurs notifications, les éditer ou les supprimer.
+<!-- CP-STEPS-END:gerer-options-reponses -->
 
 ### Envoyer un SMS réponse
 
+<!-- CP-STEPS-START:envoyer-sms-reponse -->
 Dans l'espace client, sélectionnez l'onglet `Accueil`{.action} de votre compte SMS. Cliquez ensuite sur `Envoyer un SMS`{.action}.
 
 ![envoi SMS](images/SMSreponse-envoi.png){.thumbnail}
@@ -115,14 +118,17 @@ Assurez-vous que votre expéditeur est bien le `Numéro permettant la réponse (
 ![envoi SMS](images/SMSreponse-expediteur.png){.thumbnail}
 
 Complétez ensuite les champs dédiés au(x) destinataire(s) et à votre message. Pour plus de détails, consultez [notre guide sur l'envoi de SMS depuis l'espace client](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client).
+<!-- CP-STEPS-END:envoyer-sms-reponse -->
 
 ### Consulter les réponses
 
+<!-- CP-STEPS-START:consulter-reponses -->
 Dans l'espace client, cliquez sur l'onglet `Message et campagne`{.action} de votre compte SMS. Cliquez ensuite sur `SMS reçus`{.action}.
 
 ![SMS reçus](images/SMSreponse-recus.png){.thumbnail}
 
 Un tableau liste tous les SMS reçus en réponse de vos envois. Vous pouvez trier ces SMS en cliquant sur les en-têtes des colonnes du tableau.
+<!-- CP-STEPS-END:consulter-reponses -->
 
 ## Aller plus loin
 

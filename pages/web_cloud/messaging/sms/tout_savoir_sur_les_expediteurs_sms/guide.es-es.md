@@ -23,7 +23,9 @@ Este guía le explica cómo crear y utilizar remitentes para el envío de sus SM
 ---
 <!-- CP-NAV-END:telecom-sms -->
 
+<!-- CP-STEPS-START:cp-overview-screenshot -->
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
+<!-- CP-STEPS-END:cp-overview-screenshot -->
 
 ## Procedimiento
 
@@ -50,6 +52,7 @@ Permite recibir una respuesta a través de la pestaña SMS recibidos.
 
 #### Remitente alfanumérico
 
+<!-- CP-STEPS-START:alphanumeric-sender-management -->
 Puede personalizar su remitente. A partir de ese momento, ya no será posible recibir una respuesta por parte del destinatario de su SMS. Para acceder a la gestión de los remitentes SMS, seleccione la pestaña `Remitentes`{.action} (1) cuando esté en la cuenta SMS correspondiente.
 
 ![envoi sms manager](images/sms-send-control-panel04E.png){.thumbnail}
@@ -74,6 +77,7 @@ La validación de un remitente alfanumérico se realiza en promedio en 72 horas 
 - **Añadir remitentes a partir de datos personales**: Puede solicitar un remitente basado en las coordenadas de su cuenta OVHcloud. A continuación, se mostrará una lista desplegable de los remitentes disponibles.
 
 - **Añadir remitentes a partir de sus dominios OVHcloud**: Puede utilizar un nombre de dominio disponible en su cuenta OVHcloud como remitente. A continuación, se mostrará una lista desplegable de los remitentes disponibles.
+<!-- CP-STEPS-END:alphanumeric-sender-management -->
 
 #### Número de móvil virtual
 
