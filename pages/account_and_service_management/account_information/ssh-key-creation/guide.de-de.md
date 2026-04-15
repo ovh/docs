@@ -11,42 +11,56 @@ Willkommen bei diesem Leitfaden, in dem wir Ihnen Schritt für Schritt erklären
 <iframe class="video" src="https://embed.api.video/vod/vi61ppwdv4ObB9E5Rhph7Uxq" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
 
 ## Schritt 1: Zugriff auf die Seite "Meine Angebote und Dienstleistungen"
+<!-- CP-STEPS-START:access-services-page -->
 Gehen Sie zunächst auf die Seite "Meine Angebote und Dienstleistungen" im OVHcloud Control Panel, die Sie unter der URL [https://www.ovh.com/manager/#/billing/autorenew/](https://www.ovh.com/manager/#/billing/autorenew/) finden. Stellen Sie sicher, dass Sie angemeldet sind, um auf Ihre Dienstleistungen zuzugreifen. 
 
 ![Schritt 1](images/screenshot-1.de-de.jpg){.thumbnail}
 
 ## Schritt 2: Klicken auf den "SSH-Schlüssel" Tab
+<!-- CP-STEPS-START:click-ssh-key-tab -->
 Nachdem Sie sich auf der richtigen Seite befinden, klicken Sie auf den Tab "SSH-Schlüssel". Dieser Tab ermöglicht es Ihnen, Ihre SSH-Schlüssel zu verwalten, die für die sichere Anmeldung an Ihren Servern verwendet werden.
 
 ![Schritt 2](images/screenshot-2.de-de.jpg){.thumbnail}
 
+<!-- CP-STEPS-END:access-services-page -->
+<!-- CP-STEPS-START:add-new-ssh-key -->
 ## Schritt 3: Hinzufügen eines neuen SSH-Schlüssels
 Klicken Sie nun auf die Schaltfläche "Ein SSH-Schlüssel hinzufügen". Durch diesen Vorgang öffnet sich ein Dropdown-Menü, in dem Sie die Option "Dedicated" auswählen müssen. Diese Option ist für dedizierte Server bestimmt und ermöglicht eine sichere Verbindung.
 
 ![Schritt 3](images/screenshot-3.de-de.jpg){.thumbnail}
 
+<!-- CP-STEPS-END:click-ssh-key-tab -->
+<!-- CP-STEPS-START:verify-modal-window -->
 ## Schritt 4: Überprüfung des Modalfensters
 Nachdem Sie die Option "Dedicated" ausgewählt haben, sollte ein Modalfenster mit dem Titel "Ein SSH-Schlüssel hinzufügen" angezeigt werden. Dieses Fenster enthält die erforderlichen Felder, um Ihren neuen SSH-Schlüssel zu konfigurieren.
 
 ![Schritt 4](images/screenshot-4.de-de.jpg){.thumbnail}
 
+<!-- CP-STEPS-END:add-new-ssh-key -->
+<!-- CP-STEPS-START:enter-key-id -->
 ## Schritt 5: Eingabe der ID
 Geben Sie im Feld "ID" (oder "Identifier") einen eindeutigen Wert ein. Dieser Wert dient als Bezeichner für Ihren SSH-Schlüssel und sollte daher einfach zu identifizieren und zu merken sein. Für diesen Leitfaden können Sie einen zufälligen ID-Wert verwenden.
 
 ![Schritt 5](images/screenshot-5.de-de.jpg){.thumbnail}
 
+<!-- CP-STEPS-END:verify-modal-window -->
+<!-- CP-STEPS-START:enter-ssh-key -->
 ## Schritt 6: Eingabe des SSH-Schlüssels
 Im Feld "Schlüssel" geben Sie Ihren SSH-Schlüssel im Format "ssh-rsa AAAArandom123" ein. Stellen Sie sicher, dass der Schlüssel im richtigen Format vorliegt, um eine erfolgreiche Konfiguration zu gewährleisten.
 
 ![Schritt 6](images/screenshot-6.de-de.jpg){.thumbnail}
 
+<!-- CP-STEPS-END:enter-key-id -->
+<!-- CP-STEPS-START:confirm-ssh-key -->
 ## Schritt 7: Bestätigung der Eingaben
 Klicken Sie abschließend auf die Schaltfläche "Bestätigen", um den neuen SSH-Schlüssel hinzuzufügen. Durch diesen Vorgang wird der Schlüssel in Ihrem OVHcloud Control Panel gespeichert und kann für die Anmeldung an Ihren Servern verwendet werden.
 
 ![Schritt 7](images/screenshot-7.de-de.jpg){.thumbnail}
 
+<!-- CP-STEPS-END:enter-ssh-key -->
 ## Fußnoten
 *¹ SSH-Schlüssel: Ein SSH-Schlüssel (Secure Shell) ist eine Methode, um eine sichere Verbindung zu einem Server herzustellen, ohne ein Passwort eingeben zu müssen. Er besteht aus einem privaten und einem öffentlichen Schlüssel, die zusammenarbeiten, um die Authentifizierung und Verschlüsselung der Verbindung zu gewährleisten.
 
+<!-- CP-STEPS-END:confirm-ssh-key -->
 ## Schluss
 Herzlichen Glückwunsch! Sie haben erfolgreich einen SSH-Schlüssel im OVHcloud Control Panel hinzugefügt. Dieser Leitfaden sollte Ihnen geholfen haben, den Prozess Schritt für Schritt zu verstehen und durchzuführen. Wenn Sie weitere Fragen haben oder Hilfe benötigen, zögern Sie nicht, sich an den OVHcloud Support zu wenden.
