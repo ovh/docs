@@ -37,8 +37,8 @@ You can use any of the [ClickHouse-recommended drivers and interfaces](https://c
 
 Two plans are available:
 
-- Discovery (Soon): 1 node
-- Production: 3 nodes
+- **Discovery** (Soon): 1 node
+- **Production**: 3 nodes
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 

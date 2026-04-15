@@ -51,9 +51,9 @@ These drivers ensure that applications can efficiently and securely communicate 
 
 Three plans are available:
 
-- Discovery: 3 nodes
-- Production: 3 nodes
-- Advanced: 3 to 7 nodes (including optionally an analytics node)
+- **Discovery**: 3 nodes
+- **Production**: 3 nodes
+- **Advanced**: 3 to 7 nodes (including optionally an analytics node)
 
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
 

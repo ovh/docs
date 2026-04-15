@@ -46,8 +46,8 @@ Kafka Connect and Kafka Mirrormaker 2 are available at OVHcloud.
 
 Different plans are available:
 
-- *Business/Production*: 3 nodes
-- *Enterprise/Advanced*: 6 nodes
+- **Business/Production**: 3 nodes
+- **Enterprise/Advanced**: 6 nodes
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 

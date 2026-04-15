@@ -47,8 +47,8 @@ You can use your browser to access your Dashboards service.
 
 Here is an overview of the available plans:
 
-- Essential: 1 node
-- Business: 1 node
+- **Essential**: 1 node
+- **Business**: 1 node
 
 Both plans offer an automatic backup retention of 2 days. They support public or private networks (vRack).
 

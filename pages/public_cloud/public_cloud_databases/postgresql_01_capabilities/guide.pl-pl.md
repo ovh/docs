@@ -50,9 +50,9 @@ You can use any of the [PostgreSQL-recommended drivers and extensions](https://w
 
 Different plans are available:
 
-- Essential: 1 node
-- Business/Production: 2 nodes
-- Enterprise/Advanced: 3 nodes
+- **Essential**: 1 node
+- **Business/Production**: 2 nodes
+- **Enterprise/Advanced**: 3 nodes
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 

@@ -49,9 +49,9 @@ Additionally, Kafka Connect is available at OVHcloud.
 
 Three plans are available:
 
-- Essential: 1 node
-- Business/Production: 3 nodes
-- Enterprise/Advanced: 6 nodes
+- **Essential**: 1 node
+- **Business/Production**: 3 nodes
+- **Enterprise/Advanced**: 6 nodes
 
 Your choice of plan affects the number of nodes your cluster can run as well as the SLA.
 

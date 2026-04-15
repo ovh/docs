@@ -46,9 +46,9 @@ You can use any of the [OpenSearch-recommended clients and plugins](https://open
 
 Three plans are available:
 
-- Essential: 1 node
-- Business/Production: 3 nodes
-- Enterprise/Advanced: 6 nodes
+- **Essential**: 1 node
+- **Business/Production**: 3 nodes
+- **Enterprise/Advanced**: 6 nodes
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 
