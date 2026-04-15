@@ -45,6 +45,7 @@ Durante a utilização do nome de domínio, poderá ser necessário mostrar ou o
 
 ## Instruções
 
+<!-- CP-STEPS-START:configure-whois -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -69,6 +70,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Depois de fazer as suas escolhas, clique no botão `Validar`{.action}.
 >>
 >> As alterações podem ser aplicadas até **48** horas. Estas alterações apenas serão aplicadas **se forem autorizadas pelo agente de registo responsável pela extensão do seu nome de domínio**.
+<!-- CP-STEPS-END:configure-whois -->
 
 ## Quer saber mais?
  

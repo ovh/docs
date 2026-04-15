@@ -63,6 +63,7 @@ Con el fin de evitar las transferencias de nombre de dominio no autorizadas, los
 
 ### 1 - Eliminar la protección contra la transferencia del nombre de dominio
 
+<!-- CP-STEPS-START:unlock-domain-transfer -->
 Haga clic en las pestañas a continuación para ver cada uno de los **3** pasos.
 
 > [!tabs]
@@ -97,6 +98,7 @@ Haga clic en las pestañas a continuación para ver cada uno de los **3** pasos.
 >> > En efecto, algunos *códigos de transferencia* son gestionados directamente por el *registro* de la extensión del nombre de dominio. Un *registro* es una organización que gestiona el conjunto de nombres de dominio para una extensión determinada. Por ejemplo, el **AFNIC** gestiona el conjunto de nombres de dominio con la extensión "*.fr*". En ese caso, deberá contactar directamente con el *registro*, que gestiona la extensión del nombre de dominio, para obtener el *código de transferencia*.
 >>
 >> ![desactivación de la protección](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+<!-- CP-STEPS-END:unlock-domain-transfer -->
 
 > [!primary]
 >
@@ -112,6 +114,7 @@ Haga clic en las pestañas a continuación para ver cada uno de los **3** pasos.
 
 Una vez desbloqueada la protección contra la transferencia, puede obtener el código de transferencia del nombre de dominio.
 
+<!-- CP-STEPS-START:get-transfer-code -->
 Haga clic en las pestañas a continuación para ver cada uno de los **3** pasos.
 
 > [!tabs]
@@ -134,6 +137,7 @@ Haga clic en las pestañas a continuación para ver cada uno de los **3** pasos.
 >> El nuevo agente registrador solicitará el código para finalizar la transferencia. Puede consultar los detalles en el nuevo agente registrador.
 >>
 >> En lugar de escribir manualmente el código, le recomendamos que copie y pegue el código, ya que algunos caracteres pueden confundirse fácilmente.
+<!-- CP-STEPS-END:get-transfer-code -->
 
 Una vez recuperado el código de transferencia, **no vuelva a bloquear su nombre de dominio a menos que ya no quiera transferirlo**.
 

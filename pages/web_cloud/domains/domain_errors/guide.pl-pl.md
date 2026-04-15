@@ -43,6 +43,7 @@ Rejestracja nazwy domeny, jej transfer lub zmiana abonenta to operacje, w który
 
 ### Przegląd interfejsu zarządzania operacjami w toku
 
+<!-- CP-STEPS-START:ongoing-ops-presentation -->
 Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -63,6 +64,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 >> - `Data aktualizacji`: Znacznik czasu aktualizacji bieżącej operacji.
 >> - `Data zakończenia`: Data zakończenia operacji.
 >> - `Status`: Obecny stan operacji.
+<!-- CP-STEPS-END:ongoing-ops-presentation -->
 
 Nie wszystkie operacje wymienione w tej tabeli wymagają Twojej interwencji, aby przebiegały prawidłowo.
 
@@ -82,6 +84,7 @@ Niniejszy przewodnik dotyczy operacji **z błędem** na podstawie powtarzającyc
 
 **Kliknij wybraną sytuację, aby wyświetlić jej zawartość.**
 
+<!-- CP-STEPS-START:situation-document-request -->
 /// details | Wniosek o dokumenty
 
 Niektóre rozszerzenia nazw domen wymagają uzasadnienia rejestracji przez dostarczenie dokumentów. W takim przypadku należy przesłać dokumenty z Panelu klienta OVHcloud.
@@ -110,7 +113,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-document-request -->
 
+<!-- CP-STEPS-START:situation-missing-info -->
 /// details | Brakujące informacje
 
 Podczas rejestracji nazwy domeny konieczne jest czasem uzupełnienie danych kontaktowych. Jeśli dane te nie odpowiadają kryteriom nazwy domeny, może pojawić się poniższy błąd.
@@ -139,7 +144,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-missing-info -->
 
+<!-- CP-STEPS-START:situation-transfer-code -->
 /// details | Nieprawidłowy kod transferu
 
 Podczas transferu nazwy domeny do OVHcloud należy wprowadzić kod transferu (**authInfo** / **AuthCode**) przy składaniu zamówienia. Jeśli ten kod jest nieprawidłowy, operacja zostaje zawieszona. Możesz ją wznowić, wprowadzając poprawny kod.
@@ -168,7 +175,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-transfer-code -->
 
+<!-- CP-STEPS-START:situation-dns-error -->
 /// details | Błąd serwera DNS
 
 Błąd może wystąpić, jeśli serwery DNS przypisane do nazwy domeny nie działają.
@@ -196,7 +205,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> W tej zakładce [zmień serwery DNS](/pages/web_cloud/domains/dns_server_edit).
 
 ///
+<!-- CP-STEPS-END:situation-dns-error -->
 
+<!-- CP-STEPS-START:situation-domain-blocked -->
 /// details | Błąd dotyczący nazwy domeny .ie, .de lub .it po aktualizacji DNS
 
 Kiedy modyfikujesz serwery DNS, registry może sprawdzić nowe serwery DNS i powiązaną strefę DNS, a następnie zablokować nazwę domeny, jeśli konfiguracja jest niezgodna.
@@ -238,7 +249,9 @@ Aby sprawdzić, czy Twoja nazwa domeny jest zablokowana, kliknij poniższe karty
 >> Po zidentyfikowaniu źródła błędu i jego naprawieniu kliknij przycisk `...`{.action} po prawej stronie wybranej operacji i uruchom ponownie operację weryfikacji DNS.
 
 ///
+<!-- CP-STEPS-END:situation-domain-blocked -->
 
+<!-- CP-STEPS-START:situation-internal-error -->
 /// details | Błąd wewnętrzny OVHcloud
 
 Może pojawić się błąd z komentarzem "błąd wewnętrzny".
@@ -265,6 +278,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >> Jeśli zauważysz nieprawidłowość niezwiązaną z konfiguracją serwerów DNS lub strefy DNS, [skontaktuj się z pomocą OVHcloud](/links/support) w celu zidentyfikowania przyczyny awarii.
 
 ///
+<!-- CP-STEPS-END:situation-internal-error -->
 
 ## Sprawdź również
 

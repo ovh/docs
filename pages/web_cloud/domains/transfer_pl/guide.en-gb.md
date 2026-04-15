@@ -41,17 +41,6 @@ By transferring your domain name, you will change your registry. You can transfe
 - the authority to request a transfer for the domain name
 - the domain name holder and/or its administrators have been informed of the transfer request
 
-<!-- CP-NAV-START:web-domains -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Domain names](/links/control-panel/web-domains)
-- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
-
----
-<!-- CP-NAV-END:web-domains -->
-
 ## Instructions
 
 The transfer procedure has several steps, including contacting multiple entities, including your current registry, OVHcloud and other parties. The table below shows who is contacted and the estimated duration of each step.

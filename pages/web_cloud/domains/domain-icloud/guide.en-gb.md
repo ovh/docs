@@ -39,6 +39,7 @@ To activate your domain name in iCloud, follow the instructions from the “Add 
 
 At the end of this step, Apple will send you a list of DNS records (MX, CNAME, TXT) to configure in your OVHcloud DNS zone. Save them for the next step.
 
+<!-- CP-STEPS-START:configure-dns-records -->
 ### 2 - Configure the DNS records in your OVHcloud Control Panel
 
 Click on the tabs below to view each of the **2** steps.
@@ -64,6 +65,7 @@ Click on the tabs below to view each of the **2** steps.
 >> > [!warning]
 >> >
 >> > Use only the quotation marks `”` as they appear in Apple's technical documentation (usually in English). The quotation marks « » or “ “ displayed in some translations should not be used in DNS configuration.
+<!-- CP-STEPS-END:configure-dns-records -->
 
 ### 3 - Add a DMARC record (optional) <a name="step3"></a>
 

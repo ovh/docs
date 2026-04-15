@@ -43,6 +43,7 @@ A criação, a transferência ou a alteração de titular de um nome de domínio
 
 ### Apresentação da interface de gestão das operações em curso
 
+<!-- CP-STEPS-START:ongoing-ops-presentation -->
 Clique nos separadores abaixo para ver cada um dos **2** passos.
 
 > [!tabs]
@@ -63,6 +64,7 @@ Clique nos separadores abaixo para ver cada um dos **2** passos.
 >> - `Data de atualização` : Data de atualização da operação em curso.
 >> - `Data de finalização` : Data de fim da operação.
 >> - `Estado` : Estado atual da operação.
+<!-- CP-STEPS-END:ongoing-ops-presentation -->
 
 Nem todas as operações listadas nesta tabela requerem a sua intervenção para se desenrolarem normalmente.
 
@@ -82,6 +84,7 @@ Este guia aborda as operações **em erro** através de situações recorrentes.
 
 **Clique na situação pretendida para ver o conteúdo.**
 
+<!-- CP-STEPS-START:situation-document-request -->
 /// details | Pedido de documentos
 
 Certas extensões de nomes de domínio requerem que justifique a sua utilização fornecendo documentos. Nesse caso, deve transmitir os documentos a partir da sua Área de Cliente OVHcloud.
@@ -110,7 +113,9 @@ Clique nos separadores abaixo para ver cada um dos **4** passos.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-document-request -->
 
+<!-- CP-STEPS-START:situation-missing-info -->
 /// details | Informações em falta
 
 Ao registar o seu nome de domínio, pode ser necessário completar os dados de "contacto". Se estes não corresponderem aos critérios do nome de domínio, poderá obter o erro abaixo.
@@ -139,7 +144,9 @@ Clique nos separadores abaixo para ver cada um dos **4** passos.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-missing-info -->
 
+<!-- CP-STEPS-START:situation-transfer-code -->
 /// details | Código de transferência errado
 
 Ao transferir o seu nome de domínio para a OVHcloud, deve introduzir um código de transferência (**authInfo** / **AuthCode**) aquando da encomenda. Se este código estiver incorreto, a operação é suspensa. Pode relançá-la com o código correto.
@@ -168,7 +175,9 @@ Clique nos separadores abaixo para ver cada um dos **4** passos.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-transfer-code -->
 
+<!-- CP-STEPS-START:situation-dns-error -->
 /// details | Erro associado aos servidores DNS
 
 Pode ocorrer um erro se os servidores DNS associados a um nome de domínio não funcionarem.
@@ -196,7 +205,9 @@ Clique nos separadores abaixo para ver cada um dos **4** passos.
 >> A partir deste separador, [modifique os seus servidores DNS](/pages/web_cloud/domains/dns_server_edit).
 
 ///
+<!-- CP-STEPS-END:situation-dns-error -->
 
+<!-- CP-STEPS-START:situation-domain-blocked -->
 /// details | Erro num nome de domínio em .ie, .de ou .it após uma atualização DNS
 
 Ao alterar os seus servidores DNS, o registry pode verificar os novos servidores DNS e a zona DNS associada e bloquear o nome de domínio se a configuração não estiver conforme.
@@ -238,7 +249,9 @@ Para verificar se o seu nome de domínio está sujeito a este bloqueio, clique n
 >> Quando tiver identificado a origem do erro e o tiver corrigido, clique no botão `...`{.action} à direita da operação em causa e relance a operação de verificação DNS.
 
 ///
+<!-- CP-STEPS-END:situation-domain-blocked -->
 
+<!-- CP-STEPS-START:situation-internal-error -->
 /// details | Erro interno OVHcloud
 
 Pode encontrar um erro com os detalhes "erro interno".
@@ -265,6 +278,7 @@ Clique nos separadores abaixo para ver cada um dos **3** passos.
 >> Se constatar uma anomalia que não esteja relacionada com a configuração dos servidores DNS ou da zona DNS, [contacte o suporte OVHcloud](/links/support) para identificar a origem do problema.
 
 ///
+<!-- CP-STEPS-END:situation-internal-error -->
 
 ## Quer saber mais?
 

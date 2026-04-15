@@ -51,6 +51,7 @@ W tym celu utwórz rekord DNS typu TXT w aktywnej strefie DNS Twojej domeny.
 >
 > Dodawanie, modyfikowanie lub usuwanie rekordów DNS w aktywnej strefie DNS jest operacją wymagającą odpowiedniej wiedzy. W razie wątpliwości skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 
+<!-- CP-STEPS-START:add-txt-record-domain -->
 ### Dodawanie rekordu DNS typu TXT dla domeny
 
 Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
@@ -87,7 +88,9 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-domain -->
 
+<!-- CP-STEPS-START:add-txt-record-subdomain -->
 ### Dodawanie rekordu DNS typu TXT dla subdomeny domeny
 
 Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
@@ -125,6 +128,7 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-subdomain -->
 
 ## Sprawdź również
 

@@ -60,6 +60,7 @@ La gestión de los DNS se simplifica gracias al historial de las zonas DNS.
 
 **Haga clic en la acción de su elección para ver el contenido.**
 
+<!-- CP-STEPS-START:view-dns-zone -->
 /// details | Ver una zona DNS
 
 Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
@@ -96,7 +97,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> Haga clic en `Cerrar`{.action} para volver a la página principal "Historial de la zona DNS".
 
 ///
+<!-- CP-STEPS-END:view-dns-zone -->
 
+<!-- CP-STEPS-START:download-dns-zone -->
 /// details | Descargar una zona DNS
 
 Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
@@ -127,7 +130,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 >> La zona DNS se descarga en formato .txt.
 
 ///
+<!-- CP-STEPS-END:download-dns-zone -->
 
+<!-- CP-STEPS-START:restore-dns-zone -->
 /// details | Restaurar una zona DNS
 
 Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
@@ -170,7 +175,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 > La modificación o restauración de una zona DNS conlleva un plazo de propagación de **4** a **24** horas para que se aplique completamente en la red DNS.
 
 ///
+<!-- CP-STEPS-END:restore-dns-zone -->
 
+<!-- CP-STEPS-START:compare-dns-zones -->
 /// details | Comparar dos zonas DNS
 
 Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
@@ -211,6 +218,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> ![Detalles comparación dos zonas DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:compare-dns-zones -->
 
 ## Más información
 

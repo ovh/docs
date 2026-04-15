@@ -62,6 +62,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 
 ### 1 - Transfer-Schutz des Domainnamens aufheben
 
+<!-- CP-STEPS-START:unlock-domain-transfer -->
 Klicken Sie auf die Tabs, um die einzelnen **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -96,6 +97,7 @@ Klicken Sie auf die Tabs, um die einzelnen **3** Schritte anzuzeigen.
 >> > Bestimmte Transfer-Codes werden direkt seitens der Registry der entsprechenden Domainendung verwaltet. Die Registry ist die Organisation, die eine oder mehrere TLDs und damit alle Domainnamen mit dieser Endung verwaltet. Zum Beispiel verwaltet die **AFNIC** alle Domainnamen mit der Endung *.fr*. In diesem Fall kontaktieren Sie die zuständige *Registry*, um Ihren Transfer-Code zu erhalten.
 >>
 >> ![Deaktivierung](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+<!-- CP-STEPS-END:unlock-domain-transfer -->
 
 > [!primary]
 >
@@ -111,6 +113,7 @@ Klicken Sie auf die Tabs, um die einzelnen **3** Schritte anzuzeigen.
 
 Sobald der Transfer-Schutz aufgehoben ist, können Sie den Transfer-Code Ihres Domainnamens abrufen.
 
+<!-- CP-STEPS-START:get-transfer-code -->
 Klicken Sie auf die Tabs, um die einzelnen **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -133,6 +136,7 @@ Klicken Sie auf die Tabs, um die einzelnen **3** Schritte anzuzeigen.
 >> Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer abzuschließen. Sie können die Details bei Ihrem Provider überprüfen.
 >>
 >> Anstatt den Code manuell einzugeben, empfehlen wir, diesen zu kopieren und einzufügen, da einige Zeichen leicht zu verwechseln sind.
+<!-- CP-STEPS-END:get-transfer-code -->
 
 Sobald der Transfer-Code abgerufen wurde, reaktivieren Sie den Transfer-Schutz **nicht, es sei denn, Sie möchten den Transfer verhindern**.
 

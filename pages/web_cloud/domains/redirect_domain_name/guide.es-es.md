@@ -93,6 +93,7 @@ Esta opción permite, tras introducir el nombre de dominio redirigido, mostrar e
 
 > Esta redirección "estándar" devuelve un código HTTP 301.
 
+<!-- CP-STEPS-START:configure-redirect-permanent -->
 Haga clic en las pestañas de abajo para ver cada uno de los **7** pasos.
 
 > [!tabs]
@@ -157,6 +158,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **7** pasos.
 >> > Atención, la configuración anterior se desactivará y eliminará.
 >> >
 >>
+<!-- CP-STEPS-END:configure-redirect-permanent -->
 
 ///
 
@@ -174,6 +176,7 @@ El posicionamiento en los motores de búsqueda es menos eficiente que con una re
 
 > Esta redirección devuelve un código HTTP 302.
 
+<!-- CP-STEPS-START:configure-redirect-temporary -->
 Haga clic en las pestañas de abajo para ver cada uno de los **7** pasos.
 
 > [!tabs]
@@ -236,6 +239,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **7** pasos.
 >> > Si aparece el mensaje "*Existen redirecciones a partir de los nombres de dominio que desea redirigir que entran en conflicto con las redirecciones que desea añadir*", puede marcar la casilla `Confirmar la sobreescritura de la redirección existente`{.action} para forzar la aplicación de la redirección.
 >> >
 >> > Atención, la configuración anterior se desactivará y eliminará.
+<!-- CP-STEPS-END:configure-redirect-temporary -->
 
 ///
 
@@ -259,6 +263,7 @@ Esta encapsulación impide que los visitantes del sitio visualicen el nombre de 
 >
 > Atención, las páginas encapsuladas con una etiqueta *iFrame* pueden no leerse en los smartphones. Su contenido generalmente no es tenido en cuenta por los motores de búsqueda para el posicionamiento SEO y la indexación del sitio.
 
+<!-- CP-STEPS-START:configure-redirect-invisible -->
 Haga clic en las pestañas de abajo para ver cada uno de los **7** pasos.
 
 > [!tabs]
@@ -327,6 +332,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **7** pasos.
 >> > Si aparece el mensaje "*Existen redirecciones a partir de los nombres de dominio que desea redirigir que entran en conflicto con las redirecciones que desea añadir*", puede marcar la casilla `Confirmar la sobreescritura de la redirección existente`{.action} para forzar la aplicación de la redirección.
 >> >
 >> > Atención, la configuración anterior se desactivará y eliminará.
+<!-- CP-STEPS-END:configure-redirect-invisible -->
 
 ### Redirigir un nombre de dominio a través de un archivo ".htaccess" <a name="htaccess_rewrite"></a>
 

@@ -178,6 +178,7 @@ Una volta completata la procedura, è possibile gestire il nome di dominio dalla
 >
 > In base alla situazione e alla nuova data di scadenza del nome di dominio, potrebbe essere necessario un rinnovo del nome di dominio subito dopo il trasferimento.
 
+<!-- CP-STEPS-START:check-domain-expiry -->
 Per verificarlo, clicca sulle schede qui sotto per visualizzare successivamente ognuno dei **2** passaggi.
 
 > [!tabs]
@@ -190,6 +191,7 @@ Per verificarlo, clicca sulle schede qui sotto per visualizzare successivamente 
 > **Passaggio 2**
 >>
 >> Sulla pagina che appare, appena sotto il nome di dominio, troverai la data di rinnovo prevista con il **mese** e **l'anno** di scadenza.
+<!-- CP-STEPS-END:check-domain-expiry -->
 
 ## Per saperne di più
 

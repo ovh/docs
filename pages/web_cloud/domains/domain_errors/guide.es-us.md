@@ -43,6 +43,7 @@ La creación, la transferencia o el cambio de titular de un nombre de dominio pu
 
 ### Presentación de la interfaz de gestión de las operaciones en curso
 
+<!-- CP-STEPS-START:ongoing-ops-presentation -->
 Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
 
 > [!tabs]
@@ -63,6 +64,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
 >> - `Fecha de actualización`: Marca de tiempo de actualización de la operación en curso.
 >> - `Fecha de finalización`: Fecha de finalización de la operación.
 >> - `Estado`: Estado actual de la operación.
+<!-- CP-STEPS-END:ongoing-ops-presentation -->
 
 No todas las operaciones listadas en esta tabla requieren su intervención para que se realicen con normalidad.
 
@@ -82,6 +84,7 @@ Esta guía trata de las operaciones **en error** a través de situaciones recurr
 
 **Haga clic en la situación que desee para ver su contenido.**
 
+<!-- CP-STEPS-START:situation-document-request -->
 /// details | Solicitud de documentos
 
 Algunas extensiones de nombres de dominio requieren justificar su uso proporcionando documentos. En ese caso, debe enviar los documentos desde su área de cliente de OVHcloud.
@@ -110,7 +113,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-document-request -->
 
+<!-- CP-STEPS-START:situation-missing-info -->
 /// details | Información incompleta
 
 Al registrar su nombre de dominio, a veces es necesario completar los datos de "contacto". Si estos no cumplen los criterios del nombre de dominio, puede obtener el error que se muestra a continuación.
@@ -139,7 +144,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-missing-info -->
 
+<!-- CP-STEPS-START:situation-transfer-code -->
 /// details | Código de transferencia erróneo
 
 Al transferir su nombre de dominio a OVHcloud, debe introducir un código de transferencia (**authInfo** / **AuthCode**) durante el pedido. Si el código es incorrecto, la operación se suspende. Puede reiniciarla introduciendo el código correcto.
@@ -168,7 +175,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-transfer-code -->
 
+<!-- CP-STEPS-START:situation-dns-error -->
 /// details | Error relacionado con los servidores DNS
 
 Se puede producir un error si los servidores DNS asociados a un nombre de dominio no funcionan.
@@ -196,7 +205,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> Desde esta pestaña, [modifique sus servidores DNS](/pages/web_cloud/domains/dns_server_edit).
 
 ///
+<!-- CP-STEPS-END:situation-dns-error -->
 
+<!-- CP-STEPS-START:situation-domain-blocked -->
 /// details | Error en un nombre de dominio en .ie, .de o .it después de una actualización DNS
 
 Al modificar sus servidores DNS, el registro puede verificar los nuevos servidores DNS y la zona DNS asociada y bloquear el nombre de dominio si la configuración no es correcta.
@@ -238,7 +249,9 @@ Para comprobar si su nombre de dominio está afectado por dicho bloqueo, haga cl
 >> Una vez que haya identificado el origen del error y lo haya corregido, haga clic en el botón `...`{.action} a la derecha de la operación en cuestión y reinicie la operación de verificación DNS.
 
 ///
+<!-- CP-STEPS-END:situation-domain-blocked -->
 
+<!-- CP-STEPS-START:situation-internal-error -->
 /// details | Error interno de OVHcloud
 
 Puede encontrar un error con el detalle "error interno".
@@ -265,6 +278,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 >> Si detecta una anomalía que no está relacionada con la configuración de los servidores DNS o de la zona DNS, [contacte con el soporte de OVHcloud](/links/support) para identificar el origen del problema.
 
 ///
+<!-- CP-STEPS-END:situation-internal-error -->
 
 ## Más información
 
