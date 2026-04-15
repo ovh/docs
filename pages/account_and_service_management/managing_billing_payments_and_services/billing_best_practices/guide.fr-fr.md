@@ -52,9 +52,11 @@ Assurez-vous que votre adresse e-mail est toujours **à jour, sécurisée et acc
 > Ajoutez également un **e-mail de secours** à vos informations personnelles pour vous prémunir de toute perte d’accès à votre compte client OVHcloud.
 >
 
+<!-- CP-STEPS-START:view-my-messages -->
 Les e-mails envoyés par OVHcloud sont également accessibles depuis la page [Messages](/links/control-panel/account-messages).
 
 ![service_emails](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
+<!-- CP-STEPS-END:view-my-messages -->
 
 ### Activez le renouvellement automatique
 

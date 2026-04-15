@@ -65,9 +65,11 @@ Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gesti
 En cas de difficulté d'accès à votre adresse e-mail principale, une adresse e-mail de secours permet de conserver l'accès à votre compte et donc à la gestion de vos services.
 <br>Cette seconde adresse **doit être différente** de la première, notamment pour faciliter vos démarches en cas de récupération de mot de passe.
 
+<!-- CP-STEPS-START:backup-email-field -->
 Pour renseigner cette adresse e-mail de secours, rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile).
 
 Faites défiler l'écran jusqu'à la rubrique `Vos informations de contact` pour trouver le champ `E-mail de secours`, en-dessous du champ dédié à l'adresse e-mail principale.
+<!-- CP-STEPS-END:backup-email-field -->
 
 > [!warning]
 > Pour rappel, il est **primordial** que l'adresse e-mail de secours soit **différente** de l'adresse e-mail principale du compte.

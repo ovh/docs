@@ -76,11 +76,13 @@ Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), 
 
 ### Comment mettre à jour mon moyen de paiement ?
 
+<!-- CP-STEPS-START:update-payment-method -->
 Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), vous pourrez ajouter ou supprimer un moyen de paiement (Carte bancaire, Paypal ou prélèvement SEPA).
 
 En cas de demande de prélèvement SEPA, vous recevrez dans les 24 à 48h sur l’adresse e-mail de votre compte OVHcloud, un e-mail comportant un lien de signature électronique de votre mandat de prélèvement. Attention, le propriétaire du compte bancaire doit être identique au propriétaire du compte OVHcloud.
 
 Une fois réceptionné par nos services, si votre mandat est approuvé, vous pourrez alors utiliser ce nouveau moyen de paiement.
+<!-- CP-STEPS-END:update-payment-method -->
 
 #### Trucs et astuces
 

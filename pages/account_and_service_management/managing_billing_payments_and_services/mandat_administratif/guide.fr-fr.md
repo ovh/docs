@@ -24,9 +24,11 @@ Le but de cet outil est de simplifier les démarches en ligne en limitant les en
 
 Dans le cadre de la souscription d'un nouveau produit, la procédure reste relativement similaire à ce qu'elle était avant l'arrivée de Chorus Pro.
 
+<!-- CP-STEPS-START:choose-payment-method-checkout -->
 À la fin de votre commande, lors de la validation du moyen de paiement, il vous suffit de choisir `Payer par mandat administratif`{.action} :
 
 ![Paiement par mandat](images/moyen_paiement.png){.thumbnail}
+<!-- CP-STEPS-END:choose-payment-method-checkout -->
 
 Les étapes suivantes seront :
 

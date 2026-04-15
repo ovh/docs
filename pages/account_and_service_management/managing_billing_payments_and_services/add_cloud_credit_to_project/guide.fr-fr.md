@@ -28,7 +28,9 @@ Cela signifie que ce crédit cloud est débité en premier et que toute dette se
 
 ## En pratique
 
+<!-- CP-STEPS-START:navigate-credits-vouchers -->
 Ouvrez `Crédits & Vouchers`{.action} dans le menu de gauche sous **Paramètres**.
+<!-- CP-STEPS-END:navigate-credits-vouchers -->
 
 > [!warning]
 >

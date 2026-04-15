@@ -199,9 +199,11 @@ Cette page contient toutes les informations nécessaires concernant nos contrats
 
 /// details | Où dois-je renseigner mon numéro SIRET ?
 
+<!-- CP-STEPS-START:siret-field -->
 Rendez-vous sur la page [Mon profil](/links/control-panel/account-profile).
 
 Vous aurez ainsi accès aux informations personnelles de votre compte. Faites défiler l'écran jusqu'à la rubrique `Votre activité` pour trouver le champ `N° SIRET`. Une fois votre numéro renseigné, cliquez sur le bouton `Enregistrer les modifications`{.action}.
+<!-- CP-STEPS-END:siret-field -->
 
 > [!success]
 > **Où trouver mon numéro SIRET ?**
