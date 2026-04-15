@@ -57,8 +57,6 @@ Sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Con
 >
 > Dans le cas d'une ancienne offre de type « EcoFax Perso », l'envoi des fax est possible si le nombre de fax restant est positif. Dans le cas contraire, vous pouvez commander des fax via l'onglet situé juste en dessous.
 >
-<!-- CP-STEPS-END:options-de-configuration -->
-
 #### Options générales
 
 La qualité d'envoi de vos télécopies peut avoir un impact sur vos émissions de télécopies à destination de certains numéros spéciaux.
@@ -97,6 +95,8 @@ Configurez les adresses e-mail sur lesquelles vous recevrez les télécopies.
 Vous pouvez renseigner jusqu'à 5 adresses différentes.
 
 ![adresses de notification](images/adresses_notifications.png){.thumbnail}
+
+<!-- CP-STEPS-END:options-de-configuration -->
 
 ### Options de filtrage
 

@@ -91,9 +91,11 @@ De même, il n'est pas possible d'intégrer d'autres lignes dans un groupe de t�
 Les accès à Internet OVHcloud comprennent souvent des lignes téléphoniques qu'il faut activer dans l'espace client OVHcloud, dans la partie `Accès Internet`{.action}. Ces lignes, une fois activées, génèrent leur propre groupe de téléphonie (un groupe pour chaque accès à Internet).
 <br>Ce groupe est nommé *ovhtel-XXXXXXXX-X*, contrairement à un groupe de téléphonie classique dont le nom contient votre identifiant client, par exemple *az123456-ovh-1*.
 
+<!-- CP-STEPS-START:cas-particulier-acces-internet -->
 |Groupe de téléphonie classique|Groupe de téléphonie lié à un accès à Internet OVHcloud| 
 |---|---| 
 |![groupe VoIP classique](images/03-regrouper-03.png){.thumbnail}|![groupe ovhtel](images/03-regrouper-04.png){.thumbnail}|
+<!-- CP-STEPS-END:cas-particulier-acces-internet -->
 
 > [!warning]
 > Le déplacement d'une ligne liée à un accès à Internet OVHcloud, depuis un groupe *ovhtel-XXXXXXXX-X* vers un autre groupe de téléphonie, n'est pas autorisé.

@@ -71,9 +71,11 @@ Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.a
 
 L'interface de configuration du SVI se présente sous la forme d'une arborescence surmontée de deux menus. Un menu supplémentaire est disponible sur chaque étape de l'arborescence.
 
+<!-- CP-STEPS-START:presentation-interface-svi -->
 |Menu du numéro|Menu de la configuration|Menu d'étape|
 |---|---|---|
 |![menu numéro](images/menu-numero-svi.png){.thumbnail}|![menu configuration](images/menu-configuration-svi.png){.thumbnail}|![menu étape](images/menu-etape-svi.png){.thumbnail}|
+<!-- CP-STEPS-END:presentation-interface-svi -->
 |Permet de gérer les options principales de la configuration.|Permet de gérer les étapes de la configuration ainsi que les options d'affichage des appels.|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
 
 ### Étape 3 : Configurer le serveur vocal interactif
