@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Transcrire et résumer des fichiers audio (EN)
 excerpt: "Résumer des heures de réunions et conversations audio avec des APIs d'ASR et de LLM"
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]
@@ -142,7 +142,7 @@ Now it’s time to call an LLM to summarize the transcribed text.
 
 ### Summarize audio with LLM
 
-In this second step, create the `chat_completion` function to use `Mixtral8x7B` effectively (or any other model):
+In this second step, create the `chat_completion` function to use `gpt-oss-120b` effectively (or any other model):
 
 **What to do?**
 
@@ -163,7 +163,7 @@ def chat_completion(oai_client, new_message):
         history_openai_format = [{"role": "user", "content": f"Summarize the following text in a few words: {new_message}"}]
         # return summary
         return oai_client.chat.completions.create(
-            model="Mixtral-8x7B-Instruct-v0.1",
+            model="gpt-oss-120b",
             messages=history_openai_format,
             temperature=0,
             max_tokens=1024
