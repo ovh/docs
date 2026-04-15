@@ -34,6 +34,7 @@ Beachten Sie, dass das Löschen eines Projekts nicht dem Deaktivieren Ihrer Publ
 
 ## In der praktischen Anwendung
 
+<!-- CP-STEPS-START:delete-project -->
 Öffnen Sie `Projektparameter`{.action} unterhalb von **Einstellungen** im linken Menü.
 
 ![Public Cloud Menu](images/delete-project-2025.png){.thumbnail}
@@ -52,6 +53,7 @@ Nach Klick auf den Button wird eine E-Mail an Sie gesendet, in der Sie aufgeford
 > [!warning]
 > Beachten Sie, dass ein Projekt, das in die Löschphase eintritt, 7 Tage lang im Aussetzungsstatus verbleibt. Das Projekt wird daher nicht sofort gelöscht. Falls die Löschung beschleunigt stattfinden muss, zum Beispiel wenn Ihre Projektquota begrenzt ist, kontaktieren Sie bitte unsere Support-Teams.
 >
+<!-- CP-STEPS-END:delete-project -->
 
 ## Weiterführende Informationen
 

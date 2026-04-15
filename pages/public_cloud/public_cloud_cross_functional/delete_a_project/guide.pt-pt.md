@@ -39,6 +39,7 @@ Quando um projeto é eliminado, os recursos que contém são definitivamente per
 
 ## Instruções
 
+<!-- CP-STEPS-START:delete-project -->
 Clique em `Parâmetros do projeto`{.action} na secção **Parâmetros** no canto inferior esquerdo do menu lateral.
 
 ![menu](images/delete-project-2025.png){.thumbnail}
@@ -60,6 +61,7 @@ Uma vez introduzida e confirmada a sua senha, o seu projecto entrará na fase de
 > [!warning]
 > Tenha em conta que, quando um projeto entra nesta fase de eliminação, fica suspenso durante 7 dias. Por conseguinte, o projeto não é imediatamente suprimido. Se esta situação o afetar, por exemplo se a sua quota de projetos for limitada, contacte as nossas equipas de assistência.
 >
+<!-- CP-STEPS-END:delete-project -->
 
 ## Saiba mais
 

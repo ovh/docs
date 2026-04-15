@@ -39,6 +39,7 @@ Al eliminar un proyecto, los recursos que contiene se pierden definitivamente. E
 
 ## Procedimiento
 
+<!-- CP-STEPS-START:delete-project -->
 Haga clic en `Configuración del proyecto`{.action} en la sección **Ajustes**, situada en la esquina inferior izquierda.
 
 ![menu](images/delete-project-2025.png){.thumbnail}
@@ -60,6 +61,7 @@ Una vez introducida y confirmada su contraseña, su proyecto entrará en la fase
 > [!warning]
 > Tenga en cuenta que cuando un proyecto entra en esta fase de eliminación, permanece en estado de suspensión durante 7 días. El proyecto no se elimina de inmediato. Si esta situación le afecta, por ejemplo, si su cuota de proyectos es limitada, contacte con nuestro equipo de soporte.
 >
+<!-- CP-STEPS-END:delete-project -->
 
 ## Más información
 

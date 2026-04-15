@@ -75,6 +75,7 @@ Ergebnis: 23,63€
 
 ### Ihre Rechnungen einsehen
 
+<!-- CP-STEPS-START:view-your-bills -->
 Um die Rechnungen eines Projekts anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie links auf `Abrechnung`{.action} (im Abschnitt `Einstellungen`) und dann auf den Tab `History`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
@@ -83,9 +84,11 @@ In dieser Ansicht können Sie:
 
 - Ressourcen-Details anzeigen, indem Sie die Abschnitte erweitern
 - Logs durchsehen, indem Sie auf den Vormonat oder den Folgemonat zugreifen
+<!-- CP-STEPS-END:view-your-bills -->
 
 ### Aktuelle Ressourcennutzung anzeigen
 
+<!-- CP-STEPS-START:view-current-usage -->
 Sie können auch die aktuelle Ressourcennutzung anzeigen (für den laufenden Monat), indem Sie auf `Mein aktueller Verbrauch`{.action} klicken.
 
 ![public-cloud](images/pci-billing-information2-2021.png){.thumbnail}
@@ -104,6 +107,7 @@ Sie können zusätzlich im Bereich `Zu erwartender Rechnungsbetrag (Schätzung)`
 ![public-cloud](images/pci-billing-information3-2021.png){.thumbnail}
 
 Wenn Sie Benachrichtigungen erhalten möchten, wenn die Prognose für die Nutzung Ihrer Ressourcen einen festgelegten Schwellenwert überschreitet, können Sie diese hier konfigurieren. Sobald Ihre geplante Nutzung den festgelegten Grenzwert überschreitet, erhalten Sie eine E-Mail.
+<!-- CP-STEPS-END:view-current-usage -->
 
 ### Instanzen
 

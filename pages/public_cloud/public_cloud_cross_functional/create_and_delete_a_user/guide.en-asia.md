@@ -33,6 +33,7 @@ Using the Horizon interface, you can also set passwords for each individual user
 
 ### Creating an OpenStack user
 
+<!-- CP-STEPS-START:create-openstack-user -->
 Click on `Users & Roles`{.action} the left-hand menu under **Settings**.
 
 Click on the button `Create User`{.action}.
@@ -56,6 +57,7 @@ Be sure to save the password shown in the green message box to a password manage
 ![Generate](images/generatepw.png){.thumbnail}
 
 With the OpenStack user created, you can use its credentials to log into the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) by clicking on the link `Horizon`{.action} in the left-hand menu.
+<!-- CP-STEPS-END:create-openstack-user -->
 
 ### Change an OpenStack user password
 
@@ -89,6 +91,7 @@ Please note that when you change your user password, your previous password is i
 
 ### Deleting an OpenStack user
 
+<!-- CP-STEPS-START:delete-openstack-user -->
 Click on `Users & Roles`{.action} the left-hand menu under **Settings**.
 
 ![public-cloud](images/delete.png){.thumbnail}
@@ -99,6 +102,7 @@ Click on `...`{.action} and select `Delete`{.action}.
 >
 > Deleting a user is permanent and will invalidate all associated tokens, even those with an expiry date not yet exceeded.
 > 
+<!-- CP-STEPS-END:delete-openstack-user -->
 
 ## Go further
 

@@ -76,6 +76,7 @@ Pari a 23,63€ IVA incl.
 
 ### Consulta le tue fatture
 
+<!-- CP-STEPS-START:view-your-bills -->
 Accedi alla sezione `Public Cloud`{.action} dello Spazio Cliente, seleziona il tuo progetto nel menu a sinistra e clicca su `Fatturazione`{.action} (nella sezione `Impostazioni`) e infine su `Storico`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
@@ -84,9 +85,11 @@ In questa interfaccia, è possibile:
 
 - visualizzare i dettagli delle risorse espandendo le diverse sezioni
 - navigare nello storico consultando il mese precedente e successivo
+<!-- CP-STEPS-END:view-your-bills -->
 
 ### Consulta lo stato dei tuoi consumi
 
+<!-- CP-STEPS-START:view-current-usage -->
 I consumi per il mese in corso sono disponibili nella stessa interfaccia, nella scheda `I tuoi consumi attuali`{.action}.
 
 ![public-cloud](images/pci-billing-information2-2021.png){.thumbnail}
@@ -107,6 +110,7 @@ Il riquadro **Prossima fattura** è relativo alle risorse fatturate con modalit�
 ![public-cloud](images/pci-billing-information3-2021.png){.thumbnail}
 
 Da questa interfaccia è possibile anche impostare l’invio di un alert quando la previsione dei consumi supera una determinata soglia. In questo caso, riceverai una notifica via email tutte le volte che la proiezione supera il limite stabilito.
+<!-- CP-STEPS-END:view-current-usage -->
 
 ### Le istanze
 

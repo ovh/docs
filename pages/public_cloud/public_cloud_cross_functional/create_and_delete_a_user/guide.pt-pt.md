@@ -33,6 +33,7 @@ A partir da interface Horizon, pode definir uma palavra-passe para cada utilizad
 
 ### Criação de um utilizador OpenStack
 
+<!-- CP-STEPS-START:create-openstack-user -->
 Clique em `Utilizadores & Funções`{.action} no menu à esquerda em **Parâmetros**.
 
 Clique no botão `Criar um utilizador`{.action}.
@@ -56,6 +57,7 @@ Queira registar a palavra-passe, apresentada apenas no quadro verde nesse moment
 ![Generate](images/generatepw.png){.thumbnail}
 
 Depois de criar o utilizador OpenStack, poderá utilizar as suas credenciais para se ligar à [interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) clicando na ligação `Horizon`{.action} no menu à esquerda.
+<!-- CP-STEPS-END:create-openstack-user -->
 
 ### Alterar a palavra-passe de um utilizador OpenStack
 
@@ -90,6 +92,7 @@ Atenção: a alteração da palavra-passe de uma conta de utilizador implica a a
 
 ### Eliminação do utilizador OpenStack
 
+<!-- CP-STEPS-START:delete-openstack-user -->
 Clique em `Utilizadores & Funções`{.action} no menu à esquerda em **Parâmetros**.
 
 ![public-cloud](images/delete.png){.thumbnail}
@@ -100,6 +103,7 @@ Clique em `...`{.action} e selecione `Eliminar`{.action}.
 >
 > A eliminação de um utilizador é definitiva e invalidará todos os tokens associados, incluindo os que não tenham expirado.
 > 
+<!-- CP-STEPS-END:delete-openstack-user -->
 
 ## Quer saber mais?
 

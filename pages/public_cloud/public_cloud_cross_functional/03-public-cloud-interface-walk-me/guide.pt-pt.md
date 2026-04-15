@@ -39,7 +39,9 @@ Uma vez que é possível gerir vários projetos de acordo com as suas quotas, o 
 
 A ID pode ser necessária aquando da utilização da CLI, de certos pedidos de suporte ou outros. Pode copiá-lo clicando no ícone à direita.
 
+<!-- CP-STEPS-START:your-public-cloud-project-settings -->
 Pode alterar o nome do projeto através do separador `Parâmetros`{.action}. Introduza um novo nome e clique em `Atualizar`{.action}.
+<!-- CP-STEPS-END:your-public-cloud-project-settings -->
 
 ### O menu principal Public Cloud
 

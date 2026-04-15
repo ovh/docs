@@ -39,7 +39,9 @@ Ponieważ możliwe jest zarządzanie wieloma projektami w zależności od Twoich
 
 ID może być konieczne podczas korzystania z CLI, niektórych zgłoszeń dotyczących wsparcia lub innych. Możesz go skopiować klikając ikonę znajdującą się po prawej stronie.
 
+<!-- CP-STEPS-START:your-public-cloud-project-settings -->
 Możesz zmienić nazwę projektu w zakładce `Ustawienia`{.action}. Wpisz nową nazwę i kliknij na `Aktualizuj`{.action}.
+<!-- CP-STEPS-END:your-public-cloud-project-settings -->
 
 ### Menu główne Public Cloud
 

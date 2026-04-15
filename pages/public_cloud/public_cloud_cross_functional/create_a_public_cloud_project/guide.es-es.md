@@ -29,6 +29,8 @@ Crear un proyecto es el primer paso para implementar [instancias Public Cloud](/
 
 ## Procedimiento
 
+<!-- CP-STEPS-START:create-public-cloud-project -->
+
 Una vez que haya consultado la documentación disponible, acepte los términos del contrato marcando la casilla correspondiente y haga clic en `Descubrir el universo Public Cloud`{.action}.
 
 ![crear proyecto](images/firstproject2024.png){.thumbnail width="400"}
@@ -56,6 +58,8 @@ Ya puede acceder a todo el ecosistema Public Cloud de OVHcloud y consultar nuest
 >![activar proyecto](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!-- CP-STEPS-END:create-public-cloud-project -->
 
 ## Más información
 

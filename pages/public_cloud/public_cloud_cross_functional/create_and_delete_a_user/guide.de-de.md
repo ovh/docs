@@ -33,6 +33,7 @@ Mithilfe des Horizon-Interface kann jedem Benutzer ein Passwort zugewiesen werde
 
 ### Erstellung eines OpenStack Benutzers
 
+<!-- CP-STEPS-START:create-openstack-user -->
 Klicken Sie auf `User und Rollen`{.action} im linken Menü unter **Einstellungen**.
 
 Klicken Sie auf den Button `Benutzer erstellen`{.action}.
@@ -56,6 +57,7 @@ Achten Sie darauf, das Passwort, das nur zu diesem Zeitpunkt im grünen Rahmen a
 ![Generate](images/generatepw.png){.thumbnail}
 
 Sobald der OpenStack User erstellt ist, können Sie seine Zugangsdaten für den Login zum [Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) verwenden, indem Sie im linken Menü auf den Eintrag `Horizon`{.action} klicken.
+<!-- CP-STEPS-END:create-openstack-user -->
 
 ### Passwörter von OpenStack-Benutzern verwalten
 
@@ -90,6 +92,7 @@ Beachten Sie, dass beim Ändern des Benutzerkonto-Passworts die bisherigen Login
 
 ### Löschung eines OpenStack Benutzers
 
+<!-- CP-STEPS-START:delete-openstack-user -->
 Klicken Sie auf `User und Rollen`{.action} im linken Menü unter **Einstellungen**.
 
 ![public-cloud](images/delete.png){.thumbnail}
@@ -100,6 +103,7 @@ Klicken Sie auf `...`{.action} und wählen Sie `Löschen`{.action} aus.
 >
 > Die Löschung eines Benutzers ist endgültig und führt zur Ungültigkeit aller zugehörigen Token, auch derjenigen, deren Ablaufdatum noch nicht überschritten ist.
 > 
+<!-- CP-STEPS-END:delete-openstack-user -->
 
 ## Weiterführende Informationen
 

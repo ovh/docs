@@ -29,6 +29,7 @@ To this end, you can delegate read-only or read/write permissions for your proje
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:view-contacts -->
 Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
 
 On this page you can see the contacts associated with your project.
@@ -36,9 +37,11 @@ On this page you can see the contacts associated with your project.
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
 You can click on the `Edit`{.action} buttons to change the current contacts. Follow the instructions in our guide [Changing project contacts](/pages/public_cloud/compute/change_project_contacts) to complete this process.
+<!-- CP-STEPS-END:view-contacts -->
 
 ### Adding contacts and permissions
 
+<!-- CP-STEPS-START:add-contact-permissions -->
 Click on the `Add`{.action} button in order to add a user and assign permissions. In the popup window, enter the NIC handle of the user (in the form xx00000-ovh), then select `Read-only` or `Read/Write` from the menu.
 
 ![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
@@ -55,6 +58,7 @@ Once the page has reloaded, the added OVHcloud customer accounts and their respe
 ![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
 
 To revoke an access, click on the `...`{.action} button and then select `Delete`{.action}.
+<!-- CP-STEPS-END:add-contact-permissions -->
 
 ## Go further
 

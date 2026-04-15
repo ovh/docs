@@ -33,6 +33,7 @@ The list of certified OVHcloud products is available on the page “[OVHcloud pr
 
 ### Enabling the HDS option when creating a new Public Cloud project
 
+<!-- CP-STEPS-START:hds-new-project -->
 Create a new Public Cloud project.
 
 If you have subscribed to the Business or Enterprise support level, you can then tick the `Healthcare data hosting and HDS certification for this project` box.
@@ -40,9 +41,11 @@ If you have subscribed to the Business or Enterprise support level, you can then
 You will then have access to the special conditions for hosting healthcare data. Check the information and tick the box next to it. Click `Continue`{.action} to finish creating your project. The services in this project will be HDS certified, in accordance with the contractual conditions.
 
 ![activate HDS new project](images/hds-new-project.png){.thumbnail}
+<!-- CP-STEPS-END:hds-new-project -->
 
 ### Enabling the HDS option on an existing Public Cloud project
 
+<!-- CP-STEPS-START:hds-existing-project -->
 Select the Public Cloud project for which you would like the services to be HDS certified.
 
 Click `Settings`{.action}. If you have subscribed to the Business or Enterprise support level, you can then tick the `Healthcare data hosting and HDS certification for this project` box.
@@ -52,6 +55,7 @@ You will then have access to the special conditions for hosting healthcare data.
 Review the information and check the box for accepting the contracts. Finally, click `Update`{.action} to finalize the HDS certification process for your project, in accordance with the contractual conditions.
 
 ![activate HDS existing project](images/hds-current-project1.png){.thumbnail}
+<!-- CP-STEPS-END:hds-existing-project -->
 
 ## Go further
 

@@ -54,10 +54,13 @@ This guide aims to provide a clear and detailed method for creating and updating
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:savings-plans-navigation -->
 Click on `Savings Plans`{.action} in the left-hand navigation bar under **Settings**.
+<!-- CP-STEPS-END:savings-plans-navigation -->
 
 ### Create a Savings Plan
 
+<!-- CP-STEPS-START:create-savings-plan -->
 You can create your Savings Plan for the type of resource you want by following these steps:
 
 > [!tabs]
@@ -106,9 +109,11 @@ You can create your Savings Plan for the type of resource you want by following 
 >> ```console
 >> terraform apply
 >> ```
+<!-- CP-STEPS-END:create-savings-plan -->
 
 ### Modifying a Savings plan
 
+<!-- CP-STEPS-START:modify-savings-plan -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> > [!primary]
@@ -210,6 +215,7 @@ You can create your Savings Plan for the type of resource you want by following 
 >> > [!primary]
 >> >
 >> > Note that only the **service_name**, **size** and **auto_renewal** fields can be modified. The **size** can only be increased.
+<!-- CP-STEPS-END:modify-savings-plan -->
 
 ## Go further
 

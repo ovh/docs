@@ -32,6 +32,7 @@ A questo scopo, è possibile delegare ad altri account cliente OVHcloud diritti 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:view-contacts -->
 Clicca su `Contatti e diritti`{.action} nella sezione **Impostazioni**.
 
 Questa pagina ti permette di visualizzare i contatti associati al tuo progetto.
@@ -39,9 +40,11 @@ Questa pagina ti permette di visualizzare i contatti associati al tuo progetto.
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
 Clicca sui pulsanti `Modifica`{.action} per modificare i contatti correnti. Per completare l'operazione, segui la procedura descritta nella guida [Modificare i contatti di un progetto](/pages/public_cloud/compute/change_project_contacts).
+<!-- CP-STEPS-END:view-contacts -->
 
 ### Aggiungi contatti e diritti
 
+<!-- CP-STEPS-START:add-contact-permissions -->
 Clicca sul pulsante `Aggiungi`{.action} per aggiungere un utente e attribuirgli dei diritti. Nella nuova finestra inserisci l'identificativo dell'utente (nel formato xx00000-ovh) e seleziona `Lettura da sola` o `Lettura/Scrittura` nel menu a tendina.
 
 ![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
@@ -58,6 +61,7 @@ Una volta ricaricata la pagina, gli account dei clienti OVHcloud aggiunti e i re
 ![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
 
 Per rimuovere un accesso, clicca sul pulsante `...`{.action} poi seleziona `Elimina`{.action}.
+<!-- CP-STEPS-END:add-contact-permissions -->
 
 ## Per saperne di più
 
