@@ -1,7 +1,7 @@
 ---
 title: Capabilities and Limitations of Public Cloud Databases for PostgreSQL
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
-updated: 2026-02-17
+updated: 2026-04-15
 ---
 
 ## Objective

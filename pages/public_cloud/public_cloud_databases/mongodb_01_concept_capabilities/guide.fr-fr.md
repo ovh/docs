@@ -1,7 +1,7 @@
 ---
 title: Capacités et limitations de Public Cloud pour MongoDB (EN)
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2026-02-17
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -59,8 +59,7 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 
 #### License type
 
-- **Discovery** and **Production** plans use the MongoDB Community License.
-- **Advanced** plan upgrades your cluster so that it uses the MongoDB Community License.
+All three plans, **Discovery**, **Production** and **Advanced**, use the MongoDB Community License.
 
 License cost is included inside the service plans. You cannot bring your own licenses.
 

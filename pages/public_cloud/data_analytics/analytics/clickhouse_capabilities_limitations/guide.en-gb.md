@@ -1,7 +1,7 @@
 ---
 title: Capabilities and Limitations of Public Cloud Analytics with ClickHouse
 excerpt: Discover the technical capabilities and limitations of the Public Cloud Analytics for ClickHouse offer, including supported regions, plans, storage, networking, and backups
-updated: 2026-02-25
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -37,8 +37,8 @@ You can use any of the [ClickHouse-recommended drivers and interfaces](https://c
 
 Two plans are available:
 
-Discovery (Soon): 1 node
-Production: 3 nodes
+- Discovery (Soon): 1 node
+- Production: 3 nodes
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 
