@@ -29,6 +29,7 @@ Vous pouvez bénéficier d'adresses e-mail avec nos offres FTTH/xDSL OVHcloud. C
 
 ### Étape 1 : Activer son adresse FTTH/xDSL e-mail
 
+<!-- CP-STEPS-START:activer-adresse-email -->
 Pour démarrer la manipulation, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné, puis cliquez sur `Activer un service`{.action} dans la rubrique « Téléphonie ».
 
 Sur la nouvelle page qui s'affiche, remplissez les informations demandées :
@@ -41,6 +42,7 @@ Sur la nouvelle page qui s'affiche, remplissez les informations demandées :
 ![xdslemail](images/activate-xdsl-email.png){.thumbnail}
 
 Cliquez sur `Valider`{.action} pour lancer la création de l'adresse e-mail. Répétez cette manipulation si vous souhaitez créer une seconde adresse e-mail.
+<!-- CP-STEPS-END:activer-adresse-email -->
 
 > [!primary]
 >

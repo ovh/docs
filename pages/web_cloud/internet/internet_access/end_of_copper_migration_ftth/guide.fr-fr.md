@@ -40,6 +40,7 @@ Il est possible de demander une migration vers une offre fibre, sous réserve d'
 
 ### Vérifier la date de fermeture du cuivre pour votre accès
 
+<!-- CP-STEPS-START:verify-copper-closure-date -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), accédez à l'onglet `Télécom`{.action}.
 
 La page qui s'affiche indique la date de fermeture du cuivre pour chacun de vos accès à Internet et si la migration vers la fibre est possible.
@@ -47,6 +48,7 @@ La page qui s'affiche indique la date de fermeture du cuivre pour chacun de vos 
 ![informations fermeture cuivre](images/info-fermeture-cuivre.png){.thumbnail}
 
 Vous pouvez dès lors choisir de migrer vers la [Fibre Pro OVHcloud](https://www.ovhcloud.com/fr/internet/fibre/) (voir ci-dessous) ou de [résilier votre offre d'accès à Internet OVHcloud](#cancel).
+<!-- CP-STEPS-END:verify-copper-closure-date -->
 
 > [!success]
 > Retrouvez les offres et débits disponibles à votre adresse grâce à [notre outil d'éligibilité](https://order.isp.ovh.net/).
@@ -55,6 +57,7 @@ Vous pouvez dès lors choisir de migrer vers la [Fibre Pro OVHcloud](https://www
 
 #### Cas n°1 : La migration est proposée directement dans l'espace client
 
+<!-- CP-STEPS-START:migrate-fiber-cas1 -->
 Cliquez sur le bouton `Migrer vers la fibre`{.action}.
 
 Dans le tableau qui s'affiche, la première colonne récapitule votre offre actuelle (son nom, son prix et les services actifs). Les autres colonnes présentent les offres disponibles, compte tenu de votre adresse actuelle.
@@ -99,6 +102,7 @@ Dans ce cas précis, nous créons en parallèle de votre *packadsl* un nouveau *
 Suivant votre offre actuelle, un remplacement du modem peut s'avérer nécessaire. Cela vous sera indiqué lors du choix de votre nouvelle offre.
 
 Les nouveaux services liés à votre nouvelle offre Fibre Pro seront accessibles une fois le changement effectif.
+<!-- CP-STEPS-END:migrate-fiber-cas1 -->
 
 #### Cas n°2 : Aucune migration n'est proposée
 
@@ -145,6 +149,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 >> - En cas de divergence d'adresse, contactez le support OVHcloud via un [ticket](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant la référence de votre accès xDSL et l'**Identifiant immeuble IPE** de votre adresse.
 >>
 > Étape 3
+<!-- CP-STEPS-START:migrate-fiber-cas2-step3 -->
 >> **Effectuez un déménagement de votre accès à Internet :**
 >>
 >> Maintenant que vous avez récupéré et confirmé les bonnes informations de raccordement à la fibre, il est nécessaire de déménager techniquement votre accès depuis l'adresse actuelle (celle qui correspond au réseau cuivre) vers la nouvelle adresse (correspondant au réseau fibre).
@@ -161,6 +166,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 >> - L'**Identifiant immeuble IPE** de votre adresse.
 >>
 >> Les équipes du support OVHcloud vous aideront alors à finaliser votre migration vers la fibre.
+<!-- CP-STEPS-END:migrate-fiber-cas2-step3 -->
 
 ### Si vous ne souhaitez pas migrer vers la fibre <a name="cancel"></a>
 
