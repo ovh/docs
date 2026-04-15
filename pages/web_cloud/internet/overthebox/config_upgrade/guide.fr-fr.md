@@ -28,6 +28,7 @@ La méthode recommandée est de mettre à jour votre appareil OverTheBox depuis 
 
 ### Consulter la version de son appareil
 
+<!-- CP-STEPS-START:consulter-version -->
 L'OverTheBox est un projet open-source hébergé sur la plateforme GitHub. Le code est librement accessible et vous permet de consulter concrètement ce qui change entre chaque version.
 La version d'un appareil est au format [semver](https://semver.org/lang/fr/), vous pouvez consulter la version actuellement installée sur votre appareil depuis l'espace client.
 
@@ -36,17 +37,21 @@ Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélect
 Le champ `Version du matériel` indique la version actuellement installée sur votre appareil. Elle est basée sur les tags du [dépôt git overthebox](https://github.com/ovh/overthebox/tags).
 
 ![overthebox](images/manager-version-2024.png){.thumbnail}
+<!-- CP-STEPS-END:consulter-version -->
 
 ### Vérifier si une mise à jour est disponible
 
+<!-- CP-STEPS-START:verifier-mise-a-jour -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
 
 Si une mise à jour est disponible, une bannière s'affiche comme sur l'image ci-dessous.
 
 ![overthebox](images/manager-available-2024.png){.thumbnail}
+<!-- CP-STEPS-END:verifier-mise-a-jour -->
 
 ### Mise à jour via l'espace client
 
+<!-- CP-STEPS-START:mise-a-jour-espace-client -->
 > [!warning]
 >
 > Cette action n'est possible que si votre appareil contacte notre serveur de provisioning. Si ce n'est pas le cas, vous devez [installer manuellement l'image](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel).
@@ -64,9 +69,11 @@ Attendez quelques minutes afin que l'appareil **OverTheBox** soit de nouveau op�
 >
 > Votre appareil OverTheBox est maintenant mis à jour, votre configuration a été réappliquée automatiquement.
 >
+<!-- CP-STEPS-END:mise-a-jour-espace-client -->
 
 ### Modifier le canal de version
 
+<!-- CP-STEPS-START:modifier-canal-version -->
 > [!warning]
 >
 > Pour un appareil avec un unique port ethernet RJ45 (comme un NUC Intel), seul le canal `v0.8_deprecated` est compatible
@@ -84,9 +91,11 @@ Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélect
 Sélectionnez ensuite le canal souhaité à l'aide du menu déroulant `Versions disponibles`{.action}.
 
 ![overthebox](images/manager-releaseChannel-2024.png){.thumbnail}
+<!-- CP-STEPS-END:modifier-canal-version -->
 
 ### Désactiver les mises à jour automatiques
 
+<!-- CP-STEPS-START:desactiver-mises-a-jour-auto -->
 Par défaut, un appareil OverTheBox est mis à jour automatiquement la nuit si une nouvelle version du logiciel est disponible. Vous pouvez désactiver cette fonctionnalité depuis l'espace client.
 
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez modifier.
@@ -94,6 +103,7 @@ Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélect
 Activez ou désactivez les mises à jour automatiques à l'aide de l'interrupteur `Autoriser les mises à jour automatiques la nuit`{.action}.
 
 ![overthebox](images/manager-autoupgrade-2024.png){.thumbnail}
+<!-- CP-STEPS-END:desactiver-mises-a-jour-auto -->
 
 ### Voir les différences entre versions
 
