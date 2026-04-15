@@ -59,8 +59,8 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 
 #### License type
 
-- **Discovery** and **Production** plans use the MongoDB Community license.
-- **Advanced** plan upgrades your cluster so that it uses the MongoDB Enterprise license.
+- **Discovery** and **Production** plans use the MongoDB Community License.
+- **Advanced** plan upgrades your cluster so that it uses the MongoDB Community License.
 
 License cost is included inside the service plans. You cannot bring your own licenses.
 
