@@ -1,7 +1,7 @@
 ---
 title: Capacités et limitations de Public Cloud pour MongoDB (EN)
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2026-02-17
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -49,25 +49,17 @@ These drivers ensure that applications can efficiently and securely communicate 
 
 ### Plans
 
-Here is an overview of the capabilities of the three plans available:
+Three plans are available:
 
-| Plan         | Number of nodes | MongoDB License | BI Connector  | Compass   |
-| ------------ | --------------- | --------------- | ------------  | --------- |
-| *Discovery*  | 3               | Community       | Not available | Available |
-| *Production* | 3               | Community       | Not available | Available |
-| *Advanced*   | 3 to 7          | Enterprise      | Available     | Available |
+- **Discovery**: 3 nodes
+- **Production**: 3 nodes
+- **Advanced**: 3 to 7 nodes (including optionally an analytics node)
 
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
 
-#### Nodes
-
-- *Discovery*: The cluster contains 3 nodes.
-- *Production* and *Advanced*: The cluster can support 3 to 8 nodes including optionally an analytics node.
-
 #### License type
 
-- *Discovery*, and *Production* plans use the MongoDB Community license.
-- *Advanced* plan upgrades your cluster so that it uses the MongoDB Enterprise license.
+All three plans, **Discovery**, **Production** and **Advanced**, use the MongoDB Community License.
 
 License cost is included inside the service plans. You cannot bring your own licenses.
 
