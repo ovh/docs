@@ -8,6 +8,8 @@ updated: 2026-04-15
 
 Before configuring OVHcloud Connect L3 routing (BGP or static), you must prepare the **data centre configuration** that creates a virtual router inside the vRack, connecting your OVHcloud Connect link to the OVHcloud data centre(s) where your services run.
 
+<!-- data centre = legacy = API, dans manager on parle d'AZ et c'est davantage futur proof >> parler d'AZ dans la dc et vérifier les définitions du glossaire (datacentre --> AZ et AZ) -->
+
 **This guide explains how to:**
 
 - Create a **data centre configuration** (virtual router) inside your vRack
@@ -20,9 +22,19 @@ Before configuring OVHcloud Connect L3 routing (BGP or static), you must prepare
 > - [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.6_occ_l3_bgp)
 > - [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_static)
 >
+<!-- bloc ci-dessus à supprimer - incorect - pas de routage statique côté PoP. Les pages routage static et BGP mentionnées doivent décrire la configuraiton avancée du vrack network setup -->
+
 > For general vRack networking (VLANs, private IP addressing, compatible products), see the [vRack service presentation](/pages/network/vrack/global).
 
+<!-- vRack networking doit explique au client comment il peut monter un L3 sur son vRack, un L3 avec des subnets dans une ou plusieurs régions, des routeurs qu'ils manage et configure on top d'un dedicated server, d'une instance PCI, d'une gateway PCI ou voir comment ça se passe côté PCC. Une fois que le client a créé son L3, il peut faire le lien avec OCC soit via des routes statiques, soit avec une annonce BGP vers les routeurs déployés par AZ -->
+
 ## Requirements
+
+<!-- nettoyage: enlever les prérequis:
+- y'a ceux dont on se fout: il faut etre client, il faut avoir un OCC....
+- y'a ceux qui répertorient les étapes précédentes >> doublon avec les quick start guide
+- y'a des trucs faux sur la partie L3 PoP...
+à supprimer et juste mentionner les quick start guide pour rappel au client du parcours de déploiement/configuraiton de bout en bout -->
 
 - An active [OVHcloud account](/links/manager)
 - An active OVHcloud Connect service (status `active` in the [OVHcloud Control Panel](/links/manager) or via `GET /ovhCloudConnect/{serviceName}`)
