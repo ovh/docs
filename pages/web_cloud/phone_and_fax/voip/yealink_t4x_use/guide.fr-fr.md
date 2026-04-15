@@ -87,6 +87,7 @@ Enfin, appuyez sur la touche de fonction `transfert`{.action} (touche en bas à 
 
 #### Configurer la gestion des transferts d'appels depuis l'espace client
 
+<!-- CP-STEPS-START:configurer-transferts-appels-espace-client -->
 Dans l'onglet `Services`{.action}, sélectionnez la ligne téléphonique concernée, puis cliquez sur le téléphone que vous souhaitez paramétrer. Cliquez ensuite sur `Téléphone`{.action} et `Paramètres Plug & Phone personnalisés`{.action}.
 
 ![Espace client Telecom](images/control_panel_telecom.png){.thumbnail}
@@ -103,6 +104,7 @@ Il existe trois modes de transfert :
 - `Transfert supervisé` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert`{.action} pour transférer l'appel (les deux appels se trouvent sur deux touches programmables différentes) ;
 - `Transfert accompagné` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert`{.action} pour transférer l'appel (les deux appels sont situés sur la même touche programmable) ;
 - `Transfert aveugle` : lorsque vous êtes en appel, vous appuyez sur la touche programmable et l'appel est transféré en aveugle sans autres actions.
+<!-- CP-STEPS-END:configurer-transferts-appels-espace-client -->
 
 ## Aller plus loin
 

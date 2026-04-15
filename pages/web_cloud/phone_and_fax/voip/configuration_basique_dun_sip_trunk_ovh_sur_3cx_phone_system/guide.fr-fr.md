@@ -85,6 +85,7 @@ Obtenez gratuitement 3CX en accédant à la [page de téléchargement 3CX](https
 >>
 >> ![3CX Phone System](images/3cx_phone_system-trunk03.png){.thumbnail}
 >>
+<!-- CP-STEPS-START:sip-trunk-credentials-in-cp -->
 >> > [!primary]
 >> > Pour retrouver vos informations de connexion depuis votre espace client :
 >> >
@@ -92,6 +93,7 @@ Obtenez gratuitement 3CX en accédant à la [page de téléchargement 3CX](https
 >> >
 >> > Vous retrouvez alors, dans la partie « Informations SIP », le **Login**, **Domain** et **Proxy sortant** de votre ligne SIP Trunk.
 >>
+<!-- CP-STEPS-END:sip-trunk-credentials-in-cp -->
 >> Saisissez les informations d'authentification du trunk dans le formulaire en complétant les champs suivants :
 >>
 >> - **Nom d'hôte** : Renseignez le **Domain** de votre trunk.

@@ -29,6 +29,7 @@ Vous pouvez envoyer une campagne de fax depuis votre espace client OVHcloud. Cel
 
 ### Configurer et déclencher une campagne de fax
 
+<!-- CP-STEPS-START:configurer-declencher-campagne-fax -->
 Sélectionnez l’onglet `Services`{.action} puis la ligne Fax concernée.
 
 Cliquez sur l'onglet `Fax`{.action} puis sur `Campagnes de fax`{.action}.
@@ -56,9 +57,11 @@ Complétez alors les champs requis :
 >
 
 Une fois tous les champs complétés, cliquez sur `Valider`{.action}.
+<!-- CP-STEPS-END:configurer-declencher-campagne-fax -->
 
 ### Suivre une campagne de fax
 
+<!-- CP-STEPS-START:suivre-campagne-fax -->
 Lorsqu'une campagne est créée, elle se retrouve dans le tableau afin de pouvoir la lancer (dans le cadre d'une campagne avec lancement **Manuel**) ou de suivre une campagne lancée.
 
 Cliquez sur le bouton `...`{.action} à droite de la campagne pour avoir accès aux options de suivi :
@@ -76,6 +79,7 @@ Une campagne peut avoir plusieurs statuts :
 - **Succès** : la campagne s'est déroulée sans difficultés.
 - **Succès partiel** : la campagne s'est déroulée mais certains numéros sont probablement invalides. Vous pouvez avoir le détail de la campagne en cliquant sur le bouton `...`{.action} puis sur `Détails`{.action}.
 - **En erreur** : la campagne n'a pas pu être réalisée. Cliquez sur `...`{.action} puis sur `Détails`{.action} pour obtenir des informations complémentaires.
+<!-- CP-STEPS-END:suivre-campagne-fax -->
 
 ## Aller plus loin
 

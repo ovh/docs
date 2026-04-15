@@ -64,6 +64,7 @@ Ces informations sont indispensables pour maintenir votre compte en conformité 
 > Afin d'exploiter un numéro spécial SVA, il est obligatoire de fournir l'ensemble des justificatifs requis. Faute de validation de ces documents, vous ne pourrez pas exploiter votre numéro.
 >
 
+<!-- CP-STEPS-START:main-flow-intro -->
 Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez sur `Commander un numéro`{.action} dans le cadre « Je veux... » du `Tableau de bord`{.action}.
 
 ![commande de numéro](images/sva-commande.png){.thumbnail}
@@ -71,9 +72,11 @@ Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pou
 Vous accédez alors aux différents types de numéros. Cliquez sur `Vérifier l'identité` en face de « Numéros à valeur ajoutée ».
 
 ![vérifier l'identité](images/sva-identite.png){.thumbnail}
+<!-- CP-STEPS-END:main-flow-intro -->
 
 ### Renseigner les coordonnées
 
+<!-- CP-STEPS-START:renseigner-coordonnees -->
 Choisissez si vous êtes un « Professionnel » ou un « Professionnel revendeur » puis renseignez précisément les coordonnées demandées.
 
 > [!primary]
@@ -81,7 +84,7 @@ Choisissez si vous êtes un « Professionnel » ou un « Professionnel revendeur
 > **Éditeur, contact de l’éditeur et bénéficiaires : définitions.**
 >
 > - **Éditeur** : Personne physique ou morale exploitant le service accessible via ce numéro.<br>
-> - **Contact de l'éditeur** : Personne physique désignée pour représenter l’éditeur du numéro spécial dans le cadre du KYC, de la conformité ou de la gestion opérationnelle.<br>
+> - **Contact de l’éditeur** : Personne physique désignée pour représenter l’éditeur du numéro spécial dans le cadre du KYC, de la conformité ou de la gestion opérationnelle.<br>
 > - **Bénéficiaires** : Personnes physiques ou morales tirant un avantage financier, économique ou opérationnel de l’exploitation du numéro spécial, notamment :<br>
 >     - Les personnes physiques détenant directement ou indirectement une participation significative dans l’entreprise (≥ 25 %).<br>
 >     - Les personnes exerçant un contrôle effectif sur la société.<br>
@@ -92,9 +95,11 @@ Choisissez si vous êtes un « Professionnel » ou un « Professionnel revendeur
 ![renseigner coordonnées](images/sva-coordonnees02.png){.thumbnail}
 
 ![renseigner coordonnées](images/sva-coordonnees03.png){.thumbnail}
+<!-- CP-STEPS-END:renseigner-coordonnees -->
 
 ### Ajouter des bénéficiaires
 
+<!-- CP-STEPS-START:ajouter-beneficiaires -->
 Si vous êtes le seul bénéficiaire, cochez la case « Mon représentant est bénéficiaire ».
 
 ![représentant bénéficiaire](images/sva-beneficiaire01.png){.thumbnail}
@@ -119,6 +124,7 @@ Cliquez sur `Étape suivante`{.action}.
 Dans la fenêtre qui s'affiche alors, prenez connaissance des informations puis saisissez `CONFIRMER` dans le champ prévu à cet effet et cliquez sur `Valider mes informations`{.action}.
 
 ![confirmation](images/sva-confirmer.png){.thumbnail}
+<!-- CP-STEPS-END:ajouter-beneficiaires -->
 
 ### Téléverser les documents justificatifs
 
@@ -327,16 +333,19 @@ Cliquez sur `C'est parti`{.action} pour fournir vos documents.
 
 **La vérification d’identité par vidéo** consiste à confirmer l’identité du représentant légal ou de la personne habilitée à gérer le compte en comparant son visage à sa pièce d’identité via un processus sécurisé de reconnaissance biométrique.
 
+<!-- CP-STEPS-START:rib-upload -->
 > [!primary]
 > 
-> Le **Relevé d'Identité Bancaire** doit être déposé sur votre espace client OVHcloud afin de permettre les futurs reversements. Les autres documents doivent être fournis sur l’interface Lemonway.<br>
+> Le **Relevé d’Identité Bancaire** doit être déposé sur votre espace client OVHcloud afin de permettre les futurs reversements. Les autres documents doivent être fournis sur l’interface Lemonway.<br>
 > Pour téléverser votre RIB, rendez-vous dans la rubrique `Télécom`{.action} > `VoIP & Fax`{.action}.<br>
 > Cliquez sur `Gérer mes reversements`{.action} puis sur `Modifier mes coordonnées bancaires`{.action}.
 >
 > ![sva iban](images/sva-iban.png){.thumbnail}
+<!-- CP-STEPS-END:rib-upload -->
 
 ### Vérifier le statut de mes documents <a name="statut-docs"></a>
 
+<!-- CP-STEPS-START:status-check -->
 Dans le `Tableau de bord`{.action} de votre groupe de téléphonie, vérifiez le statut de votre **Profil SVA** :
 
 - **Valide** : vos documents sont validés. Vous pouvez accéder à vos informations et les modifier si nécessaire en cliquant sur `Voir mon profil SVA`{.action}.
@@ -360,6 +369,7 @@ Sur les exemples ci-dessous, le document 1 est validé et le document 2 est refu
 ![vérification SVA](images/sva-doc-refus.png){.thumbnail}
 
 En cas de document refusé, vous devrez téléverser un nouveau justificatif qui sera vérifié dès que possible, sous 48 heures ouvrées.
+<!-- CP-STEPS-END:status-check -->
 
 ## Aller plus loin
 

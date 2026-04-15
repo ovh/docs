@@ -37,6 +37,8 @@ Cette procédure vous permet de valider l'identifiant client sur lequel OVHcloud
 
 ### Générer la procédure 
 
+<!-- CP-STEPS-START:generer-la-procedure -->
+
 Lorsque vous passez commande de votre premier service VoIP, la procédure de validation VoIP est automatiquement générée. Cette procédure vous est envoyée par e-mail au format PDF à l'adresse définie sur le compte du contact facturation. Pour plus de détails sur les différents contacts, consultez notre guide sur le [changement de contacts pour les services VoIP](/pages/web_cloud/phone_and_fax/voip/effectuer_un_changement_de_contact_pour_les_services_voip).
 
 L'objet de l'e-mail reçu est : 
@@ -62,6 +64,8 @@ Renseignez les champs requis pour préciser les coordonnées du propriétaire du
 Une fois le formulaire validé, son téléchargement au format PDF vous sera proposé.
 
 ![procédure espace client](images/procedure03-2022.png){.thumbnail}
+
+<!-- CP-STEPS-END:generer-la-procedure -->
 
 ### Réaliser la procédure
 

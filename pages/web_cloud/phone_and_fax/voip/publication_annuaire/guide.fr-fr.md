@@ -53,6 +53,7 @@ Assurez-vous ainsi d'indiquer et de maintenir à jour les coordonnées de l'ense
 
 ### Étape 2 : modifier ses coordonnées et demander leur parution
 
+<!-- CP-STEPS-START:modifier-coordonnees -->
 Cliquez sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVHcloud. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVHcloud.
 
 ![telephonedirectory](images/manage-telephone-directory-step1.png){.thumbnail}
@@ -68,9 +69,11 @@ Dès lors, complétez ou modifiez avec précision les champs se trouvant dans le
 Une fois toutes les informations complétées, cliquez sur le bouton `Appliquer les modifications`{.action}. Si vous avez choisi de publier vos informations, la parution dans les annuaires en ligne sera effective sous 1 à 30 jours. Ce délai est inhérent aux annuaires eux-mêmes, qui mettent à jour leur base de données une fois par mois.
 
 ![telephonedirectory](images/manage-telephone-directory-step2.png){.thumbnail}
+<!-- CP-STEPS-END:modifier-coordonnees -->
 
 ### Étape 3 : suivre la parution de vos coordonnées
 
+<!-- CP-STEPS-START:suivre-parution -->
 > [!primary]
 >
 > Cette étape s'applique uniquement si vous avez choisi de publier vos informations dans les annuaires en ligne. 
@@ -89,6 +92,7 @@ Descendez en bas de la page jusqu'à la section `Parution dans les annuaires`. V
 Pour vérifier la parution de vos coordonnées, vous pouvez également vous rendre directement sur le site de l'annuaire concerné. Vous devrez alors rechercher votre ligne ou numéro OVHcloud.
 
 ![telephonedirectory](images/manage-telephone-directory-step3.png){.thumbnail}
+<!-- CP-STEPS-END:suivre-parution -->
 
 ## Aller plus loin
 
