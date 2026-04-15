@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Transcrire et résumer des fichiers audio (EN)
 excerpt: "Résumer des heures de réunions et conversations audio avec des APIs d'ASR et de LLM"
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]

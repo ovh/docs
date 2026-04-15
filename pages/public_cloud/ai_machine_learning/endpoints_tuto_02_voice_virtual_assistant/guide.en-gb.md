@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create your own voice assistant
 excerpt: Create a voice-enabled chatbot using ASR, LLM, and TTS endpoints in under 100 lines of code
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]
@@ -51,7 +51,7 @@ OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 
 **Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
-In this tutorial, we will be using the `Whisper-Large-V3` and `GPT-OSS 120b` models. Feel free to choose alternative models available on the [AI Endpoints catalog](https://catalog.endpoints.ai.ovh.net/).
+In this tutorial, we will be using the `Whisper-Large-V3` and `gpt-oss-120b` models. Feel free to choose alternative models available on the [AI Endpoints catalog](https://catalog.endpoints.ai.ovh.net/).
 
 Then, create a `requirements.txt` file with the following libraries:
 

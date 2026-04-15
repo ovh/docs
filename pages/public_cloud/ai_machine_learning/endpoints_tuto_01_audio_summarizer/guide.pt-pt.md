@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create your own audio summarizer
 excerpt: Summarize hours of meetings ASR and LLM AI endpoints
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]
