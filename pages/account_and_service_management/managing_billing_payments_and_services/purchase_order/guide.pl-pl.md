@@ -60,6 +60,7 @@ W przypadku OVHcloud dokument musi zawierać co najmniej następujące informacj
 
 ### Jak wpisać numer Purchase Order (PO) w Panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:enter-po-reference -->
 Otwórz stronę [Moje zamówienia](/links/control-panel/billing-orders).
 
 ![Panel klienta](images/huborders.png){.thumbnail}
@@ -88,6 +89,7 @@ W zakładce `Moje oznaczenia wewnętrzne`{.action} możesz zmienić lub wyłącz
 
 > [!primary]
 > Jeśli chcesz wyłączyć/zmienić odniesienie na korzyść innego **w tym samym przedziale czasowym**, należy skorzystać z opcji `Zmień`{.action}, aby zmienić przedział czasowy pierwszego odniesienia.
+<!-- CP-STEPS-END:enter-po-reference -->
 
 ## Sprawdź również
 

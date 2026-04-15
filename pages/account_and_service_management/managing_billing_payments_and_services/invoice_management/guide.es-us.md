@@ -59,6 +59,7 @@ La factura del servicio de OVHcloud se enviará una vez realizado el pago de un 
 
 #### Consultar y administrar las facturas de OVHcloud
 
+<!-- CP-STEPS-START:view-manage-bills -->
 Para consultar sus facturas, abra la página [Mis facturas](/links/control-panel/billing-invoices).
 
 ![Facturación](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
@@ -113,14 +114,17 @@ Si desea exportar todas sus facturas, utilice los botones `Exportar todo en CSV`
 Si quiere exportar sólo una parte, marque las casillas correspondientes en la primera columna de la tabla para seleccionar las facturas que le interesen. En el menú `Acciones masivas`{.action} podrá elegir dos nuevas acciones: `Exportar la selección en formato CSV`{.action} o `Exportar la selección en formato PDF`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Pagar sus facturas <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 Para abonar las facturas pendientes de pago, haga clic en el menú `Acciones massivas`{.action} y, seguidamente, en el botón `Abonar el importe pendiente ahora`{.action}.
 
 ![Abonar el importe pendiente](images/pay_debt.png){.thumbnail}
 
 Se generará una [orden de pedido de regularización](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Solicitar la cancelación de una factura
 
@@ -129,8 +133,12 @@ Se generará una [orden de pedido de regularización](/pages/account_and_service
 > Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+<!-- CP-STEPS-START:request-cancellation-ticket -->
+<!-- CP-STEPS-END:request-cancellation-ticket -->
+
 ### Seguimiento de los pagos
 
+<!-- CP-STEPS-START:track-payments -->
 Consulte el historial de pagos efectuados en `Mis facturas`{.action} y, seguidamente, `Seguimiento de los pagos`{.action}. De este modo, podrá asociar cada factura al pago asociado.
 
 ![Seguimiento de los pagos](images/payment_tracking.png){.thumbnail}
@@ -141,6 +149,7 @@ También puede exportar sus justificantes de pago en formato *.CSV* utilizando e
 >
 > Si detecta alguna diferencia entre un pago y el importe de una factura, significa que el saldo previo en su cuenta ha hecho que se reduzca el importe final.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Más información
 

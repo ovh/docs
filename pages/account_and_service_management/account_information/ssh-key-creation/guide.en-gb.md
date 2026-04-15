@@ -11,39 +11,53 @@ This guide will walk you through the process of adding an SSH key in the OVHclou
 <iframe class="video" src="https://embed.api.video/vod/vi2eryq4IfwHPMoxARzkswcg" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
 
 ## Step 1: Access the "My offers and services" Page
+<!-- CP-STEPS-START:access-services-page -->
 Wait for the page to load, and verify that you are on the "My offers and services" page inside the OVHcloud Control Panel. This page displays an overview of your services and offers. 
 
 ![Step 1](images/screenshot-1.en-us.jpg){.thumbnail}
+<!-- CP-STEPS-END:access-services-page -->
 
 ## Step 2: Click on the "SSH key" Tab
+<!-- CP-STEPS-START:click-ssh-key-tab -->
 Click on the "SSH key" tab, usually located in the navigation menu. This tab is where you manage your SSH keys for secure server access.
 
 ![Step 2](images/screenshot-2.en-us.jpg){.thumbnail}
+<!-- CP-STEPS-END:click-ssh-key-tab -->
 
 ## Step 3: Add a New SSH Key
+<!-- CP-STEPS-START:add-new-ssh-key -->
 Click on the "Add an SSH key" button. This action will display a dropdown menu. Inside the dropdown, select the "Dedicated" option to proceed with adding a new SSH key.
 
 ![Step 3](images/screenshot-3.en-us.jpg){.thumbnail}
+<!-- CP-STEPS-END:add-new-ssh-key -->
 
 ## Step 4: Verify the Modal Window
+<!-- CP-STEPS-START:verify-modal-window -->
 After selecting the "Dedicated" option, a modal window titled "Add an SSH key" should appear. This window contains fields necessary for adding a new SSH key.
 
 ![Step 4](images/screenshot-4.en-us.jpg){.thumbnail}
+<!-- CP-STEPS-END:verify-modal-window -->
 
 ## Step 5: Enter the ID (Identifier)
+<!-- CP-STEPS-START:enter-key-id -->
 Type a value in the "ID" (or "Identifier") field. For this guide, you can enter a random ID. This identifier helps in recognizing the SSH key.
 
 ![Step 5](images/screenshot-5.en-us.jpg){.thumbnail}
+<!-- CP-STEPS-END:enter-key-id -->
 
 ## Step 6: Enter the SSH Key
+<!-- CP-STEPS-START:enter-ssh-key -->
 Type a value in the "Key" input field. The format should be similar to "ssh-rsa AAAArandom123" for example. Ensure the key is in the correct format to avoid errors.
 
 ![Step 6](images/screenshot-6.en-us.jpg){.thumbnail}
+<!-- CP-STEPS-END:enter-ssh-key -->
 
 ## Step 7: Confirm the Addition of the New Key
+<!-- CP-STEPS-START:confirm-ssh-key -->
 Click on the "Confirm" button to add the new SSH key. This action will save the SSH key, making it available for use in accessing your servers securely.
 
 ![Step 7](images/screenshot-7.en-us.jpg){.thumbnail}
+<!-- CP-STEPS-END:confirm-ssh-key -->
 
 ## Conclusion
 By following these steps, you have successfully added an SSH key in the OVHcloud Control Panel. SSH keys are a crucial component of server security, allowing for encrypted connections and protecting against unauthorized access.

@@ -48,6 +48,7 @@ Es kann beispielsweise eine Richtlinie erstellt werden, um einem Benutzer namens
 
 ### Menü für IAM aufrufen
 
+<!-- CP-STEPS-START:access-iam-menu -->
 Öffnen Sie die Seite [IAM-Richtlinien](/links/control-panel/iam-policies).
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
@@ -69,6 +70,7 @@ Wenn Sie bereits Richtlinien oder Benutzer erstellt haben, finden Sie diese auf 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Jede Richtlinie wird mit Name, Anzahl der verbundenen Identitäten und der Anzahl der darin enthaltenen Aktionen angezeigt.
+<!-- CP-STEPS-END:access-iam-menu -->
 
 ### Verwaltung der Richtlinien
 
@@ -76,6 +78,7 @@ Jede Richtlinie wird mit Name, Anzahl der verbundenen Identitäten und der Anzah
 
 #### Eine Richtlinie erstellen
 
+<!-- CP-STEPS-START:create-policy -->
 Klicken Sie auf den Button `Policy erstellen`{.action}.
 
 Das folgende Formular wird angezeigt:
@@ -139,9 +142,11 @@ Ein Suchfeld ist verfügbar, mit dem Sie eine bestimmte Aktion in der Liste iden
 
 > [!primary]
 > Aktionen im Zusammenhang mit Bestellungen und Rechnungen sind im OVHcloud IAM noch nicht verfügbar.
+<!-- CP-STEPS-END:create-policy -->
 
 #### Bedingungen für Richtlinien
 
+<!-- CP-STEPS-START:conditions-on-policies -->
 Es ist möglich, Bedingungen an IAM-Richtlinien anzuhängen.
 
 Eine Richtlinie mit Bedingungen ist gültig, wenn alle Bedingungen validiert sind.
@@ -159,20 +164,25 @@ Es ist möglich, Bedingungen für folgende Elemente festzulegen:
 ![Richtlinie erstellen](images/conditions.png){.thumbnail}
 
 Nachdem sie hinzugefügt wurden, werden die Bedingungen mit der [Syntax angezeigt, die in der API verwendet wird](/pages/account_and_service_management/account_information/iam-policies-api).
+<!-- CP-STEPS-END:conditions-on-policies -->
 
 #### Richtlinien bearbeiten
 
+<!-- CP-STEPS-START:edit-policy -->
 Um eine bestehende Richtlinie zu bearbeiten, klicken Sie auf den Button `...`{.action} rechts neben der Richtlinie und dann auf `Richtlinie bearbeiten`{.action}.
 
 ![Richtlinie bearbeiten](images/editing_a_policy.png){.thumbnail}
 
 Anschließend können Sie den Geltungsbereich der Richtlinie ändern.
+<!-- CP-STEPS-END:edit-policy -->
 
 #### Richtlinie löschen
 
+<!-- CP-STEPS-START:delete-policy -->
 Um eine bestehende Richtlinie zu löschen, klicken Sie auf `...`{.action} rechts neben der Richtlinie und dann auf `Richtlinie löschen`{.action}.
 
 In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen.
+<!-- CP-STEPS-END:delete-policy -->
 
 <a name="create-users"></a>
 
@@ -188,9 +198,11 @@ Der Zugriff auf den Support bleibt weiterhin dem Inhaber der Ressource vorbehalt
 
 ### Verwaltung von Identitäten
 
+<!-- CP-STEPS-START:manage-identities -->
 Um die für Richtlinien verfügbaren Identitäten zu verwalten, gehen Sie zum Menü `Identität, Sicherheit und Operationen`{.action} und danach zum Abschnitt `Identitäten`{.action}.
 
 Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+<!-- CP-STEPS-END:manage-identities -->
 
 ### Verwaltung von Ressourcengruppen
 
@@ -198,6 +210,7 @@ Richtlinien können auf Ressourcengruppen abzielen (anstatt direkt auf Ressource
 
 #### Ressourcengruppe erstellen
 
+<!-- CP-STEPS-START:create-resource-group -->
 Um eine Ressourcengruppe zu erstellen, gehen Sie zum Abschnitt `Richtlinien`{.action} und klicken Sie dann auf den Tab `Ressourcengruppen`{.action}:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
@@ -209,6 +222,7 @@ Klicken Sie auf `Ressourcengruppe erstellen`{.action}.
 - **Ressourcengruppenname**: Dies ist der Name, der in den Benutzer-Oberflächen angezeigt wird. Der Name muss eindeutig sein und darf keine Leerzeichen enthalten.
 - **Produkttypen**: Liste der Produkttypen, die von dieser Ressourcengruppe betroffen sind.
 - **Ressourcen**: Liste der Ressourcen, die die Gruppe enthalten wird.
+<!-- CP-STEPS-END:create-resource-group -->
 
 ### Ressourcengruppe bearbeiten
 
@@ -216,9 +230,11 @@ Um eine Ressourcengruppe zu bearbeiten, klicken Sie in der Liste auf den entspre
 
 #### Ressourcengruppe löschen
 
+<!-- CP-STEPS-START:delete-resource-group -->
 Um eine vorhandene Ressourcengruppe zu löschen, klicken Sie rechts neben der Gruppe auf `...`{.action} und dann auf `Ressourcengruppe löschen`{.action}.
 
 In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen.
+<!-- CP-STEPS-END:delete-resource-group -->
 
 ## Weiterführende Informationen
 

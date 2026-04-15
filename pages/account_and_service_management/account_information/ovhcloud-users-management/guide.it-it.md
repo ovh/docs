@@ -42,6 +42,7 @@ Gli utenti locali sono uno dei tipi di identità che possono essere associati al
 
 #### Aggiungi un utente
 
+<!-- CP-STEPS-START:add-a-user -->
 Dalla pagina [Identità IAM](/links/control-panel/iam-identities), clicca su `Aggiungi un utente`{.action}.
 
 Nella nuova finestra, inserisci le informazioni richieste. Clicca su `Conferma`{.action} per completare l’operazione.
@@ -73,9 +74,11 @@ Esempio: **1234-567-89/johnsmith**.
 A questo punto l’utente appena creato potrà accedere allo [Spazio Cliente OVHcloud](/links/manager) usando questo identificativo. 
 
 Inoltre potrà modificare password e proteggere l’accesso al tuo account attivando la doppia autenticazione (solo ed esclusivamente per il suo accesso in qualità di utente). A questo proposito consulta [la guida relativa all’attivazione della doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+<!-- CP-STEPS-END:add-a-user -->
 
 #### Gestisci gli utenti
 
+<!-- CP-STEPS-START:manage-users -->
 Per modificare, disattivare/attivare o rimuovere un utente clicca sui tre puntini `...`{.action} situati a destra in corrispondenza del nome utente.
 
 ![users-management](images/usersmanagement4.png){.thumbnail}
@@ -83,11 +86,13 @@ Per modificare, disattivare/attivare o rimuovere un utente clicca sui tre puntin
 La modifica dell’utente ti consentirà di aggiornare il suo indirizzo-mail, i suoi privilegi e infine il suo profilo.
 
 ![users-management](images/usersmanagement6.png){.thumbnail}
+<!-- CP-STEPS-END:manage-users -->
 
 ### Gestione dei gruppi
 
 #### Aggiungi un gruppo
 
+<!-- CP-STEPS-START:add-a-group -->
 Per aggiungere un gruppo, vai alla scheda `Gruppi di utenti`{.action} e clicca sul pulsante `Dichiarare un gruppo`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
@@ -104,9 +109,11 @@ I gruppi assegnano un livello di privilegio predefinito agli utenti che contengo
 | Sola Lettura | Consente l’accesso in lettura allo Spazio Cliente OVHcloud e a tutte le sue sezioni. |
 | Amministratore con restrizioni | Consente l'accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, **ad eccezione della gestione degli utenti**. |
 | Amministratore | Consente l’accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, **inclusa** la gestione degli utenti. |
+<!-- CP-STEPS-END:add-a-group -->
 
 #### Gestisci i gruppi
 
+<!-- CP-STEPS-START:manage-groups -->
 Per aggiornare o eliminare un gruppo, clicca sul pulsante `...`{.action} a destra del nome del gruppo.
 
 ![users-management](images/usersmanagement9.png){.thumbnail}
@@ -114,6 +121,7 @@ Per aggiornare o eliminare un gruppo, clicca sul pulsante `...`{.action} a destr
 Quando si modifica un gruppo, è possibile modificarne la descrizione e il ruolo.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
+<!-- CP-STEPS-END:manage-groups -->
 
 ### Gestione dei diritti
 

@@ -38,7 +38,11 @@ Para más información, consulte nuestra guía [Gestionar la renovación de los 
 
 ### ¿Cómo activar la renovación automática?
 
+<!-- CP-STEPS-START:enable-automatic-renewal -->
+
 Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio en el que quiera activar la renovación automática, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Activar el pago automático`{.action}. 
+
+<!-- CP-STEPS-END:enable-automatic-renewal -->
 
 #### Ideas y consejos
 
@@ -47,9 +51,11 @@ Si desea más información, consulte nuestra guía [Gestionar la renovación de 
 
 ### ¿Cómo desactivar la renovación automática?
 
+<!-- CP-STEPS-START:disable-automatic-renewal -->
 Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio que desee configurar, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Configurar la renovación`{.action}. Podrá elegir el modo manual, aunque esta opción solo está disponible para algunos servicios, como dominios, planes de hosting, VPS y servidores dedicados.
 
 Para dar de baja un servicio, consulte la página [¿Cómo dar de baja un servicio?](#cancelservice)
+<!-- CP-STEPS-END:disable-automatic-renewal -->
 
 #### Ideas y consejos
 
@@ -58,7 +64,9 @@ Si desea más información, consulte nuestra guía [Gestionar la renovación de 
 
 ### ¿Cómo añadir una forma de pago?
 
+<!-- CP-STEPS-START:add-payment-method -->
 En la página [Formas de pago](/links/control-panel/billing-payment-methods), haga clic en `Añadir una forma de pago`{.action}.
+<!-- CP-STEPS-END:add-payment-method -->
 
 ### ¿Cómo actualizar la forma de pago?
 
@@ -74,7 +82,9 @@ Es obligatorio tener al menos una forma de pago configurada en el área de clien
 
 ### ¿Cómo eliminar una forma de pago?
 
+<!-- CP-STEPS-START:delete-payment-method -->
 En la página [Formas de pago](/links/control-panel/billing-payment-methods), localice la forma de pago que quiera eliminar y haga clic en el botón con forma de papelera.
+<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Ideas y consejos
 
@@ -92,6 +102,7 @@ Si su cuenta de prepago de OVHcloud tiene saldo, siempre se utilizará de forma 
 
 ### ¿Cuál es la fecha del próximo pago?
 
+<!-- CP-STEPS-START:next-payment-due-date -->
 Para consultar todas las fechas de renovación, acceda a la sección `Mis soluciones y servicios`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud.
 
 Las soluciones que tengan activada la renovación automática se renovarán el primer día del mes. La frecuencia puede variar según el servicio.
@@ -100,6 +111,7 @@ Las soluciones que tengan activada la renovación automática se renovarán el p
 
 Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Desde ahí podrá modificar la frecuencia con la que renueva sus soluciones.
 Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
+<!-- CP-STEPS-END:next-payment-due-date -->
 
 ### ¿Qué forma de pago se utiliza para abonar los servicios?
 
@@ -140,13 +152,17 @@ En la página [Formas de pago](/links/control-panel/billing-payment-methods), pu
 
 ### ¿A qué corresponde un pago concreto?
 
+<!-- CP-STEPS-START:payments-correspondence -->
 Tanto los pagos realizados a través de nuestro sitio web como las renovaciones automáticas se guardan en el historial de pagos del área de cliente. En la sección `Facturación`{.action}, abra la pestaña `Seguimiento de los pagos`{.action} para consultar la referencia de la factura correspondiente, la fecha del pago, el importe y la forma de pago utilizada.
+<!-- CP-STEPS-END:payments-correspondence -->
 
 ### ¿Cómo dar de baja un servicio? <a name="cancelservice"></a>
 
+<!-- CP-STEPS-START:cancel-service -->
 Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
 
 La baja será efectiva una vez finalizado el período de validez o de compromiso del servicio. Puede realizar la solicitud o cancelarla hasta 24 horas antes de la fecha de expiración.
+<!-- CP-STEPS-END:cancel-service -->
 
 #### Ideas y consejos
 
@@ -155,8 +171,10 @@ Para más información sobre cómo tramitar la baja de nuestros productos y serv
 
 ### ¿Cómo personalizar la referencia de mis productos o servicios en las facturas?
 
+<!-- CP-STEPS-START:customize-product-reference-bill -->
 Para facilitar la lectura de sus facturas, además de la referencia de OVHcloud, estas incluyen el nombre personalizado que usted haya asignado a los productos o servicios contratados.
 Puede personalizar el nombre de sus productos o servicios (salvo los nombres de dominios) directamente desde el área de cliente, en la página de configuración de estos productos o servicios.
+<!-- CP-STEPS-END:customize-product-reference-bill -->
 
 ### ¿Cómo funciona la facturación de Public Cloud?
 
@@ -168,11 +186,13 @@ Si desea más información, consulte nuestra guía [Analizar y gestionar la fact
 
 ### ¿Cómo consultar el libro mayor?
 
+<!-- CP-STEPS-START:see-accounts-ledger -->
 Para consultar el libro mayor, acuda a su propio departamento de contabilidad.
 
 No obstante, OVHcloud pone a su disposición todas sus facturas a través de un archivo de Excel en formato CSV.
 
 Para descargarlo, abra la página [Mis facturas](/links/control-panel/billing-invoices). Haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
+<!-- CP-STEPS-END:see-accounts-ledger -->
 
 ## Más información
   

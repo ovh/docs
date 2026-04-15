@@ -101,6 +101,7 @@ Des **cas particuliers** existent néanmoins et sont détaillés [plus bas](#spe
 
 ### Comment résilier votre abonnement ? <a name="terminate"></a>
 
+<!-- CP-STEPS-START:cancel-subscription -->
 Pour résilier l'abonnement à votre service, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 ![produits et services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
@@ -121,6 +122,7 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 La résiliation de votre service aura lieu à la **date d'effet** indiquée dans le tableau « Gestion de mes offres et services ». Si vous ne voyez pas le statut « Résiliation programmée » apparaître, rafraîchissez la page.
 
 ![demande de résiliation](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request-fr.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Cas particuliers <a name="specific-cases"></a>
 
@@ -189,11 +191,13 @@ Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/ente
 
 #### Public Cloud <a name="publiccloud"></a>
 
+<!-- CP-STEPS-START:public-cloud-deletion -->
 Chaque service [Public Cloud](/links/public-cloud/public-cloud) peut être supprimé depuis l'onglet `Public Cloud`{.action} de l'espace client.
 
 Sélectionnez un service à gauche, cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
 
 ![public cloud instance deletion](images/pci-deletion-fr.png){.thumbnail}
+<!-- CP-STEPS-END:public-cloud-deletion -->
 
 Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (retrouvez plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
@@ -206,6 +210,7 @@ Vous pouvez également [consulter votre consommation actuelle](/pages/public_clo
 > Vous pouvez annuler une demande de résiliation jusqu'à 24 heures avant la date de fin d'abonnement.
 >
 
+<!-- CP-STEPS-START:stop-cancellation -->
 Pour annuler une demande de résiliation, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'objet d'une demande de résiliation puis sur `Annuler la résiliation du service`{.action} 
@@ -213,6 +218,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'obje
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination-fr.png){.thumbnail}
 
 Enfin, cliquez sur `Confirmer l'annulation`{.action}.
+<!-- CP-STEPS-END:stop-cancellation -->
 
 L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page « Gestion de mes offres et services » si vous voyez toujours le statut « Résiliation programmée ».
 

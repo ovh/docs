@@ -61,6 +61,7 @@ Si utiliza una red 4G/5G como complemento, no olvide recuperar también la direc
 
 ### Etapa 2: Aplicar una restricción de acceso por IP
 
+<!-- CP-STEPS-START:enable-ip-restriction -->
 En la página [Seguridad de la cuenta](/links/control-panel/account-security), busque la sección **Restricción de acceso por IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
@@ -90,9 +91,11 @@ Existen dos secciones para implementar las restricciones por IP:
 >
 > Esté muy atento a este punto.
 >
+<!-- CP-STEPS-END:enable-ip-restriction -->
 
 #### Denegar todas las direcciones IP excepto las direcciones legítimas
 
+<!-- CP-STEPS-START:add-allow-rule -->
 Para autorizar el acceso al área de cliente de OVHcloud a una o varias direcciones IP legítimas, haga clic en el botón `Añadir una restricción`{.action}.
 
 > En las capturas de pantalla que se indican a continuación, la IP **192.0.2.0** se sustituirá por una IP suya.
@@ -120,9 +123,11 @@ Una vez **el conjunto** de sus direcciones IP públicas indicadas en la sección
 ![Add allow rule](images/ip7.png){.thumbnail}
 
 > Desde ahora, **solo** las direcciones IP públicas previamente autorizadas en la sección `IP configuradas` pueden acceder al área de cliente de OVHcloud.
+<!-- CP-STEPS-END:add-allow-rule -->
 
 #### Autorizar todas las direcciones IP, excepto algunas direcciones
 
+<!-- CP-STEPS-START:add-deny-rule -->
 La opción de restricción de acceso por IP permite autorizar a todas las direcciones IP a acceder al área de cliente de OVHcloud, a excepción de algunas que haya identificado previamente como ilegítimas.
 
 Para bloquear el acceso a su área de cliente de OVHcloud a una o varias direcciones IP, haga clic en el botón `Añadir una restricción`{.action} en el menú `IP configuradas`.
@@ -149,6 +154,7 @@ Una vez que haya configurado todas las direcciones IP públicas que figuran en e
 ![Add deny rule](images/ip12.png){.thumbnail}
 
 > Desde ahora, **todas** las direcciones IP públicas pueden acceder al área de cliente de OVHcloud, **excepto** las indicadas en el apartado `IP configuradas`.
+<!-- CP-STEPS-END:add-deny-rule -->
 
 ## Más información
 

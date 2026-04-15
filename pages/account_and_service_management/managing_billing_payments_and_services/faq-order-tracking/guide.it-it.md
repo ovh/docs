@@ -14,19 +14,25 @@ Il pagamento dell'ordine può essere effettuato solo dopo l'identificazione tram
 
 #### Consigli e suggerimenti
 
+<!-- CP-STEPS-START:pay-new-order -->
 Sei uscito dalla pagina dell’ordine? Apri la pagina [I miei ordini](/links/control-panel/billing-orders). A questo punto è possibile visualizzare l’ordine e saldarlo.
+<!-- CP-STEPS-END:pay-new-order -->
 
 ### Come verificare lo stato di un pagamento?
 
+<!-- CP-STEPS-START:check-payment-status -->
 Apri la pagina [Le mie fatture](/links/control-panel/billing-invoices). Se una fattura è in attesa di pagamento, ti verrà proposto di saldare il saldo.
 
 #### Consigli e suggerimenti
 
 Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
+<!-- CP-STEPS-END:check-payment-status -->
 
 ### Come verificare lo stato di un ordine?
 
+<!-- CP-STEPS-START:track-order-status -->
 Apri la pagina [I miei ordini](/links/control-panel/billing-orders).
+<!-- CP-STEPS-END:track-order-status -->
 
 #### Consigli e suggerimenti
 
@@ -51,6 +57,7 @@ Se sei un professionista, non sei vincolato alle informazioni preliminari del Co
 
 ### Perché l’ordine non è stato consegnato?
 
+<!-- CP-STEPS-START:service-not-delivered -->
 L’eventuale ritardo nella consegna di un ordine può essere dovuto a diversi motivi.
 Per garantire una protezione adeguata ai propri clienti OVHcloud presta particolare attenzione alla sicurezza delle transazioni finanziarie e, proprio per questo, ha implementato una procedura di convalida casuale dei pagamenti che potrebbe rallentare alcuni ordini. Per verificare che sia il tuo caso, consulta lo stato dei pagamenti nella sezione `Fatturazione`{.action} dello Spazio Cliente.
 
@@ -61,6 +68,7 @@ Un’altra possibile causa potrebbe essere il mancato pagamento di una fattura. 
 #### Consigli e suggerimenti
 
 Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
+<!-- CP-STEPS-END:service-not-delivered -->
 
 ## Per saperne di più
 

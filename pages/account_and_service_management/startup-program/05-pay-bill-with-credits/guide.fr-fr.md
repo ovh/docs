@@ -52,6 +52,7 @@ Selon le type de service que vous souhaitez commander, voici comment utiliser vo
 
 #### Pour les autres produits éligibles
 
+<!-- CP-STEPS-START:place-order-other-products -->
 1. Passez votre commande : Sélectionnez les services éligibles que vous souhaitez acheter.
 1. Sélectionnez le mode de paiement :
     1. À la fin de la commande, lorsqu’il vous sera demandé de choisir un moyen de paiement, allez dans la section `Voucher`{.action}.
@@ -60,6 +61,7 @@ Selon le type de service que vous souhaitez commander, voici comment utiliser vo
 1. Continuez les étapes jusqu'au paiement : Cliquez sur `Payer`{.action} pour finaliser la commande en utilisant vos crédits.
 
 ![Commande](images/01-pay-bill.png){.thumbnail width="800"}
+<!-- CP-STEPS-END:place-order-other-products -->
 
 > [!success]
 > 💡 Besoin de savoir quels produits sont éligibles ? Retrouvez la liste complète [ici](/pages/account_and_service_management/startup-program/06-available-products).

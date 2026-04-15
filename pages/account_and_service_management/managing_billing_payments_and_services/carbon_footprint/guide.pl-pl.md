@@ -66,6 +66,7 @@ Należy wziąć pod uwagę kilka kwestii:
 
 ### Pobranie miesięcznego bilansu za poprzedni miesiąc w Panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:retrieve-cp-footprint -->
 1. Na [Panelu klienta](/links/control-panel/account-dashboard), w kolumnie po lewej stronie przejdź do sekcji **Przydatne linki**, następnie kliknij zakładkę `Mój ślad węglowy`{.action}.
 1. Na nowej stronie, która się wyświetli, kliknij `Pobierz dane dot. śladu węglowego z m-ca: [Miesiąc] [Rok]`{.action}.
 
@@ -74,6 +75,7 @@ Należy wziąć pod uwagę kilka kwestii:
 Co miesiąc będziesz mógł pobrać ślad węglowy z poprzedniego miesiąca w odniesieniu do wybranych usług.
 
 Jeśli potrzebujesz śladu węglowego za miesiąc przed bieżącym miesiącem, musisz obowiązkowo przejść przez nasze API, aby go odzyskać.
+<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Pobierz bilans miesięczny sprzed poprzedniego miesiąca za pośrednictwem naszych API
 

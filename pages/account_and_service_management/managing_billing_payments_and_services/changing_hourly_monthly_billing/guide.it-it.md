@@ -40,6 +40,7 @@ Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o m
 
 ### Dallo Spazio Cliente OVHcloud
 
+<!-- CP-STEPS-START:switch-to-monthly-billing -->
 > [!warning]
 > La procedura seguente non funziona per le istanze di terza generazione (esempio: B3-32). Per essere fatturati mensilmente per questo tipo di istanza, è necessario creare un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) per questo modello di istanza.
 >
@@ -53,6 +54,7 @@ Seleziona l’istanza per la quale desideri modificare la modalità di fatturazi
 ![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
 In seguito a questa modifica, riceverete immediatamente una fattura mensile pro rata. La prossima fattura comprenderà la parte di tariffa oraria del mese (il 1° del mese fino al cambiamento) e il nuovo costo mensile.
+<!-- CP-STEPS-END:switch-to-monthly-billing -->
 
 ### Da API Openstack
 

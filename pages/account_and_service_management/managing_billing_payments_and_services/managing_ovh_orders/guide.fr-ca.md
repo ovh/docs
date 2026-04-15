@@ -49,6 +49,7 @@ Vous pouvez à tout moment retrouver votre bon de commande sur la page [Mes comm
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
+<!-- CP-STEPS-START:access-purchase-orders -->
 Ouvrez la page [Mes commandes](/links/control-panel/billing-orders).
 
 ![Espace client](images/huborders.png){.thumbnail}
@@ -76,9 +77,11 @@ Voici les différents états de commande :
 Vous pouvez également afficher le bon de commande au format HTML en cliquant sur `...`{.action} à droite de votre commande puis sur `Voir la commande au format HTML`{.action}.
 
 ![Récapitulatif des commandes](images/order04.png){.thumbnail}
+<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Suivre votre commande
 
+<!-- CP-STEPS-START:track-order -->
 Après génération de votre bon de commande, vous pouvez le suivre depuis la page [Mes commandes](/links/control-panel/billing-orders) :
 
 * Cliquez sur le bouton `...`{.action} devant votre commande.
@@ -89,6 +92,7 @@ Après génération de votre bon de commande, vous pouvez le suivre depuis la pa
 La fenêtre ci-dessous apparaît, vous permettant un suivi en quatre étapes.
 
 ![Suivi de commande](images/order06.png){.thumbnail}
+<!-- CP-STEPS-END:track-order -->
 
 ## Aller plus loin
 

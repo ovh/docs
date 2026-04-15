@@ -61,6 +61,7 @@ Jeśli używasz sieci 4G/5G jako uzupełnienie, pamiętaj o pobraniu również a
 
 ### Etap 2 - Wprowadzenie ograniczenia dostępu dla adresu IP
 
+<!-- CP-STEPS-START:enable-ip-restriction -->
 Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) znajdź sekcję **Ograniczenie dostępu po IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
@@ -90,9 +91,11 @@ Istnieją dwie sekcje dotyczące wprowadzania ograniczeń dla adresu IP:
 >
 > Bądźcie więc niezwykle czujny w tej kwestii.
 >
+<!-- CP-STEPS-END:enable-ip-restriction -->
 
 #### Odrzuć wszystkie adresy IP z wyjątkiem uprawnionych adresów
 
+<!-- CP-STEPS-START:add-allow-rule -->
 Aby zezwolić na dostęp do Panelu klienta OVHcloud wyłącznie dla jednego lub kilku uprawnionych adresów IP, kliknij przycisk `Dodaj ograniczenie`{.action}.
 
 > W kolejnych zrzutach ekranów IP **192.0.2.0** zostanie zastąpione adresem IP, które Cię interesuje.
@@ -120,9 +123,11 @@ Po **wszystkie** publicznych adresów IP podanej w sekcji `Skonfigurowane IP`, p
 ![Add allow rule](images/ip7.png){.thumbnail}
 
 > Od tej chwili **tylko** dostęp do Panelu klienta OVHcloud mogą uzyskać publiczne adresy IP, które zostały wcześniej autoryzowane w sekcji `Skonfigurowane IP`.
+<!-- CP-STEPS-END:add-allow-rule -->
 
 #### Autoryzuj wszystkie adresy IP z wyjątkiem niektórych adresów
 
+<!-- CP-STEPS-START:add-deny-rule -->
 Opcja ograniczenia dostępu dla adresu IP pozwala również na zezwolenie wszystkim adresom IP na dostęp do Panelu klienta OVHcloud, z wyjątkiem niektórych adresów, które wcześniej zidentyfikowałeś jako nieuprawnione.
 
 Aby zablokować dostęp do Panelu klienta OVHcloud dla jednego lub kilku adresów IP, w sekcji `Skonfigurowane IP` kliknij przycisk `Dodaj ograniczenie`{.action}.
@@ -149,6 +154,7 @@ Po wprowadzeniu wszystkich publicznych adresów IP w sekcji `Skonfigurowane IP`,
 ![Add deny rule](images/ip12.png){.thumbnail}
 
 > Od tej pory **wszystkie** publiczne adresy IP mogą mieć dostęp do Panelu klienta OVHcloud, **z wyjątkiem** adresów zgłoszonych w sekcji `Skonfigurowane IP`.
+<!-- CP-STEPS-END:add-deny-rule -->
 
 ## Sprawdź również
 

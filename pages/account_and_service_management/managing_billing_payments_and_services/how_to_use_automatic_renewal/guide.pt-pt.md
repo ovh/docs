@@ -122,12 +122,15 @@ Este manual permitir-lhe-á:
 
 ## Instruções
 
+<!-- CP-STEPS-START:services-table -->
 Abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
+<!-- CP-STEPS-END:services-table -->
 
 ### Apresentar o tipo de renovação <a name="renewal-type"></a>
 
+<!-- CP-STEPS-START:services-table -->
 A página **Gestão das minhas ofertas e serviços** contém uma tabela de gestão dos seus serviços OVHcloud. Nele, pode encontrar os nomes, o tipo de serviço, a disponibilidade do serviço (`Ativo` por defeito), o seu estado (tipo de renovação, ação a realizar, etc.), a próxima data de efeito da renovação ou da rescisão, bem como um botão `...`{.action} dedicado às ações possíveis para cada serviço.
 
 ![Os meus serviços](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
@@ -139,6 +142,7 @@ A página **Gestão das minhas ofertas e serviços** contém uma tabela de gest�
 > Os seus critérios de filtragem serão, então, apresentados por cima do quadro. Eis um exemplo de filtro que permite apresentar os nomes de domínios cuja renovação é manual.
 >
 >![manageautomaticréwal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
+<!-- CP-STEPS-END:services-table -->
 
 <a name="actions"></a>
 
@@ -149,6 +153,7 @@ A página **Gestão das minhas ofertas e serviços** contém uma tabela de gest�
 > Dependendo do serviço, da sua elegibilidade para renovação manual, algumas ações poderão não estar disponíveis.
 >
 
+<!-- CP-STEPS-START:configure-renewal -->
 À direita de um serviço, clique no botão `...`{.action} na coluna `Açōes` e, a seguir, numa ação à sua escolha.
 
 ![menu ações](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
@@ -166,6 +171,8 @@ A página **Gestão das minhas ofertas e serviços** contém uma tabela de gest�
 >>
 >> Em função da escolha efetuada, serão indicadas as futuras datas de débito, o método de pagamento utilizado e a data de expiração do serviço.
 >>
+<!-- CP-STEPS-END:configure-renewal -->
+<!-- CP-STEPS-START:bring-forward-payment -->
 > **Antecipar o pagamento**
 >>
 >> ![antecipar o pagamento](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
@@ -186,6 +193,8 @@ A página **Gestão das minhas ofertas e serviços** contém uma tabela de gest�
 >> >
 >> > Para informação, o preço de certas opções só é apresentado quando é gerada a nota de encomenda de renovação.
 >>
+<!-- CP-STEPS-END:bring-forward-payment -->
+<!-- CP-STEPS-START:cancel-subscription -->
 > **Rescindir o meu serviço**
 >>
 >> ![Cancelar](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
@@ -196,6 +205,8 @@ A página **Gestão das minhas ofertas e serviços** contém uma tabela de gest�
 >>
 >> Para mais informações sobre a rescisão dos serviços OVHcloud, siga as instruções do guia "**[Como rescindir os seus serviços OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
 >>
+<!-- CP-STEPS-END:cancel-subscription -->
+<!-- CP-STEPS-START:renew-service -->
 > **Renovar o serviço**
 >>
 >> ![Renovar serviço](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
@@ -214,6 +225,8 @@ A página **Gestão das minhas ofertas e serviços** contém uma tabela de gest�
 >> >
 >> > Para informação, o preço de certas opções só é apresentado quando é gerada a nota de encomenda de renovação.
 >>
+<!-- CP-STEPS-END:renew-service -->
+<!-- CP-STEPS-START:pay-bill -->
 > **Pagar a minha fatura**
 >>
 >> ![Pagar uma fatura](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
@@ -225,11 +238,13 @@ A página **Gestão das minhas ofertas e serviços** contém uma tabela de gest�
 >>
 >> Basta então escolher a ação `Pagar a minha fatura`{.action} que lhe redirecionará para uma plataforma de pagamento online.
 >>
+<!-- CP-STEPS-END:pay-bill -->
 
 <a name="group-actions"></a>
 
 ### As ações agrupadas
 
+<!-- CP-STEPS-START:bulk-actions -->
 Tem a possibilidade de realizar ações agrupadas, selecionando vários serviços no quadro e clicando no botão `Ações`{.action}.
 
 ![ações agrupadas](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
@@ -243,6 +258,7 @@ O seguinte quadro especifica as ações agrupadas possíveis.
 |Ativar pagamento automático|Reative a renovação automática de vários serviços de uma só vez. Só os serviços elegíveis serão atualizados.|
 |Exportar em CSV|Exporte para um ficheiro csv o conjunto dos seus serviços e as suas datas de expiração.|
 |Alinhar as datas de renovação|Permite alinhar a data de expiração dos seus serviços com um dia de calendário. Apenas os serviços elegíveis poderão ser atualizados.|
+<!-- CP-STEPS-END:bulk-actions -->
 
 ## FAQ
 

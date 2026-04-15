@@ -79,6 +79,7 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 #### A partir da sua Área de Cliente OVHcloud
 
+<!-- CP-STEPS-START:change-password-cp -->
 - Na página [Segurança da conta](/links/control-panel/account-security), clique em `Alterar`{.action} à direita de "Palavra-passe".
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
@@ -93,10 +94,13 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 - Surge então uma mensagem que lhe indica o êxito da operação. Clique no botão `Continuar`{.action} na zona inferior desta mensagem para ser encaminhado para a página de identificação. Introduza então a sua ID de utilizador e a sua nova palavra-passe.
 
+<!-- CP-STEPS-END:change-password-cp -->
+
 <a name="lost-password"></a>
 
 #### Se não se lembrar da sua palavra-passe atual
 
+<!-- CP-STEPS-START:change-password-forgotten -->
 - Clique em `ID de utilizador ou palavra-passe esquecida?`{.action} ao aceder à janela de identificação da sua Área de Cliente OVHcloud.
 
 ![manage-ovh-password](images/account-password-modif-forgotten-step1.png){.thumbnail}
@@ -119,6 +123,8 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 >
 > O reconhecimento da alteração da palavra-passe leva automaticamente ao encerramento de todas as sessões ativas na sua conta OVHcloud.
 >
+
+<!-- CP-STEPS-END:change-password-forgotten -->
 
 ## Quer saber mais?
 

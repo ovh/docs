@@ -59,6 +59,7 @@ Faktura za usługę OVHcloud jest wysyłana po opłaceniu zamówienia lub odnowi
 
 #### Wyświetlanie i zarządzanie fakturami
 
+<!-- CP-STEPS-START:view-manage-bills -->
 Aby sprawdzić faktury, otwórz stronę [Faktury](/links/control-panel/billing-invoices).
 
 ![Płatności](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
@@ -113,14 +114,17 @@ Jeśli chcesz wyeksportować wszystkie faktury, użyj przycisków `Eksportuj wsz
 Jeśli chcesz wyeksportować tylko część, zaznacz odpowiednie pola w pierwszej kolumnie tabeli, aby wybrać interesujące Cię faktury. Dwa nowe działania, `Eksportuj zaznaczone elementy w formacie CSV`{.action} lub `Eksportuj zaznaczone elementy w formacie PDF`{.action}, będą dostępne w menu `Masowe operacje`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Zapłać faktury <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 Aby uregulować zaległe płatności, kliknij menu `Masowe operacje`{.action}, a następnie przycisk `Ureguluj saldo teraz`{.action}.
 
 ![Spłata zaległej należności](images/pay_debt.png){.thumbnail}
 
 Zostanie wówczas [utworzone zamówienie](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#zamowienie) do opłacania faktur. Po dokonaniu płatności saldo zostanie uregulowane.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Zlecenie anulowania faktury
 
@@ -129,11 +133,14 @@ Zostanie wówczas [utworzone zamówienie](/pages/account_and_service_management/
 > Aby zlecić rezygnację z usługi w dniu jej wygaśnięcia, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+<!-- CP-STEPS-START:request-cancellation-ticket -->
 Jeśli otrzymałeś fakturę, której nie uważasz za uzasadnioną i chcesz zażądać jej zwrotu lub dochodzić [prawa do odstąpienia od umowy](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w Panelu klienta OVHcloud, z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
 <br> Kliknij w prawym górnym rogu ekranu Twojej nazwy użytkownika, a następnie kliknij przycisk `Utwórz zgłoszenie`{.action}.
+<!-- CP-STEPS-END:request-cancellation-ticket -->
 
 ### Monitoruj płatności
 
+<!-- CP-STEPS-START:track-payments -->
 Zapoznaj się z historią płatności dokonanych w `Faktury`{.action}, a następnie `Informacje o płatnościach`{.action}. W ten sposób możesz powiązać fakturę z przypisaną do niej płatnością.
 
 ![Informacje o płatnościach](images/payment_tracking.png){.thumbnail}
@@ -144,6 +151,7 @@ W tej sekcji możesz również wyeksportować dokumenty potwierdzające płatno�
 >
 > Jeśli zauważysz różnicę między płatnością a kwotą na fakturze, oznacza to, że otrzymałeś zwrot płatności lub rekompensatę, która automatycznie pomniejszyła kwotę do zapłaty.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Sprawdź również
 

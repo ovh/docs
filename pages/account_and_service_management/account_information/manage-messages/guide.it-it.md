@@ -27,12 +27,15 @@ Al momento della creazione del tuo account OVHcloud, hai specificato un indirizz
 
 ### Le mie comunicazioni
 
+<!-- CP-STEPS-START:my-messages -->
 Dalla scheda `Le mie comunicazioni`{.action}, puoi trovare tutti i messaggi che sono stati inviati al tuo indirizzo email di contatto. Nella parte in alto a destra del tableau, puoi attivare un filtro per classificare i tuoi messaggi in base alla priorità, data e categoria.
 
 ![my messages](images/messages-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:my-messages -->
 
 ### Contatti
 
+<!-- CP-STEPS-START:contacts -->
 Dalla scheda `Contatti`{.action}, puoi trovare l'indirizzo email di riferimento del tuo account OVHcloud, che non può essere rimosso o modificato direttamente dallo spazio client.
 
 > [!primary]
@@ -49,9 +52,11 @@ Oltre al tuo contatto `predefinito`, puoi aggiungere nuovi indirizzi email di co
     - `Eliminare`{.action}: Permette di eliminare questo contatto.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:contacts -->
 
 ### Parametri di invio
 
+<!-- CP-STEPS-START:delivery-settings -->
 Dalla scheda `Parametri di invio`{.action}, puoi creare delle regole per organizzare la distribuzione dei messaggi verso i tuoi indirizzi email di contatto.
 
 - **(1)**: Clicca sul pulsante `Creare una regola`{.action} per definire quali contatti riceveranno le comunicazioni, in base alle categorie e ai livelli di priorità che selezioni.
@@ -74,6 +79,7 @@ Puoi anche creare una regola che comprende più condizioni che saranno applicate
 Per default, se una condizione si applica, il processo si arresta. Se desideri che il processo continui ad applicare le condizioni successive, attiva il pulsante `E continuare il trattamento delle regole`{.action} **(2)** sotto la regola che hai configurato.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:delivery-settings -->
 
 ## Per saperne di più
 

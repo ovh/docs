@@ -27,12 +27,15 @@ Podczas zakładania konta OVHcloud podałeś adres e-mail kontaktowy. Jeśli chc
 
 ### Wiadomości
 
+<!-- CP-STEPS-START:my-messages -->
 W zakładce `Wiadomości`{.action} znajdziesz wszystkie wiadomości wysłane na Twój adres e-mail kontaktowy. W prawym górnym rogu tabeli możesz włączyć filtr, aby posortować wiadomości według priorytetu, daty i kategorii.
 
 ![my messages](images/messages-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:my-messages -->
 
 ### Kontakty
 
+<!-- CP-STEPS-START:contacts -->
 W zakładce `Kontakty`{.action} znajdziesz główny adres e-mail konta OVHcloud, który nie może zostać usunięty ani zmodyfikowany z poziomu panelu klienta.
 
 > [!primary]
@@ -49,9 +52,11 @@ Oprócz kontaktu `domyślny`, możesz dodać nowe adresy e-mail kontaktowe do sw
     - `Usuń`{.action}: Pozwala usunąć ten kontakt.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:contacts -->
 
 ### Ustawienia wysyłki wiadomości
 
+<!-- CP-STEPS-START:delivery-settings -->
 W zakładce `Ustawienia wysyłki wiadomości`{.action} możesz tworzyć reguły, aby zorganizować dystrybucję wiadomości do swoich adresów e-mail kontaktowych.
 
 - **(1)**: Kliknij przycisk `Utwórz regułę`{.action}, aby określić, którzy kontakt będzie otrzymywał komunikaty, w zależności od kategorii i poziomów priorytetu, które wybierzesz.
@@ -74,6 +79,7 @@ Możesz również utworzyć regułę zawierającą wiele warunków, które zosta
 Domyślnie, jeśli warunek zostanie spełniony, proces się zatrzyma. Jeśli chcesz, aby proces kontynuował stosowanie kolejnych warunków, włącz przycisk `I kontynuuj przetwarzanie reguł`{.action} **(2)** pod regułą, którą skonfigurowałeś.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:delivery-settings -->
 
 ## Sprawdź również
 
