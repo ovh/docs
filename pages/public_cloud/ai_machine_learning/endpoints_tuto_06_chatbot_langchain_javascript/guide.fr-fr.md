@@ -93,7 +93,7 @@ async function chatCompletion(question) {
     ["human", "{question}"]
   ]);
 
-  // Use Mixtral-8x22B as LLM
+  // Use GPT-OSS 120b as LLM
   const model = new ChatMistralAI({
     modelName: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     model: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
@@ -164,7 +164,7 @@ async function chatCompletion(question) {
     ["human", "{question}"]
   ]);
 
-  // Use Mixtral-8x22B as LLM
+  // Use GPT-OSS 120b as LLM
   const model = new ChatMistralAI({
     modelName: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     model: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,

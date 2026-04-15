@@ -93,7 +93,7 @@ Just start typing in your editor. The autocomplete model will complete code as y
 
 ## Conclusion
 
-By using Continue and AI Endpoints, you now have access to a fully customizable code assistant, support for cutting-edge open-source large language models such as Qwen, Mixtral, and LLaMA 3, and the ability to manage your own configuration and resources on AI Endpoints.
+By using Continue and AI Endpoints, you now have access to a fully customizable code assistant, support for cutting-edge open-source large language models such as Qwen, GPT-OSS 120b and LLaMA 3, and the ability to manage your own configuration and resources on AI Endpoints.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
