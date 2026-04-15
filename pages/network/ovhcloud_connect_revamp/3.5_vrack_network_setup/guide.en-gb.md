@@ -1,24 +1,26 @@
 ---
 title: 'OVHcloud Connect - Set up vRack networking'
-excerpt: 'Create a virtual router in your vRack and configure data centre subnets for OVHcloud Connect L3'
-updated: 2026-04-14
+excerpt: 'Create a data centre configuration for OVHcloud Connect L3 and understand IP addressing and VRRP'
+updated: 2026-04-15
 ---
 
 ## Objective
 
-Before configuring OVHcloud Connect L3 routing (BGP or static), you must prepare the **vRack network** that will carry private traffic between your infrastructure and OVHcloud data centres.
+Before configuring OVHcloud Connect L3 routing (BGP or static), you must prepare the **data centre configuration** that creates a virtual router inside the vRack, connecting your OVHcloud Connect link to the OVHcloud data centre(s) where your services run.
 
 **This guide explains how to:**
 
 - Create a **data centre configuration** (virtual router) inside your vRack
+- Understand the **IP addressing rules** for the data centre subnet (reserved addresses, VRRP)
 - Understand the **limitations** of this router (no VLAN, no trunk)
-- Plan and configure **private subnets** per Availability Zone (AZ)
 
 > [!primary]
-> This guide covers **vRack-side networking only**. For the OVHcloud Connect-specific L3 configuration (PoP BGP session, route exchange), see:
+> This guide covers **data centre configuration only**. For the OVHcloud Connect-specific L3 configuration (PoP BGP session, route exchange), see:
 >
 > - [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.6_occ_l3_bgp)
 > - [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_static)
+>
+> For general vRack networking (VLANs, private IP addressing, compatible products), see the [vRack service presentation](/pages/network/vrack/global).
 
 ## Requirements
 
@@ -39,7 +41,59 @@ Your Network ──── [ PoP BGP/Static ] ──── [ vRack Router ] ─�
                     (OCC-specific)          (this guide)
 ```
 
-The **data centre configuration** creates a virtual router inside the vRack that connects your OVHcloud Connect link to the OVHcloud data centre(s) where your services run. You must create one data centre configuration per data centre you want to reach.
+The **data centre configuration** creates an L3 routing instance inside the vRack. This routing instance is composed of two physical OVHcloud devices (labelled "A" and "B") for redundancy. You must create one data centre configuration per data centre you want to reach.
+
+### Data centre subnet — IP addressing rules
+
+When you create a data centre configuration, you assign a **private subnet** to it. Within this subnet, several IP addresses are reserved by OVHcloud:
+
+| IP address | Role |
+|---|---|
+| First address (e.g. `.0`) | Network address |
+| Second address (e.g. `.1`) | OVHcloud virtual router (VRRP gateway) |
+| Third address (e.g. `.2`) | OVHcloud router A |
+| Fourth address (e.g. `.3`) | OVHcloud router B |
+| Remaining addresses | Available for your services |
+
+**Example with subnet `172.16.1.0/28`:**
+
+| IP address | Role |
+|---|---|
+| `172.16.1.0` | Network address |
+| `172.16.1.1` | OVHcloud virtual router (VRRP) |
+| `172.16.1.2` | OVHcloud router A |
+| `172.16.1.3` | OVHcloud router B |
+| `172.16.1.4` – `172.16.1.14` | Available for your services |
+| `172.16.1.15` | Broadcast address |
+
+> [!warning]
+> The API enforces a minimum subnet size of **/28**. Do not use the first four addresses — they are reserved by OVHcloud as described above.
+
+**Subnet planning guidelines:**
+
+| Guideline | Why |
+|---|---|
+| **Minimum /28 per data centre** | The API enforces this minimum. |
+| **Avoid IP overlaps** | Subnets must not overlap with your on-premises network, WAN, or other cloud providers. |
+| **Use private (RFC 1918) addresses** | Use `10.0.0.0/8`, `172.16.0.0/12`, or `192.168.0.0/16` ranges. |
+| **Use different subnets per data centre** | One subnet cannot be stretched between two data centres. |
+
+### VRRP — Gateway redundancy
+
+The OVHcloud data centre routing instance uses **VRRP (Virtual Router Redundancy Protocol)** to provide gateway redundancy between devices A and B.
+
+| Property | Detail |
+|---|---|
+| **Virtual IP** | The second address of the data centre subnet (e.g. `172.16.1.1`) |
+| **VRID** | Assigned by OVHcloud (not configurable) |
+| **Master device** | Device A by default |
+| **Instances per data centre** | One VRRP instance per data centre configuration |
+| **Interaction with BGP** | Enabling BGP on the data centre endpoint **disables** VRRP |
+
+> [!primary]
+> When you use **static routing** at the data centre level (extra configuration type `network`), VRRP is active and provides automatic failover between devices A and B. Your services should point their default gateway to the VRRP virtual IP.
+>
+> When you use **BGP** at the data centre level (extra configuration type `bgp`), VRRP is disabled. BGP handles failover instead. You must establish a BGP session with **both** device A and device B (up to 4 BGP peers per data centre).
 
 ### vRack router limitations
 
@@ -91,29 +145,7 @@ for dc_id in datacenters:
 
 Only data centres where `available` is `true` can receive a new configuration.
 
-### Step 2 — Plan your subnets
-
-Each data centre configuration requires a **private subnet** of at least `/28` (16 IP addresses). This subnet is used for routing between the OVHcloud Connect link and the services in that data centre.
-
-| Guideline | Why |
-|---|---|
-| **Minimum /28 per data centre** | The API enforces a minimum subnet size of /28. |
-| **Avoid IP overlaps** | Subnets must not overlap with your on-premises network, WAN, or other cloud providers. |
-| **Use private (RFC 1918) addresses** | Use `10.0.0.0/8`, `172.16.0.0/12`, or `192.168.0.0/16` ranges. |
-| **Leave room for growth** | A /24 per data centre per workload is a good starting point. |
-| **Use different subnets per AZ** | Avoid stretching a single subnet across Availability Zones. |
-| **Document your IP plan** | Map subnets to data centres and workloads. |
-
-**Example IP plan:**
-
-| Subnet | Data centre | Purpose |
-|---|---|---|
-| 172.16.1.0/24 | GRA-DC1 (AZ 1) | Production servers |
-| 172.16.2.0/24 | GRA-DC2 (AZ 2) | Production servers (redundant) |
-| 172.16.10.0/24 | GRA-DC1 (AZ 1) | Management / monitoring |
-| 10.0.0.0/16 | — | Your on-premises network (not used in OVHcloud) |
-
-### Step 3 — Create the data centre configuration
+### Step 2 — Create the data centre configuration
 
 The data centre configuration creates a virtual router in the vRack for the specified data centre. You need the `popId` from your existing PoP configuration.
 
@@ -137,7 +169,7 @@ Create the data centre configuration:
 |---|---|---|---|
 | `datacenterId` | long | Yes | ID of the data centre (from Step 1) |
 | `ovhBgpArea` | long | No | OVHcloud private AS number for the data centre BGP session (assigned automatically if omitted) |
-| `subnet` | ipv4Block | No | Private subnet for the data centre (/28 minimum). Example: `172.16.1.0/24` |
+| `subnet` | ipv4Block | No | Private subnet for the data centre (/28 minimum). Example: `172.16.1.0/28` |
 
 **Example request:**
 
@@ -153,7 +185,7 @@ pop_id = 5678  # Your PoP configuration ID
 result = client.post(
     f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter",
     datacenterId=1234,
-    subnet="172.16.1.0/24"
+    subnet="172.16.1.0/28"
 )
 
 print("Task created:", result)
@@ -172,7 +204,7 @@ print("Task created:", result)
 
 The `resourceId` is the ID of the new data centre configuration. The task progresses through `todo` → `doing` → `done`.
 
-### Step 4 — Verify the configuration
+### Step 3 — Verify the configuration
 
 Once the task completes, verify the data centre configuration:
 
@@ -194,7 +226,7 @@ print("Data centre config:", dc_config)
 {
   "id": 3456,
   "datacenterId": 1234,
-  "subnet": "172.16.1.0/24",
+  "subnet": "172.16.1.0/28",
   "ovhBgpArea": 65501,
   "status": "active"
 }
@@ -207,7 +239,7 @@ Monitor task progress with:
 > @api {v1} GET /ovhCloudConnect/{serviceName}/task/{taskId}
 >
 
-### Step 5 — Repeat for additional data centres (optional)
+### Step 4 — Repeat for additional data centres (optional)
 
 For a **multi-AZ resilient setup**, create a data centre configuration for each AZ:
 
@@ -216,16 +248,19 @@ For a **multi-AZ resilient setup**, create a data centre configuration for each 
 client.post(
     f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter",
     datacenterId=1234,
-    subnet="172.16.1.0/24"
+    subnet="172.16.1.0/28"
 )
 
 # AZ 2
 client.post(
     f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter",
     datacenterId=1235,
-    subnet="172.16.2.0/24"
+    subnet="172.16.2.0/28"
 )
 ```
+
+> [!primary]
+> One subnet cannot be stretched between two data centres. Each data centre configuration must use a distinct subnet.
 
 For more information, refer to our guide on [Multi-AZ](/pages/network/ovhcloud_connect_revamp/1.5_multi_az).
 
@@ -247,7 +282,7 @@ client.delete(
 
 ## Go further
 
-Now that your vRack network is prepared, configure the OVHcloud Connect L3 routing:
+Now that your data centre configuration is ready, configure the OVHcloud Connect L3 routing:
 
 - [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.6_occ_l3_bgp)
 - [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_static)

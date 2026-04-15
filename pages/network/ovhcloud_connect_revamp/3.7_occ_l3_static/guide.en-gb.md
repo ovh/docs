@@ -137,6 +137,9 @@ From this response:
 
 After the PoP configuration and a [data centre configuration](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup), create a **network extra configuration** to define static routes within the data centre.
 
+> [!primary]
+> With static routing, **VRRP remains active** on the data centre endpoint. OVHcloud devices A and B share a virtual IP (the second address of the data centre subnet, e.g. `172.16.1.1`). Point your services' default gateway to this VRRP virtual IP for automatic failover between devices.
+
 > [!api]
 >
 > @api {v1} POST /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra

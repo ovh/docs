@@ -151,6 +151,9 @@ print(f"BGP status: {status['status']}, Last change: {status['lastChange']}")
 
 After the PoP configuration and a [data centre configuration](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup), create a **BGP extra configuration** to enable BGP route distribution within the data centre.
 
+> [!warning]
+> Enabling BGP at the data centre level **disables VRRP** on that data centre configuration. BGP handles failover instead. You must establish a BGP session with **both** OVHcloud device A and device B (up to 4 BGP peers per data centre). By default, BFD (Bidirectional Forwarding Detection) is activated on all data centre BGP sessions — enabling BFD on your side as well is strongly recommended for faster convergence.
+
 > [!api]
 >
 > @api {v1} POST /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
