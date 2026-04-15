@@ -52,9 +52,11 @@ Ensure your email address is always **up to date, accessible and secured**. Emai
 > Add a **backup email** to your personal information to prevent any loss of access to your [OVHcloud Control Panel](/links/control-panel/account-profile).
 >
 
+<!-- CP-STEPS-START:view-my-messages -->
 Emails sent by OVHcloud are also visible on the [My messages](/links/control-panel/account-messages) page.
 
 ![service_emails](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
+<!-- CP-STEPS-END:view-my-messages -->
 
 #### Automatic renewal
 

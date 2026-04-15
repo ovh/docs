@@ -254,9 +254,11 @@ Un délai de 30 jours peut être observé avant la suppression effective des ser
 >
 > La suppression d'un groupe de téléphonie entraîne la résiliation de tous les services qu'il contient.
 
+<!-- CP-STEPS-START:voip-group-delete -->
 1. Ouvrez [VoIP & Fax](/links/control-panel/telecom-voip-fax) dans l'espace client OVHcloud et sélectionnez le groupe de téléphonie concerné.
 1. Cliquez sur l'onglet `Administration`{.action} puis sur `Supprimer le groupe`{.action}. Validez en cliquant sur le bouton de suppression du groupe.
 1. La suppression d'un groupe de téléphonie entraîne la résiliation de tous les services qu'il contient à la date de la prochaine facturation. Créez un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander une application immédiate de la résiliation.
+<!-- CP-STEPS-END:voip-group-delete -->
 
 ///
 

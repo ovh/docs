@@ -68,11 +68,13 @@ On the [My payment methods](/links/control-panel/billing-payment-methods) page, 
 
 ### How do I update my payment method?
 
+<!-- CP-STEPS-START:update-payment-method -->
 On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can add or delete a payment method (bank card, PayPal or SEPA direct debit).
 
 If you request a SEPA direct debit, you will receive an email within 24 to 48 hours via the email address on your OVHcloud account, with a link for the electronic signature of your direct debit mandate. Warning: the owner of the bank account must be the same as the owner of the OVHcloud account.
 
 Once you have received your order from us, if your mandate has been approved, you can then use this new payment method.
+<!-- CP-STEPS-END:update-payment-method -->
 
 #### Tips and tricks
 
