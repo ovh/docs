@@ -96,7 +96,9 @@ Dans la dernière partie apparaissent deux listes, `Available LAN Interfaces` et
 
 Une fois les interfaces souhaitées déplacées dans la section `Selected LAN Interfaces`, cliquez sur `OK`{.action} pour valider votre choix. Le modem va alors déplacer les interfaces dans le groupe `OverTheBox`. Un délai peut être nécessaire avant que ne s'affichent les deux groupes d'interfaces `Default` et `OverTheBox`.
 
+<!-- CP-STEPS-START:type-connexion-espace-client -->
 ![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step3-3-2022.png){.thumbnail}
+<!-- CP-STEPS-END:type-connexion-espace-client -->
 
 ### Étape 4 : modifier la gestion du DHCP pour le groupe OverTheBox
 

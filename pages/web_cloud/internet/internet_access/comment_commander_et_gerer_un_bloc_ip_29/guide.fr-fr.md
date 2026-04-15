@@ -241,7 +241,9 @@ Toujours dans le menu `Network Settings`{.action}, sélectionnez le menu `Broadb
 
 En cas de doute, le type de votre connexion est disponible sur l’espace client OVHcloud.
 
+<!-- CP-STEPS-START:type-connexion-espace-client -->
 ![blocip](images/blocip-step10-2022.png){.thumbnail}
+<!-- CP-STEPS-END:type-connexion-espace-client -->
 
 Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature ». Désactivez le curseur à droite de `NAT`{.action}. Cliquez enfin sur le bouton `Apply`{.action}.
 
