@@ -29,27 +29,67 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 
 ## En pratique
 
-> [!primary]
->
-> Le service File Storage peut être géré via l’espace client OVHcloud, les API OVHcloud, la CLI OpenStack avec le plugin Manila et Terraform. Certaines fonctionnalités avancées ne sont pas encore disponibles depuis l’espace client.
->
-
 > [!tabs]
 > Via l'espace client OVHcloud
+>> > [!primary]
+>> >
+>> > Certaines fonctionnalités du service File Storage, comme les snapshots, ne sont pas encore disponibles depuis l'espace client OVHcloud. Vous pouvez utiliser les API OVHcloud, la CLI OpenStack ou Manila CSI pour ces fonctionnalités.
+>> >
+>>
+>> **1\. Créer un share**
+>>
 >> Dans le menu latéral gauche, accédez à `Storage & backup`{.action} > `File Storage`{.action}, puis cliquez sur `Créer un share`{.action}.
 >>
 >> Renseignez le nom du share, puis appliquez un filtre selon le mode de déploiement afin de sélectionner la région cible.
 >>
 >> Définissez le niveau de performance et la capacité (en Gio), associez un réseau privé, puis cliquez sur `Valider`{.action} pour finaliser la création du share.
 >>
+>> **2\. Autoriser une machine virtuelle cliente (ACL)**
+>>
+>> Une fois le share créé, cliquez dessus pour ouvrir son tableau de bord, puis accédez à l’onglet `Liste de contrôle d’accès (ACL)`{.action}.
+>>
+>> Cliquez sur `Ajouter un nouvel accès`{.action}, renseignez l’adresse IP privée de la machine virtuelle cliente ou une plage CIDR (par exemple, `10.0.0.123` ou `10.1.0.0/24`), puis sélectionnez les droits d’accès :
+>>
+>> - `Lecture seule`{.action} : accès en lecture uniquement
+>> - `Lecture et écriture`{.action} : accès complet en lecture/écriture
+>>
 >> > [!primary]
 >> >
->> > Certaines fonctionnalités avancées du service File Storage, comme la gestion complète des shares et l’autorisation des machines clientes, ne sont pas encore accessibles depuis l’espace client OVHcloud.
->> >
->> > Pour l’instant, vous devez utiliser les API OVHcloud, la CLI OpenStack ou Manila CSI pour poursuivre la configuration et le montage des shares. Ces fonctionnalités seront intégrées à l'espace client OVHcloud dans une prochaine version.
+>> > File Storage ne peut être utilisé qu’avec des adresses IP OVHcloud (Public Cloud, Managed Kubernetes Service).
 >> >
 >>
-> Via l'API OVHcloud
+>> Pour supprimer une règle d’accès, cliquez sur l’icône corbeille à droite de la ligne concernée.
+>>
+>> **3\. Monter le share sur votre machine virtuelle cliente**
+>>
+>> Récupérez le chemin de montage (affiché sous le label `Chemin de montage` dans l’onglet `Informations générales`{.action} de votre share), puis connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS :
+>>
+>> ```bash
+>> sudo apt update && sudo apt install -y nfs-common
+>> ```
+>>
+>> Créez un point de montage et montez le share :
+>>
+>> ```bash
+>> sudo mkdir -p /mnt/share
+>> sudo mount -t nfs4 <NFS_MOUNT_PATH> /mnt/share
+>> ```
+>>
+>> Vérifiez le montage :
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Enregistrez la configuration de montage dans fstab pour faciliter le remontage :
+>>
+>> ```bash
+>> echo "<NFS_MOUNT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
+>>
+>> Cela vous permet de remonter le share NFS après un redémarrage avec la commande `mount /mnt/share`.
+>>
+> Via l’API OVHcloud
 >> **1\. Créer un share**
 >>
 >> Identifiez votre réseau privé et votre sous-réseau.
@@ -244,7 +284,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{id}/acl/{aclId}
 >> >
 >>
->> **3\. Montez le share sur votre machine virtuelle cliente**
+>> **3\. Monter le share sur votre machine virtuelle cliente**
 >>
 >> Connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS nécessaires pour monter le share :
 >>
@@ -255,7 +295,8 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> Créez un point de montage et montez le share :
 >>
 >> ```bash
->> sudo mkdir -p /mnt/share && sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
+>> sudo mkdir -p /mnt/share
+>> sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
 >> ```
 >>
 >> Vérifiez le montage :
@@ -264,13 +305,13 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> df -h /mnt/share
 >> ```
 >>
->> Rendez le montage persistant après les redémarrages :
+>> Enregistrez la configuration de montage dans fstab pour faciliter le remontage :
 >>
 >> ```bash
->> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> echo "10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
 >> ```
 >>
->> Cela garantit que le share NFS est automatiquement remonté après le redémarrage de la VM.
+>> Cela vous permet de remonter le share NFS après un redémarrage avec la commande `mount /mnt/share`.
 >>
 >> **4\. Vérifier la capacité et l'utilisation**
 >>
@@ -454,9 +495,9 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> > Remarque : Ce chemin d’export est utilisé pour monter le share sur votre VM cliente.
 >> >
 >>
->> **7\. Monter le share sur votre VM cliente**
+>> **7\. Monter le share sur votre machine virtuelle cliente**
 >>
->> Connectez-vous à votre VM et installez les utilitaires NFS :
+>> Connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS nécessaires pour monter le share :
 >>
 >> ```bash
 >> sudo apt update && sudo apt install -y nfs-common
@@ -475,20 +516,23 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> df -h /mnt/share
 >> ```
 >>
->> > [!primary]
->> >
->> > Remarque : Remplacez le chemin d’export par celui récupéré pour votre share.
->> >
+>> Enregistrez la configuration de montage dans fstab pour faciliter le remontage :
+>>
+>> ```bash
+>> echo "10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
+>>
+>> Cela vous permet de remonter le share NFS après un redémarrage avec la commande `mount /mnt/share`.
 >>
 >> **8\. Vérifier la capacité et l’utilisation**
 >>
->> Affichez l’espace disponible sur le share monté :
+>> Une fois le share NFS monté, vérifiez son espace disponible et son utilisation :
 >>
 >> ```bash
 >> df -h /mnt/share
 >> ```
 >>
->> Exemple de sortie :
+>> Exemple de résultat :
 >>
 >> ```bash
 >> Filesystem                          Size  Used  Avail Use% Mounted on
@@ -589,7 +633,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >>
 >> Préparez votre environnement pour utiliser l'API OpenStack en installant python-openstackclient, en suivant [ce guide de préparation de l'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 >>
->> Installez le client Manila pour gérer les partages du service File Storage :
+>> Installez le client Manila pour gérer les shares du service File Storage :
 >>
 >> ```bash
 >> pip install python-manilaclient
@@ -1168,9 +1212,9 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >>
 >> Cette ressource crée un réseau partagé dans OpenStack, l'associant à votre réseau privé et sous-réseau existants. Elle est nécessaire pour provisionner et gérer des systèmes de fichiers partagés.
 >>
->> **5\. Créer un partage NFS**
+>> **5\. Créer un share NFS**
 >>
->> Ajoutez la ressource suivante à votre `main.tf` pour créer un partage NFS sur votre service File Storage :
+>> Ajoutez la ressource suivante à votre `main.tf` pour créer un share NFS sur votre service File Storage :
 >>
 >> ```bash
 >> vim main.tf
@@ -1186,11 +1230,11 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> }
 >> ```
 >>
->> Cette ressource provisionne un partage NFS dans OpenStack, lié au réseau partagé précédemment créé. Ajustez la `size` et `share_type` selon vos besoins.
+>> Cette ressource provisionne un share NFS dans OpenStack, lié au réseau partagé précédemment créé. Ajustez la `size` et `share_type` selon vos besoins.
 >>
 >> **6\. Autoriser une machine virtuelle cliente**
 >>
->> Assurez-vous que votre machine virtuelle cliente est connectée au même réseau privé que votre partage.
+>> Assurez-vous que votre machine virtuelle cliente est connectée au même réseau privé que votre share.
 >>
 >> Récupérez l'adresse IP privée de la machine virtuelle :
 >>
@@ -1204,7 +1248,7 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> {'my-private-net': ['10.1.0.123', '57.123.88.111']}
 >> ```
 >>
->> Utilisez l'adresse IP privée (par exemple : `10.1.0.123`) pour accorder l'accès au partage NFS :
+>> Utilisez l'adresse IP privée (par exemple : `10.1.0.123`) pour accorder l'accès au share NFS :
 >>
 >> ```bash
 >> resource "openstack_sharedfilesystem_share_access_v2" "share_access" {
@@ -1216,11 +1260,11 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> }
 >> ```
 >>
->> Cette ressource autorise la machine virtuelle cliente spécifiée à accéder au partage NFS avec des permissions en lecture / écriture.
+>> Cette ressource autorise la machine virtuelle cliente spécifiée à accéder au share NFS avec des permissions en lecture / écriture.
 >>
 >> **7\. Récupérer le chemin d'exportation**
 >>
->> Ajoutez le bloc de sortie suivant à votre `main.tf` pour récupérer le chemin d'exportation du partage NFS :
+>> Ajoutez le bloc de sortie suivant à votre `main.tf` pour récupérer le chemin d'exportation du share NFS :
 >>
 >> ```bash
 >> output "export_path" {
@@ -1228,24 +1272,27 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> }
 >> ```
 >>
->> Cette sortie fournit le chemin d'exportation NFS, utilisable par les machines virtuelles clientes pour monter le partage.
+>> Cette sortie fournit le chemin d'exportation NFS, utilisable par les machines virtuelles clientes pour monter le share.
 >>
->> **8\. Monter le partage sur votre machine virtuelle cliente**
+>> **8\. Monter le share sur votre machine virtuelle cliente**
 >>
->> Connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS nécessaires :
+>> Connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS nécessaires pour monter le share :
 >>
 >> ```bash
 >> sudo apt update && sudo apt install -y nfs-common
 >> ```
 >>
->> Créez un point de montage et montez le partage :
+>> Créez un point de montage et montez le share :
 >>
 >> ```bash
 >> sudo mkdir -p /mnt/share
 >> sudo mount -t nfs4 <NFS_EXPORT_PATH> /mnt/share
 >> ```
 >>
->> Remplacez <NFS_EXPORT_PATH> par le chemin d'exportation récupéré via Terraform (par exemple : `10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef`).
+>> > [!primary]
+>> >
+>> > Remplacez `<NFS_EXPORT_PATH>` par le chemin d'exportation récupéré via Terraform (par exemple : `10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef`).
+>> >
 >>
 >> Vérifiez le montage :
 >>
@@ -1253,30 +1300,30 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> df -h /mnt/share
 >> ```
 >>
->> Rendez le montage persistant après les redémarrages :
+>> Enregistrez la configuration de montage dans fstab pour faciliter le remontage :
 >>
 >> ```bash
 >> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
 >> ```
 >>
->> Cela garantit que votre partage NFS est automatiquement remonté après les redémarrages de la machine virtuelle.
+>> Cela vous permet de remonter le share NFS après un redémarrage avec la commande `mount /mnt/share`.
 >>
 >> **9\. Vérifier la capacité et l'utilisation**
 >>
->> Une fois le partage NFS monté, vérifiez son espace disponible et son utilisation :
+>> Une fois le share NFS monté, vérifiez son espace disponible et son utilisation :
 >>
 >> ```bash
 >> df -h /mnt/share
 >> ```
 >>
->> Exemple de sortie :
+>> Exemple de résultat :
 >>
 >> ```bash
 >> Filesystem                          Size  Used  Avail Use% Mounted on
 >> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
 >> ```
 >>
->> Cette commande affiche la taille totale, l'espace utilisé et l'espace disponible sur votre partage NFS monté.
+>> Cette commande affiche la taille totale, l'espace utilisé et l'espace disponible sur votre share NFS monté.
 >>
 
 ## Aller plus loin
