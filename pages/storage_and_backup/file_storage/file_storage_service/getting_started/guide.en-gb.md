@@ -1,7 +1,7 @@
 ---
 title: File Storage Service - Getting started
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
-updated: 2026-04-07
+updated: 2026-04-16
 ---
 
 ## Objective
@@ -16,20 +16,31 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 > [!primary]
 >
-> Currently, the File Storage Service can only be accessed and managed via OVHcloud API, OpenStack CLI with the Manila plugin and Terraform. Other interfaces will be supported in the future.
+> The File Storage Service can be managed via the OVHcloud Control Panel, OVHcloud API, OpenStack CLI with the Manila plugin, and Terraform. Some advanced features are not yet available in the Control Panel.
 >
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Access `File Storage`{.action} from the navigation bar, then click `Create a share`{.action}.
+>> In the left sidebar, go to `Storage & backup`{.action} > `File Storage`{.action}, then click `Create a share`{.action}.
 >>
 >> Enter the share name, then filter by deployment mode to select the target region.
 >>
->> Set the performance level and size (in GiB), `associate`{.action} a private network, and click `Validate`{.action} to complete the share creation.
+>> Set the performance level and size (in GiB), associate a private network, and click `Confirm`{.action} to complete the share creation.
 >>
 >> > [!primary]
 >> >
@@ -480,7 +491,6 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> Example output:
 >>
 >> ```bash
->> Example:
 >> Filesystem                          Size  Used  Avail Use% Mounted on
 >> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
 >> ```
@@ -839,7 +849,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> ```
 >>
 >> - Update the `parameter.shareNetworkID` value with the shared network identifier.
->> - update the `parameter.nfs-shareClient` value with the subnet CIDR defined during cluster creation.
+>> - Update the `parameter.nfs-shareClient` value with the subnet CIDR defined during cluster creation.
 >>
 >> Create the dynamic StorageClass, applying the StorageClass to your cluster:
 >>

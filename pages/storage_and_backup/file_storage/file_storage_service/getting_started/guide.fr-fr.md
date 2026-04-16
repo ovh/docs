@@ -1,7 +1,7 @@
 ---
 title: "File Storage Service - Premiers pas"
 excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de shares, l’accès des clients et le montage sur vos machines virtuelles."
-updated: 2026-04-07
+updated: 2026-04-16
 ---
 
 ## Objectif
@@ -27,21 +27,20 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-
 ## En pratique
 
 > [!primary]
 >
-> Actuellement, le service File Storage ne peut être consulté et géré que via les API OVHcloud et la CLI OpenStack avec le plugin Manila. D’autres interfaces seront disponibles à l’avenir.
+> Le service File Storage peut être géré via l’espace client OVHcloud, les API OVHcloud, la CLI OpenStack avec le plugin Manila et Terraform. Certaines fonctionnalités avancées ne sont pas encore disponibles depuis l’espace client.
 >
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Accédez à `File Storage`{.action} depuis la barre de navigation, puis cliquez sur `Créer un share`{.action}.
+>> Dans le menu latéral gauche, accédez à `Storage & backup`{.action} > `File Storage`{.action}, puis cliquez sur `Créer un share`{.action}.
 >>
 >> Renseignez le nom du share, puis appliquez un filtre selon le mode de déploiement afin de sélectionner la région cible.
 >>
->> Définissez le niveau de performance et la capacité (en Gio), `associez`{.action} un réseau privé, puis cliquez sur `Valider`{.action} pour finaliser la création du share.
+>> Définissez le niveau de performance et la capacité (en Gio), associez un réseau privé, puis cliquez sur `Valider`{.action} pour finaliser la création du share.
 >>
 >> > [!primary]
 >> >
@@ -492,7 +491,6 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >> Exemple de sortie :
 >>
 >> ```bash
->> Example:
 >> Filesystem                          Size  Used  Avail Use% Mounted on
 >> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
 >> ```
