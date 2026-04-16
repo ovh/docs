@@ -19,7 +19,7 @@ updated: 2026-04-03
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting), auf dem Sie 1-Klick-Module installieren können (ausgenommen [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m)).
-- Sie haben ein 1-Klick-Modul auf Ihrem Hosting erstellt (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
+- Sie haben ein 1-Klick-Modul auf Ihrem Hosting erstellt (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in unserer Anleitung "[Installation Ihrer Website mit 1-Klick-Modulen (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)").
 
 <!-- CP-NAV-START:web-hosting -->
 ---
@@ -105,7 +105,7 @@ Wir empfehlen Ihnen jedoch dringend, die Operation mithilfe der vom Herausgeber 
 
 > [!warning]
 >
-> Daten-Backups sind ein Bestandteil der Operationen, die für die [Absicherung Ihrer Webseiten](/pages/web_cloud/web_hosting/secure_your_website) notwendig sind. Wir empfehlen Ihnen, Backups Ihrer Daten regelmäßig auf einen lokalen Datenträger wie einen USB-Stick oder eine externe Festplatte zu [importieren](/pages/web_cloud/web_hosting/exporter-son-site-web).
+> Daten-Backups sind ein Bestandteil der Operationen, die für die [Absicherung Ihrer Webseiten](/pages/web_cloud/web_hosting/secure_your_website) notwendig sind. Wir empfehlen Ihnen, Backups Ihrer Daten regelmäßig und **vor jeder Löschung** auf einen lokalen Datenträger wie einen USB-Stick oder eine externe Festplatte zu importieren, indem Sie den Anweisungen in unserer Anleitung "[Ihre Webseite exportieren](/pages/web_cloud/web_hosting/exporter-son-site-web)" folgen.
 >
 
 #### 1 - Die zu Ihrem Modul gehörige Datenbank identifizieren <a name="step1"></a>
@@ -137,7 +137,7 @@ Loggen Sie sich anschließend in den [FTP-Bereich](/pages/web_cloud/web_hosting/
 
 #### 2 - Ihr Modul sichern
 
-Folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/exporter-son-site-web), um Dateien vom FTP-Bereich Ihres Hostings als auch Datenbanken zu exportieren und zu sichern.
+Folgen Sie den Anweisungen in unserer Anleitung "[Ihre Webseite exportieren](/pages/web_cloud/web_hosting/exporter-son-site-web)", um Dateien vom FTP-Bereich Ihres Hostings als auch Datenbanken zu exportieren und zu sichern.
 
 #### 3 - Ihr Modul löschen
 
@@ -198,7 +198,7 @@ Um die Löschung Ihres Moduls abzuschließen, klicken Sie auf die nachfolgenden 
 
 ### Bewährte Praktiken
 
-Sichern Sie Ihre Seite entsprechend den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/secure_your_website).
+Sichern Sie Ihre Seite entsprechend den Anweisungen in unserer Anleitung "[Die Sicherheit Ihrer Website optimieren](/pages/web_cloud/web_hosting/secure_your_website)".
 
 Fügen Sie den Formularen Ihrer Website CAPTCHA-Verifizierungen hinzu.
 

@@ -114,7 +114,7 @@ Les CMS étant développés par des organismes tiers non gérés par OVHcloud, v
 - WordPress : <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla! : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, consultez les pages officielles [docs.joomla.org](https://docs.joomla.org/) ou [forum.joomla.org](https://forum.joomla.org/).
 - Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, consultez les pages officielles [drupal.org](https://drupal.org) ou [drupal.fr](https://drupal.fr).
-- PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, cliquez [ici](https://help-center.prestashop.com) pour vous rendre sur leur page officielle.
+- PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, consultez la [page officielle de PrestaShop](https://help-center.prestashop.com).
 
 Notez que pour ces CMS, vous pouvez également effectuer ces modifications directement [en base de données](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
 

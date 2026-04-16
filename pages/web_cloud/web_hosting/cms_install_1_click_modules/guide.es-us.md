@@ -181,9 +181,9 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **8**
 >> >
 >> > Si los datos introducidos son incorrectos, la instalación no llegará a su fin. Para evitar que esto suceda, le recomendamos que pruebe primero la conexión a su base de datos.
 >> >
->> > Para obtener las claves de conexión a su base de datos incluida con su alojamiento web, consulte [esta guía](/pages/web_cloud/web_hosting/sql_create_database).
+>> > Para obtener las claves de conexión a su base de datos incluida con su alojamiento web, consulte nuestra guía "[Crear una base de datos en un alojamiento web](/pages/web_cloud/web_hosting/sql_create_database)".
 >> >
->> > Para obtener las claves de conexión a la base de datos creada en una instancia de Web Cloud Databases, consulte [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> > Para obtener las claves de conexión a la base de datos creada en una instancia de Web Cloud Databases, consulte nuestra guía "[Primeros pasos con Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> ![Base de datos para instalación avanzada](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 >>
@@ -209,9 +209,9 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **8**
 >>
 >> - *Nombre de la BD*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](/links/manager).
 >>
->> - *Puerto*: sitúe sistemáticamente el número **3306** (puerto por defecto) para una base de datos incluida con su alojamiento web. Para una base de datos de una instancia de Web Cloud Databases, consulte [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Puerto*: sitúe sistemáticamente el número **3306** (puerto por defecto) para una base de datos incluida con su alojamiento web. Para una base de datos de una instancia de Web Cloud Databases, consulte nuestra guía "[Primeros pasos con Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
->> - *Nombre de usuario*: es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web. Para las bases de datos creadas en un plan de hosting Cloud Databases, consulte la información que se indica en [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Nombre de usuario*: es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web. Para las bases de datos creadas en un plan de hosting Cloud Databases, consulte la información que se indica en nuestra guía "[Primeros pasos con Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> - *Contraseña*: le hemos enviado un mensaje de correo electrónico al crear la base de datos. Es posible que lo haya cambiado.
 >>

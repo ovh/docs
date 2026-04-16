@@ -181,9 +181,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **8** kroków.
 >> >
 >> > Jeśli podane informacje są nieprawidłowe, instalacja nie zostanie zakończona. Aby tego uniknąć, zachęcamy najpierw do przetestowania logowania się do bazy danych.
 >> >
->> > Dane do logowania do bazy danych zawartej w pakiecie hostingowym znajdziesz w [przewodniku](/pages/web_cloud/web_hosting/sql_create_database).
+>> > Dane do logowania do bazy danych zawartej w pakiecie hostingowym znajdziesz w naszym przewodniku "[Tworzenie bazy danych na hostingu](/pages/web_cloud/web_hosting/sql_create_database)".
 >> >
->> > Dane do logowania do bazy danych utworzonej na instancji Web Cloud Databases znajdują się w [przewodniku](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> > Dane do logowania do bazy danych utworzonej na instancji Web Cloud Databases znajdują się w naszym przewodniku "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> ![Baza danych do instalacji zaawansowanej](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 >>
@@ -209,9 +209,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **8** kroków.
 >>
 >> - *Nazwa bazy*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](/links/manager).
 >>
->> - *Port*: systematycznie wpisz numer **3306** (port domyślny) dla bazy danych zawartej w Twoim hostingu. W przypadku bazy danych na instancji Cloud Databases, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Port*: systematycznie wpisz numer **3306** (port domyślny) dla bazy danych zawartej w Twoim hostingu. W przypadku bazy danych na instancji Cloud Databases, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
->> - *Nazwa użytkownika*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu. W przypadku baz danych utworzonych w ramach usługi Web Cloud Databases, zapoznaj się z informacjami podanymi w [tym przewodniku](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Nazwa użytkownika*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu. W przypadku baz danych utworzonych w ramach usługi Web Cloud Databases, zapoznaj się z informacjami podanymi w naszym przewodniku "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> - *Hasło*: otrzymasz e-mail podczas tworzenia bazy danych. Możliwe, że zmieniłeś ją w międzyczasie.
 >>

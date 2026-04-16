@@ -84,7 +84,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> |Scenario|Soluzione|
 >> |---|---|
 >> |Il dominio o il sottodominio associato al sito web che desideri creare non appare nella tabella presente nell'scheda `I miei siti`{.action}.|Aggiungi il tuo nome dominio seguendo [queste indicazioni](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
->> |Il nome dominio è stato staccato dal sito web senza che tu abbia effettuato alcuna azione.|Se il tuo nome dominio o la sua [zona DNS](/pages/web_cloud/domains/dns_zone_edit) non vengono gestiti dal tuo account OVHcloud, aggiungi il tuo nome dominio dall'scheda `I miei siti`{.action} seguendo [questa guida](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+>> |Il nome dominio è stato staccato dal sito web senza che tu abbia effettuato alcuna azione.|Se il tuo nome dominio o la sua [zona DNS](/pages/web_cloud/domains/dns_zone_edit) non vengono gestiti dal tuo account OVHcloud, aggiungi il tuo nome dominio dall'scheda `I miei siti`{.action} seguendo la nostra guida "[Come associare un nome di dominio a un sito web esistente](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 
 ///
 

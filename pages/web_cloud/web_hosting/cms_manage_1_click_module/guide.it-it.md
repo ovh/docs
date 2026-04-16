@@ -20,7 +20,7 @@ I moduli in 1 click permettono di installare facilmente e rapidamente un softwar
 ## Prerequisiti
 
 - Disporre di un'[offerta di hosting Web Cloud](/links/web/hosting) che consenta l'installazione di un modulo in 1 click
-- Aver creato un modulo in 1 click sul tuo hosting (Se non l'hai ancora installato, segui questa [guida](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
+- Aver creato un modulo in 1 click sul tuo hosting (Se non l'hai ancora installato, segui la nostra guida "[Installare il tuo sito Web con un CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)").
 
 <!-- CP-NAV-START:web-hosting -->
 ---
@@ -105,7 +105,7 @@ Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazion
 
 > [!warning]
 >
-> Il backup dei tuoi dati è una delle operazioni principali per la [sicurezza dei tuoi siti](/pages/web_cloud/web_hosting/secure_your_website). Ti consigliamo di importare regolarmente e **prima di eliminare** il backup dei tuoi dati su un supporto locale, come una chiavetta USB o un hard disk esterno, seguendo le istruzioni di questa [guida](/pages/web_cloud/web_hosting/exporter-son-site-web).
+> Il backup dei tuoi dati è una delle operazioni principali per la [sicurezza dei tuoi siti](/pages/web_cloud/web_hosting/secure_your_website). Ti consigliamo di importare regolarmente e **prima di eliminare** il backup dei tuoi dati su un supporto locale, come una chiavetta USB o un hard disk esterno, seguendo le istruzioni della nostra guida "[Esporta il tuo sito Web](/pages/web_cloud/web_hosting/exporter-son-site-web)".
 >
 
 #### 1 - Identifica il database associato al tuo modulo <a name="step1"></a>
@@ -137,7 +137,7 @@ Accedi allo [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connec
 
 #### 2 - Salvare il tuo modulo
 
-Per effettuare il backup del tuo sito, segui le istruzioni di questa [guida](/pages/web_cloud/web_hosting/exporter-son-site-web) per recuperare sia i file sullo spazio FTP del tuo hosting che i database.
+Per effettuare il backup del tuo sito, segui le istruzioni della nostra guida "[Esporta il tuo sito Web](/pages/web_cloud/web_hosting/exporter-son-site-web)" per recuperare sia i file sullo spazio FTP del tuo hosting che i database.
 
 #### 3 - Elimina il tuo modulo
 
@@ -198,7 +198,7 @@ Per completare l'eliminazione del tuo modulo, clicca sulle schede seguenti per v
 
 ### Buone prassi
 
-Rendi sicuro il tuo sito seguendo le istruzioni di questa [guida](/pages/web_cloud/web_hosting/secure_your_website).
+Rendi sicuro il tuo sito seguendo le istruzioni della nostra guida "[Come proteggere il tuo sito Web?](/pages/web_cloud/web_hosting/secure_your_website)".
 
 Aggiungi strumenti di test del tipo CAPTCHA ai moduli del tuo sito.
 

@@ -113,7 +113,7 @@ Da die CMS von Drittanbietern entwickelt werden und nicht von OVHcloud verwaltet
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla!: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf den offiziellen Seiten [docs.joomla.org](https://docs.joomla.org/) oder [forum.joomla.org](https://forum.joomla.org/).
 - Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://drupal.org).
-- PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der [offiziellen Seite](https://help-center.prestashop.com).
+- PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der [offiziellen PrestaShop-Seite](https://help-center.prestashop.com).
 
 Bitte beachten Sie, dass bei diesen CMS Änderungen auch direkt vorgenommen werden können, indem Sie die verwendete [Datenbank editieren](/pages/web_cloud/web_hosting/sql_create_database). Ändern Sie dazu die URL Ihrer Website in der entsprechenden Tabelle.
 

@@ -181,9 +181,9 @@ Click on the tabs below to display each of the **8** steps in turn.
 >> >
 >> > If the information you enter is incorrect, the installation will not complete successfully. To avoid this, we recommend that you test the connection to your database.
 >> >
->> > To retrieve the login details for your database included in your web hosting plan, please refer to [this guide](/pages/web_cloud/web_hosting/sql_create_database).
+>> > To retrieve the login details for your database included in your web hosting plan, please refer to our guide "[Creating a database on your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database)".
 >> >
->> > To retrieve the login details for a database created on a Cloud Web Databases instance, please refer to [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> > To retrieve the login details for a database created on a Cloud Web Databases instance, please refer to our guide "[Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> ![Database for advanced installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 >>
@@ -209,9 +209,9 @@ Click on the tabs below to display each of the **8** steps in turn.
 >>
 >> - *Database name*: This name was defined when the database was created in the [OVHcloud Control Panel](/links/manager).
 >>
->> - *Port*: Use the number **3306** (the default port) for a database included with your web hosting plan. For a database on a Web Cloud Databases instance, see [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Port*: Use the number **3306** (the default port) for a database included with your web hosting plan. For a database on a Web Cloud Databases instance, see our guide "[Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
->> - *Username*: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on a Web Cloud Databases solution, please refer to the information in [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Username*: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on a Web Cloud Databases solution, please refer to the information in our guide "[Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> - *Password*: It was sent to you by email when the database was created. You may have modified it since.
 >>

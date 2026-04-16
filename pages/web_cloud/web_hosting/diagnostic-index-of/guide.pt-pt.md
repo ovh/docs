@@ -31,7 +31,7 @@ Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
 
 ### Compreender a origem da página "Index of"
 
-O seu nome de domínio está declarado para aceder a um diretório de destino (um "`Pasta raiz`") no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Para mais informações sobre a associação de um nome de domínio com um alojamento, consulte [este guia](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+O seu nome de domínio está declarado para aceder a um diretório de destino (um "`Pasta raiz`") no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Para mais informações sobre a associação de um nome de domínio com um alojamento, consulte o nosso guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
 

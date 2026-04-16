@@ -105,7 +105,7 @@ No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a opera
 
 > [!warning]
 >
-> O backup dos seus dados faz parte das operações essenciais à [segurança dos seus websites](/pages/web_cloud/web_hosting/secure_your_website). Sugerimos que importe regularmente e **antes de eliminar** o backup dos seus dados para um suporte local, como uma pen USB ou um disco rígido externo, de acordo com as instruções deste [manual](/pages/web_cloud/web_hosting/exporter-son-site-web).
+> O backup dos seus dados faz parte das operações essenciais à [segurança dos seus websites](/pages/web_cloud/web_hosting/secure_your_website). Sugerimos que importe regularmente e **antes de eliminar** o backup dos seus dados para um suporte local, como uma pen USB ou um disco rígido externo, de acordo com as instruções do nosso guia "[Exportar o seu website](/pages/web_cloud/web_hosting/exporter-son-site-web)".
 >
 
 #### 1 - Identificar a base de dados do módulo <a name="step1"></a>
@@ -137,7 +137,7 @@ Aceda ao [espaço FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu aloja
 
 #### 2 - Guardar o seu módulo
 
-Para guardar o seu site, siga as instruções deste [guia](/pages/web_cloud/web_hosting/exporter-son-site-web) para recuperar os seus ficheiros no espaço FTP do seu alojamento e a sua base de dados.
+Para guardar o seu site, siga as instruções do nosso guia "[Exportar o seu website](/pages/web_cloud/web_hosting/exporter-son-site-web)" para recuperar os seus ficheiros no espaço FTP do seu alojamento e a sua base de dados.
 
 #### 3 - Eliminar o módulo
 
@@ -198,7 +198,7 @@ Para terminar a eliminação do módulo, clique nos separadores abaixo para visu
 
 ### Boas práticas
 
-Para proteger o seu site, siga as instruções deste [guia](/pages/web_cloud/web_hosting/secure_your_website).
+Para proteger o seu site, siga as instruções do nosso guia "[Como proteger o seu website?](/pages/web_cloud/web_hosting/secure_your_website)".
 
 Adicione ferramentas de teste do tipo CAPTCHA aos formulários do seu site.
 

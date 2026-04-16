@@ -181,9 +181,9 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **8** passaggi.
 >> >
 >> > Se le informazioni fornite non sono corrette, l'installazione non verrà completata. Per evitare questo problema, ti consigliamo di testare la connessione al tuo database.
 >> >
->> > Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta [questa guida](/pages/web_cloud/web_hosting/sql_create_database).
+>> > Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta la nostra guida "[Creare un database su un hosting Web](/pages/web_cloud/web_hosting/sql_create_database)".
 >> >
->> > Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> > Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta la nostra guida "[Iniziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> ![Database per l'installazione avanzata](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 >>
@@ -209,9 +209,9 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **8** passaggi.
 >>
 >> - *Nome del database*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](/links/manager).
 >>
->> - *Porta*: inserisci sistematicamente il numero **3306** (porta di default) per un database incluso con il tuo hosting Web. Per creare un database su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Porta*: inserisci sistematicamente il numero **3306** (porta di default) per un database incluso con il tuo hosting Web. Per creare un database su un'istanza Web Cloud Databases, consulta la nostra guida "[Iniziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
->> - *Username*: è identico al nome del database se utilizzi un database incluso con il tuo hosting Web. Per i database creati su un'offerta Web Cloud Databases, consulta le informazioni indicate in [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Username*: è identico al nome del database se utilizzi un database incluso con il tuo hosting Web. Per i database creati su un'offerta Web Cloud Databases, consulta le informazioni indicate nella nostra guida "[Iniziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> - *Password*: ti è stato inviato via email durante la creazione del database. È possibile che tu l'abbia modificata nel frattempo.
 >>

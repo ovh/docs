@@ -183,9 +183,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >> >
 >> > Si les informations que vous indiquez sont incorrectes, l’installation n’arrivera pas à son terme. Pour éviter cela, nous vous invitons en premier lieu à tester la connexion à votre base de données.
 >> >
->> > Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/sql_create_database).
+>> > Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
 >> >
->> > Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> > Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez notre guide « [Premiers pas avec Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 >>
 >> ![Base de données pour installation avancée](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 >>
@@ -211,10 +211,10 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >>
 >> - *Nom de la base* : ce nom a été défini lors de la création de la base de données dans l’[espace client OVHcloud](/links/manager).
 >>
->> - *Port* : indiquez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Port* : indiquez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez notre guide « [Premiers pas avec Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 >>
 >> - *Nom d’utilisateur* : identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
->> Pour les bases de données créées sur une offre Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> Pour les bases de données créées sur une offre Web Cloud Databases, consultez notre guide « [Premiers pas avec Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 >>
 >> - *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Vous l’avez peut-être modifié depuis.
 >>

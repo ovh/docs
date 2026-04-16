@@ -105,7 +105,7 @@ Poniżej znajdziesz elementy zawarte w naszych różnych środowiskach wykonawcz
 
 PHP jest dynamicznym językiem programowania używanym do tworzenia stron WWW. W zależności od wieku Twojej strony WWW, wykonywanych aktualizacji oraz niektórych zmiennych niezbędnych do prawidłowego działania Twojej strony, możesz być zmuszony do zmiany wersji PHP, której używa.
 
-Istnieje kilka wersji języka programowania PHP. Zmiany wersji zawierają różne poprawki, a także dodawanie lub wyłączanie funkcji. OVHcloud udostępnia najnowsze główne wersje PHP, których listę znajdziesz [tutaj](/links/web/hosting-programming-language).
+Istnieje kilka wersji języka programowania PHP. Zmiany wersji zawierają różne poprawki, a także dodawanie lub wyłączanie funkcji. OVHcloud udostępnia najnowsze główne wersje PHP, których listę znajdziesz na [tej stronie](/links/web/hosting-programming-language).
 
 Niektóre wersje PHP działają tylko z niektórymi środowiskami wykonawczymi. Poniżej znajdziesz wersje PHP dostępne na hostingu www OVHcloud i kompatybilne [środowiska uruchomieniowe](#runtime-environment):
 

@@ -19,7 +19,7 @@ The 1-click modules are a quick and easy way to install an online website creati
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting) that allows you to install a 1-click module (only the free [100M free hosting](/pages/web_cloud/web_hosting/activate_start10m) does not provide this feature)
-- A 1-click module on your Web Hosting plan (If you did not install one yet, follow the instructions in this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules))
+- A 1-click module on your Web Hosting plan (If you did not install one yet, follow the instructions in our guide "[Setting up your website with a 1-click module (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)")
 
 <!-- CP-NAV-START:web-hosting -->
 ---
@@ -105,7 +105,7 @@ However, we strongly recommend using the documentation provided by your CMS publ
 
 > [!warning]
 >
-> Backing up your data is essential to [securing your websites](/pages/web_cloud/web_hosting/secure_your_website). We recommend downloading your data backup regularly on a local device, such as a USB drive or external hard drive, following the instructions in this [guide](/pages/web_cloud/web_hosting/exporter-son-site-web).
+> Backing up your data is essential to [securing your websites](/pages/web_cloud/web_hosting/secure_your_website). We recommend downloading your data backup regularly, and **before any deletion**, on a local device, such as a USB drive or external hard drive, following the instructions in our guide "[Exporting a website](/pages/web_cloud/web_hosting/exporter-son-site-web)".
 >
 
 #### 1 - Identify the database linked to your module <a name="step1"></a>
@@ -137,7 +137,7 @@ Then log on to the [FTP space](/pages/web_cloud/web_hosting/ftp_connection) of y
 
 #### 2 - Back up your data
 
-To back up your website, follow the instructions of this [guide](/pages/web_cloud/web_hosting/exporter-son-site-web) to retrieve its files from both the FTP space on your hosting plan and its database.
+To back up your website, follow the instructions of our guide "[Exporting a website](/pages/web_cloud/web_hosting/exporter-son-site-web)" to retrieve its files from both the FTP space on your hosting plan and its database.
 
 #### 3 - Delete your module
 
@@ -198,7 +198,7 @@ To complete the removal of your module, click on the tabs below to display each 
 
 ### Best practices
 
-Secure your website by following the instructions in this [guide](/pages/web_cloud/web_hosting/secure_your_website).
+Secure your website by following the instructions in our guide "[How to secure your website?](/pages/web_cloud/web_hosting/secure_your_website)".
 
 Add CAPTCHA-type verification tools to the forms on your website.
 

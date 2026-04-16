@@ -20,7 +20,7 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting) permettant l'installation d'un module en 1 clic (seule l'[offre d'hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m) n'est pas concernée).
-- Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
+- Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de notre guide « [Installer votre site web avec un module en 1 clic (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) »).
 
 <!-- CP-NAV-START:web-hosting -->
 ---
@@ -105,7 +105,7 @@ Toutefois, nous vous recommandons vivement d’effectuer l’opération à l’a
 
 > [!warning]
 >
-> La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](/pages/web_cloud/web_hosting/secure_your_website). Nous vous conseillons d'importer régulièrement et **avant toute suppression** la sauvegarde de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/exporter-son-site-web).
+> La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](/pages/web_cloud/web_hosting/secure_your_website). Nous vous conseillons d'importer régulièrement et **avant toute suppression** la sauvegarde de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de notre guide « [Exporter son site web](/pages/web_cloud/web_hosting/exporter-son-site-web) ».
 >
 
 #### 1 - Identifier la base de données liée à votre module <a name="step1"></a>
@@ -137,7 +137,7 @@ Connectez-vous ensuite à [l'espace FTP de votre hébergement](/pages/web_cloud/
 
 #### 2 - Sauvegarder votre module
 
-Pour sauvegarder votre site, suivez les instructions de ce [guide](/pages/web_cloud/web_hosting/exporter-son-site-web), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
+Pour sauvegarder votre site, suivez les instructions de notre guide « [Exporter son site web](/pages/web_cloud/web_hosting/exporter-son-site-web) », afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
 
 #### 3 - Supprimer votre module
 
@@ -195,7 +195,7 @@ Pour finaliser la suppression de votre module, cliquez sur les onglets ci-dessou
 
 ### Bonnes pratiques
 
-Sécurisez votre site en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/secure_your_website).
+Sécurisez votre site en suivant les instructions de notre guide « [Comment sécuriser un site Web ?](/pages/web_cloud/web_hosting/secure_your_website) ».
 
 Ajoutez des outils de test de type CAPTCHA sur les formulaires de votre site.
 

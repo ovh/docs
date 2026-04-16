@@ -20,7 +20,7 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 ## Requisitos
 
 - Tener contratado un plan de [hosting Cloud](/links/web/hosting) que permita instalar un módulo en 1 clic.
-- Haber creado un módulo en 1 clic en su alojamiento (si todavía no ha realizado la instalación, siga las indicaciones de esta [guía](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
+- Haber creado un módulo en 1 clic en su alojamiento (si todavía no ha realizado la instalación, siga las indicaciones de nuestra guía "[Instalar su sitio web con un módulo en 1 clic (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)").
 
 <!-- CP-NAV-START:web-hosting -->
 ---
@@ -105,7 +105,7 @@ No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la d
 
 > [!warning]
 >
-> La copia de seguridad de sus datos es una de las operaciones básicas para [proteger sus sitios web](/pages/web_cloud/web_hosting/secure_your_website). Le recomendamos que, siguiendo las instrucciones de esta **guía**, importe regularmente y [antes de eliminar](/pages/web_cloud/web_hosting/exporter-son-site-web) la copia de seguridad de sus datos en un soporte local, como un USB o un disco duro externo.
+> La copia de seguridad de sus datos es una de las operaciones básicas para [proteger sus sitios web](/pages/web_cloud/web_hosting/secure_your_website). Le recomendamos que importe regularmente y **antes de eliminar** la copia de seguridad de sus datos en un soporte local, como un USB o un disco duro externo, siguiendo las instrucciones de nuestra guía "[Exportar un sitio web](/pages/web_cloud/web_hosting/exporter-son-site-web)".
 >
 
 #### 1 - Identificar la base de datos asociada a su módulo <a name="step1"></a>
@@ -137,7 +137,7 @@ Conéctese al [espacio FTP del alojamiento](/pages/web_cloud/web_hosting/ftp_con
 
 #### 2 - Guardar el módulo
 
-Para hacer copias de seguridad de su sitio web, siga las instrucciones de esta [guía](/pages/web_cloud/web_hosting/exporter-son-site-web) y recupere los archivos en el espacio FTP de su alojamiento y su base de datos.
+Para hacer copias de seguridad de su sitio web, siga las instrucciones de nuestra guía "[Exportar un sitio web](/pages/web_cloud/web_hosting/exporter-son-site-web)" y recupere los archivos en el espacio FTP de su alojamiento y su base de datos.
 
 #### 3 - Eliminar el módulo
 
@@ -198,7 +198,7 @@ Para terminar de eliminar el módulo, haga clic en las pestañas a continuación
 
 ### Buenas prácticas
 
-Proteja su sitio web siguiendo las instrucciones de esta [guía](/pages/web_cloud/web_hosting/secure_your_website).
+Proteja su sitio web siguiendo las instrucciones de nuestra guía "[¿Cómo proteger su sitio web?](/pages/web_cloud/web_hosting/secure_your_website)".
 
 Añada herramientas de test de tipo CAPTCHA a los formularios de su sitio web.
 

@@ -114,7 +114,7 @@ I CMS sono sviluppati da organizzazioni terze non gestite da OVHcloud. Di seguit
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla! : L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, consulta le pagine ufficiali [docs.joomla.org](https://docs.joomla.org/) o [forum.joomla.org](https://forum.joomla.org/).
 - Drupal: L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, consulta le pagine ufficiali [drupal.org](https://drupal.org) o [drupal.fr](https://drupal.fr).
-- PrestaShop: L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, clicca [qui](https://help-center.prestashop.com) per accedere alla pagina ufficiale.
+- PrestaShop: L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, consulta la [pagina ufficiale di PrestaShop](https://help-center.prestashop.com).
 
 Ti ricordiamo che anche per questi CMS è possibile effettuare modifiche direttamente [in database](/pages/web_cloud/web_hosting/sql_create_database). È necessario modificare l'URL di accesso al tuo sito nella tabella prevista a tal fine.
 

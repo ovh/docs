@@ -31,7 +31,7 @@ An "**Index of**" page appears in at least one of the following cases:
 
 ### Understanding the origin of the "Index of" page
 
-Your domain name is declared to access a target directory (a `root folder`) on the server [FTP](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan. For more information on associating a domain name with a hosting plan, refer to [this guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Your domain name is declared to access a target directory (a `root folder`) on the server [FTP](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan. For more information on associating a domain name with a hosting plan, refer to our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 The "**Index of**" page indicates that the target directory does not contain an **index.php** or **index.html** file. A file of this type is the *entry point* for your website. This file name is standardised.
 

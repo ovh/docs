@@ -114,7 +114,7 @@ Ponieważ systemy CMS są tworzone przez organizacje zewnętrzne niezarządzane 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla! : Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [docs.joomla.org](https://docs.joomla.org/) lub [forum.joomla.org](https://forum.joomla.org/).
 - Drupal: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [drupal.org](https://drupal.org) lub [drupal.fr](https://drupal.fr).
-- PrestaShop: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, kliknij [tutaj](https://help-center.prestashop.com) i przejdź na oficjalną stronę.
+- PrestaShop: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, odwiedź oficjalną [stronę PrestaShop](https://help-center.prestashop.com).
 
 Pamiętaj, że w przypadku tych systemów CMS możesz wprowadzić również zmiany bezpośrednio [w bazie danych](/pages/web_cloud/web_hosting/sql_create_database). W tabeli programu zmień link dostępowy do Twojej strony WWW.
 

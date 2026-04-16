@@ -115,7 +115,7 @@ As CMSs are developed by third parties and not managed by OVHcloud, here are lin
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla!: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, visit the official pages [docs.joomla.org](https://docs.joomla.org/) or [forum.joomla.org](https://forum.joomla.org/).
 - Drupal: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, see the official page [drupal.org](https://drupal.org).
-- PrestaShop: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, click [here](https://help-center.prestashop.com) to go to their official page.
+- PrestaShop: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, see the [official PrestaShop page](https://help-center.prestashop.com).
 
 Please note that for these CMSs, you can also edit the domain names directly [in the corresponding database](/pages/web_cloud/web_hosting/sql_create_database). You will need to change the URL for accessing your website in the table used for your CMS.
 

@@ -181,9 +181,9 @@ Klicken Sie auf die Tabs unten, um die **8** Schritte nacheinander anzuzeigen.
 >> >
 >> > Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
 >> >
->> > Um die Login-Daten zu Ihrer Webhosting-Datenbank zu ermitteln, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
+>> > Um die Login-Daten zu Ihrer Webhosting-Datenbank zu ermitteln, lesen Sie unsere Anleitung "[Eine Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)".
 >> >
->> > Um die Login-Daten zu einer mit Web Cloud Databases erstellten Datenbank herauszufinden, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> > Um die Login-Daten zu einer mit Web Cloud Databases erstellten Datenbank herauszufinden, lesen Sie unsere Anleitung "[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> ![Datenbank für erweiterte Installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 >>
@@ -208,9 +208,9 @@ Klicken Sie auf die Tabs unten, um die **8** Schritte nacheinander anzuzeigen.
 >>
 >> - *Name der Datenbank*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](/links/manager) festgelegt.
 >>
->> - *Port*: Geben Sie die Nummer **3306** (Standard-Port) für eine Webhosting-Datenbank ein. Für Datenbanken auf einer Web Cloud Databases Instanz folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Port*: Geben Sie die Nummer **3306** (Standard-Port) für eine Webhosting-Datenbank ein. Für Datenbanken auf einer Web Cloud Databases Instanz folgen Sie unserer Anleitung "[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
->> - *Benutzername*: Er ist identisch für Datenbanken, die in einem Webhosting inklusive sind. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Benutzername*: Er ist identisch für Datenbanken, die in einem Webhosting inklusive sind. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, folgen Sie unserer Anleitung "[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> - *Passwort*: Das Passwort wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 >>

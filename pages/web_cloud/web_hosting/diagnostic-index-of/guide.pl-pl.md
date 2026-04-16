@@ -30,7 +30,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 
 ### Zrozumieć pochodzenie strony "Index of"
 
-Twoja domena została zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/pages/web_cloud/web_hosting/ftp_connection) Twojego hostingu współdzielonego. Więcej informacji na temat powiązania nazwy domeny z hostingiem znajdziesz w [tym przewodniku](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Twoja domena została zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/pages/web_cloud/web_hosting/ftp_connection) Twojego hostingu współdzielonego. Więcej informacji na temat powiązania nazwy domeny z hostingiem znajdziesz w naszym przewodniku "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 Strona **Index of** wskazuje, że dany katalog docelowy nie zawiera pliku **index.php** lub **index.html**. Plik ten stanowi "*punkt wejścia*" Twojej strony WWW. Nazwa tego pliku jest znormalizowana.
 

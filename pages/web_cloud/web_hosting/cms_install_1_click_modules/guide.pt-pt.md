@@ -181,9 +181,9 @@ Clique nos separadores abaixo para visualizar cada uma das **8** etapas.
 >> >
 >> > Se as informações que indica estiverem incorretas, a instalação não chegará ao seu termo. Para evitar esta falha, sugerimos que teste a ligação à sua base de dados.
 >> >
->> > Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/sql_create_database).
+>> > Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte o nosso guia "[Criar uma base de dados num alojamento web](/pages/web_cloud/web_hosting/sql_create_database)".
 >> >
->> > Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> > Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte o nosso guia "[Web Cloud Databases - Primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> ![Base de dados para instalação avançada](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 >>
@@ -209,9 +209,9 @@ Clique nos separadores abaixo para visualizar cada uma das **8** etapas.
 >>
 >> - *Nome da base de dados*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](/links/manager).
 >>
->> - *Porta*: coloque sistematicamente o número **3306** (porta predefinida) para uma base de dados incluída no seu alojamento web. Para uma base presente numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Porta*: coloque sistematicamente o número **3306** (porta predefinida) para uma base de dados incluída no seu alojamento web. Para uma base presente numa instância Web Cloud Databases, consulte o nosso guia "[Web Cloud Databases - Primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
->> - *Nome do utilizador*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web. Para as bases de dados criadas numa oferta Web Cloud Databases, consulte as informações indicadas no [presente guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>> - *Nome do utilizador*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web. Para as bases de dados criadas numa oferta Web Cloud Databases, consulte o nosso guia "[Web Cloud Databases - Primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 >>
 >> - *Palavra-passe*: foi-lhe enviado por e-mail aquando da criação da base de dados. É possível que a tenha modificado entretanto.
 >>

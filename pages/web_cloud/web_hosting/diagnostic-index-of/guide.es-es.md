@@ -31,7 +31,7 @@ En al menos uno de los siguientes casos aparece una página **"Index of"**:
 
 ### Comprender el origen de la página "Index of"
 
-Su nombre de dominio está declarado para acceder a un directorio objetivo (un "`Carpeta raíz`") en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Para más información sobre la asociación de un dominio con un alojamiento, consulte [esta guía](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Su nombre de dominio está declarado para acceder a un directorio objetivo (un "`Carpeta raíz`") en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Para más información sobre la asociación de un dominio con un alojamiento, consulte nuestra guía "[Compartir su alojamiento entre varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 La página **Index of** indica que el directorio de destino no contiene un archivo **index.php** o **index.html**. Dicho archivo constituye el "*punto de entrada*" del sitio web. El nombre de este archivo está normalizado.
 

@@ -20,7 +20,7 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 ## Wymagania początkowe
 
 - Posiadanie [oferty hostingu WWW Cloud](/links/web/hosting) umożliwiającej instalację modułu za pomocą 1 kliknięcia.
-- Instalacja modułu za 1 kliknięciem (Jeśli jeszcze nie przeprowadziłeś tej instalacji, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
+- Instalacja modułu za 1 kliknięciem (Jeśli jeszcze nie przeprowadziłeś tej instalacji, postępuj zgodnie z instrukcjami zawartymi w naszym przewodniku "[Instalacja strony WWW za pomocą modułu za 1 kliknięciem (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)").
 
 <!-- CP-NAV-START:web-hosting -->
 ---
@@ -105,7 +105,7 @@ Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygo
 
 > [!warning]
 >
-> Tworzenie kopii zapasowych danych jest częścią operacji niezbędnych do [zabezpieczenia Twoich stron WWW](/pages/web_cloud/web_hosting/secure_your_website). Zalecamy regularne importowanie kopii zapasowej danych na lokalny nośnik, taki jak klucz USB lub zewnętrzny dysk twardy, zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/exporter-son-site-web).
+> Tworzenie kopii zapasowych danych jest częścią operacji niezbędnych do [zabezpieczenia Twoich stron WWW](/pages/web_cloud/web_hosting/secure_your_website). Zalecamy regularne importowanie kopii zapasowej danych, a także **przed każdym usunięciem**, na lokalny nośnik, taki jak klucz USB lub zewnętrzny dysk twardy, zgodnie z instrukcjami zawartymi w naszym przewodniku "[Eksportowanie witryny internetowej](/pages/web_cloud/web_hosting/exporter-son-site-web)".
 >
 
 #### 1 - Zidentyfikować bazę danych powiązaną z modułem <a name="step1"></a>
@@ -137,7 +137,7 @@ Zaloguj się do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/
 
 #### 2 - Zapisz moduł
 
-Aby wykonać kopię zapasową Twojej strony WWW, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/exporter-son-site-web), aby pobrać jej pliki zarówno z przestrzeni FTP, jak i z bazy danych.
+Aby wykonać kopię zapasową Twojej strony WWW, postępuj zgodnie z instrukcjami zawartymi w naszym przewodniku "[Eksportowanie witryny internetowej](/pages/web_cloud/web_hosting/exporter-son-site-web)", aby pobrać jej pliki zarówno z przestrzeni FTP, jak i z bazy danych.
 
 #### 3 - Usuń moduł
 
@@ -198,7 +198,7 @@ Aby dokończyć usuwanie modułu, kliknij poniższe zakładki, aby kolejno wyśw
 
 ### Dobre praktyki
 
-Zabezpiecz swoją stronę, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/secure_your_website).
+Zabezpiecz swoją stronę, postępując zgodnie z instrukcjami zawartymi w naszym przewodniku "[Jak zabezpieczyć Twoją stronę WWW?](/pages/web_cloud/web_hosting/secure_your_website)".
 
 Dodaj narzędzia testowe typu CAPTCHA do formularzy na Twojej stronie.
 

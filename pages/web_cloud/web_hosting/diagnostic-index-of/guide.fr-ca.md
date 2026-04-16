@@ -31,7 +31,7 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 
 ### Comprendre l'origine de la page « Index of »
 
-Votre nom de domaine est déclaré pour accéder à un répertoire cible (un « `Dossier racine` ») sur le serveur [FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web mutualisé. Concernant l'association d'un nom de domaine avec un hébergement, consultez [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Votre nom de domaine est déclaré pour accéder à un répertoire cible (un « `Dossier racine` ») sur le serveur [FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web mutualisé. Concernant l'association d'un nom de domaine avec un hébergement, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 La page **Index of** indique que le répertoire cible concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « *point d'entrée* » de votre site web. Le nom de ce fichier est normalisé.
 

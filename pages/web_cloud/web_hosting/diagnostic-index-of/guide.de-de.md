@@ -30,7 +30,7 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
 ### Den Ursprung der "Index of"-Seite verstehen
 
-Ihr Domainname ist so konfiguriert, dass er auf ein Wurzelverzeichnis (`root folder`) auf dem [FTP](/pages/web_cloud/web_hosting/ftp_connection)-Server Ihres Webhostings zugreifen kann. Informationen zur Zuordnung eines Domainnamens zu einem Webhosting finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Ihr Domainname ist so konfiguriert, dass er auf ein Wurzelverzeichnis (`root folder`) auf dem [FTP](/pages/web_cloud/web_hosting/ftp_connection)-Server Ihres Webhostings zugreifen kann. Informationen zur Zuordnung eines Domainnamens zu einem Webhosting finden Sie in unserer Anleitung "[Mehrere Websites auf einem Webhosting hosten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 Die Seite "**Index of**" ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei repräsentiert die Startseite bzw. den Einstiegspunkt Ihrer Website. Der Name dieser Datei ist standardisiert.
 
