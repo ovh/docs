@@ -2400,6 +2400,7 @@
                 + [Backup Agent - Understanding Vault](storage_and_backup/backup_agent/backup_agent_vault)
             + [Getting started](storage-backup-and-disaster-recovery-solution-backup-agent-getting-started)
                 + [Backup Agent - How to configure your first backup](storage_and_backup/backup_agent/backup_agent_first_configuration)
+                + [Backup Agent - Linux CLI Assistant](storage_and_backup/backup_agent/backup_agent_linux_cli_assistant)
                 + [Backup Agent - Managing your backups and restores](storage_and_backup/backup_agent/backup_agent_backup_restore)
                 + [Backup Agent - First steps with VSPC](storage_and_backup/backup_agent/backup_agent_vspc_presentation)
             + [Troubleshooting](storage-backup-and-disaster-recovery-solution-backup-agent-troubleshooting)
