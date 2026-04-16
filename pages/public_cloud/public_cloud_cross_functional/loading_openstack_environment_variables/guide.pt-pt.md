@@ -32,6 +32,7 @@ Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a
 
 ### Etapa 1: recuperar as variáveis
 
+<!-- CP-STEPS-START:retrieve-openrc-file -->
 Para recuperar as suas variáveis de ambiente, pode transferir o ficheiro OpenRC do seu utilizador OpenStack previamente criado.
 
 No menu à esquerda, na rubrica **Parâmetros**, clique em `Utilizadores & Funções`{.action}. A seguir, clique nas `...`{.action} do lado direito do seu utilizador, e selecione `Transferir o ficheiro RC do OpenStack`{.action}.
@@ -39,6 +40,7 @@ No menu à esquerda, na rubrica **Parâmetros**, clique em `Utilizadores & Funç
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Um ficheiro OpenRC corresponde a um utilizador e, também, a uma zona. Não pode gerir várias zonas num mesmo ficheiro.
+<!-- CP-STEPS-END:retrieve-openrc-file -->
 
 ### Etapa 2: carregar as variáveis
 

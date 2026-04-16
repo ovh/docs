@@ -69,6 +69,7 @@ Windows users can follow this guide to export environment variables:
 
 ### Step 1: Download and source your OpenRC file
 
+<!-- CP-STEPS-START:download-openrc-file -->
 Click on `Users & Roles`{.action} in the `Project Management` section, then click on the `...`{.action} button to the right of your OpenStack user.
 
 Download this user's OpenRC file and specify the region where you want to perform actions.
@@ -88,6 +89,7 @@ Then source the file you previously downloaded:
 ```bash
 source openrc.sh
 ```
+<!-- CP-STEPS-END:download-openrc-file -->
 
 ### Step 2: Issuing an OpenStack token
 

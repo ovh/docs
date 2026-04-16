@@ -68,6 +68,7 @@ sudo yum install python3-openstackclient
 
 ### Étape 1 : téléchargez et sourcez votre fichier OpenRC
 
+<!-- CP-STEPS-START:download-openrc-file -->
 Cliquez sur `Utilisateurs & Rôles`{.action} dans la section **Paramètres** puis sur le bouton `...`{.action} à droite de votre utilisateur OpenStack.<br>
 Téléchargez le fichier OpenRC de cet utilisateur et spécifiez la région dans laquelle vous voulez effectuer des actions.
 
@@ -86,6 +87,7 @@ Ensuite, sourcez le fichier que vous avez téléchargé précédemment :
 ```bash
 source openrc.sh
 ```
+<!-- CP-STEPS-END:download-openrc-file -->
 
 ### Étape 2 : émission d'un jeton OpenStack
 

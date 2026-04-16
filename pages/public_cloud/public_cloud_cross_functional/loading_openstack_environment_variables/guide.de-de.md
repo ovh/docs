@@ -28,6 +28,7 @@ Das Konfigurieren der OpenStack Umgebungsvariablen auf Ihrem lokalen Gerät erm�
 
 ### Schritt Nr 1: Die Variablen abrufen
 
+<!-- CP-STEPS-START:retrieve-openrc-file -->
 Um die Umgebungsvariablen zu erhalten, können Sie die *OpenRC*-Datei von Ihrem zuvor erstellten OpenStack User-Account herunterladen.
 
 Öffnen Sie `User und Rollen`{.action} unter **Einstellungen** im linken Menü. klicken Sie auf `...`{.action} rechts von Ihrem Benutzer und wählen Sie dann `RC-Datei von OpenStack herunterladen`{.action}.
@@ -35,6 +36,7 @@ Um die Umgebungsvariablen zu erhalten, können Sie die *OpenRC*-Datei von Ihrem 
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Eine *OpenRC*-Datei entspricht einem User und einer Zone. Sie können nicht mehrere Zonen in derselben Datei verwalten.
+<!-- CP-STEPS-END:retrieve-openrc-file -->
 
 ### Schritt Nr 2: Die Variablen konfigurieren
 

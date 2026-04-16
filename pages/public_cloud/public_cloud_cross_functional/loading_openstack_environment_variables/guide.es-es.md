@@ -32,6 +32,7 @@ Cambiar las variables de entorno necesarias para OpenStack en su equipo le permi
 
 ### Paso 1: obtener las variables
 
+<!-- CP-STEPS-START:retrieve-openrc-file -->
 Para obtener sus variables de entorno, puede descargar el archivo OpenRC de su usuario OpenStack previamente creado.
 
 En el menú de la izquierda, haga clic en `Usuarios y roles`{.action} en **Ajustes**. A continuación, haga clic en `«...»`{.action} a la derecha de su usuario y seleccione `«Descargar el archivo RC de OpenStack»`{.action}.
@@ -39,6 +40,7 @@ En el menú de la izquierda, haga clic en `Usuarios y roles`{.action} en **Ajust
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Un archivo OpenRC corresponde tanto a un usuario como a una zona. No puede gestionar varias zonas en un mismo archivo.
+<!-- CP-STEPS-END:retrieve-openrc-file -->
 
 ### Paso 2: cargar las variables
 

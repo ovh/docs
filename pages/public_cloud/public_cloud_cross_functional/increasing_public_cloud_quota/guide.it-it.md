@@ -29,11 +29,13 @@ Per creare di più, è necessario aumentare la quota disponibile.
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:navigate-quota-regions -->
 Nel menu a sinistra, fai clic su `Quota e Region`{.action} sotto **Impostazioni**.
 
 ![Pagina Quota e Region che mostra le quote attuali del progetto per regione](images/raisepciquota1.png){.thumbnail}
 
 Questa pagina presenta un riepilogo delle quote attuali del tuo progetto per regione. Un avviso appare non appena una risorsa raggiunge l'80% della sua quota.
+<!-- CP-STEPS-END:navigate-quota-regions -->
 
 ### Aumentare la quota di risorse
 
@@ -43,6 +45,7 @@ In base a criteri interni (anzianità, esistenza di fatture pagate, ecc.), puoi 
 
 #### Aumentare automaticamente la tua quota di risorse con la funzionalità "Quota autoscaling"
 
+<!-- CP-STEPS-START:increase-quota-auto-scaling -->
 Questa opzione ti permette di richiedere un aumento automatico e progressivo della tua quota di risorse. La quota verrà regolata in base al tuo utilizzo effettivo **se superi il 60% della tua quota corrente per 30 giorni consecutivi**, nonché in base a un insieme di criteri interni e finanziari.
 
 > [!primary]
@@ -58,9 +61,11 @@ In alto a destra della pagina, l'opzione **Quota autoscaling** è disponibile:
 ![Pulsante di attivazione/disattivazione Quota autoscaling impostato su Attivo](images/autoscaling.png){.thumbnail}
 
 Una volta attivato, l'auto-scaling aumenta progressivamente la quota del tuo progetto in base ai tuoi reali bisogni.
+<!-- CP-STEPS-END:increase-quota-auto-scaling -->
 
 #### Aumentare la tua quota di risorse manualmente
 
+<!-- CP-STEPS-START:increase-quota-manually -->
 > [!primary]
 >
 > Se hai bisogno di aumentare la tua quota e il pulsante `Aumenta la quota disponibile`{.action} non è disponibile nel tuo Spazio Cliente, clicca sul pulsante `Contatta il supporto`{.action}.
@@ -97,6 +102,7 @@ Una volta selezionato il tuo volume, fai clic su `Conferma`{.action}. Il pagamen
 >
 > Dopo aver cliccato sul pulsante `Conferma`{.action}, l'ordine viene automaticamente creato e l'importo viene addebitato sul tuo metodo di pagamento predefinito.
 >
+<!-- CP-STEPS-END:increase-quota-manually -->
 
 Per una vista più dettagliata delle risorse, accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/). Una volta effettuato l'accesso, fai clic su `Progetto`{.action}, poi su `Panoramica`{.action}.
 

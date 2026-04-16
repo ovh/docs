@@ -29,11 +29,13 @@ To use additional resources and projects, the quotas need to be increased.
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:navigate-quota-regions -->
 In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**.
 
 ![Quota & Regions page showing current project quotas by region](images/raisepciquota1.png){.thumbnail}
 
 This page shows a summary of your project's current quotas by region. A warning appears as soon as a resource reaches 80% of its quota.
+<!-- CP-STEPS-END:navigate-quota-regions -->
 
 ### Increasing your resources quota
 
@@ -43,6 +45,7 @@ You can increase your resources quota manually or automatically.
 
 #### Increasing your resources quota automatically with the "Auto-scaling quota" feature
 
+<!-- CP-STEPS-START:increase-quota-auto-scaling -->
 This option allows you to request an automatic and gradual increase in your resource quota. The quota will be adjusted based on your actual usage **if you exceed 60% of your current quota for 30 consecutive days**, as well as a set of internal and financial criteria.
 
 > [!primary]
@@ -58,9 +61,11 @@ At the top right of the page, the **Auto-scaling quota** option is available:
 ![Auto-scaling quota toggle button set to Enabled](images/autoscaling.png){.thumbnail}
 
 Once activated, auto-scaling will gradually increase your project's quota based on your actual needs.
+<!-- CP-STEPS-END:increase-quota-auto-scaling -->
 
 #### Increasing your resources quota manually
 
+<!-- CP-STEPS-START:increase-quota-manually -->
 > [!primary]
 >
 > If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, click on the `Contact support`{.action} button.
@@ -97,6 +102,7 @@ Once you have selected your volume, click on `Confirm`{.action}. Your payment wi
 >
 > After clicking on the `Confirm`{.action} button, the order is automatically created and the amount will be debited from your default payment method.
 >
+<!-- CP-STEPS-END:increase-quota-manually -->
 
 For a more detailed view of your resources, go to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/). Once logged in, click on `Project`{.action}, then on `Overview`{.action}.
 
