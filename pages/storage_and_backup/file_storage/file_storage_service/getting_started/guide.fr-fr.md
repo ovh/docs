@@ -46,9 +46,14 @@ Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI, l'espa
 >>
 >> **2\. Autoriser une machine virtuelle cliente (ACL)**
 >>
+>> > [!primary]
+>> >
+>> > Assurez-vous que la machine virtuelle cliente se trouve sur le même réseau privé que le share. Récupérez son [adresse IP privée](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>> >
+>>
 >> Une fois le share créé, cliquez dessus pour ouvrir son tableau de bord, puis accédez à l’onglet `Liste de contrôle d’accès (ACL)`{.action}.
 >>
->> Cliquez sur `Ajouter un nouvel accès`{.action}, renseignez l’adresse IP privée de la machine virtuelle cliente ou une plage CIDR (par exemple, `10.0.0.123` ou `10.1.0.0/24`), puis sélectionnez les droits d’accès :
+>> Cliquez sur `Ajouter un nouvel accès`{.action}, renseignez l’adresse IP privée ou une plage CIDR (par exemple, `10.0.0.123` ou `10.1.0.0/24`), puis sélectionnez les droits d’accès :
 >>
 >> - `Lecture seule`{.action} : accès en lecture uniquement
 >> - `Lecture et écriture`{.action} : accès complet en lecture/écriture
