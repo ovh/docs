@@ -170,61 +170,81 @@ Tout bloc IP importé peut être divisé en blocs plus petits et/ou en adresses 
 > [!warning]
 > Pour pouvoir découper/fusionner un bloc IP existant, il doit être inutilisé (c'est-à-dire au parking) et aucune tâche en attente ne doit lui être associée (par exemple aucune opération de déplacement en attente).
 
-Pour découper un bloc, utilisez l'appel API suivant :
+Pour segmenter votre bloc BYOIP, suivez les étapes ci-dessous :
 
-> [!api]
->
-> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
->
+> [!tabs]
+> Via l'espace client OVHcloud
+>> 1. Rendez-vous sur la page `Adresses IP Publiques`{.action} et repérez votre bloc BYOIP.
+>> 2. Cliquez sur le bouton `⋮ (menu à trois points)`{.action} à droite du tableau.
+>> 3. Sélectionnez `Segmenter`{.action}.
+>> 4. Choisissez le **masque de sous-réseau CIDR** souhaité pour définir la taille des blocs enfants.
+>> 5. Vérifiez l'aperçu des blocs générés, puis cliquez sur `Confirmer`{.action} pour finaliser la segmentation.
+>>
+> Via l'API
+>>
+>>> [!api]
+>>>
+>>> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
+>>>
+>>
+>> Avec les paramètres suivants :
+>>
+>>- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
+>>- slicingSize : la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez saisir la valeur « 25 ».
+>>
+>>> [!primary]
+>>> Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc Additional IP ou adresse individuelle.
+>>
+>> Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, à l'aide de l'appel API suivant :
+>>
+>>> [!api]
+>>>
+>>> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
+>>>
+>>
+>>Avec les paramètres suivants :
+>>
+>>- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
 
-Avec les paramètres suivants :
+Pour agréger plusieurs blocs enfants en un bloc parent, suivez les étapes ci-dessous :
 
-- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
-- slicingSize : la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez saisir la valeur "25".
-
-> [!primary]
-> Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc IP supplémentaire ou adresse individuelle.
-
-Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, à l'aide de l'appel API suivant :
-
-> [!api]
->
-> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
->
-
-Avec les paramètres suivants :
-
-- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
-
-Pour fusionner un bloc dans un bloc parent, utilisez cet appel API :
-
-> [!api]
->
-> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
->
-
-Avec les paramètres suivants :
-
-- ip : le bloc IP que vous souhaitez agréger, en notation CIDR.
-- aggregationIp : le bloc résultant, en notation CIDR.
-
-Le bloc résultant sera un agrégat de tous ses blocs enfants.
-
-> [!primary]
-> Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
-
-Vous pouvez prévisualiser toutes les configurations possibles des blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
-
-> [!api]
->
-> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
->
-
-Avec les paramètres suivants :
-
-- ip : le bloc IP que vous souhaitez fusionner dans un bloc parent, en notation CIDR.
-
-Cet appel renvoie une liste de blocs agrégés possibles et, pour chacun d'eux, donne la liste des blocs enfants à fusionner.
+> [!tabs]
+> Via l'espace client OVHcloud
+>> 1. Rendez-vous sur la page `Adresses IP Publiques`{.action} et repérez l'un des segments de bloc BYOIP que vous souhaitez agréger.
+>> 2. Cliquez sur le bouton `⋮ (menu à trois points)`{.action} à droite du tableau.
+>> 3. Sélectionnez `Agréger`{.action}.
+>> 4. Choisissez le bloc parent souhaité.
+>> 5. Vérifiez l'aperçu des blocs générés, puis cliquez sur `Confirmer`{.action} pour finaliser l'agrégation.
+>>
+> Via l'API
+>>
+>>> [!api]
+>>>
+>>> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
+>>>
+>>
+>> Avec les paramètres suivants :
+>>
+>> - ip : le bloc IP que vous souhaitez agréger, en notation CIDR.
+>> - aggregationIp : le bloc résultant, en notation CIDR.
+>>
+>> Le bloc résultant sera un agrégat de tous ses blocs enfants.
+>>
+>>> [!primary]
+>>> Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
+>>
+>> Vous pouvez prévisualiser toutes les configurations possibles des blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
+>>
+>>> [!api]
+>>>
+>>> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
+>>>
+>>
+>> Avec les paramètres suivants :
+>>
+>> - ip : le bloc IP que vous souhaitez fusionner dans un bloc parent, en notation CIDR.
+>>
+>> Cet appel renvoie une liste de blocs agrégés possibles et, pour chacun d'eux, donne la liste des blocs enfants à fusionner.
 
 **Limites** :
 
