@@ -57,6 +57,7 @@ Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w 
 
 ### Pobierz kopię zapasową, korzystając z narzędzia OVHcloud
 
+<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
 Aby uzyskać dostęp do narzędzia do tworzenia kopii zapasowych OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -79,9 +80,11 @@ Aby uzyskać dostęp do narzędzia do tworzenia kopii zapasowych OVHcloud, klikn
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Teraz możesz wybrać jedną z dwóch dostępnych metod tworzenia nowej kopii zapasowej lub odzyskania kopii już istniejącej.
+<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
 #### 1 - Utwórz nową kopię zapasową bazy danych
 
+<!-- CP-STEPS-START:create-new-backup -->
 Aby utworzyć nową kopię zapasową, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -106,9 +109,11 @@ Aby utworzyć nową kopię zapasową, kliknij poniższe zakładki, aby wyświetl
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 >>
 >> Odczekaj chwilę, aż kopia zapasowa zostanie utworzona. Kiedy kopia będzie już dostępna, będziesz mógł ją pobrać.
+<!-- CP-STEPS-END:create-new-backup -->
 
 #### 2 - Przywracanie kopii bazy danych
 
+<!-- CP-STEPS-START:retrieve-existing-backup -->
 Aby pobrać istniejącą kopię zapasową, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -133,9 +138,11 @@ Aby pobrać istniejącą kopię zapasową, kliknij poniższe zakładki, aby wyś
 >> Aby pobrać kopię zapasową, kliknij przycisk `...`{.action} po prawej stronie kopii, którą chcesz pobrać, a następnie kliknij `Pobierz kopię zapasową`{.action}. Zaakceptuj, po czym odczekaj, aż kopia zapasowa zostanie pobrana.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Pobierz kopię zapasową, używając interfejsu phpMyAdmin
 
+<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
 Aby przeprowadzić operację, zaloguj się do *phpMyAdmin*. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -152,6 +159,7 @@ Aby przeprowadzić operację, zaloguj się do *phpMyAdmin*. W tym celu kliknij p
 >> Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Dostęp do phpMyAdmin`{.action}.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Po zalogowaniu się do *phpMyAdmin* wprowadź informacje dotyczące bazy danych, następnie zaloguj się. Po zalogowaniu przejdź do zakładki `Eksportuj`{.action}, gdzie dostępne są dwie metody eksportu:
 

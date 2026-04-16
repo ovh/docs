@@ -71,6 +71,7 @@ Diverse [offerte di hosting condiviso OVHcloud](/links/web/hosting) contengono u
 
 Una volta scelta la soluzione di hosting, se non sei ancora cliente OVHcloud, clicca su `Ordine`{.action} nelle precedenti pagine commerciali. Segui gli step dell'ordine **senza richiedere il trasferimento del tuo dominio** (questa operazione verrà eseguita nella parte 10 di questa guida).
 
+<!-- CP-STEPS-START:order-hosting-plan -->
 Puoi anche effettuare l’ordine dallo Spazio Cliente OVHcloud. Per farlo, clicca sulle schede seguenti per visualizzare ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -87,6 +88,7 @@ Puoi anche effettuare l’ordine dallo Spazio Cliente OVHcloud. Per farlo, clicc
 > **Passaggio 3**
 >>
 >> Prosegui con l’ordine **senza richiedere il trasferimento del tuo dominio** (operazione che verrà eseguita nella parte 10 di questa guida).
+<!-- CP-STEPS-END:order-hosting-plan -->
 
 Una volta confermato il pagamento, l'installazione dell'hosting verrà avviata. Riceverai un'email al tuo indirizzo email di contatto. che contiene le credenziali di accesso allo spazio di storage FTP (File Transfer Protocol) del tuo hosting Web.
 

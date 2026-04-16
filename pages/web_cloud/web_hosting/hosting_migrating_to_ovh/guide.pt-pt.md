@@ -71,6 +71,7 @@ Várias ofertas de [alojamento partilhado OVHcloud](/links/web/hosting) incluem 
 
 Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio** (esta ação será realizada na parte 10 deste manual).
 
+<!-- CP-STEPS-START:order-hosting-plan -->
 Também pode efetuar a encomenda a partir da sua Área de Cliente OVHcloud. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -87,6 +88,7 @@ Também pode efetuar a encomenda a partir da sua Área de Cliente OVHcloud. Para
 > **Etapa 3**
 >>
 >> Prossiga com a encomenda **sem solicitar a transferência do domínio** (a transferência será efetuada na parte 10 deste manual).
+<!-- CP-STEPS-END:order-hosting-plan -->
 
 Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-mail será enviado para o seu endereço de e-mail de contacto. Este último conterá as credenciais de acesso ao espaço de armazenamento FTP (File Transfer Protocol) do seu alojamento Web.
 

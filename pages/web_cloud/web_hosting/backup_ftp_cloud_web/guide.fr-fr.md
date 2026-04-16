@@ -52,6 +52,7 @@ Contrairement aux hébergements mutualisés OVHcloud, il est impossible d'effect
 
 Un lien de téléchargement de la sauvegarde est généré puis envoyé par e-mail à l'adresse e-mail associée à l'identifiant client administrateur de l'hébergement Cloud Web.
 
+<!-- CP-STEPS-START:access-ftp-backup -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -88,6 +89,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> ![Message de confirmation de lancement de la sauvegarde](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 >>
 >> La sauvegarde prend entre 10 et 15 minutes.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
 ### Télécharger la sauvegarde
 

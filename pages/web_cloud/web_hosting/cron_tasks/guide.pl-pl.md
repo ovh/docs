@@ -61,6 +61,7 @@ Na Twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroków.
 
+<!-- CP-STEPS-START:create-cron-task -->
 > [!tabs]
 > **Krok 1**
 >>
@@ -121,11 +122,13 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroków.
 >> ![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 >>
 >> Zadanie będzie gotowe za kilka minut. Możesz zmienić wszystkie parametry lub usunąć zadanie klikając na `...`{.action} w tabeli prezentacji Twojego panelu konfiguracyjnego OVHcloud.
+<!-- CP-STEPS-END:create-cron-task -->
 
 ### Zmień lub usuń zaplanowane zadanie
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
+<!-- CP-STEPS-START:modify-delete-cron-task -->
 > [!tabs]
 > **Krok 1**
 >>
@@ -142,6 +145,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie planowanego zadania.
 >>
 >> Wybierz przycisk `Zmodyfikuj`{.action} lub `Usuń`{.action} w zależności od czynności, którą chcesz wykonać w odniesieniu do zaplanowanego zadania.
+<!-- CP-STEPS-END:modify-delete-cron-task -->
 
 ### Ograniczenia zaplanowanych zadań na twoim hostingu
 

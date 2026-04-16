@@ -66,6 +66,7 @@ Vários feedbacks de erro podem aparecer no seu navegador em caso de inacessibil
 > Assim, recomendamos vivamente que ative a [renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instrucoes) em todas as subscrições da OVHcloud.
 >
 
+<!-- CP-STEPS-START:check-domain-renewal -->
 Para verificar a validade da assinatura relativa ao seu domínio, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -82,6 +83,7 @@ Para verificar a validade da assinatura relativa ao seu domínio, clique nos sep
 > **Etapa 3**
 >>
 >> Uma vez terminada a renovação, o seu website estará disponível num prazo máximo de 48 horas.
+<!-- CP-STEPS-END:check-domain-renewal -->
 
 ### 2 - Verificar os servidores DNS
 
@@ -89,6 +91,7 @@ Para verificar a validade dos seus [servidores DNS](/pages/web_cloud/domains/dns
 
 **Clique no cenário correspondente à sua situação para visualizar o conteúdo.**
 
+<!-- CP-STEPS-START:check-dns-servers-scenario1 -->
 /// details | Cenário 1 - Nenhuma anomalia nos servidores DNS
 
 Para verificar os servidores DNS declarados, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
@@ -113,6 +116,7 @@ Para verificar os servidores DNS declarados, clique nos separadores abaixo para 
 >> ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:check-dns-servers-scenario1 -->
 
 /// details | Cenário 2 - Aparecer um aviso sobre a zona DNS
 
@@ -138,6 +142,7 @@ O seu website estará disponível num prazo máximo de 48 horas.
 
 ///
 
+<!-- CP-STEPS-START:fix-missing-ns-records -->
 /// details | Cenário 3 - Nenhuma entrada do tipo NS aparece na zona DNS
 
 A **Zona DNS** do seu domínio não contém nenhuma entrada do tipo `NS`:
@@ -174,6 +179,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> O seu website estará disponível num prazo máximo de 24 horas.
 
 ///
+<!-- CP-STEPS-END:fix-missing-ns-records -->
 
 ### 3 - Verificar a zona DNS <a name="step3"></a>
 
@@ -181,6 +187,7 @@ Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à su
 
 Se o seu site não está alojado na infraestrutura da OVHcloud ou é gerido por outro fornecedor, contacte o serviço de suporte em causa.
 
+<!-- CP-STEPS-START:check-hosting-ip-for-dns -->
 Se o seu site está alojado numa das nossas [planos de alojamento web](/links/web/hosting), clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -197,6 +204,7 @@ Se o seu site está alojado numa das nossas [planos de alojamento web](/links/we
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copie o endereço IPv4 e/ou IPv6 do seu domínio.
+<!-- CP-STEPS-END:check-hosting-ip-for-dns -->
 
 De seguida, aceda à [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
 

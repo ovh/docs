@@ -30,6 +30,7 @@ Ao longo da utilização dos seus serviços, pode ter necessidade do nome da sua
 
 ## Instruções
 
+<!-- CP-STEPS-START:find-plan-name -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -46,6 +47,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
 >> Abaixo desta menção, encontrará o nome da sua oferta de alojamento web (por exemplo: Perso, Pro, Performance, etc.).
+<!-- CP-STEPS-END:find-plan-name -->
 
 ## Quer saber mais? <a name="go-further"></a>
 

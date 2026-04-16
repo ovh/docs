@@ -48,6 +48,7 @@ L'unica differenza è che l'SFTP utilizza un canale sicuro per scambiare dati. I
 
 **Clicca su una delle due righe qui sotto in base alla tua offerta di web hosting per visualizzare le spiegazioni.**
 
+<!-- CP-STEPS-START:enable-sftp-starter-perso -->
 /// details | Attivare l'SFTP su un piano di web hosting **gratuito 100M**, **Starter** o **Personale**
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
@@ -75,7 +76,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 
 ///
+<!-- CP-STEPS-END:enable-sftp-starter-perso -->
 
+<!-- CP-STEPS-START:enable-sftp-pro-performance -->
 /// details | Attivare l'SFTP su un piano di web hosting **Pro** o **Performance**
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
@@ -111,6 +114,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Clicca quindi su `Continua`{.action}, quindi su `Conferma`{.action} per completare l'attivazione dell'SFTP per l'utente interessato.
 
 ///
+<!-- CP-STEPS-END:enable-sftp-pro-performance -->
 
 ### Connessione in SFTP al tuo web hosting
 

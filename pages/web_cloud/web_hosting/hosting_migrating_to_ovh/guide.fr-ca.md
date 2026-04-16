@@ -70,6 +70,7 @@ Plusieurs [offres d'hébergement mutualisé OVHcloud](/links/web/hosting) contie
 
 Une fois votre offre d'hébergement choisie, si vous n'êtes pas encore client OVHcloud, cliquez sur le bouton `Commander`{.action} présent sur les pages commerciales ci-dessus. Suivez les étapes de la commande **sans demander le transfert de votre nom de domaine** (cette action sera effectuée à la partie 10 de ce guide).
 
+<!-- CP-STEPS-START:order-hosting-plan -->
 Vous pouvez aussi effectuer la commande depuis votre espace client OVHcloud. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -86,6 +87,7 @@ Vous pouvez aussi effectuer la commande depuis votre espace client OVHcloud. Pou
 > **Étape 3**
 >>
 >> Poursuivez les étapes de la commande **sans demander le transfert de votre nom de domaine** (cette action sera effectuée à la partie 10 de ce guide).
+<!-- CP-STEPS-END:order-hosting-plan -->
 
 Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un e-mail sera envoyé sur votre adresse e-mail de contact. Celui-ci contiendra les identifiants d'accès à l'espace de stockage FTP (File Transfer Protocol) de votre hébergement Web.
 

@@ -67,6 +67,7 @@ Sie können damit Dateien oder Ihre Website online stellen, indem Sie sich [mit 
 
 ### 1 - Login-Daten für den Speicherplatz des Webhostings abrufen <a name="part-1"></a>
 
+<!-- CP-STEPS-START:get-ftp-connection-info -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -91,6 +92,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> > [!primary]
 >> >
 >> > Aus Sicherheitsgründen wird das Passwort eines Benutzers nicht auf der Seite `FTP - SSH`{.action} angezeigt. Wenn Sie es vergessen haben, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/ftp_change_password), um es zu ändern.
+<!-- CP-STEPS-END:get-ftp-connection-info -->
 
 ### 2 - Mit FileZilla auf den Speicherplatz Ihres Hostings zugreifen
 

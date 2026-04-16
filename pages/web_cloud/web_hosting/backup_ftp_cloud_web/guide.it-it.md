@@ -52,6 +52,7 @@ Diversamente dagli hosting condivisi OVHcloud, il ripristino dello spazio FTP no
 
 Viene generato un link per scaricare il backup e inviato via email all'indirizzo email associato all'identificativo cliente amministratore dell'hosting Cloud Web.
 
+<!-- CP-STEPS-START:access-ftp-backup -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
@@ -88,6 +89,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> ![Messaggio di avanzamento del backup](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 >>
 >> La generazione del backup richiede tra i 10 e i 15 minuti.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
 ### Scaricare il backup
 

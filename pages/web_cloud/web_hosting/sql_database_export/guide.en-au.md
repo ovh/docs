@@ -57,6 +57,7 @@ We recommend reading this guide, and focusing on the backup method you wish to u
 
 ### Retrieve a backup via the OVHcloud tool
 
+<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
 To access the OVHcloud backup tool, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -79,9 +80,11 @@ To access the OVHcloud backup tool, click on the tabs below to view each of the 
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> The table that opens will contain all of the databases created as part of your Web Hosting plan. You can now choose between creating a new backup, or recovering an existing one, in two separate steps.
+<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
 #### 1 - Create a new backup of the database
 
+<!-- CP-STEPS-START:create-new-backup -->
 To create a new backup, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -106,9 +109,11 @@ To create a new backup, click on the tabs below to view each of the **4** steps.
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 >>
 >> Wait for the backup to complete. Once it is available, you can retrieve it.
+<!-- CP-STEPS-END:create-new-backup -->
 
 #### 2 - Retrieve a backup of the database
 
+<!-- CP-STEPS-START:retrieve-existing-backup -->
 To retrieve an existing backup, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -136,6 +141,7 @@ To retrieve an existing backup, click on the tabs below to view each of the **4*
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
+<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
 To do this, log in to *phpMyAdmin*. To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -152,6 +158,7 @@ To do this, log in to *phpMyAdmin*. To do this, click on the tabs below to view 
 >> Click the `...`{.action} button to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Once you have reached the interface for connecting to *phpMyAdmin*, enter the information for the database, then log in. Once you have logged in, go to the `Export`{.action} tab, where you can choose from two export methods:
 

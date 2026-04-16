@@ -67,6 +67,7 @@ Permite subir archivos o su sitio web [conectándose al espacio de almacenamient
 
 ### 1 - Obtener la información de conexión al espacio de almacenamiento del alojamiento web <a name="part-1"></a>
 
+<!-- CP-STEPS-START:get-ftp-connection-info -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -91,6 +92,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> > [!primary]
 >> >
 >> > Por motivos de seguridad, la contraseña de un usuario no aparece en la pestaña `FTP - SSH`{.action}. Si ha olvidado la contraseña, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password) para modificarla.
+<!-- CP-STEPS-END:get-ftp-connection-info -->
 
 ### 2 - Conectarse al espacio de almacenamiento de su alojamiento gracias a FileZilla
 

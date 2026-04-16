@@ -41,6 +41,7 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 
 ### Overview of the "Email scripts" section
 
+<!-- CP-STEPS-START:email-scripts-overview -->
 To access the "Email scripts" section, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -86,6 +87,7 @@ To access the "Email scripts" section, click on the tabs below to view each of t
 >> - **Unblock the sending of emails**: Unblocks the sending of automated emails from your web hosting plan. The emails in the queue will also be sent out to recipients.
 >>
 >> To perform the desired action, click the corresponding button, then click `Confirm`{.action}. In some cases, the execution may take several minutes to be fully effective.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -144,6 +146,7 @@ This state occurs when:
 - Too many emails are returned in error.
 - You have disabled the feature in your [OVHcloud Control Panel](/links/manager).
 
+<!-- CP-STEPS-START:resolve-disabled-status -->
 To resolve this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -158,11 +161,13 @@ To resolve this, click on the tabs below to view each of the **3** steps.
 > **Step 3**
 >>
 >> Click `Unblock the sending of emails`{.action}, and wait a few minutes for the sending service to become active again.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
 #### The "Bounce" status
 
 This state occurs when a certain percentage of your emails are automatically returned with an error state.
 
+<!-- CP-STEPS-START:resolve-bounce-status -->
 To resolve this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -180,6 +185,7 @@ To resolve this, click on the tabs below to view each of the **3** steps.
 >>
 >> - If you click on `Unblock the sending of emails`{.action}, the service status will change to *"Force"*. The ratio of **returned emails to the total number of sent emails** authorised before a block will be doubled. The sending will be operational again a few minutes after the unblocking.
 >> - If you click on `Purge emails`{.action}, this will erase all emails from the queue and the service status will change back to *"Enabled"* without doubling the ratio.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
 #### The "spam" status
 
@@ -195,6 +201,7 @@ There are three possible scenarios for this situation:
 
 To resolve this issue, you will need to secure all scripts that can send emails from your hosting plan, using a "Captcha" type system.
 
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
 Then go to the "Email scripts" section of your hosting plan. To do so, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -209,6 +216,7 @@ Then go to the "Email scripts" section of your hosting plan. To do so, click on 
 > **Step 3**
 >>
 >> Click on `Purge emails`{.action} to erase all emails from the queue and the service status will change back to *"Enabled"*. In this case, a purge is required to delete the spam that is waiting to be sent.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
 - **Case 2: Malicious file injected into your hosting system**:
 
@@ -222,6 +230,7 @@ To correct this, you must do at least the following:
 If you are using a CMS, install only "official" plugins and themes.
 Update the CMS, plugins and associated theme as regularly as possible to avoid this happening again.
 
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
 Once you have secured your hosting plan, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -236,6 +245,7 @@ Once you have secured your hosting plan, click on the tabs below to view each of
 > **Step 3**
 >>
 >> Click on `Purge emails`{.action}, this will erase all emails from the queue and the service status will change back to *"Enabled"*.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
 In this case, a purge is required to delete the spam that is waiting to be sent.
 

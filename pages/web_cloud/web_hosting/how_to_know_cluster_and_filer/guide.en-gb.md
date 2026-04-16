@@ -29,6 +29,7 @@ When using your web hosting plan, you may need to know the cluster and filer you
 
 ## Instructions
 
+<!-- CP-STEPS-START:find-cluster-and-filer -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -43,6 +44,7 @@ Click on the tabs below to view each of the **2** steps.
 >> In the **General information** box on the page that appears, retrieve the cluster number under the mention **Cluster** (3 digits between `0` and `9`) and the filer number under the mention **Filer**.
 >>
 >> ![Cluster and Filer number](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
+<!-- CP-STEPS-END:find-cluster-and-filer -->
 
 ## Go further
 

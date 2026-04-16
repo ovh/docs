@@ -59,6 +59,7 @@ Sprawdź najpierw na stronie [Web Cloud Status](https://web-cloud.status-ovhclou
 
 **Kliknij poszukiwaną informację, aby wyświetlić treść.**
 
+<!-- CP-STEPS-START:find-datacenter -->
 /// details | Znaleźć datacenter Twojego hostingu
 
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
@@ -75,6 +76,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 >> W zakładce `Informacje ogólne`{.action} odszukaj `Data center`.
 
 ///
+<!-- CP-STEPS-END:find-datacenter -->
 
 /// details | Znaleźć klaster i filer Twojego hostingu
 
@@ -82,6 +84,7 @@ Zapoznaj się z naszym przewodnikiem "[Poznaj klaster i filer Twojego hostingu](
 
 ///
 
+<!-- CP-STEPS-START:find-wcdb-server-name -->
 /// details | Znaleźć nazwę serwera Web Cloud Databases
 
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
@@ -98,6 +101,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 >> Odszukaj `Nazwa hosta` w sekcji `SQL` w polu `Informacje na temat połączenia`.
 
 ///
+<!-- CP-STEPS-END:find-wcdb-server-name -->
 
 /// details | Znaleźć serwer bazy danych hostingu
 
@@ -139,6 +143,7 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
+<!-- CP-STEPS-START:check-wp-db-credentials -->
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
 > [!tabs]
@@ -156,6 +161,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 >> - **my_user** musi odpowiadać temu, co jest zapisane w `Nazwa użytkownika`;
 >> - **my_password** odnosi się do [hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password);
 >> - **my_server.mysql.db** musi odpowiadać temu, co jest zapisane w `Adres serwera`.
+<!-- CP-STEPS-END:check-wp-db-credentials -->
 
 > [!primary]
 >
@@ -185,6 +191,7 @@ Jeśli posiadasz formułę **Starter** lub **Perso**, w tej sytuacji zalecamy pr
 > Zalecamy zatem, aby w przypadku zaobserwowania nagłego wzrostu rozmiaru bazy danych lub gdy posiadasz stronę typu "blog", która w normalnych warunkach nie jest konsumentem danych, niezwłocznie skontaktować się z [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić Ci wsparcia w tym zakresie.
 >
 
+<!-- CP-STEPS-START:upgrade-plan -->
 Aby dokonać tej zmiany, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -201,6 +208,7 @@ Aby dokonać tej zmiany, kliknij na poniższe karty, aby wyświetlić kolejno ka
 > **Krok 3**
 >>
 >> Kliknij `Zmień ofertę`{.action}.
+<!-- CP-STEPS-END:upgrade-plan -->
 
 Jeśli korzystasz z oferty **Performance**, sprawdź [metodę 2](#methode2).
 
@@ -221,6 +229,7 @@ Możesz również przenieść dane na nową bazę:
 
 Po utworzeniu [kopii zapasowej bazy danych](/pages/web_cloud/web_hosting/sql_database_export) zaloguj się do swojego interfejsu [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin), aby usunąć niepotrzebne dane za pomocą poleceń Drop, Delete i Truncate.
 
+<!-- CP-STEPS-START:recalculate-quota-method3 -->
 Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -237,6 +246,7 @@ Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić k
 > **Krok 3**
 >>
 >> Kliknij `Przelicz rozmiar bazy`{.action}.
+<!-- CP-STEPS-END:recalculate-quota-method3 -->
 
 > [!warning]
 >
@@ -247,6 +257,7 @@ Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić k
 
 Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-baz-danych)".
 
+<!-- CP-STEPS-START:recalculate-quota-method4 -->
 Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -263,6 +274,7 @@ Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić k
 > **Krok 3**
 >>
 >> Kliknij `Przelicz rozmiar bazy`{.action}.
+<!-- CP-STEPS-END:recalculate-quota-method4 -->
 
 > [!warning]
 >
@@ -275,6 +287,7 @@ Poniższy komunikat wskazuje, że Twój serwer [Web Cloud Databases](/pages/web_
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
+<!-- CP-STEPS-START:increase-ram-wcdb -->
 Aby zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#zmiana-oferty-serwera-baz-danych), kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -291,6 +304,7 @@ Aby zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/conf
 > **Krok 3**
 >>
 >> Kliknij przycisk `...`{.action} w rubryce `RAM`, a następnie `Zmień ilość pamięci RAM`{.action}.
+<!-- CP-STEPS-END:increase-ram-wcdb -->
 
 > [!warning]
 >
@@ -316,6 +330,7 @@ Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcj
 
 Ten komunikat błędu oznacza, że baza danych, którą chcesz importować, zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud.
 
+<!-- CP-STEPS-START:check-db-empty-before-import -->
 Upewnij się najpierw, że baza danych jest pusta. W tym celu kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -336,6 +351,7 @@ Upewnij się najpierw, że baza danych jest pusta. W tym celu kliknij na poniżs
 >> Możesz również zaznaczyć kratkę `Usuń aktualną zawartość bazy danych`{.action} tuż przed [uruchomieniem importu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-twojej-kopii-zapasowej-w-panelu-klienta):
 >>
 >> ![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
+<!-- CP-STEPS-END:check-db-empty-before-import -->
 
 W razie potrzeby skontaktuj się z naszą [społecznością użytkowników](/links/community) lub [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
 
@@ -369,6 +385,7 @@ Ten komunikat błędu pojawia się podczas [importu bazy danych](/pages/web_clou
 
 Aby usunąć tę anomalię, możesz:
 
+<!-- CP-STEPS-START:increase-ram-for-import -->
 - Zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitoruj-zuzyta-pamiec-ram). W tym celu kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -385,6 +402,7 @@ Aby usunąć tę anomalię, możesz:
 > **Krok 3**
 >>
 >> Kliknij przycisk `...`{.action} w rubryce `RAM`, a następnie `Zmień ilość pamięci RAM`{.action}.
+<!-- CP-STEPS-END:increase-ram-for-import -->
 
 - Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.)
 
@@ -437,6 +455,7 @@ Sprawdź nazwę odpowiedniego serwera.
 
 **Kliknij odpowiednią sytuację, aby wyświetlić treść.**
 
+<!-- CP-STEPS-START:find-server-name-hosting -->
 /// details | Baza danych na hostingu
 
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
@@ -453,7 +472,9 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 >> Kliknij zakładkę `Bazy danych`{.action}. Nazwa serwera, którą należy wpisać, jest zapisana w kolumnie `Adres serwera`.
 
 ///
+<!-- CP-STEPS-END:find-server-name-hosting -->
 
+<!-- CP-STEPS-START:find-server-name-wcdb -->
 /// details | Baza danych na serwerze Web Cloud Databases
 
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
@@ -470,6 +491,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 >> W zakładce `Informacje ogólne`{.action} nazwa serwera do wpisania znajduje się w sekcji `Informacje na temat połączenia`, pod `SQL`, w polu `Nazwa hosta`.
 
 ///
+<!-- CP-STEPS-END:find-server-name-wcdb -->
 
 ### Nie można nawiązać połączenia z bazą danych Cloud Databases
 

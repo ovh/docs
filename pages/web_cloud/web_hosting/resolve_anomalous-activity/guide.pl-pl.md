@@ -79,6 +79,7 @@ Twój witryn internetowy tworzy wiele połączeń zewnętrznych (API, aktualizac
 >
 > Wykonaj ten krok **tylko po zastosowaniu powyższych rekomendacji** (diagnostyka, poprawki/aktualizacje, bezpieczeństwo). Jeśli niezwykła aktywność zostanie ponownie wykryta podczas następnego skanu, **środki bezpieczeństwa zostaną automatycznie ponownie aktywowane**. Otrzymasz nową wiadomość i blokady pozostaną w mocy do momentu **definitywnego rozwiązania** sytuacji.
 
+<!-- CP-STEPS-START:lift-security-measures -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -98,6 +99,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >>
 >> Pojawia się **baner potwierdzenia** na górze strony: `Twój hosting jest analizowany, aby uniknąć środków bezpieczeństwa.` Śledź postęp klikając w link `Zobacz bieżące zadania`{.action} lub bezpośrednio z zakładki `Bieżące zadania`{.action}.
 >>
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

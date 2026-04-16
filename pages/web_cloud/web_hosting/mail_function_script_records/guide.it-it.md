@@ -41,6 +41,7 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 ### Panoramica della sezione «Script email»
 
+<!-- CP-STEPS-START:email-scripts-overview -->
 Per accedere alla sezione «Script email», clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -86,6 +87,7 @@ Per accedere alla sezione «Script email», clicca sulle schede qui sotto per vi
 >> - **Sblocca l'invio**: sblocca l'invio delle email automatiche del tuo hosting web. Le email presenti nella coda di attesa verranno anch'esse rimesse in distribuzione.
 >>
 >> Per eseguire l'azione desiderata, clicca sul pulsante corrispondente e poi su `Conferma`{.action}. In alcuni casi, l'azione richiesta potrebbe richiedere diversi minuti per essere pienamente efficace.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -144,6 +146,7 @@ Questo stato si verifica quando:
 - troppe email sono tornate in errore;
 - hai disattivato la funzionalità dal tuo [Spazio Cliente OVHcloud](/links/manager).
 
+<!-- CP-STEPS-START:resolve-disabled-status -->
 Per sbloccare la situazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -158,11 +161,13 @@ Per sbloccare la situazione, clicca sulle schede qui sotto per visualizzare in s
 > **Passaggio 3**
 >>
 >> Clicca su `Sblocca l'invio`{.action} e attendi qualche minuto affinché il servizio di invio sia di nuovo attivo.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
 #### Lo stato «Bounce»
 
 Questo stato si verifica quando una certa percentuale delle tue email inviate automaticamente è tornata in errore.
 
+<!-- CP-STEPS-START:resolve-bounce-status -->
 Per sbloccare la situazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -180,6 +185,7 @@ Per sbloccare la situazione, clicca sulle schede qui sotto per visualizzare in s
 >>
 >> - Se clicchi su `Sblocca l'invio`{.action}, lo stato del servizio passerà a *«Force»*. Il rapporto **email tornate in errore / numero totale di email inviate** autorizzato prima di un blocco sarà raddoppiato. L'invio sarà di nuovo operativo qualche minuto dopo lo sblocco.
 >> - Se clicchi su `Elimina le email`{.action}, verranno eliminate tutte le email dalla coda di attesa e lo stato del servizio tornerà a *«Attivo»* senza raddoppiare il rapporto.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
 #### Lo stato «spam»
 
@@ -195,6 +201,7 @@ Sono possibili tre scenari in relazione a questa situazione:
 
 Per risolvere questa situazione, devi proteggere tutti gli script in grado di inviare email dal tuo hosting tramite un sistema di tipo «Captcha».
 
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
 Dopodiché accedi alla sezione «Script email» del tuo hosting. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -209,6 +216,7 @@ Dopodiché accedi alla sezione «Script email» del tuo hosting. Per farlo, clic
 > **Passaggio 3**
 >>
 >> Clicca su `Elimina le email`{.action}: verranno eliminate tutte le email dalla coda di attesa e lo stato del servizio tornerà a *«Attivo»*. In questo caso, l'eliminazione è obbligatoria per cancellare gli spam in attesa di invio.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
 - **Caso n°2: iniezione di file malevoli nel tuo hosting**:
 
@@ -222,6 +230,7 @@ Per risolvere questa situazione, devi eseguire almeno le seguenti operazioni:
 Se utilizzi un CMS, privilegia l'utilizzo di plugin/temi «ufficiali».
 Aggiorna il CMS, i plugin e il tema associati il più regolarmente possibile per evitare che ciò si ripeta.
 
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
 Una volta protetto il tuo hosting, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -236,6 +245,7 @@ Una volta protetto il tuo hosting, clicca sulle schede qui sotto per visualizzar
 > **Passaggio 3**
 >>
 >> Clicca su `Elimina le email`{.action}: verranno eliminate tutte le email dalla coda di attesa e lo stato del servizio tornerà a *«Attivo»*.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
 In questo caso, l'eliminazione è obbligatoria per cancellare gli spam in attesa di invio.
 

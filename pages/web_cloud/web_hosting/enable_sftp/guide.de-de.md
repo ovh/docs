@@ -49,6 +49,7 @@ Der einzige Unterschied besteht darin, dass SFTP einen sicheren Kanal zum Austau
 
 **Öffnen Sie den Abschnitt, der Ihrem Webhosting-Angebot entspricht, um die Erklärungen anzuzeigen.**
 
+<!-- CP-STEPS-START:enable-sftp-starter-perso -->
 /// details | SFTP auf einem Webhosting-Angebot **Kostenloses Hosting 100M**, **Starter** oder **Basic** aktivieren
 
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
@@ -76,7 +77,9 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 
 ///
+<!-- CP-STEPS-END:enable-sftp-starter-perso -->
 
+<!-- CP-STEPS-START:enable-sftp-pro-performance -->
 /// details | SFTP auf einem Webhosting-Angebot **Pro** oder **Performance** aktivieren
 
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
@@ -112,6 +115,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Klicken Sie anschließend auf `Weiter`{.action}, und dann auf `Bestätigen`{.action}, um die Aktivierung des SFTP für den gewünschten Benutzer abzuschließen.
 
 ///
+<!-- CP-STEPS-END:enable-sftp-pro-performance -->
 
 ### Über SFTP auf Ihr Webhosting zugreifen
 

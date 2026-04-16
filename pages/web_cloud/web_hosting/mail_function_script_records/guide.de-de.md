@@ -41,6 +41,7 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 
 ### Übersicht des Bereichs „E-Mail-Skripte"
 
+<!-- CP-STEPS-START:email-scripts-overview -->
 Um auf den Bereich „E-Mail-Skripte" zuzugreifen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -86,6 +87,7 @@ Um auf den Bereich „E-Mail-Skripte" zuzugreifen, klicken Sie auf die Tabs, um 
 >> - **Versand entsperren**: Den Versand automatischer E-Mails von Ihrem Webhosting entsperren. E-Mails in der Warteschlange werden ebenfalls für den Versand freigegeben.
 >>
 >> Um die gewünschte Aktion durchzuführen, klicken Sie auf den Button und dann auf `Bestätigen`{.action}. In einigen Fällen kann es mehrere Minuten dauern, bis die Ausführung wirksam wird.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -144,6 +146,7 @@ Dieser Zustand tritt in den folgenden Fällen ein:
 - Zu viele E-Mails geben Fehlermeldungen zurück.
 - Sie haben die Funktion selbst über Ihr [OVHcloud Kundencenter](/links/manager) deaktiviert.
 
+<!-- CP-STEPS-START:resolve-disabled-status -->
 Klicken Sie zum Entsperren auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -158,11 +161,13 @@ Klicken Sie zum Entsperren auf die Tabs, um die **3** Schritte anzuzeigen.
 > **Schritt 3**
 >>
 >> Klicken Sie auf `Versand entsperren`{.action} und warten Sie einige Minuten, bis der Versand-Dienst wieder aktiv ist.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
 #### Der Zustand „Bounce"
 
 Dieser Zustand tritt ein, wenn ein bestimmter Prozentsatz Ihrer automatisch versandten E-Mails mit einem Fehler abgelehnt werden.
 
+<!-- CP-STEPS-START:resolve-bounce-status -->
 Klicken Sie zum Entsperren auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -180,6 +185,7 @@ Klicken Sie zum Entsperren auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> - Wenn Sie auf `Versand entsperren`{.action} klicken, wird der Status der Dienstleistung auf *"Force"* geändert. Das zulässige Verhältnis von **E-Mails im Fehlerstatus zur Gesamtzahl versendeter E-Mails** bevor eine Sperrung erfolgt, wird verdoppelt. Der Versand wird einige Minuten nach der Entsperrung wieder betriebsbereit sein.
 >> - Wenn Sie auf `E-Mails bereinigen`{.action} klicken, werden alle E-Mails in der Warteschleife gelöscht, und der Status des Dienstes wird wieder auf *"Aktiv"* verschoben, ohne dass sich das Verhältnis verdoppelt.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
 #### Der Zustand „spam"
 
@@ -195,6 +201,7 @@ Drei Szenarien sind möglich:
 
 Um diesen Zustand zu beheben, sichern Sie alle Skripte, die über Ihr Hosting E-Mails senden, mit einem "Captcha" System ab.
 
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
 Gehen Sie dann in den Bereich „E-Mail-Skripte" Ihres Hostings. Klicken Sie dazu auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -209,6 +216,7 @@ Gehen Sie dann in den Bereich „E-Mail-Skripte" Ihres Hostings. Klicken Sie daz
 > **Schritt 3**
 >>
 >> Klicken Sie auf `E-Mails bereinigen`{.action}, um alle E-Mails in der Warteschleife zu löschen. Der Status des Dienstes wird zu *"Aktiv"* geändert. In diesem Fall ist ein Löschen erforderlich, um spam-Nachrichten, die noch auf Versand warten, zu löschen.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
 - **Fall 2: Injektion schädlicher Dateien in Ihr Hosting**:
 
@@ -222,6 +230,7 @@ Um diesen Zustand zu beheben, müssen Sie mindestens folgende Aktionen ausführe
 Wenn Sie ein CMS verwenden, installieren Sie nur "offizielle" Plugins und Themen.
 Aktualisieren Sie das CMS, die dazugehörigen Plugins und Themes so regelmäßig wie möglich, um eine Neuinfektion zu vermeiden.
 
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
 Klicken Sie nach der Sicherung Ihres Hostings auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -236,6 +245,7 @@ Klicken Sie nach der Sicherung Ihres Hostings auf die Tabs, um die **3** Schritt
 > **Schritt 3**
 >>
 >> Klicken Sie auf `E-Mails bereinigen`{.action}, um alle E-Mails in der Warteschleife zu löschen. Der Status des Dienstes wird zu *"Aktiv"* geändert.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
 In diesem Fall ist ein Löschen erforderlich, um spam-Nachrichten, die noch auf Versand warten, zu löschen.
 
