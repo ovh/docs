@@ -48,12 +48,12 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >>
 >> > [!primary]
 >> >
->> > Ensure the client VM is on the same private network as the share. Retrieve its [private IP address](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>> > Retrieve the [private IP address](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) of your client VM and ensure it is on the same private network as the share.
 >> >
 >>
 >> Once the share is created, click on it to open its dashboard, then go to the `Access Control List (ACL)`{.action} tab.
 >>
->> Click `Add a new access`{.action}, enter the private IP address or a CIDR range (e.g., `10.0.0.123` or `10.1.0.0/24`), and select the permissions:
+>> Click `Add a new access`{.action}, enter the private IP address or a CIDR range (e.g., `10.1.0.123` or `10.1.0.0/24`), and select the permissions:
 >>
 >> - `Read-only`{.action}: read access only
 >> - `Read and write`{.action}: full read/write access
@@ -258,9 +258,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >>
 >> **2\. Authorize a client VM**
 >>
->> Ensure the client VM is on the same private network as the share.
->>
->> Retrieve the VM’s [private IP address](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>> Retrieve the [private IP address](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) of your client VM and ensure it is on the same private network as the share.
 >>
 >> Grant access to the share using the VM’s private IP (e.g., 10.1.0.123) via ACL management:
 >>
