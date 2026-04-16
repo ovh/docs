@@ -168,11 +168,11 @@ Ponieważ usługi [Web Cloud Databases](/links/web/databases) mogą być używan
 
 Aby subskrybować usługę Web Cloud Databases do strumienia danych w Logs Data Platform, mogą wystąpić dwa scenariusze.
 
-<!-- CP-STEPS-START:ldp-subscription -->
 **Kliknij każdy przypadek, aby wyświetlić jego zawartość.**
 
 <a name="wcdb-ldp-case1"></a>
 
+<!-- CP-STEPS-START:ldp-subscribe-existing -->
 /// details | Przypadek 1 - Subskrypcja istniejącego strumienia danych w usłudze Logs Data Platform
 
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
@@ -203,7 +203,9 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 >> Po kilku sekundach pojawi się komunikat potwierdzający utworzenie subskrypcji.
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-existing -->
 
+<!-- CP-STEPS-START:ldp-subscribe-new -->
 /// details | Przypadek 2 - Subskrypcja nowego strumienia danych w usłudze Logs Data Platform
 
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
@@ -242,7 +244,7 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 >> Aby subskrybować usługę Web Cloud Databases do tego nowego strumienia, wróć na kartę `Logi`{.action} usługi Web Cloud Databases, a następnie postępuj zgodnie z [Przypadkiem 1](#wcdb-ldp-case1) opisanym powyżej.
 
 ///
-<!-- CP-STEPS-END:ldp-subscription -->
+<!-- CP-STEPS-END:ldp-subscribe-new -->
 
 ## Sprawdź również <a name="go-further"></a>
 

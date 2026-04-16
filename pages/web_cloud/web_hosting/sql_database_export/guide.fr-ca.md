@@ -138,6 +138,7 @@ Pour récupérer une sauvegarde existante, cliquez sur les onglets ci-dessous po
 >> Pour télécharger une sauvegarde, cliquez sur le bouton `...`{.action} à droite de celle que vous souhaitez récupérer, puis sur `Télécharger la sauvegarde`{.action}. Acceptez l'enregistrement sur votre machine, puis patientez le temps que la sauvegarde soit téléchargée.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Récupérer une sauvegarde depuis l'interface web phpMyAdmin
 

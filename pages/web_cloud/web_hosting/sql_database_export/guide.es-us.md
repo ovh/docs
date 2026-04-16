@@ -138,6 +138,7 @@ Para recuperar una copia de seguridad existente, haga clic en las fichas siguien
 >> Para descargar una copia de seguridad, haga clic en el botón `...`{.action} a la derecha de la copia de seguridad que desea recuperar y luego en `Descargar la copia de seguridad`{.action}. Acepte y espere a que se descargue la copia de seguridad.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Recuperar una copia de seguridad desde la interfaz web phpMyAdmin
 

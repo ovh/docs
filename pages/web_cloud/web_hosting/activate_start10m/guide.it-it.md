@@ -40,7 +40,7 @@ Questa guida ti mostra come attivare l’hosting gratuito 100M sul tuo [dominio]
 
 ## Procedura
 
-<!-- CP-STEPS-START:block_1 -->
+<!-- CP-STEPS-START:activate-100m-steps -->
 Per attivare l’hosting gratuito 100M, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -80,7 +80,7 @@ Per attivare l’hosting gratuito 100M, clicca sulle schede qui sotto per visual
 >> La sezione **3** ti ricorda la tariffazione dell’offerta. 
 >>
 >> Durante la sezione **4**, è necessario prendere visione dei contratti e confermare il tuo ordine.
-<!-- CP-STEPS-END:block_1 -->
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

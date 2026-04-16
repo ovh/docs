@@ -138,6 +138,7 @@ To retrieve an existing backup, click on the tabs below to view each of the **4*
 >> To download a backup, click on the `...`{.action} button to the right of the backup you want to retrieve, then on `Download the backup`{.action}. Accept the download to your machine, then wait for the backup to be downloaded.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
