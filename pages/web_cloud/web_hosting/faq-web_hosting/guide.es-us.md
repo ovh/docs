@@ -253,7 +253,7 @@ Para activar un certificado SSL en un alojamiento web para su sitio web, haga cl
 >
 > - [Web hosting - Gestionar un certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 > - [Web hosting - Activar un certificado SSL gratuito Let's Encrypt](/pages/web_cloud/web_hosting/ssl_letsencrypt).
-> - [HWeb hosting - Activar un certificado SSL Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv).
+> - [Web hosting - Activar un certificado SSL Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv).
 > - [Web hosting - Activar un certificado SSL Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev).
 > - [Web hosting - Instalar un certificado SSL personalizado](/pages/web_cloud/web_hosting/ssl_custom).
 
@@ -294,7 +294,7 @@ Una vez que haya elegido, haga clic en las fichas siguientes para ver cada una d
 
 /// details | Al dar de baja el servicio, ¿cómo puedo conservar la solución de correo asociada a mi alojamiento web?
 
-Al dar de baja o eliminar el alojamiento web, también se dará de baja la solución de correo asociada. Para conservar sus direcciones de correo, deberá desvincular la solución de correo **antes* de la baja del alojamiento web correspondiente.
+Al dar de baja o eliminar el alojamiento web, también se dará de baja la solución de correo asociada. Para conservar sus direcciones de correo, deberá desvincular la solución de correo **antes** de la baja del alojamiento web correspondiente.
 
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
@@ -318,7 +318,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 /// details | Tras la baja de un alojamiento web Performance, ¿cómo puedo conservar la solución Web Cloud Databases asociada?
 
 Los planes de hosting **Performance** incluyen una solución Web Cloud Databases que puede activar gratuitamente.<br>
-Al dar de baja o eliminar el alojamiento web **Performance**, también se dará de baja la solución Web Cloud Databases asociada. Para conservar su solución Web Cloud Databases, deberá desvincularla **antes* de la baja del alojamiento.
+Al dar de baja o eliminar el alojamiento web **Performance**, también se dará de baja la solución Web Cloud Databases asociada. Para conservar su solución Web Cloud Databases, deberá desvincularla **antes** de la baja del alojamiento.
 
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
@@ -440,7 +440,7 @@ En ese caso, deberá eliminar el módulo en un clic y volver a instalarlo.
 > - [Restaurar el espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export).
 
-**Solo** después de haber realizado todas las copias de seguridad necesarias, elimine su [módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+**Solo** después de haber realizado todas las copias de seguridad necesarias, elimine su [módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules), haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -457,9 +457,9 @@ En ese caso, deberá eliminar el módulo en un clic y volver a instalarlo.
 >>
 >> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha en la línea del *módulo en 1 clic* correspondiente y seleccione `Eliminar el módulo`{.action}.
 
-La eliminación del *module en 1 clic* puede tardar **varios minutos**.
+La eliminación del *módulo en 1 clic* puede tardar **varios minutos**.
 
-A continuación, elimine la base de datos asociada Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+A continuación, elimine la base de datos asociada, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -593,7 +593,7 @@ Para corregirlo, haga clic en las fichas siguientes para ver cada una de las **4
 >>
 > **Etapa 4**
 >>
->> En la tabla que aparece (que representa la zona DNS del dominio), compare los `Destinos` de las entradas de tipo `NS` presentes en la zona DNS con los nombres de los servidores DNS recuperados anteriormente. Pueden darse tres situaciones. Haga clic en las fichas siguientes para ver cada una de las **3** casos.
+>> En la tabla que aparece (que representa la zona DNS del dominio), compare los `Destinos` de las entradas de tipo `NS` presentes en la zona DNS con los nombres de los servidores DNS recuperados anteriormente. Pueden darse tres situaciones. Haga clic en las fichas siguientes para ver cada uno de los **3** casos.
 
 > [!tabs]
 > **Caso n° 1**
@@ -645,7 +645,7 @@ Para corregirlo, haga clic en las fichas siguientes para ver cada una de las **4
 >> >
 >> > Para más información, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >>
-> **Caso 3**
+> **Caso n°3**
 >>
 >> Los `Destinos` (servidores DNS) de las entradas de tipo `NS` declaradas en la zona DNS del nombre de dominio **no son idénticas** a las recuperadas en la pestaña `Servidores DNS`{.action}. Además, los nombres de los servidores DNS recuperados en la pestaña `Servidores DNS`{.action} no tienen ninguna de las formas descritas en el **Caso n°2**, a excepción de las siguientes formas: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` o `vpsXXXXXX.ovh.ca` (donde cada `X` designa un número comprendido entre **0** y **9**).
 >>

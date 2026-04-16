@@ -94,10 +94,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > -	WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > -	Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
 > -	Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de Drupal. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, consultez les pages officielles [drupal.org](https://www.drupal.org/) ou [drupal.fr](https://www.drupal.fr/).
-> -	PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de PrestaShop. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, cliquez [ici](https://www.prestashop.com) pour vous rendre sur leur page officielle.
+> -	PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de PrestaShop. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, consultez la [page officielle PrestaShop](https://www.prestashop.com).
 >
 
-Vous pouvez également changer le mot de passe d’accès à l’interface d’administration de votre CMS directement depuis votre base de données.<br>
+Vous pouvez également changer le mot de passe d’accès à l’interface d’administration de votre CMS directement depuis votre base de données.
+
 Toutefois, nous vous recommandons vivement d’effectuer l’opération à l’aide de la documentation proposée par l’éditeur de votre CMS ou de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 
 ### Supprimer votre module

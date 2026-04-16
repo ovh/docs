@@ -54,13 +54,13 @@ Se hai dimenticato l’identificativo cliente OVHcloud o la password associata, 
 >>
 > **Passaggio 2**
 >>
->> Indica il tuo identificativo cliente OVHcloud (esempio: **aa00000-ovh**) o l’indirizzo e-mail di contatto associato al tuo identificativo cliente OVHcloud.
+>> Indica il tuo identificativo cliente OVHcloud (esempio: **aa00000-ovh**) o l’indirizzo email di contatto associato al tuo identificativo cliente OVHcloud.
 >>
 > **Passaggio 3**
 >>
 >> Clicca sul pulsante `Invia`{.action}.
 
-La procedura di ripristino verrà inviata al tuo indirizzo e-mail di contatto.
+La procedura di ripristino verrà inviata al tuo indirizzo email di contatto.
 
 > [!success]
 >
@@ -118,7 +118,7 @@ In questa interfaccia è possibile modificare le password dei database associati
 
 ///
 
-/// details | Come modificare la password di un indirizzo e-mail associato a un hosting Web?
+/// details | Come modificare la password di un indirizzo email associato a un hosting Web?
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
@@ -133,17 +133,17 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Passaggio 3**
 >>
->> Nella tabella che appare, clicca sul pulsante `...`{.action} a destra dell’indirizzo e-mail interessato e poi clicca su `Modifica la password`{.action}.
+>> Nella tabella che appare, clicca sul pulsante `...`{.action} a destra dell’indirizzo email interessato e poi clicca su `Modifica la password`{.action}.
 
 Sarà possibile modificare la password associata all’indirizzo di posta elettronica (attenersi alla politica indicata nella finestra di immissione).
 
 > [!success]
 >
-> Trovi tutti i dettagli nella nostra guida "[Modificare la password di un indirizzo e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
+> Trovi tutti i dettagli nella nostra guida "[Modificare la password di un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >
-> Se utilizzi un client di posta (Outlook, Mail di macOS, Thunderbird, ecc...), aggiorna la password del tuo indirizzo e-mail quando il client di posta lo richiede, al momento dell'apertura o della sincronizzazione.
+> Se utilizzi un client di posta (Outlook, Mail di macOS, Thunderbird, ecc...), aggiorna la password del tuo indirizzo email quando il client di posta lo richiede, al momento dell'apertura o della sincronizzazione.
 >
-> Per maggiori informazioni sulla soluzione e-mail *MX Plan*, consulta le nostre [FAQ - Email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+> Per maggiori informazioni sulla soluzione email *MX Plan*, consulta le nostre [FAQ - Email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 
 ///
 
@@ -173,17 +173,17 @@ Ecco i principali step da seguire:
 
 ///
 
-/// details | Come trasferire, senza interruzione di servizio, il tuo sito Web, il tuo database, il tuo dominio e le tue e-mail in OVHcloud?
+/// details | Come trasferire, senza interruzione di servizio, il tuo sito Web, il tuo database, il tuo dominio e le tue email in OVHcloud?
 
 Ecco i principali step da seguire:
 
-1. Ordina l’hosting e gli indirizzi e-mail in OVHcloud.
+1. Ordina l’hosting e gli indirizzi email in OVHcloud.
 2. Creare e preconfigurare una zona DNS per un dominio in OVHcloud.
 3. Ripristinare un backup completo del sito Web.
 4. Importare il backup del sito Web sulla soluzione di hosting OVHcloud.
-5. Ricreare gli indirizzi e-mail in modo identico in OVHcloud.
+5. Ricreare gli indirizzi email in modo identico in OVHcloud.
 6. Dichiarare i server di posta OVHcloud nella zona DNS attiva del dominio.
-7. Trasferire il contenuto dei vecchi indirizzi e-mail nei nuovi indirizzi in OVHcloud.
+7. Trasferire il contenuto dei vecchi indirizzi email nei nuovi indirizzi in OVHcloud.
 8. Riconfigurare il software di posta.
 9. Sostituire i server DNS attivi del dominio con quelli di OVHcloud.
 10. Trasferire un dominio in OVHcloud.
@@ -294,7 +294,7 @@ Una volta effettuata la scelta, clicca sulle schede qui sotto per visualizzare i
 
 /// details | In caso di disattivazione, come conservare il servizio di posta associato all’hosting Web?
 
-In caso di disattivazione o rimozione dell’hosting Web, anche il servizio di posta associato viene disattivato. Per conservare gli indirizzi e-mail è necessario scollegare il servizio di posta elettronica **prima** della disattivazione dell’hosting Web.
+In caso di disattivazione o rimozione dell’hosting Web, anche il servizio di posta associato viene disattivato. Per conservare gli indirizzi email è necessario scollegare il servizio di posta elettronica **prima** della disattivazione dell’hosting Web.
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
@@ -311,14 +311,14 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Passaggio 3**
 >>
->> Segui le istruzioni per ordinare un servizio di posta indipendente che ti permetta di conservare i tuoi indirizzi e-mail già creati.
+>> Segui le istruzioni per ordinare un servizio di posta indipendente che ti permetta di conservare i tuoi indirizzi email già creati.
 
 ///
 
 /// details | In caso di disattivazione di un hosting Web "Performance", come conservare la soluzione "Web Cloud Databases" collegata?
 
 Gli hosting Web **Performance** includono un'offerta Web Cloud Databases attivabile gratuitamente.<br>
-Quando disattivi o elimini il tuo hosting Web **Performance**, viene disattivata anche la soluzione Web Cloud Databases eventualmente associata. Per conservare la soluzione Web Cloud Databases è necessario scollegarla **prima* della disattivazione dell’hosting.
+Quando disattivi o elimini il tuo hosting Web **Performance**, viene disattivata anche la soluzione Web Cloud Databases eventualmente associata. Per conservare la soluzione Web Cloud Databases è necessario scollegarla **prima** della disattivazione dell’hosting.
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
@@ -375,7 +375,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 /// details | Cosa fare se il mio sito Web non funziona correttamente?
 
 Il malfunzionamento del sito Web potrebbe essere dovuto a diversi motivi.<br>
-Per capirne la causa, verifica innanzitutto che nessuno dei tuoi abbonamenti abbia bisogno di essere rinnovato**.
+Per capirne la causa, verifica innanzitutto che nessuno dei tuoi abbonamenti abbia bisogno di essere **rinnovato**.
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
@@ -440,7 +440,7 @@ In questo caso è necessario eliminare il modulo in 1 click e reinstallarlo.
 > - [Ripristinare i dati dello spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export).
 
-**Solo** dopo aver effettuato tutti i backup necessari, elimina il tuo [CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules) Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+**Solo** dopo aver effettuato tutti i backup necessari, elimina il tuo [CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -459,7 +459,7 @@ In questo caso è necessario eliminare il modulo in 1 click e reinstallarlo.
 
 L'eliminazione del *modulo in 1 click* può richiedere **diversi minuti**.
 
-Elimina il database associato Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Elimina il database associato, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -802,13 +802,13 @@ In caso di dubbi, contatta il tuo Webmaster o uno dei nostri [partner](/links/pa
 
 ![notebook_idn](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-Non c'è nulla da fare in questa situazione. Anche se il tuo dominio compare con [rating internazionale (IDN)](https://it.wikipedia.org/wiki/Nome_di_dominio_internazionalizzato) nello Spazio Cliente, funzionerà e verrà visualizzato in modo del tutto normale. L'indirizzo Web del tuo sito verrà visualizzato come richiesto. I tuoi indirizzi e-mail saranno visualizzati come desideri presso i tuoi interlocutori.
+Non c'è nulla da fare in questa situazione. Anche se il tuo dominio compare con [rating internazionale (IDN)](https://it.wikipedia.org/wiki/Nome_di_dominio_internazionalizzato) nello Spazio Cliente, funzionerà e verrà visualizzato in modo del tutto normale. L'indirizzo Web del tuo sito verrà visualizzato come richiesto. I tuoi indirizzi email saranno visualizzati come desideri presso i tuoi interlocutori.
 
 > [!alert]
 >
-> Non è consigliabile utilizzare un indirizzo e-mail con un dominio IDN (Internationalized Domain Name) da un client di posta (Outlook, Mail di macOS, ecc...). Poiché alcuni client di posta non interpretano i domini con caratteri accentati, l'invio delle e-mail è bloccato. Il mittente dell’e-mail riceverà automaticamente un messaggio per informarti che il tuo indirizzo e-mail non esiste.
+> Non è consigliabile utilizzare un indirizzo email con un dominio IDN (Internationalized Domain Name) da un client di posta (Outlook, Mail di macOS, ecc...). Poiché alcuni client di posta non interpretano i domini con caratteri accentati, l'invio delle email è bloccato. Il mittente dell’email riceverà automaticamente un messaggio per informarti che il tuo indirizzo email non esiste.
 >
-> **Si raccomanda di prenotare, in aggiunta al dominio con caratteri accentati, lo stesso dominio senza questi accenti, per evitare qualsiasi incompatibilità a livello di scambi di e-mail.**
+> **Si raccomanda di prenotare, in aggiunta al dominio con caratteri accentati, lo stesso dominio senza questi accenti, per evitare qualsiasi incompatibilità a livello di scambi di email.**
 >
 
 ///

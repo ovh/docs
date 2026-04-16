@@ -30,13 +30,13 @@ Interfejs przedstawiony w tym przewodniku pozwala na scentralizowane wyświetlan
 Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **2** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Przejdź na stronę [Strony WWW](/links/control-panel/web-website-view). Pojawi się tabela z listą wszystkich Twoich stron WWW i ich głównymi informacjami.
 >>
 >> ![widok_strony](images/website_view_tab.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Tabela zawiera następujące kolumny:
 >>

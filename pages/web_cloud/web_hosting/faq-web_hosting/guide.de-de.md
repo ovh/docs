@@ -139,7 +139,7 @@ Dort können Sie das Passwort Ihres E-Mail-Accounts ändern (achten Sie darauf, 
 
 > [!success]
 >
-> Alle details finden Sie in unserer Anleitung „[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“
+> Alle Details finden Sie in unserer Anleitung „[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“
 >
 > Wenn Sie ein E-Mail-Programm verwenden (Outlook, macOS Mail, Thunderbird, etc.), aktualisieren Sie das Passwort für Ihre E-Mail-Adresse, wenn das E-Mail-Programm Sie dazu auffordert, wenn es geöffnet oder synchronisiert wird.
 >
@@ -226,7 +226,7 @@ Damit Ihre Website über eine HTTPS-URL erreichbar ist (Beispiel: `https://domai
 
 OVHcloud bietet [mehrere SSL-Zertifikate](/links/web/hosting-options) für Webhostings an.
 
-So aktivieren Sie ein SSL-Zertifikat auf Ihrem Webhosting für Ihre Website, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Um ein SSL-Zertifikat auf Ihrem Webhosting für Ihre Website zu aktivieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -265,7 +265,7 @@ Sobald das SSL-Zertifikat Ihrer Wahl installiert und bei OVHcloud eingerichtet i
 
 Um das Webhosting zu bestellen, das am besten zu Ihren Bedürfnissen passt, erfahren Sie alles zu unseren Angeboten auf [dieser Seite](/links/web/hosting).
 
-[!primary]
+> [!primary]
 >
 > Abhängig von Ihrem aktuellen Webhosting werden Ihnen möglicherweise nicht alle Angebote gezeigt. Weitere Informationen hierzu finden Sie in unserer Anleitung „[Webhosting-Angebot skalieren](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)“.
 
@@ -331,7 +331,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf der angezeigten Seite und in der Randleiste **Konfiguration** auf die Schaltfläche `...`{.action} rechts neben `Web Cloud Databases` und dann auf `Abrennen`{.action}.
+>> Klicken Sie auf der angezeigten Seite und in der Randleiste **Konfiguration** auf die Schaltfläche `...`{.action} rechts neben `Web Cloud Databases` und dann auf `Abtrennen`{.action}.
 >>
 > **Schritt 3**
 >>
@@ -440,7 +440,7 @@ In diesem Fall müssen Sie Ihr 1-Klick-Modul entfernen und anschließend neu ins
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export).
 
-**Erst nachdem** Sie alle erforderlichen Backups durchgeführt haben, löschen Sie Ihr [1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules) Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+**Erst nachdem** Sie alle erforderlichen Backups durchgeführt haben, löschen Sie Ihr [1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules), klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -505,7 +505,7 @@ Wenn Ihre Website nach einer Änderung mit dieser URL angezeigt wird, ist die sc
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export)
 
-Führen Sie die folgenden Schritte aus, um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -530,7 +530,7 @@ Führen Sie die folgenden Schritte aus, um den Quellcode der Website wiederherzu
 
 Die Wiederherstellung des FTP-Speicherplatzes kann **mehrere Minuten** dauern.
 
-So stellen Sie ein Backup Ihrer Datenbank wieder her, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
+Um ein Backup Ihrer Datenbank wiederherzustellen, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -670,7 +670,7 @@ In diesem Fall ist es am schnellsten, das System in einen früheren Zustand zur�
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export)
 
-Führen Sie die folgenden Schritte aus, um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -695,7 +695,7 @@ Führen Sie die folgenden Schritte aus, um den Quellcode der Website wiederherzu
 
 Die Wiederherstellung des FTP-Speicherplatzes kann **mehrere Minuten** dauern.
 
-So stellen Sie ein Backup Ihrer Datenbank wieder her, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
+Um ein Backup Ihrer Datenbank wiederherzustellen, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

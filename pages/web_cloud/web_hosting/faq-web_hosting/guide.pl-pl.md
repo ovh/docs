@@ -375,7 +375,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 /// details | Co zrobić w przypadku awarii mojej strony www?
 
 U podstaw nieprawidłowego działania twojej strony internetowej może znajdować się kilka przyczyn.<br>
-Aby ustalić źródło problemu, sprawdź, czy żadna z twoich subskrypcji nie wymaga odnowienia **odnowienia**.
+Aby ustalić źródło problemu, sprawdź, czy żadna z twoich subskrypcji nie wymaga **odnowienia**.
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
@@ -440,7 +440,7 @@ W tym przypadku konieczne jest usunięcie modułu za pomocą 1 kliknięcia i pon
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
-**Tylko** po wykonaniu wszystkich niezbędnych kopii zapasowych usuń [Moduły CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+**Tylko** po wykonaniu wszystkich niezbędnych kopii zapasowych usuń [Moduły CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules), kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**

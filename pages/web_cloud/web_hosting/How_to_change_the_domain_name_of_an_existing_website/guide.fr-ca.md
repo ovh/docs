@@ -8,7 +8,7 @@ updated: 2026-04-03
 
 Au cours de la vie de votre site internet, vous pouvez être amené à changer le nom de domaine de votre site.<br>Le cas d'usage le plus courant est un changement de nom d'entreprise.
 
-Ce tutoriel explique les principales étapes à suivre pour changer le nom de domaine d'accès à votre site internet.
+Ce tutoriel explique les principales étapes à suivre pour changer le nom de domaine d'accès à votre site Internet.
 
 **Découvrez comment changer le nom de domaine d'un site existant.**
 

@@ -267,7 +267,7 @@ Para encomendar o alojamento web mais adaptado às suas necessidades, consulte a
 
 > [!primary]
 >
-> Dependendo do seu plano de alojamento web atual, algumas ofertas podem não lhe ser propostas. Consulte o nosso guia "[Fazer evoluir a sua oferta de alojamento web](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)" para mais informações sobre o assumpto.
+> Dependendo do seu plano de alojamento web atual, algumas ofertas podem não lhe ser propostas. Consulte o nosso guia "[Fazer evoluir a sua oferta de alojamento web](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)" para mais informações sobre o assunto.
 
 Depois de fazer a escolha, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
@@ -440,7 +440,7 @@ Será necessário eliminar o módulo 1 clique e voltar a instalá-lo.
 > - [Restaurar o espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export).
 
-**Apenas** Depois de realizar todos os backups necessários, elimine o seu [Módulos "1 clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules) Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+**Apenas** Depois de realizar todos os backups necessários, elimine o seu [Módulos "1 clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules), clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -661,7 +661,7 @@ Neste caso, a solução mais rápida será restaurá-lo para um estado anterior 
 
 > [!alert]
 >
-> O restauro de um alojamento web implica o restauro de todos os websites** que o mesmo contém.
+> O restauro de um alojamento web implica o restauro de **todos os websites** que o mesmo contém.
 >
 > Aquando de um restauro, o conteúdo do seu espaço de armazenamento FTP, ou do da sua base de dados, é substituído de forma irreversível por um backup. Os dados presentes **antes do lançamento da restauração** no espaço de armazenamento FTP ou na base de dados a restaurar serão substituídos e perdidos permanentemente. Por isso, certifique-se de que tem de obter previamente uma cópia de segurança deste conteúdo. Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
 >
@@ -772,7 +772,7 @@ Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um do
 
 > [!success]
 >
-Consulte também o nosso guia detalhado: [O que acontece se a página "Your request has been blocked" aparecer?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
+> Consulte também o nosso guia detalhado: [O que acontece se a página "Your request has been blocked" aparecer?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 

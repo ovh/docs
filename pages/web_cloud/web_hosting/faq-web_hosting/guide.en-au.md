@@ -354,7 +354,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 > **Step 2**
 >>
->> On the page that pops up, in the box **General information**, click on the `...`{.action} button to the right of `RAM`, then on `Change the ammount of RAM`{.action}.
+>> On the page that pops up, in the box **General information**, click on the `...`{.action} button to the right of `RAM`, then on `Change the amount of RAM`{.action}.
 >>
 > **Step 3**
 >>
@@ -438,7 +438,7 @@ You will then need to delete your 1-click module, then reinstall it.
 > If necessary, also refer to these detailed guides:
 >
 > - [Restoring your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup)
-> - [Retrieving the backup of a Web Hosting plan’s databas](/pages/web_cloud/web_hosting/sql_database_export)
+> - [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
 
 **Only** after you have carried out all the necessary backups, delete your [1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules) by clicking on the tabs below to view each of the **3** steps.
 
@@ -482,7 +482,7 @@ Once the deletions are complete, reinstall your *1-click module*, taking care to
 
 > [!success]
 >
-> Find all the details in our guide on [Setting up your website with a 1-click module (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) .
+> Find all the details in our guide on [Setting up your website with a 1-click module (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 ///
 

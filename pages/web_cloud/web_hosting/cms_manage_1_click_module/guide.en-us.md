@@ -94,17 +94,18 @@ Click on the tabs below to display each of the **3** steps in turn.
 > - WordPress: <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla!: <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
 > - Drupal: The publisher of this software does not currently offer any documentation for changing the password for accessing the Drupal administration interface. Please contact the publisher directly on this subject. For more information, see the official page [drupal.org](https://www.drupal.org/).
-> - PrestaShop: The software publisher does not currently offer any documentation for changing the password for accessing the PrestaShop administration interface. Please contact the publisher directly on this subject. For more information, click [here](https://www.prestashop.com) to go to their official page.
+> - PrestaShop: The software publisher does not currently offer any documentation for changing the password for accessing the PrestaShop administration interface. Please contact the publisher directly on this subject. For more information, see the [official PrestaShop page](https://www.prestashop.com).
 >
 
-You can also change the password for accessing your CMS admin interface directly from your database.<br>
+You can also change the password for accessing your CMS admin interface directly from your database.
+
 However, we strongly recommend using the documentation provided by your CMS publisher, or contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 
 ### Delete your module
 
 > [!warning]
 >
-> Backing up your data is an essential part of the [securing of your websites](/pages/web_cloud/web_hosting/secure_your_website). We recommend downloading your data backup regularly on a local device, such as an USB drive or external hard drive, following the instructions in this [guide](/pages/web_cloud/web_hosting/exporter-son-site-web).
+> Backing up your data is essential to [securing your websites](/pages/web_cloud/web_hosting/secure_your_website). We recommend downloading your data backup regularly on a local device, such as a USB drive or external hard drive, following the instructions in this [guide](/pages/web_cloud/web_hosting/exporter-son-site-web).
 >
 
 #### 1 - Identify the database linked to your module <a name="step1"></a>
