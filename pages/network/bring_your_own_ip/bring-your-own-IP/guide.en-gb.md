@@ -173,7 +173,7 @@ To segment your BYOIP block, follow these steps:
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> 1. Navigate to the `Public IP Addresses`{.action} page and locate your BYOIP block.
->> 2. Click the `⋮ (three-dot menu)`{.action} button on the right side of the table.
+>> 2. Click the `⋮`{.action} button on the right side of the table.
 >> 3. Select `Segment`{.action}.
 >> 4. Choose your desired **CIDR subnet mask** to define the size of the child blocks.
 >> 5. Review the preview of the generated blocks, then click `Confirm`{.action} to finalize the segmentation.
@@ -209,7 +209,7 @@ To combine several child blocks into a parent block, follow these steps:
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> 1. Navigate to the `Public IP Addresses`{.action} page and locate one of the BYOIP block segment you want to combine.
->> 2. Click the `⋮ (three-dot menu)`{.action} button on the right side of the table.
+>> 2. Click the `⋮`{.action} button on the right side of the table.
 >> 3. Select `Combine`{.action}.
 >> 4. Choose the desired parent block. 
 >> 5. Review the preview of the generated blocks, then click `Confirm`{.action} to finalize the aggregation.

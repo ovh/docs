@@ -175,7 +175,7 @@ Pour segmenter votre bloc BYOIP, suivez les étapes ci-dessous :
 > [!tabs]
 > Via l'espace client OVHcloud
 >> 1. Rendez-vous sur la page `Adresses IP Publiques`{.action} et repérez votre bloc BYOIP.
->> 2. Cliquez sur le bouton `⋮ (menu à trois points)`{.action} à droite du tableau.
+>> 2. Cliquez sur le bouton `⋮`{.action} à droite du tableau.
 >> 3. Sélectionnez `Segmenter`{.action}.
 >> 4. Choisissez le **masque de sous-réseau CIDR** souhaité pour définir la taille des blocs enfants.
 >> 5. Vérifiez l'aperçu des blocs générés, puis cliquez sur `Confirmer`{.action} pour finaliser la segmentation.
@@ -211,7 +211,7 @@ Pour agréger plusieurs blocs enfants en un bloc parent, suivez les étapes ci-d
 > [!tabs]
 > Via l'espace client OVHcloud
 >> 1. Rendez-vous sur la page `Adresses IP Publiques`{.action} et repérez l'un des segments de bloc BYOIP que vous souhaitez agréger.
->> 2. Cliquez sur le bouton `⋮ (menu à trois points)`{.action} à droite du tableau.
+>> 2. Cliquez sur le bouton `⋮`{.action} à droite du tableau.
 >> 3. Sélectionnez `Agréger`{.action}.
 >> 4. Choisissez le bloc parent souhaité.
 >> 5. Vérifiez l'aperçu des blocs générés, puis cliquez sur `Confirmer`{.action} pour finaliser l'agrégation.
