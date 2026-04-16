@@ -46,6 +46,7 @@ As API da OVHcloud são disponibilizadas para permitir que os programadores ou o
 
 ### 1 - Obter o nome do alojamento web ao qual estava associada a base de dados eliminada
 
+<!-- CP-STEPS-START:retrieve-webhosting-name -->
 Para recuperar o nome do seu alojamento web, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -58,6 +59,7 @@ Para recuperar o nome do seu alojamento web, clique nos separadores abaixo para 
 >> No canto superior esquerdo da página apresentada, encontre o nome do seu alojamento web à direita da menção `Alojamentos /`.
 >>
 >> ![Nome do alojamento web na Área de Cliente OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
 ### 2 - Ligar-se às API OVHcloud e permitir-lhes o acesso aos seus serviços
 

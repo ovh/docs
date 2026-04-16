@@ -53,6 +53,7 @@ Pour vous connecter et utiliser l'accès SSH de votre hébergement web, vous aur
 
 ### 1 - Assurez-vous que l'accès SSH est actif pour l'utilisateur SSH choisi <a name="user-ssh-enablement"></a>
 
+<!-- CP-STEPS-START:check-ssh-access -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -83,9 +84,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> - 3 : Vérifiez le résumé de la modification demandée, puis cliquez sur `Valider`{.action}.
 >>
 >> > Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](/links/web/hosting) bénéficie bien d'un accès SSH.
+<!-- CP-STEPS-END:check-ssh-access -->
 
 ### 2 - Récupérez les informations nécessaires pour vous connecter en SSH <a name="sshlogin"></a>
 
+<!-- CP-STEPS-START:retrieve-ssh-login -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -111,6 +114,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> |**Port de connexion au serveur SSH**| Repérez la mention `Port SSH`. Par défaut, le numéro du port SSH est le `22`.|
 >> |**Utilisateur SSH actif**| Dans le tableau situé en bas de page, retrouvez-le dans la colonne `Login`.<br>Pour rappel, cet utilisateur doit [disposer d'un accès SSH actif](#user-ssh-enablement).|
 >> |**Mot de passe de l'utilisateur SSH**| Si vous avez oublié ce mot de passe, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur concerné dans le tableau situé en bas de page, puis sur `Changer le mot de passe`{.action}.|
+<!-- CP-STEPS-END:retrieve-ssh-login -->
 
 ### 3 - Connectez-vous en SSH à l'espace de stockage de votre hébergement web
 

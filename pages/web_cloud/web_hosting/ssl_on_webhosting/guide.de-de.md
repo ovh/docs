@@ -78,6 +78,7 @@ Hier finden Sie die 4 Links zu unseren Anleitungen zu diesen 4 Lösungen:
 >
 > Da diese Überprüfung von den Einstellungen Ihrer Website abhängt, empfehlen wir Ihnen, sich an einen [spezialisierten Dienstanbieter](/links/partner) zu wenden. Wir können Ihnen in dieser Hinsicht keine Unterstützung bieten.
 
+<!-- CP-STEPS-START:delete-ssl -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -104,6 +105,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Bestätigen Sie im angezeigten Fenster die Deaktivierung, indem Sie auf `Bestätigen`{.action} klicken.
 >>
 >> ![SSL löschen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/ssl-deletion.png){.thumbnail}
+<!-- CP-STEPS-END:delete-ssl -->
 
 Die Deaktivierung des SSL-Zertifikats wird spätestens in einigen Stunden wirksam.
 
