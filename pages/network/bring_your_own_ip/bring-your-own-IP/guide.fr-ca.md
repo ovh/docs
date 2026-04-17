@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2026-02-19
+updated: 2026-04-17
 ---
 
 ## Objectif
@@ -37,9 +37,9 @@ Il est désormais possible d'utiliser des blocs IP ARIN, RIPE ou APNIC sur n'imp
 
 Contrairement à la politique précédente, où un bloc ARIN ne pouvait être utilisé qu'avec des services OVHcloud situés au Canada ou aux États-Unis et un bloc RIPE ne pouvait être utilisé qu'avec des services OVHcloud situés en Europe, cette restriction a été levée.
 
-Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
+Pour que le bloc soit considéré comme valide, les blocs importés doivent être des types suivants :
 
-| ARIN (object « Network type ») | RIPE (object « status ») | APNIC (object « status »)
+| ARIN (object « Network type ») | RIPE (object « status ») | APNIC (object « status ») |
 | :--- | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |  &bull; Allocated-Portable <br>&bull; Allocated-Non-Portable <br>&bull; Assigned-Portable <br>&bull; Assigned-Non-Portable  |
 | **Pour plus d’informations :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[« Description of the INETNUM Object »](https://docs.db.ripe.net/entire-documentation-HTML.html#description-of-the-inetnum-object) |  **Pour plus d'informations :** <br>&bull; [« INETNUM Quick Guide »](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [« Recording network assignments »](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
@@ -118,6 +118,7 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 
 ---
 <!-- CP-NAV-END:network-public-ip -->
+
 ## En pratique
 
 ### Comment commander un service BYOIP
@@ -151,7 +152,7 @@ Le filtrage des adresses IP publiques par tag n’est pas disponible actuellemen
 ### Comment utiliser les adresses IP
 
 Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’une même région.<br>
-Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client où l'API OVHcloud.<br>
+Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client ou l'API OVHcloud.<br>
 
 > [!warning]
 > Certaines opérations disponibles sur l'offre Additional IP ne seront pas disponibles sur l'offre BYOIP.
@@ -262,13 +263,13 @@ Pas au lancement de l'offre BYOIP. Cependant, si tel est votre souhait, nous vou
 
 ### Le fractionnement d'un bloc importé /24 en une taille de bloc plus petite (/25, /26, /27, /28, /29, /30) ou en /32 est-il pris en charge ?
 
-Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage de plages d'addresses](#range-slicing) ci-dessus.
+Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage de plages d'adresses](#range-slicing) ci-dessus.
 
 ### Puis-je importer un numéro AS et une plage d'adresses IP provenant de RIR différents ?
 
 Oui.
 
-### Puis-je importer une plage d’adresses IP ou un numéro AS géré par IP AFRINIC/LACNIC ?
+### Puis-je importer une plage d’adresses IP ou un numéro AS géré par AFRINIC/LACNIC ?
 
 Pas pour le moment.
 

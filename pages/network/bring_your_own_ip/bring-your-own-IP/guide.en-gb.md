@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2026-04-16
+updated: 2026-04-17
 ---
 
 ## Objective
@@ -104,7 +104,7 @@ For more information on route objects, please refer to your RIR’s documentatio
 - APNIC - [Creating Route Objects](https://www.apnic.net/manage-ip/using-whois/guide/creating-route-objects/)
 
 > [!warning]
-> If your imported IP block is already advertized on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
+> If your imported IP block is already advertised on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
 
 <!-- CP-NAV-START:network-public-ip -->
 ---
@@ -116,6 +116,7 @@ For more information on route objects, please refer to your RIR’s documentatio
 
 ---
 <!-- CP-NAV-END:network-public-ip -->
+
 ## Instructions
 
 ### How to order a BYOIP service
@@ -178,7 +179,7 @@ To segment your BYOIP block, follow these steps:
 >> 4. Choose your desired **CIDR subnet mask** to define the size of the child blocks.
 >> 5. Review the preview of the generated blocks, then click `Confirm`{.action} to finalize the segmentation.
 >>
-> Via the OVHCLOUD API
+> Via the OVHcloud API
 >>
 >> > [!api]
 >> >
@@ -215,7 +216,7 @@ To combine several child blocks into a parent block, follow these steps:
 >> 4. Choose the desired parent block. 
 >> 5. Review the preview of the generated blocks, then click `Confirm`{.action} to finalize the aggregation.
 >>
-> Via the OVHCLOUD API
+> Via the OVHcloud API
 >>
 >> > [!api]
 >> >
@@ -244,7 +245,6 @@ To combine several child blocks into a parent block, follow these steps:
 >> - ip: the IP block you want to merge into a parent block, in CIDR notation.
 >>
 >> This call returns a list of possible aggregated blocks and, for each one of them, gives the list of children blocks to be merged back.
->>>>
 
 **Limitations**:
 
