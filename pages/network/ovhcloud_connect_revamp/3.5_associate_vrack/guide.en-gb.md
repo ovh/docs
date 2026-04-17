@@ -6,7 +6,7 @@ updated: 2026-02-18
 
 ## Objective
 
-The **vRack** (Virtual Rack) is OVHcloud's private networking service. To allow your OVHcloud resources (servers, VMs, etc.) to communicate through your OVHcloud Connect link, you must associate the OVHcloud Connect service with a vRack.
+The **vRack** is OVHcloud's private networking service. To allow your OVHcloud resources (servers, VMs, etc.) to communicate through your OVHcloud Connect link, you must associate the OVHcloud Connect service with a vRack.
 
 ## What the association does
 
