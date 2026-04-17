@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer votre NIC pour OVHcloud Link Aggregation sous Windows Server 2019"
 excerpt: "Activez l'agrégation de liens sur votre serveur Windows Server 2019 pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau"
-updated: 2026-03-27
+updated: 2026-04-17
 ---
 
 ## Objectif

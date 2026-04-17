@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'agrégation de liens OLA dans votre espace client"
 excerpt: "Découvrez comment activer l'agrégation de liens OVHcloud dans votre espace client."
-updated: 2022-05-18
+updated: 2026-04-17
 ---
 
 ## Objectif
@@ -30,7 +30,7 @@ L'agrégation se base sur la technologie IEEE 802.3ad, ou Link Aggregation Contr
 
 Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](/links/manager) et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur dans la liste.
 
-Dans l'onglet `Interfaces réseau`{.action} (1), cliquez sur le bouton `Agrégation réseau`{.action} (2) en haut de la section **Contrôleurs d'interface réseau**.
+Dans l'onglet `Interfaces réseau`{.action}, cliquez sur le bouton `Agrégation réseaux`{.action} en haut de la section **Contrôleurs d'interface réseau**.
 
 Deux tableaux vous seront présentés :
 - À gauche, la configuration actuelle de vos interfaces réseau ;
