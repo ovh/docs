@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2026-02-19
+updated: 2026-04-16
 ---
 
 ## Objectif
@@ -180,31 +180,31 @@ Pour segmenter votre bloc BYOIP, suivez les étapes ci-dessous :
 >> 4. Choisissez le **masque de sous-réseau CIDR** souhaité pour définir la taille des blocs enfants.
 >> 5. Vérifiez l'aperçu des blocs générés, puis cliquez sur `Confirmer`{.action} pour finaliser la segmentation.
 >>
-> Via l'API
+> Via l'API OVHCLOUD
 >>
->>> [!api]
->>>
->>> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
->>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
+>> >
 >>
 >> Avec les paramètres suivants :
 >>
->>- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
->>- slicingSize : la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez saisir la valeur « 25 ».
+>> - ip : le bloc IP que vous souhaitez découper, en notation CIDR.
+>> - slicingSize : la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez saisir la valeur « 25 ».
 >>
->>> [!primary]
->>> Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc Additional IP ou adresse individuelle.
+>> > [!primary]
+>> > Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc Additional IP ou adresse individuelle.
 >>
 >> Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, à l'aide de l'appel API suivant :
 >>
->>> [!api]
->>>
->>> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
->>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
+>> >
 >>
->>Avec les paramètres suivants :
+>> Avec les paramètres suivants :
 >>
->>- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
+>> - ip : le bloc IP que vous souhaitez découper, en notation CIDR.
 
 Pour agréger plusieurs blocs enfants en un bloc parent, suivez les étapes ci-dessous :
 
@@ -218,10 +218,10 @@ Pour agréger plusieurs blocs enfants en un bloc parent, suivez les étapes ci-d
 >>
 > Via l'API
 >>
->>> [!api]
->>>
->>> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
->>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
+>> >
 >>
 >> Avec les paramètres suivants :
 >>
@@ -230,15 +230,15 @@ Pour agréger plusieurs blocs enfants en un bloc parent, suivez les étapes ci-d
 >>
 >> Le bloc résultant sera un agrégat de tous ses blocs enfants.
 >>
->>> [!primary]
->>> Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
+>> > [!primary]
+>> > Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
 >>
 >> Vous pouvez prévisualiser toutes les configurations possibles des blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
 >>
->>> [!api]
->>>
->>> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
->>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
+>> >
 >>
 >> Avec les paramètres suivants :
 >>
