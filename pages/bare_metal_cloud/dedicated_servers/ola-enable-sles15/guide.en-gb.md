@@ -43,7 +43,7 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 ## Instructions
 
 Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
-<br>Click the `IPMI`{.action} tab (1).
+Click the `IPMI`{.action} tab (1).
 
 Next, click the `From a Java applet (KVM)`{.action} button (2).
 
@@ -75,9 +75,9 @@ Switch to the tab `Network Interfaces`{.action} and take note of the MAC address
 > Additionally, the MAC address of the **main private** interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:d6`.
 >
 
-Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
+Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interface names.
 
-### Retrieving interfaces names
+### Retrieving interface names
 
 > [!primary]
 >
@@ -120,7 +120,7 @@ Here's an output example:
     link/ether a1:b2:c3:d4:e5:d7 brd ff:ff:ff:ff:ff:ff
 ```
 
-Once you have determined the names of your interfaces, you can configure interfaces bonding in the OS.
+Once you have determined the names of your interfaces, you can configure interface bonding in the OS.
 
 ### Configuring interface bonding
 
@@ -334,7 +334,7 @@ cat /proc/net/bonding/bond0
 
 [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-[How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
+[How to configure your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 [How to configure your NIC for OVHcloud Link Aggregation in Debian 9 to 11](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
 

@@ -113,9 +113,9 @@ Une fois que vous avez déterminé les noms de vos interfaces, vous pouvez confi
 
 Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre serveur :
 
-- **Deux interfaces** : serveurs Advance avec deux cartes réseau physiques.
-- **Quatre interfaces - Double LAG** : serveurs Scale et High Grade avec OLA en mode **Active - Double LAG** (agrégats public + privé). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
-- **Quatre interfaces - Fully Private** : serveurs Scale et High Grade avec OLA en mode **Active - Fully Private** (agrégat privé unique pour le vRack). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
+- **Deux interfaces** : serveurs Advance avec deux cartes réseau physiques.
+- **Quatre interfaces - Double LAG** : serveurs Scale et High Grade avec OLA en mode **Active - Double LAG** (agrégats public + privé). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
+- **Quatre interfaces - Fully Private** : serveurs Scale et High Grade avec OLA en mode **Active - Fully Private** (agrégat privé unique pour le vRack). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
 
 > [!tabs]
 > Deux interfaces
@@ -323,7 +323,7 @@ Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre ser
 >>
 >> > [!warning]
 >> >
->> > Suite à la mise en oeuvre d'OLA en mode Fully Private, l'IP publique n'est plus accessible. Assurez-vous de disposer d'un moyen d'accès alternatif (par exemple via un autre serveur dans le vRack, ou via KVM/IPMI) avant d'appliquer cette configuration.
+>> > Suite à la mise en œuvre d'OLA en mode Fully Private, l'IP publique n'est plus accessible. Assurez-vous de disposer d'un moyen d'accès alternatif (par exemple via un autre serveur dans le vRack, ou via KVM/IPMI) avant d'appliquer cette configuration.
 >> >
 >>
 >> Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :

@@ -1,6 +1,6 @@
 ---
 title: "How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019"
-excerpt: "Enable Link Aggregation in your Windows Server 2019 server to increase your server's availability and boost the efficiency of your network connections"
+excerpt: "Enable OVHcloud Link Aggregation in your Windows Server 2019 server to increase your server's availability and boost the efficiency of your network connections"
 updated: 2026-04-17
 ---
 
@@ -79,7 +79,7 @@ To test that your NIC team is working, ping another server on the same vRack.  I
 
 [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-[How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
+[How to configure your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 [How to configure your NIC for OVHcloud Link Aggregation in Debian 9 to 11](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
 

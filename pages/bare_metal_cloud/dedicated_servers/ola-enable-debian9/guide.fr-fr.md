@@ -48,7 +48,7 @@ L'agrégation repose sur la technologie IEEE 802.3ad, Link Aggregation Control P
 
 > [!warning]
 >
-> Vous devez installer le paquet ifenslave sur le serveur avant d'activer OLA dans l'espace client OVHcloud ou via l'API. Pour ce faire, utilisez la commande suivante :
+> Vous devez installer le paquet ifenslave sur le serveur avant d'activer OLA dans l'espace client OVHcloud ou via l'API. Pour ce faire, utilisez la commande suivante :
 >
 > ```bash
 > apt install ifenslave
@@ -84,7 +84,7 @@ Maintenant que vous savez quelles adresses MAC sont associées à chaque type (p
 > Si vous perdez la connexion réseau à votre serveur, suivez les étapes intitulées « **Ouvrir un KVM** » de [ce guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 >
 
-Pour récupérer les noms des interfaces, lancez la commande suivante :
+Pour récupérer les noms des interfaces, lancez la commande suivante :
 
 ```bash
 ip a
@@ -238,7 +238,7 @@ Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre ser
 >>
 >> > [!warning]
 >> >
->> > Suite à la mise en oeuvre d'OLA en mode Fully Private, l'IP publique n'est plus accessible. Assurez-vous de disposer d'un moyen d'accès alternatif (par exemple via un autre serveur dans le vRack, ou via KVM/IPMI) avant d'appliquer cette configuration.
+>> > Suite à la mise en œuvre d'OLA en mode Fully Private, l'IP publique n'est plus accessible. Assurez-vous de disposer d'un moyen d'accès alternatif (par exemple via un autre serveur dans le vRack, ou via KVM/IPMI) avant d'appliquer cette configuration.
 >> >
 >>
 >> Remplacez le contenu de `/etc/network/interfaces` par ce qui suit :

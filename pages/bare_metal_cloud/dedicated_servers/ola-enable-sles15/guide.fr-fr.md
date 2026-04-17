@@ -83,7 +83,7 @@ Maintenant que vous savez quelles adresses MAC sont associées à chaque type (p
 > Si vous perdez la connexion réseau à votre serveur, suivez les étapes intitulées « **Ouvrir un KVM** » de [ce guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 >
 
-Pour récupérer les noms des interfaces, lancez la commande suivante :
+Pour récupérer les noms des interfaces, lancez la commande suivante :
 
 ```bash
 ip a
@@ -94,7 +94,7 @@ ip a
 > Cette commande va afficher de nombreuses interfaces. Si vous avez des difficultés à déterminer quelles sont vos interfaces physiques, l'adresse IP publique du serveur reste attachée par défaut à la première interface.
 >
 
-Voici un exemple de sortie :
+Voici un exemple de sortie :
 
 ```text
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -123,15 +123,15 @@ Une fois que vous avez déterminé les noms de vos interfaces, vous pouvez confi
 
 ### Configuration de l'agrégation d'interfaces
 
-Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre serveur :
+Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre serveur :
 
-- **Deux interfaces** : serveurs Advance avec deux cartes réseau physiques.
-- **Quatre interfaces - Double LAG** : serveurs Scale et High Grade avec OLA en mode **Active - Double LAG** (agrégats public + privé). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
-- **Quatre interfaces - Fully Private** : serveurs Scale et High Grade avec OLA en mode **Active - Fully Private** (agrégat privé unique pour le vRack). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
+- **Deux interfaces** : serveurs Advance avec deux cartes réseau physiques.
+- **Quatre interfaces - Double LAG** : serveurs Scale et High Grade avec OLA en mode **Active - Double LAG** (agrégats public + privé). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
+- **Quatre interfaces - Fully Private** : serveurs Scale et High Grade avec OLA en mode **Active - Fully Private** (agrégat privé unique pour le vRack). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
 
 > [!tabs]
 > Deux interfaces
->> Créez le fichier de configuration de l'agrégat `/etc/sysconfig/network/ifcfg-bond0` :
+>> Créez le fichier de configuration de l'agrégat `/etc/sysconfig/network/ifcfg-bond0` :
 >>
 >> **IP fixe**
 >>
@@ -179,7 +179,7 @@ Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre ser
 > Quatre interfaces - Double LAG
 >> Cette configuration lie les interfaces publiques dans `bond0` (avec l'IP publique) et les interfaces privées dans `bond1` (pour le vRack).
 >>
->> Créez le fichier de configuration de l'agrégat public `/etc/sysconfig/network/ifcfg-bond0` :
+>> Créez le fichier de configuration de l'agrégat public `/etc/sysconfig/network/ifcfg-bond0` :
 >>
 >> **IP fixe**
 >>
@@ -239,7 +239,7 @@ Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre ser
 >>
 >> /// details | DHCP (bond0 uniquement)
 >>
->> Pour l'agrégat public, utilisez DHCP :
+>> Pour l'agrégat public, utilisez DHCP :
 >>
 >> ```bash
 >> STARTMODE='onboot'
@@ -259,10 +259,10 @@ Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre ser
 >>
 >> > [!warning]
 >> >
->> > Suite à la mise en oeuvre d'OLA en mode Fully Private, l'IP publique n'est plus accessible. Assurez-vous de disposer d'un moyen d'accès alternatif (par exemple via un autre serveur dans le vRack, ou via KVM/IPMI) avant d'appliquer cette configuration.
+>> > Suite à la mise en œuvre d'OLA en mode Fully Private, l'IP publique n'est plus accessible. Assurez-vous de disposer d'un moyen d'accès alternatif (par exemple via un autre serveur dans le vRack, ou via KVM/IPMI) avant d'appliquer cette configuration.
 >> >
 >>
->> Créez le fichier de configuration de l'agrégat `/etc/sysconfig/network/ifcfg-bond0` :
+>> Créez le fichier de configuration de l'agrégat `/etc/sysconfig/network/ifcfg-bond0` :
 >>
 >> ```bash
 >> STARTMODE='onboot'
@@ -315,7 +315,7 @@ Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre ser
 
 ### Application de la configuration
 
-Appliquez la configuration en rechargeant toutes les interfaces avec wicked :
+Appliquez la configuration en rechargeant toutes les interfaces avec wicked :
 
 ```bash
 wicked ifreload all

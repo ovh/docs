@@ -55,11 +55,9 @@ L'opération peut prendre quelques minutes. Une fois celle-ci terminée, l'étap
 - [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9 via ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 - [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 - [Comment configurer votre NIC pour l'agrégation de liens OVHcloud dans SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
-- [Comment configurer votre NIC pour l'agrégation de liens OVHcloud dans Debian 12 ou Ubuntu 24.04 via Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
+- [Comment configurer votre NIC pour l'agrégation de liens OVHcloud dans Debian 12 ou Ubuntu 24.04 via Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 
 ### Vérification du statut OLA
-
-Le statut de la configuration OLA peut être vérifié en bas de la section **Bande passante**, sous la ligne **OVHcloud Link Aggregation**, dans l'onglet `Interfaces réseau`{.action}.
 
 Vous pouvez vérifier le statut de votre agrégation de liens (OLA) dans l'onglet `Interfaces réseau`{.action}. En bas de la section **Bande passante**, repérez la ligne **OVHcloud Link Aggregation**.
 
@@ -70,7 +68,7 @@ Il existe quatre statuts possibles :
 - **Active - Double LAG** : OLA est pré-activé ; les interfaces physiques sont réparties en deux agrégats distincts (un public, un privé).
 
 > [!primary]
-> **Note :** Le statut **Active - Double LAG** est une configuration spécifique généralement réservée aux gammes de serveurs Scale et High-Grade, qui disposent de quatre interfaces réseau physiques.
+> Le statut **Active - Double LAG** est une configuration spécifique généralement réservée aux gammes de serveurs Scale et High-Grade, qui disposent de quatre interfaces réseau physiques.
 >
 
 ### Restauration des valeurs par défaut d'OLA

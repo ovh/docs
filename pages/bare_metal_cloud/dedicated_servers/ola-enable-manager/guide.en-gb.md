@@ -42,7 +42,7 @@ To start configuring OLA, open the `Network interfaces`{.action} tab on your ser
 
 In the `Network interfaces`{.action} tab, click on the `Network Aggregation`{.action} button at the top of the **Network Interface Controllers** section.
 
-You will be shown two tables :
+You will be shown two tables:
 - On the left, the current configuration of your network interfaces;
 - On the right, the simulated configuration of your aggregated network interfaces.
 
@@ -55,19 +55,17 @@ This may take a few minutes. Once it is complete, the next step is to configure 
 - [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9 using ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 - [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 - [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
-- [How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
+- [How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 
 ### Checking the OLA status
 
-The status of the OLA configuration can be verified at the bottom of **Bandwidth** section, under the **OVHcloud Link Aggregation** line, in the `Network interfaces`{.action} tab.
-
 You can verify your Link Aggregation (OLA) status in the `Network interfaces`{.action} tab. At the bottom of the **Bandwidth** section, locate the **OVHcloud Link Aggregation** row.
 
-There are four possible status tags :
-- **Unavailable** : OLA is not supported on this dedicated server model.
-- **Available** : OLA is supported but is not configured.
-- **Active - Fully Private** : OLA is enabled; all physical interfaces are aggregated into a single private link for vRack use.
-- **Active - Double LAG** : OLA is pre-enabled; physical interfaces are split into two separate aggregates (one public, one private).
+There are four possible status tags:
+- **Unavailable**: OLA is not supported on this dedicated server model.
+- **Available**: OLA is supported but is not configured.
+- **Active - Fully Private**: OLA is enabled; all physical interfaces are aggregated into a single private link for vRack use.
+- **Active - Double LAG**: OLA is pre-enabled; physical interfaces are split into two separate aggregates (one public, one private).
 
 > [!primary]
 > **Note:** The **Active - Double LAG** status is a specific configuration typically reserved for Scale and High-Grade server ranges, which feature four physical network interfaces.
