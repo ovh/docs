@@ -5,7 +5,7 @@ updated: 2023-10-12
 ---
 
 > [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir"nesta página.
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
 ## Objetivo
@@ -98,14 +98,14 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Digite "1" e pressione "Enter". (Utilize primeiro a opção 2 se houver um "X" junto de "Desativado".)
+Digite "1" e pressione "Enter". (Utilize primeiro a opção 2 se houver um "X" junto de "Disabled".)
 
 ```text
 Select: [q] > 1
 Password cleared!
 ```
 
-Digite "q" e pressione "Enter "para sair da ferramenta. Digite "y" quando solicitado e pressione "Enter ".
+Digite "q" e pressione "Enter" para sair da ferramenta. Digite "y" quando solicitado e pressione "Enter".
 
 ```text
 Select: [q] > q
@@ -141,9 +141,8 @@ net user Administrator *
 
 ![administratorpe](images/adminpw_win.png){.thumbnail}
 
-Já se pode iniciar sessão como "Administrator"com esta nova palavra-passe.
-
+Já se pode iniciar sessão como "Administrator" com esta nova palavra-passe.
 
 ## Saiba mais
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Junte-se à nossa [comunidade de utilizadores](/links/community).

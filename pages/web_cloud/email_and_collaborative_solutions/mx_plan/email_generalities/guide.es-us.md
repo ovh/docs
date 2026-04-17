@@ -29,15 +29,22 @@ Usted acaba de adquirir una solución MX Plan que permite disfrutar de direccion
 
 ## Requisitos
 
-- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](/links/web/hosting).
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
+- Tener una solución MX Plan, que está disponible en un [plan de hosting](/links/web/hosting).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento <a name="instructions"></a>
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
+Acceda a la sección `Web Cloud`{.action}.
 
 **Contenido**
 
@@ -113,7 +120,7 @@ Consulte a continuación los enlaces de las guías de configuración según su t
 
 A continuación se indican los parámetros necesarios para configurar una dirección de correo electrónico.
 
-##### Parámetros de recepción IMAP y POP <a name="imap-pop"></a>
+#### Parámetros de recepción IMAP y POP <a name="imap-pop"></a>
 
 Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recomendamos que utilice **IMAP**. Sin embargo, puede seleccionar **POP**.
 
@@ -142,7 +149,7 @@ Seleccione la pestaña correspondiente a su tipo de configuración:
 >> - **Puerto**: 995.
 >> - **Tipo de seguridad**: SSL/TLS.
 
-##### Parámetros de envío SMTP <a name="smtp"></a>
+#### Parámetros de envío SMTP <a name="smtp"></a>
 
 Para el envío de mensajes de correo, consulte a continuación los parámetros **SMTP** que debe utilizar:
 
@@ -155,7 +162,7 @@ Para el envío de mensajes de correo, consulte a continuación los parámetros *
 - **Puerto**: 465.
 - **Tipo de seguridad**: SSL/TLS.
 
-### Redirecciones y Alias <a name="rediredirection-alias"></a>
+### Redirecciones y Alias <a name="redirection-alias"></a>
 
 ¿Quiere redirigir su correo a otro destinatario, crear un alias o copiar sistemáticamente otra dirección de correo?
 
@@ -180,10 +187,6 @@ La puesta en marcha de una respuesta automática se realiza directamente conect�
 ## Más información <a name="go-further"></a>
 
 [Utilizar el webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
-
-[Utilizar las redirecciones de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
-
-[MX Plan - Crear una respuesta automática en una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
 
 [Utilizar las redirecciones de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 

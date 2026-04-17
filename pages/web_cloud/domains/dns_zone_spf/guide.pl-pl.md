@@ -68,7 +68,7 @@ Po otrzymaniu wiadomości e-mail od serwera poczty przychodzącej (Inbound Mail 
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
 
 ---

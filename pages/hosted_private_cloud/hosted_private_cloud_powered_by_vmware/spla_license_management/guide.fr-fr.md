@@ -28,6 +28,17 @@ Cela vous offre une meilleure visibilité, réduit le recours aux appels API et 
 - Avoir activé les **licences Windows** dans votre [espace client OVHcloud](/links/manager). Consultez la partie « licence windows » de notre guide « [Présentation de l'espace client Hosted Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud/) » pour plus d'informations.
 - Avoir autorisé la connexion TCP sortante 1688 depuis les machines virtuelles licenciées vers kms.ovh.net dans vos paramètres de pare-feu.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 ### Activer et gérer les licences Windows directement depuis votre espace client OVHcloud
@@ -39,8 +50,7 @@ Cela vous offre une meilleure visibilité, réduit le recours aux appels API et 
 
 #### Consulter l’usage des licences Windows dans l'espace client OVHcloud
 
-1. Rendez-vous dans la section `Hosted Private Cloud`{.action} de votre [espace client OVHcloud](/links/manager) et cliquez sur `Managed VMware vSphere`{.action}.
-2. Sélectionnez votre service, puis ouvrez l'onglet `Datacentres`{.action}.
+1. Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis sélectionnez votre service et ouvrez l'onglet `Datacentres`{.action}.
 
 Vous y trouverez :
 

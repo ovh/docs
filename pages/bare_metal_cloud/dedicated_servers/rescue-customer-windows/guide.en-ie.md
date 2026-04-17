@@ -45,13 +45,21 @@ The option **Windows customer rescue system** is only available for dedicated se
 
 - Microsoft Windows installed on your [dedicated server](/links/bare-metal/bare-metal)
 - At least 16 GB of RAM installed on the server
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
 ### Activating rescue mode for Windows
-
-Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section and then `Dedicated servers`{.action}.
 
 Click on your server's name to open the `General information`{.action} tab.
 

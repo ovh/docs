@@ -1,7 +1,7 @@
 ---
 title: "Logging in to your web hosting plan’s FTP storage space"
 excerpt: "Find out how to log in to your OVHcloud web hosting plan’s FTP storage space"
-updated: 2025-06-15
+updated: 2026-03-31
 ---
 
 ## Objective
@@ -24,7 +24,7 @@ OVHcloud web hosting plans provide you with access to an FTP storage space, whic
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -47,12 +47,12 @@ To connect to your FTP storage space, you will need the following:
 >
 > **If you already have these items**, proceed directly to part 2 "[Access your storage space](#ftp_storage_access)" in this guide.
 
-If you do not have this information at hand, click on the tabs below to view each of the **3** steps.
+If you do not have this information at hand, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -75,27 +75,26 @@ If you do not have this information at hand, click on the tabs below to view eac
 >> > Choose a password for this new user account, click `Next`{.action} and then click `Confirm`{.action}.
 >>
 >> All the elements required to log in to the FTP storage space are present on this page.
+>>
+> **Step 4**
+>>
+>> Below is a description of the essential information displayed on the `FTP - SSH` page:
+>>
+>> - **FTP and SFTP server**: FTP server address of your web hosting plan to access your FTP storage space via FTP or SFTP software.
+>>
+>> > The standard connection port is “21”. Use port “22” for a connection via SFTP (if it is enabled).
+>>
+>> - **SSH Server**: SSH server address of your web hosting plan to access your FTP storage space via a terminal and SSH protocol.
+>>
+>> > The SSH connection port is “22”.
+>>
+>> - **Main login**: Primary FTP username created on your web hosting plan. You can find all of your web hosting plan’s FTP users in the “Login” column of the table.
+>>
+>> > [!primary]
+>> >
+>> > Depending on which OVHcloud [web hosting plan](/links/web/hosting) you have, some of the information listed above (particularly concerning SSH) may not appear.
 
-Below is a description of the essential information displayed on the `FTP - SSH` page:
-
-- **FTP and SFTP server**: FTP server address of your web hosting plan to access your FTP storage space. You can do this by using, for example, client software capable of the (S)FTP protocol.
-
-> The standard connection port is "21". Use port "22" for a connection via SFTP (if it is enabled).
-
-- **SSH Server**: SSH server address of your web hosting plan to access your FTP storage space. This is done using a terminal via SSH protocol.
-
-> The SSH connection port is "22".
-
-- **Main login**: Primary FTP username created on your web hosting plan. You can find all of your web hosting plan’s FTP users in the “Login” column of the table.
-
-> [!primary]
->
-> Depending on which OVHcloud [web hosting plan](/links/web/hosting) you have, some of the information listed above (particularly concerning SSH) may not appear.
->
-
-If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
-
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
+If you have forgotten your FTP or SSH user password, please refer to our guide “[Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)”.
 
 At this stage, you have everything you need to log in to your FTP storage space.
 

@@ -42,7 +42,16 @@ Domyślnie skonfigurowany jest tylko adres IPv4.
 * Dowolny model instancji Public Cloud.
 * Dostęp administracyjny (sudo) przez SSH lub zdalny pulpit (Windows) do Twojego serwera.
 * Posiadanie podstawowej wiedzy w zakresie sieci informatycznych.
-* Dostęp do [Panelu klienta OVHcloud](/links/manager).
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
@@ -65,7 +74,7 @@ Oto krótki słowniczek terminów stosowanych w tym tutorialu:
 
 ### Pobranie danych sieciowych
 
-Zaloguj się do panelu klienta, kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie. Następnie kliknij na `...`{.action} obok odpowiadającej instancji i kliknij na `Szczegóły instancji`{.action}.
+W swoim projekcie Public Cloud kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie. Następnie kliknij na `...`{.action} obok odpowiadającej instancji i kliknij na `Szczegóły instancji`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 

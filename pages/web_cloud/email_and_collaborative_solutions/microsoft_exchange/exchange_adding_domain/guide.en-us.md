@@ -24,18 +24,19 @@ To use the accounts included with an Exchange service, you will need to add a do
 - An [Exchange](/links/web/emails-exchange).
 - One or more domain names.
 - Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit)).
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
-
-### Access your service management
-
-**Exchange**
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
 
 ### Add a domain name
 
@@ -152,7 +153,7 @@ If you have email accounts attached to the domain name you want to detach, you h
 **Attach accounts to another domain name**:
 
 1. Go to the `Email accounts`{.action} tab.
-1 To the right of the accounts you want to modify, click the `...`{.action} button.
+1. To the right of the accounts you want to modify, click the `...`{.action} button.
 1. Click `Modify`{.action}.
 
 ![exchange](images/add_domain_exchange_step8.png){.thumbnail .w-600}

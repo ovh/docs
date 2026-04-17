@@ -10,14 +10,24 @@ This guide provides instructions for deploying the SLES 15 for SAP image on an O
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [HGR-SAP dedicated server](https://www.ovhcloud.com/en-sg/lp/sap/)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
 ### Deployment of the SLES 15 for SAP image
 
-From the OVHcloud Control Panel, you can launch the deployment of the SLES 15 for SAP image provided by OVHcloud. Click the `Install`{.action} button to launch it.
+Click the `Install`{.action} button to launch the deployment of the SLES 15 for SAP image provided by OVHcloud.
 
 ![install-manager](images/install-manager.png){.thumbnail}
 

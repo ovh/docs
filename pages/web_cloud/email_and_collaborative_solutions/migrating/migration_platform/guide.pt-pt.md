@@ -1,7 +1,7 @@
 ---
 title: "Migrar os endereços de e-mail de uma plataforma de e-mail OVHcloud para outra"
 excerpt: "Saiba como migrar os endereços de e-mail de uma plataforma Exchange ou E-mail Pro para outra plataforma Exchange, E-mail Pro, MX Plan ou Zimbra"
-updated: 2026-01-16
+updated: 2026-03-30
 ---
 
 ## Objetivo
@@ -24,7 +24,33 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 
 - Dispor de uma plataforma **"fonte"** com contas configuradas [Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) ou [Zimbra](/links/web/zimbra).
 - Ter uma plataforma de **"destino"** com contas [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) ou MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web OVHcloud](/links/web/hosting)). Esta plataforma deve dispor de contas não configuradas ou disponíveis para acolher os endereços de e-mail que devem ser migrados.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**MX Plan:**
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+**E-mail Pro:**
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instruções
 
@@ -34,7 +60,7 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 >
 > Antes de iniciar a sua migração, se acabou de encomendar a sua nova oferta de e-mail, adicione primeiro o nome de domínio à sua plataforma de e-mail. Se estiver a migrar para uma plataforma MX Plan, o nome de domínio anexado sendo "fixo", pode passar diretamente para a [próxima etapa](#accountsmigration).
 >
-> Selecione o separador `Domínios associados`{.action} ou `Domínio`{.action} na sua plataforma, em seguida clique em `Adicionar um domínio`{.action}. Uma vez o nome de domínio adicionado, certifique-se de que a indicação `OK` ou `Ativo`{.action} está bem presente na coluna `Status`.
+> Selecione o separador `Domínios associados`{.action} ou `Domínio`{.action} na sua plataforma, em seguida clique em `Adicionar domínio`{.action}. Uma vez o nome de domínio adicionado, certifique-se de que a indicação `OK` ou `Ativo`{.action} está bem presente na coluna `Estado`.
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >

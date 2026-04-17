@@ -1,7 +1,7 @@
 ---
 title: 'Cloud Guthaben aufladen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihrem Public Cloud Projekt Guthaben oder Gutscheine hinzufügen'
-updated: 2025-04-28
+updated: 2026-03-31
 ---
 
 ## Ziel
@@ -37,6 +37,7 @@ Das bedeutet, dass dieses Guthabenkonto zuerst belastet wird und dann noch verbl
 
 ### Guthaben aufladen
 
+<!-- CP-STEPS-START:add-credit -->
 Klicken Sie auf den Button `Cloud Guthaben aufladen`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -50,9 +51,11 @@ Ein Bestellschein wird dann erstellt. Klicken Sie im Rahmen der grünen Benachri
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Sobald die Zahlung eingegangen ist, erscheint Ihr Guthaben in der Liste `Guthaben und Gutscheine`.
+<!-- CP-STEPS-END:add-credit -->
 
 ### Einen Gutschein verwenden
 
+<!-- CP-STEPS-START:redeem-voucher -->
 Klicken Sie auf den Button `Gutschein aktivieren`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -62,10 +65,11 @@ Geben Sie im angezeigten Fenster den Code des Gutscheins ein und klicken Sie auf
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 Der Gutschein-Saldo erscheint in der Liste `Guthaben und Gutscheine` .
+<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >
-> Da die Gültigkeitsdauer der Gutscheine in der Regel kürzer ist, wird der Guthaben des Gutscheins vor dem Public Cloud Guthaben verwendet.
+> Gutscheine sind in der Regel einen Monat gültig. Verwenden Sie den Gutschein so schnell wie möglich. Der Gutschein-Saldo wird vor dem Public Cloud Guthaben verwendet.
 >
 
 ## Weiterführende Informationen

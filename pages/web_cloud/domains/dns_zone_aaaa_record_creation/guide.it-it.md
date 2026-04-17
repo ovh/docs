@@ -1,7 +1,7 @@
 ---
 title: "Aggiungere un record DNS di tipo AAAA per un dominio"
 excerpt: "Scopri come aggiungere un record DNS di tipo AAAA a una zona DNS gestita in OVHcloud per il tuo dominio"
-updated: 2025-05-15
+updated: 2026-03-24
 ---
 
 <style>
@@ -38,7 +38,7 @@ Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il d
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
 
 ---
@@ -52,11 +52,30 @@ Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il d
 
 ### Aggiungere un record DNS di tipo AAAA per un dominio
 
-1. Fare clic sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
-2. Fare clic sul pulsante `Aggiungi un record`{.action}.
-3. Nella finestra che si apre, seleziona il campo di puntamento di tipo `AAAA`{.action}.
-4. Inserisci l’indirizzo IP (ad esempio, `2001:db8:1:1b00:203:0:113:0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.) nel campo `Destinazione *` e fare clic su `Continua`{.action}.
-5. Verifica il riepilogo e fare clic su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** step.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul pulsante `Aggiungi un record`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella finestra che si apre, seleziona il campo di puntamento di tipo `AAAA`{.action}.
+>>
+> **Step 4**
+>>
+>> Inserisci l’indirizzo IP (ad esempio, `2001:db8:1:1b00:203:0:113:0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.) nel campo `Destinazione *` e clicca su `Continua`{.action}.
+>>
+> **Step 5**
+>>
+>> Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell’aggiunta sulla rete DNS sia pienamente effettiva.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -72,11 +91,30 @@ Consulta le nostre guide dettagliate:
 
 ### Aggiungere un record DNS di tipo AAAA per il sottodominio di un dominio
 
-1. Fare clic sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
-2. Fare clic sul pulsante `Aggiungi un record`{.action}.
-3. Nella finestra che si apre, seleziona il campo di puntamento di tipo `AAAA`{.action}.
-4. Successivamente, inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, l’indirizzo IP (ad esempio: `2001:db8:1:1b00:203:0:113:0`) del servizio sul quale è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.). Infine fare clic su `Continua`{.action}.
-5. Verifica il riepilogo e fare clic su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** step.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul pulsante `Aggiungi un record`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella finestra che si apre, seleziona il campo di puntamento di tipo `AAAA`{.action}.
+>>
+> **Step 4**
+>>
+>> Inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, l’indirizzo IP (ad esempio: `2001:db8:1:1b00:203:0:113:0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.). Clicca su `Continua`{.action}.
+>>
+> **Step 5**
+>>
+>> Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell’aggiunta sulla rete DNS sia pienamente effettiva.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 

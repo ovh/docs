@@ -39,6 +39,7 @@ It also assumes you have an OVHcloud NAS-HA already available. If you don't, you
 
 You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
+
 ## Instructions
 
 ### Step 1 - Creating a partition and granting your Managed Kubernetes Service access to it

@@ -18,7 +18,6 @@ Nutanix Objects implémente une solution **Object Storage** Compatible S3* sur v
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur le cluster via Prism Central.
 
 ## En pratique

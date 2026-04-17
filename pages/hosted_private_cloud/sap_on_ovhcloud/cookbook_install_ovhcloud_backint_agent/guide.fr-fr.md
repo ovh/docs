@@ -21,11 +21,21 @@ OVHcloud Backint Agent pour SAP HANA a été certifié par SAP, vous pouvez retr
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](/links/manager).
 - [Un projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) dans votre compte OVHcloud avec :
     - [un bucket Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) ;
-    - [un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture et d'écriture.
+    - [un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture et d’écriture.
 - Une base de données SAP HANA installée.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -42,10 +52,9 @@ Dans le cas des sauvegardes SAP HANA, le versioning vous permet de réaliser plu
 
 Vous pouvez vérifier le statut du versioning de votre bucket Object Storage en suivant ces étapes :
 
-1. Accédez à l'[espace client OVHcloud](/links/manager).
-2. Cliquez sur l'univers `Public Cloud`{.action} et sélectionnez votre projet Public Cloud. Puis cliquez sur `Object Storage`{.action}.
-3. Cliquez sur le bucket Object Storage qui accueillera les sauvegardes de votre base de données SAP HANA.
-4. Vérifiez la valeur du paramètre `Versioning`{.action}, ce dernier doit avoir pour valeur `Activé`{.action}. Si la valeur de ce paramètre est `Désactivé`{.action}, cliquez sur `Activer le versioning`{.action}.
+1. Cliquez sur l'univers `Public Cloud`{.action} et sélectionnez votre projet Public Cloud. Puis cliquez sur `Object Storage`{.action}.
+2. Cliquez sur le bucket Object Storage qui accueillera les sauvegardes de votre base de données SAP HANA.
+3. Vérifiez la valeur du paramètre `Versioning`{.action}, ce dernier doit avoir pour valeur `Activé`{.action}. Si la valeur de ce paramètre est `Désactivé`{.action}, cliquez sur `Activer le versioning`{.action}.
 
 | Versioning activé | Versioning désactivé |
 | --- | --- |

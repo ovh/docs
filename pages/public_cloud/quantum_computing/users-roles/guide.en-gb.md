@@ -15,7 +15,17 @@ The **users** of **OVHcloud Quantum computing** are the same as those in your [P
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -28,7 +38,7 @@ To grant access to **OVHcloud Quantum Notebooks**, assign users the **Quantum Op
 
 We recommend adding the **ObjectStore Operator** role to Quantum users, providing read/write access to **OVHcloud Object Storage**.
 
-To apply these roles, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Public Cloud`{.action} section. Select your Public Cloud project and click on `Project Management`{.action} > `Users & Roles`{.action}:
+To apply these roles, click on `Project Management`{.action} > `Users & Roles`{.action}:
 
 ![image](images/03_users_menu.png){.thumbnail}
 

@@ -1,5 +1,6 @@
 ---
-title: Dépannage IP5000
+title: "Dépannage IP5000"
+excerpt: "Découvrez comment résoudre les problèmes courants de votre pieuvre IP5000, comme les pannes réseau ou la reconfiguration"
 flag: hidden
 updated: 2018-03-26
 ---
@@ -24,7 +25,7 @@ Si votre téléphone ne s'allume pas malgré le bon branchement du câble Ethern
 
 ### Lorsque je branche la pieuvre sur mon réseau, celui-ci ne fonctionne plus {#lorsque-je-branche-la-pieuvre-sur-mon-réseau-celui-ci-ne-fonctionne-plus}
 
-Sur certains routeurs, une option du client DHCP envoyé par la pieuvre n'est pas supportée et provoque une coupure du réseau. Pour palier à cette problématique, il vous suffit de définir manuellement les paramètres de votre pieuvre :
+Sur certains routeurs, une option du client DHCP envoyé par la pieuvre n'est pas supportée et provoque une coupure du réseau. Pour pallier cette problématique, il vous suffit de définir manuellement les paramètres de votre pieuvre :
 
 -   Appuyez sur le bouton "**Menu**".
 -   Appuyez sur "**Configuration**".
@@ -59,14 +60,14 @@ Vous devrez contacter notre support pour obtenir le mot de passe de la ligne.
 -   Si la page vous demande un nom d'utilisateur et un mot de passe il s'agit de **Polycom** et le mot de passe est **456**.
 -   Vous devriez arriver sur cette page :
 
-![](images/PIP-1.png){.thumbnail}
+![Page d'accueil de l'interface web Polycom](images/PIP-1.png){.thumbnail}
 
 -   Cliquez sur l'onglet "**SIP**".
 -   Dans la catégorie "**Servers**", entrez dans le champ "**Address**" de la sous catégorie "**Outbound Proxy**" : 91.121.129.20
 -   Dans le champ "**Port**" de cette catégorie, entrez **5962**
 -   Dans le champ "**Transport**", choisissez "**UDP Only**"'
 
-![](images/2015-06-08-145430_648x194_scrot.png){.thumbnail}
+![Configuration du Outbound Proxy SIP](images/2015-06-08-145430_648x194_scrot.png){.thumbnail}
 
 -   Dans la catégorie "**Server 1**" et "**Server 2**" :
     -   Dans le champ "**Address**", entrez le domaine de votre ligne : **sip.ovh.xx (où xx est le code du pays : Belgique = be, France = fr, Suisse = ch, Espagne = es, Allemagne = .de et Angleterre = co.uk)**.
@@ -74,7 +75,7 @@ Vous devrez contacter notre support pour obtenir le mot de passe de la ligne.
     -   Dans le champ "**Expires**" entrez 1800.
 -   Pour sauvegarder la configuration, appuyez sur le bouton "**Submit**".
 
-![](images/2015-06-08-150017_709x715_scrot.png){.thumbnail}
+![Configuration des serveurs SIP Server 1 et Server 2](images/2015-06-08-150017_709x715_scrot.png){.thumbnail}
 
 -   Cliquez sur "**Lines**" dans le menu principal.
     -   Dans le champ "**Display Name**", entrez le numéro de votre ligne au format international.
@@ -87,4 +88,8 @@ Vous devrez contacter notre support pour obtenir le mot de passe de la ligne.
 
 La pieuvre va redémarrer.
 
-![](images/2015-06-08-161039_678x426_scrot.png){.thumbnail}
+![Configuration des paramètres de la ligne SIP](images/2015-06-08-161039_678x426_scrot.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

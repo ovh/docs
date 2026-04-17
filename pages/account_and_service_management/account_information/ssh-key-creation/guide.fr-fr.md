@@ -11,37 +11,51 @@ Ce guide vous aidera à ajouter une clé SSH dans le panneau de contrôle OVHclo
 <iframe class="video" src="https://embed.api.video/vod/vi1ESnfEbtbkhZWex1HUcdBN" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
 
 ## Étape 1 : Accéder à la page "Mes offres et services"
+<!-- CP-STEPS-START:access-services-page -->
 Pour commencer, vous devez accéder à la page "Mes offres et services" dans le panneau de contrôle OVHcloud. Vous pouvez y accéder en vous rendant sur l'URL suivante : [https://www.ovh.com/manager/#/billing/autorenew/](https://www.ovh.com/manager/#/billing/autorenew/). Assurez-vous d'être connecté à votre compte OVHcloud pour accéder à cette page.
 
 ![Étape 1](images/screenshot-1.fr-fr.jpg){.thumbnail}
+<!-- CP-STEPS-END:access-services-page -->
 
 ## Étape 2 : Cliquer sur l'onglet "Clé SSH"
+<!-- CP-STEPS-START:click-ssh-key-tab -->
 Une fois que vous êtes sur la page "Mes offres et services", cliquez sur l'onglet "Clé SSH" pour accéder aux paramètres de clé SSH.
 
 ![Étape 2](images/screenshot-2.fr-fr.jpg){.thumbnail}
+<!-- CP-STEPS-END:click-ssh-key-tab -->
 
 ## Étape 3 : Cliquer sur le bouton "Ajouter une clé SSH"
+<!-- CP-STEPS-START:add-new-ssh-key -->
 Cliquez sur le bouton "Ajouter une clé SSH" pour afficher le menu déroulant. Dans ce menu, cliquez sur l'option "Dédie" pour ajouter une nouvelle clé SSH pour vos serveurs dédiés.
 
 ![Étape 3](images/screenshot-3.fr-fr.jpg){.thumbnail}
+<!-- CP-STEPS-END:add-new-ssh-key -->
 
 ## Étape 4 : Vérification de la fenêtre modale "Ajouter une clé SSH"
+<!-- CP-STEPS-START:verify-modal-window -->
 Après avoir cliqué sur l'option "Dédie", une fenêtre modale "Ajouter une clé SSH" devrait s'afficher. Cette fenêtre vous permettra de saisir les informations nécessaires pour votre nouvelle clé SSH.
+<!-- CP-STEPS-END:verify-modal-window -->
 
 ## Étape 5 : Saisir l'ID de la clé SSH
+<!-- CP-STEPS-START:enter-key-id -->
 Dans la fenêtre modale "Ajouter une clé SSH", saisissez une valeur dans le champ "ID" (ou "Identifiant"). Pour cet exemple, vous pouvez saisir un ID aléatoire.
 
 ![Étape 5](images/screenshot-5.fr-fr.jpg){.thumbnail}
+<!-- CP-STEPS-END:enter-key-id -->
 
 ## Étape 6 : Saisir la clé SSH
+<!-- CP-STEPS-START:enter-ssh-key -->
 Saisissez une valeur dans le champ "Clé" au format "ssh-rsa AAAArandom123" (remplacez "AAArandom123" par votre clé SSH réelle).
 
 ![Étape 6](images/screenshot-6.fr-fr.jpg){.thumbnail}
+<!-- CP-STEPS-END:enter-ssh-key -->
 
 ## Étape 7 : Confirmer l'ajout de la clé SSH
+<!-- CP-STEPS-START:confirm-ssh-key -->
 Cliquez sur le bouton "Confirmer" pour ajouter la nouvelle clé SSH. Votre clé SSH est maintenant ajoutée et prête à être utilisée pour établir des connexions sécurisées avec vos serveurs dédiés.
 
 ![Étape 7](images/screenshot-7.fr-fr.jpg){.thumbnail}
+<!-- CP-STEPS-END:confirm-ssh-key -->
 
 *Note :* Une clé SSH (Secure Shell) ^[1] est une paire de clés utilisée pour établir des connexions sécurisées entre votre ordinateur et vos serveurs dédiés.
 

@@ -13,7 +13,17 @@ updated: 2020-05-27
 ## Requisitos
 
 - Dispor de uma infraestrutura Private Cloud com versão 6.0 ou superior.
-- Aceder à [Área de Cliente OVHcloud](/links/manager), na secção `Serviços Dedicados`{.action}.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Caminho de navegação:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Selecione o seu serviço vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instruções
 

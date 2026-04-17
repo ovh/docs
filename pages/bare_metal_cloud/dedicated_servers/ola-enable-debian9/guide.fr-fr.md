@@ -33,14 +33,18 @@ L'agrégation repose sur la technologie IEEE 802.3ad, Link Aggregation Control P
 
 ## Prérequis
 
-- Un [serveur dédié](/links/bare-metal/bare-metal) des gammes Advance, Scale ou High Grade dans votre compte OVHcloud
-- Un accès à l'[espace client OVHcloud](/links/manager)
+- [Avoir configuré votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-## En pratique
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
 
-> [!primary]
-> Les valeurs (adresses MAC, adresses IP, etc.) indiquées dans les configurations et exemples ci-dessous le sont à titre d'exemples. Vous devez bien entendu remplacer ces valeurs par les vôtres.
->
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -64,6 +68,12 @@ Rendez-vous dans l'onglet `Interfaces réseau`{.action} et notez les adresses MA
 >
 > Quant à l'adresse MAC de l'interface **privée principale**, il s'agit de celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:d6`.
 >
+> Si la configuration réseau de votre système utilise plutôt `Netplan`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
+>
+
+## En pratique
+
+Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
 
 Maintenant que vous savez quelles adresses MAC sont associées à chaque type (public/privé) d'interface, vous devez récupérer les noms des interfaces.
 

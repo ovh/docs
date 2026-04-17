@@ -229,7 +229,7 @@ La función de backup automatizado está basada en los snapshots VPS. Le recomen
 
 Los snapshots son imágenes instantáneas de su sistema en ejecución («live snapshots»). Para garantizar la disponibilidad de su sistema durante la creación del snapshot, el software QEMU permite preparar el sistema de archivos para este proceso.
 
-El agente "**qemu-guest-agent**" no è installato di default sulla maggior parte delle distribuzioni. Además, las restricciones de licencia pueden impedir que OVHcloud lo incluya en las imágenes de los SO disponibles. Por lo tanto, le recomendamos que compruebe si este agente está activado en su VPS y, en caso negativo, que lo instale. Para ello, conéctese a su VPS por SSH y siga las instrucciones que se indican en función de su sistema operativo.
+El agente "**qemu-guest-agent**" no está instalado de forma predeterminada en la mayoría de distribuciones. Además, las restricciones de licencia pueden impedir que OVHcloud lo incluya en las imágenes de los SO disponibles. Por lo tanto, le recomendamos que compruebe si este agente está activado en su VPS y, en caso negativo, que lo instale. Para ello, conéctese a su VPS por SSH y siga las instrucciones que se indican en función de su sistema operativo.
 
 <a name="deb"></a>
 

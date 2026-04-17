@@ -13,9 +13,18 @@ The OVHcloud Load Balancer service supports a variety of load balancing algorith
 ## Requirements
 
 - An [OVHcloud Load Balancer](/links/network/load-balancer) service in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - You need to have created a server farm.
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 ### Available Load Balancing Algorithms

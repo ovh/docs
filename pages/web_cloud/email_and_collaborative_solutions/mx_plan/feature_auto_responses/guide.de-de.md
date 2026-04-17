@@ -13,21 +13,27 @@ Mit diesem OVHcloud Feature können Sie einen E-Mail-Responder einrichten, der a
 ## Voraussetzungen
 
 - Sie verfügen über einen MX Plan, als E-Mail-Dienst enthalten in einem [OVHcloud Webhosting-Angebot](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting), oder als eigenständige Lösung bestellbar.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
-> Wenn Ihre E-Mail-Adresse in [**Exchange**](/links/web/emails-hosted-exchange) oder [**Email Pro**](/links/web/email-pro) eingerichtet ist oder der Bereich für Auto-Antworten `Verwaltung der Auto-Antworten`{.action} in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung zum [Einrichten einer automatischen Antwort in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies) befolgen.
+> Wenn Ihre E-Mail-Adresse in [**Exchange**](/links/web/emails-hosted-exchange) oder [**E-Mail Pro**](/links/web/email-pro) eingerichtet ist oder der Bereich für Auto-Antworten `Verwaltung der Auto-Antworten`{.action} in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung zum [Einrichten einer automatischen Antwort in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies) befolgen.
 
 ### Automatische Antwort erstellen
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `MX Plan`{.action}.
-1. Wählen Sie die betreffende Domain aus.
-1. Klicken Sie dann im Tab `E-Mails`{.action} auf den Button `Verwaltung der Auto-Antworten`{.action}.
+Klicken Sie dann im Tab `E-Mails`{.action} auf den Button `Verwaltung der Auto-Antworten`{.action}.
 
 Sie werden zum Fenster `Verwaltung der Auto-Antworten` weitergeleitet, in dem alle für Ihr E-Mail-Angebot verfügbaren automatischen Antworten angezeigt werden.
 
@@ -39,8 +45,8 @@ Das Fenster "Eine Auto-Antwort hinzufügen" wird angezeigt. Füllen Sie das Form
 
 - `Art der Auto-Antwort`:
 
-**An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.<br>
-**Frei**: Für eine Alias-Adresse zu verwenden. Ein Alias ist nicht mit einem bestehenden Account verknüpft.
+    - **An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.
+    - **Frei**: Für eine Alias-Adresse zu verwenden. Ein Alias ist nicht mit einem bestehenden Account verknüpft.
 
 - `Mailbox` oder `Name der Auto-Antwort`: Wählen Sie den vom Responder betroffenen E-Mail-Account oder geben Sie die Alias-Adresse ein.
 - `Dauer der automatischen Antwort`:
@@ -67,7 +73,7 @@ Nachdem Ihre automatische Antwort erstellt wurde, wird sie in der Tabelle im Ber
 
 ![Hosting](images/email_responder02.png){.thumbnail}
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [E-Mail FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

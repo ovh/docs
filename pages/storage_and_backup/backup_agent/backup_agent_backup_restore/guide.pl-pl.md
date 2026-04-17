@@ -14,8 +14,18 @@ Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare M
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Serwer Bare Metal z zainstalowanym Backup Agent. Zapoznaj się z naszym przewodnikiem "[Jak skonfigurować pierwszą kopię zapasową](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", aby uzyskać więcej informacji.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## W praktyce
 

@@ -32,7 +32,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains). Au-dessus du tableau qui s'affiche, cliquez sur le bouton `Exporter en CSV`{.action}.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains). Au-dessus du tableau qui s'affiche, cliquez sur le bouton `Exporter en CSV`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

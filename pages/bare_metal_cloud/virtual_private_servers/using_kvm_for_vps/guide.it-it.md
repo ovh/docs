@@ -74,7 +74,7 @@ L’URL di accesso verrà visualizzato nella sezione `RESPONSE`.
 
 ### Utilizzo della console KVM
 
-Se accedi al KVM dal tuo Spazio Cliente OVH, viene visualizzata una finestra pop-up. Per utilizzarlo a schermo intero, clicca sul link `Apri in una nuova finestra`{.action} nell’angolo in basso a destra. In genere verrà aperta una nuova scheda del browser.
+Se accedi al KVM dal tuo Spazio Cliente OVHcloud, viene visualizzata una finestra pop-up. Per utilizzarlo a schermo intero, clicca sul link `Apri in una nuova finestra`{.action} nell’angolo in basso a destra. In genere verrà aperta una nuova scheda del browser.
 
 ![Connessione al KVM](images/kvm_screen.png){.thumbnail}
 
@@ -128,6 +128,6 @@ sudo systemctl restart keyboard-setup
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

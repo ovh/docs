@@ -15,8 +15,18 @@ Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal c
 
 ## Prerequisiti
 
-- Essere connessi al [Spazio Cliente OVHcloud](/links/manager).
 - Un server Bare Metal su cui è installato Backup Agent. Consulta la nostra guida "[Come configurare il tuo primo backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" per ulteriori informazioni.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## Procedura
 

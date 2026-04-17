@@ -12,7 +12,7 @@ OVHcloud pone a su disposición un espacio que le permitirá consultar, administ
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicios en cuestión, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en su [área de cliente de OVHcloud](/links/manager) (haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú contextual, seleccione en `Mis soluciones y servicios`{.action}. Por último, haga clic en la pestaña `Contratos`{.action}).
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicios en cuestión, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en la página [Mis contratos](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -26,8 +26,8 @@ OVHcloud pone a su disposición un espacio que le permitirá consultar, administ
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Invoices](/links/control-panel/billing-invoices)
-- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Invoices`{.action}
+- **Enlace directo:** [Mis facturas](/links/control-panel/billing-invoices)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis facturas`{.action}
 
 ---
 <!-- CP-NAV-END:billing-invoices -->
@@ -36,7 +36,7 @@ OVHcloud pone a su disposición un espacio que le permitirá consultar, administ
 
 > [!primary]
 >
-> Cada factura se enviará por correo electrónico y podrá acceder a ella a través de un enlace accesible. Podrá acceder autenticándose en el [área de cliente de OVHcloud](/links/manager). Todas las facturas también están disponibles desde la página de inicio del área de cliente.
+> Cada factura se enviará por correo electrónico y podrá acceder a ella a través de un enlace accesible. Podrá acceder autenticándose en el [área de cliente de OVHcloud](/links/control-panel/billing-invoices). Todas las facturas también están disponibles desde la página de inicio del área de cliente.
 >
 
 ### Partes de una factura de OVHcloud
@@ -59,7 +59,8 @@ La factura del servicio de OVHcloud se enviará una vez realizado el pago de un 
 
 #### Consultar y administrar las facturas de OVHcloud
 
-Para consultar sus facturas, abra la página [Facturas](/links/control-panel/billing-invoices).
+<!-- CP-STEPS-START:view-manage-bills -->
+Para consultar sus facturas, abra la página [Mis facturas](/links/control-panel/billing-invoices).
 
 ![Facturación](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 
@@ -113,14 +114,17 @@ Si desea exportar todas sus facturas, utilice los botones `Exportar todo en CSV`
 Si quiere exportar sólo una parte, marque las casillas correspondientes en la primera columna de la tabla para seleccionar las facturas que le interesen. En el menú `Acciones masivas`{.action} podrá elegir dos nuevas acciones: `Exportar la selección en formato CSV`{.action} o `Exportar la selección en formato PDF`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Pagar sus facturas <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 Para abonar las facturas pendientes de pago, haga clic en el menú `Acciones massivas`{.action} y, seguidamente, en el botón `Abonar el importe pendiente ahora`{.action}.
 
 ![Abonar el importe pendiente](images/pay_debt.png){.thumbnail}
 
 Se generará una [orden de pedido de regularización](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Solicitar la cancelación de una factura
 
@@ -129,11 +133,14 @@ Se generará una [orden de pedido de regularización](/pages/account_and_service
 > Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Si ha recibido una factura que no considera legítima y desea solicitar el reembolso o hacer valer su [derecho de desistimiento](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#ejercer-el-derecho-de-desistimiento), puede realizar una reclamación a través de su [área de cliente OVHcloud](/links/manager), sujeto a la aplicación de nuestras [Condiciones Generales de Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf).
+<!-- CP-STEPS-START:request-cancellation-ticket -->
+Si ha recibido una factura que no considera legítima y desea solicitar el reembolso o hacer valer su [derecho de desistimiento](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#ejercer-el-derecho-de-desistimiento), puede realizar una reclamación a través de su [área de cliente OVHcloud](/links/control-panel/billing-invoices), sujeto a la aplicación de nuestras [Condiciones Generales de Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf).
 <br> Haga clic en su nombre en la esquina superior derecha de la pantalla y seleccione `Crear un tíquet`{.action}.
+<!-- CP-STEPS-END:request-cancellation-ticket -->
 
 ### Seguimiento de los pagos
 
+<!-- CP-STEPS-START:track-payments -->
 Consulte el historial de pagos efectuados en `Mis facturas`{.action} y, seguidamente, `Seguimiento de los pagos`{.action}. De este modo, podrá asociar cada factura al pago asociado.
 
 ![Seguimiento de los pagos](images/payment_tracking.png){.thumbnail}
@@ -144,6 +151,7 @@ También puede exportar sus justificantes de pago en formato *.CSV* utilizando e
 >
 > Si detecta alguna diferencia entre un pago y el importe de una factura, significa que el saldo previo en su cuenta ha hecho que se reduzca el importe final.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Más información
 

@@ -17,6 +17,17 @@ updated: 2024-10-18
 - [Distributed Resource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new) enabled.
 -[Windows SPLA Licensing](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#licences-windows) enabled on the VMware on OVHcloud environment.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 Protecting and backing up your VMs is an essential part of ensuring long-term stability for your infrastructure. This is why we offer a managed backup solution based on Veeam Backup & Replication technology. You can use it to restore your data simply, by enabling automatic backup for your VMs.
@@ -25,7 +36,7 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private C
 
 ### Activating the backup option
 
-The first step is to order the service from the [OVHcloud Control Panel](/links/manager). To do this, go to the `Hosted Private Cloud`{.action} section of the `Hosted Private Cloud`{.action} tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the `Backup`{.action} tab.
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then select the data centre. Click on the `Backup`{.action} tab.
 
 ![Enable backup](images/veeam-managed-controlp_new.png){.thumbnail}
 

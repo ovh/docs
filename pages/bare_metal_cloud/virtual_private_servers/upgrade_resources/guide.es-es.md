@@ -65,7 +65,7 @@ En la ventana emergente, haga clic en `Confirmar y pagar`{.action} para finaliza
 
 ![Actualizar recursos](images/vps_upgrade06.png){.thumbnail}
 
-### 3 Para actualizar el **Almacenamiento**
+### 3. Para actualizar el **Almacenamiento**
 
 En la pestaña **Inicio** del panel **Su configuración**, haga clic en la cantidad de almacenamiento que desea. Las opciones disponibles dependen de la gama de VPS que tenga actualmente.
 

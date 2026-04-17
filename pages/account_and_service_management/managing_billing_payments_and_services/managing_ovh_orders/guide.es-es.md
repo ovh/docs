@@ -6,13 +6,13 @@ updated: 2025-04-28
 
 ## Objetivo
 
-Al realizar un pedido, puede realizar un seguimiento e interactuar con él desde el [área de cliente de OVHcloud](/links/manager).
+Al realizar un pedido, puede realizar un seguimiento e interactuar con él desde el [área de cliente de OVHcloud](/links/control-panel/billing-orders).
 
 **Esta guía explica cómo gestionar los pedidos desde el área de cliente de OVHcloud.**
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicios en cuestión, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en su [área de cliente de OVHcloud](/links/manager) (haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú contextual, seleccione en `Mis soluciones y servicios`{.action}. Por último, haga clic en la pestaña `Contratos`{.action}).
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicios en cuestión, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en la página [Mis contratos](/links/control-panel/billing-contracts).
 >
 
 ## Requisitos
@@ -24,8 +24,8 @@ Al realizar un pedido, puede realizar un seguimiento e interactuar con él desde
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Orders](/links/control-panel/billing-orders)
-- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `View my orders`{.action}
+- **Enlace directo:** [Mis pedidos](/links/control-panel/billing-orders)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis pedidos`{.action}
 
 ---
 <!-- CP-NAV-END:billing-orders -->
@@ -45,11 +45,12 @@ La orden de pedido se genera al realizar el pedido. En él se enumeran los produ
 |3|Formas de pago registradas en su cuenta de cliente. Para más información, consulte la guía [Gestionar mis formas de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Formas de pago disponibles. Solo se mostrarán las formas de pago autorizadas en el país de origen de la cuenta o las asociadas al tipo de cuenta registrada.|
 
-En cualquier momento puede consultar la orden de pedido desde la página [Pedidos](/links/control-panel/billing-orders), tal y como se explica a continuación.
+En cualquier momento puede consultar la orden de pedido desde la página [Mis pedidos](/links/control-panel/billing-orders), tal y como se explica a continuación.
 
 ### Acceder a los pedidos desde el área de cliente de OVHcloud.
 
-Abra la página [Pedidos](/links/control-panel/billing-orders).
+<!-- CP-STEPS-START:access-purchase-orders -->
+Abra la página [Mis pedidos](/links/control-panel/billing-orders).
 
 ![Área de cliente](images/huborders.png){.thumbnail}
 
@@ -76,10 +77,12 @@ Estos son los posibles estados de un pedido:
 Si desea ver el pedido en formato HTML, haga clic en `...`{.action} a la derecha de su pedido y, seguidamente, en `Ver la orden de pedido en formato HTML`{.action}.
 
 ![Resumen de pedidos](images/order04.png){.thumbnail}
+<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Seguimiento del pedido
 
-Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido desde la página [Pedidos](/links/control-panel/billing-orders):
+<!-- CP-STEPS-START:track-order -->
+Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido desde la página [Mis pedidos](/links/control-panel/billing-orders):
 
 * Haga clic en el botón `...`{.action} delante del pedido.
 * Seleccione `Seguimiento del pedido`{.action}. El seguimiento del pedido también puede mostrarse haciendo clic en el estado de un pedido en la columna `Estado`.
@@ -89,6 +92,7 @@ Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido 
 Se abrirá una ventana en la que podrá realizar el seguimiento en cuatro pasos.
 
 ![Seguimiento de los pedidos](images/order06.png){.thumbnail}
+<!-- CP-STEPS-END:track-order -->
 
 ### Ejercer el derecho de desistimiento
 
@@ -108,8 +112,9 @@ Encontrará todas las modalidades de la aplicación de dicho derecho en los sigu
 > Por último, no se aplica a determinados servicios (especialmente los [nombres de dominio](/links/web/domains) y los [certificados SSL Sectigo](/links/web/hosting-options-ssl)). Al contratar estos productos, deberá renunciar expresamente a su derecho de desistimiento de conformidad con el artículo L.221-28 del Código de Consumo.
 >
 
-Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde la página [Pedidos](/links/control-panel/billing-orders):
+Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde la página [Mis pedidos](/links/control-panel/billing-orders):
 
+<!-- CP-STEPS-START:cancel-order -->
 * Haga clic en el botón `...`{.action} delante del pedido.
 * Seleccione `Cancelar el pedido`{.action}.
 
@@ -118,6 +123,7 @@ Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento
 Por último, marque la casilla `Sí, quiero cancelar el pedido`{.action} y confirme.
 
 ![Confirmación de la cancelación](images/cancelorder2.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-order -->
 
 > [!primary]
 >

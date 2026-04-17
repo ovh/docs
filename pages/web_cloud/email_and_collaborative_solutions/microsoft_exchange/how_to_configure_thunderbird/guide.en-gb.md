@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Thunderbird for Windows'
 excerpt: 'Find out how to configure your Exchange email address on Thunderbird for Windows'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>
@@ -33,6 +33,16 @@ Exchange accounts can be configured on various compatible email clients. This al
 - The Thunderbird software installed on your Windows device
 - The credentials for the email account you want to configure
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 /// details | Information regarding the administration and configuration of OVHcloud services
 
@@ -48,13 +58,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 >
 > In our example, we use the server reference: ex?.mail.ovh.net. The "?" must be replaced with the number corresponding to your Exchange service's server.
 >
-> To find the server name:
->
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 2. Go to the `Web Cloud`{.action} section.
-> 3. In the `MICROSOFT` section, click on `Exchange`{.action}.
-> 4. Select the relevant platform.
-> 5. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
+> Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.
 
 ### Add the account
 

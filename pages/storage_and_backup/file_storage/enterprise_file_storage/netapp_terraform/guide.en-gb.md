@@ -1,7 +1,7 @@
 ---
 title: Managing Enterprise File Storage with OVHcloud Terraform provider
 excerpt: Find out how to manage your Enterprise File Storage offer using Terraform
-updated: 2025-07-11
+updated: 2026-03-13
 ---
 
 ## Objective
@@ -19,9 +19,20 @@ In this guide, you will learn how to use OVHcloud Terraform provider to manage y
 ## Requirements
 
 - [Terraform >= 0.17.1](https://www.terraform.io/)
-- [OVHcloud Terraform provider >= v2.5.0](https://github.com/ovh/terraform-provider-ovh/releases/)
+- [OVHcloud Terraform provider >= v2.5.0](https://github.com/ovh/terraform-provider-ovh/releases/) (>= v2.12.0 to order a service using Terraform)
 - Access to the [OVHcloud API](/links/api)
-- An Enterprise File Storage service. A service can be ordered from the [product page](/links/storage/enterprise-file-storage) or from the [OVHcloud Control Panel](/links/manager).
+- An Enterprise File Storage service. A service can be ordered from the [product page](/links/storage/enterprise-file-storage), from the [OVHcloud Control Panel](/links/manager), or using the `ovh_storage_efs` resource (see [Order a service](#order-a-service)).
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Instructions
 
@@ -39,6 +50,15 @@ Your API token will need to have the following rights:
 - POST `/storage/netapp/*`
 - PUT `/storage/netapp/*`
 - DELETE `/storage/netapp/*`
+
+If you plan to order a service using Terraform (see [Order a service](#order-a-service)), you will also need the following rights:
+
+- GET `/order/cart/*`
+- POST `/order/cart/*`
+- GET `/me`
+- GET `/me/*`
+- GET `/me/order/*`
+- POST `/me/order/*`
 
 Follow the [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to generate your API token.
 
@@ -196,6 +216,296 @@ Outputs:
 service_id = "xxx-xxx-xxx-xxx-xxx"
 service_product = "enterprise-file-storage-premium-1tb"
 service_quota = 1000
+```
+
+#### Order a service
+
+> [!primary]
+>
+> The `ovh_storage_efs` resource is available starting from OVHcloud Terraform provider version **2.12.0**.
+>
+
+Use the [ovh_storage_efs](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs) resource to order and manage an Enterprise File Storage service.
+
+> [!warning]
+>
+> To order a product through Terraform, your account needs to have a default payment method defined. This can be done in the [OVHcloud Control Panel](/links/manager) or via API with the [/me/payment/method](https://api.ovh.com/console/#/me/payment/method~GET) endpoint.
+>
+> `BANK_ACCOUNT` is no longer supported. Update your default payment method to `SEPA_DIRECT_DEBIT`.
+>
+
+Define the service inside your `main.tf` file:
+
+```bash
+data "ovh_me" "my_account" {}
+
+resource "ovh_storage_efs" "efs" {
+  name = "MyEFS"
+
+  ovh_subsidiary = data.ovh_me.my_account.ovh_subsidiary
+
+  plan = [
+    {
+      plan_code    = "enterprise-file-storage-premium-1tb"
+      duration     = "P1M"
+      pricing_mode = "default"
+
+      configuration = [
+        {
+          label = "region"
+          value = "eu-west-gra"
+        },
+        {
+          label = "network"
+          value = "vrack"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Key properties:
+
+- `name`: Custom display name for your service.
+- `ovh_subsidiary`: OVHcloud subsidiary for billing purposes. In this example, the value is retrieved from the `ovh_me` data source.
+- `plan`: Defines the plan to order. Contains the plan code, duration, pricing mode and configuration options.
+- `plan.plan_code`: Identifier of the offer (e.g. `enterprise-file-storage-premium-1tb`).
+- `plan.duration`: Duration of the subscription (e.g. `P1M` for one month).
+- `plan.configuration`: Configuration options for the service, including the region (**mandatory**) and network type (**mandatory**).
+
+Run [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) to create the execution plan:
+
+```bash
+terraform plan -var-file=secrets.tfvars -out main.tfplan
+```
+
+```bash
+data.ovh_me.my_account: Reading...
+data.ovh_me.my_account: Read complete after 0s [id=xxx-ovh]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # ovh_storage_efs.efs will be created
+  + resource "ovh_storage_efs" "efs" {
+      + created_at        = (known after apply)
+      + iam               = (known after apply)
+      + id                = (known after apply)
+      + name              = "MyEFS"
+      + order             = (known after apply)
+      + ovh_subsidiary    = "FR"
+      + performance_level = (known after apply)
+      + plan              = [
+          + {
+              + configuration = [
+                  + {
+                      + label = "region"
+                      + value = "eu-west-gra"
+                    },
+                  + {
+                      + label = "network"
+                      + value = "vrack"
+                    },
+                ]
+              + duration     = "P1M"
+              + plan_code    = "enterprise-file-storage-premium-1tb"
+              + pricing_mode = "default"
+            },
+        ]
+      + product           = (known after apply)
+      + quota             = (known after apply)
+      + region            = (known after apply)
+      + service_name      = (known after apply)
+      + status            = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Saved the plan to: main.tfplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "main.tfplan"
+```
+
+Once you reviewed the execution plan, run [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) to create the service:
+
+```bash
+terraform apply main.tfplan
+```
+
+```bash
+ovh_storage_efs.efs: Creating...
+ovh_storage_efs.efs: Still creating... [10s elapsed]
+ovh_storage_efs.efs: Still creating... [20s elapsed]
+ovh_storage_efs.efs: Still creating... [30s elapsed]
+[...]
+ovh_storage_efs.efs: Still creating... [3m30s elapsed]
+ovh_storage_efs.efs: Still creating... [3m40s elapsed]
+ovh_storage_efs.efs: Creation complete after 35s [id=xxx-xxx-xxx-xxx-xxx]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+```
+
+Your Enterprise File Storage service is now ordered and provisioned.
+
+##### Using the created service
+
+Once the service is created, you can reference its `id` attribute (or `service_name` which contains the same value) to manage volumes, snapshots and ACLs:
+
+```bash
+resource "ovh_storage_efs" "efs" {
+  name = "MyEFS"
+  # ... plan configuration ...
+}
+
+resource "ovh_storage_efs_share" "volume" {
+  service_name = ovh_storage_efs.efs.id
+  name         = "share"
+  description  = "My share"
+  protocol     = "NFS"
+  size         = 100
+}
+```
+
+##### Timeouts
+
+Custom timeouts can be configured for the service creation:
+
+```bash
+resource "ovh_storage_efs" "efs" {
+  # ...
+
+  timeouts {
+    create = "1h"
+  }
+}
+```
+
+The default creation timeout is 30 minutes.
+
+#### Import an existing service
+
+An existing Enterprise File Storage service can be imported into your Terraform state using the following configuration:
+
+```bash
+import {
+  to = ovh_storage_efs.efs
+  id = "xxx-xxx-xxx-xxx-xxx"
+}
+```
+
+Then run:
+
+```bash
+terraform plan -generate-config-out=efs.tf
+terraform apply
+```
+
+```bash
+ovh_storage_efs.efs: Preparing import... [id=xxx-xxx-xxx-xxx-xxx]
+ovh_storage_efs.efs: Refreshing state... [id=xxx-xxx-xxx-xxx-xxx]
+
+Terraform will perform the following actions:
+
+  # ovh_storage_efs.efs will be imported
+    resource "ovh_storage_efs" "efs" {
+        created_at        = "2025-08-01T11:27:49+02:00"
+        iam               = {
+            id  = "xxx-xxx-xxx-xxx-xxx"
+            urn = "urn:v1:eu:resource:storageNetApp:xxx-xxx-xxx-xxx-xxx"
+        }
+        id                = "xxx-xxx-xxx-xxx-xxx"
+        name              = "xxx-xxx-xxx-xxx-xxx"
+        performance_level = "premium"
+        product           = "enterprise-file-storage-premium-2tb"
+        quota             = 2000
+        region            = "eu-west-gra"
+        service_name      = "xxx-xxx-xxx-xxx-xxx"
+        status            = "running"
+    }
+
+Plan: 1 to import, 0 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+ovh_storage_efs.efs: Importing... [id=xxx-xxx-xxx-xxx-xxx]
+ovh_storage_efs.efs: Import complete [id=xxx-xxx-xxx-xxx-xxx]
+
+Apply complete! Resources: 1 imported, 0 added, 0 changed, 0 destroyed
+```
+
+The file `efs.tf` will then contain the imported resource's configuration, that can be copied into your main configuration file.
+
+#### Delete a service
+
+A created or imported service can be deleted using the [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command.
+
+```bash
+terraform destroy -var-file=secrets.tfvars
+```
+
+```bash
+data.ovh_me.my_account: Reading...
+data.ovh_me.my_account: Read complete after 0s [id=xxx-ovh]
+ovh_storage_efs.efs: Refreshing state... [id=xxx-xxx-xxx-xxx-xxx]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # ovh_storage_efs.efs will be destroyed
+  - resource "ovh_storage_efs" "efs" {
+      - created_at        = "2026-03-02T18:29:25+01:00" -> null
+      - iam               = {
+          - id  = "xxx-xxx-xxx-xxx-xxx" -> null
+          - urn = "urn:v1:eu:resource:storageNetApp:xxx-xxx-xxx-xxx-xxx" -> null
+        } -> null
+      - id                = "xxx-xxx-xxx-xxx-xxx" -> null
+      - name              = "MyEFS" -> null
+      - ovh_subsidiary    = "FR" -> null
+      - performance_level = "premium" -> null
+      - plan              = [
+          - {
+              - configuration = [
+                  - {
+                      - label = "region" -> null
+                      - value = "eu-west-gra" -> null
+                    },
+                  - {
+                      - label = "network" -> null
+                      - value = "vrack" -> null
+                    },
+                ] -> null
+              - duration      = "P1M" -> null
+              - plan_code     = "enterprise-file-storage-premium-1tb" -> null
+              - pricing_mode  = "default" -> null
+            },
+        ] -> null
+      - product           = "enterprise-file-storage-premium-1tb" -> null
+      - quota             = 1000 -> null
+      - region            = "eu-west-gra" -> null
+      - service_name      = "xxx-xxx-xxx-xxx-xxx" -> null
+      - status            = "running" -> null
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+ovh_storage_efs.efs: Destroying... [id=xxx-xxx-xxx-xxx-xxx]
+ovh_storage_efs.efs: Destruction complete after 3s
 ```
 
 ### Volumes Management

@@ -13,7 +13,17 @@ Nach Bestellung einer Private Exchange Plattform sind einige Punkte zu beachten,
 ## Voraussetzungen
 
 - Sie haben einen [Private Exchange](/links/web/emails-private-exchange) Dienst in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 
@@ -46,7 +56,7 @@ Vervollständigen Sie diese wie in der folgenden Tabelle angegeben.
 | Information          	| Beschreibung                                                                                                                                                                                                                             	|
 |----------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Name Ihres Servers 	| Wählen Sie im Dropdown-Menü die Subdomain zu Ihrem Domainnamen aus. <br> Geben Sie im freien Feld den Domainnamen ein, den Sie zuordnen möchten.                                                                   	|
-| E-Mail               	| Wählen Sie eine E-Mail-Adresse aus der Liste. Diese wird verwendet, um die Validierungsmail zum SSL-Zertifikat Ihrer Plattform zu erhalten. Daher ist es unbedingt erforderlich, dass sie gültig ist oder an eine bestehende E-Mail-Adresse umgeleitet wird, auf die SIe Zugriff haben.
+| E-Mail               	| Wählen Sie eine E-Mail-Adresse aus der Liste. Diese wird verwendet, um die Validierungsmail zum SSL-Zertifikat Ihrer Plattform zu erhalten. Daher ist es unbedingt erforderlich, dass sie gültig ist oder an eine bestehende E-Mail-Adresse umgeleitet wird, auf die Sie Zugriff haben.
 | DNS Assist           	| Mit dem Wählen dieser Option autorisieren Sie die automatische Konfiguration Ihrer DNS-Zone für den Domainnamen Ihrer Plattform. Die Domain muss im selben OVHcloud-Account wie Ihr Private Exchange verwaltet werden. Wenn Sie die Checkbox nicht aktivieren, wird eine E-Mail mit den Konfigurationsinformationen für Ihre DNS-Zone an Sie gesendet. 	|
 
 Nach der Bestätigung dieses Schritts erhalten Sie eine Mitteilung, dass die Konfiguration abgeschlossen wurde. Sie noch einmal an die E-Mail-Adresse zur Überprüfung des SSL-Zertifikats und die Webmail-Zugriffsadresse Ihres Dienstes erinnert.
@@ -88,7 +98,7 @@ Sobald Ihr Server bereit und verfügbar ist, erhalten Sie eine E-Mail mit folgen
 
 Informationen zum Hinzufügen Ihres ersten Domainnamens zu Ihrer Plattform und zum Einrichten der Accounts finden Sie in unserer Anleitung [Eine Domain zu Ihrem Exchange Dienst hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) 
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Eine DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 

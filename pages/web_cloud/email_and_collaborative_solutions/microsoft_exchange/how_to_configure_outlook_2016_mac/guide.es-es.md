@@ -21,6 +21,17 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 - Tener la aplicación Microsoft Outlook instalada en su dispositivo Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 > [!primary]
 >
 > Si utiliza Outlook para Windows, consulte nuestra guía [Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016).
@@ -46,7 +57,7 @@ Introduzca su dirección de correo electrónico y haga clic en `Continuar`{.acti
 |Dirección de correo electrónico|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Outlook.|
 |DOMINIO\nombre de usuario o dirección de correo electrónico|Introduzca la dirección de correo electrónico completa.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor|Según la configuración DNS de su dominio, es posible que no sea obligatorio introducir un servidor. Si fuera necesario, indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información desde el [área de cliente de OVHcloud](/links/manager), en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
+|Servidor|Según la configuración DNS de su dominio, es posible que no sea obligatorio introducir un servidor. Si fuera necesario, indique el servidor en el que está alojado su servicio Exchange. Haga clic en [este enlace](/links/control-panel/web-exchange) para acceder a la sección `Exchange`{.action}. El nombre del servidor aparece en la zona **Conexión** de la pestaña `Información general`{.action}.|
 
 Una vez introducidos los datos, haga clic en el botón `Agregar cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta.
 

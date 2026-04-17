@@ -36,6 +36,7 @@ La soluzione Private Cloud non prevede un impegno contrattuale minimo ma, come i
 
 ### Step 1: richiedi la disattivazione del servizio dallo Spazio Cliente OVHcloud
 
+<!-- CP-STEPS-START:cancel-step1 -->
 Nel riquadro “Gestisci il servizio” disponibile nella scheda “Informazioni generali”, clicca sul pulsante `...`{.action} (4) in corrispondenza della data di rinnovo e seleziona l’opzione `Elimina il servizio`{.action} (5).
 
 ![Disattivazione dallo Spazio Cliente](images/resiliation1.png){.thumbnail}
@@ -49,14 +50,17 @@ Clicca su `Conferma`{.action} per completare l’operazione.
 Compare un messaggio di conferma di ricezione della richiesta. La procedura da seguire per completare la disattivazione verrà inviata via email all’indirizzo associato all’account OVHcloud.
 
 ![Conferma disattivazione](images/resiliation3.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-step1 -->
 
 ### Step 2: conferma la disattivazione
 
 Una volta inoltrata la richiesta, un’email di conferma della disattivazione viene inviata all’indirizzo associato all’account OVHcloud. 
 
+<!-- CP-STEPS-START:cancel-step2 -->
 Il messaggio è disponibile anche nello Spazio Cliente: clicca sul nome utente in alto a destra e seleziona `Le mie comunicazioni`{.action}.
 
 ![Conferma disattivazione](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-step2 -->
 
 L’oggetto dell’email dovrebbe essere:
 

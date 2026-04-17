@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion intelligente du stockage avec des règles lifecycle
 excerpt: "Découvrez comment optimiser vos coûts de stockage avec les règles lifecycle d'OVHcloud"
-updated: 2026-03-06
+updated: 2026-04-08
 ---
 
 <style>
@@ -521,7 +521,7 @@ Voici la structure de base d'une configuration d'un lifecycle JSON contenant des
 
 | Attribut                                             | Requis   | Description 
 | ---------------------------------------------------- | -------- | ------------
-| Transitions                                          | oui*     | Un tableau d'opérations lifecycle qui copient automatiquement tous les objets sélectionnés de leur niveau de stockage actuel vers le niveau de stockage le plus efficace. |
+| Transitions                                          | oui*     | Un tableau d'opérations lifecycle qui copient automatiquement tous les objets sélectionnés (seulement les versions courantes si le bucket est versionné) de leur niveau de stockage actuel vers le niveau de stockage le plus efficace. |
 | Transitions.Date                                     | non*     | Indique la date à laquelle les objets doivent être transférés. La valeur de la date doit être au format ISO 8601 et l'heure doit toujours être fixée à minuit UTC. <br><br> ⚠️ Cet attribut n'est pas obligatoire si Days est présent. <br> ⚠️ cet attribut s'exclut mutuellement avec Days, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
 | Transitions.Days                                     | oui*     | Indique la durée en jours après laquelle les objets doivent être transférés. La valeur doit être un nombre entier égal ou supérieur à 30. <br><br> ⚠️ Cet attribut est obligatoire si Date n'est pas présent. <br> ⚠️ cet attribut s'exclut mutuellement avec Date, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
 | Transitions.StorageClass                             | oui      | Indique la classe de stockage cible. Actuellement, seul « STANDARD » est disponible. |

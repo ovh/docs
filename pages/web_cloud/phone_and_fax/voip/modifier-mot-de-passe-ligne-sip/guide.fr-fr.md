@@ -1,14 +1,14 @@
 ---
 title: "Modifier le mot de passe d'une ligne SIP"
-excerpt: "Apprenez à changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud"
+excerpt: "Découvrez comment changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depuis l'appareil de votre choix. Cet accès est possible grâce au mot de passe qui lui est associé. Si toutefois vous disposez d'un téléphone Plug & Phone OVHcloud avec votre ligne SIP, ce mot de passe est automatiquement configuré sur ce dernier. 
+Votre ligne SIP OVHcloud permet d'émettre et de recevoir des appels depuis l'appareil de votre choix via un mot de passe dédié. Si toutefois vous disposez d'un téléphone Plug & Phone OVHcloud avec votre ligne SIP, ce mot de passe est automatiquement configuré sur ce dernier.
 
-**Apprenez à changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud.**
+**Découvrez comment changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud.**
 
 ## Prérequis
 
@@ -31,6 +31,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 
 ### Étape 1 : accéder à la gestion du mot de passe de la ligne SIP
 
+<!-- CP-STEPS-START:etape-1-mot-de-passe-sip -->
 Dans l'onglet `Gestion`{.action}, cliquez sur le bouton `Mot de passe SIP`{.action}.
 
 > [!primary]
@@ -39,9 +40,11 @@ Dans l'onglet `Gestion`{.action}, cliquez sur le bouton `Mot de passe SIP`{.acti
 >
 
 ![passwordsip](images/password-sip-step1.png){.thumbnail}
+<!-- CP-STEPS-END:etape-1-mot-de-passe-sip -->
 
 ### Étape 2 : modifier le mot de passe de la ligne SIP
 
+<!-- CP-STEPS-START:etape-2-modifier-mot-de-passe -->
 Dans la fenêtre qui s’affiche, renseignez le nouveau mot de passe souhaité dans la zone de texte en dessous de « Nouveau mot de passe », puis cliquez sur le bouton `Valider`{.action}.
 
 > [!primary]
@@ -55,6 +58,7 @@ Dans la fenêtre qui s’affiche, renseignez le nouveau mot de passe souhaité d
 >
 
 ![passwordsip](images/password-sip-step2.png){.thumbnail}
+<!-- CP-STEPS-END:etape-2-modifier-mot-de-passe -->
 
 ### Étape 3 : configurer le nouveau mot de passe
 

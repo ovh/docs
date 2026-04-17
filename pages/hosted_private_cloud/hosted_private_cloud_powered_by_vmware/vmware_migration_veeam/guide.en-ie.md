@@ -22,6 +22,17 @@ Before getting started, you will need:
 - A valid **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu).
 - Access to vCenter and pre-configured DNS, NTP, and authentication services in HPC.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ![Move2Cloud](images/Move2PCC_Veam.png){.thumbnail}
 
 ## Instructions

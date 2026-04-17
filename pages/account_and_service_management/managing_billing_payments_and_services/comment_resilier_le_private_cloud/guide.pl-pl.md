@@ -36,6 +36,7 @@ W przypadku korzystania z usługi Private Cloud nie musisz podpisywać umowy ter
 
 ### Etap 1: złóż dyspozycję zakończenia usługi w Panelu klienta 
 
+<!-- CP-STEPS-START:cancel-step1 -->
 W tabeli „Zarządzanie usługami” w zakładce „Informacje ogólne” kliknij przycisk `...`{.action} (4) po prawej stronie od daty odnowienia. Na koniec kliknij `Usuń usługę`{.action} (5).
 
 ![zakończenie usługi w Panelu klienta](images/resiliation1.png){.thumbnail}
@@ -49,14 +50,17 @@ Kliknij `Zatwierdź`{.action}, aby potwierdzić rezygnację.
 Otrzymasz powiadomienie potwierdzające Twoją dyspozycję. Procedura potwierdzenia rezygnacji z usługi zostanie wysłana do Ciebie e-mailem na adres powiązany z kontem OVHcloud.
 
 ![zatwierdzenie rezygnacji](images/resiliation3.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-step1 -->
 
 ### Etap 2: zatwierdź rezygnację
 
 Po złożeniu rezygnacji otrzymasz potwierdzenie wysłane na Twój adres e-mail powiązany z kontem OVHcloud. 
 
+<!-- CP-STEPS-START:cancel-step2 -->
 E-mail ten możesz również znaleźć w Panelu klienta OVHcloud. Kliknij Twoją nazwę w prawym górnym rogu, a następnie `E-maile dotyczące usługi`{.action}.
 
 ![zatwierdzenie rezygnacji](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-step2 -->
 
 Temat e-maila:
 

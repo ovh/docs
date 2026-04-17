@@ -26,7 +26,7 @@ Der Eintrag **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
 - **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---

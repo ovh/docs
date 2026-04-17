@@ -11,7 +11,17 @@ Ce guide vous montre comment créer une ACL IP pour autoriser l'accès à votre 
 ## Prérequis
 
 - Une solution [Cloud Disk Array](/links/storage/cloud-disk-array)
-- Être connecté à l’[espace client OVHcloud](/links/manager) ou à l’[API OVHcloud](/links/api)
+
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
 
 ## En pratique
 
@@ -22,9 +32,7 @@ Ce guide vous montre comment créer une ACL IP pour autoriser l'accès à votre 
 
 ### Depuis l'espace client OVHcloud
 
-Tout d'abord, connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Bare Metal Cloud`{.action}. Dans la section nommée `STOCKAGE ET SAUVEGARDE`, cliquez sur le service `Cloud Disk Array`{.action}.
-
-Vous trouverez ici l'ACL existante dans `Contrôle d'accès IP`{.action}. Par défaut, il n'y a pas d'ACL.
+Sur la page de votre service Cloud Disk Array, accédez à l'onglet `Contrôle d'accès IP`{.action}. Par défaut, il n'y a pas d'ACL.
 
 ![Ceph pools](images/ceph-add-ip-1.png){.thumbnail}
 

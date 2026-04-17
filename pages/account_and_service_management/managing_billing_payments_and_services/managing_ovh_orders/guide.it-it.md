@@ -6,13 +6,13 @@ updated: 2025-04-28
 
 ## Obiettivo
 
-Lo [Spazio Cliente OVHcloud](/links/manager) permette di eseguire un ordine e interagire con esso.
+Lo Spazio Cliente OVHcloud permette di eseguire un ordine e interagire con esso.
 
 **Questa guida ti mostra come gestire gli ordini dallo Spazio Cliente OVHcloud.**
 
 > [!primary]
 >
-> In base al tuo luogo di residenza e alla legislazione in vigore, e al prodotto o ai prodotti in questione, è possibile che alcune sezioni di questa guida possano variare e/o non essere applicate in base alla tua situazione. In caso di dubbi, consulta i contratti OVHcloud disponibili nello [Spazio Cliente OVHcloud](/links/manager) (clicca in alto a destra sullo schermo, sul tuo nome e poi su `Le mie offerte e servizi`{.action}. Infine clicca sulla scheda `Contratti`{.action}).
+> In base al tuo luogo di residenza e alla legislazione in vigore, e al prodotto o ai prodotti in questione, è possibile che alcune sezioni di questa guida possano variare e/o non essere applicate in base alla tua situazione. In caso di dubbi, consulta i contratti OVHcloud disponibili nella pagina [Lista dei contratti](/links/control-panel/billing-contracts).
 >
 
 ## Prerequisiti
@@ -24,8 +24,8 @@ Lo [Spazio Cliente OVHcloud](/links/manager) permette di eseguire un ordine e in
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Orders](/links/control-panel/billing-orders)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `View my orders`{.action}
+- **Link diretto:** [I miei ordini](/links/control-panel/billing-orders)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `I miei ordini`{.action}
 
 ---
 <!-- CP-NAV-END:billing-orders -->
@@ -45,11 +45,12 @@ Il buono d'ordine viene creato al momento dell'ordine. Elenca i prodotti ordinat
 |3|Metodi di pagamento registrati sul tuo account cliente. Per maggiori informazioni, consulta la guida [Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Metodi di pagamento disponibili. Verrai proposto solo per i metodi di pagamento autorizzati nel paese di origine dell'account o quelli associati al tipo di account registrato.|
 
-È possibile recuperare il buono d'ordine in qualsiasi momento dalla pagina [Ordini](/links/control-panel/billing-orders), come spiegato di seguito.
+È possibile recuperare il buono d'ordine in qualsiasi momento dalla pagina [I miei ordini](/links/control-panel/billing-orders), come spiegato di seguito.
 
 ### Visualizza i tuoi ordini nello Spazio Cliente OVHcloud
 
-Apri la pagina [Ordini](/links/control-panel/billing-orders).
+<!-- CP-STEPS-START:access-purchase-orders -->
+Apri la pagina [I miei ordini](/links/control-panel/billing-orders).
 
 ![Spazio Cliente](images/huborders.png){.thumbnail}
 
@@ -76,10 +77,12 @@ Ecco i diversi stati dell’ordine:
 Per visualizzare il buono d’ordine in formato HTML, clicca sui tre puntini `...`{.action} in corrispondenza dell’ordine in questione e seleziona `Visualizza l’ordine in formato HTML`{.action}.
 
 ![Riepilogo degli ordini](images/order04.png){.thumbnail}
+<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Monitora il tuo ordine
 
-Una volta generato il buono d'ordine, è possibile seguirlo dalla pagina [Ordini](/links/control-panel/billing-orders):
+<!-- CP-STEPS-START:track-order -->
+Una volta generato il buono d'ordine, è possibile seguirlo dalla pagina [I miei ordini](/links/control-panel/billing-orders):
 
 * Clicca sul pulsante `...`{.action} davanti al tuo ordine.
 * Seleziona `Stato dell'ordini`{.action}. Il controllo dell'ordine può essere visualizzato anche cliccando sullo stato dell'ordine nella colonna `Stato`.
@@ -89,6 +92,7 @@ Una volta generato il buono d'ordine, è possibile seguirlo dalla pagina [Ordini
 Si apre una finestra in cui puoi effettuare il monitoraggio in quattro step.
 
 ![Gestione degli ordini](images/order06.png){.thumbnail}
+<!-- CP-STEPS-END:track-order -->
 
 ### Esercita il diritto di recesso
 
@@ -108,8 +112,9 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 > Non si applica a determinati servizi (in particolare i [domini](/links/web/domains) e i [certificati SSL Sectigo](/links/web/hosting-options-ssl)). Al momento dell'ordine di questi prodotti, ti è quindi chiesto di rinunciare espressamente al tuo diritto di recesso, conformemente all'articolo L.221-28 del Codice del Consumo francese.
 >
 
-Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di recesso può essere esercitato direttamente dalla pagina [Ordini](/links/control-panel/billing-orders):
+Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di recesso può essere esercitato direttamente dalla pagina [I miei ordini](/links/control-panel/billing-orders):
 
+<!-- CP-STEPS-START:cancel-order -->
 * Clicca sul pulsante `...`{.action} davanti al tuo ordine.
 * Seleziona `Annulla l’ordine`{.action}.
 
@@ -118,6 +123,7 @@ Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di 
 Seleziona la casella `Sì, voglio annullare questo ordine`{.action} e infine conferma l’operazione.
 
 ![Conferma dell’operazione di annullamento](images/cancelorder2.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-order -->
 
 > [!primary]
 >

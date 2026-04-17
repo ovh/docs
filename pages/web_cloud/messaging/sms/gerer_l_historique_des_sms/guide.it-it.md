@@ -37,11 +37,12 @@ I dettagli elencati nella cronologia includono la data, l’ora, il mittente, il
 >
 > Lo Spazio Cliente OVHcloud ti permette di consultare gli SMS inviati negli ultimi 6 mesi (o gli ultimi 5000 SMS se hai inviato più di 5000 SMS negli ultimi 6 mesi).
 >
-> Per consultare SMS meno recenti (fino agli ultimi 12 mesi), è necessario scaricare la cronologia degli SMS in formato CSV. Consulta [lo Step 2 di questa guida](#csv).
+> Per consultare SMS meno recenti (fino agli ultimi 12 mesi), è necessario scaricare la cronologia degli SMS in formato CSV. Consulta [il Passaggio 2 di questa guida](#csv).
 >
 
-### Step 1: consulta la cronologia dal tuo Spazio Cliente
+### Passaggio 1: Consulta la cronologia dal tuo Spazio Cliente
 
+<!-- CP-STEPS-START:view-sms-log -->
 Nella barra delle schede, clicca su `Messaggio e campagna`{.action} e poi su `Gestisci gli SMS`{.action} per accedere allo storico dei tuoi SMS unitari o su `Gestisci le campagne`{.action} per accedere allo storico delle tue campagne di SMS.
 
 Clicca su `Storico invii`{.action} o `Statistiche e storico`{.action}.
@@ -63,12 +64,15 @@ Per eliminare più SMS alla volta, spunta le caselle accanto a ciascun messaggio
 Il pulsante `Filtra`{.action} consente di filtrare la ricerca in base al mittente (se disponi di più mittenti) o al destinatario.
 
 ![sms-history](images/smshistory5.png){.thumbnail}
+<!-- CP-STEPS-END:view-sms-log -->
  
-### Step 2: scarica la cronologia degli SMS in formato CSV <a name="csv"></a>
+### Passaggio 2: Scarica la cronologia degli SMS in formato CSV <a name=”csv”></a>
 
+<!-- CP-STEPS-START:download-sms-csv -->
 Per scaricare la cronologia degli SMS inviati in formato “.csv”, clicca sul pulsante `Azioni`{.action} nell’angolo in alto a sinistra e poi clicca su `Scarica`{.action} 
  
 ![sms-history](images/smshistory6.png){.thumbnail}
+<!-- CP-STEPS-END:download-sms-csv -->
  
 A questo punto è possibile visualizzare la cronologia da un programma per fogli di calcolo. Le informazioni verranno visualizzate come nell’esempio seguente: 
 

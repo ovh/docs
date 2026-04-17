@@ -17,8 +17,18 @@ updated: 2022-12-13
 ## Requirements
 
 - a Nutanix Cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](/links/manager)
-- access to the [OVHcloud API page](/links/api)
+- access to the [OVHcloud API page](/links/api) (optional)
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Select your cluster
+
+---
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 > [!warning]
 > If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](/pages/hosted_private_cloud/nutanix_on_ovhcloud/12-activate-licenses-on-byol).
@@ -77,7 +87,7 @@ We will redeploy a cluster with 3 nodes, as in Example 1 in the previous chapter
 
 ### Redeploy the cluster from the OVHcloud Control Panel
 
-In the OVHcloud Control Panel, click on the `Hosted Private Cloud`{.action} tab, select your cluster below the `Nutanix` category on the left-hand side, then click on `Redeploy cluster`{.action}.
+Click on `Redeploy cluster`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 01](images/00-cluster-redeployment-through-manager01.png)
 

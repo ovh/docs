@@ -1,7 +1,7 @@
 ---
 title: "Conocer la interfaz de Public Cloud"
 excerpt: "Visita guiada de la interfaz de Public Cloud para descubrir las diferentes secciones"
-updated: 2025-04-28
+updated: 2026-04-07
 ---
 
 ## Objetivo
@@ -12,64 +12,62 @@ Usted acaba de crear su proyecto de Public Cloud y quiere saber más sobre la in
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Haber creado su [primer proyecto de Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
 Una vez creado el primer proyecto de Public Cloud, será redirigido a la interfaz principal de Public Cloud.
 
-![Public Cloud interface](images/main-interface-2025.png){.thumbnail}
-
 ### Acceso a sus datos de cuenta de OVHcloud
 
 Los parámetros de su cuenta de OVHcloud permanecen accesibles en cualquier momento, al igual que las notificaciones o el cambio de idioma del área de cliente.
 
-![Public Cloud interfaz - menú cuenta](images/account-2025.png){.thumbnail}
-
 ### Su proyecto de Public Cloud
 
-Como es posible utilizar varios proyectos (en función de sus cuotas), el nombre y el ID del proyecto siempre se muestran, independientemente de la pantalla que visite, para saber en qué entorno está actuando.
-
-![Menú proyecto](images/project-menu-2025.png){.thumbnail}
+Como es posible gestionar varios proyectos según sus cuotas, el nombre y el ID de cada proyecto permanecen siempre visibles, independientemente de la pantalla que consulte. Esta información le permite saber en todo momento en qué entorno está trabajando. Puede encontrarla en cualquier momento en el menú de la izquierda.
 
 El ID puede ser necesario al utilizar la CLI, determinadas solicitudes de soporte u otras. Puede copiarlo haciendo clic en el icono situado a la derecha.
 
 Puede cambiar el nombre del proyecto en la pestaña `Ajustes`{.action}. Introduzca un nuevo nombre y haga clic en `Actualizar`{.action}.
 
-![Renombrar un proyecto de Public Cloud](images/rename-project.png){.thumbnail}
-
 ### El menú principal de Public Cloud
-
-![Public Cloud interfaz - menú principal](images/main-menu-2025.png){.thumbnail}
 
 |Sección|Descripción de las opciones|
 |---|---|
-|**Compute**|Esta sección permite iniciar instancias, ya que estos servidores cloud están disponibles bajo demanda.|
-|**Backup Storage**|En esta sección encontrará diferentes soluciones de almacenamiento y bases de datos, cada una de las cuales se adapta a una necesidad y un uso particular.|
-|**Network**|En esta sección podrá conectar sus recursos de Public Cloud y conectarlos con otros productos de OVHcloud.|
-|**Containers and Orchestration**|Esta sección ofrece diversas herramientas para automatizar sus arquitecturas y aumentar la flexibilidad.|
-|**Databases & Analytics**|Estos servicios le ayudarán a resolver sus problemas de Big Data y de Data Analytics.|
-|**AI and Machine Learning**|En esta sección encontrará las herramientas de OVHcloud para la inteligencia artificial.|
+|**Compute**|Esta sección le permite iniciar instancias, es decir, servidores cloud disponibles bajo demanda.|
+|**Storage & backup**|Aquí encontrará diversas soluciones de almacenamiento y bases de datos, cada una adaptada a necesidades específicas.|
+|**Network**|Esta sección permite conectar sus recursos de Public Cloud entre sí y con otros productos de OVHcloud.|
+|**Containers & Orchestration**|Esta sección ofrece herramientas para automatizar sus arquitecturas y ganar en flexibilidad.|
+|**Databases & Analytics**|Estos servicios ayudan a gestionar sus problemáticas de Big Data y análisis de datos.|
+|**AI & Machine Learning**|Aquí encontrará las herramientas de OVHcloud dedicadas a la inteligencia artificial.|
+|**Quantum**|Esta sección agrupa los servicios relacionados con la computación cuántica.|
+|**Management Interfaces**|Un único enlace a la interfaz Horizon.|
+|**Ajustes**|Esta sección permite configurar y gestionar los aspectos del proyecto.|
 
 ### Atajos rápidos
 
 En el centro de la pantalla encontrará atajos que le permitirán acceder rápidamente a los asistentes de configuración y a las guías más útiles.
 
-![Public Cloud interface - menú de acceso rápido](images/shortcuts-2025.png){.thumbnail}
-
 #### Ayudas a la creación de recursos
 
 Para cada recurso que quiera crear, le guiará un asistente de configuración que, paso a paso, le permitirá configurar los recursos según sus necesidades.
-<br>En la mayoría de los casos, deberá elegir la localización del recurso, el modelo, algunos parámetros personalizables y, en algunos casos, el modo de facturación.
 
-![Public Cloud interface - Asistente de configuración](images/wizard-2025.png){.thumbnail}
+En la mayoría de los casos, deberá elegir la localización del recurso, el modelo, algunos parámetros personalizables y, en algunos casos, el modo de facturación.
 
 ### Herramientas de gestión
 
-El proyecto de Public Cloud incluye diversas herramientas de gestión, que se encuentran en la parte inferior de la barra de menú, a la izquierda.
-
-![Public Cloud interface - Herramientas de gestión](images/management-tools-2025.png){.thumbnail}
+En su proyecto de Public Cloud, hay varias herramientas de gestión disponibles para configurar sus recursos, usuarios y parámetros. Puede acceder a ellas desde el menú de la izquierda, en la parte inferior. Las herramientas se agrupan en dos secciones principales: **Management Interfaces**, que contiene el enlace a la interfaz Horizon, y **Ajustes**, que agrupa todas las opciones de configuración del proyecto (usuarios, cuotas, SSH, facturación, contactos, etc.).
 
 |Entrada del menú|Descripción|
 |---|---|

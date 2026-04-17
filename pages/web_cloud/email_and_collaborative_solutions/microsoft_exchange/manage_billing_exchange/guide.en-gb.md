@@ -1,7 +1,7 @@
 ---
 title: 'Managing the billing for Exchange accounts'
 excerpt: 'Find out how to manage the billing for your Exchange service'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -12,15 +12,20 @@ The Hosted Exchange and Private Exchange services offer flexible management for 
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager).
 - a subscription to an [Exchange](/links/web/emails-hosted-exchange) solution.
 
-## Instructions
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Instructions
 
 ### Hosted Exchange
 
@@ -78,8 +83,6 @@ Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} bu
 >
 > To delete an email account on a Private Exchange platform, **it is necessary that it has been created** (attached to a domain name on your Exchange platform). An unconfigured account cannot be deleted.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
-
 In the `Email accounts`{.action} tab, click `...`{.action} to the right of the account concerned, then click `Delete`{.action}. The account will be immediately removed from the platform, and you will not need to cancel it.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
@@ -98,7 +101,7 @@ In the window for managing your Exchange platform, click on the `Actions`{.actio
 >
 > This action suspends and then deletes all of the accounts on the Exchange platform on their expiry date.
 
-# Go further <a name="go-further"></a>
+## Go further <a name="go-further"></a>
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

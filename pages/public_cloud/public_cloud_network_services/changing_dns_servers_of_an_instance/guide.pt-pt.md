@@ -27,6 +27,17 @@ Pode adicionar um servidor secundário ou substituir esta configuração pela su
 - Dispor de um acesso de administrador à instância através de SSH ou RDP.
 - Conhecimentos básicos de rede e administração.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instruções
 
 Ligue-se à sua instância em SSH. Para mais informações, consulte o manual "[Aceder a uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)".

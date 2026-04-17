@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Identity and access management
 excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
-updated: 2026-03-06
+updated: 2026-04-14
 ---
 
 ## Objective
@@ -11,11 +11,21 @@ This guide explains how to manage identities and access to your Object Storage r
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to your [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to [the OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
+Click on `Object Storage`{.action} in the left-hand menu.
 
 ### Creating a user
 
@@ -62,22 +72,6 @@ Select the user to add to your bucket and click `Next`{.action}.
 Set access to your bucket for this user and click on `Confirm`{.action}.
 
 ![Add a user to my container - Role](images/highperf-identity-and-access-management-20220928083800300.png){.thumbnail}
-
-### Manage access to an object via a profile
-
-You can also set access to your objects via predefined profiles.
-
-Click on the `...`{.action} at the end of your object line, then `Add user to my object`{.action}.
-
-![object menu](images/highperf-identity-and-access-management-20220928084137918.png){.thumbnail}
-
-Select the user and click `Next`{.action}.
-
-![add user to my object](images/highperf-identity-and-access-management-20220928084222940.png){.thumbnail}
-
-Select the access profile for this user and click `Confirm`{.action}.
-
-![add role to my object](images/highperf-identity-and-access-management-20220928084308265.png){.thumbnail}
 
 ### Advanced resource access management
 

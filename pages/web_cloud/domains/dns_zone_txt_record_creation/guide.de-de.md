@@ -1,7 +1,7 @@
 ---
 title: "DNS-TXT-Eintrag für einen Domainnamen hinzufügen"
 excerpt: "Erfahren Sie hier, wie Sie einen DNS-Eintrag vom Typ TXT zu einer von OVHcloud verwalteten DNS-Zone für Ihre Domain hinzufügen"
-updated: 2025-06-23
+updated: 2026-03-24
 ---
 
 <style>
@@ -39,7 +39,7 @@ Erstellen Sie hierzu in der aktiven DNS-Zone Ihrer Domain einen DNS-Eintrag vom 
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
 - **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---
@@ -53,11 +53,30 @@ Erstellen Sie hierzu in der aktiven DNS-Zone Ihrer Domain einen DNS-Eintrag vom 
 
 ### Einen DNS-Eintrag vom Typ TXT für eine Domain hinzufügen
 
-1. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
-2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
-3. Wählen Sie im angezeigten Fenster erweiterte Einträge vom Typ `TXT`{.action} aus.
-4. Geben Sie anschließend im Feld `Wert *` die TXT-Zeichenfolge ein, die Sie hinzufügen möchten (zum Beispiel `AbCdE-Value-of-TXT-fGhIjK`), und klicken Sie auf `Weiter`{.action}.
-5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
+Klicken Sie auf die Tabs, um die einzelnen **5** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf die Schaltfläche `Eintrag hinzufügen`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie im angezeigten Fenster erweiterte Einträge vom Typ `TXT`{.action} aus.
+>>
+> **Schritt 4**
+>>
+>> Geben Sie im Feld `Wert *` die TXT-Zeichenfolge ein, die Sie hinzufügen möchten (zum Beispiel: `AbCdE-Value-of-TXT-fGhIjK`), und klicken Sie auf `Weiter`{.action}.
+>>
+> **Schritt 5**
+>>
+>> Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
 
 /// details | Klicken Sie hier für weitere Informationen.
 
@@ -71,11 +90,30 @@ Lesen Sie unsere detaillierten Anleitungen:
 
 ### Einen DNS-Eintrag vom Typ TXT für die Subdomain einer Domain hinzufügen
 
-1. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
-2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
-3. Wählen Sie im angezeigten Fenster erweiterte Einträge vom Typ `TXT`{.action} aus.
-4. Geben Sie anschließend im Feld `Subdomain` die betreffende Subdomain ein (zum Beispiel: `www` für die Subdomain `www.domain.tld`) und im Feld `Wert *` die hinzuzufügende TXT-Zeichenfolge (zum Beispiel: `AbCdE-Value-of-TXT-fGhIjK`). Klicken Sie anschließend auf `Weiter`{.action}.
-5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
+Klicken Sie auf die Tabs, um die einzelnen **5** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf die Schaltfläche `Eintrag hinzufügen`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie im angezeigten Fenster erweiterte Einträge vom Typ `TXT`{.action} aus.
+>>
+> **Schritt 4**
+>>
+>> Geben Sie im Feld `Subdomain` die betreffende Subdomain ein (zum Beispiel: `www` für die Subdomain `www.domain.tld`) und im Feld `Wert *` die hinzuzufügende TXT-Zeichenfolge (zum Beispiel: `AbCdE-Value-of-TXT-fGhIjK`). Klicken Sie auf `Weiter`{.action}.
+>>
+> **Schritt 5**
+>>
+>> Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
 
 /// details | Klicken Sie hier für weitere Informationen.
 

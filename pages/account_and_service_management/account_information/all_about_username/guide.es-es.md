@@ -22,8 +22,8 @@ Desde el área de cliente de OVHcloud podrá gestionar sus datos personales y de
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [User profile](/links/control-panel/account-profile)
-- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `My account`{.action}
+- **Enlace directo:** [Mi perfil](/links/control-panel/account-profile)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Acceder a mi cuenta`{.action} > `Editar mi perfil`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -63,7 +63,7 @@ Si todavía no lo ha hecho, guarde su contraseña en un [gestor de contraseñas]
 En caso de dificultad de acceso a su dirección de correo electrónico principal, una dirección de correo electrónico alternativa permite conservar el acceso a su cuenta y, por tanto, a la gestión de sus servicios.
 <br>Esta segunda dirección **debe ser diferente** de la primera, especialmente para facilitar sus trámites en caso de recuperación de contraseña.
 
-Para introducir esta dirección de correo electrónico alternativa, acceda a su [perfil de usuario](/links/control-panel/account-profile) y haga clic en `Editar mi perfil`{.action} en el cuadro `Mi perfil`.
+Para introducir esta dirección de correo electrónico alternativa, acceda a su [perfil de usuario](/links/control-panel/account-profile).
 
 > [!warning]
 > Le recordamos que es **fundamental** que la dirección de correo electrónico alternativa sea **diferente** de la dirección de correo electrónico principal de la cuenta.
@@ -84,9 +84,11 @@ Para más información, consulte nuestra guía [Proteger su cuenta de OVHcloud c
 
 #### Editar mis datos personales
 
-Puede modificar la información de su cuenta. Acceda a su [perfil de usuario](/links/control-panel/account-profile) y haga clic en `Editar mi perfil`{.action} en el cuadro `Mi perfil`.
+Puede modificar la información de su cuenta. Acceda a su [perfil de usuario](/links/control-panel/account-profile).
 
-Modifique sus datos y haga clic en el botón `«Aceptar»`{.action}.
+<!-- CP-STEPS-START:save-profile-changes -->
+Modifique sus datos y haga clic en el botón `Guardar los cambios`{.action}.
+<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
@@ -95,6 +97,7 @@ Modifique sus datos y haga clic en el botón `«Aceptar»`{.action}.
 
 #### Editar la dirección de correo electrónico principal
 
+<!-- CP-STEPS-START:changing-primary-email -->
 Si desea cambiar su dirección de correo electrónico principal, deberá validarla mediante un código enviado a su dirección de correo electrónico principal actual. Una vez recibido el código, haga clic en el botón `He recibido el código de verificación`{.action}.
 
 ![ID cliente](images/nichandle07.png){.thumbnail}
@@ -102,6 +105,7 @@ Si desea cambiar su dirección de correo electrónico principal, deberá validar
 Introduzca el código en el campo `Código de validación` y acepte.
 
 ![ID cliente](images/nichandle08.png){.thumbnail}
+<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -109,11 +113,13 @@ Introduzca el código en el campo `Código de validación` y acepte.
 
 #### Cambiar el tipo de cuenta
 
+<!-- CP-STEPS-START:changing-account-type -->
 Al editar su perfil, haga clic en el `tipo de cuenta`. Un menú desplegable le permite definir el tipo de cuenta correspondiente a su situación.
 
 ![ID cliente](images/nichandle09.png){.thumbnail}
 
 Una vez introducidos los datos, haga clic en el botón `Aceptar`{.action}.
+<!-- CP-STEPS-END:changing-account-type -->
 
 #### Ejercer mis derechos sobre mis datos personales
 

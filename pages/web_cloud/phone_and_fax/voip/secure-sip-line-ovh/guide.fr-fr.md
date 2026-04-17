@@ -1,13 +1,13 @@
 ---
-title: 'Restreindre sa ligne SIP OVHcloud par IP'
-excerpt: 'Découvrez comment restreindre l’accès à vos lignes SIP grâce à une restriction par IP'
+title: "Restreindre sa ligne SIP OVHcloud par IP"
+excerpt: "Découvrez comment restreindre l’accès à vos lignes SIP grâce à une restriction par IP"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
 La téléphonie sur IP utilise le web pour transmettre des communications. Elle capte des conversations voix, les transforme en données, pour finalement les transmettre à un interlocuteur. Du fait de son côté connecté, il est fortement conseillé de sécuriser votre téléphonie sur IP, surtout si celle-ci fait partie intégrante de votre activité d'entreprise.
- 
+
 **Découvrez comment sécuriser l’accès à vos lignes SIP grâce à une restriction par IP et apprenez à récupérer les logs d'erreurs qui vous permettent de vérifier les tentatives d'authentification.**
 
 ## Prérequis
@@ -30,10 +30,11 @@ La téléphonie sur IP utilise le web pour transmettre des communications. Elle 
 
 ## En pratique
 
-Une solution fiable pour sécuriser votre téléphonie sur IP est de restreindre son utilisation à une ou plusieurs adresses IP publiques. Ceci vous permet par exemple de limiter l'utilisation de vos lignes uniquement à des adresses IP utilisées dans votre entreprise. Vous interdirez ainsi que vos lignes soient utilisables à partir d'autres adresses IP que celles autorisées.
+Une solution fiable pour sécuriser votre téléphonie sur IP est de restreindre son utilisation à une ou plusieurs adresses IP publiques. Seules les adresses IP autorisées pourront alors utiliser vos lignes.
 
 ### Étape 1 : configurer la restriction par IP
 
+<!-- CP-STEPS-START:etape-1-configurer-la-restriction-par-ip -->
 Si vous souhaitez appliquer la configuration à plusieurs lignes SIP, vous serez prévenu du choix dans la suite de ce guide. Pour le moment, sélectionnez-en une pour laquelle vous voulez appliquer la modification.
 
 Une fois la ligne SIP sélectionnée, depuis l'onglet `Gestion`{.action}, cliquez sur le bouton `Restrictions SIP par IP`{.action}.
@@ -69,9 +70,11 @@ Dans la section `Restrictions SIP associées à votre code client` de la page, c
 Dès que vous êtes prêt à appliquer les modifications, cliquez sur le bouton `Appliquer les modifications`{.action}.
 
 ![securiser-sip](images/restriction03.png){.thumbnail}
+<!-- CP-STEPS-END:etape-1-configurer-la-restriction-par-ip -->
 
 ### Étape 2 : accéder aux logs d'erreurs d'authentification de sa ligne SIP
 
+<!-- CP-STEPS-START:etape-2-acceder-aux-logs-derreurs -->
 Lorsqu'un téléphone utilisant une ligne SIP souhaite s'identifier par exemple, celui-ci doit communiquer avec un serveur. Durant ce processus, ce dernier prendra en compte plusieurs éléments :
 
 - l'identifiant de la ligne SIP ;
@@ -92,7 +95,7 @@ Dans l'exemple ci-dessous, vous retrouverez un message indiquant une erreur d'au
 
 ![securiser-sip](images/secure-sip-part5.png){.thumbnail}
 
-Afin d'être plus réactif, nous vous conseillons d'activer les paramètres de notification par e-mail afin d'être averti lorsqu'une erreur d'authentification se produit. 
+Pour être averti lors d'une erreur d'authentification, activez les notifications par e-mail. 
 
 Pour cela, toujours sur la page `Consultation et gestion des notifications`, dans la section `Paramètres de notifications`, cliquez sur le bouton `Modifier les paramètres de notifications`{.action}. Complétez ensuite les informations demandées :
 
@@ -105,6 +108,7 @@ Pour cela, toujours sur la page `Consultation et gestion des notifications`, dan
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Vous avez la possibilité d'activer ces paramètres de notifications pour d'autres lignes SIP en cliquant sur le bouton `Appliquer à plusieurs lignes`{.action}. Vous devrez choisir les lignes dans la fenêtre qui apparaît puis appuyer sur le bouton `Valider`{.action}.
 
 ![securiser-sip](images/secure-sip-part6.png){.thumbnail}
+<!-- CP-STEPS-END:etape-2-acceder-aux-logs-derreurs -->
 
 ## Aller plus loin
 

@@ -12,6 +12,17 @@ Se um endereço IP é objeto de um relatório junto de organizações como Spamh
 
 Por isso, é importante que a OVHcloud se ocupe da reputação, qualidade e segurança da rede, que constitui igualmente uma parte importante do seu serviço.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public IP](/links/control-panel/network-public-ip)
+- **Caminho de navegação:** `Network`{.action} > `Endereços IP Públicos`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
+
 ### Como funciona o sistema de proteção?
 
 O nosso sistema baseia-se na tecnologia antisspam de Vade Secure.
@@ -61,8 +72,6 @@ Uma vez o problema resolvido, pode desbloquear o seu endereço IP efetuando os p
 ### Desbloquear o endereço IP
 
 #### Desbloquear o endereço IP a partir da Área de Cliente
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
 Pode utilizar o menu suspenso sob **Os meus endereços IP públicos e serviços associados** para filtrar os seus serviços por categoria, ou escrever diretamente o endereço IP desejado na barra de pesquisa.
 

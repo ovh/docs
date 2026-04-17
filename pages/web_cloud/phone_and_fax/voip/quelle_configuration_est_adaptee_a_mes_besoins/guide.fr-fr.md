@@ -1,6 +1,6 @@
 ---
-title: 'Choisir et appliquer une configuration pour un numéro'
-excerpt: 'Découvrez comment choisir et appliquer une configuration sur votre numéro'
+title: "Choisir et appliquer une configuration pour un numéro"
+excerpt: "Découvrez comment choisir et appliquer une configuration sur votre numéro"
 updated: 2026-01-22
 ---
 
@@ -36,18 +36,22 @@ Lorsque vous disposez d'un numéro alias chez OVHcloud, qu'il soit nouvellement 
 
 ### Étape 1 : Accéder à la gestion de votre numéro
 
+<!-- CP-STEPS-START:acces-gestion-numero -->
 Dès lors, deux possibilités existent selon le numéro concerné :
 
 - **le numéro n'a aucune configuration** : cliquez sur l'onglet `Configuration`{.action}, puis suivez les instructions ci-dessous ;
 - **le numéro possède déjà une configuration** : cliquez sur l'onglet `Configuration`{.action}, puis sur `Changer de configuration`{.action}. Suivez ensuite les instructions ci-dessous.
 
 ![configurationnumeroalias](images/alias-config1-2022.png){.thumbnail}
+<!-- CP-STEPS-END:acces-gestion-numero -->
 
 ### Étape 2 : Définir la configuration la plus adaptée à votre besoin
 
+<!-- CP-STEPS-START:choisir-configuration -->
 Dans la nouvelle fenêtre qui apparaît, plusieurs configurations sont possibles.
 
 ![configurationnumeroalias](images/alias-config2.png){.thumbnail}
+<!-- CP-STEPS-END:choisir-configuration -->
 
 Vous trouverez ci-dessous un récapitulatif des différentes configurations. Poursuivez vers celle(s) que vous souhaitez consulter.
 
@@ -80,7 +84,7 @@ Reportez-vous aux instructions décrites dans notre documentation « [Créer et
 
 Le Serveur Vocal Interactif (SVI) vous propose une interface simple pour créer un menu interactif. L’appelant est invité, via des messages pré-enregistrés, à interagir avec le serveur grâce aux touches de son téléphone. Selon la configuration, il est alors possible de transférer votre interlocuteur vers un autre numéro, de le renvoyer vers une messagerie OVHcloud, de raccrocher ou de lire des sons.
 
-Consultez notre guide « [Configurer un Serveur Vocal Interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif) » si vous en désirez en apprendre plus.
+Consultez notre guide « [Configurer un Serveur Vocal Interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif) » si vous désirez en apprendre plus.
 
 #### 2.5 SVI VXML <a name="svi-vxml"></a>
 
@@ -94,10 +98,11 @@ Via une interface unique, vous avez la possibilité de gérer une file d'appels,
 
 Des options supplémentaires sont également disponibles telles que l'enregistrement des appels entrants.
 
-Consultez notre guide « [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution) » si vous en désirez en apprendre plus.
+Consultez notre guide « [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution) » si vous désirez en apprendre plus.
 
 ### Étape 3 : Appliquer la configuration souhaitée
 
+<!-- CP-STEPS-START:appliquer-configuration -->
 Une fois votre choix effectué, sélectionnez la configuration que vous souhaitez appliquer à votre numéro, puis cliquez sur le bouton `Paramétrer`{.action}.
 
 Patientez quelques instants afin que le changement soit pris en compte.
@@ -111,6 +116,7 @@ Patientez quelques instants afin que le changement soit pris en compte.
 > Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
 >
 > Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+<!-- CP-STEPS-END:appliquer-configuration -->
 
 ## Aller plus loin
 

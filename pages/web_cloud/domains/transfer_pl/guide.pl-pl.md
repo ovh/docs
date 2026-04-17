@@ -63,7 +63,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 |3|Wniosek o transfer nazwy domeny|Każda osoba posiadająca kod transferu, za zgodą abonenta|U nowego operatora (np. OVHcloud)|W zależności od podjętych przez Ciebie działań|
 |4|Zatwierdzenie transferu|Abonent nazwy domeny musi potwierdzić operację na wniosek registry |W otrzymanym e-mailu|Maksymalnie 5 dni|
 
-### Etap 1: weryfikacja informacji związanych z nazwą domeny
+### 1 - Weryfikacja informacji związanych z nazwą domeny
 
 **W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych jest widocznych w bazie "Whois". Sugerujemy zatem sprawdzenie informacji dotyczących Twojej nazwy domeny u aktualnego operatora.
 
@@ -76,7 +76,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 > Jeśli nie wiesz, który operator jest odpowiedzialny za Twoją nazwę domeny, możesz podać informacje dotyczące jej tożsamości w wierszach "Registrar", które pojawią się w wyniku wyszukiwania narzędzia "Whois".
 >
 
-### Etap 2: odblokowanie nazwy domeny i pobranie kodu transferu
+### 2 - Odblokowanie nazwy domeny i pobranie kodu transferu
 
 Po sprawdzeniu informacji dotyczących nazwy domeny konieczne jest jej odblokowanie. Operacja ta może zostać przeprowadzona wyłącznie we współpracy z aktualnym operatorem. Zalecamy kontakt z operatorem i uzyskanie informacji o przebiegu procedury.
 
@@ -89,7 +89,7 @@ Pamiętaj, że OVHcloud nie jest operatorem Twojej nazwy domeny w momencie rozpo
 > Po odblokowaniu Twojej nazwy domeny otrzymasz siedem (7) dni na transfer do OVHcloud. Po tym czasie Twoja nazwa domeny zostanie automatycznie zablokowana, jeśli nie złożysz wniosku o zmianę operatora nazwy domeny.
 >
 
-### Etap 3: zlecić transfer nazwy domeny do OVHcloud <a name="step3"></a>
+### 3 - Zlecić transfer nazwy domeny do OVHcloud <a name="step3"></a>
 
 Po odblokowaniu Twojej nazwy domeny i uzyskanym kodzie możesz zamówić jej transfer z [naszej strony WWW](/links/web/domains). Wprowadź nazwę Twojej nazwy domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
 
@@ -116,9 +116,9 @@ Możesz również zakończyć zamówienie [hostingiem www](/links/web/hosting) i
 
 ![nazwa domeny](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
-Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu przejdź do sekcji `Web Cloud`{.action}, a następnie kliknij na `Operacje w toku`{.action}.
+Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu na stronie [Operacje w toku](/links/control-panel/web-ongoing-operations).
 
-### Etap 4: Zatwierdzenie transferu
+### 4 - Zatwierdzenie transferu
 
 Transfer nazwy domeny wiąże się z potwierdzeniem przez e-mail. Etap ten może zostać wykonany od początku transferu, ale może trwać do pięciu dni.
 
@@ -140,9 +140,9 @@ Sprawdź również w pierwszej kolejności foldery "SPAM" / "niechciane wiadomo�
 Jeśli e-mail do potwierdzenia nie zostanie odnaleziony, skontaktuj się z pomocą OVHcloud poprzez utworzenie zgłoszenia. Wsparcie techniczne OVHcloud może wówczas anulować transfer. Po anulowaniu operacji zmień adres e-mail abonenta nazwy domeny, wybierając innego dostawcę e-mail (np. Gmail, Yahoo, Onet, wp.pl itp.).<br>
 Po zmianie adresu e-mail wykonaj [nowy wniosek o transfer](#step3).
 
-### Etap 5: zarządzaj nazwą domeny za pomocą OVHcloud
+### 5 - Zarządzaj nazwą domeny za pomocą OVHcloud
 
-Po zakończeniu operacji transferu możesz zarządzać nazwą domeny w [Panelu klienta OVHcloud](/links/manager). W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
+Po zakończeniu operacji transferu możesz zarządzać nazwą domeny na stronie [Domeny](/links/control-panel/web-domains).
 
 ## Sprawdź również
 

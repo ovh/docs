@@ -8,6 +8,17 @@ updated: 2025-04-28
 
 Questa guida ti mostra la nozione di Numero d'ordine o Purchase Order (PO) applicata alla fatturazione di OVHcloud.
 
+<!-- CP-NAV-START:billing-orders -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [I miei ordini](/links/control-panel/billing-orders)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `I miei ordini`{.action}
+
+---
+<!-- CP-NAV-END:billing-orders -->
+
 ## Procedura
 
 ### Numero d'ordine e Purchase Order (PO) Number
@@ -49,7 +60,8 @@ Per OVHcloud il documento deve quindi contenere almeno le seguenti informazioni:
 
 ### Come inserire un numero di Purchase Order (PO) nello Spazio Cliente OVHcloud
 
-Apri la pagina [Ordini](/links/control-panel/billing-orders).
+<!-- CP-STEPS-START:enter-po-reference -->
+Apri la pagina [I miei ordini](/links/control-panel/billing-orders).
 
 ![Spazio Cliente](images/huborders.png){.thumbnail}
 
@@ -77,6 +89,7 @@ Nella scheda `Le tue referenze interne`{.action}, è possibile modificare o disa
 
 > [!primary]
 > Per disattivare/modificare una referenza a un altro **nello stesso intervallo di tempo**, utilizza l'opzione `Modificare`{.action} per modificare l'intervallo di tempo della prima referenza.
+<!-- CP-STEPS-END:enter-po-reference -->
 
 ## Per saperne di più
 

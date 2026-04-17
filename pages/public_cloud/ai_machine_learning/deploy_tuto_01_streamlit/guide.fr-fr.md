@@ -17,7 +17,6 @@ The purpose of this tutorial is to provide a concrete example on how to build an
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](/links/manager)
 -   an **AI Deploy project** created inside a **Public Cloud** project
 -   a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer

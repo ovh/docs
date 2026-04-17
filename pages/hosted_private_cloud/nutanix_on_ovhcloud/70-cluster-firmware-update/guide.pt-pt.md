@@ -11,15 +11,25 @@ This article provides you with the steps to update Nutanix cluster's firmwares b
 Our services will take over to apply updates and firmwares and will restart the node thereafter.
 
 > [!warning]
-> Before following the steps below, log in to your [OVHcloud Control Panel](/links/manager) and create a support ticket, requesting a firmware update. Make sure to provide the OVHcloud support teams with all technical information regarding your cluster.
+> Before following the steps below, create a support ticket in your [OVHcloud Control Panel](/links/manager), requesting a firmware update. Make sure to provide the OVHcloud support teams with all technical information regarding your cluster.
 
 **This guide explains how to update your Nutanix cluster firmware.**
 
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Consulting the guide [First steps to use the OVHcloud API](/pages/manage_and_operate/api/first-steps) (to familiarise yourself with the OVHcloud API)
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Select your cluster
+
+---
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## Instructions
 
@@ -137,7 +147,7 @@ The CVM is now shut down.
 
 ### Reboot to rescue mode
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Hosted Private Cloud`{.action}, choose the `Nutanix`{.action} solution and select your cluster.
+In the OVHcloud Control Panel, after selecting your cluster, note the nodes listed.
 
 ![OVHcloud Control Panel - cluster access](images/nutanix-cluster-fw-update-11.png){.thumbnail}
 

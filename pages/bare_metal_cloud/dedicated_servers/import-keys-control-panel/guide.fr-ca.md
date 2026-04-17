@@ -13,22 +13,30 @@ Les paires de clés sont utilisées pour authentifier les connexions SSH entre l
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) ou un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
-- Accès à l’[espace client OVHcloud](/links/manager)
 
 > [!primary]
 >
-> Pour plus d'informations sur l'utilisation des clés SSH avec les services [Public Cloud](/links/public-cloud/public-cloud), consultez notre guide dédié :
+> Pour plus d’informations sur l’utilisation des clés SSH avec les services [Public Cloud](/links/public-cloud/public-cloud), consultez notre guide dédié :
 >
 > [Comment créer des clés SSH avec OpenSSH pour les instances Public Cloud](/pages/public_cloud/compute/creating-ssh-keys-pci)
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Mes services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Produits et services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## En pratique
 
-Si vous n'avez pas encore créé de paire de clés SSH, consultez d'abord nos guides :
+Si vous n’avez pas encore créé de paire de clés SSH, consultez d’abord nos guides :
 
 - [Créer et utiliser des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
-- [Tutoriel - Comment utiliser PuTTY pour les connexions SSH et l'authentification](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
-
-Connectez-vous sur votre [espace client OVHcloud](/links/manager), cliquez sur le nom du compte en haut à droite et ouvrez `Mes offres & services`{.action}.
+- [Tutoriel - Comment utiliser PuTTY pour les connexions SSH et l’authentification](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

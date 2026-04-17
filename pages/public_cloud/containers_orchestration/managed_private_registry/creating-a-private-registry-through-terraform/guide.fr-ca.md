@@ -24,6 +24,17 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Before you begin
 
 * You should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following [detailed installation instructions](https://www.terraform.io/docs/cli/index.html) or with the tool [tfenv](https://github.com/tfutils/tfenv).
@@ -334,8 +345,7 @@ user = "myuser"
 > If after running the `terraform apply` command, you get the error message `Error: Your query returned no results. Please change your search criteria and try again`, it means you have entered an incorrect `region`.
 >
 
-Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
-As you can see, your registry has been successfuly created:
+Go to the `Managed Private Registry`{.action} section. Your registry has been successfully created:
 
 ![Private registry created](images/registry-created.png){.thumbnail}
 

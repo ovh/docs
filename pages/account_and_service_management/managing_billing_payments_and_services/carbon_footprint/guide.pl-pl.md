@@ -19,8 +19,8 @@ W związku z Twoją działalnością lub zainteresowaniem tym tematem może być
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Account dashboard](/links/control-panel/account-dashboard)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Account dashboard`{.action}
+- **Link bezpośredni:** [Moje konto](/links/control-panel/account-dashboard)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->
@@ -66,6 +66,7 @@ Należy wziąć pod uwagę kilka kwestii:
 
 ### Pobranie miesięcznego bilansu za poprzedni miesiąc w Panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:retrieve-cp-footprint -->
 1. Na [Panelu klienta](/links/control-panel/account-dashboard), w kolumnie po lewej stronie przejdź do sekcji **Przydatne linki**, następnie kliknij zakładkę `Mój ślad węglowy`{.action}.
 1. Na nowej stronie, która się wyświetli, kliknij `Pobierz dane dot. śladu węglowego z m-ca: [Miesiąc] [Rok]`{.action}.
 
@@ -74,6 +75,7 @@ Należy wziąć pod uwagę kilka kwestii:
 Co miesiąc będziesz mógł pobrać ślad węglowy z poprzedniego miesiąca w odniesieniu do wybranych usług.
 
 Jeśli potrzebujesz śladu węglowego za miesiąc przed bieżącym miesiącem, musisz obowiązkowo przejść przez nasze API, aby go odzyskać.
+<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Pobierz bilans miesięczny sprzed poprzedniego miesiąca za pośrednictwem naszych API
 
@@ -93,7 +95,7 @@ Udostępniamy domyślnie API OVHcloud, które umożliwiają programistom lub int
 
 - Po prawej stronie wyświetli się API z ramką do uzupełnienia.
 - Kliknij przycisk znajdujący się w prawym górnym rogu o nazwie `Authenticate`{.action}, a następnie przycisk `Login with OVHcloud SSO`{.action}.
-- Otworzy się interfejs logowania do [Panelu klienta OVHcloud](/links/manager).
+- Otworzy się interfejs logowania do [Panelu klienta OVHcloud](/links/control-panel/account-dashboard).
 - Zaloguj się za pomocą identyfikatora klienta, następnie kliknij `Authorize`{.action}, aby korzystać z API OVHcloud w połączeniu z Twoimi usługami.
 - Zostaniesz automatycznie przekierowany do poprzedniej strony API **POST /me/carbonCalculator/task**.
 

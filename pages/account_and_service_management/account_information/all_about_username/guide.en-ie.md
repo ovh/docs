@@ -22,8 +22,8 @@ You can also use the OVHcloud Control Panel to manage your personal data, and de
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [User profile](/links/control-panel/account-profile)
-- **Navigation path:** Click your name in the top right > `My account`{.action}
+- **Direct link:** [My profile](/links/control-panel/account-profile)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action} > `Edit my profile`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -63,7 +63,7 @@ If you have not already done so, save your password in a [password manager](/pag
 If you experience any issues accessing your primary email address, a backup email address will help you retain access to your account, and manage your services as a result.
 <br>This second address **must be different** from the first, in particular to facilitate your procedures in case of password recovery.
 
-To enter this backup email address, go to your [user profile](/links/control-panel/account-profile) and click on `Edit my profile`{.action} in the `My profile` box.
+To enter this backup email address, go to your [user profile](/links/control-panel/account-profile).
 
 > [!warning]
 > As a reminder, it is **essential** that the backup email address is **different** from the account’s main email address.
@@ -84,9 +84,11 @@ You can find all the details to enable it in our guide on [Securing your OVHclou
 
 ### Changing your personal details
 
-You can change your account information. Go to your [user profile](/links/control-panel/account-profile) and click on `Edit my profile`{.action} in the `My profile` box.
+You can change your account information. Go to your [user profile](/links/control-panel/account-profile).
 
-Edit your details, then click `Confirm`{.action} .
+<!-- CP-STEPS-START:save-profile-changes -->
+Edit your details, then click `Save changes`{.action}.
+<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
@@ -95,6 +97,7 @@ Edit your details, then click `Confirm`{.action} .
 
 ### Changing your primary email address
 
+<!-- CP-STEPS-START:changing-primary-email -->
 If you would like to change your primary contact email address, you will need to validate it using a code sent to your current primary contact email address. Once you have received the code, click the `I have received my validation code`{.action} button.
 
 ![NIC handle](images/nichandle07.png){.thumbnail}
@@ -102,6 +105,7 @@ If you would like to change your primary contact email address, you will need to
 Next, enter the code into the `Validation code` section, and click `Confirm`{.action}.
 
 ![NIC handle](images/nichandle08.png){.thumbnail}
+<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -109,11 +113,13 @@ Next, enter the code into the `Validation code` section, and click `Confirm`{.ac
 
 #### Changing the account type
 
+<!-- CP-STEPS-START:changing-account-type -->
 Click on the `Type of account` button when you edit your profile. A drop-down menu allows you to define the type of account corresponding to your situation.
 
 ![identifiant client](images/nichandle09.png){.thumbnail}
 
 Once you have entered this information, click the `Confirm`{.action} button.
+<!-- CP-STEPS-END:changing-account-type -->
 
 #### Exercising your personal data rights
 

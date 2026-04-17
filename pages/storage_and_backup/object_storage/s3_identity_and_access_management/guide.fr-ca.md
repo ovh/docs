@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion des identités et des accès
 excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources Object Storage
-updated: 2026-03-06
+updated: 2026-04-14
 ---
 
 ## Objectif
@@ -11,11 +11,21 @@ Ce guide explique comment gérer les identités et les accès à vos ressources 
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans le menu de gauche.
+Cliquez sur `Object Storage`{.action} dans le menu de gauche.
 
 ### Création d'un utilisateur
 
@@ -62,22 +72,6 @@ Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Suivant`{
 Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Confirmer`{.action}.
 
 ![Add a user to my container - Role](images/highperf-identity-and-access-management-20220928083800300.png){.thumbnail}
-
-### Gestion des accès à un objet via un profil
-
-Vous pouvez également définir l'accès à vos objets via des profils prédéfinis.
-
-Cliquez sur le bouton `...`{.action} à droite de votre objet puis sur `Ajouter un utilisateur à mon objet`{.action}.
-
-![object menu](images/highperf-identity-and-access-management-20220928084137918.png){.thumbnail}
-
-Sélectionnez l'utilisateur et cliquez sur `Suivant`{.action}.
-
-![add user to my object](images/highperf-identity-and-access-management-20220928084222940.png){.thumbnail}
-
-Sélectionnez le profil d'accès pour cet utilisateur et cliquez sur `Confirmer`{.action}.
-
-![add role to my object](images/highperf-identity-and-access-management-20220928084308265.png){.thumbnail}
 
 ### Gestion avancée des accès aux ressources
 

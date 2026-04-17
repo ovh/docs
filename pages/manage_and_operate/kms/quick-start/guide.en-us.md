@@ -12,6 +12,17 @@ The purpose of this guide is to show you the steps you need to take to set up yo
 
 - An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 
+<!-- CP-NAV-START:security-kms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Key Management Service](/links/control-panel/security-kms)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Key Management Service`{.action} > Select your OKMS domain
+
+---
+<!-- CP-NAV-END:security-kms -->
+
 ## Instructions
 
 ### Ordering your KMS
@@ -21,7 +32,7 @@ You can order multiple KMSs, either in different regions or in the same region.
 
 Since the billing for a KMS is based on the number of keys stored on it, ordering a KMS does not generate billing per se.
 
-You can order a KMS from the [OVHcloud Control Panel](/links/manager) by going to `Identity, Security & Operations`{.action} and `Key Management Service`{.action}. Then click the `Order a KMS`{.action} button.
+Click the `Order an OKMS domain`{.action} button.
 
 ![Access to the KMS menu](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
@@ -41,7 +52,7 @@ After a few seconds, the KMS will be available in your Control Panel.
 
 #### Create an encryption key
 
-You can create an encryption key from the dedicated menu of the OVHcloud console, using the `Create a key`{.action} button.
+In the `Service Keys`{.action} tab, click the `Create a Service Key`{.action} button.
 
 ![Create a key](images/create_key_01.png){.thumbnail}
 

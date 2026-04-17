@@ -37,6 +37,17 @@ Ce guide a pour objectif de vous montrer comment :
 - Un stockage objet compatible S3<sup>1</sup> pour héberger vos backups.
 - Avoir une compréhension basique de l'administration GNU/Linux.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Aperçu de l'architecture
 
 Le système de backup automatisé repose sur trois composants principaux.
@@ -68,10 +79,7 @@ L’utilisation d’Object Storage garantit que vos backups restent disponibles 
 
 **Accéder à Object Storage**
 
-1. Connectez-vous à l'[espace client OVHcloud](/links/manager).
-2. Accédez à l'univers `Public Cloud`{.action}.
-3. Si aucun projet n’existe, créez un projet Public Cloud.
-4. Dans le menu de gauche, allez dans `Object Storage`{.action}.
+Dans le menu de gauche, allez dans `Object Storage`{.action}.
 
 **Créer un utilisateur Object Storage**
 

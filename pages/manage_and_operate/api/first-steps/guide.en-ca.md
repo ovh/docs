@@ -229,7 +229,7 @@ To list and revoke keys, you can use the [API portal](/links/api) or the [OVHclo
 >>
 > Using the OVHcloud Control Panel
 >>
->> Go to the `Identity, Security & Operations`{.action} menu, then `API keys`{.action}.
+>> Go to the [API keys](/links/control-panel/iam-api-keys) page.
 >>
 >> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>

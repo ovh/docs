@@ -33,6 +33,17 @@ Konta E-mail Pro można skonfigurować w różnych kompatybilnych programach poc
 - Zainstalowanie programu Thunderbird na swoim Mac.
 - Posiadanie danych logowania do adresu e-mail, który chcesz skonfigurować.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 Ten przewodnik pokazuje, jak korzystać z rozwiązań OVHcloud z zewnętrznymi narzędziami oraz jakie zmiany są wymagane w konkretnych sytuacjach. Możesz musieć dostosować instrukcje do swojej sytuacji.
@@ -47,11 +58,7 @@ Jeśli napotkasz trudności w wykonaniu tych czynności, polecamy kontakt z [spe
 >
 > W naszym przykładzie używamy oznaczenia serwera: pro?.mail.ovh.net. Musisz zastąpić znak „?“ numerem identyfikującym serwer swojej usługi E-mail Pro.
 >
-> 1. Zaloguj się do swojego [Panelu Klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `E-mail Pro`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w sekcji **Logowanie** karty `Informacje ogólne`{.action}.
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}.
 
 ### Dodanie konta
 

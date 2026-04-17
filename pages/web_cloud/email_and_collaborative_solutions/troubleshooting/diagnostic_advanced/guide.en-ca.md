@@ -34,7 +34,26 @@ Is your email account unable to send or receive emails when using webmail or you
 ## Requirements
 
 - an OVHcloud email solution (**MX Plan/Web Hosting emails** or **Exchange** )
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -67,7 +86,6 @@ Follow these steps to ensure that your relevant services are up and running:
 >>
 >> Go to the `Web Cloud`{.action} section, click `Exchange`{.action} in the **Microsoft** section and select your service. Click the `Email accounts`{.action} tab. Check the email account status in the `Status` column.
 
-
 ///
 
 /// details | I am unable to send and/or receive emails from my email software (**sending** and/or **receiving**)
@@ -86,7 +104,6 @@ If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc
 >>
 >> For an **Exchange** solution, go to [the Microsoft Exchange guides page](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) and check your email client configuration using the guides available in the `Setting up an email application on your computer` or `Setting up an email application on your mobile device` section, depending on the device you are using.
 >>
-
 
 ///
 

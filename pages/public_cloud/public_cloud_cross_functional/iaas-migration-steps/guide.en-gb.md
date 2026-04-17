@@ -16,9 +16,19 @@ By following this guide, users can build a robust, cost-optimised, and cloud-nat
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 - Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), if you intend using it.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

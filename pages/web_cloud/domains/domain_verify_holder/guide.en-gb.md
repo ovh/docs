@@ -1,7 +1,7 @@
 ---
 title: "Domain name holder contact management"
 excerpt: "Find out how to verify, correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud"
-updated: 2026-01-16
+updated: 2026-03-19
 ---
 
 ## Objective
@@ -27,7 +27,6 @@ In this case, OVHcloud will not be able to provide any refund.
 - You have received an email from OVHcloud stating that action is required regarding your domain name holder contact details.
 - Check the following points to ensure that this is not a fraudulent email:
     - The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
-    - The URL mentioned in the email starts off with: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -50,10 +49,6 @@ After the order, the domain name holder will receive an email from OVHcloud to v
 
 When clicking on `Confirm your email address`{.action}, a new page will open with a link directly validating the holder's email address.
 
-If this method does not work, the holder can manually validate their email address using the one-time code provided in the email and by clicking on `Email validation form`{.action}.
-
-![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
-
 ![Validation email CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
 
 ### 2 - Correct or complete the contact details of the domain name holder as an administrator
@@ -63,7 +58,7 @@ Click on the tabs below to view each of the **4** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -140,33 +135,29 @@ Click on the tabs below to view each of the **4** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click on the `Ongoing operations`{.action} menu, then find the domain name concerned in the list that appears.
+>> Go to the [Ongoing operations](/links/control-panel/web-ongoing-operations) page, then find your domain name in the list.
 >>
 >> ![Ongoing operations](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> Click the `⁝`{.action} button on the right, then `Modify operation`{.action}.
 >>
 >> ![Domain name operation](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the window that opens, tick the option `Relaunch operation`{.action}, then click `Confirm`{.action}.
 >>
 >> ![Operation data on domain](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
-
-It will take a few minutes to complete the operation. Refresh the `Domain name operations` page where the operation to correct the contact for your domain name was located.
-
-If the operation has completed successfully, the row for the processed operation no longer appears.
-
-If this is not the case, a correction is necessary in the domain name holder's contact details. In this case, please follow this guide from the beginning to resolve the issue.
+>>
+> **Step 4**
+>>
+>> It will take a few minutes to complete the operation. Refresh the `Domain name operations` page where the operation to correct the contact for your domain name was located.
+>>
+>> If the operation has completed successfully, the row for the processed operation no longer appears.
+>>
+>> If this is not the case, a correction is necessary in the domain name holder's contact details. In this case, please follow this guide from the beginning to resolve the issue.
 
 ## Go further
 
@@ -178,4 +169,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).

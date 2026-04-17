@@ -47,7 +47,7 @@ Para comprobar si su dominio utiliza la configuración DNS de OVHcloud, haga cli
 
 > [!warning]
 >
-> **Estos tres pasos solo son válidos si el dominio está registrado en OVHcloud.** En caso contrario, deberá comprobarlo en el agente registrador del dominio.
+> **Estos dos pasos solo son válidos si el dominio está registrado en OVHcloud.** En caso contrario, deberá comprobarlo en el agente registrador del dominio.
 >
 > Si los nombres de los servidores DNS acaban en *ovh.net* (excepto el servidor *snds2.ovh.net*), *ovh.ca* o *anycast.me*, el dominio utiliza los servidores DNS de OVHcloud.
 >
@@ -55,7 +55,7 @@ Para comprobar si su dominio utiliza la configuración DNS de OVHcloud, haga cli
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -83,7 +83,7 @@ Para activar (o desactivar) la solución **DNSSEC** para su dominio, haga clic e
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -110,7 +110,7 @@ Una vez recuperados estos 4 parámetros, haga clic en las fichas siguientes para
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

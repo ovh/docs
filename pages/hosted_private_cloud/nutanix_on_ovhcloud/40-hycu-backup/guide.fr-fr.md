@@ -34,13 +34,23 @@ HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 
 - Une licence [HYCU for OVHcloud](/links/hosted-private-cloud/hycu) valide dans votre compte OVHcloud (la première étape de ce guide vous détaille la procédure à suivre) ou une licence HYCU acquise depuis un fournisseur tiers.
 - Disposer d'un cluster Nutanix on OVHcloud dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur le cluster via Prism Central.
 - Avoir un projet Public Cloud avec un bucket de stockage de type High Performance Object Storage ainsi qu'un utilisateur ayant les droits en lecture et écriture sur ce bucket. Vous trouverez plus d'informations sur la création d'un projet Public Cloud et sur l’utilisation du service High Performance Object Storage sur les pages suivantes :
     - [Création d'un projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
     - [Débuter avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
     - [Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)](/pages/storage_and_backup/object_storage/s3_managing_object_lock)
 - 60 Go de stockage, 8 Go de mémoire et 8 cœurs sur votre Cluster Nutanix pour l'Instance/Appliance HYCU.
+
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 
 ## En pratique
 
@@ -82,7 +92,7 @@ Nous vous proposons différents packs de licences selon le nombre de machines vi
 > **Vous avez déjà une licence HYCU ?**<br>
 > Poursuivez la lecture de ce guide à l'étape « [Installer et configurer HYCU](#installation) ».
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager) puis rendez-vous successivement dans `Hosted Private Cloud`{.action} et `Stockage et sauvegarde`{.action}.
+Rendez-vous successivement dans `Hosted Private Cloud`{.action} et `Stockage et sauvegarde`{.action}.
 
 Cliquez sur `HYCU`{.action} puis sur `Toutes mes licenses`{.action}. 
 
@@ -147,7 +157,7 @@ Si votre configuration technique HYCU a changé, vous devrez effectuer une nouve
 
 /// details | Régénérer une licence HYCU for OVHcloud
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager) puis rendez-vous successivement dans `Hosted Private Cloud`{.action} et `Stockage et sauvegarde`{.action}. Cliquez sur `HYCU`{.action}.
+Rendez-vous successivement dans `Hosted Private Cloud`{.action} et `Stockage et sauvegarde`{.action}. Cliquez sur `HYCU`{.action}.
 
 Une fois dans votre tableau de bord de licences, cliquez sur le bouton `Régénérer la licence`{.action} (dans le cadre `Raccourcis`).
 
@@ -166,7 +176,7 @@ Suivez ensuite le même processus que pour l'activation de la licence :
 
 /// details | Comment résilier un abonnement HYCU for OVHcloud
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager) puis rendez-vous successivement dans `Hosted Private Cloud`{.action} et `Stockage et sauvegarde`{.action}. Cliquez sur `HYCU`{.action}.
+Rendez-vous successivement dans `Hosted Private Cloud`{.action} et `Stockage et sauvegarde`{.action}. Cliquez sur `HYCU`{.action}.
 
 Une fois dans votre tableau de bord de licences, cliquez sur `Résilier la licence`{.action} dans le cadre `Abonnement`.
 
@@ -375,9 +385,9 @@ La machine virtuelle est démarrée et possède l'adresse IP définie dans **clo
 
 Dans cette section, nous allons configurer une redirection pour que vous puissiez configurer HYCU en utilisant l’interface web de l’extérieur de votre cluster.
 
-Depuis votre espace client OVHcloud, sélectionnez `Bare Metal Cloud`{.action} puis cliquez sur votre `Load Balancer`{.action} dans la barre de menu à gauche.
+Dans la section `Network`{.action}, cliquez sur `Load Balancer`{.action} et sélectionnez votre service.
 
-Dans l'onglet `Fermes de serveurs`{.action}, cliquez sur `Ajouter une ferme de serveurs`{.action}.
+Dans l’onglet `Fermes de serveurs`{.action}, cliquez sur `Ajouter une ferme de serveurs`{.action}.
 
 ![Configure Load Balancer 01](images/03a-configureloadbalancer01.png){.thumbnail}
 

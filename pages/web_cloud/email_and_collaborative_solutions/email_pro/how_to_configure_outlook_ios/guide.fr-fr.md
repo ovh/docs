@@ -1,6 +1,6 @@
 ---
-title: "E-mail Pro - Configurer son compte e-mail sur Outlook pour iOS"
-excerpt: "Découvrez comment configurer votre adresse E-mail Pro sur l'application mobile Outlook pour iOS"
+title: "Email Pro - Configurer son compte e-mail sur Outlook pour iOS"
+excerpt: "Découvrez comment configurer votre adresse Email Pro sur l'application mobile Outlook pour iOS"
 updated: 2025-04-28
 ---
 
@@ -15,9 +15,9 @@ updated: 2025-04-28
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Outlook de Microsoft sur iOS est disponible gratuitement depuis l'App Store de Apple.
+Les comptes Email Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Outlook de Microsoft sur iOS est disponible gratuitement depuis l'App Store de Apple.
 
-**Découvrez comment configurer votre adresse E-mail Pro sur l'application mobile Outlook pour iOS**
+**Découvrez comment configurer votre adresse Email Pro sur l'application mobile Outlook pour iOS**
 
 > [!warning]
 >
@@ -27,9 +27,20 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d’une adresse [E-mail Pro](/links/web/email-pro).
+- Disposer d’une adresse [Email Pro](/links/web/email-pro).
 - Disposer de l'application Outlook sur votre appareil mobile [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## En pratique
 
@@ -37,9 +48,9 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!warning]
 >
-> Dans nos exemples, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans nos exemples, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
 >
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations générales`{.action}.
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche, appuyez sur `Ajouter un compte`{.action}.
 

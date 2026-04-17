@@ -1,12 +1,14 @@
 ---
 title: Escolher a classe correta de Block Storage
 excerpt: Descubra como escolher a classe correta de Block Storage OVHcloud. Compare desempenho, custos e casos de utilização para otimizar o seu armazenamento em termos de preço e eficiência.
-updated: 2025-12-15
+updated: 2026-04-14
 ---
 
 ## Objetivo
 
-Este guia ajuda-o a compreender as diferentes classes de Block Storage OVHcloud e a escolher a que melhor corresponde às suas necessidades. Descubra os níveis de desempenho, as considerações de custo e os casos de utilização recomendados para tomar decisões informadas sobre o armazenamento.
+**Este guia ajuda-o a compreender as diferentes classes de Block Storage OVHcloud e a escolher a que melhor corresponde às suas necessidades.**
+
+Descubra os níveis de desempenho, as considerações de custo e os casos de utilização recomendados para tomar decisões informadas sobre o armazenamento.
 
 ## Visão geral do Block Storage
 
@@ -73,7 +75,7 @@ Cada tipo de volume Block Storage também está disponível em versão encriptad
 Os volumes encriptados podem ser criados diretamente a partir da área de cliente OVHcloud ou através das ferramentas CLI/API, especificando o tipo de volume com o sufixo `-luks` (por exemplo: classic-luks ou highspeed-luks). Isto permite proteger facilmente os dados sensíveis, mantendo as mesmas performances e funcionalidades dos volumes padrão.
 
 > [!primary]
-> Os volumes encriptados não têm qualquer impacto no desempenho.
+> Para os volumes encriptados de grande dimensão (mais de 800 GiB), o desempenho pode ser inferior à qualidade de serviço (QoS) esperada para o volume, com uma redução de até 20 % do débito para a tecnologia High Speed Gen2. O impacto varia em função da implementação escolhida pelo cliente.
 
 ## Casos de utilização
 
@@ -101,6 +103,6 @@ Os volumes Block Storage podem ser implantados com diferentes opções de dispon
 
 [Modificar um Volume Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Se precisar de formação ou de assistência técnica para a implementação das nossas soluções, contacte o seu representante comercial ou clique [neste link](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projeto pela nossa equipa de Professional Services.
+Se precisar de formação ou de assistência técnica para a implementação das nossas soluções, contacte o seu representante comercial ou dirija-se à nossa [equipa de Professional Services](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projeto.
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

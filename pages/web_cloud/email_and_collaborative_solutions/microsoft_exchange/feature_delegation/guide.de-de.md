@@ -16,11 +16,30 @@ Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professione
 
 > [!warning]
 >
-> **Für [Email Pro](/links/web/email-pro)** können die in dieser Anleitung beschriebenen Delegierungsfunktionen nur über [Webmail](/links/web/email) verwendet werden. Die Protokolle, die ihre Verwendung über einen E-Mail-Client ermöglichen, erfordern einen [Exchange-Account](/links/web/emails-hosted-exchange).
+> **Für [E-Mail Pro](/links/web/email-pro)** können die in dieser Anleitung beschriebenen Delegierungsfunktionen nur über [Webmail](/links/web/email) verwendet werden. Die Protokolle, die ihre Verwendung über einen E-Mail-Client ermöglichen, erfordern einen [Exchange-Account](/links/web/emails-hosted-exchange).
 
 - Sie verfügen über mindestens zwei aktive E-Mail Account, die auf derselben OVHcloud E-Mail Plattform eingerichtet sind.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die Login-Informationen für den E-Mail Account, dem Sie neue Berechtigungen zuweisen möchten.
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+**E-Mail Pro:**
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 
@@ -39,24 +58,6 @@ Legen Sie zunächst fest, welche Berechtigungen Sie vergeben möchten. Zur Erinn
 Wählen Sie zunächst den Account aus, für den Sie Berechtigungen vergeben möchten. Bestimmen Sie dann die entsprechenden Rechte sowie den oder die Accounts, die zusätzliche Berechtigungen erhalten sollen. Folgen Sie nun Schritt 1 der vorliegenden Anleitung.
 
 ### Schritt 1: Delegation einrichten
-
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager) ein:
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
->>
-> **Email Pro**
->>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `E-Mail Pro`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
->>
 
 Gehen Sie nun auf den Tab `E-Mail-Accounts`{.action}.
 

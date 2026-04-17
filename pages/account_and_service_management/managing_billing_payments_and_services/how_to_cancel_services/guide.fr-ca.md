@@ -50,7 +50,7 @@ details > :not(summary) {
 
 ## Objectif
 
-Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis l'espace client OVHcloud.
+Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis la page [Mes offres et services](/links/control-panel/billing-services).
 
 - Tout d'abord, prenez connaissance de la partie « Que se passe-t-il lorsqu'un service OVHcloud est résilié ? » ci-dessous.
 - Choisissez ensuite le produit concerné dans la partie « [Comment résilier votre abonnement ?](#terminate) ».
@@ -87,8 +87,8 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Mes services](/links/control-panel/billing-services)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Produits et services`{.action}
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -101,7 +101,8 @@ Des **cas particuliers** existent néanmoins et sont détaillés [plus bas](#spe
 
 ### Comment résilier votre abonnement ? <a name="terminate"></a>
 
-Pour résilier l'abonnement à votre service, ouvrez la page [Mes services](/links/control-panel/billing-services).
+<!-- CP-STEPS-START:cancel-subscription -->
+Pour résilier l'abonnement à votre service, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 ![produits et services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -121,6 +122,7 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 La résiliation de votre service aura lieu à la **date d'effet** indiquée dans le tableau « Gestion de mes offres et services ». Si vous ne voyez pas le statut « Résiliation programmée » apparaître, rafraîchissez la page.
 
 ![demande de résiliation](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request-fr.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Cas particuliers <a name="specific-cases"></a>
 
@@ -140,11 +142,13 @@ Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/e
 
 #### Public Cloud <a name="publiccloud"></a>
 
+<!-- CP-STEPS-START:public-cloud-deletion -->
 Chaque service [Public Cloud](/links/public-cloud/public-cloud) peut être supprimé depuis l'onglet `Public Cloud`{.action} de l'espace client.
 
 Sélectionnez un service à gauche, cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
 
 ![public cloud instance deletion](images/pci-deletion-fr.png){.thumbnail}
+<!-- CP-STEPS-END:public-cloud-deletion -->
 
 Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (retrouvez plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
@@ -157,13 +161,15 @@ Vous pouvez également [consulter votre consommation actuelle](/pages/public_clo
 > Vous pouvez annuler une demande de résiliation jusqu'à 24 heures avant la date de fin d'abonnement.
 >
 
-Pour annuler une demande de résiliation, ouvrez la page [Mes services](/links/control-panel/billing-services).
+<!-- CP-STEPS-START:stop-cancellation -->
+Pour annuler une demande de résiliation, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'objet d'une demande de résiliation puis sur `Annuler la résiliation du service`{.action} 
 
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination-fr.png){.thumbnail}
 
 Enfin, cliquez sur `Confirmer l'annulation`{.action}.
+<!-- CP-STEPS-END:stop-cancellation -->
 
 L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page « Gestion de mes offres et services » si vous voyez toujours le statut « Résiliation programmée ».
 
@@ -192,7 +198,7 @@ Vous devez effectuer la procédure de résiliation pour chaque service de façon
 
 La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
 
-1. Vous n'avez plus de services visibles dans la section « [Mes offres & services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
+1. Vous n'avez plus de services visibles dans la section « [Mes offres et services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
 2. Vous n'avez pas de factures en attente de paiement. Dans le cas contraire, vous devez procéder à leur règlement en cliquant sur le bouton `Régler immédiatement`{.action} dans les actions de masses de la page « [Mes factures](https://www.ovh.com/manager/#/dedicated/billing/history) ».
 3. Vous n'avez pas de commande en cours. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
 4. Votre compte prépayé n'est pas positif. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).

@@ -12,7 +12,16 @@ Restringir el acceso a su infraestructura es una medida recomendable para garant
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ruta de navegación:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleccione su servicio vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedimiento
 
@@ -20,13 +29,13 @@ Restringir el acceso a su infraestructura es una medida recomendable para garant
 
 En primer lugar, debe restringir los accesos por IP. Le aconsejamos que utilice siempre un sistema de lista blanca. Esta técnica consiste en prohibir el acceso por defecto a todas las direcciones IP e indicar las direcciones que sí pueden acceder a la infraestructura.
 
-Puede realizar esta operación directamente desde el [área de cliente de OVHcloud](/links/manager). Una vez conectado a su Private Cloud, abra la pestaña `Seguridad`{.action}. Se mostrará una tabla en la que podrá consultar las direcciones IP autorizadas o denegadas. Para añadir nuevas direcciones IP, haga clic en el botón `Añadir IP`{.action}, situado a la derecha.
+Tras seleccionar su servicio, acceda a la pestaña `Seguridad`{.action}. Se mostrará una tabla en la que podrá consultar las direcciones IP autorizadas o denegadas. Para añadir nuevas direcciones IP, haga clic en el botón `Añadir IP`{.action}, situado a la derecha.
 
 ![Añadir IP](images/adding_ip.png){.thumbnail}
 
 ### Crear usuarios específicos
 
-Le recomendamos encarecidamente que cree un acceso personal para cada usuario que necesite acceder a la infraestructura. Puede realizar esta operación desde el [área de cliente de OVHcloud](/links/manager), en la pestaña `Usuarios`{.action}. Para añadir nuevos usuarios, haga clic en el botón `Crear un usuario`{.action}.
+Le recomendamos encarecidamente que cree un acceso personal para cada usuario que necesite acceder a la infraestructura. En la pestaña `Usuarios`{.action}, haga clic en el botón `Crear un usuario`{.action} para añadir nuevos usuarios.
 
 ![Usuarios](images/users.png){.thumbnail}
 

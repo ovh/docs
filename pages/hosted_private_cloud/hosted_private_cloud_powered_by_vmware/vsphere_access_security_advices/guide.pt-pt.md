@@ -12,7 +12,16 @@ Para assegurar a integridade da sua infraestrutura, convém que restrinja o aces
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Caminho de navegação:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Selecione o seu serviço vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instruções
 

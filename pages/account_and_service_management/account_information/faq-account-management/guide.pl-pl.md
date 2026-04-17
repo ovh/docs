@@ -87,15 +87,15 @@ Jeśli nadal nie możesz odnaleźć swojego identyfikatora, możesz kliknąć li
 
 /// details | Jak zabezpieczyć moje konto?
 
+<!-- CP-STEPS-START:secure-account -->
 Masz kilka opcji, aby zabezpieczyć swoje konto, takich jak:
 
 - wybór [skomplikowanego hasła i jego regularne odnawianie](/pages/account_and_service_management/account_information/manage-ovh-password);
 - dodanie [podwójnej autoryzacji](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa);
 - skonfigurowanie [ograniczenia według adresu IP](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction).
 
-Aby uzyskać dostęp do tych opcji, zaloguj się do swojego [konta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie kliknij `Moje konto`{.action}.
-
-Kliknij kartę `Bezpieczeństwo`{.action}, aby je wyświetlić.
+Na stronie [Bezpieczeństwo](/links/control-panel/account-security) możesz je wyświetlić.
+<!-- CP-STEPS-END:secure-account -->
 
 ///
 
@@ -114,11 +114,11 @@ W każdym z tych przypadków, zapoznaj się z [tą dokumentacją](/pages/account
 
 /// details | Jak zmienić hasło do mojego konta OVHcloud?
 
-Zaloguj się do swojego [konta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie kliknij `Moje konto`{.action}.
-
-Kliknij kartę `Bezpieczeństwo`{.action}, a następnie kliknij przycisk `Zmień`{.action} po lewej stronie od słowa **Hasło**. Możesz następnie zmienić swoje obecne hasło. Wyświetlany jest komunikat bezpieczeństwa, który informuje Cię, że jesteś na punkcie zmiany hasła. Po potwierdzeniu, otrzymasz (na główny adres e-mail podany w koncie) wiadomość e-mail zawierającą procedurę do wykonania. 
+<!-- CP-STEPS-START:change-password -->
+Na stronie [Bezpieczeństwo](/links/control-panel/account-security) kliknij przycisk `Zmień`{.action} po lewej stronie od słowa **Hasło**. Możesz następnie zmienić swoje obecne hasło. Wyświetlany jest komunikat bezpieczeństwa, który informuje Cię, że jesteś na punkcie zmiany hasła. Po potwierdzeniu, otrzymasz (na główny adres e-mail podany w koncie) wiadomość e-mail zawierającą procedurę do wykonania. 
 
 Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzenie i zarządzanie hasłem do konta](/pages/account_and_service_management/account_information/manage-ovh-password)".
+<!-- CP-STEPS-END:change-password -->
 
 > [!success]
 > **Nie pamiętasz swojego hasła?**
@@ -172,25 +172,27 @@ Zapoznaj się z sekcją "[Co zrobić, jeśli jedno z moich urządzeń zostało s
 
 /// details | Jak zmienić moje informacje osobiste?
 
-Aby wyświetlić lub zmienić swoje dane kontaktowe, zaloguj się do swojego [konta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie kliknij `Moje konto`{.action}.
-
-Kliknij następnie `Edytuj mój profil`{.action}, w sekcji `Mój profil`.
+<!-- CP-STEPS-START:change-personal-information -->
+Aby wyświetlić lub zmienić swoje dane kontaktowe, otwórz stronę [Mój profil](/links/control-panel/account-profile).
 
 > [!success]
 > **Chcesz zmienić adres e-mail swojego konta OVHcloud?**
 >
 > Najpierw zostanie wysłane żądanie potwierdzenia na adres e-mail, który obecnie podałeś w swoim koncie. Jeśli nie możesz już uzyskać dostępu do tego adresu e-mail, potrzebny jest czas oczekiwania 24 godziny. Po tym czasie zmiana zostanie automatycznie wykonana.
 >
+<!-- CP-STEPS-END:change-personal-information -->
 
 ///
 
 /// details | Jak uzyskać dostęp do umów i warunków ogólnych usług?
 
-Regulaminy usług OVHcloud można znaleźć bezpośrednio w [Panelu klienta](/links/manager). Po zalogowaniu przejdź do menu `Moje konto`{.action}, a następnie kliknij `Wyświetl regulaminy`{.action}.
+<!-- CP-STEPS-START:access-contracts -->
+Regulaminy usług OVHcloud można znaleźć bezpośrednio na stronie [Lista umów](/links/control-panel/billing-contracts).
 
 Możesz również zapoznać się z umowami na naszej stronie internetowej, za pośrednictwem [tego linku](/links/terms-conditions-contracts).
 
 Ta strona zawiera wszystkie potrzebne informacje dotyczące naszych umów, w tym warunki i zasady naszych usług.
+<!-- CP-STEPS-END:access-contracts -->
 
 ///
 
@@ -225,6 +227,7 @@ Po utworzeniu nowego konta OVHcloud w odpowiedniej filii, możesz postępować z
 
 /// details | Jak usunąć mój konto OVHcloud ?
 
+<!-- CP-STEPS-START:delete-account -->
 Zamknięcie Twojego konta klienta OVHcloud oraz usunięcie Twoich danych osobowych jest możliwe tylko wtedy, gdy:
 
 1. Nie masz już widocznych usług w sekcji "[Moje usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie, musisz najpierw złożyć wniosek o ich zakończenie i poczekać na ich usunięcie.
@@ -237,6 +240,7 @@ Jeśli wszystkie powyższe warunki są spełnione, możesz złożyć wniosek o u
 1. Zaloguj się do [centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 1. Wybierz motyw `Zarządzaj swoim kontem OVHcloud`{.action}.
 1. Wpisz `Chcę zamknąć swoje konto OVHcloud`{.action} i wykonaj opisane kroki.
+<!-- CP-STEPS-END:delete-account -->
 
 ///
 
@@ -282,7 +286,9 @@ Wszystkie nasze wiadomości e-mail spełniają nasze standardy bezpieczeństwa (
 **Jeśli masz wątpliwości co do autentyczności wiadomości e-mail**:
 
 - Wiedz, że nigdy nie będziemy prosić o hasło ani dane bankowe za pośrednictwem e-maila.
-- Najpierw sprawdź, czy wiadomość, którą otrzymałeś/aś, jest widoczna również w Twoim [Panelu klienta OVHcloud](/links/manager). Zaloguj się, kliknij na swoje imię w prawym górnym rogu, a następnie na `Połączenia`{.action} (lub `E-maile od OVHcloud`{.action}). Znajdziesz tam kopie wszystkich oficjalnych wiadomości wysłanych przez OVHcloud.
+<!-- CP-STEPS-START:check-emails -->
+- Najpierw sprawdź, czy wiadomość, którą otrzymałeś/aś, jest widoczna również na stronie [Moje wiadomości](/links/control-panel/account-messages). Znajdziesz tam kopie wszystkich oficjalnych wiadomości wysłanych przez OVHcloud.
+<!-- CP-STEPS-END:check-emails -->
 - Zobacz również nasz przewodnik: [Phishing - Jak rozpoznać oszukujące wiadomości e-mail lub Usługę SMS?](/pages/account_and_service_management/account_information/phishing_care).
 
 ///
@@ -327,7 +333,8 @@ Zamień `{logId}` na rzeczywisty identyfikator logu, który chcesz sprawdzić. D
 
 /// details | Jak mogę przekazać dostęp do moich usług innym osobom?
 
-Możesz przekazać innym kontom klientów OVHcloud zarządzanie administracyjne, techniczne i fakturą swoich usług z poziomu swojego Panelu klienta. Aby to zrobić, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie `Moje kontakty`{.action}.
+<!-- CP-STEPS-START:change-contacts -->
+Możesz przekazać innym kontom klientów OVHcloud zarządzanie administracyjne, techniczne i fakturą swoich usług z poziomu swojego Panelu klienta. Aby to zrobić, otwórz stronę [Zarządzanie kontaktami](/links/control-panel/account-contacts).
 
 Delegacja usług musi zostać potwierdzona e-mailem zarówno przez administratora usługi, jak i nowy kontakt.
 
@@ -337,15 +344,18 @@ Jeśli chcesz odzyskać nazwę domeny, której jesteś właścicielem zarejestro
 
 > [!success]
 > Pełny przewodnik dotyczący zarządzania kontaktami jest dostępny [tutaj](/pages/account_and_service_management/account_information/managing_contacts).
+<!-- CP-STEPS-END:change-contacts -->
 
 ///
 
 /// details | Jak skonfigurować lub zmienić kontakt do faktury?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie `Moje kontakty`{.action}.
+<!-- CP-STEPS-START:change-billing-contact -->
+Otwórz stronę [Zarządzanie kontaktami](/links/control-panel/account-contacts).
 
 > [!success]
 > Jeśli chcesz dowiedzieć się więcej o zarządzaniu kontaktami, zachęcamy do przeczytania szczegółowego przewodnika: "[Zarządzanie kontaktami usług](/pages/account_and_service_management/account_information/managing_contacts)".
+<!-- CP-STEPS-END:change-billing-contact -->
 
 ///
 

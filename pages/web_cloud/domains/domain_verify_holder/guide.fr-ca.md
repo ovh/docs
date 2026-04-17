@@ -1,7 +1,7 @@
 ---
 title: "Corriger les coordonnées du titulaire d'un nom de domaine"
 excerpt: "Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud"
-updated: 2025-05-21
+updated: 2026-03-19
 ---
 
 ## Objectif
@@ -27,7 +27,6 @@ Dans ce cas, aucun remboursement ne pourra être effectué de la part d'OVHcloud
 - Avoir reçu un e-mail de la part d'OVHcloud vous indiquant qu'une action est requise au sujet des coordonnées du titulaire de votre nom de domaine.
 - Vérifier les points suivants afin de vous assurer qu'il ne s'agit pas d'un e-mail frauduleux :
     - Le sujet de l'e-mail contient votre identifiant client (par exemple : `aa00000-ovh`) ainsi que votre nom de domaine (par exemple : `domain.tld`).
-    - L’URL mentionnée dans l’e-mail commence bien par : `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -50,10 +49,6 @@ Après la commande, le titulaire du nom de domaine recevra un e-mail d'OVHcloud 
 
 En cliquant sur `Confirmer votre adresse e-mail`{.action}, une nouvelle page s'ouvrira sur un lien validant directement l'adresse e-mail du titulaire.
 
-Si cette méthode ne fonctionne pas, le titulaire peut valider manuellement son adresse e-mail grâce au code à usage unique présent dans l'e-mail et en cliquant sur `Formulaire de validation d'e-mail`{.action}.
-
-![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
-
 ![Validation email CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
 
 ### 2 - Corriger ou compléter les coordonnées/informations de contact du titulaire du nom de domaine en tant qu'administrateur
@@ -63,7 +58,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -140,33 +135,29 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Opérations en cours`{.action}, puis retrouvez le nom de domaine concerné dans la liste qui s'affiche.
+>> Accédez à la page [Opérations en cours](/links/control-panel/web-ongoing-operations), puis retrouvez le nom de domaine concerné.
 >>
 >> ![Opérations en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Cliquez sur le bouton `⁝`{.action} situé à droite, puis sur `Modifier l'opération`{.action}.
 >>
 >> ![Domain name operation](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans la fenêtre qui s'ouvre, cochez le choix `Relancer l'opération`{.action}, puis cliquez sur `Confirmer`{.action}.
 >>
 >> ![Operation data on domain](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
-
-Quelques minutes sont nécessaires pour finaliser l'opération. Actualisez la page `Opérations sur mes noms de domaine` où se trouvait l'opération de correction du contact pour votre nom de domaine.
-
-Si l'opération s'est terminée avec succès, la ligne relative à l'opération traitée n'apparaît plus.
-
-Dans le cas contraire, cela signifie qu'une correction est toujours nécessaire au niveau des coordonnées du titulaire du nom de domaine. Dans ce cas, reprenez ce guide depuis le début pour corriger la situation.
+>>
+> **Étape 4**
+>>
+>> Quelques minutes sont nécessaires pour finaliser l'opération. Actualisez la page `Opérations sur mes noms de domaine` où se trouvait l'opération de correction du contact pour votre nom de domaine.
+>>
+>> Si l'opération s'est terminée avec succès, la ligne relative à l'opération traitée n'apparaît plus.
+>>
+>> Dans le cas contraire, cela signifie qu'une correction est toujours nécessaire au niveau des coordonnées du titulaire du nom de domaine. Dans ce cas, reprenez ce guide depuis le début pour corriger la situation.
 
 ## Aller plus loin
 
@@ -178,4 +169,4 @@ Pour des prestations spécialisées (référencement, développement, etc.), con
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

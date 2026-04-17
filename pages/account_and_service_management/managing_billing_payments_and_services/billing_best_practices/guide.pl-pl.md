@@ -14,6 +14,17 @@ Niniejszy przewodnik zawiera elementy niezbędne do prawidłowego zarządzania k
 
 - Posiadanie jednej lub kilku aktywnych usług OVHcloud
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Moje rozwiązania i usługi](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## W praktyce
 
 ### Parametry konta
@@ -30,10 +41,7 @@ Aby środki bezpieczeństwa były skuteczne, upewnij się, że Twoje konta e-mai
 
 Twoje dane osobowe (adres pocztowy, e-mail, itp.) muszą być aktualne na Twoim koncie klienta, aby zapewnić bezpieczeństwo i prawidłowe działanie usług.
 
-Sprawdź dane osobowe na stronie [Profil użytkownika](/links/control-panel/account-profile).<br>
-W sekcji `Mój profil`{.action} po prawej stronie ekranu (kliknij ponownie nazwę, aby usunąć menu po lewej stronie), kliknij `...`{.action}, a następnie `Edytuj moj profil`{.action}.
-
-![miprofile](images/myprofile.png){.thumbnail}
+Sprawdź dane osobowe na stronie [Mój profil](/links/control-panel/account-profile).
 
 Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/pages/account_and_service_management/account_information/all_about_username#jak-zarzadzac-danymi-osobowymi).
 
@@ -66,19 +74,19 @@ Jeśli zdecydujesz się nie aktywować automatycznego odnowienia, otrzymasz e-ma
 
 ### Informacje o zamówieniach
 
-Czy wiesz, że możesz [śledzić zamówienia](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) na stronie [Zamówienia](/links/control-panel/billing-orders)?
+Czy wiesz, że możesz [śledzić zamówienia](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) na stronie [Moje zamówienia](/links/control-panel/billing-orders)?
 
 Będziesz informowany o etapach dostawy i będziesz wiedzieć, czy konieczne są działania po Twojej stronie.
 
 ### Rezygnacja z usług
 
-Jeśli chcesz przestać korzystać z którejkolwiek z Twoich usług, możesz je anulować, przełączyć na tryb ręczny lub usunąć natychmiast na stronie [Moje usługi](/links/control-panel/billing-services).
-
-Na stronie [Moje usługi](/links/control-panel/billing-services) kliknij przycisk `...`{.action} odnoszący się do usługi, na którą chcesz działać, po czym kliknij jeden z poniższych przycisków:
+<!-- CP-STEPS-START:service-termination -->
+Jeśli chcesz przestać korzystać z którejkolwiek z Twoich usług, możesz je anulować, przełączyć na tryb ręczny lub usunąć natychmiast na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services). Kliknij przycisk `...`{.action} odnoszący się do usługi, na którą chcesz działać, po czym kliknij jeden z poniższych przycisków:
 
 - `Skonfiguruj odnowienie`{.action}: na następnym ekranie będziesz mógł przenieść `Sposób odnowienia` usługi do `Recznie`. Następnie kliknij `Dalej`{.action} i `Zatwierdź`{.action}. Przed wygaśnięciem usługi otrzymasz kilka powiadomień e-mailem. Jeśli nie odnowiesz usługi, zostanie ona **definitywnie** usunięta.
 - `Rezygnuję z usługi`{.action}: w kolejnym oknie podaj powody rezygnacji, a następnie kliknij `Zatwierdź`{.action}. W dniu wygaśnięcia Twojej usługi zostanie ona **definitywnie** usunięta.
 - `Usuń natychmiast`{.action}: na następnym ekranie kliknij `Zatwierdź`{.action}. Otrzymasz e-mail z potwierdzeniem. Po zatwierdzeniu Twojej usługi zostanie **natychmiast i na stałe** usunięta.
+<!-- CP-STEPS-END:service-termination -->
 
 Aby uzyskać więcej informacji na temat rezygnacji z usług, zapoznaj się z przewodnikiem [Jak zrezygnować z usług OVHcloud](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw).
 

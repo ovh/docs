@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2026-02-19
+updated: 2026-04-17
 ---
 
 ## Objectif
@@ -37,9 +37,9 @@ Il est désormais possible d'utiliser des blocs IP ARIN, RIPE ou APNIC sur n'imp
 
 Contrairement à la politique précédente, où un bloc ARIN ne pouvait être utilisé qu'avec des services OVHcloud situés au Canada ou aux États-Unis et un bloc RIPE ne pouvait être utilisé qu'avec des services OVHcloud situés en Europe, cette restriction a été levée.
 
-Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
+Pour que le bloc soit considéré comme valide, les blocs importés doivent être des types suivants :
 
-| ARIN (object « Network type ») | RIPE (object « status ») | APNIC (object « status »)
+| ARIN (object « Network type ») | RIPE (object « status ») | APNIC (object « status ») |
 | :--- | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |  &bull; Allocated-Portable <br>&bull; Allocated-Non-Portable <br>&bull; Assigned-Portable <br>&bull; Assigned-Non-Portable  |
 | **Pour plus d’informations :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[« Description of the INETNUM Object »](https://docs.db.ripe.net/entire-documentation-HTML.html#description-of-the-inetnum-object) |  **Pour plus d'informations :** <br>&bull; [« INETNUM Quick Guide »](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [« Recording network assignments »](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
@@ -108,11 +108,20 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 > [!warning]
 > Si votre bloc IP importé est déjà annoncé sur Internet à partir d’autre sites qu’OVHcloud lors de l’utilisation du service BYOIP (multihoming), vous risquez d’éventuelles pertes de paquets ou d'autres difficultés de routage. Nous ne serons par conséquent pas en mesure de vous garantir la connectivité aux services OVHcloud avec votre bloc IP importé.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [IP publiques](/links/control-panel/network-public-ip)
+- **Pour accéder à vos services :** `Network`{.action} > `Adresses IP Publiques`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
+
 ## En pratique
 
 ### Comment commander un service BYOIP
-
-Connectez-vous à l'[espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche, puis sélectionnez `Adresses IP publiques`{.action}.
 
 ![Adresses IP publiques - Bouton BYOIP](images/byoip_public_ip.png){.thumbnail}
 
@@ -143,7 +152,7 @@ Le filtrage des adresses IP publiques par tag n’est pas disponible actuellemen
 ### Comment utiliser les adresses IP
 
 Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’une même région.<br>
-Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client où l'API OVHcloud.<br>
+Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client ou l'API OVHcloud.<br>
 
 > [!warning]
 > Certaines opérations disponibles sur l'offre Additional IP ne seront pas disponibles sur l'offre BYOIP.
@@ -162,61 +171,81 @@ Tout bloc IP importé peut être divisé en blocs plus petits et/ou en adresses 
 > [!warning]
 > Pour pouvoir découper/fusionner un bloc IP existant, il doit être inutilisé (c'est-à-dire au parking) et aucune tâche en attente ne doit lui être associée (par exemple aucune opération de déplacement en attente).
 
-Pour découper un bloc, utilisez l'appel API suivant :
+Pour segmenter votre bloc BYOIP, suivez les étapes ci-dessous :
 
-> [!api]
->
-> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
->
+> [!tabs]
+> Via l'espace client OVHcloud
+>> 1. Rendez-vous sur la page `Adresses IP Publiques`{.action} et repérez votre bloc BYOIP.
+>> 2. Cliquez sur le bouton `⋮`{.action} à droite du tableau.
+>> 3. Sélectionnez `Segmenter`{.action}.
+>> 4. Choisissez le **masque de sous-réseau CIDR** souhaité pour définir la taille des blocs enfants.
+>> 5. Vérifiez l'aperçu des blocs générés, puis cliquez sur `Confirmer`{.action} pour finaliser la segmentation.
+>>
+> Via l'API OVHcloud
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
+>> >
+>>
+>> Avec les paramètres suivants :
+>>
+>> - ip : le bloc IP que vous souhaitez découper, en notation CIDR.
+>> - slicingSize : la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez saisir la valeur « 25 ».
+>>
+>> > [!primary]
+>> > Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc Additional IP ou adresse individuelle.
+>>
+>> Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, à l'aide de l'appel API suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
+>> >
+>>
+>> Avec les paramètres suivants :
+>>
+>> - ip : le bloc IP que vous souhaitez découper, en notation CIDR.
 
-Avec les paramètres suivants :
+Pour agréger plusieurs blocs enfants en un bloc parent, suivez les étapes ci-dessous :
 
-- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
-- slicingSize : la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez saisir la valeur "25".
-
-> [!primary]
-> Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc IP supplémentaire ou adresse individuelle.
-
-Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, à l'aide de l'appel API suivant :
-
-> [!api]
->
-> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
->
-
-Avec les paramètres suivants :
-
-- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
-
-Pour fusionner un bloc dans un bloc parent, utilisez cet appel API :
-
-> [!api]
->
-> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
->
-
-Avec les paramètres suivants :
-
-- ip : le bloc IP que vous souhaitez agréger, en notation CIDR.
-- aggregationIp : le bloc résultant, en notation CIDR.
-
-Le bloc résultant sera un agrégat de tous ses blocs enfants.
-
-> [!primary]
-> Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
-
-Vous pouvez prévisualiser toutes les configurations possibles des blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
-
-> [!api]
->
-> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
->
-
-Avec les paramètres suivants :
-
-- ip : le bloc IP que vous souhaitez fusionner dans un bloc parent, en notation CIDR.
-
-Cet appel renvoie une liste de blocs agrégés possibles et, pour chacun d'eux, donne la liste des blocs enfants à fusionner.
+> [!tabs]
+> Via l'espace client OVHcloud
+>> 1. Rendez-vous sur la page `Adresses IP Publiques`{.action} et repérez l'un des segments de bloc BYOIP que vous souhaitez agréger.
+>> 2. Cliquez sur le bouton `⋮`{.action} à droite du tableau.
+>> 3. Sélectionnez `Agréger`{.action}.
+>> 4. Choisissez le bloc parent souhaité.
+>> 5. Vérifiez l'aperçu des blocs générés, puis cliquez sur `Confirmer`{.action} pour finaliser l'agrégation.
+>>
+> Via l'API OVHcloud
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
+>> >
+>>
+>> Avec les paramètres suivants :
+>>
+>> - ip : le bloc IP que vous souhaitez agréger, en notation CIDR.
+>> - aggregationIp : le bloc résultant, en notation CIDR.
+>>
+>> Le bloc résultant sera un agrégat de tous ses blocs enfants.
+>>
+>> > [!primary]
+>> > Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
+>>
+>> Vous pouvez prévisualiser toutes les configurations possibles des blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
+>> >
+>>
+>> Avec les paramètres suivants :
+>>
+>> - ip : le bloc IP que vous souhaitez fusionner dans un bloc parent, en notation CIDR.
+>>
+>> Cet appel renvoie une liste de blocs agrégés possibles et, pour chacun d'eux, donne la liste des blocs enfants à fusionner.
 
 **Limites** :
 
@@ -254,13 +283,13 @@ Pas au lancement de l'offre BYOIP. Cependant, si tel est votre souhait, nous vou
 
 ### Le fractionnement d'un bloc importé /24 en une taille de bloc plus petite (/25, /26, /27, /28, /29, /30) ou en /32 est-il pris en charge ?
 
-Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage de plages d'addresses](#range-slicing) ci-dessus.
+Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage de plages d'adresses](#range-slicing) ci-dessus.
 
 ### Puis-je importer un numéro AS et une plage d'adresses IP provenant de RIR différents ?
 
 Oui.
 
-### Puis-je importer une plage d’adresses IP ou un numéro AS géré par IP AFRINIC/LACNIC ?
+### Puis-je importer une plage d’adresses IP ou un numéro AS géré par AFRINIC/LACNIC ?
 
 Pas pour le moment.
 

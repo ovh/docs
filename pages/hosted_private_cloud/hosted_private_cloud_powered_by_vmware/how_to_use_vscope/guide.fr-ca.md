@@ -15,23 +15,28 @@ Cette interface web rassemble toutes les informations essentielles sur vos resso
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware), afin de recevoir des identifiants de connexion.
-- Disposer d’un identifiant utilisateur actif (créé dans l’[espace client OVHcloud](/links/manager)).
+- Disposer d'un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](/links/manager)).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 
 ### Accéder à vScope
 
-1. Dans l’[espace client OVHcloud](/links/manager), cliquez sur `Hosted Private Cloud`{.action}.
-
-2. Dans le menu de gauche, sélectionnez `Managed VMware vSphere`{.action}.
-
-3. Choisissez votre service PCC.
-
-4. Dans l’onglet `Informations générales`{.action}, descendez puis cliquez sur le lien `vScope`{.action}.
+Dans l'onglet `Informations générales`{.action}, descendez puis cliquez sur le lien `vScope`{.action}.
 
 ![vScope](images/gatewayPCC.png){.thumbnail}
 
-L’interface s’ouvre dans un nouvel onglet de votre navigateur.
+L'interface s'ouvre dans un nouvel onglet de votre navigateur.
 
 ![vScope](images/vScope12.png){.thumbnail}
 
@@ -60,9 +65,9 @@ Le champ **Last refresh** correspond au dernier rafraîchissement de la page web
 
 #### Menu Filer
 
-Le menu **Filer** indique l’utilisation de vos datastores : nombre de machines virtuelles et espace consommé.
+Le menu **Filer** indique l'utilisation de vos datastores : nombre de machines virtuelles et espace consommé.
 
-Utilisez cette vue pour anticiper un besoin d’extension ou surveiller l’équilibre de charge.
+Utilisez cette vue pour anticiper un besoin d'extension ou surveiller l'équilibre de charge.
 
 ![vScope](images/vScope2.png){.thumbnail}
 
@@ -71,7 +76,7 @@ Utilisez cette vue pour anticiper un besoin d’extension ou surveiller l’équ
 Le menu **Hosts** détaille les caractéristiques de chaque hôte dans votre datacenter :
 
 - nombre de cœurs, vCPUs et VM
-- pourcentage d’utilisation CPU et RAM
+- pourcentage d'utilisation CPU et RAM
 - connectivité réseau
 - nombre de cartes réseau physiques (VMNic)
 
@@ -93,6 +98,6 @@ Cette section fournit une vue détaillée de chaque machine virtuelle :
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

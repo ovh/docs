@@ -26,8 +26,19 @@ Before you begin, make sure you have:
 - Access to the Zerto console and vCenter interfaces on both sides.
 
 >[!warning]
-> As of May 2025, **Zerto does not support replication of virtual machines with VMEncrypt enabled**.  
+> As of May 2025, **Zerto does not support replication of virtual machines with VMEncrypt enabled**.
 > vSAN’s encryption at rest is supported. You can also encrypt your VMs after migration is complete.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
@@ -112,10 +123,8 @@ You must explicitly allow your admin IPs to reach the `vCenter` endpoint.
 
 To do so:
 
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. Select your `Hosted Private Cloud`{.action}.
-3. Navigate to the `Security`{.action} tab.
-4. Click `Add a new IP address range`{.action} to authorize your source infrastructure IPs and Zerto components.
+1. Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then navigate to the `Security`{.action} tab.
+2. Click `Add a new IP address range`{.action} to authorize your source infrastructure IPs and Zerto components.
 
 For step-by-step instructions, refer to [Authorise IPs to connect to vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
 
@@ -213,7 +222,7 @@ You can also establish secure communication between the on-prem AD and the tenan
 
 Zerto is installed and managed per site. On the OVHcloud side, the components are deployed automatically when you activate Zerto.
 
-In your `Hosted Private Cloud`{.action} interface:
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then:
 
 1. Go to `Disaster Recovery`{.action}.
 2. Select `Enable Zerto Virtual Replication`{.action}.

@@ -47,7 +47,7 @@ Pour vérifier si votre nom de domaine utilise la configuration DNS OVHcloud, cl
 
 > [!warning]
 >
-> **Ces 3 étapes sont valables uniquement si votre nom de domaine est enregistré chez OVHcloud.** Dans le cas contraire, vous devrez effectuer la vérification auprès du bureau d'enregistrement de votre nom de domaine.
+> **Ces 2 étapes sont valables uniquement si votre nom de domaine est enregistré chez OVHcloud.** Dans le cas contraire, vous devrez effectuer la vérification auprès du bureau d'enregistrement de votre nom de domaine.
 >
 > Si les noms des serveurs DNS se terminent par *ovh.net* (à l'exception du serveur *snds2.ovh.net*), *ovh.ca* ou *anycast.me*, votre nom de domaine utilise bien les serveurs DNS OVHcloud.
 >
@@ -55,7 +55,7 @@ Pour vérifier si votre nom de domaine utilise la configuration DNS OVHcloud, cl
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -83,7 +83,7 @@ Pour activer (ou désactiver) la solution **DNSSEC** pour votre nom de domaine, 
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -110,7 +110,7 @@ Une fois ces 4 paramètres récupérés, cliquez sur les onglets ci-dessous pour
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

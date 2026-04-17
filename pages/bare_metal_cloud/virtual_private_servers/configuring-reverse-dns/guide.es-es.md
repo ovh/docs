@@ -10,7 +10,7 @@ El registro inverso (*rDNS*) es el complemento de la resolución DNS "*forward*"
 
 La configuración del registro DNS inverso de un servidor es especialmente útil cuando se envían mensajes de correo. La validación de un servidor de correo por los sistemas de protección antispam mejora si una petición DNS de la dirección IP se resuelve correctamente.
 
-Esta guía explica cómo configurar el registro DNS inverso de su dirección IP desde el área de cliente.**
+**Esta guía explica cómo configurar el registro DNS inverso de su dirección IP desde el área de cliente.**
 
 ## Requisitos
 
@@ -29,9 +29,10 @@ Esta guía explica cómo configurar el registro DNS inverso de su dirección IP 
 <!-- CP-NAV-END:network-public-ip -->
 
 ## Procedimiento
+
 El menú desplegable bajo "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categoría. También puede buscar una dirección IP específica mediante la barra de búsqueda situada a la izquierda del menú desplegable.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
 Haga clic en el botón `⁝`{.action} en la fila de la dirección IP correspondiente y seleccione `Configurar el registro DNS inverso`{.action}.
 
@@ -44,12 +45,12 @@ En la nueva ventana, introduzca el registro inverso y haga clic en `Confirmar`{.
 También puede editar el reverse directamente mediante el icono `lápiz`{.action} en la columna **Registro DNS inverso** de la tabla.
 
 > [!warning]
-> Al introducir su dominio en el registro inverso, comprueba de inmediato si el registro `A` / `AAAA` devuelve la misma IP. Se utiliza en los procedimientos antispam, por lo que el registro DNS ser válido y propagado. Existen algunas reglas a seguir al introducir el registro inverso:
+> Al introducir su dominio en el registro inverso, comprueba de inmediato si el registro `A` / `AAAA` devuelve la misma IP. Se utiliza en los procedimientos antispam, por lo que el registro DNS debe ser válido y propagado. Existen algunas reglas a seguir al introducir el registro inverso:
 >
->  - el *reverse* no puede comenzar con un `-`
->  - el *reverse* no puede contener más de 63 caracteres
->  - el *reverse* no puede contener caracteres mayúsculos
->  - el *reverse* debe terminar con un `.`
+>  - El *reverse* no puede comenzar con un `-`
+>  - El *reverse* no puede contener más de 63 caracteres
+>  - El *reverse* no puede contener caracteres mayúsculos
+>  - El *reverse* debe terminar con un `.`
 >
 > Ejemplo: "domain.tld" en el registro *reverse* sería `domain.tld.`.
 >
@@ -58,7 +59,7 @@ También puede editar el reverse directamente mediante el icono `lápiz`{.action
 >
 > Si el cambio no funciona según lo previsto, compruebe que el registro `A` / `AAAA` esté correctamente configurado en la zona DNS del dominio. La aplicación de los cambios en la zona DNS puede tardar hasta 24 horas en caso de que acabe de modificar el registro.
 >
-> Si el nombre de dominio está gestionado por OVHcloud como registrador **y utiliza los servidores DNS de OVHcloud**, puede consultar [este tutorial](/pages/web_cloud/domains/dns_zone_edit).
+> Si el nombre de dominio está gestionado por OVHcloud como registrador **y utiliza los servidores DNS de OVHcloud**, puede consultar [esta guía](/pages/web_cloud/domains/dns_zone_edit).
 >
 
 ## Más información

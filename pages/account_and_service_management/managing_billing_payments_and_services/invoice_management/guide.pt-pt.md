@@ -12,7 +12,7 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã sobre o seu nome e, no menu contextual, em `As minhas ofertas e serviços`{.action}. Por fim, clique no separador `Contratos`{.action}).
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na página [Lista de contratos](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -26,8 +26,8 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Invoices](/links/control-panel/billing-invoices)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Invoices`{.action}
+- **Ligação direta:** [As minhas faturas](/links/control-panel/billing-invoices)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas faturas`{.action}
 
 ---
 <!-- CP-NAV-END:billing-invoices -->
@@ -36,7 +36,7 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 
 > [!primary]
 >
-> Cada fatura é enviada por e-mail e acessível através de uma ligação ao cliente. Poderá aceder através da autenticação da [Área de Cliente OVHcloud](/links/manager). Todas as faturas também estão disponíveis na página inicial da Área de Cliente.
+> Cada fatura é enviada por e-mail e acessível através de uma ligação na página [As minhas faturas](/links/control-panel/billing-invoices). Todas as faturas também estão disponíveis na página inicial da Área de Cliente.
 >
 
 ### Secções de uma fatura da OVHcloud
@@ -57,14 +57,15 @@ A fatura do seu serviço OVHcloud é-lhe enviada após o pagamento de uma encome
 
 > [!primary]
 >
-> Se a menção “Extracto de conta” aparece na linha correspondente ao pagamento, isto significa que se trata de uma renovação automática. O método de pagamento utilizado será obrigatoriamente aquele que foi validado na [Área de Cliente OVHcloud](/links/manager).
+> Se a menção “Extracto de conta” aparece na linha correspondente ao pagamento, isto significa que se trata de uma renovação automática. O método de pagamento utilizado será obrigatoriamente aquele que foi validado na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods).
 >
 
 ### Descobrir a área de faturação
 
 #### Consultar e gerir faturas
 
-Abra a página [Faturas](/links/control-panel/billing-invoices).
+<!-- CP-STEPS-START:view-manage-bills -->
+Abra a página [As minhas faturas](/links/control-panel/billing-invoices).
 
 ![Faturação](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 
@@ -118,14 +119,17 @@ Se pretender exportar o conjunto das suas faturas, utilize os botões `Exportar 
 Se pretender exportar apenas uma parte, selecione as casas correspondentes na primeira coluna da tabela para selecionar as faturas que lhe interessam. Duas novas ações, `Exportar a seleção em formato CSV`{.action} ou `Exportar a seleção em formato PDF`{.action}, estarão então disponíveis no menu `Ações massivas`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Pagar as suas faturas <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 Para efetuar o pagamento das suas faturas com pagamento pendente, clique no menu `Ações massivas`{.action} e no botão `Pagar a minha dívida imediatamente`{.action}.
 
 ![Pagamento da dívida](images/pay_debt.png){.thumbnail}
 
 Será criada uma [nota de encomenda de regularização](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#a-nota-de-encomenda). Uma vez realizado o pagamento, a situação ficará regularizada.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Pedir a anulação de uma fatura
 
@@ -134,11 +138,14 @@ Será criada uma [nota de encomenda de regularização](/pages/account_and_servi
 > Para solicitar a rescisão do serviço na data de expiração, siga as instruções deste [guia](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#direito-de-retratacao), pode efetuar uma reclamação através do seu [Área de Cliente OVHcloud](/links/manager), sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
+<!-- CP-STEPS-START:request-cancellation-ticket -->
+Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#direito-de-retratacao), pode efetuar uma reclamação através da sua Área de Cliente OVHcloud, sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
 <br>Clique no canto superior direito do seu ecrã no seu nome e depois em `Criar um ticket`{.action}.
+<!-- CP-STEPS-END:request-cancellation-ticket -->
 
 ### Seguir os seus pagamentos
 
+<!-- CP-STEPS-START:track-payments -->
 Encontre o histórico dos pagamentos efetuados nas `As minhas faturas`{.action} e, a seguir, `Pagamentos`{.action}. Assim, poderá fazer a ligação entre cada fatura e o pagamento associado.
 
 ![Pagamentos](images/payment_tracking.png){.thumbnail}
@@ -149,6 +156,7 @@ A partir deste espaço, pode também exportar os seus comprovativos de pagamento
 >
 > Se detetar uma discrepância entre um pagamento e o montante de uma fatura, significa que um crédito foi automaticamente aplicado.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Saiba mais
 

@@ -1,7 +1,7 @@
 ---
 title: MX-Eintrag für die E-Mail-Verwaltung konfigurieren
 excerpt: Erfahren Sie hier, wie Sie mit OVHcloud MX-Einträge für Ihren Domainnamen konfigurieren
-updated: 2026-02-19
+updated: 2026-03-27
 ---
 
 <style>
@@ -15,7 +15,7 @@ updated: 2026-02-19
 
 ## Ziel
 
-Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zuständigen E-Mail-Server fest. Damit wird Servern, die E-Mails an Ihre Adressen versenden, mitgeteilt, wohin diese versendet werden sollen. 
+Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zuständigen E-Mail-Server fest. Damit wird Servern, die E-Mails an Ihre Adressen versenden, mitgeteilt, wohin diese versendet werden sollen.
 
 **Diese Anleitung erklärt, wie Sie bei OVHcloud MX-Einträge zur Konfiguration Ihres Domainnamens hinzufügen.**
 
@@ -29,7 +29,7 @@ Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zust
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
 - **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---
@@ -39,9 +39,7 @@ Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zust
 >
 > - Wenn Ihr Domainname **nicht** die DNS-Server von OVHcloud verwendet, muss die Änderung der MX-Einträge über das Interface des Anbieters vorgenommen werden, der die Konfiguration Ihres Domainnamens verwaltet.
 >
-> - Wenn Ihr Domainname bei OVHcloud registriert ist, können Sie im [OVHcloud Kundencenter](/links/manager) überprüfen, ob er die OVHcloud Konfiguration verwendet. Wenn Sie den betreffenden Domainnamen ausgewählt haben und der Tab `Allgemeine Informationen`{.action} angezeigt wird, überprüfen Sie den Eintrag **DNS-Server**: Wenn darunter `Standards` angezeigt wird, verwendet Ihr Domainname die OVHcloud DNS-Server.
->
-> ![E-Mail](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail .w-300}
+> - Wenn Ihr Domainname bei OVHcloud registriert ist, können Sie überprüfen, ob er unsere Konfiguration verwendet. Lesen Sie dazu bei Bedarf unsere Anleitung „[DNS-Server eines OVHcloud Domainnamens ändern](/pages/web_cloud/domains/dns_server_edit)".
 
 ## In der praktischen Anwendung
 
@@ -58,7 +56,7 @@ Um die Funktionsweise zu verstehen, verwenden wir ein Beispiel:
 
 ![E-Mail](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail .w-600}
 
-Sie können mehrere MX-Einträge für denselben Domainnamen einrichten. In diesem Fall ist es notwendig, eine Prioritätsnummer für jede dieser Nummern zu definieren. MX-Einträge werden in aufsteigender Reihenfolge von der niedrigsten zur höchsten Nummer abgefragt, bis eine Antwort vom empfangenden Server erfolgt.
+Sie können mehrere MX-Einträge für denselben Domainnamen einrichten. In diesem Fall ist es notwendig, eine Prioritätsnummer für jeden dieser Einträge zu definieren. MX-Einträge werden in aufsteigender Reihenfolge von der niedrigsten zur höchsten Nummer abgefragt, bis eine Antwort vom empfangenden Server erfolgt.
 
 > [!warning]
 >
@@ -83,30 +81,45 @@ Diese MX-Einträge müssen in der DNS-Zone Ihres Domainnamens konfiguriert werde
 
 ### MX-Eintrag in einer OVHcloud DNS-Zone konfigurieren
 
-Um MX-Einträge in der OVHcloud Konfiguration Ihres Domainnamens zu erstellen oder zu bearbeiten, loggen Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
+Klicken Sie auf die Tabs, um die **5** Schritte nacheinander anzuzeigen.
 
-Die Tabelle zeigt die OVHcloud DNS-Konfiguration Ihres Domainnamens an. Jede Zeile entspricht einem DNS-Eintrag.
-
-Überprüfen Sie zunächst mit der Filterfunktion über der Tabelle Ihrer DNS-Zone, ob bereits MX-Einträge vorhanden sind.  
-Wählen Sie den Typ **MX** aus und bestätigen Sie, damit nur die MX DNS-Einträge Ihrer DNS-Zone angezeigt werden. Beachten Sie die Beispielanzeige unten.
-
-![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail .w-600}
-
-- Wenn bereits MX-Einträge vorhanden sind und Sie diese bearbeiten möchten, klicken Sie rechts in der Zeile auf den Button `...`{.action}. und dann auf `Eintrag bearbeiten`{.action}.
-- Wenn kein MX-Eintrag vorhanden ist, klicken Sie rechts neben der Tabelle auf `Eintrag hinzufügen`{.action} und wählen Sie `MX`{.action} aus. Geben Sie die angeforderten Daten für den E-Mail-Dienst ein:
-
-**Wenn Sie über eine E-Mail-Lösung von OVHcloud verfügen**, verwenden Sie die Informationen unter [OVHcloud MX-Konfiguration ](#mxovhcloud).
-
-![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail .w-600}
-
-Wenn Sie alle Daten eingegeben haben, schließen Sie die Schritte ab und klicken Sie dann auf `Weiter`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![DNS-Zone](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Die Tabelle zeigt die OVHcloud DNS-Konfiguration Ihres Domainnamens an. Jede Zeile entspricht einem DNS-Eintrag.
+>>
+>> Überprüfen Sie, ob bereits MX-Einträge vorhanden sind, indem Sie den Typ **MX** in der Filterliste über der Tabelle auswählen und bestätigen.
+>>
+>> ![DNS MX-Eintrag](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail .w-600}
+>>
+> **Schritt 3**
+>>
+>> - Wenn bereits MX-Einträge vorhanden sind und Sie diese bearbeiten möchten, klicken Sie auf den Button `...`{.action} rechts in der Zeile und dann auf `Eintrag bearbeiten`{.action}.
+>> - Wenn kein MX-Eintrag vorhanden ist, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts neben der Tabelle und wählen Sie `MX`{.action} aus.
+>>
+> **Schritt 4**
+>>
+>> Geben Sie die angeforderten Daten je nach gewähltem E-Mail-Dienst ein.
+>>
+>> **Wenn Sie über eine E-Mail-Lösung von OVHcloud verfügen**, verwenden Sie die Informationen unter „[OVHcloud MX-Konfiguration](#mxovhcloud)".
+>>
+>> ![DNS MX-Eintrag](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail .w-600}
+>>
+> **Schritt 5**
+>>
+>> Wenn Sie alle Daten eingegeben haben, schließen Sie die Schritte ab und klicken Sie auf `Bestätigen`{.action}.
 
 **Wenn Sie eine andere E-Mail-Lösung nutzen**, befolgen Sie die Anweisungen Ihres E-Mail-Dienstanbieters.
 
 > [!primary]
 >
 > Jede Änderung erfordert eine Propagationszeit zwischen 4 und 24 Stunden, bis sie voll wirksam ist.
->
 
 ## Weiterführende Informationen
 

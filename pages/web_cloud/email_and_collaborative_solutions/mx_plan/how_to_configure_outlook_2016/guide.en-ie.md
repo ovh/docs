@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Setting up your e-mail address on Classic Outlook for Windows"
 excerpt: "Find out how to configure your MX Plan or Zimbra Starter email address in Classic Outlook for Windows"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -37,6 +37,17 @@ Email addresses from the **MX Plan** and [Zimbra Starter](/links/web/emails-zimb
     - [Zimbra](/links/web/emails-zimbra) Starter (**only**).
 - Have the [new Outlook](https://support.microsoft.com/en-gb/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) for Windows.
 - Have the credentials related to the email address you wish to configure.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 /// details | Information related to the management and configuration of OVHcloud services
 

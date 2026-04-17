@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como fazer evoluir a sua oferta"
 excerpt: "Saiba como alterar a forma de subscrição do seu plano de alojamento web da OVHcloud"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -28,7 +28,7 @@ A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidade
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -53,7 +53,7 @@ Para alterar a sua subscrição, clique nos separadores abaixo para visualizar c
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -86,7 +86,7 @@ Após a eliminação dos dados das suas bases de dados, recalcule o limite utili
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -125,7 +125,7 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etap
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -140,7 +140,13 @@ Esta ação permitir-lhe-á encomendar uma oferta Web Cloud Databases independen
 Se não deseja conservar estes dados, pode igualmente eliminar o seu serviço Web Cloud Databases antes de passar para a oferta *Pro* : 
 
 1. Efetue o backup dos seus dados conforme indicado neste [guia](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](/links/manager). Para isso, aceda à [Área de Cliente OVHcloud](/links/manager), clique no canto superior direito do rato sobre o seu nome e, a seguir, clique em `As minhas ofertas e serviços`{.action}. Clique então no botão `...`{.action} à direita da linha da oferta Web Cloud Databases/SQL Privado em causa e depois em `Eliminar o meu alojamento SQL Privado`{.action}.
+2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](/links/manager). Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>> Aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services).
+> **Etapa 2**
+>> Clique no botão `...`{.action} à direita da linha da oferta Web Cloud Databases/SQL Privado em causa e depois em `Eliminar o meu alojamento SQL privado`{.action}.
 
 #### 3 - Espaço de armazenamento FTP
 
@@ -151,7 +157,7 @@ Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamen
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -167,39 +173,61 @@ Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamen
 
 Certifique-se de que a nova oferta inclui endereços de correio eletrónico suficientes disponíveis. Caso contrário, remova os endereços de e-mail não utilizados após [copiar](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) os respetivos conteúdos, se necessário.
 
-Se pretender conservar o mesmo número de caixas de correio e **antes de passar o seu alojamento web para uma oferta inferior**, é igualmente possível encomendar uma nova oferta de correio eletrónico **MX Plan**. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
+Se pretender conservar o mesmo número de caixas de correio e **antes de passar o seu alojamento web para uma oferta inferior**, é igualmente possível encomendar uma nova oferta de correio eletrónico **MX Plan**. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
-![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>> Aceda à página [MX Plan](/links/control-panel/web-mx-plan) e escolha o domínio em causa.
+> **Etapa 2**
+>> Na caixa **Subscrição** e à direita de **Oferta**, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
+>> ![Alteração de oferta MX Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
 
->[!primary]
->
-> Se o botão `...`{.action} estiver indisponível no seu serviço de e-mail, pode desassociar o serviço de e-mail do seu alojamento web. Para isso, fique ligado à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que se abrir, e na caixa `Configuração`{.action}, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action} e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
->
+Se a alteração de oferta não estiver disponível no seu serviço de e-mail, este está associado a um alojamento web.
+
+Pode desassociar o serviço de e-mail do seu alojamento web. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+> **Etapa 2**
+>> Na caixa **Configuração**, clique no botão `...`{.action} à direita de **Endereços de e-mail** e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
 
 #### 5 - Mailing lists
 
 A funcionalidade [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) é opcional nos alojamentos [Perso](/links/web/hosting-personal-offer).
 
-Para passar o seu alojamento web para uma oferta [Perso](/links/web/hosting-personal-offer), deverá em primeiro lugar eliminar as mailing lists ou encomendar uma oferta de correio eletrónico que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir da sua [Área de Cliente OVHcloud](/links/manager).
+Para passar o seu alojamento web para uma oferta [Perso](/links/web/hosting-personal-offer), deverá em primeiro lugar eliminar as mailing lists ou encomendar uma oferta de correio eletrónico que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir da sua [Área de Cliente OVHcloud](/links/manager). Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
-Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
+> [!tabs]
+> **Etapa 1**
+>> Aceda à página [MX Plan](/links/control-panel/web-mx-plan) e escolha o domínio em causa.
+> **Etapa 2**
+>> Na caixa **Subscrição** e à direita de **Oferta**, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
 
->[!primary]
->
-> Se o botão `...`{.action} estiver indisponível no seu serviço de e-mail, pode desassociar o serviço de e-mail do seu alojamento web. Para isso, fique ligado à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que se abrir, e na caixa `Configuração`{.action}, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action} e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
->
+Se a alteração de oferta não estiver disponível no seu serviço de e-mail, este está associado a um alojamento web.
+
+Pode desassociar o serviço de e-mail do seu alojamento web. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+> **Etapa 2**
+>> Na caixa **Configuração**, clique no botão `...`{.action} à direita de **Endereços de e-mail** e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
 
 #### 6 - Utilizadores FTP
 
 Certifique-se de que a nova oferta oferece utilizadores FTP em número suficiente.
 
-O número de utilizadores FTP pode ser consultado na Área de Cliente OVHcloud. Uma vez ligado, aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que se abrir, clique no separador `FTP-SSH`{.action}.
+O número de utilizadores FTP pode ser consultado na Área de Cliente OVHcloud. Para verificar, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-Na parte inferior da página que aparece, há uma tabela que lista todos os utilizadores FTP criados para o seu alojamento web.
-
-Para eliminar utilizadores FTP, clique no botão `...`{.action} à direita do utilizador FTP que pretende eliminar e, a seguir, em `Eliminar`{.action}.
-
-![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail} 
+> [!tabs]
+> **Etapa 1**
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+> **Etapa 2**
+>> Na página que se abrir, clique no separador `FTP - SSH`{.action}. Na parte inferior da página, aparece uma tabela que lista todos os utilizadores FTP criados para o seu alojamento web.
+> **Etapa 3**
+>> Para eliminar utilizadores FTP, clique no botão `...`{.action} à direita do utilizador FTP em causa e, a seguir, em `Eliminar`{.action}.
+>> ![Eliminação de utilizador FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
 
 #### Finalização
 
@@ -228,7 +256,7 @@ Para **ativar a opção Boost**, clique nos separadores abaixo para visualizar c
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -243,7 +271,7 @@ Para **desativar a opção Boost**, clique nos separadores abaixo para visualiza
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

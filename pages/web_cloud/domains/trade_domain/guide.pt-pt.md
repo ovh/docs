@@ -54,7 +54,7 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 >
 > - O sítio Web do registo **TLD** correspondente;
 > - A [lista dos TLD disponíveis na OVHcloud](/links/web/domains-tld);
-> - Atualizações do estado do nome de domínio. Para verificar isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Operações em curso`{.action}.
+> - Atualizações do estado do nome de domínio. Para verificar, aceda à página [Operações em curso](/links/control-panel/web-ongoing-operations).
 >
 
 ### Iniciar o procedimento de alteração de titular ou alterar as informações associadas
@@ -64,7 +64,7 @@ Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [nesta ligação](/links/control-panel/web-domains) e escolha o nome de domínio em causa.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

@@ -1,5 +1,5 @@
 ---
-title: ovhai CLI - Cheat Sheet
+title: CLI - Cheat Sheet
 excerpt: Find all the useful commands for OVHcloud AI Training ovhai CLI
 updated: 2023-05-12
 ---
@@ -10,7 +10,7 @@ The goal of this [cheat sheet](https://github.com/ovh/ovhai-cheat-sheet/blob/mai
 
 ## Cheat sheet
 
-[![ovhai CLI - Cheat Sheet - part 01](images/ovhai-cheat-sheet-01.jpg)](https://github.com/ovh/docs/blob/develop/pages/public_cloud/ai_machine_learning/gi_05_ovhai_cheatsheet/ovhai-cheat-sheet.pdf)
+[![CLI - Cheat Sheet - part 01](images/ovhai-cheat-sheet-01.jpg)](https://github.com/ovh/docs/blob/develop/pages/public_cloud/ai_machine_learning/gi_05_ovhai_cheatsheet/ovhai-cheat-sheet.pdf)
 
 [![ovhai CLI cheat sheet - part 02](images/ovhai-cheat-sheet-02.jpg)](https://github.com/ovh/docs/blob/develop/pages/public_cloud/ai_machine_learning/gi_05_ovhai_cheatsheet/ovhai-cheat-sheet.pdf)
 

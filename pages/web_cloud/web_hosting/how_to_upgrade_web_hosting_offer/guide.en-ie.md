@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to change your solution"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -27,7 +27,7 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -52,7 +52,7 @@ To modify your subscription, click on the tabs below to view each of the **2** s
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -85,7 +85,7 @@ Once you have deleted data from your databases, recalculate the quota used. To d
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -124,7 +124,7 @@ To do this, click on the tabs below to view each of the **2** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -138,7 +138,13 @@ With this action, you can order a Web Cloud Databases solution that is independe
 If you do not want to keep this data, you can also delete your Web Cloud Databases solution before switching to the *Pro* solution: 
 
 1. Back up your data by following the instructions in this [guide](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](/links/manager). To do this, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on the `My offers and services`{.action}. Next, click the `...`{.action} button to the right of the line for the Web Cloud Databases/Private SQL solution concerned, then `Delete my Private SQL hosting plan`{.action}.
+2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](/links/manager). To do this, click on the tabs below to view each of the **2** steps.
+
+> [!tabs]
+> **Step 1**
+>> Go to the [My services](/links/control-panel/billing-services) page.
+> **Step 2**
+>> Click the `...`{.action} button to the right of the line for the Web Cloud Databases/Private SQL solution concerned, then `Delete my Private SQL hosting plan`{.action}.
 
 #### 3 - FTP storage space
 
@@ -149,7 +155,7 @@ To check the FTP storage space quota used on your web hosting plan, click on the
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -163,39 +169,61 @@ To check the FTP storage space quota used on your web hosting plan, click on the
 
 Check that your new solution has a sufficient number of available email accounts. Otherwise, delete any unused email accounts after you have [saved](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) their content, if necessary.
 
-If you would like to keep the same number of mailboxes and **before downgrading your web hosting plan to a lower plan**, you can also order a new **MX Plan** email solution. To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Emails`{.action}, then select the email solution concerned. On the page that opens, in the `Subscription`{.action} box, to the right of `Solution`{.action}, click the `...`{.action} button, then `Change solution`{.action}.
+If you would like to keep the same number of mailboxes and **before downgrading your web hosting plan to a lower plan**, you can also order a new **MX Plan** email solution. To do this, click on the tabs below to view each of the **2** steps.
 
-![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>> Go to the [MX Plan](/links/control-panel/web-mx-plan) page, then select the domain concerned.
+> **Step 2**
+>> In the **Subscription** box, to the right of **Solution**, click the `...`{.action} button, then `Change plan`{.action}.
+>> ![MX Plan solution change](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
 
->[!primary]
->
-> If the `...`{.action} button is unavailable on your email solution, you can unlink the email solution from your web hosting plan. To do this, stay connected to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the `General information`{.action} page that appears, and in the `Configuration`{.action} box, click the `...`{.action} button to the right of `Email addresses`{.action}, then click `Detach my email option`{.action}.
->
+If the plan change is unavailable on your email solution, it is linked to a web hosting plan.
+
+You can unlink the email solution from your web hosting plan. To do this, click on the tabs below to view each of the **2** steps.
+
+> [!tabs]
+> **Step 1**
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+> **Step 2**
+>> In the **Configuration** box, click the `...`{.action} button to the right of **Email addresses**, then `Detach my email option`{.action}.
 
 #### 5 - Mailing lists
 
 The [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) feature is optional on [Personal](/links/web/hosting-personal-offer) hosting plans.
 
-To upgrade your web hosting plan to a [Personal] plan (/links/web/hosting-personal-offer), you will first need to delete the mailing lists, or order an email solution that includes this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](/links/manager).
+To upgrade your web hosting plan to a [Personal](/links/web/hosting-personal-offer) plan, you will first need to delete the mailing lists, or order an email solution that includes this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](/links/manager). To do this, click on the tabs below to view each of the **2** steps.
 
-To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Emails`{.action}, then select the email solution concerned. On the page that opens, in the `Subscription`{.action} box, to the right of `Solution`{.action}, click the `...`{.action} button, then `Change solution`{.action}.
+> [!tabs]
+> **Step 1**
+>> Go to the [MX Plan](/links/control-panel/web-mx-plan) page, then select the domain concerned.
+> **Step 2**
+>> In the **Subscription** box, to the right of **Solution**, click the `...`{.action} button, then `Change plan`{.action}.
 
->[!primary]
->
-> If the `...`{.action} button is unavailable on your email solution, you can unlink the email solution from your web hosting plan. To do this, stay connected to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the `General information`{.action} page that appears, and in the `Configuration`{.action} box, click the `...`{.action} button to the right of `Email addresses`{.action} , then click `Detach my email option`{.action}.
->
+If the plan change is unavailable on your email solution, it is linked to a web hosting plan.
+
+You can unlink the email solution from your web hosting plan. To do this, click on the tabs below to view each of the **2** steps.
+
+> [!tabs]
+> **Step 1**
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+> **Step 2**
+>> In the **Configuration** box, click the `...`{.action} button to the right of **Email addresses**, then `Detach my email option`{.action}.
 
 #### 6 - FTP users
 
 Make sure that the new plan offers enough FTP users.
 
-You can view the number of FTP users in your OVHcloud Control Panel. Once you have logged in, go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, click on the `FTP-SSH`{.action} tab.
+You can view the number of FTP users in your OVHcloud Control Panel. To check this, click on the tabs below to view each of the **3** steps.
 
-At the bottom of the page that pops up, a table will appear listing all of the FTP users created for your Web Hosting plan.
-
-To delete FTP users, click the `...`{.action} button to the right of the FTP user you want to delete, then `Delete`{.action}.
-
-![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail} 
+> [!tabs]
+> **Step 1**
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+> **Step 2**
+>> On the page that opens, click on the `FTP - SSH`{.action} tab. At the bottom of the page, a table lists all the FTP users created for your web hosting plan.
+> **Step 3**
+>> To delete FTP users, click the `...`{.action} button to the right of the FTP user concerned, then `Delete`{.action}.
+>> ![FTP user deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
 
 #### Finalisation
 
@@ -224,7 +252,7 @@ To **enable the Boost option**, click on the tabs below to view each of the **2*
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -239,7 +267,7 @@ To **disable the Boost option**, click on the tabs below to view each of the **3
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

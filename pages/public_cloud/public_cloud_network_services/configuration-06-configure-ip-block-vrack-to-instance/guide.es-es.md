@@ -15,7 +15,6 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also lets yo
 - A public block of IP addresses in your account, with a minimum of four addresses
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](/links/network/vrack) service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ### Content overview
@@ -33,6 +32,17 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also lets yo
 
 ## Instructions
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 This configuration involves several steps, using both the OVHcloud Control Panel and the Horizon interface.
 
 <a name="addproject"></a>
@@ -40,7 +50,7 @@ This configuration involves several steps, using both the OVHcloud Control Panel
 ### Add the Public Cloud project to the vRack
 
 > [!primary]
-> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, log in to the [OVHcloud Control Panel](/links/manager), go to the `Network`{.action} section and click on `vRack private network`{.action} to view the vRack(s).
+> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, go to the `Network`{.action} section and click on `vRack private network`{.action} to view the vRack(s).
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish.
 
@@ -61,7 +71,7 @@ From the list of eligible services, select the project you want to add to the vR
 > This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
 >
 
-In your [OVHcloud Control Panel](/links/manager), go to the `Network`{.action} section and click on `vRack private network`{.action}.
+Go to the `Network`{.action} section and click on `vRack private network`{.action}.
 
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on `Add`{.action}.
 
@@ -369,7 +379,7 @@ Click the tab that corresponds to your distribution:
 >> **Configuration example:**
 >>
 >> ```bash
->>   ens7:
+>>   eno2:
 >>     dhcp4: false
 >>     addresses:
 >>     - 203.0.113.1/29
@@ -514,7 +524,7 @@ Click the tab that corresponds to your distribution:
 >> sudo nmcli con mod 'Wired connection 1' connection.autoconnect true
 >> ```
 >> 
->> Reboot your network with the following command:
+>> Restart your network with the following command:
 >>
 >> ```bash
 >> sudo systemctl restart NetworkManager

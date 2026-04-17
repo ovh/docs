@@ -11,7 +11,17 @@ Ce guide vous montre comment créer un nouvel utilisateur Cloud Disk Array, en u
 ## Prérequis
 
 - Une solution [Cloud Disk Array](/links/storage/cloud-disk-array)
-- Être connecté à l’[espace client OVHcloud](/links/manager) ou à l’[API OVHcloud](/links/api)
+
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
 
 ## En pratique
 
@@ -22,7 +32,7 @@ Ce guide vous montre comment créer un nouvel utilisateur Cloud Disk Array, en u
 > L'utilisation de l'espace client OVHcloud est le moyen le plus simple de créer un utilisateur.
 >
 
-Tout d'abord, connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Bare Metal Cloud`{.action}. Cliquez ensuite sur `Plateformes et services`{.action}, puis sur le service `ceph-cluster`{.action}.
+Sur la page de votre service Cloud Disk Array, accédez à l'onglet `Users`{.action}.
 
 ![Ceph users](images/create_a_user_1.png){.thumbnail}
 

@@ -38,7 +38,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->
@@ -50,7 +50,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -84,7 +84,7 @@ Click on the tabs below to view each of the **5** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
+>> Go to the [DNS zones](/links/control-panel/web-dns-zone) page, then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -135,7 +135,7 @@ Once you are ready to create the DynHost record, click on the tabs below to view
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
+>> Go to the [DNS zones](/links/control-panel/web-dns-zone) page, then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -208,7 +208,7 @@ You can check if the destination IP address has been updated. To do this, click 
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
+>> Go to the [DNS zones](/links/control-panel/web-dns-zone) page, then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

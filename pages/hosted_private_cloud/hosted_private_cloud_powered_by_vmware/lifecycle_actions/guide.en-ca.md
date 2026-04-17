@@ -1,5 +1,5 @@
 ---
-title: "Hosted Private Cloud VMware Lifecycle Policy - Determine actions to be taken"
+title: "Hosted Private Cloud VMware Lifecycle Policy - Determine actions to be taken"
 excerpt: Find out what to do with your VMware on OVHcloud solution, depending on its features
 updated: 2022-12-27
 ---
@@ -20,10 +20,20 @@ In this guide, we detail the actions to take for the topics in progress:
 
 ## Requirements
 
-- a [Hosted Private Cloud solution powered by VMware](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- a [Hosted Private Cloud solution powered by VMware](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
 - Access to the [OVHcloud API](/links/api). If required, please refer to our guide on [Getting started with OVHcloud](/pages/manage_and_operate/api/first-steps) APIs.
 - You need to have [created your login credentials for the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
@@ -175,11 +185,7 @@ To complete your migration, you can follow this guide: [Migrate to a new infrast
 
 #### Retrieving your PCC information in the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](/links/manager) with an administrator account.
-
-Click on the `Hosted Private Cloud`{.action} tab and select your service from the `VMware`{.action} list.
-
-In the `General information`{.action} tab, find the version of your vSphere.
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then open the `General information`{.action} tab to find the version of your vSphere.
 
 ![control panel - retrieving vsphere version](images/manager-version-vsphere.png){.thumbnail}
 

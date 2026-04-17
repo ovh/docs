@@ -18,7 +18,17 @@ Découvrez dans ce guide comment rattacher votre service Enterprise File Storage
 ## Prérequis
 
 - Avoir un service [Enterprise File Storage](/links/storage/enterprise-file-storage) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Overview
 
@@ -32,7 +42,7 @@ Enterprise File Storage est un service exposé via une adresse IP sur le vRack. 
 
 ## En pratique <a name="instructions"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionez `Bare Metal Cloud`{.action} dans la barre de navigation supérieure. Ouvrez `Storage et Backup`{.action} puis `Enterprise File Storage`{.action} et sélectionnez votre service dans la liste.
+Sélectionnez votre service dans la liste.
 
 ![Sans configuration réseau](images/01-EFS.png){.thumbnail}
 

@@ -14,6 +14,17 @@ This guide contains the essential elements for managing your account and the bil
 
 - Active OVHcloud services in your OVHcloud account
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## Instructions
 
 ### Account settings
@@ -30,10 +41,7 @@ For the security measures to be efficient, make sure your email addresses (main 
 
 Your personal information (postal address, email address, etc.) must be up-to-date in your customer account to guarantee the security and proper functioning of your services.
 
-Verify your personal information on the [User profile](/links/control-panel/account-profile) page.<br>
-In the `My profile`{.action} section, click on `...`{.action}, then on `Edit my profile`{.action}.
-
-![myprofile](images/myprofile.png){.thumbnail}
+Verify your personal information on the [My profile](/links/control-panel/account-profile) page.
 
 For more information, read the guide [Securing my OVHcloud account and managing my personal information](/pages/account_and_service_management/account_information/all_about_username#how-to-manage-your-personal-details).
 
@@ -44,9 +52,11 @@ Ensure your email address is always **up to date, accessible and secured**. Emai
 > Add a **backup email** to your personal information to prevent any loss of access to your [OVHcloud Control Panel](/links/control-panel/account-profile).
 >
 
-Emails sent by OVHcloud are also visible on the [Messages](/links/control-panel/account-messages) page.
+<!-- CP-STEPS-START:view-my-messages -->
+Emails sent by OVHcloud are also visible on the [My messages](/links/control-panel/account-messages) page.
 
 ![service_emails](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
+<!-- CP-STEPS-END:view-my-messages -->
 
 #### Automatic renewal
 
@@ -66,19 +76,19 @@ If you decide not to activate the autorenewal on your services, you will receive
 
 ### Order follow-up
 
-Did you know that you can [track your orders](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) from the [Orders](/links/control-panel/billing-orders) page?
+Did you know that you can [track your orders](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) from the [My orders](/links/control-panel/billing-orders) page?
 
 You will find out the steps of delivery and you will know if actions are required from your side.
 
 ### Service termination
 
-If you want to stop using one of your services, you can either cancel it, set its renewal to manual mode or delete it immediately from the [My services](/links/control-panel/billing-services) page.
-
-On the [My services](/links/control-panel/billing-services) page, click on the `...`{.action} button corresponding to the service you want to act on, then click on one of the following buttons:
+<!-- CP-STEPS-START:service-termination -->
+If you want to stop using one of your services, you can either cancel it, set its renewal to manual mode or delete it immediately from the [My offers and services](/links/control-panel/billing-services) page. Click on the `...`{.action} button corresponding to the service you want to act on, then click on one of the following buttons:
 
 - `Configure renewal`{.action}: On the following screen, you'll be able to switch the `Renewal type` of your service to `Manual`. Then click on `Next`{.action} and `Confirm`{.action}. Before the expiration date of your service, you will receive several notifications by email. If you don't renew your service, it will be **permanently** deleted.
 - `Cancel my subscription`{.action}: On the following screen, specify the reasons for your cancellation request, then click on `Confirm`{.action}. On the expiration date of your service, it will be **permanently** deleted.
 - `Delete immediately`{.action}: On the following screen, click on `Confirm`{.action}. You will be sent a confirmation email. After your validation, your service will be **immediately and permanently** deleted.
+<!-- CP-STEPS-END:service-termination -->
 
 To get more information about the termination of your services, consult the [How to cancel your OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services) guide.
 

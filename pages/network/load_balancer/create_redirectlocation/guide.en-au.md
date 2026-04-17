@@ -13,9 +13,18 @@ The **OVHcloud Load Balancer** operates by default as a proxy. It can also be co
 ## Requirements
 
 - Have an [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account.
-- Have access to your [OVHcloud Control Panel](/links/manager).
 - Have access to the [OVHcloud API](/links/api).
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 ### Overview
@@ -35,7 +44,6 @@ Custom redirects can be specified via the OVHcloud Control Panel or via the API,
 
 ### Adding a custom redirect from the OVHcloud Control Panel
 
-You can define a custom redirect from the [OVHcloud Control Panel](/links/manager) in the `Bare Metal Cloud`{.action} section and then `Load Balancer`{.action}.
 This can be done either on a new frontend during its creation, or on an existing frontend.
 
 #### Adding a new frontend

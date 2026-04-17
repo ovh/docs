@@ -128,7 +128,7 @@ All the possible ways to consume your logs are summarized in the [Introduction t
 >
 > In the case of OVHcloud Service Logs, all the "Log Generation" and "Log Ingestion" are managed by OVHcloud. You only have to care about the "Storage" and "Query and visualization" parts.
 
-You can also manage your logs subscription from a data stream point of view. To do so, go to the Logs Data Platform section of the [OVHcloud Control Panel](/links/manager), select a service and click on the `Data stream`{.action} tab. In the table listing your streams you can see a `Subscriptions` column displaying how many logs subscriptions target a given stream.
+You can also manage your logs subscription from a data stream point of view. To do so, go to the [Logs Data Platform](/links/control-panel/logs-data-platform) section in the OVHcloud Control Panel, select a service and click on the `Data stream`{.action} tab. In the table listing your streams you can see a `Subscriptions` column displaying how many logs subscriptions target a given stream.
 
 In this table, click the `...`{.action} button then click `Manage subscriptions`{.action}. The next page will list all the logs subscriptions targeting this data stream:
 

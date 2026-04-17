@@ -33,7 +33,9 @@ In der Praxis geschieht dies häufig durch das Versenden einer E-Mail, in der Si
 
 #### Erkennen einer Phishing-E-Mail
 
-Prüfen Sie zunächst, ob die empfangene E-Mail auch in Ihrem [OVHcloud Kundencenter](/links/manager) sichtbar ist. Melden Sie sich an, klicken Sie oben rechts auf Ihren Namen und dann auf `E-Mails von OVHcloud`{.action} (oder `Meine Kommunikation`{.action}). Dort finden Sie Kopien aller offiziellen E-Mails, die von OVHcloud gesendet wurden.
+<!-- CP-STEPS-START:check-messages -->
+Prüfen Sie zunächst, ob die empfangene E-Mail auch auf der Seite [Meine Kommunikation](/links/control-panel/account-messages) in Ihrem OVHcloud Kundencenter sichtbar ist. Dort finden Sie Kopien aller offiziellen E-Mails, die von OVHcloud gesendet wurden.
+<!-- CP-STEPS-END:check-messages -->
 
 Hier finden Sie einige Tipps, um eine echte OVHcloud E-Mail visuell von einem Phishing-Versuch zu unterscheiden.
 
@@ -244,7 +246,9 @@ Kontaktieren Sie umgehend Ihre Bank, um Ihre Karte sperren zu lassen. Geben Sie 
 
 /// details | **Wenn Sie Ihr OVHcloud Passwort auf einer betrügerischen Website eingegeben haben**
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an und ändern Sie Ihr Passwort.
+<!-- CP-STEPS-START:change-password-security -->
+Öffnen Sie die Seite [Kontosicherheit](/links/control-panel/account-security) und ändern Sie Ihr Passwort.
+<!-- CP-STEPS-END:change-password-security -->
 
 In unserer Anleitung [Passwort Ihres Kunden-Accounts ändern](/pages/account_and_service_management/account_information/manage-ovh-password) finden Sie Anweisungen zum Ändern Ihres Passworts über das OVHcloud Kundencenter sowie unsere Empfehlungen zur Erstellung eines sicheren Passworts und zum Speichern in einem Passwort-Manager.
 

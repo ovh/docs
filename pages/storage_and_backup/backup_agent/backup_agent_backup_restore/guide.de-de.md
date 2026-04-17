@@ -14,8 +14,18 @@ Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen Bare Metal Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung "[So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", um weitere Informationen zu erhalten.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## In der praktischen Anwendung
 

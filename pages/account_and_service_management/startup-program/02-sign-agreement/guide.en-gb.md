@@ -15,6 +15,16 @@ To participate in the OVHcloud Startup Program, signing the contract is an essen
 
 Your Startup Program application must have been accepted.
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Instructions
 
@@ -22,11 +32,8 @@ Your Startup Program application must have been accepted.
 
 You can access the contract directly in your customer account.
 
-Make sure to log in with the account you used to apply for the Startup Program. From the homepage, click on your name in the top right corner and then click on `My offers and services`{.action}.
-
-![products and services](images/01-products-services.png){.thumbnail}
-
-Select the `Contracts`{.action} tab.
+<!-- CP-STEPS-START:sign-contract -->
+Make sure to log in with the account you used to apply for the Startup Program. In [My offers and services](/links/control-panel/billing-services), select the `Contracts`{.action} tab.
 
 ![my services - contracts](images/02-services-contracts.png){.thumbnail}
 
@@ -40,3 +47,4 @@ Click the `...`{.action} button again and select `Accept` to validate the contra
 After signing, your credits will be credited to your account within 48 business hours, and you will be able to fully benefit from the program's advantages.
 
 Your signed contract will remain available in the `Contracts`{.action} tab of your Control Panel for reference at any time.
+<!-- CP-STEPS-END:sign-contract -->

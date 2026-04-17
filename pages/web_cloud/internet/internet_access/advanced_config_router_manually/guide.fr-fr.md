@@ -50,6 +50,7 @@ Si vous utilisez votre propre modem/routeur, vous pouvez utiliser les API OVHclo
 
 ### Connaître le profil de son modem
 
+<!-- CP-STEPS-START:connaitre-profil-modem -->
 Le profil de votre accès est disponible dans votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx). Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
 
 ![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
@@ -60,6 +61,7 @@ Le type de l'accès est disponible dans le cadre `Informations générales`.
 Le profil du modem est disponible dans la section `Connexion` du cadre `Caractéristiques`.
 
 ![profil du modem dans l'espace client](images/profil-2025.png){.thumbnail}
+<!-- CP-STEPS-END:connaitre-profil-modem -->
 
 ### Profil A
 

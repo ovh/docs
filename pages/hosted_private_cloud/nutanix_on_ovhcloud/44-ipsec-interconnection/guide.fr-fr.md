@@ -18,9 +18,19 @@ Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par
 
 - Avoir pris connaissance des cas d'usages d'un VPN IPsec à l'aide du guide « [Plan de reprise d'activité sur Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/43-disaster-recovery-plan-overview) ».
 - Disposer de deux clusters Nutanix fournis par OVHcloud, sur des sites différents.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur vos clusters via Prism Central.
 - Utiliser un plan d'adressage IP privé différent par cluster.
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Sélectionnez votre cluster
+
+---
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## En pratique
 
@@ -122,7 +132,7 @@ Depuis le menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 Récupérez les informations concernant les paramètres réseau de la passerelle OVHcloud.
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager), sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
+Sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -458,7 +468,7 @@ Depuis le menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 Récupérez les informations concernant les paramètres réseau de la passerelle OVHcloud.
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager), sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
+Sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 

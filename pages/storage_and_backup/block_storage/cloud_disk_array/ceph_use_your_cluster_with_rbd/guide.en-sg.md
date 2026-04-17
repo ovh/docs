@@ -1,120 +1,174 @@
 ---
 title: Access the cluster using rbd client
 excerpt: This guide shows you how to access your cluster using rbd client.
-updated: 2022-06-22
+updated: 2026-04-02
 ---
 
 ## Objective
 
-There are different ways to use your Ceph cluster. We'll describe how to map your cluster using **rbd client**.
+This guide explains how to access your **OVHcloud Ceph cluster** from a machine configured as an **RBD client**. It describes how to prepare your environment, configure network access, and connect securely to your **Cloud Disk Array**.
 
 ## Requirements
 
-You must first ensure that you have done those steps :
+Before proceeding:
 
-- [Create a pool](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_a_pool)
-- [Create a user](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_a_user)
-- [Add rights to a user on a pool](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_change_user_rights)
-- [Add an IP ACL](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_an_ip_acl) to allow your server to contact the cluster
+- A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
+- Your client machine’s public or private IP is allowed in the Access Control List (ACL){} of your Ceph cluster. See our guide "[Cloud Disk Array - IP ACL creation](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_an_ip_acl)".
+- You have the following credentials (available in the OVHcloud Control Panel):
+  - Cluster monitor IPs
+  - Ceph username (`client.<username>`)
+  - Secret key (keyring content)
 
-## Ceph installation
-For **deb based** distributions:
+## Instructions
 
-```bash
-ubuntu@server:~$ sudo apt-get -y install ceph ceph-common
-[...]
-Setting up ceph-common (10.2.0-0ubuntu0.16.04.2) ...
-Setting up ceph (10.2.0-0ubuntu0.16.04.2) ...
-```
+### Installing Ceph on the client machine
 
-For **rpm based** distributions:
+For **Debian/Ubuntu** distributions:
 
 ```bash
-[centos@server ~]$ sudo yum install -y ceph-common
-[...]
-Installed:
-ceph-common.x86_64 1:0.80.7-3.el7
+sudo apt-get update
+sudo apt-get -y install ceph ceph-common
 ```
 
-## Ceph configuration
-Create file `/etc/ceph/ceph.conf`
+For **RHEL/CentOS** distributions:
 
-```ini
+```bash
+sudo yum install -y ceph-common
+```
+
+### Retrieve connection details
+
+Log in to the [OVHcloud Control Panel](/links/manager), click `Bare Metal Cloud`{.action}, then `Cloud Disk Array`{.action} and select your service.
+
+Overview:
+
+- Locate the monitor IPs for your Ceph cluster.
+
+Users:
+
+- Find the Ceph username and key required for authentication.
+
+> [!primary]
+>
+> **Note:** If no users exist yet, follow these guides:
+>
+> - "[Cloud Disk Array - User creation](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_a_user)"
+> - "[Change user rights](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_change_user_rights)"
+>
+
+### Configure the client
+
+Create or edit the file `/etc/ceph/ceph.conf` with the following content:
+
+```bash
 [global]
-mon_host = <mon_1_IP>,<mon_2_IP>,<mon_3_IP>
+mon_host = <MONITOR_IP_1>:6789, <MONITOR_IP_2>:6789, <MONITOR_IP_3>:6789
 ```
 
-Create the file `/etc/ceph/ceph.client.<ceph_user_name>.keyring`
+> [!primary]
+>
+> **Note:** The default Ceph monitor port is `:6789` (Messenger v1). Some clusters may also expose `:3300` for Messenger v2.
+>
 
-```ini
-[client.<ceph_user_name>]
-key = <my_user_key>
-```
-
-`<mon_X_IP>` has to be replaced by monitors IP you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/).
-
-`<my_user_key>` has to be replaced by the users's key you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/).
-
-## Configuration check
-You can check the configuration by listing the images inside your pool.
+Create a keyring file for your Ceph user at `/etc/ceph/ceph.client.<username>.keyring`:
 
 ```bash
-ubuntu@server:~$ rbd -n client.myuser list mypool
+[client.<username>]
+key = <your_secret_key>
 ```
 
-In this case, the result is empty because we have not have created an image yet. If you have an error, please double check your configuration.
-
-## Image creation
-You can't directly mount a pool, you have to **mount an image** that exists on the pool.
+Ensure the keyring file has restricted permissions for security:
 
 ```bash
-ubuntu@server:~$ rbd -n client.myuser create mypool/myimage -s $((10*1024*1024)) --image-format 2 --image-feature layering
-ubuntu@server:~$ rbd -n client.myuser list mypool
-myimage
+sudo chmod 600 /etc/ceph/ceph.client.<username>.keyring
 ```
 
-We make sure that the image was created correctly by listing the pool content.
+### Test the connection and configuration
 
-## Map the image
+Verify that the client can successfully connect to the Ceph cluster:
 
 ```bash
-ubuntu@server:~$ sudo rbd -n client.myuser map mypool/myimage
-/dev/rbd0
+ceph -s --id <username>
 ```
 
-My rbd image is not mapped to /dev/rbd0, it's a block storage. Therefore we have to **setup a filesystem**.
+If the configuration is correct, the command returns the current cluster status.
 
-## Setup the filesystem
+To validate the setup, list the images available in your pool:
 
 ```bash
-ubuntu@server:~$ sudo mkfs.xfs /dev/rbd0
-meta-data=/dev/rbd0              isize=512    agcount=33, agsize=83885056 blks
-         =                       sectsz=512   attr=2, projid32bit=1
-         =                       crc=1        finobt=1, sparse=0
-data     =                       bsize=4096   blocks=2684354560, imaxpct=5
-         =                       sunit=1024   swidth=1024 blks
-naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
-log      =internal log           bsize=4096   blocks=521728, version=2
-         =                       sectsz=512   sunit=8 blks, lazy-count=1
-realtime =none                   extsz=4096   blocks=0, rtextents=0
+rbd -n client.<username> list <pool_name>
 ```
 
-## Mount the filesystem
+An empty result indicates that no images have been created yet. If an error occurs, review the configuration files and credentials to ensure they are correct.
+
+### Create, map, and mount an RBD volume
+
+A Ceph pool cannot be mounted directly. You must first create an RBD image within the pool and then map it to a block device.
+
+Create an RBD image:
 
 ```bash
-ubuntu@server:~$ sudo mkdir /mnt/rbd
-ubuntu@server:~$ sudo mount /dev/rbd0 /mnt/rbd
-ubuntu@server:~$ df -h /mnt/rbd
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/rbd0        10T   34M   10T   1% /mnt/rbd
+rbd -n client.<username> create <pool_name>/<image_name> \
+  -s <size_in_MB> \
+  --image-format 2 \
+  --image-feature layering
 ```
 
-You can now use your Ceph cluster!
+Verify image creation:
+
+```bash
+rbd -n client.<username> list <pool_name>
+```
+
+Map the image to a block device:
+
+```bash
+sudo rbd -n client.<username> map <pool_name>/<image_name>
+```
+
+Verify the mapping:
+
+```bash
+rbd showmapped
+```
+
+Format the block device (XFS example):
+
+```bash
+sudo mkfs.xfs /dev/rbd0
+```
+
+Mount the filesystem:
+
+```bash
+sudo mkdir -p /mnt/<mount_point>
+sudo mount /dev/rbd0 /mnt/<mount_point>
+df -h /mnt/<mount_point>
+```
+
+You can now start using your Ceph block storage.
+
+### Unmount and unmap the RBD volume
+
+Before detaching an RBD image, ensure the filesystem is properly unmounted:
+
+```bash
+sudo umount /mnt/<mount_point>
+sudo rbd unmap /dev/rbd0
+```
+
+The RBD image is now safely detached from the client.
+
+### Notes and best practices
+
+- Always use the monitor IP addresses provided in the OVHcloud Control Panel.
+- Avoid storing sensitive information in plain-text configuration files.
+- For Kubernetes environments, use the **CSI RBD driver** with the same configuration and credentials.
 
 ## Go further
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

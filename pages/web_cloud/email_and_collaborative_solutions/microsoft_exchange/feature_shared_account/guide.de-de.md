@@ -13,17 +13,22 @@ Ein **freigegebenes Postfach** ist eine Mailbox, die zwischen mehreren Exchange 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 
 ### Freigegebenes Postfach hinzufügen
-
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
 
 Wählen Sie den Tab `Freigegebene Postfächer`{.action} aus und klicken Sie auf `Freigegebenes Postfach hinzufügen`{.action}.
 
@@ -47,7 +52,6 @@ Füllen die Felder aus:
 > **Beispiel**:
 >
 > Sie haben 4 Accounts auf Ihrem Exchange abonniert, und damit **4 x 5 GB** erhalten. Sie haben also **20 GB** Speicherplatz für freigegebene Postfächer auf diesem Dienst.
-
 
 Klicken Sie auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen und klicken Sie auf `Bestätigen`{.action}.
 
@@ -104,7 +108,7 @@ Im Outlook-Client finden Sie Ihr freigegebenes Postfach in der linken Spalte, ge
 
 ![E-Mails](images/exchange-shared_accounts10.png){.thumbnail}
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

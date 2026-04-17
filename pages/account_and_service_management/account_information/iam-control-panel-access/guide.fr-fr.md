@@ -38,6 +38,7 @@ Grâce à ces droits, un utilisateur pourra se connecter à l'espace client. Cep
 
 ### Via l'interface utilisateur
 
+<!-- CP-STEPS-START:iam-cp-access-ui -->
 L'interface utilisateur permet de configurer une stratégie avec la configuration suivante :
 
 Ajouter la ou les identités auxquelles vous souhaitez donner accès.
@@ -57,6 +58,7 @@ Ou d'ajouter les 4 droits listés ci-dessus en tant qu'action
 ![Add actions](images/add_actions.png){.thumbnail}
 
 Vous pouvez maintenant associer vos utilisateurs à cette politique pour leur donner le droit de se connecter à votre espace client.
+<!-- CP-STEPS-END:iam-cp-access-ui -->
 
 ### Via l'API
 

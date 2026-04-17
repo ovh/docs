@@ -10,6 +10,19 @@ updated: 2022-08-07
 
 **This guide will explain how this gateway works, and how to redeploy it.**
 
+## Requirements
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
+
 ## Instructions
 
 ### Technical details
@@ -121,7 +134,7 @@ To redeploy the gateway VM you will need:
 
 ##### **Check the Additional IP address**
 
-Log in to the [OVHcloud Control Panel](/links/manager) and open the management section of your [vRack](/links/network/vrack). Verify the Additional IP address used by the Nutanix Cluster.
+In the management section of your [vRack](/links/network/vrack), verify the Additional IP address used by the Nutanix Cluster.
 
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 

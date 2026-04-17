@@ -1,12 +1,14 @@
 ---
 title: Choisir la bonne classe de Block Storage
 excerpt: Découvrez comment choisir la bonne classe de Block Storage OVHcloud. Comparez performances, coûts et cas d’usage pour optimiser votre stockage en termes de prix et d’efficacité.
-updated: 2025-12-15
+updated: 2026-04-14
 ---
 
 ## Objectif
 
-Ce guide vous aide à comprendre les différentes classes de Block Storage OVHcloud et à choisir celle qui correspond le mieux à vos besoins. Découvrez les niveaux de performance, les considérations tarifaires et les cas d’usage recommandés afin de prendre des décisions de stockage éclairées. 
+**Ce guide vous aide à comprendre les différentes classes de Block Storage OVHcloud et à choisir celle qui correspond le mieux à vos besoins.**
+
+Découvrez les niveaux de performance, les considérations tarifaires et les cas d’usage recommandés pour prendre des décisions de stockage éclairées.
 
 ## Présentation du Block Storage
 
@@ -22,7 +24,7 @@ Nos classes de Block Storage sont conçues pour répondre aux différents besoin
 
 La classe **Regional Classic Volume** offre une haute disponibilité en répliquant automatiquement les données dans trois zones de disponibilité au sein d'une région (3-AZ). Les volumes sont pris en charge par le stockage NVMe over Fabric pour un accès rapide, cohérent et fiable.
 
-Afin de garantir la continuité du service même en cas de défaillance d'une zone de disponibilité, cette classe prend également en charge le [Multi-Attach](/pages/public_cloud/compute/classic_block_multi_az_limitations). Cela permet à plusieurs instances situées dans différentes zones de disponibilité de se connecter simultanément et d'utiliser le même volume.
+Pour garantir la continuité du service même en cas de défaillance d'une zone de disponibilité, cette classe prend également en charge le [Multi-Attach](/pages/public_cloud/compute/classic_block_multi_az_limitations). Cela permet à plusieurs instances situées dans différentes zones de disponibilité de se connecter simultanément et d'utiliser le même volume.
 
 Cette classe est adaptée aux workloads nécessitant une haute disponibilité et une forte résilience, comme les bases de données critiques et les applications distribuées.
 
@@ -73,7 +75,7 @@ Chaque type de volume Block Storage est également disponible en version chiffr�
 Les volumes chiffrés peuvent être créés directement depuis l’espace client OVHcloud ou via les outils CLI/API en précisant le type de volume avec le suffixe `-luks` (par exemple : classic-luks ou highspeed-luks). Cela permet de protéger facilement les données sensibles tout en conservant les mêmes performances et fonctionnalités que les volumes standard.
 
 > [!primary]
-> Les volumes chiffrés n’ont aucun impact sur les performances.
+> Pour les volumes chiffrés de grande taille (plus de 800 Gio), les performances peuvent être inférieures à la qualité de service (QoS) attendue pour le volume, avec une baisse pouvant atteindre 20 % du débit pour la technologie High Speed Gen2. L'impact varie en fonction de la mise en œuvre choisie par le client.
 
 ## Cas d’usage
 
@@ -101,6 +103,6 @@ Les volumes Block Storage peuvent être déployés avec différentes options de 
 
 [Modifier un Volume Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Si vous avez besoin d’une formation ou d’une assistance technique pour la mise en œuvre de nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet par notre équipe Professional Services.
+Si vous avez besoin d’une formation ou d’une assistance technique pour la mise en œuvre de nos solutions, contactez votre représentant commercial ou adressez-vous à notre [équipe Professional Services](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

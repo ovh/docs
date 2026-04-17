@@ -50,7 +50,7 @@ details > :not(summary) {
 
 ## Objective
 
-You want to cancel one or more OVHcloud services. This guide will show you how to cancel your subscription via the [OVHcloud Control Panel](/links/manager).
+You want to cancel one or more OVHcloud services. This guide will show you how to cancel your subscription via the [My offers and services](/links/control-panel/billing-services) page.
 
 -First read the section "[What happens when an OVHcloud service is cancelled?](#consequences)".
 -Follow the steps described in the section "[How do I cancel my subscription?](#terminate)".
@@ -87,8 +87,8 @@ Before cancelling a service, you must be **certain**:
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [My services](/links/control-panel/billing-services)
-- **Navigation path:** Click your name in the top right > `Products and services`{.action}
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -99,9 +99,10 @@ The cancellation procedure is identical for the majority of OVHcloud services.
 
 However, there are **special cases** that are detailed [below](#specific-cases) in this guide.
 
-### How do I cancel my subscription? <a name="terminate"></a>
+### How do I cancel my subscription? <a name=”terminate”></a>
 
-To cancel your service subscription, open the [My services](/links/control-panel/billing-services) page.
+<!-- CP-STEPS-START:cancel-subscription -->
+To cancel your service subscription, open the [My offers and services](/links/control-panel/billing-services) page.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -121,8 +122,9 @@ Specify the reasons for your termination request, then click `Confirm`{.action}.
 Your service will be cancelled on the **date of effect** listed in the “Manage my solutions and services” table. If you do not see the status “Cancellation scheduled”, please refresh the page.
 
 ![termination request](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-subscription -->
 
-### Special cases <a name="specific-cases"></a>
+### Special cases <a name=”specific-cases”></a>
 
 #### MX Plan email <a name="mxplan"></a>
 
@@ -142,11 +144,13 @@ To cancel your [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-c
 
 #### Public Cloud <a name="publiccloud"></a>
 
+<!-- CP-STEPS-START:public-cloud-deletion -->
 Each [Public Cloud](/links/public-cloud/public-cloud) service can be deleted from the `Public Cloud`{.action} tab in the Control Panel.
 
 Select a service on the left, click on the `...`{.action} button to the right of the service concerned, then on `Delete`{.action}, as in the example below for an instance:
 
 ![public cloud instance deletion](images/pci-deletion-en.png){.thumbnail}
+<!-- CP-STEPS-END:public-cloud-deletion -->
 
 OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (you can find more details on our page [information on Public Cloud billing method](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). At the end of the month, you only pay for the actual resource usage time.
 
@@ -159,13 +163,15 @@ You can also [view your current resource usage](/pages/public_cloud/public_cloud
 > You can revoke a cancellation request up to 24 hours before the subscription end date.
 >
 
-To abort a cancellation request, open the [My services](/links/control-panel/billing-services) page.
+<!-- CP-STEPS-START:stop-cancellation -->
+To abort a cancellation request, open the [My offers and services](/links/control-panel/billing-services) page.
 
 Next, click the `...`{.action} button to the right of the service for which a cancellation request is being made, then `Stop cancellation of service`{.action}
 
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination-en.png){.thumbnail}
 
 Finally, click `Confirm cancellation`{.action}.
+<!-- CP-STEPS-END:stop-cancellation -->
 
 A termination of a cancellation procedure is effective immediately. Please refresh the “Manage my solutions and services” page if you still see the “Cancellation scheduled” status.
 

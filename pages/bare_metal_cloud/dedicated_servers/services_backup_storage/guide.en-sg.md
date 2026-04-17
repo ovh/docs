@@ -1,7 +1,7 @@
 ---
 title: How to use the backup storage on a dedicated server
 excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2025-10-09
+updated: 2026-03-25
 ---
 
 ## Objective
@@ -19,7 +19,17 @@ OVHcloud dedicated servers include additional backup space to store important da
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -30,7 +40,7 @@ OVHcloud dedicated servers include additional backup space to store important da
 
 ### Activating the backup storage
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click the `Enable backup storage`{.action} button.
+On the `Backup storage`{.action} tab, click the `Enable backup storage`{.action} button.
 
 ![Activate Backup storage](images/backup-storage01.png){.thumbnail}
 
@@ -42,11 +52,11 @@ Your backup storage will be configured within a few minutes. A confirmation emai
 
 ### Managing access control
 
-Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorized by default but have to be selected when adding IP addresses.
+Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorised by default but have to be selected when adding IP addresses.
 
 #### Adding a backup access
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Add an access`{.action}.
+On the `Backup storage`{.action} tab, click on the button `Add an access`{.action}.
 
 ![Add backup access](images/backup-storage03.png){.thumbnail}
 
@@ -107,19 +117,19 @@ To verify that your IP address is authorized, use the following call:
 
 ### Resetting your password
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Forgotten your password?`{.action}.
+On the `Backup storage`{.action} tab, click on the button `Forgotten your password?`{.action}.
 
 If you click on `Confirm`{.action} in the popup window, a password recovery email will be sent to the email address of your admin contact. Follow the instructions in the email to reset your password.
 
 ### Deleting the backup storage
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Delete backup storage`{.action}.
+On the `Backup storage`{.action} tab, click on the button `Delete backup storage`{.action}.
 
 If you click on `Confirm`{.action} in the popup window, the backup storage will be disabled within a few minutes. All data on the storage space will be deleted.
 
 ### Ordering more disk space
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Order disk space`{.action}.
+On the `Backup storage`{.action} tab, click on the button `Order disk space`{.action}.
 
 ![Add backup access](images/backup-storage06.png){.thumbnail}
 
@@ -300,12 +310,12 @@ After installing FileZilla on your server, you can configure it to connect to yo
 
 #### NFS
 
-First make sure that you have authorized your IP blocks to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
+The backup storage is only compatible with NFSv3. First, ensure that you have authorised your IP ranges to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
 
 Once you have the NFS client installed and portmap running, you can mount the NFS share like a normal partition as shown below:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -343,7 +353,7 @@ You can't access this shared folder because your organization's security policie
 >
 > To correct this error, you need to modify the Windows registry. To do this, open the Registry Editor (regedit), then navigate to the key `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
 > Then set the value of the parameter `AllowInsecureGuestAuth` to "1".<br>
-> Find more information on this topic on the [Microsoft support pages](https://learn.microsoft.com/en-sg/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
+> Find more information on this topic on the [Microsoft support pages](https://learn.microsoft.com/en-gb/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 

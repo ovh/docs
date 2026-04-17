@@ -29,6 +29,17 @@ This guide provides detailed steps to help you migrate from a third-party S3<sup
     - b3-16: 4 v-cores and 16 GB of RAM
     - c3-16: 8 v-cores and 16 GB of RAM
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 > [!primary]
 >
 > If this is your first time creating an Object Storage bucket, read our guide [Getting Started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
@@ -62,7 +73,7 @@ As explained earlier, you will need your `access key`, `secret key`, and the `re
 
 ### Step 2 - Preparing your OVHcloud destination bucket
 
-Similar to your source bucket, you will need your `access key`, `secret key` but also the `region ID` for your destination bucket. Log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Object Storage`{.action} section to collect those details.
+Similar to your source bucket, you will need your `access key`, `secret key` but also the `region ID` for your destination bucket. Navigate to the `Object Storage`{.action} section to collect those details.
 
 ### Step 3 - Installing, configuring and running Rclone
 

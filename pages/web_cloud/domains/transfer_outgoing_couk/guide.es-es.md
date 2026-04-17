@@ -1,7 +1,7 @@
 ---
 title: Transferir un nombre de dominio .uk a otro agente registrador
 excerpt: "Descubra cómo transferir la salida de un nombre de dominio UK a otro registrador"
-updated: 2026-02-10
+updated: 2026-03-13
 ---
 
 ## Objetivo
@@ -26,14 +26,14 @@ El proceso de cambio de agente registrador (*registrador*) para los nombres de d
 >
 > Para transferir la gestión de su nombre de dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un cambio de contactos. El procedimiento se describe en [esta guía](/pages/account_and_service_management/account_information/managing_contacts).
 >
-Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **antes** de cambiar los contactos del nombre de dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de titular de los nombres de dominio](/pages/web_cloud/domains/trade_domain).
+> Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **antes** de cambiar los contactos del nombre de dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de titular de los nombres de dominio](/pages/web_cloud/domains/trade_domain).
 >
 
 ## Requisitos
 
 - Tener un [nombre de dominio .uk](/links/web/domains) registrado con OVHcloud.
 - El nombre de dominio debe estar siempre activo, es decir, no debe haber expirado o haber sido bloqueado por OVHcloud.
-- El nombre de dominio no debe ser objeto de un litigio en curso ante el [Registro Nominet](https://www.nominet.uk/)
+- El nombre de dominio no debe ser objeto de un litigio en curso ante el [Registro Nominet](https://www.nominet.uk/).
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -49,9 +49,9 @@ Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **an
 
 > [!primary]
 >
-> Si el nombre de dominio ha expirado desde **menos de 90 días**, puede transferirse siempre. Por favor, contacte con nuestro equipo de soporte técnico creando una solicitud de soporte en su Panel de control de OVHcloud para desbloquear el nombre de dominio para la transferencia.
+> Si el nombre de dominio ha expirado hace **menos de 90 días**, aún puede transferirse. Contacte con nuestro equipo de soporte técnico creando una solicitud de soporte en su Panel de control de OVHcloud para desbloquear el nombre de dominio para la transferencia.
 >
-> Si usted es el **titular** del nombre de dominio pero su gestión en el área de cliente de OVHcloud no está disponible, ya sea a través de su propio acceso o a través del contacto administrativo del nombre de dominio, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts) antes de continuar.
+> Si usted es el **titular** del nombre de dominio pero no puede gestionarlo en el área de cliente de OVHcloud, ni a través de su propio acceso ni del contacto administrativo, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts) antes de continuar.
 >
 
 ## Procedimiento
@@ -60,27 +60,36 @@ Cada TLD correspondiente dispone de una etiqueta (*TAG*) correspondiente a su ac
 
 Si todavía no conoce el TAG necesario, puede solicitarlo a su nuevo proveedor o consultar la [lista de agentes registradores Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
-### Paso 1: comprobar la información necesaria
+### 1 - Modificar el TAG del nombre de dominio para iniciar la transferencia a otro agente registrador
 
-Conéctese al [Panel de configuración de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
+> [!primary]
+>
+> Debe estar conectado como [administrador](/pages/account_and_service_management/account_information/managing_contacts) para realizar estas acciones.
 
-Recuerde que debe estar conectado como administrador.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-En la pestaña `Información general`{.action}, puede comprobar que se cumplen los requisitos para el proceso de transferencia.
-
-### Paso 2: modificar el TAG del nombre de dominio
-
-Haga clic en el enlace `Etiqueta de transferencia saliente`{.action} en la sección titulada **Seguridad**.
-
-![transferencia saliente](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
-
-Se abrirá una ventana en la que deberá introducir el TAG del nuevo agente registrador y hacer clic en `Confirmar`{.action}.
-
-![transferencia saliente](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>>
+>> ![Panel de control de OVHcloud - lista de nombres de dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la sección **Configuración**, haga clic en el enlace `Etiqueta de transferencia saliente`{.action}.
+>>
+>> ![transferencia saliente](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Se abrirá una ventana en la que deberá introducir el TAG del nuevo agente registrador y hacer clic en `Confirmar`{.action}.
+>>
+>> ![transferencia saliente](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
 
 Si no puede cambiar el TAG de su nombre de dominio desde el área de cliente, puede solicitarlo al Registro Nominet. Más información en la [web oficial de Nominet](https://www.nominet.uk/domain-support/).
 
-### Paso 3: seguir el proceso de transferencia a su nuevo agente registrador
+### 2 - Seguir el proceso de transferencia a su nuevo agente registrador
 
 La modificación de la etiqueta TAG activa el proceso de transferencia.
 

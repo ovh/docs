@@ -26,7 +26,6 @@ Nutanix Leap allows:
 ## Requirements
 
 - Two Nutanix clusters in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via **Prism Central**
 - An interconnection between two clusters, for example using these technologies:
     - via an IPsec VPN as detailed in the guide [Interconnecting IPsec between two sites](/pages/hosted_private_cloud/nutanix_on_ovhcloud/44-ipsec-interconnection)

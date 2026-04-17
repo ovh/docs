@@ -1,7 +1,7 @@
 ---
 title: 'Configurare IPv6 su un server dedicato'
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-updated: 2025-12-09
+updated: 2026-04-13
 ---
 
 <style>
@@ -44,6 +44,17 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 - Tutti i dati del tuo IPv6 (prefisso, gateway, etc.).
 - Una conoscenza basilare di reti e [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 > [!warning]
 > Ti ricordiamo che i server Kimsufi sono forniti con un solo blocco IPv6 (/128). L'IPv6 sarà configurato automaticamente al momento dell'installazione del sistema operativo.
 >
@@ -72,8 +83,6 @@ Il primo step consiste nel recuperare il gateway IPv6 assegnato al tuo server.
 
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
->>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
 >>
 >> Il gateway IPv6 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta copiata, proseguire con l'applicazione di configurazione IPv6.
 >>
@@ -532,6 +541,22 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto 
 >> Inserisci la configurazione IPv6 (`IPv6 address` e `Default gateway`), spunta la casella `Conferma le impostazioni all’uscita` e clicca sul pulsante `OK`{.action} per confermare le modifiche.
 >>
 >> ![Proprietà](images/ipv6_configuration.png){.thumbnail}
+>>
+>> **Passaggio 4: Disabilitare gli identificatori di interfaccia IPv6 casuali**
+>>
+>> Aprire il menu Start, cercare `Windows PowerShell`{.action}, fare clic con il tasto destro e selezionare `Esegui come amministratore`{.action}.
+>>
+>> ![Eseguire PowerShell come amministratore](images/ipv6_powershell_admin.png){.thumbnail}
+>>
+>> Nella finestra di PowerShell, eseguire il comando seguente:
+>>
+>> ```powershell
+>> Set-NetIPv6Protocol -RandomizeIdentifiers Disabled
+>> ```
+>>
+>> ![Disabilitare gli identificatori casuali](images/ipv6_powershell_randomize_identifiers.png){.thumbnail}
+>>
+>> Questo passaggio è necessario per la connettività IPv6 sull'infrastruttura OVHcloud. Consente a Windows di costruire i propri indirizzi IPv6 link-local dall'indirizzo MAC dell'adattatore (EUI-64) invece di utilizzare valori casuali. La modifica ha effetto immediato e persiste dopo il riavvio.
 >>
 
 ### Verifica la configurazione e prova la connessione

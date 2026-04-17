@@ -27,10 +27,35 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) from the Advance, Scale, or High Grade ranges in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
+
+Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
+<br>Click the `IPMI`{.action} tab (1).
+
+Next, click the `From a Java applet (KVM)`{.action} button (2).
+
+![remote kvm](images/remote_kvm2022.png){.thumbnail}
+
+A JNLP program will be downloaded. Open the program to enter the IPMI. Log in using valid credentials for the server.
+
+By default, using an OVHcloud template, the NICs will be named *eth0* and *eth1*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
+
+```bash
+ip a
+```
 
 > [!primary]
 > The values (MAC addresses, IP addresses, etc.) shown in the configurations and examples below are provided as examples. Of course, you must replace these values with your own.

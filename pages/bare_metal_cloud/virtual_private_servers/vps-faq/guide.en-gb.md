@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud VPS FAQ"
 excerpt: "Find the answers to the most frequently asked questions about our VPS offers"
-updated: 2025-10-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -158,7 +158,7 @@ If you host web services on a VPS, you can install your preferred software, cust
  
 **Dedicated server**
 
-- Recommended for complex infrastructure that require full hardware control and guaranteed performance. 
+- Recommended for complex infrastructure that requires full hardware control and guaranteed performance. 
 
 A VPS eliminates the need to manage physical hardware such as storage, RAM, and CPU, making it well-suited for most web applications. As your business grows, you can upgrade your VPS, or migrate to a dedicated server or a Public Cloud solution for a more flexible and powerful infrastructure.
 
@@ -229,6 +229,20 @@ However, for specific software configuration assistance, we recommend reaching o
 
 ///
 
+/// details | What are the best practices for sending emails from a VPS?
+
+To prevent your emails from being marked as spam, you need to configure your server correctly.
+
+This includes:
+
+- email authentication (SPF, DKIM, DMARC),
+- reverse DNS (PTR) configuration,
+- following email providers’ best practices.
+
+For more details, see our dedicated guide: [How to prevent your emails from being marked as spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
+
+///
+
 /// details | Can I install more than one operating system on my VPS?
 
 OVHcloud installation templates only allow for one operating system.  
@@ -248,10 +262,10 @@ If you encounter configuration and administration issues, we recommend reaching 
 
 ///
 
-/// details | Is is possible to choose the hardware for my VPS (GPU, CPU, etc.) or upgrade it?
+/// details | Is it possible to choose the hardware for my VPS (GPU, CPU, etc.) or upgrade it?
 
 A VPS cannot be customized or modified at the hardware level.  
-Select a [VPS model](/links/bare-metal/vps) in the order process that meets you minimum requirements, then you can upgrade it as required.  
+Select a [VPS model](/links/bare-metal/vps) in the order process that meets your minimum requirements, then you can upgrade it as required.  
 
 ///
 
@@ -303,7 +317,7 @@ You can configure up to [16 Additional IP addresses](/links/network/additional-i
 
 Licenses can be moved between servers but there are limitations.
 
-The best option is to log in to our [API console](/links/api) with your customer account credentials and check if your license can be moved to a different VPS. Find the basics in our guide on [hot to get started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+The best option is to log in to our [API console](/links/api) with your customer account credentials and check if your license can be moved to a different VPS. Find the basics in our guide on [how to get started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 Once connected, use the following calls depending on the software in use:
 
@@ -375,7 +389,7 @@ There are several options available, for example:
 
 /// details | How can I download my VPS as a VM file?
 
-It is not possible to download a VM file of a OVHcloud VPS. However, you can utilize the VPS option **Snapshot** in your OVHcloud Control Panel to retrieve an image file.
+It is not possible to download a VM file of an OVHcloud VPS. However, you can utilize the VPS option **Snapshot** in your OVHcloud Control Panel to retrieve an image file.
 
 Follow our guide on [how to use snapshots on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps) to create and download a VPS snapshot.
 
@@ -387,7 +401,7 @@ Consider reaching out to one of our [partners](/links/partner) for further assis
 
 /// details | How can I access my backup storage from an IP address outside my service? 
 
-Access to the backup storage of your VPS (FTP storage) might be restricted to IP addresses linked to a service within your OVHcloud customer acccount.
+Access to the backup storage of your VPS (FTP storage) might be restricted to IP addresses linked to a service within your OVHcloud customer account.
 
 In order to add other IP addresses from which to access, you can use the OVHcloud API.  
 This will allow you to retrieve your backup data from a different service through various protocols (FTP, NFS, CIFS).
@@ -448,7 +462,7 @@ OVHcloud provides several security features to protect your VPS against maliciou
 
 The OVHcloud Game DDoS Protection is only available for our Game Dedicated Servers. If you order a VPS for game hosting, you will need to configure the firewall directly on your system, tailored to the desired game. You can find further information in our guide on [how to configure the firewall on Linux with iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable).
 
-The advantage of a VPS compared to a dedicated server is the possibility to scale its resources according your actual usage. You can upgrade your VPS with only a few clicks to benefit from a more capable system.
+The advantage of a VPS compared to a dedicated server is the possibility to scale its resources according to your actual usage. You can upgrade your VPS with only a few clicks to benefit from a more capable system.
 
 ///
 

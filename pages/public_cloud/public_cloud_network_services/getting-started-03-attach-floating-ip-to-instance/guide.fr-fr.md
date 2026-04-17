@@ -27,7 +27,7 @@ Les Floating IP sont des adresses IP publiques sur [Public Cloud](/links/public-
 ## Prérequis
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) existant sur votre compte OVHcloud
-- Avoir accès à [l’API OVHcloud](/links/api) ou à [l’espace client OVHcloud](/links/manager) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
+- Avoir accès à [l’API OVHcloud](/links/api) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
 - L’outil [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) installé sur votre environnement de travail (facultatif)
 
 ## Comprendre le service Floating IP
@@ -48,6 +48,17 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 
 ## En pratique
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Attacher une Floating IP à une instance
 
 #### Depuis l’espace client OVHcloud
@@ -62,8 +73,6 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> Si vous souhaitez associer une Floating IP à une instance existante, passez à **l'Option 2** (deuxième onglet ci-dessus).
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
->> 
 >> Avant de créer votre instance, assurez-vous d'avoir créé un [réseau privé avec Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
 >> Si vous avez besoin d'assistance pour créer une nouvelle instance, consultez d'abord notre guide pour [créer une instance depuis l'espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps). 
@@ -102,7 +111,7 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> Veuillez noter que le réseau privé doit être relié à une Gateway. Pour plus d'informations, consultez ce guide : [Créer un réseau privé avec une Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> Depuis l'onglet `Public Cloud`{.action}, cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
+>> Cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
 >>
 >> Cliquez sur `Floating IPs`{.action} puis sur `Ajouter une nouvelle IP`{.action}.
 >>
@@ -139,7 +148,7 @@ Cette fonctionnalité est actuellement disponible uniquement via [l’API OpenSt
 
 #### Supprimer une Floating IP
 
-Depuis l'onglet `Public Cloud`{.action}, cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
+Cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
 
 Dans l'onglet `Floating IP`{.action}, cliquez sur le bouton `...`{.action} à côté de l'IP correspondante et sélectionnez `Supprimer`{.action}.
 

@@ -97,13 +97,22 @@ To follow this guide, you will need:
 - an up-and-running Managed Kubernetes Service (MKS) cluster. This guide will walk you through the steps as well.
 - Both LDP account and MKS cluster must belong to the same OVHcloud account.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Enabling Audit Log Forwarding using the OVHcloud Control Panel
 
 #### Step 1 - Access the Audit Logs section of your Managed Kubernetes Service cluster
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 

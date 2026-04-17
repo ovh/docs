@@ -19,8 +19,8 @@ Dans le cadre de vos activités profesionnelles ou par intérêt sur le sujet, v
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Tableau de bord du compte](/links/control-panel/account-dashboard)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Tableau de bord`{.action}
+- **Lien direct :** [Mon compte](/links/control-panel/account-dashboard)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->
@@ -66,7 +66,8 @@ Plusieurs points sont à prendre en compte :
 
 ### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
 
-1. Sur le [Tableau de bord du compte](/links/control-panel/account-dashboard), dans la colonne de gauche, descendez jusqu'à la section contenant les **Liens utiles**, puis cliquez sur l'onglet `Mon bilan carbone`{.action}.
+<!-- CP-STEPS-START:retrieve-cp-footprint -->
+1. Sur le [Mon compte](/links/control-panel/account-dashboard), dans la colonne de gauche, descendez jusqu'à la section contenant les **Liens utiles**, puis cliquez sur l'onglet `Mon bilan carbone`{.action}.
 1. Sur la nouvelle page qui apparaît, cliquez sur `Télécharger mon empreinte de [Mois] [Année]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
@@ -74,6 +75,7 @@ Plusieurs points sont à prendre en compte :
 Vous pourrez récupérer chaque mois l'empreinte carbone du mois précédent pour vos services éligibles.
 
 Si vous avez besoin de l'empreinte carbone pour un mois antérieur au mois précédent le mois en cours, vous devrez obligatoirement passer par nos API pour le récupérer.
+<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Récupérer un bilan mensuel antérieur au mois précédent via nos API
 
@@ -93,7 +95,7 @@ Par défaut, les API OVHcloud sont mises à disposition pour permettre aux déve
 
 - Sur la partie droite de la page s'affiche alors l'API avec son encadré à compléter.
 - Cliquez sur le bouton situé en haut à droite intitulé `Authenticate`{.action}, puis sur le bouton `Login with OVHcloud SSO`{.action}.
-- L'interface de connexion à votre [espace client OVHcloud](/links/manager) s'ouvre.
+- La page de connexion de l'[espace client OVHcloud](/links/control-panel/account-dashboard) s'ouvre.
 - Connectez-vous avec votre identifiant client, puis cliquez sur `Authorize`{.action} pour utiliser les API OVHcloud avec vos services.
 - Vous êtes ensuite automatiquement redirigé vers la page précédente de l'API **POST /me/carbonCalculator/task**.
 

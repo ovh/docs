@@ -22,8 +22,8 @@ Lo Spazio Cliente OVHcloud ti permette di gestire i tuoi dati personali e di del
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [User profile](/links/control-panel/account-profile)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `My account`{.action}
+- **Link diretto:** [Il mio profilo](/links/control-panel/account-profile)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action} > `Modifica il tuo profilo`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -63,7 +63,7 @@ Se non l'hai ancora fatto, salva la password in un [gestore di password](/pages/
 In caso di difficoltà di accesso al tuo indirizzo email principale, un indirizzo email di recupero permette di mantenere l'accesso al tuo account e quindi alla gestione dei tuoi servizi.
 <br>Questo secondo indirizzo **deve essere diverso** dal primo, in particolare per facilitare le operazioni in caso di recupero della password.
 
-Per inserire questo indirizzo email di recupero, accedi al tuo [profilo utente](/links/control-panel/account-profile) e clicca su `Modifica il tuo profilo`{.action} nella sezione `Il tuo profilo`.
+Per inserire questo indirizzo email di recupero, accedi al tuo [profilo utente](/links/control-panel/account-profile).
 
 > [!warning]
 > Ti ricordiamo che è **fondamentale** che l'indirizzo email di recupero sia **diverso** dall'indirizzo email principale dell'account.
@@ -84,24 +84,28 @@ Per maggiori informazioni, consulta la nostra guida [Proteggere un account OVHcl
 
 #### Modifica le tue informazioni personali
 
-È possibile modificare le informazioni del tuo account. Accedi al tuo [profilo utente](/links/control-panel/account-profile) e clicca su `Modifica il tuo profilo`{.action} nella sezione `Il tuo profilo`.
+È possibile modificare le informazioni del tuo account. Accedi al tuo [profilo utente](/links/control-panel/account-profile).
 
-Modifica le informazioni e clicca su `Conferma`{.action}.
+<!-- CP-STEPS-START:save-profile-changes -->
+Modifica le informazioni e clicca su `Salva le modifiche`{.action}.
+<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
 > È fondamentale che le tue informazioni siano **aggiornate** e **corrette** Ti verrà richiesto durante i contatti con il supporto OVHcloud e, in caso di necessità, sarà necessario essere in grado di giustificarne l'esattezza (ad esempio: durante una procedura di modifica dell'indirizzo email, potresti ricevere un giustificativo di domicilio identico all'indirizzo inserito sul tuo account).
 >
 
-#### Modifica l'indirizzo email principale
+#### Modifica l’indirizzo email principale
 
+<!-- CP-STEPS-START:changing-primary-email -->
 Per modificare l’indirizzo che hai inserito come contatto principale, è necessario confermare la nuova email inserendo il codice ricevuto all’indirizzo del contatto principale attuale. Una volta ricevuto il codice, clicca sul pulsante `Ho ricevuto il codice di conferma`{.action}.
 
 ![identificativo cliente](images/nichandle07.png){.thumbnail}
 
-Inserisci il codice nel campo `Codice di conferma` e conferma l'operazione.
+Inserisci il codice nel campo `Codice di conferma` e conferma l’operazione.
 
 ![identificativo cliente](images/nichandle08.png){.thumbnail}
+<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -109,11 +113,13 @@ Inserisci il codice nel campo `Codice di conferma` e conferma l'operazione.
 
 #### Modifica il tipo di account
 
+<!-- CP-STEPS-START:changing-account-type -->
 Clicca sulla specializzazione `tipo di account` quando modifica il tuo profilo. Un menu a tendina ti permette di definire il tipo di account corrispondente alla tua situazione.
 
 ![identificativo cliente](images/nichandle09.png){.thumbnail}
 
 Una volta inseriti tutti i dati, clicca sul pulsante `Conferma`{.action}.
+<!-- CP-STEPS-END:changing-account-type -->
 
 #### Esercita i tuoi diritti sui tuoi dati personali
 

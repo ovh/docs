@@ -30,6 +30,17 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 >
 > ![MX PLAN](images/technology-email.png){.thumbnail .w-500}
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## In der praktischen Anwendung
 
 **Inhaltsübersicht**

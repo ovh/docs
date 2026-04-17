@@ -12,7 +12,7 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. En cas de doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](/links/manager) (cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Mes offres & services`{.action}. Enfin, cliquez sur l'onglet `Contrats`{.action}).
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. En cas de doute, référez-vous à vos contrats OVHcloud (disponibles sur la page [Liste des contrats](/links/control-panel/billing-contracts)).
 >
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/696213687?h=78a6ea1e6e&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -27,8 +27,8 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Factures](/links/control-panel/billing-invoices)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Factures`{.action}
+- **Lien direct :** [Mes factures](/links/control-panel/billing-invoices)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes factures`{.action}
 
 ---
 <!-- CP-NAV-END:billing-invoices -->
@@ -37,7 +37,7 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 > [!primary]
 >
-> Chaque facture vous est envoyée par e-mail et accessible via un lien cliquable. Vous pourrez alors y accéder en vous authentifiant à votre [espace client OVHcloud](/links/manager). Toute facture reste également disponible depuis la page d'accueil de votre espace client.
+> Chaque facture vous est envoyée par e-mail et accessible via un lien cliquable. Vous pourrez alors y accéder sur la page [Mes factures](/links/control-panel/billing-invoices). Toute facture reste également disponible depuis la page d'accueil de votre espace client.
 >
 
 ### Comprendre votre facture
@@ -60,7 +60,8 @@ La facture de votre service OVHcloud vous est envoyée suite au règlement d'une
 
 #### Consulter et gérer ses factures
 
-Pour consulter vos factures, ouvrez la page [Factures](/links/control-panel/billing-invoices).
+<!-- CP-STEPS-START:view-manage-bills -->
+Pour consulter vos factures, ouvrez la page [Mes factures](/links/control-panel/billing-invoices).
 
 ![Facturation](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 
@@ -114,14 +115,17 @@ Si vous souhaitez exporter l'ensemble de vos factures, utilisez les boutons `Tou
 Si vous souhaitez n'en exporter qu'une partie, cochez les cases correspondantes dans la première colonne du tableau afin de sélectionner les factures qui vous intéressent. Deux nouvelles actions, `Exporter la sélection au format CSV`{.action} ou `Exporter la sélection au format PDF`{.action}, seront alors disponibles dans le menu `Actions de masse`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Payer vos factures <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le menu `Actions de masse`{.action} puis sur le bouton `Régler mon solde immédiatement`{.action}.
 
 ![Paiement de la dette](images/pay_debt.png){.thumbnail}
 
 Un [bon de commande de régularisation](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#le-bon-de-commande) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Demander l'annulation d'une facture
 
@@ -130,8 +134,12 @@ Un [bon de commande de régularisation](/pages/account_and_service_management/ma
 > Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+<!-- CP-STEPS-START:request-cancellation-ticket -->
+<!-- CP-STEPS-END:request-cancellation-ticket -->
+
 ### Suivre vos paiements
 
+<!-- CP-STEPS-START:track-payments -->
 Retrouvez l'historique des paiements effectués dans `Mes factures`{.action} puis `Suivi des paiements`{.action}. Vous pouvez ainsi faire le lien entre chaque facture et le paiement associé.
 
 ![Suivi des paiements](images/payment_tracking.png){.thumbnail}
@@ -142,6 +150,7 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 >
 > Si vous constatez une différence entre un paiement et le montant d'une facture, cela signifie que vous possédiez un avoir qui a automatiquement diminué le montant prélevé.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Aller plus loin
 

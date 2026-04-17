@@ -46,7 +46,7 @@ To check if your domain name uses the OVHcloud DNS configuration, click on the t
 
 > [!warning]
 >
-> **These 3 steps are only valid if your domain name is registered with OVHcloud.** Otherwise, you will need to check with your domain name registrar.
+> **These 2 steps are only valid if your domain name is registered with OVHcloud.** Otherwise, you will need to check with your domain name registrar.
 >
 > If the DNS server names end with *ovh.net* (with the exception of the *snds2.ovh.net* server), *ovh.ca* or *anycast.me*, your domain name will use OVHcloud DNS servers.
 >
@@ -54,7 +54,7 @@ To check if your domain name uses the OVHcloud DNS configuration, click on the t
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -82,7 +82,7 @@ To enable (or disable) the **DNSSEC** solution for your domain name, click on th
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -109,7 +109,7 @@ Once you have retrieved these 4 parameters, click on the tabs below to view each
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

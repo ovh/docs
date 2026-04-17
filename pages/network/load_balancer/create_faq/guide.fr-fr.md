@@ -8,6 +8,16 @@ updated: 2025-11-12
 
 Retrouvez dans ce document les questions les plus fréquemment posées et les instructions correspondantes pour effectuer des tâches de gestion et de configuration courantes sur votre service OVHcloud Load Balancer.
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## FAQ
 
 ### Comment configurer mon pare-feu pour accepter le trafic provenant de l'OVHcloud Load Balancer ?

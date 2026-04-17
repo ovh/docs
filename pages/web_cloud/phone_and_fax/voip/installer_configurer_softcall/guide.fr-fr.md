@@ -1,6 +1,6 @@
 ---
-title: 'Installer et configurer Softcall'
-excerpt: 'Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone'
+title: "Installer et configurer Softcall"
+excerpt: "Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone"
 updated: 2025-04-28
 ---
 
@@ -50,13 +50,16 @@ Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tab
 
 #### Activer la ligne SIP pour Softcall
 
+<!-- CP-STEPS-START:activer-ligne-sip-softcall -->
 Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.<br>
 Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour utiliser la ligne SIP sur l'ensemble de vos applications Softcall.
 
 ![Install Softcall](images/toggle_activation_sip.png){.thumbnail}
+<!-- CP-STEPS-END:activer-ligne-sip-softcall -->
 
 #### Télécharger et installer Softcall
 
+<!-- CP-STEPS-START:telecharger-installer-softcall -->
 Cliquez sur `Liens de téléchargements`{.action}.
 
 ![Install Softcall](images/download_softcall_manager_button.png){.thumbnail}
@@ -68,11 +71,13 @@ Vous disposez de trois options pour télécharger l'application Softcall :
 - Option 3 : via le lien de téléchargement.
 
 Une fois l'application Softcall téléchargée, installez-la sur votre appareil.
+<!-- CP-STEPS-END:telecharger-installer-softcall -->
 
 ### Configurer Softcall
 
 #### Obtenir le code de configuration
 
+<!-- CP-STEPS-START:obtenir-code-configuration -->
 Dans la section `Configurer la ligne`{.action}, cliquez sur `Obtenir un code de configuration`{.action}.
 
 ![Install Softcall](images/get_configuration_code_button.png){.thumbnail}
@@ -82,8 +87,9 @@ Dans la fenêtre qui s'ouvre, cliquez sur le bouton `Générer un code de config
 ![Install Softcall](images/configuration_code_popup.png){.thumbnail}
 
 Dans la nouvelle fenêtre, retrouvez le code de configuration et le QR code.
+<!-- CP-STEPS-END:obtenir-code-configuration -->
 
-#### Configurer l'application mobile (Android et IOS)
+#### Configurer l'application mobile (Android et iOS)
 
 Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous êtes dirigé vers l'écran `Assistant`{.action}.
 
@@ -103,7 +109,7 @@ Dans l'écran `Assistant`{.action} de l'application Softcall, utilisez le code d
 
 Votre compte Softcall est désormais configuré. Dans le menu principal de Softcall, retrouvez votre numéro de téléphone (au format international) tout en haut du menu.
 
-#### Configurer l'application de bureau (Windows et MacOS)
+#### Configurer l'application de bureau (Windows et macOS)
 
 Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous êtes dirigé vers l'écran `Assistant`{.action}.
 
@@ -131,7 +137,7 @@ Votre compte Softcall est désormais configuré. Dans le menu principal de Softc
 
 #### Passer un appel téléphonique
 
-##### Application mobile (Android et IOS)
+##### Application mobile (Android et iOS)
 
 Dans le menu principal en bas de l'écran, cliquez sur l'icône représentant un clavier numérique.
 
@@ -270,7 +276,7 @@ Si vous rencontrez un problème avec l'application Softcall (bug, erreur, etc.),
 
 ///
 
-#### Application mobile (Android et IOS)
+#### Application mobile (Android et iOS)
 
 /// details | Appeler la messagerie vocale
 
@@ -372,18 +378,23 @@ Envoyez l'e-mail pour transmettre ce rapport à notre équipe en charge du produ
 
 ### Personnaliser Softcall
 
+<!-- CP-STEPS-START:personnaliser-softcall -->
 Cliquez sur l'onglet `Services`{.action}, sélectionnez la ligne SIP utilisée par votre application Softcall puis cliquez sur l'onglet `Softphone`{.action}.
+<!-- CP-STEPS-END:personnaliser-softcall -->
 
 #### Appliquer un thème
 
+<!-- CP-STEPS-START:appliquer-theme-softcall -->
 Vous pouvez définir un thème de couleur à appliquer à votre interface Softcall.
 
 Dirigez-vous sur la section `Appliquer un thème`{.action}.
 
 Sélectionnez la couleur de votre choix puis cliquez sur le bouton `Appliquer un thème`{.action} pour valider. Redémarrez votre application Softcall pour activer le changement de thème.
+<!-- CP-STEPS-END:appliquer-theme-softcall -->
 
 #### Ajouter un logo
 
+<!-- CP-STEPS-START:ajouter-logo-softcall -->
 > [!primary]
 > La modification du logo depuis l'espace client ne concerne pas l'icône de l'application Softcall sur votre appareil, mais uniquement le logo visible dans les paramètres de l'application, dans la section `À propos`.
 
@@ -401,6 +412,7 @@ Cliquez sur le bouton `Drag and drop a file or select a file`{.action}. La photo
 > - Dimensions maximales : 512 x 512 pixels.
 
 Cliquez sur le bouton `Appliquer un logo`{.action}. Redémarrez votre application Softcall pour activer le changement de thème.
+<!-- CP-STEPS-END:ajouter-logo-softcall -->
 
 ## Aller plus loin
 

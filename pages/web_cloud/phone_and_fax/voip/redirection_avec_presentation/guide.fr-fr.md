@@ -38,6 +38,7 @@ Cette configuration permet notamment la réception d'appels sur votre numéro pr
 
 ### Étape 1 : Appliquer la configuration « Redirection d'appels »
 
+<!-- CP-STEPS-START:etape-1-appliquer-configuration-redirection -->
 - Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `Redirection d'appels`{.action} puis cliquez sur `Paramétrer`{.action}.
 
 - Si votre numéro a déjà une configuration en place, cliquez sur l'onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Redirection d'appels`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
@@ -51,17 +52,19 @@ Cette configuration permet notamment la réception d'appels sur votre numéro pr
 > ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
 >
 > Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+<!-- CP-STEPS-END:etape-1-appliquer-configuration-redirection -->
 
-### Étape 2 : Paramétrer la redirection d'appels
+### Étape 2 : Paramétrer la redirection d’appels
 
+<!-- CP-STEPS-START:etape-2-parametrer-redirection -->
 Dans la partie « **Vos appels entrants** », cliquez d'abord sur le bouton `+ Sélectionner une ligne`{.action}.<br>
 Choisissez alors, parmi les lignes affichées, celle vers laquelle vous souhaitez rediriger les appels reçus sur votre numéro. Cliquez ensuite sur le bouton `Valider`{.action} pour confirmer votre sélection.
 
 ![redirection d'appels](images/redirection2-2022.png){.thumbnail}
 
-La ligne sélectionnés apparaît alors sous la mention « Ligne vers laquelle vos appels seront redirigés ».
+La ligne sélectionnée apparaît alors sous la mention « Ligne vers laquelle vos appels seront redirigés ».
 
-Choisissez ensuite, dans la partie « **Vos appels sortants** », si vous souhaitez activer ou non la présentation de votre numéro alors lors d'un appel sortant.
+Choisissez ensuite, dans la partie « **Vos appels sortants** », si vous souhaitez activer ou non la présentation de votre numéro lors d'un appel sortant.
 
 Vous pouvez ainsi, lorsque vous émettez un appel depuis votre ligne SIP OVHcloud, présenter votre numéro alias (et non plus la ligne OVHcloud) sur les téléphones de vos destinataires.
 
@@ -75,6 +78,7 @@ Patientez quelques instants afin que celle-ci soit prise en compte.
 > [!primary]
 >
 > Si vous avez appliqué le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+<!-- CP-STEPS-END:etape-2-parametrer-redirection -->
 
 ## Aller plus loin
 

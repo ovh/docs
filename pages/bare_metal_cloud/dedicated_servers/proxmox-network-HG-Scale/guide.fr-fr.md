@@ -32,7 +32,6 @@ updated: 2026-01-23
 
 - Un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
 - Une ou plusieurs adresses [Additional IP](/links/network/additional-ip)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -263,7 +262,6 @@ Cette configuration est plus souple car il n'est pas nécessaire d'associer une 
 * Un [serveur compatible avec le vRack](/links/bare-metal/bare-metal)
 * Un service [vRack](/links/network/vrack)
 * Un bloc d'additional IP
-* Être connecté à votre [espace client OVHcloud](/links/manager)
 
 #### Schéma de la configuration cible
 

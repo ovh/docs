@@ -9,7 +9,7 @@ updated: 2026-01-21
 Logi uruchamiania Windows pozwalają zidentyfikować sterowniki i usługi wczytywane podczas uruchamiania systemu.  
 Są szczególnie przydatne do **diagnozowania problemów z uruchamianiem**, **niebieskich ekranów** lub **zamrażania systemu**.
 
-Ta instrukcja wyjaśnia, jak **włączyć logi uruchamiania Windows na serwerze**, aby pomóc w analizie i rozwiązywaniu problemów z VPS.
+**Ta instrukcja wyjaśnia, jak włączyć logi uruchamiania Windows na serwerze, aby pomóc w analizie i rozwiązywaniu problemów z VPS.**
 
 ## Wymagania początkowe
 
@@ -34,9 +34,9 @@ Aby je włączyć, wykonaj poniższe kroki, przechodząc przez zakładki:
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}
 >>
-> 3. **Otwórz "msconfig"**
+> 3. **Otwórz `msconfig`**
 >>
->> Wpisz "msconfig" i kliknij `OK`{.action}.
+>> Wpisz `msconfig` i kliknij `OK`{.action}.
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}
 >>
@@ -44,7 +44,7 @@ Aby je włączyć, wykonaj poniższe kroki, przechodząc przez zakładki:
 >>
 >> W nowym oknie włącz opcję logowania obok `Boot log`. Następnie kliknij `OK`{.action}.
 >>
->> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}
 >>
 
 Podczas następnego uruchamiania serwera logi zostaną zapisane w pliku `.txt`. Ścieżka do pliku to: `C:\Windows\ntbtlog.txt`.

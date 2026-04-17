@@ -27,10 +27,34 @@ L'agrégation est basée sur la technologie IEEE 802.3ad, Link Aggregation Contr
 
 ## Prérequis
 
-- Un [serveur dédié](/links/bare-metal/bare-metal) des gammes Advance, Scale ou High Grade dans votre compte OVHcloud
-- Être connecté à l'[espace client OVHcloud](/links/manager)
+- [Avoir configuré votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
+
+Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
+
+Cliquez ensuite sur l'onglet `IPMI`{.action} (1) puis sur le bouton `Depuis un applet Java (KVM)`{.action} (2).
+
+![remote kvm](images/remote_kvm2022.png){.thumbnail}
+
+Un logiciel JNLP sera téléchargé. Lancez le logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
+
+Par défaut, en utilisant un modèle OVHcloud, les NIC seront nommés *eth0* et *eth1*. Si vous n’utilisez pas un modèle OVHcloud, vous pouvez retrouver les noms de vos interfaces en utilisant la commande suivante :
+
+```bash
+ip a
+```
 
 > [!primary]
 > Les valeurs (adresses MAC, adresses IP, etc.) indiquées dans les configurations et exemples ci-dessous le sont à titre d'exemples. Vous devez bien entendu remplacer ces valeurs par les vôtres.

@@ -19,7 +19,17 @@ This guide explains the steps to request a quota increase on your Cloud account 
 - You are a member of the [Startup Program](/links/transversal/startup-program).
 - Your OVHcloud account has a valid payment method. Refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) to add a valid payment method.
 - Your account is registered under the `Company` status. Refer to [this guide](/pages/account_and_service_management/account_information/all_about_username) to update your information.
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -29,15 +39,15 @@ This procedure allows you to manually request a quota increase and validate it v
 
 After fulfilling the prerequisites above, create a support ticket by following these steps:
 
-Log in to your [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select your Public Cloud project.
-
-In the `Project Management` section, click on `Quota & Regions`{.action}. Click on `Contact Support`{.action}.
+<!-- CP-STEPS-START:quota-increase-ticket -->
+In your [Public Cloud project](/links/control-panel/publiccloud-projects), go to the `Project Management` section and click on `Quota & Regions`{.action}. Click on `Contact Support`{.action}.
 
 ![Contacter le support](images/01-quota.png){.thumbnail width="800"}
 
 Justify your quota increase request by specifying your participation in the OVHcloud Startup Program, stating your technical needs, and providing the name of your Startup Program Manager responsible for overseeing your participation (consult the list of Startup Program Managers [here](/links/transversal/startup-program-faq-managers)).
 
 ![Contacter le support](images/02-support-request.png){.thumbnail width="800"}
+<!-- CP-STEPS-END:quota-increase-ticket -->
 
 ### Step 2 - Contact your Startup Program Manager
 

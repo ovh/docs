@@ -13,13 +13,24 @@ IP-Blöcke können verwendet werden, um Ihre Dienste über das Internet zugängl
 ## Voraussetzungen
 
 - Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
-- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](/links/manager)
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](/links/manager))
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigationspfad:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wählen Sie Ihren vSphere Dienst aus
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## In der praktischen Anwendung
 
 ### IP-Block bestellen
 
-Um einen zusätzlichen IP-Block für Ihre **Private Cloud** zu bestellen, gehen Sie in Ihr OVHcloud Kundencenter. Klicken Sie im Bereich `Hosted Private Cloud` in der linken Spalte auf `IP` und dann auf `Zusätzliche IP-Adressen bestellen`{.action}. Wählen Sie anschließend im Drop-down-Menü Ihre **Private Cloud** aus und gehen Sie weiter zum nächsten Schritt.
+Um einen zusätzlichen IP-Block für Ihre **Private Cloud** zu bestellen, klicken Sie auf [diesen Link](/links/control-panel/privatecloud-vmware-vsphere), um auf den Bereich `VMware vSphere`{.action} zuzugreifen, und klicken Sie in der linken Spalte auf `IP` und dann auf `Zusätzliche IP-Adressen bestellen`{.action}. Wählen Sie im Drop-down-Menü Ihre **Private Cloud** aus und gehen Sie weiter zum nächsten Schritt.
 
 Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
 

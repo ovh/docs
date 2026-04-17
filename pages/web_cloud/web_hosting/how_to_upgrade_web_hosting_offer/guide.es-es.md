@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo mejorar su solución"
 excerpt: "Descubra cómo modificar la fórmula de suscripción de un plan de hosting de OVHcloud"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -28,7 +28,7 @@ Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad 
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -53,7 +53,7 @@ Para modificar su suscripción, haga clic en las fichas siguientes para ver cada
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -86,7 +86,7 @@ Después de eliminar los datos de sus bases de datos, vuelva a calcular la cuota
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -113,7 +113,7 @@ Después de eliminar los datos de sus bases de datos, vuelva a calcular la cuota
 
 > [!primary]
 >
-> Recalcular el límite de su base de datos puede tardar hasta **15 minutos**. No dude en recargar la página desde su navegador de internet si el límite recalculado no se muestra espontáneamente.
+> Recalcular el límite de su base de datos puede tardar hasta **15 minutos**. No dude en recargar la página desde su navegador de Internet si el límite recalculado no se muestra espontáneamente.
 >
 
 #### 2 - Web Cloud Databases
@@ -125,7 +125,7 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **2** eta
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -140,7 +140,13 @@ Esta acción le permitirá contratar una solución Web Cloud Databases independi
 Si no desea conservar estos datos, puede eliminar su solución Web Cloud Databases antes de cambiar al plan *Pro*: 
 
 1. Haga una copia de seguridad de sus datos siguiendo las instrucciones de esta [guía](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Elimine su servidor Web Cloud Databases a través de su [área de cliente de OVHcloud](/links/manager). Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}. A continuación, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al servicio Web Cloud Databases/SQL Privado y seleccione `Eliminar mi alojamiento SQL Privado`{.action}.
+2. Elimine su servidor Web Cloud Databases a través de su área de cliente de OVHcloud. Para ello, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services).
+> **Etapa 2**
+>> Haga clic en el botón `...`{.action} situado al final de la línea correspondiente al servicio Web Cloud Databases/SQL Privado y seleccione `Eliminar mi alojamiento SQL privado`{.action}.
 
 #### 3 - Espacio de almacenamiento FTP
 
@@ -151,7 +157,7 @@ Para comprobar el espacio de almacenamiento FTP utilizado en su alojamiento web,
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -167,39 +173,61 @@ Para comprobar el espacio de almacenamiento FTP utilizado en su alojamiento web,
 
 Asegúrese de que su nuevo plan tiene suficientes direcciones de correo electrónico disponibles. En caso contrario, elimine las direcciones de correo electrónico no utilizadas después de haber [guardado](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) su contenido, si es necesario.
 
-Si quiere conservar el mismo número de cuentas de correo y **antes de cambiar su alojamiento web a un plan inferior**, también puede contratar un nuevo plan de correo **MX Plan**. Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Direcciones de correo`{.action} y seleccione el servicio de correo correspondiente. En la página que aparece, en el recuadro `Suscripción`{.action} y a la derecha de la mención `Producto`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar de plan`{.action}.
+Si quiere conservar el mismo número de cuentas de correo y **antes de cambiar su alojamiento web a un plan inferior**, también puede contratar un nuevo plan de correo **MX Plan**. Para ello, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>> Acceda a la página [MX Plan](/links/control-panel/web-mx-plan) y seleccione el dominio correspondiente.
+> **Etapa 2**
+>> En el cuadro **Suscripción** y a la derecha de **Producto**, haga clic en el botón `...`{.action} y luego en `Cambiar de solución`{.action}.
+>> ![Cambio de plan MX Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
 
->[!primary]
->
-> Si el botón `...`{.action} no está disponible en su servicio de correo, puede desvincular el servicio de correo de su alojamiento web. Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la página `Información general`{.action} que aparece y en el cuadro `Configuración`{.action}, haga clic en el botón `...`{.action} a la derecha de la mención `Direcciones de correo`{.action} y seleccione `Desvincular mi opción de correo`{.action}.
->
+Si el cambio de plan no está disponible en su servicio de correo, este está vinculado a un alojamiento web.
+
+Puede desvincular el servicio de correo de su alojamiento web. Para ello, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+> **Etapa 2**
+>> En el cuadro **Configuración**, haga clic en el botón `...`{.action} a la derecha de **Direcciones de correo** y seleccione `Desvincular mi opción de correo`{.action}.
 
 #### 5 - Listas de correo
 
 La funcionalidad [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) es opcional en los alojamientos [Personal](/links/web/hosting-personal-offer).
 
-Para cambiar el alojamiento web a un plan de hosting [Personal](/links/web/hosting-personal-offer), deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente de OVHcloud](/links/manager).
+Para cambiar el alojamiento web a un plan de hosting [Personal](/links/web/hosting-personal-offer), deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente de OVHcloud](/links/manager). Para ello, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Direcciones de correo`{.action} y seleccione el servicio de correo correspondiente. En la página que aparece, en el recuadro `Suscripción`{.action} y a la derecha de la mención `Producto`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar de plan`{.action}.
+> [!tabs]
+> **Etapa 1**
+>> Acceda a la página [MX Plan](/links/control-panel/web-mx-plan) y seleccione el dominio correspondiente.
+> **Etapa 2**
+>> En el cuadro **Suscripción** y a la derecha de **Producto**, haga clic en el botón `...`{.action} y luego en `Cambiar de solución`{.action}.
 
->[!primary]
->
-> Si el botón `...`{.action} no está disponible en su servicio de correo, puede desvincular el servicio de correo de su alojamiento web. Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la página `Información general`{.action} que aparece y en el cuadro `Configuración`{.action}, haga clic en el botón `...`{.action} a la derecha de la mención `Direcciones de correo`{.action} y seleccione `Desvincular mi opción de correo`{.action}.
->
+Si el cambio de plan no está disponible en su servicio de correo, este está vinculado a un alojamiento web.
+
+Puede desvincular el servicio de correo de su alojamiento web. Para ello, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+> **Etapa 2**
+>> En el cuadro **Configuración**, haga clic en el botón `...`{.action} a la derecha de **Direcciones de correo** y seleccione `Desvincular mi opción de correo`{.action}.
 
 #### 6 - Usuarios FTP
 
 Asegúrese de que la nueva oferta ofrece suficientes usuarios FTP.
 
-El número de usuarios FTP puede consultarse en el área de cliente de OVHcloud. Una vez que se haya conectado, acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, abra la pestaña `FTP-SSH`{.action}.
+El número de usuarios FTP puede consultarse en el área de cliente de OVHcloud. Para comprobarlo, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-En la parte inferior de la página que aparece, aparece una tabla con todos los usuarios FTP creados para el alojamiento web.
-
-Para eliminar usuarios FTP, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al usuario FTP que quiera eliminar y seleccione `Eliminar`{.action}.
-
-![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail} 
+> [!tabs]
+> **Etapa 1**
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+> **Etapa 2**
+>> En la página que aparece, abra la pestaña `FTP - SSH`{.action}. En la parte inferior de la página, aparece una tabla con todos los usuarios FTP creados para el alojamiento web.
+> **Etapa 3**
+>> Para eliminar usuarios FTP, haga clic en el botón `...`{.action} a la derecha del usuario FTP correspondiente y seleccione `Eliminar`{.action}.
+>> ![Eliminación de usuario FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
 
 #### Finalización
 
@@ -228,7 +256,7 @@ Para **activar la opción Boost**, haga clic en las fichas siguientes para ver c
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -243,7 +271,7 @@ Para **desactivar la opción Boost**, haga clic en las fichas siguientes para ve
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

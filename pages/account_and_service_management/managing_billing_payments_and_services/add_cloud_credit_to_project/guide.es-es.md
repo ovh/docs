@@ -1,7 +1,7 @@
 ---
 title: 'Añadir crédito Cloud'
 excerpt: 'Cómo añadir créditos o códigos promocionales a su proyecto de Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -37,6 +37,7 @@ Abra `Crédito y códigos promocionales`{.action} en el menú de la izquierda en
 
 ### Añadir crédito
 
+<!-- CP-STEPS-START:add-credit -->
 Haga clic en el botón `Comprar crédito cloud`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -50,9 +51,11 @@ Se generará un recibo de pedido. Para consultar e iniciar el pago, haga clic en
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Una vez realizado el pago, su crédito aparecerá en la lista `Crédito y códigos promocionales`.
+<!-- CP-STEPS-END:add-credit -->
 
 ### Utilizar un código promocional
 
+<!-- CP-STEPS-START:redeem-voucher -->
 Haga clic en el botón `Activar un código promocional`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -62,10 +65,11 @@ Se abrirá una ventana en la que deberá introducir el código promocional y hac
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 El saldo del código promocional aparecerá en la lista `Crédito y códigos promocionales`.
+<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >
-> Los períodos de validez de los códigos promocionales suelen ser más limitados, por lo que el saldo del código promocional se utilizará antes que el crédito Public Cloud.
+> Los períodos de validez de los códigos promocionales suelen estar limitados a 1 mes; se recomienda utilizarlos lo antes posible. El saldo del código promocional se utilizará antes que el crédito Public Cloud.
 >
 
 ## Más información

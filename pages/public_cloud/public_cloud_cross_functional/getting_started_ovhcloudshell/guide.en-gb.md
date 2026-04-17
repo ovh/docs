@@ -37,13 +37,23 @@ Using OVHcloud Shell directly from the OVHcloud Manager provides key advantages 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### How to Access OVHcloud Shell
 
-Log in to the [OVHcloud Control Panel](/links/manager) and click on the OVHcloud `Shell button`{.action} to launch the terminal.
+Click on the OVHcloud `Shell button`{.action} to launch the terminal.
 
 ![Cloudshell button](images/OVHcloud_Shell.png){.thumbnail}
 

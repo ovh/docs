@@ -12,8 +12,18 @@ Panel klienta OVHcloud oferuje liczne opcje konfiguracji Twojej infrastruktury P
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) i przejście do sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}
 - Posiadanie usługi [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ścieżka nawigacji:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wybierz usługę vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## W praktyce
 

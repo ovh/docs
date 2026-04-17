@@ -13,17 +13,22 @@ Uma **conta partilhada** é uma caixa de e-mail partilhada entre várias contas 
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter contratado uma oferta [Exchange OVHcloud](/links/web/emails-hosted-exchange).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 
 ### Adicionar uma conta partilhada
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em causa.
 
 Selecione o separador `Contas partilhadas`{.action} no menu horizontal e clique em `Adicionar uma conta partilhada`{.action}.
 
@@ -82,10 +87,10 @@ No nosso exemplo, permitimos que as contas **guia-exchange@** e **test@** acedam
 
 ### Utilização da conta partilhada a partir do OWA (webmail)
 
-Ligue-se ao webmail Exchange (OWA) no endereço [Webmail](/links/web/email) com uma conta de e-mail com direito de acesso à conta partilhada.. 
+Ligue-se ao webmail Exchange (OWA) no endereço [Webmail](/links/web/email) com uma conta de e-mail com direito de acesso à conta partilhada.
 <br>No nosso exemplo, ligamo-nos à conta **guia-exchange@**.
 
-Depois de aceder, na coluna da esquerda, clique com o botão direito na arborescência principal do seu endereço de e-mail e depois em `Adicionar uma pasta partilhada`{.action}. 
+Depois de aceder, na coluna da esquerda, clique com o botão direito na arborescência principal do seu endereço de e-mail e depois em `Adicionar uma pasta partilhada`{.action}.
 
 ![emails](images/exchange-shared_accounts05.png){.thumbnail}
 
@@ -103,7 +108,7 @@ A partir do Outlook, a sua conta será partilhada na coluna da esquerda, da mesm
 
 ![emails](images/exchange-shared_accounts10.png){.thumbnail}
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

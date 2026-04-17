@@ -1,6 +1,6 @@
 ---
-title: 'Configurer et utiliser le Click2Call sur une ligne SIP'
-excerpt: 'Découvrez comment configurer et utiliser la fonctionnalité Click2Call avec une ligne SIP OVHcloud'
+title: "Configurer et utiliser le Click2Call sur une ligne SIP"
+excerpt: "Découvrez comment configurer et utiliser la fonctionnalité Click2Call avec une ligne SIP OVHcloud"
 updated: 2026-01-26
 ---
 
@@ -40,8 +40,9 @@ Ce guide explique comment créer et gérer un identifiant Click2Call et présent
 
 ### Créer et gérer un identifiant Click2Call
 
-Vous avez la possibilité de créer et de gérer vos identifiants Click2Call depuis votre [espace client OVHcloud](/links/manager) ou depuis les [API OVHcloud](/links/console).
+Vous pouvez créer et gérer vos identifiants Click2Call depuis votre espace client OVHcloud ou depuis les [API OVHcloud](/links/console).
 
+<!-- CP-STEPS-START:creer-gerer-identifiant-click2call -->
 > [!tabs]
 > Depuis l'espace client OVHcloud
 >>
@@ -144,6 +145,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 >>     - **serviceName** : ligne SIP concernée au format international.
 >> - Cliquez sur `EXECUTE`{.action}.
 >>
+<!-- CP-STEPS-END:creer-gerer-identifiant-click2call -->
 
 ### Utilisez la fonctionnalité Click2Call depuis les API OVHcloud <a name="utiliser-la-fonctionnalite-click2call"></a>
 

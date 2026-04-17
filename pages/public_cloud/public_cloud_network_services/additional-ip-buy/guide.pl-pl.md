@@ -28,16 +28,24 @@ Te adresy Additional IP można migrować tylko do instancji tego samego projektu
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > Ta funkcja nie jest aktualnie dostępna dla instancji Metal.
 >
 
-## W praktyce
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## W praktyce
 
 W menu po lewej stronie otwórz `Publiczne adresy IP`{.action} w **Sieć**.
 

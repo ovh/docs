@@ -42,6 +42,7 @@ Les utilisateurs locaux sont un des types d'identités pouvant être mis en plac
 
 #### Ajouter un utilisateur
 
+<!-- CP-STEPS-START:add-a-user -->
 Depuis la page [Identités IAM](/links/control-panel/iam-identities), cliquez sur `Ajouter un utilisateur`{.action}.
 
 Une fenêtre apparaît et vous devez y compléter les champs requis. Cliquez sur `Valider`{.action} pour créer l'utilisateur.
@@ -73,9 +74,11 @@ Exemple : **1234-567-89/johnsmith**.
 L'utilisateur créé pourra dès lors se connecter à [l'espace client OVHcloud](/links/manager) en utilisant cet identifiant.
 
 Il pourra également modifier son mot de passe et sécuriser son propre accès à votre compte en activant une mesure de double authentification (celle-ci concernera uniquement son accès en tant qu'utilisateur). Vous pouvez consulter à cet effet [le guide sur la mise en place de la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+<!-- CP-STEPS-END:add-a-user -->
 
 #### Gérer les utilisateurs
 
+<!-- CP-STEPS-START:manage-users -->
 Vous pouvez modifier, désactiver/activer ou supprimer un utilisateur en cliquant sur les `…`{.action} à droite de celui-ci.
 
 ![users-management](images/usersmanagement4.png){.thumbnail}
@@ -83,11 +86,13 @@ Vous pouvez modifier, désactiver/activer ou supprimer un utilisateur en cliquan
 La modification de l'utilisateur vous permettra de mettre à jour son adresse e-mail, ses privilèges ainsi que sa description.
 
 ![users-management](images/usersmanagement6.png){.thumbnail}
+<!-- CP-STEPS-END:manage-users -->
 
 ### Gestion des groupes
 
 #### Ajouter un groupe
 
+<!-- CP-STEPS-START:add-a-group -->
 Pour ajouter un groupe, rendez-vous dans l'onglet `Groupes d'utilisateurs`{.action}, puis cliquez sur le bouton `Déclarer un groupe`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
@@ -104,9 +109,11 @@ Les groupes attribuent un niveau de privilège par défaut aux utilisateurs qu'i
 | Lecture Seule | Donne un accès en lecture à l'espace client OVHcloud et à toutes ses sections. |
 | Administrateur restreint | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, à l'**exception de la gestion des** utilisateurs. |
 | Administrateur | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, **y compris** la gestion des utilisateurs. |
+<!-- CP-STEPS-END:add-a-group -->
 
 #### Gérer les groupes
 
+<!-- CP-STEPS-START:manage-groups -->
 Vous pouvez mettre à jour ou supprimer un groupe en cliquant sur le bouton `...`{.action} à droite du nom de groupe.
 
 ![users-management](images/usersmanagement9.png){.thumbnail}
@@ -114,6 +121,7 @@ Vous pouvez mettre à jour ou supprimer un groupe en cliquant sur le bouton `...
 Lorsque vous modifiez un groupe, vous pouvez modifier sa description et son rôle.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
+<!-- CP-STEPS-END:manage-groups -->
 
 ### Gestion des droits
 

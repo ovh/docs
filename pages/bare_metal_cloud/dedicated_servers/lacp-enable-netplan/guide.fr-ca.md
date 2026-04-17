@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04"
 excerpt: "Activez l'agrégation de liens dans votre serveur Debian 12 ou Ubuntu 24.04 (Netplan) pour augmenter la disponibilité de votre serveur et augmenter l'efficacité de vos connexions réseau"
-updated: 2026-01-09
+updated: 2026-04-14
 ---
 
 <style>
@@ -35,7 +35,16 @@ La technologie LACP (Link Aggregation Control Protocol) est conçue pour augment
 
 ## Prérequis
 
-- Ëtre connecté à l’[espace client OVHcloud](/links/manager)
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
@@ -45,16 +54,12 @@ La technologie LACP (Link Aggregation Control Protocol) est conçue pour augment
 
 ### Récupération des adresses MAC
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les **Serveurs dédiés**.
-
 Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses MAC de chaque interface (publique/privée) qui s'affichent en bas du menu.
 
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
 > Veuillez noter que l'adresse MAC de l'interface **publique principale** est celle qui reçoit les offres DHCP à la fois dans le système d'exploitation du serveur et en mode rescue. Cette interface gère la connectivité publique dans la configuration par défaut.
->
-> Quant à l'adresse MAC de l'interface **privée principale**, il s'agit de celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:d6`.
 >
 
 Maintenant que vous savez quelles adresses MAC sont associées à chaque type (public/privé) d'interface, vous devez récupérer les noms des interfaces.

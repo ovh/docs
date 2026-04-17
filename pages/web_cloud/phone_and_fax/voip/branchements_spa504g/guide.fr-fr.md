@@ -1,5 +1,6 @@
 ---
-title: 'Branchements SPA504G'
+title: "Branchements SPA504G"
+excerpt: "Apprenez comment raccorder votre téléphone Cisco SPA504G à l'alimentation, au combiné et à votre réseau Ethernet"
 flag: hidden
 updated: 2018-03-26
 ---
@@ -17,13 +18,18 @@ Niveau : Débutant
 **Le téléphone doit être raccordé :**
 
 -   Électriquement grâce à l'alimentation fournie.
--   Au combiné, fourni dans la boite.
+-   Au combiné, fourni dans la boîte.
 -   En Ethernet vers votre box/routeur.
 
 **Le téléphone peut être raccordé :**
 
 -   À un ordinateur pour lui donner accès au réseau qu'utilise le téléphone.
--   À son extension de touches pour accroître le nombre de boutons programmables. ![branchement-spa504g](images/Branchementspa504g.png){.thumbnail}
+-   À son extension de touches pour accroître le nombre de boutons programmables.
 
-Notez que raccorder un ordinateur sur le port PC est optionnel. Ceci permet d'économiser un port RJ45 sur votre équipement réseau. Ce port à une vitesse de 100 Mbps.
+![branchement-spa504g](images/Branchementspa504g.png){.thumbnail}
 
+Notez que raccorder un ordinateur sur le port PC est optionnel. Ceci permet d'économiser un port RJ45 sur votre équipement réseau. Ce port a une vitesse de 100 Mbps.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

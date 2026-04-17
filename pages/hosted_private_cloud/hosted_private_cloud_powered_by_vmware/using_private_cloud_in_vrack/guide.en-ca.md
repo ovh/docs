@@ -8,21 +8,30 @@ updated: 2022-03-28
 
 The OVHcloud vRack feature makes it possible to connect different cloud services with each other, within one or more secure private networks (VLANs).
 
-**This guide explains how to set this up with a Hosted Private Cloud infrastructure.**
+**This guide explains how to set the solution up with a Hosted Private Cloud infrastructure.**
 
 ## Requirements
 
-- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/) service in your account or order one if needed
+- A [vRack](/links/network/vrack) service in your account or order one if needed
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 ## Instructions
 
 ### OVHcloud Control Panel
 
-After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed in the `vRack`{.action} section in your [OVHcloud Control Panel](/links/manager).
-
-To access it, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action}, then on `vRack`{.action}. Select your vRack from the list and the "datacenter" will be automatically included into a vRack.
+After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed in the `vRack`{.action} section. Select your vRack from the list and the "datacenter" will be automatically included into a vRack.
 
 ![Data centre](images/vRackDatacenter.PNG){.thumbnail}
 

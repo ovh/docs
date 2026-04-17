@@ -23,7 +23,18 @@ Quando uma manutenção é programada no seu Hosted Private Cloud, ser-lhe-á en
 
 - Ter recebido um e-mail de notificação de manutenção indicando especificamente que pode "**alterar a data de execução da manutenção**". Caso contrário, a data da manutenção não pode ser alterada.
 - Ser o contacto administrador ou técnico da infraestrutura [VMware on OVHcloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager) ou à [interface de administração dos seus serviços através da API](/links/api).
+- Ter acesso à [Área de Cliente OVHcloud](/links/control-panel/privatecloud-vmware-vsphere) ou à [interface de administração dos seus serviços através da API](/links/api).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Caminho de navegação:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Selecione o seu serviço vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instruções
 

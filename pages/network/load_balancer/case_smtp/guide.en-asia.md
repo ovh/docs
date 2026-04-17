@@ -11,9 +11,18 @@ updated: 2025-10-24
 ## Requirements
 
 - An [OVHcloud Load balancer](/links/network/load-balancer) service in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A Postfix-type SMTP service installed and configured on your servers.
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 > [!warning]

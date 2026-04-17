@@ -32,7 +32,7 @@ Wszystkie konta SMS OVHcloud mogą używać jednej lub kilku list odbiorców. Z 
 
 ## W praktyce
 
-### Etap 1: utworzenie listy odbiorców
+### Etap 1: Utworzenie listy odbiorców
 
 #### Stwórz listę w arkuszu kalkulacyjnym
 
@@ -74,8 +74,9 @@ Otrzymany rezultat powinien wyglądać następująco:
 
 ![recipients](images/sms-recipientlist-1.png){.thumbnail}
 
-### Etap 2: zaimportować listę do Panelu klienta OVHcloud
+### Etap 2: Zaimportować listę do Panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:import-recipient-list -->
 Kliknij zakładkę `Kontakty`{.action} i `Utwórz listę kontaktów`{.action}.
 
 ![recipients](images/sms-recipientlist-3b.png){.thumbnail}
@@ -89,8 +90,9 @@ W tym celu kliknij pozycję `Działania`{.action}, a następnie wybierz poleceni
 Nazwij plik z listą odbiorców i zaimportuj plik lokalny do Panelu klienta.
 
 ![recipients](images/sms-recipientlist-6b.png){.thumbnail}
+<!-- CP-STEPS-END:import-recipient-list -->
 
-### Etap 3: wysyłka wiadomości SMS do listy odbiorców
+### Etap 3: Wysyłka wiadomości SMS do listy odbiorców
 
 Po zaimportowaniu Twojej listy możesz postępować zgodnie z instrukcjami zawartymi w przewodniku [Wysyłanie wiadomości SMS z Panelu klienta](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client), aby wysłać wiadomość SMS do odbiorców tej listy.
 

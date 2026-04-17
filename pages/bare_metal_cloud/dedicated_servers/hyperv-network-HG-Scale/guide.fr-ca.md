@@ -26,7 +26,7 @@ Il est également possible de mettre en place cette configuration sur chacun des
 
 * Disposer d'un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
 * Disposer d'une adresse [Additional IP](/links/network/additional-ip)
-* Être connecté à votre [espace client OVHcloud](/links/manager)
+
 
 > [!warning]
 >

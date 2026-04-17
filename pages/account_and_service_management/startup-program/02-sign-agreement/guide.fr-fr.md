@@ -12,8 +12,18 @@ Pour participer au Startup Program d'OVHcloud, la signature du contrat est une �
 
 ## Prérequis
 
-- Votre candidature au Startup Program doit avoir été validée. Retrouvez plus d'informations dans notre guide « [Comment optimiser votre candidature au Startup Program](/pages/account_and_service_management/startup-program/01-optimise-application) ».
+- Votre candidature au Startup Program doit avoir été validée. Retrouvez plus d’informations dans notre guide « [Comment optimiser votre candidature au Startup Program](/pages/account_and_service_management/startup-program/01-optimise-application) ».
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## En pratique
 
@@ -21,11 +31,8 @@ Pour participer au Startup Program d'OVHcloud, la signature du contrat est une �
 
 Vous devez accéder au contrat directement dans votre espace client.
 
-Assurez-vous de vous connecter avec le compte que vous avez utilisé pour l’inscription au Startup Program. Depuis la page d’accueil, cliquez sur votre nom en haut à droite puis cliquez sur `Mes offres & services`{.action}.
-
-![produits et services](images/01-products-services.png){.thumbnail}
-
-Sélectionnez l’onglet `Contrats`{.action}.
+<!-- CP-STEPS-START:sign-contract -->
+Assurez-vous de vous connecter avec le compte que vous avez utilisé pour l’inscription au Startup Program. Dans [Mes offres et services](/links/control-panel/billing-services), sélectionnez l’onglet `Contrats`{.action}.
 
 ![mes services - contrats](images/02-services-contracts.png){.thumbnail}
 
@@ -39,3 +46,4 @@ Cliquez à nouveau sur le bouton `...`{.action} et sélectionnez `Accepter` pour
 Après la signature, vos crédits seront crédités sur votre compte sous 48 heures ouvrées et vous pourrez profiter pleinement des avantages du programme.
 
 Votre contrat signé restera disponible dans l’onglet `Contrats`{.action} de votre espace client pour être consulté à tout moment.
+<!-- CP-STEPS-END:sign-contract -->

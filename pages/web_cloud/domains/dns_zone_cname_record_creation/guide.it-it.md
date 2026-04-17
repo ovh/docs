@@ -1,7 +1,7 @@
 ---
 title: "Come aggiungere un record DNS di tipo CNAME per un sottodominio"
 excerpt: "Questa guida ti mostra come aggiungere un record DNS di tipo CNAME in una zona DNS gestita in OVHcloud per il sottodominio di un nome di dominio"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -40,7 +40,7 @@ I record CNAME sono utili per evitare di modificare gli indirizzi IP dei sottodo
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
 
 ---
@@ -56,11 +56,30 @@ I record CNAME sono utili per evitare di modificare gli indirizzi IP dei sottodo
 
 ### Aggiungere un record DNS di tipo CNAME per il sottodominio di un nome di dominio
 
-1. Fare clic sul menu `Zone DNS`{.action} e seleziona il nome di dominio interessato.
-2. Fare clic sul pulsante `Aggiungi un record`{.action}.
-3. Nella finestra che si apre, seleziona il campo di puntamento di tipo `CNAME`{.action}.
-4. Inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, il nome di dominio o sottodominio (ad esempio: `domain.tld`) a cui vuoi associare il nome utilizzando il record di tipo CNAME. Infine clicca su `Continua`{.action}.
-5. Verifica il riepilogo e fare clic su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
+Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul pulsante `Aggiungi un record`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella finestra che si apre, seleziona il campo di puntamento di tipo `CNAME`{.action}.
+>>
+> **Step 4**
+>>
+>> Inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, il nome di dominio o sottodominio (ad esempio: `domain.tld`) a cui vuoi puntare con il record di tipo CNAME. Clicca su `Continua`{.action}.
+>>
+> **Step 5**
+>>
+>> Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
 
 /// details | Consulta le nostre guide dettagliate:
 

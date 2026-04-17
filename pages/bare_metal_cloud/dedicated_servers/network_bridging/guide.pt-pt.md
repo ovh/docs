@@ -36,7 +36,17 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 
 - Dispor de um servidor dedicado com um hipervisor instalado (Citrix Xen Server, Proxmox, por exemplo).
 - Beneficiar de, pelo menos, um endereço [Additional IP](/links/network/additional-ip) ligado ao servidor.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)  ou à [API OVHcloud](/pages/manage_and_operate/api/first-steps).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public IP](/links/control-panel/network-public-ip)
+- **Caminho de navegação:** `Network`{.action} > `Endereços IP Públicos`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -65,8 +75,6 @@ Para este exemplo, utilizaremos os seguintes valores nos nossos exemplos de cód
 
 > [!warning]
 > No caso de um bloco de IP, os endereços MAC virtuais são criados em cada IP individual no bloco.
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
 Pode utilizar o menu suspenso em **Os meus endereços IP públicos e serviços associados** e selecionar **Todos os Additional IP** para filtrar os seus serviços, ou digitar diretamente o endereço IP desejado na barra de pesquisa.
 

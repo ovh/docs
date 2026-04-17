@@ -44,15 +44,23 @@ L'option **Système de secours client Windows** (`rescue-customer-windows`) n'es
 
 - Microsoft Windows installé sur votre [serveur dédié](/links/bare-metal/bare-metal)
 - Au moins 16 Go de RAM installés sur le serveur
-- Accès à l’[espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
 ### Activation du mode rescue pour Windows
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez la section `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}.
-
-Cliquez sur le nom de votre serveur pour ouvrir l'onglet `Informations générales`{.action}.
+Cliquez sur le nom de votre serveur pour ouvrir l’onglet `Informations générales`{.action}.
 
 <a name="netboot"></a>
 

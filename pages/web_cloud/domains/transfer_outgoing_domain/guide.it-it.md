@@ -1,7 +1,7 @@
 ---
 title: "Trasferire un nome di dominio verso un altro Registrar"
 excerpt: "Questa guida ti mostra come effettuare il trasferimento di un nome di dominio OVHcloud verso un altro provider"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 ## Obiettivo
@@ -24,7 +24,7 @@ Per impedire trasferimenti di nomi di dominio non autorizzati, i nomi di dominio
 ## Prerequisiti
 
 - Disporre di un [nome di dominio](/links/web/domains) registrato in OVHcloud
-- Avere l’autorizzazione per richiedere il trasferimento di un nome di dominio: l'intestatario e/o gli amministratori devono essere informati della richiesta di trasferimento
+- Avere l'autorizzazione per richiedere il trasferimento di un nome di dominio: l'intestatario e/o gli amministratori devono essere informati della richiesta di trasferimento
 - La registrazione del nome di dominio in questione risale ad almeno 60 giorni fa **e** non è stata trasferita o scambiata (ovvero la modifica dell'intestatario) negli ultimi 60 giorni
 
 <!-- CP-NAV-START:web-domains -->
@@ -37,7 +37,6 @@ Per impedire trasferimenti di nomi di dominio non autorizzati, i nomi di dominio
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
 
 > [!primary]
 >
@@ -62,58 +61,83 @@ Per impedire trasferimenti di nomi di dominio non autorizzati, i nomi di dominio
 > In base al nuovo Registrar che scegli, il trasferimento di un nome di dominio può essere un'operazione a pagamento. Prima di continuare, è possibile informarsi su questo punto.
 >
 
-### Step 1: togliere la protezione contro il trasferimento del nome di dominio
+### 1 - Rimuovere la protezione contro il trasferimento del nome di dominio
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca sui `Domini`{.action} e seleziona il nome di dominio interessato.
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** step.
 
-Nella scheda `Informazioni generali`{.action}, visualizzi il cursore `Richiedi Auth info` sotto **Configurazione**. Di default, questa protezione è `Attiva`{.action}.
-
-> [!warning]
->
-> Se il pulsante `Protezione contro il trasferimento` non è presente, significa che la tua estensione di nome di dominio non necessita di un codice di trasferimento. A questo punto puoi avviare direttamente il trasferimento.
-
-![protezione attivata](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
-
-Clicca sul cursore e conferma nella nuova finestra che vuoi eliminare questa protezione. Attendi qualche minuto prima che lo stato passi alla `Disattivazione`{.action}.
-
-> [!primary]
->
-> Se visualizzi il messaggio "**Si è verificato un errore durante la richiesta di disattivazione della protezione del nome di dominio (User not granted for this request)**", significa che non hai i diritti sufficienti per sbloccare il nome di dominio. 
->
-> Inoltre, se visualizzi il messaggio: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", significa che il codice di trasferimento del tuo nome di dominio non può essere recuperato dal tuo [Spazio Cliente OVHcloud](/links/manager).  
-> 
-> In entrambi i casi, verifica di essere il contatto **amministratore** del nome di dominio utilizzando la nostra guida sulla [gestione dei contatti](/pages/account_and_service_management/account_information/managing_contacts) e verifica che l'estensione del tuo nome di dominio permetta lo sblocco dallo [Spazio Cliente OVHcloud](/links/manager).
-> 
-> Infatti, alcuni *codici di trasferimento* sono direttamente gestiti dal *Registro* dell'estensione del tuo nome di dominio. Un *Registro* è un'organizzazione che gestisce l'insieme dei nomi di dominio per una determinata estensione. Ad esempio, l'**AFNIC** gestisce l'insieme dei nomi di dominio con l'estensione "*.fr*". In questo caso, contatta direttamente il *Registro* che gestisce l'estensione del tuo nome di dominio per recuperare il *codice di trasferimento*.
->
-
-![disattivazione protezione](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Nella scheda `Informazioni generali`{.action}, visualizza il cursore `Protezione contro il trasferimento` sotto **Sicurezza**, impostato su `Attiva`{.action} di default.
+>>
+>> > [!warning]
+>> >
+>> > Se il pulsante `Protezione contro il trasferimento` non è presente, significa che la tua estensione di nome di dominio non necessita di un codice di trasferimento. A questo punto puoi avviare direttamente il trasferimento.
+>>
+>> ![protezione attivata](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Clicca sul cursore e conferma nella nuova finestra che vuoi eliminare questa protezione. Attendi qualche minuto prima che lo stato passi alla `Disattivazione`{.action}.
+>>
+>> > [!primary]
+>> >
+>> > Se visualizzi il messaggio "**Si è verificato un errore durante la richiesta di disattivazione della protezione del nome di dominio (User not granted for this request)**", significa che non hai i diritti sufficienti per sbloccare il nome di dominio.
+>> >
+>> > Inoltre, se visualizzi il messaggio: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", significa che il codice di trasferimento del tuo nome di dominio non può essere recuperato dal tuo [Spazio Cliente OVHcloud](/links/manager).
+>> >
+>> > In entrambi i casi, verifica di essere il contatto **amministratore** del nome di dominio utilizzando la nostra guida sulla [gestione dei contatti](/pages/account_and_service_management/account_information/managing_contacts) e verifica che l'estensione del tuo nome di dominio permetta lo sblocco dallo [Spazio Cliente OVHcloud](/links/manager).
+>> >
+>> > Infatti, alcuni *codici di trasferimento* sono direttamente gestiti dal *Registro* dell'estensione del tuo nome di dominio. Un *Registro* è un'organizzazione che gestisce l'insieme dei nomi di dominio per una determinata estensione. Ad esempio, l'**AFNIC** gestisce l'insieme dei nomi di dominio con l'estensione "*.fr*". In questo caso, contatta direttamente il *Registro* che gestisce l'estensione del tuo nome di dominio per recuperare il *codice di trasferimento*.
+>>
+>> ![disattivazione protezione](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
 > Una volta disattivata la protezione, il nome di dominio resta sbloccato per sette giorni. Dopo questo periodo, la protezione verrà riattivata automaticamente. Se nel frattempo non richiedi il trasferimento di un nome di dominio al tuo nuovo Registrar, sarà necessario rimuovere nuovamente la protezione del nome di dominio.
 >
 
-### Step 2: recuperare il codice di trasferimento
+### 2 - Recuperare il codice di trasferimento
 
 > [!warning]
 >
 > Tieni presente che è sempre possibile sbloccare e recuperare il codice di trasferimento del tuo nome di dominio dopo la scadenza. Secondo le regole del registro, un nome di dominio in [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) potrebbe richiedere il ripristino per essere trasferito. Contatta il tuo nuovo registrar per i dettagli del trasferimento.
 >
 
-Una volta disattivata la protezione contro il trasferimento, puoi recuperare il codice di trasferimento del tuo nome di dominio. Per fare ciò, vai alla scheda `Informazioni generali`{.action} e clicca su `AUTH/INFO`{.action} accanto alla voce `Richiedi Auth info`{.action}. Se necessario, aggiorna la pagina.
+Una volta disattivata la protezione contro il trasferimento, puoi recuperare il codice di trasferimento del tuo nome di dominio.
 
-A questo punto compare una finestra con il tuo codice AUTH/INFO (anche chiamato codice di trasferimento, password del nome di dominio, AUTH-CODE o EPP-Code).
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** step.
 
-![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Nella scheda `Informazioni generali`{.action}, clicca su `AUTH/INFO`{.action} accanto alla voce `Protezione contro il trasferimento`{.action}. Se necessario, aggiorna la pagina.
+>>
+>> ![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> A questo punto compare una finestra con il tuo codice AUTH/INFO (anche chiamato codice di trasferimento, password del nome di dominio, AUTH-CODE o EPP-Code).
+>>
+>> Il codice verrà richiesto dal tuo nuovo Registrar per completare il processo di trasferimento. Puoi verificare i dettagli presso il tuo nuovo Registrar.
+>>
+>> Piuttosto che digitare manualmente il codice, ti consigliamo di copiarlo/incollarlo perché alcuni caratteri possono essere facilmente confondibili.
 
-Il codice verrà richiesto dal tuo nuovo Registrar per completare il processo di trasferimento. Puoi verificare i dettagli presso il tuo nuovo Registrar.
+Una volta recuperato il codice di trasferimento, **non bloccare nuovamente il tuo nome di dominio a meno che non desideri più trasferirlo**.
 
-Piuttosto che digitare manualmente il codice, ti consigliamo di copiarlo/incollarlo perché alcuni caratteri possono essere facilmente confondibili.
-
-Una volta recuperato il codice di trasferimento, **non bloccate più il vostro nome di dominio a meno che non vogliate trasferirlo**.
-
-### Step 3: avvia il trasferimento verso il nuovo Registrar
+### 3 - Avviare il trasferimento verso il nuovo Registrar
 
 Una volta terminati gli step precedenti, avvia il processo di trasferimento, generalmente ordinando il nuovo Registrar. Il trasferimento può richiedere fino a 10 giorni.
 
@@ -121,7 +145,7 @@ Per maggiori informazioni, contatta il nuovo Registrar che hai scelto.
 
 > [!warning]
 >
-> Se il tuo nuovo Registrar richiede un nuovo codice di trasferimento, riattiva la `Protezione contro il trasferimento` per il tuo nome di dominio e disattivala nuovamente pochi minuti dopo. In questo modo è possibile recuperare un nuovo codice di trasferimento.
+> Se il tuo nuovo Registrar richiede un nuovo codice di trasferimento, riattiva la **Protezione contro il trasferimento** per il tuo nome di dominio e disattivala nuovamente pochi minuti dopo. In questo modo è possibile recuperare un nuovo codice di trasferimento.
 >
 
 ## Per saperne di più
@@ -130,6 +154,6 @@ Per maggiori informazioni, contatta il nuovo Registrar che hai scelto.
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

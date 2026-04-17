@@ -1,7 +1,7 @@
 ---
 title: 'Aggiungi credito Cloud al tuo progetto'
 excerpt: 'Come aggiungere credito o voucher al tuo progetto Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-31
 ---
 
 ## Obiettivo
@@ -37,6 +37,7 @@ Apri `Crediti e voucher`{.action} nel menu a sinistra sotto **Impostazioni**.
 
 ### Aggiungi credito
 
+<!-- CP-STEPS-START:add-credit -->
 Clicca sul pulsante `Acquista credito Cloud`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -50,9 +51,11 @@ A questo punto sarà generato un buono d’ordine. Clicca sul link nell'ambito d
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Una volta effettuato il pagamento, il tuo credito comparirà nella lista `Crediti e voucher`.
+<!-- CP-STEPS-END:add-credit -->
 
 ### Utilizza un voucher
 
+<!-- CP-STEPS-START:redeem-voucher -->
 Clicca sul pulsante `Attiva un voucher`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -62,10 +65,11 @@ Nella nuova finestra, inserisci il codice del voucher e clicca su `Conferma`{.ac
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 Il saldo del voucher comparirà nella lista `Crediti e voucher`.
+<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >
-> Poiché i periodi di validità dei voucher sono generalmente più limitati, prima del credito Public Cloud verrà utilizzato il saldo del voucher.
+> I periodi di validità dei voucher sono generalmente limitati a 1 mese; si consiglia di utilizzarli il prima possibile. Il saldo del voucher verrà utilizzato prima del credito Public Cloud.
 >
 
 ## Per saperne di più

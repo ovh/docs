@@ -24,8 +24,8 @@ L'espace client OVHcloud vous permet aussi de gérer vos données personnelles e
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Profil utilisateur](/links/control-panel/account-profile)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action}
+- **Lien direct :** [Mon profil](/links/control-panel/account-profile)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action} > `Éditer mon profil`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -65,9 +65,11 @@ Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gesti
 En cas de difficulté d'accès à votre adresse e-mail principale, une adresse e-mail de secours permet de conserver l'accès à votre compte et donc à la gestion de vos services.
 <br>Cette seconde adresse **doit être différente** de la première, notamment pour faciliter vos démarches en cas de récupération de mot de passe.
 
-Pour renseigner cette adresse e-mail de secours, rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile) et cliquez sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
+<!-- CP-STEPS-START:backup-email-field -->
+Pour renseigner cette adresse e-mail de secours, rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile).
 
 Faites défiler l'écran jusqu'à la rubrique `Vos informations de contact` pour trouver le champ `E-mail de secours`, en-dessous du champ dédié à l'adresse e-mail principale.
+<!-- CP-STEPS-END:backup-email-field -->
 
 > [!warning]
 > Pour rappel, il est **primordial** que l'adresse e-mail de secours soit **différente** de l'adresse e-mail principale du compte.
@@ -88,9 +90,11 @@ Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser s
 
 #### Modifier mes informations personnelles
 
-Vous pouvez modifier les informations de votre compte. Rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile) et cliquez sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
+Vous pouvez modifier les informations de votre compte. Rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile).
 
-Modifiez vos informations, puis cliquez sur le bouton `Valider`{.action} .
+<!-- CP-STEPS-START:save-profile-changes -->
+Modifiez vos informations, puis cliquez sur le bouton `Enregistrer les modifications`{.action}.
+<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
@@ -99,6 +103,7 @@ Modifiez vos informations, puis cliquez sur le bouton `Valider`{.action} .
 
 #### Modifier l'adresse e-mail principale
 
+<!-- CP-STEPS-START:changing-primary-email -->
 Si vous désirez renseigner une nouvelle adresse e-mail principale de contact, vous devrez valider celle-ci à l'aide d'un code envoyé à votre adresse de contact principale actuelle. Une fois ce code reçu, cliquez sur le bouton `J'ai reçu mon code de validation`{.action}.
 
 ![identifiant client](images/nichandle07.png){.thumbnail}
@@ -106,6 +111,7 @@ Si vous désirez renseigner une nouvelle adresse e-mail principale de contact, v
 Renseignez alors le code dans le champ intitulé `Code de validation`, puis validez.
 
 ![identifiant client](images/nichandle08.png){.thumbnail}
+<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -113,11 +119,13 @@ Renseignez alors le code dans le champ intitulé `Code de validation`, puis vali
 
 #### Modifier le type de compte
 
+<!-- CP-STEPS-START:changing-account-type -->
 Cliquez sur la mention `type de compte` lorsque vous éditez votre profil. Un menu déroulant vous permet de définir le type de compte correspondant à votre situation.
 
 ![identifiant client](images/nichandle09.png){.thumbnail}
 
 Une fois vos informations complétées, cliquez sur le bouton `Valider`{.action}.
+<!-- CP-STEPS-END:changing-account-type -->
 
 #### Exercer mes droits sur mes données personnelles
 

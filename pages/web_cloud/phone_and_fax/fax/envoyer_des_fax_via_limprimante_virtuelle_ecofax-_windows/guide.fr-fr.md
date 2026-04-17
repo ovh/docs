@@ -1,12 +1,12 @@
 ---
-title: Envoyer des Fax via l’imprimante virtuelle EcoFax - Windows
-excerpt: Comment envoyer des Fax depuis Ecofax en utilisant l'imprimante virtuelle - Version Windows
+title: "Envoyer des Fax via l’imprimante virtuelle EcoFax - Windows"
+excerpt: "Découvrez comment envoyer des Fax depuis Ecofax en utilisant l’imprimante virtuelle - Version Windows"
 updated: 2022-06-24
 ---
 
 > [!alert]
 > Le logiciel EcoFax n'est pas compatible avec les versions 64 bits de Windows.<br>
-> Nous vous conseillons de priviléger la méthode d'envoi de fax par e-mail. Consultez [ce guide](/pages/web_cloud/phone_and_fax/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail) pour plus d'informations.
+> Nous vous conseillons de privilégier la méthode d'envoi de fax par e-mail. Consultez le guide « [Envoyer des fax par e-mail](/pages/web_cloud/phone_and_fax/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail) » pour plus d'informations.
 
 ## Objectif
 
@@ -25,7 +25,7 @@ Ouvrez le fichier à faxer :
 
 ![EcoFax](images/img_2496.jpg){.thumbnail}
 
-Faites `Fichier`{.action} puis `Imprimer`{.action} ou bien le raccourci clavier `Touche CMD` + `Touche P` afin d'ouvrir le gestionnaire d'impression dans votre logiciel.
+Faites `Fichier`{.action} puis `Imprimer`{.action} ou bien le raccourci clavier `Touche Ctrl` + `Touche P` afin d'ouvrir le gestionnaire d'impression dans votre logiciel.
 
 ![EcoFax](images/img_2495.jpg){.thumbnail}
 
@@ -33,7 +33,7 @@ Choisissez dans la liste des imprimantes `Fax Manager`{.action}.
 
 ![EcoFax](images/img_2494.jpg){.thumbnail}
 
-Ecofax s'ouvre et vous demande d'entrer le numéro du destinataire :
+EcoFax s'ouvre et vous demande d'entrer le numéro du destinataire :
 
 ![EcoFax](images/img_2493.jpg){.thumbnail}
 

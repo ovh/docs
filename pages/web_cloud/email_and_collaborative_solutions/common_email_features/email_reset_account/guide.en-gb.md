@@ -21,8 +21,42 @@ You want to:
     - [**Exchange**](/links/web/emails-exchange).
     - [**Email Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Access to the [OVHcloud Control Panel](/links/manager) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
+- Be the Admin contact of the email service concerned
 - Access details for the email accounts concerned
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Zimbra:**
+
+- **Direct link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigation path:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 <a name="whichmxplan"></a>
 
@@ -52,10 +86,6 @@ Select the tab corresponding to your email solution:
 >>
 >> To identify the email technology associated with your MX Plan service, please refer to the "[Identifying the email technology of your MX Plan solution](#whichmxplan)" section of this guide.
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `MX Plan`{.action}.
->> 1. Select the domain concerned.
 >> 1. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts.
 >> 1. Click the `...`{.action} button to the right of the account you want to modify, then click `Disable account`{.action}.
 >>
@@ -65,10 +95,6 @@ Select the tab corresponding to your email solution:
 >>
 >> To identify the email technology associated with your MX Plan service, please refer to the "[Identifying the email technology of your MX Plan solution](#whichmxplan)" section of this guide.
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `MX Plan`{.action}.
->> 1. Select the domain concerned.
 >> 1. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts.
 >> 1. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset this account`{.action}.
 >>
@@ -76,10 +102,6 @@ Select the tab corresponding to your email solution:
 >>
 > **Email Pro**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `Email Pro`{.action}.
->> 1. Select the service concerned.
 >> 1. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts.
 >> 1. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset this account`{.action}.
 >>
@@ -89,10 +111,6 @@ Select the tab corresponding to your email solution:
 >>
 > **Exchange**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
->> 1. Select the service concerned.
 >> 1. Go to the `Email accounts`{.action} tab.
 >> 1. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset`{.action}.
 >>
@@ -102,9 +120,6 @@ Select the tab corresponding to your email solution:
 >>
 > **Zimbra STARTER/PRO**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `Zimbra Mail`{.action}.
 >> 1. Go to the `Email account`{.action} tab. The window that appears will display the existing email accounts.
 >> 1. Click the `⋮`{.action} button to the right of the account you want to modify, then click `Delete`{.action}.
 >>

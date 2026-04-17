@@ -1,7 +1,7 @@
 ---
 title: "Como adicionar um registo DNS de tipo CNAME para um subdomínio"
 excerpt: "Saiba como adicionar um registo DNS do tipo CNAME numa zona DNS gerida na OVHcloud para o subdomínio de um nome de domínio"
-updated: 2026-02-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -40,7 +40,7 @@ Os registos CNAME são úteis para evitar a necessidade de alterar os endereços
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
 
 ---
@@ -50,17 +50,36 @@ Os registos CNAME são úteis para evitar a necessidade de alterar os endereços
 > [!warning]
 >
 > **A adição, modificação ou eliminação de registos DNS numa zona DNS ativa é uma operação sensível.**
-> Em caso de dúvida, contacte um [fornecedor especializado](/links/partner).**
+> Em caso de dúvida, contacte um [fornecedor especializado](/links/partner).
 
 ## Instruções
 
 ### Adicionar um registo DNS do tipo CNAME para o subdomínio de um nome de domínio
 
-1. Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
-2. Na página que se abrir, clique no botão `Adicionar uma entrada`{.action}.
-3. Na janela que aparecer, selecione o campo de apontamento do tipo `CNAME`{.action}.
-4. De seguida, introduza no campo `Subdomínio` o subdomínio em causa (por exemplo: `www` para o subdomínio `www.domain.tld`) e, no campo `Alvo *`, o nome de domínio ou subdomínio (por exemplo: `domain.tld`) que pretende visar através do registo do tipo CNAME. Por fim, clique em `Seguinte`{.action}.
-5. Verifique o resumo e, em seguida, clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
+Clique nos separadores abaixo para ver cada um dos **5** passos.
+
+> [!tabs]
+> **Passo 1**
+>>
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o domínio correspondente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Passo 2**
+>>
+>> Clique no botão `Adicionar uma entrada`{.action}.
+>>
+> **Passo 3**
+>>
+>> Na janela que aparecer, selecione o campo de apontamento do tipo `CNAME`{.action}.
+>>
+> **Passo 4**
+>>
+>> Introduza no campo `Subdomínio` o subdomínio correspondente (por exemplo: `www` para o subdomínio `www.domain.tld`) e, no campo `Alvo *`, o nome de domínio ou subdomínio (por exemplo: `domain.tld`) que pretende visar através do registo do tipo CNAME. Clique em `Seguinte`{.action}.
+>>
+> **Passo 5**
+>>
+>> Verifique o resumo e clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
 
 /// details | Consulte os nossos guias detalhados:
 

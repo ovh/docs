@@ -1,4 +1,4 @@
----
+﻿---
 title: Filesystem distribuito CephFS (EN)
 excerpt: 'Learn how to create, manage, and mount a CephFS file system on OVHcloud using the API'
 updated: 2025-09-18
@@ -11,7 +11,17 @@ This guide provides detailed instructions on how to create, manage, and mount a 
 ## Requirements
 
 - A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
 
 ### What is CephFS?
 

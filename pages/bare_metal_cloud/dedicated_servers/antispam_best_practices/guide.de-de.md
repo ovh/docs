@@ -12,6 +12,17 @@ Wenn eine IP-Adresse bei Organisationen wie Spamhaus, SpamCop etc., die gegen SP
 
 OVHcloud muss sich daher beständig um den Ruf, die Qualität und die Sicherheit des Netzwerks kümmern, das auch einen wichtigen Teil Ihrer Dienstleistungen ausmacht.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
+
 ### Wie funktioniert das Schutzsystem?
 
 Unser System basiert auf der Antispam-Technik von Vade Secure.
@@ -61,8 +72,6 @@ Wenn das Problem gelöst ist, können Sie Ihre IP-Adresse entsperren, indem Sie 
 ### Ihre IP-Adresse entsperren
 
 #### Ihre IP-Adresse über das Kundencenter entsperren
-
-Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein, öffnen Sie das Menü `Network`{.action} in der linken Seitenleiste und klicken Sie auf `Öffentliche IP-Adressen`{.action}.
 
 Sie können das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** verwenden, um Ihre Dienste nach Kategorie zu filtern, oder direkt die gewünschte IP-Adresse in die Suchleiste eingeben.
 

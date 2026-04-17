@@ -23,6 +23,17 @@ We will walk you through each method to help you efficiently scale and manage yo
 - You have an OVHcloud Managed Kubernetes cluster.
 - If you plan to manage node pools using the `NodePools` CRD, make sure you have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed. You can find [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/) on the official Kubernetes website.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### On nodes and node pools
 
 > [!tabs]
@@ -68,7 +79,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](/links/manager). In the table, select a cluster by clicking on the cluster name.
+>> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu. In the table, select a cluster by clicking on the cluster name.
 >>
 >> ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 >>
@@ -318,7 +329,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster.
+>> Click on `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster.
 >>
 >> ![cluster information via the OVHcloud Control Panel](images/cluster_informations_manager.png)
 >>
@@ -373,7 +384,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster and `Node pools`{.action}.
+>> Click on `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster and open the `Node pools`{.action} tab.
 >>
 >> ![List nodes pools via manager](images/list_node_pools_manager.png){.thumbnail}
 >>
@@ -438,7 +449,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster and `Node pools`{.action}.
+>> Click on `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster and open the `Node pools`{.action} tab.
 >>
 >> ![List nodes pools](images/list_node_pools_manager.png){.thumbnail}
 >>

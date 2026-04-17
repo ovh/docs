@@ -83,6 +83,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 #### Depuis votre espace client OVHcloud
 
+<!-- CP-STEPS-START:change-password-cp -->
 - Sur la page [Sécurité du compte](/links/control-panel/account-security), cliquez sur le bouton `Modifier`{.action} situé à droite de la mention **Mot de passe**.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
@@ -97,10 +98,13 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 - Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
 
+<!-- CP-STEPS-END:change-password-cp -->
+
 <a name="lost-password"></a>
 
 #### Si vous ne connaissez plus votre mot de passe actuel
 
+<!-- CP-STEPS-START:change-password-forgotten -->
 - Cliquez sur `Identifiant ou mot de passe oublié ?`{.action} lorsque vous accédez à la fenêtre d'identification de votre espace-client OVHcloud.
 
 ![manage-ovh-password](images/account-password-modif-forgotten-step1.png){.thumbnail}
@@ -123,6 +127,8 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 >
 > La prise en compte du changement du mot de passe entraîne automatiquement la fermeture de toutes les sessions actives sur votre compte OVHcloud.
 >
+
+<!-- CP-STEPS-END:change-password-forgotten -->
 
 ## Aller plus loin
 

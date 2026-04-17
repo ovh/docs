@@ -81,7 +81,7 @@ Wówczas będzie ona mieć własną strefę do konfigurowania rekordów DNS.
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
 
 ---
@@ -96,9 +96,9 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-dns-zone), a następnie w przycisk `Zamów`{.action}.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), a następnie w przycisk `Zamów`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -129,7 +129,7 @@ Aby edytować tę strefę DNS, zapoznaj się z naszym przewodnikiem "[Edycja str
 
 > [!primary]
 >
-> Jeśli właśnie utworzyłeś strefę DNS i nazwa subdomena nie wyświetla się jeszcze na liście Twoich usług (w części `Web Cloud`{.action} w Panelu klienta OVHcloud, a następnie w sekcji `Strefy DNS`{.action}), odczekaj 15-20 minut, a następnie przeładuj stronę.
+> Jeśli właśnie utworzyłeś strefę DNS i nazwa subdomena nie wyświetla się jeszcze na liście Twoich usług, odczekaj 15-20 minut, a następnie przeładuj stronę.
 
 ### 3 - Zadeklarowanie serwerów DNS w aktywnej strefie DNS nazwy domeny, od której zależy wybrana subdomena
 
@@ -142,7 +142,7 @@ Aby je odnaleźć, w tym celu kliknij poniższe zakładki, aby wyświetlić kole
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-dns-zone), a następnie wybierz odpowiednią poddomenę.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią poddomenę.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -170,7 +170,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-dns-zone), a następnie wybierz odpowiednią poddomenę.
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią poddomenę.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

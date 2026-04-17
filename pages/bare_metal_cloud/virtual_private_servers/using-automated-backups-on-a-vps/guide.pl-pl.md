@@ -99,11 +99,11 @@ Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Zautomatyzowany backu
 
 Kliknij `...`{.action} nad tabelą, a następnie `Edytuj`{.action}.
 
-![autobusami](images/backup_vps_time01.png){.thumbnail}
+![autobackupvps](images/backup_vps_time01.png){.thumbnail}
 
 W oknie, które się wyświetla zmień czas dnia (standard czasu UTC 24 godziny). Kliknij na `Zatwierdź`{.action}.
 
-![autobusami](images/backup_vps_time02.png){.thumbnail}
+![autobackupvps](images/backup_vps_time02.png){.thumbnail}
 
 > [!primary]
 >
@@ -230,13 +230,13 @@ Funkcja zautomatyzowany backup zapasowych opiera się na snapshotach VPS. Zaleca
 
 Migawki to kopie systemu tworzone w ściśle określonym momencie (“live snapshots”). Aby zapewnić dostępność systemu podczas tworzenia migawki, wykorzystywany jest agent QEMU, który pozwala przygotować system plików do tego procesu.
 
-Agent "**qemu-guest-agent**" nie è installato di default sulla maggior parte delle distribuzioni. Ponadto, wymogi licencyjne mogą uniemożliwić OVHcloud włączenie go do dostępnych obrazów systemu operacyjnego. Dlatego zalecamy zainstalowanie agenta, jeśli nie jest on aktywowany na Twoim prywatnym serwerze wirtualnym. W tym celu połącz się z VPS przez SSH i postępuj zgodnie z poleceniami dotyczącymi Twojego systemu operacyjnego.
+Agent "**qemu-guest-agent**" nie jest zainstalowany domyślnie w większości dystrybucji. Ponadto, wymogi licencyjne mogą uniemożliwić OVHcloud włączenie go do dostępnych obrazów systemu operacyjnego. Dlatego zalecamy zainstalowanie agenta, jeśli nie jest on aktywowany na Twoim prywatnym serwerze wirtualnym. W tym celu połącz się z VPS przez SSH i postępuj zgodnie z poleceniami dotyczącymi Twojego systemu operacyjnego.
 
 <a name="deb"></a>
 
 ##### **Dystrybucje Debian (Debian, Ubuntu)**
 
-Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
+Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenia migawek:
 
 ```bash
 file /dev/virtio-ports/org.qemu.guest_agent.0
@@ -271,7 +271,7 @@ sudo service qemu-guest-agent start
 
 ##### **Dystrybucje Redhat (CentOS, Fedora)**
 
-Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
+Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenia migawek:
 
 ```bash
 file /dev/virtio-ports/org.qemu.guest_agent.0
@@ -309,7 +309,7 @@ sudo service qemu-guest-agent status
 
 Możesz zainstalować agenta za pomocą pliku MSI dostępnego na stronie projektu Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Sprawdź, czy usługa działa za pomocą poniższej komendy powershell:
+Sprawdź, czy usługa działa za pomocą poniższej komendy PowerShell:
 
 ```console
 PS C:\Users\Administrator> Get-Service QEMU-GA
