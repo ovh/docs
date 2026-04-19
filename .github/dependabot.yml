@@ -4,3 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "thursday"
+    labels:
+      - "dependencies"
+      - "github_actions"
