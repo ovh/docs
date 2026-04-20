@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation sur Debian 9 à 11"
 excerpt: "Activer l'agrégation de liens OVHcloud Link Aggregation sur votre serveur Debian (de Debian 9 à Debian 11, avec ifupdown) pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau"
-updated: 2026-04-17
+updated: 2026-04-20
 ---
 
 <style>
@@ -46,6 +46,12 @@ L'agrégation repose sur la technologie IEEE 802.3ad, Link Aggregation Control P
 ---
 <!-- CP-NAV-END:baremetal-dedicated-servers -->
 
+## En pratique
+
+> [!primary]
+> Les valeurs (adresses MAC, adresses IP, etc.) indiquées dans les configurations et exemples ci-dessous sont fournies à titre d'exemple. Vous devez bien sûr les remplacer par vos propres valeurs.
+>
+
 > [!warning]
 >
 > Vous devez installer le paquet ifenslave sur le serveur avant d'activer OLA dans l'espace client OVHcloud ou via l'API. Pour ce faire, utilisez la commande suivante :
@@ -70,8 +76,6 @@ Rendez-vous dans l'onglet `Interfaces réseau`{.action} et notez les adresses MA
 >
 > Si la configuration réseau de votre système utilise plutôt `Netplan`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
-
-## En pratique
 
 Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
 

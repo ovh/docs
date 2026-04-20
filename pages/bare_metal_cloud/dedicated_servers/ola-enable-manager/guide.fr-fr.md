@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'agrégation de liens OLA dans votre espace client"
 excerpt: "Découvrez comment activer l'agrégation de liens OVHcloud dans votre espace client."
-updated: 2026-04-17
+updated: 2026-04-20
 ---
 
 ## Objectif
@@ -40,7 +40,7 @@ L'agrégation se base sur la technologie IEEE 802.3ad, ou Link Aggregation Contr
 
 Pour commencer à configurer OLA, ouvrez l'onglet `Interfaces réseau`{.action} sur la page de gestion de votre serveur.
 
-Dans l'onglet `Interfaces réseau`{.action}, cliquez sur le bouton `Agrégation réseaux`{.action} en haut de la section **Contrôleurs d'interface réseau**.
+Dans l'onglet `Interfaces réseau`{.action}, cliquez sur le bouton `Agrégation réseaux`{.action} dans la section **Contrôleurs d'interfaces réseau (NICs)**.
 
 Deux tableaux vous seront présentés :
 - À gauche, la configuration actuelle de vos interfaces réseau ;
@@ -73,7 +73,7 @@ Il existe quatre statuts possibles :
 
 ### Restauration des valeurs par défaut d'OLA
 
-Pour restaurer OLA aux valeurs par défaut, cliquez sur le bouton `Désagréger les réseaux`{.action} en haut de la section **Contrôleurs d'interface réseau**. Cliquez sur `Confirmer`{.action} dans le menu contextuel.
+Pour restaurer OLA aux valeurs par défaut, cliquez sur le bouton `Désagréger les réseaux`{.action} dans la section **Contrôleurs d'interfaces réseau (NICs)**. Cliquez sur `Confirmer`{.action} dans le menu contextuel.
 
 L'opération peut prendre quelques minutes.
 
