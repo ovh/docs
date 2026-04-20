@@ -1,6 +1,6 @@
 ---
-title: "Como configurar a agregação de links com LACP em Debian 12 ou Ubuntu 24.04"
-excerpt: "Ative a agregação de links no seu servidor Debian 12 ou Ubuntu 24.04 (Netplan) para aumentar a disponibilidade do servidor e melhorar a eficiência das ligações de rede"
+title: "Como configurar a agregação de links com LACP em Debian 12 ou Ubuntu 24.04 (EN)"
+excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server's availability and boost the efficiency of your network connections"
 updated: 2026-04-20
 ---
 
@@ -18,60 +18,60 @@ details[open]>summary::before {
 }
 </style>
 
-## Objetivo
+## Objective
 
-A tecnologia LACP (Link Aggregation Control Protocol) foi concebida para aumentar a disponibilidade do servidor e melhorar a eficiência das ligações de rede. Pode agregar as placas de rede e tornar as suas ligações de rede redundantes. Desta forma, se uma ligação cair, o tráfego é automaticamente redirecionado para outra ligação disponível. A largura de banda disponível é também duplicada graças à agregação.
+Link Aggregation Control Protocol (LACP) technology is designed to increase your server's availability, and boost the efficiency of your network connections. You can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
 
-**Este guia explica como configurar as interfaces em agregação para as utilizar em Debian 12 (*ou posterior*) / Ubuntu 24.04 (configuração Netplan).**
+**This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 (*or newer*) / Ubuntu 24.04 (Netplan configuration).**
 
 > [!warning]
-> Embora as imagens de Debian 12 (e versões posteriores) fornecidas pela OVHcloud utilizem o Netplan por predefinição, existem duas exceções principais em que é utilizado `ifupdown` (/etc/network/interfaces):
+> While Debian 12 and newer images provided by OVHcloud utilize Netplan by default, there are two key exceptions where `ifupdown` (/etc/network/interfaces) is used instead:
 >
-> - **Modo rescue**: Embora baseado em Debian 12, o ambiente rescue utiliza a ferramenta `ifupdown`.
-> - **Imagens personalizadas**: As instalações de Debian realizadas com a sua própria imagem podem continuar a utilizar `ifupdown` para a configuração de rede.
+> - **Rescue mode**: Although based on Debian 12, the rescue environment relies on the `ifupdown` utility.
+> - **Custom images**: Debian installations performed using your own image may still use `ifupdown` for networking.
 >
-> Se pretender configurar a agregação de links em modo rescue, ou num sistema operativo personalizado que utilize `ifupdown`, consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+> If you wish to configure link aggregation in rescue mode, or on a custom OS relying on `ifupdown`, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) instead.
 >
 
-## Requisitos
+## Requirements
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---
 
-### Acesso à Área de Cliente OVHcloud
+### OVHcloud Control Panel Access
 
-- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
-- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
 
 ---
 <!-- CP-NAV-END:baremetal-dedicated-servers -->
 
-## Instruções
+## Instructions
 
 > [!primary]
-> Os valores (endereços MAC, endereços IP, etc.) que aparecem nas configurações e exemplos seguintes são fornecidos como exemplos. Naturalmente, deve substituí-los pelos seus próprios.
+> The values (MAC addresses, IP addresses, etc.) shown in the configurations and examples below are provided as examples. Of course, you must replace these values with your own.
 >
 
-### Obtenção dos endereços MAC
+### Retrieving MAC addresses
 
-Aceda ao separador `Interfaces de rede`{.action} e tome nota dos endereços MAC de cada interface (pública/privada) apresentados na parte inferior do menu.
+Switch to the tab `Network Interfaces`{.action} and take note of the MAC addresses for each interface (public/private) which are displayed at the bottom of the menu.
 
-![Área de Cliente OVHcloud](images/ControlPanel.png){.thumbnail}
+![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Tenha em conta que o endereço MAC da interface **pública principal** é o que recebe as ofertas DHCP, tanto no sistema operativo do servidor como no modo rescue. Esta interface gere a conectividade pública na configuração predefinida.
+> Please note that the MAC address of the **main public** interface is the one receiving DHCP offers, both in the server's operating system and in rescue mode. This interface handles public connectivity in the default configuration.
 >
 
-Depois de saber quais os endereços MAC associados a cada tipo de interface (pública/privada), deve obter os nomes das interfaces.
+Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
 
-### Obtenção dos nomes das interfaces
+### Retrieving interfaces names
 
 > [!primary]
 >
-> Se perder a ligação de rede ao seu servidor, siga os passos "**Abrir KVM**" de [este guia](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+> If you lose network connection to your server, follow the "**Open KVM**" steps from [this guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 >
 
-Para obter os nomes das interfaces, execute o seguinte comando:
+To retrieve the names of the interfaces, execute the following command:
 
 ```bash
 ip a
@@ -79,10 +79,10 @@ ip a
 
 > [!primary]
 >
-> Este comando apresentará várias interfaces. Se tiver dificuldade em determinar quais são as suas interfaces físicas, a primeira interface terá ainda o endereço IP público do servidor atribuído por predefinição.
+> This command will yield numerous interfaces. If you are having trouble determining which ones are your physical interfaces, the first interface will still have the server's public IP address attached to it by default.
 >
 
-Exemplo de saída:
+Here's an output example:
 
 ```text
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -107,21 +107,21 @@ Exemplo de saída:
     link/ether a1:b2:c3:d4:e5:d7 brd ff:ff:ff:ff:ff:ff
 ```
 
-Depois de determinar os nomes das suas interfaces, pode configurar a agregação de interfaces no sistema operativo.
+Once you have determined the names of your interfaces, you can configure interfaces bonding in the OS.
 
-### Configuração da agregação de interfaces
+### Configuring interface bonding
 
-Selecione o separador seguinte que corresponda à configuração do seu servidor:
+Select the tab below that matches your server configuration:
 
-- **Duas interfaces**: servidores Advance com duas NIC físicas.
-- **Quatro interfaces - Double LAG**: servidores Scale e High-Grade com OLA em modo **Active - Double LAG** (agregados público + privado). Requer [ativar OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) na Área de Cliente OVHcloud.
-- **Quatro interfaces - Fully Private**: servidores Scale e High-Grade com OLA em modo **Active - Fully Private** (único agregado privado para vRack). Requer [ativar OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) na Área de Cliente OVHcloud.
+- **Two interfaces**: Advance servers with two physical NICs.
+- **Four interfaces - Double LAG**: Scale and High Grade servers with OLA in **Active - Double LAG** mode (public + private aggregates). This requires [OLA to be enabled](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) in the OVHcloud Control Panel.
+- **Four interfaces - Fully Private**: Scale and High Grade servers with OLA in **Active - Fully Private** mode (single private aggregate for vRack). This requires [OLA to be enabled](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) in the OVHcloud Control Panel.
 
 > [!tabs]
-> Duas interfaces
->> Substitua o conteúdo de `/etc/netplan/50-cloud-init.yaml` pelo seguinte:
+> Two interfaces
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
 >>
->> **IP estático**
+>> **Static IP**
 >>
 >> ```yaml
 >> network:
@@ -135,7 +135,7 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>                 macaddress: a1:b2:c3:d4:e5:c7
 >>     bonds:
 >>         bond0:
->>             # Endereço MAC da interface pública principal do servidor
+>>             # MAC address of the server's main public interface
 >>             macaddress: a1:b2:c3:d4:e5:c6
 >>             accept-ra: false
 >>             addresses:
@@ -175,7 +175,7 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>                 macaddress: a1:b2:c3:d4:e5:c7
 >>     bonds:
 >>         bond0:
->>             # Endereço MAC da interface pública principal do servidor
+>>             # MAC address of the server's main public interface
 >>             macaddress: a1:b2:c3:d4:e5:c6
 >>             accept-ra: false
 >>             dhcp4: true
@@ -199,12 +199,12 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>
 >> ///
 >>
-> Quatro interfaces - Double LAG
->> Esta configuração agrupa as interfaces públicas em `bond0` (com IP público) e as interfaces privadas em `bond1` (para vRack).
+> Four interfaces - Double LAG
+>> This configuration bonds public interfaces into `bond0` (with public IP) and private interfaces into `bond1` (for vRack).
 >>
->> Substitua o conteúdo de `/etc/netplan/50-cloud-init.yaml` pelo seguinte:
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
 >>
->> **IP estático**
+>> **Static IP**
 >>
 >> ```yaml
 >> network:
@@ -224,7 +224,7 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>                 macaddress: a1:b2:c3:d4:e5:d7
 >>     bonds:
 >>         bond0:
->>             # Endereço MAC da interface pública principal do servidor
+>>             # MAC address of the server's main public interface
 >>             macaddress: a1:b2:c3:d4:e5:c6
 >>             accept-ra: false
 >>             addresses:
@@ -248,9 +248,9 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>                 mode: 802.3ad
 >>                 lacp-rate: fast
 >>                 transmit-hash-policy: layer3+4
->>         # Opcional: configuração do agregado privado
+>>         # Optional: private bond configuration
 >>         bond1:
->>             # Endereço MAC da primeira interface privada
+>>             # MAC address of the first private interface
 >>             macaddress: a1:b2:c3:d4:e5:d6
 >>             accept-ra: false
 >>             interfaces:
@@ -282,7 +282,7 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>                 macaddress: a1:b2:c3:d4:e5:d7
 >>     bonds:
 >>         bond0:
->>             # Endereço MAC da interface pública principal do servidor
+>>             # MAC address of the server's main public interface
 >>             macaddress: a1:b2:c3:d4:e5:c6
 >>             accept-ra: false
 >>             dhcp4: true
@@ -302,9 +302,9 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>                 mode: 802.3ad
 >>                 lacp-rate: fast
 >>                 transmit-hash-policy: layer3+4
->>         # Opcional: configuração do agregado privado
+>>         # Optional: private bond configuration
 >>         bond1:
->>             # Endereço MAC da primeira interface privada
+>>             # MAC address of the first private interface
 >>             macaddress: a1:b2:c3:d4:e5:d6
 >>             accept-ra: false
 >>             interfaces:
@@ -318,15 +318,15 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>
 >> ///
 >>
-> Quatro interfaces - Fully Private
->> Esta configuração agrega todas as interfaces físicas num único agregado exclusivamente para uso com vRack. Não existe conectividade IP pública.
+> Four interfaces - Fully Private
+>> This configuration aggregates all physical interfaces into a single bond for vRack use only. There is no public IP connectivity.
 >>
 >> > [!warning]
 >> >
->> > Após a implementação de OLA em modo Fully Private, o IP público deixa de estar acessível. Certifique-se de que dispõe de um meio alternativo de acesso (por ex., através de outro servidor no vRack ou por KVM/IPMI) antes de aplicar esta configuração.
+>> > Following the implementation of OLA in Fully Private mode, the public IP is no longer accessible. Make sure you have an alternative means of access (e.g. through another server in the vRack, or via KVM/IPMI) before applying this configuration.
 >> >
 >>
->> Substitua o conteúdo de `/etc/netplan/50-cloud-init.yaml` pelo seguinte:
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
 >>
 >> ```yaml
 >> network:
@@ -346,7 +346,7 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>                 macaddress: a1:b2:c3:d4:e5:d7
 >>     bonds:
 >>         bond0:
->>             # Endereço MAC da interface privada principal do servidor
+>>             # MAC address of the server's main private interface
 >>             macaddress: a1:b2:c3:d4:e5:d6
 >>             accept-ra: false
 >>             interfaces:
@@ -362,24 +362,24 @@ Selecione o separador seguinte que corresponda à configuração do seu servidor
 >>
 >> > [!primary]
 >> >
->> > Em modo Fully Private, o agregado utiliza o endereço MAC da interface **privada principal**. Para atribuir um endereço IP a este agregado para comunicação no vRack, adicione um bloco `addresses` em `bond0` com o seu IP privado de vRack.
+>> > In Fully Private mode, the bond uses the MAC address of the **main private** interface. To assign an IP address to this bond for vRack communication, add an `addresses` block under `bond0` with your vRack private IP.
 >> >
 
-### Aplicação da configuração
+### Applying the configuration
 
 > [!primary]
-> O comando `netplan try` não pode ser utilizado ao configurar agregados.
+> The `netplan try` command can't be used when configuring bonds.
 
-Aplique a configuração com o seguinte comando:
+Apply the configuration using the following command:
 
 ```bash
 sudo netplan apply
 ```
 
-Pode demorar alguns segundos até que as interfaces de agregação estejam disponíveis.
+It may take several seconds for the bond interfaces to come up.
 
-## Saiba mais
+## Go further
 
-[Configurar o OVHcloud Link Aggregation na Área de Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+[Configuring OVHcloud Link Aggregation in the Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Join our [community of users](/links/community).
