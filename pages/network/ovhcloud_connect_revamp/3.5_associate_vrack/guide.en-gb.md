@@ -73,6 +73,11 @@ The association is typically effective within a few minutes.
 
 ### Via the API
 
+> [!api]
+>
+> @api {v1} GET /vrack/{serviceName}/ovhCloudConnect
+>
+
 ```python
 import ovh
 

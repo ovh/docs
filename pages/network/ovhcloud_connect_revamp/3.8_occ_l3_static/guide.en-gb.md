@@ -54,18 +54,6 @@ Your Router ── [ L3 at PoP ] ── OVHcloud PoP Router ── [ Static rout
 > @api {v1} GET /ovhCloudConnect/{serviceName}/interface
 >
 
-```python
-import ovh
-
-client = ovh.Client(endpoint='ovh-eu')
-
-service_name = "your-occ-service-uuid"
-
-interfaces = client.get(f"/ovhCloudConnect/{service_name}/interface")
-for iface_id in interfaces:
-    iface = client.get(f"/ovhCloudConnect/{service_name}/interface/{iface_id}")
-    print(f"  ID: {iface['id']}, Status: {iface['status']}")
-```
 
 ### Step 2 — Create the PoP configuration (L3)
 
@@ -87,18 +75,6 @@ The PoP configuration establishes the L3 session at the Point of Presence. This 
 
 **Example request:**
 
-```python
-result = client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop",
-    interfaceId=101,
-    type="l3",
-    customerBgpArea=65001,
-    subnet="192.0.2.0/30"
-)
-
-print("Task:", result)
-# {'id': 7001, 'function': 'addPopConfiguration', 'resourceId': 5678, 'status': 'todo'}
-```
 
 ### Step 3 — Verify the PoP configuration
 
@@ -107,10 +83,6 @@ print("Task:", result)
 > @api {v1} GET /ovhCloudConnect/{serviceName}/config/pop/{popId}
 >
 
-```python
-pop_config = client.get(f"/ovhCloudConnect/{service_name}/config/pop/5678")
-print(pop_config)
-```
 
 **Example response:**
 
@@ -155,42 +127,11 @@ After the PoP configuration and a [data centre configuration](/pages/network/ovh
 
 **Example request — route your on-premises subnet through the OVHcloud Connect link:**
 
-```python
-pop_id = 5678
-dc_config_id = 3456  # From data centre configuration step
-
-result = client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra",
-    type="network",
-    nextHop="172.16.1.1",
-    subnet="10.0.0.0/16"
-)
-
-print("Task:", result)
-# {'id': 7003, 'function': 'addDatacenterExtraConfiguration', 'resourceId': 4568, 'status': 'todo'}
-```
 
 #### Add multiple static routes
 
 Create one extra configuration per destination subnet:
 
-```python
-# Route to on-premises production network
-client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra",
-    type="network",
-    nextHop="172.16.1.1",
-    subnet="10.0.0.0/16"
-)
-
-# Route to on-premises management network
-client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra",
-    type="network",
-    nextHop="172.16.1.1",
-    subnet="10.1.0.0/16"
-)
-```
 
 #### Verify the extra configuration
 
@@ -220,12 +161,6 @@ client.post(
 > @api {v1} GET /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
 >
 
-```python
-extras = client.get(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra"
-)
-print("Extra configuration IDs:", extras)
-```
 
 ### Step 5 — Configure static routes on your router
 
@@ -320,18 +255,6 @@ Check PoP configuration status:
 > @api {v1} POST /ovhCloudConnect/{serviceName}/diagnostic
 >
 
-```python
-diag = client.post(
-    f"/ovhCloudConnect/{service_name}/diagnostic",
-    popConfigId=5678,
-    dcConfigId=3456,
-    extraConfigId=4568,
-    diagnosticName="diagRoutes"
-)
-
-diag_result = client.get(f"/ovhCloudConnect/{service_name}/diagnostic/{diag['id']}")
-print(diag_result)
-```
 
 Available diagnostic names: `diagPeering`, `diagPeeringExtra`, `diagRoutes`, `diagMacs`.
 
@@ -359,15 +282,6 @@ Delete in reverse order:
 > @api {v1} DELETE /ovhCloudConnect/{serviceName}/config/pop/{popId}
 >
 
-```python
-# 1. Delete extra configuration(s) first
-client.delete(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra/{extra_id}"
-)
-
-# 2. Then delete PoP configuration (if no other data centre configs depend on it)
-client.delete(f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}")
-```
 
 ## Go further
 
