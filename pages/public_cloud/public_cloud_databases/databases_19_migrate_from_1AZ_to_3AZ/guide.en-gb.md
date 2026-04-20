@@ -87,7 +87,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 >>
 >> > [!primary]
 >> >
->> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started with APIs](/pages/public_cloud/public_cloud_databases/databases_02_order_api).
+>> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel).
 >> >
 >>
 >> To find the backup ID of a service, use the following API call:
