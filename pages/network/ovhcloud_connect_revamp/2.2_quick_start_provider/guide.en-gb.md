@@ -87,7 +87,17 @@ The provider sets up the physical and logical link between their infrastructure 
 
 You can track the connection status in both the **OVHcloud Control Panel** and your **provider's portal**.
 
-### Step 4 — Configure BGP or verify Layer 3
+### Step 4 — Associate with your vRack
+
+Link the OVHcloud Connect service to your **vRack**:
+
+1. In the OVHcloud Control Panel, go to **vRack**.
+2. Add your OVHcloud Connect service.
+3. Configure the required VLANs and subnets.
+
+See [Associate an OVHcloud Connect to your vRack](3.5_associate_vrack.md).
+
+### Step 5 — Configure BGP or verify Layer 3
 
 **If using Layer 2 (L2) mode:**
 
@@ -98,16 +108,6 @@ You manage the BGP session yourself. Configure your router to peer with OVHcloud
 The provider handles BGP configuration on your behalf. Verify in your provider's portal that the session is established and routes are being exchanged.
 
 See [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md) for detailed guidance.
-
-### Step 5 — Associate with your vRack
-
-Link the OVHcloud Connect service to your **vRack**:
-
-1. In the OVHcloud Control Panel, go to **vRack**.
-2. Add your OVHcloud Connect service.
-3. Configure the required VLANs and subnets.
-
-See [Associate an OVHcloud Connect to your vRack](3.8_associate_vrack.md).
 
 ### Step 6 — Test and verify
 
