@@ -9,7 +9,7 @@ updated: 2026-04-14
 **This guide explains how to** configure OVHcloud Connect in L3 mode with BGP. This involves two levels of configuration:
 
 1. **PoP configuration** — The eBGP session between your router and OVHcloud at the Point of Presence.
-2. **Data centre extra configuration (BGP)** — BGP peering within the OVHcloud data centre for route distribution.
+2. **AZ extra configuration (BGP)** — BGP peering within the OVHcloud AZ for route distribution.
 
 > [!primary]
 > If you prefer static routing instead of BGP, see [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_static).
@@ -19,7 +19,7 @@ updated: 2026-04-14
 - An active [OVHcloud account](/links/manager)
 - An active OVHcloud Connect service (status `active`)
 - OVHcloud Connect associated with a vRack — see [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.8_associate_vrack)
-- A data centre configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup)
+- An AZ configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup)
 - Your ASN (a public ASN or a private ASN in the range 64512–65534)
 - A /30 peering subnet (e.g. `192.0.2.0/30`)
 - OVHcloud API credentials (Application Key, Application Secret, Consumer Key). Refer to the [First steps with the OVHcloud API](/pages/manage-and-operate/api/first-steps) guide.
@@ -30,12 +30,12 @@ updated: 2026-04-14
 
 ```
 Your Router ── [ eBGP at PoP ] ── OVHcloud PoP Router ── [ iBGP at DC ] ── vRack Router ── Services
-   ASN 65001        /30 peering         ASN 35540           data centre        (172.16.x.x)
+   ASN 65001        /30 peering         ASN 35540           AZ        (172.16.x.x)
                                                            extra config
 ```
 
 - **PoP level**: An eBGP session between your router (your ASN) and OVHcloud (ASN 35540) over a /30 peering subnet.
-- **Data centre level**: A BGP neighbour configured inside the data centre to distribute routes to your OVHcloud services.
+- **AZ level**: A BGP neighbour configured inside the AZ to distribute routes to your OVHcloud services.
 
 ### Step 1 — Identify your interface ID
 
@@ -46,21 +46,6 @@ Retrieve the interface ID for your OVHcloud Connect service:
 > @api {v1} GET /ovhCloudConnect/{serviceName}/interface
 >
 
-```python
-import ovh
-
-client = ovh.Client(endpoint='ovh-eu')
-
-service_name = "your-occ-service-uuid"
-
-interfaces = client.get(f"/ovhCloudConnect/{service_name}/interface")
-print("Interface IDs:", interfaces)
-
-# Get details
-for iface_id in interfaces:
-    iface = client.get(f"/ovhCloudConnect/{service_name}/interface/{iface_id}")
-    print(f"  ID: {iface['id']}, Status: {iface['status']}")
-```
 
 ### Step 2 — Create the PoP configuration (L3)
 
@@ -83,18 +68,6 @@ The PoP configuration establishes the L3 BGP session at the Point of Presence.
 
 **Example request:**
 
-```python
-result = client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop",
-    interfaceId=101,
-    type="l3",
-    customerBgpArea=65001,
-    subnet="192.0.2.0/30"
-)
-
-print("Task:", result)
-# {'id': 7001, 'function': 'addPopConfiguration', 'resourceId': 5678, 'status': 'todo'}
-```
 
 The `resourceId` in the response is your new `popId`.
 
@@ -107,10 +80,6 @@ Once the task completes:
 > @api {v1} GET /ovhCloudConnect/{serviceName}/config/pop/{popId}
 >
 
-```python
-pop_config = client.get(f"/ovhCloudConnect/{service_name}/config/pop/5678")
-print(pop_config)
-```
 
 **Example response:**
 
@@ -142,17 +111,13 @@ Check the BGP session state:
 > @api {v1} GET /ovhCloudConnect/{serviceName}/config/pop/{popId}/status
 >
 
-```python
-status = client.get(f"/ovhCloudConnect/{service_name}/config/pop/5678/status")
-print(f"BGP status: {status['status']}, Last change: {status['lastChange']}")
-```
 
-### Step 4 — Create data centre extra configuration (BGP)
+### Step 4 — Create AZ extra configuration (BGP)
 
-After the PoP configuration and a [data centre configuration](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup), create a **BGP extra configuration** to enable BGP route distribution within the data centre.
+After the PoP configuration and the [AZ configuration](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup), create a **BGP extra configuration** to enable BGP route distribution within the AZ.
 
 > [!warning]
-> Enabling BGP at the data centre level **disables VRRP** on that data centre configuration. BGP handles failover instead. You must establish a BGP session with **both** OVHcloud device A and device B (up to 4 BGP peers per data centre). By default, BFD (Bidirectional Forwarding Detection) is activated on all data centre BGP sessions — enabling BFD on your side as well is strongly recommended for faster convergence.
+> Enabling BGP at the AZ level **disables VRRP** on that AZ configuration. BGP handles failover instead. You must establish a BGP session with **both** OVHcloud device A and device B (up to 4 BGP peers per AZ). By default, BFD (Bidirectional Forwarding Detection) is activated on all AZ BGP sessions — enabling BFD on your side as well is strongly recommended for faster convergence.
 
 > [!api]
 >
@@ -164,25 +129,11 @@ After the PoP configuration and a [data centre configuration](/pages/network/ovh
 | Parameter | Type | Required | Description |
 |---|---|---|---|
 | `type` | string | Yes | `bgp` for BGP routing |
-| `bgpNeighborArea` | long | No | BGP AS number for the data centre neighbour |
-| `bgpNeighborIp` | ipv4 | No | Router IP for the BGP session within the data centre |
+| `bgpNeighborArea` | long | No | BGP AS number for the AZ neighbour |
+| `bgpNeighborIp` | ipv4 | No | Router IP for the BGP session within the AZ |
 
 **Example request:**
 
-```python
-pop_id = 5678
-dc_config_id = 3456  # From data centre configuration step
-
-result = client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra",
-    type="bgp",
-    bgpNeighborArea=65501,
-    bgpNeighborIp="172.16.1.1"
-)
-
-print("Task:", result)
-# {'id': 7002, 'function': 'addDatacenterExtraConfiguration', 'resourceId': 4567, 'status': 'todo'}
-```
 
 Verify the extra configuration:
 
@@ -316,7 +267,7 @@ show route protocol bgp
 | Check | Expected output |
 |---|---|
 | **BGP state** | `Established` |
-| **Prefixes received** | At least 1 route from OVHcloud (your data centre subnets) |
+| **Prefixes received** | At least 1 route from OVHcloud (your AZ subnets) |
 | **Prefixes sent** | Your advertised prefixes visible |
 
 #### From the OVHcloud API
@@ -328,14 +279,6 @@ Check PoP statistics (accepted prefixes):
 > @api {v1} GET /ovhCloudConnect/{serviceName}/config/pop/{popId}/statistics
 >
 
-```python
-stats = client.get(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/statistics",
-    period="hourly",
-    type="prefix:accepted"
-)
-print("Accepted prefixes:", stats)
-```
 
 #### Run a diagnostic
 
@@ -346,19 +289,6 @@ If the session does not come up, run a peering diagnostic:
 > @api {v1} POST /ovhCloudConnect/{serviceName}/diagnostic
 >
 
-```python
-diag = client.post(
-    f"/ovhCloudConnect/{service_name}/diagnostic",
-    popConfigId=5678,
-    dcConfigId=3456,
-    extraConfigId=4567,
-    diagnosticName="diagPeering"
-)
-
-# Check the diagnostic result
-diag_result = client.get(f"/ovhCloudConnect/{service_name}/diagnostic/{diag['id']}")
-print(diag_result)
-```
 
 Available diagnostic names: `diagPeering`, `diagPeeringExtra`, `diagRoutes`, `diagMacs`.
 
@@ -395,19 +325,10 @@ To remove the BGP configuration, delete in reverse order:
 > @api {v1} DELETE /ovhCloudConnect/{serviceName}/config/pop/{popId}
 >
 
-```python
-# 1. Delete extra configuration first
-client.delete(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra/{extra_id}"
-)
-
-# 2. Then delete PoP configuration (if no other data centre configs depend on it)
-client.delete(f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}")
-```
 
 ## Go further
 
-- [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup) — If you have not configured data centre subnets yet
+- [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup) — If you have not configured AZ subnets yet
 - [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.8_associate_vrack)
 - [Monitor your connection](/pages/network/ovhcloud_connect_revamp/3.9_monitor)
 
