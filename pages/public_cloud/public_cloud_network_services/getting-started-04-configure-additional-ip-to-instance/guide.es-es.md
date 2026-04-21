@@ -72,7 +72,6 @@ Esta guía explica las configuraciones de las distribuciones y sistemas operativ
 > Para configurar una dirección Additional IP en una instancia de Public Cloud no es necesario tener una puerta de enlace (gateway) ni una máscara de subred.
 >
 
-<!-- CP-STEPS-START:configure-additional-ip -->
 > [!success]
 > Seleccione la pestaña correspondiente a su sistema operativo.
 
@@ -358,7 +357,6 @@ Esta guía explica las configuraciones de las distribuciones y sistemas operativ
 >>
 >> ![comprobar la configuración de red actual](images/image8-8.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:configure-additional-ip -->
 
 ### Diagnóstico
 

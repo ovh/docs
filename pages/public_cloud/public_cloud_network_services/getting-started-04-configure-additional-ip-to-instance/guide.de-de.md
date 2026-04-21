@@ -71,7 +71,6 @@ Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten v
 > Für die Konfiguration einer Additional IP auf einer Public Cloud Instanz ist kein Gateway oder Subnetzmaske erforderlich.
 >
 
-<!-- CP-STEPS-START:configure-additional-ip -->
 > [!success]
 > Wählen Sie den Tab für Ihr Betriebssystem.
 
@@ -358,7 +357,6 @@ Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten v
 >>
 >> ![Aktuelle Netzwerkkonfiguration überprüfen](images/image8-8.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:configure-additional-ip -->
 
 ### Diagnose
 

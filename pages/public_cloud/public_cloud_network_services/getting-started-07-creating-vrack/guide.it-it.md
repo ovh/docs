@@ -164,7 +164,6 @@ Per farlo, devi scegliere il fornitore e la risorsa Terraform corretti. Trova ul
 > Il vRack è gestito a livello di infrastruttura OVHcloud, il che significa che puoi amministrarlo solo dal tuo Spazio Cliente e tramite le APIv6 OVHcloud.
 >
 
-<!-- CP-STEPS-START:activate-vrack -->
 > [!tabs]
 > Dallo Spazio Cliente OVHcloud
 >> > [!primary]
@@ -349,8 +348,6 @@ Per farlo, devi scegliere il fornitore e la risorsa Terraform corretti. Trova ul
 >> >
 >>
  
-<!-- CP-STEPS-END:activate-vrack -->
-
 ### Passo 2: Creare una rete privata nel vRack <a name="create-pn-in-vrack"></a>
 
 È necessario creare una rete privata con una rete locale virtuale (VLAN) affinché le istanze collegate al vRack possano comunicare tra loro.
@@ -375,7 +372,6 @@ Dallo Spazio Cliente OVHcloud e dalle APIv6 OVHcloud è possibile personalizzare
 > OpenStack non essendo situato allo stesso livello dell'infrastruttura, non potrai personalizzare le VLAN attraverso l'interfaccia Horizon o le API OpenStack.
 >
 
-<!-- CP-STEPS-START:create-private-network -->
 > [!tabs]
 > Dal Spazio Cliente OVHcloud
 >> Dopo aver creato il vRack, il passo successivo consiste nel creare una rete privata.
@@ -578,8 +574,6 @@ Dallo Spazio Cliente OVHcloud e dalle APIv6 OVHcloud è possibile personalizzare
 >> ```
 >> 
 
-<!-- CP-STEPS-END:create-private-network -->
-
 ### Passo 3: Integrazione di un'istanza nel vRack
 
 Due situazioni possono presentarsi:
@@ -589,7 +583,6 @@ Due situazioni possono presentarsi:
 
 /// details | **Caso di una nuova istanza**
 
-<!-- CP-STEPS-START:integrate-new-instance -->
 > [!tabs]
 > Dal Spazio Cliente OVHcloud
 >> Consulta la guida "[Creare un'istanza dallo spazio cliente](/pages/public_cloud/Compute/public-cloud-first-steps)". Durante la creazione di un'istanza, puoi scegliere all'ultimo passo, un tipo di rete e quindi una rete privata alla quale integrare la tua istanza.
@@ -870,8 +863,6 @@ Due situazioni possono presentarsi:
 >> ```
 >>
 
-<!-- CP-STEPS-END:integrate-new-instance -->
-
 ///
 
 /// details | **Caso di un'istanza già esistente**
@@ -886,7 +877,6 @@ Ad esempio, se hai un'interfaccia pubblica *eth0*, avrai in più un'interfaccia 
 > La configurazione di questa nuova interfaccia non è quasi mai automatica. Dovrai quindi configurarla in DHCP o con un indirizzo IP fisso in base alla tua infrastruttura.
 >
 
-<!-- CP-STEPS-START:integrate-existing-instance -->
 > [!tabs]
 > Dallo Spazio Cliente OVHcloud
 >> Nel tuo progetto Public Cloud,
@@ -1151,8 +1141,6 @@ Ad esempio, se hai un'interfaccia pubblica *eth0*, avrai in più un'interfaccia 
 >> [...]
 >> ```
 >>
-
-<!-- CP-STEPS-END:integrate-existing-instance -->
 
 ### Rimozione di un'interfaccia di rete
 

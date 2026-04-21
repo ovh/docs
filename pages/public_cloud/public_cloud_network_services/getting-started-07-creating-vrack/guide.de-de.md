@@ -164,7 +164,6 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 > Das vRack wird auf der OVHcloud Infrastruktur-Ebene verwaltet, was bedeutet, dass Sie es nur in Ihrem OVHcloud Kundencenter und der OVHcloud APIv6 verwalten können.
 >
 
-<!-- CP-STEPS-START:activate-vrack -->
 > [!tabs]
 > Über das OVHcloud Kundencenter
 >> > [!primary]
@@ -347,8 +346,6 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 >> >
 >>
 
-<!-- CP-STEPS-END:activate-vrack -->
-
 ### Schritt 2: Ein privates Netzwerk im vRack erstellen <a name="create-pn-in-vrack"></a>
 
 Es ist notwendig, ein privates Netzwerk mit einem virtuellen lokalen Bereich (VLAN) zu erstellen, damit die angeschlossenen Instanzen miteinander kommunizieren können.
@@ -373,7 +370,6 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 > Da OpenStack nicht auf der gleichen Ebene liegt, können Sie VLANs nicht über Horizon oder OpenStack API anpassen.
 >
 
-<!-- CP-STEPS-START:create-private-network -->
 > [!tabs]
 > Über das OVHcloud Kundencenter
 >> Sobald Ihr vRack eingerichtet ist, ist der nächste Schritt die Erstellung eines privaten Netzwerks.
@@ -574,8 +570,6 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >> ```
 >>
 
-<!-- CP-STEPS-END:create-private-network -->
-
 ### Schritt 3: Integrieren einer Instanz in vRack <a name="instance-integration"></a>
 
 Es gibt zwei mögliche Szenarien:
@@ -585,7 +579,6 @@ Es gibt zwei mögliche Szenarien:
 
 /// details | **Im Fall einer neuen Instanz**
 
-<!-- CP-STEPS-START:integrate-new-instance -->
 > [!tabs]
 > Über das OVHcloud Kundencenter
 >> Wenn Sie Unterstützung benötigen, folgen Sie zunächst dieser Anleitung: [Erstellen einer Instanz im OVHcloud Kundencenter](/pages/public_cloud/Compute/public-cloud-first-steps). Beim Erstellen einer Instanz können Sie in Schritt 5 einen Netzwerkmodus wählen, gefolgt von einem privaten Netzwerk, in das Sie Ihre Instanz integrieren können.
@@ -868,8 +861,6 @@ Es gibt zwei mögliche Szenarien:
 >> ```
 >>
 
-<!-- CP-STEPS-END:integrate-new-instance -->
-
 ///
 
 /// details | **Im Fall einer vorhandenen Instanz**
@@ -885,7 +876,6 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 > Sie müssen daher eine statische IP-Adresse zuweisen oder DHCP konfigurieren, je nach Ihrer Infrastruktur.
 >
 
-<!-- CP-STEPS-START:integrate-existing-instance -->
 > [!tabs]
 > Über das OVHcloud Kundencenter
 >> In Ihrem Public Cloud Projekt,
@@ -1155,8 +1145,6 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >> [...]
 >> ```
 >>
-
-<!-- CP-STEPS-END:integrate-existing-instance -->
 
 ### Ein Netzwerkinterface entfernen
 

@@ -72,7 +72,6 @@ Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operati
 > Per configurare un Additional IP su un’istanza Public Cloud, non è necessario utilizzare un gateway o una subnet mask.
 >
 
-<!-- CP-STEPS-START:configure-additional-ip -->
 > [!success]
 > Selezionare la scheda corrispondente al proprio sistema operativo.
 
@@ -359,7 +358,6 @@ Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operati
 >>
 >> ![verifica la configurazione di rete corrente](images/image8-8.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:configure-additional-ip -->
 
 ### Diagnostica
 

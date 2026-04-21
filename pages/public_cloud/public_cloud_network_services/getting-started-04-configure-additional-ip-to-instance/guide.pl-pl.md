@@ -72,7 +72,6 @@ Niniejszy przewodnik zawiera najpopularniejsze konfiguracje dystrybucji/systemó
 > Konfiguracja Additional IP w instancji Public Cloud nie wymaga bramy (gateway) ani maski podsieci.
 >
 
-<!-- CP-STEPS-START:configure-additional-ip -->
 > [!success]
 > Wybierz zakładkę odpowiadającą Twojemu systemowi operacyjnemu.
 
@@ -359,7 +358,6 @@ Niniejszy przewodnik zawiera najpopularniejsze konfiguracje dystrybucji/systemó
 >>
 >> ![sprawdź aktualną konfigurację sieci](images/image8-8.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:configure-additional-ip -->
 
 ### Diagnostyka
 

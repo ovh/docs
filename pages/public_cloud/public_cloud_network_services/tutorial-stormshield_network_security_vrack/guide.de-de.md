@@ -144,12 +144,9 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 ### SNS EVA Instanzen konfigurieren
 
-<!-- CP-STEPS-START:configure-sns-eva-instances -->
 Wählen Sie im Bereich `Public Cloud`{.action} das betreffende Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action} unter **Compute** und finden Sie Ihre beiden SNS EVA Instanzen.
 
 Greifen Sie für beide EVA SNS-Instanzen auf die VNC-Konsole zu, und konfigurieren Sie das Tastaturlayout und das Kennwort.
-
-<!-- CP-STEPS-END:configure-sns-eva-instances -->
 
 Konfigurieren Sie das Standard-Gateway auf der ersten EVA SNS mit unserem IP-Block-Gateway:
 
