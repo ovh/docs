@@ -600,6 +600,8 @@
             + [OPCP - How to see node inventory](hosted_private_cloud/opcp/how-to-see-node-inventory)
         + [CloudStore](hosted-private-cloud-hosted-private-cloud-opcp-cloudstore)
             + [Getting started with your CloudStore](hosted_private_cloud/opcp/cloudstore-getting-started)
+        + [Landing Zone Manager](hosted-private-cloud-hosted-private-cloud-opcp-landing-zone-manager)
+            + [Landing Zone Manager - Creating and using an account](hosted_private_cloud/opcp/landing-zone-manager)
         + [Additional resources](hosted-private-cloud-hosted-private-cloud-opcp-additional-resources)
             + [OPCP - Object Storage features and specifications](hosted_private_cloud/opcp/s3-opcp-limitations)
             + [OPCP - How to create a custom OS image](hosted_private_cloud/opcp/how-to-create-image)
