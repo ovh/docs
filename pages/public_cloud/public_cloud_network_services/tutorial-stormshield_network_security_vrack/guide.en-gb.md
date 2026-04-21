@@ -139,9 +139,12 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 #### Configure the SNS EVA instances
 
+<!-- CP-STEPS-START:configure-sns-eva-instances -->
 In the `Public Cloud`{.action} section, select your project. In the left menu, click on `Instances`{.action} under the **Compute** tab, then find your two SNS EVA instances.
 
 Access the VNC console for both SNS EVA instances and configure the keyboard layout and the password.
+
+<!-- CP-STEPS-END:configure-sns-eva-instances -->
 
 Configure the default gateway on the first SNS EVA with our IP block gateway:
 

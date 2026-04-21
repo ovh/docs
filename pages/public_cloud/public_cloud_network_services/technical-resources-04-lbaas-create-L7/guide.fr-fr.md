@@ -99,6 +99,7 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:configure-l7-policies -->
 #### Etape 2 - Naviguer vers le Load Balancer
 
 Dans votre projet Public Cloud, sélectionnez `Load Balancer`{.action}, vous verrez apparaître la liste de vos Load Balancers. Cliquez sur celui que vous souhaitez configurer.
@@ -182,6 +183,7 @@ Une fois tous les champs remplis selon vos critères, cliquez sur `Ajouter`{.act
 
 ![Schema 1](images/Policy8.png){.thumbnail}
 
+<!-- CP-STEPS-END:configure-l7-policies -->
 
 ### Utilisation de la CLI OpenStack et d'Horizon
 
