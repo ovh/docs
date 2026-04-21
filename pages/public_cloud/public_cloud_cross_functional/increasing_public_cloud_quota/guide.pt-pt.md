@@ -29,13 +29,11 @@ Se desejar criar mais, será necessário aumentar a quota.
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-<!-- CP-STEPS-START:navigate-quota-regions -->
 No menu à esquerda, clique em `Limite e regiões`{.action} em **Parametros**.
 
 ![Página Quota e Regiões a apresentar as quotas atuais do projeto por região](images/raisepciquota1.png){.thumbnail}
 
 Esta página apresenta um resumo das quotas atuais do seu projeto por região. Um aviso aparece sempre que um recurso atinge 80 % da sua quota.
-<!-- CP-STEPS-END:navigate-quota-regions -->
 
 ### Aumentar a sua quota de recursos
 
@@ -45,7 +43,6 @@ Tem a possibilidade de aumentar a sua quota de recursos manualmente ou automatic
 
 #### Aumentar automaticamente a sua quota de recursos com a funcionalidade "Quota autoscaling"
 
-<!-- CP-STEPS-START:increase-quota-auto-scaling -->
 Esta opção permite-lhe solicitar um aumento automático e progressivo da sua quota de recursos. A quota será ajustada com base na sua utilização real **se ultrapassar 60 % da sua quota atual durante 30 dias consecutivos**, bem como de acordo com um conjunto de critérios internos e financeiros.
 
 > [!primary]
@@ -61,11 +58,9 @@ No canto superior direito da página, a opção **Quota autoscaling** está disp
 ![Botão de alternância Quota autoscaling definido como Ativado](images/autoscaling.png){.thumbnail}
 
 Assim que ativado, o auto-scaling aumenta progressivamente a quota do seu projeto com base nas suas necessidades reais.
-<!-- CP-STEPS-END:increase-quota-auto-scaling -->
 
 #### Aumentar manualmente a sua quota de recursos
 
-<!-- CP-STEPS-START:increase-quota-manually -->
 > [!primary]
 >
 > Se precisar de aumentar a sua quota e o botão `Aumentar os meus limites`{.action} não estiver disponível na Área de Cliente, clique no botão `Contactar o Apoio ao Cliente`{.action}.
@@ -102,7 +97,6 @@ Assim que selecionar o seu volume, clique em `Confirmar`{.action}. O seu pagamen
 >
 > Após clicar no botão `Confirmar`{.action}, o pedido é automaticamente criado e o montante é deduzido do seu método de pagamento predefinido.
 >
-<!-- CP-STEPS-END:increase-quota-manually -->
 
 Para uma vista mais detalhada dos seus recursos, aceda à [interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Após iniciar sessão, clique em `Projeto`{.action} e, em seguida, em `Visão geral`{.action}.
 

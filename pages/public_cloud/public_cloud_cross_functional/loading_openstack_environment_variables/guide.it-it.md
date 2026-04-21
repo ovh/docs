@@ -28,7 +28,6 @@ L’impostazione delle variabili d’ambiente OpenStack ti consente di utilizzar
 
 ### Step 1: recupera le variabili
 
-<!-- CP-STEPS-START:retrieve-openrc-file -->
 Per recuperare le variabili d’ambiente scarica il file OpenRC dall’utente OpenStack creato in precedenza.
 
 Nel menu di sinistra, sotto la rubrica **Impostazioni**, clicca su `Utenti e ruoli`{.action}. Poi clicca sui `...`{.action} a destra del tuo utente e seleziona `Scarica il file RC di Openstack`{.action}.
@@ -36,7 +35,6 @@ Nel menu di sinistra, sotto la rubrica **Impostazioni**, clicca su `Utenti e ruo
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Un file OpenRC corrisponde sia un utente che a una zona. Non è possibile gestire più zone in uno stesso file.
-<!-- CP-STEPS-END:retrieve-openrc-file -->
 
 ### Step 2: impostare le variabili
 

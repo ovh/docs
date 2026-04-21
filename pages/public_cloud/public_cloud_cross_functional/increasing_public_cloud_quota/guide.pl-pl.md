@@ -29,13 +29,11 @@ Aby korzystać z dodatkowych zasobów i projektów, należy zwiększyć limity.
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-<!-- CP-STEPS-START:navigate-quota-regions -->
 W menu po lewej stronie kliknij `Limity i regiony`{.action} pod sekcją **Ustawienia**.
 
 ![Strona "Limity i regiony" przedstawiająca aktualne limity projektu według regionów](images/raisepciquota1.png){.thumbnail}
 
 Ta strona przedstawia podsumowanie obecnych limitów projektu według regionów. Pojawia się ostrzeżenie, gdy zasób osiągnie 80% swojego limitu.
-<!-- CP-STEPS-END:navigate-quota-regions -->
 
 ### Zwiększenie limitu zasobów
 
@@ -45,7 +43,6 @@ Możesz zwiększyć limit zasobów ręcznie lub automatycznie.
 
 #### Zwiększanie limitu zasobów automatycznie dzięki funkcji „Limit autoscalingu"
 
-<!-- CP-STEPS-START:increase-quota-auto-scaling -->
 Ta opcja umożliwia żądanie automatycznego i stopniowego zwiększenia limitu zasobów. Limit zostanie dostosowany na podstawie faktycznego użycia **jeśli przekroczyłeś 60% obecnego limitu przez 30 kolejnych dni**, a także na podstawie zestawu kryteriów wewnętrznych i finansowych.
 
 > [!primary]
@@ -61,11 +58,9 @@ W prawym górnym rogu strony znajdziesz opcję **Limit autoscalingu**:
 ![Przycisk przełączania limitu autoscalingu ustawiony w pozycji Aktywny](images/autoscaling.png){.thumbnail}
 
 Po aktywacji funkcja auto-scaling stopniowo zwiększy limit zasobów projektu na podstawie faktycznych potrzeb.
-<!-- CP-STEPS-END:increase-quota-auto-scaling -->
 
 #### Ręczne zwiększanie limitu zasobów
 
-<!-- CP-STEPS-START:increase-quota-manually -->
 > [!primary]
 >
 > Jeśli potrzebujesz zwiększyć limit, a przycisk `Zwiększ limity`{.action} nie jest dostępny w Twoim Panelu klienta, kliknij przycisk `Skontaktuj się z pomocą techniczną`{.action}.
@@ -102,7 +97,6 @@ Po wybraniu wolumenu kliknij przycisk `Zatwierdź`{.action}. Twoja płatność z
 >
 > Po kliknięciu przycisku `Zatwierdź`{.action} zamówienie zostaje automatycznie utworzone, a kwota zostanie odliczona z domyślnej metody płatności.
 >
-<!-- CP-STEPS-END:increase-quota-manually -->
 
 Bardziej szczegółowy przegląd zasobów można uzyskać w [interfejsie Horizon](https://horizon.cloud.ovh.net/auth/login/). Po zalogowaniu się kliknij opcję `Project`{.action}, a następnie `Overview`{.action}.
 

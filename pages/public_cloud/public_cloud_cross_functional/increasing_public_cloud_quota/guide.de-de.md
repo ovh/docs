@@ -29,13 +29,11 @@ Um zusätzliche Ressourcen und Projekte nutzen zu können, müssen die Quotas er
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-<!-- CP-STEPS-START:navigate-quota-regions -->
 Klicken Sie in der linken Seitenleiste unter **Einstellungen** auf `Quota und Regionen`{.action}.
 
 ![Seite "Quota und Regionen" mit aktuellen Projektkontingenten nach Region](images/raisepciquota1.png){.thumbnail}
 
 Diese Seite zeigt eine Zusammenfassung der aktuellen Quoten Ihres Projekts nach Region. Ein Hinweis wird angezeigt, sobald eine Ressource 80 % ihrer Quote erreicht.
-<!-- CP-STEPS-END:navigate-quota-regions -->
 
 ### Erhöhung der Ressourcenquote
 
@@ -45,7 +43,6 @@ Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
 
 #### Automatische Erhöhung Ihrer Ressourcenquoten mit der Funktion "Quota Autoscaling"
 
-<!-- CP-STEPS-START:increase-quota-auto-scaling -->
 Diese Option ermöglicht Ihnen, eine automatische und schrittweise Erhöhung Ihrer Ressourcenquote zu beantragen. Die Quote wird basierend auf Ihrer realen Nutzung angepasst, **wenn Sie 60 % Ihrer aktuellen Quote 30 aufeinanderfolgende Tage überschreiten**, sowie anhand einer Reihe interner und finanzieller Kriterien.
 
 > [!primary]
@@ -61,11 +58,9 @@ Im oberen rechten Bereich der Seite ist die Option **Quota Autoscaling** verfüg
 ![Schaltfläche zum Aktivieren/Deaktivieren des Quota Autoscalings im Status "Aktiviert"](images/autoscaling.png){.thumbnail}
 
 Sobald aktiviert, erhöht sich die Quote Ihres Projekts automatisch und schrittweise basierend auf Ihren tatsächlichen Anforderungen.
-<!-- CP-STEPS-END:increase-quota-auto-scaling -->
 
 #### Manuelle Erhöhung Ihrer Ressourcenquote
 
-<!-- CP-STEPS-START:increase-quota-manually -->
 > [!primary]
 >
 > Wenn Sie Ihre Quota erhöhen möchten und die Schaltfläche `Quota erhöhen`{.action} in Ihrem Kundencenter nicht verfügbar ist, klicken Sie auf die Schaltfläche `Kundendienst kontaktieren`{.action}.
@@ -102,7 +97,6 @@ Klicken Sie nach Auswahl der gewünschten Kapazität auf `Bestätigen`{.action}.
 >
 > Nachdem Sie auf die Schaltfläche `Bestätigen`{.action} geklickt haben, wird die Bestellung automatisch erstellt und der Betrag wird von Ihrer Standardzahlungsmethode abgebucht.
 >
-<!-- CP-STEPS-END:increase-quota-manually -->
 
 Für eine detailliertere Ansicht Ihrer Ressourcen besuchen Sie die [Horizon-Oberfläche](https://horizon.cloud.ovh.net/auth/login/). Klicken Sie nach der Anmeldung auf `Project`{.action} und dann auf `Overview`{.action}.
 

@@ -68,7 +68,6 @@ Windows-Benutzer können dieser Anleitung folgen, um die Umgebungsvariablen zu e
 
 ### Schritt 1: OpenRC-Datei herunterladen und sourcen
 
-<!-- CP-STEPS-START:download-openrc-file -->
 Klicken Sie auf `User und Rollen`{.action} im Bereich **Einstellungen** und dann auf `...`{.action} rechts neben Ihrem OpenStack-Benutzer.  
 Laden Sie die OpenRC-Datei dieses Benutzers herunter und geben Sie die Region an, in der Sie Aktionen durchführen möchten.
 
@@ -87,7 +86,6 @@ Ersetzen Sie "<password>" mit dem Passwort-String Ihres OpenStack-Benutzers, der
 ```bash
 source openrc.sh
 ```
-<!-- CP-STEPS-END:download-openrc-file -->
 
 ### Schritt 2: Ausgabe eines OpenStack-Tokens
 

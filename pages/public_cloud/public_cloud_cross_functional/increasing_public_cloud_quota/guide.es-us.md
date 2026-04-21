@@ -29,13 +29,11 @@ Si desea crear más, será necesario aumentar la cuota.
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-<!-- CP-STEPS-START:navigate-quota-regions -->
 En el menú de la izquierda, haga clic en `Cuotas y regiones`{.action} bajo **Ajustes**.
 
 ![Página Cuotas y regiones que muestra las cuotas actuales del proyecto por región](images/raisepciquota1.png){.thumbnail}
 
 Esta página presenta un resumen de las cuotas actuales de su proyecto por región. Aparece una advertencia cuando un recurso alcanza el 80 % de su cuota.
-<!-- CP-STEPS-END:navigate-quota-regions -->
 
 ### Aumentar la cuota de recursos
 
@@ -45,7 +43,6 @@ Puede aumentar la cuota de recursos de forma manual o automática.
 
 #### Aumentar automáticamente su cuota de recursos con la función "Cuota autoscaling"
 
-<!-- CP-STEPS-START:increase-quota-auto-scaling -->
 Esta opción le permite solicitar un aumento automático y progresivo de su cuota de recursos. La cuota se ajustará en función de su uso real **si supera el 60 % de su cuota actual durante 30 días consecutivos**, así como según un conjunto de criterios internos y financieros.
 
 > [!primary]
@@ -61,11 +58,9 @@ En la parte superior derecha de la página, la opción **Cuota autoscaling** est
 ![Botón de alternancia Cuota autoscaling configurado en Activada](images/autoscaling.png){.thumbnail}
 
 Una vez activado, el auto-scaling aumenta progresivamente la cuota de su proyecto en función de sus necesidades reales.
-<!-- CP-STEPS-END:increase-quota-auto-scaling -->
 
 #### Aumentar manualmente su cuota de recursos
 
-<!-- CP-STEPS-START:increase-quota-manually -->
 > [!primary]
 >
 > Si necesita aumentar su cuota y el botón `Aumentar los límites de mi cuota`{.action} no está disponible en su área de cliente, haga clic en el botón `Contactar con el soporte`{.action}.
@@ -79,7 +74,7 @@ Puede comprar diferentes cantidades de crédito.
 
 Haga clic en el botón `Aumentar los límites de mi cuota`{.action}.
 
-![Botón Aumentar los límits de mi cuota en la sección de cuotas de Public Cloud](images/raisepciquota2.png){.thumbnail}
+![Botón Aumentar los límites de mi cuota en la sección de cuotas de Public Cloud](images/raisepciquota2.png){.thumbnail}
 
 A continuación, haga clic en la flecha desplegable situada junto a `Seleccione el volumen`{.action} para ver la lista de cuotas disponibles. En esta sección también se indica la cantidad que se debe pagar para beneficiarse de esos recursos.
 
@@ -102,7 +97,6 @@ Una vez que haya seleccionado su volumen, haga clic en `Confirmar`{.action}. Su 
 >
 > Después de hacer clic en el botón `Confirmar`{.action}, el pedido se crea automáticamente y el importe se deduce de su método de pago predeterminado.
 >
-<!-- CP-STEPS-END:increase-quota-manually -->
 
 Para una vista más detallada de sus recursos, acceda a la [interfaz Horizon](https://horizon.cloud.ovh.net/auth/login/). Una vez conectado, haga clic en `Proyecto`{.action} y, a continuación, en `Descripción general`{.action}.
 

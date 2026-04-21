@@ -32,7 +32,6 @@ Pobranie zmiennych środowiskowych OpenStack na Twoje stanowisko umożliwi Ci ko
 
 ### Etap 1: Zgromadzenie zmiennych
 
-<!-- CP-STEPS-START:retrieve-openrc-file -->
 Aby zgromadzić zmienne środowiskowe, możesz pobrać utworzony wcześniej plik OpenRC użytkownika OpenStack.
 
 W menu po lewej stronie, w rubryce **Ustawienia** kliknij `Użytkownicy i role`{.action}, po prawej stronie nazwy użytkownika kliknij symbol `...`{.action} i wybierz pozycję `Pobierz plik RC OpenStack`{.action}.
@@ -40,7 +39,6 @@ W menu po lewej stronie, w rubryce **Ustawienia** kliknij `Użytkownicy i role`{
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Plik OpenRC odpowiada użytkownikowi, a także strefie. Nie można zarządzać kilkoma strefami w jednym pliku.
-<!-- CP-STEPS-END:retrieve-openrc-file -->
 
 ### Etap 2: Pobranie zmiennych
 
