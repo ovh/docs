@@ -1,6 +1,6 @@
 ---
-title: "Cómo configurar la agregación de enlaces con LACP en Debian 12 o Ubuntu 24.04"
-excerpt: "Active la agregación de enlaces en su servidor Debian 12 o Ubuntu 24.04 (Netplan) para aumentar la disponibilidad de su servidor y mejorar la eficiencia de sus conexiones de red"
+title: "Cómo configurar la agregación de enlaces con LACP en Debian 12 o Ubuntu 24.04 (EN)"
+excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server's availability and boost the efficiency of your network connections"
 updated: 2026-04-20
 ---
 
@@ -18,60 +18,60 @@ details[open]>summary::before {
 }
 </style>
 
-## Objetivo
+## Objective
 
-La tecnología LACP (Link Aggregation Control Protocol) está diseñada para aumentar la disponibilidad de su servidor y mejorar la eficiencia de sus conexiones de red. Puede agregar sus tarjetas de red y hacer que sus enlaces de red sean redundantes. Esto significa que, si un enlace falla, el tráfico se redirige automáticamente a otro enlace disponible. El ancho de banda disponible también se duplica gracias a la agregación.
+Link Aggregation Control Protocol (LACP) technology is designed to increase your server's availability, and boost the efficiency of your network connections. You can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
 
-**Esta guía explica cómo vincular sus interfaces para utilizarlas en la agregación de enlaces en Debian 12 (*o posterior*) / Ubuntu 24.04 (configuración Netplan).**
+**This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 (*or newer*) / Ubuntu 24.04 (Netplan configuration).**
 
 > [!warning]
-> Aunque las imágenes de Debian 12 y posteriores proporcionadas por OVHcloud utilizan Netplan por defecto, existen dos excepciones importantes en las que se utiliza `ifupdown` (/etc/network/interfaces):
+> While Debian 12 and newer images provided by OVHcloud utilize Netplan by default, there are two key exceptions where `ifupdown` (/etc/network/interfaces) is used instead:
 >
-> - **Modo de rescate**: Aunque está basado en Debian 12, el entorno de rescate utiliza la utilidad `ifupdown`.
-> - **Imágenes personalizadas**: Las instalaciones de Debian realizadas con su propia imagen pueden seguir utilizando `ifupdown` para la configuración de red.
+> - **Rescue mode**: Although based on Debian 12, the rescue environment relies on the `ifupdown` utility.
+> - **Custom images**: Debian installations performed using your own image may still use `ifupdown` for networking.
 >
-> Si desea configurar la agregación de enlaces en modo de rescate, o en un sistema operativo personalizado que utilice `ifupdown`, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+> If you wish to configure link aggregation in rescue mode, or on a custom OS relying on `ifupdown`, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) instead.
 >
 
-## Requisitos
+## Requirements
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---
 
-### Acceso al área de cliente de OVHcloud
+### OVHcloud Control Panel Access
 
-- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
-- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
 
 ---
 <!-- CP-NAV-END:baremetal-dedicated-servers -->
 
-## Procedimiento
+## Instructions
 
 > [!primary]
-> Los valores (direcciones MAC, direcciones IP, etc.) que se muestran en las configuraciones y ejemplos a continuación se proporcionan a modo de ejemplo. Por supuesto, debe sustituir estos valores por los suyos propios.
+> The values (MAC addresses, IP addresses, etc.) shown in the configurations and examples below are provided as examples. Of course, you must replace these values with your own.
 >
 
-### Obtención de las direcciones MAC
+### Retrieving MAC addresses
 
-Haga clic en la pestaña `Interfaces de red`{.action} y anote las direcciones MAC de cada interfaz (pública/privada) que se muestran en la parte inferior del menú.
+Switch to the tab `Network Interfaces`{.action} and take note of the MAC addresses for each interface (public/private) which are displayed at the bottom of the menu.
 
-![Área de cliente de OVHcloud](images/ControlPanel.png){.thumbnail}
+![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Tenga en cuenta que la dirección MAC de la interfaz **pública principal** es la que recibe las ofertas DHCP, tanto en el sistema operativo del servidor como en modo de rescate. Esta interfaz gestiona la conectividad pública en la configuración predeterminada.
+> Please note that the MAC address of the **main public** interface is the one receiving DHCP offers, both in the server's operating system and in rescue mode. This interface handles public connectivity in the default configuration.
 >
 
-Ahora que sabe qué direcciones MAC están asociadas a cada tipo (público/privado) de interfaz, debe obtener los nombres de las interfaces.
+Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
 
-### Obtención de los nombres de interfaces
+### Retrieving interfaces names
 
 > [!primary]
 >
-> Si pierde la conexión de red con su servidor, siga los pasos "**Abrir KVM**" de [esta guía](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+> If you lose network connection to your server, follow the "**Open KVM**" steps from [this guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 >
 
-Para obtener los nombres de las interfaces, ejecute el siguiente comando:
+To retrieve the names of the interfaces, execute the following command:
 
 ```bash
 ip a
@@ -79,10 +79,10 @@ ip a
 
 > [!primary]
 >
-> Este comando mostrará numerosas interfaces. Si tiene dificultades para determinar cuáles son sus interfaces físicas, la dirección IP pública del servidor sigue asociada a la primera interfaz de forma predeterminada.
+> This command will yield numerous interfaces. If you are having trouble determining which ones are your physical interfaces, the first interface will still have the server's public IP address attached to it by default.
 >
 
-A continuación se muestra un ejemplo de resultado:
+Here's an output example:
 
 ```text
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -107,21 +107,21 @@ A continuación se muestra un ejemplo de resultado:
     link/ether a1:b2:c3:d4:e5:d7 brd ff:ff:ff:ff:ff:ff
 ```
 
-Una vez que haya determinado los nombres de sus interfaces, puede configurar la agregación de interfaces en el sistema operativo.
+Once you have determined the names of your interfaces, you can configure interfaces bonding in the OS.
 
-### Configuración de la agregación de interfaces
+### Configuring interface bonding
 
-Seleccione la pestaña a continuación que corresponda a la configuración de su servidor:
+Select the tab below that matches your server configuration:
 
-- **Dos interfaces**: servidores Advance con dos tarjetas de red físicas.
-- **Cuatro interfaces - Double LAG**: servidores Scale y High Grade con OLA en modo **Active - Double LAG** (agregados público + privado). Esto requiere la [activación de OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) en el área de cliente de OVHcloud.
-- **Cuatro interfaces - Fully Private**: servidores Scale y High Grade con OLA en modo **Active - Fully Private** (agregado privado único para el vRack). Esto requiere la [activación de OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) en el área de cliente de OVHcloud.
+- **Two interfaces**: Advance servers with two physical NICs.
+- **Four interfaces - Double LAG**: Scale and High Grade servers with OLA in **Active - Double LAG** mode (public + private aggregates). This requires [OLA to be enabled](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) in the OVHcloud Control Panel.
+- **Four interfaces - Fully Private**: Scale and High Grade servers with OLA in **Active - Fully Private** mode (single private aggregate for vRack). This requires [OLA to be enabled](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) in the OVHcloud Control Panel.
 
 > [!tabs]
-> Dos interfaces
->> Sustituya el contenido de `/etc/netplan/50-cloud-init.yaml` por lo siguiente:
+> Two interfaces
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
 >>
->> **IP estática**
+>> **Static IP**
 >>
 >> ```yaml
 >> network:
@@ -199,12 +199,12 @@ Seleccione la pestaña a continuación que corresponda a la configuración de su
 >>
 >> ///
 >>
-> Cuatro interfaces - Double LAG
->> Esta configuración vincula las interfaces públicas en `bond0` (con la IP pública) y las interfaces privadas en `bond1` (para el vRack).
+> Four interfaces - Double LAG
+>> This configuration bonds public interfaces into `bond0` (with public IP) and private interfaces into `bond1` (for vRack).
 >>
->> Sustituya el contenido de `/etc/netplan/50-cloud-init.yaml` por lo siguiente:
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
 >>
->> **IP estática**
+>> **Static IP**
 >>
 >> ```yaml
 >> network:
@@ -318,15 +318,15 @@ Seleccione la pestaña a continuación que corresponda a la configuración de su
 >>
 >> ///
 >>
-> Cuatro interfaces - Fully Private
->> Esta configuración agrega todas las interfaces físicas en un único agregado para uso exclusivo del vRack. No hay conectividad IP pública.
+> Four interfaces - Fully Private
+>> This configuration aggregates all physical interfaces into a single bond for vRack use only. There is no public IP connectivity.
 >>
 >> > [!warning]
 >> >
->> > Tras la implementación de OLA en modo Fully Private, la IP pública deja de estar accesible. Asegúrese de disponer de un medio de acceso alternativo (por ejemplo, a través de otro servidor en el vRack, o mediante KVM/IPMI) antes de aplicar esta configuración.
+>> > Following the implementation of OLA in Fully Private mode, the public IP is no longer accessible. Make sure you have an alternative means of access (e.g. through another server in the vRack, or via KVM/IPMI) before applying this configuration.
 >> >
 >>
->> Sustituya el contenido de `/etc/netplan/50-cloud-init.yaml` por lo siguiente:
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
 >>
 >> ```yaml
 >> network:
@@ -362,24 +362,24 @@ Seleccione la pestaña a continuación que corresponda a la configuración de su
 >>
 >> > [!primary]
 >> >
->> > En modo Fully Private, el agregado utiliza la dirección MAC de la interfaz **privada principal**. Para asignar una dirección IP a este agregado para la comunicación vRack, añada un bloque `addresses` bajo `bond0` con su IP privada del vRack.
+>> > In Fully Private mode, the bond uses the MAC address of the **main private** interface. To assign an IP address to this bond for vRack communication, add an `addresses` block under `bond0` with your vRack private IP.
 >> >
 
-### Aplicación de la configuración
+### Applying the configuration
 
 > [!primary]
-> El comando `netplan try` no se puede utilizar al configurar los agregados.
+> The `netplan try` command can't be used when configuring bonds.
 
-Aplique la configuración con el siguiente comando:
+Apply the configuration using the following command:
 
 ```bash
 sudo netplan apply
 ```
 
-Pueden pasar varios segundos antes de que los agregados estén operativos.
+It may take several seconds for the bond interfaces to come up.
 
-## Más información
+## Go further
 
-[Configurar OVHcloud Link Aggregation en el área de cliente](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+[Configuring OVHcloud Link Aggregation in the Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Join our [community of users](/links/community).
