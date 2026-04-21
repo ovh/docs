@@ -62,8 +62,6 @@ ip a
 
 ### Obtención de las direcciones MAC
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en **Servidores dedicados**.
-
 Vaya a la pestaña `Interfaces de red`{.action} y tome nota de las direcciones MAC de cada interfaz (pública/privada) que se muestran en la parte inferior del menú.
 
 ![Área de cliente de OVHcloud](images/ControlPanel.png){.thumbnail}

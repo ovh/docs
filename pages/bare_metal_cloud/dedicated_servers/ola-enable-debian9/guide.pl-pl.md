@@ -63,8 +63,6 @@ Agregacja oparta jest na technologii IEEE 802.3ad, Link Aggregation Control Prot
 
 ### Pobieranie adresów MAC
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz serwer z listy **Serwery dedykowane**.
-
 Przejdź do zakładki `Interfejsy sieciowe`{.action} i zanotuj adresy MAC dla każdego interfejsu (publicznego/prywatnego), które są wyświetlane na dole menu.
 
 ![Panel klienta OVHcloud](images/ControlPanel.png){.thumbnail}
