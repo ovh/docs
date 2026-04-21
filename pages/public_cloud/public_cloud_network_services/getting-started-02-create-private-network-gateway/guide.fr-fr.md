@@ -33,6 +33,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](/l
 
 ### Depuis l'espace client OVHcloud
 
+<!-- CP-STEPS-START:create-gateway -->
 > [!success]
 > Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 6 étapes.
 
@@ -105,6 +106,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](/l
 >>
 >> ![nouveau gateway](images/mynewgateway.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:create-gateway -->
 
 ### Via Terraform
 
