@@ -47,7 +47,6 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 
 ## Procedimiento
 
-<!-- CP-STEPS-START:procedimiento-comprar-additional-ip -->
 En el menú de la izquierda, abra `IP públicas`{.action} en **Network**.
 
 Abra la pestaña `Additional IP`{.action} y haga clic en el botón `Acciones`{.action}. Seleccione `Añadir una nueva IP`{.action}.
@@ -96,7 +95,6 @@ Para más información, consulte nuestra guía sobre la [gestión de los pedidos
 También puede consultar la orden de pedido en el área de cliente, en la sección "`Cuadro de mando`{.action}", haciendo clic en "`Ver mis pedidos`{.action}".
 
 El siguiente paso es configurar la IP en el sistema operativo. Consulte [nuestra guía sobre cómo configurar](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance) el alojamiento web.
-<!-- CP-STEPS-END:procedimiento-comprar-additional-ip -->
 
 ## Más información
 

@@ -47,7 +47,6 @@ Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di un
 
 ## Procedura
 
-<!-- CP-STEPS-START:acquista-additional-ip-procedura -->
 Nel menu a sinistra, apri `IP pubblici`{.action} in **Network**.
 
 Apri la scheda `Additional IP`{.action} e clicca sul pulsante `Azioni`{.action}. Seleziona `Aggiungi un nuovo IP`{.action}.
@@ -94,7 +93,6 @@ Il buono d'ordine si aprirà automaticamente per completare l'acquisto.
 Per maggiori informazioni, consulta la nostra guida sulla [gestione degli ordini](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) OVHcloud.
 
 Il buono d'ordine è disponibile anche nello Spazio Cliente, sezione `Dashboard`{.action}, cliccando su `Visualizza i tuoi ordini`{.action}.
-<!-- CP-STEPS-END:acquista-additional-ip-procedura -->
 
 Il prossimo step consiste nel configurare l'IP nel tuo sistema operativo. Consulta [la nostra guida dedicata a questa configurazione](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 

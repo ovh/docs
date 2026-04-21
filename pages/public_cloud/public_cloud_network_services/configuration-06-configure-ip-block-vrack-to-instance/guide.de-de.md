@@ -54,13 +54,11 @@ This configuration involves several steps, using both the OVHcloud Control Panel
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish.
 
-<!-- CP-STEPS-START:add-project-to-vrack -->
 For older projects, go to the `Network`{.action} section and click on `vRack private network`{.action}. Next, select your vRack from the list.
 
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
-<!-- CP-STEPS-END:add-project-to-vrack -->
 
 <a name="addipblock"></a>
 
@@ -73,13 +71,11 @@ From the list of eligible services, select the project you want to add to the vR
 > This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
 >
 
-<!-- CP-STEPS-START:add-ip-block-to-vrack -->
 Go to the `Network`{.action} section and click on `vRack private network`{.action}.
 
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on `Add`{.action}.
 
 ![vrack](images/addIPblock.png){.thumbnail}
-<!-- CP-STEPS-END:add-ip-block-to-vrack -->
 
 <a name="createnetwork"></a>
 
@@ -87,7 +83,6 @@ Select your vRack from the list to display the list of eligible services. Click 
 
 Once your project has been added to the vRack, create a Private Network to attach to the Public Cloud instance.
 
-<!-- CP-STEPS-START:create-private-network -->
 In the `Public Cloud`{.action} section, click on `Private Network`{.action} in the left-hand menu under **Network**.
 
 Click on `Add Private Network`{.action}.
@@ -113,7 +108,6 @@ This step offers several configuration options. For the purpose of this guide, w
 - **DHCP address distribution options**: You can keep the default private IP range or use a different one. However, leave the **DHCP** box unchecked.
 
 Once done, click on `Create`{.action}.
-<!-- CP-STEPS-END:create-private-network -->
 
 <a name="subnet"></a>
 

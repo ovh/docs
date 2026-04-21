@@ -43,7 +43,6 @@ Można zaimportować adres Additional IP powiązany z inną usługą OVHcloud.
 
 ## W praktyce
 
-<!-- CP-STEPS-START:import-additional-ip -->
 W menu po lewej stronie otwórz `Publiczne adresy IP`{.action} w **Sieć**.
 
 Otwórz kartę `Additional IP`{.action} i kliknij przycisk `Operacje`{.action}. Wybierz `Importuj Additional IP`{.action}, aby wyświetlić wszystkie adresy IP, które mogą być importowane do Twojego projektu Public Cloud.
@@ -78,7 +77,6 @@ Kliknij przycisk `Dołącz`{.action}, aby potwierdzić. Na stronie pojawi się k
 >
 
 Twój adres Additional IP zostanie teraz przypisany do Twojej instancji.
-<!-- CP-STEPS-END:import-additional-ip -->
 
 Następnym krokiem jest konfiguracja IP w systemie operacyjnym. Zapoznaj się [z przewodnikiem dotyczącym tej konfiguracji](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 

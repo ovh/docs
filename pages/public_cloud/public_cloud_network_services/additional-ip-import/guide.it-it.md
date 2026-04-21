@@ -43,7 +43,6 @@ Per configurare un indirizzo Additional IP sulle tue istanze Public Cloud, ad es
 
 ## Procedura
 
-<!-- CP-STEPS-START:importa-additional-ip-procedura -->
 Nel menu a sinistra, apri `IP pubblici`{.action} in **Network**.
 
 Apri la scheda `Additional IP`{.action} e clicca sul pulsante `Azioni`{.action}. Seleziona `Importa un Additional IP`{.action} per visualizzare tutti gli indirizzi IP che possono essere importati nel tuo progetto Public Cloud.
@@ -78,7 +77,6 @@ Clicca su `Conferma`{.action}. La pagina visualizzerà quindi un messaggio di mo
 >
 
 Il tuo indirizzo aggiuntivo IP sarà associato alla tua istanza.
-<!-- CP-STEPS-END:importa-additional-ip-procedura -->
 
 Il prossimo step consiste nel configurare l'IP nel tuo sistema operativo. Consulta [la nostra guida dedicata a questa configurazione](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 

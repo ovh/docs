@@ -46,7 +46,6 @@ Questa guida ti mostra come trasferire un Additional IP da un’istanza all’al
 > Un Additional IP non può essere spostato tra diverse zone. Ad esempio, un IP localizzato nel datacenter di SBG può essere spostato verso GRA o RBX ma non verso BHS.
 >
 
-<!-- CP-STEPS-START:migrate-additional-ip -->
 Nel menu a sinistra, clicca sulla sezione **Network** e apri la sezione `IP pubblici`{.action}. Clicca sulla scheda `Additional IP`{.action}.
 
 In questo esempio, l'indirizzo Additional IP ruotato verso "Instance_A" sarà migrato verso "Instance_B".
@@ -64,7 +63,6 @@ Clicca su `Conferma`{.action}.
 Dopo alcuni secondi, lo Spazio Cliente OVHcloud viene aggiornato. Se la migrazione ha avuto successo, visualizzi un messaggio di conferma.
 
 ![migrating Additional IP](images/migrateip_03.png){.thumbnail}
-<!-- CP-STEPS-END:migrate-additional-ip -->
 
 > [!primary]
 >

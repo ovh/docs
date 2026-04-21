@@ -46,7 +46,6 @@ Esta guía explica cómo migrar una Additional IP de una instancia a otra. Por l
 > No es posible mover una Additional IP entre diferentes zonas. Por ejemplo, una IP localizada en el datacenter de SBG puede moverse hacia GRA o RBX, pero no hacia BHS.
 >
 
-<!-- CP-STEPS-START:migrate-additional-ip -->
 En la columna izquierda, haga clic en **Network** y abra la sección `IP públicas`{.action}. Haga clic en la pestaña `Additional IP`{.action}.
 
 En este ejemplo, la dirección Additional IP enrutada a "Instancia_A" será migrada a "Instancia_B".
@@ -64,7 +63,6 @@ Acepte haciendo clic en `Adjuntar`{.action}.
 Al cabo de unos segundos, el área de cliente se actualizará. Si la migración se ha realizado correctamente, se mostrará un mensaje de confirmación.
 
 ![Migrating Additional IP](images/migrateip_03.png){.thumbnail}
-<!-- CP-STEPS-END:migrate-additional-ip -->
 
 > [!primary]
 >

@@ -75,7 +75,6 @@ Hier ein kurzes Glossar der in dieser Anleitung verwendeten Begriffe:
 
 ### Netzwerk-Informationen abrufen
 
-<!-- CP-STEPS-START:netzwerk-informationen-abrufen -->
 Klicken Sie in Ihrem Public Cloud Projekt auf `Instanzen`{.action} im linken Menü. Klicken Sie dann auf `...`{.action} und `Instanz-Details`{.action} neben der gewünschten Instanz.
 
 ![Public-Cloud-IPv6](images/pci2022.png){.thumbnail}
@@ -83,7 +82,6 @@ Klicken Sie in Ihrem Public Cloud Projekt auf `Instanzen`{.action} im linken Men
 Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 
 ![Public-Cloud-IPv6](images/pci2022.1.png){.thumbnail}
-<!-- CP-STEPS-END:netzwerk-informationen-abrufen -->
 
 ### Beispiele für persistente Konfigurationen
 

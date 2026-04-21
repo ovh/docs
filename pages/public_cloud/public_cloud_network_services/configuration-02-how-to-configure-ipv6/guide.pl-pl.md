@@ -74,7 +74,6 @@ Oto krótki słowniczek terminów stosowanych w tym tutorialu:
 
 ### Pobranie danych sieciowych
 
-<!-- CP-STEPS-START:pobierz-dane-sieciowe -->
 W swoim projekcie Public Cloud kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie. Następnie kliknij na `...`{.action} obok odpowiadającej instancji i kliknij na `Szczegóły instancji`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
@@ -82,7 +81,6 @@ W swoim projekcie Public Cloud kliknij pozycję `Instancje`{.action} w menu bocz
 Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 
 ![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
-<!-- CP-STEPS-END:pobierz-dane-sieciowe -->
 
 ### Przykłady konfiguracji stałych
 

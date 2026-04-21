@@ -47,7 +47,6 @@ W tym przewodniku wyjaśniono, jak przenieść adres Additional IP (używany w p
 > Dodatkowy adres IP nie może być przenoszony między różnymi strefami. Na przykład adres IP zlokalizowany w centrum danych SBG może zostać przeniesiony do GRA lub RBX, ale nie do BHS.
 >
 
-<!-- CP-STEPS-START:migrate-additional-ip -->
 W menu po lewej stronie przejdź do sekcji **Sieć**, a następnie otwórz część `Publiczne adresy IP`{.action}. Kliknij kartę `Additional IP`{.action}.
 
 W tym przykładzie adres Additional IP przekierowany na "Instance_A" zostanie przeniesiony na "Instance_B".
@@ -70,7 +69,6 @@ Po kilku sekundach Panel klienta jest aktualizowany. Jeśli migracja zakończył
 >
 Additional IP może być skonfigurowany na serwerze docelowym przed lub po migracji. Jeśli został wstępnie skonfigurowany, zacznie odpowiadać po zakończeniu operacji routingu.
 >
-<!-- CP-STEPS-END:migrate-additional-ip -->
 
 ## Sprawdź również
 

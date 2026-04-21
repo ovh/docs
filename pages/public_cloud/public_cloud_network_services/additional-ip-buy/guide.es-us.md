@@ -47,7 +47,6 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 
 ## Procedimiento
 
-<!-- CP-STEPS-START:procedimiento-comprar-additional-ip -->
 En el menú de la izquierda, abra `IP públicas`{.action} en **Network**.
 
 Abra la pestaña `Additional IP`{.action} y haga clic en el botón `Acciones`{.action}. Seleccione `Añadir una nueva IP`{.action}.
@@ -94,7 +93,6 @@ La orden de pedido se abrirá automáticamente para finalizar la compra.
 Para más información, consulte nuestra guía sobre la [gestión de los pedidos en OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
 
 También puede consultar la orden de pedido en el área de cliente, en la sección `Dashboard`{.action}, haciendo clic en `Ver mis pedidos`{.action}.
-<!-- CP-STEPS-END:procedimiento-comprar-additional-ip -->
 
 El siguiente paso es configurar la IP en el sistema operativo. Consulte [nuestra guía sobre cómo configurar](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance) el alojamiento web.
 
