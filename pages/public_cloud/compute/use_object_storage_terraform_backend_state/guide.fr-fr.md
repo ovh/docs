@@ -71,7 +71,9 @@ Vous devez d’abord disposer d’un conteneur Object Storage. Si ce n’est pas
 
 Pour ce guide, notre conteneur Object Storage est nommé `terraform-state-hp`, sa classe de stockage est `High Performance` et sa région est `GRA`.
 
+<!-- CP-STEPS-START:creating-an-object-storage-containerbucket -->
 ![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
+<!-- CP-STEPS-END:creating-an-object-storage-containerbucket -->
 
 Afin de stocker vos états Terraform sur un Object Storage, et généralement si vous souhaitez interagir avec l'Object Storage, vous devez avoir les droits pour gérer un Object Storage.
 

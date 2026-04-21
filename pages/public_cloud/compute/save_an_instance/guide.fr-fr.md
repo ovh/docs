@@ -60,11 +60,12 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 > **Note :** les Local Zones ne sont pas éligibles pour les sauvegardes distantes
 >
 
+<!-- CP-STEPS-START:creating-a-backup-of-an-instance -->
 > [!tabs]
-> Via l'espace client OVHcloud
+> Via l’espace client OVHcloud
 >>
 >> Cliquez sur `Instances`{.action} dans le menu de gauche.<br>
->> Une fois sur la page des instances, cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.
+>> Une fois sur la page des instances, cliquez sur le bouton `...`{.action} à droite de l’instance et sélectionnez `Créer un backup`{.action}.
 >>
 >> ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 >>
@@ -84,23 +85,23 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> ///
 >>
->> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, vous pouvez consulter le statut de la sauvegarde dans la section `Instance Backup`{.action} sous la rubrique **Compute** du menu de gauche, où l'état `Backup en cours` sera affiché pendant le processus.
+>> Il n’est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, vous pouvez consulter le statut de la sauvegarde dans la section `Instance Backup`{.action} sous la rubrique **Compute** du menu de gauche, où l’état `Backup en cours` sera affiché pendant le processus.
 >>
 >> Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
-> Via l'API OVHcloud <a name="createinstanceviaapi"></a>
->> Authentifiez-vous sur [l'API OVHcloud](/links/console).
+> Via l’API OVHcloud <a name="createinstanceviaapi"></a>
+>> Authentifiez-vous sur [l’API OVHcloud](/links/console).
 >>
->> Vous pouvez répertorier toutes les régions disponibles à l'aide de l'appel API suivant :
+>> Vous pouvez répertorier toutes les régions disponibles à l’aide de l’appel API suivant :
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
 >> >
 >>
->> Utilisez ensuite l'appel API suivant :
+>> Utilisez ensuite l’appel API suivant :
 >>
 >> > [!api]
 >> >
@@ -135,7 +136,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> ```
 >>
->> Vous pouvez répertorier toutes les régions disponibles à l'aide de la commande suivante :
+>> Vous pouvez répertorier toutes les régions disponibles à l’aide de la commande suivante :
 >>
 >> ```bash
 >> $ openstack region list
@@ -153,10 +154,10 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> /// details | Sauvegarde distante
 >>
->> Exécutez la commande suivante après avoir suivi l'étape de la sauvegarde locale :
+>> Exécutez la commande suivante après avoir suivi l’étape de la sauvegarde locale :
 >>
 >> ```bash
->> $ openstack workflow execution create ovh.glance.glance_download '{"src_image_id": "<image_id>", "src_region": "<current_region>", "dst_region": "<remote_region>"}'
+>> $ openstack workflow execution create ovh.glance.glance_download ‘{"src_image_id": "<image_id>", "src_region": "<current_region>", "dst_region": "<remote_region>"}’
 >> ```
 >>
 >> ///
@@ -172,6 +173,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:creating-a-backup-of-an-instance -->
 
 ### Créer une sauvegarde automatisée d’une instance
 
@@ -180,6 +182,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 > Si vous souhaitez automatiser cette fonctionnalité directement via OpenStack, vous pouvez créer un workflow Mistral associé à un cron trigger.
 >
 
+<!-- CP-STEPS-START:creating-an-automated-backup-of-an-instance -->
 Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer une sauvegarde automatisée`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
@@ -220,9 +223,11 @@ Cliquez sur le bouton `Ajouter un backup distant`{.action}, sélectionnez une lo
 ![public-cloud-instance-backup-distant](images/createbackup8distant.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:creating-an-automated-backup-of-an-instance -->
 
 ### Gestion des sauvegardes et des plannings
 
+<!-- CP-STEPS-START:managing-backups-and-schedules -->
 Les planifications peuvent être créées et supprimées dans la section `Workflow Management`{.action} qui se trouve sous la rubrique **Compute** dans le menu de gauche.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
@@ -230,6 +235,7 @@ Les planifications peuvent être créées et supprimées dans la section `Workfl
 Les sauvegardes de vos instances sont gérées dans la section `Instance Backup`{.action} qui se trouve sous la rubrique **Compute** dans le menu de gauche.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+<!-- CP-STEPS-END:managing-backups-and-schedules -->
 
 > [!warning]
 > L'option de sauvegarde de l'instance doit être supprimée séparément si vous ne souhaitez plus qu'elle vous soit facturée. La suppression d'une instance ne supprime pas les options qui y sont attachées.

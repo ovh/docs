@@ -28,152 +28,188 @@ Vous pouvez gérer vos instances Public Cloud dans votre [espace client OVHcloud
 
 ## En pratique
 
-### Utiliser l'interface de gestion des instances
+### Utiliser l’interface de gestion des instances
 
+<!-- CP-STEPS-START:list-instances -->
 Cliquez sur `Instances`{.action} dans le menu de gauche.
 
-Cette page liste l'ensemble de vos instances Public Cloud et certaines de leurs propriétés :
+Cette page liste l’ensemble de vos instances Public Cloud et certaines de leurs propriétés :
 
-- l'ID de l'instance, nécessaire pour certains appels API;
-- la localisation du datacentre, c'est-à-dire la région de l'instance;
-- le modèle de l'instance;
-- l'image, c'est-à-dire l'OS installé sur l'instance;
-- l'adresse IPv4 de l'instance;
-- l'adresse privée actuellement attachée à l'instance;
-- les volumes (disques) additionnels actuellement attachés à l'instance;
-- le statut de l'instance, indiquant si elle est à l'état `Activé`.
+- l’ID de l’instance, nécessaire pour certains appels API;
+- la localisation du datacentre, c’est-à-dire la région de l’instance;
+- le modèle de l’instance;
+- l’image, c’est-à-dire l’OS installé sur l’instance;
+- l’adresse IPv4 de l’instance;
+- l’adresse privée actuellement attachée à l’instance;
+- les volumes (disques) additionnels actuellement attachés à l’instance;
+- le statut de l’instance, indiquant si elle est à l’état `Activé`.
+<!-- CP-STEPS-END:list-instances -->
 
-### Options de gestion sur le tableau de bord de l'instance
+### Options de gestion sur le tableau de bord de l’instance
 
+<!-- CP-STEPS-START:instance-dashboard -->
 Depuis la page de gestion des instances, cliquez sur le nom de l’instance concernée. 
 
 Vous accédez alors à la page `Informations générales`, qui centralise les principaux détails et l’état de fonctionnement de votre instance (statut, ressources, réseau, accès, et métadonnées).
 
 Certaines de ces opérations sont aussi accessibles depuis la page de gestion des instances, via le bouton `...`{.action} du tableau.
+<!-- CP-STEPS-END:instance-dashboard -->
 
-#### Éditer la configuration d'une instance
+#### Éditer la configuration d’une instance
 
+<!-- CP-STEPS-START:edit-instance -->
 Cliquez sur `Modifier l’image`{.action} ou `Modifier le modèle`{.action}.
 
 Vous pouvez également ouvrir `Actions supplémentaires`{.action}, puis sélectionner `Editer`{.action}.
 
-La nouvelle page présente une version modifiée des options [de création d'instance](/pages/public_cloud/compute/public-cloud-first-steps), dans laquelle vous pouvez modifier les éléments suivants :
+La nouvelle page présente une version modifiée des options [de création d’instance](/pages/public_cloud/compute/public-cloud-first-steps), dans laquelle vous pouvez modifier les éléments suivants :
 
-- **Modifier le nom** : vous pouvez donner un nom à l'instance pour plus de facilité d'identification.
-- **Modifier l’image** : vous pouvez choisir un autre système d'exploitation pour l'instance (notez que la réinstallation d'une instance supprimera toutes les données qu'elle contient).
-- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#model) pour plus d'informations sur les options.
-- **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Consultez [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) pour plus d'informations.
+- **Modifier le nom** : vous pouvez donner un nom à l’instance pour plus de facilité d’identification.
+- **Modifier l’image** : vous pouvez choisir un autre système d’exploitation pour l’instance (notez que la réinstallation d’une instance supprimera toutes les données qu’elle contient).
+- **Modifier le modèle** : vous pouvez changer de modèle d’instance. Consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#model) pour plus d’informations sur les options.
+- **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l’instance d’une facturation horaire à mensuelle. Consultez [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) pour plus d’informations.
+<!-- CP-STEPS-END:edit-instance -->
 
-#### Créer un backup d'une instance
+#### Créer un backup d’une instance
 
+<!-- CP-STEPS-START:create-backup -->
 Cliquez sur `Créer un backup`{.action}.
 
-Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute/save_an_instance) » pour plus d'informations.
+Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute/save_an_instance) » pour plus d’informations.
+<!-- CP-STEPS-END:create-backup -->
 
 #### Supprimer une instance
 
+<!-- CP-STEPS-START:delete-instance -->
 Cliquez sur `Supprimer`{.action}.
 
-Cette action supprimera définitivement l'instance et toutes ses données.
+Cette action supprimera définitivement l’instance et toutes ses données.
 
 Confirmez la demande de suppression dans la fenêtre qui apparaît.
 
 > [!warning]
-> La suppression d'une instance ne supprime pas automatiquement toutes les options qui lui sont associées (storage, snapshot, backup, etc...), assurez-vous que toutes les autres options associées à l'instance sont également supprimées pour arrêter d'être facturé.
+> La suppression d’une instance ne supprime pas automatiquement toutes les options qui lui sont associées (storage, snapshot, backup, etc...), assurez-vous que toutes les autres options associées à l’instance sont également supprimées pour arrêter d’être facturé.
 >
+<!-- CP-STEPS-END:delete-instance -->
 
 #### Attacher un volume
 
+<!-- CP-STEPS-START:attach-volume -->
 Cliquez sur `Attacher un volume`{.action}.
 
 Sélectionnez ensuite le volume à associer à l’instance, puis cliquez sur `Confirmer`{.action}. Une fois attaché, le volume est immédiatement disponible et peut être monté depuis le système d’exploitation de l’instance.
+<!-- CP-STEPS-END:attach-volume -->
 
 #### Changer le reverse DNS
 
+<!-- CP-STEPS-START:change-reverse-dns -->
 Cliquez sur `⋮`{.action} puis `Changer le reverse DNS`{.action}.
 
-Reportez-vous au guide « [Configurer le reverse DNS d'une instance Public Cloud](/pages/public_cloud/compute/setup_instance_reverse) » pour plus d'informations.
+Reportez-vous au guide « [Configurer le reverse DNS d’une instance Public Cloud](/pages/public_cloud/compute/setup_instance_reverse) » pour plus d’informations.
+<!-- CP-STEPS-END:change-reverse-dns -->
 
 #### Configurer le pare-feu
 
+<!-- CP-STEPS-START:configure-firewall -->
 Cliquez sur `⋮`{.action} puis `Configurer le pare-feu`{.action}.
 
-Reportez-vous au guide « [Activer et configurer le Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) » pour plus d'informations.
+Reportez-vous au guide « [Activer et configurer le Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) » pour plus d’informations.
+<!-- CP-STEPS-END:configure-firewall -->
 
 #### Gérer les réseaux privés
 
+<!-- CP-STEPS-START:manage-private-networks -->
 Cliquez sur `⋮`{.action} puis `Gérer les réseaux privés`{.action}.
 
-Reportez-vous au guide « [Créer un réseau privé avec une Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) » pour plus d'informations.
+Reportez-vous au guide « [Créer un réseau privé avec une Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) » pour plus d’informations.
+<!-- CP-STEPS-END:manage-private-networks -->
 
 #### Attacher un réseau
 
+<!-- CP-STEPS-START:attach-network -->
 Cliquez sur `⋮`{.action} puis `Attacher un réseau`{.action}.
 
 Sélectionnez le réseau souhaité dans la liste déroulante, puis cliquez sur `Confirmer`{.action}.
+<!-- CP-STEPS-END:attach-network -->
 
 #### Actions supplémentaires
 
+<!-- CP-STEPS-START:additional-actions -->
 Cliquez sur `Actions supplémentaires`{.action}
+<!-- CP-STEPS-END:additional-actions -->
 
-##### Créer un backup automatique d'une instance
+##### Créer un backup automatique d’une instance
 
+<!-- CP-STEPS-START:create-automatic-backup -->
 Cliquez sur `Créer une sauvegarde automatisée`{.action}.
 
-Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute/save_an_instance#creer-une-sauvegarde-automatisee-dune-instance) » pour plus d'informations.
+Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute/save_an_instance#creer-une-sauvegarde-automatisee-dune-instance) » pour plus d’informations.
+<!-- CP-STEPS-END:create-automatic-backup -->
 
 ##### Arrêter une instance
 
+<!-- CP-STEPS-START:stop-instance -->
 Cliquez sur `Arrêter`{.action}.
 
-Ceci mettra l'instance dans l'état `Éteinte`, mais vous serez toujours facturé au même prix pour votre instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d'informations.
+Ceci mettra l’instance dans l’état `Éteinte`, mais vous serez toujours facturé au même prix pour votre instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d’informations.
 
-Cliquez sur `Démarrer`{.action} pour réactiver l'instance.
+Cliquez sur `Démarrer`{.action} pour réactiver l’instance.
+<!-- CP-STEPS-END:stop-instance -->
 
 ##### Utiliser le mode rescue
 
+<!-- CP-STEPS-START:rescue-mode -->
 Cliquez sur `Redémarrer en mode rescue`{.action}.
 
-Cela activera le mode rescue de l'instance. Consultez notre guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) pour obtenir des informations détaillées.
+Cela activera le mode rescue de l’instance. Consultez notre guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) pour obtenir des informations détaillées.
+<!-- CP-STEPS-END:rescue-mode -->
 
 ##### Redémarrer une instance
 
+<!-- CP-STEPS-START:restart-instance -->
 > [!warning]
-> L'option de redémarrage à chaud (soft) est actuellement indisponible pour les instances Metal.
+> L’option de redémarrage à chaud (soft) est actuellement indisponible pour les instances Metal.
 >
 
 - Cliquez sur `Redémarrer à chaud (soft)`{.action} pour effectuer un redémarrage au niveau logiciel.
 - Cliquez sur `Redémarrer à froid (hard)`{.action} pour lancer un reboot au niveau matériel.
 
 Confirmez la demande de redémarrage dans la fenêtre qui apparaît.
+<!-- CP-STEPS-END:restart-instance -->
 
 ##### Suspendre (*shelve*) une instance
 
+<!-- CP-STEPS-START:shelve-instance -->
 Cliquez sur `Suspendre`{.action}.
 
-Ceci placera l'instance dans l'état « *shelved* », affiché ici comme `Suspendue`. Consultez notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspendre-shelve-une-instance) » pour plus d'informations sur les différents états de suspension d'une instance.
+Ceci placera l’instance dans l’état « *shelved* », affiché ici comme `Suspendue`. Consultez notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspendre-shelve-une-instance) » pour plus d’informations sur les différents états de suspension d’une instance.
 
-Cliquez sur `Réactiver`{.action} pour restaurer l'état `Activé` de l'instance.
+Cliquez sur `Réactiver`{.action} pour restaurer l’état `Activé` de l’instance.
+<!-- CP-STEPS-END:shelve-instance -->
 
 ##### Réinstaller une instance
 
+<!-- CP-STEPS-START:reinstall-instance -->
 Cliquez sur `Réinstaller`{.action}.
 
-Cette action réinstallera l'instance avec le même système d'exploitation, à condition que l'image soit toujours prise en charge.
+Cette action réinstallera l’instance avec le même système d’exploitation, à condition que l’image soit toujours prise en charge.
 
 Notez que la réinstallation **supprime toutes les données** actuellement stockées sur votre instance.
+<!-- CP-STEPS-END:reinstall-instance -->
 
 ### Accéder à la console VNC <a name="accessvnc"></a>
 
-Cliquez sur `Instances`{.action} dans le menu de gauche. Sur la page de gestion des instances, cliquez sur le nom de l'instance dans le tableau.
+<!-- CP-STEPS-START:vnc-console -->
+Cliquez sur `Instances`{.action} dans le menu de gauche. Sur la page de gestion des instances, cliquez sur le nom de l’instance dans le tableau.
 
-Cliquez alors sur l'onglet `Console VNC`{.action}.
+Cliquez alors sur l’onglet `Console VNC`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-La console VNC fournit un accès direct à votre instance. Pour que cet accès fonctionne, vous devez d'abord configurer un nom d'utilisateur et un mot de passe sur l'instance. 
+La console VNC fournit un accès direct à votre instance. Pour que cet accès fonctionne, vous devez d’abord configurer un nom d’utilisateur et un mot de passe sur l’instance. 
 
-Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) » pour plus d'informations.
+Consultez notre guide « [Créer une première instance Public Cloud et s’y connecter](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) » pour plus d’informations.
+<!-- CP-STEPS-END:vnc-console -->
 
 ## Aller plus loin
 

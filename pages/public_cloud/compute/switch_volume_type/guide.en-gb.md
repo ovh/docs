@@ -41,6 +41,7 @@ This modification can be made via Horizon or the OpenStack CLI.
 > Conversions from **-LUKS** to **non -LUKS** (or vice versa) are not supported, including via OpenStack / Horizon.
 >
 
+<!-- CP-STEPS-START:instructions -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
@@ -107,6 +108,7 @@ This modification can be made via Horizon or the OpenStack CLI.
 >> $ openstack volume set --type <VOLUME_TYPE> --retype-policy on-demand <VOLUME_NAME_OR_ID>
 >> ```
 >>
+<!-- CP-STEPS-END:instructions -->
 
 ## Go further
 

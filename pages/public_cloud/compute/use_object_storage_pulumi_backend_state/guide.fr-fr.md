@@ -70,6 +70,7 @@ A state is composed of several files inside a `.pulumi` folder:
 
 ### Creating an Object Storage container/bucket
 
+<!-- CP-STEPS-START:creating-an-object-storage-container-bucket -->
 First, you need to have an Object Storage container. If you don't already have one, please consult the guide [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 For this guide, our Object Storage container has the following characteristics:
@@ -95,6 +96,7 @@ Export your Object Storage credentials in environment variables:
 export AWS_ACCESS_KEY_ID=<S3 access key>
 export AWS_SECRET_ACCESS_KEY=<S3 secret key>
 ```
+<!-- CP-STEPS-END:creating-an-object-storage-container-bucket -->
 
 ### Set-up Pulumi backend and login
 

@@ -99,6 +99,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 
 ### Attacher un nouveau volume
 
+<!-- CP-STEPS-START:attach-volume -->
 > [!tabs]
 > **Via l'espace client OVHcloud**
 >> Ouvrez `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
@@ -320,6 +321,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> +-----------+-------------------------------------+
 >> ```
 >>
+<!-- CP-STEPS-END:attach-volume -->
 
 ### Configuration du nouveau disque
 
@@ -667,6 +669,7 @@ Voici comment **démonter le volume** du système d'exploitation avant de le dé
 
 Pour finir, nous allons détacher le volume de l'instance : 
 
+<!-- CP-STEPS-START:detach-volume-from-instance -->
 > [!tabs]
 > **Via l'espace client OVHcloud**
 >> Rendez-vous dans la rubrique `Public Cloud`{.action} de votre espace client OVHcloud et cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
@@ -763,6 +766,7 @@ Pour finir, nous allons détacher le volume de l'instance :
 >>
 >> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
 >> ```
+<!-- CP-STEPS-END:detach-volume-from-instance -->
 
 ## Aller plus loin
 

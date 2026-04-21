@@ -1,6 +1,6 @@
 ---
-title: 'Créer / restaurer un serveur virtuel a partir d’une sauvegarde'
-excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d’une instance'
+title: 'Créer / restaurer un serveur virtuel a partir d'une sauvegarde'
+excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d'une instance'
 updated: 2025-11-04
 ---
 
@@ -28,15 +28,16 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 > - Locale : stockée dans la même région que votre instance.
 > - Distante : automatiquement répliquée dans une autre région de votre choix.
 >
-> Les opérations de **création** et de **restauration** d'une instance depuis une sauvegarde distante sont entièrement prises en charge via l’API OVHcloud, offrant une plus grande flexibilité et une intégration facilitée dans vos processus d’automatisation.
+> Les opérations de **création** et de **restauration** d'une instance depuis une sauvegarde distante sont entièrement prises en charge via l'API OVHcloud, offrant une plus grande flexibilité et une intégration facilitée dans vos processus d'automatisation.
 >
-> **Note :** Ces opérations ne sont pas encore disponibles depuis l’espace client OVHcloud.
+> **Note :** Ces opérations ne sont pas encore disponibles depuis l'espace client OVHcloud.
 >
 
 ### Créer une instance a partir d'une sauvegarde
 
 > [!tabs]
 > Via l'espace client OVHcloud
+<!-- CP-STEPS-START:creating-instance-from-backup-cp -->
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
 >> Cliquez ensuite sur `Instance backup`{.action} dans la barre de navigation de gauche sous **Compute**.
 >>
@@ -65,6 +66,7 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >> > Pour créer une instance dans un autre datacentre que celui de la sauvegarde, il faudra transférer celle-ci vers la zone correspondante. Référez-vous alors au [guide sur la sauvegarde d'une instance d'un datacentre à l'autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
 >> >
 >>
+<!-- CP-STEPS-END:creating-instance-from-backup-cp -->
 > Via la CLI OpenStack
 >>
 >> Pour créer une instance à partir de votre sauvegarde, utilisez l'ID de sauvegarde comme image avec cette commande :
@@ -86,7 +88,7 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >>
 >> > [!warning]
 >> >
->> > Si votre instance est un serveur Windows, vous devez sélectionner une flavor de type win-xx-xx (par exemple, win-b2-15) et disposer d’une interface publique sur le réseau Ext-Net. Sans ces conditions, l’authentification auprès du KMS OVHcloud ne sera pas possible, et votre serveur restera avec une [licence non activée](/pages/public_cloud/compute/activate-windows-license-private-mode). Cela pourrait entraîner des limitations, notamment l’absence de mises à jour. À noter qu’il est impossible de redimensionner une instance Linux (par exemple b2-15) en une instance Windows (comme win-b2-15). Pour effectuer cette transition, il est nécessaire de recréer une nouvelle instance.
+>> > Si votre instance est un serveur Windows, vous devez sélectionner une flavor de type win-xx-xx (par exemple, win-b2-15) et disposer d'une interface publique sur le réseau Ext-Net. Sans ces conditions, l'authentification auprès du KMS OVHcloud ne sera pas possible, et votre serveur restera avec une [licence non activée](/pages/public_cloud/compute/activate-windows-license-private-mode). Cela pourrait entraîner des limitations, notamment l'absence de mises à jour. À noter qu'il est impossible de redimensionner une instance Linux (par exemple b2-15) en une instance Windows (comme win-b2-15). Pour effectuer cette transition, il est nécessaire de recréer une nouvelle instance.
 >> >
 >>
 >> ![public-cloud-instance-backup-horizon-3](images/restorebackuphorizon3.png){.thumbnail}
@@ -107,8 +109,8 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >>
 >> Renseignez les variables :
 >>
->> - **serviceName** : L’ID du projet OVHcloud.
->> - **regionName** : Le nom de la région où l’instance sera créée.
+>> - **serviceName** : L'ID du projet OVHcloud.
+>> - **regionName** : Le nom de la région où l'instance sera créée.
 >>
 >> Exemple de corps de requête :
 >>
@@ -132,10 +134,11 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >> ```
 >>
 
-### Restaurer une instance à partir d’une sauvegarde
+### Restaurer une instance à partir d'une sauvegarde
 
 > [!tabs]
 > Via l'espace client OVHcloud
+<!-- CP-STEPS-START:restoring-instance-from-backup-cp -->
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
 >> Cliquez ensuite sur `Instances`{.action} dans la barre de navigation de gauche sous **Compute**.
 >>
@@ -163,6 +166,7 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >> > Comme indiqué dans l'encadré jaune qui vous est alors précisé, aucune donnée ajoutée après la création de cette sauvegarde ne pourra être récupérée.
 >> >
 >>
+<!-- CP-STEPS-END:restoring-instance-from-backup-cp -->
 > Via l'API OVHcloud
 >> > [!api]
 >> >
@@ -171,9 +175,9 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >>
 >> Renseignez les variables :
 >>
->> - **serviceName** : L’ID du projet OVHcloud.
->> - **regionName** : Le nom de la région où se trouve l’instance source.
->> - **instanceId** : L’ID unique de l’instance.
+>> - **serviceName** : L'ID du projet OVHcloud.
+>> - **regionName** : Le nom de la région où se trouve l'instance source.
+>> - **instanceId** : L'ID unique de l'instance.
 >>
 >> Exemple de corps de requête :
 >>

@@ -58,9 +58,11 @@ Avec OpenStack il y a deux méthodes pour importer votre propre image. Vous pouv
 
 Une fois que votre image est prête, suivez les étapes ci-dessous pour lancer l'importation à l'aide de la CLI OpenStack :
 
+<!-- CP-STEPS-START:upload-own-image-cli-download-rc -->
 1\. Téléchargez votre fichier openrc.sh pour votre utilisateur OpenStack à partir de votre espace client OVHcloud (sélectionnez la région vers laquelle vous souhaitez effectuer le téléchargement).
 
 ![openrc](images/open_rc_download.png){.thumbnail}
+<!-- CP-STEPS-END:upload-own-image-cli-download-rc -->
 
 2\. Chargez le fichier openrc :
 

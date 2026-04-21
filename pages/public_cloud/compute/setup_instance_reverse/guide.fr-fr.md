@@ -30,6 +30,7 @@ Configurer la résolution **Reverse DNS** d’une instance est particulièrement
 
 ## En pratique
 
+<!-- CP-STEPS-START:configure-reverse-dns -->
 Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Network`{.action} et cliquez sur `Adresses IP Publiques`{.action}.
 
 Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie. Vous pouvez également rechercher une adresse IP spécifique grâce à la barre de recherche située à gauche du menu déroulant.
@@ -50,6 +51,7 @@ Vous pouvez également éditer le reverse directement via l'icône `crayon`{.act
 >
 Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.
 >
+<!-- CP-STEPS-END:configure-reverse-dns -->
 
 ## Aller plus loin <a name="gofurther"></a>
 

@@ -11,7 +11,7 @@ Vous pouvez créer des disques supplémentaires pour vos instances Public Cloud 
 Cela peut être utile dans les cas suivants :
 
 - Si vous souhaitez restaurer les données du disque supplémentaires.
-- Si vous souhaitez disposer d’un espace de stockage hautement disponible et performant avec vos données.
+- Si vous souhaitez disposer d'un espace de stockage hautement disponible et performant avec vos données.
 - Si vous souhaitez déplacer vos données vers une autre instance.
 
 **Découvrez comment créer et configurer un disque supplémentaire sur une de vos instances depuis la sauvegarde d'un disque.**
@@ -37,6 +37,7 @@ Cela peut être utile dans les cas suivants :
 
 ### Créer le disque à partir d'une sauvegarde
 
+<!-- CP-STEPS-START:create-disk-from-backup -->
 Cliquez sur `Volume Snapshot`{.action} dans la barre de navigation de gauche sous **Storage & Backup**.
 
 À droite de la sauvegarde de votre choix, cliquez sur le bouton `...`{.action} puis sur `Créer un volume`{.action}.
@@ -48,28 +49,31 @@ Définissez alors le nom de ce nouveau disque et sa capacité puis cliquez sur `
 ![créer volume](images/volume02.png){.thumbnail}
 
 La création du disque peut prendre quelques minutes, suivant la taille de celui-ci.
+<!-- CP-STEPS-END:create-disk-from-backup -->
 
 ### Attacher le disque à une instance
 
+<!-- CP-STEPS-START:attach-disk-to-instance -->
 Une fois le disque créé, vous pouvez décider de l'attacher à une instance. Pour cela, cliquez sur `Block Storage`{.action} dans la barre de navigation de gauche sous **Storage & Backup**.
 
 À droite du volume de votre choix, cliquez sur le bouton `...`{.action} puis sur `Attacher à l'instance`{.action}.
 
 ![attacher volume](images/volume03.png){.thumbnail}
 
-Sélectionnez maintenant l’instance et cliquez sur `Confirmer`{.action} pour attacher le disque.
+Sélectionnez maintenant l'instance et cliquez sur `Confirmer`{.action} pour attacher le disque.
 
 ![attacher volume](images/volume04.png){.thumbnail}
 
-Le processus d’attachement du disque à votre instance va alors commencer et peut prendre quelques minutes.
+Le processus d'attachement du disque à votre instance va alors commencer et peut prendre quelques minutes.
 
 ![attacher volume](images/volume05.png){.thumbnail}
 
 > [!warning]
-Vous devez éviter la navigation en dehors de l’onglet en cours pendant l’attachement du disque. Cela peut interrompre le processus.
+Vous devez éviter la navigation en dehors de l'onglet en cours pendant l'attachement du disque. Cela peut interrompre le processus.
 >
 
 Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour configurer votre disque supplémentaire [sous Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-linux) ou [sous Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-windows).
+<!-- CP-STEPS-END:attach-disk-to-instance -->
 
 ## Aller plus loin
 

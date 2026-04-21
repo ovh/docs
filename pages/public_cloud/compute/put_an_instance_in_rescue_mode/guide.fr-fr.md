@@ -35,6 +35,7 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 
 ### Activer le mode rescue
 
+<!-- CP-STEPS-START:activate-rescue-mode -->
 Cliquez sur l’onglet `Instances`{.action} dans la barre de navigation à gauche.
 
 Cliquez sur `...`{.action} à droite de l’instance et sélectionnez `Redémarrer en mode rescue`{.action}.
@@ -49,9 +50,10 @@ Une fois l’instance redémarrée en mode rescue, une boîte d’information af
 
 ![tableau de bord](images/rescuedata.png){.thumbnail}
 
-Votre **mot de passe du mode rescue** temporaire sera uniquement affiché dans la console VNC. Cliquez sur votre instance dans le tableau, puis accédez à l'onglet `Console VNC`{.action} pour le récupérer.
+Votre **mot de passe du mode rescue** temporaire sera uniquement affiché dans la console VNC. Cliquez sur votre instance dans le tableau, puis accédez à l’onglet `Console VNC`{.action} pour le récupérer.
 
 <table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
+<!-- CP-STEPS-END:activate-rescue-mode -->
 
 ### Accéder à vos données
 
@@ -90,6 +92,7 @@ Vos fichiers sont maintenant accessibles depuis le point de montage `/mnt`.
 
 ### Désactiver le mode rescue
 
+<!-- CP-STEPS-START:deactivate-rescue-mode -->
 Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redémarrant votre instance depuis l'espace client. Pour cela, cliquez sur `...`{.action} et sélectionnez `Sortir du mode rescue`{.action}.
 
 ![tableau de bord](images/rescueexit2022.png){.thumbnail}
@@ -97,6 +100,7 @@ Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redé
 > [!warning]
 > Si le bouton `Sortir du mode rescue`{.action} n'apparaît pas une fois l'instance en mode rescue, nous vous recommandons de rafraîchir votre onglet.
 >
+<!-- CP-STEPS-END:deactivate-rescue-mode -->
 
 ### Activer le mode rescue avec les API OpenStack
 

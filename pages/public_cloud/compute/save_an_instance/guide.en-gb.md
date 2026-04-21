@@ -60,6 +60,7 @@ You can create a single backup of an instance or configure a schedule in order t
 > **Note:** Local Zones are not eligible for distant backups.
 >
 
+<!-- CP-STEPS-START:creating-a-backup-of-an-instance -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
@@ -173,6 +174,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:creating-a-backup-of-an-instance -->
 
 ### Creating an automated backup of an instance
 
@@ -181,6 +183,7 @@ You can create a single backup of an instance or configure a schedule in order t
 > If you want to automate this functionality directly via OpenStack, you can create a Mistral workflow associated with a cron trigger.
 >
 
+<!-- CP-STEPS-START:creating-an-automated-backup-of-an-instance -->
 Click on the `...`{.action} button to the right of the instance and select `Create an automatic backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
@@ -221,9 +224,11 @@ Click the `Add a remote backup`{.action} button, select a location, review the p
 ![public-cloud-instance-backup-distant](images/createbackup8distant.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:creating-an-automated-backup-of-an-instance -->
 
 ### Managing backups and schedules
 
+<!-- CP-STEPS-START:managing-backups-and-schedules -->
 Schedules can be created and deleted in the `Workflow Management`{.action} section, which is located under **Compute** in the left-hand menu.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
@@ -231,6 +236,7 @@ Schedules can be created and deleted in the `Workflow Management`{.action} secti
 Your instance backups are managed in the Public Cloud `Instance Backup`{.action} section, which can be found under **Compute** in the left-hand menu.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+<!-- CP-STEPS-END:managing-backups-and-schedules -->
 
 > [!warning]
 > The instance backup option must be deleted separately if you no longer wish to be billed for it. Deleting an instance does not delete the options attached to it.

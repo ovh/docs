@@ -31,12 +31,14 @@ Ce guide explique comment migrer vos données d’un volume Block Storage standa
 
 ### Etape 1 : Créer un volume LUKS
 
+<!-- CP-STEPS-START:create-luks-volume -->
 Depuis votre [espace client OVHcloud](/links/manager), créez un nouveau volume Block Storage et sélectionnez le type `LUKS`.
 
 > [!primary]
 > 
 > Une fois attaché à votre instance, le volume LUKS se comporte comme un volume standard. Le chiffrement et le déverrouillage sont entièrement gérés par l’infrastructure OVHcloud.
 >
+<!-- CP-STEPS-END:create-luks-volume -->
 
 ### Étape 2 : Attacher les volumes à votre instance
 

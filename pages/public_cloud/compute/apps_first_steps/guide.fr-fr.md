@@ -100,6 +100,7 @@ Une fois l'instance créée et une application préinstallée choisie, vous pouv
 
 #### Let's Encrypt SSL
 
+<!-- CP-STEPS-START:lets-encrypt-ssl -->
 Cette section s'applique uniquement aux installations de WordPress, Drupal, Joomla! et PrestaShop. Elle ne s'applique pas pour les autres installations.
 
 1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A`  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
@@ -160,6 +161,7 @@ IMPORTANT NOTES:
    with the "certonly" option. To non-interactively renew *all* of
    your certificates, run "certbot renew"
 ```
+<!-- CP-STEPS-END:lets-encrypt-ssl -->
 
 ### cPanel 
 

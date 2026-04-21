@@ -38,15 +38,16 @@ Si votre instance manque de ressources en raison d'une activité accrue ou de no
 
 ## En pratique
 
+<!-- CP-STEPS-START:resize-instance-via-cp -->
 Cliquez sur `Instances`{.action} dans le menu de gauche.
 
 Cliquez ensuite sur `...`{.action} à droite de l’instance, puis sélectionnez `Editer`{.action}. Vous pouvez également accéder à cette action depuis les détails de l’instance en cliquant sur son nom, puis sur `Modifier le modèle`{.action}.
 
-Dans le nouvel onglet, faites défiler la page jusqu'à la section **Modèle** pour sélectionner le modèle de votre choix.
+Dans le nouvel onglet, faites défiler la page jusqu’à la section **Modèle** pour sélectionner le modèle de votre choix.
 
 > [!primary]
 >
-> Pour les modèles classiques, vous pouvez basculer vers n'importe quel modèle dont le disque est similaire ou plus grand. Vous ne pouvez pas passer à un modèle avec un disque plus petit.<br/>
+> Pour les modèles classiques, vous pouvez basculer vers n’importe quel modèle dont le disque est similaire ou plus grand. Vous ne pouvez pas passer à un modèle avec un disque plus petit.<br/>
 >
 > Seules **les instances flexibles** peuvent être basculées vers un modèle supérieur ou inférieur tout en conservant une taille de disque fixe de 50 Go.
 >
@@ -58,30 +59,33 @@ Si votre disque est égal ou inférieur à 50 Go, vous pouvez passer à une `Ins
 >
 
 Une fois la sélection effectuée, cliquez sur `Modifier le modèle`{.action} pour confirmer votre choix.
+<!-- CP-STEPS-END:resize-instance-via-cp -->
 
 ### Redimensionnement du disque sous Windows
 
-Attention, lors d'un redimensionnement pour une instance Windows, la taille de la partition n'est pas automatiquement mise à jour, vous devrez donc l'étendre via le **gestionnaire de disque** :
+<!-- CP-STEPS-START:resize-disk-windows -->
+Attention, lors d’un redimensionnement pour une instance Windows, la taille de la partition n’est pas automatiquement mise à jour, vous devrez donc l’étendre via le **gestionnaire de disque** :
 
 - Faites un clic droit sur le menu `Démarrer`{.action} et lancez le gestionnaire de disque en cliquant sur `Gestion du disque`{.action} :
 
-![Menu contextuel du menu Démarrer avec l'option Gestion du disque](images/2980.png){.thumbnail}
+![Menu contextuel du menu Démarrer avec l’option Gestion du disque](images/2980.png){.thumbnail}
 
 - Faites un clic droit sur la partition principale, puis cliquez sur `Étendre le volume`{.action}.
 
 ![Clic droit sur la partition principale pour étendre le volume](images/2981a.png){.thumbnail}
 
-- Cliquez sur `Suivant`{.action} pour accéder à « l'Assistant Extension du volume ». Choisissez les ressources du disque à étendre et cliquez sur `Suivant`{.action}. 
+- Cliquez sur `Suivant`{.action} pour accéder à « l’Assistant Extension du volume ». Choisissez les ressources du disque à étendre et cliquez sur `Suivant`{.action}. 
 
 ![Assistant Extension du volume avec sélection des ressources](images/2978a.png){.thumbnail}
 
 Cliquez ensuite sur `Terminer`{.action} pour valider votre choix.
 
-![Étape de finalisation de l'Assistant Extension du volume](images/wizard2021.png){.thumbnail}
+![Étape de finalisation de l’Assistant Extension du volume](images/wizard2021.png){.thumbnail}
 
 - La nouvelle taille du disque sera alors affichée dans le gestionnaire de disque.
 
 ![Gestionnaire de disque affichant la nouvelle taille](images/2979.png){.thumbnail}
+<!-- CP-STEPS-END:resize-disk-windows -->
 
 ## Aller plus loin
 

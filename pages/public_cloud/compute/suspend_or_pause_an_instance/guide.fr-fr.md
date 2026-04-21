@@ -83,6 +83,7 @@ Cette option libère les ressources dédiées à votre instance Public Cloud, ma
 
 #### Depuis l’espace client OVHcloud
 
+<!-- CP-STEPS-START:shelve-instance__control-panel -->
 Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Instances`{.action} dans le menu de gauche.
 
 Cliquez sur le bouton `⋮`{.action} à droite de l’instance que vous souhaitez suspendre puis cliquez sur `Suspendre`{.action}.
@@ -93,17 +94,18 @@ Dans la fenêtre qui s’affiche, prenez connaissance des informations données 
 
 ![confirmer la suspension](images/confirm_suspension_2025.png){.thumbnail}
 
-Un message s'affiche pendant l'opération :
+Un message s’affiche pendant l’opération :
 
-![Message de progression de l'opération](images/suspension_message_2025.png){.thumbnail}
+![Message de progression de l’opération](images/suspension_message_2025.png){.thumbnail}
 
 Une fois la procédure terminée, votre instance aura le statut « Suspendue ».
 
 ![statut suspendu](images/instance_suspended_2025.png){.thumbnail}
 
-Pour visualiser le snapshot, cliquez sur `Instance Backup`{.action} sous l'onglet **Compute** dans le menu de gauche. Un snapshot nommé *xxxxx-shelved* sera alors visible :
+Pour visualiser le snapshot, cliquez sur `Instance Backup`{.action} sous l’onglet **Compute** dans le menu de gauche. Un snapshot nommé *xxxxx-shelved* sera alors visible :
 
 ![onglet snapshot](images/shelved_backup_2025.png){.thumbnail}
+<!-- CP-STEPS-END:shelve-instance__control-panel -->
 
 <a name="horizon"></a>
 
@@ -167,6 +169,7 @@ Cette option réactive votre instance pour continuer à l’utiliser. Veuillez n
 
 #### Depuis l’espace client OVHcloud 
 
+<!-- CP-STEPS-START:unshelve-instance__control-panel-unshelve -->
 Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Instances`{.action} dans le menu de gauche.
 
 Cliquez sur les `⋮`{.action} à droite de l’instance puis cliquez sur `Réactiver`{.action}.
@@ -176,6 +179,7 @@ Cliquez sur les `⋮`{.action} à droite de l’instance puis cliquez sur `Réac
 Dans la fenêtre qui s’affiche, prenez connaissance des informations et cliquez sur `Confirmer`{.action}.
 
 Une fois la procédure terminée, votre instance aura le statut « Activée ».
+<!-- CP-STEPS-END:unshelve-instance__control-panel-unshelve -->
 
 <a name="horizon-unshelve"></a>
 
@@ -211,6 +215,7 @@ Cette option éteint votre instance. L’état de la VM est stocké sur le disqu
 
 #### Depuis l’espace client OVHcloud
 
+<!-- CP-STEPS-START:stop-suspend-instance__stop-control-panel -->
 Dans votre espace client OVHcloud, cliquez sur `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur `Instances`{.action} dans le menu de gauche.
 
 Cliquez sur le bouton `⋮`{.action} à droite de l’instance que vous souhaitez arrêter, puis cliquez sur `Éteindre`{.action}.
@@ -224,6 +229,7 @@ Dans la fenêtre qui s’affiche, prenez connaissance des informations et clique
 Une fois le processus terminé, votre instance aura le statut « Éteinte ».
 
 Pour **redémarrer** l’instance, effectuez les mêmes démarches que celles indiquées précédemment. Cliquez sur le bouton `⋮`{.action} à droite de l’instance et sélectionnez `Démarrer`{.action}. Dans certains cas, il peut être nécessaire de procéder à un redémarrage à froid.
+<!-- CP-STEPS-END:stop-suspend-instance__stop-control-panel -->
 
 <a name="stop-horizon"></a>
 
