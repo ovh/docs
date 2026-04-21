@@ -39,9 +39,7 @@ Da Sie mehrere Projekte verwalten können (je nach Ihren Quotas), bleiben der Na
 
 Die Projekt-ID kann bei der Verwendung der CLI, manchen Support-Anfragen oder bei anderen Anfragen erforderlich sein. Sie können sie kopieren, indem Sie rechts auf das Icon klicken.
 
-<!-- CP-STEPS-START:your-public-cloud-project-settings -->
 Sie können den Projektnamen im Tab `Einstellungen`{.action} bearbeiten. Geben Sie einen neuen Namen ein und klicken Sie auf `Update`{.action}.
-<!-- CP-STEPS-END:your-public-cloud-project-settings -->
 
 ### Das Public Cloud Hauptmenü
 

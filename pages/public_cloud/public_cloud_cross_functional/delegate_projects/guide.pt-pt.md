@@ -32,7 +32,6 @@ Para isso, pode delegar noutras contas de cliente da OVHcloud direitos de leitur
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-<!-- CP-STEPS-START:view-contacts -->
 Clique em `Contactos e direitos`{.action} na secção **Parâmetros**.
 
 Esta página permite-lhe ver os contactos associados ao seu projeto.
@@ -40,11 +39,9 @@ Esta página permite-lhe ver os contactos associados ao seu projeto.
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
 Pode clicar nos botões `Alterar`{.action} para alterar os contactos atuais. Para finalizar esta operação, siga as instruções descritas no nosso manual "[Alterar os contactos de um projeto](/pages/public_cloud/compute/change_project_contacts)".
-<!-- CP-STEPS-END:view-contacts -->
 
 ### Adicionar contactos e permissões
 
-<!-- CP-STEPS-START:add-contact-permissions -->
 Clique no botão `Adicionar`{.action} para adicionar um utilizador e atribuir-lhe permissões. Na janela que aparecer, indique o identificador do utilizador (sob a forma xx00000-ovh) e selecione `Leitura sozinha` ou `Leitura/Escrita` no menu pendente.
 
 ![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
@@ -61,7 +58,6 @@ Depois de carregar a página, as contas de cliente OVHcloud adicionadas, bem com
 ![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
 
 Para anular um acesso, clique no botão `...`{.action} e selecione a opção `Eliminar`{.action}.
-<!-- CP-STEPS-END:add-contact-permissions -->
 
 ## Quer saber mais?
 

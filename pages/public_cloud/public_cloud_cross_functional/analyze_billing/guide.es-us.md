@@ -76,7 +76,6 @@ El importe total será de 23,63 euros.
 
 ### Consultar una factura
 
-<!-- CP-STEPS-START:view-your-bills -->
 Para consultar las facturas de un proyecto, acceda al universo `Public Cloud`{.action} del área de cliente de OVHcloud y seleccione el proyecto cloud correspondiente en el menú de la izquierda. A continuación, acceda a la sección `Facturación`{.action} (en la sección `Facturación`) y seleccione `Historial`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
@@ -85,11 +84,9 @@ Desde esta página puede:
 
 - consultar la información de los recursos desplegando cada sección;
 - acceder a la información del mes anterior o del mes siguiente.
-<!-- CP-STEPS-END:view-your-bills -->
 
 ### Consumo actual
 
-<!-- CP-STEPS-START:view-current-usage -->
 Puede consultar su consumo actual (es decir, el consumo correspondiente al mes en curso) en la sección `Mi consumo actual`{.action}.
 
 ![public-cloud](images/pci-billing-information2-2021.png){.thumbnail}
@@ -110,7 +107,6 @@ También es posible consultar una `Estimación de mi próxima factura`{.action},
 ![public-cloud](images/pci-billing-information3-2021.png){.thumbnail}
 
 La opción `Alerta de consumo bajo demanda`{.action} permite crear una alerta basada en la proyección de consumo hasta final de mes.  Así pues, cuando la proyección supere el umbral establecido, el cliente recibirá un mensaje de correo electrónico.
-<!-- CP-STEPS-END:view-current-usage -->
 
 ### Instancias
 

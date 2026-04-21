@@ -32,7 +32,6 @@ Zu diesem Zweck können Sie anderen OVHcloud Kunden-Accounts Lese- oder Schreibr
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-<!-- CP-STEPS-START:view-contacts -->
 Klicken Sie auf `Kontakt & Rechte`{.action} im Bereich **Einstellungen**.
 
 Auf dieser Seite können Sie die zu Ihrem Projekt gehörenden Kontakte einsehen.
@@ -40,11 +39,9 @@ Auf dieser Seite können Sie die zu Ihrem Projekt gehörenden Kontakte einsehen.
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
 Sie können die `Ändern`{.action} Buttons verwenden, um die aktuellen Kontakte zu ändern. Folgen Sie den Anweisungen in unserer Anleitung "[Kontakte eines Projekts ändern](/pages/public_cloud/compute/change_project_contacts)", um den Prozess abzuschließen.
-<!-- CP-STEPS-END:view-contacts -->
 
 ### Kontakte und Rechte hinzufügen
 
-<!-- CP-STEPS-START:add-contact-permissions -->
 Klicken Sie auf die Schaltfläche `Hinzufügen`{.action}, um einen Benutzer hinzuzufügen und Rechte zuzuweisen. Geben Sie im angezeigten Fenster die Benutzerkennung (in der Form xx00000-ovh) ein und wählen Sie im Drop-down-Menü `Nur Lesen` oder `Lesen/Schreiben` aus.
 
 ![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
@@ -61,7 +58,6 @@ Die hinzugefügten OVHcloud Kunden-Accounts und ihre jeweiligen Rechte werden na
 ![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
 
 Um einen Zugang zu widerrufen, klicken Sie auf den Button `...`{.action} und wählen Sie `Löschen`{.action}.
-<!-- CP-STEPS-END:add-contact-permissions -->
 
 ## Weiterführende Informationen
 

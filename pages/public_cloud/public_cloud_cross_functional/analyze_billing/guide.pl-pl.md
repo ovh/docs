@@ -76,7 +76,6 @@ czyli 23,63 EUR.
 
 ### Wyświetlanie faktur
 
-<!-- CP-STEPS-START:view-your-bills -->
 Aby wyświetlić faktury za dany projekt, przejdź do Panelu klienta OVHcloud zakładka `Public Cloud`{.action}, następnie wybierz odpowiedni projekt z menu po lewej stronie, po czym kliknij `Płatności`{.action} (w sekcji `Ustawienia`), a następnie `Historia`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
@@ -85,11 +84,9 @@ Możesz teraz:
 
 - sprawdzić szczegóły dotyczące zasobów, rozwijając każdą sekcję
 - przeszukiwać historię, cofając się do wcześniejszego miesiąca lub przechodząc do następnego
-<!-- CP-STEPS-END:view-your-bills -->
 
 ### sprawdzić obecne zużycie
 
-<!-- CP-STEPS-START:view-current-usage -->
 Obecne zużycie (z bieżącego miesiąca) możesz również sprawdzić, klikając zakładkę `Aktualne zużycie zasobów`{.action}.
 
 ![public-cloud](images/pci-billing-information2-2021.png){.thumbnail}
@@ -110,7 +107,6 @@ Otrzymasz również `Oszacowanie kolejnej faktury`{.action} (pierwszego dnia nas
 ![public-cloud](images/pci-billing-information3-2021.png){.thumbnail}
 
 Jeśli chcesz otrzymywać powiadomienia, kiedy prognozowany poziom zużycia zasobów zostanie przekroczony, możesz zaznaczyć to w tym oknie. Kiedy prognozowany poziom zużycia zasobów zostanie przekroczony, otrzymasz e-mail z powiadomieniem.
-<!-- CP-STEPS-END:view-current-usage -->
 
 ### Instancje
 

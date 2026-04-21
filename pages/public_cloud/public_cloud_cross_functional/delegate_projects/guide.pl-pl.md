@@ -32,7 +32,6 @@ W tym celu możesz przekazać innym kontom klienta OVHcloud uprawnienia do odczy
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-<!-- CP-STEPS-START:view-contacts -->
 Kliknij `Kontakty i uprawnienia`{.action} w sekcji **Ustawienia**.
 
 Na tej stronie możesz sprawdzić kontakty przypisane do Twojego projektu.
@@ -40,11 +39,9 @@ Na tej stronie możesz sprawdzić kontakty przypisane do Twojego projektu.
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
 Możesz kliknąć przycisk `Zmień`{.action}, aby zmienić aktualne kontakty. Postępuj zgodnie z instrukcjami zawartymi w przewodniku Zarządzanie [Zmiana kontaktów projektu](/pages/public_cloud/compute/change_project_contacts), aby zakończyć operację.
-<!-- CP-STEPS-END:view-contacts -->
 
 ### Dodaj kontakty i uprawnienia
 
-<!-- CP-STEPS-START:add-contact-permissions -->
 Kliknij przycisk `Dodaj`{.action}, aby dodać użytkownika i przypisać mu uprawnienia. W oknie, które się wyświetla wprowadź identyfikator użytkownika (w formacie xx00000-ovh), a następnie wybierz `Odczyt` lub `Odczyt/Zapis` w rozwijanym menu.
 
 ![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
@@ -61,7 +58,6 @@ Po odświeżeniu strony w tabeli wyszczególnione są konta klienta OVHcloud ora
 ![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
 
 Aby cofnąć dostęp, kliknij przycisk `...`{.action} i wybierz `Usuń`{.action}.
-<!-- CP-STEPS-END:add-contact-permissions -->
 
 ## Sprawdź również
 

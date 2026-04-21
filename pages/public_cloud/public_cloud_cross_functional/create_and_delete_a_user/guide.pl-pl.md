@@ -33,7 +33,6 @@ W interfejsie Horizon możesz zdefiniować hasło dla każdego użytkownika. Uwa
 
 ### Tworzenie użytkownika OpenStack
 
-<!-- CP-STEPS-START:create-openstack-user -->
 W menu po lewej stronie kliknij `Użytkownicy i role`{.action} w rubryce **Ustawienia**.
 
 Kliknij przycisk `Utwórz użytkownika`{.action}.
@@ -57,7 +56,6 @@ Upewnij się, czy hasło jest zapisywane tylko w tym momencie w zielonej ramce w
 ![Generate](images/generatepw.png){.thumbnail}
 
 Po utworzeniu użytkownika OpenStack będziesz mógł użyć jego danych identyfikacyjnych, aby zalogować się [do interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) klikając link `Horizon`{.action} w menu po lewej stronie.
-<!-- CP-STEPS-END:create-openstack-user -->
 
 ### Zmiana hasła użytkownika OpenStack
 
@@ -92,7 +90,6 @@ Pamiętaj, że zmiana hasła do konta użytkownika skutkuje natychmiastowym odwo
 
 ### Usuwanie użytkownika OpenStack
 
-<!-- CP-STEPS-START:delete-openstack-user -->
 W menu po lewej stronie kliknij `Użytkownicy i role`{.action} w rubryce **Ustawienia**.
 
 ![public-cloud](images/delete.png){.thumbnail}
@@ -103,7 +100,6 @@ Kliknij `...`{.action} i wybierz `Usuń`{.action}.
 >
 > Usunięcie użytkownika jest definitywne i spowoduje unieważnienie wszystkich przypisanych tokenów, w tym tych, których data wygaśnięcia nie została jeszcze przekroczona.
 > 
-<!-- CP-STEPS-END:delete-openstack-user -->
 
 ## Sprawdź również
 

@@ -39,7 +39,6 @@ Una volta eliminato un progetto, le risorse in esso contenute vengono definitiva
 
 ## Procedura
 
-<!-- CP-STEPS-START:delete-project -->
 Clicca su `Parametri del progetto`{.action} nella sezione **Impostazioni** in basso nel menu a sinistra.
 
 ![menu](images/delete-project-2025.png){.thumbnail}
@@ -60,7 +59,6 @@ Una volta inserita e confermata la password, il progetto entrerà nella fase di 
 
 > [!warning]
 > Ti ricordiamo che, quando un progetto entra in questa fase di cancellazione, rimane in stato di sospensione per 7 giorni. Il progetto non viene quindi immediatamente eliminato. Se questa situazione ti colpisce, ad esempio se la tua quota di progetti è limitata, contatta i nostri team di assistenza.
-<!-- CP-STEPS-END:delete-project -->
 
 ## Per saperne di più
 

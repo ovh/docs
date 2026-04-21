@@ -29,8 +29,6 @@ Das Erstellen eines Projekts ist die Voraussetzung, um [Public Cloud Instanzen](
 
 ## In der praktischen Anwendung
 
-<!-- CP-STEPS-START:create-public-cloud-project -->
-
 Nachdem Sie die Vertragsbedingungen gelesen haben, bestätigen Sie diese, indem Sie das entsprechende Kästchen ankreuzen und auf `Das Public-Cloud-Universun entdecken`{.action} klicken.
 
 ![Projekt erstellen](images/firstproject2024.png){.thumbnail width="400"}
@@ -58,8 +56,6 @@ Sie haben ab sofort Zugriff auf das gesamte OVHcloud Public Cloud Ökosystem. En
 >![Projekt aktivieren](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<!-- CP-STEPS-END:create-public-cloud-project -->
 
 ## Weiterführende Informationen
 

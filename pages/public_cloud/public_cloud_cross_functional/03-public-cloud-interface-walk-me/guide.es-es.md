@@ -39,9 +39,7 @@ Como es posible gestionar varios proyectos según sus cuotas, el nombre y el ID 
 
 El ID puede ser necesario al utilizar la CLI, determinadas solicitudes de soporte u otras. Puede copiarlo haciendo clic en el icono situado a la derecha.
 
-<!-- CP-STEPS-START:your-public-cloud-project-settings -->
 Puede cambiar el nombre del proyecto en la pestaña `Ajustes`{.action}. Introduzca un nuevo nombre y haga clic en `Actualizar`{.action}.
-<!-- CP-STEPS-END:your-public-cloud-project-settings -->
 
 ### El menú principal de Public Cloud
 

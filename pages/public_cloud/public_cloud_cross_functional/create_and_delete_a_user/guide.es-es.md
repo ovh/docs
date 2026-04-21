@@ -33,7 +33,6 @@ En Horizon puede establecer una contraseña para cada usuario. Atención: El cam
 
 ### Creación de un usuario de OpenStack
 
-<!-- CP-STEPS-START:create-openstack-user -->
 Haga clic en `Usuarios y roles`{.action} en el menú de la izquierda, en **Ajustes**.
 
 Haga clic en el botón `Crear un usuario`{.action}.
@@ -57,7 +56,6 @@ En este momento, guarde la contraseña en un gestor de contraseñas. La contrase
 ![Generate](images/generatepw.png){.thumbnail}
 
 Una vez que haya creado el usuario de OpenStack, podrá utilizar sus claves de acceso a [la interfaz Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) haciendo clic en `Horizon`{.action} en el menú de la izquierda.
-<!-- CP-STEPS-END:create-openstack-user -->
 
 ### Cambiar la contraseña de un usuario de OpenStack
 
@@ -92,7 +90,6 @@ Tenga en cuenta que, al cambiar la contraseña de una cuenta de usuario, se canc
 
 ### Eliminación del usuario OpenStack
 
-<!-- CP-STEPS-START:delete-openstack-user -->
 Haga clic en `Usuarios y roles`{.action} en el menú de la izquierda, en **Ajustes**.
 
 ![public-cloud](images/delete.png){.thumbnail}
@@ -103,7 +100,6 @@ Haga clic en `...`{.action} y seleccione `Eliminar`{.action}.
 >
 > La eliminación de un usuario es definitiva e invalidará todos los tokens asociados, incluidos aquellos cuya fecha de expiración aún no se haya superado.
 > 
-<!-- CP-STEPS-END:delete-openstack-user -->
 
 ## Más información
 

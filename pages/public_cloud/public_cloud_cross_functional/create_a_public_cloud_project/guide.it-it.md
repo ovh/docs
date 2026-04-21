@@ -29,8 +29,6 @@ La creazione di un progetto è il primo passo nella distribuzione delle [istanze
 
 ## Procedura
 
-<!-- CP-STEPS-START:create-public-cloud-project -->
-
 Leggi le condizioni contrattuali selezionando la casella corrispondente e clicca su `Scopri l’universo Public Cloud`{.action}.
 
 ![creazione progetto](images/firstproject2024.png){.thumbnail width="400"}
@@ -58,8 +56,6 @@ Da questo momento hai accesso a tutto l'ecosistema Public Cloud OVHcloud. Scopri
 >![attiva il progetto](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<!-- CP-STEPS-END:create-public-cloud-project -->
 
 ## Per saperne di più
 

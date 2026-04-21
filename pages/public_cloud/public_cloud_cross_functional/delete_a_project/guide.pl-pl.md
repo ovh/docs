@@ -39,7 +39,6 @@ Po usunięciu projektu, zasoby, które on zawiera są nieodwracalnie utracone. O
 
 ## W praktyce
 
-<!-- CP-STEPS-START:delete-project -->
 Kliknij `Parametry projektu`{.action} w części **Ustawienia** w dolnej części menu po lewej stronie.
 
 ![menu](images/delete-project-2025.png){.thumbnail}
@@ -61,7 +60,6 @@ Po wprowadzeniu i potwierdzeniu hasła, Twój projekt wejdzie w fazę usuwania.
 > [!warning]
 > Pamiętaj, że w momencie, gdy projekt wchodzi w etap usuwania, status zawieszenia trwa 7 dni. Projekt nie zostaje zatem natychmiast usunięty. Jeśli sytuacja ta Cię dotyka, na przykład jeśli Twój limit projektów jest ograniczony, skontaktuj się z zespołem pomocy.
 >
-<!-- CP-STEPS-END:delete-project -->
 
 ## Sprawdź również
 
