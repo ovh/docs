@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2026-03-06
+updated: 2026-04-21
 ---
 
 ## Introduction
@@ -303,13 +303,13 @@ Avant de créer votre première tâche, veuillez tenir compte des considération
 >>
 > Via l'espace client OVHcloud
 >>
->> #### Création du job
+>> **Création du job**
 >> 
 >> 1. Cliquez sur votre bucket source et accédez à l'onglet `Réplication`{.action}.
 >> 2. Cliquez sur le bouton `Répliquer les objets existants`{.action}, vous serez invité à confirmer que vous souhaitez créer une tâche de réplication.
 >> 3. Cliquez sur `Confirmer`{.action}.
 >> 
->> #### Surveillance de la progression
+>> **Surveillance de la progression**
 >> Cliquez sur votre bucket source et allez dans l'onglet `Jobs`{.action}. Vous devriez pouvoir voir toutes les tâches nouvellement créées.
 >> 
 >> L'onglet affiche les informations suivantes pour chaque tâche :
