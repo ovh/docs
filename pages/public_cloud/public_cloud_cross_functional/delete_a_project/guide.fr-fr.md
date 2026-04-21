@@ -35,6 +35,7 @@ Lorsque vous supprimez un projet, les ressources qu'il contient sont définitive
 
 ## En pratique
 
+<!-- CP-STEPS-START:delete-project -->
 Cliquez sur `Paramètres du projet`{.action} dans la partie **Paramètres** tout en bas du menu latéral de gauche.
 
 ![menu](images/delete-project-2025.png){.thumbnail}
@@ -56,6 +57,7 @@ Une fois votre mot de passe saisi et confirmé, votre projet entrera en phase de
 > [!warning]
 > Veuillez noter que lorsqu'un projet entre dans cette phase de suppression, il reste dans un statut de suspension pendant 7 jours. Le projet n'est donc pas immédiatement supprimé. Si cette situation vous affecte, par exemple si votre quota de projets est limité, veuillez contacter nos équipes d'assistance.
 >
+<!-- CP-STEPS-END:delete-project -->
 
 ## Aller plus loin
 

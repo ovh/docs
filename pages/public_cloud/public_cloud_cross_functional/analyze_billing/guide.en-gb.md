@@ -76,6 +76,7 @@ i.e. €23.63.
 
 ### View your bills
 
+<!-- CP-STEPS-START:view-your-bills -->
 To view the bills for a project, open your `Public Cloud`{.action} project in the OVHcloud Control Panel, then click on `Billing`{.action} (in the `Settings` section) and open the tab `History`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
@@ -84,16 +85,18 @@ In this screen, you can:
 
 - View details on the resources by expanding each section.
 - Browse logs by going to the previous or next month.
+<!-- CP-STEPS-END:view-your-bills -->
 
 ### View your current resource usage
 
+<!-- CP-STEPS-START:view-current-usage -->
 You can also view your current resource usage (for the ongoing month) by clicking `Current usage`{.action}.
 
 ![public-cloud](images/pci-billing-information2-2021.png){.thumbnail}
 
-The first part, **"Already billed"**, includes resources billed by the month (see instances billed at the lower monthly rate). These resources are the exception to the “pay-as-you-go” method. Commitments are billed on a monthly basis and payable in advance. The commitment option offers the user a cost advantage.
+The first part, **”Already billed”**, includes resources billed by the month (see instances billed at the lower monthly rate). These resources are the exception to the “pay-as-you-go” method. Commitments are billed on a monthly basis and payable in advance. The commitment option offers the user a cost advantage.
 
-The second part, **"Future bills"**, includes pay-as-you-go resources. It lists your resource usage from the first of the month up to that day.
+The second part, **”Future bills”**, includes pay-as-you-go resources. It lists your resource usage from the first of the month up to that day.
 
 You can also have an `Estimation of my next invoice`{.action} (for the 01st of the next month) based on a forecast of resource usage taking into account the current situation, and predicted usage for the remainder of the month.
 
@@ -107,6 +110,7 @@ You can also have an `Estimation of my next invoice`{.action} (for the 01st of t
 ![public-cloud](images/pci-billing-information3-2021.png){.thumbnail}
 
 If you would like to receive alerts when the forecast of your resource usage exceeds a set threshold, you can configure this via this screen. When your forecasted usage exceeds the set threshold, you will receive an email to alert you of this.
+<!-- CP-STEPS-END:view-current-usage -->
 
 ### Instances
 

@@ -250,8 +250,10 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
+<!-- CP-STEPS-START:view-instances -->
 Cliquez sur `Instances`{.action}.
 Comme vous pouvez le voir, votre instance nommée "terraform_instance" est en train de se créer.
+<!-- CP-STEPS-END:view-instances -->
 
 > [!primary]
 > Notez que la création d'une seconde instance identique avec « terraform apply » ne fonctionnera pas.

@@ -53,6 +53,7 @@ L'utilisation du OVHcloud Shell directement depuis l'espace client offre des ava
 
 ### Comment accéder à OVHcloud Shell
 
+<!-- CP-STEPS-START:access-ovhcloud-shell -->
 Cliquez sur le bouton `OVHcloud Shell`{.action} pour lancer le terminal.
 
 ![Bouton Cloudshell](images/OVHcloud_Shell.png){.thumbnail}
@@ -61,6 +62,7 @@ Cliquez sur le bouton `OVHcloud Shell`{.action} pour lancer le terminal.
 >
 > **Remarque :** Les utilisateurs sont déjà authentifiés avec leurs identifiants clients et ont un accès immédiat à leurs ressources, sans connexion supplémentaire requise.
 >
+<!-- CP-STEPS-END:access-ovhcloud-shell -->
 
 ### Comment utiliser OVHcloud Shell
 

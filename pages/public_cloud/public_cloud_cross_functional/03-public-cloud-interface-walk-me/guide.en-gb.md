@@ -39,7 +39,9 @@ Since you can manage multiple projects according to your quotas, the name and ID
 
 The ID may be required when using the CLI, for certain support requests or otherwise. You can copy it by clicking on the icon to the right of it.
 
+<!-- CP-STEPS-START:your-public-cloud-project-settings -->
 You can change the project name via the `Settings`{.action} tab. Enter a new name, then click on `Update`{.action}.
+<!-- CP-STEPS-END:your-public-cloud-project-settings -->
 
 ### The Public Cloud main menu
 
