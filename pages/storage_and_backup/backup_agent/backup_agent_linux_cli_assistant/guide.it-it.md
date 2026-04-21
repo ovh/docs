@@ -59,7 +59,7 @@ Lo script **`ovh-ba-install.sh`** è un **assistente a riga di comando**. Con qu
 
 Nello Spazio Cliente OVHcloud, apri il tuo [Backup Agent](/links/control-panel/baremetal-backup-agent), vai nella scheda `Agent`{.action}, quindi clicca sul pulsante `Scarica`{.action}. Nella finestra che si apre, seleziona **Linux** per visualizzare il comando contenente i due URL (script e pacchetto Linux).
 
-![Scaricare l'agente — comandi di installazione Linux](images/01-backup-agent-download-linux-fr.png){.thumbnail}
+![Scaricare l'agente — comandi di installazione Linux](images/01-backup-agent-download-linux-en.png){.thumbnail}
 
 > [!primary]
 >
