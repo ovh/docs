@@ -54,14 +54,14 @@ Before using the CloudStore, it is important to understand its main concepts.
 The CloudStore distinguishes between two audiences:
 
 - **Cloud providers** (IT admins, Service admins): OVHcloud customers who operate the platform. They provision infrastructure, deploy services, and manage accounts.
-- **Cloud users** (End users): Customers of cloud providers who consume the services deployed for them through the **Landing Zone**.
+- **Cloud users** (Landing Zone Manager users): Customers of cloud providers who consume the services deployed for them through the **Landing Zone**.
 
 | Persona | Responsibilities |
 |---------|-----------------|
 | IT admin | Create accounts, activate services, deploy apps |
 | Service admin | Manage a specific service, deploy its controller and apps |
 | Account admin | Manage the configuration of their account |
-| End user | Access apps through the Landing Zone |
+| Landing Zone Manager user | Access apps through the Landing Zone |
 
 #### The controller/app pattern
 
@@ -91,7 +91,7 @@ The platform automatically:
 - Create a dedicated Keycloak realm named `account-{name}`.
 - Create an admin user with the `account-admin` role.
 - Set up a temporary password (the account admin will be prompted to change it on first login).
-- Configure a `landing-zone` client for end-user access.
+- Configure a `landing-zone` client for Landing Zone Manager user access.
 
 ### Deploying a service
 
@@ -151,10 +151,15 @@ CloudStore uses a layered Keycloak federation model that mirrors the platform ar
 |-------|-------------------|-------|---------|
 | L1 | OPCP Core Keycloak | DC operators, Super admins | Infrastructure-level identity |
 | L2 | CloudStore Keycloak | IT admins, Service admins | Platform management |
-| L3 | Per-account Keycloak realms | End users | Application access |
+| L3 | Per-account Keycloak realms | Landing Zone Manager users | Application access |
 
 - **Keycloak L2** is federated with **L1** (OPCP Core). This means rights granted on OpenStack projects at L1 are carried through to L2.
 - **Keycloak L3** is an independent instance managed by the CloudStore API. Each account gets its own isolated realm.
+
+> [!info]
+>
+> The **L3 layer** is provided by the [Landing Zone Manager](/pages/hosted_private_cloud/opcp/landing-zone-manager), a separate OPCP product responsible for Landing Zone Manager user account management. Its Keycloak stack is **not federated** with the L1 (OPCP Core) and L2 (CloudStore) Keycloak instances.
+>
 
 #### Managing IAM on CloudStore Keycloak (L2)
 
@@ -170,9 +175,9 @@ Once this role is assigned, the user will have the necessary permissions to admi
 
 ### The Landing Zone
 
-The **Landing Zone** is the interface for end users (cloud users). It provides a simplified view of the apps deployed for their account.
+The **Landing Zone** is the interface for Landing Zone Manager users (cloud users). It provides a simplified view of the apps deployed for their account.
 
-End users authenticate through their account-specific Keycloak realm (L3) and can only access apps deployed for their account. The Landing Zone retrieves the list of accessible apps and filters them based on user permissions.
+Landing Zone Manager users authenticate through their account-specific Keycloak realm (L3) and can only access apps deployed for their account. The Landing Zone retrieves the list of accessible apps and filters them based on user permissions.
 
 ## Go further
 
