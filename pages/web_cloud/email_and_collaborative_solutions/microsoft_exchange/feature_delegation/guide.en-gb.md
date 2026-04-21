@@ -60,6 +60,7 @@ When you have identified the account that you want to delegate permissions for, 
 
 ### Step 1: Setting up the delegation
 
+<!-- CP-STEPS-START:step1-setup-delegation -->
 Go to the `Email accounts`{.action} tab.
 
 The table that appears will list all of the accounts linked to your service. Click on the three dots to the right of the account you want to delegate permissions for, then on `Manage delegations`{.action}.
@@ -73,6 +74,7 @@ In the configuration window, select the permissions you want to delegate. You wi
 Take a few moments to check the change summary. If the information in the summary is correct, click `Confirm`{.action}. Within a few minutes, the delegation will be created on our servers.
 
 Once the delegation has been configured, `test@mypersonaldomainname.ovh` can carry out the selected actions on the `test2@mypersonaldomainname.ovh` account.
+<!-- CP-STEPS-END:step1-setup-delegation -->
 
 ### Step 2: Using the delegated permissions
 

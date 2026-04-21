@@ -162,6 +162,7 @@ Currently, only the **MX Plan** and **Redirect** plans have a redirection manage
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
+<!-- CP-STEPS-START:redirect-manager-mxplan -->
 From your MX Plan service, select the domain concerned.
 
 In our example, this is a **redirection with a local copy** (see [diagram 2](#diagram) at the beginning of this guide). If this is what you need, follow the steps below by clicking on the tab corresponding to the webmail technology used by your MX Plan:
@@ -218,6 +219,7 @@ In our example, this is a **redirection with a local copy** (see [diagram 2](#di
 >
 > When you choose the "**Keep a copy of the email with OVHcloud**" copy mode, a redirection from the email address to itself is created automatically in the redirections list, and it materializes this local copy.
 >
+<!-- CP-STEPS-END:redirect-manager-mxplan -->
 
 #### Via webmail <a name="redirect-webmail"></a>
 
@@ -344,6 +346,7 @@ For more details on using Zimbra webmail, please read our guide on [Using Zimbra
 
 ##### MX Plan via the OVHcloud Control Panel <a name="redirect-delete-mxplan"></a>
 
+<!-- CP-STEPS-START:redirect-delete-mxplan -->
 From your MX Plan service, select the domain concerned.
 
 Select the tab below for the email technology used by your MX Plan service:
@@ -368,6 +371,7 @@ Select the tab below for the email technology used by your MX Plan service:
 >>
 >>    ![emails](images/mxplan-redirect-delete02.png){.thumbnail .w-640}
 >>
+<!-- CP-STEPS-END:redirect-delete-mxplan -->
 
 ##### Outlook Web App (OWA) <a name="redirect-delete-owa"></a>
 
@@ -425,6 +429,7 @@ Creating an alias for your email address allows you to provide a "mask" address 
 
 #### Exchange / Email Pro / MX Plan <a name="alias-exchange-emp-mxplan"></a>
 
+<!-- CP-STEPS-START:alias-exchange-emp-mxplan -->
 From your email service (Exchange, Email Pro or MX Plan), click the `Email accounts`{.action} tab.
 
 To add an alias to your email account, follow the steps described by clicking on each tab below:
@@ -447,6 +452,7 @@ To add an alias to your email account, follow the steps described by clicking on
 >> Click `Add an alias`{.action}, then enter the address you have chosen for your alias and confirm your choice.
 >>
 >> ![emails](images/email-alias03.png){.thumbnail .w-640}
+<!-- CP-STEPS-END:alias-exchange-emp-mxplan -->
 
 #### MX Plan Roundcube <a name="alias-mxplan-roundcube"></a>
 
@@ -454,6 +460,7 @@ To create an alias on an MX Plan Roundcube email account, you must do it the sam
 
 #### Zimbra <a name="alias-mxplan-roundcube"></a>
 
+<!-- CP-STEPS-START:alias-zimbra -->
 From your Zimbra service, click the `Email accounts`{.action} tab.
 
 > [!tabs]
@@ -482,11 +489,13 @@ From your Zimbra service, click the `Email accounts`{.action} tab.
 >>
 >> ![zimbra](images/zimbra_alias04.png){.thumbnail .w-640}
 >>
+<!-- CP-STEPS-END:alias-zimbra -->
 
 ### Delete an alias <a name="alias-delete"></a>
 
 #### Exchange / Email Pro / MX Plan <a name="alias-delete-exchange-emp-mxplan"></a>
 
+<!-- CP-STEPS-START:alias-delete-exchange-emp-mxplan -->
 From your email service (Exchange, Email Pro or MX Plan), click the `Email accounts`{.action} tab.
 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email address concerned. Then click `Configure aliases`{.action} (or `Manage aliases`{.action}).
@@ -494,9 +503,11 @@ In the `Email accounts`{.action} tab, click the `...`{.action} button to the rig
 Click the `...`{.action} button to the right of the alias concerned, in the alias management menu. Finally, click `Delete alias`{.action}.
 
 ![emails](images/email-alias04.png){.thumbnail .w-640}
+<!-- CP-STEPS-END:alias-delete-exchange-emp-mxplan -->
 
 #### MX Plan Roundcube <a name="alias-delete-mxplan-roundcube"></a>
 
+<!-- CP-STEPS-START:alias-delete-mxplan-roundcube -->
 To delete an alias on an MX Plan Roundcube email account, you must do it the same way as a redirection. You will need to manage the redirections for your MX Plan service.
 
 From the `Emails`{.action} tab, click `Manage redirections`{.action} on the right-hand side of the window.
@@ -509,9 +520,11 @@ Click the `...`{.action} button to the right of the redirection concerned, then 
 >
 
 ![emails](images/email-del-legacy-redirect01.png){.thumbnail .w-640}
+<!-- CP-STEPS-END:alias-delete-mxplan-roundcube -->
 
 #### Zimbra <a name="alias-delete-zimbra"></a>
 
+<!-- CP-STEPS-START:alias-delete-zimbra -->
 From your Zimbra service, click the `Email accounts`{.action} tab.
 
 > [!tabs]
@@ -534,6 +547,7 @@ From your Zimbra service, click the `Email accounts`{.action} tab.
 >>
 >> ![zimbra](images/zimbra_alias03.png){.thumbnail .w-640}
 >>
+<!-- CP-STEPS-END:alias-delete-zimbra -->
 
 ## Go further
 

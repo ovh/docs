@@ -79,6 +79,7 @@ You can do this via the OVHcloud Control Panel if you are managing the email ser
 
 #### From the Control Panel <a name="quotacontrolpanel"></a>
 
+<!-- CP-STEPS-START:cp-check-quota-controlpanel -->
 In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
 
 > [!tabs]
@@ -102,6 +103,7 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 >> Click `Zimbra Mail`{.action}. Go to the `Email account`{.action} tab. The window that opens will display the existing email accounts. In the `Quota` column, you can see how much storage your email address is currently consuming.<br><br>
 >>![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
 >>
+<!-- CP-STEPS-END:cp-check-quota-controlpanel -->
 
 #### From webmail <a name="quotawebmail"></a>
 
@@ -143,6 +145,7 @@ Before you perform any other operation on your email account, you will need to f
 
 #### Increase the capacity of your email account
 
+<!-- CP-STEPS-START:cp-increase-capacity -->
 You can increase the storage capacity of your email account, if it has not reached its maximum capacity. Below, you will find the approach to follow, depending on your solution:
 
 > [!tabs]
@@ -154,7 +157,7 @@ You can increase the storage capacity of your email account, if it has not reach
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
 > **Email Pro**
->> 
+>>
 >> The Email Pro solution has a unique capacity of 10 GB. To increase it, you need to switch to a plan that includes more storage space. Follow the steps below to[change your email service](#switchingoffer).<br>
 >>
 > **Exchange**
@@ -170,6 +173,7 @@ You can increase the storage capacity of your email account, if it has not reach
 >> The Zimbra Starter solution includes 15 GB of storage. If you would like to increase its capacity, you can switch to the Zimbra Pro solution.
 >> In the `Email account`{.action} tab of your platform, click the `...`{.action} button to the right of the account you want to modify, then click `Upgrade`{.action}.
 >> If you have a Zimbra Pro or Business solution, you already have the maximum capacity of 50 GB. You will need to free up space on your Zimbra account by deleting unnecessary items, or [archive your emails](#archiveorswitch) on your computer locally.
+<!-- CP-STEPS-END:cp-increase-capacity -->
 
 ### 3. **Archive** emails or **change your email solution** <a name="archiveorswitch"></a>
 
@@ -258,6 +262,7 @@ Once you have installed your email software, follow the instructions below to pr
 
 #### Change your email solution to increase capacity <a name="switchingoffer"></a>
 
+<!-- CP-STEPS-START:cp-change-offer -->
 Select the current solution for your email account from the menu below:
 
 > [!tabs]
@@ -279,6 +284,7 @@ Select the current solution for your email account from the menu below:
 >> The Zimbra Starter solution includes 15 GB of storage. If you would like to increase capacity, you can switch to the Zimbra Pro solution.
 >> In the `Email account`{.action} tab of your platform, click the `...`{.action} button to the right of the account you want to modify, then click `Upgrade`{.action}.<br><br>
 >>![email](images/email-quota-more03.png){.thumbnail}<br>
+<!-- CP-STEPS-END:cp-change-offer -->
 
 ## Go further
 

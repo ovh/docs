@@ -29,12 +29,15 @@ The Email Pro service offers flexible management for account billing. This guide
 
 ### Ordering additional accounts
 
+<!-- CP-STEPS-START:order-additional-accounts -->
 Go to the `Email accounts`{.action} tab, then click `Order accounts`{.action} in the top right-hand corner.
 
 ![billing_emailpro](images/billing-emailpro-01.png){.thumbnail}
+<!-- CP-STEPS-END:order-additional-accounts -->
 
 ### Modifying the renewal frequency for your accounts <a name="periodicity"></a>
 
+<!-- CP-STEPS-START:modify-renewal-frequency -->
 In the window for managing your Email Pro platform, click the `Actions`{.action} button in the top right-hand corner, then `Billing mode`{.action}.
 
 ![billing_emailpro](images/billing-emailpro-02.png){.thumbnail}
@@ -54,9 +57,11 @@ In the new window, the table allows you to manage the renewal period for each ac
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
 Click `Next`{.action} to access the summary of the requested changes, then click `Confirm`{.action} to confirm your choice.
+<!-- CP-STEPS-END:modify-renewal-frequency -->
 
 ### Deleting accounts
 
+<!-- CP-STEPS-START:delete-accounts -->
 To delete an account within your Email Pro service, you will need to cancel it by changing its renewal configuration to **None**. To do this, go to the step ["Modifying the renewal frequency for your accounts"](#periodicity).
 
 Once you have cancelled it, the account will be suspended on its expiry date. If you would like to delete the email address hosted by the account before its expiry date, you can reset it.
@@ -64,9 +69,11 @@ Once you have cancelled it, the account will be suspended on its expiry date. If
 Go to the `Email accounts`{.action} tab of your service, then click on the `...`{.action} button next to the account concerned. Next, click `Reset this account`{.action}. Once you have reset the account, it will remain empty until its expiry date.
 
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
+<!-- CP-STEPS-END:delete-accounts -->
 
 ### Cancelling the service
 
+<!-- CP-STEPS-START:cancel-service -->
 Once you have deleted your email accounts, you will need to delete the domain name(s) associated with your Email Pro platform before cancelling it. To do this, go to the `Associated domains`{.action} tab. Click the `...`{.action} button on the line for the domain name you want to delete, then click `Delete this domain`{.action}.
 
 ![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
@@ -78,6 +85,7 @@ In the `Email accounts`{.action} tab of your service, click the `Actions`{.actio
 > [!primary]
 >
 > This action suspends and then deletes all of the Email Pro accounts on their expiry date.
+<!-- CP-STEPS-END:cancel-service -->
 
 ## Go further
 

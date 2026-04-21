@@ -42,15 +42,18 @@ Here is the list of software included in the suite:
 
 ### Order a license
 
+<!-- CP-STEPS-START:order-license -->
 1. Go to the [Microsoft 365 sales page](/links/web/ms365), or from the Microsoft 365 section of the OVHcloud Control Panel, click `Order`{.action}.
 1. Choose from our available solutions, namely "Apps for Business" and "Apps for Enterprise".
 1. Set the renewal frequency for your license group.
 1. Define the number of licenses you want, then finalize your order.
+<!-- CP-STEPS-END:order-license -->
 
 ### Activate your license
 
 To activate the license ordered:
 
+<!-- CP-STEPS-START:activate-license -->
 1. Select the Microsoft 365 service concerned.
 1. Click the `Licenses`{.action} tab.
 1. Click the `⁝`{.action} button on the license line for the activation, then click `Edit account`{.action}.
@@ -60,9 +63,11 @@ To activate the license ordered:
 1. Enter the license user information, then click `Confirm`{.action}.
 
     ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:activate-license -->
 
 ### Install the Microsoft 365 suite on your device <a name="install365"></a>
 
+<!-- CP-STEPS-START:install-suite-cp-email -->
 Once the license has been activated, you will receive an email to the contact email address of your OVHcloud account. You can also find this email in your [OVHcloud Control Panel](/links/manager), by clicking on your account name in the top right-hand corner, then `My communications`{.action} in the `Emails received` section.
 
 This email contains the information required to download and install your Microsoft 365 suite, namely **the activation email address** and the **password**.
@@ -70,6 +75,7 @@ This email contains the information required to download and install your Micros
 Go to <https://portal.office.com/> and log in with **the activation email address** and the **password** previously configured. You will be taken to a window where you can download the Microsoft 365 suite to your desktop, along with the installation instructions.
 
 ![emails](images/Outlook-cps1-04.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:install-suite-cp-email -->
 
 #### Install Suite 365 on multiple devices
 
@@ -81,26 +87,31 @@ To install your license on several devices, simply reproduce [the previous step]
 
 If you would like to set your own license password:
 
+<!-- CP-STEPS-START:change-license-password -->
 1. Select the Microsoft 365 service concerned.
 1. Click the `Licenses`{.action} tab.
 1. Click the `⁝`{.action} button to the right of the license concerned, then `Change password`{.action}.
 
 ![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:change-license-password -->
 
 ### Add a license to an existing group
 
 If you want to add one or more licenses to your existing license group:
 
+<!-- CP-STEPS-START:add-license-to-group -->
 1. Select the Microsoft 365 service concerned.
 1. Click the `Order more licenses`{.action} button on the right.
 1. Determine the **number** and **license type** you wish to order, then click `Confirm`{.action}.
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:add-license-to-group -->
 
 ### Manage your subscriptions <a name="managesubscriptions"></a>
 
 #### Delete a license in a license group
 
+<!-- CP-STEPS-START:delete-license -->
 In the `Licenses`{.action} tab of your license group, click the `⁝`{.action} button to the right of the license you want to cancel, then click `Delete account`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail .w-500}
@@ -108,11 +119,13 @@ In the `Licenses`{.action} tab of your license group, click the `⁝`{.action} b
 > [!primary]
 >
 > Usage for the current month will be billed at the end of the month.
+<!-- CP-STEPS-END:delete-license -->
 
 #### Cancel a license group
 
 To terminate your Microsoft Office 365 CSP1 license group:
 
+<!-- CP-STEPS-START:cancel-license-group -->
 1. Click on your name in the top right-hand corner of the OVHcloud Control Panel.
 1. Click `My offers and services`{.action}.
 1. Identify your license group in the table for your services.
@@ -122,6 +135,7 @@ To terminate your Microsoft Office 365 CSP1 license group:
 > [!primary]
 >
 > Usage for the current month will be billed at the end of the month.
+<!-- CP-STEPS-END:cancel-license-group -->
 
 ## Go further <a name="go-further"></a>
 

@@ -63,6 +63,7 @@ The following instructions are divided into two parts:
 
 ### Outlook
 
+<!-- CP-STEPS-START:exchange-pst-export-cp -->
 If you have an [OVHcloud Exchange email account](/links/web/emails-hosted-exchange), you can export it directly in PST format via the OVHcloud Control Panel.
 
 Once on your Exchange service page, in the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email account you want to export, then `Export in PST format`{.action}.
@@ -72,6 +73,7 @@ Once on your Exchange service page, in the `Email accounts`{.action} tab, click 
 You will then need to wait for the export process to complete, which may take from a few minutes to several hours, depending on the size of the export. At the end of it, you just need to return to the `Export in PST format`{.action} button to retrieve a link to download the file.
 
 ![emails](images/manager-export-pst02.png){.thumbnail .w-640}
+<!-- CP-STEPS-END:exchange-pst-export-cp -->
 
 #### Windows
 

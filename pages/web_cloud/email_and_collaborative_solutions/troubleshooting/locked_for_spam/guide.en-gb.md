@@ -45,6 +45,7 @@ When your email address is blocked for spam, it means that suspicious activity h
 
 Before continuing, if the block concerns an MX Plan email address, identify the email technology used by your solution in order to follow the correct unblocking process.
 
+<!-- CP-STEPS-START:identify-mx-plan-technology -->
 > [!primary]
 >
 > **Identify the email technology of your MX Plan solution.**
@@ -57,6 +58,7 @@ Before continuing, if the block concerns an MX Plan email address, identify the 
 >
 > - If the technology displayed is **RoundCube**, follow the instructions in the **MX Plan - RoundCube** tab.
 > - If the technology displayed is **OWA** or **Zimbra**, follow the instructions in the **MX Plan - OWA / Zimbra** tab.
+<!-- CP-STEPS-END:identify-mx-plan-technology -->
 
 ### Step 1: Why is your email address blocked for spam? <a name="step1"></a>
 
@@ -90,6 +92,7 @@ If the suspicious activity detected by the anti-spam system was not initiated by
 
 Select the relevant email solution in the following tabs:
 
+<!-- CP-STEPS-START:step2-check-status -->
 > [!tabs]
 > **Exchange**
 >>
@@ -123,12 +126,15 @@ Select the relevant email solution in the following tabs:
 >> > [!warning]
 >> >
 >> > In rare cases, the "Blocked for SPAM" column may show "No" despite the fact that the email address is blocked. If you have taken the necessary measures to secure the email address, the solution remains the same as above.
+<!-- CP-STEPS-END:step2-check-status -->
 
 ### Step 3: Access the support ticket <a name="step3"></a>
 
+<!-- CP-STEPS-START:step3-access-support-ticket -->
 Following step 2, you will be redirected to the "My support requests" window. Click the `...`{.action} button to the right of the ticket with the subject "Account locked for spam.", then click `See more information`{.action}.
 
 ![My support requests window with the spam block ticket](images/blocked-for-SPAM-02.png){.thumbnail}
+<!-- CP-STEPS-END:step3-access-support-ticket -->
 
 Here you will find the email that was sent to you, which generated a support ticket.
 

@@ -47,11 +47,13 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ### How to add your account <a name="addaccount"></a>
 
+<!-- CP-STEPS-START:exchange-server-lookup -->
 > [!primary]
 >
 > In this guide, we use as the hostname: ex?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 >
 > Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:exchange-server-lookup -->
 
 - **When you start the application for the first time**: A configuration wizard will appear, prompting you to choose your account type.
 

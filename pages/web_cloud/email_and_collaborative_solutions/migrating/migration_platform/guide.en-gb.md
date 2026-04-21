@@ -56,6 +56,7 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 
 ### Configuring the destination platform
 
+<!-- CP-STEPS-START:configure-destination-add-domain -->
 > [!warning]
 >
 > Before starting your migration, if you have just ordered your new email offer, first add the domain name to your email platform. If you are migrating to an MX Plan platform, the attached domain name being "fixed", you can directly proceed to the [next step](#accountsmigration).
@@ -65,6 +66,7 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > For more details on adding a domain name, follow [the Email Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), [the Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) or [the Zimbra guide](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+<!-- CP-STEPS-END:configure-destination-add-domain -->
 
 ### Migrate email accounts <a name="accountsmigration"></a>
 
@@ -81,19 +83,23 @@ Your email accounts will be migrated in 3 main steps: **Rename** the original em
 
 #### Rename
 
+<!-- CP-STEPS-START:rename-email-account -->
 Rename the email account to be migrated with a provisional name (example: to migrate the email account *john.smith@mydomain.ovh*, rename it to *john.smith01@mydomain.ovh*).
 
 In the `Email accounts`{.action} tab for your email platform, click on the `...`{.action} button, then `Edit`{.action}.
 
 ![email-migration](images/migration_platform04.png){.thumbnail}
+<!-- CP-STEPS-END:rename-email-account -->
 
 #### Create
 
+<!-- CP-STEPS-START:create-email-account-destination -->
 Re-create your email address on the new account for your Email Pro, Exchange or MX Plan platform. (Using the previous example, you will create *john.smith@mydomain.ovh* on your new platform.)
 
 In the `Email accounts`{.action} tab for your platform, click on the `...`{.action} button, to the right of the target email account, then `Edit`{.action}.
 
 ![email-migration](images/migration_platform05.png){.thumbnail}
+<!-- CP-STEPS-END:create-email-account-destination -->
 
 #### Migrate
 
@@ -119,10 +125,13 @@ After the migration, verify that all of your elements are present by logging int
 
 Once the migration is complete, you can keep or delete the original account with the temporary name.
 
+<!-- CP-STEPS-START:delete-original-account -->
 If you would like to delete it, go to the `Email accounts`{.action} tab on your original email platform, click on the `...`{.action} button, then `Reset this account`{.action}.
+<!-- CP-STEPS-END:delete-original-account -->
 
 ### Check or modify your domain configuration
 
+<!-- CP-STEPS-START:check-domain-configuration -->
 At this stage, your email addresses should already be migrated and functional. For security reasons, please ensure that your domain is correctly configured in your Control Panel.
 
 To do this, select the relevant Email Pro, Exchange or Zimbra service, then go to the `Associated domains`{.action} or `Domain`{.action} tab on your platform. Check the `Diagnostics`{.action} section or column.
@@ -134,6 +143,7 @@ To do this, select the relevant Email Pro, Exchange or Zimbra service, then go t
 > If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](/links/manager).
 
 To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours for DNS changes to propagate fully.
+<!-- CP-STEPS-END:check-domain-configuration -->
 
 ### Use your migrated email addresses
 
