@@ -1,14 +1,12 @@
 ---
-title: "Public VMware Cloud Foundation as-a-Service - Rôles utilisateurs"
-excerpt: "Explorez les différents rôles utilisateurs disponibles et apprenez à les utiliser au sein de votre organisation Public VMware Cloud Foundation as-a-Service."
-updated: 2026-04-20
+title: "Public VCF as-a-Service - Rôles utilisateurs"
+excerpt: "Explorez les différents rôles utilisateurs disponibles et apprenez à les utiliser au sein de votre organisation Public VCF as-a-Service."
+updated: 2026-04-21
 ---
 
 ## Objectif
 
-Pour vous offrir un contrôle plus granulaire et une flexibilité accrue dans la gestion de vos ressources, différents rôles sont disponibles :
-
-**Découvrez quels sont les rôles utilisateurs disponibles et comment les utiliser dans votre organisation Public VCF as-a-Service.**
+**Explorez les différents rôles utilisateurs disponibles et apprenez à les utiliser au sein de votre organisation Public VCF as-a-Service..**
 
 ## Prérequis
 
@@ -21,6 +19,8 @@ Pour vous offrir un contrôle plus granulaire et une flexibilité accrue dans la
 - **Pour accéder à vos services :** `Hosted Private Cloud` > `Public VCF as-a-Service` > Sélectionnez votre service VCF
 
 ## En pratique
+
+Pour vous offrir un contrôle plus granulaire et une flexibilité accrue dans la gestion de vos ressources, différents rôles sont disponibles :
 
 ### Organization Administrator
 
@@ -63,7 +63,7 @@ Pour vous offrir un contrôle plus granulaire et une flexibilité accrue dans la
 
 ### Procédure pour attribuer un rôle
 
-1. Connectez-vous au portail Public VMware Cloud Foundation as-a-Service en tant qu'Organization Admin.
+1. Connectez-vous au portail VCF as-a-Service en tant qu'Organization Admin.
 2. Accédez à la section "Administration".
 3. Sélectionnez "Utilisateurs" et choisissez l'utilisateur que vous souhaitez modifier.
 4. Attribuez le rôle souhaité à partir de la liste des rôles disponibles.
