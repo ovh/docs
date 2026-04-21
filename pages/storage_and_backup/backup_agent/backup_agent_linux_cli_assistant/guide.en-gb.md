@@ -1,64 +1,74 @@
 ---
 title: "Backup Agent - Linux CLI Assistant"
-excerpt: "Use the ovh-ba-install.sh script provided by OVHcloud to install and manage the Veeam backup agent on your Linux server."
-updated: 2026-04-16
----
-
-In the OVHcloud Control Panel, open your Backup Agent, then the agent download dialog by selecting **Linux** to view and copy the installation command.
-
-![Backup Agent download — Linux installation commands](images/01-backup-agent-download-linux-en.png){.thumbnail}
-
-This guide describes the script provided by OVHcloud to install and manage the OVHcloud Backup Agent on your Linux server.
-
+excerpt: "Find out how to use the ovh-ba-install.sh script provided by OVHcloud to install and manage the Veeam backup agent on your Linux server"
+updated: 2026-04-21
 ---
 
 ## Objective
 
-The **`ovh-ba-install.sh`** script is a **command-line assistant** that lets you:
+**This guide explains how to use the `ovh-ba-install.sh` script provided by OVHcloud to install and manage the Veeam backup agent on your Linux server.**
 
-- **Install** the Veeam **Management Agent** using the package link from your backup space;
-- **Install** the global **`ovhbackupagent`** command on the server so you can open the same menu at any time (`sudo ovhbackupagent`);
-- **Show** a text menu: agent status, Veeam interface, diagnostics, help;
-- **Diagnose** issues (connection to the infrastructure, logs, archive for support);
-- **Uninstall** Veeam packages and, if you wish, the **`ovhbackupagent`** shortcut (**Uninstall Wizard**).
+You will learn how to retrieve the installation URLs, run the installation in a single command, navigate the CLI assistant menu, and use the diagnostic tools.
 
-**Takeaway:** the script **simplifies installation and day-to-day monitoring** on the machine; it does not replace configuring your backups in the Veeam Agent UI. **Cancelling the service** is done in the **OVHcloud Control Panel**, not through this script.
+## Requirements
 
----
+- An active Backup Agent service.
 
-## Prerequisites
+<!-- CP-NAV-START:baremetal-backup-agent -->
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ### On the server
 
 | Item | Detail |
 |--------|--------|
-| **OS** | Linux **compatible** with Veeam Agent for Linux (see Veeam / OVHcloud documentation for supported distributions). |
+| **OS** | Linux **compatible** with Veeam Agent for Linux (see the [Veeam system requirements](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13) and [Backup Agent restrictions](/pages/storage_and_backup/backup_agent/backup_agent_restrictions)). |
 | **Privileges** | **Administrator** access: installation commands generally use **`sudo`**. |
-| **Network** | The server must be able to **download** the script and agent package (HTTPS) and **reach** the backup gateway (VSPC) according to your offer’s rules. |
+| **Network** | The server must be able to **download** the script and agent package (HTTPS) and **reach** the backup gateway VSPC (Veeam Service Provider Console) according to your offer's rules. |
 | **Terminal** | An **SSH** session or server console, interactive for the menu. |
-
-### What you should have ready
-
-1. The **`ovh-ba-install.sh`** script URL **and** the **Linux Management Agent** package URL (provided by OVHcloud in the `Download`{.action} menu).
-
-> [!info]
->
-> Copy and paste these links into a text file before you connect to the server so you can paste them accurately in the terminal.
->
 
 ### Minimal vocabulary
 
 - **`curl`**: program that **downloads** a file from a web address (`https://…`).
-- **`sudo`**: “as administrator” — required to install system software.
+- **`sudo`**: "as administrator" — required to install system software.
 - **`bash`**: shell that **runs** the script you give it.
 
----
+## Instructions
 
-## In practice
+### Overview of the ovh-ba-install.sh script
 
-**One line to install your agent and assistant**
+The **`ovh-ba-install.sh`** script is a **command-line assistant** that lets you:
 
-Using the command line we provide, you can install the script and the agent at the same time.
+- **Install** the Veeam **Management Agent** using the package URL from your Control Panel;
+- **Install** the global **`ovhbackupagent`** command on the server so you can open the same menu at any time (`sudo ovhbackupagent`);
+- **Show** a text menu: agent status, Veeam interface, diagnostics, help;
+- **Diagnose** issues (connection to the infrastructure, logs, archive for support);
+- **Uninstall** Veeam packages and, if you wish, the **`ovhbackupagent`** shortcut (**Uninstall Wizard**).
+
+> [!warning]
+>
+> The script **simplifies installation and day-to-day monitoring** on the machine; it does not replace configuring your backups in the Veeam Agent interface. **Cancelling the service** is done in the **OVHcloud Control Panel**, not through this script.
+>
+
+### Retrieve the installation URLs
+
+In the OVHcloud Control Panel, open your [Backup Agent](/links/control-panel/baremetal-backup-agent), go to the `Agents`{.action} tab, then click the `Download`{.action} button. In the window that opens, select **Linux** to display the command containing both URLs (script and Linux package).
+
+![Backup Agent download — Linux installation commands](images/01-backup-agent-download-linux-en.png){.thumbnail}
+
+> [!primary]
+>
+> Copy and paste each URL separately into a text file before connecting over SSH.
+>
+
+### One line to install your agent and assistant
+
+Using the command line we provide, you can install the agent and the assistant at the same time. Replace `SCRIPT_URL` (in 2 places) and `AGENT_PACKAGE_URL` with the links copied earlier.
 
 ```bash
 curl -sSL "SCRIPT_URL" | sudo bash -s -- --setup "AGENT_PACKAGE_URL" --script-url "SCRIPT_URL"
@@ -67,7 +77,7 @@ curl -sSL "SCRIPT_URL" | sudo bash -s -- --setup "AGENT_PACKAGE_URL" --script-ur
 Example:
 
 ```bash
-curl -sSL "https://s3.xxx.xxx.cloud.ovh.net/ovh-ba-install.sh" | sudo bash -s -- --setup "https://s3.xxx.xxx.cloud.ovh.net/xxxx/LinuxAgentPackages.vspc_tenant_xxxx.sh?X-Amz-Algorithm=xxx&X-Amz-Credential=xxx&X-Amz-Date=2xxx&X-Amz-Expires=xxx&X-Amz-SignedHeaders=xxx&X-Amz-Signature=xxx" --script-url "https://s3.xxx.xxx.cloud.ovh.net/ovh-ba-install.sh"
+curl -sSL "https://ovh-ba-downloads.s3.xxx.xxx/tmp/ovh-ba-install.sh" | sudo bash -s -- --setup "https://s3.xxx.xxx.cloud.ovh.net/xxxx/LinuxAgentPackages.vspc_tenant_xxxx.sh?X-Amz-Algorithm=xxx&X-Amz-Credential=xxx&X-Amz-Date=2xxx&X-Amz-Expires=xxx&X-Amz-SignedHeaders=xxx&X-Amz-Signature=xxx" --script-url "https://ovh-ba-downloads.s3.xxx.xxx/tmp/ovh-ba-install.sh"
 ```
 
 ### After a successful install
@@ -93,29 +103,27 @@ sudo ovhbackupagent
 
 ### Downloaded the script again?
 
-If you run it **with no arguments** in an interactive terminal (`sudo bash ovh-ba-install.sh`), a short **welcome** screen checks whether **`ovhbackupagent`** is still present and whether the Veeam agent is detected, then can offer to **reinstall only** the shortcut.
-
----
+If you run the script **with no arguments** in an interactive terminal (`sudo bash ovh-ba-install.sh`), a short **welcome** screen checks whether **`ovhbackupagent`** is still present and whether the Backup Agent is detected, then can offer to **reinstall only** the shortcut.
 
 ## Step-by-step example: first install
 
-**Context**: new Linux server; you retrieved the download link for the script and agent from the Control Panel.
+**Scenario**: new Linux server; you have both URLs (script and Linux package) copied from the **Download Agent** window in your Control Panel.
 
-1. Connect to the server over SSH with a user allowed to use `sudo`.
+1\. Connect to the server over SSH with a user allowed to use `sudo`.
 
 ```bash
 ssh <user>@<server-ip-or-hostname>
 ```
 
-2. Paste the command and run it.
+2\. Replace `SCRIPT_URL` (in 2 places) and `AGENT_PACKAGE_URL` in the command below with your URLs, then run it.
 
 ```bash
-curl -sSL "https://s3.xxx.xxx.cloud.ovh.net/ovh-ba-install.sh" | sudo bash -s -- --setup "https://s3.xxx.xxx.cloud.ovh.net/xxxx/LinuxAgentPackages.vspc_tenant_xxxx.sh?X-Amz-Algorithm=xxx&X-Amz-Credential=xxx&X-Amz-Date=2xxx&X-Amz-Expires=xxx&X-Amz-SignedHeaders=xxx&X-Amz-Signature=xxx" --script-url "https://s3.xxx.xxx.cloud.ovh.net/ovh-ba-install.sh"
+curl -sSL "SCRIPT_URL" | sudo bash -s -- --setup "AGENT_PACKAGE_URL" --script-url "SCRIPT_URL"
 ```
 
-3. Read the introduction, then press **Enter** to start the installation.
+3\. Read the introduction, then press **Enter** to start the installation.
 
-```bash
+```console
  ▗▄▖ ▗▖  ▗▖▗▖ ▗▖ ▗▄▄▖▗▖    ▗▄▖ ▗▖ ▗▖▗▄▄▄     ▗▖  ▗▖    ▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖ ▗▄▖ ▗▖  ▗▖
 ▐▌ ▐▌▐▌  ▐▌▐▌ ▐▌▐▌   ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌  █     ▝▚▞▘     ▐▌  ▐▌▐▌   ▐▌   ▐▌ ▐▌▐▛▚▞▜▌
 ▐▌ ▐▌▐▌  ▐▌▐▛▀▜▌▐▌   ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌  █      ▐▌      ▐▌  ▐▌▐▛▀▀▘▐▛▀▀▘▐▛▀▜▌▐▌  ▐▌
@@ -142,11 +150,11 @@ Management Agent connects; that step can take a few minutes.
 Press Enter to start the installation, or Ctrl+C to cancel...
 ```
 
-4. Wait for the Veeam steps to finish; the script then installs **`ovhbackupagent`**.
+4\. Wait for the Veeam steps to finish; the script then installs **`ovhbackupagent`**.
 
-5. Read the **summary** for 15 seconds, then watch **Agent status**; the **Backup Agent** may appear after a few minutes (infrastructure-side deployment).
+5\. Read the **summary** for 15 seconds, then watch **Agent status**; the **Backup Agent** may appear after a few minutes (infrastructure-side deployment).
 
-```bash
+```console
 Installation summary
 
 [OK] The Management Agent was installed successfully.
@@ -168,7 +176,7 @@ Main menu - reminder (available again after Agent status)
 [Info] Waiting 15 seconds, then opening Agent status...
 ```
 
-```bash
+```console
 Agent status (veeamconsoleconfig -s)
 
 [Info] Retrieving Veeam status (up to 45s right after install)...
@@ -186,13 +194,11 @@ Your agents are running well.
 Auto-refresh in 5s... Press Enter to return to menu.
 ```
 
-6. Press **Enter** to access the menu; use **`A`** to view status again, **`D`** for diagnostics if something is stuck.
-
----
+6\. Press **Enter** to access the menu; use **`A`** to view status again, **`D`** for diagnostics if something is stuck.
 
 ## Main menu
 
-```bash
+```console
  ▗▄▖ ▗▖  ▗▖▗▖ ▗▖ ▗▄▄▖▗▖    ▗▄▖ ▗▖ ▗▖▗▄▄▄     ▗▖  ▗▖    ▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖ ▗▄▖ ▗▖  ▗▖
 ▐▌ ▐▌▐▌  ▐▌▐▌ ▐▌▐▌   ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌  █     ▝▚▞▘     ▐▌  ▐▌▐▌   ▐▌   ▐▌ ▐▌▐▛▚▞▜▌
 ▐▌ ▐▌▐▌  ▐▌▐▛▀▜▌▐▌   ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌  █      ▐▌      ▐▌  ▐▌▐▛▀▀▘▐▛▀▀▘▐▛▀▜▌▐▌  ▐▌
@@ -222,16 +228,14 @@ Auto-refresh in 5s... Press Enter to return to menu.
 | Key | Role |
 |--------|------|
 | **A** | Agent status (automatic refresh). |
-| **V** | Open the Veeam interface on the server to manage your backups and restores (when the backup agent is ready). |
-| **D** | **Diagnostic** submenu: VSPC test, support bundle, log analysis, force-stop of a stuck backup. |
+| **V** | Open the Veeam interface on the server to manage your backups and restores (once the Backup Agent is ready). |
+| **D** | **Diagnostic** submenu: VSPC test, support archive, log analysis, force-stop of a stuck backup. |
 | **I** | Reinstall the Management Agent from a file or URL (advanced). |
 | **U** | **Uninstall Wizard**: uninstall Veeam packages + optional removal of **`ovhbackupagent`**. |
 | **H** | Built-in help / README. |
 | **Q** | Quit. |
 
 The status line at the top of the menu shows **OK/KO** for **Management** (`veeamma`) and **Backup** (`veeam`, `veeam-libs`) packages, plus an indicator related to the last backup job.
-
----
 
 ## Troubleshooting and diagnostics
 
@@ -240,25 +244,24 @@ The status line at the top of the menu shows **OK/KO** for **Management** (`veea
 - **`D`** then **`I`**: **analysis** of known messages in the logs (`agent.log`, `veeaminstaller.log`, etc.).
 - **`D`** then **`J`**: **force-stop** tool for a backup session (use with care).
 
-For more in-depth diagnostics, see our [Backup Agent troubleshooting guide](/pages/storage_and_backup/backup_agent/backup_agent_troubleshooting).
-
----
+For advanced diagnostics, see our [Backup Agent troubleshooting guide](/pages/storage_and_backup/backup_agent/backup_agent_troubleshooting).
 
 ## Uninstall Wizard (key **U**)
 
 - Removes your agent according to your OS family (**yum/dnf**, **zypper**, **apt-get**).
 - Optional prompt to remove **`/usr/local/bin/ovhbackupagent`** and the associated README.
 
-**Important**: uninstalling the agents **does not cancel** your Backup Agent subscription. The service remains active with OVHcloud until you stop it in the **Control Panel**. You can **reinstall** the agents later from your backup interface.
-
----
+> [!warning]
+>
+> Uninstalling the agents **does not cancel** your Backup Agent subscription. The service remains active with OVHcloud until you cancel it in the **Control Panel**. You can **reinstall** the agents later from your backup interface.
+>
 
 ## FAQ
 
 **Can I run the script without `sudo`?**  
-No for installation and the menu: system-level actions are required.
+No: system-level actions are required and need administrator privileges (`sudo`).
 
-**The menu closes right after a piped install**  
+**The menu exits immediately after a piped install — what to do?**  
 You can reopen it with:
 
 ```bash
