@@ -62,8 +62,6 @@ ip a
 
 ### Récupération des adresses MAC
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les **Serveurs dédiés**.
-
 Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses MAC de chaque interface (publique/privée) qui s'affichent en bas du menu.
 
 ![Espace client OVHcloud](images/ControlPanel.png){.thumbnail}

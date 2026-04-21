@@ -63,8 +63,6 @@ ip a
 
 ### Retrieving MAC addresses
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**.
-
 Switch to the tab `Network Interfaces`{.action} and take note of the MAC addresses for each interface (public/private) which are displayed at the bottom of the menu.
 
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}

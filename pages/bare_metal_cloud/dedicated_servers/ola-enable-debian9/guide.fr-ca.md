@@ -63,8 +63,6 @@ L'agrégation repose sur la technologie IEEE 802.3ad, Link Aggregation Control P
 
 ### Récupération des adresses MAC
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans **Serveurs dédiés**.
-
 Rendez-vous dans l'onglet `Interfaces réseau`{.action} et notez les adresses MAC de chaque interface (publique/privée) qui sont affichées en bas du menu.
 
 ![Espace client OVHcloud](images/ControlPanel.png){.thumbnail}

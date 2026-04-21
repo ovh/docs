@@ -62,8 +62,6 @@ ip a
 
 ### Ermittlung der MAC-Adressen
 
-Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an, wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server unter **Dedicated Server** aus.
-
 Wechseln Sie zum Tab `Netzwerkinterfaces`{.action} und notieren Sie die MAC-Adressen für jede Schnittstelle (öffentlich/privat), die am unteren Ende des Menüs angezeigt werden.
 
 ![OVHcloud Kundencenter](images/ControlPanel.png){.thumbnail}
