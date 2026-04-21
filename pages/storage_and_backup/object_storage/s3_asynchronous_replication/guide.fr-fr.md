@@ -322,10 +322,9 @@ Avant de créer votre première tâche, veuillez tenir compte des considération
 >> - Terminés : le nombre d'objets qui ont été répliqués
 >> - Nombre total d'objets : le nombre total d'objets éligibles à la réplication
 >> 
->> 
->> [!warning]
->> - Les tâches sont automatiquement supprimées après 60 jours
->> - Vous pouvez utiliser le bouton d'actualisation pour mettre à jour régulièrement et vérifier les statuts des tâches
+>> > [!warning]
+>> > - Les tâches sont automatiquement supprimées après 60 jours
+>> > - Vous pouvez utiliser le bouton d'actualisation pour mettre à jour régulièrement et vérifier les statuts des tâches
 
 ### Exemples de configuration de réplication
 

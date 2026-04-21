@@ -321,13 +321,10 @@ Before creating your first job, please take into account the following considera
 >> - Stuck: the number of objects that couldn't be processed but are awaiting retries
 >> - Completed: the number of objects that have been replicated
 >> - Total objects: the total number of objects eligible for replication
->> 
->> 
->> [!warning]
->> - Jobs are automatically deleted after 60 days
->> - You can use the refresh button to regularly update and check job statuses
-
-
+>>  
+>> > [!warning]
+>> > - Jobs are automatically deleted after 60 days
+>> > - You can use the refresh button to regularly update and check job statuses
 
 ### Examples of replication configurations
 
