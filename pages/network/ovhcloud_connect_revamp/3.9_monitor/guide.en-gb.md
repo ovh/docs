@@ -59,6 +59,52 @@ Complement OVHcloud's monitoring with your own infrastructure:
 - **Ping / latency probes** — Set up regular pings or latency measurements between your on-premises network and OVHcloud resources.
 - **Third-party platforms** — Tools like Datadog, Zabbix, PRTG, or Grafana can aggregate metrics from both your infrastructure and OVHcloud's API.
 
+## On-demand diagnostics
+
+You can launch on-demand diagnostics from the OVHcloud Control Panel to get a point-in-time status report of your OVHcloud Connect service. Each diagnostic runs in real time against the OVHcloud-side equipment and returns a result you can view or download.
+
+### Available diagnostics
+
+**Layer 3 mode:**
+
+| Diagnostic | Description |
+|---|---|
+| **BGP Peering Test** | Fetches the BGP session state and related information. |
+| **Routes** | Fetches the routing table learned by OVHcloud via BGP (routes received from your side). |
+| **Advertised-Routes** | Fetches the routing table advertised by OVHcloud to your side. |
+
+**Layer 2 mode:**
+
+| Diagnostic | Description |
+|---|---|
+| **MAC Address** | Fetches the list of MAC addresses seen on the Layer 2 segment between your network devices and the vRack. |
+
+### Launch a diagnostic
+
+1. Log in to the [OVHcloud Control Panel](/links/manager).
+2. Go to **Network** > `OVHcloud Connect`{.action} and open the service you want to diagnose.
+3. At the bottom of the "POP Configuration" panel, in the "Diagnostic POP" segment, click the ellipsis button `...`{.action}.
+4. Select the diagnostic to run — for example `BGP Peering Test`{.action} in Layer 3 mode, or `Get the list of my MAC addresses`{.action} in Layer 2 mode.
+5. Confirm by clicking `Launch diagnostic`{.action}.
+
+### Retrieve a result
+
+1. Open the `Diagnostics`{.action} tab of the service. Each diagnostic is listed with its ID and timestamp.
+2. Click the ellipsis button `...`{.action} next to the entry.
+3. Select `See result`{.action} to open the output in a new window, or `Download result`{.action} to save a `.txt` file.
+
+### Limits
+
+| Limit | Value |
+|---|---|
+| **Retention** | Only diagnostics initiated **within the last seven days** are accessible. Download and archive the ones you need to keep. |
+| **Rate limit** | **10 diagnostics per type, per service, per 24 hours.** This applies independently to each diagnostic type (BGP Peering Test, Routes, Advertised-Routes, MAC Address). |
+
+> [!primary]
+>
+> Diagnostics are also available programmatically through the OVHcloud API under the `/ovhCloudConnect/{serviceName}/diagnostic/...` endpoints. Refer to the [API console](/links/api) for the full list.
+>
+
 ## Key metrics to watch
 
 ```svg
@@ -134,8 +180,9 @@ show route protocol bgp
 
 ## What's next?
 
-- [Declare and follow up on an incident](3.10_incident_followup.md) if you detect a problem
-- Review [SLAs](1.7_slas.md) to understand uptime guarantees
+- [Forward your OVHcloud Connect logs](../3.12_log_forwarding/guide.en-gb.md) to Logs Data Platform for long-term storage and analysis
+- [Declare and follow up on an incident](../3.10_incident_followup/guide.en-gb.md) if you detect a problem
+- Review [SLAs](../1.7_slas/guide.en-gb.md) to understand uptime guarantees
 
 ## Go further
 
