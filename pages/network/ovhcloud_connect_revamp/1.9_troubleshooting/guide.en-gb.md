@@ -449,10 +449,11 @@ Your OVHcloud Connect service appears in the Control Panel but cannot be configu
 
 | # | Possible cause | Solution |
 |---|---|---|
-| 1 | **Cross-connect not yet detected (Direct)** | The service is delivered when OVHcloud detects light on the port, or automatically **60 days** after the order if no light is detected. Ensure the cross-connect is installed and light is present. |
-| 2 | **Provider circuit not yet linked (Provider)** | Ensure the provider virtual circuit is provisioned and linked to the OVHcloud service using the correct pairing key. |
-| 3 | **Provisioning in progress** | New services may take a few minutes to become configurable after ordering. Wait and refresh the Control Panel. |
-| 4 | **Order issue** | If the service remains in "Pending" state for an extended period, contact OVHcloud support with your order reference. |
+| 1 | **Cross-connect not yet installed (Direct)** | The service becomes configurable once OVHcloud detects light on the port. Order the cross-connect from your data centre operator using the LOA and ensure your equipment is connected. |
+| 2 | **60-day interconnection window (Direct)** | After the order, you have **60 days** to finalize the interconnection (order the cross-connect and interconnect your equipment). Beyond 60 days — even without detected light — the service is considered operational and billing starts. |
+| 3 | **Provider circuit not yet linked (Provider)** | Ensure the provider virtual circuit is provisioned and linked to the OVHcloud service using the correct pairing key. |
+| 4 | **Provisioning in progress** | New services may take a few minutes to become configurable after ordering. Wait and refresh the Control Panel. |
+| 5 | **Order issue** | If the service remains in "Pending" state for an extended period, contact OVHcloud support with your order reference. |
 
 ---
 

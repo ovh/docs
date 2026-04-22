@@ -15,8 +15,7 @@ This guide explains how to order an OVHcloud Connect service through a **third-p
 | **Provider** | The third-party provider you want to use (see [Providers](1.3_providers.md)) |
 | **PoP location** | The OVHcloud PoP where the provider will connect |
 | **Bandwidth** | The desired speed (e.g. 100 Mbps, 1 Gbps, 10 Gbps — options vary by provider) |
-| **Connection mode** | Layer 2 (you manage BGP) or Layer 3 (provider manages routing) |
-| **Your ASN & IP plan** | For Layer 2 connections, you need an ASN and peering IPs |
+| **Your ASN & IP plan** | OVHcloud Connect Provider is always a Layer 3 service; you need an ASN and peering IPs for BGP |
 
 ## Order via the OVHcloud Control Panel
 
@@ -101,7 +100,7 @@ The pairing key identifies your OVHcloud Connect order and allows the provider t
 1. **Pairing key generated** — OVHcloud provides the key after you place the order.
 2. **Provider provisions** — The provider uses the key to set up the virtual or physical link. On-demand providers (Megaport, Equinix) typically complete this in minutes.
 3. **Link becomes active** — OVHcloud activates the connection and the status changes to "Active" in the Control Panel.
-4. **Configure and test** — Set up BGP (if L2), associate with your vRack, and test connectivity.
+4. **Configure and test** — Verify BGP peering, associate with your vRack, and test connectivity.
 
 ## Pricing and billing
 

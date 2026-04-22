@@ -35,6 +35,12 @@ See [Providers](1.3_providers.md) for details.
 
 OVHcloud Connect is available in major PoP locations across Europe, North America, and Asia-Pacific. See [PoP locations and regions](1.4_pop_locations_regions.md) for the full list.
 
+### Can OVHcloud host my router?
+
+No. OVHcloud does not host customer networking equipment. To use OVHcloud Connect Direct, you must have your **own rack space (a bay)** in a data centre where OVHcloud has a point of presence, with your router installed and operated by you. You can then order an OVHcloud Connect Direct service and a cross-connect between your bay and the OVHcloud PoP within that facility.
+
+If you do not have a presence in an OVHcloud PoP, use [OVHcloud Connect Provider](3.2_order_provider.md) instead — your provider handles the last-mile connectivity on your behalf.
+
 ---
 
 ## Ordering & billing
@@ -45,6 +51,19 @@ OVHcloud Connect is available in major PoP locations across Europe, North Americ
 - **Provider**: [Order a Provider connection](3.2_order_provider.md)
 
 You can order through the OVHcloud Control Panel, the API, or Terraform.
+
+### How long before my OVHcloud Connect service is delivered?
+
+**Direct:**
+
+- The **Letter of Authorization (LOA)** is issued **within minutes** of the order.
+- You then have **60 days** to finalize the interconnection: order the cross-connect from your data centre operator, and physically connect your equipment to the OVHcloud patch panel.
+- The service is delivered as soon as OVHcloud detects light on the port. If no light is detected within 60 days, the service is nevertheless considered operational and **billing starts**.
+
+**Provider:**
+
+- OVHcloud generates a **pairing key** (service key) immediately after the order.
+- The service is delivered as soon as your provider consumes the pairing key and provisions the virtual circuit — typically within **minutes to hours** for on-demand providers such as Megaport, Equinix Fabric, or Console Connect.
 
 ### How is OVHcloud Connect billed?
 

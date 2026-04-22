@@ -68,7 +68,7 @@ print(result)
 
   <rect x="195" y="35" width="140" height="50" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/>
   <text x="265" y="55" text-anchor="middle" fill="#e65100" font-weight="bold">LOA sent</text>
-  <text x="265" y="72" text-anchor="middle" fill="#555" font-size="10">1–5 business days</text>
+  <text x="265" y="72" text-anchor="middle" fill="#555" font-size="10">Within minutes</text>
 
   <rect x="375" y="35" width="140" height="50" rx="6" fill="#fff3e0" stroke="#e65100" stroke-width="1.5"/>
   <text x="445" y="55" text-anchor="middle" fill="#e65100" font-weight="bold">Cross-connect</text>
@@ -91,9 +91,14 @@ print(result)
 ```
 
 1. **Order confirmed** — You receive an email with your order reference.
-2. **LOA delivered** — OVHcloud sends the Letter of Authorization (usually within 1–5 business days). The LOA contains the data centre details needed to install the cross-connect.
+2. **LOA delivered** — OVHcloud issues the Letter of Authorization **within minutes** of the order. The LOA contains the data centre details needed to install the cross-connect.
 3. **Cross-connect installed** — Give the LOA to your data centre operator. They install the fibre patch cable. Timing depends on the facility (a few days to 2 weeks).
-4. **Port becomes active** — Once the cross-connect is in place, OVHcloud activates the port. You can now proceed to configure BGP and associate with your vRack.
+4. **Port becomes active** — Once the cross-connect is in place and OVHcloud detects light, the port becomes active and the service is delivered. You can now configure BGP and associate with your vRack.
+
+> [!warning]
+>
+> After the order, you have **60 days** to finalize the interconnection (order the cross-connect and connect your equipment). Beyond 60 days — even without detected light — the service is considered operational and **billing starts**.
+>
 
 ## Pricing and billing
 

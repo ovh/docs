@@ -14,7 +14,7 @@ Make sure you have:
 
 - ✅ An **OVHcloud account** with billing configured
 - ✅ A contract or account with a **supported provider** (see [Providers](1.3_providers))
-- ✅ A **router** that supports BGP (if using Layer 2 mode; Layer 3 may not require BGP on your side)
+- ✅ A **router** that supports BGP peering (OVHcloud Connect Provider is always a Layer 3 service)
 - ✅ A planned **IP addressing scheme** and **ASN**
 
 ## Steps overview
@@ -41,7 +41,7 @@ Make sure you have:
   <!-- Step 4 -->
   <circle cx="60" cy="225" r="20" fill="#e65100"/>
   <text x="60" y="230" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">4</text>
-  <text x="95" y="230" fill="#333" font-weight="bold">Configure BGP (Layer 2) or verify (Layer 3)</text>
+  <text x="95" y="230" fill="#333" font-weight="bold">Verify BGP session and routing</text>
 
   <!-- Step 5 -->
   <circle cx="60" cy="285" r="20" fill="#e65100"/>
@@ -97,18 +97,18 @@ Link the OVHcloud Connect service to your **vRack**:
 
 See [Associate an OVHcloud Connect to your vRack](3._associate_vrack).
 
-### Step 5 — Configure BGP or verify Layer 3
+### Step 5 — Verify BGP session and routing
 
-The provider handles BGP configuration on your behalf. Verify in your provider's portal that the session is established and routes are being exchanged.
+OVHcloud Connect Provider is always a Layer 3 service — BGP peering is established between your router (or your provider's router, depending on your provider offering) and the OVHcloud PoP. Verify in the OVHcloud Control Panel and in your provider's portal that the session is established and routes are being exchanged.
 
-See [Configure OCC L3 with BGP](3.6_occ_l3_bgp) for detailed guidance.
+See [Configure OCC L3 with BGP](3.7_occ_l3_bgp) for detailed guidance.
 
 ### Step 6 — Test and verify
 
 | Check | How |
 |---|---|
 | **Connection status** | Shows "Active" in OVHcloud Control Panel and provider portal |
-| **BGP session** | Established (if L2 mode — check on your router) |
+| **BGP session** | Established — check on your router and in the OVHcloud Control Panel |
 | **Routes** | Your prefixes visible on OVHcloud side; OVHcloud routes visible on your side |
 | **Ping** | Ping an OVHcloud resource from your network |
 | **Traceroute** | Verify traffic goes through the private link, not the internet |
@@ -119,7 +119,7 @@ See [Configure OCC L3 with BGP](3.6_occ_l3_bgp) for detailed guidance.
 |---|---|
 | Connection stuck in "Pending" | Verify the pairing key was entered correctly on the provider's side |
 | Provider shows "Active" but OVHcloud shows "Down" | Contact OVHcloud support — there may be a provisioning delay |
-| BGP session not establishing | Check peering IPs, ASN, VLAN ID; ensure port is in L2 mode if configuring BGP yourself |
+| BGP session not establishing | Check peering IPs, ASN, and VLAN ID on both your router and the OVHcloud PoP configuration |
 | High latency or packet loss | Check provider's network status page; run traceroute to identify where delays occur |
 
 ## What's next?
