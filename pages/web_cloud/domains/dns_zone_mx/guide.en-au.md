@@ -15,7 +15,7 @@ updated: 2026-03-27
 
 ## Objective
 
-With an MX record, you can link a domain name to the server on your email platform. It is essential for the sender's email service to reach the recipient's email service.
+With an MX record, you can link a domain name to the server on your email platform. It is essential for the sender’s email service to reach the recipient’s email service.
 
 **Find out how to configure an MX record for your domain name at OVHcloud.**
 
@@ -60,7 +60,7 @@ You can set up multiple MX records for the same domain name. It is then necessar
 
 > [!warning]
 >
-> Generally speaking, **modifying MX records in a domain name's DNS zone warrants caution**. If you make any mistakes configuring the records, it may make it impossible for emails to reach your email address. Please take care when you carry out this procedure.
+> Generally speaking, **modifying MX records in a domain name’s DNS zone warrants caution**. If you make any mistakes configuring the records, it may make it impossible for emails to reach your email address. Please take care when you carry out this procedure.
 > If you have any doubts, we advise contacting a [specialist provider](/links/partner).
 
 ### OVHcloud MX configuration values <a name="mxovhcloud"></a>
@@ -77,8 +77,9 @@ These values are common to all of these solutions, with the exception of [Privat
 |*leave blank*|3600|MX|100|mx3.mail.ovh.net.|
 |*leave blank*|3600|MX|200|mx4.mail.ovh.net.|
 
-These MX records must be configured in your domain name's DNS zone.
+These MX records must be configured in your domain name’s DNS zone.
 
+<!-- CP-STEPS-START:configure-mx-record -->
 ### Configuring an MX record in an OVHcloud DNS zone
 
 Click on the tabs below to view each of the **5** steps.
@@ -92,7 +93,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 > **Step 2**
 >>
->> The table shows your domain name's OVHcloud configuration. Each row corresponds to a DNS record.
+>> The table shows your domain name’s OVHcloud configuration. Each row corresponds to a DNS record.
 >>
 >> Check if MX records already exist by selecting the **MX** type in the filter list above the table, then confirm.
 >>
@@ -121,6 +122,7 @@ Click on the tabs below to view each of the **5** steps.
 >
 > The change can take between 4 and 24 hours to propagate fully.
 >
+<!-- CP-STEPS-END:configure-mx-record -->
 
 ## Go further
 

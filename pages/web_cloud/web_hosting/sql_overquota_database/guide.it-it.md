@@ -66,6 +66,7 @@ Il primo passaggio consiste nell'identificare le tavole voluminose presenti nel 
 
 Recupera le informazioni di accesso al database direttamente nel file di configurazione del tuo sito Web. Per effettuare questa operazione, utilizza la **parte 1** della nostra guida su [modificare la password di un database](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 Per accedere al database tramite phpMyAdmin, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -96,6 +97,7 @@ Per accedere al database tramite phpMyAdmin, clicca sulle schede qui sotto per v
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Ricerca le tavole più voluminose <a name="step1.2"></a>
 
@@ -235,6 +237,7 @@ Tuttavia, è possibile forzare il passaggio ai servizi per accelerare il process
 
 #### Ricalcola la quota per un database incluso nel piano di hosting Web
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -265,9 +268,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Una volta avviata, l'operazione potrebbe richiedere alcuni minuti. Al termine, lo stato "READ ONLY" del database scompare.
 >> Il database sarà di nuovo pienamente operativo.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Ricalcola la quota di un database ospitato su una soluzione Web Cloud Databases
 
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -286,6 +291,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> Una volta avviata, l'operazione potrebbe richiedere alcuni minuti. Al termine, lo stato "READ ONLY" del database scompare.
 >> Il database sarà di nuovo pienamente operativo.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Per saperne di più <a name="go-further"></a>
 

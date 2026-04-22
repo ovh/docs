@@ -64,6 +64,8 @@ En función de su situación, la ruta de acceso a la base de datos de origen es 
 
 **Haga clic en la situación correspondiente para ver el contenido.**
 
+<!-- CP-STEPS-START:copy-from-startsql -->
+
 /// details | Desde una base de datos Start SQL
 
 Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
@@ -118,6 +120,10 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 >> ![Tareas en curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:copy-from-startsql -->
+
+
+<!-- CP-STEPS-START:copy-from-wcdb -->
 
 /// details | Desde un servidor Web Cloud Databases
 
@@ -173,6 +179,8 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 >> ![Tareas en curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:copy-from-wcdb -->
+
 
 ### Configurar un sitio web con una nueva base de datos
 

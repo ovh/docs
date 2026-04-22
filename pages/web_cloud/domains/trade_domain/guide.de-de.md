@@ -58,6 +58,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 
 ### Initiieren des Inhaberwechsels oder Ändern der Inhaberinformationen
 
+<!-- CP-STEPS-START:change-domain-owner -->
 Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
@@ -112,6 +113,7 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >>
 >> Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änderung des Inhabers des Domainnamens wirksam.
 >>
+<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >
@@ -131,4 +133,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.

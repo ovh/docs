@@ -53,6 +53,7 @@ En cliquant sur `Confirmer votre adresse e-mail`{.action}, une nouvelle page s'o
 
 ### 2 - Corriger ou compléter les coordonnées/informations de contact du titulaire du nom de domaine en tant qu'administrateur
 
+<!-- CP-STEPS-START:fix-contact-info -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -89,6 +90,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
 >> Retrouvez plus de détails sur le changement de titulaire dans notre guide : « [Nom de domaine - Comment changer le titulaire ?](/pages/web_cloud/domains/trade_domain) ».
+<!-- CP-STEPS-END:fix-contact-info -->
 
 ### 3 - Que faire si l'adresse e-mail du contact titulaire n'est plus accessible ?
 
@@ -130,6 +132,7 @@ Pour certaines extensions ( par exemple : .fr, .it, .es), l'administrateur du do
 > Si les corrections apportées en suivant la première partie de ce guide ont nécessité l'initialisation d'un changement de titulaire pour le nom de domaine, finalisez d'abord le changement de titulaire **avant** de poursuivre les actions décrites ci-dessous.
 >
 
+<!-- CP-STEPS-START:relaunch-verification -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -158,6 +161,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> Si l'opération s'est terminée avec succès, la ligne relative à l'opération traitée n'apparaît plus.
 >>
 >> Dans le cas contraire, cela signifie qu'une correction est toujours nécessaire au niveau des coordonnées du titulaire du nom de domaine. Dans ce cas, reprenez ce guide depuis le début pour corriger la situation.
+<!-- CP-STEPS-END:relaunch-verification -->
 
 ## Aller plus loin
 

@@ -59,6 +59,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 
 ### Rozpocznij procedurę zmiany abonenta lub zmień powiązane z nim informacje
 
+<!-- CP-STEPS-START:change-domain-owner -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 > [!tabs]
@@ -113,6 +114,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 >>
 >> Gdy obaj adresaci potwierdzą wniosek e-mailem, zmiana abonenta nazwy domeny stanie się skuteczna.
 >>
+<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >
@@ -132,4 +134,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

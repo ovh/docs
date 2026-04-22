@@ -77,6 +77,7 @@ Inoltre, per disattivare definitivamente un certificato SSL da un hosting Web, a
 >
 > Queste operazioni sono relative ai parametri dei tuoi siti Web, per cui ti consigliamo di contattare un [provider di servizi specializzato](/links/partner). OVHcloud non sarà in grado di fornirti assistenza.
 
+<!-- CP-STEPS-START:delete-ssl -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -103,6 +104,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Nella nuova finestra, conferma la disattivazione cliccando su `Confermare`{.action}.
 >>
 >> ![Elimina SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/ssl-deletion.png){.thumbnail}
+<!-- CP-STEPS-END:delete-ssl -->
 
 La disattivazione del certificato SSL sarà effettiva entro poche ore al massimo.
 

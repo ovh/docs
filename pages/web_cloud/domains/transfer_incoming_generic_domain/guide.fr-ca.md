@@ -178,6 +178,7 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 >
 > En fonction de la situation et de la nouvelle date d'expiration de votre nom de domaine, un renouvellement du nom de domaine sera peut être nécessaire juste après le transfert.
 
+<!-- CP-STEPS-START:check-domain-expiry -->
 Pour vérifier cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -190,6 +191,7 @@ Pour vérifier cela, cliquez sur les onglets ci-dessous pour afficher successive
 > **Étape 2**
 >>
 >> Sur la page qui s'affiche, juste en dessous de votre nom de domaine, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
+<!-- CP-STEPS-END:check-domain-expiry -->
 
 ## Aller plus loin
 

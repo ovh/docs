@@ -32,6 +32,7 @@ As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamen
 
 ### Criar um novo utilizador FTP no seu alojamento web <a name="create-ftp-user"></a>
 
+<!-- CP-STEPS-START:create-ftp-user -->
 Para criar um novo utilizador FTP no seu alojamento web através da Área de Cliente OVHcloud, clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 
 > [!tabs]
@@ -82,6 +83,7 @@ Para criar um novo utilizador FTP no seu alojamento web através da Área de Cli
 >> ![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
 >>
 >> Esta última janela resume as configurações escolhidas para o seu novo utilizador FTP. Se estes parâmetros correspondem ao que deseja, clique em `Validar`{.action} para finalizar o pedido de criação de um novo utilizador FTP no seu alojamento web.
+<!-- CP-STEPS-END:create-ftp-user -->
 
 > [!primary]
 >
@@ -91,6 +93,7 @@ Se necessário, teste este novo utilizador FTP através do nosso guia "[Aceder a
 
 ### Modificar um utilizador FTP
 
+<!-- CP-STEPS-START:modify-ftp-user -->
 Para editar um utilizador FTP, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -123,6 +126,7 @@ Para editar um utilizador FTP, clique nos separadores abaixo para visualizar cad
 >> Além disso, pode *Desativar utilizador* selecionando a caixa de verificação adequada. Esta opção pode ser útil se pretender impedir que um colaborador aceda ao seu espaço FTP sem eliminar os logs FTP e SSH associados. Estes logs permitem-lhe determinar quais as operações realizadas pelo seu colaborador se verificar intervenções não desejadas no seu alojamento web.
 >>
 >> Depois de realizar as alterações, clique em `Seguinte`{.action}. Verifique os seus pedidos de alteração e depois clique em `Validar`{.action} para finalizar o pedido de modificação do utilizador FTP no seu alojamento web.
+<!-- CP-STEPS-END:modify-ftp-user -->
 
 > [!primary]
 >
@@ -132,6 +136,7 @@ Para editar um utilizador FTP, clique nos separadores abaixo para visualizar cad
 
 ### Eliminar um utilizador FTP <a name="delete-ftp-user"></a>
 
+<!-- CP-STEPS-START:delete-ftp-user -->
 Para eliminar um utilizador FTP, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -160,6 +165,7 @@ Para eliminar um utilizador FTP, clique nos separadores abaixo para visualizar c
 >> ![FTP-SSH delete user confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1-confirmation.png){.thumbnail}
 >>
 >> Clique em `Validar`{.action} para eliminar definitivamente o utilizador FTP do seu alojamento web.
+<!-- CP-STEPS-END:delete-ftp-user -->
 
 ## Quer saber mais?
 

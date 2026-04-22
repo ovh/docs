@@ -42,7 +42,7 @@ pre.bgwhite code {
 
 Vous souhaitez créer une zone DNS pour un sous-domaine ?
 
-La zone **D**omain **N**ame **S**ystem (**DNS**) d’un nom de domaine constitue son fichier de configuration. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS agit comme un centre d'aiguillage.
+La zone **D**omain **N**ame **S**ystem (**DNS**) d'un nom de domaine constitue son fichier de configuration. Elle se compose d'informations techniques, appelées *enregistrements DNS*. La zone DNS agit comme un centre d'aiguillage.
 
 Pour plus d'explications, consultez nos guides ci-dessous :
 
@@ -50,7 +50,7 @@ Pour plus d'explications, consultez nos guides ci-dessous :
 - [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information)
 - [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
-Le plus souvent, les enregistrements DNS d’un sous-domaine se configurent directement depuis la zone DNS active du nom de domaine dont il dépend.
+Le plus souvent, les enregistrements DNS d'un sous-domaine se configurent directement depuis la zone DNS active du nom de domaine dont il dépend.
 Cependant, il est également possible de créer une zone DNS spécifique à un sous-domaine.
 
 Pour diverses raisons, vous pouvez être amené à créer une zone DNS pour un sous-domaine chez OVHcloud.
@@ -63,7 +63,7 @@ Celui-ci disposera alors de sa propre zone pour configurer ses enregistrements D
 > - Un nom de domaine a généralement cette forme : **domain.tld**. Par exemple : ovhcloud.com.
 > - Un sous-domaine a généralement cette forme : **sub.domain.tld**. Par exemple : help.ovhcloud.com.
 >
-> Par défaut, un sous-domaine dépend d’un nom de domaine pour fonctionner.
+> Par défaut, un sous-domaine dépend d'un nom de domaine pour fonctionner.
 > Concrètement, vous ne pourrez pas utiliser le sous-domaine **sub.domain.tld** si vous n'avez pas accès à la gestion du nom de domaine **domain.tld**.
 >
 > Si vous souhaitez créer une zone DNS pour un nom de domaine, consultez directement [ce guide](/pages/web_cloud/domains/dns_zone_create).
@@ -90,6 +90,7 @@ Celui-ci disposera alors de sa propre zone pour configurer ses enregistrements D
 
 ### 1 - Créer la zone DNS via l'espace client OVHcloud
 
+<!-- CP-STEPS-START:create-dns-zone -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -113,12 +114,13 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> ![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png){.thumbnail}
 >>
->> |Activer les entrées minimales ?|Détails|
+>> |Activer les entrées minimales ?|Détails|
 >> |---|---|
 >> |Oui|Sélectionnez **Oui** si vous souhaitez personnaliser vous-même la zone DNS par la suite.<br>![minimal-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
 >> |Non|Sélectionnez **Non** si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](/links/web/hosting), car la zone DNS sera automatiquement préconfigurée pour ces services.<br>![no-minimal-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 >>
 >> Une fois votre choix effectué, suivez les étapes affichées dans votre espace client OVHcloud jusqu'à la création de la zone DNS.
+<!-- CP-STEPS-END:create-dns-zone -->
 
 ### 2 - Éditer la zone DNS (facultatif)
 
@@ -132,12 +134,13 @@ Pour éditer cette zone DNS, consultez notre guide « [Éditer une zone DNS OVHc
 
 ### 3 - Déclarer les serveurs DNS dans la zone DNS active du nom de domaine dont dépend le sous-domaine choisi
 
-L’activation d’une zone DNS pour un sous-domaine diffère de celle d’un nom de domaine, car un sous-domaine dépend obligatoirement d’un nom de domaine pour fonctionner.
+L'activation d'une zone DNS pour un sous-domaine diffère de celle d'un nom de domaine, car un sous-domaine dépend obligatoirement d'un nom de domaine pour fonctionner.
 
-Vous devez d’abord récupérer le nom des **serveurs DNS** OVHcloud associés à la zone DNS créée pour votre sous-domaine.
+Vous devez d'abord récupérer le nom des **serveurs DNS** OVHcloud associés à la zone DNS créée pour votre sous-domaine.
 
 Pour les retrouver, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
+<!-- CP-STEPS-START:retrieve-ns-servers -->
 > [!tabs]
 > **Étape 1**
 >>
@@ -157,6 +160,7 @@ Pour les retrouver, cliquez sur les onglets ci-dessous pour afficher successivem
 >> - `nsXX.ovh.net` et `dnsXX.ovh.net` ou, `nsXXX.ovh.net` et `dnsXXX.ovh.net` (où chaque `X` représente un chiffre compris entre **0** et **9**).
 >> - `nsXX.ovh.ca` et `dnsXX.ovh.ca` ou, `nsXXX.ovh.ca` et `dnsXXX.ovh.ca` (où chaque `X` représente un chiffre compris entre **0** et **9**).
 >> - `ns200.anycast.me` et `dns200.anycast.me` (si vous avez souscrit à l'option [DNS anycast](/links/web/domains-options)).
+<!-- CP-STEPS-END:retrieve-ns-servers -->
 
 Une fois les 2 noms de serveur DNS récupérés, 2 situations sont possibles :
 
@@ -166,6 +170,7 @@ Une fois les 2 noms de serveur DNS récupérés, 2 situations sont possibles :
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
+<!-- CP-STEPS-START:add-ns-entries-ovhcloud -->
 > [!tabs]
 > **Étape 1**
 >>
@@ -198,6 +203,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> **Réitérez l'ensemble des étapes pour le second serveur DNS.**
 >>
 >> Si besoin, consultez en complément notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+<!-- CP-STEPS-END:add-ns-entries-ovhcloud -->
 
 ///
 
@@ -251,4 +257,4 @@ Pour des prestations spécialisées (référencement, développement, etc.), con
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

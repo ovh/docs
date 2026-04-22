@@ -93,6 +93,7 @@ Si la renovación automática está activada, su forma de pago debe ser válida 
 
 ### Cambiar el modo de renovación de mis dominios
 
+<!-- CP-STEPS-START:cambiar-modo-renovacion -->
 Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
 > [!tabs]
@@ -117,9 +118,11 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 >> - Seleccione las filas correspondientes de la tabla marcando las casillas de verificación al principio de la fila.
 >> - Haga clic en el botón `Acciones`{.action} situado en la parte superior izquierda de la tabla.
 >> - Seleccione `Activar el pago automático`{.action} o `Desactivar el pago automático`{.action}.
+<!-- CP-STEPS-END:cambiar-modo-renovacion -->
 
 ### Renovar mi dominio antes de la fecha de expiración
 
+<!-- CP-STEPS-START:renovar-antes-expiracion -->
 Haga clic en las pestañas de abajo para visualizar cada uno de los **3** pasos.
 
 > [!tabs]
@@ -141,6 +144,7 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **3** pasos.
 >>
 >> Puede renovar el servicio en cualquier momento antes de su expiración y también elegir la duración de renovación.
 >> En este caso, el período de validez contratado se sumará al período de validez en curso. No perderá el tiempo de validez restante.
+<!-- CP-STEPS-END:renovar-antes-expiracion -->
 
 ### Seguir la renovación de un dominio
 
@@ -148,6 +152,7 @@ Una vez realizado el cargo por la renovación, el dominio se renovará el día a
 
 Los datos mostrados en el Whois se actualizarán para confirmar la renovación del dominio.
 
+<!-- CP-STEPS-START:seguir-renovacion -->
 Para comprobar el estado de la renovación del dominio, haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
 > [!tabs]
@@ -162,9 +167,11 @@ Para comprobar el estado de la renovación del dominio, haga clic en las pestañ
 >> En la sección **Información general**, compruebe el estado de la renovación en **Estado del dominio**.
 >>
 >> Una vez realizado el pago, aparecerá la indicación `Renovación en curso` hasta la renovación efectiva de su dominio en el registro.
+<!-- CP-STEPS-END:seguir-renovacion -->
 
 ### Dar de baja un dominio
 
+<!-- CP-STEPS-START:dar-de-baja-dominio -->
 Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
 > [!tabs]
@@ -179,6 +186,7 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 >> Haga clic a la derecha de la línea en el botón `...`{.action} y luego en `Dar de baja mi servicio`{.action}.
 >>
 >> Esta acción se propone para los servicios configurados en **renovación automática**. Al elegir esta acción, se desactivan la renovación y el cargo automáticos para el servicio seleccionado.
+<!-- CP-STEPS-END:dar-de-baja-dominio -->
 
 > [!primary]
 >
@@ -188,6 +196,7 @@ Para más información, consulte nuestra guía "**[Cómo dar de baja sus servici
 
 ### Abonar la factura de renovación de un dominio
 
+<!-- CP-STEPS-START:abonar-factura-renovacion -->
 Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
 > [!tabs]
@@ -207,6 +216,7 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 >> >
 >> > - Tiene servicios con renovación automática.
 >> > - No ha registrado ninguna forma de pago que permita realizar un cargo para el pago de sus facturas.
+<!-- CP-STEPS-END:abonar-factura-renovacion -->
 
 ## FAQ
 
@@ -244,6 +254,7 @@ Una vez realizada la renovación por el registro (aproximadamente un mes despué
 
 Los datos del WHOIS se actualizarán posteriormente.
 
+<!-- CP-STEPS-START:faq-comprobar-estado-renovacion -->
 Para comprobar el estado de la renovación del dominio, haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
 > [!tabs]
@@ -256,6 +267,7 @@ Para comprobar el estado de la renovación del dominio, haga clic en las pestañ
 > **Paso 2**
 >>
 >> En la sección **Información general**, compruebe el estado de la renovación en **Estado del dominio**.
+<!-- CP-STEPS-END:faq-comprobar-estado-renovacion -->
 
 ///
 

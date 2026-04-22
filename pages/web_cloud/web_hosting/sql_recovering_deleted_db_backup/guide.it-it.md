@@ -46,6 +46,7 @@ Le API OVHcloud sono messe a disposizione per permettere agli sviluppatori o agl
 
 ### 1 - Recupera il nome dell'hosting Web al quale era associato il database eliminato
 
+<!-- CP-STEPS-START:retrieve-webhosting-name -->
 Per recuperare il nome dell'hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -58,6 +59,7 @@ Per recuperare il nome dell'hosting Web, clicca sulle schede qui sotto per visua
 >> In alto a sinistra nella pagina visualizzata, trovi il nome del tuo hosting web a destra della voce `Hosting /`.
 >>
 >> ![Nome dell'hosting web nello Spazio Cliente OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
 ### 2 - Connettersi alle API OVHcloud e consentire loro l'accesso ai servizi
 

@@ -59,6 +59,7 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 
 ### Iniciar el procedimiento de cambio de titular o modificar la información asociada
 
+<!-- CP-STEPS-START:change-domain-owner -->
 Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 > [!tabs]
@@ -113,6 +114,7 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 >>
 >> Una vez que ambos destinatarios hayan confirmado la solicitud por correo electrónico, el cambio de titular del nombre de dominio será efectivo.
 >>
+<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >
@@ -132,4 +134,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -63,6 +63,7 @@ To solve this issue, you will need to:
 
 #### Check the hosting IP address
 
+<!-- CP-STEPS-START:check-hosting-ip -->
 The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](/links/web/hosting). For this reason, you will need to check the IP address of the server your [domain name](/links/web/domains) is attached to.
 
 To find the IP address of your [OVHcloud hosting plan](/links/web/hosting), click on the tabs below to view each of the **2** steps.
@@ -81,9 +82,11 @@ To find the IP address of your [OVHcloud hosting plan](/links/web/hosting), clic
 >> ![IPv4 and IPv6 addresses](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Note the IPv4 and/or IPv6 address, then continue reading the guide.
+<!-- CP-STEPS-END:check-hosting-ip -->
 
 #### Check the IP address in the DNS zone
 
+<!-- CP-STEPS-START:check-dns-zone-ip -->
 You now need to check that the IP address listed in the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) corresponds to the one of your [OVHcloud Web Hosting plan](/links/web/hosting).
 
 Click on the tabs below to view each of the **2** steps.
@@ -100,6 +103,7 @@ Click on the tabs below to view each of the **2** steps.
 >> Note the target of the `A` record for your domain name:
 >>
 >> ![A record target in DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
+<!-- CP-STEPS-END:check-dns-zone-ip -->
 
 #### Perform the necessary actions
 
@@ -163,6 +167,7 @@ If necessary, contact your webmaster or the [OVHcloud partners](/links/partner) 
 
 ### 2 - Check your Web Hosting plan's SSL certificate <a name="step2"></a>
 
+<!-- CP-STEPS-START:check-ssl-certificate -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -177,6 +182,7 @@ Click on the tabs below to view each of the **2** steps.
 >> In the `General information`{.action} tab, check the `SSL certificate` section:
 >>
 >> ![SSL certificate in general tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
+<!-- CP-STEPS-END:check-ssl-certificate -->
 
 #### Scenario 1: Your Web Hosting plan does not contain any SSL certificate
 

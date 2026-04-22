@@ -54,6 +54,7 @@ Um sich zu verbinden und den SSH Zugang Ihres Webhostings zu verwenden benötige
 
 ### 1 - Stellen Sie sicher, dass der SSH-Zugang für den ausgewählten SSH-Benutzer aktiv ist <a name="user-ssh-enablement"></a>
 
+<!-- CP-STEPS-START:check-ssh-access -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -84,9 +85,11 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> - 3: Überprüfen Sie die Zusammenfassung der angeforderten Änderung, und klicken Sie dann auf `Bestätigen`{.action}.
 >>
 >> > Wenn Sie es nicht aktivieren können, überprüfen Sie, dass [Ihr OVHcloud Webhosting](/links/web/hosting) über einen SSH-Zugang verfügt.
+<!-- CP-STEPS-END:check-ssh-access -->
 
 ### 2 - Rufen Sie die notwendigen Informationen für die Verbindung per SSH ab <a name="sshlogin"></a>
 
+<!-- CP-STEPS-START:retrieve-ssh-login -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -112,6 +115,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> |**SSH-Server-Verbindungsport**| Geben Sie `SSH-Port` an. Standardmäßig lautet die Nummer des SSH-Ports `22`.|
 >> |**Aktiver SSH-Benutzer**| In der Tabelle unten auf der Seite finden Sie diesen in der Spalte `Login`.<br>Zur Erinnerung: Dieser Benutzer muss [über einen aktiven SSH-Zugriff verfügen](#user-ssh-enablement).|
 >> |**Passwort des SSH-Benutzers**| Wenn Sie dieses Passwort vergessen haben, klicken Sie auf den Button `...`{.action} rechts neben der Zeile für den betreffenden Benutzer in der Tabelle unten auf `Passwort ändern`{.action}.|
+<!-- CP-STEPS-END:retrieve-ssh-login -->
 
 ### 3 - Loggen Sie sich via SSH in den Speicherplatz Ihres Webhostings ein
 

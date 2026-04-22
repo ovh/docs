@@ -99,6 +99,7 @@ Encontrará mais informações sobre este tópico no Passo 5 abaixo.
 
 Correlacione os gráficos da utilização de recursos do seu alojamento (mais informações abaixo) para encontrar a origem dos atrasos e consultar os logs nas datas destes picos.
 
+<!-- CP-STEPS-START:access-stats-and-logs -->
 Para aceder às estatísticas e logs, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -119,7 +120,9 @@ Para aceder às estatísticas e logs, clique nos separadores abaixo para visuali
 >> De seguida, clique no botão `Ver estatísticas`{.action} apresentado para aceder às estatísticas de visita do website ou em `Consultar os logs`{.action} para consultar os logs disponíveis para o seu alojamento web.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
+<!-- CP-STEPS-START:access-resource-charts -->
 Para aceder aos gráficos, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -149,6 +152,7 @@ Para aceder aos gráficos, clique nos separadores abaixo para visualizar cada um
 >> - **Comandos FTP**: Apresenta os diferentes comandos FTP que foram utilizados no alojamento. Por exemplo, as tentativas de início de sessão efetuadas com e sem sucesso, descarregar, carregar e eliminar ficheiros.
 >> - **Tempo de resposta SQL**: Apresenta o tempo de resposta das consultas (visível apenas se utilizar uma base de dados).
 >> - **Pedidos SQL**: Apresenta o número de pedidos (visível apenas se utilizar uma base de dados).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Analisar os pedidos de rede
 

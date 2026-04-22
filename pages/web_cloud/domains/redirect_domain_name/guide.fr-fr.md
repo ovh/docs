@@ -93,6 +93,7 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 
 > Cette redirection « standard » retournera un code HTTP 301.
 
+<!-- CP-STEPS-START:configure-redirect-permanent -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
@@ -157,6 +158,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> > Attention, l'ancienne configuration sera donc désactivée et supprimée.
 >> >
 >>
+<!-- CP-STEPS-END:configure-redirect-permanent -->
 
 ///
 
@@ -174,6 +176,7 @@ En effet, le positionnement sur les moteurs de recherche est moins performant qu
 
 > Cette redirection retournera un code HTTP 302.
 
+<!-- CP-STEPS-START:configure-redirect-temporary -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
@@ -236,6 +239,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> > Si le message « *Il existe des redirections à partir des noms de domaine que vous souhaitez rediriger qui entrent en conflit avec les redirections que vous souhaitez ajouter* » s'affiche, vous pouvez cocher la case `Confirmer l'écrasement de la redirection existante`{.action} pour forcer l'application de votre redirection.
 >> >
 >> > Attention, l'ancienne configuration sera donc désactivée et supprimée.
+<!-- CP-STEPS-END:configure-redirect-temporary -->
 
 ///
 
@@ -259,6 +263,7 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >
 > Attention, les pages encapsulées avec une balise *iFrame* peuvent ne pas être lues sur les smartphones. Leur contenu n'est généralement pas pris en compte par les moteurs de recherche pour le référencement et l'indexation de votre site.
 
+<!-- CP-STEPS-START:configure-redirect-invisible -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
@@ -327,6 +332,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> > Si le message « *Il existe des redirections à partir des noms de domaine que vous souhaitez rediriger qui entrent en conflit avec les redirections que vous souhaitez ajouter* » s'affiche, vous pouvez cocher la case `Confirmer l'écrasement de la redirection existante`{.action} pour forcer l'application de votre redirection.
 >> >
 >> > Attention, l'ancienne configuration sera donc désactivée et supprimée.
+<!-- CP-STEPS-END:configure-redirect-invisible -->
 
 ### Rediriger un nom de domaine via un fichier « .htaccess » <a name="htaccess_rewrite"></a>
 

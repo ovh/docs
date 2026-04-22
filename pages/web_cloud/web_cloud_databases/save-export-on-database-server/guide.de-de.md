@@ -59,6 +59,7 @@ Ihre Datenbank kann eine Vielzahl von Informationen enthalten, die für Ihre Web
 
 #### Manuelles Backup erstellen
 
+<!-- CP-STEPS-START:backup-manual -->
 Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -79,9 +80,11 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >> Klicken Sie auf den Button `...`{.action} rechts neben der Datenbank und dann auf `Jetzt sichern`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
+<!-- CP-STEPS-END:backup-manual -->
 
 #### Backup exportieren
 
+<!-- CP-STEPS-START:backup-export -->
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -106,6 +109,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 > **Schritt 4**
 >>
 >> Die Liste der verfügbaren Backups wird angezeigt. Klicken Sie auf den Button `...`{.action} rechts neben dem ausgewählten Backup und dann auf `Sicherung herunterladen`{.action}.
+<!-- CP-STEPS-END:backup-export -->
 
 ### Datenbank außerhalb des Kundencenters sichern und exportieren
 

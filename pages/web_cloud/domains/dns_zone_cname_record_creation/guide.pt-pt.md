@@ -56,6 +56,7 @@ Os registos CNAME são úteis para evitar a necessidade de alterar os endereços
 
 ### Adicionar um registo DNS do tipo CNAME para o subdomínio de um nome de domínio
 
+<!-- CP-STEPS-START:add-cname-record -->
 Clique nos separadores abaixo para ver cada um dos **5** passos.
 
 > [!tabs]
@@ -80,6 +81,7 @@ Clique nos separadores abaixo para ver cada um dos **5** passos.
 > **Passo 5**
 >>
 >> Verifique o resumo e clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
+<!-- CP-STEPS-END:add-cname-record -->
 
 /// details | Consulte os nossos guias detalhados:
 

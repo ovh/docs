@@ -58,6 +58,7 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 
 ### Creación de una tarea automatizada
 
+<!-- CP-STEPS-START:create-cron-task -->
 Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
@@ -120,9 +121,11 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >> ![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 >>
 >> La tarea estará lista en unos minutos. Podrá modificar todos los parámetros o eliminar la tarea haciendo clic en `...`{.action} en la tabla de presentación del panel de configuración de OVHcloud.
+<!-- CP-STEPS-END:create-cron-task -->
 
 ### Modificar o eliminar una tarea programada
 
+<!-- CP-STEPS-START:modify-delete-cron-task -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -141,6 +144,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la tarea planificada correspondiente.
 >>
 >> Elija entre los botones `Editar`{.action} o `Eliminar`{.action} en función de la acción que desee realizar en la tarea programada.
+<!-- CP-STEPS-END:modify-delete-cron-task -->
 
 ### Limitaciones de las tareas planificadas en su alojamiento web
 

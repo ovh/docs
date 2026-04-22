@@ -51,6 +51,7 @@ Pour cela, vous devrez créer un enregistrement DNS de type TXT dans la zone DNS
 >
 > L'ajout, la modification ou la suppression d'enregistrements DNS dans une zone DNS active est une manipulation sensible. En cas de doute, contactez un [prestataire spécialisé](/links/partner).
 
+<!-- CP-STEPS-START:add-txt-record-domain -->
 ### Ajouter un enregistrement DNS de type TXT pour un nom de domaine
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
@@ -87,7 +88,9 @@ Consultez nos guides détaillés :
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-domain -->
 
+<!-- CP-STEPS-START:add-txt-record-subdomain -->
 ### Ajouter un enregistrement DNS de type TXT pour le sous-domaine d'un nom de domaine
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
@@ -125,6 +128,7 @@ Consultez nos guides détaillés :
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-subdomain -->
 
 ## Aller plus loin
 

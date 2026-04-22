@@ -82,6 +82,7 @@ Your website is making numerous external connections (APIs, updates, HTTP calls,
 >
 > Perform this step **only after applying the recommendations above** (diagnosis, corrections/updates, security hardening). If abnormal activity is detected again during a subsequent scan, **security measures will be automatically reactivated**. You will receive a new notification, and the blocks will remain in place until the **situation is permanently resolved**.
 
+<!-- CP-STEPS-START:lift-security-measures -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -101,6 +102,7 @@ Click on the tabs below to view each of the **4** steps.
 >>
 >> A **confirmation banner** appears at the top of the page: `Your hosting is being analyzed to lift the security measures.` Track progress by clicking the link `View Ongoing Tasks`{.action} or directly from the `Ongoing Tasks`{.action} tab.
 >>
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

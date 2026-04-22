@@ -64,6 +64,7 @@ Aby usunąć tę anomalię, należy:
 
 #### Sprawdź adres IP hostingu
 
+<!-- CP-STEPS-START:check-hosting-ip -->
 [Powyższe](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](/links/web/hosting). Należy zatem sprawdzić adres IP serwera, do którego jest podłączona Twoja [nazwa domeny](/links/web/domains).
 
 Aby odnaleźć adres IP Twojego [hostingu OVHcloud](/links/web/hosting), kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
@@ -82,9 +83,11 @@ Aby odnaleźć adres IP Twojego [hostingu OVHcloud](/links/web/hosting), kliknij
 >> ![Adresy IPv4 i IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Zapisz adres IPv4 i/lub IPv6, a następnie kontynuuj czytanie przewodnika.
+<!-- CP-STEPS-END:check-hosting-ip -->
 
 #### Sprawdź adres IP w strefie DNS
 
+<!-- CP-STEPS-START:check-dns-zone-ip -->
 Teraz sprawdź, czy adres IP podany w [strefie DNS](/pages/web_cloud/domains/dns_zone_edit) odpowiada adresowi Twojego [hostingu Web Cloud](/links/web/hosting).
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
@@ -101,6 +104,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> Zapisz docelowy wpis typu `A` dla Twojej domeny:
 >>
 >> ![Wpis A w strefie DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
+<!-- CP-STEPS-END:check-dns-zone-ip -->
 
 #### Wykonaj niezbędne operacje
 
@@ -164,6 +168,7 @@ W razie potrzeby skontaktuj się z webmasterem lub [partnerami OVHcloud](/links/
 
 ### 2 - Sprawdź certyfikat SSL na Twoim hostingu <a name="step2"></a>
 
+<!-- CP-STEPS-START:check-ssl-certificate -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -178,6 +183,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> W zakładce `Informacje ogólne`{.action} sprawdź sekcję `Certyfikat SSL`:
 >>
 >> ![Certyfikat SSL w zakładce informacji ogólnych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
+<!-- CP-STEPS-END:check-ssl-certificate -->
 
 #### Scenariusz 1: Twój hosting nie zawiera certyfikatu SSL
 

@@ -61,6 +61,7 @@ For further explanation, please refer to our guides “[Everything you need to k
 >
 > Unlike domain names, a DNS zone has no "holder", but is managed at OVHcloud through the contact management. If you wish to assign the management of your DNS zone to another OVHcloud customer account, follow our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-STEPS-START:access-dns-zone-management -->
 To manage an OVHcloud DNS zone, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -75,6 +76,7 @@ To manage an OVHcloud DNS zone, click on the tabs below to view each of the **2*
 >> The table displays a DNS record linked to your OVHcloud domain name for each row. You can filter the table content by DNS record type or by domain name.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-dns-zone-management -->
 
 ### Edit your domain name’s OVHcloud DNS zone
 
@@ -99,6 +101,7 @@ To do this, you can either manually edit the zone in text mode, or use our confi
 > For informed users only. Be careful with syntax when you make changes.
 >
 
+<!-- CP-STEPS-START:edit-text-mode -->
 To edit an OVHcloud DNS zone in text mode, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -115,6 +118,7 @@ To edit an OVHcloud DNS zone in text mode, click on the tabs below to view each 
 >> > [!warning]
 >> >
 >> > Do not modify the DNS records of your DNS zone in favour of DNS servers external to OVHcloud via the `Change in text format`{.action}. This DNS zone works **only** with OVHcloud DNS servers.
+<!-- CP-STEPS-END:edit-text-mode -->
 
 #### Use our configuration assistants
 
@@ -127,6 +131,7 @@ From this point onwards, this guide will only cover configuration using our conf
 
 **Click on the four headings below to see the explanations.**
 
+<!-- CP-STEPS-START:add-dns-record -->
 /// details | Add a new DNS record
 
 To add a new DNS record, click on the tabs below to view each of the **2** steps.
@@ -153,7 +158,9 @@ To add a new DNS record, click on the tabs below to view each of the **2** steps
 >> > You must then have as target `mydomain.ovh.` and not `mydomain.ovh` without the **.** at the end.
 
 ///
+<!-- CP-STEPS-END:add-dns-record -->
 
+<!-- CP-STEPS-START:modify-dns-record -->
 /// details | Modify an existing DNS record
 
 To modify a DNS record, click on the tabs below to view each of the **2** steps.
@@ -174,7 +181,9 @@ To modify a DNS record, click on the tabs below to view each of the **2** steps.
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:modify-dns-record -->
 
+<!-- CP-STEPS-START:delete-dns-record -->
 /// details | Delete a DNS record
 
 To delete a DNS record, click on the tabs below to view each of the **2** steps.
@@ -196,7 +205,9 @@ To delete a DNS record, click on the tabs below to view each of the **2** steps.
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:delete-dns-record -->
 
+<!-- CP-STEPS-START:reset-dns-zone -->
 /// details | Reset the DNS zone
 
 By resetting your DNS zone, you can revert back to a minimal configuration, with OVHcloud default records, or your services’ records. You can also point your domain name to custom web hosting and email services.
@@ -249,11 +260,13 @@ To reset your DNS zone, click on the tabs below to view each of the **4** steps.
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:reset-dns-zone -->
 
 ### Propagation time
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
+<!-- CP-STEPS-START:modify-ttl -->
 If you would like to reduce this delay for the next edits of your OVHcloud DNS zone, you can do so to a certain extent by adjusting the TTL (*Time To Live*), which will apply to all of the records in the DNS zone. To do that, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -268,6 +281,7 @@ If you would like to reduce this delay for the next edits of your OVHcloud DNS z
 >> On the right or below the table, click the `Modify default TTL`{.action} button and follow the steps that appear.
 >>
 >> You can also modify the TTL of a DNS record. However, you can only do this on one record at a time, by editing it, or when adding it.
+<!-- CP-STEPS-END:modify-ttl -->
 
 ## Go further
 

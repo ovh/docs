@@ -40,6 +40,7 @@ This guide will show you how to activate a 100M free hosting on your [domain nam
 
 ## Instructions
 
+<!-- CP-STEPS-START:activate-100m-steps -->
 To activate your free 100M hosting plan, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -79,6 +80,7 @@ To activate your free 100M hosting plan, click on the tabs below to view each of
 >> Section **3** reminds you of the pricing of the offer. 
 >>
 >> During section **4**, you must read the contracts and confirm your order.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

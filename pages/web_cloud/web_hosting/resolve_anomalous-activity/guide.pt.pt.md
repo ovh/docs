@@ -80,6 +80,7 @@ O seu site efetua muitas ligações externas (APIs, atualizações, chamadas HTT
 >
 > Execute este passo **apenas após aplicar as recomendações acima** (diagnóstico, correcções/atualizações, segurança). Se uma atividade anormal for novamente detectada num próximo scan, as **medidas de segurança serão automaticamente reativadas**. Receberá uma nova notificação e os bloqueios permanecerão em vigor até à **resolução definitiva** da situação.
 
+<!-- CP-STEPS-START:lift-security-measures -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -99,6 +100,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> Uma **bandeira de confirmação** aparece no topo da página: `O seu alojamento está a ser analisado para levantar as medidas de segurança.` Siga o progresso clicando no link `Ver tarefas em curso`{.action} ou diretamente a partir do separador `Tarefas em curso`{.action}.
 >>
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

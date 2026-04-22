@@ -29,20 +29,21 @@ Una base de datos (DB) permite almacenar elementos denominados dinámicos, como 
 
 ### Crear una base de datos
 
-Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
+<!-- CP-STEPS-START:create-db -->
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Haga clic en `Añadir una base de datos`{.action}.
 >>
@@ -52,7 +53,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> >
 >> > La creación de esquemas PostgreSQL no está disponible actualmente en los servidores Web Cloud Databases.
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> Cumplimente los campos de acuerdo con los criterios indicados. Puede crear directamente un usuario marcando la casilla **"Crear un usuario"**:
 >>
@@ -64,58 +65,62 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> Haga clic en `Aceptar`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:create-db -->
 
 ### Crear un usuario
 
+<!-- CP-STEPS-START:create-user -->
 Para utilizar un servidor de bases de datos de OVHcloud, cree usuarios con permisos específicos de conexión a una base de datos.
 
-Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Usuarios y permisos`{.action}.
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Haga clic en `Añadir un usuario`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> Introduzca un "nombre de usuario" y una "contraseña" y haga clic en `Aceptar`{.action}.
+<!-- CP-STEPS-END:create-user -->
 
 ### Gestionar los permisos de los usuarios
 
+<!-- CP-STEPS-START:manage-user-rights -->
 Para permitir que un usuario realice acciones en una base de datos, es necesario asignarle permisos.
 
-Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Usuarios y permisos`{.action}.
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} a la derecha del usuario correspondiente y luego en `Gestionar los permisos`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> En la columna izquierda **Base de datos**, encontrará la lista de las bases de datos de su servidor.
 >>
@@ -131,9 +136,11 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 >> > La distribución de los permisos mencionados anteriormente es propia de OVHcloud. Así, un usuario con permisos de `Administrador` podrá utilizar **DDL** (Data Definition Language) y **DML** (Data Manipulation Language), mientras que un usuario con permisos de `Lectura / Escritura` solo podrá utilizar **DML** (Data Manipulation Language).
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
+<!-- CP-STEPS-END:manage-user-rights -->
 
 ### Eliminar una base de datos
 
+<!-- CP-STEPS-START:delete-db -->
 > [!warning]
 >
 > Antes de eliminar una base de datos en un servidor de bases de datos,
@@ -142,24 +149,25 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 > una copia de seguridad y descargarla antes de cualquier eliminación.
 >
 
-Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y luego en `Eliminar la base de datos`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
+<!-- CP-STEPS-END:delete-db -->
 
 ## Más información
 

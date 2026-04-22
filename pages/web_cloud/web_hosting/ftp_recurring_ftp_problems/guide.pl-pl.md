@@ -62,6 +62,7 @@ Jeśli nie możesz się zalogować, zmień hasło FTP zgodnie z instrukcjami zaw
 
 Brak przestrzeni dyskowej na hostingu może spowodować usterki na Twojej stronie WWW podczas prób jej zmiany lub aktualizacji.
 
+<!-- CP-STEPS-START:check-disk-space -->
 Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -78,6 +79,7 @@ Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, kliknij poniż
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> Pod tą informacją wyświetlana jest wykorzystana przestrzeń dyskowa.
+<!-- CP-STEPS-END:check-disk-space -->
 
 ### Nie mogę przenieść moich plików na serwer FTP.
 

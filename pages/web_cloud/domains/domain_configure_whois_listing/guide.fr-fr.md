@@ -45,6 +45,7 @@ Au cours de l'utilisation de votre nom de domaine, vous pouvez être amené à d
 
 ## En pratique
 
+<!-- CP-STEPS-START:configure-whois -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -69,6 +70,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> Une fois vos choix effectués, cliquez sur le bouton `Valider`{.action}.
 >>
 >> La prise en compte des modifications peut nécessiter jusqu'à **48** heures. Ces modifications seront appliquées **uniquement si elles sont autorisées par le registre gérant l'extension de votre nom de domaine**.
+<!-- CP-STEPS-END:configure-whois -->
 
 ## Aller plus loin
 

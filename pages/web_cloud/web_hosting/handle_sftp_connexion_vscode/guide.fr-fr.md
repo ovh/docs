@@ -99,6 +99,7 @@ Dans le fichier « sftp.json », rentrez les valeurs pour les entrées suivantes
 
 #### name 
 
+<!-- CP-STEPS-START:find-hosting-name -->
 Pour retrouver le nom de votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -113,6 +114,7 @@ Pour retrouver le nom de votre hébergement web, cliquez sur les onglets ci-dess
 >> Repérez-le aux deux emplacements surlignés en orange.
 >>
 >> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+<!-- CP-STEPS-END:find-hosting-name -->
 
 > [!primary]
 >
@@ -120,6 +122,7 @@ Pour retrouver le nom de votre hébergement web, cliquez sur les onglets ci-dess
 
 #### host
 
+<!-- CP-STEPS-START:find-ftp-host -->
 Pour retrouver le nom d’hôte (`host`), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -134,9 +137,11 @@ Pour retrouver le nom d’hôte (`host`), cliquez sur les onglets ci-dessous pou
 >> Dans l’onglet `FTP - SSH`{.action}, le nom d’hôte est visible sous la mention `Serveur FTP et SFTP`.
 >>
 >> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+<!-- CP-STEPS-END:find-ftp-host -->
 
 #### username
 
+<!-- CP-STEPS-START:find-ftp-username -->
 Pour retrouver le nom d'utilisateur (`username`), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -149,9 +154,11 @@ Pour retrouver le nom d'utilisateur (`username`), cliquez sur les onglets ci-des
 > **Étape 2**
 >>
 >> Dans l'onglet `FTP - SSH`{.action}, repérez le nom d'utilisateur dans la colonne `Login` du tableau.
+<!-- CP-STEPS-END:find-ftp-username -->
 
 #### remotePath
 
+<!-- CP-STEPS-START:find-ftp-remote-path -->
 Pour retrouver le chemin distant (`remotePath`), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -166,6 +173,7 @@ Pour retrouver le chemin distant (`remotePath`), cliquez sur les onglets ci-dess
 >> Dans l'onglet `FTP - SSH`{.action}, repérez le chemin sous la mention `chemin du répertoire home`. Si plusieurs utilisateurs sont configurés, le chemin indiqué peut être différent. Remplacez alors le nom d'utilisateur mentionné après `home/` par celui de votre choix dans la colonne `Login` du tableau.
 >>
 >> **Exemple** : Si votre nom d'utilisateur est « john-smith » vous obtiendrez `home/john-smith`
+<!-- CP-STEPS-END:find-ftp-remote-path -->
 
 Enfin, n'oubliez pas d'ajouter cette ligne dans le fichier « sftp.json » : `"openSsh": true`
 

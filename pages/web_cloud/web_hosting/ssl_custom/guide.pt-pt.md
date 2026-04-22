@@ -170,6 +170,7 @@ Para confirmar, consulte os guias abaixo sempre que necessário:
 
 Quando todos estes requisitos forem cumpridos, pode iniciar a finalização da instalação do seu certificado SSL personalizado no seu alojamento web.
 
+<!-- CP-STEPS-START:install-custom-ssl -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -204,6 +205,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
 >>
 >> Depois de preencher os 3 formulários, clique em `Validar`{.action} para terminar a importação do certificado SSL personalizado para o seu alojamento web.
+<!-- CP-STEPS-END:install-custom-ssl -->
 
 Se o certificado SSL tiver sido gerado corretamente pelo fornecedor SSL e os requisitos forem respeitados, aparecerá uma mensagem indicando que a ativação do certificado SSL no alojamento web está em curso.
 
@@ -218,6 +220,7 @@ Se o certificado SSL tiver sido gerado corretamente pelo fornecedor SSL e os req
 
 A instalação leva alguns minutos.
 
+<!-- CP-STEPS-START:verify-ssl-installation -->
 Para verificar se a instalação está completa, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -238,6 +241,7 @@ Para verificar se a instalação está completa, clique nos separadores abaixo p
 >> Quando o conteúdo do separador aparecer, verifique se cada domínio e/ou subdomínio em causa aparece na tabela com o tipo de certificado SSL `Custom`.
 >>
 >> ![Quadro de gestão dos certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
+<!-- CP-STEPS-END:verify-ssl-installation -->
 
 O seu certificado SSL personalizado já está instalado e ativo. Pode desde já utilizá-lo com o seu website passando, por exemplo, pelo seu [website em HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

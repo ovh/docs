@@ -41,6 +41,7 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 
 ### Prezentacja sekcji «Skrypty e-mail»
 
+<!-- CP-STEPS-START:email-scripts-overview -->
 Aby uzyskać dostęp do sekcji «Skrypty e-mail», kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -86,6 +87,7 @@ Aby uzyskać dostęp do sekcji «Skrypty e-mail», kliknij poniższe zakładki, 
 >> - **Odblokuj wysyłkę**: odblokowuje wysyłkę automatycznych wiadomości e-mail z Twojego hostingu. Wiadomości e-mail w kolejce zostaną również wznowione.
 >>
 >> Aby wykonać pożądaną akcję, kliknij odpowiedni przycisk, a następnie `Zatwierdź`{.action}. W niektórych przypadkach pożądana akcja może wymagać kilku minut, aby być w pełni skuteczna.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -144,6 +146,7 @@ Ten stan pojawia się gdy:
 - zbyt wiele wiadomości e-mail wróciło z błędem;
 - samodzielnie dezaktywowałeś tę funkcję w Panelu klienta OVHcloud.
 
+<!-- CP-STEPS-START:resolve-disabled-status -->
 Aby odblokować sytuację, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -158,11 +161,13 @@ Aby odblokować sytuację, kliknij poniższe zakładki, aby wyświetlić kolejne
 > **Krok 3**
 >>
 >> Kliknij `Odblokuj wysyłkę`{.action} i poczekaj kilka minut, aż usługa wysyłki będzie ponownie aktywna.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
 #### Stan «Bounce»
 
 Ten stan pojawia się, gdy określony procent Twoich automatycznie wysłanych wiadomości e-mail wrócił z błędem.
 
+<!-- CP-STEPS-START:resolve-bounce-status -->
 Aby odblokować sytuację, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -180,6 +185,7 @@ Aby odblokować sytuację, kliknij poniższe zakładki, aby wyświetlić kolejne
 >>
 >> - Jeśli klikniesz `Odblokuj wysyłkę`{.action}, stan usługi zmieni się na *«Force»*. Dozwolony stosunek **wiadomości e-mail zwróconych z błędem / łączna liczba wysłanych wiadomości e-mail** przed zablokowaniem zostanie podwojony. Wysyłka będzie ponownie aktywna kilka minut po odblokowaniu.
 >> - Jeśli klikniesz `Usuń e-maile`{.action}, wszystkie wiadomości e-mail z kolejki zostaną usunięte, a stan usługi wróci do *«Aktywny»* bez podwajania stosunku.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
 #### Stan «spam»
 
@@ -195,6 +201,7 @@ W związku z tą sytuacją możliwe są trzy przypadki:
 
 Aby naprawić tę sytuację, należy zabezpieczyć wszystkie skrypty mogące wysyłać wiadomości e-mail z Twojego hostingu za pomocą systemu «Captcha».
 
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
 Następnie przejdź do sekcji «Skrypty e-mail» Twojego hostingu. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -209,6 +216,7 @@ Następnie przejdź do sekcji «Skrypty e-mail» Twojego hostingu. W tym celu kl
 > **Krok 3**
 >>
 >> Kliknij `Usuń e-maile`{.action}: wszystkie wiadomości e-mail z kolejki zostaną usunięte, a stan usługi wróci do *«Aktywny»*. W tym przypadku usunięcie jest obowiązkowe, aby usunąć spam oczekujący na wysyłkę.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
 - **Przypadek nr 2: wstrzyknięcie złośliwych plików do Twojego hostingu**:
 
@@ -222,6 +230,7 @@ Aby naprawić tę sytuację, musisz wykonać co najmniej następujące działani
 Jeśli używasz CMS, preferuj używanie «oficjalnych» wtyczek/motywów.
 Aktualizuj CMS, wtyczki i powiązany motyw jak najczęściej, aby uniknąć powtórzenia się sytuacji.
 
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
 Po zabezpieczeniu hostingu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -236,6 +245,7 @@ Po zabezpieczeniu hostingu kliknij poniższe zakładki, aby wyświetlić kolejne
 > **Krok 3**
 >>
 >> Kliknij `Usuń e-maile`{.action}: wszystkie wiadomości e-mail z kolejki zostaną usunięte, a stan usługi wróci do *«Aktywny»*.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
 W tym przypadku usunięcie jest obowiązkowe, aby usunąć spam oczekujący na wysyłkę.
 

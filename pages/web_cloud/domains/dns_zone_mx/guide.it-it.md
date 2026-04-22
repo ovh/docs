@@ -79,6 +79,7 @@ Questi valori sono comuni a tutte le soluzioni, ad eccezione di [Private Exchang
 
 Questi record MX devono essere configurati nella zona DNS del nome di dominio.
 
+<!-- CP-STEPS-START:configure-mx-record -->
 ### Configurare un record MX in una zona DNS OVHcloud
 
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** passaggi.
@@ -120,6 +121,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** passaggi.
 > [!primary]
 >
 > La propagazione delle modifiche potrebbe richiedere da 4 a 24 ore.
+<!-- CP-STEPS-END:configure-mx-record -->
 
 ## Per saperne di più
 

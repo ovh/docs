@@ -32,6 +32,7 @@ During the use of your services, you may need to know the name of the SQL server
 
 ## Instructions
 
+<!-- CP-STEPS-START:find-database-server -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -61,6 +62,7 @@ Click on the tabs below to view each of the **3** steps.
 >> >
 >> > - The **Server address** is part of the login credentials specific to your database and allows your website to connect to it.
 >> > - The **Server** represents the infrastructure hosting your database, as well as other databases. The server name allows you to check whether it is affected by a maintenance operation or an incident reported on our [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) page.
+<!-- CP-STEPS-END:find-database-server -->
 
 ## Go further <a name="go-further"></a>
 

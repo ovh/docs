@@ -62,6 +62,7 @@ In order to prevent unauthorised domain name transfers, domain names are usually
 
 ### 1 - Remove the transfer protection for the domain name
 
+<!-- CP-STEPS-START:unlock-domain-transfer -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -96,6 +97,7 @@ Click on the tabs below to view each of the **3** steps.
 >> > Some *transfer codes* are directly managed by the *registry* of your domain name extension. A *registry* is an organisation that manages all domain names for a given extension. For example, the **AFNIC** manages all domain names with the extension *.fr*. If this is the case, you must contact the *registry* managing your domain name extension directly to retrieve the *transfer code*.
 >>
 >> ![deactivating protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+<!-- CP-STEPS-END:unlock-domain-transfer -->
 
 > [!primary]
 >
@@ -111,6 +113,7 @@ Click on the tabs below to view each of the **3** steps.
 
 Once you have removed the transfer protection, you can retrieve your domain name’s transfer code.
 
+<!-- CP-STEPS-START:get-transfer-code -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -133,6 +136,7 @@ Click on the tabs below to view each of the **3** steps.
 >> The code will be requested by your new registrar to complete the transfer process. You can verify the details with your provider.
 >>
 >> We recommend copying and pasting the code rather than typing it by hand, since some characters are easily confused.
+<!-- CP-STEPS-END:get-transfer-code -->
 
 Once the transfer code has been retrieved, **do not lock your domain name again unless you no longer wish to transfer it**.
 

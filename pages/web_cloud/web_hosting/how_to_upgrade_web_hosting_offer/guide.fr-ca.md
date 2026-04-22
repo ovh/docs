@@ -52,6 +52,7 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 > Si vous souhaitez modifier votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 > 
 
+<!-- CP-STEPS-START:modify-subscription -->
 Pour modifier votre abonnement, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -68,6 +69,7 @@ Pour modifier votre abonnement, cliquez sur les onglets ci-dessous pour afficher
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Envoyer`{.action}.
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Cas particuliers
 
@@ -81,6 +83,7 @@ Avec l'[option Boost](/links/web/hosting-options-boost), disponible sur nos offr
 
 Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** cette option sur votre hébergement.
 
+<!-- CP-STEPS-START:enable-boost -->
 Pour **activer l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -95,7 +98,9 @@ Pour **activer l'option Boost**, cliquez sur les onglets ci-dessous pour affiche
 >> Dans l'encadré **Informations générales** de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de **Boost** puis sur `Booster mon offre`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
+<!-- CP-STEPS-START:disable-boost -->
 Pour **désactiver l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -118,6 +123,7 @@ Pour **désactiver l'option Boost**, cliquez sur les onglets ci-dessous pour aff
 >> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}
 >>
 >> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
+<!-- CP-STEPS-END:disable-boost -->
 
 #### La facturation en cas de changement d'offre <a name="billing"></a>
 

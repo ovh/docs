@@ -28,12 +28,13 @@ Le soluzioni [Web Cloud Databases](/links/web/databases) possono essere attivate
 
 ## Procedura
 
+<!-- CP-STEPS-START:detach-wcdb-steps -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -49,6 +50,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-my-web-cloud-databases.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:detach-wcdb-steps -->
 
 Una volta completati i 4 step, la soluzione Web Cloud Databases sarà disattivata entro poche ore.
 

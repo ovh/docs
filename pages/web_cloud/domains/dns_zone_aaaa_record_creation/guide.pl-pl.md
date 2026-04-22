@@ -52,6 +52,7 @@ Czy chcesz, aby Twoja strona WWW była dostępna za pośrednictwem Twojej domeny
 
 ### Dodawanie rekordu DNS typu AAAA dla domeny
 
+<!-- CP-STEPS-START:add-aaaa-record -->
 Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 
 > [!tabs]
@@ -76,6 +77,7 @@ Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 > **Krok 5**
 >>
 >> Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+<!-- CP-STEPS-END:add-aaaa-record -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -91,6 +93,7 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 
 ### Dodawanie rekordu DNS typu AAAA dla subdomeny domeny
 
+<!-- CP-STEPS-START:add-aaaa-record-subdomain -->
 Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 
 > [!tabs]
@@ -115,6 +118,7 @@ Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 > **Krok 5**
 >>
 >> Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+<!-- CP-STEPS-END:add-aaaa-record-subdomain -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 

@@ -29,6 +29,7 @@ Questa guida ti mostra come consultare le statistiche e i log generati dall’[o
 
 ### Visualizza le statistiche della CDN
 
+<!-- CP-STEPS-START:viewing-cdn-statistics -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -59,9 +60,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Visualizzi le statistiche della CDN per il tuo dominio.
 >>
 >> In caso di necessità, consulta la nostra guida "[Hosting Web - Consultare le statistiche e i log di un sito Web](/pages/web_cloud/web_hosting/logs_and_statistics)" per maggiori informazioni.
+<!-- CP-STEPS-END:viewing-cdn-statistics -->
 
 ### Visualizzare i log della CDN
 
+<!-- CP-STEPS-START:view-cdn-logs -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -105,6 +108,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Nella tabella che appare, clicca sul pulsante `Download`{.action} a destra del dominio o sottodominio interessato per recuperare i log CDN.
 >>
 >> In caso di necessità, consulta la nostra guida "[Hosting Web - Consultare le statistiche e i log di un sito Web](/pages/web_cloud/web_hosting/logs_and_statistics)" per maggiori informazioni.
+<!-- CP-STEPS-END:view-cdn-logs -->
 
 ## Per saperne di più
 

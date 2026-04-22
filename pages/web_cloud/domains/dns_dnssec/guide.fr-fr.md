@@ -43,6 +43,7 @@ N'hésitez pas également à consulter nos guides sur [les serveurs DNS OVHcloud
 
 ## En pratique
 
+<!-- CP-STEPS-START:verifier-configuration-dns-ovhcloud -->
 Pour vérifier si votre nom de domaine utilise la configuration DNS OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!warning]
@@ -64,6 +65,7 @@ Pour vérifier si votre nom de domaine utilise la configuration DNS OVHcloud, cl
 >> Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
 >>
 >> Si les noms des serveurs DNS se terminent par *ovh.net* (à l'exception du serveur *snds2.ovh.net*), *ovh.ca* ou *anycast.me*, votre nom de domaine utilise bien les serveurs DNS OVHcloud.
+<!-- CP-STEPS-END:verifier-configuration-dns-ovhcloud -->
 
 > [!primary]
 >
@@ -78,6 +80,7 @@ L'activation du **DNSSEC** est possible dans trois cas de figure détaillés ci-
 
 ### Cas n°1 - Votre nom de domaine est enregistré chez OVHcloud et utilise les serveurs DNS d'OVHcloud
 
+<!-- CP-STEPS-START:cas-1-activer-desactiver-dnssec -->
 Pour activer (ou désactiver) la solution **DNSSEC** pour votre nom de domaine, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -100,9 +103,11 @@ Pour activer (ou désactiver) la solution **DNSSEC** pour votre nom de domaine, 
 >> Grâce au bouton d'activation situé en dessus de la mention `Délégation sécurisée - DNSSEC`{.action}, vous pouvez activer ou désactiver le **DNSSEC** sur votre nom de domaine. En réalisant cette action, une nouvelle fenêtre apparaît depuis laquelle vous pouvez valider la modification.
 >>
 >> ![Enable DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:cas-1-activer-desactiver-dnssec -->
 
 ### Cas n°2 - Votre nom de domaine est enregistré chez OVHcloud et n'utilise pas les serveurs DNS d'OVHcloud
 
+<!-- CP-STEPS-START:cas-2-domaine-ovhcloud-dns-externes -->
 Dans cette situation, rapprochez-vous du prestataire gérant la configuration DNS de votre nom de domaine pour lui demander les paramètres d'activation du DNSSEC (« Key Tag » / « Flag » / « Algorithme » / « Clé publique (encodée en base64) »).
 
 Une fois ces 4 paramètres récupérés, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
@@ -129,6 +134,7 @@ Une fois ces 4 paramètres récupérés, cliquez sur les onglets ci-dessous pour
 >> ![DS records](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ds-records/edit-plus-dashboard.png){.thumbnail}
 >>
 >> Une fois les 4 formulaires remplis, cliquez sur le bouton bleu `Valider`{.action} situé à droite du tableau.
+<!-- CP-STEPS-END:cas-2-domaine-ovhcloud-dns-externes -->
 
 ### Cas n°3 - Votre nom de domaine n'est pas enregistré chez OVHcloud et utilise les serveurs DNS d'OVHcloud
 
@@ -184,4 +190,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -65,6 +65,7 @@ Pierwszy krok polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 
 Uzyskaj informacje dotyczące dostępu do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Operację tę przeprowadź, korzystając z **części 1** naszego przewodnika dotyczącego [zmiany hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -95,6 +96,7 @@ Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij po
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Wyszukaj największe tabele <a name="step1.2"></a>
 
@@ -234,6 +236,7 @@ Jednak możesz wymusić ich przejście na Twoje usługi, aby przyspieszyć proce
 
 #### Przeliczenie rozmiaru bazy danych zawartej w ofercie hostingu
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -264,9 +267,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Po rozpoczęciu może to potrwać kilka minut. Po jej zakończeniu status "READ ONLY" bazy danych zostanie utracony.
 >> Twoja baza danych znów stanie się w pełni operacyjna.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Przeliczenie rozmiaru bazy danych hostowanej w rozwiązaniu Web Cloud Databases
 
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -285,6 +290,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> Po rozpoczęciu może to potrwać kilka minut. Po jej zakończeniu status "READ ONLY" bazy danych zostanie utracony.
 >> Twoja baza danych znów stanie się w pełni operacyjna.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Sprawdź również <a name="go-further"></a>
 

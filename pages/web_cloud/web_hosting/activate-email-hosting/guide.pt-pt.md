@@ -40,6 +40,7 @@ Se adquiriu um alojamento web sem o associar diretamente a um nome de domínio, 
 
 ### Ativação dos endereços de e-mail incluídos na sua oferta de alojamento web
 
+<!-- CP-STEPS-START:activate-email -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -61,6 +62,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Aparecerá a janela de ativação. Escolha o nome de domínio ao qual pretende associar os seus endereços de e-mail e valide a sua escolha.
 >>
 >> ![Ativação de e-mail](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+<!-- CP-STEPS-END:activate-email -->
 
 > [!primary]
 > Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](/links/web/hosting) superior a partir da nossa página comercial.
@@ -72,6 +74,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 Se o seu alojamento web estiver prestes a expirar, é possível que peça a conservação dos seus endereços de e-mail **antes** da data de expiração.
 
+<!-- CP-STEPS-START:keep-email-after-expiry -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -87,6 +90,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> Clique no botão `...`{.action} à direita e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
 >>
 >> ![Ativação de e-mail](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+<!-- CP-STEPS-END:keep-email-after-expiry -->
 
 Ser-lhe-á proposta uma oferta MX adaptada. Uma vez a encomenda regularizada, os seus e-mails continuarão a funcionar após a suspensão do alojamento web.
  
@@ -98,6 +102,7 @@ Ser-lhe-á proposta uma oferta MX adaptada. Uma vez a encomenda regularizada, os
 >
 > Atenção: esta operação é irreversível. Não é possível reativar a oferta de e-mail após a sua rescisão.
 
+<!-- CP-STEPS-START:delete-email-solution -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -117,6 +122,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> > [!warning]
 >> >
 >> > Para confirmar a eliminação da oferta de e-mail associada ao seu alojamento web, ser-lhe-á enviado um link de validação por e-mail. Deve clicar obrigatoriamente neste link para que a operação de eliminação seja iniciada.
+<!-- CP-STEPS-END:delete-email-solution -->
 
 #### Caso particular - Eliminação do serviço de e-mail associado ao seu alojamento web (para o associar a outro domínio)
 

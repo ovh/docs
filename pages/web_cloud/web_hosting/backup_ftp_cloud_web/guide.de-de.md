@@ -52,6 +52,7 @@ Im Gegensatz zu den Shared Hosting Paketen von OVHcloud ist es unmöglich, den F
 
 Es wird ein Link zum Download des Backups erstellt und per E-Mail an die Adresse gesendet, die der Administrator-Kundenkennung des Cloud Web Hostings zugeordnet ist.
 
+<!-- CP-STEPS-START:access-ftp-backup -->
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -88,6 +89,7 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >> ![Fortschrittsmeldung des Backups](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 >>
 >> Die Erstellung des Backups dauert zwischen 10 und 15 Minuten.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
 ### Die Sicherung herunterladen
 

@@ -53,6 +53,7 @@ Kliknięcie w `Potwierdź swój adres e-mail`{.action} spowoduje otwarcie nowej 
 
 ### 2 - Popraw lub uzupełnij dane kontaktowe właściciela nazwy domeny jako administrator
 
+<!-- CP-STEPS-START:fix-contact-info -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -89,6 +90,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> ![Dane właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
 >> Aby uzyskać więcej szczegółów dotyczących zmiany właściciela, zapoznaj się z naszym przewodnikiem: "[Nazwa domeny - Jak zmienić właściciela](/pages/web_cloud/domains/trade_domain)".
+<!-- CP-STEPS-END:fix-contact-info -->
 
 ### 3 - Co zrobić, jeśli adres e-mail kontaktu właściciela nie jest już dostępny?
 
@@ -130,6 +132,7 @@ Dla niektórych rozszerzeń (np.: .fr, .it, .es), administrator domeny może bez
 > Jeśli poprawki w pierwszej części tego przewodnika wymagały zainicjowania zmiany właściciela dla nazwy domeny, ukończ zmianę właściciela **przed** kontynuowaniem działań opisanych w tym przewodniku.
 >
 
+<!-- CP-STEPS-START:relaunch-verification -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -158,6 +161,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Jeśli operacja została ukończona pomyślnie, wiersz dla przetworzonej operacji nie pojawia się już.
 >>
 >> Jeśli nie jest to prawdą, wymagana jest korekta danych kontaktowych właściciela nazwy domeny. W takim przypadku, proszę postępować zgodnie z tym przewodnikiem od początku, aby rozwiązać problem.
+<!-- CP-STEPS-END:relaunch-verification -->
 
 ## Sprawdź również
 

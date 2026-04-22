@@ -55,6 +55,7 @@ Möchten Sie diese Berechtigungen/Einschränkungen ändern?
 >
 > Zur Erinnerung: Wenn Sie Ihre [Web Cloud Databases](/links/web/databases) Lösung gerade aktiviert haben und diese nur mit einem [OVHcloud Webhosting](/links/web/hosting) verwenden möchten, müssen die IP-Adressen Ihres Webhosting nicht manuell autorisiert werden.
 
+<!-- CP-STEPS-START:authorise-ip-main-tabs -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -98,6 +99,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> > Dies würde allen IP-Adressen den Zugriff auf Ihre Datenbanken erlauben.
 >>
 >> Nachdem Sie die Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}.
+<!-- CP-STEPS-END:authorise-ip-main-tabs -->
 
 ## Sonderfälle
 
@@ -121,6 +123,7 @@ Damit würde Zugriff auf die Datenbanken für alle IPv4-Adressen ermöglicht, wa
 
 Bei der Aktivierung Ihrer Web Cloud Databases Lösung ist die Autorisierung für den Zugriff auf die OVHcloud Webhostings standardmäßig aktiviert.
 
+<!-- CP-STEPS-START:authorise-ip-disable-webhosting-tabs -->
 Wenn Sie diese Berechtigung deaktivieren möchten, da Sie kein Webhosting mit Ihrer Web Cloud Databases Lösung verwenden, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -141,6 +144,7 @@ Wenn Sie diese Berechtigung deaktivieren möchten, da Sie kein Webhosting mit Ih
 >> Deaktivieren Sie die Option `Den OVHcloud Webhostings den Zugriff auf die Datenbank erlauben`{.action}.
 >>
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+<!-- CP-STEPS-END:authorise-ip-disable-webhosting-tabs -->
 
 ///
 

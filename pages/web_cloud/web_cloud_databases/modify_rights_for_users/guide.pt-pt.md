@@ -31,6 +31,7 @@ Durante a utilização do produto, pode ser necessário modificar os direitos de
 > [!primary]
 > Para criar um novo utilizador na sua solução Web Cloud Databases, consulte a secção **Criar um utilizador** do nosso guia "[Criar bases de dados e utilizadores no servidor de bases de dados](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 
+<!-- CP-STEPS-START:modify-rights-tabs -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -59,6 +60,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png){.thumbnail}
 >>
 >> É aqui que poderá modificar os direitos do seu utilizador para cada uma das suas bases de dados. Para isso, em cada base de dados em causa, basta clicar nos círculos vazios correspondentes às permissões que pretende redefinir para o seu utilizador. A alteração fica efetiva em alguns instantes.
+<!-- CP-STEPS-END:modify-rights-tabs -->
 
 De seguida, encontrará uma tabela que resume os tipos de pedidos possíveis numa base de dados em função da permissão atribuída ao utilizador:
 

@@ -45,6 +45,7 @@ Prima di seguire i passaggi di questa guida, ti consigliamo di familiarizzare co
 
 ### Configura i tuoi record DNS sul tuo account OVHcloud
 
+<!-- CP-STEPS-START:configure-dns-records -->
 Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei **5** passaggi.
 
 > [!tabs]
@@ -126,6 +127,7 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >> Se non esiste alcun record "CNAME" per il sottodominio "www", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `CNAME`{.action}, inserisci `www` nel campo **Sottodominio** e `ext-cust.squarespace.com.` nel campo **Destinazione**. Clicca su `Continua`{.action} e conferma.
 >>
 >> **4 - Aggiunta:** crea un record CNAME di verifica inserendo il `codice univoco recuperato da SquareSpace` nel campo **Sottodominio**, quindi `verify.squarespace.com.` nel campo **Destinazione**. Clicca su `Continua`{.action} e conferma.
+<!-- CP-STEPS-END:configure-dns-records -->
 
 La zona DNS è ora configurata per puntare verso il tuo hosting SquareSpace.
 

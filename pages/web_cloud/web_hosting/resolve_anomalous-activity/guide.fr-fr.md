@@ -79,6 +79,7 @@ Votre site web effectue de nombreuses connexions externes (API, mises à jour, a
 >
 > N’effectuez cette étape **qu’après avoir appliqué les recommandations ci-dessus** (diagnostic, corrections/mises à jour, sécurisation). Si une activité anormale est à nouveau détectée lors d’un prochain scan, les **mesures de sécurité seront automatiquement réactivées**. Vous recevrez une nouvelle notification et les blocages resteront en place jusqu’à la **résolution définitive** de la situation.
 
+<!-- CP-STEPS-START:lift-security-measures -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -97,6 +98,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > **Étape 4**
 >>
 >> Une **bannière de confirmation** s’affiche en haut de la page : `Votre hébergement est en cours d’analyse afin de lever les mesures de sécurité.` Suivez la progression en cliquant sur le lien `Voir les tâches en cours`{.action} ou directement depuis l’onglet `Tâches en cours`{.action}.
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

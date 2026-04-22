@@ -30,6 +30,7 @@ Während der Nutzung Ihres Services könnten Sie den Namen Ihres Webhosting Ange
 
 ## In der praktischen Anwendung
 
+<!-- CP-STEPS-START:find-plan-name -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -46,6 +47,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> ![Angebot](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
 >> Unter dieser Bezeichnung finden Sie den Namen Ihres Webhosting Angebots (z. B. Basic, Pro, Performance, etc.).
+<!-- CP-STEPS-END:find-plan-name -->
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

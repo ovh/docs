@@ -45,6 +45,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 **Wenn Ihr Domainname nicht die DNS-Server von OVHcloud verwendet**, kontaktieren Sie den Anbieter, der die DNS-Konfiguration Ihrer Domainname verwaltet, um sich über das weitere Vorgehen zu informieren.
 
+<!-- CP-STEPS-START:dns-server-pruefen -->
 **Wenn Ihr Domainname bei OVHcloud registriert ist**, können Sie überprüfen, ob er unsere Konfiguration verwendet. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -65,6 +66,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 >> Die angezeigte Tabelle enthält die derzeit von OVHcloud für Ihre Domain definierten DNS-Server. Es können mehrere DNS-Server mit jeweils eigener Zeile in der Tabelle aufgeführt werden.
 >>
 >> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+<!-- CP-STEPS-END:dns-server-pruefen -->
 
 > [!success]
 >
@@ -79,6 +81,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 ### 1 - DynHost-Benutzer erstellen <a name="step1"></a>
 
+<!-- CP-STEPS-START:dynhost-benutzer-erstellen -->
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -123,6 +126,7 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> ![DynHost tab](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:dynhost-benutzer-erstellen -->
 
 Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Kennungen anlegen möchten.
 
@@ -130,6 +134,7 @@ Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Kennungen anlegen möch
 
 Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A- oder AAAA-Eintrag in der OVHcloud DNS-Zone des Domainnamens vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, können Sie die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“ verwenden.
 
+<!-- CP-STEPS-START:dynhost-eintrag-erstellen -->
 Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -167,6 +172,7 @@ Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie auf die Tabs
 >> ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 >>
 >> Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{.action}. Der DynHost-Eintrag erscheint dann in der Tabelle auf der aktuell geöffneten Seite. 
+<!-- CP-STEPS-END:dynhost-eintrag-erstellen -->
 
 Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Einträge erstellen möchten.
 
@@ -203,6 +209,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Subdomain, die von der Aktualisierung betroffen ist|
 |$IP|Die neue IPv4- oder IPv6-Zieladresse.|
 
+<!-- CP-STEPS-START:dynhost-update-verifizieren -->
 Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -224,6 +231,7 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie auf die
 >>
 >> ![DynHost target](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:dynhost-update-verifizieren -->
 
 > [!warning]
 >
@@ -236,4 +244,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.

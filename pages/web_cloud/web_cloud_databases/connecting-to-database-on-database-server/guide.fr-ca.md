@@ -58,6 +58,7 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 #### Connexion via phpMyAdmin OVHcloud
 
+<!-- CP-STEPS-START:mysql-phpmyadmin-ovhcloud -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -106,8 +107,11 @@ Si la connexion aboutit, la page suivante apparaît.
 > - Erreur #1045, cela signifie que l'identification est incorrecte. Il faut donc vérifier votre nom d'utilisateur et/ou votre mot de passe.
 > - Erreur #2005, il est conseillé de vérifier le nom du serveur et si celui-ci est bien fonctionnel.
 
+<!-- CP-STEPS-END:mysql-phpmyadmin-ovhcloud -->
+
 #### Connexion à la base de données hors espace client
 
+<!-- CP-STEPS-START:mysql-external-credentials -->
 > [!warning]
 >
 > Si vous utilisez une offre « Web Cloud Databases »/« SQL Privé », n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
@@ -186,8 +190,11 @@ Vous pouvez utiliser votre propre interface phpMyAdmin pour explorer le contenu 
 
 ///
 
+<!-- CP-STEPS-END:mysql-external-credentials -->
+
 ### Se connecter à une base de données PostgreSQL
 
+<!-- CP-STEPS-START:postgresql-external-credentials -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -255,6 +262,8 @@ Vous êtes maintenant bien connecté à votre base de données :
 ![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ///
+
+<!-- CP-STEPS-END:postgresql-external-credentials -->
 
 ## Aller plus loin
 

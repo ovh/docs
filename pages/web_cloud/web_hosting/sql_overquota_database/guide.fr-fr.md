@@ -67,6 +67,7 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 Récupérez les informations d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de la **partie 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 Pour vous connecter à la base de données via phpMyAdmin, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -97,6 +98,7 @@ Pour vous connecter à la base de données via phpMyAdmin, cliquez sur les ongle
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Rechercher les tables les plus volumineuses <a name="step1.2"></a>
 
@@ -235,6 +237,7 @@ Cependant, vous pouvez forcer leur passage sur vos services pour accélérer le 
 
 #### Recalculer le quota pour une base de données incluse avec votre offre d'hébergement web
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -264,9 +267,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
 >> Votre base de données est alors de nouveau pleinement opérationnelle.
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Recalculer le quota pour une base de données hébergée sur une solution Web Cloud Databases
 
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -285,6 +290,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
 >> Votre base de données est alors de nouveau pleinement opérationnelle.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Aller plus loin <a name="go-further"></a>
 

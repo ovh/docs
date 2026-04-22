@@ -45,6 +45,7 @@ Przed przystąpieniem do wykonywania kolejnych kroków tego przewodnika zalecamy
 
 ### Konfiguracja rekordów DNS na koncie OVHcloud
 
+<!-- CP-STEPS-START:configure-dns-records -->
 Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 
 > [!tabs]
@@ -121,6 +122,7 @@ Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 >> **3 - Modyfikacja:** Jeśli istnieje rekord "CNAME" dla subdomeny "www", kliknij przycisk `...`{.action}, a następnie kliknij `Zmień wpis`{.action}. Zastąp jedynie **Cel** wartością `shops.myshopify.com.`. Kliknij `Dalej`{.action} i zatwierdź.
 >>
 >> Jeśli nie istnieje żaden rekord "CNAME" dla subdomeny "www", kliknij `Dodaj wpis`{.action} w prawym górnym rogu, wybierz typ rekordu `CNAME`{.action}, wprowadź `www` w polu **Subdomena** i `shops.myshopify.com.` w polu **Cel**. Kliknij `Dalej`{.action} i zatwierdź.
+<!-- CP-STEPS-END:configure-dns-records -->
 
 Strefa DNS jest teraz skonfigurowana tak, aby wskazywała na hosting Shopify.
 

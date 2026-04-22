@@ -40,6 +40,7 @@ Z tego przewodnika dowiesz się, jak włączyć Darmowy hosting 100M w swojej [d
 
 ## W praktyce
 
+<!-- CP-STEPS-START:activate-100m-steps -->
 Aby włączyć darmowy hosting 100M, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -79,6 +80,7 @@ Aby włączyć darmowy hosting 100M, kliknij poniższe zakładki, aby wyświetli
 >> Sekcja **3** przypomina o cenniku oferty. 
 >>
 >> Podczas sekcja **4** zapoznaj się z regulaminami i zatwierdź zamówienie.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

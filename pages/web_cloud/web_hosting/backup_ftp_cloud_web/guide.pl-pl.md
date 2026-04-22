@@ -52,6 +52,7 @@ W przeciwieństwie do hostingu współdzielonego OVHcloud, przywracanie przestrz
 
 Link do pobrania kopii zapasowej jest generowany, a następnie wysyłany e-mailem na adres e-mail powiązany z identyfikatorem klienta administratora hostingu Cloud Web.
 
+<!-- CP-STEPS-START:access-ftp-backup -->
 Kliknij poniższe karty, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -88,6 +89,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **5** kroki.
 >> ![Komunikat o postępie kopii zapasowej](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 >>
 >> Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
 ### Pobierz kopię zapasową
 

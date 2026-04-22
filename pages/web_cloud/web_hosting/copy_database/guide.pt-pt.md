@@ -64,6 +64,7 @@ Dependendo da sua situação, o caminho para aceder à base de dados de origem �
 
 **Clique na situação correspondente para ver o conteúdo.**
 
+<!-- CP-STEPS-START:copy-from-startsql -->
 /// details | A partir de uma base de dados Start SQL
 
 Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
@@ -118,7 +119,9 @@ Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 >> ![Operações em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:copy-from-startsql -->
 
+<!-- CP-STEPS-START:copy-from-wcdb -->
 /// details | A partir de um servidor Web Cloud Databases
 
 Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
@@ -173,6 +176,7 @@ Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 >> ![Operações em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:copy-from-wcdb -->
 
 ### Configurar o seu website com a sua nova base de dados
 

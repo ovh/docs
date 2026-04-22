@@ -56,6 +56,7 @@ First, prepare your GoDaddy hosting plan by following the instructions from [**t
 > - Follow the instructions until step 10 and retrieve the information specific to your website so that you can later modify your OVHcloud DNS records.<br>
 > The following instructions will help you configure your OVHcloud DNS zone more easily.
 
+<!-- CP-STEPS-START:configure-dns-records -->
 Click the tabs below to view each of the **5** steps in sequence.
 
 > [!tabs]
@@ -128,6 +129,7 @@ Click the tabs below to view each of the **5** steps in sequence.
 >> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Modify record`{.action}. Replace only the **Target** with the value from your GoDaddy interface. Click `Next`{.action} and confirm.
 >>
 >> If no "CNAME" record exists for the "www" subdomain, click `Add an entry`{.action} at the top right, select the `CNAME`{.action} pointer record, enter `www` in the **Subdomain** field and the value from your GoDaddy interface in the **Target** field. Click `Next`{.action} and confirm.
+<!-- CP-STEPS-END:configure-dns-records -->
 
 The DNS zone is now configured to point to your GoDaddy hosting plan.
 

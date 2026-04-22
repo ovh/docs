@@ -58,6 +58,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 **Klicken Sie auf die gewünschte Information, um den Inhalt anzuzeigen.**
 
+<!-- CP-STEPS-START:find-datacenter -->
 /// details | Rechenzentrum Ihres Webhostings finden
 
 Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
@@ -74,6 +75,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 >> Im Tab `Allgemeine Informationen`{.action} finden Sie das `Rechenzentrum`.
 
 ///
+<!-- CP-STEPS-END:find-datacenter -->
 
 /// details | Cluster und Filer Ihres Webhostings finden
 
@@ -81,6 +83,7 @@ Lesen Sie unsere Anleitung "[Cluster und Filer Ihres Webhostings ermitteln](/pag
 
 ///
 
+<!-- CP-STEPS-START:find-wcdb-server-name -->
 /// details | Den Namen des Web Cloud Databases Servers finden
 
 Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
@@ -97,6 +100,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 >> Im Bereich `Verbindungsinformationen`, unter `SQL`, finden Sie den `Hostname`.
 
 ///
+<!-- CP-STEPS-END:find-wcdb-server-name -->
 
 /// details | Den Server Ihrer Webhosting-Datenbank finden
 
@@ -140,6 +144,7 @@ define('DB_HOST', 'my_server.mysql.db:port');
 
 Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
+<!-- CP-STEPS-START:check-wp-db-credentials -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -155,6 +160,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 >> - **my_user** muss dem `Benutzernamen` entsprechen;
 >> - **my_password** entspricht dem [Passwort Ihrer Datenbank](/pages/web_cloud/web_hosting/sql_change_password);
 >> - **my_server.mysql.db** muss dem entsprechen, was unter `Server-Adresse` angegeben ist.
+<!-- CP-STEPS-END:check-wp-db-credentials -->
 
 > [!primary]
 >
@@ -186,6 +192,7 @@ Wenn Sie über ein Webhosting **Starter** oder **Basic** verfügen, empfehlen wi
 
 Um diese Änderung durchzuführen, klicken Sie auf die Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
+<!-- CP-STEPS-START:upgrade-plan -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -200,6 +207,7 @@ Um diese Änderung durchzuführen, klicken Sie auf die Tabs, um die **3** Schrit
 > **Schritt 3**
 >>
 >> Klicken Sie auf `Angebot wechseln`{.action}.
+<!-- CP-STEPS-END:upgrade-plan -->
 
 Wenn Sie ein Webhosting **Performance** verwenden, gehen Sie zu [Methode 2](#method2).
 
@@ -222,6 +230,7 @@ Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](/pages/web_cloud/web_host
 
 Um die Quota neu zu berechnen, klicken Sie auf die Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
+<!-- CP-STEPS-START:recalculate-quota-method3 -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -236,6 +245,7 @@ Um die Quota neu zu berechnen, klicken Sie auf die Tabs, um die **3** Schritte n
 > **Schritt 3**
 >>
 >> Klicken Sie auf `Quota neu berechnen`{.action}.
+<!-- CP-STEPS-END:recalculate-quota-method3 -->
 
 > [!warning]
 >
@@ -248,6 +258,7 @@ Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung
 
 Um die Quota neu zu berechnen, klicken Sie auf die Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
+<!-- CP-STEPS-START:recalculate-quota-method4 -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -262,6 +273,7 @@ Um die Quota neu zu berechnen, klicken Sie auf die Tabs, um die **3** Schritte n
 > **Schritt 3**
 >>
 >> Klicken Sie auf `Quota neu berechnen`{.action}.
+<!-- CP-STEPS-END:recalculate-quota-method4 -->
 
 > [!warning]
 >
@@ -276,6 +288,7 @@ Die folgende Nachricht weist darauf hin, dass Ihr [Web Cloud Databases](/pages/w
 
 Um die [RAM-Kapazität](/pages/web_cloud/web_cloud_databases/configure-database-server#wechseln-des-datenbank-angebots) zu erhöhen, klicken Sie auf die Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
+<!-- CP-STEPS-START:increase-ram-wcdb -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -290,6 +303,7 @@ Um die [RAM-Kapazität](/pages/web_cloud/web_cloud_databases/configure-database-
 > **Schritt 3**
 >>
 >> Klicken Sie auf den Button `...`{.action} im Bereich `RAM`, dann auf `RAM-Menge ändern`{.action}.
+<!-- CP-STEPS-END:increase-ram-wcdb -->
 
 > [!warning]
 >
@@ -317,6 +331,7 @@ Diese Fehlermeldung bedeutet, dass die Datenbank, die Sie zu importieren versuch
 
 Vergewissern Sie sich zunächst, dass Ihre Datenbank leer ist. Klicken Sie dazu auf die Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
+<!-- CP-STEPS-START:check-db-empty-before-import -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -335,6 +350,7 @@ Vergewissern Sie sich zunächst, dass Ihre Datenbank leer ist. Klicken Sie dazu 
 >> Sie können beim [Datenbank-Import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#eigene-backup-datei-uber-das-kundencenter-importieren) auch die Option `Aktuelle Datenbank leeren`{.action} anhaken:
 >>
 >> ![database-import](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
+<!-- CP-STEPS-END:check-db-empty-before-import -->
 
 Kontaktieren Sie gegebenenfalls unsere [Community](/links/community) oder einen [spezialisierten Dienstleister](/links/partner). Wir werden Sie in diesem Fall nicht unterstützen können.
 
@@ -369,6 +385,7 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
 - Erhöhung der [Arbeitsspeicherkapazität (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#wechseln-des-datenbank-angebots). Klicken Sie dazu auf die Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
+<!-- CP-STEPS-START:increase-ram-for-import -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -383,6 +400,7 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 > **Schritt 3**
 >>
 >> Klicken Sie auf den Button `...`{.action} im Bereich `RAM`, dann auf `RAM-Menge ändern`{.action}.
+<!-- CP-STEPS-END:increase-ram-for-import -->
 
 - Splitten Sie Ihre Datenbank, um sie dann über mehrere Operationen zu importieren. (Für Fragen zu den durchzuführenden Operationen kontaktieren Sie unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.)
 
@@ -435,6 +453,7 @@ Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](/pages/web_cloud/
 
 **Klicken Sie auf die zutreffende Situation, um den Inhalt anzuzeigen.**
 
+<!-- CP-STEPS-START:find-server-name-hosting -->
 /// details | Datenbank auf einem Webhosting
 
 Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
@@ -451,7 +470,9 @@ Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 >> Klicken Sie auf den Tab `Datenbanken`{.action}. Den einzugebenden Servernamen finden Sie in der Spalte `Server-Adresse`.
 
 ///
+<!-- CP-STEPS-END:find-server-name-hosting -->
 
+<!-- CP-STEPS-START:find-server-name-wcdb -->
 /// details | Datenbank auf einem Web Cloud Databases Server
 
 Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
@@ -468,6 +489,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 >> Im Tab `Allgemeine Informationen`{.action} finden Sie den einzugebenden Servernamen im Bereich `Verbindungsinformationen`, unter `SQL`, bezeichnet als `Hostname`.
 
 ///
+<!-- CP-STEPS-END:find-server-name-wcdb -->
 
 ### Anmeldung bei einer Cloud Databases-Datenbank nicht möglich
 

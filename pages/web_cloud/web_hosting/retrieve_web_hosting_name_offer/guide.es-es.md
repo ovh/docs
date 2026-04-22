@@ -29,6 +29,7 @@ Mientras utiliza sus servicios, es posible que necesite el nombre de su solució
 
 ## Procedimiento
 
+<!-- CP-STEPS-START:find-plan-name -->
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -45,6 +46,7 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
 >> Debajo de esta etiqueta, encontrará el nombre de su solución de alojamiento web (por ejemplo: Personal, Pro, Performance, etc.).
+<!-- CP-STEPS-END:find-plan-name -->
 
 ## Más información <a name="go-further"></a>
 

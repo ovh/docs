@@ -45,6 +45,7 @@ Durante el uso de su nombre de dominio, es posible que deba mostrar u ocultar de
 
 ## Procedimiento
 
+<!-- CP-STEPS-START:configure-whois -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -69,6 +70,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> Una vez realizadas las selecciones, haga clic en el botón `Confirmar`{.action}.
 >>
 >> Los cambios pueden tardar hasta **48** horas en aplicarse. Estos cambios solo se aplicarán **si están autorizados por el registro que gestione la extensión del nombre de dominio**.
+<!-- CP-STEPS-END:configure-whois -->
 
 ## Más información
 
