@@ -38,6 +38,7 @@ Finally, you need to be able to order a database solution in the OVHcloud Contro
 
 ### Create a MySQL database
 
+<!-- CP-STEPS-START:create-a-mysql-database -->
 #### Subscribing to the service
 
 Click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
@@ -95,6 +96,7 @@ Within a few minutes your new database service will be deployed. Messages in the
 Your database is ready when cluster status is "Ready", node status is green, and number of users is set to "1 user".
 
 ![Green statuses on Database Control Panel](images/connect-kubernetes-to-managed-mysql08.png){.thumbnail}
+<!-- CP-STEPS-END:create-a-mysql-database -->
 
 ### Authorise your OVHcloud Managed Kubernetes cluster
 
@@ -104,6 +106,7 @@ Your database is ready when cluster status is "Ready", node status is green, and
 > Adding Kubernetes cluster nodes IPs to the authorised list is not recommended on production environnment, and must only be done for testing.
 > Soon, we will write a guide on using vrack, and how to interconnect your various managed services.
 
+<!-- CP-STEPS-START:authorise-your-ovhcloud-managed-kubernetes-cluster -->
 #### Add Kubernetes cluster nodes IPs to the DB authorised list
 
 Get your Kubernetes cluster nodes IP addresses from the Compute / Instances menu on the left.
@@ -113,6 +116,7 @@ Get your Kubernetes cluster nodes IP addresses from the Compute / Instances menu
 Following the related documentation on how to [authorise the suitable IP addresses](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel#configuring-authorised-ips), add your Kubernetes cluster node IPs to the authorised list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/connect-kubernetes-to-managed-mysql10.png){.thumbnail}
+<!-- CP-STEPS-END:authorise-your-ovhcloud-managed-kubernetes-cluster -->
 
 ### Test connection from Kubernetes cluster to MySQL DataBase
 
@@ -126,6 +130,7 @@ kubectl run mysql-client --image=mysql:8 -it --rm --restart=Never -- /bin/bash
 
 You are now inside the pod you just created on your cluster, you can simply use the MySQL CLI to connect to your managed MySQL database.
 
+<!-- CP-STEPS-START:test-connection-get-credentials -->
 The useful parameters are:
 
 - The db Host, the db Port
@@ -141,6 +146,7 @@ The useful parameters are:
     - Get it after you reset it.
 
 ![Password reseted](images/connect-kubernetes-to-managed-mysql11.png){.thumbnail}
+<!-- CP-STEPS-END:test-connection-get-credentials -->
 
 Now connect to the database with the following command
 

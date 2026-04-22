@@ -30,12 +30,15 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ### Configure your PostgreSQL instance to accept incoming connections
 
+<!-- CP-STEPS-START:configure-your-postgresql-instance-to-accept-incoming-connections -->
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
 Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+<!-- CP-STEPS-END:configure-your-postgresql-instance-to-accept-incoming-connections -->
 
 #### Step 1: Verify your user roles and password
 
+<!-- CP-STEPS-START:step-1-verify-your-user-roles-and-password -->
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
 This first user **avnadmin** comes with the following privileges:
@@ -63,9 +66,11 @@ To create a new user, click on `Add User`{.action}, fill the form, then click on
 ![Create User](images/postgresql_07_prepare_for_incoming_connections-20220408132905528.png){.thumbnail}
 
 Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
+<!-- CP-STEPS-END:step-1-verify-your-user-roles-and-password -->
 
 #### Step 2: Authorise incoming connections from the PostgreSQL client
 
+<!-- CP-STEPS-START:step-2-authorise-incoming-connections-from-the-postgresql-client -->
 In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
@@ -78,9 +83,11 @@ Click to authorise a new IP, and enter the IP of your pgAdmin environment. In ou
 >
 > If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
 >
+<!-- CP-STEPS-END:step-2-authorise-incoming-connections-from-the-postgresql-client -->
 
 #### Collect required information
 
+<!-- CP-STEPS-START:collect-required-information -->
 Select the `General information`{.action} tab to find the required login credentials in the `Login informations` section.
 
 ![Login information tab](images/postgresql_07_prepare_for_incoming_connections-20220408134445538.png){.thumbnail}
@@ -92,6 +99,7 @@ Select the `Databases`{.action} tab to get the database name.
 Select the `Users`{.action} tab to get the username.
 
 ![User table](images/postgresql_07_prepare_for_incoming_connections-20220408134639441.png){.thumbnail}
+<!-- CP-STEPS-END:collect-required-information -->
 
 ## Go further
 

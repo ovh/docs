@@ -30,6 +30,7 @@ Queries on a PostgreSQL instance can run indefinitely, and OVHcloud will not sto
 
 ### Terminate long-running queries with OVHcloud Control Panel
 
+<!-- CP-STEPS-START:terminate-queries-control-panel -->
 Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
 Click the `Queries in progress`{.action} tab.
@@ -42,6 +43,7 @@ In the table list, find the session you want to terminate then click the `...`{.
 ![Terminate button](images/postgresql-11-terminate.png){.thumbnail}
 
 The query will disappear but if your client application is coded to redo the query after a failure, another query and PID will reappear.
+<!-- CP-STEPS-END:terminate-queries-control-panel -->
 
 ### Terminate long-running queries with CLI (psql)
 

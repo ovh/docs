@@ -44,6 +44,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 
 ### Move a database service to 3-AZ
 
+<!-- CP-STEPS-START:move-database-service-to-3-az -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
@@ -146,6 +147,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 >> }
 >> ```
 >>
+<!-- CP-STEPS-END:move-database-service-to-3-az -->
 
 ### Validate the deployment
 
@@ -167,6 +169,7 @@ This step is crucial to avoid unnecessary costs and maintain a clean infrastruct
 
 Follow these instructions to delete the old 1-AZ service:
 
+<!-- CP-STEPS-START:clean-up -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> Navigate to your list of database services, click on the `...`{.action} button on the service line and click on the `Delete`{.action} button to permanently delete the service.
@@ -181,6 +184,7 @@ Follow these instructions to delete the old 1-AZ service:
 >> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/postgresql/{clusterId}
 >> >
 >>
+<!-- CP-STEPS-END:clean-up -->
 
 ## We want your feedback!
 

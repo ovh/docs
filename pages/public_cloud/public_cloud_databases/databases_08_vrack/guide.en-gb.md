@@ -45,6 +45,7 @@ The first step is to create the virtual network that will be used in your vRack.
 
 Follow this [guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) to create a new Public Cloud Database.
 
+<!-- CP-STEPS-START:step-2-creating-a-public-cloud-database-connected-to-the-private-network -->
 > [!primary]
 >
 > Choose the plan that best fits your needs. The use of private networking with databases is available with all plans.
@@ -62,17 +63,20 @@ Follow this [guide](/pages/public_cloud/public_cloud_databases/databases_01_orde
 >
 > ![Configure options](images/redis_08_vrack_12.png){.thumbnail}
 >
+<!-- CP-STEPS-END:step-2-creating-a-public-cloud-database-connected-to-the-private-network -->
 
 ### Step 3 - Configure your Public Cloud database instance to accept incoming connections
 
 Follow the *Configure your \<database> instance to accept incoming connections* guide of your selected database type available [here](/products/public-cloud-databases) to configure your service after installation.
 
+<!-- CP-STEPS-START:step-3-configure-your-public-cloud-database-instance-to-accept-incoming-connections -->
 > [!primary]
 >
 > Authorize the whole private network, as defined on previous steps.
 >
 >![Add virtual network subnet](images/redis_08_vrack_19.png){.thumbnail}
 >
+<!-- CP-STEPS-END:step-3-configure-your-public-cloud-database-instance-to-accept-incoming-connections -->
 
 The database is now connected to the virtual network, we can use it from any component that is connected to the same vRack.
 
@@ -80,12 +84,14 @@ The database is now connected to the virtual network, we can use it from any com
 
 Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to create a new Public Cloud Instance
 
+<!-- CP-STEPS-START:step-4-adding-a-public-cloud-instance-to-the-vrack -->
 > [!primary]
 >
 > At the fourth step, select the desired virtual network **XXXX - my-private-network**.
 >
 > ![Configure the instance](images/redis_08_vrack_24.png){.thumbnail}
 >
+<!-- CP-STEPS-END:step-4-adding-a-public-cloud-instance-to-the-vrack -->
 
 > [!primary]
 >

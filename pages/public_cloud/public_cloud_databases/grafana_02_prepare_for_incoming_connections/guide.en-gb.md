@@ -30,6 +30,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ### Configure your Dashboards instance to accept incoming connections
 
+<!-- CP-STEPS-START:configure-dashboards-instance-accept-incoming-connections -->
 Before making a connection, we need to verify that our Dashboards instance is correctly configured.
 Click on `Data Analysis`{.action} in the left-hand navigation bar and select your Dashboards instance.
 
@@ -59,9 +60,11 @@ You can edit and retract database access via the `...`{.action} button in the IP
 >
 > If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
 >
+<!-- CP-STEPS-END:configure-dashboards-instance-accept-incoming-connections -->
 
 ### Connect to your Dashboards Instance
 
+<!-- CP-STEPS-START:connect-to-your-dashboards-instance -->
 In your Dashboards instance, collect the URI in the `Login informations` section of the `General information`{.action} tab.
 
 ![Login information tab](images/grafana_02_prepare_for_incoming_connections-20220530065929522.png){.thumbnail}
@@ -73,6 +76,7 @@ Then connect to your Dashboards instance:
 Congratulations! You are now connected to your Dashboards instance.
 
 ![Grafana first connection](images/grafana_02_prepare_for_incoming_connections-20220530071725524.png)
+<!-- CP-STEPS-END:connect-to-your-dashboards-instance -->
 
 Learn more about Grafana® in the following tutorial: [Grafana fundamentals](https://grafana.com/tutorials/grafana-fundamentals/?utm_source=grafana_gettingstarted)
 

@@ -39,6 +39,8 @@ You can increase or decrease the storage of your service at any time using eithe
 
 #### Instructions
 
+<!-- CP-STEPS-START:adjust-storage-control-panel -->
+
 Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `Configuration`{.action} tab.
 
 ![Cluster overview](images/cluster-overview.png)
@@ -46,6 +48,8 @@ Click `Databases`{.action} in the left navigation bar, select your engine instan
 Click `Edit`{.action} on the "Storage" line and adjust the storage space of your cluster. Use the slider to either increase or decrease the storage space.
 
 ![Edit additional storage](images/edit-additional-storage.png)
+
+<!-- CP-STEPS-END:adjust-storage-control-panel -->
 
 ### How to adjust the storage space using the API
 

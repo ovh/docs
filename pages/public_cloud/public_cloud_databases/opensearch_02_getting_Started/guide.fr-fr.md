@@ -29,6 +29,7 @@ This guide explains how to successfully configure a Public Cloud Databases for a
 
 ### Subscribe to the service
 
+<!-- CP-STEPS-START:subscribe-to-the-service -->
 Click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
@@ -78,9 +79,11 @@ The final section will display a summary of your order as well as the API equiva
 ![Confirm order](images/creation_opensearch06.png){.thumbnail}
 
 In a matter of minutes, your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
+<!-- CP-STEPS-END:subscribe-to-the-service -->
 
 ### Configure the OpenSearch service
 
+<!-- CP-STEPS-START:configure-the-opensearch-service -->
 Once the Public Cloud Databases for OpenSearch service is up and running, you will have to define at least one user and one authorized IP in order to fully connect to the service.
 
 The `General information`{.action} tab should inform you to create users and authorized IPs.
@@ -128,6 +131,7 @@ Optionally, you can configure access control lists (ACL) for granular permission
 
 #### Optional: configure ACLs
 
+
 OpenSearch database supports index-level access control lists (ACLs) to control permissions. This approach allows you to limit the operations that are available to specific connections and to restrict access to certain data sets, which improves the security of your data.
 
 You first have to enable the ACLs functionality, and then you can add ACLs for all users:
@@ -164,9 +168,11 @@ OpenSearch has several “top-level” API endpoints (*_mget*, *_msearch*, and s
 Enabling ACLs does not restrict access to OpenSearch Dashboards itself, but all requests done by OpenSearch Dashboards are checked against the current user’s ACLs.
 
 In practice, for OpenSearch Dashboards to work properly, you must grant the user admin-level access to the *_msearch* interface (permission: Administrator, pattern: *_msearch*).
+<!-- CP-STEPS-END:configure-the-opensearch-service -->
 
 ### Advanced configuration
 
+<!-- CP-STEPS-START:advanced-configuration -->
 #### Indexes
 
 An index contains a database schema. Each data is based on a basic unit which is a JSON document, indexed with a unique ID. Indexing is the method used to store data and by the search engine for fast retrieval.
@@ -189,6 +195,7 @@ To find them, switch to the `Backups`{.action} tab. Backups will be created auto
 ![Backups](images/configure_backup.png){.thumbnail}
 
 You can restore and delete backups via the `...`{.action} button.
+<!-- CP-STEPS-END:advanced-configuration -->
 
 ### Connection to the OpenSearch Dashboard
 

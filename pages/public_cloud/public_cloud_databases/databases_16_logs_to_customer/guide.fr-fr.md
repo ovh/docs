@@ -33,6 +33,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ### Create your subscription
 
+<!-- CP-STEPS-START:create-subscription-cp -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> On the database instance page, go to the `Logs`{.action} section and click the `Subscribe`{.action} button.
@@ -100,6 +101,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 >>
 >> The logs will then start to be forwarded to your LDP stream.
 >>
+<!-- CP-STEPS-END:create-subscription-cp -->
 
 ### Find logs in Graylog
 
@@ -139,6 +141,7 @@ You can find this `HostID` in your OVHcloud Control Panel:
 
 You have 2 methods to delete a subscription:
 
+<!-- CP-STEPS-START:delete-subscription-cp -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> In the subscription page of the database instance, click the `Unsubscribe`{.action} button.
@@ -154,6 +157,7 @@ You have 2 methods to delete a subscription:
 >> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription/{subscriptionId}
 >> >
 >>
+<!-- CP-STEPS-END:delete-subscription-cp -->
 
 - If you delete your database service, all subscriptions of this service are deleted automatically.
 

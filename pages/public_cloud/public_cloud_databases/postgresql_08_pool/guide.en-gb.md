@@ -55,6 +55,7 @@ It makes sense to have enough connections so that each CPU core on the server ha
 
 ### Create a connection pool
 
+<!-- CP-STEPS-START:create-a-connection-pool -->
 Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance, then select the `Pools`{.action} tab.
 Click on `Add a pool`{.action}, and fill the form.
 
@@ -72,9 +73,11 @@ The settings available are:
 >
 > You can edit, delete and access information about the pool by clicking on `...`{.action} to the right of the pool.
 >
+<!-- CP-STEPS-END:create-a-connection-pool -->
 
 ### Connect to a connection pool
 
+<!-- CP-STEPS-START:connect-to-a-connection-pool -->
 To establish a connection, get information about the pool:
 
 ![Pools](images/postgresql_08_pool-20220411134051260.png){.thumbnail}
@@ -82,6 +85,7 @@ To establish a connection, get information about the pool:
 Click on `Information`{.action}, then collect the required information.
 
 ![Pool informations](images/postgresql_08_pool-2022041113491326.png){.thumbnail}
+<!-- CP-STEPS-END:connect-to-a-connection-pool -->
 
 ### Checking
 
