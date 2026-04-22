@@ -42,6 +42,7 @@ This tutorial is based on the [American Sign Language Letters Dataset](https://p
 
 ### Create Object Storage containers
 
+<!-- CP-STEPS-START:create-object-storage-containers -->
 If you want to create it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and create a new object container by clicking `Object Storage` > `Create an object container`.
 
 ![image](images/new-object-container.png){.thumbnail}
@@ -69,9 +70,11 @@ ovhai bucket create <region> asl-volov7-model
 >
 > These two Object Storage containers will be empty initially. You will add data from the notebook.
 >
+<!-- CP-STEPS-END:create-object-storage-containers -->
 
 ### Launch and access Jupyter notebook with Miniconda framework
 
+<!-- CP-STEPS-START:launch-notebook-cp -->
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the Object Storage. For more information on data, volumes and permissions, see [our guide on data](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks).
 
 If you want to launch it from the [OVHcloud Control Panel](/links/manager), just follow this [guide](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition).
@@ -97,6 +100,7 @@ ovhai notebook run conda jupyterlab \
 	--volume asl-volov7-data@<region>/:/workspace/data:RW \
 	--volume asl-volov7-model@<region>/:/workspace/models_train:RW
 ```
+<!-- CP-STEPS-END:launch-notebook-cp -->
 
 > [!primary]
 >

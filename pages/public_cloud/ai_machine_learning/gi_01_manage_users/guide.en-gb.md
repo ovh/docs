@@ -35,6 +35,7 @@ To grant access to **OVHcloud AI Solutions** to the users of your Public Cloud P
 
 In addition to the AI Training role, we strongly recommend adding the **ObjectStore Operator** role to your AI users. This role provides read/write access to the **OVHcloud Object Storage**, which is a persistent storage solution to store your [data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) that is incorporated into our AI Solutions. This way, you can access your data within the **AI Solutions**.
 
+<!-- CP-STEPS-START:creating-and-editing-ai-users -->
 To apply these roles, click on the `Project Management`{.action} category in the left-hand vertical menu to access the `Users & Roles`{.action} section:
 
 ![image](images/03_users_menu.png){.thumbnail}
@@ -60,6 +61,7 @@ This will generate a password that will allow you to authenticate to your existi
 To edit an existing user, simply click the `...`{.action} button next to the user, and select `Edit roles` to modify its existing roles:
 
 ![image](images/05_edit_user_roles.png){.thumbnail}
+<!-- CP-STEPS-END:creating-and-editing-ai-users -->
 
 ## Going further
 

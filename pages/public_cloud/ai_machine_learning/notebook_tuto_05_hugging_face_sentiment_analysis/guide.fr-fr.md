@@ -65,6 +65,7 @@ Beforehand, if you want to store your data (Tweets) in an **object container**, 
 
 ### Uploading your dataset on Public Cloud Storage
 
+<!-- CP-STEPS-START:upload-dataset-cp -->
 If you want to upload it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
@@ -74,6 +75,7 @@ If you want to run it with the CLI, just follow [this guide](/pages/public_cloud
 ```bash
 ovhai bucket object upload <container>@<region> <paths>
 ```
+<!-- CP-STEPS-END:upload-dataset-cp -->
 
 ### Launch and access a Jupyter notebook
 

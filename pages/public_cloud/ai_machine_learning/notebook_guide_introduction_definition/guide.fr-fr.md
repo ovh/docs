@@ -46,8 +46,10 @@ Each method offers its distinct advantages, depending on your expertise and pref
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
+<!-- CP-STEPS-START:ovhcloud-ai-solutions-authorization-process -->
 >> If you are using the UI, this step is not required. You can directly go to the next step which is the [Notebook creation](#launch-your-first-ai-notebook).
 >>
+<!-- CP-STEPS-END:ovhcloud-ai-solutions-authorization-process -->
 > **Using CLI / AI API / SDK**
 >>
 >> If you already have created an AI Notebook using the Control Panel (UI) on this Public Cloud project, you can directly go to the next step [Launch your first AI Notebook](#launch-your-first-ai-notebook).
@@ -69,6 +71,7 @@ To create an AI Notebook, follow these steps:
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
+<!-- CP-STEPS-START:launch-your-first-ai-notebook -->
 >> The manager is the more intuitive way to launch an AI Notebook. To get started, follow these steps:
 >>
 >> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
@@ -161,6 +164,7 @@ To create an AI Notebook, follow these steps:
 >>
 >> ![Create a Notebook Control Panel manager 11](images/creating-a-notebook-using-UI-11.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:launch-your-first-ai-notebook -->
 > **Using ovhai CLI**
 >>
 >> If you prefer to use the command line interface to launch your AI Notebook, please follow these steps:
@@ -288,6 +292,7 @@ At this point your AI Notebook is created. You will need to wait a few seconds f
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
+<!-- CP-STEPS-START:accessing-your-ai-notebook -->
 >> You can access your Notebook by clicking the `JupyterLab`{.action} link, from the AI Notebooks board, in the `Access` column:
 >>
 >> ![Accessing a Notebook Control Panel manager 1](images/accessing-a-notebook-using-UI-1.png){.thumbnail}
@@ -298,6 +303,7 @@ At this point your AI Notebook is created. You will need to wait a few seconds f
 >>
 >> On your Notebook page, you will find a lot of information about your Notebook (specifications, billing, attached data, ...). There is also a monitoring URL, which allows you to view real-time metrics for your Notebook, such as the GPU average usage for example.
 >>
+<!-- CP-STEPS-END:accessing-your-ai-notebook -->
 > **Using ovhai CLI**
 >>
 >> In the previous step, you ordered the creation of your Notebook. This should have displayed the `URL` of your Notebook in your terminal, allowing you to access it:
@@ -480,6 +486,7 @@ Indeed, when you stop a Notebook, it will be unavailable for a certain period wh
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
+<!-- CP-STEPS-START:stopping-an-ai-notebook -->
 >> Go back to the `AI Notebooks`{.action} board, from the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
 >> Then, select the Notebook you want to stop by clicking on its `Name`. 
@@ -488,6 +495,7 @@ Indeed, when you stop a Notebook, it will be unavailable for a certain period wh
 >>
 >> ![Stop a Notebook Control Panel manager](images/stopping-a-notebook-using-UI.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:stopping-an-ai-notebook -->
 > **Using ovhai CLI**
 >>
 >> You can easily stop your Notebook using the following command:
@@ -539,6 +547,7 @@ Once the Notebook has reached the `Stopped` state, you may be interested in star
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
+<!-- CP-STEPS-START:starting-a-stopped-notebook -->
 >> Go back to the `AI Notebooks`{.action} board, from the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
 >> Then, select the Notebook you want to start by clicking on its `Name`. 
@@ -547,6 +556,7 @@ Once the Notebook has reached the `Stopped` state, you may be interested in star
 >>
 >> ![Start a Notebook Control Panel manager](images/starting-a-notebook-using-UI.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:starting-a-stopped-notebook -->
 > **Using ovhai CLI**
 >>
 >> Use the following command and replace `<NOTEBOOK_UUID>` with your Notebook UUID to start your stopped Notebook:
@@ -598,6 +608,7 @@ If you have enabled the Automatic Restart feature, your Notebook will automatica
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
+<!-- CP-STEPS-START:restarting-a-notebook -->
 >> Go back to the `AI Notebooks`{.action} board, from the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
 >> Then, select the Notebook you want to start by clicking on its `Name`. 
@@ -606,6 +617,7 @@ If you have enabled the Automatic Restart feature, your Notebook will automatica
 >>
 >> ![Restart a Notebook Control Panel manager](images/restarting-a-notebook-using-UI.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:restarting-a-notebook -->
 > **Using ovhai CLI**
 >>
 >> Use the following command and replace `<NOTEBOOK_UUID>` with your Notebook UUID to restart your running Notebook:
@@ -632,10 +644,12 @@ Deleting a Notebook also means that you will delete the Notebook's local storage
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
+<!-- CP-STEPS-START:deleting-a-notebook -->
 >> If you want to completely **delete** your AI Notebook, just click on the `...`{.action} button, and then select `delete`{.action} action.
 >>
 >> ![Delete a Notebook Control Panel manager](images/deleting-a-notebook-using-UI.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:deleting-a-notebook -->
 > **Using ovhai CLI**
 >>
 >> If you want to completely **delete** your AI Notebook, just run the following command:

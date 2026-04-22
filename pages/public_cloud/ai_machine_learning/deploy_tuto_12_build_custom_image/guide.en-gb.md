@@ -297,9 +297,11 @@ docker tag custom-image:latest my-registry.ai.cloud.ovh.net/custom-image:latest
 docker push my-registry.ai.cloud.ovh.net/custom-image:latest
 ```
 
+<!-- CP-STEPS-START:push-image-registry-cp-reference -->
 If you want to know the exact commands to push on the shared registry, please consult the `Details`{.action} button of the **Shared Docker Registry** section in the **Home** panel of AI Training.
 
 ![image](images/shared_registry_details.png){.thumbnail}
+<!-- CP-STEPS-END:push-image-registry-cp-reference -->
 
 ## Go further
 

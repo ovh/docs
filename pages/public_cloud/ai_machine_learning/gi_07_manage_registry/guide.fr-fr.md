@@ -48,6 +48,7 @@ This is why it can be interesting to add and manage other registries. We can eit
 
 ### Manage existing registries through UI
 
+<!-- CP-STEPS-START:manage-existing-registries-ui -->
 Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Training` section, which is located under `AI & Machine Learning`.
 
 ![image](images/training_menu.png){.thumbnail}
@@ -57,6 +58,7 @@ By clicking the `Private Docker Registry`{.action} button, you should be able to
 ![image](images/registries_overview.png){.thumbnail}
 
 Note that the `shared registry` will not appear here. This one is displayed in the **Home** panel of AI Training.
+<!-- CP-STEPS-END:manage-existing-registries-ui -->
 
 ### Manage existing registries through CLI
 
@@ -124,14 +126,17 @@ To finish setting up your private Harbor registry, you will need to **create a p
 
 #### Get your OVHcloud Managed Private Registry API URL
 
+<!-- CP-STEPS-START:get-harbor-api-url -->
 In order to add this registry to AI Tools, you will need to retrieve its URL. To do this, go to the Managed Private Registry section on the OVHcloud Public Cloud Manager, and in the "more options" button (...) at the right, click on `Harbor API`:
 ![image](images/get-private-registry-api-url-1.png){.thumbnail}
 
 Then, copy the URL of the Harbor API, which is the URL of your private registry:
 ![image](images/get-private-registry-api-url-2.png){.thumbnail}
+<!-- CP-STEPS-END:get-harbor-api-url -->
 
 #### Add the Harbor registry
 
+<!-- CP-STEPS-START:add-harbor-registry -->
 To add your registry, you can either use the OVHcloud Control Panel (UI) or the `ovhai` CLI.
 
 During this step, you will be asked your user's credentials (user ID and password). You can use the default user (administrator) credentials, which were obtained at the first part of the `Create and configure a new private registry` step, or those of another user if you have created one.
@@ -160,6 +165,7 @@ During this step, you will be asked your user's credentials (user ID and passwor
 > ```
 > 
 > Once your registry is added, you should see it in your registries list. You can then use any image pushed on this registry for your AI Training jobs and AI Deploy apps.
+<!-- CP-STEPS-END:add-harbor-registry -->
 
 #### Push an image to your registry
 
@@ -228,6 +234,7 @@ During this step, you will be asked your Docker credentials.
 
 ##### Using UI
 
+<!-- CP-STEPS-START:add-docker-registry-ui -->
 Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 
 ![image](images/training_menu.png){.thumbnail}
@@ -239,6 +246,7 @@ Here, you will need to provide your Docker credentials along with its URL.
 ![add registry form](images/add_private_docker_registry.png){.thumbnail}
 
 When you have finished filling in the form, click `Add`{.action}.
+<!-- CP-STEPS-END:add-docker-registry-ui -->
 
 ##### Using CLI
 
@@ -275,6 +283,7 @@ docker push ghcr.io/<your_username>/<repo-name>:<tag-name>
 
 #### Add a GitHub registry
 
+<!-- CP-STEPS-START:add-github-registry -->
 Once your image is pushed on your GitHub account, you will need to add your GitHub registry to the registries of your Public Cloud project. As with Harbor and Docker, this can either be done with UI or CLI. This time, your registry's URL will be `ghcr.io`.
 
 You will be asked your GitHub credentials.
@@ -301,6 +310,7 @@ You will be asked your GitHub credentials.
 >> ```
 >> 
 >> Once your registry is added, you should see it in your registries list.
+<!-- CP-STEPS-END:add-github-registry -->
 
 #### Use your GitHub registry images with OVHcloud AI Tools
 

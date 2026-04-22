@@ -70,9 +70,11 @@ Our app is still in a `RUNNING` state, which means that it is currently deployed
 
 However, if we **stop and restart** the app, the image used will be the one indicated when the app was initially launched, which means the one available at `registry_address.ovh.net/my_ai_app:v1.0.0` in our case. As this image has been updated and the old one has been deleted, the last version (updated one) will now be used by the app.
 
+<!-- CP-STEPS-START:stop-start-app-control-panel -->
 This stop & restart operation can be performed from the [OVHcloud Control Panel](/links/manager) (UI) by clicking the `...` button, next to your app, as shown on the screenshot below:
 
 ![image](images/stop_start_app_control-panel.png){.thumbnail}
+<!-- CP-STEPS-END:stop-start-app-control-panel -->
 
 Execute it from the `ovhai` CLI with the following commands:
 

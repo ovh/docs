@@ -51,6 +51,7 @@ Tokens are scoped based on labels added to your AI Deploy app. To scope a token,
 
 #### Adding label during app creation
 
+<!-- CP-STEPS-START:adding-label-during-app-creation -->
 To add a label when creating an AI Deploy app, access the `Advanced Configuration`{.action} step in the app creation process. This section allows you to specify a custom Docker command, the mounted volumes, and **the app labels**. 
 
 From this last sub-section, you can add a key-value pair. The key is the label identifier (e.g., `group`), while the value is the corresponding value assigned to this key (e.g., `A`). In this tutorial, we use the example `group=A` as the label of the AI Deploy app:
@@ -60,6 +61,7 @@ From this last sub-section, you can add a key-value pair. The key is the label i
 Once created, all the labels of an AI Deploy app are listed on the app details, under **Labels** field:
 
 ![app dashboard](images/02-app-dashboard.png){.thumbnail}
+<!-- CP-STEPS-END:adding-label-during-app-creation -->
 
 #### Adding label to an existing app
 
@@ -68,12 +70,14 @@ If your app is already deployed, you can still add or update labels at any time 
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
+<!-- CP-STEPS-START:adding-label-to-existing-app-ui -->
 >> Navigate to the **AI Deploy** section where all your apps are listed. **Click the name of your app** to open its details page. Locate the **Labels** section. Enter the key-value pair and click `+`{.action} to add the label to your app.
 >>
 >> ![image](images/03-app-add-label-existing-app.png){.thumbnail}
 >> 
 >> After saving, the added label will be visible in the **Labels** section of the app details. 
 >>
+<!-- CP-STEPS-END:adding-label-to-existing-app-ui -->
 > **Using ovhai CLI**
 >>
 >> To follow this section, make sure you have installed the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) on your computer or on an instance.
@@ -96,6 +100,7 @@ If your app is already deployed, you can still add or update labels at any time 
 
 ### Generating tokens
 
+<!-- CP-STEPS-START:generating-tokens -->
 From the **AI Dashboard** page, you can access the tokens management page by clicking on the `Tokens`{.action} tab. From there, you can click on the `+ Create a token`{.action} button to create a new token:
 
 ![token list new](images/04-token-list.png){.thumbnail}
@@ -104,9 +109,11 @@ There are two types of roles that can be assigned to a token:
 
 - **AI Platform - Reader**: allows only querying the app
 - **AI Platform - Operator**: allows querying and full lifecycle management (start/stop/delete)
+<!-- CP-STEPS-END:generating-tokens -->
 
 #### Read token
 
+<!-- CP-STEPS-START:read-token -->
 Let's create a token for the AI Deploy apps matching the label `group=A` with read-only access in the GRA (Gravelines) cluster. To do this, we will need to fill 4 parameters:
 
 ![token generation input read](images/05-token-gen-input-read.png){.thumbnail}
@@ -134,12 +141,15 @@ If you prefer working from the command line, you can generate the same token usi
 ```console
 ovhai token create reader-token --role read --label-selector group=A
 ```
+<!-- CP-STEPS-END:read-token -->
 
 #### Operator token
 
+<!-- CP-STEPS-START:operator-token -->
 An operator token grants read access along with management access for the matching apps. This allows you to manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)) or the [AI API](https://gra.ai.cloud.ovh.net/) by providing this token.
 
 ![token generation input operator](images/07-token-gen-input-op.png){.thumbnail}
+<!-- CP-STEPS-END:operator-token -->
 
 Equivalent CLI command is:
 
@@ -184,6 +194,7 @@ Once a token is created, you can either regenerate the token or delete it.
 
 #### Regenerating a token
 
+<!-- CP-STEPS-START:regenerating-a-token -->
 When creating a token, the actual token string is only displayed once upon creation. It is not possible to retrieve the actual token afterwards, so make sure to save it when creating a new one.
 
 If you lost the token or if it leaked and you need to invalidate the token, you can generate it again. This causes the existing token to expire.
@@ -195,12 +206,15 @@ From the list of tokens, click on the action menu and select `Regenerate`{.actio
 Then click on `Confirm`{.action}:
 
 ![token regenerate confirm](images/09-token-regen-confirm.png){.thumbnail}
+<!-- CP-STEPS-END:regenerating-a-token -->
 
 #### Deleting a token
 
+<!-- CP-STEPS-START:deleting-a-token -->
 If you simply need to invalidate the token, you can delete it using the same action menu to regenerate a token. This will invalidate the existing token.
 
 ![token delete](images/10-token-list-delete.png)
+<!-- CP-STEPS-END:deleting-a-token -->
 
 ## Go further
 

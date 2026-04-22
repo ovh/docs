@@ -36,6 +36,7 @@ The monitoring dashboard for **AI Tools** can be accessed via a dedicated URL, w
 
 To fetch your AI Tool monitoring URL, you can use either the CLI or the Control Panel UI:
 
+<!-- CP-STEPS-START:monitoring-grafana-access-cp -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -128,6 +129,7 @@ To fetch your AI Tool monitoring URL, you can use either the CLI or the Control 
 >> ```
 >>
 >> The AI Tool monitoring can be found in the **Monitoring Url** field, located at the bottom of the details section.
+<!-- CP-STEPS-END:monitoring-grafana-access-cp -->
 
 ### Monitoring UI Details for AI Tools
 

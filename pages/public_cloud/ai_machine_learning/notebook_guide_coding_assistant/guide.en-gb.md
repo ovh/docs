@@ -38,6 +38,7 @@ You can launch a notebook from the [OVHcloud Control Panel](/links/manager) or v
 >
 > If you don’t see this plugin enabled in your current notebook, it’s because you’re not using the latest framework version available from our catalog of images. Please start a new notebook to access this new feature.
 
+<!-- CP-STEPS-START:launch-notebook-ui -->
 ### Launching a notebook via UI (Control Panel)
 
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps. There is a different coding assistant for Jupyter and VS Code notebooks.
@@ -78,6 +79,8 @@ To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer
 >> ![Create a Notebook API token authentication](images/continue-settings.png){.thumbnail}
 >>
 >>
+
+<!-- CP-STEPS-END:launch-notebook-ui -->
 
 ## Go further
 

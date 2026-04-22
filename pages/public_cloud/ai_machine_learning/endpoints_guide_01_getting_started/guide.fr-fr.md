@@ -43,6 +43,7 @@ It explains how to obtain an access key, access AI models, and interact with AI 
 
 Getting an API key enables you to use the models available in our [catalog](/links/public-cloud/ai-endpoints-catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
 
+<!-- CP-STEPS-START:generating-your-first-api-access-key -->
 **1\. Access the AI Endpoints section**
 
 Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Endpoints`{.action}.
@@ -86,10 +87,11 @@ Your key value will be displayed and you can copy it by clicking the copy icon.
 >
 > It is essential that you **keep your API key private and confidential**.
 >
-> Moreover, the API key displayed will not be stored in the website's memory, so please **make sure to store it securely on your side** for future usage.
+> Moreover, the API key displayed will not be stored in the website’s memory, so please **make sure to store it securely on your side** for future usage.
 >
 
 With your access API key in hand, you are now ready to access the AI models and their easy-to-use APIs.
+<!-- CP-STEPS-END:generating-your-first-api-access-key -->
 
 ### Accessing AI models
 
@@ -154,11 +156,13 @@ This will take you to a dedicated page with several options for interacting with
 
 To maintain security and control over your API access, it is essential to **revoke keys that are no longer needed**.
 
+<!-- CP-STEPS-START:revoke-your-api-access-key -->
 To revoke one of your API access keys, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on `AI Endpoints`{.action} underneath **AI & Machine Learning** in the left-hand menu, then on the `API key`{.action} management section.
 
 On the **AI key management** page, you will see a table listing all your generated API access keys, including their **name**, **description**, and **expiry date**. Find the key you want to revoke and click the three dots `...`{.action} button next to its details. This will open a menu where you can select `Delete`{.action}. Confirm this action to complete the revocation.
 
 ![AI Endpoints access key cancellation](images/api-access-key-revoke.png){.thumbnail}
+<!-- CP-STEPS-END:revoke-your-api-access-key -->
 
 **Verification**
 
@@ -179,9 +183,11 @@ If you require higher usage, please **[get in touch with us](/links/support-cont
 
 For information on pricing and the models lifecycle of the platform, please refer to the [AI Endpoints - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) documentation.
 
+<!-- CP-STEPS-START:billing-and-usage -->
 For your convenience, you can monitor your estimated consumption and model usage in the `AI Endpoints`{.action} section of the `AI & Machine Learning` category in your [Public Cloud project](/links/control-panel/publiccloud-projects) left-hand vertical menu.
 
 ![AI Endpoints usage monitoring](images/ai-endpoints-usage-monitoring.png){.thumbnail}
+<!-- CP-STEPS-END:billing-and-usage -->
 
 ## Going further
 

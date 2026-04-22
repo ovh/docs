@@ -32,6 +32,7 @@ Follow the same steps as a classic job submission described [here](/pages/public
 
 ### Step 2 - Select the notebook corresponding to your needs
 
+<!-- CP-STEPS-START:step-2-select-notebook-image -->
 A `job` is basically a Docker container that is run within the OVHcloud infrastructure.
 
 Notebooks are `daemon jobs`, meaning that they will run indefinitely until the user requests an interruption.
@@ -49,6 +50,7 @@ Currently, the following configurations are available :
     ![image](images/01_submit_image.png){.thumbnail}
 
 Once your image is chosen, click `Next`{.action}.
+<!-- CP-STEPS-END:step-2-select-notebook-image -->
 
 ### Step 3 - Continue as a classic job submission
 
@@ -59,9 +61,11 @@ Continue to follow the same steps as a classic job submission described [here](/
 
 ### Step 4 - Access notebook URL
 
+<!-- CP-STEPS-START:step-4-access-notebook-url -->
 Once your job is `In progress`, in the job description panel, you should see the `Access` link. Click on it and you will be redirected on your job URL.
 
 ![image](images/02_http_access_url.png){.thumbnail}
+<!-- CP-STEPS-END:step-4-access-notebook-url -->
 
 ### Step 5 - Login as an AI Training user
 
@@ -100,6 +104,7 @@ By default, the home directory of your job is located under `/workspace`. It mea
 
 ### Step 7 - Stop your notebook
 
+<!-- CP-STEPS-START:step-7-stop-notebook -->
 Once you are done working with your notebook don't forget to stop it.
 
 You can do it by selecting `Stop`{.action} in the action menu.
@@ -117,6 +122,7 @@ After some time your job should go into an `Interrupted` state meaning that the 
 > [!primary]
 >
 > Before going into the `Interrupted` state, your job may run through the `Finalizing` state. During this phase, all data inside `read & write volumes` are saved inside their linked containers in your object storage.
+<!-- CP-STEPS-END:step-7-stop-notebook -->
 
 ## Feedback
 

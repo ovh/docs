@@ -129,6 +129,7 @@ In this tutorial, we will upload the `.zip` format.
 
 You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](/links/manager) or with the [OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
+<!-- CP-STEPS-START:upload-data-via-ui-control-panel -->
 #### Upload data via UI (Control Panel)
 
 If you do not feel comfortable with commands, this method will be more intuitive.
@@ -142,6 +143,7 @@ We advise you to separate your data by creating a container dedicated to the mod
 We will name our object containers `BraTS2020_dataset_zip` and `BraTS2020_model_weights`.
 
 Once your object containers are created, you will see them in the Object Storage list. By clicking on them, you will be able to click the `Add Objects`{.action} button, which will allow you to upload your data to the cloud.
+<!-- CP-STEPS-END:upload-data-via-ui-control-panel -->
 
 #### 1.2 - Upload data via CLI
 

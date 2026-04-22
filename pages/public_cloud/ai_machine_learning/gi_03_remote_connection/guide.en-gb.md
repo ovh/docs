@@ -52,6 +52,7 @@ This will create a private key (e.g., `id_ed25519`, not to share) and a public k
 
 Here is how to add your SSH key to your AI Solution if you are using the [OVHcloud Control Panel](/links/manager) or the `ovhai` CLI:
 
+<!-- CP-STEPS-START:specify-the-ssh-key-during-ai-notebook-or-ai-training-job-creation -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -98,6 +99,7 @@ Here is how to add your SSH key to your AI Solution if you are using the [OVHclo
 >> ```bash
 >> ovhai job get <job-id>
 >> ```
+<!-- CP-STEPS-END:specify-the-ssh-key-during-ai-notebook-or-ai-training-job-creation -->
 
 Once your job is created, regardless of the method chosen, you will be able to copy your job id (e.g., `bfa1d77a-9746-4128-9974-f94139937927`), which will be needed in the following steps.
 

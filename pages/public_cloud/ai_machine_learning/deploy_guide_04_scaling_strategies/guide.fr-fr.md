@@ -54,6 +54,7 @@ The minimum number of replicas is **1** and the maximum is **10**.
 
 ### Setting Static Scaling (UI and CLI)
 
+<!-- CP-STEPS-START:setting-static-scaling-ui -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -71,6 +72,7 @@ The minimum number of replicas is **1** and the maximum is **10**.
 >>     -- <optional-command>
 >> ```
 >>
+<!-- CP-STEPS-END:setting-static-scaling-ui -->
 
 ## Autoscaling
 
@@ -118,6 +120,7 @@ Using this strategy, it is possible to choose:
 
 ### Setting Autoscaling (UI and CLI)
 
+<!-- CP-STEPS-START:setting-autoscaling-ui -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -139,6 +142,7 @@ Using this strategy, it is possible to choose:
 >>     --auto-resource-usage-threshold <percent>
 >> ```
 >>
+<!-- CP-STEPS-END:setting-autoscaling-ui -->
 
 ## Advanced: Custom Metrics for Autoscaling
 
@@ -146,6 +150,7 @@ For advanced scenarios, you can define **custom metrics** to drive autoscaling d
 
 This feature can be used through the UI and CLI, and requires an API endpoint to fetch metrics from.
 
+<!-- CP-STEPS-START:advanced-custom-autoscaling-ui -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -183,11 +188,13 @@ This feature can be used through the UI and CLI, and requires an API endpoint to
 >>     --auto-custom-target-value 42 \
 >>     --auto-custom-metric-aggregation-type AVERAGE
 >> ```
+<!-- CP-STEPS-END:advanced-custom-autoscaling-ui -->
 
 ## Modifying Scaling Strategies Post-Deployment
 
 You can also modify the scaling strategy after the app has been created using the Control Panel UI or the `ovhai app scale` CLI command.
 
+<!-- CP-STEPS-START:modifying-scaling-post-deployment -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -253,6 +260,7 @@ You can also modify the scaling strategy after the app has been created using th
 >>     --auto-custom-metric-aggregation-type <METRIC AGGREGATION TYPE> \
 >>     <app-id>
 >> ```
+<!-- CP-STEPS-END:modifying-scaling-post-deployment -->
 
 ## Scaling examples
 

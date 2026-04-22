@@ -89,6 +89,7 @@ To do things more efficiently, it is better to save the model in a remote storag
 
 You can create your Object Storage bucket using either the UI (OVHcloud Control Panel) or the `ovhai` CLI, which can be downloaded [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
+<!-- CP-STEPS-START:create-object-storage-bucket -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -102,6 +103,7 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >>
 >> You can create the bucket that will store your Whisper model. Select the container *type* and the *datastore_alias* that match your needs, and name it as you wish. *`GRA` alias and `whisper-model` name will be used in this tutorial.*
 >>
+<!-- CP-STEPS-END:create-object-storage-bucket -->
 > **Using ovhai CLI**
 >>
 >> To follow this part, make sure you have installed the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) on your computer or on an instance.

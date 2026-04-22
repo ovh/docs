@@ -131,6 +131,7 @@ You can upload your data to the cloud either by using the [OVHcloud Control Pane
 
 #### Upload data via UI (Control Panel)
 
+<!-- CP-STEPS-START:upload-data-via-ui-control-panel -->
 If you do not feel comfortable with commands, this method will be more intuitive.
 
 Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
@@ -142,6 +143,7 @@ We advise you to separate your data by creating a container dedicated to the mod
 We will name our object containers `BraTS2020_dataset_zip` and `BraTS2020_model_weights`.
 
 Once your object containers are created, you will see them in the Object Storage list. By clicking on them, you will be able to click the `Add Objects`{.action} button, which will allow you to upload your data to the cloud.
+<!-- CP-STEPS-END:upload-data-via-ui-control-panel -->
 
 #### 1.2 - Upload data via CLI
 

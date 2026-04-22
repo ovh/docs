@@ -33,6 +33,7 @@ It is based on the YOLOv5 open source repository by [Ultralytics](https://github
 
 ### Uploading your dataset on Public Cloud Storage
 
+<!-- CP-STEPS-START:upload-dataset-cp -->
 If you want to upload it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
@@ -47,9 +48,11 @@ ovhai bucket object upload <container>@<region> <paths>
 >
 > This tutorial has been realized with the COCO dataset. If you don't have your own dataset, you can use it by downloading the COCO version "YOLOv5 PyTorch" available for free on [Roboflow](https://public.roboflow.com/object-detection/microsoft-coco-subset/).
 >
+<!-- CP-STEPS-END:upload-dataset-cp -->
 
 ### Launching and accessing Jupyter notebook with PyTorch framework
 
+<!-- CP-STEPS-START:launch-notebook-cp -->
 You need to attach a volume if your data is in your OVHcloud object storage and you want to use it during your experiment, or if you need to save the results of your work in the object storage. For more information on data, volumes and permissions, see [our guide on data](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks).
 
 If you want to launch it from the [OVHcloud Control Panel](/links/manager), just follow this [guide](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition).
@@ -95,6 +98,7 @@ ovhai notebook run pytorch jupyterlab \
 	--volume <dataset-container>@<region>/:/workspace/data:<permission> \
 	--volume <weights-container>@<region>/:/workspace/models_train:<permission>
 ```
+<!-- CP-STEPS-END:launch-notebook-cp -->
 
 You can then reach your notebook’s URL once it is running.
 

@@ -32,9 +32,11 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 
 ### Uploading your dataset on Public Cloud Storage
 
+<!-- CP-STEPS-START:upload-dataset-object-storage -->
 If you want to upload it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
+<!-- CP-STEPS-END:upload-dataset-object-storage -->
 
 > [!primary]
 >

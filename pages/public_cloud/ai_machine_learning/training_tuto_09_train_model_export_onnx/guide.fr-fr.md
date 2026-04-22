@@ -39,11 +39,13 @@ To be able to retrieve and use the ONNX model at the end of training, you need t
 
 #### Create your bucket via UI (Control Panel)
 
+<!-- CP-STEPS-START:create-bucket-via-ui -->
 If you do not feel comfortable with commands, this method may be more intuitive.
 
 Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `Object Storage` section (in the Storage category) and create a new object container by clicking `Storage` > `Object Storage` > `Create an object container`.
 
 You can create the bucket that will store your ONNX model at the end of the training. Select the container *type* and the *region* that match your needs.
+<!-- CP-STEPS-END:create-bucket-via-ui -->
 
 #### Create your bucket via ovhai CLI
 
@@ -344,6 +346,7 @@ You can launch the training job using the UI or the CLI.
 
 #### Create your training job via UI (Control Panel)
 
+<!-- CP-STEPS-START:create-training-job-via-ui -->
 If you do not feel comfortable with commands, this method may be more intuitive.
 
 Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `AI Training` section (in the AI & Machine Learning category) and create a new job by clicking `AI Training` > `Launch a new job`.
@@ -353,6 +356,7 @@ You can create the job that will train your model and export it to ONNX model. S
 Then attach your *Object Storage container* `cnn-model-onnx` and define the mount directory: `/workspace/models`.
 
 Finally, *configure your job* and choose at least `1 GPU`.
+<!-- CP-STEPS-END:create-training-job-via-ui -->
 
 #### Create your training job via ovhai CLI
 
