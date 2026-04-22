@@ -1,8 +1,18 @@
 ---
 title: "Die häufigsten Fehler bei 1-Klick-Modulen beheben"
 excerpt: "Erfahren Sie hier, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können"
-updated: 2024-03-12
+updated: 2026-04-22
 ---
+
+<style>
+ pre {
+   background-color: #300A24
+ }
+ details > summary {
+   color: var(--color-brand-blue-600);
+   font-weight: 700;
+ }
+</style>
 
 ## Ziel
 
@@ -11,13 +21,10 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 
 **Diese Anleitung erklärt, wie Sie die häufigsten Fehler bei der Erstellung eines 1-Klick-Moduls diagnostizieren**
 
-
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further
-).
->
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 
 ## Voraussetzungen
 
@@ -29,7 +36,7 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -40,21 +47,50 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 > [!primary]
 >
 > Hier finden Sie die häufigsten Fehler. Wenn Sie eine andere Situation als die hier beschriebenen haben, lesen Sie unsere [Webhosting FAQ](/pages/web_cloud/web_hosting/faq-web_hosting).
->
 
-### Ihr Domainname wird bei der Erstellung des 1 Klick Moduls nicht angeboten
+**Klicken Sie auf die 15 folgenden Überschriften, um den Inhalt anzuzeigen.**
 
+/// details | Ihr Domainname wird bei der Erstellung des 1 Klick Moduls nicht angeboten
+
+<!-- CP-STEPS-START:check-module-status -->
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, das installiert werden soll. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}, und führen Sie dann die folgenden Überprüfungen durch:
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-|Szenario|Lösung|
-|---|---|
-|Die Domain oder Subdomain, die mit der Website verknüpft ist, die Sie erstellen möchten, wird in der Tabelle auf der Registerkarte `Multisite`{.action} nicht angezeigt.|Fügen Sie Ihre Domain hinzu, indem Sie [dieser Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite) folgen.|
-|Der Domainname wurde ohne Aktion Ihrerseits aus der Multisite gelöscht.|Wenn Ihre Domain oder deren [DNS Zone](/pages/web_cloud/domains/dns_zone_edit) nicht über Ihren OVHcloud Kunden-Account verwaltet werden, fügen Sie Ihre Domain über den Tab `Multisite`{.action} hinzu, indem Sie [diese Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite) folgen hinzufügen.|
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Führen Sie anschließend die folgenden Prüfungen durch:
+>>
+>> |Szenario|Lösung|
+>> |---|---|
+>> |Der Domain- oder SubDomainname, der mit der Website verbunden ist, die Sie erstellen möchten, wird nicht in der Tabelle im Tab `Meine Seiten`{.action} angezeigt.|Fügen Sie Ihren Domainnamen gemäß [diesen Anweisungen](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) hinzu.|
+>> |Der Domainname wurde vom Hosting getrennt, ohne dass Sie etwas dafür getan haben.|Wenn Ihr Domainname oder seine [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) nicht über Ihren OVHcloud Kunden-Account verwaltet wird, fügen Sie Ihren Domainnamen über den Tab `Meine Seiten`{.action} gemäß [dieser Anleitung](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) hinzu.|
+<!-- CP-STEPS-END:check-module-status -->
 
-### „Beim Laden der Informationen ist ein Fehler aufgetreten (You need at least one free database)“
+///
 
+/// details | "Beim Laden der Informationen ist ein Fehler aufgetreten (You need at least one free database)"
+
+<!-- CP-STEPS-START:change-root-folder -->
 ![No databases available](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-no-db-available.png){.thumbnail}
 
 Diese Meldung erscheint, wenn Sie die Installation Ihres 1-Klick-Moduls starten, wenn Sie nicht oder nicht mehr die Möglichkeit haben, eine neue Datenbank für Ihr Webhosting zu erstellen.
@@ -63,9 +99,20 @@ Diese Meldung erscheint, wenn Sie die Installation Ihres 1-Klick-Moduls starten,
 
 Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](/links/web/hosting-options-startsql) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des 1-Klick-Moduls neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](/links/web/databases).
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, für das Sie eine zusätzliche Datenbank hinzufügen möchten. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action} und dann auf `Aktionen`{.action}, um eine zusätzliche Datenbank zu bestellen:
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action}, dann auf `Aktionen`{.action}, um eine zusätzliche Datenbank zu bestellen:
+>>
+>> ![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
+>>
+<!-- CP-STEPS-END:change-root-folder -->
 
 Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
@@ -81,9 +128,21 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 > Vergleich unserer [Webhosting-Angebote](/links/web/hosting).
 >
 
-Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der Seite im Bereich `Abo` - `Angebot` auf den Button `...`{.action} `Angebot wechseln`{.action}:
+<!-- CP-STEPS-START:find-admin-credentials -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Im Bereich `Abo` - `Angebot` klicken Sie auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}:
+>>
+>> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
+>>
+<!-- CP-STEPS-END:find-admin-credentials -->
 
 Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](/links/web/hosting-performance-offer) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
@@ -96,11 +155,21 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 > Das Löschen einer Datenbank ist endgültig. Außerdem werden die Backups der betreffenden Datenbank gelöscht. Im Zweifelsfall wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 >
 
-Um eine Datenbank über Ihr [OVHcloud Kundencenter](/links/manager) zu löschen, gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+<!-- CP-STEPS-START:diag-delete-database -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} in der Zeile mit der Datenbank, die Sie löschen möchten, und klicken Sie dann auf `Datenbank löschen`{.action}:
-
-![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} in der Zeile mit der Datenbank, die Sie löschen möchten, und klicken Sie dann auf `Datenbank löschen`{.action}:
+>>
+>> ![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
+>>
+<!-- CP-STEPS-END:diag-delete-database -->
 
 Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
@@ -122,43 +191,79 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
-### Ihr 1-Klick-Modul wird unter einer Webadresse vom Typ „xxxx.cluster0xx.hosting.ovh.net“ angezeigt
+///
+
+/// details | Ihr 1-Klick-Modul wird unter einer Webadresse vom Typ "xxxx.cluster0xx.hosting.ovh.net" angezeigt
 
 ![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 Nachdem Sie alle notwendigen Backups durchgeführt haben, [löschen Sie Ihr 1-Klick-Modul](#delete-the-module) und dann seine [Datenbank](#delete-the-database). Starten Sie anschließend die Installation Ihres 1-Klick-Moduls auf der gewünschten Domain neu.
 
-### „Das Installationsverzeichnis ist nicht leer“
+///
+
+/// details | "Das Installationsverzeichnis ist nicht leer"
 
 ![folder_not_empty](/pages/assets/screens/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
 
 Nachdem Sie mit der Erstellung Ihres 1-Klick-Moduls begonnen haben, haben Sie eine E-Mail erhalten, die besagt, dass das Installationsverzeichnis Ihres 1-Klick-Moduls nicht leer ist.
 
-Diese Nachricht bedeutet, dass das Ihrem Domainnamen zugeordnete **Wurzelverzeichnis** bereits eine oder mehrere Dateien oder Ordner enthält.
+Diese Nachricht bedeutet, dass das **Wurzelverzeichnis** der Website, an die Ihr Domainname gebunden ist, bereits eine oder mehrere Dateien oder Ordner enthält.
 
-Um Ihre Domain mit einem anderen Verzeichnis zu verbinden, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts neben der Zeile für Ihren Domainnamen und dann auf `Domain bearbeiten`{.action}. Geben Sie zum Schluss einen Namen für ein neues **Wurzelverzeichnis** ein (ein leeres Verzeichnis wird automatisch auf Ihrem Webhosting erstellt).
+<!-- CP-STEPS-START:change-domain-root-folder -->
+Um Ihren Domainnamen an eine andere Website (qua Wurzelverzeichnis) zu verknüpfen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-![modify_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem gewünschten Domainnamen oder Subdomain und dann auf `Domain abtrennen`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Nachdem der Domainname vom Hosting getrennt wurde, folgen Sie unserer Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+<!-- CP-STEPS-END:change-domain-root-folder -->
 
 Sie können sich auch über das [FTP-Protokoll](/pages/web_cloud/web_hosting/ftp_connection) mit Ihrem Webhosting verbinden und den Inhalt des Ordners löschen, nachdem Sie es lokal gesichert haben oder nachdem Sie den gesamten Inhalt in ein anderes FTP-Verzeichnis verschoben haben.
 
-### „Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module).“
+///
 
-Diese Meldung zeigt an, dass die Datei “.ovhconfig“ nicht existiert oder ungültig ist, um Ihr 1-Klick-Modul installieren zu können. Diese Datei enthält die PHP-Version und die Ausführungsumgebung, die auf Ihr Webhosting angewendet wurden.
+/// details | "Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module)."
 
-Es wird empfohlen, die aktuellste PHP-Version zu verwenden. **Bevor** Sie die Konfiguration der Datei “.ovhconfig“ ändern, stellen Sie bei Ihrem Webhosting sicher, dass die anderen Websites mit der neuen PHP-Version und/oder der neuen Ausführungsumgebung kompatibel sind, die Sie auf Ihrem Webhosting anwenden werden.
+Diese Meldung zeigt an, dass die Datei ".ovhconfig" nicht existiert oder ungültig ist, um Ihr 1-Klick-Modul installieren zu können. Diese Datei enthält die PHP-Version und die Ausführungsumgebung, die auf Ihr Webhosting angewendet wurden.
 
-Um diese Konfiguration zu überprüfen, lesen Sie unsere Anleitung „[Webhosting-Konfiguration bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)“.
+Es wird empfohlen, die aktuellste PHP-Version zu verwenden. **Bevor** Sie die Konfiguration der Datei ".ovhconfig" ändern, stellen Sie bei Ihrem Webhosting sicher, dass die anderen Websites mit der neuen PHP-Version und/oder der neuen Ausführungsumgebung kompatibel sind, die Sie auf Ihrem Webhosting anwenden werden.
 
-### „Fehler beim Laden der Informationen (There is not enough space on your hosting (you need at least xxx MB))“
+Um diese Konfiguration zu überprüfen, lesen Sie unsere Anleitung "[Webhosting-Konfiguration bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
 
+///
+
+/// details | "Fehler beim Laden der Informationen (There is not enough space on your hosting (you need at least xxx MB))"
+
+<!-- CP-STEPS-START:check-database-credentials -->
 ![not_enough_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-not-enough-ftp-space.png){.thumbnail}
 
 Diese Meldung weist darauf hin, dass der [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings zu viele Daten enthält. 
 
 #### Lösung 1: Daten löschen, um FTP-Speicherplatz freizugeben
 
-In diesem Fall löschen (oder verschieben) Sie Ihre Daten, um ein neues „[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“ zu installieren.
+In diesem Fall löschen (oder verschieben) Sie Ihre Daten, um ein neues "[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" zu installieren.
 
 In dieser Situation nutzen Sie [FTP](/pages/web_cloud/web_hosting/ftp_connection) um ein [lokales Backup](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) Ihrer Webhosting-Daten zu erstellen, und löschen Sie alle Dateien, die für den Betrieb Ihrer Website nicht erforderlich sind.
 
@@ -175,13 +280,26 @@ In dieser Situation nutzen Sie [FTP](/pages/web_cloud/web_hosting/ftp_connection
 > Vergleich unserer [Webhosting-Angebote](/links/web/hosting).
 >
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der Seite im Bereich `Abo` - `Angebot` auf den Button `...`{.action} `Angebot wechseln`{.action}:
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Im Bereich `Abo` - `Angebot` klicken Sie auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}:
+>>
+>> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
+>>
+<!-- CP-STEPS-END:check-database-credentials -->
 
 Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](/links/web/hosting-performance-offer) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
-### „Verbindung zur Datenbank kann nicht hergestellt werden“ <a name="delete-the-module"></a>
+///
+
+/// details | "Verbindung zur Datenbank kann nicht hergestellt werden" <a name="delete-the-module"></a>
 
 ![wrong_id_database](/pages/assets/screens/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
 
@@ -189,20 +307,34 @@ Nachdem Sie mit der Installation Ihres 1-Klick-Moduls im fortgeschrittenen Modus
 
 Überprüfen Sie die Login-Daten Ihrer Datenbank. Weitere Informationen finden Sie in [unserer Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Löschen Sie anschließend Ihr 1-Klick-Modul. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf den Tab `1-Klick-Module`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} in der Zeile für Ihren Domainnamen und dann auf `Das Modul löschen`{.action}.
+<!-- CP-STEPS-START:diag-delete-module -->
+Löschen Sie anschließend Ihr 1-Klick-Modul. Klicken Sie dazu auf die Tabs, um die **2** Schritte anzuzeigen.
 
-![delete_a_module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module-2.png){.thumbnail}
-
-> [!warning]
->
-> **Das Löschen von Elementen aus der Datenbank kann zu einer Unterbrechung der Website führen.**
->
-> Achten Sie darauf, nur die zuletzt gestartete Installation zu entfernen. Stellen Sie hierzu sicher, dass es sich um das korrekte Verzeichnis in der Spalte `Path` (Pfad) handelt.
->
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `1-Klick-Module`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} in der Zeile für Ihren Domainnamen und dann auf `Das Modul löschen`{.action}.
+>>
+>> ![delete_a_module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module-2.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > **Das Löschen von Elementen aus der Datenbank kann zu einer Unterbrechung der Website führen.**
+>> >
+>> > Achten Sie darauf, nur die zuletzt gestartete Installation zu entfernen. Stellen Sie hierzu sicher, dass es sich um das korrekte Verzeichnis in der Spalte `Path` (Pfad) handelt.
+>> >
+>>
+<!-- CP-STEPS-END:diag-delete-module -->
 
 Starten Sie dann die Installation eines neuen 1-Klick-Moduls.
 
-### „You have insufficient rights on this database.“
+///
+
+/// details | "You have insufficient rights on this database."
 
 ![insufficient_rights](/pages/assets/screens/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
 
@@ -220,7 +352,9 @@ Wenn Sie keine anderen Datenbanken haben und kein zusätzliches Angebot bestelle
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
-### „Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)“
+///
+
+/// details | "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
 ![cant_connect](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
 
@@ -230,33 +364,63 @@ Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/we
 
 Überprüfen Sie auch die Login-Daten, indem Sie sich [direkt](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) mit Ihrem Datenbankserver verbinden und die Installation Ihres 1 Klick Moduls neu starten.
 
-### „Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'“
+///
+
+/// details | "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
 ![cant_connect_server](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
 
 Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) auf einer Datenbank auf einem [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) Server gestartet. Sie haben diese Fehlermeldung per E-Mail erhalten. Dies bedeutet, dass der eingegebene Name des Datenbankservers falsch ist.
 
-Um den Namen Ihres Datenbankservers zu finden, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den betreffenden Datenbankserver aus.
+<!-- CP-STEPS-START:find-db-server-name -->
+Um den Namen Ihres Datenbankservers zu finden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-Auf der angezeigten Seite wird der Name des zu verwendenden Servers in der Randleiste `Verbindungsinformationen`, Unterabschnitt `SQL`, unter dem Begriff `Hostname` angezeigt.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie den betreffenden Datenbankserver aus.
+>>
+> **Schritt 2**
+>>
+>> Der Name des zu verwendenden Servers wird in der Randleiste `Verbindungsinformationen`, Unterabschnitt `SQL`, unter dem Begriff `Hostname` angezeigt.
+>>
+<!-- CP-STEPS-END:find-db-server-name -->
 
-### Ihre alte Website wird weiterhin angezeigt
+///
 
-Wenn Sie auf den Link Ihrer Website in der Spalte `Pfad` klicken im Tab `1-Klick-Module` des Webhostings klicken, öffnet ein neuer Tab mit Ihrer Website. Der Ihrer Installation zugewiesene Domainname wird in der Adresse Ihres Internetbrowsers angezeigt. Wenn Ihre Domain zum Beispiel „domain.tld“ ist, wird möglicherweise eine andere Domain oder eine OVHcloud-Standardseite angezeigt.
+/// details | Ihre alte Website wird weiterhin angezeigt
+
+<!-- CP-STEPS-START:verify-db-connection -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie im Tab `1-Klick-Module`{.action} auf den Link Ihrer Website in der Spalte `Pfad`. Ein neuer Tab öffnet sich mit Ihrer Website. Der Ihrer Installation zugewiesene Domainname wird in der Adresse Ihres Browsers angezeigt. Wenn Ihre Domain zum Beispiel "domain.tld" ist, wird möglicherweise eine andere Domain oder eine OVHcloud Standardseite angezeigt.
+>>
+<!-- CP-STEPS-END:verify-db-connection -->
 
 Diese Fehlfunktion kann mehrere Ursachen haben:
 
-- Überprüfen Sie, ob der Domainname („domain.tld“), den Sie gerade aufgerufen haben, der Name ist, mit dem Sie das 1-Klick-Modul installiert haben.
+- Überprüfen Sie, ob der Domainname ("domain.tld"), den Sie gerade aufgerufen haben, der Name ist, mit dem Sie das 1-Klick-Modul installiert haben.
 
-- Wenn Sie kürzlich die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)/[DNS-Server](/pages/web_cloud/domains/dns_server_edit) Ihres Domainnamens oder einen [Transfer eines Domainnamens](/pages/web_cloud/domains/transfer_incoming_generic_domain) geändert haben. Warten Sie, bis diese Vorgänge abgeschlossen sind (4-24 Stunden bei einer Änderung der DNS-Zone und 24-48 Stunden bei einer Änderung der DNS-Server). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und den Cache Ihres Internetbrowsers zu leeren.
+- Wenn Sie kürzlich die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)/[DNS-Server](/pages/web_cloud/domains/dns_server_edit) Ihres Domainnamens oder einen [Transfer eines Domainnamens](/pages/web_cloud/domains/transfer_incoming_generic_domain) geändert haben. Warten Sie, bis diese Vorgänge abgeschlossen sind (4-24 Stunden bei einer Änderung der DNS-Zone und 24-48 Stunden bei einer Änderung der DNS-Server). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box etc.) neu zu starten und den Cache Ihres Browsers zu leeren.
 
 - Ihr Domainname ist immer noch mit Ihrem alten Webhosting verbunden. Ändern Sie in diesem Fall die [aktive DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), die mit Ihrem Domainnamen oder dessen [DNS-Servern](/pages/web_cloud/domains/dns_server_edit) verbunden ist. Wenn die aktive DNS-Zone Ihrer Domain nicht bei OVHcloud verwaltet wird, wenden Sie sich mit diesen Informationen an Ihren DNS-Anbieter.
 
-### Das Passwort „Administrator“ für den Zugriff auf das „Verwaltungsinterface“ Ihres 1-Klick-Moduls funktioniert nicht <a name="adminpassword"></a>
+///
 
-Wenn Ihr aktuelles Passwort für den Zugriff auf das Verwaltungsinterface Ihres **C**ontent **M**anagement **S**ystem (**CMS**) abgelehnt wird, lesen Sie den Abschnitt „Ihr Modulpasswort ändern“ in unserer Anleitung zur [Verwaltung Ihres 1-Klick-Moduls](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+/// details | Das Passwort "Administrator" für den Zugriff auf das "Verwaltungsinterface" Ihres 1-Klick-Moduls funktioniert nicht <a name="adminpassword"></a>
 
-### Das Tabellenpräfix Ihrer Datenbank wird bereits für Ihre Datenbank verwendet
+Wenn Ihr aktuelles Passwort für den Zugriff auf das Verwaltungsinterface Ihres **C**ontent **M**anagement **S**ystem (**CMS**) abgelehnt wird, lesen Sie den Abschnitt "Ihr Modulpasswort ändern" in unserer Anleitung zur [Verwaltung Ihres 1-Klick-Moduls](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+
+///
+
+/// details | Das Tabellenpräfix Ihrer Datenbank wird bereits für Ihre Datenbank verwendet
 
 Dieser Fehler betrifft nur die Installation von 1-Klick-Modulen im *erweiterten Modus*. 
 
@@ -264,7 +428,9 @@ Beim Versuch, das 1-Klick-Modul zu installieren, wurde ein Tabellenpräfix angeg
 
 Wenn Sie eine solche Mail erhalten haben, führen Sie die Installation mit einem anderen Tabellenpräfix oder einer anderen Datenbank erneut aus, um das Problem zu beheben.
 
-### DNS-Einträge der Domain verweisen nicht auf ein OVHcloud Webhosting
+///
+
+/// details | DNS-Einträge der Domain verweisen nicht auf ein OVHcloud Webhosting
 
 Dieser Fehler informiert Sie darüber, dass die DNS-Einträge der für Ihre Website verwendeten Domain nicht auf ein OVHcloud Webhosting verweisen. Es ist nicht möglich, ein 1-Klick-Modul auf einer Domain zu installieren, die nicht auf ein OVHcloud Hosting verweist.
 Um diese Situation zu beheben, bearbeiten Sie Ihre DNS-Zone. Weitere Informationen zu den einzugebenden IP-Adressen finden Sie in der Anleitung [Liste der IP-Adressen von Clustern und Webhostings](/pages/web_cloud/web_cloud_databases/configure-database-server). Danach müssen Sie [Ihre DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit).
@@ -272,7 +438,9 @@ Wenn Ihre DNS-Zone nicht bei OVHcloud gehostet wird, wenden Sie sich an Ihren DN
 
 Wenn Sie damit fertig sind, starten Sie die Installation eines neuen 1-Klick-Moduls.
 
-### Ihre Datenbank muss in der Version „X“ sein, diese ist jedoch derzeit in der Version „Y“ 
+///
+
+/// details | Ihre Datenbank muss in der Version "X" sein, diese ist jedoch derzeit in der Version "Y"
 
 Diese E-Mail informiert Sie darüber, dass die Version Ihrer Datenbank zu alt für die Installation Ihres 1-Klick-Moduls ist. 
 
@@ -283,6 +451,8 @@ In derselben E-Mail finden Sie auch die Version, in der sich Ihre Datenbank befi
 - Wenn Sie über einen [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) Server verfügen, überprüfen Sie, ob Ihr Server das richtige DBMS und die richtige Version verwendet, und erstellen Sie dann die Datenbank Ihrer Wahl.
 
 Anschließend starten Sie die Installation eines neuen 1-Klick-Moduls.
+
+///
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

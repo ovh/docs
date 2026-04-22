@@ -1,7 +1,7 @@
 ---
 title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Wprowadzenie
@@ -17,7 +17,6 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
 > Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
->
 
 ## Wymagania początkowe
 
@@ -29,7 +28,7 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -41,24 +40,38 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 >
 > Zmiana nazwy domeny dotycząca dostępu do Twojej strony WWW może mieć wpływ na jej pozycjonowanie. 
 > Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner) w celu pozycjonowania strony, jeśli to konieczne.
->
 
 Aby zmienić domenę dostępu do Twojej strony WWW, należy wykonać kilka kroków w określonej kolejności.
 
-### Etap 1 - zadeklarowanie nowej domeny na hostingu <a name="step1"></a>
+### 1 - Zadeklarowanie nowej domeny na hostingu <a name="step1"></a>
 
-Zadeklaruj nową domenę korzystając z naszej dokumentacji dotyczącej [dodawania witryny na Twoim serwisie udostępnionym](/pages/web_cloud/web_hosting/multisites_configure_multisite). Zadeklaruj również jej poddomenę w `www`, jeśli chcesz, na przykład, aby `www.NewDomain.tld` również wyświetlała Twoją stronę oprócz `NewDomain.tld`.
+Zadeklaruj nową nazwę domeny, postępując zgodnie z naszym przewodnikiem „[Jak przypisać nazwę domeny do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Zadeklaruj również jej poddomenę w `www`, jeśli chcesz, na przykład, aby `www.NewDomain.tld` również wyświetlała Twoją stronę oprócz `NewDomain.tld`.
 
 Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 - Twoja nowa domena musi wskazywać na ten sam "folder główny", który jest używany do łączenia się ze stroną WWW.
-- Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web cloud`{.action}, kliknij przycisk `Hosting`{.action}, wybierz hosting i pobierz **IPv4** w zakładce `Informacje ogólne`{.action}.
+<!-- CP-STEPS-START:retrieve-hosting-ip -->
+- Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, kliknij poniższe zakładki, aby wyświetlić kolejno **3** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Kliknij zakładkę `Informacje ogólne`{.action}.
+>>
+> **Krok 3**
+>>
+>> Pobierz wyświetlony **IPv4**.
+<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
-> Jeśli aktywujesz opcje **IP kraju** lub **CDN** dla swojej nowej domeny, użyj właściwego adresu IP w naszej dokumentacji zawierającej listę [wszystkie adresy IP hostingu współdzielonego](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Jeśli aktywujesz opcje **IP kraju** lub **CDN** dla swojej nowej domeny, użyj właściwego adresu IP w naszej dokumentacji zawierającej listę [wszystkie adresy IP hostingu współdzielonego](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 >
-> Aby odnaleźć numer klastra, w którym znajduje się Twój hosting, przejdź do części `Web cloud`{.action}, kliknij `Hosting plans`{.action}, wybierz hosting, a następnie zakładkę `FTP-SSH`{.action}. Numer klastra będziesz wyświetlał w formularzu **Serwer FTP i SFTP**: `ftp.cluster0XX.ovh.net` (gdzie `X` oznacza numer klastra).
+> Aby odnaleźć numer klastra, w którym znajduje się Twój hosting, zapoznaj się z naszym przewodnikiem "[Hosting www - Poznaj klaster i syn](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 >
 
 > **Certyfikaty SSL**
@@ -67,9 +80,11 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 > - [Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
+<!-- CP-STEPS-START:verify-multisite-config -->
 Jeśli wszystkie czynności zostały poprawnie wykonane, deklaracje Twoich domen powinny być identyczne **chyba że korzystasz z płatnego certyfikatu SSL typu *Sectigo DV*, *Sectigo EV* lub *custom***.
 
-![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >
@@ -78,7 +93,7 @@ Jeśli wszystkie czynności zostały poprawnie wykonane, deklaracje Twoich domen
 
 Jeśli Twoja strona WWW nie używa baz danych i/lub nie przeprowadzasz przepisywania adresu URL dla Twojej strony WWW, ta ostatnia musi być wyświetlana poprawnie dla Twojej nowej domeny. W takim przypadku przejdź bezpośrednio do [etapu 3](#step3) niniejszego przewodnika. Jeśli tak nie jest, przejdź do poniższego etapu 2.
 
-### Etap 2 - przepisanie adresów URL na Twojej stronie WWW z nową domeną
+### 2 - Przepisanie adresów URL na Twojej stronie WWW z nową domeną
 
 Większość stron używa baz danych do działania. Drzewo ostatnich jest zazwyczaj zbudowane wokół domeny pierwotnie używanej przez Twoją stronę. W przypadku tych stron konieczne są dalsze działania.
 
@@ -103,7 +118,7 @@ Ponieważ systemy CMS są tworzone przez organizacje zewnętrzne niezarządzane 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla! : Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [docs.joomla.org](https://docs.joomla.org/) lub [forum.joomla.org](https://forum.joomla.org/).
 - Drupal: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [drupal.org](https://drupal.org) lub [drupal.fr](https://drupal.fr).
-- PrestaShop: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, kliknij [tutaj](https://help-center.prestashop.com) i przejdź na oficjalną stronę.
+- PrestaShop: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, odwiedź oficjalną [stronę PrestaShop](https://help-center.prestashop.com).
 
 Pamiętaj, że w przypadku tych systemów CMS możesz wprowadzić również zmiany bezpośrednio [w bazie danych](/pages/web_cloud/web_hosting/sql_create_database). W tabeli programu zmień link dostępowy do Twojej strony WWW.
 
@@ -122,9 +137,9 @@ Jeśli korzystałeś z usług dostawcy podczas tworzenia strony, skontaktuj się
 > Po zakończeniu etapu 2 Twoja strona WWW powinna wyświetlać się z Twoją nową domeną.
 >
 
-### Etap 3 - usunięcie poprzedniej nazwy domeny <a name="step3"></a>
+### 3 - Usunięcie poprzedniej nazwy domeny <a name="step3"></a>
 
-Aby uniknąć „*Duplicate-content*” i gdy nowa nazwa domeny jest w pełni operacyjna z Twoją witryną, należy usunąć deklarację starej nazwy domeny na Twojej witrynie, korzystając z przewodnika dotyczącego zarządzania [witrynami na Twoim serwisie udostępnionym](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Aby uniknąć „*Duplicate-content*” i po w pełni funkcjonalnej nowej nazwie domeny z Twoją stroną internetową, należy usunąć deklarację starej nazwy domeny ze swojej strony internetowej, korzystając z przewodnika „[Jak odłączyć nazwę domeny od istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)”.
 
 > [!warning]
 >
@@ -135,7 +150,7 @@ Po odłączeniu starej nazwy domeny od witryny znajdującej się na Twoim serwis
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Lista adresów IP hostingu www](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[Lista adresów IP hostingu www](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
 [Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

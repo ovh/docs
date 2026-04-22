@@ -1,7 +1,7 @@
 ---
 title: "FAQ Webhosting"
 excerpt: "Hier finden Sie Antworten zu den am häufigsten gestellten Fragen zu den OVHcloud Webhostings"
-updated: 2025-11-10
+updated: 2026-04-22
 ---
 
 <style>
@@ -24,12 +24,20 @@ details[open]>summary::before {
 
 /// details | Wie konfiguriere ich mein Webhosting?
 
-Führen Sie die folgenden Schritte aus:
+<!-- CP-STEPS-START:configure-hosting -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-
-Dort können Sie Ihre SSL Zertifikate, die auf Ihrem Webhosting angewendete PHP Version, die CDN Option, Multisites, Datenbanken, etc. verwalten.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Sie können dort Ihre SSL-Zertifikate, die auf Ihrem Webhosting angewendete PHP Version, die CDN-Option, Ihre Webseiten, Datenbanken, etc. verwalten.
+<!-- CP-STEPS-END:configure-hosting -->
 
 > [!success]
 >
@@ -39,12 +47,22 @@ Dort können Sie Ihre SSL Zertifikate, die auf Ihrem Webhosting angewendete PHP 
 
 /// details | Ich habe das Passwort für das Konto vergessen, in dem sich mein Webhosting befindet. Was kann ich tun?
 
-Wenn Sie Ihre OVHcloud Kundenkennung oder das zugehörige Passwort vergessen haben, folgen Sie diesen Schritten:
+<!-- CP-STEPS-START:forgot-account-password -->
+Wenn Sie Ihre OVHcloud Kundenkennung oder das zugehörige Passwort vergessen haben, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Gehen Sie auf das [OVHcloud Kundencenter Login Interface](/links/manager).
-2. Klicken Sie auf den Link `Login oder Passwort vergessen?`{.action} im Anmeldefenster.
-3. Geben Sie Ihre OVHcloud Kundenkennung (Beispiel: **aa00000-ovh**) oder die mit Ihrer OVHcloud Kundenkennung verbundene Kontakt-E-Mail-Adresse an.
-4. Klicken Sie anschließend auf die Schaltfläche `Absenden`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf das [OVHcloud Kundencenter Login Interface](/links/manager) und klicken Sie auf den Link `Login oder Passwort vergessen?`{.action} im Anmeldefenster.
+>>
+> **Schritt 2**
+>>
+>> Geben Sie Ihre OVHcloud Kundenkennung (Beispiel: **aa00000-ovh**) oder die mit Ihrer OVHcloud Kundenkennung verbundene Kontakt-E-Mail-Adresse an.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie anschließend auf die Schaltfläche `Absenden`{.action}.
+<!-- CP-STEPS-END:forgot-account-password -->
 
 Der Reset-Vorgang wird dann an Ihre Kontakt-E-Mail-Adresse versandt.
 
@@ -56,11 +74,20 @@ Der Reset-Vorgang wird dann an Ihre Kontakt-E-Mail-Adresse versandt.
 
 /// details | Wie verwalte ich das Passwort des FTP-Speicherplatzes meines Webhostings?
 
-Führen Sie die folgenden Schritte aus:
+<!-- CP-STEPS-START:manage-ftp-password -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `FTP - SSH`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `FTP - SSH`{.action}.
+<!-- CP-STEPS-END:manage-ftp-password -->
 
 Dort können Sie das FTP-Passwort Ihres Webhostings ändern.
 
@@ -76,11 +103,20 @@ Dort können Sie das FTP-Passwort Ihres Webhostings ändern.
 >
 > Wenn Sie das Passwort einer Datenbank ändern, die von einer Ihrer Websites verwendet wird, aktualisieren Sie es ebenfalls in der Konfigurationsdatei der betreffenden Website. Ohne dieses Update wird Ihre Website von ihrer Datenbank separiert und funktioniert nicht mehr.
 
-Führen Sie die folgenden Schritte aus:
+<!-- CP-STEPS-START:change-db-password -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
+<!-- CP-STEPS-END:change-db-password -->
 
 Dort können Sie die Passwörter Ihrer Datenbanken ändern, die mit Ihrem Webhosting verbunden sind.
 
@@ -92,18 +128,28 @@ Dort können Sie die Passwörter Ihrer Datenbanken ändern, die mit Ihrem Webhos
 
 /// details | Wie ändere ich das Passwort eines E-Mail-Accounts, die mit meinem Webhosting verbunden ist?
 
-Führen Sie die folgenden Schritte aus:
+<!-- CP-STEPS-START:change-email-password -->
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `E-Mails`{.action} (oder auf das Menü `MX Plan`{.action}, wenn Sie die Betaversion des OVHcloud Kundencenters verwenden) und wählen Sie dann die betreffende Domain aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `E-Mails`{.action}.
-4. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts neben der betreffenden E-Mail-Adresse und dann auf `Passwort ändern`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [MX Plan](/links/control-panel/web-mx-plan), und wählen Sie den betreffenden Domainnamen aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `E-Mails`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts neben der betreffenden E-Mail-Adresse und dann auf `Passwort ändern`{.action}.
+<!-- CP-STEPS-END:change-email-password -->
 
 Dort können Sie das Passwort Ihres E-Mail-Accounts ändern (achten Sie darauf, die im Eingabefenster angezeigten Passwortrichtlinien einzuhalten).
 
 > [!success]
 >
-> Alle details finden Sie in unserer Anleitung „[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“
+> Alle Details finden Sie in unserer Anleitung „[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“
 >
 > Wenn Sie ein E-Mail-Programm verwenden (Outlook, macOS Mail, Thunderbird, etc.), aktualisieren Sie das Passwort für Ihre E-Mail-Adresse, wenn das E-Mail-Programm Sie dazu auffordert, wenn es geöffnet oder synchronisiert wird.
 >
@@ -160,13 +206,22 @@ Im Folgenden sind die wichtigsten Schritte aufgeführt:
 
 /// details | Wie kann ich mehrere Websites auf demselben Webhosting hosten?
 
-Wenn Ihr [Webhosting](/links/web/hosting) kompatibel ist, folgen Sie diesen Schritten:
+<!-- CP-STEPS-START:host-multiple-websites -->
+Wenn Ihr [Webhosting](/links/web/hosting) kompatibel ist, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Meine Seiten`{.action}.
+<!-- CP-STEPS-END:host-multiple-websites -->
 
-Dort können Sie die auf Ihrem Webhosting als Multisite deklarierten Domains/Subdomains verwalten.
+Dort können Sie die für Ihre Webseiten Ihres Webhosting deklarierten Domains/Subdomains verwalten.
 
 > [!success]
 >
@@ -183,13 +238,28 @@ Damit Ihre Website über eine HTTPS-URL erreichbar ist (Beispiel: `https://domai
 
 OVHcloud bietet [mehrere SSL-Zertifikate](/links/web/hosting-options) für Webhostings an.
 
-So aktivieren Sie ein SSL-Zertifikat auf Ihrem Webhosting für Ihre Website:
+<!-- CP-STEPS-START:enable-https -->
+Um ein SSL-Zertifikat auf Ihrem Webhosting für Ihre Website zu aktivieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
-4. Wählen Sie das gewünschte Zertifikat aus den [verfügbaren Zertifikaten](/pages/web_cloud/web_hosting/ssl_on_webhosting).
-5. Fahren Sie fort, bis die Installation des SSL-Zertifikats abgeschlossen ist (nach vorheriger Validierung des Bestellscheins, wenn Sie eines der Sectigo SSL-Zertifikate auswählen).
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie das gewünschte Zertifikat aus den [verfügbaren Zertifikaten](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+>>
+> **Schritt 4**
+>>
+>> Fahren Sie fort, bis die Installation des SSL-Zertifikats abgeschlossen ist (nach vorheriger Validierung des Bestellscheins, wenn Sie eines der Sectigo SSL-Zertifikate auswählen).
+<!-- CP-STEPS-END:enable-https -->
 
 > [!success]
 >
@@ -209,16 +279,28 @@ Sobald das SSL-Zertifikat Ihrer Wahl installiert und bei OVHcloud eingerichtet i
 
 Um das Webhosting zu bestellen, das am besten zu Ihren Bedürfnissen passt, erfahren Sie alles zu unseren Angeboten auf [dieser Seite](/links/web/hosting).
 
-[!primary]
+> [!primary]
 >
 > Abhängig von Ihrem aktuellen Webhosting werden Ihnen möglicherweise nicht alle Angebote gezeigt. Weitere Informationen hierzu finden Sie in unserer Anleitung „[Webhosting-Angebot skalieren](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)“.
 
-Nachdem Sie Ihre Auswahl getroffen haben, folgen Sie diesen Schritten:
+<!-- CP-STEPS-START:change-hosting-plan -->
+Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite und in der Randleiste **Abo** auf die Schaltfläche `...`{.action} rechts neben `Angebot` und dann auf `Angebot wechseln`{.action}.
-4. Wählen Sie anschließend das neue Abonnement und die Dauer aus. Bestätigen Sie die entsprechenden Verträge und klicken Sie auf `Absenden`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite und in der Randleiste **Abo** auf die Schaltfläche `...`{.action} rechts neben `Angebot` und dann auf `Angebot wechseln`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie anschließend das neue Abonnement und die Dauer aus. Bestätigen Sie die entsprechenden Verträge und klicken Sie auf `Absenden`{.action}.
+<!-- CP-STEPS-END:change-hosting-plan -->
 
 > [!success]
 >
@@ -230,12 +312,24 @@ Nachdem Sie Ihre Auswahl getroffen haben, folgen Sie diesen Schritten:
 
 Wenn Sie Ihr Webhosting kündigen oder löschen, wird auch das dazugehörige E-Mail-Angebot gekündigt. Um Ihre E-Mail-Adressen beizubehalten, müssen Sie das E-Mail-Angebot **vor** Kündigung des betreffenden Webhostings trennen.
 
-Führen Sie die folgenden Schritte aus:
+<!-- CP-STEPS-START:keep-email-after-cancel -->
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite und in der Randleiste **Konfiguration** auf die Schaltfläche `...`{.action} rechts neben dem Text `E-Mail-Adressen` und dann auf `Meine E-Mail-Option abtrennen`{.action}.
-4. Befolgen Sie die Anweisungen, um ein unabhängiges E-Mail-Angebot zu bestellen, mit dem Sie Ihre bereits erstellten E-Mail-Accounts beibehalten können.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite und in der Randleiste **Konfiguration** auf die Schaltfläche `...`{.action} rechts neben dem Text `E-Mail-Adressen` und dann auf `Meine E-Mail-Option abtrennen`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Befolgen Sie die Anweisungen, um ein unabhängiges E-Mail-Angebot zu bestellen, mit dem Sie Ihre bereits erstellten E-Mail-Accounts beibehalten können.
+<!-- CP-STEPS-END:keep-email-after-cancel -->
 
 ///
 
@@ -244,12 +338,24 @@ Führen Sie die folgenden Schritte aus:
 Die Webhosting-Pakete **Performance** enthalten kostenlos aktivierbare Web Cloud Databases.  
 Wenn Sie Ihr Webhosting kündigen oder löschen **Performance**, wird auch das eventuell damit verbundene Angebot Web Cloud Databases gekündigt. Um Ihre Web Cloud Databases Lösung zu behalten, müssen Sie diese **vor** Kündigung des Hostings abtrennen.
 
-Führen Sie die folgenden Schritte aus:
+<!-- CP-STEPS-START:keep-wcdb-after-cancel -->
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite und in der Randleiste **Konfiguration** auf die Schaltfläche `...`{.action} rechts neben `Web Cloud Databases` und dann auf `Abrennen`{.action}.
-4. Befolgen Sie die Anweisungen, um einen unabhängigen Web Cloud Databases Dienst zu bestellen, damit Ihre bereits erstellte Lösung für Web Cloud Databases erhalten bleibt.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite und in der Randleiste **Konfiguration** auf die Schaltfläche `...`{.action} rechts neben `Web Cloud Databases` und dann auf `Abtrennen`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Befolgen Sie die Anweisungen, um einen unabhängigen Web Cloud Databases Dienst zu bestellen, damit Ihre bereits erstellte Lösung für Web Cloud Databases erhalten bleibt.
+<!-- CP-STEPS-END:keep-wcdb-after-cancel -->
 
 **Diese Aktion kann nicht rückgängig gemacht werden. Das Angebot Web Cloud Databases wird dann unabhängig von Ihrem Performance Webhosting abgerechnet.**
 
@@ -257,12 +363,24 @@ Führen Sie die folgenden Schritte aus:
 
 /// details | Wie kann ich den RAM eines Web Cloud Databases Angebots im Zusammenhang mit einem Performance Webhosting erhöhen?
 
-Führen Sie die folgenden Schritte aus:
+<!-- CP-STEPS-START:increase-wcdb-ram -->
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Web Cloud Databases`{.action} und wählen Sie die betreffende Web Cloud Databases Lösung aus.
-3. Klicken Sie auf der angezeigten Seite und in der Randleiste **Allgemeine Informationen** auf den Button `...`{.action} rechts neben `RAM` und dann auf `RAM-Menge ändern`{.action}.
-4. Befolgen Sie die Anweisungen, um den gewünschten RAM zu bestellen, und fahren Sie dann mit der Validierung der Bestellung fort.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Web Cloud Databases Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite und in der Randleiste **Allgemeine Informationen** auf den Button `...`{.action} rechts neben `RAM` und dann auf `RAM-Menge ändern`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Befolgen Sie die Anweisungen, um den gewünschten RAM zu bestellen, und fahren Sie dann mit der Validierung der Bestellung fort.
+<!-- CP-STEPS-END:increase-wcdb-ram -->
 
 > [!success]
 >
@@ -281,14 +399,18 @@ Führen Sie die folgenden Schritte aus:
 Es gibt mehrere Gründe, warum Ihre Website nicht funktioniert.  
 Um die Ursache zu ermitteln, überprüfen Sie zunächst, dass keines Ihrer Abonnements erneuert werden muss.
 
-Führen Sie die folgenden Schritte aus:
+<!-- CP-STEPS-START:website-not-working -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf der angezeigten Seite oben rechts auf Ihren Namen und wählen Sie dann `Meine Angebote und Dienste`{.action}.
-
-> [!success]
->
-> Weitere Informationen finden Sie in unserer Anleitung „[Wie verlängere ich meine OVHcloud-Dienste](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)“.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
+>>
+> **Schritt 2**
+>>
+>> Weitere Informationen finden Sie in unserer Anleitung „[Wie verlängere ich meine OVHcloud-Dienste](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)“.
+<!-- CP-STEPS-END:website-not-working -->
 
 Sehen Sie sich anschließend die [laufenden Events auf unserer Infrastruktur](https://www.status-ovhcloud.com/) an.
 
@@ -342,21 +464,45 @@ In diesem Fall müssen Sie Ihr 1-Klick-Modul entfernen und anschließend neu ins
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export).
 
-**Erst nachdem** Sie alle erforderlichen Backups durchgeführt haben, löschen Sie Ihr [1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules) mit folgenden Aktionen:
+<!-- CP-STEPS-START:fix-cluster-url-1 -->
+**Erst nachdem** Sie alle erforderlichen Backups durchgeführt haben, löschen Sie Ihr [1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules), klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `1-Klick-Module`{.action}.
-4. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts in der Zeile des betreffenden 1-Klick-Moduls und dann auf `Modul löschen`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `1-Klick-Module`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts in der Zeile des betreffenden 1-Klick-Moduls und dann auf `Modul löschen`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-1 -->
 
 Das Löschen des *1-Klick-Module* kann **mehrere Minuten** dauern.
 
-Löschen Sie anschließend die zugehörige Datenbank, indem Sie folgende Aktionen ausführen:
+<!-- CP-STEPS-START:fix-cluster-url-2 -->
+Löschen Sie anschließend die zugehörige Datenbank, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
-4. Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `...`{.action} rechts in der Zeile der betreffenden Datenbank und dann auf `Datenbank löschen`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `...`{.action} rechts in der Zeile der betreffenden Datenbank und dann auf `Datenbank löschen`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-2 -->
 
 Das Löschen der zugehörigen Datenbank kann **mehrere Minuten** dauern.
 
@@ -387,24 +533,59 @@ Wenn Ihre Website nach einer Änderung mit dieser URL angezeigt wird, ist die sc
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export)
 
-Führen Sie die folgenden Schritte aus, um den Quellcode der Website wiederherzustellen:
+<!-- CP-STEPS-START:fix-cluster-url-after-change-1 -->
+Um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `FTP - SSH`{.action}.
-4. Klicken Sie auf der neu angezeigten Seite auf die Schaltfläche `Backup wiederherstellen`{.action}.
-5. Wählen Sie im angezeigten Fenster das Datum des wiederherzustellenden Backups aus, und fahren Sie mit dem Start der Wiederherstellung fort.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf der neu angezeigten Seite auf die Schaltfläche `Backup wiederherstellen`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie im angezeigten Fenster das Datum des wiederherzustellenden Backups aus, und fahren Sie mit dem Start der Wiederherstellung fort.
+<!-- CP-STEPS-END:fix-cluster-url-after-change-1 -->
 
 Die Wiederherstellung des FTP-Speicherplatzes kann **mehrere Minuten** dauern.
 
-So stellen Sie ein Backup Ihrer Datenbank wieder her:
+<!-- CP-STEPS-START:fix-cluster-url-after-change-2 -->
+Um ein Backup Ihrer Datenbank wiederherzustellen, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
-4. Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `...`{.action} rechts in der Zeile der betreffenden Datenbank und dann auf `Backup wiederherstellen`{.action}.
-5. Wählen Sie auf der neu geöffneten Seite das wiederherzustellende Backup aus (**idealerweise das Backup, das dem Datum entspricht, das Sie für die Wiederherstellung des Quellcodes Ihrer Website ausgewählt haben (siehe oben)**).
-6. Wenn Sie das Backup ausgewählt haben, klicken Sie rechts neben dem Backup, das Sie wiederherstellen möchten, auf den Button `...`{.action} und dann auf `Backup wiederherstellen`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `...`{.action} rechts in der Zeile der betreffenden Datenbank und dann auf `Backup wiederherstellen`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie auf der neu geöffneten Seite das wiederherzustellende Backup aus (**idealerweise das Backup, das dem Datum entspricht, das Sie für die Wiederherstellung des Quellcodes Ihrer Website ausgewählt haben (siehe oben)**).
+>>
+> **Schritt 5**
+>>
+>> Wenn Sie das Backup ausgewählt haben, klicken Sie rechts neben dem Backup, das Sie wiederherstellen möchten, auf den Button `...`{.action} und dann auf `Backup wiederherstellen`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-after-change-2 -->
 
 Die Wiederherstellung eines Datenbank-Backups kann **mehrere Minuten** dauern.
 
@@ -425,13 +606,29 @@ Diese Situation weist auf eine fehlerhafte Konfiguration der Ihrem Domainnamen z
 
 Der häufigste Fall ist folgender: Sie haben Ihren Domainnamen und Ihr Webhosting getrennt bestellt, sodass diese nicht automatisch über die DNS-Zone Ihrer Domain miteinander verbunden werden.
 
-Um dies zu korrigieren, folgen Sie diesen Schritten:
+<!-- CP-STEPS-START:fix-webmail-redirect-1 -->
+Um dies zu korrigieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie die betreffende Domain aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `DNS-Server`{.action}.
-4. Notieren Sie sich anschließend die Namen der angegebenen DNS-Server und gehen Sie in den Tab `DNS-Zone`{.action} (rechts neben dem Tab `DNS-Server`{.action}).
-5. Vergleichen Sie in der angezeigten Tabelle (die die DNS-Zone der Domain darstellt) die `Ziele` der Einträge vom Typ `NS` in der DNS-Zone mit den zuvor abgerufenen DNS-Servernamen. Drei Fälle können auftreten. Klicken Sie auf die Registerkarten unten, um die einzelnen **3** Fälle anzuzeigen.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `DNS-Server`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Notieren Sie sich anschließend die Namen der angegebenen DNS-Server und gehen Sie in den Tab `DNS-Zone`{.action} (rechts neben dem Tab `DNS-Server`{.action}).
+>>
+> **Schritt 4**
+>>
+<!-- CP-STEPS-START:fix-webmail-redirect-2 -->
+>> Vergleichen Sie in der angezeigten Tabelle (die die DNS-Zone der Domain darstellt) die `Ziele` der Einträge vom Typ `NS` in der DNS-Zone mit den zuvor abgerufenen DNS-Servernamen. Drei Fälle können auftreten. Klicken Sie auf die Registerkarten unten, um die **3** Fälle anzuzeigen.
+<!-- CP-STEPS-END:fix-webmail-redirect-1 -->
 
 > [!tabs]
 > **Fall 1**
@@ -464,6 +661,7 @@ Um dies zu korrigieren, folgen Sie diesen Schritten:
 >>
 >> > [!primary]
 >> >
+<!-- CP-STEPS-END:fix-webmail-redirect-2 -->
 >> > Wenn einer Ihrer DNS-Server, die im Tab `DNS-Server`{.action} deklariert sind, folgende Form hat: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` oder `vpsXXXXXX.ovh.ca` (wobei `X` eine Ziffer zwischen **0** und **9** ist), gehen Sie zu **Fall 3**.  
 Es handelt sich dabei um von OVHcloud bereitgestellte DNS-Servernamen, die es unseren Kunden ermöglichen, ihre DNS-Konfiguration direkt auf ihren eigenen Servern (Dedicated Server, VPS, etc.) zu hosten.
 >>
@@ -508,24 +706,59 @@ In diesem Fall ist es am schnellsten, das System in einen früheren Zustand zur�
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export)
 
-Führen Sie die folgenden Schritte aus, um den Quellcode der Website wiederherzustellen:
+<!-- CP-STEPS-START:fix-redirect-error-1 -->
+Um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `FTP - SSH`{.action}.
-4. Klicken Sie auf der neu angezeigten Seite auf die Schaltfläche `Backup wiederherstellen`{.action}.
-5. Wählen Sie im angezeigten Fenster das Datum des wiederherzustellenden Backups aus, und fahren Sie mit dem Start der Wiederherstellung fort.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf der neu angezeigten Seite auf die Schaltfläche `Backup wiederherstellen`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie im angezeigten Fenster das Datum des wiederherzustellenden Backups aus, und fahren Sie mit dem Start der Wiederherstellung fort.
+<!-- CP-STEPS-END:fix-redirect-error-1 -->
 
 Die Wiederherstellung des FTP-Speicherplatzes kann **mehrere Minuten** dauern.
 
-So stellen Sie ein Backup Ihrer Datenbank wieder her:
+<!-- CP-STEPS-START:fix-redirect-error-2 -->
+Um ein Backup Ihrer Datenbank wiederherzustellen, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
-2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
-4. Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `...`{.action} rechts in der Zeile der betreffenden Datenbank und dann auf `Backup wiederherstellen`{.action}.
-5. Wählen Sie auf der neu geöffneten Seite das wiederherzustellende Backup aus (**idealerweise das Backup, das dem Datum entspricht, das Sie für die Wiederherstellung des Quellcodes Ihrer Website ausgewählt haben (siehe oben)**).
-6. Wenn Sie das Backup ausgewählt haben, klicken Sie rechts neben dem Backup, das Sie wiederherstellen möchten, auf den Button `...`{.action} und dann auf `Backup wiederherstellen`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `...`{.action} rechts in der Zeile der betreffenden Datenbank und dann auf `Backup wiederherstellen`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie auf der neu geöffneten Seite das wiederherzustellende Backup aus (**idealerweise das Backup, das dem Datum entspricht, das Sie für die Wiederherstellung des Quellcodes Ihrer Website ausgewählt haben (siehe oben)**).
+>>
+> **Schritt 5**
+>>
+>> Wenn Sie das Backup ausgewählt haben, klicken Sie rechts neben dem Backup, das Sie wiederherstellen möchten, auf den Button `...`{.action} und dann auf `Backup wiederherstellen`{.action}.
+<!-- CP-STEPS-END:fix-redirect-error-2 -->
 
 Die Wiederherstellung eines Datenbank-Backups kann **mehrere Minuten** dauern.
 

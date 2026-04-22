@@ -1,7 +1,7 @@
 ---
 title: Zmiana hasła do bazy danych na hostingu
 excerpt: Dowiedz się, jak zmienić hasło do bazy danych utworzonej w ramach pakietu hostingowego
-updated: 2025-10-08
+updated: 2026-04-22
 ---
 
 ## Wprowadzenie 
@@ -34,7 +34,6 @@ Zmiana hasła do bazy danych składa się z czterech częściach:
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#go-further) ten przewodnik.
->
 
 ## Wymagania początkowe
 
@@ -47,7 +46,7 @@ Zmiana hasła do bazy danych składa się z czterech częściach:
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -57,16 +56,40 @@ Zmiana hasła do bazy danych składa się z czterech częściach:
 
 ### 1: Zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
 
-W [Panelu klienta OVHcloud](/links/manager) kliknij pozycję `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
+<!-- CP-STEPS-START:find-config-file -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-Następnie przejdź do przestrzeni zawierającej pliki i foldery Twojej strony WWW (*przestrzeń FTP*), przechodząc do tego [przewodnika](/pages/web_cloud/web_hosting/ftp_connection).
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny i poddomeny.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Zidentyfikuj nazwę `Katalog główny` swojej strony internetowej. Jest to katalog, w którym znajdują się jej pliki i foldery.
+>>
+>> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> Następnie przejdź do przestrzeni dyskowej FTP zawierającej pliki i foldery swojej strony, korzystając z [tego przewodnika](/pages/web_cloud/web_hosting/ftp_connection).
+<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
 > Jeśli chcesz zmienić hasło do Twojej przestrzeni FTP, zapoznaj się z tym [przewodnikiem](/pages/web_cloud/web_hosting/ftp_change_password).
->
 
 Otwórz `Katalog główny`.
 
@@ -84,7 +107,7 @@ Możliwe są dwa przypadki:
 - Przypadek nr 1: baza danych twojej strony jest częścią Twojego hostingu;
 - Przypadek nr 2: jest zawarta w ofercie *Web Cloud Databases*. W tym przypadku należy odnaleźć **nazwę serwera** i **nazwę użytkownika** bazy danych, aby zidentyfikować bazę danych bez ryzyka wystąpienia błędu.
 
-Aby określić, który przypadek dotyczy Twojej strony WWW, w pliku konfiguracyjnym opisanym w [Etap 1](#step1), zapisz nazwę bazy danych:
+Aby określić, który przypadek dotyczy Twojej strony WWW, w pliku konfiguracyjnym opisanym w [części 1](#step1), zapisz nazwę bazy danych:
 
 - Dla WORDPRESS: nazwa pojawia się pod pozycją **"DB_NAME"**;
 - Dla JOOMLA: nazwa pojawia się pod **"public $db"**;
@@ -97,7 +120,7 @@ Następnie wróć do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Clo
 - Kliknij kartę `Bazy danych`{.action} **po prawej stronie** ekranu;
 - Wyszukaj nazwę bazy danych znajdującej się wcześniej w kolumnie `Nazwa bazy`;
 
-Jeśli w tej części Twojego Panelu klienta znalazłeś nazwę bazy znajdującej się w pliku konfiguracyjnym, przejdź do [Etap 3](#step3).
+Jeśli w tej części Twojego Panelu klienta znalazłeś nazwę bazy znajdującej się w pliku konfiguracyjnym, przejdź do [części 3](#step3).
 
 W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [Web Cloud Databases](/links/web/databases).
 
@@ -130,7 +153,7 @@ Wybierz nowe hasło do bazy danych i zapisz je. Musi on spełniać następujące
 - Przynajmniej jedną cyfrę;
 - Składać się wyłącznie z cyfr i liter.
 
-W ten sam sposób, jak w [Etap 1](#step1), powróć do przestrzeni dyskowej plików Twojego hostingu, a następnie otwórz w edycji plik konfiguracyjny Twojej strony.
+W ten sam sposób, jak w [części 1](#step1), powróć do przestrzeni dyskowej plików Twojego hostingu, a następnie otwórz w edycji plik konfiguracyjny Twojej strony.
 
 **Przed wprowadzeniem jakichkolwiek zmian**, zapisz lokalnie zawartość tego pliku w dokumencie tekstowym, aby zachować kopię pliku w przypadku wystąpienia błędu podczas jego wykonywania.
 
@@ -201,52 +224,51 @@ Ponownie, możliwe są dwa przypadki:
 
 #### Przypadek nr 1: baza danych twojej strony jest częścią twojej oferty hostingowej <a name="case1"></a>
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
+<!-- CP-STEPS-START:change-db-password-server -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Kliknij trzy kropki po prawej stronie bazy danych, a następnie `Zmień hasło`{.action}.
 >>
 >> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 4**
 >>
 >> W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [Część 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+<!-- CP-STEPS-END:change-db-password-server -->
 
 #### Przypadek nr 2: baza danych strony jest częścią oferty Web Cloud Databases <a name="case2"></a>
 
+<!-- CP-STEPS-START:change-wcdb-password -->
 Przejdź do części `Bazy danych`{.action} w Panelu klienta i na odpowiedni serwer, kliknij zakładkę `Użytkownicy i uprawnienia`{.action}:
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-Aby zmienić hasło do bazy danych, kliknij trzy kropki po prawej stronie `nazwy użytkownika`{.action} zidentyfikowanej w [Etap 2](#step2), a następnie `Zmień hasło`{.action}.
+Aby zmienić hasło do swojej bazy danych na serwerze, kliknij przycisk `...`{.action} po prawej stronie `nazwy użytkownika`{.action} zidentyfikowanego w [części 2](#step2), a następnie `Zmień hasło`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
-W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [Etap 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
+W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [części 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
+
+<!-- CP-STEPS-END:change-wcdb-password -->
 
 ## Sprawdź <a name="go-further"></a>
 

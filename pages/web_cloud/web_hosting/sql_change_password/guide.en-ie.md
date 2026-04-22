@@ -1,7 +1,7 @@
 ---
 title: "Changing the password for a Web Hosting plan’s database"
 excerpt: Find out how to change the password for a database created as part of a Web Hosting plan
-updated: 2025-10-08
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -46,7 +46,7 @@ Changing your website’s database password involves four parts:
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -56,18 +56,43 @@ Changing your website’s database password involves four parts:
 
 ### 1: Identify your website’s configuration file <a name="step1"></a>
 
-In the [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
+<!-- CP-STEPS-START:find-config-file -->
+Click on the tabs below to view each of the **4** steps.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-Next, go to the space containing your website’s files and folders (*FTP space*) by following this [guide](/pages/web_cloud/web_hosting/ftp_connection).
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
+> **Step 3**
+>>
+>> In the table that appears, click on the `>`{.action} button to the left of the name of the relevant website to display the associated domain names or subdomains.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Identify the name of the `root folder` of your website. This is the directory where its files and folders are located.
+>>
+>> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> You can then access the FTP storage space containing the files and folders of your website by referring to [this guide](/pages/web_cloud/web_hosting/ftp_connection).
+<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
 > If you would like to change the password on your FTP space, please refer to this [guide](/pages/web_cloud/web_hosting/ftp_change_password).
 >
 
-Open the `Root folder` identified previously.
+Open the `root folder` identified previously.
 
 Locate and open your site's configuration file:
 
@@ -83,7 +108,7 @@ There are two possible cases:
 - Case 1: Your website database is part of your hosting plan.
 - Case 2: It is included in a *Web Cloud Databases* offer, in which case you will need to find the **server name** and the **username** of your database, in order to identify the database without any risk of error.
 
-To determine which case applies to your website, in the configuration file identified in [step 1](#step1), start by noting down the name of its database:
+To determine which case applies to your website, in the configuration file identified in [part 1](#step1), start by noting down the name of its database:
 
 - For WORDPRESS: The name appears under "**DB_NAME**".
 - For JOOMLA: The name appears under "**public $db**".
@@ -96,7 +121,7 @@ Then go back to the [OVHcloud Control Panel](/links/manager) and open the `Web C
 - Click on `Databases`{.action} tab **on the right-hand side** of your screen.
 - Locate the database name previously found in the `Database Name` column.
 
-If you have found the database name listed in the configuration file in this section of the OVHcloud Control Panel, go to [step 3](#step3).
+If you have found the database name listed in the configuration file in this section of the OVHcloud Control Panel, go to [part 3](#step3).
 
 Otherwise, your website’s database is linked to a [Web Cloud Databases](/links/web/databases) solution.
 
@@ -129,7 +154,7 @@ Choose the new password for your database and save it. It must meet the followin
 - At least one number
 - Only numbers and letters
 
-As described in [step 1](#step1), go back to your Web Hosting plan’s file storage space, then open your website’s configuration file for editing.
+As described in [part 1](#step1), go back to your Web Hosting plan’s file storage space, then open your website’s configuration file for editing.
 
 **Before you make any changes**, save the content of this file locally in a text document, so that you keep a copy if you make any mistakes.
 
@@ -198,52 +223,51 @@ Again, two cases are possible:
 
 - If your database is located in the section of the [OVHcloud Control Panel](/links/manager) dedicated to your [Web Cloud Databases solutions](/links/web/databases), follow [these instructions](#case2).
 
+<!-- CP-STEPS-START:change-db-password-server -->
 #### Case 1: Your website’s database is part of your hosting plan <a name="case1"></a>
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> Next, click on the three dots to the right of your website’s database, then on `Change password`{.action}.
 >>
 >> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> In the window that pops up, enter your database’s new password (defined at [part 3](#step3)), confirm it, then click on `Confirm`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+<!-- CP-STEPS-END:change-db-password-server -->
 
 #### Case 2: Your website’s database is part of a Web Cloud Databases solution <a name="case2"></a>
 
+<!-- CP-STEPS-START:change-wcdb-password -->
 Go to the `Databases`{.action} section in your Control Panel and click on the server concerned, then click on `Users and rights`{.action}:
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-To change the password for your database on the server, click on the three dots to the right of the `Username`{.action} identified in [step 2](#step2), then on `Change password`{.action}.
+To change the password of your database on the server, click on the `...`{.action} button to the right of the `Username`{.action} identified in [part 2](#step2), then on `Change password`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
-In the window that pops up, enter your database’s new password (defined in [step 3](#step3)), confirm it, then click on `Confirm`{.action}.
+In the window that pops up, enter your database’s new password (defined in [part 3](#step3)), confirm it, then click on `Confirm`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
+
+<!-- CP-STEPS-END:change-wcdb-password -->
 
 ## Go further <a name="go-further"></a>
 

@@ -1,209 +1,307 @@
 ---
 title: 'Instalacja kilku stron WWW na jednym hostingu'
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
-updated: 2024-10-08
+updated: 2026-04-22
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie 
 
-Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny nie są zarejestrowane w OVHcloud.
+W ramach jednej oferty hostingowej można hostować wiele stron internetowych, nawet jeśli nazwy domen nie są zarejestrowane w OVHcloud.
 
-**Dowiedz się, jak zainstalować kilka stron WWW na Twoim hostingu.**
+Czy chcesz dodać nową stronę internetową do swojego hostingu?
 
-### Podsumowanie
+**Dowiedz się, jak hostować różne strony internetowe w ramach swojej oferty hostingowej.**
 
-- 1 : [Zarządzanie opcją MultiSite](#multisite-menu)
-- 2 : [Dodanie domeny lub subdomeny](#add-domain)
-    - 2.1 : [Dodaj domenę zarejestrowaną w OVHcloud](#add-ovhcloud-domain)
-    - 2.2 : [Dodaj domenę zewnętrzną](#add-external-domain)
-    - 2.3 : [Diagnostyka domen](#diagnostic-domain)
-- 3 : [Umieszczenie strony WWW online](#site-online)
+> [!primary]
+> Jeśli utworzyłeś już daną stronę internetową na swoim hostingowym i chcesz przypisać do niej nową nazwę domeny lub subdomeny, zapoznaj się **bezpośrednio** z [tym przewodnikiem](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
 ## Wymagania początkowe
 
 - Posiadanie kompatybilnego [hostingu OVHcloud](/links/web/hosting-multisite).
 - Zarejestrowana domena lub kilka [domen](/links/web/domains).
-- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit))
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Możliwość zmiany konfiguracji nazw domen z poziomu [strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
+### 1 - Dodaj stronę internetową do swojej oferty hostingu
+
+**Kliknij jeden z poniższych tytułów, aby wyświetlić objaśnienia.**
+
+<a name="add-domain-ovhcloud"></a>
+
+/// details | Dodaj stronę internetową z nazwą domeny zarządzaną z poziomu Panelu klienta OVHcloud
+
+Ta sekcja dotyczy wyłącznie sytuacji, w której nazwa domeny (i/lub jej aktywna strefa DNS), za pomocą której chcesz utworzyć swoją stronę internetową, znajduje się **w Panelu klienta OVHcloud**.
+
+<!-- CP-STEPS-START:add-ovhcloud-domain -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Nad i po lewej stronie tabeli, która się pojawi, kliknij przycisk `Dodaj stronę`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Zaznacz opcję `Połączyć istniejącą domenę OVHcloud`{.action} i kliknij `Kontynuuj`{.action}.
+>>
+>> W polu **Nazwa witryny - obowiązkowa** wpisz nazwę, jaką chcesz przypisać do swojej witryny internetowej. Ta nazwa będzie widoczna tylko w zakładce `Moje strony`{.action} Twojego pakietu hostingu.
+>>
+>> Następnie wybierz nazwę domeny do przypisania z rozwijanego menu **Nazwa domeny - obowiązkowa**, które pojawi się poniżej.
+>>
+>> > [!primary]
+>> > Aby dodać poddomenę, najpierw wybierz nazwę domeny z listy (np. domain.tld). Następnie zaznacz pole `Utwórz subdomenę`{.action}. Pojawi się pole tekstowe, w którym możesz wpisać poddomenę (np. **sub**.domain.tld).
+>> >
+>> > **Przypadek specjalny**: Poddomeny w formacie `www` (np. **www**.domain.tld) są automatycznie dodawane jako uzupełnienie nazwy domeny. Dlatego nie ma potrzeby wpisywania tej konkretnej poddomeny w polu tekstowym.
+>>
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-step-1.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Domyślnie **katalog główny** Twojej witryny internetowej jest tworzony automatycznie po dodaniu witryny do hostingu. Ten sam **katalog główny** jest również generowany w przestrzeni dyskowej Twojego hostingu (dostępnej przez FTP, SFTP lub SSH, w zależności od oferty).
+>> >
+>> > Jeśli chcesz dostosować nazwę **katalog główny**, zwłaszcza jeśli zawartość Twojej witryny internetowej znajduje się już w określonym folderze w przestrzeni dyskowej, możesz to zrobić, aktywując przycisk `Konfiguracja zaawansowana`{.action}.
+>>
+>> Jeśli chcesz dostosować nazwę katalogu głównego lub skorzystać z jednej z **Zaawansowanych opcji**, dostępnych poprzez przycisk `Konfiguracja zaawansowana`{.action}, aktywuj ten przycisk i przejdź do **kroku 6**. W przeciwnym razie przejdź bezpośrednio do **kroku 7**.
+>>
+> **Krok 5**
+>>
+>> > [!primary]
+>> >
+>> > Ten krok jest **opcjonalny**. Odnosi się tylko do klientów, którzy chcą dostosować katalog główny i/lub aktywować niektóre funkcje dostępne poprzez przycisk `Konfiguracja zaawansowana`{.action}.
+>> >
+>> > **Wszystkie te funkcje można aktywować później, gdy nazwa domeny zostanie dodana do Twojej witryny internetowej.** Aby to zrobić, skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>>
+>> Aby dostosować nazwę katalogu głównego, który będzie powiązany z Twoją witryną internetową i będzie zawierał jej pliki, wprowadź żądaną nazwę w polu **Katalog główny**.
+>>
+>> Poniżej znajdziesz opis innych opcji. W zależności od wybranej [oferty hostingu](/links/web/hosting), niektóre elementy spośród poniższych nie będą dostępne do wyboru.
+>>
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-advanced-configurations.png){.thumbnail}
+>>
+>> |Opcja|Opis|
+>> |---|---|
+>> |Geolokalizacja IP|Zezwala na korzystanie z adresu IP geolokalizowanego (spośród listy krajów) dla wybranej nazwy domeny.<br> Dowiedz się więcej dzięki [tej stronie](/links/web/hosting-options).|
+>> |Firewall|Zezwala na aktywowanie zapory (filtr i analiza żądań) dla wybranej nazwy domeny.<br> Dowiedz się więcej dzięki [tej stronie](/links/web/hosting-options).|
+>> |CDN|Zezwala na aktywowanie CDN (przechowywanie w pamięci podręcznej elementów statycznych Twojej witryny internetowej, takich jak obrazy) dla wybranej nazwy domeny.<br> Dowiedz się więcej dzięki [naszej stronie CDN](/links/web/hosting-options-cdn).<br> Włączając SSL i CDN, możesz również skorzystać z protokołu **HTTP/2** (ten protokół jest domyślnie aktywny w naszym datacenter w Gravelines).|
+>>
+>> Po aktywacji przycisku `Konfiguracja zaawansowana`{.action}, możesz również wybrać tryb konfiguracji DNS dla swojej nazwy domeny:
+>>
+>> - **Dla automatycznej konfiguracji DNS**, pozostaw zaznaczone pole `Konfiguracja automatyczna (Rekomendujemy)`{.action}.
+>> - **Dla ręcznej konfiguracji DNS**, zaznacz pole `Konfiguracja ręczna`{.action}. Aby następnie skonfigurować swoją strefę DNS, skorzystaj z poniższych przewodników:
+>>     - [Hostingu - Lista adresów IP według klastrów](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+>>     - [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+>>
+> **Krok 6**
+>>
+>> OVHcloud udostępnia moduły WordPress, Joomla!, PrestaShop i Drupal. Dzięki nim możesz mieć gotową do użycia strukturę strony internetowej, automatycznie zainstalowaną w skonfigurowanym wcześniej folderze głównym. Więcej informacji znajdziesz w naszej dokumentacji "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+>>
+>> Jeśli chcesz zainstalować moduł 1-click, wybierz preferowany moduł na dole strony, a następnie przejdź do następnego kroku.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> Jeśli natomiast chcesz zainstalować swoją stronę ręcznie, pobierz jej pliki i prześlij je do odpowiedniego folderu głównego w przestrzeni dyskowej swojego hostingu. Więcej informacji znajdziesz w naszej dokumentacji "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
+>>
+> **Krok 7**
+>>
+>> Sprawdź, czy wszystkie wprowadzone wcześniej informacje są poprawne, a następnie kliknij przycisk `Kontynuuj`{.action}, aby sfinalizować dodanie nazwy domeny lub subdomeny do swojej witryny internetowej.
+>>
+>> Dodanie tego elementu może potrwać do godziny.
+>>
+>> Jeśli nie wybrałeś opcji `Konfiguracja ręczna`{.action} w sekcji `Konfiguracja zaawansowana`{.action}, konfiguracja DNS zostanie przeprowadzona automatycznie, jeśli aktywna strefa DNS Twojej domeny jest zarządzana w Panelu klienta OVHcloud.
+>>
+>> W przeciwnym razie zapoznaj się z poniższymi instrukcjami, aby ręcznie skonfigurować strefę DNS:
+>>
+>> - [Hosting WWW - Lista adresów IP według klastra](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+>> - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
+>>
+>> > [!primary]
+>> > Modyfikacja konfiguracji DNS nazwy domeny wymaga czasu propagacji, który może trwać do 24 godzin, zanim zmiany zaczną w pełni obowiązywać.
+<!-- CP-STEPS-END:add-ovhcloud-domain -->
+
+///
+
+/// details | Dodaj stronę internetową z nazwą domeny, która nie jest zarządzana z poziomu Panelu klienta OVHcloud
+
+Ta sekcja dotyczy wyłącznie sytuacji, w której chcesz dodać stronę internetową z nazwą domeny, która nie jest obecna na Twoim koncie OVHcloud. Może to być nazwa domeny należąca do innego konta OVHcloud lub zarejestrowana u innego dostawcy.
+
+<!-- CP-STEPS-START:add-external-domain -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Nad i po lewej stronie tabeli, która się pojawi, kliknij przycisk `Dodaj stronę`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Zaznacz opcję `Powiąż domenę zewnętrzną`{.action} i kliknij `Kontynuuj`{.action}.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
+>>
+> **Krok 5**
+>>
+>> W polu **Nazwa witryny - obowiązkowa** wprowadź nazwę, której chcesz używać dla swojej witryny internetowej. Nazwa ta będzie widoczna tylko w zakładce `Moje witryny`{.action} Twojego hostingu internetowego.
+>>
+>> Następnie wprowadź nazwę domeny (np. domain.tld) lub subdomeny (np. **sub**.domain.tld), którą chcesz powiązać, w polu **Nazwa domeny - obowiązkowa**, które pojawi się poniżej.
+>>
+>> > [!success]
+>> >
+>> > **Przypadek specjalny**: Subdomeny w formacie `www` (np. **www**.domain.tld) są automatycznie dodawane jako uzupełnienie nazwy domeny. Dlatego nie ma potrzeby podawania tej konkretnej subdomeny w polu tekstowym.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-site-external-step-2.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Domyślnie **katalog główny** Twojej witryny internetowej jest tworzony automatycznie po dodaniu witryny do hostingu. Ten sam **katalog główny** jest również generowany w przestrzeni dyskowej Twojego hostingu (dostępnej przez FTP, SFTP lub SSH, w zależności od oferty).
+>>
+>> Aby dostosować nazwę folderu głównego, który będzie powiązany z Twoją stroną internetową i będzie zawierał jej pliki, wprowadź żądaną nazwę w polu **Katalog główny**. Jeśli nie chcesz jej dostosowywać, pozostaw to pole puste.
+>>
+>> Po uzupełnieniu informacji kliknij przycisk `Kontynuuj`{.action}.
+>>
+> **Krok 6**
+>>
+>> > [!primary]
+>> >
+>> > W przeciwieństwie do nazw domen zarządzanych bezpośrednio z Panelu klienta OVHcloud, **Zaawansowane opcje** nie są bezpośrednio dostępne podczas dodawania strony internetowej z nazwą domeny lub subdomeną, która nie jest zarządzana z konta OVHcloud.
+>> >
+>> > Jednakże, **wszystkie te funkcje można aktywować lub zmodyfikować później, po dodaniu nazwy domeny lub zewnętrznej subdomeny do strony internetowej.** W tym celu należy zapoznać się bezpośrednio z [tym przewodnikiem](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>>
+>> Dodanie strony internetowej z zewnętrzną nazwą domeny do OVHcloud wymaga dodatkowej obowiązkowej weryfikacji. Pozwala nam to upewnić się, że dodanie zewnętrznej nazwy domeny jest zgodne z prawem. Następnie pojawi się komunikat z prośbą o zmodyfikowanie konfiguracji DNS nazwy domeny.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+>>
+>> Zwróć uwagę na wyświetlane elementy, a następnie kliknij przycisk `Kontynuuj`{.action}. Od tego momentu nazwa domeny zostanie tymczasowo dodana, co da Ci czas na zmodyfikowanie jej konfiguracji DNS.
+>>
+>> > [!warning]
+>> >
+>> > Aby nazwa domeny została poprawnie powiązana z witryną internetową, należy **szybko** wprowadzić te zmiany. Bez tego działania dodanie nazwy domeny zostanie anulowane, a nowo utworzona witryna internetowa nie będzie dostępna.
+>> >
+>> > Wpisy DNS typu **A** i **TXT** muszą zostać umieszczone w aktywnej strefie DNS nazwy domeny, aby mogła ona zostać powiązana z witryną internetową. Tylko wpisy DNS typu **AAAA** są opcjonalne.
+>> >
+>> > Należy pamiętać, że jeśli chcesz powiązać `sub.domain.tld`, musisz utworzyć wpis TXT `ovhcontrol.domain.tld`, a nie wpis `ovhcontrol.sub.domain.tld`.
+>> >
+>> > Aby znaleźć aktywną strefę DNS nazwy domeny, znajdź [serwery DNS](/pages/web_cloud/domains/dns_server_edit), z którymi jest ona powiązana. Wystarczy zweryfikować nazwę domeny za pomocą pola **TXT**, a nie wszystkich jej subdomen.
+>>
+> **Krok 7**
+>>
+>> OVHcloud udostępnia moduły WordPress, Joomla!, PrestaShop i Drupal. Dzięki nim możesz mieć gotową do użycia strukturę strony internetowej, automatycznie zainstalowaną w skonfigurowanym wcześniej folderze głównym. Więcej informacji znajdziesz w naszej dokumentacji "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+>>
+>> Jeśli chcesz zainstalować moduł 1-click, wybierz preferowany moduł na dole strony, a następnie kliknij `Kontynuuj`{.action}, aby sfinalizować żądanie dodania strony internetowej do hostingu.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> Jeśli natomiast chcesz ręcznie zainstalować swoją stronę internetową, pobierz jej pliki i prześlij je do odpowiedniego folderu głównego w przestrzeni dyskowej swojego hostingu. Więcej informacji można znaleźć w naszej dokumentacji "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
+<!-- CP-STEPS-END:add-external-domain -->
+
+///
+
+/// details | Dodaj stronę internetową z nową nazwą domeny, która nie została jeszcze zarejestrowana
+
+Ta sekcja dotyczy wyłącznie sytuacji, w której chcesz dodać stronę internetową z nazwą domeny, która nie została jeszcze zarejestrowana ani w OVHcloud, ani u innego rejestratora. Innymi słowy, dotyczy to nazw domen, które nie zostały jeszcze wykupione.
+
+<!-- CP-STEPS-START:add-site-1click-module -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Nad i po lewej stronie tabeli, która się pojawi, kliknij przycisk `Dodaj stronę`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Zaznacz opcję `Zamawiam nową domenę`{.action} i kliknij `Kontynuuj`{.action}.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>>
+> **Krok 5**
+>>
+>> Następnie zostaniesz przekierowany na naszą stronę handlową, gdzie możesz wykupić nazwę domeny. Wybierz nową nazwę domeny zgodnie z dostępnością na rynku. Następnie postępuj zgodnie z instrukcjami w procesie składania zamówienia, aż do potwierdzenia zamówienia. Nie musisz dodatkowo wykupywać nowego planu hostingowego.
+>>
+>> Po opłaceniu i zatwierdzeniu zamówienia poczekaj chwilę, aż zostanie ono przetworzone.
+>>
+>> > [!primary]
+>> >
+>> > Gdy nazwa domeny pojawi się w Panelu klienta OVHcloud, postępuj zgodnie z sekcją "[Dodaj nazwę domeny zarządzaną z Twojego Panelu klienta OVHcloud](#add-domain-ovhcloud)" niniejszego przewodnika, aby dodać swoją stronę internetową do hostingu.
+<!-- CP-STEPS-END:add-site-1click-module -->
+
+///
+
+### 2 - Wdróż swoją stronę internetową <a name="site-online"></a>
+
+Po zgłoszeniu strony internetowej z nazwą domeny w ramach hostingu internetowego można umieścić jej zawartość w Internecie. Przypominamy, że operację tę należy wykonać w **katalogu głównym**, który został zdefiniowany podczas dodawania strony internetowej w Panelu klienta OVHcloud.
+
 > [!primary]
 >
-> Większość ofert [hostingu OVHcloud](/links/web/hosting) dysponuje opcją tworzenia spersonalizowanego(ych) adresu(ów) e-mail powiązanego z Twoją domeną.
-> Ta opcja e-mail może zostać włączona dla **jednej** domeny. Oznacza to, że jeśli korzystasz z opcji *MultiSite* dla kilku różnych domen, możesz włączyć tę opcję tylko dla jednej domeny.
-> Zapoznaj się z [przewodnikiem](/pages/web_cloud/web_hosting/activate-email-hosting), aby uzyskać więcej informacji na temat aktywacji tej opcji.
+> Jeśli chcesz dodać wiele stron internetowych, powtórz czynności opisane w niniejszym przewodniku.
 >
-
-### Etap 1: zarządzanie opcją MultiSite <a name="multisite-menu"></a>
-
-Po pierwsze, zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, wybierz odpowiednią ofertę, następnie wybierz zakładkę `MultiSite`{.action}.
-
-Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodanych do Twojego rozwiązania hostingowego. Niektóre z nich zostały utworzone automatycznie podczas instalacji Twojego hostingu.
-
-> [!primary]
->
-> Jeśli chcesz przenieść Twoją stronę WWW i uniknąć przerwy w działaniu usługi, postępuj zgodnie z [krokiem 3: umieszczenie strony WWW online](#site-online).
->
-
-![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
-
-### Etap 2: dodanie domeny lub subdomeny <a name="add-domain"></a>
-
-Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `Operacje`{.action} po lewej stronie ekranu, a następnie `Dodaj domenę lub subdomenę`{.action} i wybierz domenę w oknie, które się wyświetli.
-
-![akcje](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/actions-menu.png){.thumbnail}
-
-- **Dodaj domenę zarejestrowaną w OVHcloud**:
-
-W tym miejscu wyświetlają się jedynie domeny OVHcloud, dla których jesteś [kontaktem technicznym i/lub administratorem w Panelu klienta](/pages/account_and_service_management/account_information/managing_contacts). Wybierz jedną domenę z listy i kliknij `Dalej`{.action}. Przejdź następnie do [etapu 2.1: dodanie domeny zarejestrowanej w OVHcloud](#add-ovhcloud-domain).
-
-- **Dodaj domenę zewnętrzną**:
-
-W przypadku nazwy domeny zewnętrznej (inny identyfikator klienta) lub zewnętrznej dla OVHcloud (inny dostawca domeny) wybierz `Dodaj domenę zewnętrzną`{.action}, a następnie kliknij `Dalej`{.action}. Przejdź następnie do [etapu 2.2: „dodanie domeny zewnętrznej”](#add-external-domain).
-
-![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
-
-#### Etap 2.1: dodaj domenę zarejestrowaną w OVHcloud <a name="add-ovhcloud-domain"></a>
-
-> [!warning]
-> Ten etap ma zastosowanie jedynie, jeśli zaznaczyłeś opcję "Dodaj domenę zarejestrowaną w OVHcloud". Domena lub jej strefa DNS muszą znajdować się **w Panelu klienta**. W przypadku domen zewnętrznych przejdź do [etap 2.2: dodaj domenę zewnętrzną](#add-external-domain).
-
-Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego w OVHcloud hostingu niektóre z oferowanych elementów mogą być dostępne, inne zaś nie.
-
-> [!primary]
-> Aby dodać subdomenę, najpierw wybierz domenę główną z listy (przykład: domain.tld). Na kolejnym etapie podasz subdomenę (przykład: **blog**.domain.tld).
-
-![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
-
-|Informacja|Opis|
-|---|---|
-|Domena|Nazwa wybranej domeny wprowadzana jest automatycznie. Możesz dodać subdomenę (np. **blog**.domain.tld) i jednocześnie utworzyć jej wersję wraz z WWW (np. **www.blog**.domain.tld). Domena ta stanie się adresem strony WWW, którą chcesz umieścić w Internecie.|
-|Katalog główny|Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.domain.tld katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
-|SSL|Umożliwia korzystanie z bezpiecznego połączenia (HTTPS: //) z wybraną nazwą domeny. Dowiedz się więcej na [naszej stronie SSL](/links/web/hosting-options-ssl). Aktywując SSL i CDN (Content Delivery Network), możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
-|Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](/links/web/hosting-options-cdn). Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
-|Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](/links/web/hosting-options).|
-|Włącz firewall|Umożliwia aktywację zapory (analiza zapytań) dla danej domeny. Dowiedz się więcej na [naszej stronie ModSecurity](/links/web/hosting-options).|
-|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](/links/web/hosting-traffic-analysis) statystyk.|
-
-> [!warning]
->
-> Nie będziesz mógł włączyć oddzielnych logów dla domeny zewnętrznej. Ta opcja jest dostępna tylko dla domen zarejestrowanych w OVHcloud.
->
-
-Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
-
-![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
-
-Po wybraniu domeny zarejestrowanej w OVHcloud możesz automatycznie lub ręcznie zmienić jej konfigurację DNS:
-
-- **w przypadku automatycznej konfiguracji DNS**: zaznacz kratkę `Konfiguracja automatyczna (zalecana)`{.action};
-- **w przypadku ręcznej konfiguracji DNS**: usuń zaznaczenie w kratce `Konfiguracja automatyczna (zalecana)`{.action}, następnie pobierz informacje odnośnie zmian, które się wyświetlają. Jeśli chcesz przeprowadzić tę konfigurację, skorzystaj z dokumentacji ["Modyfikacja strefy DNS OVHcloud"](/pages/web_cloud/domains/dns_zone_edit).
-
-Kliknij przycisk `Zatwierdź`{.action}, aby rozpocząć dodawanie domeny. Może do potrwać do godziny. Efekty modyfikacji domeny staną się widoczne po upływie 4-24 godzin ze względu na niezbędny czas propagacji.
-
-Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-online).
-
-#### Etap 2.2: dodaj domenę zewnętrzną <a name="add-external-domain"></a>
-
- Ten etap ma zastosowanie jedynie, jeśli zaznaczyłeś opcję Dodaj domenę zewnętrzną.
- 
- Twoja domena nie jest zarejestrowana w OVHcloud **lub** nie jest zarejestrowana na **Twoim** koncie OVHcloud. 
-
- > Przed dodaniem strony podpiętej w opcji MultiSite lepiej jest zmodyfikować strefę DNS domeny zewnętrznej.
- >
- > Modyfikacja konfiguracji domeny zewnętrznej (jej strefy DNS) powinna zostać przeprowadzona w interfejsie dostawcy zarządzającego domeną. Jeśli chodzi o OVHcloud, skorzystaj z naszej dokumentacji ["Modyfikacja strefy DNS OVHcloud"](/pages/web_cloud/domains/dns_zone_edit). Efekty modyfikacji domeny staną się widoczne po upływie 1-24 godzin ze względu na niezbędny czas propagacji.
->
-> Poniżej znajdziesz 2 elementów do zmiany konfiguracji DNS Twojej zewnętrznej domeny:
->
-> |Pole|Gdzie znaleźć informację?|Działania|
-> |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br><br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br><br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_edit), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
->
-> ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
->
-> |Pole|Gdzie znaleźć informację?|Działania|
-> |---|---|---|
-> |A i AAAA|Zakładka `Informacje ogólne`{.action}, następnie **IPv4** i **IPv6**|Umożliwia Twojej domenie wyświetlanie strony WWW, którą zamieścisz w Internecie na Twoim hostingu. Przypisz domenę lub subdomenę do adresu IP hostingu.|
->
-> ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
->
-
- Teraz spersonalizuj dodanie domeny. Niektóre opcje zawarte w Twojej usłudze hostingu nie mogą być aktywowane podczas tej operacji. Aby je aktywować, zakończ operację i zmodyfikuj ustawienia opcji MultiSite, kiedy ta zostanie dodana.
-
-|Informacja|Opis|
-|---|---|
-|Domena|Wpisz nazwę domeny, której chcesz używać. Dodaj subdomenę (np. **blog**.domain.tld) i utwórz jednocześnie jej wersję wraz z WWW (np. **www.blog**.domain.tld). Domena ta będzie odpowiadała adresowi strony WWW, którą chcesz umieścić w Internecie. Pamiętaj, że musisz mieć uprawnienia do modyfikacji konfiguracji domeny (jej strefy DNS), aby proces dodania domeny został ukończony.|
-|Katalog główny| Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.domain.tld katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
-|Włącz obsługę IPv6|Umożliwia aktywację protokołu IPv6 dla danej domeny. Dowiedz się więcej na [naszej stronie IP](/links/web/hosting-options).|
-
-Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
-
-![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
-
-Dodanie domeny zewnętrznej wymaga obowiązkowej dodatkowej weryfikacji. Dzięki temu możemy upewnić się, że dodanie domeny zewnętrznej jest uprawnione. Pojawi się komunikat, w którym zostaniesz poproszony o zmianę konfiguracji DNS domeny.
-
-![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
-
-Zanotuj elementy, które się wyświetlą, następnie kliknij przycisk `Zatwierdź`{.action}. Domena jest dodana tymczasowo, abyś mógł zmodyfikować jej konfigurację DNS.
-
-> [!warning]
->
-> Aby poprawnie dodać domenę, należy **wykonać** te zmiany. W przeciwnym razie dodanie Twojej domeny zostanie anulowane.
->
-> Wpisy DNS typu **A** i **TXT** muszą być obowiązkowo umieszczone w aktywnej strefie DNS Twojej domeny, aby dodać je do Twojego hostingu. Opcjonalne są tylko wpisy DNS typu **AAAA**. 
->
-
-#### Etap 2.3: diagnostyka Twoich domen <a name="diagnostic-domain"></a>
-
-W tabeli w zakładce `MultiSite` kolumna `Diagnostyka` informuje, czy Twoja domena wskazuje poprawnie na powiązany hosting. Dzięki temu można szybko sprawdzić, czy konfiguracja DNS Twojej domeny na hostingu jest prawidłowa. W ten sposób ta kolumna pomaga zidentyfikować i rozwiązać ewentualne problemy z wskazywaniem. Dla każdej domeny dostępne są trzy wyniki diagnostyki:
-
-- `A/AAAA` zielony
-- `A/AAAA` żółty
-- `A/AAAA` szary
-
-##### A/AAAA zielony
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
-
-Jeśli ikona `A/AAAA` jest zielona w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (dla adresów IPv4) i/lub rekord **AAAA** (dla adresów IPv6) domeny wskazuje poprawnie adres IP hostingu. Konfiguracja DNS Twojej domeny jest zatem zgodna z konfiguracją umożliwiającą współpracę z Twoim hostingiem.
-
-##### A/AAAA żółty
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
-
-Jeśli ikona `A/AAAA` jest żółta w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (IPv4) i/lub **AAAA** (IPv6) domeny wskazuje na adres IP, ale nie jest to adres hostingu, z którego sprawdzasz kolumnę `Diagnostyka`.
-Kliknij ikonę żółtego `A/AAAA`, aby uzyskać więcej informacji. Pojawi się następujący komunikat:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
-Aby rozwiązać problemy z przekierowaniem DNS Twojej domeny i upewnić się, że wskazuje poprawnie na wybrany hosting, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
-
-##### A/AAAA szary
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
-
-Jeśli ikona `A/AAAA` jest szara w kolumnie `Diagnostyka`, oznacza to, że nazwa domeny nie wskazuje obecnie żadnego adresu IP i nie skonfigurowano żadnego rekordu **A** ani **AAAA** dla tej nazwy domeny.
-Kliknij szarą ikonę `A/AAAA`, aby uzyskać więcej informacji. Pojawi się następujący komunikat:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
-
-Aby dodać rekordy **A** lub **AAAA** i poprawnie skonfigurować domenę, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
-
-### Etap 3: umieszczenie strony WWW online <a name="site-online"></a>
-
-Po dodaniu domeny wystarczy umieścić w Internecie powiązaną z nią stronę WWW. Przeprowadź tę operację w katalogu głównym, który zdefiniowałeś na poprzednim etapie.
-
-Aby wesprzeć Cię w tym procesie, możesz skorzystać z gotowej do użycia struktury strony WWW, która jest dostępna za 1 kliknięciem od OVHcloud. Strona zostanie wówczas automatycznie zainstalowana w uprzednio skonfigurowanym katalogu głównym. O modułach dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](/pages/web_cloud/web_hosting/cms_install_1_click_modules). 
-
-Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej. Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
-
-> [!primary]
->
-> Jeśli chcesz dodać kilka stron WWW, powtórz ten etap.
->
-> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](/links/web/hosting) znajdziesz liczbę zalecanych stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
->
+> Zalecamy ostrożność w zakresie liczby stron internetowych na Twoim hostingowym. Im większa liczba, tym więcej przydzielonych zasobów zostanie wykorzystanych. [Strona z naszymi ofertami hostingu](/links/web/hosting) zawiera informacje na temat zalecanej liczby stron internetowych, które można hostować na hostingowym.
 
 ## Sprawdź również
 
@@ -213,6 +311,6 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 
 [Uruchomienie strony WWW na Twoim hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do [grona naszych użytkowników](/links/community).

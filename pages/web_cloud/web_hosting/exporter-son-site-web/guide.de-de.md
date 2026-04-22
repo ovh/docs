@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseite exportieren"
 excerpt: "Eine OVHcloud Webseite exportieren"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Ziel 
@@ -19,7 +19,7 @@ In dieser Anleitung werden die Schritte zum Exportieren aller Elemente einer Web
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -40,28 +40,23 @@ Um sich in Ihren Speicherplatz einzuloggen, benötigen Sie:
 
 Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt.
 
-Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
+Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Es werden nun die Informationen Ihres Speicherplatzes angezeigt. Sie sollten hier alle Elemente zum Einloggen in Ihren FTP-Speicherplatz finden.
 >>
@@ -70,6 +65,7 @@ Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um di
 >> Falls nötig, konsultieren Sie unsere Anleitung: [Mit dem Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Wenn Sie das Passwort nicht kennen, nutzen Sie die Anleitung [Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password).
+<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf dem Speicherplatz abrufen. Hierfür haben Sie zwei Möglichkeiten:
 
@@ -79,11 +75,32 @@ Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf 
 
 #### 1.2 Dateien von Ihrem Speicherplatz herunterladen
 
-Nachdem Sie sich in Ihren Speicherplatz eingeloggt haben, können Sie die Dateien Ihrer Webseite herunterladen. **Wir empfehlen, besonders darauf zu achten, in welchem Verzeichnis die Website installiert ist.** Normalerweise befinden sich die Dateien der Website im Ordner "www". Wenn Sie jedoch Ihr Webhosting nutzen, um mehrere Websites zu hosten, haben Sie wahrscheinlich mehrere Ordner für die Websites deklariert.
+Sobald Sie sich bei Ihrem Speicherbereich angemeldet haben und je nach Anzahl der darauf gehosteten Webseiten, können mehrere Ordner angezeigt werden.
 
-Um zu prüfen, in welchem Ordner Ihre Website gespeichert ist, wechseln Sie im OVHcloud Kundencenter zum Tab `Multisite`{.action}. Im angezeigten Tabellenbereich suchen Sie nach dem gewünschten Domainnamen und prüfen Sie das zugehörige `Wurzelverzeichnis`{.action}.
+<!-- CP-STEPS-START:find-root-folder -->
+Falls erforderlich, identifizieren Sie vorab im Webhosting den Namen des Stammordners, in dem Ihre Webseite gespeichert ist. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> In der angezeigten Tabelle für die gewünschte Webseite, beachten Sie das `Wurzelverzeichnis`{.action}, das angezeigt wird.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+<!-- CP-STEPS-END:find-root-folder -->
+
+Solange Sie weiterhin bei Ihrem Speicherbereich angemeldet sind, müssen Sie lediglich die Dateien Ihrer Webseite herunterladen, indem Sie auf den zuvor identifizierten Stammordner zugreifen.
 
 ### 2 - Backup Ihrer Datenbank abrufen (optional)
 
@@ -100,33 +117,7 @@ Wenn Sie eine Datenbank **Web Cloud Databases** für Ihre Website verwenden, les
 
 ### 3 - Logs Ihres OVHcloud Webhostings abrufen
 
-Wenn Sie den Protokollverlauf Ihrer Webseite aufbewahren möchten, haben Sie die Möglichkeit, die Logs im OVHcloud Kundencenter herunterzuladen.
-
-Wählen Sie unter `Hosting-Pakete`{.action} den gewünschten Dienst aus. Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
-
-![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
-
-Klicken Sie auf den Link unter dem Eintrag `Logs anzeigen`{.action}:
-
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
-
-Ein Fenster mit den verschiedenen verfügbaren Logtypen wird angezeigt. Sie sind nach Monaten unterteilt:
-
-| Typ  	| Beschreibung                                                                                                                                                                                         	|
-|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Web   	| Hier finden Sie die verschiedenen Logs zum Zugriff auf Ihre Webseite sowie die verschiedenen Aktionen, die von Ihrer Seite ausgeführt wurden. Auf diese Weise können Sie beispielsweise versuchte Hacks erkennen. 	|
-| FTP   	| Die verschiedenen FTP-Verbindungen werden aufgezeichnet und in diesen Logs gespeichert.                                                                                                                     	|
-| Error 	| Die verschiedenen Fehler, die von Ihrer Site generiert werden.                                                                                                                                                    	|
-| CGI   	| Die verschiedenen Aufrufe der cgi.bin-Skripte.                                                                                                                                     	|
-| Out   	| Die Statistiken Ihres Hostings zu den verschiedenen externen Aufrufen.                                                                                                                  	|
-| SSH   	| Diese Logs zeigen die Verbindungen an, die mit dem SSH-Protokoll durchgeführt wurden.                                                                                                                      	|
-| Cron  	| Das Ergebnis der Ausführung Ihrer geplanten Aufgaben.                                                                                                                                                	|
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
-
-Nachdem Sie den Logtyp und Monat ausgewählt haben, sind die Logs nach Tag archiviert abrufbar:
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
+Lesen Sie unsere dedizierte Anleitung: [Webhosting - Die Statistiken und Logs einer Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ## Weiterführende Informationen
 

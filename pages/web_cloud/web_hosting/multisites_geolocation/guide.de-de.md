@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich eine Website in einem bestimmten Land geolokalisieren?"
 excerpt: "So lokalisieren Sie Ihre Website mithilfe der geolokalisierten IP-Adressen, die für die Shared Hosting Angebote von OVHcloud verfügbar sind"
-updated: 2025-08-22
+updated: 2026-04-22
 ---
 
 ## Ziel
@@ -26,7 +26,7 @@ Die Geolokalisierungsoption für Ihr Webhosting kann für die Suchmaschinenoptim
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -36,36 +36,33 @@ Die Geolokalisierungsoption für Ihr Webhosting kann für die Suchmaschinenoptim
 
 Für Webseiten, die hauptsächlich international abgerufen und auf der OVHcloud Shared Hosting Infrastruktur gehostet werden, bieten wir eine Geolokalisierungsoption nach IP-Adresse an. Sie ermöglicht eine bessere Referenzierung der Websites in dem Land, zu dem die ausgewählte IP-Adresse gehört.
 
-Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die folgenden Registerkarten, um die einzelnen **5** Schritte anzuzeigen.
+<!-- CP-STEPS-START:configure-geolocation -->
+Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
 > **Schritt 3**
 >>
->> Klicken Sie auf den Tab `Multisite`{.action}.
+>> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem gewünschten Domainnamen oder Subdomain und dann auf `Domain bearbeiten`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Schritt 4**
->>
->> Auf der neuen Seite wird eine Tabelle mit den zugehörigen Domainnamen angezeigt.
->>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
->>
->> Klicken Sie auf den Button `...`{.action} rechts neben Ihrem Domainnamen in der Tabelle. Klicken Sie auf `Domain bearbeiten`{.action}.
->>
-> **Schritt 5**
 >>
 >> Setzen Sie im neu geöffneten Fenster einen Haken im Feld `IP des Landes`{.action}, um das Drop-down-Menü zu öffnen.
 >>
@@ -74,6 +71,7 @@ Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die folgenden R
 >> Wählen Sie aus den 12 angebotenen Ländern die IP-Adresse des Landes aus, für das Sie Ihre Website geolokalisieren möchten: *Tschechische Republik, Finnland, Frankreich, Deutschland, Irland, Italien, Litauen, Niederlande, Polen, Portugal, Spanien, Vereinigtes Königreich*.
 >>
 >> Klicken Sie auf `Weiter`{.action} und im nächsten Fenster auf `Bestätigen`{.action}.
+<!-- CP-STEPS-END:configure-geolocation -->
 
 > [!primary]
 >

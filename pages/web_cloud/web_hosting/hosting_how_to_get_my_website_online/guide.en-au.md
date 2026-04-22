@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ There are many different types of website you can put online. Whether you are cr
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -40,7 +40,7 @@ It is important to have a clear idea of your objective, for your project to succ
 
 - **Creating your website yourself**: This is a more technical solution that requires programming skills, but does give you the option of creating a tailor-made project.
 
-- **Migrating an existing website to OVHcloud**: this solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you can also refer to the following documentation: [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
+- **Migrating an existing website to OVHcloud**: this solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, we recommend that you first consult this documentation: [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
 Once you have considered the possibilities above, you can choose one of two options.
 
@@ -73,28 +73,23 @@ To log in to your storage space, you will need the following:
 - the server address
 - the server connection port
 
-These elements were sent to you in the email informing you that your Web Hosting plan has been set up. If you don’t have this information, click on the tabs below to view each of the **4** steps.
+<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
+These elements were sent to you in the email informing you that your Web Hosting plan has been set up. If you don’t have this information, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `FTP - SSH`{.action} tab.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> The information associated with your storage space will now appear. You should be able to find the information you need to log in to it.
 >>
@@ -103,6 +98,7 @@ These elements were sent to you in the email informing you that your Web Hosting
 >> If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
+<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Once you have everything you need, there are two different ways of connecting to your storage space:
 
@@ -112,28 +108,48 @@ Once you have everything you need, there are two different ways of connecting to
 
 #### 2.3. Upload the files to the storage space
 
-Once connected to your storage space, you only have to upload the files of your website. **We recommend that you pay particular attention to the directory in which you are going to upload the files.** In a typical use case, the website is located in the "www" folder. However, if you are using your hosting for multiple websites, you have most likely declared multiple websites.
+> [success]
+>
+> If, from your [OVHcloud Control Panel](/links/manager), you have not yet declared your website on your web hosting, please refer to [this guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+>
+> If, from your [OVHcloud Control Panel](/links/manager), you have not yet associated your domain name with a website on your web hosting, please refer to [this guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
-To identify the folder that the website should be published from, go to the `Multisite`{.action} tab in the OVHcloud Control Panel. In the table shown, check the `Root folder`{.action} listed for the domain in question. This is the folder in which you should publish the files for your website.
+Once connected to your storage space, you simply need to upload the files of your website. **We recommend that you pay particular attention to the directory where you will upload the files**, especially if you have declared multiple websites on your web hosting.
 
-You may find a file called “index.html” in your storage space. This file may have been created by OVHcloud when your hosting plan was set up, to display a default page on your website. If this is the case, remember to delete this file when you are putting your files online.
+<!-- CP-STEPS-START:get-online-find-root-folder -->
+To check the folder in which the website should be published, click on the tabs below to view each of the **3** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> Go to the `My sites`{.action} tab. In the table that appears, for the desired website, look at the `Root folder`{.action} displayed.
+>>
+>> ![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Then publish the website files in this folder.
+<!-- CP-STEPS-END:get-online-find-root-folder -->
+
+You may find a file named "index.html" in your storage space. This file may have been created by OVHcloud during the installation of your web hosting to display a default page on your website. If this is the case, do not forget to delete it when uploading your files.
 
 > [!primary]
 >
 > An "index.php" file will always take over an "index.html" file. Therefore, when both are present, only "index.php" will be called.
-
-![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3 - Connect your website to a database
 
 > [!primary]
 >
 > This part is optional if your website does not need to be linked to a database.
->
 
-Today, virtually all content management systems (CMSs), such as WordPress or Joomla!, use a database for storing dynamic elements, such as comments or articles. As a result, it is essential for your website files and the database to be connected for the website to function correctly. To establish this connection, a configuration file that contains the database’s information is used.
+Today, most content management systems (CMS), such as WordPress and Joomla!, use a database to store dynamic elements, such as comments or articles. A connection between the website files and the database is therefore essential for the website to function correctly. For this purpose, there is a configuration file containing the database information that allows this connection.
 
-Depending on the website used, this connection may need to be established manually, or via an interface generated by the site itself. You can do this via several sub-steps, some of which may be optional.
+Depending on the website used, this link must be created manually or via an interface generated by the website itself. This involves several sub-steps, some of which may be optional.
 
 #### 3.1. Recover the existing database
 
@@ -143,19 +159,47 @@ If you are migrating an existing website, you can recover your existing database
 
 If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](/links/web/hosting) or [Web Cloud Databases solution](/links/web/databases)), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
 
-If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](/links/manager), then click on `Hosting plans`{.action} . Select the name of the Hosting plan concerned, and click on the `Databases`{.action} tab.
+<!-- CP-STEPS-START:find-db-credentials -->
+If you want to create a new database with OVHcloud, click on the tabs below to view each of the **3** steps.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Now click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Now follow the information shown.
-
-![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> Go to the `Databases`{.action} tab.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Follow the information shown.
+>>
+>> ![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Import the existing database 
 
 If you are migrating an existing website, you can import your existing database into the newly created one. If it is a new website, you can move on to the next step.
 
-There are several methods for importing a database. OVHcloud offers one of these in the OVHcloud Control Panel. Once you are on the list of databases created for your service in your OVHcloud Control Panel, click the `...`{.action} button to the right of your database, then `Import a file`{.action}.
+<!-- CP-STEPS-START:get-online-find-db-server -->
+There are several methods for importing a database. OVHcloud offers one of these in the OVHcloud Control Panel. Click on the tabs below to view each of the **3** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> Go to the `Databases`{.action} tab.
+>>
+> **Step 3**
+>>
+>> Click the `...`{.action} button to the right of your database, then `Import a file`{.action}.
+<!-- CP-STEPS-END:get-online-find-db-server -->
 
 #### 3.4. Connect your website to the database
 
@@ -169,11 +213,11 @@ Once you have uploaded your files to your storage space and connected your datab
 
 If you observe that it does not display properly, we recommend:
 
-- **Checking the configuration of the domain name.** Your domain name’s DNS configuration may be preventing the website you have just uploaded to your OVHcloud Web Hosting plan from displaying correctly. Make sure that the A record currently configured in the DNS zone for your domain corresponds to the IP address of your OVHcloud Web Hosting plan.
+- **Checking the domain name configuration**: it is possible that the DNS configuration of the domain name does not allow it to display the website you have just uploaded to your OVHcloud web hosting. Make sure that the A record currently set in the DNS zone of your domain name corresponds to the IP address of your OVHcloud web hosting.
 
-- **Making sure that no files are missing.** When uploading your files to the OVHcloud Web Hosting plan, you may have forgotten to transfer some files, or an error may have occurred. Be careful with this process, however, to avoid breaking any links between the website’s files and the database (if the website uses one).
+- **Ensuring that no files are missing**: it is possible that during the upload of the files to your OVHcloud web hosting, you forgot some files or that an error occurred. Be careful during your operations to avoid breaking the link between the website files and the database (if it uses one).
 
-- **Checking that there are no errors in the website code.** This is definitely the most technical check to carry out, but the files you have uploaded may contain errors, and those errors may prevent the server from displaying your website correctly, or at all.
+- **Checking that the website code does not contain errors**: this check is probably the most technical, but it is possible that the files you have uploaded contain errors and do not allow the server to display your website correctly, or not at all.
 
 As a reminder, if you encounter any difficulties publishing your website, we recommend contacting a specialised provider and/or the publisher of the service (the CMS you have set up, for example).
 

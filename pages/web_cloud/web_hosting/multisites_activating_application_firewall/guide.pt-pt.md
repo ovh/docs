@@ -1,8 +1,22 @@
 ---
 title: "Partilhado: ativação da firewall"
 excerpt: "Partilhado: ativação da firewall"
-updated: 2025-08-22
+updated: 2026-04-22
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
@@ -17,12 +31,11 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 - injeção do tipo SQL ou XSS,
 - etc.
 
-**Este guia explica-lhe como ativar a firewall de aplicação a partir da Área de Cliente OVHcloud, de forma a obter uma proteção melhorada.**
+**Saiba como ativar a firewall de aplicação a partir da Área de Cliente OVHcloud, de forma a obter uma proteção melhorada.**
 
 > [!primary]
 >
 > Uma vez que o seu alojamento web está presente numa infraestrutura partilhada, a alteração dos parâmetros de configuração da firewall não está disponível.
->
 
 ## Requisitos
 
@@ -34,7 +47,7 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -42,41 +55,81 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Na barra à esquerda, clique em `Alojamentos`{.action} e, a seguir, no alojamento correspondente.
+**Clique nos títulos abaixo para visualizar as explicações.**
 
-### Ativar a firewall aplicativa na configuração PHP
+/// details | Ativar o firewall de aplicações em todo o seu alojamento web nas definições PHP
 
-Clique no separador `Informações gerais`{.action}. A `versão global de PHP` é apresentada na zona **Configuração**. Clique no botão `...`{.action} e selecione `Alterar configuração`{.action}. Na nova janela, selecione o elemento `Alterar configuração atual`{.action} e clique no botão `Seguinte`{.action}.
+<!-- CP-STEPS-START:enable-firewall -->
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> No marco **Configuração**, encontrará a indicação **Versão global de PHP**.
+>>
+>> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
+>>
+>> Clique no botão `...`{.action} à direita da indicação **Versão global de PHP**, depois em `Alterar configuração`{.action}.
+>>
+> **Passo 4**
+>>
+>> Na janela que se abre, selecione o item `Modificar a configuração atual`{.action} e clique no botão `Seguinte`{.action}.
+>>
+>> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+>>
+>> Na nova janela, certifique-se de que a opção **Firewall aplicacional** está definida como `ativado`{.action}. Em seguida, clique no botão `Validar`{.action}.
+<!-- CP-STEPS-END:enable-firewall -->
 
-Na nova janela, certifique-se de que a **Aplicação Firewall** está definida em `Ativado`{.action}. Para confirmar a configuração, clique no botão `Confirmar`{.action}.
+///
 
-### Ativar a firewall de aplicação para os nomes de domínio individuais num multi-site
+/// details | Ativar o firewall de aplicações apenas num nome de domínio ou subdomínio específico
 
-Clique no separador `Multisite`{.action} da sua oferta de alojamento. Clique no botão `...`{.action} à direita do nome de domínio em causa e selecione a opção `Alterar o domínio`{.action}.
+<!-- CP-STEPS-START:disable-firewall -->
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante e, depois, em `Modificar o domínio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na janela de configuração, marque a caixa `Ativar a firewall`{.action}. Também pode incluir o subdomínio `www` nesta configuração marcando a caixa correspondente no topo (se este também estiver declarado no mesmo site web).
+>>
+>> ![Modify a domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+>>
+>> Clique em `Seguinte`{.action}, depois em `Validar`{.action} para validar a modificação das definições.
+>>
+>> Uma vez ativado o firewall para o seu nome de domínio ou subdomínio, a indicação **Ativado** aparece na coluna **Firewall**.
+>>
+>> Se a indicação **Ativado** não aparecer ao fim de alguns minutos na linha correspondente ao nome de domínio ou subdomínio relevante, atualize a página.
+<!-- CP-STEPS-END:disable-firewall -->
 
-Na janela de configuração, selecione a caixa `Ativar a firewall`{.action}. Também pode incluir o subdomínio `www` nesta configuração, selecionando a opção no topo.
-
-Clique em `Seguinte`{.action} e, a seguir, em `Confirmar`{.action} para modificar os parâmetros multisite.
-
-![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
-
-### Verificar o estado da tarefa de ativação
-
-![gestão em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
-
-As tarefas de atualização da sua configuração multi-site serão listadas no separador `Operações em curso`{.action} (o estado inicial é "Planificado"). A firewall estará ativa assim que a sua tarefa de atualização deixar de aparecer na lista.
-
-### Verificação dos nomes de domínio para os quais a firewall está ativada
-
-O separador `Multisite`{.action} da sua oferta de alojamento fornece informações sobre os domínios para os quais a opção de firewall está ativa.
-
-![gerageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
-
-A tabela apresentada contém todos os domínios adicionados ao alojamento web. Na coluna "Firewall", apresenta-se o estado de ativação de cada nome de domínio.
+///
 
 ## Quer saber mais?
 

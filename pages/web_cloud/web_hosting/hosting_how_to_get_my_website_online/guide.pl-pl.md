@@ -1,7 +1,7 @@
 ---
 title: "Uruchomienie strony WWW na hostingu"
 description: "Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVHcloud"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Wprowadzenie 
@@ -24,7 +24,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -36,17 +36,17 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 Jasno określony cel jest kluczowy dla realizacji Twojego projektu. Do czego zamierzasz wykorzystać Twoją stronę WWW? Jak ją uruchomić online? Hosting OVHcloud daje Ci kilka możliwości.
 
-- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud oferuje cztery kompatybilne z naszą infrastrukturą moduły za 1 kliknięciem, które można znaleźć na stronie internetowej OVHcloud ["Tworzenie strony internetowej z modułami za 1 kliknięciem"](/links/web/hosting-website). Możesz również zapoznać się z przewodnikiem ["Instalacja strony WWW za pomocą modułów 1 kliknięcia"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud oferuje cztery kompatybilne z naszą infrastrukturą moduły za 1 kliknięciem, które można znaleźć na stronie internetowej OVHcloud "[Tworzenie strony internetowej z modułami za 1 kliknięciem](/links/web/hosting-website)". Możesz również zapoznać się z przewodnikiem "[Instalacja strony WWW za pomocą modułów 1 kliknięcia](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **Ręczna instalacja gotowego systemu CMS**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.) i samodzielnie instalujesz na Twoim hostingu OVHcloud.
 
 - **Samodzielna budowa strony WWW**: ta opcja wymaga kompetencji w zakresie programowania, ale daje możliwość stworzenia projektu na miarę.
 
-- **Przeniesienie istniejącej strony WWW do OVHcloud**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW.  W przypadku wyboru tej opcji zachęcamy do zapoznania się z przewodnikiem: [Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
+- **Przeniesienie istniejącej strony WWW do OVHcloud**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW. Aby ułatwić Ci tę procedurę, zachęcamy Cię, by wcześniej zapoznać się z tą dokumentacją: [Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 Po przeanalizowaniu powyższych opcji, masz dwie możliwości:
 
-- **chcesz użyć gotowego modułu OVHcloud**: zapoznaj się z instrukcjami w przewodniku [Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules);
+- **chcesz użyć gotowego modułu OVHcloud**: zapoznaj się z instrukcjami w przewodniku "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)";
 
 - **nie chcesz użyć gotowego modułu OVHcloud**: przeprowadź ręczną instalację Twojej strony WWW na hostingu OVHcloud. Informacje zawarte w przewodniku pomogą Ci w przeprowadzeniu operacji, nie zastąpią jednak wsparcia wyspecjalizowanego webmastera.
  
@@ -75,36 +75,32 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 - adres serwera;
 - port połączenia z serwerem.
 
-Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
+Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej.
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 >>
->> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [„Logowanie do przestrzeni dyskowej hostingu WWW”](/pages/web_cloud/web_hosting/ftp_connection).
+>> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: "[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 >>
->> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku[„Zmiana hasła do konta FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
+>> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
+<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać dostęp do przestrzeni dyskowej dwa różnymi metodami:
 
@@ -114,52 +110,100 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać do
 
 #### 2.3. Zapisanie plików na przestrzeni dyskowej
 
-Po zalogowaniu się do swojego obszaru magazynowania, pozostało Ci już tylko wgranie plików swojej strony internetowej. **Zachęcamy, abyś był szczególnie uważny, wybierając katalog, do którego chcesz przesłać pliki**. W typowym przypadku użycia strona powinna być przesłana do katalogu "www". Jednak jeśli korzystasz z hostingu do obsługi wielu stron internetowych, prawdopodobnie zadeklarowałeś wiele stron.
+> [success]
+>
+> Jeśli w swoim [Panelu klienta OVHcloud](/links/manager) jeszcze nie dodano strony internetowej do Twojego hostingu, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+>
+> Jeśli w swoim [Panelu klienta OVHcloud](/links/manager) jeszcze nie przypisano nazwy domeny do strony internetowej znajdującej się na Twoim hostingu, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
-Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, przejdź do zakładki `MultiSite`{.action} w Panelu klienta. W tabeli, która się wyświetla dla wybranej domeny znajdź `Katalog główny`{.action}. Następnie opublikuj w nim pliki strony WWW.
+Po zalogowaniu się do swojej przestrzeni dyskowej, wystarczy, że wgrasz pliki swojej strony internetowej. **Zachęcamy Cię, byś był szczególnie uważny, wybierając katalog, do którego chcesz przesłać pliki**, zwłaszcza jeśli na swoim hostingu zadeklarowałeś wiele stron internetowych.
 
-Istnieje możliwość, że na Twojej przestrzeni dyskowej znajdziesz plik zatytułowany „index.html”. Plik ten mógł zostać utworzony przez OVHcloud podczas instalacji hostingu, aby wyświetlić domyślną stronę na Twojej stronie WWW. W takim przypadku pamiętaj, aby go usunąć podczas uruchomienia Twojej strony.
+<!-- CP-STEPS-START:get-online-find-root-folder -->
+Aby sprawdzić folder, w którym należy opublikować stronę internetową, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Przejdź do karty `Moje strony`{.action}. W wyświetlonej tabeli, dla wybranej strony internetowej, sprawdź `Katalog główny`{.action}, który się pokazuje.
+>>
+>> ![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Następnie opublikuj pliki strony internetowej w tym folderze.
+<!-- CP-STEPS-END:get-online-find-root-folder -->
+
+Możesz zauważyć na swojej przestrzeni dyskowej plik o nazwie „index.html”. Może on zostać utworzony przez OVHcloud podczas instalacji Twojego hostingu, aby wyświetlić stronę domyślną na Twojej stronie internetowej. Jeśli tak jest, nie zapomnij go usunąć podczas wdrażania swoich plików.
 
 > [!primary]
 >
 > Plik "index.php" zawsze przejdzie przez plik "index.html". W związku z tym, gdy oba są obecne, wywoływany jest tylko "index.php".
-
-![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### 3 - Powiązanie strony WWW z bazą danych
 
 > [!primary]
 >
 > Ta część jest opcjonalna, jeśli Twoja strona internetowa nie musi być połączona z bazą danych.
->
 
-Obecnie niemal wszystkie systemy zarządzania treścią (WordPress, Joomla!, etc.) wykorzystują bazę danych do przechowywania elementów dynamicznych, takich jak komentarze czy artykuły. Połączenie plików strony WWW z bazą danych jest zatem niezbędne, aby strona poprawnie działała. Umożliwia to plik konfiguracyjny zawierający informacje dotyczące połączenia z bazą danych. 
+Dzisiaj większość systemów zarządzania treścią (CMS), takich jak WordPress czy Joomla!, korzysta z bazy danych do przechowywania elementów dynamicznych, takich jak komentarze lub artykuły. Połączenie między plikami strony internetowej a bazą danych jest więc niezbędne, aby strona internetowa mogła działać poprawnie. W tym celu istnieje plik konfiguracyjny zawierający dane bazy danych umożliwiające to połączenie.
 
-W zależności od typu używanej strony WWW połączenie to musi zostać przeprowadzone ręcznie lub przez interfejs wygenerowany przez CMS. Połączenie realizowane jest w kilku etapach. Niektóre z nich mogą być opcjonalne.
+W zależności od używanej strony internetowej, to połączenie musi zostać utworzone ręcznie lub za pomocą interfejsu wygenerowanego przez samą stronę internetową. Jest ono realizowane w kilku podetapach, z których niektóre mogą być opcjonalne.
 
 #### 3.1. Pobranie istniejącej bazy danych 
 
-Jeśli przenosisz istniejącą stronę WWW do OVHcloud, pobierz bazę danych od poprzedniego dostawcy hostingu. W przypadku nowej strony, przejdź do kolejnego etapu.
+Jeśli przenosisz stronę internetową, pobierz istniejącą bazę danych ze swojego poprzedniego hostingu. Jeśli chodzi o nową stronę internetową, przejdź do następnego kroku.
 
 #### 3.2. Utworzenie bazy danych w OVHcloud 
 
 Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](/links/web/hosting),[Web Cloud Databases](/links/web/databases)), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
-Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](/links/manager) i kliknij `Hosting`{.action}. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
+<!-- CP-STEPS-START:find-db-credentials -->
+Jeśli chcesz utworzyć nową bazę danych w OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Następnie kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
-
-![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Przejdź do zakładki `Baza danych`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
+>>
+>> ![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Import istniejącej bazy danych
 
 Jeśli przenosisz stronę WWW do OVHcloud, zaimportuj istniejącą bazę danych do nowo utworzonej bazy. W przypadku nowej strony, przejdź do kolejnego etapu.
 
-Istnieje kilka metod importu. OVHcloud oferuje jedną z nich w Panelu klienta. Po kliknięciu na listę baz danych utworzonych w Twojej usłudze w Panelu klienta OVHcloud kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
+<!-- CP-STEPS-START:get-online-find-db-server -->
+Istnieje kilka metod importu. OVHcloud oferuje jedną z nich w Panelu klienta. Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-#### 3.4. Połączenie strony WWW z bazą danych
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Przejdź do zakładki `Baza danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
+<!-- CP-STEPS-END:get-online-find-db-server -->
+
+#### 3.4. Połączenie strony internetowej z bazą danych
 
 Kiedy baza danych jest już dostępna, a pliki zapisane na Twojej przestrzeni dyskowej możesz połączyć stronę z bazą. Przygotuj informacje potrzebne do zalogowania się do bazy danych: nazwa użytkownika, hasło, nazwa bazy danych oraz adres serwera. 
 
@@ -171,11 +215,11 @@ Po zapisaniu plików na przestrzeni dyskowej i połączeniu z nią bazy danych (
 
 Jeśli nie wyświetla się, zalecamy następujące kroki:
 
-- **sprawdź konfigurację domeny**: możliwe, że konfiguracja DNS domeny nie pozwala poprawnie wyświetlać strony, którą właśnie zainstalowałeś na Twoim hostingu. Upewnij się, że rekord A skonfigurowany aktualnie w strefie DNS Twojej domeny odpowiada adresowi IP Twojego hostingu;
+- **sprawdzić konfigurację nazwy domeny**: może się zdarzyć, że konfiguracja DNS nazwy domeny nie pozwala jej wyświetlić strony internetowej, którą właśnie przesłałeś na Twój hosting OVHcloud. Upewnij się, że obecnie skonfigurowany rekord DNS typu A w strefie DNS Twojej nazwy domeny odpowiada adresowi IP Twojego hostingu OVHcloud.
 
-- **upewnij się, że nie brakuje żadnego pliku**: możliwe, że podczas zapisywania plików na Twoim hostingu OVHcloud pominąłeś jakieś pliki lub wystąpił błąd. Zalecamy ostrożność podczas wykonywania operacji, aby nie nastąpiło zerwanie połączenia pomiędzy stroną WWW a bazą danych (jeśli strona używa bazy).
+- **upewnić się, że nie brakuje żadnych plików**: może się zdarzyć, że podczas przesyłania plików na Twój hosting OVHcloud, zapomniałeś o niektórych plikach lub wystąpił błąd. Wciąż jednak zachowuj ostrożność podczas swoich działań, aby nie przerwać połączenia między plikami strony a bazą danych (jeśli taka istnieje).
 
-- **sprawdź, czy kod strony nie zawiera błędu**: istnieje możliwość, że pobrane pliki zawierają błędy i nie pozwalają serwerowi wyświetlać poprawnie części lub całej zawartości Twojej strony.
+- **sprawdzić, czy kod strony internetowej nie zawiera błędów**: ta weryfikacja jest najbardziej techniczna, ale może się zdarzyć, że przesłane przez Ciebie pliki zawierają błędy i uniemożliwiają serwerowi poprawne, a nawet wcale wyświetlenie Twojej strony internetowej.
 
 Przypominamy, że w przypadku trudności podczas uruchamiania Twojej strony na hostingu możesz skontaktować się z wyspecjalizowanym webmasterem lub administratorem usługi (np. zainstalowanego CMS).
 

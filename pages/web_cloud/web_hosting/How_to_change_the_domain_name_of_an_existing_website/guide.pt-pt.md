@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Como alterar o domínio de um site existente"
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -17,7 +17,6 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
 > Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
->
 
 ## Requisitos
 
@@ -29,7 +28,7 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -41,24 +40,38 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 >
 > A alteração do nome de domínio para aceder ao seu site pode afetar o seu referenciamento. 
 > Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](/links/partner) no referenciamento, se necessário.
->
 
 Para alterar o domínio de acesso ao seu website, deverá realizar várias etapas por uma ordem precisa.
 
-### Etapa 1 - declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
+### 1 - Declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
 
-Declare o seu novo nome de domínio com a nossa documentação sobre [como adicionar um site web ao seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite). Declare também o seu subdomínio em `www` se quiser, por exemplo, que `www.NewDomain.tld` também mostre o seu site, em adição a `NewDomain.tld`.
+Declare o seu novo nome de domínio seguindo o nosso guia « [Como associar um nome de domínio a um site existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Declare também o seu subdomínio em `www` se quiser, por exemplo, que `www.NewDomain.tld` também mostre o seu site, em adição a `NewDomain.tld`.
 
 Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
 - O seu novo domínio deve apontar para a mesma "pasta raiz" que o domínio utilizado atualmente para aceder ao seu site.
-- Verifique que o seu novo domínio aponta para o endereço IP correto do seu alojamento partilhado. Para obter o endereço IP, aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web cloud`{.action}, clique nos `Alojamentos`{.action}, selecione o seu alojamento e recupere **o IPv4** no separador `Informações gerais`{.action}.
+<!-- CP-STEPS-START:retrieve-hosting-ip -->
+- Verifique que o seu novo domínio aponta para o endereço IP correto do seu alojamento partilhado. Para obter o endereço IP, clique nos separadores abaixo para ver sucessivamente as **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Informações gerais`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Recupere o **IPv4** apresentado.
+<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
 > Se ativar as opções **IP do país** ou **CDN** com o seu novo domínio, utilize o endereço IP correto através do nosso manual de recenseamento [o conjunto dos endereços IP dos nossos alojamentos partilhados](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
-> Para encontrar o número do cluster onde está o seu alojamento, aceda à parte `Web cloud`{.action}, clique em `Alojamentos`{.action}, selecione o separador `FTP-SSH`{.action}. Visualizará o número do cluster no formulário **Servidor FTP e SFTP**: `ftp.cluster0XX.ovh.net` (onde os `X` representam o número de cluster).
+> Para encontrar o número do cluster onde está o seu alojamento, consulte o nosso guia "[Alojamento web - Como conhecer o seu cluster e o seu filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 >
 
 > **Certificados SSL**
@@ -67,9 +80,11 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 > - [Gerir um certificado SSL no alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Ativar o HTTPS num website com certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
+<!-- CP-STEPS-START:verify-multisite-config -->
 Se todas as ações foram corretamente realizadas, as declarações dos seus nomes de domínio devem ser estritamente idênticas **a menos que utilize um certificado SSL pago do tipo *Sectigo DV*, *Sectigo EV* ou *custom***.
 
-![multi-sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >
@@ -78,7 +93,7 @@ Se todas as ações foram corretamente realizadas, as declarações dos seus nom
 
 Se o seu website não utiliza bases de dados e/ou não efetuar uma re-escritura de URL para o seu website, este deve já ser apresentado corretamente com o seu novo domínio. Neste caso, passe diretamente para [etapa 3](#step3) deste guia. Caso contrário, consulte o passo 2 abaixo.
 
-### Etapa 2 - reescrita dos URLs no seu website com o novo domínio
+### 2 - Reescrita dos URLs no seu website com o novo domínio
 
 A maioria dos sites utiliza bases de dados para funcionar. A arborescência destas últimas é geralmente construída em torno do domínio inicialmente utilizado para o seu site. São necessárias ações suplementares para estes websites.
 
@@ -101,9 +116,9 @@ A maioria dos CMS permite diretamente, a partir do seu espaço de administraçã
 Uma vez que os CMS são desenvolvidos por organismos terceiros não geridos pela OVHcloud, encontrará de seguida os links para a documentação oficial dos diferentes CMS propostos em instalação nos nossos alojamentos partilhados:
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
-- Joomla! : O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [docs.joomla.org](https://docs.joomla.org/) ou [forum.joomla.org](https://forum.joomla.org/).
-- Drupal: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [drupal.org](https://drupal.org) ou [drupal.fr](https://drupal.fr).
-- PrestaShop: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://help-center.prestashop.com) para aceder à sua página oficial.
+- Joomla! : O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assunto. Para mais informações, consulte as páginas oficiais [docs.joomla.org](https://docs.joomla.org/) ou [forum.joomla.org](https://forum.joomla.org/).
+- Drupal: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assunto. Para mais informações, consulte as páginas oficiais [drupal.org](https://drupal.org) ou [drupal.fr](https://drupal.fr).
+- PrestaShop: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assunto. Para mais informações, consulte a [página oficial do PrestaShop](https://help-center.prestashop.com).
 
 Note que, para estes CMS, também é possível efetuar as alterações diretamente [na base de dados](/pages/web_cloud/web_hosting/sql_create_database). Deverá alterar o URL de acesso ao seu site na tabela prevista para esse efeito.
 
@@ -122,9 +137,9 @@ Se tiver contactado um fornecedor para a criação do seu site, contacte-o para 
 > Uma vez concluída a etapa 2, o seu site deve aparecer com o seu novo domínio.
 >
 
-### Etapa 3 - retirar o antigo nome de domínio <a name="step3"></a>
+### 3 - Retirar o antigo nome de domínio <a name="step3"></a>
 
-Para evitar o "*Duplicate-content*" e quando o seu novo nome de domínio estiver plenamente operacional com o seu site web, deverá eliminar a declaração do seu antigo nome de domínio no seu site web com o guia sobre a gestão dos [sites web no seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Para evitar o « *Duplicate-content* » e quando o seu novo nome de domínio estiver plenamente operacional com o seu site, deverá eliminar a declaração do seu antigo nome de domínio no seu site, utilizando o guia « [Como desassociar um nome de domínio de um site web existente](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 > [!warning]
 >

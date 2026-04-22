@@ -1,7 +1,7 @@
 ---
 title: "Exporting a website"
 excerpt: "Find out how to export an OVHcloud website"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ This guideline will outline the steps to follow in order to export all elements 
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -40,28 +40,23 @@ To log in to your storage space, you will need the following:
 
 This information was included in the email informing you that your web hosting plan has been set up.
 
-If you don’t have this information, click on the tabs below to view each of the **4** steps.
+<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
+If you don’t have this information, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `FTP - SSH`{.action} tab.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> The information associated with your storage space will now appear. You should be able to find the information you need to log in to it.
 >>
@@ -70,6 +65,7 @@ If you don’t have this information, click on the tabs below to view each of th
 >> If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
+<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Once you have everything you need, there are two different ways of retrieving your files from the storage space:
 
@@ -79,11 +75,32 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 #### 2.1 Download the files from your storage space
 
-Once connected to your storage space, you just need to download the files of your website. **We recommend that you pay particular attention to the directory in which you installed your website.** In a typical use case, the website should be located in the "www" folder. However, if you are using your hosting to host multiple websites, you have probably declared multiple websites.
+Once connected to your storage space and depending on the websites hosted on it, several folders may appear.
 
-To verify the folder in which your website is stored, go to the `Multisite`{.action} tab from your OVHcloud Control Panel. In the table that appears, for the desired domain, look at the `Root folder`{.action} that is displayed.
+<!-- CP-STEPS-START:find-root-folder -->
+If needed, identify the root folder where your website is stored. To do this, click on the tabs below to view each of the **3** steps.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
+> **Step 3**
+>>
+>> In the table that appears, for the desired website, look at the `Root folder`{.action} that is displayed.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+<!-- CP-STEPS-END:find-root-folder -->
+
+Still connected to your storage space, download the files of your website from the root folder identified above.
 
 ### 2 - Retrieve your database backup (optional)
 
@@ -103,33 +120,7 @@ You can also download, import and restore backups in this section. Please read o
 
 ### 3 - Retrieve the logs for your OVHcloud web hosting plan
 
-If you would like to download your website’s logs, you can do so via your web hosting plan.
-
-Click `Hosting plans`{.action}, then click on the solution concerned. Click the `Statistics and logs`{.action} tab.
-
-![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
-
-Then click on the link under `View logs`{.action}:
-
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
-
-A window will appear with the different types of logs you can access. They are classed by month:
-
-| Type  	| Description                                                                                                                                                                                         	|
-|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Web   	| Here, you will find various logs for visiting your website, as well as the different actions taken from your website. You can use this to identify hacking attempts. 	|
-| FTP   	| FTP connections will be recorded and stored in these logs.                                                                                                                     	|
-| Error 	| These are the errors generated by your website.                                                                                                                                                    	|
-| CGI   	| These are the various calls to CGI scripts that have been made.                                                                                                                                     	|
-| out   	| These are the statistics of your web hosting plan on different external calls that have been made.                                                                                                                  	|
-| ssh   	| These logs indicate the different connections made with SSH protocol.                                                                                                                      	|
-| cron  	| These are the result of any jobs you have scheduled.                                                                                                                                                	|
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
-
-When you have selected the log types and month you want to view, the logs are archived by the day:
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
+Refer to our dedicated guide: [Web Hosting - Consulting the statistics and logs of a website](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ## Go further
 

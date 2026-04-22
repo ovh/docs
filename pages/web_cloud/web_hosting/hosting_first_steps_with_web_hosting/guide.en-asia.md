@@ -1,7 +1,7 @@
 ---
 title: "How to get started with your web hosting plan"
 excerpt: "Find out how to put a new website online with our 1-click modules, how to create a new custom email address with your domain name, all using our web hosting solution"
-updated: 2025-04-07
+updated: 2026-04-22
 ---
 
 <style>
@@ -38,7 +38,7 @@ Want to create a website for your business or a personal blog? Need an e-commerc
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -46,21 +46,38 @@ Want to create a website for your business or a personal blog? Need an e-commerc
 
 ## Instructions
 
-### 1 - Link your domain name to your web hosting plan <a name="part-1"></a>
+### 1 - Link your domain name to a website on your web hosting plan <a name="part-1"></a>
 
 > [!success]
 >
 > If you have subscribed to your domain name and web hosting plan in the same order, these two services are already linked. Skip to [Part 2](#part-2) of this guide.
 
-1. Click on the `Hosting plans`{.action} menu, then choose the web hosting plan concerned.
-2. Select the `Multisite`{.action} tab.
-3. On the page that pops up, click the `Actions`{.action} button above the table listing the domain names already declared on the web hosting plan. Then click `Add a domain or sub-domain`{.action}.
-4. In the window that opens, check and complete the requested elements until they are validated.
+<!-- CP-STEPS-START:link-domain-website -->
+Click on the tabs below to view each of the **4** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> Select the `My sites`{.action} tab.
+>>
+> **Step 3**
+>>
+>> In the table that appears, click on the `⁝`{.action} button located to the right of the website created automatically when your web hosting was created, then click on `Add a domain`{.action}.
+>>
+> **Step 4**
+>>
+>> On the new page that opens, check and complete the requested items until they are validated.
+<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Click here for more information.
 
 See our detailed guides:
 
+- [How to link a domain name to an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Web hosting - Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 - [Web Hosting - How to modify a domain name already associated to a hosting plan](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
@@ -70,10 +87,26 @@ See our detailed guides:
 
 On our web hosting plans, OVHcloud offers free WordPress, Joomla!, PrestaShop and Drupal CMS installations with the 1-click module option.
 
-1. Click on the `Hosting plans`{.action} menu, then choose the web hosting plan concerned.
-2. Select the `1-click modules`{.action} tab.
-3. On the page that appears, click the `Add a module`{.action} button.
-4. In the window that opens, select the CMS you want to install. Then select the domain on which you want to install the module by selecting the domain name you want **without www** (example: `domain.tld`, not `www.domain.tld`), then click `Install`{.action}.
+<!-- CP-STEPS-START:install-1click-module -->
+Click on the tabs below to view each of the **4** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> Select the `1-click modules`{.action} tab.
+>>
+> **Step 3**
+>>
+>> On the page that appears, click the `Add a module`{.action} button.
+>>
+> **Step 4**
+>>
+>> In the window that opens, select the CMS you want to install. Then select the domain on which you want to install the module by selecting the domain name you want **without www** (example: `domain.tld`, not `www.domain.tld`), then click `Install`{.action}.
+<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Click here for more information.
 
@@ -90,8 +123,22 @@ See our detailed guides:
 >
 > If you have subscribed to your domain name and web hosting plan in the same order, the email addresses included with the web hosting plan are already associated with your domain name. Skip to [Part 4](#part-4) of this guide.
 
-1. Click on the `Hosting plans`{.action} menu, then choose the web hosting plan concerned.
-2. On the page that pops up, in the **Configuration** box, click on the `...`{.action} button to the right of the `Email addresses`{.action} comment, then on `Enable email solution`{.action}. On the new page that appears, select the domain name concerned in the `(1)` section, then continue until you have enabled the email addresses.
+<!-- CP-STEPS-START:enable-email-solution -->
+Click on the tabs below to view each of the **3** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> On the page that pops up, in the **Configuration** box, click on the `...`{.action} button to the right of the `Email addresses`{.action} comment, then on `Enable email solution`{.action}.
+>>
+> **Step 3**
+>>
+>> On the new page that appears, select the domain name concerned in the `(1)` section, then continue until you have enabled the email addresses.
+<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Click here for more information.
 
@@ -101,10 +148,26 @@ Read our detailed guide “[Web Hosting - Activating email addresses included](/
 
 ### 4 - Create a custom email address with your domain name <a name="part-4"></a>
 
-1. Click on the `Emails`{.action} menu (or `MX Plan`{.action} if you are using the new version of the OVHcloud Control Panel), then choose the domain name concerned.
-2. On the page that appears, click on the `Emails`{.action} tab.
-3. On the new page that appears, click the `Create an email address`{.action} button.
-4. In the window that opens, fill in the information requested until it is validated.
+<!-- CP-STEPS-START:create-email-address -->
+Click on the tabs below to view each of the **4** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [MX Plan](/links/control-panel/web-mx-plan) page, then choose the domain name concerned.
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Emails`{.action} tab.
+>>
+> **Step 3**
+>>
+>> On the new page that appears, click the `Create an email address`{.action} button.
+>>
+> **Step 4**
+>>
+>> In the window that opens, fill in the information requested until it is validated.
+<!-- CP-STEPS-END:create-email-address -->
 
 Repeat this step for each email address you would like to create (within the limits of your web hosting plan).
 

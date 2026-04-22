@@ -1,7 +1,7 @@
 ---
 title: "Esporta il tuo sito Web"
 excerpt: "Come esportare un sito Web OVHcloud"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Obiettivo
@@ -19,7 +19,7 @@ Questa guida ti mostra come esportare tutti gli elementi del tuo sito Web in for
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -40,28 +40,23 @@ Per accedere allo spazio di storage sono necessari:
 
 Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma.
 
-Se non ne hai ancora uno, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
+Se non ne hai ancora uno, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
 >>
 >> ![FTP -SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Visualizzi le informazioni associate allo spazio di storage. le informazioni di accesso allo spazio di storage.
 >>
@@ -70,6 +65,7 @@ Se non ne hai ancora uno, clicca sulle schede qui sotto per visualizzare in sequ
 >> In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
+<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio di storage può essere effettuato in due modi diversi:
 
@@ -79,11 +75,32 @@ Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 
-Una volta connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito. **Ti invitiamo a prestare particolare attenzione al percorso in cui hai installato il tuo sito**. Nell'uso comune, il sito deve essere scaricato nella cartella "www". Tuttavia, se utilizzi il tuo spazio di hosting per ospitare diversi siti web, è probabile che tu abbia dichiarato diversi siti web.
+Una volta connesso al tuo spazio di archiviazione e in base ai siti web ospitati su di esso, potranno apparire diverse cartelle.
 
-Per verificare la cartella in cui è memorizzato il tuo sito web, vai sull'onglet `Multisito`{.action} dal tuo Spazio Cliente OVHcloud. Nella tabella visualizzata, per il dominio desiderato, guarda il `Cartella di root`{.action} che appare.
+<!-- CP-STEPS-START:find-root-folder -->
+Se necessario, individua in precedenza nel tuo hosting web il nome della cartella radice in cui è conservato il tuo sito web. A tale scopo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella tabella che appare, per il sito web desiderato, osserva il `Cartella di root`{.action} che viene visualizzato.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+<!-- CP-STEPS-END:find-root-folder -->
+
+Ancora connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito web accedendo alla cartella radice precedentemente identificata.
 
 ### 2 - Recuperare il backup del tuo database (facoltativo)
 
@@ -100,33 +117,7 @@ Se utilizzi un database **Web Cloud Databases** per il tuo sito Web, consulta la
 
 ### 3 - Recuperare i log del tuo hosting OVHcloud
 
-Per conservare lo storico dei log del tuo sito, è disponibile un accesso a questi ultimi con il tuo hosting.
-
-Clicca su `Hosting`{.action} e seleziona il tuo servizio. Clicca sulla scheda `Statistiche e log`{.action}.
-
-![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
-
-Clicca sul link sotto la voce `Visualizza i log`{.action}:
-
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
-
-Visualizzi una finestra con i diversi tipi di log disponibili. Sono classificati per mese:
-
-| Tipo  	| Descrizione                                                                                                                                                                                         	|
-|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Web   	| Trovi qui i log di consultazione del tuo sito e le diverse azioni realizzate a partire dal tuo sito. per permetterti, ad esempio, di individuare i tentativi di attacco. 	|
-| FTP   	| le diverse connessioni FTP saranno registrate e conservate in questi log.                                                                                                                     	|
-| Error 	| i diversi errori generati dal tuo sito.                                                                                                                                                    	|
-| CGI   	| i diversi appelli agli scripts cgi.bin realizzati.                                                                                                                                     	|
-| out   	| le statistiche del tuo hosting sulle diverse chiamate esterne effettuate.                                                                                                                  	|
-| SSH   	| questi log indicano le differenti connessioni realizzate con il protocollo SSH.                                                                                                                      	|
-| cron  	| il risultato dell'esecuzione dei compiti pianificati.                                                                                                                                                	|
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
-
-Quando hai selezionato il tipo di log nel mese che ti interessa, questi vengono archiviati al giorno:
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
+Consulta la nostra guida dedicata: [Hosting Web - Consultare le statistiche e i log di un sito web](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ## Per saperne di più
 

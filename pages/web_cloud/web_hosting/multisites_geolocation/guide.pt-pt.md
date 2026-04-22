@@ -1,7 +1,7 @@
 ---
 title: "Como geolocalizar um website num país específico?"
 excerpt: "Saiba como localizar o seu website graças aos endereços IP geolocalizados disponíveis nas ofertas de alojamento partilhado OVHcloud"
-updated: 2025-08-22
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -27,7 +27,7 @@ A opção de geolocalização no seu alojamento pode ser útil para o referencia
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -37,36 +37,33 @@ A opção de geolocalização no seu alojamento pode ser útil para o referencia
 
 Para os websites principalmente consultados no estrangeiro e alojados na nossa infraestrutura de alojamento partilhado OVHcloud, propomos uma opção de geolocalização por endereço IP. Permite uma melhor referenciação dos websites no país onde está situado o endereço IP escolhido com a opção.
 
-Para utilizar a opção de geolocalização por IP, clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+<!-- CP-STEPS-START:configure-geolocation -->
+Para utilizar a opção de geolocalização por IP, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
+> **Etapa 2**
+>>
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
 > **Etapa 3**
 >>
->> Na página que se abrir, clique no separador `Multisite`{.action}.
+>> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante e, depois, em `Modificar o domínio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Etapa 4**
->>
->> Na nova página, é apresentada uma tabela com os nomes de domínio associados.
->>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
->>
->> Clique no botão `...`{.action} situado à direita do seu nome de domínio na tabela. Por fim, clique em `Modificar o domínio`{.action}.
->>
-> **Etapa 5**
 >>
 >> Na nova janela, selecione a opção `IP do país`{.action} para fazer aparecer o menu pendente.
 >>
@@ -75,6 +72,7 @@ Para utilizar a opção de geolocalização por IP, clique nas janelas abaixo pa
 >> Escolha o endereço IP do país para o qual deseja geolocalizar o seu site, entre os 12 países propostos: *República Checa, Finlândia, França, Alemanha, Irlanda, Itália, Lituânia, Países Baixos, Polónia, Portugal, Espanha e Reino Unido*.
 >>
 >> Clique em `Seguinte`{.action} e depois em `Validar`{.action} a partir da janela recapitulativa.
+<!-- CP-STEPS-END:configure-geolocation -->
 
 > [!primary]
 >

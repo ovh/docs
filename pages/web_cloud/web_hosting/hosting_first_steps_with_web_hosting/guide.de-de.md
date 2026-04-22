@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Schnellstart-Anleitung"
 excerpt: "Erfahren Sie hier, wie Sie auf einem Webhosting eine neue Website mithilfe eines 1-Klick-Moduls online stellen und personalisierte E-Mail-Adressen mit Ihrem Domainnamen verwenden"
-updated: 2025-04-07
+updated: 2026-04-22
 ---
 
 <style>
@@ -39,7 +39,7 @@ Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog ers
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -47,21 +47,38 @@ Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog ers
 
 ## In der praktischen Anwendung
 
-### 1 - Verbinden Sie Ihre Domain mit Ihrem Webhosting <a name="part-1"></a>
+### 1 - Ihren Domainnamen einer Website auf Ihrem Webhosting zuordnen <a name="part-1"></a>
 
 > [!success]
 >
 > Wenn Sie Ihren Domainnamen und Ihr Webhosting zusammen abonniert haben, sind diese beiden Dienste bereits verbunden. Fahren Sie mit [Teil 2](#part-2) dieser Anleitung fort.
 
-1. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-2. Wählen Sie den Tab `Multisite`{.action}.
-3. Klicken Sie auf den Button `Aktionen`{.action} oberhalb der Tabelle, in der die bereits für das Webhosting deklarierten Domainnamen aufgeführt sind. Klicken Sie dann auf `Domain oder Subdomain hinzufügen`{.action}.
-4. Aktivieren Sie im angezeigten Fenster die angeforderten Elemente, und geben Sie sie ein, bis sie validiert wurden.
+<!-- CP-STEPS-START:link-domain-website -->
+Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Wählen Sie den Tab `Meine Seiten`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `⁝`{.action} rechts neben der automatisch erstellten Website bei Erstellung Ihres Webhostings, und dann auf `Eine Domain hinzufügen`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Auf der neuen Seite, die sich öffnet, aktivieren Sie und füllen Sie die geforderten Elemente aus, bis sie validiert sind.
+<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Klicken Sie hier für weitere Informationen.
 
 Lesen Sie unsere detaillierten Anleitungen:
 
+- [Wie ordne ich einen Domainnamen einer bestehenden Website zu ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Webhosting - Mehrere Websites auf einem Webhosting hosten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 - [Webhosting - Bereits zugewiesenen Domainnamen bearbeiten](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
@@ -71,10 +88,26 @@ Lesen Sie unsere detaillierten Anleitungen:
 
 Für Webhostings bietet OVHcloud die kostenlose Installation der CMS WordPress, Joomla!, PrestaShop und Drupal über der Option „1-Klick-Module“ an.
 
-1. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-2. Wählen Sie den Tab `1-Klick-Module`{.action}.
-3. Klicken Sie auf die Schaltfläche `Modul hinzufügen`{.action}.
-4. Wählen Sie im angezeigten Fenster das CMS aus, das Sie installieren möchten. Wählen Sie dann die Domain aus, auf der das Modul installiert werden soll, indem Sie den gewünschten Domainnamen **ohne** "www" auswählen (Beispiel: `domain.tld` und nicht `www.domain.tld`) und klicken Sie dann direkt auf `Installieren`{.action}.
+<!-- CP-STEPS-START:install-1click-module -->
+Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Wählen Sie den Tab `1-Klick-Module`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf die Schaltfläche `Modul hinzufügen`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie im angezeigten Fenster das CMS aus, das Sie installieren möchten. Wählen Sie dann die Domain aus, auf der das Modul installiert werden soll, indem Sie den gewünschten Domainnamen **ohne** "www" auswählen (Beispiel: `domain.tld` und nicht `www.domain.tld`) und klicken Sie dann direkt auf `Installieren`{.action}.
+<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Klicken Sie hier für weitere Informationen.
 
@@ -91,8 +124,22 @@ Lesen Sie unsere detaillierten Anleitungen:
 >
 > Wenn Sie Ihren Domainnamen und Ihr Webhosting zusammen bestellt haben, sind die im Webhosting enthaltenen E-Mail-Adressen bereits mit Ihrem Domainnamen verbunden. Gehen Sie dann zu [Teil 4](#part-4) dieser Anleitung.
 
-1. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-2. Klicken Sie in der Seitenleiste **Konfiguration** auf den Button `...`{.action} rechts neben `E-Mail-Adressen`{.action} und dann auf `Mein E-Mail-Angebot aktivieren`{.action}. Wählen Sie auf der neu angezeigten Seite im Bereich `(1)` die betreffende Domain aus und fahren Sie mit der Aktivierung der E-Mail-Adressen fort.
+<!-- CP-STEPS-START:enable-email-solution -->
+Klicken Sie auf die folgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie in der Seitenleiste **Konfiguration** auf den Button `...`{.action} rechts neben `E-Mail-Adressen`{.action} und dann auf `Mein E-Mail-Angebot aktivieren`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie auf der neu angezeigten Seite im Bereich `(1)` die betreffende Domain aus und fahren Sie mit der Aktivierung der E-Mail-Adressen fort.
+<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Klicken Sie hier für weitere Informationen.
 
@@ -102,10 +149,26 @@ Lesen Sie unsere detaillierte Anleitung „[Webhosting - Inklusiv-E-Mail-Adresse
 
 ### 4 - Erstellen Sie eine personalisierte E-Mail-Adresse mit Ihrem Domainnamen <a name="part-4"></a>
 
-1. Klicken Sie auf das Menü `E-Mails`{.action} (oder `MX Plan`{.action}, wenn Sie die neue Version des OVHcloud Kundencenters verwenden) und wählen Sie die betreffende Domain aus.
-2. Klicken Sie auf den Tab `E-Mails`{.action}.
-3. Klicken Sie auf der neu angezeigten Seite auf die Schaltfläche `Eine E-Mail-Adresse erstellen`{.action}.
-4. Geben Sie im angezeigten Fenster die angeforderten Daten ein, bis sie validiert wurden.
+<!-- CP-STEPS-START:create-email-address -->
+Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [MX Plan](/links/control-panel/web-mx-plan) und wählen Sie die betreffende Domain aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `E-Mails`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf der neu angezeigten Seite auf die Schaltfläche `Eine E-Mail-Adresse erstellen`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Geben Sie im angezeigten Fenster die angeforderten Daten ein, bis sie validiert wurden.
+<!-- CP-STEPS-END:create-email-address -->
 
 Wiederholen Sie diesen Vorgang für jede E-Mail-Adresse, die Sie erstellen möchten (im Rahmen Ihres Webhosting Angebots).
 

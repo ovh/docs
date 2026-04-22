@@ -1,8 +1,22 @@
 ---
 title: Activación del firewall de aplicación
 excerpt: Cómo activar el firewall de aplicación en un plan de hosting.
-updated: 2025-08-22
+updated: 2026-04-22
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
@@ -17,12 +31,11 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 - inyección de tipo SQL o XSS,
 - la compra de una caja registradora, entre otros.
 
-**Esta guía explica cómo activar el firewall de aplicación desde el área de cliente de OVHcloud para mejorar la protección.**
+**Descubra cómo activar el firewall de aplicación desde su área de cliente de OVHcloud, para obtener una protección mejorada.** 
 
 > [!primary]
 >
 > Debido a que su alojamiento web está presente en una infraestructura compartida, no es posible modificar los parámetros de configuración del firewall.
->
 
 ## Requisitos
 
@@ -34,7 +47,7 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -42,41 +55,81 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+**Haga clic en los títulos de abajo para ver las explicaciones.**
 
-### Activar el firewall de aplicación en la configuración de PHP
+/// details | Activar el firewall de aplicación en todo su alojamiento web en la configuración PHP
 
-Por defecto, se abrirá la pestaña `Información general`{.action}. La `versión global` de PHP se muestra en el área de **Configuración**. Haga clic en el botón `...`{.action} y seleccione `Editar configuración`{.action}. En la nueva ventana, seleccione el elemento `Modificar la configuración actual`{.action} y haga clic en el botón `Siguiente`{.action}.
+<!-- CP-STEPS-START:enable-firewall -->
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En el cuadro **Configuración**, encontrará la mención **Versión PHP global**.
+>>
+>> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
+>>
+>> Haga clic en el botón `...`{.action} a la derecha de la mención **Versión PHP global**, y luego en `Editar la configuración`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la ventana que se abre, seleccione el elemento `Modificar la configuración actual`{.action} y haga clic en el botón `Siguiente`{.action}.
+>>
+>> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+>>
+>> En la nueva ventana, asegúrese de que la opción **Firewall de aplicación** esté definida en `Activado`{.action}. Haga clic después en el botón `Aceptar`{.action}.
+<!-- CP-STEPS-END:enable-firewall -->
 
-En la nueva ventana, asegúrese de que la **aplicación firewall** esté activada en `Activado`{.action}. Para confirmar la configuración, haga clic en el botón `Confirmar`{.action}.
+///
 
-### Activar el firewall de aplicación para los dominios individuales en un multisitio
+/// details | Activar el firewall de aplicación únicamente en un dominio o subdominio específico
 
-Abra la pestaña `Multisitio`{.action} de su plan de hosting. Haga clic en el botón `...`{.action} a la derecha del dominio correspondiente y seleccione la opción `Cambiar el dominio`{.action}.
+<!-- CP-STEPS-START:disable-firewall -->
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el dominio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la ventana de configuración, marque la casilla `Activar el firewall`{.action}. También puede incluir el subdominio `www` en esta configuración marcando la casilla correspondiente en la parte superior (si también está declarado en el mismo sitio web).
+>>
+>> ![Modify a domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+>>
+>> Haga clic en `Siguiente`{.action}, y luego en `Aceptar`{.action} para validar la modificación de los parámetros.
+>>
+>> Una vez activado el firewall para su dominio o subdominio, la mención **Activado** aparece en la columna **Firewall**.
+>>
+>> Si la mención **Activado** no aparece al cabo de unos minutos en la línea correspondiente al dominio o subdominio en cuestión, recargue la página.
+<!-- CP-STEPS-END:disable-firewall -->
 
-En la ventana de configuración, marque la casilla `Activar firewall`{.action}. También puede incluir el subdominio `www` en esta configuración marcando la casilla situada en la parte superior.
-
-Haga clic en `Siguiente`{.action} y, a continuación, en `Confirmar`{.action} para cambiar la configuración multisitio.
-
-![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
-
-### Comprobar el estado de la tarea de activación
-
-![gestión en curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
-
-Las tareas de actualización de su configuración multisitio se mostrarán en la pestaña `Operaciones en curso`{.action} (el estado inicial es "Planificado"). El cortafuegos estará activo desde que su tarea de actualización deje de aparecer en la lista.
-
-### Verificación de los dominios para los que está activado el firewall
-
-En la pestaña `Multisitio`{.action} de su plan de hosting podrá consultar los dominios en los que esté activada la opción de firewall.
-
-![gerageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
-
-La tabla mostrada contiene todos los dominios añadidos al plan de hosting. En la columna "Cortafuegos", se muestra el estado de activación de cada dominio.
+///
 
 ## Más información
 

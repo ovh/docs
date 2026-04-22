@@ -1,7 +1,7 @@
 ---
 title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Ziel
@@ -16,7 +16,6 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
 > Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
->
 
 ## Voraussetzungen
 
@@ -28,7 +27,7 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
 - **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
@@ -40,24 +39,38 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 >
 > Die Änderung des Domainnamens, über den auf Ihre Website zugegriffen wird, kann Auswirkungen auf deren SEO haben.  
 > Achten Sie daher genau auf die Änderungen, die Sie vornehmen, und kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](/links/partner) für SEO.
->
 
 Um den Domainnamen für den Zugang zu Ihrer Website zu ändern, müssen mehrere Schritte in einer bestimmten Reihenfolge durchgeführt werden.
 
-### Schritt 1: Die neue Domain auf Ihrem Webhosting <a name="step1"></a> deklarieren
+### 1 - Die neue Domain auf Ihrem Webhosting deklarieren <a name="step1"></a>
 
-Registrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation zum [Hinzufügen einer Website auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
+Registrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Website ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
 
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
 - Ihre neue Domain muss auf dasselbe Wurzelverzeichnis verweisen wie die Domain, die derzeit für den Zugang zu Ihrer Website verwendet wird.
-- Überprüfen Sie, ob Ihre neue Domain korrekt auf die IP-Adresse Ihres Webhostings verweist. Um die IP-Adresse abzurufen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie Ihr Hosting aus. Sie finden die Adresse unter **IPv4** im Tab `Allgemeine Informationen`{.action}.
+<!-- CP-STEPS-START:retrieve-hosting-ip -->
+- Überprüfen Sie, ob Ihre neue Domain korrekt auf die IP-Adresse Ihres Webhostings verweist. Um die IP-Adresse abzurufen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Allgemeine Informationen`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Rufen Sie die angezeigte **IPv4** ab.
+<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
-> Wenn Sie die Optionen **Länder-IP** oder **CDN** auf Ihrer neuen Domain aktivieren, ermitteln Sie die richtige IP-Adresse mithilfe unserer Dokumentation: [Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)).
+> Wenn Sie die Optionen **Länder-IP** oder **CDN** auf Ihrer neuen Domain aktivieren, ermitteln Sie die richtige IP-Adresse mithilfe unserer Dokumentation: [Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 >
-> Um die Nummer des Clusters zu finden, in dem sich Ihr Webhosting befindet, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf den Bereich `Hosting-Pakete`{.action}, wählen Sie dann den Tab `FTP-SSH`{.action}. Sie sehen die Cluster-Nummer unter **FTP- und SFTP-Server**: `ftp.clusterXXX.ovh.net` (wobei `XXX` die Cluster-Nummer ist).
+> Um die Nummer des Clusters zu finden, in dem sich Ihr Webhosting befindet, lesen Sie unsere Anleitung "[Webhosting - Cluster und Filer eines Webhostings finden](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 >
 
 > **SSL-Zertifikate**
@@ -66,9 +79,11 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 > - [SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Website auf HTTPS umstellen](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
+<!-- CP-STEPS-START:verify-multisite-config -->
 Wenn alle Aktionen ordnungsgemäß durchgeführt wurden, sollten die Angaben zu Ihren Domainnamen exakt identisch sein **außer, Sie verwenden ein kostenpflichtiges SSL-Zertifikat des Typs *Sectigo DV*, *Sectigo EV* oder *Custom***.
 
-![Multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >
@@ -77,7 +92,7 @@ Wenn alle Aktionen ordnungsgemäß durchgeführt wurden, sollten die Angaben zu 
 
 Wenn Ihre Website keine Datenbanken verwendet und/oder keine URL für Ihre Website umgeschrieben wird, muss diese bereits korrekt mit Ihrer neuen Domain angezeigt werden. Gehen Sie in diesem Fall direkt zu [Schritt 3](#step3) dieser Anleitung. Ist das nicht der Fall, fahren Sie mit Schritt 2 fort.
 
-### Schritt 2: Umschreiben der URLs Ihrer Website auf die neue Domain
+### 2 - Umschreiben der URLs Ihrer Website auf die neue Domain
 
 Die meisten Websites verwenden Datenbanken, um zu funktionieren. Die Baumstruktur dieser Domains wird üblicherweise um die ursprünglich für Ihre Website verwendete Domain erstellt. Für diese Websites sind weitere Maßnahmen erforderlich.
 
@@ -100,9 +115,9 @@ Die meisten CMS erlauben es, direkt über den Admin-Verwaltungsbereich im *Backe
 Da die CMS von Drittanbietern entwickelt werden und nicht von OVHcloud verwaltet werden, finden Sie im Folgenden die Links zur offiziellen Dokumentation der CMS, die auf unseren Webhostings zur Installation angeboten werden:
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
-- Joomla!: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weiere Informationen finden Sie auf den offiziellen Seiten [docs.joomla.org](https://docs.joomla.org/) oder [forum.joomla.org](https://forum.joomla.org/).
+- Joomla!: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf den offiziellen Seiten [docs.joomla.org](https://docs.joomla.org/) oder [forum.joomla.org](https://forum.joomla.org/).
 - Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://drupal.org).
-- PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. FWeitere Informationen finden Sie auf der [offiziellen Seite](https://help-center.prestashop.com).
+- PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der [offiziellen PrestaShop-Seite](https://help-center.prestashop.com).
 
 Bitte beachten Sie, dass bei diesen CMS Änderungen auch direkt vorgenommen werden können, indem Sie die verwendete [Datenbank editieren](/pages/web_cloud/web_hosting/sql_create_database). Ändern Sie dazu die URL Ihrer Website in der entsprechenden Tabelle.
 
@@ -121,9 +136,9 @@ Wenn Sie einen Dienstleister für die Erstellung Ihrer Website beauftragt haben,
 > Sobald Schritt 2 abgeschlossen ist, wird Ihre Website unter dem neuen Domainnamen angezeigt.
 >
 
-### Schritt 3: Den alten Domainnamen entfernen <a name="step3"></a>
+### 3 - Den alten Domainnamen entfernen <a name="step3"></a>
 
-Um „Duplicate-content“ zu vermeiden und sobald Ihr neuer Domainname vollständig mit Ihrer Website funktioniert, müssen Sie die Angabe Ihres alten Domainnamens auf Ihrer Website mithilfe des Leitfadens zur Verwaltung von [Websites auf Ihrem Hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) entfernen.
+Um “Duplicated Content” zu vermeiden und sobald Ihr neuer Domainname vollständig mit Ihrer Website funktioniert, müssen Sie die Angabe Ihres alten Domainnamens auf Ihrer Website mithilfe der Anleitung "[Wie kann ich einen Domainnamen von einer bestehenden Website trennen?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)" entfernen.
 
 > [!warning]
 >

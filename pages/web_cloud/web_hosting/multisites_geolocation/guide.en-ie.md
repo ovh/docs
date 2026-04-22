@@ -1,7 +1,7 @@
 ---
 title: "How do I geolocate a website in a specific country?"
 excerpt: "Find out how to locate your website using the geolocated IP addresses available on OVHcloud shared hosting plans"
-updated: 2025-08-22
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ The geolocation option on your hosting can be useful for SEO if your website is 
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -36,36 +36,33 @@ The geolocation option on your hosting can be useful for SEO if your website is 
 
 For websites hosted on the OVHcloud shared hosting infrastructure which are mainly accessed by international visitors, we offer a geolocation by IP address option. It allows for a better search ranking in the country where the IP address you have selected is located.
 
-To use the IP geolocation option, click on the tabs below to view each of the **5** steps.
+<!-- CP-STEPS-START:configure-geolocation -->
+To use the IP geolocation option, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
+> **Step 2**
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
 > **Step 3**
->>
->> On the page that pops up, click on the `Multisite`{.action} tab.
->>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
->>
+>> 
+>> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
+>> 
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>> 
+>> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify domain`{.action}.
+>> 
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> 
 > **Step 4**
->>
->> On the new page, a table will appear containing your associated domain names.
->>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
->>
->> Click the `...`{.action} button to the right of your domain name in the table. Finally, click `Modify domain`{.action}.
->>
-> **Step 5**
 >>
 >> In the window that pops up, tick the `Country IP`{.action} box to open the drop-down menu.
 >>
@@ -74,6 +71,7 @@ To use the IP geolocation option, click on the tabs below to view each of the **
 >> Choose the IP address of the country for which you want to geolocate your site, from the 12 countries offered: *Czech Republic, Finland, France, Germany, Ireland, Italy, Lithuania, Netherlands, Poland, Portugal, Spain, United Kingdom*.
 >>
 >> Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
+<!-- CP-STEPS-END:configure-geolocation -->
 
 > [!primary]
 >

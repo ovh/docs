@@ -1,7 +1,7 @@
 ---
 title: "Jak rozpocząć korzystanie z hostingu WWW"
 excerpt: 'Dowiedz się, jak zamieścić w Internecie nową stronę WWW za pomocą opcji"Moduły za 1 kliknięciem", jak utworzyć nowy spersonalizowany adres e-mail z nazwą domeny, a wszystko to za pomocą naszego rozwiązania hostingowego'
-updated: 2025-04-07
+updated: 2026-04-22
 ---
 
 <style>
@@ -39,7 +39,7 @@ Chcesz stworzyć stronę WWW dla swojej firmy lub własny blog? Potrzebujesz skl
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -47,21 +47,38 @@ Chcesz stworzyć stronę WWW dla swojej firmy lub własny blog? Potrzebujesz skl
 
 ## W praktyce
 
-### 1 - Przypisz domenę do hostingu <a name="part-1"></a>
+### 1 - Powiązanie nazwy domeny z witryną na Twoim hostingu sieciowym <a name="part-1"></a>
 
 > [!success]
 >
 > Jeśli zamówiłeś domenę i hosting w ramach jednego zamówienia, te dwie usługi są już powiązane. Przejdź bezpośrednio do [Część 2](#część-2) tego przewodnika.
 
-1. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-2. Wybierz zakładkę `MultiSite`{.action} po wybraniu odpowiedniego hostingu.
-3. Na stronie, która się wyświetli kliknij przycisk `Operacje`{.action} znajdujący się nad tabelą zawierającą nazwy domen już zadeklarowanych na hostingu. Następnie kliknij `Dodaj domenę lub subdomenę`{.action}.
-4. W oknie, które się otworzy, zaznacz i uzupełnij wymagane elementy aż do ich zatwierdzenia.
+<!-- CP-STEPS-START:link-domain-website -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Wybierz zakładkę `Moje strony`{.action} po wybraniu odpowiedniego hostingu.
+>>
+> **Krok 3**
+>>
+>> W tabeli, która się pojawi, kliknij przycisk `⁝`{.action} po prawej stronie witryny utworzonej automatycznie podczas tworzenia Twojego hostingu sieciowego, a następnie kliknij `Dodaj domenę`{.action}.
+>>
+> **Krok 4**
+>>
+>> Na nowej stronie, która się otwiera, zaznacz i uzupełnij wymagane elementy aż do ich zweryfikowania.
+<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
 Zapoznaj się ze szczegółowymi przewodnikami:
 
+- [Jak powiązać nazwę domeny z istniejącą witryną internetową ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
@@ -71,10 +88,26 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 
 Dzięki opcji "Moduły CMS", na hostingach OVHcloud można zainstalować za darmo systemy CMS WordPress, Joomla!, PrestaShop i Drupal.
 
-1. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-2. Wybierz zakładkę `Moduły CMS`{.action} po wybraniu odpowiedniego hostingu WWW.
-3. Na stronie, która się wyświetli kliknij przycisk `Dodaj moduł CMS`{.action}.
-4. W wyświetlonym oknie wybierz CMS, który chcesz zainstalować. Następnie wybierz domenę, na której ma zostać zainstalowany moduł, wybierając nazwę domeny **bez "www"** przed (przykład: `domain.tld`, a nie `www.domain.tld`), po czym kliknij bezpośrednio na `Instaluj`{.action}.
+<!-- CP-STEPS-START:install-1click-module -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Wybierz zakładkę `Moduły CMS`{.action} po wybraniu odpowiedniego hostingu WWW.
+>>
+> **Krok 3**
+>>
+>> Na stronie, która się wyświetli kliknij przycisk `Dodaj moduł CMS`{.action}.
+>>
+> **Krok 4**
+>>
+>> W wyświetlonym oknie wybierz CMS, który chcesz zainstalować. Następnie wybierz domenę, na której ma zostać zainstalowany moduł, wybierając nazwę domeny **bez "www"** przed (przykład: `domain.tld`, a nie `www.domain.tld`), po czym kliknij bezpośrednio na `Instaluj`{.action}.
+<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -91,8 +124,22 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 >
 > Jeśli zamówiłeś domenę i hosting w ramach jednego zamówienia, adresy e-mail zawarte w hostingu są już powiązane z twoją domeną. Przejdź bezpośrednio do [Część 4](#część-4) tego przewodnika.
 
-1. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-2. Na stronie, która się wyświetli i w ramce **Konfiguracja** kliknij przycisk `...`{.action} znajdujący się po prawej stronie wzmianki `Adresy e-mail`{.action}, a następnie `Włącz mój pakiet e-mail`{.action}. Na stronie, która się otworzy, wybierz odpowiednią nazwę domeny w sekcji `(1)`, następnie kontynuuj, aż do aktywacji kont e-mail.
+<!-- CP-STEPS-START:enable-email-solution -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli i w ramce **Konfiguracja** kliknij przycisk `...`{.action} znajdujący się po prawej stronie wzmianki `Adresy e-mail`{.action}, a następnie `Włącz mój pakiet e-mail`{.action}.
+>>
+> **Krok 3**
+>>
+>> Na stronie, która się otworzy, wybierz odpowiednią nazwę domeny w sekcji `(1)`, następnie kontynuuj, aż do aktywacji kont e-mail.
+<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -102,10 +149,26 @@ Zapoznaj się ze szczegółowym przewodnikiem "[Hosting WWW - Włącz konta e-ma
 
 ### 4 - Tworzenie spersonalizowanego adresu e-mail z nazwą domeny <a name="part-4"></a>
 
-1. Kliknij menu `E-maile`{.action} (lub `MX Plan`{.action}, jeśli korzystasz z nowej wersji Panelu klienta OVHcloud), następnie wybierz odpowiednią nazwę domeny.
-2. Na stronie, która się wyświetli kliknij zakładkę `E-maile`{.action}.
-3. Na nowej stronie, która się wyświetli, kliknij przycisk `Stwórz adres e-mail`{.action}.
-4. W oknie, które się otworzy, uzupełnij wymagane elementy aż do zatwierdzenia.
+<!-- CP-STEPS-START:create-email-address -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [MX Plan](/links/control-panel/web-mx-plan), następnie wybierz odpowiednią nazwę domeny.
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `E-maile`{.action}.
+>>
+> **Krok 3**
+>>
+>> Na nowej stronie, która się wyświetli, kliknij przycisk `Stwórz adres e-mail`{.action}.
+>>
+> **Krok 4**
+>>
+>> W oknie, które się otworzy, uzupełnij wymagane elementy aż do zatwierdzenia.
+<!-- CP-STEPS-END:create-email-address -->
 
 Powtórz tę operację dla każdego konta e-mail, które chcesz założyć (z ograniczeniem twojej oferty hostingowej).
 
@@ -134,8 +197,8 @@ Zapoznaj się z naszymi przewodnikami zawierającymi szczegółowe informacje na
 - [Logowanie do przestrzeni dyskowej FTP hostingu](/pages/web_cloud/web_hosting/ftp_connection).
 - [Tworzenie automatycznych zadań (CRON) na twoim hostingu](/pages/web_cloud/web_hosting/cron_tasks).
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do [grona naszych użytkowników](/links/community).

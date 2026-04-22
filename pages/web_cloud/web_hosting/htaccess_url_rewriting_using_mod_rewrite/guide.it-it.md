@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - riscrivi l'URL di accesso al mio sito grazie al mod_rewrite tramite il file.htaccess"
 excerpt: "Questa tutorial ti mostra come riscrivere l'URL di accesso al tuo sito grazie al mod_rewrite tramite il file.htaccess"
-updated: 2022-12-22
+updated: 2026-04-22
 ---
 
 ## Obiettivo
@@ -29,17 +29,6 @@ Il "**mod_rewrite**" offre un'infinità di possibilità. Di seguito vi mostrerem
 
 - Disporre di un [hosting condiviso OVHcloud](/links/web/hosting)
   
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -99,17 +88,17 @@ Questa riscrittura dell'URL può favorire l'indicizzazione SEO del tuo sito Web.
 
 ### Reindirizzare le richieste verso una cartella specifica senza visualizzare la pratica in questione
 
-Quando utilizzi un hosting condiviso OVHcloud, il tuo dominio (ad esempio **domain.tld**) è dichiarato in `Multisito` per visualizzare il contenuto di una cartella di destinazione conosciuta anche `Cartella di root`. È possibile personalizzare il nome di `Cartella di root`
+Quando utilizzi un hosting condiviso OVHcloud, il tuo nome dominio (ad esempio: **domain.tld**) è dichiarato su un sito web presente sul tuo hosting. Questo permette di visualizzare il contenuto di una cartella di destinazione detta anche `Cartella di root`. È questa la cartella che contiene i file del tuo sito web. Puoi personalizzare il nome di questa `Cartella di root` al momento dell'aggiunta del sito web sul tuo hosting tramite lo Spazio Cliente OVHcloud.
 
-Per maggiori informazioni sull'argomento, consulta la nostra guida sulla [configurazione di un multisito su un hosting condiviso](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Consulta la nostra guida "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)" se desideri ulteriori informazioni sull'argomento.
 
 Alcuni utenti non caricano il loro sito direttamente alla base della `Cartella di root` e creano una sottocartella (ad esempio: **MyWebsite**) nella loro `Cartella di root` per creare il tuo sito Web.
 
 In questo caso, l'URL per accedere al sito avrà la forma seguente: **http://domain.tld/MyWebsite**
 
-Se il tuo sito Web non è presente direttamente nella `Cartella di root` dichiarata in multisito per il tuo dominio e se non vuoi visualizzare il nome della cartella nell'URL del tuo sito, modifica il file ".htaccess" presente nella cartella che contiene il tuo sito Web. 
+Se i file del tuo sito web non sono direttamente presenti nella `Cartella di root` dichiarata per il tuo sito web sullo Spazio Cliente OVHcloud e non desideri visualizzare il nome della cartella nell'URL del tuo sito web, modifica il file ".htaccess" presente alla radice della directory che contiene il tuo sito web.
 
-Inserisci il seguente codice all'interno (sostituendo nel nostro esempio i valori **domain.tld** con il tuo dominio e **MyWebsite*** con il nome della tua cartella):
+Inserisci il seguente codice all'interno (sostituendo nel nostro esempio i valori **domain.tld** con il tuo dominio e **MyWebsite** con il nome della tua cartella):
 
 ```bash
 RewriteEngine on

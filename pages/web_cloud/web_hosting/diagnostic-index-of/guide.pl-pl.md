@@ -1,15 +1,15 @@
 ---
 title: Co zrobić w przypadku strony "Index of"?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę "Index of"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
-## Wprowadzenie 
+## Wprowadzenie
 
 Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypadków:
 
-- Konfiguracja [Twojego nazwy domeny z Twoją stroną internetową](/pages/web_cloud/web_hosting/multisites_configure_multisite) nie jest poprawnie skonfigurowana do katalogu docelowego.
-- Folder docelowy, do którego Twoja nazwa domeny nie zawiera plików **"index.html"** lub **"index.php"**
+- Konfiguracja [Twojej nazwy domeny z Twoją stroną internetową](/pages/web_cloud/web_hosting/multisites_configure_multisite) nie jest poprawnie skonfigurowana do katalogu docelowego.
+- Folder docelowy, na który wskazuje Twoja nazwa domeny, nie zawiera plików **"index.html"** lub **"index.php"**
 
 ![indeks](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
 
@@ -26,26 +26,15 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 - Posiadanie [domeny](/links/web/domains)
 - Posiadanie [hostingu](/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## W praktyce
 
 ### Zrozumieć pochodzenie strony "Index of"
 
-Twoja domena jest zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/pages/web_cloud/web_hosting/ftp_connection) na hostingu. Jest to w zakładce [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) Twojego hostingu w [Panelu klienta OVHcloud](/links/manager).
+Twoja domena została zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/pages/web_cloud/web_hosting/ftp_connection) Twojego hostingu współdzielonego. Więcej informacji na temat powiązania nazwy domeny z hostingiem znajdziesz w naszym przewodniku "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 Strona **Index of** wskazuje, że dany katalog docelowy nie zawiera pliku **index.php** lub **index.html**. Plik ten stanowi "*punkt wejścia*" Twojej strony WWW. Nazwa tego pliku jest znormalizowana.
 
-Aby wyświetlić Twoją stronę WWW, w części hostingu `Multisite`{.action} należy powiązać domenę z katalogiem głównym, który zawiera ten plik **index.php** lub **index.html*.
+Aby wyświetlić swoją stronę internetową, upewnij się, że `Katalog główny`, dla którego Twoja domena jest zadeklarowana, zawiera plik **index.php** lub **index.html**.
 
 > [!primary]
 >
@@ -55,34 +44,11 @@ Aby wyświetlić Twoją stronę WWW, w części hostingu `Multisite`{.action} na
 
 ### Rozwiąż najczęstszy przypadek na stronie "Index of"
 
-Zaimportowałeś pliki swojej strony **mydomain.ovh** do katalogu `www` swojego hostingu za pomocą [FTP](/pages/web_cloud/web_hosting/ftp_connection). Jednak nazwa domeny nie jest podłączona do tego katalogu w kolumnie `Katalog główny` Twojej strony internetowej.
+Zaimportowałeś pliki swojej strony **domain.tld** do katalogu `www` swojego hostingu za pomocą [FTP](/pages/web_cloud/web_hosting/ftp_connection). Jednak strona internetowa, do której jest przypisana Twoja domena, nie jest połączona z tym katalogiem w kolumnie `Katalog główny`.
 
-![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
+Będziesz musiał zmienić pierwotnie zadeklarowany `Katalog główny` dla swojej strony internetowej w [Panelu klienta OVHcloud](/links/control-panel/web-hosting). Aby to zrobić, zapoznaj się z naszym przewodnikiem "[Jak zmienić katalog główny istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
-Zmień `Katalog główny` klikając przycisk `...`{.action} po prawej stronie tabeli, a następnie `Zmień domenę`{.action}:
-
-![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
-
-W oknie, które się wyświetla:
-
-* Zaznacz kratkę `Zmień również ustawienia subdomeny www.mydomain.ovh.`{.action} (1);
-* Wskaż katalog zawierający plik **index.php** lub **index.html** Twojej strony jako `Katalog główny` (2);
-* Kliknij `Dalej` (3).
-
-![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
-
-> [!primary]
->
-> Używanie katalogu `www` jako `Katalogu główny` nie jest w żadnym wypadku obowiązkowe. Możesz zainstalować Twoją stronę WWW w innym katalogu Twojego [serwera FTP](/pages/web_cloud/web_hosting/ftp_connection).
->
-
-W następnym oknie kliknij `Zatwierdź`{.action}.
-
-![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
-
-W ciągu kilku minut (odświeżając przeglądarkę) otrzymasz następujący wynik:
-
-![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
+Jeśli Twoja strona internetowa została skonfigurowana z użyciem Git, **przed** kontynuowaniem zapoznaj się z naszym przewodnikiem „[Konfiguracja i korzystanie z Git na hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)”, aby usunąć powiązanie z Git. Wynika to z faktu, że zmiana zadeklarowanego folderu głównego dla strony internetowej nie jest możliwa, jeśli Twoja strona internetowa została skonfigurowana z użyciem Git.
 
 Sprawdź, czy Twoja strona wyświetla się poprawnie. W przeciwnym razie zrestartuj urządzenie i w razie potrzeby wyczyść cache przeglądarki.
 

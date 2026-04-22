@@ -1,7 +1,7 @@
 ---
 title: "Eksportowanie witryny internetowej"
 excerpt: "Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Wprowadzenie 
@@ -19,7 +19,7 @@ Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów 
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -40,28 +40,23 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 
 Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu.
 
-Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
+Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej.
 >>
@@ -70,6 +65,7 @@ Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, 
 >> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: "[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 >>
 >> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku"[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
+<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pliki z przestrzeni dyskowej na dwa sposoby:
 
@@ -79,11 +75,32 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pli
 
 #### 1.2 Pobranie plików z przestrzeni dyskowej.
 
-Po zalogowaniu się do swojego obszaru magazynowania, pozostaje Ci tylko pobrać pliki swojej strony internetowej. **Zwracamy Ci szczególne uwagę na katalog, w którym zainstalowałeś swoją stronę**. W przypadku typowego użycia, strona powinna zostać pobrana do katalogu "www". Jednak jeśli korzystasz z hostingu, aby hostować wiele stron internetowych, prawdopodobnie zadeklarowałeś wiele stron internetowych.
+Po zalogowaniu się do swojego miejsca przechowywania i w zależności od witryn internetowych hostowanych na nim, może pojawić się kilka folderów.
 
-Aby sprawdzić katalog, w którym znajduje się Twoja strona internetowa, przejdź do karty `MultiSite`{.action} w Panelu klienta OVHcloud. W wyświetlonej tabeli, dla wybranego domeny, sprawdź `Katalog główny`{.action}, który jest wyświetlany.
+<!-- CP-STEPS-START:find-root-folder -->
+W razie potrzeby wcześniej zidentyfikuj w swoim hostingu nazwę katalogu głównego, w którym znajduje się Twoja witryna internetowa. Aby to zrobić, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> W tabeli, która się pojawi, dla wybranej witryny internetowej sprawdź `Katalog główny`{.action}, który jest wyświetlany.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+<!-- CP-STEPS-END:find-root-folder -->
+
+Nadal zalogowany do swojego miejsca przechowywania, musisz tylko pobrać pliki swojej witryny internetowej, uzyskując dostęp do wcześniej zidentyfikowanego katalogu głównego.
 
 ### 2 - Utworzenie i pobranie kopii bazy danych (opcjonalnie)
 
@@ -100,33 +117,7 @@ Jeśli korzystasz z **serwera Web Cloud Databases** w Twojej witrynie, zapoznaj 
 
 ### 3 - Pobranie logów z hostingu OVHcloud
 
-Jeśli chcesz pobrać historię logów Twojej witryny, możesz to zrobić z poziomu planu hostingu WWW.
-
-Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}.
-
-![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
-
-Następnie kliknij link pod napisem `Sprawdź logi`{.action}:
-
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
-
-Pojawi się okno z różnymi typami dostępnych logów. Są one podzielone według miesięcy:
-
-| Typ  	| Opis                                                                                                                                                                                         	|
-|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Web   	| Tutaj znajdziesz logi dotyczące odwiedzin Twojej witryny, a także działań wykonywanych z jej poziomu. Dzięki temu możesz wykryć np. próby włamania. 	|
-| FTP   	| w tych logach są przechowywane połączenia z FTP.                                                                                                                     	|
-| Error 	| różne błędy generowane przez Twoją witrynę.                                                                                                                                                    	|
-| CGI   	| przeprowadzone wywołania skryptów cgi.bin.                                                                                                                                     	|
-| out   	| statystyki hostingu w zakresie wywołań zewnętrznych.                                                                                                                  	|
-| ssh   	| te logi przedstawiają różne połączenia zrealizowane za pomocą protokołu SSH.                                                                                                                      	|
-| cron  	| wynik realizacji zaplanowanych przez Ciebie zadań.                                                                                                                                                	|
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
-
-Po wybraniu logów danego typu i z konkretnego miesiąca, są one prezentowane dzień po dniu:
-
-![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
+Zapoznaj się z naszym dedykowanym przewodnikiem: [Hosting WWW - Sprawdzanie statystyk i logów strony internetowej](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ## Sprawdź również
 

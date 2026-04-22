@@ -1,13 +1,23 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic"
 excerpt: "Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic"
-updated: 2024-03-12
+updated: 2026-04-22
 ---
+
+<style>
+ pre {
+   background-color: #300A24
+ }
+ details > summary {
+   color: var(--color-brand-blue-600);
+   font-weight: 700;
+ }
+</style>
 
 ## Objectif
 
-Les « [modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » permettent de créer votre site web rapidement. Cette technologie permet de créer votre site web en utilisant les **C**ontent **M**anagement **S**ystem (**CMS**) les plus connus, comme *Wordpress*, *Joomla!*, *Drupal* ou *PrestaShop*.
-Cependant, si la configuration de ces derniers n'est pas correctement réalisée, l’installation du « module en 1 clic » peut échouer et/ou occasionner des dysfonctionnements.
+Les « [modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » permettent de créer votre site web rapidement. Cette technologie permet de créer votre site web en utilisant les **C**ontent **M**anagement **S**ystem (**CMS**) les plus connus, comme *WordPress*, *Joomla!*, *Drupal* ou *PrestaShop*.
+Cependant, si la configuration de ces derniers n'est pas correctement réalisée, l'installation du « module en 1 clic » peut échouer et/ou occasionner des dysfonctionnements.
 
 **Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de « module en 1 clic »**
 
@@ -15,7 +25,7 @@ Cependant, si la configuration de ces derniers n'est pas correctement réalisée
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
 ## Prérequis
@@ -28,7 +38,7 @@ Cependant, si la configuration de ces derniers n'est pas correctement réalisée
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---
@@ -39,32 +49,72 @@ Cependant, si la configuration de ces derniers n'est pas correctement réalisée
 > [!primary]
 >
 > Vous trouverez ici les erreurs les plus courantes. Si vous rencontrez une situation différente de celles présentées, consultez notre [FAQ sur les hébergements Web](/pages/web_cloud/web_hosting/faq-web_hosting).
->
 
-### Votre nom de domaine n'est pas proposé lors de la création du « module en 1 clic »
+**Cliquez sur les 15 titres ci-dessous pour afficher le contenu.**
 
+/// details | Votre nom de domaine n'est pas proposé lors de la création du « module en 1 clic »
+
+<!-- CP-STEPS-START:check-module-status -->
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné par l'installation. Sur la page qui s'affiche, cliquez sur l’onglet `Multisite`{.action}, puis effectuez les vérifications suivantes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-|Scénario|Solution|
-|---|---|
-|Le domaine ou le sous-domaine lié au site web que vous souhaitez créer n'apparaît pas dans le tableau présent dans l'onglet `Multisite`{.action}.|Ajoutez votre domaine en suivant [ces indications](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
-|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine depuis l'onglet `Multisite`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Effectuez ensuite les vérifications suivantes :
+>>
+>> |Scénario|Solution|
+>> |---|---|
+>> |Le domaine ou le sous-domaine lié au site web que vous souhaitez créer n'apparaît pas dans le tableau présent dans l'onglet `Mes sites`{.action}.|Ajoutez votre nom de domaine en suivant [ces indications](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+>> |Le nom de domaine a été détaché du site web sans action de votre part.|Si votre nom de domaine ou sa [zone DNS](/pages/web_cloud/domains/dns_zone_edit) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre nom de domaine depuis l'onglet `Mes sites`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+<!-- CP-STEPS-END:check-module-status -->
 
-### « Une erreur s'est produite lors du chargement des informations (You need at least one free database) »
+///
 
+/// details | « Une erreur s'est produite lors du chargement des informations (You need at least one free database) »
+
+<!-- CP-STEPS-START:change-root-folder -->
 ![No databases available](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-no-db-available.png){.thumbnail}
 
 Ce message apparaît quand vous lancez l'installation de votre « module en 1 clic » lorsque vous n'avez pas ou plus la possibilité de créer une nouvelle base de données associée à votre hébergement web.
 
 #### Solution n°1 : commander une nouvelle base de données
 
-Si vous n'avez plus de bases de données incluses avec votre hébergement web, vous pouvez commander une nouvelle [base de données Start SQL](/links/web/hosting-options-startsql) tout en l'associant à votre hébergement web actuel. Vous pourrez ensuite relancer l’installation du « module en 1 clic ». Si vous avez besoin de plus d’espace de stockage (supérieur à 1 Go), nous vous recommandons plutôt d'utiliser notre service [Web Cloud Databases](/links/web/databases).
+Si vous n'avez plus de bases de données incluses avec votre hébergement web, vous pouvez commander une nouvelle [base de données Start SQL](/links/web/hosting-options-startsql) tout en l'associant à votre hébergement web actuel. Vous pourrez ensuite relancer l'installation du « module en 1 clic ». Si vous avez besoin de plus d'espace de stockage (supérieur à 1 Go), nous vous recommandons plutôt d'utiliser notre service [Web Cloud Databases](/links/web/databases).
 
-Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné par l'ajout d'une base de données supplémentaire. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}, puis sur `Actions`{.action} pour commander une base de données supplémentaire:
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Bases de données`{.action}, puis sur `Actions`{.action} pour commander une base de données supplémentaire :
+>>
+>> ![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
+>>
+<!-- CP-STEPS-END:change-root-folder -->
 
 Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 clic ».
 
@@ -80,9 +130,21 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 > Retrouvez le comparatif de nos différentes [offres d'hébergement](/links/web/hosting).
 >
 
-Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} `Changer d'offre`{.action} :
+<!-- CP-STEPS-START:find-admin-credentials -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} puis sur `Changer d'offre`{.action} :
+>>
+>> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
+>>
+<!-- CP-STEPS-END:find-admin-credentials -->
 
 Les offres [Pro](/links/web/hosting-professional-offer) et [Performance](/links/web/hosting-performance-offer) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](/links/web/databases).
 
@@ -95,11 +157,21 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 > L'opération de suppression d'une base de données est définitive. Elle entraîne également la suppression des sauvegardes de la base de données concernée. En cas de doutes, contactez votre webmaster ou l'un de nos [partenaires](/links/partner).
 >
 
-Pour supprimer une base de données depuis votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement Web concerné.
+<!-- CP-STEPS-START:diag-delete-database -->
+Pour supprimer une base de données, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données que vous souhaitez supprimer, puis sur `Supprimer la base de données`{.action} :
-
-![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données que vous souhaitez supprimer, puis sur `Supprimer la base de données`{.action} :
+>>
+>> ![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
+>>
+<!-- CP-STEPS-END:diag-delete-database -->
 
 Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 clic ».
 
@@ -121,39 +193,75 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
-### Votre « module en 1 clic » s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
+///
+
+/// details | Votre « module en 1 clic » s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
 
 ![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre « module en 1 clic »](#delete-the-module), puis sa [base de données](#delete-the-database). Relancez ensuite l'installation de votre « module en 1 clic » sur le nom de domaine souhaité.
 
-### « Le répertoire d'installation n'est pas vide »
+///
+
+/// details | « Le répertoire d'installation n'est pas vide »
 
 ![folder_not_empty](/pages/assets/screens/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
 
 Après avoir lancé la création de votre « module en 1 clic », vous avez reçu un e-mail indiquant que le répertoire d'installation de votre « module en 1 clic » n'est pas vide.
 
-Ce message signifie que le **Dossier racine** associé à votre nom de domaine contient déjà un ou plusieurs fichiers ou dossiers.
+Ce message signifie que le **Dossier racine** du site web sur lequel est associé votre nom de domaine contient déjà un ou plusieurs fichiers ou dossiers.
 
-Pour relier votre nom de domaine à un autre répertoire, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement Web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `Multisite`{.action}. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à votre nom de domaine, puis cliquez sur `Modifier le domaine`{.action}. Enfin, indiquez le nom d'un nouveau **Dossier racine** (un répertoire vide sera créé automatiquement sur votre hébergement web).
+<!-- CP-STEPS-START:change-domain-root-folder -->
+Pour relier votre nom de domaine à un autre site web (dossier racine), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-![modify_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Détacher le domaine`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Une fois le nom de domaine dissocié du site web, suivez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+<!-- CP-STEPS-END:change-domain-root-folder -->
 
 Vous pouvez également vous connecter à votre hébergement web via le protocole [FTP](/pages/web_cloud/web_hosting/ftp_connection), puis supprimer le contenu du dossier. Ceci après l'avoir sauvegardé en local ou après l'avoir vidé en déplaçant tout son contenu dans un autre répertoire FTP.
 
-### « Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module). »
+///
 
-Ce message indique que le fichier « .ovhconfig » est inexistant ou invalide pour pouvoir installer votre « module en 1 clic ». Ce fichier contient la version de PHP et l'environnement d'exécution appliqués à votre hébergement web.
+/// details | « Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module). »
+
+Ce message indique que le fichier « .ovhconfig » est inexistant ou invalide pour installer votre « module en 1 clic ». Ce fichier contient la version de PHP et l'environnement d'exécution appliqués à votre hébergement web.
 
 Il est recommandé d'utiliser la version de PHP la plus récente possible. **Avant** de changer la configuration du fichier « .ovhconfig », si vous disposez d'autres sites web sur votre hébergement web, assurez-vous que ces derniers sont compatibles avec la nouvelle version de PHP et/ou le nouvel environnement d'exécution que vous allez appliquer sur votre hébergement web.
 
 Pour vérifier cette configuration, consultez notre guide « [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting) ».
 
-### « Une erreur s'est produite lors du chargement des informations (There is not enough space on your hosting (you need at least xxx MB)) »
+///
 
+/// details | « Une erreur s'est produite lors du chargement des informations (There is not enough space on your hosting (you need at least xxx MB)) »
+
+<!-- CP-STEPS-START:check-database-credentials -->
 ![not_enough_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-not-enough-ftp-space.png){.thumbnail}
 
-Ce message indique que l'[espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web comporte un volume de données trop important. 
+Ce message indique que l'[espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web comporte un volume de données trop important.
 
 #### Solution n°1 : supprimer des données pour libérer de l'espace de stockage FTP
 
@@ -174,13 +282,26 @@ Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_c
 > Retrouvez le comparatif de nos différentes [offres d'hébergement web](/links/web/hosting).
 >
 
-Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} `Changer d'offre`{.action} :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} puis sur `Changer d'offre`{.action} :
+>>
+>> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
+>>
+<!-- CP-STEPS-END:check-database-credentials -->
 
 Les offres [Pro](/links/web/hosting-professional-offer) et [Performance](/links/web/hosting-performance-offer) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](/links/web/databases).
 
-### « Impossible de se connecter à la base de données » <a name="delete-the-module"></a>
+///
+
+/// details | « Impossible de se connecter à la base de données » <a name="delete-the-module"></a>
 
 ![wrong_id_database](/pages/assets/screens/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
 
@@ -188,20 +309,34 @@ Après avoir lancé l'installation de votre « module en 1 clic » en mode avanc
 
 Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Supprimez ensuite votre « module en 1 clic ». Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement Web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à votre nom de domaine, puis cliquez sur `Supprimer le module`{.action}.
+<!-- CP-STEPS-START:diag-delete-module -->
+Supprimez ensuite votre « module en 1 clic ». Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-![delete_a_module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module-2.png){.thumbnail}
-
-> [!warning]
->
-> **Supprimer des éléments dans votre base de données peut entraîner une coupure de votre site web.**
->
-> Veillez à supprimer uniquement l'installation que vous venez de lancer. Pour cela, vérifiez qu'il s'agit bien du répertoire concerné dans la colonne `Path` (chemin).
->
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à votre nom de domaine, puis cliquez sur `Supprimer le module`{.action}.
+>>
+>> ![delete_a_module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module-2.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > **Supprimer des éléments dans votre base de données peut entraîner une coupure de votre site web.**
+>> >
+>> > Veillez à supprimer uniquement l'installation que vous venez de lancer. Pour cela, vérifiez qu'il s'agit bien du répertoire concerné dans la colonne `Path` (chemin).
+>> >
+>>
+<!-- CP-STEPS-END:diag-delete-module -->
 
 Puis relancez l'installation d'un nouveau « module en 1 clic ».
 
-### « You have insufficient rights on this database. »
+///
+
+/// details | « You have insufficient rights on this database. »
 
 ![insufficient_rights](/pages/assets/screens/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
 
@@ -219,7 +354,9 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
-### « Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
+///
+
+/// details | « Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES) »
 
 ![cant_connect](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
 
@@ -229,19 +366,45 @@ Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](/pages
 
 Vérifiez également ses identifiants en vous [connectant directement](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) à votre serveur de bases de données, puis relancez l'installation de votre « module en 1 clic ».
 
-### « Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db' »
+///
+
+/// details | « Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db' »
 
 ![cant_connect_server](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
 
 Vous avez lancé l'installation d'un « module en 1 clic » en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur une base de données située sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que le nom de serveur de bases de données que vous avez indiqué est incorrect.
 
-Pour retrouver le nom de votre serveur de bases de données , connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Web Cloud Databases`{.action} dans la colonne de gauche, puis sélectionnez le serveur de bases de données concerné.
+<!-- CP-STEPS-START:find-db-server-name -->
+Pour retrouver le nom de votre serveur de bases de données, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-Sur la page qui s'affiche, le nom du serveur à utiliser est indiqué dans l'encadré `Informations de connexion`, sous-partie `SQL`, sous la mention `Nom d'hôte`.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis sélectionnez le serveur de bases de données concerné.
+>>
+> **Étape 2**
+>>
+>> Le nom du serveur à utiliser est indiqué dans l'encadré `Informations de connexion`, sous-partie `SQL`, sous la mention `Nom d'hôte`.
+>>
+<!-- CP-STEPS-END:find-db-server-name -->
 
-### Votre ancien site web continue de s'afficher
+///
 
-Dans l'onglet `Modules en 1 clic` de l'hébergement web contenant votre site web, lorsque vous cliquez sur le lien de votre site web dans la colonne `Chemin`, un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « domain.tld », il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
+/// details | Votre ancien site web continue de s'afficher
+
+<!-- CP-STEPS-START:verify-db-connection -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Dans l'onglet `Modules en 1 clic`{.action}, cliquez sur le lien de votre site web dans la colonne `Chemin`. Un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « domain.tld », il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
+>>
+<!-- CP-STEPS-END:verify-db-connection -->
 
 Ce dysfonctionnement peut avoir plusieurs causes :
 
@@ -251,29 +414,37 @@ Ce dysfonctionnement peut avoir plusieurs causes :
 
 - Votre nom de domaine est toujours relié à votre ancien hébergement web. Modifiez dans ce cas la [zone DNS active](/pages/web_cloud/domains/dns_zone_edit) associée à votre nom de domaine ou ses [serveurs DNS](/pages/web_cloud/domains/dns_server_edit). Si la zone DNS active de votre nom de domaine n'est pas gérée chez OVHcloud, contactez votre fournisseur DNS à ce sujet.
 
-### Le mot de passe « Administrateur » d'accès à « l'interface d'administration » de votre module en 1 clic ne fonctionne pas <a name="adminpassword"></a>
+///
 
-En cas de rejet de votre mot de passe actuel d'accès à l’interface d’administration de votre **C**ontent **M**anagement **S**ystem (**CMS**), consultez le paragraphe « Modifier le mot de passe de votre module » de notre documentation sur la [gestion de votre module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+/// details | Le mot de passe « Administrateur » d'accès à « l'interface d'administration » de votre module en 1 clic ne fonctionne pas <a name="adminpassword"></a>
 
-### Le préfixe des tables de votre base de données est déjà utilisé sur votre base de données
+En cas de rejet de votre mot de passe actuel d'accès à l'interface d'administration de votre **C**ontent **M**anagement **S**ystem (**CMS**), consultez le paragraphe « Modifier le mot de passe de votre module » de notre documentation sur la [gestion de votre module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+
+///
+
+/// details | Le préfixe des tables de votre base de données est déjà utilisé sur votre base de données
 
 Cette erreur ne concerne que les installations de « modules en 1 clic » en *mode avancé*.
 
-Elle vous informe par e-mail que, lors de la tentative d'installation du « module en 1 clic », vous avez renseigné un préfixe de tables déjà utilisé sur la base de données précédemment sélectionnée pour installer votre « module en 1 clic ». L'installation est alors annulée. 
+Elle vous informe par e-mail que, lors de la tentative d'installation du « module en 1 clic », vous avez renseigné un préfixe de tables déjà utilisé sur la base de données précédemment sélectionnée pour installer votre « module en 1 clic ». L'installation est alors annulée.
 
 Relancez l'installation avec un autre préfixe de tables ou une autre base de données pour corriger la situation.
 
-### Les DNS du nom de domaine ne pointent pas vers un hébergement web OVHcloud
+///
+
+/// details | Les DNS du nom de domaine ne pointent pas vers un hébergement web OVHcloud
 
 Cette erreur vous informe que les entrées DNS du nom de domaine utilisé pour votre site web ne pointent pas vers un hébergement web OVHcloud. Or il n'est pas possible d'installer un « module en 1 clic » sur un domaine qui ne pointe pas sur un hébergement OVHcloud.
 Pour résoudre cette situation, vous devez éditer votre zone DNS. Pour en savoir plus sur les adresses IP à renseigner, lisez le guide [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_cloud_databases/configure-database-server). Vous devrez ensuite [Éditer votre zone DNS](/pages/web_cloud/domains/dns_zone_edit).
-Si votre zone DNS n’est pas hébergée chez OVHcloud, contactez votre fournisseur de zone DNS afin qu'il effectue le nécessaire.
+Si votre zone DNS n'est pas hébergée chez OVHcloud, contactez votre fournisseur de zone DNS afin qu'il effectue le nécessaire.
 
 Une fois terminé, relancez l'installation d'un nouveau « module en 1 clic ».
 
-### Votre base de données nécessite d'être en version "X", or celle-ci est actuellement en version "Y"
+///
 
-Ce message reçu par e-mail vous informe que la version de votre base de données est trop ancienne pour installer votre « module en 1 clic ». 
+/// details | Votre base de données nécessite d'être en version "X", or celle-ci est actuellement en version "Y"
+
+Ce message reçu par e-mail vous informe que la version de votre base de données est trop ancienne pour installer votre « module en 1 clic ».
 
 Vous retrouverez dans ce même e-mail la version dans laquelle votre base de données doit se trouver. Trois possibilités s'offrent à vous :
 
@@ -283,11 +454,13 @@ Vous retrouverez dans ce même e-mail la version dans laquelle votre base de don
 
 Une fois terminé, relancez l'installation d'un nouveau « module en 1 clic ».
 
+///
+
 ## Aller plus loin <a name="go-further"></a>
 
 [Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Les problemes recurrents lors de l’utilisation d’un logiciel FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
+[Les problèmes récurrents lors de l'utilisation d'un logiciel FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
 

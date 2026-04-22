@@ -1,7 +1,7 @@
 ---
 title: Modifier le mot de passe de la base de données d'un hébergement web
 excerpt: Découvrez comment changer le mot de passe d'une base de données créée dans le cadre d'une offre d'hébergement web
-updated: 2025-10-08
+updated: 2026-04-22
 ---
 
 ## Objectif
@@ -22,10 +22,10 @@ Il est donc impératif, si vous souhaitez changer le mot de passe de votre base 
 
 La modification du mot de passe de la base de données de votre site nécessite quatre actions :
 
-- [1 : Identifier le fichier de configuration de votre site](#step1);
-- [2 : Identifier la base de données de votre site](#step2);
-- [3 : Modifier le mot de passe de la base de données de votre site dans son fichier de configuration](#step3);
-- [4 : Modifier le mot de passe de la base de données de votre site sur le serveur de bases de données](#step4).
+- [1 : identifier le fichier de configuration de votre site](#step1);
+- [2 : identifier la base de données de votre site](#step2);
+- [3 : modifier le mot de passe de la base de données de votre site dans son fichier de configuration](#step3);
+- [4 : modifier le mot de passe de la base de données de votre site sur le serveur de bases de données](#step4).
 
 **Découvrez comment changer le mot de passe d'une base de données de façon sécurisée.**
 
@@ -33,7 +33,7 @@ La modification du mot de passe de la base de données de votre site nécessite 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
 ## Prérequis
@@ -47,7 +47,7 @@ La modification du mot de passe de la base de données de votre site nécessite 
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
 
 ---
@@ -57,11 +57,36 @@ La modification du mot de passe de la base de données de votre site nécessite 
 
 ### 1 : Identifier le fichier de configuration de votre site <a name="step1"></a>
 
-Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action} puis sur `Hébergements`{.action} et enfin sur l'hébergement concerné. Rendez-vous ensuite dans l'onglet `Multisite`{.action}. Identifiez le nom du `Dossier racine` de votre site (le répertoire dans lequel se trouvent ses fichiers et dossiers).
+<!-- CP-STEPS-START:find-config-file -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-Accédez ensuite à l'espace contenant les fichiers et dossiers de votre site (*espace FTP*) en consultant ce [guide](/pages/web_cloud/web_hosting/ftp_connection).
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Identifiez le nom du `Dossier racine` de votre site web. Il s'agit du répertoire dans lequel se trouvent ses fichiers et dossiers.
+>>
+>> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> Accédez ensuite à l'espace de stockage FTP contenant les fichiers et dossiers de votre site en consultant [ce guide](/pages/web_cloud/web_hosting/ftp_connection).
+<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -78,7 +103,7 @@ Recherchez et ouvrez le fichier de configuration de votre site :
 
 ### 2 : Identifier la base de données de votre site <a name="step2"></a>
 
-Dans le fichier de configuration identifié à [l'étape 1](#step1), commencez par noter le nom de sa base de données :
+Dans le fichier de configuration identifié dans la [partie 1](#step1), commencez par noter le nom de sa base de données :
 
 - Pour WORDPRESS : le nom apparaît sous la mention **« DB_NAME »**;
 - Pour JOOMLA : le nom apparaît sous **« public $db »**;
@@ -107,7 +132,7 @@ Choisissez le nouveau mot de passe de votre base de données et notez-le. Il dev
 - Au moins un chiffre;
 - Être composé uniquement de chiffres et de lettres.
 
-De la même manière qu'à [l'étape 1](#step1), retournez dans l'espace de stockage de fichiers de votre hébergement puis ouvrez en édition le fichier de configuration de votre site.
+De la même manière que dans la [partie 1](#step1), retournez dans l'espace de stockage de fichiers de votre hébergement puis ouvrez en édition le fichier de configuration de votre site.
 
 **Avant toute modification**, enregistrez localement le contenu de ce fichier dans un document texte, afin d'en conserver une copie en cas d'erreur de manipulation.
 
@@ -170,38 +195,34 @@ Sauvegardez cette modification.
 > Cette opération nécessitera quelques minutes avant d'être effective. Après l'avoir lancée, pensez à vérifier son état dans l'onglet `Tâches en cours`{.action}.
 >
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+<!-- CP-STEPS-START:change-db-password-server -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Cliquez ensuite sur le bouton `...`{.action} à droite de la base de données de votre site puis sur `Changer le mot de passe`{.action}.
 >>
 >> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données (défini dans la [partie 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+<!-- CP-STEPS-END:change-db-password-server -->
 
 ## Aller plus loin <a name="go-further"></a>
 

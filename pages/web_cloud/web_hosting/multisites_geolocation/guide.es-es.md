@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo geolocalizar un sitio web en un país específico?"
 excerpt: "Esta guía explica cómo localizar un sitio web con las direcciones IP geolocalizadas disponibles en los planes de hosting de OVHcloud"
-updated: 2025-08-22
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -27,7 +27,7 @@ La opción de geolocalización en su alojamiento puede ser útil para el posicio
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -37,36 +37,33 @@ La opción de geolocalización en su alojamiento puede ser útil para el posicio
 
 Para los sitios web principalmente consultados en el extranjero y alojados en nuestra infraestructura de hosting OVHcloud, ofrecemos una opción de geolocalización por dirección IP. Permite posicionar mejor los sitios web en el país en el que está situada la dirección IP seleccionada con la opción.
 
-Para utilizar la opción de geolocalización por IP, haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+<!-- CP-STEPS-START:configure-geolocation -->
+Para utilizar la opción de geolocalización por IP, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
 > **Etapa 3**
 >>
->> En la nueva página, haga clic en la pestaña `Multisitio`{.action}.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el dominio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Etapa 4**
->>
->> En la nueva página, aparecerá una tabla con los dominios asociados.
->>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
->>
->> Haga clic en el botón `...`{.action} situado a la derecha de su dominio en la tabla. Por último, haga clic en `Modificar el dominio`{.action}.
->>
-> **Etapa 5**
 >>
 >> En la nueva ventana, marque la casilla `IP del país`{.action} para mostrar el menú desplegable.
 >>
@@ -75,6 +72,7 @@ Para utilizar la opción de geolocalización por IP, haga clic en las fichas sig
 >> Seleccione la dirección IP del país para el que quiere geolocalizar su sitio web, de los 12 países propuestos: *República Checa, Finlandia, Francia, Alemania, Irlanda, Italia, Lituania, Países Bajos, Polonia, Portugal, España, Reino Unido*.
 >>
 >> Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action} en la ventana de resumen.
+<!-- CP-STEPS-END:configure-geolocation -->
 
 > [!primary]
 >

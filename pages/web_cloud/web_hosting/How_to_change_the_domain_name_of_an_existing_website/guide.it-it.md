@@ -1,7 +1,7 @@
 ---
 title: "Casi d’uso - Come cambiare il dominio di un sito esistente"
 excerpt: "Questa guida ti mostra come modificare il dominio di un sito esistente"
-updated: 2025-10-28
+updated: 2026-04-22
 ---
 
 ## Obiettivo
@@ -17,7 +17,6 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
 > Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
->
 
 ## Prerequisiti
 
@@ -29,7 +28,7 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -41,35 +40,51 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 >
 > La modifica del dominio per accedere al tuo sito può avere conseguenze sul suo posizionamento nei motori di ricerca. 
 > Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](/links/partner) nel referenziamento se necessario.
->
 
 Per modificare il dominio di accesso al tuo sito Web, segui diversi step in un ordine preciso.
 
-### Step 1 - Dichiarare il nuovo dominio sul tuo hosting condiviso <a name="step1"></a>
+### 1 - Dichiarare il nuovo dominio sul tuo hosting condiviso <a name="step1"></a>
 
-Dichiarate il vostro nuovo dominio utilizzando la nostra documentazione sull'[aggiunta di un sito web al vostro hosting condiviso](/pages/web_cloud/web_hosting/multisites_configure_multisite). Dovrete inoltre dichiarare il sottodominio in `www` se desiderate, ad esempio, che `www.NewDomain.tld` mostri il vostro sito insieme a `NewDomain.tld`.
+Dichiara il nuovo nome di dominio seguendo la nostra guida « [Come associare un nome di dominio a un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Dovrete inoltre dichiarare il sottodominio in `www` se desiderate, ad esempio, che `www.NewDomain.tld` mostri il vostro sito insieme a `NewDomain.tld`.
 
 Per superare lo Step 1 sono necessarie diverse condizioni:
 
 - Il tuo nuovo dominio deve puntare alla stessa "cartella di root" del dominio utilizzato per accedere al tuo sito
-- Verifica che il tuo nuovo dominio punti verso il giusto indirizzo IP del tuo hosting condiviso. Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web cloud`{.action}, clicca su `Hosting plans`{.action}, seleziona il tuo hosting e recupera **l'IPv4** nella scheda `Informazioni generali`{.action}.
+<!-- CP-STEPS-START:retrieve-hosting-ip -->
+- Verifica che il tuo nuovo dominio punti verso il giusto indirizzo IP del tuo hosting condiviso. Per recuperare l'indirizzo IP, clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Clicca sulla scheda `Informazioni generali`{.action}.
+>>
+> **Passaggio 3**
+>>
+>> Recupera **l'IPv4** visualizzata.
+<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
-> Se attivate le opzioni **IP del paese** o **CDN** con il vostro nuovo dominio, utilizzate il giusto indirizzo IP con la nostra documentazione che censisce [l'insieme degli indirizzi IP dei nostri hosting condivisi](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Se attivate le opzioni **IP del paese** o **CDN** con il vostro nuovo dominio, utilizzate il giusto indirizzo IP con la nostra documentazione che censisce [l'insieme degli indirizzi IP dei nostri hosting condivisi](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 >
-> Per visualizzare il numero del cluster in cui si trova il tuo hosting, accedi alla sezione `Web cloud`{.action}, clicca su `Hosting plans`{.action}, seleziona il tuo hosting e poi la scheda `FTP-SSH`{.action}. Visualizzerai il numero del cluster nel form **Server FTP e SFTP**: `ftp.cluster0XX.ovh.net` (dove le `X` rappresentano il numero di cluster).
+> Per visualizzare il numero del cluster in cui si trova il tuo hosting, consulta la nostra guida "[Hosting Web - Come conoscere cluster e filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 >
 
 > **Certificati SSL**
 >
-> Se il dominio inizialmente utilizzato per accedere al vostro sito web dispone di un certificato SSL, consultate i nostri 2 guide :
+> Se il dominio inizialmente utilizzato per accedere al vostro sito web dispone di un certificato SSL, consultate le nostre 2 guide:
 > - [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Attiva il protocollo HTTPS sul tuo sito Web con il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
+<!-- CP-STEPS-START:verify-multisite-config -->
 Se tutte le azioni sono state correttamente eseguite, le dichiarazioni dei vostri domini devono essere rigorosamente identiche **a meno che non utilizziate un certificato SSL a pagamento di tipo *Sectigo DV*, *Sectigo EV* o *custom***.
 
-![multisito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >
@@ -78,9 +93,9 @@ Se tutte le azioni sono state correttamente eseguite, le dichiarazioni dei vostr
 
 Se il tuo sito non utilizza database e/o se non effettui una riscrittura dell'URL per il tuo sito web, quest'ultimo deve già essere correttamente visualizzato con il tuo nuovo dominio. In questo caso, passa direttamente allo [Step 3](#step3) di questa guida. In caso contrario, passa allo Step 2 qui sotto.
 
-### Step 2 - riscrittura degli URL nel tuo sito web con il nuovo dominio
+### 2 - Riscrittura degli URL nel tuo sito web con il nuovo dominio
 
-La maggior parte dei siti utilizza database per funzionare. che viene generalmente costruita attorno al dominio utilizzato per il tuo sito. Per questi siti sono necessarie ulteriori azioni.
+La maggior parte dei siti utilizza database per funzionare. La struttura di questi ultimi viene generalmente costruita attorno al dominio utilizzato per il tuo sito. Per questi siti sono necessarie ulteriori azioni.
 
 > [!warning]
 >
@@ -103,13 +118,13 @@ I CMS sono sviluppati da organizzazioni terze non gestite da OVHcloud. Di seguit
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla! : L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, consulta le pagine ufficiali [docs.joomla.org](https://docs.joomla.org/) o [forum.joomla.org](https://forum.joomla.org/).
 - Drupal: L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, consulta le pagine ufficiali [drupal.org](https://drupal.org) o [drupal.fr](https://drupal.fr).
-- PrestaShop: L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, clicca [qui](https://help-center.prestashop.com) per accedere alla pagina ufficiale.
+- PrestaShop: L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, consulta la [pagina ufficiale di PrestaShop](https://help-center.prestashop.com).
 
 Ti ricordiamo che anche per questi CMS è possibile effettuare modifiche direttamente [in database](/pages/web_cloud/web_hosting/sql_create_database). È necessario modificare l'URL di accesso al tuo sito nella tabella prevista a tal fine.
 
 Per gli altri CMS non preinstallati automaticamente da OVHcloud, ti consigliamo di contattare i loro rispettivi supporti per eseguire questa riscrittura in totale sicurezza. 
 
-#### Caso n. 2: il tuo sito web è un sito "fatto case"
+#### Caso n. 2: il tuo sito web è un sito "fatto in casa"
 
 Per riscrivere i tuoi URL con il tuo nuovo dominio, [collegati al database del tuo sito](/pages/web_cloud/web_hosting/sql_create_database) e sostituisci il tuo vecchio dominio con il nuovo nella tabella corrispondente. 
 
@@ -122,20 +137,20 @@ Se hai contattato un provider per creare il tuo sito, contattalo per effettuare 
 > Una volta completato lo Step 2, il tuo sito deve essere visualizzato con il nuovo dominio.
 >
 
-### Step 3 - Rimuovi il vecchio dominio <a name="step3"></a>
+### 3 - Rimuovi il vecchio dominio <a name="step3"></a>
 
-Per evitare il "duplicate-content" e quando il vostro nuovo nome di dominio è pienamente operativo con il vostro sito web, dovrete eliminare la dichiarazione del vostro vecchio nome di dominio sul vostro sito web utilizzando la guida sulla gestione dei [siti web sul vostro hosting condiviso](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Per evitare il « *Duplicate-content* » e quando il tuo nuovo nome di dominio è pienamente operativo con il tuo sito web, dovrai eliminare la dichiarazione del vecchio nome di dominio sul tuo sito web utilizzando la guida « [Come separare un dominio da un sito web esistente](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 > [!warning]
 >
-> Ricordati di occuparti del tuo certificato SSL *Sectigo EV*, *Sectigo DV* o *Custom* come specificato nello Step 1](#step1).
+> Ricordati di occuparti del tuo certificato SSL *Sectigo EV*, *Sectigo DV* o *Custom* come specificato nello [Step 1](#step1).
 >
 
 Una volta che il vostro vecchio nome di dominio è stato disconnesso dal vostro sito web ospitato sull'hosting e se è registrato presso OVHcloud, potrete reindirizzarlo utilizzando una [redirezione visibile permanente 301](/pages/web_cloud/domains/redirect_domain_name). Questo permetterà ai vostri visitatori di essere automaticamente reindirizzati verso il vostro sito visualizzando il vostro nuovo dominio nella barra degli indirizzi/URL del loro browser.
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Elenco degli IP dei nostri hosting condivisi](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[Elenco degli IP dei nostri hosting condivisi](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
 [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

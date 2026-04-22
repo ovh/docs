@@ -1,7 +1,7 @@
 ---
 title: 'Resolving a “Site not installed” error'
 excerpt: 'Find out how to resolve a “Site not installed” error'
-updated: 2025-08-25
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ You may see the error page “**Site not installed**” displayed on your web br
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
 - **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
 
 ---
@@ -38,45 +38,41 @@ You may see the error page “**Site not installed**” displayed on your web br
 
 The “**Site not installed**” page appears for two reasons:
 
-- 1: [Your domain name or subdomain is not declared correctly on your web hosting plan](#check-multisites).
+- 1: [Your domain name or subdomain is not correctly declared on one of the websites on your web hosting](#check-my-websites).
 - 2: [Your domain name is not linked to the IP address of your web hosting plan.](#check-dns-domain).
 
 The following steps will allow you to correct the “Site not installed” error in both cases.
 
-### 1 - Verify the declaration of your domain name or subdomain on your web hosting plan <a name="check-multisites"></a>
+### 1 - Check the declaration of your domain name or subdomain on your website on your web hosting <a name="check-my-websites"></a>
 
-Click on the tabs below to view each of the **4** steps in succession.
+<!-- CP-STEPS-START:check-my-websites -->
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
+> **Step 2**
+>>
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
 > **Step 3**
 >>
->> On the page that pops up, click on the `Multisite`{.action} tab.
+>> In the table that appears, click on the `>`{.action} button to the left of the name of the website concerned to display the domain names and subdomains associated.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Step 4**
->>
->> On the new page that opens, a table appears.
->>
->> ![Multisite interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
->>
->> |Scenarios|Actions to Take|
+>> |Scenarios|Actions to take|
 >> |---|---|
->> |The domain name or subdomain linked to your website **appears** in the “multisite” table.|If you have just added your domain name or subdomain to the `Multisite`{.action} section of your web hosting plan, please wait around **twenty minutes**, then refresh your web browser cache. If the message “Site not installed” still appears, go to [part 2](#check-dns-domain).|
->> |The domain or subdomain linked to your website **does not appear** in the “multisite” table.|Add your domain or subdomain to the `Multisite`{.action} section by following the dedicated section in the guide “[Hosting multiple websites on your web hosting plan - adding a domain or subdomain](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.|
->> |The domain or subdomain **has been removed** from the "multisite" table without any action on your part.|Your domain or its DNS zone may be managed from another account. Add your domain or subdomain in the `Multisite`{.action} section by following the dedicated section of the guide “[Hosting multiple websites on your Web Hosting plan - adding an external domain name](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.|
+>> |The domain name or subdomain associated with your website **appears** in the table.|If you have just added your domain name or subdomain to your website on your web hosting, wait approximately **twenty minutes** and then refresh the cache of your web browser. If the message "Site not installed" still appears, proceed to [part 2](#check-dns-domain).|
+>> |The domain name or subdomain associated with your website **does not appear** in the table.|Add your domain name or subdomain by following our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
+>> |The domain name or subdomain **has been removed** from the table without your action.|Your domain name or its DNS zone may be managed from another account. Add your domain name or subdomain by following our guide "[How to associate a domain name with an existing website? - Add an external domain name](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
+<!-- CP-STEPS-END:check-my-websites -->
 
 ### 2 - Check the IP pointing in your domain name’s active DNS zone <a name="check-dns-domain"></a>
 
@@ -92,28 +88,24 @@ This step involves checking that your domain or subdomain points to your Web Hos
 
 #### 2\.1 Identify the IP address of your OVHcloud web hosting plan
 
-Click on the tabs below to view each of the **3** steps in turn.
+<!-- CP-STEPS-START:check-dns-ip -->
+Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **General information** box, you will see the address under **IPv4**.
 >>
 >> ![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copy the IPv4 address, then continue reading the guide.
+<!-- CP-STEPS-END:check-dns-ip -->
 
 You can also find the IP address associated with your Web Hosting plan in our guide “[Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”.
 
@@ -127,28 +119,17 @@ You will now need to check that your Web Hosting plan’s IP address appears in 
 >
 > If you modify the **DNS servers** associated with your domain name directly, this period can be up to **48 hours** maximum.
 
-To do this, click on the tabs below to display each of the **4** steps in succession.
+<!-- CP-STEPS-START:check-multisite-root-folder -->
+To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
->>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
->>
->> > [!primary]
->> >
->> > If your domain name does not appear in the list that appears, it means that its DNS zone is not managed from your OVHcloud Control Panel.<br>
->> > Determine its registrar and the DNS servers associated with it via our [WHOIS](/links/web/domains-whois) tool.<br>
->> > Find and modify the DNS zone concerned accordingly by following the dedicated section of the guide “[Hosting multiple websites on your Web Hosting plan - adding an external domain name](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
->>
-> **Step 3**
 >>
 >> The table that appears will display a DNS record for each row, linked to your domain name at OVHcloud. You can filter the table content by record type or by domain name.
 >>
@@ -158,11 +139,11 @@ To do this, click on the tabs below to display each of the **4** steps in succes
 >> >
 >> > If the `DNS Zone`{.action} tab of your domain name appears as follows:<br><br>![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
 >> >
->> > This means that your domain name is not managed from the OVHcloud Control Panel.<br> Determine its registrar and the DNS servers associated with it using our [WHOIS](/links/web/domains-whois) tool.<br> Find and modify the DNS zone concerned accordingly by following the dedicated section of the guide “[Hosting multiple websites on your website - adding an external domain name](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
+>> > This means that your domain name is not managed from your OVHcloud Control Panel.<br> Determine its registrar and the DNS servers it is associated with using our [WHOIS](/links/web/domains-whois) tool.<br> Identify and modify the relevant DNS zone accordingly by following the dedicated section of the guide "[How to associate a domain name with an existing website? - Add an external domain name](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 >> Go to step 4 to view the various possible scenarios and the actions to be taken.
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> |Possible Scenarios|Action to Take|
 >> |---|---|
@@ -170,12 +151,13 @@ To do this, click on the tabs below to display each of the **4** steps in succes
 >> |The current DNS zone does not have A or AAAA records that link your domain name or subdomain to the IP address of your Web Hosting plan.|Add the new A or AAAA DNS record or correct the existing record by following [this guide](/pages/web_cloud/domains/dns_zone_edit).|
 >> |The existing A or AAAA DNS record in the DNS zone for your domain name or subdomain points to an IP address other than your Web Hosting plan’s.|Add the new A or AAAA DNS record or correct the existing record by following [this guide](/pages/web_cloud/domains/dns_zone_edit).|
 >> |This warning is displayed in the `DNS Zone`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modify your domain name’s DNS servers accordingly by following our guide on "[How to modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)".|
+<!-- CP-STEPS-END:check-multisite-root-folder -->
 
 ## Go further <a name="go-further"></a>
 
 [List of IP addresses for clusters and web hosting](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-[Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 
 [Modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 
