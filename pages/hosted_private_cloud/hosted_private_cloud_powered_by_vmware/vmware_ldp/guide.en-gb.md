@@ -1,7 +1,7 @@
 ---
 title: "Logs Data Platform - Collect VMware on OVHcloud logs"
 excerpt: "Find out how to subscribe and enable log forwarder in order to transfer VMware on OVHcloud logs to a Logs Data Platform stream"
-updated: 2024-09-25
+updated: 2026-04-22
 ---
 
 > [!primary]
@@ -46,7 +46,7 @@ These are the types of logs you want to transfer to your Logs Data Platform. Her
 - `nsxtManager`: Filtered by application.
 - `vmwareProxy`: Filtered by application.
 
-for this kind, advanced security option is required:
+For the following kinds, the advanced security option is required:
 - `vmware2FA`: Filtered by application.
 - `nids`: Filtered by application.
 
@@ -179,7 +179,7 @@ Use the following API calls to list subscriptions for your VMware on OVHcloud ac
 | **Method** | **Path**                                                                                               | **Description**                                             |
 |:------------:|:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|
 |     GET     | /dedicatedCloud/{serviceName}/log/kind                                                                 | - List all Log kind available for your VMware on OVHcloud   |
-|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                                                          | - List availables kind name (ESXI/NSX-T EDGE, MANAGER/VCSA/..) |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                                                          | - List available kind names (ESXI/NSX-T EDGE, MANAGER/VCSA/..) |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - List your VMware on OVHcloud subcriptions                 |
 |    POST     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - Create an LDP VMware OVHcloud subscription                |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - List properties of this object                            |
@@ -195,7 +195,7 @@ To retrieve the **streamId** from your LDP account, please refer to the guide [Q
 > **Parameters**:
 >
 > - `serviceName` : Name of the managed vSphere service, (e.g.: `pcc-XXX-XXX-XXX-XXX`).
-> - `kind`: VMware Kind that the forwarder uses (e.g.: Available: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi | vmwareProxy | vmware2FA | nids`).
+> - `kind`: VMware Kind that the forwarder uses (e.g.: Available: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi ┃ vmwareProxy ┃ vmware2FA ┃ nids`).
 > - `streamId`: Destination stream identifier (e.g.: uuid: `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
 
@@ -235,7 +235,7 @@ You can refer to this guide to find out how to manage your streams in the `Log D
 > **Parameters**:
 >
 > - `serviceName` : Service name of your managed vSphere (e.g.: `pcc-XXX-XXX-XXX-XXX`).
-> - `kind` : Name of the VMware kind that the forwarder uses (e.g.: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi | vmwareProxy | vmware2FA | nids`).
+> - `kind` : Name of the VMware kind that the forwarder uses (e.g.: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi ┃ vmwareProxy ┃ vmware2FA ┃ nids`).
 >
 
 **How to list your available Kind**?
@@ -247,7 +247,7 @@ You can refer to this guide to find out how to manage your streams in the `Log D
 
 > **Parameters**:
 >
-> - `name` : Name of the kind of VMware the forwarder uses (e.g.: Available: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi | vmwareProxy | vmware2FA | nids`).
+> - `name` : Name of the kind of VMware the forwarder uses (e.g.: Available: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi ┃ vmwareProxy ┃ vmware2FA ┃ nids`).
 > - `serviceName` : Service name of your managed vSphere (e.g.: `pcc-XXX-XXX-XXX-XXX`).
 >
 
@@ -374,6 +374,7 @@ Examples of returns for different Kind:
   "updatedAt": "2026-04-02T20:47:11.200568+02:00"
 }
 ```
+
 ### Step 5 - Disable your Logs Data Platform subscription
 
 > [!primary]
