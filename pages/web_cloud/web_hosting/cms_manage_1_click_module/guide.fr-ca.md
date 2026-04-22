@@ -1,7 +1,7 @@
 ---
 title: "Comment gérer votre module en 1 clic ?"
 excerpt: "Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objectif
@@ -37,6 +37,7 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 
 ### Accéder à votre site
 
+<!-- CP-STEPS-START:access-module -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -48,6 +49,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Cliquez sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Accéder au module`{.action}.
 >>
+<!-- CP-STEPS-END:access-module -->
 
 > [!primary]
 >
@@ -55,6 +57,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 
 ### Accéder à l'interface administrateur
 
+<!-- CP-STEPS-START:access-admin-interface -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -66,9 +69,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Cliquez sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Accéder à l'interface d'administration du module`{.action}.
 >>
+<!-- CP-STEPS-END:access-admin-interface -->
 
 ### Retrouver l'identifiant administrateur
 
+<!-- CP-STEPS-START:find-admin-login -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -84,6 +89,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Vous pouvez également rechercher l'e-mail reçu lors de la création de votre module. Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite de l'écran puis, dans le menu qui apparaît, cliquez sur `Emails de service`{.action}.
 >>
+<!-- CP-STEPS-END:find-admin-login -->
 
 ### Modifier le mot de passe de votre module <a name="password-change"></a>
 
@@ -112,6 +118,7 @@ Toutefois, nous vous recommandons vivement d’effectuer l’opération à l’a
 
 Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon **certaine**.
 
+<!-- CP-STEPS-START:find-db-password -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -127,6 +134,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Dans le cas contraire, cliquez sur l'onglet `Mes sites`{.action}. Notez le nom du `Dossier racine` présent sur la ligne du site web concerné : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 >>
+<!-- CP-STEPS-END:find-db-password -->
 
 Connectez-vous ensuite à [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection). Ouvrez le `Dossier racine` trouvé précédemment et recherchez le fichier de configuration de votre module :
 
@@ -146,6 +154,7 @@ Pour sauvegarder votre site, suivez les instructions de notre guide « [Exporte
 > La suppression de votre module en 1 clic et de sa base de données entraîneront également celle de **l'ensemble de leurs sauvegardes**. Les données supprimées ne pourront pas être récupérées par la suite.
 >
 
+<!-- CP-STEPS-START:delete-module -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -169,6 +178,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> > - [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection).
 >> > - [Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 >>
+<!-- CP-STEPS-END:delete-module -->
 
 > [!warning]
 >
@@ -177,6 +187,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > Si vous disposez d'un abonnement [Perso](/links/web/hosting-personal-offer) ou si vous avez déjà créé quatre bases de données sur votre hébergement [Pro](/links/web/hosting-professional-offer) ou [Performance](/links/web/hosting-performance-offer), vous devrez donc supprimer la base de données identifiée dans la [partie 1](#step1) **AVANT** de pouvoir créer un nouveau module en 1 clic.
 >
 
+<!-- CP-STEPS-START:delete-database -->
 Pour finaliser la suppression de votre module, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -192,6 +203,7 @@ Pour finaliser la suppression de votre module, cliquez sur les onglets ci-dessou
 >>
 >> Avant de relancer l'installation d'un nouveau module, vérifiez que les tâches de suppression demandées précédemment ont bien été finalisées via l'onglet `Tâches en cours`{.action}.
 >>
+<!-- CP-STEPS-END:delete-database -->
 
 ### Bonnes pratiques
 

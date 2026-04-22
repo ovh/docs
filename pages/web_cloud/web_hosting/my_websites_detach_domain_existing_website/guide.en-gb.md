@@ -1,7 +1,7 @@
 ---
 title: "How to detach a domain name from an existing website?"
 excerpt: "Find out how to detach a domain name or subdomain from an existing website on your web hosting"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -36,6 +36,7 @@ Do you want to associate your domain name or subdomain with another website on o
 >
 > Detaching a domain name or subdomain from a website on your web hosting is a sensitive operation. Indeed, after this operation, your website will no longer be accessible on the Internet using your domain name and/or subdomain.
 
+<!-- CP-STEPS-START:detach-domain -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -78,6 +79,7 @@ Click on the tabs below to view each of the **4** steps.
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
 >> > As the message indicates, you will need to [delete your Git association](/pages/web_cloud/web_hosting/git_integration_webhosting) first, **before** detaching your domain name.
+<!-- CP-STEPS-END:detach-domain -->
 
 ### Special case: Detaching a domain name or subdomain to use it with another website
 

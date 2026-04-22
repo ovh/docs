@@ -1,7 +1,7 @@
 ---
 title: "Comment détacher un nom de domaine d'un site web existant ?"
 excerpt: "Découvrez comment détacher un nom de domaine ou un sous-domaine d'un site web déjà existant sur votre hébergement web"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objectif
@@ -36,6 +36,7 @@ Vous voulez associer votre nom de domaine ou votre sous-domaine à un autre site
 >
 > Détacher un nom de domaine ou un sous-domaine d'un site web présent sur votre hébergement web est une manipulation sensible. En effet, après cette opération, votre site web ne sera plus accessible sur Internet avec votre nom de domaine et/ou sous-domaine.
 
+<!-- CP-STEPS-START:detach-domain -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -78,6 +79,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
 >> > Comme le message l'indique, vous devrez [supprimer votre association Git](/pages/web_cloud/web_hosting/git_integration_webhosting) dans un premier temps, **avant** de détacher votre nom de domaine.
+<!-- CP-STEPS-END:detach-domain -->
 
 ### Cas particulier : Détachement d'un nom de domaine ou d'un sous-domaine pour l'utiliser avec un autre site web
 

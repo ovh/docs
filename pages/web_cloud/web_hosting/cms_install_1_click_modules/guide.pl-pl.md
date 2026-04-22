@@ -1,7 +1,7 @@
 ---
 title: "Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)"
 excerpt: "Dowiedz się, jak zainstalować Twoją stronę WWW za pomocą 'modułów za 1 kliknięciem'"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -84,6 +84,7 @@ Dostępne są dwie metody instalacji:
 
 /// details | Szybka instalacja modułu za 1 kliknięciem
 
+<!-- CP-STEPS-START:install-basic-module -->
 Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
 
 > [!tabs]
@@ -125,6 +126,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
 >>
 >> Po zakończeniu instalacji otrzymasz e-mail z danymi do logowania do interfejsu administratora (*back office*) Twojego CMS-a. Zaloguj się do Panelu klienta i personalizuj Twoją stronę WWW.
 >>
+<!-- CP-STEPS-END:install-basic-module -->
 
 > [!primary]
 >
@@ -134,6 +136,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
 
 /// details | Zaawansowana instalacja modułu za 1 kliknięciem
 
+<!-- CP-STEPS-START:install-advanced-module -->
 Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **8** kroków.
 
 > [!tabs]
@@ -252,6 +255,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **8** kroków.
 >>
 >> ![Zatwierdzanie instalacji w trybie zaawansowanym](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-4.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:install-advanced-module -->
 
 ///
 

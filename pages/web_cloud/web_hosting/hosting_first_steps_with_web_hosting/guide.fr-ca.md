@@ -1,7 +1,7 @@
 ---
 title: "Comment bien débuter avec votre hébergement web"
 excerpt: "Découvrez comment mettre en ligne un nouveau site Internet via nos options de « Modules en 1 clic », comment créer une nouvelle adresse e-mail personnalisée avec votre nom de domaine, le tout grâce à notre solution d'hébergement web"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -52,6 +52,7 @@ Vous souhaitez créer un site Internet pour votre entreprise ou un blog personne
 >
 > Si vous avez souscrit à votre nom de domaine et à votre hébergement web dans une même commande, ces deux services sont déjà associés. Passez directement à la [Partie 2](#part-2) de ce guide.
 
+<!-- CP-STEPS-START:link-domain-website -->
 Cliquez sur les onglets ci-dessous pour afficher successivement les **4** étapes.
 
 > [!tabs]
@@ -70,6 +71,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement les **4** étape
 > **Étape 4**
 >>
 >> Dans la nouvelle page qui s'ouvre, cochez et complétez les éléments demandés jusqu'à leur validation.
+<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Cliquez ici pour plus d'informations.
 
@@ -85,6 +87,7 @@ Consultez nos guides détaillés :
 
 Sur ses hébergements web, OVHcloud propose d'installer gratuitement les CMS WordPress, Joomla!, PrestaShop et Drupal grâce à l'option « module en 1 clic ».
 
+<!-- CP-STEPS-START:install-1click-module -->
 Cliquez sur les onglets ci-dessous pour afficher successivement les **4** étapes.
 
 > [!tabs]
@@ -103,6 +106,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement les **4** étape
 > **Étape 4**
 >>
 >> Dans la fenêtre qui s'ouvre, sélectionnez le CMS que vous souhaitez installer. Choisissez ensuite le domaine sur lequel installer le module en sélectionnant le nom de domaine souhaité **sans les « www »** devant (exemple : `domain.tld` et non pas `www.domain.tld`), puis cliquez directement sur `Installer`{.action}.
+<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Cliquez ici pour plus d'informations.
 
@@ -119,6 +123,7 @@ Consultez nos guides détaillés :
 >
 > Si vous avez souscrit votre nom de domaine et votre hébergement web dans une seule et même commande, les adresses e-mail incluses avec l'hébergement web sont déjà associées à votre nom de domaine. Passez directement à la [Partie 4](#part-4) de ce guide.
 
+<!-- CP-STEPS-START:enable-email-solution -->
 Cliquez sur les onglets ci-dessous pour afficher successivement les **3** étapes.
 
 > [!tabs]
@@ -133,6 +138,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement les **3** étape
 > **Étape 3**
 >>
 >> Sur la nouvelle page qui apparaît, sélectionnez le nom de domaine concerné dans la section `(1)`, puis poursuivez jusqu'à l'activation des adresses e-mail.
+<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Cliquez ici pour plus d'informations.
 
@@ -142,6 +148,7 @@ Consultez notre guide détaillé « [Hébergement web - Activer les adresses e-m
 
 ### 4 - Créer une adresse e-mail personnalisée avec votre nom de domaine <a name="part-4"></a>
 
+<!-- CP-STEPS-START:create-email-address -->
 Cliquez sur les onglets ci-dessous pour afficher successivement les **4** étapes.
 
 > [!tabs]
@@ -160,6 +167,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement les **4** étape
 > **Étape 4**
 >>
 >> Dans la fenêtre qui s'ouvre, complétez les éléments demandés jusqu'à leur validation.
+<!-- CP-STEPS-END:create-email-address -->
 
 Répétez cette opération pour chaque adresse e-mail que vous souhaitez créer (dans la limite de votre offre d'hébergement web).
 

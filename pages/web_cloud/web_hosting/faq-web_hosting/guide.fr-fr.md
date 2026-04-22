@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - FAQ"
 excerpt: "Retrouvez les principales questions posées sur les hébergements web OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -24,6 +24,7 @@ details[open]>summary::before {
 
 /// details | Comment configurer mon hébergement web ?
 
+<!-- CP-STEPS-START:configure-hosting -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes :
 
 > [!tabs]
@@ -36,6 +37,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > **Étape 2**
 >>
 >> Vous pourrez y gérer vos certificats SSL, la version PHP appliquée à votre hébergement web, l'option CDN, vos sites web, les bases de données, etc.
+<!-- CP-STEPS-END:configure-hosting -->
 
 > [!success]
 >
@@ -45,6 +47,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 
 /// details | J'ai oublié le mot de passe d'accès au compte où se trouve mon hébergement web, que faire ?
 
+<!-- CP-STEPS-START:forgot-account-password -->
 En cas d'oubli de votre identifiant client OVHcloud ou du mot de passe associé à cet identifiant, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
@@ -59,6 +62,7 @@ En cas d'oubli de votre identifiant client OVHcloud ou du mot de passe associé 
 > **Étape 3**
 >>
 >> Cliquez ensuite sur le bouton `Envoyer`{.action}.
+<!-- CP-STEPS-END:forgot-account-password -->
 
 La procédure de réinitialisation sera alors envoyée sur votre adresse e-mail de contact.
 
@@ -70,6 +74,7 @@ La procédure de réinitialisation sera alors envoyée sur votre adresse e-mail 
 
 /// details | Comment gérer le mot de passe de l'espace de stockage FTP de son hébergement web ?
 
+<!-- CP-STEPS-START:manage-ftp-password -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes :
 
 > [!tabs]
@@ -82,6 +87,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
+<!-- CP-STEPS-END:manage-ftp-password -->
 
 Vous pourrez y modifier le mot de passe FTP de votre hébergement web.
 
@@ -97,6 +103,7 @@ Vous pourrez y modifier le mot de passe FTP de votre hébergement web.
 >
 > Si vous changez le mot de passe d'une base de données utilisée par l'un de vos sites web, mettez-le à jour également dans le fichier de configuration du site web concerné. En effet, sans cette mise à jour, votre site web sera déconnecté de sa base de données et dysfonctionnera.
 
+<!-- CP-STEPS-START:change-db-password -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes :
 
 > [!tabs]
@@ -109,6 +116,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}.
+<!-- CP-STEPS-END:change-db-password -->
 
 Vous pourrez y modifier les mots de passe de vos bases de données associées à votre hébergement web.
 
@@ -120,6 +128,7 @@ Vous pourrez y modifier les mots de passe de vos bases de données associées à
 
 /// details | Comment modifier le mot de passe d'une adresse e-mail liée à mon hébergement web ?
 
+<!-- CP-STEPS-START:change-email-password -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
@@ -134,6 +143,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite de l'adresse e-mail concernée, puis cliquez sur `Changer le mot de passe`{.action}.
+<!-- CP-STEPS-END:change-email-password -->
 
 Vous pourrez y modifier le mot de passe de votre adresse e-mail (veillez à respecter la politique des mots de passe indiquée dans la fenêtre de saisie).
 
@@ -196,6 +206,7 @@ Voici les principales étapes à suivre :
 
 /// details | Comment héberger plusieurs sites web sur un même hébergement web ?
 
+<!-- CP-STEPS-START:host-multiple-websites -->
 Si votre [hébergement web](/links/web/hosting) est compatible, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes :
 
 > [!tabs]
@@ -208,6 +219,7 @@ Si votre [hébergement web](/links/web/hosting) est compatible, cliquez sur les 
 > **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+<!-- CP-STEPS-END:host-multiple-websites -->
 
 Vous pourrez y gérer les noms de domaine/sous-domaines déclarés sur vos sites web présents sur votre hébergement web.
 
@@ -226,6 +238,7 @@ Pour que votre site web soit accessible avec une URL en « HTTPS » (exemple : `
 
 OVHcloud propose plusieurs [certificats SSL](/links/web/hosting-options) sur les hébergements web.
 
+<!-- CP-STEPS-START:enable-https -->
 Pour activer un certificat SSL sur votre hébergement web pour votre site web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
 
 > [!tabs]
@@ -246,6 +259,7 @@ Pour activer un certificat SSL sur votre hébergement web pour votre site web, c
 > **Étape 4**
 >>
 >> Poursuivez jusqu'à la finalisation de l'installation du certificat SSL (en ayant préalablement validé le bon de commande si vous choisissez l'un des certificats SSL Sectigo).
+<!-- CP-STEPS-END:enable-https -->
 
 > [!success]
 >
@@ -269,6 +283,7 @@ Pour commander la formule d'hébergement web la plus adaptée à vos besoins, co
 >
 > En fonction de votre formule d'hébergement web actuelle, certaines offres peuvent ne pas vous être proposées. Consultez notre guide « [Faire évoluer son offre d’hébergement web](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) » pour plus d'informations sur le sujet.
 
+<!-- CP-STEPS-START:change-hosting-plan -->
 Une fois votre choix fait, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
@@ -285,6 +300,7 @@ Une fois votre choix fait, cliquez sur les onglets ci-dessous pour afficher succ
 > **Étape 3**
 >>
 >> Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants, puis cliquez sur `Envoyer`{.action}.
+<!-- CP-STEPS-END:change-hosting-plan -->
 
 > [!success]
 >
@@ -296,6 +312,7 @@ Une fois votre choix fait, cliquez sur les onglets ci-dessous pour afficher succ
 
 Lorsque vous résiliez ou supprimez votre hébergement web, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail **avant** la résiliation de l'hébergement web concerné.
 
+<!-- CP-STEPS-START:keep-email-after-cancel -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
@@ -312,6 +329,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > **Étape 3**
 >>
 >> Suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
+<!-- CP-STEPS-END:keep-email-after-cancel -->
 
 ///
 
@@ -320,6 +338,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 Les hébergements web **Performance** comprennent une offre Web Cloud Databases activable gratuitement.<br>
 Lorsque vous résiliez ou supprimez votre hébergement web **Performance**, l'offre Web Cloud Databases éventuellement attachée est également résiliée. Pour conserver votre solution Web Cloud Databases, vous devrez la détacher **avant** la résiliation de l'hébergement.
 
+<!-- CP-STEPS-START:keep-wcdb-after-cancel -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
@@ -336,6 +355,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > **Étape 3**
 >>
 >> Suivez les instructions pour commander une offre Web Cloud Databases indépendante pour conserver votre solution Web Cloud Databases déjà créée.
+<!-- CP-STEPS-END:keep-wcdb-after-cancel -->
 
 **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
 
@@ -343,6 +363,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 
 /// details | Comment augmenter la RAM d'une offre « Web Cloud Databases » liée à un hébergement web « Performance » ?
 
+<!-- CP-STEPS-START:increase-wcdb-ram -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
@@ -359,6 +380,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > **Étape 3**
 >>
 >> Suivez les instructions pour commander la quantité de RAM désirée, puis poursuivez jusqu'à la validation de la commande.
+<!-- CP-STEPS-END:increase-wcdb-ram -->
 
 > [!success]
 >
@@ -377,6 +399,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site web.<br>
 Pour en identifier la cause, commencez par vérifier qu'aucun de vos abonnements n'a besoin d'être **renouvelé**.
 
+<!-- CP-STEPS-START:website-not-working -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes :
 
 > [!tabs]
@@ -387,6 +410,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > **Étape 2**
 >>
 >> Retrouvez tous les détails dans notre guide « [Comment renouveler mes services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) ».
+<!-- CP-STEPS-END:website-not-working -->
 
 Consultez ensuite les [évènements en cours sur notre infrastructure](https://www.status-ovhcloud.com/).
 
@@ -440,6 +464,7 @@ Il est alors nécessaire de supprimer votre module en 1 clic puis de le réinsta
 > - [Hébergement Web - Restaurer l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Hébergement Web - Exporter le contenu d'une base de données](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-cluster-url-1 -->
 **Uniquement** après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en cliquant sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
@@ -456,9 +481,11 @@ Il est alors nécessaire de supprimer votre module en 1 clic puis de le réinsta
 > **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite dans la ligne du *module en 1 clic* concerné, puis sur `Supprimer le module`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-1 -->
 
 La suppression du *module en 1 clic* peut prendre **plusieurs minutes**.
 
+<!-- CP-STEPS-START:fix-cluster-url-2 -->
 Supprimez ensuite la base de données qui lui était associée en cliquant sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
@@ -475,6 +502,7 @@ Supprimez ensuite la base de données qui lui était associée en cliquant sur l
 > **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite dans la ligne de la base de données concernée, puis sur `Supprimer la base de données`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-2 -->
 
 La suppression de la base de données associée peut prendre **plusieurs minutes**.
 
@@ -505,6 +533,7 @@ Si votre site web s'affiche avec cette URL suite à une manipulation, la solutio
 > - [Hébergement Web - Restaurer l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Hébergement Web - Exporter le contenu d'une base de données](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-cluster-url-after-change-1 -->
 Pour restaurer le code source de votre site web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
 
 > [!tabs]
@@ -527,9 +556,11 @@ Pour restaurer le code source de votre site web, cliquez sur les onglets ci-dess
 > **Étape 4**
 >>
 >> Dans la fenêtre qui s'affiche, choisissez la date de la sauvegarde à restaurer, puis poursuivez jusqu'au lancement de la restauration.
+<!-- CP-STEPS-END:fix-cluster-url-after-change-1 -->
 
 La restauration de l'espace de stockage FTP peut prendre **plusieurs minutes**.
 
+<!-- CP-STEPS-START:fix-cluster-url-after-change-2 -->
 Pour restaurer une sauvegarde de votre base de données, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes :
 
 > [!tabs]
@@ -554,6 +585,7 @@ Pour restaurer une sauvegarde de votre base de données, cliquez sur les onglets
 > **Étape 5**
 >>
 >> Une fois la sauvegarde choisie, cliquez sur le bouton `...`{.action} situé à droite de la sauvegarde à restaurer, puis sur `Restaurer la sauvegarde`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-after-change-2 -->
 
 La restauration de la sauvegarde d'une base de données peut prendre **plusieurs minutes**.
 
@@ -574,6 +606,7 @@ Cette situation indique une configuration erronée au niveau des [serveurs DNS](
 
 Le cas le plus courant est le suivant : vous avez commandé séparément votre nom de domaine et votre hébergement web, ils ne sont donc pas automatiquement reliés entre eux via la zone DNS de votre nom de domaine.
 
+<!-- CP-STEPS-START:fix-webmail-redirect-1 -->
 Pour corriger cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
 
 > [!tabs]
@@ -594,7 +627,9 @@ Pour corriger cela, cliquez sur les onglets ci-dessous pour afficher successivem
 > **Étape 4**
 >>
 >> Dans le tableau (représentant la zone DNS du nom de domaine) qui apparaît, comparez les `Cibles` des entrées de type `NS` présentes dans la zone DNS avec les noms des serveurs DNS récupérés précédemment.
+<!-- CP-STEPS-END:fix-webmail-redirect-1 -->
 
+<!-- CP-STEPS-START:fix-webmail-redirect-2 -->
 Trois cas de figure peuvent survenir. Cliquez sur les onglets ci-dessous pour afficher successivement chacun des **3** cas.
 
 > [!tabs]
@@ -652,6 +687,7 @@ Trois cas de figure peuvent survenir. Cliquez sur les onglets ci-dessous pour af
 >> Les `Cibles` (serveurs DNS) des entrées de type `NS` déclarées dans la zone DNS du nom de domaine **ne sont pas identiques** à celles récupérés dans l'onglet `Serveurs DNS`{.action}. De plus, les noms des serveurs DNS récupérés dans l'onglet `Serveurs DNS`{.action} n'ont aucune des formes décrites dans le **Cas n°2**, à l'exception des formes suivantes : `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` ou `vpsXXXXXX.ovh.ca` (où chaque `X` désigne un chiffre compris entre **0** et **9**).
 >>
 >> Dans ce cas, cela signifie que la zone DNS active appliquée à votre nom de domaine n'est pas gérée par OVHcloud directement. Contactez votre Webmaster, votre fournisseur de nom de domaine, votre fournisseur DNS ou l'un de nos [partenaires](/links/partner).
+<!-- CP-STEPS-END:fix-webmail-redirect-2 -->
 
 ///
 
@@ -672,6 +708,7 @@ Dans ce cas de figure, la solution la plus rapide sera de le restaurer dans un �
 > - [Hébergement Web - Restaurer l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Hébergement Web - Exporter le contenu d'une base de données](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-redirect-error-1 -->
 Pour restaurer le code source de votre site web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
 
 > [!tabs]
@@ -694,9 +731,11 @@ Pour restaurer le code source de votre site web, cliquez sur les onglets ci-dess
 > **Étape 4**
 >>
 >> Dans la fenêtre qui s'affiche, choisissez la date de la sauvegarde à restaurer, puis poursuivez jusqu'au lancement de la restauration.
+<!-- CP-STEPS-END:fix-redirect-error-1 -->
 
 La restauration de l'espace de stockage FTP peut prendre **plusieurs minutes**.
 
+<!-- CP-STEPS-START:fix-redirect-error-2 -->
 Pour restaurer une sauvegarde de votre base de données, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes :
 
 > [!tabs]
@@ -721,6 +760,7 @@ Pour restaurer une sauvegarde de votre base de données, cliquez sur les onglets
 > **Étape 5**
 >>
 >> Une fois la sauvegarde choisie, cliquez sur le bouton `...`{.action} situé à droite de la sauvegarde à restaurer, puis sur `Restaurer la sauvegarde`{.action}.
+<!-- CP-STEPS-END:fix-redirect-error-2 -->
 
 La restauration de la sauvegarde d'une base de données peut prendre **plusieurs minutes**.
 

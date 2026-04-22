@@ -1,7 +1,7 @@
 ---
 title: "Aktivieren der Web Application Firewall"
 excerpt: "Aktivieren der Web Application Firewall"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -58,6 +58,7 @@ Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre 
 
 /// details | Application Firewall für die gesamte Webhosting-Konfiguration in PHP aktivieren
 
+<!-- CP-STEPS-START:enable-firewall -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -82,11 +83,13 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 >>
 >> Im neuen Fenster stellen Sie sicher, dass die Option **Application Firewall** auf `aktiviert`{.action} gesetzt ist. Klicken Sie anschließend auf den Button `Bestätigen`{.action}.
+<!-- CP-STEPS-END:enable-firewall -->
 
 ///
 
 /// details | Application Firewall nur für einen bestimmten Domainnamen oder Subdomain aktivieren
 
+<!-- CP-STEPS-START:disable-firewall -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -123,6 +126,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Sobald die Firewall für Ihren Domainnamen oder Subdomain aktiviert ist, wird die Bezeichnung **Aktiviert** in der Spalte **Firewall** angezeigt.
 >>
 >> Falls die Bezeichnung **Aktiviert** nach einigen Minuten nicht in der entsprechenden Zeile des Domainnamens oder Subdomain angezeigt wird, laden Sie die Seite erneut.
+<!-- CP-STEPS-END:disable-firewall -->
 
 ## Weiterführende Informationen
 

@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Poznaj najważniejsze pytania dotyczące hostingu WWW OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -24,6 +24,7 @@ details[open]>summary::before {
 
 /// details | Jak skonfigurować hosting WWW?
 
+<!-- CP-STEPS-START:configure-hosting -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -36,6 +37,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 > **Krok 2**
 >>
 >> Zarządzaj tutaj swoimi certyfikatami SSL, wersją PHP zastosowaną do Twojego hostingu, opcją CDN, swoimi stronami internetowymi, bazami danych, itp.
+<!-- CP-STEPS-END:configure-hosting -->
 
 > [!success]
 >
@@ -45,6 +47,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 /// details | Nie pamiętam hasła dostępowego do konta, na którym znajduje się mój hosting. Co mam zrobić?
 
+<!-- CP-STEPS-START:forgot-account-password -->
 Jeśli nie pamiętasz twojego identyfikatora klienta OVHcloud lub hasła powiązanego z tym identyfikatorem, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -59,6 +62,7 @@ Jeśli nie pamiętasz twojego identyfikatora klienta OVHcloud lub hasła powiąz
 > **Krok 3**
 >>
 >> Następnie kliknij przycisk `Wyślij`{.action}.
+<!-- CP-STEPS-END:forgot-account-password -->
 
 Procedura resetu zostanie wysłana na adres e-mail do kontaktu.
 
@@ -70,6 +74,7 @@ Procedura resetu zostanie wysłana na adres e-mail do kontaktu.
 
 /// details | Jak zarządzać hasłem do przestrzeni dyskowej FTP na hostingu www?
 
+<!-- CP-STEPS-START:manage-ftp-password -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -82,6 +87,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 > **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+<!-- CP-STEPS-END:manage-ftp-password -->
 
 Będziesz mógł zmienić hasło FTP do twojego hostingu.
 
@@ -97,6 +103,7 @@ Będziesz mógł zmienić hasło FTP do twojego hostingu.
 >
 > Jeśli zmienisz hasło do bazy danych używanej przez jedną z twoich stron WWW, zaktualizuj również hasło w pliku konfiguracyjnym twojej strony WWW. Bez tej aktualizacji twoja strona WWW zostanie odłączona od bazy danych i będzie działać nieprawidłowo.
 
+<!-- CP-STEPS-START:change-db-password -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -109,6 +116,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 > **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+<!-- CP-STEPS-END:change-db-password -->
 
 Będziesz mógł zmienić hasła do baz danych powiązanych z twoim hostingiem.
 
@@ -120,6 +128,7 @@ Będziesz mógł zmienić hasła do baz danych powiązanych z twoim hostingiem.
 
 /// details | Jak zmienić hasło do konta e-mail powiązanego z moim hostingiem?
 
+<!-- CP-STEPS-START:change-email-password -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -134,6 +143,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > **Krok 3**
 >>
 >> W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie danego adresu e-mail, po czym kliknij `Zmień hasło`{.action}.
+<!-- CP-STEPS-END:change-email-password -->
 
 Będziesz mógł zmienić hasło przypisane do twojego konta e-mail (pamiętaj, aby zachować zasady dotyczące haseł, które są wyświetlane w oknie wprowadzania).
 
@@ -196,6 +206,7 @@ Oto najważniejsze kroki, które należy podjąć:
 
 /// details | Jak zainstalować kilka stron WWW na tym samym hostingu?
 
+<!-- CP-STEPS-START:host-multiple-websites -->
 Jeśli Twój [hosting WWW](/links/web/hosting) jest kompatybilny, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -208,6 +219,7 @@ Jeśli Twój [hosting WWW](/links/web/hosting) jest kompatybilny, kliknij poniż
 > **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
+<!-- CP-STEPS-END:host-multiple-websites -->
 
 Zarządzaj tutaj nazwami domen/poddomen zadeklarowanymi na stronach internetowych znajdujących się na Twoim hostingu.
 
@@ -226,6 +238,7 @@ Aby twoja strona WWW była dostępna z adresem URL oznaczonym jako "HTTPS" (na p
 
 OVHcloud oferuje kilka [certyfikatów SSL](/links/web/hosting-options) na hostingu.
 
+<!-- CP-STEPS-START:enable-https -->
 Aby aktywować certyfikat SSL na twoim hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -246,6 +259,7 @@ Aby aktywować certyfikat SSL na twoim hostingu, kliknij poniższe zakładki, ab
 > **Krok 4**
 >>
 >> Kontynuuj aż do zakończenia instalacji certyfikatu SSL (po uprzednim zatwierdzeniu zamówienia, jeśli wybierzesz jeden z certyfikatów SSL Sectigo).
+<!-- CP-STEPS-END:enable-https -->
 
 > [!success]
 >
@@ -269,6 +283,7 @@ Aby zamówić usługę hostingu najlepiej dopasowaną do twoich potrzeb, sprawd�
 >
 > W zależności od wykupionego pakietu hostingowego niektóre oferty mogą nie być dostępne. Więcej informacji na ten temat znajdziesz w przewodniku "[Hosting WWW - Jak zmienić ofertę](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
+<!-- CP-STEPS-START:change-hosting-plan -->
 Po dokonaniu wyboru Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -285,6 +300,7 @@ Po dokonaniu wyboru Kliknij poniższe zakładki, aby wyświetlić kolejne **3** 
 > **Krok 3**
 >>
 >> Następnie wybierz nową subskrypcję i jej czas trwania. Zaakceptuj regulaminy i kliknij na `Wyślij`{.action}.
+<!-- CP-STEPS-END:change-hosting-plan -->
 
 > [!success]
 >
@@ -296,6 +312,7 @@ Po dokonaniu wyboru Kliknij poniższe zakładki, aby wyświetlić kolejne **3** 
 
 Po rezygnacji z hostingu lub jego usunięciu, oferta e-mail, która jest do niego przypisana, również zostaje usunięta. Aby zachować konta e-mail, należy odłączyć ofertę e-mail **przed** zakończeniem dzierżawy hostingu.
 
+<!-- CP-STEPS-START:keep-email-after-cancel -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -312,6 +329,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > **Krok 3**
 >>
 >> Postępuj zgodnie z instrukcjami, aby zamówić niezależną usługę e-mail, która pozwoli Ci zachować utworzone konta e-mail.
+<!-- CP-STEPS-END:keep-email-after-cancel -->
 
 ///
 
@@ -320,6 +338,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 Pakiety hostingowe **Performance** zawierają bezpłatną usługę Web Cloud Databases.<br>
 W przypadku zakończenia lub usunięcia hostingu **Performance** oferta Web Cloud Databases, która może zostać dołączona, również zostaje rozwiązana. Aby zachować rozwiązanie Web Cloud Databases, odłącz je **przed** rezygnacją z hostingu.
 
+<!-- CP-STEPS-START:keep-wcdb-after-cancel -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -336,6 +355,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > **Krok 3**
 >>
 >> Postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę Web Cloud Databases i zachować utworzone rozwiązanie Web Cloud Databases.
+<!-- CP-STEPS-END:keep-wcdb-after-cancel -->
 
 **Czynność ta jest nieodwracalna i usługa Web Cloud Databases będzie fakturowana niezależnie od hostingu Performance.**
 
@@ -343,6 +363,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 /// details | Jak zwiększyć ilość pamięci RAM w ofercie "Web Cloud Databases" związanej z hostingiem "Performance"?
 
+<!-- CP-STEPS-START:increase-wcdb-ram -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -359,6 +380,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > **Krok 3**
 >>
 >> Postępuj zgodnie z instrukcjami, aby zamówić ilość RAM. Następnie kontynuuj aż do zatwierdzenia zamówienia.
+<!-- CP-STEPS-END:increase-wcdb-ram -->
 
 > [!success]
 >
@@ -377,6 +399,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 U podstaw nieprawidłowego działania twojej strony internetowej może znajdować się kilka przyczyn.<br>
 Aby ustalić źródło problemu, sprawdź, czy żadna z twoich subskrypcji nie wymaga **odnowienia**.
 
+<!-- CP-STEPS-START:website-not-working -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -387,6 +410,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 > **Krok 2**
 >>
 >> Szczegółowe informacje na ten temat znajdziesz w przewodniku "[Jak odnawiać usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
+<!-- CP-STEPS-END:website-not-working -->
 
 Następnie sprawdź [bieżące wydarzenia w naszej infrastrukturze](https://www.status-ovhcloud.com/).
 
@@ -440,6 +464,7 @@ W tym przypadku konieczne jest usunięcie modułu za pomocą 1 kliknięcia i pon
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-cluster-url-1 -->
 **Tylko** po wykonaniu wszystkich niezbędnych kopii zapasowych usuń [Moduły CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules), kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -456,9 +481,11 @@ W tym przypadku konieczne jest usunięcie modułu za pomocą 1 kliknięcia i pon
 > **Krok 3**
 >>
 >> W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w wierszu odpowiedniego *modułu za pomocą 1 kliknięcia*, a następnie `Usuń moduł`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-1 -->
 
 Usunięcie *modułu za pomocą 1 kliknięcia* może potrwać **kilka minut**.
 
+<!-- CP-STEPS-START:fix-cluster-url-2 -->
 Następnie usuń powiązaną bazę danych, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -475,6 +502,7 @@ Następnie usuń powiązaną bazę danych, kliknij poniższe zakładki, aby wyś
 > **Krok 3**
 >>
 >> W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie w linii odpowiedniej bazy danych, a następnie kliknij `Usuń bazę danych`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-2 -->
 
 Usunięcie skojarzonej bazy danych może potrwać **kilka minut**.
 
@@ -505,6 +533,7 @@ Jeśli po operacji wyświetli się twoja strona WWW z tym adresem URL, najszybsz
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-cluster-url-after-change-1 -->
 Aby przywrócić kod źródłowy twojej strony WWW, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -527,9 +556,11 @@ Aby przywrócić kod źródłowy twojej strony WWW, kliknij poniższe zakładki,
 > **Krok 4**
 >>
 >> W oknie, które się wyświetla wybierz datę kopii zapasowej, którą chcesz przywrócić, a następnie kontynuuj aż do uruchomienia przywracania.
+<!-- CP-STEPS-END:fix-cluster-url-after-change-1 -->
 
 Przywrócenie przestrzeni dyskowej FTP może potrwać **kilka minut**.
 
+<!-- CP-STEPS-START:fix-cluster-url-after-change-2 -->
 Aby przywrócić kopię zapasową bazy danych, kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -554,6 +585,7 @@ Aby przywrócić kopię zapasową bazy danych, kliknij poniższe zakładki, aby 
 > **Krok 5**
 >>
 >> Po wybraniu kopii zapasowej kliknij przycisk `...`{.action} znajdujący się po prawej stronie kopii zapasowej, którą chcesz przywrócić, a następnie kliknij `Przywróć kopię zapasową`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-after-change-2 -->
 
 Przywrócenie kopii zapasowej bazy danych może potrwać **kilka minut**.
 
@@ -574,6 +606,7 @@ Wskazuje to na błędną konfigurację [serwerów DNS](/pages/web_cloud/domains/
 
 Najczęstszym przypadkiem jest to, że zamówiłeś osobno domenę i hosting www, więc nie są one automatycznie powiązane ze sobą za pośrednictwem strefy DNS twojej domeny.
 
+<!-- CP-STEPS-START:fix-webmail-redirect-1 -->
 Aby to naprawić, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -593,7 +626,9 @@ Aby to naprawić, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kr
 >>
 > **Krok 4**
 >>
+<!-- CP-STEPS-START:fix-webmail-redirect-2 -->
 >> W tabeli (reprezentującej strefę DNS domeny), która się wyświetli, porównaj `Adres docelowy` wpisów typu `NS` obecnych w strefie DNS z nazwami uprzednio pobranych serwerów DNS. Mogą wystąpić trzy scenariusze. Kliknij poniższe zakładki, aby wyświetlić każdy z **3** przypadków.
+<!-- CP-STEPS-END:fix-webmail-redirect-1 -->
 
 > [!tabs]
 > **Przypadek nr 1**
@@ -650,6 +685,7 @@ Aby to naprawić, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kr
 >> `Adres docelowy` (serwery DNS) wpisów typu `NS` zadeklarowanych w strefie DNS domeny **nie są identyczne** z tymi, które odnaleziono w zakładce `Serwery DNS`{.action}. Ponadto nazwy serwerów DNS pobrane w zakładce `Serwery DNS`{.action} nie mają form opisanych w **Przypadek nr 2**, z wyjątkiem następujących form: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` lub `vpsXXXXXX.ovh.ca` (gdzie każde `X` oznacza cyfrę między **0** i **9**).
 >>
 >> W takim przypadku oznacza to, że aktywna strefa DNS zastosowana do twojej domeny nie jest zarządzana bezpośrednio przez OVHcloud. Skontaktuj się ze swoim webmasterem, dostawcą domeny, dostawcą DNS lub jednym z naszych [partnerów](/links/partner).
+<!-- CP-STEPS-END:fix-webmail-redirect-2 -->
 
 ///
 
@@ -670,6 +706,7 @@ W takim przypadku najszybszym rozwiązaniem będzie przywrócenie go do wcześni
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-redirect-error-1 -->
 Aby przywrócić kod źródłowy twojej strony WWW, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -692,9 +729,11 @@ Aby przywrócić kod źródłowy twojej strony WWW, kliknij poniższe zakładki,
 > **Krok 4**
 >>
 >> W oknie, które się wyświetla wybierz datę kopii zapasowej, którą chcesz przywrócić, a następnie kontynuuj aż do uruchomienia przywracania.
+<!-- CP-STEPS-END:fix-redirect-error-1 -->
 
 Przywrócenie przestrzeni dyskowej FTP może potrwać **kilka minut**.
 
+<!-- CP-STEPS-START:fix-redirect-error-2 -->
 Aby przywrócić kopię zapasową bazy danych, kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -719,6 +758,7 @@ Aby przywrócić kopię zapasową bazy danych, kliknij poniższe zakładki, aby 
 > **Krok 5**
 >>
 >> Po wybraniu kopii zapasowej kliknij przycisk `...`{.action} znajdujący się po prawej stronie kopii zapasowej, którą chcesz przywrócić, a następnie kliknij `Przywróć kopię zapasową`{.action}.
+<!-- CP-STEPS-END:fix-redirect-error-2 -->
 
 Przywrócenie kopii zapasowej bazy danych może potrwać **kilka minut**.
 

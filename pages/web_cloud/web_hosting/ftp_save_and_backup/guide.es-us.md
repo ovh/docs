@@ -1,7 +1,7 @@
 ---
 title: "Restaurar el espacio de almacenamiento de un alojamiento web"
 excerpt: "Descubra cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -58,6 +58,7 @@ Asimismo, deberá decidir el método de restauración que quiera utilizar:
 >
 >  se debe a que nuestros robots instalan la copia de seguridad en su alojamiento antes de borrar el contenido FTP que será reemplazado por la restauración.
 
+<!-- CP-STEPS-START:check-disk-space -->
 Para comprobar la cuota utilizada en su alojamiento web, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -76,6 +77,7 @@ Para comprobar la cuota utilizada en su alojamiento web, haga clic en las fichas
 >> Si el espacio de almacenamiento FTP utilizado es superior a la mitad del espacio de almacenamiento FTP total de su paquete de alojamiento, recupere localmente algunos de los elementos de gran tamaño de su sitio web (puede utilizar [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
 >>
 >> A continuación, elimínelos de su almacenamiento FTP. Esto reducirá el tamaño del espacio de almacenamiento FTP que está utilizando y entonces podrá lanzar su restauración desde el área de cliente de OVHcloud.
+<!-- CP-STEPS-END:check-disk-space -->
 
 Una vez que haya elegido el método de restauración más adecuado en función de sus necesidades, continúe la lectura de esta guía en el apartado correspondiente:
 
@@ -102,6 +104,7 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 > - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](/links/control-panel/web-hosting).
 > - Los sitios web alojados muestran una página "403 Forbidden".
 
+<!-- CP-STEPS-START:restore-backup-cp -->
 Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
@@ -144,6 +147,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >> Asegúrese de que no se ha perdido ningún archivo en el proceso de restauración (por ejemplo, cualquier archivo que hubiera guardado en su espacio de almacenamiento después de la fecha de restauración seleccionada). Como ya hemos indicado, la restauración borrará todos los datos actuales para sustituirlos por los de la copia de seguridad.
 >>
 >> Haga clic en `Aceptar`{.action} para restaurar la copia de seguridad.
+<!-- CP-STEPS-END:restore-backup-cp -->
 
 > [!primary]
 >

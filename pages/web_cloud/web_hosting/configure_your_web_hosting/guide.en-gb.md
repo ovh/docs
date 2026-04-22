@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Environment, PHP version, .ovhconfig"
 excerpt: "Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -140,6 +140,7 @@ You can find out which PHP version is currently used by your web hosting plan in
 
 /// details | In the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:check-php-version -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -158,6 +159,7 @@ Click on the tabs below to view each of the **2** steps.
 >> > If a blue round symbol is present, wait a few minutes for the version to update.
 >> >
 >>
+<!-- CP-STEPS-END:check-php-version -->
 
 ///
 
@@ -228,6 +230,7 @@ Now that you know the different editable settings for your OVHcloud Web Hosting 
 > As a reminder, changing at least one of these elements may affect the display or the proper functioning of your website. **Please ensure that your website is compatible with the changes you want to make to your web hosting plan’s configuration.** If you have any doubts or encounter any difficulties, please contact a [specialist provider](/links/partner).
 >
 
+<!-- CP-STEPS-START:modify-config-cp -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -272,6 +275,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> ![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:modify-config-cp -->
 
 ### 3 - Method 2: Modify the web hosting plan configuration with the ".ovhconfig" file <a name="setting-ovhconfig"></a>
 
@@ -279,6 +283,7 @@ Click on the tabs below to view each of the **3** steps.
 
 You will need your primary FTP username, its password, and the FTP server address.
 
+<!-- CP-STEPS-START:retrieve-ftp-credentials -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -301,6 +306,7 @@ Click on the tabs below to view each of the **3** steps.
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
 >> For the FTP user password, please refer to our guide on [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password) if necessary.
+<!-- CP-STEPS-END:retrieve-ftp-credentials -->
 
 #### 3.2 - Create or open the .ovhconfig file
 

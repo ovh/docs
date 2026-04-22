@@ -1,7 +1,7 @@
 ---
 title: "How to create a website - Carrying out your project in 5 steps"
 excerpt: "Find out how to define your project, publish your website and create email addresses with your web hosting solution"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -44,16 +44,6 @@ This saves you time on server administration and allows you to focus only on:
 - You have received an email confirming that your web hosting plan has been set up.
 - You have a [domain name](/links/web/domains).
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

@@ -1,7 +1,7 @@
 ---
 title: "How to get started with your web hosting plan"
 excerpt: "Find out how to put a new website online with our 1-click modules, how to create a new custom email address with your domain name, all using our web hosting solution"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -53,6 +53,7 @@ Want to create a website for your business or a personal blog? Need an e-commerc
 >
 > If you have subscribed to your domain name and web hosting plan in the same order, these two services are already linked. Skip to [Part 2](#part-2) of this guide.
 
+<!-- CP-STEPS-START:link-domain-website -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -71,6 +72,7 @@ Click on the tabs below to view each of the **4** steps.
 > **Step 4**
 >>
 >> On the new page that opens, check and complete the requested items until they are validated.
+<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Click here for more information.
 
@@ -86,6 +88,7 @@ See our detailed guides:
 
 On our web hosting plans, OVHcloud offers free WordPress, Joomla!, PrestaShop and Drupal CMS installations with the 1-click module option.
 
+<!-- CP-STEPS-START:install-1click-module -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -104,6 +107,7 @@ Click on the tabs below to view each of the **4** steps.
 > **Step 4**
 >>
 >> In the window that opens, select the CMS you want to install. Then select the domain on which you want to install the module by selecting the domain name you want **without www** (example: `domain.tld`, not `www.domain.tld`), then click `Install`{.action}.
+<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Click here for more information.
 
@@ -120,6 +124,7 @@ See our detailed guides:
 >
 > If you have subscribed to your domain name and web hosting plan in the same order, the email addresses included with the web hosting plan are already associated with your domain name. Skip to [Part 4](#part-4) of this guide.
 
+<!-- CP-STEPS-START:enable-email-solution -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -134,6 +139,7 @@ Click on the tabs below to view each of the **3** steps.
 > **Step 3**
 >>
 >> On the new page that appears, select the domain name concerned in the `(1)` section, then continue until you have enabled the email addresses.
+<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Click here for more information.
 
@@ -143,6 +149,7 @@ Read our detailed guide “[Web Hosting - Activating email addresses included](/
 
 ### 4 - Create a custom email address with your domain name <a name="part-4"></a>
 
+<!-- CP-STEPS-START:create-email-address -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -161,6 +168,7 @@ Click on the tabs below to view each of the **4** steps.
 > **Step 4**
 >>
 >> In the window that opens, fill in the information requested until it is validated.
+<!-- CP-STEPS-END:create-email-address -->
 
 Repeat this step for each email address you would like to create (within the limits of your web hosting plan).
 

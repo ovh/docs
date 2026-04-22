@@ -1,7 +1,7 @@
 ---
 title: "View and manage all your websites from the OVHcloud Control Panel"
 excerpt: "Find out how to view and manage all of your websites via the OVHcloud Control Panel"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -27,6 +27,7 @@ The interface presented in this guide allows you to centrally display all of you
 
 ## Instructions
 
+<!-- CP-STEPS-START:view-websites -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -62,6 +63,7 @@ Click on the tabs below to view each of the **2** steps.
 >> > [!warning]
 >> > Separate logs cannot be enabled for an external domain name. This option is only available for domains registered with OVHcloud.
 >>
+<!-- CP-STEPS-END:view-websites -->
 
 ## Go further
 

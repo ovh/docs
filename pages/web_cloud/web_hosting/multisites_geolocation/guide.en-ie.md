@@ -1,7 +1,7 @@
 ---
 title: "How do I geolocate a website in a specific country?"
 excerpt: "Find out how to locate your website using the geolocated IP addresses available on OVHcloud shared hosting plans"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -36,6 +36,7 @@ The geolocation option on your hosting can be useful for SEO if your website is 
 
 For websites hosted on the OVHcloud shared hosting infrastructure which are mainly accessed by international visitors, we offer a geolocation by IP address option. It allows for a better search ranking in the country where the IP address you have selected is located.
 
+<!-- CP-STEPS-START:configure-geolocation -->
 To use the IP geolocation option, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -70,6 +71,7 @@ To use the IP geolocation option, click on the tabs below to view each of the **
 >> Choose the IP address of the country for which you want to geolocate your site, from the 12 countries offered: *Czech Republic, Finland, France, Germany, Ireland, Italy, Lithuania, Netherlands, Poland, Portugal, Spain, United Kingdom*.
 >>
 >> Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
+<!-- CP-STEPS-END:configure-geolocation -->
 
 > [!primary]
 >

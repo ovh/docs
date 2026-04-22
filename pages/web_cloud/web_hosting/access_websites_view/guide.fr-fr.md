@@ -1,7 +1,7 @@
 ---
 title: "Visualiser et gérer tous ses sites web depuis son espace client OVHcloud"
 excerpt: "Découvrez comment consulter et gérer l'ensemble de vos sites web depuis votre espace client OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objectif
@@ -27,6 +27,7 @@ L'interface présentée dans ce guide permet de centraliser l'affichage de l'ens
 
 ## En pratique
 
+<!-- CP-STEPS-START:view-websites -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -62,6 +63,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> > [!warning]
 >> > Les logs séparés ne peuvent pas être activés pour un nom de domaine externe. Cette option est uniquement disponible pour les domaines enregistrés chez OVHcloud.
 >>
+<!-- CP-STEPS-END:view-websites -->
 
 ## Aller plus loin
 

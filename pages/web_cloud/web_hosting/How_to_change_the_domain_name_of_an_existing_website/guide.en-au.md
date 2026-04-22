@@ -1,7 +1,7 @@
 ---
 title: "Use cases - How to change the domain of an existing website"
 excerpt: "Find out how to change the domain name of an existing website"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -52,6 +52,7 @@ Declare your new domain name by following our guide "[How to associate a domain 
 There are several conditions to meet for this part:
 
 - Your new domain must point to the same root folder as the domain currently used to access your site.
+<!-- CP-STEPS-START:retrieve-hosting-ip -->
 - Check that your new domain points to the IP address of your web hosting plan. To retrieve the IP address, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -66,6 +67,7 @@ There are several conditions to meet for this part:
 > **Step 3**
 >>
 >> Retrieve the **IPv4** displayed.
+<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
@@ -80,9 +82,11 @@ There are several conditions to meet for this part:
 > - [Managing an SSL certificate on a Web Hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Activating HTTPS on your website with an SSL certificate](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
+<!-- CP-STEPS-START:verify-multisite-config -->
 If all actions have been correctly performed, the declarations of your domain names should be strictly identical **unless you are using a paid SSL certificate of type *Sectigo DV*, *Sectigo EV*, or *custom***.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >

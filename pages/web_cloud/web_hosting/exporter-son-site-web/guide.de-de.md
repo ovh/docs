@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseite exportieren"
 excerpt: "Eine OVHcloud Webseite exportieren"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Ziel 
@@ -40,6 +40,7 @@ Um sich in Ihren Speicherplatz einzuloggen, benötigen Sie:
 
 Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt.
 
+<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
 Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -64,6 +65,7 @@ Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um di
 >> Falls nötig, konsultieren Sie unsere Anleitung: [Mit dem Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Wenn Sie das Passwort nicht kennen, nutzen Sie die Anleitung [Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password).
+<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf dem Speicherplatz abrufen. Hierfür haben Sie zwei Möglichkeiten:
 
@@ -75,6 +77,7 @@ Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf 
 
 Sobald Sie sich bei Ihrem Speicherbereich angemeldet haben und je nach Anzahl der darauf gehosteten Webseiten, können mehrere Ordner angezeigt werden.
 
+<!-- CP-STEPS-START:find-root-folder -->
 Falls erforderlich, identifizieren Sie vorab im Webhosting den Namen des Stammordners, in dem Ihre Webseite gespeichert ist. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -95,6 +98,7 @@ Falls erforderlich, identifizieren Sie vorab im Webhosting den Namen des Stammor
 >> In der angezeigten Tabelle für die gewünschte Webseite, beachten Sie das `Wurzelverzeichnis`{.action}, das angezeigt wird.
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+<!-- CP-STEPS-END:find-root-folder -->
 
 Solange Sie weiterhin bei Ihrem Speicherbereich angemeldet sind, müssen Sie lediglich die Dateien Ihrer Webseite herunterladen, indem Sie auf den zuvor identifizierten Stammordner zugreifen.
 

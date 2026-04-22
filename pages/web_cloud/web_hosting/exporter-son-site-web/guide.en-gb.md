@@ -1,7 +1,7 @@
 ---
 title: "Exporting a website"
 excerpt: "Find out how to export an OVHcloud website"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -40,6 +40,7 @@ To log in to your storage space, you will need the following:
 
 This information was included in the email informing you that your web hosting plan has been set up.
 
+<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
 If you don’t have this information, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -64,6 +65,7 @@ If you don’t have this information, click on the tabs below to view each of th
 >> If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
+<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Once you have everything you need, there are two different ways of retrieving your files from the storage space:
 
@@ -75,6 +77,7 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 Once connected to your storage space and depending on the websites hosted on it, several folders may appear.
 
+<!-- CP-STEPS-START:find-root-folder -->
 If needed, identify the root folder where your website is stored. To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -95,6 +98,7 @@ If needed, identify the root folder where your website is stored. To do this, cl
 >> In the table that appears, for the desired website, look at the `Root folder`{.action} that is displayed.
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+<!-- CP-STEPS-END:find-root-folder -->
 
 Still connected to your storage space, download the files of your website from the root folder identified above.
 

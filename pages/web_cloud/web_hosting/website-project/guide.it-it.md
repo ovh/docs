@@ -1,7 +1,7 @@
 ---
 title: "Come creare un sito Web - Realizzare il tuo progetto in 5 tappe"
 excerpt: "Questa guida ti mostra come definire il tuo progetto, pubblicare il tuo sito Internet e creare indirizzi email con la tua soluzione di hosting Web"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -44,16 +44,6 @@ che permettono di risparmiare tempo sull’"amministrazione server" e di concent
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web.
 - Disporre di un [dominio](/links/web/domains).
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

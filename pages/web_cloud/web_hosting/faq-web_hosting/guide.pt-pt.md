@@ -1,7 +1,7 @@
 ---
 title: "Alojamentos web - FAQ"
 excerpt: "Encontre as principais questões colocadas sobre os alojamentos web da OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -24,6 +24,7 @@ details[open]>summary::before {
 
 /// details | Como configurar o meu alojamento web?
 
+<!-- CP-STEPS-START:configure-hosting -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -36,6 +37,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > **Etapa 2**
 >>
 >> Poderá gerir certificados SSL, a versão PHP aplicada ao seu alojamento web, a opção CDN, os seus sítios web, as bases de dados, etc.
+<!-- CP-STEPS-END:configure-hosting -->
 
 > [!success]
 >
@@ -45,6 +47,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 /// details | Esqueci-me da palavra-passe de acesso à conta do meu alojamento web. O que fazer?
 
+<!-- CP-STEPS-START:forgot-account-password -->
 Se se esquecer do seu identificador de cliente OVHcloud ou da palavra-passe associada a este identificador, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -59,6 +62,7 @@ Se se esquecer do seu identificador de cliente OVHcloud ou da palavra-passe asso
 > **Etapa 3**
 >>
 >> De seguida, clique no botão `Enviar`{.action}.
+<!-- CP-STEPS-END:forgot-account-password -->
 
 O procedimento de reinicialização será, então, enviado para o seu endereço de e-mail de contacto.
 
@@ -70,6 +74,7 @@ O procedimento de reinicialização será, então, enviado para o seu endereço 
 
 /// details | Como gerir a palavra-passe do espaço de armazenamento FTP do alojamento web?
 
+<!-- CP-STEPS-START:manage-ftp-password -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -82,6 +87,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > **Etapa 2**
 >>
 >> Na página que vai aparecer, clique no separador `FTP - SSH`{.action}.
+<!-- CP-STEPS-END:manage-ftp-password -->
 
 Poderá alterar a palavra-passe FTP do seu alojamento web.
 
@@ -97,6 +103,7 @@ Poderá alterar a palavra-passe FTP do seu alojamento web.
 >
 > Se alterar a palavra-passe de uma base de dados utilizada por um dos seus websites, atualize-a igualmente no ficheiro de configuração do website em causa. Sem esta atualização, o seu website será desligado da sua base de dados e não funcionará.
 
+<!-- CP-STEPS-START:change-db-password -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -109,6 +116,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
+<!-- CP-STEPS-END:change-db-password -->
 
 Poderá alterar as palavras-passe das bases de dados associadas ao seu alojamento web.
 
@@ -120,6 +128,7 @@ Poderá alterar as palavras-passe das bases de dados associadas ao seu alojament
 
 /// details | Como alterar a palavra-passe de um endereço de e-mail associado ao meu alojamento web?
 
+<!-- CP-STEPS-START:change-email-password -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -134,6 +143,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > **Etapa 3**
 >>
 >> Na tabela que aparecer, clique no botão `...`{.action} à direita do endereço de e-mail em causa e, a seguir, clique em `Alterar palavra-passe`{.action}.
+<!-- CP-STEPS-END:change-email-password -->
 
 Poderá alterar a palavra-passe do endereço de e-mail (observe a política de palavras-passe indicada na janela de introdução).
 
@@ -196,6 +206,7 @@ Aqui estão os principais passos a seguir:
 
 /// details | Como alojar vários websites num mesmo alojamento web?
 
+<!-- CP-STEPS-START:host-multiple-websites -->
 Se o seu [alojamento web](/links/web/hosting) é compatível, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -208,6 +219,7 @@ Se o seu [alojamento web](/links/web/hosting) é compatível, clique nos separad
 > **Etapa 2**
 >>
 >> Na página que vai aparecer, clique no separador `Meus sites`{.action}.
+<!-- CP-STEPS-END:host-multiple-websites -->
 
 Poderá gerir os nomes de domínio/subdomínios declarados nos sítios web presentes no seu alojamento web.
 
@@ -226,6 +238,7 @@ Para que o seu website esteja acessível com um URL em "HTTPS" (exemplo: `https:
 
 A OVHcloud disponibiliza vários [certificados SSL](/links/web/hosting-options) nos alojamentos web.
 
+<!-- CP-STEPS-START:enable-https -->
 Para ativar um certificado SSL no alojamento web do seu website, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -246,6 +259,7 @@ Para ativar um certificado SSL no alojamento web do seu website, clique nos sepa
 > **Etapa 4**
 >>
 >> Continue até que a instalação do certificado SSL esteja finalizada (após ter validado a nota de encomenda no caso de escolher um dos certificados SSL Sectigo).
+<!-- CP-STEPS-END:enable-https -->
 
 > [!success]
 >
@@ -269,6 +283,7 @@ Para encomendar o alojamento web mais adaptado às suas necessidades, consulte a
 >
 > Dependendo do seu plano de alojamento web atual, algumas ofertas podem não lhe ser propostas. Consulte o nosso guia "[Fazer evoluir a sua oferta de alojamento web](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)" para mais informações sobre o assunto.
 
+<!-- CP-STEPS-START:change-hosting-plan -->
 Depois de fazer a escolha, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -285,6 +300,7 @@ Depois de fazer a escolha, clique nos separadores abaixo para visualizar cada um
 > **Etapa 3**
 >>
 >> De seguida, selecione a nova subscrição e a respetiva duração. Valide os contratos correspondentes e depois clique em `Enviar`{.action}.
+<!-- CP-STEPS-END:change-hosting-plan -->
 
 > [!success]
 >
@@ -296,6 +312,7 @@ Depois de fazer a escolha, clique nos separadores abaixo para visualizar cada um
 
 Quando rescindir ou eliminar o seu alojamento web, a oferta de e-mail que lhe está associada será igualmente rescindida. Para conservar os seus endereços de e-mail, é preciso desassociar a oferta de e-mail **antes** da rescisão do alojamento web em causa.
 
+<!-- CP-STEPS-START:keep-email-after-cancel -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -312,6 +329,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > **Etapa 3**
 >>
 >> Siga as instruções para encomendar uma oferta de e-mail independente que lhe permitirá conservar os seus endereços de e-mail já criados.
+<!-- CP-STEPS-END:keep-email-after-cancel -->
 
 ///
 
@@ -320,6 +338,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 Os alojamentos web **Performance** incluem uma oferta Web Cloud Databases ativável gratuitamente.<br>
 Quando rescindir ou eliminar o seu alojamento web **Performance**, a oferta Web Cloud Databases eventualmente associada será igualmente rescindida. Para conservar a sua solução Web Cloud Databases, deverá desassociá-la **antes** da rescisão do alojamento.
 
+<!-- CP-STEPS-START:keep-wcdb-after-cancel -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -336,6 +355,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > **Etapa 3**
 >>
 >> Siga as instruções para encomendar uma oferta Web Cloud Databases independente para conservar a sua solução Web Cloud Databases já criada.
+<!-- CP-STEPS-END:keep-wcdb-after-cancel -->
 
 **Esta ação é irreversível e a oferta Web Cloud Databases será faturada independentemente do seu alojamento web Performance.**
 
@@ -343,6 +363,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 /// details | Como aumentar a RAM de uma oferta "Web Cloud Databases" associada a um alojamento web "Performance"?
 
+<!-- CP-STEPS-START:increase-wcdb-ram -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -359,6 +380,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > **Etapa 3**
 >>
 >> Siga as instruções para encomendar a quantidade de RAM desejada e prossiga até à validação da encomenda.
+<!-- CP-STEPS-END:increase-wcdb-ram -->
 
 > [!success]
 >
@@ -377,6 +399,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 Existem várias razões que podem explicar um problema de funcionamento do seu website.<br>
 Para identificar a causa, comece por verificar que nenhuma das suas subscrições necessita de ser **renovada**.
 
+<!-- CP-STEPS-START:website-not-working -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -387,6 +410,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > **Etapa 2**
 >>
 >> Encontre todos os pormenores no nosso guia "[Como renovar os meus serviços OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
+<!-- CP-STEPS-END:website-not-working -->
 
 De seguida, consulte os [eventos em curso na nossa infraestrutura](https://www.status-ovhcloud.com/).
 
@@ -440,6 +464,7 @@ Será necessário eliminar o módulo 1 clique e voltar a instalá-lo.
 > - [Restaurar o espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-cluster-url-1 -->
 **Apenas** Depois de realizar todos os backups necessários, elimine o seu [Módulos "1 clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules), clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -456,9 +481,11 @@ Será necessário eliminar o módulo 1 clique e voltar a instalá-lo.
 > **Etapa 3**
 >>
 >> Na tabela que aparecer, clique no botão `...`{.action} à direita na linha do *Módulos "1 clique"* em causa e, a seguir, em `Eliminar o módulo`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-1 -->
 
 A eliminação do *módulo "1 clique"* pode demorar **vários minutos**.
 
+<!-- CP-STEPS-START:fix-cluster-url-2 -->
 De seguida, elimine a base de dados associada, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -475,6 +502,7 @@ De seguida, elimine a base de dados associada, clique nos separadores abaixo par
 > **Etapa 3**
 >>
 >> Na tabela que aparecer, clique no botão `...`{.action} à direita na linha da base de dados em causa e, a seguir, em `Eliminar base de dados`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-2 -->
 
 A eliminação da base de dados associada pode demorar **vários minutos**.
 
@@ -505,6 +533,7 @@ Se o seu website apresentar este URL após uma operação, a solução mais ráp
 > - [Restaurar o espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-cluster-url-after-change-1 -->
 Para restaurar o código-fonte do seu website, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -527,9 +556,11 @@ Para restaurar o código-fonte do seu website, clique nos separadores abaixo par
 > **Etapa 4**
 >>
 >> Na janela que aparece, escolha a data do backup que pretende restaurar e prossiga até que o restauro seja iniciado.
+<!-- CP-STEPS-END:fix-cluster-url-after-change-1 -->
 
 O restauro do espaço de armazenamento FTP pode demorar **vários minutos**.
 
+<!-- CP-STEPS-START:fix-cluster-url-after-change-2 -->
 Para restaurar um backup da sua base de dados, clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
@@ -554,6 +585,7 @@ Para restaurar um backup da sua base de dados, clique nos separadores abaixo par
 > **Etapa 5**
 >>
 >> Depois de escolher o backup, clique no botão `...`{.action} à direita do backup a restaurar e, a seguir, em `Restaurar backup`{.action}.
+<!-- CP-STEPS-END:fix-cluster-url-after-change-2 -->
 
 O restauro de uma base de dados pode demorar **vários minutos**.
 
@@ -574,6 +606,7 @@ Esta situação indica uma configuração errada ao nível dos [servidores DNS](
 
 O caso mais comum é o seguinte: encomendou separadamente o seu nome de domínio e o seu alojamento web. Como tal, estes não são automaticamente ligados através da zona DNS do seu domínio.
 
+<!-- CP-STEPS-START:fix-webmail-redirect-1 -->
 Para corrigir isto, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -593,7 +626,9 @@ Para corrigir isto, clique nos separadores abaixo para visualizar cada uma das *
 >>
 > **Etapa 4**
 >>
+<!-- CP-STEPS-START:fix-webmail-redirect-2 -->
 >> Na tabela (que representa a zona DNS do nome de domínio) que aparece, compare os `Alvos` das entradas do tipo `NS` presentes na zona DNS com os nomes dos servidores DNS recuperados anteriormente. Podem ocorrer três situações. Clique nos separadores abaixo para visualizar cada um dos **3** casos.
+<!-- CP-STEPS-END:fix-webmail-redirect-1 -->
 
 > [!tabs]
 > **Caso n°1**
@@ -650,6 +685,7 @@ Para corrigir isto, clique nos separadores abaixo para visualizar cada uma das *
 >> Os `Alvos` (servidores DNS) das entradas do tipo `NS` declaradas na zona DNS do nome de domínio **não são idênticos** às que são obtidas no separador `Servidores DNS`{.action}. Além disso, os nomes dos servidores DNS recuperados no separador `Servidores DNS`{.action} não têm nenhuma das formas descritas no **Caso n°2**, com exceção das seguintes formas: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` ou `vpsXXXXXX.ovh.ca` (em que cada `X` designa um algarismo compreendido entre **0** e **9**).
 >>
 >> Neste caso, isto significa que a zona DNS ativa aplicada ao seu domínio não é gerida pela OVHcloud diretamente. Contacte o seu Webmaster, o seu fornecedor de nome de domínio, o seu fornecedor de DNS ou um dos nossos [parceiros](/links/partner).
+<!-- CP-STEPS-END:fix-webmail-redirect-2 -->
 
 ///
 
@@ -670,6 +706,7 @@ Neste caso, a solução mais rápida será restaurá-lo para um estado anterior 
 > - [Restaurar o espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export).
 
+<!-- CP-STEPS-START:fix-redirect-error-1 -->
 Para restaurar o código-fonte do seu website, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -692,9 +729,11 @@ Para restaurar o código-fonte do seu website, clique nos separadores abaixo par
 > **Etapa 4**
 >>
 >> Na janela que aparece, escolha a data do backup que pretende restaurar e prossiga até que o restauro seja iniciado.
+<!-- CP-STEPS-END:fix-redirect-error-1 -->
 
 O restauro do espaço de armazenamento FTP pode demorar **vários minutos**.
 
+<!-- CP-STEPS-START:fix-redirect-error-2 -->
 Para restaurar um backup da sua base de dados, clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
@@ -719,6 +758,7 @@ Para restaurar um backup da sua base de dados, clique nos separadores abaixo par
 > **Etapa 5**
 >>
 >> Depois de escolher o backup, clique no botão `...`{.action} à direita do backup a restaurar e, a seguir, em `Restaurar backup`{.action}.
+<!-- CP-STEPS-END:fix-redirect-error-2 -->
 
 O restauro de uma base de dados pode demorar **vários minutos**.
 

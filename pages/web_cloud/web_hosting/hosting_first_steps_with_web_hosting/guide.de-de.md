@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Schnellstart-Anleitung"
 excerpt: "Erfahren Sie hier, wie Sie auf einem Webhosting eine neue Website mithilfe eines 1-Klick-Moduls online stellen und personalisierte E-Mail-Adressen mit Ihrem Domainnamen verwenden"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -53,6 +53,7 @@ Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog ers
 >
 > Wenn Sie Ihren Domainnamen und Ihr Webhosting zusammen abonniert haben, sind diese beiden Dienste bereits verbunden. Fahren Sie mit [Teil 2](#part-2) dieser Anleitung fort.
 
+<!-- CP-STEPS-START:link-domain-website -->
 Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -71,6 +72,7 @@ Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeige
 > **Schritt 4**
 >>
 >> Auf der neuen Seite, die sich öffnet, aktivieren Sie und füllen Sie die geforderten Elemente aus, bis sie validiert sind.
+<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Klicken Sie hier für weitere Informationen.
 
@@ -86,6 +88,7 @@ Lesen Sie unsere detaillierten Anleitungen:
 
 Für Webhostings bietet OVHcloud die kostenlose Installation der CMS WordPress, Joomla!, PrestaShop und Drupal über der Option „1-Klick-Module“ an.
 
+<!-- CP-STEPS-START:install-1click-module -->
 Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -104,6 +107,7 @@ Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeige
 > **Schritt 4**
 >>
 >> Wählen Sie im angezeigten Fenster das CMS aus, das Sie installieren möchten. Wählen Sie dann die Domain aus, auf der das Modul installiert werden soll, indem Sie den gewünschten Domainnamen **ohne** "www" auswählen (Beispiel: `domain.tld` und nicht `www.domain.tld`) und klicken Sie dann direkt auf `Installieren`{.action}.
+<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Klicken Sie hier für weitere Informationen.
 
@@ -120,6 +124,7 @@ Lesen Sie unsere detaillierten Anleitungen:
 >
 > Wenn Sie Ihren Domainnamen und Ihr Webhosting zusammen bestellt haben, sind die im Webhosting enthaltenen E-Mail-Adressen bereits mit Ihrem Domainnamen verbunden. Gehen Sie dann zu [Teil 4](#part-4) dieser Anleitung.
 
+<!-- CP-STEPS-START:enable-email-solution -->
 Klicken Sie auf die folgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -134,6 +139,7 @@ Klicken Sie auf die folgenden Tabs, um die **3** Schritte nacheinander anzuzeige
 > **Schritt 3**
 >>
 >> Wählen Sie auf der neu angezeigten Seite im Bereich `(1)` die betreffende Domain aus und fahren Sie mit der Aktivierung der E-Mail-Adressen fort.
+<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Klicken Sie hier für weitere Informationen.
 
@@ -143,6 +149,7 @@ Lesen Sie unsere detaillierte Anleitung „[Webhosting - Inklusiv-E-Mail-Adresse
 
 ### 4 - Erstellen Sie eine personalisierte E-Mail-Adresse mit Ihrem Domainnamen <a name="part-4"></a>
 
+<!-- CP-STEPS-START:create-email-address -->
 Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -161,6 +168,7 @@ Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeige
 > **Schritt 4**
 >>
 >> Geben Sie im angezeigten Fenster die angeforderten Daten ein, bis sie validiert wurden.
+<!-- CP-STEPS-END:create-email-address -->
 
 Wiederholen Sie diesen Vorgang für jede E-Mail-Adresse, die Sie erstellen möchten (im Rahmen Ihres Webhosting Angebots).
 

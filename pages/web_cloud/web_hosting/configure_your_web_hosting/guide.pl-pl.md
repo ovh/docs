@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Środowisko, wersja PHP, .ovhconfig"
 excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i .ovhconfig na hostingu WWW"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -140,6 +140,7 @@ W razie potrzeby sprawdź wersję PHP aktualnie używaną przez Twój hosting na
 
 /// details | W Panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:check-php-version -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -158,6 +159,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> > Jeśli pojawiło się niebieskie kółko aktualizacji, odczekaj kilka minut, aż aktualizacja wersji się zakończy.
 >> >
 >>
+<!-- CP-STEPS-END:check-php-version -->
 
 ///
 
@@ -229,6 +231,7 @@ Teraz już znasz różne modyfikowalne ustawienia Twojego hostingu WWW OVHcloud,
 > Przypominamy, że zmiana co najmniej jednego z tych elementów może mieć wpływ na wyświetlanie lub prawidłowe działanie Twojej strony WWW. **Upewnij się wcześniej, czy Twoja strona WWW jest zgodna ze zmianami, które chcesz wprowadzić w konfiguracji Twojego hostingu.** W przypadku wątpliwości lub trudności skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 >
 
+<!-- CP-STEPS-START:modify-config-cp -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -273,6 +276,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 >> ![HostingConfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:modify-config-cp -->
 
 ### 3 - Metoda 2: zmiana konfiguracji hostingu WWW z poziomu pliku ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -280,6 +284,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 Przygotuj główny identyfikator FTP, hasło oraz adres serwera FTP.
 
+<!-- CP-STEPS-START:retrieve-ftp-credentials -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -302,6 +307,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
 >> Jeśli chodzi o hasło użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
+<!-- CP-STEPS-END:retrieve-ftp-credentials -->
 
 #### 3.2 - Odzyskaj lub utwórz plik ".ovhconfig"
 

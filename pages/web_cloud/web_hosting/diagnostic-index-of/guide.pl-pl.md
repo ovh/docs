@@ -1,7 +1,7 @@
 ---
 title: Co zrobić w przypadku strony "Index of"?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę "Index of"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Wprowadzenie

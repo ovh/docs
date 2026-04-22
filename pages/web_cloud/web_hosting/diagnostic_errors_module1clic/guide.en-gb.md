@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting common 1-click module errors"
 excerpt: "Find out how to diagnose the most common cases of 1-click module creation errors"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -53,6 +53,7 @@ However, if they are not configured correctly, the 1-click module installation m
 
 /// details | Your domain name is not offered when you create the 1-click module
 
+<!-- CP-STEPS-START:check-module-status -->
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
 Click on the tabs below to view each of the **4** steps.
@@ -84,11 +85,13 @@ Click on the tabs below to view each of the **4** steps.
 >> |---|---|
 >> |The domain or subdomain related to the website you want to create does not appear in the table in the `My sites`{.action} tab.|Add your domain name by following [these instructions](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
 >> |The domain name has been detached from the website without your action.|If your domain name or its [DNS zone](/pages/web_cloud/domains/dns_zone_edit) is not managed from your OVHcloud account, add your domain name from the `My sites`{.action} tab by following [this guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+<!-- CP-STEPS-END:check-module-status -->
 
 ///
 
 /// details | "An error has occurred loading the information (You need at least one free database)"
 
+<!-- CP-STEPS-START:change-root-folder -->
 ![No databases available](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-no-db-available.png){.thumbnail}
 
 This message appears when you launch the installation of your 1-click module when you are unable or no longer able to create a new database associated with your Web Hosting plan.
@@ -110,6 +113,7 @@ Click on the tabs below to view each of the **2** steps.
 >>
 >> ![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:change-root-folder -->
 
 Once complete, you will be able to install a new 1-click module.
 
@@ -125,6 +129,7 @@ Once complete, you will be able to install a new 1-click module.
 > Compare our different [hosting plans](/links/web/hosting).
 >
 
+<!-- CP-STEPS-START:find-admin-credentials -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -138,6 +143,7 @@ Click on the tabs below to view each of the **2** steps.
 >>
 >> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:find-admin-credentials -->
 
 The offers [Pro](/links/web/hosting-professional-offer) and [Performance](/links/web/hosting-performance-offer) will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
 
@@ -150,6 +156,7 @@ Once complete, you will be able to install a new 1-click module.
 > The operation to delete a database is permanent. It also deletes backups of the database concerned. If you have any doubts, please contact your webmaster or one of our [partners](/links/partner).
 >
 
+<!-- CP-STEPS-START:diag-delete-database -->
 To delete a database, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -163,6 +170,7 @@ To delete a database, click on the tabs below to view each of the **2** steps.
 >>
 >> ![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:diag-delete-database -->
 
 Once complete, you will be able to install a new 1-click module.
 
@@ -202,6 +210,7 @@ After you launched the creation of your 1-click module, you received an email st
 
 This message means that the **root folder** of the website to which your domain name is associated already contains one or more files or folders.
 
+<!-- CP-STEPS-START:change-domain-root-folder -->
 To link your domain name to another website (root folder), click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -230,6 +239,7 @@ To link your domain name to another website (root folder), click on the tabs bel
 > **Step 4**
 >>
 >> Once the domain name has been detached from the website, follow our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+<!-- CP-STEPS-END:change-domain-root-folder -->
 
 You can also log in to your web hosting plan using the [FTP](/pages/web_cloud/web_hosting/ftp_connection) protocol, then delete the folder contents. This is done after you have backed it up locally, or after you have emptied it by moving all of its contents to another FTP directory.
 
@@ -247,6 +257,7 @@ To check this configuration, please read our guide on [Modifying your web hostin
 
 /// details | "An error has occurred loading the information (There is not enough space on your hosting (you need at least xxx MB))"
 
+<!-- CP-STEPS-START:check-database-credentials -->
 ![not_enough_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-not-enough-ftp-space.png){.thumbnail}
 
 This message indicates that the [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan contains too much data.
@@ -283,6 +294,7 @@ Click on the tabs below to view each of the **2** steps.
 >>
 >> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:check-database-credentials -->
 
 The [Pro](/links/web/hosting-professional-offer) and [Performance](/links/web/hosting-performance-offer) offers will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
 
@@ -296,6 +308,7 @@ After launching the installation of your 1-click module in advanced mode, you re
 
 You will need to check your database credentials. To find them, please refer to this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
+<!-- CP-STEPS-START:diag-delete-module -->
 Then delete your 1-click module. To do this, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -316,6 +329,7 @@ Then delete your 1-click module. To do this, click on the tabs below to view eac
 >> > Be sure to delete only the installation you just launched. To do this, check that this is the correct directory in the `Path` column.
 >> >
 >>
+<!-- CP-STEPS-END:diag-delete-module -->
 
 Then relaunch the installation of a new 1-click module.
 
@@ -359,6 +373,7 @@ You can also check the credentials by [directly connecting](/pages/web_cloud/web
 
 You have launched the installation of a 1-click module in [advanced mode](/pages/web_cloud/web_hosting/cms_install_1_click_modules) on a database located on a [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) server. You have received this error message by email. This means that the database server name you provided is incorrect.
 
+<!-- CP-STEPS-START:find-db-server-name -->
 To find the name of your database server, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -370,11 +385,13 @@ To find the name of your database server, click on the tabs below to view each o
 >>
 >> The name of the server to use is listed in the `Login information` box, in the `SQL` subsection, under `Host name`.
 >>
+<!-- CP-STEPS-END:find-db-server-name -->
 
 ///
 
 /// details | Your old website still appears
 
+<!-- CP-STEPS-START:verify-db-connection -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -386,6 +403,7 @@ Click on the tabs below to view each of the **2** steps.
 >>
 >> In the `1-click modules`{.action} tab, click on your website link in the `Path` column. A new tab opens with your website. The domain name associated with your installation will appear in the address bar of your web browser. For example, if your domain name is named "domain.tld", you may see another domain name, or a standard OVHcloud page.
 >>
+<!-- CP-STEPS-END:verify-db-connection -->
 
 This malfunction can have several causes:
 

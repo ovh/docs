@@ -1,7 +1,7 @@
 ---
 title: "Alle Ihre Websites im OVHcloud Kundencenter anzeigen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie alle Ihre Websites über das OVHcloud Kundencenter anzeigen und verwalten"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Ziel
@@ -27,6 +27,7 @@ Das in dieser Anleitung vorgestellte Interface ermöglicht es Ihnen, alle Ihre W
 
 ## In der praktischen Anwendung
 
+<!-- CP-STEPS-START:view-websites -->
 Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -62,6 +63,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuz
 >> > [!warning]
 >> > Separate Logs können für einen externen Domainnamen nicht aktiviert werden. Diese Option steht nur für Domainnamen zur Verfügung, die bei OVHcloud registriert sind.
 >>
+<!-- CP-STEPS-END:view-websites -->
 
 ## Weiterführende Informationen <a name="go-further"></a>
  

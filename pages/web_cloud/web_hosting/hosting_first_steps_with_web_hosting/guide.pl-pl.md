@@ -1,7 +1,7 @@
 ---
 title: "Jak rozpocząć korzystanie z hostingu WWW"
 excerpt: 'Dowiedz się, jak zamieścić w Internecie nową stronę WWW za pomocą opcji"Moduły za 1 kliknięciem", jak utworzyć nowy spersonalizowany adres e-mail z nazwą domeny, a wszystko to za pomocą naszego rozwiązania hostingowego'
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -53,6 +53,7 @@ Chcesz stworzyć stronę WWW dla swojej firmy lub własny blog? Potrzebujesz skl
 >
 > Jeśli zamówiłeś domenę i hosting w ramach jednego zamówienia, te dwie usługi są już powiązane. Przejdź bezpośrednio do [Część 2](#część-2) tego przewodnika.
 
+<!-- CP-STEPS-START:link-domain-website -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -71,6 +72,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > **Krok 4**
 >>
 >> Na nowej stronie, która się otwiera, zaznacz i uzupełnij wymagane elementy aż do ich zweryfikowania.
+<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -86,6 +88,7 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 
 Dzięki opcji "Moduły CMS", na hostingach OVHcloud można zainstalować za darmo systemy CMS WordPress, Joomla!, PrestaShop i Drupal.
 
+<!-- CP-STEPS-START:install-1click-module -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -104,6 +107,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > **Krok 4**
 >>
 >> W wyświetlonym oknie wybierz CMS, który chcesz zainstalować. Następnie wybierz domenę, na której ma zostać zainstalowany moduł, wybierając nazwę domeny **bez "www"** przed (przykład: `domain.tld`, a nie `www.domain.tld`), po czym kliknij bezpośrednio na `Instaluj`{.action}.
+<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -120,6 +124,7 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 >
 > Jeśli zamówiłeś domenę i hosting w ramach jednego zamówienia, adresy e-mail zawarte w hostingu są już powiązane z twoją domeną. Przejdź bezpośrednio do [Część 4](#część-4) tego przewodnika.
 
+<!-- CP-STEPS-START:enable-email-solution -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -134,6 +139,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > **Krok 3**
 >>
 >> Na stronie, która się otworzy, wybierz odpowiednią nazwę domeny w sekcji `(1)`, następnie kontynuuj, aż do aktywacji kont e-mail.
+<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -143,6 +149,7 @@ Zapoznaj się ze szczegółowym przewodnikiem "[Hosting WWW - Włącz konta e-ma
 
 ### 4 - Tworzenie spersonalizowanego adresu e-mail z nazwą domeny <a name="part-4"></a>
 
+<!-- CP-STEPS-START:create-email-address -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -161,6 +168,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > **Krok 4**
 >>
 >> W oknie, które się otworzy, uzupełnij wymagane elementy aż do zatwierdzenia.
+<!-- CP-STEPS-END:create-email-address -->
 
 Powtórz tę operację dla każdego konta e-mail, które chcesz założyć (z ograniczeniem twojej oferty hostingowej).
 

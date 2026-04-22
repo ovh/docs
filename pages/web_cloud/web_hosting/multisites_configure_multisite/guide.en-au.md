@@ -1,7 +1,7 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -58,6 +58,7 @@ Would you like to add a new website to your web hosting?
 
 This section applies only if the domain name (and/or its active DNS zone) with which you want to create your website is **in your OVHcloud Control Panel**.
 
+<!-- CP-STEPS-START:add-ovhcloud-domain -->
 Click on the tabs below to view each of the **7** steps.
 
 > [!tabs]
@@ -154,6 +155,7 @@ Click on the tabs below to view each of the **7** steps.
 >>
 >> > [!primary]
 >> > Modifying the DNS configuration of your domain name requires a propagation delay that can take up to 24 hours before it is fully effective.
+<!-- CP-STEPS-END:add-ovhcloud-domain -->
 
 ///
 
@@ -161,6 +163,7 @@ Click on the tabs below to view each of the **7** steps.
 
 This section applies only if you want to add a website with a domain name that is not present in your OVHcloud account. It may be a domain name in another OVHcloud account or registered with another provider.
 
+<!-- CP-STEPS-START:add-external-domain -->
 Click on the tabs below to view each of the **7** steps.
 
 > [!tabs]
@@ -241,6 +244,7 @@ Click on the tabs below to view each of the **7** steps.
 >> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
 >>
 >> Conversely, if you want to manually install your website, retrieve its files and upload them to the appropriate root folder on the storage space of your web hosting. For more information, please refer to our documentation "[Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
+<!-- CP-STEPS-END:add-external-domain -->
 
 ///
 
@@ -248,6 +252,7 @@ Click on the tabs below to view each of the **7** steps.
 
 This section applies only if you want to add a website with a domain name that has not yet been registered, either with OVHcloud or with another registrar. In other words, it concerns domain names that have not yet been subscribed to.
 
+<!-- CP-STEPS-START:add-site-1click-module -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -284,6 +289,7 @@ Click on the tabs below to view each of the **5** steps.
 >> > [!primary]
 >> >
 >> > Once your domain name appears in your OVHcloud Control Panel, follow the section "[Add a domain name managed from your OVHcloud Control Panel](#add-domain-ovhcloud)" of this guide to add your website to your web hosting.
+<!-- CP-STEPS-END:add-site-1click-module -->
 
 ///
 

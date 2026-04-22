@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -140,6 +140,7 @@ Se necessário, pode conhecer a versão de PHP atualmente utilizada pelo seu alo
 
 /// details | Através da Área de Cliente OVHcloud
 
+<!-- CP-STEPS-START:check-php-version -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -158,6 +159,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> > Se vir um símbolo redondo azul, aguarde alguns minutos para que a versão seja atualizada.
 >> >
 >>
+<!-- CP-STEPS-END:check-php-version -->
 
 ///
 
@@ -229,6 +231,7 @@ Agora que conhece os diferentes parâmetros alteráveis para o seu alojamento we
 > Lembre-se de que a alteração de, pelo menos, um destes itens pode afetar a visualização ou o funcionamento do website. **Assegure-se de que o seu website é compatível com as alterações que deseja efetuar na configuração do seu alojamento web.** Contacte um [fornecedor especializado](/links/partner) em caso de dúvida ou se encontrar dificuldades.
 >
 
+<!-- CP-STEPS-START:modify-config-cp -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -273,6 +276,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> ![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:modify-config-cp -->
 
 ### 3 - Método 2: modificar a configuração do alojamento web a partir do ficheiro ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -280,6 +284,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 Tenha consigo o seu nome de utilizador FTP, a respetiva palavra-passe e o endereço do servidor FTP.
 
+<!-- CP-STEPS-START:retrieve-ftp-credentials -->
 Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -302,6 +307,7 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etap
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
 >> Quanto à palavra-passe do utilizador FTP, consulte as instruções descritas no manual "[Alterar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)" se necessário.
+<!-- CP-STEPS-END:retrieve-ftp-credentials -->
 
 #### 3.2 - Recuperar ou criar o ficheiro ".ovhconfig"
 

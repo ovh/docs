@@ -1,7 +1,7 @@
 ---
 title: "Restoring your Web Hosting plan’s storage space"
 excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objective
@@ -60,6 +60,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 >
 > This is because our robots install the backup on your hosting before deleting the FTP content which will be replaced by the restoration.
 
+<!-- CP-STEPS-START:check-disk-space -->
 To check the quota used on your web hosting, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -78,6 +79,7 @@ To check the quota used on your web hosting, click on the tabs below to view eac
 >> If the space in use is more than half of the total FTP storage space of your hosting plan, you can free up space by removing large files from your website (you can use [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
 >>
 >> Download these files, then delete them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
+<!-- CP-STEPS-END:check-disk-space -->
 
 - [Restore the storage space via the OVHcloud Control Panel](#viacontrolpanel)
 
@@ -103,6 +105,7 @@ To check the quota used on your web hosting, click on the tabs below to view eac
 > - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/control-panel/web-hosting).
 > - The hosted site(s) will display a "403 Forbidden" page.
 
+<!-- CP-STEPS-START:restore-backup-cp -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -145,6 +148,7 @@ Click on the tabs below to view each of the **5** steps.
 >> Take a few minutes to check that none of your files will be lost after the restoration, e.g. any files saved on your storage space after the restore date you have selected. As a reminder, the restoration will effectively overwrite all of your current data, and replace it with the backup data.
 >>
 >> Once you are ready to start restoring the backup, click `Confirm`{.action}.
+<!-- CP-STEPS-END:restore-backup-cp -->
 
 > [!primary]
 >

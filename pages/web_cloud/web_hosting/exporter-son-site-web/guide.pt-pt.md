@@ -1,7 +1,7 @@
 ---
 title: "Exportar o seu website"
 excerpt: "Descubra como exportar o seu website OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -40,6 +40,7 @@ Para se ligar ao seu espaço de armazenamento, deve dispor dos seguintes element
 
 Estes elementos foram-lhe enviados no e-mail enviado após a instalação do seu alojamento web.
 
+<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
 Se não possuir estas informações, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -64,6 +65,7 @@ Se não possuir estas informações, clique nos separadores abaixo para visualiz
 >> Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Caso tenha perdido a palavra-passe, consulte o manual ["Modificar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
+<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no espaço de armazenamento pode ser realizado de duas formas:
 
@@ -75,6 +77,7 @@ Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no es
 
 Uma vez ligado ao seu espaço de armazenamento e consoante os seus sítios web alojados, vários diretórios podem aparecer.
 
+<!-- CP-STEPS-START:find-root-folder -->
 Se necessário, identifique previamente no seu alojamento web o nome do diretório principal em que o seu sítio web está armazenado. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -95,6 +98,7 @@ Se necessário, identifique previamente no seu alojamento web o nome do diretór
 >> Na tabela que aparece, para o sítio web desejado, veja o `Pasta raiz`{.action} que aparece.
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+<!-- CP-STEPS-END:find-root-folder -->
 
 Ainda ligado ao seu espaço de armazenamento, basta descarregar os ficheiros do seu sítio web ao aceder à pasta raiz identificada anteriormente.
 

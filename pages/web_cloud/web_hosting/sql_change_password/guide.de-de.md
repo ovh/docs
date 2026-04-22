@@ -1,7 +1,7 @@
 ---
 title: Passwort einer Webhosting-Datenbank ändern
 excerpt: Erfahren Sie, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Ziel 
@@ -56,6 +56,7 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Teilen:
 
 ### 1: Die Konfigurationsdatei Ihrer Website identifizieren <a name="step1"></a>
 
+<!-- CP-STEPS-START:find-config-file -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -84,6 +85,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> Gehen Sie anschließend zum FTP-Speicherbereich, der die Dateien und Ordner Ihrer Website enthält, und konsultieren Sie dafür [unsere Anleitung](/pages/web_cloud/web_hosting/ftp_connection).
+<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -222,6 +224,7 @@ Auch hier sind zwei Fälle möglich:
 
 #### Fall 1: Die Datenbank Ihrer Website ist Teil Ihres Webhostings <a name="case1"></a>
 
+<!-- CP-STEPS-START:change-db-password-server -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -248,9 +251,11 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (festgelegt in [Teil 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+<!-- CP-STEPS-END:change-db-password-server -->
 
 #### Fall 2: Die Datenbank Ihrer Website ist Teil eines Web Cloud Databases Datenbankdienstes <a name="case2"></a>
 
+<!-- CP-STEPS-START:change-wcdb-password -->
 Gehen Sie in den Bereich `Datenbanken`{.action} Ihres Kundencenters und klicken Sie auf den betreffenden Server. Gehen Sie zum Tab `Benutzer und Rechte`{.action}:
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
@@ -262,6 +267,8 @@ Um das Passwort Ihrer Datenbank auf dem Server zu ändern, klicken Sie auf die S
 Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert in [Teil 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
+
+<!-- CP-STEPS-END:change-wcdb-password -->
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Erstellung einer Subdomain"
 excerpt: "Erfahren Sie hier, wie Sie eine Subdomain bei OVHcloud erstellen und nutzen"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -182,9 +182,11 @@ Nicht aufgeführte Dienste finden Sie in der jeweiligen Service-Dokumentation. S
 
 #### Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen <a name="link-subdomain-case-1"></a>
 
+<!-- CP-STEPS-START:link-subdomain-hosting -->
 Wie bei einem Domainnamen, um einer Subdomain zu erlauben, den Inhalt eines als „Ziel“ deklarierten Verzeichnisses anzuzeigen, das für eine Website auf einem Webhosting bereitgestellt wird, melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und wählen Sie `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} in der linken Spalte, wählen Sie Ihr Webhosting aus und klicken Sie anschließend auf den Tab `Meine Seiten`{.action}.  
 
 Hier erlauben Sie der Subdomain den Zugriff auf Ihre Website, die sich auf Ihrem Webhosting befindet.  
+<!-- CP-STEPS-END:link-subdomain-hosting -->
 
 Für weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem Webhosting, konsultieren Sie unsere Anleitung „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)“. Die Vorgehensweise ist identisch.
 
@@ -195,9 +197,11 @@ Für weitere Informationen zur Konfiguration einer Domain oder Subdomain auf ein
 
 #### Fall 2: Exchange E-Mail-Adressen mit einer Subdomain erstellen <a name="link-subdomain-case-2"></a>
 
+<!-- CP-STEPS-START:link-subdomain-exchange -->
 Um die Erstellung personalisierter Exchange E-Mail-Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie in der linken Spalte auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend die Exchange Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
 
 So können Sie Ihre Subdomain auf Ihrer Exchange Plattform deklarieren.
+<!-- CP-STEPS-END:link-subdomain-exchange -->
 
 Weitere Informationen zur Konfiguration einer Exchange-Plattform finden Sie in den folgenden Anleitungen:
 
@@ -207,9 +211,11 @@ Weitere Informationen zur Konfiguration einer Exchange-Plattform finden Sie in d
 
 #### Fall 3: E-Mail Pro Adressen mit einer Subdomain erstellen <a name="link-subdomain-case-3"></a>
 
+<!-- CP-STEPS-START:link-subdomain-emailpro -->
 Um die Erstellung personalisierter E-Mail Pro Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `E-Mail für Profis`{.action} und wählen Sie dann die E-Mail Pro Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
 
 So können Sie Ihre Subdomain auf Ihrer E-Mail Pro Plattform deklarieren.
+<!-- CP-STEPS-END:link-subdomain-emailpro -->
 
 Weitere Informationen zur Konfiguration einer E-Mail Pro Plattform finden Sie in den folgenden Anleitungen:
 

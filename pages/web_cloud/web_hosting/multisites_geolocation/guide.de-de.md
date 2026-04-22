@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich eine Website in einem bestimmten Land geolokalisieren?"
 excerpt: "So lokalisieren Sie Ihre Website mithilfe der geolokalisierten IP-Adressen, die für die Shared Hosting Angebote von OVHcloud verfügbar sind"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Ziel
@@ -36,6 +36,7 @@ Die Geolokalisierungsoption für Ihr Webhosting kann für die Suchmaschinenoptim
 
 Für Webseiten, die hauptsächlich international abgerufen und auf der OVHcloud Shared Hosting Infrastruktur gehostet werden, bieten wir eine Geolokalisierungsoption nach IP-Adresse an. Sie ermöglicht eine bessere Referenzierung der Websites in dem Land, zu dem die ausgewählte IP-Adresse gehört.
 
+<!-- CP-STEPS-START:configure-geolocation -->
 Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -70,6 +71,7 @@ Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die Tabs, um di
 >> Wählen Sie aus den 12 angebotenen Ländern die IP-Adresse des Landes aus, für das Sie Ihre Website geolokalisieren möchten: *Tschechische Republik, Finnland, Frankreich, Deutschland, Irland, Italien, Litauen, Niederlande, Polen, Portugal, Spanien, Vereinigtes Königreich*.
 >>
 >> Klicken Sie auf `Weiter`{.action} und im nächsten Fenster auf `Bestätigen`{.action}.
+<!-- CP-STEPS-END:configure-geolocation -->
 
 > [!primary]
 >

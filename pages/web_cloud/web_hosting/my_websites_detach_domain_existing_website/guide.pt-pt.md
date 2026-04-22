@@ -1,7 +1,7 @@
 ---
 title: "Como desassociar um nome de domínio de um site web existente"
 excerpt: "Descubra como desassociar um nome de domínio ou subdomínio de um site web já existente no seu alojamento web"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -36,6 +36,7 @@ Deseja associar o seu nome de domínio ou subdomínio a outro site web num dos s
 >
 > Desassociar um nome de domínio ou subdomínio de um site web no seu alojamento web é uma operação sensível. De facto, após esta operação, o seu site web já não será acessível na Internet com o seu nome de domínio e/ou subdomínio.
 
+<!-- CP-STEPS-START:detach-domain -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -78,6 +79,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
 >> > Como o aviso indica, terá de [eliminar a sua associação Git](/pages/web_cloud/web_hosting/git_integration_webhosting) primeiro, **antes** de desassociar o seu nome de domínio.
+<!-- CP-STEPS-END:detach-domain -->
 
 ### Caso particular: Desassociação de um nome de domínio ou subdomínio para o utilizar com outro site web
 

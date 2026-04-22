@@ -1,7 +1,7 @@
 ---
 title: "Jak przypisać nazwę domeny do istniejącej strony internetowej ?"
 excerpt: "Dowiedz się, jak przypisać nazwę domeny lub poddomeny do istniejącej strony internetowej na Twojej ofercie hostingu"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -56,6 +56,7 @@ Możesz hostować wiele stron internetowych na jednej ofercie hostingu, nawet je
 
 Ta część dotyczy tylko wtedy, gdy Twoja nazwa domeny i/lub aktywna strefa DNS znajdują się **w Twoim Panelu klienta OVHcloud**.
 
+<!-- CP-STEPS-START:add-domain-ovhcloud -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 > [!tabs]
@@ -138,6 +139,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 >> Po dokonaniu wyborów kliknij przycisk `Kontynuuj`{.action}, aby zakończyć dodawanie nazwy domeny lub poddomeny do Twojej strony internetowej. To dodanie może zająć do godziny.
 >>
 >> Jednak zmiana konfiguracji DNS Twojej nazwy domeny wymaga czasu propagacji, który może wynosić nawet 24 godziny, zanim będzie w pełni skuteczna.
+<!-- CP-STEPS-END:add-domain-ovhcloud -->
 
 ///
 
@@ -145,6 +147,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 Ta część dotyczy tylko wtedy, gdy Twoja nazwa domeny nie znajduje się w Twoim koncie OVHcloud.
 
+<!-- CP-STEPS-START:add-domain-external -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 > [!tabs]
@@ -207,6 +210,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 >> > Zwróć uwagę, że jeśli chcesz dodać `sub.domain.tld`, musisz utworzyć wpis TXT `ovhcontrol.domain.tld`, a nie wpis `ovhcontrol.sub.domain.tld`.
 >> >
 >> > Aby znaleźć aktywną strefę DNS Twojej nazwy domeny, sprawdź [serwery DNS](/pages/web_cloud/domains/dns_server_edit), do których jest ona przypisana. Musisz zweryfikować tylko nazwę domeny za pomocą pola **TXT**, nie wszystkie jej poddomeny.|
+<!-- CP-STEPS-END:add-domain-external -->
 
 ///
 
@@ -214,6 +218,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 Ta część dotyczy tylko wtedy, gdy Twoja nazwa domeny jeszcze nie została zarejestrowana, ani u OVHcloud, ani u innego biura rejestracji. Inaczej mówiąc, dotyczy nazw domen, które jeszcze nie zostały zamówione.
 
+<!-- CP-STEPS-START:add-domain-new -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -250,6 +255,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 >> > [!primary]
 >> >
 >> > Jeśli po kilku godzinach zauważysz, że Twoja nowa nazwa domeny nie została poprawnie przypisana do Twojej strony internetowej, przejdź do sekcji "[Dodanie nazwy domeny zarządzanej z poziomu Twojego Panelu klienta OVHcloud](#add-domain-ovhcloud)" tego przewodnika.
+<!-- CP-STEPS-END:add-domain-new -->
 
 ///
 

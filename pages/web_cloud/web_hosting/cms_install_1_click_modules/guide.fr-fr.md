@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -86,6 +86,7 @@ Deux modes d'installation sont proposés :
 
 /// details | Installation rapide d'un « module en 1 clic »
 
+<!-- CP-STEPS-START:install-basic-module -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -127,6 +128,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Une fois l'installation terminée, vous recevrez un e-mail contenant les informations de connexion à l'interface administrateur (*back office*) de votre CMS. Connectez-vous à celle-ci pour personnaliser votre site web.
 >>
+<!-- CP-STEPS-END:install-basic-module -->
 
 > [!primary]
 >
@@ -136,6 +138,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 /// details | Installation avancée d'un « module en 1 clic »
 
+<!-- CP-STEPS-START:install-advanced-module -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8** étapes.
 
 > [!tabs]
@@ -255,6 +258,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >>
 >> ![Validation de l’installation en mode avancé](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-4.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:install-advanced-module -->
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: "Wyświetl wszystkie strony WWW w Panelu klienta OVHcloud i zarządzaj nimi"
 excerpt: "Dowiedz się, jak wyświetlać wszystkie Twoje strony WWW i zarządzać nimi w Panelu klienta"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Wprowadzenie
@@ -27,6 +27,7 @@ Interfejs przedstawiony w tym przewodniku pozwala na scentralizowane wyświetlan
 
 ## W praktyce
 
+<!-- CP-STEPS-START:view-websites -->
 Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **2** kroków.
 
 > [!tabs]
@@ -62,6 +63,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **2** kroków.
 >> > [!warning]
 >> > Nie można włączyć oddzielnych logów dla zewnętrznej nazwy domeny. Ta opcja jest dostępna tylko dla domen zarejestrowanych w OVHcloud.
 >>
+<!-- CP-STEPS-END:view-websites -->
 
 ## Sprawdź również <a name="go-further"></a>
  

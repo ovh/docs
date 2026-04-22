@@ -1,7 +1,7 @@
 ---
 title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Wprowadzenie
@@ -50,6 +50,7 @@ Zadeklaruj nową nazwę domeny, postępując zgodnie z naszym przewodnikiem „[
 Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 - Twoja nowa domena musi wskazywać na ten sam "folder główny", który jest używany do łączenia się ze stroną WWW.
+<!-- CP-STEPS-START:retrieve-hosting-ip -->
 - Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, kliknij poniższe zakładki, aby wyświetlić kolejno **3** kroki.
 
 > [!tabs]
@@ -64,6 +65,7 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 > **Krok 3**
 >>
 >> Pobierz wyświetlony **IPv4**.
+<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
@@ -78,9 +80,11 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 > - [Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
+<!-- CP-STEPS-START:verify-multisite-config -->
 Jeśli wszystkie czynności zostały poprawnie wykonane, deklaracje Twoich domen powinny być identyczne **chyba że korzystasz z płatnego certyfikatu SSL typu *Sectigo DV*, *Sectigo EV* lub *custom***.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >

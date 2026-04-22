@@ -1,7 +1,7 @@
 ---
 title: Cosa fare in caso di pagina "Index of"?
 excerpt: Come caricare il tuo sito online, quando visualizza una pagina "Index of"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Obiettivo

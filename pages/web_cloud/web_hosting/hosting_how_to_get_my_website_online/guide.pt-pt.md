@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Sumário
@@ -75,6 +75,7 @@ Para se ligar ao espaço de armazenamento, deve dispor dos seguintes elementos:
 - o endereço deste servidor;
 - a porta de ligação ao servidor.
 
+<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
 Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web. Se não possuir estas informações, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -99,6 +100,7 @@ Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojam
 >> Caso seja necessário, consulte o nosso manual: "[Aceder ao espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_connection)".
 >>
 >> Caso tenha perdido a palavra-passe, consulte o manual "[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
+<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pode ser realizado de dois formas:
 
@@ -116,6 +118,7 @@ Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pod
 
 Depois de ligado ao seu espaço de armazenamento, basta carregar os ficheiros do seu site. **Convidamo-lo a prestar especial atenção ao diretório em que vai carregar os ficheiros**, nomeadamente se declarou vários sites web no seu alojamento web.
 
+<!-- CP-STEPS-START:get-online-find-root-folder -->
 Para verificar a pasta em que o site web deve ser publicado, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -132,6 +135,7 @@ Para verificar a pasta em que o site web deve ser publicado, clique nos separado
 > **Etapa 3**
 >>
 >> Publique então os ficheiros do site web nessa pasta.
+<!-- CP-STEPS-END:get-online-find-root-folder -->
 
 Pode acontecer que encontre no seu espaço de armazenamento um ficheiro intitulado "index.html". Este pode ter sido criado pela OVHcloud durante a instalação do seu alojamento web para mostrar uma página predefinida no seu site web. Se for esse o caso, não se esqueça de o eliminar ao carregar os seus ficheiros.
 
@@ -157,6 +161,7 @@ Se está a migrar um site web, recupere a base de dados existente no seu antigo 
 
 Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](/links/web/hosting) ou [Web Cloud Databases](/links/web/databases)), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
 
+<!-- CP-STEPS-START:find-db-credentials -->
 Se pretende criar uma nova base de dados na OVHcloud, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -175,11 +180,13 @@ Se pretende criar uma nova base de dados na OVHcloud, clique nos separadores aba
 >> Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
 >>
 >> ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Importar a base de dados existente 
 
 Se estiver a migrar um site, importe a base de dados existente para a que acabou de criar. Se se trata de um novo site, prossiga para a etapa seguinte.
 
+<!-- CP-STEPS-START:get-online-find-db-server -->
 A importação pode ser feita de várias formas. A OVHcloud disponibiliza uma através da Área de Cliente. Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -194,6 +201,7 @@ A importação pode ser feita de várias formas. A OVHcloud disponibiliza uma at
 > **Etapa 3**
 >>
 >> Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Importar ficheiro`{.action}.
+<!-- CP-STEPS-END:get-online-find-db-server -->
 
 #### 3.4. Associar o site web à base de dados
 

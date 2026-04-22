@@ -1,7 +1,7 @@
 ---
 title: Cambiar la contraseña de la base de datos de un alojamiento web
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -57,6 +57,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ### 1: Identificar el archivo de configuración del sitio web <a name="step1"></a>
 
+<!-- CP-STEPS-START:find-config-file -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -85,6 +86,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> A continuación, acceda al espacio de almacenamiento FTP que contiene los archivos y carpetas de su sitio consultando [esta guía](/pages/web_cloud/web_hosting/ftp_connection).
+<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -194,6 +196,7 @@ Guarde el cambio.
 > Esta operación tardará unos minutos en aplicarse. Abra la pestaña `Tareas en curso`{.action} y compruebe su estado.
 >
 
+<!-- CP-STEPS-START:change-db-password-server -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -220,6 +223,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en la [sección 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+<!-- CP-STEPS-END:change-db-password-server -->
 
 ## Más información <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "How to associate a domain name with an existing website?"
 excerpt: "Discover how to associate a domain name or subdomain with an existing website on your web hosting"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -56,6 +56,7 @@ You can host multiple websites on the same web hosting plan, even if the domain 
 
 This section applies only if your domain name and/or its active DNS zone are **in your OVHcloud Control Panel**.
 
+<!-- CP-STEPS-START:add-domain-ovhcloud -->
 Click on the tabs below to view each of the **6** steps.
 
 > [!tabs]
@@ -138,6 +139,7 @@ Click on the tabs below to view each of the **6** steps.
 >> Once your choices have been made, click on the `Continue`{.action} button to finalise the addition of your domain name or subdomain to your website. This addition may take up to an hour.
 >>
 >> However, the modification of the DNS configuration of your domain name requires a propagation delay that can take up to 24 hours before it is fully effective.
+<!-- CP-STEPS-END:add-domain-ovhcloud -->
 
 ///
 
@@ -145,6 +147,7 @@ Click on the tabs below to view each of the **6** steps.
 
 This section applies only if your domain name is not present in your OVHcloud account.
 
+<!-- CP-STEPS-START:add-domain-external -->
 Click on the tabs below to view each of the **6** steps.
 
 > [!tabs]
@@ -207,6 +210,7 @@ Click on the tabs below to view each of the **6** steps.
 >> > Note that if you wish to add `sub.domain.tld`, you will need to create the `ovhcontrol.domain.tld` TXT entry and not the `ovhcontrol.sub.domain.tld` entry.
 >> >
 >> > To find the active DNS zone of your domain name, find the [DNS servers](/pages/web_cloud/domains/dns_server_edit) to which it is linked. You will only need to validate the domain name using the **TXT** field, not all its subdomains.
+<!-- CP-STEPS-END:add-domain-external -->
 
 ///
 
@@ -214,6 +218,7 @@ Click on the tabs below to view each of the **6** steps.
 
 This section applies only if your domain name has not yet been registered, either with OVHcloud or with another registrar. In other words, it concerns domain names that have not yet been subscribed to.
 
+<!-- CP-STEPS-START:add-domain-new -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -250,6 +255,7 @@ Click on the tabs below to view each of the **5** steps.
 >> > [!primary]
 >> >
 >> > If, after a few hours, you notice that your new domain name has not been correctly associated with your website, follow the section "[Add a domain name managed from your OVHcloud Control Panel](#add-domain-ovhcloud)" of this guide.
+<!-- CP-STEPS-END:add-domain-new -->
 
 ///
 

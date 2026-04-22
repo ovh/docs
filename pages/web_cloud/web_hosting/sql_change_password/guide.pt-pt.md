@@ -1,7 +1,7 @@
 ---
 title: Alterar a palavra-passe da base de dados de um alojamento web
 excerpt: Saiba como alterar a palavra-passe de uma base de dados criada num serviço de alojamento web
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -56,6 +56,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro par
 
 ### 1: Identificar o ficheiro de configuração do seu site <a name="step1"></a>
 
+<!-- CP-STEPS-START:find-config-file -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -84,6 +85,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> Em seguida, aceda ao espaço de armazenamento FTP que contém os ficheiros e pastas do seu site consultando [este guia](/pages/web_cloud/web_hosting/ftp_connection).
+<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -223,6 +225,7 @@ Novamente, dois casos são possíveis:
 
 #### Caso n°1: a base de dados do seu site faz parte da sua oferta de alojamento <a name="case1"></a>
 
+<!-- CP-STEPS-START:change-db-password-server -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -249,9 +252,11 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> Na nova janela, introduza a nova palavra-passe da base de dados (definida no [parte 3](#step3)), confirme que está correta e clique no botão `Validar`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+<!-- CP-STEPS-END:change-db-password-server -->
 
 #### Caso n°2: a base de dados do seu site faz parte de uma oferta Web Cloud Databases <a name="case2"></a>
 
+<!-- CP-STEPS-START:change-wcdb-password -->
 Aceda à secção `Bases de dados`{.action} da Área de Cliente e ao servidor em questão, clique no separador `Utilizadores e permissões`{.action}:
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
@@ -263,6 +268,8 @@ Para alterar a palavra-passe da base de dados no servidor, clique nos três pont
 Na nova janela, introduza a nova palavra-passe da base de dados (definida na [parte 3](#step3)), confirme que está correta e clique no botão `Validar`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
+
+<!-- CP-STEPS-END:change-wcdb-password -->
 
 ## Quer saber mais? <a name="go-further"></a>
 

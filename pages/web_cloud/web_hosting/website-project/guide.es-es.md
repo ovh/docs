@@ -1,7 +1,7 @@
 ---
 title: "Cómo crear un sitio web - Realizar un proyecto en 5 pasos"
 excerpt: "Esta guía explica cómo configurar un proyecto, publicar un sitio web y crear direcciones de correo electrónico con un plan de hosting"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -44,16 +44,6 @@ Le permiten ahorrar tiempo en la "administración del servidor" y concentrarse �
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Disponer de un [dominio](/links/web/domains) con el que poder acceder a su sitio web.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

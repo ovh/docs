@@ -1,7 +1,7 @@
 ---
 title: "Jak geolokalizować stronę WWW w danym kraju?"
 excerpt: "Dowiedz się, jak zlokalizować stronę WWW, korzystając z geolokalizowanych adresów IP dostępnych w ofercie hostingu współdzielonego OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Wprowadzenie
@@ -37,6 +37,7 @@ Opcja geolokalizacji na Twoim hostingu może być przydatna w pozycjonowaniu (SE
 
 Dla stron www odwiedzanych głównie za granicą i hostowanych na naszej infrastrukturze hostingu współdzielonego OVHcloud proponujemy opcję geolokalizacji za pomocą adresu IP. Umożliwia lepsze pozycjonowanie stron www w kraju, w którym znajduje się wybrany adres IP z opcją.
 
+<!-- CP-STEPS-START:configure-geolocation -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -71,6 +72,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Wybierz adres IP kraju, dla którego chcesz zlokalizować swoją stronę WWW, spośród 12 proponowanych krajów: *Republika Czeska, Finlandia, Francja, Niemcy, Irlandia, Włochy, Litwa, Holandia, Polska, Portugalia, Hiszpania, Wielka Brytania*.
 >>
 >> Kliknij przycisk `Dalej`{.action}, a następnie kliknij `Zatwierdź`{.action} w oknie podsumowującym.
+<!-- CP-STEPS-END:configure-geolocation -->
 
 > [!primary]
 >

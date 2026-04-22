@@ -1,7 +1,7 @@
 ---
 title: "How to check the 'domain name / website' association"
 excerpt: "Use our diagnostic tool to verify that your domain name or subdomain is correctly declared with your website on your web hosting"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -45,6 +45,7 @@ You can host multiple websites on a single web hosting plan, even if the domain 
 
 ### Access the diagnostic tool
 
+<!-- CP-STEPS-START:diagnose-website -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -79,7 +80,9 @@ Click on the tabs below to view each of the **4** steps.
 >> - Grey `A/AAAA`
 >>
 >> Refer to the "[Interpretation of the diagnostic tool's colours](#interpretation)" section of this guide to find out what these colours mean.
+<!-- CP-STEPS-END:diagnose-website -->
 
+<!-- CP-STEPS-START:diagnostic-status-interpretation -->
 ### Interpretation of the diagnostic tool's colours <a name="interpretation"></a>
 
 **Click on the relevant status indicators below to see their explanations.**
@@ -111,6 +114,8 @@ When the `A/AAAA` icon is grey in the `Diagnostic` column, it means that the dom
 To add the **A** and/or **AAAA** records and correctly configure your domain name, follow the steps described in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
+
+<!-- CP-STEPS-END:diagnostic-status-interpretation -->
 
 ## Go further
 

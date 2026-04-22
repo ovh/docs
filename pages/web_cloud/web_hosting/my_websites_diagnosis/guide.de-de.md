@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich die Zuordnung von Domainnamen und Websites prüfen?"
 excerpt: "Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Subdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 <style>
@@ -45,6 +45,7 @@ Sie können mehrere Webseiten auf derselben Webhosting Angebot nutzen, selbst we
 
 ### Zugriff auf das Diagnose-Tool
 
+<!-- CP-STEPS-START:diagnose-website -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -79,7 +80,9 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> - `A/AAAA` grau
 >>
 >> Konsultieren Sie den Abschnitt "[Bedeutung der Farben des Diagnose-Tools](#interpretation)" in dieser Anleitung, um die Bedeutung dieser drei Farben zu verstehen.
+<!-- CP-STEPS-END:diagnose-website -->
 
+<!-- CP-STEPS-START:diagnostic-status-interpretation -->
 ### Bedeutung der Farben des Diagnose-Tools <a name="interpretation"></a>
 
 **Klicken Sie auf das beobachtete Ergebnis unter den drei möglichen Ergebnissen unten, um die Erklärungen anzuzeigen.**
@@ -111,6 +114,8 @@ Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grau ist, bedeutet dies, dass 
 Um die Einträge **A** und/oder **AAAA** hinzuzufügen und Ihre Domain korrekt zu konfigurieren, befolgen Sie die Schritte in unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
+
+<!-- CP-STEPS-END:diagnostic-status-interpretation -->
 
 ## Weiterführende Informationen
 

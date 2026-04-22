@@ -1,7 +1,7 @@
 ---
 title: Modifier le mot de passe de la base de données d'un hébergement web
 excerpt: Découvrez comment changer le mot de passe d'une base de données créée dans le cadre d'une offre d'hébergement web
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objectif
@@ -57,6 +57,7 @@ La modification du mot de passe de la base de données de votre site nécessite 
 
 ### 1 : identifier le fichier de configuration de votre site <a name="step1"></a>
 
+<!-- CP-STEPS-START:find-config-file -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -85,6 +86,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> Accédez ensuite à l'espace de stockage FTP contenant les fichiers et dossiers de votre site en consultant [ce guide](/pages/web_cloud/web_hosting/ftp_connection).
+<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -222,6 +224,7 @@ A nouveau, deux cas sont possibles :
 
 #### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement <a name="case1"></a>
 
+<!-- CP-STEPS-START:change-db-password-server -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -248,9 +251,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données (défini dans [la partie 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+<!-- CP-STEPS-END:change-db-password-server -->
 
 #### Cas n°2 : la base de données de votre site fait partie d'une offre Web Cloud Databases <a name="case2"></a>
 
+<!-- CP-STEPS-START:change-wcdb-password -->
 Rendez-vous dans la partie `Bases de données`{.action} de votre espace client et sur le serveur concerné, cliquez sur l'onglet `Utilisateurs et droits`{.action} :
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
@@ -262,6 +267,8 @@ Pour modifier le mot de passe de votre base de données sur le serveur, cliquez 
 Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données (défini dans la [partie 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
+
+<!-- CP-STEPS-END:change-wcdb-password -->
 
 ## Aller plus loin <a name="go-further"></a>
 

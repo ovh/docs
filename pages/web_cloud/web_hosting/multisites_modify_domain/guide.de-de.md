@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Ändern von mit einem Webhosting verbundenen Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie die Zuordnungseinstellungen von Domainnamen oder Subdomains ändern, die bereits auf Ihrem Webhosting deklariert sind"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Ziel
@@ -40,6 +40,7 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 >
 > Die Änderung der Zuordnungseinstellungen einer Domain oder Subdomain kann zu einer Unterbrechung des Zugangs zu Ihren Diensten (Ihrer Website) führen. Wenn Sie sich nicht sicher sind, welche Änderungen notwendig sind, wenden Sie sich an einen spezialisierten Dienstleister.
 
+<!-- CP-STEPS-START:modify-domain-settings -->
 Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf Ihrem Webhosting zu ändern, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -72,9 +73,11 @@ Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf 
 >> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
 >> Im weiteren Verlauf dieser Anleitung finden Sie eine Beschreibung aller verfügbaren Parameter im obenstehenden Fenster. Nachdem Sie die verschiedenen Beschreibungen in der Abschnitt "[Beschreibung der änderbaren Parameter](#step1)" gelesen haben und Ihre Änderungen vorgenommen wurden, klicken Sie auf den Button `Weiter`{.action} unten rechts im Fenster, und wechseln Sie zur [Teil 2](#step2).
+<!-- CP-STEPS-END:modify-domain-settings -->
 
 ### 1 - Beschreibung der bearbeitbaren Parameter <a name="step1"></a>
 
+<!-- CP-STEPS-START:description-editable-parameters -->
 > [!primary]
 >
 > Die Felder `Domainname`{.action} und `Wurzelverzeichnis`{.action} sind nicht änderbar, da es sich hierbei um Parameter handelt, die für die Website auf Ihrem Webhosting relevant sind.
@@ -110,13 +113,18 @@ Weitere Informationen zu dieser Option finden Sie auf unserer [Seite zu detailli
 
 Nachdem Sie Ihre Änderungen vorgenommen haben, klicken Sie auf den Button `Weiter`{.action} unten rechts im Fenster, um zur [Teil 2](#step2) zu wechseln.
 
+
+<!-- CP-STEPS-END:description-editable-parameters -->
+
 ### 2 - Zusammenfassung der Änderungen <a name="step2"></a>
 
+<!-- CP-STEPS-START:confirm-domain-changes -->
 Sobald Sie auf den Button `Weiter`{.action} geklickt haben, finden Sie eine Zusammenfassung der Einstellungen, die Sie für Ihren Domainnamen übernehmen möchten:
 
 ![Modify domain resume](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 
 Wenn alle Einstellungen Ihren Wünschen entsprechen, klicken Sie auf `Bestätigen`{.action}.
+<!-- CP-STEPS-END:confirm-domain-changes -->
 
 Abhängig von den ausgewählten Optionen kann es einige Minuten bis zu einigen Stunden dauern, bis die Änderungen wirksam werden.
 

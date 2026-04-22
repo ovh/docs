@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich einen Domainnamen von einer bestehenden Website trennen?"
 excerpt: "Erfahren Sie, wie Sie einen Domainnamen oder eine Subdomain von einer bereits existierenden Website auf Ihrem Webhosting trennen können"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Ziel
@@ -36,6 +36,7 @@ Möchten Sie Ihren Domainnamen oder Ihre Subdomain einer anderen Website auf ein
 >
 > Das Trennen eines Domainnamens oder einer Subdomain von einer Website auf Ihrem Webhosting ist eine sensible Aktion. Nach dieser Operation wird Ihre Website nicht mehr über das Internet mit Ihrem Domainnamen und/oder Subdomain zugänglich sein.
 
+<!-- CP-STEPS-START:detach-domain -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -78,6 +79,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
 >> > Wie die Nachricht angibt, müssen Sie Ihre [Git-Verknüpfung zuerst löschen](/pages/web_cloud/web_hosting/git_integration_webhosting), **bevor** Sie Ihren Domainnamen trennen.
+<!-- CP-STEPS-END:detach-domain -->
 
 ### Besonderer Fall: Trennen eines Domainnamens oder einer Subdomain, um sie mit einer anderen Website zu verwenden
 

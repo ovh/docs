@@ -1,7 +1,7 @@
 ---
 title: "Visualizar e gerir todos os seus websites a partir da Área de Cliente OVHcloud"
 excerpt: "Descubra como consultar e gerir os seus websites a partir da Área de Cliente OVHcloud"
-updated: 2026-04-03
+updated: 2026-04-22
 ---
 
 ## Objetivo
@@ -27,6 +27,7 @@ A interface apresentada neste guia permite centralizar a apresentação do conju
 
 ## Instruções
 
+<!-- CP-STEPS-START:view-websites -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -62,6 +63,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> > [!warning]
 >> > Os logs separados não podem ser ativados para um nome de domínio externo. Esta opção só está disponível para os domínios registados na OVHcloud.
 >>
+<!-- CP-STEPS-END:view-websites -->
 
 ## Quer saber mais? <a name="go-further"></a>
  
