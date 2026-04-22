@@ -9,7 +9,7 @@ updated: 2026-04-14
 **This guide explains how to** configure OVHcloud Connect in L3 mode with static routing. This involves two levels of configuration:
 
 1. **PoP configuration** — The L3 session between your router and OVHcloud at the Point of Presence.
-2. **Data centre extra configuration (network)** — Static routes within the OVHcloud data centre for route distribution.
+2. **AZ extra configuration (network)** — Static routes within the OVHcloud AZ for route distribution.
 
 > [!primary]
 > If you prefer dynamic routing with BGP, see [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.6_occ_l3_bgp).
@@ -31,7 +31,7 @@ Use static routing when you have a simple setup with a small number of stable pr
 - An active [OVHcloud account](/links/manager)
 - An active OVHcloud Connect service (status `active`)
 - OVHcloud Connect associated with a vRack — see [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.8_associate_vrack)
-- A data centre configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup)
+- An AZ configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup)
 - A /30 peering subnet (e.g. `192.0.2.0/30`)
 - OVHcloud API credentials (Application Key, Application Secret, Consumer Key). Refer to the [First steps with the OVHcloud API](/pages/manage-and-operate/api/first-steps) guide.
 
@@ -45,7 +45,7 @@ Your Router ── [ L3 at PoP ] ── OVHcloud PoP Router ── [ Static rout
 ```
 
 - **PoP level**: An L3 session with a /30 peering subnet between your router and OVHcloud.
-- **Data centre level**: Static routes defined with a next-hop IP and destination subnet.
+- **AZ level**: Static routes defined with a next-hop IP and destination subnet.
 
 ### Step 1 — Identify your interface ID
 
@@ -54,22 +54,10 @@ Your Router ── [ L3 at PoP ] ── OVHcloud PoP Router ── [ Static rout
 > @api {v1} GET /ovhCloudConnect/{serviceName}/interface
 >
 
-```python
-import ovh
-
-client = ovh.Client(endpoint='ovh-eu')
-
-service_name = "your-occ-service-uuid"
-
-interfaces = client.get(f"/ovhCloudConnect/{service_name}/interface")
-for iface_id in interfaces:
-    iface = client.get(f"/ovhCloudConnect/{service_name}/interface/{iface_id}")
-    print(f"  ID: {iface['id']}, Status: {iface['status']}")
-```
 
 ### Step 2 — Create the PoP configuration (L3)
 
-The PoP configuration establishes the L3 session at the Point of Presence. This step is the same whether you use BGP or static routing at the data centre level.
+The PoP configuration establishes the L3 session at the Point of Presence. This step is the same whether you use BGP or static routing at the AZ level.
 
 > [!api]
 >
@@ -87,18 +75,6 @@ The PoP configuration establishes the L3 session at the Point of Presence. This 
 
 **Example request:**
 
-```python
-result = client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop",
-    interfaceId=101,
-    type="l3",
-    customerBgpArea=65001,
-    subnet="192.0.2.0/30"
-)
-
-print("Task:", result)
-# {'id': 7001, 'function': 'addPopConfiguration', 'resourceId': 5678, 'status': 'todo'}
-```
 
 ### Step 3 — Verify the PoP configuration
 
@@ -107,10 +83,6 @@ print("Task:", result)
 > @api {v1} GET /ovhCloudConnect/{serviceName}/config/pop/{popId}
 >
 
-```python
-pop_config = client.get(f"/ovhCloudConnect/{service_name}/config/pop/5678")
-print(pop_config)
-```
 
 **Example response:**
 
@@ -133,12 +105,12 @@ From this response:
 | **OVHcloud peer IP** | `192.0.2.1` | First IP of the /30 |
 | **Your peer IP** | `192.0.2.2` | Second IP of the /30 |
 
-### Step 4 — Create data centre extra configuration (static)
+### Step 4 — Create AZ extra configuration (static)
 
-After the PoP configuration and a [data centre configuration](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup), create a **network extra configuration** to define static routes within the data centre.
+After the PoP configuration and a [AZ configuration](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup), create a **network extra configuration** to define static routes within the AZ.
 
 > [!primary]
-> With static routing, **VRRP remains active** on the data centre endpoint. OVHcloud devices A and B share a virtual IP (the second address of the data centre subnet, e.g. `172.16.1.1`). Point your services' default gateway to this VRRP virtual IP for automatic failover between devices.
+> With static routing, **VRRP remains active** on the AZ endpoint. OVHcloud devices A and B share a virtual IP (the second address of the AZ subnet, e.g. `172.16.1.1`). Point your services' default gateway to this VRRP virtual IP for automatic failover between devices.
 
 > [!api]
 >
@@ -155,42 +127,11 @@ After the PoP configuration and a [data centre configuration](/pages/network/ovh
 
 **Example request — route your on-premises subnet through the OVHcloud Connect link:**
 
-```python
-pop_id = 5678
-dc_config_id = 3456  # From data centre configuration step
-
-result = client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra",
-    type="network",
-    nextHop="172.16.1.1",
-    subnet="10.0.0.0/16"
-)
-
-print("Task:", result)
-# {'id': 7003, 'function': 'addDatacenterExtraConfiguration', 'resourceId': 4568, 'status': 'todo'}
-```
 
 #### Add multiple static routes
 
 Create one extra configuration per destination subnet:
 
-```python
-# Route to on-premises production network
-client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra",
-    type="network",
-    nextHop="172.16.1.1",
-    subnet="10.0.0.0/16"
-)
-
-# Route to on-premises management network
-client.post(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra",
-    type="network",
-    nextHop="172.16.1.1",
-    subnet="10.1.0.0/16"
-)
-```
 
 #### Verify the extra configuration
 
@@ -213,23 +154,17 @@ client.post(
 }
 ```
 
-#### List all extra configurations for a data centre
+#### List all extra configurations for an AZ
 
 > [!api]
 >
 > @api {v1} GET /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
 >
 
-```python
-extras = client.get(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra"
-)
-print("Extra configuration IDs:", extras)
-```
 
 ### Step 5 — Configure static routes on your router
 
-Configure your physical router with static routes pointing OVHcloud data centre subnets towards the OVHcloud Connect peering IP.
+Configure your physical router with static routes pointing OVHcloud AZ subnets towards the OVHcloud Connect peering IP.
 
 #### Cisco IOS / IOS-XE
 
@@ -240,7 +175,7 @@ interface GigabitEthernet0/0
  ip address 192.0.2.2 255.255.255.252
  no shutdown
 
-! Static routes to OVHcloud data centre subnets
+! Static routes to OVHcloud AZ subnets
 ip route 172.16.1.0 255.255.255.0 192.0.2.1 name OVH-DC1-Production
 ip route 172.16.2.0 255.255.255.0 192.0.2.1 name OVH-DC2-Production
 ip route 172.16.10.0 255.255.255.0 192.0.2.1 name OVH-DC1-Management
@@ -294,7 +229,7 @@ traceroute 172.16.1.1 source 192.0.2.2
 | Check | Expected output |
 |---|---|
 | **Static routes present** | Routes to 172.16.x.x via 192.0.2.1 in routing table |
-| **Ping succeeds** | Reply from OVHcloud data centre subnet gateway |
+| **Ping succeeds** | Reply from OVHcloud AZ subnet gateway |
 | **Traceroute** | Traffic goes through 192.0.2.1 (OVHcloud PoP) |
 
 #### From the OVHcloud API
@@ -320,18 +255,6 @@ Check PoP configuration status:
 > @api {v1} POST /ovhCloudConnect/{serviceName}/diagnostic
 >
 
-```python
-diag = client.post(
-    f"/ovhCloudConnect/{service_name}/diagnostic",
-    popConfigId=5678,
-    dcConfigId=3456,
-    extraConfigId=4568,
-    diagnosticName="diagRoutes"
-)
-
-diag_result = client.get(f"/ovhCloudConnect/{service_name}/diagnostic/{diag['id']}")
-print(diag_result)
-```
 
 Available diagnostic names: `diagPeering`, `diagPeeringExtra`, `diagRoutes`, `diagMacs`.
 
@@ -359,19 +282,10 @@ Delete in reverse order:
 > @api {v1} DELETE /ovhCloudConnect/{serviceName}/config/pop/{popId}
 >
 
-```python
-# 1. Delete extra configuration(s) first
-client.delete(
-    f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}/datacenter/{dc_config_id}/extra/{extra_id}"
-)
-
-# 2. Then delete PoP configuration (if no other data centre configs depend on it)
-client.delete(f"/ovhCloudConnect/{service_name}/config/pop/{pop_id}")
-```
 
 ## Go further
 
-- [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup) — If you have not configured data centre subnets yet
+- [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup) — If you have not configured AZ subnets yet
 - [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.8_associate_vrack)
 - [Monitor your connection](/pages/network/ovhcloud_connect_revamp/3.9_monitor)
 

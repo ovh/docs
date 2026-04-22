@@ -88,7 +88,13 @@ Give the LOA to your **data centre operator** (or handle it yourself if you mana
 
 This step may take a few days depending on the data centre's processes.
 
-### Step 4 — Configure BGP
+### Step 4 — Associate with your vRack
+
+Link your OVHcloud Connect service to your **vRack** so that your OVHcloud resources (servers, VMs, etc.) can communicate over the private connection.
+
+See [Associate an OVHcloud Connect to your vRack](3.5_associate_vrack.md).
+
+### Step 5 — Configure BGP
 
 Once the physical link is up:
 
@@ -97,12 +103,6 @@ Once the physical link is up:
 3. Advertise the IP prefixes you want to reach from OVHcloud.
 
 For detailed BGP configuration, see [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md).
-
-### Step 5 — Associate with your vRack
-
-Link your OVHcloud Connect service to your **vRack** so that your OVHcloud resources (servers, VMs, etc.) can communicate over the private connection.
-
-See [Associate an OVHcloud Connect to your vRack](3.8_associate_vrack.md).
 
 ### Step 6 — Test and verify
 
