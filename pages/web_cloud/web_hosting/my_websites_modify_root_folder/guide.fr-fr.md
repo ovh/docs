@@ -8,16 +8,16 @@ updated: 2026-04-22
 
 Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web, même si les noms de domaine ne sont pas enregistrés chez OVHcloud. De plus, vous pouvez associer un ou plusieurs noms de domaine ou sous-domaines à un même site web.
 
-Au cours de l'utilisation de vos services, vous pouvez être amené à :
+En utilisant vos services, vous pouvez être amené à :
 
 - remplacer l'intégralité du contenu d'un site web existant, sans le supprimer de votre hébergement web. Le tout réalisé sans interruption d'accès et en toute transparence pour les visiteurs de votre site web.
-- installer un [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ou un [autre CMS](/pages/web_cloud/web_hosting/cms_manual_installation) pour remplacer le contenu d'un site web existant, sans supprimer l'ancien contenu de votre hébergement web. Dans ce cas précis, vous devrez ensuite construire les différentes pages de votre nouveau site web via votre navigateur Internet.
+- installer un [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ou un [autre CMS](/pages/web_cloud/web_hosting/cms_manual_installation) pour remplacer le contenu d'un site web existant, sans supprimer l'ancien contenu de votre hébergement web. Dans ce cas précis, vous devez ensuite construire les différentes pages de votre nouveau site web via votre navigateur Internet.
 - réorganiser les noms des dossiers racines de vos sites web dans l'espace de stockage de votre hébergement web sans couper l'accès à vos différents sites web.
 
 **Découvrez comment modifier le dossier racine déclaré pour un site web déjà existant sur votre hébergement web depuis votre espace client OVHcloud.**
 
 > [!primary]
-> Si vous n'avez pas encore créé le site web concerné sur votre hébergement web, consultez **directement** [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Si vous n'avez pas encore créé le site web concerné sur votre hébergement web, consultez **directement** [notre guide sur le multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
 > Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » pour supprimer l'association avec Git **avant** de poursuivre. En effet, la modification du dossier racine déclaré pour un site web est indisponible si votre site web est configuré avec Git. Si tel était le cas, le changement de dossier racine perturberait l'association avec Git.
 
@@ -61,25 +61,29 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
->> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![Mes sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
 > **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Modifier un site`{.action}.
 >>
->> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
+>> ![Options du site](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
 > **Étape 4**
 >>
->> /////// En attente du staging //////////////////////////////////
+>> Dans la fenêtre qui s'ouvre et dans le formulaire **Dossier racine**, remplacez l'ancien dossier racine par le nouveau.
+>>
+>> ![Modifier le dossier racine](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/edit-site-folder.png){.thumbnail}
+>>
+>> Cliquez ensuite sur `Confirmer`{.action}.
+>>
 <!-- CP-STEPS-END:modify-root-folder -->
-
 
 ## Aller plus loin
 
