@@ -1,7 +1,7 @@
 ---
 title: File Storage Service - Getting started
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
-updated: 2026-03-31
+updated: 2026-04-16
 ---
 
 ## Objective
@@ -16,14 +16,84 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
-> [!primary]
->
-> Currently, the File Storage Service can only be accessed and managed via OVHcloud API, OpenStack CLI with the Manila plugin and Terraform. Other interfaces will be supported in the future.
->
-
 > [!tabs]
+> Via the OVHcloud Control Panel
+>> > [!primary]
+>> >
+>> > Some features of the File Storage service, such as snapshots, are not yet available in the OVHcloud Control Panel. You can use the OVHcloud APIs, OpenStack CLI, or Manila CSI for these features.
+>> >
+>>
+>> **1\. Create a share**
+>>
+>> In the left sidebar, go to `Storage & backup`{.action} > `File Storage`{.action}, then click `Create a share`{.action}.
+>>
+>> Enter the share name, then filter by deployment mode to select the target region.
+>>
+>> Set the performance level and size (in GiB), associate a private network, and click `Confirm`{.action} to complete the share creation.
+>>
+>> **2\. Authorize a client VM (ACL)**
+>>
+>> > [!primary]
+>> >
+>> > Retrieve the [private IP address](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) of your client VM and ensure it is on the same private network as the share.
+>> >
+>>
+>> Once the share is created, click on it to open its dashboard, then go to the `Access Control List (ACL)`{.action} tab.
+>>
+>> Click `Add a new access`{.action}, enter the private IP address or a CIDR range (e.g., `10.1.0.123` or `10.1.0.0/24`), and select the permissions:
+>>
+>> - `Read-only`{.action}: read access only
+>> - `Read and write`{.action}: full read/write access
+>>
+>> > [!primary]
+>> >
+>> > File Storage can only be used with OVHcloud IPs (Public Cloud, Managed Kubernetes Service).
+>> >
+>>
+>> To remove an access rule, click the trash icon on the right side of the ACL entry.
+>>
+>> **3\. Mount the share on your client VM**
+>>
+>> Retrieve the mount path (displayed as `Mount Path` in the `General information`{.action} tab of your share), then connect to your client VM and install the NFS utilities:
+>>
+>> ```bash
+>> sudo apt update && sudo apt install -y nfs-common
+>> ```
+>>
+>> Create a mount point and mount the share:
+>>
+>> ```bash
+>> sudo mkdir -p /mnt/share
+>> sudo mount -t nfs4 <NFS_MOUNT_PATH> /mnt/share
+>> ```
+>>
+>> Verify the mount:
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Save the mount configuration in fstab for easy remounting:
+>>
+>> ```bash
+>> echo "<NFS_MOUNT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
+>>
+>> This lets you remount the NFS share after a reboot with the `mount /mnt/share` command.
+>>
 > Via the OVHcloud API
 >> **1\. Create a share**
 >>
@@ -188,9 +258,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >>
 >> **2\. Authorize a client VM**
 >>
->> Ensure the client VM is on the same private network as the share.
->>
->> Retrieve the VM’s [private IP address](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>> Retrieve the [private IP address](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) of your client VM and ensure it is on the same private network as the share.
 >>
 >> Grant access to the share using the VM’s private IP (e.g., 10.1.0.123) via ACL management:
 >>
@@ -230,7 +298,8 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> Create a mount point and mount the share:
 >>
 >> ```bash
->> sudo mkdir -p /mnt/share && sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
+>> sudo mkdir -p /mnt/share
+>> sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
 >> ```
 >>
 >> Verify the mount:
@@ -239,13 +308,13 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> df -h /mnt/share
 >> ```
 >>
->> Make the mount persistent across reboots:
+>> Save the mount configuration in fstab for easy remounting:
 >>
 >> ```bash
->> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> echo "10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
 >> ```
 >>
->> This ensures the NFS share is automatically remounted after the VM restarts.
+>> This lets you remount the NFS share after a reboot with the `mount /mnt/share` command.
 >>
 >> **4\. Check capacity and usage**
 >>
@@ -262,7 +331,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
 >> ```
 >>
->> **Note:** This allows you to monitor the storage capacity and usage of your NFS share.
+>> **Note:** Use this to monitor the storage capacity and usage of your NFS share.
 >>
 > Via the OpenStack CLI with the Manila plugin
 >> **Additional requirements**
@@ -431,7 +500,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >>
 >> **7\. Mount the share on your client VM**
 >>
->> Connect to your VM and install NFS utilities:
+>> Connect to your client VM and install the NFS utilities required to mount the share:
 >>
 >> ```bash
 >> sudo apt update && sudo apt install -y nfs-common
@@ -450,14 +519,17 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> df -h /mnt/share
 >> ```
 >>
->> > [!primary]
->> >
->> > Note: Replace the export path with the one retrieved for your share.
->> >
+>> Save the mount configuration in fstab for easy remounting:
+>>
+>> ```bash
+>> echo "10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
+>>
+>> This lets you remount the NFS share after a reboot with the `mount /mnt/share` command.
 >>
 >> **8\. Check capacity and usage**
 >>
->> Display available space on the mounted share:
+>> Once the NFS share is mounted, verify its available space and usage:
 >>
 >> ```bash
 >> df -h /mnt/share
@@ -466,7 +538,6 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> Example output:
 >>
 >> ```bash
->> Example:
 >> Filesystem                          Size  Used  Avail Use% Mounted on
 >> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
 >> ```
@@ -571,7 +642,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> pip install python-manilaclient
 >> ```
 >>
->> Don’t forget to update your shell completion script to enable OpenStack `share` autocompletion.
+>> Update your shell completion script to enable OpenStack `share` autocompletion.
 >>
 >> **5\. Install the CSI NFS driver**
 >>
@@ -825,7 +896,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> ```
 >>
 >> - Update the `parameter.shareNetworkID` value with the shared network identifier.
->> - update the `parameter.nfs-shareClient` value with the subnet CIDR defined during cluster creation.
+>> - Update the `parameter.nfs-shareClient` value with the subnet CIDR defined during cluster creation.
 >>
 >> Create the dynamic StorageClass, applying the StorageClass to your cluster:
 >>
@@ -916,7 +987,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> kubectl apply -f nfs-deployment.yaml
 >> ```
 >>
->> You can verify the RWX functionality by connecting to one pod using the `kubectl exec` command and creating a file in the mounted directory (e.g., `/var/lib/www/`). Then, connect to the second pod and check that the file is visible. If it is, your Manila share exposed through NFS is functioning correctly.
+>> To verify RWX functionality, use `kubectl exec` to connect to one pod and create a file in the mounted directory (e.g., `/var/lib/www/`). Then connect to the second pod and confirm the file is visible. If it is, your Manila share exposed through NFS is functioning correctly.
 >>
 >> **10\. Resize an NFS share using dynamic provisioning**
 >>
@@ -1058,7 +1129,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> kubectl apply -f pod.yaml
 >> ```
 >>
->> You can now use `kubectl exec` to access the pod and run `df -h` to verify that the pre-created Manila share is properly mounted. 
+>> Use `kubectl exec` to access the pod and run `df -h` to verify the pre-created Manila share is properly mounted. 
 >>
 >> **Useful CLI**
 >>
@@ -1086,7 +1157,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >>
 >> > [!primary]
 >> >
->> > You can find useful examples [here](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service)
+>> > You can find useful examples in the [public-cloud-examples repository](https://github.com/ovh/public-cloud-examples/tree/main/storage/file-storage-as-a-service)
 >> >
 >>
 >> **2\. Declare the OpenStack provider**
@@ -1208,7 +1279,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >>
 >> **8\. Mount the share on your client VM**
 >>
->> Connect to your client VM and install the necessary NFS utilities:
+>> Connect to your client VM and install the NFS utilities required to mount the share:
 >>
 >> ```bash
 >> sudo apt update && sudo apt install -y nfs-common
@@ -1221,7 +1292,10 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> sudo mount -t nfs4 <NFS_EXPORT_PATH> /mnt/share
 >> ```
 >>
->> Replace <NFS_EXPORT_PATH> with the export path retrieved from Terraform (e.g., `10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef`).
+>> > [!primary]
+>> >
+>> > Replace `<NFS_EXPORT_PATH>` with the export path retrieved from Terraform (e.g., `10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef`).
+>> >
 >>
 >> Verify the mount:
 >>
@@ -1229,17 +1303,17 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, OVHcloud
 >> df -h /mnt/share
 >> ```
 >>
->> Make the mount persistent across reboots:
+>> Save the mount configuration in fstab for easy remounting:
 >>
 >> ```bash
 >> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
 >> ```
 >>
->> This ensures your NFS share is automatically remounted after the VM restarts.
+>> This lets you remount the NFS share after a reboot with the `mount /mnt/share` command.
 >>
 >> **9\. Check capacity and usage**
 >>
->> Once the NFS share is mounted, you can verify its available space and usage:
+>> Once the NFS share is mounted, verify its available space and usage:
 >>
 >> ```bash
 >> df -h /mnt/share
