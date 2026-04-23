@@ -1,7 +1,7 @@
 ---
 title: "Logs Data Platform - Collecter les logs VMware on OVHcloud"
 excerpt: "Découvrez comment souscrire un abonnement et activer le log forwarder afin de transférer les journaux VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2026-04-22
+updated: 2026-04-23
 ---
 
 > [!primary]
