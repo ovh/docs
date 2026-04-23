@@ -185,7 +185,7 @@ sudo ovhbackupagent
 
 Falls der Befehl nicht gefunden wird, versuchen Sie `sudo /usr/local/bin/ovhbackupagent` oder prüfen Sie, ob `/usr/local/bin` in Ihrem `PATH` enthalten ist.
 
-## Hauptmenü
+### Hauptmenü
 
 ```console
  ▗▄▖ ▗▖  ▗▖▗▖ ▗▖ ▗▄▄▖▗▖    ▗▄▖ ▗▖ ▗▖▗▄▄▄     ▗▖  ▗▖    ▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖ ▗▄▖ ▗▖  ▗▖
@@ -226,7 +226,7 @@ Die Statuszeile oben im Menü zeigt **OK/KO** für **Management** (`veeamma`) un
 | **H** | Integrierte Hilfe / README. |
 | **Q** | Beenden. |
 
-## Fehlerbehebung und Diagnose
+### Fehlerbehebung und Diagnose
 
 | Tasten | Aktion |
 |------|--------|
@@ -237,7 +237,7 @@ Die Statuszeile oben im Menü zeigt **OK/KO** für **Management** (`veeamma`) un
 
 Für eine weiterführende Diagnose lesen Sie unsere [Anleitung zur Fehlerbehebung des Backup Agent](/pages/storage_and_backup/backup_agent/backup_agent_troubleshooting).
 
-## Deinstallationsassistent (Taste **U**)
+### Deinstallationsassistent (Taste **U**)
 
 - Entfernt Ihren Agent entsprechend Ihrer Betriebssystemfamilie (**yum/dnf**, **zypper**, **apt-get**).
 - Optionale Aufforderung zur Entfernung von **`/usr/local/bin/ovhbackupagent`** und der zugehörigen README.

@@ -185,7 +185,7 @@ sudo ovhbackupagent
 
 Se il comando non viene trovato, prova `sudo /usr/local/bin/ovhbackupagent` o verifica che `/usr/local/bin` sia nel tuo `PATH`.
 
-## Menu principale
+### Menu principale
 
 ```console
  ▗▄▖ ▗▖  ▗▖▗▖ ▗▖ ▗▄▄▖▗▖    ▗▄▖ ▗▖ ▗▖▗▄▄▄     ▗▖  ▗▖    ▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖ ▗▄▖ ▗▖  ▗▖
@@ -226,7 +226,7 @@ La riga di stato in cima al menu indica **OK/KO** per i pacchetti **Management**
 | **H** | Aiuto / README integrato. |
 | **Q** | Uscire. |
 
-## Risoluzione dei problemi e diagnostica
+### Risoluzione dei problemi e diagnostica
 
 | Tasti | Azione |
 |---------|--------|
@@ -237,7 +237,7 @@ La riga di stato in cima al menu indica **OK/KO** per i pacchetti **Management**
 
 Per approfondire la diagnostica, consulta la nostra [guida alla diagnostica e alla risoluzione dei problemi Backup Agent](/pages/storage_and_backup/backup_agent/backup_agent_troubleshooting).
 
-## Disinstallazione — Uninstall Wizard (tasto **U**)
+### Disinstallazione — Uninstall Wizard (tasto **U**)
 
 - Rimozione dell'agente, in base alla famiglia del tuo sistema operativo (**yum/dnf**, **zypper**, **apt-get**).
 - Domanda opzionale per rimuovere **`/usr/local/bin/ovhbackupagent`** e il README associato.

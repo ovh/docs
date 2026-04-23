@@ -185,7 +185,7 @@ sudo ovhbackupagent
 
 If the command is not found, try `sudo /usr/local/bin/ovhbackupagent` or check that `/usr/local/bin` is in your `PATH`.
 
-## Main menu
+### Main menu
 
 ```console
  ▗▄▖ ▗▖  ▗▖▗▖ ▗▖ ▗▄▄▖▗▖    ▗▄▖ ▗▖ ▗▖▗▄▄▄     ▗▖  ▗▖    ▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖ ▗▄▖ ▗▖  ▗▖
@@ -226,7 +226,7 @@ The status line at the top of the menu shows **OK/KO** for **Management** (`veea
 | **H** | Built-in help / README. |
 | **Q** | Quit. |
 
-## Troubleshooting and diagnostics
+### Troubleshooting and diagnostics
 
 | Keys | Action |
 |------|--------|
@@ -237,7 +237,7 @@ The status line at the top of the menu shows **OK/KO** for **Management** (`veea
 
 For advanced diagnostics, see our [Backup Agent troubleshooting guide](/pages/storage_and_backup/backup_agent/backup_agent_troubleshooting).
 
-## Uninstall Wizard (key **U**)
+### Uninstall Wizard (key **U**)
 
 - Removes your agent according to your OS family (**yum/dnf**, **zypper**, **apt-get**).
 - Optional prompt to remove **`/usr/local/bin/ovhbackupagent`** and the associated README.
