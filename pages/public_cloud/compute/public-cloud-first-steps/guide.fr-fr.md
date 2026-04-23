@@ -1,7 +1,7 @@
 ---
 title: "Comment créer une instance Public Cloud et s'y connecter"
 excerpt: "Découvrez comment configurer des instances Public Cloud dans votre espace client OVHcloud ainsi que les premières étapes avec vos instances"
-updated: 2026-02-24
+updated: 2026-04-23
 ---
 
 <style>
@@ -53,19 +53,6 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
   - [Étape 2 : Importer les clés SSH](#etape-2-importer-les-cles-ssh)
   - [Étape 3 : préparer la configuration réseau](#etape-3-preparer-la-configuration-reseau)
   - [Étape 4 : créer l'instance](#etape-4-creer-linstance)
-    - [Étape 4.1 : Nom de l'instance](#etape-41-nom-de-linstance)
-    - [Étape 4.2 : Sélectionnez une localisation](#etape-42-selectionnez-une-localisation)
-    - [Étape 4.3 : Sélectionnez un modèle](#etape-43-selectionnez-un-modele)
-      - [Informations complémentaires](#informations-complementaires)
-    - [Étape 4.4 : Sélectionnez une image](#etape-44-selectionnez-une-image)
-    - [Étape 4.5 : Sélectionnez une clé SSH (non applicable aux instances Windows)](#etape-45-selectionnez-une-cle-ssh-non-applicable-aux-instances-windows)
-    - [Étape 4.6 : Configurez les paramètres de sauvegarde](#etape-46-configurez-les-parametres-de-sauvegarde)
-    - [Étape 4.7 : Configurez le réseau](#etape-47-configurez-le-reseau)
-    - [Étape 4.8 : Sélectionnez une période de facturation](#etape-48-selectionnez-une-periode-de-facturation)
-    - [Étape 4.9 : Configurez les paramètres avancés](#etape-49-configurez-les-parametres-avances)
-      - [Instance flexible](#instance-flexible)
-      - [Script de post-installation](#script-de-post-installation)
-    - [Étape 4.10 : Finalisation de votre instance](#etape-410-finalisation-de-votre-instance)
   - [Étape 5 : Se connecter à l'instance](#etape-5-se-connecter-a-linstance)
     - [5.1 : Vérifier l'état de l'instance dans l'espace client](#51-verifier-letat-de-linstance-dans-lespace-client)
     - [5.2 : Première connexion sur une instance sous OS GNU/Linux](#52-premiere-connexion-sur-une-instance-sous-os-gnulinux)
@@ -108,7 +95,7 @@ Si vous utilisez un autre logiciel, reportez-vous à sa documentation utilisateu
 
 ### Étape 2 : Importer les clés SSH
 
-Vous pouvez stocker vos clés SSH publiques dans la section `Public Cloud`{.action} de votre [espace client OVHcloud](/links/manager). Ce n'est pas obligatoire, mais cela rend le processus de création d'instance plus pratique.
+Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n'est pas obligatoire, mais cela rend le processus de création d'instance plus pratique.
 
 > [!primary]
 >
@@ -117,19 +104,65 @@ Vous pouvez stocker vos clés SSH publiques dans la section `Public Cloud`{.acti
 > Les clés SSH publiques ajoutées à votre espace client OVHcloud seront disponibles pour les services Public Cloud de toutes les [régions](/links/public-cloud/regions-pci). Vous pouvez stocker des clés chiffrées avec **RSA**, **ECDSA** et **ED25519**.
 >
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
-
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
-
-Ouvrez `Clés SSH`{.action} dans le menu de gauche sous **Paramètres**. Cliquez sur le bouton `Ajouter une clé SSH`{.action}.
-
-![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
-
-Dans la nouvelle fenêtre, entrez un nom pour la clé. Remplissez le champ `Clé` avec votre chaîne de clé publique, par exemple celle créée à l'[étape 1](#etape-1-creer-un-jeu-de-cles-ssh). Confirmez en cliquant sur `Ajouter`{.action}.
-
-![add key](images/24-addkey.png){.thumbnail}
-
-Vous pouvez dorénavant sélectionner cette clé à l'[Étape 4](#etape-4-creer-linstance) pour l'ajouter à une nouvelle instance.
+> [!tabs]
+> **Espace client**
+>>
+>> Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
+>>
+>> ![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
+>>
+>> Ouvrez `Clés SSH`{.action} dans le menu de gauche sous **Paramètres**. Cliquez sur le bouton `Ajouter une clé SSH`{.action}.
+>>
+>> ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
+>>
+>> Dans la nouvelle fenêtre, entrez un nom pour la clé. Remplissez le champ `Clé` avec votre chaîne de clé publique, par exemple celle créée à l'[étape 1](#etape-1-creer-un-jeu-de-cles-ssh). Confirmez en cliquant sur `Ajouter`{.action}.
+>>
+>> ![add key](images/24-addkey.png){.thumbnail}
+>>
+>> Vous pouvez dorénavant sélectionner cette clé à l'[Étape 4](#etape-4-creer-linstance) pour l'ajouter à une nouvelle instance.
+>>
+> **API OVHcloud**
+>>
+>> Utilisez l'appel suivant pour importer votre clé SSH publique :
+>>
+>> > [!api]
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/sshkey
+>>
+>> Paramètres :
+>>
+>> - `serviceName` : identifiant de votre projet Public Cloud
+>> - `name` : nom de la clé SSH
+>> - `publicKey` : contenu de votre clé publique
+>>
+>> Notez l'`id` retourné, il sera nécessaire lors de la création de l'instance.
+>>
+> **CLI OpenStack**
+>>
+>> Assurez-vous d'avoir configuré votre environnement OpenStack ([guide dédié](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)), puis importez votre clé :
+>>
+>> ```bash
+>> openstack keypair create --public-key ~/.ssh/id_rsa.pub my-key
+>> ```
+>>
+>> Vérifiez l'import :
+>>
+>> ```bash
+>> openstack keypair list
+>> ```
+>>
+> **Terraform**
+>>
+>> Déclarez la ressource dans votre fichier `.tf` :
+>>
+>> ```hcl
+>> resource "openstack_compute_keypair_v2" "my_keypair" {
+>>   name       = "my-key"
+>>   public_key = file("~/.ssh/id_rsa.pub")
+>> }
+>> ```
+>>
+>> Consultez le [guide Terraform pour le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) pour la configuration initiale du provider.
+>>
 
 ### Étape 3 : préparer la configuration réseau
 
@@ -160,188 +193,151 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 
 ///
 
-### Étape 4 : créer l'instance
-
-> [!primary]
->
-> Une clé SSH publique est obligatoire lors de la création d'une instance dans l'espace client OVHcloud (à l'exception des instances Windows).
->
-> Reportez-vous à l'[étape 1](#etape-1-creer-un-jeu-de-cles-ssh) et l'[étape 2](#etape-2-importer-les-cles-ssh) de ce guide si vous n'avez pas de clés SSH prêtes à l'emploi.
->
-
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
-
-Sur la page **Accueil**, cliquez sur `Créer une instance`{.action}.
-
-#### Étape 4.1 : Nom de l'instance
-
-Entrez un nom complet pour votre instance. La référence commerciale du modèle d'instance est la valeur par défaut. Si nécessaire, vous pouvez également ajouter la région et la date pour faciliter l’identification et la gestion de vos instances.
-
-#### Étape 4.2 : Sélectionnez une localisation
-
-Sélectionnez une [localisation](/links/public-cloud/regions-pci) la plus proche de vos utilisateurs ou clients. Notez que si vous sélectionnez une **Local Zone** à cette étape, des limitations de réseau s'appliqueront à l'instance (voir [Étape 3](#networking-modes)).
-
-Reportez-vous également aux informations de notre [page web sur les Local Zones](/links/public-cloud/local-zones) et de la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
-
-Le choix de la région détermine le mode de déploiement de votre instance (1-AZ, 3-AZ ou Local Zones). Pour comprendre les différences en termes de résilience, de disponibilité et d’architecture, consultez notre guide [Comparaison et résilience des modes de déploiement – Comprendre les régions 3-AZ / 1-AZ / Local Zones](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details).
-
-#### Étape 4.3 : Sélectionnez un modèle
-
-À cette étape, vous choisissez le modèle d’instance (également appelé flavour), qui détermine les ressources allouées à votre instance : processeur, mémoire et capacités associées. Ouvrez la liste déroulante `Modèle de l'instance`, puis sélectionnez le type de modèle le plus adapté à votre cas d’usage afin d’accéder à notre gamme d’instances optimisées.
-
-Le type de modèle `Discovery` regroupe des instances à ressources partagées, proposées à des tarifs compétitifs. Elles sont particulièrement adaptées pour découvrir le Public Cloud OVHcloud, réaliser des tests, ou héberger des charges de travail légères comme des applications web.
-
-Les modèles `Metal Instances` offrent quant à eux des ressources physiques entièrement dédiées, garantissant des performances constantes et une isolation maximale pour les workloads les plus exigeants.
-
-> [!primary]
->
-> Le total de vos ressources Public Cloud sera initialement limité pour des raisons de contrôle des coûts et de sécurité. Vous pouvez vérifier ces quotas en cliquant sur `Quota & Régions`{.action} dans la barre de navigation de gauche sous **Paramètres**. Consultez [la documentation dédiée](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) pour plus d'informations.
->
-> Notez que vous pouvez **mettre à niveau** votre instance après sa création pour avoir plus de ressources disponibles. Le passage à un modèle plus petit n'est cependant pas possible avec une instance régulière. Vous trouverez plus d'informations sur ce sujet à l'**étape 4.9** ci-dessous.
->
-
-##### Informations complémentaires
-
-/// details | Catégories de modèles d'instance
-
-| Type | Ressources garanties | Notes d'utilisation |
-| :---         |     :---:      |          :--- |
-| Best Sellers   | ✓     | Modèles les plus utilisés.    |
-| General Purpose   | ✓     | Serveurs de développement, applications web ou métier    |
-| Compute Optimized     | ✓       | Encodage vidéo ou autre calcul haute performance      |
-| Memory Optimized    | ✓     | Bases de données, analyses et calculs en mémoire    |
-| Storage Optimized   | ✓     | Optimisé pour le transfert de données sur disque    |
-| Discovery    | -       | Hébergement sur ressources partagées pour les environnements de test et de développement      |
-| Cloud GPU     | ✓       | Puissance de traitement massivement parallèle pour les applications spécialisées (rendu, big data, deep learning, etc.)       |
-| Metal Instances | ✓ | Ressources dédiées avec accès direct aux ressources de calcul, de stockage et de réseau|
-
-///
-
-/// details | Régions et Local Zones
-
-**Régions**
-
-Une **région** est définie comme un emplacement dans le monde composé d'un ou plusieurs datacenters où les services OVHcloud sont hébergés. Vous pouvez trouver plus d'informations sur les régions, la répartition géographique et la disponibilité des services sur notre [page web dédiée](/links/public-cloud/regions-pci) et notre [page web sur les localisations des infrastructures OVHcloud](/links/infrareg).
-
-**Local Zones**
-
-Les Local Zones sont une extension des **régions** qui rapprochent les services OVHcloud de sites spécifiques, offrant une latence réduite et des performances améliorées pour les applications. Vous pouvez trouver plus d'informations sur la [page web des Local Zones](/links/public-cloud/local-zones) et dans la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
-
-///
-
-#### Étape 4.4 : Sélectionnez une image
-
-Ouvrez la liste déroulante `Type de distribution`, sélectionnez la catégorie correspondant à votre besoin, puis choisissez le système d’exploitation à déployer sur votre instance à l’aide du menu déroulant `Version de l'image`.
-
-Les images disponibles à cette étape dépendent des choix opérés lors des étapes précédentes, c'est-à-dire de la compatibilité avec le modèle d'instance et de la disponibilité régionale. Par exemple, si vous souhaitez sélectionner un système d'exploitation Windows et qu'il n'y a pas d'options dans l'onglet Windows, vous devez modifier vos choix des étapes précédentes.
-
-> [!primary]
->
-> Si vous choisissez un système d'exploitation nécessitant une licence payante, ces coûts seront automatiquement inclus dans la facturation du projet.
->
-
-#### Étape 4.5 : Sélectionnez une clé SSH (non applicable aux instances Windows)
-
-À l'exception des instances Windows, la configuration de votre instance nécessite également **l'ajout d'une clé SSH publique**. Vous avez deux options :
-
-- Utiliser une clé publique déjà stockée dans l'espace client OVHcloud
-- Saisir directement une clé publique
-
-Cliquez sur les onglets ci-dessous pour afficher leur présentation :
+### Étape 4 : créer l’instance
 
 > [!tabs]
-> **Utiliser une clé stockée**
+> **Espace client**
 >>
->> Pour ajouter une clé stockée dans votre espace client OVHcloud (voir [Étape 2](#etape-2-importer-les-cles-ssh)), sélectionnez-la dans la liste.
+>> > [!primary]
+>> >
+>> > Une clé SSH publique est obligatoire lors de la création d’une instance (à l’exception des instances Windows). Reportez-vous à l’[étape 1](#etape-1-creer-un-jeu-de-cles-ssh) et l’[étape 2](#etape-2-importer-les-cles-ssh) si vous n’avez pas de clés prêtes à l’emploi.
 >>
-> **Saisir directement une clé**
+>> Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page **Accueil**, cliquez sur `Créer une instance`{.action}.
 >>
->> Pour ajouter une clé publique en collant la chaîne de clé, cliquez sur le bouton `Créer une nouvelle clé SSH`{.action}.
+>> **4.1 Nom**
 >>
->> Entrez un nom pour la clé et la chaîne de clé dans les champs respectifs. Cliquez ensuite sur `Valider la clé`{.action}.
+>> Entrez un nom complet pour votre instance.
 >>
-
-
-#### Étape 4.6 : Configurez les paramètres de sauvegarde
-
-[Les sauvegardes automatisées](/pages/public_cloud/compute/save_an_instance) sont activées par défaut. Consultez les informations tarifaires et les détails complémentaires avant de poursuivre.
-
-Ensuite, sélectionnez le type de rotation, c’est-à-dire le nombre maximum de sauvegardes conservées en historique : 7 ou 14 jours.
-
-#### Étape 4.7 : Configurez le réseau
-
-Dans cette étape, vous allez configurer le réseau de votre instance.
-
-**Réseau privé**
-
-Vous pouvez connecter votre instance à un [réseau privé](#networking-modes) et lui attribuer une [Floating IP](/links/public-cloud/floating-ip).
-
-En cliquant sur `Créer un réseau privé`{.action}, vous pouvez en créer un directement :
-
-- Nommer le réseau
-- **Choisir le VLAN ID:** identifiant permettant d’interconnecter plusieurs services et ressources au sein d’un même réseau privé, via un numéro de segmentation réseau commun
-- **Définir le CIDR:** plage d’adresses IP du réseau
-- **Activer le DHCP en cochant la case correspondante, si nécessaire:** activez cette option si vous souhaitez une attribution automatique des adresses IP
-
-> [!primary]
->
-> L’instance peut rester entièrement privée si vous ne lui attribuez pas d’IP publique.
->
-
-**Gateway**
-
-Vous pouvez activer l’option pour attribuer une gateway à votre réseau. Par défaut, la gateway est de taille S, mais vous pourrez ajuster sa taille ultérieurement dans les paramètres.
-
-**Attribuer une connectivité publique**
-
-Vous pouvez activer ou désactiver cette fonctionnalité selon vos besoins. Si vous choisissez de l’activer, deux options s’offrent à vous :
-
-- **Basic Public IP :** une adresse IP publique temporaire, qui ne persiste pas au-delà de la durée de vie de l’instance. Notez que l’utilisation d’une Basic Public IP n’est pas compatible avec une gateway.
-- **Floating IP :** vous pouvez créer une nouvelle Floating IP ou réutiliser une adresse existante, permettant une IP publique persistante et détachable de l’instance.
-
-#### Étape 4.8 : Sélectionnez une période de facturation
-
-> [!primary]
->
-> Veuillez noter que, selon le modèle d’instance choisi, la facturation **horaire** peut être la seule sélection affichée. Il s’agit d’une limitation temporaire, de nouvelles options de facturation de Public Cloud seront bientôt disponibles.
->
-
-> [!tabs]
-> **Facturation mensuelle**
+>> **4.2 Localisation**
 >>
->> La facturation mensuelle entraînera une baisse des coûts au fil du temps, mais **ne peut pas être changée** en facturation à l'heure une fois l'instance créée.
+>> Sélectionnez une [localisation](/links/public-cloud/regions-pci) proche de vos utilisateurs. Si vous sélectionnez une **Local Zone**, des limitations réseau s’appliquent (voir [Étape 3](#networking-modes)). Consultez le guide [Comparaison des modes de déploiement](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details) pour les différences entre 3-AZ, 1-AZ et Local Zones.
 >>
-> **Facturation à l’heure**
+>> **4.3 Modèle**
 >>
->> La facturation à l'heure est le meilleur choix si vous n'avez pas clairement déterminé la durée de la période d'utilisation. Si vous décidez de conserver l’instance pour une utilisation à long terme, vous pouvez toujours [passer à un abonnement mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
+>> Choisissez le modèle (flavor) adapté à votre cas d’usage. Le type `Discovery` propose des ressources partagées à tarif réduit. Les `Metal Instances` offrent des ressources physiques dédiées.
 >>
->> L'instance sera facturée tant qu'elle n'est **pas supprimée**, quelle que soit l'utilisation réelle de l'instance.
+>> > [!primary]
+>> >
+>> > Vérifiez vos quotas via `Quota & Régions`{.action} dans la barre de navigation de gauche sous **Paramètres**.
 >>
-
-Voici notre documentation de facturation dédiée :
-
-- [Facturation du Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)
-- [FAQ sur la facturation mensuelle](/pages/public_cloud/compute/faq_change_of_monthly_billing_method)
-
-Une fois la configuration de votre instance terminée, vous pouvez choisir de cliquer sur le bouton `Lancer mon instance`{.action} ou de configurer les paramètres avancés (voir ci-dessous). La livraison de votre service peut prendre quelques minutes.
-
-#### Étape 4.9 : Configurez les paramètres avancés
-
-##### Instance flexible
-
-Une instance Flex est une instance à disque unique de 50 Go, conçue pour offrir un processus de création et de restauration de snapshots plus rapide.
-
-Elle permet de redimensionner l’instance vers des modèles supérieurs ou inférieurs, tout en conservant un espace de stockage fixe. Les modèles classiques autorisent uniquement un redimensionnement vers des modèles supérieurs.
-
-##### Script de post-installation
-
-Vous pouvez ajouter [votre script de post-installation](/pages/public_cloud/compute/launching_script_when_creating_instance) dans ce champ.
-
-#### Étape 4.10 : Finalisation de votre instance
-
-Sur le côté droit de votre écran, se trouve le récapitulatif de votre configuration. Dans cette section, vous pourrez configurer le nombre d’instances à créer. Vous pouvez créer plusieurs instances en fonction des sélections effectuées lors des étapes de création, mais [les limites de quota de ressources](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) s’appliqueront.
-
-Une fois la configuration de votre instance terminée, cliquez sur le bouton `Lancer mon instance`{.action}. La livraison de votre service peut prendre quelques minutes.
+>> **4.4 Image**
+>>
+>> Sélectionnez le système d’exploitation via les menus `Type de distribution` et `Version de l’image`. Les options disponibles dépendent du modèle et de la région choisis.
+>>
+>> **4.5 Clé SSH** *(non applicable aux instances Windows)*
+>>
+>> Sélectionnez une clé SSH stockée dans la liste (voir [Étape 2](#etape-2-importer-les-cles-ssh)), ou cliquez sur `Créer une nouvelle clé SSH`{.action} pour saisir directement une clé publique.
+>>
+>> **4.6 Sauvegarde**
+>>
+>> Les [sauvegardes automatisées](/pages/public_cloud/compute/save_an_instance) sont activées par défaut. Sélectionnez la rotation souhaitée (7 ou 14 jours).
+>>
+>> **4.7 Réseau**
+>>
+>> Configurez le réseau privé (VLAN ID, CIDR, DHCP), la gateway et la connectivité publique (Basic Public IP ou Floating IP) selon vos besoins (voir [Étape 3](#networking-modes)).
+>>
+>> **4.8 Facturation**
+>>
+>> Choisissez entre **mensuelle** (coût réduit, non réversible) ou **à l’heure** (flexible, [convertible en mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) ultérieurement). La facturation à l’heure court jusqu’à la **suppression de l’instance**. Consultez la [documentation de facturation](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).
+>>
+>> **4.9 Paramètres avancés** *(optionnel)*
+>>
+>> - **Instance flexible** : disque unique de 50 Go, permet le redimensionnement vers des modèles supérieurs ou inférieurs.
+>> - **Script de post-installation** : ajoutez votre [script de post-installation](/pages/public_cloud/compute/launching_script_when_creating_instance).
+>>
+>> **4.10 Finalisation**
+>>
+>> Vérifiez le récapitulatif sur la droite de l’écran et configurez le nombre d’instances. Cliquez sur `Lancer mon instance`{.action}. La livraison peut prendre quelques minutes.
+>>
+> **API OVHcloud**
+>>
+>> Récupérez les identifiants nécessaires :
+>>
+>> ```
+>> GET /cloud/project/{serviceName}/flavor     → flavorId
+>> GET /cloud/project/{serviceName}/image      → imageId
+>> GET /cloud/project/{serviceName}/region     → region
+>> GET /cloud/project/{serviceName}/sshkey     → sshKeyId
+>> ```
+>>
+>> Créez l’instance :
+>>
+>> > [!api]
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance
+>>
+>> Paramètres principaux :
+>>
+>> - `name` : nom de l’instance
+>> - `flavorId` : ID du modèle
+>> - `imageId` : ID de l’image OS
+>> - `region` : région de déploiement
+>> - `sshKeyId` : ID de la clé SSH (depuis l’[étape 2](#etape-2-importer-les-cles-ssh))
+>> - `monthlyBilling` : `true` pour une facturation mensuelle
+>>
+>> Consultez la [documentation API OVHcloud](/pages/manage_and_operate/api/first-steps) pour configurer votre accès à l’API.
+>>
+> **CLI OpenStack**
+>>
+>> Récupérez les informations nécessaires :
+>>
+>> ```bash
+>> openstack flavor list
+>> openstack image list --property visibility=public
+>> openstack keypair list
+>> ```
+>>
+>> Créez l’instance :
+>>
+>> ```bash
+>> openstack server create \
+>>   --flavor b2-7 \
+>>   --image "Ubuntu 24.04" \
+>>   --key-name my-key \
+>>   --network Ext-Net \
+>>   my-instance
+>> ```
+>>
+>> Vérifiez l’état :
+>>
+>> ```bash
+>> openstack server list
+>> openstack server show my-instance
+>> ```
+>>
+>> Consultez le [guide de préparation de l’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) pour la mise en place initiale.
+>>
+> **Terraform**
+>>
+>> Exemple de configuration complète :
+>>
+>> ```hcl
+>> data "openstack_images_image_v2" "ubuntu" {
+>>   name        = "Ubuntu 24.04"
+>>   most_recent = true
+>> }
+>>
+>> resource "openstack_compute_instance_v2" "my_instance" {
+>>   name            = "my-instance"
+>>   flavor_name     = "b2-7"
+>>   key_pair        = openstack_compute_keypair_v2.my_keypair.name
+>>   security_groups = ["default"]
+>>
+>>   block_device {
+>>     uuid                  = data.openstack_images_image_v2.ubuntu.id
+>>     source_type           = "image"
+>>     destination_type      = "local"
+>>     boot_index            = 0
+>>     delete_on_termination = true
+>>   }
+>>
+>>   network {
+>>     name = "Ext-Net"
+>>   }
+>> }
+>> ```
+>>
+>> Consultez le [guide Terraform pour le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) pour la configuration initiale du provider et l’authentification.
+>>
 
 ### Étape 5 : Se connecter à l'instance
 
