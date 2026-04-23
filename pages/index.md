@@ -470,6 +470,7 @@
                 + [How to create a VLAN](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan)
                 + [vRack compatibility with Hosted Private Cloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrack_and_hosted_private_cloud)
                 + [Enable the Private Gateway](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway)
+                + [Configuring NTP on the Private Gateway](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway_ntp)
                 + [Adding an IP block](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ajout_de_bloc_ip)
                 + [Spare host delivery and return](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/spare_hosts)
                 + [Segment management in NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management)
