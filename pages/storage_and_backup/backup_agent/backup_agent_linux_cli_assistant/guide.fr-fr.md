@@ -59,8 +59,6 @@ Le script **`ovh-ba-install.sh`** est un **assistant en ligne de commande**. Ave
 
 ### Installation
 
-Les écrans affichés par le script sont en anglais, quel que soit le système.
-
 #### Étape 1 — Récupérer les URL d'installation
 
 Dans l'espace client OVHcloud, ouvrez votre [Backup Agent](/links/control-panel/baremetal-backup-agent), rendez-vous dans l'onglet `Agents`{.action}, puis cliquez sur le bouton `Télécharger`{.action}. Dans la fenêtre qui s'ouvre, sélectionnez **Linux** pour afficher la commande contenant les deux URL (script et paquet Linux).
@@ -142,7 +140,15 @@ Installation summary
 [Info] The **Backup Agent** will be deployed shortly by our infrastructure (often within a few minutes).
 Next, the **Agent status** screen opens so you can follow **`veeamconsoleconfig -s`** until the Backup Agent appears.
 
-[...]
+Main menu - reminder (available again after Agent status)
+
+**A** - Agent status: Management / Backup Agent state (this screen refreshes every few seconds).
+**V** - Open the Veeam UI on the server (once the Backup Agent is installed).
+**D** - Diagnostics: VSPC connectivity test, support bundle, log issue analyzer, force-stop stuck jobs.
+**I** - Install or reinstall a Management Agent package from a file or URL (advanced).
+**U** - Uninstall Veeam agent packages from this server (with confirmations).
+**H** - Help and README.
+**Q** - Exit the assistant.
 
 [Info] Waiting 15 seconds, then opening Agent status...
 ```

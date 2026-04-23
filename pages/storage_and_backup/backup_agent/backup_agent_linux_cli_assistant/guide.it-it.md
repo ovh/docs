@@ -34,9 +34,11 @@ Scoprirai come recuperare gli URL di installazione, avviare l'installazione con 
 
 ### Vocabolario minimo
 
-- **`curl`**: programma che **scarica** un file da un indirizzo web (`https://…`).
-- **`sudo`**: "come amministratore" — necessario per installare software di sistema.
-- **`bash`**: interprete che **esegue** lo script che gli viene fornito.
+| Comando | Ruolo |
+|----------|------|
+| **`curl`** | Programma che **scarica** un file da un indirizzo web (`https://…`). |
+| **`sudo`** | "Come amministratore" — necessario per installare software di sistema. |
+| **`bash`** | Interprete che **esegue** lo script che gli viene fornito. |
 
 ## Procedura
 
@@ -55,20 +57,30 @@ Lo script **`ovh-ba-install.sh`** è un **assistente a riga di comando**. Con qu
 > Lo script **facilita l'installazione e il monitoraggio** sulla macchina; non sostituisce la configurazione dei backup nell'interfaccia Veeam Agent. La **disdetta del servizio** si effettua nello **Spazio Cliente OVHcloud**, non tramite questo script.
 >
 
-### Recuperare gli URL di installazione
+### Installazione
 
-Nello Spazio Cliente OVHcloud, apri il tuo [Backup Agent](/links/control-panel/baremetal-backup-agent), vai nella scheda `Agent`{.action}, quindi clicca sul pulsante `Scarica`{.action}. Nella finestra che si apre, seleziona **Linux** per visualizzare il comando contenente i due URL (script e pacchetto Linux).
+#### Step 1 — Recuperare gli URL di installazione
 
-![Scaricare l'agente — comandi di installazione Linux](images/01-backup-agent-download-linux-en.png){.thumbnail}
+Nello Spazio Cliente OVHcloud, apri il tuo [Backup Agent](/links/control-panel/baremetal-backup-agent), vai nella scheda `Agents`{.action}, quindi clicca sul pulsante `Scarica`{.action}. Nella finestra che si apre, seleziona **Linux** per visualizzare il comando contenente i due URL (script e pacchetto Linux).
+
+![Scaricare l'agente — comandi di installazione Linux](images/01-backup-agent-download-linux-fr.png){.thumbnail}
 
 > [!primary]
 >
 > Copia e incolla ciascuno dei due URL separatamente in un file di testo prima di connetterti in SSH.
 >
 
-### Una sola riga per installare l'agente e l'assistente
+#### Step 2 — Connettersi al server
 
-Tramite la riga di comando che ti forniamo, puoi installare l'agente e l'assistente contemporaneamente. Sostituisci `URL_DELLO_SCRIPT` (2 volte) e `URL_DEL_PACCHETTO_AGENTE` con i link copiati in precedenza.
+Connettiti in SSH al server con un utente autorizzato a utilizzare `sudo`.
+
+```bash
+ssh <user>@<IPouDNSdevotreserveur>
+```
+
+#### Step 3 — Avviare l'installazione
+
+Sostituisci `URL_DELLO_SCRIPT` (2 volte) e `URL_DEL_PACCHETTO_AGENTE` nel comando seguente con i tuoi URL, quindi eseguilo.
 
 ```bash
 curl -sSL "URL_DELLO_SCRIPT" | sudo bash -s -- --setup "URL_DEL_PACCHETTO_AGENTE" --script-url "URL_DELLO_SCRIPT"
@@ -80,48 +92,9 @@ Esempio:
 curl -sSL "https://ovh-ba-downloads.s3.xxx.xxx/tmp/ovh-ba-install.sh" | sudo bash -s -- --setup "https://s3.xxx.xxx.cloud.ovh.net/xxxx/LinuxAgentPackages.vspc_tenant_xxxx.sh?X-Amz-Algorithm=xxx&X-Amz-Credential=xxx&X-Amz-Date=2xxx&X-Amz-Expires=xxx&X-Amz-SignedHeaders=xxx&X-Amz-Signature=xxx" --script-url "https://ovh-ba-downloads.s3.xxx.xxx/tmp/ovh-ba-install.sh"
 ```
 
-### Dopo un'installazione riuscita
+#### Step 4 — Schermata di benvenuto
 
-1. Un **riepilogo** viene visualizzato per **15 secondi** (operazioni eseguite, ruolo del menu, promemoria dei tasti).
-2. Si apre la schermata **Agent status** per seguire lo stato Veeam (`veeamconsoleconfig -s`), con aggiornamento automatico.
-3. **Invio** riporta al **menu principale**.
-
-Per riaprire l'assistente in seguito:
-
-```bash
-sudo ovhbackupagent
-```
-
-(Se il comando non viene trovato, prova `sudo /usr/local/bin/ovhbackupagent` o verifica che `/usr/local/bin` sia nel tuo `PATH`.)
-
-### Altri comandi utili
-
-| Necessità | Comando (esempio) |
-|--------|---------------------|
-| Agenti già installati, installare **solo** `ovhbackupagent` + menu | `sudo bash ovh-ba-install.sh --setup-local` |
-| Aiuto / README nel terminale | `sudo bash ovh-ba-install.sh --readme` |
-
-### Hai scaricato nuovamente lo script?
-
-Se avvii lo script **senza argomenti** con un terminale interattivo (`sudo bash ovh-ba-install.sh`), una breve **schermata di benvenuto** verifica se **`ovhbackupagent`** è ancora presente e se il Backup Agent è rilevato, quindi propone eventualmente di **reinstallare solo** il collegamento.
-
-## Esempio passo dopo passo: prima installazione
-
-**Scenario**: nuovo server Linux, disponi dei due URL (script e pacchetto Linux) copiati dalla finestra **Scaricare l'agente** del tuo Spazio Cliente.
-
-1\. Connettiti in SSH al server con un utente autorizzato a utilizzare `sudo`.
-
-```bash
-ssh <user>@<IP-o-DNS-del-server>
-```
-
-2\. Sostituisci `URL_DELLO_SCRIPT` (2 volte) e `URL_DEL_PACCHETTO_AGENTE` nel comando seguente con i tuoi URL, quindi eseguilo.
-
-```bash
-curl -sSL "URL_DELLO_SCRIPT" | sudo bash -s -- --setup "URL_DEL_PACCHETTO_AGENTE" --script-url "URL_DELLO_SCRIPT"
-```
-
-3\. Leggi l'introduzione, conferma con **Invio** per avviare l'installazione.
+Leggi l'introduzione, quindi conferma con **Invio** per avviare l'installazione.
 
 ```console
  ▗▄▖ ▗▖  ▗▖▗▖ ▗▖ ▗▄▄▖▗▖    ▗▄▖ ▗▖ ▗▖▗▄▄▄     ▗▖  ▗▖    ▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖ ▗▄▖ ▗▖  ▗▖
@@ -150,9 +123,13 @@ Management Agent connects; that step can take a few minutes.
 Press Enter to start the installation, or Ctrl+C to cancel...
 ```
 
-4\. Attendi il completamento delle fasi Veeam; lo script installa quindi **`ovhbackupagent`**.
+#### Step 5 — Installazione in corso
 
-5\. Leggi il **riepilogo** per 15 secondi, quindi osserva l'**Agent status**; il **Backup Agent** può apparire dopo qualche minuto (distribuzione lato infrastruttura).
+Attendi il completamento delle fasi Veeam; lo script installa quindi il comando **`ovhbackupagent`**.
+
+#### Step 6 — Riepilogo e stato degli agenti
+
+Prendi nota del **riepilogo** visualizzato per **15 secondi**, quindi osserva la schermata **Agent status**. Il **Backup Agent** può apparire dopo qualche minuto (distribuzione lato infrastruttura).
 
 ```console
 Installation summary
@@ -176,6 +153,8 @@ Main menu - reminder (available again after Agent status)
 [Info] Waiting 15 seconds, then opening Agent status...
 ```
 
+Dopo i 15 secondi, la schermata **Agent status** viene visualizzata automaticamente:
+
 ```console
 Agent status (veeamconsoleconfig -s)
 
@@ -194,7 +173,17 @@ Your agents are running well.
 Auto-refresh in 5s... Press Enter to return to menu.
 ```
 
-6\. Premi **Invio** per accedere al menu; utilizza **`A`** per rivedere lo stato, **`D`** per la diagnostica se qualcosa si blocca.
+Premi **Invio** per accedere al **menu principale**.
+
+### Riaprire l'assistente
+
+Per riaprire l'assistente in seguito:
+
+```bash
+sudo ovhbackupagent
+```
+
+Se il comando non viene trovato, prova `sudo /usr/local/bin/ovhbackupagent` o verifica che `/usr/local/bin` sia nel tuo `PATH`.
 
 ## Menu principale
 
@@ -225,7 +214,9 @@ Auto-refresh in 5s... Press Enter to return to menu.
   Your choice (A/V/D/I/U/H/Q):
 ```
 
-| Tasto | Funzione |
+La riga di stato in cima al menu indica **OK/KO** per i pacchetti **Management** (`veeamma`) e **Backup** (`veeam`, `veeam-libs`), e un indicatore relativo all'ultimo job di backup.
+
+| Tasto | Azione |
 |--------|------|
 | **A** | Stato degli agenti (aggiornamento automatico). |
 | **V** | Aprire l'interfaccia Veeam sul server per controllare i backup e i ripristini (se il Backup Agent è pronto). |
@@ -235,18 +226,18 @@ Auto-refresh in 5s... Press Enter to return to menu.
 | **H** | Aiuto / README integrato. |
 | **Q** | Uscire. |
 
-La riga di stato in cima al menu indica **OK/KO** per i pacchetti **Management** (`veeamma`) e **Backup** (`veeam`, `veeam-libs`), e un indicatore relativo all'ultimo job di backup.
-
 ## Risoluzione dei problemi e diagnostica
 
-- **`D`** poi **`T`**: test di connessione verso il gateway VSPC.
-- **`D`** poi **`B`**: generazione di un **archivio** (log + informazioni di sistema) da inviare al supporto.
-- **`D`** poi **`I`**: **analisi** dei messaggi noti nei log (`agent.log`, `veeaminstaller.log`, ecc.).
-- **`D`** poi **`J`**: strumento di **arresto forzato** di una sessione di backup (da utilizzare con cautela).
+| Tasti | Azione |
+|---------|--------|
+| **`D`** poi **`T`** | Test di connessione verso il gateway VSPC. |
+| **`D`** poi **`B`** | Generazione di un **archivio** (log + informazioni di sistema) da inviare al supporto. |
+| **`D`** poi **`I`** | **Analisi** dei messaggi noti nei log (`agent.log`, `veeaminstaller.log`, ecc.). |
+| **`D`** poi **`J`** | Strumento di **arresto forzato** di una sessione di backup (da utilizzare con cautela). |
 
 Per approfondire la diagnostica, consulta la nostra [guida alla diagnostica e alla risoluzione dei problemi Backup Agent](/pages/storage_and_backup/backup_agent/backup_agent_troubleshooting).
 
-## Assistente di disinstallazione — Uninstall Wizard (tasto **U**)
+## Disinstallazione — Uninstall Wizard (tasto **U**)
 
 - Rimozione dell'agente, in base alla famiglia del tuo sistema operativo (**yum/dnf**, **zypper**, **apt-get**).
 - Domanda opzionale per rimuovere **`/usr/local/bin/ovhbackupagent`** e il README associato.
@@ -262,15 +253,26 @@ Per approfondire la diagnostica, consulta la nostra [guida alla diagnostica e al
 No: sono necessarie operazioni di sistema che richiedono permessi di amministratore (`sudo`).
 
 **Il menu si chiude subito dopo l'installazione in pipe — cosa fare?**  
-Puoi riaprirlo con:
-
-```bash
-sudo ovhbackupagent
-```
+Riaprilo con `sudo ovhbackupagent`.
 
 **Dove si trova lo script una volta installato come comando?**  
 In genere: **`/usr/local/bin/ovhbackupagent`**.
 
+**Gli agenti sono già installati, come installare solo l'assistente?**  
+Utilizza `sudo bash ovh-ba-install.sh --setup-local`.
+
+**Ho riscaricato lo script, cosa succede se lo avvio senza argomenti?**  
+Una breve schermata di benvenuto verifica se **`ovhbackupagent`** è ancora presente e se il Backup Agent è rilevato, quindi propone eventualmente di reinstallare solo il collegamento.
+
+**Come visualizzare l'aiuto integrato?**  
+Utilizza `sudo bash ovh-ba-install.sh --readme`.
+
 ## Per saperne di più
+
+Una volta che i tuoi agenti sono operativi, configura i tuoi backup tramite l'interfaccia Veeam Agent sul server (tasto **`V`** nell'assistente).
+
+- [Configurare il primo backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)
+- [Gestire backup e ripristini](/pages/storage_and_backup/backup_agent/backup_agent_backup_restore)
+- [Diagnostica e risoluzione dei problemi](/pages/storage_and_backup/backup_agent/backup_agent_troubleshooting)
 
 Contatta la nostra [Community di utenti](/links/community).
