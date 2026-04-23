@@ -41,8 +41,9 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 > Les conversions **-LUKS** vers **non -LUKS** ne sont pas prises en charge, y compris via OpenStack / Horizon.
 >
 
+<!-- CP-STEPS-START:instructions -->
 > [!tabs]
-> Depuis l'espace client OVHcloud
+> Depuis l’espace client OVHcloud
 >>
 >> Cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
 >>
@@ -55,9 +56,9 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 >> > La mise à jour du type de volume (retyping) peut prendre plusieurs minutes.
 >> >
 >>
-> Depuis l'interface Horizon
+> Depuis l’interface Horizon
 >>
->> Connectez-vous à [l'interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous d'être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
+>> Connectez-vous à [l’interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
 >>
 >> ![Sélection de région](images/region2021.png){.thumbnail}
 >>
@@ -65,13 +66,13 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 >>
 >> Cliquez sur la flèche déroulante à côté de `Edit Volume`{.action} et sélectionnez `Change Volume Type`{.action}.
 >>
->> ![Choix de l'option](images/selectoption.png){.thumbnail}
+>> ![Choix de l’option](images/selectoption.png){.thumbnail}
 >>
->> Dans la fenêtre qui s'affiche, cliquez sur le menu déroulant sous `Type` et sélectionnez `high-speed-gen-2`{.action}. Cliquez ensuite sur la flèche déroulante sous `Migration Policy` et sélectionnez `On Demand`{.action}.
+>> Dans la fenêtre qui s’affiche, cliquez sur le menu déroulant sous `Type` et sélectionnez `high-speed-gen-2`{.action}. Cliquez ensuite sur la flèche déroulante sous `Migration Policy` et sélectionnez `On Demand`{.action}.
 >>
 >> Une fois ces actions effectuées, cliquez sur `Change Volume Type`{.action} pour valider le changement.
 >>
->> ![Choix de l'option](images/changevolume.png){.thumbnail}
+>> ![Choix de l’option](images/changevolume.png){.thumbnail}
 >>
 > Depuis la CLI OpenStack
 >>
@@ -79,7 +80,7 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 >>
 >> - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 >>
->> Tout d'abord, listez les types de volumes disponibles dans votre région avec la commande suivante :
+>> Tout d’abord, listez les types de volumes disponibles dans votre région avec la commande suivante :
 >>
 >> ```bash
 >> #~$ openstack volume type list
@@ -96,7 +97,7 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 >> ```
 >>
 >> > [!warning]
->> > Veuillez noter que si les types de volumes « high-speed-gen2 » ou **-LUKS** n'apparaissent pas dans la liste, cela signifie qu'ils ne sont pas disponibles dans cette région.
+>> > Veuillez noter que si les types de volumes « high-speed-gen2 » ou **-LUKS** n’apparaissent pas dans la liste, cela signifie qu’ils ne sont pas disponibles dans cette région.
 >> >
 >> > Les types de volumes **-LUKS** ne sont affichés que lorsqu’ils sont pris en charge dans la région et compatibles avec le type de chiffrement du volume.
 >> >
@@ -107,6 +108,7 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 >> $ openstack volume set --type <VOLUME_TYPE> --retype-policy on-demand <VOLUME_NAME_OR_ID>
 >> ```
 >>
+<!-- CP-STEPS-END:instructions -->
 
 ## Aller plus loin
 

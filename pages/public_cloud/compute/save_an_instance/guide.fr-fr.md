@@ -44,6 +44,8 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 
 ### Créer une sauvegarde d'une instance
 
+<!-- CP-STEPS-START:creating-a-backup-of-an-instance -->
+
 > [!warning]
 > Cette option est uniquement disponible via un **Cold Snapshot** pour les instances Metal. L'instance Metal passera en mode rescue et, une fois la sauvegarde effectuée, l'instance sera redémarrée en mode normal.
 >
@@ -173,7 +175,11 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
 >>
 
+<!-- CP-STEPS-END:creating-a-backup-of-an-instance -->
+
 ### Créer une sauvegarde automatisée d’une instance
+
+<!-- CP-STEPS-START:creating-an-automated-backup-of-an-instance -->
 
 > [!primary]
 >
@@ -221,7 +227,11 @@ Cliquez sur le bouton `Ajouter un backup distant`{.action}, sélectionnez une lo
 
 ///
 
+<!-- CP-STEPS-END:creating-an-automated-backup-of-an-instance -->
+
 ### Gestion des sauvegardes et des plannings
+
+<!-- CP-STEPS-START:managing-backups-and-schedules -->
 
 Les planifications peuvent être créées et supprimées dans la section `Workflow Management`{.action} qui se trouve sous la rubrique **Compute** dans le menu de gauche.
 
@@ -239,6 +249,8 @@ Les sauvegardes de vos instances sont gérées dans la section `Instance Backup`
 > **Notez que vous ne pouvez pas supprimer une sauvegarde d'instance si une instance qui a été générée à partir de cette sauvegarde est en cours d'exécution au moment de l'action de suppression.**
 
 Découvrez comment utiliser les sauvegardes pour cloner ou restaurer des instances dans [ce guide](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup).
+
+<!-- CP-STEPS-END:managing-backups-and-schedules -->
 
 ## Aller plus loin
 

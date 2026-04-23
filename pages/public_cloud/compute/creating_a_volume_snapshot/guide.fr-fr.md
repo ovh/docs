@@ -37,11 +37,12 @@ Créer un snapshot d’un volume additionnel correspond généralement à deux o
 
 ## En pratique
 
+<!-- CP-STEPS-START:create-volume-snapshot -->
 Ouvrez le menu `Block Storage`{.action} dans la barre de navigation à gauche sous **Storage & Backup**.
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-A droite du volume concerné, cliquez sur le bouton `...`{.action} puis sur `Créer une sauvegarde`{.action} (il n'est pas nécessaire de détacher d'abord le volume de son instance). Cependant, si vous souhaitez détacher votre volume, nous vous invitons à consulter la section « Détacher un volume » de [ce guide](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
+A droite du volume concerné, cliquez sur le bouton `...`{.action} puis sur `Créer une sauvegarde`{.action} (il n’est pas nécessaire de détacher d’abord le volume de son instance). Cependant, si vous souhaitez détacher votre volume, nous vous invitons à consulter la section « Détacher un volume » de [ce guide](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
 Il faut ensuite sélectionner `Volume Snapshot`{.action}, le nommer et cliquer sur `Créer la sauvegarde`{.action}.
 
@@ -49,23 +50,26 @@ Il faut ensuite sélectionner `Volume Snapshot`{.action}, le nommer et cliquer s
 
 Dans la fenêtre qui apparaît, vous pouvez donner un nom différent au snapshot. Prenez connaissance des informations tarifaires, puis cliquez sur `Créer un snapshot`{.action}.
 
-Le temps de création du snapshot dépend de la quantité de données présentes sur le volume, de l'utilisation des ressources de l'instance au moment du snapshot et d'autres facteurs spécifiques à l'hôte.
+Le temps de création du snapshot dépend de la quantité de données présentes sur le volume, de l’utilisation des ressources de l’instance au moment du snapshot et d’autres facteurs spécifiques à l’hôte.
 
-Nous vous recommandons donc d'effectuer vos snapshots en dehors de vos heures de production.
+Nous vous recommandons donc d’effectuer vos snapshots en dehors de vos heures de production.
 
 Voici quelques autres bonnes pratiques :
 
 - évitez de créer des snapshots aux heures de pointe (entre 04h00 et 22h00, heure de Paris) ;
-- installez l'agent qemu-guest si ce n'est pas fait ou essayez de le désactiver si nécessaire ;
+- installez l’agent qemu-guest si ce n’est pas fait ou essayez de le désactiver si nécessaire ;
 - essayez de ne pas trop « solliciter » le serveur pendant la phase de création du snapshot (limitation des I/O, consommation de RAM, etc.).
 
-Un snapshot de volume étant un clone de l'ensemble du disque, il aura la taille maximale du volume d'origine, quelle que soit l'allocation réelle d'espace disque.
+Un snapshot de volume étant un clone de l’ensemble du disque, il aura la taille maximale du volume d’origine, quelle que soit l’allocation réelle d’espace disque.
+<!-- CP-STEPS-END:create-volume-snapshot -->
 
+<!-- CP-STEPS-START:manage-volume-snapshots -->
 ![Volume Snapshot](images/volume_snapshot03.png){.thumbnail}
 
 Ouvrez la section `Volume Snapshot`{.action} dans la barre de navigation à gauche. Une fois le snapshot créé, il sera ajouté à ce tableau.
 
 Cliquez sur le bouton `...`{.action} pour `Supprimer`{.action} un snapshot ou `Créer un volume`{.action} à partir du snapshot correspondant. Retrouvez plus d’informations sur [ce guide](/pages/public_cloud/compute/create-volume-from-snapshot).
+<!-- CP-STEPS-END:manage-volume-snapshots -->
 
 ## Aller plus loin
 

@@ -38,6 +38,7 @@ Si votre instance manque de ressources en raison d'une activité accrue ou de no
 
 ## En pratique
 
+<!-- CP-STEPS-START:resize-instance-via-cp -->
 Cliquez sur `Instances`{.action} dans le menu de gauche.
 
 Cliquez ensuite sur `...`{.action} à droite de l’instance, puis sélectionnez `Editer`{.action}. Vous pouvez également accéder à cette action depuis les détails de l’instance en cliquant sur son nom, puis sur `Modifier le modèle`{.action}.
@@ -58,9 +59,11 @@ Si votre disque est égal ou inférieur à 50 Go, vous pouvez passer à une `Ins
 >
 
 Une fois la sélection effectuée, cliquez sur `Modifier le modèle`{.action} pour confirmer votre choix.
+<!-- CP-STEPS-END:resize-instance-via-cp -->
 
 ### Redimensionnement du disque sous Windows
 
+<!-- CP-STEPS-START:resize-disk-windows -->
 Attention, lors d'un redimensionnement pour une instance Windows, la taille de la partition n'est pas automatiquement mise à jour, vous devrez donc l'étendre via le **gestionnaire de disque** :
 
 - Faites un clic droit sur le menu `Démarrer`{.action} et lancez le gestionnaire de disque en cliquant sur `Gestion du disque`{.action} :
@@ -82,6 +85,7 @@ Cliquez ensuite sur `Terminer`{.action} pour valider votre choix.
 - La nouvelle taille du disque sera alors affichée dans le gestionnaire de disque.
 
 ![Gestionnaire de disque affichant la nouvelle taille](images/2979.png){.thumbnail}
+<!-- CP-STEPS-END:resize-disk-windows -->
 
 ## Aller plus loin
 

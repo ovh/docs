@@ -79,6 +79,7 @@ For this guide, our Object Storage container has the following characteristics:
 - with a newly created user
 - named `pulumi`
 
+<!-- CP-STEPS-START:creating-an-object-storage-container-bucket -->
 ![OVHcloud Object Storage](images/object-storage.png){.thumbnail}
 
 > [!primary]
@@ -88,6 +89,7 @@ For this guide, our Object Storage container has the following characteristics:
 Click on `pulumi`{.action} to access the bucket and to display its information, including the useful `Endpoint`.
 
 ![OVHcloud Object Storage pulumi bucket](images/pulumi-bucket.png){.thumbnail}
+<!-- CP-STEPS-END:creating-an-object-storage-container-bucket -->
 
 Export your Object Storage credentials in environment variables:
 

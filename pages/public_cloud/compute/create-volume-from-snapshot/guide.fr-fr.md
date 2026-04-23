@@ -37,6 +37,8 @@ Cela peut être utile dans les cas suivants :
 
 ### Créer le disque à partir d'une sauvegarde
 
+<!-- CP-STEPS-START:create-disk-from-backup -->
+
 Cliquez sur `Volume Snapshot`{.action} dans la barre de navigation de gauche sous **Storage & Backup**.
 
 À droite de la sauvegarde de votre choix, cliquez sur le bouton `...`{.action} puis sur `Créer un volume`{.action}.
@@ -49,7 +51,11 @@ Définissez alors le nom de ce nouveau disque et sa capacité puis cliquez sur `
 
 La création du disque peut prendre quelques minutes, suivant la taille de celui-ci.
 
+<!-- CP-STEPS-END:create-disk-from-backup -->
+
 ### Attacher le disque à une instance
+
+<!-- CP-STEPS-START:attach-disk-to-instance -->
 
 Une fois le disque créé, vous pouvez décider de l'attacher à une instance. Pour cela, cliquez sur `Block Storage`{.action} dans la barre de navigation de gauche sous **Storage & Backup**.
 
@@ -70,6 +76,8 @@ Vous devez éviter la navigation en dehors de l’onglet en cours pendant l’at
 >
 
 Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour configurer votre disque supplémentaire [sous Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-linux) ou [sous Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-windows).
+
+<!-- CP-STEPS-END:attach-disk-to-instance -->
 
 ## Aller plus loin
 

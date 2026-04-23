@@ -44,6 +44,8 @@ Les sauvegardes de volumes LUKS chiffrés ne peuvent être restaurées que sur l
 
 ## En pratique
 
+<!-- CP-STEPS-START:instructions -->
+
 Ouvrez le menu `Block Storage`{.action} dans la barre de navigation à gauche sous **Storage & Backup**.
 
 À droite du volume concerné, cliquez sur le bouton `...`{.action} puis sur `Créer une sauvegarde`{.action}.
@@ -96,6 +98,8 @@ Cliquez sur le bouton `...`{.action} pour `Supprimer`{.action} ou `Créer un vol
 Retrouvez plus d’informations à ce sujet dans [notre guide sur la création d'un volume depuis une sauvegarde](/pages/public_cloud/compute/create-volume-from-snapshot).
 
 ![Créer un volume depuis un backup](images/volumebackup05.png){.thumbnail}
+
+<!-- CP-STEPS-END:instructions -->
 
 ## Aller plus loin
 

@@ -117,6 +117,7 @@ Vous pouvez stocker vos clés SSH publiques dans la section `Public Cloud`{.acti
 > Les clés SSH publiques ajoutées à votre espace client OVHcloud seront disponibles pour les services Public Cloud de toutes les [régions](/links/public-cloud/regions-pci). Vous pouvez stocker des clés chiffrées avec **RSA**, **ECDSA** et **ED25519**.
 >
 
+<!-- CP-STEPS-START:import-ssh-keys -->
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
 ![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
@@ -130,6 +131,7 @@ Dans la nouvelle fenêtre, entrez un nom pour la clé. Remplissez le champ `Clé
 ![add key](images/24-addkey.png){.thumbnail}
 
 Vous pouvez dorénavant sélectionner cette clé à l'[Étape 4](#etape-4-creer-linstance) pour l'ajouter à une nouvelle instance.
+<!-- CP-STEPS-END:import-ssh-keys -->
 
 ### Étape 3 : préparer la configuration réseau
 
@@ -169,6 +171,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 > Reportez-vous à l'[étape 1](#etape-1-creer-un-jeu-de-cles-ssh) et l'[étape 2](#etape-2-importer-les-cles-ssh) de ce guide si vous n'avez pas de clés SSH prêtes à l'emploi.
 >
 
+<!-- CP-STEPS-START:create-instance-step4 -->
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
 Sur la page **Accueil**, cliquez sur `Créer une instance`{.action}.
@@ -342,6 +345,7 @@ Vous pouvez ajouter [votre script de post-installation](/pages/public_cloud/comp
 Sur le côté droit de votre écran, se trouve le récapitulatif de votre configuration. Dans cette section, vous pourrez configurer le nombre d’instances à créer. Vous pouvez créer plusieurs instances en fonction des sélections effectuées lors des étapes de création, mais [les limites de quota de ressources](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) s’appliqueront.
 
 Une fois la configuration de votre instance terminée, cliquez sur le bouton `Lancer mon instance`{.action}. La livraison de votre service peut prendre quelques minutes.
+<!-- CP-STEPS-END:create-instance-step4 -->
 
 ### Étape 5 : Se connecter à l'instance
 
@@ -359,21 +363,23 @@ Notez que nous proposons des moyens d'accès alternatifs (principalement utilis�
 
 #### 5.1 : Vérifier l'état de l'instance dans l'espace client
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
+<!-- CP-STEPS-START:verify-instance-status -->
+Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
 ![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **Compute**. Votre instance est prête lorsque l'état est défini sur `Activé` dans le tableau. Si l'instance a été créée récemment et a un statut différent, cliquez sur le bouton « Actualiser » situé à côté du filtre de recherche.
+Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **Compute**. Votre instance est prête lorsque l’état est défini sur `Activé` dans le tableau. Si l’instance a été créée récemment et a un statut différent, cliquez sur le bouton « Actualiser » situé à côté du filtre de recherche.
 
 ![page instances](images/24-instance-connect01.png){.thumbnail}
 
-Cliquez sur le nom de l'instance dans ce tableau pour ouvrir le `Tableau de bord`{.action} sur lequel vous pouvez trouver toutes les informations concernant l'instance. Pour en savoir plus sur les fonctions disponibles sur cette page, consultez notre guide sur [la gestion des instances dans l’espace client](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
+Cliquez sur le nom de l’instance dans ce tableau pour ouvrir le `Tableau de bord`{.action} sur lequel vous pouvez trouver toutes les informations concernant l’instance. Pour en savoir plus sur les fonctions disponibles sur cette page, consultez notre guide sur [la gestion des instances dans l’espace client](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
 
-Un **utilisateur avec des droits élevés (*sudo*) est automatiquement créé** sur l'instance. Le nom d'utilisateur reflète l'image installée, par exemple « ubuntu », « debian », « fedora », etc. Vous pouvez le vérifier sur le côté droit du `Tableau de bord`{.action} dans la section **Réseaux**.
+Un **utilisateur avec des droits élevés (*sudo*) est automatiquement créé** sur l’instance. Le nom d’utilisateur reflète l’image installée, par exemple « ubuntu », « debian », « fedora », etc. Vous pouvez le vérifier sur le côté droit du `Tableau de bord`{.action} dans la section **Réseaux**.
 
 ![page instances](images/24-instance-connect02.png){.thumbnail}
 
-Si votre [paire de clés SSH est correctement configurée](#etape-1-creer-un-jeu-de-cles-ssh), vous pouvez maintenant vous connecter à l'instance avec l'utilisateur préconfiguré et votre clé SSH. Vous trouverez des instructions plus détaillées dans les paragraphes suivants.
+Si votre [paire de clés SSH est correctement configurée](#etape-1-creer-un-jeu-de-cles-ssh), vous pouvez maintenant vous connecter à l’instance avec l’utilisateur préconfiguré et votre clé SSH. Vous trouverez des instructions plus détaillées dans les paragraphes suivants.
+<!-- CP-STEPS-END:verify-instance-status -->
 
 > [!primary]
 >
@@ -414,7 +420,8 @@ Poursuivez à l'[étape 6 ci-dessous](#etape-6-premiers-pas-sur-une-nouvelle-ins
 
 ##### 5.3.1 : Terminer l'installation d'une instance Windows
 
-Après avoir vérifié que l'instance Windows est [installée](#51-verifier-letat-de-linstance-dans-lespace-client), ouvrez l'onglet `Console VNC`{.action} dans votre [espace client OVHcloud](/links/manager).
+<!-- CP-STEPS-START:windows-vnc-setup -->
+Après avoir vérifié que l’instance Windows est [installée](#51-verifier-letat-de-linstance-dans-lespace-client), ouvrez l’onglet `Console VNC`{.action} dans votre [espace client OVHcloud](/links/manager).
 
 Il vous faudra ensuite finaliser la configuration initiale de votre système d’exploitation Windows. Suivez les étapes ci-dessous en parcourant les onglets :
 
@@ -431,14 +438,15 @@ Il vous faudra ensuite finaliser la configuration initiale de votre système d�
 >>
 > 3. **Écran de connexion**
 >>
->> Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.<br><br>
+>> Windows appliquera vos paramètres, puis affichera l’écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.<br><br>
 >>![VNC](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}<br>
 >>
 > 4. **Login administrateur**
 >>
->> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur le bouton « Arrow ».<br><br>
+>> Entrez le mot de passe `Administrator` que vous avez créé à l’étape précédente et cliquez sur le bouton « Arrow ».<br><br>
 >>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:windows-vnc-setup -->
 
 ##### 5.3.2 : Connectez-vous à distance depuis Windows
 
@@ -486,6 +494,7 @@ Le logiciel libre et open source `Remmina Remote Desktop Client` est disponible 
 
 La console VNC vous permet de vous connecter à vos instances même lorsque d'autres moyens d'accès ne sont pas disponibles.
 
+<!-- CP-STEPS-START:vnc-console-access -->
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
 ![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
@@ -503,6 +512,7 @@ Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **
 >>
 >> Connectez-vous avec vos identifiants Windows. En cas de session active, vous disposez d'un accès immédiat. Il y aura une latence notable par rapport à une connexion RDP.
 >>
+<!-- CP-STEPS-END:vnc-console-access -->
 
 ### Étape 6 : premiers pas sur une nouvelle instance
 

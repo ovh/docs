@@ -109,6 +109,7 @@ Pour vous assurer de redimensionner votre disque au bon moment, il est essentiel
 
 ### Modifier la taille du disque
 
+<!-- CP-STEPS-START:modify-disk-size -->
 Cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
 
 Si le volume est attaché à une **instance Windows**, cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Détacher de l'instance`{.action}.
@@ -120,6 +121,7 @@ Cliquez sur le bouton `...`{.action} à droite du volume concerné et sélection
 Dans la fenêtre qui apparaît, indiquez la nouvelle taille du volume et cliquez sur `Modifier le volume`{.action}.
 
 ![tableau de bord](images/increase-disk-03.png){.thumbnail}
+<!-- CP-STEPS-END:modify-disk-size -->
 
 ### Etendre la partition (instance Linux)
 
@@ -217,7 +219,9 @@ Une fois cette opération terminée, détachez le volume de l'instance et rattac
 
 ### Etendre la partition (instance Windows)
 
+<!-- CP-STEPS-START:reattach-volume-windows -->
 Avant de continuer, rattachez le volume à l'instance. Cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Attacher à l'instance`{.action}.
+<!-- CP-STEPS-END:reattach-volume-windows -->
 
 Établissez une connexion RDP (Remote Desktop) sur votre instance Windows.
 

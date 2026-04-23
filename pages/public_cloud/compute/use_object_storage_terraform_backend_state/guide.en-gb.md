@@ -67,6 +67,7 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ### Creating an Object Storage container/bucket
 
+<!-- CP-STEPS-START:creating-an-object-storage-containerbucket -->
 First, you need to have an Object Storage container. If you don't already have one, you can follow the [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) tutorial.
 
 For this guide, our Object Storage container is named `terraform-state-hp`, its storage class is `High Performance` and its region is `GRA`.
@@ -74,6 +75,7 @@ For this guide, our Object Storage container is named `terraform-state-hp`, its 
 ![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
 
 In order to store your Terraform states on an Object Storage, and generally if you want to interact with the Object Storage, you need to have the rights to manage an Object Storage.
+<!-- CP-STEPS-END:creating-an-object-storage-containerbucket -->
 
 So, at this stage of this tutorial, you should have a High Performance Object Storage container and a user. You should also be able to interact with the `aws` CLI and list the OVHcloud High Performance Object Storage containers that the user is linked to:
 

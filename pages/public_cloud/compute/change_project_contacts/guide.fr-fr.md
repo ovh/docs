@@ -31,6 +31,8 @@ La modification de ces contacts permet de dissocier la gestion technique de la g
 
 ### Modifier les contacts
 
+<!-- CP-STEPS-START:change-project-contacts -->
+
 Cliquez sur `Contacts & droits`{.action} dans le menu de gauche sous **Paramètres**.
 
 Cette page vous permet de voir les contacts administrateur et facturation associés à votre projet.
@@ -50,6 +52,8 @@ Dans la nouvelle fenêtre, indiquez l'identifiant client souhaité pour chaque c
 Après avoir cliqué sur le bouton `Valider`{.action}, les deux comptes OVHcloud concernés par le changement recevront un e-mail de confirmation. Cet e-mail contient un code (token) permettant de valider le changement de contact dans l'onglet `Mes demandes`{.action} de la section **Gestion des contacts**.
 
 Pour une explication plus détaillée de cette procédure, nous vous invitons à consulter notre guide "[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-STEPS-END:change-project-contacts -->
 
 ## Aller plus loin
 

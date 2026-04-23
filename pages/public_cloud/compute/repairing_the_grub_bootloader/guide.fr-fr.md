@@ -28,7 +28,9 @@ Il est possible que vous deviez réparer le bootloader GRUB. Ce guide va vous pe
 > [!warning]
 > L'instance doit être en mode rescue (Vous pouvez consulter le guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
+<!-- CP-STEPS-START:connect-to-instance -->
 Connectez-vous sur l'instance, soit via le VNC de [l'espace client OVHcloud](/links/manager) ou via SSH.
+<!-- CP-STEPS-END:connect-to-instance -->
 
 Tapez les commandes suivantes pour monter le système de fichiers distant et démarrer la réparation de GRUB :
 

@@ -55,11 +55,13 @@ apt-get install jq
 
 ### Récupérer votre configuration openrc.sh
 
+<!-- CP-STEPS-START:fetch-openrc-sh -->
 À partir de votre [espace client OVHcloud](/links/manager), récupérez votre fichier de configuration `openrc.sh`. 
 
 Vous pouvez le retrouver via le menu OpenStack dans le panneau latéral gauche puis sous le bouton `...`{.action} sur la droite, vous trouverez le bouton `Télécharger un fichier de configuration OpenStack`{.action} 
 
 La [création d'un utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) peut s'avérer nécessaire au préalable.
+<!-- CP-STEPS-END:fetch-openrc-sh -->
 
 ### Installer le client de ligne de commande OpenStack
 

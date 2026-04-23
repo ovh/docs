@@ -65,23 +65,25 @@ Pour ce faire, vous devez configurer un `backend` dans vos fichiers de configura
 
 ## Instructions
 
-### Création d'un conteneur/bucket Object Storage
+### Création d’un conteneur/bucket Object Storage
 
+<!-- CP-STEPS-START:creating-an-object-storage-containerbucket -->
 Vous devez d’abord disposer d’un conteneur Object Storage. Si ce n’est pas le cas, suivez le tutoriel de [création d’un conteneur Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 Pour ce guide, notre conteneur Object Storage est nommé `terraform-state-hp`, sa classe de stockage est `High Performance` et sa région est `GRA`.
 
 ![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
 
-Afin de stocker vos états Terraform sur un Object Storage, et généralement si vous souhaitez interagir avec l'Object Storage, vous devez avoir les droits pour gérer un Object Storage.
+Afin de stocker vos états Terraform sur un Object Storage, et généralement si vous souhaitez interagir avec l’Object Storage, vous devez avoir les droits pour gérer un Object Storage.
 
-À cette étape de ce tutoriel, vous devez donc disposer d'un conteneur High Performance Object Storage et d'un utilisateur. Vous devez également pouvoir interagir avec la CLI aws et lister les conteneurs High Performance Object Storage d’OVHcloud auxquels l’utilisateur est lié :
+À cette étape de ce tutoriel, vous devez donc disposer d’un conteneur High Performance Object Storage et d’un utilisateur. Vous devez également pouvoir interagir avec la CLI aws et lister les conteneurs High Performance Object Storage d’OVHcloud auxquels l’utilisateur est lié :
 
 ```
 $ aws s3 ls
 2022-07-11 16:20:48 my-container
 2022-07-11 16:55:20 terraform-state-hp
 ```
+<!-- CP-STEPS-END:creating-an-object-storage-containerbucket -->
 
 ### Initialisation de la configuration de Terraform
 
