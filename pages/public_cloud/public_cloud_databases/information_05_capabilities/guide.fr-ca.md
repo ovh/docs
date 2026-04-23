@@ -51,9 +51,9 @@ See our [Valkey Capabilities and limitations](/pages/public_cloud/public_cloud_d
 
 ## Specific feature Plans
 
-### Essential
+### Essential/Discovery
 
-The Essential plan typically offers the basic features and functionalities required for managing a database.
+The Essential/Discovery plan typically offers the basic features and functionalities required for managing a database.
 It is designed for test and development environments or non-critical projects.
 
 ### Business/Production
@@ -70,7 +70,7 @@ It is dedicated to organizations with complex and high-performance database requ
 
 Here is an overview of the various plans' capabilities:
 
-| Feature           | Essential | Business/Production Single AZ | Enterprise/Advanced Single AZ | Production Multi AZ | Advanced Multi AZ |
+| Feature           | Essential/Discovery | Business/Production Single AZ | Enterprise/Advanced Single AZ | Production Multi AZ | Advanced Multi AZ |
 |-------------------|-----------|-------------------------------|-------------------------------|---------------------|-------------------|
 | SLA               | None      | 99.9%                         | 99.95%                        | 99.95%              | 99.99%            |
 | High availability |           | ✓                             | ✓                             | ✓                   | ✓                 |

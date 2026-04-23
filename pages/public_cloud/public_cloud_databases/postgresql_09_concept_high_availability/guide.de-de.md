@@ -15,7 +15,7 @@ Public Cloud Databases for PostgreSQL are available on three service plans, offe
 
 | Service plan        | Cluster topology                         | High Availability Features             | Backup retention |
 |---------------------|------------------------------------------|----------------------------------------|------------------|
-| Essential           | Single-node                              | No high availability                   | 2 days           |
+| Essential/Discovery | Single-node                              | No high availability                   | 2 days           |
 | Business/Production | Two nodes: Primary + replica             | Higher availability                    | 14 days          |
 | Enterprise/Advanced | Three nodes: One primary +  two replicas | Best high availability characteristics | 30 days          |
 
@@ -73,9 +73,9 @@ The table below summarizes the scenarios detailed in the following paragraphs.
 | Datacenter outage (backups in same DC)     | **RPO**: depends of manual backups made by the customer. **RTO**: multiple hours/days (time to restore your backup) | **RPO**: depends of manual backups made by the customer. **RTO**: depends of customer actions            |
 | Datacenter outage (backups in another DC)  | **RPO**: approx. 5 minutes or 1 WAL file. **RTO**: multiple hours/days (time to restore your backup)           | **RPO**: approx. 5 minutes or 1 WAL file. **RTO:** multiple hours/days (time to restore your backup) |
 
-### Scenarios for Essential service plans with single-node
+### Scenarios for Essential/Discovery service plans with single-node
 
-Essential plans provide a single node : there is no replica.
+Essential/Discovery plans provide a single node : there is no replica.
 
 #### Node failure
 

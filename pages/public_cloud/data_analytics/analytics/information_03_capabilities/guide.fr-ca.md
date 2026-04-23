@@ -36,9 +36,9 @@ See our [OpenSearch Capabilities and limitations](/pages/public_cloud/public_clo
 
 ## Specific feature Plans
 
-### Essential
+### Essential/Discovery
 
-The Essential plan typically offers the basic features and functionalities required for managing a database.
+The Essential/Discovery plan typically offers the basic features and functionalities required for managing a database.
 It is designed for test and development environments or non-critical projects.
 
 ### Business
@@ -55,7 +55,7 @@ It is dedicated to organizations with complex and high-performance database requ
 
 Here is an overview of the various plans' capabilities:
 
-| Feature           | Essential | Business | Enterprise |
+| Feature           | Essential/Discovery | Business | Enterprise |
 |-------------------|-----------|----------|------------|
 | SLA               | None      | 99.9%    | 99.95%     |
 | High availability |           | ✓        | ✓          |
