@@ -1,26 +1,32 @@
 ---
 title: "Public VCF as-a-Service - Rôles utilisateurs"
 excerpt: "Explorez les différents rôles utilisateurs disponibles et apprenez à les utiliser au sein de votre organisation Public VCF as-a-Service."
-updated: 2026-04-21
+updated: 2026-04-23
 ---
 
 ## Objectif
 
-**Explorez les différents rôles utilisateurs disponibles et apprenez à les utiliser au sein de votre organisation Public VCF as-a-Service..**
+**Ce guide vous explique les différents rôles utilisateurs disponibles dans votre organisation Public VCF as-a-Service.**
 
 ## Prérequis
 
-- Posséder une offre [Public VCF as-a-Service](https://docs.ovh.com/fr/hosted-private-cloud/vmware-vcd/).
-- Être administrateur technique de votre solution [VMware vSphere on OVHcloud](https://docs.ovh.com/fr/hosted-private-cloud/vmware/).
+- Posséder une offre [Public VCF as-a-Service](/links/hosted-private-cloud/vmware-vcd).
+- Être administrateur technique de votre solution [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware).
 
-## Accès à l'espace client OVHcloud
+<!-- CP-NAV-START:privatecloud-vmware-vcf -->
+---
 
-- **Lien direct :** [VMware Cloud Foundation](https://docs.ovh.com/fr/control-panel/privatecloud-vmware-vcf)
-- **Pour accéder à vos services :** `Hosted Private Cloud` > `Public VCF as-a-Service` > Sélectionnez votre service VCF
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware Cloud Foundation](/links/control-panel/privatecloud-vmware-vcf)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Public VCF as-a-Service`{.action} > Sélectionnez votre service VCF
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vcf -->
 
 ## En pratique
 
-Pour vous offrir un contrôle plus granulaire et une flexibilité accrue dans la gestion de vos ressources, différents rôles sont disponibles :
+Pour un contrôle plus granulaire et une flexibilité accrue dans la gestion de vos ressources, différents rôles sont disponibles :
 
 ### Organization Administrator
 
@@ -28,7 +34,7 @@ Pour vous offrir un contrôle plus granulaire et une flexibilité accrue dans la
 - Gestion des ressources : Peut gérer les ressources allouées à l'organisation, telles que les vApps, les VMs, les réseaux, et les catalogues.
 - Attribution des rôles : Peut attribuer des rôles et des permissions aux utilisateurs et aux groupes.
 - Configuration des paramètres : Peut configurer les paramètres de l'organisation, tels que les politiques de sauvegarde, les quotas, et les paramètres de sécurité.
-- Accès complet : A un accès complet à toutes les fonctionnalités et ressources de l'organisation, sauf celles réservées aux administrateurs système (System Administrators).
+- Accès complet : À un accès complet à toutes les fonctionnalités et ressources de l'organisation, sauf celles réservées aux administrateurs système (System Administrators).
 
 ### Catalog Author
 
@@ -64,14 +70,14 @@ Pour vous offrir un contrôle plus granulaire et une flexibilité accrue dans la
 ### Procédure pour attribuer un rôle
 
 1. Connectez-vous au portail VCF as-a-Service en tant qu'Organization Admin.
-2. Accédez à la section "Administration".
-3. Sélectionnez "Utilisateurs" et choisissez l'utilisateur que vous souhaitez modifier.
+2. Accédez à la section « Administration ».
+3. Sélectionnez « Utilisateurs » et choisissez l'utilisateur à modifier.
 4. Attribuez le rôle souhaité à partir de la liste des rôles disponibles.
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](https://docs.ovh.com/fr/professional-services/).
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
 
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
+Posez vos questions et interagissez avec l’équipe Hosted Private Cloud sur le [Discord OVHcloud](https://discord.gg/ovhcloud).
 
-Échangez avec notre [communauté d'utilisateurs](https://docs.ovh.com/fr/community/).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
