@@ -23,7 +23,7 @@ Before starting the order, prepare the following:
 
 ## Order via the OVHcloud Control Panel
 
-1. **Log in** to the [OVHcloud Control Panel](https://www.ovh.com/manager/).
+1. **Log in** to the [OVHcloud Control Panel](/links/manager).
 2. Go to **Network** → **OVHcloud Connect**.
 3. Click **Order a new connection**.
 4. Select **Direct Connection**.
@@ -48,7 +48,7 @@ import ovh
 
 client = ovh.Client(endpoint='ovh-eu')
 
-# Example: list available OVHcloud Connect offers
+# Example: list your existing OVHcloud Connect services
 # Check the API console for the exact endpoint and parameters
 result = client.get('/ovhCloudConnect')
 print(result)
@@ -110,8 +110,8 @@ print(result)
 ## What's next?
 
 - [Receive and use your LOA](3.11_cross_connect_loa.md)
-- [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md)
-- [Associate with your vRack](3.8_associate_vrack.md)
+- [Configure OCC L3 with BGP](3.7_occ_l3_bgp.md)
+- [Associate with your vRack](3.5_associate_vrack.md)
 
 ## Go further
 
