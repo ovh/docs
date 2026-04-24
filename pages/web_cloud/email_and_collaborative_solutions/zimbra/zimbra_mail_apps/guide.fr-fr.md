@@ -6,7 +6,7 @@ updated: 2026-04-22
 
 ## Objectif
 
-Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collaborative open source offrant toutes les fonctionnalités nécessaires à une utilisation professionnelle. Ce guide vous aide à choisir la méthode de configuration adaptée à votre offre Zimbra et à votre logiciel de messagerie.
+Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collaborative open source avec toutes les fonctionnalités nécessaires à un usage professionnel. Ce guide vous aide à choisir la méthode de configuration adaptée à votre offre Zimbra et à votre logiciel de messagerie.
 
 **Découvrez quelle méthode choisir pour configurer votre compte e-mail Zimbra sur le logiciel de messagerie de votre choix.**
 
@@ -31,22 +31,22 @@ Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collabor
 
 ### Identifier votre offre Zimbra <a name="identifier-offre"></a>
 
-La méthode de configuration à utiliser dépend de votre offre Zimbra. Les deux offres ne supportent pas les mêmes protocoles.
+La méthode de configuration à utiliser dépend de votre offre Zimbra. Les deux offres ne prennent pas en charge les mêmes protocoles.
 
-| Offre | Protocoles supportés | Fonctionnalités synchronisées |
+| Offre | Protocoles pris en charge | Fonctionnalités synchronisées |
 |---|---|---|
 | **Zimbra Starter** | IMAP, POP, SMTP | E-mails uniquement |
 | **Zimbra Pro** | IMAP, POP, SMTP, **ActiveSync**, **EWS** | E-mails, calendrier, contacts, tâches |
 
 > [!primary]
 >
-> Pour identifier votre offre, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action} puis `Emails`{.action}, et sélectionnez votre service Zimbra. L'offre est indiquée dans les informations du service.
+> Pour identifier votre offre, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action} puis `Zimbra Mail`{.action}. Dans l'onglet `Compte email`{.action}, l'offre est indiquée dans la colonne **Offre** de chaque compte.
 
 ### Configurer un compte Zimbra Pro <a name="config-zimbra-pro"></a>
 
 > [!success]
 >
-> Pour tirer pleinement parti des fonctionnalités collaboratives de Zimbra Pro (synchronisation du calendrier, des contacts et des tâches), utilisez les protocoles **ActiveSync** ou **EWS** via les guides dédiés ci-dessous. La configuration IMAP/POP reste possible mais ne synchronisera que les e-mails.
+> Pour tirer pleinement parti des fonctionnalités collaboratives de Zimbra Pro (synchronisation du calendrier, des contacts et des tâches), utilisez les protocoles **ActiveSync** ou **EWS** via les guides dédiés ci-dessous. La configuration IMAP/POP reste possible, mais ne synchronise que les e-mails.
 
 Cliquez sur l'onglet correspondant au type d'appareil que vous utilisez :
 
@@ -71,9 +71,9 @@ Cliquez sur l'onglet correspondant au type d'appareil que vous utilisez :
 >> - [Outlook via ActiveSync](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_app_android)
 >>
 
-### Configurer un compte Zimbra Starter (ou en IMAP/POP) <a name="mail-config"></a>
+### Configurer un compte Zimbra Starter (ou un compte Zimbra Pro en IMAP/POP) <a name="mail-config"></a>
 
-Pour l'offre **Zimbra Starter**, ou si vous préférez une configuration IMAP/POP avec votre compte **Zimbra Pro**, utilisez les guides ci-dessous.
+Pour l'offre **Zimbra Starter**, ou si vous préférez une configuration IMAP/POP pour votre compte **Zimbra Pro**, utilisez les guides ci-dessous.
 
 > [!primary]
 >
@@ -109,7 +109,7 @@ Cliquez sur l'onglet correspondant au type d'appareil que vous utilisez :
 
 ### Utiliser l'application mobile Zimbra <a name="config-zimbra-app"></a>
 
-Compatible avec les offres **Zimbra Starter** et **Zimbra Pro**, l'application mobile Zimbra (Android et iOS) permet d'accéder à votre compte en utilisant le protocole natif de Zimbra.
+Compatible avec les offres **Zimbra Starter** et **Zimbra Pro**, l'application mobile Zimbra (Android et iOS) permet d'accéder à votre compte via le protocole natif de Zimbra.
 
 - [Configurer l'application mobile Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/mail_app_zimbra_for_android_ios)
 
@@ -119,7 +119,7 @@ Si votre logiciel de messagerie nécessite une configuration manuelle, utilisez 
 
 #### Serveurs de réception
 
-Pour la réception des e-mails, nous vous recommandons l'usage du protocole **IMAP**. Le protocole **POP** reste disponible. Cliquez sur l'onglet correspondant au protocole de votre choix :
+Pour la réception des e-mails, nous recommandons le protocole **IMAP**. Le protocole **POP** reste disponible. Cliquez sur l'onglet correspondant au protocole de votre choix :
 
 > [!tabs]
 > **IMAP (recommandé)**
@@ -127,7 +127,7 @@ Pour la réception des e-mails, nous vous recommandons l'usage du protocole **IM
 >> - **Nom d'utilisateur** : adresse e-mail **complète**
 >> - **Mot de passe** : mot de passe de l'adresse e-mail
 >> - **Serveur EUROPE (entrant)** : `imap.mail.ovh.net` **ou** `ssl0.ovh.net`
->> - **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : `imap.mail.ovh.ca`
+>> - **Serveur AMÉRIQUE/ASIE-PACIFIQUE (entrant)** : `imap.mail.ovh.ca`
 >> - **Port** : 993
 >> - **Type de sécurité** : SSL/TLS
 >>
@@ -136,7 +136,7 @@ Pour la réception des e-mails, nous vous recommandons l'usage du protocole **IM
 >> - **Nom d'utilisateur** : adresse e-mail **complète**
 >> - **Mot de passe** : mot de passe de l'adresse e-mail
 >> - **Serveur EUROPE (entrant)** : `pop.mail.ovh.net` **ou** `ssl0.ovh.net`
->> - **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : `pop.mail.ovh.ca`
+>> - **Serveur AMÉRIQUE/ASIE-PACIFIQUE (entrant)** : `pop.mail.ovh.ca`
 >> - **Port** : 995
 >> - **Type de sécurité** : SSL/TLS
 >>
@@ -148,7 +148,7 @@ Pour l'envoi des e-mails, utilisez les paramètres **SMTP** suivants :
 - **Nom d'utilisateur** : adresse e-mail **complète**
 - **Mot de passe** : mot de passe de l'adresse e-mail
 - **Serveur EUROPE (sortant)** : `smtp.mail.ovh.net` **ou** `ssl0.ovh.net`
-- **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : `smtp.mail.ovh.ca`
+- **Serveur AMÉRIQUE/ASIE-PACIFIQUE (sortant)** : `smtp.mail.ovh.ca`
 - **Port** : 465
 - **Type de sécurité** : SSL/TLS
 
