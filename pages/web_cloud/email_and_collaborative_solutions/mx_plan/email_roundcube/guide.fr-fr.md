@@ -136,7 +136,7 @@ Cette fenêtre est présentée sous une forme qui peut être personnalisée. Pou
 
 Quatre paramètres sont configurables :
 
-- **Disposition** : détermine la disposition des fenêtres de gestion d'un compte e-mail. Trois options :
+- **Disposition** : définit l'agencement des fenêtres de gestion d'un compte e-mail. Trois options :
     - `Écran large`{.action} (*Widescreen*) : trois panneaux côte à côte — dossiers, liste des e-mails et volet de lecture alignés horizontalement ;
     - `Bureau`{.action} (*Desktop*) : liste des e-mails en haut, volet de lecture en dessous (disposition classique) ;
     - `Liste`{.action} (*List*) : pas de volet de lecture — les e-mails s'ouvrent en pleine fenêtre au clic.
@@ -191,7 +191,7 @@ Cliquez sur la flèche située à droite de la loupe pour afficher les filtres d
 
 Lorsqu'un e-mail est sélectionné dans la liste, celui-ci s'affiche dans la fenêtre inférieure.
 
-Retrouvez les raccourcis, sur la droite, des fonctions ci-dessous :
+Sur la droite, retrouvez les raccourcis des fonctions ci-dessous :
 
 - `Afficher au format HTML`{.action} (par défaut)
 - `Afficher au format texte en clair`{.action}
@@ -396,7 +396,7 @@ Depuis l'onglet `Courriel`{.action} dans la barre supérieure, cliquez sur `Réd
 Dans la fenêtre de rédaction d'un e-mail, on retrouve les champs suivants :
 
 - **De** : choisir une [identité](#identity) pour définir l'expéditeur.
-- **À** : ajouter des destinataires et/ou un [groupe de destinataires](#group). Utilisez le bouton `+`{.action} à droite du champ pour saisir plusieurs adresses.
+- **À** : ajouter des destinataires et/ou un [groupe de destinataires](#group). Le bouton `+`{.action} à droite du champ permet de saisir plusieurs adresses.
 
 > [!primary]
 >
