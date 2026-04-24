@@ -67,7 +67,7 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
 - [Carnet de contacts](#contact-book)
     - [Groupes](#group)
     - [Contacts](#contacts)
-    - [Importer des Contacts](#import-contacts)
+    - [Importer des contacts](#import-contacts)
     - [Exporter les contacts](#export-contacts)
 - [Réponses (gabarits)](#responses)
 - [Ajouter un répondeur ou réponse automatique](#automatic-respond)
@@ -143,7 +143,7 @@ Quatre paramètres sont configurables :
 
 - **Colonnes de la liste** : cases à cocher déterminant les colonnes affichées dans la liste des e-mails. Les colonnes **Sujet** et **Fils de discussion** sont toujours visibles. Colonnes optionnelles disponibles : `De`{.action}, `Pour`{.action}, `De/Pour`{.action}, `Répondre à`{.action}, `Copie`{.action}, `Date`{.action}, `Taille`{.action}, `État lu`{.action}, `Pièces jointes`{.action}, `Indicateur`{.action}, `Priorité`{.action}.
 
-- **Colonne de tri** : choisit la colonne utilisée pour le tri par défaut. Options disponibles : `Aucun`{.action}, `Date d'arrivée`{.action}, `Date d'envoi`{.action}, `Sujet`{.action}, `De`{.action}, `Pour`{.action}, `De/Pour`{.action}, `Copie`{.action} ou `Taille`{.action}.
+- **Colonne de tri** : permet de choisir la colonne de tri par défaut. Options disponibles : `Aucun`{.action}, `Date d'arrivée`{.action}, `Date d'envoi`{.action}, `Sujet`{.action}, `De`{.action}, `Pour`{.action}, `De/Pour`{.action}, `Copie`{.action} ou `Taille`{.action}.
 
 - **Ordre de tri** : ascendant ou descendant.
 
@@ -183,7 +183,7 @@ Lorsqu'un e-mail est sélectionné, il est possible d'agir sur celui-ci. Voici l
 
 Un outil de recherche est disponible dans la partie supérieure droite de l'interface.
 
-Saisissez un terme dans le champ de recherche, puis validez avec la touche `Entrée` : Roundcube effectue par défaut la recherche sur l'ensemble du dossier courant.
+Saisissez un terme dans le champ de recherche, puis validez avec la touche `Entrée`{.action} : Roundcube effectue par défaut la recherche sur l'ensemble du dossier courant.
 
 Cliquez sur la flèche située à droite de la loupe pour afficher les filtres de recherche : vous pouvez restreindre la recherche à certains champs (sujet, corps du message, expéditeur, destinataires, etc.) ou étendre sa portée à tous les dossiers.
 
@@ -191,7 +191,7 @@ Cliquez sur la flèche située à droite de la loupe pour afficher les filtres d
 
 Lorsqu'un e-mail est sélectionné dans la liste, celui-ci s'affiche dans la fenêtre inférieure.
 
-Retrouvez les raccourcis, sur la droite, des fonctions suivantes :
+Retrouvez les raccourcis, sur la droite, des fonctions ci-dessous :
 
 - `Afficher au format HTML`{.action} (par défaut)
 - `Afficher au format texte en clair`{.action}
@@ -213,7 +213,7 @@ Les chapitres suivants de ce guide correspondent aux onglets qui composent la pa
 Définissez ici la `langue` d'usage de l'interface Roundcube, le `fuseau horaire`, le `format horaire` et le `format de date`.
 
 L'option `Jolies dates` permet d'afficher la date de réception/d'envoi avec des termes relatifs tels qu’« Aujourd’hui », « Hier », etc.<br>
-**Par exemple** : nous sommes le **19/05/2022**, un e-mail envoyé/reçu le **17/05/2022** à **17:38** sera affiché **Mar 17:38**, car l'email correspond au mardi qui précède.
+**Par exemple** : nous sommes le **19/05/2022**, un e-mail envoyé/reçu le **17/05/2022** à **17:38** sera affiché **Mar 17:38**, car l'e-mail correspond au mardi qui précède.
 
 La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quel que soit l'ordre de tri.
 
@@ -250,11 +250,11 @@ Nous ne conseillons pas de les modifier mais il est possible d'attribuer le comp
 
 #### Paramètres du serveur <a name="server-settings"></a>
 
-Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En effet, l'option `Vider la corbeille à la déconnexion` permet d'éviter le cumul des éléments qui ont été supprimés. L'option `Supprimer directement les pourriels` supprimera automatiquement tous les e-mail considérés comme SPAM.
+Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En effet, l'option `Vider la corbeille à la déconnexion` permet d'éviter le cumul des éléments qui ont été supprimés. L'option `Supprimer directement les pourriels` supprimera automatiquement tous les e-mails considérés comme spam.
 
 > [!warning]
 > 
-> Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « SPAM ») se retrouverait déclaré comme SPAM pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
+> Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « spam ») se retrouverait déclaré comme spam pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
 
 #### Chiffrement <a name="encryption"></a>
 
@@ -286,7 +286,7 @@ Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, 
 
 > [!alert]
 >
-> Compléter la case **Courriel** par une adresse e-mail différente de celle sur laquelle vous êtes connecté est considéré comme une usurpation d'identité électronique (*spoofing*). L'adresse IP utilisée pour l'envoi risque d'être « bannie » et/ou considérée comme « SPAM » auprès de vos destinataires.
+> Compléter la case **Courriel** par une adresse e-mail différente de celle sur laquelle vous êtes connecté est considéré comme une usurpation d'identité électronique (*spoofing*). L'adresse IP utilisée pour l'envoi risque d'être « bannie » et/ou considérée comme « spam » auprès de vos destinataires.
 
 #### Ajouter une signature <a name="signature"></a>
 
@@ -346,7 +346,7 @@ Complétez ensuite les informations du contact.
 > [!primary]
 > Vous pouvez ajouter des champs supplémentaires via le menu déroulant `Ajouter un champ...`{.action}, situé sous les champs `Prénom` et `Adresse`.
 
-#### Importer des Contacts <a name="import-contacts"></a>
+#### Importer des contacts <a name="import-contacts"></a>
 
 Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `importer`{.action} pour ouvrir la fenêtre d'importation.
 

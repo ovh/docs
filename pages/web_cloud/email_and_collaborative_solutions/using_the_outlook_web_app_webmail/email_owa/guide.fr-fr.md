@@ -75,7 +75,7 @@ Pour consulter vos e-mails, sélectionnez un dossier sur le côté gauche. Les e
 
 ![useowa](images/use-owa-step5.png){.thumbnail}
 
-Pour lire un e-mail, sélectionnez son dossier si nécessaire. Cliquez ensuite sur l’e-mail pour afficher son contenu dans le volet de lecture. Les messages non lus apparaissent en gras afin de les distinguer de ceux qui ont été lus.
+Pour lire un e-mail, sélectionnez son dossier si nécessaire. Cliquez ensuite sur l’e-mail pour afficher son contenu dans le volet de lecture. Les messages non lus apparaissent en gras pour les distinguer des messages lus.
 
 ![useowa](images/use-owa-step6.png){.thumbnail}
 
@@ -87,7 +87,7 @@ En haut à droite de la liste des messages, le bouton `Filtrer`{.action} ouvre u
 
 - **Trier par** : survolez l'entrée `Trier par`{.action} pour choisir le critère de classement des e-mails : **Date**, **De**, **À**, **Objet**, **Pièces jointes**, **Importance** ou **Taille**. La flèche à gauche du critère indique l'ordre courant ; cliquez à nouveau sur le même critère pour l'inverser.
 
-- **Afficher comme** : survolez l'entrée `Afficher comme`{.action} pour basculer entre l'affichage **Messages** pour un e-mail par ligne ou **Conversations** pour regrouper les e-mails d'un même fil de discussion.
+- **Afficher comme** : survolez l'entrée `Afficher comme`{.action} pour basculer entre l'affichage **Messages** (un e-mail par ligne) ou **Conversations** (e-mails regroupés par fil de discussion).
 
 ### Envoyer et répondre
 
@@ -121,7 +121,7 @@ Pour créer un nouveau dossier, faites un clic droit sur le nom de votre adresse
 #### Déplacer des e-mails
 
 Pour **déplacer un e-mail**, vous pouvez simplement le glisser-déposer dans le dossier cible ou faire un clic droit et sélectionner `Déplacer`{.action}.
-Pour simultanément **déplacer plusieurs e-mails**, sélectionnez-les tous grâce à leur case à cocher. Ensuite cliquez sur `Déplacer`{.action} (sur le côté droit) ou sur `Déplacer vers`{.action} (dans la section supérieure). Choisissez ensuite le dossier de destination.
+Pour simultanément **déplacer plusieurs e-mails**, sélectionnez-les tous grâce à leur case à cocher. Ensuite, cliquez sur `Déplacer`{.action} (sur le côté droit) ou sur `Déplacer vers`{.action} (dans la section supérieure). Choisissez ensuite le dossier de destination.
 
 ![useowa](images/use-owa-step11.png){.thumbnail}
 
@@ -135,7 +135,7 @@ Pour créer et gérer des règles, cliquez d’abord sur l'icône d'engrenage en
 
 Dans la nouvelle page qui s’ouvre, cliquez sur `Règles de boîte de réception et de rangement`{.action} qui se trouve dans le menu de gauche. Dans l’arborescence « Options », vous pouvez trouver cette fonctionnalité dans « Courrier », sous « Traitement automatique ». Ici, vous pouvez créer, modifier et déplacer des règles de la liste. 
 
-Pour ajouter une nouvelle règle, cliquez sur le bouton `+`{.action}
+Pour ajouter une nouvelle règle, cliquez sur le bouton `+`{.action}.
 
 ![useowa](images/use-owa-step13.png){.thumbnail}
 
