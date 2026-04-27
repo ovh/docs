@@ -1,5 +1,5 @@
 ---
-title: "Configuring IP Aliasing on a Dedicated Server"
+title: "Configure IP Aliasing on a Dedicated Server"
 excerpt: "Add and configure Additional IP addresses on your OVHcloud dedicated server for multi-site or service hosting."
 updated: 2025-12-04
 ---

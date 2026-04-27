@@ -1,5 +1,5 @@
 ---
-title: "Securing a Dedicated Server with a Memcached service"
+title: "Secure a Dedicated Server with a Memcached service"
 excerpt: "Secure the Memcached service on your dedicated server to prevent unauthorised remote access and data exposure."
 updated: 2018-03-02
 ---

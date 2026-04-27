@@ -1,5 +1,5 @@
 ---
-title: "Configuring Anti-DDoS for Solana on Dedicated Servers"
+title: "Configure Anti-DDoS for Solana on Dedicated Servers"
 excerpt: "Leverage the OVHcloud Anti-DDoS infrastructure to protect your Solana nodes on dedicated servers without harming functionality."
 updated: 2025-10-13
 ---

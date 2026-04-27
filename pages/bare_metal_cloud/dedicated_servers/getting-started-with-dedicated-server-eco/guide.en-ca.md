@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with a Kimsufi, So You Start or Rise Server"
+title: "Get Started with a Kimsufi, So You Start or Rise Server"
 excerpt: "Manage your Kimsufi, So You Start, or Rise server from the OVHcloud Control Panel: install an OS, set up SSH, and secure your service."
 updated: 2025-04-29
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Changing a Windows Server Product Key (Dedicated)"
+title: "Change a Windows Server Product Key (Dedicated)"
 excerpt: "Change or activate the Windows Server product key on your OVHcloud dedicated server after installation or reinstallation."
 updated: 2026-01-06
 ---

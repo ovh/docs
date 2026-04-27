@@ -1,5 +1,5 @@
 ---
-title: "Enabling AMD SME/SEV on a Dedicated Server (Ubuntu)"
+title: "Enable AMD SME/SEV on a Dedicated Server (Ubuntu)"
 excerpt: "Enable SME on your ubuntu server and spawn an SEV virtual machine"
 updated: 2020-05-07
 ---

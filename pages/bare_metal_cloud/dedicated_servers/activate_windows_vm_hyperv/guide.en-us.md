@@ -1,5 +1,5 @@
 ---
-title: "Activating Windows VMs with Hyper-V on a Dedicated Server"
+title: "Activate Windows VMs with Hyper-V on a Dedicated Server"
 excerpt: "Create and activate Windows virtual machines using Hyper-V on an OVHcloud-licensed Windows Server dedicated server."
 updated: 2024-10-30
 ---

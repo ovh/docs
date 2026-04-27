@@ -1,5 +1,5 @@
 ---
-title: "Installing CUDA on a Dedicated Server with GPU"
+title: "Install CUDA on a Dedicated Server with GPU"
 updated: 2017-12-14
 ---
 

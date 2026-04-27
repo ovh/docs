@@ -1,5 +1,5 @@
 ---
-title: "Understanding the Dedicated Server boot process"
+title: "Understand the Dedicated Server boot process"
 excerpt: "Learn how OVHcloud dedicated servers boot and why PXE must remain first in the boot order"
 updated: 2026-02-06
 ---

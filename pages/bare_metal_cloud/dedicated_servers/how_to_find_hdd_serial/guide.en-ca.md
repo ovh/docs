@@ -1,5 +1,5 @@
 ---
-title: "Finding a Hard Disk Serial Number on a Dedicated Server"
+title: "Find a Hard Disk Serial Number on a Dedicated Server"
 excerpt: "Retrieve the serial number of a hard disk on your dedicated server to identify it for a replacement request."
 updated: 2018-08-21
 ---

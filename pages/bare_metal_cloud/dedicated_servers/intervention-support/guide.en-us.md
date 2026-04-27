@@ -1,5 +1,5 @@
 ---
-title: "Finalising a Maintenance Intervention on a Dedicated Server"
+title: "Finalise a Maintenance Intervention on a Dedicated Server"
 excerpt: "Complete the required actions on your dedicated server after an OVHcloud maintenance intervention to restore full service."
 updated: 2026-03-20
 ---

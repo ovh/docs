@@ -1,5 +1,5 @@
 ---
-title: "Managing Dedicated Server Bandwidth via the OVHcloud API"
+title: "Manage Dedicated Server Bandwidth via the OVHcloud API"
 excerpt: "Upgrade or downgrade the public bandwidth allocation on your dedicated server using the OVHcloud API."
 updated: 2025-01-20
 ---

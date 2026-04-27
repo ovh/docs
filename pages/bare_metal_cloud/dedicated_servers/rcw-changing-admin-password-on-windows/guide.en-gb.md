@@ -1,5 +1,5 @@
 ---
-title: "Resetting a Windows Password on a Dedicated Server"
+title: "Reset a Windows Password on a Dedicated Server"
 excerpt: "Reset the Windows Administrator password on a dedicated server using the OVHcloud Windows customer rescue system."
 updated: 2025-10-22
 ---

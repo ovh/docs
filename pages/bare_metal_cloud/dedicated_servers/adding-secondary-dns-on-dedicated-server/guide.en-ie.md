@@ -1,5 +1,5 @@
 ---
-title: "Configuring OVHcloud Secondary DNS on a Dedicated Server"
+title: "Configure OVHcloud Secondary DNS on a Dedicated Server"
 excerpt: "Add a secondary DNS server for your domain name hosted on an OVHcloud dedicated server for improved DNS resilience."
 updated: 2021-01-08
 ---

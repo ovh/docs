@@ -1,5 +1,5 @@
 ---
-title: "Managing Dedicated Server Reboot with Link Aggregation"
+title: "Manage Dedicated Server Reboot with Link Aggregation"
 excerpt: "Reboot your OVHcloud dedicated server over a fully private network using the OVHcloud Link Aggregation feature."
 updated: 2026-01-27
 ---

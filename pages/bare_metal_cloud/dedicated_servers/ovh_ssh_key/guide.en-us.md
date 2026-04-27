@@ -1,5 +1,5 @@
 ---
-title: "Installing an OVHcloud SSH Key on a Dedicated Server"
+title: "Install an OVHcloud SSH Key on a Dedicated Server"
 excerpt: "Install an OVHcloud SSH key on your dedicated server to grant secure administrative access to OVHcloud support teams."
 updated: 2018-02-12
 ---

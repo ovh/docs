@@ -1,5 +1,5 @@
 ---
-title: "Securing Your ESXi Dedicated Server"
+title: "Secure Your ESXi Dedicated Server"
 excerpt: "Discover the various ways you can effectively secure your ESXi dedicated server"
 updated: 2026-01-09
 ---

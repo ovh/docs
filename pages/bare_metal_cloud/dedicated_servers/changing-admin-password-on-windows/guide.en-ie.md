@@ -1,5 +1,5 @@
 ---
-title: "Changing the admin password on a Windows Dedicated Server"
+title: "Change the admin password on a Windows Dedicated Server"
 excerpt: "Reset the Administrator password on a Windows dedicated server using OVHcloud rescue mode when you are locked out."
 updated: 2024-06-26
 flag: hidden

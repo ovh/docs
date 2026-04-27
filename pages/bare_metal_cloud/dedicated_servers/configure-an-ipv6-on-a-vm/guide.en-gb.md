@@ -1,5 +1,5 @@
 ---
-title: "Configuring IPv6 on a VM on a Dedicated Server"
+title: "Configure IPv6 on a VM on a Dedicated Server"
 excerpt: "Configure an IPv6 address on a Proxmox VE or Hyper-V virtual machine running on an OVHcloud dedicated server."
 updated: 2024-10-18
 ---

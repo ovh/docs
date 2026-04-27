@@ -1,5 +1,5 @@
 ---
-title: "Configuring Jumbo Frames in vRack on Dedicated Servers"
+title: "Configure Jumbo Frames in vRack on Dedicated Servers"
 excerpt: "Configure Jumbo Frames (MTU 9000) in your OVHcloud vRack to optimise network throughput between dedicated servers."
 updated: 2020-08-17
 ---

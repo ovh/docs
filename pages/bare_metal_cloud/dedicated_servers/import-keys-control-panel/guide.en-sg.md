@@ -1,5 +1,5 @@
 ---
-title: "Storing Dedicated Server SSH Keys in the Control Panel"
+title: "Store Dedicated Server SSH Keys in the Control Panel"
 excerpt: "Import and manage your public SSH keys in the OVHcloud Control Panel for quick deployment to dedicated servers."
 updated: 2024-12-04
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Replacing a Defective Disk on a Dedicated Server"
+title: "Replace a Defective Disk on a Dedicated Server"
 excerpt: "Identify a defective disk on your OVHcloud dedicated server and request a replacement through the Control Panel."
 updated: 2018-06-21
 ---

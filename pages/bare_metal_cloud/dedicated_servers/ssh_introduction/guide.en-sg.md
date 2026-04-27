@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with SSH on a Dedicated Server"
+title: "Get Started with SSH on a Dedicated Server"
 excerpt: "Connect to your OVHcloud server via SSH from Windows, macOS, or Linux using password or key authentication."
 updated: 2024-12-03
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Configuring IPv6 on Dedicated Servers"
+title: "Configure IPv6 on Dedicated Servers"
 excerpt: "Configure IPv6 addresses on your OVHcloud dedicated server with examples for major Linux distributions and Windows."
 updated: 2026-04-13
 ---

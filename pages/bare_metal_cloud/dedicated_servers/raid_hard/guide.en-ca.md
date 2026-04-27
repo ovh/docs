@@ -1,5 +1,5 @@
 ---
-title: "Managing Hardware RAID on a Dedicated Server"
+title: "Manage Hardware RAID on a Dedicated Server"
 excerpt: "Verify the state of your hardware RAID controller and monitor hard drive health on your OVHcloud dedicated server."
 updated: 2025-03-19
 ---

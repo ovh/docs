@@ -1,5 +1,5 @@
 ---
-title: "Uninstalling RTM v2 Monitoring on a Dedicated Server"
+title: "Uninstall RTM v2 Monitoring on a Dedicated Server"
 excerpt: "Remove the deprecated RTM v2 monitoring system from your OVHcloud dedicated server on CentOS, Debian, Fedora, or Ubuntu."
 updated: 2023-06-20
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Managing vRack Private Bandwidth via the OVHcloud API"
+title: "Manage vRack Private Bandwidth via the OVHcloud API"
 excerpt: "Upgrade or downgrade the private vRack bandwidth on your dedicated server using the OVHcloud API."
 updated: 2025-01-20
 ---
