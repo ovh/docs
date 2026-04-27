@@ -1,6 +1,6 @@
 ---
-title: "Bare Metal Server - Zuweisen von Tags im OVHcloud Kundencenter"
-excerpt: "Erfahren Sie, wie Sie über das OVHcloud Kundencenter Tags für jeden Dedicated Server erstellen und ändern"
+title: "Bare Metal Server - Tags im OVHcloud Kundencenter zuweisen"
+excerpt: "Erstellen und weisen Sie Ihren OVHcloud Dedicated Servern im Kundencenter Tags zu, um Ihre Ressourcen strukturiert zu verwalten."
 updated: 2025-07-01
 ---
 

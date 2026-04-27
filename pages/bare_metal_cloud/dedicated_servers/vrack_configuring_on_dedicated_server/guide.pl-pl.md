@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja kilku serwerów dedykowanych w sieci vRack'
-excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vRack'
+title: "Konfiguracja vRack na serwerach dedykowanych"
+excerpt: "Skonfiguruj sieć prywatną OVHcloud vRack na serwerach dedykowanych za pomocą Panelu klienta i API."
 updated: 2026-02-20
 ---
 
@@ -341,4 +341,8 @@ Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużyw
 
 [Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
+- [Konfiguracja bloku IP w sieci vRack na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
+- [Bare Metal 3-AZ Region - Prezentacja oferty](/pages/bare_metal_cloud/dedicated_servers/3az-presentation)
+- [Konfiguracja Jumbo Frames w vRack na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/VRACK_MTU_Jumbo_Frames)
+- [Deploying OpenNebula Hosted Cloud on Bare Metal Servers](/pages/bare_metal_cloud/dedicated_servers/opennebula-deployment)
 Dołącz do [grona naszych użytkowników](/links/community).

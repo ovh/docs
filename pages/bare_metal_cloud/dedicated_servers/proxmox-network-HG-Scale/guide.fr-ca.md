@@ -1,6 +1,6 @@
 ---
-title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance'
-excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
+title: "Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance"
+excerpt: "Configurez les interfaces réseau Proxmox VE sur les serveurs dédiés des gammes High Grade, Scale et Advance étape par étape"
 updated: 2026-01-23
 ---
 
@@ -32,7 +32,6 @@ updated: 2026-01-23
 
 - Un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
 - Une ou plusieurs adresses [Additional IP](/links/network/additional-ip)
-
 
 > [!warning]
 >
@@ -263,7 +262,6 @@ Cette configuration est plus souple car il n'est pas nécessaire d'associer une 
 * Un [serveur compatible avec le vRack](/links/bare-metal/bare-metal)
 * Un service [vRack](/links/network/vrack)
 * Un bloc d'additional IP
-* Être connecté à votre [espace client OVHcloud](/links/manager)
 
 #### Schéma de la configuration cible
 
@@ -437,5 +435,11 @@ ADDITIONAL_IP # doit retourner votre Additional IP
 > Vous devez redémarrer les services réseau de la VM pour que la configuration soit prise en compte.
 
 ## Aller plus loin
+
+[Configurer le réseau sur Windows Server avec Hyper-V](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
+
+[Mise à niveau du matériel sur un serveur dédié High Grade ou Scale](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
+
+[Réseau - Résolution des problèmes de téléchargements lents dans les conteneurs et les machines virtuelles exécutées sur les serveurs Proxmox VE avec les cartes réseau Broadcom BCM57502](/pages/bare_metal_cloud/dedicated_servers/proxmox-broadcom-slow-downloads)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

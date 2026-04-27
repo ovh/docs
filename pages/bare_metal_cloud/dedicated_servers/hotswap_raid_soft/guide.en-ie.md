@@ -1,6 +1,6 @@
 ---
-title: Hot Swap - Software RAID
-excerpt: Find out how to hot-swap a disk on a server with a software RAID configuration
+title: "Hot-Swapping a Disk on Software RAID Dedicated Servers"
+excerpt: "Replace a defective disk on a dedicated server with software RAID without downtime using the hot-swap procedure."
 updated: 2023-08-21
 ---
 
@@ -199,11 +199,11 @@ once you have made these changes, check the RAID status again.
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](/ie/en/dedicated/hotswap-raid-soft/F)
+>>> md2 : active raid1 sda2[0] sdb2[1](/gb/en/dedicated/hotswap-raid-soft/F)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](/ie/en/dedicated/hotswap-raid-soft/F) sda1[0]
+>>> md1 : active raid1 sdb1[2](/gb/en/dedicated/hotswap-raid-soft/F) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>
@@ -299,5 +299,7 @@ The defective disk is now ready to be replaced by a datacentre technician. Once 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 [Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
+
+[Managing Software RAID (UEFI) on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/raid_soft_uefi)
 
 Join our [community of users](/links/community).

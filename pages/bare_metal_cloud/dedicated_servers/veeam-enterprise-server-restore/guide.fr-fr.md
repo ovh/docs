@@ -1,6 +1,6 @@
 ---
-title: Restaurer un serveur Bare Metal avec Veeam Enterprise
-excerpt: "Découvrez comment restaurer un serveur Bare Metal grâce à l'application Veeam Backup & Replication"
+title: "Restaurer un serveur Bare Metal avec Veeam Enterprise"
+excerpt: "Restaurez un serveur Bare Metal depuis une sauvegarde avec le workflow de restauration Veeam Backup and Replication Enterprise"
 updated: 2024-04-05
 ---
 
@@ -65,5 +65,9 @@ Une fenêtre contextuelle s’affiche, indiquant la progression de la restaurati
 ![progression de la restauration](images/DS_restore_Veeam09.png){.thumbnail}
 
 ## Aller plus loin
+
+[Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-preparation)
+
+[Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: "Intel SGX auf Ihrem Dedicated Server aktivieren"
-excerpt: "Erfahren Sie, wie Sie SGX auf Ihrem dedizierten Server aktivieren und den Linux SGX-Software-Stack installieren"
+title: "Intel SGX auf einem Dedicated Server verwalten"
+excerpt: "Aktivieren Sie Intel SGX auf Ihrem OVHcloud Dedicated Server und installieren Sie den Linux-Software-Stack für Secure-Enclave-Anwendungen."
 updated: 2025-11-20
 ---
 
@@ -249,3 +249,7 @@ Für die weiteren Schritte (Ihre eigene Anwendung entwickeln, sich für die Remo
 - [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
 - [Intel SGX linux-2.26 documentation](https://download.01.org/intel-sgx/sgx-linux/2.26/docs/)
 - [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+
+- [Enabling AMD SME/SEV on a Dedicated Server (Ubuntu)](/pages/bare_metal_cloud/dedicated_servers/sme_sev_enable_and_use)
+
+- [Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)

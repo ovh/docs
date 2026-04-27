@@ -1,6 +1,6 @@
 ---
-title: How to store public authentication keys in the OVHcloud Control Panel
-excerpt: Find out how to import public SSH keys into your OVHcloud Control Panel
+title: "Store Dedicated Server SSH Keys in the Control Panel"
+excerpt: "Import and manage your public SSH keys in the OVHcloud Control Panel for quick deployment to dedicated servers."
 updated: 2024-12-04
 ---
 
@@ -43,16 +43,16 @@ If you have not created a key pair yet, consult our guides first:
 
 In the Control Panel section `My services`, click `SSH keys`{.action}.
 
-![control panel ssh keys](images/importkey1.png){.thumbnail}
+![SSH keys section in the Control Panel](images/importkey1.png){.thumbnail}
 
 Click the button `Add an SSH key`{.action} and select `Dedicated`{.action} from the menu.
 
-![control panel ssh keys](images/importkey2.png){.thumbnail}
+![Add SSH key menu with Dedicated option](images/importkey2.png){.thumbnail}
 
 In the popup window, enter a label for the key in the first field.  
 Copy the entire public key string and paste it into the second field.
 
-![control panel ssh keys](images/importkey3.png){.thumbnail}
+![Popup to enter SSH key label and public key](images/importkey3.png){.thumbnail}
 
 Click the button `Confirm`{.action}. 
 
@@ -65,6 +65,8 @@ Consult our "Getting started" guides for further details on this topic:
 - [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 ## Go further
+
+[Installing an OVHcloud SSH Key on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/ovh_ssh_key)
 
 For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
-title: "Récupérer le numéro de série d'un disque dur"
-excerpt: "Découvrez comment récupérer le numéro de série d'un disque dur pour remplacer celui-ci"
-updated: 2018-08-21
+title: "Trouver le numéro de série d'un disque sur un serveur dédié"
+excerpt: "Récupérez le numéro de série d'un disque dur sur votre serveur dédié pour l'identifier lors d'une demande de remplacement"
+updated: 2019-05-22
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Pour minimiser le risque d'erreur pendant le remplacement d’un disque dur, nou
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/).
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal).
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 - Avoir installé l'utilitaire sas2ircu sur votre serveur Windows (disponible via le moteur de recherche [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu)).
 
@@ -166,5 +166,7 @@ Une fois que vous avez trouvé ce périphérique lié au disque dur que vous vou
 Le numéro du périphérique sg sera affiché comme suit : `/dev/sg0`, `/dev/sg1`, etc.
 
 ## Aller plus loin
+
+[Remplacer un disque défectueux](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

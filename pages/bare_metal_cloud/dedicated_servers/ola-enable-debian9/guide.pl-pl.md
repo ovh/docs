@@ -1,6 +1,6 @@
 ---
-title: "Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9–11"
-excerpt: "Aktywuj agregację łączy na serwerze Debian (od Debian 9 do Debian 11, przy użyciu ifupdown), aby zwiększyć dostępność serwera i wydajność połączeń sieciowych"
+title: "Konfiguracja OVHcloud Link Aggregation na serwerze dedykowanym (Debian)"
+excerpt: "Włącz OVHcloud Link Aggregation na serwerze Debian (od Debian 9 do Debian 11)."
 updated: 2026-04-20
 ---
 

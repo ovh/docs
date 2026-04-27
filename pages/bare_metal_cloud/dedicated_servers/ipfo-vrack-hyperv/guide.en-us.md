@@ -1,6 +1,6 @@
 ---
-title: "Setting up a Virtual Machine using Additional IPs and Hyper-V over a vRack"
-excerpt: "How to use Hyper-V with Additional IPs over a vRack"
+title: "Configure Hyper-V VMs with Additional IPs in a vRack on Dedicated Servers"
+excerpt: "Use Hyper-V with Additional IPs over a vRack on your OVHcloud dedicated server."
 updated: 2025-07-22
 ---
 
@@ -14,11 +14,10 @@ updated: 2025-07-22
 
 ## Requirements
 
-- A [vRack](https://www.ovh.com/world/solutions/vrack/) compatible dedicated server with Windows Server installed
+- A [vRack](/links/network/vrack) compatible dedicated server with Windows Server installed
 - An ISO for the OS that will be installed on your VM (CentOS 7 will be used as an example in this guide)
 - A vRack delivered to your OVHcloud account
 - An Additional IP block of 4 or more IPs
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -35,27 +34,27 @@ The first step you will need to do is install Hyper-V.
 
 In the Server Manager, click `Add roles and features`{.action}.
  
-![Installing hyper-v](images/add-roles-features.png){.thumbnail}
+![Server Manager Dashboard with Add roles and features link](images/add-roles-features.png){.thumbnail}
 
 On the Wizard, click `Next`{.action} to proceed to the next page.
 
-![Installing hyper-v](images/add-roles-features-2.png){.thumbnail}
+![Add Roles Wizard welcome page](images/add-roles-features-2.png){.thumbnail}
 
 Make sure "Role-Based or feature-based installation" is selected and click `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-3.png){.thumbnail}
+![Installation type selection with Role-Based option](images/add-roles-features-3.png){.thumbnail}
 
 Ensure that "Select a server from the server pool" is selected and that the server you are working on is selected on the list. Then click `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-4.png){.thumbnail}
+![Server pool selection with current server highlighted](images/add-roles-features-4.png){.thumbnail}
 
 In the server roles list, check "Hyper-V" and then click `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-5.png){.thumbnail}
+![Server Roles list with Hyper-V checkbox selected](images/add-roles-features-5.png){.thumbnail}
 
 On the "Features" page, you can simply click `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-9.png){.thumbnail}
+![Features page in the Add Roles Wizard](images/add-roles-features-9.png){.thumbnail}
 
 Next, you are asked to identify which network connection on your server you want to use for the virtual switch.
 
@@ -63,21 +62,21 @@ To do this, open a Command Prompt or PowerShell and execute the command `ipconfi
 
 Note that in our example `Ethernet 2` is the interface used for the vRack. However, it is possible that the vRack NIC is a different interface in your configuration. The correct one to select will be the interface that does not have the server's main IP address or has a self-assigned IP (169.254.x.x).
 
-![check-interface](images/ipconfig.png){.thumbnail}
+![ipconfig output showing vRack interface with self-assigned IP](images/ipconfig.png){.thumbnail}
 
 Once you have this information, go back to the 'Add Roles and Features Wizard' and click `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-6.png){.thumbnail}
+![Hyper-V virtual switch creation page in the wizard](images/add-roles-features-6.png){.thumbnail}
 
 Now select the adapter for the vRack that you identified in the Command Prompt or PowerShell, and click `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-7.png){.thumbnail}
+![Selecting the vRack network adapter for the virtual switch](images/add-roles-features-7.png){.thumbnail}
 
 The next two pages are for choosing migration and storage options. You can configure those as you please.
 
 Once you reach the confirmation page, check "Restart the destination server automatically if required" and click `Yes`{.action}, then `Install`{.action}.
 
-![Installing hyper-v](images/add-roles-features-8.png){.thumbnail}
+![Confirmation page with auto-restart option and Install button](images/add-roles-features-8.png){.thumbnail}
 
 Hyper-V will now install and the server should reboot.
 
@@ -87,19 +86,19 @@ Once the server has rebooted, log in and open Hyper-V Manager.
 
 Select your server on the left and click `New`{.action}. Select "Virtual Machine" in the context menu.
 
-![create-vm](images/create-vm.png){.thumbnail}
+![Hyper-V Manager with New Virtual Machine option](images/create-vm.png){.thumbnail}
 
 In the "New Virtual Machine Wizard", you can configure the VM as you please. When you reach the "Configure Networking" step, make sure to select the virtual switch. Once selected, click `Next`{.action} to continue.
 
-![create-vm](images/create-vm-2.png){.thumbnail}
+![Configure Networking step with virtual switch selected](images/create-vm-2.png){.thumbnail}
 
 In the "Installation Options" section, be sure to add the ISO for the operating system you are going to install. Click `Next`{.action} to continue.
 
-![create-vm](images/create-vm-3.png){.thumbnail}
+![Installation Options with OS ISO file selected](images/create-vm-3.png){.thumbnail}
 
 When you reach the "Summary" page, ensure that the "Network" (Virtual Switch) and "Operating System" settings are correct and click `Finish`{.action}.
 
-![create-vm](images/create-vm-4.png){.thumbnail}
+![VM creation summary page with network and OS settings](images/create-vm-4.png){.thumbnail}
 
 ### Installing the OS and Configuring the IP
 
@@ -111,11 +110,11 @@ If this occurs, you will need to disable "Secure Boot".
 
 Turn off the VM and click on `Settings`{.action}.
 
-![disable-secure-boot](images/disable-secure-boot.png){.thumbnail}
+![VM Settings dialog in Hyper-V Manager](images/disable-secure-boot.png){.thumbnail}
 
 Next, open the "Security" section, deselect "Enable Secure Boot", then click `Apply`{.action}.
 
-![disable-secure-boot](images/disable-secure-boot-2.png){.thumbnail}
+![Security settings with Enable Secure Boot unchecked](images/disable-secure-boot-2.png){.thumbnail}
 
 Once done, start the Virtual Machine again.
 
@@ -144,8 +143,10 @@ Once the OS is installed, it should have a network connection established.
 
 You can also see in the example below how the `ifcfg-eth0` file should appear.
 
-![configured](images/configured.png){.thumbnail}
+![CentOS ifcfg-eth0 file with static vRack IP configuration](images/configured.png){.thumbnail}
 
 ## Go further
+
+[Hyper-V Networking on HG/Scale Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
 
 Join our [community of users](/links/community).

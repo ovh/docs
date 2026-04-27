@@ -1,6 +1,6 @@
 ---
-title: 'Modificar el anuncio de un bloque de IP en el vRack'
-excerpt: 'Cómo modificar el anuncio de un bloque de IP en el vRack'
+title: "Modificar el anuncio de un bloque IP en el vRack en un servidor dedicado"
+excerpt: "Modifique la zona de anuncio geográfico de un bloque IP en su vRack de OVHcloud para un enrutamiento optimizado."
 updated: 2025-05-14
 ---
 
@@ -43,7 +43,7 @@ En el ejemplo anterior, la dirección IP está anunciada en **Roubaix**. Puede v
 
 ### 2. Modificar el anuncio del bloque de IP
 
-Conéctese a la [API de OVHcloud](/links/console) con su ID de cliente y contraseña. Utilice las siguientes llamadas a la API para modificar el anuncio del bloque de IP:
+Conéctese a la [API de OVHcloud](/links/api) con su ID de cliente y contraseña. Utilice las siguientes llamadas a la API para modificar el anuncio del bloque de IP:
 
 > [!api]
 >

@@ -80,4 +80,8 @@ Nos clients utilisant les solutions [VMware on OVHcloud](/links/hosted-private-c
 
 ## Aller plus loin
 
+[Installer VMware ESXi 8 sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning)
+
+[Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage](/pages/bare_metal_cloud/dedicated_servers/esxi-hardening)
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

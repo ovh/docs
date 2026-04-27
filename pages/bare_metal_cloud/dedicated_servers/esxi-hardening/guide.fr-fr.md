@@ -1,6 +1,6 @@
 ---
-title: 'Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage'
-excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
+title: "Sécuriser votre serveur dédié ESXi"
+excerpt: "Découvrez les différentes méthodes pour sécuriser efficacement votre serveur dédié ESXi"
 updated: 2026-01-09
 ---
 
@@ -102,11 +102,11 @@ Il est donc recommandé de filtrer les accès légitimes de cette manière :
 
 Vous pouvez accéder aux paramètres du Edge Network Firewall depuis l'espace client OVHcloud, en sélectionnant `Network`{.action}, puis en choisissant `Adresses IP publiques`{.action} sous "Réseau public". Vous pouvez retrouver votre serveur dédié en recherchant son adresse IP.
 
-![Edge_Network_Firewall](images/firewall_network_1.png){.thumbnail}
+![Page Adresses IP publiques dans l'espace client OVHcloud](images/firewall_network_1.png){.thumbnail}
 
 Sur la droite du tableau, cliquez sur le bouton `...`{.action} correspondant à votre serveur dédié, puis sélectionnez `Configurer le Edge Network Firewall`{.action}.
 
-![Edge_Network_Firewall](images/firewall_network_2.png){.thumbnail}
+![Option Configurer le Edge Network Firewall dans le menu contextuel](images/firewall_network_2.png){.thumbnail}
 
 
 ### Le filtrage sous ESXi
@@ -140,13 +140,13 @@ Trouvez dans la liste le service `TSM-SSH` et faites un clic droit sur la ligne 
 
 Arrêtez le service en cliquant sur `Stop`{.action} :
 
-![services_ssh](images/stop_service.png){.thumbnail}
+![Arret du service TSM-SSH dans ESXi](images/stop_service.png){.thumbnail}
 
 Selectionnez la `Policy` puis modifiez-la comme sur l'exemple présenté.
 
 Choisissez l'option `Start anc stop manually`{.action} afin d'éviter que le service ne soit actif au démarrage du serveur.
 
-![services_ssh](images/ssh_disabled_.png){.thumbnail} 
+![Politique du service SSH definie sur Demarrer et arreter manuellement](images/ssh_disabled_.png){.thumbnail} 
 
 Appliquez les mêmes paramètres pour le service `slpd` :
 
@@ -311,5 +311,7 @@ cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> /etc/ssh/keys-
 ## Aller plus loin
 
 Vous pourrez trouver encore plus de détails sur les bonnes pratiques de sécurité dans [ce guide](https://core.vmware.com/security-configuration-guide) proposé par VMware.
+
+[Installer VMware ESXi 8 sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

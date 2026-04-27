@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja OVHcloud Link Aggregation w Panelu klienta'
-excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation w Panelu klienta'
+title: "Jak skonfigurować OVHcloud Link Aggregation w Panelu klienta"
+excerpt: "Włącz OVHcloud Link Aggregation (OLA) na serwerze dedykowanym za pomocą Panelu klienta OVHcloud."
 updated: 2026-04-20
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Gestión y reconstrucción de un RAID software en servidores que utilizan el modo de arranque UEFI"
-excerpt: Aprenda a gestionar y reconstruir un RAID software tras un reemplazo de disco en un servidor que utiliza el modo de arranque UEFI
+title: "Gestionar el RAID por software (modo de arranque UEFI) en un servidor dedicado"
+excerpt: "Gestione y reconstruya el RAID por software tras la sustitución de un disco en un servidor dedicado en modo de arranque UEFI."
 updated: 2026-01-26
 ---
 

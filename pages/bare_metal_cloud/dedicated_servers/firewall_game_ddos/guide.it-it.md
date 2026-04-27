@@ -1,6 +1,6 @@
 ---
-title: "Proteggere un server game con il firewall dell'applicazione"
-excerpt: "Scopri come configurare il servizio OVHcloud Game DDoS Protection firewall"
+title: "Game DDoS Protection su un server dedicato"
+excerpt: "Configura il firewall OVHcloud Game DDoS Protection per proteggere il tuo server di gioco dagli attacchi applicativi"
 updated: 2026-03-24
 ---
 

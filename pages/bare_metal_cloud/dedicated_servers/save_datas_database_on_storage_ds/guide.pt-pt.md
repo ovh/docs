@@ -1,6 +1,6 @@
 ---
-title: 'Fazer o backup das informações e das bases de dados para um servidor de armazenamento'
-excerpt: 'Proteger dados em 5 passos'
+title: "Guardar dados e bases de dados num servidor dedicado"
+excerpt: "Faça o backup dos seus dados e bases de dados no espaço de armazenamento integrado do seu servidor dedicado OVHcloud em cinco etapas"
 updated: 2018-09-12
 ---
 

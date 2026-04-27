@@ -1,6 +1,6 @@
 ---
-title: "Comment configurer votre NIC pour l'agrégation de liens OVHcloud dans SLES 15"
-excerpt: "Activez l'agrégation de liens dans votre serveur SLES 15 pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau"
+title: "Configurer OVHcloud Link Aggregation sur un serveur dédié (SLES 15)"
+excerpt: "Activez OVHcloud Link Aggregation sur votre serveur dédié SLES 15"
 updated: 2026-04-20
 ---
 

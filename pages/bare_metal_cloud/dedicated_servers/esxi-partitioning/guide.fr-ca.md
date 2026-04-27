@@ -1,6 +1,6 @@
 ---
 title: "Installer VMware ESXi 8 sur un serveur dédié"
-excerpt: "Découvrez comment installer et configurer VMware ESXi 8 sur un serveur dédié en utilisant un template fourni par OVHcloud"
+excerpt: "Installez et configurez VMware ESXi 8 sur un serveur dédié OVHcloud, en sélectionnant un schéma de partitionnement prédéfini et en configurant un datastore."
 updated: 2025-10-03
 ---
 
@@ -16,7 +16,7 @@ Ce guide a pour objectif de vous montrer comment installer ESXi 8 sur vos serveu
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) **prêt à être installé/réinstallé** dans votre compte OVHcloud, compatible avec les [exigences matérielles d'ESXi 8](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0/upgrading-esxi-hosts-upgrade/esxi-hardware-requirements-upgrade.html)
-- Avoir accès à l'[API OVHcloud](/links/api) (facultatif)
+- Accès à l'[API OVHcloud](/links/api) (facultatif)
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---

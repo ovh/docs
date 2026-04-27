@@ -1,6 +1,6 @@
 ---
-title: "Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019"
-excerpt: "Active la agregación de enlaces en su servidor Windows Server 2019 para aumentar la disponibilidad de su servidor y mejorar la eficiencia de sus conexiones de red"
+title: "Configurar OVHcloud Link Aggregation en un servidor dedicado (Windows)"
+excerpt: "Active OVHcloud Link Aggregation en su servidor dedicado Windows Server 2019."
 updated: 2026-04-20
 ---
 

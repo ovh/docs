@@ -1,6 +1,6 @@
 ---
-title: 'Configuring the vRack on your dedicated servers'
-excerpt: 'Find out how to configure the vRack on two or more dedicated servers'
+title: "Configure the vRack on your Dedicated Servers"
+excerpt: "Configure the OVHcloud vRack private network on two or more dedicated servers for isolated inter-server communication."
 updated: 2026-02-20
 ---
 
@@ -341,5 +341,13 @@ Repeat this process for your other server(s) and assign an unused IP address fro
 ## Go further
 
 [Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+
+[Dedicated Server - Configuring an IP Block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
+
+[3AZ — Three Availability Zones Overview](/pages/bare_metal_cloud/dedicated_servers/3az-presentation)
+
+[Configuring Jumbo Frames in vRack on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/VRACK_MTU_Jumbo_Frames)
+
+[Deploying OpenNebula Hosted Cloud on Bare Metal Servers](/pages/bare_metal_cloud/dedicated_servers/opennebula-deployment)
 
 Join our [community of users](/links/community).

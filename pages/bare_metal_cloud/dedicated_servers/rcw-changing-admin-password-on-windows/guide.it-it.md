@@ -1,6 +1,6 @@
 ---
-title: "Come reimpostare la password amministratore con Rescue-Customer-Windows"
-excerpt: "Come reimpostare la password amministratore con Rescue-Customer-Windows"
+title: "Reimpostare la password Windows su un server dedicato"
+excerpt: "Reimposta la password amministratore Windows su un server dedicato tramite il sistema rescue Windows OVHcloud"
 updated: 2025-10-22
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Configurar a rede em Windows Server com Hyper-V'
-excerpt: 'Descubra como configurar a rede no Windows Server com Hyper-V'
+title: "Rede Hyper-V em servidores dedicados HG/Scale"
+excerpt: "Configure as interfaces de rede no Windows Server com Hyper-V nos servidores dedicados High Grade ou Scale"
 updated: 2025-05-16
 ---
 

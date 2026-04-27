@@ -1,6 +1,6 @@
 ---
-title: "Récupération des bases de données en mode rescue"
-excerpt: "Découvrez comment accéder à vos bases de données et les enregistrer en mode rescue"
+title: "Récupérer des bases de données en mode rescue sur un serveur dédié"
+excerpt: "Accédez à vos bases de données et exportez-les depuis un serveur dédié en mode rescue pour récupérer vos données après un incident"
 updated: 2023-04-13
 ---
 
@@ -268,5 +268,7 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 ```
 
 ## Aller plus loin
+
+[Diagnostiquer des dysfonctionnements matériels sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

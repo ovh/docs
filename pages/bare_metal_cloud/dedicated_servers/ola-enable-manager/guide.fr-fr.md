@@ -1,6 +1,6 @@
 ---
-title: "Configurer l'agrégation de liens OLA dans votre espace client"
-excerpt: "Découvrez comment activer l'agrégation de liens OVHcloud dans votre espace client."
+title: "OVHcloud Link Aggregation via l’espace client (Dédié)"
+excerpt: "Activez OVHcloud Link Aggregation (OLA) sur votre serveur dédié directement depuis l’espace client OVHcloud"
 updated: 2026-04-20
 ---
 

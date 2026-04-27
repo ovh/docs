@@ -1,6 +1,6 @@
 ---
-title: What are the IP addresses of the OVHcloud monitoring?
-excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
+title: "OVHcloud Monitoring IP Addresses for Dedicated Servers"
+excerpt: "Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server"
 updated: 2026-04-13
 ---
 
@@ -63,11 +63,9 @@ Reverse|IP|Protocol|
 
 ### Server monitoring
 
-Log in to the [OVHcloud Control Panel](/links/manager) and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
-
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab (section **Service status**).
 
-![Monitoring](images/monitoring-server.png){.thumbnail}
+![Monitoring status in server general information tab](images/monitoring-server.png){.thumbnail}
 
 Click on the button `Configure`{.action}. In the popup window, you have three options for the monitoring behaviour:
 
@@ -75,12 +73,16 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 - **Enabled with proactive intervention**: If the server stops responding, an alert email is sent to you and the server will be checked by a technician.
 - **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, you will need to create a support request.
 
-![Monitoring](images/monitoring-server2.png){.thumbnail}
+![Monitoring configuration popup with three options](images/monitoring-server2.png){.thumbnail}
 
 Click on `Confirm`{.action} to update your monitoring configuration.
 
 ## Go further
 
 [Configure the Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+
+[How to get started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Uninstalling RTM v2 Monitoring on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/rtm-uninstall)
 
 Join our [community of users](/links/community).

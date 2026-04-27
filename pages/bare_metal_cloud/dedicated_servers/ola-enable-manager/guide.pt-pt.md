@@ -1,6 +1,6 @@
 ---
-title: 'Como configurar a NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud'
-excerpt: 'Ative o OVHcloud Link Aggregation na sua Área de Cliente'
+title: "OVHcloud Link Aggregation através da área de cliente (Dedicado)"
+excerpt: "Ative o OVHcloud Link Aggregation (OLA) no seu servidor dedicado diretamente a partir da área de cliente OVHcloud"
 updated: 2026-04-20
 ---
 

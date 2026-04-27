@@ -1,6 +1,6 @@
 ---
-title: Ustalenie, czy funkcja wirtualnych adresów MAC jest obsługiwana na serwerze dedykowanym
-excerpt: Dowiedz się, jak sprawdzić, czy działanie wirtualnych adresów MAC jest obsługiwane na serwerze dedykowanym przez API OVHcloud
+title: "Serwer dedykowany - Obsługiwane zakresy wirtualnych adresów MAC"
+excerpt: "Dowiedz się, jakie zakresy wirtualnych adresów MAC są obsługiwane na serwerach dedykowanych OVHcloud."
 updated: 2025-04-28
 ---
 
@@ -35,11 +35,11 @@ Należy zastosować następujące wywołanie API:
 
 Wprowadź nazwę Twojego serwera w polu `serviceName`, następnie kliknij `Execute`{.action}.
 
-![SVMAC](images/support_virtual_mac_02.png){.thumbnail}
+![Konsola API z polem serviceName do sprawdzenia vMAC](images/support_virtual_mac_02.png){.thumbnail}
 
 Otrzymasz wówczas listę z wpisem "vmac / supported", który będzie dostępny na "true" lub "false" (wartość boolejska).
 
-![SVMAC](images/support_virtual_mac_04.png){.thumbnail}
+![Wynik API pokazujący obsługę vMAC (true lub false)](images/support_virtual_mac_04.png){.thumbnail}
 
 > [!primary]
 > **Interpretacja wyniku**
@@ -52,5 +52,8 @@ Otrzymasz wówczas listę z wpisem "vmac / supported", który będzie dostępny 
 ## Sprawdź również
 
 [Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps)
+
+- [Jak przypisać wirtualny adres MAC do Additional IP](/pages/bare_metal_cloud/dedicated_servers/network_virtual_mac)
+- [Serwer dedykowany - Konfiguracja network bridge](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

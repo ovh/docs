@@ -1,6 +1,6 @@
 ---
-title: "Einen Dedicated Server absichern"
-excerpt: "Erfahren Sie hier, wie Sie grundsätzliche Sicherheitsmaßnahmen anwenden, um Ihren Server vor Angriffen und unbefugtem Zugriff zu schützen"
+title: "Dedicated Server absichern"
+excerpt: "Wenden Sie grundlegende Sicherheitsmaßnahmen auf Ihrem Dedicated Server an: SSH-Härtung, Firewall-Konfiguration und Dienstüberwachung."
 updated: 2024-02-20
 ---
 
@@ -253,5 +253,9 @@ Für weitere Informationen zu unseren Storage-Angeboten lesen Sie [unsere Anleit
 [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+- [Webserver (LAMP) auf Debian oder Ubuntu installieren](/pages/bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
+
+- [Dedicated Server mit Memcached-Dienst absichern](/pages/bare_metal_cloud/dedicated_servers/memcache_secure)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

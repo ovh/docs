@@ -1,6 +1,6 @@
 ---
-title: Dedicated Servers - Upgrading your SSD Solidigm D7-P5520 firmware
-excerpt: Learn how to upgrade your SSD Solidigm D7-P5520 firmware for Linux, ESXi and Windows Dedicated Servers
+title: "Upgrade Solidigm D7-P5520 SSD Firmware on a Dedicated Server"
+excerpt: "Upgrade the Solidigm D7-P5520 SSD firmware on your Linux, ESXi, or Windows dedicated server for improved performance."
 updated: 2025-06-16
 ---
 
@@ -760,6 +760,10 @@ Status : The selected drive contains current firmware as of this tool release.
 ///
 
 ## Go further <a name="gofurther"></a>
+
+[Upgrading Samsung NVMe PM9A1 Firmware on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
+
+[Upgrading WD SS530 SSD Firmware on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/wdc-sas-ss530-fw-upgrade)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

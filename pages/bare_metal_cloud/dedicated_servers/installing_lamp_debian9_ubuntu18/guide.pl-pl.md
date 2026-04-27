@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Instalacja serwera www (LAMP) na Debian lub Ubuntu
-excerpt: "Dowiedz się, jak skonfigurować serwer WWW LAMP"
+title: "Tutorial - Instalacja serwera www (LAMP) na Debian lub Ubuntu"
+excerpt: "Zainstaluj stos LAMP (Linux, Apache, MySQL, PHP) na serwerze dedykowanym OVHcloud z systemem Debian lub Ubuntu."
 updated: 2023-05-10
 ---
 
@@ -33,6 +33,9 @@ Uruchomienie serwera www i powiązanych z nim aplikacji pozwala serwerowi cloud 
 > [!warning]
 > Tutorial przedstawia zastosowanie jednego lub kilku rozwiązań OVHcloud w powiązaniu z zewnętrznymi narzędziami i opisuje operacje, jakie należy wykonać w konkretnym przypadku. Być może będziesz musiał dostosować instrukcję do Twojego przypadku.
 >
+
+- [Jak zabezpieczyć serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
 > W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy [wyspecjalizowanego](/links/partner) usługodawcy lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
 >
 

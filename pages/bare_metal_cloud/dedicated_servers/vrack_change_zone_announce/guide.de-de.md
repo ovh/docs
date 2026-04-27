@@ -1,6 +1,6 @@
 ---
-title: 'IP-Block-Ankündigung im vRack ändern'
-excerpt: 'So ändern Sie die IP-Block-Ankündigung im vRack'
+title: "IP-Block-Ankündigung im vRack auf einem Dedicated Server ändern"
+excerpt: "Ändern Sie die geografische Ankündigungszone eines IP-Blocks in Ihrem OVHcloud vRack für optimiertes Routing."
 updated: 2025-05-14
 ---
 
@@ -88,5 +88,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
 Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse jetzt in **Gravelines** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: “be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”.
 
 ## Weiterführende Informationen
+
+- [vRack auf Ihren Dedicated Servern konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

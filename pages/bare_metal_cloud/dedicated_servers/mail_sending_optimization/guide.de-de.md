@@ -1,6 +1,6 @@
 ---
-title: Optimierung des E-Mail-Versands, damit Ihre E-Mails nicht als Spam markiert werden
-excerpt: Erfahren Sie hier, wie Sie mit vorbeugenden Maßnahmen das Risiko minimieren, dass Ihre legitimen E-Mails durch Spam-Schutz blockiert werden
+title: "E-Mail-Versand auf einem Dedicated Server optimieren"
+excerpt: "Wenden Sie Best Practices für den E-Mail-Versand auf Ihrem Dedicated Server an, damit legitime Nachrichten nicht als Spam markiert werden."
 updated: 2024-01-24
 ---
 
@@ -131,5 +131,9 @@ Es kann hilfreich sein, eine Seite wie [Mail Tester](http://www.mail-tester.com/
 [E-Mail-Sicherheit durch DMARC-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](/links/partner), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
+
+- [OVHcloud AntiSpam - Best Practices und Entsperren einer IP-Adresse](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices)
+
+- [Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

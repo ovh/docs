@@ -1,6 +1,6 @@
 ---
-title: "Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9 bis 11"
-excerpt: "Link Aggregation auf Ihrem Debian-Server aktivieren (von Debian 9 bis Debian 11, mit ifupdown), um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern"
+title: "OVHcloud Link Aggregation auf einem Dedicated Server konfigurieren (Debian)"
+excerpt: "Aktivieren Sie OVHcloud Link Aggregation auf Ihrem Debian-Server (von Debian 9 bis Debian 11)."
 updated: 2026-04-20
 ---
 

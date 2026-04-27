@@ -1,6 +1,6 @@
 ---
-title: Configuring the firewall on Linux with iptables
-excerpt: Find out how to secure a server with iptables
+title: "Configure iptables on a Linux Dedicated Server"
+excerpt: "Secure your dedicated server by configuring iptables firewall rules to filter network traffic on Linux."
 updated: 2024-12-20
 ---
 
@@ -236,5 +236,9 @@ You can now configure basic *iptables* firewall rules for your Linux server.
 Feel free to experiment because you can always delete the rules you don't need, or empty all the rules and start over.
 
 ## Go further
+
+[Edge Network Firewall for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[Network Security Dashboard for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Join our [community of users](/links/community).

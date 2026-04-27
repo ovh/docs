@@ -1,6 +1,6 @@
 ---
-title: 'Configurare due o più server dedicati nella vRack'
-excerpt: 'Scopri come configurare due o più server dedicati nella vRack'
+title: "Configurare la vRack sui tuoi server dedicati"
+excerpt: "Configura la rete privata vRack OVHcloud su due o più server dedicati per una comunicazione inter-server isolata"
 updated: 2026-02-20
 ---
 

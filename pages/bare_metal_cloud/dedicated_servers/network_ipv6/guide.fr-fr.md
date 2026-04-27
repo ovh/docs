@@ -1,6 +1,6 @@
 ---
-title: 'Configurer une adresse IPv6 principale sur un serveur dédié'
-excerpt: 'Découvrez comment configurer des adresses IPv6 sur notre infrastructure.'
+title: "Configurer IPv6 sur un serveur dédié"
+excerpt: "Configurez des adresses IPv6 sur votre serveur dédié OVHcloud avec des exemples pour les principales distributions Linux et Windows"
 updated: 2026-04-13
 ---
 
@@ -656,5 +656,7 @@ Dans tous les cas, n'hésitez pas à [contacter notre équipe de support](https:
 - le contenu de ce fichier. 
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Configurer une adresse IPv6 sur une machine virtuelle](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

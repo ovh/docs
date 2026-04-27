@@ -1,6 +1,6 @@
 ---
-title: "Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019"
-excerpt: "Aktywuj agregację łączy na serwerze Windows Server 2019, aby zwiększyć dostępność serwera i wydajność połączeń sieciowych"
+title: "Konfiguracja OVHcloud Link Aggregation na serwerze dedykowanym (Windows)"
+excerpt: "Włącz OVHcloud Link Aggregation na serwerze dedykowanym Windows Server 2019."
 updated: 2026-04-20
 ---
 
@@ -67,7 +67,7 @@ Następnie kliknij prawym przyciskiem myszy zespół kart sieciowych (NIC) i wyb
 
 W następnym oknie dialogowym, które się pojawi kliknij dwukrotnie przycisk **Internet Protocol Version 4 (TCP/IPv4)**.
 
-![ipv4](images/ipv4.png){.thumbnail}
+![Właściwości protokołu IPv4 TCP/IPv4](images/ipv4.png){.thumbnail}
 
 Kliknij przycisk obok "Use the following IP address" i dodaj wybrany przez Ciebie prywatny adres IP oraz podsieć. Po sprawdzeniu poprawności ustawień kliknij przycisk **OK**.
 

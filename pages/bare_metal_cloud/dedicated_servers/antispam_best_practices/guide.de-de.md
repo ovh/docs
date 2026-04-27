@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Best Practices und Entsperren einer IP-Adresse
-excerpt: Erfahren Sie hier unsere AntiSpam-Maßnahmen und wie Sie eine gesperrte IP-Adresse freigeben können
+title: "OVHcloud AntiSpam - Best Practices und IP-Entsperrung"
+excerpt: "Wenden Sie OVHcloud AntiSpam Best Practices an und entsperren Sie eine IP-Adresse Ihres Dedicated Servers, die wegen Spam-Versand markiert wurde."
 updated: 2026-01-06
 ---
 
@@ -290,4 +290,6 @@ Sobald die Informationen gesendet wurden, wird unser Support mit Vade Secure kom
 
 ## Weiterführende Informationen
  
+- [Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
 Treten Sie unserer [User Community](/links/community) bei.

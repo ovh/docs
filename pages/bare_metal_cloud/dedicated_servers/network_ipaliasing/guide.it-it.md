@@ -1,6 +1,6 @@
 ---
-title: Configurare un Alias IP
-excerpt: 'Scopri come aggiungere uno o più Additional IP alla tua configurazione'
+title: "Configurare l'IP aliasing su un server dedicato"
+excerpt: "Aggiungi e configura indirizzi Additional IP sul tuo server dedicato OVHcloud per un hosting multi-sito o multi-servizio"
 updated: 2025-12-04
 ---
 

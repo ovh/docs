@@ -1,6 +1,6 @@
 ---
-title: "Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w SLES 15"
-excerpt: "Aktywuj agregację łączy na serwerze SLES 15, aby zwiększyć dostępność serwera i wydajność połączeń sieciowych"
+title: "Konfiguracja OVHcloud Link Aggregation na serwerze dedykowanym (SLES 15)"
+excerpt: "Włącz OVHcloud Link Aggregation na serwerze dedykowanym SLES 15."
 updated: 2026-04-20
 ---
 

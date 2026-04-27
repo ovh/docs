@@ -1,6 +1,6 @@
 ---
-title: "vRack für Dedicated Server konfigurieren"
-excerpt: "Erfahren Sie hier, wie Sie ein vRack auf zwei oder mehr Servern einrichten"
+title: "vRack auf Ihren Dedicated Servern konfigurieren"
+excerpt: "Konfigurieren Sie das private OVHcloud vRack-Netzwerk auf zwei oder mehr Dedicated Servern für isolierte Server-zu-Server-Kommunikation."
 updated: 2026-02-20
 ---
 
@@ -340,5 +340,13 @@ Wiederholen Sie diesen Vorgang für Ihre anderen Server und weisen Sie jedem Ser
 ## Weiterführende Informationen
 
 [Mehrere VLANs im vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+
+- [Dedicated Server - IP-Block in einem vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
+
+- [Bare Metal 3-AZ Region - Vorstellung des Angebots](/pages/bare_metal_cloud/dedicated_servers/3az-presentation)
+
+- [Dedicated Server - Jumbo Frames im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/VRACK_MTU_Jumbo_Frames)
+
+- [Deploying OpenNebula Hosted Cloud on Bare Metal Servers](/pages/bare_metal_cloud/dedicated_servers/opennebula-deployment)
 
 Treten Sie unserer [User Community](/links/community) bei.

@@ -1,6 +1,6 @@
 ---
-title: Configuring Jumbo Frames in vRack
-excerpt: Learn how to configure Jumbo frames in vRack
+title: "Configure Jumbo Frames in vRack on Dedicated Servers"
+excerpt: "Configure Jumbo Frames (MTU 9000) in your OVHcloud vRack to optimise network throughput between dedicated servers."
 updated: 2020-08-17
 ---
 
@@ -12,7 +12,7 @@ Jumbo frames are Ethernet frames with more than 1500 bytes of payload. They can 
 
 ## Requirements
 
-- a [vRack](https://www.ovh.com/world/solutions/vrack/)
+- a [vRack](/links/network/vrack)
 - run a shell as root
 
 > [!warning]
@@ -63,5 +63,9 @@ Iface <interface name> inet static
 ```
 
 ## Go further
+
+[Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+[Dedicated Server - Configuring an IP Block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 
 Join our [community of users](/links/community).

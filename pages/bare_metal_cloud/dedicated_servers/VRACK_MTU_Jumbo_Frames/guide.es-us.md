@@ -1,6 +1,6 @@
 ---
-title: 'Configuración de tramas Jumbo en el vRack'
-excerpt: 'Cómo configurar Jumbo frames en el vRack'
+title: "Configurar las tramas Jumbo en el vRack en un servidor dedicado"
+excerpt: "Configure las tramas Jumbo (MTU 9000) en su vRack OVHcloud para optimizar el ancho de banda de red entre servidores dedicados"
 updated: 2020-08-17
 ---
 
@@ -12,7 +12,7 @@ Las tramas Jumbo o *Jumbo frames* son tramas Ethernet con una carga útil superi
 
 ## Requisitos
 
-- Tener un [vRack](https://www.ovh.com/world/es/soluciones/vrack/).
+- Tener un [vRack](/links/network/vrack).
 - Abrir un *shell* con permisos root.
 
 > [!warning]

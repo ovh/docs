@@ -1,6 +1,6 @@
 ---
-title: Migração dos dados de um servidor dedicado para outro
-excerpt: Saiba como migrar dados de um servidor dedicado para outro
+title: "Migrar os dados de um servidor dedicado para outro"
+excerpt: "Migre os dados entre servidores dedicados OVHcloud com rsync, SFTP ou o backup storage para uma transição sem problemas"
 updated: 2021-09-16
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9 a 11"
-excerpt: "Attiva l'aggregazione di collegamenti sul tuo server Debian (da Debian 9 a Debian 11, con ifupdown) per aumentare la disponibilità del tuo server e migliorare l'efficienza delle tue connessioni di rete"
+title: "Configurare OVHcloud Link Aggregation su un server dedicato (Debian)"
+excerpt: "Attiva OVHcloud Link Aggregation sul tuo server Debian (da Debian 9 a Debian 11)."
 updated: 2026-04-20
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel - Installer un serveur web (LAMP) sur Debian ou Ubuntu'
-excerpt: 'Découvrez comment configurer un serveur web LAMP'
+title: "Tutoriel - Installer un serveur web (LAMP) sur Debian ou Ubuntu"
+excerpt: "Installez un serveur web LAMP (Linux, Apache, MySQL, PHP) sur un serveur dédié Debian ou Ubuntu étape par étape"
 updated: 2023-05-10
 ---
 
@@ -283,5 +283,7 @@ Certbot renouvelle automatiquement les certificats. Aucune autre étape n'est n�
 [Documentation Certbot](https://eff-certbot.readthedocs.io/en/stable/)
 
 [Documentation NGINX](https://nginx.org/en/docs/) (alternative Apache)
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

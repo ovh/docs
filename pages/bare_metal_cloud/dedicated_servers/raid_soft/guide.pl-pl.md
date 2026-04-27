@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie i odbudowanie oprogramowania RAID na serwerach w trybie rozruchu legacy (BIOS)
-excerpt: Dowiedz się, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie rozruchu legacy (BIOS)
+title: "Zarządzanie programowym RAID (tryb rozruchu BIOS) na serwerach dedykowanych"
+excerpt: "Zarządzaj i odbuduj programowy RAID po wymianie dysku na serwerze dedykowanym w trybie rozruchu BIOS."
 updated: 2026-03-02
 ---
 

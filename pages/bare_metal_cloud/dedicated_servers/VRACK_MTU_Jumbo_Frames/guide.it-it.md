@@ -1,6 +1,6 @@
 ---
-title: 'Configurare frame Jumbo nella vRack'
-excerpt: 'Come configurare i Jumbo frame nella vRack'
+title: "Configurare i frame Jumbo nella vRack su un server dedicato"
+excerpt: "Configura i frame Jumbo (MTU 9000) nella tua vRack OVHcloud per ottimizzare il throughput di rete tra server dedicati"
 updated: 2020-08-17
 ---
 
@@ -64,4 +64,4 @@ Iface <nome dell’interfaccia> inet static
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

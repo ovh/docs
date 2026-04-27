@@ -1,6 +1,6 @@
 ---
-title: 'Copying data from one dedicated server to another using rsync'
-excerpt: 'Copy your data easily from one server to another with rsync'
+title: "Copy Data Between Dedicated Servers Using rsync"
+excerpt: "Copy your data easily from one server to another with rsync"
 updated: 2022-02-16
 ---
 
@@ -8,7 +8,7 @@ updated: 2022-02-16
 
 As part of a migration or backup process, you may find that you need to copy or transfer data stored on one dedicated server, and move it to another. 
 
-Distributed under the GNU GPL licence, rsync (short for “remote synchronisation”) is a free file syncing software program that can perform unidirectional synchronisation, i.e. copying files from a source server to a target server. 
+Distributed under the GNU GPL licence, rysnc (short for “remote synchronisation”) is a free file syncing software program that can perform unidirectional synchronisation, i.e. copying files from a source server to a target server. 
 
 **This tutorial will show you how to copy data from one OVHcloud dedicated server to another using rsync.**
 
@@ -106,3 +106,11 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 You now know how to copy your data easily from one server to another with rsync.
 
 To go further, you can Join our [community of users](/links/community).
+
+## Go further
+
+[How to Transfer Files via SFTP on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
+[Migrate data from one Dedicated Server to another](/pages/bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
+
+Join our [community of users](/links/community).

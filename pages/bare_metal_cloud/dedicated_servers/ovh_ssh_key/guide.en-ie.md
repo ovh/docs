@@ -1,6 +1,6 @@
 ---
-title: Installing an OVHcloud SSH key 
-excerpt: This guide will explain how to install an OVHcloud SSH key, allowing our administrators to make changes
+title: "Install an OVHcloud SSH Key on a Dedicated Server"
+excerpt: "Install an OVHcloud SSH key on your dedicated server to grant secure administrative access to OVHcloud support teams."
 updated: 2018-02-12
 ---
 
@@ -115,5 +115,7 @@ cat /root/.ssh/authorized_keys2
 ## Go further
 
 [Introduction to SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+[Storing Dedicated Server SSH Keys in the Control Panel](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel)
 
 Join our [community of users](/links/community).

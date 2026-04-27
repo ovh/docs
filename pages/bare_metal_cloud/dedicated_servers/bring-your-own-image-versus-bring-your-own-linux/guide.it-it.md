@@ -1,6 +1,6 @@
 ---
-title: Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet (EN)
-excerpt: Find out which custom OS image service is best for your usage
+title: "Bring Your Own Image (BYOI) vs Bring Your Own Linux (BYOLinux) - Confronto per server dedicati"
+excerpt: "Confronta i servizi Bring Your Own Image (BYOI) e Bring Your Own Linux (BYOLinux) per scegliere il metodo di distribuzione più adatto al tuo server dedicato."
 updated: 2026-02-03
 ---
 

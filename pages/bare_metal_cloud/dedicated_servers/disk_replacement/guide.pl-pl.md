@@ -1,6 +1,6 @@
 ---
-title: 'Wymiana uszkodzonego dysku'
-excerpt: 'Dowiedz się, jak zidentyfikować uszkodzony dysk i zlecić jego wymianę'
+title: "Jak wymienić dysk na serwerze dedykowanym"
+excerpt: "Dowiedz się, jak zidentyfikować uszkodzony dysk i zamówić wymianę dysku na serwerze dedykowanym OVHcloud."
 updated: 2018-06-21
 ---
 

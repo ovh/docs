@@ -1,6 +1,6 @@
 ---
-title: 'Backing up data and databases on a Storage Server'
-excerpt: 'Find out how to secure your data in five steps'
+title: "Back up Data and Databases on a Dedicated Server"
+excerpt: "Back up your data and databases to the integrated storage space on your OVHcloud dedicated server in five steps."
 updated: 2018-09-12
 ---
 
@@ -8,13 +8,13 @@ updated: 2018-09-12
 
 Your data is sensitive. Any loss or alteration of it could quickly result in serious issues for your business. Since there is no such thing as a risk-free approach, we strongly recommend creating backups at least daily, and preferably storing them on a server or storage solution that is separate to your production infrastructures.
 
-OVHcloud offers a range of [Dedicated Servers](https://www.ovhcloud.com/asia/bare-metal/storage/) that are adapted to fit your storage operations, and equipped with at least four hard drives. You can use these resources to back up an infrastructure hosted with OVHcloud or with another service provider, via the public network.
+OVHcloud offers a range of [Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/storage/) that are adapted to fit your storage operations, and equipped with at least four hard drives. You can use these resources to back up an infrastructure hosted with OVHcloud or with another service provider, via the public network.
 
 In this guide, we will show you how to configure an OVHcloud Storage Server to suit your needs, generate a tree-view for receiving backups, then automate backups for two remote servers via SCP protocol.
 
 ## Requirements
 
-- an [OVHcloud Storage Server](https://www.ovhcloud.com/asia/bare-metal/storage/)
+- an [OVHcloud Storage Server](https://www.ovhcloud.com/en-gb/bare-metal/storage/)
 - a production infrastructure ([VPS](/links/bare-metal/vps), [Dedicated Servers](/links/bare-metal/bare-metal), [Public Cloud](/links/public-cloud/public-cloud), etc.)
 - an SSH connection between the Storage Servers and production infrastructure
 - a private network between your servers ([OVHcloud vRack](/links/network/vrack)) is recommended
@@ -24,7 +24,7 @@ In this guide, we will show you how to configure an OVHcloud Storage Server to s
 
 ### Step 1: Choose the right RAID mode.
 
-OVHcloud offers a range of [Storage Servers](https://www.ovhcloud.com/asia/bare-metal/storage/) with hardware configurations that contain several hard disks. In our example, we are using a software RAID (or softRAID) with four disks, which each have 6 TB capacity.
+OVHcloud offers a range of [Storage Servers](https://www.ovhcloud.com/en-gb/bare-metal/storage/) with hardware configurations that contain several hard disks. In our example, we are using a software RAID (or softRAID) with four disks, which each have 6 TB capacity.
 
 With OVHcloud, you can choose between RAID 0, 1, 5, 6 and 10 as configurations for storing your data. Each of these configurations have pros and cons in terms of performance and resilience. So with four disks, we can store data efficiently with RAID 5, 6 or 10 configuration (RAID 0 and 1 are not relevant here).
 
@@ -178,3 +178,11 @@ The syntax for a *crontab* is specific. We will not detail it here, but there ar
 You have configured an OVHcloud Storage Server that suits your needs, and automated a basic schedule for backing up the files stored on it. This is an important step to avoid data loss, and secure your business.
 
 As mentioned earlier, there are other free and paid methods you can use to further optimise your backups. If your data is sensitive, we also strongly advise encrypting it, and only transferring it via private networks such as the OVHcloud vRack.
+
+## Go further
+
+[How to use the backup storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage)
+
+[Customising Dedicated Server Partitions via OVHcloud API](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
+Join our [community of users](/links/community).

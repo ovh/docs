@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja bloku Additional IPv6 w sieci vRack
-excerpt: Dowiedz się, jak skonfigurować blok publicznych adresów IPv6 do użytku w sieci vRack OVHcloud
+title: "Konfiguracja bloku IPv6 w sieci vRack na serwerze dedykowanym"
+excerpt: "Skonfiguruj publiczny blok adresów IPv6 do użytku z prywatną siecią OVHcloud vRack na serwerze dedykowanym."
 updated: 2026-03-13
 ---
 
@@ -383,11 +383,11 @@ Aby utworzyć routowaną podsieć, musimy najpierw zdefiniować:
 
 Pamiętaj, że dana podsieć nie może pokrywać się z żadną inną zdefiniowaną podsiecią, a adres next-hop musi należeć do pierwszej części (mostkowanej podsieci /64) prefiksu Additional IPv6.
 
-![kontynuuj](images/800.png){.thumbnail}
+![Definicja routowanej podsieci w notacji CIDR i adres next-hop](images/800.png){.thumbnail}
 
 Utworzono routowaną podsieć `2001:41d0:abcd::ef10::/60` osiągalną przez next-hop `2001:41d0:abcd::ef00::2`.
 
-![kontynuuj](images/801.png){.thumbnail}
+![Utworzona routowana podsieć z wyświetlonym adresem next-hop](images/801.png){.thumbnail}
 
 ///
 
@@ -402,7 +402,7 @@ Pamiętaj, że dana podsieć nie może pokrywać się z żadną inną zdefiniowa
 
 Poniższy przykład pokazuje, jak zdefiniować taką podsieć:
 
-![kontynuuj](images/20240418-02.png){.thumbnail}
+![Wywołanie API do zdefiniowania routowanej podsieci z next-hop](images/20240418-02.png){.thumbnail}
 
 W tym przypadku zdefiniowaliśmy routowaną podsieć `2001:41d0:abcd:ef10::/60`, która zostanie delegowana do maszyny wirtualnej hostowanej na: `2001:41d0:abcd:ef00::2`.
 
@@ -596,7 +596,7 @@ Z drugiej strony usługi takie jak Additional IPv6 są regionalne, co oznacza, �
 
 Poniżej przedstawiono architekturę do celów edukacyjnych z dwoma różnymi regionami i różnymi blokami Additional IPv6 ogłaszanymi z każdego z nich. Przedstawiono również hosta z adresami IP z obu sieci oraz przykład nieoptymalne trasy - hosta w jednym regionie zaadresowanego adresem IPv6 ogłaszanym w innym regionie:
 
-![obraz](images/20240418-08.png){.thumbnail}
+![Architektura wieloregionowa vRack z różnymi blokami IPv6](images/20240418-08.png){.thumbnail}
 
 Należy pamiętać, że w takich konfiguracjach (z Additional IPv6 z więcej niż jednego regionu) SLAAC **musi być wyłączone w całej sieci vRack** (ponieważ może to prowadzić do nieprzewidywalnych wyników i losowej utraty łączności).
 
@@ -625,4 +625,6 @@ Zrozumienie ograniczeń korzystania z **Additional IPv6** w środowisku **vRack*
 
 ## Sprawdź również
 
+- [Konfiguracja vRack na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+- [Serwer dedykowany - Konfiguracja network bridge](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 Dołącz do [grona naszych użytkowników](/links/community).

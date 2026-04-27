@@ -1,6 +1,6 @@
 ---
-title: 'Configurar el servicio OVHcloud Link Aggregation desde el área de cliente de OVHcloud'
-excerpt: 'Activar el servicio OVHcloud Link Aggregation en el área de cliente'
+title: "OVHcloud Link Aggregation desde el área de cliente (Dedicado)"
+excerpt: "Active OVHcloud Link Aggregation (OLA) en su servidor dedicado directamente desde el área de cliente de OVHcloud"
 updated: 2026-04-20
 ---
 

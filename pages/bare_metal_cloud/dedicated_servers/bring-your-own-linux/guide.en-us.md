@@ -1,6 +1,6 @@
 ---
-title: Bring Your Own Linux (BYOLinux)
-excerpt: Find out how to easily deploy your own Linux images on dedicated servers
+title: "Deploy custom Linux images using Bring Your Own Linux (BYOLinux) on Dedicated Servers"
+excerpt: "Deploy your own custom Linux images on OVHcloud dedicated servers using the Bring Your Own Linux (BYOLinux) feature."
 updated: 2026-03-16
 ---
 
@@ -58,11 +58,11 @@ There are some technical limitations linked to the use of physical products such
 
 In the `General information`{.action} tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 
-![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
+![Bring Your Own Linux Control Panel install button](images/byolinux-controlpanel01.png){.thumbnail}
 
 In the window that appears, select `Custom` in the menu, then `Bring Your Own Linux - byolinux`, and click `Next`{.action}.
 
-![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
+![Bring Your Own Linux Control Panel custom image selection](images/byolinux-controlpanel03.png){.thumbnail}
 
 You will be redirected to the configuration page. Make sure your image URL is in the correct format. Fill in the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Confirm`{.action}.
 
@@ -70,7 +70,7 @@ You can find more details on the options in the [deployment options](#options) s
 
 For more information and examples about Cloud-Init's ConfigDrive, please read the official documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
-![BringYourOwnLinux Control Panel 04](images/byolinux-controlpanel04.png){.thumbnail}
+![Bring Your Own Linux Control Panel configuration page](images/byolinux-controlpanel04.png){.thumbnail}
 
 ### Deploy your image via the API <a name="viaapi"></a>
 

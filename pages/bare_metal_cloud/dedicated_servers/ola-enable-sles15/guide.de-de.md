@@ -1,6 +1,6 @@
 ---
-title: "Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in SLES 15"
-excerpt: "Link Aggregation auf Ihrem SLES-15-Server aktivieren, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern"
+title: "OVHcloud Link Aggregation auf einem Dedicated Server konfigurieren (SLES 15)"
+excerpt: "Aktivieren Sie OVHcloud Link Aggregation auf Ihrem Dedicated Server mit SLES 15."
 updated: 2026-04-20
 ---
 

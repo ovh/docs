@@ -1,6 +1,6 @@
 ---
-title: 'Configurar el servicio OVHcloud Link Aggregation desde el área de cliente de OVHcloud'
-excerpt: 'Activar el servicio OVHcloud Link Aggregation en el área de cliente'
+title: "OVHcloud Link Aggregation desde el área de cliente (Dedicado)"
+excerpt: "Active OVHcloud Link Aggregation (OLA) en su servidor dedicado directamente desde el área de cliente de OVHcloud"
 updated: 2026-04-20
 ---
 
@@ -79,7 +79,7 @@ La operación puede tardar unos minutos.
 
 ## Más información
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9 a través de ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 

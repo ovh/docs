@@ -1,6 +1,6 @@
 ---
-title: Game Server mit der Application Firewall schützen
-excerpt: Erfahren Sie hier, wie Sie die OVHcloud Game DDoS Protection Firewall konfigurieren
+title: "Dedicated Server - Game DDoS Protection Firewall"
+excerpt: "Konfigurieren Sie die OVHcloud Game DDoS Protection Firewall, um Ihren Game Server vor Angriffen auf der Anwendungsebene zu schützen."
 updated: 2026-03-24
 ---
 
@@ -265,5 +265,7 @@ Sichern Sie relevante Traffic Dumps (*.pcap*-Datei) die beispielhaft für solche
 ## Weiterführende Informationen
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+- [Dedicated Server - Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Treten Sie unserer [User Community](/links/community) bei.

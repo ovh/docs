@@ -1,6 +1,6 @@
 ---
-title: 'Configurar IPv6 en un servidor dedicado'
-excerpt: 'Descubra cómo configurar direcciones IPv6 en nuestra infraestructura'
+title: "Configurar IPv6 en un servidor dedicado"
+excerpt: "Configure direcciones IPv6 en su servidor dedicado OVHcloud con ejemplos para las principales distribuciones Linux y Windows"
 updated: 2026-04-13
 ---
 
@@ -30,7 +30,7 @@ Los servidores de las gamas High Grade, Scale y Advance (desde julio de 2024) se
 > Este artículo explica cómo configurar una dirección IP principal. En los servidores compatibles con el vRack, también puede configurar direcciones Additional IP en un vRack en lugar de en la interfaz pública del servidor. Consulte las instrucciones correspondientes en los siguientes artículos:
 >
 > - IPv4: [Configurar un bloque de IP en el vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
-> - IPv6: [Configurar un bloque IPv6 en un vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> - IPv6: [Configurar un bloque IPv6 en un vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 > [!warning]

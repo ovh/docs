@@ -1,6 +1,6 @@
 ---
-title: 'Manage and secure your ESXi dedicated server from the outset'
-excerpt: 'Discover the various ways you can effectively secure your ESXi dedicated server'
+title: "Secure Your ESXi Dedicated Server"
+excerpt: "Discover the various ways you can effectively secure your ESXi dedicated server"
 updated: 2026-01-09
 ---
 
@@ -101,11 +101,11 @@ It is recommended that you filter legitimate access in this way:
 
 You can access the Edge Network Firewall settings in the OVHcloud Control Panel, by selecting `Network`{.action}, then choosing `Public IP Addresses`{.action} under "Public Network". There, you can find your dedicated server by searching for its IP address.
 
-![Network_Firewall](images/firewall_network_1.png){.thumbnail}
+![Public IP Addresses page in the OVHcloud Control Panel](images/firewall_network_1.png){.thumbnail}
 
 To the right of the table, click the `...`{.action} button corresponding to your dedicated server, then select `Configure Edge Network Firewall`{.action}.
 
-![Network_Firewall](images/firewall_network_2.png){.thumbnail}
+![Configure Edge Network Firewall option in the context menu](images/firewall_network_2.png){.thumbnail}
 
 ### Filtering in ESXi
 
@@ -137,13 +137,13 @@ In the list, find the `TSM-SSH` service and right-click on the associated line.
 
 Stop the service by clicking `Stop`{.action}:
 
-![services_ssh](images/stop_service.png){.thumbnail}
+![Stopping the TSM-SSH service in ESXi](images/stop_service.png){.thumbnail}
 
 Select the `Policy`, then edit it as shown in the example.
 
 Choose the `Start and stop manually`{.action} option to prevent the service from being active when the server starts.
 
-![services_ssh](images/ssh_disabled_.png){.thumbnail} 
+![SSH service policy set to Start and stop manually](images/ssh_disabled_.png){.thumbnail}
 
 Apply the same settings for the `slpd` service:
 
@@ -308,5 +308,7 @@ cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> /etc/ssh/keys-
 ## Go further
 
 You can find even more details on security best practices in [this VMware suggested guide](https://core.vmware.com/security-configuration-guide).
+
+[How to install VMware ESXi 8 on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning)
 
 Join our [community of users](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: "So konfigurieren Sie Link-Aggregation mit LACP in Debian 12 oder Ubuntu 24.04 (EN)"
-excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server's availability and boost the efficiency of your network connections"
+title: "Configure LACP Link Aggregation on a Dedicated Server (Debian/Ubuntu)"
+excerpt: "Configure LACP link aggregation on Debian 12 or Ubuntu 24.04 servers using Netplan for improved bandwidth and redundancy."
 updated: 2026-04-20
 ---
 

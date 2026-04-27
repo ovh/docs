@@ -1,6 +1,6 @@
 ---
-title: Öffentliche Authentifizierungsschlüssel im OVHcloud Kundencenter speichern
-excerpt: Erfahren Sie hier, wie Sie Ihre öffentlichen SSH-Schlüssel ins OVHcloud Kundencenter importieren können
+title: "SSH-Schlüssel für Dedicated Server im Kundencenter speichern"
+excerpt: "Importieren und verwalten Sie Ihre öffentlichen SSH-Schlüssel im OVHcloud Kundencenter für die schnelle Bereitstellung auf Dedicated Servern."
 updated: 2024-12-04
 ---
 
@@ -42,16 +42,16 @@ Wenn Sie noch kein SSH-Schlüsselpaar erstellt haben, lesen Sie zuerst unsere An
 
 Klicken Sie im Kundencenter-Bereich `Meine Dienste` auf `SSH-Schlüssel`{.action}.
 
-![control panel ssh keys](images/importkey1.png){.thumbnail}
+![Bereich SSH-Schlüssel im Kundencenter](images/importkey1.png){.thumbnail}
 
 Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action} und wählen Sie `Dedicated`{.action} aus dem Menü.
 
-![control panel ssh keys](images/importkey2.png){.thumbnail}
+![Menü SSH-Schlüssel hinzufügen mit Option "Dedicated"](images/importkey2.png){.thumbnail}
 
 Geben Sie im neuen Fenster im ersten Feld eine Bezeichnung für den Schlüssel ein.  
 Kopieren Sie die gesamte Zeichenfolge des öffentlichen Schlüssels und fügen Sie sie in das zweite Feld ein.
 
-![control panel ssh keys](images/importkey3.png){.thumbnail}
+![Popup zur Eingabe von Bezeichnung und öffentlichem Schlüssel](images/importkey3.png){.thumbnail}
 
 Klicken Sie auf `Bestätigen`{.action}.
 
@@ -68,5 +68,7 @@ Weitere Informationen zu diesem Thema finden Sie in unseren Anleitungen zu "Erst
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+- [OVHcloud SSH-Schlüssel auf einem Dedicated Server installieren](/pages/bare_metal_cloud/dedicated_servers/ovh_ssh_key)
 
 Treten Sie unserer [User Community](/links/community) bei.

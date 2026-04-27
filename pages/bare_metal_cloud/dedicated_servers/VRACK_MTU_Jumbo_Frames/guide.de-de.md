@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration von Jumbo-Frames im vRack'
-excerpt: 'Sehen Sie hier, wie sie Jumbo-Frames im vRack konfigurieren können'
+title: "Dedicated Server - Jumbo Frames im vRack konfigurieren"
+excerpt: "Konfigurieren Sie Jumbo Frames (MTU 9000) in Ihrem OVHcloud vRack, um den Netzwerkdurchsatz zwischen Dedicated Servern zu optimieren."
 updated: 2020-08-17
 ---
 
@@ -63,5 +63,9 @@ Iface <interface name> inet static
 ```
 
 ## Weiterführende Informationen
+
+- [vRack auf Ihren Dedicated Servern konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+- [Dedicated Server - IP-Block in einem vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

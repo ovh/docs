@@ -1,6 +1,6 @@
 ---
-title: Proteger un servidor con servicio Memcached
-excerpt: Cómo proteger el servicio Memcached
+title: "Proteger un servidor dedicado con un servicio Memcached"
+excerpt: "Proteja el servicio Memcached en su servidor dedicado para evitar los accesos remotos no autorizados y la exposición de datos"
 updated: 2018-03-02
 ---
 
@@ -118,4 +118,4 @@ sudo systemctl force-reload memcached
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/en/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

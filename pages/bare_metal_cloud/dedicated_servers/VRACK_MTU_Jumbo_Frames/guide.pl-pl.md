@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja ramek Jumbo w vRacku
-excerpt: Dowiedz się, jak konfigurować ramki Jumbo w vRacku
+title: "Konfiguracja Jumbo Frames w vRack na serwerach dedykowanych"
+excerpt: "Skonfiguruj Jumbo Frames (MTU 9000) w sieci OVHcloud vRack, aby zoptymalizować przepustowość między serwerami dedykowanymi."
 updated: 2020-08-17
 ---
 
@@ -63,5 +63,8 @@ Iface <nazwa interfejsu> inet dhcp
 ```
 
 ## Sprawdź również
+
+- [Konfiguracja vRack na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+- [Konfiguracja bloku IP w sieci vRack na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

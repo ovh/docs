@@ -1,6 +1,6 @@
 ---
-title: Securing a server with a Memcached service
-excerpt: Find out how to secure your Memcached service
+title: "Secure a Dedicated Server with a Memcached service"
+excerpt: "Secure the Memcached service on your dedicated server to prevent unauthorised remote access and data exposure."
 updated: 2018-03-02
 ---
 
@@ -115,5 +115,9 @@ sudo systemctl force-reload memcached
 ```
 
 ## Go further
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Configuring iptables on a Linux Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable)
 
 Join our [community of users](/links/community).

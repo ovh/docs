@@ -1,6 +1,6 @@
 ---
-title: Quali sono gli indirizzi IP del monitoring OVHcloud?
-excerpt: Qui trovi gli indirizzi IP da inserire durante l'installazione del firewall, in modo che il monitoring OVHcloud continui a funzionare sul tuo server.
+title: "Indirizzi IP del monitoring OVHcloud per server dedicati"
+excerpt: "Trova gli indirizzi IP da autorizzare nel tuo firewall affinché il monitoring OVHcloud continui a funzionare sul tuo server"
 updated: 2026-04-13
 ---
 

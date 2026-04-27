@@ -1,6 +1,6 @@
 ---
-title: 'Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel'
-excerpt: 'Find out how to enable OVHcloud Link Aggregation in the OVHcloud Control Panel'
+title: "OVHcloud Link Aggregation via Control Panel (Dedicated)"
+excerpt: "Enable OVHcloud Link Aggregation (OLA) on your dedicated server directly from the OVHcloud Control Panel."
 updated: 2026-04-20
 ---
 
