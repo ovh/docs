@@ -39,9 +39,7 @@ Comme il est possible de gérer plusieurs projets selon vos quotas, le nom et l�
 
 L'ID peut être nécessaire lors de l'utilisation de la CLI, de certaines demandes de support ou autre. Vous pouvez le copier en cliquant sur l'icône située à sa droite.
 
-<!-- CP-STEPS-START:your-public-cloud-project-settings -->
 Vous pouvez modifier le nom du projet via l'onglet `Paramètres`{.action}. Renseignez un nouveau nom puis cliquez sur `Mettre à jour`{.action}.
-<!-- CP-STEPS-END:your-public-cloud-project-settings -->
 
 ### Le menu principal Public Cloud
 

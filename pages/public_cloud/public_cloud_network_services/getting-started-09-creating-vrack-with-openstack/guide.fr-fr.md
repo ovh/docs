@@ -59,7 +59,6 @@ Avant de commencer, assurez-vous de lire ces guides pour configurer correctement
 
 #### Depuis l’espace client OVHcloud
 
-<!-- CP-STEPS-START:activate-vrack -->
 > [!primary]
 > Ceci ne s’applique pas aux projets nouvellement créés qui sont désormais automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans `Public Cloud`{.action} > votre projet > `Network`{.action} > `Réseau Privé vRack`{.action}.
 >
@@ -78,7 +77,6 @@ Dans la liste des services éligibles, sélectionnez le projet que vous souhaite
 
 ![ajouter le projet](images/addprojectvrack.png){.thumbnail}
 
-<!-- CP-STEPS-END:activate-vrack -->
 
 <a name="ovhcloud-api"></a>
 

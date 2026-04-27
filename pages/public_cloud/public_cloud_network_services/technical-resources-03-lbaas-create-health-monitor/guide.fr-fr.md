@@ -104,7 +104,6 @@ Selon l'interface choisie, voici les étapes à suivre :
 
 #### Espace client OVHcloud
 
-<!-- CP-STEPS-START:create-health-monitor -->
 Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balancer OVHcloud, ce qui permet de surveiller l'état de santé des serveurs du pool :
 
 <strong>1.</strong> Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.<br>
@@ -136,7 +135,6 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
 
 Ce processus crée un Health Monitor qui effectuera régulièrement des contrôles d'intégrité sur chaque membre du pool, utilisant les résultats pour déterminer si le membre doit recevoir de nouvelles connexions. Un seul Health Monitor peut être défini pour chaque pool.
 
-<!-- CP-STEPS-END:create-health-monitor -->
 
 #### CLI (OpenStack)
 

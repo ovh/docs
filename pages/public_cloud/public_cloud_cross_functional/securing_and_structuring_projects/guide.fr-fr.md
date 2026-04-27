@@ -35,11 +35,9 @@ Le guide « [Sécuriser mon compte OVHcloud et gérer mes informations personnel
 
 #### Activer l'authentification à deux facteurs (2FA)
 
-<!-- CP-STEPS-START:enable-2fa -->
 - **Ce que cela fait** : Ajoute une couche de sécurité supplémentaire en nécessitant une deuxième forme de vérification (par exemple, une application mobile, une clé de sécurité) en plus de votre mot de passe.
 - **Comment l'activer** : Connectez-vous à l'[espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur vos initiales. Accédez à l'onglet `Sécurité`{.action}, et suivez les étapes pour configurer la 2FA via une application mobile ou une clé de sécurité. Assurez-vous de stocker vos codes de secours en toute sécurité. Pour plus de détails, référez-vous au [guide sur la 2FA](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 - **Exemple** : Si vous utilisez une clé de sécurité U2F, vous la brancherez dans votre port USB à chaque connexion, offrant une sécurité supplémentaire au-delà de votre mot de passe.
-<!-- CP-STEPS-END:enable-2fa -->
 
 #### Définir des mots de passe forts
 
@@ -113,13 +111,11 @@ Le tableau suivant résume les droits d'accès que nous fournirons à chaque gro
 
 #### Fournir un accès au tableau de bord
 
-<!-- CP-STEPS-START:provide-control-panel-access -->
 Pour fournir un accès à l'espace client OVHcloud, vous devez créer une politique spécifique comme décrit dans ce [guide](/pages/account_and_service_management/account_information/iam-control-panel-access). Dans la section `Ajouter des groupes d'utilisateurs`, choisissez les groupes `finance_developer_group` et `finance_SRE_group`.
 
 ![Ajouter des groupes d'utilisateurs](images/Add_user_groups.png){.thumbnail}
 
 Grâce à cette politique, les utilisateurs appartenant à ces deux groupes auront accès au tableau de bord mais, avec cette seule politique, ils n'auront aucun droit (ni lecture ni écriture). Le chapitre suivant ajoute ces droits uniquement sur les projets Public Cloud définis.
-<!-- CP-STEPS-END:provide-control-panel-access -->
 
 #### Fournir des droits spécifiques aux projets Public Cloud
 
@@ -134,7 +130,6 @@ Continuons en créant des politiques pour permettre les droits d'accès décrits
 
 Le nom des politiques suit le modèle suivant : \<Nom de la ressource\>-RO/RW
 
-<!-- CP-STEPS-START:create-iam-policy -->
 Voici un guide étape par étape pour créer la première politique :
 
 - Dans la page IAM, cliquez sur `Créer une politique`{.action}, remplissez le nom `cloud_project_finance_fpa_dev-RW` et une description.
@@ -149,7 +144,6 @@ Voici un guide étape par étape pour créer la première politique :
 ![Actions](images/actions2.png){.thumbnail}
 
 Maintenant, les utilisateurs appartenant au `finance_developer_group` auront uniquement accès au tableau de bord et au projet Public Cloud sélectionné en accès écriture.
-<!-- CP-STEPS-END:create-iam-policy -->
 
 ## Nous voulons vos retours !
 
