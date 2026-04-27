@@ -43,7 +43,6 @@ Il est possible d’importer une adresse Additional IP liée à un autre service
 
 ## En pratique
 
-<!-- CP-STEPS-START:import-additional-ip -->
 Dans le menu de gauche, ouvrez `IP Publiques`{.action} dans **Network**.
 
 Ouvrez l'onglet `Additional IP`{.action} et cliquez sur le bouton `Actions`{.action}. Sélectionnez `Importer une Additional IP`{.action} pour afficher toutes les adresses IP pouvant être importées dans votre projet Public Cloud.
@@ -78,7 +77,6 @@ Cliquez sur `Joindre`{.action} pour confirmer. La page affiche alors un message 
 >
 
 Votre adresse Additional IP sera maintenant attachée à votre instance.
-<!-- CP-STEPS-END:import-additional-ip -->
 
 La prochaine étape consiste à configurer l’IP dans votre système d’exploitation. Consultez [notre guide dédié à cette configuration](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 

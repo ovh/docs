@@ -54,13 +54,11 @@ Cette configuration comprend plusieurs étapes, via l'espace client OVHcloud et 
 >
 > Vous pouvez également supprimer le projet de son vRack alloué et l'attacher à un autre vRack si vous le souhaitez.
 
-<!-- CP-STEPS-START:add-project-to-vrack -->
 Pour les projets plus anciens, allez dans la section `Network`{.action} puis cliquez sur `Réseau privé vRack`{.action} et sélectionnez votre vRack dans la liste.
 
 Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack et cliquez sur le bouton `Ajouter`{.action}.
 
 ![ajouter le projet à vRack](images/addprojectvrack.png){.thumbnail}
-<!-- CP-STEPS-END:add-project-to-vrack -->
 
 <a name="addipblock"></a>
 
@@ -73,13 +71,11 @@ Dans la liste des services éligibles, sélectionnez le projet que vous souhaite
 > Cette configuration vous permet de configurer des adresses IP d’un même bloc sur plusieurs serveurs, à condition que ces serveurs soient tous dans le même vRack que ce bloc. Le bloc d'adresses IP doit avoir au moins 2 adresses IP utilisables ou plus pour que cela soit possible.
 >
 
-<!-- CP-STEPS-START:add-ip-block-to-vrack -->
 Rendez-vous dans la section `Network`{.action} et cliquez sur `Réseau privé vRack`{.action} pour voir le(s) vRack(s).
 
 Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur le bloc IP que vous souhaitez ajouter au vRack et cliquez sur `Ajouter`{.action}.
 
 ![vrack](images/addIPblock.png){.thumbnail}
-<!-- CP-STEPS-END:add-ip-block-to-vrack -->
 
 <a name="createnetwork"></a>
 
@@ -87,7 +83,6 @@ Sélectionnez votre vRack dans la liste pour afficher la liste des services éli
 
 Une fois votre projet ajouté au vRack, créez un réseau privé à rattacher à l’instance Public Cloud.
 
-<!-- CP-STEPS-START:create-private-network -->
 Cliquez sur `Private Network`{.action} sous **Network**.
 
 Cliquez sur `Créer un réseau privé`{.action}.
@@ -114,7 +109,6 @@ Cette étape offre plusieurs options de configuration. Pour les besoins de ce gu
 
 
 Cliquez ensuite sur `Configurez votre réseau privé`{.action}.
-<!-- CP-STEPS-END:create-private-network -->
 
 <a name="subnet"></a>
 

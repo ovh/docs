@@ -53,7 +53,6 @@ Pour plus d'informations sur la configuration des Floating IP, consultez la page
 
 ### Comment obtenir des adresses IP publiques dans votre espace client ?
 
-<!-- CP-STEPS-START:obtain-public-ips -->
 Dans la rubrique **Network** du menu de gauche, sélectionnez `IP Publiques`{.action}. Gérez ici les Additional IP et les Floating IP selon vos besoins.
 
 ![Concept IP](images/concip.png){.thumbnail}
@@ -63,7 +62,6 @@ En fonction de votre choix, vous pouvez faire votre sélection parmi les différ
 > [!warning]
 >
 > Les modes de tarification dépendent de l’utilisation de l’IP que vous choisissez. L’utilisation d’une adresse Additional IP est facturée au mois, tandis que l’utilisation d’une adresse Floating IP est facturée à l’heure.
-<!-- CP-STEPS-END:obtain-public-ips -->
 
 ## Aller plus loin
 
