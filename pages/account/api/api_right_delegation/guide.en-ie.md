@@ -24,7 +24,7 @@ As an example, let's assume that you want to create a marketplace in which you, 
 
 The first part, as the application developer, is to register your application on OVHcloud.
 
-To do so, go to https://api.ovh.com/createApp/
+To do so, go to https://auth.eu.ovhcloud.com/api/createApp
 
 You will need to log in and set an application name and description.
 

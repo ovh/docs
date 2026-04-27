@@ -34,7 +34,7 @@ In questa guida i metodi saranno due:
 
 Per utilizzare l’API SMS sono necessari degli identificativi. Questi identificativi vengono creati una sola volta per individuare l’applicazione che invierà gli SMS. La loro durata di vita è configurabile.
 
-Crea i tuoi identificativi di Script (tutte le chiavi in una sola volta) su questa pagina: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per gli step descritti in questa guida).
+Crea i tuoi identificativi di Script (tutte le chiavi in una sola volta) su questa pagina: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per gli step descritti in questa guida).
 
 ![creazione di token](images/img_2479.jpg){.thumbnail}
 

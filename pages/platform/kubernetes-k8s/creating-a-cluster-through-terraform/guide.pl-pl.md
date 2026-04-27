@@ -59,7 +59,7 @@ Because, behind the scenes, the "OVH Terraform provider" is doing requests to OV
 
 In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/) tutorial.
 
-Concretely, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+Concretely, you have to generate these credentials via the [OVH token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 

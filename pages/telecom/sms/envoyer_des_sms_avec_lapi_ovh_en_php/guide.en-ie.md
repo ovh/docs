@@ -41,7 +41,7 @@ In your project, you will retrieve the directory <b>./vendor/ovh/ovh/</b>, as we
 You will need credentials to use the SMS API. These credentials are created once, to identify the application that will be sending SMS messages. The lifespan of these credentials can be configured.
 
 Create all of your script credentials (all keys at once) on this page:
-[https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
+[https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
 
 
 ![create tokens](images/img_2451.jpg){.thumbnail}
@@ -83,7 +83,7 @@ You can now test the API connection, by displaying the details for each SMS acco
 /**
  * Lists and displays the details for each SMS account
  * 
- * Go to https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs
+ * Go to https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs
  * to generate the API access keys for:
  *
  * GET /sms
@@ -138,7 +138,7 @@ To send SMS messages, use the POST jobs method: [https://api.ovh.com/console/#/s
 /**
  * Sends an SMS message, then displays the list of SMS messages that are waiting to be sent.
  * 
- * Go to https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs
+ * Go to https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs
  * to generate the API access keys for:
  *
  * GET /sms

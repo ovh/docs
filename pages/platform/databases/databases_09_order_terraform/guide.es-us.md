@@ -41,7 +41,7 @@ Because, behind the scenes, the "OVH Terraform provider" is doing requests to OV
 
 In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
+Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://auth.ca.ovhcloud.com/api/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 

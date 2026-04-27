@@ -134,7 +134,7 @@ Las pestañas `PHP` y `Python` contienen los elementos que se añadirán al scri
 
 Todas las aplicaciones que quieran comunicarse con la API de OVHcloud deben notificarse con antelación.
 
-Para ello, haga clic en el siguiente enlace: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+Para ello, haga clic en el siguiente enlace: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken){.external}.
 
 Introduzca su identificador de cliente, su contraseña y el nombre de su aplicación. El nombre será útil más adelante si desea permitir que otras personas lo usen.
 
@@ -192,7 +192,7 @@ Este es un ejemplo de uso de la sección `/me`, que permite gestionar su cuenta 
 ```python
 import ovh
 
-# Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
+# Instantiate. Visit https://auth.eu.ovhcloud.com/api/createToken?GET=/me
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',

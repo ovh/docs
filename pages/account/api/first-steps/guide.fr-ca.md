@@ -130,7 +130,7 @@ Les onglets `PHP` et `Python` contiennent les éléments à ajouter dans votre s
 
 Toute application souhaitant communiquer avec l'API OVHcloud doit être déclarée à l'avance.
 
-Pour ce faire, cliquez sur le lien suivant : [https://ca.api.ovh.com/createToken/](https://ca.api.ovh.com/createToken/){.external}.
+Pour ce faire, cliquez sur le lien suivant : [https://auth.ca.ovhcloud.com/api/createToken/](https://auth.ca.ovhcloud.com/api/createToken/){.external}.
 
 Renseignez votre identifiant client, votre mot de passe et le nom de votre application. Le nom sera utile plus tard si vous voulez autoriser d'autres personnes à l'utiliser.
 
@@ -189,7 +189,7 @@ Voici un exemple d'utilisation de la section `/me` qui permet de gérer votre co
 ```python
 import ovh
 
-# Instantiate. Visit https://ca.api.ovh.com/createToken/?GET=/me
+# Instantiate. Visit https://auth.ca.ovhcloud.com/api/createToken/?GET=/me
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',

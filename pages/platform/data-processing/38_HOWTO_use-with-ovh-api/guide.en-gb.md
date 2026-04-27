@@ -27,7 +27,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 ### Step 1: Get your OVHcloud API credentials
 
 To be able to use the OVHcloud API, you must set up some configurations that will allow it to authenticate.
-To do so, you will need an application key, a secret application key and a consumer key. These can be obtained [here](https://eu.api.ovh.com/createToken/){.external}.
+To do so, you will need an application key, a secret application key and a consumer key. These can be obtained [here](https://auth.eu.ovhcloud.com/api/createToken){.external}.
 
 You need to add the rights `GET/POST/PUT` on the endpoint `/cloud/project/*/dataProcessing/*`.
 
