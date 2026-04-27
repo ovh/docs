@@ -35,6 +35,7 @@ You can make use of these instance backups for two basic purposes:
 
 ### Creating an instance from a backup
 
+<!-- CP-STEPS-START:create-instance-from-backup -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
@@ -132,9 +133,11 @@ You can make use of these instance backups for two basic purposes:
 >> }
 >> ```
 >>
+<!-- CP-STEPS-END:create-instance-from-backup -->
 
 ### Restoring an instance from a backup
 
+<!-- CP-STEPS-START:restore-instance-from-backup -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
@@ -185,6 +188,7 @@ You can make use of these instance backups for two basic purposes:
 >> }
 >> ```
 >>
+<!-- CP-STEPS-END:restore-instance-from-backup -->
 
 ## Go further
 

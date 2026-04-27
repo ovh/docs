@@ -58,9 +58,11 @@ With OpenStack there are two ways of uploading your own image. You can either up
 
 Once your image is ready to upload, you can use the following steps to upload it using the OpenStack CLI:
 
+<!-- CP-STEPS-START:download-openrc-file -->
 1\. Click on `Users & Roles`{.action} in the left-hand menu under **Settings**. Next, click the `...`{.action} next to the corresponding openstack user, then click on `Download OpenStack's RC file`{.action} (select the region you want to upload to).
 
 ![openrc](images/open_rc_download.png){.thumbnail}
+<!-- CP-STEPS-END:download-openrc-file -->
 
 2\. Source the openrc file:
 

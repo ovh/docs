@@ -44,6 +44,7 @@ You can create a single backup of an instance or configure a schedule in order t
 
 ### Creating a backup of an instance
 
+<!-- CP-STEPS-START:create-instance-backup -->
 > [!warning]
 > This option is only available through a **Cold Snapshot** for Metal instances. During this process, the Metal instance will be switched to rescue-mode, and once the backup is performed, the instance will reboot back to normal mode.
 >
@@ -173,9 +174,11 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:create-instance-backup -->
 
 ### Creating an automated backup of an instance
 
+<!-- CP-STEPS-START:automated-backup-and-manage -->
 > [!primary]
 >
 > If you want to automate this functionality directly via OpenStack, you can create a Mistral workflow associated with a cron trigger.
@@ -240,6 +243,7 @@ Your instance backups are managed in the Public Cloud `Instance Backup`{.action}
 > **Note that you cannot delete an instance backup if an instance that has been spawned from this backup is running at the time of the delete action.**
 
 Find out how to use backups to clone or restore instances in [this guide](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup).
+<!-- CP-STEPS-END:automated-backup-and-manage -->
 
 ## Go further
 

@@ -28,6 +28,7 @@ You can manage your Public Cloud instances in the [OVHcloud Control Panel](/link
 
 ## Instructions
 
+<!-- CP-STEPS-START:manage-instance-actions -->
 ### Using the management interface for instances
 
 Click on `Instances`{.action} in the left-hand menu.
@@ -160,9 +161,11 @@ Click on `Reinstall`{.action}.
 This action will reinstall the instance with the same operating system, provided the image is still supported.
 
 Note that reinstalling **deletes all data** currently stored on your instance.
+<!-- CP-STEPS-END:manage-instance-actions -->
 
 ### Accessing the VNC console <a name="accessvnc"></a>
 
+<!-- CP-STEPS-START:access-vnc-console -->
 Click on `Instances`{.action} in the left-hand menu. On the instance management page, click on the name of the instance in the table.
 
 Switch from the dashboard to the tab `VNC console`{.action}.
@@ -172,6 +175,7 @@ Switch from the dashboard to the tab `VNC console`{.action}.
 The VNC console provides direct access to your instance. For this to work, first configure a username and password on the instance.
 
 Consult our [Getting started guide](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) to learn more about the necessary steps.
+<!-- CP-STEPS-END:access-vnc-console -->
 
 ## Go further
 

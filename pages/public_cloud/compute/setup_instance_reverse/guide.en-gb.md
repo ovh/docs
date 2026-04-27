@@ -30,6 +30,7 @@ Configuring the reverse DNS resolution for an instance is especially useful when
 
 ## Instructions
 
+<!-- CP-STEPS-START:configure-reverse-dns -->
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Network`{.action} section and click on `Public IP Addresses`{.action}.
 
 The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category. You can also search for a specific IP in the search bar to the left of the drop-down menu. 
@@ -45,6 +46,7 @@ In the new window, enter your reverse path and click on `Confirm`{.action}.
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
 You can also edit the reverse path directly via the `pencil`{.action} icon in the **Reverse DNS** column of the table.
+<!-- CP-STEPS-END:configure-reverse-dns -->
 
 > [!primary]
 >

@@ -26,6 +26,7 @@ The purpose of this guide is to show you how to change a block storage volume ty
 
 ## Instructions
 
+<!-- CP-STEPS-START:change-volume-type -->
 When trying to change a block storage volume type to a "High speed gen2" one, the migration policy will need to be changed from `Never` to `On-demand`.
 
 The migration policy is set by default to `Never` as the volume stays on the same CEPH cluster. However, for the "High speed gen2" type, the volume will need to be migrated to a new cluster.
@@ -107,6 +108,7 @@ This modification can be made via Horizon or the OpenStack CLI.
 >> $ openstack volume set --type <VOLUME_TYPE> --retype-policy on-demand <VOLUME_NAME_OR_ID>
 >> ```
 >>
+<!-- CP-STEPS-END:change-volume-type -->
 
 ## Go further
 

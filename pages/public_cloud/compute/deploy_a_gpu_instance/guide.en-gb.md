@@ -33,6 +33,7 @@ GPU instances are technically similar to the instances from the older range, but
 
 ## Instructions
 
+<!-- CP-STEPS-START:deploy-gpu-instance -->
 You will find the information needed to deploy a GPU instance on Linux or Windows below.
 
 On the `Quick access`{.action} page, click `Create an instance`{.action}. Then choose a compatible GPU instance model corresponding to **Cloud GPU** instances, to benefit from resources suited to graphics or intensive computing workloads.
@@ -104,6 +105,7 @@ Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud
 >> The GPU instance is now fully functional and usable.
 >>
 > On Windows
+
 >> There are incompatibilities between the NVIDIA driver and the *KVM/pci_passthrough* virtualisation solution. **Windows standard images do not work.**
 >>
 >> We offer special images, based on a virtual **UEFI** BIOS, which allow the driver to function correctly.
@@ -147,6 +149,7 @@ Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud
 >>
 >> After installation, the driver will appear in **Device Manager > Graphics cards**, allowing you to verify that the GPU card is correctly recognized and operational. You can then start using your instance for applications that require GPU acceleration.
 >>
+<!-- CP-STEPS-END:deploy-gpu-instance -->
 
 ## Going further
 

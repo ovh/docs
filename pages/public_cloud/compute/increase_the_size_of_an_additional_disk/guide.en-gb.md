@@ -109,6 +109,7 @@ To ensure that you resize your disk at the right moment, it is essential to moni
 
 ### Modifying the size of the disk
 
+<!-- CP-STEPS-START:resize-disk-cp -->
 Click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 
 If the volume is attached to a **Windows instance**, click on `...`{.action} in the row of the volume and select `Detach from instance`{.action}.
@@ -120,6 +121,7 @@ Click on `...`{.action} in the row of the volume and select `Edit`{.action}.
 In the popup window, enter the new size for the volume and click on `Modify the volume`{.action}.
 
 ![control panel](images/increase-disk-03.png){.thumbnail}
+<!-- CP-STEPS-END:resize-disk-cp -->
 
 ### Extending the partition (Linux instance)
 
@@ -213,7 +215,9 @@ Once this is completed, detach the volume from the instance and reattach it to e
 
 ### Extending the partition (Windows instance)
 
+<!-- CP-STEPS-START:reattach-volume-windows -->
 Before proceeding, reattach the volume to the instance. Click on `...`{.action} in the row of the volume and select `Attach to instance`{.action}.
+<!-- CP-STEPS-END:reattach-volume-windows -->
 
 Establish a remote desktop (RDP) connection to your Windows instance.
 

@@ -85,9 +85,11 @@ For this guide, our Object Storage container has the following characteristics:
 > Save the Object Storage credentials, you will use the `Object Storage access key` and the `Object Storage secret key` in the coming `export` commands.
 > 
 
+<!-- CP-STEPS-START:access-object-storage-bucket -->
 Click on `pulumi`{.action} to access the bucket and to display its information, including the useful `Endpoint`.
 
 ![OVHcloud Object Storage pulumi bucket](images/pulumi-bucket.png){.thumbnail}
+<!-- CP-STEPS-END:access-object-storage-bucket -->
 
 Export your Object Storage credentials in environment variables:
 
