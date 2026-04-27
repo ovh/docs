@@ -42,6 +42,7 @@ Backups of encrypted LUKS volume types can only be restored to the same encrypte
 
 ## Instructions
 
+<!-- CP-STEPS-START:create-backup -->
 Open `Block Storage`{.action} in the left-hand navigation bar under **Storage & backup**.
 
 In the row of the volume concerned, click the `...`{.action} button, then select `Create a backup`{.action}.
@@ -89,6 +90,8 @@ Click the `...`{.action} button to `Delete`{.action} or to `Create a volume`{.ac
 You can find further information in [this guide](/pages/public_cloud/compute/create-volume-from-snapshot).
 
 ![Create volume from backup](images/volumebackup05.png){.thumbnail}
+
+<!-- CP-STEPS-END:create-backup -->
 
 ## Go further
 

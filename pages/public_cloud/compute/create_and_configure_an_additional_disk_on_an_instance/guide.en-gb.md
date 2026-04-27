@@ -98,6 +98,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 
 ### Attaching a new volume
 
+<!-- CP-STEPS-START:attach-volume-cp -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
@@ -320,6 +321,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >> +-----------+-------------------------------------+
 >> ```
 >>
+<!-- CP-STEPS-END:attach-volume-cp -->
 
 ### Configuring the new disk
 
@@ -670,6 +672,7 @@ Here's how to **unmount the volume** from the operating system before detaching 
 
 Finally, we will detach the volume from the instance:
 
+<!-- CP-STEPS-START:detach-volume-cp -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
@@ -768,6 +771,7 @@ Finally, we will detach the volume from the instance:
 >>
 >> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
 >> ```
+<!-- CP-STEPS-END:detach-volume-cp -->
 
 ## Go further
 
